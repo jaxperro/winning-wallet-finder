@@ -300,9 +300,19 @@ those are high-volume sharps, not info-traders. Scanning a *market's* traders
 surfaces the real signal: e.g. `arimnestos` at **z=4.0, p≈3e-5** over 2,205 bets
 — a demonstrable edge. Distinguishing **sharp** (high z, normal timing) from
 **insider** (high z + late entry + fresh wallet) is the timing/freshness combo.
-The Bubblemaps **funding-cluster** step (linking an operator's wallets via
-who-funded-whom) needs a Polygonscan/Alchemy key — public RPC caps `getLogs` at
-10k blocks.
+
+**Funding-cluster linking (the Bubblemaps step) — implemented.** With an
+`alchemy_key` in `config.json`, the scanner pulls each wallet's USDC funding
+history (`alchemy_getAssetTransfers`, full history, no block-range cap) and
+links wallets that share a funder — i.e. likely the same operator. The catch
+that makes or breaks this: a *shared exchange* (everyone withdraws from
+Coinbase) is not a shared operator. So a candidate funder only counts as a link
+if **its own outbound degree is small** (a personal hub sends to ≤15 wallets; an
+exchange/bridge fans out to hundreds). Without that filter the method
+false-flags everyone — our 10 "independent" watchlist wallets all shared 11
+infra funders and looked like one ring until the degree filter correctly
+cleared them. Funded-from-a-major-exchange wallets can't be de-anonymized this
+way — a known limit the pro firms hit too.
 
 **Why this matters:** the z-score over many bets is the first metric in this
 project that identifies a *real, hard-to-fake* edge. A high-z wallet has beaten
