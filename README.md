@@ -19,6 +19,7 @@ live), and backtest the strategy. Zero dependencies — Python 3 stdlib only
 | `table_77.py` | Aggregate a filtered wallet set into one CSV (ROI, total staked, consistency). |
 | `copytrade.py` | Copy-trade engine — mirror a watchlist (paper by default, live gated). |
 | `backtest.py` | Replay a watchlist over a recent window and mark outcomes. |
+| `lp_screener.py` | Rank reward-eligible markets by risk-adjusted LP yield (pool ÷ competition, penalized by volatility). |
 
 ## Run the dashboard
 
@@ -200,3 +201,37 @@ story. At 72 days old, we can't yet tell.
 - **Copying entries ≠ copying edge.** A working strategy likely needs to model
   sizing/pricing, or pivot to a consensus signal (bet where many vetted wallets
   agree) rather than blind mirroring.
+
+## Liquidity rewards (the market-making pivot)
+
+After copy-trading proved unreliable, the research pointed to **liquidity
+rewards** as the lowest-risk edge. Polymarket pays makers a daily USDC pool for
+resting limit orders near a market's midpoint — your share = your score ÷ total
+score, where score rewards size and closeness to mid (quadratic:
+`((max_spread − your_spread) / max_spread)²`). ~$200K/day is distributed across
+~8,000 eligible markets (queryable via the CLOB `sampling-markets` endpoint;
+each market exposes `rewards.rates[].rewards_daily_rate`, `min_size`,
+`max_spread`).
+
+`lp_screener.py` ranks those markets by **risk-adjusted** yield — reward pool ÷
+order-book competition near mid (gross APR for a $1000 two-sided position),
+penalized by 24h midpoint volatility (the adverse-selection proxy) and by
+time-to-resolution (imminent = live = toxic).
+
+```bash
+python3 lp_screener.py --min-rate 50 --capital 1000   # one-shot snapshot → lp_markets.csv
+```
+
+**It's a one-shot snapshot, not a daemon** — reward pools, books, and the
+markets themselves churn daily, so re-run before each session.
+
+**What it found:** the sweet spot is **long-dated, low-volatility prop markets**
+(World Cup player props, eliminations) — thin books, decent pools, vol ~0, days
+to resolution. Live esports markets show astronomical gross APR but get
+correctly de-ranked: that's where you get picked off.
+
+**Caveats that still gate real money:** headline APRs are a *snapshot* — thin
+pools attract competitors and yield mean-reverts down; they're *gross*, ignoring
+inventory losses when you get filled; and we have not yet confirmed near-empty
+books actually pay the full pool. The paper LP loop (post near mid, requote on
+moves, track **net** = rewards − pick-off) is the next and decisive test.
