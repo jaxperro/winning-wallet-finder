@@ -1,0 +1,2 @@
+# Winning Wallet Finder — no third-party deps, Python 3 stdlib only.
+# This file exists so Railway/Nixpacks detects a Python app.

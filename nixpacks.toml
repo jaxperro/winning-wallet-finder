@@ -1,0 +1,6 @@
+# Explicit build config for Railway/Nixpacks (pure-stdlib Python service)
+[phases.setup]
+nixPkgs = ["python311"]
+
+[start]
+cmd = "python3 webhook_receiver.py"
