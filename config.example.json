@@ -1,24 +1,9 @@
 {
-  "mode": "paper",
-  "poll_seconds": 12,
-  "discord_webhook": "",
-  "watchlist": [],
-  "bankroll_usd": 1000.0,
-  "bankroll_pct": 0.02,
-  "price_guard_pct": 0.05,
-  "risk": {
-    "max_trade_usd": 50.0,
-    "max_position_usd": 40.0,
-    "daily_spend_cap_usd": 250.0,
-    "max_total_exposure_usd": 500.0,
-    "max_open_positions": 20,
-    "min_price": 0.05,
-    "max_price": 0.95,
-    "min_order_usd": 5.0
-  },
-  "live": {
-    "private_key": "",
-    "funder_address": "",
-    "signature_type": 1
-  }
+  "discord_webhook": "https://discord.com/api/webhooks/XXXX/YYYY",
+  "alchemy_key": "your-alchemy-polygon-key",
+  "alchemy_signing_key": "whsec_from_alchemy_webhook_dashboard",
+  "watch": [
+    {"wallet": "0x0b0f92507bbc340762d38eca43eba1e11ee37af1", "name": "Famecesgoal"},
+    {"wallet": "0xe8c4d68aff65b38cac46987b9b65e01eb47d395d", "name": "JAMJAMJAM4"}
+  ]
 }

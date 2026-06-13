@@ -68,10 +68,61 @@ so shared exchanges don't false-link everyone. (See `insider.py`.)
   material nonpublic information is illegal, and blindly following a suspected
   insider is not a safe strategy.
 
+## Insider detection — what the z-score signal actually found
+
+Building `insider.py` and sweeping markets (`hunt.py`, `huntwide.py`) surfaced
+genuinely improbable wallets. Out of ~289 scored:
+
+- **DREAMBIG.** (z=8.9, p≈2e-19) and **qcp14** (z=5.3) on the Iran ceasefire
+  market — 45–77% of wins entered <24h before resolution. Textbook insider
+  fingerprint, on exactly the theme the *60 Minutes* story covered.
+- **Famecesgoal** (z=9.6) won only 14.5% of bets — but bet longshots and hit
+  +98 above what the odds implied. The clearest "beats the prices it pays" case.
+
+Two refinements proved essential:
+- **Trade count separates insiders from bots.** `bjprolo` scored z=37 — but on
+  **306,873** lifetime trades. That's a market-maker grinding a tiny systematic
+  edge, not information. Real edge wallets show concentrated z over 1–3k trades.
+- **Funding-cluster linking** (Alchemy, the Bubblemaps "who-funded-whom" step)
+  works *only* with a personal-hub filter: a shared exchange (everyone uses
+  Coinbase) is not a shared operator. Judge a funder by its own outbound degree.
+
+## The copy-trade verdict — in-sample vs out-of-sample
+
+The decisive test: does copying z-selected wallets make money?
+
+- **In-sample** (`copyback.py`): copy the edge wallets from May 30, z-weighted,
+  reinvest 100%. Result: **+545%** in 15 days. Looks incredible — and it's
+  circular (the wallets were *selected* for winning over that very window).
+  86% of it came from one wallet; the highest-z pick contributed $23.
+- **Out-of-sample** (`oos.py`): select wallets using **only data through
+  Apr 30**, then copy forward May 30→now. Result: **+168%** — but **entirely
+  from one longshot lottery wallet** (1.5% pre-period win rate hitting again).
+  The two strongest pre-period signals made **$0** forward. Forward hit rate was
+  27%. That's variance, not edge that persists.
+
+**Conclusion:** even the one real signal (z-score), when tested for whether you
+can *profit by copying it*, fails out-of-sample — joining every other strategy.
+The detector is valuable for *finding* anomalous wallets; copying them is not a
+proven, fundable edge. The live watcher (`webhook_receiver.py`) exists to gather
+real forward (out-of-sample) data on these wallets — observe before you size up.
+
+## Practical conclusion 2
+
+- **Don't** fund a copy strategy — both the +545% and +168% are
+  variance/concentration, not repeatable edge.
+- **Do** use the detector to find statistically anomalous wallets and watch them
+  live; judge persistence forward with your own eyes.
+- A durable trading edge has to come from *you* (a niche you know), with this
+  tooling built around your judgment.
+
 ## Repo layout
 
-- `insider.py` — the keeper: z-score/p-value detection, timing/freshness/sizing
-  signals, and Alchemy funding-cluster ring detection.
+- `insider.py` — the detector: z-score/p-value, timing/freshness/sizing signals,
+  Alchemy funding-cluster ring detection.
+- `hunt.py` / `huntwide.py` — market sweeps that surface edge wallets.
+- `copyback.py` / `oos.py` — in-sample and out-of-sample copy-trade backtests.
+- `webhook_receiver.py` — push-based live trade watcher (Alchemy → Discord).
 - `smart_money.py` — data foundation + dashboard (true-win-rate scanner).
 - `archive/` — the strategies that didn't work, kept for reference. See
   `archive/README.md`.
