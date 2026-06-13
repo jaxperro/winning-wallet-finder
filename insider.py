@@ -358,8 +358,8 @@ def main():
 
 def sm_load_key():
     try:
-        from copytrade import load_json
-        return load_json("config.json", {}).get("alchemy_key", "")
+        with open("config.json") as f:
+            return json.load(f).get("alchemy_key", "")
     except Exception:
         return ""
 

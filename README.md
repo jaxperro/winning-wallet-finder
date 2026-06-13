@@ -11,18 +11,14 @@ live), and backtest the strategy. Zero dependencies — Python 3 stdlib only
 
 ## Tools
 
+**Read [`FINDINGS.md`](FINDINGS.md) first** — it's the honest scorecard of what
+worked (almost nothing) and what does (`insider.py`).
+
 | File | What it does |
 |------|--------------|
-| `smart_money.py` | Dashboard + scanner. Ranks leaderboard wallets by **true** win rate. |
-| `edge_research.py` | Scans up to ~2000 wallets for a reliable, copyable weekly edge (consistency metrics + copyability). |
-| `lookback.py` | Deep-dive a short list over a long window, split into halves for out-of-sample reads. |
-| `table_77.py` | Aggregate a filtered wallet set into one CSV (ROI, total staked, consistency). |
-| `copytrade.py` | Copy-trade engine — mirror a watchlist (paper by default, live gated). |
-| `backtest.py` | Replay a watchlist over a recent window and mark outcomes. |
-| `lp_screener.py` | Rank reward-eligible markets by risk-adjusted LP yield (pool ÷ competition, penalized by volatility). |
-| `lp_paper.py` | Paper liquidity-provision loop — simulate quoting on the live book, track **net = rewards − adverse selection**. |
-| `xarb.py` | Cross-venue scanner — match the same event on Polymarket vs Kalshi and flag price gaps. |
-| `insider.py` | Insider/sharp detector — flag wallets winning *above their entry odds* (z-score / p-value), with timing, freshness, and sizing signals. |
+| `insider.py` | **The keeper.** Insider/sharp detector — z-score/p-value of wins vs. entry odds, pre-resolution timing, fresh-wallet & sizing signals, and Alchemy funding-cluster ring detection. |
+| `smart_money.py` | Data foundation + dashboard. Ranks leaderboard wallets by **true** (survivorship-corrected) win rate. |
+| `archive/` | Eight strategy tools that didn't clear (copy-trade, LP farming, cross-venue arb, wallet-consistency research). Kept for reference — see [`archive/README.md`](archive/README.md). |
 
 ## Run the dashboard
 
