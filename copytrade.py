@@ -47,12 +47,14 @@ CONFIRM_PHRASE = "TRADE LIVE"
 DEFAULT_CONFIG = {
     "mode": "paper",                 # "paper" or "live"
     "poll_seconds": 12,              # how often to check each wallet
+    "discord_webhook": "",           # paste a Discord webhook URL to get pings
     "watchlist": [],                 # ["0xwallet1", "0xwallet2", ...]
     "bankroll_usd": 1000.0,          # your stake pool
     "bankroll_pct": 0.02,            # 2% of bankroll per new entry
     "price_guard_pct": 0.05,         # skip if price moved >5% from their fill
     "risk": {
         "max_trade_usd": 50.0,       # hard ceiling on any single copy
+        "max_position_usd": 40.0,    # hard ceiling on total cost in one market
         "daily_spend_cap_usd": 250.0,
         "max_total_exposure_usd": 500.0,
         "max_open_positions": 20,
@@ -69,6 +71,22 @@ DEFAULT_CONFIG = {
 }
 
 STATE_PATH_DEFAULT = "copytrade_state.json"
+
+
+def post_discord(webhook, content):
+    """POST a message to a Discord webhook. Best-effort; never raises."""
+    if not webhook:
+        return False
+    try:
+        body = json.dumps({"content": content}).encode()
+        req = urllib.request.Request(
+            webhook, data=body, method="POST",
+            headers={"Content-Type": "application/json",
+                     "User-Agent": "Mozilla/5.0"})
+        urllib.request.urlopen(req, timeout=10, context=SSL_CTX).read()
+        return True
+    except (urllib.error.URLError, TimeoutError):
+        return False
 
 
 # ── state ─────────────────────────────────────────────────────────────────
@@ -201,10 +219,21 @@ class CopyTrader:
         self.state_path = state_path
         self.risk = cfg["risk"]
         self.seen = set(state["seen_tx"])
+        self.webhook = cfg.get("discord_webhook", "")
+        self._discord_warned = False
 
     # -- helpers --
     def log(self, msg):
         print(f"{time.strftime('%H:%M:%S')}  {msg}", flush=True)
+
+    def alert(self, msg, discord_text=None):
+        """Log to console AND push to Discord (used for actual placements)."""
+        self.log(msg)
+        if self.webhook:
+            ok = post_discord(self.webhook, discord_text or msg)
+            if not ok and not self._discord_warned:
+                self.log("  ⚠ Discord webhook post failed (check the URL)")
+                self._discord_warned = True
 
     def reset_daily_if_needed(self):
         today = time.strftime("%Y-%m-%d")
@@ -219,7 +248,7 @@ class CopyTrader:
         save_json(self.state_path, self.state)
 
     # -- risk gate: returns (allowed_usd, reason_if_blocked) --
-    def gate_buy(self, want_usd, price):
+    def gate_buy(self, want_usd, price, pos_cost=0.0):
         r = self.risk
         if not (r["min_price"] <= price <= r["max_price"]):
             return 0.0, f"price {price:.3f} outside [{r['min_price']},{r['max_price']}]"
@@ -229,6 +258,7 @@ class CopyTrader:
         caps = [
             want_usd,
             r["max_trade_usd"],
+            r.get("max_position_usd", float("inf")) - pos_cost,
             r["daily_spend_cap_usd"] - self.state["spend"]["usd"],
             r["max_total_exposure_usd"] - self.open_exposure(),
         ]
@@ -307,7 +337,8 @@ class CopyTrader:
             want_usd = self.cfg["bankroll_usd"] * self.cfg["bankroll_pct"]
             kind = "OPEN"
 
-        allowed, reason = self.gate_buy(want_usd, price)
+        pos_cost = mine["cost"] if is_add else 0.0
+        allowed, reason = self.gate_buy(want_usd, price, pos_cost)
         if reason:
             self.log(f"{kind} {label} — skip ({reason})")
             return
@@ -326,8 +357,12 @@ class CopyTrader:
                 "shares": res["filled_shares"], "cost": spent,
                 "title": title, "outcome": outcome}
         tag = "[PAPER]" if not self.ex.live else "[LIVE]"
-        self.log(f"{kind} {label} — {tag} buy {res['filled_shares']:.1f} "
-                 f"@ {res['price']:.3f}  (${spent:.2f})")
+        self.alert(
+            f"{kind} {label} — {tag} buy {res['filled_shares']:.1f} "
+            f"@ {res['price']:.3f}  (${spent:.2f})",
+            discord_text=(f"🟢 **{kind.strip()}** {tag}\n{label}\n"
+                          f"buy {res['filled_shares']:.0f} @ {res['price']:.3f} "
+                          f"= **${spent:.2f}**"))
 
     def _handle_their_sell(self, token, their_size, their_prev, label):
         mine = self.state["my_pos"].get(token)
@@ -351,8 +386,12 @@ class CopyTrader:
         mine["shares"] -= res["filled_shares"]
         tag = "[PAPER]" if not self.ex.live else "[LIVE]"
         verb = "EXIT" if frac >= 0.999 else "TRIM"
-        self.log(f"{verb} {label} — {tag} sell {res['filled_shares']:.1f} "
-                 f"@ {res['price']:.3f}  (${proceeds:.2f})")
+        self.alert(
+            f"{verb} {label} — {tag} sell {res['filled_shares']:.1f} "
+            f"@ {res['price']:.3f}  (${proceeds:.2f})",
+            discord_text=(f"🔴 **{verb}** {tag}\n{label}\n"
+                          f"sell {res['filled_shares']:.0f} @ {res['price']:.3f} "
+                          f"= **${proceeds:.2f}**"))
         if mine["shares"] <= 0.01:
             del self.state["my_pos"][token]
 
@@ -389,6 +428,14 @@ class CopyTrader:
                  f"bankroll ${self.cfg['bankroll_usd']:.0f} @ "
                  f"{self.cfg['bankroll_pct']:.1%}/entry · "
                  f"guard {self.cfg['price_guard_pct']:.0%}")
+        if self.webhook:
+            post_discord(self.webhook,
+                         f"✅ **Copy-trade tracker connected** ({mode})\n"
+                         f"watching {len(self.cfg['watchlist'])} wallets · "
+                         f"${self.cfg['bankroll_usd']:.0f} bankroll @ "
+                         f"{self.cfg['bankroll_pct']:.1%}/entry · "
+                         f"guard {self.cfg['price_guard_pct']:.0%}\n"
+                         f"You'll get a ping on every trade it would place.")
         if not self.cfg["watchlist"]:
             self.log("watchlist is empty — add wallets to the config. "
                      "(Run smart_money.py to find them.)")

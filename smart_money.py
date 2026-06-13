@@ -26,10 +26,10 @@ PORT = 8899
 # Scan defaults — adjustable in the UI
 DEFAULTS = {
     "pool": 150,           # candidate wallets pulled from the leaderboard
-    "min_win_rate": 75.0,  # percent of resolved bets with realizedPnl > 0
+    "min_win_rate": 75.0,  # percent of resolved bets that won (true, unbiased)
     "min_bets_week": 2.0,  # distinct markets traded per week, recent 4 weeks
     "min_resolved": 10,    # resolved bets required (filters 3-for-3 flukes)
-    "max_positions": 300,  # most recent resolved positions sampled per wallet
+    "max_positions": 80,   # page cap per endpoint (50 each) — window is the real limit
 }
 FREQ_WEEKS = 4  # window for the bets-per-week measurement
 
@@ -102,23 +102,72 @@ def leaderboard_candidates(pool):
     return ranked[:pool]
 
 
-def closed_positions(wallet, max_positions):
-    """Most recent resolved positions, newest first.
+WIN_WINDOW_DAYS = 90   # measure win rate over resolved bets in this window
 
-    The API defaults to sorting by realizedPnl descending — without an
-    explicit TIMESTAMP sort you get a wallet's biggest *wins* first, which
-    inflates every win rate toward 100%. Sort by time so we sample the
-    actual recent record.
+
+def _parse_end(end):
+    """Parse an endDate ('2026-06-11T00:00:00Z' or '2026-06-09') to epoch."""
+    if not end:
+        return 0
+    end = end.replace("Z", "")
+    for fmt in ("%Y-%m-%dT%H:%M:%S", "%Y-%m-%d"):
+        try:
+            return time.mktime(time.strptime(end, fmt))
+        except ValueError:
+            continue
+    return 0
+
+
+def resolved_positions(wallet, max_pages):
+    """Every resolved bet — won or lost — in the last WIN_WINDOW_DAYS.
+
+    Polymarket only redeems *winning* shares; losing shares are worth $0 and
+    sit unredeemed in the wallet forever. So /closed-positions (redeemed or
+    sold) is heavily survivorship-biased toward winners — the losers pile up
+    in /positions at curPrice 0. A true win rate has to union both, over the
+    same time window so the ratio isn't skewed by truncation.
     """
+    cutoff = time.time() - WIN_WINDOW_DAYS * 86400
+    now = time.time()
     out = []
+
+    # redeemed / sold winners (and losers sold before resolution), time-sorted
     offset = 0
-    while offset < max_positions:
+    while offset < max_pages * 50:
         page = get_json("/closed-positions",
                         {"user": wallet, "limit": 50, "offset": offset,
                          "sortBy": "TIMESTAMP", "sortDirection": "DESC"})
         if not page:
             break
-        out.extend(page)
+        for p in page:
+            if p.get("timestamp", 0) >= cutoff:
+                out.append({"won": p.get("curPrice", 0) >= 0.5,
+                            "pnl": p.get("realizedPnl", 0),
+                            "title": p.get("title", "?"),
+                            "outcome": p.get("outcome", "?"),
+                            "avgPrice": p.get("avgPrice", 0),
+                            "ts": p.get("timestamp", 0)})
+        offset += 50
+        if len(page) < 50 or page[-1].get("timestamp", 0) < cutoff:
+            break
+
+    # currently-held positions whose market already resolved (the hidden losers)
+    offset = 0
+    while offset < max_pages * 50:
+        page = get_json("/positions",
+                        {"user": wallet, "limit": 50, "offset": offset,
+                         "sizeThreshold": 0.0})
+        if not page:
+            break
+        for p in page:
+            end = _parse_end(p.get("endDate"))
+            if cutoff <= end < now:   # resolved, in window, unredeemed
+                out.append({"won": p.get("curPrice", 0) >= 0.5,
+                            "pnl": p.get("cashPnl", 0),
+                            "title": p.get("title", "?"),
+                            "outcome": p.get("outcome", "?"),
+                            "avgPrice": p.get("avgPrice", 0),
+                            "ts": end})
         offset += 50
         if len(page) < 50:
             break
@@ -149,17 +198,13 @@ def recent_trade_frequency(wallet, weeks=FREQ_WEEKS):
 
 def analyze_wallet(candidate, max_positions):
     wallet = candidate["wallet"]
-    resolved = closed_positions(wallet, max_positions)
+    resolved = resolved_positions(wallet, max_positions)
     if not resolved:
         return None
-    # A bet won if the outcome it held resolved YES. For resolved positions
-    # curPrice is binary (1 = won, 0 = lost), so it's a cleaner signal than
-    # the sign of realizedPnl — a hedged position can win yet net $0 PnL.
-    def won(p):
-        return p.get("curPrice", 0) >= 0.5
-    wins = sum(1 for p in resolved if won(p))
-    realized_pnl = sum(p.get("realizedPnl", 0) for p in resolved)
+    wins = sum(1 for p in resolved if p["won"])
+    realized_pnl = sum(p["pnl"] for p in resolved)
     trades, markets = recent_trade_frequency(wallet)
+    recent = sorted(resolved, key=lambda p: p["ts"], reverse=True)[:15]
     return {
         **candidate,
         "resolved": len(resolved),
@@ -171,14 +216,14 @@ def analyze_wallet(candidate, max_positions):
         "bets_per_week": round(markets / FREQ_WEEKS, 1),
         "recent": [
             {
-                "title": p.get("title", "?"),
-                "outcome": p.get("outcome", "?"),
-                "avgPrice": p.get("avgPrice", 0),
-                "realizedPnl": round(p.get("realizedPnl", 0), 2),
-                "won": won(p),
-                "timestamp": p.get("timestamp", 0),
+                "title": p["title"],
+                "outcome": p["outcome"],
+                "avgPrice": p["avgPrice"],
+                "realizedPnl": round(p["pnl"], 2),
+                "won": p["won"],
+                "timestamp": p["ts"],
             }
-            for p in resolved[:15]
+            for p in recent
         ],
     }
 

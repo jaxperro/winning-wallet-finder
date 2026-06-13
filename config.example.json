@@ -1,12 +1,14 @@
 {
   "mode": "paper",
   "poll_seconds": 12,
+  "discord_webhook": "",
   "watchlist": [],
   "bankroll_usd": 1000.0,
   "bankroll_pct": 0.02,
   "price_guard_pct": 0.05,
   "risk": {
     "max_trade_usd": 50.0,
+    "max_position_usd": 40.0,
     "daily_spend_cap_usd": 250.0,
     "max_total_exposure_usd": 500.0,
     "max_open_positions": 20,
