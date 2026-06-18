@@ -116,6 +116,32 @@ real forward (out-of-sample) data on these wallets — observe before you size u
 - A durable trading edge has to come from *you* (a niche you know), with this
   tooling built around your judgment.
 
+## The skilled-3% scan, and a clean out-of-sample loss (June 2026)
+
+External validation arrived: an LBS/Yale study (Gomez-Cram, Guo, Kung, Jensen,
+Apr 2026; SSRN 5910522) over 1.72M accounts found only **~3.14%** of traders are
+genuinely skilled — measured by randomizing each trader's bet *directions* 10k×
+(a Monte-Carlo z-score) and requiring out-of-sample persistence. That is exactly
+this project's z-score + `oos.py` method, independently confirmed.
+
+Built `live/` to operationalize it at scale: enumerate recent liquid markets →
+cache every candidate's resolved bets locally (~26k wallets / 12.5M bets, so
+re-scoring at any cutoff is seconds) → a 5-gate funnel (n≥15, z>0, BH-FDR,
+split-half OOS, MM/bot cap). It surfaced 107 "validated" wallets.
+
+**The decisive test.** Copying the high-win-rate "favorite-rider" cohort, $1000,
+no execution lag, June 1→now:
+- selected *through* the test window (look-ahead): 99% win rate, **+23.6%**.
+- selected on **pre-June-1 data only** (honest): 68% win rate, **−7.4%**
+  (−19% on the settled portion).
+
+The +23.6% was selection bias. Done cleanly, the favorites **lose** — a textbook
+reproduction of the paper's "~60% of lucky winners become losers out-of-sample,"
+now on our own live data. *Lesson reinforced: high win rate is the most
+misleading signal on the platform; favorite-riders are uncopyable.* The
+underdog/`value` archetype (beats longshot prices) is the only one left worth
+testing.
+
 ## Repo layout
 
 - `insider.py` — the detector: z-score/p-value, timing/freshness/sizing signals,
@@ -124,5 +150,9 @@ real forward (out-of-sample) data on these wallets — observe before you size u
 - `copyback.py` / `oos.py` — in-sample and out-of-sample copy-trade backtests.
 - `webhook_receiver.py` — push-based live trade watcher (Alchemy → Discord).
 - `smart_money.py` — data foundation + dashboard (true-win-rate scanner).
+- `live/` — current scanner: cache-backed skilled-3% finder + watchlist + daily
+  refresh + dashboard. See `live/README.md`.
+- `wide/` — bulk subgraph→DuckDB scanner (survivorship-bias-free, all wallets);
+  public subgraph frozen at Jan 2026, so historical-only. See `wide/README.md`.
 - `archive/` — the strategies that didn't work, kept for reference. See
   `archive/README.md`.

@@ -1,0 +1,173 @@
+#!/usr/bin/env python3
+"""Generate a self-contained dashboard.html from watch_skilled.json.
+
+Embeds the skilled-wallet snapshot (z, out-of-sample z, record, archetype, …)
+into a sortable/filterable dark dashboard with Polymarket profile links and
+on-demand live recent-trade lookup (data-api, client-side). Re-runnable — wire
+into daily.sh so the dashboard refreshes with the watchlist.
+
+    python3 dashboard.py        # -> dashboard.html
+"""
+
+import json
+import os
+import time
+
+HERE = os.path.dirname(__file__)
+
+
+def archetype(r):
+    if r["avg_entry"] < 0.5:
+        return "value"          # longshot / underdog value — the true alpha zone
+    if r["avg_entry"] >= 0.85:
+        return "favorite"       # rides near-certain favorites (thin, less copyable)
+    return "balanced"
+
+
+def main():
+    w = json.load(open(os.path.join(HERE, "watch_skilled.json")))
+    for i, r in enumerate(w, 1):
+        r["rank"] = i
+        r["arch"] = archetype(r)
+        r["wins"] = int(round(r["win_rate"] * r["n"] / 100))
+    gen = time.strftime("%Y-%m-%d %H:%M")
+    med_z = sorted(x["z"] for x in w)[len(w) // 2]
+    med_oos = sorted(x["z_oos"] for x in w if x["z_oos"] is not None)[len(w) // 2]
+    n_val = sum(1 for x in w if x["arch"] == "value")
+    n_fav = sum(1 for x in w if x["arch"] == "favorite")
+    data = json.dumps(w)
+
+    html = HTML.replace("/*DATA*/", data).replace("{{GEN}}", gen) \
+        .replace("{{COUNT}}", str(len(w))).replace("{{MEDZ}}", f"{med_z:.1f}") \
+        .replace("{{MEDOOS}}", f"{med_oos:.1f}").replace("{{NVAL}}", str(n_val)) \
+        .replace("{{NFAV}}", str(n_fav))
+    out = os.path.join(HERE, "dashboard.html")
+    open(out, "w").write(html)
+    print(f"wrote {out} ({len(w)} wallets)")
+
+
+HTML = r"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Skilled Wallets — Polymarket</title>
+<style>
+:root{--bg:#0b0e14;--card:#141925;--line:#222b3a;--dim:#8a97ad;--fg:#e8edf5;
+  --green:#37d67a;--red:#ff5c6c;--amber:#ffcc55;--blue:#5b9dff;--violet:#b18cff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);
+  font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:22px 16px 60px}
+h1{font-size:26px;margin:0 0 2px}.sub{color:var(--dim);margin:0 0 18px}
+.cards{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:12px 16px;min-width:120px}.card .k{color:var(--dim);font-size:12px}
+.card .v{font-size:22px;font-weight:700;margin-top:2px}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+input,select{background:var(--card);border:1px solid var(--line);color:var(--fg);
+  border-radius:9px;padding:8px 11px;font-size:14px}
+input{flex:1;min-width:180px}
+.pill{padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;white-space:nowrap}
+.value{background:rgba(55,214,122,.15);color:var(--green)}
+.favorite{background:rgba(255,204,85,.15);color:var(--amber)}
+.balanced{background:rgba(91,157,255,.15);color:var(--blue)}
+table{width:100%;border-collapse:collapse;background:var(--card);
+  border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{padding:10px 12px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child,th:nth-child(2),td:nth-child(2){text-align:left}
+th{color:var(--dim);font-size:12px;cursor:pointer;user-select:none;position:sticky;top:0;background:var(--card)}
+th:hover{color:var(--fg)}tr.row:hover{background:#1a2030;cursor:pointer}
+td.name{font-weight:600}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+.z{font-weight:700}.mono{font-family:ui-monospace,Menlo,monospace;color:var(--dim);font-size:12px}
+.det{background:#10141d;color:var(--dim);font-size:13px}
+.det td{text-align:left;white-space:normal}
+.bar{display:inline-block;height:7px;border-radius:4px;background:var(--violet);vertical-align:middle}
+.note{color:var(--dim);font-size:12px;margin-top:14px;line-height:1.6}
+.trade{display:flex;gap:8px;align-items:center;padding:3px 0;border-bottom:1px solid var(--line)}
+.b{color:var(--green)}.s{color:var(--red)}
+</style></head><body><div class="wrap">
+<h1>Skilled Wallets <span style="color:var(--dim);font-weight:400;font-size:18px">· Polymarket</span></h1>
+<p class="sub">{{COUNT}} wallets that beat their own entry prices and held up out-of-sample · generated {{GEN}}</p>
+<div class="cards">
+  <div class="card"><div class="k">Validated wallets</div><div class="v">{{COUNT}}</div></div>
+  <div class="card"><div class="k">Median z</div><div class="v">{{MEDZ}}</div></div>
+  <div class="card"><div class="k">Median OOS z</div><div class="v" style="color:var(--green)">{{MEDOOS}}</div></div>
+  <div class="card"><div class="k">Value / longshot</div><div class="v" style="color:var(--green)">{{NVAL}}</div></div>
+  <div class="card"><div class="k">Favorite-rider</div><div class="v" style="color:var(--amber)">{{NFAV}}</div></div>
+</div>
+<div class="controls">
+  <input id="q" placeholder="search name or address…">
+  <select id="arch"><option value="">All archetypes</option>
+    <option value="value">Value / longshot</option>
+    <option value="balanced">Balanced</option>
+    <option value="favorite">Favorite-rider</option></select>
+  <select id="sort">
+    <option value="z">Sort: z (skill)</option>
+    <option value="z_oos">Sort: out-of-sample z</option>
+    <option value="band_0204">Sort: alpha-zone %</option>
+    <option value="n">Sort: # bets</option>
+    <option value="win_rate">Sort: win rate</option>
+  </select>
+</div>
+<table id="tbl"><thead><tr>
+  <th data-k="rank">#</th><th data-k="name">Wallet</th>
+  <th data-k="z">z</th><th data-k="z_oos">OOS z</th>
+  <th data-k="n">bets</th><th data-k="win_rate">win%</th>
+  <th data-k="avg_entry">avg entry</th><th data-k="band_0204">alpha 0.2–0.4</th>
+  <th data-k="arch">type</th>
+</tr></thead><tbody id="body"></tbody></table>
+<p class="note"><b>How to read it.</b> <b>z</b> = how far the wallet beat the prices it paid (skill; >3 is strong). <b>OOS z</b> = whether that skill held on held-out bets — the gate that separates real edge from luck. <b>Alpha 0.2–0.4</b> = share of bets in the underdog value zone where research finds real edge concentrates. <span class="value" style="padding:1px 7px">Value</span> wallets win by beating longshot/mid prices (the copyable alpha); <span class="favorite" style="padding:1px 7px">Favorite-rider</span> wallets post high win rates buying near-certain favorites (real but thin, hard to copy). Click any row for live recent trades. Not financial advice — split-half OOS, forward-track before sizing.</p>
+</div>
+<script>
+const DATA=/*DATA*/;
+const fmtW=w=>w.length>14?w.slice(0,6)+'…'+w.slice(-4):w;
+let sortK='z',asc=false,open=null;
+const body=document.getElementById('body');
+function render(){
+  const q=document.getElementById('q').value.toLowerCase();
+  const af=document.getElementById('arch').value;
+  let rows=DATA.filter(r=>(!af||r.arch===af)&&
+    (!q||(r.name||'').toLowerCase().includes(q)||r.wallet.toLowerCase().includes(q)));
+  rows.sort((a,b)=>{const x=a[sortK],y=b[sortK];return (asc?1:-1)*((x>y)-(x<y));});
+  body.innerHTML=rows.map(r=>{
+    const zc=r.z>=10?'var(--violet)':r.z>=6?'var(--green)':'var(--fg)';
+    const oc=r.z_oos>=5?'var(--green)':r.z_oos>=3?'var(--amber)':'var(--red)';
+    const bw=Math.round(r.band_0204*46);
+    return `<tr class="row" data-w="${r.wallet}">
+      <td>${r.rank}</td>
+      <td class="name">${r.name||fmtW(r.wallet)}<div class="mono">${fmtW(r.wallet)}</div></td>
+      <td class="z" style="color:${zc}">${r.z.toFixed(1)}</td>
+      <td class="z" style="color:${oc}">${r.z_oos==null?'—':r.z_oos.toFixed(1)}</td>
+      <td>${r.wins}/${r.n}</td>
+      <td>${r.win_rate.toFixed(0)}%</td>
+      <td>${r.avg_entry.toFixed(2)}</td>
+      <td><span class="bar" style="width:${bw}px"></span> ${(r.band_0204*100).toFixed(0)}%</td>
+      <td><span class="pill ${r.arch}">${r.arch}</span></td></tr>`;
+  }).join('')||'<tr><td colspan="9" style="text-align:center;color:var(--dim);padding:24px">no matches</td></tr>';
+}
+body.addEventListener('click',async e=>{
+  const tr=e.target.closest('tr.row'); if(!tr)return;
+  const w=tr.dataset.w;
+  const nx=tr.nextElementSibling;
+  if(nx&&nx.classList.contains('det')){nx.remove();return;}
+  document.querySelectorAll('tr.det').forEach(x=>x.remove());
+  const d=document.createElement('tr');d.className='det';
+  d.innerHTML=`<td colspan="9">loading recent trades… · <a href="https://polymarket.com/profile/${w}" target="_blank">open profile ↗</a></td>`;
+  tr.after(d);
+  try{
+    const r=await fetch(`https://data-api.polymarket.com/activity?user=${w}&type=TRADE&limit=8`);
+    const ts=await r.json();
+    const rows=(ts||[]).map(t=>`<div class="trade"><span class="${t.side==='BUY'?'b':'s'}">${t.side}</span>
+      <span>${(t.outcome||'')} · ${(t.title||'').slice(0,52)}</span>
+      <span style="margin-left:auto;color:var(--dim)">${((t.price||0)*100).toFixed(0)}¢</span></div>`).join('');
+    d.firstChild.innerHTML=`<a href="https://polymarket.com/profile/${w}" target="_blank">open profile ↗</a><div style="margin-top:6px">${rows||'no recent trades'}</div>`;
+  }catch(err){d.firstChild.innerHTML=`<a href="https://polymarket.com/profile/${w}" target="_blank">open profile ↗</a> · live feed unavailable`;}
+});
+document.querySelectorAll('th').forEach(th=>th.onclick=()=>{
+  const k=th.dataset.k; if(k===sortK)asc=!asc;else{sortK=k;asc=(k==='rank'||k==='avg_entry');} render();});
+document.getElementById('q').oninput=render;
+document.getElementById('arch').onchange=render;
+document.getElementById('sort').onchange=e=>{sortK=e.target.value;asc=false;render();};
+render();
+</script></body></html>"""
+
+
+if __name__ == "__main__":
+    main()

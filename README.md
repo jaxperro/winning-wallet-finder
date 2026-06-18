@@ -68,6 +68,8 @@ Two refinements separate signal from noise:
 | `webhook_receiver.py` | Push-based live watcher: Alchemy on-chain webhook → enrich → Discord. |
 | `watch.json` | The tracked wallet set + edge weights (shared by the watcher and the tracker). |
 | paper tracker | Client-side `$1,000` running portfolio → [jaxperro.com/trading](https://jaxperro.com/trading) (page lives in the personal site repo). |
+| **`live/`** | **The current scanner** — find & track the skilled ~3% from the live API at scale: enumerate → cache → 5-gate skill funnel → dashboard → daily refresh. Caches ~26k wallets / 12.5M bets locally so every re-score is seconds. ([live/README](live/README.md)) |
+| `wide/` | Bulk subgraph→DuckDB scanner: survivorship-bias-free over all 1.76M wallets, but the public subgraph is **frozen at Jan 2026**, so it's a historical tool only. ([wide/README](wide/README.md)) |
 | `archive/` | The six strategies that didn't work, kept for reference ([details](archive/README.md)). |
 
 ---
@@ -156,6 +158,38 @@ public API (CORS-open) — zero backend, zero added cost.
 > fully deployed almost instantly — you can follow only a few percent of their
 > trades. Concentrating on a handful of high-conviction wallets with bigger
 > stakes is the only way a small bankroll meaningfully mirrors them.
+
+---
+
+## The skilled-wallet scanner (`live/`)
+
+The newest pipeline operationalizes the [LBS/Yale finding](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5910522)
+that ~3% of accounts are genuinely skilled. It scans the **live** data-api at
+scale and tracks the survivors forward.
+
+**The 5-gate funnel** — a wallet is "skilled" only if it clears all five:
+`n ≥ 15 resolved bets` → `z > 0` (beats its entry prices) → `Benjamini–Hochberg
+FDR @5%` → `split-half out-of-sample persists` → `not a market-maker/bot`. Win
+rate is never a gate.
+
+**The cache makes it cheap.** Each wallet's full resolved-bet history is pulled
+once into `cache.duckdb` (~26k wallets / 12.5M bets), keyed with per-bet
+resolution times — so any cutoff (pre-June-1, full-window, archetypes) re-scores
+in **seconds** instead of hours of API pulls.
+
+**The clean out-of-sample result (June 2026).** Copying the "favorite-rider"
+skilled wallets, $1000, no execution lag:
+
+| Selection | Win rate | Forward P&L (June 1+) |
+|-----------|----------|-----------------------|
+| In-sample (peeks at test window) | 99% | **+23.6%** |
+| **Clean (pre-June-1 data only)** | 68% | **−7.4%** (−19% on settled) |
+
+The +23.6% was pure selection bias. Selected honestly, the favorites **lose** —
+exactly the paper's "~60% of lucky winners become losers out-of-sample." High
+win rate ≠ edge, again. (The `value`/longshot archetype — wallets that beat
+*underdog* prices — is the one worth testing next.) Full pipeline in
+[`live/README.md`](live/README.md).
 
 ---
 

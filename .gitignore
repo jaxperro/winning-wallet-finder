@@ -24,3 +24,12 @@ watcher_state.json
 huntwide.csv
 oos.log
 hunt.log
+
+# live/ + wide/ — large local data + regenerable artifacts
+*.duckdb
+*.duckdb.wal
+live/candidates.json
+live/scored.json
+live/*_scored.json
+live/watch_prejune*.json
+live/history/
