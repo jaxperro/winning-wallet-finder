@@ -165,6 +165,29 @@ copier with **missed-trade accounting** (capital tied in open positions).
 the edge is only capturable by concentrating on few wallets' high-conviction
 bets. The live tracker (jaxperro.com/trading) now runs exactly that config.*
 
+## The repeatable profile: conviction bets + a timing gate (the best result)
+
+Refining the above: instead of all bets, score wallets on their HIGH-CONVICTION
+bets only — their large (>= $200) stakes. The top wallets win **70-80% of their
+big bets on genuinely-uncertain (~0.4-0.6 priced) markets** — real edge, not
+favorite-riding — and it persists. `live/conviction_scan.py` (train pre-June,
+validate June) found **69 wallets** matching the profile; forward, **25/37 stayed
+profitable (p=0.024), +11.7% pooled**. A reproducible class, not a fluke.
+
+Then the decisive copyability filter, `live/validate_timing.py`: a near-100% win
+rate is either foresight (copyable) or last-second information (uncopyable). The
+tell is **entry->resolution lead time on winning conviction bets**. Of the 69,
+**21 were insiders** (median lead < 6h — you can't mirror them), leaving **23
+validated copyable sharps** (`watch_sharps.json`) with multi-day leads. The
+standout `0x60ec1744…` held 80% win over **1,017 forward conviction bets**; even
+the suspiciously-perfect `0x72e1…` (99/100% win) enters ~7 days early — a real
+forecaster, not an insider. These 23 are surfaced live on jaxperro.com/trading.
+
+*Lesson: score conviction bets, not all bets; require avg entry ~0.4-0.6 (edge,
+not favorites); and gate on lead time to drop insiders. That funnel produces a
+copyable, forward-validated set — the strongest evidence in this project that
+followable skill exists.*
+
 ## Repo layout
 
 - `insider.py` — the detector: z-score/p-value, timing/freshness/sizing signals,

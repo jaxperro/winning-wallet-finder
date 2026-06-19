@@ -191,6 +191,17 @@ win rate ≠ edge, again. (The `value`/longshot archetype — wallets that beat
 *underdog* prices — is the one worth testing next.) Full pipeline in
 [`live/README.md`](live/README.md).
 
+**What does work (the repeatable find).** Scoring wallets on their **high-
+conviction (≥$200) bets** — which win 70–80% on genuinely-uncertain (~0.4–0.6)
+markets — trained pre-June and validated June: **25/37 stayed profitable forward
+(p=0.024)**. A lead-time gate (`validate_timing.py`) then drops the ~30% that are
+uncopyable insiders (entry <6h before resolution), leaving **23 validated
+copyable sharps** (`watch_sharps.json`), surfaced live on
+[jaxperro.com/trading](https://jaxperro.com/trading). One held **80% win over
+1,017 forward bets**. This is the strongest evidence in the project that
+*followable* skill exists — though execution lag/fees and ongoing forward
+validation still gate turning it into real money.
+
 ---
 
 ## The honest verdict

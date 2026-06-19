@@ -74,6 +74,23 @@ archetype (beats underdog prices) is where real alpha may live — test it with
   follow 1,200 trades), but **1–2 wallets + a conviction (bet-size) filter clears**
   out-of-sample. See `../FINDINGS.md`.
 
+## The repeatable find (`conviction_scan.py` + `validate_timing.py`)
+
+The best result. Score wallets on their **high-conviction (≥$200) bets only**: the
+edge is wallets that win 70–80% on genuinely-uncertain (~0.4–0.6) markets — real
+skill, not favorite-riding.
+
+- `conviction_scan.py` — train pre-June / validate June on conviction bets →
+  69 matches, **25/37 profitable forward (p=0.024)**. → `conviction_wallets.json`.
+- `validate_timing.py` — the copyability gate: entry→resolution **lead time** on
+  winning conviction bets separates copyable sharps (multi-day lead) from
+  uncopyable insiders (<6h). Drops 21 insiders → **23 validated copyable sharps**.
+  → `watch_sharps.json` (shown live on jaxperro.com/trading).
+
+Identifiers for a follow-worthy wallet: on its **≥$200 bets** — win ≥65%, avg
+entry 0.35–0.70 (edge, not favorites), +copy-ROI, FDR-significant, **median lead
+≥24h** (copyable), and it **holds out-of-sample**.
+
 ## Daily (`daily.sh`)
 
 1. discover (enumerate last 14d) → 2. freshen cache (force-refresh watchlist +
