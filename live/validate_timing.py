@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""Insider-vs-sharp check on the standout conviction wallets.
+"""Last-minute-vs-sharp check on the standout conviction wallets.
 
-A near-100% win rate is either genuine foresight (copyable) or information /
-last-second entry (uncopyable insider). The tell is entry->resolution lead time
-on their WINNING conviction bets:
-  * mostly < 1h before resolution  -> insider/news-reaction, you can't follow it
+This is a COPYABILITY heuristic, not proof of inside information: a near-100%
+win rate is only useful to us if we can actually mirror it. The tell is entry->
+resolution lead time on their WINNING conviction bets:
+  * mostly < 1h before resolution  -> last-minute, you can't follow it in time
   * hours-to-days of lead          -> a sharp you could actually mirror
+A short lead can mean a genuine insider OR just someone who trades fast-resolving
+markets (live sports, hourly) well — we can't tell which, and for copy purposes
+it doesn't matter: either way the window is too tight to mirror.
 """
 
 import json
@@ -30,7 +33,7 @@ def lead_profile(w):
         return None
     med = st.median(leads)
     u6 = sum(1 for l in leads if l < 6) / len(leads)
-    verdict = ("insider" if (med < 6 or sum(1 for l in leads if l < 1) / len(leads) > 0.5)
+    verdict = ("last-minute" if (med < 6 or sum(1 for l in leads if l < 1) / len(leads) > 0.5)
                else "borderline" if med < COPYABLE_MED_LEAD else "sharp")
     return dict(n=len(leads), med=med, u6=u6, verdict=verdict)
 
@@ -66,7 +69,7 @@ def main():
               f"{fw:>7}{fr:>7}{c['fwd_n']:>5}  {c['wallet']}")
 
     json.dump(sharps, open(os.path.join(HERE, "watch_sharps.json"), "w"), indent=2)
-    print(f"\n-> watch_sharps.json ({len(sharps)} copyable sharps, insiders filtered out)")
+    print(f"\n-> watch_sharps.json ({len(sharps)} copyable sharps, last-minute wallets filtered out)")
 
 
 if __name__ == "__main__":

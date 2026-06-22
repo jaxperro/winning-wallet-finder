@@ -179,17 +179,21 @@ validate June) under p80 finds **218 wallets** matching the profile; forward,
 (The original flat-$200 run found 69 wallets, 25/37 forward, +11.7%.)
 
 Then the decisive copyability filter, `live/validate_timing.py`: a near-100% win
-rate is either foresight (copyable) or last-second information (uncopyable). The
-tell is **entry->resolution lead time on winning conviction bets**. Of the 69,
-**21 were insiders** (median lead < 6h — you can't mirror them), leaving **23
-validated copyable sharps** (`watch_sharps.json`) with multi-day leads. The
-standout `0x60ec1744…` held 80% win over **1,017 forward conviction bets**; even
-the suspiciously-perfect `0x72e1…` (99/100% win) enters ~7 days early — a real
-forecaster, not an insider. These 23 are surfaced live on jaxperro.com/trading.
+rate is only useful if we can mirror it. The tell is **entry->resolution lead
+time on winning conviction bets** — this is a copyability heuristic, NOT proof of
+inside information (a short lead can be a genuine insider or just someone good at
+fast-resolving markets; we can't tell, and for copy purposes it doesn't matter).
+Of the 218, the gate drops the **"last-minute" wallets** (median lead <24h — you
+can't get the trade in before resolution), leaving **50 validated copyable sharps**
+(`watch_sharps.json`) with multi-day leads. The standout `0x60ec1744…` held 80%
+win over **1,017 forward conviction bets**; even the suspiciously-perfect `0x72e1…`
+(99/100% win) enters ~7 days early — a real forecaster, clearly not last-minute.
+These 50 are surfaced live on jaxperro.com/trading.
 
 *Lesson: score conviction bets, not all bets; require avg entry ~0.4-0.6 (edge,
-not favorites); and gate on lead time to drop insiders. That funnel produces a
-copyable, forward-validated set — the strongest evidence in this project that
+not favorites); and gate on lead time to drop last-minute (un-mirrorable) wallets.
+That funnel produces a copyable, forward-validated set — the strongest evidence in
+this project that
 followable skill exists.*
 
 ## Repo layout

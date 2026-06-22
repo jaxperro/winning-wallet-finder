@@ -194,9 +194,10 @@ win rate ≠ edge, again. (The `value`/longshot archetype — wallets that beat
 **What does work (the repeatable find).** Scoring wallets on their **high-
 conviction bets — the top 20% by stake size (per-wallet p80, not a flat $200)** —
 which win 70–80% on genuinely-uncertain (~0.4–0.6)
-markets — trained pre-June and validated June: **25/37 stayed profitable forward
-(p=0.024)**. A lead-time gate (`validate_timing.py`) then drops the ~30% that are
-uncopyable insiders (entry <6h before resolution), leaving **23 validated
+markets — trained pre-June and validated June: **62/83 stayed profitable forward
+(p≈0)**. A lead-time gate (`validate_timing.py`) then drops wallets whose wins come
+too close to resolution to mirror — "last-minute" entries (median lead <24h), which
+may be genuine insiders or just fast-market specialists — leaving **50 validated
 copyable sharps** (`watch_sharps.json`), surfaced live on
 [jaxperro.com/trading](https://jaxperro.com/trading). One held **80% win over
 1,017 forward bets**. This is the strongest evidence in the project that

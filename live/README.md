@@ -83,11 +83,13 @@ The per-wallet cutoff reproduces flat-$200's win-rate lift while adapting to eac
 wallet's scale (a whale's $200 bet isn't conviction; a minnow's is).
 
 - `conviction_scan.py` — train pre-June / validate June on conviction bets →
-  69 matches, **25/37 profitable forward (p=0.024)**. → `conviction_wallets.json`.
+  218 matches, **62/83 profitable forward (p≈0)**. → `conviction_wallets.json`.
 - `validate_timing.py` — the copyability gate: entry→resolution **lead time** on
   winning conviction bets separates copyable sharps (multi-day lead) from
-  uncopyable insiders (<6h). Drops 21 insiders → **23 validated copyable sharps**.
-  → `watch_sharps.json` (shown live on jaxperro.com/trading).
+  "last-minute" wallets (median lead <24h) we can't mirror in time — could be
+  genuine insiders or just fast-resolving-market specialists, can't tell which.
+  → **50 validated copyable sharps** in `watch_sharps.json` (shown live on
+  jaxperro.com/trading).
 
 Identifiers for a follow-worthy wallet: on its **≥$200 bets** — win ≥65%, avg
 entry 0.35–0.70 (edge, not favorites), +copy-ROI, FDR-significant, **median lead
