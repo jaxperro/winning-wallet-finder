@@ -5,7 +5,12 @@ favorite-riding — and it persists out-of-sample.
 
 TRAIN = conviction bets resolved before June 1. TEST = June 1+ resolved.
 
-Profile gates (on TRAIN conviction bets, size >= MIN_CONV):
+A "conviction" bet = one in the top 20% (p80) of THAT wallet's own stake sizes,
+computed per-wallet over its full cached window — replacing the old flat $200.
+Validated to reproduce flat-$200's win-rate lift while adapting to each wallet's
+scale (kept in sync with cache.CONV_PCTILE and trading/index.html).
+
+Profile gates (on TRAIN conviction bets):
   * >= MIN_N conviction bets
   * win rate >= WIN_MIN
   * avg entry in [ENTRY_LO, ENTRY_HI]  (excludes 0.9 favorite-riders)
@@ -18,7 +23,7 @@ import duckdb
 
 HERE = os.path.dirname(__file__)
 JUN1 = time.mktime(time.strptime("2026-06-01", "%Y-%m-%d"))
-MIN_CONV = 200          # "conviction" = they staked >= this ($)
+CONV_PCTILE = 0.80      # "conviction" = a bet in the top 20% of the wallet's own stakes
 MIN_N = 12              # train conviction bets needed
 WIN_MIN = 0.65
 ENTRY_LO, ENTRY_HI = 0.30, 0.75
@@ -39,8 +44,14 @@ def stats(bets):
 
 def main():
     con = duckdb.connect(os.path.join(HERE, "cache.duckdb"), read_only=True)
+    # per-wallet conviction cutoff = p80 of that wallet's own positive stakes, then
+    # keep only its bets at/above that cutoff (its top ~20% by size).
     rows = con.execute(
-        "SELECT wallet, p, won, res_t FROM bets WHERE size >= ?", [MIN_CONV]).fetchall()
+        "WITH thr AS (SELECT wallet, quantile_cont(size, ?) AS t "
+        "             FROM bets WHERE size > 0 GROUP BY wallet) "
+        "SELECT b.wallet, b.p, b.won, b.res_t "
+        "FROM bets b JOIN thr ON b.wallet = thr.wallet "
+        "WHERE b.size > 0 AND b.size >= thr.t", [CONV_PCTILE]).fetchall()
     byw = {}
     for w, p, won, rt in rows:
         byw.setdefault(w, []).append((max(0.001, min(0.999, p or 0)), won, rt or 0))
@@ -65,7 +76,7 @@ def main():
     sel = sorted([c for c in cand if sf(c["z"]) <= thr and thr > 0],
                  key=lambda c: c["roi"], reverse=True)
 
-    print(f"wallets with >= {MIN_N} conviction bets (>= ${MIN_CONV}) pre-June: {len(byw):,} scanned")
+    print(f"wallets with >= {MIN_N} conviction bets (top {1-CONV_PCTILE:.0%} by stake) pre-June: {len(byw):,} scanned")
     print(f"matching the profile (win>= {WIN_MIN:.0%}, entry {ENTRY_LO}-{ENTRY_HI}, "
           f"+ROI, FDR-significant): {len(sel)}\n")
 

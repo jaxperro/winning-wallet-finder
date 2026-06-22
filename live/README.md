@@ -76,9 +76,11 @@ archetype (beats underdog prices) is where real alpha may live — test it with
 
 ## The repeatable find (`conviction_scan.py` + `validate_timing.py`)
 
-The best result. Score wallets on their **high-conviction (≥$200) bets only**: the
-edge is wallets that win 70–80% on genuinely-uncertain (~0.4–0.6) markets — real
-skill, not favorite-riding.
+The best result. Score wallets on their **high-conviction bets only — the top 20%
+by stake size (per-wallet p80, not a flat $200)**: the edge is wallets that win
+70–80% on genuinely-uncertain (~0.4–0.6) markets — real skill, not favorite-riding.
+The per-wallet cutoff reproduces flat-$200's win-rate lift while adapting to each
+wallet's scale (a whale's $200 bet isn't conviction; a minnow's is).
 
 - `conviction_scan.py` — train pre-June / validate June on conviction bets →
   69 matches, **25/37 profitable forward (p=0.024)**. → `conviction_wallets.json`.

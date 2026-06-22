@@ -192,7 +192,8 @@ win rate ≠ edge, again. (The `value`/longshot archetype — wallets that beat
 [`live/README.md`](live/README.md).
 
 **What does work (the repeatable find).** Scoring wallets on their **high-
-conviction (≥$200) bets** — which win 70–80% on genuinely-uncertain (~0.4–0.6)
+conviction bets — the top 20% by stake size (per-wallet p80, not a flat $200)** —
+which win 70–80% on genuinely-uncertain (~0.4–0.6)
 markets — trained pre-June and validated June: **25/37 stayed profitable forward
 (p=0.024)**. A lead-time gate (`validate_timing.py`) then drops the ~30% that are
 uncopyable insiders (entry <6h before resolution), leaving **23 validated

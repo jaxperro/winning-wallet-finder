@@ -27,6 +27,25 @@ WINDOW_DAYS = 180
 MAX_AGE_DAYS = 14         # broad pool re-pulls only every 2 weeks; watchlist is
                          # force-refreshed daily via invalidate() (see daily.sh)
 
+# CONVICTION = a bet in the top 20% of a wallet's OWN stake sizes (p80), replacing
+# the old flat $200. Validated to reproduce flat-$200's win-rate lift (~74% vs ~51%
+# on all bets) across the 23 sharps while adapting to each wallet's scale. Keep this
+# in sync with trading/index.html's CONV_PCTILE / pctl().
+CONV_PCTILE = 0.80
+
+
+def conv_cutoff(sizes, q=CONV_PCTILE):
+    """A wallet's conviction stake threshold: the q-quantile of its own positive
+    bet sizes (linear interpolation, matching the dashboard's pctl). Bets with
+    size >= this are conviction bets. Returns +inf if the wallet has no sized bets
+    (so nothing qualifies)."""
+    s = sorted(x for x in sizes if x and x > 0)
+    if not s:
+        return float("inf")
+    k = (len(s) - 1) * q
+    f = int(k)
+    return s[f] if f + 1 >= len(s) else s[f] + (s[f + 1] - s[f]) * (k - f)
+
 _lock = threading.Lock()
 _con = duckdb.connect(DB)
 _con.execute("""CREATE TABLE IF NOT EXISTS bets(

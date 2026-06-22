@@ -168,11 +168,15 @@ bets. The live tracker (jaxperro.com/trading) now runs exactly that config.*
 ## The repeatable profile: conviction bets + a timing gate (the best result)
 
 Refining the above: instead of all bets, score wallets on their HIGH-CONVICTION
-bets only — their large (>= $200) stakes. The top wallets win **70-80% of their
+bets only — the top 20% of each wallet's own stake sizes (per-wallet p80). This
+replaced the original flat >= $200 cutoff (2026-06-22): p80 reproduces flat-$200's
+win-rate lift across the sharps while adapting to each wallet's scale — a whale's
+$200 bet isn't conviction, a minnow's is. The top wallets win **70-80% of their
 big bets on genuinely-uncertain (~0.4-0.6 priced) markets** — real edge, not
 favorite-riding — and it persists. `live/conviction_scan.py` (train pre-June,
-validate June) found **69 wallets** matching the profile; forward, **25/37 stayed
-profitable (p=0.024), +11.7% pooled**. A reproducible class, not a fluke.
+validate June) under p80 finds **218 wallets** matching the profile; forward,
+**62/83 stayed profitable (p≈0), +16.0% pooled**. A reproducible class, not a fluke.
+(The original flat-$200 run found 69 wallets, 25/37 forward, +11.7%.)
 
 Then the decisive copyability filter, `live/validate_timing.py`: a near-100% win
 rate is either foresight (copyable) or last-second information (uncopyable). The

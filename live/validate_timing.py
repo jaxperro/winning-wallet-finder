@@ -22,8 +22,9 @@ COPYABLE_MED_LEAD = 24.0     # median lead (h) on winning conviction bets to cou
 def lead_profile(w):
     ent = cache.get_entries(w)
     bets = cache.get_bets(w)
+    cut = cache.conv_cutoff(b["size"] for b in bets)   # this wallet's top-20% stake cutoff
     leads = [(b["res_t"] - ent[b["cond"]]) / 3600.0 for b in bets
-             if b["won"] and (b["size"] or 0) >= 200 and b["cond"] in ent
+             if b["won"] and (b["size"] or 0) >= cut and b["cond"] in ent
              and b["res_t"] and b["res_t"] >= ent[b["cond"]]]
     if not leads:
         return None
