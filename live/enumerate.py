@@ -73,15 +73,17 @@ def recent_markets():
     cutoff = time.time() - WINDOW_DAYS * 86400
     end_min = time.strftime("%Y-%m-%dT00:00:00Z", time.gmtime(cutoff))
     out, scanned, base, WAVE = [], 0, 0, 4   # low concurrency — gamma throttles bursts
+    fail_streak = 0
     with ThreadPoolExecutor(max_workers=WAVE) as ex:
         while len(out) < MAX_MARKETS and scanned < MAX_SCAN:
             pages = list(ex.map(lambda o: _page(o, end_min),
                                 [base + i * 100 for i in range(WAVE)]))
             base += WAVE * 100
-            ended = False
+            ended = got_any = False
             for page in pages:
                 if page == "ERR" or page is None:
                     continue                     # skip transient gaps, keep going
+                got_any = True
                 if len(page) < 100:
                     ended = True                 # genuine end of data
                 scanned += len(page)
@@ -95,6 +97,16 @@ def recent_markets():
             print(f"  scanned {scanned:,}… kept {len(out)}", flush=True)
             if ended:
                 break
+            # a whole wave erroring out means we've hit gamma's offset ceiling (it
+            # 422s past a max offset) — not a transient blip, since _page already
+            # retries. Allow one such wave, bail on the second so we never spin.
+            if not got_any:
+                fail_streak += 1
+                if fail_streak >= 2:
+                    print("  (gamma returned no more pages — stopping scan)", flush=True)
+                    break
+            else:
+                fail_streak = 0
     return out[:MAX_MARKETS]
 
 
