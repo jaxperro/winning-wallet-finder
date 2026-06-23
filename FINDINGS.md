@@ -222,6 +222,25 @@ by position win%. Conviction must be measured at the position level (a wallet's 
 stake in a market), not per individual buy — a scalper splits one position across many
 small buys, so a per-trade threshold copies far more (and worse) bets than intended.*
 
+## Capital recycling & the $1k book (2026-06-23)
+
+The $1,000 paper book (`live/portfolio.py` → `portfolio.json`, rendered at
+jaxperro.com/trading) surfaced two things:
+
+- **"Saturation" was mostly a measurement artifact.** The old browser replay froze
+  capital in positions whose resolution date the data-api didn't return, so it
+  skipped bets it could afford (340 phantom misses on a 4-wallet book). Computing
+  the book **off the cache** — which stores each bet's resolution time (`res_t`) —
+  frees cash at the true resolution moment: misses dropped to ~0 and the book
+  recycled ~23× over the window. With *real* money this isn't even a problem (cash
+  returns on redemption); it was purely the paper sim mis-measuring.
+- **More wallets help only up to the bankroll's slot count.** A combo backtest over
+  the copy-positive holders showed returns rise with basket size *until* peak
+  concurrent demand exceeds ~$1k ÷ $50 = 20 slots, after which a high-volume wallet
+  just crowds out the others. So: pick wallets that **fit** the bankroll, favor
+  **fast-resolving** markets (capital velocity > bet size on $1k), and don't
+  diversify past what you can fund. Two well-chosen holders beat four that overflow.
+
 ## Repo layout
 
 - `insider.py` — the detector: z-score/p-value, timing/freshness/sizing signals,
@@ -230,8 +249,12 @@ small buys, so a per-trade threshold copies far more (and worse) bets than inten
 - `copyback.py` / `oos.py` — in-sample and out-of-sample copy-trade backtests.
 - `webhook_receiver.py` — push-based live trade watcher (Alchemy → Discord).
 - `smart_money.py` — data foundation + dashboard (true-win-rate scanner).
-- `live/` — current scanner: cache-backed skilled-3% finder + watchlist + daily
-  refresh + dashboard. See `live/README.md`.
+- `live/` — current system: cache-backed finder + **copy-positive-holder sharps
+  selection** (`conviction_scan.py` + `validate_timing.py` → `watch_sharps.json`,
+  ranked by Copy P&L) + **$1k paper book** (`portfolio.py` → `portfolio.json`) +
+  daily refresh. The dashboard (jaxperro repo) renders those two JSON feeds. See
+  `live/README.md`. *Copy execution (`copybot.py`, `sync_floors.py`) is a separate,
+  in-progress system — this finder is selection + tracking only.*
 - `wide/` — bulk subgraph→DuckDB scanner (survivorship-bias-free, all wallets);
   public subgraph frozen at Jan 2026, so historical-only. See `wide/README.md`.
 - `archive/` — the strategies that didn't work, kept for reference. See

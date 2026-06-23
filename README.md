@@ -144,20 +144,26 @@ Keep the two wallet lists in sync: Alchemy's address list (what *triggers*) and
 
 ### 2. Live paper portfolio — `trading/` → [jaxperro.com/trading](https://jaxperro.com/trading)
 
-A **$1,000 paper account that behaves like real money**: it replays every
-watched-wallet trade since inception, **enters when they enter** (if there's
-cash), holds each bet **to resolution**, then settles (win → payout, loss → $0)
-and frees the cash. Shows **Liquid** (cash), **Invested** (open bets marked to
-market), **Realized** (settled P&L), a **Current Bets** table with per-bet entry
-/ mark / P&L / *settle date*, and — crucially — **Missed P&L**: the profit left
-on the table from trades skipped because the bankroll was fully deployed (the
-real cost of a small account). It runs **100% client-side** off Polymarket's
-public API (CORS-open) — zero backend, zero added cost.
+A **$1,000 paper account that behaves like real money**: it mirrors each followed
+wallet's **conviction** bets (top 20% of their own stake sizes) at $50/trade,
+**enters when they enter** (if there's cash), holds to resolution, then settles
+and frees the cash. Shows **Liquid**, **Invested**, **Realized**, a **Current
+Bets** table, and **Missed P&L** (profit skipped when the bankroll was fully
+deployed — the cost of a small account).
 
-> **What the tracker taught us:** $1,000 across many hyperactive wallets gets
-> fully deployed almost instantly — you can follow only a few percent of their
-> trades. Concentrating on a handful of high-conviction wallets with bigger
-> stakes is the only way a small bankroll meaningfully mirrors them.
+It's now **precomputed server-side off the cache** (`live/portfolio.py` →
+`portfolio.json`) rather than replayed in the browser: the cache stores each bet's
+resolution time, so capital **recycles at the true resolution moment** (the
+client replay used to phantom-lock capital when the data-api lacked resolution
+dates). The page is a static renderer of `portfolio.json` + `watch_sharps.json`,
+with the old client-side replay kept as a fallback.
+
+> **What the tracker taught us:** $1,000 across many hyperactive wallets saturates
+> instantly — concentrate on a few wallets that fit the bankroll. And **win% lies
+> about copyability**: judge candidates by **Copy P&L** (the sharps table's headline
+> column — actual flat-$50 copy result, scalpers exposed), not win rate. *Actually
+> placing* the trades is a separate in-progress system (`copybot.py`); this repo is
+> selection + paper tracking.
 
 ---
 
