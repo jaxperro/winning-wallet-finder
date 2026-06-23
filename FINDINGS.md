@@ -184,8 +184,8 @@ time on winning conviction bets** — this is a copyability heuristic, NOT proof
 inside information (a short lead can be a genuine insider or just someone good at
 fast-resolving markets; we can't tell, and for copy purposes it doesn't matter).
 Of the 218, the gate drops the **"last-minute" wallets** (median lead <24h — you
-can't get the trade in before resolution), leaving **50 validated copyable sharps**
-(`watch_sharps.json`) with multi-day leads. The standout `0x60ec1744…` held 80%
+can't get the trade in before resolution), then a 30-day-active filter, leaving
+**~31 validated copyable sharps** (`watch_sharps.json`) with multi-day leads. The standout `0x60ec1744…` held 80%
 win over **1,017 forward conviction bets**; even the suspiciously-perfect `0x72e1…`
 (99/100% win) enters ~7 days early — a real forecaster, clearly not last-minute.
 These 50 are surfaced live on jaxperro.com/trading.
@@ -195,6 +195,32 @@ not favorites); and gate on lead time to drop last-minute (un-mirrorable) wallet
 That funnel produces a copyable, forward-validated set — the strongest evidence in
 this project that
 followable skill exists.*
+
+## Copy P&L: position win% ≠ copyability (the scalper trap, 2026-06-23)
+
+The biggest caveat on the whole sharps table: **a high conviction win% does not mean
+you can profit copying the wallet.** The win%/record are computed from `curPrice ≥ 0.5`
+on resolved positions — a *position snapshot*. For a high-frequency scalper that
+massively over-counts: he buys ~$0.50, sells seconds later for ~+$1, and the snapshot
+records a "win" even though he never held to resolution. `ArbTraderRookie` shows
+**~100% conviction win (398-2)** yet a flat-$50 copy of his conviction bets, held to
+**authoritative clob resolution (winner by token_id)**, nets **−$790 (held 0-19)** —
+two independent replays agree (live portfolio −$687 ≈ standalone clob −$790).
+
+So `validate_timing.display_stats` now also computes **`copy_pnl`** — what a flat-$50
+copier actually realizes since June 1: replay their conviction entries, mirror their
+exits, settle held bets at clob resolution. This is surfaced as the **Copy P&L**
+column on the dashboard (default sort). The verdict it delivers: **most "sharps" lose
+when copied.** Of the ~31, only a handful are copy-positive — `Kruto2027 +$1,184` and
+`fortuneking +$430` (true hold-to-resolution betters); names that looked great on win%
+(`iohihoo` 88.7% → **−$749**, `ArbTrader` 99.5% → **−$790**) are scalpers that bleed.
+The live tracker now follows **fortuneking + Kruto2027** — the two copy-positive
+wallets — at $50/trade.
+
+*Lesson: judge a copy target by Copy P&L (a trade-replay with real resolution), never
+by position win%. Conviction must be measured at the position level (a wallet's total
+stake in a market), not per individual buy — a scalper splits one position across many
+small buys, so a per-trade threshold copies far more (and worse) bets than intended.*
 
 ## Repo layout
 

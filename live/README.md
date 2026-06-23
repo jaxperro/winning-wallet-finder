@@ -88,8 +88,13 @@ wallet's scale (a whale's $200 bet isn't conviction; a minnow's is).
   winning conviction bets separates copyable sharps (multi-day lead) from
   "last-minute" wallets (median lead <24h) we can't mirror in time — could be
   genuine insiders or just fast-resolving-market specialists, can't tell which.
-  → **50 validated copyable sharps** in `watch_sharps.json` (shown live on
-  jaxperro.com/trading).
+  Also drops wallets inactive >30d. → **~31 validated copyable sharps** in
+  `watch_sharps.json` (shown live on jaxperro.com/trading). It additionally
+  precomputes every stat the dashboard renders — incl. **`copy_pnl`**, the
+  authoritative flat-$50 copy P&L (replay entries, mirror exits, settle held bets
+  at clob resolution by token_id). **Copy P&L is the real copyability signal** —
+  position win% over-counts scalpers (see FINDINGS "the scalper trap"); the table
+  defaults to sorting by it.
 
 Identifiers for a follow-worthy wallet: on its **≥$200 bets** — win ≥65%, avg
 entry 0.35–0.70 (edge, not favorites), +copy-ROI, FDR-significant, **median lead

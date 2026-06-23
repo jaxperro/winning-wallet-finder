@@ -197,12 +197,19 @@ which win 70–80% on genuinely-uncertain (~0.4–0.6)
 markets — trained pre-June and validated June: **62/83 stayed profitable forward
 (p≈0)**. A lead-time gate (`validate_timing.py`) then drops wallets whose wins come
 too close to resolution to mirror — "last-minute" entries (median lead <24h), which
-may be genuine insiders or just fast-market specialists — leaving **50 validated
-copyable sharps** (`watch_sharps.json`), surfaced live on
-[jaxperro.com/trading](https://jaxperro.com/trading). One held **80% win over
-1,017 forward bets**. This is the strongest evidence in the project that
-*followable* skill exists — though execution lag/fees and ongoing forward
-validation still gate turning it into real money.
+may be genuine insiders or just fast-market specialists — plus anyone inactive >30d,
+leaving **~31 validated copyable sharps** (`watch_sharps.json`), surfaced live on
+[jaxperro.com/trading](https://jaxperro.com/trading).
+
+**The catch — position win% ≠ copyability.** A high conviction win% (a position
+snapshot) doesn't mean you profit copying the wallet: a scalper buys ~$0.50 and sells
+for ~+$1, which the snapshot scores as a "win" though he never held to resolution. So
+the feed also precomputes **Copy P&L** — the authoritative flat-$50 copy result
+(replay entries, mirror exits, settle held bets at clob resolution). It's the real
+signal: `ArbTraderRookie` shows ~100% win but **−$790** to copy; of the ~31, only a
+few are copy-positive (`Kruto2027 +$1,184`, `fortuneking +$430` — true holders). The
+live tracker follows those two. Execution lag/fees and ongoing forward validation
+still gate turning it into real money.
 
 ---
 
