@@ -22,8 +22,9 @@
     "conv30_pnl": 460,
     "realized_pnl": 1091,
     "avg_bet": 37,
+    "copy_pnl": 132,
     "last_trade": 1782086444,
-    "last_conv_bet": 1782054398
+    "last_conv_bet": 1781993771
   },
   {
     "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
@@ -48,8 +49,9 @@
     "conv30_pnl": 163104,
     "realized_pnl": 234921,
     "avg_bet": 1044,
+    "copy_pnl": -793,
     "last_trade": 1782233929,
-    "last_conv_bet": 1782220372
+    "last_conv_bet": 1782213148
   },
   {
     "wallet": "0xade74a23c444d0eebee00034459fbc269fab58af",
@@ -74,6 +76,7 @@
     "conv30_pnl": 109,
     "realized_pnl": 754,
     "avg_bet": 17,
+    "copy_pnl": -269,
     "last_trade": 1782074558,
     "last_conv_bet": 1781957009
   },
@@ -100,8 +103,9 @@
     "conv30_pnl": 5061,
     "realized_pnl": 11965,
     "avg_bet": 116,
+    "copy_pnl": -749,
     "last_trade": 1782219238,
-    "last_conv_bet": 1782219238
+    "last_conv_bet": 1781957035
   },
   {
     "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -126,6 +130,7 @@
     "conv30_pnl": 28179,
     "realized_pnl": 41615,
     "avg_bet": 772,
+    "copy_pnl": 1184,
     "last_trade": 1782200713,
     "last_conv_bet": 1781868172
   },
@@ -152,6 +157,7 @@
     "conv30_pnl": 381,
     "realized_pnl": 28463,
     "avg_bet": 143,
+    "copy_pnl": 1,
     "last_trade": 1781425081,
     "last_conv_bet": 1781425081
   },
@@ -178,8 +184,9 @@
     "conv30_pnl": 10357,
     "realized_pnl": 39533,
     "avg_bet": 1485,
-    "last_trade": 1782206200,
-    "last_conv_bet": 1782206200
+    "copy_pnl": -1,
+    "last_trade": 1782235157,
+    "last_conv_bet": 1782203888
   },
   {
     "wallet": "0x0711e162e05349de3d87626dea4285d08537f03c",
@@ -204,8 +211,9 @@
     "conv30_pnl": 4413,
     "realized_pnl": 4261,
     "avg_bet": 83,
+    "copy_pnl": 584,
     "last_trade": 1782234103,
-    "last_conv_bet": 1782228299
+    "last_conv_bet": 1782233780
   },
   {
     "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
@@ -230,8 +238,9 @@
     "conv30_pnl": 72324,
     "realized_pnl": 105542,
     "avg_bet": 2704,
-    "last_trade": 1782227731,
-    "last_conv_bet": 1782227731
+    "copy_pnl": 430,
+    "last_trade": 1782236510,
+    "last_conv_bet": 1782236510
   },
   {
     "wallet": "0xa9aca75fb5d8f04c2ec9eeb0eb0c30d2e526c5d1",
@@ -256,7 +265,8 @@
     "conv30_pnl": 161996,
     "realized_pnl": 148652,
     "avg_bet": 3408,
-    "last_trade": 1782234881,
+    "copy_pnl": 205,
+    "last_trade": 1782237215,
     "last_conv_bet": 1782234301
   },
   {
@@ -282,8 +292,9 @@
     "conv30_pnl": 138747,
     "realized_pnl": 52510,
     "avg_bet": 1225,
-    "last_trade": 1782234818,
-    "last_conv_bet": 1782218009
+    "copy_pnl": 63,
+    "last_trade": 1782237787,
+    "last_conv_bet": 1782226264
   },
   {
     "wallet": "0x1a98d3f2e7f460bc08b6ca3a8cba99ec3122639d",
@@ -308,6 +319,7 @@
     "conv30_pnl": 826,
     "realized_pnl": 365,
     "avg_bet": 18,
+    "copy_pnl": -381,
     "last_trade": 1782184066,
     "last_conv_bet": 1782043363
   },
@@ -334,8 +346,9 @@
     "conv30_pnl": 1772,
     "realized_pnl": -526,
     "avg_bet": 113,
+    "copy_pnl": -190,
     "last_trade": 1782066605,
-    "last_conv_bet": 1781799883
+    "last_conv_bet": 1781877404
   },
   {
     "wallet": "0xaf4635074c8f9966ff44f2497183b53fc0578c1d",
@@ -360,6 +373,7 @@
     "conv30_pnl": 8580,
     "realized_pnl": 15558,
     "avg_bet": 962,
+    "copy_pnl": 201,
     "last_trade": 1782229096,
     "last_conv_bet": 1782229096
   },
@@ -386,8 +400,9 @@
     "conv30_pnl": 2269,
     "realized_pnl": 8234,
     "avg_bet": 219,
-    "last_trade": 1782235048,
-    "last_conv_bet": 1782233972
+    "copy_pnl": 137,
+    "last_trade": 1782238036,
+    "last_conv_bet": 1781978246
   },
   {
     "wallet": "0x098eddabb2d388f31e79aaf525e49588f22a6fa2",
@@ -412,8 +427,9 @@
     "conv30_pnl": 4685,
     "realized_pnl": 12076,
     "avg_bet": 391,
+    "copy_pnl": -321,
     "last_trade": 1782229109,
-    "last_conv_bet": 1782218117
+    "last_conv_bet": 1782172970
   },
   {
     "wallet": "0xd31801d84dbc2d4d044fd080100b28a558886f23",
@@ -438,7 +454,8 @@
     "conv30_pnl": 192,
     "realized_pnl": 299,
     "avg_bet": 18,
-    "last_trade": 1782188413,
+    "copy_pnl": -6,
+    "last_trade": 1782237413,
     "last_conv_bet": 1782176111
   },
   {
@@ -464,6 +481,7 @@
     "conv30_pnl": 1,
     "realized_pnl": 70,
     "avg_bet": 2,
+    "copy_pnl": -12,
     "last_trade": 1781678395,
     "last_conv_bet": 1780439684
   },
@@ -490,8 +508,9 @@
     "conv30_pnl": 2381,
     "realized_pnl": 1576,
     "avg_bet": 40,
+    "copy_pnl": -554,
     "last_trade": 1781962112,
-    "last_conv_bet": 1781952034
+    "last_conv_bet": 1781952068
   },
   {
     "wallet": "0xbebf0f282a06a4b9de180536ee15211f77c29bae",
@@ -516,8 +535,9 @@
     "conv30_pnl": 886,
     "realized_pnl": 1147,
     "avg_bet": 150,
+    "copy_pnl": -226,
     "last_trade": 1782235006,
-    "last_conv_bet": 1781953757
+    "last_conv_bet": 1781955238
   },
   {
     "wallet": "0x9f2c955bdf958f6eecb5b5b04583a2203608d0df",
@@ -542,6 +562,7 @@
     "conv30_pnl": 68,
     "realized_pnl": -128,
     "avg_bet": 26,
+    "copy_pnl": -449,
     "last_trade": 1782184708,
     "last_conv_bet": 1782108989
   },
@@ -568,8 +589,9 @@
     "conv30_pnl": 35454,
     "realized_pnl": 37451,
     "avg_bet": 2484,
-    "last_trade": 1782234799,
-    "last_conv_bet": 1782233554
+    "copy_pnl": 553,
+    "last_trade": 1782235349,
+    "last_conv_bet": 1782235349
   },
   {
     "wallet": "0x3f3f747bbabb6eb97174c687f2a89ea32dd9c912",
@@ -594,8 +616,9 @@
     "conv30_pnl": 87,
     "realized_pnl": 198,
     "avg_bet": 20,
+    "copy_pnl": -46,
     "last_trade": 1782094532,
-    "last_conv_bet": 1781840245
+    "last_conv_bet": 1782030181
   },
   {
     "wallet": "0x03d0d65c51235e63805335b85ead75794830d647",
@@ -620,6 +643,7 @@
     "conv30_pnl": 137,
     "realized_pnl": 602,
     "avg_bet": 30,
+    "copy_pnl": -86,
     "last_trade": 1781181048,
     "last_conv_bet": 1781181006
   },
@@ -646,6 +670,7 @@
     "conv30_pnl": 206,
     "realized_pnl": 480,
     "avg_bet": 26,
+    "copy_pnl": -186,
     "last_trade": 1780942468,
     "last_conv_bet": 1780840225
   },
@@ -672,6 +697,7 @@
     "conv30_pnl": -493,
     "realized_pnl": 6481,
     "avg_bet": 105,
+    "copy_pnl": 0,
     "last_trade": 1781273640,
     "last_conv_bet": 1781273640
   },
@@ -698,8 +724,9 @@
     "conv30_pnl": -195,
     "realized_pnl": 164,
     "avg_bet": 18,
+    "copy_pnl": 2,
     "last_trade": 1782041146,
-    "last_conv_bet": 1782040313
+    "last_conv_bet": 1780936696
   },
   {
     "wallet": "0xf5f2e5b2e98220049e3f973dcff669859ff3044e",
@@ -724,8 +751,9 @@
     "conv30_pnl": -29,
     "realized_pnl": -5,
     "avg_bet": 11,
+    "copy_pnl": -231,
     "last_trade": 1782218137,
-    "last_conv_bet": 1782215636
+    "last_conv_bet": 1782158270
   },
   {
     "wallet": "0x795c15a0608ff0b52056170ea548a200dc144b43",
@@ -750,6 +778,7 @@
     "conv30_pnl": 4,
     "realized_pnl": 0,
     "avg_bet": 1,
+    "copy_pnl": -144,
     "last_trade": 1781567076,
     "last_conv_bet": 1781567076
   },
@@ -776,8 +805,9 @@
     "conv30_pnl": 0,
     "realized_pnl": 1540,
     "avg_bet": 76,
+    "copy_pnl": 0,
     "last_trade": 1780485735,
-    "last_conv_bet": 1778718399
+    "last_conv_bet": 1778718670
   },
   {
     "wallet": "0x3b1f15f55716197399247392a280deee45806500",
@@ -802,7 +832,8 @@
     "conv30_pnl": 0,
     "realized_pnl": 10278,
     "avg_bet": 936,
+    "copy_pnl": 373,
     "last_trade": 1781531343,
-    "last_conv_bet": 1781463090
+    "last_conv_bet": 1781434959
   }
 ]

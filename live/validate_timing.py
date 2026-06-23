@@ -13,8 +13,10 @@ it doesn't matter: either way the window is too tight to mirror.
 
 import json
 import os
+import ssl
 import statistics as st
 import time
+import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 import cache
@@ -22,33 +24,58 @@ import smart_money as sm
 
 HERE = os.path.dirname(__file__)
 COPYABLE_MED_LEAD = 24.0     # median lead (h) on winning conviction bets to count as copyable
+JUN1 = time.mktime(time.strptime("2026-06-01", "%Y-%m-%d"))   # portfolio copy-start
+STAKE = 50.0                 # flat $/trade the copy portfolio uses
+_SSL = ssl._create_unverified_context()
+_CLOB = {}                   # conditionId -> {token_id: winner-price 1/0/None}
+
+
+def _clob_winner(cond, token):
+    """Authoritative resolution for a token: 1 if it won, 0 if it lost, None if the
+    market hasn't resolved. Matched by token_id (exact, no outcome-name guessing)."""
+    if cond not in _CLOB:
+        try:
+            req = urllib.request.Request("https://clob.polymarket.com/markets/" + cond,
+                                         headers={"User-Agent": "Mozilla/5.0"})
+            m = json.loads(urllib.request.urlopen(req, timeout=20, context=_SSL).read())
+            _CLOB[cond] = {str(t.get("token_id")):
+                           (1 if t.get("winner") is True else 0 if t.get("winner") is False else None)
+                           for t in (m.get("tokens") or [])}
+        except Exception:
+            _CLOB[cond] = {}
+    return _CLOB[cond].get(str(token))
 
 
 def _bet_pnl(b):
-    """Resolved (outcome) P&L of one bet: a $size stake bought at avg price p pays
-    size/p if it resolved a win, else $0 — so P&L = size·(1−p)/p if won else −size.
-    The cache's `won` already unions redeemed + resolved-unredeemed, so this is
-    survivorship-correct."""
+    """Resolved (outcome) P&L of one cache bet: a $size stake at avg price p pays
+    size/p if won, else $0 — so P&L = size·(1−p)/p if won else −size."""
     p = max(0.001, min(0.999, b["p"] or 0))
     return b["size"] * ((1 - p) / p if b["won"] else -1)
 
 
 def display_stats(w):
     """Everything the dashboard's sharp table renders, precomputed so the page makes
-    ZERO per-wallet data-api calls (it just reads the feed). Computed from the cache
-    (every resolved bet over the 180d window, survivorship-correct):
+    ZERO per-wallet data-api calls.
 
-      conv win%/record/P&L : over ALL of the wallet's conviction bets (top-20% stake)
-      realized P&L         : over the most recent 500 resolved bets (any size)
-      name / last-bet      : one /activity pull (record `name`; latest BUY >= trade p80)
+      conv win%/record/P&L : over the wallet's conviction (top-20%-stake) bets — a
+                             POSITION stat from the cache (large 180d sample)
+      realized P&L         : reconstructed P&L over the last 500 resolved bets
+      copy P&L             : the TRUTH for a copier — what a flat-$50 copy of their
+                             conviction bets ACTUALLY realizes since Jun 1: replays
+                             their entries, mirrors their exits, settles held bets at
+                             AUTHORITATIVE clob resolution (by token id). This exposes
+                             scalpers whose position win% looks great but don't copy
+                             (e.g. ArbTrader: ~100% conv win but −$790 copy P&L).
+      name / last-bet      : from the /activity pull
     """
+    # ---- position win%/record/P&L from the cache (large, survivorship-corrected) ----
     bets = [b for b in cache.get_bets(w) if (b["size"] or 0) > 0]
     thr = cache.conv_cutoff(b["size"] for b in bets)
-    conv = [b for b in bets if b["size"] >= thr]                      # ALL conviction bets
+    conv = [b for b in bets if b["size"] >= thr]
     won = sum(1 for b in conv if b["won"])
-    recent = sorted(bets, key=lambda b: b["res_t"] or 0, reverse=True)[:500]   # last 500 resolved
+    recent = sorted(bets, key=lambda b: b["res_t"] or 0, reverse=True)[:500]
     cut30 = time.time() - 30 * 86400
-    conv30 = [b for b in conv if (b["res_t"] or 0) >= cut30]          # conviction bets resolved in last 30d
+    conv30 = [b for b in conv if (b["res_t"] or 0) >= cut30]
     won30 = sum(1 for b in conv30 if b["won"])
     out = {
         "conv_win": round(100 * won / len(conv), 1) if conv else None,
@@ -58,18 +85,48 @@ def display_stats(w):
         "conv30_won": won30, "conv30_lost": len(conv30) - won30,
         "conv30_pnl": round(sum(_bet_pnl(b) for b in conv30)),
         "realized_pnl": round(sum(_bet_pnl(b) for b in recent)),
-        "avg_bet": round(sum(b["size"] for b in conv) / len(conv)) if conv else 0,  # avg conviction stake
-        "name": None, "last_trade": 0, "last_conv_bet": 0,
+        "avg_bet": round(sum(b["size"] for b in conv) / len(conv)) if conv else 0,
+        "copy_pnl": 0, "name": None, "last_trade": 0, "last_conv_bet": 0,
     }
-    a = sm.get_json("/activity", {"user": w, "type": "TRADE", "limit": 300}) or []
+    # ---- activity: name, last-bet, and the flat-$50 copy replay (copy P&L) ----
+    a = []
+    for off in range(0, 4000, 500):
+        pg = sm.get_json("/activity", {"user": w, "type": "TRADE", "limit": 500, "offset": off}) or []
+        a += pg
+        if len(pg) < 500 or (pg and (pg[-1].get("timestamp", 0) < JUN1)):
+            break
     if a:
         out["last_trade"] = a[0].get("timestamp", 0)
         out["name"] = next((t.get("name") for t in a if t.get("name")), None)
-        tthr = cache.conv_cutoff(t.get("usdcSize", 0) for t in a if t.get("side") == "BUY")
+        # position-level conviction: each market's TOTAL buy stake, top-20% (p80)
+        mkt = {}
         for t in a:
-            if t.get("side") == "BUY" and (t.get("usdcSize", 0) or 0) >= tthr:
+            if t.get("side") == "BUY" and t.get("conditionId"):
+                mkt[t["conditionId"]] = mkt.get(t["conditionId"], 0) + (t.get("usdcSize", 0) or 0)
+        cthr = cache.conv_cutoff(mkt.values())
+        for t in a:
+            if t.get("side") == "BUY" and mkt.get(t.get("conditionId"), 0) >= cthr:
                 out["last_conv_bet"] = t.get("timestamp", 0)
                 break
+        # replay a flat-$50 copy of their conviction markets since Jun 1
+        ev = sorted([t for t in a if t.get("timestamp", 0) >= JUN1], key=lambda t: t.get("timestamp", 0))
+        openp, entered, copy = {}, set(), 0.0
+        for t in ev:
+            c, pr, asset = t.get("conditionId"), t.get("price", 0) or 0, t.get("asset")
+            if not c or pr <= 0:
+                continue
+            if t.get("side") == "BUY":
+                if mkt.get(c, 0) < cthr or c in entered or c in openp:
+                    continue
+                entered.add(c); openp[c] = {"sh": STAKE / pr, "a": asset}
+            elif c in openp:                                    # mirror their exit
+                copy += openp[c]["sh"] * pr - STAKE; del openp[c]
+        for c, p in openp.items():                              # settle held bets at AUTHORITATIVE resolution
+            wv = _clob_winner(c, p["a"])
+            if wv is None:
+                continue                                        # not resolved yet -> exclude
+            copy += (p["sh"] if wv else 0) - STAKE
+        out["copy_pnl"] = round(copy)
     return out
 
 
