@@ -30,7 +30,7 @@ _SSL = ssl._create_unverified_context()
 HERE = os.path.dirname(__file__)
 BANK = 1000.0
 STAKE = 50.0
-START = time.mktime(time.strptime("2026-06-01", "%Y-%m-%d"))   # copy from June 1
+START = time.mktime(time.strptime("2026-06-23", "%Y-%m-%d"))   # forward test: started following 2026-06-23
 GAMMA = "https://gamma-api.polymarket.com"
 
 # the followed wallets — single source of truth (dashboard renders names from the feed)
