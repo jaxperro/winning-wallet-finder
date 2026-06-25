@@ -1,0 +1,53 @@
+name: copybot-paper
+
+# 24/7 paper copy-trade test, run for free on GitHub Actions (public repo).
+# Every 5 minutes it does one poll pass — settle resolved bets, copy any new
+# conviction trade from the 4 wallets at $50 (cash-gated $1k book) — and commits
+# the updated feed (live/copybot_live.json) + state. The dashboard at the top of
+# jaxperro.com/trading reads the feed. State persists in the repo, so the book
+# carries forward run to run. No server, no secrets: the built-in GITHUB_TOKEN
+# pushes the feed. (Paper only — for LIVE real-money trading use a dedicated host,
+# not Actions.)
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"      # GitHub may delay/skip under load; fine for ≥3h leads
+  workflow_dispatch: {}         # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write               # GITHUB_TOKEN pushes the feed + state
+
+concurrency:
+  group: copybot-paper          # never overlap runs (state is committed)
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Poll once
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}   # optional; pings on placements
+        run: |
+          python3 copybot.py \
+            --config live/copybot.paper.json \
+            --state copybot_state.json \
+            --poll-once
+
+      - name: Commit feed + state (only on change)
+        run: |
+          git config user.name  "copybot[bot]"
+          git config user.email "copybot@users.noreply.github.com"
+          git add -f live/copybot_live.json copybot_state.json
+          if git diff --cached --quiet; then
+            echo "no change this run"
+            exit 0
+          fi
+          git commit -m "copybot: paper poll [skip ci]"
+          git pull --rebase --autostash -q origin main || git rebase --abort || true
+          git push

@@ -4,9 +4,14 @@ __pycache__/
 
 # never commit live credentials or runtime state
 config.json
+config.json.bak
+config.example.json
 copytrade_state.json
+copybot_state.json
+copybot_fills.jsonl
 *.log
 *.tmp
+# NOTE: live/copybot_live.json IS tracked — it's the public dashboard feed
 
 # generated research data (regenerable via edge_research.py / table_77.py)
 edge_metrics.jsonl

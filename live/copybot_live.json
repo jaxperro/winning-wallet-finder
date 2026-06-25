@@ -1,0 +1,22 @@
+{
+ "mode": "paper",
+ "bankroll": 1000.0,
+ "stake": 50.0,
+ "cash": 1000.0,
+ "deployed": 0,
+ "realized": 0.0,
+ "open_count": 0,
+ "lag": {
+  "n": 0,
+  "avg_s": null,
+  "avg_slip_pct": null
+ },
+ "wallets": [
+  "raid3r",
+  "0x6d1A94f4",
+  "Kruto2027",
+  "LSB1"
+ ],
+ "bets": [],
+ "updated": 1782410619
+}

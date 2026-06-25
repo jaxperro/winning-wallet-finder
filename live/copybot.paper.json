@@ -1,0 +1,52 @@
+{
+  "mode": "paper",
+  "bankroll_usd": 1000.0,
+  "bankroll_pct": 0.05,
+  "price_guard_pct": 0.05,
+  "watchlist": [
+    "0xa1a77ea9382bb8c3610f3303b66e093f644aace4",
+    "0x6d1a94f4bdd53114ec483925d025367db68697fb",
+    "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+    "0x41558102a796ba971c7567cad41c307e59f8fa41"
+  ],
+  "watch": [
+    {
+      "wallet": "0xa1a77ea9382bb8c3610f3303b66e093f644aace4",
+      "name": "raid3r"
+    },
+    {
+      "wallet": "0x6d1a94f4bdd53114ec483925d025367db68697fb",
+      "name": "0x6d1A94f4"
+    },
+    {
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "name": "Kruto2027"
+    },
+    {
+      "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+      "name": "LSB1"
+    }
+  ],
+  "follow": {
+    "buy_only": true,
+    "min_their_usd": 25.0,
+    "per_wallet_min_usd": {
+      "0xa1a77ea9382bb8c3610f3303b66e093f644aace4": 33.98,
+      "0x6d1a94f4bdd53114ec483925d025367db68697fb": 3.0,
+      "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 123.08,
+      "0x41558102a796ba971c7567cad41c307e59f8fa41": 231.0
+    },
+    "min_entry": 0.0,
+    "max_entry": 1.0
+  },
+  "risk": {
+    "max_trade_usd": 50.0,
+    "max_position_usd": 50.0,
+    "daily_spend_cap_usd": 1000000.0,
+    "max_total_exposure_usd": 1000000.0,
+    "max_open_positions": 1000,
+    "min_price": 0.01,
+    "max_price": 0.99,
+    "min_order_usd": 5.0
+  }
+}

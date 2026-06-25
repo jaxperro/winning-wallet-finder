@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  launchd agent for the 24/7 copy-bot paper test. It keeps the bot running and
+  restarts it on crash (KeepAlive) and at login (RunAtLoad).
+
+  Install (you activate it — this starts a continuous process that pushes the live
+  feed to your public repo, so it's opt-in):
+
+      cp ~/polymarket-smart-money/com.jaxperro.copybot.plist ~/Library/LaunchAgents/
+      launchctl load  ~/Library/LaunchAgents/com.jaxperro.copybot.plist     # start
+      launchctl unload ~/Library/LaunchAgents/com.jaxperro.copybot.plist    # stop
+
+  Caveat: this runs ON YOUR MAC. It only stays up while the Mac is powered on and
+  online (caffeinate prevents idle sleep, but a closed lid on battery or a shutdown
+  stops it). For true machine-independent 24/7, deploy the webhook receiver to a
+  cloud host instead.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.jaxperro.copybot</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/jaxmakielski/polymarket-smart-money/run_copybot.sh</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/jaxmakielski/polymarket-smart-money</string>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/Users/jaxmakielski/polymarket-smart-money/copybot.launchd.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/jaxmakielski/polymarket-smart-money/copybot.launchd.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+  </dict>
+</dict>
+</plist>

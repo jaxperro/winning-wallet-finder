@@ -255,6 +255,13 @@ class CopyTrader:
         if len(self.state["my_pos"]) >= r["max_open_positions"]:
             return 0.0, f"max open positions ({r['max_open_positions']}) reached"
         self.reset_daily_if_needed()
+        # free cash, when tracked (copybot maintains state["cash"], recycled on
+        # sell + resolution). All-or-nothing like the dashboard's `if(cash>=stake)`:
+        # a bet we can't fully fund from free cash is a MISS, not a partial fill.
+        cash = self.state.get("cash")
+        if cash is not None and cash < want_usd:
+            return 0.0, (f"capital fully deployed (free ${cash:.2f} < "
+                         f"stake ${want_usd:.2f})")
         caps = [
             want_usd,
             r["max_trade_usd"],
@@ -262,10 +269,12 @@ class CopyTrader:
             r["daily_spend_cap_usd"] - self.state["spend"]["usd"],
             r["max_total_exposure_usd"] - self.open_exposure(),
         ]
+        if cash is not None:
+            caps.append(cash)            # never deploy more than free cash
         allowed = min(caps)
         if allowed < r["min_order_usd"]:
             return 0.0, (f"capped to ${allowed:.2f} < min order "
-                         f"${r['min_order_usd']:.2f} (daily/exposure caps)")
+                         f"${r['min_order_usd']:.2f} (caps)")
         return allowed, None
 
     # -- process one of their trades --
