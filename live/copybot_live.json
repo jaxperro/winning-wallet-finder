@@ -2,10 +2,10 @@
  "mode": "paper",
  "bankroll": 1000.0,
  "stake": 50.0,
- "cash": 950.0,
- "deployed": 50.0,
- "realized": 0.0,
- "open_count": 1,
+ "cash": 1014.94,
+ "deployed": 0,
+ "realized": 14.94,
+ "open_count": 0,
  "lag": {
   "n": 1,
   "avg_s": 313.5,
@@ -30,11 +30,11 @@
    "shares": 64.94,
    "cost": 50.0,
    "opened": 1782616889,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 14.94,
+   "settled": 1782630754
   }
  ],
- "updated": 1782617202
+ "updated": 1782630755
 }
