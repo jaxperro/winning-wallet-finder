@@ -11,8 +11,11 @@ which the dashboard reads in one request.
 
 Model: a $1,000 account that mirrors each followed wallet's CONVICTION bets (top-20%
 stake) at a flat $50, held to resolution (the cache has no sell events, which is the
-right model for the hold-to-resolution wallets we follow). One position per market
-(first wallet to enter wins the slot); when capital is fully deployed a bet is MISSED.
+right model for the hold-to-resolution wallets we follow). Entries pay the Polymarket
+taker fee and a lag-slippage price haircut (see FEE_RATE / SLIP / LAG_EST_S) so the
+book models what a real copier nets, not the idealized zero-cost mirror. One position
+per market (first wallet to enter wins the slot); when capital is fully deployed a bet
+is MISSED.
 Resolved history + realized P&L come from the cache; currently-open bets come from a
 small live /positions pull so the page can still show what's in flight.
 """
@@ -30,16 +33,36 @@ _SSL = ssl._create_unverified_context()
 HERE = os.path.dirname(__file__)
 BANK = 1000.0
 STAKE = 50.0
-START = time.mktime(time.strptime("2026-06-23", "%Y-%m-%d"))   # forward test: started following 2026-06-23
+START = time.mktime(time.strptime("2026-06-01", "%Y-%m-%d"))   # backfilled: replay from June 1
 GAMMA = "https://gamma-api.polymarket.com"
+
+# ---- realism model (matches the live copybot) -------------------------------
+# Taker fee (Polymarket V2, since 2026-03-30): fee = shares·rate·p·(1−p); for a
+# flat-$STAKE buy that's STAKE·rate·(1−p). Sports 0.03 — the follow set's
+# category. Redeeming at resolution is fee-free, so only entries pay here
+# (hold-to-resolution model, no mirrored exits).
+FEE_RATE = 0.03
+# Copy lag: we enter LAG_EST_S after the wallet does, at a slightly worse price.
+# SLIP is the entry-price penalty estimate: the live bot measured +0.35% at ~5min
+# lag; a 60s poller should see less — 0.5% is a conservative flat haircut.
+LAG_EST_S = 90
+SLIP = 0.005
 
 # the followed wallets — single source of truth (dashboard renders names from the feed)
 WALLETS = [
-    {"name": "raid3r",     "wallet": "0xa1a77ea9382bb8c3610f3303b66e093f644aace4"},
-    {"name": "0x6d1A94f4", "wallet": "0x6d1a94f4bdd53114ec483925d025367db68697fb"},
-    {"name": "Kruto2027",  "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb"},
-    {"name": "LSB1",       "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41"},
+    {"name": "Kruto2027",   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb"},
+    {"name": "shisan888",   "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543"},
+    {"name": "fortuneking", "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867"},
+    {"name": "LSB1",        "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41"},
 ]
+
+
+def entry_model(p):
+    """(effective entry price, entry fee, total cash cost) of a flat-$STAKE copy:
+    price worsened by the lag-slippage haircut, taker fee on top of the stake."""
+    p_eff = min(0.999, p * (1 + SLIP))
+    fee = STAKE * FEE_RATE * (1 - p_eff)
+    return p_eff, fee, STAKE + fee
 
 _MKT = {}
 def market_meta(cond):
@@ -124,7 +147,8 @@ def main():
 
     cash = BANK
     realized = 0.0
-    held = []        # (free_t, stake, payoff)  payoff paid at free_t
+    fees_paid = 0.0
+    held = []        # (free_t, cost, payoff)  cost = stake + entry fee; payoff paid at free_t
     perW = {w["wallet"]: {"name": w["name"], "wallet": w["wallet"], "bets": 0,
                           "invested": 0.0, "realized": 0.0} for w in WALLETS}
     resolved, current, missed = [], [], []
@@ -132,34 +156,37 @@ def main():
     def free(upto):
         nonlocal cash, realized
         keep = []
-        for ft, stake, payoff, rec in held:
+        for ft, cost, payoff, rec in held:
             if ft and ft <= upto and rec["kind"] == "res":
-                cash += payoff; realized += payoff - stake; perW[rec["wallet"]]["realized"] += payoff - stake
-                rec["pnl"] = payoff - stake
+                cash += payoff; realized += payoff - cost; perW[rec["wallet"]]["realized"] += payoff - cost
+                rec["pnl"] = payoff - cost
                 resolved.append(rec)
             else:
-                keep.append((ft, stake, payoff, rec))
+                keep.append((ft, cost, payoff, rec))
         held[:] = keep
 
     for b in stream:
         free(b["entry_t"])
-        if cash >= STAKE:
-            cash -= STAKE; perW[b["wallet"]]["bets"] += 1
-            shares = STAKE / b["p"]
+        p_eff, fee, cost = entry_model(b["p"])
+        if cash >= cost:
+            cash -= cost; fees_paid += fee; perW[b["wallet"]]["bets"] += 1
+            shares = STAKE / p_eff                        # lag-adjusted entry price
             if b["kind"] == "res":
-                payoff = shares * (1.0 if b["won"] else 0.0)
-                held.append((b["res_t"] or now, STAKE, payoff, b))
+                payoff = shares * (1.0 if b["won"] else 0.0)   # redeem is fee-free
+                held.append((b["res_t"] or now, cost, payoff, b))
             else:                                          # currently open -> mark to market, no free yet
-                held.append((None, STAKE, 0.0, b))
+                held.append((None, cost, 0.0, b))
                 b["val"] = shares * b["cur"]; b["stake"] = STAKE
         else:
             missed.append(b)
     free(now)
     # finalize open (still held with kind==open): mark to market
     invested = 0.0
-    for ft, stake, payoff, rec in held:
+    open_cost = 0.0
+    for ft, cost, payoff, rec in held:
         if rec["kind"] == "open":
-            invested += rec["val"]; rec["pnl"] = rec["val"] - stake
+            invested += rec["val"]; rec["pnl"] = rec["val"] - cost
+            open_cost += cost
             perW[rec["wallet"]]["invested"] += rec["val"]
             current.append(rec)
 
@@ -167,15 +194,16 @@ def main():
     resolved.sort(key=lambda r: r.get("res_t") or 0, reverse=True)
     for r in resolved[:60]:
         m = market_meta(r["cond"]); r["title"] = m["title"]
-    # hypothetical P&L had we been able to afford it: resolved bets at their
-    # outcome, still-open bets marked to the current price. Missed bets can be
-    # kind=="open" (no "won"/"res_t" keys) — indexing m["won"] here used to
-    # KeyError and kill the whole portfolio step the first time capital ran out
-    # while a followed wallet had a live position.
+    # hypothetical P&L had we been able to afford it — same fee + lag model as the
+    # placed bets: resolved bets at their outcome, still-open bets marked to the
+    # current price. Missed bets can be kind=="open" (no "won"/"res_t" keys) —
+    # indexing m["won"] here used to KeyError and kill the whole portfolio step
+    # the first time capital ran out while a followed wallet had a live position.
     def hypo_pnl(m):
+        p_eff, fee, cost = entry_model(m["p"])
         if "won" in m:
-            return STAKE * ((1.0 / m["p"]) - 1) if m["won"] else -STAKE
-        return STAKE * (m.get("cur", m["p"]) / m["p"] - 1)
+            return (STAKE / p_eff) - cost if m["won"] else -cost
+        return STAKE * (m.get("cur", p_eff) / p_eff) - cost
 
     missed.sort(key=lambda m: m.get("res_t") or 0, reverse=True)
     for m in missed[:60]:
@@ -192,9 +220,11 @@ def main():
     out = {
         "started": START, "updated": now,
         "bank": BANK, "stake": STAKE,
+        "fee_rate": FEE_RATE, "slip": SLIP, "lag_est_s": LAG_EST_S,
+        "fees_paid": round(fees_paid, 2),
         "equity": round(equity, 2), "liquid": round(cash, 2), "invested": round(invested, 2),
         "realized": round(realized, 2), "pnl": round(equity - BANK, 2),
-        "unreal": round(invested - STAKE * len(current), 2),
+        "unreal": round(invested - open_cost, 2),
         "resolved_count": len(resolved), "wins": wins, "losses": len(resolved) - wins,
         "open_count": len(current), "missed_count": len(missed),
         "wallets": [{"name": v["name"], "wallet": v["wallet"], "bets": v["bets"],
@@ -214,8 +244,8 @@ def main():
     }
     json.dump(out, open(os.path.join(HERE, "portfolio.json"), "w"), separators=(",", ":"))
     print(f"portfolio: equity ${equity:,.0f} ({(equity-BANK)/BANK*100:+.0f}%) | realized ${realized:+,.0f} "
-          f"| {len(resolved)} resolved ({wins}W/{len(resolved)-wins}L) | {len(current)} open "
-          f"| {len(missed)} missed | -> portfolio.json", flush=True)
+          f"| fees ${fees_paid:,.0f} | {len(resolved)} resolved ({wins}W/{len(resolved)-wins}L) "
+          f"| {len(current)} open | {len(missed)} missed | -> portfolio.json", flush=True)
 
 
 if __name__ == "__main__":

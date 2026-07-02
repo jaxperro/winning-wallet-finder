@@ -4,23 +4,23 @@
   "bankroll_pct": 0.05,
   "price_guard_pct": 0.05,
   "watchlist": [
-    "0xa1a77ea9382bb8c3610f3303b66e093f644aace4",
-    "0x6d1a94f4bdd53114ec483925d025367db68697fb",
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+    "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
+    "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
     "0x41558102a796ba971c7567cad41c307e59f8fa41"
   ],
   "watch": [
     {
-      "wallet": "0xa1a77ea9382bb8c3610f3303b66e093f644aace4",
-      "name": "raid3r"
-    },
-    {
-      "wallet": "0x6d1a94f4bdd53114ec483925d025367db68697fb",
-      "name": "0x6d1A94f4"
-    },
-    {
       "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
       "name": "Kruto2027"
+    },
+    {
+      "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
+      "name": "shisan888"
+    },
+    {
+      "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
+      "name": "fortuneking"
     },
     {
       "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -31,9 +31,9 @@
     "buy_only": true,
     "min_their_usd": 25.0,
     "per_wallet_min_usd": {
-      "0xa1a77ea9382bb8c3610f3303b66e093f644aace4": 33.98,
-      "0x6d1a94f4bdd53114ec483925d025367db68697fb": 3.0,
       "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 123.08,
+      "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543": 704.33,
+      "0x86c878cde72660ec52f5e6f0f0438b76de8fc867": 970.0,
       "0x41558102a796ba971c7567cad41c307e59f8fa41": 231.0
     },
     "min_entry": 0.0,
