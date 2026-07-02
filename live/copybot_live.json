@@ -42,7 +42,23 @@
    "settled": 1783001640
   }
  ],
- "missed": [],
- "missed_pnl": 0,
- "updated": 1783006015
+ "missed": [
+  {
+   "ts": 1783016464,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "61407525787116037137369290221330665431612639661890988816394613044336920260057",
+   "cond": "0xd593fc2f4812bfd4ced9fec2b5a0650375808d73e1d186bac3fb3ebdc2aa4cb6",
+   "title": "Will COD Mekn\u00e8s win on 2026-07-02?",
+   "outcome": "Yes",
+   "price": 0.51,
+   "stake": 37.97,
+   "reason": "price moved 0.70\u21920.51",
+   "status": "lost",
+   "pnl": -38.53,
+   "settled": 1783016524,
+   "name": "LSB1"
+  }
+ ],
+ "missed_pnl": -38.53,
+ "updated": 1783016525
 }
