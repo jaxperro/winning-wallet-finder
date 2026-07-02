@@ -278,6 +278,21 @@ class CopyTrader:
             frac *= self.DD_FACTOR
         return frac * eq
 
+    def record_miss(self, wallet, token, cond, title, outcome, price, want, reason):
+        """A bet the strategy WOULD have copied but the book couldn't take —
+        free cash gone, event cap, price drifted past the guard. Kept in state so
+        the live feed can show missed bets and (once the market resolves) their
+        would-be P&L — the live counterpart of the backtest's Missed table."""
+        missed = self.state.setdefault("missed", [])
+        if any(m["token"] == token and m["status"] == "open" for m in missed):
+            return                                  # already recorded while open
+        missed.append({"ts": int(time.time()), "wallet": wallet, "token": token,
+                       "cond": cond, "title": title, "outcome": outcome,
+                       "price": round(price or 0, 4), "stake": round(want, 2),
+                       "reason": reason, "status": "open", "pnl": None,
+                       "settled": None})
+        del missed[:-200]                           # keep the recent 200
+
     def persist(self):
         self.state["seen_tx"] = list(self.seen)[-5000:]
         save_json(self.state_path, self.state)
@@ -330,7 +345,8 @@ class CopyTrader:
 
         if side == "BUY":
             self._handle_their_buy(wallet, token, their_size, their_price,
-                                   label, title, outcome, event=event_key(t))
+                                   label, title, outcome, event=event_key(t),
+                                   cond=t.get("conditionId"))
             their_book[token] = their_prev + their_size
         elif side == "SELL":
             self._handle_their_sell(token, their_size, their_prev, label)
@@ -352,7 +368,7 @@ class CopyTrader:
         return drift <= self.cfg["price_guard_pct"]
 
     def _handle_their_buy(self, wallet, token, their_size, their_price,
-                          label, title, outcome, event=None):
+                          label, title, outcome, event=None, cond=None):
         mine = self.state["my_pos"].get(token)
         is_add = mine is not None
         # don't backfill: never open a position they already held when we
@@ -371,6 +387,8 @@ class CopyTrader:
             if held >= cap:
                 self.log(f"BUY  {label} — skip (already {held} positions on this "
                          f"event, cap {cap})")
+                self.record_miss(wallet, token, cond, title, outcome, their_price,
+                                 self.stake_usd(), f"event cap ({held} held)")
                 return
 
         price = self._live_price(token, "buy")
@@ -379,6 +397,9 @@ class CopyTrader:
         if not self._price_guard_ok(price, their_price):
             self.log(f"BUY  {label} — skip (price {price:.3f} vs their "
                      f"{their_price:.3f}, >{self.cfg['price_guard_pct']:.0%})")
+            self.record_miss(wallet, token, cond, title, outcome, price,
+                             self.stake_usd(),
+                             f"price moved {their_price:.2f}→{price:.2f}")
             return
 
         if is_add:
@@ -396,6 +417,9 @@ class CopyTrader:
         allowed, reason = self.gate_buy(want_usd, price, pos_cost)
         if reason:
             self.log(f"{kind} {label} — skip ({reason})")
+            if not is_add:                          # a blocked OPEN is a missed bet
+                self.record_miss(wallet, token, cond, title, outcome, price,
+                                 want_usd, reason)
             return
         shares = allowed / price
         res = self.ex.buy(token, shares, price, {"title": title})

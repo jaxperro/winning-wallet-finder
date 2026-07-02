@@ -375,6 +375,10 @@ class Copybot:
         exp = self.engine.open_exposure()
         cash = st.get("cash", bank)
         lag = st.get("lag", {})
+        missed = st.get("missed", [])
+        for m in missed:                            # display names for the feed
+            m["name"] = self.names.get((m.get("wallet") or "").lower(),
+                                       (m.get("wallet") or "")[:10])
         feed = {
             "mode": "live" if self.engine.ex.live else "paper",
             "bankroll": bank, "stake": round(self.engine.stake_usd(), 2),
@@ -392,6 +396,11 @@ class Copybot:
             "bets": sorted(bets.values(),
                            key=lambda b: b.get("settled") or b.get("opened") or 0,
                            reverse=True)[:100],
+            "missed": sorted(missed,
+                             key=lambda m: m.get("settled") or m.get("ts") or 0,
+                             reverse=True)[:60],
+            "missed_pnl": round(sum(m["pnl"] for m in missed
+                                    if m.get("pnl") is not None), 2),
         }
         # only (re)write — and so only commit — when the meaningful content changed,
         # not on every poll. The "updated" stamp advances only on real change, so the
@@ -566,6 +575,20 @@ class Copybot:
                     discord_text=(f"🏁 **SETTLE** {tag}\n{label}\n"
                                   f"${pos['cost']:.2f} cost -> ${proceeds:.2f} "
                                   f"= **${pnl:+.2f}**"))
+            # settle MISSED bets hypothetically: what the skipped stake would have
+            # returned (entry fee included; redeem free) — the live counterpart of
+            # the backtest's Missed P&L, "the cost of a small bankroll".
+            for m in self.engine.state.get("missed", []):
+                if m.get("status") != "open" or not m.get("cond"):
+                    continue
+                wp = resolution_price(m["token"], m["cond"], m.get("outcome"))
+                if wp is None:
+                    continue
+                p = m.get("price") or 0.5
+                fee = taker_fee(m["stake"] / p, p, self.fee_rate)
+                pnl = (m["stake"] / p) * wp - m["stake"] - fee
+                m.update(status=("won" if wp >= 0.5 else "lost"),
+                         pnl=round(pnl, 2), settled=int(time.time()))
             self.engine.persist()
 
 
