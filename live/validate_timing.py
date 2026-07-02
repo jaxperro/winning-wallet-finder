@@ -192,14 +192,31 @@ MIN_LEAD_H = 1.0      # light sniper guard: drop wallets whose median winning le
 def main():
     conv = json.load(open(os.path.join(HERE, "conviction_wallets.json")))
     print(f"copy-testing {len(conv)} conviction wallets…\n", flush=True)
+
     # run the full copy replay on EVERY conviction wallet (cheap now: fresh-positions
     # resolution, clob only fills gaps), then select on copyability — not lead time.
+    # Per-wallet guard: one wallet's unexpected error must not kill the whole
+    # selection run (a single RemoteDisconnected once took out the nightly refresh);
+    # a failed wallet is retried once, then excluded from this run and logged.
+    def safe_stats(c):
+        for attempt in (1, 2):
+            try:
+                return display_stats(c["wallet"])
+            except Exception as e:
+                if attempt == 2:
+                    print(f"  ⚠ {c['wallet'][:10]}… stats failed ({e}) — excluded this run",
+                          flush=True)
+                    return None
+                time.sleep(2)
+
     with ThreadPoolExecutor(max_workers=8) as ex:
-        stats = list(ex.map(lambda c: display_stats(c["wallet"]), conv))
+        stats = list(ex.map(safe_stats, conv))
 
     cut30 = time.time() - 30 * 86400
     sharps = []
     for c, ds in zip(conv, stats):
+        if ds is None:
+            continue
         c.update(ds)
         if ds.get("name"):
             c["name"] = ds["name"]

@@ -9,6 +9,7 @@ Run a terminal scan: python3 smart_money.py --scan
 """
 
 import argparse
+import http.client
 import json
 import ssl
 import sys
@@ -70,7 +71,11 @@ def get_json(path, params=None, retries=2):
             req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
             with urllib.request.urlopen(req, timeout=15, context=SSL_CTX) as r:
                 return json.loads(r.read().decode())
-        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError):
+        except (OSError, http.client.HTTPException, json.JSONDecodeError):
+            # OSError covers URLError/timeouts/connection-resets; HTTPException
+            # covers RemoteDisconnected/IncompleteRead — the latter used to escape
+            # the retry loop and crash whole pipeline runs (validate_timing died
+            # mid-scan on one dropped keep-alive connection).
             if attempt == retries:
                 return None
             time.sleep(1 + attempt)
