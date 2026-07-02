@@ -28,6 +28,8 @@ def score_pre(wallet):
             if SEL_T0 <= b["res_t"] <= SEL_T1]
     if len(bets) < MIN_BETS:
         return None
+    for b in bets:                       # v2 returns raw p — clamp for the z math
+        b["p"] = max(0.001, min(0.999, b["p"] or 0))
     wins = sum(1 for b in bets if b["won"])
     exp = sum(b["p"] for b in bets)
     var = sum(b["p"] * (1 - b["p"]) for b in bets) or 1e-9

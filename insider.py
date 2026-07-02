@@ -47,8 +47,22 @@ def _parse_end(end):
     return 0
 
 
-def resolved_bets(wallet, cutoff, max_pages=40):
-    """Resolved bets with entry price, conditionId, resolution time, size."""
+def resolved_bets(wallet, cutoff, max_pages=40, strict=False):
+    """Resolved bets with entry price, conditionId, token (asset), resolution
+    time, size, and provenance (cache schema v2).
+
+    * ``p`` is the RAW avgPrice (0 when the API omits it) — callers clamp for
+      the z math; storing raw keeps "missing price" distinguishable from a real
+      0.1¢ longshot in the cache.
+    * ``asset`` (token id) is the position identity — it disambiguates the
+      two-endpoint union (same asset in /closed-positions and /positions is ONE
+      position seen twice, not two bets) and YES/NO both-sides holdings.
+    * ``resolved`` is False for early-sold positions in markets that had not
+      ended at pull time — their ``won`` is a curPrice mark, not an outcome.
+    * ``strict``: raise on a failed page pull instead of returning a silently
+      truncated history — a partial pull must never be cached as a wallet's
+      complete record.
+    """
     now = time.time()
     out = []
     for endpoint in ("/closed-positions", "/positions"):
@@ -60,6 +74,8 @@ def resolved_bets(wallet, cutoff, max_pages=40):
             else:
                 params["sizeThreshold"] = 0.0
             page = sm.get_json(endpoint, params)
+            if page is None and strict:
+                raise RuntimeError(f"{endpoint} pull failed for {wallet} at offset {off}")
             if not page:
                 break
             for p in page:
@@ -69,17 +85,24 @@ def resolved_bets(wallet, cutoff, max_pages=40):
                     if ts < cutoff:
                         continue
                     res_t = end or ts
+                    resolved = bool(end) and end <= now
                 else:
+                    ts = None
                     if not (cutoff <= end < now):
                         continue
                     res_t = end
+                    resolved = True
                 out.append({
                     "won": p.get("curPrice", 0) >= 0.5,
-                    "p": max(0.001, min(0.999, p.get("avgPrice", 0) or 0)),
+                    "p": p.get("avgPrice", 0) or 0,          # raw — callers clamp
                     "cond": p.get("conditionId"),
+                    "asset": p.get("asset"),
                     "res_t": res_t,
                     "size": p.get("initialValue") or
                             (p.get("avgPrice", 0) * p.get("totalBought", 0)),
+                    "src": "closed" if endpoint == "/closed-positions" else "open",
+                    "ts": ts,
+                    "resolved": resolved,
                 })
             off += 50
             if len(page) < 50:
@@ -123,6 +146,8 @@ def analyze(cand):
     bets = resolved_bets(wallet, cutoff)
     if len(bets) < 15:
         return None
+    for b in bets:                       # v2 returns raw p — clamp for the z math
+        b["p"] = max(0.001, min(0.999, b["p"] or 0))
     first_buy, _ = entry_times(wallet)
     total_trades = (sm.get_json("/traded", {"user": wallet}) or {}).get("traded", 0)
 

@@ -50,14 +50,25 @@ any archetype, any cutoff, the clean OOS test — now runs in **seconds** instea
 of hours of API pulls. `MAX_AGE_DAYS=14`: the broad pool refreshes biweekly; the
 watchlist is force-refreshed daily (`cache.invalidate`) for forward tracking.
 
-**Retention gotcha — the cache is NOT append-only.** Each wallet's refresh does
-`DELETE FROM bets WHERE wallet=?` then re-inserts a fresh pull, and that pull is a
-**rolling 180-day window** (`WINDOW_DAYS`) capped at ~2k bets/endpoint
-(`max_pages`). So wallet *coverage* grows (new wallets are kept), but any single
-wallet's history is a capped, rolling, overwrite-on-refresh snapshot — bets older
-than ~180d are dropped on the next re-pull. For a permanent long-horizon archive,
-use the append-style `../wide/pmkt.duckdb` subgraph dataset instead, or change the
-pull to upsert + drop the cutoff.
+**Schema v2 (2026-07-02) — token-keyed, provenance-tagged, archival.** `bets`
+now carries `asset` (token id — the position identity), `src`/`ts` (endpoint
+provenance + close time), and `resolved` (False = early-sold position in a
+market that hadn't ended at pull time; its `won` is a curPrice *mark*, not an
+outcome — scorers filter these). `p` is stored **raw** (0 = avgPrice missing)
+and clamped to [0.001, 0.999] by `get_bets` on read, so "missing price" stays
+distinguishable from a real 0.1¢ longshot. Refresh is an **upsert by token**
+(plus superseded legacy rows), not a wallet wipe: each pull still covers the
+rolling `WINDOW_DAYS`, but rows that slide out of the window now *survive*, so
+per-wallet history accumulates into a permanent archive. The same-asset row
+from both endpoints (a partially-closed position) is deduped to the larger-
+stake row instead of double-counting. Failed pulls are returned empty but NOT
+cached and NOT marked pulled — they retry on the next call instead of
+masquerading as "no bets" for `MAX_AGE_DAYS` (pre-v2, an API error could cache
+a wallet as empty-and-fresh; that bug bit the watchlist in practice). Legacy v1
+rows keep NULLs in the new columns until their wallet's next refresh. The
+migration runs automatically on first open (v1 → v2, exact-duplicate rows
+merged). Per-endpoint pagination is still capped at ~2k bets (`max_pages`);
+`../wide/pmkt.duckdb` remains the deep-history subgraph dataset.
 
 ## The clean test (why the favorites are a mirage)
 
