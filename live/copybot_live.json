@@ -2,41 +2,23 @@
  "mode": "paper",
  "bankroll": 1000.0,
  "stake": 50.0,
- "cash": 1014.94,
+ "cash": 1000.0,
  "deployed": 0,
- "realized": 14.94,
+ "realized": 0.0,
  "open_count": 0,
  "fees_paid": 0.0,
  "fee_rate": 0.03,
  "lag": {
-  "n": 1,
-  "avg_s": 313.5,
-  "avg_slip_pct": 0.0035
+  "n": 0,
+  "avg_s": null,
+  "avg_slip_pct": null
  },
  "wallets": [
-  "raid3r",
-  "0x6d1A94f4",
   "Kruto2027",
+  "shisan888",
+  "fortuneking",
   "LSB1"
  ],
- "bets": [
-  {
-   "token": "27404405713596433210136741699058163976803988505508087936621769892990807262113",
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "name": "LSB1",
-   "outcome": "No",
-   "title": "Will Austria win on 2026-06-27?",
-   "their_price": 0.7673,
-   "my_price": 0.77,
-   "slippage_pct": 0.0035,
-   "shares": 64.94,
-   "cost": 50.0,
-   "opened": 1782616889,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 14.94,
-   "settled": 1782630754
-  }
- ],
- "updated": 1782969438
+ "bets": [],
+ "updated": 1782999925
 }
