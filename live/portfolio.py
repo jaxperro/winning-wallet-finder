@@ -60,6 +60,7 @@ def market_meta(cond):
 def conviction_bets():
     """Every followed wallet's resolved conviction bets from the cache, with entry time."""
     out = []
+    now = time.time()
     for w in WALLETS:
         ent = cache.get_entries(w["wallet"])               # cond -> first buy ts
         bets = [b for b in cache.get_bets(w["wallet"]) if (b["size"] or 0) > 0]
@@ -67,8 +68,15 @@ def conviction_bets():
         for b in bets:
             if b["size"] < thr:
                 continue
+            if (b["res_t"] or 0) > now:
+                # unresolved market (early-sold position): won is a curPrice mark,
+                # not an outcome — and a future res_t would never free its stake
+                # (cash out at entry, freed at res_t > now, absent from `invested`
+                # = equity silently loses $STAKE). The live /positions pull is the
+                # source for genuinely-open bets.
+                continue
             et = ent.get(b["cond"])
-            if not et or et < START:                       # only June 1+ entries
+            if not et or et < START:                       # only post-START entries
                 continue
             out.append({"wallet": w["wallet"], "name": w["name"], "cond": b["cond"],
                         "entry_t": et, "p": max(0.001, min(0.999, b["p"] or 0)),
@@ -159,11 +167,20 @@ def main():
     resolved.sort(key=lambda r: r.get("res_t") or 0, reverse=True)
     for r in resolved[:60]:
         m = market_meta(r["cond"]); r["title"] = m["title"]
+    # hypothetical P&L had we been able to afford it: resolved bets at their
+    # outcome, still-open bets marked to the current price. Missed bets can be
+    # kind=="open" (no "won"/"res_t" keys) — indexing m["won"] here used to
+    # KeyError and kill the whole portfolio step the first time capital ran out
+    # while a followed wallet had a live position.
+    def hypo_pnl(m):
+        if "won" in m:
+            return STAKE * ((1.0 / m["p"]) - 1) if m["won"] else -STAKE
+        return STAKE * (m.get("cur", m["p"]) / m["p"] - 1)
+
     missed.sort(key=lambda m: m.get("res_t") or 0, reverse=True)
     for m in missed[:60]:
         m["title"] = market_meta(m["cond"])["title"]
-        # hypothetical P&L had we been able to afford it (held to resolution)
-        m["pnl"] = STAKE * ((1.0 / m["p"]) - 1) if m["won"] else -STAKE
+        m["pnl"] = hypo_pnl(m)
     wins = sum(1 for r in resolved if r.get("won"))
     # per-wallet conviction threshold (cache p80) so the dashboard can filter LIVE open
     # positions the same way; 1e12 = "no sized bets" (nothing qualifies)
@@ -190,10 +207,10 @@ def main():
         "resolved": [{"title": r.get("title", ""), "name": r["name"], "won": r["won"],
                       "stake": STAKE, "pnl": round(r["pnl"], 2), "date": r.get("res_t")}
                      for r in resolved[:60]],
-        "missed": [{"title": m.get("title", ""), "name": m["name"], "won": m["won"],
+        "missed": [{"title": m.get("title", ""), "name": m["name"], "won": m.get("won"),
                     "stake": STAKE, "pnl": round(m["pnl"], 2), "date": m.get("res_t")}
                    for m in missed[:60]],
-        "missed_pnl": round(sum(STAKE * ((1.0 / m["p"]) - 1) if m["won"] else -STAKE for m in missed), 2),
+        "missed_pnl": round(sum(hypo_pnl(m) for m in missed), 2),
     }
     json.dump(out, open(os.path.join(HERE, "portfolio.json"), "w"), separators=(",", ":"))
     print(f"portfolio: equity ${equity:,.0f} ({(equity-BANK)/BANK*100:+.0f}%) | realized ${realized:+,.0f} "

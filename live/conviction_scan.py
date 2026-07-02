@@ -46,12 +46,17 @@ def main():
     con = duckdb.connect(os.path.join(HERE, "cache.duckdb"), read_only=True)
     # per-wallet conviction cutoff = p80 of that wallet's own positive stakes, then
     # keep only its bets at/above that cutoff (its top ~20% by size).
+    # res_t <= now: the cache stores early-sold positions in UNRESOLVED markets with
+    # a future res_t and won = curPrice at pull time — a mark, not an outcome. They
+    # were ~5% of the June test window with a 72% pseudo-"win" rate, inflating the
+    # forward validation; only actually-resolved bets may score.
     rows = con.execute(
         "WITH thr AS (SELECT wallet, quantile_cont(size, ?) AS t "
         "             FROM bets WHERE size > 0 GROUP BY wallet) "
         "SELECT b.wallet, b.p, b.won, b.res_t "
         "FROM bets b JOIN thr ON b.wallet = thr.wallet "
-        "WHERE b.size > 0 AND b.size >= thr.t", [CONV_PCTILE]).fetchall()
+        "WHERE b.size > 0 AND b.size >= thr.t AND b.res_t <= ?",
+        [CONV_PCTILE, int(time.time())]).fetchall()
     byw = {}
     for w, p, won, rt in rows:
         byw.setdefault(w, []).append((max(0.001, min(0.999, p or 0)), won, rt or 0))

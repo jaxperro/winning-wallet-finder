@@ -113,6 +113,13 @@ def invalidate(wallets):
             _con.execute("DELETE FROM pulled WHERE wallet=?", [w])
 
 
+def pulled_ages():
+    """{wallet: pulled_at} for every wallet ever pulled — lets collect.py bound
+    how many stale re-pulls one run takes on."""
+    with _lock:
+        return dict(_con.execute("SELECT wallet, pulled_at FROM pulled").fetchall())
+
+
 def stats():
     with _lock:
         w = _con.execute("SELECT count(*) FROM pulled").fetchone()[0]

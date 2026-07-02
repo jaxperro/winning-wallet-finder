@@ -75,6 +75,19 @@ FILL_LOG = "copybot_fills.jsonl"          # append-only ledger of every copy fil
 FEED = os.path.join("live", "copybot_live.json")   # published feed the trading dashboard reads
 FEED_PUSH_MIN_S = 120                     # min seconds between feed git-pushes (commit-on-change)
 
+# Polymarket taker fee (Fee Structure V2, live since 2026-03-30):
+#   fee = shares × rate × p × (1−p)
+# charged on marketable BUYs and SELLs (we always take — FOK/market copies);
+# redeeming a resolved position on-chain is fee-free. Rate is per market
+# category — sports 0.03, finance/politics/tech 0.04, econ/culture/weather 0.05,
+# crypto 0.07, geopolitics 0. The follow set is currently all-sports; override
+# with "taker_fee_rate" in config.json if that changes.
+TAKER_FEE_RATE = 0.03
+
+
+def taker_fee(shares, price, rate):
+    return shares * rate * price * (1.0 - price)
+
 
 def log(m):
     print(f"{time.strftime('%H:%M:%S')}  {m}", flush=True)
@@ -278,16 +291,24 @@ class Copybot:
         self.conds = engine.state.setdefault("conds", {})   # token_id -> conditionId (open positions)
         engine.state.setdefault("cash", cfg["bankroll_usd"])  # free cash (recycles on sell/resolution)
         engine.state.setdefault("lag", {"n": 0, "sum_s": 0.0, "sum_slip_pct": 0.0})
+        engine.state.setdefault("fees_paid", 0.0)
+        self.fee_rate = float(cfg.get("taker_fee_rate", TAKER_FEE_RATE))
 
     def _drain_fills(self):
         """Apply cash flows from any fills the engine just made; return the BUY
-        fills so the caller can log lag/slippage against the source trade."""
+        fills so the caller can log lag/slippage against the source trade.
+        Every marketable fill (buy or sell) pays the taker fee — in live mode the
+        protocol charges it at match time, so the paper book must charge it too or
+        it overstates the edge."""
         ex = self.engine.ex
         buys = []
         if hasattr(ex, "fills") and ex.fills:
             for f in ex.fills:
                 sign = -1 if f["side"] == "BUY" else 1
-                self.engine.state["cash"] += sign * f["shares"] * f["price"]
+                fee = taker_fee(f["shares"], f["price"], self.fee_rate)
+                f["fee"] = round(fee, 4)
+                self.engine.state["cash"] += sign * f["shares"] * f["price"] - fee
+                self.engine.state["fees_paid"] = self.engine.state.get("fees_paid", 0.0) + fee
                 if f["side"] == "BUY":
                     buys.append(f)
             ex.fills.clear()
@@ -311,6 +332,7 @@ class Copybot:
             "their_price": round(their_p, 4), "my_price": round(my_p, 4),
             "slippage_pct": round(slip_pct, 4),
             "shares": round(fill["shares"], 2), "cost": round(fill["shares"] * my_p, 2),
+            "fee": fill.get("fee", 0),
             "mode": "live" if self.engine.ex.live else "paper",
         }
         try:
@@ -331,6 +353,7 @@ class Copybot:
             "their_price": round(their_p, 4), "my_price": round(my_p, 4),
             "slippage_pct": round(slip_pct, 4),
             "shares": round(fill["shares"], 2), "cost": round(fill["shares"] * my_p, 2),
+            "fee": fill.get("fee", 0),
             "opened": int(their_ts or now), "status": "open",
             "exit_price": None, "pnl": None, "settled": None,
         }
@@ -357,6 +380,8 @@ class Copybot:
             "bankroll": bank, "stake": round(bank * self.cfg["bankroll_pct"], 2),
             "cash": round(cash, 2), "deployed": round(exp, 2),
             "realized": round(cash + exp - bank, 2), "open_count": len(mp),
+            "fees_paid": round(st.get("fees_paid", 0.0), 2),
+            "fee_rate": self.fee_rate,
             "lag": {"n": lag.get("n", 0),
                     "avg_s": round(lag["sum_s"] / lag["n"], 1) if lag.get("n") else None,
                     "avg_slip_pct": round(lag["sum_slip_pct"] / lag["n"], 4) if lag.get("n") else None},
@@ -380,9 +405,13 @@ class Copybot:
         os.replace(tmp, path)
 
     def publish_feed(self):
-        """Commit + push the feed to GitHub so the public dashboard can read it.
-        Throttled and commit-on-change, so pushes track betting activity, not the
-        poll rate. Best-effort — never crashes the run."""
+        """Commit + push the feed, the state file, and the fills ledger so (a) the
+        public dashboard reads the current book, (b) the book survives machine
+        loss, and (c) the per-fill lag/slippage evidence is preserved — the Actions
+        runner used to discard copybot_fills.jsonl on every run. Committing state
+        here (not just the feed) also keeps `git pull --rebase` from wedging on a
+        dirty tracked file now that this local poller is the sole runner.
+        Throttled and commit-on-change. Best-effort — never crashes the run."""
         st = self.engine.state
         now = time.time()
         if now - st.get("feed_pushed_at", 0) < FEED_PUSH_MIN_S:
@@ -391,13 +420,25 @@ class Copybot:
         try:
             import subprocess
             repo = self.here
-            c = subprocess.run(["git", "-C", repo, "commit", FEED, "-m",
+            # publish only when the FEED itself changed (a bet placed/settled) —
+            # the state file churns bookkeeping every cycle and would otherwise
+            # commit every FEED_PUSH_MIN_S forever.
+            if subprocess.run(["git", "-C", repo, "diff", "--quiet", "--", FEED],
+                              capture_output=True).returncode == 0:
+                return
+            paths = [p for p in (FEED, self.engine.state_path, FILL_LOG)
+                     if os.path.exists(os.path.join(repo, p))]
+            subprocess.run(["git", "-C", repo, "add", "-f"] + paths, capture_output=True)
+            if subprocess.run(["git", "-C", repo, "diff", "--cached", "--quiet"],
+                              capture_output=True).returncode == 0:
+                return                                  # nothing changed
+            c = subprocess.run(["git", "-C", repo, "commit", "-q", "-m",
                                 "copybot: live paper feed [skip ci]"],
                                capture_output=True, text=True)
             if c.returncode != 0:
-                return                                  # nothing changed
-            subprocess.run(["git", "-C", repo, "pull", "--rebase", "-q", "origin", "main"],
-                           capture_output=True)
+                return
+            subprocess.run(["git", "-C", repo, "pull", "--rebase", "--autostash", "-q",
+                            "origin", "main"], capture_output=True)
             p = subprocess.run(["git", "-C", repo, "push", "-q", "origin", "main"],
                                capture_output=True, text=True)
             log("published live feed → dashboard" if p.returncode == 0
@@ -504,10 +545,11 @@ class Copybot:
                             log(f"  ⚠ redeem failed ({info}) — keeping position, will retry")
                             continue
                         log(f"  ↳ redeemed on-chain: {info}")
-                proceeds = pos["shares"] * wp
-                pnl = proceeds - pos["cost"]
-                self.engine.state["cash"] += proceeds   # recycle freed capital
+                proceeds = pos["shares"] * wp           # redeem is fee-free on-chain
                 b = self.engine.state.get("bets", {}).get(token)
+                fee_in = (b or {}).get("fee") or 0      # entry taker fee, already off cash
+                pnl = proceeds - pos["cost"] - fee_in
+                self.engine.state["cash"] += proceeds   # recycle freed capital
                 if b:
                     b.update(status=("won" if wp >= 0.5 else "lost"),
                              exit_price=wp, pnl=round(pnl, 2), settled=int(time.time()))

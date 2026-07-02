@@ -10,9 +10,16 @@ name: copybot-paper
 # not Actions.)
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"      # GitHub may delay/skip under load; fine for ≥3h leads
-  workflow_dispatch: {}         # lets you run it manually from the Actions tab
+  # cron DISABLED 2026-07-01: GitHub throttled "*/5" to one run every ~1.5-2.5h in
+  # practice, and copybot skips any trade older than RECENT_TRADE_WINDOW_S (10 min)
+  # — measured result: 1 of ~104 qualifying conviction buys copied June 25-Jul 1.
+  # The launchd poller (com.jaxperro.copybot.plist, --poll 60) is now the sole
+  # runner; it commits state + feed + fills itself. Keep this workflow for manual
+  # runs only — re-enabling the cron alongside the local poller would fork the
+  # book's state.
+  # schedule:
+  #   - cron: "*/5 * * * *"
+  workflow_dispatch: {}         # manual backstop from the Actions tab
 
 permissions:
   contents: write               # GITHUB_TOKEN pushes the feed + state
@@ -44,6 +51,7 @@ jobs:
           git config user.name  "copybot[bot]"
           git config user.email "copybot@users.noreply.github.com"
           git add -f live/copybot_live.json copybot_state.json
+          git add -f copybot_fills.jsonl 2>/dev/null || true   # per-fill lag/slippage ledger
           if git diff --cached --quiet; then
             echo "no change this run"
             exit 0

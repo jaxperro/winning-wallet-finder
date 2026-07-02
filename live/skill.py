@@ -59,6 +59,11 @@ def zstats(bets):
 
 def score_wallet(c):
     bets = cache.get_bets(c["wallet"])   # cached — pulls the data-api only once per wallet
+    # resolved only: the cache stores early-sold positions in unresolved markets
+    # with res_t in the future and won = curPrice at pull time (a mark, not an
+    # outcome) — they must not count toward z.
+    now_t = time.time()
+    bets = [b for b in bets if (b.get("res_t") or 0) <= now_t]
     if BEFORE:                       # clean OOS: only bets resolved before cutoff
         bets = [b for b in bets if (b.get("res_t") or 0) < BEFORE]
     n = len(bets)

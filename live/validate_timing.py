@@ -30,6 +30,12 @@ HERE = os.path.dirname(__file__)
 COPYABLE_MED_LEAD = 24.0     # median lead (h) on winning conviction bets to count as copyable
 JUN1 = time.mktime(time.strptime("2026-06-01", "%Y-%m-%d"))   # portfolio copy-start
 STAKE = 50.0                 # flat $/trade the copy portfolio uses
+# Polymarket taker fee (since 2026-03-30): fee = shares·rate·p·(1−p), paid on
+# marketable entries AND mirror exits; redeeming at resolution is free. 0.03 is
+# the sports rate (the follow set's category). Making copy_pnl fee-aware makes
+# the SELECTION fee-aware — a wallet only counts as a copyable sharp if copying
+# it clears the fees a real copier pays.
+FEE_RATE = 0.03
 _SSL = ssl._create_unverified_context()
 _CLOB = {}                   # conditionId -> {token_id: winner-price 1/0/None}
 
@@ -72,8 +78,12 @@ def display_stats(w):
                              (e.g. ArbTrader: ~100% conv win but −$790 copy P&L).
       name / last-bet      : from the /activity pull
     """
-    # ---- position win%/record/P&L from the cache (large, survivorship-corrected) ----
-    bets = [b for b in cache.get_bets(w) if (b["size"] or 0) > 0]
+    # ---- position win%/record/P&L from the cache (large, survivorship-corrected).
+    # res_t <= now: the cache stores early-sold positions in UNRESOLVED markets with
+    # a future res_t and won = current price — a mark, not an outcome; skip them. ----
+    now = time.time()
+    bets = [b for b in cache.get_bets(w)
+            if (b["size"] or 0) > 0 and (b["res_t"] or 0) <= now]
     thr = cache.conv_cutoff(b["size"] for b in bets)
     conv = [b for b in bets if b["size"] >= thr]
     won = sum(1 for b in conv if b["won"])
@@ -136,16 +146,20 @@ def display_stats(w):
             if t.get("side") == "BUY":
                 if mkt.get(c, 0) < cthr or c in entered or c in openp:
                     continue
-                entered.add(c); openp[c] = {"sh": STAKE / pr, "a": asset}
+                fee_in = STAKE * FEE_RATE * (1 - pr)            # taker fee on the entry
+                entered.add(c); openp[c] = {"sh": STAKE / pr, "a": asset, "fee": fee_in}
             elif c in openp:                                    # mirror their exit (scalp)
-                scalp += openp[c]["sh"] * pr - STAKE; sold += 1; del openp[c]
+                sh = openp[c]["sh"]
+                fee_out = sh * FEE_RATE * pr * (1 - pr)         # taker fee on the exit too
+                scalp += sh * pr - STAKE - openp[c]["fee"] - fee_out
+                sold += 1; del openp[c]
         for c, p in openp.items():                              # settle held bets at resolution
             wv = resmap.get(p["a"])
             if wv is None:
                 wv = _clob_winner(c, p["a"])                    # clob fallback for out-of-pull markets
             if wv is None:
                 continue                                        # not resolved yet -> exclude
-            held += (p["sh"] if wv else 0) - STAKE
+            held += (p["sh"] if wv else 0) - STAKE - p["fee"]   # redeem itself is fee-free
             hw += wv; hl += 1 - wv
         out.update(copy_pnl=round(scalp + held), held_pnl=round(held),
                    held_won=hw, held_lost=hl, sold=sold)
@@ -154,7 +168,8 @@ def display_stats(w):
 
 def lead_profile(w):
     ent = cache.get_entries(w)
-    bets = cache.get_bets(w)
+    now = time.time()
+    bets = [b for b in cache.get_bets(w) if (b["res_t"] or 0) <= now]  # resolved only
     cut = cache.conv_cutoff(b["size"] for b in bets)   # this wallet's top-20% stake cutoff
     leads = [(b["res_t"] - ent[b["cond"]]) / 3600.0 for b in bets
              if b["won"] and (b["size"] or 0) >= cut and b["cond"] in ent
