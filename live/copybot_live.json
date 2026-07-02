@@ -1,20 +1,20 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 37.97,
+ "stake": 36.45,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 949.31,
- "cash": 949.31,
+ "cash": 911.29,
  "deployed": 0,
- "realized": -50.69,
+ "realized": -88.71,
  "open_count": 0,
- "fees_paid": 0.69,
+ "fees_paid": 0.74,
  "fee_rate": 0.03,
  "lag": {
-  "n": 1,
-  "avg_s": 64.1,
-  "avg_slip_pct": 0.0189
+  "n": 2,
+  "avg_s": 46.3,
+  "avg_slip_pct": 0.0081
  },
  "wallets": [
   "Kruto2027",
@@ -23,6 +23,24 @@
   "LSB1"
  ],
  "bets": [
+  {
+   "token": "28393949293851968084595287701797923567435527099133056404275480596406503297469",
+   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
+   "name": "fortuneking",
+   "outcome": "Under",
+   "title": "Portugal vs. Croatia: O/U 5.5",
+   "their_price": 0.9575,
+   "my_price": 0.955,
+   "slippage_pct": -0.0026,
+   "shares": 39.76,
+   "cost": 37.97,
+   "fee": 0.0513,
+   "opened": 1783034410,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -38.02,
+   "settled": 1783034498
+  },
   {
    "token": "49050515224512144893403630474493192388276540052107403943769923572957881420203",
    "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
@@ -60,5 +78,5 @@
   }
  ],
  "missed_pnl": -38.53,
- "updated": 1783016525
+ "updated": 1783034499
 }
