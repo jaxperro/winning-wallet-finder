@@ -208,6 +208,7 @@ def main():
     capped = 0
     held = []        # (free_t, cost, payoff)  cost = stake + entry fee; payoff paid at free_t
     perW = {w["wallet"]: {"name": w["name"], "wallet": w["wallet"], "bets": 0,
+                          "won": 0, "lost": 0,
                           "invested": 0.0, "realized": 0.0} for w in WALLETS}
     resolved, current, missed = [], [], []
 
@@ -225,6 +226,7 @@ def main():
         for ft, cost, payoff, rec in held:
             if ft and ft <= upto and rec["kind"] == "res":
                 cash += payoff; realized += payoff - cost; perW[rec["wallet"]]["realized"] += payoff - cost
+                perW[rec["wallet"]]["won" if rec["won"] else "lost"] += 1
                 rec["pnl"] = payoff - cost
                 resolved.append(rec)
             else:
@@ -308,6 +310,7 @@ def main():
         "resolved_count": len(resolved), "wins": wins, "losses": len(resolved) - wins,
         "open_count": len(current), "missed_count": len(missed),
         "wallets": [{"name": v["name"], "wallet": v["wallet"], "bets": v["bets"],
+                     "won": v["won"], "lost": v["lost"],
                      "invested": round(v["invested"], 2), "realized": round(v["realized"], 2),
                      "conv_thr": conv_thr.get(v["wallet"], 1e12)}
                     for v in perW.values()],
