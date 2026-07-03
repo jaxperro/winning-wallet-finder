@@ -47,7 +47,10 @@ GAMMA = "https://gamma-api.polymarket.com"
 # event (a game's markets settle together — one correlated bet, not N diversified
 # ones); 0 = off, mirror every conviction trade.
 PCT = 0.04
-STAKE_MIN, STAKE_CAP = 5.0, float("inf")   # uncapped — 4% of equity rides fully
+# stakes pin at STAKE_CAP (where marketable fills still sit inside typical book
+# depth); once working equity exceeds STAKE_CAP/PCT, surplus cash is SWEPT into
+# a banked reserve — a profit ratchet that never bets and can't be drawn down.
+STAKE_MIN, STAKE_CAP = 5.0, 250.0
 EVENT_CAP = 0
 DD_THRESHOLD, DD_FACTOR = 0.80, 0.5
 # skip entries above this price. High-price favorites win pennies and lose
@@ -207,6 +210,7 @@ def main():
     fees_paid = 0.0
     hwm = BANK
     capped = 0
+    reserve = 0.0
     held = []        # (free_t, cost, payoff)  cost = stake + entry fee; payoff paid at free_t
     perW = {w["wallet"]: {"name": w["name"], "wallet": w["wallet"], "bets": 0,
                           "won": 0, "lost": 0,
@@ -214,9 +218,15 @@ def main():
     resolved, current, missed = [], [], []
 
     def cur_stake():
-        """PCT of current equity, drawdown-braked, clamped — the copybot's rule."""
-        nonlocal hwm
+        """PCT of current WORKING equity, drawdown-braked, clamped — the copybot's
+        rule. Sweeps surplus cash to the banked reserve first, so working equity
+        stays at the level where stakes ~= STAKE_CAP."""
+        nonlocal hwm, cash, reserve
         eq = cash + sum(c for _, c, _, _ in held)
+        excess = eq - STAKE_CAP / PCT
+        if excess > 0:
+            sweep = min(cash, excess)
+            cash -= sweep; reserve += sweep; eq -= sweep
         hwm = max(hwm, eq)
         frac = PCT * (DD_FACTOR if eq < DD_THRESHOLD * hwm else 1.0)
         return max(STAKE_MIN, min(STAKE_CAP, frac * eq))
@@ -296,16 +306,18 @@ def main():
     for w in WALLETS:
         t = cache.conv_cutoff(b["size"] for b in cache.get_bets(w["wallet"]) if (b["size"] or 0) > 0)
         conv_thr[w["wallet"]] = round(t) if t != float("inf") else 1e12
-    equity = cash + invested
+    equity = cash + invested + reserve
     out = {
         "started": START, "updated": now,
         "bank": BANK, "stake": round(cur_stake(), 2),   # the NEXT bet's size
-        "stake_pct": PCT, "event_cap": EVENT_CAP, "hwm": round(hwm, 2),
+        "stake_pct": PCT, "stake_cap": STAKE_CAP, "event_cap": EVENT_CAP,
+        "hwm": round(hwm, 2),
         "dd_threshold": DD_THRESHOLD, "capped_count": capped,
         "max_entry": MAX_ENTRY,
         "fee_rate": FEE_RATE, "slip": SLIP, "lag_est_s": LAG_EST_S,
         "fees_paid": round(fees_paid, 2),
         "equity": round(equity, 2), "liquid": round(cash, 2), "invested": round(invested, 2),
+        "reserve": round(reserve, 2),                    # banked profit, never bet
         "realized": round(realized, 2), "pnl": round(equity - BANK, 2),
         "unreal": round(invested - open_cost, 2),
         "resolved_count": len(resolved), "wins": wins, "losses": len(resolved) - wins,
@@ -330,10 +342,10 @@ def main():
     json.dump(out, open(os.path.join(HERE, OUT) if not os.path.isabs(OUT) else OUT, "w"),
               separators=(",", ":"))
     save_slug_cache()
-    print(f"portfolio: equity ${equity:,.0f} ({(equity-BANK)/BANK*100:+.0f}%) | realized ${realized:+,.0f} "
-          f"| fees ${fees_paid:,.0f} | next stake ${cur_stake():,.0f} | {len(resolved)} resolved "
-          f"({wins}W/{len(resolved)-wins}L) | {len(current)} open | {len(missed)} missed "
-          f"({capped} event-capped) | -> portfolio.json", flush=True)
+    print(f"portfolio: equity ${equity:,.0f} ({(equity-BANK)/BANK*100:+.0f}%) | banked ${reserve:,.0f} "
+          f"| realized ${realized:+,.0f} | fees ${fees_paid:,.0f} | next stake ${cur_stake():,.0f} "
+          f"| {len(resolved)} resolved ({wins}W/{len(resolved)-wins}L) | {len(current)} open "
+          f"| {len(missed)} missed ({capped} event-capped) | -> portfolio.json", flush=True)
 
 
 if __name__ == "__main__":

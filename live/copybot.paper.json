@@ -55,5 +55,6 @@
     "max_price": 0.99,
     "min_order_usd": 5.0,
     "max_per_event": 0
-  }
+  },
+  "stake_cap_usd": 250.0
 }

@@ -54,6 +54,10 @@ DEFAULT_CONFIG = {
     "bankroll_pct": 0.02,            # fraction of CURRENT equity per new entry
                                      # (compounds up and down; falls back to a flat
                                      # fraction of bankroll_usd when cash isn't tracked)
+    "stake_cap_usd": 0,              # >0: pin stakes at this size once the book grows
+                                     # past cap/bankroll_pct — surplus cash is SWEPT to
+                                     # state["reserve"], a banked pot that never bets
+                                     # (profit ratchet + keeps fills inside book depth)
     "price_guard_pct": 0.05,         # skip if price moved >5% from their fill
     "risk": {
         "max_trade_usd": 50.0,       # hard ceiling on any single copy
@@ -264,20 +268,34 @@ class CopyTrader:
     DD_FACTOR = 0.5          # …bet half size until equity recovers
 
     def stake_usd(self):
-        """Next bet size = bankroll_pct × current equity (cash + open cost basis),
-        so stakes compound with the book in both directions; halved while in a
-        >20% drawdown from the high-water mark. Falls back to the flat static
-        stake when cash isn't tracked (legacy poll CLI)."""
+        """Next bet size = bankroll_pct × current WORKING equity (cash + open cost
+        basis), so stakes compound with the book in both directions; halved while
+        in a >20% drawdown from the high-water mark. Falls back to the flat static
+        stake when cash isn't tracked (legacy poll CLI).
+
+        stake_cap_usd (profit ratchet): once working equity exceeds
+        cap/bankroll_pct — the level where stakes hit the cap — the surplus CASH
+        is swept into state["reserve"]: banked, never bet, immune to drawdowns.
+        Stakes stay pinned ~at the cap, where marketable fills are still inside
+        typical book depth."""
         cash = self.state.get("cash")
         if cash is None:
             return self.cfg["bankroll_usd"] * self.cfg["bankroll_pct"]
+        frac = self.cfg["bankroll_pct"]
+        cap = self.cfg.get("stake_cap_usd") or 0
         eq = cash + self.open_exposure()
+        if cap and frac > 0 and eq > cap / frac:
+            sweep = min(cash, eq - cap / frac)
+            if sweep > 0:
+                self.state["cash"] = cash = cash - sweep
+                self.state["reserve"] = self.state.get("reserve", 0.0) + sweep
+                eq -= sweep
         hwm = max(self.state.get("hwm", 0.0), eq)
         self.state["hwm"] = hwm
-        frac = self.cfg["bankroll_pct"]
         if eq < self.DD_THRESHOLD * hwm:
             frac *= self.DD_FACTOR
-        return frac * eq
+        stake = frac * eq
+        return min(stake, cap) if cap else stake
 
     def record_miss(self, wallet, token, cond, title, outcome, price, want, reason):
         """A bet the strategy WOULD have copied but the book couldn't take —

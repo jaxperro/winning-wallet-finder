@@ -407,7 +407,9 @@ class Copybot:
             "event_cap": self.engine.risk.get("max_per_event"),
             "hwm": round(st.get("hwm", 0.0), 2),
             "cash": round(cash, 2), "deployed": round(exp, 2),
-            "realized": round(cash + exp - bank, 2), "open_count": len(mp),
+            "reserve": round(st.get("reserve", 0.0), 2),   # banked profit, never bet
+            "realized": round(cash + exp + st.get("reserve", 0.0) - bank, 2),
+            "open_count": len(mp),
             "fees_paid": round(st.get("fees_paid", 0.0), 2),
             "fee_rate": self.fee_rate,
             "lag": {"n": lag.get("n", 0),
@@ -504,15 +506,17 @@ class Copybot:
         stake = self.engine.stake_usd()       # dynamic: pct of current equity
         exp = self.engine.open_exposure()
         cash = self.engine.state.get("cash", bank)
-        realized = cash + exp - bank          # see _drain_fills / settle_resolved
+        reserve = self.engine.state.get("reserve", 0.0)
+        realized = cash + exp + reserve - bank   # see _drain_fills / settle_resolved
         n = len(self.engine.state["my_pos"])
         lag = self.engine.state.get("lag", {})
         lagstr = ""
         if lag.get("n"):
             lagstr = (f" · {lag['n']} copies avg lag {lag['sum_s']/lag['n']:.0f}s "
                       f"slip {lag['sum_slip_pct']/lag['n']:+.1%}")
-        log(f"[{cycle}] open {n} · deployed ${exp:,.0f} · free ${cash:,.0f}/${bank:,.0f} "
-            f"· realized ${realized:+,.2f}{lagstr}"
+        bankstr = f" · banked ${reserve:,.0f}" if reserve else ""
+        log(f"[{cycle}] open {n} · deployed ${exp:,.0f} · free ${cash:,.0f}/${bank:,.0f}"
+            f"{bankstr} · realized ${realized:+,.2f}{lagstr}"
             + (f" · CAN'T OPEN (free < ${stake:,.0f} stake — bets missed)"
                if cash < stake else ""))
 
