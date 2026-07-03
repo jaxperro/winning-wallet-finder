@@ -62,6 +62,21 @@
  ],
  "missed": [
   {
+   "ts": 1783039208,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "28269103877018509853085648333831879355041636934344754627617129026392017000778",
+   "cond": "0x917aa2a97c0945edecd7b26b57d31e6d9c87c6e0b7d589c128c9216f345a6051",
+   "title": "Portugal vs. Croatia: Team to Advance",
+   "outcome": "Croatia",
+   "price": 0.465,
+   "stake": 36.45,
+   "reason": "price moved 0.67\u21920.47",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783037834,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "96643263432737853157726688119000113167683651790181487355799348751297612322494",
@@ -108,5 +123,5 @@
   }
  ],
  "missed_pnl": -111.76,
- "updated": 1783037897
+ "updated": 1783039208
 }
