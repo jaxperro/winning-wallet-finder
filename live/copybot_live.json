@@ -1,20 +1,20 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 36.45,
+ "stake": 34.16,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 949.31,
- "cash": 911.29,
+ "cash": 853.98,
  "deployed": 0,
- "realized": -88.71,
+ "realized": -146.02,
  "open_count": 0,
- "fees_paid": 0.74,
+ "fees_paid": 0.76,
  "fee_rate": 0.03,
  "lag": {
-  "n": 2,
-  "avg_s": 46.3,
-  "avg_slip_pct": 0.0081
+  "n": 4,
+  "avg_s": 53.1,
+  "avg_slip_pct": 0.0041
  },
  "wallets": [
   "Kruto2027",
@@ -23,6 +23,24 @@
   "LSB1"
  ],
  "bets": [
+  {
+   "token": "12184589112253099646841219091162361978388293103010365931849641794603228859112",
+   "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
+   "name": "shisan888",
+   "outcome": "Over",
+   "title": "Portugal vs. Croatia: O/U 12.5 Total Corners",
+   "their_price": 0.99,
+   "my_price": 0.99,
+   "slippage_pct": 0.0,
+   "shares": 21.05,
+   "cost": 20.84,
+   "fee": 0.0063,
+   "opened": 1783039844,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -57.3,
+   "settled": 1783039964
+  },
   {
    "token": "28393949293851968084595287701797923567435527099133056404275480596406503297469",
    "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
@@ -123,5 +141,5 @@
   }
  ],
  "missed_pnl": -148.8,
- "updated": 1783039272
+ "updated": 1783039967
 }
