@@ -1,21 +1,21 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 41.81,
+ "stake": 41.8,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1045.19,
- "cash": 1045.19,
- "deployed": 0,
+ "cash": 1003.28,
+ "deployed": 41.81,
  "reserve": 0.0,
- "realized": 45.19,
- "open_count": 0,
- "fees_paid": 0.79,
+ "realized": 45.09,
+ "open_count": 1,
+ "fees_paid": 0.89,
  "fee_rate": 0.03,
  "lag": {
-  "n": 5,
-  "avg_s": 47.8,
-  "avg_slip_pct": 0.0077
+  "n": 6,
+  "avg_s": 43.9,
+  "avg_slip_pct": 0.0046
  },
  "wallets": [
   "Kruto2027",
@@ -25,6 +25,24 @@
   "imwalkinghere"
  ],
  "bets": [
+  {
+   "token": "67596909630505748192273119086224135081859582478741941473155557882450542807607",
+   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
+   "name": "fortuneking",
+   "outcome": "Argentina",
+   "title": "Argentina vs. Cabo Verde: Team to Advance",
+   "their_price": 0.93,
+   "my_price": 0.92,
+   "slippage_pct": -0.0108,
+   "shares": 45.44,
+   "cost": 41.81,
+   "fee": 0.1003,
+   "opened": 1783116374,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "49050515224512144893403630474493192388276540052107403943769923572957881420203",
    "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
@@ -221,5 +239,5 @@
   }
  ],
  "missed_pnl": 23.23,
- "updated": 1783113631
+ "updated": 1783116399
 }
