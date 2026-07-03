@@ -7,7 +7,8 @@
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
     "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
     "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
-    "0x41558102a796ba971c7567cad41c307e59f8fa41"
+    "0x41558102a796ba971c7567cad41c307e59f8fa41",
+    "0xd96750bf8d941a8186e592b0ae6e096da66aa266"
   ],
   "watch": [
     {
@@ -25,6 +26,10 @@
     {
       "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
       "name": "LSB1"
+    },
+    {
+      "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
+      "name": "imwalkinghere"
     }
   ],
   "follow": {
@@ -34,7 +39,8 @@
       "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 123.08,
       "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543": 704.33,
       "0x86c878cde72660ec52f5e6f0f0438b76de8fc867": 970.0,
-      "0x41558102a796ba971c7567cad41c307e59f8fa41": 231.0
+      "0x41558102a796ba971c7567cad41c307e59f8fa41": 231.0,
+      "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 115.27
     },
     "min_entry": 0.0,
     "max_entry": 0.95

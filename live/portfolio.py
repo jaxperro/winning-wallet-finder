@@ -72,10 +72,11 @@ SLIP = 0.005
 
 # the followed wallets — single source of truth (dashboard renders names from the feed)
 WALLETS = [
-    {"name": "Kruto2027",   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb"},
-    {"name": "shisan888",   "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543"},
-    {"name": "fortuneking", "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867"},
-    {"name": "LSB1",        "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41"},
+    {"name": "Kruto2027",     "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb"},
+    {"name": "shisan888",     "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543"},
+    {"name": "fortuneking",   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867"},
+    {"name": "LSB1",          "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41"},
+    {"name": "imwalkinghere", "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266"},
 ]
 
 
