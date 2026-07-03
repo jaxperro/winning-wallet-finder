@@ -98,6 +98,21 @@
  ],
  "missed": [
   {
+   "ts": 1783040639,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "25757239550537655544074800839875830707518070627888366211833592882711594915228",
+   "cond": "0x513d437d17a52170e91c09c84b382164a2babd79db9c7e95c7dc6afb60c52ff1",
+   "title": "Exact Score: Portugal 2 - 1 Croatia?",
+   "outcome": "No",
+   "price": 0.94,
+   "stake": 32.79,
+   "reason": "price moved 0.80\u21920.94",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783040029,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "96643263432737853157726688119000113167683651790181487355799348751297612322494",
@@ -174,5 +189,5 @@
   }
  ],
  "missed_pnl": -182.98,
- "updated": 1783040090
+ "updated": 1783040639
 }
