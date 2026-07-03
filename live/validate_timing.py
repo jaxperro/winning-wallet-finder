@@ -42,15 +42,22 @@ _CLOB = {}                   # conditionId -> {token_id: winner-price 1/0/None}
 
 def _clob_winner(cond, token):
     """Authoritative resolution for a token: 1 if it won, 0 if it lost, None if the
-    market hasn't resolved. Matched by token_id (exact, no outcome-name guessing)."""
+    market hasn't resolved. Matched by token_id (exact, no outcome-name guessing).
+
+    NB: the CLOB reports winner=False on EVERY token of an UNRESOLVED market —
+    only a present True winner means resolved. Treating False as "lost" counted
+    every unresolved held bet as a loss, biasing copy_pnl (the selection metric)
+    downward."""
     if cond not in _CLOB:
         try:
             req = urllib.request.Request("https://clob.polymarket.com/markets/" + cond,
                                          headers={"User-Agent": "Mozilla/5.0"})
             m = json.loads(urllib.request.urlopen(req, timeout=20, context=_SSL).read())
+            toks = m.get("tokens") or []
+            resolved = any(t.get("winner") is True for t in toks)
             _CLOB[cond] = {str(t.get("token_id")):
-                           (1 if t.get("winner") is True else 0 if t.get("winner") is False else None)
-                           for t in (m.get("tokens") or [])}
+                           ((1 if t.get("winner") is True else 0) if resolved else None)
+                           for t in toks}
         except Exception:
             _CLOB[cond] = {}
     return _CLOB[cond].get(str(token))

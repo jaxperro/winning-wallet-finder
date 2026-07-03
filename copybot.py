@@ -110,8 +110,10 @@ def _market(cond):
             m = json.loads(r.read().decode()) or {}
     except Exception:
         return None
-    # only cache a resolved market (it won't change); re-check live ones each pass
-    if any(t.get("winner") in (True, False) for t in (m.get("tokens") or [])):
+    # only cache a RESOLVED market (it won't change); re-check live ones each pass.
+    # CLOB semantics: unresolved markets report winner=False on EVERY token —
+    # resolution flips exactly one to True. Only a True winner means resolved.
+    if any(t.get("winner") is True for t in (m.get("tokens") or [])):
         with _MKT_LOCK:
             _MKT_CACHE[cond] = m
     return m
@@ -132,14 +134,21 @@ def market_neg_risk(cond):
 def resolution_price(token_id, cond, outcome=None):
     """Settled price of our held token: 1.0 if it won, 0.0 if it lost, None if the
     market hasn't resolved yet. Matches by outcome first (as the dashboard does),
-    then by token_id."""
+    then by token_id.
+
+    CRITICAL semantics: the CLOB reports winner=False on EVERY token of an
+    UNRESOLVED market — False alone means "not yet", not "lost". A market is
+    resolved only once some token's winner is True. Treating False as lost made
+    the bot settle live in-play markets as instant losses minutes after entry
+    (2026-07-02: four winning bets booked as -$180 of losses)."""
     toks = market_tokens(cond)
     if not toks:
         return None
+    if not any(t.get("winner") is True for t in toks):
+        return None                              # nobody has won -> not resolved
 
     def winp(t):
-        w = t.get("winner")
-        return 1.0 if w is True else 0.0 if w is False else None
+        return 1.0 if t.get("winner") is True else 0.0
 
     if outcome is not None:
         for t in toks:
@@ -345,18 +354,30 @@ class Copybot:
             lag["n"] += 1
             lag["sum_s"] += detect_s
             lag["sum_slip_pct"] += slip_pct
-        # record the placed bet for the live dashboard feed
-        self.engine.state.setdefault("bets", {})[fill["token"]] = {
-            "token": fill["token"], "wallet": wallet,
-            "name": self.names.get(wallet.lower(), wallet[:10]),
-            "outcome": t.get("outcome"), "title": (t.get("title") or "")[:90],
-            "their_price": round(their_p, 4), "my_price": round(my_p, 4),
-            "slippage_pct": round(slip_pct, 4),
-            "shares": round(fill["shares"], 2), "cost": round(fill["shares"] * my_p, 2),
-            "fee": fill.get("fee", 0),
-            "opened": int(their_ts or now), "status": "open",
-            "exit_price": None, "pnl": None, "settled": None,
-        }
+        # record the placed bet for the live dashboard feed. AGGREGATE across
+        # fills: an ADD to an existing open position must accumulate shares/
+        # cost/fees, not overwrite the record with just the last fill — that
+        # made Cost show one fill while P&L settled the whole position.
+        bets = self.engine.state.setdefault("bets", {})
+        prev = bets.get(fill["token"])
+        if prev and prev.get("status") == "open":
+            sh = prev["shares"] + fill["shares"]
+            cost = prev["cost"] + fill["shares"] * my_p
+            prev.update(shares=round(sh, 2), cost=round(cost, 2),
+                        my_price=round(cost / sh, 4) if sh else prev["my_price"],
+                        fee=round((prev.get("fee") or 0) + fill.get("fee", 0), 4))
+        else:
+            bets[fill["token"]] = {
+                "token": fill["token"], "wallet": wallet,
+                "name": self.names.get(wallet.lower(), wallet[:10]),
+                "outcome": t.get("outcome"), "title": (t.get("title") or "")[:90],
+                "their_price": round(their_p, 4), "my_price": round(my_p, 4),
+                "slippage_pct": round(slip_pct, 4),
+                "shares": round(fill["shares"], 2), "cost": round(fill["shares"] * my_p, 2),
+                "fee": fill.get("fee", 0),
+                "opened": int(their_ts or now), "status": "open",
+                "exit_price": None, "pnl": None, "settled": None,
+            }
         log(f"  ↳ lag {('%.0fs' % detect_s) if detect_s is not None else '?'} · "
             f"their {their_p:.3f} → mine {my_p:.3f} ({slip_pct:+.1%} slippage)")
 
