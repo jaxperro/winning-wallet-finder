@@ -365,8 +365,13 @@ class CopyTrader:
     def _price_guard_ok(self, current, their_price):
         if their_price <= 0:
             return True
-        drift = abs(current - their_price) / their_price
-        return drift <= self.cfg["price_guard_pct"]
+        # ASYMMETRIC by rule: a better price than the sharp paid is never blocked
+        # (paying less for the same outcome is strictly better odds — the guard
+        # once skipped a 0.70→0.51 improvement that went on to win). Only adverse
+        # drift — chasing the price UP — is gated by price_guard_pct.
+        if current <= their_price:
+            return True
+        return (current - their_price) / their_price <= self.cfg["price_guard_pct"]
 
     def _handle_their_buy(self, wallet, token, their_size, their_price,
                           label, title, outcome, event=None, cond=None):

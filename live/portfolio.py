@@ -50,6 +50,13 @@ PCT = 0.04
 STAKE_MIN, STAKE_CAP = 5.0, float("inf")   # uncapped — 4% of equity rides fully
 EVENT_CAP = 0
 DD_THRESHOLD, DD_FACTOR = 0.80, 0.5
+# skip entries above this price. High-price favorites win pennies and lose
+# whole stakes: the June sweep (caps 0.75-1.0) peaked at 0.95 — >95¢ bets added
+# ~23 wins yet LOWERED final equity (slip+fee eat the ~1-3% payouts, and the
+# locked capital compounds better elsewhere). Deep caps (<=0.85) cut real
+# winners. Mirrored by the bot's follow.max_entry; env-overridable for sweeps.
+MAX_ENTRY = float(os.environ.get("MAX_ENTRY", 0.95))
+OUT = os.environ.get("PORTFOLIO_OUT", "portfolio.json")
 
 # ---- realism model (matches the live copybot) -------------------------------
 # Taker fee (Polymarket V2, since 2026-03-30): fee = shares·rate·p·(1−p); for a
@@ -131,6 +138,8 @@ def conviction_bets():
         for b in bets:
             if b["size"] < thr:
                 continue
+            if b["p"] > MAX_ENTRY:
+                continue
             if (b["res_t"] or 0) > now:
                 # unresolved market (early-sold position): won is a curPrice mark,
                 # not an outcome — and a future res_t would never free its stake
@@ -161,6 +170,8 @@ def open_bets():
             if cp <= 0.001 or cp >= 0.999:                 # resolved -> belongs to history, not open
                 continue
             if (p.get("initialValue") or 0) < thr:
+                continue
+            if (p.get("avgPrice", 0) or 0) > MAX_ENTRY:
                 continue
             out.append({"wallet": w["wallet"], "name": w["name"], "cond": p.get("conditionId"),
                         "entry_t": ent.get(p.get("conditionId"), 0),
@@ -288,6 +299,7 @@ def main():
         "bank": BANK, "stake": round(cur_stake(), 2),   # the NEXT bet's size
         "stake_pct": PCT, "event_cap": EVENT_CAP, "hwm": round(hwm, 2),
         "dd_threshold": DD_THRESHOLD, "capped_count": capped,
+        "max_entry": MAX_ENTRY,
         "fee_rate": FEE_RATE, "slip": SLIP, "lag_est_s": LAG_EST_S,
         "fees_paid": round(fees_paid, 2),
         "equity": round(equity, 2), "liquid": round(cash, 2), "invested": round(invested, 2),
@@ -311,7 +323,8 @@ def main():
                    for m in missed[:60]],
         "missed_pnl": round(sum(hypo_pnl(m) for m in missed), 2),
     }
-    json.dump(out, open(os.path.join(HERE, "portfolio.json"), "w"), separators=(",", ":"))
+    json.dump(out, open(os.path.join(HERE, OUT) if not os.path.isabs(OUT) else OUT, "w"),
+              separators=(",", ":"))
     save_slug_cache()
     print(f"portfolio: equity ${equity:,.0f} ({(equity-BANK)/BANK*100:+.0f}%) | realized ${realized:+,.0f} "
           f"| fees ${fees_paid:,.0f} | next stake ${cur_stake():,.0f} | {len(resolved)} resolved "
