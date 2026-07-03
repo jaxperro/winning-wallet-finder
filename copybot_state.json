@@ -1782,9 +1782,9 @@
       "settled": 1783048513
     }
   },
-  "feed_sig": "039a4619e46287904585dd83d0f3bb01",
-  "feed_pushed_at": 1783048148.770481,
-  "hwm": 949.31,
+  "feed_sig": "b0c7c7da9b6c61dd4f612c0035c2cfd2",
+  "feed_pushed_at": 1783055796.7438955,
+  "hwm": 1045.19,
   "missed": [
     {
       "ts": 1783016464,
@@ -1886,9 +1886,9 @@
       "price": 0.44,
       "stake": 32.79,
       "reason": "price moved 0.50\u21920.44",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 41.18,
+      "settled": 1783055918,
       "name": "shisan888"
     }
   ]
