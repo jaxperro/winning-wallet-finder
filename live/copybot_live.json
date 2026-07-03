@@ -100,6 +100,21 @@
  ],
  "missed": [
   {
+   "ts": 1783102382,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "108194626919080638991317492040306072405978057110136102909960978501357758692210",
+   "cond": "0x935c8fba11c3dfb6cc26c2f35bb3e866a1b6244053180572a9f57e3e318c5e0b",
+   "title": "Exact Score: Australia 1 - 0 Egypt?",
+   "outcome": "No",
+   "price": 0.99,
+   "stake": 41.81,
+   "reason": "price moved 0.93\u21920.99",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783048210,
    "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
    "token": "34773394523546203168086922785194305208626479389516403275394517159985245887360",
@@ -206,5 +221,5 @@
   }
  ],
  "missed_pnl": 22.82,
- "updated": 1783055919
+ "updated": 1783102382
 }
