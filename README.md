@@ -143,18 +143,24 @@ backtest and bot share:
   resolution is free. Fee-adjusted Copy P&L also drives *selection*.
 - **Lag + slippage**: the bot fills at the live CLOB ask at detection (~60s poll),
   logging per-fill `detect_lag_s` and `slippage_pct`; the backtest applies a
-  +0.5%/~90s haircut. Measured so far: 64s / +1.9% on the first live-sports fill.
+  +0.5%/~90s haircut. Measured so far: ~48s avg / +0.8% avg slip.
 - **Dynamic sizing**: each bet stakes **4% of current equity** (compounds both
   ways), halved while equity is below 80% of its high-water mark. No per-trade
   cap. A per-event correlation cap exists (`risk.max_per_event`) but is **off** —
   every conviction trade is followed.
+- **Entry cap 0.95**: entries above 95¢ are skipped (`follow.max_entry`) — the
+  June sweep showed >95¢ favorites *lower* final equity even while winning
+  (slip + fee eat the 1–3% payouts; the capital compounds better elsewhere).
+- **Asymmetric price guard**: a price *below* the sharp's fill is never blocked
+  (better odds, by rule); only adverse drift >5% is skipped.
 - **Conviction filter**: only copy a wallet's top-20%-by-stake bets (per-wallet
   p80 floor, kept in sync with the dashboard by `sync_floors.py`).
 - **Missed-bet ledger**: every bet the bot *couldn't* take (cash deployed, price
-  guard) is recorded and settled hypothetically — capacity costs are measured,
+  ran up) is recorded and settled hypothetically — capacity costs are measured,
   not invisible.
-- **Settlement**: winners settle at authoritative CLOB winner flags; live mode
-  auto-redeems on-chain (`redeem.py`; neg-risk markets need manual redeem).
+- **Settlement**: winners settle at authoritative CLOB winner flags (see the
+  gotcha below — it caused the project's worst bug); live mode auto-redeems
+  on-chain (`redeem.py`; neg-risk markets need manual redeem).
 
 Safety: paper is the default; live requires `mode:"live"` **and** `--live`
 **and** a typed confirmation phrase, under hard caps. The GH-Actions cron
@@ -171,6 +177,30 @@ runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
 | `gamma-api.polymarket.com` | market metadata (NB: `condition_ids` filter returns nothing for resolved markets) |
 | `clob.polymarket.com` | order books, prices, **authoritative resolution** (`winner` flags), market slugs |
 | Alchemy (Polygon) | funding-cluster traces + the live trade webhook |
+
+## Gotchas a maintainer must know
+
+1. **CLOB `winner` flags: `false` means "not yet", not "lost".** Every token of
+   an *unresolved* market reports `winner: false`; resolution flips exactly one
+   to `true`. Any settle/replay logic must gate on `any(winner is True)` first.
+   Treating `false` as lost made the bot settle live in-play positions as
+   instant losses (four winning bets booked −$180 on 2026-07-02). Slow pollers
+   never see this — markets genuinely resolve between checks — which is why it
+   survived June.
+2. **`eventSlug` sub-splits one game** (`…-2026-07-01-more-markets`,
+   `…-second-half-result`): group by the `…-YYYY-MM-DD` prefix
+   (`event_key()` in `copytrade.py` / `portfolio.py`) for anything per-event.
+3. **Win rate over-counts scalpers and is survivorship-biased** — never select
+   on it; the fee-adjusted Copy P&L replay is the selection metric.
+4. **`/closed-positions` sorts by `realizedPnl` by default** — always pass
+   `sortBy=TIMESTAMP` or you sample only the biggest wins.
+5. **`cache.duckdb` is single-writer** — a running `collect.py` blocks even
+   read-only connections; the daily pipeline serializes for this reason (and
+   caps stale refreshes at `STALE_CAP=2500`/run so it stays daily).
+6. **GitHub Actions `*/5` cron actually fires ~every 1.5–2.5h** — never use it
+   for anything latency-sensitive (it copied 1 of ~104 trades in June).
+7. **GitHub Pages soft-limits ~10 deploys/hour** on the `jaxperro` repo —
+   batch dashboard pushes (see that repo's README).
 
 ---
 
