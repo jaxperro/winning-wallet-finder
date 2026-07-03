@@ -7,6 +7,7 @@
  "hwm": 1045.19,
  "cash": 1045.19,
  "deployed": 0,
+ "reserve": 0.0,
  "realized": 45.19,
  "open_count": 0,
  "fees_paid": 0.79,
@@ -205,5 +206,5 @@
   }
  ],
  "missed_pnl": -18.36,
- "updated": 1783053717
+ "updated": 1783054199
 }
