@@ -5,17 +5,17 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1045.19,
- "cash": 1003.28,
- "deployed": 41.81,
+ "cash": 954.93,
+ "deployed": 90.05,
  "reserve": 0.0,
- "realized": 45.09,
+ "realized": 44.97,
  "open_count": 1,
- "fees_paid": 0.89,
+ "fees_paid": 1.0,
  "fee_rate": 0.03,
  "lag": {
-  "n": 6,
-  "avg_s": 43.9,
-  "avg_slip_pct": 0.0046
+  "n": 7,
+  "avg_s": 43.7,
+  "avg_slip_pct": 0.0039
  },
  "wallets": [
   "Kruto2027",
@@ -32,11 +32,11 @@
    "outcome": "Argentina",
    "title": "Argentina vs. Cabo Verde: Team to Advance",
    "their_price": 0.93,
-   "my_price": 0.92,
+   "my_price": 0.9201,
    "slippage_pct": -0.0108,
-   "shares": 45.44,
-   "cost": 41.81,
-   "fee": 0.1003,
+   "shares": 97.87,
+   "cost": 90.05,
+   "fee": 0.2161,
    "opened": 1783116374,
    "status": "open",
    "exit_price": null,
@@ -239,5 +239,5 @@
   }
  ],
  "missed_pnl": 23.23,
- "updated": 1783116399
+ "updated": 1783116893
 }
