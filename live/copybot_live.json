@@ -1,20 +1,20 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 34.16,
+ "stake": 32.79,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 949.31,
- "cash": 853.98,
+ "cash": 819.79,
  "deployed": 0,
- "realized": -146.02,
+ "realized": -180.21,
  "open_count": 0,
- "fees_paid": 0.76,
+ "fees_paid": 0.79,
  "fee_rate": 0.03,
  "lag": {
-  "n": 4,
-  "avg_s": 53.1,
-  "avg_slip_pct": 0.0041
+  "n": 5,
+  "avg_s": 47.8,
+  "avg_slip_pct": 0.0077
  },
  "wallets": [
   "Kruto2027",
@@ -23,6 +23,24 @@
   "LSB1"
  ],
  "bets": [
+  {
+   "token": "94170053339927453082717035943543731636274553439076639716988060790503681603673",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "No",
+   "title": "Exact Score: Portugal 1 - 2 Croatia?",
+   "their_price": 0.95,
+   "my_price": 0.971,
+   "slippage_pct": 0.0221,
+   "shares": 35.18,
+   "cost": 34.16,
+   "fee": 0.0297,
+   "opened": 1783040003,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -34.19,
+   "settled": 1783040090
+  },
   {
    "token": "12184589112253099646841219091162361978388293103010365931849641794603228859112",
    "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
@@ -79,6 +97,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1783040029,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "96643263432737853157726688119000113167683651790181487355799348751297612322494",
+   "cond": "0x37411bf1fc25e65460dba305b3b6d9679ddf4f8ee26e8c1b06f773ae7c266a5d",
+   "title": "Exact Score: Portugal 1 - 1 Croatia?",
+   "outcome": "No",
+   "price": 0.98,
+   "stake": 34.16,
+   "reason": "price moved 0.85\u21920.98",
+   "status": "lost",
+   "pnl": -34.18,
+   "settled": 1783040090,
+   "name": "LSB1"
+  },
   {
    "ts": 1783039208,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -140,6 +173,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -148.8,
- "updated": 1783039967
+ "missed_pnl": -182.98,
+ "updated": 1783040090
 }
