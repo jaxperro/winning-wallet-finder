@@ -98,6 +98,21 @@
  ],
  "missed": [
   {
+   "ts": 1783048210,
+   "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
+   "token": "34773394523546203168086922785194305208626479389516403275394517159985245887360",
+   "cond": "0x11f6e95984b9ddd454c87f73f6d581503b81140b721d6f9ecb862948be0be0a6",
+   "title": "Switzerland vs. Algeria: O/U 8.5 Total Corners",
+   "outcome": "Under",
+   "price": 0.44,
+   "stake": 32.79,
+   "reason": "price moved 0.50\u21920.44",
+   "status": "lost",
+   "pnl": -33.34,
+   "settled": 1783048270,
+   "name": "shisan888"
+  },
+  {
    "ts": 1783040639,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "25757239550537655544074800839875830707518070627888366211833592882711594915228",
@@ -188,6 +203,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -215.83,
- "updated": 1783040701
+ "missed_pnl": -249.17,
+ "updated": 1783048272
 }
