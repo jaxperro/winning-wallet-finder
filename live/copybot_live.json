@@ -1,15 +1,15 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 41.8,
+ "stake": 42.11,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 1045.19,
- "cash": 954.93,
- "deployed": 90.05,
+ "hwm": 1052.8,
+ "cash": 1052.8,
+ "deployed": 0,
  "reserve": 0.0,
- "realized": 44.97,
- "open_count": 1,
+ "realized": 52.8,
+ "open_count": 0,
  "fees_paid": 1.0,
  "fee_rate": 0.03,
  "lag": {
@@ -38,10 +38,10 @@
    "cost": 90.05,
    "fee": 0.2161,
    "opened": 1783116374,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 7.61,
+   "settled": 1783127282
   },
   {
    "token": "49050515224512144893403630474493192388276540052107403943769923572957881420203",
@@ -127,9 +127,9 @@
    "price": 0.46,
    "stake": 41.8,
    "reason": "price moved 0.36\u21920.46",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "lost",
+   "pnl": -42.48,
+   "settled": 1783127222,
    "name": "LSB1"
   },
   {
@@ -253,6 +253,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": 23.23,
- "updated": 1783127220
+ "missed_pnl": -19.25,
+ "updated": 1783127284
 }
