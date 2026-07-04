@@ -267,20 +267,31 @@ class CopyTrader:
     DD_THRESHOLD = 0.80      # below 80% of the high-water mark…
     DD_FACTOR = 0.5          # …bet half size until equity recovers
 
-    def stake_usd(self):
+    def stake_mult(self, wallet=None):
+        """Per-wallet stake multiplier from follow.stake_mult ({address: mult}) —
+        lets high-conviction wallets bet a larger equity fraction (e.g. 3.0 turns
+        a 4% book into 12% for that wallet). Defaults to 1."""
+        mults = (self.cfg.get("follow") or {}).get("stake_mult") or {}
+        return float(mults.get((wallet or "").lower(), 1.0))
+
+    def stake_usd(self, wallet=None):
         """Next bet size = bankroll_pct × current WORKING equity (cash + open cost
         basis), so stakes compound with the book in both directions; halved while
         in a >20% drawdown from the high-water mark. Falls back to the flat static
-        stake when cash isn't tracked (legacy poll CLI).
+        stake when cash isn't tracked (legacy poll CLI). A per-wallet
+        follow.stake_mult scales the fraction for that wallet's signals (the
+        sweep threshold below stays on the BASE fraction so which wallet happens
+        to trade doesn't change when profits get banked).
 
         stake_cap_usd (profit ratchet): once working equity exceeds
         cap/bankroll_pct — the level where stakes hit the cap — the surplus CASH
         is swept into state["reserve"]: banked, never bet, immune to drawdowns.
         Stakes stay pinned ~at the cap, where marketable fills are still inside
         typical book depth."""
+        mult = self.stake_mult(wallet)
         cash = self.state.get("cash")
         if cash is None:
-            return self.cfg["bankroll_usd"] * self.cfg["bankroll_pct"]
+            return self.cfg["bankroll_usd"] * self.cfg["bankroll_pct"] * mult
         frac = self.cfg["bankroll_pct"]
         cap = self.cfg.get("stake_cap_usd") or 0
         eq = cash + self.open_exposure()
@@ -294,7 +305,7 @@ class CopyTrader:
         self.state["hwm"] = hwm
         if eq < self.DD_THRESHOLD * hwm:
             frac *= self.DD_FACTOR
-        stake = frac * eq
+        stake = frac * eq * mult
         return min(stake, cap) if cap else stake
 
     def record_miss(self, wallet, token, cond, title, outcome, price, want, reason):
@@ -412,7 +423,7 @@ class CopyTrader:
                 self.log(f"BUY  {label} — skip (already {held} positions on this "
                          f"event, cap {cap})")
                 self.record_miss(wallet, token, cond, title, outcome, their_price,
-                                 self.stake_usd(), f"event cap ({held} held)")
+                                 self.stake_usd(wallet), f"event cap ({held} held)")
                 return
 
         price = self._live_price(token, "buy")
@@ -422,7 +433,7 @@ class CopyTrader:
             self.log(f"BUY  {label} — skip (price {price:.3f} vs their "
                      f"{their_price:.3f}, >{self.cfg['price_guard_pct']:.0%})")
             self.record_miss(wallet, token, cond, title, outcome, price,
-                             self.stake_usd(),
+                             self.stake_usd(wallet),
                              f"price moved {their_price:.2f}→{price:.2f}")
             return
 
@@ -436,7 +447,7 @@ class CopyTrader:
             their_prev = self.state["their_pos"].get(wallet, {}).get(token, 0)
             frac = their_size / their_prev if their_prev > 0 else 0
             want_shares = mine["shares"] * frac
-            room = self.stake_usd() - mine["cost"]
+            room = self.stake_usd(wallet) - mine["cost"]
             if room < self.risk["min_order_usd"]:
                 self.log(f"ADD  {label} — skip (position ${mine['cost']:.0f} already "
                          f"at the stake size)")
@@ -444,7 +455,7 @@ class CopyTrader:
             want_usd = min(want_shares * price, room)
             kind = "ADD "
         else:
-            want_usd = self.stake_usd()      # fraction of current equity (compounds)
+            want_usd = self.stake_usd(wallet)  # fraction of current equity (compounds)
             kind = "OPEN"
 
         pos_cost = mine["cost"] if is_add else 0.0

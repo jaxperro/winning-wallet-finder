@@ -61,7 +61,11 @@
       "0xfc81760d44a21acc9fd4b749a5bf9a9b2eeae072": 55.63
     },
     "min_entry": 0.0,
-    "max_entry": 0.95
+    "max_entry": 0.95,
+    "stake_mult": {
+      "0xf5fe759cece500f58a431ef8dacea321f6e3e23d": 3.0,
+      "0x73afc8160c17830c0c7281a7bf570c871455b880": 3.0
+    }
   },
   "risk": {
     "max_trade_usd": 1000000.0,
