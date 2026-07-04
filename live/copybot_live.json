@@ -118,6 +118,21 @@
  ],
  "missed": [
   {
+   "ts": 1783124279,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "110634710495919008162344319806653962838927025655326729643366261455929381225666",
+   "cond": "0xaf282982da4ccdb8b9dcd1e2e75e205032409828ec826203a3ff4f64c764a314",
+   "title": "Argentina vs. Cabo Verde: Will the Match Go to a Penalty Shootout?",
+   "outcome": "Yes",
+   "price": 0.46,
+   "stake": 41.8,
+   "reason": "price moved 0.36\u21920.46",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783102382,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "108194626919080638991317492040306072405978057110136102909960978501357758692210",
@@ -239,5 +254,5 @@
   }
  ],
  "missed_pnl": 23.23,
- "updated": 1783116893
+ "updated": 1783124280
 }
