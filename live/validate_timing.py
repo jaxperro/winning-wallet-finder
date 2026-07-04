@@ -210,6 +210,9 @@ MIN_HELD_WR = 0.55    # they must WIN a clear majority — excludes longshot-var
 MIN_LEAD_H = 1.0      # light sniper guard: drop wallets whose median winning lead < 1h
 TRUST_DAYS = 90       # trailing window for the trusted conviction record (long enough
                       # that week-lead holders have real resolved sample in it)
+MIN_CONV_30D = 50     # activity floor: a sharp must have >= this many trusted
+                      # conviction bets resolved in the last 30 days — the list is
+                      # for wallets a copier gets real flow from, not dormant edges
 
 
 def main():
@@ -253,6 +256,9 @@ def main():
         tr = trust.conviction_record(cache.query, c["wallet"], days=TRUST_DAYS,
                                      pctile=cache.CONV_PCTILE)
         c["trust_n"], c["trust_wr"], c["trust_roi"] = tr["n"], round(tr["wr"], 3), round(tr["roi"], 3)
+        tr30 = trust.conviction_record(cache.query, c["wallet"], days=30,
+                                       pctile=cache.CONV_PCTILE)
+        c["trust30_n"] = tr30["n"]
         # SELECT a copyable sharp: active, copy-positive (fee-aware replay), and a
         # genuine hold-to-resolution edge — trailing trusted conviction record wins a
         # clear majority with positive flat-stake ROI on a real sample, so the edge
@@ -260,13 +266,14 @@ def main():
         # light lead floor drops true sub-hour snipers.
         if ((ds["last_trade"] or 0) >= cut30 and ds["copy_pnl"] > 0
                 and tr["n"] >= MIN_HELD and tr["wr"] >= MIN_HELD_WR and tr["roi"] > 0
+                and tr30["n"] >= MIN_CONV_30D
                 and (c["med_lead_h"] is None or c["med_lead_h"] >= MIN_LEAD_H)):
             sharps.append(c)
 
     sharps.sort(key=lambda c: c["copy_pnl"], reverse=True)
     print(f"copy-positive holders (copy>0, trust_n>={MIN_HELD}, trust_wr>={MIN_HELD_WR:.0%}, "
-          f"trust_roi>0 over {TRUST_DAYS}d, active, lead>={MIN_LEAD_H}h): "
-          f"{len(sharps)} of {len(conv)}\n")
+          f"trust_roi>0 over {TRUST_DAYS}d, >={MIN_CONV_30D} conv bets/30d, active, "
+          f"lead>={MIN_LEAD_H}h): {len(sharps)} of {len(conv)}\n")
     h = (f"{'copyP&L':>8}{'trustRec':>10}{'trustROI':>9}{'heldP&L':>8}{'held':>9}"
          f"{'sold%':>6}{'medLeadH':>9}  wallet")
     print(h); print("-" * len(h))
