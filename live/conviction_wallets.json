@@ -128,7 +128,7 @@
     "avg_entry": 0.5,
     "train_n": 14,
     "fwd_win": 71.4,
-    "fwd_conv_roi": 0.492,
+    "fwd_conv_roi": 0.374,
     "fwd_n": 14
   },
   {
@@ -216,18 +216,6 @@
     "fwd_n": 23
   },
   {
-    "wallet": "0x916111713050c71c4e073ed5f1a2888c2980533b",
-    "name": "0x91611171",
-    "train_win": 68.0,
-    "train_conv_roi": 0.676,
-    "train_z": 6.49,
-    "avg_entry": 0.41,
-    "train_n": 128,
-    "fwd_win": null,
-    "fwd_conv_roi": null,
-    "fwd_n": 0
-  },
-  {
     "wallet": "0x0a548e78f65c6e2fc91514aa812f8062575c7c49",
     "name": "0x0a548e78",
     "train_win": 81.2,
@@ -235,21 +223,33 @@
     "train_z": 2.54,
     "avg_entry": 0.5,
     "train_n": 16,
-    "fwd_win": 52.9,
-    "fwd_conv_roi": 0.347,
-    "fwd_n": 17
+    "fwd_win": 45.8,
+    "fwd_conv_roi": 0.158,
+    "fwd_n": 24
   },
   {
     "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
     "name": "0xe8ca3f75",
-    "train_win": 72.0,
-    "train_conv_roi": 0.67,
-    "train_z": 8.37,
+    "train_win": 72.2,
+    "train_conv_roi": 0.672,
+    "train_z": 8.43,
     "avg_entry": 0.47,
-    "train_n": 236,
+    "train_n": 237,
     "fwd_win": 76.9,
     "fwd_conv_roi": 0.498,
     "fwd_n": 52
+  },
+  {
+    "wallet": "0x916111713050c71c4e073ed5f1a2888c2980533b",
+    "name": "0x91611171",
+    "train_win": 67.7,
+    "train_conv_roi": 0.67,
+    "train_z": 6.4,
+    "avg_entry": 0.41,
+    "train_n": 127,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 0
   },
   {
     "wallet": "0xeb0bbebedf1b5e2c8e74e0f7ed6c04e60056564d",
@@ -360,18 +360,6 @@
     "fwd_n": 0
   },
   {
-    "wallet": "0x3110105f252bae77622bec93a851010d9cecc3f5",
-    "name": "0x3110105f",
-    "train_win": 89.8,
-    "train_conv_roi": 0.563,
-    "train_z": 8.49,
-    "avg_entry": 0.58,
-    "train_n": 166,
-    "fwd_win": null,
-    "fwd_conv_roi": null,
-    "fwd_n": 1
-  },
-  {
     "wallet": "0x492348d86535260e892c8a55acbb7e485024f33c",
     "name": "0x492348d8",
     "train_win": 80.0,
@@ -410,23 +398,35 @@
   {
     "wallet": "0x945bccea4eeb353bf459e95c7c98ad8f3557e533",
     "name": "0x945bccea",
-    "train_win": 65.8,
-    "train_conv_roi": 0.545,
-    "train_z": 8.78,
+    "train_win": 65.7,
+    "train_conv_roi": 0.543,
+    "train_z": 8.73,
     "avg_entry": 0.42,
-    "train_n": 330,
+    "train_n": 329,
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
   },
   {
+    "wallet": "0x3110105f252bae77622bec93a851010d9cecc3f5",
+    "name": "0x3110105f",
+    "train_win": 89.0,
+    "train_conv_roi": 0.535,
+    "train_z": 7.92,
+    "avg_entry": 0.58,
+    "train_n": 155,
+    "fwd_win": 87.5,
+    "fwd_conv_roi": 0.528,
+    "fwd_n": 8
+  },
+  {
     "wallet": "0x4a9a12ab62660a22b84cb36d1610f4d09abb8297",
     "name": "0x4a9a12ab",
-    "train_win": 66.4,
-    "train_conv_roi": 0.529,
-    "train_z": 8.62,
+    "train_win": 66.3,
+    "train_conv_roi": 0.525,
+    "train_z": 8.56,
     "avg_entry": 0.43,
-    "train_n": 330,
+    "train_n": 329,
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
@@ -492,6 +492,18 @@
     "fwd_n": 0
   },
   {
+    "wallet": "0x76870101390eba1d7788354ab88ce8c066c102be",
+    "name": "0x76870101",
+    "train_win": 90.1,
+    "train_conv_roi": 0.499,
+    "train_z": 9.04,
+    "avg_entry": 0.62,
+    "train_n": 222,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 0
+  },
+  {
     "wallet": "0xfcc7c3f7e5ccd2952844bb0e77855dbccba6fdb7",
     "name": "0xfcc7c3f7",
     "train_win": 88.1,
@@ -535,6 +547,30 @@
     "train_z": 3.51,
     "avg_entry": 0.51,
     "train_n": 49,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 0
+  },
+  {
+    "wallet": "0xca91b552fcb9a4b69cede9c2ab567a14fc4c85e9",
+    "name": "0xca91b552",
+    "train_win": 86.3,
+    "train_conv_roi": 0.48,
+    "train_z": 8.54,
+    "avg_entry": 0.6,
+    "train_n": 233,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 0
+  },
+  {
+    "wallet": "0xe1a607ef9d2bf9db6a8ebc99c612743827c8391d",
+    "name": "0xe1a607ef",
+    "train_win": 94.7,
+    "train_conv_roi": 0.477,
+    "train_z": 2.61,
+    "avg_entry": 0.69,
+    "train_n": 19,
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
@@ -684,6 +720,18 @@
     "fwd_n": 0
   },
   {
+    "wallet": "0xebcdfc48f1706af36accbde93687563d908e108c",
+    "name": "0xebcdfc48",
+    "train_win": 87.0,
+    "train_conv_roi": 0.446,
+    "train_z": 8.35,
+    "avg_entry": 0.61,
+    "train_n": 230,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 0
+  },
+  {
     "wallet": "0x33ed0bdab69431cc7268d51eaa90871704f4ab8c",
     "name": "0x33ed0bda",
     "train_win": 88.2,
@@ -763,9 +811,9 @@
     "train_z": 10.82,
     "avg_entry": 0.59,
     "train_n": 445,
-    "fwd_win": 50.0,
-    "fwd_conv_roi": -0.001,
-    "fwd_n": 20
+    "fwd_win": 47.6,
+    "fwd_conv_roi": -0.049,
+    "fwd_n": 21
   },
   {
     "wallet": "0x9e00f6a0e927146bac5f2cb6c29a32d8dcb9be98",
@@ -775,9 +823,9 @@
     "train_z": 6.17,
     "avg_entry": 0.49,
     "train_n": 190,
-    "fwd_win": 66.0,
-    "fwd_conv_roi": 0.296,
-    "fwd_n": 47
+    "fwd_win": 64.2,
+    "fwd_conv_roi": 0.266,
+    "fwd_n": 53
   },
   {
     "wallet": "0x5f75bed319848ca1b00ffd5e350ee71dc83bc3c4",
@@ -852,16 +900,16 @@
     "fwd_n": 94
   },
   {
-    "wallet": "0x963f832996f2ab1352e846ba5209a6f8a91dddd1",
-    "name": "0x963f8329",
-    "train_win": 72.3,
-    "train_conv_roi": 0.387,
-    "train_z": 2.89,
-    "avg_entry": 0.52,
-    "train_n": 47,
-    "fwd_win": 57.1,
-    "fwd_conv_roi": 0.146,
-    "fwd_n": 7
+    "wallet": "0x261e15ca28e49e8ec6b72ab9fc2363076d728ce2",
+    "name": "0x261e15ca",
+    "train_win": 76.4,
+    "train_conv_roi": 0.389,
+    "train_z": 5.34,
+    "avg_entry": 0.56,
+    "train_n": 144,
+    "fwd_win": 75.0,
+    "fwd_conv_roi": 0.101,
+    "fwd_n": 4
   },
   {
     "wallet": "0xf24b49d501bf5da75bf02e2344602a14f1a59f7b",
@@ -960,6 +1008,18 @@
     "fwd_n": 3
   },
   {
+    "wallet": "0x963f832996f2ab1352e846ba5209a6f8a91dddd1",
+    "name": "0x963f8329",
+    "train_win": 70.5,
+    "train_conv_roi": 0.348,
+    "train_z": 2.54,
+    "avg_entry": 0.52,
+    "train_n": 44,
+    "fwd_win": 58.3,
+    "fwd_conv_roi": 0.105,
+    "fwd_n": 12
+  },
+  {
     "wallet": "0x5fc35c1678a88322500ceb659dfbdd7cb9a2d179",
     "name": "0x5fc35c16",
     "train_win": 76.1,
@@ -982,6 +1042,18 @@
     "fwd_win": 78.0,
     "fwd_conv_roi": -0.045,
     "fwd_n": 59
+  },
+  {
+    "wallet": "0xb0ac765461248e208b422519103d179e9befdc0d",
+    "name": "0xb0ac7654",
+    "train_win": 70.8,
+    "train_conv_roi": 0.343,
+    "train_z": 5.08,
+    "avg_entry": 0.53,
+    "train_n": 202,
+    "fwd_win": 67.4,
+    "fwd_conv_roi": 0.315,
+    "fwd_n": 43
   },
   {
     "wallet": "0xd753cdeac45f4a2aad9b9a54cbb409a79fda9570",
@@ -1051,9 +1123,9 @@
     "train_z": 2.97,
     "avg_entry": 0.57,
     "train_n": 54,
-    "fwd_win": 71.3,
-    "fwd_conv_roi": 0.287,
-    "fwd_n": 143
+    "fwd_win": 70.7,
+    "fwd_conv_roi": 0.272,
+    "fwd_n": 150
   },
   {
     "wallet": "0xed381c6042ac8edf649ba4562ffd0ce771f607b7",
@@ -1066,6 +1138,18 @@
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
+  },
+  {
+    "wallet": "0x0bd753cbeb82b4dc735fdd84955f99fbaf258553",
+    "name": "0x0bd753cb",
+    "train_win": 71.0,
+    "train_conv_roi": 0.328,
+    "train_z": 2.77,
+    "avg_entry": 0.54,
+    "train_n": 62,
+    "fwd_win": 58.1,
+    "fwd_conv_roi": 0.013,
+    "fwd_n": 31
   },
   {
     "wallet": "0x894bee76a5b9b0cda64aa5acd11fd8528c4793cc",
@@ -1147,9 +1231,9 @@
     "train_z": 4.78,
     "avg_entry": 0.59,
     "train_n": 155,
-    "fwd_win": 75.8,
-    "fwd_conv_roi": 0.283,
-    "fwd_n": 66
+    "fwd_win": 76.5,
+    "fwd_conv_roi": 0.281,
+    "fwd_n": 68
   },
   {
     "wallet": "0xabc4b581c351c2175fe2451bd920f11531329307",
@@ -1162,18 +1246,6 @@
     "fwd_win": 81.8,
     "fwd_conv_roi": 0.311,
     "fwd_n": 33
-  },
-  {
-    "wallet": "0x8656883a02915fb9b8a9baebe31aba8e7dd549e0",
-    "name": "0x8656883a",
-    "train_win": 89.8,
-    "train_conv_roi": 0.305,
-    "train_z": 3.21,
-    "avg_entry": 0.69,
-    "train_n": 49,
-    "fwd_win": 82.8,
-    "fwd_conv_roi": 0.198,
-    "fwd_n": 186
   },
   {
     "wallet": "0x184ecab79897f557acc21ef753b5e08fa61dd53d",
@@ -1210,30 +1282,6 @@
     "fwd_win": 63.6,
     "fwd_conv_roi": 0.259,
     "fwd_n": 11
-  },
-  {
-    "wallet": "0xb0ac765461248e208b422519103d179e9befdc0d",
-    "name": "0xb0ac7654",
-    "train_win": 68.3,
-    "train_conv_roi": 0.294,
-    "train_z": 4.1,
-    "avg_entry": 0.53,
-    "train_n": 180,
-    "fwd_win": 62.2,
-    "fwd_conv_roi": 0.211,
-    "fwd_n": 37
-  },
-  {
-    "wallet": "0x261e15ca28e49e8ec6b72ab9fc2363076d728ce2",
-    "name": "0x261e15ca",
-    "train_win": 72.0,
-    "train_conv_roi": 0.29,
-    "train_z": 3.59,
-    "avg_entry": 0.56,
-    "train_n": 107,
-    "fwd_win": null,
-    "fwd_conv_roi": null,
-    "fwd_n": 2
   },
   {
     "wallet": "0x5999b1da0105d7c650e5495aa1a958217a195fc1",
@@ -1399,9 +1447,9 @@
     "train_z": 2.79,
     "avg_entry": 0.64,
     "train_n": 72,
-    "fwd_win": 79.0,
-    "fwd_conv_roi": 0.152,
-    "fwd_n": 200
+    "fwd_win": 79.3,
+    "fwd_conv_roi": 0.154,
+    "fwd_n": 203
   },
   {
     "wallet": "0x1872c8b22cc8aad2bb2908c3c1b5bf9b198cbcab",
@@ -1476,30 +1524,6 @@
     "fwd_n": 0
   },
   {
-    "wallet": "0x4df332e27f9ee3224f52ce30e3ce15c1075e788f",
-    "name": "0x4df332e2",
-    "train_win": 66.2,
-    "train_conv_roi": 0.244,
-    "train_z": 3.67,
-    "avg_entry": 0.54,
-    "train_n": 222,
-    "fwd_win": 78.3,
-    "fwd_conv_roi": 0.347,
-    "fwd_n": 60
-  },
-  {
-    "wallet": "0x8841127524372dd598b7fcc3ae128b51c5b3907c",
-    "name": "0x88411275",
-    "train_win": 84.3,
-    "train_conv_roi": 0.242,
-    "train_z": 3.19,
-    "avg_entry": 0.72,
-    "train_n": 108,
-    "fwd_win": null,
-    "fwd_conv_roi": null,
-    "fwd_n": 0
-  },
-  {
     "wallet": "0xf5332edb5fb379ac7fd52f2601bad6a62c0e5cad",
     "name": "0xf5332edb",
     "train_win": 73.9,
@@ -1531,9 +1555,9 @@
     "train_z": 2.99,
     "avg_entry": 0.57,
     "train_n": 83,
-    "fwd_win": null,
-    "fwd_conv_roi": null,
-    "fwd_n": 0
+    "fwd_win": 75.0,
+    "fwd_conv_roi": 0.131,
+    "fwd_n": 4
   },
   {
     "wallet": "0x30d05e6f3adea1a242432516060c098524f2ee0b",
@@ -1558,6 +1582,30 @@
     "fwd_win": 53.7,
     "fwd_conv_roi": 0.178,
     "fwd_n": 134
+  },
+  {
+    "wallet": "0x8c20fde025029a02c7012150e20dec9eb92942f7",
+    "name": "0x8c20fde0",
+    "train_win": 65.0,
+    "train_conv_roi": 0.232,
+    "train_z": 3.1,
+    "avg_entry": 0.51,
+    "train_n": 123,
+    "fwd_win": 60.5,
+    "fwd_conv_roi": 0.097,
+    "fwd_n": 114
+  },
+  {
+    "wallet": "0x8841127524372dd598b7fcc3ae128b51c5b3907c",
+    "name": "0x88411275",
+    "train_win": 84.0,
+    "train_conv_roi": 0.23,
+    "train_z": 3.0,
+    "avg_entry": 0.73,
+    "train_n": 106,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 0
   },
   {
     "wallet": "0x93164f2f061f931cd4d549834d657bb342ffc00c",
@@ -1800,6 +1848,30 @@
     "fwd_n": 0
   },
   {
+    "wallet": "0x1fb7053bb490c6ec05a78fe2ed383af48526fb66",
+    "name": "0x1fb7053b",
+    "train_win": 72.6,
+    "train_conv_roi": 0.192,
+    "train_z": 3.06,
+    "avg_entry": 0.6,
+    "train_n": 117,
+    "fwd_win": 65.6,
+    "fwd_conv_roi": 0.222,
+    "fwd_n": 32
+  },
+  {
+    "wallet": "0x3eff118d4bc1742903d9516edf2e3c991600ae12",
+    "name": "0x3eff118d",
+    "train_win": 76.6,
+    "train_conv_roi": 0.188,
+    "train_z": 4.19,
+    "avg_entry": 0.68,
+    "train_n": 401,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 0
+  },
+  {
     "wallet": "0xa6b8e799dacdd120681b6cee43d6768844fadc86",
     "name": "0xa6b8e799",
     "train_win": 88.2,
@@ -1944,18 +2016,6 @@
     "fwd_n": 0
   },
   {
-    "wallet": "0x46b2f8a865a3572a435813e747e22cce0e835977",
-    "name": "0x46b2f8a8",
-    "train_win": 71.7,
-    "train_conv_roi": 0.174,
-    "train_z": 6.54,
-    "avg_entry": 0.58,
-    "train_n": 494,
-    "fwd_win": null,
-    "fwd_conv_roi": null,
-    "fwd_n": 0
-  },
-  {
     "wallet": "0xc684828f6b03487759ced2ebdd975f91f3532228",
     "name": "0xc684828f",
     "train_win": 77.2,
@@ -1966,18 +2026,6 @@
     "fwd_win": 64.8,
     "fwd_conv_roi": -0.114,
     "fwd_n": 54
-  },
-  {
-    "wallet": "0x1fb7053bb490c6ec05a78fe2ed383af48526fb66",
-    "name": "0x1fb7053b",
-    "train_win": 71.5,
-    "train_conv_roi": 0.172,
-    "train_z": 2.9,
-    "avg_entry": 0.6,
-    "train_n": 123,
-    "fwd_win": 61.3,
-    "fwd_conv_roi": 0.112,
-    "fwd_n": 31
   },
   {
     "wallet": "0xd212624d423e1c351783fe71bb4250850d34feaf",
@@ -2002,6 +2050,18 @@
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
+  },
+  {
+    "wallet": "0x2654d40407adc71a878e303c4b45714768abb45f",
+    "name": "0x2654d404",
+    "train_win": 77.9,
+    "train_conv_roi": 0.171,
+    "train_z": 4.65,
+    "avg_entry": 0.66,
+    "train_n": 307,
+    "fwd_win": 75.6,
+    "fwd_conv_roi": 0.134,
+    "fwd_n": 410
   },
   {
     "wallet": "0x47d2697427cf06dd94bbb0bad0afad08773b7444",
@@ -2076,6 +2136,18 @@
     "fwd_n": 35
   },
   {
+    "wallet": "0x09b5447d6589fca16c871383c538904da884f006",
+    "name": "0x09b5447d",
+    "train_win": 82.4,
+    "train_conv_roi": 0.164,
+    "train_z": 2.8,
+    "avg_entry": 0.71,
+    "train_n": 119,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 0
+  },
+  {
     "wallet": "0x73a5b01d8a0397eb1f0cde5299e71f76b62b5f91",
     "name": "0x73a5b01d",
     "train_win": 76.8,
@@ -2086,18 +2158,6 @@
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
-  },
-  {
-    "wallet": "0x2654d40407adc71a878e303c4b45714768abb45f",
-    "name": "0x2654d404",
-    "train_win": 76.9,
-    "train_conv_roi": 0.163,
-    "train_z": 4.67,
-    "avg_entry": 0.66,
-    "train_n": 360,
-    "fwd_win": 73.5,
-    "fwd_conv_roi": 0.127,
-    "fwd_n": 264
   },
   {
     "wallet": "0x2d06cb3a44d5e9e7a11d8c5be5a06e88f385e8f7",
@@ -2136,18 +2196,6 @@
     "fwd_n": 171
   },
   {
-    "wallet": "0x09b5447d6589fca16c871383c538904da884f006",
-    "name": "0x09b5447d",
-    "train_win": 81.5,
-    "train_conv_roi": 0.156,
-    "train_z": 2.73,
-    "avg_entry": 0.71,
-    "train_n": 124,
-    "fwd_win": null,
-    "fwd_conv_roi": null,
-    "fwd_n": 0
-  },
-  {
     "wallet": "0x0a3217e01a10968f78518245b72eb9072fd79875",
     "name": "0x0a3217e0",
     "train_win": 73.5,
@@ -2167,6 +2215,30 @@
     "train_z": 5.91,
     "avg_entry": 0.67,
     "train_n": 534,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 0
+  },
+  {
+    "wallet": "0x62a85dae80fcc855969ac916708c429e979e4a14",
+    "name": "0x62a85dae",
+    "train_win": 87.5,
+    "train_conv_roi": 0.155,
+    "train_z": 2.56,
+    "avg_entry": 0.74,
+    "train_n": 64,
+    "fwd_win": 89.1,
+    "fwd_conv_roi": 0.411,
+    "fwd_n": 46
+  },
+  {
+    "wallet": "0x46b2f8a865a3572a435813e747e22cce0e835977",
+    "name": "0x46b2f8a8",
+    "train_win": 71.9,
+    "train_conv_roi": 0.154,
+    "train_z": 5.77,
+    "avg_entry": 0.59,
+    "train_n": 402,
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
@@ -2239,9 +2311,9 @@
     "train_z": 5.6,
     "avg_entry": 0.68,
     "train_n": 414,
-    "fwd_win": 86.2,
-    "fwd_conv_roi": 0.315,
-    "fwd_n": 87
+    "fwd_win": 86.4,
+    "fwd_conv_roi": 0.312,
+    "fwd_n": 88
   },
   {
     "wallet": "0xc2d9576f67db505cf2e74a9c82b8be2b09f81ef4",
@@ -2254,18 +2326,6 @@
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 1
-  },
-  {
-    "wallet": "0xc6bebb909360248d5bf170a1e00ccb0efdeb43c9",
-    "name": "0xc6bebb90",
-    "train_win": 67.5,
-    "train_conv_roi": 0.141,
-    "train_z": 3.34,
-    "avg_entry": 0.61,
-    "train_n": 545,
-    "fwd_win": 48.3,
-    "fwd_conv_roi": 0.203,
-    "fwd_n": 58
   },
   {
     "wallet": "0xe00740bce98a594e26861838885ab310ec3b548c",
@@ -2448,18 +2508,6 @@
     "fwd_n": 0
   },
   {
-    "wallet": "0x36a708485c603a477804ec74122475647629f03b",
-    "name": "0x36a70848",
-    "train_win": 70.4,
-    "train_conv_roi": 0.119,
-    "train_z": 4.36,
-    "avg_entry": 0.6,
-    "train_n": 402,
-    "fwd_win": null,
-    "fwd_conv_roi": null,
-    "fwd_n": 0
-  },
-  {
     "wallet": "0xb0f47416ad54915aea513144d7f3a9429b446fa9",
     "name": "0xb0f47416",
     "train_win": 70.1,
@@ -2482,18 +2530,6 @@
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
-  },
-  {
-    "wallet": "0xd0f884f3fecca09f4a0945620b4befa64f3d73a1",
-    "name": "0xd0f884f3",
-    "train_win": 70.0,
-    "train_conv_roi": 0.113,
-    "train_z": 3.14,
-    "avg_entry": 0.63,
-    "train_n": 393,
-    "fwd_win": 72.7,
-    "fwd_conv_roi": -0.084,
-    "fwd_n": 11
   },
   {
     "wallet": "0xed61f86bb5298d2f27c21c433ce58d80b88a9aa3",
@@ -2532,6 +2568,18 @@
     "fwd_n": 0
   },
   {
+    "wallet": "0xd0f884f3fecca09f4a0945620b4befa64f3d73a1",
+    "name": "0xd0f884f3",
+    "train_win": 69.9,
+    "train_conv_roi": 0.112,
+    "train_z": 3.1,
+    "avg_entry": 0.63,
+    "train_n": 392,
+    "fwd_win": 75.0,
+    "fwd_conv_roi": -0.041,
+    "fwd_n": 12
+  },
+  {
     "wallet": "0xa9aca75fb5d8f04c2ec9eeb0eb0c30d2e526c5d1",
     "name": "0xa9aca75f",
     "train_win": 67.7,
@@ -2554,6 +2602,18 @@
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
+  },
+  {
+    "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
+    "name": "0x86c878cd",
+    "train_win": 77.4,
+    "train_conv_roi": 0.11,
+    "train_z": 2.89,
+    "avg_entry": 0.7,
+    "train_n": 274,
+    "fwd_win": 74.3,
+    "fwd_conv_roi": 0.188,
+    "fwd_n": 109
   },
   {
     "wallet": "0xab417c0bacc9fe17368d5d662c957f54a1fcc453",
@@ -2628,16 +2688,16 @@
     "fwd_n": 113
   },
   {
-    "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
-    "name": "0x86c878cd",
-    "train_win": 77.2,
-    "train_conv_roi": 0.106,
-    "train_z": 2.82,
-    "avg_entry": 0.7,
-    "train_n": 276,
-    "fwd_win": 74.5,
-    "fwd_conv_roi": 0.197,
-    "fwd_n": 106
+    "wallet": "0x46505242a39685d82de798a83da3f4a6fda0f3f0",
+    "name": "0x46505242",
+    "train_win": 72.4,
+    "train_conv_roi": 0.104,
+    "train_z": 2.73,
+    "avg_entry": 0.65,
+    "train_n": 250,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 0
   },
   {
     "wallet": "0xc5b5bbd42624a8f0c8dfa90221913007d8c77e80",
@@ -2650,6 +2710,18 @@
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
+  },
+  {
+    "wallet": "0x36a708485c603a477804ec74122475647629f03b",
+    "name": "0x36a70848",
+    "train_win": 69.6,
+    "train_conv_roi": 0.103,
+    "train_z": 4.05,
+    "avg_entry": 0.6,
+    "train_n": 414,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 1
   },
   {
     "wallet": "0x45e8dba0a9b1072e4ccd12f631600c270ee8dd36",
@@ -2674,18 +2746,6 @@
     "fwd_win": 75.4,
     "fwd_conv_roi": 0.042,
     "fwd_n": 57
-  },
-  {
-    "wallet": "0x46505242a39685d82de798a83da3f4a6fda0f3f0",
-    "name": "0x46505242",
-    "train_win": 72.1,
-    "train_conv_roi": 0.1,
-    "train_z": 2.69,
-    "avg_entry": 0.65,
-    "train_n": 251,
-    "fwd_win": null,
-    "fwd_conv_roi": null,
-    "fwd_n": 0
   },
   {
     "wallet": "0x7f69983eb28245bba0d5083502a78744a8f66162",
@@ -2767,9 +2827,9 @@
     "train_z": 3.35,
     "avg_entry": 0.7,
     "train_n": 257,
-    "fwd_win": 77.4,
-    "fwd_conv_roi": 0.108,
-    "fwd_n": 155
+    "fwd_win": 77.2,
+    "fwd_conv_roi": 0.101,
+    "fwd_n": 162
   },
   {
     "wallet": "0xe4ad4bc9e7742d1c08636e886dc631c6bb93795c",
@@ -2794,6 +2854,18 @@
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
+  },
+  {
+    "wallet": "0x5ca0c86058ba116c63be1d57d3f6b41264ea20e7",
+    "name": "0x5ca0c860",
+    "train_win": 67.5,
+    "train_conv_roi": 0.09,
+    "train_z": 2.63,
+    "avg_entry": 0.63,
+    "train_n": 511,
+    "fwd_win": 66.7,
+    "fwd_conv_roi": 0.471,
+    "fwd_n": 6
   },
   {
     "wallet": "0xa00f1bc11204fa21eee9e6780e0ac6a2a91f8e56",
@@ -2911,9 +2983,9 @@
     "train_z": 3.36,
     "avg_entry": 0.74,
     "train_n": 448,
-    "fwd_win": 26.9,
-    "fwd_conv_roi": 0.279,
-    "fwd_n": 309
+    "fwd_win": 27.5,
+    "fwd_conv_roi": 0.259,
+    "fwd_n": 331
   },
   {
     "wallet": "0xa1fc8bd4805a72dc630baa02e639ef690f8f7cc1",
@@ -3036,18 +3108,6 @@
     "fwd_n": 360
   },
   {
-    "wallet": "0x44ca33af5fbd1d9e98049b7a37ee5512cc46907c",
-    "name": "0x44ca33af",
-    "train_win": 65.5,
-    "train_conv_roi": 0.066,
-    "train_z": 2.77,
-    "avg_entry": 0.59,
-    "train_n": 333,
-    "fwd_win": 69.6,
-    "fwd_conv_roi": -0.147,
-    "fwd_n": 69
-  },
-  {
     "wallet": "0x7d358345064bbfe14de64c8313b72e663f5ce83e",
     "name": "0x7d358345",
     "train_win": 67.1,
@@ -3139,18 +3199,6 @@
     "train_z": 3.8,
     "avg_entry": 0.59,
     "train_n": 411,
-    "fwd_win": null,
-    "fwd_conv_roi": null,
-    "fwd_n": 0
-  },
-  {
-    "wallet": "0x537494c54dee9162534675712f2e625c9713042e",
-    "name": "0x537494c5",
-    "train_win": 65.5,
-    "train_conv_roi": 0.057,
-    "train_z": 2.93,
-    "avg_entry": 0.59,
-    "train_n": 400,
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
@@ -3351,10 +3399,10 @@
     "wallet": "0x9cd1bdc2a24c78f462ba1fc0fa11a0f2abfb0b33",
     "name": "0x9cd1bdc2",
     "train_win": 65.5,
-    "train_conv_roi": 0.011,
-    "train_z": 2.83,
+    "train_conv_roi": 0.012,
+    "train_z": 2.85,
     "avg_entry": 0.59,
-    "train_n": 385,
+    "train_n": 386,
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
