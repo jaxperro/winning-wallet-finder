@@ -121,6 +121,21 @@
  ],
  "missed": [
   {
+   "ts": 1783165160,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "28152475148565998707081923685698630371759867643271465786049699346583787102940",
+   "cond": "0x2744a86fe63793ff0f007e8908f90d4e5c03b0d9daae554210398bf63fad88bd",
+   "title": "Exact Score: Daejeon Hana Citizen FC 0 - 1 Bucheon FC 1995?",
+   "outcome": "No",
+   "price": 0.99,
+   "stake": 42.11,
+   "reason": "price moved 0.91\u21920.99",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783133410,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "61223011236342502332673625067812017051784754984130933496941365624578597883141",
@@ -272,5 +287,5 @@
   }
  ],
  "missed_pnl": -18.84,
- "updated": 1783148618
+ "updated": 1783165162
 }
