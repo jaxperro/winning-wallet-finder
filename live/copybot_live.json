@@ -1,21 +1,21 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 42.08,
+ "stake": 42.06,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1052.8,
- "cash": 1009.96,
- "deployed": 42.11,
+ "cash": 967.19,
+ "deployed": 84.2,
  "reserve": 0.0,
- "realized": 52.07,
- "open_count": 1,
- "fees_paid": 1.74,
+ "realized": 51.39,
+ "open_count": 2,
+ "fees_paid": 2.42,
  "fee_rate": 0.03,
  "lag": {
-  "n": 8,
-  "avg_s": 45.4,
-  "avg_slip_pct": -0.0206
+  "n": 9,
+  "avg_s": 46.9,
+  "avg_slip_pct": -0.0272
  },
  "wallets": [
   "Kruto2027",
@@ -28,6 +28,24 @@
   "iohihoo"
  ],
  "bets": [
+  {
+   "token": "44670660381911824541379245429259745031335925550706922254363549599556048520781",
+   "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
+   "name": "shisan888",
+   "outcome": "Over",
+   "title": "Canada vs. Morocco: O/U 10.5 Total Corners",
+   "their_price": 0.5,
+   "my_price": 0.46,
+   "slippage_pct": -0.08,
+   "shares": 91.48,
+   "cost": 42.08,
+   "fee": 0.6817,
+   "opened": 1783186559,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "52973207604718416859694855213758371027518055181743915154290913182969481100220",
    "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
@@ -320,5 +338,5 @@
   }
  ],
  "missed_pnl": -18.02,
- "updated": 1783185567
+ "updated": 1783186619
 }
