@@ -62,9 +62,13 @@
     },
     "min_entry": 0.0,
     "max_entry": 0.95,
-    "stake_mult": {
-      "0xf5fe759cece500f58a431ef8dacea321f6e3e23d": 3.0,
-      "0x73afc8160c17830c0c7281a7bf570c871455b880": 3.0
+    "wallet_class": {
+      "0xf5fe759cece500f58a431ef8dacea321f6e3e23d": "whale",
+      "0x73afc8160c17830c0c7281a7bf570c871455b880": "whale"
+    },
+    "class_pct": {
+      "volume": 0.04,
+      "whale": 0.12
     }
   },
   "risk": {

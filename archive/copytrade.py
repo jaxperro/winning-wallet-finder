@@ -267,36 +267,42 @@ class CopyTrader:
     DD_THRESHOLD = 0.80      # below 80% of the high-water mark…
     DD_FACTOR = 0.5          # …bet half size until equity recovers
 
-    def stake_mult(self, wallet=None):
-        """Per-wallet stake multiplier from follow.stake_mult ({address: mult}) —
-        lets high-conviction wallets bet a larger equity fraction (e.g. 3.0 turns
-        a 4% book into 12% for that wallet). Defaults to 1."""
-        mults = (self.cfg.get("follow") or {}).get("stake_mult") or {}
-        return float(mults.get((wallet or "").lower(), 1.0))
+    def wallet_class(self, wallet=None):
+        """'volume' (default) or 'whale', from follow.wallet_class ({address: class})."""
+        classes = (self.cfg.get("follow") or {}).get("wallet_class") or {}
+        return classes.get((wallet or "").lower(), "volume")
+
+    def stake_frac(self, wallet=None):
+        """Equity fraction for this wallet's signals, by class:
+        follow.class_pct maps class -> fraction (e.g. volume 0.04, whale 0.12).
+        A class missing from class_pct falls back to bankroll_pct."""
+        pcts = (self.cfg.get("follow") or {}).get("class_pct") or {}
+        pct = pcts.get(self.wallet_class(wallet))
+        return self.cfg["bankroll_pct"] if pct is None else float(pct)
 
     def stake_usd(self, wallet=None):
-        """Next bet size = bankroll_pct × current WORKING equity (cash + open cost
-        basis), so stakes compound with the book in both directions; halved while
-        in a >20% drawdown from the high-water mark. Falls back to the flat static
-        stake when cash isn't tracked (legacy poll CLI). A per-wallet
-        follow.stake_mult scales the fraction for that wallet's signals (the
-        sweep threshold below stays on the BASE fraction so which wallet happens
-        to trade doesn't change when profits get banked).
+        """Next bet size = the wallet's class fraction (stake_frac) × current
+        WORKING equity (cash + open cost basis), so stakes compound with the book
+        in both directions; halved while in a >20% drawdown from the high-water
+        mark. Falls back to the flat static stake when cash isn't tracked
+        (legacy poll CLI). The sweep threshold below stays on the BASE
+        bankroll_pct so which wallet happens to trade doesn't change when
+        profits get banked.
 
         stake_cap_usd (profit ratchet): once working equity exceeds
         cap/bankroll_pct — the level where stakes hit the cap — the surplus CASH
         is swept into state["reserve"]: banked, never bet, immune to drawdowns.
         Stakes stay pinned ~at the cap, where marketable fills are still inside
         typical book depth."""
-        mult = self.stake_mult(wallet)
+        frac = self.stake_frac(wallet)
         cash = self.state.get("cash")
         if cash is None:
-            return self.cfg["bankroll_usd"] * self.cfg["bankroll_pct"] * mult
-        frac = self.cfg["bankroll_pct"]
+            return self.cfg["bankroll_usd"] * frac
+        base = self.cfg["bankroll_pct"]
         cap = self.cfg.get("stake_cap_usd") or 0
         eq = cash + self.open_exposure()
-        if cap and frac > 0 and eq > cap / frac:
-            sweep = min(cash, eq - cap / frac)
+        if cap and base > 0 and eq > cap / base:
+            sweep = min(cash, eq - cap / base)
             if sweep > 0:
                 self.state["cash"] = cash = cash - sweep
                 self.state["reserve"] = self.state.get("reserve", 0.0) + sweep
@@ -305,7 +311,7 @@ class CopyTrader:
         self.state["hwm"] = hwm
         if eq < self.DD_THRESHOLD * hwm:
             frac *= self.DD_FACTOR
-        stake = frac * eq * mult
+        stake = frac * eq
         return min(stake, cap) if cap else stake
 
     def record_miss(self, wallet, token, cond, title, outcome, price, want, reason):
