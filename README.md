@@ -144,10 +144,14 @@ backtest and bot share:
 - **Lag + slippage**: the bot fills at the live CLOB ask at detection (~60s poll),
   logging per-fill `detect_lag_s` and `slippage_pct`; the backtest applies a
   +0.5%/~90s haircut. Measured so far: ~48s avg / +0.8% avg slip.
-- **Dynamic sizing**: each bet stakes **4% of current equity** (compounds both
-  ways), halved while equity is below 80% of its high-water mark. No per-trade
-  cap. A per-event correlation cap exists (`risk.max_per_event`) but is **off** —
-  every conviction trade is followed.
+- **Dynamic sizing**: each bet stakes **4% of current working equity** (compounds
+  both ways), halved while equity is below 80% of its high-water mark. The rule
+  binds **per market** — adds that mirror a sharp scaling in can only top a
+  position up to the current stake size, never past it.
+- **Profit ratchet** (`stake_cap_usd: 250`): stakes pin at $250; once the book
+  outgrows that level, surplus cash sweeps to a **banked reserve** that never
+  bets — locked-in profit, and fills stay inside realistic book depth. A
+  per-event correlation cap exists (`risk.max_per_event`) but is **off**.
 - **Entry cap 0.95**: entries above 95¢ are skipped (`follow.max_entry`) — the
   June sweep showed >95¢ favorites *lower* final equity even while winning
   (slip + fee eat the 1–3% payouts; the capital compounds better elsewhere).

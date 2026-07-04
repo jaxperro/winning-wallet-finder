@@ -427,11 +427,21 @@ class CopyTrader:
             return
 
         if is_add:
-            # proportional add: grow my position by the same fraction they did
+            # proportional add: grow my position by the same fraction they did —
+            # but SIZING DISCIPLINE binds per market: total position cost never
+            # exceeds the current stake rule. Unbounded mirroring once took one
+            # game to 2.15 stakes ($90 on a $42-stake book) when fortuneking
+            # doubled into his own bet; the backtest is one-market-one-stake,
+            # so the bot must be too.
             their_prev = self.state["their_pos"].get(wallet, {}).get(token, 0)
             frac = their_size / their_prev if their_prev > 0 else 0
             want_shares = mine["shares"] * frac
-            want_usd = want_shares * price
+            room = self.stake_usd() - mine["cost"]
+            if room < self.risk["min_order_usd"]:
+                self.log(f"ADD  {label} — skip (position ${mine['cost']:.0f} already "
+                         f"at the stake size)")
+                return
+            want_usd = min(want_shares * price, room)
             kind = "ADD "
         else:
             want_usd = self.stake_usd()      # fraction of current equity (compounds)
