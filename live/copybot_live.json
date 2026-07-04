@@ -1,15 +1,15 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 42.06,
+ "stake": 42.35,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 1052.8,
- "cash": 967.19,
- "deployed": 84.2,
+ "hwm": 1058.68,
+ "cash": 1058.68,
+ "deployed": 0,
  "reserve": 0.0,
- "realized": 51.39,
- "open_count": 2,
+ "realized": 58.68,
+ "open_count": 0,
  "fees_paid": 2.42,
  "fee_rate": 0.03,
  "lag": {
@@ -29,24 +29,6 @@
  ],
  "bets": [
   {
-   "token": "44670660381911824541379245429259745031335925550706922254363549599556048520781",
-   "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
-   "name": "shisan888",
-   "outcome": "Over",
-   "title": "Canada vs. Morocco: O/U 10.5 Total Corners",
-   "their_price": 0.5,
-   "my_price": 0.46,
-   "slippage_pct": -0.08,
-   "shares": 91.48,
-   "cost": 42.08,
-   "fee": 0.6817,
-   "opened": 1783186559,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
    "token": "52973207604718416859694855213758371027518055181743915154290913182969481100220",
    "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
    "name": "shisan888",
@@ -59,10 +41,28 @@
    "cost": 42.11,
    "fee": 0.7328,
    "opened": 1783185509,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -42.84,
+   "settled": 1783193166
+  },
+  {
+   "token": "44670660381911824541379245429259745031335925550706922254363549599556048520781",
+   "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
+   "name": "shisan888",
+   "outcome": "Over",
+   "title": "Canada vs. Morocco: O/U 10.5 Total Corners",
+   "their_price": 0.5,
+   "my_price": 0.46,
+   "slippage_pct": -0.08,
+   "shares": 91.48,
+   "cost": 42.08,
+   "fee": 0.6817,
+   "opened": 1783186559,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 48.72,
+   "settled": 1783193166
   },
   {
    "token": "67596909630505748192273119086224135081859582478741941473155557882450542807607",
@@ -166,9 +166,9 @@
    "price": 0.99,
    "stake": 42.06,
    "reason": "price moved 0.84\u21920.99",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "won",
+   "pnl": 0.41,
+   "settled": 1783193166,
    "name": "LSB1"
   },
   {
@@ -352,6 +352,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -18.02,
- "updated": 1783191735
+ "missed_pnl": -17.61,
+ "updated": 1783193167
 }
