@@ -1,15 +1,15 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 42.32,
+ "stake": 40.62,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
  "cash": 1015.53,
- "deployed": 42.35,
+ "deployed": 0,
  "reserve": 0.0,
- "realized": 57.88,
- "open_count": 1,
+ "realized": 15.53,
+ "open_count": 0,
  "fees_paid": 3.22,
  "fee_rate": 0.03,
  "lag": {
@@ -41,10 +41,10 @@
    "cost": 42.35,
    "fee": 0.8004,
    "opened": 1783201310,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -43.15,
+   "settled": 1783207546
   },
   {
    "token": "52973207604718416859694855213758371027518055181743915154290913182969481100220",
@@ -175,6 +175,21 @@
  ],
  "missed": [
   {
+   "ts": 1783206097,
+   "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
+   "token": "74099730274376826218774076492746250136211253537426101562230536854687293405091",
+   "cond": "0xfac78da918d19d3c2470b66f34fa6a640ac1dee0e2fc47e95222ab62cfa3ea8d",
+   "title": "Paraguay vs. France: O/U 12.5 Total Corners",
+   "outcome": "Over",
+   "price": 0.999,
+   "stake": 42.32,
+   "reason": "price moved 0.95\u21921.00",
+   "status": "won",
+   "pnl": 0.04,
+   "settled": 1783207546,
+   "name": "shisan888"
+  },
+  {
    "ts": 1783206665,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "15284143135822680037258061151720683683680885302571075788244945180590562198297",
@@ -188,21 +203,6 @@
    "pnl": 0.41,
    "settled": 1783207104,
    "name": "imwalkinghere"
-  },
-  {
-   "ts": 1783206097,
-   "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
-   "token": "74099730274376826218774076492746250136211253537426101562230536854687293405091",
-   "cond": "0xfac78da918d19d3c2470b66f34fa6a640ac1dee0e2fc47e95222ab62cfa3ea8d",
-   "title": "Paraguay vs. France: O/U 12.5 Total Corners",
-   "outcome": "Over",
-   "price": 0.999,
-   "stake": 42.32,
-   "reason": "price moved 0.95\u21921.00",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "shisan888"
   },
   {
    "ts": 1783191734,
@@ -400,6 +400,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -17.2,
- "updated": 1783207106
+ "missed_pnl": -17.16,
+ "updated": 1783207549
 }
