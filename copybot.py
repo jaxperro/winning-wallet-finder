@@ -53,7 +53,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "archive"))
 from copytrade import (  # noqa: E402
     CopyTrader, PaperExecutor, LiveExecutor, DEFAULT_CONFIG,
-    load_json, save_json, new_state, recent_trades, post_discord, confirm_live,
+    load_json, save_json, new_state, recent_trades, confirm_live,
 )
 from smart_money import SSL_CTX  # noqa: E402
 
@@ -287,8 +287,8 @@ class Copybot:
         self.engine = engine
         self.filt = filt
         self.redeemer = redeemer       # gap 2: on-chain redeem of resolved positions (live)
-        # webhook from env (so a scheduled runner can inject it as a secret) or config
-        self.webhook = os.environ.get("DISCORD_WEBHOOK") or cfg.get("discord_webhook", "")
+        # trade-by-trade Discord pings retired 2026-07-04: the only Discord
+        # output now is the daily sharp digest (live/discord_daily.py)
         self.names = {}
         for w in cfg.get("watch", []):
             self.names[w["wallet"].lower()] = w.get("name", w["wallet"][:10])
@@ -748,6 +748,7 @@ def main():
         executor = LedgerPaperExecutor()   # tracks cash flows for realized-P&L reporting
 
     engine = CopyTrader(cfg, state, executor, args.state)
+    engine.webhook = ""   # per-trade Discord alerts retired — daily digest only
     filt = FollowFilter(cfg)
     bot = Copybot(cfg, engine, filt, redeemer=redeemer)
 
@@ -794,11 +795,6 @@ def main():
     # run works today without the deployed Alchemy webhook. (Production push uses the
     # webhook below; behaviour through the filter+engine is identical either way.)
     if args.poll:
-        if bot.webhook:
-            post_discord(bot.webhook,
-                         f"✅ **Copybot paper run started** ({mode}, poll {args.poll}s)\n"
-                         f"{len(cfg.get('watchlist', []))} wallets · {filt.describe()}\n"
-                         f"${cfg['bankroll_usd']:.0f} book · ${cfg['bankroll_usd']*cfg['bankroll_pct']:.0f}/bet")
         bot.baseline()
         log(f"poll mode · every {args.poll}s · Ctrl-C to stop")
         bot.write_feed()                              # publish an initial "online" snapshot
@@ -821,11 +817,6 @@ def main():
     signing_key = (os.environ.get("ALCHEMY_SIGNING_KEY")
                    or cfg.get("alchemy_signing_key", ""))
     port = int(os.environ.get("PORT", 8080))
-    if bot.webhook:
-        post_discord(bot.webhook,
-                     f"✅ **Copybot online** ({mode})\n"
-                     f"push-driven · {len(cfg.get('watchlist', []))} wallets · "
-                     f"{filt.describe()}\nYou'll get a ping on every trade it places.")
     log(f"listening on :{port} · POST /alchemy · "
         f"signature-verify {'ON' if signing_key else 'OFF'}")
     ThreadingHTTPServer(("0.0.0.0", port), make_handler(bot, signing_key)).serve_forever()

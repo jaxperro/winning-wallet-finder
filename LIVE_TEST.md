@@ -48,7 +48,8 @@ verified. Fix anything red before arming.
 
 It prints the caps, asks for the confirmation phrase, then baselines (no
 retro-copying) and waits for the next conviction trade from Kruto2027 /
-shisan888 / fortuneking / LSB1. Every placement pings Discord. Watch the first
+shisan888 / fortuneking / LSB1. Placements log to the console/Railway logs (per-trade Discord
+pings were retired 2026-07-04). Watch the first
 fill: order accepted → shares in the account (Polymarket UI) → on resolution,
 SETTLE line + auto-redeem tx hash.
 

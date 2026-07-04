@@ -12,14 +12,25 @@ Two ways a cached bet row can lie (see FINDINGS.md "The holder blind spot"):
      the market resolved; rows pulled earlier carry a price mark, and v2 rows
      say so via resolved=False, but legacy rows can't.
 
-The fix is cross-wallet consensus: endDate-based rows for one market agree on
-the same res_t across every wallet, while ts-fallback rows scatter (each
-wallet's sell time is its own). So a row is TRUSTED iff
+A row is TRUSTED iff res_t <= now AND either:
 
-  * its res_t equals the market's modal res_t across >= 2 distinct wallets (E)
-  * E <= now                       (the market is actually over)
-  * the wallet's pulled_at >= E    (won observed after resolution -> 0/1)
-  * resolved IS DISTINCT FROM FALSE (v2 mark rows out)
+  * **v2 self-certifying**: resolved = TRUE. resolved is only True when the
+    pull saw a real endDate AND the market had ended, so res_t is endDate-based
+    (never the ts fallback) and won was observed post-end. No consensus needed —
+    important because Polymarket sometimes REWRITES endDate after resolution,
+    so a freshly-pulled wallet's corrected res_t stops matching the stale
+    cross-wallet mode (2026-07-04: this wrongly distrusted 374/454 of iohihoo's
+    rows the morning after his re-pull).
+  * **legacy consensus** (resolved IS NULL, pre-v2 rows): res_t equals the
+    market's modal res_t across >= 2 distinct wallets (endDate rows agree;
+    ts-fallback sell times scatter), and the wallet's pulled_at >= E so won was
+    observed after resolution. If the wallet is missing from `pulled` (daily.sh
+    invalidates watchlist wallets by DELETING their pulled row; a transiently
+    failed re-pull then leaves them absent), fall back to trusting markets
+    resolved >= 14 days ago — every wallet gets re-pulled at least each
+    MAX_AGE_DAYS cycle, so its rows' true pull time is at most ~2 weeks old.
+
+  (resolved = FALSE rows — price marks on unended markets — are never trusted.)
 
 ~13.5M of 19.2M rows pass; what's dropped is exactly the poison that made
 scalpers look like 99%-win holders. Selection must only ever score trusted rows.
@@ -42,10 +53,12 @@ tr_cons AS (SELECT cond, res_t AS E FROM (
     FROM tr_r GROUP BY cond, res_t) WHERE rn = 1 AND nw >= 2),
 trusted AS (
   SELECT tr_r.* FROM tr_r
-  JOIN tr_cons ON tr_r.cond = tr_cons.cond AND tr_r.res_t = tr_cons.E
-  JOIN pulled pl ON pl.wallet = tr_r.wallet
-  WHERE tr_cons.E <= {now} AND pl.pulled_at >= tr_cons.E
-    AND (tr_r.resolved IS DISTINCT FROM FALSE))
+  LEFT JOIN tr_cons ON tr_r.cond = tr_cons.cond AND tr_r.res_t = tr_cons.E
+  LEFT JOIN pulled pl ON pl.wallet = tr_r.wallet
+  WHERE tr_r.res_t <= {now} AND (
+        tr_r.resolved = TRUE
+     OR (tr_r.resolved IS NULL AND tr_cons.E IS NOT NULL
+         AND tr_cons.E <= COALESCE(pl.pulled_at, {now} - 1209600))))
 """
 
 
@@ -81,11 +94,13 @@ def trusted_wallet_rows(runq, wallet, now=None):
         SELECT DISTINCT b.cond, b.asset, b.won,
                least(0.999, greatest(0.001, b.p)) p, b.res_t, b.size
         FROM bets b
-        JOIN t_cons c ON b.cond = c.cond AND b.res_t = c.E
-        JOIN pulled pl ON pl.wallet = b.wallet
-        WHERE b.wallet = ? AND b.size > 0 AND c.E <= ?
-          AND pl.pulled_at >= c.E AND (b.resolved IS DISTINCT FROM FALSE)""",
-        [wallet, now])
+        LEFT JOIN t_cons c ON b.cond = c.cond AND b.res_t = c.E
+        LEFT JOIN pulled pl ON pl.wallet = b.wallet
+        WHERE b.wallet = ? AND b.size > 0 AND b.res_t > 0 AND b.res_t <= ?
+          AND (b.resolved = TRUE
+               OR (b.resolved IS NULL AND c.E IS NOT NULL
+                   AND c.E <= COALESCE(pl.pulled_at, ? - 1209600)))""",
+        [wallet, now, now])
 
 
 def conviction_record(runq, wallet, days=90, pctile=0.80, now=None):

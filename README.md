@@ -25,7 +25,7 @@ Three deployed pieces + one static dashboard:
 |-------|--------------|--------------|
 | **daily pipeline** (`live/daily.sh`) | this Mac, launchd 10:00 | refresh the bet cache → 5-gate skill scan → fee-aware sharp selection → conviction floors → backtest book → publish JSON feeds to GitHub |
 | **copybot worker** (`copybot.py` via `host/start.sh`) | Railway, 24/7 | polls the 4 followed wallets every 60s, paper-copies their conviction bets with real fees/lag/slippage accounting, settles at CLOB resolution, commits its book back to the repo |
-| **Discord watcher** (`webhook_receiver.py`) | Railway `web` service | Alchemy address-activity webhook → instant trade pings |
+| **Discord digest** (`live/discord_daily.py`) | end of the daily pipeline | one message/day: the sharp list with profile links + 30-day conviction stats (per-trade pings retired 2026-07-04; the old Alchemy watcher lives in `archive/webhook_receiver.py`) |
 | **dashboard** | [jaxperro.com/trading](https://jaxperro.com/trading) (static, in the `jaxperro` repo) | renders the three JSON feeds: live bot book, backtest book, sharp table |
 
 **The July 2026 live test:** a fresh $1,000 paper book (started 2026-07-02, on
@@ -59,7 +59,7 @@ follows (see [`LIVE_TEST.md`](LIVE_TEST.md)).
 | `LIVE_TEST.md` · `preflight_live.py` · `redeem.py` | real-money runbook, read-only credential preflight, on-chain redemption |
 | `insider.py` | the original detector: z-score, pre-resolution timing, fresh-wallet flags, funding-cluster rings |
 | `smart_money.py` | shared HTTP helper + survivorship-corrected win-rate dashboard (`:8899`) |
-| `webhook_receiver.py` | Alchemy webhook → Discord trade pings (Railway `web` service) |
+| `archive/webhook_receiver.py` | retired 2026-07-04: Alchemy webhook → per-trade Discord pings (replaced by `live/discord_daily.py`'s daily digest) |
 | `wide/` | frozen-subgraph bulk scanner (1.76M wallets, historical only — subgraph froze Jan 2026) |
 | `archive/` | the six strategies that didn't work, kept honest ([archive/README](archive/README.md)) |
 | `hunt.py` · `huntwide.py` · `oos.py` · `copyback.py` | earlier research sweeps/backtests (superseded by `live/`) |
@@ -127,9 +127,9 @@ in [`live/README.md`](live/README.md).
 
 | file | holds |
 |------|-------|
-| `config.json` | Discord webhooks, Alchemy key, the followed-wallet list + per-wallet conviction floors (auto-refreshed daily by `sync_floors.py`) |
+| `config.json` | `daily_webhook` (the Discord digest), Alchemy key, the followed-wallet list + per-wallet conviction floors (auto-refreshed daily by `sync_floors.py`) |
 | `config.live.json` | live-trading credentials (`private_key`, `funder_address`) + tiny test caps — see `LIVE_TEST.md` |
-| Railway `copybot` service | `GITHUB_TOKEN` (fine-grained PAT, contents-RW on this repo — the bot commits its state/feed back), optional `DISCORD_WEBHOOK` |
+| Railway `copybot` service | `GITHUB_TOKEN` (fine-grained PAT, contents-RW on this repo — the bot commits its state/feed back), `DISCORD_WEBHOOK` no longer used (per-trade pings retired) |
 
 ---
 

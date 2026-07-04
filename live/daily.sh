@@ -60,26 +60,7 @@ elif git commit -q -m "live: daily refresh — skilled + sharp wallets [skip ci]
 fi
 echo "[daily] $(date '+%F %T') done -> watch_sharps.json + dashboard.html"
 
-# ping Discord (webhook kept in gitignored ../config.json -> daily_webhook)
-PUBLISH="$PUBLISH" python3 - <<'PY'
-import json, os, ssl, time, urllib.request
-try:                                   # cwd is live/ (daily.sh cd's there); config is repo-root
-    hook = json.load(open("../config.json")).get("daily_webhook")
-except Exception:
-    hook = None
-if hook:
-    try:
-        n = len(json.load(open("watch_sharps.json")))
-    except Exception:
-        n = "?"
-    msg = (f"✅ Sharp pipeline finished {time.strftime('%Y-%m-%d %H:%M')} — "
-           f"{n} copyable sharps · feed {os.environ.get('PUBLISH','?')}")
-    data = json.dumps({"content": msg}).encode()
-    req = urllib.request.Request(hook, data=data,
-        headers={"Content-Type": "application/json", "User-Agent": "Mozilla/5.0"})  # Discord 403s w/o UA
-    try:
-        urllib.request.urlopen(req, timeout=15, context=ssl._create_unverified_context())
-        print("[daily] discord pinged")
-    except Exception as e:
-        print("[daily] discord ping failed:", e)
-PY
+# Discord: the daily sharp-list digest (profile links + 30D conviction stats).
+# The only Discord output in the system — per-trade pings retired 2026-07-04.
+# Webhook lives in gitignored ../config.json -> daily_webhook.
+python3 discord_daily.py "feed: $PUBLISH" || echo "[daily] discord digest failed (non-fatal)"
