@@ -1,21 +1,21 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 42.35,
+ "stake": 42.32,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 1058.68,
- "deployed": 0,
+ "cash": 1015.53,
+ "deployed": 42.35,
  "reserve": 0.0,
- "realized": 58.68,
- "open_count": 0,
- "fees_paid": 2.42,
+ "realized": 57.88,
+ "open_count": 1,
+ "fees_paid": 3.22,
  "fee_rate": 0.03,
  "lag": {
-  "n": 9,
-  "avg_s": 46.9,
-  "avg_slip_pct": -0.0272
+  "n": 10,
+  "avg_s": 46.3,
+  "avg_slip_pct": -0.0519
  },
  "wallets": [
   "Kruto2027",
@@ -28,6 +28,24 @@
   "iohihoo"
  ],
  "bets": [
+  {
+   "token": "93513675418974812419654233252243690687188593130696152284115785509092363312850",
+   "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
+   "name": "shisan888",
+   "outcome": "Under",
+   "title": "Paraguay vs. France: O/U 11.5 Total Corners",
+   "their_price": 0.51,
+   "my_price": 0.37,
+   "slippage_pct": -0.2745,
+   "shares": 114.45,
+   "cost": 42.35,
+   "fee": 0.8004,
+   "opened": 1783201310,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "52973207604718416859694855213758371027518055181743915154290913182969481100220",
    "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
@@ -353,5 +371,5 @@
   }
  ],
  "missed_pnl": -17.61,
- "updated": 1783193167
+ "updated": 1783201352
 }
