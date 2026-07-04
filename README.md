@@ -24,16 +24,19 @@ Three deployed pieces + one static dashboard:
 | piece | where it runs | what it does |
 |-------|--------------|--------------|
 | **daily pipeline** (`live/daily.sh`) | this Mac, launchd 10:00 | refresh the bet cache → 5-gate skill scan → fee-aware sharp selection → conviction floors → backtest book → publish JSON feeds to GitHub |
-| **copybot worker** (`copybot.py` via `host/start.sh`) | Railway, 24/7 | polls the 4 followed wallets every 60s, paper-copies their conviction bets with real fees/lag/slippage accounting, settles at CLOB resolution, commits its book back to the repo |
+| **copybot worker** (`copybot.py` via `host/start.sh`) | Railway, 24/7 | polls the 8 followed wallets every 60s, paper-copies their conviction bets with real fees/lag/slippage accounting, settles at CLOB resolution, commits its book back to the repo |
 | **Discord digest** (`live/discord_daily.py`) | end of the daily pipeline | one message/day: the sharp list with profile links + 30-day conviction stats (per-trade pings retired 2026-07-04; the old Alchemy watcher lives in `archive/webhook_receiver.py`) |
 | **dashboard** | [jaxperro.com/trading](https://jaxperro.com/trading) (static, in the `jaxperro` repo) | renders the three JSON feeds: live bot book, backtest book, sharp table |
 
 **The July 2026 live test:** a fresh $1,000 paper book (started 2026-07-02, on
-Railway) following **Kruto2027, shisan888, fortuneking, LSB1** — the top
-fee-adjusted copy-positive sharps + one curated pick. Every fill records
-detection lag, price slippage, and the taker fee; missed bets are recorded and
-settled hypothetically. If this month's *measured* numbers hold up, real money
-follows (see [`LIVE_TEST.md`](LIVE_TEST.md)).
+Railway) following eight wallets in two stake classes (`follow.wallet_class`):
+**volume** (4% of equity/bet) — Kruto2027, shisan888, fortuneking, LSB1,
+imwalkinghere, iohihoo — and **whale** (12%/bet) — **Stavenson** and the
+**`0x4bFb…` whale**, the two big-clip informed holders the trusted-row
+re-validation surfaced (added 2026-07-04; see FINDINGS "The holder blind
+spot"). Every fill records detection lag, price slippage, and the taker fee;
+missed bets are recorded and settled hypothetically. If this month's *measured*
+numbers hold up, real money follows (see [`LIVE_TEST.md`](LIVE_TEST.md)).
 
 ```
  data layer          selection                        execution              display
@@ -144,10 +147,15 @@ backtest and bot share:
 - **Lag + slippage**: the bot fills at the live CLOB ask at detection (~60s poll),
   logging per-fill `detect_lag_s` and `slippage_pct`; the backtest applies a
   +0.5%/~90s haircut. Measured so far: ~48s avg / +0.8% avg slip.
-- **Dynamic sizing**: each bet stakes **4% of current working equity** (compounds
-  both ways), halved while equity is below 80% of its high-water mark. The rule
-  binds **per market** — adds that mirror a sharp scaling in can only top a
-  position up to the current stake size, never past it.
+- **Dynamic sizing, two wallet classes**: each bet stakes a fraction of current
+  working equity set by the followed wallet's class — `follow.wallet_class`
+  marks a wallet **`volume`** (default, 4%) or **`whale`** (12%), with the
+  fractions themselves in `follow.class_pct`. Stakes compound both ways and are
+  halved while equity is below 80% of its high-water mark. The rule binds
+  **per market** — adds that mirror a sharp scaling in can only top a position
+  up to the current stake size, never past it. (The profit-sweep threshold
+  below stays on the base 4% so which wallet happens to trade doesn't change
+  when profits get banked.)
 - **Profit ratchet** (`stake_cap_usd: 250`): stakes pin at $250; once the book
   outgrows that level, surplus cash sweeps to a **banked reserve** that never
   bets — locked-in profit, and fills stay inside realistic book depth. A
