@@ -241,6 +241,53 @@ jaxperro.com/trading) surfaced two things:
   **fast-resolving** markets (capital velocity > bet size on $1k), and don't
   diversify past what you can fund. Two well-chosen holders beat four that overflow.
 
+## The holder blind spot: two data bugs that hid the best copy targets (2026-07-04)
+
+A clean re-run of the May→June train/test on a trusted subset of the cache
+overturned two earlier verdicts. Two mechanisms were poisoning the data:
+
+1. **The `res_t = ts` fallback.** When the data-api omits `endDate` on a closed
+   position, `insider.resolved_bets` stores the wallet's *sell time* as `res_t`
+   and `won = curPrice >= 0.5` *at pull time* — so a scalper's sold-at-profit
+   position looks like a resolved win at a fake resolution time.
+   ArbTraderRookie's 1,997 cached rows were 100% this. Fix: `live/trust.py` —
+   only trust rows whose `res_t` matches the market's modal `res_t` across ≥2
+   wallets (endDate rows agree; sell-time rows scatter), market over, wallet
+   pulled after resolution, `resolved` not False. 13.5M of 19.2M rows pass.
+2. **The held-leg window bug.** `validate_timing`'s Jun-1→now replay only
+   counted held bets entered *and* resolved inside the window; a ~7-day-lead
+   holder always showed `held 0-0, ~20 unresolved` and failed `held_n>=8`. And
+   before the 2026-07-02 `winner=False` settle fix, those unresolved held bets
+   were booked as **losses** — which is exactly where the "scalper trap"
+   numbers for iohihoo (−$749) and ArbTrader (−$790) came from. **Those two
+   verdicts were bug artifacts, not scalper traps.** (ArbTrader still deserved
+   rejection pre-fix — his *cache* stats were res_t=ts poison — but his real
+   trade record was a ~160h-lead holder.)
+
+**What the clean test found** (select on ≤May trusted rows only, validate on
+June, fees+slip): population baseline −1.4%/bet; the existing profile +8.7%
+pooled; adding a **whole-book z gate (`z_all > 2`) roughly doubles it** at
+every tier; a practical top-basket (also gated on med conviction stake ≥ $50
+and holder/borderline lead verdicts) went **+80% pooled, 7/7 wallets
+profitable**. A capital-aware $1k replay of the 8-wallet pre-June basket did
+**+504% in June** (118 bets, 97W-21L, fees+slip, 53 missed for cash) — with the
+three informed holders a combined 62-0 and two basket members *losing* money
+(toosmart 4-12), so the selection is good, not magic.
+
+**Where the edge lives:** the top holders (Stavenson, whale `0x73afc816…` with
+$20–120k clips, iohihoo; ArbTraderRookie until 2026-07-03) bet **low-tier
+tennis (ITF/qualifiers/Wimbledon doubles) and tier-3 esports (CCT CS, Dota 2
+EPL)** at ~0.5 entries, win 95–100%, enter ~160h before resolution, and hold.
+That's informed money — plausibly match-fixing-adjacent — which is copyable
+precisely because of the long lead. The regime risk is real and demonstrated:
+**ArbTraderRookie was wiped from every data-api endpoint mid-analysis** on
+2026-07-03. Treat every month of this edge as possibly its last; re-select
+weekly; never size as if the 100% win rates are permanent.
+
+*Lesson: selection metrics are only as honest as the rows they read. Gate on
+trusted rows, judge held edges on windows longer than the wallet's lead time,
+and add `z_all` — skill must show in the whole book, not just the big bets.*
+
 ## Repo layout
 
 - `insider.py` — the detector: z-score/p-value, timing/freshness/sizing signals,

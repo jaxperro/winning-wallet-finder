@@ -191,6 +191,15 @@ def invalidate(wallets):
             _con.execute("DELETE FROM pulled WHERE wallet=?", [w])
 
 
+def query(sql, params=None):
+    """Serialized raw read access to the cache DB for sibling modules (trust.py's
+    trusted-row queries). A second duckdb.connect in the same process would fight
+    this module's read-write connection for the single-writer lock, so everything
+    in-process must go through this one connection."""
+    with _lock:
+        return _con.execute(sql, params or []).fetchall()
+
+
 def pulled_ages():
     """{wallet: pulled_at} for every wallet ever pulled — lets collect.py bound
     how many stale re-pulls one run takes on."""

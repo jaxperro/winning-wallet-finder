@@ -13,6 +13,19 @@ conviction wallet and SELECT on copyability directly —
 This keeps Kruto (sells often but profitably) and surfaces copy-positive holders
 the lead gate used to discard; it drops scalper-traps like a wallet that's only
 positive via sells while its held bets lose.
+
+2026-07-03 holder fix: the held-edge gates no longer use the replay's held leg.
+That leg only counts bets entered AND resolved inside the Jun-1->now window, so
+a ~7-day-lead holder always showed `held 0-0, ~20 unresolved` and failed
+held_n>=8 — the filter structurally rejected the most copyable wallets (whale
+0x73afc816: 100% fwd win in conviction_scan, "held 0-0" here; and pre-Jul-2 the
+winner=False bug booked those unresolved bets as LOSSES, which is where the
+iohihoo −$749 / ArbTrader −$790 "scalper trap" numbers came from). The held-edge
+gate now reads the wallet's trailing TRUSTED conviction record from the cache
+(trust.py: consensus-resolution rows, outcome observed post-resolution), which
+includes bets entered before the window that resolved inside it. The replay's
+copy_pnl (fees, mirror exits) remains the other selection leg, and held stats
+are still computed for display.
 """
 
 import json
@@ -25,6 +38,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 import cache
 import smart_money as sm
+import trust
 
 HERE = os.path.dirname(__file__)
 COPYABLE_MED_LEAD = 24.0     # median lead (h) on winning conviction bets to count as copyable
@@ -190,10 +204,12 @@ def lead_profile(w):
     return dict(n=len(leads), med=med, u6=u6, verdict=verdict)
 
 
-MIN_HELD = 8          # need this many resolved held conviction bets to trust the held edge
-MIN_HELD_WR = 0.55    # held bets must WIN a clear majority — excludes longshot-variance
+MIN_HELD = 8          # need this many trailing trusted conviction bets to trust the held edge
+MIN_HELD_WR = 0.55    # they must WIN a clear majority — excludes longshot-variance
                       # players (+EV but ~34% win) that don't fit the high-win-rate thesis
 MIN_LEAD_H = 1.0      # light sniper guard: drop wallets whose median winning lead < 1h
+TRUST_DAYS = 90       # trailing window for the trusted conviction record (long enough
+                      # that week-lead holders have real resolved sample in it)
 
 
 def main():
@@ -219,6 +235,7 @@ def main():
     with ThreadPoolExecutor(max_workers=8) as ex:
         stats = list(ex.map(safe_stats, conv))
 
+    trust.ensure_cons(cache.query)
     cut30 = time.time() - 30 * 86400
     sharps = []
     for c, ds in zip(conv, stats):
@@ -229,27 +246,37 @@ def main():
             c["name"] = ds["name"]
         lp = lead_profile(c["wallet"])
         c["med_lead_h"] = round(lp["med"], 1) if lp else None
-        held_n = ds["held_won"] + ds["held_lost"]
-        held_wr = ds["held_won"] / held_n if held_n else 0
-        # SELECT a copyable sharp: active, copy-positive, and a genuine hold-to-
-        # resolution edge — held leg positive AND winning a clear majority on a real
-        # sample, so the edge survives live latency and isn't longshot variance or
-        # all sell-timing. A light lead floor drops true sub-hour snipers.
+        # held-to-resolution edge from the trailing TRUSTED cache record — includes
+        # bets entered before the replay window that resolved inside it, so long-lead
+        # holders are judged on their real resolved sample (the replay's own held leg
+        # is mostly "unresolved" for them and only reported for display).
+        tr = trust.conviction_record(cache.query, c["wallet"], days=TRUST_DAYS,
+                                     pctile=cache.CONV_PCTILE)
+        c["trust_n"], c["trust_wr"], c["trust_roi"] = tr["n"], round(tr["wr"], 3), round(tr["roi"], 3)
+        # SELECT a copyable sharp: active, copy-positive (fee-aware replay), and a
+        # genuine hold-to-resolution edge — trailing trusted conviction record wins a
+        # clear majority with positive flat-stake ROI on a real sample, so the edge
+        # survives live latency and isn't longshot variance or all sell-timing. A
+        # light lead floor drops true sub-hour snipers.
         if ((ds["last_trade"] or 0) >= cut30 and ds["copy_pnl"] > 0
-                and ds["held_pnl"] > 0 and held_n >= MIN_HELD and held_wr >= MIN_HELD_WR
+                and tr["n"] >= MIN_HELD and tr["wr"] >= MIN_HELD_WR and tr["roi"] > 0
                 and (c["med_lead_h"] is None or c["med_lead_h"] >= MIN_LEAD_H)):
             sharps.append(c)
 
     sharps.sort(key=lambda c: c["copy_pnl"], reverse=True)
-    print(f"copy-positive holders (copy>0, held>0, held_n>={MIN_HELD}, active, lead>={MIN_LEAD_H}h): "
+    print(f"copy-positive holders (copy>0, trust_n>={MIN_HELD}, trust_wr>={MIN_HELD_WR:.0%}, "
+          f"trust_roi>0 over {TRUST_DAYS}d, active, lead>={MIN_LEAD_H}h): "
           f"{len(sharps)} of {len(conv)}\n")
-    h = f"{'copyP&L':>8}{'heldP&L':>8}{'held':>9}{'sold%':>6}{'medLeadH':>9}  wallet"
+    h = (f"{'copyP&L':>8}{'trustRec':>10}{'trustROI':>9}{'heldP&L':>8}{'held':>9}"
+         f"{'sold%':>6}{'medLeadH':>9}  wallet")
     print(h); print("-" * len(h))
     for c in sharps[:35]:
         n = c["held_won"] + c["held_lost"]
         sp = 100 * c["sold"] / (c["sold"] + n) if (c["sold"] + n) else 0
         ld = f"{c['med_lead_h']:.0f}" if c["med_lead_h"] is not None else "—"
-        print(f"{c['copy_pnl']:>+8}{c['held_pnl']:>+8}{(str(c['held_won'])+'-'+str(c['held_lost'])):>9}"
+        rec = f"{round(c['trust_wr']*c['trust_n'])}-{round((1-c['trust_wr'])*c['trust_n'])}"
+        print(f"{c['copy_pnl']:>+8}{rec:>10}{c['trust_roi']:>+9.0%}{c['held_pnl']:>+8}"
+              f"{(str(c['held_won'])+'-'+str(c['held_lost'])):>9}"
               f"{sp:>5.0f}%{ld:>9}  {(c.get('name') or c['wallet'][:10])}")
 
     json.dump(sharps, open(os.path.join(HERE, "watch_sharps.json"), "w"), indent=2)

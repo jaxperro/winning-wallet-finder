@@ -5,21 +5,28 @@ favorite-riding — and it persists out-of-sample.
 
 TRAIN = conviction bets resolved before June 1. TEST = June 1+ resolved.
 
-A "conviction" bet = one in the top 20% (p80) of THAT wallet's own stake sizes,
-computed per-wallet over its full cached window — replacing the old flat $200.
-Validated to reproduce flat-$200's win-rate lift while adapting to each wallet's
-scale (kept in sync with cache.CONV_PCTILE and trading/index.html).
+A "conviction" bet = one in the top 20% (p80) of THAT wallet's own stake sizes.
+2026-07-03: the p80 cutoff is now computed over TRAIN rows only (the full-window
+cutoff let test-period stakes leak into the threshold), and everything reads
+TRUSTED rows only (see trust.py — the res_t=ts fallback poison made scalpers
+look like 99%-win holders and inflated both train and forward stats).
 
 Profile gates (on TRAIN conviction bets):
   * >= MIN_N conviction bets
   * win rate >= WIN_MIN
   * avg entry in [ENTRY_LO, ENTRY_HI]  (excludes 0.9 favorite-riders)
   * copy-ROI > 0  and  z significant (BH-FDR)
+  * z_all > Z_ALL_MIN over ALL trusted train bets (whole-book skill — the
+    single strongest add in the 2026-07-03 May->June tournament: it roughly
+    doubled pooled forward copy-ROI at every tier)
+  * median conviction stake >= MIN_MED_STAKE (dust wallets betting $2-$6 clips
+    aren't followable and their fills aren't reproducible)
 Then validate forward and count how many keep the profile.
 """
 
 import math, os, time
 import duckdb
+import trust
 
 HERE = os.path.dirname(__file__)
 JUN1 = time.mktime(time.strptime("2026-06-01", "%Y-%m-%d"))
@@ -29,6 +36,8 @@ WIN_MIN = 0.65
 ENTRY_LO, ENTRY_HI = 0.30, 0.75
 MIN_TEST = 3
 FDR_Q = 0.05
+Z_ALL_MIN = 2.0         # whole-book z gate (all trusted train bets, any size)
+MIN_MED_STAKE = 50.0    # median train conviction stake floor (dust filter)
 
 
 def r(p, won): return (1 - p) / p if won else -1.0
@@ -44,33 +53,44 @@ def stats(bets):
 
 def main():
     con = duckdb.connect(os.path.join(HERE, "cache.duckdb"), read_only=True)
-    # per-wallet conviction cutoff = p80 of that wallet's own positive stakes, then
-    # keep only its bets at/above that cutoff (its top ~20% by size).
-    # res_t <= now: the cache stores early-sold positions in UNRESOLVED markets with
-    # a future res_t and won = curPrice at pull time — a mark, not an outcome. They
-    # were ~5% of the June test window with a 72% pseudo-"win" rate, inflating the
-    # forward validation; only actually-resolved bets may score.
+    now = int(time.time())
+    # TRUSTED rows only (trust.py): consensus res_t kills the res_t=ts fallback
+    # poison; pulled_at >= E and resolved-is-not-False kill stale price marks.
+    # Conviction cutoff = p80 of the wallet's TRAIN-window positive stakes (the
+    # old full-window cutoff leaked test-period stake sizes into selection).
     rows = con.execute(
-        "WITH thr AS (SELECT wallet, quantile_cont(size, ?) AS t "
-        "             FROM bets WHERE size > 0 GROUP BY wallet) "
-        "SELECT b.wallet, b.p, b.won, b.res_t "
-        "FROM bets b JOIN thr ON b.wallet = thr.wallet "
-        "WHERE b.size > 0 AND b.size >= thr.t AND b.res_t <= ?",
-        [CONV_PCTILE, int(time.time())]).fetchall()
+        f"WITH {trust.cte(now)}, "
+        "thr AS (SELECT wallet, quantile_cont(size, ?) AS t "
+        f"        FROM trusted WHERE res_t < {JUN1} GROUP BY wallet) "
+        "SELECT b.wallet, b.p, b.won, b.res_t, b.size "
+        "FROM trusted b JOIN thr ON b.wallet = thr.wallet "
+        "WHERE b.size >= thr.t",
+        [CONV_PCTILE]).fetchall()
+    # whole-book skill over ALL trusted train bets (any size) — the z_all gate
+    allz = dict(con.execute(
+        f"WITH {trust.cte(now)} "
+        "SELECT wallet, (sum(won::INT) - sum(least(0.999,greatest(0.001,p)))) "
+        " / sqrt(greatest(sum(least(0.999,greatest(0.001,p)) "
+        "                    * (1 - least(0.999,greatest(0.001,p)))), 1e-9)) "
+        f"FROM trusted WHERE res_t < {JUN1} GROUP BY wallet").fetchall())
     byw = {}
-    for w, p, won, rt in rows:
-        byw.setdefault(w, []).append((max(0.001, min(0.999, p or 0)), won, rt or 0))
+    for w, p, won, rt, sz in rows:
+        byw.setdefault(w, []).append((max(0.001, min(0.999, p or 0)), won, rt or 0, sz or 0))
 
     cand = []
     for w, bets in byw.items():
-        tr = [(p, won) for p, won, rt in bets if rt < JUN1]
+        tr = [(p, won) for p, won, rt, _ in bets if rt < JUN1]
         if len(tr) < MIN_N:
             continue
+        med_stake = sorted(sz for p, won, rt, sz in bets if rt < JUN1)[len(tr) // 2]
+        z_all = allz.get(w, 0.0)
         n, wins, wr, roi, z, ap = stats(tr)
-        if wr >= WIN_MIN * 100 and ENTRY_LO <= ap <= ENTRY_HI and roi > 0:
-            te = [(p, won) for p, won, rt in bets if rt >= JUN1]
+        if (wr >= WIN_MIN * 100 and ENTRY_LO <= ap <= ENTRY_HI and roi > 0
+                and z_all > Z_ALL_MIN and med_stake >= MIN_MED_STAKE):
+            te = [(p, won) for p, won, rt, _ in bets if rt >= JUN1]
             tm = stats(te) if len(te) >= MIN_TEST else None
-            cand.append(dict(w=w, n=n, wr=wr, roi=roi, z=z, ap=ap, tm=tm, ntest=len(te)))
+            cand.append(dict(w=w, n=n, wr=wr, roi=roi, z=z, ap=ap, tm=tm,
+                             ntest=len(te), z_all=z_all, med_stake=med_stake))
 
     # FDR on the edge p-values
     ps = sorted(sf(c["z"]) for c in cand)
@@ -81,9 +101,9 @@ def main():
     sel = sorted([c for c in cand if sf(c["z"]) <= thr and thr > 0],
                  key=lambda c: c["roi"], reverse=True)
 
-    print(f"wallets with >= {MIN_N} conviction bets (top {1-CONV_PCTILE:.0%} by stake) pre-June: {len(byw):,} scanned")
-    print(f"matching the profile (win>= {WIN_MIN:.0%}, entry {ENTRY_LO}-{ENTRY_HI}, "
-          f"+ROI, FDR-significant): {len(sel)}\n")
+    print(f"wallets with >= {MIN_N} TRUSTED conviction bets (top {1-CONV_PCTILE:.0%} by train stake) pre-June: {len(byw):,} scanned")
+    print(f"matching the profile (win>= {WIN_MIN:.0%}, entry {ENTRY_LO}-{ENTRY_HI}, +ROI, "
+          f"z_all>{Z_ALL_MIN:g}, med stake>=${MIN_MED_STAKE:g}, FDR-significant): {len(sel)}\n")
 
     fwd = [c for c in sel if c["tm"]]
     if fwd:
@@ -107,6 +127,7 @@ def main():
     import json
     json.dump([{"wallet": c["w"], "name": c["w"][:10], "train_win": round(c["wr"], 1),
                 "train_conv_roi": round(c["roi"], 3), "train_z": round(c["z"], 2),
+                "z_all": round(c["z_all"], 2), "med_stake": round(c["med_stake"]),
                 "avg_entry": round(c["ap"], 2), "train_n": c["n"],
                 "fwd_win": round(c["tm"][2], 1) if c["tm"] else None,
                 "fwd_conv_roi": round(c["tm"][3], 3) if c["tm"] else None,

@@ -182,6 +182,15 @@ runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
 | `clob.polymarket.com` | order books, prices, **authoritative resolution** (`winner` flags), market slugs |
 | Alchemy (Polygon) | funding-cluster traces + the live trade webhook |
 
+**Candidate next sources** (researched 2026-07, not yet wired in):
+
+| Source | Would unlock |
+|--------|--------------|
+| [Goldsky Turbo Pipelines](https://docs.goldsky.com/chains/polymarket) | per-fill order events with timestamps for *every* wallet (Polymarket killed subgraphs with the 2026-04-28 v2 migration) — fixes the cache's two blind spots: no entry times, and position-level aggregation hiding scalps. See also [warproxxx/poly_data](https://github.com/warproxxx/poly_data), [Bitquery](https://docs.bitquery.io/docs/examples/polymarket-api/) |
+| [PolymarketData.co](https://www.polymarketdata.co/) | historical order-book snapshots (Aug 2025+) → depth-aware fill model, the known step before sizing up |
+| Pinnacle closing lines via [SharpAPI](https://sharpapi.io/sportsbooks/pinnacle-odds-api) / [sportsapis.dev](https://sportsapis.dev/historical-odds) / [BettingIsCool](https://api.bettingiscool.com/) (Pinnacle closed its public API 2025-07) | closing-line-value as an independent "was this bet sharp" ground truth; a Pinnacle *suspension* on an ITF/esports match is itself a fixing signal |
+| [Polysights Insider Finder](https://gizmodo.com/tracking-insider-trading-on-polymarket-is-turning-into-a-business-of-its-own-2000709286) | cross-check for flagged insider wallets |
+
 ## Gotchas a maintainer must know
 
 1. **CLOB `winner` flags: `false` means "not yet", not "lost".** Every token of
@@ -205,6 +214,15 @@ runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
    for anything latency-sensitive (it copied 1 of ~104 trades in June).
 7. **GitHub Pages soft-limits ~10 deploys/hour** on the `jaxperro` repo —
    batch dashboard pushes (see that repo's README).
+8. **Cached `res_t`/`won` can be fake for high-volume wallets.** When the
+   data-api omits `endDate`, `res_t` falls back to the wallet's *sell time*
+   and `won` is the price direction at pull — a scalper's sold-at-profit
+   position masquerades as a resolved win (ArbTraderRookie's rows were 100%
+   this). Selection must read **trusted rows only** via `live/trust.py`
+   (cross-wallet consensus `res_t` + pulled-after-resolution + `resolved` not
+   False). Also: never judge a held edge on a replay window shorter than the
+   wallet's entry→resolution lead — that's how the long-lead holders were
+   being filtered out (see FINDINGS "The holder blind spot").
 
 ---
 
