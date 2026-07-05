@@ -2,7 +2,7 @@
   {
     "wallet": "0xca15832b58674fc4e9d7e87bff859c4b94629b50",
     "name": "Gabe22",
-    "weight": 0.1758,
+    "weight": 0.1759,
     "tier": "validated",
     "z": 31.1,
     "z_oos": 26.9,
@@ -14,7 +14,7 @@
   {
     "wallet": "0xf419556a9758214628edff29dce8f39a8aa13ce7",
     "name": "2j289uUmAio7ap245975",
-    "weight": 0.1012,
+    "weight": 0.1013,
     "tier": "validated",
     "z": 17.91,
     "z_oos": 9.49,
@@ -74,11 +74,11 @@
   {
     "wallet": "0x2a315a8d15cfde768bcd47ba5cacf3ef5894f2f0",
     "name": "itsjustcheddar",
-    "weight": 0.0426,
+    "weight": 0.0433,
     "tier": "validated",
-    "z": 7.54,
-    "z_oos": 7.03,
-    "n": 2295,
+    "z": 7.65,
+    "z_oos": 7.0,
+    "n": 2323,
     "win_rate": 64.0,
     "avg_entry": 0.59,
     "band_0204": 0.05
@@ -98,12 +98,12 @@
   {
     "wallet": "0xf3a6ef82d0904db48c0ad8016ca62c556fee8c6c",
     "name": "0xf3a6ef82\u2026",
-    "weight": 0.0377,
+    "weight": 0.0366,
     "tier": "validated",
-    "z": 6.66,
-    "z_oos": 4.13,
-    "n": 1132,
-    "win_rate": 33.7,
+    "z": 6.47,
+    "z_oos": 3.06,
+    "n": 1192,
+    "win_rate": 33.2,
     "avg_entry": 0.26,
     "band_0204": 0.2
   },
@@ -120,18 +120,6 @@
     "band_0204": 0.26
   },
   {
-    "wallet": "0xd189664c5308903476f9f079820431e4fd7d06f4",
-    "name": "rwo",
-    "weight": 0.0311,
-    "tier": "validated",
-    "z": 5.5,
-    "z_oos": 4.68,
-    "n": 2354,
-    "win_rate": 52.9,
-    "avg_entry": 0.49,
-    "band_0204": 0.13
-  },
-  {
     "wallet": "0xc78cdeb598f0bb8bae62a80e8134e842b3c44455",
     "name": "kjjdhfgsg",
     "weight": 0.031,
@@ -142,6 +130,18 @@
     "win_rate": 49.8,
     "avg_entry": 0.42,
     "band_0204": 0.23
+  },
+  {
+    "wallet": "0xd189664c5308903476f9f079820431e4fd7d06f4",
+    "name": "rwo",
+    "weight": 0.0307,
+    "tier": "validated",
+    "z": 5.42,
+    "z_oos": 4.38,
+    "n": 2485,
+    "win_rate": 52.5,
+    "avg_entry": 0.49,
+    "band_0204": 0.14
   },
   {
     "wallet": "0x8d650d146740463611db1f3974ae9b922953ce8f",
@@ -158,7 +158,7 @@
   {
     "wallet": "0xa75f077c6e2510b020967c6230bac2bf342300f0",
     "name": "0xa75f077c\u2026",
-    "weight": 0.0289,
+    "weight": 0.029,
     "tier": "validated",
     "z": 5.12,
     "z_oos": 2.7,
@@ -182,11 +182,11 @@
   {
     "wallet": "0x13289e4d4538c0e7c282c451bd5ede8e27aef16d",
     "name": "0x13289e4d\u2026",
-    "weight": 0.0257,
+    "weight": 0.026,
     "tier": "validated",
-    "z": 4.54,
-    "z_oos": 4.0,
-    "n": 2114,
+    "z": 4.6,
+    "z_oos": 4.07,
+    "n": 2136,
     "win_rate": 48.7,
     "avg_entry": 0.44,
     "band_0204": 0.23
@@ -198,7 +198,7 @@
     "tier": "validated",
     "z": 4.48,
     "z_oos": 2.34,
-    "n": 2045,
+    "n": 2046,
     "win_rate": 94.1,
     "avg_entry": 0.92,
     "band_0204": 0.01
@@ -209,7 +209,7 @@
     "weight": 0.0207,
     "tier": "validated",
     "z": 3.66,
-    "z_oos": 1.25,
+    "z_oos": 1.26,
     "n": 738,
     "win_rate": 35.9,
     "avg_entry": 0.3,
