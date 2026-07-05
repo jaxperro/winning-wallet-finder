@@ -5,17 +5,17 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 1027.37,
- "deployed": 0,
+ "cash": 986.06,
+ "deployed": 41.09,
  "reserve": 0.0,
- "realized": 27.37,
- "open_count": 0,
- "fees_paid": 4.61,
+ "realized": 27.16,
+ "open_count": 1,
+ "fees_paid": 4.82,
  "fee_rate": 0.03,
  "lag": {
-  "n": 11,
-  "avg_s": 42.4,
-  "avg_slip_pct": -0.0644
+  "n": 12,
+  "avg_s": 43.8,
+  "avg_slip_pct": -0.0609
  },
  "wallets": [
   "Kruto2027",
@@ -28,6 +28,24 @@
   "iohihoo"
  ],
  "bets": [
+  {
+   "token": "39624673919499839708357870699792965938365277532723750775314440243201980163416",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "Yes",
+   "title": "Will US Yacoub El Mansour win on 2026-07-05?",
+   "their_price": 0.8499,
+   "my_price": 0.83,
+   "slippage_pct": -0.0235,
+   "shares": 49.51,
+   "cost": 41.09,
+   "fee": 0.2096,
+   "opened": 1783272956,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "80843147700502805027036082406439583579682808401015030744232705672713048615233",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -434,5 +452,5 @@
   }
  ],
  "missed_pnl": -58.39,
- "updated": 1783266497
+ "updated": 1783273016
 }
