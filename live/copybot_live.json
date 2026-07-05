@@ -1,21 +1,21 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 38.1,
+ "stake": 38.04,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 952.52,
- "deployed": 0,
+ "cash": 836.67,
+ "deployed": 114.3,
  "reserve": 0.0,
- "realized": -47.48,
- "open_count": 0,
- "fees_paid": 5.72,
+ "realized": -49.03,
+ "open_count": 1,
+ "fees_paid": 7.26,
  "fee_rate": 0.03,
  "lag": {
-  "n": 14,
-  "avg_s": 43.0,
-  "avg_slip_pct": -0.0541
+  "n": 15,
+  "avg_s": 40.4,
+  "avg_slip_pct": -0.0505
  },
  "wallets": [
   "Kruto2027",
@@ -28,6 +28,24 @@
   "iohihoo"
  ],
  "bets": [
+  {
+   "token": "86810411254769790209177391989482113509619596899738102859804324023464344452771",
+   "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
+   "name": "0x4bFb-whale",
+   "outcome": "Pedro Sakamoto",
+   "title": "Bogota: Tristan McCormick vs Pedro Sakamoto",
+   "their_price": 0.5496,
+   "my_price": 0.55,
+   "slippage_pct": 0.0008,
+   "shares": 207.82,
+   "cost": 114.3,
+   "fee": 1.5431,
+   "opened": 1783295084,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "39624673919499839708357870699792965938365277532723750775314440243201980163416",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -503,5 +521,5 @@
   }
  ],
  "missed_pnl": -58.35,
- "updated": 1783293580
+ "updated": 1783295088
 }
