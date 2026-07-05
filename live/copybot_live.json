@@ -1,21 +1,21 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 40.62,
+ "stake": 40.59,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 1015.53,
- "deployed": 0,
+ "cash": 974.22,
+ "deployed": 40.62,
  "reserve": 0.0,
- "realized": 15.53,
- "open_count": 0,
- "fees_paid": 3.22,
+ "realized": 14.84,
+ "open_count": 1,
+ "fees_paid": 3.91,
  "fee_rate": 0.03,
  "lag": {
-  "n": 10,
-  "avg_s": 46.3,
-  "avg_slip_pct": -0.0519
+  "n": 11,
+  "avg_s": 42.4,
+  "avg_slip_pct": -0.0644
  },
  "wallets": [
   "Kruto2027",
@@ -28,6 +28,24 @@
   "iohihoo"
  ],
  "bets": [
+  {
+   "token": "80843147700502805027036082406439583579682808401015030744232705672713048615233",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Under",
+   "title": "Chidekh vs. Janvier: Match O/U 22.5",
+   "their_price": 0.53,
+   "my_price": 0.43,
+   "slippage_pct": -0.1887,
+   "shares": 94.47,
+   "cost": 40.62,
+   "fee": 0.6946,
+   "opened": 1783266176,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "93513675418974812419654233252243690687188593130696152284115785509092363312850",
    "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
@@ -416,5 +434,5 @@
   }
  ],
  "missed_pnl": -58.39,
- "updated": 1783252387
+ "updated": 1783266182
 }
