@@ -1,21 +1,21 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 41.07,
+ "stake": 41.05,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 944.66,
- "deployed": 82.18,
+ "cash": 903.0,
+ "deployed": 123.25,
  "reserve": 0.0,
- "realized": 26.84,
- "open_count": 2,
- "fees_paid": 5.14,
+ "realized": 26.26,
+ "open_count": 3,
+ "fees_paid": 5.72,
  "fee_rate": 0.03,
  "lag": {
-  "n": 13,
-  "avg_s": 44.1,
-  "avg_slip_pct": -0.0583
+  "n": 14,
+  "avg_s": 43.0,
+  "avg_slip_pct": -0.0541
  },
  "wallets": [
   "Kruto2027",
@@ -28,6 +28,24 @@
   "iohihoo"
  ],
  "bets": [
+  {
+   "token": "77897844654858421779065727492878127934628886583029132326154971135350782824578",
+   "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
+   "name": "shisan888",
+   "outcome": "Under",
+   "title": "Brazil vs. Norway: O/U 9.5 Total Corners",
+   "their_price": 0.53,
+   "my_price": 0.53,
+   "slippage_pct": 0.0,
+   "shares": 77.5,
+   "cost": 41.07,
+   "fee": 0.5791,
+   "opened": 1783286723,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "63332580371134698667593922708614440584203480837493423385896730577676477084507",
    "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
@@ -470,5 +488,5 @@
   }
  ],
  "missed_pnl": -58.39,
- "updated": 1783281956
+ "updated": 1783286753
 }
