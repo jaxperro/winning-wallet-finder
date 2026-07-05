@@ -256,9 +256,9 @@
    "price": 0.999,
    "stake": 41.05,
    "reason": "price moved 0.86\u21921.00",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "won",
+   "pnl": 0.04,
+   "settled": 1783290176,
    "name": "LSB1"
   },
   {
@@ -502,6 +502,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -58.39,
- "updated": 1783287767
+ "missed_pnl": -58.35,
+ "updated": 1783290179
 }
