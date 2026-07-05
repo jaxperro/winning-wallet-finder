@@ -1,21 +1,21 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 41.09,
+ "stake": 41.07,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 986.06,
- "deployed": 41.09,
+ "cash": 944.66,
+ "deployed": 82.18,
  "reserve": 0.0,
- "realized": 27.16,
- "open_count": 1,
- "fees_paid": 4.82,
+ "realized": 26.84,
+ "open_count": 2,
+ "fees_paid": 5.14,
  "fee_rate": 0.03,
  "lag": {
-  "n": 12,
-  "avg_s": 43.8,
-  "avg_slip_pct": -0.0609
+  "n": 13,
+  "avg_s": 44.1,
+  "avg_slip_pct": -0.0583
  },
  "wallets": [
   "Kruto2027",
@@ -28,6 +28,24 @@
   "iohihoo"
  ],
  "bets": [
+  {
+   "token": "63332580371134698667593922708614440584203480837493423385896730577676477084507",
+   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
+   "name": "fortuneking",
+   "outcome": "No",
+   "title": "Will Norway win on 2026-07-05?",
+   "their_price": 0.76,
+   "my_price": 0.74,
+   "slippage_pct": -0.0263,
+   "shares": 55.52,
+   "cost": 41.09,
+   "fee": 0.3205,
+   "opened": 1783281907,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "39624673919499839708357870699792965938365277532723750775314440243201980163416",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -452,5 +470,5 @@
   }
  ],
  "missed_pnl": -58.39,
- "updated": 1783273016
+ "updated": 1783281956
 }
