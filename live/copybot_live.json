@@ -1,21 +1,21 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 38.04,
+ "stake": 37.97,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 836.67,
- "deployed": 114.3,
+ "cash": 720.84,
+ "deployed": 228.42,
  "reserve": 0.0,
- "realized": -49.03,
- "open_count": 1,
- "fees_paid": 7.26,
+ "realized": -50.74,
+ "open_count": 2,
+ "fees_paid": 8.97,
  "fee_rate": 0.03,
  "lag": {
-  "n": 15,
-  "avg_s": 40.4,
-  "avg_slip_pct": -0.0505
+  "n": 16,
+  "avg_s": 38.0,
+  "avg_slip_pct": -0.0473
  },
  "wallets": [
   "Kruto2027",
@@ -28,6 +28,24 @@
   "iohihoo"
  ],
  "bets": [
+  {
+   "token": "53733734522356604892402924646066079523685110911213104693580167206002908678281",
+   "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
+   "name": "0x4bFb-whale",
+   "outcome": "Borna Gojo",
+   "title": "Iasi: Borna Gojo vs Gustavo Heide",
+   "their_price": 0.5,
+   "my_price": 0.5,
+   "slippage_pct": 0.0,
+   "shares": 228.23,
+   "cost": 114.12,
+   "fee": 1.7118,
+   "opened": 1783295212,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "86810411254769790209177391989482113509619596899738102859804324023464344452771",
    "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
@@ -521,5 +539,5 @@
   }
  ],
  "missed_pnl": -58.35,
- "updated": 1783295088
+ "updated": 1783295215
 }
