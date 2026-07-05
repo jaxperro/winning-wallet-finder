@@ -2923,8 +2923,8 @@
       "settled": 1783207546
     }
   },
-  "feed_sig": "4e41f195ef7721ea25fcab2499b21134",
-  "feed_pushed_at": 1783251819.001185,
+  "feed_sig": "95d6bde68220595819ac5d76cd6dff7a",
+  "feed_pushed_at": 1783252324.438379,
   "hwm": 1058.6790259216177,
   "missed": [
     {
@@ -3162,9 +3162,10 @@
       "price": 0,
       "stake": 40.62,
       "reason": "price 0.000 outside [0.01,0.99]",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -41.23,
+      "settled": 1783252384,
+      "name": "imwalkinghere"
     }
   ]
 }
