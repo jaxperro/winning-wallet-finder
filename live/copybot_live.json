@@ -1,15 +1,15 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 37.76,
+ "stake": 38.1,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 903.0,
- "deployed": 41.09,
+ "cash": 952.52,
+ "deployed": 0,
  "reserve": 0.0,
- "realized": -55.9,
- "open_count": 1,
+ "realized": -47.48,
+ "open_count": 0,
  "fees_paid": 5.72,
  "fee_rate": 0.03,
  "lag": {
@@ -28,6 +28,24 @@
   "iohihoo"
  ],
  "bets": [
+  {
+   "token": "39624673919499839708357870699792965938365277532723750775314440243201980163416",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "Yes",
+   "title": "Will US Yacoub El Mansour win on 2026-07-05?",
+   "their_price": 0.8499,
+   "my_price": 0.83,
+   "slippage_pct": -0.0235,
+   "shares": 49.51,
+   "cost": 41.09,
+   "fee": 0.2096,
+   "opened": 1783272956,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 8.21,
+   "settled": 1783293577
+  },
   {
    "token": "63332580371134698667593922708614440584203480837493423385896730577676477084507",
    "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
@@ -63,24 +81,6 @@
    "exit_price": 0.0,
    "pnl": -41.65,
    "settled": 1783290430
-  },
-  {
-   "token": "39624673919499839708357870699792965938365277532723750775314440243201980163416",
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "name": "LSB1",
-   "outcome": "Yes",
-   "title": "Will US Yacoub El Mansour win on 2026-07-05?",
-   "their_price": 0.8499,
-   "my_price": 0.83,
-   "slippage_pct": -0.0235,
-   "shares": 49.51,
-   "cost": 41.09,
-   "fee": 0.2096,
-   "opened": 1783272956,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "80843147700502805027036082406439583579682808401015030744232705672713048615233",
@@ -503,5 +503,5 @@
   }
  ],
  "missed_pnl": -58.35,
- "updated": 1783290497
+ "updated": 1783293580
 }
