@@ -1,15 +1,15 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 39.41,
+ "stake": 37.76,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
  "cash": 903.0,
- "deployed": 82.18,
+ "deployed": 41.09,
  "reserve": 0.0,
- "realized": -14.81,
- "open_count": 2,
+ "realized": -55.9,
+ "open_count": 1,
  "fees_paid": 5.72,
  "fee_rate": 0.03,
  "lag": {
@@ -29,6 +29,24 @@
  ],
  "bets": [
   {
+   "token": "63332580371134698667593922708614440584203480837493423385896730577676477084507",
+   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
+   "name": "fortuneking",
+   "outcome": "No",
+   "title": "Will Norway win on 2026-07-05?",
+   "their_price": 0.76,
+   "my_price": 0.74,
+   "slippage_pct": -0.0263,
+   "shares": 55.52,
+   "cost": 41.09,
+   "fee": 0.3205,
+   "opened": 1783281907,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -41.41,
+   "settled": 1783290495
+  },
+  {
    "token": "77897844654858421779065727492878127934628886583029132326154971135350782824578",
    "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543",
    "name": "shisan888",
@@ -45,24 +63,6 @@
    "exit_price": 0.0,
    "pnl": -41.65,
    "settled": 1783290430
-  },
-  {
-   "token": "63332580371134698667593922708614440584203480837493423385896730577676477084507",
-   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
-   "name": "fortuneking",
-   "outcome": "No",
-   "title": "Will Norway win on 2026-07-05?",
-   "their_price": 0.76,
-   "my_price": 0.74,
-   "slippage_pct": -0.0263,
-   "shares": 55.52,
-   "cost": 41.09,
-   "fee": 0.3205,
-   "opened": 1783281907,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "39624673919499839708357870699792965938365277532723750775314440243201980163416",
@@ -503,5 +503,5 @@
   }
  ],
  "missed_pnl": -58.35,
- "updated": 1783290433
+ "updated": 1783290497
 }
