@@ -5,8 +5,8 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 736.14,
- "deployed": 215.73,
+ "cash": 736.15,
+ "deployed": 215.72,
  "reserve": 0.0,
  "realized": -48.13,
  "open_count": 2,
@@ -539,5 +539,5 @@
   }
  ],
  "missed_pnl": -58.35,
- "updated": 1783297117
+ "updated": 1783297308
 }
