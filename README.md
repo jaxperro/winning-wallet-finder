@@ -59,7 +59,7 @@ up, real money follows (see [`LIVE_TEST.md`](LIVE_TEST.md)).
 
 | task | how |
 |------|-----|
-| **add / remove / reclass a LIVE wallet** | edit the `wallets` list in `live/copybot.paper.json` (`{"wallet","name","class":"volume"\|"whale","floor":123?}` — floor optional, auto p80 at boot; whales ignore floors) then run **`./live/deploy_bot.sh`** — it validates, previews, commits, pushes, redeploys Railway, and confirms the boot banner. **Push mode:** also update the Alchemy webhook's address list (dashboard.alchemy.com → Webhooks → `copybot follow set`) — the 5-min backstop poll covers a forgotten update, at poll-speed lag |
+| **add / remove / reclass a LIVE wallet** | edit the `wallets` list in `live/copybot.paper.json` (`{"wallet","name","class":"volume"\|"whale","floor":123?}` — floor optional, auto p80 at boot; whales ignore floors) then run **`./live/deploy_bot.sh`** — it validates, previews, **syncs the Alchemy webhook's address list** (`live/sync_webhook.py`, Notify API), commits, pushes, redeploys Railway, and confirms the boot banner. Fully self-contained — nothing to click in any dashboard |
 | **backtest any wallet set** | edit `live/backtest.json` (same entry shape) → `python3 live/portfolio.py`; ad-hoc without touching the dashboard: `python3 portfolio.py --wallets 0xabc,0xdef:whale --days 14 --out /tmp/t.json` |
 | **promote a wallet to live** | prove it in `backtest.json` first, copy the same entry into `copybot.paper.json`, run `deploy_bot.sh` |
 | **watch the live bot** | `railway logs --service copybot` (one summary line per 60s poll); the book is also committed as `live/copybot_live.json` and rendered on the dashboard |
@@ -85,7 +85,9 @@ push (every script here already does).
 | `live/` | **the current system**: cache, scanners, sharp selection, backtest, daily pipeline ([live/README](live/README.md)) |
 | `live/trust.py` | the trusted-row filter every selector must read through (see gotchas 8–9) |
 | `live/backtest.json` · `live/copybot.paper.json` | the two wallet-set configs: backtest experiments vs. the live paper bot (same entry shape) |
-| `live/deploy_bot.sh` | one-command live-bot deploy: validate → preview → commit → push → Railway redeploy → confirm boot |
+| `live/deploy_bot.sh` | one-command live-bot deploy: validate → preview → Alchemy address sync → commit → push → Railway redeploy → confirm boot |
+| `live/sync_webhook.py` | diffs the follow set against the push-mode Alchemy webhook and patches add/remove (token in gitignored `config.json`) |
+| `railway.json` · `nixpacks.toml` · `.railwayignore` | Railway build config: NIXPACKS builder + `bash host/start.sh` start command pinned as code; secrets/cache excluded from build uploads |
 | `live/discord_daily.py` | the daily Discord digest (the only Discord output) |
 | `copybot.py` | the copy-trading bot: push/poll trigger → follow filter → execution engine (paper + live) |
 | `archive/copytrade.py` | the execution engine the bot reuses: sizing, risk gates, price guard, paper/live executors |
@@ -162,9 +164,9 @@ in [`live/README.md`](live/README.md).
 | file | holds |
 |------|-------|
 | `live/copybot.paper.json` | **committed** (no secrets): the live paper bot's wallet set + classes + follow/risk params — deploy with `live/deploy_bot.sh` |
-| `config.json` | `daily_webhook` (the Discord digest), Alchemy key, a legacy curated watchlist + floors (`sync_floors.py`) |
+| `config.json` | `daily_webhook` (Discord digest) · `alchemy_notify_token` + `alchemy_webhook_id` (webhook address sync) · `alchemy_signing_key` (local push-mode runs) · Alchemy RPC key · a legacy curated watchlist + floors (`sync_floors.py`) |
 | `config.live.json` | live-trading credentials (`private_key`, `funder_address`) + tiny test caps — see `LIVE_TEST.md` |
-| Railway `copybot` service | `GITHUB_TOKEN` (fine-grained PAT, contents-RW on this repo — the bot commits its state/feed back), `DISCORD_WEBHOOK` no longer used (per-trade pings retired) |
+| Railway `copybot` service | `GITHUB_TOKEN` (fine-grained PAT, contents-RW on this repo — the bot commits its state/feed back) · `ALCHEMY_SIGNING_KEY` (presence = push mode; delete it to fall back to 60s polling) · `PORT=8080` (the public domain routes here) |
 
 ---
 
@@ -176,9 +178,12 @@ backtest and bot share:
 - **Taker fees** (Polymarket V2, since 2026-03-30): `fee = shares × rate × p(1−p)`,
   sports rate 0.03 — charged on every marketable entry and exit; redeeming at
   resolution is free. Fee-adjusted Copy P&L also drives *selection*.
-- **Lag + slippage**: the bot fills at the live CLOB ask at detection (~60s poll),
-  logging per-fill `detect_lag_s` and `slippage_pct`; the backtest applies a
-  +0.5%/~90s haircut. Measured so far: ~48s avg / +0.8% avg slip.
+- **Lag + slippage**: the bot fills at the live CLOB ask at detection — since
+  2026-07-06 that's **push mode** (Alchemy address-activity webhook →
+  `POST /alchemy`, ~2–5s) rather than the 60s poll; per-fill `detect_lag_s`
+  and `slippage_pct` are logged, and the backtest applies a +0.5%/~90s
+  haircut. Poll-era measurements: ~39s avg lag, **−4.0% avg slip** (the
+  asymmetric price guard means better-than-their-price fills are common).
 - **Dynamic sizing, two wallet classes, their-bet ceiling**: each bet stakes a
   fraction of current working equity set by the followed wallet's class —
   **`volume`** (default, 4%, conviction bets only) or **`whale`** (12%, every
@@ -221,7 +226,8 @@ runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
 | `data-api.polymarket.com` | positions, trades, activity (+`eventSlug`), leaderboard |
 | `gamma-api.polymarket.com` | market metadata (NB: `condition_ids` filter returns nothing for resolved markets) |
 | `clob.polymarket.com` | order books, prices, **authoritative resolution** (`winner` flags), market slugs |
-| Alchemy (Polygon) | funding-cluster traces + the live trade webhook |
+| `lb-api.polymarket.com` | the wallet's OWN all-time P&L/volume (`/profit`, `/volume`) — the sharps table's **PM P&L** sanity anchor (see gotcha 10) |
+| Alchemy (Polygon) | the push-mode address-activity webhook (instant trade detection) + funding-cluster traces; Notify API (`dashboard.alchemy.com/api`) drives the automatic address-list sync |
 
 **Candidate next sources** (researched 2026-07, not yet wired in):
 
