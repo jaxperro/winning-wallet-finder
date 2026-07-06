@@ -360,6 +360,21 @@
  ],
  "missed": [
   {
+   "ts": 1783339698,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "48302785187533870991276747532094514985511838194127838255653440518770460119591",
+   "cond": "0x109a3826bfc1894b102cbf6bb5b4b7da693adcfbe585be3aba1771b3e9157ec0",
+   "title": "Map 3 Total Rounds: Over/Under 19.5",
+   "outcome": "Over",
+   "price": 0.55,
+   "stake": 38.31,
+   "reason": "price moved 0.52\u21920.55",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1783332296,
    "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
    "token": "32771169753350331029950806710098076404717297517810036699269011155222914631193",
@@ -661,5 +676,5 @@
   }
  ],
  "missed_pnl": -48.69,
- "updated": 1783339084
+ "updated": 1783339764
 }
