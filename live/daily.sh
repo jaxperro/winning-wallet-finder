@@ -19,7 +19,18 @@
 #
 # Schedule with launchd/cron (Mac must be awake). Logs to daily.log.
 set -u
-cd "$(dirname "$0")"
+# Run from a private copy so editing this file mid-run can't shift bash's read
+# offset (the 2026-07-06 crash: a commit during step 2 made bash resume mid-word
+# and die on a phantom syntax error). DAILY_SRC keeps paths anchored here.
+if [ -z "${DAILY_COPY:-}" ]; then
+    DAILY_SRC="$(cd "$(dirname "$0")" && pwd)"
+    DAILY_COPY="$(mktemp "${TMPDIR:-/tmp}/daily.sh.XXXXXX")"
+    cp "$0" "$DAILY_COPY"
+    export DAILY_SRC DAILY_COPY
+    exec /bin/bash "$DAILY_COPY" "$@"
+fi
+trap 'rm -f "$DAILY_COPY"' EXIT
+cd "$DAILY_SRC"
 # heads-up ping so the run's start is visible in Discord (digest comes at the end)
 python3 discord_daily.py --ping "🔄 Daily pipeline started $(date '+%H:%M') — refreshing the bet cache (takes a while); sharp digest lands when it finishes." || true
 echo "[daily] $(date '+%F %T') 1/6 discover (enumerate last 14d)"
@@ -53,7 +64,7 @@ if git diff --cached --quiet 2>/dev/null; then
 elif git commit -q -m "live: daily refresh — skilled + sharp wallets [skip ci]"; then
     # sync first so a diverged remote (e.g. a manual commit) doesn't wedge the
     # auto-push permanently; abort a conflicting rebase and retry next run.
-    git pull --rebase -q origin main 2>/dev/null || git rebase --abort 2>/dev/null || true
+    git pull --rebase --autostash -q origin main 2>/dev/null || git rebase --abort 2>/dev/null || true
     if git push -q origin main; then
         echo "[daily] pushed refreshed sharp list"; PUBLISH="pushed"
     else
