@@ -55,6 +55,7 @@ from copytrade import (  # noqa: E402
     CopyTrader, PaperExecutor, LiveExecutor, DEFAULT_CONFIG,
     load_json, save_json, new_state, recent_trades, confirm_live,
 )
+import smart_money as sm  # noqa: E402
 from smart_money import SSL_CTX  # noqa: E402
 
 CLOB_API = "https://clob.polymarket.com"
@@ -441,6 +442,8 @@ class Copybot:
             "wallets": [w.get("name", w["wallet"][:10]) for w in self.cfg.get("watch", [])],
             "classes": {w.get("name", w["wallet"][:10]): self.engine.wallet_class(w["wallet"])
                         for w in self.cfg.get("watch", [])},
+            "floors": {self.names.get(a, a[:10]): v
+                       for a, v in self.filt.per_wallet.items()},
             "bets": sorted(bets.values(),
                            key=lambda b: b.get("settled") or b.get("opened") or 0,
                            reverse=True)[:100],
@@ -703,6 +706,69 @@ def make_handler(bot, signing_key):
 
 # ── config / cli ────────────────────────────────────────────────────────────
 
+def _pctl80(vals):
+    s = sorted(v for v in vals if v and v > 0)
+    if not s:
+        return None
+    k = (len(s) - 1) * 0.8
+    f = int(k)
+    return s[f] if f + 1 >= len(s) else s[f] + (s[f + 1] - s[f]) * (k - f)
+
+
+def derive_floor(wallet):
+    """Cacheless p80 conviction floor: the 80th percentile of the wallet's
+    recent position stakes from the data-api (last 500 closed + current open).
+    The Railway worker has no cache.duckdb, so this is how an auto floor gets
+    computed at boot; it refreshes on every restart."""
+    sizes = []
+    for p in (sm.get_json("/closed-positions", {"user": wallet, "limit": 500,
+                          "sortBy": "TIMESTAMP", "sortDirection": "DESC"}) or []) +              (sm.get_json("/positions", {"user": wallet, "limit": 500,
+                          "sizeThreshold": 0}) or []):
+        v = p.get("initialValue") or 0
+        if v > 0:
+            sizes.append(v)
+    return _pctl80(sizes)
+
+
+def normalize_follow_config(cfg):
+    """Expand the compact follow format into the legacy structures the filter
+    and engine read. One entry per wallet:
+
+        "wallets": [{"wallet": "0x…", "name": "…", "class": "volume"|"whale",
+                     "floor": 123.0 (optional)}]
+
+    -> watchlist / watch / follow.wallet_class / follow.per_wallet_min_usd.
+    Old-format configs (no "wallets" key, e.g. config.live.json) pass through
+    untouched. Floors: explicit "floor" wins; whales need none (follow-all);
+    otherwise derived from the data-api at boot (see derive_floor)."""
+    ws = cfg.get("wallets")
+    if not ws:
+        return cfg
+    cfg["watchlist"] = [w["wallet"] for w in ws]
+    cfg["watch"] = [{"wallet": w["wallet"], "name": w.get("name", w["wallet"][:10])}
+                    for w in ws]
+    f = cfg.setdefault("follow", {})
+    f["wallet_class"] = {w["wallet"].lower(): w.get("class", "volume") for w in ws}
+    floors = {}
+    for w in ws:
+        addr = w["wallet"].lower()
+        name = w.get("name", addr[:10])
+        if w.get("class", "volume") == "whale":
+            continue                            # follow-all: floors ignored
+        if w.get("floor") is not None:
+            floors[addr] = float(w["floor"])
+        else:
+            fl = derive_floor(w["wallet"])
+            if fl is not None:
+                floors[addr] = round(fl, 2)
+                log(f"floor[{name}] auto p80 = ${fl:,.0f}")
+            else:
+                log(f"⚠ floor[{name}] underivable — falls back to the global "
+                    f"min_their_usd ${f.get('min_their_usd', 0):,.0f}")
+    f["per_wallet_min_usd"] = floors
+    return cfg
+
+
 def load_cfg(path):
     if not os.path.exists(path):
         sys.exit(f"No config at {path}.")
@@ -710,6 +776,7 @@ def load_cfg(path):
     cfg["risk"] = {**DEFAULT_CONFIG["risk"], **cfg.get("risk", {})}
     cfg["live"] = {**DEFAULT_CONFIG["live"], **cfg.get("live", {})}
     cfg["follow"] = {**FOLLOW_DEFAULT, **cfg.get("follow", {})}
+    normalize_follow_config(cfg)
     # accept either "watchlist" (addresses) or "watch" ([{wallet,name}]); fill the gap
     if not cfg.get("watchlist") and cfg.get("watch"):
         cfg["watchlist"] = [w["wallet"] for w in cfg["watch"]]
