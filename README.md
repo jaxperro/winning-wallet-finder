@@ -272,6 +272,18 @@ runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
    a transiently failed re-pull then hides the wallet's whole history from
    exact `pulled_at` checks (trust.py has a 14-day fallback for this).
 
+10. **Hold-to-resolution P&L is a copy ceiling, not the wallet's bank
+    statement.** The dashboard's Conv/All-Time P&L columns price every entry
+    held to resolution at the wallet's own stakes — the right yardstick for a
+    copier that holds, and the wrong one for judging the wallet itself.
+    Polymarket's own profile P&L (lb-api `/profit`, the **PM P&L** column) is
+    their actual cash-flow result. ~1× gap = true holder (LSB1 +$69.7k vs
+    +$68.5k); a huge gap = scalper whose entries resolve well but who never
+    holds (ArbTraderRookie: **+$8.6k real vs +$462k held, 53×** — a 0.5%
+    margin on $1.7M volume). For scalpers, whether a copier can reproduce
+    their fills is the open question — judge by the live book's measured
+    slippage, never the ceiling.
+
 ---
 
 ## The research (how we got here)

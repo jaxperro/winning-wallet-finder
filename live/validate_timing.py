@@ -77,6 +77,22 @@ def _clob_winner(cond, token):
     return _CLOB[cond].get(str(token))
 
 
+def _pm_profit(w):
+    """The wallet's own all-time account P&L as Polymarket reports it
+    (lb-api /profit): cash-flow truth including early sells. The sanity anchor
+    next to the hold-to-resolution columns — a ~1x gap means true holder, a
+    huge gap means scalper (ArbTraderRookie: +$8.6k real vs +$462k held, 53x —
+    a 0.5% margin on $1.7M volume)."""
+    try:
+        req = urllib.request.Request(
+            "https://lb-api.polymarket.com/profit?window=all&limit=1&address=" + w,
+            headers={"User-Agent": "Mozilla/5.0"})
+        r = json.loads(urllib.request.urlopen(req, timeout=15, context=_SSL).read())
+        return round(r[0]["amount"]) if r else None
+    except Exception:
+        return None
+
+
 def _bet_pnl(b):
     """Resolved (outcome) P&L of one cache bet: a $size stake at avg price p pays
     size/p if won, else $0 — so P&L = size·(1−p)/p if won else −size."""
@@ -134,6 +150,7 @@ def display_stats(w):
         "realized_pnl": round(sum(_bet_pnl(b) for b in recent)),
         "all_win": round(100 * all_won / (all_won + all_lost), 1) if (all_won + all_lost) else None,
         "all_won": all_won, "all_lost": all_lost, "all_pnl": round(all_pnl),
+        "pm_pnl": _pm_profit(w),
         "avg_bet": round(sum(b["size"] for b in conv) / len(conv)) if conv else 0,
         "copy_pnl": 0, "held_pnl": 0, "held_won": 0, "held_lost": 0, "sold": 0,
         "name": None, "last_trade": 0, "last_conv_bet": 0,
