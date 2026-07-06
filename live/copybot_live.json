@@ -26,6 +26,15 @@
   "0x4bFb-whale",
   "iohihoo"
  ],
+ "classes": {
+  "Kruto2027": "volume",
+  "fortuneking": "volume",
+  "LSB1": "volume",
+  "imwalkinghere": "volume",
+  "Stavenson": "whale",
+  "0x4bFb-whale": "whale",
+  "iohihoo": "volume"
+ },
  "bets": [
   {
    "token": "53733734522356604892402924646066079523685110911213104693580167206002908678281",
@@ -568,5 +577,5 @@
   }
  ],
  "missed_pnl": -58.35,
- "updated": 1783302160
+ "updated": 1783305869
 }
