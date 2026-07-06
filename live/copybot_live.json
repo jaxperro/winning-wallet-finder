@@ -5,8 +5,8 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 455.62,
- "deployed": 502.13,
+ "cash": 455.66,
+ "deployed": 502.09,
  "reserve": 0.0,
  "realized": -42.25,
  "open_count": 5,
@@ -116,8 +116,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 43.23,
-   "sold_proceeds": 21.13
+   "sold_shares": 43.31,
+   "sold_proceeds": 21.17
   },
   {
    "token": "86810411254769790209177391989482113509619596899738102859804324023464344452771",
@@ -359,6 +359,51 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1783339976,
+   "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
+   "token": "63034166988796816059669385460243431880344153981361991158070959478891966380905",
+   "cond": "0x83a2d8b4affe32a088d4266992864be033de6c9852c5f96d66fa97eaae8814f2",
+   "title": "Iasi: Sascha Gueymard-Wayenburg vs Dino Prizmic",
+   "outcome": "Sascha Gueymard-Wayenburg",
+   "price": 0.49,
+   "stake": 114.93,
+   "reason": "price moved 0.17\u21920.49",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0x4bFb-whale"
+  },
+  {
+   "ts": 1783339976,
+   "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
+   "token": "42547589507605522199027042374465286348062761195488572254098703374913743464550",
+   "cond": "0xb79ccdc9c767b1bb2ac22a93b2c908b3303492035f5ead3bd89f0cfb3b638547",
+   "title": "Set Handicap: Prizmic (-1.5) vs Gueymard-Wayenburg (+1.5)",
+   "outcome": "Gueymard-Wayenburg",
+   "price": 0.49,
+   "stake": 114.93,
+   "reason": "price moved 0.37\u21920.49",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0x4bFb-whale"
+  },
+  {
+   "ts": 1783339976,
+   "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
+   "token": "35999866942520225558906330979282116570425086821095273031252763144318981217871",
+   "cond": "0xedcdddca703a1500b9c9b861bb1eda2aae0f385985cfd8ea4d91f078ff0b22f8",
+   "title": "Sascha Gueymard-Wayenburg vs. Dino Prizmic: Total Sets O/U 2.5",
+   "outcome": "Over 2.5",
+   "price": 0.49,
+   "stake": 114.93,
+   "reason": "price moved 0.44\u21920.49",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0x4bFb-whale"
+  },
   {
    "ts": 1783339698,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -676,5 +721,5 @@
   }
  ],
  "missed_pnl": -48.69,
- "updated": 1783339764
+ "updated": 1783340084
 }
