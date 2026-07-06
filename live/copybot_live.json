@@ -360,6 +360,21 @@
  ],
  "missed": [
   {
+   "ts": 1783332296,
+   "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
+   "token": "32771169753350331029950806710098076404717297517810036699269011155222914631193",
+   "cond": "0x5b8ea3d7a6373e7f47db101f5e1655bb22aca9966c7c0bdbd8311179054d68e2",
+   "title": "Map Handicap: Lavked (-1.5) vs Just Players (+1.5)",
+   "outcome": "Lavked",
+   "price": 0.31,
+   "stake": 114.93,
+   "reason": "price moved 0.29\u21920.31",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "ArbTrader"
+  },
+  {
    "ts": 1783301842,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "102152517760279819101151573238490012903089489836238465651374507491554775479518",
@@ -646,5 +661,5 @@
   }
  ],
  "missed_pnl": -48.69,
- "updated": 1783329043
+ "updated": 1783332296
 }
