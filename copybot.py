@@ -248,10 +248,18 @@ class FollowFilter:
         self.per_wallet = {k.lower(): float(v) for k, v in f["per_wallet_min_usd"].items()}
         self.min_entry = float(f["min_entry"])
         self.max_entry = float(f["max_entry"])
+        # whale-class wallets (follow.wallet_class) are followed on EVERY trade:
+        # no conviction floor at all — their whole book is the signal (both
+        # current whales win ~92% across all bets, so size-filtering them only
+        # costs flow). The entry-price band still applies (execution guard).
+        self.whales = {w.lower() for w, c in (f.get("wallet_class") or {}).items()
+                       if c == "whale"}
         wl = cfg.get("watchlist") or [w["wallet"] for w in cfg.get("watch", [])]
         self.wallets = {w.lower() for w in wl}
 
     def floor(self, wallet):
+        if wallet.lower() in self.whales:
+            return 0.0
         return self.per_wallet.get(wallet.lower(), self.min_their_usd)
 
     def check(self, wallet, t):
@@ -274,8 +282,9 @@ class FollowFilter:
 
     def describe(self):
         pw = f" · {len(self.per_wallet)} per-wallet floors" if self.per_wallet else ""
+        wh = f" · {len(self.whales)} whales follow-all" if self.whales else ""
         return (f"follow filter · {'BUY-only' if self.buy_only else 'BUY+SELL'} · "
-                f"conviction ≥ ${self.min_their_usd:,.0f}{pw} · "
+                f"conviction ≥ ${self.min_their_usd:,.0f}{pw}{wh} · "
                 f"entry [{self.min_entry:.2f},{self.max_entry:.2f}]")
 
 
