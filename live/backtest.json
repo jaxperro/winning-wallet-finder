@@ -12,6 +12,7 @@
     { "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266", "name": "imwalkinghere", "class": "volume" },
     { "wallet": "0xfc81760d44a21acc9fd4b749a5bf9a9b2eeae072", "name": "iohihoo",       "class": "volume" },
     { "wallet": "0xf5fe759cece500f58a431ef8dacea321f6e3e23d", "name": "Stavenson",     "class": "whale" },
-    { "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880", "name": "0x4bFb-whale",  "class": "whale" }
+    { "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880", "name": "0x4bFb-whale",  "class": "whale" },
+     { "wallet": "0x4bfb41d5b570defd03c39a9a4d8de6bd8b8982e", "name": "ArbTrader",  "class": "whale" }
   ]
 }
