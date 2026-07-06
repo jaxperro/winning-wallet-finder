@@ -20,6 +20,8 @@
 # Schedule with launchd/cron (Mac must be awake). Logs to daily.log.
 set -u
 cd "$(dirname "$0")"
+# heads-up ping so the run's start is visible in Discord (digest comes at the end)
+python3 discord_daily.py --ping "🔄 Daily pipeline started $(date '+%H:%M') — refreshing the bet cache (takes a while); sharp digest lands when it finishes." || true
 echo "[daily] $(date '+%F %T') 1/6 discover (enumerate last 14d)"
 python3 enumerate.py 14
 echo "[daily] $(date '+%F %T') 2/6 freshen cache (watchlists forced + new wallets)"

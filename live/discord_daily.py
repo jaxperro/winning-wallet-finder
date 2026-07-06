@@ -24,6 +24,14 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 MAX_ROWS = 30            # embed description caps at 4096 chars; 30 rows fits
 
 
+def _post(hook, payload):
+    req = urllib.request.Request(
+        hook, data=json.dumps(payload).encode(),
+        headers={"Content-Type": "application/json",
+                 "User-Agent": "Mozilla/5.0"})     # Discord 403s the default UA
+    urllib.request.urlopen(req, timeout=15, context=ssl._create_unverified_context())
+
+
 def main():
     try:
         hook = json.load(open(os.path.join(HERE, "..", "config.json"))).get("daily_webhook")
@@ -31,6 +39,15 @@ def main():
         hook = None
     if not hook:
         print("[discord] no daily_webhook in ../config.json — skipping")
+        return
+    # --ping "text": one plain status line (used by daily.sh's start-of-run
+    # heads-up so the digest hours later isn't the only sign of life)
+    if len(sys.argv) > 2 and sys.argv[1] == "--ping":
+        try:
+            _post(hook, {"content": sys.argv[2]})
+            print("[discord] ping sent")
+        except Exception as e:
+            print("[discord] ping failed:", e)
         return
     try:
         sharps = json.load(open(os.path.join(HERE, "watch_sharps.json")))
@@ -59,12 +76,8 @@ def main():
         "footer": {"text": ((sys.argv[1] + " · ") if len(sys.argv) > 1 else "")
                    + "30D win% · conviction record · conviction P&L (wallet's own)"},
     }
-    req = urllib.request.Request(
-        hook, data=json.dumps({"embeds": [embed]}).encode(),
-        headers={"Content-Type": "application/json",
-                 "User-Agent": "Mozilla/5.0"})     # Discord 403s the default UA
     try:
-        urllib.request.urlopen(req, timeout=15, context=ssl._create_unverified_context())
+        _post(hook, {"embeds": [embed]})
         print(f"[discord] daily sharp digest sent ({min(len(sharps), MAX_ROWS)} rows)")
     except Exception as e:
         print("[discord] digest failed:", e)
