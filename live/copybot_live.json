@@ -1,16 +1,16 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 37.98,
+ "stake": 38.07,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 722.65,
- "deployed": 226.91,
+ "cash": 736.14,
+ "deployed": 215.73,
  "reserve": 0.0,
- "realized": -50.44,
+ "realized": -48.13,
  "open_count": 2,
- "fees_paid": 8.99,
+ "fees_paid": 9.13,
  "fee_rate": 0.03,
  "lag": {
   "n": 16,
@@ -539,5 +539,5 @@
   }
  ],
  "missed_pnl": -58.35,
- "updated": 1783296421
+ "updated": 1783297117
 }
