@@ -8,9 +8,9 @@
  "cash": 977.78,
  "deployed": 0,
  "reserve": 0.0,
- "realized": -22.22,
- "adjustments": 0,
- "ledger_drift": 15.45,
+ "realized": -37.67,
+ "adjustments": 15.45,
+ "ledger_drift": 0.0,
  "open_count": 0,
  "fees_paid": 16.07,
  "fee_rate": 0.03,
@@ -783,5 +783,5 @@
   }
  ],
  "missed_pnl": -56.09,
- "updated": 1783375720
+ "updated": 1783375951
 }
