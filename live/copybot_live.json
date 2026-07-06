@@ -22,18 +22,25 @@
   "fortuneking",
   "LSB1",
   "imwalkinghere",
+  "iohihoo",
   "Stavenson",
-  "0x4bFb-whale",
-  "iohihoo"
+  "0x4bFb-whale"
  ],
  "classes": {
   "Kruto2027": "volume",
   "fortuneking": "volume",
   "LSB1": "volume",
   "imwalkinghere": "volume",
+  "iohihoo": "volume",
   "Stavenson": "whale",
-  "0x4bFb-whale": "whale",
-  "iohihoo": "volume"
+  "0x4bFb-whale": "whale"
+ },
+ "floors": {
+  "Kruto2027": 76.84,
+  "fortuneking": 93.94,
+  "LSB1": 400.74,
+  "imwalkinghere": 130.79,
+  "iohihoo": 62.91
  },
  "bets": [
   {
@@ -595,5 +602,5 @@
   }
  ],
  "missed_pnl": -58.35,
- "updated": 1783307316
+ "updated": 1783307486
 }
