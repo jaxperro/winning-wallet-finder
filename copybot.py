@@ -60,6 +60,49 @@ from smart_money import SSL_CTX  # noqa: E402
 
 CLOB_API = "https://clob.polymarket.com"
 
+# ── on-chain resolution (ConditionalTokens payout vectors) ───────────────────
+# The CLOB's `winner` flags NEVER populate for operator-resolved markets
+# (in-play set winners, game O/Us — the whale class's staple), and data-api
+# curPrice on a dead book reads 0.5 whether the market refunded or one side
+# won (2026-07-06 audit: four resolved positions sat unsettleable for hours).
+# The chain is the source every redeem actually pays from: payoutNumerators/
+# payoutDenominator on the CTF contract — 1/0 winners, [0.5,0.5] refunds,
+# denominator 0 = not resolved. Selectors are keccak4 of the signatures.
+CTF_ADDR = "0x4D97DCd97eC945f40cF65F87097ACe5EA0476045"
+_SEL_DEN = "0xdd34de67"    # payoutDenominator(bytes32)
+_SEL_NUM = "0x0504c814"    # payoutNumerators(bytes32,uint256)
+_RPC_URL = None            # resolved once in main() (env/config), stays None without a key
+_PAYOUTS = {}              # cond -> [p0, p1], cached once resolved (immutable)
+
+
+def _eth_call(data):
+    body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "eth_call",
+                       "params": [{"to": CTF_ADDR, "data": data}, "latest"]}).encode()
+    req = urllib.request.Request(_RPC_URL, data=body,
+                                 headers={"Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=15, context=SSL_CTX) as r:
+        return json.loads(r.read())["result"]
+
+
+def onchain_payouts(cond):
+    """[payout_outcome0, payout_outcome1] for a resolved condition (order matches
+    the CLOB market's tokens[] order), or None if unresolved / no RPC configured."""
+    if not _RPC_URL or not cond:
+        return None
+    if cond in _PAYOUTS:
+        return _PAYOUTS[cond]
+    try:
+        c = cond[2:].rjust(64, "0")
+        den = int(_eth_call(_SEL_DEN + c), 16)
+        if not den:
+            return None
+        nums = [int(_eth_call(_SEL_NUM + c + hex(i)[2:].rjust(64, "0")), 16)
+                for i in (0, 1)]
+        _PAYOUTS[cond] = [n / den for n in nums]
+        return _PAYOUTS[cond]
+    except Exception:
+        return None
+
 # follow-filter defaults — merged under cfg["follow"]; permissive so nothing is
 # silently dropped until you opt in. The engine's risk caps bound everything
 # regardless of these.
@@ -133,31 +176,43 @@ def market_neg_risk(cond):
 
 
 def resolution_price(token_id, cond, outcome=None):
-    """Settled price of our held token: 1.0 if it won, 0.0 if it lost, None if the
-    market hasn't resolved yet. Matches by outcome first (as the dashboard does),
-    then by token_id.
+    """Settled price of our held token — 1.0 won, 0.0 lost, 0.5 refunded
+    (50/50 resolution: walkovers/abandonments), None if not resolved yet.
 
-    CRITICAL semantics: the CLOB reports winner=False on EVERY token of an
-    UNRESOLVED market — False alone means "not yet", not "lost". A market is
-    resolved only once some token's winner is True. Treating False as lost made
-    the bot settle live in-play markets as instant losses minutes after entry
-    (2026-07-02: four winning bets booked as -$180 of losses)."""
+    Two tiers:
+      1. CLOB `winner` flags — authoritative when present. CRITICAL semantics:
+         winner=False on EVERY token of an UNRESOLVED market means "not yet",
+         not "lost" (treating False as lost booked four winning live bets as
+         -$180 of instant losses on 2026-07-02). Token-id match first —
+         outcome labels are venue strings, the token id is the position.
+      2. On-chain CTF payout vector — the flags NEVER populate for
+         operator-resolved markets (in-play set winners / game O/Us) and
+         never reflect 50/50 refunds; the chain records both (2026-07-06:
+         four refunded Gojo/Heide positions sat locked for hours)."""
     toks = market_tokens(cond)
     if not toks:
         return None
-    if not any(t.get("winner") is True for t in toks):
-        return None                              # nobody has won -> not resolved
-
-    def winp(t):
-        return 1.0 if t.get("winner") is True else 0.0
-
-    if outcome is not None:
+    if any(t.get("winner") is True for t in toks):
+        def winp(t):
+            return 1.0 if t.get("winner") is True else 0.0
         for t in toks:
-            if t.get("outcome") == outcome:
+            if str(t.get("token_id")) == str(token_id):
                 return winp(t)
-    for t in toks:
+        if outcome is not None:
+            for t in toks:
+                if t.get("outcome") == outcome:
+                    return winp(t)
+        return None
+    # tier 2: no winner flag — ask the chain (only meaningful once trading closed)
+    m = _market(cond)
+    if not (m and m.get("closed")):
+        return None
+    po = onchain_payouts(cond)
+    if po is None:
+        return None
+    for i, t in enumerate(toks[:2]):
         if str(t.get("token_id")) == str(token_id):
-            return winp(t)
+            return po[i]
     return None
 
 
@@ -332,14 +387,45 @@ class Copybot:
                     buys.append(f)
                 else:
                     # link the mirror-exit to its bet record so the sold leg shows
-                    # up in per-bet P&L (feed) — cash above is already correct
+                    # up in per-bet P&L (feed) — cash above is already correct.
+                    # Accumulate UNROUNDED (rounding per-fill drifted the ledger a
+                    # few cents per trim); the feed rounds at render time.
                     b = self.engine.state.get("bets", {}).get(f["token"])
                     if b:
-                        b["sold_shares"] = round(b.get("sold_shares", 0) + f["shares"], 2)
-                        b["sold_proceeds"] = round(b.get("sold_proceeds", 0)
-                                                   + f["shares"] * f["price"] - fee, 2)
+                        b["sold_shares"] = b.get("sold_shares", 0) + f["shares"]
+                        b["sold_proceeds"] = (b.get("sold_proceeds", 0)
+                                              + f["shares"] * f["price"] - fee)
+                    # sells go to the fills ledger too — the audit had no sell
+                    # trail to reconcile the ledger against
+                    try:
+                        with open(os.path.join(self.here, FILL_LOG), "a") as fh:
+                            fh.write(json.dumps({
+                                "ts": round(time.time(), 1), "side": "SELL",
+                                "token": f["token"], "shares": round(f["shares"], 4),
+                                "price": round(f["price"], 4), "fee": f["fee"],
+                                "mode": "live" if self.engine.ex.live else "paper",
+                            }) + "\n")
+                    except Exception:
+                        pass
             ex.fills.clear()
         return buys
+
+    def ledger_drift(self):
+        """cash minus what the ledger implies it should be. The invariant:
+        cash = bank + Σadjustments + Σsettled-bet P&L + Σopen(-cost-fee+sold).
+        Non-zero means a booking bug — the audit found +$15.45 of Jul-5
+        accounting-migration residue this check would have caught same-day."""
+        st = self.engine.state
+        bets = st.get("bets", {})
+        adj = sum(a["amount"] for a in st.get("adjustments", []))
+        realized = sum(b["pnl"] for b in bets.values() if b.get("pnl") is not None)
+        # in-flight flows keyed on "no P&L booked yet", NOT on my_pos membership:
+        # a fully-exited bet leaves my_pos immediately but only gets its pnl at
+        # the next write_feed reconcile — keying on my_pos made the invariant
+        # jump during exactly that window
+        flows = sum(-(b["cost"] + (b.get("fee") or 0)) + (b.get("sold_proceeds") or 0)
+                    for b in bets.values() if b.get("pnl") is None)
+        return st.get("cash", 0) - (self.cfg["bankroll_usd"] + adj + realized + flows)
 
     def _record_lag(self, wallet, t, fill):
         """Gap 1 — log the detection lag and price slippage of a copy: their fill
@@ -379,11 +465,13 @@ class Copybot:
         bets = self.engine.state.setdefault("bets", {})
         prev = bets.get(fill["token"])
         if prev and prev.get("status") == "open":
+            # accumulate UNROUNDED (per-fill rounding drifted the ledger); the
+            # feed rounds at render time
             sh = prev["shares"] + fill["shares"]
             cost = prev["cost"] + fill["shares"] * my_p
-            prev.update(shares=round(sh, 2), cost=round(cost, 2),
-                        my_price=round(cost / sh, 4) if sh else prev["my_price"],
-                        fee=round((prev.get("fee") or 0) + fill.get("fee", 0), 4))
+            prev.update(shares=sh, cost=cost,
+                        my_price=(cost / sh) if sh else prev["my_price"],
+                        fee=(prev.get("fee") or 0) + fill.get("fee", 0))
         else:
             bets[fill["token"]] = {
                 "token": fill["token"], "wallet": wallet,
@@ -432,7 +520,13 @@ class Copybot:
             "hwm": round(st.get("hwm", 0.0), 2),
             "cash": round(cash, 2), "deployed": round(exp, 2),
             "reserve": round(st.get("reserve", 0.0), 2),   # banked profit, never bet
-            "realized": round(cash + exp + st.get("reserve", 0.0) - bank, 2),
+            # realized excludes audited ledger adjustments (they're bookkeeping
+            # corrections, not P&L) and the feed carries the drift so the
+            # dashboard shows a broken ledger instead of hiding one
+            "realized": round(cash + exp + st.get("reserve", 0.0) - bank
+                              - sum(a["amount"] for a in st.get("adjustments", [])), 2),
+            "adjustments": round(sum(a["amount"] for a in st.get("adjustments", [])), 2),
+            "ledger_drift": round(self.ledger_drift(), 2),
             "open_count": len(mp),
             "fees_paid": round(st.get("fees_paid", 0.0), 2),
             "fee_rate": self.fee_rate,
@@ -444,9 +538,14 @@ class Copybot:
                         for w in self.cfg.get("watch", [])},
             "floors": {self.names.get(a, a[:10]): v
                        for a, v in self.filt.per_wallet.items()},
-            "bets": sorted(bets.values(),
-                           key=lambda b: b.get("settled") or b.get("opened") or 0,
-                           reverse=True)[:100],
+            # state accumulators are unrounded — round display fields at render
+            "bets": [{**b, **{k: round(b[k], 2) for k in
+                              ("shares", "cost", "sold_shares", "sold_proceeds", "fee")
+                              if b.get(k) is not None},
+                      **({"my_price": round(b["my_price"], 4)} if b.get("my_price") else {})}
+                     for b in sorted(bets.values(),
+                                     key=lambda b: b.get("settled") or b.get("opened") or 0,
+                                     reverse=True)[:100]],
             "missed": sorted(missed,
                              key=lambda m: m.get("settled") or m.get("ts") or 0,
                              reverse=True)[:60],
@@ -535,7 +634,8 @@ class Copybot:
         exp = self.engine.open_exposure()
         cash = self.engine.state.get("cash", bank)
         reserve = self.engine.state.get("reserve", 0.0)
-        realized = cash + exp + reserve - bank   # see _drain_fills / settle_resolved
+        adj = sum(a["amount"] for a in self.engine.state.get("adjustments", []))
+        realized = cash + exp + reserve - bank - adj   # see _drain_fills / settle_resolved
         n = len(self.engine.state["my_pos"])
         lag = self.engine.state.get("lag", {})
         lagstr = ""
@@ -543,8 +643,10 @@ class Copybot:
             lagstr = (f" · {lag['n']} copies avg lag {lag['sum_s']/lag['n']:.0f}s "
                       f"slip {lag['sum_slip_pct']/lag['n']:+.1%}")
         bankstr = f" · banked ${reserve:,.0f}" if reserve else ""
+        drift = self.ledger_drift()
+        driftstr = f" · ⚠ LEDGER DRIFT ${drift:+.2f}" if abs(drift) > 0.01 else ""
         log(f"[{cycle}] open {n} · deployed ${exp:,.0f} · free ${cash:,.0f}/${bank:,.0f}"
-            f"{bankstr} · realized ${realized:+,.2f}{lagstr}"
+            f"{bankstr} · realized ${realized:+,.2f}{lagstr}{driftstr}"
             + (f" · CAN'T OPEN (free < ${stake:,.0f} stake — bets missed)"
                if cash < stake else ""))
 
@@ -578,6 +680,67 @@ class Copybot:
                     if f["token"] == tok:                    # the fill from this copy
                         self._record_lag(wallet, t, f)
 
+    def reconcile_exits(self):
+        """Exits the signal made while we weren't listening. RECENT_TRADE_WINDOW_S
+        (10 min) skips stale trades, so a SELL during downtime/restart never
+        mirrors — the 2026-07-06 audit found the bot holding McCormick/Sakamoto
+        a day after the whale had sold it for +$4.2k. For every open copy, ask
+        the data-api (market-filtered, so no pagination cap) whether the signal
+        still holds the token: gone + market still trading -> mirror-exit ALL
+        of ours now at the live price; gone + market closed -> leave it for
+        settle_resolved (selling into a dead book would book winners as
+        scratches). Runs at boot and every backstop poll."""
+        with self.lock:
+            mp = self.engine.state["my_pos"]
+            checks = []
+            for token in list(mp):
+                b = self.engine.state.get("bets", {}).get(token)
+                cond = self.conds.get(token)
+                if b and b.get("wallet") and cond:
+                    checks.append((token, cond, b["wallet"]))
+            for token, cond, wallet in checks:
+                if token not in mp:
+                    continue                        # settled/sold earlier this pass
+                # FAIL-SAFE: get_json returns None on failure and [] on a real
+                # empty — silence must NEVER read as "they exited" (the dry-run
+                # of this very fix tried to liquidate the whole book when the
+                # API blipped). An exit needs three affirmative facts:
+                #   1. their open positions on this market: fetched AND empty,
+                #   2. their closed positions: fetched AND contain our token
+                #      (they demonstrably had it and closed it),
+                #   3. the market itself: fetched AND still trading.
+                ps = sm.get_json("/positions", {"user": wallet, "market": cond,
+                                                "limit": 10, "sizeThreshold": 0})
+                if ps is None:
+                    continue                        # API failure — retry next pass
+                held = sum(p.get("size", 0) or 0 for p in ps
+                           if str(p.get("asset")) == str(token))
+                book = self.engine.state["their_pos"].setdefault(wallet, {})
+                if held > 0:
+                    book[token] = held              # refresh sell-fraction basis
+                    continue
+                cps = sm.get_json("/closed-positions", {"user": wallet, "market": cond,
+                                                        "limit": 10})
+                if cps is None or not any(str(p.get("asset")) == str(token) for p in cps):
+                    continue                        # can't corroborate the exit
+                m = _market(cond)
+                if not m:
+                    continue                        # market state unknown — don't act
+                book[token] = 0.0
+                if m.get("closed"):
+                    continue                        # resolved -> settle path pays truth
+                pos = mp.get(token)
+                if not pos:
+                    continue
+                name = self.names.get(wallet.lower(), wallet[:10])
+                log(f"reconcile: {name} exited {pos.get('title','?')[:42]} while we "
+                    f"weren't listening — mirror-exiting {pos['shares']:.1f}sh now")
+                # their_prev<=0 -> frac 1.0: sell everything we hold
+                self.engine._handle_their_sell(
+                    token, 0, 0, f"{pos.get('outcome','?')} · {pos.get('title','?')[:42]}")
+                self._drain_fills()                 # book the sell's cash + sold-leg
+            self.engine.persist()
+
     def settle_resolved(self):
         """Free capital like the dashboard: when an open position's market has
         resolved, settle it at the winner price (1/0), recycle the cash, and tally
@@ -595,9 +758,9 @@ class Copybot:
                 pos = mp[token]
                 # gap 2 — LIVE: redeem winning shares on-chain so the freed USDC is
                 # actually back in the wallet (paper just recycles a number). Losers
-                # are worth $0, no redeem. If the redeem fails, keep the position and
-                # retry next pass rather than free a slot we haven't cashed out.
-                if self.redeemer and wp >= 0.5:
+                # are worth $0, no redeem; 50/50 refunds redeem at $0.50/share. If the
+                # redeem fails, keep the position and retry next pass.
+                if self.redeemer and wp > 0:
                     neg = market_neg_risk(cond)
                     if neg and cond not in self.negrisk_warned:
                         self.negrisk_warned.add(cond)
@@ -620,12 +783,13 @@ class Copybot:
                 base_cost = b["cost"] if b else pos["cost"]
                 pnl = proceeds + sold - base_cost - fee_in
                 self.engine.state["cash"] += proceeds   # recycle freed capital
+                status = "won" if wp > 0.5 else "lost" if wp < 0.5 else "refund"
                 if b:
-                    b.update(status=("won" if wp >= 0.5 else "lost"),
+                    b.update(status=status,
                              exit_price=wp, pnl=round(pnl, 2), settled=int(time.time()))
                 del mp[token]
                 self.conds.pop(token, None)
-                tag = "WON ✅" if wp >= 0.5 else "LOST ❌"
+                tag = {"won": "WON ✅", "lost": "LOST ❌", "refund": "REFUND ↩ (50/50)"}[status]
                 label = f"{pos.get('outcome','?')} · {pos.get('title','?')[:42]}"
                 self.engine.alert(
                     f"SETTLE {label} — {tag} {pos['shares']:.0f}sh -> "
@@ -645,7 +809,7 @@ class Copybot:
                 p = m.get("price") or 0.5
                 fee = taker_fee(m["stake"] / p, p, self.fee_rate)
                 pnl = (m["stake"] / p) * wp - m["stake"] - fee
-                m.update(status=("won" if wp >= 0.5 else "lost"),
+                m.update(status=("won" if wp > 0.5 else "lost" if wp < 0.5 else "refund"),
                          pnl=round(pnl, 2), settled=int(time.time()))
             self.engine.persist()
 
@@ -849,8 +1013,18 @@ def main():
     filt = FollowFilter(cfg)
     bot = Copybot(cfg, engine, filt, redeemer=redeemer)
 
+    # on-chain resolution RPC (payout vectors for operator-resolved markets):
+    # env ALCHEMY_RPC_URL wins (the Fly worker has no config.json), else the
+    # local config's alchemy_key. Without either, tier-2 settlement is off and
+    # operator-resolved/refunded positions stay open (pre-2026-07-06 behavior).
+    global _RPC_URL
+    _RPC_URL = (os.environ.get("ALCHEMY_RPC_URL")
+                or (f"https://polygon-mainnet.g.alchemy.com/v2/{cfg['alchemy_key']}"
+                    if cfg.get("alchemy_key") else None))
+
     mode = "LIVE — REAL MONEY" if executor.live else "PAPER (no orders placed)"
     log(f"copybot · mode: {mode}")
+    log(f"on-chain settle fallback: {'ON' if _RPC_URL else 'OFF — set ALCHEMY_RPC_URL'}")
     log(f"watching {len(cfg.get('watchlist', []))} wallets · {filt.describe()}")
     log(f"bankroll ${cfg['bankroll_usd']:.0f} @ {cfg['bankroll_pct']:.1%}/entry · "
         f"guard {cfg['price_guard_pct']:.0%} · "
@@ -880,6 +1054,7 @@ def main():
             log("first run — baselined history; published online feed, copied nothing")
             return
         bot.settle_resolved()
+        bot.reconcile_exits()
         for w in cfg.get("watchlist", []):
             bot.on_wallet_activity(w)
         bot.summary(0)
@@ -893,6 +1068,7 @@ def main():
     # webhook below; behaviour through the filter+engine is identical either way.)
     if args.poll:
         bot.baseline()
+        bot.reconcile_exits()      # catch exits made while we were down
         log(f"poll mode · every {args.poll}s · Ctrl-C to stop")
         bot.write_feed()                              # publish an initial "online" snapshot
         bot.publish_feed()
@@ -900,6 +1076,8 @@ def main():
         try:
             while True:
                 bot.settle_resolved()                 # recycle capital at resolution
+                if cycle % 5 == 0:
+                    bot.reconcile_exits()
                 for w in cfg.get("watchlist", []):
                     bot.on_wallet_activity(w)
                 cycle += 1
@@ -915,6 +1093,7 @@ def main():
                    or cfg.get("alchemy_signing_key", ""))
     port = int(os.environ.get("PORT", 8080))
     bot.baseline()
+    bot.reconcile_exits()          # catch exits made while we were down
 
     # webhook mode is event-driven, but the book must not depend on the next
     # push arriving: a heartbeat thread settles resolved positions, refreshes
@@ -929,6 +1108,7 @@ def main():
             try:
                 bot.settle_resolved()
                 if cycle % 5 == 0:
+                    bot.reconcile_exits()
                     for w in cfg.get("watchlist", []):
                         bot.on_wallet_activity(w)
                 bot.summary(cycle)

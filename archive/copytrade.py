@@ -141,10 +141,13 @@ def clob_price(token_id, side):
 
 
 def their_positions(wallet):
-    """Current open positions -> {token_id: shares}, for exit-fraction math."""
+    """Current open positions -> {token_id: shares}, for exit-fraction math.
+    Cap is generous: a whale can hold >500 open positions, and a position
+    missing from the seed both breaks no-backfill (their ADD to an old
+    position looks like a fresh OPEN) and the sell-fraction math."""
     pos = {}
     offset = 0
-    while offset < 500:
+    while offset < 2000:
         page = get_json("/positions",
                         {"user": wallet, "limit": 50, "offset": offset,
                          "sizeThreshold": 0.1})
