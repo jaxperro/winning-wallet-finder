@@ -4616,8 +4616,8 @@
       "settled": null
     }
   },
-  "feed_sig": "8a40b64c516da0aca02b24f7bba0da19",
-  "feed_pushed_at": 1783347075.432732,
+  "feed_sig": "83830637918cdb23e0fdbb77f2c2db6d",
+  "feed_pushed_at": 1783347602.8815114,
   "hwm": 1058.6790259216177,
   "missed": [
     {
@@ -4990,9 +4990,9 @@
       "price": 0.99,
       "stake": 38.36,
       "reason": "price moved 0.68\u21920.99",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 0.38,
+      "settled": 1783347727,
       "name": "fortuneking"
     },
     {
@@ -5007,7 +5007,8 @@
       "reason": "price moved 0.27\u21920.41",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "fortuneking"
     }
   ]
 }
