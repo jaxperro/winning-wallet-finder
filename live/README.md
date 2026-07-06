@@ -40,8 +40,8 @@ underdog/longshot prices — the copyable alpha), `balanced`, or `favorite`
 | sharps | `conviction_scan.py` + `validate_timing.py` | conviction-profile scan → copy-positive-holder selection → `watch_sharps.json` (see "The repeatable find") |
 | portfolio | `portfolio.py` | $1k paper book off the cache → `portfolio.json` (see "Paper portfolio") |
 | dashboard | `dashboard.py` | self-contained `dashboard.html` — sortable, archetype-tagged, live recent-trade lookup |
-| backtest | `backtest_june.py [arch]` | copy an archetype's June-1+ entries, $1000, no lag → P&L |
-| clean test | `clean_test.sh` | **the honest test**: re-select on pre-June-1 data only, then backtest June-1+ forward |
+| backtest | `../archive/live-research/backtest_june.py [arch]` | copy an archetype's June-1+ entries, $1000, no lag → P&L (archived 2026-07-06 with the rest of the June research layer) |
+| clean test | `../archive/live-research/clean_test.sh` | **the honest test**: re-select on pre-June-1 data only, then backtest June-1+ forward |
 
 ## The cache is the point
 
@@ -84,7 +84,7 @@ turn into losers out-of-sample. **Don't copy favorite-riders.** The `value`
 archetype (beats underdog prices) is where real alpha may live — test it with
 `backtest_june.py value`.
 
-## Strategy backtests
+## Strategy backtests (June research layer — archived to `../archive/live-research/` 2026-07-06)
 
 - `strategy.py` — train (pre-May-30) / test (June1+) wallet selection on copy-ROI
   + z + monthly consistency + diversification. → `selection.json`.

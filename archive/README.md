@@ -19,3 +19,17 @@ run one you'd adjust the import path.
 | `xarb.py` | Cross-venue scanner: match the same event on Polymarket vs Kalshi, flag price gaps. | Venues priced efficiently (~1¢); both legs cost >$1 after fees. |
 
 The keeper that came out of all this lives at the repo root: `insider.py`.
+
+## Later additions (2026-07-06 cleanup)
+
+| Path | What it was | Why it's here |
+|------|-------------|---------------|
+| `hunt.py` / `huntwide.py` / `oos.py` / `copyback.py` / `watch.json` | pre-`live/` research sweeps: candidate hunts, out-of-sample replays, copy-backtests | superseded by the `live/` selection layer (skill → conviction → validate_timing) |
+| `live-research/` | the June 2026 selection experiments: `strategy.py`, `followability.py`, `pnl_basket/focused.py`, `backtest_june.py`, `clean_test.sh` + their outputs | the research is settled (see FINDINGS); the surviving ideas live on in `live/` |
+| `us-venue/` | `us_listable.py` — mapped the replay stream against Polymarket US listings (95/794 matched; US settles off-chain via FCM/clearinghouse, so no wallet tracking) | the US move was scrapped 2026-07-06: no on-chain wallets, no copyable signal |
+| `retired-infra/` | Railway build config (`railway.json`, `nixpacks.toml`, `.railwayignore`, `runtime.txt`), the Mac launchd runner (`com.jaxperro.copybot.plist`, `run_copybot.sh`), the GH-Actions cron (`copybot.workflow.yml`) | the worker now runs on Fly.io `arn` (see root README); the Actions cron was throttled to uselessness; the Mac poller was replaced by the cloud worker |
+| `local/` | untracked logs/CSVs/state from the above experiments | kept out of git; safe to delete wholesale |
+
+**Still-live code in this directory:** `copytrade.py` is imported by the root
+`copybot.py` as its execution engine (sizing, risk gates, executors) — archived
+as a *strategy* (raw copy-trading is −EV), kept as a *library*.

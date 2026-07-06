@@ -41,3 +41,4 @@ live/*_scored.json
 live/watch_prejune*.json
 live/history/
 live/slug_cache.json
+archive/local/

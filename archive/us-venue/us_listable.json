@@ -1,0 +1,4067 @@
+{
+ "0x3d54ff4dbfaa8367975bc3c62db1be7e7fffb62c2c2f3e3dcc63b482fd2c0a32": {
+  "listed": true,
+  "us_slug": "aec-wnba-phx-ind-2026-06-24",
+  "how": "slug",
+  "title": "Phoenix Mercury vs. Indiana Fever"
+ },
+ "0x7eb6609e0f22026c19f0b3c28102e2f3e8e72adf1dca832376534a91a0bc273c": {
+  "listed": true,
+  "us_slug": "aec-wnba-min-wsh-2026-06-24",
+  "how": "slug",
+  "title": "Minnesota Lynx vs. Washington Mystics"
+ },
+ "0x139d794420fd67fd295e9e70da3737ddd81bdaa06bfd571da0244053cf2c2952": {
+  "listed": true,
+  "us_slug": "aec-cs2-vsc-isg-2026-06-25",
+  "how": "slug",
+  "title": "Counter-Strike: Vasco Esports vs Isurus (BO3) - Thunderpick World Championship South American Series #1 Group A"
+ },
+ "0xcf821ca559bf7a054ae3865731cbbfc41251869afdc7c4a3df4765dd31a7f420": {
+  "listed": true,
+  "us_slug": "aec-cs2-biga-ej-2026-06-28",
+  "how": "slug",
+  "title": "Counter-Strike: BIG Academy vs Endless Journey (BO3) - CCT Europe Challengers Series Playoffs"
+ },
+ "0x1d7b7c2f33c6c5e765b4fdd62a73cf93eddc158f57fa4a2fa5543565b01d1c22": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Portugal vs. Nigeria: Portugal O/U 1.5"
+ },
+ "0x3537480b97edf19af61f41e53a509a49a77ad99cdfc40b98d12c2e6f5e7fca17": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Australia vs. T\u00fcrkiye: Australia O/U 2.5"
+ },
+ "0xbced17329d570356b764955e8de50b01d2ecdd3705b1bf4715bb5b8ecb9665a7": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Australia vs. T\u00fcrkiye: Australia O/U 1.5"
+ },
+ "0x5867c2ab8b7e61f9fa31f58ea7ad6b6c0fdabacda00a1be9227c75acff9f5603": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Brazil vs. Morocco: Morocco O/U 2.5"
+ },
+ "0x163251671dcf5251f17076aa65731344517c6c6fed081c41c6d343d67baca170": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Washington Spirit vs. Houston Dash: 2nd Half O/U 1.5"
+ },
+ "0x5d8878daf64b6b7891dd88fcf5f93b9cc93a10ce0ef5f7e4039431be172ca707": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Cirstea vs. Raducanu: Set 1 Games O/U 8.5"
+ },
+ "0x0a73599980268d01b2923fda85718dfb80b5100908024a8a9caef16f42ee7f52": {
+  "listed": true,
+  "us_slug": "aec-itfw-sonzhe-leosch-2026-06-10",
+  "how": "name",
+  "title": "ITF Merzig: Sonja Zhenikhova vs Leonie Schuknecht"
+ },
+ "0xebb1703cc7b5cd5a2c6c66a93c217f81dae11070598310e0ac441e2ad8c05b20": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "ODI Series Bangladesh vs Australia: Bangladesh vs Australia"
+ },
+ "0x1369ad21a19827de9c89f0d4c0c9655dd2d5ee1d63b5ea1439222dc130f30beb": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Bolivia vs. Algeria: Bolivia O/U 2.5"
+ },
+ "0x857f9962f244969271230d72a1b9e8b2d54c735a697dc5fe572c9d148e839b0b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Dota 2: Spirit Academy vs Hive - Game 2 Winner"
+ },
+ "0xed596c2d3ced47d60754112ce8addb2da5743d489ca6416509ebaf7ea4c4ad0c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Struff vs. Bublik: Set 1 Games O/U 9.5"
+ },
+ "0x82bac4dff42adfdd225b2e4716e23a936a73cdd30988e238cce098bc9f5384b8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Paraguay vs. Australia: Australia O/U 2.5 Corners"
+ },
+ "0xeec87d49b2429426096e36b22d3d2d2bde88dde147f204a2c04ba29ddf21d482": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Qatar vs. Switzerland: 1st Half O/U 1.5"
+ },
+ "0x444089b28d6d97824f47b36007ca10a275e0cf8cf0d782e48f984d384137e955": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Mexico vs. South Africa: South Africa O/U 1.5"
+ },
+ "0x45796a8fce579cdb280f7819ec746ba4d3aad3555c8d3f5a232a23d816fb5380": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "ITF Kayseri: Ustiniya Lekomtseva vs Sofiia Bielinska"
+ },
+ "0x3bff2927015f87dfa54d75239543a87a9225c3c84f667c90f380f68cfa8ebcb1": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Washington Spirit vs. Houston Dash: Washington Spirit 2nd Half O/U 0.5"
+ },
+ "0x926dc871faa9134bf6431326f58f8ccb6863757cd4efb382ff0cbb3758a47b80": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Iraq vs. Venezuela: Iraq O/U 1.5"
+ },
+ "0xd17ef024951c080e0b626df952b2a735ba3cb19b8e2559e284fa31d25291390d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Games Total: O/U 2.5"
+ },
+ "0xa2cee34ba4c21cda51fd43800ce319aee92a1f7d90b1d4d4beac645ae7950d7d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Germany vs. Paraguay: O/U 10.5 Total Corners"
+ },
+ "0xabde9f240e24fa576e35c4ab04fdfd98cc82e418c8164dbc8b30a6770f121d84": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Qatar vs. Switzerland: Qatar O/U 1.5"
+ },
+ "0x013cca38db8146f61abd30664244c0ccc4f8545ecd5fc2ebeae31118e8db93dd": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "England vs. Croatia: Croatia 1st Half O/U 0.5"
+ },
+ "0x9e93846c512af71048b3a77cf7230c1cbb5cefdc93d24b26992c1d77a0dbff5f": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Bellucci vs. Bublik: Match O/U 22.5"
+ },
+ "0x577524f82e05d15b96a54248c10b57af6dc557273d96103d710497b4e8c3a2ba": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Spread: T\u00fcrkiye (-1.5)"
+ },
+ "0x72cc7de505e6aa50f14270a8768a140f8e2938c1ea154a346f3b74b9285b104a": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Will Bahrain vs. Syria end in a draw?"
+ },
+ "0xe53b5f5e910361d65d71f43c366439940590e7045f312ce01bcd9d7350e64bae": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Velikova vs Ivanovic"
+ },
+ "0x20db3f83b44202c5fda11cd2d1a515b3bcbb498ef2896866df8ff8b3dbe753b9": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "ICC T20 World Cup, Women: Australia vs Bangladesh"
+ },
+ "0x3c10f5d0f89b1c83edd466fd2031b0a34bbb294a75b6d7e418fac6290440540e": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Brazil vs. Morocco: Morocco O/U 1.5"
+ },
+ "0xfb8ffb03fb7082741ff3d603ecb6dd603d1d2cb15195203347599059b91bb846": {
+  "listed": true,
+  "us_slug": "aec-atp-leoraq-pavkot-2026-06-17",
+  "how": "name",
+  "title": "Royan: Leo Raquillet vs Pavel Kotov"
+ },
+ "0xc28c24a30438abe26f257af714116f9e68f6c2b53e9f8fd1125b2bd230951efe": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Haiti vs. Scotland: Haiti O/U 1.5"
+ },
+ "0xcd3f123ebeb39c57c113c6d5b43cc99d2c716f766891037c5e1c6f6fde3c3df8": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Haiti vs. Scotland: Haiti O/U 2.5"
+ },
+ "0x8765323fca49de64dcca00758421f58288bf4ef09eca1512ee2f7f83deb5b6d0": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Mexico vs. South Africa: South Africa O/U 2.5"
+ },
+ "0x8c4a76157cd6f5386d2cbad08815bf548008800aab1a6fbeeec20edc7ddca5ed": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Map 3 Total Rounds: Over/Under 18.5"
+ },
+ "0x387878f8ef139fb62c86b3fa142dc78218c98bd3b4c4ffcb8dbcc4c90a91cf6f": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Mexico vs. South Africa: Mexico O/U 2.5"
+ },
+ "0xefb637d227631778f6693c0bc5d42c80c1581eeca9434911a03573f9bb5ff58c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Mees Rottgering vs. Kyrian Jacquet: Total Sets O/U 2.5"
+ },
+ "0x31650f1965df4d9d30238378baa091934657779e155c121c1db496714d71950a": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Netherlands vs. Japan: Japan O/U 1.5"
+ },
+ "0xd68f657a3ae3049ef8f6935e0ab2721f0d16fd34746d58e77475dded528a1cdf": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Cristian vs. Boulter: Match O/U 21.5"
+ },
+ "0x9dc56f4a42e8c32ab249c5ec7786e8d1b1df297ce441e622f26af3fb9566a1c4": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Bellucci vs. Bublik: Match O/U 21.5"
+ },
+ "0xeab4ce66e5ed959c800c1fffb348c130d071107c5a2eda3bb303adb02309f438": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: OlyBet SB vs Donstu Esports - Map 2 Winner"
+ },
+ "0xd570ab52e1ae2ac317912419629ddbb7aa34c2f8f55e843f9ae54e23431bda09": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Map 3 Rounds Handicap: G2 (-3.5) vs FUT Esports (+3.5)"
+ },
+ "0xe11656c5a47d83817d3c9f54749294976a6328e5e060a94be5b2495be2666061": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Sonego vs. Etcheverry: Match O/U 40.5"
+ },
+ "0x4784feb2e1a144c9a3ab343400dfbca1bf3888a45a172592e98e3a57b930ae5d": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Netherlands vs. Japan: Japan O/U 2.5"
+ },
+ "0xfd876bced98574277b0975e5e1250eaa1a707726b6e7d34bf2b2c83fc5dc9a71": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Qatar vs. Switzerland: Qatar O/U 2.5"
+ },
+ "0x65c2d49d18ffcedd4fa2374a0c20c66b5fad3344225b1c706ee2b4b446cc3052": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Map 2 Rounds Handicap: BetBoom Team (-3.5) vs FUT Esports (+3.5)"
+ },
+ "0xed5a232c9d99b006eae6b9f1caf0742c17f9cf4d28d3c77587ea4231b8ef7883": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "IR Iran vs. New Zealand: Both Teams to Score in First Half"
+ },
+ "0x72dcf016cea0c87d14a87af2aeddaab9a57fae9d085e68568da52f39c4b3cb72": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Map 2 Rounds Handicap: Donstu Esports (-3.5) vs OlyBet SB (+3.5)"
+ },
+ "0x91df7add890fb82d6998d88324369f7a8d6499f920abed82f5e1f29da26f8539": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Mexico vs. South Africa: Mexico O/U 1.5"
+ },
+ "0x2090c8d093c73cac15c510b0d3b3c5f65dddf486dfbaa67bef9ecb2d470e7b72": {
+  "listed": true,
+  "us_slug": "aec-atp-ottvir-kammaj-2026-06-08",
+  "how": "name",
+  "title": "Libema Open: Otto Virtanen vs Kamil Majchrzak"
+ },
+ "0x942036f79e8a0e324bc4fb9071f3b3df774b5584ec5326dbf9285a48301f3e01": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Map 2 Rounds Handicap: TheMongolz (-3.5) vs 9z (+3.5)"
+ },
+ "0x53e2890d287378a9e52df921f8cda12cf522da1ac02e220f675b8eb2883440be": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Portugal 2 - 1 Chile?"
+ },
+ "0xa526b8d2898ec27db4a6c096b6e5f2a5829305a77d738cf740389f10d5c585be": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Belgium vs. IR Iran: O/U 2.5"
+ },
+ "0xf8984b4a40c7d59f8f03f991e5e6734f3f1b46deecd70c6f52546516912c0f3d": {
+  "listed": true,
+  "us_slug": "aec-itfwo-tiplem-krimla-2026-06-24",
+  "how": "name",
+  "title": "ITF Palma Del Rio: Tiphanie Lemaitre vs Kristina Mladenovic"
+ },
+ "0x60789b0708ea00307d1fa8ea9c69e7721d767fca48e62613c12e8a47b60f44b2": {
+  "listed": true,
+  "us_slug": "aec-wta-elsjac-hanguo-2026-06-06",
+  "how": "name",
+  "title": "HSBC Championships, Qualification: Elsa Jacquemot vs Hanyu Guo"
+ },
+ "0x36ba34011aba34897bb03ced4f88402065e9a7d01942da7f25ad2e7fb51842a6": {
+  "listed": true,
+  "us_slug": "aec-atp-camcar-danagu-2026-06-29",
+  "how": "name",
+  "title": "Wimbledon ATP: Camilo Ugo Carabelli vs Daniel Merida Aguilar"
+ },
+ "0x6ed983ebeb3588f95d5ae0e1e7ef2adfc9fcde434782db99df248acd9babe5a8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will CD Uni\u00f3n La Calera win on 2026-06-14?"
+ },
+ "0xc555b6e5d18a93b2fcf09a10616db52c1b8d0f79da21a702114fe65d0af353b3": {
+  "listed": true,
+  "us_slug": "aec-itfwo-amehon-ayaakl-2026-06-28",
+  "how": "name",
+  "title": "ITF Rome: Amelia Honer vs Ayana Akli"
+ },
+ "0x06a0116edd73d3c3bc459e7189437fe94c56c45df6c6e74516afb29259e299d8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Japan vs. Sweden: O/U 9.5 Total Corners"
+ },
+ "0x0238b7941d685af8218f96f4f119554faed69157073c3247777bb9c8054a27c3": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Qatar vs. Switzerland: O/U 8.5 Total Corners"
+ },
+ "0xbbcfe76bab2399b65954d52a0cb85d38c67fccf7184ba8220bfd7642123c82b9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Spread: England (-2.5)"
+ },
+ "0x143cbe32e84e2ad7e55ba02c9884591f86e8a6b16c21bd58c6d71af52c6a9935": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Argentina vs. Austria: 1st Half O/U 0.5"
+ },
+ "0x0d91af0108cfdf1e8259d228b185f7d66c440b385d0bc358c6a215fa0be9e344": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "England vs. Ghana: O/U 8.5 Total Corners"
+ },
+ "0xdf6b38c61df54394457ab087efb04555e503491a7998cb3b32f7572dea65126b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Spain vs. Saudi Arabia: O/U 11.5 Total Corners"
+ },
+ "0x56f271ae09f3bbd20aeffb0050cb00dacea9678f741f664b2707b3002ede6c94": {
+  "listed": true,
+  "us_slug": "aec-atp-alefok-juacer-2026-06-29",
+  "how": "name",
+  "title": "Wimbledon ATP: Alejandro Davidovich Fokina vs Juan Manuel Cerundolo"
+ },
+ "0x0a75d99cde61c0851cc0dc8d0bdb0640711ff5c86119563154b8d29197a47041": {
+  "listed": true,
+  "us_slug": "aec-itfwo-polisa-annkub-2026-06-23",
+  "how": "name",
+  "title": "ITF Palma Del Rio: Polina Isakova vs Anna Kubareva"
+ },
+ "0xa30d024023fe35bc6ff2236e189e48a12fc3ec2536cedb544ead99daaf374838": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "ITF Nice: Manon Favier vs Julia Stusek"
+ },
+ "0xddae380d0b8a935a048b124a5a4335f04d12bd733960a3c5531c7557e9717ec1": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Switzerland vs. Bosnia-Herzegovina: O/U 11.5 Total Corners"
+ },
+ "0x35ca7676a418724a3d5b8682a67af1c61f6c0173510e48a737cf495049da056d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Spread: Germany (-5.5)"
+ },
+ "0x3cae5ef4a9c61255307af0882e204b79de294246633613bc9709ec7f8a036826": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Cuenin vs. Baroni: Set 1 Games O/U 10.5"
+ },
+ "0xb3bde662d3c425688539847bf9bc85a53d137d7f49cd8bd975e3cfae7c9bb900": {
+  "listed": true,
+  "us_slug": "aec-itfme-andned-nikmas-2026-06-21",
+  "how": "name",
+  "title": "ITF Samobor: Andrej Nedic vs Nikita Mashtakov"
+ },
+ "0xe9790f4ad8728e6f98fe35149254cd74f72a4f44dac289e843b4795093ffca18": {
+  "listed": true,
+  "us_slug": "aec-atp-mwembi-matsot-2026-06-29",
+  "how": "name",
+  "title": "Quito: Mwendwa Mbithi vs Matias Soto"
+ },
+ "0xaa80af293247aaea1854feee36aff12f7dc293583f8c9ad88759d32962d948cc": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Panama vs. England: O/U 10.5 Total Corners"
+ },
+ "0xd9a1299b2f68fd27c89b48ced35dcffede75c3fea749cc8be26645d60918c7c8": {
+  "listed": true,
+  "us_slug": "aec-wta-hardar-kamrak-2026-06-11",
+  "how": "name",
+  "title": "HSBC Championships: Harriet Dart vs Kamilla Rakhimova"
+ },
+ "0x6a88e3b89e052209ca8a863d4316403991cbf2c8693cae04298315eb704587f0": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Spread: England (-1.5)"
+ },
+ "0xb9ab7056a9170e9d21fd49f21d8c3b61d4409292ed685e6dbd1a9e6744743b8b": {
+  "listed": true,
+  "us_slug": "aec-itfwo-elemic-aylaks-2026-06-27",
+  "how": "name",
+  "title": "ITF Palma Del Rio: Elena Micic vs Ayla Aksu"
+ },
+ "0x8b9176d24ac65c3ec55f5113c290b7ce97dc026dc506db9f1444879ffcdadd6d": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Counter-Strike: Vitality vs Team Falcons (BO3) - IEM Cologne Major Playoffs"
+ },
+ "0x7a69ad5461775a031cfa9c92637084d71cb6ccbaa787d068719958baaf466d15": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Will Australia vs. Switzerland end in a draw?"
+ },
+ "0x5389df46fbc0366e12650d7e9cfc50eab40641484aa4ae024e22585bbdba41cc": {
+  "listed": true,
+  "us_slug": "aec-atp-alezve-tayfri-2026-06-20",
+  "how": "name",
+  "title": "Halle Open: Alexander Zverev vs Taylor Fritz"
+ },
+ "0xbbbc48f21937e1024e5fd5c74111253510dacec710973396a2b76aef269ffa9a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Mexico vs. Korea Republic: Both Teams to Score in First Half"
+ },
+ "0x3f5361492841955af485c2e155768f103859a9fb2b3ba29415d8f09741da3354": {
+  "listed": true,
+  "us_slug": "aec-wta-nikbar-hanvan-2026-06-09",
+  "how": "name",
+  "title": "Libema Open: Nikola Bartunkova vs Hanne Vandewinkel"
+ },
+ "0x5c8f88706c26941c87217162a526e0bebbcd186fd333082d4cee30fe4f35d9a2": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Norway vs. France: O/U 12.5 Total Corners"
+ },
+ "0xef083933fcbf62dea0dfc356e04a9ff8da1a293eb5e68d668337c2ab802b09dd": {
+  "listed": true,
+  "us_slug": "aec-itfwo-aylaks-celrui-2026-06-25",
+  "how": "name",
+  "title": "ITF Palma Del Rio: Ayla Aksu vs Celia Cervino Ruiz"
+ },
+ "0x8f9acc102ec78d37dae2756f513f9ab9cca7518aaa1e6d283cec333d6812a363": {
+  "listed": true,
+  "us_slug": "aec-atp-lucass-marfuc-2026-06-29",
+  "how": "name",
+  "title": "Wimbledon ATP: Luca Van Assche vs Marton Fucsovics"
+ },
+ "0x6481f55ae526e2c6c68023b834ae8d4a60ae24cfba47b96e9263d5fbd866f0ad": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Uruguay vs. Cabo Verde: O/U 9.5 Total Corners"
+ },
+ "0x08d56195e88cedb87eeff396bd35e8b67d031e586169b3bc937b3095b3cdfe43": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Uruguay win on 2026-06-21?"
+ },
+ "0x8ca34076020bd9edfa7a1bae9f4fd92f8a028bd43f35f22abed7d7949cc21d4f": {
+  "listed": true,
+  "us_slug": "aec-itfwo-gabce-pialov-2026-06-23",
+  "how": "name",
+  "title": "ITF Tarvisio: Gabriela Ce vs Pia Lovric"
+ },
+ "0x2648d7d0d37a057231d08df5688f219fc013720571ee299a7487e5171a9b32a2": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Iraq vs. Norway: O/U 7.5"
+ },
+ "0xd632ae108209d39006c1ed05648e273e378b22f84440ccadcc4ebe84ad82d5d5": {
+  "listed": true,
+  "us_slug": "aec-atp-nunbor-felaug-2026-06-15",
+  "how": "name",
+  "title": "Halle Open: Nuno Borges vs Felix Auger-Aliassime"
+ },
+ "0x32adcaa49b730f85536db352cd0e77947aa638c9f3bf2075e8281c6295100b23": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Norway vs. Senegal: O/U 11.5 Total Corners"
+ },
+ "0xc9a89abf7afbc51e128dbb2af4679c552f7ea76bef4357884c0c07922ace118d": {
+  "listed": true,
+  "us_slug": "aec-wta-arysab-jespeg-2026-06-20",
+  "how": "name",
+  "title": "Grass Court Championships: Aryna Sabalenka vs Jessica Pegula"
+ },
+ "0xdf2ee5ff2988f13ca1eaced4b3c5faaac3c67007a975e5cefcda5bad7fc04aea": {
+  "listed": true,
+  "us_slug": "aec-itfw-gindit-ipeoz-2026-06-11",
+  "how": "name",
+  "title": "ITF Zagreb: Gina Marie Dittmann vs Ipek Oz"
+ },
+ "0x86eb6ac74d7f8e18653fbc67789ce501791a7cb67c4b4d9b89e904b58a1a9224": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Cuenin vs Baroni"
+ },
+ "0x760620ca604b89ce17c41d7e25fa22d300dbbf42e9a53c769528c647cae89cac": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "France vs. Sweden: Both Teams to Score in Second Half"
+ },
+ "0xc696597c9ef8dfb932b1d4fc3bbe2b10307451c0f2e4db9d613a98a92ca47189": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Germany vs. C\u00f4te d'Ivoire: O/U 8.5 Total Corners"
+ },
+ "0x4bf3a22eb138eec3ebb5f32adafe270442affae90955badc402868bb43f0b1d0": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Arias/Ingildsen vs Forcano/Vervoort"
+ },
+ "0x1542561e59258b1afb7da33123b319e4afd0ecbf889040427f3d1af8573d6fd7": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Canada vs. Qatar: Both Teams to Score in First Half"
+ },
+ "0xf0164e968314bae58a0440248e2abd20ee9e4704df2b24c98c50072006b26315": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Spread: Morocco (-1.5)"
+ },
+ "0xb3c6cc2c6e02d94be79c986b4d6a067e53d3c0aa1af7f89fdeeed8a38c48fc3c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "C\u00f4te d'Ivoire vs. Ecuador: Both Teams to Score in Second Half"
+ },
+ "0x78a43a5b0732f53953f11a5f1a0c2d8f158a971120ac3542f8ac7b95e0e2ccf3": {
+  "listed": true,
+  "us_slug": "aec-atp-nikizq-lucass-2026-06-10",
+  "how": "name",
+  "title": "Lyon: Nikolas Sanchez Izquierdo vs Luca Van Assche"
+ },
+ "0xae6acfbea1cda8f2aad744eeaa620771e145af9174f2fc2236715b96d350d91b": {
+  "listed": true,
+  "us_slug": "aec-itfwo-evaved-zozkar-2026-06-22",
+  "how": "name",
+  "title": "ITF Palma Del Rio: Eva Vedder vs Zoziya Kardava"
+ },
+ "0xd4a72d441f96658346ee101731546ccc646836ac938779f96116315324b67a34": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Japan vs. Sweden: O/U 7.5 Total Corners"
+ },
+ "0x0dbc677878bb4dbb00bfa9db4ef993962ce5a0fc3a09722f1644611d18aca0a7": {
+  "listed": true,
+  "us_slug": "aec-atp-lucdar-nunbor-2026-06-25",
+  "how": "name",
+  "title": "Mallorca Championships: Luciano Darderi vs Nuno Borges"
+ },
+ "0x1a41a0437dbe5a7dbbc7332935fd4e95192baf9e4c902d5f74ac04ffe0085b49": {
+  "listed": true,
+  "us_slug": "aec-atp-luismi-thiwil-2026-06-23",
+  "how": "name",
+  "title": "Piracicaba: Luis Felipe Miguel vs Thiago Seyboth Wild"
+ },
+ "0xaa850b5f700f1dd8322765c85908f11af042ac4a6697f3f6ffc468143534034e": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Lexus Eastbourne Open: Zizou Bergs vs Toby Samuel"
+ },
+ "0x55f427da2b5e26aeb0603e80bf4232dc8151644180c73248c6376e93ec296523": {
+  "listed": true,
+  "us_slug": "aec-itfwo-prinug-daybac-2026-06-26",
+  "how": "name",
+  "title": "ITF Taipei: Priska Madelyn Nugroho vs Dayeon Back"
+ },
+ "0x0dd259859924e629d734498b4202b89685b0cb68239786a6a8253aebc8a6776d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Switzerland vs. Bosnia-Herzegovina: O/U 10.5 Total Corners"
+ },
+ "0x3152762caca6ddf4789346101a2a53e120b5498fb9004a5a309a2e841f8b7710": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Switzerland vs. Bosnia-Herzegovina: Bosnia-Herzegovina O/U 3.5 Corners"
+ },
+ "0x1b2557637b8cbfa54a6a98c5b6a45358ae1f91af42fde13fe085276adaeef4a2": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Switzerland vs. Canada: O/U 8.5 Total Corners"
+ },
+ "0x62b1fc68320c01a1e836f57d3b47967e78a984499a33be2ee193b733c8734f5d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Senegal vs. Iraq: O/U 10.5 Total Corners"
+ },
+ "0xaf82c474327eb07563996ffd644da88da46547cb5ecb1c63fc7f6d67849fdf00": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Mexico vs. Korea Republic: Both Teams to Score"
+ },
+ "0xc23d5f05fe809cd7a9eb0357b31d1b269bcc2e1a63deda49f4dbec59409e0c64": {
+  "listed": true,
+  "us_slug": "aec-atp-vitkop-jancho-2026-06-29",
+  "how": "name",
+  "title": "Wimbledon ATP: Vit Kopriva vs Jan Choinski"
+ },
+ "0x40e2282a59c796c9ddb71c41988c7f3db484734fbe53972fee0d12ff172ce74c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Spread: England (-1.5)"
+ },
+ "0xab83ad28f0cee8d758b151c6b37051b5096a41b667c6b6fadfd0f29fd1fd404a": {
+  "listed": true,
+  "us_slug": "aec-atp-fedcor-andcol-2026-06-11",
+  "how": "name",
+  "title": "Tucuman: Federico Coria vs Andrea Collarini"
+ },
+ "0xc291a7c7d35694f48c4aebce2f4807c06871f9cde496804198d21dc1c32a6c8d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Racing 92 win?"
+ },
+ "0x1038a1df84b38c50028c22f92776666f12e14e7f7f22c91855ab8148f1f9a0b5": {
+  "listed": true,
+  "us_slug": "aec-atp-adawal-fedbon-2026-06-20",
+  "how": "name",
+  "title": "Mallorca Championships, Qualification: Adam Walton vs Federico Bondioli"
+ },
+ "0xebb200cb08bbe89c2523a345947d083a992e27cc479cf1b5568407751e026d2c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Belgium win on 2026-06-21?"
+ },
+ "0x5612d69aa560ba6bdb9244be8dcef735412f3347b1ac0230a5cee260930c7189": {
+  "listed": true,
+  "us_slug": "aec-wta-sarbej-lausie-2026-06-22",
+  "how": "name",
+  "title": "Lexus Eastbourne Open: Sara Bejlek vs Laura Siegemund"
+ },
+ "0x3e4c576fd044241113bc7b37cfad57b18936238157a42738e3a4b220440de167": {
+  "listed": true,
+  "us_slug": "aec-atp-lasdje-chutse-2026-06-18",
+  "how": "name",
+  "title": "Parma: Laslo Djere vs Chun-Hsin Tseng"
+ },
+ "0x9e030ad2c9ecc0037a1056f1641d913bddd5c7b26c100267fb8b22a4fb64936e": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Cura\u00e7ao win on 2026-06-20?"
+ },
+ "0xb8b6a753602690899932a4df8664a2d0edf1083f442dd0fc78fc2cb2256f1cd9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Germany leading at halftime?"
+ },
+ "0x9708748710eccdacae04c01f60eaa695e49b2897e088a26f2e3643c177102365": {
+  "listed": true,
+  "us_slug": "aec-atp-fedbon-carcan-2026-06-09",
+  "how": "name",
+  "title": "Cattolica: Federico Bondioli vs Carlo Alberto Caniato"
+ },
+ "0x9249ae400986f063fac4dc640312b5b065900a302e52e7afb0700886e23cd31c": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Morocco vs. Haiti: O/U 7.5"
+ },
+ "0x852ecb9814cb4af447385994def48c294266da73614c5a87a64993aec6afac2b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Mexico vs. Korea Republic: O/U 6.5 Total Corners"
+ },
+ "0xad16e5281ea451aa5e7007c592768294f5f45a964c156be5fc2fe3e5b5c360e8": {
+  "listed": true,
+  "us_slug": "aec-itfwo-jaedan-jocha-2026-06-24",
+  "how": "name",
+  "title": "ITF Rome: Jaeda Daniel vs Jo-Yee Chan"
+ },
+ "0x1ea984df92d2d939e8686bdc886066c9683fabf6210aa4e7cc0317ad3b57ece9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Dart/Lumsden vs. Sutjiadi/Tjen: Set 2 Games O/U 9.5"
+ },
+ "0xd6dc8130a69ffd2f560a2ebc5d36438566290269e0b145e25f95e0b0dced2958": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "France vs. Iraq: O/U 6.5"
+ },
+ "0x80209245f7a256155ab69450df4ad388be4c517d63ee45fdfd03d9ebfe3f8e52": {
+  "listed": true,
+  "us_slug": "aec-itfme-dortre-javcos-2026-06-25",
+  "how": "name",
+  "title": "ITF Zagreb: Dorian Tremblay vs Javier Barranco Cosano"
+ },
+ "0xfde04c07432ee87c5971b443745c58c25911a8f3f514cb6d07181757bd879486": {
+  "listed": true,
+  "us_slug": "aec-itfw-beltho-celsan-2026-06-15",
+  "how": "name",
+  "title": "ITF Tauste: Belle Thompson vs Celia Anson Sanchez"
+ },
+ "0x38a51b19cb6391fe4fe2d6a1542105a8db0f7712087fd35290ec1a16edf311d4": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Iraq vs. Norway: O/U 7.5 Total Corners"
+ },
+ "0x985af77d2b70c27f4101a390759280d9584dde7f7a7e25b380dbe4a3ed53c606": {
+  "listed": true,
+  "us_slug": "aec-atp-felgil-huggas-2026-06-15",
+  "how": "name",
+  "title": "Nottingham 2: Felix Gill vs Hugo Gaston"
+ },
+ "0x65c752289ab1e3b4fde40b3909d9c0fc2b35849ad950a38cab30d19a80457a9a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Spread: Argentina (-1.5)"
+ },
+ "0x6e8e96058b8cd0047156ba7c2db0839926b8be52ad9903948ee14f5c2166442a": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Cabo Verde vs. Bermuda: O/U 4.5"
+ },
+ "0x5212a63940e3781bf28570575a9072936537c56e4fa93238abf9e9fb7a1e3ab5": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Spain vs. Saudi Arabia: Spain 1st Half O/U 1.5"
+ },
+ "0xa8554ec23ed5a6eeff5da1d3761c0efb042f98f20d457e8b73139508d0ef3c7a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Switzerland vs. Canada: O/U 7.5 Total Corners"
+ },
+ "0x14ce95402f0dc60cb39a572a96c0f016a363f7e3645c04bcf2376264b12b5089": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Uruguay vs. Spain: O/U 11.5 Total Corners"
+ },
+ "0xd8296bfc3a6dff2f96f1865c102ae899ed74ee0267ea24d76abef666daf9170c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Germany leading at halftime?"
+ },
+ "0x232342e2a9200b203703a816f9d99d1c6a872333567af16f43d67a255e1a6aa8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Germany win on 2026-06-20?"
+ },
+ "0xc57569e1a0d7e52258c465628aa75f0d3649e6e7fb4b09375cf9e33e767ba541": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Saudi Arabia 2 - 0 Uruguay?"
+ },
+ "0x2de346a51601367e7263eb5d422081d035f9302c384210db15017fdcfc3d6d86": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Haiti to score first vs. Scotland?"
+ },
+ "0x34c28271b741c0d17f179ef344ba7b53849bb0def7c4cee6a84a5ead10c2ffd8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: United States 0 - 0 Australia?"
+ },
+ "0xcee0d9074a1f8766b4f66d806608a4097d027c94f85de367410fbbb166a29424": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Norway win on 2026-06-16?"
+ },
+ "0x7ae2863c0cfdd4852630aea17d96ab35ca44ad7a8c5fa8a6bd0d4ca7df190ba9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Australia 1 - 1 T\u00fcrkiye?"
+ },
+ "0x0f5d0dcedb1c25127155c59b48af0bb80864f1b4cdeda0d4e269f6cd0a0e0f26": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Korea Republic 2 - 0 Czechia?"
+ },
+ "0x1e45337af863d2428b71c055b4d01efcfccc1645bfa3a4b09a445c14e4de9b17": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Georgia 0 - 3 Greece?"
+ },
+ "0x051e0ea5b3c394114eacf8ce5e944ca63cbb6ccdef1d086cadc5dd129a3804e6": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Japan win on 2026-06-21?"
+ },
+ "0xb5d1aa43ed55bb661d77f8624daa4de3c6e62f76c937c9ce4402c7e470c10df4": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: England 3 - 2 Croatia?"
+ },
+ "0xc1fa9f530850c08b8772b7284aff6d76578b85b573c270c7d879d2e0127a5e09": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Kosovo 2 - 0 Andorra?"
+ },
+ "0xdee3899e8b1f157528255d17811db35dddaf19378c23bd5d9f2b744491be7a52": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Haiti to score first vs. Brazil?"
+ },
+ "0x9a597cf9b86eca30dc6fc9ed71045c4254d84d40b8ad376857def7419f5b7bbb": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Germany to score first vs. C\u00f4te d'Ivoire?"
+ },
+ "0xee2045297ea36cb440faaa953ebfe8767a7a993ac128c7e6396c1c8257e2e2e8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: New Zealand 2 - 2 Egypt?"
+ },
+ "0x2becce8d03f01962a30c50b216068fc9095eaa46c4c73933962d652b1b16566d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Netherlands 2 - 1 Sweden?"
+ },
+ "0xa3c149f3d35a928cfe5a9254b0ca9d608ed3a6b4e173b94c5c2afe384175c213": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Angola win on 2026-06-09?"
+ },
+ "0x18ddbbbfba7b4a076cba133a91a8a1add1dda7d38db8a5e3c2da161fe97f4e8b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: France 2 - 0 Northern Ireland?"
+ },
+ "0xb5b7139030cbd36169f2b0ca06d8215782427c39dbc3d59fe433339ddf92c432": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: United States 3 - 0 Paraguay?"
+ },
+ "0x2957444088fed539902a6d2237239483eaf2a17b5b630872a3274822e6433a26": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Tunisia 0 - 3 Japan?"
+ },
+ "0x4e666a5c5ca41d7ff81a7d305f74629d11740578598510f72fa08844dafd3e13": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Scotland 0 - 0 Morocco?"
+ },
+ "0x4ba38ae9249002e8fbe677d4412a9b9f87f3472362e591b1c0f0b045486d33ee": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "UD Almer\u00eda vs. M\u00e1laga CF: M\u00e1laga CF O/U 0.5"
+ },
+ "0x99773a9cda3f8b43452bce44ad1d74e36d02950db244915e0b84f9ad87346140": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Austria 1 - 2 Jordan?"
+ },
+ "0x865bc0caee1682d1cc7b702c09cb4b50028cce06952e4c1eb168a4c31e90b35b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Qatar 0 - 1 Switzerland?"
+ },
+ "0x550838e0ce1cec151588716345ce0c5aac3c0c769d2584a8ff1d722a6ea005b6": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Kosovo leading at halftime?"
+ },
+ "0xb8d063ad8a1144daa7d7d31c24933610b1de4af8652fab064aee5041e089703a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Netherlands leading at halftime?"
+ },
+ "0xcaaa1338d38b5c614196c9a926dd84babc3984442f2ec9b937a16284a199ec3a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Portugal win on 2026-06-17?"
+ },
+ "0xeb5d8ce0ff54d0fc84c8a6235e237d0e8b0f1b25e212cacc5b616e9a2ba07278": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Brazil 1 - 0 Morocco?"
+ },
+ "0x3157734515d65c82a79c740b772fefd1929116c060134f2fc270b8a56df332a0": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Uzbekistan 1 - 2 Colombia?"
+ },
+ "0x689e909cadeb9b75bf799b8ba5aacc116e17b168eac642d5aaf78b39250a9031": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Australia 1 - 2 T\u00fcrkiye?"
+ },
+ "0x173c492f9a8a4d9f4380765874d4ceb588991b3a56202c9f7089ea0f017b3123": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Scotland 1 - 0 Morocco?"
+ },
+ "0x0f82cebb05affcbf4c0c094950411acc73da0f4a4e6973b00ee9694e6061a240": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Albania 1 - 1 Montenegro?"
+ },
+ "0x2b91ff07c77e5c8f4299fa060d07d5321dcf2e058545687395033c9fabbf0cdc": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Australia 0 - 1 T\u00fcrkiye?"
+ },
+ "0x857b6a00d3c22f497f2895e880a76a1ed327d300337dd3420199efc8a801f32a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Sweden 0 - 3 Italy?"
+ },
+ "0xa485b580e18b6a4450d7ab87bbd579c1f7f53bcdca5e4e155193f683856e0dde": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Belgium 0 - 1 Egypt?"
+ },
+ "0xae72062974a1cb2c2576a78ab44485676628088a92c0f3a003be7a4c7845f328": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: C\u00f4te d'Ivoire 0 - 1 Ecuador?"
+ },
+ "0xf5330312b39b0372b0cd01efd8b204e4b03bef941544db7f43eccf8fc8e242d8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Brazil 2 - 0 Morocco?"
+ },
+ "0x04eb624ba277a01ab18c6cdfa5ad18806136ecf390178650101f859966215e44": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: C\u00f4te d'Ivoire 0 - 0 Ecuador?"
+ },
+ "0x5af0c317bb4e72b65f26c07e48a1700e0b65f9e23159edf719be07c8c45bdacb": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Netherlands vs. Uzbekistan: O/U 1.5"
+ },
+ "0xcaeba3c545eeacf08d3d7aa8bcc0d9d52bc09d4ce9c9d217934b2a2c1e847e6a": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Togo vs. Benin: O/U 5.5"
+ },
+ "0x7ef931f8b771d41d8f5041e9536e3ef2c2deee621b50ca1fb0f3f8c85a1b919a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Croatia 2 - 0 Slovenia?"
+ },
+ "0x886d806433640e87d5c02c78dba17cb05cf408dbed2c7b6b9c2adef278b5ceea": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Tunisia vs. Japan: 2nd Half O/U 0.5"
+ },
+ "0x19ae574aa549ecc707348fdd08865fca21b2750cb7863a137289b78307f302ef": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: IR Iran 1 - 1 New Zealand?"
+ },
+ "0x774f6be782792feb01bc8c5cc81bb16fe3add7764b95a2f3deafcb7c3c0338b7": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Sweden 3 - 0 Tunisia?"
+ },
+ "0x464f6868120d3599020dbad1d60b8becd49c327aa693bfadf0fb7ad9754335ce": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Uruguay 3 - 1 Cabo Verde?"
+ },
+ "0xb50dfe0cf779d98b09cf08b117c3e993738d45f625f8416a6bb058a56909faec": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Canada 1 - 0 Qatar?"
+ },
+ "0xbe9726c682b4ec3df718e38fbca3816abba1c312761cd4c431b17681a4b937a2": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: England 3 - 1 Croatia?"
+ },
+ "0x3a6f9c35dd053c9ba8ca0845997c723aa47b98b640e9f0647fcdfa10de0f8b52": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will CF Universidad de Chile win on 2026-06-14?"
+ },
+ "0x6a22a5ebe3aaa4dd85e1324f80bbe33ff4d1f52e097dcbf84863b4f6e12294ff": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Any Other Score?"
+ },
+ "0x6f3d07685ac8e25328b5f33ced77e5abdbb261959975258dbc689d249697822f": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Morocco vs. Norway: O/U 2.5"
+ },
+ "0xaaba66590121266541451f9e0cbf5ba28891940a552481905b4755e4e7c723dd": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: IR Iran 0 - 2 New Zealand?"
+ },
+ "0x4ed69d3c4a2d0de01630b48b0926d1f5ebbdc7180642bf7200abd6d61ed1fc90": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: England 1 - 2 Croatia?"
+ },
+ "0x69a6a4f3ab60969e8b8fdf71a2a18ae549aeb548ff920a00fd0e8fe8d2c480aa": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Portugal 2 - 0 DR Congo?"
+ },
+ "0x67638abc2120eb6323400bb52cda3eb92d494da65a01fecd420284a617bdcb9a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: New Zealand 1 - 2 Egypt?"
+ },
+ "0x2a7a6ab8f4984f1ae82eacd7fb408832a50e63162ac6b98fff1fe094b8e9d3b5": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Argentina win on 2026-06-16?"
+ },
+ "0x2a323a24314ddf4b20220ff9fce5f0d30d9179d4e82e08d1286fa4e9957b64e6": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Angola leading at halftime?"
+ },
+ "0x2f00e48e914ba6606867a6347e90c48cc1fd4da66cc196a191786637f40848e9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Colombia win on 2026-06-17?"
+ },
+ "0x3e8aeb2370d12eec866c7879652c5a5cdb539778927bd3d7668622fac166a43f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Netherlands 2 - 0 Japan?"
+ },
+ "0x6b864f35765706986a861d22fcc207872062186ddcb5fbc20275e991b20ff6ab": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Switzerland win on 2026-06-13?"
+ },
+ "0xfa0fc78ff4455964423f3e2efcd35b00655f8b965d4a584ec758132bb66e6431": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Belgium 2 - 0 IR Iran?"
+ },
+ "0x3d9ac7be742522022dfea06faa0c9e2d47c0c9da3a5a06a7cbe6f85a695d72d9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Germany 0 - 1 C\u00f4te d'Ivoire?"
+ },
+ "0x8dbc4d4996f540e7bbe3684addf433effc8b7a335b6120ec07e4b92d9f321159": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Georgia vs. Greece: Both Teams to Score"
+ },
+ "0x206da05a8a9ab68197b2a335fc851efd39b6d540e45ad83a6fa4ae9e128128a3": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Angola vs. Central African Republic: O/U 1.5"
+ },
+ "0xf5836c8d13b333bc21097b713952b3e036d4cdc3051b4280cc7f36f24573d4e6": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will CD Huachipato win on 2026-06-13?"
+ },
+ "0x365af97170eaa3c475d3bee7d4e03022d3361006a74b9fbbdb1c520f11cf6367": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Germany to win the second half?"
+ },
+ "0xa9074533e9eef6e79012fbebe7100279996e3af24d5a7b12f73280647a732fe9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: IR Iran 1 - 3 New Zealand?"
+ },
+ "0x8231308add586cebac124c18141ddd3047c8c09013c22c28433d7c8dc8b988a2": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: England 1 - 1 Croatia?"
+ },
+ "0x58ea4f94c2f6c83682ab3f80e557338182ec74568222c3564aa8bf041faa6a17": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Germany 3 - 0 Cura\u00e7ao?"
+ },
+ "0x1162703b292178d8827a5c4e88219088f1aed788ef3cca2c2c2fd782fba8b6b4": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Austria 0 - 0 Jordan?"
+ },
+ "0x2d2e9629f9a2de31ec56903da489859346f2a566be40ee6f53b86aecdd419958": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Iraq 1 - 2 Norway?"
+ },
+ "0x2e9f90013e95857677e3b6d313a99eb6e282df6fbb68876a54e8c7c8a95cd88f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Any Other Score?"
+ },
+ "0xb8d7aae30f2ebddc41e33ffc1a687dd7cd3274fb327ee7ffd49d9fe4f4775cc1": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Sweden vs. Tunisia: Sweden O/U 2.5"
+ },
+ "0xe252b2a2c790f466b14176dc1a607a7c44df6b4742b5b9132e4333c344928605": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will CR Brasil win on 2026-06-12?"
+ },
+ "0x8cf54a824afc1cbef82e966924014e3c33de4cb8ec508dc3f495eb56dc6aee1a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Italy win on 2026-06-09?"
+ },
+ "0x57dcab32891f62eb4b5dc56b9e208f50a1b5bc1a8e96036a7e7e0a3839b843cc": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Argentina leading at halftime?"
+ },
+ "0x8a105e3f25c9e1a48861c6532d5a9744f42eed5ade7d38db6e744b9a69dca776": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: United States 2 - 0 Paraguay?"
+ },
+ "0xa5e0b423213c136e3a5c075a7db4c30bd3c16bf8e23bead731d93c2c54a7ec95": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Canada vs. Qatar: 1st Half O/U 1.5"
+ },
+ "0x6b3bab6d2952159f9df7d427acc852645910c15bcfe3e64d41496c224f03d318": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Sweden 1 - 1 Tunisia?"
+ },
+ "0x58cdebb649a5e71c2be9766f20b052d7bb60fe312e090b6ee3cc09fa59537202": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Folarin Balogun: 1+ goals"
+ },
+ "0xf8e76799d64ffe4a854ca83c280ccd0332843f4143f653e7bde8839ca13c86af": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Portugal vs. DR Congo: 1st Half O/U 0.5"
+ },
+ "0x9d8fcbeb1b5f2789b5505e584748a9226a761343ef265c5d2805720bc6cc0b03": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Brazil 3 - 1 Haiti?"
+ },
+ "0x9688f0cdfbe70af8bf1208d9239b9e772ec0697df3b06e01ab421debb9d16a89": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Korea Republic 1 - 0 Czechia?"
+ },
+ "0x2cf95338734f67ca5c54e903b9614f3b75cd5018a4748609a4dfa762c5b7dd4a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Tunisia 1 - 2 Japan?"
+ },
+ "0x48e856fc44f77a6cffb0d4dbe30a50b1dea4221afc44df8f7c3fcf4f7c5059f6": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Germany 3 - 1 Cura\u00e7ao?"
+ },
+ "0xb6fe0aaa1097274c2c8ebf42ac2bb620cc595a0f80c15909fa947d9a75b77342": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Philippines win on 2026-06-09?"
+ },
+ "0x7b89625e13de90c5b1b801db197b30ceee0c7ae9a4f5001ec845cdd3c8984ee8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Brazil vs. Haiti: Brazil 1st Half O/U 1.5"
+ },
+ "0x6d439b7edaf84684bac09f8ffce7d5da84b0996baea0f40b942bc8703658b9f0": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Ismael Saibari: 1+ goals"
+ },
+ "0xac7f5a095353c045264205207c35ebd85f30c61cde616199758a9b25169032f0": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Portugal vs. Chile: O/U 1.5"
+ },
+ "0xe2c2cba80ca7e745aef3ff3c3a359db4d862f2b0ea40a9821bb137bb9e31b40f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will France win on 2026-06-22?"
+ },
+ "0x97c2169d78344fce3bead9500b99c6ff2c4d0024d8c6972d2165e77606fa740f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Georgia 0 - 2 Greece?"
+ },
+ "0xb287296011b65ef94ebfb7c95d347c153bb54b7746b889255a9090d5dbe01cea": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Any Other Score?"
+ },
+ "0xdc4ff1da491d5b799216566b29ce6799f1b8c882ac55e9f1ffabb30c34bc6769": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Egypt to score first vs. New Zealand?"
+ },
+ "0xd2370b92c130e1de8455161e627f048dba5047754d5ca830fbde2ced22304f2e": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: United States 1 - 0 Australia?"
+ },
+ "0x0fac1fde9bf271efa6a8bcd382db88003f661f051ee7644c85ff96a6a4b2e57a": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Will Czechia vs. South Africa end in a draw?"
+ },
+ "0x3f6bb1fb6056e2f72cff7897e37318b85f2798008908f30802e168fd4a823d95": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Mexico 0 - 0 Korea Republic?"
+ },
+ "0x50903e28119b3eb43a9eca516bd4e491f9029e09e6ef743a860085e53fd5e8d4": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Will Indonesia vs. Mozambique end in a draw?"
+ },
+ "0x02ca5ed619939a8882fff80190b233ab2fce53ef7204533d4b05fe18bf143855": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Jordan 0 - 1 Colombia?"
+ },
+ "0x0fe5ecc27010b11cc7e67991f310e9888140ebcfec7e10435b24e6080c2eb66f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Iraq 0 - 0 Norway?"
+ },
+ "0xa902f542ff966fa9443522090800c83584bf22fbc893d6f9e47725319b881439": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Germany 1 - 1 C\u00f4te d'Ivoire?"
+ },
+ "0xd35c80d1064effe4676d67d981b1f3434ae351e70ad1be17a7334cf15ea4af87": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Colombia leading at halftime?"
+ },
+ "0x379f851f2fbfdb0b5cdb48da3c9573883ee3d024c4c343227ab96ba376195af1": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Argentina 2 - 1 Algeria?"
+ },
+ "0x107d90b00b1236bda52602ef34bb979afc4389cfaab681dde40d34b1c2c1d16b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Exact Score: Tunisia 0 - 1 Japan?"
+ },
+ "0x76da45c4b28de84d0acf55e8665cf3c1114a41203d7772f6558a451ed468511e": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 30, 1:05PM-1:10PM ET"
+ },
+ "0xf96caecfdc6af9223d9962fde5e464d11e91b227ae0d47f2757e901283c99df6": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 30, 4:45AM-4:50AM ET"
+ },
+ "0x9c30725cce48c2008296d62a1cd121c7be35f4820f2c653d0aa85f883bb9ecf4": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 21, 6:55AM-7:00AM ET"
+ },
+ "0x5ed799b9716161b9fedaffbee0f74d94e6b105c4126e91ff3caff5cad8c6896b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 16, 2:45PM-3:00PM ET"
+ },
+ "0x87fe2cd708a824cd75b58c2f834521821e01308aefa0f385e624120047a327b8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 23, 11:00AM-11:05AM ET"
+ },
+ "0x7c80206859ccf4ae06a38b2b959581cccc18b13705041bf8880ea8524b00b66b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 14, 1:45AM-1:50AM ET"
+ },
+ "0x86316a55424d658be8e4ba28be039638da3fcbc8eb5fcfe8847beeac77101779": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 4:35PM-4:40PM ET"
+ },
+ "0x4049171f7d8b55f76cf4eb62913a35f8eec78db75ed4ef2f44c2d0243740ccd8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 14, 4:40PM-4:45PM ET"
+ },
+ "0x668f499b7aa5cf1fcd50d682e7e54ba5549dac80b1360125bfc7d68aaa7b1936": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 17, 11:30PM-11:45PM ET"
+ },
+ "0x937308330f95f9eae1239324d6d35e3ff67924eb390d2263f49a9b2b44bb8622": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 7:35AM-7:40AM ET"
+ },
+ "0x92f199f31784c0b197961ad9677671fcfea4cca1239d8c1d6760d120adc45b56": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 19, 11:25PM-11:30PM ET"
+ },
+ "0xa1c04dfabea48925b8bb8e11eca522f7eb80d680a3fad2f6780873d618715192": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 27, 11:20AM-11:25AM ET"
+ },
+ "0x2292342fce283424010dce231743b54d71bdb868d4942770efb5e4ea60b0a9f2": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 16, 3:45PM-3:50PM ET"
+ },
+ "0x3b639a1dbb2794ea06c5d813738c677dd70a1c0a3cc89cf380da847c6422ec65": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 19, 4:55AM-5:00AM ET"
+ },
+ "0x49e6196bc368d6d0713d7a501d63eb1e227070ebe498970f1353873a2e925756": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 15, 2:05AM-2:10AM ET"
+ },
+ "0x436e3099c167678c6d520fcb4cc6963e948ef0374d6533cbc22c2d26ee68933f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 20, 8:30PM-8:35PM ET"
+ },
+ "0x314bf496d98fc8ddfc54298c452ec44d3dee7e096d0c9e960b623daebb0962d0": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Argentina vs. Austria: Both Teams to Score"
+ },
+ "0xb6921d54989f53685fdf6558acba052e3d653182f44c62c9cfb175c8459eab00": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 20, 12:15PM-12:30PM ET"
+ },
+ "0x6661f1864b5576640359544cdd4b235efecb8a90e702834f5729f519bc794acc": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Morocco vs. Haiti: Morocco 1st Half O/U 1.5"
+ },
+ "0xb211b384100c3ce510339a83f53383613bc0f9558a478416cad3f96336317363": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 29, 4:35PM-4:40PM ET"
+ },
+ "0xae72a59e3b25cef074da70692d1e46110b992fcc7ce5d17c6b4d36496fbbaaf2": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 12:30PM-12:35PM ET"
+ },
+ "0xc7e1fbc18b61f9c9813e204514d6d569d0b84c57e1ecea124a779f9fcab6978e": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 29, 10:30PM-10:35PM ET"
+ },
+ "0x68eeeb0635c1342916b7b8eb2c3d0cad87a49e7a2cafe9c497625c966c70e3e7": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 1:35AM-1:40AM ET"
+ },
+ "0x1b39b1585942bc1c2f54cf9115f4729801dfa8bae61845c53f31e37b21671e09": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 24, 9:10PM-9:15PM ET"
+ },
+ "0x6f3f77b596cd944508d10f02d8c71d8eb8503d59cd4c30392e96b071255765b8": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Norway vs. Senegal: O/U 2.5"
+ },
+ "0x1f8752899dfd2abf45d5a6ea616fd29b503faeaa3f98f7751859fb4b1c09ea3e": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 15, 9:50PM-9:55PM ET"
+ },
+ "0x29eb3ef6150f06fd3376544712446390b02ff3ba3a85ad4c50e85240ab2864e1": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 14, 4:40AM-4:45AM ET"
+ },
+ "0xc0fbf408533bf45861a3dd40e2e39dc7d179cf941738b6e0cb43d553cc6c81c4": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 7, 7:00AM-7:05AM ET"
+ },
+ "0x2e8416d05e4ca911b6fbd66b94a9108db2fbf8559ee2f6745f3440962028e592": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 10, 11:10AM-11:15AM ET"
+ },
+ "0x3a3c7a9286ae55854df71d709c37ac060d878398bbb3f652c0c0c79164ccd1a2": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 2:15PM-2:20PM ET"
+ },
+ "0x54ee97ca5e391cdf7e52c773c72f31907d65b598c61d373e96de5e934e82763f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Uruguay vs. Cabo Verde: 1st Half O/U 4.5 Total Corners"
+ },
+ "0xf060a636fb15e08730dd9dda106b40a8d9bc1748b8ac96eeae1a18675e0efa71": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 15, 11:30AM-11:35AM ET"
+ },
+ "0x4589bb45b90e44d86186bfbebdc366c00f0d9bdf1be417c8ffd8e781b8b3005c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 14, 8:00AM-8:05AM ET"
+ },
+ "0x58b9f09be68fe1124bb5e0856eda2f2e1f21c65a220053375a3f323519cbce6e": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - July 1, 6:50PM-6:55PM ET"
+ },
+ "0x128ed9407ace14209aeb0b126437e8b894767ca8d85fea62815c791927538779": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "BNB Up or Down - June 8, 6:40AM-6:45AM ET"
+ },
+ "0xc6a737b001c6b9444fc2a12df59849f4e966da574b8526bce703595c569239ad": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 17, 4:25AM-4:30AM ET"
+ },
+ "0x304ed04e4c8e10462c97c0b2f364f4142d99ebcac116813ddb1a36e30e8a3922": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 7:10PM-7:15PM ET"
+ },
+ "0xa0ac7ad9d06f7494f9d3bf96bb5a393edbad35ad118b7c3dc924ee91eff8e82d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 14, 9:50AM-9:55AM ET"
+ },
+ "0x7fce47a15763685962d8e77097fa189a71e1edd9841e4535ebecf2e27c8c6937": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 5:35AM-5:40AM ET"
+ },
+ "0xd78567ca1a5759cb839cdd64eb5bb293b4f2f243ccb09e2917946d2f45ceca9c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Morocco win on 2026-06-29?"
+ },
+ "0xa7acd49d3efbd07e2de7bf71fb424898e018146f54ba9089ea9cde26ed0df005": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 26, 2:05PM-2:10PM ET"
+ },
+ "0x82179a07a8cd8bcffc30a05138c847d932df1d821f637100a1de5e9bb2f892f7": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Panama vs. Croatia: O/U 2.5"
+ },
+ "0x4d9c8a0ca3c1cefd3be470fe8e9f4f76bc12fb51fb4926c9b8521aa4b7f34aed": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 14, 2:45PM-2:50PM ET"
+ },
+ "0xd86de9ee7c5ec922583901653db5560e07873db6a4e4e032a6c9d19d899c723d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 14, 2:40AM-2:45AM ET"
+ },
+ "0x0eb1723c63082a09eea69eb99cb40151565c806ba37ff703c93b565c71c8ef78": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 21, 3:35AM-3:40AM ET"
+ },
+ "0x7d7a8e9db123389a5ec46c53bf9dd6330dde4fd9841cc8b2b4296cbae3fe0c97": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 14, 1:40AM-1:45AM ET"
+ },
+ "0x84cad05689f3af02f2e4450a56c655071b9bcdd8c501fd21fb620c3713194e8d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 20, 3:10PM-3:15PM ET"
+ },
+ "0x746f53249e289b26d46a707286a4e8c936d1c872899af71633a128e8f861883b": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Norway vs. Senegal: O/U 4.5"
+ },
+ "0x6f2bfbf996eb416b18c5223b3c42d738ad79ee3dc54b4331748f2b046c1011e8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 20, 4:05PM-4:10PM ET"
+ },
+ "0xe62e086a04635bef3b32267d735af45e640ac9e55a20562f0153a119ccb3092f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 21, 3:40AM-3:45AM ET"
+ },
+ "0x99fc82dfd5302c8d6e622651d3f654e5bd25a06385e9201da3d252550722c718": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - July 2, 1:10AM-1:15AM ET"
+ },
+ "0x41bcd0fb6783b46ce3e2918e81a6e246635a126ba0f928b2fd81705d8b15efdd": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 7, 2:40AM-2:45AM ET"
+ },
+ "0x05ed5c8260f0c19e977086a624efe65ef49cd71ec2212604e55e3fc7c90d5572": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 30, 6:10AM-6:15AM ET"
+ },
+ "0xcfc00df80340311e923ba00a37ee226ce8de154f233eaa2a4966756322daf56a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 16, 1:55AM-2:00AM ET"
+ },
+ "0x4a3c7e73259a9fdcc5e91c80a9902bdd11711371f4011649a7c50e5fdabf0d1b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Ethereum Up or Down - June 17, 3:40PM-3:45PM ET"
+ },
+ "0x3124e4beef53bf822c1d9001b254550ace10485dcca281be28230619fcaa86d2": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 20, 8:10PM-8:15PM ET"
+ },
+ "0x00bcf27e7607a88cd72d1f5592df7421420131f9964c5d3f161339899a5bf825": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Norway vs. Senegal: O/U 3.5"
+ },
+ "0xe7d3527f6c6bdba334fc9528a8e670843429445ee2cc9f777d96bfb200930d73": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Ethereum Up or Down - June 6, 6:25PM-6:30PM ET"
+ },
+ "0x60898f7ecf53d9e92c46f76c2247185f04142a22c7a0995ac14a63bea59a7a33": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 5:25PM-5:30PM ET"
+ },
+ "0xf1e20d8d10b3c5ac4ce731c07c520dbc3998e8766bdfb6c923c2f744c4c4fb86": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 5:05PM-5:10PM ET"
+ },
+ "0x9edcab1549e4d8bfa66bb03295673d3490d7f17ff22ab52a89d656d03ab367d8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 8:20AM-8:25AM ET"
+ },
+ "0x3d513c04c1b7d2c3ed61335217e3a6edcc79e166ef9a37ab45867f4395636f93": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "BNB Up or Down - June 12, 11:35AM-11:40AM ET"
+ },
+ "0x1ae3ee9d15cef93fc56086fbdc29019c745c16ad655c2ca36df856752a027e3b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 15, 1:05AM-1:10AM ET"
+ },
+ "0x5f41378f05200eadb9a7cddd0be67674cc156e050849cd1487d1593f826dfff3": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "BNB Up or Down - June 24, 11:20AM-11:25AM ET"
+ },
+ "0x73d7a58b7917b834b81c393b960f925bed4b14eef1fbafda8757c489432a2fcd": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Saudi Arabia vs. Uruguay: O/U 8.5 Total Corners"
+ },
+ "0x45a8640e521056ed7d4d239ba47b360f2f62d3582988305d8a6fb3fe1261351a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 1:40AM-1:45AM ET"
+ },
+ "0x008fdd0bb635ba4c255c77a417bf3af970f12107cf189cc068fe6da3f5aa6eca": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 19, 3:40AM-3:45AM ET"
+ },
+ "0xe6c4ffd5cbbd3a43c68441dcd287960cbbb68578340ccd51cb3ff07c69f16758": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 19, 7:35AM-7:40AM ET"
+ },
+ "0xe8aa92d07757cbcfe781503a02208f584b146f98c691d26fcf85f37c891c5b09": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 20, 1:55PM-2:00PM ET"
+ },
+ "0xda14e57d1c64d1d4b56d5c35345c75022ea43874fff87c61f5db8ae8fdff7757": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 28, 9:45PM-9:50PM ET"
+ },
+ "0x24d5aa9f0b5913362cd3bcd437ebc99d83cc8a65c8a6cd4bdc688038754d71ae": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 22, 9:05PM-9:10PM ET"
+ },
+ "0xe6c8d11cfd9ba9a2bbb2edeb66e142818c53a4a0768d93efc69f97fdb36ab88d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 20, 6:00AM-6:05AM ET"
+ },
+ "0x0cb67c1d55eb66791f6dcbd1a897ae32194cefc840483ec86519d4b011c96bf7": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 22, 8:45PM-8:50PM ET"
+ },
+ "0x8d3e50b8dc9344934bde651cdd6b620da9d52f23ace62c4be7139dd47d45c62a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 14, 7:20PM-7:25PM ET"
+ },
+ "0x7508a749f730bab7f6878d630a99a5bdef3882a568e3869ebf06f23b763f9feb": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 11:45PM-11:50PM ET"
+ },
+ "0xacbb313cf9af2f7be1bc0a30702e85cca1bf2358b002d90ffa6084929405d04f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 12, 11:05PM-11:10PM ET"
+ },
+ "0x42eda5d37e927103202d67ba75134ab5f4f5567801d4fc1577de2f436b0d3d8a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 20, 3:15PM-3:20PM ET"
+ },
+ "0x034e4902ede369577f3a4bd00bfefb6617961c70423a5aa457d419cbf498caa7": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 18, 8:30AM-8:35AM ET"
+ },
+ "0x956de1240efb0c4ae571dcc83159191683317668958f4ba7fe14297d56cce037": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 17, 11:40PM-11:45PM ET"
+ },
+ "0x31efa105348286fdb175a10cab8da2310066dddb6bd4d780f592284a6b72dae6": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 20, 9:25PM-9:30PM ET"
+ },
+ "0x9715c5daade13013b47b130f76722f1a14e0c6e042e75835b8f8ebc333a7a454": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 22, 1:45AM-1:50AM ET"
+ },
+ "0xc621789a0aa34d695d12e5cf65f3bad8bcc9558c8f89e822ec209325bd6fb979": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 18, 11:25PM-11:30PM ET"
+ },
+ "0x4dc3fbbf5dda4234fe854884ff363cdc72a4ba2a9dd32ca654f14159f721ba40": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 8, 6:55AM-7:00AM ET"
+ },
+ "0x11516ff3169811a2e316c618626b45802135c8ea594f3d8607d490759b3056ef": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 27, 5:20AM-5:25AM ET"
+ },
+ "0x66b9dcd6368e86f933b05c3e6db3e214cd7b811dc735e2fe9bd1757fa88213c9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 19, 10:25PM-10:30PM ET"
+ },
+ "0x9ab3e3c4040dc54ac5e77008d189770e18f52012a91735f1da93072c992b252c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 12, 6:45PM-6:50PM ET"
+ },
+ "0xd898c9f9f496c9d86b14f9ded5b80e9299599fbd604d15d0797d7bc00a6d72ea": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 30, 7:55PM-8:00PM ET"
+ },
+ "0xe76d397afa47ea028b914eec69543c69f9bbec8c313bd3a1dba022bd050b4c22": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Spread: Spain (-2.5)"
+ },
+ "0x7100ab95b70e1c300a74453214a5e605112c7cc7f5404961b740b4871609622e": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Canada vs. Bosnia and Herzegovina: O/U 2.5"
+ },
+ "0x4d34d02cc0176ef37a55307a825a2431b99c554b7fd074d69c4fa59f9f1783f3": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 21, 1:50AM-1:55AM ET"
+ },
+ "0x680af5e4ac9f972a4f4fd40ba1c31628ebafd10230db09c189bd49b9fb7f3c83": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 7:55PM-8:00PM ET"
+ },
+ "0x6d0af2188533a76a4ef1060dfc8f1e86d016dee3613d8bf5bccdc628e2018962": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 25, 3:20PM-3:25PM ET"
+ },
+ "0xf01aaed2eb4be18916f0638abcd277865558b3376ec8b6d4733ee17c3160a40b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 7, 4:55AM-5:00AM ET"
+ },
+ "0xc5737f1b2cc9998ab6e24bcb8253180990731b1a868559802d0ede0965b3bda8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 27, 7:15PM-7:20PM ET"
+ },
+ "0xb5dc83e74c8ec1a1d5a358d13adea9123c4a5ef0584388afbc70a1db166dc168": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 7, 6:35PM-6:40PM ET"
+ },
+ "0x7b42523e147873dabd296356281172af1371f38f2057a59c80851048be632b56": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Netherlands vs. Japan: 1st Half O/U 0.5"
+ },
+ "0x12a98d4c718e386895ed39b4b69179b84941827b95abd57237af89d8beb2cfb8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 14, 10:55PM-11:00PM ET"
+ },
+ "0x208de6c16339535e5dcdedfac0c2fbaedca9f1efa0ca5f6fd3b8f9189937c087": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 20, 4:30AM-4:35AM ET"
+ },
+ "0xe547f2492f7a0c33dcb61005a29a0605e43aaf4c7a03c02d6641420424cb0090": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 23, 10:10PM-10:15PM ET"
+ },
+ "0xd46f6b7b72b884e0c9b33fbf3cf87849e520be333f6d239d0fe611ff0b6c23ad": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 30, 4:00PM-4:05PM ET"
+ },
+ "0xb9731777c3b1f1c2cc0a632ca443d6e96bd0b8e3e91a36abc95cd3c0832dfde2": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 14, 12:05PM-12:10PM ET"
+ },
+ "0x9054e4ef74780e838e9118b2e2b5a4ddc84199b4419408fb2d57fcad628569ac": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 10, 11:15PM-11:20PM ET"
+ },
+ "0x8a9e21c8cebed8d5d6e08944c8a46e40b193cf70ee234e6c630169fc94415636": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 5:20PM-5:25PM ET"
+ },
+ "0x30d863296b5a0384d4115efc228c278b82bd45100397f86dfe57de4befe4a40b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 24, 9:05PM-9:10PM ET"
+ },
+ "0xb6fce657d9ed5adc561c08edc829b6348c05b3051e9a4b74cd1638033f3fe938": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 29, 7:55PM-8:00PM ET"
+ },
+ "0x00dff7529d69403dcac8afec49084e373a0f1999dc31f2751842c01cc4b69dcd": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 20, 7:20PM-7:25PM ET"
+ },
+ "0x96878d35edcbbec08943df5f00cdceb1d5c2f409bc30b281fc729dcfcb999c6b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 19, 4:15AM-4:30AM ET"
+ },
+ "0x5f0e52a395dd3cbb0bca044a7ad11cb3f396c0e422c83460e86d57c6ff02aa5f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Ethereum Up or Down - June 24, 1:30PM-1:35PM ET"
+ },
+ "0xd08fe535ad74defe7818398dd682387e6fffad00f6024be318d9238f2dec4812": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 16, 1:15PM-1:20PM ET"
+ },
+ "0x034e1630bbe5b4349d6303373e2c31b4221c91831586d8990c693d85f2774f7c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 24, 10:15AM-10:30AM ET"
+ },
+ "0xe03c8788919bfeb85b67adfc5ecce3fe0e8109df436d5ee24f65487b39b1ac1b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 14, 5:25PM-5:30PM ET"
+ },
+ "0xa48a1bd7201453311e266579f80f496370b361c6b4a4f7702b09ee958233b000": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 20, 9:05AM-9:10AM ET"
+ },
+ "0x9b907da84c8f19d5282043b6b506712934278d095e808de93f11ffc3f3b4c77e": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 14, 4:50PM-4:55PM ET"
+ },
+ "0xf04bfa7adb9c9743046aaaf4d72105776fec8f11f9d509c09f8f2e276d51e1e6": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 7:25AM-7:30AM ET"
+ },
+ "0x374cbe92ab7788872726302e545b7de61b852882b17f7fa0cde864a3035c3003": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 14, 1:20AM-1:25AM ET"
+ },
+ "0xc14a84186d3361388e725367dbc35576d8262d9c7021647006e4eeb5843f7864": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 21, 5:45PM-5:50PM ET"
+ },
+ "0xb46875ae8f7fc367b3f5f82cf11ac30a60192c5138bcfeb010ec781e440ed39b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 23, 11:00PM-11:05PM ET"
+ },
+ "0xf480209c4c2432c04fd10938ebe09dd91ef0added80ed4de0d9a9f27169d5046": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Ethereum Up or Down - June 16, 9:55AM-10:00AM ET"
+ },
+ "0x812a40b7228801725ec25318246d0e1237aa2f6a057050b76733a83f38691b45": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 7:10AM-7:15AM ET"
+ },
+ "0xfec6b2544828b2509533fb5080cdb4018856b6dbdf4ab828f4088e25894f9a5a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 20, 5:55AM-6:00AM ET"
+ },
+ "0x9520e85cd8a50f9c46f8ddd50f06e0b602a91d95aca8c240613e17ad78850881": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 17, 10:55PM-11:00PM ET"
+ },
+ "0xf66b263d133febbeab0fdd365397bd48c82658cb277ba44f3d66a8562800881b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 28, 6:00AM-6:15AM ET"
+ },
+ "0x08947a474c33e7d91b5f09d91d8f914c133279893230556e7d2be78c98bc8877": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 17, 1:10AM-1:15AM ET"
+ },
+ "0x8b8dce8ce6c7062bc5c4f60a47494d7df6a643dd221692ecd4d39ef051383345": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 28, 5:50AM-5:55AM ET"
+ },
+ "0x19c26e143c6328c929b7d79de3cb9a7e947d252920ed7441e8542690174b283c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 18, 2:55AM-3:00AM ET"
+ },
+ "0x602ea8fa1106e60c09cee6015bd901a37b7d69e2a327f2f58aefa9f2d0481eb1": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 17, 7:10PM-7:15PM ET"
+ },
+ "0xe5e2ff1b32c4fe8c2f72b5a39f062fef072324083baa5ecb930f617884edad0e": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 26, 3:30AM-3:45AM ET"
+ },
+ "0x73601f93bf21063744808e382f43504e8c7c42490cf159a30c8cca7d133a8a00": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 20, 9:50PM-9:55PM ET"
+ },
+ "0x35b05ea3f1f161c2e5210540157e91b8db8b2c79b2faff67a1d0f8611b07e09f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 19, 7:50AM-7:55AM ET"
+ },
+ "0xde1320dda0a1f9ce2e9e211e357c274dd635471854220058c9c5d19c2343e7b1": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 16, 10:30AM-10:35AM ET"
+ },
+ "0xa37c2ecadec866658219a22f4b42789ee1ee061cc2afb1096d8b00e1f73ea99f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 20, 2:30AM-2:35AM ET"
+ },
+ "0x7d7fa756e2ab197e2c804e5e46e3ceb0e2dc1f76869a161e57ee8c68630b145c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 8, 7:55AM-8:00AM ET"
+ },
+ "0x551d0260adc625e7dfdedcf75f4dcdaddb117c178bde39d94f2b8c6ce9146cb6": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 18, 6:25PM-6:30PM ET"
+ },
+ "0x065ec95582ec7c99a327e343b14ac63cd458f6c540f1c7b2dd8c34edd8edf150": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 11, 7:55PM-8:00PM ET"
+ },
+ "0xc665d5ca4328a64f98eba9309ac11cbdc08d374b8e455da4dac79149bf3b3764": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 29, 10:40PM-10:45PM ET"
+ },
+ "0xec1bd62c2ae3a52c126a6ecca15f9057d547a969dcf15f2bb344dc1737f39ab0": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 18, 3:10AM-3:15AM ET"
+ },
+ "0xb0f5318a6c340709de93ca0349e91b85d616bcf1cf1a28638af0c021cd9b0ab4": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "BNB Up or Down - June 10, 6:50PM-6:55PM ET"
+ },
+ "0xcac55514034a237ea269eb1afd9d1ae35f5d79b858906963aefa6b6c4d5103e9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 19, 7:50PM-7:55PM ET"
+ },
+ "0x6ac3f6de99db88c17031e346cb8191c16485873f3f794a603fcfa470c0e965ce": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 10, 11:00AM-11:05AM ET"
+ },
+ "0xfbb6ccc44dcafb16319eda81e7b6ad0af7552745c7f6589cf987bcfd6c788426": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 14, 10:00PM-10:05PM ET"
+ },
+ "0x805e78bb771964ef7cdfabd569678df09537f0219c31db41fd3013e9db712600": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 14, 1:10AM-1:15AM ET"
+ },
+ "0x3315ad0268f8abb8928961c388bbad78537dd7f143b878f55f593b23d0cf38f6": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 7, 7:00PM-7:05PM ET"
+ },
+ "0x2ff65986a53d5182abe2dfd19b63b624194dd145416f9a1426199ce8c7b81693": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 3:25PM-3:30PM ET"
+ },
+ "0xd88c6f189226c2bc82c4ebe2d40239c8d4a663c8a840b78e465de83ffb2c0c94": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 15, 6:45AM-6:50AM ET"
+ },
+ "0xa885159d56d6e4ac07442c775ecdcc1ff9dfa9ae304447e04b8d6d88c5f86995": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 13, 1:25AM-1:30AM ET"
+ },
+ "0xfd656be3ff01f859d71315b1ee327d273b1f163df1cba3bc5f6af750e79cb516": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bitcoin Up or Down - June 22, 1:15AM-1:20AM ET"
+ },
+ "0xa70fc3695a65833b91b45df6db6015096f3e1471b70352ca411b4209010e7633": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "US-Iran nuclear deal by June 30?"
+ },
+ "0xf90222408a5359aaa9dbd843d6c9fe43a156b80d11a53cf2376a61afaafbac1d": {
+  "listed": true,
+  "us_slug": "aec-atp-tompau-jaumun-2026-06-15",
+  "how": "name",
+  "title": "HSBC Championships: Tommy Paul vs Jaume Munar"
+ },
+ "0x4926438a8bcd51e07989a94a7efafff86a0c66101a5f0f51dc0a252425c41b4b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Tesla deliver 475000 or more vehicles in Q2 2026"
+ },
+ "0x16643be8adb77541085670669a91ff186bd5fbae4d5207a4b49640971a8669cd": {
+  "listed": true,
+  "us_slug": "aec-wta-paubad-sinkra-2026-06-20",
+  "how": "name",
+  "title": "Bad Homburg Open, Qualification: Paula Badosa vs Sinja Kraus"
+ },
+ "0xbebdb3a1cb2b1f20d407f25425f06c24e8d96159b56fb9a26f519b8a07b46f56": {
+  "listed": true,
+  "us_slug": "aec-wta-ivajov-karpli-2026-06-15",
+  "how": "name",
+  "title": "Nottingham Open: Iva Jovic vs Karolina Pliskova"
+ },
+ "0xd5f7851b3b24b21ecae3d1394c8cdedcbae7a72d195da9c745797dc3ca03cb79": {
+  "listed": true,
+  "us_slug": "aec-atp-tayfri-jacdra-2026-06-29",
+  "how": "name",
+  "title": "Wimbledon ATP: Taylor Fritz vs Jack Draper"
+ },
+ "0x96e8784a13d5f8a8e652561dc8cacc3c79d6e0c17931a629c134b7bb8637f330": {
+  "listed": true,
+  "us_slug": "aec-wta-catmcn-miksto-2026-06-13",
+  "how": "name",
+  "title": "Nottingham Open, Qualification: Caty McNally vs Mika Stojsavljevic"
+ },
+ "0x1574a3fb87b3062b5e07edb49cfcc4d0e0a4faede8edf2e36e76ad3685b44576": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Paul vs Munar"
+ },
+ "0x70dad52de99b655333080d3ba8335b82f7c5331c846567245c6e38eb9a55d816": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Sonmez vs. Bejlek: Set 1 Games O/U 10.5"
+ },
+ "0x258031a51215d328eac2db15bdf45abdee1a23d38d66e12462a83c34cf31b5c8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "US x Iran diplomatic meeting by July 31, 2026?"
+ },
+ "0x6fa13f31cceaf10ed3190df6e2aca0a93ab0d6fb46fd279003f17d4cdccee164": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "US x Iran diplomatic meeting by June 30, 2026?"
+ },
+ "0x8ea74898a784d8b726966d052fdc53eac4dc4be9d74fbd479585188714dff957": {
+  "listed": true,
+  "us_slug": "aec-wta-miksto-markos-2026-06-08",
+  "how": "name",
+  "title": "HSBC Championships: Mika Stojsavljevic vs Marta Kostyuk"
+ },
+ "0x96c5e3484bbe9e83e2f839f45f928273341e98284f7fa630f522d66156a42ad8": {
+  "listed": true,
+  "us_slug": "aec-wta-emmrad-karpli-2026-06-16",
+  "how": "name",
+  "title": "Nottingham Open: Emma Raducanu vs Karolina Pliskova"
+ },
+ "0x581fecca2ca2c1f53b7b669a021a4547a3703ca8824d904d09302c79f7860db8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Sonmez (-1.5) vs Bejlek (+1.5)"
+ },
+ "0xdcc7e59f559171a25e4da54be46685952c4cf7be2e8419f079185e0a8d3cbdaf": {
+  "listed": true,
+  "us_slug": "aec-wta-okssel-kamrak-2026-06-13",
+  "how": "name",
+  "title": "Nottingham Open, Qualification: Oksana Selekhmeteva vs Kamilla Rakhimova"
+ },
+ "0x72609621db85d321b1dc4c143b5204617eae3e9255ac113e00e866195c9c5324": {
+  "listed": true,
+  "us_slug": "aec-wta-hardar-katbou-2026-06-15",
+  "how": "name",
+  "title": "Nottingham Open: Harriet Dart vs Katie Boulter"
+ },
+ "0x207e9fb835dc3fc6437cb22ba284f10bb7ebd4de94aba450e4ea5c772abdf1cb": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Bartunkova vs Gauff"
+ },
+ "0xf47e8cc490e9fd5f0ac8bd36aa4bc3b1abf12025dd145baac6cd95ee58e2d286": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Aleksandar Vu\u010di\u0107 out as Serbian President by June 30, 2026?"
+ },
+ "0x30b65086ddbd0849b1a42e582fa953035fd10cdfeb223a002f0a7e2ecce59780": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Claude Mythos 5 be restored for US customers by June 30?"
+ },
+ "0x035716ff686bf73f9e4ca8f39c552ba2c117b04775d86b62bb8ec42de60c8efd": {
+  "listed": true,
+  "us_slug": "aec-wta-zeyson-sarbej-2026-06-24",
+  "how": "name",
+  "title": "Lexus Eastbourne Open: Zeynep Sonmez vs Sara Bejlek"
+ },
+ "0xd1bf1c0bdcc27a8511e99dea5114ed54e32c3bddddc0b5e28ee1b58fbdb64193": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "ITF kiseljak: Josip Simundza vs Yannick Baluska"
+ },
+ "0x4b472ac7d0552a11703702e320d9d352418fb8120a0654a117f30c84f9a176bb": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Dart vs Boulter"
+ },
+ "0x2925e32df6f1cc297aa7f060aea103815ae0405926cd12ba9f244bfdface818c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Tesla deliver between 450000 and 475000 vehicles in Q2 2026"
+ },
+ "0x383e75366405aa53356077e2c509566e4eb6baf1ca823faeb8b18c6e099f9dcd": {
+  "listed": true,
+  "us_slug": "aec-atp-marlaj-ugobla-2026-06-15",
+  "how": "name",
+  "title": "Dublin: Mark Lajal vs Ugo Blanchet"
+ },
+ "0xb98ca5f27a851fd490082e9d3f3058e9a8cf0266ec207854395693015acbd293": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Tesla deliver between 400000 and 425000 vehicles in Q2 2026"
+ },
+ "0xcacabfdd234647786d7d1b5fb6c225e072c9e5d51f66a8842295f50bece5f37f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Raducanu vs. Pliskova: Set 1 Games O/U 8.5"
+ },
+ "0x8bd95e695d547934419bb1cbb9f050291c7ac677bf3c5b494dd28da76d01576a": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Counter-Strike: Ursa vs HEROIC Academy (BO3) - CCT Europe Series 4 Group Stage"
+ },
+ "0xf61819bab449a759441e7de8fdfc43f6933fb71a5e39be28f9e14f84285df76f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Zeynep Sonmez vs. Sara Bejlek: Total Sets O/U 2.5"
+ },
+ "0x25c17d6e3b935015e20a931c3326e1ba9274e8b88d7567e59d021e156587f1d5": {
+  "listed": true,
+  "us_slug": "aec-atp-matbel-zacsva-2026-06-29",
+  "how": "name",
+  "title": "Wimbledon ATP: Mattia Bellucci vs Zachary Svajda"
+ },
+ "0x0691bb758da432d961229f4d803b0f7f26b64dfed725369ef41344496828e1a2": {
+  "listed": true,
+  "us_slug": "aec-wta-polkud-sinkra-2026-06-13",
+  "how": "name",
+  "title": "Grass Court Championships, Qualification: Polina Kudermetova vs Sinja Kraus"
+ },
+ "0xead52d1a0f77498868b5b682422160fc5a3e480bafd54ba2db3d4442639ffeb1": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Boisson vs Yastremska"
+ },
+ "0x7d492981dbf5528018ebbe614918ed272cf468f2a0dd49a6f7f1ebdb97d1087e": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Nikola Bartunkova vs. Coco Gauff: Total Sets O/U 2.5"
+ },
+ "0xb6d228b92f6d281aa2926d9cf4ecc3c187b32013e6532f6e6409e268727be0c8": {
+  "listed": true,
+  "us_slug": "aec-wta-nikbar-cocgau-2026-06-15",
+  "how": "name",
+  "title": "Grass Court Championships: Nikola Bartunkova vs Coco Gauff"
+ },
+ "0x2ed1fa3705cded44ded81bc1581298a113936193cd699ab24b0d5214a5b1abd8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Sonmez vs Bejlek"
+ },
+ "0xb3486280b72f21c652ca26b94d301d016c9076b4aad9238e7dad607f26a23f95": {
+  "listed": true,
+  "us_slug": "aec-wta-antruz-emmrad-2026-06-29",
+  "how": "name",
+  "title": "Wimbledon WTA: Antonia Ruzic vs Emma Raducanu"
+ },
+ "0xbe78239d4c30e4c2c872533eaff19972d196ca9756d9d16b3ff7d2ceba214af8": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Counter-Strike: G2 Ares vs Young Ninjas (BO3) - European Pro League Series 7 Group C"
+ },
+ "0x5943ec54b0880b6398e1173af55cecbad0ac18afba874e825cbd177e805a3e56": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Lajal vs Blanchet"
+ },
+ "0x07e95ff1a81727e6f93744403bb38ff9db3628de73b9a90ae1378a1737ee7cb3": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Stuttgart Open (Doubles): Glinka/Sakellaridis vs Bublik/Kyrgios"
+ },
+ "0x20e17da50e527d046b43576bbafd59f83dd9bcee242d4675afecc27e5c10cb18": {
+  "listed": true,
+  "us_slug": "aec-wta-karpli-catmcn-2026-06-17",
+  "how": "name",
+  "title": "Nottingham Open: Karolina Pliskova vs Caty McNally"
+ },
+ "0x6f727f1f414c5b6bd0bf716ea1a7bd537a4d9ce1c69d68ddbf1ba14d466724a9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bad Homburg Open (Doubles): Sutjiadi/Zvonareva vs Hsieh/Wang"
+ },
+ "0x5a6b0697b878818f5089feb18e95a6c7f9672657f8473bb96f336c2bdb4264fc": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Raducanu vs. Pliskova: Set 1 Games O/U 10.5"
+ },
+ "0x3c1c440ae736685fd08dcd38b324f77ee948b4883bd2084458c86688a66c40d5": {
+  "listed": true,
+  "us_slug": "aec-wta-robmon-barkre-2026-06-14",
+  "how": "name",
+  "title": "Libema Open: Robin Montgomery vs Barbora Krejcikova"
+ },
+ "0x70aab01c9d1f6e85523838d9d1a2bcd898f37a098e3e6a515713d8cabb843dc8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Paula Badosa vs. Sinja Kraus: Total Sets O/U 2.5"
+ },
+ "0xb44eb27a24fdb52a18e7f992800faf2a11bafa41fd54b1a5a84af0375378cfa1": {
+  "listed": true,
+  "us_slug": "aec-wta-ashkru-gabknu-2026-06-23",
+  "how": "name",
+  "title": "Wimbledon, Qualification WTA: Ashlyn Krueger vs Gabriela Knutson"
+ },
+ "0x41ddb5b9ad42cff4d007c158d822a8a5a13931037c6dab27755de3e074b09148": {
+  "listed": true,
+  "us_slug": "aec-atp-darbla-ugobla-2026-06-22",
+  "how": "name",
+  "title": "Wimbledon, Qualification ATP: Darwin Blanch vs Ugo Blanchet"
+ },
+ "0xd3509e54eaf40a7296c2fb43ff890ffcc056b6751805c2e1103c54bd770c3204": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Sonmez vs. Bejlek: Set 1 Games O/U 8.5"
+ },
+ "0x10002758832060b48d734624456a593f12a2decb5ea2d412ecdf1f4b52e76f2b": {
+  "listed": true,
+  "us_slug": "aec-atp-tunwu-bertom-2026-06-29",
+  "how": "name",
+  "title": "Cary: Tung-Lin Wu vs Bernard Tomic"
+ },
+ "0x2b9d1f1f9533e1a2bcf0bc566e73c55fba48d20141415445dffc9bfa136189ab": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Blinkova vs. Putintseva: Set 1 Games O/U 10.5"
+ },
+ "0x86d8492ad01bf1c37a5ce7540938d89a4dce55b294b72ba9a68e98eb5e38ca83": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Raducanu vs Pliskova"
+ },
+ "0x72f50d348b3748bb75c2b45c0934951e6a65d8805258c3b9a12dd9d17e7e12fd": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will George Russell get pole position at the 2026 F1 Austrian Grand Prix?"
+ },
+ "0xc2930df535462409523c4330b7bea5eca23e7b3d0df4bf36db15c9c3c73f7bd0": {
+  "listed": true,
+  "us_slug": "aec-atp-branak-jacdra-2026-06-22",
+  "how": "name",
+  "title": "Lexus Eastbourne Open: Brandon Nakashima vs Jack Draper"
+ },
+ "0x7d846f9677c596cba7bc90fabc0817d9c6fdde135b747b0cabaa74409670e279": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Boisson (-1.5) vs Yastremska (+1.5)"
+ },
+ "0x1f46b521e8205d907af86c6635b02be335641bb65ad9d58e62e8b4bf984bb994": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Jovic vs Pliskova"
+ },
+ "0x1a389a0b6afbcfc668ae7fba6b699a71859340f17dfd899e9b3bd269b37b7f40": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Anna Blinkova vs. Yulia Putintseva: Total Sets O/U 2.5"
+ },
+ "0xb8afa7209accf2de97e20d03e8f03b5f0132d2d0d90694ea75f54f5864ebf207": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Lois Boisson vs. Dayana Yastremska: Total Sets O/U 2.5"
+ },
+ "0x6037083ef9df88588713ab92672aeb25dac919fbe3f8b8929c27850ff11c2edd": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Badosa vs. Kraus: Set 1 Games O/U 8.5"
+ },
+ "0x90c5d241ee32ed214204998d87829bb06a79415d50d454ee2d94e91beb785c1d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Lajal vs. Blanchet: Set 1 Games O/U 8.5"
+ },
+ "0x2ef44a59bd13480efbdcfa4204f9f53c2827f8d4c825d3367c15d3d8ab7e36d0": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Dart vs. Boulter: Set 1 Games O/U 8.5"
+ },
+ "0x21edd855bc10e6a005dcb635d5ae7e5eceae54f3e9cc2fc31535ca990af7444f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Lajal vs. Blanchet: Set 1 Games O/U 10.5"
+ },
+ "0x1227c0968b4b96f12d5e11e0db53e1eb380b14b6e677507485227d4b224f79c7": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Boisson vs. Yastremska: Set 1 Games O/U 10.5"
+ },
+ "0xfcfcfc6dfb29874cd8e5ba9d479b53e061a11bc5fc3577ffcc502134aab36838": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bartunkova vs. Gauff: Set 1 Games O/U 8.5"
+ },
+ "0x3db16ba39e50346140cd868c1e44998ba0234b4ffc8fdc50081448e9c0a41e74": {
+  "listed": true,
+  "us_slug": "aec-wta-elsjac-naoosa-2026-06-29",
+  "how": "name",
+  "title": "Wimbledon WTA: Elsa Jacquemot vs Naomi Osaka"
+ },
+ "0xb31db8901084a41ced11f6d983413c8a50927c0a5f7f42a5dbe771cef3491fad": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Mallorca Championships (Doubles): Krajicek/Mektic vs Kyrgios/Smith"
+ },
+ "0x5aced5fd58da9d5cd96b0f7d3b3e3ae3649c9fd0cbdd08ece808dcf681ed43dc": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Gauff (-1.5) vs Bartunkova (+1.5)"
+ },
+ "0x1abe897e07a36bf8941043aa75eb6652c2cd2521a824068c2e5577b66be5d0d4": {
+  "listed": true,
+  "us_slug": "aec-atp-tayfri-jancho-2026-06-23",
+  "how": "name",
+  "title": "Lexus Eastbourne Open: Taylor Fritz vs Jan Choinski"
+ },
+ "0x79873e675c2f9f6fa1b7a91ff07fd65b2c8fbe14f86dfe79ddc2b1736d86ef75": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Badosa vs Kraus"
+ },
+ "0x42bc26ef6674b623d794fe54d7bda8bfe23a76d1757bbe94ba58e66d3d1549f4": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Kudermetova (-1.5) vs Kraus (+1.5)"
+ },
+ "0x6d2302053771c42c620a7ef3ef51c9ea39f8be042cf11460c618b98cdf8d09e7": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Charles Leclerc get pole position at the 2026 F1 Austrian Grand Prix?"
+ },
+ "0x4e018a5a764037ce47608fa9be4bf33af5aeca79ef23794083cbbd6f97f60dce": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bartunkova vs. Gauff: Set 1 Games O/U 10.5"
+ },
+ "0xa7bd918ff993bc840636584005cc869deeb8256c8afe0657d0dfa4d2de851ad3": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Blinkova (-1.5) vs Putintseva (+1.5)"
+ },
+ "0xa4112f3fa6ff2e41793c171c9b55f825c31bc2aea6d4e2301db059b8768798ae": {
+  "listed": true,
+  "us_slug": "aec-wta-guimar-jazort-2026-06-23",
+  "how": "name",
+  "title": "Wimbledon, Qualification WTA: Guiomar Maristany vs Jazmin Ortenzi"
+ },
+ "0x3fcd5c6d045a8a7c5d9a2a7594e097349d5f7d0b496b84fe8541ab4a05ceddc2": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Badosa (-1.5) vs Kraus (+1.5)"
+ },
+ "0xdfdb1d206fd64f7b84edd436a96032fa56b1066bf93f99966a89e6c55dc16391": {
+  "listed": true,
+  "us_slug": "aec-wta-vikgol-zeyson-2026-06-17",
+  "how": "name",
+  "title": "Nottingham Open: Viktorija Golubic vs Zeynep Sonmez"
+ },
+ "0xda1a953e681776fb2e47642d87f437e8eac8efd17b3e98d956400c9f0c0f73b1": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Tirante vs. Fearnley: Match O/U 22.5"
+ },
+ "0x47430426a1b6889f0fda582d011696ad13ecf9219f0b93bc12a4137b974765ea": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Fuente vs. Taverna: Set 1 Games O/U 10.5"
+ },
+ "0xae81965fc940055adffbfdee7f1fa2d276c60c34733a6d3a65814a4830d7c8f4": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Wang vs. Svitolina: Set 1 Games O/U 10.5"
+ },
+ "0xb0003a31d3b80cb63d48c1f91ac9913725578350495a1f52c70d71a42b587c36": {
+  "listed": true,
+  "us_slug": "aec-wta-aylaks-sacvic-2026-06-17",
+  "how": "name",
+  "title": "Figueira Da Foz: Ayla Aksu vs Sachia Vickery"
+ },
+ "0xbb921941a9ba8717c0a2549aeab134aa9b07b9c274f4ed966044be69abb9f4bd": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Sonmez vs. Bejlek: Match O/U 23.5"
+ },
+ "0x023985b7017faf4461da31710f04c0556f3cae5e595af723640c7a092f6b1d17": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Maristany vs. Ortenzi: Set 1 Games O/U 10.5"
+ },
+ "0x28086d70227ec42c8b306cf134aa20d8b9f284655b5b05234cdab454fc066b15": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Yastremska (-1.5) vs Boisson (+1.5)"
+ },
+ "0xf22ed712a379e1c5bb4c366683dfe0bdd6098576ceba042ba8a5d5c05fb59558": {
+  "listed": true,
+  "us_slug": "aec-wta-mayjoi-vikgol-2026-06-22",
+  "how": "name",
+  "title": "Lexus Eastbourne Open: Maya Joint vs Viktorija Golubic"
+ },
+ "0x30621864bb4106af80d961696fd090351e29fcead2887ec27c9a26a70d943c65": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Taylor Fritz vs. Jan Choinski: Total Sets O/U 2.5"
+ },
+ "0xd1064c113b5c81ed0073e8feb7b6cdabe6541b8cb68f72f76fcad5a758592a57": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Wang vs. Svitolina: Match O/U 22.5"
+ },
+ "0xddfefab52ae9ddb8b5edb68aa053f41e43971def841c2764347e54aa13ec63b5": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Maristany vs Ortenzi"
+ },
+ "0x595c6972e7c354cc70fb8bb778c4cfbcbaa45a3b31121f75252ee908d5c2fa88": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Moutet vs. Fucsovics: Set 1 Games O/U 8.5"
+ },
+ "0x1348c9d0ff71716c049e8c16e51b5caa397c0fa5080e41e2912fedf2231cdc88": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Tirante vs. Fearnley: Match O/U 21.5"
+ },
+ "0xecc10a64e138dfafc682f2f75e01d753b00554d2ff560ab62d763cf515090c7f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Bu (-1.5) vs Virtanen (+1.5)"
+ },
+ "0x2c03124e571e66437398a76387b4dcb14228f3d9aa3c25e7384324f067701e3f": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Blinkova vs. Putintseva: Match O/U 22.5"
+ },
+ "0x5c8c0dddec346d8f42d2435f68a51d2c782615aaf85d652d9447919ffe492e0c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Fuente vs Taverna"
+ },
+ "0x8cc1982e9aafd42d53a0c1efe51ffbbab93adf0bcfd75fd415fbf14630a2a1fd": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Tirante vs Fearnley"
+ },
+ "0x7329ddee9924a6c043c6493a0c4c6e36b89384e9883cd2e1231104deb044d616": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bu vs. Virtanen: Set 1 Games O/U 10.5"
+ },
+ "0x519972686fe3855870c530096c356a03099f3060186e640291efb781583e7c8b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Jovic vs. Wang: Set 1 Games O/U 8.5"
+ },
+ "0xbe0268b5431def011f02607cbb3b8a4687659d8c0d806f46f7608384a44cbc7a": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Maristany vs. Ortenzi: Match O/U 21.5"
+ },
+ "0x0501e4c2aacb275f3c03feec70c55001d9bc962c88db7fabec9433b29ff292e6": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Nakashima vs. Draper: Match O/U 22.5"
+ },
+ "0xf34912234b7906e6c843aa522db5608afbea1817e86b2339021512273177b566": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Jovic vs. Wang: Match O/U 22.5"
+ },
+ "0xe31f4f178f738c4c78d6b81c75b6cff71be1e25fe51f9138a3fb8ec94087902d": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Moutet vs. Fucsovics: Match O/U 22.5"
+ },
+ "0x9594abb6e7f3b36eb82e7d5355d4e7620b9a5dd504605aad8bfacc273de9ac8a": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Joint vs. Golubic: Match O/U 22.5"
+ },
+ "0x961c261ae5beea25eca2985f6d3245b122922c4b2536479b8270a446b62a32ff": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Aksu vs. Vickery: Match O/U 21.5"
+ },
+ "0x537dbda79087a3fe02210d96c08ab5562330825899d81735ff4d6f6fd831ea80": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Sonmez vs. Bejlek: Match O/U 22.5"
+ },
+ "0xbf7390c70002df895235a16da3a8ed9844408f7266ba35fbfa1f8fb878468bbf": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Joint vs. Golubic: Set 1 Games O/U 10.5"
+ },
+ "0xaa22b3f095c010ba957e4033de473504c38d83df8bdc08ec0ff03bb33e61ee95": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Joint vs. Golubic: Match O/U 23.5"
+ },
+ "0x5621d25e07987c6085083b20956deec201a87d40ce4bbced6775f85461fe882e": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Lajal vs. Blanchet: Match O/U 23.5"
+ },
+ "0x814236677413b3934d35b02ca0204a4e9ffe40e9f10b51424d72944f301fe68a": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Bellucci vs. Svajda: Match O/U 38.5"
+ },
+ "0xc200e4cfe90b39770e605aeb2c36fcd687882198f2519e6aeeff5d3cb83d2113": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Jack Pinnington Jones vs. Camilo Ugo Carabelli: Total Sets O/U 2.5"
+ },
+ "0xb143f24f0684c6cdff535c33482eab8b5b9c6f9cd282d7c8a01599b4d2081e01": {
+  "listed": true,
+  "us_slug": "aec-atp-benshe-nickyr-2026-06-15",
+  "how": "name",
+  "title": "Halle Open: Ben Shelton vs Nick Kyrgios"
+ },
+ "0x37a3cdd732dee20cc7dbaaa241bf58a14db29ada3813a96c7ba0f2354801b269": {
+  "listed": true,
+  "us_slug": "aec-atp-sanfue-santav-2026-06-22",
+  "how": "name",
+  "title": "Piracicaba: Santiago De La Fuente vs Santiago Rodriguez Taverna"
+ },
+ "0xe6019b82e984da29b3fab92c72086678ec440b204789b88402037aa03796475b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Aksu vs. Vickery: Set 1 Games O/U 9.5"
+ },
+ "0x76fbd81e427242538a1406fc03a504dde8ef071ceeba2ade032bfe456ba8ba3c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Fearnley (-1.5) vs Tirante (+1.5)"
+ },
+ "0xee6b454aabaf789f4f9d176f5d3e43455bf0c1bcdca5804d56cd2066e5f60c85": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Boulter (-1.5) vs Dart (+1.5)"
+ },
+ "0x5409f05662fb62ac21d223ef9a82c72445f7a9f3ec4dfef445ba5be98f699f7d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Jones vs Carabelli"
+ },
+ "0x5f9a58f781e42490d1f5ce85b9f7eb45f63ee091c17be1e8b6dc6947bcdba11a": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Dart vs. Boulter: Match O/U 21.5"
+ },
+ "0xdb0c515b4dbf35a5237523f5553b5ff375ed326746e225821f724e6163b1ecba": {
+  "listed": true,
+  "us_slug": "aec-wta-xinwan-elisvi-2026-06-25",
+  "how": "name",
+  "title": "Bad Homburg Open: Xinyu Wang vs Elina Svitolina"
+ },
+ "0xadf473518c2510e883fa4791317015a73f539c55456283118117fe3df6a0f3dd": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Moutet vs Fucsovics"
+ },
+ "0xa1f3b6adb496892ef433e05a235be9282a0ad4c5a3b2198199e87eb8f2f59847": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Taverna (-1.5) vs Fuente (+1.5)"
+ },
+ "0x8cdf7bea2e3dc0b5926c6b275a8856f15e03300f5bd5128ab606854101daa2e7": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Nakashima vs. Draper: Match O/U 21.5"
+ },
+ "0x3ed16d97fbaa691ac55b386b791a08bcc5f293971d78649fbb88df2b87b2574d": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Fritz vs. Choinski: Match O/U 21.5"
+ },
+ "0xeba903825b2c6380c64a3a238bf8f23a804c58dcafb717007bb853f03689f302": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Fucsovics (-1.5) vs Moutet (+1.5)"
+ },
+ "0x0070e1336d353fbabab4dc38595beb0b51061232219d725cdcc4791e1ab9c12e": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bellucci vs. Svajda: Set 1 Games O/U 10.5"
+ },
+ "0x6923ed36292f4f7f78d1637bc916df6e5ef965dbca3268a3b91b0cb97b0ecdc5": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Thiago Agustin Tirante vs. Jacob Fearnley: Total Sets O/U 2.5"
+ },
+ "0x06ce6b624355d9fe91f44deda1038cf5c1e367005f9b822a2e0aa966798473e6": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Dart vs. Boulter: Set 1 Games O/U 9.5"
+ },
+ "0xca9ae717c0e1e404435b72757c770f5b8c38fe268ae7e0da51cd8430a0a1ecef": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Aksu vs. Vickery: Match O/U 22.5"
+ },
+ "0x4e706120cee8225eb7262818e29674bb52906b59949d78709cf36b86e92646f9": {
+  "listed": true,
+  "us_slug": "aec-atp-jacjon-camcar-2026-06-22",
+  "how": "name",
+  "title": "Lexus Eastbourne Open: Jack Pinnington Jones vs Camilo Ugo Carabelli"
+ },
+ "0x5cc991a7d271b5227d4a38ac831a9cb51e6a60d97c8a8c46bdc77fe77c64d0ca": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Fritz vs. Choinski: Set 1 Games O/U 8.5"
+ },
+ "0x0a11d7558e0d85919da8101b8ab379f4d78ba8c1588f89c9d37f57a28bec8dad": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Maristany vs. Ortenzi: Match O/U 23.5"
+ },
+ "0xd2d76dadffd1ae5c10c42ec8db879f8b4680851b9c23858fa9d9aa58f9ca3074": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Badosa vs. Kraus: Match O/U 22.5"
+ },
+ "0xa44ab06c74299da8b9a5e16db44d18d4723fbfa63b52feb82967b3213bf40936": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Bellucci vs. Svajda: Match O/U 40.5"
+ },
+ "0x2976b8c880f102e6a644819ef29bc35da9e0577feacd843931f2ff5bc8bf4bb1": {
+  "listed": true,
+  "us_slug": "aec-atp-thitir-jacfea-2026-06-22",
+  "how": "name",
+  "title": "Lexus Eastbourne Open: Thiago Agustin Tirante vs Jacob Fearnley"
+ },
+ "0xa1d295b7197aa0270fa91d71eca18d5995f0470c009eda7be070a5b66231e402": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Svitolina (-1.5) vs Wang (+1.5)"
+ },
+ "0xf4cd883c7cee6136a9bf6c5195cc7e371e08bb7740e58419ca2b948f49379771": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Wang vs. Svitolina: Set 1 Games O/U 9.5"
+ },
+ "0xd5a8fce7c27eb76892a5827e40431a7ddcf9695f73303ab508d52ec758042792": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Shelton vs. Kyrgios: Set 1 Games O/U 9.5"
+ },
+ "0x7795bde10f8e8c691044d5aa32e2847ab442ce22e9330f71b72998b0f3ce3f15": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Wang vs Svitolina"
+ },
+ "0x708abf77169805a87d79067b49b0f19f0b2ab769b3beb6df499624cea278c821": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Moutet vs. Fucsovics: Set 1 Games O/U 9.5"
+ },
+ "0x5639f81b28670f74de6e1d57cda4cfc3f4e321b71f2f8bd35fc0000012307453": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Fritz vs Choinski"
+ },
+ "0x49fe2fdd427da6651fe86923e1f743b61d8aae7e757905846da1c5c3bbe5b20e": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Moutet vs. Fucsovics: Match O/U 23.5"
+ },
+ "0x6e3380e0bbf404d5a8f3afedc8f98d7a957663c4eab8a662de3492c3275f67fe": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bellucci vs. Svajda: Set 1 Games O/U 9.5"
+ },
+ "0x0c51b397b6678336a4308b210789bd94aba7a04322f6f9710c1e96bdd4e0c7ba": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Sonmez vs. Bejlek: Match O/U 21.5"
+ },
+ "0x4a7e16ba2e19420c8d30d4f17c683477ed1c00a459acf094dc455ba63ffb27eb": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Tirante vs. Fearnley: Match O/U 23.5"
+ },
+ "0x5291d8994691462405ba3a666f6b05896e0c532565e27a0c36ba60837d4b22fd": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Xinyu Wang vs. Elina Svitolina: Total Sets O/U 2.5"
+ },
+ "0x74db5bc22f50ba77491887204da30c172709ecc3d0eee10a52acd9c7c166427f": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Shelton vs. Kyrgios: Match O/U 22.5"
+ },
+ "0x7e5bc30f4d52507f0359a48235f7df8f65e951baabb162366d7e0480502b055b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Bellucci (-1.5) vs Svajda (+1.5)"
+ },
+ "0xdccbc4de05a8b5800e0a5b61521daea0a5da75992cf8be064c7a8f651d2f70fe": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Rincon (-1.5) vs Mackenzie (+1.5)"
+ },
+ "0x801c0bad80bd6766fab9a6ea5089fea28067836d13c353816e271a79939abe89": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Putintseva (-1.5) vs Blinkova (+1.5)"
+ },
+ "0xfaadc523bd6dd0c3c8356e50fce9aa165e4b03b4038040da68e7cad12e33a7c7": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Vickery (-1.5) vs Aksu (+1.5)"
+ },
+ "0xc36fb164f6fdf3fc7494eac8ce72bff14f8dc457d6b62ae19ef3b952a3a7bf9f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Mackenzie vs. Rincon: Set 1 Games O/U 8.5"
+ },
+ "0xd8bc3a799491809abbd6ed193fad103b009079a1174e2553daeffc4a18834d8d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Ostapenko (-1.5) vs Maria (+1.5)"
+ },
+ "0x88dc26a539602e629cdae175938a8ccbe0a8fa7978ca4ea38a379b91b5ad6c05": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Fritz (-1.5) vs Choinski (+1.5)"
+ },
+ "0xb67daa04a0f48fbce34d4ebe2dd5d6df35c26e4271b4cd81f8228e153c4f4130": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Maria vs. Ostapenko: Match O/U 21.5"
+ },
+ "0x46461ecbc3148de8f4e16a4bbbe85935fc977b4e5273785c6c443ac4cbbb8da2": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Aksu vs Vickery"
+ },
+ "0x6ff61311e936fe1dbbdfa7840d7741daa611b3abbefc25d0eb95f08cc124377a": {
+  "listed": true,
+  "us_slug": "aec-atp-jammac-danrin-2026-06-20",
+  "how": "name",
+  "title": "Mallorca Championships, Qualification: Jamie Mackenzie vs Daniel Rincon"
+ },
+ "0xd5ea694cda2f72eb5016fb6067bd4426a2521d51841ebae8c6af780db57dacd7": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Boisson vs. Yastremska: Match O/U 21.5"
+ },
+ "0xba17c329831142b77332271b04a10f6e7c5ab99e33fa2a7f3a388fa590369a78": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Guiomar Maristany vs. Jazmin Ortenzi: Total Sets O/U 2.5"
+ },
+ "0x2e97c3f2790fc2667ac8dd3f3ae57d48e21384701d2f565f1de290e998e4acf9": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Fritz vs. Choinski: Match O/U 23.5"
+ },
+ "0x50dd615b272ac954bcb914325877c91bcddd41804655298a156c91ea61326e95": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Blinkova vs. Putintseva: Set 1 Games O/U 8.5"
+ },
+ "0x2cc359648ba6695498c169ceaa44c5444e0479102c453289c47ed9489e7f3e93": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will Croatia win on 2026-06-27?"
+ },
+ "0xb31d2736f81a6f8655b2ac9d65ef42aaa95f7ef42cf99f58b2a6fce1bc3cef3f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Fritz vs. Choinski: Set 1 Games O/U 10.5"
+ },
+ "0xd19aace4c1a04431cd55a2b499031fed9ee5b445692d624d0a3bd1f69f41f70e": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Blinkova vs. Putintseva: Match O/U 23.5"
+ },
+ "0xe06210b17f128f72cec10d31577e9205348a72b10097681b0e4685f915e1e071": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Aksu vs. Vickery: Set 1 Games O/U 10.5"
+ },
+ "0x1a2ebbcdf95f0ef855cc8c4cddd561c1a712758516a50684cd2ac5265fa257e3": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Nakashima vs. Draper: Set 1 Games O/U 10.5"
+ },
+ "0xc3fa070ec7a623a927fecbb6bc3a0e219ebfbfbfd2cd05589202b28f48ed28b2": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Fritz vs. Choinski: Match O/U 22.5"
+ },
+ "0x44214ec0b4d8ca0786a935977010f3c0f653afb3fe4eeec508bb3df840505b2e": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Nakashima vs. Draper: Set 1 Games O/U 8.5"
+ },
+ "0x97e934526b17e7caf797c74bdbf0a59e80af911d03c61b5da62c73542839e6b2": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Boisson vs. Yastremska: Match O/U 23.5"
+ },
+ "0xcd8b4dee5c55eb81ce05533ea85cb62180b3f69ae0fe561e1d572f0e52aa8736": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Volynets (-1.5) vs Maneiro (+1.5)"
+ },
+ "0xa96555c5bea7e96593f62bc4d7cf3965a272f683cde3ce97499bc55679a9d305": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Shelton vs. Kyrgios: Set 1 Games O/U 8.5"
+ },
+ "0x5ae0c1b7cebf0ea7b7ac1513a1f6415edf246938567370eba563537efc394c02": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Dart (-1.5) vs Boulter (+1.5)"
+ },
+ "0x67008e048787cc454932ee292ac105138e33ba6fb5ab360168850b86c6d5bdb4": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Portugal vs. Uzbekistan: O/U 3.5"
+ },
+ "0xc9ad6c4e4a7c3be1dd7e6d704d3ef9e3e1886e9f3c42f4d261f023b6a2cab21e": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Badosa vs. Kraus: Match O/U 23.5"
+ },
+ "0xd8b6e5e3fd35e024ccf906a1de09b85a36e146f2cfee3cb23b31bbd68c601f05": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Moutet vs. Fucsovics: Set 1 Games O/U 10.5"
+ },
+ "0x04576d5e5fc94227d0473643651b5524e03f2bf15e60381204a76ac4b2466dc5": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Jovic vs. Wang: Set 1 Games O/U 10.5"
+ },
+ "0xb8ac9e6471f9b2832dd97215f6b6c4c2adef87743b9ec56b50e78bdd516263e9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Fuente vs. Taverna: Set 1 Games O/U 8.5"
+ },
+ "0x3c6ead47ef8c8076e8f545b37f2075db4fe383cb51eab72cf6d1b646d040efa5": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Bellucci vs Svajda"
+ },
+ "0x5440265b70951edd920ac5a78f4f1875efc3ea0241f4e532134f0cc0de59a180": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Jones vs. Carabelli: Match O/U 23.5"
+ },
+ "0x30d9770058654d10fd3417fbe144262f455a6b3e46ad3668041ee8a549d0199d": {
+  "listed": true,
+  "us_slug": "aec-wta-loiboi-dayyas-2026-06-15",
+  "how": "name",
+  "title": "Nottingham Open: Lois Boisson vs Dayana Yastremska"
+ },
+ "0x6c62b7187ce5d84c7618d8713d6e5fb86016ed374514503053af98f69ec79ab3": {
+  "listed": true,
+  "us_slug": "aec-wta-annbli-yulput-2026-06-20",
+  "how": "name",
+  "title": "Bad Homburg Open, Qualification: Anna Blinkova vs Yulia Putintseva"
+ },
+ "0x7c45cdaeea6cddb45fc34bf71a679ff5ceed9f09abb67d981af56d756d4cee15": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Santiago De La Fuente vs. Santiago Rodriguez Taverna: Total Sets O/U 2.5"
+ },
+ "0x893b26d615c4bd3d2a0df6350b70a53912413ba2ee1c01e28b25c3835970c991": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Ayla Aksu vs. Sachia Vickery: Total Sets O/U 2.5"
+ },
+ "0x61ca7d2f496bbb7ccf8cc395359c5dd14d273d3a39146e8dcc937aabda4bfef9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Mattia Bellucci vs. Zachary Svajda: Total Sets O/U 3.5"
+ },
+ "0x895289ebb7f57147b1f5c4bb713ae77159ecbada26c365e01e963f148ab87098": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Ben Shelton vs. Nick Kyrgios: Total Sets O/U 2.5"
+ },
+ "0x52d007d579344c4698874385d08d9c48ab566a890f821bf83ca6789a793a94a9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Tirante vs. Fearnley: Set 1 Games O/U 8.5"
+ },
+ "0x8235fb7364704e43db59436ce6d4ad89515d31c18c3b0054f250d3b56b9c92bf": {
+  "listed": true,
+  "us_slug": "aec-atp-cormou-marfuc-2026-06-22",
+  "how": "name",
+  "title": "Mallorca Championships: Corentin Moutet vs Marton Fucsovics"
+ },
+ "0xd630c7ad6bd86d861f9297d3edbc5fcfcc4eafb41d55c7df6b898c27bdec5977": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Bu vs Virtanen"
+ },
+ "0x1b5a8597191f5de89c57a20e176d0fec1d090174b60e7b2dd11d1d718486c7b3": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Blanchet (-1.5) vs Lajal (+1.5)"
+ },
+ "0x9f846a1df1a8c956d30268b2c418a285251cdf94c23c7e4d66f405d926c40c67": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Aksu (-1.5) vs Vickery (+1.5)"
+ },
+ "0xfbe8e59356920e43cdef86ff64cd61a861608acd6c701784ce63da6194854a63": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Wang vs. Svitolina: Match O/U 21.5"
+ },
+ "0x16d8fcd714994ac84191a7eece0b98de92c5f5b11bc5a5a095cb32c492aec2cc": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Corentin Moutet vs. Marton Fucsovics: Total Sets O/U 2.5"
+ },
+ "0x61c4fa5f6d75bd3ad89df5bf9dc04ca419da47ae592b4b1ae45cdb915eb5f210": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Badosa vs. Kraus: Match O/U 21.5"
+ },
+ "0xe63166aaef7e03e552eaa4f40d6ee85c329fc82f62ac70023dd37db3e18d294a": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Fuente vs. Taverna: Match O/U 22.5"
+ },
+ "0x78000de7af84d651d98fbb4dca7eb2f5c4e07b4b70a8690bf82f7df32734fcb2": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Bellucci (-2.5) vs Svajda (+2.5)"
+ },
+ "0x6928e48ed111948c0325d04293765659cc1185dd99ce4faa59aa7c3fb4cf1ad6": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Maristany (-1.5) vs Ortenzi (+1.5)"
+ },
+ "0x003437f04e3fff728bf344b24988caa5c9794ee7ebc4aa0b03153b1d779c7d47": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Mackenzie vs. Rincon: Match O/U 22.5"
+ },
+ "0x17fc2e6eacefa8b3f6be25dd4c04027795f094f14d022672496b7b8e5752f51d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Harriet Dart vs. Katie Boulter: Total Sets O/U 2.5"
+ },
+ "0x618b17efb38af22abb77dd920cd5b1f9bc958fbede3d41077bb59443a8bc8d6c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Brandon Nakashima vs. Jack Draper: Total Sets O/U 2.5"
+ },
+ "0x14e60f577749784e0c2c36f4e72ea23e6f8e7c42ca63bd2fe38ebe2c3e8af5fd": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Maristany vs. Ortenzi: Match O/U 22.5"
+ },
+ "0x012ab0526cc6efa50709b78386c1e4a06b6224fd72e09b8e454943792b092b62": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Tirante vs. Fearnley: Set 1 Games O/U 10.5"
+ },
+ "0xf5bdce132fdf2eb90b7e90455bea68ad04aa491405a9eae468a993ed8ba4af30": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Shelton vs Kyrgios"
+ },
+ "0x7444032c55080c16621cb96a3f121a21c9e58f09b7ee92f6c4a68583cad56cb9": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Moutet vs. Fucsovics: Match O/U 21.5"
+ },
+ "0xebb9bb944ae5a82714fe4c4f4c3ba75387c75f75467d6a5ab61f008c7e1d9ea5": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Lajal vs. Blanchet: Match O/U 21.5"
+ },
+ "0xa32a91d4b204a5adaab366185c0c27a2b0b9425805332aad51ed49f35cb41a4a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Boisson vs. Yastremska: Set 1 Games O/U 8.5"
+ },
+ "0x345bb7a7fe59c6c49959966d1804558053bacfcf749d25265e5c757742004261": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Mattia Bellucci vs. Zachary Svajda: Total Sets O/U 4.5"
+ },
+ "0xaa128e56724ade972f479fcfff09ad1503dedda532a83f36bc4b2c2b9371fe1d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Draper (-1.5) vs Nakashima (+1.5)"
+ },
+ "0x04b6d6630d49e6513355ff045c96439c929335cb0d18da7792dea6c2fc717ead": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Will France win on 2026-06-16?"
+ },
+ "0x83b61ab85af4f86803d098933706fdedd9b96de76414f928236b2f24a9ec8862": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Maya Joint vs. Viktorija Golubic: Total Sets O/U 2.5"
+ },
+ "0x58743986e80db69b30ff21d35ba579a359797e743a7cc237bd53f4d36e7f7e03": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Virtanen (-1.5) vs Bu (+1.5)"
+ },
+ "0x02aaf4c33b855921d652ca8a0e08a5dc53a5c85446d1102dd9fbec0d76acd2a1": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Bellucci vs. Svajda: Match O/U 36.5"
+ },
+ "0xe433fb5ad83d9c3d61e632e2cf475179c5c1643868cbc8ab07e4ff32ee170c5a": {
+  "listed": true,
+  "us_slug": "aec-wta-ivajov-xinwan-2026-06-21",
+  "how": "name",
+  "title": "Bad Homburg Open: Iva Jovic vs Xinyu Wang"
+ },
+ "0xc7d1cf3b2c5b6f33d4de750f6fa1eb8d9d1555e0d927c3d6ad3d64312bbdcf01": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Mackenzie vs. Rincon: Match O/U 21.5"
+ },
+ "0xf0a95877027040eb0ce382ab24bee170f9cc62435ceb0647dc2ddbf0d4896fbc": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Fuente (-1.5) vs Taverna (+1.5)"
+ },
+ "0x43727ae5607cb098d1820ec5fbe41c9dc26eabec626c9c4914b5b531eb712823": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Jovic vs Wang"
+ },
+ "0xeedfbaacc538b4f07fb7f24936154d38fa4a322766ca497739f4d4e2e9642816": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Bellucci vs. Svajda: Set 1 Games O/U 8.5"
+ },
+ "0x6d1ffe0e334fa015bdc469636940f7071a070ba8ce44c8ab1ea889aa7edd49b1": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Bu vs. Virtanen: Match O/U 23.5"
+ },
+ "0x9a40831c386df9f7f42eca5f6721929981321496e52a761673c227dd03ce04ed": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Iva Jovic vs. Xinyu Wang: Total Sets O/U 2.5"
+ },
+ "0xa2637c0a52dbef3e376b5e4e905a7f2cec3b3d1db7c4b660b05e36f08f0094ea": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Wang (-1.5) vs Jovic (+1.5)"
+ },
+ "0x1c3ae2b93c255e89c2b884015b50ab12e508cad3ec75ea81c826bf5482bda29b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Nottingham 2 (Doubles): Jebens/Vocel vs Hidalgo/Schoolkate"
+ },
+ "0xf9fc88b3578f13203a7d5a56b10bc664ccff376a528289c67c1237ea86213ead": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Grzegorzewski vs. Kamrowski: Set 1 Games O/U 10.5"
+ },
+ "0xc009c86720c6678afb3c15d6626d4665d0ac25ca070a4c9db1d0d1b38545a313": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Parma (Doubles): Biryukov/Gadamauri vs Martinez/Izquierdo"
+ },
+ "0x9b92a9f9978010a0af1efe1e4bbb9858d281af7ccbdb7f0021fba8185814640c": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Mikrut vs. Nava: Match O/U 23.5"
+ },
+ "0x0d8ef9daf26fdb4cad5a1f149cc40d6d76e790aaa3d6166eac924691a20d0ee0": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Tommy Paul vs. Jaume Munar: Total Sets O/U 2.5"
+ },
+ "0x7f5cce37665d894fc1f6e0f5e9896dadadad54a2d5b6b16bbf7a8110326e3dbd": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Oskar Grzegorzewski vs. Marcel Kamrowski: Total Sets O/U 2.5"
+ },
+ "0x1f798253196985842ae3aab475c4ee8420461cb77fb156e23f41fc77720047e2": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Chung vs Imamura"
+ },
+ "0x6b17a1f72e70d7383d60e733e0b684f5b6c129184d5840f85637e53b641aa6c5": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Oz (-1.5) vs Pieri (+1.5)"
+ },
+ "0x270a3dd384d03e4926535c22adc683312d90befa2d5289a2d001a106d5e49db6": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Counter-Strike: HyperSpirit vs Atreides (BO3) - CCT Europe Closed Qualifier: Series #4 Group B"
+ },
+ "0x7120c402d080b655593e845ddc03f6b3aa7f3a98ee925a02f64a01fb9ae872a7": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Valdez vs. Ruiz: Set 1 Games O/U 10.5"
+ },
+ "0x4e9375761c13405f6c62a8b2946f9c20542732783b8044dda2a451fbd51cd85c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Game 2: Both Teams Beat Roshan?"
+ },
+ "0x5324a37ac5eec185d8ebbf988918bae5190b992e2ad404c83997485ae47c2a91": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "ITF Tokyo: Hyeon Chung vs Masamichi Imamura"
+ },
+ "0x134081f00e19bd0a35f6efd56496e0d7e14b79f5e0ed7b8e7e20ba10f126b74b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Schoolkate vs. Harris: Set 1 Games O/U 8.5"
+ },
+ "0x876f86a2e96ce8817958f76797a0e0f52fe7cf1f5f1f18263eb050ea4c02c05b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Game Handicap: VP.P (-1.5) vs G-Time (+1.5)"
+ },
+ "0x55eaff5fc1e070acbef31bb61e0d801fcb3a2448a7a7e95f9e00a6b0760864dd": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "ITF Kursumlijska Banja: Adela Polakovicova vs Karine Sarkisova"
+ },
+ "0x0fc48cb988a62751a7d9d96d23fb8e80508f1c96819b8e15d53fc5613b575b6b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Blockx vs Cerundolo"
+ },
+ "0x68408428a58e7f95ce6fff62906c77742d284fed2358dcd262d8c8a100624c2d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Alexander Blockx vs. Francisco Cerundolo: Total Sets O/U 2.5"
+ },
+ "0x48f888418459478da09d2f2fa2b1d609b6d72498a13bd683ee844039f35f2675": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Counter-Strike: Abyssal vs Ding Cuts (BO3) - Dfrag Open Series #5 Group A"
+ },
+ "0xd27fcb589b9674b153100c2ade29d42c772e1aba5714fb087356a1ed7a8ceaf6": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Yleymi Lugiana Muelle Valdez vs. Celia Cervino Ruiz: Total Sets O/U 2.5"
+ },
+ "0x0a5771f315119780c29b8210d507cf81a2729cd2ed450c812599cfb0fd81796c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Kamrowski (-1.5) vs Grzegorzewski (+1.5)"
+ },
+ "0xc54385396d4bff5cf64f947739a015e1a5bdbcf60605df1643b943437ffc38bb": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "ITF Rzeszow: Oskar Grzegorzewski vs Marcel Kamrowski"
+ },
+ "0xf690f00c6bb72ac2a8137fd4d47f30a9304ae9704f426cc1757aa27ff6c9e6a6": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Bejlek (-1.5) vs Navarro (+1.5)"
+ },
+ "0xd42f47a06a8b75a6f81aa23030e2ad7cd8918b14a6c23d7b84d09514415334a8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Sato vs. Hayasaka: Set 1 Games O/U 10.5"
+ },
+ "0x510e4ac8deccf2b5d2ce61c2861c6b612e90508106d2f75b06a37d6d82c7bc8a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Games Total: O/U 2.5"
+ },
+ "0x02281866699ec0388492d0468eacdb0944f5c457faef0de7bb5e1deda477765d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: Omega vs SHISHKA - Map 2 Winner"
+ },
+ "0x8f09ba6e7cea6d4e68c30d386438cefdc8ad7145a9987a34001da3ee7d7963b9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Games Total: O/U 2.5"
+ },
+ "0xbf9a10e2570f93ad9c4cc24da377dcc0b02fb03e085bc351328a34eac19a9b69": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: HyperSpirit vs Atreides - Map 1 Winner"
+ },
+ "0x5f693cbe3e32df419626ebad5a655047491e347d69e93748e77b7e6514267e8c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: HyperSpirit vs Atreides - Map 2 Winner"
+ },
+ "0xfb782c5243476fe0e671c86970593a0a005c5d33ae813c44ade02c9c748e7ad4": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Paul vs. Munar: Set 2 Games O/U 9.5"
+ },
+ "0x5f68f6a5f6e0c529df98a3e973de4f64e43ef02124968c44bdb3e8eae621738b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Game 2: Any Player Rampage?"
+ },
+ "0x3637f234d225b5505462ce1cdbb2f96adfcb07e9f8f2b1e78ef352cefbd7da50": {
+  "listed": true,
+  "us_slug": "aec-atp-genoli-chutse-2026-06-08",
+  "how": "name",
+  "title": "Bratislava: Genaro Alberto Olivieri vs Chun-Hsin Tseng"
+ },
+ "0x5c0f89fdf4e83121a1f4d0a43e28f84b63f0fb2afb17fda83ee232f868881771": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: Abyssal vs Ding Cuts - Map 1 Winner"
+ },
+ "0x78340ef0bf3ef000d61cdc3b2ca53286de721c7355bf69a9cc8d2442c612f6c1": {
+  "listed": true,
+  "us_slug": "aec-itfme-kimcop-louwes-2026-06-29",
+  "how": "name",
+  "title": "ITF Nivelles: Kimmer Coppejans vs Louis Wessels"
+ },
+ "0x49a2133e6d90dc6db419375778f0c6041c26a76f9d1b329c583b1b26e5d1626a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Games Total: O/U 2.5"
+ },
+ "0x4aed01a016de319b1a605754b680cb12629adc63f57cc044795ac7eee8922ddf": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Counter-Strike: xept vs Clutchain (BO3) - United21 Group B"
+ },
+ "0x1006a6e8bbe873d5a81f85bb97727aa82c61fc466038513f8b0f405a09ef9188": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Map Handicap: Atreides (-1.5) vs Subtop De France (+1.5)"
+ },
+ "0xc7da1e0624632e72663e230531d773d5b1e0a434cfce103b98a5e397ff0d49a6": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Games Total: O/U 2.5"
+ },
+ "0x4a9de719190e8a6f5d1bfd2a74e9a040a8eca96f71baba0246196055ec659604": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: TDK vs Young Ninjas - Map 1 Winner"
+ },
+ "0x769447dd26de9bcd084538b8cb402cd92a25db65431d667bdcc6c5d12acbe80e": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "ITF Tokyo: Hikaru Sato vs Kurea Hayasaka"
+ },
+ "0xb88f2ecf2e99719019414be0ebee1b4f1a8052d75fd99fd94e91cd7dd758445d": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Paul vs. Munar: Match O/U 21.5"
+ },
+ "0xa0a59752bc1dd058e3973944861fae9379b7978e6fc0fc3ba31c0b0c719d0f56": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Karol/Serdarusic vs Shevchenko/Yevseyev"
+ },
+ "0xdf33c0266b037e76638166cf83dd3e8ed33015b751ea98f9fb46064fe20f824d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Valkusz vs. Fellin: Set 1 Games O/U 10.5"
+ },
+ "0xb7cb787a6bd5a5146eef50a30e4b9ec0b0b2b08a50b480423806f3e45c506340": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: Just Players vs OlyBet SB - Map 1 Winner"
+ },
+ "0x63c78238a43e9d9b66910ba2daecb19989b186504e18b8083ff2d90ac4604541": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: Vasco Esports vs Red Feet - Map 1 Winner"
+ },
+ "0x79a83aa6ccb412d91cadd185afdbf2abbe906c8d00476ced411ac8adfa799940": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Map Handicap: SAW (-1.5) vs megoshort (+1.5)"
+ },
+ "0x8fcdacbc9711a0f7bfd75616f57b30710f7e9f8bd56af3ca78cf432c7cbd7534": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Chung (-1.5) vs Imamura (+1.5)"
+ },
+ "0xd0c9cae9c3c468c64c0871aaacd22d07ca3745a3a1c5c3c17b9d75833d5d62bd": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Oz vs. Pieri: Set 1 Games O/U 10.5"
+ },
+ "0xbe0e5441f468c636ab43bbaaa338f3e8d9410d7417ddaf937e101fd95a4383dd": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "UFC Fight Night: Jhonata Diniz vs. Jos\u00e9 Luiz (Heavyweight, Prelims)"
+ },
+ "0x21c87f46e44180ec8eca5d4d5a3227266e22813aec954ad96def4fb8a558762a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Fernandez/Siegemund vs Jovic/Kessler"
+ },
+ "0xa8e1d38262af21b41a1de0863a599e1f5c73076a3fc775dd0031b81480357350": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Paul vs. Munar: Set 2 Games O/U 10.5"
+ },
+ "0x8bd2ca12271ef680e4397ead892f7c9ae230c6b69bc9a8fb835c5119e076167a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Valdez vs. Ruiz: Set 1 Games O/U 8.5"
+ },
+ "0xbdb3f308438883a74f140e81e4f7c83954732914cd91f60023f3bd1bef784aa5": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Counter-Strike: TDK vs Young Ninjas (BO3) - European Pro League Series 7 Playoffs"
+ },
+ "0xf5762dfd94a09de65b2d156199351e09c4dfc551f54828c16391ad75d5a987eb": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Dota 2: VP.Prodigy vs G-Time (BO3) - European Pro League Group A"
+ },
+ "0xe496003a3a8505262cec8362ac3206dd6a0eeb20f57d77850408855acee089f1": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Counter-Strike: INOX Division vs Bebop (BO3) - CCT Europe Series 4 Group Stage"
+ },
+ "0xe9cbb6e3551863a9923ca0b24a21369f98021edd8ffa15366cb165ed9c88b266": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Counter-Strike: Virtus.pro vs INOX Division (BO3) - CCT Europe Series #4 Group Stage"
+ },
+ "0x622a27ae00a164369034197c2ba6737123ce92926bd77ee58583ffd5135f6c9f": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Valdez vs. Ruiz: Match O/U 21.5"
+ },
+ "0xadb043c983d4731a15426f4e4c4a475abea023cc044da8ca608f48c533007cb5": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Halle Open, Qualification (Doubles): Arends/Pel vs Galloway/Peers"
+ },
+ "0x0dfd2217f1e01134003bbd1a8ea15b692b4179f192120e7b30e5954c0e0336fc": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Map Handicap: SPARTA (-1.5) vs Bebop (+1.5)"
+ },
+ "0x5834e11160ff639d99fd928e5571dcef38c83b693b430ddff08dcaa5af6ef3e3": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Counter-Strike: CHAOS vs Alpha Dominion Nation (BO3) - United21 Group C"
+ },
+ "0x03594eb138cea18ddc767ee4acc01c2e164d571dfd9f9612e08a187037259590": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Blockx (-1.5) vs Cerundolo (+1.5)"
+ },
+ "0x219f5ea6a10a9c095f1a47ea0fbd7d70904019c7a4de17fba4724e6983b7285f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Lee (-1.5) vs Wang (+1.5)"
+ },
+ "0x4132e4c7ebcf1348e48ead91b9d3cbce8635bda1c286ac9753a05c2e153898b3": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Games Total: O/U 2.5"
+ },
+ "0xb46f2de9eb475223ace6fcdbb8edc21b834efbcdb40182ac5ed2845c6c887224": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Gonzalez/McDonald vs. Faria/Rocha: Total Sets O/U 2.5"
+ },
+ "0x300c07da6b57c12d73a0796e777bf784a4067e4aabc5cf45767585c7721a7eba": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "ITF Tauste: Yleymi Lugiana Muelle Valdez vs Celia Cervino Ruiz"
+ },
+ "0xa1820c7f48b173710457b26a2cb19ab6fb94f1478b86ebc9fd12171168cf1f2f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: Just Players vs OlyBet SB - Map 2 Winner"
+ },
+ "0xe79a33601c53216bf1fc28b05f18a79511fdfaaddcfd4e4d949c1de695a47b86": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Dota 2: Power Rangers vs Noir Esports - Game 1 Winner"
+ },
+ "0xf9e2d2e7229f375e0ca2c50e4a12a01724acea2b7ba55e79bf2ab5921e651fca": {
+  "listed": true,
+  "us_slug": "aec-cs2-vsc-rf-2026-06-27",
+  "how": "name",
+  "title": "Counter-Strike: Vasco Esports vs Red Feet (BO3) - CCT South America Series 3 Group Stage"
+ },
+ "0x3d6ad187bbb4e66e9ca53c26df04e6a4ddc3f66cda551e702921c107482656a6": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Mikrut vs. Nava: Set 1 Games O/U 10.5"
+ },
+ "0x2345328b8ba89f70a96b5eacc0e29f5d626472bee5331a37126240d39069cf1f": {
+  "listed": true,
+  "us_slug": "aec-itfme-matval-piefel-2026-06-19",
+  "how": "name",
+  "title": "ITF Gyula: Mate Valkusz vs Pietro Fellin"
+ },
+ "0x6ba64c1ffce9973a490a5b29e6c155073b5211118a6410e27687ac46175fa36d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: Ground Zero vs MARKandLARRY - Map 1 Winner"
+ },
+ "0xae1070da60d0e6a168eeda0fc0df809fde0abbc1bee319d4dce4db3130a49c24": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Counter-Strike: Coalesce vs Millennium Esports (BO3) - United21 Group A"
+ },
+ "0x6abf48301b45b80fa62f691c6148a89aaa03ab39598028a1f1dd109aafd96615": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Blockx vs. Cerundolo: Match O/U 21.5"
+ },
+ "0x30935ea6a6210506a9889ae84998b4d650efe78dea03e634cf1bc9460d39aad0": {
+  "listed": true,
+  "us_slug": "aec-atp-juaest-ryadic-2026-06-15",
+  "how": "name",
+  "title": "Asuncion 2: Juan Estevez vs Ryan Dickerson"
+ },
+ "0xc7c7765f5090128619fb24ff7757075230822df22bb3be86484c988c4b0a2f73": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Valkusz vs. Fellin: Set 1 Games O/U 8.5"
+ },
+ "0x55fa6413c9c83fbe4d81d7568c5dc6161c33f601bfec6656a745c6b645bf24d7": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Oz vs. Pieri: Match O/U 21.5"
+ },
+ "0xa2fb830bb1098a08e53445b2a07695bb96b94850515ca844f8b830dc419ac354": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Olivieri vs. Tseng: Set 1 Games O/U 8.5"
+ },
+ "0xc13439bff16f5596f35564040bc110adf50649db1690296f92952918a14a7f5e": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Hussey (-1.5) vs Fonseca (+1.5)"
+ },
+ "0x8e4d793bb072cebe0c57c9a48b395de23fe8262e77eb98ad36399e756b4de3b3": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Hidalgo/Schoolkate (-1.5) vs Jebens/Vocel (+1.5)"
+ },
+ "0xf39692c5de5a4b75dd8aa6b2cf2931f3646f99e7983b327b4d13a813b0ae5059": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Sato vs. Hayasaka: Match O/U 22.5"
+ },
+ "0x201213aa4b5eacf798b4af6e4a28bd7ddbf27b51c7c04585253c35a06b9ba0e7": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: BIG Academy vs Endless Journey - Map 2 Winner"
+ },
+ "0xd41d449e07559981d2d9e550172ba8e4cf1da6207fefa254b13d30c146932e1f": {
+  "listed": true,
+  "us_slug": "aec-itfwo-luihei-emisei-2026-06-23",
+  "how": "name",
+  "title": "ITF Tarvisio: Luisa Meyer Auf Der Heide vs Emily Seibold"
+ },
+ "0xa547eb00ecc0051c502fae875b4ea5926463a89ec53a49fd7b5c4e06d91841d1": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Mikrut vs. Nava: Set 1 Games O/U 8.5"
+ },
+ "0xe4083bab6e43a0009c00dc1301bc4cbb15aa96cf2065e1798747ff0155862eff": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Lee vs. Wang: Match O/U 23.5"
+ },
+ "0x15fcaf431ddb3c0972cf54ced542a14440aa94fa017a237b5c6006f445aa8ee4": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Counter-Strike: Rooster vs DXA Esports (BO3) - Dfrag Open Series #5 Group B"
+ },
+ "0xf7c23d650e792847319653e16b64d9e8d5bad0bf8026ea5dff4a52b06da25aa4": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Piracicaba (Doubles): Casanova/Taverna vs Aboian/Ambrogi"
+ },
+ "0x89ca77e6e6e051b4bb0ad88da358f26a0e817c83aa3cf80ef7c63bae0280daff": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Map Handicap: Just Players (-1.5) vs OlyBet SB (+1.5)"
+ },
+ "0x380aeb574bd7f14462fec766122a5cf0789640c0e35ba236b5d764989879f69e": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Polina Kudermetova vs. Sinja Kraus: Total Sets O/U 2.5"
+ },
+ "0xa2709ef721a14a421116247f909fb0d6f3b92c026e6ce50aabe5fafee91e6131": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Oz vs Pieri"
+ },
+ "0xdf3e21a44cf2430721d235ca75ce91f2d08adc2f498b721e8c05c8fd044b4c6e": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: Abyssal vs Ding Cuts - Map 2 Winner"
+ },
+ "0xeb09515ac4bfd413dbdecd22953cb8ba8bdc8428ee0b79b8ce666c3dbf78c507": {
+  "listed": true,
+  "us_slug": "aec-cs2-atr-sdf-2026-07-02",
+  "how": "name",
+  "title": "Counter-Strike: Atreides vs Subtop De France (BO3) - CCT Europe Challengers Series Playoffs"
+ },
+ "0xfee12951d7b17e14c66accc0a49af04cf9cd827d0f9cb40862568239da423e4c": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "ITF Tokyo: Sora Fukuda vs Alan Magadan"
+ },
+ "0xa6de38c9d71504b19ccf6aaec435f1e5d021f4807767eb372176ea5337cad285": {
+  "listed": true,
+  "us_slug": "aec-cs2-mego-saw-2026-06-29",
+  "how": "name",
+  "title": "Counter-Strike: megoshort vs SAW (BO3) - CCT Europe Challengers Series Playoffs"
+ },
+ "0x1a8c468e49dec1b4a0c102b111cf1eeccfd1f75ceb93fbea9a83b5285f438305": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Map Handicap: TDK (-1.5) vs Young Ninjas (+1.5)"
+ },
+ "0xc8f84e21ef9d89a075d252ada4048ec72f5b03c125619de3da3875003d7efb0a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Casanova/Taverna (-1.5) vs Aboian/Ambrogi (+1.5)"
+ },
+ "0x3099ff8591c7ddd004a06649fa6e6159af108ec611197bce96130d54302fc50c": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Heide vs. Seibold: Match O/U 21.5"
+ },
+ "0xdfc703eb9ae999b55000e4e3a6aedca59a55fd9fe35ac364407a9b283ff3a75d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: NEXORA vs CYBERSHOKE Prospects - Map 1 Winner"
+ },
+ "0x8434bed9bac211551954aeb537ebdb806a09dc0214ae9d2cc1c15b1fb3dc812f": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Grzegorzewski vs. Kamrowski: Match O/U 22.5"
+ },
+ "0x74b0c1ae48e50bac2da19e31d09e9501225db1d960fc8bf4dcca1e893d495bac": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Aboian/Ambrogi (-1.5) vs Casanova/Taverna (+1.5)"
+ },
+ "0x31f4f57709cd83c1b77e9ce93ffc5f2639201520450668faf5ba2e4d1e5eda58": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Paul (-1.5) vs Munar (+1.5)"
+ },
+ "0x20ac60d9afd30e397cd9fcfb91901d0b43061f98230cd9622d8a46a2adf50df0": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Kuan-Yi Lee vs. Aoran Wang: Total Sets O/U 2.5"
+ },
+ "0xe68cca863ca8093f6da065a9a2b078057030dc9754dd9fb0540ad5ec99e0b868": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Games Total: O/U 2.5"
+ },
+ "0x3041dcfc63c12944b8c52ee78a03d7a36469ef65e7a5e0a3755c403d7b5614ea": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Shevchenko vs. Olivieri: Set 1 Games O/U 8.5"
+ },
+ "0xe639fab6651f43d18f53e2b1d3a425140f9d78a11b6fe2111e1f9afbcfc81a3f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Cerundolo (-1.5) vs Blockx (+1.5)"
+ },
+ "0x5cc6df61780c7636e6cc0653e1f10152f717f5484860b1447582aa053bb2be86": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Counter-Strike: Just Players vs OlyBet SB (BO3) - CCT Europe Challengers Series Playoffs"
+ },
+ "0xbee0d209369b66159bc4ec9c29ebe6dc15c951af23e189b9626e78d299b22ba0": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Brescia (Doubles): Astakhova/Kazionova vs Mcadoo/Monnet"
+ },
+ "0x60aa02dd5fdea9765e8521eb16631e3e61500e599e939576855ef37cb4ec23e3": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Games Total: O/U 2.5"
+ },
+ "0xd48abfaef48697e6b60ce65a1c5ad817ad05c7a0c7f39b0ee202c6982156dc93": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Game Handicap: PR (-1.5) vs Noir Esports (+1.5)"
+ },
+ "0xd9525bbe53cd50995b805aaf5967574bc238cdeb6e56eef49c51c0d98904f849": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 2 Winner: Shevchenko vs Olivieri"
+ },
+ "0xb4203b174d965f00c5db94a339df72def576ee9412fe304010b7491c98aaa0f5": {
+  "listed": true,
+  "us_slug": "aec-itfme-kualee-aorwan-2026-06-24",
+  "how": "name",
+  "title": "ITF Wuning: Kuan-Yi Lee vs Aoran Wang"
+ },
+ "0x75963b1f4c9769f561f3bdf041be6da0ca541c2f94f39d6af6bd0aedade2b13f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Krejcikova (-1.5) vs Montgomery (+1.5)"
+ },
+ "0x58f8b58713d713ed92fb8fd964ce1c9196c45db30dae4babe5598f7e6239e69d": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Luka Mikrut vs. Emilio Nava: Total Sets O/U 2.5"
+ },
+ "0xb7de072e83527e408d9f340d4b3b2340e6cf6a0a9d3ac7b12026e5f729c5b8df": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Game 1: Any Player Ultra Kill?"
+ },
+ "0xddd599ab11a9dffbe10088f46524825568b32da2cb95945e34443fdcce62fd96": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Blockx vs. Cerundolo: Match O/U 22.5"
+ },
+ "0x895c9cf9c71c6e7c4b69e96a7af667336f4c827baca568728df59601d45f6350": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Game 1: Any Player Ultra Kill?"
+ },
+ "0xfa5d4d7e8b9875dd40f138fdf76921716c163dd99d2bb4a2b65306ab1a01c6e3": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Oz vs. Pieri: Set 1 Games O/U 8.5"
+ },
+ "0x8d1cabb28b386c616995019c1dce463eb6b55a94326035279c988e5a1c9b98b9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Dota 2: Power Rangers vs Noir Esports - Game 2 Winner"
+ },
+ "0x826edff5f9f5dd1c0da768349db41a9e39b2564c0912fb5754ed8e0b2e4fb204": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Broady vs. Vasilev: Set 1 Games O/U 10.5"
+ },
+ "0x785d46b05b92009aacd646fb532273143c66f1c8a51648df2550747d8bae9c95": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Grzegorzewski vs. Kamrowski: Match O/U 21.5"
+ },
+ "0x02b627e9e1c98de77878a11215c663df53dd005840675c3590dc9ac5cab27089": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: xept vs Clutchain - Map 1 Winner"
+ },
+ "0x81191f3aa13c9848eff999012aada5b122a141adf6463d31442b9e131dddac9c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Vanshelboim vs Schell"
+ },
+ "0xa826e3965f34e3c3fda1e55a3d88fa356bf275d978f83914193e3f8e5f127005": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Munar (-1.5) vs Paul (+1.5)"
+ },
+ "0xc1f8e06330905f424653c24d253c2f7bfe3c4ba47820b1ac670f451dcd1037f4": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Paul (-1.5) vs Perricard (+1.5)"
+ },
+ "0x75411f228a7d63ff795df554a2628b9f183082e9a84391de422b3ac909b7ef37": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Map Handicap: VSC (-1.5) vs Red Feet (+1.5)"
+ },
+ "0x928e6eb6f1f374a220a644626cd3f14525d669f93649e9ee508e8db08b622535": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "ITF Hurghada: Aliesia Reva vs Ashleigh Harvey"
+ },
+ "0x391552e32ca5f1eeba0afd51bc8a8c0f22fc6b94657edee66a6f7fd51a7333de": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 2 Winner: Bartunkova vs Gauff"
+ },
+ "0x0f6597582b81c37dc13fd056c372769b7d76a2e38ba7e108be2fb612fcf977b2": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Robin Montgomery vs. Barbora Krejcikova: Total Sets O/U 2.5"
+ },
+ "0x0f85dcb03e049d237bf6b7e9be88bb2df43766a7f28d4ac1eab3ec0893d1f6c9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: TDK vs Young Ninjas - Map 2 Winner"
+ },
+ "0x30d58764b369ff44e4bfaf69c1681be6d36a9063405823ba85055c4b3d17de29": {
+  "listed": true,
+  "us_slug": "aec-itfm-wilgra-jersch-2026-06-10",
+  "how": "name",
+  "title": "ITF Nyiregyhaza: William Grant vs Jeremy Schifris"
+ },
+ "0x356081c4a6827464a07a15c00fe8a0cb276472e8bd95fa2da6d0f834392b54ed": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Lexus Eastbourne Open (Doubles): Cash/Glasspool vs Cerundolo/Carabelli"
+ },
+ "0x998c236a20366adcdb63c0354338ce85b1e7b6286520c6415ddff67fc5747398": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Game 2: Both Teams Destroy Barracks?"
+ },
+ "0x2e0d631f342719baab9218731b30379e4bc3a0ffe07f4a6ee7e000a127c4dc92": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Paul vs. Munar: Set 1 Games O/U 9.5"
+ },
+ "0x06e4f60910788c6cb7edb5e9fa576e21dd5b8d0c3b6183c4206f8019cf813b4c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Mboko/Williams (-1.5) vs Fernandez/Siegemund (+1.5)"
+ },
+ "0x4f7cc77ae9f456e0779575634f42304d02fd610be37402e1b1f80dfa51c91793": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Grzegorzewski vs Kamrowski"
+ },
+ "0xd191393d3c9d3e5833599ee600ede295550c35c057fee4e41e741b054f078f72": {
+  "listed": true,
+  "us_slug": "aec-atp-tompau-gioper-2026-06-08",
+  "how": "name",
+  "title": "Stuttgart Open: Tommy Paul vs Giovanni Mpetshi Perricard"
+ },
+ "0x97c8cb0925fa517608d9c19dd2dd6761ce015846fd20e37bacf362fa16d6d7f5": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: Ground Zero vs MARKandLARRY - Map 2 Winner"
+ },
+ "0x4c27a8aef6c08af0b77ea6d92e776aa212d549eabd5e68fa1d8886357ce54a16": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "ITF Monastir: Victoria Milovanova vs Isabella De Micco Padula"
+ },
+ "0xff2b7c0076c0f0c84dff86edd185b550bf02ccb37696803f32789d9435d100dd": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Halle Open (Doubles): Galloway/Peers vs Arribage/Olivetti"
+ },
+ "0xc8c0a620881be114a2725cd2afaeea5bc1d160445ff3e367a841f6df0b64eb22": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Blockx vs. Cerundolo: Set 1 Games O/U 9.5"
+ },
+ "0xe4c61f4e2049d3eb6ca073d6785f87c2c9f2d4a3f864a088c18997319a3b65bc": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Dota 2: Sadboys vs Selva Esports - Game 1 Winner"
+ },
+ "0x1b5b8e68e122cc124bbb1d1c6260f55256c7f7eb13d79622b65bf37404559e1f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Lexus Eastbourne Open (Doubles): Jurak/Ruzic vs Errani/Paolini"
+ },
+ "0xd12af5841d1f789b7cfe84c4a9fcfa9a81c8e1564f1e0b68f06fe0ce7fe245b0": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Game 2: Any Player Rampage?"
+ },
+ "0xf0677f2e70b3299856be3dff4e4c90fc4621fc47ca0f0774a4aa19dcf12034d8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Broady vs. Vasilev: Set 1 Games O/U 8.5"
+ },
+ "0xfbd20c121fabdf7a46ce6d93f9eb161d28aa14de90f8b58da91a1cacadb72631": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Chung vs. Imamura: Set 1 Games O/U 10.5"
+ },
+ "0x831aa460d2fc2f02ae09068d2fed894e23a9d588760c730f4763b808aaa7036d": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Counter-Strike: SemperFi Esports vs MGLBROS (BO3) - Dfrag Open Series #5 Group B"
+ },
+ "0x70efbb66b27d88f78ae2970b0be979359eb803b67560527107632e74fac16412": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Kudermetova vs. Kraus: Set 1 Games O/U 8.5"
+ },
+ "0xed6c24bc2faa00972580d2c0502059bf6a8bc554688eaacb633ae973a03fd4c4": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Map Handicap: BIG.A (-1.5) vs Endless Journey (+1.5)"
+ },
+ "0x9b10d2451b8933980f3b176515e25f37075e447609c09b9ce642c028c702da18": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Ruiz (-1.5) vs Valdez (+1.5)"
+ },
+ "0x2917f648421a49d0fb2da4d1bb559b567fba6a37602282ead8203cf8d973bed0": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Map Handicap: CC (-1.5) vs xept (+1.5)"
+ },
+ "0xeba4a69772b2cf70702c9f5cbb81b314a15e07eb1b304aa901a9347bfaf69fa5": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Games Total: O/U 2.5"
+ },
+ "0x1ee84abfca584e5ee01aa987a030e0faf3bd98dcd4f8ddb15525cd406d0d6728": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Grzegorzewski vs. Kamrowski: Match O/U 23.5"
+ },
+ "0x4b62009019db0b27a3c0c8164fc1d3f262d04418664956573a0f5b67a8465baf": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Hikaru Sato vs. Kurea Hayasaka: Total Sets O/U 2.5"
+ },
+ "0x2c280f341eb3c5981db84681273fa6970c89cd941ac6d62c43585d25748b6609": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Counter-Strike: Ground Zero vs MARKandLARRY (BO3) - Dfrag Open Series #5 Group A"
+ },
+ "0x8aa947f25d92738c7c027f527bba4f523198bf990cd56cda3c05dd1cf128e47a": {
+  "listed": true,
+  "us_slug": "aec-atp-aleshe-genoli-2026-06-15",
+  "how": "name",
+  "title": "Poznan: Alexander Shevchenko vs Genaro Alberto Olivieri"
+ },
+ "0x4e2405ec213ed6ed8d23407971c47b1c1e276edb998751bf83f41eda1bd40a9a": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Sato vs Hayasaka"
+ },
+ "0xfd5c9c08b45a01c118a84307d3e088e8c8ff8361534368c7283fd15fe8b41073": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Valdez vs. Ruiz: Match O/U 23.5"
+ },
+ "0x0e8f20ceaa8dae9ccb59e1a9cf2fa85cb2339c0f9f784d7b94c51fb5100506c1": {
+  "listed": true,
+  "us_slug": "aec-itfwo-xiluo-jiaxu-2026-06-24",
+  "how": "name",
+  "title": "ITF Maanshan: Xi Luo vs Jiayu Xu"
+ },
+ "0xc8e26b877453110c301f9d4de0d4b2b12b9a7306ca40e4d301956b5651858f06": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Casanova/Taverna vs Aboian/Ambrogi"
+ },
+ "0x027bf700e0b69c1ae6edbcbcec5f9cf655f7c0ae071db748871e8a1bbbddaa63": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Ipek Oz vs. Jessica Pieri: Total Sets O/U 2.5"
+ },
+ "0x63fa12d8cba0aab4daf50f7f5b022f9a7b23fb2640ffaae1a563494248f49409": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Hyeon Chung vs. Masamichi Imamura: Total Sets O/U 2.5"
+ },
+ "0x6b3706178347b4ee9a6b61adc7e2e2beb61103914be1d3e2eaaf1284663a2580": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Dota 2: Power Rangers vs Noir Esports (BO3) - European Pro League Group B"
+ },
+ "0xe1c7b3ec15e7cb088d086224aa8b8e8e7a7f7902c0c7b9b34bc2f115f45f5bf8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Valdez vs Ruiz"
+ },
+ "0xe2329f2bf6b540d851adfedc567277d6ef54a80e2d56615d5eea28c2f9541197": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Poznan (Doubles): Karol/Serdarusic vs Shevchenko/Yevseyev"
+ },
+ "0x1558a8cc529aecc2cd16d63874fa46ec09194fc177b04685490c8ccb65714412": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Grzegorzewski vs. Kamrowski: Set 1 Games O/U 8.5"
+ },
+ "0x1126477256d6ba91a7bc23762f1478f5ba692673d8b231e52689983baa8a933b": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Jones vs. Carabelli: Set 2 Games O/U 8.5"
+ },
+ "0xff2547062e0b479484a9b9e0c3fe0f7390a3f259b03b0cddaf5f349b56d030f0": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Genaro Alberto Olivieri vs. Chun-Hsin Tseng: Total Sets O/U 2.5"
+ },
+ "0x43ce80df7605f09229de618c7a6e41e7c1e3323ecbd3d4e2ea4e1773b9162fce": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Olivieri vs Tseng"
+ },
+ "0xd49b4680a3dc01eb6c5b7ee2106a8376d303c752330425499d7be67f5ed44d0c": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "HSBC Championships (Doubles): Fernandez/Siegemund vs Mboko/Williams"
+ },
+ "0x8d0dd3d7bc7e638cd2cb666a5b8573bc9faa2f4d723b7304cd5746e17d1d78e1": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Dota 2: Nande+4 vs Noir Esports (BO3) - European Pro League Group B"
+ },
+ "0xff70f8ca6a5390b3dc824c5fc8c4967a038460323e9b9780078d10893cf7d975": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: largadosypelados vs Vasco Esports - Map 1 Winner"
+ },
+ "0x1dfc264515c383a11ef9477a6d8539f1d75d3c4a5a5db0168f8b477585751d4a": {
+  "listed": true,
+  "us_slug": "aec-atp-alagra-trisch-2026-06-15",
+  "how": "name",
+  "title": "Nottingham 2: Alastair Gray vs Tristan Schoolkate"
+ },
+ "0x60886eb20cff17f08ca7b601eec4b57fec8ee63e594dcd9ae70b32828e02a94e": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Paul vs. Munar: Set 1 Games O/U 10.5"
+ },
+ "0xe35adedd241631f2f2b225508cdd7d3c587cdcd9c6ac67e64624d6b78aa5025b": {
+  "listed": true,
+  "us_slug": "aec-itfme-erivan-niksch-2026-06-29",
+  "how": "name",
+  "title": "ITF Nivelles: Eric Vanshelboim vs Niklas Schell"
+ },
+ "0x3557f14fba2a84f221bcae3847fa2b745b2c1bd27fd9f871a5a8d0ccd38a7ed9": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Map Handicap: VP (-1.5) vs INOX Division (+1.5)"
+ },
+ "0x7501d6a25ba3e77f4157da5cddd3f34c849a916f3f765a3847e689eb3a923d9a": {
+  "listed": true,
+  "us_slug": "aec-itfwo-mismat-harkaj-2026-06-19",
+  "how": "name",
+  "title": "ITF Taipei: Misaki Matsuda vs Haruka Kaji"
+ },
+ "0x58b3d5cf532554c357f2367c5ec4d4d65bb017e0acf8bea82394cee4307b16e4": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 2 Winner: Paul vs Munar"
+ },
+ "0xa5935ed2383a3673b1f932442cbbbe258d692711e136212db6c8fdb49c247f99": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: Atreides vs Subtop De France - Map 2 Winner"
+ },
+ "0x07c2be51b9988406b9c17ad4515319cc93b8dfc6376ccd5263c2eebc12cc2b22": {
+  "listed": true,
+  "us_slug": "aec-atp-lukmik-eminav-2026-06-07",
+  "how": "name",
+  "title": "Heilbronn: Luka Mikrut vs Emilio Nava"
+ },
+ "0x3a6c85b2d44936ff18cefb3500a52981fda56cadf3bd3d6f9dcc252191545ea0": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Game 1: Both Teams Destroy Barracks?"
+ },
+ "0x5cc66efe7cf800199e569c8d9bdbcd051565036fb9397ab2d21fdc87111daf40": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Game 2: Any Player Ultra Kill?"
+ },
+ "0xd894c005b5c131e7d7bff14b0338bd66d8d4e9d8f2a7b4bd4ae6b6402b483464": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Sato vs. Hayasaka: Match O/U 23.5"
+ },
+ "0x0673961bf8304c43f2aa9c9cdb67b2288fb36a0180a26d99772578b2615a5f9e": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Games Total: O/U 2.5"
+ },
+ "0xfbedc33fe65297ea231c0319af42c3ca22ac35d178c8d1303f72ddcd969ed6ca": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Sara Bejlek vs. Emma Navarro: Total Sets O/U 2.5"
+ },
+ "0x2cbbd4c368f6ad88ecc206fdf7035a5204d14b3b40124c3f15be58a4827d9d1f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: Atreides vs Subtop De France - Map 1 Winner"
+ },
+ "0x0c26093850862c6fc5626e705d35db34c13a81e6641598552d6709d61e600099": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Valdez vs. Ruiz: Match O/U 22.5"
+ },
+ "0x917a56fd37fe98328ac4d992581f9175d148d96888ccd390379a6a7b246afa2f": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Counter-Strike: xept vs Clutchain - Map 2 Winner"
+ },
+ "0x7dd1bfc95541ea6f88361f6ce46c1ca683269f8ac85a52c5330cfc4d156ad656": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Valkusz vs Fellin"
+ },
+ "0x559f23e198228ded60f162437e743a89422dd2e879e0cb216d46037d93ceea7d": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "LoL: FN Esports vs Verdant (BO1) - EMEA Masters Swiss Stage"
+ },
+ "0xfc82df1af3c64c99ca244e190de7bcf8ccef86bce557cec0113dc63d2bdff3da": {
+  "listed": true,
+  "us_slug": "aec-itfw-ipeoz-jespie-2026-06-16",
+  "how": "name",
+  "title": "ITF Blois: Ipek Oz vs Jessica Pieri"
+ },
+ "0x109a3826bfc1894b102cbf6bb5b4b7da693adcfbe585be3aba1771b3e9157ec0": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Map 3 Total Rounds: Over/Under 19.5"
+ },
+ "0x385ba898293a7fbd24a7e899b0bc02753e05bff702a3f281111ceebe731961bd": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Gutierrez vs. Kumasaka: Match O/U 22.5"
+ },
+ "0xe2dbe2b19df71b9cfcc2c24b16bd4355acbf53e7f4032c4c9beddd42d74ce761": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: Kumasaka (-1.5) vs Gutierrez (+1.5)"
+ },
+ "0xc0925bf04e93bb515d65fc729315c05e954ba1132f5eabcae405fc8defc2b8e9": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "Gutierrez vs. Kumasaka: Match O/U 21.5"
+ },
+ "0xe077cf6aed403ab9ea54bd289ab0bde9774912c7702f92fd2cba7bf08622c710": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "ITF Roda De Bara: Oscar Jose Gutierrez vs Takuya Kumasaka"
+ },
+ "0x9b5eeaf5f98d7870a111e383ce143da683745b5d5f0f3d0784487c5114b6ea69": {
+  "listed": false,
+  "how": "unmatched",
+  "title": "ITF Men Roda De Bara: Completed Match: Oscar Jose Gutierrez vs Takuya Kumasaka"
+ },
+ "0x2e53aa6ef3f1ed334abba086399e2bb72740c2b22771f153e63b858a1e3c0a19": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set 1 Winner: Gutierrez vs Kumasaka"
+ },
+ "0x2de2829ecd75504aeb82c526c733ac90f6c63958801988c68ae6949130a2b613": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Gutierrez vs. Kumasaka: Set 1 Games O/U 10.5"
+ },
+ "0xe0073adc8f792e7ed2030636004957fa904a0bbe94114acda0705d5edfbe1345": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Set Handicap: McCormick (-1.5) vs Sakamoto (+1.5)"
+ },
+ "0xc22588874e01ba97029d4343774f57e8ffb3ccdd0bd86d4c7254f36fb8d74ab8": {
+  "listed": false,
+  "how": "no-parse",
+  "title": "Oscar Jose Gutierrez vs. Takuya Kumasaka: Total Sets O/U 2.5"
+ }
+}

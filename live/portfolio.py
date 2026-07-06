@@ -251,6 +251,19 @@ def main():
             b["kind"] = "open"; by_mkt[b["cond"]] = b
     stream = sorted(by_mkt.values(), key=lambda b: b["entry_t"])
 
+    # ONLY_CONDS=<json path>: replay only these markets — {cond: bool} or
+    # us_listable.py's {cond: {"listed": bool, ...}}. Models "same signal, but
+    # I can only execute the subset" (e.g. bets also listed on Polymarket US);
+    # thresholds/sizing still come from the full signal, capital only chases
+    # the executable bets.
+    _only = os.environ.get("ONLY_CONDS")
+    if _only:
+        _allow = {c for c, v in json.load(open(_only)).items()
+                  if (v.get("listed") if isinstance(v, dict) else v)}
+        _pre = len(stream)
+        stream = [b for b in stream if b["cond"] in _allow]
+        print(f"portfolio: ONLY_CONDS filter kept {len(stream)}/{_pre} bets", flush=True)
+
     # prefetch every replayed market's slug (threaded; disk-cached) so the
     # event-correlation cap can group markets by real-world event
     with ThreadPoolExecutor(max_workers=8) as ex:
