@@ -19,7 +19,6 @@
  },
  "wallets": [
   "Kruto2027",
-  "shisan888",
   "fortuneking",
   "LSB1",
   "imwalkinghere",
@@ -325,7 +324,7 @@
    "status": "won",
    "pnl": 0.04,
    "settled": 1783207546,
-   "name": "shisan888"
+   "name": "0xf3488e52"
   },
   {
    "ts": 1783206665,
@@ -445,7 +444,7 @@
    "status": "won",
    "pnl": 41.18,
    "settled": 1783055918,
-   "name": "shisan888"
+   "name": "0xf3488e52"
   },
   {
    "ts": 1783016464,
@@ -539,5 +538,5 @@
   }
  ],
  "missed_pnl": -58.35,
- "updated": 1783297308
+ "updated": 1783301466
 }
