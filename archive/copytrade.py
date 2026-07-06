@@ -280,39 +280,31 @@ class CopyTrader:
         pct = pcts.get(self.wallet_class(wallet))
         return self.cfg["bankroll_pct"] if pct is None else float(pct)
 
-    def stake_usd(self, wallet=None):
+    def stake_usd(self, wallet=None, their=None):
         """Next bet size = the wallet's class fraction (stake_frac) × current
-        WORKING equity (cash + open cost basis), so stakes compound with the book
-        in both directions; halved while in a >20% drawdown from the high-water
-        mark. Falls back to the flat static stake when cash isn't tracked
-        (legacy poll CLI). The sweep threshold below stays on the BASE
-        bankroll_pct so which wallet happens to trade doesn't change when
-        profits get banked.
-
-        stake_cap_usd (profit ratchet): once working equity exceeds
-        cap/bankroll_pct — the level where stakes hit the cap — the surplus CASH
-        is swept into state["reserve"]: banked, never bet, immune to drawdowns.
-        Stakes stay pinned ~at the cap, where marketable fills are still inside
-        typical book depth."""
+        WORKING equity (cash + open cost basis), halved in a >20% drawdown from
+        the high-water mark — and NEVER larger than the followed wallet's own
+        stake (`their` = the signal's position size so far): when the
+        percentage works out to more than they actually bet, mirror their
+        exact amount. The stake cap and banked-reserve sweep are retired
+        (2026-07-06, with the backtest's banking logic) — the their-bet
+        ceiling is the liquidity bound now: fills stay within size the market
+        demonstrably absorbed from the signal itself. Falls back to the flat
+        static stake when cash isn't tracked (legacy poll CLI)."""
         frac = self.stake_frac(wallet)
         cash = self.state.get("cash")
         if cash is None:
-            return self.cfg["bankroll_usd"] * frac
-        base = self.cfg["bankroll_pct"]
-        cap = self.cfg.get("stake_cap_usd") or 0
-        eq = cash + self.open_exposure()
-        if cap and base > 0 and eq > cap / base:
-            sweep = min(cash, eq - cap / base)
-            if sweep > 0:
-                self.state["cash"] = cash = cash - sweep
-                self.state["reserve"] = self.state.get("reserve", 0.0) + sweep
-                eq -= sweep
-        hwm = max(self.state.get("hwm", 0.0), eq)
-        self.state["hwm"] = hwm
-        if eq < self.DD_THRESHOLD * hwm:
-            frac *= self.DD_FACTOR
-        stake = frac * eq
-        return min(stake, cap) if cap else stake
+            stake = self.cfg["bankroll_usd"] * frac
+        else:
+            eq = cash + self.open_exposure()
+            hwm = max(self.state.get("hwm", 0.0), eq)
+            self.state["hwm"] = hwm
+            if eq < self.DD_THRESHOLD * hwm:
+                frac *= self.DD_FACTOR
+            stake = frac * eq
+        if their and stake > their:
+            stake = their
+        return stake
 
     def record_miss(self, wallet, token, cond, title, outcome, price, want, reason):
         """A bet the strategy WOULD have copied but the book couldn't take —
@@ -453,7 +445,7 @@ class CopyTrader:
             their_prev = self.state["their_pos"].get(wallet, {}).get(token, 0)
             frac = their_size / their_prev if their_prev > 0 else 0
             want_shares = mine["shares"] * frac
-            room = self.stake_usd(wallet) - mine["cost"]
+            room = self.stake_usd(wallet, their_prev + their_size) - mine["cost"]
             if room < self.risk["min_order_usd"]:
                 self.log(f"ADD  {label} — skip (position ${mine['cost']:.0f} already "
                          f"at the stake size)")
@@ -461,7 +453,7 @@ class CopyTrader:
             want_usd = min(want_shares * price, room)
             kind = "ADD "
         else:
-            want_usd = self.stake_usd(wallet)  # fraction of current equity (compounds)
+            want_usd = self.stake_usd(wallet, their_prev + their_size)  # class % of equity, capped at their bet
             kind = "OPEN"
 
         pos_cost = mine["cost"] if is_add else 0.0
