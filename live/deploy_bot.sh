@@ -49,6 +49,9 @@ else
   echo "pushed."
 fi
 
+# push mode: keep the Alchemy webhook's address list matched to the follow set
+python3 sync_webhook.py || echo "⚠ webhook sync failed — update the address list manually"
+
 railway redeploy --service copybot --yes
 echo "redeploy triggered — waiting for the new container…"
 for i in $(seq 1 15); do
@@ -58,8 +61,8 @@ for i in $(seq 1 15); do
     railway logs --service copybot 2>/dev/null | grep -E "watching|floor\[" | tail -12
     echo "$tail5" | tail -1
     echo "✅ bot rebooted with the new follow set"
-    echo "   (push mode? remember: the Alchemy webhook's address list must match"
-    echo "    the follow set — update it at dashboard.alchemy.com → Webhooks)"
+    echo "   (Alchemy address list synced above — if it warned, update manually"
+    echo "    at dashboard.alchemy.com → Webhooks → copybot follow set)"
     exit 0
   fi
 done
