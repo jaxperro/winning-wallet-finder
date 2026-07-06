@@ -914,8 +914,35 @@ def main():
     signing_key = (os.environ.get("ALCHEMY_SIGNING_KEY")
                    or cfg.get("alchemy_signing_key", ""))
     port = int(os.environ.get("PORT", 8080))
-    log(f"listening on :{port} · POST /alchemy · "
-        f"signature-verify {'ON' if signing_key else 'OFF'}")
+    bot.baseline()
+
+    # webhook mode is event-driven, but the book must not depend on the next
+    # push arriving: a heartbeat thread settles resolved positions, refreshes
+    # the feed, and logs the summary every 60s — plus a FULL backstop poll of
+    # every wallet each 5th tick, so a dropped/misconfigured push costs at most
+    # ~5 minutes of lag instead of a silent miss.
+    def _heartbeat():
+        cycle = 0
+        while True:
+            time.sleep(60)
+            cycle += 1
+            try:
+                bot.settle_resolved()
+                if cycle % 5 == 0:
+                    for w in cfg.get("watchlist", []):
+                        bot.on_wallet_activity(w)
+                bot.summary(cycle)
+                bot.write_feed()
+                bot.publish_feed()
+            except Exception as e:
+                log(f"heartbeat error: {e}")
+    threading.Thread(target=_heartbeat, daemon=True).start()
+
+    log(f"push mode · listening on :{port} · POST /alchemy · "
+        f"signature-verify {'ON' if signing_key else 'OFF'} · "
+        f"heartbeat 60s · backstop poll 300s")
+    bot.write_feed()
+    bot.publish_feed()
     ThreadingHTTPServer(("0.0.0.0", port), make_handler(bot, signing_key)).serve_forever()
 
 

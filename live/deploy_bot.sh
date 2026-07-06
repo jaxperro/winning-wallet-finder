@@ -58,6 +58,8 @@ for i in $(seq 1 15); do
     railway logs --service copybot 2>/dev/null | grep -E "watching|floor\[" | tail -12
     echo "$tail5" | tail -1
     echo "✅ bot rebooted with the new follow set"
+    echo "   (push mode? remember: the Alchemy webhook's address list must match"
+    echo "    the follow set — update it at dashboard.alchemy.com → Webhooks)"
     exit 0
   fi
 done
