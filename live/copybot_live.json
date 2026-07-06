@@ -1,21 +1,21 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 38.32,
+ "stake": 38.31,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 453.34,
- "deployed": 504.61,
+ "cash": 447.27,
+ "deployed": 510.59,
  "reserve": 0.0,
- "realized": -42.05,
+ "realized": -42.14,
  "open_count": 5,
- "fees_paid": 15.23,
+ "fees_paid": 15.32,
  "fee_rate": 0.03,
  "lag": {
-  "n": 20,
-  "avg_s": 39.1,
-  "avg_slip_pct": -0.0378
+  "n": 21,
+  "avg_s": 64.6,
+  "avg_slip_pct": -0.036
  },
  "wallets": [
   "Kruto2027",
@@ -108,16 +108,16 @@
    "their_price": 0.5,
    "my_price": 0.5,
    "slippage_pct": 0.0,
-   "shares": 243.51,
-   "cost": 121.76,
-   "fee": 1.8264,
+   "shares": 255.78,
+   "cost": 127.89,
+   "fee": 1.9184,
    "opened": 1783295212,
    "status": "open",
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 25.92,
-   "sold_proceeds": 12.72
+   "sold_shares": 26.24,
+   "sold_proceeds": 12.88
   },
   {
    "token": "86810411254769790209177391989482113509619596899738102859804324023464344452771",
@@ -646,5 +646,5 @@
   }
  ],
  "missed_pnl": -48.69,
- "updated": 1783320606
+ "updated": 1783322459
 }
