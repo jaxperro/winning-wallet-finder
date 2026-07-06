@@ -1,0 +1,11 @@
+# never ship local secrets or bulk data in the build image — the bot clones
+# the repo fresh at boot anyway (host/start.sh); the image only needs the
+# launcher + python
+config.json
+config.live.json
+config.json.bak
+live/cache.duckdb
+live/history/
+*.log
+__pycache__/
+.git/
