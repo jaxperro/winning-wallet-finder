@@ -23,31 +23,58 @@ Three deployed pieces + one static dashboard:
 
 | piece | where it runs | what it does |
 |-------|--------------|--------------|
-| **daily pipeline** (`live/daily.sh`) | this Mac, launchd 10:00 | refresh the bet cache → 5-gate skill scan → fee-aware sharp selection → conviction floors → backtest book → publish JSON feeds to GitHub |
+| **daily pipeline** (`live/daily.sh`) | this Mac, launchd **08:00** (runs on wake if the Mac was asleep) | refresh the bet cache → 5-gate skill scan → fee-aware sharp selection → conviction floors → backtest book → publish JSON feeds to GitHub |
 | **copybot worker** (`copybot.py` via `host/start.sh`) | Railway, 24/7 | polls the 8 followed wallets every 60s, paper-copies their conviction bets with real fees/lag/slippage accounting, settles at CLOB resolution, commits its book back to the repo |
 | **Discord digest** (`live/discord_daily.py`) | end of the daily pipeline | one message/day: the sharp list with profile links + 30-day conviction stats (per-trade pings retired 2026-07-04; the old Alchemy watcher lives in `archive/webhook_receiver.py`) |
 | **dashboard** | [jaxperro.com/trading](https://jaxperro.com/trading) (static, in the `jaxperro` repo) | renders the three JSON feeds: live bot book, backtest book, sharp table |
 
 **The July 2026 live test:** a fresh $1,000 paper book (started 2026-07-02, on
-Railway) following eight wallets in two stake classes (`follow.wallet_class`):
-**volume** (4% of equity/bet) — Kruto2027, shisan888, fortuneking, LSB1,
-imwalkinghere, iohihoo — and **whale** (12%/bet) — **Stavenson** and the
-**`0x4bFb…` whale**, the two big-clip informed holders the trusted-row
-re-validation surfaced (added 2026-07-04; see FINDINGS "The holder blind
-spot"). Every fill records detection lag, price slippage, and the taker fee;
-missed bets are recorded and settled hypothetically. If this month's *measured*
-numbers hold up, real money follows (see [`LIVE_TEST.md`](LIVE_TEST.md)).
+Railway) following the wallet set in **`live/copybot.paper.json`** — the single
+source of truth (currently 5 volume + 3 whale wallets; the dashboard hero lists
+them live). Two stake classes: **volume** wallets (4% of equity/bet) are copied
+on their **conviction bets only** (auto p80 floor derived at boot); **whale**
+wallets (12%/bet) are copied on **every trade** — they're the big-clip informed
+holders the trusted-row re-validation surfaced (see FINDINGS "The holder blind
+spot"). Every stake is **capped at the signal's own bet size**. Every fill
+records detection lag, price slippage, and the taker fee; missed bets are
+recorded and settled hypothetically. If this month's *measured* numbers hold
+up, real money follows (see [`LIVE_TEST.md`](LIVE_TEST.md)).
 
 ```
- data layer          selection                        execution              display
- ──────────          ─────────                        ─────────              ───────
- live/cache.duckdb ─▶ skill.py (5-gate funnel)        copybot.py (Railway) ─▶ jaxperro.com/trading
- (schema v2:          conviction_scan.py (p80 bets)   · 4%-of-equity stakes   · copybot_live.json
-  33k wallets,        validate_timing.py (fee-aware   · taker fees modeled    · portfolio.json
-  19M resolved bets,   copy replay → watch_sharps)    · lag/slip per fill     · watch_sharps.json
-  token-keyed,        portfolio.py (backtest book)    · missed-bet ledger
-  archival)           sync_floors.py (bot parity)     · CLOB settle + redeem
+ data layer            selection                          execution              display
+ ──────────            ─────────                          ─────────              ───────
+ live/cache.duckdb ──▶ trust.py (trusted-row filter)      copybot.py (Railway) ─▶ jaxperro.com/trading
+ (schema v2:           skill.py (5-gate funnel)           · class % of equity,    · copybot_live.json
+  35k wallets,         conviction_scan.py (p80 + z_all)     capped at the           (live bot book)
+  20M+ resolved bets,  validate_timing.py (fee-aware        signal's own bet     · portfolio.json
+  token-keyed,          copy replay → watch_sharps)       · taker fees modeled     (rolling backtest)
+  archival;            portfolio.py (rolling replay of    · lag/slip per fill   · watch_sharps.json
+  TRUSTED rows only     backtest.json's wallet set)       · missed-bet ledger      (sharp table)
+  may score)           sync_floors.py (bot parity)        · CLOB settle + redeem
 ```
+
+---
+
+## Operating the system (the cheat-sheet a new maintainer needs)
+
+| task | how |
+|------|-----|
+| **add / remove / reclass a LIVE wallet** | edit the `wallets` list in `live/copybot.paper.json` (`{"wallet","name","class":"volume"\|"whale","floor":123?}` — floor optional, auto p80 at boot; whales ignore floors) then run **`./live/deploy_bot.sh`** — it validates, previews, commits, pushes, redeploys Railway, and confirms the boot banner |
+| **backtest any wallet set** | edit `live/backtest.json` (same entry shape) → `python3 live/portfolio.py`; ad-hoc without touching the dashboard: `python3 portfolio.py --wallets 0xabc,0xdef:whale --days 14 --out /tmp/t.json` |
+| **promote a wallet to live** | prove it in `backtest.json` first, copy the same entry into `copybot.paper.json`, run `deploy_bot.sh` |
+| **watch the live bot** | `railway logs --service copybot` (one summary line per 60s poll); the book is also committed as `live/copybot_live.json` and rendered on the dashboard |
+| **restart / redeploy the bot** | `railway redeploy --service copybot --yes` (config/code changes need a redeploy — the worker clones the repo fresh at boot) |
+| **run the daily pipeline manually** | `cd live && bash daily.sh` (launchd runs it 08:00; ~40 min, mostly collect). Never run two at once — the cache is single-writer |
+| **refresh just the sharp list** | `cd live && python3 conviction_scan.py && python3 validate_timing.py` |
+| **daily Discord digest** | sent by `live/discord_daily.py` at the end of `daily.sh`; webhook = `daily_webhook` in gitignored `config.json` |
+| **go real-money** | read `LIVE_TEST.md`; fill `config.live.json`; `python3 preflight_live.py`; arm with `--live` + typed phrase |
+
+Three moving parts talk to each other: this repo (research + bot + feeds), the
+`jaxperro` repo (static dashboard reading this repo's raw JSON feeds), and the
+Railway project `magnificent-kindness` (service `copybot`; the old `web`
+watcher service is retired). The bot **commits its own state/feed back to this
+repo** every few minutes — always `git pull --rebase --autostash` before you
+push (every script here already does).
 
 ---
 
@@ -56,6 +83,10 @@ numbers hold up, real money follows (see [`LIVE_TEST.md`](LIVE_TEST.md)).
 | path | role |
 |------|------|
 | `live/` | **the current system**: cache, scanners, sharp selection, backtest, daily pipeline ([live/README](live/README.md)) |
+| `live/trust.py` | the trusted-row filter every selector must read through (see gotchas 8–9) |
+| `live/backtest.json` · `live/copybot.paper.json` | the two wallet-set configs: backtest experiments vs. the live paper bot (same entry shape) |
+| `live/deploy_bot.sh` | one-command live-bot deploy: validate → preview → commit → push → Railway redeploy → confirm boot |
+| `live/discord_daily.py` | the daily Discord digest (the only Discord output) |
 | `copybot.py` | the copy-trading bot: push/poll trigger → follow filter → execution engine (paper + live) |
 | `archive/copytrade.py` | the execution engine the bot reuses: sizing, risk gates, price guard, paper/live executors |
 | `host/start.sh` | 24/7 worker bootstrap for Railway/Fly/VPS (clones repo, resumes committed state) |
@@ -130,7 +161,8 @@ in [`live/README.md`](live/README.md).
 
 | file | holds |
 |------|-------|
-| `config.json` | `daily_webhook` (the Discord digest), Alchemy key, the followed-wallet list + per-wallet conviction floors (auto-refreshed daily by `sync_floors.py`) |
+| `live/copybot.paper.json` | **committed** (no secrets): the live paper bot's wallet set + classes + follow/risk params — deploy with `live/deploy_bot.sh` |
+| `config.json` | `daily_webhook` (the Discord digest), Alchemy key, a legacy curated watchlist + floors (`sync_floors.py`) |
 | `config.live.json` | live-trading credentials (`private_key`, `funder_address`) + tiny test caps — see `LIVE_TEST.md` |
 | Railway `copybot` service | `GITHUB_TOKEN` (fine-grained PAT, contents-RW on this repo — the bot commits its state/feed back), `DISCORD_WEBHOOK` no longer used (per-trade pings retired) |
 
@@ -147,26 +179,27 @@ backtest and bot share:
 - **Lag + slippage**: the bot fills at the live CLOB ask at detection (~60s poll),
   logging per-fill `detect_lag_s` and `slippage_pct`; the backtest applies a
   +0.5%/~90s haircut. Measured so far: ~48s avg / +0.8% avg slip.
-- **Dynamic sizing, two wallet classes**: each bet stakes a fraction of current
-  working equity set by the followed wallet's class — `follow.wallet_class`
-  marks a wallet **`volume`** (default, 4%) or **`whale`** (12%), with the
-  fractions themselves in `follow.class_pct`. Stakes compound both ways and are
-  halved while equity is below 80% of its high-water mark. The rule binds
-  **per market** — adds that mirror a sharp scaling in can only top a position
-  up to the current stake size, never past it. (The profit-sweep threshold
-  below stays on the base 4% so which wallet happens to trade doesn't change
-  when profits get banked.)
-- **Profit ratchet** (`stake_cap_usd: 250`): stakes pin at $250; once the book
-  outgrows that level, surplus cash sweeps to a **banked reserve** that never
-  bets — locked-in profit, and fills stay inside realistic book depth. A
-  per-event correlation cap exists (`risk.max_per_event`) but is **off**.
+- **Dynamic sizing, two wallet classes, their-bet ceiling**: each bet stakes a
+  fraction of current working equity set by the followed wallet's class —
+  **`volume`** (default, 4%, conviction bets only) or **`whale`** (12%, every
+  trade), fractions in `follow.class_pct` — **and is never larger than the
+  signal's own position size**: when the percentage works out to more than the
+  wallet actually bet, the copy mirrors their exact amount (you can't
+  out-conviction the signal, and fills stay within size the market demonstrably
+  absorbed). Stakes compound both ways and halve while equity is below 80% of
+  its high-water mark. The rule binds **per market** — adds that mirror a sharp
+  scaling in grow with *their* position, never past it. The old $250 stake cap
+  and banked-reserve profit ratchet were retired 2026-07-06 (backtest and bot
+  together). A per-event correlation cap exists (`risk.max_per_event`), **off**.
 - **Entry cap 0.95**: entries above 95¢ are skipped (`follow.max_entry`) — the
   June sweep showed >95¢ favorites *lower* final equity even while winning
   (slip + fee eat the 1–3% payouts; the capital compounds better elsewhere).
 - **Asymmetric price guard**: a price *below* the sharp's fill is never blocked
   (better odds, by rule); only adverse drift >5% is skipped.
-- **Conviction filter**: only copy a wallet's top-20%-by-stake bets (per-wallet
-  p80 floor, kept in sync with the dashboard by `sync_floors.py`).
+- **Conviction filter (volume class only)**: copy a wallet's top-20%-by-stake
+  bets. Floors are **auto-derived at boot** (p80 of recent position stakes from
+  the data-api — the worker has no cache) unless pinned with `"floor":` in the
+  config; whale-class wallets bypass floors entirely (follow-all).
 - **Missed-bet ledger**: every bet the bot *couldn't* take (cash deployed, price
   ran up) is recorded and settled hypothetically — capacity costs are measured,
   not invisible.
@@ -231,6 +264,13 @@ runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
    False). Also: never judge a held edge on a replay window shorter than the
    wallet's entry→resolution lead — that's how the long-lead holders were
    being filtered out (see FINDINGS "The holder blind spot").
+9. **Polymarket rewrites `endDate` after resolution**, so exact-match consensus
+   on `res_t` breaks for freshly re-pulled wallets (this collapsed the sharp
+   list 25→7 on the first scheduled run). v2 rows with `resolved=TRUE` are
+   self-certifying in `trust.py`; consensus only gates legacy rows. Related:
+   `daily.sh` invalidates watchlist wallets by **deleting** their `pulled` row —
+   a transiently failed re-pull then hides the wallet's whole history from
+   exact `pulled_at` checks (trust.py has a 14-day fallback for this).
 
 ---
 
@@ -246,16 +286,22 @@ positions in unended markets are marks, not outcomes, and never score).
 LBS/Yale "~60% of lucky winners become losers" result. **Don't copy win rates.**
 
 **The repeatable find:** score wallets on their **conviction bets** (top 20% by
-stake, per-wallet p80) — the edge is wallets that win 70–80% on genuinely
-uncertain (~0.4–0.6) markets. Trained pre-June, validated June: 62/83 stayed
-profitable forward (p≈0). A **fee-aware flat-$50 copy replay** then keeps only
-wallets that are actually profitable to *copy* (scalpers with ~100% shown win
-rates lose money when copied) → currently **12 copy-positive holders** in
-`watch_sharps.json`, refreshed daily.
+stake, per-wallet p80) over **trusted rows only** (`trust.py`), gated on
+`z_all > 2` (whole-book skill — it ~doubled pooled forward copy-ROI in the
+May→June tournament) and a $50 median-stake dust floor. Trained ≤May, validated
+June: 30/38 stayed profitable forward, **+21.4% pooled**. A **fee-aware
+flat-$50 copy replay** plus a trailing-90d trusted-record gate then keeps the
+wallets actually profitable to *copy* → currently **~30 copy-positive holders**
+in `watch_sharps.json`, refreshed daily. The niche the top holders live in is
+**low-tier tennis (ITF/qualifiers) and tier-3 esports** — informed money with
+multi-day leads, i.e. copyable, with **ban/regime risk as the real tail**
+(one top wallet's API feed went dark for an hour mid-analysis).
 
-**The backtest** (`live/portfolio.py`): the followed four, June 1 → now, with
-fees/lag/dynamic sizing: **+531%** — but June is the month these wallets were
-*selected on*, so that's an in-sample ceiling. July, live, is the test.
+**The backtest** (`live/portfolio.py`): a **rolling N-day replay** of whatever
+wallet set `live/backtest.json` holds (default: the live follow set), with
+fees/lag/class sizing/their-bet ceiling. Three-whale config showed ~+9,800%
+over the trailing 30d — but the whales were *selected* partly on that window,
+so treat every headline as an in-sample ceiling. July, live, is the test.
 
 **What didn't work** (see `FINDINGS.md` + `archive/`): copy-trading raw,
 win-rate ranking, LP reward farming, binary & multi-outcome arb, cross-venue
@@ -271,6 +317,10 @@ PM↔Kalshi arb — all efficient or illusory.
   execution-realistic now, but every historical return in this repo is
   in-sample. The running July book — real lag, real fees, measured slippage,
   missed bets counted — is the first number that deserves trust.
-- **Scale carefully.** Above ~$250/clip in thin sports books, best-ask fills
-  turn optimistic; a depth-aware fill model is the known next step before
-  sizing up.
+- **Scale carefully.** The their-bet ceiling keeps every copy within size the
+  market demonstrably absorbed from the signal — but you fill *after* the
+  signal moved the price, so large late-compounding clips are still optimistic;
+  a depth-aware fill model (order-book snapshots) is the known next step.
+- **The edge has a landlord.** The strongest wallets look like informed money
+  in fixable niches; assume any month could be the last, re-select weekly (the
+  daily pipeline does), and take profits out as you go.
