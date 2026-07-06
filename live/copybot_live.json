@@ -282,6 +282,21 @@
  ],
  "missed": [
   {
+   "ts": 1783302158,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "92454145506551986743667783258795348314421193064642345412792128866985888546940",
+   "cond": "0xebb6d54a5fba61cae3ca93049a7010e4b97f547177615a1aec04c9a28b58f111",
+   "title": "Mexico vs. England: Both Teams to Score in First Half",
+   "outcome": "Yes",
+   "price": 0.8,
+   "stake": 38.07,
+   "reason": "price moved 0.75\u21920.80",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783301842,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "102152517760279819101151573238490012903089489836238465651374507491554775479518",
@@ -553,5 +568,5 @@
   }
  ],
  "missed_pnl": -58.35,
- "updated": 1783301844
+ "updated": 1783302160
 }
