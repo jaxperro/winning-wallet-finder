@@ -360,6 +360,21 @@
  ],
  "missed": [
   {
+   "ts": 1783347199,
+   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
+   "token": "85258469184279046487012000385739590612417313123739073554013691504231776870728",
+   "cond": "0xcf8482eb154c9e79b6b7ec3f698164448432494bc532037069bb1f5f8f3d140f",
+   "title": "Wimbledon ATP: Alex de Minaur vs Flavio Cobolli",
+   "outcome": "Alex de Minaur",
+   "price": 0.41,
+   "stake": 38.36,
+   "reason": "price moved 0.27\u21920.41",
+   "status": "lost",
+   "pnl": -39.04,
+   "settled": 1783351352,
+   "name": "fortuneking"
+  },
+  {
    "ts": 1783345633,
    "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
    "token": "18629799704964748739023905025986168702662219976050840582609144896856619838021",
@@ -372,21 +387,6 @@
    "status": "won",
    "pnl": 0.38,
    "settled": 1783347727,
-   "name": "fortuneking"
-  },
-  {
-   "ts": 1783347199,
-   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
-   "token": "85258469184279046487012000385739590612417313123739073554013691504231776870728",
-   "cond": "0xcf8482eb154c9e79b6b7ec3f698164448432494bc532037069bb1f5f8f3d140f",
-   "title": "Wimbledon ATP: Alex de Minaur vs Flavio Cobolli",
-   "outcome": "Alex de Minaur",
-   "price": 0.41,
-   "stake": 38.36,
-   "reason": "price moved 0.27\u21920.41",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
    "name": "fortuneking"
   },
   {
@@ -750,6 +750,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -48.31,
- "updated": 1783347729
+ "missed_pnl": -87.35,
+ "updated": 1783351352
 }
