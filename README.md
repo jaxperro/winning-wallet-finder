@@ -24,7 +24,7 @@ Three deployed pieces + one static dashboard:
 | piece | where it runs | what it does |
 |-------|--------------|--------------|
 | **daily pipeline** (`live/daily.sh`) | this Mac, launchd **08:00** (runs on wake if the Mac was asleep) | refresh the bet cache → 5-gate skill scan → fee-aware sharp selection → conviction floors → backtest book → publish JSON feeds to GitHub |
-| **copybot worker** (`copybot.py` via `host/start.sh`) | Railway, 24/7 | polls the 8 followed wallets every 60s, paper-copies their conviction bets with real fees/lag/slippage accounting, settles at CLOB resolution, commits its book back to the repo |
+| **copybot worker** (`copybot.py` via `host/start.sh`) | Railway, 24/7 | **push mode**: an Alchemy address-activity webhook (`copybot follow set`, Polygon) pings `POST /alchemy` the moment a followed wallet trades (~2–5s detection), signature-verified; a 60s heartbeat settles/publishes and a 5-min backstop poll catches dropped pushes. Paper-copies with real fees/lag/slippage, settles at CLOB resolution, commits its book back to the repo |
 | **Discord digest** (`live/discord_daily.py`) | end of the daily pipeline | one message/day: the sharp list with profile links + 30-day conviction stats (per-trade pings retired 2026-07-04; the old Alchemy watcher lives in `archive/webhook_receiver.py`) |
 | **dashboard** | [jaxperro.com/trading](https://jaxperro.com/trading) (static, in the `jaxperro` repo) | renders the three JSON feeds: live bot book, backtest book, sharp table |
 
@@ -59,11 +59,11 @@ up, real money follows (see [`LIVE_TEST.md`](LIVE_TEST.md)).
 
 | task | how |
 |------|-----|
-| **add / remove / reclass a LIVE wallet** | edit the `wallets` list in `live/copybot.paper.json` (`{"wallet","name","class":"volume"\|"whale","floor":123?}` — floor optional, auto p80 at boot; whales ignore floors) then run **`./live/deploy_bot.sh`** — it validates, previews, commits, pushes, redeploys Railway, and confirms the boot banner |
+| **add / remove / reclass a LIVE wallet** | edit the `wallets` list in `live/copybot.paper.json` (`{"wallet","name","class":"volume"\|"whale","floor":123?}` — floor optional, auto p80 at boot; whales ignore floors) then run **`./live/deploy_bot.sh`** — it validates, previews, commits, pushes, redeploys Railway, and confirms the boot banner. **Push mode:** also update the Alchemy webhook's address list (dashboard.alchemy.com → Webhooks → `copybot follow set`) — the 5-min backstop poll covers a forgotten update, at poll-speed lag |
 | **backtest any wallet set** | edit `live/backtest.json` (same entry shape) → `python3 live/portfolio.py`; ad-hoc without touching the dashboard: `python3 portfolio.py --wallets 0xabc,0xdef:whale --days 14 --out /tmp/t.json` |
 | **promote a wallet to live** | prove it in `backtest.json` first, copy the same entry into `copybot.paper.json`, run `deploy_bot.sh` |
 | **watch the live bot** | `railway logs --service copybot` (one summary line per 60s poll); the book is also committed as `live/copybot_live.json` and rendered on the dashboard |
-| **restart / redeploy the bot** | `railway redeploy --service copybot --yes` (config/code changes need a redeploy — the worker clones the repo fresh at boot) |
+| **restart / redeploy the bot** | `railway redeploy --service copybot --yes` (config/code changes: the worker clones the repo fresh at boot). **Changes to `host/start.sh`, `railway.json`, or env vars need a full rebuild: `railway up --service copybot --detach`** — redeploy reuses the old image and env snapshot (this bit us: the image's launcher was frozen for days) |
 | **run the daily pipeline manually** | `cd live && bash daily.sh` (launchd runs it 08:00; ~40 min, mostly collect). Never run two at once — the cache is single-writer |
 | **refresh just the sharp list** | `cd live && python3 conviction_scan.py && python3 validate_timing.py` |
 | **daily Discord digest** | sent by `live/discord_daily.py` at the end of `daily.sh`; webhook = `daily_webhook` in gitignored `config.json` |
