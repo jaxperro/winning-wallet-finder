@@ -360,6 +360,21 @@
  ],
  "missed": [
   {
+   "ts": 1783345633,
+   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
+   "token": "18629799704964748739023905025986168702662219976050840582609144896856619838021",
+   "cond": "0x6f6a6cf4937c5d95e001b29019f721523c471949d89216f5b92b2faa9288b71f",
+   "title": "Bouzkova vs. Mertens: Match O/U 21.5",
+   "outcome": "Under",
+   "price": 0.99,
+   "stake": 38.36,
+   "reason": "price moved 0.68\u21920.99",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "fortuneking"
+  },
+  {
    "ts": 1783339976,
    "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
    "token": "63034166988796816059669385460243431880344153981361991158070959478891966380905",
@@ -721,5 +736,5 @@
   }
  ],
  "missed_pnl": -48.69,
- "updated": 1783340708
+ "updated": 1783345696
 }
