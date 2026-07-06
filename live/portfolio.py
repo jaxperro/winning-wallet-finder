@@ -21,6 +21,7 @@ MISSED.
 Resolved history + realized P&L come from the cache; currently-open bets come from a
 small live /positions pull so the page can still show what's in flight.
 """
+import argparse
 import json
 import os
 import re
@@ -31,13 +32,35 @@ from concurrent.futures import ThreadPoolExecutor
 
 import cache
 import smart_money as sm
+import trust
 
 _SSL = ssl._create_unverified_context()
 
 HERE = os.path.dirname(__file__)
 BANK = 1000.0
-START = time.mktime(time.strptime("2026-06-01", "%Y-%m-%d"))   # backfilled: replay from June 1
 GAMMA = "https://gamma-api.polymarket.com"
+
+# ---- interchangeable-wallet replay: live/backtest.json ----------------------
+# {days, stake_cap_usd, class_pct: {volume, whale}, wallets: [{wallet, name,
+# class}]}. Rolling window: "what if I started following these wallets `days`
+# ago." Class 'whale' replays EVERY trusted bet at class_pct.whale of equity;
+# 'volume' (default) replays conviction bets only (top-20% by stake, threshold
+# from PRE-window trusted bets so it can't peek) at class_pct.volume.
+# Ad-hoc runs that leave the dashboard feed alone:
+#     python3 portfolio.py --wallets 0xabc,0xdef:whale --days 30 --out /tmp/t.json
+_ap = argparse.ArgumentParser()
+_ap.add_argument("--wallets", help="comma list of addresses; ':whale' suffix opts into whale class")
+_ap.add_argument("--days", type=int, help="window length (default backtest.json's, else 30)")
+_ap.add_argument("--out", help="output path (default $PORTFOLIO_OUT or portfolio.json)")
+_ARGS, _ = _ap.parse_known_args()
+try:
+    _BT = json.load(open(os.path.join(HERE, "backtest.json")))
+except Exception:
+    _BT = {}
+DAYS = _ARGS.days or int(_BT.get("days", 30))
+START = time.time() - DAYS * 86400        # rolling: started following DAYS ago
+CLASS_PCT = {"volume": 0.04, "whale": 0.12, **(_BT.get("class_pct") or {})}
+BASE_PCT = CLASS_PCT.get("volume", 0.04)  # sweep threshold stays on the base class
 
 # ---- dynamic sizing (mirrors the live copybot) ------------------------------
 # Each new bet stakes PCT of CURRENT equity (cash + open cost basis) so the book
@@ -46,11 +69,12 @@ GAMMA = "https://gamma-api.polymarket.com"
 # EVENT_CAP >0 limits concurrent bets whose markets belong to the same real-world
 # event (a game's markets settle together — one correlated bet, not N diversified
 # ones); 0 = off, mirror every conviction trade.
-PCT = 0.04
-# stakes pin at STAKE_CAP (where marketable fills still sit inside typical book
-# depth); once working equity exceeds STAKE_CAP/PCT, surplus cash is SWEPT into
-# a banked reserve — a profit ratchet that never bets and can't be drawn down.
-STAKE_MIN, STAKE_CAP = 5.0, 250.0
+# per-class equity fractions come from CLASS_PCT (backtest.json); stakes pin at
+# STAKE_CAP (where marketable fills still sit inside typical book depth); once
+# working equity exceeds STAKE_CAP/BASE_PCT, surplus cash is SWEPT into a banked
+# reserve — a profit ratchet that never bets and can't be drawn down.
+STAKE_MIN = 5.0
+STAKE_CAP = float(_BT.get("stake_cap_usd") or 250.0)
 EVENT_CAP = 0
 DD_THRESHOLD, DD_FACTOR = 0.80, 0.5
 # skip entries above this price. High-price favorites win pennies and lose
@@ -59,7 +83,7 @@ DD_THRESHOLD, DD_FACTOR = 0.80, 0.5
 # locked capital compounds better elsewhere). Deep caps (<=0.85) cut real
 # winners. Mirrored by the bot's follow.max_entry; env-overridable for sweeps.
 MAX_ENTRY = float(os.environ.get("MAX_ENTRY", 0.95))
-OUT = os.environ.get("PORTFOLIO_OUT", "portfolio.json")
+OUT = _ARGS.out or os.environ.get("PORTFOLIO_OUT", "portfolio.json")
 
 # ---- realism model (matches the live copybot) -------------------------------
 # Taker fee (Polymarket V2, since 2026-03-30): fee = shares·rate·p·(1−p); for a
@@ -73,14 +97,18 @@ FEE_RATE = 0.03
 LAG_EST_S = 90
 SLIP = 0.005
 
-# the followed wallets — single source of truth (dashboard renders names from the feed)
-WALLETS = [
-    {"name": "Kruto2027",     "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb"},
-    {"name": "shisan888",     "wallet": "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543"},
-    {"name": "fortuneking",   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867"},
-    {"name": "LSB1",          "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41"},
-    {"name": "imwalkinghere", "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266"},
-]
+# the replayed wallets — from --wallets, else live/backtest.json (editable:
+# add/remove/swap any address there; classes default to 'volume')
+if _ARGS.wallets:
+    WALLETS = []
+    for _tok in _ARGS.wallets.split(","):
+        _addr, _, _cls = _tok.strip().partition(":")
+        WALLETS.append({"wallet": _addr, "name": _addr[:10], "class": _cls or "volume"})
+else:
+    WALLETS = [{"wallet": w["wallet"], "name": w.get("name", w["wallet"][:10]),
+                "class": w.get("class", "volume")} for w in _BT.get("wallets", [])]
+if not WALLETS:
+    raise SystemExit("no wallets to replay: create live/backtest.json or pass --wallets")
 
 
 def entry_model(p, stake):
@@ -131,32 +159,44 @@ def event_key(slug):
     return m.group(1) if m else (slug or None)
 
 
-def conviction_bets():
-    """Every followed wallet's resolved conviction bets from the cache, with entry time."""
+_WALLET_THR = {}   # wallet -> conviction threshold used this run (0 for whales)
+
+
+def window_bets():
+    """Every replayed wallet's TRUSTED resolved bets entered inside the window,
+    with entry time. Trusted rows only (trust.py) — outcomes observed post-
+    resolution, res_t=ts poison excluded — so any pasted-in wallet is scored
+    honestly, not on cache marks. Class rules: 'whale' replays EVERY bet;
+    'volume' only conviction bets, with the p80 threshold computed from
+    PRE-window trusted bets (falls back to full history for wallets with no
+    pre-window sample) so the threshold can't peek at the window it scores."""
     out = []
     now = time.time()
+    trust.ensure_cons(cache.query)
     for w in WALLETS:
+        cache.get_bets(w["wallet"])          # ensure pulled/fresh (pulls brand-new wallets)
         ent = cache.get_entries(w["wallet"])               # cond -> first buy ts
-        bets = [b for b in cache.get_bets(w["wallet"]) if (b["size"] or 0) > 0]
-        thr = cache.conv_cutoff(b["size"] for b in bets)
-        for b in bets:
-            if b["size"] < thr:
+        rows = trust.trusted_wallet_rows(cache.query, w["wallet"], now)
+        best = {}                            # one bet per market: largest-stake token
+        for cond, asset, won, p, res_t, size in rows:
+            if cond not in best or size > best[cond][3]:
+                best[cond] = (won, p, res_t, size)
+        if w.get("class") == "whale":
+            thr = 0.0
+        else:
+            pre = [size for won, p, res_t, size in best.values() if res_t < START]
+            thr = cache.conv_cutoff(pre if pre else
+                                    [size for *_, size in best.values()])
+        _WALLET_THR[w["wallet"]] = thr
+        for cond, (won, p, res_t, size) in best.items():
+            if size < thr or p > MAX_ENTRY:
                 continue
-            if b["p"] > MAX_ENTRY:
+            et = ent.get(cond)
+            if not et or et < START:                       # only in-window entries
                 continue
-            if (b["res_t"] or 0) > now:
-                # unresolved market (early-sold position): won is a curPrice mark,
-                # not an outcome — and a future res_t would never free its stake
-                # (cash out at entry, freed at res_t > now, absent from `invested`
-                # = equity silently loses $STAKE). The live /positions pull is the
-                # source for genuinely-open bets.
-                continue
-            et = ent.get(b["cond"])
-            if not et or et < START:                       # only post-START entries
-                continue
-            out.append({"wallet": w["wallet"], "name": w["name"], "cond": b["cond"],
-                        "entry_t": et, "p": max(0.001, min(0.999, b["p"] or 0)),
-                        "won": b["won"], "res_t": b["res_t"] or 0})
+            out.append({"wallet": w["wallet"], "name": w["name"], "cond": cond,
+                        "cls": w.get("class", "volume"),
+                        "entry_t": et, "p": p, "won": won, "res_t": res_t or 0})
     return out
 
 
@@ -167,8 +207,12 @@ def open_bets():
     for w in WALLETS:
         ent = cache.get_entries(w["wallet"])
         ps = sm.get_json("/positions", {"user": w["wallet"], "limit": 500, "sizeThreshold": 0}) or []
-        sizes = [(p.get("initialValue") or 0) for p in ps]
-        thr = cache.conv_cutoff(sizes)
+        if w.get("class") == "whale":
+            thr = 0.0                       # whales: every open position counts
+        else:
+            thr = _WALLET_THR.get(w["wallet"])
+            if thr is None:
+                thr = cache.conv_cutoff((p.get("initialValue") or 0) for p in ps)
         for p in ps:
             cp = p.get("curPrice", 0) or 0
             if cp <= 0.001 or cp >= 0.999:                 # resolved -> belongs to history, not open
@@ -177,8 +221,15 @@ def open_bets():
                 continue
             if (p.get("avgPrice", 0) or 0) > MAX_ENTRY:
                 continue
+            et = ent.get(p.get("conditionId"))
+            if et is not None and et < START:
+                continue                     # position predates the window
+            # unknown entry time -> queue at the END of the replay (an open
+            # position is the newest thing in the book; entry_t=0 used to put
+            # it FIRST, draining the bankroll before any historical bet ran)
             out.append({"wallet": w["wallet"], "name": w["name"], "cond": p.get("conditionId"),
-                        "entry_t": ent.get(p.get("conditionId"), 0),
+                        "cls": w.get("class", "volume"),
+                        "entry_t": et if et is not None else time.time(),
                         "p": max(0.001, min(0.999, p.get("avgPrice", 0) or 0)),
                         "cur": cp, "title": p.get("title") or "", "outcome": p.get("outcome") or "",
                         "end": p.get("endDate")})
@@ -187,7 +238,7 @@ def open_bets():
 
 def main():
     now = time.time()
-    resolved_pool = conviction_bets()
+    resolved_pool = window_bets()
     open_pool = open_bets()
     # merge into one entry-ordered stream; one position per market (earliest entry wins)
     by_mkt = {}
@@ -213,22 +264,24 @@ def main():
     reserve = 0.0
     held = []        # (free_t, cost, payoff)  cost = stake + entry fee; payoff paid at free_t
     perW = {w["wallet"]: {"name": w["name"], "wallet": w["wallet"], "bets": 0,
-                          "won": 0, "lost": 0,
+                          "won": 0, "lost": 0, "class": w.get("class", "volume"),
                           "invested": 0.0, "realized": 0.0} for w in WALLETS}
     resolved, current, missed = [], [], []
 
-    def cur_stake():
-        """PCT of current WORKING equity, drawdown-braked, clamped — the copybot's
-        rule. Sweeps surplus cash to the banked reserve first, so working equity
-        stays at the level where stakes ~= STAKE_CAP."""
+    def cur_stake(frac=BASE_PCT):
+        """The wallet-class fraction of current WORKING equity, drawdown-braked,
+        clamped — the copybot's rule. Sweeps surplus cash to the banked reserve
+        first (threshold on BASE_PCT, so which wallet happens to trade doesn't
+        change when profits get banked)."""
         nonlocal hwm, cash, reserve
         eq = cash + sum(c for _, c, _, _ in held)
-        excess = eq - STAKE_CAP / PCT
+        excess = eq - STAKE_CAP / BASE_PCT
         if excess > 0:
             sweep = min(cash, excess)
             cash -= sweep; reserve += sweep; eq -= sweep
         hwm = max(hwm, eq)
-        frac = PCT * (DD_FACTOR if eq < DD_THRESHOLD * hwm else 1.0)
+        if eq < DD_THRESHOLD * hwm:
+            frac *= DD_FACTOR
         return max(STAKE_MIN, min(STAKE_CAP, frac * eq))
 
     def free(upto):
@@ -246,7 +299,7 @@ def main():
 
     for b in stream:
         free(b["entry_t"])
-        stake = cur_stake()
+        stake = cur_stake(CLASS_PCT.get(b.get("cls"), BASE_PCT))
         b["stake"] = round(stake, 2)
         b["event"] = event_key(market_meta(b["cond"])["slug"])
         # correlation cap (off when EVENT_CAP=0): skip a bet when we already hold
@@ -304,13 +357,16 @@ def main():
     # positions the same way; 1e12 = "no sized bets" (nothing qualifies)
     conv_thr = {}
     for w in WALLETS:
-        t = cache.conv_cutoff(b["size"] for b in cache.get_bets(w["wallet"]) if (b["size"] or 0) > 0)
+        t = _WALLET_THR.get(w["wallet"])
+        if t is None:
+            t = cache.conv_cutoff(b["size"] for b in cache.get_bets(w["wallet"]) if (b["size"] or 0) > 0)
         conv_thr[w["wallet"]] = round(t) if t != float("inf") else 1e12
     equity = cash + invested + reserve
     out = {
-        "started": START, "updated": now,
-        "bank": BANK, "stake": round(cur_stake(), 2),   # the NEXT bet's size
-        "stake_pct": PCT, "stake_cap": STAKE_CAP, "event_cap": EVENT_CAP,
+        "started": START, "updated": now, "days": DAYS,
+        "bank": BANK, "stake": round(cur_stake(), 2),   # the NEXT bet's size (base class)
+        "stake_pct": BASE_PCT, "class_pct": CLASS_PCT,
+        "stake_cap": STAKE_CAP, "event_cap": EVENT_CAP,
         "hwm": round(hwm, 2),
         "dd_threshold": DD_THRESHOLD, "capped_count": capped,
         "max_entry": MAX_ENTRY,
@@ -323,7 +379,7 @@ def main():
         "resolved_count": len(resolved), "wins": wins, "losses": len(resolved) - wins,
         "open_count": len(current), "missed_count": len(missed),
         "wallets": [{"name": v["name"], "wallet": v["wallet"], "bets": v["bets"],
-                     "won": v["won"], "lost": v["lost"],
+                     "won": v["won"], "lost": v["lost"], "class": v.get("class", "volume"),
                      "invested": round(v["invested"], 2), "realized": round(v["realized"], 2),
                      "conv_thr": conv_thr.get(v["wallet"], 1e12)}
                     for v in perW.values()],
@@ -342,10 +398,10 @@ def main():
     json.dump(out, open(os.path.join(HERE, OUT) if not os.path.isabs(OUT) else OUT, "w"),
               separators=(",", ":"))
     save_slug_cache()
-    print(f"portfolio: equity ${equity:,.0f} ({(equity-BANK)/BANK*100:+.0f}%) | banked ${reserve:,.0f} "
+    print(f"portfolio[{DAYS}d rolling]: equity ${equity:,.0f} ({(equity-BANK)/BANK*100:+.0f}%) | banked ${reserve:,.0f} "
           f"| realized ${realized:+,.0f} | fees ${fees_paid:,.0f} | next stake ${cur_stake():,.0f} "
           f"| {len(resolved)} resolved ({wins}W/{len(resolved)-wins}L) | {len(current)} open "
-          f"| {len(missed)} missed ({capped} event-capped) | -> portfolio.json", flush=True)
+          f"| {len(missed)} missed ({capped} event-capped) | -> {os.path.basename(OUT)}", flush=True)
 
 
 if __name__ == "__main__":
