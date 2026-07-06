@@ -28,6 +28,17 @@
 #   launchctl unload ~/Library/LaunchAgents/com.jaxperro.copybot.plist
 set -euo pipefail
 
+# geo-gate probe first (host/geocheck.py, no keys needed). GEOCHECK_ONLY=1 ->
+# probe and idle WITHOUT starting the bot: lets a new host/region prove it
+# passes Polymarket's IP geoblock while the old deployment is still the book's
+# single writer. Otherwise the probe is informational — the PAPER bot only
+# reads, so a blocked region only matters once real orders are on the table.
+if [ -n "${GEOCHECK_ONLY:-}" ]; then
+  exec python3 "$(dirname "$0")/geocheck.py" --idle
+fi
+python3 "$(dirname "$0")/geocheck.py" \
+  || echo "⚠ geo-gate BLOCKED/unknown here — fine for paper, do NOT go live from this box"
+
 : "${GITHUB_TOKEN:?set GITHUB_TOKEN (PAT with repo contents read+write)}"
 REPO_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/jaxperro/winning-wallet-finder.git"
 DIR="${COPYBOT_DIR:-/tmp/wwf}"

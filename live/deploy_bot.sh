@@ -8,8 +8,10 @@
 #   2. ./live/deploy_bot.sh
 #
 # Validates the config (a malformed JSON = crash-looping container), previews
-# the follow set, commits+pushes just the config, redeploys the Railway worker,
-# and waits for the fresh boot banner.
+# the follow set, commits+pushes just the config, restarts the Fly.io worker
+# (wwf-copybot, Stockholm — start.sh clones main at boot, so a restart IS the
+# deploy for config changes; `flyctl deploy` only needed when host/ or
+# fly.toml change), and waits for the fresh boot banner.
 set -e
 cd "$(dirname "$0")"
 
@@ -52,19 +54,30 @@ fi
 # push mode: keep the Alchemy webhook's address list matched to the follow set
 python3 sync_webhook.py || echo "⚠ webhook sync failed — update the address list manually"
 
-railway redeploy --service copybot --yes
-echo "redeploy triggered — waiting for the new container…"
-for i in $(seq 1 15); do
-  sleep 20
-  tail5=$(railway logs --service copybot 2>/dev/null | tail -5)
-  if echo "$tail5" | grep -qE "\[[123]\] "; then
-    railway logs --service copybot 2>/dev/null | grep -E "watching|floor\[" | tail -12
-    echo "$tail5" | tail -1
-    echo "✅ bot rebooted with the new follow set"
-    echo "   (Alchemy address list synced above — if it warned, update manually"
-    echo "    at dashboard.alchemy.com → Webhooks → copybot follow set)"
-    exit 0
-  fi
-done
-echo "⚠ no fresh boot banner within 5min — check: railway logs --service copybot"
-exit 1
+flyctl apps restart wwf-copybot
+echo "restart triggered — waiting for the new container…"
+python3 - <<'PY'
+# wait for a boot banner logged AFTER the restart (fly log lines are ANSI-
+# colored and ISO-stamped; strip + parse here rather than in bash)
+import re, subprocess, sys, time
+t0 = time.time() - 30                      # restart just happened
+for _ in range(15):
+    time.sleep(20)
+    raw = subprocess.run(["flyctl", "logs", "--app", "wwf-copybot", "--no-tail"],
+                         capture_output=True, text=True).stdout
+    lines = [re.sub(r"\x1b\[[0-9;]*m", "", l) for l in raw.splitlines()]
+    for l in reversed(lines):
+        if "watching" in l and "wallets" in l:
+            m = re.match(r"(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})Z", l)
+            ts = time.mktime(time.strptime(m.group(1), "%Y-%m-%dT%H:%M:%S")) - time.timezone if m else 0
+            if ts >= t0:
+                print("\n".join(x for x in lines[-40:]
+                                if re.search(r"watching|floor\[|push mode|VERDICT", x)))
+                print("✅ bot rebooted with the new follow set")
+                print("   (Alchemy address list synced above — if it warned, update"
+                      " manually at dashboard.alchemy.com → Webhooks)")
+                sys.exit(0)
+            break
+print("⚠ no fresh boot banner within 5min — check: flyctl logs --app wwf-copybot")
+sys.exit(1)
+PY

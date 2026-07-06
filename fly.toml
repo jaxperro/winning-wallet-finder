@@ -1,0 +1,25 @@
+# Fly.io config for the copybot worker — region must be a country Polymarket
+# does NOT restrict (https://docs.polymarket.com/developers/CLOB/geoblock).
+# Surprises on the restricted list: US, UK, France, Germany, Italy, NL,
+# Poland, Singapore, Australia, Ontario (yyz), and BRAZIL (no gru). Of Fly's
+# 2026 region set that leaves arn (Stockholm), jnb (Johannesburg), bom
+# (Mumbai). arn wins: allowed + ~25ms from the CLOB primaries (eu-west-2
+# London), so copy lag improves vs any LatAm box.
+app = "wwf-copybot"
+primary_region = "arn"
+
+[build]
+  dockerfile = "fly.Dockerfile"
+
+# public HTTPS endpoint for the Alchemy push webhook (POST /alchemy);
+# the bot binds $PORT or 8080. An always-on worker: never auto-stop.
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "off"
+  auto_start_machines = true
+  min_machines_running = 1
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"
