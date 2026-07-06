@@ -329,6 +329,14 @@ class Copybot:
                 self.engine.state["fees_paid"] = self.engine.state.get("fees_paid", 0.0) + fee
                 if f["side"] == "BUY":
                     buys.append(f)
+                else:
+                    # link the mirror-exit to its bet record so the sold leg shows
+                    # up in per-bet P&L (feed) — cash above is already correct
+                    b = self.engine.state.get("bets", {}).get(f["token"])
+                    if b:
+                        b["sold_shares"] = round(b.get("sold_shares", 0) + f["shares"], 2)
+                        b["sold_proceeds"] = round(b.get("sold_proceeds", 0)
+                                                   + f["shares"] * f["price"] - fee, 2)
             ex.fills.clear()
         return buys
 
@@ -401,6 +409,12 @@ class Copybot:
             if b["status"] == "open" and tok not in mp:
                 b["status"] = "closed"
                 b["settled"] = b["settled"] or int(time.time())
+                # fully mirror-sold: realize the sold leg on the bet record
+                # (cash was already credited fill-by-fill in _drain_fills)
+                if b.get("sold_proceeds") is not None and b.get("pnl") is None:
+                    b["pnl"] = round(b["sold_proceeds"] - b["cost"] - (b.get("fee") or 0), 2)
+                    if b.get("sold_shares"):
+                        b["exit_price"] = round(b["sold_proceeds"] / b["sold_shares"], 4)
         bank = self.cfg["bankroll_usd"]
         exp = self.engine.open_exposure()
         cash = st.get("cash", bank)
@@ -594,7 +608,12 @@ class Copybot:
                 proceeds = pos["shares"] * wp           # redeem is fee-free on-chain
                 b = self.engine.state.get("bets", {}).get(token)
                 fee_in = (b or {}).get("fee") or 0      # entry taker fee, already off cash
-                pnl = proceeds - pos["cost"] - fee_in
+                # a TRIMmed bet realized part of itself pre-resolution: count the
+                # sold leg and charge the ORIGINAL cost (pos["cost"] was reduced
+                # proportionally at each trim), so per-bet pnl = whole-bet truth
+                sold = (b or {}).get("sold_proceeds") or 0
+                base_cost = b["cost"] if b else pos["cost"]
+                pnl = proceeds + sold - base_cost - fee_in
                 self.engine.state["cash"] += proceeds   # recycle freed capital
                 if b:
                     b.update(status=("won" if wp >= 0.5 else "lost"),
