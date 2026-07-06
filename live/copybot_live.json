@@ -1,21 +1,21 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 38.0,
+ "stake": 37.94,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 620.18,
- "deployed": 329.94,
+ "cash": 504.42,
+ "deployed": 443.96,
  "reserve": 0.0,
- "realized": -49.88,
- "open_count": 3,
- "fees_paid": 10.87,
+ "realized": -51.62,
+ "open_count": 4,
+ "fees_paid": 12.62,
  "fee_rate": 0.03,
  "lag": {
-  "n": 17,
-  "avg_s": 38.5,
-  "avg_slip_pct": -0.0445
+  "n": 18,
+  "avg_s": 38.2,
+  "avg_slip_pct": -0.042
  },
  "wallets": [
   "Kruto2027",
@@ -43,6 +43,24 @@
   "iohihoo": 62.91
  },
  "bets": [
+  {
+   "token": "45236418904009345566698374131303773287053643122697134411691699835726205276265",
+   "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
+   "name": "0x4bFb-whale",
+   "outcome": "Over",
+   "title": "Gojo vs. Heide: Set 1 Games O/U 10.5",
+   "their_price": 0.49,
+   "my_price": 0.49,
+   "slippage_pct": -0.0,
+   "shares": 232.68,
+   "cost": 114.01,
+   "fee": 1.7444,
+   "opened": 1783307582,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "24329994357334762766286022592566472160316983149520905632893295835912584628294",
    "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
@@ -602,5 +620,5 @@
   }
  ],
  "missed_pnl": -58.35,
- "updated": 1783307486
+ "updated": 1783307614
 }
