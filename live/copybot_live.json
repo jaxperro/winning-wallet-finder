@@ -360,6 +360,21 @@
  ],
  "missed": [
   {
+   "ts": 1783352843,
+   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
+   "token": "62947322115492502504855684676867692758378681654989082338250631609004698762930",
+   "cond": "0x0470f76de0844c270cd574626c67909416aa06dfe5ea090325ead618c668c4c0",
+   "title": "Czechia vs. Estonia",
+   "outcome": "Estonia",
+   "price": 0.49,
+   "stake": 38.36,
+   "reason": "price moved 0.45\u21920.49",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "fortuneking"
+  },
+  {
    "ts": 1783347199,
    "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
    "token": "85258469184279046487012000385739590612417313123739073554013691504231776870728",
@@ -751,5 +766,5 @@
   }
  ],
  "missed_pnl": -87.35,
- "updated": 1783351352
+ "updated": 1783352845
 }
