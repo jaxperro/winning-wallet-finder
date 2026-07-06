@@ -105,6 +105,18 @@ def display_stats(w):
     now = time.time()
     bets = [b for b in cache.get_bets(w)
             if (b["size"] or 0) > 0 and (b["res_t"] or 0) <= now]
+    # ---- ALL-TIME stats over EVERY trusted bet (any size): the dashboard's
+    # "of every bet placed" columns. Trusted rows only, deduped one-per-market,
+    # so scalper-poisoned cache marks can't inflate them. ----
+    trows = trust.trusted_wallet_rows(cache.query, w)
+    tbest = {}
+    for cond, asset, won, p, res_t, size in trows:
+        if cond not in tbest or size > tbest[cond][2]:
+            tbest[cond] = (won, p, size)
+    all_won = sum(1 for won, _, _ in tbest.values() if won)
+    all_lost = len(tbest) - all_won
+    all_pnl = sum(size * ((1 - p) / p if won else -1.0)
+                  for won, p, size in tbest.values())
     thr = cache.conv_cutoff(b["size"] for b in bets)
     conv = [b for b in bets if b["size"] >= thr]
     won = sum(1 for b in conv if b["won"])
@@ -120,6 +132,8 @@ def display_stats(w):
         "conv30_won": won30, "conv30_lost": len(conv30) - won30,
         "conv30_pnl": round(sum(_bet_pnl(b) for b in conv30)),
         "realized_pnl": round(sum(_bet_pnl(b) for b in recent)),
+        "all_win": round(100 * all_won / (all_won + all_lost), 1) if (all_won + all_lost) else None,
+        "all_won": all_won, "all_lost": all_lost, "all_pnl": round(all_pnl),
         "avg_bet": round(sum(b["size"] for b in conv) / len(conv)) if conv else 0,
         "copy_pnl": 0, "held_pnl": 0, "held_won": 0, "held_lost": 0, "sold": 0,
         "name": None, "last_trade": 0, "last_conv_bet": 0,
@@ -232,10 +246,9 @@ def main():
                     return None
                 time.sleep(2)
 
+    trust.ensure_cons(cache.query)
     with ThreadPoolExecutor(max_workers=8) as ex:
         stats = list(ex.map(safe_stats, conv))
-
-    trust.ensure_cons(cache.query)
     cut30 = time.time() - 30 * 86400
     sharps = []
     for c, ds in zip(conv, stats):

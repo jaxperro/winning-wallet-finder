@@ -439,6 +439,8 @@ class Copybot:
                     "avg_s": round(lag["sum_s"] / lag["n"], 1) if lag.get("n") else None,
                     "avg_slip_pct": round(lag["sum_slip_pct"] / lag["n"], 4) if lag.get("n") else None},
             "wallets": [w.get("name", w["wallet"][:10]) for w in self.cfg.get("watch", [])],
+            "classes": {w.get("name", w["wallet"][:10]): self.engine.wallet_class(w["wallet"])
+                        for w in self.cfg.get("watch", [])},
             "bets": sorted(bets.values(),
                            key=lambda b: b.get("settled") or b.get("opened") or 0,
                            reverse=True)[:100],
