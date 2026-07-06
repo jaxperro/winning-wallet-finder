@@ -1,11 +1,10 @@
 # Explicit build config for Railway/Nixpacks (pure-stdlib Python service).
-# Default start = the Discord webhook receiver. For the 24/7 copybot worker,
-# deploy a second service from this repo and override the start command with
-#   bash host/start.sh
-# (see host/start.sh for the full setup). git is needed at runtime — the bot
-# persists its book by committing state + feed back to GitHub.
+# Start = the 24/7 copybot worker (bash host/start.sh, also pinned by
+# railway.json's deploy.startCommand). git is needed at runtime — the bot
+# persists its book by committing state + feed back to GitHub. The old
+# webhook_receiver default is retired (archive/webhook_receiver.py).
 [phases.setup]
 nixPkgs = ["python311", "git"]
 
 [start]
-cmd = "python3 webhook_receiver.py"
+cmd = "bash host/start.sh"
