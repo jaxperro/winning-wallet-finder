@@ -69,12 +69,12 @@ BASE_PCT = CLASS_PCT.get("volume", 0.04)  # sweep threshold stays on the base cl
 # EVENT_CAP >0 limits concurrent bets whose markets belong to the same real-world
 # event (a game's markets settle together — one correlated bet, not N diversified
 # ones); 0 = off, mirror every conviction trade.
-# per-class equity fractions come from CLASS_PCT (backtest.json); stakes pin at
-# STAKE_CAP (where marketable fills still sit inside typical book depth); once
-# working equity exceeds STAKE_CAP/BASE_PCT, surplus cash is SWEPT into a banked
-# reserve — a profit ratchet that never bets and can't be drawn down.
+# per-class equity fractions come from CLASS_PCT (backtest.json). No stake cap
+# and no banked reserve: the natural ceiling is the FOLLOWED WALLET'S OWN BET —
+# a copy is never larger than what the wallet actually staked (you can't
+# out-conviction the signal, and it keeps fills inside the size the market
+# actually absorbed).
 STAKE_MIN = 5.0
-STAKE_CAP = float(_BT.get("stake_cap_usd") or 250.0)
 EVENT_CAP = 0
 DD_THRESHOLD, DD_FACTOR = 0.80, 0.5
 # skip entries above this price. High-price favorites win pennies and lose
@@ -195,7 +195,7 @@ def window_bets():
             if not et or et < START:                       # only in-window entries
                 continue
             out.append({"wallet": w["wallet"], "name": w["name"], "cond": cond,
-                        "cls": w.get("class", "volume"),
+                        "cls": w.get("class", "volume"), "their": size,
                         "entry_t": et, "p": p, "won": won, "res_t": res_t or 0})
     return out
 
@@ -228,7 +228,7 @@ def open_bets():
             # position is the newest thing in the book; entry_t=0 used to put
             # it FIRST, draining the bankroll before any historical bet ran)
             out.append({"wallet": w["wallet"], "name": w["name"], "cond": p.get("conditionId"),
-                        "cls": w.get("class", "volume"),
+                        "cls": w.get("class", "volume"), "their": p.get("initialValue") or 0,
                         "entry_t": et if et is not None else time.time(),
                         "p": max(0.001, min(0.999, p.get("avgPrice", 0) or 0)),
                         "cur": cp, "title": p.get("title") or "", "outcome": p.get("outcome") or "",
@@ -268,21 +268,19 @@ def main():
                           "invested": 0.0, "realized": 0.0} for w in WALLETS}
     resolved, current, missed = [], [], []
 
-    def cur_stake(frac=BASE_PCT):
-        """The wallet-class fraction of current WORKING equity, drawdown-braked,
-        clamped — the copybot's rule. Sweeps surplus cash to the banked reserve
-        first (threshold on BASE_PCT, so which wallet happens to trade doesn't
-        change when profits get banked)."""
-        nonlocal hwm, cash, reserve
+    def cur_stake(frac=BASE_PCT, their=None):
+        """The wallet-class fraction of current equity, drawdown-braked, and
+        NEVER larger than the followed wallet's own stake: when the percentage
+        works out to more than they actually bet, mirror their exact amount."""
+        nonlocal hwm
         eq = cash + sum(c for _, c, _, _ in held)
-        excess = eq - STAKE_CAP / BASE_PCT
-        if excess > 0:
-            sweep = min(cash, excess)
-            cash -= sweep; reserve += sweep; eq -= sweep
         hwm = max(hwm, eq)
         if eq < DD_THRESHOLD * hwm:
             frac *= DD_FACTOR
-        return max(STAKE_MIN, min(STAKE_CAP, frac * eq))
+        stake = max(STAKE_MIN, frac * eq)
+        if their and stake > their:
+            stake = their
+        return stake
 
     def free(upto):
         nonlocal cash, realized
@@ -299,7 +297,7 @@ def main():
 
     for b in stream:
         free(b["entry_t"])
-        stake = cur_stake(CLASS_PCT.get(b.get("cls"), BASE_PCT))
+        stake = cur_stake(CLASS_PCT.get(b.get("cls"), BASE_PCT), b.get("their"))
         b["stake"] = round(stake, 2)
         b["event"] = event_key(market_meta(b["cond"])["slug"])
         # correlation cap (off when EVENT_CAP=0): skip a bet when we already hold
@@ -366,7 +364,7 @@ def main():
         "started": START, "updated": now, "days": DAYS,
         "bank": BANK, "stake": round(cur_stake(), 2),   # the NEXT bet's size (base class)
         "stake_pct": BASE_PCT, "class_pct": CLASS_PCT,
-        "stake_cap": STAKE_CAP, "event_cap": EVENT_CAP,
+        "event_cap": EVENT_CAP,
         "hwm": round(hwm, 2),
         "dd_threshold": DD_THRESHOLD, "capped_count": capped,
         "max_entry": MAX_ENTRY,
