@@ -38,10 +38,10 @@
   "ArbTrader": "whale"
  },
  "floors": {
-  "Kruto2027": 78.38,
-  "fortuneking": 93.94,
-  "LSB1": 156.17,
-  "imwalkinghere": 130.79,
+  "Kruto2027": 75.3,
+  "fortuneking": 87.64,
+  "LSB1": 165.72,
+  "imwalkinghere": 131.71,
   "iohihoo": 62.91
  },
  "bets": [
@@ -781,5 +781,5 @@
   }
  ],
  "missed_pnl": -126.3,
- "updated": 1783364759
+ "updated": 1783367845
 }
