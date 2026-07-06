@@ -360,6 +360,21 @@
  ],
  "missed": [
   {
+   "ts": 1783352843,
+   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
+   "token": "62947322115492502504855684676867692758378681654989082338250631609004698762930",
+   "cond": "0x0470f76de0844c270cd574626c67909416aa06dfe5ea090325ead618c668c4c0",
+   "title": "Czechia vs. Estonia",
+   "outcome": "Estonia",
+   "price": 0.49,
+   "stake": 38.36,
+   "reason": "price moved 0.45\u21920.49",
+   "status": "lost",
+   "pnl": -38.95,
+   "settled": 1783364755,
+   "name": "fortuneking"
+  },
+  {
    "ts": 1783363497,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "89531641549862700375448632514067972781654742562079348350812421201436639527009",
@@ -373,21 +388,6 @@
    "pnl": null,
    "settled": null,
    "name": "LSB1"
-  },
-  {
-   "ts": 1783352843,
-   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
-   "token": "62947322115492502504855684676867692758378681654989082338250631609004698762930",
-   "cond": "0x0470f76de0844c270cd574626c67909416aa06dfe5ea090325ead618c668c4c0",
-   "title": "Czechia vs. Estonia",
-   "outcome": "Estonia",
-   "price": 0.49,
-   "stake": 38.36,
-   "reason": "price moved 0.45\u21920.49",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "fortuneking"
   },
   {
    "ts": 1783347199,
@@ -780,6 +780,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -87.35,
- "updated": 1783363499
+ "missed_pnl": -126.3,
+ "updated": 1783364759
 }
