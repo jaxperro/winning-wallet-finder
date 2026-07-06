@@ -59,7 +59,7 @@ echo "restart triggered — waiting for the new container…"
 python3 - <<'PY'
 # wait for a boot banner logged AFTER the restart (fly log lines are ANSI-
 # colored and ISO-stamped; strip + parse here rather than in bash)
-import re, subprocess, sys, time
+import calendar, re, subprocess, sys, time
 t0 = time.time() - 30                      # restart just happened
 for _ in range(15):
     time.sleep(20)
@@ -69,7 +69,8 @@ for _ in range(15):
     for l in reversed(lines):
         if "watching" in l and "wallets" in l:
             m = re.match(r"(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})Z", l)
-            ts = time.mktime(time.strptime(m.group(1), "%Y-%m-%dT%H:%M:%S")) - time.timezone if m else 0
+            # log stamps are UTC — timegm, NOT mktime (which assumes local)
+            ts = calendar.timegm(time.strptime(m.group(1), "%Y-%m-%dT%H:%M:%S")) if m else 0
             if ts >= t0:
                 print("\n".join(x for x in lines[-40:]
                                 if re.search(r"watching|floor\[|push mode|VERDICT", x)))
