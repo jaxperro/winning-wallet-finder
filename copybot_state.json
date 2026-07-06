@@ -5253,5 +5253,12 @@
       "settled": 1783372271,
       "name": "LSB1"
     }
+  ],
+  "adjustments": [
+    {
+      "ts": 1783375940,
+      "amount": 15.45,
+      "reason": "2026-07-06 audit: residue of the Jul-5 accounting migration (sold-leg linking landed mid-flight; -41.31/+53.15 transition steps left this remainder). Recorded, not repaid \u2014 see ledger_drift in the feed, which is 0 from here on."
+    }
   ]
 }
