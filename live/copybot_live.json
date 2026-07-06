@@ -352,6 +352,21 @@
  ],
  "missed": [
   {
+   "ts": 1783301842,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "102152517760279819101151573238490012903089489836238465651374507491554775479518",
+   "cond": "0xfffb44792cbe3c59c926c00aea52b11eb0308802689d09015815eb5237b131bb",
+   "title": "England to score first vs. Mexico?",
+   "outcome": "Yes",
+   "price": 0.99,
+   "stake": 38.07,
+   "reason": "price moved 0.77\u21920.99",
+   "status": "won",
+   "pnl": 0.37,
+   "settled": 1783308440,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783302158,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "92454145506551986743667783258795348314421193064642345412792128866985888546940",
@@ -364,21 +379,6 @@
    "status": "won",
    "pnl": 9.29,
    "settled": 1783308186,
-   "name": "LSB1"
-  },
-  {
-   "ts": 1783301842,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "102152517760279819101151573238490012903089489836238465651374507491554775479518",
-   "cond": "0xfffb44792cbe3c59c926c00aea52b11eb0308802689d09015815eb5237b131bb",
-   "title": "England to score first vs. Mexico?",
-   "outcome": "Yes",
-   "price": 0.99,
-   "stake": 38.07,
-   "reason": "price moved 0.77\u21920.99",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
    "name": "LSB1"
   },
   {
@@ -637,6 +637,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -49.06,
- "updated": 1783308188
+ "missed_pnl": -48.69,
+ "updated": 1783308443
 }
