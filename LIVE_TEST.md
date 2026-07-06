@@ -38,8 +38,13 @@ verified. Fix anything red before arming.
 
 ## 4. Pause the paper worker (avoids the two bots fighting over the feed)
 
-    cd ~/…/scratchpad/railway-copybot && railway down --service copybot -y
+    cd ~/polymarket-smart-money && railway down --service copybot --yes
     # …or pause the service in the Railway dashboard
+
+Note: the worker is the push-mode webhook receiver — while it's down, Alchemy
+gets delivery failures and retries; a long pause can auto-disable the webhook
+(re-enable it at dashboard.alchemy.com → Webhooks). Keep test sessions short
+or expect to flip it back on.
 
 ## 5. Arm (you type the phrase — that's the point of it)
 
@@ -57,7 +62,7 @@ SETTLE line + auto-redeem tx hash.
 
 Ctrl-C the live bot, then redeploy the paper worker:
 
-    cd ~/…/scratchpad/railway-copybot && railway up --service copybot --detach
+    cd ~/polymarket-smart-money && railway up --service copybot --detach
 
 ## Notes
 
