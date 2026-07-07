@@ -46,6 +46,7 @@ import os
 import sys
 import threading
 import time
+import urllib.error
 import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
@@ -115,6 +116,8 @@ FOLLOW_DEFAULT = {
 }
 
 RECENT_TRADE_WINDOW_S = 600    # webhook just told us a trade happened; ignore stale
+# defaults — config keys feed_path / fill_log override them (LIVE_ROLLOUT 1.1:
+# a live-money run must never clobber the paper book's feed or fills ledger)
 FILL_LOG = "copybot_fills.jsonl"          # append-only ledger of every copy fill + lag/slippage
 FEED = os.path.join("live", "copybot_live.json")   # published feed the trading dashboard reads
 FEED_PUSH_MIN_S = 120                     # min seconds between feed git-pushes (commit-on-change)
@@ -361,6 +364,8 @@ class Copybot:
         self.negrisk_warned = set()    # conds we've already warned need manual redeem
         self.lock = threading.Lock()   # serialize engine/settle access (webhook is threaded)
         self.here = os.path.dirname(os.path.abspath(__file__))
+        self.feed_path = cfg.get("feed_path", FEED)
+        self.fill_log = cfg.get("fill_log", FILL_LOG)
         # persisted across restarts via the engine's state file
         self.conds = engine.state.setdefault("conds", {})   # token_id -> conditionId (open positions)
         engine.state.setdefault("cash", cfg["bankroll_usd"])  # free cash (recycles on sell/resolution)
@@ -398,7 +403,7 @@ class Copybot:
                     # sells go to the fills ledger too — the audit had no sell
                     # trail to reconcile the ledger against
                     try:
-                        with open(os.path.join(self.here, FILL_LOG), "a") as fh:
+                        with open(os.path.join(self.here, self.fill_log), "a") as fh:
                             fh.write(json.dumps({
                                 "ts": round(time.time(), 1), "side": "SELL",
                                 "token": f["token"], "shares": round(f["shares"], 4),
@@ -449,7 +454,7 @@ class Copybot:
             "mode": "live" if self.engine.ex.live else "paper",
         }
         try:
-            with open(os.path.join(self.here, FILL_LOG), "a") as fh:
+            with open(os.path.join(self.here, self.fill_log), "a") as fh:
                 fh.write(json.dumps(rec) + "\n")
         except Exception:
             pass
@@ -560,7 +565,7 @@ class Copybot:
             return
         self.engine.state["feed_sig"] = sig
         feed["updated"] = int(time.time())
-        path = os.path.join(self.here, FEED)
+        path = os.path.join(self.here, self.feed_path)
         os.makedirs(os.path.dirname(path), exist_ok=True)
         tmp = path + ".tmp"
         json.dump(feed, open(tmp, "w"), indent=1)
@@ -585,10 +590,10 @@ class Copybot:
             # publish only when the FEED itself changed (a bet placed/settled) —
             # the state file churns bookkeeping every cycle and would otherwise
             # commit every FEED_PUSH_MIN_S forever.
-            if subprocess.run(["git", "-C", repo, "diff", "--quiet", "--", FEED],
+            if subprocess.run(["git", "-C", repo, "diff", "--quiet", "--", self.feed_path],
                               capture_output=True).returncode == 0:
                 return
-            paths = [p for p in (FEED, self.engine.state_path, FILL_LOG)
+            paths = [p for p in (self.feed_path, self.engine.state_path, self.fill_log)
                      if os.path.exists(os.path.join(repo, p))]
             subprocess.run(["git", "-C", repo, "add", "-f"] + paths, capture_output=True)
             if subprocess.run(["git", "-C", repo, "diff", "--cached", "--quiet"],
@@ -628,6 +633,27 @@ class Copybot:
         self.engine.persist()
         log(f"baseline: {n} existing trades marked seen — copying only NEW trades from now")
 
+    _chain_bal = (0.0, None)     # (checked_at, usdc) — cached; poll ≤1/min
+
+    def chain_cash_gap(self):
+        """LIVE only (LIVE_ROLLOUT 1.4): book cash minus the exchange's actual
+        USDC balance — the real-money version of ledger_drift. None in paper
+        mode or on a failed fetch (never treat silence as a number)."""
+        if not self.engine.ex.live:
+            return None
+        now = time.time()
+        ts, bal = self._chain_bal
+        if now - ts > 60:
+            try:
+                from py_clob_client.clob_types import BalanceAllowanceParams, AssetType
+                r = self.engine.ex.client.get_balance_allowance(
+                    BalanceAllowanceParams(asset_type=AssetType.COLLATERAL))
+                bal = int(r.get("balance", 0)) / 1e6
+                self._chain_bal = (now, bal)
+            except Exception:
+                return None
+        return None if bal is None else self.engine.state.get("cash", 0) - bal
+
     def summary(self, cycle):
         bank = self.cfg["bankroll_usd"]
         stake = self.engine.stake_usd()       # dynamic: pct of current equity
@@ -645,6 +671,9 @@ class Copybot:
         bankstr = f" · banked ${reserve:,.0f}" if reserve else ""
         drift = self.ledger_drift()
         driftstr = f" · ⚠ LEDGER DRIFT ${drift:+.2f}" if abs(drift) > 0.01 else ""
+        gap = self.chain_cash_gap()
+        if gap is not None and abs(gap) > 1.0:      # ≥$1: beyond fee/rounding float
+            driftstr += f" · ⚠ CASH≠CHAIN ${gap:+.2f}"
         log(f"[{cycle}] open {n} · deployed ${exp:,.0f} · free ${cash:,.0f}/${bank:,.0f}"
             f"{bankstr} · realized ${realized:+,.2f}{lagstr}{driftstr}"
             + (f" · CAN'T OPEN (free < ${stake:,.0f} stake — bets missed)"
@@ -739,6 +768,20 @@ class Copybot:
                 self.engine._handle_their_sell(
                     token, 0, 0, f"{pos.get('outcome','?')} · {pos.get('title','?')[:42]}")
                 self._drain_fills()                 # book the sell's cash + sold-leg
+                # LIVE_ROLLOUT 1.6 — a FAK sell on a thin book can fill 0 and
+                # the position silently rides to resolution. This pass re-fires
+                # every backstop poll; count the attempts and raise the alarm
+                # once it looks stuck (still held after N tries).
+                if token in mp:
+                    att = self.engine.state.setdefault("exit_attempts", {})
+                    att[token] = att.get(token, 0) + 1
+                    if att[token] == 10:
+                        self.engine.alert(
+                            f"⚠ EXIT STUCK: {pos.get('title','?')[:42]} — "
+                            f"{att[token]} mirror-exit attempts unfilled; "
+                            f"check the book / exit manually in the UI.")
+                else:
+                    self.engine.state.get("exit_attempts", {}).pop(token, None)
             self.engine.persist()
 
     def reconcile_entries(self):
@@ -986,6 +1029,16 @@ def load_cfg(path):
     cfg = {**DEFAULT_CONFIG, **load_json(path, {})}
     cfg["risk"] = {**DEFAULT_CONFIG["risk"], **cfg.get("risk", {})}
     cfg["live"] = {**DEFAULT_CONFIG["live"], **cfg.get("live", {})}
+    # env overrides for the credentials (LIVE_ROLLOUT 1.2): the Fly worker
+    # clones the repo, and config.live.json is gitignored — secrets reach a
+    # cloud box as env vars only. Env wins over file so a deployed worker
+    # can't accidentally trade an old key from a stray config.
+    for env, key in (("LIVE_PRIVATE_KEY", "private_key"),
+                     ("LIVE_FUNDER_ADDRESS", "funder_address"),
+                     ("LIVE_SIGNATURE_TYPE", "signature_type")):
+        v = os.environ.get(env)
+        if v:
+            cfg["live"][key] = int(v) if key == "signature_type" else v
     cfg["follow"] = {**FOLLOW_DEFAULT, **cfg.get("follow", {})}
     normalize_follow_config(cfg)
     # accept either "watchlist" (addresses) or "watch" ([{wallet,name}]); fill the gap
@@ -1042,6 +1095,26 @@ def main():
     state = load_json(args.state, new_state())
     redeemer = None
     if want_live:
+        # LIVE_ROLLOUT 1.5 — the geo-gate is FATAL for real money: an
+        # unauthenticated dummy order separates geo-blocked (403 "restricted
+        # in your region") from allowed (auth/validation error). Paper mode
+        # only reads, so it merely warns (host/start.sh); live must refuse.
+        try:
+            req = urllib.request.Request(CLOB_API + "/order", method="POST",
+                                         data=b"{}", headers={"User-Agent": "Mozilla/5.0",
+                                                              "Content-Type": "application/json"})
+            urllib.request.urlopen(req, timeout=15, context=SSL_CTX)
+            geo_body = ""
+        except urllib.error.HTTPError as e:
+            geo_body = e.read().decode(errors="replace")[:200]
+            if e.code == 403 and "restricted" in geo_body.lower():
+                sys.exit("GEO-BLOCKED: this box cannot place Polymarket orders "
+                         f"({geo_body[:100]}). Run from the Fly worker (Stockholm) "
+                         "or an unrestricted country — see LIVE_ROLLOUT.md 0.1.")
+        except Exception as e:
+            sys.exit(f"geo-gate probe failed ({e}) — refusing to arm live "
+                     "without a TRADABLE verdict (LIVE_ROLLOUT.md 0.1)")
+        log("geo-gate: TRADABLE — order endpoint reachable")
         confirm_live(cfg)
         executor = LedgerLiveExecutor(cfg)   # FOK marketable orders + fill recording
         if cfg.get("live", {}).get("auto_redeem", True):

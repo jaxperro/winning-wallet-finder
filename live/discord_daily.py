@@ -43,11 +43,21 @@ def main():
     # --ping "text": one plain status line (used by daily.sh's start-of-run
     # heads-up so the digest hours later isn't the only sign of life)
     if len(sys.argv) > 2 and sys.argv[1] == "--ping":
-        try:
-            _post(hook, {"content": sys.argv[2]})
-            print("[discord] ping sent")
-        except Exception as e:
-            print("[discord] ping failed:", e)
+        # launchd WAKES the Mac to run daily.sh, and this heads-up ping is its
+        # first network call — DNS/WiFi is often not up yet in the first seconds
+        # after wake, so a single try fails instantly with getaddrinfo "nodename
+        # nor servname" (harmless: the end-of-run digest lands fine). Retry a few
+        # times with backoff to ride out the post-wake network gap.
+        for attempt in range(4):
+            try:
+                _post(hook, {"content": sys.argv[2]})
+                print("[discord] ping sent" + (f" (attempt {attempt + 1})" if attempt else ""))
+                return
+            except Exception as e:
+                if attempt == 3:
+                    print("[discord] ping failed after retries:", e)
+                else:
+                    time.sleep(5 * (attempt + 1))     # 5s, 10s, 15s — DNS usually up by 15s
         return
     try:
         sharps = json.load(open(os.path.join(HERE, "watch_sharps.json")))
