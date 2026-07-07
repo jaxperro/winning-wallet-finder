@@ -31,6 +31,7 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 import cache
+import payouts
 import smart_money as sm
 import trust
 
@@ -179,24 +180,31 @@ def window_bets():
         rows = trust.trusted_wallet_rows(cache.query, w["wallet"], now)
         best = {}                            # one bet per market: largest-stake token
         for cond, asset, won, p, res_t, size in rows:
-            if cond not in best or size > best[cond][3]:
-                best[cond] = (won, p, res_t, size)
+            if cond not in best or size > best[cond][4]:
+                best[cond] = (asset, won, p, res_t, size)
         if w.get("class") == "whale":
             thr = 0.0
         else:
-            pre = [size for won, p, res_t, size in best.values() if res_t < START]
+            pre = [size for asset, won, p, res_t, size in best.values() if res_t < START]
             thr = cache.conv_cutoff(pre if pre else
                                     [size for *_, size in best.values()])
         _WALLET_THR[w["wallet"]] = thr
-        for cond, (won, p, res_t, size) in best.items():
+        for cond, (asset, won, p, res_t, size) in best.items():
             if size < thr or p > MAX_ENTRY:
                 continue
             et = ent.get(cond)
             if not et or et < START:                       # only in-window entries
                 continue
             out.append({"wallet": w["wallet"], "name": w["name"], "cond": cond,
-                        "cls": w.get("class", "volume"), "their": size,
-                        "entry_t": et, "p": p, "won": won, "res_t": res_t or 0})
+                        "asset": asset, "cls": w.get("class", "volume"),
+                        "their": size, "entry_t": et, "p": p, "won": won,
+                        "res_t": res_t or 0})
+    # chain-truth payouts for the replayed markets: refunds pay 0.5/share, and
+    # a cache `won` mark can be wrong on operator-resolved markets — the
+    # replay must settle at what a redeem actually pays (see payouts.py)
+    payouts.ensure({b["cond"] for b in out})
+    for b in out:
+        b["wp"] = payouts.truth(b["cond"], b.get("asset"))
     return out
 
 
@@ -301,7 +309,12 @@ def main():
         for ft, cost, payoff, rec in held:
             if ft and ft <= upto and rec["kind"] == "res":
                 cash += payoff; realized += payoff - cost; perW[rec["wallet"]]["realized"] += payoff - cost
-                perW[rec["wallet"]]["won" if rec["won"] else "lost"] += 1
+                wp = rec.get("wp")
+                won = rec["won"] if wp is None else wp > 0.5
+                perW[rec["wallet"]]["won" if won else "lost"] += 1
+                rec["won"] = won                      # truth-adjusted for the feed
+                if wp == 0.5:
+                    rec["refund"] = True
                 rec["pnl"] = payoff - cost
                 resolved.append(rec)
             else:
@@ -325,7 +338,11 @@ def main():
             cash -= cost; fees_paid += fee; perW[b["wallet"]]["bets"] += 1
             shares = stake / p_eff                        # lag-adjusted entry price
             if b["kind"] == "res":
-                payoff = shares * (1.0 if b["won"] else 0.0)   # redeem is fee-free
+                # chain-truth payout (1/0/0.5) when known, else the cache mark
+                wp = b.get("wp")
+                if wp is None:
+                    wp = 1.0 if b["won"] else 0.0
+                payoff = shares * wp                           # redeem is fee-free
                 held.append((b["res_t"] or now, cost, payoff, b))
             else:                                          # currently open -> mark to market, no free yet
                 held.append((None, cost, 0.0, b))
@@ -356,7 +373,10 @@ def main():
         stake = m.get("stake") or STAKE_MIN
         p_eff, fee, cost = entry_model(m["p"], stake)
         if "won" in m:
-            return (stake / p_eff) - cost if m["won"] else -cost
+            wp = m.get("wp")
+            if wp is None:
+                wp = 1.0 if m["won"] else 0.0
+            return (stake / p_eff) * wp - cost
         return stake * (m.get("cur", p_eff) / p_eff) - cost
 
     missed.sort(key=lambda m: m.get("res_t") or 0, reverse=True)

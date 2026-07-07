@@ -22,6 +22,14 @@ Profile gates (on TRAIN conviction bets):
   * median conviction stake >= MIN_MED_STAKE (dust wallets betting $2-$6 clips
     aren't followable and their fills aren't reproducible)
 Then validate forward and count how many keep the profile.
+
+NB (2026-07-06): this scan reads the cache's `won` marks, which count 50/50
+REFUNDS as wins for both sides (28% of resolved markets in the in-play niche)
+— so it OVER-generates candidates. That's acceptable: this is the candidate
+layer; final selection (validate_timing.py) re-judges every candidate against
+chain-truth payouts (payouts.py) and rejects refund-inflated records. Chain-
+checking all ~19M rows here would take days of RPC; the funnel does it only
+for the few dozen wallets that survive to the copy replay.
 """
 
 import math, os, time

@@ -103,17 +103,23 @@ def trusted_wallet_rows(runq, wallet, now=None):
         [wallet, now, now])
 
 
-def conviction_record(runq, wallet, days=90, pctile=0.80, now=None):
+def conviction_record(runq, wallet, days=90, pctile=0.80, now=None, truthfn=None):
     """Trailing trusted CONVICTION record for the held-edge gate:
     {n, wr, roi} over the wallet's top-(1-pctile) stake bets resolved in the
     last `days`. The conviction cutoff is that wallet's stake p80 over its FULL
     trusted history (matching cache.conv_cutoff semantics). roi is the flat-
     stake hold-to-resolution copy ROI per bet, fee/slip-free (gates compare it
-    to 0, and fees are already charged in copy_pnl, the other selection leg)."""
+    to 0, and fees are already charged in copy_pnl, the other selection leg).
+
+    truthfn(cond, asset) -> 1/0/0.5/None (payouts.truth): chain-truth payouts.
+    50/50 REFUNDS (28% of the follow-set niche's resolved markets!) then count
+    as NEITHER won nor lost, with roi credited at (0.5-p)/p — the cache alone
+    marks every refund won=True for both sides, which is exactly the inflation
+    these gates must not select on. None -> the cache's won (old behavior)."""
     now = int(now or time.time())
     rows = trusted_wallet_rows(runq, wallet, now)
     if not rows:
-        return dict(n=0, wr=0.0, roi=0.0)
+        return dict(n=0, wr=0.0, roi=0.0, refunds=0)
     sizes = sorted(r[5] for r in rows)
     k = (len(sizes) - 1) * pctile
     f = int(k)
@@ -123,11 +129,24 @@ def conviction_record(runq, wallet, days=90, pctile=0.80, now=None):
     best = {}
     for cond, asset, won, p, res_t, size in rows:
         if size >= thr and res_t >= cut:
-            if cond not in best or size > best[cond][2]:
-                best[cond] = (won, p, size)
+            if cond not in best or size > best[cond][3]:
+                best[cond] = (cond, asset, won, p, size)
     conv = list(best.values())
     if not conv:
-        return dict(n=0, wr=0.0, roi=0.0)
-    wins = sum(1 for won, _, _ in conv if won)
-    roi = sum(((1 - p) / p if won else -1.0) for won, p, _ in conv) / len(conv)
-    return dict(n=len(conv), wr=wins / len(conv), roi=roi)
+        return dict(n=0, wr=0.0, roi=0.0, refunds=0)
+    wins = losses = refunds = 0
+    roi_sum = 0.0
+    for cond, asset, won, p, size in conv:
+        wp = truthfn(cond, asset) if truthfn else None
+        if wp is None:
+            wp = 1.0 if won else 0.0
+        roi_sum += (wp - p) / p
+        if wp > 0.5:
+            wins += 1
+        elif wp < 0.5:
+            losses += 1
+        else:
+            refunds += 1
+    decided = wins + losses
+    return dict(n=decided, wr=(wins / decided) if decided else 0.0,
+                roi=roi_sum / len(conv), refunds=refunds)

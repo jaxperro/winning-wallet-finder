@@ -37,6 +37,7 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 import cache
+import payouts
 import smart_money as sm
 import trust
 
@@ -93,11 +94,25 @@ def _pm_profit(w):
         return None
 
 
-def _bet_pnl(b):
-    """Resolved (outcome) P&L of one cache bet: a $size stake at avg price p pays
-    size/p if won, else $0 — so P&L = size·(1−p)/p if won else −size."""
+def _wp(cond, asset, won):
+    """Chain-truth payout for a bet (1/0/0.5), falling back to the cache's
+    `won` mark when the chain can't say (unresolved, legacy NULL-asset rows on
+    decided markets, RPC gaps). The fallback keeps old behavior; the truth
+    path kills the two cache lies: 50/50 refunds counted as wins for BOTH
+    sides (28% of the follow set's resolved markets!) and stale both-sides-won
+    marks on operator-resolved markets."""
+    wp = payouts.truth(cond, asset)
+    return (1.0 if won else 0.0) if wp is None else wp
+
+
+def _bet_pnl(b, wp=None):
+    """Resolved P&L of one cache bet at payout wp: a $size stake at avg price p
+    returns size·(wp−p)/p — wp=1 win, 0 loss, 0.5 refund ($0.50/share, NOT
+    money-back: flat near coin-flip entries, ruinous for favorites)."""
     p = max(0.001, min(0.999, b["p"] or 0))
-    return b["size"] * ((1 - p) / p if b["won"] else -1)
+    if wp is None:
+        wp = _wp(b.get("cond"), b.get("asset"), b["won"])
+    return b["size"] * (wp - p) / p
 
 
 def display_stats(w):
@@ -121,35 +136,51 @@ def display_stats(w):
     now = time.time()
     bets = [b for b in cache.get_bets(w)
             if (b["size"] or 0) > 0 and (b["res_t"] or 0) <= now]
+    # chain-truth payouts for everything this wallet's stats touch (cached
+    # in the resolutions table — incremental after the first backfill)
+    trows = trust.trusted_wallet_rows(cache.query, w)
+    payouts.ensure({b["cond"] for b in bets} | {r[0] for r in trows})
     # ---- ALL-TIME stats over EVERY trusted bet (any size): the dashboard's
     # "of every bet placed" columns. Trusted rows only, deduped one-per-market,
-    # so scalper-poisoned cache marks can't inflate them. ----
-    trows = trust.trusted_wallet_rows(cache.query, w)
+    # truth-adjusted: refunds (wp=0.5) count as neither won nor lost. ----
     tbest = {}
     for cond, asset, won, p, res_t, size in trows:
-        if cond not in tbest or size > tbest[cond][2]:
-            tbest[cond] = (won, p, size)
-    all_won = sum(1 for won, _, _ in tbest.values() if won)
-    all_lost = len(tbest) - all_won
-    all_pnl = sum(size * ((1 - p) / p if won else -1.0)
-                  for won, p, size in tbest.values())
+        if cond not in tbest or size > tbest[cond][3]:
+            tbest[cond] = (cond, asset, won, p, size)
+    def tally(rows):
+        """(won, lost, refunds, pnl) over (cond, asset, won, p, size) rows."""
+        w_ = l_ = r_ = 0
+        pnl = 0.0
+        for cond, asset, won, p, size in rows:
+            wp = _wp(cond, asset, won)
+            pc = max(0.001, min(0.999, p or 0))
+            pnl += size * (wp - pc) / pc
+            if wp > 0.5:
+                w_ += 1
+            elif wp < 0.5:
+                l_ += 1
+            else:
+                r_ += 1
+        return w_, l_, r_, pnl
+    all_won, all_lost, all_ref, all_pnl = tally(tbest.values())
     thr = cache.conv_cutoff(b["size"] for b in bets)
     conv = [b for b in bets if b["size"] >= thr]
-    won = sum(1 for b in conv if b["won"])
     recent = sorted(bets, key=lambda b: b["res_t"] or 0, reverse=True)[:500]
     cut30 = time.time() - 30 * 86400
     conv30 = [b for b in conv if (b["res_t"] or 0) >= cut30]
-    won30 = sum(1 for b in conv30 if b["won"])
+    brow = lambda bs: [(b["cond"], b.get("asset"), b["won"], b["p"], b["size"]) for b in bs]
+    cw, cl, cr, cpnl = tally(brow(conv))
+    c3w, c3l, c3r, c3pnl = tally(brow(conv30))
     out = {
-        "conv_win": round(100 * won / len(conv), 1) if conv else None,
-        "conv_won": won, "conv_lost": len(conv) - won,
-        "conv_pnl": round(sum(_bet_pnl(b) for b in conv)),
-        "conv30_win": round(100 * won30 / len(conv30), 1) if conv30 else None,
-        "conv30_won": won30, "conv30_lost": len(conv30) - won30,
-        "conv30_pnl": round(sum(_bet_pnl(b) for b in conv30)),
-        "realized_pnl": round(sum(_bet_pnl(b) for b in recent)),
+        "conv_win": round(100 * cw / (cw + cl), 1) if (cw + cl) else None,
+        "conv_won": cw, "conv_lost": cl, "conv_ref": cr,
+        "conv_pnl": round(cpnl),
+        "conv30_win": round(100 * c3w / (c3w + c3l), 1) if (c3w + c3l) else None,
+        "conv30_won": c3w, "conv30_lost": c3l, "conv30_ref": c3r,
+        "conv30_pnl": round(c3pnl),
+        "realized_pnl": round(tally(brow(recent))[3]),
         "all_win": round(100 * all_won / (all_won + all_lost), 1) if (all_won + all_lost) else None,
-        "all_won": all_won, "all_lost": all_lost, "all_pnl": round(all_pnl),
+        "all_won": all_won, "all_lost": all_lost, "all_ref": all_ref, "all_pnl": round(all_pnl),
         "pm_pnl": _pm_profit(w),
         "avg_bet": round(sum(b["size"] for b in conv) / len(conv)) if conv else 0,
         "copy_pnl": 0, "held_pnl": 0, "held_won": 0, "held_lost": 0, "sold": 0,
@@ -206,13 +237,18 @@ def display_stats(w):
                 scalp += sh * pr - STAKE - openp[c]["fee"] - fee_out
                 sold += 1; del openp[c]
         for c, p in openp.items():                              # settle held bets at resolution
-            wv = resmap.get(p["a"])
+            wv = payouts.truth(c, p["a"])                       # chain first: refunds pay 0.5
+            if wv is None:
+                wv = resmap.get(p["a"])
             if wv is None:
                 wv = _clob_winner(c, p["a"])                    # clob fallback for out-of-pull markets
             if wv is None:
                 continue                                        # not resolved yet -> exclude
-            held += (p["sh"] if wv else 0) - STAKE - p["fee"]   # redeem itself is fee-free
-            hw += wv; hl += 1 - wv
+            held += p["sh"] * wv - STAKE - p["fee"]             # redeem itself is fee-free
+            if wv > 0.5:
+                hw += 1
+            elif wv < 0.5:
+                hl += 1
         out.update(copy_pnl=round(scalp + held), held_pnl=round(held),
                    held_won=hw, held_lost=hl, sold=sold)
     return out
@@ -281,8 +317,9 @@ def main():
         # holders are judged on their real resolved sample (the replay's own held leg
         # is mostly "unresolved" for them and only reported for display).
         tr = trust.conviction_record(cache.query, c["wallet"], days=TRUST_DAYS,
-                                     pctile=cache.CONV_PCTILE)
+                                     pctile=cache.CONV_PCTILE, truthfn=payouts.truth)
         c["trust_n"], c["trust_wr"], c["trust_roi"] = tr["n"], round(tr["wr"], 3), round(tr["roi"], 3)
+        c["trust_refunds"] = tr.get("refunds", 0)
         # SELECT a copyable sharp: active, copy-positive (fee-aware replay), and a
         # genuine hold-to-resolution edge — trailing trusted conviction record wins a
         # clear majority with positive flat-stake ROI on a real sample, so the edge
