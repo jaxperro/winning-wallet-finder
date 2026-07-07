@@ -383,6 +383,21 @@
  ],
  "missed": [
   {
+   "ts": 1783445542,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "105036803249911816283150622105156176389569968621110738800836591953472184947013",
+   "cond": "0x52bbfbded3dc25231df516d3e730ed0c9c717029c76937e25cbf66b2a3930fb3",
+   "title": "Argentina vs. Egypt: Egypt 2nd Half O/U 0.5",
+   "outcome": "Over",
+   "price": 0.6999,
+   "stake": 39.09,
+   "reason": "bot offline (entered while down)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783441241,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "12823318809941413208968349605534348282496510465768328143874183944203888424402",
@@ -1014,5 +1029,5 @@
   }
  ],
  "missed_pnl": -411.77,
- "updated": 1783441244
+ "updated": 1783445544
 }
