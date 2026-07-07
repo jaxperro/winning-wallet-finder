@@ -107,35 +107,38 @@ def leaderboard_candidates(pool):
     return ranked[:pool]
 
 
-def closed_exits(wallet, since_ts=0, max_rows=20000, newest_bound=0):
-    """{asset: {ts, exit_p, p, iv, cond, title, outcome}} for the wallet's
-    FULLY-CLOSED positions, newest first. `ts` is the close (sell/redeem)
-    timestamp; the exit price is reconstructed from realized P&L over shares
-    bought (exit_p = avgPrice + realizedPnl/totalBought — exact for a full
-    single-price exit, share-weighted otherwise).
+def closed_exits(wallet, since_ts=0, max_rows=200000, newest_bound=0):
+    """(exits, reached_end) — the wallet's FULLY-CLOSED positions.
+    exits = {asset: {ts, exit_p, p, iv, cond, title, outcome}}, newest first.
+    `ts` is the close (sell/redeem) timestamp; exit_p is reconstructed from
+    realized P&L over shares bought (avgPrice + realizedPnl/totalBought — exact
+    for a full single-price exit, share-weighted otherwise).
 
-    PAGING GOTCHA: /closed-positions serves at most 50 rows per page no
-    matter what `limit` says — step by the RETURNED page size, never by the
-    requested one (assuming limit-sized pages silently truncated every
-    wallet's exit history to its most recent 50 closes, which put a 16x
-    hold-to-res ceiling back into a scalper's stats). Stops at since_ts,
-    newest_bound (for incremental refresh: rows older than what's already
-    cached), max_rows, or an empty page. Prefer cache.closed_exits — the
-    incremental cached layer over this raw fetcher.
+    FULL HISTORY by default (since_ts=0): pages the wallet's ENTIRE closed
+    history — no window, no meaningful cap. The exit overlay covers every bet
+    the stats could ever touch; max_rows=200000 is only a runaway guard. The
+    cost is a one-time deep pull, amortized by the incremental exits cache
+    (cache.closed_exits) which then only pages new closes.
 
-    The real bound is `since_ts` (callers pass the window they score — 180d for
-    the sharps overlay, 30d for the backtest), so the pull covers exactly the
-    scored window and stops. max_rows=20000 is only a safety ceiling for a
-    pathological wallet; the date bound stops well before it for anyone real.
-    The original since_ts=0 (unbounded, all-history) pull is what stalled the
-    daily pipeline — bounding by date fixes completeness AND runtime."""
+    `reached_end` is True when the pull hit the TRUE start of the wallet's
+    history (an empty or short <50 page), False when it stopped early on a
+    bound (newest_bound for incremental refresh, or the max_rows guard). The
+    cache uses it to tell a COMPLETE backfill from an interrupted one, so a
+    killed deep pull re-completes instead of falsely reporting done.
+
+    PAGING GOTCHA: /closed-positions serves at most 50 rows per page no matter
+    what `limit` says — step by the RETURNED page size, never the requested
+    one (that silently truncated every wallet's history to its most recent 50
+    closes, reviving a 16x hold-to-res ceiling in scalper stats)."""
     out = {}
     off = 0
+    reached_end = False
     while off < max_rows:
         page = get_json("/closed-positions",
                         {"user": wallet, "limit": 500, "offset": off,
                          "sortBy": "TIMESTAMP", "sortDirection": "DESC"})
         if not page:
+            reached_end = True           # ran out of history — complete
             break
         for r in page:
             ts = r.get("timestamp") or 0
@@ -148,11 +151,16 @@ def closed_exits(wallet, since_ts=0, max_rows=20000, newest_bound=0):
                 "ts": ts, "exit_p": exit_p, "p": max(0.001, min(0.999, avg)),
                 "iv": r.get("initialValue") or avg * tb, "cond": r.get("conditionId"),
                 "title": r.get("title") or "", "outcome": r.get("outcome") or ""})
-        oldest = page[-1].get("timestamp") or 0
-        if oldest < since_ts or oldest < newest_bound:
+        if len(page) < 50:               # short page = start of history reached
+            reached_end = True
             break
+        oldest = page[-1].get("timestamp") or 0
+        if since_ts and oldest < since_ts:
+            break                        # bounded stop — NOT the true end
+        if newest_bound and oldest < newest_bound:
+            break                        # incremental: reached already-cached rows
         off += len(page)                 # actual page size — the server caps at 50
-    return out
+    return out, reached_end
 
 
 WIN_WINDOW_DAYS = 90   # measure win rate over resolved bets in this window
