@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 37.91,
+ "stake": 36.35,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
  "cash": 869.64,
- "deployed": 78.14,
+ "deployed": 39.05,
  "reserve": 0.0,
- "realized": -67.67,
+ "realized": -106.76,
  "adjustments": 15.45,
  "ledger_drift": -0.0,
- "open_count": 2,
+ "open_count": 1,
  "fees_paid": 19.25,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,24 @@
   "ArbTrader": 168.28
  },
  "bets": [
+  {
+   "token": "57148617108437147048088458582793470023098200222992864689104372772428315487654",
+   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
+   "name": "fortuneking",
+   "outcome": "Dmitry Popko",
+   "title": "Bogota: Dmitry Popko vs Matheus Pucinelli de Almeida",
+   "their_price": 0.29,
+   "my_price": 0.29,
+   "slippage_pct": 0.0,
+   "shares": 134.78,
+   "cost": 39.09,
+   "fee": 0.83,
+   "opened": 1783447495,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -39.92,
+   "settled": 1783457569
+  },
   {
    "token": "77950498338322618559696422924858922712665775866650016702030983243638026366613",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -119,24 +137,6 @@
    "cost": 39.05,
    "fee": 0.64,
    "opened": 1783448660,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
-   "token": "57148617108437147048088458582793470023098200222992864689104372772428315487654",
-   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
-   "name": "fortuneking",
-   "outcome": "Dmitry Popko",
-   "title": "Bogota: Dmitry Popko vs Matheus Pucinelli de Almeida",
-   "their_price": 0.29,
-   "my_price": 0.29,
-   "slippage_pct": 0.0,
-   "shares": 134.78,
-   "cost": 39.09,
-   "fee": 0.83,
-   "opened": 1783447495,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -1193,5 +1193,5 @@
   }
  ],
  "missed_pnl": -385.45,
- "updated": 1783457378
+ "updated": 1783457569
 }
