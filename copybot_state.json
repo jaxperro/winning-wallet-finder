@@ -4946,7 +4946,7 @@
     }
   },
   "feed_sig": "20d6e9523ec74e044cb99a7fa4c7186f",
-  "feed_pushed_at": 1783433893.4964943,
+  "feed_pushed_at": 1783436576.5987284,
   "hwm": 1058.6790259216177,
   "missed": [
     {
@@ -5533,6 +5533,20 @@
       "pnl": null,
       "settled": null,
       "name": "ArbTrader"
+    },
+    {
+      "ts": 1783436698,
+      "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
+      "token": "62268045217838415143314425413382139516823618876739208102665837804570535617833",
+      "cond": "0x0b6b31007cd1f14589709d3fc312c5d8c862afb36b877ab16bf797c7eedcae21",
+      "title": "Hanyi Liu vs. Aoran Wang: Total Sets O/U 2.5",
+      "outcome": "Over 2.5",
+      "price": 0.49,
+      "stake": 39.11,
+      "reason": "bot offline (entered while down)",
+      "status": "open",
+      "pnl": null,
+      "settled": null
     }
   ],
   "adjustments": [
