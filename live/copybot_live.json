@@ -374,9 +374,9 @@
    "price": 0.5812,
    "stake": 39.11,
    "reason": "bot offline (entered while down)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "lost",
+   "pnl": -39.6,
+   "settled": 1783433833,
    "name": "imwalkinghere"
   },
   {
@@ -935,6 +935,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -293.8,
- "updated": 1783433650
+ "missed_pnl": -333.4,
+ "updated": 1783433833
 }
