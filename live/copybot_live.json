@@ -365,6 +365,21 @@
  ],
  "missed": [
   {
+   "ts": 1783339698,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "48302785187533870991276747532094514985511838194127838255653440518770460119591",
+   "cond": "0x109a3826bfc1894b102cbf6bb5b4b7da693adcfbe585be3aba1771b3e9157ec0",
+   "title": "Map 3 Total Rounds: Over/Under 19.5",
+   "outcome": "Over",
+   "price": 0.55,
+   "stake": 38.31,
+   "reason": "price moved 0.52\u21920.55",
+   "status": "lost",
+   "pnl": -38.83,
+   "settled": 1783439832,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1783438489,
    "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
    "token": "54810813997536894002774897515358864075964312188497819199115037116639865267402",
@@ -680,21 +695,6 @@
    "name": "fortuneking"
   },
   {
-   "ts": 1783339698,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "48302785187533870991276747532094514985511838194127838255653440518770460119591",
-   "cond": "0x109a3826bfc1894b102cbf6bb5b4b7da693adcfbe585be3aba1771b3e9157ec0",
-   "title": "Map 3 Total Rounds: Over/Under 19.5",
-   "outcome": "Over",
-   "price": 0.55,
-   "stake": 38.31,
-   "reason": "price moved 0.52\u21920.55",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
-  },
-  {
    "ts": 1783301842,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "102152517760279819101151573238490012903089489836238465651374507491554775479518",
@@ -980,6 +980,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -372.94,
- "updated": 1783438796
+ "missed_pnl": -411.77,
+ "updated": 1783439832
 }

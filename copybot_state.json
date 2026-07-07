@@ -5141,8 +5141,8 @@
       "settled": 1783375717
     }
   },
-  "feed_sig": "8dfd409e4f612f1b8df13eace3cadfe5",
-  "feed_pushed_at": 1783438732.2275581,
+  "feed_sig": "f03c9cdd37bf8bb74b9b7954e008084e",
+  "feed_pushed_at": 1783439715.2995095,
   "hwm": 1058.6790259216177,
   "missed": [
     {
@@ -5455,9 +5455,9 @@
       "price": 0.55,
       "stake": 38.31,
       "reason": "price moved 0.52\u21920.55",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "pnl": -38.83,
+      "settled": 1783439832,
       "name": "Kruto2027"
     },
     {
