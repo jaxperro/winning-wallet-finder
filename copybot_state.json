@@ -4945,8 +4945,8 @@
       "settled": 1783375717
     }
   },
-  "feed_sig": "0ced1b9e27f990e0c5d904fd05fb26ae",
-  "feed_pushed_at": 1783433772.9501357,
+  "feed_sig": "20d6e9523ec74e044cb99a7fa4c7186f",
+  "feed_pushed_at": 1783433893.4964943,
   "hwm": 1058.6790259216177,
   "missed": [
     {
@@ -5518,6 +5518,21 @@
       "pnl": -39.6,
       "settled": 1783433833,
       "name": "imwalkinghere"
+    },
+    {
+      "ts": 1783433957,
+      "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
+      "token": "65426565048171078517674305902314885251681795376989570401017546998228601028335",
+      "cond": "0x144b1c92183ac62bbadb60c772f9898377e6e1ad5139ef1b4beaeb09061957f3",
+      "title": "Liu vs. Wang: Match O/U 23.5",
+      "outcome": "Over",
+      "price": 0.49,
+      "stake": 39.11,
+      "reason": "bot offline (entered while down)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "ArbTrader"
     }
   ],
   "adjustments": [
