@@ -5332,7 +5332,7 @@
     }
   },
   "feed_sig": "67472f2805d1d3d554627bcada29b97c",
-  "feed_pushed_at": 1783457509.135285,
+  "feed_pushed_at": 1783458757.6535199,
   "hwm": 1058.6790259216177,
   "missed": [
     {
@@ -6050,9 +6050,9 @@
       "price": 0.76,
       "stake": 40.83,
       "reason": "price moved 0.65\u21920.76",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 12.6,
+      "settled": 1783458878,
       "name": "LSB1"
     },
     {

@@ -457,6 +457,21 @@
  ],
  "missed": [
   {
+   "ts": 1783450679,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "89080850591293378064922061831116973650990614628539626344540323215900492924747",
+   "cond": "0x022eb6dbb953bb9d9955bd8ddf8fc025043a6314da32f62a033f53eb7f81dde0",
+   "title": "Will K\u00cd win on 2026-07-07?",
+   "outcome": "Yes",
+   "price": 0.76,
+   "stake": 40.83,
+   "reason": "price moved 0.65\u21920.76",
+   "status": "won",
+   "pnl": 12.6,
+   "settled": 1783458878,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783453690,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "12222995599811061956886617468666919783611770954793336793641379149076289585547",
@@ -469,21 +484,6 @@
    "status": "won",
    "pnl": 18.01,
    "settled": 1783457317,
-   "name": "LSB1"
-  },
-  {
-   "ts": 1783450679,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "89080850591293378064922061831116973650990614628539626344540323215900492924747",
-   "cond": "0x022eb6dbb953bb9d9955bd8ddf8fc025043a6314da32f62a033f53eb7f81dde0",
-   "title": "Will K\u00cd win on 2026-07-07?",
-   "outcome": "Yes",
-   "price": 0.76,
-   "stake": 40.83,
-   "reason": "price moved 0.65\u21920.76",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
    "name": "LSB1"
   },
   {
@@ -1192,6 +1192,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -385.45,
- "updated": 1783457569
+ "missed_pnl": -372.85,
+ "updated": 1783458878
 }
