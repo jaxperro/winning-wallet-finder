@@ -244,34 +244,12 @@ def window_bets():
     return out
 
 
-def closed_positions(wallet, max_rows=4000):
-    """{asset: {ts, exit_p, p, iv, cond, title, outcome}} for the wallet's
-    FULLY-CLOSED positions with an in-window close time. `ts` is the close
-    (sell/redeem) timestamp — the same field the cache stores as sell-time.
-    Exit price is reconstructed from realized P&L over shares bought:
-        exit_p = avgPrice + realizedPnl / totalBought
-    (exact for a full single-price exit, share-weighted otherwise). Beyond
-    max_rows of history the wallet's older exits fall back to hold-to-
-    resolution — a data-horizon ceiling, counted honest by construction."""
-    out = {}
-    for off in range(0, max_rows, 500):
-        page = sm.get_json("/closed-positions",
-                           {"user": wallet, "limit": 500, "offset": off,
-                            "sortBy": "TIMESTAMP", "sortDirection": "DESC"}) or []
-        for r in page:
-            ts = r.get("timestamp") or 0
-            tb = r.get("totalBought") or 0
-            avg = r.get("avgPrice") or 0
-            if not (r.get("asset") and ts and tb and avg):
-                continue
-            exit_p = max(0.001, min(0.999, avg + (r.get("realizedPnl") or 0) / tb))
-            out.setdefault(r["asset"], {
-                "ts": ts, "exit_p": exit_p, "p": max(0.001, min(0.999, avg)),
-                "iv": r.get("initialValue") or avg * tb, "cond": r.get("conditionId"),
-                "title": r.get("title") or "", "outcome": r.get("outcome") or ""})
-        if len(page) < 500 or (page and (page[-1].get("timestamp") or 0) < START):
-            break
-    return out
+def closed_positions(wallet):
+    """The wallet's fully-closed positions with in-window close times —
+    shared implementation in smart_money.closed_exits (validate_timing uses
+    the same one, so the backtest and the sharps stats mirror exits
+    identically)."""
+    return sm.closed_exits(wallet, since_ts=START)
 
 
 def open_bets():

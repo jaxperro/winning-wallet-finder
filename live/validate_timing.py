@@ -142,18 +142,27 @@ def display_stats(w):
     payouts.ensure({b["cond"] for b in bets} | {r[0] for r in trows})
     # ---- ALL-TIME stats over EVERY trusted bet (any size): the dashboard's
     # "of every bet placed" columns. Trusted rows only, deduped one-per-market,
-    # truth-adjusted: refunds (wp=0.5) count as neither won nor lost. ----
+    # truth-adjusted: refunds (wp=0.5) count as neither won nor lost, and a bet
+    # the wallet SOLD pre-resolution counts at its exit price (status SOLD) —
+    # the same exit-mirroring the backtest and live bot use. Exits beyond the
+    # closed-positions data horizon (~4000 rows) fall back to hold-to-res. ----
+    exits = sm.closed_exits(w)
     tbest = {}
     for cond, asset, won, p, res_t, size in trows:
         if cond not in tbest or size > tbest[cond][3]:
-            tbest[cond] = (cond, asset, won, p, size)
+            tbest[cond] = (cond, asset, won, p, size, res_t)
     def tally(rows):
-        """(won, lost, refunds, pnl) over (cond, asset, won, p, size) rows."""
-        w_ = l_ = r_ = 0
+        """(won, lost, refunds, sold, pnl) over (cond, asset, won, p, size, res_t)."""
+        w_ = l_ = r_ = s_ = 0
         pnl = 0.0
-        for cond, asset, won, p, size in rows:
-            wp = _wp(cond, asset, won)
+        for cond, asset, won, p, size, res_t in rows:
             pc = max(0.001, min(0.999, p or 0))
+            cx = exits.get(asset)
+            if cx and res_t and cx["ts"] < res_t - 300:    # sold BEFORE resolution
+                pnl += size * (cx["exit_p"] - pc) / pc
+                s_ += 1
+                continue
+            wp = _wp(cond, asset, won)
             pnl += size * (wp - pc) / pc
             if wp > 0.5:
                 w_ += 1
@@ -161,26 +170,28 @@ def display_stats(w):
                 l_ += 1
             else:
                 r_ += 1
-        return w_, l_, r_, pnl
-    all_won, all_lost, all_ref, all_pnl = tally(tbest.values())
+        return w_, l_, r_, s_, pnl
+    all_won, all_lost, all_ref, all_sold, all_pnl = tally(tbest.values())
     thr = cache.conv_cutoff(b["size"] for b in bets)
     conv = [b for b in bets if b["size"] >= thr]
     recent = sorted(bets, key=lambda b: b["res_t"] or 0, reverse=True)[:500]
     cut30 = time.time() - 30 * 86400
     conv30 = [b for b in conv if (b["res_t"] or 0) >= cut30]
-    brow = lambda bs: [(b["cond"], b.get("asset"), b["won"], b["p"], b["size"]) for b in bs]
-    cw, cl, cr, cpnl = tally(brow(conv))
-    c3w, c3l, c3r, c3pnl = tally(brow(conv30))
+    brow = lambda bs: [(b["cond"], b.get("asset"), b["won"], b["p"], b["size"], b["res_t"])
+                       for b in bs]
+    cw, cl, cr, cs, cpnl = tally(brow(conv))
+    c3w, c3l, c3r, c3s, c3pnl = tally(brow(conv30))
     out = {
         "conv_win": round(100 * cw / (cw + cl), 1) if (cw + cl) else None,
-        "conv_won": cw, "conv_lost": cl, "conv_ref": cr,
+        "conv_won": cw, "conv_lost": cl, "conv_ref": cr, "conv_sold": cs,
         "conv_pnl": round(cpnl),
         "conv30_win": round(100 * c3w / (c3w + c3l), 1) if (c3w + c3l) else None,
-        "conv30_won": c3w, "conv30_lost": c3l, "conv30_ref": c3r,
+        "conv30_won": c3w, "conv30_lost": c3l, "conv30_ref": c3r, "conv30_sold": c3s,
         "conv30_pnl": round(c3pnl),
-        "realized_pnl": round(tally(brow(recent))[3]),
+        "realized_pnl": round(tally(brow(recent))[4]),
         "all_win": round(100 * all_won / (all_won + all_lost), 1) if (all_won + all_lost) else None,
-        "all_won": all_won, "all_lost": all_lost, "all_ref": all_ref, "all_pnl": round(all_pnl),
+        "all_won": all_won, "all_lost": all_lost, "all_ref": all_ref,
+        "all_sold": all_sold, "all_pnl": round(all_pnl),
         "pm_pnl": _pm_profit(w),
         "avg_bet": round(sum(b["size"] for b in conv) / len(conv)) if conv else 0,
         "copy_pnl": 0, "held_pnl": 0, "held_won": 0, "held_lost": 0, "sold": 0,
