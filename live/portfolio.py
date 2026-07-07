@@ -285,7 +285,7 @@ def main():
     reserve = 0.0
     held = []        # (free_t, cost, payoff)  cost = stake + entry fee; payoff paid at free_t
     perW = {w["wallet"]: {"name": w["name"], "wallet": w["wallet"], "bets": 0,
-                          "won": 0, "lost": 0, "class": w.get("class", "volume"),
+                          "won": 0, "lost": 0, "ref": 0, "class": w.get("class", "volume"),
                           "invested": 0.0, "realized": 0.0} for w in WALLETS}
     resolved, current, missed = [], [], []
 
@@ -311,7 +311,8 @@ def main():
                 cash += payoff; realized += payoff - cost; perW[rec["wallet"]]["realized"] += payoff - cost
                 wp = rec.get("wp")
                 won = rec["won"] if wp is None else wp > 0.5
-                perW[rec["wallet"]]["won" if won else "lost"] += 1
+                # refunds are scratches, not losses — count them apart
+                perW[rec["wallet"]]["won" if won else "ref" if wp == 0.5 else "lost"] += 1
                 rec["won"] = won                      # truth-adjusted for the feed
                 if wp == 0.5:
                     rec["refund"] = True
@@ -384,6 +385,7 @@ def main():
         m["title"] = market_meta(m["cond"])["title"]
         m["pnl"] = hypo_pnl(m)
     wins = sum(1 for r in resolved if r.get("won"))
+    refunds = sum(1 for r in resolved if r.get("refund"))
     # per-wallet conviction threshold (cache p80) so the dashboard can filter LIVE open
     # positions the same way; 1e12 = "no sized bets" (nothing qualifies)
     conv_thr = {}
@@ -407,10 +409,12 @@ def main():
         "reserve": round(reserve, 2),                    # banked profit, never bet
         "realized": round(realized, 2), "pnl": round(equity - BANK, 2),
         "unreal": round(invested - open_cost, 2),
-        "resolved_count": len(resolved), "wins": wins, "losses": len(resolved) - wins,
+        "resolved_count": len(resolved), "wins": wins,
+        "losses": len(resolved) - wins - refunds, "refunds": refunds,
         "open_count": len(current), "missed_count": len(missed),
         "wallets": [{"name": v["name"], "wallet": v["wallet"], "bets": v["bets"],
-                     "won": v["won"], "lost": v["lost"], "class": v.get("class", "volume"),
+                     "won": v["won"], "lost": v["lost"], "ref": v.get("ref", 0),
+                     "class": v.get("class", "volume"),
                      "invested": round(v["invested"], 2), "realized": round(v["realized"], 2),
                      "conv_thr": conv_thr.get(v["wallet"], 1e12)}
                     for v in perW.values()],
@@ -431,7 +435,7 @@ def main():
     save_slug_cache()
     print(f"portfolio[{DAYS}d rolling]: equity ${equity:,.0f} ({(equity-BANK)/BANK*100:+.0f}%) | banked ${reserve:,.0f} "
           f"| realized ${realized:+,.0f} | fees ${fees_paid:,.0f} | next stake ${cur_stake():,.0f} "
-          f"| {len(resolved)} resolved ({wins}W/{len(resolved)-wins}L) | {len(current)} open "
+          f"| {len(resolved)} resolved ({wins}W/{len(resolved)-wins-refunds}L/{refunds}R) | {len(current)} open "
           f"| {len(missed)} missed ({capped} event-capped) | -> {os.path.basename(OUT)}", flush=True)
 
 
