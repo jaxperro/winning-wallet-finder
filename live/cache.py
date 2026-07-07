@@ -183,6 +183,52 @@ def get_bets(wallet):
     return [_bet_row(*row) for row in rows]
 
 
+_con.execute("""CREATE TABLE IF NOT EXISTS exits(
+    wallet TEXT, asset TEXT, ts BIGINT, exit_p DOUBLE, p DOUBLE,
+    iv DOUBLE, cond TEXT, PRIMARY KEY (wallet, asset))""")
+for _col in ("title", "outcome"):
+    try:
+        _con.execute(f"ALTER TABLE exits ADD COLUMN {_col} TEXT")
+    except Exception:
+        pass  # already there
+_con.execute("CREATE TABLE IF NOT EXISTS pulled_exits(wallet TEXT PRIMARY KEY, newest_ts BIGINT, pulled_at BIGINT)")
+
+
+def closed_exits(wallet, max_age_s=6 * 3600):
+    """{asset: {ts, exit_p, p, iv, cond}} of the wallet's fully-closed
+    positions — INCREMENTAL: close events are immutable, so each refresh only
+    pages the data-api down to the newest cached close (the first backfill is
+    deep; after that it's a page or two). Shared exit model for the backtest
+    (portfolio.py) and the sharps stats (validate_timing.py).
+    NB the endpoint serves 50-row pages regardless of `limit` — see
+    smart_money.closed_exits for the paging gotcha this caused."""
+    import smart_money as _sm            # local import: smart_money has no local deps
+    now = int(time.time())
+    with _lock:
+        r = _con.execute("SELECT newest_ts, pulled_at FROM pulled_exits WHERE wallet=?",
+                         [wallet]).fetchone()
+    newest, fresh = (r[0], now - r[1] < max_age_s) if r else (0, False)
+    if not fresh:
+        new = _sm.closed_exits(wallet, newest_bound=newest)
+        with _lock:
+            if new:
+                _con.executemany(
+                    "INSERT OR REPLACE INTO exits VALUES (?,?,?,?,?,?,?,?,?)",
+                    [(wallet, a, c["ts"], c["exit_p"], c["p"], c["iv"], c["cond"],
+                      c.get("title") or "", c.get("outcome") or "")
+                     for a, c in new.items()])
+                newest = max(newest, max(c["ts"] for c in new.values()))
+            _con.execute("INSERT OR REPLACE INTO pulled_exits VALUES (?,?,?)",
+                         [wallet, newest, now])
+    with _lock:
+        rows = _con.execute(
+            "SELECT asset, ts, exit_p, p, iv, cond, title, outcome FROM exits WHERE wallet=?",
+            [wallet]).fetchall()
+    return {a: {"ts": ts, "exit_p": xp, "p": p, "iv": iv, "cond": cond,
+                "title": t or "", "outcome": o or ""}
+            for a, ts, xp, p, iv, cond, t, o in rows}
+
+
 def invalidate(wallets):
     """Force a re-pull of these wallets on next get_bets (for daily watchlist
     forward-refresh)."""

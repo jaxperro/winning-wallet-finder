@@ -146,7 +146,7 @@ def display_stats(w):
     # the wallet SOLD pre-resolution counts at its exit price (status SOLD) —
     # the same exit-mirroring the backtest and live bot use. Exits beyond the
     # closed-positions data horizon (~4000 rows) fall back to hold-to-res. ----
-    exits = sm.closed_exits(w)
+    exits = cache.closed_exits(w)
     tbest = {}
     for cond, asset, won, p, res_t, size in trows:
         if cond not in tbest or size > tbest[cond][3]:

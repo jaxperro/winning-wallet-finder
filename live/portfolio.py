@@ -234,7 +234,7 @@ def window_bets():
                         "their": cx["iv"], "entry_t": et, "p": cx["p"],
                         "won": None, "res_t": 0,
                         "exit_t": cx["ts"], "exit_p": cx["exit_p"],
-                        "title": cx["title"]})
+                        "title": cx.get("title") or ""})
     # chain-truth payouts for the replayed markets: refunds pay 0.5/share, and
     # a cache `won` mark can be wrong on operator-resolved markets — the
     # replay must settle at what a redeem actually pays (see payouts.py)
@@ -245,11 +245,10 @@ def window_bets():
 
 
 def closed_positions(wallet):
-    """The wallet's fully-closed positions with in-window close times —
-    shared implementation in smart_money.closed_exits (validate_timing uses
-    the same one, so the backtest and the sharps stats mirror exits
-    identically)."""
-    return sm.closed_exits(wallet, since_ts=START)
+    """The wallet's fully-closed positions — cache.closed_exits, the
+    incremental cached layer (validate_timing uses the same one, so the
+    backtest and the sharps stats mirror exits identically)."""
+    return cache.closed_exits(wallet)
 
 
 def open_bets():

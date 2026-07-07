@@ -107,21 +107,29 @@ def leaderboard_candidates(pool):
     return ranked[:pool]
 
 
-def closed_exits(wallet, since_ts=0, max_rows=4000):
+def closed_exits(wallet, since_ts=0, max_rows=25000, newest_bound=0):
     """{asset: {ts, exit_p, p, iv, cond, title, outcome}} for the wallet's
     FULLY-CLOSED positions, newest first. `ts` is the close (sell/redeem)
     timestamp; the exit price is reconstructed from realized P&L over shares
     bought (exit_p = avgPrice + realizedPnl/totalBought — exact for a full
-    single-price exit, share-weighted otherwise). Shared by the backtest
-    (portfolio.py) and the sharps stats (validate_timing.py) so both books
-    mirror the signal's exits identically. Beyond max_rows (or before
-    since_ts) history falls back to hold-to-resolution — a data-horizon
-    ceiling, honest by construction."""
+    single-price exit, share-weighted otherwise).
+
+    PAGING GOTCHA: /closed-positions serves at most 50 rows per page no
+    matter what `limit` says — step by the RETURNED page size, never by the
+    requested one (assuming limit-sized pages silently truncated every
+    wallet's exit history to its most recent 50 closes, which put a 16x
+    hold-to-res ceiling back into a scalper's stats). Stops at since_ts,
+    newest_bound (for incremental refresh: rows older than what's already
+    cached), max_rows, or an empty page. Prefer cache.closed_exits — the
+    incremental cached layer over this raw fetcher."""
     out = {}
-    for off in range(0, max_rows, 500):
+    off = 0
+    while off < max_rows:
         page = get_json("/closed-positions",
                         {"user": wallet, "limit": 500, "offset": off,
-                         "sortBy": "TIMESTAMP", "sortDirection": "DESC"}) or []
+                         "sortBy": "TIMESTAMP", "sortDirection": "DESC"})
+        if not page:
+            break
         for r in page:
             ts = r.get("timestamp") or 0
             tb = r.get("totalBought") or 0
@@ -133,8 +141,10 @@ def closed_exits(wallet, since_ts=0, max_rows=4000):
                 "ts": ts, "exit_p": exit_p, "p": max(0.001, min(0.999, avg)),
                 "iv": r.get("initialValue") or avg * tb, "cond": r.get("conditionId"),
                 "title": r.get("title") or "", "outcome": r.get("outcome") or ""})
-        if len(page) < 500 or (page and (page[-1].get("timestamp") or 0) < since_ts):
+        oldest = page[-1].get("timestamp") or 0
+        if oldest < since_ts or oldest < newest_bound:
             break
+        off += len(page)                 # actual page size — the server caps at 50
     return out
 
 
