@@ -1,0 +1,94 @@
+{
+  "mode": "live",
+  "_comment": "Live-test config, SECRET-FREE and committed. Two uses: (1) cp -> config.live.json, fill live.private_key/funder_address, run on a geo-TRADABLE Mac; (2) the Fly live worker reads THIS file directly and gets the key from LIVE_PRIVATE_KEY/LIVE_FUNDER_ADDRESS env vars (copybot 1.2). $5/trade test caps \u2014 see LIVE_ROLLOUT.md before raising anything.",
+  "bankroll_usd": 250.0,
+  "bankroll_pct": 0.02,
+  "price_guard_pct": 0.05,
+  "taker_fee_rate": 0.03,
+  "discord_webhook": "https://discord.com/api/webhooks/1515187084409704660/VbKWKIIo2ks1sSs2r1cr9M3OSIj_6oKDOBRp7Z5DneQCyk8AnPiyxVKelxensLP-aHaH",
+  "follow": {
+    "buy_only": true,
+    "min_their_usd": 25.0,
+    "per_wallet_min_usd": {
+      "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 123.27,
+      "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543": 727.08,
+      "0x86c878cde72660ec52f5e6f0f0438b76de8fc867": 990.45,
+      "0x41558102a796ba971c7567cad41c307e59f8fa41": 231.0,
+      "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 115.27
+    },
+    "min_entry": 0.0,
+    "max_entry": 0.95,
+    "class_pct": {
+      "volume": 0.02,
+      "whale": 0.02
+    }
+  },
+  "risk": {
+    "max_trade_usd": 5.0,
+    "max_position_usd": 5.0,
+    "daily_spend_cap_usd": 25.0,
+    "max_total_exposure_usd": 30.0,
+    "max_open_positions": 6,
+    "max_per_event": 0,
+    "min_price": 0.05,
+    "max_price": 0.95,
+    "min_order_usd": 1.0
+  },
+  "live": {
+    "private_key": "",
+    "funder_address": "",
+    "signature_type": 1,
+    "order_type": "FAK",
+    "auto_redeem": true,
+    "rpc_url": ""
+  },
+  "alchemy_key": "yl8QpF2qEI_mQlhOdWgOi",
+  "stake_cap_usd": 250.0,
+  "wallets": [
+    {
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "name": "Kruto2027",
+      "class": "volume"
+    },
+    {
+      "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
+      "name": "fortuneking",
+      "class": "volume"
+    },
+    {
+      "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+      "name": "LSB1",
+      "class": "volume"
+    },
+    {
+      "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
+      "name": "imwalkinghere",
+      "class": "volume"
+    },
+    {
+      "wallet": "0xfc81760d44a21acc9fd4b749a5bf9a9b2eeae072",
+      "name": "iohihoo",
+      "class": "volume"
+    },
+    {
+      "wallet": "0xf5fe759cece500f58a431ef8dacea321f6e3e23d",
+      "name": "Stavenson",
+      "class": "volume",
+      "floor": 4759.62
+    },
+    {
+      "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
+      "name": "0x4bFb-whale",
+      "class": "volume",
+      "floor": 1090.46
+    },
+    {
+      "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
+      "name": "ArbTrader",
+      "class": "volume",
+      "floor": 168.28
+    }
+  ],
+  "feed_path": "live/copybot_live_real.json",
+  "fill_log": "copybot_fills.live.jsonl"
+}
