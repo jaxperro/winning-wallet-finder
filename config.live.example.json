@@ -42,7 +42,6 @@
     "auto_redeem": true,
     "rpc_url": ""
   },
-  "alchemy_key": "yl8QpF2qEI_mQlhOdWgOi",
   "stake_cap_usd": 250.0,
   "wallets": [
     {
