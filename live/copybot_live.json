@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 40.54,
+ "stake": 37.91,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
  "cash": 869.64,
- "deployed": 143.94,
+ "deployed": 78.14,
  "reserve": 0.0,
- "realized": -1.86,
+ "realized": -67.67,
  "adjustments": 15.45,
- "ledger_drift": 0.01,
- "open_count": 4,
+ "ledger_drift": -0.0,
+ "open_count": 2,
  "fees_paid": 19.25,
  "fee_rate": 0.03,
  "lag": {
@@ -51,24 +51,6 @@
  },
  "bets": [
   {
-   "token": "49147085303504460588851359260819951133822045605914588298536135658887765516543",
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "name": "LSB1",
-   "outcome": "Over",
-   "title": "Tre Fiori FC vs. Larne FC: O/U 1.5",
-   "their_price": 0.8982,
-   "my_price": 0.94,
-   "slippage_pct": 0.0466,
-   "shares": 43.13,
-   "cost": 40.55,
-   "fee": 0.07,
-   "opened": 1783454696,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
    "token": "77950498338322618559696422924858922712665775866650016702030983243638026366613",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "name": "LSB1",
@@ -81,12 +63,30 @@
    "cost": 40.86,
    "fee": 0.78,
    "opened": 1783449541,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -33.18,
+   "settled": 1783457377,
    "sold_shares": 43.35,
    "sold_proceeds": 8.46
+  },
+  {
+   "token": "49147085303504460588851359260819951133822045605914588298536135658887765516543",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "Over",
+   "title": "Tre Fiori FC vs. Larne FC: O/U 1.5",
+   "their_price": 0.8982,
+   "my_price": 0.94,
+   "slippage_pct": 0.0466,
+   "shares": 43.13,
+   "cost": 40.55,
+   "fee": 0.07,
+   "opened": 1783454696,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -40.62,
+   "settled": 1783457316
   },
   {
    "token": "53076986769773152709804789005865155540206872104155254823531414026789009556675",
@@ -466,9 +466,9 @@
    "price": 0.6894,
    "stake": 40.83,
    "reason": "bot offline (entered while down)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "won",
+   "pnl": 18.01,
+   "settled": 1783457317,
    "name": "LSB1"
   },
   {
@@ -1192,6 +1192,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -403.46,
- "updated": 1783454701
+ "missed_pnl": -385.45,
+ "updated": 1783457378
 }
