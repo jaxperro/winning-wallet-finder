@@ -421,10 +421,23 @@ def main():
         "current": [{"title": c.get("title", ""), "name": c["name"], "outcome": c.get("outcome", ""),
                      "stake": c.get("stake"), "val": round(c["val"], 2), "pnl": round(c["pnl"], 2),
                      "end": c.get("end")} for c in sorted(current, key=lambda c: c["entry_t"])],
+        # status mirrors the live bot's vocabulary: won / lost / refund (50/50
+        # scratch — pays $0.50/share, so "not a win" can still be P&L-positive
+        # below 50¢ entries). No "sold" here BY DESIGN: this replay models
+        # hold-to-resolution, so it never exits early — only the live bot,
+        # which mirrors real exits, can show SOLD.
         "resolved": [{"title": r.get("title", ""), "name": r["name"], "won": r["won"],
+                      "status": ("refund" if r.get("refund")
+                                 else "won" if r["won"] else "lost"),
                       "stake": r.get("stake"), "pnl": round(r["pnl"], 2), "date": r.get("res_t")}
                      for r in resolved[:60]],
-        "missed": [{"title": m.get("title", ""), "name": m["name"], "won": m.get("won"),
+        "missed": [{"title": m.get("title", ""), "name": m["name"],
+                    "won": (None if "won" not in m
+                            else (m["won"] if m.get("wp") is None else m["wp"] > 0.5)),
+                    "status": (None if "won" not in m
+                               else "refund" if m.get("wp") == 0.5
+                               else "won" if (m["won"] if m.get("wp") is None else m["wp"] > 0.5)
+                               else "lost"),
                     "stake": m.get("stake"), "capped": bool(m.get("capped")),
                     "pnl": round(m["pnl"], 2), "date": m.get("res_t")}
                    for m in missed[:60]],
