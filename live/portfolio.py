@@ -10,8 +10,14 @@ RECYCLES correctly (cash frees at the true resolution moment). Output -> portfol
 which the dashboard reads in one request.
 
 Model: a $1,000 account that mirrors each followed wallet's CONVICTION bets (top-20%
-stake), held to resolution (the cache has no sell events, which is the right model for
-the hold-to-resolution wallets we follow). Sizing is DYNAMIC — each bet stakes PCT of
+stake). Exits MIRROR the signal, like the live bot (2026-07-07): when the wallet
+fully closed a position pre-resolution, the replay sells there too — close time from
+/closed-positions, exit price reconstructed as avgPrice + realizedPnl/totalBought,
+exit taker fee + slippage haircut paid, status SOLD. Bets they held to resolution
+settle at the chain-truth payout (1/0/0.5 — refunds are scratches, not losses).
+Complete in-window round trips on still-unresolved markets are replayed as
+entry+exit (the old hold-to-resolution model missed them entirely). Sizing is
+DYNAMIC — each bet stakes PCT of
 current equity (Kelly-style compounding), halved in a >20% drawdown, capped at
 EVENT_CAP concurrent bets per real-world event — and entries pay the Polymarket taker
 fee plus a lag-slippage price haircut (FEE_RATE / SLIP / LAG_EST_S), so the book
@@ -189,22 +195,82 @@ def window_bets():
             thr = cache.conv_cutoff(pre if pre else
                                     [size for *_, size in best.values()])
         _WALLET_THR[w["wallet"]] = thr
+        # the wallet's fully-closed positions: close time + reconstructed exit
+        # price. The live bot MIRRORS exits, so the replay must too — a bet the
+        # signal sold pre-resolution exits the book right there (status SOLD),
+        # not at resolution (the old hold-to-resolution ceiling).
+        closed = closed_positions(w["wallet"])
         for cond, (asset, won, p, res_t, size) in best.items():
             if size < thr or p > MAX_ENTRY:
                 continue
             et = ent.get(cond)
             if not et or et < START:                       # only in-window entries
                 continue
+            b = {"wallet": w["wallet"], "name": w["name"], "cond": cond,
+                 "asset": asset, "cls": w.get("class", "volume"),
+                 "their": size, "entry_t": et, "p": p, "won": won,
+                 "res_t": res_t or 0}
+            cx = closed.get(asset)
+            if cx and res_t and cx["ts"] < res_t - 300:    # sold BEFORE resolution
+                b["exit_t"], b["exit_p"] = cx["ts"], cx["exit_p"]
+            out.append(b)
+        # complete round trips the cache can't see: entered AND fully exited
+        # in-window on a market that never resolved (or hasn't yet) — the live
+        # bot would have copied both legs, so the replay does too
+        for asset, cx in closed.items():
+            cond = cx["cond"]
+            if (cond in best or not cond or cx["ts"] < START
+                    or (cx["iv"] or 0) < thr or cx["p"] > MAX_ENTRY):
+                continue
+            et = ent.get(cond)
+            if not et or et < START:
+                continue
+            if payouts.truth(cond) is not None:
+                continue        # resolved on-chain: their close may be a redeem,
+                                # not a sell — the cache row will cover it
+            best[cond] = None   # one per market, same as everywhere
             out.append({"wallet": w["wallet"], "name": w["name"], "cond": cond,
                         "asset": asset, "cls": w.get("class", "volume"),
-                        "their": size, "entry_t": et, "p": p, "won": won,
-                        "res_t": res_t or 0})
+                        "their": cx["iv"], "entry_t": et, "p": cx["p"],
+                        "won": None, "res_t": 0,
+                        "exit_t": cx["ts"], "exit_p": cx["exit_p"],
+                        "title": cx["title"]})
     # chain-truth payouts for the replayed markets: refunds pay 0.5/share, and
     # a cache `won` mark can be wrong on operator-resolved markets — the
     # replay must settle at what a redeem actually pays (see payouts.py)
     payouts.ensure({b["cond"] for b in out})
     for b in out:
         b["wp"] = payouts.truth(b["cond"], b.get("asset"))
+    return out
+
+
+def closed_positions(wallet, max_rows=4000):
+    """{asset: {ts, exit_p, p, iv, cond, title, outcome}} for the wallet's
+    FULLY-CLOSED positions with an in-window close time. `ts` is the close
+    (sell/redeem) timestamp — the same field the cache stores as sell-time.
+    Exit price is reconstructed from realized P&L over shares bought:
+        exit_p = avgPrice + realizedPnl / totalBought
+    (exact for a full single-price exit, share-weighted otherwise). Beyond
+    max_rows of history the wallet's older exits fall back to hold-to-
+    resolution — a data-horizon ceiling, counted honest by construction."""
+    out = {}
+    for off in range(0, max_rows, 500):
+        page = sm.get_json("/closed-positions",
+                           {"user": wallet, "limit": 500, "offset": off,
+                            "sortBy": "TIMESTAMP", "sortDirection": "DESC"}) or []
+        for r in page:
+            ts = r.get("timestamp") or 0
+            tb = r.get("totalBought") or 0
+            avg = r.get("avgPrice") or 0
+            if not (r.get("asset") and ts and tb and avg):
+                continue
+            exit_p = max(0.001, min(0.999, avg + (r.get("realizedPnl") or 0) / tb))
+            out.setdefault(r["asset"], {
+                "ts": ts, "exit_p": exit_p, "p": max(0.001, min(0.999, avg)),
+                "iv": r.get("initialValue") or avg * tb, "cond": r.get("conditionId"),
+                "title": r.get("title") or "", "outcome": r.get("outcome") or ""})
+        if len(page) < 500 or (page and (page[-1].get("timestamp") or 0) < START):
+            break
     return out
 
 
@@ -285,7 +351,8 @@ def main():
     reserve = 0.0
     held = []        # (free_t, cost, payoff)  cost = stake + entry fee; payoff paid at free_t
     perW = {w["wallet"]: {"name": w["name"], "wallet": w["wallet"], "bets": 0,
-                          "won": 0, "lost": 0, "ref": 0, "class": w.get("class", "volume"),
+                          "won": 0, "lost": 0, "ref": 0, "sold": 0,
+                          "class": w.get("class", "volume"),
                           "invested": 0.0, "realized": 0.0} for w in WALLETS}
     resolved, current, missed = [], [], []
 
@@ -309,13 +376,18 @@ def main():
         for ft, cost, payoff, rec in held:
             if ft and ft <= upto and rec["kind"] == "res":
                 cash += payoff; realized += payoff - cost; perW[rec["wallet"]]["realized"] += payoff - cost
-                wp = rec.get("wp")
-                won = rec["won"] if wp is None else wp > 0.5
-                # refunds are scratches, not losses — count them apart
-                perW[rec["wallet"]]["won" if won else "ref" if wp == 0.5 else "lost"] += 1
-                rec["won"] = won                      # truth-adjusted for the feed
-                if wp == 0.5:
-                    rec["refund"] = True
+                if rec.get("sold"):
+                    # mirrored exit: neither won nor lost — its truth is the price
+                    perW[rec["wallet"]]["sold"] = perW[rec["wallet"]].get("sold", 0) + 1
+                    rec["won"] = None
+                else:
+                    wp = rec.get("wp")
+                    won = rec["won"] if wp is None else wp > 0.5
+                    # refunds are scratches, not losses — count them apart
+                    perW[rec["wallet"]]["won" if won else "ref" if wp == 0.5 else "lost"] += 1
+                    rec["won"] = won                  # truth-adjusted for the feed
+                    if wp == 0.5:
+                        rec["refund"] = True
                 rec["pnl"] = payoff - cost
                 resolved.append(rec)
             else:
@@ -339,12 +411,22 @@ def main():
             cash -= cost; fees_paid += fee; perW[b["wallet"]]["bets"] += 1
             shares = stake / p_eff                        # lag-adjusted entry price
             if b["kind"] == "res":
-                # chain-truth payout (1/0/0.5) when known, else the cache mark
-                wp = b.get("wp")
-                if wp is None:
-                    wp = 1.0 if b["won"] else 0.0
-                payoff = shares * wp                           # redeem is fee-free
-                held.append((b["res_t"] or now, cost, payoff, b))
+                if b.get("exit_t"):
+                    # the signal SOLD pre-resolution -> mirror the exit, like the
+                    # live bot: their exit price with the slippage haircut against
+                    # us, minus the taker fee (sells pay it; redeems don't)
+                    xp = max(0.001, b["exit_p"] * (1 - SLIP))
+                    fee_out = shares * FEE_RATE * xp * (1 - xp)
+                    fees_paid += fee_out
+                    b["sold"] = True
+                    held.append((b["exit_t"], cost, shares * xp - fee_out, b))
+                else:
+                    # held to resolution: chain-truth payout (1/0/0.5) when
+                    # known, else the cache mark; redeem is fee-free
+                    wp = b.get("wp")
+                    if wp is None:
+                        wp = 1.0 if b["won"] else 0.0
+                    held.append((b["res_t"] or now, cost, shares * wp, b))
             else:                                          # currently open -> mark to market, no free yet
                 held.append((None, cost, 0.0, b))
                 b["val"] = shares * b["cur"]
@@ -362,9 +444,11 @@ def main():
             current.append(rec)
 
     # enrich resolved + missed with titles, keep most-recent 60
-    resolved.sort(key=lambda r: r.get("res_t") or 0, reverse=True)
+    resolved.sort(key=lambda r: r.get("exit_t") or r.get("res_t") or 0, reverse=True)
     for r in resolved[:60]:
-        m = market_meta(r["cond"]); r["title"] = m["title"]
+        m = market_meta(r["cond"])
+        if m["title"]:                # round-trip recs already carry a title
+            r["title"] = m["title"]
     # hypothetical P&L had we been able to afford it — same fee + lag model as the
     # placed bets: resolved bets at their outcome, still-open bets marked to the
     # current price. Missed bets can be kind=="open" (no "won"/"res_t" keys) —
@@ -373,11 +457,15 @@ def main():
     def hypo_pnl(m):
         stake = m.get("stake") or STAKE_MIN
         p_eff, fee, cost = entry_model(m["p"], stake)
+        shares = stake / p_eff
+        if m.get("exit_t"):                     # would have mirrored their exit
+            xp = max(0.001, m["exit_p"] * (1 - SLIP))
+            return shares * xp - shares * FEE_RATE * xp * (1 - xp) - cost
         if "won" in m:
             wp = m.get("wp")
             if wp is None:
                 wp = 1.0 if m["won"] else 0.0
-            return (stake / p_eff) * wp - cost
+            return shares * wp - cost
         return stake * (m.get("cur", p_eff) / p_eff) - cost
 
     missed.sort(key=lambda m: m.get("res_t") or 0, reverse=True)
@@ -386,6 +474,7 @@ def main():
         m["pnl"] = hypo_pnl(m)
     wins = sum(1 for r in resolved if r.get("won"))
     refunds = sum(1 for r in resolved if r.get("refund"))
+    solds = sum(1 for r in resolved if r.get("sold"))
     # per-wallet conviction threshold (cache p80) so the dashboard can filter LIVE open
     # positions the same way; 1e12 = "no sized bets" (nothing qualifies)
     conv_thr = {}
@@ -410,11 +499,12 @@ def main():
         "realized": round(realized, 2), "pnl": round(equity - BANK, 2),
         "unreal": round(invested - open_cost, 2),
         "resolved_count": len(resolved), "wins": wins,
-        "losses": len(resolved) - wins - refunds, "refunds": refunds,
+        "losses": len(resolved) - wins - refunds - solds,
+        "refunds": refunds, "sold": solds,
         "open_count": len(current), "missed_count": len(missed),
         "wallets": [{"name": v["name"], "wallet": v["wallet"], "bets": v["bets"],
                      "won": v["won"], "lost": v["lost"], "ref": v.get("ref", 0),
-                     "class": v.get("class", "volume"),
+                     "sold": v.get("sold", 0), "class": v.get("class", "volume"),
                      "invested": round(v["invested"], 2), "realized": round(v["realized"], 2),
                      "conv_thr": conv_thr.get(v["wallet"], 1e12)}
                     for v in perW.values()],
@@ -423,23 +513,25 @@ def main():
                      "end": c.get("end")} for c in sorted(current, key=lambda c: c["entry_t"])],
         # status mirrors the live bot's vocabulary: won / lost / refund (50/50
         # scratch — pays $0.50/share, so "not a win" can still be P&L-positive
-        # below 50¢ entries). No "sold" here BY DESIGN: this replay models
-        # hold-to-resolution, so it never exits early — only the live bot,
-        # which mirrors real exits, can show SOLD.
+        # below 50¢ entries) / sold (the signal exited pre-resolution and the
+        # replay mirrored it, exit fee + slip paid — same as the live bot).
         "resolved": [{"title": r.get("title", ""), "name": r["name"], "won": r["won"],
-                      "status": ("refund" if r.get("refund")
+                      "status": ("sold" if r.get("sold")
+                                 else "refund" if r.get("refund")
                                  else "won" if r["won"] else "lost"),
-                      "stake": r.get("stake"), "pnl": round(r["pnl"], 2), "date": r.get("res_t")}
+                      "stake": r.get("stake"), "pnl": round(r["pnl"], 2),
+                      "date": r.get("exit_t") or r.get("res_t")}
                      for r in resolved[:60]],
         "missed": [{"title": m.get("title", ""), "name": m["name"],
-                    "won": (None if "won" not in m
+                    "won": (None if "won" not in m or m.get("exit_t")
                             else (m["won"] if m.get("wp") is None else m["wp"] > 0.5)),
-                    "status": (None if "won" not in m
+                    "status": ("sold" if m.get("exit_t")
+                               else None if "won" not in m
                                else "refund" if m.get("wp") == 0.5
                                else "won" if (m["won"] if m.get("wp") is None else m["wp"] > 0.5)
                                else "lost"),
                     "stake": m.get("stake"), "capped": bool(m.get("capped")),
-                    "pnl": round(m["pnl"], 2), "date": m.get("res_t")}
+                    "pnl": round(m["pnl"], 2), "date": m.get("exit_t") or m.get("res_t")}
                    for m in missed[:60]],
         "missed_pnl": round(sum(hypo_pnl(m) for m in missed), 2),
     }
@@ -448,7 +540,7 @@ def main():
     save_slug_cache()
     print(f"portfolio[{DAYS}d rolling]: equity ${equity:,.0f} ({(equity-BANK)/BANK*100:+.0f}%) | banked ${reserve:,.0f} "
           f"| realized ${realized:+,.0f} | fees ${fees_paid:,.0f} | next stake ${cur_stake():,.0f} "
-          f"| {len(resolved)} resolved ({wins}W/{len(resolved)-wins-refunds}L/{refunds}R) | {len(current)} open "
+          f"| {len(resolved)} resolved ({wins}W/{len(resolved)-wins-refunds-solds}L/{refunds}R/{solds}S) | {len(current)} open "
           f"| {len(missed)} missed ({capped} event-capped) | -> {os.path.basename(OUT)}", flush=True)
 
 
