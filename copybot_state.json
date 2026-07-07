@@ -4945,8 +4945,8 @@
       "settled": 1783375717
     }
   },
-  "feed_sig": "d32bd26ac8267527e1bb090af8042289",
-  "feed_pushed_at": 1783432309.081878,
+  "feed_sig": "a92076816b460caf53ae721262d08c55",
+  "feed_pushed_at": 1783433527.6770358,
   "hwm": 1058.6790259216177,
   "missed": [
     {
@@ -5497,6 +5497,21 @@
       "title": "Liu vs. Wang: Set 1 Games O/U 8.5",
       "outcome": "Under",
       "price": 0.49,
+      "stake": 39.11,
+      "reason": "bot offline (entered while down)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "ArbTrader"
+    },
+    {
+      "ts": 1783433648,
+      "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
+      "token": "12494054070661084087977001767488481054008497038706451329959807755051059711563",
+      "cond": "0x2e5be3b188dd1f9713fb1a1890b60f72bc17b8126339b437327ca4e86ce12c31",
+      "title": "Bitcoin Up or Down - July 7, 10:05AM-10:10AM ET",
+      "outcome": "Up",
+      "price": 0.5812,
       "stake": 39.11,
       "reason": "bot offline (entered while down)",
       "status": "open",
