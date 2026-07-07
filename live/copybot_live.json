@@ -374,9 +374,9 @@
    "price": 0.49,
    "stake": 39.11,
    "reason": "price moved 0.30\u21920.49",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "refund",
+   "pnl": 0.2,
+   "settled": 1783430384,
    "name": "0x4bFb-whale"
   },
   {
@@ -905,6 +905,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -294.0,
- "updated": 1783425474
+ "missed_pnl": -293.8,
+ "updated": 1783430384
 }
