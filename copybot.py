@@ -741,6 +741,53 @@ class Copybot:
                 self._drain_fills()                 # book the sell's cash + sold-leg
             self.engine.persist()
 
+    def reconcile_entries(self):
+        """Entries the signal made while we weren't listening — the mirror of
+        reconcile_exits. Every boot baselines history (no retro-copying), so a
+        trade during downtime vanishes: not copied, not even MISSED. The
+        backtest reads positions (state) while the bot reads trades (events),
+        so downtime opens showed up only in the backtest — that asymmetry is
+        how this hole was found (2026-07-07: 9 ArbTrader positions opened into
+        a dead listener during the Fly trial-expiry crash-loop). For each
+        followed wallet: any CURRENT position that (a) isn't seeded, held, in
+        bet history, or already recorded, and (b) clears the follow filter,
+        becomes a missed bet — reason 'bot offline'. Never copied: the entry
+        is stale by definition; record the truth and settle it hypothetically."""
+        with self.lock:
+            st = self.engine.state
+            bets = st.get("bets", {})
+            missed_toks = {m["token"] for m in st.get("missed", [])}
+            for w in self.cfg.get("watchlist", []):
+                ps = sm.get_json("/positions", {"user": w, "limit": 500,
+                                                "sizeThreshold": 0})
+                if ps is None:
+                    continue                      # API failure — retry next pass
+                seeded = set(st.get("seed_tokens", {}).get(w, []))
+                name = self.names.get(w.lower(), w[:10])
+                for p in ps:
+                    tok = p.get("asset")
+                    if (not tok or tok in seeded or tok in st["my_pos"]
+                            or tok in bets or tok in missed_toks):
+                        continue
+                    iv = p.get("initialValue") or 0
+                    if iv < self.engine.risk.get("min_order_usd", 5.0):
+                        continue                  # literal dust — not a signal
+                    trade = {"side": "BUY", "usdcSize": iv,
+                             "price": p.get("avgPrice", 0) or 0,
+                             "outcome": p.get("outcome"), "title": p.get("title")}
+                    ok, _ = self.filt.check(w, trade)
+                    if not ok:
+                        continue
+                    want = self.engine.stake_usd(w, iv)
+                    self.engine.record_miss(
+                        w, tok, p.get("conditionId"), p.get("title") or "",
+                        p.get("outcome") or "", trade["price"], want,
+                        "bot offline (entered while down)")
+                    missed_toks.add(tok)
+                    log(f"reconcile: {name} entered {(p.get('title') or '?')[:42]} "
+                        f"while we weren't listening — recorded as missed")
+            self.engine.persist()
+
     def settle_resolved(self):
         """Free capital like the dashboard: when an open position's market has
         resolved, settle it at the winner price (1/0), recycle the cash, and tally
@@ -1055,6 +1102,7 @@ def main():
             return
         bot.settle_resolved()
         bot.reconcile_exits()
+        bot.reconcile_entries()
         for w in cfg.get("watchlist", []):
             bot.on_wallet_activity(w)
         bot.summary(0)
@@ -1069,6 +1117,7 @@ def main():
     if args.poll:
         bot.baseline()
         bot.reconcile_exits()      # catch exits made while we were down
+        bot.reconcile_entries()    # ...and entries: record them as missed
         log(f"poll mode · every {args.poll}s · Ctrl-C to stop")
         bot.write_feed()                              # publish an initial "online" snapshot
         bot.publish_feed()
@@ -1078,6 +1127,7 @@ def main():
                 bot.settle_resolved()                 # recycle capital at resolution
                 if cycle % 5 == 0:
                     bot.reconcile_exits()
+                    bot.reconcile_entries()
                 for w in cfg.get("watchlist", []):
                     bot.on_wallet_activity(w)
                 cycle += 1
@@ -1094,6 +1144,7 @@ def main():
     port = int(os.environ.get("PORT", 8080))
     bot.baseline()
     bot.reconcile_exits()          # catch exits made while we were down
+    bot.reconcile_entries()        # ...and entries: record them as missed
 
     # webhook mode is event-driven, but the book must not depend on the next
     # push arriving: a heartbeat thread settles resolved positions, refreshes
@@ -1109,6 +1160,7 @@ def main():
                 bot.settle_resolved()
                 if cycle % 5 == 0:
                     bot.reconcile_exits()
+                    bot.reconcile_entries()
                     for w in cfg.get("watchlist", []):
                         bot.on_wallet_activity(w)
                 bot.summary(cycle)
