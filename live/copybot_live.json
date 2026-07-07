@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 39.09,
+ "stake": 39.05,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 938.04,
- "deployed": 39.11,
+ "cash": 898.12,
+ "deployed": 78.2,
  "reserve": 0.0,
- "realized": -38.3,
+ "realized": -39.13,
  "adjustments": 15.45,
- "ledger_drift": 0.0,
- "open_count": 1,
- "fees_paid": 16.71,
+ "ledger_drift": 0.01,
+ "open_count": 2,
+ "fees_paid": 17.54,
  "fee_rate": 0.03,
  "lag": {
-  "n": 22,
-  "avg_s": 61.8,
-  "avg_slip_pct": -0.0334
+  "n": 23,
+  "avg_s": 59.2,
+  "avg_slip_pct": -0.0319
  },
  "wallets": [
   "Kruto2027",
@@ -50,6 +50,24 @@
   "ArbTrader": 168.28
  },
  "bets": [
+  {
+   "token": "57148617108437147048088458582793470023098200222992864689104372772428315487654",
+   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
+   "name": "fortuneking",
+   "outcome": "Dmitry Popko",
+   "title": "Bogota: Dmitry Popko vs Matheus Pucinelli de Almeida",
+   "their_price": 0.29,
+   "my_price": 0.29,
+   "slippage_pct": 0.0,
+   "shares": 134.78,
+   "cost": 39.09,
+   "fee": 0.83,
+   "opened": 1783447495,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "53076986769773152709804789005865155540206872104155254823531414026789009556675",
    "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
@@ -1089,5 +1107,5 @@
   }
  ],
  "missed_pnl": -451.9,
- "updated": 1783446966
+ "updated": 1783447497
 }
