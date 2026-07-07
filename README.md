@@ -68,7 +68,7 @@ up, real money follows (see [`LIVE_TEST.md`](LIVE_TEST.md)).
 | **run the daily pipeline manually** | `cd live && bash daily.sh` (launchd runs it 08:00; ~40 min, mostly collect). Never run two at once — the cache is single-writer |
 | **refresh just the sharp list** | `cd live && python3 conviction_scan.py && python3 validate_timing.py` |
 | **daily Discord digest** | sent by `live/discord_daily.py` at the end of `daily.sh`; webhook = `daily_webhook` in gitignored `config.json` |
-| **go real-money** | read `LIVE_TEST.md`; fill `config.live.json`; `python3 preflight_live.py`; arm with `--live` + typed phrase |
+| **go real-money** | **execute [`LIVE_ROLLOUT.md`](LIVE_ROLLOUT.md)** — the phased plan (invariants → code prep → funding → supervised fills → full edge-case matrix → graduation gate); `LIVE_TEST.md` is the per-session runbook it wraps |
 
 Three moving parts talk to each other: this repo (research + bot + feeds), the
 `jaxperro` repo (static dashboard reading this repo's raw JSON feeds), and the
