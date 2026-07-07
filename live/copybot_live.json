@@ -383,6 +383,36 @@
  ],
  "missed": [
   {
+   "ts": 1783446423,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "70993003109292385626514490816677084830636463815658549054814390997710185619323",
+   "cond": "0x9e59c6756e078eb49b0f85639604b55600728ed7b212d246fdd945f25beb5f6f",
+   "title": "Exact Score: Argentina 0 - 3 Egypt?",
+   "outcome": "No",
+   "price": 0.999,
+   "stake": 39.09,
+   "reason": "price moved 0.95\u21921.00",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
+   "ts": 1783446423,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "30057235494663028464440032339791639684709921002994929853152673005147425899567",
+   "cond": "0xec63dd160834b47edfdada4eff56f79e0b67ea6ec6505892db43790c18545142",
+   "title": "Argentina vs. Egypt: Both Teams to Score in Second Half",
+   "outcome": "Yes",
+   "price": 0.998,
+   "stake": 39.09,
+   "reason": "price moved 0.78\u21921.00",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783446157,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "49283686456928993851464146670574883277266999919056843343822740024885909556550",
@@ -392,9 +422,9 @@
    "price": 0.1103,
    "stake": 39.09,
    "reason": "bot offline (entered while down)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "lost",
+   "pnl": -40.13,
+   "settled": 1783446422,
    "name": "imwalkinghere"
   },
   {
@@ -1043,6 +1073,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -411.77,
- "updated": 1783446159
+ "missed_pnl": -451.9,
+ "updated": 1783446423
 }
