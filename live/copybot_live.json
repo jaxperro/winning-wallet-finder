@@ -45,7 +45,9 @@
   "LSB1": 156.17,
   "imwalkinghere": 131.71,
   "iohihoo": 58.43,
-  "ArbTrader": 36.75
+  "Stavenson": 4759.62,
+  "0x4bFb-whale": 1090.46,
+  "ArbTrader": 168.28
  },
  "bets": [
   {
@@ -874,5 +876,5 @@
   }
  ],
  "missed_pnl": -294.2,
- "updated": 1783407424
+ "updated": 1783407502
 }
