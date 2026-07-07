@@ -5141,8 +5141,8 @@
       "settled": 1783375717
     }
   },
-  "feed_sig": "20d6e9523ec74e044cb99a7fa4c7186f",
-  "feed_pushed_at": 1783436576.5987284,
+  "feed_sig": "8dfd409e4f612f1b8df13eace3cadfe5",
+  "feed_pushed_at": 1783438732.2275581,
   "hwm": 1058.6790259216177,
   "missed": [
     {
@@ -5742,7 +5742,8 @@
       "reason": "bot offline (entered while down)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "ArbTrader"
     },
     {
       "ts": 1783438489,
@@ -5754,9 +5755,10 @@
       "price": 0.63,
       "stake": 39.11,
       "reason": "bot offline (entered while down)",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -39.54,
+      "settled": 1783438794,
+      "name": "fortuneking"
     }
   ],
   "adjustments": [

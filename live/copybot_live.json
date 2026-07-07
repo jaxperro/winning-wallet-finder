@@ -374,9 +374,9 @@
    "price": 0.63,
    "stake": 39.11,
    "reason": "bot offline (entered while down)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "lost",
+   "pnl": -39.54,
+   "settled": 1783438794,
    "name": "fortuneking"
   },
   {
@@ -980,6 +980,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -333.4,
- "updated": 1783438489
+ "missed_pnl": -372.94,
+ "updated": 1783438796
 }
