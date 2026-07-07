@@ -41,10 +41,10 @@
  },
  "floors": {
   "Kruto2027": 78.38,
-  "fortuneking": 2655.38,
+  "fortuneking": 2500.0,
   "LSB1": 789.64,
   "imwalkinghere": 131.71,
-  "iohihoo": 62.91
+  "iohihoo": 58.43
  },
  "bets": [
   {
@@ -783,5 +783,5 @@
   }
  ],
  "missed_pnl": -56.09,
- "updated": 1783385276
+ "updated": 1783386183
 }
