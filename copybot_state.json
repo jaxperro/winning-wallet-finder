@@ -4920,8 +4920,8 @@
       "settled": 1783375717
     }
   },
-  "feed_sig": "93e04aa5dc79dcb903470b572dbbe46d",
-  "feed_pushed_at": 1783404859.5812535,
+  "feed_sig": "003d13b83e74e9da37eb7d8d99cd91b9",
+  "feed_pushed_at": 1783411387.1275096,
   "hwm": 1058.6790259216177,
   "missed": [
     {
@@ -5433,6 +5433,20 @@
       "pnl": -39.77,
       "settled": 1783404920,
       "name": "imwalkinghere"
+    },
+    {
+      "ts": 1783411448,
+      "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
+      "token": "103508049814796528669605427750042989337502264894310640099114139483262219366274",
+      "cond": "0xd2f63f74467e0cb0f3d7b5233256a5e7d065ce102a84f7a7d82d9e1f17786359",
+      "title": "ITF Roda De Bara: Oskar Brostrom Poulsen vs Carl Emil Overbeck",
+      "outcome": "Oskar Brostrom Poulsen",
+      "price": 0.49,
+      "stake": 39.11,
+      "reason": "bot offline (entered while down)",
+      "status": "open",
+      "pnl": null,
+      "settled": null
     }
   ],
   "adjustments": [
