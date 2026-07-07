@@ -35,16 +35,17 @@
   "LSB1": "volume",
   "imwalkinghere": "volume",
   "iohihoo": "volume",
-  "Stavenson": "whale",
-  "0x4bFb-whale": "whale",
-  "ArbTrader": "whale"
+  "Stavenson": "volume",
+  "0x4bFb-whale": "volume",
+  "ArbTrader": "volume"
  },
  "floors": {
   "Kruto2027": 78.38,
   "fortuneking": 1497.53,
   "LSB1": 156.17,
   "imwalkinghere": 131.71,
-  "iohihoo": 58.43
+  "iohihoo": 58.43,
+  "ArbTrader": 36.75
  },
  "bets": [
   {
@@ -873,5 +874,5 @@
   }
  ],
  "missed_pnl": -294.2,
- "updated": 1783404920
+ "updated": 1783407424
 }
