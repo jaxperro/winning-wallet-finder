@@ -192,24 +192,43 @@ for _col in ("title", "outcome"):
     except Exception:
         pass  # already there
 _con.execute("CREATE TABLE IF NOT EXISTS pulled_exits(wallet TEXT PRIMARY KEY, newest_ts BIGINT, pulled_at BIGINT)")
+try:
+    _con.execute("ALTER TABLE pulled_exits ADD COLUMN oldest_ts BIGINT")   # backfill-completeness marker
+except Exception:
+    pass
 
 
-def closed_exits(wallet, max_age_s=6 * 3600):
+def closed_exits(wallet, max_age_s=6 * 3600, window_days=WINDOW_DAYS):
     """{asset: {ts, exit_p, p, iv, cond}} of the wallet's fully-closed
-    positions — INCREMENTAL: close events are immutable, so each refresh only
-    pages the data-api down to the newest cached close (the first backfill is
-    deep; after that it's a page or two). Shared exit model for the backtest
+    positions over the last `window_days` (default 180 — the same window the
+    bets cache scores, so the exit overlay COMPLETELY covers every bet the
+    sharps/backtest stats touch; no arbitrary row cap that could truncate a
+    hyperactive wallet's window). Shared exit model for the backtest
     (portfolio.py) and the sharps stats (validate_timing.py).
-    NB the endpoint serves 50-row pages regardless of `limit` — see
-    smart_money.closed_exits for the paging gotcha this caused."""
+
+    Correct + incremental: `oldest_ts` records how far back the cache is known
+    complete. If the window isn't fully covered yet (first run, or a backfill
+    that got interrupted) it re-pulls the whole window down to the target; once
+    complete, later refreshes only page the NEW closes since `newest_ts` (a
+    page or two). Close events are immutable, so nothing already cached is
+    re-fetched. NB the endpoint serves 50-row pages regardless of `limit` —
+    see smart_money.closed_exits for the paging gotcha this caused."""
     import smart_money as _sm            # local import: smart_money has no local deps
     now = int(time.time())
+    target_oldest = now - window_days * 86400
     with _lock:
-        r = _con.execute("SELECT newest_ts, pulled_at FROM pulled_exits WHERE wallet=?",
-                         [wallet]).fetchone()
-    newest, fresh = (r[0], now - r[1] < max_age_s) if r else (0, False)
-    if not fresh:
-        new = _sm.closed_exits(wallet, newest_bound=newest)
+        r = _con.execute("SELECT newest_ts, pulled_at, oldest_ts FROM pulled_exits "
+                         "WHERE wallet=?", [wallet]).fetchone()
+    newest, oldest = (r[0], r[2]) if r else (0, None)
+    fresh = r and (now - r[1] < max_age_s)
+    complete = oldest is not None and oldest <= target_oldest
+    if not fresh or not complete:
+        if complete:
+            new = _sm.closed_exits(wallet, newest_bound=newest)   # only new closes
+            new_oldest = oldest
+        else:
+            new = _sm.closed_exits(wallet, since_ts=target_oldest)  # full window (re)pull
+            new_oldest = target_oldest
         with _lock:
             if new:
                 _con.executemany(
@@ -218,8 +237,8 @@ def closed_exits(wallet, max_age_s=6 * 3600):
                       c.get("title") or "", c.get("outcome") or "")
                      for a, c in new.items()])
                 newest = max(newest, max(c["ts"] for c in new.values()))
-            _con.execute("INSERT OR REPLACE INTO pulled_exits VALUES (?,?,?)",
-                         [wallet, newest, now])
+            _con.execute("INSERT OR REPLACE INTO pulled_exits(wallet,newest_ts,pulled_at,oldest_ts) "
+                         "VALUES (?,?,?,?)", [wallet, newest, now, new_oldest])
     with _lock:
         rows = _con.execute(
             "SELECT asset, ts, exit_p, p, iv, cond, title, outcome FROM exits WHERE wallet=?",

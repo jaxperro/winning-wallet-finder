@@ -107,7 +107,7 @@ def leaderboard_candidates(pool):
     return ranked[:pool]
 
 
-def closed_exits(wallet, since_ts=0, max_rows=4000, newest_bound=0):
+def closed_exits(wallet, since_ts=0, max_rows=20000, newest_bound=0):
     """{asset: {ts, exit_p, p, iv, cond, title, outcome}} for the wallet's
     FULLY-CLOSED positions, newest first. `ts` is the close (sell/redeem)
     timestamp; the exit price is reconstructed from realized P&L over shares
@@ -123,11 +123,12 @@ def closed_exits(wallet, since_ts=0, max_rows=4000, newest_bound=0):
     cached), max_rows, or an empty page. Prefer cache.closed_exits — the
     incremental cached layer over this raw fetcher.
 
-    max_rows default 4000 (80 pages) bounds the FIRST backfill: full-history
-    depth (25k) × 90 sharp wallets stalled the daily pipeline for hours. 4000
-    covers the 30d backtest and most of the 180d display window; the cache is
-    incremental so the horizon extends naturally on later runs, and an extreme
-    scalper's deepest history just keeps a hold-to-res ceiling (honest)."""
+    The real bound is `since_ts` (callers pass the window they score — 180d for
+    the sharps overlay, 30d for the backtest), so the pull covers exactly the
+    scored window and stops. max_rows=20000 is only a safety ceiling for a
+    pathological wallet; the date bound stops well before it for anyone real.
+    The original since_ts=0 (unbounded, all-history) pull is what stalled the
+    daily pipeline — bounding by date fixes completeness AND runtime."""
     out = {}
     off = 0
     while off < max_rows:
