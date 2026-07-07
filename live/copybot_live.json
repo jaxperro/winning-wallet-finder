@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 40.55,
+ "stake": 40.54,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 910.26,
- "deployed": 103.4,
+ "cash": 869.64,
+ "deployed": 143.94,
  "reserve": 0.0,
- "realized": -1.79,
+ "realized": -1.86,
  "adjustments": 15.45,
- "ledger_drift": 0.0,
- "open_count": 3,
- "fees_paid": 19.18,
+ "ledger_drift": 0.01,
+ "open_count": 4,
+ "fees_paid": 19.25,
  "fee_rate": 0.03,
  "lag": {
-  "n": 25,
-  "avg_s": 54.7,
-  "avg_slip_pct": -0.0472
+  "n": 26,
+  "avg_s": 52.8,
+  "avg_slip_pct": -0.0436
  },
  "wallets": [
   "Kruto2027",
@@ -50,6 +50,24 @@
   "ArbTrader": 168.28
  },
  "bets": [
+  {
+   "token": "49147085303504460588851359260819951133822045605914588298536135658887765516543",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "Over",
+   "title": "Tre Fiori FC vs. Larne FC: O/U 1.5",
+   "their_price": 0.8982,
+   "my_price": 0.94,
+   "slippage_pct": 0.0466,
+   "shares": 43.13,
+   "cost": 40.55,
+   "fee": 0.07,
+   "opened": 1783454696,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "77950498338322618559696422924858922712665775866650016702030983243638026366613",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -1175,5 +1193,5 @@
   }
  ],
  "missed_pnl": -403.46,
- "updated": 1783453697
+ "updated": 1783454701
 }
