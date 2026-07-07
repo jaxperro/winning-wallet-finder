@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 40.86,
+ "stake": 40.83,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 943.45,
- "deployed": 78.14,
+ "cash": 901.8,
+ "deployed": 119.0,
  "reserve": 0.0,
- "realized": 6.14,
+ "realized": 5.35,
  "adjustments": 15.45,
- "ledger_drift": 0.01,
- "open_count": 2,
- "fees_paid": 18.19,
+ "ledger_drift": 0.0,
+ "open_count": 3,
+ "fees_paid": 18.97,
  "fee_rate": 0.03,
  "lag": {
-  "n": 24,
-  "avg_s": 56.9,
-  "avg_slip_pct": -0.0306
+  "n": 25,
+  "avg_s": 54.7,
+  "avg_slip_pct": -0.0472
  },
  "wallets": [
   "Kruto2027",
@@ -50,6 +50,24 @@
   "ArbTrader": 168.28
  },
  "bets": [
+  {
+   "token": "77950498338322618559696422924858922712665775866650016702030983243638026366613",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "Yes",
+   "title": "Will FK Borac Banja Luka win on 2026-07-07?",
+   "their_price": 0.648,
+   "my_price": 0.36,
+   "slippage_pct": -0.4444,
+   "shares": 113.51,
+   "cost": 40.86,
+   "fee": 0.78,
+   "opened": 1783449541,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "53076986769773152709804789005865155540206872104155254823531414026789009556675",
    "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
@@ -1125,5 +1143,5 @@
   }
  ],
  "missed_pnl": -403.46,
- "updated": 1783449423
+ "updated": 1783449542
 }
