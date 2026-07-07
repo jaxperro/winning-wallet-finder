@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 39.03,
+ "stake": 40.86,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 858.42,
- "deployed": 117.25,
+ "cash": 943.45,
+ "deployed": 78.14,
  "reserve": 0.0,
- "realized": -39.78,
+ "realized": 6.14,
  "adjustments": 15.45,
- "ledger_drift": 0.0,
- "open_count": 3,
+ "ledger_drift": 0.01,
+ "open_count": 2,
  "fees_paid": 18.19,
  "fee_rate": 0.03,
  "lag": {
@@ -51,6 +51,24 @@
  },
  "bets": [
   {
+   "token": "53076986769773152709804789005865155540206872104155254823531414026789009556675",
+   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
+   "name": "fortuneking",
+   "outcome": "Under",
+   "title": "Argentina vs. Egypt: Egypt O/U 2.5 Corners",
+   "their_price": 0.45,
+   "my_price": 0.46,
+   "slippage_pct": 0.0223,
+   "shares": 85.02,
+   "cost": 39.11,
+   "fee": 0.63,
+   "opened": 1783440578,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 45.28,
+   "settled": 1783449423
+  },
+  {
    "token": "21663614423138978208039475686851008988023846387002129187677074338673274484352",
    "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
    "name": "ArbTrader",
@@ -81,24 +99,6 @@
    "cost": 39.09,
    "fee": 0.83,
    "opened": 1783447495,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
-   "token": "53076986769773152709804789005865155540206872104155254823531414026789009556675",
-   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
-   "name": "fortuneking",
-   "outcome": "Under",
-   "title": "Argentina vs. Egypt: Egypt O/U 2.5 Corners",
-   "their_price": 0.45,
-   "my_price": 0.46,
-   "slippage_pct": 0.0223,
-   "shares": 85.02,
-   "cost": 39.11,
-   "fee": 0.63,
-   "opened": 1783440578,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -1125,5 +1125,5 @@
   }
  ],
  "missed_pnl": -403.46,
- "updated": 1783448919
+ "updated": 1783449423
 }
