@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 39.11,
+ "stake": 39.09,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 977.78,
- "deployed": 0,
+ "cash": 938.04,
+ "deployed": 39.11,
  "reserve": 0.0,
- "realized": -37.67,
+ "realized": -38.3,
  "adjustments": 15.45,
  "ledger_drift": 0.0,
- "open_count": 0,
- "fees_paid": 16.07,
+ "open_count": 1,
+ "fees_paid": 16.71,
  "fee_rate": 0.03,
  "lag": {
-  "n": 21,
-  "avg_s": 64.6,
-  "avg_slip_pct": -0.036
+  "n": 22,
+  "avg_s": 61.8,
+  "avg_slip_pct": -0.0334
  },
  "wallets": [
   "Kruto2027",
@@ -50,6 +50,24 @@
   "ArbTrader": 168.28
  },
  "bets": [
+  {
+   "token": "53076986769773152709804789005865155540206872104155254823531414026789009556675",
+   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
+   "name": "fortuneking",
+   "outcome": "Under",
+   "title": "Argentina vs. Egypt: Egypt O/U 2.5 Corners",
+   "their_price": 0.45,
+   "my_price": 0.46,
+   "slippage_pct": 0.0223,
+   "shares": 85.02,
+   "cost": 39.11,
+   "fee": 0.63,
+   "opened": 1783440578,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "79306966558771629888498097045519992431226434723378179613074511364422278702810",
    "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
@@ -981,5 +999,5 @@
   }
  ],
  "missed_pnl": -411.77,
- "updated": 1783439832
+ "updated": 1783440580
 }
