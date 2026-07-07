@@ -40,10 +40,10 @@
   "ArbTrader": "volume"
  },
  "floors": {
-  "Kruto2027": 78.38,
-  "fortuneking": 1497.53,
+  "Kruto2027": 109.69,
+  "fortuneking": 575.99,
   "LSB1": 156.17,
-  "imwalkinghere": 131.71,
+  "imwalkinghere": 133.85,
   "iohihoo": 58.43,
   "Stavenson": 4759.62,
   "0x4bFb-whale": 1090.46,
@@ -364,6 +364,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1783438489,
+   "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
+   "token": "54810813997536894002774897515358864075964312188497819199115037116639865267402",
+   "cond": "0x45bc05dd0730b16d1b394e2f9f0784074c337e344f0b4a5c276be922f0a705ba",
+   "title": "ITF The Hague: Anouck Vrancken Peeters vs Jennifer Ruggeri",
+   "outcome": "Jennifer Ruggeri",
+   "price": 0.63,
+   "stake": 39.11,
+   "reason": "bot offline (entered while down)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "fortuneking"
+  },
   {
    "ts": 1783436698,
    "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
@@ -966,5 +981,5 @@
   }
  ],
  "missed_pnl": -333.4,
- "updated": 1783436760
+ "updated": 1783438489
 }
