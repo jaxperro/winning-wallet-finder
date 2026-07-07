@@ -407,6 +407,13 @@ class CopyTrader:
                           label, title, outcome, event=None, cond=None):
         mine = self.state["my_pos"].get(token)
         is_add = mine is not None
+        # the signal's position in this token BEFORE this trade — the their-bet
+        # ceiling needs it in BOTH branches (their_prev + their_size = their
+        # total stake). Defining it only inside the is_add branch made every
+        # fresh OPEN crash with UnboundLocalError since the ceiling landed
+        # 2026-07-06 — swallowed as a webhook "handler error", so the bot
+        # silently placed NO new positions (last fill 2026-07-05, found 07-07).
+        their_prev = self.state["their_pos"].get(wallet, {}).get(token, 0)
         # don't backfill: never open a position they already held when we
         # started watching. (A position we built during the run is an ADD;
         # a brand-new position they opened after start is a fresh OPEN.)
@@ -445,7 +452,6 @@ class CopyTrader:
             # game to 2.15 stakes ($90 on a $42-stake book) when fortuneking
             # doubled into his own bet; the backtest is one-market-one-stake,
             # so the bot must be too.
-            their_prev = self.state["their_pos"].get(wallet, {}).get(token, 0)
             frac = their_size / their_prev if their_prev > 0 else 0
             want_shares = mine["shares"] * frac
             room = self.stake_usd(wallet, their_prev + their_size) - mine["cost"]

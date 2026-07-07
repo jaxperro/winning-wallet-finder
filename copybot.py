@@ -689,10 +689,31 @@ class Copybot:
             tx = t.get("transactionHash")
             if not tx or tx in self.engine.seen or tx in self.skipped:
                 continue
-            if not ignore_stale and time.time() - t.get("timestamp", 0) > RECENT_TRADE_WINDOW_S:
-                self.skipped.add(tx)               # stale — the webhook is about a newer tx
-                continue
+            # filter FIRST (before the stale gate) so we know whether a trade we
+            # were too slow on WOULD have qualified — a qualifying miss is worth
+            # recording; a below-floor/out-of-band one is a deliberate skip.
             follow, reason = self.filt.check(wallet, t)
+            stale = not ignore_stale and time.time() - t.get("timestamp", 0) > RECENT_TRADE_WINDOW_S
+            if follow and stale:
+                # a bet we'd have copied but didn't catch in time — webhook missed
+                # it, the bot was down, or the market resolved faster than we poll
+                # (5-min crypto, in-play). Log it as MISSED so it's visible on the
+                # dashboard instead of silently dropped; settle_resolved values it
+                # hypothetically like every other miss. record_miss dedups by token
+                # so reconcile_entries can't double-count the same position.
+                self.skipped.add(tx)
+                if t.get("side") == "BUY" and t.get("asset"):
+                    late_m = (time.time() - (t.get("timestamp") or 0)) / 60.0
+                    with self.lock:
+                        self.engine.record_miss(
+                            wallet, t["asset"], t.get("conditionId"),
+                            t.get("title") or "", t.get("outcome") or "",
+                            t.get("price") or 0, self.engine.stake_usd(wallet),
+                            f"too slow to follow ({late_m:.0f}m late)")
+                        self.engine.persist()
+                    log(f"MISS {name}: {t.get('side')} {t.get('outcome','?')} "
+                        f"@ {t.get('price',0):.3f} — too slow ({late_m:.0f}m late)")
+                continue
             if not follow:
                 self.skipped.add(tx)
                 log(f"skip {name}: {t.get('side')} {t.get('outcome','?')} "

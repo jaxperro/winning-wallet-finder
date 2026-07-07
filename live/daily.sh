@@ -9,10 +9,11 @@
 #   4) sharps    — conviction-profile scan + last-minute timing gate ->
 #                  conviction_wallets.json + watch_sharps.json (the set the live
 #                  trading dashboard reads via raw.githubusercontent)
-#   5) floors    — recompute the copy bot's per-wallet p80 conviction floors from
-#                  the (now-fresh) cache into ../config.json, so copybot.py stays
-#                  in parity with the dashboard's top-20%-by-stake gate. Local-only
-#                  (config.json is gitignored); never touches the curated watchlist.
+#   5) floors    — pin the live paper bot's per-wallet p80 conviction floors
+#                  (trusted-cache p80, same as the backtest) into
+#                  copybot.paper.json, so the bot and the backtest gate on the
+#                  SAME threshold and boots are deterministic (no per-boot
+#                  data-api drift). Committed in the publish step.
 #   6) dashboard — regenerate + snapshot for auditable forward history
 #   7) publish   — commit + push the refreshed outputs so the live dashboard
 #                  (jaxperro.com/trading) picks up the new sharp list
@@ -49,8 +50,8 @@ python3 skill.py
 echo "[daily] $(date '+%F %T') 4/7 sharps: conviction scan + last-minute timing gate"
 python3 conviction_scan.py
 python3 validate_timing.py
-echo "[daily] $(date '+%F %T') 5/7 floors: recompute copy-bot p80 conviction floors -> ../config.json"
-python3 sync_floors.py || echo "[daily] floor sync skipped (no config/watchlist)"
+echo "[daily] $(date '+%F %T') 5/7 floors: pin copy-bot p80 conviction floors -> copybot.paper.json"
+python3 sync_floors.py || echo "[daily] floor sync skipped"
 echo "[daily] $(date '+%F %T') portfolio: cache-based \$1k book -> portfolio.json"
 python3 portfolio.py || echo "[daily] portfolio skipped"
 echo "[daily] $(date '+%F %T') 6/7 dashboard"
@@ -58,7 +59,7 @@ python3 dashboard.py
 mkdir -p history && cp watch_skilled.json "history/watch_$(date '+%Y%m%d').json" 2>/dev/null
 echo "[daily] $(date '+%F %T') 7/7 publish (commit + push refreshed outputs)"
 PUBLISH="no changes"
-git add watch_skilled.json watch_sharps.json conviction_wallets.json dashboard.html portfolio.json 2>/dev/null
+git add watch_skilled.json watch_sharps.json conviction_wallets.json dashboard.html portfolio.json copybot.paper.json 2>/dev/null
 if git diff --cached --quiet 2>/dev/null; then
     echo "[daily] no output changes to publish"
 elif git commit -q -m "live: daily refresh — skilled + sharp wallets [skip ci]"; then
