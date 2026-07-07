@@ -383,6 +383,21 @@
  ],
  "missed": [
   {
+   "ts": 1783441241,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "12823318809941413208968349605534348282496510465768328143874183944203888424402",
+   "cond": "0x0c87c5f85c153b81a7214c606f4a3543c3a8ada64b13cfbb9bd1dff678323386",
+   "title": "Argentina to score first vs. Egypt?",
+   "outcome": "No",
+   "price": 0.5471,
+   "stake": 39.09,
+   "reason": "bot offline (entered while down)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783339698,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "48302785187533870991276747532094514985511838194127838255653440518770460119591",
@@ -999,5 +1014,5 @@
   }
  ],
  "missed_pnl": -411.77,
- "updated": 1783440580
+ "updated": 1783441244
 }
