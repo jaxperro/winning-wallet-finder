@@ -32,17 +32,20 @@
     {
       "wallet": "0xf5fe759cece500f58a431ef8dacea321f6e3e23d",
       "name": "Stavenson",
-      "class": "volume"
+      "class": "volume",
+      "floor": 4759.62
     },
     {
       "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
       "name": "0x4bFb-whale",
-      "class": "volume"
+      "class": "volume",
+      "floor": 1090.46
     },
     {
       "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
       "name": "ArbTrader",
-      "class": "volume"
+      "class": "volume",
+      "floor": 168.28
     }
   ],
   "follow": {
