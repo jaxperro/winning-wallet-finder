@@ -419,18 +419,18 @@
  ],
  "missed": [
   {
-   "ts": 1783441241,
+   "ts": 1783446423,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "12823318809941413208968349605534348282496510465768328143874183944203888424402",
-   "cond": "0x0c87c5f85c153b81a7214c606f4a3543c3a8ada64b13cfbb9bd1dff678323386",
-   "title": "Argentina to score first vs. Egypt?",
+   "token": "70993003109292385626514490816677084830636463815658549054814390997710185619323",
+   "cond": "0x9e59c6756e078eb49b0f85639604b55600728ed7b212d246fdd945f25beb5f6f",
+   "title": "Exact Score: Argentina 0 - 3 Egypt?",
    "outcome": "No",
-   "price": 0.5471,
+   "price": 0.999,
    "stake": 39.09,
-   "reason": "bot offline (entered while down)",
+   "reason": "price moved 0.95\u21921.00",
    "status": "won",
-   "pnl": 31.83,
-   "settled": 1783448733,
+   "pnl": 0.04,
+   "settled": 1783448856,
    "name": "LSB1"
   },
   {
@@ -443,24 +443,24 @@
    "price": 0.998,
    "stake": 39.09,
    "reason": "price moved 0.85\u21921.00",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "won",
+   "pnl": 0.08,
+   "settled": 1783448856,
    "name": "LSB1"
   },
   {
-   "ts": 1783446423,
+   "ts": 1783441241,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "70993003109292385626514490816677084830636463815658549054814390997710185619323",
-   "cond": "0x9e59c6756e078eb49b0f85639604b55600728ed7b212d246fdd945f25beb5f6f",
-   "title": "Exact Score: Argentina 0 - 3 Egypt?",
+   "token": "12823318809941413208968349605534348282496510465768328143874183944203888424402",
+   "cond": "0x0c87c5f85c153b81a7214c606f4a3543c3a8ada64b13cfbb9bd1dff678323386",
+   "title": "Argentina to score first vs. Egypt?",
    "outcome": "No",
-   "price": 0.999,
+   "price": 0.5471,
    "stake": 39.09,
-   "reason": "price moved 0.95\u21921.00",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "reason": "bot offline (entered while down)",
+   "status": "won",
+   "pnl": 31.83,
+   "settled": 1783448733,
    "name": "LSB1"
   },
   {
@@ -1124,6 +1124,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -420.07,
- "updated": 1783448733
+ "missed_pnl": -419.95,
+ "updated": 1783448856
 }
