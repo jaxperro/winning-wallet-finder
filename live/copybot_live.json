@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 36.33,
+ "stake": 37.8,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 832.74,
+ "cash": 869.64,
  "deployed": 75.4,
  "reserve": 0.0,
- "realized": -107.31,
+ "realized": -70.41,
  "adjustments": 15.45,
  "ledger_drift": -0.0,
  "open_count": 2,
- "fees_paid": 19.81,
+ "fees_paid": 19.25,
  "fee_rate": 0.03,
  "lag": {
-  "n": 27,
-  "avg_s": 53.4,
-  "avg_slip_pct": -0.0419
+  "n": 26,
+  "avg_s": 52.8,
+  "avg_slip_pct": -0.0436
  },
  "wallets": [
   "Kruto2027",
@@ -40,34 +40,16 @@
   "ArbTrader": "volume"
  },
  "floors": {
-  "Kruto2027": 109.69,
-  "fortuneking": 575.99,
-  "LSB1": 156.17,
-  "imwalkinghere": 133.85,
-  "iohihoo": 58.43,
-  "Stavenson": 4759.62,
-  "0x4bFb-whale": 1090.46,
-  "ArbTrader": 168.28
+  "Kruto2027": 127.06,
+  "fortuneking": 999.02,
+  "LSB1": 253.99,
+  "imwalkinghere": 122.43,
+  "iohihoo": 60.0,
+  "Stavenson": 4784.68,
+  "0x4bFb-whale": 1089.72,
+  "ArbTrader": 168.48
  },
  "bets": [
-  {
-   "token": "62268045217838415143314425413382139516823618876739208102665837804570535617833",
-   "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
-   "name": "ArbTrader",
-   "outcome": "Over 2.5",
-   "title": "Hanyi Liu vs. Aoran Wang: Total Sets O/U 2.5",
-   "their_price": 0.49,
-   "my_price": 0.49,
-   "slippage_pct": -0.0,
-   "shares": 74.18,
-   "cost": 36.35,
-   "fee": 0.56,
-   "opened": 1783462004,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
   {
    "token": "57148617108437147048088458582793470023098200222992864689104372772428315487654",
    "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
@@ -1211,5 +1193,5 @@
   }
  ],
  "missed_pnl": -372.85,
- "updated": 1783462072
+ "updated": 1783467871
 }
