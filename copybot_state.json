@@ -4900,8 +4900,8 @@
       "settled": 1783375717
     }
   },
-  "feed_sig": "6764c2202eb29abe94d3c48a600786cc",
-  "feed_pushed_at": 1783375652.8607383,
+  "feed_sig": "93e04aa5dc79dcb903470b572dbbe46d",
+  "feed_pushed_at": 1783404859.5812535,
   "hwm": 1058.6790259216177,
   "missed": [
     {
@@ -5334,9 +5334,10 @@
       "price": 0.37,
       "stake": 39.11,
       "reason": "bot offline (entered while down)",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -39.85,
+      "settled": 1783404919,
+      "name": "fortuneking"
     },
     {
       "ts": 1783404859,
@@ -5348,9 +5349,10 @@
       "price": 0.82,
       "stake": 39.11,
       "reason": "bot offline (entered while down)",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -39.32,
+      "settled": 1783404919,
+      "name": "LSB1"
     },
     {
       "ts": 1783404859,
@@ -5362,9 +5364,10 @@
       "price": 0.4678,
       "stake": 39.11,
       "reason": "bot offline (entered while down)",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -39.73,
+      "settled": 1783404919,
+      "name": "imwalkinghere"
     },
     {
       "ts": 1783404859,
@@ -5376,9 +5379,10 @@
       "price": 0.5192,
       "stake": 39.11,
       "reason": "bot offline (entered while down)",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -39.67,
+      "settled": 1783404919,
+      "name": "imwalkinghere"
     },
     {
       "ts": 1783404859,
@@ -5390,9 +5394,10 @@
       "price": 0.435,
       "stake": 39.11,
       "reason": "bot offline (entered while down)",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -39.77,
+      "settled": 1783404920,
+      "name": "imwalkinghere"
     },
     {
       "ts": 1783404859,
@@ -5404,9 +5409,10 @@
       "price": 0.4369,
       "stake": 39.11,
       "reason": "bot offline (entered while down)",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -39.77,
+      "settled": 1783404920,
+      "name": "imwalkinghere"
     }
   ],
   "adjustments": [
