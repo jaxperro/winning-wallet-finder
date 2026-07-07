@@ -383,6 +383,21 @@
  ],
  "missed": [
   {
+   "ts": 1783446157,
+   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
+   "token": "49283686456928993851464146670574883277266999919056843343822740024885909556550",
+   "cond": "0xc21579b407518bf47295c4094daadf5a0250dc7f1e53cce8ca560f65e7372910",
+   "title": "Bitcoin Up or Down - July 7, 1:35PM-1:40PM ET",
+   "outcome": "Down",
+   "price": 0.1103,
+   "stake": 39.09,
+   "reason": "bot offline (entered while down)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "imwalkinghere"
+  },
+  {
    "ts": 1783445542,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "105036803249911816283150622105156176389569968621110738800836591953472184947013",
@@ -1029,5 +1044,5 @@
   }
  ],
  "missed_pnl": -411.77,
- "updated": 1783445544
+ "updated": 1783446159
 }
