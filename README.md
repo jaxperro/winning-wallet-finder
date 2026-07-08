@@ -243,7 +243,8 @@ runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
 | Source | Would unlock |
 |--------|--------------|
 | [Goldsky Turbo Pipelines](https://docs.goldsky.com/chains/polymarket) | per-fill order events with timestamps for *every* wallet (Polymarket killed subgraphs with the 2026-04-28 v2 migration) — fixes the cache's two blind spots: no entry times, and position-level aggregation hiding scalps. See also [warproxxx/poly_data](https://github.com/warproxxx/poly_data), [Bitquery](https://docs.bitquery.io/docs/examples/polymarket-api/) |
-| [PolymarketData.co](https://www.polymarketdata.co/) | historical order-book snapshots (Aug 2025+) → depth-aware fill model, the known step before sizing up |
+| [PolymarketData.co](https://www.polymarketdata.co/) | HISTORICAL order-book snapshots (Aug 2025+) → depth-aware backtest fills. Forward-going depth is now captured in-house: every copy logs `book` {bb, ba, spread, bid5c, ask5c} to the fills ledger (2026-07-08) |
+| free Etherscan-V2 (Polygonscan) API key | topic-filtered logs over wide ranges → EXACT `ConditionResolution` timestamps (CLOB/gamma have no true resolution time; `end_date_iso` can be months wrong) + restores the funding-cluster tracer (Alchemy FREE tier caps `eth_getLogs` at 10 blocks as of 2026-07) |
 | Pinnacle closing lines via [SharpAPI](https://sharpapi.io/sportsbooks/pinnacle-odds-api) / [sportsapis.dev](https://sportsapis.dev/historical-odds) / [BettingIsCool](https://api.bettingiscool.com/) (Pinnacle closed its public API 2025-07) | closing-line-value as an independent "was this bet sharp" ground truth; a Pinnacle *suspension* on an ITF/esports match is itself a fixing signal |
 | [Polysights Insider Finder](https://gizmodo.com/tracking-insider-trading-on-polymarket-is-turning-into-a-business-of-its-own-2000709286) | cross-check for flagged insider wallets |
 
