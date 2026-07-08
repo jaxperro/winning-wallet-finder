@@ -371,7 +371,31 @@ class Copybot:
         engine.state.setdefault("cash", cfg["bankroll_usd"])  # free cash (recycles on sell/resolution)
         engine.state.setdefault("lag", {"n": 0, "sum_s": 0.0, "sum_slip_pct": 0.0})
         engine.state.setdefault("fees_paid", 0.0)
+        # 24h rolling lag window — backfill from the fills ledger on first boot
+        # after the rolling-window change (older state has 'lag' but no 'lag_recent')
+        if "lag_recent" not in engine.state:
+            engine.state["lag_recent"] = self._backfill_lag_recent()
         self.fee_rate = float(cfg.get("taker_fee_rate", TAKER_FEE_RATE))
+
+    def _backfill_lag_recent(self, window_s=86400):
+        """[[ts, lag_s, slip], …] for fills in the last window_s, read from the
+        fills ledger — seeds the rolling avg so it's populated immediately."""
+        out = []
+        now = time.time()
+        try:
+            with open(os.path.join(self.here, self.fill_log)) as fh:
+                for line in fh:
+                    try:
+                        r = json.loads(line)
+                    except Exception:
+                        continue
+                    ts, lag = r.get("ts"), r.get("detect_lag_s")
+                    if ts and lag is not None and ts >= now - window_s:
+                        out.append([round(ts, 1), round(lag, 1),
+                                    round(r.get("slippage_pct") or 0, 5)])
+        except FileNotFoundError:
+            pass
+        return out
 
     def _drain_fills(self):
         """Apply cash flows from any fills the engine just made; return the BUY
@@ -460,9 +484,16 @@ class Copybot:
             pass
         if detect_s is not None:
             lag = self.engine.state["lag"]
-            lag["n"] += 1
+            lag["n"] += 1                    # lifetime copy count (kept for the total)
             lag["sum_s"] += detect_s
             lag["sum_slip_pct"] += slip_pct
+            # rolling 24h window so the reported avg reflects CURRENT execution
+            # (push mode ~3s), not a lifetime average dragged up by the retired
+            # 60s poll era (which made a 3s bot read as 48s)
+            rec24 = self.engine.state.setdefault("lag_recent", [])
+            rec24.append([round(now, 1), round(detect_s, 1), round(slip_pct, 5)])
+            cutoff = now - 86400
+            self.engine.state["lag_recent"] = [r for r in rec24 if r[0] >= cutoff]
         # record the placed bet for the live dashboard feed. AGGREGATE across
         # fills: an ADD to an existing open position must accumulate shares/
         # cost/fees, not overwrite the record with just the last fill — that
@@ -557,9 +588,12 @@ class Copybot:
             "open_count": len(mp),
             "fees_paid": round(st.get("fees_paid", 0.0), 2),
             "fee_rate": self.fee_rate,
-            "lag": {"n": lag.get("n", 0),
-                    "avg_s": round(lag["sum_s"] / lag["n"], 1) if lag.get("n") else None,
-                    "avg_slip_pct": round(lag["sum_slip_pct"] / lag["n"], 4) if lag.get("n") else None},
+            # avg_s / avg_slip_pct are the 24h ROLLING view (current execution);
+            # n is the lifetime copy count, n24 the fills in the window
+            "lag": (lambda t: {"n": lag.get("n", 0), "n24": t[0],
+                               "avg_s": round(t[1], 1) if t[1] is not None else None,
+                               "avg_slip_pct": round(t[2], 4) if t[2] is not None else None,
+                               "window_h": 24})(self.lag_24h()),
             "wallets": [w.get("name", w["wallet"][:10]) for w in self.cfg.get("watch", [])],
             "classes": {w.get("name", w["wallet"][:10]): self.engine.wallet_class(w["wallet"])
                         for w in self.cfg.get("watch", [])},
@@ -676,6 +710,17 @@ class Copybot:
                 return None
         return None if bal is None else self.engine.state.get("cash", 0) - bal
 
+    def lag_24h(self):
+        """(count, avg_lag_s, avg_slip_pct) over fills in the last 24h — the
+        CURRENT-execution view. The lifetime average buried push mode's ~3s
+        under the retired 60s poll era (a 3s bot read as 48s)."""
+        now = time.time()
+        rec = [r for r in self.engine.state.get("lag_recent", []) if r[0] >= now - 86400]
+        if not rec:
+            return 0, None, None
+        n = len(rec)
+        return n, sum(r[1] for r in rec) / n, sum(r[2] for r in rec) / n
+
     def summary(self, cycle):
         bank = self.cfg["bankroll_usd"]
         stake = self.engine.stake_usd()       # dynamic: pct of current equity
@@ -687,7 +732,11 @@ class Copybot:
         n = len(self.engine.state["my_pos"])
         lag = self.engine.state.get("lag", {})
         lagstr = ""
-        if lag.get("n"):
+        n24, avg_s, avg_slip = self.lag_24h()
+        if n24:
+            lagstr = (f" · {lag.get('n', 0)} copies · 24h lag {avg_s:.0f}s "
+                      f"slip {avg_slip:+.1%} ({n24})")
+        elif lag.get("n"):
             lagstr = (f" · {lag['n']} copies avg lag {lag['sum_s']/lag['n']:.0f}s "
                       f"slip {lag['sum_slip_pct']/lag['n']:+.1%}")
         bankstr = f" · banked ${reserve:,.0f}" if reserve else ""
