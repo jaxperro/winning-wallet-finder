@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.6,
+ "stake": 49.81,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1261.68,
- "cash": 1007.89,
- "deployed": 232.21,
+ "cash": 1061.19,
+ "deployed": 184.05,
  "reserve": 0.0,
- "realized": 224.65,
+ "realized": 229.79,
  "adjustments": 15.45,
  "ledger_drift": 0.0,
- "open_count": 7,
- "fees_paid": 28.95,
+ "open_count": 6,
+ "fees_paid": 29.09,
  "fee_rate": 0.03,
  "lag": {
   "n": 41,
@@ -50,6 +50,26 @@
  },
  "bets": [
   {
+   "token": "74201826404615828291163623237612490403507206623053783224357495757337754363906",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Yandex",
+   "title": "Dota 2: Team Yandex vs Inner Circle - Game 1 Winner",
+   "their_price": 0.87,
+   "my_price": 0.82,
+   "slippage_pct": -0.0575,
+   "shares": 58.73,
+   "cost": 48.16,
+   "fee": 0.26,
+   "opened": 1783533404,
+   "status": "closed",
+   "exit_price": 0.9075,
+   "pnl": 4.88,
+   "settled": 1783534517,
+   "sold_shares": 58.73,
+   "sold_proceeds": 53.3
+  },
+  {
    "token": "108181173782330719653435176681823026438964067740154119434410054949647661300488",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -68,24 +88,6 @@
    "settled": 1783534221,
    "sold_shares": 84.54,
    "sold_proceeds": 84.54
-  },
-  {
-   "token": "74201826404615828291163623237612490403507206623053783224357495757337754363906",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Yandex",
-   "title": "Dota 2: Team Yandex vs Inner Circle - Game 1 Winner",
-   "their_price": 0.87,
-   "my_price": 0.82,
-   "slippage_pct": -0.0575,
-   "shares": 58.73,
-   "cost": 48.16,
-   "fee": 0.26,
-   "opened": 1783533404,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "80341765186077032816113366497311823982538363967496204297031691090127296175451",
@@ -1510,5 +1512,5 @@
   }
  ],
  "missed_pnl": -367.0,
- "updated": 1783534221
+ "updated": 1783534517
 }
