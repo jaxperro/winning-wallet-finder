@@ -746,6 +746,21 @@
  ],
  "missed": [
   {
+   "ts": 1783537432,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "31588267545848635342579994154542536132015653168517728496937914934389809072577",
+   "cond": "0x31f9a37bdba286bf0076decfd849693b470c111679393c1c57c49b82dabff272",
+   "title": "Dota 2: LGD Gaming vs OG - Game 2 Winner",
+   "outcome": "OG",
+   "price": 0.3722,
+   "stake": 49.81,
+   "reason": "bot offline (entered while down)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783536504,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "2056315960755800650041893197824873999417639556425380273899030638537691967612",
@@ -1527,5 +1542,5 @@
   }
  ],
  "missed_pnl": -367.0,
- "updated": 1783536506
+ "updated": 1783537434
 }
