@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 50.47,
+ "stake": 50.45,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1261.68,
- "cash": 1029.08,
- "deployed": 232.59,
+ "cash": 978.07,
+ "deployed": 283.06,
  "reserve": 0.0,
- "realized": 246.23,
+ "realized": 245.68,
  "adjustments": 15.45,
  "ledger_drift": -0.0,
- "open_count": 7,
- "fees_paid": 25.82,
+ "open_count": 8,
+ "fees_paid": 26.37,
  "fee_rate": 0.03,
  "lag": {
-  "n": 37,
-  "n24": 17,
-  "avg_s": 11.3,
-  "avg_slip_pct": -0.1431,
+  "n": 38,
+  "n24": 18,
+  "avg_s": 18.9,
+  "avg_slip_pct": -0.1419,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,24 @@
   "BikesAreTheBikes": 215.88
  },
  "bets": [
+  {
+   "token": "106357377462470777162074136663993867544289851940849210066031068582103797897415",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will Ukraine re-enter Maliivka by December 31?",
+   "their_price": 0.7288,
+   "my_price": 0.64,
+   "slippage_pct": -0.1218,
+   "shares": 78.85,
+   "cost": 50.47,
+   "fee": 0.55,
+   "opened": 1783521320,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "17201633022551770129287755054798695848826438710017215402322556219454538059471",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -664,6 +682,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1783521466,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "106357377462470777162074136663993867544289851940849210066031068582103797897415",
+   "cond": "0xb8879d2f55f3a15028660eba65785832c1dfc04f99e8e495010933688ccb9c6d",
+   "title": "Will Ukraine re-enter Maliivka by December 31?",
+   "outcome": "Yes",
+   "price": 0.7287,
+   "stake": 45.99,
+   "reason": "bot offline (entered while down)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1783494594,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1416,5 +1449,5 @@
   }
  ],
  "missed_pnl": -372.25,
- "updated": 1783518933
+ "updated": 1783521467
 }
