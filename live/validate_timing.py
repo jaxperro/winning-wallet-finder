@@ -213,8 +213,14 @@ def display_stats(w):
                 won_ += 1                        # redeemed winner / payout dump
             elif xp <= 0.001:
                 lost_ += 1                       # loser booked at zero
-            elif abs(xp - 0.5) <= 0.005:
-                ref_ += 1                        # 50/50 refund redeem
+            elif abs(xp - 0.5) <= 1e-4:
+                # 50/50 refund redeem — the reconstruction (avgPrice +
+                # rp/totalBought) is EXACT for redeems, so the band is float
+                # noise only. A looser 0.005 band mislabeled coin-flip
+                # scalpers' ~50c sells as refunds (ArbTraderRookie: 1,189
+                # fake R on first regen; a genuine 0.5000-tick sell is rare
+                # and money-identical anyway).
+                ref_ += 1
             else:
                 sold_ += 1                       # genuine pre-resolution sell
         return won_, lost_, ref_, sold_, round(pnl)
