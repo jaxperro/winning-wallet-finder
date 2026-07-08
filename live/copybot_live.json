@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1000.0,
- "cash": 1000.0,
- "deployed": 0,
+ "cash": 959.88,
+ "deployed": 40.0,
  "reserve": 0.0,
- "realized": 0.0,
+ "realized": -0.12,
  "adjustments": 0,
  "ledger_drift": 0.0,
- "open_count": 0,
- "fees_paid": 0.0,
+ "open_count": 1,
+ "fees_paid": 0.12,
  "fee_rate": 0.03,
  "lag": {
-  "n": 0,
-  "n24": 0,
-  "avg_s": null,
-  "avg_slip_pct": null,
+  "n": 1,
+  "n24": 1,
+  "avg_s": 0.5,
+  "avg_slip_pct": -0.019,
   "window_h": 24
  },
  "wallets": [
@@ -48,8 +48,27 @@
   "AIcAIc": 295.32,
   "1kto1m": 320.95
  },
- "bets": [],
+ "bets": [
+  {
+   "token": "244048590847349569142622450288686721247802348946192951002087804863968899",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Probable FDV above $800M one day after launch?",
+   "their_price": 0.9174,
+   "my_price": 0.9,
+   "slippage_pct": -0.019,
+   "shares": 44.44,
+   "cost": 40.0,
+   "fee": 0.12,
+   "opened": 1783545809,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  }
+ ],
  "missed": [],
  "missed_pnl": 0,
- "updated": 1783545748
+ "updated": 1783545809
 }
