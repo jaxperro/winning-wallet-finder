@@ -117,9 +117,15 @@ def _open_split(w):
         if not pg:
             break
         for p in pg:
-            cp = p.get("curPrice", 0) or 0
             cpnl = p.get("cashPnl") or 0
-            if cp <= 0.001 or cp >= 0.999:        # decided, just unredeemed
+            # decided = the data-api's own on-chain resolution flag (redeemable
+            # is True once the condition reports payouts, winners AND losers —
+            # verified on oliman2's $10.9k Bad Bunny loser). Price-pinning was
+            # the old proxy; it misfolded pinned-but-UNRESOLVED longshots as
+            # realized (measured −$27/−$434 on oliman2/leegunner — small, but
+            # the 2026-07-08 audit proved the flag exact: closed+redeemable
+            # decomposition reproduces PM's per-position books to the dollar).
+            if p.get("redeemable"):
                 resolved.append({"realized_pnl": cpnl,
                                  "iv": p.get("initialValue") or 0,
                                  "ts": p.get("timestamp") or 0})
