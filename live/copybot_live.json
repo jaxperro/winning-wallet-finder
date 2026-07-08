@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.15,
+ "stake": 49.6,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1261.68,
- "cash": 923.36,
- "deployed": 280.4,
+ "cash": 1007.89,
+ "deployed": 232.21,
  "reserve": 0.0,
- "realized": 188.3,
+ "realized": 224.65,
  "adjustments": 15.45,
- "ledger_drift": -0.0,
- "open_count": 8,
+ "ledger_drift": 0.0,
+ "open_count": 7,
  "fees_paid": 28.95,
  "fee_rate": 0.03,
  "lag": {
@@ -50,24 +50,6 @@
  },
  "bets": [
   {
-   "token": "74201826404615828291163623237612490403507206623053783224357495757337754363906",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Yandex",
-   "title": "Dota 2: Team Yandex vs Inner Circle - Game 1 Winner",
-   "their_price": 0.87,
-   "my_price": 0.82,
-   "slippage_pct": -0.0575,
-   "shares": 58.73,
-   "cost": 48.16,
-   "fee": 0.26,
-   "opened": 1783533404,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
    "token": "108181173782330719653435176681823026438964067740154119434410054949647661300488",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -80,6 +62,26 @@
    "cost": 48.19,
    "fee": 0.62,
    "opened": 1783531583,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 35.72,
+   "settled": 1783534221,
+   "sold_shares": 84.54,
+   "sold_proceeds": 84.54
+  },
+  {
+   "token": "74201826404615828291163623237612490403507206623053783224357495757337754363906",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Yandex",
+   "title": "Dota 2: Team Yandex vs Inner Circle - Game 1 Winner",
+   "their_price": 0.87,
+   "my_price": 0.82,
+   "slippage_pct": -0.0575,
+   "shares": 58.73,
+   "cost": 48.16,
+   "fee": 0.26,
+   "opened": 1783533404,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -1508,5 +1510,5 @@
   }
  ],
  "missed_pnl": -367.0,
- "updated": 1783533901
+ "updated": 1783534221
 }
