@@ -25,25 +25,28 @@
   "LSB1",
   "imwalkinghere",
   "Kruto2027",
-  "42021",
   "0xbadaf319",
-  "BikesAreTheBikes"
+  "gkmgkldfmg",
+  "AIcAIc",
+  "1kto1m"
  ],
  "classes": {
   "LSB1": "volume",
   "imwalkinghere": "volume",
   "Kruto2027": "volume",
-  "42021": "volume",
   "0xbadaf319": "volume",
-  "BikesAreTheBikes": "volume"
+  "gkmgkldfmg": "volume",
+  "AIcAIc": "volume",
+  "1kto1m": "volume"
  },
  "floors": {
-  "LSB1": 253.88,
-  "imwalkinghere": 122.43,
-  "Kruto2027": 127.06,
-  "42021": 276.71,
-  "0xbadaf319": 44.51,
-  "BikesAreTheBikes": 215.88
+  "LSB1": 258.51,
+  "imwalkinghere": 122.32,
+  "Kruto2027": 126.84,
+  "0xbadaf319": 44.98,
+  "gkmgkldfmg": 304.34,
+  "AIcAIc": 295.32,
+  "1kto1m": 320.95
  },
  "bets": [
   {
@@ -1469,5 +1472,5 @@
   }
  ],
  "missed_pnl": -372.25,
- "updated": 1783526980
+ "updated": 1783527525
 }
