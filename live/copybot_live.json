@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.54,
+ "stake": 48.53,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1213.57,
- "cash": 1136.41,
- "deployed": 77.17,
+ "cash": 1087.63,
+ "deployed": 125.71,
  "reserve": 0.0,
- "realized": 198.12,
+ "realized": 197.89,
  "adjustments": 15.45,
- "ledger_drift": 0.0,
- "open_count": 3,
- "fees_paid": 23.59,
+ "ledger_drift": -0.0,
+ "open_count": 4,
+ "fees_paid": 23.83,
  "fee_rate": 0.03,
  "lag": {
-  "n": 32,
-  "n24": 12,
-  "avg_s": 15.1,
-  "avg_slip_pct": -0.1681,
+  "n": 33,
+  "n24": 13,
+  "avg_s": 14.1,
+  "avg_slip_pct": -0.1561,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,24 @@
   "BikesAreTheBikes": 215.88
  },
  "bets": [
+  {
+   "token": "112647675842455810053000856007873928696360897468065849941777938122717569163887",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Solana be between $80 and $90 on July 8?",
+   "their_price": 0.85,
+   "my_price": 0.84,
+   "slippage_pct": -0.0118,
+   "shares": 57.79,
+   "cost": 48.54,
+   "fee": 0.23,
+   "opened": 1783494391,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "96414913260410660327701812842304441904120154604356278687138420481391489349128",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1307,5 +1325,5 @@
   }
  ],
  "missed_pnl": -372.25,
- "updated": 1783487791
+ "updated": 1783494392
 }
