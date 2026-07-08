@@ -68,7 +68,23 @@
    "settled": null
   }
  ],
- "missed": [],
+ "missed": [
+  {
+   "ts": 1783546817,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "108097819032362232168754373234866768117360060536989734427640383701915911737522",
+   "cond": "0x4e4c206465fdd1ee129653eff03ccf55870321a3599bc4dd70b29f2dde23ccca",
+   "title": "Perena FDV above $600M one day after launch?",
+   "outcome": "No",
+   "price": 0.9221,
+   "stake": 40.0,
+   "reason": "bot offline (entered while down)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  }
+ ],
  "missed_pnl": 0,
- "updated": 1783545809
+ "updated": 1783546819
 }
