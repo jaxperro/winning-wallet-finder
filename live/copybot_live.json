@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.91,
+ "stake": 48.54,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 1198.56,
- "cash": 1062.8,
- "deployed": 134.91,
+ "hwm": 1213.45,
+ "cash": 1136.84,
+ "deployed": 76.61,
  "reserve": 0.0,
- "realized": 182.26,
+ "realized": 198.0,
  "adjustments": 15.45,
- "ledger_drift": 0.0,
- "open_count": 3,
- "fees_paid": 23.06,
+ "ledger_drift": -0.0,
+ "open_count": 2,
+ "fees_paid": 23.14,
  "fee_rate": 0.03,
  "lag": {
   "n": 31,
@@ -47,6 +47,24 @@
  },
  "bets": [
   {
+   "token": "21663614423138978208039475686851008988023846387002129187677074338673274484352",
+   "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
+   "name": "ArbTrader",
+   "outcome": "Over",
+   "title": "Liu vs. Wang: Set 1 Games O/U 10.5",
+   "their_price": 0.45,
+   "my_price": 0.45,
+   "slippage_pct": -0.0,
+   "shares": 86.78,
+   "cost": 39.05,
+   "fee": 0.64,
+   "opened": 1783448660,
+   "status": "refund",
+   "exit_price": 0.5,
+   "pnl": 3.7,
+   "settled": 1783481513
+  },
+  {
    "token": "113842642606909285084664409170795260382236349196312584968205023385982600037237",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "name": "BikesAreTheBikes",
@@ -80,7 +98,9 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "sold_shares": 33.78,
+   "sold_proceeds": 30.65
   },
   {
    "token": "87382220110448622099111493684084130419054861529003852679650948002572780674563",
@@ -215,24 +235,6 @@
    "exit_price": 1.0,
    "pnl": 45.28,
    "settled": 1783449423
-  },
-  {
-   "token": "21663614423138978208039475686851008988023846387002129187677074338673274484352",
-   "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
-   "name": "ArbTrader",
-   "outcome": "Over",
-   "title": "Liu vs. Wang: Set 1 Games O/U 10.5",
-   "their_price": 0.45,
-   "my_price": 0.45,
-   "slippage_pct": -0.0,
-   "shares": 86.78,
-   "cost": 39.05,
-   "fee": 0.64,
-   "opened": 1783448660,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "79306966558771629888498097045519992431226434723378179613074511364422278702810",
@@ -549,6 +551,51 @@
  ],
  "missed": [
   {
+   "ts": 1783432430,
+   "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
+   "token": "84950618222681215763408950080741733705743606777117477467780626347859800941546",
+   "cond": "0x042bc9f012c43affdd6722268349083c290d8123543b4affb7c9df34a2141fc5",
+   "title": "Liu vs. Wang: Set 1 Games O/U 8.5",
+   "outcome": "Under",
+   "price": 0.49,
+   "stake": 39.11,
+   "reason": "bot offline (entered while down)",
+   "status": "refund",
+   "pnl": 0.2,
+   "settled": 1783481452,
+   "name": "0x72e15978"
+  },
+  {
+   "ts": 1783436698,
+   "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
+   "token": "62268045217838415143314425413382139516823618876739208102665837804570535617833",
+   "cond": "0x0b6b31007cd1f14589709d3fc312c5d8c862afb36b877ab16bf797c7eedcae21",
+   "title": "Hanyi Liu vs. Aoran Wang: Total Sets O/U 2.5",
+   "outcome": "Over 2.5",
+   "price": 0.49,
+   "stake": 39.11,
+   "reason": "bot offline (entered while down)",
+   "status": "refund",
+   "pnl": 0.2,
+   "settled": 1783481452,
+   "name": "0x72e15978"
+  },
+  {
+   "ts": 1783433957,
+   "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
+   "token": "65426565048171078517674305902314885251681795376989570401017546998228601028335",
+   "cond": "0x144b1c92183ac62bbadb60c772f9898377e6e1ad5139ef1b4beaeb09061957f3",
+   "title": "Liu vs. Wang: Match O/U 23.5",
+   "outcome": "Over",
+   "price": 0.49,
+   "stake": 39.11,
+   "reason": "bot offline (entered while down)",
+   "status": "refund",
+   "pnl": 0.2,
+   "settled": 1783481433,
+   "name": "0x72e15978"
+  },
+  {
    "ts": 1783450679,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "89080850591293378064922061831116973650990614628539626344540323215900492924747",
@@ -699,36 +746,6 @@
    "name": "0x86c878cd"
   },
   {
-   "ts": 1783436698,
-   "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
-   "token": "62268045217838415143314425413382139516823618876739208102665837804570535617833",
-   "cond": "0x0b6b31007cd1f14589709d3fc312c5d8c862afb36b877ab16bf797c7eedcae21",
-   "title": "Hanyi Liu vs. Aoran Wang: Total Sets O/U 2.5",
-   "outcome": "Over 2.5",
-   "price": 0.49,
-   "stake": 39.11,
-   "reason": "bot offline (entered while down)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0x72e15978"
-  },
-  {
-   "ts": 1783433957,
-   "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
-   "token": "65426565048171078517674305902314885251681795376989570401017546998228601028335",
-   "cond": "0x144b1c92183ac62bbadb60c772f9898377e6e1ad5139ef1b4beaeb09061957f3",
-   "title": "Liu vs. Wang: Match O/U 23.5",
-   "outcome": "Over",
-   "price": 0.49,
-   "stake": 39.11,
-   "reason": "bot offline (entered while down)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0x72e15978"
-  },
-  {
    "ts": 1783433648,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "12494054070661084087977001767488481054008497038706451329959807755051059711563",
@@ -742,21 +759,6 @@
    "pnl": -39.6,
    "settled": 1783433833,
    "name": "imwalkinghere"
-  },
-  {
-   "ts": 1783432430,
-   "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
-   "token": "84950618222681215763408950080741733705743606777117477467780626347859800941546",
-   "cond": "0x042bc9f012c43affdd6722268349083c290d8123543b4affb7c9df34a2141fc5",
-   "title": "Liu vs. Wang: Set 1 Games O/U 8.5",
-   "outcome": "Under",
-   "price": 0.49,
-   "stake": 39.11,
-   "reason": "bot offline (entered while down)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0x72e15978"
   },
   {
    "ts": 1783425474,
@@ -1284,6 +1286,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -372.85,
- "updated": 1783480622
+ "missed_pnl": -372.25,
+ "updated": 1783481516
 }
