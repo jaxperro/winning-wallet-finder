@@ -235,6 +235,25 @@ def window_bets():
                         "won": None, "res_t": 0,
                         "exit_t": cx["ts"], "exit_p": cx["exit_p"],
                         "title": cx.get("title") or ""})
+        # abandoned losers/winners: conviction bets entered in-window that the
+        # signal held to a decided outcome and never redeemed (curPrice 0/1 in
+        # /positions). Not trusted rows, not in /closed-positions -> the replay
+        # missed them and read optimistic. Settle at the decided outcome (a loser
+        # pays 0 = full loss), same fold-in as the sharps table.
+        for asset, r in resolved_unredeemed(w["wallet"]).items():
+            cond = r["cond"]
+            if cond in best or not cond:
+                continue                               # already a trusted row / round trip
+            if (r["iv"] or 0) < thr or r["p"] > MAX_ENTRY:
+                continue
+            et = ent.get(cond)
+            if not et or et < START:
+                continue
+            best[cond] = None
+            out.append({"wallet": w["wallet"], "name": w["name"], "cond": cond,
+                        "asset": asset, "cls": w.get("class", "volume"),
+                        "their": r["iv"], "entry_t": et, "p": r["p"],
+                        "won": r["curp"] >= 0.5, "res_t": r["res_t"]})
     # chain-truth payouts for the replayed markets: refunds pay 0.5/share, and
     # a cache `won` mark can be wrong on operator-resolved markets — the
     # replay must settle at what a redeem actually pays (see payouts.py)
@@ -249,6 +268,47 @@ def closed_positions(wallet):
     incremental cached layer (validate_timing uses the same one, so the
     backtest and the sharps stats mirror exits identically)."""
     return cache.closed_exits(wallet)
+
+
+def _end_ts(s):
+    if not s:
+        return 0
+    s = s.replace("Z", "")
+    for fmt in ("%Y-%m-%dT%H:%M:%S", "%Y-%m-%d"):
+        try:
+            return int(time.mktime(time.strptime(s, fmt)))
+        except ValueError:
+            continue
+    return 0
+
+
+def resolved_unredeemed(wallet):
+    """Conviction bets the signal LOST (or won) and never redeemed — they sit in
+    /positions at curPrice pinned 0/1, are NOT in /closed-positions, and for
+    operator-resolved markets are NOT trusted rows either, so the replay never
+    saw them. Mostly ABANDONED LOSERS. Folding them in is the same anti-
+    survivorship correction the sharps table uses (_open_split) — without it the
+    backtest silently drops these losses and reads optimistic.
+    {asset: {cond, iv, p, curp, res_t}}."""
+    out = {}
+    for off in range(0, 100000, 50):
+        pg = sm.get_json("/positions", {"user": wallet, "limit": 50, "offset": off,
+                                        "sizeThreshold": 0})
+        if not pg:
+            break
+        for pos in pg:
+            cp = pos.get("curPrice", 0) or 0
+            asset = pos.get("asset")
+            if not asset or 0.001 < cp < 0.999:      # genuinely open -> not decided
+                continue
+            out[asset] = {"cond": pos.get("conditionId"),
+                          "iv": pos.get("initialValue") or 0,
+                          "p": max(0.001, min(0.999, pos.get("avgPrice") or 0)),
+                          "curp": cp,
+                          "res_t": _end_ts(pos.get("endDate")) or int(time.time())}
+        if len(pg) < 50:
+            break
+    return out
 
 
 def open_bets():
