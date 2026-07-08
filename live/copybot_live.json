@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.53,
+ "stake": 48.52,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1213.57,
- "cash": 1038.98,
- "deployed": 174.24,
+ "cash": 990.23,
+ "deployed": 222.77,
  "reserve": 0.0,
- "realized": 197.77,
+ "realized": 197.55,
  "adjustments": 15.45,
  "ledger_drift": -0.01,
- "open_count": 5,
- "fees_paid": 23.94,
+ "open_count": 6,
+ "fees_paid": 24.16,
  "fee_rate": 0.03,
  "lag": {
-  "n": 34,
-  "n24": 14,
-  "avg_s": 13.2,
-  "avg_slip_pct": -0.1463,
+  "n": 35,
+  "n24": 15,
+  "avg_s": 12.5,
+  "avg_slip_pct": -0.1366,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,24 @@
   "BikesAreTheBikes": 215.88
  },
  "bets": [
+  {
+   "token": "3190854311118956127770951783770847059067199259326144975916391196231309401395",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "WTI Crude Oil (WTI) closes above $72 on July 8?",
+   "their_price": 0.85,
+   "my_price": 0.85,
+   "slippage_pct": 0.0,
+   "shares": 57.09,
+   "cost": 48.53,
+   "fee": 0.22,
+   "opened": 1783499050,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "49668995155793051805808018718891699741213296790665178226190150414520658676729",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1358,5 +1376,5 @@
   }
  ],
  "missed_pnl": -372.25,
- "updated": 1783498623
+ "updated": 1783499051
 }
