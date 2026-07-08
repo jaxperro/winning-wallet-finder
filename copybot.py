@@ -499,6 +499,28 @@ class Copybot:
         st = self.engine.state
         bets = st.setdefault("bets", {})
         mp = st["my_pos"]
+        # my_pos -> bets: a position can land in my_pos without a bet record when
+        # its fill was drained in a context where _record_lag didn't fire (e.g. a
+        # second market on the same event processed in one batch). It's cash-
+        # correct (open_exposure/open_count read my_pos) but INVISIBLE in the feed
+        # table, so the header showed "2 open" while the table showed 1. Synthesize
+        # the missing record from my_pos so the counts always match what's shown.
+        for tok, p in mp.items():
+            b = bets.get(tok)
+            if not b or b.get("status") != "open":
+                bets[tok] = {
+                    "token": tok, "wallet": p.get("wallet", ""),
+                    "name": self.names.get((p.get("wallet") or "").lower())
+                            or (b or {}).get("name") or "?",
+                    "outcome": p.get("outcome"), "title": (p.get("title") or "")[:90],
+                    "their_price": None,
+                    "my_price": round(p["cost"] / p["shares"], 4) if p.get("shares") else None,
+                    "slippage_pct": None,
+                    "shares": round(p["shares"], 2), "cost": round(p["cost"], 2),
+                    "fee": (b or {}).get("fee", 0),
+                    "opened": (b or {}).get("opened") or int(time.time()), "status": "open",
+                    "exit_price": None, "pnl": None, "settled": None,
+                }
         for tok, b in bets.items():
             if b["status"] == "open" and tok not in mp:
                 b["status"] = "closed"

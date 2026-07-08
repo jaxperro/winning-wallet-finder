@@ -486,7 +486,8 @@ class CopyTrader:
         else:
             self.state["my_pos"][token] = {
                 "shares": res["filled_shares"], "cost": spent,
-                "title": title, "outcome": outcome, "event": event}
+                "title": title, "outcome": outcome, "event": event,
+                "wallet": wallet}          # attribution for the feed's my_pos->bets safety net
         tag = "[PAPER]" if not self.ex.live else "[LIVE]"
         self.alert(
             f"{kind} {label} — {tag} buy {res['filled_shares']:.1f} "
