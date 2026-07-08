@@ -20,7 +20,7 @@
       "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
       "name": "LSB1",
       "class": "volume",
-      "floor": 253.99
+      "floor": 254.23
     },
     {
       "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
@@ -50,7 +50,7 @@
       "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
       "name": "ArbTrader",
       "class": "volume",
-      "floor": 168.48
+      "floor": 168.41
     }
   ],
   "follow": {
