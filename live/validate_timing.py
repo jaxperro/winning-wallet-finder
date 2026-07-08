@@ -186,19 +186,38 @@ def display_stats(w):
     exits = cache.closed_exits(w)     # {asset: {ts, iv, realized_pnl, ...}} closed, full history
 
     def rtally(positions):
-        """(won, lost, scratch, pnl) over closed positions by realized_pnl sign."""
-        won_ = lost_ = scr_ = 0
+        """(won, lost, ref, sold, pnl) over closed positions. Same taxonomy as
+        the bot and the backtest (2026-07-08): WON/LOST/REF = held to
+        resolution, SOLD = exited pre-resolution — a sell prints a mid price,
+        a redeem prints ≈ the payout (1/0/0.5), same discriminator as
+        portfolio._sold_pre_resolution. The old sign-only tally counted a
+        mirror-seller's exits as wins (0xb0E43B: '94.4%' on 937 sells with
+        virtually no held outcomes). Sold P&L still lands in pnl; win% is
+        held-only, matching 'sold exits not counted as W or L' everywhere
+        else. Fold-ins from _open_split carry no exit_p — held by definition,
+        classified by sign."""
+        won_ = lost_ = ref_ = sold_ = 0
         pnl = 0.0
         for e in positions:
             rp = e.get("realized_pnl") or 0
             pnl += rp
-            if rp > 0.01:
-                won_ += 1
-            elif rp < -0.01:
-                lost_ += 1
+            xp = e.get("exit_p")
+            if xp is None:                       # decided-unredeemed fold-in
+                if rp > 0.01:
+                    won_ += 1
+                elif rp < -0.01:
+                    lost_ += 1
+                else:
+                    ref_ += 1
+            elif abs(xp - 1.0) <= 0.02:
+                won_ += 1                        # redeemed winner / payout dump
+            elif xp <= 0.001:
+                lost_ += 1                       # loser booked at zero
+            elif abs(xp - 0.5) <= 0.005:
+                ref_ += 1                        # 50/50 refund redeem
             else:
-                scr_ += 1
-        return won_, lost_, scr_, round(pnl)
+                sold_ += 1                       # genuine pre-resolution sell
+        return won_, lost_, ref_, sold_, round(pnl)
 
     # realized universe = redeemed/sold closed positions (exits, with realizedPnl)
     # PLUS decided-but-unredeemed positions (resolved losers/winners still sitting
@@ -206,7 +225,7 @@ def display_stats(w):
     # a wallet's true realized record includes the bets it walked away from.
     open_pnl, resolved_open = _open_split(w)
     allpos = list(exits.values()) + resolved_open
-    all_won, all_lost, all_scr, all_pnl = rtally(allpos)
+    all_won, all_lost, all_scr, all_sold, all_pnl = rtally(allpos)
     # conviction = the wallet's top-20%-by-stake positions (iv); conv30 = those
     # closed in the last 30d. Realized P&L over each set.
     thr = cache.conv_cutoff(e["iv"] for e in allpos if (e.get("iv") or 0) > 0)
@@ -214,19 +233,19 @@ def display_stats(w):
     cut30 = now - 30 * 86400
     conv30 = [e for e in conv if (e.get("ts") or 0) >= cut30]
     recent = sorted(allpos, key=lambda e: e.get("ts") or 0, reverse=True)[:500]
-    cw, cl, cscr, cpnl = rtally(conv)
-    c3w, c3l, c3scr, c3pnl = rtally(conv30)
+    cw, cl, cscr, csold, cpnl = rtally(conv)
+    c3w, c3l, c3scr, c3sold, c3pnl = rtally(conv30)
     out = {
         "conv_win": round(100 * cw / (cw + cl), 1) if (cw + cl) else None,
-        "conv_won": cw, "conv_lost": cl, "conv_ref": cscr, "conv_sold": 0,
+        "conv_won": cw, "conv_lost": cl, "conv_ref": cscr, "conv_sold": csold,
         "conv_pnl": cpnl,
         "conv30_win": round(100 * c3w / (c3w + c3l), 1) if (c3w + c3l) else None,
-        "conv30_won": c3w, "conv30_lost": c3l, "conv30_ref": c3scr, "conv30_sold": 0,
+        "conv30_won": c3w, "conv30_lost": c3l, "conv30_ref": c3scr, "conv30_sold": c3sold,
         "conv30_pnl": c3pnl,
-        "realized_pnl": rtally(recent)[3],
+        "realized_pnl": rtally(recent)[4],
         "all_win": round(100 * all_won / (all_won + all_lost), 1) if (all_won + all_lost) else None,
         "all_won": all_won, "all_lost": all_lost, "all_ref": all_scr,
-        "all_sold": 0, "all_pnl": all_pnl,
+        "all_sold": all_sold, "all_pnl": all_pnl,
         "open_pnl": open_pnl,          # genuinely in-flight only (resolved folded into realized)
         "pm_pnl": _pm_profit(w),
         "avg_bet": round(sum(e["iv"] for e in conv) / len(conv)) if conv else 0,
