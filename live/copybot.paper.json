@@ -8,13 +8,13 @@
       "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
       "name": "LSB1",
       "class": "volume",
-      "floor": 258.17
+      "floor": 258.51
     },
     {
       "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
       "name": "imwalkinghere",
       "class": "volume",
-      "floor": 122.42
+      "floor": 122.32
     },
     {
       "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -23,22 +23,28 @@
       "floor": 126.84
     },
     {
-      "wallet": "0x0d42cc5ff0526fbb8f0bb9eafa9ebba3f23df124",
-      "name": "42021",
-      "class": "volume",
-      "floor": 276.98
-    },
-    {
       "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
       "name": "0xbadaf319",
       "class": "volume",
       "floor": 44.98
     },
     {
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "name": "BikesAreTheBikes",
+      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+      "name": "gkmgkldfmg",
       "class": "volume",
-      "floor": 217.57
+      "floor": 304.34
+    },
+    {
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "name": "AIcAIc",
+      "class": "volume",
+      "floor": 295.32
+    },
+    {
+      "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+      "name": "1kto1m",
+      "class": "volume",
+      "floor": 320.95
     }
   ],
   "follow": {
