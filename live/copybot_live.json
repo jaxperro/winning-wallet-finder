@@ -589,6 +589,21 @@
  ],
  "missed": [
   {
+   "ts": 1783494594,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "112647675842455810053000856007873928696360897468065849941777938122717569163887",
+   "cond": "0x1fb9dcb548a42fd978b7d757db5b992f8413a0d1137b89ab3a4b50b0aede98b2",
+   "title": "Will the price of Solana be between $80 and $90 on July 8?",
+   "outcome": "No",
+   "price": 0.9,
+   "stake": 48.53,
+   "reason": "price moved 0.85\u21920.90",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783432430,
    "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
    "token": "84950618222681215763408950080741733705743606777117477467780626347859800941546",
@@ -1325,5 +1340,5 @@
   }
  ],
  "missed_pnl": -372.25,
- "updated": 1783494392
+ "updated": 1783494595
 }
