@@ -1096,6 +1096,10 @@ class Copybot:
             st = self.engine.state
             bets = st.get("bets", {})
             missed_toks = {m["token"] for m in st.get("missed", [])}
+            # tokens adjudicated 'accumulated via sub-floor clips, not a miss'
+            # — persisted so each backstop pass doesn't re-fetch and re-log
+            no_miss = set(st.setdefault("no_miss_toks", []))
+            missed_toks |= no_miss
             for w in self.cfg.get("watchlist", []):
                 ps = sm.get_json("/positions", {"user": w, "limit": 500,
                                                 "sizeThreshold": 0})
@@ -1117,6 +1121,35 @@ class Copybot:
                     ok, _ = self.filt.check(w, trade)
                     if not ok:
                         continue
+                    # the live path gates PER TRADE; a position can accumulate
+                    # past the floor via sub-floor clips the bot rightly skipped
+                    # one by one (2026-07-08: 0xbadaf319's paired YES+NO arb
+                    # clips of $6–37 built $40+ positions that read as
+                    # 'missed · bot offline' while the bot was UP and skipping
+                    # every fill). Only a genuine miss if some SINGLE buy on
+                    # this market would have passed the same filter. Market-
+                    # filtered /trades = full history for the market (no
+                    # pagination window, unlike /activity), usdcSize
+                    # synthesized where that endpoint omits it. API failure
+                    # falls through to the old behavior (record the miss).
+                    cond = p.get("conditionId")
+                    trs = sm.get_json("/trades", {"user": w, "market": cond,
+                                                  "limit": 100}) if cond else None
+                    if trs is not None:
+                        for t_ in trs:
+                            if not t_.get("usdcSize"):
+                                t_["usdcSize"] = (t_.get("size") or 0) * (t_.get("price") or 0)
+                        if not any(t_.get("side") == "BUY"
+                                   and str(t_.get("asset")) == str(tok)
+                                   and self.filt.check(w, t_)[0] for t_ in trs):
+                            log(f"reconcile: {name} accumulated "
+                                f"{(p.get('title') or '?')[:38]} via sub-floor "
+                                f"clips (${iv:,.0f} total) — not copyable under "
+                                f"per-trade rules, not a miss")
+                            no_miss.add(tok)
+                            st["no_miss_toks"] = sorted(no_miss)
+                            missed_toks.add(tok)
+                            continue
                     want = self.engine.stake_usd(w, iv)
                     self.engine.record_miss(
                         w, tok, p.get("conditionId"), p.get("title") or "",
