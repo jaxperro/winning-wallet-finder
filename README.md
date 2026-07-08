@@ -30,16 +30,18 @@ Three deployed pieces + one static dashboard:
 
 **The July 2026 live test:** a fresh $1,000 paper book (started 2026-07-02 on
 Railway; moved to Fly.io Stockholm 2026-07-06 with the book intact) following
-the wallet set in **`live/copybot.paper.json`** — the single
-source of truth (currently 5 volume + 3 whale wallets; the dashboard hero lists
-them live). Two stake classes: **volume** wallets (4% of equity/bet) are copied
-on their **conviction bets only** (auto p80 floor derived at boot); **whale**
-wallets (12%/bet) are copied on **every trade** — they're the big-clip informed
-holders the trusted-row re-validation surfaced (see FINDINGS "The holder blind
-spot"). Every stake is **capped at the signal's own bet size**. Every fill
-records detection lag, price slippage, and the taker fee; missed bets are
-recorded and settled hypothetically. If this month's *measured* numbers hold
-up, real money follows (see [`LIVE_TEST.md`](LIVE_TEST.md)).
+the wallet set in **`live/copybot.paper.json`** — the single source of truth.
+The follow set is **Set D** (2026-07-08): six moderate-bet, copyable, copy-P&L-
+positive wallets — **LSB1, imwalkinghere, Kruto2027, 42021, 0xbadaf319,
+BikesAreTheBikes** — chosen by simulation over the corrected data (see FINDINGS
+"Choosing the month's follow set"). All are **volume** class: copied on their
+**conviction bets only** (top-20%-by-stake, floor pinned daily from the trusted
+cache p80 via `sync_floors.py`), 4% of equity/bet, **capped at the signal's own
+bet size**. The whale class (12%/bet, follow-all) is retired — those wallets
+fell off the sharp list once refunds and abandoned losers were scored honestly.
+Every fill records detection lag, price slippage, and the taker fee; missed
+bets are recorded and settled hypothetically. If this month's *measured*
+numbers hold up, real money follows (see [`LIVE_ROLLOUT.md`](LIVE_ROLLOUT.md)).
 
 ```
  data layer            selection                          execution              display
@@ -186,11 +188,12 @@ backtest and bot share:
   and `slippage_pct` are logged, and the backtest applies a +0.5%/~90s
   haircut. Poll-era measurements: ~39s avg lag, **−4.0% avg slip** (the
   asymmetric price guard means better-than-their-price fills are common).
-- **Dynamic sizing, two wallet classes, their-bet ceiling**: each bet stakes a
-  fraction of current working equity set by the followed wallet's class —
-  **`volume`** (default, 4%, conviction bets only) or **`whale`** (12%, every
-  trade), fractions in `follow.class_pct` — **and is never larger than the
-  signal's own position size**: when the percentage works out to more than the
+- **Dynamic sizing, their-bet ceiling**: each bet stakes a fraction of current
+  working equity — **4% for `volume`** wallets (conviction bets only), the
+  class the whole Set-D follow list now uses; `follow.class_pct` still carries
+  a `whale` fraction (12%, every trade) for the retired follow-all mode — **and
+  is never larger than the signal's own position size**: when the percentage
+  works out to more than the
   wallet actually bet, the copy mirrors their exact amount (you can't
   out-conviction the signal, and fills stay within size the market demonstrably
   absorbed). Stakes compound both ways and halve while equity is below 80% of

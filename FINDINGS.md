@@ -288,6 +288,71 @@ weekly; never size as if the 100% win rates are permanent.
 trusted rows, judge held edges on windows longer than the wallet's lead time,
 and add `z_all` — skill must show in the whole book, not just the big bets.*
 
+## Making P&L equal reality — the survivorship correction, finished (2026-07-08)
+
+The sharps table's All-Time P&L had been a `won × entry × size` reconstruction,
+and decomposing it against each wallet's Polymarket profile (lb-api `/profit`,
+the **PM P&L** column) exposed it diverging by **up to 10× — and flipping
+signs.** Four distinct bugs, each earned by decomposing an outlier:
+
+1. **A 2,000-row pull cap** (`max_pages=40`) truncated high-volume wallets —
+   ewww1's 4,088 positions ($409k) showed as 740 ($40k).
+2. **Both-sides positions double-dropped** — one-per-market dedup kept the
+   winning leg and silently dropped the paired losing leg (suraxy: +$35k of
+   phantom profit).
+3. **`initialValue = 0`** on big longshot winners mis-sized the reconstruction.
+4. **Corrupt near-epoch `res_t`** rows polluted the sums.
+
+**The fix that killed all four at once:** stop reconstructing, and sum
+Polymarket's own `realizedPnl` per closed position over the wallet's *full*
+history (`cache.closed_exits`, incremental). This is the wallet's realized
+track record — what a copier mirroring their buy/sell/hold actually banks — and
+it needs no size/entry/timestamp, so both-sides, `iv=0`, and bad `res_t` all
+become moot, and it sums to PM by construction.
+
+**Then the deeper one — the founding survivorship bias, live inside PM itself.**
+A residual gap remained: PM `/profit` is *itself* survivorship-biased. Bets that
+lost, went to $0, and were never redeemed sit in `/positions` at `curPrice 0` —
+real losses, but PM under-counts them **unevenly** (it subtracts Coteykens'
+$52k of abandoned losers to land at $14k = our number, but does *not* subtract
+oliman2's $161k, leaving PM at $112k against a true $20k). So `_open_split` now
+folds those decided-but-unredeemed positions into the realized total, leaving
+only genuinely in-flight positions in a new **Open P&L** column. The result:
+**where our All-Time reads below PM, PM is the biased number and ours is the
+truth.** oliman2 $181k → **$20k**, JuiceFarm $380k → **$32k** — wallets that
+looked elite on redeemed-only P&L are mediocre once you count the bets they
+walked away from. Full-list check: 27 of 31 sharps match PM within a few
+percent, 4 are honestly-lower, and — the correctness signal — **zero
+over-count.**
+
+*Lesson: a wallet's redeemed P&L flatters "sell your winners, abandon your
+losers." The honest record counts the abandoned losers; the profile number
+doesn't. Rank on realized-including-abandoned, and read the open book as a
+separate risk.*
+
+## Choosing the month's follow set from corrected data (Set D, 2026-07-08)
+
+With P&L finally honest, the follow set was rebuilt by simulation. Ranking on
+the signals that actually predict forward copy profit — 2-month **Copy P&L**
+(validated outside the backtest window), 30-day conviction form, copyable lead
+(no sub-hour snipers), a clean open book, and moderate bet size (a $1k book
+can't follow a $3k-clip wallet) — then backtesting candidate portfolios:
+
+| set | equity (30d, $1k) | W–L | missed |
+|-----|-------------------|-----|--------|
+| old live set | $15,359 | 250–79 | 0 |
+| 5 high-lead big-bettors | $3,661 | 44–18 | **144** (capital-capped) |
+| **Set D (6 moderate-bet)** | **$27,799** | **279–75** | **0** |
+
+**Set D = LSB1, imwalkinghere, Kruto2027, 42021, 0xbadaf319, BikesAreTheBikes**
+— the sweet spot where return, a 79% decided win rate, full capture (0 missed),
+and diversification all peak. Two rules fell out: **moderate-bet wallets beat
+big-bettors** on a small book (the whales get capital-capped, 144 missed), and
+**imwalkinghere + LSB1 are irreplaceable** (dropping them halves the return).
+The backtest is in-sample (a ceiling), but every Set D wallet also clears the
+out-of-window Copy P&L signal — that's what separates it from curve-fitting.
+The live July book remains the only out-of-sample truth.
+
 ## Repo layout
 
 - `insider.py` — the detector: z-score/p-value, timing/freshness/sizing signals,
