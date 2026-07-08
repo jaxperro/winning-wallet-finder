@@ -10879,8 +10879,8 @@
       "sold_proceeds": 53.301854206657914
     }
   },
-  "feed_sig": "5ff8d80725490536b6c1caec54624ad9",
-  "feed_pushed_at": 1783535822.4129086,
+  "feed_sig": "c4f4f01ed5fbb1b2565ba58bc6670f1f",
+  "feed_pushed_at": 1783536441.5849195,
   "hwm": 1261.6750421577544,
   "missed": [
     {
@@ -11647,6 +11647,21 @@
       "pnl": null,
       "settled": null,
       "name": "0xbadaf319"
+    },
+    {
+      "ts": 1783536504,
+      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+      "token": "2056315960755800650041893197824873999417639556425380273899030638537691967612",
+      "cond": "0x48ef7e5c61abb0d75b21a94c76b1fe4f4d66326225714de3a177e97fd227c5ea",
+      "title": "Dota 2: Virtus.pro vs 1win - Game 1 Winner",
+      "outcome": "Virtus.pro",
+      "price": 0.4961,
+      "stake": 49.81,
+      "reason": "bot offline (entered while down)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "gkmgkldfmg"
     }
   ],
   "adjustments": [

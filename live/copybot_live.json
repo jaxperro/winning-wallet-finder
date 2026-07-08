@@ -746,6 +746,21 @@
  ],
  "missed": [
   {
+   "ts": 1783536504,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "2056315960755800650041893197824873999417639556425380273899030638537691967612",
+   "cond": "0x48ef7e5c61abb0d75b21a94c76b1fe4f4d66326225714de3a177e97fd227c5ea",
+   "title": "Dota 2: Virtus.pro vs 1win - Game 1 Winner",
+   "outcome": "Virtus.pro",
+   "price": 0.4961,
+   "stake": 49.81,
+   "reason": "bot offline (entered while down)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783494594,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "112647675842455810053000856007873928696360897468065849941777938122717569163887",
@@ -1512,5 +1527,5 @@
   }
  ],
  "missed_pnl": -367.0,
- "updated": 1783535948
+ "updated": 1783536506
 }
