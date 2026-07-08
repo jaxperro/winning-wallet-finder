@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.52,
+ "stake": 48.49,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1213.57,
- "cash": 990.23,
- "deployed": 222.77,
+ "cash": 940.91,
+ "deployed": 271.29,
  "reserve": 0.0,
- "realized": 197.55,
+ "realized": 196.75,
  "adjustments": 15.45,
  "ledger_drift": -0.01,
- "open_count": 6,
- "fees_paid": 24.16,
+ "open_count": 7,
+ "fees_paid": 24.96,
  "fee_rate": 0.03,
  "lag": {
-  "n": 35,
-  "n24": 15,
-  "avg_s": 12.5,
-  "avg_slip_pct": -0.1366,
+  "n": 36,
+  "n24": 16,
+  "avg_s": 11.9,
+  "avg_slip_pct": -0.1294,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,24 @@
   "BikesAreTheBikes": 215.88
  },
  "bets": [
+  {
+   "token": "95676548525614691656970153001244738030704823210041753577158504248850005676647",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "US x Iran diplomatic meeting by July 31, 2026?",
+   "their_price": 0.46,
+   "my_price": 0.45,
+   "slippage_pct": -0.0217,
+   "shares": 107.82,
+   "cost": 48.52,
+   "fee": 0.8,
+   "opened": 1783499156,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "3190854311118956127770951783770847059067199259326144975916391196231309401395",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1376,5 +1394,5 @@
   }
  ],
  "missed_pnl": -372.25,
- "updated": 1783499051
+ "updated": 1783499159
 }
