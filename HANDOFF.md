@@ -8,9 +8,15 @@ deeper history; the repo is authoritative.
 ## Where things stand (all green)
 
 - **Live paper bot**: Fly.io app `wwf-copybot`, region `arn` (Stockholm),
-  push mode. Following **Set D** (2026-07-08): LSB1, imwalkinghere, Kruto2027,
-  42021, 0xbadaf319, BikesAreTheBikes — 6 moderate-bet volume wallets chosen by
-  simulation ($27.8k / +2680% 30d backtest). `flyctl logs --app wwf-copybot`.
+  push mode. Following **Set E** (2026-07-08 PM): LSB1, imwalkinghere,
+  Kruto2027, 0xbadaf319, gkmgkldfmg, AIcAIc, 1kto1m — 7 volume wallets chosen
+  by the ALIGNED honest replay (Set E $24.4k/+2338% vs Set D $17.4k/+1636%
+  30d; every member positive in the shared book; 42021/BikesAreTheBikes
+  dropped as mid-pack, oliman2/leegunner excluded by the anti-survivorship
+  audit — oliman2's true lifetime is ~$19k, not PM's $112k; leegunner is
+  elite lifetime but replays NEGATIVE for a copier, 7.6-day holds). Caveat:
+  newcomers gkmgkldfmg z=2.05 / 1kto1m z=2.4 sit near the selection gate
+  floor — watch their forward month. `flyctl logs --app wwf-copybot`.
 - **P&L is honest end-to-end** (sharps All-Time = realized track record +
   abandoned-loser fold-in; Open P&L = in-flight exposure — see rev 1 in git
   history for the full derivation).
