@@ -44,7 +44,7 @@ import trust
 _SSL = ssl._create_unverified_context()
 
 HERE = os.path.dirname(__file__)
-BANK = 1000.0
+# BANK is set after the arg/backtest.json parse below
 GAMMA = "https://gamma-api.polymarket.com"
 
 # ---- interchangeable-wallet replay: live/backtest.json ----------------------
@@ -58,6 +58,7 @@ GAMMA = "https://gamma-api.polymarket.com"
 _ap = argparse.ArgumentParser()
 _ap.add_argument("--wallets", help="comma list of addresses; ':whale' suffix opts into whale class")
 _ap.add_argument("--days", type=int, help="window length (default backtest.json's, else 30)")
+_ap.add_argument("--bank", type=float, help="starting bankroll (default backtest.json's, else 1000)")
 _ap.add_argument("--out", help="output path (default $PORTFOLIO_OUT or portfolio.json)")
 _ARGS, _ = _ap.parse_known_args()
 try:
@@ -65,6 +66,7 @@ try:
 except Exception:
     _BT = {}
 DAYS = _ARGS.days or int(_BT.get("days", 30))
+BANK = float(_ARGS.bank or _BT.get("bank", 1000.0))
 START = time.time() - DAYS * 86400        # rolling: started following DAYS ago
 CLASS_PCT = {"volume": 0.04, "whale": 0.12, **(_BT.get("class_pct") or {})}
 BASE_PCT = CLASS_PCT.get("volume", 0.04)  # sweep threshold stays on the base class
