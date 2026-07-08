@@ -259,11 +259,17 @@ def closed_exits(wallet, max_age_s=6 * 3600):
 
 
 def invalidate(wallets):
-    """Force a re-pull of these wallets on next get_bets (for daily watchlist
-    forward-refresh)."""
+    """Force a re-pull of these wallets on next get_bets/get_entries (for daily
+    watchlist forward-refresh). pulled_entries MUST be cleared too: a stale
+    entries snapshot has no first_buy for conds entered since the last pull, and
+    portfolio.py drops those bets entirely (`if not et: continue`) — Kruto's
+    Jul-7 Brewers bets vanished from the backtest for exactly this while its
+    bets/exits cursors were fresh (found 2026-07-08). Exits have their own
+    incremental cursor and don't go stale this way."""
     with _lock:
         for w in wallets:
             _con.execute("DELETE FROM pulled WHERE wallet=?", [w])
+            _con.execute("DELETE FROM pulled_entries WHERE wallet=?", [w])
 
 
 def query(sql, params=None):
