@@ -57,8 +57,13 @@ The repo is authoritative; project memory has deeper history.
 
 ## Watch list (the standing question: does Set E hold up?)
 
+- **0xbadaf319** — 2026-07-08 evening revealed his structure: PAIRED YES+NO
+  clips ($6–37 each, sums ≈ $1.00) = two-sided arb/merge flow, not
+  directional conviction. Copying one leg of a hedge is a bet HE never took;
+  his replay P&L rode the larger leg of pairs. Moves to the TOP of the
+  demotion watch list — judge on forward copies, not his account P&L.
 - **AIcAIc** — held-win only 42%; his edge is sell-timing (most lag-fragile
-  class). First demotion candidate.
+  class). Second demotion candidate.
 - **1kto1m** (z=2.4) and **gkmgkldfmg** (z=2.05) — near the gate floor;
   strong month, shallow statistical edge.
 - Re-ranking is cheap: the per-wallet replay harness pattern is in FINDINGS
