@@ -142,13 +142,13 @@
   {
     "wallet": "0x04be12cdb4f3f0e43bb78c6145f442ed53411aec",
     "name": "0x04be12cd",
-    "train_win": 68.5,
-    "train_conv_roi": 0.615,
-    "train_z": 7.12,
-    "z_all": 6.79,
+    "train_win": 68.7,
+    "train_conv_roi": 0.618,
+    "train_z": 7.18,
+    "z_all": 6.8,
     "med_stake": 489,
-    "avg_entry": 0.41,
-    "train_n": 165,
+    "avg_entry": 0.42,
+    "train_n": 166,
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
@@ -308,32 +308,32 @@
     "fwd_n": 183
   },
   {
+    "wallet": "0x6d2292935570e3fad05b392d49e60699c1024b50",
+    "name": "0x6d229293",
+    "train_win": 77.6,
+    "train_conv_roi": 0.401,
+    "train_z": 2.57,
+    "z_all": 4.32,
+    "med_stake": 3071,
+    "avg_entry": 0.61,
+    "train_n": 49,
+    "fwd_win": 66.7,
+    "fwd_conv_roi": 0.018,
+    "fwd_n": 3
+  },
+  {
     "wallet": "0xe542afd3881c4c330ba0ebbb603bb470b2ba0a37",
     "name": "0xe542afd3",
     "train_win": 68.2,
     "train_conv_roi": 0.378,
     "train_z": 7.99,
-    "z_all": 14.39,
+    "z_all": 14.42,
     "med_stake": 838,
     "avg_entry": 0.53,
     "train_n": 485,
     "fwd_win": 62.6,
     "fwd_conv_roi": 0.221,
     "fwd_n": 107
-  },
-  {
-    "wallet": "0x6d2292935570e3fad05b392d49e60699c1024b50",
-    "name": "0x6d229293",
-    "train_win": 76.0,
-    "train_conv_roi": 0.373,
-    "train_z": 2.4,
-    "z_all": 4.44,
-    "med_stake": 3071,
-    "avg_entry": 0.61,
-    "train_n": 50,
-    "fwd_win": 66.7,
-    "fwd_conv_roi": 0.018,
-    "fwd_n": 3
   },
   {
     "wallet": "0x82d2e4dbb0a849ff8e2f5380719769145648beea",
@@ -350,6 +350,20 @@
     "fwd_n": 162
   },
   {
+    "wallet": "0x88ad3166c6cce6a1bf732050749089273252a1f3",
+    "name": "0x88ad3166",
+    "train_win": 71.7,
+    "train_conv_roi": 0.353,
+    "train_z": 5.2,
+    "z_all": 5.18,
+    "med_stake": 58,
+    "avg_entry": 0.59,
+    "train_n": 315,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 0
+  },
+  {
     "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
     "name": "0xd96750bf",
     "train_win": 76.4,
@@ -362,20 +376,6 @@
     "fwd_win": 71.8,
     "fwd_conv_roi": 0.247,
     "fwd_n": 202
-  },
-  {
-    "wallet": "0x88ad3166c6cce6a1bf732050749089273252a1f3",
-    "name": "0x88ad3166",
-    "train_win": 71.7,
-    "train_conv_roi": 0.352,
-    "train_z": 5.28,
-    "z_all": 5.13,
-    "med_stake": 58,
-    "avg_entry": 0.58,
-    "train_n": 315,
-    "fwd_win": null,
-    "fwd_conv_roi": null,
-    "fwd_n": 0
   },
   {
     "wallet": "0xc0b646c3d97e2e86a1bceaa880ad2f628eb33a92",
@@ -462,6 +462,20 @@
     "fwd_n": 11
   },
   {
+    "wallet": "0xf6099a9eacfef24a4161bd857fbfbcd36cdfe68b",
+    "name": "0xf6099a9e",
+    "train_win": 82.2,
+    "train_conv_roi": 0.275,
+    "train_z": 3.88,
+    "z_all": 3.58,
+    "med_stake": 60,
+    "avg_entry": 0.65,
+    "train_n": 90,
+    "fwd_win": 75.6,
+    "fwd_conv_roi": 0.118,
+    "fwd_n": 262
+  },
+  {
     "wallet": "0xd6a21015449cb457cc62c4398eadd9e5b3911228",
     "name": "0xd6a21015",
     "train_win": 89.4,
@@ -476,18 +490,18 @@
     "fwd_n": 0
   },
   {
-    "wallet": "0xf6099a9eacfef24a4161bd857fbfbcd36cdfe68b",
-    "name": "0xf6099a9e",
-    "train_win": 81.3,
-    "train_conv_roi": 0.261,
-    "train_z": 3.72,
-    "z_all": 3.58,
-    "med_stake": 59,
-    "avg_entry": 0.65,
-    "train_n": 91,
-    "fwd_win": 75.7,
-    "fwd_conv_roi": 0.12,
-    "fwd_n": 263
+    "wallet": "0x098eddabb2d388f31e79aaf525e49588f22a6fa2",
+    "name": "0x098eddab",
+    "train_win": 81.6,
+    "train_conv_roi": 0.251,
+    "train_z": 4.02,
+    "z_all": 3.91,
+    "med_stake": 221,
+    "avg_entry": 0.67,
+    "train_n": 114,
+    "fwd_win": 72.0,
+    "fwd_conv_roi": 0.125,
+    "fwd_n": 50
   },
   {
     "wallet": "0xa5427f80816486ad3e4c80aad9711f87b8b5172c",
@@ -502,20 +516,6 @@
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
-  },
-  {
-    "wallet": "0x098eddabb2d388f31e79aaf525e49588f22a6fa2",
-    "name": "0x098eddab",
-    "train_win": 81.5,
-    "train_conv_roi": 0.25,
-    "train_z": 3.46,
-    "z_all": 2.49,
-    "med_stake": 221,
-    "avg_entry": 0.67,
-    "train_n": 81,
-    "fwd_win": 76.5,
-    "fwd_conv_roi": 0.048,
-    "fwd_n": 34
   },
   {
     "wallet": "0xed37e7316f6b1b99da8893e0c09cfe0bf1b62f93",
@@ -534,13 +534,13 @@
   {
     "wallet": "0x8c44dcfe1178aa04dfa44e000f5b89a054027baf",
     "name": "0x8c44dcfe",
-    "train_win": 77.6,
-    "train_conv_roi": 0.241,
-    "train_z": 2.92,
-    "z_all": 6.69,
+    "train_win": 77.4,
+    "train_conv_roi": 0.245,
+    "train_z": 2.91,
+    "z_all": 6.71,
     "med_stake": 121,
     "avg_entry": 0.64,
-    "train_n": 107,
+    "train_n": 106,
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
@@ -551,7 +551,7 @@
     "train_win": 71.4,
     "train_conv_roi": 0.231,
     "train_z": 2.84,
-    "z_all": 5.24,
+    "z_all": 5.16,
     "med_stake": 306,
     "avg_entry": 0.59,
     "train_n": 105,
@@ -602,20 +602,6 @@
     "fwd_n": 0
   },
   {
-    "wallet": "0x63fd80f1f506134d4787a7519877d0515c205c9c",
-    "name": "0x63fd80f1",
-    "train_win": 68.2,
-    "train_conv_roi": 0.21,
-    "train_z": 1.8,
-    "z_all": 3.61,
-    "med_stake": 100,
-    "avg_entry": 0.56,
-    "train_n": 44,
-    "fwd_win": 55.6,
-    "fwd_conv_roi": -0.18,
-    "fwd_n": 18
-  },
-  {
     "wallet": "0x1cff72c8dddc30a64486fda6eab71ab5f9243984",
     "name": "0x1cff72c8",
     "train_win": 79.2,
@@ -649,13 +635,41 @@
     "train_win": 85.7,
     "train_conv_roi": 0.199,
     "train_z": 4.98,
-    "z_all": 12.39,
+    "z_all": 12.4,
     "med_stake": 339,
     "avg_entry": 0.75,
     "train_n": 308,
     "fwd_win": 90.2,
     "fwd_conv_roi": 0.173,
     "fwd_n": 245
+  },
+  {
+    "wallet": "0xfdf2da3ea2c095d8f91aa24256bd862006e1225e",
+    "name": "0xfdf2da3e",
+    "train_win": 66.9,
+    "train_conv_roi": 0.192,
+    "train_z": 3.43,
+    "z_all": 2.51,
+    "med_stake": 188,
+    "avg_entry": 0.54,
+    "train_n": 127,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 0
+  },
+  {
+    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+    "name": "0xd7d36345",
+    "train_win": 70.7,
+    "train_conv_roi": 0.192,
+    "train_z": 1.94,
+    "z_all": 2.05,
+    "med_stake": 300,
+    "avg_entry": 0.59,
+    "train_n": 58,
+    "fwd_win": 60.5,
+    "fwd_conv_roi": 0.133,
+    "fwd_n": 147
   },
   {
     "wallet": "0x3eff118d4bc1742903d9516edf2e3c991600ae12",
@@ -667,20 +681,6 @@
     "med_stake": 194,
     "avg_entry": 0.68,
     "train_n": 401,
-    "fwd_win": null,
-    "fwd_conv_roi": null,
-    "fwd_n": 0
-  },
-  {
-    "wallet": "0xfdf2da3ea2c095d8f91aa24256bd862006e1225e",
-    "name": "0xfdf2da3e",
-    "train_win": 66.7,
-    "train_conv_roi": 0.186,
-    "train_z": 3.34,
-    "z_all": 2.44,
-    "med_stake": 188,
-    "avg_entry": 0.54,
-    "train_n": 126,
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
@@ -714,32 +714,32 @@
     "fwd_n": 7
   },
   {
-    "wallet": "0xc2d9576f67db505cf2e74a9c82b8be2b09f81ef4",
-    "name": "0xc2d9576f",
-    "train_win": 67.7,
-    "train_conv_roi": 0.174,
-    "train_z": 4.66,
-    "z_all": 2.38,
-    "med_stake": 200,
-    "avg_entry": 0.58,
-    "train_n": 365,
-    "fwd_win": null,
-    "fwd_conv_roi": null,
-    "fwd_n": 1
-  },
-  {
     "wallet": "0xc684828f6b03487759ced2ebdd975f91f3532228",
     "name": "0xc684828f",
     "train_win": 77.3,
     "train_conv_roi": 0.173,
     "train_z": 3.83,
-    "z_all": 4.01,
+    "z_all": 4.05,
     "med_stake": 929,
     "avg_entry": 0.67,
     "train_n": 247,
     "fwd_win": 68.9,
     "fwd_conv_roi": -0.051,
     "fwd_n": 61
+  },
+  {
+    "wallet": "0xc2d9576f67db505cf2e74a9c82b8be2b09f81ef4",
+    "name": "0xc2d9576f",
+    "train_win": 67.7,
+    "train_conv_roi": 0.171,
+    "train_z": 4.65,
+    "z_all": 2.43,
+    "med_stake": 200,
+    "avg_entry": 0.58,
+    "train_n": 365,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 1
   },
   {
     "wallet": "0xa6a67037b21956e7fbec5bc7e27a076276088651",
@@ -812,34 +812,6 @@
     "fwd_n": 23
   },
   {
-    "wallet": "0x7ccec29637829abd9e5d6f2cb68d4225c8fa8713",
-    "name": "0x7ccec296",
-    "train_win": 74.3,
-    "train_conv_roi": 0.146,
-    "train_z": 2.26,
-    "z_all": 2.51,
-    "med_stake": 775,
-    "avg_entry": 0.62,
-    "train_n": 70,
-    "fwd_win": null,
-    "fwd_conv_roi": null,
-    "fwd_n": 0
-  },
-  {
-    "wallet": "0xed61f86bb5298d2f27c21c433ce58d80b88a9aa3",
-    "name": "0xed61f86b",
-    "train_win": 77.6,
-    "train_conv_roi": 0.137,
-    "train_z": 2.43,
-    "z_all": 7.83,
-    "med_stake": 1151,
-    "avg_entry": 0.7,
-    "train_n": 183,
-    "fwd_win": null,
-    "fwd_conv_roi": null,
-    "fwd_n": 0
-  },
-  {
     "wallet": "0x3ab5ad27c676c4be1218397912eab5396e6de56f",
     "name": "0x3ab5ad27",
     "train_win": 78.8,
@@ -863,6 +835,34 @@
     "med_stake": 446,
     "avg_entry": 0.57,
     "train_n": 101,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 0
+  },
+  {
+    "wallet": "0xed61f86bb5298d2f27c21c433ce58d80b88a9aa3",
+    "name": "0xed61f86b",
+    "train_win": 77.2,
+    "train_conv_roi": 0.13,
+    "train_z": 2.29,
+    "z_all": 7.72,
+    "med_stake": 1190,
+    "avg_entry": 0.7,
+    "train_n": 184,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 0
+  },
+  {
+    "wallet": "0x7ccec29637829abd9e5d6f2cb68d4225c8fa8713",
+    "name": "0x7ccec296",
+    "train_win": 73.2,
+    "train_conv_roi": 0.13,
+    "train_z": 2.1,
+    "z_all": 2.52,
+    "med_stake": 774,
+    "avg_entry": 0.62,
+    "train_n": 71,
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
@@ -957,7 +957,7 @@
     "train_win": 76.8,
     "train_conv_roi": 0.114,
     "train_z": 2.41,
-    "z_all": 3.08,
+    "z_all": 3.05,
     "med_stake": 6664,
     "avg_entry": 0.7,
     "train_n": 224,
@@ -994,20 +994,6 @@
     "fwd_n": 98
   },
   {
-    "wallet": "0xab417c0bacc9fe17368d5d662c957f54a1fcc453",
-    "name": "0xab417c0b",
-    "train_win": 70.3,
-    "train_conv_roi": 0.107,
-    "train_z": 3.3,
-    "z_all": 2.24,
-    "med_stake": 221,
-    "avg_entry": 0.63,
-    "train_n": 387,
-    "fwd_win": 64.1,
-    "fwd_conv_roi": 0.123,
-    "fwd_n": 223
-  },
-  {
     "wallet": "0x8fe9f78102c6f550b6bb88ba695e45917df2c6dc",
     "name": "0x8fe9f781",
     "train_win": 65.6,
@@ -1020,6 +1006,20 @@
     "fwd_win": 0.0,
     "fwd_conv_roi": -1.0,
     "fwd_n": 5
+  },
+  {
+    "wallet": "0xab417c0bacc9fe17368d5d662c957f54a1fcc453",
+    "name": "0xab417c0b",
+    "train_win": 70.2,
+    "train_conv_roi": 0.106,
+    "train_z": 3.28,
+    "z_all": 2.23,
+    "med_stake": 222,
+    "avg_entry": 0.63,
+    "train_n": 386,
+    "fwd_win": 64.1,
+    "fwd_conv_roi": 0.123,
+    "fwd_n": 223
   },
   {
     "wallet": "0x46505242a39685d82de798a83da3f4a6fda0f3f0",
@@ -1092,6 +1092,20 @@
     "fwd_n": 57
   },
   {
+    "wallet": "0x3a847382ad6fff9be1db4e073fd9b869f6884d44",
+    "name": "0x3a847382",
+    "train_win": 69.7,
+    "train_conv_roi": 0.075,
+    "train_z": 3.67,
+    "z_all": 2.28,
+    "med_stake": 694,
+    "avg_entry": 0.6,
+    "train_n": 294,
+    "fwd_win": null,
+    "fwd_conv_roi": null,
+    "fwd_n": 0
+  },
+  {
     "wallet": "0x94f471f68396ff4a3cab8cb5c47c86274b8b77a2",
     "name": "0x94f471f6",
     "train_win": 68.3,
@@ -1104,20 +1118,6 @@
     "fwd_win": 65.1,
     "fwd_conv_roi": -0.036,
     "fwd_n": 83
-  },
-  {
-    "wallet": "0x3a847382ad6fff9be1db4e073fd9b869f6884d44",
-    "name": "0x3a847382",
-    "train_win": 69.8,
-    "train_conv_roi": 0.065,
-    "train_z": 3.68,
-    "z_all": 2.31,
-    "med_stake": 691,
-    "avg_entry": 0.6,
-    "train_n": 295,
-    "fwd_win": null,
-    "fwd_conv_roi": null,
-    "fwd_n": 0
   },
   {
     "wallet": "0xa85ce6075994cf3e069feeb2ccd9667608533463",
@@ -1153,13 +1153,27 @@
     "train_win": 72.0,
     "train_conv_roi": 0.032,
     "train_z": 3.21,
-    "z_all": 3.86,
+    "z_all": 3.89,
     "med_stake": 149,
     "avg_entry": 0.65,
     "train_n": 300,
     "fwd_win": null,
     "fwd_conv_roi": null,
     "fwd_n": 0
+  },
+  {
+    "wallet": "0x0d42cc5ff0526fbb8f0bb9eafa9ebba3f23df124",
+    "name": "0x0d42cc5f",
+    "train_win": 67.6,
+    "train_conv_roi": 0.018,
+    "train_z": 2.22,
+    "z_all": 5.8,
+    "med_stake": 420,
+    "avg_entry": 0.63,
+    "train_n": 352,
+    "fwd_win": 72.9,
+    "fwd_conv_roi": 0.135,
+    "fwd_n": 59
   },
   {
     "wallet": "0x16abe608bee11347334a2da15b96c185ee8e2f10",
@@ -1174,19 +1188,5 @@
     "fwd_win": 75.0,
     "fwd_conv_roi": -0.135,
     "fwd_n": 4
-  },
-  {
-    "wallet": "0x0d42cc5ff0526fbb8f0bb9eafa9ebba3f23df124",
-    "name": "0x0d42cc5f",
-    "train_win": 67.4,
-    "train_conv_roi": 0.015,
-    "train_z": 2.17,
-    "z_all": 5.78,
-    "med_stake": 419,
-    "avg_entry": 0.63,
-    "train_n": 353,
-    "fwd_win": 72.9,
-    "fwd_conv_roi": 0.135,
-    "fwd_n": 59
   }
 ]
