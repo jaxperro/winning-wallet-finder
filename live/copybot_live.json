@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 37.74,
+ "stake": 36.29,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
  "cash": 792.65,
- "deployed": 150.97,
+ "deployed": 114.62,
  "reserve": 0.0,
- "realized": -71.84,
+ "realized": -108.18,
  "adjustments": 15.45,
- "ledger_drift": 36.35,
- "open_count": 4,
+ "ledger_drift": 0.0,
+ "open_count": 3,
  "fees_paid": 22.21,
  "fee_rate": 0.03,
  "lag": {
@@ -60,7 +60,7 @@
    "status": "closed",
    "exit_price": 0.5023,
    "pnl": 0.37,
-   "settled": 1783476587,
+   "settled": 1783477122,
    "sold_shares": 77.0,
    "sold_proceeds": 38.68
   },
@@ -95,24 +95,6 @@
    "cost": 37.8,
    "fee": 0.89,
    "opened": 1783475377,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
-   "token": "62268045217838415143314425413382139516823618876739208102665837804570535617833",
-   "wallet": "",
-   "name": "?",
-   "outcome": "Over 2.5",
-   "title": "Hanyi Liu vs. Aoran Wang: Total Sets O/U 2.5",
-   "their_price": null,
-   "my_price": 0.49,
-   "slippage_pct": null,
-   "shares": 74.18,
-   "cost": 36.35,
-   "fee": 0,
-   "opened": 1783472788,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -1261,5 +1243,5 @@
   }
  ],
  "missed_pnl": -372.85,
- "updated": 1783476587
+ "updated": 1783477144
 }
