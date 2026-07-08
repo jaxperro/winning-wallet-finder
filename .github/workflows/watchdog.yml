@@ -1,0 +1,35 @@
+# Dead-man's switch for the copybot worker (the notify half; the self-heal
+# half is fly.toml's http /health check, which restarts a dark machine).
+# GH cron is coarse (fires ~every 30-150 min in practice) — fine here: the
+# failure mode this guards is MULTI-HOUR silence (the 2026-07-07 Fly trial
+# expiry left the bot dark 3.5h with nothing watching). Runs on GitHub's
+# infra, so it works when the Mac is asleep AND the Fly box is dead.
+name: watchdog
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: probe /health (3 tries, 60s apart)
+        id: probe
+        run: |
+          for i in 1 2 3; do
+            if curl -fsS --max-time 10 https://wwf-copybot.fly.dev/health; then
+              echo; echo "healthy on try $i"; exit 0
+            fi
+            echo "try $i failed"; [ $i -lt 3 ] && sleep 60
+          done
+          exit 1
+      - name: alert Discord
+        if: failure()
+        run: |
+          curl -fsS -X POST -H 'Content-Type: application/json' \
+            -d '{"content":"🚨 **copybot DOWN** — wwf-copybot.fly.dev/health failed 3 probes over 2 min. Check `flyctl status --app wwf-copybot` / `flyctl logs`. (Fly auto-restart should be trying; if this repeats, it is crash-looping or the account/billing broke — see 2026-07-07 trial-expiry incident.)"}' \
+            "$DISCORD_WEBHOOK_URL"
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
