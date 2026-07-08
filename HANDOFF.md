@@ -40,6 +40,21 @@ The repo is authoritative; project memory has deeper history.
   Published feed stays at $1,000 to match the paper book. $500 run: +2728%
   (small banks compound faster — their-bet ceilings bind later).
 
+## Queued next-session work (in value order)
+
+1. **Exact-res_t migration**: `payouts.resolution_time(cond)` (Etherscan V2,
+   wired+verified 2026-07-08) gives true resolution timestamps; migrate
+   trust.py / validate_timing / portfolio.py to consume them instead of
+   endDate metadata. Alignment-grade change — same care as the 2026-07-08
+   audit. Backfill throttled ≤5 req/s (Etherscan free tier).
+2. **Empirical fill model**: every copy now logs a `book` snapshot (spread +
+   5c depth) to the fills ledger; once a few weeks accumulate, fit slippage
+   vs stake/depth and replace portfolio.py's flat SLIP haircut; add a depth
+   gate before real-money sizing.
+3. **Funding-cluster tracer port** to Etherscan logs (Alchemy free tier now
+   caps getLogs at 10 blocks — insider.py's ring detection is degraded
+   until then).
+
 ## Watch list (the standing question: does Set E hold up?)
 
 - **AIcAIc** — held-win only 42%; his edge is sell-timing (most lag-fragile

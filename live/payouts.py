@@ -204,3 +204,48 @@ def stats():
 
 if __name__ == "__main__":
     print(stats())
+
+
+# ---- exact resolution TIME (Etherscan V2 logs; wired 2026-07-08) ------------
+# CLOB/gamma carry NO true resolution moment (end_date_iso can be months off —
+# the Jul-7 Brewers game carried 2026-05-05 — and cached res_t is endDate
+# metadata, 29h wrong on that market). The only truth is the CTF
+# ConditionResolution event. Alchemy's FREE tier caps eth_getLogs at 10
+# blocks (discovered 2026-07-08), so this goes through Etherscan V2
+# (chainid=137, wide-range topic-filtered logs, free `etherscan_key` in the
+# gitignored config.json). Cached forever — resolution events are immutable.
+# Free-tier limits: 5 req/s, 100k/day — throttle any bulk backfill.
+cache.query("CREATE TABLE IF NOT EXISTS resolution_times(cond TEXT PRIMARY KEY, res_ts BIGINT)")
+
+_CTF = "0x4D97DCd97eC945f40cF65F87097ACe5EA0476045"
+_RES_TOPIC = "0xb44d84d3289691f71497564b85d4233648d9dbae8cbdbb4329f301c3a0185894"
+
+
+def resolution_time(cond):
+    """Exact on-chain resolution timestamp for a condition — None while the
+    market is unresolved or without an etherscan_key. First caller pays one
+    Etherscan query; cached forever after."""
+    r = cache.query("SELECT res_ts FROM resolution_times WHERE cond=?", [cond])
+    if r:
+        return r[0][0]
+    key = os.environ.get("ETHERSCAN_KEY")
+    if not key:
+        try:
+            key = json.load(open(os.path.join(HERE, "..", "config.json"))).get("etherscan_key")
+        except Exception:
+            key = None
+    if not key:
+        return None
+    url = ("https://api.etherscan.io/v2/api?chainid=137&module=logs&action=getLogs"
+           f"&address={_CTF}&topic0={_RES_TOPIC}&topic0_1_opr=and&topic1={cond}"
+           f"&fromBlock=0&toBlock=latest&apikey={key}")
+    try:
+        resp = json.load(urllib.request.urlopen(url, timeout=30, context=_SSL))
+        res = resp.get("result") or []
+        if resp.get("status") == "1" and res:
+            ts = int(res[0]["timeStamp"], 16)
+            cache.query("INSERT OR REPLACE INTO resolution_times VALUES (?,?)", [cond, ts])
+            return ts
+    except Exception:
+        pass
+    return None
