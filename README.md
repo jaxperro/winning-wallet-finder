@@ -290,21 +290,25 @@ runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
     location doesn't relocate *you* (trade live from Colombia months, paper
     from US months).
 
-11. **All-Time / Conv P&L is the wallet's REALIZED track record** — the sum of
-    Polymarket's own `realizedPnl` per closed position over the wallet's full
-    history (`cache.closed_exits`, the incremental `/closed-positions` cache).
-    It's what a copier mirroring their buy/sell/hold actually banks, and it
-    equals the profile's **PM P&L** except for unrealized marks on positions
-    still open. This *replaced* the old hold-to-resolution reconstruction
-    (`won × entry × size`), which diverged from PM by up to 10× and even
-    flipped signs — four bugs: a 2,000-row pull cap (fixed: full history),
-    both-sides positions double-dropped by one-per-market dedup (fixed: each
-    asset is its own realized row), `initialValue = 0` mis-sizing (moot —
-    realized P&L needs no size), and corrupt near-epoch `res_t` (moot —
-    realized cash is timestamp-independent). Win % is now the share of closed
-    positions that *made money*, the mirror lens. (For wallets holding a large
-    losing open book, realized > PM because PM marks the open losers in;
-    that gap is unrealized, not an error.)
+11. **All-Time / Conv P&L is the wallet's ANTI-SURVIVORSHIP realized track
+    record.** Every DECIDED position at its actual result: redeemed/sold closed
+    positions (Polymarket's own `realizedPnl`, `cache.closed_exits`) PLUS
+    resolved-but-unredeemed positions still sitting in `/positions` — bets that
+    already won/lost and the wallet never redeemed (mostly **abandoned losers**
+    at $0). `_open_split` in validate_timing pulls current positions and routes
+    those decided ones into the realized total (`cashPnl` = their outcome),
+    leaving only genuinely in-flight positions in the **Open P&L** column. This
+    is the whole point of the project surfacing: PM `/profit` **under-counts
+    abandoned losers**, unevenly — Coteykens' PM subtracts them (realized $66k −
+    $52k walked-away = $14k = PM), oliman2's does not ($181k − $161k = $20k
+    true, yet PM says $112k). So where our All-Time reads **lower** than PM, PM
+    is the survivorship-biased number and **ours is the truth** (oliman2 and
+    JuiceFarm look elite on redeemed-only P&L, ~$20k/$32k once the losers they
+    walked from are counted). This *replaced* the old hold-to-resolution
+    reconstruction (`won × entry × size`), which diverged by up to 10× and
+    flipped signs — four bugs killed with it: the 2,000-row pull cap, both-sides
+    double-drop, `initialValue = 0` mis-sizing, and corrupt near-epoch `res_t`.
+    Win % is the share of decided positions that *made money*.
 
 ---
 

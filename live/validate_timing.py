@@ -93,24 +93,41 @@ def _pm_profit(w):
         return None
 
 
-def _open_pnl(w):
-    """The wallet's OPEN (unrealized) P&L — sum of cashPnl over every current
-    position, full paging (the endpoint caps at 50/page). This is the exposure
-    sitting behind the realized track record: a wallet with a great All-Time
-    (realized) P&L but a large NEGATIVE open book is selling winners and
-    holding losers — the realized number flatters what you'd feel following
-    them live. PM /profit marks this in; our realized All-Time P&L doesn't, so
-    Open P&L is exactly the reconciling gap between them."""
-    total = 0.0
+def _open_split(w):
+    """Split the wallet's current /positions into (open_pnl, resolved).
+
+      open_pnl  = unrealized P&L (cashPnl) over GENUINELY OPEN positions
+                  (interior price) — real in-flight exposure.
+      resolved  = decided-but-UNREDEEMED positions (curPrice pinned at 0 or 1):
+                  bets that already won/lost and the wallet just never redeemed.
+                  These are NOT open — they're realized outcomes hiding in the
+                  positions endpoint (mostly abandoned LOSERS at $0). They
+                  belong in the REALIZED track record (cashPnl = their decided
+                  P&L: a loser is -cost). Leaving them in "open" is the exact
+                  survivorship blind spot — PM /profit under-counts them, so a
+                  wallet's realized looks better than the bets it walked away
+                  from. Returned as [{realized_pnl, iv, ts}] to fold into
+                  All-Time P&L + win/loss.
+    """
+    open_pnl = 0.0
+    resolved = []
     for off in range(0, 100000, 50):
         pg = sm.get_json("/positions", {"user": w, "limit": 50, "offset": off,
                                         "sizeThreshold": 0})
         if not pg:
             break
-        total += sum(p.get("cashPnl") or 0 for p in pg)
+        for p in pg:
+            cp = p.get("curPrice", 0) or 0
+            cpnl = p.get("cashPnl") or 0
+            if cp <= 0.001 or cp >= 0.999:        # decided, just unredeemed
+                resolved.append({"realized_pnl": cpnl,
+                                 "iv": p.get("initialValue") or 0,
+                                 "ts": p.get("timestamp") or 0})
+            else:
+                open_pnl += cpnl
         if len(pg) < 50:
             break
-    return round(total)
+    return round(open_pnl), resolved
 
 
 def _wp(cond, asset, won):
@@ -177,7 +194,12 @@ def display_stats(w):
                 scr_ += 1
         return won_, lost_, scr_, round(pnl)
 
-    allpos = list(exits.values())
+    # realized universe = redeemed/sold closed positions (exits, with realizedPnl)
+    # PLUS decided-but-unredeemed positions (resolved losers/winners still sitting
+    # in /positions). Folding the latter in is the anti-survivorship correction:
+    # a wallet's true realized record includes the bets it walked away from.
+    open_pnl, resolved_open = _open_split(w)
+    allpos = list(exits.values()) + resolved_open
     all_won, all_lost, all_scr, all_pnl = rtally(allpos)
     # conviction = the wallet's top-20%-by-stake positions (iv); conv30 = those
     # closed in the last 30d. Realized P&L over each set.
@@ -199,7 +221,7 @@ def display_stats(w):
         "all_win": round(100 * all_won / (all_won + all_lost), 1) if (all_won + all_lost) else None,
         "all_won": all_won, "all_lost": all_lost, "all_ref": all_scr,
         "all_sold": 0, "all_pnl": all_pnl,
-        "open_pnl": _open_pnl(w),
+        "open_pnl": open_pnl,          # genuinely in-flight only (resolved folded into realized)
         "pm_pnl": _pm_profit(w),
         "avg_bet": round(sum(e["iv"] for e in conv) / len(conv)) if conv else 0,
         "copy_pnl": 0, "held_pnl": 0, "held_won": 0, "held_lost": 0, "sold": 0,
