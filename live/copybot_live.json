@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 36.29,
+ "stake": 42.3,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 792.65,
- "deployed": 114.62,
+ "cash": 980.54,
+ "deployed": 76.85,
  "reserve": 0.0,
- "realized": -108.18,
+ "realized": 41.94,
  "adjustments": 15.45,
- "ledger_drift": 0.0,
- "open_count": 3,
+ "ledger_drift": 0.01,
+ "open_count": 2,
  "fees_paid": 22.21,
  "fee_rate": 0.03,
  "lag": {
@@ -47,6 +47,26 @@
  },
  "bets": [
   {
+   "token": "3951320038793129922144925079323613900375603161071783272397192516717451183283",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Under",
+   "title": "Milwaukee Brewers vs. St. Louis Cardinals: O/U 11.5",
+   "their_price": 0.9,
+   "my_price": 0.201,
+   "slippage_pct": -0.7767,
+   "shares": 187.89,
+   "cost": 37.77,
+   "fee": 0.91,
+   "opened": 1783475438,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 149.21,
+   "settled": 1783478809,
+   "sold_shares": 187.89,
+   "sold_proceeds": 187.89
+  },
+  {
    "token": "31195532541081650981279296042844737184911151364523119936812608271058047080143",
    "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
    "name": "ArbTrader",
@@ -65,24 +85,6 @@
    "settled": 1783477122,
    "sold_shares": 77.0,
    "sold_proceeds": 38.68
-  },
-  {
-   "token": "3951320038793129922144925079323613900375603161071783272397192516717451183283",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Under",
-   "title": "Milwaukee Brewers vs. St. Louis Cardinals: O/U 11.5",
-   "their_price": 0.9,
-   "my_price": 0.201,
-   "slippage_pct": -0.7767,
-   "shares": 187.89,
-   "cost": 37.77,
-   "fee": 0.91,
-   "opened": 1783475438,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "87382220110448622099111493684084130419054861529003852679650948002572780674563",
@@ -1245,5 +1247,5 @@
   }
  ],
  "missed_pnl": -372.85,
- "updated": 1783478171
+ "updated": 1783478809
 }

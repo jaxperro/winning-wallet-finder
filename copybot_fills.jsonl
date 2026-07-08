@@ -35,3 +35,4 @@
 {"ts": 1783476098.9, "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d", "name": "ArbTrader", "outcome": "Aoran Wang", "title": "ITF Wuning: Hanyi Liu vs Aoran Wang", "detect_lag_s": 1.9, "their_price": 0.49, "my_price": 0.49, "slippage_pct": -0.0, "shares": 77.0, "cost": 37.73, "fee": 0.5773, "mode": "paper"}
 {"ts": 1783476276.5, "side": "SELL", "token": "31195532541081650981279296042844737184911151364523119936812608271058047080143", "shares": 1.309, "price": 0.5, "fee": 0.0098, "mode": "paper"}
 {"ts": 1783476466.7, "side": "SELL", "token": "31195532541081650981279296042844737184911151364523119936812608271058047080143", "shares": 75.6904, "price": 0.51, "fee": 0.5675, "mode": "paper"}
+{"ts": 1783478809.7, "side": "SELL", "token": "3951320038793129922144925079323613900375603161071783272397192516717451183283", "shares": 187.8896, "price": 1.0, "fee": 0.0, "mode": "paper"}
