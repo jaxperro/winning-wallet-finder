@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.94,
+ "stake": 47.92,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1198.56,
- "cash": 1159.51,
- "deployed": 39.05,
+ "cash": 1110.95,
+ "deployed": 87.0,
  "reserve": 0.0,
- "realized": 183.11,
+ "realized": 182.49,
  "adjustments": 15.45,
- "ledger_drift": 0.0,
- "open_count": 1,
- "fees_paid": 22.21,
+ "ledger_drift": -0.0,
+ "open_count": 2,
+ "fees_paid": 22.83,
  "fee_rate": 0.03,
  "lag": {
-  "n": 29,
-  "n24": 9,
-  "avg_s": 12.4,
-  "avg_slip_pct": -0.2131,
+  "n": 30,
+  "n24": 10,
+  "avg_s": 11.4,
+  "avg_slip_pct": -0.1983,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,24 @@
   "BikesAreTheBikes": 215.88
  },
  "bets": [
+  {
+   "token": "63542977885738763075249577084632509507577059848080214613796318358751431676156",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Prime Intellect launch a token by September 30, 2026?",
+   "their_price": 0.61,
+   "my_price": 0.57,
+   "slippage_pct": -0.0656,
+   "shares": 84.11,
+   "cost": 47.94,
+   "fee": 0.62,
+   "opened": 1783480205,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "87382220110448622099111493684084130419054861529003852679650948002572780674563",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -1249,5 +1267,5 @@
   }
  ],
  "missed_pnl": -372.85,
- "updated": 1783478917
+ "updated": 1783480207
 }
