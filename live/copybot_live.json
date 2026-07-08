@@ -16,8 +16,10 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 29,
-  "avg_s": 48.3,
-  "avg_slip_pct": -0.0922
+  "n24": 9,
+  "avg_s": 12.4,
+  "avg_slip_pct": -0.2131,
+  "window_h": 24
  },
  "wallets": [
   "LSB1",
@@ -1243,5 +1245,5 @@
   }
  ],
  "missed_pnl": -372.85,
- "updated": 1783477144
+ "updated": 1783478171
 }
