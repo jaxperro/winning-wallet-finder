@@ -20,34 +20,28 @@
   "avg_slip_pct": -0.0922
  },
  "wallets": [
-  "Kruto2027",
-  "fortuneking",
   "LSB1",
   "imwalkinghere",
-  "iohihoo",
-  "Stavenson",
-  "0x4bFb-whale",
-  "ArbTrader"
+  "Kruto2027",
+  "42021",
+  "0xbadaf319",
+  "BikesAreTheBikes"
  ],
  "classes": {
-  "Kruto2027": "volume",
-  "fortuneking": "volume",
   "LSB1": "volume",
   "imwalkinghere": "volume",
-  "iohihoo": "volume",
-  "Stavenson": "volume",
-  "0x4bFb-whale": "volume",
-  "ArbTrader": "volume"
+  "Kruto2027": "volume",
+  "42021": "volume",
+  "0xbadaf319": "volume",
+  "BikesAreTheBikes": "volume"
  },
  "floors": {
-  "Kruto2027": 127.06,
-  "fortuneking": 999.02,
-  "LSB1": 254.23,
+  "LSB1": 253.88,
   "imwalkinghere": 122.43,
-  "iohihoo": 60.0,
-  "Stavenson": 4784.68,
-  "0x4bFb-whale": 1089.72,
-  "ArbTrader": 168.41
+  "Kruto2027": 127.06,
+  "42021": 276.71,
+  "0xbadaf319": 44.51,
+  "BikesAreTheBikes": 215.88
  },
  "bets": [
   {
@@ -66,7 +60,7 @@
    "status": "closed",
    "exit_price": 0.5023,
    "pnl": 0.37,
-   "settled": 1783476469,
+   "settled": 1783476587,
    "sold_shares": 77.0,
    "sold_proceeds": 38.68
   },
@@ -678,7 +672,7 @@
    "status": "lost",
    "pnl": -39.54,
    "settled": 1783438794,
-   "name": "fortuneking"
+   "name": "0x86c878cd"
   },
   {
    "ts": 1783436698,
@@ -693,7 +687,7 @@
    "status": "open",
    "pnl": null,
    "settled": null,
-   "name": "ArbTrader"
+   "name": "0x72e15978"
   },
   {
    "ts": 1783433957,
@@ -708,7 +702,7 @@
    "status": "open",
    "pnl": null,
    "settled": null,
-   "name": "ArbTrader"
+   "name": "0x72e15978"
   },
   {
    "ts": 1783433648,
@@ -738,7 +732,7 @@
    "status": "open",
    "pnl": null,
    "settled": null,
-   "name": "ArbTrader"
+   "name": "0x72e15978"
   },
   {
    "ts": 1783425474,
@@ -753,7 +747,7 @@
    "status": "refund",
    "pnl": 0.2,
    "settled": 1783430384,
-   "name": "0x4bFb-whale"
+   "name": "0x73afc816"
   },
   {
    "ts": 1783411448,
@@ -768,7 +762,7 @@
    "status": "refund",
    "pnl": 0.2,
    "settled": 1783415406,
-   "name": "ArbTrader"
+   "name": "0x72e15978"
   },
   {
    "ts": 1783404859,
@@ -813,7 +807,7 @@
    "status": "lost",
    "pnl": -39.85,
    "settled": 1783404919,
-   "name": "fortuneking"
+   "name": "0x86c878cd"
   },
   {
    "ts": 1783404859,
@@ -873,7 +867,7 @@
    "status": "refund",
    "pnl": 0.59,
    "settled": 1783375720,
-   "name": "0x4bFb-whale"
+   "name": "0x73afc816"
   },
   {
    "ts": 1783339976,
@@ -888,7 +882,7 @@
    "status": "refund",
    "pnl": 0.59,
    "settled": 1783375720,
-   "name": "0x4bFb-whale"
+   "name": "0x73afc816"
   },
   {
    "ts": 1783339976,
@@ -903,7 +897,7 @@
    "status": "refund",
    "pnl": 0.59,
    "settled": 1783375719,
-   "name": "0x4bFb-whale"
+   "name": "0x73afc816"
   },
   {
    "ts": 1783332296,
@@ -918,7 +912,7 @@
    "status": "refund",
    "pnl": 68.06,
    "settled": 1783375717,
-   "name": "ArbTrader"
+   "name": "0x72e15978"
   },
   {
    "ts": 1783363497,
@@ -948,7 +942,7 @@
    "status": "lost",
    "pnl": -38.95,
    "settled": 1783364755,
-   "name": "fortuneking"
+   "name": "0x86c878cd"
   },
   {
    "ts": 1783347199,
@@ -963,7 +957,7 @@
    "status": "lost",
    "pnl": -39.04,
    "settled": 1783351352,
-   "name": "fortuneking"
+   "name": "0x86c878cd"
   },
   {
    "ts": 1783345633,
@@ -978,7 +972,7 @@
    "status": "won",
    "pnl": 0.38,
    "settled": 1783347727,
-   "name": "fortuneking"
+   "name": "0x86c878cd"
   },
   {
    "ts": 1783301842,
@@ -1267,5 +1261,5 @@
   }
  ],
  "missed_pnl": -372.85,
- "updated": 1783476469
+ "updated": 1783476587
 }
