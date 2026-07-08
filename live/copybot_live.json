@@ -4,21 +4,21 @@
  "stake": 48.54,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 1213.45,
- "cash": 1136.84,
- "deployed": 76.61,
+ "hwm": 1213.57,
+ "cash": 1136.41,
+ "deployed": 77.17,
  "reserve": 0.0,
- "realized": 198.0,
+ "realized": 198.12,
  "adjustments": 15.45,
- "ledger_drift": -0.0,
- "open_count": 2,
- "fees_paid": 23.14,
+ "ledger_drift": 0.0,
+ "open_count": 3,
+ "fees_paid": 23.59,
  "fee_rate": 0.03,
  "lag": {
-  "n": 31,
-  "n24": 11,
-  "avg_s": 10.5,
-  "avg_slip_pct": -0.1813,
+  "n": 32,
+  "n24": 12,
+  "avg_s": 15.1,
+  "avg_slip_pct": -0.1681,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,26 @@
   "BikesAreTheBikes": 215.88
  },
  "bets": [
+  {
+   "token": "96414913260410660327701812842304441904120154604356278687138420481391489349128",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Iran successfully targets shipping by July 31?",
+   "their_price": 0.86,
+   "my_price": 0.84,
+   "slippage_pct": -0.0233,
+   "shares": 57.78,
+   "cost": 48.54,
+   "fee": 0.23,
+   "opened": 1783487726,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "sold_shares": 57.12,
+   "sold_proceeds": 48.33
+  },
   {
    "token": "21663614423138978208039475686851008988023846387002129187677074338673274484352",
    "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
@@ -1287,5 +1307,5 @@
   }
  ],
  "missed_pnl": -372.25,
- "updated": 1783481516
+ "updated": 1783487791
 }
