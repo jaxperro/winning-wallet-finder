@@ -64,8 +64,8 @@ automated.
 
 - **ROTATE THE LEAKED ALCHEMY KEY** (config.live.example.json git history).
   New key at dashboard.alchemy.com → update gitignored `config.json` AND
-  `flyctl secrets set ALCHEMY_RPC_URL=...`.
-- Delete the stopped Railway project `magnificent-kindness` when comfortable.
+  `flyctl secrets set ALCHEMY_RPC_URL=...`. This is the LAST standing to-do.
+  (Railway project deleted 2026-07-08; purges 2026-07-10.)
 
 ## Operational quick-reference
 
