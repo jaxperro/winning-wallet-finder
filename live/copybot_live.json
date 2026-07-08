@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.81,
+ "stake": 50.18,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1261.68,
- "cash": 962.79,
- "deployed": 282.45,
+ "cash": 1020.58,
+ "deployed": 233.91,
  "reserve": 0.0,
- "realized": 229.79,
+ "realized": 239.04,
  "adjustments": 15.45,
- "ledger_drift": -0.0,
- "open_count": 8,
+ "ledger_drift": -0.01,
+ "open_count": 7,
  "fees_paid": 28.06,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "112647675842455810053000856007873928696360897468065849941777938122717569163887",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Solana be between $80 and $90 on July 8?",
+   "their_price": 0.85,
+   "my_price": 0.84,
+   "slippage_pct": -0.0118,
+   "shares": 57.79,
+   "cost": 48.54,
+   "fee": 0.23,
+   "opened": 1783494391,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 9.02,
+   "settled": 1783527769
+  },
   {
    "token": "80341765186077032816113366497311823982538363967496204297031691090127296175451",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -158,24 +176,6 @@
    "cost": 48.53,
    "fee": 0.12,
    "opened": 1783498622,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
-   "token": "112647675842455810053000856007873928696360897468065849941777938122717569163887",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Solana be between $80 and $90 on July 8?",
-   "their_price": 0.85,
-   "my_price": 0.84,
-   "slippage_pct": -0.0118,
-   "shares": 57.79,
-   "cost": 48.54,
-   "fee": 0.23,
-   "opened": 1783494391,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -706,21 +706,6 @@
  ],
  "missed": [
   {
-   "ts": 1783521466,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "106357377462470777162074136663993867544289851940849210066031068582103797897415",
-   "cond": "0xb8879d2f55f3a15028660eba65785832c1dfc04f99e8e495010933688ccb9c6d",
-   "title": "Will Ukraine re-enter Maliivka by December 31?",
-   "outcome": "Yes",
-   "price": 0.7287,
-   "stake": 45.99,
-   "reason": "bot offline (entered while down)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1783494594,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "112647675842455810053000856007873928696360897468065849941777938122717569163887",
@@ -730,6 +715,21 @@
    "price": 0.9,
    "stake": 48.53,
    "reason": "price moved 0.85\u21920.90",
+   "status": "won",
+   "pnl": 5.25,
+   "settled": 1783527770,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1783521466,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "106357377462470777162074136663993867544289851940849210066031068582103797897415",
+   "cond": "0xb8879d2f55f3a15028660eba65785832c1dfc04f99e8e495010933688ccb9c6d",
+   "title": "Will Ukraine re-enter Maliivka by December 31?",
+   "outcome": "Yes",
+   "price": 0.7287,
+   "stake": 45.99,
+   "reason": "bot offline (entered while down)",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -1471,6 +1471,6 @@
    "name": "LSB1"
   }
  ],
- "missed_pnl": -372.25,
- "updated": 1783527525
+ "missed_pnl": -367.0,
+ "updated": 1783527770
 }
