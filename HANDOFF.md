@@ -28,6 +28,7 @@ The repo is authoritative; project memory has deeper history.
   `jaxperro/trading/copybot-section.js`. `?botFeed=`/`?rmFeed=` query params
   override feeds for local testing.
 - **Daily pipeline** (Mac launchd 08:00, fires on wake — typically ~10:00)
+  appends one live-vs-model row/day to `live/history/calibration.csv` and
   re-derives everything under the new rules: entries cursors now invalidate
   daily, `_open_split` folds by the `redeemable` flag, `rtally` splits SOLD.
 - **Backtest**: `portfolio.py` takes `--bank` (backtest.json `"bank"`).

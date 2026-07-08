@@ -54,6 +54,38 @@ echo "[daily] $(date '+%F %T') 5/7 floors: pin copy-bot p80 conviction floors ->
 python3 sync_floors.py || echo "[daily] floor sync skipped"
 echo "[daily] $(date '+%F %T') portfolio: cache-based \$1k book -> portfolio.json"
 python3 portfolio.py || echo "[daily] portfolio skipped"
+echo "[daily] $(date '+%F %T') calibration: live-book vs model, one row/day"
+# The number that sizes real money (FINDINGS "The calibration experiment"):
+# the measured ratio between the live paper book and the backtest of the SAME
+# set. Live side from the bot-committed feed on GitHub (freshest truth; the
+# local checkout can lag), model side from the portfolio.json just written.
+python3 - <<'CALIB' || echo "[daily] calibration row skipped"
+import csv, json, os, ssl, time, urllib.request
+ctx = ssl._create_unverified_context()
+live = json.load(urllib.request.urlopen(
+    "https://raw.githubusercontent.com/jaxperro/winning-wallet-finder/main/live/copybot_live.json",
+    timeout=30, context=ctx))
+model = json.load(open("portfolio.json"))
+row = {
+    "date": time.strftime("%F"),
+    "live_equity": round((live.get("cash") or 0) + (live.get("deployed") or 0)
+                         + (live.get("reserve") or 0), 2),
+    "live_realized": live.get("realized"), "live_open": live.get("open_count"),
+    "live_drift": live.get("ledger_drift"),
+    "model_equity": model.get("equity"), "model_realized": model.get("realized"),
+    "model_bank": model.get("bank"), "wallets": ",".join(live.get("wallets") or []),
+}
+os.makedirs("history", exist_ok=True)
+path = "history/calibration.csv"
+new = not os.path.exists(path)
+with open(path, "a", newline="") as fh:
+    w = csv.DictWriter(fh, fieldnames=list(row))
+    if new:
+        w.writeheader()
+    w.writerow(row)
+print(f"[daily] calibration: live ${row['live_equity']:,} vs model "
+      f"${row['model_equity']:,} -> {path}")
+CALIB
 echo "[daily] $(date '+%F %T') 6/7 dashboard"
 python3 dashboard.py
 mkdir -p history && cp watch_skilled.json "history/watch_$(date '+%Y%m%d').json" 2>/dev/null
