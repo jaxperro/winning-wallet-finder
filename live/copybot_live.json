@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 42.3,
+ "stake": 47.94,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 1058.68,
- "cash": 980.54,
- "deployed": 76.85,
+ "hwm": 1198.56,
+ "cash": 1159.51,
+ "deployed": 39.05,
  "reserve": 0.0,
- "realized": 41.94,
+ "realized": 183.11,
  "adjustments": 15.45,
- "ledger_drift": 0.01,
- "open_count": 2,
+ "ledger_drift": 0.0,
+ "open_count": 1,
  "fees_paid": 22.21,
  "fee_rate": 0.03,
  "lag": {
@@ -46,6 +46,26 @@
   "BikesAreTheBikes": 215.88
  },
  "bets": [
+  {
+   "token": "87382220110448622099111493684084130419054861529003852679650948002572780674563",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Under",
+   "title": "Milwaukee Brewers vs. St. Louis Cardinals: O/U 10.5",
+   "their_price": 0.9,
+   "my_price": 0.211,
+   "slippage_pct": -0.7656,
+   "shares": 179.15,
+   "cost": 37.8,
+   "fee": 0.89,
+   "opened": 1783475377,
+   "status": "closed",
+   "exit_price": 0.999,
+   "pnl": 140.28,
+   "settled": 1783478917,
+   "sold_shares": 179.15,
+   "sold_proceeds": 178.97
+  },
   {
    "token": "3951320038793129922144925079323613900375603161071783272397192516717451183283",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -85,24 +105,6 @@
    "settled": 1783477122,
    "sold_shares": 77.0,
    "sold_proceeds": 38.68
-  },
-  {
-   "token": "87382220110448622099111493684084130419054861529003852679650948002572780674563",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Under",
-   "title": "Milwaukee Brewers vs. St. Louis Cardinals: O/U 10.5",
-   "their_price": 0.9,
-   "my_price": 0.211,
-   "slippage_pct": -0.7656,
-   "shares": 179.15,
-   "cost": 37.8,
-   "fee": 0.89,
-   "opened": 1783475377,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "57148617108437147048088458582793470023098200222992864689104372772428315487654",
@@ -1247,5 +1249,5 @@
   }
  ],
  "missed_pnl": -372.85,
- "updated": 1783478809
+ "updated": 1783478917
 }
