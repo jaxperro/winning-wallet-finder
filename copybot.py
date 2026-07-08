@@ -810,6 +810,27 @@ class Copybot:
                 return
             subprocess.run(["git", "-C", repo, "pull", "--rebase", "--autostash", "-q",
                             "origin", "main"], capture_output=True)
+            # a conflicted rebase wedges the repo (UU) and silently kills every
+            # future publish (2026-07-08: a boot raced the BOOK RESET push — the
+            # stale clone rebased old-book state onto the reset and sat wedged
+            # until reboot). Abort, resync to origin, re-commit the RUNNING book
+            # on top: the process is the book's single writer, so its memory
+            # wins the file; remote state surgery must stop the bot first.
+            if subprocess.run(["git", "-C", repo, "rev-parse", "-q", "--verify",
+                               "REBASE_HEAD"], capture_output=True).returncode == 0:
+                log("⚠ publish rebase conflicted — resyncing to origin and "
+                    "re-committing the live book")
+                subprocess.run(["git", "-C", repo, "rebase", "--abort"],
+                               capture_output=True)
+                subprocess.run(["git", "-C", repo, "reset", "--hard", "origin/main"],
+                               capture_output=True)
+                self.engine.persist()
+                self.write_feed()
+                subprocess.run(["git", "-C", repo, "add", "-f"] + paths,
+                               capture_output=True)
+                subprocess.run(["git", "-C", repo, "commit", "-q", "-m",
+                                "copybot: live paper feed (resynced after "
+                                "conflicted rebase) [skip ci]"], capture_output=True)
             p = subprocess.run(["git", "-C", repo, "push", "-q", "origin", "main"],
                                capture_output=True, text=True)
             log("published live feed → dashboard" if p.returncode == 0
