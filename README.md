@@ -26,22 +26,24 @@ Three deployed pieces + one static dashboard:
 | **daily pipeline** (`live/daily.sh`) | this Mac, launchd **08:00** (runs on wake if the Mac was asleep) | refresh the bet cache → 5-gate skill scan → fee-aware sharp selection → conviction floors → backtest book → publish JSON feeds to GitHub |
 | **copybot worker** (`copybot.py` via `host/start.sh`) | **Fly.io app `wwf-copybot`, region `arn` (Stockholm), 24/7** — migrated off Railway 2026-07-06: Railway ran it in a US region, which Polymarket's IP geoblock would 403 the moment orders got real; Stockholm is unrestricted AND ~25ms from the CLOB's eu-west-2 primaries. Every boot self-checks the geo-gate (`host/geocheck.py`) | **push mode**: an Alchemy address-activity webhook (`copybot follow set`, Polygon) pings `POST /alchemy` the moment a followed wallet trades (~2–5s detection), signature-verified; a 60s heartbeat settles/publishes and a 5-min backstop poll catches dropped pushes. Paper-copies with real fees/lag/slippage, settles at CLOB resolution, commits its book back to the repo |
 | **Discord digest** (`live/discord_daily.py`) | end of the daily pipeline | one message/day: the sharp list with profile links + 30-day conviction stats (per-trade pings retired 2026-07-04; the old Alchemy watcher lives in `archive/webhook_receiver.py`) |
-| **dashboard** | [jaxperro.com/trading](https://jaxperro.com/trading) (static, in the `jaxperro` repo) | renders the three JSON feeds: live bot book, backtest book, sharp table |
+| **dashboard** | [jaxperro.com/trading](https://jaxperro.com/trading) + [jaxperro.com/live](https://jaxperro.com/live) (static, in the `jaxperro` repo) | `/trading` renders the paper book, backtest book and sharp table; `/live` is the REAL MONEY page (reads `live/copybot_live_real.json`, NOT STARTED until Phase 2). Both pages share `trading/copybot-section.js` — one renderer, no drift |
 
-**The July 2026 live test:** a fresh $1,000 paper book (started 2026-07-02 on
-Railway; moved to Fly.io Stockholm 2026-07-06 with the book intact) following
-the wallet set in **`live/copybot.paper.json`** — the single source of truth.
-The follow set is **Set D** (2026-07-08): six moderate-bet, copyable, copy-P&L-
-positive wallets — **LSB1, imwalkinghere, Kruto2027, 42021, 0xbadaf319,
-BikesAreTheBikes** — chosen by simulation over the corrected data (see FINDINGS
-"Choosing the month's follow set"). All are **volume** class: copied on their
-**conviction bets only** (top-20%-by-stake, floor pinned daily from the trusted
-cache p80 via `sync_floors.py`), 4% of equity/bet, **capped at the signal's own
-bet size**. The whale class (12%/bet, follow-all) is retired — those wallets
-fell off the sharp list once refunds and abandoned losers were scored honestly.
+**The calibration experiment (running now):** a fresh $1,000 paper book,
+**reset 2026-07-08** so it measures exactly one thing — the follow set in
+**`live/copybot.paper.json`** (the single source of truth) from a clean start,
+with every bookkeeping fix live from day one. The follow set is **Set E**
+(2026-07-08): seven moderate-bet volume wallets — **LSB1, imwalkinghere,
+Kruto2027, 0xbadaf319, gkmgkldfmg, AIcAIc, 1kto1m** — chosen by the *aligned*
+honest replay (see FINDINGS "Aligning the three books"). All are copied on
+their **conviction bets only** (top-20%-by-stake, floor pinned daily from the
+trusted cache p80 via `sync_floors.py`), 4% of equity/bet, **capped at the
+signal's own bet size**. The whale class (12%/bet, follow-all) is retired.
 Every fill records detection lag, price slippage, and the taker fee; missed
-bets are recorded and settled hypothetically. If this month's *measured*
-numbers hold up, real money follows (see [`LIVE_ROLLOUT.md`](LIVE_ROLLOUT.md)).
+bets are recorded and settled hypothetically. **The point of the fresh book:
+the backtest of the same set says +2103%/30d — an in-sample ceiling. The
+measured ratio between this live book and that model over the next weeks is
+the number that decides real-money sizing** (see [`LIVE_ROLLOUT.md`](LIVE_ROLLOUT.md)
+for the phased path; Phase 1 code prep is complete, Phase 2 is funding).
 
 ```
  data layer            selection                          execution              display
@@ -63,10 +65,11 @@ numbers hold up, real money follows (see [`LIVE_ROLLOUT.md`](LIVE_ROLLOUT.md)).
 | task | how |
 |------|-----|
 | **add / remove / reclass a LIVE wallet** | edit the `wallets` list in `live/copybot.paper.json` (`{"wallet","name","class":"volume"\|"whale","floor":123?}` — floor optional, auto p80 at boot; whales ignore floors) then run **`./live/deploy_bot.sh`** — it validates, previews, **syncs the Alchemy webhook's address list** (`live/sync_webhook.py`, Notify API), commits, pushes, restarts the Fly machine, and confirms the boot banner. Fully self-contained — nothing to click in any dashboard |
-| **backtest any wallet set** | edit `live/backtest.json` (same entry shape) → `python3 live/portfolio.py`; ad-hoc without touching the dashboard: `python3 portfolio.py --wallets 0xabc,0xdef:whale --days 14 --out /tmp/t.json` |
+| **backtest any wallet set** | edit `live/backtest.json` (same entry shape) → `python3 live/portfolio.py`; ad-hoc without touching the dashboard: `python3 portfolio.py --wallets 0xabc,0xdef:whale --days 14 --bank 500 --out /tmp/t.json` (`--bank`/backtest.json `"bank"` sets the starting bankroll; smaller books compound at a *higher* rate because 4%-of-equity stakes hit the their-bet ceilings later) |
 | **promote a wallet to live** | prove it in `backtest.json` first, copy the same entry into `copybot.paper.json`, run `deploy_bot.sh` |
 | **watch the live bot** | `flyctl logs --app wwf-copybot` (one summary line per 60s heartbeat); the book is also committed as `live/copybot_live.json` and rendered on the dashboard |
 | **restart / redeploy the bot** | `flyctl apps restart wwf-copybot` (config/code changes: the worker clones the repo fresh at boot, so a restart IS the deploy). **Changes to `host/` or `fly.toml` need an image rebuild: `flyctl deploy --remote-only`.** Secrets: `flyctl secrets set K=V` (applies with an automatic restart). Keep it ONE machine — Fly loves creating a second for "high availability", and two bots = two writers on one book (`flyctl scale count 1`) |
+| **reset the paper book** | **stop the machine FIRST** (`flyctl machine stop <id> --app wwf-copybot`), then write a fresh `new_state()` into `copybot_state.json`, archive `copybot_fills.jsonl`, commit+push, then `flyctl apps restart`. Order matters: the running bot's memory is the book's single writer and its publish flow will re-commit its own book over yours (by design — see gotcha 15). Verify the first heartbeat reads `free $1,000/$1,000 · realized $+0` |
 | **run the daily pipeline manually** | `cd live && bash daily.sh` (launchd runs it 08:00; ~40 min, mostly collect). Never run two at once — the cache is single-writer |
 | **refresh just the sharp list** | `cd live && python3 conviction_scan.py && python3 validate_timing.py` |
 | **daily Discord digest** | sent by `live/discord_daily.py` at the end of `daily.sh`; webhook = `daily_webhook` in gitignored `config.json` |
@@ -311,7 +314,51 @@ runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
     reconstruction (`won × entry × size`), which diverged by up to 10× and
     flipped signs — four bugs killed with it: the 2,000-row pull cap, both-sides
     double-drop, `initialValue = 0` mis-sizing, and corrupt near-epoch `res_t`.
-    Win % is the share of decided positions that *made money*.
+    **Win % is held-outcomes only** (see gotcha 13); sold P&L still counts in
+    the P&L columns. And when our number disagrees with PM's **leaderboard**
+    (`lb-api /profit`), check PM against itself first: for mega-abandoners the
+    leaderboard doesn't foot against PM's own per-position books (oliman2:
+    per-position sums say ~$19k true; leaderboard says $112k). The per-position
+    data is the truth source, never the leaderboard.
+
+12. **The cache keeps THREE per-wallet cursors** — `pulled` (bets),
+    `pulled_exits` (incremental), `pulled_entries` (14-day-TTL full snapshot) —
+    and **anything not re-pulled goes silently stale, not visibly wrong.**
+    `cache.invalidate()` must clear ALL of them (it does, since 2026-07-08):
+    when it only cleared `pulled`, watchlist wallets' entry maps went up to 14
+    days stale and `portfolio.py` silently dropped every bet on a market first
+    entered since the last pull (`if not et: continue`) — Kruto's Brewers sells
+    were visible in the live bot and absent from the backtest for exactly this.
+
+13. **`res_t` is endDate METADATA, not resolution time** — for in-play markets
+    it's game-day midnight (it can pre-date the wallet's own entry) or even a
+    date in the future (a Jul-5 tennis match carried res_t Jul-14). Never use
+    it to detect a pre-resolution sell. The reliable discriminator is PRICE: a
+    redeem prints **exactly** the payout (1 / 0 / 0.5 to float precision — the
+    exit_p reconstruction is exact for redeems), a real sell prints a mid
+    price. `portfolio._sold_pre_resolution` and validate_timing's `rtally`
+    both use it; that's what makes W/L (held to resolution) vs S (sold) vs R
+    (refund) mean the same thing in the sharps table, the backtest, and the
+    bot. In `/positions`, the **`redeemable` flag is the resolution truth**
+    (set on-chain-resolution for winners AND losers) — `_open_split` folds on
+    it, not on price-pinning.
+
+14. **A high z-score can be a refund-harvesting machine, not a picker.** The
+    exact-0.5 exit signature at scale = buying ITF totals just under 50¢ and
+    banking the chronic ITF cancellation rate (0xb0E43B: $148k of a $218k
+    lifetime P&L is 797 refund redeems; ArbTraderRookie is the same species).
+    The edge is real but pays 1–2¢/share — taker fees + slippage consume it, so
+    it never survives the copy replay. General rule: **z finds skill; only the
+    honest replay decides whether the skill is harvestable by a follower.**
+
+15. **The running bot is the book's single writer — remote state surgery must
+    stop the machine first.** The publish flow recovers from conflicted
+    rebases by resyncing to origin and re-committing ITS OWN in-memory book on
+    top (so a wedge can't silently kill publishing — the 2026-07-08 BOOK RESET
+    race left the repo in UU and every publish dead until reboot). Two
+    corollaries: a state push while the bot runs WILL be overwritten, and a
+    boot clone seconds after a push can read a stale GitHub replica — after
+    any surgery, verify the first heartbeat shows the book you wrote.
 
 ---
 

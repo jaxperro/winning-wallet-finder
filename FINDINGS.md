@@ -353,6 +353,115 @@ The backtest is in-sample (a ceiling), but every Set D wallet also clears the
 out-of-window Copy P&L signal — that's what separates it from curve-fitting.
 The live July book remains the only out-of-sample truth.
 
+*Superseded the same day by Set E, after the alignment audit below found the
+replay itself was still dropping and mislabeling bets.*
+
+## Aligning the three books — backtest ↔ bot ↔ Polymarket (2026-07-08)
+
+The live bot showed Kruto2027 mirror-sells the backtest didn't have. Pulling
+that thread found the replay was **silently losing real bets** three ways:
+
+1. **Stale entry maps** — the daily freshen reset the bets and exits cursors
+   but never `pulled_entries` (14-day TTL), so any market a wallet first
+   entered since the last entries pull had no `first_buy` and the replay
+   dropped its bets entirely (`if not et: continue`) — not won, not lost, not
+   open. *Gone.* The recovered bets included hidden LOSSES — the stale
+   backtest was flattering.
+2. **`res_t` can't detect in-play sells** — it's endDate metadata (game-day
+   midnight, sometimes future), so the `exit < res_t − 300` test never fired
+   on in-play markets and every pre-resolution sell booked as
+   held-to-resolution. Fixed with the price test: a redeem prints exactly the
+   payout; a mid print is a sell (booked at the wallet's actual exit price —
+   which also self-corrects poisoned `won` flags).
+3. **Resolved round trips vanished** — the round-trip path skipped
+   resolved-on-chain markets assuming "the cache row will cover it", but rows
+   with bogus forward `res_t` never qualify. Now redeem-closes book at chain
+   truth and sell-closes mirror the sell.
+
+Plus one parity fix: Set wallets now replay on the bot's **pinned floors**
+(copybot.paper.json), not a recomputed p80 that drifts a few percent and takes
+different bets.
+
+**Proof of alignment:** matching every settled bet in the bot's real book
+against the backtest row-by-row — **7/9 agree exactly, 0 absent** (was 0/9
+agree before the fixes). The 2 disagreements are genuine execution divergence
+(the sharp sold on a fast-resolving market, the bot couldn't catch the exit
+and rode to resolution) — each book correctly records what happened *to it*,
+and that divergence class is permanent.
+
+**The honest price:** the 30d Set D replay fell **$29.1k → $17.4k** as the
+flattering artifacts (phantom held-to-$1.00 winners, missing salvage exits,
+hidden losses) came out.
+
+**Set E (deployed 2026-07-08):** with the replay finally honest, all 35 sharps
+were re-ranked by individual 30d copy replay, and combined sets tested in a
+shared book (one position per market, shared cash):
+
+| set | equity (30d, $1k) | note |
+|-----|-------------------|------|
+| top-4 only | $12,777 | pruning alone loses carry |
+| Set D (control) | $17,362 | |
+| **Set E (7)** | **$24,378 (+2338%)** | every member positive |
+| Set E + lma0o0o0o | $24,437 | carries a −$1,775 wallet — rejected |
+
+**Set E = LSB1, imwalkinghere, Kruto2027, 0xbadaf319 + gkmgkldfmg, AIcAIc,
+1kto1m.** Dropped: 42021 (+16% on 22 bets), BikesAreTheBikes (+12%). Rejected
+on the audit evidence: oliman2 (true lifetime ~$19k, not PM's $112k; +21% to
+copy with 22 stuck-open) and leegunner (elite lifetime +$274k but **negative**
+to copy — 7.6-day holds kill compounding). Newcomer caveat: gkmgkldfmg
+(z=2.05) and 1kto1m (z=2.4) sit near the selection gate floor — their seats
+are earned on a strong month, not deep statistical edge; AIcAIc's held-win is
+only 42% (his profit is sell-timing, the most lag-fragile edge class). They
+are the demotion watch-list, in that order.
+
+## The refund harvesters — a new sharp archetype (2026-07-08)
+
+Splitting SOLD out of the record columns (same W/L/R/S taxonomy as the bot and
+backtest; win% is now held-outcomes only) exposed something the sign-based
+tally had been calling "wins": two of the highest-z wallets in the list are
+**refund-harvesting machines**. The signature is exits at *exactly* $0.50 to
+float precision — only refund redemptions print there — at enormous scale:
+
+- **0xb0E43B…** (z=20.2, "94.4% all-time" under the old tally): 797 exact-0.5
+  redeems = **$148k of his $218k lifetime P&L**. True held record: 76W–31L.
+- **ArbTraderRookie** (z=29, "99%"): 1,150 of the same.
+
+The strategy: buy ITF tennis totals just under 50¢, harvest the chronic ITF
+cancellation/retirement rate (50/50 refunds pay $0.50/share). The edge is
+real, clever, and **structurally uncopyable** — it clears 1–2¢/share and a
+taker copy pays ~0.75¢ fee each way plus slippage into it (honest replay: +6%
+and −5% respectively). This closes the loop on the project's oldest lesson:
+*win rate lies, z finds real skill, and only the fee-and-lag replay decides
+whether the skill transfers to a follower.*
+
+Also fixed in the same pass: `_open_split` now classifies decided-unredeemed
+positions by the data-api's **`redeemable` flag** (exact, set at on-chain
+resolution for winners and losers alike) instead of price-pinning — verified
+by reproducing PM's per-position books to the dollar on the two biggest
+All-Time-vs-PM divergences.
+
+## The calibration experiment (started 2026-07-08)
+
+Everything above makes the *accounting* honest. It does not make the +2338%
+**forecast** honest: Set E is an in-sample maximum (ranked and assembled on
+the same 30-day window it's scored on — winner's curse applies), and the
+replay's fill model (their price +0.5%, always filled) ignores adverse
+selection — the market moves fastest on exactly the bets where the sharp knew
+something, and thin ITF books won't always fill a FAK copy at size. The one
+piece of measured ground truth — the old paper book's +$229.79 (~23%) over two
+buggy weeks vs. four-figure replay percentages for the same era — says the
+live-to-model discount is large.
+
+So the paper book was **reset to a fresh $1,000 on 2026-07-08** (old book
+archived in git history + `archive/copybot_fills.pre-reset-2026-07-08.jsonl`)
+running Set E with every fix live from day one. **The measured ratio between
+this book and the published backtest over the coming weeks is the number that
+sizes real money** — not the replay percentage. Bank-size note for that
+decision: the replay compounds *faster* on smaller banks (`--bank 500` →
++2728% vs $1k's +2103%) because 4%-of-equity stakes hit the never-bigger-than-
+their-bet ceilings later — percentage returns from small books are the most
+optimistic view, discount accordingly.
+
 ## Repo layout
 
 - `insider.py` — the detector: z-score/p-value, timing/freshness/sizing signals,

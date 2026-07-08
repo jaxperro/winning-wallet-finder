@@ -2,7 +2,7 @@
 
 Written 2026-07-07 after the pre-money audit. This document is **self-contained**:
 a session with no prior context (Sonnet/Opus) should be able to execute every
-phase from here + the repo. Read [README.md](README.md) gotchas 1–11 and
+phase from here + the repo. Read [README.md](README.md) gotchas 1–15 and
 [LIVE_TEST.md](LIVE_TEST.md) first. Project memory (`polymarket-resolution-truth`,
 `polymarket-us-expansion`) has deeper background; the repo is authoritative.
 
