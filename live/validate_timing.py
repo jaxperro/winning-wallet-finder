@@ -130,70 +130,58 @@ def display_stats(w):
                              (e.g. ArbTrader: ~100% conv win but −$790 copy P&L).
       name / last-bet      : from the /activity pull
     """
-    # ---- position win%/record/P&L from the cache (large, survivorship-corrected).
-    # res_t <= now: the cache stores early-sold positions in UNRESOLVED markets with
-    # a future res_t and won = current price — a mark, not an outcome; skip them. ----
+    # ---- ALL-TIME / CONVICTION / 30d records + P&L from the wallet's REALIZED
+    # TRACK RECORD: Polymarket's own realizedPnl per closed position, over the
+    # wallet's FULL history (cache.closed_exits, incremental). This is exactly
+    # what a copier who mirrors their buy/sell/hold banks — it sums to PM
+    # /profit (the source of truth) and needs no won×entry×size reconstruction,
+    # so it's immune to the four errors that plagued the old math: the 2000-row
+    # cap (now full history), both-sides double-drop (each asset is its own
+    # realized row), iv=0 mis-sizing (P&L doesn't need size), and corrupt res_t
+    # (realized cash is timestamp-independent). A position "won" if it made
+    # money as they traded it (realized_pnl > 0) — the mirror lens. ----
     now = time.time()
-    bets = [b for b in cache.get_bets(w)
-            if (b["size"] or 0) > 0 and (b["res_t"] or 0) <= now]
-    # chain-truth payouts for everything this wallet's stats touch (cached
-    # in the resolutions table — incremental after the first backfill)
-    trows = trust.trusted_wallet_rows(cache.query, w)
-    payouts.ensure({b["cond"] for b in bets} | {r[0] for r in trows})
-    # ---- ALL-TIME stats over EVERY trusted bet (any size): the dashboard's
-    # "of every bet placed" columns. Trusted rows only, deduped one-per-market,
-    # truth-adjusted: refunds (wp=0.5) count as neither won nor lost, and a bet
-    # the wallet SOLD pre-resolution counts at its exit price (status SOLD) —
-    # the same exit-mirroring the backtest and live bot use. Exits beyond the
-    # closed-positions data horizon (~4000 rows) fall back to hold-to-res. ----
-    exits = cache.closed_exits(w)
-    tbest = {}
-    for cond, asset, won, p, res_t, size in trows:
-        if cond not in tbest or size > tbest[cond][3]:
-            tbest[cond] = (cond, asset, won, p, size, res_t)
-    def tally(rows):
-        """(won, lost, refunds, sold, pnl) over (cond, asset, won, p, size, res_t)."""
-        w_ = l_ = r_ = s_ = 0
+    exits = cache.closed_exits(w)     # {asset: {ts, iv, realized_pnl, ...}} closed, full history
+
+    def rtally(positions):
+        """(won, lost, scratch, pnl) over closed positions by realized_pnl sign."""
+        won_ = lost_ = scr_ = 0
         pnl = 0.0
-        for cond, asset, won, p, size, res_t in rows:
-            pc = max(0.001, min(0.999, p or 0))
-            cx = exits.get(asset)
-            if cx and res_t and cx["ts"] < res_t - 300:    # sold BEFORE resolution
-                pnl += size * (cx["exit_p"] - pc) / pc
-                s_ += 1
-                continue
-            wp = _wp(cond, asset, won)
-            pnl += size * (wp - pc) / pc
-            if wp > 0.5:
-                w_ += 1
-            elif wp < 0.5:
-                l_ += 1
+        for e in positions:
+            rp = e.get("realized_pnl") or 0
+            pnl += rp
+            if rp > 0.01:
+                won_ += 1
+            elif rp < -0.01:
+                lost_ += 1
             else:
-                r_ += 1
-        return w_, l_, r_, s_, pnl
-    all_won, all_lost, all_ref, all_sold, all_pnl = tally(tbest.values())
-    thr = cache.conv_cutoff(b["size"] for b in bets)
-    conv = [b for b in bets if b["size"] >= thr]
-    recent = sorted(bets, key=lambda b: b["res_t"] or 0, reverse=True)[:500]
-    cut30 = time.time() - 30 * 86400
-    conv30 = [b for b in conv if (b["res_t"] or 0) >= cut30]
-    brow = lambda bs: [(b["cond"], b.get("asset"), b["won"], b["p"], b["size"], b["res_t"])
-                       for b in bs]
-    cw, cl, cr, cs, cpnl = tally(brow(conv))
-    c3w, c3l, c3r, c3s, c3pnl = tally(brow(conv30))
+                scr_ += 1
+        return won_, lost_, scr_, round(pnl)
+
+    allpos = list(exits.values())
+    all_won, all_lost, all_scr, all_pnl = rtally(allpos)
+    # conviction = the wallet's top-20%-by-stake positions (iv); conv30 = those
+    # closed in the last 30d. Realized P&L over each set.
+    thr = cache.conv_cutoff(e["iv"] for e in allpos if (e.get("iv") or 0) > 0)
+    conv = [e for e in allpos if (e.get("iv") or 0) >= thr]
+    cut30 = now - 30 * 86400
+    conv30 = [e for e in conv if (e.get("ts") or 0) >= cut30]
+    recent = sorted(allpos, key=lambda e: e.get("ts") or 0, reverse=True)[:500]
+    cw, cl, cscr, cpnl = rtally(conv)
+    c3w, c3l, c3scr, c3pnl = rtally(conv30)
     out = {
         "conv_win": round(100 * cw / (cw + cl), 1) if (cw + cl) else None,
-        "conv_won": cw, "conv_lost": cl, "conv_ref": cr, "conv_sold": cs,
-        "conv_pnl": round(cpnl),
+        "conv_won": cw, "conv_lost": cl, "conv_ref": cscr, "conv_sold": 0,
+        "conv_pnl": cpnl,
         "conv30_win": round(100 * c3w / (c3w + c3l), 1) if (c3w + c3l) else None,
-        "conv30_won": c3w, "conv30_lost": c3l, "conv30_ref": c3r, "conv30_sold": c3s,
-        "conv30_pnl": round(c3pnl),
-        "realized_pnl": round(tally(brow(recent))[4]),
+        "conv30_won": c3w, "conv30_lost": c3l, "conv30_ref": c3scr, "conv30_sold": 0,
+        "conv30_pnl": c3pnl,
+        "realized_pnl": rtally(recent)[3],
         "all_win": round(100 * all_won / (all_won + all_lost), 1) if (all_won + all_lost) else None,
-        "all_won": all_won, "all_lost": all_lost, "all_ref": all_ref,
-        "all_sold": all_sold, "all_pnl": round(all_pnl),
+        "all_won": all_won, "all_lost": all_lost, "all_ref": all_scr,
+        "all_sold": 0, "all_pnl": all_pnl,
         "pm_pnl": _pm_profit(w),
-        "avg_bet": round(sum(b["size"] for b in conv) / len(conv)) if conv else 0,
+        "avg_bet": round(sum(e["iv"] for e in conv) / len(conv)) if conv else 0,
         "copy_pnl": 0, "held_pnl": 0, "held_won": 0, "held_lost": 0, "sold": 0,
         "name": None, "last_trade": 0, "last_conv_bet": 0,
     }

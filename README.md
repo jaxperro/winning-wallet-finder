@@ -290,17 +290,21 @@ runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
     location doesn't relocate *you* (trade live from Colombia months, paper
     from US months).
 
-11. **Hold-to-resolution P&L is a copy ceiling, not the wallet's bank
-    statement.** The dashboard's Conv/All-Time P&L columns price every entry
-    held to resolution at the wallet's own stakes — the right yardstick for a
-    copier that holds, and the wrong one for judging the wallet itself.
-    Polymarket's own profile P&L (lb-api `/profit`, the **PM P&L** column) is
-    their actual cash-flow result. ~1× gap = true holder (LSB1 +$69.7k vs
-    +$68.5k); a huge gap = scalper whose entries resolve well but who never
-    holds (ArbTraderRookie: **+$8.6k real vs +$462k held, 53×** — a 0.5%
-    margin on $1.7M volume). For scalpers, whether a copier can reproduce
-    their fills is the open question — judge by the live book's measured
-    slippage, never the ceiling.
+11. **All-Time / Conv P&L is the wallet's REALIZED track record** — the sum of
+    Polymarket's own `realizedPnl` per closed position over the wallet's full
+    history (`cache.closed_exits`, the incremental `/closed-positions` cache).
+    It's what a copier mirroring their buy/sell/hold actually banks, and it
+    equals the profile's **PM P&L** except for unrealized marks on positions
+    still open. This *replaced* the old hold-to-resolution reconstruction
+    (`won × entry × size`), which diverged from PM by up to 10× and even
+    flipped signs — four bugs: a 2,000-row pull cap (fixed: full history),
+    both-sides positions double-dropped by one-per-market dedup (fixed: each
+    asset is its own realized row), `initialValue = 0` mis-sizing (moot —
+    realized P&L needs no size), and corrupt near-epoch `res_t` (moot —
+    realized cash is timestamp-independent). Win % is now the share of closed
+    positions that *made money*, the mirror lens. (For wallets holding a large
+    losing open book, realized > PM because PM marks the open losers in;
+    that gap is unrealized, not an error.)
 
 ---
 

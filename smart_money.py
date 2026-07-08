@@ -142,14 +142,20 @@ def closed_exits(wallet, since_ts=0, max_rows=200000, newest_bound=0):
             break
         for r in page:
             ts = r.get("timestamp") or 0
+            if not (r.get("asset") and ts):
+                continue
             tb = r.get("totalBought") or 0
             avg = r.get("avgPrice") or 0
-            if not (r.get("asset") and ts and tb and avg):
-                continue
-            exit_p = max(0.001, min(0.999, avg + (r.get("realizedPnl") or 0) / tb))
+            rp = r.get("realizedPnl") or 0    # Polymarket's own per-position realized
+                                              # cash — sums to PM /profit; the
+                                              # copier-honest track record
+            # exit price reconstruction needs avg+tb; falls back to avg when the
+            # position lacks them (still keep the row for its realized_pnl)
+            exit_p = max(0.001, min(0.999, avg + rp / tb)) if (avg and tb) else max(0.001, min(0.999, avg or 0.5))
             out.setdefault(r["asset"], {
-                "ts": ts, "exit_p": exit_p, "p": max(0.001, min(0.999, avg)),
-                "iv": r.get("initialValue") or avg * tb, "cond": r.get("conditionId"),
+                "ts": ts, "exit_p": exit_p, "p": max(0.001, min(0.999, avg or 0)),
+                "iv": r.get("initialValue") or (avg * tb) or 0, "cond": r.get("conditionId"),
+                "realized_pnl": rp,
                 "title": r.get("title") or "", "outcome": r.get("outcome") or ""})
         if len(page) < 50:               # short page = start of history reached
             reached_end = True

@@ -191,6 +191,10 @@ for _col in ("title", "outcome"):
         _con.execute(f"ALTER TABLE exits ADD COLUMN {_col} TEXT")
     except Exception:
         pass  # already there
+try:
+    _con.execute("ALTER TABLE exits ADD COLUMN realized_pnl DOUBLE")   # Polymarket's per-position realized cash
+except Exception:
+    pass
 _con.execute("CREATE TABLE IF NOT EXISTS pulled_exits(wallet TEXT PRIMARY KEY, newest_ts BIGINT, pulled_at BIGINT)")
 for _col, _type in (("oldest_ts", "BIGINT"), ("complete", "BOOLEAN")):
     try:
@@ -219,6 +223,14 @@ def closed_exits(wallet, max_age_s=6 * 3600):
                          "WHERE wallet=?", [wallet]).fetchone()
     newest, complete = (r[0], bool(r[2])) if r else (0, False)
     fresh = r and (now - r[1] < max_age_s)
+    if complete:
+        # a wallet cached before realized_pnl existed needs one full re-pull to
+        # backfill it — self-healing, once, only for the affected wallets
+        with _lock:
+            miss = _con.execute("SELECT count(*) FROM exits WHERE wallet=? AND realized_pnl IS NULL",
+                                [wallet]).fetchone()[0]
+        if miss:
+            complete = fresh = False
     if not fresh or not complete:
         if complete:
             new, _ = _sm.closed_exits(wallet, newest_bound=newest)   # only new closes
@@ -228,20 +240,22 @@ def closed_exits(wallet, max_age_s=6 * 3600):
         with _lock:
             if new:
                 _con.executemany(
-                    "INSERT OR REPLACE INTO exits VALUES (?,?,?,?,?,?,?,?,?)",
+                    "INSERT OR REPLACE INTO exits"
+                    "(wallet,asset,ts,exit_p,p,iv,cond,title,outcome,realized_pnl) "
+                    "VALUES (?,?,?,?,?,?,?,?,?,?)",
                     [(wallet, a, c["ts"], c["exit_p"], c["p"], c["iv"], c["cond"],
-                      c.get("title") or "", c.get("outcome") or "")
+                      c.get("title") or "", c.get("outcome") or "", c.get("realized_pnl") or 0)
                      for a, c in new.items()])
                 newest = max(newest, max(c["ts"] for c in new.values()))
             _con.execute("INSERT OR REPLACE INTO pulled_exits(wallet,newest_ts,pulled_at,complete) "
                          "VALUES (?,?,?,?)", [wallet, newest, now, reached])
     with _lock:
         rows = _con.execute(
-            "SELECT asset, ts, exit_p, p, iv, cond, title, outcome FROM exits WHERE wallet=?",
-            [wallet]).fetchall()
+            "SELECT asset, ts, exit_p, p, iv, cond, title, outcome, realized_pnl "
+            "FROM exits WHERE wallet=?", [wallet]).fetchall()
     return {a: {"ts": ts, "exit_p": xp, "p": p, "iv": iv, "cond": cond,
-                "title": t or "", "outcome": o or ""}
-            for a, ts, xp, p, iv, cond, t, o in rows}
+                "title": t or "", "outcome": o or "", "realized_pnl": rp or 0}
+            for a, ts, xp, p, iv, cond, t, o, rp in rows}
 
 
 def invalidate(wallets):
