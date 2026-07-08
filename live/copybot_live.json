@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 37.8,
+ "stake": 37.73,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1058.68,
- "cash": 869.64,
- "deployed": 75.4,
+ "cash": 792.27,
+ "deployed": 150.97,
  "reserve": 0.0,
- "realized": -70.41,
+ "realized": -72.21,
  "adjustments": 15.45,
  "ledger_drift": 36.35,
- "open_count": 2,
- "fees_paid": 19.25,
+ "open_count": 4,
+ "fees_paid": 21.05,
  "fee_rate": 0.03,
  "lag": {
-  "n": 26,
-  "avg_s": 52.8,
-  "avg_slip_pct": -0.0436
+  "n": 28,
+  "avg_s": 49.9,
+  "avg_slip_pct": -0.0955
  },
  "wallets": [
   "Kruto2027",
@@ -50,6 +50,42 @@
   "ArbTrader": 168.41
  },
  "bets": [
+  {
+   "token": "3951320038793129922144925079323613900375603161071783272397192516717451183283",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Under",
+   "title": "Milwaukee Brewers vs. St. Louis Cardinals: O/U 11.5",
+   "their_price": 0.9,
+   "my_price": 0.201,
+   "slippage_pct": -0.7767,
+   "shares": 187.89,
+   "cost": 37.77,
+   "fee": 0.91,
+   "opened": 1783475438,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
+  {
+   "token": "87382220110448622099111493684084130419054861529003852679650948002572780674563",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Under",
+   "title": "Milwaukee Brewers vs. St. Louis Cardinals: O/U 10.5",
+   "their_price": 0.9,
+   "my_price": 0.211,
+   "slippage_pct": -0.7656,
+   "shares": 179.15,
+   "cost": 37.8,
+   "fee": 0.89,
+   "opened": 1783475377,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "62268045217838415143314425413382139516823618876739208102665837804570535617833",
    "wallet": "",
@@ -1211,5 +1247,5 @@
   }
  ],
  "missed_pnl": -372.85,
- "updated": 1783472788
+ "updated": 1783475439
 }
