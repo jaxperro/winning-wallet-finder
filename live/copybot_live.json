@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.16,
+ "stake": 48.15,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1261.68,
- "cash": 971.78,
- "deployed": 232.24,
+ "cash": 923.36,
+ "deployed": 280.4,
  "reserve": 0.0,
- "realized": 188.56,
+ "realized": 188.3,
  "adjustments": 15.45,
  "ledger_drift": -0.0,
- "open_count": 7,
- "fees_paid": 28.68,
+ "open_count": 8,
+ "fees_paid": 28.95,
  "fee_rate": 0.03,
  "lag": {
-  "n": 40,
-  "n24": 19,
-  "avg_s": 21.0,
-  "avg_slip_pct": -0.1745,
+  "n": 41,
+  "n24": 20,
+  "avg_s": 25.7,
+  "avg_slip_pct": -0.1687,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "74201826404615828291163623237612490403507206623053783224357495757337754363906",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Yandex",
+   "title": "Dota 2: Team Yandex vs Inner Circle - Game 1 Winner",
+   "their_price": 0.87,
+   "my_price": 0.82,
+   "slippage_pct": -0.0575,
+   "shares": 58.73,
+   "cost": 48.16,
+   "fee": 0.26,
+   "opened": 1783533404,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "108181173782330719653435176681823026438964067740154119434410054949647661300488",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1490,5 +1508,5 @@
   }
  ],
  "missed_pnl": -367.0,
- "updated": 1783531585
+ "updated": 1783533517
 }
