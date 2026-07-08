@@ -5,18 +5,6 @@
   "price_guard_pct": 0.05,
   "wallets": [
     {
-      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-      "name": "Kruto2027",
-      "class": "volume",
-      "floor": 127.06
-    },
-    {
-      "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
-      "name": "fortuneking",
-      "class": "volume",
-      "floor": 999.02
-    },
-    {
       "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
       "name": "LSB1",
       "class": "volume",
@@ -29,28 +17,28 @@
       "floor": 122.43
     },
     {
-      "wallet": "0xfc81760d44a21acc9fd4b749a5bf9a9b2eeae072",
-      "name": "iohihoo",
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "name": "Kruto2027",
       "class": "volume",
-      "floor": 60.0
+      "floor": 127.06
     },
     {
-      "wallet": "0xf5fe759cece500f58a431ef8dacea321f6e3e23d",
-      "name": "Stavenson",
+      "wallet": "0x0d42cc5ff0526fbb8f0bb9eafa9ebba3f23df124",
+      "name": "42021",
       "class": "volume",
-      "floor": 4759.62
+      "floor": 276.71
     },
     {
-      "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
-      "name": "0x4bFb-whale",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "name": "0xbadaf319",
       "class": "volume",
-      "floor": 1089.72
+      "floor": 44.51
     },
     {
-      "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
-      "name": "ArbTrader",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "name": "BikesAreTheBikes",
       "class": "volume",
-      "floor": 168.44
+      "floor": 215.88
     }
   ],
   "follow": {
