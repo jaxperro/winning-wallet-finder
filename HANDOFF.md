@@ -62,10 +62,14 @@ automated.
 
 ## Standing to-dos (user-only or external)
 
-- **ROTATE THE LEAKED ALCHEMY KEY** (config.live.example.json git history).
-  New key at dashboard.alchemy.com → update gitignored `config.json` AND
-  `flyctl secrets set ALCHEMY_RPC_URL=...`. This is the LAST standing to-do.
-  (Railway project deleted 2026-07-08; purges 2026-07-10.)
+- **None open.** Alchemy key ROTATED 2026-07-08: old app "Jax's First App"
+  (key `…OdWgOi`, the one leaked to public git history) deleted; new app
+  `wwf-rpc-2026-07` (key `…w0BxV5`) wired into gitignored `config.json` +
+  the `ALCHEMY_RPC_URL` Fly secret. Verified: old key → HTTP 401 (the key
+  in git history is now dead, so no history rewrite needed), new key serves
+  Polygon, bot rebooted with settle-fallback ON and made a live copy, Notify
+  webhook `wh_blf4qjjvfdbqs9mc` survived (app-delete doesn't touch Notify
+  resources) — 7 addresses in sync. Railway project deleted (purges 07-10).
 
 ## Operational quick-reference
 
