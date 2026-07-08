@@ -117,6 +117,18 @@ else:
 if not WALLETS:
     raise SystemExit("no wallets to replay: create live/backtest.json or pass --wallets")
 
+# the live bot's pinned conviction floors (sync_floors -> copybot.paper.json).
+# When a replayed wallet is one the bot follows, gate on the SAME floor the bot
+# enforces — a recomputed p80 can drift a few % from the pin and then the two
+# books take different bets (alignment audit 2026-07-08). Candidate sets passed
+# via --wallets have no pin and fall back to the p80 recompute.
+try:
+    _PINNED = {w["wallet"].lower(): w["floor"]
+               for w in json.load(open(os.path.join(HERE, "copybot.paper.json")))["wallets"]
+               if w.get("floor")}
+except Exception:
+    _PINNED = {}
+
 
 def entry_model(p, stake):
     """(effective entry price, entry fee, total cash cost) of a $stake copy:
@@ -124,6 +136,30 @@ def entry_model(p, stake):
     p_eff = min(0.999, p * (1 + SLIP))
     fee = stake * FEE_RATE * (1 - p_eff)
     return p_eff, fee, stake + fee
+
+
+def _sold_pre_resolution(cx, won, res_t):
+    """Did the wallet SELL this position (a mirrorable exit the live bot would
+    copy) rather than redeem it at resolution? The timestamp test only works
+    when res_t is a real resolution moment — for in-play markets res_t is the
+    market's endDate metadata (game-DAY midnight), which pre-dates the wallet's
+    own entry, so the exit can never test earlier and every in-play sell used
+    to book as held-to-resolution (Kruto's Jul-7 Brewers sells, found
+    2026-07-08). Price is the fallback truth: a genuine sell prints a mid
+    price; a redeem (or post-resolution dump) prints ≈ the payout. When the two
+    disagree we book the wallet's actual exit print — that is what happened on
+    Polymarket, and it also self-corrects a poisoned won flag. A 50/50 refund
+    redeemed at 0.5 books as sold-at-0.5 (same money as refund, label S not R)."""
+    if res_t and cx["ts"] < res_t - 300:
+        return True
+    xp = cx.get("exit_p")
+    if xp is None:
+        return False
+    # a redeem reconstructs at EXACTLY the payout (payoff×shares/shares); the
+    # 0.02 band only absorbs avg-price rounding artifacts (0.8999998…), so a
+    # 0.96 exit on a won market correctly reads as a pre-resolution sell
+    payout = 1.0 if won else 0.0
+    return abs(xp - payout) > 0.02
 
 _MKT = {}
 _SLUG_CACHE = os.path.join(HERE, "slug_cache.json")
@@ -190,6 +226,8 @@ def window_bets():
                 best[cond] = (asset, won, p, res_t, size)
         if w.get("class") == "whale":
             thr = 0.0
+        elif w["wallet"].lower() in _PINNED:
+            thr = _PINNED[w["wallet"].lower()]
         else:
             pre = [size for asset, won, p, res_t, size in best.values() if res_t < START]
             thr = cache.conv_cutoff(pre if pre else
@@ -211,7 +249,7 @@ def window_bets():
                  "their": size, "entry_t": et, "p": p, "won": won,
                  "res_t": res_t or 0}
             cx = closed.get(asset)
-            if cx and res_t and cx["ts"] < res_t - 300:    # sold BEFORE resolution
+            if cx and _sold_pre_resolution(cx, won, res_t):
                 b["exit_t"], b["exit_p"] = cx["ts"], cx["exit_p"]
             out.append(b)
         # complete round trips the cache can't see: entered AND fully exited
@@ -225,9 +263,25 @@ def window_bets():
             et = ent.get(cond)
             if not et or et < START:
                 continue
-            if payouts.truth(cond) is not None:
-                continue        # resolved on-chain: their close may be a redeem,
-                                # not a sell — the cache row will cover it
+            wp = payouts.truth(cond)
+            if wp is not None and abs((cx["exit_p"] if cx["exit_p"] is not None
+                                       else wp) - wp) <= 0.02:
+                # resolved on-chain AND their close prints ≈ the payout: the
+                # close was the redeem, not a sell. The trusted cache row
+                # usually books this bet — but when res_t is bogus forward
+                # metadata (in-play/tennis endDate: Kruto's Chidekh total sat
+                # "unresolved until Jul 14" on a Jul-5 match) the row never
+                # qualifies and the bet used to vanish here. Book it as
+                # held-to-resolution at chain truth (2026-07-08).
+                best[cond] = None
+                out.append({"wallet": w["wallet"], "name": w["name"], "cond": cond,
+                            "asset": asset, "cls": w.get("class", "volume"),
+                            "their": cx["iv"], "entry_t": et, "p": cx["p"],
+                            "won": wp > 0.5, "wp": wp, "res_t": cx["ts"],
+                            "title": cx.get("title") or ""})
+                continue
+            # exit print ≠ payout (or market genuinely unresolved): a real
+            # pre-resolution sell — mirror it, like the live bot
             best[cond] = None   # one per market, same as everywhere
             out.append({"wallet": w["wallet"], "name": w["name"], "cond": cond,
                         "asset": asset, "cls": w.get("class", "volume"),
@@ -482,7 +536,7 @@ def main():
 
     # enrich resolved + missed with titles, keep most-recent 60
     resolved.sort(key=lambda r: r.get("exit_t") or r.get("res_t") or 0, reverse=True)
-    for r in resolved[:60]:
+    for r in resolved[:250]:
         m = market_meta(r["cond"])
         if m["title"]:                # round-trip recs already carry a title
             r["title"] = m["title"]
@@ -558,7 +612,7 @@ def main():
                                  else "won" if r["won"] else "lost"),
                       "stake": r.get("stake"), "pnl": round(r["pnl"], 2),
                       "date": r.get("exit_t") or r.get("res_t")}
-                     for r in resolved[:60]],
+                     for r in resolved[:250]],
         "missed": [{"title": m.get("title", ""), "name": m["name"],
                     "won": (None if "won" not in m or m.get("exit_t")
                             else (m["won"] if m.get("wp") is None else m["wp"] > 0.5)),
