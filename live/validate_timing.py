@@ -79,11 +79,10 @@ def _clob_winner(cond, token):
 
 
 def _pm_profit(w):
-    """The wallet's own all-time account P&L as Polymarket reports it
-    (lb-api /profit): cash-flow truth including early sells. The sanity anchor
-    next to the hold-to-resolution columns — a ~1x gap means true holder, a
-    huge gap means scalper (ArbTraderRookie: +$8.6k real vs +$462k held, 53x —
-    a 0.5% margin on $1.7M volume)."""
+    """The wallet's own all-time account P&L as Polymarket reports it (lb-api
+    /profit): realized cash PLUS unrealized marks on open positions. Our
+    All-Time P&L (realized only) equals this minus the open book — the two
+    reconcile via _open_pnl below."""
     try:
         req = urllib.request.Request(
             "https://lb-api.polymarket.com/profit?window=all&limit=1&address=" + w,
@@ -92,6 +91,26 @@ def _pm_profit(w):
         return round(r[0]["amount"]) if r else None
     except Exception:
         return None
+
+
+def _open_pnl(w):
+    """The wallet's OPEN (unrealized) P&L — sum of cashPnl over every current
+    position, full paging (the endpoint caps at 50/page). This is the exposure
+    sitting behind the realized track record: a wallet with a great All-Time
+    (realized) P&L but a large NEGATIVE open book is selling winners and
+    holding losers — the realized number flatters what you'd feel following
+    them live. PM /profit marks this in; our realized All-Time P&L doesn't, so
+    Open P&L is exactly the reconciling gap between them."""
+    total = 0.0
+    for off in range(0, 100000, 50):
+        pg = sm.get_json("/positions", {"user": w, "limit": 50, "offset": off,
+                                        "sizeThreshold": 0})
+        if not pg:
+            break
+        total += sum(p.get("cashPnl") or 0 for p in pg)
+        if len(pg) < 50:
+            break
+    return round(total)
 
 
 def _wp(cond, asset, won):
@@ -180,6 +199,7 @@ def display_stats(w):
         "all_win": round(100 * all_won / (all_won + all_lost), 1) if (all_won + all_lost) else None,
         "all_won": all_won, "all_lost": all_lost, "all_ref": all_scr,
         "all_sold": 0, "all_pnl": all_pnl,
+        "open_pnl": _open_pnl(w),
         "pm_pnl": _pm_profit(w),
         "avg_bet": round(sum(e["iv"] for e in conv) / len(conv)) if conv else 0,
         "copy_pnl": 0, "held_pnl": 0, "held_won": 0, "held_lost": 0, "sold": 0,
