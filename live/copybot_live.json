@@ -68,68 +68,7 @@
    "settled": null
   }
  ],
- "missed": [
-  {
-   "ts": 1783548397,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "26269799282038255049070834707453795656783818377275969216981597819233465503625",
-   "cond": "0x25565ee4d04d1cce6b8d38d7d658747dc5d1a9248cba41411e7aae5bafe01df1",
-   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $10.8B?",
-   "outcome": "No",
-   "price": 0.5541,
-   "stake": 40.0,
-   "reason": "bot offline (entered while down)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783548397,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "87205950750472435549030175751438341557327575404067109581187135477052831144559",
-   "cond": "0x85a866a31777c4b204b9d33354e97d31b885975b04dfe96a13b7d8ffd3008341",
-   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $10.6B?",
-   "outcome": "Yes",
-   "price": 0.4016,
-   "stake": 40.0,
-   "reason": "bot offline (entered while down)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783547426,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "65881500565858240866828519291872961252379820293218524871683896827242415651358",
-   "cond": "0xbe441240d3c5d2d7f4a74af39bd6cb7baf21515f1bbf2a389b08efb08cbaea50",
-   "title": "Will Goldman Sachs (GS) Q2 investment banking fees be above $2.35B?",
-   "outcome": "Yes",
-   "price": 0.4677,
-   "stake": 40.0,
-   "reason": "bot offline (entered while down)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783546817,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "108097819032362232168754373234866768117360060536989734427640383701915911737522",
-   "cond": "0x4e4c206465fdd1ee129653eff03ccf55870321a3599bc4dd70b29f2dde23ccca",
-   "title": "Perena FDV above $600M one day after launch?",
-   "outcome": "No",
-   "price": 0.9221,
-   "stake": 40.0,
-   "reason": "bot offline (entered while down)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  }
- ],
+ "missed": [],
  "missed_pnl": 0,
- "updated": 1783548398
+ "updated": 1783548757
 }
