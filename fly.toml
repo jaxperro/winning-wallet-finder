@@ -23,3 +23,15 @@ primary_region = "arn"
 [[vm]]
   size = "shared-cpu-1x"
   memory = "512mb"
+
+# health check: Fly restarts the machine if /health stops answering — the
+# self-heal half of the watchdog (the notify half is the GitHub Actions
+# watchdog workflow -> Discord). grace covers the boot clone.
+[checks]
+  [checks.health]
+    type = "http"
+    port = 8080
+    path = "/health"
+    interval = "30s"
+    timeout = "5s"
+    grace_period = "60s"

@@ -98,7 +98,7 @@ does).
 | `host/geocheck.py` | 3-probe geo-gate verdict (ipinfo → Polymarket's `/api/geoblock` → unauth CLOB order POST); runs at every boot, `GEOCHECK_ONLY=1` = probe-and-idle for testing a new host/region without a second book-writer |
 | `live/discord_daily.py` | the daily Discord digest (the only Discord output) |
 | `copybot.py` | the copy-trading bot: push/poll trigger → follow filter → execution engine (paper + live) |
-| `archive/copytrade.py` | the execution engine the bot reuses: sizing, risk gates, price guard, paper/live executors |
+| `copytrade.py` | the execution engine the bot reuses: sizing, risk gates, price guard, paper/live executors (moved out of archive/ 2026-07-08 — nothing load-bearing lives in archive) |
 | `host/start.sh` | 24/7 worker bootstrap for Fly/any VPS (geo-gate check, clones repo, resumes committed state) |
 | `LIVE_TEST.md` · `preflight_live.py` · `redeem.py` | real-money runbook, read-only credential preflight, on-chain redemption |
 | `insider.py` | the original detector: z-score, pre-resolution timing, fresh-wallet flags, funding-cluster rings |

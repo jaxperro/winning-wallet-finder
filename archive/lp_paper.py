@@ -34,6 +34,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 
 from lp_screener import get, reward_markets, daily_rate, hours_to_end, realized_vol_cents, CLOB
+import sys, os; sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))  # copytrade lives at the repo root since 2026-07-08
 from copytrade import post_discord, load_json
 
 STATE_PATH = "lp_paper_state.json"

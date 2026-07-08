@@ -50,9 +50,7 @@ import urllib.error
 import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
-# reuse the proven execution engine as a library (kept in archive/)
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "archive"))
-from copytrade import (  # noqa: E402
+from copytrade import (  # the execution engine (sizing, gates, executors)
     CopyTrader, PaperExecutor, LiveExecutor, DEFAULT_CONFIG,
     load_json, save_json, new_state, recent_trades, confirm_live,
 )

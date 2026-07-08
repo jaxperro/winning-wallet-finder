@@ -21,6 +21,7 @@ import time
 from collections import defaultdict
 
 import smart_money as sm
+import sys, os; sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))  # copytrade lives at the repo root since 2026-07-08
 from copytrade import clob_price, DEFAULT_CONFIG, load_json
 
 LOOKBACK_DAYS = 21          # how far before the window we try to read, for seed
