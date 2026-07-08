@@ -70,6 +70,36 @@
  ],
  "missed": [
   {
+   "ts": 1783548397,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "26269799282038255049070834707453795656783818377275969216981597819233465503625",
+   "cond": "0x25565ee4d04d1cce6b8d38d7d658747dc5d1a9248cba41411e7aae5bafe01df1",
+   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $10.8B?",
+   "outcome": "No",
+   "price": 0.5541,
+   "stake": 40.0,
+   "reason": "bot offline (entered while down)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1783548397,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "87205950750472435549030175751438341557327575404067109581187135477052831144559",
+   "cond": "0x85a866a31777c4b204b9d33354e97d31b885975b04dfe96a13b7d8ffd3008341",
+   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $10.6B?",
+   "outcome": "Yes",
+   "price": 0.4016,
+   "stake": 40.0,
+   "reason": "bot offline (entered while down)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783547426,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "65881500565858240866828519291872961252379820293218524871683896827242415651358",
@@ -101,5 +131,5 @@
   }
  ],
  "missed_pnl": 0,
- "updated": 1783547427
+ "updated": 1783548398
 }
