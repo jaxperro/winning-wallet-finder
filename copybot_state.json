@@ -3456,8 +3456,8 @@
     }
   },
   "hwm": 1000.0,
-  "feed_sig": "69aab33d56f8c4dbe3df41a05bab93d9",
-  "feed_pushed_at": 1783546756.715792,
+  "feed_sig": "680ea9f151e63d481e263f6564972b5a",
+  "feed_pushed_at": 1783547364.688946,
   "missed": [
     {
       "ts": 1783546817,
@@ -3467,6 +3467,21 @@
       "title": "Perena FDV above $600M one day after launch?",
       "outcome": "No",
       "price": 0.9221,
+      "stake": 40.0,
+      "reason": "bot offline (entered while down)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "0xbadaf319"
+    },
+    {
+      "ts": 1783547426,
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "token": "65881500565858240866828519291872961252379820293218524871683896827242415651358",
+      "cond": "0xbe441240d3c5d2d7f4a74af39bd6cb7baf21515f1bbf2a389b08efb08cbaea50",
+      "title": "Will Goldman Sachs (GS) Q2 investment banking fees be above $2.35B?",
+      "outcome": "Yes",
+      "price": 0.4677,
       "stake": 40.0,
       "reason": "bot offline (entered while down)",
       "status": "open",
