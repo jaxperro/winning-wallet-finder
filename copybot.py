@@ -467,7 +467,7 @@ class Copybot:
         my_p = fill["price"]
         slip_pct = (my_p - their_p) / their_p if their_p else 0.0
         rec = {
-            "ts": round(now, 1), "wallet": wallet,
+            "ts": round(now, 1), "wallet": wallet, "token": str(fill["token"]),
             "name": self.names.get(wallet.lower(), wallet[:10]),
             "outcome": t.get("outcome"), "title": (t.get("title") or "")[:80],
             "detect_lag_s": round(detect_s, 1) if detect_s is not None else None,
@@ -523,6 +523,166 @@ class Copybot:
         log(f"  ↳ lag {('%.0fs' % detect_s) if detect_s is not None else '?'} · "
             f"their {their_p:.3f} → mine {my_p:.3f} ({slip_pct:+.1%} slippage)")
 
+    def _synth_bet(self, tok, pos):
+        """Bet record for an open my_pos position that has none (their_price
+        None marks it synthesized — lag/slippage unknowable, the source trade
+        is gone). Fee is ESTIMATED with the same taker_fee formula _drain_fills
+        charges, so for a position whose cash WAS debited the ledger closes to
+        0 (same inputs, same result) — while a never-debited orphan shows
+        drift = cost+fee exactly, which is what check_book's heal keys on."""
+        bets = self.engine.state.setdefault("bets", {})
+        b = bets.get(tok) or {}
+        sh = pos.get("shares") or 0
+        cost = pos.get("cost") or 0
+        fee = b.get("fee") or (taker_fee(sh, cost / sh, self.fee_rate) if sh else 0)
+        bets[tok] = {
+            "token": tok, "wallet": pos.get("wallet", ""),
+            "name": self.names.get((pos.get("wallet") or "").lower())
+                    or b.get("name") or "?",
+            "outcome": pos.get("outcome"), "title": (pos.get("title") or "")[:90],
+            "their_price": None,
+            "my_price": round(cost / sh, 4) if sh else None,
+            "slippage_pct": None,
+            "shares": round(sh, 2), "cost": round(cost, 2),
+            "fee": round(fee, 4),
+            "opened": b.get("opened") or int(time.time()), "status": "open",
+            "exit_price": None, "pnl": None, "settled": None,
+        }
+        return bets[tok]
+
+    def _record_untracked_buy(self, f):
+        """A drained BUY fill no _record_lag call claimed — the handler that
+        placed it died between handle_trade and _drain_fills (webhook catches
+        the exception, the fill sits in ex.fills), so a LATER drain booked its
+        cash under some other trade's iteration. Before 2026-07-08 that fill
+        vanished: position in my_pos, cash debited, but no bet record and no
+        conds entry — the invisible-orphan seam behind the $+36.35 drift.
+        Book it now: audit line, bet record (from the fill + my_pos
+        attribution), conds from the position."""
+        tok = f["token"]
+        pos = self.engine.state["my_pos"].get(tok, {})
+        if pos.get("cond") and tok not in self.conds:
+            self.conds[tok] = pos["cond"]
+        try:
+            with open(os.path.join(self.here, self.fill_log), "a") as fh:
+                fh.write(json.dumps({
+                    "ts": round(time.time(), 1), "side": "BUY", "untracked": True,
+                    "token": str(tok), "shares": round(f["shares"], 4),
+                    "price": round(f["price"], 4), "fee": f.get("fee", 0),
+                    "mode": "live" if self.engine.ex.live else "paper",
+                }) + "\n")
+        except Exception:
+            pass
+        bets = self.engine.state.setdefault("bets", {})
+        prev = bets.get(tok)
+        if prev and prev.get("status") == "open":
+            # ADD to an open record: accumulate unrounded, like _record_lag
+            sh = prev["shares"] + f["shares"]
+            cost = prev["cost"] + f["shares"] * f["price"]
+            prev.update(shares=sh, cost=cost,
+                        my_price=(cost / sh) if sh else prev["my_price"],
+                        fee=(prev.get("fee") or 0) + f.get("fee", 0))
+        else:
+            bets[tok] = {
+                "token": tok, "wallet": pos.get("wallet", ""),
+                "name": self.names.get((pos.get("wallet") or "").lower(), "?"),
+                "outcome": pos.get("outcome"), "title": (pos.get("title") or "")[:90],
+                "their_price": None,
+                "my_price": round(f["price"], 4),
+                "slippage_pct": None,
+                "shares": round(f["shares"], 2),
+                "cost": round(f["shares"] * f["price"], 2),
+                "fee": f.get("fee", 0),
+                "opened": int(time.time()), "status": "open",
+                "exit_price": None, "pnl": None, "settled": None,
+            }
+        log(f"  ↳ untracked buy booked: {(pos.get('title') or '?')[:42]} — "
+            f"{f['shares']:.1f}sh @ {f['price']:.3f}")
+
+    def _ledger_buy_tokens(self):
+        """Tokens with a BUY line in the fills ledger — i.e. positions whose
+        cash demonstrably went through _drain_fills. Lines from before
+        2026-07-08 carry no 'token' (they can't vouch for anyone) and no
+        'side' (they are all buys — sells only started logging 2026-07-06)."""
+        toks = set()
+        try:
+            with open(os.path.join(self.here, self.fill_log)) as fh:
+                for line in fh:
+                    try:
+                        r = json.loads(line)
+                    except Exception:
+                        continue
+                    if r.get("side", "BUY") == "BUY" and r.get("token"):
+                        toks.add(str(r["token"]))
+        except FileNotFoundError:
+            pass
+        return toks
+
+    def check_book(self, heal_cash=False):
+        """The book invariant (HANDOFF proper fix, Option A), asserted after
+        every trade and at boot: every my_pos token has a bet record, a conds
+        entry, and its cost debited from cash. Records and conds self-correct
+        here. The cash leg only heals at boot (heal_cash=True) and only when
+        ledger_drift matches ONE candidate's cost+fee — candidates are
+        positions with no drained-fill evidence (no ledger BUY line, record
+        synthesized) — so a drift that matches nothing stays loudly visible
+        instead of being papered over. Callers hold self.lock (webhook path)
+        or run before threads start (boot)."""
+        st = self.engine.state
+        mp = st["my_pos"]
+        bets = st.setdefault("bets", {})
+        fixed = False
+        for tok, pos in list(mp.items()):
+            b = bets.get(tok)
+            if not b or b.get("status") != "open":
+                self._synth_bet(tok, pos)
+                log(f"⚠ BOOK: synthesized missing bet record — "
+                    f"{(pos.get('title') or '?')[:42]}")
+                fixed = True
+            if tok not in self.conds:
+                if pos.get("cond"):
+                    self.conds[tok] = pos["cond"]
+                    log(f"⚠ BOOK: backfilled conds from my_pos — "
+                        f"{(pos.get('title') or '?')[:42]}")
+                    fixed = True
+                else:
+                    log(f"⚠ BOOK: no conditionId for "
+                        f"{(pos.get('title') or '?')[:42]} — can't settle it "
+                        f"until a reconcile pass learns the market")
+        drift = self.ledger_drift()
+        if heal_cash and abs(drift) > 0.01:
+            vouched = self._ledger_buy_tokens()
+            for tok in list(mp):
+                b = bets.get(tok) or {}
+                # a real _record_lag record (their_price set) or a ledger BUY
+                # line proves the fill was drained — cash side is fine
+                if str(tok) in vouched or b.get("their_price") is not None:
+                    continue
+                gap = (b.get("cost") or mp[tok].get("cost") or 0) + (b.get("fee") or 0)
+                if gap > 0 and abs(drift - gap) <= max(0.10, 0.01 * gap):
+                    st["cash"] -= gap
+                    st["fees_paid"] = st.get("fees_paid", 0.0) + (b.get("fee") or 0)
+                    try:                     # the late debit IS the missed drain
+                        with open(os.path.join(self.here, self.fill_log), "a") as fh:
+                            fh.write(json.dumps({
+                                "ts": round(time.time(), 1), "side": "BUY",
+                                "healed": True, "token": str(tok),
+                                "shares": round(mp[tok].get("shares", 0), 4),
+                                "price": b.get("my_price"), "fee": b.get("fee", 0),
+                                "mode": "live" if self.engine.ex.live else "paper",
+                            }) + "\n")
+                    except Exception:
+                        pass
+                    log(f"⚠ BOOK HEALED: debited ${gap:.2f} never-drained cost — "
+                        f"{(b.get('title') or '?')[:42]} (drift was ${drift:+.2f})")
+                    drift = self.ledger_drift()
+                    fixed = True
+        if fixed:
+            self.engine.persist()
+        if abs(drift) > 0.01:
+            log(f"⚠ LEDGER DRIFT ${drift:+.2f} — check_book could not attribute it")
+        return drift
+
     def write_feed(self):
         """Publish the bot's live book to live/copybot_live.json — the feed the
         top of jaxperro.com/trading reads. Reconciles any open bet no longer held
@@ -539,19 +699,7 @@ class Copybot:
         for tok, p in mp.items():
             b = bets.get(tok)
             if not b or b.get("status") != "open":
-                bets[tok] = {
-                    "token": tok, "wallet": p.get("wallet", ""),
-                    "name": self.names.get((p.get("wallet") or "").lower())
-                            or (b or {}).get("name") or "?",
-                    "outcome": p.get("outcome"), "title": (p.get("title") or "")[:90],
-                    "their_price": None,
-                    "my_price": round(p["cost"] / p["shares"], 4) if p.get("shares") else None,
-                    "slippage_pct": None,
-                    "shares": round(p["shares"], 2), "cost": round(p["cost"], 2),
-                    "fee": (b or {}).get("fee", 0),
-                    "opened": (b or {}).get("opened") or int(time.time()), "status": "open",
-                    "exit_price": None, "pnl": None, "settled": None,
-                }
+                self._synth_bet(tok, p)
         for tok, b in bets.items():
             if b["status"] == "open" and tok not in mp:
                 b["status"] = "closed"
@@ -800,6 +948,12 @@ class Copybot:
                 for f in self._drain_fills():
                     if f["token"] == tok:                    # the fill from this copy
                         self._record_lag(wallet, t, f)
+                    else:
+                        # a leftover fill from a handler that died mid-trade —
+                        # its cash was just debited above; record it or it
+                        # becomes an invisible orphan (the 2026-07-08 drift)
+                        self._record_untracked_buy(f)
+                self.check_book()
 
     def reconcile_exits(self):
         """Exits the signal made while we weren't listening. RECENT_TRADE_WINDOW_S
@@ -859,7 +1013,8 @@ class Copybot:
                 # their_prev<=0 -> frac 1.0: sell everything we hold
                 self.engine._handle_their_sell(
                     token, 0, 0, f"{pos.get('outcome','?')} · {pos.get('title','?')[:42]}")
-                self._drain_fills()                 # book the sell's cash + sold-leg
+                for f in self._drain_fills():       # book the sell's cash + sold-leg
+                    self._record_untracked_buy(f)   # (returned buys = leftovers)
                 # LIVE_ROLLOUT 1.6 — a FAK sell on a thin book can fill 0 and
                 # the position silently rides to resolution. This pass re-fires
                 # every backstop poll; count the attempts and raise the alarm
@@ -1244,6 +1399,10 @@ def main():
         f"${cfg['risk']['daily_spend_cap_usd']:.0f}/day, "
         f"${cfg['risk']['max_total_exposure_usd']:.0f} exposure")
     bot.seed()
+    # boot invariant pass: rebuild any missing bet/conds records and — only
+    # here, where no trade is in flight — heal a never-debited orphan's cash
+    # if the drift matches it exactly (HANDOFF proper fix, Option A)
+    bot.check_book(heal_cash=True)
 
     # one-shot pipeline test: no server, just push a wallet's latest trade through
     if args.test_wallet:

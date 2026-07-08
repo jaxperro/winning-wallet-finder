@@ -483,11 +483,16 @@ class CopyTrader:
         if is_add:
             mine["shares"] += res["filled_shares"]
             mine["cost"] += spent
+            if cond:
+                mine.setdefault("cond", cond)
         else:
+            # wallet/cond ride on the position so the book can always self-repair:
+            # wallet for the feed's my_pos->bets safety net, cond so check_book can
+            # rebuild the conds map (an orphan without it can never settle)
             self.state["my_pos"][token] = {
                 "shares": res["filled_shares"], "cost": spent,
                 "title": title, "outcome": outcome, "event": event,
-                "wallet": wallet}          # attribution for the feed's my_pos->bets safety net
+                "wallet": wallet, "cond": cond}
         tag = "[PAPER]" if not self.ex.live else "[LIVE]"
         self.alert(
             f"{kind} {label} — {tag} buy {res['filled_shares']:.1f} "
