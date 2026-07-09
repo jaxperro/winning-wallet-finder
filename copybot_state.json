@@ -3983,8 +3983,8 @@
     }
   },
   "hwm": 1142.0163756395518,
-  "feed_sig": "4f44399e4d32ab6ac810ff3f240db771",
-  "feed_pushed_at": 1783600088.8541946,
+  "feed_sig": "698365eb54ff97bc3e9799c8468c7447",
+  "feed_pushed_at": 1783600213.7398403,
   "missed": [
     {
       "ts": 1783590977,
@@ -3996,9 +3996,9 @@
       "price": 0.62,
       "stake": 41.67,
       "reason": "bot offline (entered while down)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 25.06,
+      "settled": 1783600276,
       "name": "AIcAIc"
     },
     {

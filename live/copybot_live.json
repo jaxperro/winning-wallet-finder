@@ -250,6 +250,21 @@
  ],
  "missed": [
   {
+   "ts": 1783590977,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "20414976475690894265425364948116786155162480053919701442335217459387124913382",
+   "cond": "0x9feec0e8301d26be7db36412dfd040769f7fbd3efcc892309863c6062adb3cf7",
+   "title": "LoL: Bilibili Gaming vs Hanwha Life Esports - Game 3 Winner",
+   "outcome": "Hanwha Life Esports",
+   "price": 0.62,
+   "stake": 41.67,
+   "reason": "bot offline (entered while down)",
+   "status": "won",
+   "pnl": 25.06,
+   "settled": 1783600276,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1783598001,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "9679320407472932109528091937661974039402650044145955274074635176957029935409",
@@ -278,23 +293,8 @@
    "pnl": null,
    "settled": null,
    "name": "gkmgkldfmg"
-  },
-  {
-   "ts": 1783590977,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "20414976475690894265425364948116786155162480053919701442335217459387124913382",
-   "cond": "0x9feec0e8301d26be7db36412dfd040769f7fbd3efcc892309863c6062adb3cf7",
-   "title": "LoL: Bilibili Gaming vs Hanwha Life Esports - Game 3 Winner",
-   "outcome": "Hanwha Life Esports",
-   "price": 0.62,
-   "stake": 41.67,
-   "reason": "bot offline (entered while down)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
   }
  ],
- "missed_pnl": 0,
- "updated": 1783600152
+ "missed_pnl": 25.06,
+ "updated": 1783600276
 }
