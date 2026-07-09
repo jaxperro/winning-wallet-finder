@@ -8,9 +8,9 @@
  "cash": 1637.48,
  "deployed": 295.58,
  "reserve": 0.0,
- "realized": 933.06,
- "adjustments": 0,
- "ledger_drift": -11.32,
+ "realized": 933.03,
+ "adjustments": 0.03,
+ "ledger_drift": -0.0,
  "open_count": 6,
  "fees_paid": 38.19,
  "fee_rate": 0.03,
@@ -320,6 +320,48 @@
    "settled": 1783597696,
    "sold_shares": 560.46,
    "sold_proceeds": 44.31
+  },
+  {
+   "token": "67316041392595003970935162895075724563017159074192091517379695493042764601836",
+   "wallet": "0xd7d363457b9d4f527524ea6a7c9f8b0e2c0e4a00",
+   "name": "gkmgkldfmg",
+   "outcome": "GamerLegion",
+   "title": "Dota 2: GamerLegion vs Team Falcons - Game 2 Winner?",
+   "their_price": null,
+   "my_price": 0.39,
+   "slippage_pct": null,
+   "shares": 116.92,
+   "cost": 45.6,
+   "fee": 0.83,
+   "sold_shares": 116.92,
+   "sold_proceeds": 27.37,
+   "opened": 1783597238,
+   "status": "closed",
+   "exit_price": 0.2341,
+   "pnl": -19.06,
+   "settled": 1783597386,
+   "note": "reconstructed from fills ledger 2026-07-09 \u2014 round clobbered pre-archive-fix"
+  },
+  {
+   "token": "67316041392595003970935162895075724563017159074192091517379695493042764601836",
+   "wallet": "0xd7d363457b9d4f527524ea6a7c9f8b0e2c0e4a00",
+   "name": "gkmgkldfmg",
+   "outcome": "GamerLegion",
+   "title": "Dota 2: GamerLegion vs Team Falcons - Game 2 Winner?",
+   "their_price": null,
+   "my_price": 0.33,
+   "slippage_pct": null,
+   "shares": 137.24,
+   "cost": 45.29,
+   "fee": 0.91,
+   "sold_shares": 137.24,
+   "sold_proceeds": 53.91,
+   "opened": 1783597207,
+   "status": "closed",
+   "exit_price": 0.3928,
+   "pnl": 7.71,
+   "settled": 1783597238,
+   "note": "reconstructed from fills ledger 2026-07-09 \u2014 round clobbered pre-archive-fix"
   },
   {
    "token": "5935284746747952722647052327314425731758209998268351888638837864133688247636",
@@ -644,5 +686,5 @@
   }
  ],
  "missed_pnl": -17.32,
- "updated": 1783621298
+ "updated": 1783621392
 }
