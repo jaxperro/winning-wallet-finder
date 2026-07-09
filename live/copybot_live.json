@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 80.6,
+ "stake": 81.3,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 2014.91,
- "cash": 1765.3,
- "deployed": 249.61,
+ "hwm": 2032.51,
+ "cash": 1838.93,
+ "deployed": 193.58,
  "reserve": 0.0,
- "realized": 1014.88,
+ "realized": 1032.48,
  "adjustments": 0.03,
- "ledger_drift": -0.0,
- "open_count": 5,
- "fees_paid": 45.43,
+ "ledger_drift": -0.01,
+ "open_count": 4,
+ "fees_paid": 46.5,
  "fee_rate": 0.03,
  "lag": {
   "n": 31,
@@ -50,6 +50,26 @@
  },
  "bets": [
   {
+   "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "LGD Gaming",
+   "title": "Dota 2: LGD Gaming vs 1win - Game 2 Winner",
+   "their_price": 0.3857,
+   "my_price": 0.39,
+   "slippage_pct": 0.0112,
+   "shares": 202.57,
+   "cost": 79.0,
+   "fee": 1.45,
+   "opened": 1783626071,
+   "status": "closed",
+   "exit_price": 0.5339,
+   "pnl": 27.71,
+   "settled": 1783626772,
+   "sold_shares": 202.57,
+   "sold_proceeds": 108.15
+  },
+  {
    "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -68,26 +88,6 @@
    "settled": 1783626462,
    "sold_shares": 111.84,
    "sold_proceeds": 92.36
-  },
-  {
-   "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "LGD Gaming",
-   "title": "Dota 2: LGD Gaming vs 1win - Game 2 Winner",
-   "their_price": 0.3857,
-   "my_price": 0.39,
-   "slippage_pct": 0.0112,
-   "shares": 202.57,
-   "cost": 79.0,
-   "fee": 1.45,
-   "opened": 1783626071,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 58.9,
-   "sold_proceeds": 34.52
   },
   {
    "token": "5331398174498187031334378168888081929069329815866835423456661839681650230348",
@@ -597,10 +597,11 @@
    "price": 0.3851,
    "stake": 79.0,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 30.85,
+   "settled": 1783626771,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.55
   },
   {
    "ts": 1783622007,
@@ -797,6 +798,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": -17.32,
- "updated": 1783626522
+ "missed_pnl": 13.53,
+ "updated": 1783626772
 }
