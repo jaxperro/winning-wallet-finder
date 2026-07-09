@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 44.64,
+ "stake": 44.63,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1142.02,
- "cash": 914.23,
- "deployed": 201.71,
+ "cash": 921.91,
+ "deployed": 193.82,
  "reserve": 0.0,
- "realized": 115.93,
+ "realized": 115.73,
  "adjustments": 0,
  "ledger_drift": -21.3,
- "open_count": 6,
- "fees_paid": 14.17,
+ "open_count": 5,
+ "fees_paid": 14.2,
  "fee_rate": 0.03,
  "lag": {
   "n": 16,
@@ -50,6 +50,26 @@
  },
  "bets": [
   {
+   "token": "65984611303909407052169607993537741220891602509766446043631462077119911368849",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "MOUZ",
+   "title": "Dota 2: MOUZ vs Team Nemesis - Game 1 Winner",
+   "their_price": 0.77,
+   "my_price": 0.78,
+   "slippage_pct": 0.013,
+   "shares": 57.32,
+   "cost": 44.71,
+   "fee": 0.3,
+   "opened": 1783608410,
+   "status": "closed",
+   "exit_price": 0.7463,
+   "pnl": -2.23,
+   "settled": 1783610007,
+   "sold_shares": 57.32,
+   "sold_proceeds": 42.78
+  },
+  {
    "token": "5935284746747952722647052327314425731758209998268351888638837864133688247636",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "name": "1kto1m",
@@ -66,26 +86,6 @@
    "exit_price": null,
    "pnl": null,
    "settled": null
-  },
-  {
-   "token": "65984611303909407052169607993537741220891602509766446043631462077119911368849",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "MOUZ",
-   "title": "Dota 2: MOUZ vs Team Nemesis - Game 1 Winner",
-   "their_price": 0.77,
-   "my_price": 0.78,
-   "slippage_pct": 0.013,
-   "shares": 57.32,
-   "cost": 44.71,
-   "fee": 0.3,
-   "opened": 1783608410,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 53.45,
-   "sold_proceeds": 40.33
   },
   {
    "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
@@ -300,8 +300,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 9.33,
-   "sold_proceeds": 8.85
+   "sold_shares": 14.74,
+   "sold_proceeds": 14.09
   }
  ],
  "missed": [
@@ -382,5 +382,5 @@
   }
  ],
  "missed_pnl": -21.24,
- "updated": 1783609669
+ "updated": 1783610025
 }
