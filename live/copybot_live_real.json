@@ -51,6 +51,21 @@
  "bets": [],
  "missed": [
   {
+   "ts": 1783632128,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "64240896700312109784630886706605953876703771364083875350159352793781549030993",
+   "cond": "0xd2cf27a164b628e715d98d212f16482adef61ac91f8bc635a477f2b5c1c1fdb2",
+   "title": "Map Handicap: LEO (-1.5) vs Prestige Academy (+1.5)",
+   "outcome": "Prestige Academy",
+   "price": 0.5,
+   "stake": 5.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1783622151,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "108947296508063592085718442826411169359443176266922838741305348631169975990701",
@@ -391,5 +406,5 @@
   }
  ],
  "missed_pnl": 73.38,
- "updated": 1783631866
+ "updated": 1783632130
 }
