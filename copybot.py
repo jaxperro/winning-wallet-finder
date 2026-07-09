@@ -1466,7 +1466,12 @@ def main():
         executor = LedgerPaperExecutor()   # tracks cash flows for realized-P&L reporting
 
     engine = CopyTrader(cfg, state, executor, args.state)
-    engine.webhook = ""   # per-trade Discord alerts retired — daily digest only
+    # per-trade Discord pings retired for PAPER (daily digest only) — but the
+    # LIVE book pings every real placement/exit/settle: eyes on every dollar
+    # during the supervised test. Webhook via env secret only (a webhook URL
+    # committed to this public repo leaked once already — 2026-07-09).
+    engine.webhook = ((os.environ.get("DISCORD_WEBHOOK") or "").strip()
+                      if want_live else "")
     filt = FollowFilter(cfg)
     bot = Copybot(cfg, engine, filt, redeemer=redeemer)
 
