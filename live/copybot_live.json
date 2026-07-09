@@ -464,6 +464,22 @@
  ],
  "missed": [
   {
+   "ts": 1783620287,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "101398220491720323754799949069639964958286012335853846453785209954253068634131",
+   "cond": "0x44321e793575ffc4f54c11a226dacb86e4b5595d2bd48479dd222ae7d85211a1",
+   "title": "Dota 2: OG vs Inner Circle - Game 1 Winner",
+   "outcome": "Inner Circle",
+   "price": 0.2899,
+   "stake": 77.32,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 2.04,
+   "settled": 1783620639,
+   "exit_price": 0.3101,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783604149,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "67641966972047957873936737096988118191995511744453931882847190188392441958087",
@@ -512,21 +528,6 @@
    "exit_price": 0.6241
   },
   {
-   "ts": 1783620287,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "101398220491720323754799949069639964958286012335853846453785209954253068634131",
-   "cond": "0x44321e793575ffc4f54c11a226dacb86e4b5595d2bd48479dd222ae7d85211a1",
-   "title": "Dota 2: OG vs Inner Circle - Game 1 Winner",
-   "outcome": "Inner Circle",
-   "price": 0.2899,
-   "stake": 77.32,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
-  },
-  {
    "ts": 1783611728,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "65984611303909407052169607993537741220891602509766446043631462077119911368849",
@@ -536,10 +537,12 @@
    "price": 0.62,
    "stake": 45.4,
    "reason": "price moved 0.42\u21920.62",
-   "status": "lost",
-   "pnl": -45.92,
+   "status": "sold",
+   "pnl": -4.89,
    "settled": 1783620044,
-   "name": "gkmgkldfmg"
+   "name": "gkmgkldfmg",
+   "exit_checked": true,
+   "exit_price": 0.5677
   },
   {
    "ts": 1783612016,
@@ -551,10 +554,12 @@
    "price": 0.43,
    "stake": 45.4,
    "reason": "price moved 0.38\u21920.43",
-   "status": "won",
-   "pnl": 59.41,
+   "status": "sold",
+   "pnl": 8.51,
    "settled": 1783620044,
-   "name": "gkmgkldfmg"
+   "name": "gkmgkldfmg",
+   "exit_checked": true,
+   "exit_price": 0.5255
   },
   {
    "ts": 1783614355,
@@ -581,10 +586,12 @@
    "price": 0.35,
    "stake": 44.98,
    "reason": "price moved 0.25\u21920.35",
-   "status": "lost",
-   "pnl": -45.86,
+   "status": "sold",
+   "pnl": -11.38,
    "settled": 1783611803,
-   "name": "gkmgkldfmg"
+   "name": "gkmgkldfmg",
+   "exit_checked": true,
+   "exit_price": 0.2742
   },
   {
    "ts": 1783596707,
@@ -596,10 +603,12 @@
    "price": 0.26,
    "stake": 45.29,
    "reason": "price moved 0.24\u21920.26",
-   "status": "lost",
-   "pnl": -46.3,
+   "status": "sold",
+   "pnl": -26.23,
    "settled": 1783606057,
-   "name": "gkmgkldfmg"
+   "name": "gkmgkldfmg",
+   "exit_checked": true,
+   "exit_price": 0.1183
   },
   {
    "ts": 1783590977,
@@ -611,10 +620,12 @@
    "price": 0.62,
    "stake": 41.67,
    "reason": "bot offline (entered while down)",
-   "status": "won",
-   "pnl": 25.06,
+   "status": "sold",
+   "pnl": 21.61,
    "settled": 1783600276,
-   "name": "AIcAIc"
+   "name": "AIcAIc",
+   "exit_checked": true,
+   "exit_price": 0.95
   },
   {
    "ts": 1783598001,
@@ -632,6 +643,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": -60.59,
- "updated": 1783620288
+ "missed_pnl": -17.32,
+ "updated": 1783620639
 }
