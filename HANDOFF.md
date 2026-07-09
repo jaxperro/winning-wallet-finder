@@ -42,6 +42,20 @@ The repo is authoritative; project memory has deeper history.
 
 ## Queued next-session work (in value order)
 
+0. **MORNING FORENSICS — paper-book drift −11.32 (alarm intentionally red).**
+   The clobber bug is FIXED (settled records archive to token#ts keys on
+   re-entry; two vanished records recovered from state git history and
+   restored). What remains: with truth restored, drift reads −11.32 — a
+   separate cash-outflow-without-ledger-counterpart accumulated during
+   2026-07-09's 27-copy day. Suspect classes: sell fills drained against
+   already-settled records (sold_proceeds mutated post-pnl counts nowhere),
+   settle math on re-entered tokens, trim flows. Method: replay
+   copybot_fills.jsonl + state-history settles against the invariant
+   term-by-term until the residual attributes. The fills ledger now has
+   per-token BUY lines + book snapshots; state history is committed every
+   few minutes. LIVE BOOK UNAFFECTED (0 trades, drift 0.00) and protected
+   by the clobber fix before its first re-entry.
+
 1. **Exact-res_t migration**: plan agreed 2026-07-08 — execute
    [ETHERSCAN_MIGRATION.md](ETHERSCAN_MIGRATION.md) phase by phase
    (0: chain sweep backfill → 1: shadow audit → 2: validate_timing →
