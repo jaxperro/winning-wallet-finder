@@ -32,7 +32,7 @@
     "max_total_exposure_usd": 30.0,
     "max_open_positions": 6,
     "max_per_event": 0,
-    "min_price": 0.05,
+    "min_price": 0.01,
     "max_price": 0.95,
     "min_order_usd": 1.0
   },
