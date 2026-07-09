@@ -51,6 +51,21 @@
  "bets": [],
  "missed": [
   {
+   "ts": 1783589790,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "5935284746747952722647052327314425731758209998268351888638837864133688247636",
+   "cond": "0xfd86b89971a603925c2ae6662ecbd5b6ed700de4440cb935aa0c64282fc2ab16",
+   "title": "WTI Crude Oil (WTI) Up or Down on July 9?",
+   "outcome": "Down",
+   "price": 0.83,
+   "stake": 5.0,
+   "reason": "bot offline (entered while down)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1783573834,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "71026075704437556922683872464818734295123056708831878845925107841264506547843",
@@ -67,5 +82,5 @@
   }
  ],
  "missed_pnl": 0,
- "updated": 1783589410
+ "updated": 1783589790
 }
