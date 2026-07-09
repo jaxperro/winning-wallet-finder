@@ -51,6 +51,22 @@
  "bets": [],
  "missed": [
   {
+   "ts": 1783627976,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "114973484118227793815545241122012985639899573502123700019283561171248113667821",
+   "cond": "0x8be4e240ce14fb0c952f3d98d748d4a1f93c97116cff5b9dba139d36f5387d7a",
+   "title": "Will Anduril's valuation hit (HIGH) $175B by December 31?",
+   "outcome": "No",
+   "price": 0.75,
+   "stake": 5.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": -0.08,
+   "settled": 1783628297,
+   "name": "0xbadaf319",
+   "exit_price": 0.75
+  },
+  {
    "ts": 1783627653,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
@@ -65,21 +81,6 @@
    "settled": 1783627978,
    "exit_price": 0.6146,
    "name": "gkmgkldfmg"
-  },
-  {
-   "ts": 1783627976,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "114973484118227793815545241122012985639899573502123700019283561171248113667821",
-   "cond": "0x8be4e240ce14fb0c952f3d98d748d4a1f93c97116cff5b9dba139d36f5387d7a",
-   "title": "Will Anduril's valuation hit (HIGH) $175B by December 31?",
-   "outcome": "No",
-   "price": 0.75,
-   "stake": 5.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1783627015,
@@ -387,6 +388,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 77.32,
- "updated": 1783627979
+ "missed_pnl": 77.24,
+ "updated": 1783628298
 }
