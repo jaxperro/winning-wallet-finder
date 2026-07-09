@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 44.98,
+ "stake": 44.94,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1142.02,
- "cash": 1015.28,
- "deployed": 109.27,
+ "cash": 969.24,
+ "deployed": 154.25,
  "reserve": 0.0,
- "realized": 124.55,
+ "realized": 123.48,
  "adjustments": 0,
- "ledger_drift": -11.33,
- "open_count": 3,
- "fees_paid": 10.87,
+ "ledger_drift": -11.34,
+ "open_count": 4,
+ "fees_paid": 11.93,
  "fee_rate": 0.03,
  "lag": {
-  "n": 12,
-  "n24": 12,
-  "avg_s": 42.1,
-  "avg_slip_pct": -0.0723,
+  "n": 13,
+  "n24": 13,
+  "avg_s": 42.6,
+  "avg_slip_pct": -0.069,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "65585128992878043579543337949365468961659444652241007486927374035531121325136",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Liquid",
+   "title": "Dota 2: Nigma Galaxy vs Team Liquid - Game 1 Winner",
+   "their_price": 0.2162,
+   "my_price": 0.21,
+   "slippage_pct": -0.0288,
+   "shares": 214.2,
+   "cost": 44.98,
+   "fee": 1.07,
+   "opened": 1783602866,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "16715417243220322396142870043481262520588676345464011493691658221983914911537",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -311,5 +329,5 @@
   }
  ],
  "missed_pnl": 25.06,
- "updated": 1783602410
+ "updated": 1783602915
 }
