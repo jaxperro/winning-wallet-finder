@@ -529,7 +529,7 @@
    "outcome": "Inner Circle",
    "price": 0.2899,
    "stake": 77.32,
-   "reason": "not copied in the detection window (reconciled)",
+   "reason": "fill-split entry: clips read sub-floor individually (merge fix 2026-07-09)",
    "status": "sold",
    "pnl": 2.04,
    "settled": 1783620639,
@@ -627,7 +627,7 @@
    "outcome": "No",
    "price": 0.8399,
    "stake": 52.73,
-   "reason": "bot offline (entered while down)",
+   "reason": "single qualifying fill \u2014 missed in the detection window",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -676,7 +676,7 @@
    "outcome": "Hanwha Life Esports",
    "price": 0.62,
    "stake": 41.67,
-   "reason": "bot offline (entered while down)",
+   "reason": "single qualifying fill \u2014 missed in the detection window",
    "status": "sold",
    "pnl": 21.61,
    "settled": 1783600276,
@@ -693,7 +693,7 @@
    "outcome": "No",
    "price": 0.89,
    "stake": 44.77,
-   "reason": "bot offline (entered while down)",
+   "reason": "single qualifying fill \u2014 missed in the detection window",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -701,5 +701,5 @@
   }
  ],
  "missed_pnl": -17.32,
- "updated": 1783622009
+ "updated": 1783622023
 }
