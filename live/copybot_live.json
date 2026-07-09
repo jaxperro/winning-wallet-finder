@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 82.8,
+ "stake": 84.46,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 2069.88,
- "cash": 1876.3,
- "deployed": 193.58,
+ "hwm": 2111.53,
+ "cash": 1995.3,
+ "deployed": 116.23,
  "reserve": 0.0,
- "realized": 1069.85,
+ "realized": 1111.5,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 4,
+ "open_count": 3,
  "fees_paid": 50.6,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,24 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "70408936800509461553908169247651744499361197714777425908648127381697435776212",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "Yes",
+   "title": "Will Pyunik FA win on 2026-07-09?",
+   "their_price": 0.7999,
+   "my_price": 0.65,
+   "slippage_pct": -0.1874,
+   "shares": 119.01,
+   "cost": 77.36,
+   "fee": 0.81,
+   "opened": 1783618864,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 40.84,
+   "settled": 1783631295
+  },
   {
    "token": "114973484118227793815545241122012985639899573502123700019283561171248113667821",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -208,24 +226,6 @@
    "settled": 1783622836,
    "sold_shares": 118.96,
    "sold_proceeds": 78.13
-  },
-  {
-   "token": "70408936800509461553908169247651744499361197714777425908648127381697435776212",
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "name": "LSB1",
-   "outcome": "Yes",
-   "title": "Will Pyunik FA win on 2026-07-09?",
-   "their_price": 0.7999,
-   "my_price": 0.65,
-   "slippage_pct": -0.1874,
-   "shares": 119.01,
-   "cost": 77.36,
-   "fee": 0.81,
-   "opened": 1783618864,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "50791341385334046613460519572782001062280267000857299264059966530179274650265",
@@ -886,5 +886,5 @@
   }
  ],
  "missed_pnl": 20.09,
- "updated": 1783628730
+ "updated": 1783631296
 }
