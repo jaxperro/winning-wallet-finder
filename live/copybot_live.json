@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 78.29,
+ "stake": 77.28,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1958.71,
- "cash": 1699.38,
- "deployed": 257.92,
+ "cash": 1689.23,
+ "deployed": 242.71,
  "reserve": 0.0,
- "realized": 957.3,
+ "realized": 931.94,
  "adjustments": 0,
  "ledger_drift": -2.0,
- "open_count": 6,
- "fees_paid": 35.34,
+ "open_count": 7,
+ "fees_paid": 37.34,
  "fee_rate": 0.03,
  "lag": {
-  "n": 25,
-  "n24": 25,
-  "avg_s": 30.2,
-  "avg_slip_pct": -0.0599,
+  "n": 26,
+  "n24": 26,
+  "avg_s": 29.9,
+  "avg_slip_pct": -0.0688,
   "window_h": 24
  },
  "wallets": [
@@ -50,6 +50,24 @@
  },
  "bets": [
   {
+   "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $11.2B?",
+   "their_price": 0.79,
+   "my_price": 0.56,
+   "slippage_pct": -0.2911,
+   "shares": 111.84,
+   "cost": 62.63,
+   "fee": 0.83,
+   "opened": 1783614337,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
+  {
    "token": "50791341385334046613460519572782001062280267000857299264059966530179274650265",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -65,7 +83,9 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "sold_shares": 194.62,
+   "sold_proceeds": 53.32
   },
   {
    "token": "50563396050108174063968999790600921955430682357744232042472551252897944666519",
@@ -386,6 +406,21 @@
  ],
  "missed": [
   {
+   "ts": 1783614355,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
+   "cond": "0xc13c12dd0b8c4a29dedc8f12b2976628fa57e4a8b27bbcc522b82008bb549e02",
+   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $11.2B?",
+   "outcome": "No",
+   "price": 0.8399,
+   "stake": 52.73,
+   "reason": "bot offline (entered while down)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783613629,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "50563396050108174063968999790600921955430682357744232042472551252897944666519",
@@ -522,5 +557,5 @@
   }
  ],
  "missed_pnl": -67.1,
- "updated": 1783614279
+ "updated": 1783614412
 }
