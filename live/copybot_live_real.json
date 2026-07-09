@@ -51,6 +51,21 @@
  "bets": [],
  "missed": [
   {
+   "ts": 1783627653,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
+   "cond": "0x3c07935adc293c658ab20651f7fc6478d36e6bfdb375caab539fca9c81de03fd",
+   "title": "Dota 2: LGD Gaming vs 1win - Game 2 Winner",
+   "outcome": "LGD Gaming",
+   "price": 0.52,
+   "stake": 5.0,
+   "reason": "price moved 0.47\u21920.52",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783627015,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
@@ -357,5 +372,5 @@
   }
  ],
  "missed_pnl": 76.55,
- "updated": 1783627340
+ "updated": 1783627654
 }
