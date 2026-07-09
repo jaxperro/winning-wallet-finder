@@ -566,6 +566,21 @@
  ],
  "missed": [
   {
+   "ts": 1783625835,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
+   "cond": "0x3c07935adc293c658ab20651f7fc6478d36e6bfdb375caab539fca9c81de03fd",
+   "title": "Dota 2: LGD Gaming vs 1win - Game 2 Winner",
+   "outcome": "LGD Gaming",
+   "price": 0.3851,
+   "stake": 79.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783622007,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "22725380484456966301228939445880731453285484401950854931468064580525084575682",
@@ -761,5 +776,5 @@
   }
  ],
  "missed_pnl": -17.32,
- "updated": 1783624126
+ "updated": 1783625837
 }
