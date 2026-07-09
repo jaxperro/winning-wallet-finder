@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 78.5,
+ "stake": 79.0,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 1962.42,
- "cash": 1685.54,
- "deployed": 276.88,
+ "hwm": 1975.09,
+ "cash": 1718.87,
+ "deployed": 256.22,
  "reserve": 0.0,
- "realized": 962.39,
+ "realized": 975.06,
  "adjustments": 0.03,
- "ledger_drift": -0.0,
- "open_count": 6,
+ "ledger_drift": 0.0,
+ "open_count": 5,
  "fees_paid": 43.08,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
  },
  "bets": [
   {
+   "token": "5331398174498187031334378168888081929069329815866835423456661839681650230348",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "1win",
+   "title": "Dota 2: LGD Gaming vs 1win - Game 1 Winner",
+   "their_price": 0.595,
+   "my_price": 0.62,
+   "slippage_pct": 0.0421,
+   "shares": 125.18,
+   "cost": 77.61,
+   "fee": 0.88,
+   "opened": 1783623229,
+   "status": "closed",
+   "exit_price": 0.7456,
+   "pnl": 14.83,
+   "settled": 1783624126,
+   "sold_shares": 125.18,
+   "sold_proceeds": 93.33
+  },
+  {
    "token": "39972622924517602245489680060778385204723280241121244048574854937226619835364",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -68,26 +88,6 @@
    "settled": 1783623672,
    "sold_shares": 70.72,
    "sold_proceeds": 67.0
-  },
-  {
-   "token": "5331398174498187031334378168888081929069329815866835423456661839681650230348",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "1win",
-   "title": "Dota 2: LGD Gaming vs 1win - Game 1 Winner",
-   "their_price": 0.595,
-   "my_price": 0.62,
-   "slippage_pct": 0.0421,
-   "shares": 125.18,
-   "cost": 77.61,
-   "fee": 0.88,
-   "opened": 1783623229,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 91.85,
-   "sold_proceeds": 60.0
   },
   {
    "token": "5331398174498187031334378168888081929069329815866835423456661839681650230348",
@@ -761,5 +761,5 @@
   }
  ],
  "missed_pnl": -17.32,
- "updated": 1783623672
+ "updated": 1783624126
 }
