@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 44.56,
+ "stake": 44.54,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1142.02,
- "cash": 902.32,
- "deployed": 211.61,
+ "cash": 876.85,
+ "deployed": 236.65,
  "reserve": 0.0,
- "realized": 113.93,
+ "realized": 113.5,
  "adjustments": 0,
  "ledger_drift": -21.3,
  "open_count": 6,
- "fees_paid": 15.4,
+ "fees_paid": 15.83,
  "fee_rate": 0.03,
  "lag": {
-  "n": 17,
-  "n24": 17,
-  "avg_s": 36.0,
-  "avg_slip_pct": -0.0677,
+  "n": 20,
+  "n24": 20,
+  "avg_s": 31.0,
+  "avg_slip_pct": -0.0694,
   "window_h": 24
  },
  "wallets": [
@@ -56,11 +56,11 @@
    "outcome": "Team Nemesis",
    "title": "Dota 2: MOUZ vs Team Nemesis - Game 1 Winner",
    "their_price": 0.4399,
-   "my_price": 0.44,
+   "my_price": 0.4364,
    "slippage_pct": 0.0003,
-   "shares": 101.43,
-   "cost": 44.63,
-   "fee": 0.75,
+   "shares": 159.68,
+   "cost": 69.68,
+   "fee": 1.18,
    "opened": 1783610282,
    "status": "open",
    "exit_price": null,
@@ -402,5 +402,5 @@
   }
  ],
  "missed_pnl": -21.24,
- "updated": 1783610359
+ "updated": 1783610465
 }
