@@ -89,39 +89,29 @@ The repo is authoritative; project memory has deeper history.
   (refund harvesters — real edge, uncopyable margins), lma0o0o0o (negative in
   the shared book), Winnertraders (6.6-day capital locks).
 
-## Real-money worker status (built 2026-07-09)
+## Real-money worker — ARMED AND LIVE (2026-07-09 ~04:37 UTC)
 
-`wwf-copybot-live` exists on Fly (arn, ONE machine, geo TRADABLE), idling
-UNARMED: no keys, no book, no orders until three user-set secrets exist
-(`LIVE_PRIVATE_KEY`, `LIVE_FUNDER_ADDRESS`, `LIVE_CONFIRM` = the typed
-confirmation phrase; plus `GITHUB_TOKEN` — mint a FRESH fine-grained PAT so
-live and paper credentials stay separable, and `ALCHEMY_RPC_URL` for
-settles/redeems). Armed boot: config.live.example.json (Set E, $50 @ 10% =
-$5 stakes, rule-0.6 caps) + own state `copybot_state.live.json` + poll mode
-— the push webhook stays on the paper app. Disarm any time:
-`flyctl secrets unset LIVE_CONFIRM` (next boot idles) or
-`flyctl apps stop wwf-copybot-live`. ROTATE the Discord webhook that was
-committed in config.live.example.json history (removed from HEAD
-2026-07-09; spam-risk only).
+`wwf-copybot-live` is trading REAL MONEY: $24.73 book, Set E, $5 stakes,
+rule-0.6 caps ($5/trade · $25/day · $30 exposure), poll mode 60s, own state
+`copybot_state.live.json`, feed `live/copybot_live_real.json` →
+jaxperro.com/live. Armed via LIVE_CONFIRM env (user-typed phrase; unset to
+disarm at next boot; `flyctl apps stop wwf-copybot-live` = instant stop).
+auto_redeem OFF (no POL gas) — after a WIN, redeem manually in the UI;
+CASH≠CHAIN nags until done. Discord pings per placement/exit/settle via
+DISCORD_WEBHOOK secret. Phase 4 (supervised first fill checklist in
+LIVE_ROLLOUT) runs when the first conviction signal lands — zero live
+trades so far; fill-split merging (see below) shipped 2026-07-09 evening
+after 13h of sub-floor-clip skips. No watchdog on the live app yet (poll
+mode, no HTTP) — liveness = flyctl logs + feed freshness.
 
-## VENUE FORK — unresolved (2026-07-09, decision pending)
+## Venue fork — RESOLVED 2026-07-09 (user funded polymarket.com)
 
-Phase 2 hit a wall that is a *decision*, not a bug: the user's $32 deposit
-landed on **polymarket.us** (the regulated OFF-CHAIN venue — no wallets, no
-private keys, Ed25519 REST API) while the entire execution stack targets
-**polymarket.com**'s on-chain CLOB. The .us venue was evaluated and
-REJECTED 2026-07-06 ("not on a blockchain") — see the us-expansion memory
-and archive/us-venue/. Options: (a) let the paper calibration run ~2 weeks
-and decide with data (recommended); (b) fund a .com account instead — the
-account/geoblock step is USER-ONLY; (c) build a .us execution adapter
-(compliant, zero stranding risk, ~12% overall signal coverage per the June
-probe — higher in the ITF/ATP/esports niche, no in-play micro-markets;
-days of work; gateway recipes + slug mapping archived). The live worker
-idles UNARMED with only ALCHEMY_RPC_URL set — the wrong-venue credentials
-were cleared. USER security to-dos from the incident: revoke the
-polymarket.us API key f03d9eb5… (its secret appeared in a chat screenshot)
-and the GitHub PAT pasted into chat (never used by the agent — revoke and
-remint when a path is chosen).
+The first deposit landed on polymarket.us by mistake (off-chain venue, no
+keys — incompatible with the stack; $32 still sits there, user may withdraw).
+User then funded a polymarket.com account ($24.73 after fees) and the live
+worker armed against it. Residual security to-dos: revoke the polymarket.us
+API key f03d9eb5… (secret appeared in a chat screenshot) and rotate the
+Discord webhook committed to this repo's history pre-2026-07-09.
 
 ## Next: Phase 2 — funding (USER ONLY)
 
