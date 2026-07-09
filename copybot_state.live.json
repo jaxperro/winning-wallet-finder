@@ -291,6 +291,7 @@
     "0x43de06e0b6e4e6a5556c67897c5d2470668d9af434fca8a364302fc2628a8a3a",
     "0x4a3b595bda9a1af4a9ef41b54ec9d7f339b6fe9b49740927cb931e698d164c7a",
     "0x731287934cdbe5702d12d0e9ca14c1f6c5392d044bff88bdbe4a20dbfee04027",
+    "0x31b45e9b1df00eb290f5097ca07905bba8266c39a9be6e0fbedddc34c97fca3e",
     "0xf7545cb15cddebdaf9a2a4fab8e2ffbd55edfd8d509cde70adacc4918d5deaa0",
     "0x73b6b291935bf1da4c97066326a7e07cae47e90fca26ab779bbd0b2be444cd8b",
     "0xbeadc053bea413e21a3c3a248598dc0b7f83b0c376ad225dbfe3ca76fa64cfd0",
@@ -2533,7 +2534,8 @@
       "18761224788266541727279689677720684189553273901637473351355084093520325570855": 0.0,
       "65984611303909407052169607993537741220891602509766446043631462077119911368849": 0.0,
       "5755211297434956696279302572789330402227935659122535568245047976652499077681": 0.0,
-      "50563396050108174063968999790600921955430682357744232042472551252897944666519": 0.002296999999543914
+      "50563396050108174063968999790600921955430682357744232042472551252897944666519": 0.002296999999543914,
+      "101398220491720323754799949069639964958286012335853846453785209954253068634131": 0.0
     },
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": {
       "113186575675900877797300695454355745875377602467971187276073118459901699932154": 767.49,
@@ -4223,9 +4225,9 @@
       "price": 0.61,
       "stake": 5.0,
       "reason": "price moved 0.46\u21920.61",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 3.14,
+      "settled": 1783620024,
       "name": "gkmgkldfmg"
     },
     {
@@ -4238,9 +4240,9 @@
       "price": 0.65,
       "stake": 5.0,
       "reason": "price moved 0.42\u21920.65",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "pnl": -5.05,
+      "settled": 1783620024,
       "name": "gkmgkldfmg"
     },
     {
@@ -4285,7 +4287,8 @@
       "reason": "bot offline (entered while down)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "0xbadaf319"
     },
     {
       "ts": 1783619136,
@@ -4299,9 +4302,10 @@
       "reason": "bot offline (entered while down)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "LSB1"
     }
   ],
-  "feed_sig": "3bd40740818204e785cf4ca548e5343e",
-  "feed_pushed_at": 1783613562.6459873
+  "feed_sig": "7ccfc5adbfed86f4623a799a14b4bedd",
+  "feed_pushed_at": 1783619897.7008293
 }
