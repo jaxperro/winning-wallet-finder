@@ -90,6 +90,25 @@ $5 stakes, rule-0.6 caps) + own state `copybot_state.live.json` + poll mode
 committed in config.live.example.json history (removed from HEAD
 2026-07-09; spam-risk only).
 
+## VENUE FORK — unresolved (2026-07-09, decision pending)
+
+Phase 2 hit a wall that is a *decision*, not a bug: the user's $32 deposit
+landed on **polymarket.us** (the regulated OFF-CHAIN venue — no wallets, no
+private keys, Ed25519 REST API) while the entire execution stack targets
+**polymarket.com**'s on-chain CLOB. The .us venue was evaluated and
+REJECTED 2026-07-06 ("not on a blockchain") — see the us-expansion memory
+and archive/us-venue/. Options: (a) let the paper calibration run ~2 weeks
+and decide with data (recommended); (b) fund a .com account instead — the
+account/geoblock step is USER-ONLY; (c) build a .us execution adapter
+(compliant, zero stranding risk, ~12% overall signal coverage per the June
+probe — higher in the ITF/ATP/esports niche, no in-play micro-markets;
+days of work; gateway recipes + slug mapping archived). The live worker
+idles UNARMED with only ALCHEMY_RPC_URL set — the wrong-venue credentials
+were cleared. USER security to-dos from the incident: revoke the
+polymarket.us API key f03d9eb5… (its secret appeared in a chat screenshot)
+and the GitHub PAT pasted into chat (never used by the agent — revoke and
+remint when a path is chosen).
+
 ## Next: Phase 2 — funding (USER ONLY)
 
 Phase 1 is 8/8 complete (LIVE_ROLLOUT.md). Before funding, the user should
