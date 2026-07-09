@@ -250,6 +250,21 @@
  ],
  "missed": [
   {
+   "ts": 1783602410,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "65585128992878043579543337949365468961659444652241007486927374035531121325136",
+   "cond": "0x7d055d8db3ee70c0781b1a263c29beefcbf83bc9790c06b67199221135e34029",
+   "title": "Dota 2: Nigma Galaxy vs Team Liquid - Game 1 Winner",
+   "outcome": "Team Liquid",
+   "price": 0.35,
+   "stake": 44.98,
+   "reason": "price moved 0.25\u21920.35",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783590977,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "20414976475690894265425364948116786155162480053919701442335217459387124913382",
@@ -296,5 +311,5 @@
   }
  ],
  "missed_pnl": 25.06,
- "updated": 1783601457
+ "updated": 1783602410
 }
