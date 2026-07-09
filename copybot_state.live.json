@@ -4554,9 +4554,9 @@
       "price": 0.5,
       "stake": 5.0,
       "reason": "price moved 0.45\u21920.50",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "pnl": -5.08,
+      "settled": 1783631615,
       "name": "gkmgkldfmg"
     },
     {
@@ -4608,6 +4608,6 @@
       "exit_price": 0.75
     }
   ],
-  "feed_sig": "f5830723d86d03a4c488e36d57db1abd",
-  "feed_pushed_at": 1783631118.158248
+  "feed_sig": "46100573e4e564d8bc13708214b8f8c6",
+  "feed_pushed_at": 1783631491.6435163
 }

@@ -51,6 +51,21 @@
  "bets": [],
  "missed": [
   {
+   "ts": 1783622151,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "108947296508063592085718442826411169359443176266922838741305348631169975990701",
+   "cond": "0x88e5fd695215f57adc94fb184ea54e639bd6fa6a71e49666d7529adb442a51ae",
+   "title": "Dota 2: Ilbirs eSports vs Nemiga Gaming - Game 2 Winner",
+   "outcome": "Ilbirs eSports",
+   "price": 0.5,
+   "stake": 5.0,
+   "reason": "price moved 0.45\u21920.50",
+   "status": "lost",
+   "pnl": -5.08,
+   "settled": 1783631615,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783619136,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "70408936800509461553908169247651744499361197714777425908648127381697435776212",
@@ -113,21 +128,6 @@
    "settled": 1783627340,
    "name": "gkmgkldfmg",
    "exit_price": 0.55
-  },
-  {
-   "ts": 1783622151,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "108947296508063592085718442826411169359443176266922838741305348631169975990701",
-   "cond": "0x88e5fd695215f57adc94fb184ea54e639bd6fa6a71e49666d7529adb442a51ae",
-   "title": "Dota 2: Ilbirs eSports vs Nemiga Gaming - Game 2 Winner",
-   "outcome": "Ilbirs eSports",
-   "price": 0.5,
-   "stake": 5.0,
-   "reason": "price moved 0.45\u21920.50",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1783621873,
@@ -389,6 +389,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 78.46,
- "updated": 1783631244
+ "missed_pnl": 73.38,
+ "updated": 1783631617
 }
