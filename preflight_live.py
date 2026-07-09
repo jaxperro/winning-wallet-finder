@@ -84,18 +84,30 @@ def main():
     check("USDC balance on funder", balance)
 
     def book():
+        # a sharp's LATEST trade is often an in-play market that has already
+        # closed (404 = "no orderbook", which itself proves connectivity) —
+        # walk recent trades until one still has a live book
         req = urllib.request.Request(
             "https://data-api.polymarket.com/activity?user="
-            + cfg["watchlist"][0] + "&type=TRADE&limit=1",
+            + cfg["watchlist"][0] + "&type=TRADE&limit=15",
             headers={"User-Agent": "Mozilla/5.0"})
-        t = json.loads(urllib.request.urlopen(req, timeout=15, context=_SSL).read())[0]
-        ob = client.get_order_book(t["asset"])
-        bid = ob.bids[-1].price if ob.bids else "—"
-        ask = ob.asks[-1].price if ob.asks else "—"
-        return f"{(t.get('title') or '')[:40]}… bid {bid} / ask {ask}"
+        trades = json.loads(urllib.request.urlopen(req, timeout=15, context=_SSL).read())
+        last = None
+        for t in trades:
+            try:
+                ob = client.get_order_book(t["asset"])
+            except Exception as e:
+                last = e
+                continue
+            bid = ob.bids[-1].price if ob.bids else "—"
+            ask = ob.asks[-1].price if ob.asks else "—"
+            return f"{(t.get('title') or '')[:40]}… bid {bid} / ask {ask}"
+        raise RuntimeError(f"no live book among the wallet's last {len(trades)} trades ({last})")
     check("order book fetch (market access)", book)
 
     def gas():
+        if live.get("auto_redeem") is False:
+            return "auto_redeem OFF — manual UI redeems; no POL needed (CASH≠CHAIN will nag after wins until redeemed)"
         from web3 import Web3
         rpc = live.get("rpc_url") or (
             f"https://polygon-mainnet.g.alchemy.com/v2/{cfg.get('alchemy_key')}"
