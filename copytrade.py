@@ -436,6 +436,14 @@ class CopyTrader:
 
         price = self._live_price(token, "buy")
         if price is None:
+            # thin/one-sided book — the sharp is often the MAKER here (weekly
+            # scalars especially), so there is no ask to lift when the copy
+            # arrives. This silent return hid 9 followed-but-unplaced fills
+            # across both books on 2026-07-09; a blocked OPEN is a missed bet.
+            if not is_add:
+                self.record_miss(wallet, token, cond, title, outcome,
+                                 their_price, self.stake_usd(wallet),
+                                 "no ask side on the book at copy time")
             return
         if not self._price_guard_ok(price, their_price):
             self.log(f"BUY  {label} — skip (price {price:.3f} vs their "
@@ -477,6 +485,9 @@ class CopyTrader:
         res = self.ex.buy(token, shares, price, {"title": title})
         if not res["ok"]:
             self.log(f"{kind} {label} — ORDER FAILED: {res.get('resp')}")
+            if not is_add:                     # a rejected OPEN is a missed bet
+                self.record_miss(wallet, token, cond, title, outcome, price,
+                                 allowed, f"order rejected: {str(res.get('resp'))[:60]}")
             return
         spent = res["filled_shares"] * res["price"]
         self.state["spend"]["usd"] += spent
