@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 44.75,
+ "stake": 44.74,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1142.02,
- "cash": 1009.49,
- "deployed": 109.27,
+ "cash": 964.41,
+ "deployed": 154.02,
  "reserve": 0.0,
- "realized": 118.76,
+ "realized": 118.42,
  "adjustments": 0,
  "ledger_drift": -11.34,
- "open_count": 3,
- "fees_paid": 10.32,
+ "open_count": 4,
+ "fees_paid": 10.66,
  "fee_rate": 0.03,
  "lag": {
-  "n": 11,
-  "n24": 11,
-  "avg_s": 45.8,
-  "avg_slip_pct": -0.0765,
+  "n": 12,
+  "n24": 12,
+  "avg_s": 42.1,
+  "avg_slip_pct": -0.0723,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "16715417243220322396142870043481262520588676345464011493691658221983914911537",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Aurora",
+   "title": "Dota 2: L1ga Team vs Aurora - Game 1 Winner",
+   "their_price": 0.77,
+   "my_price": 0.75,
+   "slippage_pct": -0.026,
+   "shares": 59.67,
+   "cost": 44.75,
+   "fee": 0.34,
+   "opened": 1783598831,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "9679320407472932109528091937661974039402650044145955274074635176957029935409",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -276,5 +294,5 @@
   }
  ],
  "missed_pnl": 0,
- "updated": 1783598003
+ "updated": 1783598832
 }
