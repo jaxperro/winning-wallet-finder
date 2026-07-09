@@ -60,10 +60,11 @@
    "price": 0.4668,
    "stake": 5.0,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 0.73,
+   "settled": 1783627340,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.55
   },
   {
    "ts": 1783622151,
@@ -355,6 +356,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 75.82,
- "updated": 1783627017
+ "missed_pnl": 76.55,
+ "updated": 1783627340
 }
