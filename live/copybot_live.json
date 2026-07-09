@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 77.28,
+ "stake": 77.35,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1958.71,
- "cash": 1689.76,
- "deployed": 242.22,
+ "cash": 1715.12,
+ "deployed": 218.66,
  "reserve": 0.0,
- "realized": 931.98,
+ "realized": 933.78,
  "adjustments": 0,
  "ledger_drift": -2.0,
- "open_count": 7,
- "fees_paid": 37.34,
+ "open_count": 6,
+ "fees_paid": 37.37,
  "fee_rate": 0.03,
  "lag": {
   "n": 26,
@@ -50,6 +50,26 @@
  },
  "bets": [
   {
+   "token": "5935284746747952722647052327314425731758209998268351888638837864133688247636",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Down",
+   "title": "WTI Crude Oil (WTI) Up or Down on July 9?",
+   "their_price": 0.9,
+   "my_price": 0.9,
+   "slippage_pct": 0.0,
+   "shares": 49.66,
+   "cost": 44.7,
+   "fee": 0.13,
+   "opened": 1783609346,
+   "status": "closed",
+   "exit_price": 0.9643,
+   "pnl": 3.05,
+   "settled": 1783615111,
+   "sold_shares": 49.66,
+   "sold_proceeds": 47.89
+  },
+  {
    "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -84,8 +104,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 194.62,
-   "sold_proceeds": 53.32
+   "sold_shares": 194.79,
+   "sold_proceeds": 53.38
   },
   {
    "token": "50563396050108174063968999790600921955430682357744232042472551252897944666519",
@@ -166,26 +186,6 @@
    "settled": 1783610007,
    "sold_shares": 57.32,
    "sold_proceeds": 42.78
-  },
-  {
-   "token": "5935284746747952722647052327314425731758209998268351888638837864133688247636",
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "name": "1kto1m",
-   "outcome": "Down",
-   "title": "WTI Crude Oil (WTI) Up or Down on July 9?",
-   "their_price": 0.9,
-   "my_price": 0.9,
-   "slippage_pct": 0.0,
-   "shares": 49.66,
-   "cost": 44.7,
-   "fee": 0.13,
-   "opened": 1783609346,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 23.56,
-   "sold_proceeds": 22.59
   },
   {
    "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
@@ -557,5 +557,5 @@
   }
  ],
  "missed_pnl": -67.1,
- "updated": 1783615007
+ "updated": 1783615111
 }
