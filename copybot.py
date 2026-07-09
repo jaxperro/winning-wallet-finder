@@ -1223,10 +1223,51 @@ class Copybot:
                     self.engine.record_miss(
                         w, tok, p.get("conditionId"), p.get("title") or "",
                         p.get("outcome") or "", trade["price"], want,
-                        "bot offline (entered while down)")
+                        "not copied in the detection window (reconciled)")
                     missed_toks.add(tok)
                     log(f"reconcile: {name} entered {(p.get('title') or '?')[:42]} "
                         f"while we weren't listening — recorded as missed")
+            # exit-aware missed settling: a missed bet whose sharp FULLY
+            # EXITED pre-resolution settles at THEIR exit — the mirror
+            # counterfactual — instead of riding to resolution (Kruto's 3c
+            # Hive entry 2026-07-09: he banked 16x selling at 48c; the
+            # hold-to-resolution valuation would have shown the map result
+            # instead). Same three affirmative facts as reconcile_exits —
+            # silence never reads as an exit. Entry+exit taker fees charged,
+            # like every mirrored sell.
+            for m in st.get("missed", []):
+                if (m.get("status") != "open" or not m.get("cond")
+                        or not m.get("wallet") or not m.get("token")):
+                    continue
+                ps = sm.get_json("/positions", {"user": m["wallet"], "market": m["cond"],
+                                                "limit": 10, "sizeThreshold": 0})
+                if ps is None:
+                    continue
+                if any(str(p.get("asset")) == str(m["token"]) and (p.get("size") or 0) > 0
+                       for p in ps):
+                    continue                    # still held — resolution path waits
+                cps = sm.get_json("/closed-positions", {"user": m["wallet"],
+                                                        "market": m["cond"], "limit": 10})
+                if cps is None:
+                    continue
+                row = next((p for p in cps if str(p.get("asset")) == str(m["token"])), None)
+                if row is None:
+                    continue
+                mk = _market(m["cond"])
+                if not mk or mk.get("closed"):
+                    continue                    # resolved -> chain-truth settle path
+                tb = row.get("totalBought") or 0
+                xp = (row.get("avgPrice") or 0) + ((row.get("realizedPnl") or 0) / tb if tb else 0)
+                p = m.get("price") or 0.5
+                sh = m["stake"] / max(p, 0.001)
+                fee_in = taker_fee(sh, p, self.fee_rate)
+                fee_out = taker_fee(sh, xp, self.fee_rate)
+                m.update(status="sold", exit_price=round(xp, 4),
+                         pnl=round(sh * xp - m["stake"] - fee_in - fee_out, 2),
+                         settled=int(time.time()))
+                log(f"missed-settle: {m.get('name') or m['wallet'][:8]} exited "
+                    f"{(m.get('title') or '?')[:38]} @ {xp:.3f} — "
+                    f"hypothetical ${m['pnl']:+.2f} (sold)")
             self.engine.persist()
 
     def settle_resolved(self):
