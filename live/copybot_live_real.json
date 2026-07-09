@@ -51,6 +51,21 @@
  "bets": [],
  "missed": [
   {
+   "ts": 1783613117,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "65561282581543333083769484681733882641597892294255282935267357087854721926205",
+   "cond": "0x5fd2cf4e54b80d96abd12e50f7ef142557ace9c8c59dce721a31da3051511491",
+   "title": "Dota 2: Hive vs Team Syntax (BO3) - European Pro League Playoffs",
+   "outcome": "Team Syntax",
+   "price": 0.0301,
+   "stake": 5.0,
+   "reason": "bot offline (entered while down)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1783602416,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "65585128992878043579543337949365468961659444652241007486927374035531121325136",
@@ -217,5 +232,5 @@
   }
  ],
  "missed_pnl": -5.73,
- "updated": 1783611799
+ "updated": 1783613119
 }
