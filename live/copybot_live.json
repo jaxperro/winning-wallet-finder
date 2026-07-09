@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 45.29,
+ "stake": 45.57,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1142.02,
- "cash": 1067.77,
- "deployed": 64.5,
+ "cash": 1029.04,
+ "deployed": 110.1,
  "reserve": 0.0,
- "realized": 132.27,
+ "realized": 139.14,
  "adjustments": 0,
  "ledger_drift": 0.01,
- "open_count": 2,
- "fees_paid": 4.1,
+ "open_count": 3,
+ "fees_paid": 6.83,
  "fee_rate": 0.03,
  "lag": {
-  "n": 7,
-  "n24": 7,
-  "avg_s": 48.0,
-  "avg_slip_pct": -0.0128,
+  "n": 9,
+  "n24": 9,
+  "avg_s": 43.0,
+  "avg_slip_pct": -0.0141,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "67316041392595003970935162895075724563017159074192091517379695493042764601836",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "GamerLegion",
+   "title": "Dota 2: GamerLegion vs Team Falcons - Game 2 Winner",
+   "their_price": 0.3525,
+   "my_price": 0.3576,
+   "slippage_pct": -0.0638,
+   "shares": 254.16,
+   "cost": 90.89,
+   "fee": 1.74,
+   "opened": 1783597166,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "sold_shares": 137.24,
+   "sold_proceeds": 53.91
+  },
   {
    "token": "5935284746747952722647052327314425731758209998268351888638837864133688247636",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -223,5 +243,5 @@
   }
  ],
  "missed_pnl": 0,
- "updated": 1783596707
+ "updated": 1783597238
 }
