@@ -51,6 +51,21 @@
  "bets": [],
  "missed": [
   {
+   "ts": 1783604371,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
+   "cond": "0xa164172b7cee74420cfce554c3a265b2553cb80e48b36e286e67f302b6574712",
+   "title": "Ethereal FDV above $500M one day after launch?",
+   "outcome": "No",
+   "price": 0.8199,
+   "stake": 5.0,
+   "reason": "bot offline (entered while down)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783602416,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "65585128992878043579543337949365468961659444652241007486927374035531121325136",
@@ -172,5 +187,5 @@
   }
  ],
  "missed_pnl": 3.01,
- "updated": 1783603987
+ "updated": 1783604372
 }
