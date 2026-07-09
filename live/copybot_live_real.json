@@ -51,6 +51,22 @@
  "bets": [],
  "missed": [
   {
+   "ts": 1783620305,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "101398220491720323754799949069639964958286012335853846453785209954253068634131",
+   "cond": "0x44321e793575ffc4f54c11a226dacb86e4b5595d2bd48479dd222ae7d85211a1",
+   "title": "Dota 2: OG vs Inner Circle - Game 1 Winner",
+   "outcome": "Inner Circle",
+   "price": 0.3997,
+   "stake": 5.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": -1.29,
+   "settled": 1783620686,
+   "exit_price": 0.3101,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783613117,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "65561282581543333083769484681733882641597892294255282935267357087854721926205",
@@ -115,21 +131,6 @@
    "exit_price": 0.89
   },
   {
-   "ts": 1783620305,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "101398220491720323754799949069639964958286012335853846453785209954253068634131",
-   "cond": "0x44321e793575ffc4f54c11a226dacb86e4b5595d2bd48479dd222ae7d85211a1",
-   "title": "Dota 2: OG vs Inner Circle - Game 1 Winner",
-   "outcome": "Inner Circle",
-   "price": 0.3997,
-   "stake": 5.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
-  },
-  {
    "ts": 1783610496,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "18761224788266541727279689677720684189553273901637473351355084093520325570855",
@@ -139,10 +140,12 @@
    "price": 0.61,
    "stake": 5.0,
    "reason": "price moved 0.46\u21920.61",
-   "status": "won",
-   "pnl": 3.14,
+   "status": "sold",
+   "pnl": -0.81,
    "settled": 1783620024,
-   "name": "gkmgkldfmg"
+   "name": "gkmgkldfmg",
+   "exit_checked": true,
+   "exit_price": 0.5255
   },
   {
    "ts": 1783611735,
@@ -154,10 +157,12 @@
    "price": 0.65,
    "stake": 5.0,
    "reason": "price moved 0.42\u21920.65",
-   "status": "lost",
-   "pnl": -5.05,
+   "status": "sold",
+   "pnl": -0.74,
    "settled": 1783620024,
-   "name": "gkmgkldfmg"
+   "name": "gkmgkldfmg",
+   "exit_checked": true,
+   "exit_price": 0.5677
   },
   {
    "ts": 1783619136,
@@ -199,10 +204,12 @@
    "price": 0.35,
    "stake": 5.0,
    "reason": "price moved 0.25\u21920.35",
-   "status": "lost",
-   "pnl": -5.1,
+   "status": "sold",
+   "pnl": -1.27,
    "settled": 1783611798,
-   "name": "gkmgkldfmg"
+   "name": "gkmgkldfmg",
+   "exit_checked": true,
+   "exit_price": 0.2742
   },
   {
    "ts": 1783590593,
@@ -214,10 +221,12 @@
    "price": 0.51,
    "stake": 5.0,
    "reason": "price moved 0.39\u21920.51",
-   "status": "lost",
-   "pnl": -5.07,
+   "status": "sold",
+   "pnl": -0.31,
    "settled": 1783608728,
-   "name": "gkmgkldfmg"
+   "name": "gkmgkldfmg",
+   "exit_checked": true,
+   "exit_price": 0.4939
   },
   {
    "ts": 1783596579,
@@ -229,10 +238,12 @@
    "price": 0.3,
    "stake": 5.0,
    "reason": "price moved 0.24\u21920.30",
-   "status": "lost",
-   "pnl": -5.11,
+   "status": "sold",
+   "pnl": -3.18,
    "settled": 1783606116,
-   "name": "gkmgkldfmg"
+   "name": "gkmgkldfmg",
+   "exit_checked": true,
+   "exit_price": 0.1183
   },
   {
    "ts": 1783590223,
@@ -244,10 +255,12 @@
    "price": 0.43,
    "stake": 5.0,
    "reason": "price moved 0.39\u21920.43",
-   "status": "won",
-   "pnl": 6.54,
+   "status": "sold",
+   "pnl": 6.18,
    "settled": 1783604560,
-   "name": "gkmgkldfmg"
+   "name": "gkmgkldfmg",
+   "exit_checked": true,
+   "exit_price": 0.97
   },
   {
    "ts": 1783604371,
@@ -274,10 +287,12 @@
    "price": 0.62,
    "stake": 5.0,
    "reason": "bot offline (entered while down)",
-   "status": "won",
-   "pnl": 3.01,
+   "status": "sold",
+   "pnl": 2.59,
    "settled": 1783600247,
-   "name": "AIcAIc"
+   "name": "AIcAIc",
+   "exit_checked": true,
+   "exit_price": 0.95
   },
   {
    "ts": 1783597988,
@@ -295,6 +310,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 67.01,
- "updated": 1783620382
+ "missed_pnl": 75.82,
+ "updated": 1783620686
 }
