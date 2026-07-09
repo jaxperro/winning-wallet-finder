@@ -39,6 +39,21 @@ fi
 python3 "$(dirname "$0")/geocheck.py" \
   || echo "⚠ geo-gate BLOCKED/unknown here — fine for paper, do NOT go live from this box"
 
+# COPYBOT_ROLE=live -> the REAL MONEY worker (separate Fly app
+# wwf-copybot-live; NEVER convert the paper worker — the two roles must never
+# share a process or a state file). Unarmed = missing any of
+# LIVE_PRIVATE_KEY / LIVE_FUNDER_ADDRESS / LIVE_CONFIRM -> idle harmlessly
+# (no clone, no book, no orders) so the machine can exist safely before
+# Phase 2 funding. Arming is three `flyctl secrets set` calls by the USER;
+# copybot.py additionally re-checks the geo-gate fatally and validates the
+# phrase itself (LIVE_ROLLOUT 0.7, 1.5).
+if [ "${COPYBOT_ROLE:-paper}" = "live" ]; then
+  if [ -z "${LIVE_PRIVATE_KEY:-}" ] || [ -z "${LIVE_FUNDER_ADDRESS:-}" ] || [ -z "${LIVE_CONFIRM:-}" ]; then
+    echo "live role UNARMED (need LIVE_PRIVATE_KEY + LIVE_FUNDER_ADDRESS + LIVE_CONFIRM) — idling"
+    exec python3 "$(dirname "$0")/geocheck.py" --idle
+  fi
+fi
+
 : "${GITHUB_TOKEN:?set GITHUB_TOKEN (PAT with repo contents read+write)}"
 REPO_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/jaxperro/winning-wallet-finder.git"
 DIR="${COPYBOT_DIR:-/tmp/wwf}"
@@ -48,6 +63,17 @@ git clone --depth 20 "$REPO_URL" "$DIR"
 cd "$DIR"
 git config user.name  "copybot[bot]"
 git config user.email "copybot@users.noreply.github.com"
+
+# live role, ARMED: own config (committed template + env secrets), own state
+# file, own feed/fills (config paths), ALWAYS poll mode — the Alchemy push
+# webhook stays pointed at the paper app (LIVE_ROLLOUT Phase 3.3).
+if [ "${COPYBOT_ROLE:-paper}" = "live" ]; then
+  exec python3 copybot.py \
+    --config config.live.example.json \
+    --state  copybot_state.live.json \
+    --live \
+    --poll   "${POLL_SECONDS:-60}"
+fi
 
 # paper config is committed (no secrets); state resumes from the last commit.
 # ALCHEMY_SIGNING_KEY set -> push mode (webhook server); else 60s poll mode.

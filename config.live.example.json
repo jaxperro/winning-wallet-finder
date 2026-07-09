@@ -1,26 +1,28 @@
 {
   "mode": "live",
-  "_comment": "Live-test config, SECRET-FREE and committed. Two uses: (1) cp -> config.live.json, fill live.private_key/funder_address, run on a geo-TRADABLE Mac; (2) the Fly live worker reads THIS file directly and gets the key from LIVE_PRIVATE_KEY/LIVE_FUNDER_ADDRESS env vars (copybot 1.2). $5/trade test caps \u2014 see LIVE_ROLLOUT.md before raising anything.",
-  "bankroll_usd": 250.0,
-  "bankroll_pct": 0.02,
+  "_comment": "Live-test config, SECRET-FREE and committed. The Fly live worker (wwf-copybot-live, COPYBOT_ROLE=live) reads THIS file and takes secrets from env (LIVE_PRIVATE_KEY/LIVE_FUNDER_ADDRESS + LIVE_CONFIRM to arm). Mac use: cp -> config.live.json and fill live.*. RULES: bankroll_usd MUST equal the actual USDC deposit at arm time (the 1.4 cash-anchor checks state cash vs chain); risk caps are LIVE_ROLLOUT rule 0.6 \u2014 never raise before Phase 6; follow set mirrors copybot.paper.json (Set E) so paper and live books stay comparable.",
+  "bankroll_usd": 50.0,
+  "bankroll_pct": 0.1,
   "price_guard_pct": 0.05,
   "taker_fee_rate": 0.03,
-  "discord_webhook": "https://discord.com/api/webhooks/1515187084409704660/VbKWKIIo2ks1sSs2r1cr9M3OSIj_6oKDOBRp7Z5DneQCyk8AnPiyxVKelxensLP-aHaH",
+  "discord_webhook": "",
   "follow": {
     "buy_only": true,
     "min_their_usd": 25.0,
     "per_wallet_min_usd": {
-      "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 123.27,
-      "0xf3488e52ac2d7f0628b04481db5a5b0446f0e543": 727.08,
-      "0x86c878cde72660ec52f5e6f0f0438b76de8fc867": 990.45,
-      "0x41558102a796ba971c7567cad41c307e59f8fa41": 231.0,
-      "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 115.27
+      "0x41558102a796ba971c7567cad41c307e59f8fa41": 258.51,
+      "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 122.32,
+      "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 126.84,
+      "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 44.98,
+      "0xd7d36345c4aab150e59577e360696b01d01d698b": 304.34,
+      "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 295.32,
+      "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 320.95
     },
     "min_entry": 0.0,
     "max_entry": 0.95,
     "class_pct": {
-      "volume": 0.02,
-      "whale": 0.02
+      "volume": 0.1,
+      "whale": 0.1
     }
   },
   "risk": {
@@ -42,50 +44,49 @@
     "auto_redeem": true,
     "rpc_url": ""
   },
-  "stake_cap_usd": 250.0,
+  "stake_cap_usd": 50.0,
   "wallets": [
-    {
-      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-      "name": "Kruto2027",
-      "class": "volume"
-    },
-    {
-      "wallet": "0x86c878cde72660ec52f5e6f0f0438b76de8fc867",
-      "name": "fortuneking",
-      "class": "volume"
-    },
     {
       "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
       "name": "LSB1",
-      "class": "volume"
+      "class": "volume",
+      "floor": 258.51
     },
     {
       "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
       "name": "imwalkinghere",
-      "class": "volume"
-    },
-    {
-      "wallet": "0xfc81760d44a21acc9fd4b749a5bf9a9b2eeae072",
-      "name": "iohihoo",
-      "class": "volume"
-    },
-    {
-      "wallet": "0xf5fe759cece500f58a431ef8dacea321f6e3e23d",
-      "name": "Stavenson",
       "class": "volume",
-      "floor": 4759.62
+      "floor": 122.32
     },
     {
-      "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
-      "name": "0x4bFb-whale",
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "name": "Kruto2027",
       "class": "volume",
-      "floor": 1090.46
+      "floor": 126.84
     },
     {
-      "wallet": "0x72e1597864456eda62878413cf3e60c332e4a45d",
-      "name": "ArbTrader",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "name": "0xbadaf319",
       "class": "volume",
-      "floor": 168.28
+      "floor": 44.98
+    },
+    {
+      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+      "name": "gkmgkldfmg",
+      "class": "volume",
+      "floor": 304.34
+    },
+    {
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "name": "AIcAIc",
+      "class": "volume",
+      "floor": 295.32
+    },
+    {
+      "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+      "name": "1kto1m",
+      "class": "volume",
+      "floor": 320.95
     }
   ],
   "feed_path": "live/copybot_live_real.json",

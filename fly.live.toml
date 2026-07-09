@@ -1,0 +1,20 @@
+# Fly.io config for the REAL MONEY copybot worker — a SEPARATE app from the
+# paper worker (wwf-copybot) so the two books never share a process, state
+# file, or failure mode (LIVE_ROLLOUT Phase 3.3). Region rules: see fly.toml.
+#
+# Poll mode only (60s; the Alchemy push webhook stays on the paper app), no
+# inbound services, no health checks — the unarmed machine idles in
+# geocheck --idle until the USER sets LIVE_PRIVATE_KEY + LIVE_FUNDER_ADDRESS
+# + LIVE_CONFIRM (the typed confirmation phrase) via flyctl secrets set.
+app = "wwf-copybot-live"
+primary_region = "arn"
+
+[build]
+  dockerfile = "fly.Dockerfile"
+
+[env]
+  COPYBOT_ROLE = "live"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"

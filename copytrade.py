@@ -599,6 +599,18 @@ def confirm_live(cfg):
           f" · daily cap ${cfg['risk']['daily_spend_cap_usd']:.0f}")
     print(f"  Watching {len(cfg['watchlist'])} wallets.")
     print("=" * 64)
+    # Headless arm (Fly live worker): the USER types the exact phrase into
+    # `flyctl secrets set LIVE_CONFIRM="…"` — still a human checkpoint, never
+    # baked into config or code (LIVE_ROLLOUT rule 0.7). Known property: while
+    # the secret stays set, restarts RE-ARM automatically (desired during the
+    # days-long Phase 5 matrix); `flyctl secrets unset LIVE_CONFIRM` disarms
+    # at the next boot, and any wrong value aborts instead of prompting.
+    env_phrase = os.environ.get("LIVE_CONFIRM")
+    if env_phrase is not None:
+        if env_phrase.strip() == CONFIRM_PHRASE:
+            print("confirmed via LIVE_CONFIRM env — armed.")
+            return
+        sys.exit("Aborted — LIVE_CONFIRM is set but does not match the phrase.")
     typed = input(f'Type "{CONFIRM_PHRASE}" to proceed (anything else aborts): ')
     if typed.strip() != CONFIRM_PHRASE:
         sys.exit("Aborted — not confirmed.")
