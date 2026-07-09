@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 78.95,
+ "stake": 80.6,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 1975.09,
- "cash": 1638.42,
- "deployed": 335.22,
+ "hwm": 2014.91,
+ "cash": 1765.3,
+ "deployed": 249.61,
  "reserve": 0.0,
- "realized": 973.61,
+ "realized": 1014.88,
  "adjustments": 0.03,
  "ledger_drift": -0.0,
- "open_count": 6,
- "fees_paid": 44.53,
+ "open_count": 5,
+ "fees_paid": 45.43,
  "fee_rate": 0.03,
  "lag": {
   "n": 31,
@@ -50,6 +50,26 @@
  },
  "bets": [
   {
+   "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $11.2B?",
+   "their_price": 0.79,
+   "my_price": 0.56,
+   "slippage_pct": -0.2911,
+   "shares": 111.84,
+   "cost": 62.63,
+   "fee": 0.83,
+   "opened": 1783614337,
+   "status": "closed",
+   "exit_price": 0.8258,
+   "pnl": 28.9,
+   "settled": 1783626462,
+   "sold_shares": 111.84,
+   "sold_proceeds": 92.36
+  },
+  {
    "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -65,7 +85,9 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "sold_shares": 58.9,
+   "sold_proceeds": 34.52
   },
   {
    "token": "5331398174498187031334378168888081929069329815866835423456661839681650230348",
@@ -204,24 +226,6 @@
    "settled": 1783615111,
    "sold_shares": 49.66,
    "sold_proceeds": 47.89
-  },
-  {
-   "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $11.2B?",
-   "their_price": 0.79,
-   "my_price": 0.56,
-   "slippage_pct": -0.2911,
-   "shares": 111.84,
-   "cost": 62.63,
-   "fee": 0.83,
-   "opened": 1783614337,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "50563396050108174063968999790600921955430682357744232042472551252897944666519",
@@ -794,5 +798,5 @@
   }
  ],
  "missed_pnl": -17.32,
- "updated": 1783626073
+ "updated": 1783626522
 }
