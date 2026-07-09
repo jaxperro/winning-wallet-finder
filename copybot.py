@@ -1236,6 +1236,40 @@ class Copybot:
             # silence never reads as an exit. Entry+exit taker fees charged,
             # like every mirrored sell.
             for m in st.get("missed", []):
+                # (B) rows already SETTLED at resolution (won/lost/refund):
+                # fast in-play markets can resolve before this 5-min pass sees
+                # the sharp's sell, and rows from before 2026-07-09 predate
+                # exit-aware settling. One idempotent re-check per row: a
+                # redeem prints EXACTLY the payout, so an exit print >2c away
+                # means the sharp sold pre-resolution — revalue the
+                # counterfactual at their exit (mirror semantics, both fees).
+                if (m.get("status") in ("won", "lost", "refund")
+                        and not m.get("exit_checked")
+                        and m.get("cond") and m.get("wallet") and m.get("token")):
+                    cps = sm.get_json("/closed-positions", {"user": m["wallet"],
+                                                            "market": m["cond"], "limit": 10})
+                    if cps is None:
+                        continue                # API blip — retry next pass
+                    m["exit_checked"] = True    # examined once, forever
+                    row = next((p for p in cps
+                                if str(p.get("asset")) == str(m["token"])), None)
+                    if row is not None:
+                        tb = row.get("totalBought") or 0
+                        xp = ((row.get("avgPrice") or 0)
+                              + ((row.get("realizedPnl") or 0) / tb if tb else 0))
+                        payout = {"won": 1.0, "lost": 0.0, "refund": 0.5}[m["status"]]
+                        if abs(xp - payout) > 0.02:
+                            p = m.get("price") or 0.5
+                            sh = m["stake"] / max(p, 0.001)
+                            fee_in = taker_fee(sh, p, self.fee_rate)
+                            fee_out = taker_fee(sh, xp, self.fee_rate)
+                            old_pnl = m.get("pnl")
+                            m.update(status="sold", exit_price=round(xp, 4),
+                                     pnl=round(sh * xp - m["stake"] - fee_in - fee_out, 2))
+                            log(f"missed-reval: {(m.get('title') or '?')[:38]} — sharp "
+                                f"sold @ {xp:.3f} pre-resolution; counterfactual "
+                                f"${old_pnl} -> ${m['pnl']:+.2f} (sold)")
+                    continue
                 if (m.get("status") != "open" or not m.get("cond")
                         or not m.get("wallet") or not m.get("token")):
                     continue
