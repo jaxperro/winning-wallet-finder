@@ -506,6 +506,21 @@
  ],
  "missed": [
   {
+   "ts": 1783622007,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "22725380484456966301228939445880731453285484401950854931468064580525084575682",
+   "cond": "0x143c926299a00a8efbbb4368be94376883164ebeca3006dcb384f11b00f85a8a",
+   "title": "PFK CSKA Sofia vs. Derry City FC: Both Teams to Score",
+   "outcome": "Yes",
+   "price": 0.8593,
+   "stake": 77.32,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783620287,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "101398220491720323754799949069639964958286012335853846453785209954253068634131",
@@ -686,5 +701,5 @@
   }
  ],
  "missed_pnl": -17.32,
- "updated": 1783621392
+ "updated": 1783622009
 }
