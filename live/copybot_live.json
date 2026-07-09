@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 40.08,
+ "stake": 40.06,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1001.88,
- "cash": 970.27,
- "deployed": 31.6,
+ "cash": 929.75,
+ "deployed": 71.68,
  "reserve": 0.0,
- "realized": 1.88,
+ "realized": 1.43,
  "adjustments": 0,
- "ledger_drift": 0.0,
- "open_count": 1,
- "fees_paid": 0.21,
+ "ledger_drift": 0.01,
+ "open_count": 2,
+ "fees_paid": 0.65,
  "fee_rate": 0.03,
  "lag": {
-  "n": 2,
-  "n24": 2,
-  "avg_s": 9.9,
-  "avg_slip_pct": -0.0084,
+  "n": 3,
+  "n24": 3,
+  "avg_s": 55.2,
+  "avg_slip_pct": -0.0159,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "39972622924517602245489680060778385204723280241121244048574854937226619835364",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "S&P 500 (SPY) closes above $745 on July 9?",
+   "their_price": 0.65,
+   "my_price": 0.63,
+   "slippage_pct": -0.0308,
+   "shares": 63.61,
+   "cost": 40.08,
+   "fee": 0.44,
+   "opened": 1783571957,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "81571380492002640837831762878498865181928814950219688494239020033973603013673",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -92,5 +110,5 @@
  ],
  "missed": [],
  "missed_pnl": 0,
- "updated": 1783568521
+ "updated": 1783572103
 }
