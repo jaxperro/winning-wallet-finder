@@ -75,6 +75,21 @@ The repo is authoritative; project memory has deeper history.
   (refund harvesters — real edge, uncopyable margins), lma0o0o0o (negative in
   the shared book), Winnertraders (6.6-day capital locks).
 
+## Real-money worker status (built 2026-07-09)
+
+`wwf-copybot-live` exists on Fly (arn, ONE machine, geo TRADABLE), idling
+UNARMED: no keys, no book, no orders until three user-set secrets exist
+(`LIVE_PRIVATE_KEY`, `LIVE_FUNDER_ADDRESS`, `LIVE_CONFIRM` = the typed
+confirmation phrase; plus `GITHUB_TOKEN` — mint a FRESH fine-grained PAT so
+live and paper credentials stay separable, and `ALCHEMY_RPC_URL` for
+settles/redeems). Armed boot: config.live.example.json (Set E, $50 @ 10% =
+$5 stakes, rule-0.6 caps) + own state `copybot_state.live.json` + poll mode
+— the push webhook stays on the paper app. Disarm any time:
+`flyctl secrets unset LIVE_CONFIRM` (next boot idles) or
+`flyctl apps stop wwf-copybot-live`. ROTATE the Discord webhook that was
+committed in config.live.example.json history (removed from HEAD
+2026-07-09; spam-risk only).
+
 ## Next: Phase 2 — funding (USER ONLY)
 
 Phase 1 is 8/8 complete (LIVE_ROLLOUT.md). Before funding, the user should
