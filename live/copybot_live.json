@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 81.69,
+ "stake": 81.65,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2042.23,
- "cash": 1848.64,
- "deployed": 193.58,
+ "cash": 1784.4,
+ "deployed": 256.92,
  "reserve": 0.0,
- "realized": 1042.2,
+ "realized": 1041.28,
  "adjustments": 0.03,
- "ledger_drift": -0.0,
- "open_count": 4,
- "fees_paid": 49.02,
+ "ledger_drift": -0.01,
+ "open_count": 5,
+ "fees_paid": 49.94,
  "fee_rate": 0.03,
  "lag": {
-  "n": 32,
-  "n24": 32,
-  "avg_s": 26.4,
-  "avg_slip_pct": -0.0569,
+  "n": 33,
+  "n24": 33,
+  "avg_s": 25.7,
+  "avg_slip_pct": -0.0645,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "114973484118227793815545241122012985639899573502123700019283561171248113667821",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Anduril's valuation hit (HIGH) $175B by December 31?",
+   "their_price": 0.75,
+   "my_price": 0.52,
+   "slippage_pct": -0.3067,
+   "shares": 121.79,
+   "cost": 63.33,
+   "fee": 0.91,
+   "opened": 1783627949,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -617,10 +635,11 @@
    "price": 0.51,
    "stake": 81.69,
    "reason": "price moved 0.47\u21920.51",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 3.72,
+   "settled": 1783628018,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.5481
   },
   {
    "ts": 1783627210,
@@ -849,6 +868,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 16.37,
- "updated": 1783627634
+ "missed_pnl": 20.09,
+ "updated": 1783628019
 }
