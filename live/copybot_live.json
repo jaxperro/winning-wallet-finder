@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 84.43,
+ "stake": 84.38,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2111.53,
- "cash": 1913.64,
- "deployed": 197.05,
+ "cash": 1827.94,
+ "deployed": 281.48,
  "reserve": 0.0,
- "realized": 1110.65,
+ "realized": 1109.39,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 4,
- "fees_paid": 51.87,
+ "ledger_drift": -0.01,
+ "open_count": 5,
+ "fees_paid": 53.14,
  "fee_rate": 0.03,
  "lag": {
-  "n": 34,
-  "n24": 33,
-  "avg_s": 25.8,
-  "avg_slip_pct": -0.0627,
+  "n": 35,
+  "n24": 34,
+  "avg_s": 25.1,
+  "avg_slip_pct": -0.0615,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "72834495383235297744666280877384242771579363352963523785873024005920870690952",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Epic Games' valuation hit (HIGH) $14B by December 31?",
+   "their_price": 0.51,
+   "my_price": 0.5,
+   "slippage_pct": -0.0196,
+   "shares": 168.85,
+   "cost": 84.43,
+   "fee": 1.27,
+   "opened": 1783633987,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "64240896700312109784630886706605953876703771364083875350159352793781549030993",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -922,5 +940,5 @@
   }
  ],
  "missed_pnl": 20.92,
- "updated": 1783632975
+ "updated": 1783633987
 }
