@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 40.1,
+ "stake": 40.06,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1003.22,
- "cash": 897.79,
- "deployed": 104.63,
+ "cash": 856.82,
+ "deployed": 144.73,
  "reserve": 0.0,
- "realized": 2.42,
+ "realized": 1.55,
  "adjustments": 0,
- "ledger_drift": 0.01,
- "open_count": 3,
- "fees_paid": 1.76,
+ "ledger_drift": 0.02,
+ "open_count": 4,
+ "fees_paid": 2.63,
  "fee_rate": 0.03,
  "lag": {
-  "n": 5,
-  "n24": 5,
-  "avg_s": 63.6,
-  "avg_slip_pct": -0.0062,
+  "n": 6,
+  "n24": 6,
+  "avg_s": 53.2,
+  "avg_slip_pct": -0.0109,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "41730590020783104130704685147378917247238626421058824794966180989145470736849",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Rune Eaters",
+   "title": "Dota 2: BetBoom Team vs Rune Eaters - Game 1 Winner",
+   "their_price": 0.29,
+   "my_price": 0.28,
+   "slippage_pct": -0.0345,
+   "shares": 143.2,
+   "cost": 40.1,
+   "fee": 0.87,
+   "opened": 1783589353,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "60128921184547509999277097764007729598143622125863097354448637354814148313346",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -150,5 +168,5 @@
  ],
  "missed": [],
  "missed_pnl": 0,
- "updated": 1783588745
+ "updated": 1783589354
 }
