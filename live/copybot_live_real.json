@@ -51,6 +51,22 @@
  "bets": [],
  "missed": [
   {
+   "ts": 1783619136,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "70408936800509461553908169247651744499361197714777425908648127381697435776212",
+   "cond": "0x154448eb3f6e70a5bf8ee90469e6a9637d8bf6979a7ef184aac0e63f9cf3f630",
+   "title": "Will Pyunik FA win on 2026-07-09?",
+   "outcome": "Yes",
+   "price": 0.7999,
+   "stake": 5.0,
+   "reason": "bot offline (deploy window)",
+   "status": "won",
+   "pnl": 1.22,
+   "settled": 1783631240,
+   "name": "LSB1",
+   "exit_checked": true
+  },
+  {
    "ts": 1783627976,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "114973484118227793815545241122012985639899573502123700019283561171248113667821",
@@ -243,21 +259,6 @@
    "exit_price": 0.5677
   },
   {
-   "ts": 1783619136,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "70408936800509461553908169247651744499361197714777425908648127381697435776212",
-   "cond": "0x154448eb3f6e70a5bf8ee90469e6a9637d8bf6979a7ef184aac0e63f9cf3f630",
-   "title": "Will Pyunik FA win on 2026-07-09?",
-   "outcome": "Yes",
-   "price": 0.7999,
-   "stake": 5.0,
-   "reason": "bot offline (deploy window)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
-  },
-  {
    "ts": 1783614390,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
@@ -388,6 +389,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 77.24,
- "updated": 1783628298
+ "missed_pnl": 78.46,
+ "updated": 1783631244
 }
