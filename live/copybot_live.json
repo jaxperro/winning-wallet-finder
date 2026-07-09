@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.9,
+ "stake": 48.66,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 1197.48,
- "cash": 1006.54,
- "deployed": 190.94,
+ "hwm": 1216.52,
+ "cash": 979.03,
+ "deployed": 237.49,
  "reserve": 0.0,
- "realized": 197.48,
+ "realized": 216.52,
  "adjustments": 0,
  "ledger_drift": -2.0,
- "open_count": 5,
- "fees_paid": 17.57,
+ "open_count": 6,
+ "fees_paid": 19.29,
  "fee_rate": 0.03,
  "lag": {
-  "n": 22,
-  "n24": 22,
-  "avg_s": 33.8,
-  "avg_slip_pct": -0.0627,
+  "n": 23,
+  "n24": 23,
+  "avg_s": 32.5,
+  "avg_slip_pct": -0.06,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "65561282581543333083769484681733882641597892294255282935267357087854721926205",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Team Syntax",
+   "title": "Dota 2: Hive vs Team Syntax (BO3) - European Pro League Playoffs",
+   "their_price": 0.03,
+   "my_price": 0.03,
+   "slippage_pct": 0.0,
+   "shares": 1596.64,
+   "cost": 47.9,
+   "fee": 1.39,
+   "opened": 1783613102,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "sold_shares": 43.24,
+   "sold_proceeds": 21.73
+  },
   {
    "token": "18761224788266541727279689677720684189553273901637473351355084093520325570855",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -106,8 +126,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 10.39,
-   "sold_proceeds": 9.96
+   "sold_shares": 10.45,
+   "sold_proceeds": 10.02
   },
   {
    "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
@@ -434,5 +454,5 @@
   }
  ],
  "missed_pnl": -67.1,
- "updated": 1783612472
+ "updated": 1783613168
 }
