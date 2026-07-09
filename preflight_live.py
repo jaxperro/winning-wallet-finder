@@ -52,8 +52,8 @@ def main():
                      ("LIVE_FUNDER_ADDRESS", "funder_address"),
                      ("LIVE_SIGNATURE_TYPE", "signature_type"),
                      ("ALCHEMY_RPC_URL", "rpc_url")):
-        if os.environ.get(env):
-            live[key] = os.environ[env]
+        if (os.environ.get(env) or "").strip():
+            live[key] = os.environ[env].strip()    # tolerate pasted newlines
     if "watchlist" not in cfg and cfg.get("wallets"):
         cfg["watchlist"] = [w["wallet"] for w in cfg["wallets"]]
     pk, funder = live.get("private_key"), live.get("funder_address")

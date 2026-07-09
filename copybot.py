@@ -1365,8 +1365,8 @@ def load_cfg(path):
     for env, key in (("LIVE_PRIVATE_KEY", "private_key"),
                      ("LIVE_FUNDER_ADDRESS", "funder_address"),
                      ("LIVE_SIGNATURE_TYPE", "signature_type")):
-        v = os.environ.get(env)
-        if v:
+        v = (os.environ.get(env) or "").strip()   # secrets often arrive with a
+        if v:                                      # trailing newline from paste
             cfg["live"][key] = int(v) if key == "signature_type" else v
     cfg["follow"] = {**FOLLOW_DEFAULT, **cfg.get("follow", {})}
     normalize_follow_config(cfg)

@@ -1,8 +1,8 @@
 {
   "mode": "live",
   "_comment": "Live-test config, SECRET-FREE and committed. The Fly live worker (wwf-copybot-live, COPYBOT_ROLE=live) reads THIS file and takes secrets from env (LIVE_PRIVATE_KEY/LIVE_FUNDER_ADDRESS + LIVE_CONFIRM to arm). Mac use: cp -> config.live.json and fill live.*. RULES: bankroll_usd MUST equal the actual USDC deposit at arm time (the 1.4 cash-anchor checks state cash vs chain); risk caps are LIVE_ROLLOUT rule 0.6 \u2014 never raise before Phase 6; follow set mirrors copybot.paper.json (Set E) so paper and live books stay comparable.",
-  "bankroll_usd": 32.0,
-  "bankroll_pct": 0.15625,
+  "bankroll_usd": 24.73,
+  "bankroll_pct": 0.2022,
   "price_guard_pct": 0.05,
   "taker_fee_rate": 0.03,
   "discord_webhook": "",
@@ -21,8 +21,8 @@
     "min_entry": 0.0,
     "max_entry": 0.95,
     "class_pct": {
-      "volume": 0.15625,
-      "whale": 0.15625
+      "volume": 0.2022,
+      "whale": 0.2022
     }
   },
   "risk": {
@@ -44,7 +44,7 @@
     "auto_redeem": true,
     "rpc_url": ""
   },
-  "stake_cap_usd": 32.0,
+  "stake_cap_usd": 24.73,
   "wallets": [
     {
       "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
