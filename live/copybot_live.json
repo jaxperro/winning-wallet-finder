@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 84.38,
+ "stake": 84.3,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2111.53,
- "cash": 1827.94,
- "deployed": 281.48,
+ "cash": 1741.74,
+ "deployed": 365.85,
  "reserve": 0.0,
- "realized": 1109.39,
+ "realized": 1107.57,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 5,
- "fees_paid": 53.14,
+ "open_count": 6,
+ "fees_paid": 54.96,
  "fee_rate": 0.03,
  "lag": {
-  "n": 35,
-  "n24": 34,
-  "avg_s": 25.1,
-  "avg_slip_pct": -0.0615,
+  "n": 36,
+  "n24": 35,
+  "avg_s": 30.6,
+  "avg_slip_pct": -0.0705,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will Epic Games' valuation hit (HIGH) $13.5B by December 31?",
+   "their_price": 0.4513,
+   "my_price": 0.28,
+   "slippage_pct": -0.3796,
+   "shares": 301.35,
+   "cost": 84.38,
+   "fee": 1.82,
+   "opened": 1783633993,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "72834495383235297744666280877384242771579363352963523785873024005920870690952",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -666,6 +684,37 @@
  ],
  "missed": [
   {
+   "ts": 1783622007,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "22725380484456966301228939445880731453285484401950854931468064580525084575682",
+   "cond": "0x143c926299a00a8efbbb4368be94376883164ebeca3006dcb384f11b00f85a8a",
+   "title": "PFK CSKA Sofia vs. Derry City FC: Both Teams to Score",
+   "outcome": "Yes",
+   "price": 0.8593,
+   "stake": 77.32,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": -0.64,
+   "settled": 1783634212,
+   "name": "LSB1",
+   "exit_price": 0.8594
+  },
+  {
+   "ts": 1783634211,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
+   "cond": "0x0fb63e987b28940eb8d299b466a34e5b404e0bd9a5c98df908bb55e6d00b694b",
+   "title": "Will Epic Games' valuation hit (HIGH) $13.5B by December 31?",
+   "outcome": "Yes",
+   "price": 0.4482,
+   "stake": 76.99,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783632909,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "71541655082659994890599835762768262434471231057902321146296827929888355060088",
@@ -743,21 +792,6 @@
    "settled": 1783626771,
    "name": "gkmgkldfmg",
    "exit_price": 0.55
-  },
-  {
-   "ts": 1783622007,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "22725380484456966301228939445880731453285484401950854931468064580525084575682",
-   "cond": "0x143c926299a00a8efbbb4368be94376883164ebeca3006dcb384f11b00f85a8a",
-   "title": "PFK CSKA Sofia vs. Derry City FC: Both Teams to Score",
-   "outcome": "Yes",
-   "price": 0.8593,
-   "stake": 77.32,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
   },
   {
    "ts": 1783620287,
@@ -939,6 +973,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 20.92,
- "updated": 1783633987
+ "missed_pnl": 20.28,
+ "updated": 1783634213
 }
