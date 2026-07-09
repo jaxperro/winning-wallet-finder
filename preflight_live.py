@@ -38,11 +38,27 @@ def check(name, fn):
 
 
 def main():
-    cfg = json.load(open("config.live.json"))
-    live = cfg.get("live", {})
+    # config: --config PATH, else config.live.json. Secrets: env wins (the Fly
+    # worker path — LIVE_PRIVATE_KEY / LIVE_FUNDER_ADDRESS / LIVE_SIGNATURE_TYPE
+    # / ALCHEMY_RPC_URL — same 1.2 override chain as copybot; no key file needs
+    # to exist anywhere on the box).
+    import os
+    path = "config.live.json"
+    if "--config" in sys.argv:
+        path = sys.argv[sys.argv.index("--config") + 1]
+    cfg = json.load(open(path))
+    live = cfg.setdefault("live", {})
+    for env, key in (("LIVE_PRIVATE_KEY", "private_key"),
+                     ("LIVE_FUNDER_ADDRESS", "funder_address"),
+                     ("LIVE_SIGNATURE_TYPE", "signature_type"),
+                     ("ALCHEMY_RPC_URL", "rpc_url")):
+        if os.environ.get(env):
+            live[key] = os.environ[env]
+    if "watchlist" not in cfg and cfg.get("wallets"):
+        cfg["watchlist"] = [w["wallet"] for w in cfg["wallets"]]
     pk, funder = live.get("private_key"), live.get("funder_address")
     if not pk or not funder:
-        sys.exit("fill live.private_key and live.funder_address in config.live.json first\n"
+        sys.exit("fill live.private_key and live.funder_address (config or env) first\n"
                  "(Polymarket profile -> the deposit/profile address is the funder;\n"
                  " email-login accounts export the key in Settings)")
 
@@ -50,7 +66,7 @@ def main():
     from py_clob_client.clob_types import BalanceAllowanceParams, AssetType
 
     client = ClobClient(host=CLOB, key=pk, chain_id=137,
-                        signature_type=live.get("signature_type", 1), funder=funder)
+                        signature_type=int(live.get("signature_type") or 1), funder=funder)
 
     def auth():
         creds = client.create_or_derive_api_creds()
