@@ -51,6 +51,52 @@
  "bets": [],
  "missed": [
   {
+   "ts": 1783621873,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "22725380484456966301228939445880731453285484401950854931468064580525084575682",
+   "cond": "0x143c926299a00a8efbbb4368be94376883164ebeca3006dcb384f11b00f85a8a",
+   "title": "PFK CSKA Sofia vs. Derry City FC: Both Teams to Score",
+   "outcome": "Yes",
+   "price": 0.8593,
+   "stake": 5.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": -0.04,
+   "settled": 1783634335,
+   "name": "LSB1",
+   "exit_price": 0.8594
+  },
+  {
+   "ts": 1783634333,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
+   "cond": "0x0fb63e987b28940eb8d299b466a34e5b404e0bd9a5c98df908bb55e6d00b694b",
+   "title": "Will Epic Games' valuation hit (HIGH) $13.5B by December 31?",
+   "outcome": "Yes",
+   "price": 0.4482,
+   "stake": 5.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1783634333,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "72834495383235297744666280877384242771579363352963523785873024005920870690952",
+   "cond": "0xa6930fadb08512d5f798c2d474493af6d609ba246d43966cdf11af475b139dd6",
+   "title": "Will Epic Games' valuation hit (HIGH) $14B by December 31?",
+   "outcome": "No",
+   "price": 0.5099,
+   "stake": 5.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783632945,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "71541655082659994890599835762768262434471231057902321146296827929888355060088",
@@ -160,21 +206,6 @@
    "settled": 1783627340,
    "name": "gkmgkldfmg",
    "exit_price": 0.55
-  },
-  {
-   "ts": 1783621873,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "22725380484456966301228939445880731453285484401950854931468064580525084575682",
-   "cond": "0x143c926299a00a8efbbb4368be94376883164ebeca3006dcb384f11b00f85a8a",
-   "title": "PFK CSKA Sofia vs. Derry City FC: Both Teams to Score",
-   "outcome": "Yes",
-   "price": 0.8593,
-   "stake": 5.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
   },
   {
    "ts": 1783620305,
@@ -421,6 +452,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 73.43,
- "updated": 1783633073
+ "missed_pnl": 73.39,
+ "updated": 1783634336
 }
