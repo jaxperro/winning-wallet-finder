@@ -51,6 +51,21 @@
  "bets": [],
  "missed": [
   {
+   "ts": 1783596579,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "67316041392595003970935162895075724563017159074192091517379695493042764601836",
+   "cond": "0x9287e54a43cbc37355e3646f3a450eb4543d975da64960a25e69740966d41aa4",
+   "title": "Dota 2: GamerLegion vs Team Falcons - Game 2 Winner",
+   "outcome": "GamerLegion",
+   "price": 0.3,
+   "stake": 5.0,
+   "reason": "price moved 0.24\u21920.30",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783590718,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "20414976475690894265425364948116786155162480053919701442335217459387124913382",
@@ -127,5 +142,5 @@
   }
  ],
  "missed_pnl": 0,
- "updated": 1783590719
+ "updated": 1783596580
 }
