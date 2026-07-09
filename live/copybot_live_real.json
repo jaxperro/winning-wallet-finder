@@ -51,6 +51,21 @@
  "bets": [],
  "missed": [
   {
+   "ts": 1783590593,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "60128921184547509999277097764007729598143622125863097354448637354814148313346",
+   "cond": "0xc0d87be3d592fbddcf1b85dc905882c75654a535e61951a717fd8462dab90e5b",
+   "title": "Dota 2: Poor Rangers vs Xtreme Gaming - Game 1 Winner",
+   "outcome": "Poor Rangers",
+   "price": 0.51,
+   "stake": 5.0,
+   "reason": "price moved 0.39\u21920.51",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783590223,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "41730590020783104130704685147378917247238626421058824794966180989145470736849",
@@ -97,5 +112,5 @@
   }
  ],
  "missed_pnl": 0,
- "updated": 1783590223
+ "updated": 1783590593
 }
