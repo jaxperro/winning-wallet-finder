@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 77.7,
+ "stake": 78.5,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 1958.71,
- "cash": 1626.22,
- "deployed": 316.24,
+ "hwm": 1962.42,
+ "cash": 1685.54,
+ "deployed": 276.88,
  "reserve": 0.0,
- "realized": 942.43,
+ "realized": 962.39,
  "adjustments": 0.03,
  "ledger_drift": -0.0,
- "open_count": 7,
+ "open_count": 6,
  "fees_paid": 43.08,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,26 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "39972622924517602245489680060778385204723280241121244048574854937226619835364",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "S&P 500 (SPY) closes above $745 on July 9?",
+   "their_price": 0.65,
+   "my_price": 0.6582,
+   "slippage_pct": -0.0308,
+   "shares": 70.71,
+   "cost": 46.55,
+   "fee": 0.46,
+   "opened": 1783571957,
+   "status": "closed",
+   "exit_price": 0.9474,
+   "pnl": 19.99,
+   "settled": 1783623672,
+   "sold_shares": 70.72,
+   "sold_proceeds": 67.0
+  },
   {
    "token": "5331398174498187031334378168888081929069329815866835423456661839681650230348",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -504,26 +524,6 @@
    "sold_proceeds": 41.49
   },
   {
-   "token": "39972622924517602245489680060778385204723280241121244048574854937226619835364",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "S&P 500 (SPY) closes above $745 on July 9?",
-   "their_price": 0.65,
-   "my_price": 0.6582,
-   "slippage_pct": -0.0308,
-   "shares": 70.71,
-   "cost": 46.55,
-   "fee": 0.46,
-   "opened": 1783571957,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 11.39,
-   "sold_proceeds": 7.67
-  },
-  {
    "token": "81571380492002640837831762878498865181928814950219688494239020033973603013673",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -761,5 +761,5 @@
   }
  ],
  "missed_pnl": -17.32,
- "updated": 1783623287
+ "updated": 1783623672
 }
