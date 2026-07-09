@@ -58,6 +58,7 @@
     "0x6ff8f136f64f7136ce668b4602d2513c946f3ddcd4849a87a127bd5c84eb1ea6",
     "0xd3d844d48c8f0144ef8f71679c824cad5f58acbcb39c597d107dd41bbe180911",
     "0x742f6e6140b3490d0bf1a6fd07a0fd925b5de3c0862a153d5a2130c72985224f",
+    "0xb1fd59d3e4569b644293f34fc70a0c6ca10de2fcfc6ccde510db49a1e3b8bf54",
     "0x0817f1981c9b91c39cda7b49ffb4a5d003264f3ac397bef4c32c4e2f5afd9806",
     "0x209e36969a156dc37bfa6ca3b47cbc243484e145c0d04d4fe46077f5f6655f04",
     "0xae307b052ae4ec3c1ad45494517567b79efb405e93bc0d71e8a6db4bab35176f",
@@ -107,6 +108,7 @@
     "0x58b33a3ab32ebceba7af89c70db53cd041fa6475c606b410e75772ad65c7e055",
     "0xf9cdb63324965c572b7086ef3b498a379a36a4ee34a120fb0bc332a360ba1b35",
     "0x20350db69e3553fcb7dbac2d10b4fb00e0e0a2c98f5bebe26488cea20fa2ce42",
+    "0x1b4d22a05fe619307d65b6c2107cb4fd43820d835a0d770cb6228fd0441c8253",
     "0xf79dd53150a76c06fa16412c7709fbc6cd7a9b7f9d039eef298e0d5ce7883d07",
     "0x5a4429d3480b4e3e5cc58ec71e766d968769c9467d923925f97c82001b0ed7f2",
     "0x02627cd5f6364efb4dd146ea1fd13dd6f6cb2134fc89db8a397dd28c97ea7743",
@@ -286,6 +288,7 @@
     "0x8c68f7c9d90cf3ba3803f0c96f8de8f9e16fb4bfbd9cf106067fb6f58edee9e4",
     "0x0e97ceeb2e58f617a7539093cc878e4b829d69654eb0d0333dbca7e30bc28387",
     "0x20741651358c4b82f5f6f02aa3eef8ac535c5c2b8af6870a06c835d99c49a4b4",
+    "0x28cd01626deab39a282624a7b1d4f350244e5a8837e2a19a8bafe7ba71e075b1",
     "0x0ba495699e9a62f4710a2782c17f43bfbf50f511b6414365bef62f7a6524382a",
     "0x41955967e49fe9766435d4a57bb537320bbd1867be994c97fbc16578e5e40951",
     "0x5920fa95d699b06160817f753b49f4664b8be361ec20b122d718ec0758f9846b",
@@ -4240,8 +4243,8 @@
     }
   },
   "hwm": 1142.0163756395518,
-  "feed_sig": "d8532542cad30c61448e5b986da9f451",
-  "feed_pushed_at": 1783611555.8772478,
+  "feed_sig": "0c7fafb277e30e5c03c14160f2e71255",
+  "feed_pushed_at": 1783611680.2498002,
   "missed": [
     {
       "ts": 1783590977,
@@ -4298,9 +4301,9 @@
       "price": 0.35,
       "stake": 44.98,
       "reason": "price moved 0.25\u21920.35",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "pnl": -45.86,
+      "settled": 1783611803,
       "name": "gkmgkldfmg"
     },
     {
@@ -4317,6 +4320,21 @@
       "pnl": null,
       "settled": null,
       "name": "1kto1m"
+    },
+    {
+      "ts": 1783611728,
+      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+      "token": "65984611303909407052169607993537741220891602509766446043631462077119911368849",
+      "cond": "0x868d295d9e0d6f777b7f4e6abb45f5d02e2f0281bb12b857f6375f7ecc8c91e5",
+      "title": "Dota 2: MOUZ vs Team Nemesis - Game 1 Winner",
+      "outcome": "MOUZ",
+      "price": 0.62,
+      "stake": 45.4,
+      "reason": "price moved 0.42\u21920.62",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "gkmgkldfmg"
     }
   ],
   "no_miss_toks": [
