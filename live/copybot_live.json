@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 81.29,
+ "stake": 81.69,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 2032.51,
- "cash": 1768.14,
- "deployed": 264.06,
+ "hwm": 2042.23,
+ "cash": 1848.64,
+ "deployed": 193.58,
  "reserve": 0.0,
- "realized": 1032.17,
+ "realized": 1042.2,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 5,
- "fees_paid": 47.94,
+ "ledger_drift": -0.0,
+ "open_count": 4,
+ "fees_paid": 49.02,
  "fee_rate": 0.03,
  "lag": {
   "n": 32,
@@ -62,12 +62,12 @@
    "cost": 81.3,
    "fee": 1.27,
    "opened": 1783626947,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 22.54,
-   "sold_proceeds": 11.78
+   "status": "closed",
+   "exit_price": 0.5448,
+   "pnl": 9.71,
+   "settled": 1783627237,
+   "sold_shares": 169.38,
+   "sold_proceeds": 92.28
   },
   {
    "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
@@ -608,6 +608,21 @@
  ],
  "missed": [
   {
+   "ts": 1783627210,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
+   "cond": "0x3c07935adc293c658ab20651f7fc6478d36e6bfdb375caab539fca9c81de03fd",
+   "title": "Dota 2: LGD Gaming vs 1win - Game 2 Winner",
+   "outcome": "LGD Gaming",
+   "price": 0.58,
+   "stake": 81.63,
+   "reason": "price moved 0.50\u21920.58",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783625835,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
@@ -819,5 +834,5 @@
   }
  ],
  "missed_pnl": 13.53,
- "updated": 1783627083
+ "updated": 1783627237
 }
