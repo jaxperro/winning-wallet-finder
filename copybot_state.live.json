@@ -4656,12 +4656,13 @@
       "price": 0.99,
       "stake": 5.0,
       "reason": "price moved 0.74\u21920.99",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "imwalkinghere"
+      "status": "sold",
+      "pnl": 0.05,
+      "settled": 1783633073,
+      "name": "imwalkinghere",
+      "exit_price": 1.0
     }
   ],
-  "feed_sig": "a2c68576aa28148a29fa1c05cd5b3f52",
-  "feed_pushed_at": 1783632885.0535135
+  "feed_sig": "141a956f3377f37109fe068000ad96b3",
+  "feed_pushed_at": 1783633008.1255455
 }

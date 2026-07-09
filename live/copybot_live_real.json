@@ -60,10 +60,11 @@
    "price": 0.99,
    "stake": 5.0,
    "reason": "price moved 0.74\u21920.99",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "imwalkinghere"
+   "status": "sold",
+   "pnl": 0.05,
+   "settled": 1783633073,
+   "name": "imwalkinghere",
+   "exit_price": 1.0
   },
   {
    "ts": 1783632128,
@@ -420,6 +421,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 73.38,
- "updated": 1783632946
+ "missed_pnl": 73.43,
+ "updated": 1783633073
 }
