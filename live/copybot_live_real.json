@@ -1,0 +1,55 @@
+{
+ "mode": "live",
+ "bankroll": 24.73,
+ "stake": 5.0,
+ "stake_pct": 0.2022,
+ "event_cap": 0,
+ "hwm": 24.73,
+ "cash": 24.73,
+ "deployed": 0,
+ "reserve": 0.0,
+ "realized": 0.0,
+ "adjustments": 0,
+ "ledger_drift": 0.0,
+ "open_count": 0,
+ "fees_paid": 0.0,
+ "fee_rate": 0.03,
+ "lag": {
+  "n": 0,
+  "n24": 0,
+  "avg_s": null,
+  "avg_slip_pct": null,
+  "window_h": 24
+ },
+ "wallets": [
+  "LSB1",
+  "imwalkinghere",
+  "Kruto2027",
+  "0xbadaf319",
+  "gkmgkldfmg",
+  "AIcAIc",
+  "1kto1m"
+ ],
+ "classes": {
+  "LSB1": "volume",
+  "imwalkinghere": "volume",
+  "Kruto2027": "volume",
+  "0xbadaf319": "volume",
+  "gkmgkldfmg": "volume",
+  "AIcAIc": "volume",
+  "1kto1m": "volume"
+ },
+ "floors": {
+  "LSB1": 258.51,
+  "imwalkinghere": 122.32,
+  "Kruto2027": 126.84,
+  "0xbadaf319": 44.98,
+  "gkmgkldfmg": 304.34,
+  "AIcAIc": 295.32,
+  "1kto1m": 320.95
+ },
+ "bets": [],
+ "missed": [],
+ "missed_pnl": 0,
+ "updated": 1783572626
+}
