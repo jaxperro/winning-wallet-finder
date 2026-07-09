@@ -822,8 +822,16 @@ class Copybot:
             # publish only when the FEED itself changed (a bet placed/settled) —
             # the state file churns bookkeeping every cycle and would otherwise
             # commit every FEED_PUSH_MIN_S forever.
-            if subprocess.run(["git", "-C", repo, "diff", "--quiet", "--", self.feed_path],
-                              capture_output=True).returncode == 0:
+            unchanged = subprocess.run(
+                ["git", "-C", repo, "diff", "--quiet", "--", self.feed_path],
+                capture_output=True).returncode == 0
+            # a brand-new feed path is UNTRACKED — git diff reports no change
+            # for it, which silently suppressed the real-money feed's first
+            # publish forever (found 2026-07-09, /live stuck at 404)
+            untracked = subprocess.run(
+                ["git", "-C", repo, "ls-files", "--error-unmatch", self.feed_path],
+                capture_output=True).returncode != 0
+            if unchanged and not untracked:
                 return
             paths = [p for p in (self.feed_path, self.engine.state_path, self.fill_log)
                      if os.path.exists(os.path.join(repo, p))]
