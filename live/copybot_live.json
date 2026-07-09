@@ -328,6 +328,21 @@
  ],
  "missed": [
   {
+   "ts": 1783612016,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "18761224788266541727279689677720684189553273901637473351355084093520325570855",
+   "cond": "0x868d295d9e0d6f777b7f4e6abb45f5d02e2f0281bb12b857f6375f7ecc8c91e5",
+   "title": "Dota 2: MOUZ vs Team Nemesis - Game 1 Winner",
+   "outcome": "Team Nemesis",
+   "price": 0.43,
+   "stake": 45.4,
+   "reason": "price moved 0.38\u21920.43",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783602410,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "65585128992878043579543337949365468961659444652241007486927374035531121325136",
@@ -419,5 +434,5 @@
   }
  ],
  "missed_pnl": -67.1,
- "updated": 1783611803
+ "updated": 1783612016
 }
