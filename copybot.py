@@ -537,6 +537,7 @@ class Copybot:
                         my_price=(cost / sh) if sh else prev["my_price"],
                         fee=(prev.get("fee") or 0) + fill.get("fee", 0))
         else:
+            self._archive_settled(bets, fill["token"])
             bets[fill["token"]] = {
                 "token": fill["token"], "wallet": wallet,
                 "name": self.names.get(wallet.lower(), wallet[:10]),
@@ -551,6 +552,18 @@ class Copybot:
         log(f"  ↳ lag {('%.0fs' % detect_s) if detect_s is not None else '?'} · "
             f"their {their_p:.3f} → mine {my_p:.3f} ({slip_pct:+.1%} slippage)")
 
+    @staticmethod
+    def _archive_settled(bets, tok):
+        """Re-entering a token whose previous bet already settled must not
+        OVERWRITE it — the dict is keyed by token and the old record's pnl
+        vanished from realized (2026-07-09: WTI −9.97 and a Dota +19.30
+        clobbered; drift alarm caught it). Move the settled record to a
+        history key; every aggregator iterates values(), so archived rows
+        keep counting in realized/feed/win-rates."""
+        prev = bets.get(tok)
+        if prev is not None and prev.get("status") != "open":
+            bets[f"{tok}#{prev.get('settled') or int(time.time())}"] = prev
+
     def _synth_bet(self, tok, pos):
         """Bet record for an open my_pos position that has none (their_price
         None marks it synthesized — lag/slippage unknowable, the source trade
@@ -559,6 +572,7 @@ class Copybot:
         0 (same inputs, same result) — while a never-debited orphan shows
         drift = cost+fee exactly, which is what check_book's heal keys on."""
         bets = self.engine.state.setdefault("bets", {})
+        self._archive_settled(bets, tok)
         b = bets.get(tok) or {}
         sh = pos.get("shares") or 0
         cost = pos.get("cost") or 0
@@ -611,6 +625,7 @@ class Copybot:
                         my_price=(cost / sh) if sh else prev["my_price"],
                         fee=(prev.get("fee") or 0) + f.get("fee", 0))
         else:
+            self._archive_settled(bets, tok)
             bets[tok] = {
                 "token": tok, "wallet": pos.get("wallet", ""),
                 "name": self.names.get((pos.get("wallet") or "").lower(), "?"),
