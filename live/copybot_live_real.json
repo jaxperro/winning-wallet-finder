@@ -51,6 +51,21 @@
  "bets": [],
  "missed": [
   {
+   "ts": 1783614390,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
+   "cond": "0xc13c12dd0b8c4a29dedc8f12b2976628fa57e4a8b27bbcc522b82008bb549e02",
+   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $11.2B?",
+   "outcome": "No",
+   "price": 0.7901,
+   "stake": 5.0,
+   "reason": "bot offline (entered while down)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783613625,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "50563396050108174063968999790600921955430682357744232042472551252897944666519",
@@ -247,5 +262,5 @@
   }
  ],
  "missed_pnl": -5.73,
- "updated": 1783613625
+ "updated": 1783614391
 }
