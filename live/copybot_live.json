@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 40.0,
+ "stake": 40.06,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 1000.0,
- "cash": 959.88,
+ "hwm": 1001.42,
+ "cash": 961.42,
  "deployed": 40.0,
  "reserve": 0.0,
- "realized": -0.12,
+ "realized": 1.42,
  "adjustments": 0,
  "ledger_drift": 0.0,
  "open_count": 1,
- "fees_paid": 0.12,
+ "fees_paid": 0.19,
  "fee_rate": 0.03,
  "lag": {
-  "n": 1,
-  "n24": 1,
-  "avg_s": 0.5,
-  "avg_slip_pct": -0.019,
+  "n": 2,
+  "n24": 2,
+  "avg_s": 9.9,
+  "avg_slip_pct": -0.0084,
   "window_h": 24
  },
  "wallets": [
@@ -50,6 +50,26 @@
  },
  "bets": [
   {
+   "token": "81571380492002640837831762878498865181928814950219688494239020033973603013673",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will Graham Platner drop out by July 17?",
+   "their_price": 0.949,
+   "my_price": 0.951,
+   "slippage_pct": 0.0021,
+   "shares": 42.06,
+   "cost": 40.0,
+   "fee": 0.06,
+   "opened": 1783555919,
+   "status": "closed",
+   "exit_price": 0.9891,
+   "pnl": 1.54,
+   "settled": 1783556032,
+   "sold_shares": 42.06,
+   "sold_proceeds": 41.6
+  },
+  {
    "token": "244048590847349569142622450288686721247802348946192951002087804863968899",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -70,5 +90,5 @@
  ],
  "missed": [],
  "missed_pnl": 0,
- "updated": 1783548757
+ "updated": 1783556032
 }
