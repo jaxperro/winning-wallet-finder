@@ -960,10 +960,40 @@ class Copybot:
         new, recent one through the filter and (if it passes) the engine."""
         name = self.names.get(wallet.lower(), wallet[:10] + "…")
         trades = recent_trades(wallet)
-        # oldest-first so the engine's position math stays causal
+        # ONE conviction bet often arrives as several fills — a sweep through
+        # the book or rapid clip entries (gkmg 2026-07-09: a $612 MOUZ entry =
+        # 3×$204 same-second rows, every clip sub-floor while the backtest's
+        # position-level view takes the bet; he sold +60% five minutes later).
+        # Merge same-token BUY rows within 120s into the bet the sharp made;
+        # component txs are all marked processed. SELLs stay per-fill — the
+        # proportional mirror handles those correctly clip by clip.
+        merged, by_tok = [], {}
         for t in sorted(trades, key=lambda x: x.get("timestamp", 0)):
+            if (t.get("side") != "BUY" or not t.get("asset")
+                    or not t.get("transactionHash")
+                    or t.get("transactionHash") in self.engine.seen
+                    or t.get("transactionHash") in self.skipped):
+                merged.append(t)
+                continue
+            prev = by_tok.get(t["asset"])
+            if prev is not None and (t.get("timestamp", 0) or 0) - (prev.get("timestamp", 0) or 0) <= 120:
+                sz_p, sz_t = prev.get("size") or 0, t.get("size") or 0
+                if sz_p + sz_t:
+                    prev["price"] = (((prev.get("price") or 0) * sz_p
+                                      + (t.get("price") or 0) * sz_t) / (sz_p + sz_t))
+                prev["size"] = sz_p + sz_t
+                prev["usdcSize"] = (prev.get("usdcSize") or 0) + (t.get("usdcSize") or 0)
+                prev["timestamp"] = max(prev.get("timestamp", 0) or 0, t.get("timestamp", 0) or 0)
+                prev.setdefault("_extra_txs", []).append(t["transactionHash"])
+            else:
+                by_tok[t["asset"]] = t
+                merged.append(t)
+        # oldest-first so the engine's position math stays causal
+        for t in sorted(merged, key=lambda x: x.get("timestamp", 0)):
             tx = t.get("transactionHash")
+            extras = t.pop("_extra_txs", [])
             if not tx or tx in self.engine.seen or tx in self.skipped:
+                self.skipped.update(extras)
                 continue
             # filter FIRST (before the stale gate) so we know whether a trade we
             # were too slow on WOULD have qualified — a qualifying miss is worth
@@ -977,7 +1007,7 @@ class Copybot:
                 # dashboard instead of silently dropped; settle_resolved values it
                 # hypothetically like every other miss. record_miss dedups by token
                 # so reconcile_entries can't double-count the same position.
-                self.skipped.add(tx)
+                self.skipped.update([tx, *extras])
                 if t.get("side") == "BUY" and t.get("asset"):
                     late_m = (time.time() - (t.get("timestamp") or 0)) / 60.0
                     with self.lock:
@@ -991,7 +1021,7 @@ class Copybot:
                         f"@ {t.get('price',0):.3f} — too slow ({late_m:.0f}m late)")
                 continue
             if not follow:
-                self.skipped.add(tx)
+                self.skipped.update([tx, *extras])
                 log(f"skip {name}: {t.get('side')} {t.get('outcome','?')} "
                     f"@ {t.get('price',0):.3f} — {reason}")
                 continue
@@ -999,6 +1029,7 @@ class Copybot:
                 f"@ {t.get('price',0):.3f} (${t.get('usdcSize',0):,.0f})")
             with self.lock:
                 self.engine.handle_trade(wallet, t)   # sizes, gates, places (paper/live)
+                self.engine.seen.update(extras)       # component fills of the merged bet
                 tok = t.get("asset")
                 if tok in self.engine.state["my_pos"] and tok not in self.conds:
                     self.conds[tok] = t.get("conditionId")   # remember for settling
@@ -1147,9 +1178,24 @@ class Copybot:
                         for t_ in trs:
                             if not t_.get("usdcSize"):
                                 t_["usdcSize"] = (t_.get("size") or 0) * (t_.get("price") or 0)
-                        if not any(t_.get("side") == "BUY"
-                                   and str(t_.get("asset")) == str(tok)
-                                   and self.filt.check(w, t_)[0] for t_ in trs):
+                        # cluster fills ≤120s apart — the same merge rule the
+                        # live path applies: a fill-split conviction entry is
+                        # ONE bet, and must count as a real miss
+                        buys = sorted((t_ for t_ in trs if t_.get("side") == "BUY"
+                                       and str(t_.get("asset")) == str(tok)),
+                                      key=lambda x: x.get("timestamp", 0) or 0)
+                        best, cur, last_ts = None, None, None
+                        for t_ in buys:
+                            ts_ = t_.get("timestamp", 0) or 0
+                            if cur is not None and ts_ - last_ts <= 120:
+                                cur = dict(t_, usdcSize=(cur.get("usdcSize") or 0)
+                                           + (t_.get("usdcSize") or 0))
+                            else:
+                                cur = dict(t_)
+                            last_ts = ts_
+                            if best is None or (cur.get("usdcSize") or 0) > (best.get("usdcSize") or 0):
+                                best = cur
+                        if best is None or not self.filt.check(w, best)[0]:
                             log(f"reconcile: {name} accumulated "
                                 f"{(p.get('title') or '?')[:38]} via sub-floor "
                                 f"clips (${iv:,.0f} total) — not copyable under "
