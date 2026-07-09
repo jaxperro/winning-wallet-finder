@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 44.73,
+ "stake": 44.71,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 1142.02,
- "cash": 1008.99,
- "deployed": 109.27,
+ "cash": 963.73,
+ "deployed": 154.0,
  "reserve": 0.0,
- "realized": 118.26,
+ "realized": 117.72,
  "adjustments": 0,
  "ledger_drift": -11.33,
- "open_count": 3,
- "fees_paid": 12.91,
+ "open_count": 4,
+ "fees_paid": 13.45,
  "fee_rate": 0.03,
  "lag": {
-  "n": 13,
-  "n24": 13,
-  "avg_s": 42.6,
-  "avg_slip_pct": -0.069,
+  "n": 14,
+  "n24": 14,
+  "avg_s": 39.8,
+  "avg_slip_pct": -0.0832,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Ethereal FDV above $500M one day after launch?",
+   "their_price": 0.82,
+   "my_price": 0.6,
+   "slippage_pct": -0.2683,
+   "shares": 74.55,
+   "cost": 44.73,
+   "fee": 0.54,
+   "opened": 1783604345,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "65585128992878043579543337949365468961659444652241007486927374035531121325136",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -346,5 +364,5 @@
   }
  ],
  "missed_pnl": 25.06,
- "updated": 1783604149
+ "updated": 1783604347
 }
