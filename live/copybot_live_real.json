@@ -51,6 +51,21 @@
  "bets": [],
  "missed": [
   {
+   "ts": 1783590223,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "41730590020783104130704685147378917247238626421058824794966180989145470736849",
+   "cond": "0xcce05b6cfa386c0ed4a1ea7dda9de70669dbe9a4e243fc9b50fd9f639334b511",
+   "title": "Dota 2: BetBoom Team vs Rune Eaters - Game 1 Winner",
+   "outcome": "Rune Eaters",
+   "price": 0.43,
+   "stake": 5.0,
+   "reason": "price moved 0.39\u21920.43",
+   "status": "won",
+   "pnl": 6.54,
+   "settled": 1783604560,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783604371,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
@@ -141,21 +156,6 @@
    "name": "gkmgkldfmg"
   },
   {
-   "ts": 1783590223,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "41730590020783104130704685147378917247238626421058824794966180989145470736849",
-   "cond": "0xcce05b6cfa386c0ed4a1ea7dda9de70669dbe9a4e243fc9b50fd9f639334b511",
-   "title": "Dota 2: BetBoom Team vs Rune Eaters - Game 1 Winner",
-   "outcome": "Rune Eaters",
-   "price": 0.43,
-   "stake": 5.0,
-   "reason": "price moved 0.39\u21920.43",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
-  },
-  {
    "ts": 1783589790,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "5935284746747952722647052327314425731758209998268351888638837864133688247636",
@@ -186,6 +186,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 3.01,
- "updated": 1783604372
+ "missed_pnl": 9.55,
+ "updated": 1783604562
 }

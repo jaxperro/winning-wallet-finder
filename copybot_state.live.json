@@ -3832,9 +3832,9 @@
       "price": 0.43,
       "stake": 5.0,
       "reason": "price moved 0.39\u21920.43",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 6.54,
+      "settled": 1783604560,
       "name": "gkmgkldfmg"
     },
     {
@@ -3909,7 +3909,8 @@
       "reason": "price moved 0.25\u21920.35",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "gkmgkldfmg"
     },
     {
       "ts": 1783604371,
@@ -3923,9 +3924,10 @@
       "reason": "bot offline (entered while down)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "0xbadaf319"
     }
   ],
-  "feed_sig": "a7ae64b091002463ee5b3d7e042ce50f",
-  "feed_pushed_at": 1783602292.024957
+  "feed_sig": "2e5145d2348e88b77da5144ab3a6b120",
+  "feed_pushed_at": 1783604499.4996905
 }
