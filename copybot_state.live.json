@@ -4557,7 +4557,8 @@
       "status": "lost",
       "pnl": -5.08,
       "settled": 1783631615,
-      "name": "gkmgkldfmg"
+      "name": "gkmgkldfmg",
+      "exit_checked": true
     },
     {
       "ts": 1783627015,
@@ -4608,6 +4609,6 @@
       "exit_price": 0.75
     }
   ],
-  "feed_sig": "46100573e4e564d8bc13708214b8f8c6",
-  "feed_pushed_at": 1783631491.6435163
+  "feed_sig": "7ddc658bb4a5c7e0af91f073a91a7922",
+  "feed_pushed_at": 1783631741.337691
 }
