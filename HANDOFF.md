@@ -1,4 +1,4 @@
-# Session handoff — 2026-07-10 (rev 5: LIVE PLACEMENT PROVEN — awaiting first organic fill)
+# Session handoff — 2026-07-10 (rev 5.1: live app on PUSH mode — awaiting first organic fill)
 
 Self-contained pickup for a fresh session (human or AI). Read
 [README.md](README.md) gotchas 1–16 (16 is the new-stack one), 
@@ -42,9 +42,29 @@ Every link from rev 4 closed, in order, all proven on the live box:
 When the first real copy fills, walk LIVE_ROLLOUT **Phase 4** and report
 every link: order id → fills ledger row → position visible in the Polymarket
 UI (the DEPOSIT WALLET `0x455e252e45Ee46d6C4cc1c8fAdD3899d68f245a1`, not the
-legacy proxy) → /live feed row → cash math → Polygonscan. Liveness until
-then = `flyctl logs -a wwf-copybot-live` + feed freshness (still NO watchdog
-on the live app).
+legacy proxy) → /live feed row → cash math → Polygonscan.
+
+## PUSH MODE (added 2026-07-10 05:41Z — user wanted push-speed detection)
+
+The live app now runs its OWN Alchemy address-activity webhook
+(`wh_98s36kdtcaf9t9xx` → https://wwf-copybot-live.fly.dev/alchemy, 7 Set E
+addresses, id also in gitignored config.json as `alchemy_webhook_id_live`)
+— fully separate from the paper app's webhook; the two books still share
+nothing. Detection ~3s vs the poll era's ~39s avg. Verified: boot banner
+`push mode · signature-verify ON · heartbeat 60s · backstop poll 300s`,
+public /health "alive", Fly health check passing, unsigned POST → 401.
+Remaining soft link: the first REAL Alchemy push accepted (a key mismatch
+would print `⚠ bad signature — rejected` on every Set E trade — watch for
+that; the 5-min backstop poll covers detection meanwhile).
+
+- `live/sync_webhook.py` now syncs BOTH webhooks on every deploy_bot.sh run.
+- **The live app has its watchdog now**: Fly /health check (self-heal) +
+  watchdog.yml probes both apps → Discord (notify). A DISARMED live app
+  idles WITHOUT HTTP — its watchdog page is expected, not a fault.
+- start.sh live role: ALCHEMY_SIGNING_KEY present → push, absent → 60s poll
+  fallback (so `flyctl secrets unset ALCHEMY_SIGNING_KEY` is the way back).
+- Cosmetic: on restarts the push server exits with a KeyboardInterrupt
+  traceback in the logs (SIGINT path) — harmless, not a crash.
 
 ## Known small offsets (do NOT fix while the bot runs — gotcha 15)
 
