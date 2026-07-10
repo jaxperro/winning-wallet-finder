@@ -70,6 +70,22 @@
  ],
  "missed": [
   {
+   "ts": 1783685385,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "99750659249903955439120052604225640907367048033793216838103937845588350738197",
+   "cond": "0x54d63713c8802102f64ee5134c567576c6bb43b458e218c8475f67a20f466b06",
+   "title": "Dota 2: Aurora vs PlayTime - Game 1 Winner",
+   "outcome": "PlayTime",
+   "price": 0.5,
+   "stake": 5.0,
+   "reason": "order rejected: exception: not enough balance / allowance: the balance is no",
+   "status": "sold",
+   "pnl": -0.21,
+   "settled": 1783685985,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.4943
+  },
+  {
    "ts": 1783677860,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "100198471262079386993761824025743140222494027672175410847273506523400747511360",
@@ -84,21 +100,6 @@
    "settled": 1783685621,
    "name": "gkmgkldfmg",
    "exit_checked": true
-  },
-  {
-   "ts": 1783685385,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "99750659249903955439120052604225640907367048033793216838103937845588350738197",
-   "cond": "0x54d63713c8802102f64ee5134c567576c6bb43b458e218c8475f67a20f466b06",
-   "title": "Dota 2: Aurora vs PlayTime - Game 1 Winner",
-   "outcome": "PlayTime",
-   "price": 0.5,
-   "stake": 5.0,
-   "reason": "order rejected: exception: not enough balance / allowance: the balance is no",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1783684725,
@@ -705,6 +706,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 68.95,
- "updated": 1783685672
+ "missed_pnl": 68.74,
+ "updated": 1783685986
 }
