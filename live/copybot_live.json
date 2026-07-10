@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2120.61,
- "cash": 1709.16,
- "deployed": 411.45,
+ "cash": 1658.5,
+ "deployed": 461.98,
  "reserve": 0.0,
- "realized": 1120.58,
+ "realized": 1120.44,
  "adjustments": 0.03,
  "ledger_drift": -0.0,
- "open_count": 7,
- "fees_paid": 57.11,
+ "open_count": 8,
+ "fees_paid": 57.25,
  "fee_rate": 0.03,
  "lag": {
-  "n": 38,
-  "n24": 34,
-  "avg_s": 34.1,
-  "avg_slip_pct": -0.0719,
+  "n": 39,
+  "n24": 35,
+  "avg_s": 33.7,
+  "avg_slip_pct": -0.071,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "72380260523779452108747496691590035418744958761813904753644512394906005337193",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will LAB reach $24 before 2027?",
+   "their_price": 0.95,
+   "my_price": 0.91,
+   "slippage_pct": -0.0421,
+   "shares": 55.52,
+   "cost": 50.53,
+   "fee": 0.14,
+   "opened": 1783665151,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "95966691396738472275344791788162735368640282726919372432646833886066957862309",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1049,5 +1067,5 @@
   }
  ],
  "missed_pnl": 0.87,
- "updated": 1783661759
+ "updated": 1783665169
 }
