@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 88.08,
+ "stake": 87.96,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2203.22,
- "cash": 1530.62,
- "deployed": 671.3,
+ "cash": 1615.72,
+ "deployed": 583.17,
  "reserve": 0.0,
- "realized": 1201.89,
+ "realized": 1198.87,
  "adjustments": 0.03,
  "ledger_drift": 0.0,
- "open_count": 11,
- "fees_paid": 63.11,
+ "open_count": 10,
+ "fees_paid": 64.41,
  "fee_rate": 0.03,
  "lag": {
   "n": 44,
@@ -62,10 +62,12 @@
    "cost": 88.13,
    "fee": 1.3,
    "opened": 1783685383,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "closed",
+   "exit_price": 0.4925,
+   "pnl": -4.32,
+   "settled": 1783685696,
+   "sold_shares": 172.8,
+   "sold_proceeds": 85.1
   },
   {
    "token": "93467767591188896649627269967147548436732758009195510676247808663528278284319",
@@ -838,6 +840,22 @@
  ],
  "missed": [
   {
+   "ts": 1783685101,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "99750659249903955439120052604225640907367048033793216838103937845588350738197",
+   "cond": "0x54d63713c8802102f64ee5134c567576c6bb43b458e218c8475f67a20f466b06",
+   "title": "Dota 2: Aurora vs PlayTime - Game 1 Winner",
+   "outcome": "PlayTime",
+   "price": 0.37,
+   "stake": 88.13,
+   "reason": "price moved 0.33\u21920.37",
+   "status": "sold",
+   "pnl": 19.05,
+   "settled": 1783685797,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.4644
+  },
+  {
    "ts": 1783677861,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "100198471262079386993761824025743140222494027672175410847273506523400747511360",
@@ -850,22 +868,8 @@
    "status": "lost",
    "pnl": -86.68,
    "settled": 1783685621,
-   "name": "gkmgkldfmg"
-  },
-  {
-   "ts": 1783685101,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "99750659249903955439120052604225640907367048033793216838103937845588350738197",
-   "cond": "0x54d63713c8802102f64ee5134c567576c6bb43b458e218c8475f67a20f466b06",
-   "title": "Dota 2: Aurora vs PlayTime - Game 1 Winner",
-   "outcome": "PlayTime",
-   "price": 0.37,
-   "stake": 88.13,
-   "reason": "price moved 0.33\u21920.37",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "name": "gkmgkldfmg",
+   "exit_checked": true
   },
   {
    "ts": 1783681135,
@@ -1238,6 +1242,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": -101.44,
- "updated": 1783685624
+ "missed_pnl": -82.39,
+ "updated": 1783685798
 }
