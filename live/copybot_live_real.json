@@ -186,6 +186,21 @@
   {
    "ts": 1783712474,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "82295795004428430940433303735647458980029294814595402162619417282565717266755",
+   "cond": "0xd0a6bb658382e926ce702e8abb092f34ca7701ab6d383fc1f15e356da8c80ff2",
+   "title": "Exact Score: Spain 3 - 0 Belgium?",
+   "outcome": "No",
+   "price": 0.9375,
+   "stake": 4.5,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 0.29,
+   "settled": 1783718322,
+   "name": "LSB1"
+  },
+  {
+   "ts": 1783712474,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "51142349456107958414584954407545686562582425523546369924249014347922759701733",
    "cond": "0x236ca6f052bc08a309294a01031b8a13fed4e2b7a326b54c05c4a852d65bb864",
    "title": "Spain vs. Belgium: Both Teams to Score in First Half",
@@ -230,21 +245,6 @@
    "settled": 1783715630,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1783712474,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "82295795004428430940433303735647458980029294814595402162619417282565717266755",
-   "cond": "0xd0a6bb658382e926ce702e8abb092f34ca7701ab6d383fc1f15e356da8c80ff2",
-   "title": "Exact Score: Spain 3 - 0 Belgium?",
-   "outcome": "No",
-   "price": 0.9375,
-   "stake": 4.5,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
   },
   {
    "ts": 1783710676,
@@ -1139,6 +1139,6 @@
    "exit_price": 0.4939
   }
  ],
- "missed_pnl": 101.01,
- "updated": 1783718260
+ "missed_pnl": 101.3,
+ "updated": 1783718322
 }
