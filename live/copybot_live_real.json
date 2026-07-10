@@ -184,6 +184,21 @@
  ],
  "missed": [
   {
+   "ts": 1783699024,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "67230363321893543312889997321885915798590561925238141510437860465156386610448",
+   "cond": "0xf6d8ff2a90303b8906788c005ecfc5881a435714e6acdc2e1164fa5626ce71e4",
+   "title": "Will the DFM Real Estate Index hit 18,000 in 2026?",
+   "outcome": "No",
+   "price": 0.88,
+   "stake": 4.05,
+   "reason": "capped to $-10.00 < min order $1.00 (caps)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783698745,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "20753444326597808403433519410324896770837596585358560000183009522246701254242",
@@ -982,5 +997,5 @@
   }
  ],
  "missed_pnl": 91.75,
- "updated": 1783698745
+ "updated": 1783699024
 }
