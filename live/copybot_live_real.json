@@ -184,6 +184,21 @@
  ],
  "missed": [
   {
+   "ts": 1783709345,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "64116761477742027701109652941632411292105231683011506366532020565363935650673",
+   "cond": "0x9d4a016f4a18ff8f3b28a0c0adf2a03254033f6d022c88e13495738e2178c3d9",
+   "title": "Hans Vanaken: 3+ shots",
+   "outcome": "No",
+   "price": 0.7844,
+   "stake": 4.5,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 1.21,
+   "settled": 1783719457,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783712474,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "82295795004428430940433303735647458980029294814595402162619417282565717266755",
@@ -310,21 +325,6 @@
    "settled": 1783709347,
    "name": "gkmgkldfmg",
    "exit_price": 0.2553
-  },
-  {
-   "ts": 1783709345,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "64116761477742027701109652941632411292105231683011506366532020565363935650673",
-   "cond": "0x9d4a016f4a18ff8f3b28a0c0adf2a03254033f6d022c88e13495738e2178c3d9",
-   "title": "Hans Vanaken: 3+ shots",
-   "outcome": "No",
-   "price": 0.7844,
-   "stake": 4.5,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1783704929,
@@ -1140,6 +1140,6 @@
    "exit_price": 0.4939
   }
  ],
- "missed_pnl": 101.3,
- "updated": 1783718573
+ "missed_pnl": 102.51,
+ "updated": 1783719457
 }
