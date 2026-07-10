@@ -59,6 +59,23 @@ def dump(label, obj):
           if d else repr(obj)[:800])
 
 with client:
+    print("gasless ready:", getattr(client, "is_gasless_ready", "?"))
+    print("running setup_trading_approvals()…")
+    try:
+        h = client.setup_trading_approvals()
+        if h is not None and hasattr(h, "wait"):
+            out = h.wait()
+            print("  approvals outcome:", str(out)[:200])
+        else:
+            print("  approvals result:", str(h)[:200])
+    except Exception as e:
+        print("  setup_trading_approvals:", type(e).__name__, str(e)[:250])
+    try:
+        b = client.get_balance_allowance(asset_type="COLLATERAL")
+        print("  exchange-view balance:", str(b)[:300])
+    except Exception as e:
+        print("  balance check:", type(e).__name__, str(e)[:150])
+
     print("\nBUY $5.00 FAK…")
     try:
         r = client.place_market_order(token_id=tok, side="BUY", amount=5, order_type="FAK")
