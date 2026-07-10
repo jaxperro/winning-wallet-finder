@@ -184,6 +184,21 @@
  ],
  "missed": [
   {
+   "ts": 1783705652,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "100310596270945062702362561514133867597710410244661432843863262063183415273493",
+   "cond": "0xcb07d894f95ef028218fd01e2235c666e632ea3c29fe0eabcef71400f637a5c7",
+   "title": "Dota 2: Inner Circle vs Virtus.pro - Game 1 Winner",
+   "outcome": "Inner Circle",
+   "price": 0.23,
+   "stake": 4.5,
+   "reason": "capped to $-10.00 < min order $1.00 (caps)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783704929,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "41527735652152287965662705198504489542457379550490679965396371339149288130273",
@@ -1061,5 +1076,5 @@
   }
  ],
  "missed_pnl": 87.44,
- "updated": 1783704929
+ "updated": 1783705652
 }
