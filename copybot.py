@@ -239,76 +239,86 @@ class LedgerPaperExecutor(PaperExecutor):
         return r
 
 
-class LedgerLiveExecutor(LiveExecutor):
-    """Live executor with two production fixes over the base GTC executor:
+class LedgerLiveExecutor:
+    """Live executor on the unified SDK (polymarket-client). py-clob-client was
+    ARCHIVED May 2026 — the CLOB rejects its order format globally ('invalid
+    order version'), which is why this no longer extends LiveExecutor.
 
-      * **Marketable Fill-Or-Kill orders** (gap 3) — a copy either fills
-        immediately at a crossing price or is cleanly killed, never left resting
-        on the book half-filled. Order type is configurable (live.order_type:
-        FOK all-or-nothing, or FAK fill-what-you-can-then-kill).
-      * **Fill recording** — same ledger as paper, so cash/lag/slippage tracking
-        works live too. filled_shares comes from the match response when present.
+      * **Marketable FAK/FOK** via place_market_order — the SDK owns tick
+        conformity, neg-risk exchange routing, and fee handling internally
+        (the hand-rolled tick rounding here crashed the bot twice on
+        2026-07-09; all of that machinery is gone).
+      * **Protected prices** — max_price (BUY) / min_price (SELL) bound the
+        fill at the engine's quoted price ± live.max_slippage_pct (default
+        5%), replacing the old round-to-tick limit. Clamped to [0.01, 0.99],
+        valid on both 1c and 0.1c books, so the SDK's band check can't raise.
+      * **Fill recording** — same ledger as paper. AcceptedOrder reports the
+        matched amounts: BUY gives collateral (making) for shares (taking),
+        SELL the reverse; avg fill price falls out of the ratio.
+      * **Never raises into the trade loop** — any exception is an honest
+        ok:False (the engine records a missed row).
     """
+    live = True
 
     def __init__(self, cfg):
-        super().__init__(cfg)
+        try:
+            from polymarket import SecureClient
+        except ImportError:
+            sys.exit("Live mode needs the unified SDK: "
+                     "pip install --pre polymarket-client")
+        live = cfg.get("live", {})
+        if not live.get("private_key"):
+            sys.exit("Live mode needs live.private_key in the config.")
+        # wallet auto-resolves to the signer's Deposit Wallet; no api_key at
+        # runtime — trading approvals already exist (host/order_probe_v2.py).
+        # create() is ready to use as-is (__enter__ is a no-op returning self).
+        self.client = SecureClient.create(private_key=live["private_key"])
         self.fills = []
-        name = cfg.get("live", {}).get("order_type", "FOK").upper()
-        self._otype = getattr(self._OrderType, name, self._OrderType.FOK)
-
-    def _tick(self, token_id):
-        """Market tick size, cached — a 3dp price on a 1c-tick book raises
-        PolyApiException, which (uncaught) crashed the bot at 21:21 and 21:53
-        on 2026-07-09: the first two qualifying live signals. Fallback 0.01 is
-        valid on every book (a 1c multiple is also a 0.1c multiple)."""
-        cache = getattr(self, "_ticks", None)
-        if cache is None:
-            cache = self._ticks = {}
-        if token_id not in cache:
-            try:
-                cache[token_id] = float(self.client.get_tick_size(token_id))
-            except Exception:
-                cache[token_id] = 0.01
-        return cache[token_id]
+        ot = str(live.get("order_type", "FAK")).upper()
+        self._otype = ot if ot in ("FAK", "FOK") else "FAK"
+        self._slip = float(live.get("max_slippage_pct", 0.05))
 
     def _order(self, token_id, shares, price, side):
         import math
-        tick = self._tick(token_id)
-        # buys round UP to the tick (stay marketable/crossing), sells DOWN;
-        # size floors to 2dp so cost never exceeds the gated stake
-        steps = price / tick
-        px = round((math.ceil(steps) if side == self._BUY else math.floor(steps)) * tick, 4)
-        px = min(max(px, tick), 1 - tick)
-        sz = math.floor(shares * 100) / 100.0
+        sz = math.floor(shares * 100) / 100.0   # cost never exceeds the gated stake
         try:
-            args = self._OrderArgs(price=px, size=sz, side=side, token_id=token_id)
-            signed = self.client.create_order(args)
-            resp = self.client.post_order(signed, self._otype)  # marketable FOK/FAK
+            if side == "BUY":
+                r = self.client.place_market_order(
+                    token_id=token_id, side="BUY",
+                    amount=round(sz * price, 2),
+                    max_price=min(round(price * (1 + self._slip), 2), 0.99),
+                    order_type=self._otype)
+            else:
+                r = self.client.place_market_order(
+                    token_id=token_id, side="SELL", shares=sz,
+                    min_price=max(round(price * (1 - self._slip), 2), 0.01),
+                    order_type=self._otype)
         except Exception as e:                # NEVER raise into the trade loop
-            return {"ok": False, "filled_shares": 0.0, "price": px,
+            return {"ok": False, "filled_shares": 0.0, "price": price,
                     "resp": f"exception: {e}", "paper": False}
-        price = px
-        shares = sz
-        ok = bool(resp and resp.get("success", True))
-        filled = shares if ok else 0.0
-        for k in ("sizeMatched", "size_matched", "makingAmount"):   # use real fill if reported
-            if resp and resp.get(k):
-                try:
-                    filled = float(resp[k]); break
-                except (TypeError, ValueError):
-                    pass
-        return {"ok": ok and filled > 0, "filled_shares": filled, "price": price,
-                "resp": resp, "paper": False}
+        if not getattr(r, "ok", False):       # RejectedOrder: typed code + message
+            return {"ok": False, "filled_shares": 0.0, "price": price,
+                    "resp": f"{getattr(r, 'code', '?')}: {getattr(r, 'message', r)}",
+                    "paper": False}
+        making = float(r.making_amount or 0)  # what we gave (matched)
+        taking = float(r.taking_amount or 0)  # what we got (matched)
+        filled, usd = (taking, making) if side == "BUY" else (making, taking)
+        return {"ok": filled > 0, "filled_shares": filled,
+                "price": usd / filled if filled else price,
+                "resp": {"order_id": r.order_id, "status": r.status,
+                         "making": making, "taking": taking,
+                         "trades": len(r.trade_ids)},
+                "paper": False}
 
     def buy(self, token_id, shares, price, meta):
-        r = self._order(token_id, shares, price, self._BUY)
+        r = self._order(token_id, shares, price, "BUY")
         if r["ok"]:
             self.fills.append({"side": "BUY", "token": token_id,
                                "shares": r["filled_shares"], "price": r["price"]})
         return r
 
     def sell(self, token_id, shares, price, meta):
-        r = self._order(token_id, shares, price, self._SELL)
+        r = self._order(token_id, shares, price, "SELL")
         if r["ok"]:
             self.fills.append({"side": "SELL", "token": token_id,
                                "shares": r["filled_shares"], "price": r["price"]})
@@ -960,10 +970,12 @@ class Copybot:
         ts, bal = self._chain_bal
         if now - ts > 60:
             try:
-                from py_clob_client.clob_types import BalanceAllowanceParams, AssetType
+                # unified SDK: the deposit wallet's pUSD as the exchange counts
+                # it (LIVE_ROLLOUT 1.4 anchor — was the emptied legacy proxy
+                # via py-clob-client, which alarmed CASH≠CHAIN +24.73)
                 r = self.engine.ex.client.get_balance_allowance(
-                    BalanceAllowanceParams(asset_type=AssetType.COLLATERAL))
-                bal = int(r.get("balance", 0)) / 1e6
+                    asset_type="COLLATERAL")
+                bal = r.balance / 1e6
                 self._chain_bal = (now, bal)
             except Exception:
                 return None
