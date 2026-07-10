@@ -389,6 +389,7 @@
     "0x8400dca2eeffefe955097faf4f8753d7098b108bf5273d41094644d2b4ae793b",
     "0x97fa655b5a11261e9b86ab9043bc5fe599f86b0dd853de341647193500b76e6d",
     "0x7ae8badf5f0fb0d81ae93d66455cf09eada8e3ae6f9dff1020a7335b9ac30d61",
+    "0xb8b05568d7e275180b41aabbd1acf5ccf3abf39c1dae668ff927c9ad6666146d",
     "0xe3fa4855832140efb886297b1a50ab283aa3c17dbb436caa3fe71514dff4f7a3",
     "0x1ca858e355e5b2d4f336b9ddcda21726e869833aed7cc9e04cdcb801f1824548",
     "0x1c4e879b372b5793204edfdd6ec5f4f840cd37e4ed681172bb6db039cc566d2d",
@@ -1355,6 +1356,7 @@
     "0x2c79c392d6dc80d834df1663e16ed9cd7a28b161292c3f61a1ea47409ccc5427",
     "0xd04a9b01f3d05bbe53372dbe07e2a60199f8ecbe25c757bf6ff98e7fa26d47d5",
     "0x638fce8f45ab3d75d232f6bb311ed249a9bcc8f6a68feb26f60304c173a68eeb",
+    "0xa76b2e872a7477aa76632950ef896df9abf4b2cd57cdf67165c5d8a686bbd720",
     "0x8140874fdffca8dcf7616a08171bf4bf8a3cc331f781e9de6da02ce74e6f72a4",
     "0xb18c8e86a28def07599fda1f49e2c791a5d77b5be7ac3e6d5cbca64104fa0d63",
     "0xb64e54f55a58cb603f3a30dfe2846b841e6a9f35386fcb811d6ec18ddcbb1f82",
@@ -5482,8 +5484,23 @@
       "settled": 1783690991,
       "name": "gkmgkldfmg",
       "exit_price": 0.5648
+    },
+    {
+      "ts": 1783691341,
+      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+      "token": "84864321844564005123638956205037810292837868807558456388220877376462415276538",
+      "cond": "0x8545a030f00ef7748aa1c00481a9f01ec4b73550aef97b564a3f5a07b31f8f9d",
+      "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
+      "outcome": "PlayTime",
+      "price": 0.1,
+      "stake": 5.0,
+      "reason": "order rejected: exception: not enough balance / allowance: the balance is no",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "gkmgkldfmg"
     }
   ],
-  "feed_sig": "137ceec21d8e9283e3e9014ae5c196b6",
-  "feed_pushed_at": 1783690927.0220246
+  "feed_sig": "16c2e1cf15d5d462f3b8f0ea29ebb775",
+  "feed_pushed_at": 1783691303.5489557
 }
