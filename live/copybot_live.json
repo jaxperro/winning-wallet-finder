@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 89.03,
+ "stake": 85.63,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2225.77,
  "cash": 1689.91,
- "deployed": 535.86,
+ "deployed": 450.72,
  "reserve": 0.0,
- "realized": 1225.74,
+ "realized": 1140.6,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 9,
+ "open_count": 8,
  "fees_paid": 69.58,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,24 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "1161663761026248928741317236361093152095776065309269380062540556077381245572",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "G2 Esports",
+   "title": "LoL: G2 Esports vs LYON - Game 2 Winner",
+   "their_price": 0.64,
+   "my_price": 0.63,
+   "slippage_pct": -0.0156,
+   "shares": 135.14,
+   "cost": 85.14,
+   "fee": 0.95,
+   "opened": 1783674604,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -86.09,
+   "settled": 1783689186
+  },
   {
    "token": "64240896700312109784630886706605953876703771364083875350159352793781549030993",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -160,24 +178,6 @@
    "cost": 85.1,
    "fee": 1.58,
    "opened": 1783678190,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
-   "token": "1161663761026248928741317236361093152095776065309269380062540556077381245572",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "G2 Esports",
-   "title": "LoL: G2 Esports vs LYON - Game 2 Winner",
-   "their_price": 0.64,
-   "my_price": 0.63,
-   "slippage_pct": -0.0156,
-   "shares": 135.14,
-   "cost": 85.14,
-   "fee": 0.95,
-   "opened": 1783674604,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -1279,5 +1279,5 @@
   }
  ],
  "missed_pnl": -69.05,
- "updated": 1783688626
+ "updated": 1783689187
 }
