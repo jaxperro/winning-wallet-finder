@@ -70,46 +70,9 @@ with client:
             print("  approvals result:", str(h)[:200])
     except Exception as e:
         print("  setup_trading_approvals:", type(e).__name__, str(e)[:250])
-    # the SDK approvals list covers the COLLATERAL token only — but funds
-    # arriving as raw native USDC get wrapped by the exchange AT MATCH, which
-    # needs the maker's USDC approved to the collateral contract. Approve it.
-    USDC = "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
-    COLLAT = "0xC011a7E12a19f7B1f670d46F03B03f3342E82DFB"
-    try:
-        h = client.approve_erc20(token_address=USDC, spender_address=COLLAT, amount="max")
-        if h is not None and hasattr(h, "wait"):
-            print("  USDC→collateral approval:", str(h.wait())[:150])
-        else:
-            print("  USDC→collateral approval:", str(h)[:150])
-    except Exception as e:
-        print("  approve_erc20:", type(e).__name__, str(e)[:250])
-    # PRE-WRAP is mandatory: the exchange's balance view counts the
-    # COLLATERAL token only. The public wrapper periphery (0x93070a…, holds
-    # the wrapper role; used by the UI's 4337 flows) exposes
-    # wrap(asset, to, amount). Approve + wrap the full USDC balance in one
-    # gasless transaction from the deposit wallet.
-    from polymarket.calls import TransactionCall, erc20_approval_call
-    from web3 import Web3
-    from eth_abi import encode as abi_encode
-    WRAPPER = "0x93070a847efef7f70739046a929d47a521f5b8ee"
-    dw = str(client.wallet)
-    rpc_body = json.dumps({"id":1,"jsonrpc":"2.0","method":"eth_call","params":[
-        {"to": USDC, "data": "0x70a08231" + dw[2:].lower().rjust(64, "0")}, "latest"]}).encode()
-    rq = urllib.request.Request(os.environ["ALCHEMY_RPC_URL"].strip(), data=rpc_body,
-                                headers={"content-type": "application/json"})
-    units = int(json.load(urllib.request.urlopen(rq, timeout=20, context=_SSL))["result"], 16)
-    print(f"  wrapping {units/1e6:.2f} USDC → collateral…")
-    if units > 0:
-        appr = erc20_approval_call(token_address=USDC, spender=WRAPPER, amount=units)
-        sel = Web3.keccak(text="wrap(address,address,uint256)")[:4]
-        data = "0x" + sel.hex().replace("0x", "") + abi_encode(
-            ["address", "address", "uint256"], [USDC, dw, units]).hex()
-        wrap_call = TransactionCall(to=WRAPPER, data=data)
-        try:
-            h = client.execute_transaction(calls=[appr, wrap_call], metadata="wrap USDC to collateral")
-            print("  wrap outcome:", str(h.wait())[:200])
-        except Exception as e:
-            print("  wrap failed:", type(e).__name__, str(e)[:250])
+    # bankroll is already pUSD: the bridge wraps on deposit (2026-07-10 —
+    # host/wrap_via_bridge.py converted the native-USDC bankroll; the old
+    # manual wrap here died on the onramp's paused(nativeUSDC) gate)
     try:
         b = client.get_balance_allowance(asset_type="COLLATERAL")
         print("  exchange-view balance:", str(b)[:220])
