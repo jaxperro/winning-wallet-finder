@@ -51,6 +51,21 @@
  "bets": [],
  "missed": [
   {
+   "ts": 1783650985,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "112398855248126389642334724080634566219399886008841203075173521868162852635909",
+   "cond": "0x73dd54214430d1d67ddf59ad22fdf62e00e71e273b229dc0040da504e5281b6f",
+   "title": "IAEA visits Isfahan, Fordow, or Natanz nuclear site by October 31?",
+   "outcome": "No",
+   "price": 0.5739,
+   "stake": 5.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783621873,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "22725380484456966301228939445880731453285484401950854931468064580525084575682",
@@ -453,5 +468,5 @@
   }
  ],
  "missed_pnl": 73.39,
- "updated": 1783634336
+ "updated": 1783650987
 }
