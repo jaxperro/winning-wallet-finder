@@ -70,6 +70,22 @@
  ],
  "missed": [
   {
+   "ts": 1783688083,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "30046078570478042875484019498188445069739353707631130122422440814625914406231",
+   "cond": "0x7664d545626cce2926008f88cf77c53e705c817404ada24e31d638e4031c8645",
+   "title": "Dota 2: L1ga Team vs Team Liquid - Game 2 Winner",
+   "outcome": "L1ga Team",
+   "price": 0.18,
+   "stake": 5.0,
+   "reason": "order rejected: {'order_id': '0x052e9f84c916357a2313e54b7edd7267df53948fd0b7",
+   "status": "sold",
+   "pnl": -0.22,
+   "settled": 1783688180,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.1809
+  },
+  {
    "ts": 1783686496,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "100215840906282856775472468745383263897420544823848854736001829116491214481586",
@@ -738,6 +754,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 74.31,
- "updated": 1783686619
+ "missed_pnl": 74.09,
+ "updated": 1783688181
 }
