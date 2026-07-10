@@ -1,4 +1,22 @@
-# Session handoff — 2026-07-10 (rev 6: delayed-fill incident fixed — DISARMED, re-arm is the user's call)
+# Session handoff — 2026-07-10 (rev 7: re-armed on the paper-parity retune)
+
+## Retune (2026-07-10 ~21:20Z, USER-directed — supersedes the rule-0.6 caps)
+
+- **Hard caps RETIRED** (user decision): risk block mirrors the paper
+  sentinels. Sizing = paper-parity **4% of equity** (class_pct 0.04/0.12),
+  floored at the venue's $1 min order. Bankroll REBASED to the real
+  **$22.28** equity (heartbeat reads `free $17/$22`); spend tracker reset.
+- **Price guard is ABSOLUTE +0.05** (both books, identical rules):
+  0.14→0.15 follows, 0.14→0.20 skips. Key renamed `price_guard_abs`.
+- **Pending-order registry**: in-play `delayed` holds are handed to
+  `state.pending_orders` (full copy context) instead of a 20s cancel; the
+  heartbeat resolver adopts fills whenever they land or cancels at TTL 600s
+  → honest miss. Stub-tested (adopt + expire). Watch the first
+  `PENDING FILLED` line in production.
+- Both bots restarted on the new rules (paper +$1,378, 60 copies at reboot).
+- GOTCHA REMINDER proven again today: a boot can clone a stale GitHub
+  replica — the 17:18 boot ran pre-push config for 4h (harmless here);
+  ALWAYS verify the first heartbeat shows the numbers you shipped.
 
 ## INCIDENT 2026-07-10 (resolved in code; bot left DISARMED)
 
