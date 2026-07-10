@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 84.82,
+ "stake": 85.14,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 2120.61,
- "cash": 1658.5,
- "deployed": 461.98,
+ "hwm": 2128.52,
+ "cash": 1700.83,
+ "deployed": 427.69,
  "reserve": 0.0,
- "realized": 1120.44,
+ "realized": 1128.49,
  "adjustments": 0.03,
- "ledger_drift": -0.0,
- "open_count": 8,
- "fees_paid": 57.25,
+ "ledger_drift": 0.0,
+ "open_count": 7,
+ "fees_paid": 57.28,
  "fee_rate": 0.03,
  "lag": {
   "n": 39,
@@ -50,6 +50,26 @@
  },
  "bets": [
   {
+   "token": "95966691396738472275344791788162735368640282726919372432646833886066957862309",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Lambda's valuation hit (LOW) $5B by December 31?",
+   "their_price": 0.77,
+   "my_price": 0.79,
+   "slippage_pct": 0.026,
+   "shares": 75.95,
+   "cost": 60.0,
+   "fee": 0.38,
+   "opened": 1783661096,
+   "status": "closed",
+   "exit_price": 0.9683,
+   "pnl": 13.16,
+   "settled": 1783671366,
+   "sold_shares": 75.95,
+   "sold_proceeds": 73.54
+  },
+  {
    "token": "72380260523779452108747496691590035418744958761813904753644512394906005337193",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -66,26 +86,6 @@
    "exit_price": null,
    "pnl": null,
    "settled": null
-  },
-  {
-   "token": "95966691396738472275344791788162735368640282726919372432646833886066957862309",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Lambda's valuation hit (LOW) $5B by December 31?",
-   "their_price": 0.77,
-   "my_price": 0.79,
-   "slippage_pct": 0.026,
-   "shares": 75.95,
-   "cost": 60.0,
-   "fee": 0.38,
-   "opened": 1783661096,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 32.55,
-   "sold_proceeds": 31.21
   },
   {
    "token": "244048590847349569142622450288686721247802348946192951002087804863968899",
@@ -744,6 +744,22 @@
  ],
  "missed": [
   {
+   "ts": 1783671341,
+   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
+   "token": "18269015422382136019818153603324620968900134618004278553305656985016507685122",
+   "cond": "0xdd0bb6a9b4914cb6865166a190b2b9965442ac9fcfe3907b98cf140214bbe96c",
+   "title": "Bitcoin Up or Down - July 10, 4:10AM-4:15AM ET",
+   "outcome": "Up",
+   "price": 0.99,
+   "stake": 85.02,
+   "reason": "price moved 0.55\u21920.99",
+   "status": "sold",
+   "pnl": -38.02,
+   "settled": 1783671386,
+   "name": "imwalkinghere",
+   "exit_price": 0.555
+  },
+  {
    "ts": 1783652092,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "24696476679489653392896522921778886207347569484211127510964843324817442529198",
@@ -1066,6 +1082,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 0.87,
- "updated": 1783665169
+ "missed_pnl": -37.15,
+ "updated": 1783671387
 }
