@@ -6340,8 +6340,8 @@
     }
   },
   "hwm": 2377.9711388210912,
-  "feed_sig": "0050cb3108e82e9e5089b64f912627fa",
-  "feed_pushed_at": 1783718290.704472,
+  "feed_sig": "89bfd3245235fee4b5b53c2b30def6fb",
+  "feed_pushed_at": 1783718413.9402862,
   "missed": [
     {
       "ts": 1783590977,
