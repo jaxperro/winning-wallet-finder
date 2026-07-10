@@ -256,11 +256,39 @@ class LedgerLiveExecutor(LiveExecutor):
         name = cfg.get("live", {}).get("order_type", "FOK").upper()
         self._otype = getattr(self._OrderType, name, self._OrderType.FOK)
 
+    def _tick(self, token_id):
+        """Market tick size, cached — a 3dp price on a 1c-tick book raises
+        PolyApiException, which (uncaught) crashed the bot at 21:21 and 21:53
+        on 2026-07-09: the first two qualifying live signals. Fallback 0.01 is
+        valid on every book (a 1c multiple is also a 0.1c multiple)."""
+        cache = getattr(self, "_ticks", None)
+        if cache is None:
+            cache = self._ticks = {}
+        if token_id not in cache:
+            try:
+                cache[token_id] = float(self.client.get_tick_size(token_id))
+            except Exception:
+                cache[token_id] = 0.01
+        return cache[token_id]
+
     def _order(self, token_id, shares, price, side):
-        args = self._OrderArgs(price=round(price, 3), size=round(shares, 2),
-                               side=side, token_id=token_id)
-        signed = self.client.create_order(args)
-        resp = self.client.post_order(signed, self._otype)     # marketable FOK/FAK
+        import math
+        tick = self._tick(token_id)
+        # buys round UP to the tick (stay marketable/crossing), sells DOWN;
+        # size floors to 2dp so cost never exceeds the gated stake
+        steps = price / tick
+        px = round((math.ceil(steps) if side == self._BUY else math.floor(steps)) * tick, 4)
+        px = min(max(px, tick), 1 - tick)
+        sz = math.floor(shares * 100) / 100.0
+        try:
+            args = self._OrderArgs(price=px, size=sz, side=side, token_id=token_id)
+            signed = self.client.create_order(args)
+            resp = self.client.post_order(signed, self._otype)  # marketable FOK/FAK
+        except Exception as e:                # NEVER raise into the trade loop
+            return {"ok": False, "filled_shares": 0.0, "price": px,
+                    "resp": f"exception: {e}", "paper": False}
+        price = px
+        shares = sz
         ok = bool(resp and resp.get("success", True))
         filled = shares if ok else 0.0
         for k in ("sizeMatched", "size_matched", "makingAmount"):   # use real fill if reported
@@ -899,15 +927,26 @@ class Copybot:
         """Mark every currently-visible trade as already seen, so a poll run only
         copies trades that happen AFTER startup (the forward equivalent of the
         dashboard's June-1 START — no retro-copying of history)."""
-        n = 0
+        n = fresh = 0
+        cutoff = time.time() - RECENT_TRADE_WINDOW_S
         for wallet in self.cfg.get("watchlist", []):
             for t in recent_trades(wallet):
                 tx = t.get("transactionHash")
-                if tx and tx not in self.engine.seen:
-                    self.engine.seen.add(tx)
-                    n += 1
+                if not tx or tx in self.engine.seen:
+                    continue
+                # trades YOUNGER than the stale window stay unseen: the first
+                # post-boot poll copies them like a late webhook would. Before
+                # 2026-07-09 a crash-restart baselined away fresh qualifying
+                # trades — two live-executor crashes ate Kruto's 21:21 handicap
+                # and badaf's 21:53 Epic entries exactly this way.
+                if (t.get("timestamp") or 0) >= cutoff:
+                    fresh += 1
+                    continue
+                self.engine.seen.add(tx)
+                n += 1
         self.engine.persist()
-        log(f"baseline: {n} existing trades marked seen — copying only NEW trades from now")
+        log(f"baseline: {n} historical trades marked seen · {fresh} fresh trades "
+            f"left copyable — only NEW trades from now")
 
     _chain_bal = (0.0, None)     # (checked_at, usdc) — cached; poll ≤1/min
 
@@ -1684,7 +1723,10 @@ def main():
                     bot.reconcile_exits()
                     bot.reconcile_entries()
                 for w in cfg.get("watchlist", []):
-                    bot.on_wallet_activity(w)
+                    try:
+                        bot.on_wallet_activity(w)
+                    except Exception as e:      # parity with the push handler's
+                        log(f"poll error {w[:10]}…: {e}")   # guard — never die
                 cycle += 1
                 bot.summary(cycle)
                 bot.write_feed()                      # refresh the dashboard feed each cycle
