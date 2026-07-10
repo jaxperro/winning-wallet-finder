@@ -193,10 +193,11 @@
    "price": 0.24,
    "stake": 4.5,
    "reason": "capped to $-10.00 < min order $1.00 (caps)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 0.66,
+   "settled": 1783709974,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.2867
   },
   {
    "ts": 1783708521,
@@ -1124,6 +1125,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 95.34,
- "updated": 1783709709
+ "missed_pnl": 96.0,
+ "updated": 1783709975
 }
