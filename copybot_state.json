@@ -6337,9 +6337,9 @@
       "sold_proceeds": 111.4587113057051
     }
   },
-  "hwm": 2377.9711388210912,
-  "feed_sig": "fb3d1f7649231c97b7d00a7647479e85",
-  "feed_pushed_at": 1783719292.430467,
+  "hwm": 2393.1476820309676,
+  "feed_sig": "dbd603124dde7f2296ca499bdcac4832",
+  "feed_pushed_at": 1783719420.775448,
   "missed": [
     {
       "ts": 1783590977,
@@ -6885,7 +6885,8 @@
       "status": "won",
       "pnl": 22.3,
       "settled": 1783719420,
-      "name": "0xbadaf319"
+      "name": "0xbadaf319",
+      "exit_checked": true
     },
     {
       "ts": 1783710821,
