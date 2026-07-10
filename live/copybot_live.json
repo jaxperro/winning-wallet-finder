@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 87.96,
+ "stake": 88.01,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2203.22,
- "cash": 1615.72,
- "deployed": 583.17,
+ "cash": 1544.78,
+ "deployed": 655.48,
  "reserve": 0.0,
- "realized": 1198.87,
+ "realized": 1200.23,
  "adjustments": 0.03,
- "ledger_drift": 0.0,
- "open_count": 10,
- "fees_paid": 64.41,
+ "ledger_drift": 0.01,
+ "open_count": 11,
+ "fees_paid": 66.96,
  "fee_rate": 0.03,
  "lag": {
-  "n": 44,
-  "n24": 32,
+  "n": 45,
+  "n24": 33,
   "avg_s": 26.8,
-  "avg_slip_pct": -0.0558,
+  "avg_slip_pct": -0.0566,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "99750659249903955439120052604225640907367048033793216838103937845588350738197",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "PlayTime",
+   "title": "Dota 2: Aurora vs PlayTime - Game 1 Winner",
+   "their_price": 0.2176,
+   "my_price": 0.2,
+   "slippage_pct": -0.0808,
+   "shares": 439.78,
+   "cost": 87.96,
+   "fee": 2.11,
+   "opened": 1783686088,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "sold_shares": 78.25,
+   "sold_proceeds": 19.12
+  },
   {
    "token": "99750659249903955439120052604225640907367048033793216838103937845588350738197",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1243,5 +1263,5 @@
   }
  ],
  "missed_pnl": -82.39,
- "updated": 1783685798
+ "updated": 1783686153
 }
