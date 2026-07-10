@@ -33,10 +33,16 @@ if not tok:
     sys.exit("no suitable market")
 
 from polymarket import SecureClient
-# wallet OMITTED on purpose: the SDK derives the signer's Deposit Wallet
-# (passing the profile address raw produced 'maker address not allowed' —
-# the new wallet architecture encodes wallet type into the maker)
-client = SecureClient.create(private_key=os.environ["LIVE_PRIVATE_KEY"].strip())
+# wallet omitted: SDK resolves the signer's (now-deployed) Deposit Wallet.
+# First construct WITHOUT api_key to mint a Builder key, then reconstruct
+# WITH it — the allowance-recovery path (gasless approvals on first order)
+# needs it. One-time: once approvals exist, the bot runs without any key.
+pk = os.environ["LIVE_PRIVATE_KEY"].strip()
+boot = SecureClient.create(private_key=pk)
+with boot:
+    bk = boot.create_builder_api_key()
+    print("builder key minted (in-process only)")
+client = SecureClient.create(private_key=pk, api_key=bk)
 for attr in ("wallet", "address", "deposit_wallet"):
     v = getattr(client, attr, None)
     if v:
