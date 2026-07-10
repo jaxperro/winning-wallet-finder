@@ -33,9 +33,14 @@ if not tok:
     sys.exit("no suitable market")
 
 from polymarket import SecureClient
-client = SecureClient.create(
-    private_key=os.environ["LIVE_PRIVATE_KEY"].strip(),
-    wallet=os.environ["LIVE_FUNDER_ADDRESS"].strip())
+# wallet OMITTED on purpose: the SDK derives the signer's Deposit Wallet
+# (passing the profile address raw produced 'maker address not allowed' —
+# the new wallet architecture encodes wallet type into the maker)
+client = SecureClient.create(private_key=os.environ["LIVE_PRIVATE_KEY"].strip())
+for attr in ("wallet", "address", "deposit_wallet"):
+    v = getattr(client, attr, None)
+    if v:
+        print(f"client.{attr} = {v}")
 
 def dump(label, obj):
     print(f"\n--- {label} ---")
