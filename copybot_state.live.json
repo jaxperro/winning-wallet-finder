@@ -78,6 +78,7 @@
     "0xa4e00dbe85adfe9c4b33f5aa8436c6ba72f0a87f360a7506218457e013bde73a",
     "0xfd49f73de8ddac1f74bdbd77efc8e81bccfe807c8ccb250c5e3857cf215c09a3",
     "0x17a81139b546f9aee41c92d9eb10473b3ec839b1b30795c687316a7c3c92174a",
+    "0x1dba018250d6fec6b295841dd03b47f21760c7fde1b421d937cab571486b42da",
     "0x1ce5edaf25bbacff078a599bb6da927024eed7d8dfc76e478259c5adff2f61ff",
     "0x8559db4a11506548ba7a43e92dff354570e3c33d9f9a0955893f15e3eab91831",
     "0x5e79ef60db3a8f51720622098704c7555f0eba663e190a33d6f07063ee414101",
@@ -5557,10 +5558,11 @@
       "price": 0.13,
       "stake": 5.0,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "gkmgkldfmg"
+      "status": "sold",
+      "pnl": -0.39,
+      "settled": 1783694720,
+      "name": "gkmgkldfmg",
+      "exit_price": 0.1266
     },
     {
       "ts": 1783694603,
@@ -5578,6 +5580,6 @@
       "name": "0xbadaf319"
     }
   ],
-  "feed_sig": "aa4315c00d55ee43c9cab1fa5bca749d",
-  "feed_pushed_at": 1783694531.4520671
+  "feed_sig": "8d7f1fa68864421728590ed4414ca472",
+  "feed_pushed_at": 1783694654.0618665
 }

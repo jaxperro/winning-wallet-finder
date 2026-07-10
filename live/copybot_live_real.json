@@ -70,6 +70,22 @@
  ],
  "missed": [
   {
+   "ts": 1783694404,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "61106160955805000545726176309339696645249790307545132698548552906744856723300",
+   "cond": "0x958375865506b3a7d8f6d2b134b179243bdf78db9f245d3afbf26e95dbcf0b92",
+   "title": "Dota 2: Team Nemesis vs Vici Gaming - Game 1 Winner",
+   "outcome": "Team Nemesis",
+   "price": 0.13,
+   "stake": 5.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": -0.39,
+   "settled": 1783694720,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.1266
+  },
+  {
    "ts": 1783694603,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "16341441115314407349877008586386599112394401117565529613770834118938995329927",
@@ -83,21 +99,6 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783694404,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "61106160955805000545726176309339696645249790307545132698548552906744856723300",
-   "cond": "0x958375865506b3a7d8f6d2b134b179243bdf78db9f245d3afbf26e95dbcf0b92",
-   "title": "Dota 2: Team Nemesis vs Vici Gaming - Game 1 Winner",
-   "outcome": "Team Nemesis",
-   "price": 0.13,
-   "stake": 5.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1783691341,
@@ -883,6 +884,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 78.79,
- "updated": 1783694603
+ "missed_pnl": 78.4,
+ "updated": 1783694721
 }
