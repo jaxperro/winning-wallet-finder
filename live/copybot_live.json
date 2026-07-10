@@ -1156,6 +1156,21 @@
  ],
  "missed": [
   {
+   "ts": 1783712755,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "82295795004428430940433303735647458980029294814595402162619417282565717266755",
+   "cond": "0xd0a6bb658382e926ce702e8abb092f34ca7701ab6d383fc1f15e356da8c80ff2",
+   "title": "Exact Score: Spain 3 - 0 Belgium?",
+   "outcome": "No",
+   "price": 0.9375,
+   "stake": 94.36,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 6.11,
+   "settled": 1783718413,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783718289,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "40157116416490623239679394844195379171683621861511438824716931745872340078199",
@@ -1217,21 +1232,6 @@
    "settled": 1783715665,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1783712755,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "82295795004428430940433303735647458980029294814595402162619417282565717266755",
-   "cond": "0xd0a6bb658382e926ce702e8abb092f34ca7701ab6d383fc1f15e356da8c80ff2",
-   "title": "Exact Score: Spain 3 - 0 Belgium?",
-   "outcome": "No",
-   "price": 0.9375,
-   "stake": 94.36,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
   },
   {
    "ts": 1783710821,
@@ -1780,6 +1780,6 @@
    "exit_price": 0.95
   }
  ],
- "missed_pnl": -218.98,
- "updated": 1783718290
+ "missed_pnl": -212.87,
+ "updated": 1783718413
 }

@@ -6340,8 +6340,8 @@
     }
   },
   "hwm": 2377.9711388210912,
-  "feed_sig": "2ea29af47d905461183e32aaed4919ea",
-  "feed_pushed_at": 1783718052.4178026,
+  "feed_sig": "0050cb3108e82e9e5089b64f912627fa",
+  "feed_pushed_at": 1783718290.704472,
   "missed": [
     {
       "ts": 1783590977,
@@ -6947,9 +6947,9 @@
       "price": 0.9375,
       "stake": 94.36,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 6.11,
+      "settled": 1783718413,
       "name": "LSB1"
     },
     {
@@ -6964,7 +6964,8 @@
       "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "0xbadaf319"
     }
   ],
   "no_miss_toks": [
