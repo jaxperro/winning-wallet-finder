@@ -70,6 +70,36 @@
  ],
  "missed": [
   {
+   "ts": 1783679728,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "31844421127747452247920361772593140342967161564902355004027803194678743954899",
+   "cond": "0x0a1a5f0cd3445aee7ec41eb2756dada597876031c718f31a9bf6ddde8250be6f",
+   "title": "Amazon 2026 capex above $180B?",
+   "outcome": "Yes",
+   "price": 0.86,
+   "stake": 5.0,
+   "reason": "order rejected: exception: not enough balance / allowance: the balance is no",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1783679665,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "93467767591188896649627269967147548436732758009195510676247808663528278284319",
+   "cond": "0xc94992bd15c42ae56c0345f4465d9f280a92805693d0485104c2db60f7bccf82",
+   "title": "Dota 2: Xtreme Gaming vs BetBoom Team - Game 2 Winner",
+   "outcome": "BetBoom Team",
+   "price": 0.63,
+   "stake": 5.0,
+   "reason": "order rejected: exception: not enough balance / allowance: the balance is no",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783678767,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "17576311024807680773221242546715308879815393843298876875648597925683453046372",
@@ -627,5 +657,5 @@
   }
  ],
  "missed_pnl": 70.31,
- "updated": 1783679079
+ "updated": 1783679728
 }
