@@ -5867,10 +5867,11 @@
       "price": 0.33,
       "stake": 4.05,
       "reason": "capped to $-10.00 < min order $1.00 (caps)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "gkmgkldfmg"
+      "status": "sold",
+      "pnl": -3.32,
+      "settled": 1783700916,
+      "name": "gkmgkldfmg",
+      "exit_price": 0.0679
     },
     {
       "ts": 1783699024,
@@ -5919,8 +5920,8 @@
       "name": "gkmgkldfmg"
     }
   ],
-  "feed_sig": "b6f63c5e41aa91485f9e22087b49382d",
-  "feed_pushed_at": 1783700727.0054402,
+  "feed_sig": "e7edb6796fa4b8e477b3cecf87d4c9a8",
+  "feed_pushed_at": 1783700849.5399392,
   "adjustments": [
     {
       "ts": 1783697039,
