@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 97.73,
+ "stake": 97.7,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2443.23,
- "cash": 2140.23,
- "deployed": 303.0,
+ "cash": 2041.83,
+ "deployed": 400.73,
  "reserve": 0.0,
- "realized": 1443.2,
+ "realized": 1442.52,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 7,
- "fees_paid": 99.9,
+ "open_count": 8,
+ "fees_paid": 100.58,
  "fee_rate": 0.03,
  "lag": {
-  "n": 60,
-  "n24": 24,
-  "avg_s": 31.5,
-  "avg_slip_pct": -0.0452,
+  "n": 61,
+  "n24": 25,
+  "avg_s": 30.4,
+  "avg_slip_pct": -0.0457,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "94261332494094465883021120894226351499139897211148377866980779595546383514545",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "Yes",
+   "title": "Will Botafogo FC win on 2026-07-10?",
+   "their_price": 0.8163,
+   "my_price": 0.77,
+   "slippage_pct": -0.0567,
+   "shares": 126.92,
+   "cost": 97.73,
+   "fee": 0.67,
+   "opened": 1783727072,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "64116761477742027701109652941632411292105231683011506366532020565363935650673",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1800,5 +1818,5 @@
   }
  ],
  "missed_pnl": -225.76,
- "updated": 1783726841
+ "updated": 1783727076
 }
