@@ -70,6 +70,21 @@
  ],
  "missed": [
   {
+   "ts": 1783695042,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "61106160955805000545726176309339696645249790307545132698548552906744856723300",
+   "cond": "0x958375865506b3a7d8f6d2b134b179243bdf78db9f245d3afbf26e95dbcf0b92",
+   "title": "Dota 2: Team Nemesis vs Vici Gaming - Game 1 Winner",
+   "outcome": "Team Nemesis",
+   "price": 0.28,
+   "stake": 5.0,
+   "reason": "order rejected: exception: not enough balance / allowance: the balance is no",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783694404,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "61106160955805000545726176309339696645249790307545132698548552906744856723300",
@@ -885,5 +900,5 @@
   }
  ],
  "missed_pnl": 78.4,
- "updated": 1783694721
+ "updated": 1783695042
 }
