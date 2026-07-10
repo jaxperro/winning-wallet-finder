@@ -79,10 +79,11 @@
    "price": 0.43,
    "stake": 5.0,
    "reason": "order rejected: {'order_id': '0xd68d2f323ace1737a986536b2ed00ddb89f8b2d4729f",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 1.22,
+   "settled": 1783675967,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.55
   },
   {
    "ts": 1783674607,
@@ -579,6 +580,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 68.95,
- "updated": 1783675472
+ "missed_pnl": 70.17,
+ "updated": 1783675967
 }
