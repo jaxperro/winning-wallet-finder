@@ -193,25 +193,11 @@
    "price": 0.23,
    "stake": 4.5,
    "reason": "capped to $-10.00 < min order $1.00 (caps)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
-  },
-  {
-   "ts": 1783704929,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "41527735652152287965662705198504489542457379550490679965396371339149288130273",
-   "cond": "0x96bd5030085b63e3f7dae9a46709c67195f6b0c52efa2f3a94337623d36951ae",
-   "title": "Dota 2: LGD Gaming vs Team Yandex - Game 1 Winner",
-   "outcome": "Team Yandex",
-   "price": 0.67,
-   "stake": 4.5,
-   "reason": "capped to $-10.00 < min order $1.00 (caps)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 0.34,
+   "settled": 1783706851,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.2586
   },
   {
    "ts": 1783704093,
@@ -221,6 +207,22 @@
    "title": "Dota 2: 1win vs OG - Game 1 Winner",
    "outcome": "1win",
    "price": 0.76,
+   "stake": 4.5,
+   "reason": "capped to $-10.00 < min order $1.00 (caps)",
+   "status": "sold",
+   "pnl": 1.38,
+   "settled": 1783706850,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.999
+  },
+  {
+   "ts": 1783704929,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "41527735652152287965662705198504489542457379550490679965396371339149288130273",
+   "cond": "0x96bd5030085b63e3f7dae9a46709c67195f6b0c52efa2f3a94337623d36951ae",
+   "title": "Dota 2: LGD Gaming vs Team Yandex - Game 1 Winner",
+   "outcome": "Team Yandex",
+   "price": 0.67,
    "stake": 4.5,
    "reason": "capped to $-10.00 < min order $1.00 (caps)",
    "status": "open",
@@ -1075,6 +1077,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 87.44,
- "updated": 1783705652
+ "missed_pnl": 89.16,
+ "updated": 1783706852
 }
