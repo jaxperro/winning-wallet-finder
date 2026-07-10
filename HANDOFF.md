@@ -40,6 +40,34 @@ The repo is authoritative; project memory has deeper history.
   Published feed stays at $1,000 to match the paper book. $500 run: +2728%
   (small banks compound faster — their-bet ceilings bind later).
 
+## LIVE PLACEMENT — root cause SOLVED, one user action + one port remain
+
+Why the real-money bot placed nothing (2026-07-09/10 investigation, every
+link proven): (1) the first two qualifying signals CRASHED the bot inside
+the unguarded live order path (machine events: exit_code=1 at 21:21:55 and
+21:53:35, seconds after each signal) and boot-baseline then marked the
+fresh trades seen — both bugs FIXED (executor never raises; poll guard;
+baseline exempts trades younger than the stale window). (2) With crashes
+fixed, the probe exposed the real wall: **py-clob-client is ARCHIVED** and
+the CLOB rejects its orders ('invalid order version') — reads/auth still
+work, placement is dead for everyone on the old client. (3) The successor
+is **Polymarket/py-sdk** (`pip install --pre polymarket-client`,
+SecureClient). (4) Under it, the account's legacy proxy (0xbb2aC6b8…) is
+refused as maker ('use the deposit wallet flow'); bootstrap
+(host/wallet_bootstrap.py) minted a Builder API key with existing auth and
+DEPLOYED the signer's Deposit Wallet:
+**0x455e252e45Ee46d6C4cc1c8fAdD3899d68f245a1**.
+
+Remaining: USER moves the $24.73 (UI withdraw → the deposit wallet
+address above — same key controls it); AGENT ports LedgerLiveExecutor to
+the new SDK (place_market_order: BUY by USD amount / SELL by shares, FAK;
+mint+store a fresh Builder key as Fly secrets — the bootstrap one's secret
+was not persisted, by design), adds polymarket-client to fly.Dockerfile,
+re-probes (host/order_probe_v2.py), re-arms. Probe scripts are in host/.
+Meanwhile the armed bot is harmless: every placement attempt returns
+ok:False and records an honest missed row ('order rejected: invalid order
+version').
+
 ## Queued next-session work (in value order)
 
 0. **MORNING FORENSICS — paper-book drift −11.32 (alarm intentionally red).**
