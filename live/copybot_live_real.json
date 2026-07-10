@@ -1,17 +1,17 @@
 {
  "mode": "live",
  "bankroll": 24.73,
- "stake": 4.05,
+ "stake": 4.5,
  "stake_pct": 0.2022,
  "event_cap": 0,
  "hwm": 24.73,
- "cash": 10.03,
- "deployed": 10.0,
+ "cash": 17.28,
+ "deployed": 5.0,
  "reserve": 0.0,
- "realized": -4.45,
+ "realized": -2.21,
  "adjustments": -0.24,
- "ledger_drift": 0.0,
- "open_count": 2,
+ "ledger_drift": -0.0,
+ "open_count": 1,
  "fees_paid": 0.72,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,25 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "49886282303318964434544606851164664333698127985256361511182784657423645654000",
+   "wallet": "0xd9fa6d54cf294343ee42bbb735b7cff20a4bf0b9",
+   "name": "gkmgkldfmg",
+   "outcome": "Aurora",
+   "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
+   "their_price": 0.69,
+   "my_price": 0.69,
+   "slippage_pct": 0.0,
+   "shares": 7.25,
+   "cost": 5.0,
+   "fee": 0.07,
+   "opened": 1783689280,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 2.18,
+   "settled": 1783699592,
+   "note": "reconstructed 2026-07-10: in-play 'delayed' acceptance mis-read as rejection; order filled untracked"
+  },
   {
    "token": "1161663761026248928741317236361093152095776065309269380062540556077381245572",
    "wallet": "0x1d0034ac09da54ba7ec969d1eb756b0a1df475c5",
@@ -142,25 +161,6 @@
    "exit_price": 1.0,
    "pnl": 3.6568,
    "settled": 1783697039,
-   "note": "reconstructed 2026-07-10: in-play 'delayed' acceptance mis-read as rejection; order filled untracked"
-  },
-  {
-   "token": "49886282303318964434544606851164664333698127985256361511182784657423645654000",
-   "wallet": "0xd9fa6d54cf294343ee42bbb735b7cff20a4bf0b9",
-   "name": "gkmgkldfmg",
-   "outcome": "Aurora",
-   "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
-   "their_price": 0.69,
-   "my_price": 0.69,
-   "slippage_pct": 0.0,
-   "shares": 7.25,
-   "cost": 5.0,
-   "fee": 0.07,
-   "opened": 1783689280,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
    "note": "reconstructed 2026-07-10: in-play 'delayed' acceptance mis-read as rejection; order filled untracked"
   },
   {
@@ -1012,5 +1012,5 @@
   }
  ],
  "missed_pnl": 91.75,
- "updated": 1783699162
+ "updated": 1783699594
 }
