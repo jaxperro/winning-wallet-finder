@@ -278,9 +278,60 @@ class LedgerLiveExecutor:
         self._otype = ot if ot in ("FAK", "FOK") else "FAK"
         self._slip = float(live.get("max_slippage_pct", 0.05))
 
+    def _shares_held(self, token_id):
+        """Exchange-view share balance for a token — chain truth, the arbiter
+        when an order's fate is ambiguous."""
+        b = self.client.get_balance_allowance(asset_type="CONDITIONAL",
+                                              token_id=str(token_id))
+        return b.balance / 1e6
+
+    def _settle_uncertain(self, token_id, side, bal0, price, order_id=None,
+                          deadline_s=20):
+        """An order may be resting/held at the exchange (in-play 'delayed'
+        acceptance, or an exception after posting). Poll it to a terminal
+        state, cancel whatever remains, and return (filled, avg_price) from
+        the exchange's own balance diff. INVARIANT (2026-07-10 incident: six
+        in-play acceptances were logged as misses and filled untracked
+        minutes later): no order outlives this call untracked."""
+        import time
+        px = price
+        deadline = time.time() + deadline_s
+        while order_id and time.time() < deadline:
+            time.sleep(2)
+            try:
+                o = self.client.get_order(order_id=order_id)
+                if float(o.size_matched or 0) > 0:
+                    px = float(o.price or price)
+                if o.status not in ("live", "delayed"):
+                    break
+            except Exception:      # gone from the open view — terminal
+                break
+        try:
+            if order_id:
+                self.client.cancel_order(order_id=order_id)
+            else:                   # exception path: sweep the whole token
+                ids = [o.id for o in self.client.list_open_orders(
+                    token_id=str(token_id))]
+                if ids:
+                    self.client.cancel_orders(order_ids=ids)
+        except Exception:
+            pass                    # cancel of a just-matched order — fine
+        try:
+            bal1 = self._shares_held(token_id)
+        except Exception:
+            return 0.0, price       # can't read truth: claim nothing; the
+        #                             chain_cash_gap alarm catches the rest
+        filled = (bal1 - bal0) if side == "BUY" else (bal0 - bal1)
+        return max(filled, 0.0), px
+
     def _order(self, token_id, shares, price, side):
         import math
         sz = math.floor(shares * 100) / 100.0   # cost never exceeds the gated stake
+        try:
+            bal0 = self._shares_held(token_id)
+        except Exception as e:      # no truth anchor → refuse to place at all
+            return {"ok": False, "filled_shares": 0.0, "price": price,
+                    "resp": f"pre-check failed: {e}", "paper": False}
         try:
             if side == "BUY":
                 r = self.client.place_market_order(
@@ -293,7 +344,13 @@ class LedgerLiveExecutor:
                     token_id=token_id, side="SELL", shares=sz,
                     min_price=max(round(price * (1 - self._slip), 2), 0.01),
                     order_type=self._otype)
-        except Exception as e:                # NEVER raise into the trade loop
+        except Exception as e:                # NEVER raise into the trade loop —
+            # but a timed-out post may still be resting: sweep + measure first
+            filled, px = self._settle_uncertain(token_id, side, bal0, price)
+            if filled > 0:
+                return {"ok": True, "filled_shares": filled, "price": px,
+                        "resp": f"filled despite client error: {e}",
+                        "paper": False}
             return {"ok": False, "filled_shares": 0.0, "price": price,
                     "resp": f"exception: {e}", "paper": False}
         if not getattr(r, "ok", False):       # RejectedOrder: typed code + message
@@ -303,8 +360,14 @@ class LedgerLiveExecutor:
         making = float(r.making_amount or 0)  # what we gave (matched)
         taking = float(r.taking_amount or 0)  # what we got (matched)
         filled, usd = (taking, making) if side == "BUY" else (making, taking)
-        return {"ok": filled > 0, "filled_shares": filled,
-                "price": usd / filled if filled else price,
+        px = usd / filled if filled else price
+        if filled <= 0:
+            # ACCEPTED with zero matched = in-play 'delayed'/'live' hold, NOT
+            # a rejection (the 2026-07-10 lesson). Wait it out briefly, then
+            # cancel-and-measure so the ledger always matches the exchange.
+            filled, px = self._settle_uncertain(token_id, side, bal0, price,
+                                                order_id=r.order_id)
+        return {"ok": filled > 0, "filled_shares": filled, "price": px,
                 "resp": {"order_id": r.order_id, "status": r.status,
                          "making": making, "taking": taking,
                          "trades": len(r.trade_ids)},
