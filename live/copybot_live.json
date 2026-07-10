@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 88.04,
+ "stake": 88.85,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 2225.77,
- "cash": 1626.82,
- "deployed": 574.16,
+ "hwm": 2258.31,
+ "cash": 1759.74,
+ "deployed": 461.48,
  "reserve": 0.0,
- "realized": 1200.95,
+ "realized": 1221.19,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 10,
- "fees_paid": 87.47,
+ "open_count": 9,
+ "fees_paid": 87.64,
  "fee_rate": 0.03,
  "lag": {
   "n": 54,
@@ -50,6 +50,24 @@
  },
  "bets": [
   {
+   "token": "72883819885036007086315831308179079344710204279662195005519707654209484712749",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on July 10?",
+   "their_price": 0.6849,
+   "my_price": 0.55,
+   "slippage_pct": -0.1969,
+   "shares": 127.4,
+   "cost": 70.07,
+   "fee": 0.95,
+   "opened": 1783699159,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 56.39,
+   "settled": 1783700537
+  },
+  {
    "token": "16341441115314407349877008586386599112394401117565529613770834118938995329927",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -86,26 +104,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 27.9,
-   "sold_proceeds": 1.9
-  },
-  {
-   "token": "72883819885036007086315831308179079344710204279662195005519707654209484712749",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on July 10?",
-   "their_price": 0.6849,
-   "my_price": 0.55,
-   "slippage_pct": -0.1969,
-   "shares": 127.4,
-   "cost": 70.07,
-   "fee": 0.95,
-   "opened": 1783699159,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "sold_shares": 311.93,
+   "sold_proceeds": 7.41
   },
   {
    "token": "67230363321893543312889997321885915798590561925238141510437860465156386610448",
@@ -1550,5 +1550,5 @@
   }
  ],
  "missed_pnl": -41.95,
- "updated": 1783700340
+ "updated": 1783700566
 }
