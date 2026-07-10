@@ -51,6 +51,21 @@
  "bets": [],
  "missed": [
   {
+   "ts": 1783661120,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "95966691396738472275344791788162735368640282726919372432646833886066957862309",
+   "cond": "0x20b0a4eb7e7ce4054637462158e6fdf7d8e9dcedc2caa9e398b51665a98364b2",
+   "title": "Will Lambda's valuation hit (LOW) $5B by December 31?",
+   "outcome": "No",
+   "price": 0.8,
+   "stake": 5.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783652109,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "24696476679489653392896522921778886207347569484211127510964843324817442529198",
@@ -484,5 +499,5 @@
   }
  ],
  "missed_pnl": 70.93,
- "updated": 1783660122
+ "updated": 1783661121
 }
