@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 87.7,
+ "stake": 87.69,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2225.77,
- "cash": 1778.86,
- "deployed": 413.67,
+ "cash": 1723.66,
+ "deployed": 468.67,
  "reserve": 0.0,
- "realized": 1192.5,
+ "realized": 1192.3,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 8,
- "fees_paid": 84.04,
+ "open_count": 9,
+ "fees_paid": 84.24,
  "fee_rate": 0.03,
  "lag": {
-  "n": 51,
-  "n24": 29,
-  "avg_s": 23.0,
-  "avg_slip_pct": -0.0503,
+  "n": 52,
+  "n24": 30,
+  "avg_s": 24.2,
+  "avg_slip_pct": -0.0493,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "67230363321893543312889997321885915798590561925238141510437860465156386610448",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the DFM Real Estate Index hit 18,000 in 2026?",
+   "their_price": 0.9,
+   "my_price": 0.88,
+   "slippage_pct": -0.0222,
+   "shares": 62.5,
+   "cost": 55.0,
+   "fee": 0.2,
+   "opened": 1783698964,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "40594224108520253108624365887167881382842057398183982530866129414581985931630",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1494,5 +1512,5 @@
   }
  ],
  "missed_pnl": -41.95,
- "updated": 1783698951
+ "updated": 1783699024
 }
