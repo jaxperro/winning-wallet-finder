@@ -71,10 +71,18 @@ def wait_handle(label, h):
     return out
 
 
+def delivered_units():
+    """pUSD + USDC.e at the wallet — the $3 test slice (2026-07-10) proved the
+    bridge wraps on delivery (native → USDC.e swap, then pUSD credited), so
+    delivery must be measured on pUSD; USDC.e is counted in case a future
+    bridge change stops short of the wrap (the wrap step below picks it up)."""
+    return bal(PUSD) + bal(USDCE)
+
+
 def bridge_leg(client, calls_mod, amount, bridge_addr, label):
     """Gasless-transfer `amount` native USDC to the bridge and wait until the
-    deposit wallet's USDC.e balance rises by ~amount. Returns True on delivery."""
-    before = bal(USDCE)
+    deposit wallet's pUSD/USDC.e rises by ~amount. Returns True on delivery."""
+    before = delivered_units()
     print(f"\n[{label}] sending {fmt(amount)} native USDC → bridge {bridge_addr}")
     t = calls_mod.erc20_transfer_call(token_address=USDC, recipient=bridge_addr,
                                       amount=amount)
@@ -87,14 +95,14 @@ def bridge_leg(client, calls_mod, amount, bridge_addr, label):
     deadline = time.time() + DELIVER_TIMEOUT_S
     while time.time() < deadline:
         time.sleep(POLL_S)
-        now = bal(USDCE)
+        now = delivered_units()
         try:
             st = http(f"{BRIDGE}/status/{bridge_addr}")
             txs = st.get("transactions") or []
             latest = txs[0].get("status") if txs else "none"
         except Exception as e:
             latest = f"status err {e}"
-        print(f"  USDC.e {fmt(now)} (Δ{fmt(now-before)}) · bridge status: {latest}")
+        print(f"  pUSD+USDC.e {fmt(now)} (Δ{fmt(now-before)}) · bridge: {latest}", flush=True)
         # bridge swap costs a few tenths of a cent — 1% tolerance is generous
         if now - before >= amount * 0.99:
             print(f"  [{label}] DELIVERED")
@@ -152,7 +160,15 @@ def main():
 
         usdce = bal(USDCE)
         if usdce == 0:
-            sys.exit("no USDC.e at the wallet — nothing to wrap, aborting")
+            # normal: the bridge wraps on delivery, so everything is already pUSD
+            print(f"\nno USDC.e residue — bridge delivered wrapped. "
+                  f"pUSD {fmt(bal(PUSD))}")
+            try:
+                b = client.get_balance_allowance(asset_type="COLLATERAL")
+                print("exchange-view COLLATERAL:", str(b)[:220])
+            except Exception as e:
+                print("balance check raised:", type(e).__name__, str(e)[:150])
+            return
         print(f"\n[wrap] approve onramp + wrap {fmt(usdce)} USDC.e → pUSD")
         appr = pmcalls.erc20_approval_call(token_address=USDCE, spender=ONRAMP,
                                            amount=usdce)
