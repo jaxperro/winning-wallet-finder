@@ -1141,6 +1141,7 @@
     "0x9004751572abb56d50e0e4ba6e946cf96ac4343127cdcb44e2c38763e911b9a0",
     "0x43ba762882f6e6c4981618c365d7c4a719b49834431ceda1f7bc1e03ba3c0a85",
     "0xe626955f78c4011ab7412e0dcd1f33d246e8e879d34861251d0a478ab17284f6",
+    "0x33226fd64229db2bb2638798bc997d90a134c0cd8a86e92ae94cb07fc6b731ef",
     "0x10b33a5018c9c903ff01ea51d5e285ad92cbc1c477aa1600525ac12cb4ddbe89",
     "0xabd37b8e1515e4760ad568b75de2e3c4357fd53b79c8d33a5f039bf9c6a83e2d",
     "0x68f1d0a3bfbc84344facf4251f2a3823a4986ea6de5bce520e20150d137d4632",
@@ -4812,11 +4813,13 @@
       "price": 0.99,
       "stake": 5.0,
       "reason": "price moved 0.51\u21920.99",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "sold",
+      "pnl": -2.46,
+      "settled": 1783652236,
+      "name": "imwalkinghere",
+      "exit_price": 0.5108
     }
   ],
-  "feed_sig": "6182dd37d242aca79c2f37848f7c5868",
-  "feed_pushed_at": 1783651986.4633164
+  "feed_sig": "c211a251e9ab50ba90e6fd21a6acfa9c",
+  "feed_pushed_at": 1783652109.6271586
 }
