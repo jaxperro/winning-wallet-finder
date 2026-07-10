@@ -684,6 +684,23 @@
  ],
  "missed": [
   {
+   "ts": 1783628730,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "3814128494502768477143514379926392387695049781340159117049849432213153191450",
+   "cond": "0xc6aaa048f4225f09d2a9f66723c507522da0383e9cd860f1a744c6473fcb187b",
+   "title": "Will France be eliminated in the Quarterfinals of the World Cup?",
+   "outcome": "No",
+   "price": 0.85,
+   "stake": 82.8,
+   "reason": "price moved 0.81\u21920.85",
+   "status": "sold",
+   "pnl": -0.49,
+   "settled": 1783642203,
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.8525
+  },
+  {
    "ts": 1783622007,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "22725380484456966301228939445880731453285484401950854931468064580525084575682",
@@ -729,21 +746,6 @@
    "settled": 1783632973,
    "name": "imwalkinghere",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1783628730,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "3814128494502768477143514379926392387695049781340159117049849432213153191450",
-   "cond": "0xc6aaa048f4225f09d2a9f66723c507522da0383e9cd860f1a744c6473fcb187b",
-   "title": "Will France be eliminated in the Quarterfinals of the World Cup?",
-   "outcome": "No",
-   "price": 0.85,
-   "stake": 82.8,
-   "reason": "price moved 0.81\u21920.85",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1783627634,
@@ -973,6 +975,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 20.28,
- "updated": 1783634213
+ "missed_pnl": 19.79,
+ "updated": 1783642268
 }
