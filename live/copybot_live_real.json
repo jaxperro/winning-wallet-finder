@@ -184,6 +184,21 @@
  ],
  "missed": [
   {
+   "ts": 1783704929,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "41527735652152287965662705198504489542457379550490679965396371339149288130273",
+   "cond": "0x96bd5030085b63e3f7dae9a46709c67195f6b0c52efa2f3a94337623d36951ae",
+   "title": "Dota 2: LGD Gaming vs Team Yandex - Game 1 Winner",
+   "outcome": "Team Yandex",
+   "price": 0.67,
+   "stake": 4.5,
+   "reason": "capped to $-10.00 < min order $1.00 (caps)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783704093,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "38744650140929980444150118816863740267135734413960049059734200133364895803618",
@@ -1046,5 +1061,5 @@
   }
  ],
  "missed_pnl": 87.44,
- "updated": 1783704093
+ "updated": 1783704929
 }
