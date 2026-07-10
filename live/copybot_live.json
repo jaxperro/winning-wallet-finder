@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 85.63,
+ "stake": 82.22,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2225.77,
  "cash": 1689.91,
- "deployed": 450.72,
+ "deployed": 365.61,
  "reserve": 0.0,
- "realized": 1140.6,
+ "realized": 1055.49,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 8,
+ "open_count": 7,
  "fees_paid": 69.58,
  "fee_rate": 0.03,
  "lag": {
   "n": 45,
-  "n24": 33,
-  "avg_s": 26.8,
-  "avg_slip_pct": -0.0566,
+  "n24": 32,
+  "avg_s": 26.1,
+  "avg_slip_pct": -0.0575,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "47405794293316148244590035888323531202770006061275899647071095856237793879763",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "G2 Esports",
+   "title": "LoL: G2 Esports vs LYON - Game 3 Winner",
+   "their_price": 0.39,
+   "my_price": 0.38,
+   "slippage_pct": -0.0256,
+   "shares": 223.95,
+   "cost": 85.1,
+   "fee": 1.58,
+   "opened": 1783678190,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -86.68,
+   "settled": 1783689250
+  },
   {
    "token": "1161663761026248928741317236361093152095776065309269380062540556077381245572",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -160,24 +178,6 @@
    "cost": 62.27,
    "fee": 0.26,
    "opened": 1783679726,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
-   "token": "47405794293316148244590035888323531202770006061275899647071095856237793879763",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "G2 Esports",
-   "title": "LoL: G2 Esports vs LYON - Game 3 Winner",
-   "their_price": 0.39,
-   "my_price": 0.38,
-   "slippage_pct": -0.0256,
-   "shares": 223.95,
-   "cost": 85.1,
-   "fee": 1.58,
-   "opened": 1783678190,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -1279,5 +1279,5 @@
   }
  ],
  "missed_pnl": -69.05,
- "updated": 1783689187
+ "updated": 1783689315
 }
