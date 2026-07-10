@@ -5941,8 +5941,8 @@
     }
   },
   "hwm": 2258.3082600369416,
-  "feed_sig": "ea0681ebe39b0a3151451baf498e3e42",
-  "feed_pushed_at": 1783700593.4214258,
+  "feed_sig": "c942612e00ddcde8ccc84f02091bb1e6",
+  "feed_pushed_at": 1783700718.6190693,
   "missed": [
     {
       "ts": 1783590977,
@@ -6452,10 +6452,11 @@
       "price": 0.339,
       "stake": 87.7,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "gkmgkldfmg"
+      "status": "sold",
+      "pnl": -72.38,
+      "settled": 1783700847,
+      "name": "gkmgkldfmg",
+      "exit_price": 0.0679
     }
   ],
   "no_miss_toks": [

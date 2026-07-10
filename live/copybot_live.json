@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 54,
-  "n24": 29,
-  "avg_s": 30.2,
-  "avg_slip_pct": -0.0649,
+  "n24": 28,
+  "avg_s": 30.5,
+  "avg_slip_pct": -0.0568,
   "window_h": 24
  },
  "wallets": [
@@ -1045,10 +1045,11 @@
    "price": 0.339,
    "stake": 87.7,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": -72.38,
+   "settled": 1783700847,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.0679
   },
   {
    "ts": 1783697381,
@@ -1549,6 +1550,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": -41.95,
- "updated": 1783700692
+ "missed_pnl": -114.33,
+ "updated": 1783700847
 }
