@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 82.82,
+ "stake": 83.65,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2225.77,
- "cash": 1704.81,
- "deployed": 365.61,
+ "cash": 1641.99,
+ "deployed": 449.33,
  "reserve": 0.0,
- "realized": 1070.39,
+ "realized": 1091.29,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 7,
- "fees_paid": 72.18,
+ "open_count": 8,
+ "fees_paid": 76.77,
  "fee_rate": 0.03,
  "lag": {
-  "n": 46,
-  "n24": 33,
-  "avg_s": 25.4,
-  "avg_slip_pct": -0.0548,
+  "n": 48,
+  "n24": 34,
+  "avg_s": 24.8,
+  "avg_slip_pct": -0.0492,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,44 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "84864321844564005123638956205037810292837868807558456388220877376462415276538",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "PlayTime",
+   "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
+   "their_price": 0.4638,
+   "my_price": 0.41,
+   "slippage_pct": -0.116,
+   "shares": 204.18,
+   "cost": 83.71,
+   "fee": 1.48,
+   "opened": 1783690799,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
+  {
+   "token": "84864321844564005123638956205037810292837868807558456388220877376462415276538",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "PlayTime",
+   "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
+   "their_price": 0.397,
+   "my_price": 0.39,
+   "slippage_pct": -0.0177,
+   "shares": 212.35,
+   "cost": 82.82,
+   "fee": 1.52,
+   "opened": 1783690706,
+   "status": "closed",
+   "exit_price": 0.5025,
+   "pnl": 22.37,
+   "settled": 1783690760,
+   "sold_shares": 212.35,
+   "sold_proceeds": 106.71
+  },
   {
    "token": "84864321844564005123638956205037810292837868807558456388220877376462415276538",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -889,10 +927,11 @@
    "price": 0.55,
    "stake": 82.82,
    "reason": "price moved 0.46\u21920.55",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 28.15,
+   "settled": 1783690824,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.75
   },
   {
    "ts": 1783690401,
@@ -1345,6 +1384,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": -63.5,
- "updated": 1783690584
+ "missed_pnl": -35.35,
+ "updated": 1783690825
 }
