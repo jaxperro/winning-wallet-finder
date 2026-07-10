@@ -83,6 +83,33 @@ with client:
             print("  USDC→collateral approval:", str(h)[:150])
     except Exception as e:
         print("  approve_erc20:", type(e).__name__, str(e)[:250])
+    # PRE-WRAP is mandatory: the exchange's balance view counts the
+    # COLLATERAL token only. The public wrapper periphery (0x93070a…, holds
+    # the wrapper role; used by the UI's 4337 flows) exposes
+    # wrap(asset, to, amount). Approve + wrap the full USDC balance in one
+    # gasless transaction from the deposit wallet.
+    from polymarket.calls import TransactionCall, erc20_approval_call
+    from web3 import Web3
+    from eth_abi import encode as abi_encode
+    WRAPPER = "0x93070a847efef7f70739046a929d47a521f5b8ee"
+    dw = str(client.wallet)
+    rpc_body = json.dumps({"id":1,"jsonrpc":"2.0","method":"eth_call","params":[
+        {"to": USDC, "data": "0x70a08231" + dw[2:].lower().rjust(64, "0")}, "latest"]}).encode()
+    rq = urllib.request.Request(os.environ["ALCHEMY_RPC_URL"].strip(), data=rpc_body,
+                                headers={"content-type": "application/json"})
+    units = int(json.load(urllib.request.urlopen(rq, timeout=20, context=_SSL))["result"], 16)
+    print(f"  wrapping {units/1e6:.2f} USDC → collateral…")
+    if units > 0:
+        appr = erc20_approval_call(token_address=USDC, spender=WRAPPER, amount=units)
+        sel = Web3.keccak(text="wrap(address,address,uint256)")[:4]
+        data = "0x" + sel.hex().replace("0x", "") + abi_encode(
+            ["address", "address", "uint256"], [USDC, dw, units]).hex()
+        wrap_call = TransactionCall(to=WRAPPER, data=data)
+        try:
+            h = client.execute_transaction(calls=[appr, wrap_call], metadata="wrap USDC to collateral")
+            print("  wrap outcome:", str(h.wait())[:200])
+        except Exception as e:
+            print("  wrap failed:", type(e).__name__, str(e)[:250])
     try:
         b = client.get_balance_allowance(asset_type="COLLATERAL")
         print("  exchange-view balance:", str(b)[:220])
