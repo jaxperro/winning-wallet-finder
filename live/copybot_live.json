@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 87.26,
+ "stake": 87.18,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2258.31,
- "cash": 1586.3,
- "deployed": 595.23,
+ "cash": 1497.02,
+ "deployed": 682.49,
  "reserve": 0.0,
- "realized": 1181.5,
+ "realized": 1179.48,
  "adjustments": 0.03,
  "ledger_drift": 0.02,
- "open_count": 10,
- "fees_paid": 89.19,
+ "open_count": 11,
+ "fees_paid": 91.2,
  "fee_rate": 0.03,
  "lag": {
-  "n": 56,
-  "n24": 29,
-  "avg_s": 29.6,
-  "avg_slip_pct": -0.0498,
+  "n": 57,
+  "n24": 30,
+  "avg_s": 28.7,
+  "avg_slip_pct": -0.0508,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "100310596270945062702362561514133867597710410244661432843863262063183415273493",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Inner Circle",
+   "title": "Dota 2: Inner Circle vs Virtus.pro - Game 1 Winner",
+   "their_price": 0.25,
+   "my_price": 0.23,
+   "slippage_pct": -0.08,
+   "shares": 379.4,
+   "cost": 87.26,
+   "fee": 2.02,
+   "opened": 1783705649,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "41527735652152287965662705198504489542457379550490679965396371339149288130273",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1603,5 +1621,5 @@
   }
  ],
  "missed_pnl": -200.86,
- "updated": 1783705283
+ "updated": 1783705653
 }
