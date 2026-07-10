@@ -1105,9 +1105,14 @@ class Copybot:
                          "outcome": p["outcome"], "title": p["title"]}
                 for f in self._drain_fills():
                     self._record_lag(p["wallet"], synth, f)
-                log(f"PENDING FILLED · {p['outcome']} · {p['title'][:40]} — "
+                self.engine.alert(
+                    f"PENDING FILLED · {p['outcome']} · {p['title'][:40]} — "
                     f"buy {filled:.2f} @ {px:.3f} (${spent:.2f}, held "
-                    f"{int(now - p['ts'])}s)")
+                    f"{int(now - p['ts'])}s)",
+                    discord_text=(f"🟢 **OPEN (in-play hold filled)** [LIVE]\n"
+                                  f"{p['outcome']} · {p['title'][:60]}\n"
+                                  f"buy {filled:.2f} @ {px:.3f} = **${spent:.2f}** "
+                                  f"(held {int(now - p['ts'])}s)"))
             else:                          # SELL adoption: reduce the position
                 mine = st["my_pos"].get(tok)
                 if mine and mine.get("shares"):
@@ -1119,8 +1124,13 @@ class Copybot:
                 ex.fills.append({"side": "SELL", "token": tok,
                                  "shares": filled, "price": px})
                 self._drain_fills()
-                log(f"PENDING EXIT FILLED · {p['outcome']} · {p['title'][:40]} — "
-                    f"sold {filled:.2f} @ {px:.3f}")
+                self.engine.alert(
+                    f"PENDING EXIT FILLED · {p['outcome']} · {p['title'][:40]} — "
+                    f"sold {filled:.2f} @ {px:.3f}",
+                    discord_text=(f"🔴 **EXIT (in-play hold filled)** [LIVE]\n"
+                                  f"{p['outcome']} · {p['title'][:60]}\n"
+                                  f"sold {filled:.2f} @ {px:.3f} = "
+                                  f"**${filled * px:.2f}**"))
         st["pending_orders"] = keep
         self.engine.persist()
 
