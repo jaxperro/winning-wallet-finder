@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 82.22,
+ "stake": 82.82,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2225.77,
- "cash": 1689.91,
+ "cash": 1704.81,
  "deployed": 365.61,
  "reserve": 0.0,
- "realized": 1055.49,
+ "realized": 1070.39,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
  "open_count": 7,
- "fees_paid": 69.58,
+ "fees_paid": 72.18,
  "fee_rate": 0.03,
  "lag": {
-  "n": 45,
-  "n24": 32,
-  "avg_s": 26.1,
-  "avg_slip_pct": -0.0575,
+  "n": 46,
+  "n24": 33,
+  "avg_s": 25.4,
+  "avg_slip_pct": -0.0548,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "84864321844564005123638956205037810292837868807558456388220877376462415276538",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "PlayTime",
+   "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
+   "their_price": 0.4557,
+   "my_price": 0.47,
+   "slippage_pct": 0.0313,
+   "shares": 174.94,
+   "cost": 82.22,
+   "fee": 1.31,
+   "opened": 1783690336,
+   "status": "closed",
+   "exit_price": 0.5626,
+   "pnl": 14.9,
+   "settled": 1783690401,
+   "sold_shares": 174.94,
+   "sold_proceeds": 98.43
+  },
   {
    "token": "47405794293316148244590035888323531202770006061275899647071095856237793879763",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -860,6 +880,21 @@
  ],
  "missed": [
   {
+   "ts": 1783690401,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "84864321844564005123638956205037810292837868807558456388220877376462415276538",
+   "cond": "0x8545a030f00ef7748aa1c00481a9f01ec4b73550aef97b564a3f5a07b31f8f9d",
+   "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
+   "outcome": "PlayTime",
+   "price": 0.56,
+   "stake": 82.17,
+   "reason": "price moved 0.49\u21920.56",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783689565,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "49886282303318964434544606851164664333698127985256361511182784657423645654000",
@@ -1295,5 +1330,5 @@
   }
  ],
  "missed_pnl": -62.04,
- "updated": 1783689879
+ "updated": 1783690401
 }
