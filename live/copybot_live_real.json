@@ -193,10 +193,26 @@
    "price": 0.13,
    "stake": 4.5,
    "reason": "capped to $-10.00 < min order $1.00 (caps)",
+   "status": "sold",
+   "pnl": 4.02,
+   "settled": 1783709347,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.2553
+  },
+  {
+   "ts": 1783709345,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "64116761477742027701109652941632411292105231683011506366532020565363935650673",
+   "cond": "0x9d4a016f4a18ff8f3b28a0c0adf2a03254033f6d022c88e13495738e2178c3d9",
+   "title": "Hans Vanaken: 3+ shots",
+   "outcome": "No",
+   "price": 0.7844,
+   "stake": 4.5,
+   "reason": "not copied in the detection window (reconciled)",
    "status": "open",
    "pnl": null,
    "settled": null,
-   "name": "gkmgkldfmg"
+   "name": "0xbadaf319"
   },
   {
    "ts": 1783704929,
@@ -1093,6 +1109,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 91.32,
- "updated": 1783708521
+ "missed_pnl": 95.34,
+ "updated": 1783709348
 }
