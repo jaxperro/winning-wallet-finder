@@ -6211,7 +6211,8 @@
       "status": "won",
       "pnl": 1.21,
       "settled": 1783719457,
-      "name": "0xbadaf319"
+      "name": "0xbadaf319",
+      "exit_checked": true
     },
     {
       "ts": 1783709709,
@@ -6310,8 +6311,8 @@
       "exit_checked": true
     }
   ],
-  "feed_sig": "790e76726389388a22a02d467eb32c7f",
-  "feed_pushed_at": 1783719335.7332993,
+  "feed_sig": "73910eeb0d7e771634f4917501bcdbd5",
+  "feed_pushed_at": 1783719582.17272,
   "adjustments": [
     {
       "ts": 1783718232,
