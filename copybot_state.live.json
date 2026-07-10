@@ -1083,6 +1083,7 @@
     "0xae1dc9da2cd19ea43749537da245b91eebfe0c94d83ddd3a785c5f61c555eb64",
     "0xf41172a268ac0f368f1064d84493d8ac85e80ca1dcc0220ad5aab7496d88ec84",
     "0x00f3cdf1d917e10e92794d911313c8edab073afbc2ba6346260dfcfb8e9c6137",
+    "0xf93ba0e43e220b6ee92ea4afa3a5fd09cfe87827fddaa4c7d2d565eca90bbafb",
     "0x57fbcbcb4b1f44ce45898030461b9f8ddd27260502d62c91c99b8044c15672ef",
     "0x7eba7c6888352da82670fc8df1ccc86fb1b27585c3fa2ba98c080b3f2c62969e",
     "0x66f9522f032aeedd325f49434f0c0400c3513c62a5310fcdf2c5094cc90f95a0",
@@ -1587,6 +1588,7 @@
     "0x57fed6fb9136f2041fb3c308c910e5c84f4ffd5816a6c91bb6afafdcb43b8af4",
     "0xf4ebbae4ddefc4a62db9633e78895b7db1069af699695e220b013bc54b4783bd",
     "0xce95e0a08af37141c43146f5f3cd86e5fd857735807a4d2c63f2c4733b7bb2af",
+    "0xad51adbe5e1a50d26339a4387a1804b1e8abce664ea29a1d84288e3ed79f1ea3",
     "0xf5fba079c9bd59e5469e97118d0d9d22553d05d45075c101c9261770f47b6e01",
     "0x96414e66fb9ba6d59eac7e9ab779ea2767869f0b0191ece094c338394f6223e1",
     "0x719037f6229de128a7a7bf6310cffee8ab3496b4238dde42aa76a9fd0be9edef",
@@ -5159,10 +5161,11 @@
       "price": 0.63,
       "stake": 5.0,
       "reason": "order rejected: {'order_id': '0xda7da5c48e8edfe818526127a93ba21a0037f4c956bd",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "AIcAIc"
+      "status": "sold",
+      "pnl": -5.06,
+      "settled": 1783689120,
+      "name": "AIcAIc",
+      "exit_price": 0.0
     },
     {
       "ts": 1783675472,
@@ -5206,10 +5209,11 @@
       "price": 0.38,
       "stake": 5.0,
       "reason": "order rejected: {'order_id': '0x203bac86469f7c6cf48a1982dd9ab41ebfbdd1018ba6",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "AIcAIc"
+      "status": "sold",
+      "pnl": -5.09,
+      "settled": 1783689121,
+      "name": "AIcAIc",
+      "exit_price": 0.0
     },
     {
       "ts": 1783678767,
@@ -5371,6 +5375,6 @@
       "exit_price": 0.1809
     }
   ],
-  "feed_sig": "90082b7f2f9c82f5ead30635ffccfa4a",
-  "feed_pushed_at": 1783688432.0923243
+  "feed_sig": "d4c679561a82ee4fd506a2bfd9735517",
+  "feed_pushed_at": 1783689056.6820538
 }
