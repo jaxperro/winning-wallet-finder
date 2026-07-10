@@ -16,10 +16,13 @@ def get(u):
 
 # pick the highest-volume active market with a sane two-sided book
 gm = get("https://gamma-api.polymarket.com/markets?active=true&closed=false"
-         "&limit=5&order=volume24hr&ascending=false")
+         "&limit=25&order=volume24hr&ascending=false")
 tok = ask = bid = None
 for m in gm:
     try:
+        if m.get("negRisk") or m.get("negRiskAugmented"):
+            continue          # plain binary first — negRisk needs its own
+                              # order options (suspected cause of the 400)
         t0 = json.loads(m["clobTokenIds"])[0]
         book = get(f"https://clob.polymarket.com/book?token_id={t0}")
         bids, asks = book.get("bids") or [], book.get("asks") or []
