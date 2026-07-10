@@ -184,6 +184,22 @@
  ],
  "missed": [
   {
+   "ts": 1783699162,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "72883819885036007086315831308179079344710204279662195005519707654209484712749",
+   "cond": "0xaae9427658bf91ef500859fca7100569bdf4ca1fd350a791f8c38ad45617e74e",
+   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on July 10?",
+   "outcome": "No",
+   "price": 0.55,
+   "stake": 4.05,
+   "reason": "capped to $-10.00 < min order $1.00 (caps)",
+   "status": "won",
+   "pnl": 3.26,
+   "settled": 1783700566,
+   "name": "0xbadaf319",
+   "exit_checked": true
+  },
+  {
    "ts": 1783694603,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "16341441115314407349877008586386599112394401117565529613770834118938995329927",
@@ -198,21 +214,6 @@
    "settled": 1783700285,
    "name": "0xbadaf319",
    "exit_price": 0.8115
-  },
-  {
-   "ts": 1783699162,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "72883819885036007086315831308179079344710204279662195005519707654209484712749",
-   "cond": "0xaae9427658bf91ef500859fca7100569bdf4ca1fd350a791f8c38ad45617e74e",
-   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on July 10?",
-   "outcome": "No",
-   "price": 0.55,
-   "stake": 4.05,
-   "reason": "capped to $-10.00 < min order $1.00 (caps)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1783699024,
@@ -1012,6 +1013,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 91.94,
- "updated": 1783700287
+ "missed_pnl": 95.2,
+ "updated": 1783700602
 }
