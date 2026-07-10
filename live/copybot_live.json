@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 88.85,
+ "stake": 87.32,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2258.31,
- "cash": 1759.74,
- "deployed": 461.48,
+ "cash": 1762.38,
+ "deployed": 420.61,
  "reserve": 0.0,
- "realized": 1221.19,
+ "realized": 1182.97,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 9,
- "fees_paid": 87.64,
+ "open_count": 8,
+ "fees_paid": 87.72,
  "fee_rate": 0.03,
  "lag": {
   "n": 54,
-  "n24": 30,
-  "avg_s": 29.3,
-  "avg_slip_pct": -0.0642,
+  "n24": 29,
+  "avg_s": 30.2,
+  "avg_slip_pct": -0.0649,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "20753444326597808403433519410324896770837596585358560000183009522246701254242",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Nemesis",
+   "title": "Dota 2: Team Nemesis vs Vici Gaming - Game 2 Winner",
+   "their_price": 0.2217,
+   "my_price": 0.15,
+   "slippage_pct": -0.3233,
+   "shares": 584.37,
+   "cost": 87.66,
+   "fee": 2.24,
+   "opened": 1783699742,
+   "status": "closed",
+   "exit_price": 0.0172,
+   "pnl": -79.84,
+   "settled": 1783700692,
+   "sold_shares": 584.37,
+   "sold_proceeds": 10.06
+  },
   {
    "token": "72883819885036007086315831308179079344710204279662195005519707654209484712749",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -86,26 +106,6 @@
    "settled": 1783700339,
    "sold_shares": 20.41,
    "sold_proceeds": 18.79
-  },
-  {
-   "token": "20753444326597808403433519410324896770837596585358560000183009522246701254242",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Nemesis",
-   "title": "Dota 2: Team Nemesis vs Vici Gaming - Game 2 Winner",
-   "their_price": 0.2217,
-   "my_price": 0.15,
-   "slippage_pct": -0.3233,
-   "shares": 584.37,
-   "cost": 87.66,
-   "fee": 2.24,
-   "opened": 1783699742,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 311.93,
-   "sold_proceeds": 7.41
   },
   {
    "token": "67230363321893543312889997321885915798590561925238141510437860465156386610448",
@@ -1550,5 +1550,5 @@
   }
  ],
  "missed_pnl": -41.95,
- "updated": 1783700566
+ "updated": 1783700692
 }
