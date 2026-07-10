@@ -860,6 +860,21 @@
  ],
  "missed": [
   {
+   "ts": 1783688210,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "30046078570478042875484019498188445069739353707631130122422440814625914406231",
+   "cond": "0x7664d545626cce2926008f88cf77c53e705c817404ada24e31d638e4031c8645",
+   "title": "Dota 2: L1ga Team vs Team Liquid - Game 2 Winner",
+   "outcome": "L1ga Team",
+   "price": 0.15,
+   "stake": 88.58,
+   "reason": "price moved 0.14\u21920.15",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783685101,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "99750659249903955439120052604225640907367048033793216838103937845588350738197",
@@ -1263,5 +1278,5 @@
   }
  ],
  "missed_pnl": -82.39,
- "updated": 1783686260
+ "updated": 1783688210
 }
