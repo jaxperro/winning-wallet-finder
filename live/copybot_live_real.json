@@ -70,6 +70,21 @@
  ],
  "missed": [
   {
+   "ts": 1783677860,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "100198471262079386993761824025743140222494027672175410847273506523400747511360",
+   "cond": "0xbb0f06d9834bc69265a845a296cd01e4426f964627509a9f2d5383b43e89803f",
+   "title": "Dota 2: Xtreme Gaming vs BetBoom Team - Game 1 Winner",
+   "outcome": "Xtreme Gaming",
+   "price": 0.29,
+   "stake": 5.0,
+   "reason": "order rejected: {'order_id': '0x43d6b7382bf3410d31c451091fb308c5937016037806",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783675472,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "110708614617189583631393918009679567370443859313775277411746388200261997600454",
@@ -581,5 +596,5 @@
   }
  ],
  "missed_pnl": 70.17,
- "updated": 1783675967
+ "updated": 1783677860
 }
