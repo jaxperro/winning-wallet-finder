@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 85.14,
+ "stake": 85.1,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2128.52,
- "cash": 1700.83,
- "deployed": 427.69,
+ "cash": 1614.74,
+ "deployed": 512.83,
  "reserve": 0.0,
- "realized": 1128.49,
+ "realized": 1127.54,
  "adjustments": 0.03,
  "ledger_drift": 0.0,
- "open_count": 7,
- "fees_paid": 57.28,
+ "open_count": 8,
+ "fees_paid": 58.22,
  "fee_rate": 0.03,
  "lag": {
-  "n": 39,
-  "n24": 35,
-  "avg_s": 33.7,
-  "avg_slip_pct": -0.071,
+  "n": 40,
+  "n24": 36,
+  "avg_s": 32.8,
+  "avg_slip_pct": -0.0695,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "1161663761026248928741317236361093152095776065309269380062540556077381245572",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "G2 Esports",
+   "title": "LoL: G2 Esports vs LYON - Game 2 Winner",
+   "their_price": 0.64,
+   "my_price": 0.63,
+   "slippage_pct": -0.0156,
+   "shares": 135.14,
+   "cost": 85.14,
+   "fee": 0.95,
+   "opened": 1783674604,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "95966691396738472275344791788162735368640282726919372432646833886066957862309",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1083,5 +1101,5 @@
   }
  ],
  "missed_pnl": -37.15,
- "updated": 1783671387
+ "updated": 1783674607
 }
