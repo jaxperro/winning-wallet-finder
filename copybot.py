@@ -47,6 +47,7 @@ import hashlib
 import hmac
 import json
 import os
+import ssl
 import sys
 import threading
 import time
@@ -461,6 +462,109 @@ class FollowFilter:
         return (f"follow filter · {'BUY-only' if self.buy_only else 'BUY+SELL'} · "
                 f"conviction ≥ ${self.min_their_usd:,.0f}{pw}{wh} · "
                 f"entry [{self.min_entry:.2f},{self.max_entry:.2f}]")
+
+
+# ── T0: the real-time trade stream (RTDS) ───────────────────────────────────
+
+class RtdsListener:
+    """PRIMARY detection: Polymarket's real-time data socket streams EVERY
+    platform trade, wallet-attributed, ~1s after it happens (measured
+    2026-07-10: median 0.8s over 22k msgs, ~45 msg/s at US-evening peak,
+    zero drops in 45 min). topic=activity/type=trades is undocumented but
+    official (it powers polymarket.com's live feed and is spec'd in
+    Polymarket/real-time-data-client). Server-side filters are broken
+    (real-time-data-client#34) — subscribe unfiltered, filter client-side.
+
+    Resilience: if the lib is missing or the stream dies, detection degrades
+    to the existing backstops (Alchemy push ~3s, 300s poll, reconcile
+    janitor) — never to zero. Reconnects with capped backoff forever."""
+
+    URL = "wss://ws-live-data.polymarket.com"
+
+    def __init__(self, bot):
+        self.bot = bot
+        self.watched = {w.lower() for w in bot.cfg.get("watchlist", [])}
+        self.last_msg = 0.0          # last firehose message of any kind
+        self.hits = 0                # Set E messages dispatched
+        self.state = "off"
+
+    def start(self):
+        try:
+            import websocket         # websocket-client (fly.Dockerfile pin)
+        except ImportError:
+            log("rtds: websocket-client not installed — listener OFF "
+                "(backstops cover detection)")
+            return False
+        threading.Thread(target=self._run, args=(websocket,),
+                         daemon=True, name="rtds").start()
+        return True
+
+    def status(self):
+        if self.state != "up":
+            return self.state
+        age = time.time() - self.last_msg if self.last_msg else -1
+        return f"up {age:.0f}s" if age >= 0 else "up"
+
+    def _run(self, websocket):
+        backoff = 1
+        sub = json.dumps({"action": "subscribe", "subscriptions": [
+            {"topic": "activity", "type": "trades", "filters": ""}]})
+
+        def on_open(ws):
+            ws.send(sub)
+            self.state = "up"
+            log("rtds: connected — activity/trades stream up (T0 detection)")
+
+            def ping():                     # app-level ping keeps RTDS alive
+                while ws.keep_running:
+                    time.sleep(5)
+                    try:
+                        ws.send('{"action":"ping"}')
+                    except Exception:
+                        break
+            threading.Thread(target=ping, daemon=True).start()
+
+        def on_message(ws, raw):
+            self._handle(raw)
+
+        while True:
+            try:
+                app = websocket.WebSocketApp(self.URL, on_open=on_open,
+                                             on_message=on_message)
+                app.run_forever(sslopt={"cert_reqs": ssl.CERT_NONE})
+            except Exception as e:
+                log(f"rtds: listener error {str(e)[:80]}")
+            self.state = "down"
+            log(f"rtds: stream down — reconnect in {backoff}s "
+                "(backstops still detecting)")
+            time.sleep(backoff)
+            backoff = min(backoff * 2, 60)
+
+    def _handle(self, raw):
+        self.last_msg = time.time()
+        try:
+            m = json.loads(raw)
+        except Exception:
+            return
+        if m.get("topic") != "activity" or m.get("type") != "trades":
+            return
+        p = m.get("payload") or {}
+        w = (p.get("proxyWallet") or "").lower()
+        if w not in self.watched:
+            return
+        ts = p.get("timestamp") or 0
+        if ts > 1e12:
+            ts /= 1000.0
+        lat = (time.time() - ts) if ts else None
+        self.hits += 1
+        name = self.bot.names.get(w, w[:10])
+        log(f"rtds: {name} {p.get('side')} {p.get('size')} @ {p.get('price')}"
+            f" · {str(p.get('title'))[:40]}"
+            f"{f' · lat {lat:.1f}s' if lat is not None else ''}")
+        try:                              # same funnel as the Alchemy push —
+            self.bot.on_wallet_activity(w)   # locks internally, never raises out
+        except Exception as e:
+            log(f"rtds handler error: {e}")
 
 
 # ── the push → filter → execute bridge ──────────────────────────────────────
@@ -1196,6 +1300,11 @@ class Copybot:
         gap = self.chain_cash_gap()
         if gap is not None and abs(gap) > 1.0:      # ≥$1: beyond fee/rounding float
             driftstr += f" · ⚠ CASH≠CHAIN ${gap:+.2f}"
+        rtds = getattr(self, "rtds", None)
+        if rtds is not None:
+            st = rtds.status()
+            driftstr += (f" · rtds {st}" if st.startswith("up")
+                         else f" · ⚠ rtds {st}")
         log(f"[{cycle}] open {n} · deployed ${exp:,.0f} · free ${cash:,.0f}/${bank:,.0f}"
             f"{bankstr} · realized ${realized:+,.2f}{lagstr}{driftstr}"
             + (f" · CAN'T OPEN (free < ${stake:,.0f} stake — bets missed)"
@@ -1841,6 +1950,17 @@ def main():
                       if want_live else "")
     filt = FollowFilter(cfg)
     bot = Copybot(cfg, engine, filt, redeemer=redeemer)
+
+    # T0 detection — the RTDS trade stream (~1s, wallet-attributed). Paper
+    # runs it by default (the 24h shadow run, 2026-07-10); the REAL-MONEY
+    # role stays on the proven Alchemy+poll stack until the shadow validates,
+    # then: flyctl secrets set RTDS_DETECT=1 -a wwf-copybot-live.
+    rtds_default = "0" if os.environ.get("COPYBOT_ROLE", "paper") == "live" else "1"
+    if (os.environ.get("RTDS_DETECT") or rtds_default) == "1":
+        bot.rtds = RtdsListener(bot)
+        bot.rtds.start()
+    else:
+        log("rtds: T0 listener disabled for this role (RTDS_DETECT=1 enables)")
 
     # on-chain resolution RPC (payout vectors for operator-resolved markets):
     # env ALCHEMY_RPC_URL wins (the Fly worker has no config.json), else the

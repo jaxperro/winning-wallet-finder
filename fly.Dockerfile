@@ -11,7 +11,7 @@ RUN apt-get update \
 # the CLOB rejects its order format — reads still work, so it stays for the
 # legacy read paths). Pinned to the beta the wrap+probe were validated on.
 RUN pip install --no-cache-dir py-clob-client==0.34.6 web3==7.16.0 \
-    polymarket-client==0.1.0b16
+    polymarket-client==0.1.0b16 websocket-client==1.9.0
 WORKDIR /app
 COPY host/ /app/host/
 CMD ["bash", "host/start.sh"]
