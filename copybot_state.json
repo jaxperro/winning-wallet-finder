@@ -5941,8 +5941,8 @@
     }
   },
   "hwm": 2258.3082600369416,
-  "feed_sig": "c942612e00ddcde8ccc84f02091bb1e6",
-  "feed_pushed_at": 1783700718.6190693,
+  "feed_sig": "6bcb6bb4bb3dcc5e377b5b6373e68cda",
+  "feed_pushed_at": 1783701095.3431761,
   "missed": [
     {
       "ts": 1783590977,
@@ -6457,6 +6457,21 @@
       "settled": 1783700847,
       "name": "gkmgkldfmg",
       "exit_price": 0.0679
+    },
+    {
+      "ts": 1783701159,
+      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+      "token": "69027125899922146323810811399170864348440104511791629984973003274267414851012",
+      "cond": "0x02ab4a8dda332808f3c27061a0449645546834bc324e0d5e617bdc33500cf6c5",
+      "title": "Dota 2: REKONIX vs Team Spirit - Game 2 Winner",
+      "outcome": "REKONIX",
+      "price": 0.1005,
+      "stake": 87.32,
+      "reason": "not copied in the detection window (reconciled)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "gkmgkldfmg"
     }
   ],
   "no_miss_toks": [
