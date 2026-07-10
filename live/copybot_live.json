@@ -1168,7 +1168,8 @@
    "status": "won",
    "pnl": 6.11,
    "settled": 1783718413,
-   "name": "LSB1"
+   "name": "LSB1",
+   "exit_checked": true
   },
   {
    "ts": 1783718289,
@@ -1781,5 +1782,5 @@
   }
  ],
  "missed_pnl": -212.87,
- "updated": 1783718477
+ "updated": 1783718608
 }
