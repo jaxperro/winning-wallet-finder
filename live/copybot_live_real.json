@@ -184,6 +184,21 @@
  ],
  "missed": [
   {
+   "ts": 1783704093,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "38744650140929980444150118816863740267135734413960049059734200133364895803618",
+   "cond": "0x993a12bda634e4b98a1ccec9f27ce8b44a0d8685ce64da6040a9db9ae7083a1b",
+   "title": "Dota 2: 1win vs OG - Game 1 Winner",
+   "outcome": "1win",
+   "price": 0.76,
+   "stake": 4.5,
+   "reason": "capped to $-10.00 < min order $1.00 (caps)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783700828,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "69027125899922146323810811399170864348440104511791629984973003274267414851012",
@@ -1031,5 +1046,5 @@
   }
  ],
  "missed_pnl": 87.44,
- "updated": 1783702473
+ "updated": 1783704093
 }
