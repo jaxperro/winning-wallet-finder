@@ -1,4 +1,24 @@
-# Session handoff — 2026-07-10 (rev 7: re-armed on the paper-parity retune)
+# Session handoff — 2026-07-10 (rev 8: RTDS T0 detection — paper shadow run live)
+
+## RTDS shadow run (started 2026-07-10 22:26Z)
+
+**T0 detection is deployed**: `RtdsListener` in copybot.py streams
+Polymarket's real-time trade socket (`wss://ws-live-data.polymarket.com`,
+topic `activity`/type `trades` — undocumented but official; probe measured
+**median 0.8s delivery**, ~45 msg/s peak firehose, zero drops in 45 min).
+Client-side Set E filter → the same `on_wallet_activity` funnel as the
+Alchemy push. Heartbeat shows `rtds up Ns` / `⚠ rtds down`.
+
+- **Paper: ON by default** — this IS the 24h shadow run. Compare `rtds:`
+  detection lines vs Alchemy-path lag; watch the in-play tail (does RTDS
+  emit held esports matches at match time or settlement?).
+- **Live: OFF until the shadow validates.** Enable with
+  `flyctl secrets set RTDS_DETECT=1 -a wwf-copybot-live` (restarts armed).
+- Expected outcome: 24h lag stat drops toward ~1-2s and the
+  "not copied in the detection window" misses go near-zero on paper.
+- Phase 2 (researched, not built): RTDS `clob_user` topic streams OUR order
+  lifecycle (auth: CLOB api creds) — would make the pending-order registry
+  event-driven instead of 60s polling.
 
 ## Retune (2026-07-10 ~21:20Z, USER-directed — supersedes the rule-0.6 caps)
 
