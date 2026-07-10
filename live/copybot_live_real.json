@@ -184,6 +184,21 @@
  ],
  "missed": [
   {
+   "ts": 1783727075,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "94261332494094465883021120894226351499139897211148377866980779595546383514545",
+   "cond": "0x73deedfe0a8d2167499fe6391f01cc871c8a182f7abc807933e260fe96d6aae1",
+   "title": "Will Botafogo FC win on 2026-07-10?",
+   "outcome": "Yes",
+   "price": 0.77,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783724102,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "30171303100765004612243778406121391796571838604034412150376032542494004186310",
@@ -1121,25 +1136,8 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783602416,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "65585128992878043579543337949365468961659444652241007486927374035531121325136",
-   "cond": "0x7d055d8db3ee70c0781b1a263c29beefcbf83bc9790c06b67199221135e34029",
-   "title": "Dota 2: Nigma Galaxy vs Team Liquid - Game 1 Winner",
-   "outcome": "Team Liquid",
-   "price": 0.35,
-   "stake": 5.0,
-   "reason": "price moved 0.25\u21920.35",
-   "status": "sold",
-   "pnl": -1.27,
-   "settled": 1783611798,
-   "name": "gkmgkldfmg",
-   "exit_checked": true,
-   "exit_price": 0.2742
   }
  ],
  "missed_pnl": 102.14,
- "updated": 1783724156
+ "updated": 1783727075
 }
