@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 90.0,
+ "stake": 90.79,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 2258.31,
- "cash": 1764.59,
+ "hwm": 2269.83,
+ "cash": 1784.52,
  "deployed": 485.31,
  "reserve": 0.0,
- "realized": 1249.88,
+ "realized": 1269.8,
  "adjustments": 0.03,
- "ledger_drift": 0.01,
+ "ledger_drift": 0.02,
  "open_count": 9,
- "fees_paid": 93.63,
+ "fees_paid": 96.73,
  "fee_rate": 0.03,
  "lag": {
-  "n": 58,
-  "n24": 28,
-  "avg_s": 35.7,
-  "avg_slip_pct": -0.0576,
+  "n": 59,
+  "n24": 29,
+  "avg_s": 34.6,
+  "avg_slip_pct": -0.0572,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "69332829857352543341630758571211075272974294373246290749231665438041402756556",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "OG",
+   "title": "Dota 2: 1win vs OG - Game 2 Winner",
+   "their_price": 0.4499,
+   "my_price": 0.43,
+   "slippage_pct": -0.0443,
+   "shares": 209.29,
+   "cost": 90.0,
+   "fee": 1.54,
+   "opened": 1783710275,
+   "status": "closed",
+   "exit_price": 0.5325,
+   "pnl": 19.92,
+   "settled": 1783710317,
+   "sold_shares": 209.29,
+   "sold_proceeds": 111.46
+  },
   {
    "token": "64116761477742027701109652941632411292105231683011506366532020565363935650673",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1660,5 +1680,5 @@
   }
  ],
  "missed_pnl": -200.86,
- "updated": 1783709680
+ "updated": 1783710317
 }
