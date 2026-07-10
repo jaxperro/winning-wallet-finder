@@ -79,10 +79,27 @@
    "price": 0.15,
    "stake": 5.0,
    "reason": "price moved 0.14\u21920.15",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 0.75,
+   "settled": 1783688497,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.1809
+  },
+  {
+   "ts": 1783632128,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "64240896700312109784630886706605953876703771364083875350159352793781549030993",
+   "cond": "0xd2cf27a164b628e715d98d212f16482adef61ac91f8bc635a477f2b5c1c1fdb2",
+   "title": "Map Handicap: LEO (-1.5) vs Prestige Academy (+1.5)",
+   "outcome": "Prestige Academy",
+   "price": 0.5,
+   "stake": 5.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 0.2,
+   "settled": 1783688496,
+   "name": "Kruto2027",
+   "exit_price": 0.5352
   },
   {
    "ts": 1783688083,
@@ -430,21 +447,6 @@
    "exit_price": 1.0
   },
   {
-   "ts": 1783632128,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "64240896700312109784630886706605953876703771364083875350159352793781549030993",
-   "cond": "0xd2cf27a164b628e715d98d212f16482adef61ac91f8bc635a477f2b5c1c1fdb2",
-   "title": "Map Handicap: LEO (-1.5) vs Prestige Academy (+1.5)",
-   "outcome": "Prestige Academy",
-   "price": 0.5,
-   "stake": 5.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
-  },
-  {
    "ts": 1783622151,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "108947296508063592085718442826411169359443176266922838741305348631169975990701",
@@ -769,6 +771,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 74.09,
- "updated": 1783688206
+ "missed_pnl": 75.04,
+ "updated": 1783688498
 }
