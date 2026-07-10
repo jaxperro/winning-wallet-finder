@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 95.12,
+ "stake": 95.73,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 2377.97,
- "cash": 1947.42,
- "deployed": 430.55,
+ "hwm": 2393.15,
+ "cash": 2027.3,
+ "deployed": 365.85,
  "reserve": 0.0,
- "realized": 1377.94,
+ "realized": 1393.12,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 8,
+ "open_count": 7,
  "fees_paid": 98.78,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "64116761477742027701109652941632411292105231683011506366532020565363935650673",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Hans Vanaken: 3+ shots",
+   "their_price": 0.8,
+   "my_price": 0.81,
+   "slippage_pct": 0.0125,
+   "shares": 79.88,
+   "cost": 64.7,
+   "fee": 0.37,
+   "opened": 1783709119,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 14.81,
+   "settled": 1783719420
+  },
   {
    "token": "9679320407472932109528091937661974039402650044145955274074635176957029935409",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -106,24 +124,6 @@
    "settled": 1783710317,
    "sold_shares": 209.29,
    "sold_proceeds": 111.46
-  },
-  {
-   "token": "64116761477742027701109652941632411292105231683011506366532020565363935650673",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Hans Vanaken: 3+ shots",
-   "their_price": 0.8,
-   "my_price": 0.81,
-   "slippage_pct": 0.0125,
-   "shares": 79.88,
-   "cost": 64.7,
-   "fee": 0.37,
-   "opened": 1783709119,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "41527735652152287965662705198504489542457379550490679965396371339149288130273",
@@ -1156,6 +1156,21 @@
  ],
  "missed": [
   {
+   "ts": 1783709296,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "64116761477742027701109652941632411292105231683011506366532020565363935650673",
+   "cond": "0x9d4a016f4a18ff8f3b28a0c0adf2a03254033f6d022c88e13495738e2178c3d9",
+   "title": "Hans Vanaken: 3+ shots",
+   "outcome": "No",
+   "price": 0.7844,
+   "stake": 83.09,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 22.3,
+   "settled": 1783719420,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783712755,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "82295795004428430940433303735647458980029294814595402162619417282565717266755",
@@ -1249,21 +1264,6 @@
    "settled": 1783710874,
    "name": "gkmgkldfmg",
    "exit_price": 0.6065
-  },
-  {
-   "ts": 1783709296,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "64116761477742027701109652941632411292105231683011506366532020565363935650673",
-   "cond": "0x9d4a016f4a18ff8f3b28a0c0adf2a03254033f6d022c88e13495738e2178c3d9",
-   "title": "Hans Vanaken: 3+ shots",
-   "outcome": "No",
-   "price": 0.7844,
-   "stake": 83.09,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1783701159,
@@ -1781,6 +1781,6 @@
    "exit_price": 0.95
   }
  ],
- "missed_pnl": -212.87,
- "updated": 1783718608
+ "missed_pnl": -190.57,
+ "updated": 1783719420
 }
