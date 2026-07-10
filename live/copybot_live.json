@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 84.3,
+ "stake": 84.34,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2111.53,
- "cash": 1674.5,
- "deployed": 432.9,
+ "cash": 1689.82,
+ "deployed": 418.57,
  "reserve": 0.0,
- "realized": 1107.37,
+ "realized": 1108.36,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 7,
- "fees_paid": 56.04,
+ "ledger_drift": -0.0,
+ "open_count": 6,
+ "fees_paid": 56.06,
  "fee_rate": 0.03,
  "lag": {
   "n": 37,
@@ -49,6 +49,26 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "244048590847349569142622450288686721247802348946192951002087804863968899",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Probable FDV above $800M one day after launch?",
+   "their_price": 0.9174,
+   "my_price": 0.9,
+   "slippage_pct": -0.019,
+   "shares": 44.44,
+   "cost": 40.0,
+   "fee": 0.12,
+   "opened": 1783545809,
+   "status": "closed",
+   "exit_price": 0.9604,
+   "pnl": 2.56,
+   "settled": 1783653705,
+   "sold_shares": 44.44,
+   "sold_proceeds": 42.68
+  },
   {
    "token": "112398855248126389642334724080634566219399886008841203075173521868162852635909",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -678,26 +698,6 @@
    "settled": 1783556032,
    "sold_shares": 42.06,
    "sold_proceeds": 41.6
-  },
-  {
-   "token": "244048590847349569142622450288686721247802348946192951002087804863968899",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Probable FDV above $800M one day after launch?",
-   "their_price": 0.9174,
-   "my_price": 0.9,
-   "slippage_pct": -0.019,
-   "shares": 44.44,
-   "cost": 40.0,
-   "fee": 0.12,
-   "opened": 1783545809,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 28.52,
-   "sold_proceeds": 27.36
   }
  ],
  "missed": [
@@ -1025,5 +1025,5 @@
   }
  ],
  "missed_pnl": 0.87,
- "updated": 1783652153
+ "updated": 1783653705
 }
