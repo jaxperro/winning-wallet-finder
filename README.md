@@ -381,6 +381,17 @@ runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
     — revoke in-process before exit (`atexit` in the probe) or they pile up
     unrevocable-but-inert on the account (9 accumulated during bring-up;
     the UI at polymarket.com/settings?tab=builder can clean those).
+17. **In-play order acceptance reports ZERO matched — it is NOT a rejection.**
+    In-play (esports/live-game) markets return `AcceptedOrder` with status
+    `delayed` and `making/taking = 0`; the match happens seconds-to-minutes
+    later at the exchange. Treating zero-matched as a miss caused the
+    2026-07-10 incident: six $5 copies were logged as misses and filled
+    untracked — the book went blind, caps stopped binding, exits were never
+    mirrored (net −$2.7; the CASH≠CHAIN alarm caught it). The executor's
+    invariant since: **no order outlives the placing call untracked** —
+    poll `get_order`, cancel the remainder, then measure the fill as the
+    exchange's CONDITIONAL-balance diff (chain truth beats response parsing).
+    Same sweep runs on exception paths (a timed-out POST may still fill).
 
 ---
 

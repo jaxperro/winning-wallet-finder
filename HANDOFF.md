@@ -1,4 +1,32 @@
-# Session handoff — 2026-07-10 (rev 5.1: live app on PUSH mode — awaiting first organic fill)
+# Session handoff — 2026-07-10 (rev 6: delayed-fill incident fixed — DISARMED, re-arm is the user's call)
+
+## INCIDENT 2026-07-10 (resolved in code; bot left DISARMED)
+
+Push mode worked (~6s detection) — and exposed an executor bug: **in-play
+markets accept orders with status `delayed` and ZERO matched at response
+time**. The port read matched==0 as a rejection, logged an honest miss, and
+forgot the order — six such orders then **filled at the exchange untracked**
+(09:10–13:14Z, $30 real spend vs $5 booked; caps stopped binding; exits never
+mirrored; CASH≠CHAIN alarmed exactly as designed). Damage net **≈ −$2.7**
+(G2 g2/g3 and PlayTime g1 lost; Rune Eaters +$7.50 and Aurora g1 +$3.77 won,
+platform auto-redeemed; Aurora g2 won, redeem pending). First diagnosis
+wrongly blamed a second bot instance — the missed ledger's
+"order rejected: {'order_id': …}" rows matching on-chain fills to the second
+settled it: it was THIS bot.
+
+**Fix (copybot.py, unit-tested with a stub client, 5 paths):** the executor
+invariant is now *no order outlives `_order()` untracked* — zero-matched
+acceptances poll `get_order`, cancel the remainder, and measure truth via the
+exchange's CONDITIONAL balance diff; exception paths sweep all open orders on
+the token the same way. State surgery done disarmed: cash = chain ($10.03),
+six fills adopted as bets, spend tracker = the real $35 today (over cap → a
+re-arm today places nothing new), false miss rows purged, −$0.59 adjustment
+documented.
+
+**DISARMED via `flyctl secrets unset LIVE_CONFIRM` (survives restarts —
+note `machine stop` does NOT: http_service auto-restarts the machine).
+Re-arm = user types `flyctl secrets set LIVE_CONFIRM="TRADE LIVE"` after
+reviewing the fix. Recommended: re-run a probe on an IN-PLAY market first.**
 
 Self-contained pickup for a fresh session (human or AI). Read
 [README.md](README.md) gotchas 1–16 (16 is the new-stack one), 
