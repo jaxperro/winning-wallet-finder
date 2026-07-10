@@ -184,6 +184,22 @@
  ],
  "missed": [
   {
+   "ts": 1783697297,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "9680605212686211980723723137267513726715630041509403278769393973882140080333",
+   "cond": "0xfb659e6505a847f578b31814f4cc241aba23f9dfe751fbb09d54b0661e0ca17d",
+   "title": "Dota 2: PARIVISION vs MOUZ - Game 1 Winner",
+   "outcome": "MOUZ",
+   "price": 0.1929,
+   "stake": 4.05,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 1.59,
+   "settled": 1783697783,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.2791
+  },
+  {
    "ts": 1783695471,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "40594224108520253108624365887167881382842057398183982530866129414581985931630",
@@ -198,21 +214,6 @@
    "settled": 1783697300,
    "name": "gkmgkldfmg",
    "exit_price": 0.95
-  },
-  {
-   "ts": 1783697297,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "9680605212686211980723723137267513726715630041509403278769393973882140080333",
-   "cond": "0xfb659e6505a847f578b31814f4cc241aba23f9dfe751fbb09d54b0661e0ca17d",
-   "title": "Dota 2: PARIVISION vs MOUZ - Game 1 Winner",
-   "outcome": "MOUZ",
-   "price": 0.1929,
-   "stake": 4.05,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1783695042,
@@ -965,6 +966,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 90.16,
- "updated": 1783697472
+ "missed_pnl": 91.75,
+ "updated": 1783697784
 }
