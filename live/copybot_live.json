@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 97.7,
+ "stake": 98.17,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 2443.23,
- "cash": 2041.83,
- "deployed": 400.73,
+ "hwm": 2454.23,
+ "cash": 2042.3,
+ "deployed": 411.94,
  "reserve": 0.0,
- "realized": 1442.52,
+ "realized": 1454.2,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 8,
- "fees_paid": 100.58,
+ "open_count": 9,
+ "fees_paid": 102.41,
  "fee_rate": 0.03,
  "lag": {
-  "n": 61,
-  "n24": 25,
-  "avg_s": 30.4,
-  "avg_slip_pct": -0.0457,
+  "n": 62,
+  "n24": 26,
+  "avg_s": 29.4,
+  "avg_slip_pct": -0.0429,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "76668431089191294884722284769810081002688692300759117208537364410807093425248",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Up",
+   "title": "Bitcoin Up or Down - July 10, 7PM ET",
+   "their_price": 0.6236,
+   "my_price": 0.64,
+   "slippage_pct": 0.0264,
+   "shares": 152.66,
+   "cost": 97.7,
+   "fee": 1.06,
+   "opened": 1783727677,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "sold_shares": 135.14,
+   "sold_proceeds": 99.23
+  },
   {
    "token": "94261332494094465883021120894226351499139897211148377866980779595546383514545",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -1818,5 +1838,5 @@
   }
  ],
  "missed_pnl": -225.76,
- "updated": 1783727076
+ "updated": 1783727705
 }
