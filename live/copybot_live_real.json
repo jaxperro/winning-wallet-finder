@@ -70,6 +70,21 @@
  ],
  "missed": [
   {
+   "ts": 1783678767,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "17576311024807680773221242546715308879815393843298876875648597925683453046372",
+   "cond": "0x375f509abfb41ebb2ff239fdc1bd2dc0cb0ddeb6ff07cce84711519fbba8be3d",
+   "title": "Dota 2: Poor Rangers vs Team Falcons - Game 2 Winner",
+   "outcome": "Poor Rangers",
+   "price": 0.12,
+   "stake": 5.0,
+   "reason": "order rejected: exception: not enough balance / allowance: the balance is no",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783678193,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "47405794293316148244590035888323531202770006061275899647071095856237793879763",
@@ -611,5 +626,5 @@
   }
  ],
  "missed_pnl": 70.17,
- "updated": 1783678193
+ "updated": 1783678767
 }
