@@ -76,7 +76,7 @@ with client:
     USDC = "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
     COLLAT = "0xC011a7E12a19f7B1f670d46F03B03f3342E82DFB"
     try:
-        h = client.approve_erc20(token_address=USDC, spender=COLLAT, amount=2**256 - 1)
+        h = client.approve_erc20(token_address=USDC, spender_address=COLLAT, amount="max")
         if h is not None and hasattr(h, "wait"):
             print("  USDC→collateral approval:", str(h.wait())[:150])
         else:
