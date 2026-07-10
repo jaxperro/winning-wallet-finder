@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 84.34,
+ "stake": 84.3,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2111.53,
- "cash": 1755.02,
- "deployed": 353.45,
+ "cash": 1674.5,
+ "deployed": 432.9,
  "reserve": 0.0,
- "realized": 1108.45,
+ "realized": 1107.37,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 6,
- "fees_paid": 54.97,
+ "open_count": 7,
+ "fees_paid": 56.04,
  "fee_rate": 0.03,
  "lag": {
-  "n": 36,
-  "n24": 34,
-  "avg_s": 31.0,
-  "avg_slip_pct": -0.0727,
+  "n": 37,
+  "n24": 35,
+  "avg_s": 37.3,
+  "avg_slip_pct": -0.0719,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "112398855248126389642334724080634566219399886008841203075173521868162852635909",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "IAEA visits Isfahan, Fordow, or Natanz nuclear site by October 31?",
+   "their_price": 0.5765,
+   "my_price": 0.55,
+   "slippage_pct": -0.0459,
+   "shares": 144.45,
+   "cost": 79.45,
+   "fee": 1.07,
+   "opened": 1783650970,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -684,6 +702,21 @@
  ],
  "missed": [
   {
+   "ts": 1783651220,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "112398855248126389642334724080634566219399886008841203075173521868162852635909",
+   "cond": "0x73dd54214430d1d67ddf59ad22fdf62e00e71e273b229dc0040da504e5281b6f",
+   "title": "IAEA visits Isfahan, Fordow, or Natanz nuclear site by October 31?",
+   "outcome": "No",
+   "price": 0.573,
+   "stake": 69.81,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783628730,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "3814128494502768477143514379926392387695049781340159117049849432213153191450",
@@ -976,5 +1009,5 @@
   }
  ],
  "missed_pnl": 19.79,
- "updated": 1783645451
+ "updated": 1783651222
 }
