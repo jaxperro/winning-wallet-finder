@@ -58,15 +58,28 @@ refused as maker ('use the deposit wallet flow'); bootstrap
 DEPLOYED the signer's Deposit Wallet:
 **0x455e252e45Ee46d6C4cc1c8fAdD3899d68f245a1**.
 
-Remaining: USER moves the $24.73 (UI withdraw → the deposit wallet
-address above — same key controls it); AGENT ports LedgerLiveExecutor to
-the new SDK (place_market_order: BUY by USD amount / SELL by shares, FAK;
-mint+store a fresh Builder key as Fly secrets — the bootstrap one's secret
-was not persisted, by design), adds polymarket-client to fly.Dockerfile,
-re-probes (host/order_probe_v2.py), re-arms. Probe scripts are in host/.
-Meanwhile the armed bot is harmless: every placement attempt returns
-ok:False and records an honest missed row ('order rejected: invalid order
-version').
+Remaining — WRAP STEP ONLY (status 2026-07-10 early AM): the $24.73 sits
+SAFE as native USDC at the deposit wallet (user's key controls it;
+recoverable/transferable at any time). Proven working tonight via probes:
+auth ✓, gasless execution ✓ (two real relayer txs: USDC approval
+0x1044d3c7…, earlier 0x935be727…), setup_trading_approvals ✓ (max-uint on
+all spenders), order FORMAT accepted ✓. The one remaining gap: the
+exchange's balance view counts only the COLLATERAL token
+(0xC011a7… wraps native USDC; UI flows wrap on deposit; our raw transfer
+bypassed it). Attempted: public wrapper periphery 0x93070a…
+wrap(asset,to,amount) via gasless batch → 'batch would revert' (likely
+caller-role-gated); neg-risk adapter ruled out (its mints are redeem
+change). NEXT SESSION (do NOT guess with live funds): read the ts-sdk's
+deposit/wrap implementation for deposit wallets (Polymarket/ts-sdk — same
+unified family, will contain the exact supported call), replicate via
+execute_transaction, THEN port LedgerLiveExecutor to the new SDK
+(place_market_order: BUY amount=$USD / SELL shares=, FAK; construct
+SecureClient(private_key) — wallet resolves, no api_key needed at runtime
+once approvals exist), add polymarket-client to fly.Dockerfile, re-probe
+(host/order_probe_v2.py — contains the full working onboarding sequence),
+re-arm. CLEANUP: several builder API keys were minted by probe runs —
+fetch_builder_api_keys/revoke the extras. The armed live bot remains
+harmless (ok:False + honest missed rows on every attempt).
 
 ## Queued next-session work (in value order)
 
