@@ -5565,8 +5565,8 @@
     }
   },
   "hwm": 2225.7662425874078,
-  "feed_sig": "cfe87f9056735a7480621aab3450e98c",
-  "feed_pushed_at": 1783689187.3692262,
+  "feed_sig": "0a76afd5e3ccccfd8d777ef87f88f0cc",
+  "feed_pushed_at": 1783689440.6692152,
   "missed": [
     {
       "ts": 1783590977,
@@ -5985,6 +5985,20 @@
       "settled": 1783688625,
       "name": "gkmgkldfmg",
       "exit_price": 0.1809
+    },
+    {
+      "ts": 1783689565,
+      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+      "token": "49886282303318964434544606851164664333698127985256361511182784657423645654000",
+      "cond": "0x8545a030f00ef7748aa1c00481a9f01ec4b73550aef97b564a3f5a07b31f8f9d",
+      "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
+      "outcome": "Aurora",
+      "price": 0.6799,
+      "stake": 82.22,
+      "reason": "not copied in the detection window (reconciled)",
+      "status": "open",
+      "pnl": null,
+      "settled": null
     }
   ],
   "no_miss_toks": [
