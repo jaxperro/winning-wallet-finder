@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 94.39,
+ "stake": 95.12,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 2359.69,
- "cash": 1884.37,
- "deployed": 475.31,
+ "hwm": 2377.97,
+ "cash": 1947.42,
+ "deployed": 430.55,
  "reserve": 0.0,
- "realized": 1359.66,
+ "realized": 1377.94,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 9,
+ "open_count": 8,
  "fees_paid": 98.78,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,24 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "9679320407472932109528091937661974039402650044145955274074635176957029935409",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Micron Technology, Inc. (MU) hit (LOW) $810 Week of July 6 2026?",
+   "their_price": 0.89,
+   "my_price": 0.71,
+   "slippage_pct": -0.2022,
+   "shares": 63.05,
+   "cost": 44.77,
+   "fee": 0.39,
+   "opened": 1783597933,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 17.89,
+   "settled": 1783715664
+  },
   {
    "token": "69332829857352543341630758571211075272974294373246290749231665438041402756556",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -974,24 +992,6 @@
    "sold_proceeds": 50.88
   },
   {
-   "token": "9679320407472932109528091937661974039402650044145955274074635176957029935409",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Micron Technology, Inc. (MU) hit (LOW) $810 Week of July 6 2026?",
-   "their_price": 0.89,
-   "my_price": 0.71,
-   "slippage_pct": -0.2022,
-   "shares": 63.05,
-   "cost": 44.77,
-   "fee": 0.39,
-   "opened": 1783597933,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
    "token": "67316041392595003970935162895075724563017159074192091517379695493042764601836",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -1155,6 +1155,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1783598001,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "9679320407472932109528091937661974039402650044145955274074635176957029935409",
+   "cond": "0x45bd5bbfdfea7124c07903b2b48804ae485555c5c2edb42c1c1446a0706f1ee9",
+   "title": "Will Micron Technology, Inc. (MU) hit (LOW) $810 Week of July 6 2026?",
+   "outcome": "No",
+   "price": 0.89,
+   "stake": 44.77,
+   "reason": "followed but not placed \u2014 silent exit at copy time (thin/no-ask book most likely; both silent paths instrumented 2026-07-09)",
+   "status": "won",
+   "pnl": 5.39,
+   "settled": 1783715665,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1783712755,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -1745,23 +1760,8 @@
    "name": "AIcAIc",
    "exit_checked": true,
    "exit_price": 0.95
-  },
-  {
-   "ts": 1783598001,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "9679320407472932109528091937661974039402650044145955274074635176957029935409",
-   "cond": "0x45bd5bbfdfea7124c07903b2b48804ae485555c5c2edb42c1c1446a0706f1ee9",
-   "title": "Will Micron Technology, Inc. (MU) hit (LOW) $810 Week of July 6 2026?",
-   "outcome": "No",
-   "price": 0.89,
-   "stake": 44.77,
-   "reason": "followed but not placed \u2014 silent exit at copy time (thin/no-ask book most likely; both silent paths instrumented 2026-07-09)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": -227.29,
- "updated": 1783714688
+ "missed_pnl": -221.9,
+ "updated": 1783715666
 }
