@@ -86,10 +86,17 @@ with client:
     except Exception as e:
         print("BUY raised:", type(e).__name__, str(e)[:300])
         sys.exit(1)
-    time.sleep(3)
-    funder = os.environ["LIVE_FUNDER_ADDRESS"].strip()
-    pos = get(f"https://data-api.polymarket.com/positions?user={funder}&sizeThreshold=0&limit=50")
-    mine = [p for p in pos if str(p.get("asset")) == str(tok)]
+    # the data-api indexer lags fills by seconds — poll, don't one-shot (the
+    # 2026-07-10 first fill was missed by a fixed 3s wait, skipping the sell)
+    dw = str(client.wallet)
+    mine = []
+    for _ in range(12):
+        time.sleep(5)
+        pos = get(f"https://data-api.polymarket.com/positions?user={dw}&sizeThreshold=0&limit=50")
+        mine = [p for p in pos if str(p.get("asset")) == str(tok)
+                and (p.get("size") or 0) > 0]
+        if mine:
+            break
     print("\nposition after buy:", [{ "size": p.get("size"), "avg": p.get("avgPrice")} for p in mine])
     if mine and (mine[0].get("size") or 0) > 0:
         sh = mine[0]["size"]
