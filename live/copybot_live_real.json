@@ -184,6 +184,36 @@
  ],
  "missed": [
   {
+   "ts": 1783712474,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "51142349456107958414584954407545686562582425523546369924249014347922759701733",
+   "cond": "0x236ca6f052bc08a309294a01031b8a13fed4e2b7a326b54c05c4a852d65bb864",
+   "title": "Spain vs. Belgium: Both Teams to Score in First Half",
+   "outcome": "Yes",
+   "price": 0.8395,
+   "stake": 4.5,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
+   "ts": 1783712474,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "82295795004428430940433303735647458980029294814595402162619417282565717266755",
+   "cond": "0xd0a6bb658382e926ce702e8abb092f34ca7701ab6d383fc1f15e356da8c80ff2",
+   "title": "Exact Score: Spain 3 - 0 Belgium?",
+   "outcome": "No",
+   "price": 0.9375,
+   "stake": 4.5,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783711848,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "77385979624472636654785737076226829530003846611286280041398312121632938952313",
@@ -1106,40 +1136,8 @@
    "name": "gkmgkldfmg",
    "exit_checked": true,
    "exit_price": 0.1183
-  },
-  {
-   "ts": 1783590223,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "41730590020783104130704685147378917247238626421058824794966180989145470736849",
-   "cond": "0xcce05b6cfa386c0ed4a1ea7dda9de70669dbe9a4e243fc9b50fd9f639334b511",
-   "title": "Dota 2: BetBoom Team vs Rune Eaters - Game 1 Winner",
-   "outcome": "Rune Eaters",
-   "price": 0.43,
-   "stake": 5.0,
-   "reason": "price moved 0.39\u21920.43",
-   "status": "sold",
-   "pnl": 6.18,
-   "settled": 1783604560,
-   "name": "gkmgkldfmg",
-   "exit_checked": true,
-   "exit_price": 0.97
-  },
-  {
-   "ts": 1783604371,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
-   "cond": "0xa164172b7cee74420cfce554c3a265b2553cb80e48b36e286e67f302b6574712",
-   "title": "Ethereal FDV above $500M one day after launch?",
-   "outcome": "No",
-   "price": 0.8199,
-   "stake": 5.0,
-   "reason": "followed but not placed \u2014 silent exit at copy time (thin/no-ask book most likely; both silent paths instrumented 2026-07-09)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": 99.12,
- "updated": 1783711853
+ "updated": 1783712479
 }
