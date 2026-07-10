@@ -70,6 +70,21 @@
  ],
  "missed": [
   {
+   "ts": 1783684725,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "99750659249903955439120052604225640907367048033793216838103937845588350738197",
+   "cond": "0x54d63713c8802102f64ee5134c567576c6bb43b458e218c8475f67a20f466b06",
+   "title": "Dota 2: Aurora vs PlayTime - Game 1 Winner",
+   "outcome": "PlayTime",
+   "price": 0.34,
+   "stake": 5.0,
+   "reason": "order rejected: exception: not enough balance / allowance: the balance is no",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783681134,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "48197863914950401257348797854686849356505675289127641428641827304586227994435",
@@ -674,5 +689,5 @@
   }
  ],
  "missed_pnl": 72.44,
- "updated": 1783681281
+ "updated": 1783684726
 }
