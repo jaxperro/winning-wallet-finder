@@ -838,6 +838,21 @@
  ],
  "missed": [
   {
+   "ts": 1783677861,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "100198471262079386993761824025743140222494027672175410847273506523400747511360",
+   "cond": "0xbb0f06d9834bc69265a845a296cd01e4426f964627509a9f2d5383b43e89803f",
+   "title": "Dota 2: Xtreme Gaming vs BetBoom Team - Game 1 Winner",
+   "outcome": "Xtreme Gaming",
+   "price": 0.38,
+   "stake": 85.1,
+   "reason": "price moved 0.28\u21920.38",
+   "status": "lost",
+   "pnl": -86.68,
+   "settled": 1783685621,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783685101,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "99750659249903955439120052604225640907367048033793216838103937845588350738197",
@@ -867,21 +882,6 @@
    "settled": 1783681390,
    "name": "gkmgkldfmg",
    "exit_price": 0.63
-  },
-  {
-   "ts": 1783677861,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "100198471262079386993761824025743140222494027672175410847273506523400747511360",
-   "cond": "0xbb0f06d9834bc69265a845a296cd01e4426f964627509a9f2d5383b43e89803f",
-   "title": "Dota 2: Xtreme Gaming vs BetBoom Team - Game 1 Winner",
-   "outcome": "Xtreme Gaming",
-   "price": 0.38,
-   "stake": 85.1,
-   "reason": "price moved 0.28\u21920.38",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1783675836,
@@ -1238,6 +1238,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": -14.76,
- "updated": 1783685387
+ "missed_pnl": -101.44,
+ "updated": 1783685624
 }
