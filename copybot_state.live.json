@@ -4926,10 +4926,11 @@
       "price": 0.8,
       "stake": 5.0,
       "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "0xbadaf319"
+      "status": "sold",
+      "pnl": 0.26,
+      "settled": 1783671623,
+      "name": "0xbadaf319",
+      "exit_price": 0.85
     },
     {
       "ts": 1783665415,
@@ -4956,12 +4957,13 @@
       "price": 0.99,
       "stake": 5.0,
       "reason": "price moved 0.55\u21920.99",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "imwalkinghere"
+      "status": "sold",
+      "pnl": -2.24,
+      "settled": 1783671623,
+      "name": "imwalkinghere",
+      "exit_price": 0.555
     }
   ],
-  "feed_sig": "5e10296a3a84cc130113f0ff56ac3aa9",
-  "feed_pushed_at": 1783671305.7468314
+  "feed_sig": "bfcbdb1f5ba41c3622a3c5fb7c5818f2",
+  "feed_pushed_at": 1783671559.028476
 }
