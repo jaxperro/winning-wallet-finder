@@ -89,5 +89,6 @@
     }
   ],
   "feed_path": "live/copybot_live_real.json",
-  "fill_log": "copybot_fills.live.jsonl"
+  "fill_log": "copybot_fills.live.jsonl",
+  "shadow_log": "rtds_shadow.live.jsonl"
 }

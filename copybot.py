@@ -561,6 +561,25 @@ class RtdsListener:
         log(f"rtds: {name} {p.get('side')} {p.get('size')} @ {p.get('price')}"
             f" · {str(p.get('title'))[:40]}"
             f"{f' · lat {lat:.1f}s' if lat is not None else ''}")
+        # shadow ledger — the durable record the RTDS-vs-Alchemy comparison
+        # reads (Fly logs are ephemeral; this file rides the publish commit).
+        # `seen` = another trigger already processed this tx before RTDS won.
+        try:
+            tx = p.get("transactionHash")
+            with open(os.path.join(self.bot.here, self.bot.shadow_log), "a") as fh:
+                fh.write(json.dumps({
+                    "ts": round(time.time(), 2), "trade_ts": round(ts, 2),
+                    "lat_s": round(lat, 2) if lat is not None else None,
+                    "wallet": w, "name": name, "side": p.get("side"),
+                    "size": p.get("size"), "price": p.get("price"),
+                    "title": str(p.get("title") or "")[:60], "tx": tx,
+                    "seen": bool(tx and tx in self.bot.engine.seen)}) + "\n")
+            if self.hits % 500 == 0:      # keep the committed file bounded
+                path = os.path.join(self.bot.here, self.bot.shadow_log)
+                lines = open(path).readlines()[-2000:]
+                open(path, "w").writelines(lines)
+        except Exception:
+            pass
         try:                              # same funnel as the Alchemy push —
             self.bot.on_wallet_activity(w)   # locks internally, never raises out
         except Exception as e:
@@ -586,6 +605,7 @@ class Copybot:
         self.here = os.path.dirname(os.path.abspath(__file__))
         self.feed_path = cfg.get("feed_path", FEED)
         self.fill_log = cfg.get("fill_log", FILL_LOG)
+        self.shadow_log = cfg.get("shadow_log", "rtds_shadow.jsonl")
         # persisted across restarts via the engine's state file
         self.conds = engine.state.setdefault("conds", {})   # token_id -> conditionId (open positions)
         engine.state.setdefault("cash", cfg["bankroll_usd"])  # free cash (recycles on sell/resolution)
@@ -1070,7 +1090,8 @@ class Copybot:
                 capture_output=True).returncode != 0
             if unchanged and not untracked:
                 return
-            paths = [p for p in (self.feed_path, self.engine.state_path, self.fill_log)
+            paths = [p for p in (self.feed_path, self.engine.state_path,
+                                 self.fill_log, self.shadow_log)
                      if os.path.exists(os.path.join(repo, p))]
             subprocess.run(["git", "-C", repo, "add", "-f"] + paths, capture_output=True)
             if subprocess.run(["git", "-C", repo, "diff", "--cached", "--quiet"],
@@ -1240,6 +1261,69 @@ class Copybot:
                                   f"sold {filled:.2f} @ {px:.3f} = "
                                   f"**${filled * px:.2f}**"))
         st["pending_orders"] = keep
+        self.engine.persist()
+
+    MAX_EXIT_RETRIES = 10
+
+    def retry_stuck_exits(self):
+        """LIVE_ROLLOUT 1.6: re-attempt failed mirror-exits each heartbeat.
+        A thin/no-bid book at copy time must not silently turn a scalp into
+        a hold-to-resolution — retry up to MAX_EXIT_RETRIES ticks, then page
+        Discord (⚠ EXIT STUCK) and let the position ride knowingly."""
+        st = self.engine.state
+        retries = st.get("exit_retries") or []
+        if not retries:
+            return
+        keep = []
+        for r in retries:
+            tok = r["token"]
+            mine = st["my_pos"].get(tok)
+            if not mine or mine.get("shares", 0) <= 0.01:
+                continue                    # settled/sold meanwhile — done
+            shares = min(r["shares"], mine["shares"])
+            price = self.engine._live_price(tok, "sell")
+            if price is None:
+                res = {"ok": False, "resp": "no bid side"}
+            else:
+                res = self.engine.ex.sell(tok, shares, price, {})
+            if res["ok"]:
+                frac = min(1.0, res["filled_shares"] / mine["shares"]) \
+                    if mine["shares"] else 1.0
+                mine["cost"] *= (1 - frac)
+                mine["shares"] -= res["filled_shares"]
+                if mine["shares"] <= 0.01:
+                    st["my_pos"].pop(tok, None)
+                self._drain_fills()
+                self.engine.alert(
+                    f"EXIT RECOVERED · {r['label'][:46]} — sold "
+                    f"{res['filled_shares']:.2f} @ {res['price']:.3f} "
+                    f"(attempt {r['attempts'] + 1})",
+                    discord_text=(f"🔴 **EXIT recovered** [LIVE]\n{r['label'][:60]}\n"
+                                  f"sold {res['filled_shares']:.2f} @ "
+                                  f"{res['price']:.3f} on retry "
+                                  f"{r['attempts'] + 1}"))
+                continue
+            if res.get("pending"):            # in-play hold — registry owns it now
+                st.setdefault("pending_orders", []).append({
+                    **res["pending"], "token": tok, "side": "SELL",
+                    "wallet": mine.get("wallet", ""), "title": mine.get("title", ""),
+                    "outcome": mine.get("outcome", ""), "event": mine.get("event"),
+                    "cond": mine.get("cond"), "their_price": price,
+                    "their_ts": None, "price": price, "is_add": False,
+                    "stake": shares * price, "ts": time.time(), "ttl_s": 600})
+                continue
+            r["attempts"] += 1
+            if r["attempts"] >= self.MAX_EXIT_RETRIES:
+                self.engine.alert(
+                    f"⚠ EXIT STUCK · {r['label'][:46]} — {r['attempts']} retries "
+                    "failed; position rides to resolution",
+                    discord_text=(f"🚨 **EXIT STUCK** [LIVE]\n{r['label'][:60]}\n"
+                                  f"{r['attempts']} sell retries failed "
+                                  f"(last: {str(res.get('resp'))[:60]}) — "
+                                  "position will ride to resolution"))
+                continue
+            keep.append(r)
+        st["exit_retries"] = keep
         self.engine.persist()
 
     _chain_bal = (0.0, None)     # (checked_at, usdc) — cached; poll ≤1/min
@@ -2034,6 +2118,7 @@ def main():
         try:
             while True:
                 bot.resolve_pendings()                # adopt/expire in-play held orders
+                bot.retry_stuck_exits()               # LIVE_ROLLOUT 1.6
                 bot.settle_resolved()                 # recycle capital at resolution
                 if cycle % 5 == 0:
                     bot.reconcile_exits()
@@ -2071,6 +2156,7 @@ def main():
             cycle += 1
             try:
                 bot.resolve_pendings()     # adopt/expire in-play held orders
+                bot.retry_stuck_exits()    # LIVE_ROLLOUT 1.6
                 bot.settle_resolved()
                 if cycle % 5 == 0:
                     bot.reconcile_exits()

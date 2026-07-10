@@ -61,6 +61,36 @@ DIR="${COPYBOT_DIR:-/tmp/wwf}"
 rm -rf "$DIR"
 git clone --depth 20 "$REPO_URL" "$DIR"
 cd "$DIR"
+
+# stale-clone guard (2026-07-10): a boot seconds after a push can clone a
+# stale GitHub replica (gotcha 15) — it bit twice today (a 4h run on
+# pre-push config). Verify the clone's HEAD against the API's view of main
+# and re-clone until they agree (bounded; proceeds with a warning if the
+# API is unreachable — never blocks the boot forever).
+for try in 1 2 3 4; do
+  LOCAL_SHA=$(git rev-parse HEAD)
+  REMOTE_SHA=$(curl -sf --max-time 10 \
+    -H "Authorization: token ${GITHUB_TOKEN}" \
+    -H "Accept: application/vnd.github.sha" \
+    https://api.github.com/repos/jaxperro/winning-wallet-finder/commits/main \
+    || true)
+  if [ -z "$REMOTE_SHA" ]; then
+    echo "[clone-guard] GitHub API unreachable — proceeding with $LOCAL_SHA"
+    break
+  fi
+  if [ "$LOCAL_SHA" = "$REMOTE_SHA" ]; then
+    echo "[clone-guard] clone verified @ ${LOCAL_SHA:0:10}"
+    break
+  fi
+  echo "[clone-guard] STALE clone (${LOCAL_SHA:0:10} != ${REMOTE_SHA:0:10}) — re-cloning (try $try)"
+  cd /
+  rm -rf "$DIR"
+  sleep 5
+  git clone --depth 20 "$REPO_URL" "$DIR"
+  cd "$DIR"
+  [ "$try" = "4" ] && echo "[clone-guard] ⚠ still stale after 4 tries — proceeding; verify the first heartbeat"
+done
+
 git config user.name  "copybot[bot]"
 git config user.email "copybot@users.noreply.github.com"
 

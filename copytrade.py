@@ -566,7 +566,22 @@ class CopyTrader:
                 self.log(f"EXIT {label} — PENDING (in-play hold)")
                 self.persist()
                 return
-            self.log(f"EXIT {label} — ORDER FAILED: {res.get('resp')}")
+            # LIVE_ROLLOUT 1.6 (built 2026-07-10): a failed mirror-exit must
+            # not silently ride to resolution — queue a bounded retry; the
+            # heartbeat re-attempts each tick and alerts ⚠ EXIT STUCK when
+            # exhausted. One entry per token; a repeat failure refreshes it.
+            retries = self.state.setdefault("exit_retries", [])
+            for r in retries:
+                if r["token"] == token:
+                    r["shares"] = max(r["shares"], sell_shares)
+                    break
+            else:
+                retries.append({"token": token, "shares": sell_shares,
+                                "label": label, "attempts": 0,
+                                "ts": int(time.time())})
+            self.log(f"EXIT {label} — ORDER FAILED: {str(res.get('resp'))[:80]}"
+                     " · queued for retry")
+            self.persist()
             return
         proceeds = res["filled_shares"] * res["price"]
         # reduce position; release cost proportionally

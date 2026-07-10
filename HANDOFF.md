@@ -186,11 +186,27 @@ that; the 5-min backstop poll covers detection meanwhile).
 
 ## User to-dos (security/hygiene)
 
-- Revoke the polymarket.us API key `f03d9eb5…` (leaked in a screenshot) if
-  not already done.
-- Rotate the Discord webhook committed pre-2026-07-09 (spam risk only).
+- ~~Revoke the polymarket.us API key~~ DONE (user, 2026-07-10).
+- ~~Decide the leftover $32 on polymarket.us~~ RESOLVED (user moved it,
+  2026-07-10).
+- Rotate the Discord webhook committed pre-2026-07-09 (spam risk only) —
+  STILL OPEN.
 - Optional: clear the 9 inert builder keys at
   polymarket.com/settings?tab=builder.
+
+## Hardening trio (2026-07-10 late — all stub-tested)
+
+- **Exit-retry (LIVE_ROLLOUT 1.6 built)**: failed mirror-exits queue in
+  `state.exit_retries`; the heartbeat re-attempts up to 10 ticks (recovered
+  exits ping Discord), then pages **⚠ EXIT STUCK** and lets the position
+  ride knowingly. In-play holds hand off to the pending registry.
+- **RTDS shadow ledger**: every Set E detection appends to
+  `rtds_shadow.jsonl` (live: `rtds_shadow.live.jsonl`) — ts, lat_s, and
+  whether another trigger saw the tx first. Rides the publish commit;
+  capped ~2000 lines. This file is the 24h go/no-go data for RTDS_DETECT=1.
+- **Boot stale-clone guard (start.sh)**: clone HEAD verified against the
+  GitHub API (re-clone up to 4×) — kills the stale-replica boots that hit
+  twice on 2026-07-10.
 
 ## Operational quick-reference
 
