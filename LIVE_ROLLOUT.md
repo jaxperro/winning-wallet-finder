@@ -1,5 +1,14 @@
 # Real-money rollout plan — executable by a fresh agent session
 
+> **STATUS 2026-07-10: executed through Phase 4** (bot ARMED, push mode,
+> first fills verified end-to-end — see [HANDOFF.md](HANDOFF.md) for current
+> state). **Rule 0.6's hard caps were RETIRED 2026-07-10 by user decision**:
+> sizing is paper-parity 4%-of-equity, floored at the venue $1 minimum. The
+> new-stack realities discovered during execution live in README gotchas
+> 16–17 (pUSD collateral / bridge conversion; in-play `delayed` acceptances
+> and the pending-order registry). This document stays as the historical
+> plan + the Phase 5 edge-case matrix, which is still worth running.
+
 Written 2026-07-07 after the pre-money audit. This document is **self-contained**:
 a session with no prior context (Sonnet/Opus) should be able to execute every
 phase from here + the repo. Read [README.md](README.md) gotchas 1–15 and

@@ -2,9 +2,11 @@
 """Polymarket copy-trade engine.
 
 Watches a list of wallets and mirrors their trades onto your own account:
-  - sizing: a fixed % of your configured bankroll per new entry
+  - sizing: class % of current equity per new entry (capped at the signal's
+            own bet, floored at the venue's $1 minimum order)
   - mirror: entries AND exits (sells are mirrored proportionally)
-  - guard:  skip a copy if the market has moved >5% from their fill price
+  - guard:  skip a copy if the price rose >5 POINTS above their fill
+            (absolute — 0.14→0.15 follows; better-than-theirs never blocked)
 
 SAFETY
 ------

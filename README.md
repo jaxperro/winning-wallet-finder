@@ -25,8 +25,9 @@ Three deployed pieces + one static dashboard:
 |-------|--------------|--------------|
 | **daily pipeline** (`live/daily.sh`) | this Mac, launchd **08:00** (a `pmset repeat wakeorpoweron` RTC wake at **07:58** makes this run on time even from sleep — set 2026-07-08, undo with `sudo pmset repeat cancel`; job wrapped in `caffeinate -i` so mid-run idle-sleep can't kill it. Heads-up: the wake fires even lid-closed-in-a-bag — cancel it if the Mac travels) | refresh the bet cache → 5-gate skill scan → fee-aware sharp selection → conviction floors → backtest book → publish JSON feeds to GitHub |
 | **copybot worker** (`copybot.py` via `host/start.sh`) | **Fly.io app `wwf-copybot`, region `arn` (Stockholm), 24/7** — migrated off Railway 2026-07-06: Railway ran it in a US region, which Polymarket's IP geoblock would 403 the moment orders got real; Stockholm is unrestricted AND ~25ms from the CLOB's eu-west-2 primaries. Every boot self-checks the geo-gate (`host/geocheck.py`) | **push mode**: an Alchemy address-activity webhook (`copybot follow set`, Polygon) pings `POST /alchemy` the moment a followed wallet trades (~2–5s detection), signature-verified; a 60s heartbeat settles/publishes and a 5-min backstop poll catches dropped pushes. Paper-copies with real fees/lag/slippage, settles at CLOB resolution, commits its book back to the repo |
-| **Discord digest** (`live/discord_daily.py`) | end of the daily pipeline | one message/day: the sharp list with profile links + 30-day conviction stats (per-trade pings retired 2026-07-04; the old Alchemy watcher lives in `archive/webhook_receiver.py`) |
-| **dashboard** | [jaxperro.com/trading](https://jaxperro.com/trading) + [jaxperro.com/live](https://jaxperro.com/live) (static, in the `jaxperro` repo) | `/trading` renders the paper book, backtest book and sharp table; `/live` is the REAL MONEY page (reads `live/copybot_live_real.json`, NOT STARTED until Phase 2). Both pages share `trading/copybot-section.js` — one renderer, no drift |
+| **REAL-MONEY worker** (same code, `COPYBOT_ROLE=live`) | **Fly.io app `wwf-copybot-live`, `arn`, 24/7, ARMED 2026-07-10** — separate app so the two books never share a process, state file, or failure mode. Trades the signer's **Deposit Wallet** `0x455e…45a1` (pUSD collateral, ~$22 bankroll) via the unified SDK (`polymarket-client`) | **push mode with its OWN Alchemy webhook** (~3–6s sharp-to-fill, chain-proven) + 60s heartbeat + 5-min backstop poll. Paper-parity sizing (4% of equity, $1 venue floor, hard caps retired 2026-07-10 by user decision); in-play `delayed` holds tracked in a pending registry (adopt-on-fill / TTL-cancel); every placement/exit/settle pings Discord. Disarm: `flyctl secrets unset LIVE_CONFIRM -a wwf-copybot-live` |
+| **Discord digest** (`live/discord_daily.py`) | end of the daily pipeline | one message/day: the sharp list with profile links + 30-day conviction stats (per-trade pings retired 2026-07-04 for PAPER; the LIVE book pings every real placement/exit/settle) |
+| **dashboard** | [jaxperro.com/trading](https://jaxperro.com/trading) + [jaxperro.com/live](https://jaxperro.com/live) (static, in the `jaxperro` repo) | `/trading` renders the paper book, backtest book and sharp table; `/live` is the REAL MONEY page (reads `live/copybot_live_real.json` — live since 2026-07-10). Both pages share `trading/copybot-section.js` — one renderer, no drift |
 
 **The calibration experiment (running now):** a fresh $1,000 paper book,
 **reset 2026-07-08** so it measures exactly one thing — the follow set in
@@ -67,14 +68,15 @@ for the phased path; Phase 1 code prep is complete, Phase 2 is funding).
 | **add / remove / reclass a LIVE wallet** | edit the `wallets` list in `live/copybot.paper.json` (`{"wallet","name","class":"volume"\|"whale","floor":123?}` — floor optional, auto p80 at boot; whales ignore floors) then run **`./live/deploy_bot.sh`** — it validates, previews, **syncs the Alchemy webhook's address list** (`live/sync_webhook.py`, Notify API), commits, pushes, restarts the Fly machine, and confirms the boot banner. Fully self-contained — nothing to click in any dashboard |
 | **backtest any wallet set** | edit `live/backtest.json` (same entry shape) → `python3 live/portfolio.py`; ad-hoc without touching the dashboard: `python3 portfolio.py --wallets 0xabc,0xdef:whale --days 14 --bank 500 --out /tmp/t.json` (`--bank`/backtest.json `"bank"` sets the starting bankroll; smaller books compound at a *higher* rate because 4%-of-equity stakes hit the their-bet ceilings later) |
 | **promote a wallet to live** | prove it in `backtest.json` first, copy the same entry into `copybot.paper.json`, run `deploy_bot.sh` |
-| **watch the live bot** | `flyctl logs --app wwf-copybot` (one summary line per 60s heartbeat); the book is also committed as `live/copybot_live.json` and rendered on the dashboard |
-| **restart / redeploy the bot** | `flyctl apps restart wwf-copybot` (config/code changes: the worker clones the repo fresh at boot, so a restart IS the deploy). **Changes to `host/` or `fly.toml` need an image rebuild: `flyctl deploy --remote-only`.** Secrets: `flyctl secrets set K=V` (applies with an automatic restart). Keep it ONE machine — Fly loves creating a second for "high availability", and two bots = two writers on one book (`flyctl scale count 1`) |
+| **watch the bots** | paper: `flyctl logs --app wwf-copybot` · real money: `flyctl logs --app wwf-copybot-live` (one summary line per 60s heartbeat); books are committed as `live/copybot_live.json` / `live/copybot_live_real.json` and rendered on the dashboard |
+| **restart / redeploy the bot** | `flyctl apps restart wwf-copybot` (or `wwf-copybot-live`; the worker clones the repo fresh at boot, so a restart IS the deploy — but a boot can clone a STALE GitHub replica: always verify the first heartbeat shows the numbers you shipped, gotcha 15). **Changes to `host/` or the toml need an image rebuild: `flyctl deploy --remote-only` (live app: add `-c fly.live.toml -a wwf-copybot-live`).** Secrets: `flyctl secrets set K=V` (applies with an automatic restart). Keep it ONE machine per app (`flyctl scale count 1`) |
+| **disarm / re-arm real money** | disarm: `flyctl secrets unset LIVE_CONFIRM -a wwf-copybot-live` (survives restarts; `machine stop` does NOT — the http_service auto-restarts it). Re-arm: set `LIVE_CONFIRM` to the confirmation phrase (see `CONFIRM_PHRASE` in copytrade.py). A disarmed live app idles without HTTP, so its watchdog page is expected |
 | **reset the paper book** | **stop the machine FIRST** (`flyctl machine stop <id> --app wwf-copybot`), then write a fresh `new_state()` into `copybot_state.json`, archive `copybot_fills.jsonl`, commit+push, then `flyctl apps restart`. Order matters: the running bot's memory is the book's single writer and its publish flow will re-commit its own book over yours (by design — see gotcha 15). Verify the first heartbeat reads `free $1,000/$1,000 · realized $+0` |
 | **watchdog** | two layers, both automatic: fly.toml's http `/health` check (Fly restarts a dark machine) + `.github/workflows/watchdog.yml` (GitHub-hosted probe every ~30-150 min → Discord alert via the `DISCORD_WEBHOOK_URL` repo secret when 3 probes fail). Test: `gh workflow run watchdog` |
 | **run the daily pipeline manually** | `cd live && bash daily.sh` (launchd runs it 08:00; ~40 min, mostly collect). Never run two at once — the cache is single-writer |
 | **refresh just the sharp list** | `cd live && python3 conviction_scan.py && python3 validate_timing.py` |
 | **daily Discord digest** | sent by `live/discord_daily.py` at the end of `daily.sh`; webhook = `daily_webhook` in gitignored `config.json` |
-| **go real-money** | **execute [`LIVE_ROLLOUT.md`](LIVE_ROLLOUT.md)** — the phased plan (invariants → code prep → funding → supervised fills → full edge-case matrix → graduation gate); `LIVE_TEST.md` is the per-session runbook it wraps |
+| **go real-money** | **DONE 2026-07-10** — [`LIVE_ROLLOUT.md`](LIVE_ROLLOUT.md) executed through Phase 4 (first fills verified end-to-end); the armed bot runs paper-parity rules (caps retired by user decision, superseding rule 0.6). [`HANDOFF.md`](HANDOFF.md) is the current-state entry point |
 
 Three moving parts talk to each other: this repo (research + bot + feeds), the
 `jaxperro` repo (static dashboard reading this repo's raw JSON feeds), and the
@@ -95,7 +97,9 @@ does).
 | `live/backtest.json` · `live/copybot.paper.json` | the two wallet-set configs: backtest experiments vs. the live paper bot (same entry shape) |
 | `live/deploy_bot.sh` | one-command live-bot deploy: validate → preview → Alchemy address sync → commit → push → Fly restart → confirm boot |
 | `live/sync_webhook.py` | diffs the follow set against the push-mode Alchemy webhook and patches add/remove (token in gitignored `config.json`) |
-| `fly.toml` · `fly.Dockerfile` | Fly.io app config (wwf-copybot, region `arn`, single machine, `:8080` webhook ingress) + the worker image (python + git; the bot code itself is cloned fresh at boot) |
+| `fly.toml` · `fly.live.toml` · `fly.Dockerfile` | Fly.io app configs (paper `wwf-copybot` / real-money `wwf-copybot-live`, both `arn`, single machine each, `:8080` webhook ingress + /health) + the shared worker image (python + git + `polymarket-client`; the bot code itself is cloned fresh at boot) |
+| `host/wrap_via_bridge.py` | one-time bankroll conversion native USDC → pUSD via the Polymarket Bridge (gotcha 16); idempotent, stage-gated |
+| `host/order_probe_v2.py` · `host/flatten_positions.py` | live-venue probes on the unified SDK: $5 FAK round-trip validation · market-sell-everything (the emergency exit) |
 | `host/geocheck.py` | 3-probe geo-gate verdict (ipinfo → Polymarket's `/api/geoblock` → unauth CLOB order POST); runs at every boot, `GEOCHECK_ONLY=1` = probe-and-idle for testing a new host/region without a second book-writer |
 | `live/discord_daily.py` | the daily Discord digest (the only Discord output) |
 | `copybot.py` | the copy-trading bot: push/poll trigger → follow filter → execution engine (paper + live) |
@@ -209,7 +213,9 @@ backtest and bot share:
   June sweep showed >95¢ favorites *lower* final equity even while winning
   (slip + fee eat the 1–3% payouts; the capital compounds better elsewhere).
 - **Asymmetric price guard**: a price *below* the sharp's fill is never blocked
-  (better odds, by rule); only adverse drift >5% is skipped.
+  (better odds, by rule); only adverse drift of **>5 points absolute**
+  (`price_guard_abs`, 2026-07-10) is skipped — 0.14→0.15 follows, 0.14→0.20
+  skips. (The old relative 5% blocked one-tick moves on cheap in-play books.)
 - **Conviction filter (volume class only)**: copy a wallet's top-20%-by-stake
   bets. Floors are **auto-derived at boot** (p80 of recent position stakes from
   the data-api — the worker has no cache) unless pinned with `"floor":` in the
@@ -222,7 +228,11 @@ backtest and bot share:
   on-chain (`redeem.py`; neg-risk markets need manual redeem).
 
 Safety: paper is the default; live requires `mode:"live"` **and** `--live`
-**and** a typed confirmation phrase, under hard caps. The GH-Actions cron
+**and** a typed confirmation phrase, plus a fatal geo-gate. Hard caps were
+retired 2026-07-10 (user decision) in favor of paper-parity 4%-of-equity
+sizing floored at the venue's $1 minimum; the structural bounds that remain
+are the their-bet ceiling, the conviction floors, the entry band, and the
+all-or-nothing free-cash gate. The GH-Actions cron
 runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
 ~104 qualifying trades in June; the always-on worker replaced it).
 

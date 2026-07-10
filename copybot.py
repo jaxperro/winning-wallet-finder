@@ -5,15 +5,18 @@ Marries the two halves you already built:
 
   * webhook_receiver.py's **push** trigger — Alchemy's Address-Activity webhook
     POSTs here the instant a watched wallet transacts on Polygon. No polling.
-  * archive/copytrade.py's hardened **execution engine** — paper + live
-    (py-clob-client) executor, the full risk-block gates, price guard,
-    no-backfill seeding, and proportional entry/exit mirroring.
+  * copytrade.py's hardened **execution engine** — paper executor + the LIVE
+    executor on the unified SDK (`polymarket-client`; py-clob-client is
+    archived and the CLOB rejects its orders — README gotcha 16), risk gates,
+    absolute price guard, no-backfill seeding, proportional entry/exit
+    mirroring, and the pending-order registry for in-play `delayed` holds
+    (gotcha 17: an accepted-but-held order is NEVER a rejection).
 
 Flow:
     Alchemy POST /alchemy
         → enrich the tx via the Polymarket data-API (market, side, price, size)
         → FollowFilter  — the "only the trades I actually want" gate
-        → CopyTrader.handle_trade  — sizes + places under every risk cap
+        → CopyTrader.handle_trade  — sizes + places under the risk gates
 
 The execution engine is unchanged; this file only swaps the *trigger* from a
 poll loop to a push, and inserts the follow-filter in front of it.
@@ -21,10 +24,11 @@ poll loop to a push, and inserts the follow-filter in front of it.
 SAFETY — paper by default. Live trading needs ALL of:
     1. "mode": "live" in config.json,
     2. the --live flag,
-    3. typing the confirmation phrase when prompted,
-    4. py-clob-client installed + live creds in config "live".
-The same hard caps (per-trade / daily / exposure / open positions / price band)
-apply in both modes. This is real money in live mode.
+    3. typing the confirmation phrase (env LIVE_CONFIRM on the worker),
+    4. polymarket-client installed + live.private_key (env LIVE_PRIVATE_KEY).
+Sizing is paper-parity 4%-of-equity floored at the venue $1 minimum (hard
+caps retired 2026-07-10, user decision); the geo-gate is fatal in live mode.
+This is real money in live mode.
 
 Endpoints (stdlib http server, binds $PORT or 8080):
     POST /alchemy   ← point the Alchemy webhook here
