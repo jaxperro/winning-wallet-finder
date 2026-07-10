@@ -184,6 +184,21 @@
  ],
  "missed": [
   {
+   "ts": 1783711848,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "77385979624472636654785737076226829530003846611286280041398312121632938952313",
+   "cond": "0x0271bb9a225e9c9abecbecf81af23e9840f179b2a8ae0e2ef49337e6404a3559",
+   "title": "Spain vs. Belgium: Spain 1st Half O/U 0.5",
+   "outcome": "Over",
+   "price": 0.7674,
+   "stake": 4.5,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783710676,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "69332829857352543341630758571211075272974294373246290749231665438041402756556",
@@ -1123,25 +1138,8 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783590718,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "20414976475690894265425364948116786155162480053919701442335217459387124913382",
-   "cond": "0x9feec0e8301d26be7db36412dfd040769f7fbd3efcc892309863c6062adb3cf7",
-   "title": "LoL: Bilibili Gaming vs Hanwha Life Esports - Game 3 Winner",
-   "outcome": "Hanwha Life Esports",
-   "price": 0.62,
-   "stake": 5.0,
-   "reason": "followed but not placed \u2014 silent exit at copy time (thin/no-ask book most likely; both silent paths instrumented 2026-07-09)",
-   "status": "sold",
-   "pnl": 2.59,
-   "settled": 1783600247,
-   "name": "AIcAIc",
-   "exit_checked": true,
-   "exit_price": 0.95
   }
  ],
  "missed_pnl": 99.12,
- "updated": 1783710917
+ "updated": 1783711853
 }
