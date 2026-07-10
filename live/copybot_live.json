@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 87.69,
+ "stake": 87.66,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2225.77,
- "cash": 1723.66,
- "deployed": 468.67,
+ "cash": 1652.65,
+ "deployed": 538.74,
  "reserve": 0.0,
- "realized": 1192.3,
+ "realized": 1191.36,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 9,
- "fees_paid": 84.24,
+ "open_count": 10,
+ "fees_paid": 85.18,
  "fee_rate": 0.03,
  "lag": {
-  "n": 52,
-  "n24": 30,
-  "avg_s": 24.2,
-  "avg_slip_pct": -0.0493,
+  "n": 53,
+  "n24": 31,
+  "avg_s": 23.6,
+  "avg_slip_pct": -0.0541,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "72883819885036007086315831308179079344710204279662195005519707654209484712749",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on July 10?",
+   "their_price": 0.6849,
+   "my_price": 0.55,
+   "slippage_pct": -0.1969,
+   "shares": 127.4,
+   "cost": 70.07,
+   "fee": 0.95,
+   "opened": 1783699159,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "67230363321893543312889997321885915798590561925238141510437860465156386610448",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1512,5 +1530,5 @@
   }
  ],
  "missed_pnl": -41.95,
- "updated": 1783699024
+ "updated": 1783699162
 }
