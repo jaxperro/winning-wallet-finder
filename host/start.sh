@@ -65,9 +65,17 @@ git config user.name  "copybot[bot]"
 git config user.email "copybot@users.noreply.github.com"
 
 # live role, ARMED: own config (committed template + env secrets), own state
-# file, own feed/fills (config paths), ALWAYS poll mode — the Alchemy push
-# webhook stays pointed at the paper app (LIVE_ROLLOUT Phase 3.3).
+# file, own feed/fills (config paths). ALCHEMY_SIGNING_KEY set -> PUSH mode
+# (the live app's OWN webhook, wired 2026-07-10 — ~3s detection vs the 60s
+# poll's ~39s avg; 60s heartbeat + 5min backstop poll are built in). Without
+# the key -> classic poll, same as before.
 if [ "${COPYBOT_ROLE:-paper}" = "live" ]; then
+  if [ -n "${ALCHEMY_SIGNING_KEY:-}" ]; then
+    exec python3 copybot.py \
+      --config config.live.example.json \
+      --state  copybot_state.live.json \
+      --live
+  fi
   exec python3 copybot.py \
     --config config.live.example.json \
     --state  copybot_state.live.json \

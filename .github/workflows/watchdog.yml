@@ -1,9 +1,12 @@
-# Dead-man's switch for the copybot worker (the notify half; the self-heal
-# half is fly.toml's http /health check, which restarts a dark machine).
+# Dead-man's switch for the copybot workers (the notify half; the self-heal
+# half is each app's http /health check, which restarts a dark machine).
 # GH cron is coarse (fires ~every 30-150 min in practice) — fine here: the
 # failure mode this guards is MULTI-HOUR silence (the 2026-07-07 Fly trial
 # expiry left the bot dark 3.5h with nothing watching). Runs on GitHub's
-# infra, so it works when the Mac is asleep AND the Fly box is dead.
+# infra, so it works when the Mac is asleep AND the Fly boxes are dead.
+# 2026-07-10: also probes the REAL-MONEY app (push mode gave it HTTP).
+# NB: a DISARMED live app idles without HTTP — expected to page; disarming
+# is a deliberate act, treat the page as confirmation.
 name: watchdog
 on:
   schedule:
@@ -13,13 +16,21 @@ on:
 jobs:
   health:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - app: wwf-copybot
+            label: copybot (paper)
+          - app: wwf-copybot-live
+            label: copybot LIVE (real money)
     steps:
       - name: probe /health (3 tries, 60s apart)
         id: probe
         run: |
           for i in 1 2 3; do
-            if curl -fsS --max-time 10 https://wwf-copybot.fly.dev/health; then
+            if curl -fsS --max-time 10 https://${{ matrix.app }}.fly.dev/health; then
               echo; echo "healthy on try $i"; exit 0
             fi
             echo "try $i failed"; [ $i -lt 3 ] && sleep 60
@@ -29,7 +40,7 @@ jobs:
         if: failure()
         run: |
           curl -fsS -X POST -H 'Content-Type: application/json' \
-            -d '{"content":"🚨 **copybot DOWN** — wwf-copybot.fly.dev/health failed 3 probes over 2 min. Check `flyctl status --app wwf-copybot` / `flyctl logs`. (Fly auto-restart should be trying; if this repeats, it is crash-looping or the account/billing broke — see 2026-07-07 trial-expiry incident.)"}' \
+            -d '{"content":"🚨 **${{ matrix.label }} DOWN** — ${{ matrix.app }}.fly.dev/health failed 3 probes over 2 min. Check `flyctl status --app ${{ matrix.app }}` / `flyctl logs`. (Fly auto-restart should be trying; if this repeats, it is crash-looping or the account/billing broke — see 2026-07-07 trial-expiry incident. If you just DISARMED the live app, this page is expected.)"}' \
             "$DISCORD_WEBHOOK_URL"
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}

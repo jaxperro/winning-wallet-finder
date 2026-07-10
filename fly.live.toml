@@ -2,10 +2,9 @@
 # paper worker (wwf-copybot) so the two books never share a process, state
 # file, or failure mode (LIVE_ROLLOUT Phase 3.3). Region rules: see fly.toml.
 #
-# Poll mode only (60s; the Alchemy push webhook stays on the paper app), no
-# inbound services, no health checks — the unarmed machine idles in
-# geocheck --idle until the USER sets LIVE_PRIVATE_KEY + LIVE_FUNDER_ADDRESS
-# + LIVE_CONFIRM (the typed confirmation phrase) via flyctl secrets set.
+# The unarmed machine idles in geocheck --idle until the USER sets
+# LIVE_PRIVATE_KEY + LIVE_FUNDER_ADDRESS + LIVE_CONFIRM (the typed
+# confirmation phrase) via flyctl secrets set.
 app = "wwf-copybot-live"
 primary_region = "arn"
 
@@ -14,6 +13,29 @@ primary_region = "arn"
 
 [env]
   COPYBOT_ROLE = "live"
+
+# public HTTPS endpoint for the live app's OWN Alchemy push webhook
+# (POST /alchemy — added 2026-07-10; the 60s poll's ~39s avg detection lag
+# is slippage the copy edge pays, push is ~3s). Its webhook + signing key
+# are SEPARATE from the paper app's; the two books still share nothing.
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "off"
+  auto_start_machines = true
+  min_machines_running = 1
+
+# self-heal half of the watchdog (notify half: watchdog.yml → Discord).
+# NB: an UNARMED live app idles in geocheck --idle (no HTTP server) — a
+# failing health check while disarmed is expected, not a fault.
+[checks]
+  [checks.health]
+    type = "http"
+    port = 8080
+    path = "/health"
+    interval = "30s"
+    timeout = "5s"
+    grace_period = "60s"
 
 [[vm]]
   size = "shared-cpu-1x"
