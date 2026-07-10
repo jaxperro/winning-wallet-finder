@@ -70,9 +70,22 @@ with client:
             print("  approvals result:", str(h)[:200])
     except Exception as e:
         print("  setup_trading_approvals:", type(e).__name__, str(e)[:250])
+    # the SDK approvals list covers the COLLATERAL token only — but funds
+    # arriving as raw native USDC get wrapped by the exchange AT MATCH, which
+    # needs the maker's USDC approved to the collateral contract. Approve it.
+    USDC = "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
+    COLLAT = "0xC011a7E12a19f7B1f670d46F03B03f3342E82DFB"
+    try:
+        h = client.approve_erc20(token_address=USDC, spender=COLLAT, amount=2**256 - 1)
+        if h is not None and hasattr(h, "wait"):
+            print("  USDC→collateral approval:", str(h.wait())[:150])
+        else:
+            print("  USDC→collateral approval:", str(h)[:150])
+    except Exception as e:
+        print("  approve_erc20:", type(e).__name__, str(e)[:250])
     try:
         b = client.get_balance_allowance(asset_type="COLLATERAL")
-        print("  exchange-view balance:", str(b)[:300])
+        print("  exchange-view balance:", str(b)[:220])
     except Exception as e:
         print("  balance check:", type(e).__name__, str(e)[:150])
 
