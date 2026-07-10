@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 86.27,
+ "stake": 87.85,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 2156.74,
- "cash": 1481.2,
- "deployed": 675.54,
+ "hwm": 2196.16,
+ "cash": 1587.74,
+ "deployed": 608.42,
  "reserve": 0.0,
- "realized": 1156.71,
+ "realized": 1196.13,
  "adjustments": 0.03,
  "ledger_drift": 0.0,
- "open_count": 11,
+ "open_count": 10,
  "fees_paid": 61.53,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
  },
  "bets": [
   {
+   "token": "93467767591188896649627269967147548436732758009195510676247808663528278284319",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "BetBoom Team",
+   "title": "Dota 2: Xtreme Gaming vs BetBoom Team - Game 2 Winner",
+   "their_price": 0.64,
+   "my_price": 0.63,
+   "slippage_pct": -0.0156,
+   "shares": 136.43,
+   "cost": 85.95,
+   "fee": 0.95,
+   "opened": 1783679662,
+   "status": "closed",
+   "exit_price": 0.9865,
+   "pnl": 47.68,
+   "settled": 1783681072,
+   "sold_shares": 136.43,
+   "sold_proceeds": 134.58
+  },
+  {
    "token": "31844421127747452247920361772593140342967161564902355004027803194678743954899",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -66,26 +86,6 @@
    "exit_price": null,
    "pnl": null,
    "settled": null
-  },
-  {
-   "token": "93467767591188896649627269967147548436732758009195510676247808663528278284319",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "BetBoom Team",
-   "title": "Dota 2: Xtreme Gaming vs BetBoom Team - Game 2 Winner",
-   "their_price": 0.64,
-   "my_price": 0.63,
-   "slippage_pct": -0.0156,
-   "shares": 136.43,
-   "cost": 85.95,
-   "fee": 0.95,
-   "opened": 1783679662,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 29.88,
-   "sold_proceeds": 28.04
   },
   {
    "token": "47405794293316148244590035888323531202770006061275899647071095856237793879763",
@@ -1190,5 +1190,5 @@
   }
  ],
  "missed_pnl": -5.41,
- "updated": 1783680856
+ "updated": 1783681072
 }
