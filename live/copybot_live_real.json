@@ -79,10 +79,11 @@
    "price": 0.39,
    "stake": 5.0,
    "reason": "order rejected: exception: not enough balance / allowance: the balance is no",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 2.06,
+   "settled": 1783690991,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.5648
   },
   {
    "ts": 1783690583,
@@ -836,6 +837,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 69.94,
- "updated": 1783690709
+ "missed_pnl": 72.0,
+ "updated": 1783690992
 }
