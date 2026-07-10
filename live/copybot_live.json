@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 84.27,
+ "stake": 84.25,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2225.77,
- "cash": 1741.18,
- "deployed": 365.61,
+ "cash": 1676.91,
+ "deployed": 429.45,
  "reserve": 0.0,
- "realized": 1106.77,
+ "realized": 1106.33,
  "adjustments": 0.03,
- "ledger_drift": 0.02,
- "open_count": 7,
- "fees_paid": 78.3,
+ "ledger_drift": 0.01,
+ "open_count": 8,
+ "fees_paid": 78.73,
  "fee_rate": 0.03,
  "lag": {
-  "n": 48,
-  "n24": 34,
-  "avg_s": 24.8,
-  "avg_slip_pct": -0.0492,
+  "n": 49,
+  "n24": 35,
+  "avg_s": 24.2,
+  "avg_slip_pct": -0.0478,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "16341441115314407349877008586386599112394401117565529613770834118938995329927",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Ethereum be above $1,800 on July 10?",
+   "their_price": 0.772,
+   "my_price": 0.773,
+   "slippage_pct": 0.0013,
+   "shares": 82.58,
+   "cost": 63.83,
+   "fee": 0.43,
+   "opened": 1783694600,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "84864321844564005123638956205037810292837868807558456388220877376462415276538",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1387,5 +1405,5 @@
   }
  ],
  "missed_pnl": -35.35,
- "updated": 1783690947
+ "updated": 1783694603
 }
