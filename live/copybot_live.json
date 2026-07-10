@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 88.29,
+ "stake": 90.01,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2258.31,
- "cash": 1699.37,
- "deployed": 507.91,
+ "cash": 1829.66,
+ "deployed": 420.61,
  "reserve": 0.0,
- "realized": 1207.25,
+ "realized": 1250.25,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 9,
+ "open_count": 8,
  "fees_paid": 93.26,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,26 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "41527735652152287965662705198504489542457379550490679965396371339149288130273",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Yandex",
+   "title": "Dota 2: LGD Gaming vs Team Yandex - Game 1 Winner",
+   "their_price": 0.68,
+   "my_price": 0.67,
+   "slippage_pct": -0.0147,
+   "shares": 130.29,
+   "cost": 87.3,
+   "fee": 0.86,
+   "opened": 1783704926,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 42.13,
+   "settled": 1783707423,
+   "sold_shares": 130.29,
+   "sold_proceeds": 130.29
+  },
   {
    "token": "38744650140929980444150118816863740267135734413960049059734200133364895803618",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -88,24 +108,6 @@
    "settled": 1783706794,
    "sold_shares": 379.4,
    "sold_proceeds": 88.94
-  },
-  {
-   "token": "41527735652152287965662705198504489542457379550490679965396371339149288130273",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Yandex",
-   "title": "Dota 2: LGD Gaming vs Team Yandex - Game 1 Winner",
-   "their_price": 0.68,
-   "my_price": 0.67,
-   "slippage_pct": -0.0147,
-   "shares": 130.29,
-   "cost": 87.3,
-   "fee": 0.86,
-   "opened": 1783704926,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "20753444326597808403433519410324896770837596585358560000183009522246701254242",
@@ -1625,5 +1627,5 @@
   }
  ],
  "missed_pnl": -200.86,
- "updated": 1783707108
+ "updated": 1783707423
 }
