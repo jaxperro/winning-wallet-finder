@@ -70,6 +70,21 @@
  ],
  "missed": [
   {
+   "ts": 1783675472,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "110708614617189583631393918009679567370443859313775277411746388200261997600454",
+   "cond": "0x31a4b89f84155d5480fb8539db0af8188aed23a5d231db7810da8c0b3fa170d2",
+   "title": "Dota 2: Rune Eaters vs GamerLegion - Game 1 Winner",
+   "outcome": "GamerLegion",
+   "price": 0.43,
+   "stake": 5.0,
+   "reason": "order rejected: {'order_id': '0xd68d2f323ace1737a986536b2ed00ddb89f8b2d4729f",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783674607,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "1161663761026248928741317236361093152095776065309269380062540556077381245572",
@@ -565,5 +580,5 @@
   }
  ],
  "missed_pnl": 68.95,
- "updated": 1783674607
+ "updated": 1783675472
 }
