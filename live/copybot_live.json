@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 84.47,
+ "stake": 84.46,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2111.79,
- "cash": 1726.72,
- "deployed": 385.06,
+ "cash": 1666.34,
+ "deployed": 445.06,
  "reserve": 0.0,
- "realized": 1111.76,
+ "realized": 1111.38,
  "adjustments": 0.03,
  "ledger_drift": -0.0,
- "open_count": 6,
- "fees_paid": 56.53,
+ "open_count": 7,
+ "fees_paid": 56.91,
  "fee_rate": 0.03,
  "lag": {
-  "n": 37,
-  "n24": 33,
-  "avg_s": 35.1,
-  "avg_slip_pct": -0.0749,
+  "n": 38,
+  "n24": 34,
+  "avg_s": 34.1,
+  "avg_slip_pct": -0.0719,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "95966691396738472275344791788162735368640282726919372432646833886066957862309",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Lambda's valuation hit (LOW) $5B by December 31?",
+   "their_price": 0.77,
+   "my_price": 0.79,
+   "slippage_pct": 0.026,
+   "shares": 75.95,
+   "cost": 60.0,
+   "fee": 0.38,
+   "opened": 1783661096,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "244048590847349569142622450288686721247802348946192951002087804863968899",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1025,5 +1043,5 @@
   }
  ],
  "missed_pnl": 0.87,
- "updated": 1783660206
+ "updated": 1783661098
 }
