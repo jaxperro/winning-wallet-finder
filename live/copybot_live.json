@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 87.66,
+ "stake": 87.57,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2225.77,
- "cash": 1652.65,
- "deployed": 538.74,
+ "cash": 1562.76,
+ "deployed": 626.4,
  "reserve": 0.0,
- "realized": 1191.36,
+ "realized": 1189.12,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 10,
- "fees_paid": 85.18,
+ "open_count": 11,
+ "fees_paid": 87.42,
  "fee_rate": 0.03,
  "lag": {
-  "n": 53,
-  "n24": 30,
-  "avg_s": 24.2,
-  "avg_slip_pct": -0.0559,
+  "n": 54,
+  "n24": 31,
+  "avg_s": 28.5,
+  "avg_slip_pct": -0.0645,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "20753444326597808403433519410324896770837596585358560000183009522246701254242",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Nemesis",
+   "title": "Dota 2: Team Nemesis vs Vici Gaming - Game 2 Winner",
+   "their_price": 0.2217,
+   "my_price": 0.15,
+   "slippage_pct": -0.3233,
+   "shares": 584.37,
+   "cost": 87.66,
+   "fee": 2.24,
+   "opened": 1783699742,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "72883819885036007086315831308179079344710204279662195005519707654209484712749",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1530,5 +1548,5 @@
   }
  ],
  "missed_pnl": -41.95,
- "updated": 1783699508
+ "updated": 1783699898
 }
