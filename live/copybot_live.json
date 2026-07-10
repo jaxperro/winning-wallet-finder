@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 88.58,
+ "stake": 89.03,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 2214.56,
- "cash": 1631.39,
- "deployed": 583.17,
+ "hwm": 2225.77,
+ "cash": 1689.91,
+ "deployed": 535.86,
  "reserve": 0.0,
- "realized": 1214.53,
+ "realized": 1225.74,
  "adjustments": 0.03,
- "ledger_drift": 0.0,
- "open_count": 10,
- "fees_paid": 68.96,
+ "ledger_drift": 0.01,
+ "open_count": 9,
+ "fees_paid": 69.58,
  "fee_rate": 0.03,
  "lag": {
   "n": 45,
@@ -49,6 +49,26 @@
   "1kto1m": 323.3
  },
  "bets": [
+  {
+   "token": "64240896700312109784630886706605953876703771364083875350159352793781549030993",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Prestige Academy",
+   "title": "Map Handicap: LEO (-1.5) vs Prestige Academy (+1.5)",
+   "their_price": 0.5,
+   "my_price": 0.52,
+   "slippage_pct": 0.04,
+   "shares": 162.43,
+   "cost": 84.46,
+   "fee": 1.22,
+   "opened": 1783632065,
+   "status": "closed",
+   "exit_price": 0.6122,
+   "pnl": 13.75,
+   "settled": 1783688399,
+   "sold_shares": 162.42,
+   "sold_proceeds": 99.43
+  },
   {
    "token": "99750659249903955439120052604225640907367048033793216838103937845588350738197",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -280,26 +300,6 @@
    "settled": null,
    "sold_shares": 7.94,
    "sold_proceeds": 3.99
-  },
-  {
-   "token": "64240896700312109784630886706605953876703771364083875350159352793781549030993",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Prestige Academy",
-   "title": "Map Handicap: LEO (-1.5) vs Prestige Academy (+1.5)",
-   "their_price": 0.5,
-   "my_price": 0.52,
-   "slippage_pct": 0.04,
-   "shares": 162.43,
-   "cost": 84.46,
-   "fee": 1.22,
-   "opened": 1783632065,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 71.43,
-   "sold_proceeds": 40.91
   },
   {
    "token": "70408936800509461553908169247651744499361197714777425908648127381697435776212",
@@ -1278,5 +1278,5 @@
   }
  ],
  "missed_pnl": -82.39,
- "updated": 1783688210
+ "updated": 1783688399
 }
