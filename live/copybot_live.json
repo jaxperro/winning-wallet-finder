@@ -40,13 +40,13 @@
   "1kto1m": "volume"
  },
  "floors": {
-  "LSB1": 262.26,
-  "imwalkinghere": 121.8,
-  "Kruto2027": 126.43,
-  "0xbadaf319": 45.21,
-  "gkmgkldfmg": 351.5,
-  "AIcAIc": 295.86,
-  "1kto1m": 323.3
+  "LSB1": 261.31,
+  "imwalkinghere": 122.43,
+  "Kruto2027": 125.94,
+  "0xbadaf319": 44.38,
+  "gkmgkldfmg": 397.8,
+  "AIcAIc": 298.64,
+  "1kto1m": 322.02
  },
  "bets": [
   {
@@ -1156,6 +1156,21 @@
  ],
  "missed": [
   {
+   "ts": 1783718289,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "40157116416490623239679394844195379171683621861511438824716931745872340078199",
+   "cond": "0x2e5100b759d2e6da51f0d457028d8e42b833f4808edd8ff95e3d242aa1ef6102",
+   "title": "Will Revolut's valuation hit (HIGH) $175B by December 31?",
+   "outcome": "No",
+   "price": 0.8699,
+   "stake": 44.62,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783712755,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "51142349456107958414584954407545686562582425523546369924249014347922759701733",
@@ -1766,5 +1781,5 @@
   }
  ],
  "missed_pnl": -218.98,
- "updated": 1783718119
+ "updated": 1783718290
 }
