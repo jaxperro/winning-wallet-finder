@@ -58,7 +58,10 @@ DEFAULT_CONFIG = {
                                      # past cap/bankroll_pct — surplus cash is SWEPT to
                                      # state["reserve"], a banked pot that never bets
                                      # (profit ratchet + keeps fills inside book depth)
-    "price_guard_pct": 0.05,         # skip if price moved >5% from their fill
+    "price_guard_abs": 0.05,         # skip if price moved >5 POINTS above their
+                                     # fill (absolute, 2026-07-10: 0.14→0.15 must
+                                     # follow; relative % blocked 1-tick moves on
+                                     # cheap in-play books)
     "risk": {
         "max_trade_usd": 50.0,       # hard ceiling on any single copy
         "max_position_usd": 40.0,    # hard ceiling on total cost in one market
@@ -307,7 +310,10 @@ class CopyTrader:
             stake = frac * eq
         if their and stake > their:
             stake = their
-        return stake
+        # venue floor: the CLOB rejects sub-$1 orders, so a small book's pct
+        # stake must round UP to the minimum or every copy dies at the gate
+        # (4% of the $22 live book = $0.89 — 2026-07-10 paper-parity retune)
+        return max(stake, self.risk.get("min_order_usd", 1.0))
 
     def record_miss(self, wallet, token, cond, title, outcome, price, want, reason):
         """A bet the strategy WOULD have copied but the book couldn't take —
@@ -377,7 +383,8 @@ class CopyTrader:
         if side == "BUY":
             self._handle_their_buy(wallet, token, their_size, their_price,
                                    label, title, outcome, event=event_key(t),
-                                   cond=t.get("conditionId"))
+                                   cond=t.get("conditionId"),
+                                   their_ts=t.get("timestamp"))
             their_book[token] = their_prev + their_size
         elif side == "SELL":
             self._handle_their_sell(token, their_size, their_prev, label)
@@ -398,13 +405,18 @@ class CopyTrader:
         # ASYMMETRIC by rule: a better price than the sharp paid is never blocked
         # (paying less for the same outcome is strictly better odds — the guard
         # once skipped a 0.70→0.51 improvement that went on to win). Only adverse
-        # drift — chasing the price UP — is gated by price_guard_pct.
+        # drift — chasing the price UP — is gated, in ABSOLUTE points: the old
+        # relative 5% blocked one-tick moves on cheap in-play books (0.14→0.15
+        # is +7% relative but the same bet; 0.14→0.19 is where the edge is gone).
         if current <= their_price:
             return True
-        return (current - their_price) / their_price <= self.cfg["price_guard_pct"]
+        guard = self.cfg.get("price_guard_abs",
+                             self.cfg.get("price_guard_pct", 0.05))
+        return (current - their_price) <= guard
 
     def _handle_their_buy(self, wallet, token, their_size, their_price,
-                          label, title, outcome, event=None, cond=None):
+                          label, title, outcome, event=None, cond=None,
+                          their_ts=None):
         mine = self.state["my_pos"].get(token)
         is_add = mine is not None
         # the signal's position in this token BEFORE this trade — the their-bet
@@ -447,7 +459,8 @@ class CopyTrader:
             return
         if not self._price_guard_ok(price, their_price):
             self.log(f"BUY  {label} — skip (price {price:.3f} vs their "
-                     f"{their_price:.3f}, >{self.cfg['price_guard_pct']:.0%})")
+                     f"{their_price:.3f}, moved >"
+                     f"{self.cfg.get('price_guard_abs', 0.05):.2f} abs)")
             self.record_miss(wallet, token, cond, title, outcome, price,
                              self.stake_usd(wallet),
                              f"price moved {their_price:.2f}→{price:.2f}")
@@ -484,6 +497,21 @@ class CopyTrader:
         shares = allowed / price
         res = self.ex.buy(token, shares, price, {"title": title})
         if not res["ok"]:
+            # in-play books ACCEPT orders with a delayed hold — the executor
+            # reports those as pending (order id + pre-order balance) instead
+            # of failed. Park the full copy context; the heartbeat resolver
+            # adopts the fill when it lands or converts to a miss at TTL.
+            if res.get("pending"):
+                self.state.setdefault("pending_orders", []).append({
+                    **res["pending"], "token": token, "side": "BUY",
+                    "wallet": wallet, "title": title, "outcome": outcome,
+                    "event": event, "cond": cond, "their_price": their_price,
+                    "their_ts": their_ts, "price": price, "is_add": is_add,
+                    "stake": allowed, "ts": time.time(), "ttl_s": 600})
+                self.log(f"{kind} {label} — PENDING (in-play hold, "
+                         f"order {str(res['pending'].get('order_id'))[:14]}…)")
+                self.persist()
+                return
             self.log(f"{kind} {label} — ORDER FAILED: {res.get('resp')}")
             if not is_add:                     # a rejected OPEN is a missed bet
                 self.record_miss(wallet, token, cond, title, outcome, price,
@@ -525,6 +553,17 @@ class CopyTrader:
             return
         res = self.ex.sell(token, sell_shares, price, {})
         if not res["ok"]:
+            if res.get("pending"):             # in-play hold — resolver adopts
+                self.state.setdefault("pending_orders", []).append({
+                    **res["pending"], "token": token, "side": "SELL",
+                    "wallet": mine.get("wallet", ""), "title": mine.get("title", ""),
+                    "outcome": mine.get("outcome", ""), "event": mine.get("event"),
+                    "cond": mine.get("cond"), "their_price": price,
+                    "their_ts": None, "price": price, "is_add": False,
+                    "stake": sell_shares * price, "ts": time.time(), "ttl_s": 600})
+                self.log(f"EXIT {label} — PENDING (in-play hold)")
+                self.persist()
+                return
             self.log(f"EXIT {label} — ORDER FAILED: {res.get('resp')}")
             return
         proceeds = res["filled_shares"] * res["price"]
@@ -605,9 +644,10 @@ class CopyTrader:
 def confirm_live(cfg):
     print("\n" + "=" * 64)
     print("  LIVE MODE — this will place REAL orders with REAL money.")
-    print(f"  Bankroll ${cfg['bankroll_usd']:.0f} · {cfg['bankroll_pct']:.1%}/entry"
-          f" · max ${cfg['risk']['max_trade_usd']:.0f}/trade"
-          f" · daily cap ${cfg['risk']['daily_spend_cap_usd']:.0f}")
+    mt, dc = cfg['risk']['max_trade_usd'], cfg['risk']['daily_spend_cap_usd']
+    print(f"  Bankroll ${cfg['bankroll_usd']:.2f} · {cfg['bankroll_pct']:.1%}/entry"
+          f" · max {'off' if mt >= 1e5 else '$%.0f' % mt}/trade"
+          f" · daily cap {'off' if dc >= 1e5 else '$%.0f' % dc}")
     print(f"  Watching {len(cfg['watchlist'])} wallets.")
     print("=" * 64)
     # Headless arm (Fly live worker): the USER types the exact phrase into

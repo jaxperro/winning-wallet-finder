@@ -286,13 +286,15 @@ class LedgerLiveExecutor:
         return b.balance / 1e6
 
     def _settle_uncertain(self, token_id, side, bal0, price, order_id=None,
-                          deadline_s=20):
+                          deadline_s=20, cancel=True):
         """An order may be resting/held at the exchange (in-play 'delayed'
         acceptance, or an exception after posting). Poll it to a terminal
-        state, cancel whatever remains, and return (filled, avg_price) from
-        the exchange's own balance diff. INVARIANT (2026-07-10 incident: six
+        state, cancel whatever remains (unless the caller keeps it alive for
+        the pending registry), and return (filled, avg_price) from the
+        exchange's own balance diff. INVARIANT (2026-07-10 incident: six
         in-play acceptances were logged as misses and filled untracked
-        minutes later): no order outlives this call untracked."""
+        minutes later): no order outlives this call untracked — it either
+        reports its fill here or is handed to state["pending_orders"]."""
         import time
         px = price
         deadline = time.time() + deadline_s
@@ -306,16 +308,17 @@ class LedgerLiveExecutor:
                     break
             except Exception:      # gone from the open view — terminal
                 break
-        try:
-            if order_id:
-                self.client.cancel_order(order_id=order_id)
-            else:                   # exception path: sweep the whole token
-                ids = [o.id for o in self.client.list_open_orders(
-                    token_id=str(token_id))]
-                if ids:
-                    self.client.cancel_orders(order_ids=ids)
-        except Exception:
-            pass                    # cancel of a just-matched order — fine
+        if cancel:
+            try:
+                if order_id:
+                    self.client.cancel_order(order_id=order_id)
+                else:               # exception path: sweep the whole token
+                    ids = [o.id for o in self.client.list_open_orders(
+                        token_id=str(token_id))]
+                    if ids:
+                        self.client.cancel_orders(order_ids=ids)
+            except Exception:
+                pass                # cancel of a just-matched order — fine
         try:
             bal1 = self._shares_held(token_id)
         except Exception:
@@ -363,10 +366,20 @@ class LedgerLiveExecutor:
         px = usd / filled if filled else price
         if filled <= 0:
             # ACCEPTED with zero matched = in-play 'delayed'/'live' hold, NOT
-            # a rejection (the 2026-07-10 lesson). Wait it out briefly, then
-            # cancel-and-measure so the ledger always matches the exchange.
+            # a rejection (the 2026-07-10 lesson). Wait briefly in-call; if
+            # still held, hand the order to the PENDING registry — the
+            # heartbeat resolver adopts the fill when it lands or cancels at
+            # TTL (the 20s cancel-everything version forfeited a Rune-Eaters
+            # hold that filled at +4.5min and paid +$7.50).
             filled, px = self._settle_uncertain(token_id, side, bal0, price,
-                                                order_id=r.order_id)
+                                                order_id=r.order_id,
+                                                deadline_s=8, cancel=False)
+            if filled <= 0:
+                return {"ok": False, "filled_shares": 0.0, "price": price,
+                        "pending": {"order_id": r.order_id, "bal0": bal0},
+                        "resp": {"order_id": r.order_id, "status": r.status,
+                                 "note": "in-play hold — pending resolver"},
+                        "paper": False}
         return {"ok": filled > 0, "filled_shares": filled, "price": px,
                 "resp": {"order_id": r.order_id, "status": r.status,
                          "making": making, "taking": taking,
@@ -1020,6 +1033,96 @@ class Copybot:
         self.engine.persist()
         log(f"baseline: {n} historical trades marked seen · {fresh} fresh trades "
             f"left copyable — only NEW trades from now")
+
+    def resolve_pendings(self):
+        """Settle state["pending_orders"] — in-play holds the executor handed
+        off instead of cancelling (2026-07-10 registry). Each pending either
+        ADOPTS its fill (full bookkeeping: spend, position, cash drain,
+        ledger row, bet record) or expires at TTL into a cancel + honest
+        miss. The exchange's balance diff is the fill arbiter, same as the
+        executor's own uncertain path."""
+        st = self.engine.state
+        pend = st.get("pending_orders") or []
+        if not pend or not self.engine.ex.live:
+            return
+        ex = self.engine.ex
+        now = time.time()
+        keep = []
+        for p in pend:
+            tok = p["token"]
+            px, status, matched = p["price"], "gone", 0.0
+            try:
+                o = ex.client.get_order(order_id=p["order_id"])
+                matched = float(o.size_matched or 0)
+                status = o.status
+                if matched > 0:
+                    px = float(o.price or px)
+            except Exception:
+                pass                      # gone from open view — terminal
+            expired = now - p["ts"] > p.get("ttl_s", 600)
+            if status in ("live", "delayed") and not expired and matched <= 0:
+                keep.append(p)            # still held — check again next tick
+                continue
+            if status in ("live", "delayed"):     # expired: kill the remainder
+                try:
+                    ex.client.cancel_order(order_id=p["order_id"])
+                except Exception:
+                    pass
+            filled = matched
+            try:                          # balance diff is the arbiter
+                bal1 = ex._shares_held(tok)
+                diff = (bal1 - p["bal0"]) if p["side"] == "BUY" else (p["bal0"] - bal1)
+                filled = max(filled, diff)
+            except Exception:
+                pass
+            if filled <= 0.01:
+                log(f"pending expired unfilled: {p['outcome']} · {p['title'][:40]}")
+                if p["side"] == "BUY" and not p.get("is_add"):
+                    self.engine.record_miss(
+                        p["wallet"], tok, p.get("cond"), p["title"], p["outcome"],
+                        p["price"], p.get("stake", 0),
+                        f"in-play hold expired unfilled ({int(now - p['ts'])}s)")
+                continue
+            spent = filled * px
+            if p["side"] == "BUY":
+                st["spend"]["usd"] += spent
+                mine = st["my_pos"].get(tok)
+                if p.get("is_add") and mine:
+                    mine["shares"] += filled
+                    mine["cost"] += spent
+                    if p.get("cond"):
+                        mine.setdefault("cond", p["cond"])
+                else:
+                    st["my_pos"][tok] = {
+                        "shares": filled, "cost": spent, "title": p["title"],
+                        "outcome": p["outcome"], "event": p.get("event"),
+                        "wallet": p["wallet"], "cond": p.get("cond")}
+                if p.get("cond"):
+                    self.conds[tok] = p["cond"]
+                ex.fills.append({"side": "BUY", "token": tok,
+                                 "shares": filled, "price": px})
+                synth = {"timestamp": p.get("their_ts"), "price": p["their_price"],
+                         "outcome": p["outcome"], "title": p["title"]}
+                for f in self._drain_fills():
+                    self._record_lag(p["wallet"], synth, f)
+                log(f"PENDING FILLED · {p['outcome']} · {p['title'][:40]} — "
+                    f"buy {filled:.2f} @ {px:.3f} (${spent:.2f}, held "
+                    f"{int(now - p['ts'])}s)")
+            else:                          # SELL adoption: reduce the position
+                mine = st["my_pos"].get(tok)
+                if mine and mine.get("shares"):
+                    frac = min(1.0, filled / mine["shares"])
+                    mine["cost"] *= (1 - frac)
+                    mine["shares"] -= filled
+                    if mine["shares"] <= 0.01:
+                        st["my_pos"].pop(tok, None)
+                ex.fills.append({"side": "SELL", "token": tok,
+                                 "shares": filled, "price": px})
+                self._drain_fills()
+                log(f"PENDING EXIT FILLED · {p['outcome']} · {p['title'][:40]} — "
+                    f"sold {filled:.2f} @ {px:.3f}")
+        st["pending_orders"] = keep
+        self.engine.persist()
 
     _chain_bal = (0.0, None)     # (checked_at, usdc) — cached; poll ≤1/min
 
@@ -1738,11 +1841,14 @@ def main():
     log(f"copybot · mode: {mode}")
     log(f"on-chain settle fallback: {'ON' if _RPC_URL else 'OFF — set ALCHEMY_RPC_URL'}")
     log(f"watching {len(cfg.get('watchlist', []))} wallets · {filt.describe()}")
-    log(f"bankroll ${cfg['bankroll_usd']:.0f} @ {cfg['bankroll_pct']:.1%}/entry · "
-        f"guard {cfg['price_guard_pct']:.0%} · "
-        f"caps: ${cfg['risk']['max_trade_usd']:.0f}/trade, "
-        f"${cfg['risk']['daily_spend_cap_usd']:.0f}/day, "
-        f"${cfg['risk']['max_total_exposure_usd']:.0f} exposure")
+    guard = cfg.get("price_guard_abs", cfg.get("price_guard_pct", 0.05))
+    def _cap(v):
+        return "off" if v >= 1e5 else f"${v:,.0f}"
+    log(f"bankroll ${cfg['bankroll_usd']:.2f} @ {cfg['bankroll_pct']:.1%}/entry · "
+        f"guard +{guard:.2f} abs · "
+        f"caps: {_cap(cfg['risk']['max_trade_usd'])}/trade, "
+        f"{_cap(cfg['risk']['daily_spend_cap_usd'])}/day, "
+        f"{_cap(cfg['risk']['max_total_exposure_usd'])} exposure")
     bot.seed()
     # boot invariant pass: rebuild any missing bet/conds records and — only
     # here, where no trade is in flight — heal a never-debited orphan's cash
@@ -1793,6 +1899,7 @@ def main():
         cycle = 0
         try:
             while True:
+                bot.resolve_pendings()                # adopt/expire in-play held orders
                 bot.settle_resolved()                 # recycle capital at resolution
                 if cycle % 5 == 0:
                     bot.reconcile_exits()
@@ -1829,6 +1936,7 @@ def main():
             time.sleep(60)
             cycle += 1
             try:
+                bot.resolve_pendings()     # adopt/expire in-play held orders
                 bot.settle_resolved()
                 if cycle % 5 == 0:
                     bot.reconcile_exits()

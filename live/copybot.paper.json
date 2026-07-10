@@ -2,7 +2,6 @@
   "mode": "paper",
   "bankroll_usd": 1000.0,
   "bankroll_pct": 0.04,
-  "price_guard_pct": 0.05,
   "wallets": [
     {
       "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -67,5 +66,6 @@
     "max_price": 0.99,
     "min_order_usd": 5.0,
     "max_per_event": 0
-  }
+  },
+  "price_guard_abs": 0.05
 }
