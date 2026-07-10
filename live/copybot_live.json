@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 85.05,
+ "stake": 85.52,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2225.77,
- "cash": 1667.79,
- "deployed": 458.58,
+ "cash": 1623.07,
+ "deployed": 515.01,
  "reserve": 0.0,
- "realized": 1126.34,
+ "realized": 1138.05,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
  "open_count": 9,
- "fees_paid": 81.97,
+ "fees_paid": 83.77,
  "fee_rate": 0.03,
  "lag": {
-  "n": 50,
-  "n24": 35,
-  "avg_s": 22.9,
-  "avg_slip_pct": -0.0486,
+  "n": 51,
+  "n24": 36,
+  "avg_s": 22.4,
+  "avg_slip_pct": -0.0468,
   "window_h": 24
  },
  "wallets": [
@@ -50,6 +50,24 @@
  },
  "bets": [
   {
+   "token": "40594224108520253108624365887167881382842057398183982530866129414581985931630",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Vici Gaming",
+   "title": "Dota 2: Team Nemesis vs Vici Gaming - Game 1 Winner",
+   "their_price": 0.5809,
+   "my_price": 0.59,
+   "slippage_pct": 0.0156,
+   "shares": 145.03,
+   "cost": 85.57,
+   "fee": 1.05,
+   "opened": 1783695466,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
+  {
    "token": "61106160955805000545726176309339696645249790307545132698548552906744856723300",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -62,12 +80,12 @@
    "cost": 84.25,
    "fee": 1.82,
    "opened": 1783695034,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 196.88,
-   "sold_proceeds": 76.95
+   "status": "closed",
+   "exit_price": 0.395,
+   "pnl": 32.78,
+   "settled": 1783695443,
+   "sold_shares": 300.91,
+   "sold_proceeds": 118.85
   },
   {
    "token": "16341441115314407349877008586386599112394401117565529613770834118938995329927",
@@ -967,10 +985,11 @@
    "price": 0.37,
    "stake": 84.18,
    "reason": "price moved 0.35\u21920.37",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": -5.32,
+   "settled": 1783695501,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.3605
   },
   {
    "ts": 1783690584,
@@ -1439,6 +1458,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": -35.35,
- "updated": 1783695408
+ "missed_pnl": -40.67,
+ "updated": 1783695502
 }
