@@ -70,6 +70,21 @@
  ],
  "missed": [
   {
+   "ts": 1783678193,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "47405794293316148244590035888323531202770006061275899647071095856237793879763",
+   "cond": "0xce8bc40907b928e7d02717975855be7272c3589f8fdd1f70b9f03ea14f280577",
+   "title": "LoL: G2 Esports vs LYON - Game 3 Winner",
+   "outcome": "G2 Esports",
+   "price": 0.38,
+   "stake": 5.0,
+   "reason": "order rejected: {'order_id': '0x203bac86469f7c6cf48a1982dd9ab41ebfbdd1018ba6",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1783677860,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "100198471262079386993761824025743140222494027672175410847273506523400747511360",
@@ -596,5 +611,5 @@
   }
  ],
  "missed_pnl": 70.17,
- "updated": 1783677860
+ "updated": 1783678193
 }
