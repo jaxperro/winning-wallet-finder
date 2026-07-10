@@ -184,6 +184,21 @@
  ],
  "missed": [
   {
+   "ts": 1783698745,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "20753444326597808403433519410324896770837596585358560000183009522246701254242",
+   "cond": "0x06f2a24626f9441cdb0e52b81b0b4f40dab91b6109ee5b9d5e3dce82aefcf2da",
+   "title": "Dota 2: Team Nemesis vs Vici Gaming - Game 2 Winner",
+   "outcome": "Team Nemesis",
+   "price": 0.33,
+   "stake": 4.05,
+   "reason": "capped to $-10.00 < min order $1.00 (caps)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783697297,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "9680605212686211980723723137267513726715630041509403278769393973882140080333",
@@ -967,5 +982,5 @@
   }
  ],
  "missed_pnl": 91.75,
- "updated": 1783697784
+ "updated": 1783698745
 }
