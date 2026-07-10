@@ -136,6 +136,11 @@ def main():
         bk = boot.create_builder_api_key()
         print("builder key minted (in-process only)")
     client = SecureClient.create(private_key=pk, api_key=bk)
+    # revoke on ANY exit path — unrevoked keys are inert but pile up forever
+    # (revocation is HMAC-authed by the key's own secret; see order_probe_v2)
+    import atexit
+    atexit.register(lambda: (client.revoke_builder_api_key(),
+                             print("builder key revoked")))
     with client:
         if str(client.wallet).lower() != DW.lower():
             sys.exit(f"client.wallet {client.wallet} != expected {DW} — aborting")

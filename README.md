@@ -237,6 +237,8 @@ runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
 | `clob.polymarket.com` | order books, prices, **authoritative resolution** (`winner` flags), market slugs |
 | `lb-api.polymarket.com` | the wallet's OWN all-time P&L/volume (`/profit`, `/volume`) — the sharps table's **PM P&L** sanity anchor (see gotcha 10) |
 | Alchemy (Polygon) | the push-mode address-activity webhook (instant trade detection) + funding-cluster traces; Notify API (`dashboard.alchemy.com/api`) drives the automatic address-list sync |
+| `bridge.polymarket.com` | deposits/withdrawals for the 2026 pUSD stack — the ONLY sanctioned native-USDC→pUSD conversion (gotcha 16); `/deposit` registers a per-wallet address, `/status/{addr}` tracks delivery |
+| `relayer-v2.polymarket.com` | gasless transactions from the deposit wallet (via `SecureClient.execute_transaction`; needs an in-process Builder API key) |
 
 **Candidate next sources** (researched 2026-07, not yet wired in):
 
@@ -361,6 +363,24 @@ runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
     corollaries: a state push while the bot runs WILL be overwritten, and a
     boot clone seconds after a push can read a stale GitHub replica — after
     any surgery, verify the first heartbeat shows the book you wrote.
+16. **The 2026 exchange stack: pUSD collateral + the unified SDK.**
+    py-clob-client is ARCHIVED (May 2026) — reads/auth still work but the
+    CLOB rejects its orders globally ('invalid order version'). Placement
+    lives in `polymarket-client` (`SecureClient`; pinned 0.1.0b16 in
+    fly.Dockerfile). The exchange's balance view counts ONLY the pUSD
+    CollateralToken (`0xC011a7…`) — raw USDC at the wallet reads as
+    `balance: 0`. pUSD accepts native USDC *and* USDC.e by contract, but the
+    public CollateralOnramp (`0x93070a…`) keeps native USDC **paused**
+    (`paused(0x3c499c…)=1`, verified on-chain 2026-07-10), so a direct
+    `wrap()` of native USDC reverts. The sanctioned conversion is
+    **bridge.polymarket.com** (the UI deposit path): register the wallet via
+    `POST /deposit`, gasless-transfer the USDC to the returned per-wallet
+    address ($2 min from Polygon), and it lands back *already wrapped* as
+    pUSD, fee-free (`host/wrap_via_bridge.py` — $24.73 in → $24.73 pUSD out).
+    Corollary: Builder API keys revoke only via their OWN secret (HMAC DELETE)
+    — revoke in-process before exit (`atexit` in the probe) or they pile up
+    unrevocable-but-inert on the account (9 accumulated during bring-up;
+    the UI at polymarket.com/settings?tab=builder can clean those).
 
 ---
 

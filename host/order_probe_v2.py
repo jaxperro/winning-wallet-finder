@@ -43,6 +43,12 @@ with boot:
     bk = boot.create_builder_api_key()
     print("builder key minted (in-process only)")
 client = SecureClient.create(private_key=pk, api_key=bk)
+# builder keys are revocable ONLY by their own secret (HMAC-authed DELETE) —
+# an unrevoked in-process key is inert but sits on the account forever
+# (9 piled up across the 2026-07-10 bring-up). Always revoke on the way out.
+import atexit
+atexit.register(lambda: (client.revoke_builder_api_key(),
+                         print("builder key revoked")))
 for attr in ("wallet", "address", "deposit_wallet"):
     v = getattr(client, attr, None)
     if v:

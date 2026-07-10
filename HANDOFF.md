@@ -1,141 +1,121 @@
-# Session handoff — 2026-07-10 (rev 4: real money one step from live)
+# Session handoff — 2026-07-10 (rev 5: LIVE PLACEMENT PROVEN — awaiting first organic fill)
 
 Self-contained pickup for a fresh session (human or AI). Read
-[README.md](README.md) gotchas 1–15, [FINDINGS.md](FINDINGS.md) (the
-2026-07-08 sections at the end), [ETHERSCAN_MIGRATION.md](ETHERSCAN_MIGRATION.md),
-and [LIVE_ROLLOUT.md](LIVE_ROLLOUT.md). The repo is authoritative.
+[README.md](README.md) gotchas 1–16 (16 is the new-stack one), 
+[FINDINGS.md](FINDINGS.md), [ETHERSCAN_MIGRATION.md](ETHERSCAN_MIGRATION.md),
+[LIVE_ROLLOUT.md](LIVE_ROLLOUT.md). The repo is authoritative.
 
-## THE CRITICAL PATH — finish live placement (one wrap + one port)
+## THE CRITICAL PATH IS DONE (2026-07-10 05:08Z)
 
-The real-money bot (`wwf-copybot-live`, armed, $24.73) cannot place yet.
-Root-cause chain, every link PROVEN 2026-07-09/10:
+Every link from rev 4 closed, in order, all proven on the live box:
 
-1. First two qualifying signals CRASHED the bot inside the unguarded live
-   order path (Fly events: exit_code=1 at 21:21:55Z and 21:53:35Z, seconds
-   after each signal); boot baseline then marked the fresh trades seen.
-   ALL FIXED: executor never raises, per-wallet poll guard, baseline
-   exempts trades younger than the stale window.
-2. **py-clob-client is ARCHIVED** (May 2026) — the CLOB rejects its orders
-   ('invalid order version') globally. Reads/auth still work; placement is
-   dead for everyone on it. No newer PyPI release exists.
-3. Successor: **Polymarket/py-sdk** (`pip install --pre polymarket-client`,
-   `SecureClient`). Proven working for us tonight: auth ✓, the signer's
-   **Deposit Wallet deployed: `0x455e252e45Ee46d6C4cc1c8fAdD3899d68f245a1`** ✓,
-   gasless relayer transactions execute ✓ (real txs: 0x935be727…,
-   0x1044d3c7…), `setup_trading_approvals()` ✓ (max-uint on all spenders),
-   order FORMAT accepted by the exchange ✓.
-4. **Sole remaining gap: the wrap.** The user's $24.73 sits SAFE as native
-   USDC at the deposit wallet (his key controls it). The 2026 exchange
-   trades a wrapped-collateral token (`0xC011a7…`; wraps native USDC; UI
-   flows wrap on deposit — our raw transfer bypassed it), and the CLOB's
-   balance view counts ONLY that token → orders reject with 'balance: 0'.
-   Attempted: periphery `0x93070a…`.wrap(asset,to,amount) via gasless batch
-   → 'batch would revert' (likely caller-gated). Neg-risk adapter ruled out.
+1. **Root cause of the wrap revert found on-chain** (not caller-gating): the
+   pUSD CollateralToken accepts BOTH native USDC and USDC.e by contract, but
+   the public CollateralOnramp `0x93070a…` has native USDC **paused**
+   (`paused(0x3c499c…)=1`). Docs claiming "must be USDC.e" are downstream of
+   that pause, and the ts-sdk has NO wrap helper — the UI converts via the
+   Bridge.
+2. **Bankroll converted via the sanctioned path** (`host/wrap_via_bridge.py`,
+   stage-gated $3 test slice first): gasless ERC-20 transfer → per-wallet
+   bridge address (`POST bridge.polymarket.com/deposit`) → delivered back
+   **already wrapped as pUSD, fee-free** ($24.73 in → $24.73 pUSD out).
+   `get_balance_allowance(COLLATERAL)` = 24730000 with max-uint allowances.
+3. **Executor ported** (copybot.py `LedgerLiveExecutor`): unified SDK
+   `SecureClient.create(private_key)` — deposit wallet auto-resolves, no
+   api_key at runtime; `place_market_order` FAK with protected prices
+   (quoted ± `live.max_slippage_pct`, default 5%, clamped [0.01,0.99] so the
+   SDK's band check can't raise); never raises into the trade loop.
+   `chain_cash_gap` repointed at the deposit wallet's pUSD (the +24.73 alarm
+   is gone). Old tick-rounding machinery deleted — the SDK owns tick/negrisk.
+4. **$5 FAK round trip FILLED on the new image**
+   (polymarket-client==0.1.0b16 in fly.Dockerfile): BUY matched 7.35294 sh
+   @ 0.68 ($5.00), SELL matched 7.35 sh @ 0.67 ($4.92 gross). Fill-field
+   semantics confirmed: BUY making=USD given / taking=shares got; SELL
+   reversed. Round trip cost 23.7¢ = 1c spread + ~3.2% taker fee on the
+   sell + 0.003 sh dust — the modeled `TAKER_FEE_RATE 0.03` tracks reality.
+5. **Armed bot restarted on the ported code**: geo TRADABLE, LIVE banner,
+   baseline clean, heartbeat `[1] open 0 · free $25/$25` with NO drift/chain
+   alarm. The bot can now actually place.
 
-**Next session, in order (do NOT guess with live funds):**
-1. Read **Polymarket/ts-sdk** (same unified family) for the deposit-wallet
-   wrap/deposit implementation — it contains the exact supported call.
-   Also check docs.polymarket.com's new wallet/collateral pages.
-2. Replicate that one call via `client.execute_transaction` (the gasless
-   path is proven). Success = `get_balance_allowance` shows ~$24.73.
-3. Port `LedgerLiveExecutor` to the new SDK: `SecureClient.create(
-   private_key=…)` (wallet auto-resolves; NO api_key needed at runtime once
-   approvals exist), BUY = `place_market_order(token_id, side="BUY",
-   amount=<USD>, order_type="FAK")`, SELL = `shares=<n>`; parse the result
-   for filled shares/price; keep py-clob-client temporarily for reads.
-   Repoint the 1.4 cash anchor at the deposit wallet's collateral view —
-   the live bot currently alarms `CASH≠CHAIN +24.73` because the anchor
-   still reads the emptied legacy proxy (expected, harmless).
-4. `pip` add `polymarket-client` (--pre) to fly.Dockerfile, deploy, re-run
-   `host/order_probe_v2.py` (contains the ENTIRE working onboarding
-   sequence) until a $5 round trip fills, then run LIVE_ROLLOUT Phase 4 on
-   the first organic fill.
-5. Cleanup: probe runs minted several Builder API keys —
-   `fetch_builder_api_keys` / revoke extras.
+## THE ONE REMAINING STEP — first organic fill ⇒ Phase 4
 
-Meanwhile the armed live bot is harmless-by-construction: every attempt
-returns ok:False and records an honest missed row.
+When the first real copy fills, walk LIVE_ROLLOUT **Phase 4** and report
+every link: order id → fills ledger row → position visible in the Polymarket
+UI (the DEPOSIT WALLET `0x455e252e45Ee46d6C4cc1c8fAdD3899d68f245a1`, not the
+legacy proxy) → /live feed row → cash math → Polygonscan. Liveness until
+then = `flyctl logs -a wwf-copybot-live` + feed freshness (still NO watchdog
+on the live app).
 
-## System state (all healthy, 2026-07-10 00:47Z)
+## Known small offsets (do NOT fix while the bot runs — gotcha 15)
 
-- **Paper bot** (`wwf-copybot`, push mode): Set E, fresh $1,000 book reset
-  2026-07-08 20:45Z. **Day 1½: realized +$1,107.57, 36 copies, 6 open,
-  drift CLEAN** (the −11.32 forensics closed at 0.00 — see below).
-  Biggest single win: mirrored Kruto's 3¢→48¢ Hive scalp for +$722.
-- **Live bot** (`wwf-copybot-live`, poll 60s): armed via LIVE_CONFIRM,
-  $24.73 book, 0 trades (see critical path), Discord pings wired
-  (DISCORD_WEBHOOK secret), auto_redeem off. Disarm:
-  `flyctl secrets unset LIVE_CONFIRM` or `flyctl apps stop`.
-- **Set E** (both books + backtest): LSB1, imwalkinghere, Kruto2027,
-  0xbadaf319, gkmgkldfmg, AIcAIc, 1kto1m — pinned floors, identical rules
-  (min_price 0.01 everywhere since 2026-07-09 18:05Z, user-approved).
-- **Dashboards**: jaxperro.com/trading (paper+backtest+sharps),
-  jaxperro.com/live (real money). Shared renderer
-  jaxperro/trading/copybot-section.js; `?botFeed=`/`?rmFeed=` overrides.
-- **Watchdog**: Fly /health check (paper app) + GH Actions watchdog.yml →
-  Discord. NOTE: the live app has NO watchdog (poll mode, no HTTP) —
-  liveness = flyctl logs + feed freshness; wire one before raising caps.
-- **Daily pipeline**: Mac launchd 08:00 + pmset RTC wake 07:58 +
-  caffeinate; appends live-vs-model calibration.csv row daily.
+- Book cash $25.00 vs chain pUSD $24.49: fixed $0.51 offset (config
+  bankroll $25 vs $24.73 deposited, + the probe's 23.7¢ round trip which
+  correctly bypassed the book). Below the $1 CASH≠CHAIN alarm. Fold into
+  the state at the next natural machine-stop surgery if desired.
+- The probe's trade is deliberately absent from the fills ledger/feed.
 
-## Completed 2026-07-09 (the honesty & detection sprint)
+## System state (2026-07-10 05:10Z)
 
-- **Fill-split merging**: same-token BUY clips ≤120s apart merge into the
-  bet the sharp actually made before the floor gate (gkmg's $612 MOUZ entry
-  read as 3×$204 sub-floor clips; he sold +60% in 5 min). Both books.
-- **Missed-ledger truth**: missed bets settle at the sharp's EXIT when they
-  sold pre-resolution (Kruto Hive miss = honest +$75 counterfactual on $5);
-  settled won/lost rows get one exit-print re-check (fast-resolve race);
-  every row relabeled with its diagnosed cause; the two silent follow-path
-  exits (no-ask book, order rejection) now record misses.
-- **Clobber fix + drift forensics CLOSED**: re-entry on a settled token
-  archives (token#ts keys) instead of overwriting; three vanished records
-  reconstructed from fills-ledger/state-history; paper drift 0.00.
-- **Order-book snapshots** (`book` field) logged per copy → empirical fill
-  model later. **payouts.resolution_time(cond)** wired (Etherscan V2,
-  exact on-chain res_t; metadata was 29h wrong on the test market).
-- **min_price parity** 0.05→0.01 on the live book (user-approved; the band
-  — not detection — blocked the 16x Hive copy).
+- **Live bot** (`wwf-copybot-live`, poll 60s, arn): ARMED, $24.49 pUSD,
+  caps $5/trade · $25/day · $30 exposure — NEVER raise without the user.
+  Disarm: `flyctl secrets unset LIVE_CONFIRM` or `flyctl apps stop`.
+- **Paper bot** (`wwf-copybot`, push mode): Set E, $1,000 book of
+  2026-07-08 — Day 1½ realized +$1,107.57 (36 copies) at rev-4 time; check
+  the dashboard for current.
+- **Set E** both books: LSB1, imwalkinghere, Kruto2027, 0xbadaf319,
+  gkmgkldfmg, AIcAIc, 1kto1m (watch list & demotion candidates in rev 4 /
+  FINDINGS).
+- **Dashboards**: jaxperro.com/trading (paper), jaxperro.com/live (real).
+- **Ops utilities** (all need the box's env): `host/wrap_via_bridge.py`
+  (bankroll conversion — done, idempotent), `host/order_probe_v2.py`
+  ($5 round-trip probe; now polls the indexer and self-revokes its builder
+  key), `host/flatten_positions.py` (market-sell everything — the
+  emergency exit).
 
-## Queued work (after the critical path)
+## New-stack facts a future session must not relearn (also gotcha 16)
 
-1. ETHERSCAN_MIGRATION.md phases 0→5 (chain-sweep res_t backfill → shadow
-   audit → consumer flips → trust.py simplification LAST).
-2. Empirical fill model from the accumulating book snapshots; depth gate
-   before real-money sizing.
-3. Funding-cluster tracer port to Etherscan logs (Alchemy free tier caps
-   getLogs at 10 blocks).
-4. Live-app watchdog (no /health in poll mode).
-5. Decide the leftover **$32 on polymarket.us** (user's first deposit,
-   wrong venue — withdraw or abandon).
+- py-clob-client: ARCHIVED. Reads OK, placement dead everywhere.
+- polymarket-client (`SecureClient`): placement, gasless
+  `execute_transaction`, `get_balance_allowance` (`.balance` int base
+  units). `create()` is ready-to-use; `with` only closes transports.
+- Protected prices (`max_price`/`min_price`) raise outside [tick, 1−tick];
+  we clamp to [0.01, 0.99] before calling.
+- Builder API keys: revocable ONLY via their own secret (HMAC DELETE) —
+  always `atexit`-revoke in-process keys. 9 inert ones from bring-up sit on
+  the account; only the UI (settings→builder) can clear them. Runtime bot
+  needs NO key (approvals persist on-chain).
+- Bridge: `POST /deposit {address}` → per-wallet EVM address (ours:
+  `0x66C1A4b43824CB0DDa54c94F118fc868A6270b91`, pinned in
+  wrap_via_bridge.py); Polygon native USDC accepted ($2 min); delivery is
+  pUSD directly; `/status/{bridge_addr}` tracks; `/quote` previews.
 
-## Watch list (does Set E hold up?)
+## Queued work (unchanged priorities)
 
-- **0xbadaf319** — two-sided arb/merge clips, not directional conviction;
-  TOP demotion candidate; judge on forward copies.
-- **AIcAIc** — 42% held-win; sell-timing edge (lag-fragile). Second.
-- **1kto1m** (z=2.4), **gkmgkldfmg** (z=2.05) — near the gate floor.
-- Rejected-with-evidence (don't re-add): oliman2 (true lifetime ~$19k, not
-  PM's $112k), leegunner (negative to copy), 0xb0E43B/ArbTraderRookie
-  (refund harvesters), lma0o0o0o (negative in shared book), Winnertraders
-  (6.6-day locks).
+1. ETHERSCAN_MIGRATION.md phases 0→5.
+2. Empirical fill model from `book` snapshots; depth gate before sizing up.
+3. Funding-cluster tracer port to Etherscan logs.
+4. Live-app watchdog (poll mode has no /health).
+5. Decide the leftover $32 on polymarket.us (withdraw or abandon).
+6. `preflight_live.py` still validates the ARCHIVED stack — port or retire.
 
-## User to-dos (security)
+## User to-dos (security/hygiene)
 
-- Revoke the polymarket.us API key `f03d9eb5…` (secret appeared in a chat
-  screenshot) — if not already done.
-- Rotate the Discord webhook that was committed to this repo's history
-  pre-2026-07-09 (spam-risk only).
+- Revoke the polymarket.us API key `f03d9eb5…` (leaked in a screenshot) if
+  not already done.
+- Rotate the Discord webhook committed pre-2026-07-09 (spam risk only).
+- Optional: clear the 9 inert builder keys at
+  polymarket.com/settings?tab=builder.
 
 ## Operational quick-reference
 
 - Follow-set change: edit live/copybot.paper.json → `./live/deploy_bot.sh`;
   keep backtest.json mirrored.
-- State surgery: `flyctl machine stop` FIRST → edit → push →
-  `flyctl apps restart` → VERIFY the first heartbeat (gotcha 15; bot memory
-  wins conflicts; boot clones can read a stale GitHub replica briefly).
+- State surgery: `flyctl machine stop` FIRST → edit → push → restart →
+  VERIFY first heartbeat (gotcha 15).
 - Never 2 Fly machines per app (`flyctl scale count 1`).
-- Cache single-writer; three cursors per wallet (gotcha 12).
-- Bot commits its own state/feed — `git pull --rebase --autostash` first.
-- Image changes (fly.Dockerfile, host/) → `flyctl deploy --remote-only`;
-  code/config → push + restart. Live app config = fly.live.toml.
+- Bot commits its own state — `git pull --rebase --autostash` before pushing.
+- Image changes (fly.Dockerfile, host/) → `flyctl deploy --remote-only -c
+  fly.live.toml -a wwf-copybot-live`; code/config → push + `flyctl apps
+  restart` (a deploy also wipes /tmp clones on the box).
+- Box one-offs: `flyctl ssh console -a wwf-copybot-live -C "bash -c '…'"`;
+  clone to /tmp with the box's GITHUB_TOKEN; run python with `-u`.
