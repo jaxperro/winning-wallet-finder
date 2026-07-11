@@ -271,10 +271,11 @@
    "price": 0.71,
    "stake": 1.0,
    "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
+   "status": "sold",
+   "pnl": 0.34,
+   "settled": 1783765559,
+   "name": "AIcAIc",
+   "exit_price": 0.96
   },
   {
    "ts": 1783762772,
@@ -1216,6 +1217,6 @@
    "exit_price": 0.8142
   }
  ],
- "missed_pnl": 102.46,
- "updated": 1783764630
+ "missed_pnl": 102.8,
+ "updated": 1783765562
 }
