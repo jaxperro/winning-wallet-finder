@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 97.52,
+ "stake": 96.52,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2493.98,
- "cash": 2132.92,
- "deployed": 304.97,
+ "cash": 2205.71,
+ "deployed": 207.39,
  "reserve": 0.0,
- "realized": 1437.85,
+ "realized": 1413.07,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 6,
- "fees_paid": 106.22,
+ "open_count": 5,
+ "fees_paid": 107.67,
  "fee_rate": 0.03,
  "lag": {
   "n": 65,
@@ -62,10 +62,12 @@
    "cost": 97.58,
    "fee": 1.58,
    "opened": 1783762730,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "closed",
+   "exit_price": 0.3432,
+   "pnl": -26.36,
+   "settled": 1783763085,
+   "sold_shares": 212.13,
+   "sold_proceeds": 72.8
   },
   {
    "token": "97030903347936099809712211774880132820716149097020948618258743557775057824890",
@@ -1261,10 +1263,11 @@
    "price": 0.4198,
    "stake": 97.58,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 6.0,
+   "settled": 1783763084,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.4604
   },
   {
    "ts": 1783730040,
@@ -1942,6 +1945,6 @@
    "exit_price": 0.95
   }
  ],
- "missed_pnl": -116.15,
- "updated": 1783762773
+ "missed_pnl": -110.15,
+ "updated": 1783763085
 }
