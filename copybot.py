@@ -513,6 +513,7 @@ class RtdsListener:
         def on_open(ws):
             ws.send(sub)
             self.state = "up"
+            self.last_msg = time.time()     # fresh baseline for the stale check
             log("rtds: connected — activity/trades stream up (T0 detection)")
 
             def ping():                     # app-level ping keeps RTDS alive
@@ -521,6 +522,19 @@ class RtdsListener:
                     try:
                         ws.send('{"action":"ping"}')
                     except Exception:
+                        break
+                    # SILENT-STALE guard (2026-07-11 04:00Z: the socket sat
+                    # "up" delivering nothing for 35 min — no close event, so
+                    # the reconnect loop never fired; backstops covered).
+                    # The platform firehose never goes quiet for 2 min even
+                    # at 4am UTC — force-close to trigger a clean reconnect.
+                    # A false trip is just a harmless retry.
+                    if time.time() - self.last_msg > 120:
+                        log("rtds: stream silent 120s — forcing reconnect")
+                        try:
+                            ws.close()
+                        except Exception:
+                            pass
                         break
             threading.Thread(target=ping, daemon=True).start()
 
