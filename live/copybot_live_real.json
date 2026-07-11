@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 24.73,
- "cash": 15.51,
- "deployed": 7.05,
+ "cash": 14.46,
+ "deployed": 8.08,
  "reserve": 0.0,
- "realized": -1.93,
+ "realized": -1.94,
  "adjustments": 2.2,
  "ledger_drift": -0.01,
- "open_count": 3,
- "fees_paid": 0.81,
+ "open_count": 4,
+ "fees_paid": 0.83,
  "fee_rate": 0.03,
  "lag": {
-  "n": 6,
-  "n24": 5,
-  "avg_s": 53.5,
-  "avg_slip_pct": -0.0066,
+  "n": 7,
+  "n24": 6,
+  "avg_s": 72.8,
+  "avg_slip_pct": 0.0015,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "111238155193029214626119372717509509454868187612257655146390848111901958320265",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "Yes",
+   "title": "Will Gimcheon Sangmu FC win on 2026-07-11?",
+   "their_price": 0.5088,
+   "my_price": 0.53,
+   "slippage_pct": 0.0417,
+   "shares": 1.96,
+   "cost": 1.04,
+   "fee": 0.01,
+   "opened": 1783767565,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "73893970296257160435491465547806830475405138836098479326244164349063701653888",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1235,5 +1253,5 @@
   }
  ],
  "missed_pnl": 102.79,
- "updated": 1783767427
+ "updated": 1783767743
 }
