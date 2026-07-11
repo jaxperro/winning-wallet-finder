@@ -298,6 +298,22 @@
  ],
  "missed": [
   {
+   "ts": 1783768611,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "24685222266639618881275458182682767134900023023526773367466764924178936188460",
+   "cond": "0xa54a1b59dfc7dbd086084ec8482284753f018c7d47a85fd3fbcc181fc994fa37",
+   "title": "Dota 2: Xtreme Gaming vs Team Falcons - Game 2 Winner",
+   "outcome": "Team Falcons",
+   "price": 0.7,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
+   "status": "sold",
+   "pnl": -0.02,
+   "settled": 1783769330,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.6998
+  },
+  {
    "ts": 1783769106,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "21317240954584519381735360743926588514834913277324009690727150242237748830303",
@@ -327,21 +343,6 @@
    "settled": 1783769011,
    "name": "AIcAIc",
    "exit_price": 0.95
-  },
-  {
-   "ts": 1783768611,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "24685222266639618881275458182682767134900023023526773367466764924178936188460",
-   "cond": "0xa54a1b59dfc7dbd086084ec8482284753f018c7d47a85fd3fbcc181fc994fa37",
-   "title": "Dota 2: Xtreme Gaming vs Team Falcons - Game 2 Winner",
-   "outcome": "Team Falcons",
-   "price": 0.7,
-   "stake": 1.0,
-   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1783767045,
@@ -1250,6 +1251,6 @@
    "name": "gkmgkldfmg"
   }
  ],
- "missed_pnl": 103.14,
- "updated": 1783769106
+ "missed_pnl": 103.12,
+ "updated": 1783769331
 }
