@@ -414,6 +414,21 @@
  ],
  "missed": [
   {
+   "ts": 1783799619,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "8791795956649331503015492828368165964550912947413307583654882923127899710261",
+   "cond": "0x2d1d3306f300dfc2907eec71fc981190bb010b65e5e182883230d077530cb6c0",
+   "title": "Denis Zakaria: 3+ shots",
+   "outcome": "No",
+   "price": 0.56,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783781335,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "27632180525380684914321906274705941073296172029015605436272337722097971624328",
@@ -1355,24 +1370,8 @@
    "settled": 1783685621,
    "name": "gkmgkldfmg",
    "exit_checked": true
-  },
-  {
-   "ts": 1783684725,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "99750659249903955439120052604225640907367048033793216838103937845588350738197",
-   "cond": "0x54d63713c8802102f64ee5134c567576c6bb43b458e218c8475f67a20f466b06",
-   "title": "Dota 2: Aurora vs PlayTime - Game 1 Winner",
-   "outcome": "PlayTime",
-   "price": 0.34,
-   "stake": 5.0,
-   "reason": "order rejected: exception: not enough balance / allowance: the balance is no",
-   "status": "sold",
-   "pnl": 1.62,
-   "settled": 1783685355,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.4644
   }
  ],
  "missed_pnl": 103.49,
- "updated": 1783789469
+ "updated": 1783799619
 }
