@@ -6499,7 +6499,8 @@
       "status": "lost",
       "pnl": -1.01,
       "settled": 1783742299,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783730037,
@@ -6533,8 +6534,8 @@
       "exit_price": 1.0
     }
   ],
-  "feed_sig": "c2b5c3bb95c5f37f58e1dfd3df84b525",
-  "feed_pushed_at": 1783742175.47019,
+  "feed_sig": "e0b24668c6c24a9e65150e855f58fedc",
+  "feed_pushed_at": 1783742423.9567285,
   "adjustments": [
     {
       "ts": 1783718232,
