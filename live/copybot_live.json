@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 95.86,
+ "stake": 96.25,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2493.98,
- "cash": 2044.32,
- "deployed": 352.15,
+ "cash": 2153.95,
+ "deployed": 252.39,
  "reserve": 0.0,
- "realized": 1396.44,
+ "realized": 1406.3,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 7,
+ "open_count": 6,
  "fees_paid": 103.1,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,24 @@
  },
  "bets": [
   {
+   "token": "103676338032335044429709174398685887348332725157638903811532034719301297769141",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "Yes",
+   "title": "Will Boston Legacy FC win on 2026-07-10?",
+   "their_price": 0.894,
+   "my_price": 0.91,
+   "slippage_pct": 0.0179,
+   "shares": 109.63,
+   "cost": 99.76,
+   "fee": 0.27,
+   "opened": 1783733290,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 9.6,
+   "settled": 1783743543
+  },
+  {
    "token": "94261332494094465883021120894226351499139897211148377866980779595546383514545",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "name": "LSB1",
@@ -68,24 +86,6 @@
    "settled": 1783742299,
    "sold_shares": 0.64,
    "sold_proceeds": 0.1
-  },
-  {
-   "token": "103676338032335044429709174398685887348332725157638903811532034719301297769141",
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "name": "LSB1",
-   "outcome": "Yes",
-   "title": "Will Boston Legacy FC win on 2026-07-10?",
-   "their_price": 0.894,
-   "my_price": 0.91,
-   "slippage_pct": 0.0179,
-   "shares": 109.63,
-   "cost": 99.76,
-   "fee": 0.27,
-   "opened": 1783733290,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "72834495383235297744666280877384242771579363352963523785873024005920870690952",
@@ -1890,5 +1890,5 @@
   }
  ],
  "missed_pnl": -116.15,
- "updated": 1783743419
+ "updated": 1783743544
 }
