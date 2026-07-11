@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 24.73,
- "cash": 13.94,
- "deployed": 6.0,
+ "cash": 12.94,
+ "deployed": 7.0,
  "reserve": 0.0,
- "realized": -4.54,
+ "realized": -4.55,
  "adjustments": 2.2,
  "ledger_drift": -0.01,
- "open_count": 2,
+ "open_count": 3,
  "fees_paid": 0.91,
  "fee_rate": 0.03,
  "lag": {
-  "n": 13,
-  "n24": 12,
-  "avg_s": 63.9,
-  "avg_slip_pct": 0.0219,
+  "n": 14,
+  "n24": 13,
+  "avg_s": 79.7,
+  "avg_slip_pct": 0.015,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "103463464943572749166715825902436097005749231905022823443969199466445385329466",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "No",
+   "title": "Exact Score: Norway 1 - 1 England?",
+   "their_price": 0.88,
+   "my_price": 0.82,
+   "slippage_pct": -0.0682,
+   "shares": 1.22,
+   "cost": 1.0,
+   "fee": 0.01,
+   "opened": 1783806619,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "113091218397444067989972632020225312341889014436526883908493943923995167586912",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -413,6 +431,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1783806884,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "103463464943572749166715825902436097005749231905022823443969199466445385329466",
+   "cond": "0x086013bff1b8a3a5ccd79397212c4249e6dfbc30ebe2af6302c1672139090d4d",
+   "title": "Exact Score: Norway 1 - 1 England?",
+   "outcome": "No",
+   "price": 0.88,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
   {
    "ts": 1783806570,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -1352,24 +1385,8 @@
    "settled": 1783688180,
    "name": "gkmgkldfmg",
    "exit_price": 0.1809
-  },
-  {
-   "ts": 1783686153,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "99750659249903955439120052604225640907367048033793216838103937845588350738197",
-   "cond": "0x54d63713c8802102f64ee5134c567576c6bb43b458e218c8475f67a20f466b06",
-   "title": "Dota 2: Aurora vs PlayTime - Game 1 Winner",
-   "outcome": "PlayTime",
-   "price": 0.24,
-   "stake": 5.0,
-   "reason": "price moved 0.22\u21920.24",
-   "status": "sold",
-   "pnl": 5.03,
-   "settled": 1783686302,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.4943
   }
  ],
  "missed_pnl": 103.49,
- "updated": 1783806574
+ "updated": 1783806888
 }
