@@ -432,6 +432,21 @@
  ],
  "missed": [
   {
+   "ts": 1783811607,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "85590802024993543661537425965264345251257796759459810241384876806751805341892",
+   "cond": "0x85aa21232741b7a20bb96a9794e6ca05dd3f0e750b76e6f38838530b18184fa2",
+   "title": "Jude Bellingham: 2+ goals",
+   "outcome": "Yes",
+   "price": 0.0299,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783807073,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "41431787580808021883550475444911970497280039876200573287917642852315122937096",
@@ -1369,24 +1384,8 @@
    "settled": 1783688497,
    "name": "gkmgkldfmg",
    "exit_price": 0.1809
-  },
-  {
-   "ts": 1783632128,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "64240896700312109784630886706605953876703771364083875350159352793781549030993",
-   "cond": "0xd2cf27a164b628e715d98d212f16482adef61ac91f8bc635a477f2b5c1c1fdb2",
-   "title": "Map Handicap: LEO (-1.5) vs Prestige Academy (+1.5)",
-   "outcome": "Prestige Academy",
-   "price": 0.5,
-   "stake": 5.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.2,
-   "settled": 1783688496,
-   "name": "Kruto2027",
-   "exit_price": 0.5352
   }
  ],
  "missed_pnl": 104.04,
- "updated": 1783808155
+ "updated": 1783811612
 }
