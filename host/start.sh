@@ -69,8 +69,9 @@ cd "$DIR"
 # API is unreachable — never blocks the boot forever).
 for try in 1 2 3 4; do
   LOCAL_SHA=$(git rev-parse HEAD)
+  # public repo — unauthenticated works and avoids fine-grained-PAT header
+  # quirks (the token'd call 401'd on the box, 2026-07-11 06:04 boot)
   REMOTE_SHA=$(curl -sf --max-time 10 \
-    -H "Authorization: token ${GITHUB_TOKEN}" \
     -H "Accept: application/vnd.github.sha" \
     https://api.github.com/repos/jaxperro/winning-wallet-finder/commits/main \
     || true)
