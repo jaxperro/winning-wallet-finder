@@ -358,6 +358,22 @@
  ],
  "missed": [
   {
+   "ts": 1783776133,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "43551466881329966936571085042990699617845453317700345932385022134457322350137",
+   "cond": "0xd58ac06933e3a4c74c5014a99e74ad7e9b73b4a0afcd74319de8bf109343ee8a",
+   "title": "Dota 2: PlayTime vs Nigma Galaxy - Game 1 Winner",
+   "outcome": "PlayTime",
+   "price": 0.66,
+   "stake": 1.0,
+   "reason": "in-play hold expired unfilled (19s)",
+   "status": "sold",
+   "pnl": -0.34,
+   "settled": 1783776954,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.4511
+  },
+  {
    "ts": 1783776636,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "66542966921479736150492153890010290615172456230777295742236316360180197142463",
@@ -371,21 +387,6 @@
    "pnl": null,
    "settled": null,
    "name": "imwalkinghere"
-  },
-  {
-   "ts": 1783776133,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "43551466881329966936571085042990699617845453317700345932385022134457322350137",
-   "cond": "0xd58ac06933e3a4c74c5014a99e74ad7e9b73b4a0afcd74319de8bf109343ee8a",
-   "title": "Dota 2: PlayTime vs Nigma Galaxy - Game 1 Winner",
-   "outcome": "PlayTime",
-   "price": 0.66,
-   "stake": 1.0,
-   "reason": "in-play hold expired unfilled (19s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1783774507,
@@ -1312,6 +1313,6 @@
    "exit_price": 0.85
   }
  ],
- "missed_pnl": 102.8,
- "updated": 1783776640
+ "missed_pnl": 102.46,
+ "updated": 1783776955
 }
