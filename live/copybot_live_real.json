@@ -298,6 +298,21 @@
  ],
  "missed": [
   {
+   "ts": 1783769579,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "15667405836292623495312906227729147108814159703377599696452991684880951926866",
+   "cond": "0xa54a1b59dfc7dbd086084ec8482284753f018c7d47a85fd3fbcc181fc994fa37",
+   "title": "Dota 2: Xtreme Gaming vs Team Falcons - Game 2 Winner",
+   "outcome": "Xtreme Gaming",
+   "price": 0.11,
+   "stake": 1.0,
+   "reason": "in-play hold expired unfilled (25s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783769106,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "21317240954584519381735360743926588514834913277324009690727150242237748830303",
@@ -310,7 +325,8 @@
    "status": "lost",
    "pnl": -1.01,
    "settled": 1783769456,
-   "name": "imwalkinghere"
+   "name": "imwalkinghere",
+   "exit_checked": true
   },
   {
    "ts": 1783768611,
@@ -1233,24 +1249,8 @@
    "settled": 1783628297,
    "name": "0xbadaf319",
    "exit_price": 0.75
-  },
-  {
-   "ts": 1783627653,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
-   "cond": "0x3c07935adc293c658ab20651f7fc6478d36e6bfdb375caab539fca9c81de03fd",
-   "title": "Dota 2: LGD Gaming vs 1win - Game 2 Winner",
-   "outcome": "LGD Gaming",
-   "price": 0.52,
-   "stake": 5.0,
-   "reason": "price moved 0.47\u21920.52",
-   "status": "sold",
-   "pnl": 0.77,
-   "settled": 1783627978,
-   "exit_price": 0.6146,
-   "name": "gkmgkldfmg"
   }
  ],
  "missed_pnl": 102.11,
- "updated": 1783769456
+ "updated": 1783769650
 }
