@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 97.58,
+ "stake": 97.52,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2493.98,
- "cash": 2232.08,
- "deployed": 207.39,
+ "cash": 2132.92,
+ "deployed": 304.97,
  "reserve": 0.0,
- "realized": 1439.43,
+ "realized": 1437.85,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 5,
- "fees_paid": 104.64,
+ "open_count": 6,
+ "fees_paid": 106.22,
  "fee_rate": 0.03,
  "lag": {
-  "n": 64,
-  "n24": 24,
-  "avg_s": 27.3,
-  "avg_slip_pct": -0.0465,
+  "n": 65,
+  "n24": 25,
+  "avg_s": 28.0,
+  "avg_slip_pct": -0.0408,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "2744571775903589106980317653847400232271579861889013320024551414528092561305",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "GamerLegion",
+   "title": "Dota 2: BetBoom Team vs GamerLegion - Game 1 Winner",
+   "their_price": 0.4199,
+   "my_price": 0.46,
+   "slippage_pct": 0.0955,
+   "shares": 212.13,
+   "cost": 97.58,
+   "fee": 1.58,
+   "opened": 1783762730,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "97030903347936099809712211774880132820716149097020948618258743557775057824890",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -1234,6 +1252,21 @@
  ],
  "missed": [
   {
+   "ts": 1783762772,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "2744571775903589106980317653847400232271579861889013320024551414528092561305",
+   "cond": "0x32c45da56bf405f951f62fbf1c6d84d16e18a258870438aabb26ed314210d16d",
+   "title": "Dota 2: BetBoom Team vs GamerLegion - Game 1 Winner",
+   "outcome": "GamerLegion",
+   "price": 0.4198,
+   "stake": 97.58,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783730040,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "103676338032335044429709174398685887348332725157638903811532034719301297769141",
@@ -1910,5 +1943,5 @@
   }
  ],
  "missed_pnl": -116.15,
- "updated": 1783761046
+ "updated": 1783762773
 }
