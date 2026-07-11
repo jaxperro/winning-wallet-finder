@@ -5,14 +5,14 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 24.73,
- "cash": 16.68,
- "deployed": 6.03,
+ "cash": 17.59,
+ "deployed": 5.0,
  "reserve": 0.0,
- "realized": -1.77,
+ "realized": -1.89,
  "adjustments": 2.2,
  "ledger_drift": -0.01,
- "open_count": 2,
- "fees_paid": 0.77,
+ "open_count": 1,
+ "fees_paid": 0.78,
  "fee_rate": 0.03,
  "lag": {
   "n": 4,
@@ -62,10 +62,12 @@
    "cost": 1.03,
    "fee": 0.01,
    "opened": 1783762621,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "closed",
+   "exit_price": 0.5827,
+   "pnl": -0.13,
+   "settled": 1783762711,
+   "sold_shares": 1.56,
+   "sold_proceeds": 0.91
   },
   {
    "token": "97030903347936099809712211774880132820716149097020948618258743557775057824890",
@@ -241,6 +243,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1783762772,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "2744571775903589106980317653847400232271579861889013320024551414528092561305",
+   "cond": "0x32c45da56bf405f951f62fbf1c6d84d16e18a258870438aabb26ed314210d16d",
+   "title": "Dota 2: BetBoom Team vs GamerLegion - Game 1 Winner",
+   "outcome": "GamerLegion",
+   "price": 0.4198,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
   {
    "ts": 1783699024,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1179,25 +1196,8 @@
    "settled": 1783620306,
    "name": "0xbadaf319",
    "exit_price": 0.89
-  },
-  {
-   "ts": 1783610496,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "18761224788266541727279689677720684189553273901637473351355084093520325570855",
-   "cond": "0x868d295d9e0d6f777b7f4e6abb45f5d02e2f0281bb12b857f6375f7ecc8c91e5",
-   "title": "Dota 2: MOUZ vs Team Nemesis - Game 1 Winner",
-   "outcome": "Team Nemesis",
-   "price": 0.61,
-   "stake": 5.0,
-   "reason": "price moved 0.46\u21920.61",
-   "status": "sold",
-   "pnl": -0.81,
-   "settled": 1783620024,
-   "name": "gkmgkldfmg",
-   "exit_checked": true,
-   "exit_price": 0.5255
   }
  ],
  "missed_pnl": 102.4,
- "updated": 1783762648
+ "updated": 1783762776
 }
