@@ -5380,13 +5380,13 @@
     "22293458003405574504714007164622746211949900414139391877327291617757461162520": "0x1567cfbb3597df9c9b43a91d227081b21e9cc0795488570c7bcd58b30b21353f",
     "24685222266639618881275458182682767134900023023526773367466764924178936188460": "0xa54a1b59dfc7dbd086084ec8482284753f018c7d47a85fd3fbcc181fc994fa37"
   },
-  "cash": 2153.8016070545705,
+  "cash": 2197.8157587719793,
   "lag": {
     "n": 70,
     "sum_s": 2290.0699787139893,
     "sum_slip_pct": -3.8011232059439757
   },
-  "fees_paid": 117.86424919364346,
+  "fees_paid": 118.30434625656876,
   "lag_recent": [
     [
       1783685387.6,
@@ -6820,17 +6820,17 @@
       "cost": 99.73,
       "fee": 1.1369,
       "opened": 1783768913,
-      "status": "open",
-      "exit_price": null,
-      "pnl": null,
-      "settled": null,
-      "sold_shares": 94.50709248989469,
-      "sold_proceeds": 64.43190197637877
+      "status": "closed",
+      "exit_price": 0.6742,
+      "pnl": 7.58,
+      "settled": 1783769229,
+      "sold_shares": 160.85671753516922,
+      "sold_proceeds": 108.4460536937874
     }
   },
-  "hwm": 2494.442878633935,
-  "feed_sig": "142a0333ae0729fdfcf66efce004bd12",
-  "feed_pushed_at": 1783769106.387781,
+  "hwm": 2500.857075337567,
+  "feed_sig": "ffc2947610dcd7bd11b56d0b8daa810e",
+  "feed_pushed_at": 1783769229.0885258,
   "missed": [
     {
       "ts": 1783590977,
@@ -7548,10 +7548,11 @@
       "price": 0.65,
       "stake": 98.1,
       "reason": "price moved 0.60\u21920.65",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "gkmgkldfmg"
+      "status": "sold",
+      "pnl": 5.54,
+      "settled": 1783769298,
+      "name": "gkmgkldfmg",
+      "exit_price": 0.6998
     },
     {
       "ts": 1783769106,

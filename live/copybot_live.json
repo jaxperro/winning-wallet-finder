@@ -1354,6 +1354,22 @@
  ],
  "missed": [
   {
+   "ts": 1783768873,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "24685222266639618881275458182682767134900023023526773367466764924178936188460",
+   "cond": "0xa54a1b59dfc7dbd086084ec8482284753f018c7d47a85fd3fbcc181fc994fa37",
+   "title": "Dota 2: Xtreme Gaming vs Team Falcons - Game 2 Winner",
+   "outcome": "Team Falcons",
+   "price": 0.65,
+   "stake": 98.1,
+   "reason": "price moved 0.60\u21920.65",
+   "status": "sold",
+   "pnl": 5.54,
+   "settled": 1783769298,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.6998
+  },
+  {
    "ts": 1783769106,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "21317240954584519381735360743926588514834913277324009690727150242237748830303",
@@ -1367,21 +1383,6 @@
    "pnl": null,
    "settled": null,
    "name": "imwalkinghere"
-  },
-  {
-   "ts": 1783768873,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "24685222266639618881275458182682767134900023023526773367466764924178936188460",
-   "cond": "0xa54a1b59dfc7dbd086084ec8482284753f018c7d47a85fd3fbcc181fc994fa37",
-   "title": "Dota 2: Xtreme Gaming vs Team Falcons - Game 2 Winner",
-   "outcome": "Team Falcons",
-   "price": 0.65,
-   "stake": 98.1,
-   "reason": "price moved 0.60\u21920.65",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1783767107,
@@ -2090,6 +2091,6 @@
    "exit_price": 0.95
   }
  ],
- "missed_pnl": -110.15,
- "updated": 1783769229
+ "missed_pnl": -104.61,
+ "updated": 1783769299
 }
