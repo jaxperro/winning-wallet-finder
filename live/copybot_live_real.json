@@ -298,6 +298,22 @@
  ],
  "missed": [
   {
+   "ts": 1783768547,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "22293458003405574504714007164622746211949900414139391877327291617757461162520",
+   "cond": "0x1567cfbb3597df9c9b43a91d227081b21e9cc0795488570c7bcd58b30b21353f",
+   "title": "LoL: Hanwha Life Esports vs LYON - Game 4 Winner",
+   "outcome": "Hanwha Life Esports",
+   "price": 0.7,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
+   "status": "sold",
+   "pnl": 0.35,
+   "settled": 1783769011,
+   "name": "AIcAIc",
+   "exit_price": 0.95
+  },
+  {
    "ts": 1783768611,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "24685222266639618881275458182682767134900023023526773367466764924178936188460",
@@ -311,21 +327,6 @@
    "pnl": null,
    "settled": null,
    "name": "gkmgkldfmg"
-  },
-  {
-   "ts": 1783768547,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "22293458003405574504714007164622746211949900414139391877327291617757461162520",
-   "cond": "0x1567cfbb3597df9c9b43a91d227081b21e9cc0795488570c7bcd58b30b21353f",
-   "title": "LoL: Hanwha Life Esports vs LYON - Game 4 Winner",
-   "outcome": "Hanwha Life Esports",
-   "price": 0.7,
-   "stake": 1.0,
-   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
   },
   {
    "ts": 1783767045,
@@ -1250,6 +1251,6 @@
    "exit_price": 0.55
   }
  ],
- "missed_pnl": 102.79,
- "updated": 1783768611
+ "missed_pnl": 103.14,
+ "updated": 1783769012
 }
