@@ -1844,6 +1844,7 @@
     "0xa3250d510a3c72b936a8e6043c3fc3d481596fa7252ffb1bb666ef201efbc965",
     "0x1786176f6823e7042026d9ebc7ab068729389b341de08620b998bb5d5bb1a95f",
     "0x186cf44236a0756098b54f7bb99003d731130715f4dbb1b0d46003e5c78c382d",
+    "0x527717e30a219ea93ff6af077b440af016542106cdc6fc363a18142af588194c",
     "0xc79057861b37dcb43926f6c54ddee7735c4271f507e935710fa8dabb2bc6d3ad",
     "0xc26ebc320d4f27b309e7bacbb0a3f51e9e94a0118e36985894d977fd88d1d6b7",
     "0x08f6f203deb1e59bb208531361b23382ca2ced347d594dd678179c03510edf8d",
@@ -3893,7 +3894,8 @@
       "97030903347936099809712211774880132820716149097020948618258743557775057824890": 0.003300000000081127,
       "43352177745029765381117903182775050090151239577341482408278783749515380599854": 0.0,
       "100094646481889411045608903542709537170681601408861322501769657932997311570009": 0.009997000000112166,
-      "22293458003405574504714007164622746211949900414139391877327291617757461162520": 0.0
+      "22293458003405574504714007164622746211949900414139391877327291617757461162520": 0.0,
+      "106618579082857173205099187418291680068349149870923665139597643374871754972322": 508.13
     },
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": {
       "59855952379545476461266875939089074481171378466995213858930892770855011813551": 10000,
@@ -5442,11 +5444,20 @@
       "event": "kor-san-bch-2026-07-11",
       "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
       "cond": "0xa936f18120af67f918f4a3714f931dee6e5939f78657fe63a8cc2f92f1bf435b"
+    },
+    "106618579082857173205099187418291680068349149870923665139597643374871754972322": {
+      "shares": 1.470587,
+      "cost": 1.0294109,
+      "title": "LoL: Hanwha Life Esports vs LYON (BO5) - Mid-Season Invitational Playoffs",
+      "outcome": "Hanwha Life Esports",
+      "event": "lol-hle1-ly-2026-07-11",
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "cond": "0xbb5243e8e12a186025c0f27597a8c4808a206379f1f9762d4072718644dc9fa3"
     }
   },
   "spend": {
     "date": "2026-07-11",
-    "usd": 5.14572233
+    "usd": 6.17513323
   },
   "seeded": [
     "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -5464,15 +5475,16 @@
     "51058471821673607745532428112221296386180873156470169836568216937497505135529": "0x32c45da56bf405f951f62fbf1c6d84d16e18a258870438aabb26ed314210d16d",
     "2744571775903589106980317653847400232271579861889013320024551414528092561305": "0x32c45da56bf405f951f62fbf1c6d84d16e18a258870438aabb26ed314210d16d",
     "73893970296257160435491465547806830475405138836098479326244164349063701653888": "0x0cc3c7d669843de4f7ded48b2b98b44d912054fa42744c65833aca349b23a9e9",
-    "111238155193029214626119372717509509454868187612257655146390848111901958320265": "0xa936f18120af67f918f4a3714f931dee6e5939f78657fe63a8cc2f92f1bf435b"
+    "111238155193029214626119372717509509454868187612257655146390848111901958320265": "0xa936f18120af67f918f4a3714f931dee6e5939f78657fe63a8cc2f92f1bf435b",
+    "106618579082857173205099187418291680068349149870923665139597643374871754972322": "0xbb5243e8e12a186025c0f27597a8c4808a206379f1f9762d4072718644dc9fa3"
   },
-  "cash": 14.457334223129003,
+  "cash": 13.418658625029003,
   "lag": {
-    "n": 7,
-    "sum_s": 705.1320078372955,
-    "sum_slip_pct": 0.00874772601242206
+    "n": 8,
+    "sum_s": 820.9838216304779,
+    "sum_slip_pct": 0.038159490718304274
   },
-  "fees_paid": 0.8256544468709999,
+  "fees_paid": 0.8349191449709998,
   "lag_recent": [
     [
       1783727680.5,
@@ -5503,6 +5515,11 @@
       1783767734.5,
       169.5,
       0.04172
+    ],
+    [
+      1783770030.9,
+      115.9,
+      0.02941
     ]
   ],
   "bets": {
@@ -5747,6 +5764,24 @@
       "cost": 1.04,
       "fee": 0.0147,
       "opened": 1783767565,
+      "status": "open",
+      "exit_price": null,
+      "pnl": null,
+      "settled": null
+    },
+    "106618579082857173205099187418291680068349149870923665139597643374871754972322": {
+      "token": "106618579082857173205099187418291680068349149870923665139597643374871754972322",
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "name": "AIcAIc",
+      "outcome": "Hanwha Life Esports",
+      "title": "LoL: Hanwha Life Esports vs LYON (BO5) - Mid-Season Invitational Playoffs",
+      "their_price": 0.68,
+      "my_price": 0.7,
+      "slippage_pct": 0.0294,
+      "shares": 1.47,
+      "cost": 1.03,
+      "fee": 0.0093,
+      "opened": 1783769915,
       "status": "open",
       "exit_price": null,
       "pnl": null,
@@ -6990,14 +7025,45 @@
       "price": 0.11,
       "stake": 1.0,
       "reason": "in-play hold expired unfilled (25s)",
+      "status": "sold",
+      "pnl": 0.09,
+      "settled": 1783769966,
+      "name": "gkmgkldfmg",
+      "exit_price": 0.1265
+    },
+    {
+      "ts": 1783769964,
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "token": "106618579082857173205099187418291680068349149870923665139597643374871754972322",
+      "cond": "0xbb5243e8e12a186025c0f27597a8c4808a206379f1f9762d4072718644dc9fa3",
+      "title": "LoL: Hanwha Life Esports vs LYON (BO5) - Mid-Season Invitational Playoffs",
+      "outcome": "Hanwha Life Esports",
+      "price": 0.68,
+      "stake": 1.0,
+      "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
       "settled": null,
-      "name": "gkmgkldfmg"
+      "name": "AIcAIc"
+    },
+    {
+      "ts": 1783769964,
+      "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+      "token": "7841049009621582008134872487806885426539273489007529352564848565148427144802",
+      "cond": "0x0cf972c6ca18916a9359885ae518cbe785b7c25921645fdfd93c08febdfd89bb",
+      "title": "Bitcoin Up or Down - July 11, 7:30AM-7:45AM ET",
+      "outcome": "Down",
+      "price": 0.3835,
+      "stake": 1.0,
+      "reason": "not copied in the detection window (reconciled)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "1kto1m"
     }
   ],
-  "feed_sig": "f9bbb3c126c95a6acd60b75356f4d29b",
-  "feed_pushed_at": 1783769517.7899454,
+  "feed_sig": "b9ecbfb7aef0d4ba9c9c8e3c4c78de50",
+  "feed_pushed_at": 1783769897.9787138,
   "adjustments": [
     {
       "ts": 1783718232,
@@ -7005,28 +7071,9 @@
       "note": "2026-07-10 rebase to $22.28 equity baseline (user: retire caps, 4% paper-parity sizing; prior incident P&L stays in history)"
     }
   ],
-  "pending_orders": [
-    {
-      "order_id": "0x725c99d90aadc23d66effd3b042eb7537c818e4f75624e8ada89cb9e37076ff2",
-      "bal0": 2.5,
-      "token": "2744571775903589106980317653847400232271579861889013320024551414528092561305",
-      "side": "SELL",
-      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-      "title": "Dota 2: BetBoom Team vs GamerLegion - Game 1 Winner",
-      "outcome": "GamerLegion",
-      "event": "dota2-bb4-gl-2026-07-11",
-      "cond": "0x32c45da56bf405f951f62fbf1c6d84d16e18a258870438aabb26ed314210d16d",
-      "their_price": 0.001,
-      "their_ts": null,
-      "price": 0.001,
-      "is_add": false,
-      "stake": 0.0025,
-      "ts": 1783769645.3243744,
-      "ttl_s": 600
-    }
-  ],
+  "pending_orders": [],
   "exit_retries": [],
   "exit_attempts": {
-    "2744571775903589106980317653847400232271579861889013320024551414528092561305": 14
+    "2744571775903589106980317653847400232271579861889013320024551414528092561305": 15
   }
 }

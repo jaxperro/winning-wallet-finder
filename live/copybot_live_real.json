@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 24.73,
- "cash": 14.46,
- "deployed": 8.08,
+ "cash": 13.42,
+ "deployed": 9.11,
  "reserve": 0.0,
- "realized": -1.94,
+ "realized": -1.95,
  "adjustments": 2.2,
  "ledger_drift": -0.01,
- "open_count": 4,
+ "open_count": 5,
  "fees_paid": 0.83,
  "fee_rate": 0.03,
  "lag": {
-  "n": 7,
-  "n24": 6,
-  "avg_s": 72.8,
-  "avg_slip_pct": 0.0015,
+  "n": 8,
+  "n24": 7,
+  "avg_s": 79.0,
+  "avg_slip_pct": 0.0055,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "106618579082857173205099187418291680068349149870923665139597643374871754972322",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Hanwha Life Esports",
+   "title": "LoL: Hanwha Life Esports vs LYON (BO5) - Mid-Season Invitational Playoffs",
+   "their_price": 0.68,
+   "my_price": 0.7,
+   "slippage_pct": 0.0294,
+   "shares": 1.47,
+   "cost": 1.03,
+   "fee": 0.01,
+   "opened": 1783769915,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "111238155193029214626119372717509509454868187612257655146390848111901958320265",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -307,10 +325,41 @@
    "price": 0.11,
    "stake": 1.0,
    "reason": "in-play hold expired unfilled (25s)",
+   "status": "sold",
+   "pnl": 0.09,
+   "settled": 1783769966,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.1265
+  },
+  {
+   "ts": 1783769964,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "106618579082857173205099187418291680068349149870923665139597643374871754972322",
+   "cond": "0xbb5243e8e12a186025c0f27597a8c4808a206379f1f9762d4072718644dc9fa3",
+   "title": "LoL: Hanwha Life Esports vs LYON (BO5) - Mid-Season Invitational Playoffs",
+   "outcome": "Hanwha Life Esports",
+   "price": 0.68,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
    "status": "open",
    "pnl": null,
    "settled": null,
-   "name": "gkmgkldfmg"
+   "name": "AIcAIc"
+  },
+  {
+   "ts": 1783769964,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "7841049009621582008134872487806885426539273489007529352564848565148427144802",
+   "cond": "0x0cf972c6ca18916a9359885ae518cbe785b7c25921645fdfd93c08febdfd89bb",
+   "title": "Bitcoin Up or Down - July 11, 7:30AM-7:45AM ET",
+   "outcome": "Down",
+   "price": 0.3835,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
   },
   {
    "ts": 1783769106,
@@ -1217,40 +1266,8 @@
    "settled": 1783631615,
    "name": "gkmgkldfmg",
    "exit_checked": true
-  },
-  {
-   "ts": 1783619136,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "70408936800509461553908169247651744499361197714777425908648127381697435776212",
-   "cond": "0x154448eb3f6e70a5bf8ee90469e6a9637d8bf6979a7ef184aac0e63f9cf3f630",
-   "title": "Will Pyunik FA win on 2026-07-09?",
-   "outcome": "Yes",
-   "price": 0.7999,
-   "stake": 5.0,
-   "reason": "bot offline (deploy window)",
-   "status": "won",
-   "pnl": 1.22,
-   "settled": 1783631240,
-   "name": "LSB1",
-   "exit_checked": true
-  },
-  {
-   "ts": 1783627976,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "114973484118227793815545241122012985639899573502123700019283561171248113667821",
-   "cond": "0x8be4e240ce14fb0c952f3d98d748d4a1f93c97116cff5b9dba139d36f5387d7a",
-   "title": "Will Anduril's valuation hit (HIGH) $175B by December 31?",
-   "outcome": "No",
-   "price": 0.75,
-   "stake": 5.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -0.08,
-   "settled": 1783628297,
-   "name": "0xbadaf319",
-   "exit_price": 0.75
   }
  ],
- "missed_pnl": 102.11,
- "updated": 1783769650
+ "missed_pnl": 102.2,
+ "updated": 1783770033
 }
