@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 98.14,
+ "stake": 98.1,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2493.98,
- "cash": 2150.41,
- "deployed": 303.04,
+ "cash": 2051.3,
+ "deployed": 401.18,
  "reserve": 0.0,
- "realized": 1453.42,
+ "realized": 1452.45,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 6,
- "fees_paid": 114.94,
+ "open_count": 7,
+ "fees_paid": 115.91,
  "fee_rate": 0.03,
  "lag": {
-  "n": 68,
-  "n24": 25,
-  "avg_s": 34.3,
-  "avg_slip_pct": -0.0448,
+  "n": 69,
+  "n24": 26,
+  "avg_s": 33.0,
+  "avg_slip_pct": -0.0442,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "22293458003405574504714007164622746211949900414139391877327291617757461162520",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Hanwha Life Esports",
+   "title": "LoL: Hanwha Life Esports vs LYON - Game 4 Winner",
+   "their_price": 0.69,
+   "my_price": 0.67,
+   "slippage_pct": -0.029,
+   "shares": 146.47,
+   "cost": 98.14,
+   "fee": 0.97,
+   "opened": 1783768543,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "111238155193029214626119372717509509454868187612257655146390848111901958320265",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -2021,5 +2039,5 @@
   }
  ],
  "missed_pnl": -110.15,
- "updated": 1783768046
+ "updated": 1783768545
 }
