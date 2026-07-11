@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 73,
-  "n24": 27,
-  "avg_s": 46.4,
-  "avg_slip_pct": -0.0431,
+  "n24": 26,
+  "avg_s": 48.1,
+  "avg_slip_pct": -0.0441,
   "window_h": 24
  },
  "wallets": [
@@ -1414,6 +1414,21 @@
  ],
  "missed": [
   {
+   "ts": 1783777135,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "32083946557663920503716775865697460526633197303585051527116966709905217705878",
+   "cond": "0xc9f52d4c1e790f736f69fcd522263b02bcd3c2b17a729dbf048970ed59ee5808",
+   "title": "Dota 2: L1ga Team vs Level UP - Game 2 Winner",
+   "outcome": "L1ga Team",
+   "price": 0.5485,
+   "stake": 100.07,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783776820,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "66542966921479736150492153890010290615172456230777295742236316360180197142463",
@@ -1423,10 +1438,11 @@
    "price": 0.5076,
    "stake": 100.64,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "imwalkinghere"
+   "status": "lost",
+   "pnl": -102.13,
+   "settled": 1783777012,
+   "name": "imwalkinghere",
+   "exit_checked": true
   },
   {
    "ts": 1783771804,
@@ -2261,6 +2277,6 @@
    "exit_price": 0.95
   }
  ],
- "missed_pnl": -243.01,
- "updated": 1783776824
+ "missed_pnl": -345.14,
+ "updated": 1783777138
 }
