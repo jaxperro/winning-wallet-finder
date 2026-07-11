@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 99.69,
+ "stake": 100.03,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 2493.98,
- "cash": 2089.74,
- "deployed": 402.43,
+ "hwm": 2500.86,
+ "cash": 2197.82,
+ "deployed": 303.04,
  "reserve": 0.0,
- "realized": 1492.14,
+ "realized": 1500.83,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 7,
- "fees_paid": 117.26,
+ "open_count": 6,
+ "fees_paid": 118.3,
  "fee_rate": 0.03,
  "lag": {
   "n": 70,
@@ -50,6 +50,26 @@
  },
  "bets": [
   {
+   "token": "24685222266639618881275458182682767134900023023526773367466764924178936188460",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Falcons",
+   "title": "Dota 2: Xtreme Gaming vs Team Falcons - Game 2 Winner",
+   "their_price": 0.62,
+   "my_price": 0.62,
+   "slippage_pct": 0.0,
+   "shares": 160.86,
+   "cost": 99.73,
+   "fee": 1.14,
+   "opened": 1783768913,
+   "status": "closed",
+   "exit_price": 0.6742,
+   "pnl": 7.58,
+   "settled": 1783769229,
+   "sold_shares": 160.86,
+   "sold_proceeds": 108.45
+  },
+  {
    "token": "22293458003405574504714007164622746211949900414139391877327291617757461162520",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "name": "AIcAIc",
@@ -68,26 +88,6 @@
    "settled": 1783768985,
    "sold_shares": 146.47,
    "sold_proceeds": 138.94
-  },
-  {
-   "token": "24685222266639618881275458182682767134900023023526773367466764924178936188460",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Falcons",
-   "title": "Dota 2: Xtreme Gaming vs Team Falcons - Game 2 Winner",
-   "their_price": 0.62,
-   "my_price": 0.62,
-   "slippage_pct": 0.0,
-   "shares": 160.86,
-   "cost": 99.73,
-   "fee": 1.14,
-   "opened": 1783768913,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 0.56,
-   "sold_proceeds": 0.37
   },
   {
    "token": "111238155193029214626119372717509509454868187612257655146390848111901958320265",
@@ -2091,5 +2091,5 @@
   }
  ],
  "missed_pnl": -110.15,
- "updated": 1783769106
+ "updated": 1783769229
 }
