@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 97.79,
+ "stake": 97.7,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2493.98,
- "cash": 2237.31,
- "deployed": 207.39,
+ "cash": 2137.35,
+ "deployed": 305.17,
  "reserve": 0.0,
- "realized": 1444.66,
+ "realized": 1442.49,
  "adjustments": 0.03,
- "ledger_drift": 0.0,
- "open_count": 5,
- "fees_paid": 108.71,
+ "ledger_drift": 0.01,
+ "open_count": 6,
+ "fees_paid": 110.88,
  "fee_rate": 0.03,
  "lag": {
-  "n": 66,
-  "n24": 23,
-  "avg_s": 30.0,
-  "avg_slip_pct": -0.0412,
+  "n": 67,
+  "n24": 24,
+  "avg_s": 28.8,
+  "avg_slip_pct": -0.0411,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "72360978495452180080538327232926295248474801559995120453489389067546448362850",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "GamerLegion",
+   "title": "Dota 2: BetBoom Team vs GamerLegion - Game 2 Winner",
+   "their_price": 0.27,
+   "my_price": 0.26,
+   "slippage_pct": -0.037,
+   "shares": 376.11,
+   "cost": 97.79,
+   "fee": 2.17,
+   "opened": 1783766995,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "100094646481889411045608903542709537170681601408861322501769657932997311570009",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -1274,6 +1292,21 @@
  ],
  "missed": [
   {
+   "ts": 1783767107,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "94086717682175488292372912031763512631835050964973472839161913179834160769254",
+   "cond": "0x14272984bc3c6a49e9c6141e93b2b6534573765ec89c438986f26151ccfa3d3c",
+   "title": "Will Pohang Steelers FC win on 2026-07-11?",
+   "outcome": "Yes",
+   "price": 0.5987,
+   "stake": 97.7,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783762772,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "2744571775903589106980317653847400232271579861889013320024551414528092561305",
@@ -1966,5 +1999,5 @@
   }
  ],
  "missed_pnl": -110.15,
- "updated": 1783766180
+ "updated": 1783767110
 }
