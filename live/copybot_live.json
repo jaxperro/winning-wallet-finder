@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 100.03,
+ "stake": 99.99,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2500.86,
- "cash": 2197.82,
- "deployed": 303.04,
+ "cash": 2096.7,
+ "deployed": 403.08,
  "reserve": 0.0,
- "realized": 1500.83,
+ "realized": 1499.75,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 6,
- "fees_paid": 118.3,
+ "open_count": 7,
+ "fees_paid": 119.38,
  "fee_rate": 0.03,
  "lag": {
-  "n": 70,
-  "n24": 27,
-  "avg_s": 34.4,
-  "avg_slip_pct": -0.0426,
+  "n": 71,
+  "n24": 28,
+  "avg_s": 44.7,
+  "avg_slip_pct": -0.0432,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "106618579082857173205099187418291680068349149870923665139597643374871754972322",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Hanwha Life Esports",
+   "title": "LoL: Hanwha Life Esports vs LYON (BO5) - Mid-Season Invitational Playoffs",
+   "their_price": 0.68,
+   "my_price": 0.64,
+   "slippage_pct": -0.0588,
+   "shares": 156.3,
+   "cost": 100.03,
+   "fee": 1.08,
+   "opened": 1783769915,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "24685222266639618881275458182682767134900023023526773367466764924178936188460",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1354,6 +1372,36 @@
  ],
  "missed": [
   {
+   "ts": 1783770235,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "106618579082857173205099187418291680068349149870923665139597643374871754972322",
+   "cond": "0xbb5243e8e12a186025c0f27597a8c4808a206379f1f9762d4072718644dc9fa3",
+   "title": "LoL: Hanwha Life Esports vs LYON (BO5) - Mid-Season Invitational Playoffs",
+   "outcome": "Hanwha Life Esports",
+   "price": 0.68,
+   "stake": 100.03,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
+   "ts": 1783770234,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "105212104196091726392140052817325444324784813554106263063196477471085394528921",
+   "cond": "0xde8bac1e7c29832d29ae69c93248e6085e947a9909ff9c95f11ea7504257dd45",
+   "title": "Gwangju FC vs. Pohang Steelers FC: Pohang Steelers FC O/U 1.5",
+   "outcome": "Over",
+   "price": 0.91,
+   "stake": 100.03,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783769106,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "21317240954584519381735360743926588514834913277324009690727150242237748830303",
@@ -2093,5 +2141,5 @@
   }
  ],
  "missed_pnl": -205.8,
- "updated": 1783769614
+ "updated": 1783770237
 }
