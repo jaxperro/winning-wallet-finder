@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 98.4,
+ "stake": 99.76,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 2460.36,
- "cash": 2059.73,
- "deployed": 400.24,
+ "hwm": 2493.98,
+ "cash": 2144.35,
+ "deployed": 349.63,
  "reserve": 0.0,
- "realized": 1459.94,
+ "realized": 1493.95,
  "adjustments": 0.03,
- "ledger_drift": 0.0,
- "open_count": 8,
- "fees_paid": 102.42,
+ "ledger_drift": 0.01,
+ "open_count": 7,
+ "fees_paid": 102.83,
  "fee_rate": 0.03,
  "lag": {
   "n": 62,
@@ -49,6 +49,26 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "72834495383235297744666280877384242771579363352963523785873024005920870690952",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Epic Games' valuation hit (HIGH) $14B by December 31?",
+   "their_price": 0.51,
+   "my_price": 0.5,
+   "slippage_pct": -0.0196,
+   "shares": 168.85,
+   "cost": 84.43,
+   "fee": 1.27,
+   "opened": 1783633987,
+   "status": "closed",
+   "exit_price": 0.8185,
+   "pnl": 52.51,
+   "settled": 1783732219,
+   "sold_shares": 168.85,
+   "sold_proceeds": 138.21
+  },
   {
    "token": "76668431089191294884722284769810081002688692300759117208537364410807093425248",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -634,26 +654,6 @@
    "settled": null,
    "sold_shares": 131.91,
    "sold_proceeds": 70.95
-  },
-  {
-   "token": "72834495383235297744666280877384242771579363352963523785873024005920870690952",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Epic Games' valuation hit (HIGH) $14B by December 31?",
-   "their_price": 0.51,
-   "my_price": 0.5,
-   "slippage_pct": -0.0196,
-   "shares": 168.85,
-   "cost": 84.43,
-   "fee": 1.27,
-   "opened": 1783633987,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 67.63,
-   "sold_proceeds": 53.59
   },
   {
    "token": "70408936800509461553908169247651744499361197714777425908648127381697435776212",
@@ -1870,5 +1870,5 @@
   }
  ],
  "missed_pnl": -225.76,
- "updated": 1783730665
+ "updated": 1783732219
 }
