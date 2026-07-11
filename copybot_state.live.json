@@ -7775,11 +7775,12 @@
       "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "LSB1"
     }
   ],
-  "feed_sig": "ef3fbd669def0f4ba3855c331f09efd8",
-  "feed_pushed_at": 1783811483.5365741,
+  "feed_sig": "38b082f804e231b6d8af455c21315f38",
+  "feed_pushed_at": 1783814005.8138227,
   "adjustments": [
     {
       "ts": 1783718232,
