@@ -338,6 +338,36 @@
  ],
  "missed": [
   {
+   "ts": 1783771810,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "66515436880642025537496135879126489789070102463895353529834261649239057001921",
+   "cond": "0xe6103ce2b5b59939d3371f16aa6516f9828f3a9194fe8b13a96e0747a1fa487e",
+   "title": "Bitcoin Up or Down - July 11, 8:00AM-8:15AM ET",
+   "outcome": "Up",
+   "price": 0.5,
+   "stake": 1.0,
+   "reason": "price moved 0.31\u21920.50",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
+   "ts": 1783771804,
+   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
+   "token": "14558559907212874105816406765075619812711660815177458275599881262140416485351",
+   "cond": "0xcff1cd5b482a91c324614ee06b7e43c7a702f192bedca126a7e0e6d9bf70c75d",
+   "title": "Bitcoin Up or Down - July 11, 8:05AM-8:10AM ET",
+   "outcome": "Up",
+   "price": 0.99,
+   "stake": 1.0,
+   "reason": "price moved 0.57\u21920.99",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "imwalkinghere"
+  },
+  {
    "ts": 1783769964,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "106618579082857173205099187418291680068349149870923665139597643374871754972322",
@@ -1259,39 +1289,8 @@
    "settled": 1783652236,
    "name": "imwalkinghere",
    "exit_price": 0.5108
-  },
-  {
-   "ts": 1783650985,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "112398855248126389642334724080634566219399886008841203075173521868162852635909",
-   "cond": "0x73dd54214430d1d67ddf59ad22fdf62e00e71e273b229dc0040da504e5281b6f",
-   "title": "IAEA visits Isfahan, Fordow, or Natanz nuclear site by October 31?",
-   "outcome": "No",
-   "price": 0.5739,
-   "stake": 5.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783621873,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "22725380484456966301228939445880731453285484401950854931468064580525084575682",
-   "cond": "0x143c926299a00a8efbbb4368be94376883164ebeca3006dcb384f11b00f85a8a",
-   "title": "PFK CSKA Sofia vs. Derry City FC: Both Teams to Score",
-   "outcome": "Yes",
-   "price": 0.8593,
-   "stake": 5.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -0.04,
-   "settled": 1783634335,
-   "name": "LSB1",
-   "exit_price": 0.8594
   }
  ],
  "missed_pnl": 102.73,
- "updated": 1783771580
+ "updated": 1783771810
 }
