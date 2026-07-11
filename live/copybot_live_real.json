@@ -414,6 +414,21 @@
  ],
  "missed": [
   {
+   "ts": 1783784707,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "107268250696899722989818361141009210381365569902222649850764832303284830201491",
+   "cond": "0xb2b222cf79fcf899e479bbf711e02198af67817a2740286f71b950830717e3e2",
+   "title": "Will the price of Bitcoin be above $64,000 on July 11?",
+   "outcome": "Yes",
+   "price": 0.831,
+   "stake": 1.0,
+   "reason": "price moved 0.76\u21920.83",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783781335,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "27632180525380684914321906274705941073296172029015605436272337722097971624328",
@@ -1353,24 +1368,8 @@
    "settled": 1783685355,
    "name": "gkmgkldfmg",
    "exit_price": 0.4644
-  },
-  {
-   "ts": 1783681134,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "48197863914950401257348797854686849356505675289127641428641827304586227994435",
-   "cond": "0xd4aff5a8278ddd920d2f239f45f5150a7779971c55ee5c41059d22609d28966d",
-   "title": "Dota 2: Rune Eaters vs GamerLegion - Game 2 Winner",
-   "outcome": "Rune Eaters",
-   "price": 0.65,
-   "stake": 5.0,
-   "reason": "price moved 0.49\u21920.65",
-   "status": "sold",
-   "pnl": -0.26,
-   "settled": 1783681279,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.63
   }
  ],
  "missed_pnl": 103.07,
- "updated": 1783784623
+ "updated": 1783784707
 }
