@@ -5,13 +5,13 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 24.73,
- "cash": 13.62,
- "deployed": 6.29,
+ "cash": 13.94,
+ "deployed": 6.0,
  "reserve": 0.0,
- "realized": -4.58,
+ "realized": -4.54,
  "adjustments": 2.2,
  "ledger_drift": -0.01,
- "open_count": 3,
+ "open_count": 2,
  "fees_paid": 0.91,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
  },
  "bets": [
   {
+   "token": "113091218397444067989972632020225312341889014436526883908493943923995167586912",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on July 11?",
+   "their_price": 0.905,
+   "my_price": 0.892,
+   "slippage_pct": -0.0144,
+   "shares": 1.12,
+   "cost": 1.0,
+   "fee": 0.0,
+   "opened": 1783784263,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 0.02,
+   "settled": 1783786976,
+   "sold_shares": 0.8,
+   "sold_proceeds": 0.7
+  },
+  {
    "token": "78788260288922080326905341117968551697712240104712932735403261835886217664335",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "name": "1kto1m",
@@ -66,26 +86,6 @@
    "exit_price": 1.0,
    "pnl": 0.04,
    "settled": 1783785156
-  },
-  {
-   "token": "113091218397444067989972632020225312341889014436526883908493943923995167586912",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on July 11?",
-   "their_price": 0.905,
-   "my_price": 0.892,
-   "slippage_pct": -0.0144,
-   "shares": 1.12,
-   "cost": 1.0,
-   "fee": 0.0,
-   "opened": 1783784263,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 0.8,
-   "sold_proceeds": 0.7
   },
   {
    "token": "111238155193029214626119372717509509454868187612257655146390848111901958320265",
@@ -414,6 +414,22 @@
  ],
  "missed": [
   {
+   "ts": 1783779844,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "6204759428229444483121269411993202060365882790720181835870759405978643810801",
+   "cond": "0x9a00a35b561ef8c283ba3e47f599b71c5d4af452346e02cc1f142f07f732e21e",
+   "title": "Will Jio Platforms IPO by August 31, 2026?",
+   "outcome": "No",
+   "price": 0.59,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "sold",
+   "pnl": 0.06,
+   "settled": 1783786981,
+   "name": "0xbadaf319",
+   "exit_price": 0.6397
+  },
+  {
    "ts": 1783784707,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "107268250696899722989818361141009210381365569902222649850764832303284830201491",
@@ -426,7 +442,8 @@
    "status": "won",
    "pnl": 0.2,
    "settled": 1783786728,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1783781335,
@@ -490,21 +507,6 @@
    "settled": 1783780392,
    "name": "LSB1",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1783779844,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "6204759428229444483121269411993202060365882790720181835870759405978643810801",
-   "cond": "0x9a00a35b561ef8c283ba3e47f599b71c5d4af452346e02cc1f142f07f732e21e",
-   "title": "Will Jio Platforms IPO by August 31, 2026?",
-   "outcome": "No",
-   "price": 0.59,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1783779829,
@@ -1370,6 +1372,6 @@
    "exit_price": 0.4644
   }
  ],
- "missed_pnl": 103.27,
- "updated": 1783786728
+ "missed_pnl": 103.33,
+ "updated": 1783786982
 }
