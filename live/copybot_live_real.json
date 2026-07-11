@@ -204,6 +204,21 @@
  ],
  "missed": [
   {
+   "ts": 1783730037,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "103676338032335044429709174398685887348332725157638903811532034719301297769141",
+   "cond": "0xc0a08dd7986cf446238d770a607fc367452e4dd5877203e7d9a4070f7862c124",
+   "title": "Will Boston Legacy FC win on 2026-07-10?",
+   "outcome": "Yes",
+   "price": 0.697,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783727075,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "94261332494094465883021120894226351499139897211148377866980779595546383514545",
@@ -1141,23 +1156,8 @@
    "name": "gkmgkldfmg",
    "exit_checked": true,
    "exit_price": 0.5677
-  },
-  {
-   "ts": 1783614390,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
-   "cond": "0xc13c12dd0b8c4a29dedc8f12b2976628fa57e4a8b27bbcc522b82008bb549e02",
-   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $11.2B?",
-   "outcome": "No",
-   "price": 0.7901,
-   "stake": 5.0,
-   "reason": "followed but not placed \u2014 silent exit at copy time (thin/no-ask book most likely; both silent paths instrumented 2026-07-09)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": 102.14,
- "updated": 1783727871
+ "updated": 1783730042
 }
