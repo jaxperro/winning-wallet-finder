@@ -414,6 +414,21 @@
  ],
  "missed": [
   {
+   "ts": 1783806570,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "108451612909496335433925708933377313229531944715204827566329790137714124934964",
+   "cond": "0x3c5aeecefc413cf0c049d13327ad40456fd925fd7b5e1364e31239980154869d",
+   "title": "Exact Score: Norway 1 - 0 England?",
+   "outcome": "No",
+   "price": 0.94,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783805945,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "10174584768963875173947852308524484106197371102092547629610032094114021922809",
@@ -1353,24 +1368,8 @@
    "settled": 1783686302,
    "name": "gkmgkldfmg",
    "exit_price": 0.4943
-  },
-  {
-   "ts": 1783685385,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "99750659249903955439120052604225640907367048033793216838103937845588350738197",
-   "cond": "0x54d63713c8802102f64ee5134c567576c6bb43b458e218c8475f67a20f466b06",
-   "title": "Dota 2: Aurora vs PlayTime - Game 1 Winner",
-   "outcome": "PlayTime",
-   "price": 0.5,
-   "stake": 5.0,
-   "reason": "order rejected: exception: not enough balance / allowance: the balance is no",
-   "status": "sold",
-   "pnl": -0.21,
-   "settled": 1783685985,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.4943
   }
  ],
  "missed_pnl": 103.49,
- "updated": 1783805949
+ "updated": 1783806574
 }
