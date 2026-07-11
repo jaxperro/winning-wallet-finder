@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 76,
-  "n24": 28,
-  "avg_s": 47.0,
-  "avg_slip_pct": -0.0384,
+  "n24": 27,
+  "avg_s": 48.6,
+  "avg_slip_pct": -0.0399,
   "window_h": 24
  },
  "wallets": [
@@ -1450,6 +1450,21 @@
  ],
  "missed": [
   {
+   "ts": 1783770862,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "14720921693726444993132286510480864959564663807713006631795468793505944795957",
+   "cond": "0x6750fe34aa15e45304c8591f574ae62e792c34d78809bdcbc012e1bed5adfc0b",
+   "title": "Will Jeonbuk Hyundai Motors FC win on 2026-07-11?",
+   "outcome": "Yes",
+   "price": 0.8269,
+   "stake": 99.96,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 20.41,
+   "settled": 1783781024,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783767107,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "94086717682175488292372912031763512631835050964973472839161913179834160769254",
@@ -1576,21 +1591,6 @@
    "settled": 1783771497,
    "name": "AIcAIc",
    "exit_price": 0.95
-  },
-  {
-   "ts": 1783770862,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "14720921693726444993132286510480864959564663807713006631795468793505944795957",
-   "cond": "0x6750fe34aa15e45304c8591f574ae62e792c34d78809bdcbc012e1bed5adfc0b",
-   "title": "Will Jeonbuk Hyundai Motors FC win on 2026-07-11?",
-   "outcome": "Yes",
-   "price": 0.8269,
-   "stake": 99.96,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
   },
   {
    "ts": 1783769106,
@@ -2316,6 +2316,6 @@
    "exit_price": 0.95
   }
  ],
- "missed_pnl": -205.19,
- "updated": 1783780899
+ "missed_pnl": -184.78,
+ "updated": 1783781024
 }
