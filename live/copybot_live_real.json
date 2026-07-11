@@ -316,6 +316,52 @@
  ],
  "missed": [
   {
+   "ts": 1783769964,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "7841049009621582008134872487806885426539273489007529352564848565148427144802",
+   "cond": "0x0cf972c6ca18916a9359885ae518cbe785b7c25921645fdfd93c08febdfd89bb",
+   "title": "Bitcoin Up or Down - July 11, 7:30AM-7:45AM ET",
+   "outcome": "Down",
+   "price": 0.3835,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 0.23,
+   "settled": 1783770290,
+   "name": "1kto1m",
+   "exit_price": 0.4859
+  },
+  {
+   "ts": 1783770288,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "81413637292297741701558038706628285500354162735615522867827508680184700465994",
+   "cond": "0x4b1e0b818817492afa73944f7271cc744a6e9027f2c26888b8a6ee76e6aba311",
+   "title": "Bitcoin Up or Down - July 11, 7AM ET",
+   "outcome": "Down",
+   "price": 0.5504,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
+   "ts": 1783770287,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "105212104196091726392140052817325444324784813554106263063196477471085394528921",
+   "cond": "0xde8bac1e7c29832d29ae69c93248e6085e947a9909ff9c95f11ea7504257dd45",
+   "title": "Gwangju FC vs. Pohang Steelers FC: Pohang Steelers FC O/U 1.5",
+   "outcome": "Over",
+   "price": 0.91,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783769579,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "15667405836292623495312906227729147108814159703377599696452991684880951926866",
@@ -345,21 +391,6 @@
    "pnl": null,
    "settled": null,
    "name": "AIcAIc"
-  },
-  {
-   "ts": 1783769964,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "7841049009621582008134872487806885426539273489007529352564848565148427144802",
-   "cond": "0x0cf972c6ca18916a9359885ae518cbe785b7c25921645fdfd93c08febdfd89bb",
-   "title": "Bitcoin Up or Down - July 11, 7:30AM-7:45AM ET",
-   "outcome": "Down",
-   "price": 0.3835,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "1kto1m"
   },
   {
    "ts": 1783769106,
@@ -1234,40 +1265,8 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783632945,
-   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
-   "token": "71541655082659994890599835762768262434471231057902321146296827929888355060088",
-   "cond": "0xadf6e68b2db2239b623f678be593f6f84a9ae3cb122ce1828429363b397b8543",
-   "title": "Bitcoin Up or Down - July 9, 5:30PM-5:35PM ET",
-   "outcome": "Up",
-   "price": 0.99,
-   "stake": 5.0,
-   "reason": "price moved 0.74\u21920.99",
-   "status": "sold",
-   "pnl": 0.05,
-   "settled": 1783633073,
-   "name": "imwalkinghere",
-   "exit_price": 1.0
-  },
-  {
-   "ts": 1783622151,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "108947296508063592085718442826411169359443176266922838741305348631169975990701",
-   "cond": "0x88e5fd695215f57adc94fb184ea54e639bd6fa6a71e49666d7529adb442a51ae",
-   "title": "Dota 2: Ilbirs eSports vs Nemiga Gaming - Game 2 Winner",
-   "outcome": "Ilbirs eSports",
-   "price": 0.5,
-   "stake": 5.0,
-   "reason": "price moved 0.45\u21920.50",
-   "status": "lost",
-   "pnl": -5.08,
-   "settled": 1783631615,
-   "name": "gkmgkldfmg",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 102.2,
- "updated": 1783770033
+ "missed_pnl": 102.43,
+ "updated": 1783770296
 }
