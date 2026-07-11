@@ -6830,7 +6830,7 @@
   },
   "hwm": 2500.857075337567,
   "feed_sig": "ffc2947610dcd7bd11b56d0b8daa810e",
-  "feed_pushed_at": 1783769229.0885258,
+  "feed_pushed_at": 1783769361.183386,
   "missed": [
     {
       "ts": 1783590977,
@@ -7564,9 +7564,9 @@
       "price": 0,
       "stake": 99.69,
       "reason": "price 0.000 outside [0.01,0.99]",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "pnl": -101.19,
+      "settled": 1783769486,
       "name": "imwalkinghere"
     }
   ],
