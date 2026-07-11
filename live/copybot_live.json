@@ -1366,7 +1366,8 @@
    "status": "lost",
    "pnl": -101.19,
    "settled": 1783769486,
-   "name": "imwalkinghere"
+   "name": "imwalkinghere",
+   "exit_checked": true
   },
   {
    "ts": 1783768873,
@@ -2092,5 +2093,5 @@
   }
  ],
  "missed_pnl": -205.8,
- "updated": 1783769486
+ "updated": 1783769614
 }
