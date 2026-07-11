@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 101.44,
+ "stake": 100.07,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2156.4,
- "deployed": 379.69,
+ "cash": 2198.83,
+ "deployed": 303.04,
  "reserve": 0.0,
- "realized": 1536.06,
+ "realized": 1501.84,
  "adjustments": 0.03,
  "ledger_drift": 0.0,
- "open_count": 7,
- "fees_paid": 123.27,
+ "open_count": 6,
+ "fees_paid": 124.11,
  "fee_rate": 0.03,
  "lag": {
   "n": 73,
@@ -62,12 +62,12 @@
    "cost": 101.96,
    "fee": 1.16,
    "opened": 1783776182,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 40.82,
-   "sold_proceeds": 13.6
+   "status": "closed",
+   "exit_price": 0.3407,
+   "pnl": -47.09,
+   "settled": 1783776824,
+   "sold_shares": 164.45,
+   "sold_proceeds": 56.03
   },
   {
    "token": "106618579082857173205099187418291680068349149870923665139597643374871754972322",
@@ -1414,6 +1414,21 @@
  ],
  "missed": [
   {
+   "ts": 1783776820,
+   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
+   "token": "66542966921479736150492153890010290615172456230777295742236316360180197142463",
+   "cond": "0x28027472fa8bf888fcfb6bd87350fb2f952f425f1f439877ac89faedcf68f5b9",
+   "title": "Bitcoin Up or Down - July 11, 9:25AM-9:30AM ET",
+   "outcome": "Up",
+   "price": 0.5076,
+   "stake": 100.64,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "imwalkinghere"
+  },
+  {
    "ts": 1783771804,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "14558559907212874105816406765075619812711660815177458275599881262140416485351",
@@ -2247,5 +2262,5 @@
   }
  ],
  "missed_pnl": -243.01,
- "updated": 1783776755
+ "updated": 1783776824
 }
