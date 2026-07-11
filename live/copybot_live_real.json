@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 24.73,
- "cash": 13.88,
- "deployed": 6.0,
+ "cash": 11.88,
+ "deployed": 8.0,
  "reserve": 0.0,
  "realized": -4.6,
  "adjustments": 2.2,
  "ledger_drift": -0.01,
- "open_count": 2,
+ "open_count": 4,
  "fees_paid": 0.9,
  "fee_rate": 0.03,
  "lag": {
-  "n": 11,
-  "n24": 10,
-  "avg_s": 73.3,
-  "avg_slip_pct": 0.0266,
+  "n": 13,
+  "n24": 12,
+  "avg_s": 63.9,
+  "avg_slip_pct": 0.0219,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,42 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "78788260288922080326905341117968551697712240104712932735403261835886217664335",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Down",
+   "title": "Bitcoin Up or Down - July 11, 11:30AM-11:45AM ET",
+   "their_price": 0.9499,
+   "my_price": 0.96,
+   "slippage_pct": 0.0106,
+   "shares": 1.04,
+   "cost": 1.0,
+   "fee": 0.0,
+   "opened": 1783784381,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
+  {
+   "token": "113091218397444067989972632020225312341889014436526883908493943923995167586912",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on July 11?",
+   "their_price": 0.905,
+   "my_price": 0.892,
+   "slippage_pct": -0.0144,
+   "shares": 1.12,
+   "cost": 1.0,
+   "fee": 0.0,
+   "opened": 1783784263,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "111238155193029214626119372717509509454868187612257655146390848111901958320265",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -1334,5 +1370,5 @@
   }
  ],
  "missed_pnl": 103.07,
- "updated": 1783781339
+ "updated": 1783784386
 }
