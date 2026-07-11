@@ -6,12 +6,12 @@
  "event_cap": 0,
  "hwm": 24.73,
  "cash": 13.66,
- "deployed": 9.11,
+ "deployed": 8.08,
  "reserve": 0.0,
- "realized": -1.72,
+ "realized": -2.74,
  "adjustments": 2.2,
  "ledger_drift": -0.02,
- "open_count": 5,
+ "open_count": 4,
  "fees_paid": 0.88,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "2744571775903589106980317653847400232271579861889013320024551414528092561305",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "GamerLegion",
+   "title": "Dota 2: BetBoom Team vs GamerLegion - Game 1 Winner",
+   "their_price": 0.45,
+   "my_price": 0.41,
+   "slippage_pct": -0.0889,
+   "shares": 2.5,
+   "cost": 1.02,
+   "fee": 0.02,
+   "opened": 1783764590,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -1.04,
+   "settled": 1783773293
+  },
   {
    "token": "43551466881329966936571085042990699617845453317700345932385022134457322350137",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -138,24 +156,6 @@
    "cost": 1.02,
    "fee": 0.02,
    "opened": 1783767100,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
-   "token": "2744571775903589106980317653847400232271579861889013320024551414528092561305",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "GamerLegion",
-   "title": "Dota 2: BetBoom Team vs GamerLegion - Game 1 Winner",
-   "their_price": 0.45,
-   "my_price": 0.41,
-   "slippage_pct": -0.0889,
-   "shares": 2.5,
-   "cost": 1.02,
-   "fee": 0.02,
-   "opened": 1783764590,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -1312,5 +1312,5 @@
   }
  ],
  "missed_pnl": 102.17,
- "updated": 1783772855
+ "updated": 1783773295
 }
