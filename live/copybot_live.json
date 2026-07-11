@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 100.01,
+ "stake": 96.19,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
  "cash": 2004.12,
- "deployed": 496.24,
+ "deployed": 400.59,
  "reserve": 0.0,
- "realized": 1500.33,
+ "realized": 1404.68,
  "adjustments": 0.03,
- "ledger_drift": 0.0,
- "open_count": 8,
+ "ledger_drift": 0.01,
+ "open_count": 7,
  "fees_paid": 125.62,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,26 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "111238155193029214626119372717509509454868187612257655146390848111901958320265",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "Yes",
+   "title": "Will Gimcheon Sangmu FC win on 2026-07-11?",
+   "their_price": 0.5088,
+   "my_price": 0.44,
+   "slippage_pct": -0.1352,
+   "shares": 223.2,
+   "cost": 98.21,
+   "fee": 1.65,
+   "opened": 1783767565,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -97.41,
+   "settled": 1783780646,
+   "sold_shares": 5.8,
+   "sold_proceeds": 2.45
+  },
   {
    "token": "6204759428229444483121269411993202060365882790720181835870759405978643810801",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -184,26 +204,6 @@
    "settled": 1783768985,
    "sold_shares": 146.47,
    "sold_proceeds": 138.94
-  },
-  {
-   "token": "111238155193029214626119372717509509454868187612257655146390848111901958320265",
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "name": "LSB1",
-   "outcome": "Yes",
-   "title": "Will Gimcheon Sangmu FC win on 2026-07-11?",
-   "their_price": 0.5088,
-   "my_price": 0.44,
-   "slippage_pct": -0.1352,
-   "shares": 223.2,
-   "cost": 98.21,
-   "fee": 1.65,
-   "opened": 1783767565,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 5.8,
-   "sold_proceeds": 2.45
   },
   {
    "token": "72360978495452180080538327232926295248474801559995120453489389067546448362850",
@@ -1450,6 +1450,22 @@
  ],
  "missed": [
   {
+   "ts": 1783770234,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "105212104196091726392140052817325444324784813554106263063196477471085394528921",
+   "cond": "0xde8bac1e7c29832d29ae69c93248e6085e947a9909ff9c95f11ea7504257dd45",
+   "title": "Gwangju FC vs. Pohang Steelers FC: Pohang Steelers FC O/U 1.5",
+   "outcome": "Over",
+   "price": 0.91,
+   "stake": 100.03,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 9.62,
+   "settled": 1783780583,
+   "name": "LSB1",
+   "exit_price": 1.0
+  },
+  {
    "ts": 1783777135,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "32083946557663920503716775865697460526633197303585051527116966709905217705878",
@@ -1554,21 +1570,6 @@
    "outcome": "Yes",
    "price": 0.8269,
    "stake": 99.96,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
-  },
-  {
-   "ts": 1783770234,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "105212104196091726392140052817325444324784813554106263063196477471085394528921",
-   "cond": "0xde8bac1e7c29832d29ae69c93248e6085e947a9909ff9c95f11ea7504257dd45",
-   "title": "Gwangju FC vs. Pohang Steelers FC: Pohang Steelers FC O/U 1.5",
-   "outcome": "Over",
-   "price": 0.91,
-   "stake": 100.03,
    "reason": "not copied in the detection window (reconciled)",
    "status": "open",
    "pnl": null,
@@ -2314,6 +2315,6 @@
    "exit_price": 0.95
   }
  ],
- "missed_pnl": -279.12,
- "updated": 1783779844
+ "missed_pnl": -269.5,
+ "updated": 1783780647
 }
