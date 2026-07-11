@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 96.3,
+ "stake": 96.38,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2073.43,
- "deployed": 334.05,
+ "cash": 2083.75,
+ "deployed": 325.87,
  "reserve": 0.0,
- "realized": 1407.45,
+ "realized": 1409.59,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 8,
- "fees_paid": 127.0,
+ "open_count": 7,
+ "fees_paid": 127.08,
  "fee_rate": 0.03,
  "lag": {
   "n": 77,
@@ -49,6 +49,26 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "6204759428229444483121269411993202060365882790720181835870759405978643810801",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Jio Platforms IPO by August 31, 2026?",
+   "their_price": 0.5893,
+   "my_price": 0.59,
+   "slippage_pct": 0.0013,
+   "shares": 135.78,
+   "cost": 80.11,
+   "fee": 0.99,
+   "opened": 1783779817,
+   "status": "closed",
+   "exit_price": 0.6375,
+   "pnl": 5.46,
+   "settled": 1783786856,
+   "sold_shares": 135.78,
+   "sold_proceeds": 86.56
+  },
   {
    "token": "113091218397444067989972632020225312341889014436526883908493943923995167586912",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -88,26 +108,6 @@
    "settled": 1783780646,
    "sold_shares": 5.8,
    "sold_proceeds": 2.45
-  },
-  {
-   "token": "6204759428229444483121269411993202060365882790720181835870759405978643810801",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Jio Platforms IPO by August 31, 2026?",
-   "their_price": 0.5893,
-   "my_price": 0.59,
-   "slippage_pct": 0.0013,
-   "shares": 135.78,
-   "cost": 80.11,
-   "fee": 0.99,
-   "opened": 1783779817,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 121.92,
-   "sold_proceeds": 76.24
   },
   {
    "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
@@ -1484,7 +1484,8 @@
    "status": "won",
    "pnl": 19.1,
    "settled": 1783786726,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1783781525,
@@ -2370,5 +2371,5 @@
   }
  ],
  "missed_pnl": -165.68,
- "updated": 1783786726
+ "updated": 1783786856
 }
