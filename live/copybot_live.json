@@ -1450,6 +1450,22 @@
  ],
  "missed": [
   {
+   "ts": 1783767107,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "94086717682175488292372912031763512631835050964973472839161913179834160769254",
+   "cond": "0x14272984bc3c6a49e9c6141e93b2b6534573765ec89c438986f26151ccfa3d3c",
+   "title": "Will Pohang Steelers FC win on 2026-07-11?",
+   "outcome": "Yes",
+   "price": 0.5987,
+   "stake": 97.7,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 64.31,
+   "settled": 1783780828,
+   "name": "LSB1",
+   "exit_checked": true
+  },
+  {
    "ts": 1783770234,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "105212104196091726392140052817325444324784813554106263063196477471085394528921",
@@ -1607,21 +1623,6 @@
    "settled": 1783769298,
    "name": "gkmgkldfmg",
    "exit_price": 0.6998
-  },
-  {
-   "ts": 1783767107,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "94086717682175488292372912031763512631835050964973472839161913179834160769254",
-   "cond": "0x14272984bc3c6a49e9c6141e93b2b6534573765ec89c438986f26151ccfa3d3c",
-   "title": "Will Pohang Steelers FC win on 2026-07-11?",
-   "outcome": "Yes",
-   "price": 0.5987,
-   "stake": 97.7,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
   },
   {
    "ts": 1783762772,
@@ -2315,6 +2316,6 @@
    "exit_price": 0.95
   }
  ],
- "missed_pnl": -269.5,
- "updated": 1783780647
+ "missed_pnl": -205.19,
+ "updated": 1783780899
 }
