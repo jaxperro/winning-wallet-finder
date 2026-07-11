@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 101.96,
+ "stake": 101.91,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2245.92,
- "deployed": 303.04,
+ "cash": 2142.8,
+ "deployed": 405.0,
  "reserve": 0.0,
- "realized": 1548.93,
+ "realized": 1547.77,
  "adjustments": 0.03,
  "ledger_drift": 0.0,
- "open_count": 6,
- "fees_paid": 121.83,
+ "open_count": 7,
+ "fees_paid": 122.99,
  "fee_rate": 0.03,
  "lag": {
-  "n": 72,
-  "n24": 27,
-  "avg_s": 46.4,
-  "avg_slip_pct": -0.0397,
+  "n": 73,
+  "n24": 28,
+  "avg_s": 44.9,
+  "avg_slip_pct": -0.0404,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "43551466881329966936571085042990699617845453317700345932385022134457322350137",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "PlayTime",
+   "title": "Dota 2: PlayTime vs Nigma Galaxy - Game 1 Winner",
+   "their_price": 0.6593,
+   "my_price": 0.62,
+   "slippage_pct": -0.0596,
+   "shares": 164.45,
+   "cost": 101.96,
+   "fee": 1.16,
+   "opened": 1783776182,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "106618579082857173205099187418291680068349149870923665139597643374871754972322",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2227,5 +2245,5 @@
   }
  ],
  "missed_pnl": -243.01,
- "updated": 1783772565
+ "updated": 1783776186
 }
