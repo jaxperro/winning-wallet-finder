@@ -6971,14 +6971,14 @@
       "price": 0,
       "stake": 1.0,
       "reason": "price 0.000 outside [0.01,0.95]",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "pnl": -1.01,
+      "settled": 1783769456,
       "name": "imwalkinghere"
     }
   ],
-  "feed_sig": "5943f1003a1952d2d7d976e4a3fb9c34",
-  "feed_pushed_at": 1783769262.2223966,
+  "feed_sig": "0f2c3cdf2e4724963f89ddc4f6952349",
+  "feed_pushed_at": 1783769393.142156,
   "adjustments": [
     {
       "ts": 1783718232,
