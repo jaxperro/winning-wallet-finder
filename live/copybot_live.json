@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 76,
-  "n24": 27,
-  "avg_s": 48.6,
-  "avg_slip_pct": -0.0399,
+  "n24": 26,
+  "avg_s": 50.4,
+  "avg_slip_pct": -0.0408,
   "window_h": 24
  },
  "wallets": [
@@ -1450,6 +1450,21 @@
  ],
  "missed": [
   {
+   "ts": 1783781525,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "27632180525380684914321906274705941073296172029015605436272337722097971624328",
+   "cond": "0x6d1bc898781da9b481d170cc8fc7915273eb391e466d50164dbc1dbe94efea73",
+   "title": "Mjallby AIF vs. AIK: O/U 2.5",
+   "outcome": "Over",
+   "price": 0.8598,
+   "stake": 96.19,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783770862,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "14720921693726444993132286510480864959564663807713006631795468793505944795957",
@@ -2318,5 +2333,5 @@
   }
  ],
  "missed_pnl": -184.78,
- "updated": 1783781215
+ "updated": 1783781527
 }
