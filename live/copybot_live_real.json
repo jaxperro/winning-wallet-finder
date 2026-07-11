@@ -376,6 +376,21 @@
  ],
  "missed": [
   {
+   "ts": 1783781335,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "27632180525380684914321906274705941073296172029015605436272337722097971624328",
+   "cond": "0x6d1bc898781da9b481d170cc8fc7915273eb391e466d50164dbc1dbe94efea73",
+   "title": "Mjallby AIF vs. AIK: O/U 2.5",
+   "outcome": "Over",
+   "price": 0.8598,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783770930,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "14720921693726444993132286510480864959564663807713006631795468793505944795957",
@@ -388,7 +403,8 @@
    "status": "won",
    "pnl": 0.2,
    "settled": 1783781079,
-   "name": "LSB1"
+   "name": "LSB1",
+   "exit_checked": true
   },
   {
    "ts": 1783767111,
@@ -1315,24 +1331,8 @@
    "settled": 1783681279,
    "name": "gkmgkldfmg",
    "exit_price": 0.63
-  },
-  {
-   "ts": 1783679665,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "93467767591188896649627269967147548436732758009195510676247808663528278284319",
-   "cond": "0xc94992bd15c42ae56c0345f4465d9f280a92805693d0485104c2db60f7bccf82",
-   "title": "Dota 2: Xtreme Gaming vs BetBoom Team - Game 2 Winner",
-   "outcome": "BetBoom Team",
-   "price": 0.63,
-   "stake": 5.0,
-   "reason": "order rejected: exception: not enough balance / allowance: the balance is no",
-   "status": "sold",
-   "pnl": 2.39,
-   "settled": 1783680959,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.94
   }
  ],
  "missed_pnl": 103.07,
- "updated": 1783781079
+ "updated": 1783781339
 }
