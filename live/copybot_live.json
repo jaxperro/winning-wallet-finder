@@ -1492,6 +1492,21 @@
  ],
  "missed": [
   {
+   "ts": 1783805820,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "10174584768963875173947852308524484106197371102092547629610032094114021922809",
+   "cond": "0x074ce5163e8590fdf5615ee0c9df73619e1e777a966b973c3055caf06281ec88",
+   "title": "England to score first vs. Norway?",
+   "outcome": "No",
+   "price": 0.8236,
+   "stake": 96.62,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783781525,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "27632180525380684914321906274705941073296172029015605436272337722097971624328",
@@ -2392,5 +2407,5 @@
   }
  ],
  "missed_pnl": -150.4,
- "updated": 1783803675
+ "updated": 1783805823
 }
