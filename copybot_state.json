@@ -7031,8 +7031,8 @@
     }
   },
   "hwm": 2548.9580606723184,
-  "feed_sig": "8ae4fa4d59b7dd8e65e45c4d58f4d46a",
-  "feed_pushed_at": 1783777010.4692564,
+  "feed_sig": "869eff1adafb4f4523b09833daa5b086",
+  "feed_pushed_at": 1783777138.0476809,
   "missed": [
     {
       "ts": 1783590977,
@@ -7894,7 +7894,8 @@
       "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "gkmgkldfmg"
     }
   ],
   "no_miss_toks": [
