@@ -298,6 +298,21 @@
  ],
  "missed": [
   {
+   "ts": 1783769106,
+   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
+   "token": "21317240954584519381735360743926588514834913277324009690727150242237748830303",
+   "cond": "0x10e4d9186c618f9bdc362e941c37785ae28764932548b7502c54d226908d0961",
+   "title": "Bitcoin Up or Down - July 11, 7:20AM-7:25AM ET",
+   "outcome": "Down",
+   "price": 0,
+   "stake": 1.0,
+   "reason": "price 0.000 outside [0.01,0.95]",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "imwalkinghere"
+  },
+  {
    "ts": 1783768547,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "22293458003405574504714007164622746211949900414139391877327291617757461162520",
@@ -1233,24 +1248,8 @@
    "settled": 1783627978,
    "exit_price": 0.6146,
    "name": "gkmgkldfmg"
-  },
-  {
-   "ts": 1783627015,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
-   "cond": "0x3c07935adc293c658ab20651f7fc6478d36e6bfdb375caab539fca9c81de03fd",
-   "title": "Dota 2: LGD Gaming vs 1win - Game 2 Winner",
-   "outcome": "LGD Gaming",
-   "price": 0.4668,
-   "stake": 5.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.73,
-   "settled": 1783627340,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.55
   }
  ],
  "missed_pnl": 103.14,
- "updated": 1783769012
+ "updated": 1783769106
 }
