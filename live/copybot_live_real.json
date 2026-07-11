@@ -5,13 +5,13 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 24.73,
- "cash": 13.36,
- "deployed": 9.11,
+ "cash": 14.7,
+ "deployed": 8.08,
  "reserve": 0.0,
- "realized": -2.01,
+ "realized": -1.7,
  "adjustments": 2.2,
  "ledger_drift": -0.01,
- "open_count": 5,
+ "open_count": 4,
  "fees_paid": 0.86,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
  },
  "bets": [
   {
+   "token": "106618579082857173205099187418291680068349149870923665139597643374871754972322",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Hanwha Life Esports",
+   "title": "LoL: Hanwha Life Esports vs LYON (BO5) - Mid-Season Invitational Playoffs",
+   "their_price": 0.68,
+   "my_price": 0.7,
+   "slippage_pct": 0.0294,
+   "shares": 1.47,
+   "cost": 1.03,
+   "fee": 0.01,
+   "opened": 1783769915,
+   "status": "closed",
+   "exit_price": 0.9106,
+   "pnl": 0.3,
+   "settled": 1783771447,
+   "sold_shares": 1.47,
+   "sold_proceeds": 1.34
+  },
+  {
    "token": "81413637292297741701558038706628285500354162735615522867827508680184700465994",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "name": "1kto1m",
@@ -68,24 +88,6 @@
    "settled": 1783770359,
    "sold_shares": 1.58,
    "sold_proceeds": 0.95
-  },
-  {
-   "token": "106618579082857173205099187418291680068349149870923665139597643374871754972322",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Hanwha Life Esports",
-   "title": "LoL: Hanwha Life Esports vs LYON (BO5) - Mid-Season Invitational Playoffs",
-   "their_price": 0.68,
-   "my_price": 0.7,
-   "slippage_pct": 0.0294,
-   "shares": 1.47,
-   "cost": 1.03,
-   "fee": 0.01,
-   "opened": 1783769915,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "111238155193029214626119372717509509454868187612257655146390848111901958320265",
@@ -1290,5 +1292,5 @@
   }
  ],
  "missed_pnl": 102.34,
- "updated": 1783771257
+ "updated": 1783771447
 }
