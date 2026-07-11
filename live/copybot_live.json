@@ -1196,6 +1196,21 @@
  ],
  "missed": [
   {
+   "ts": 1783730663,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "45067024850792209345478857935402657293140220516974974516913686785034525226149",
+   "cond": "0x1a56a14c04e06ec08935c53cd4386ab2a2b617fd70518957183e3c9a28054dbc",
+   "title": "SC Recife vs. Botafogo FC: O/U 4.5",
+   "outcome": "Over",
+   "price": 0.588,
+   "stake": 98.4,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783730040,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "103676338032335044429709174398685887348332725157638903811532034719301297769141",
@@ -1855,5 +1870,5 @@
   }
  ],
  "missed_pnl": -225.76,
- "updated": 1783730042
+ "updated": 1783730665
 }
