@@ -7098,8 +7098,8 @@
     }
   },
   "hwm": 2548.9580606723184,
-  "feed_sig": "ced94bc56278bdedeebdf9f19f9e71a5",
-  "feed_pushed_at": 1783781401.2088475,
+  "feed_sig": "3cee35f1d81a7724c12889a58098dc0e",
+  "feed_pushed_at": 1783781775.1712558,
   "missed": [
     {
       "ts": 1783590977,
@@ -7980,7 +7980,8 @@
       "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "LSB1"
     }
   ],
   "no_miss_toks": [
