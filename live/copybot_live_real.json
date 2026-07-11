@@ -414,6 +414,21 @@
  ],
  "missed": [
   {
+   "ts": 1783805945,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "10174584768963875173947852308524484106197371102092547629610032094114021922809",
+   "cond": "0x074ce5163e8590fdf5615ee0c9df73619e1e777a966b973c3055caf06281ec88",
+   "title": "England to score first vs. Norway?",
+   "outcome": "No",
+   "price": 0.8236,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783799619,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "8791795956649331503015492828368165964550912947413307583654882923127899710261",
@@ -1354,24 +1369,8 @@
    "settled": 1783685985,
    "name": "gkmgkldfmg",
    "exit_price": 0.4943
-  },
-  {
-   "ts": 1783677860,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "100198471262079386993761824025743140222494027672175410847273506523400747511360",
-   "cond": "0xbb0f06d9834bc69265a845a296cd01e4426f964627509a9f2d5383b43e89803f",
-   "title": "Dota 2: Xtreme Gaming vs BetBoom Team - Game 1 Winner",
-   "outcome": "Xtreme Gaming",
-   "price": 0.29,
-   "stake": 5.0,
-   "reason": "order rejected: {'order_id': '0x43d6b7382bf3410d31c451091fb308c5937016037806",
-   "status": "lost",
-   "pnl": -5.11,
-   "settled": 1783685621,
-   "name": "gkmgkldfmg",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 103.49,
- "updated": 1783799619
+ "updated": 1783805949
 }
