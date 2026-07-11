@@ -376,6 +376,22 @@
  ],
  "missed": [
   {
+   "ts": 1783770287,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "105212104196091726392140052817325444324784813554106263063196477471085394528921",
+   "cond": "0xde8bac1e7c29832d29ae69c93248e6085e947a9909ff9c95f11ea7504257dd45",
+   "title": "Gwangju FC vs. Pohang Steelers FC: Pohang Steelers FC O/U 1.5",
+   "outcome": "Over",
+   "price": 0.91,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 0.1,
+   "settled": 1783780392,
+   "name": "LSB1",
+   "exit_price": 1.0
+  },
+  {
    "ts": 1783779844,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "6204759428229444483121269411993202060365882790720181835870759405978643810801",
@@ -579,21 +595,6 @@
    "settled": 1783770290,
    "name": "1kto1m",
    "exit_price": 0.4859
-  },
-  {
-   "ts": 1783770287,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "105212104196091726392140052817325444324784813554106263063196477471085394528921",
-   "cond": "0xde8bac1e7c29832d29ae69c93248e6085e947a9909ff9c95f11ea7504257dd45",
-   "title": "Gwangju FC vs. Pohang Steelers FC: Pohang Steelers FC O/U 1.5",
-   "outcome": "Over",
-   "price": 0.91,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
   },
   {
    "ts": 1783769579,
@@ -1331,6 +1332,6 @@
    "exit_price": 0.94
   }
  ],
- "missed_pnl": 102.11,
- "updated": 1783779844
+ "missed_pnl": 102.21,
+ "updated": 1783780394
 }
