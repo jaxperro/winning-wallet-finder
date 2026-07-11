@@ -336,6 +336,36 @@
  ],
  "missed": [
   {
+   "ts": 1783770930,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "14720921693726444993132286510480864959564663807713006631795468793505944795957",
+   "cond": "0x6750fe34aa15e45304c8591f574ae62e792c34d78809bdcbc012e1bed5adfc0b",
+   "title": "Will Jeonbuk Hyundai Motors FC win on 2026-07-11?",
+   "outcome": "Yes",
+   "price": 0.8269,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
+   "ts": 1783770912,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "58977437171225124002548434766056119596861991011293700343028569254570529602303",
+   "cond": "0x4b1e0b818817492afa73944f7271cc744a6e9027f2c26888b8a6ee76e6aba311",
+   "title": "Bitcoin Up or Down - July 11, 7AM ET",
+   "outcome": "Up",
+   "price": 0.39,
+   "stake": 1.0,
+   "reason": "price moved 0.33\u21920.39",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1783770288,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "81413637292297741701558038706628285500354162735615522867827508680184700465994",
@@ -1256,38 +1286,8 @@
    "settled": 1783634335,
    "name": "LSB1",
    "exit_price": 0.8594
-  },
-  {
-   "ts": 1783634333,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
-   "cond": "0x0fb63e987b28940eb8d299b466a34e5b404e0bd9a5c98df908bb55e6d00b694b",
-   "title": "Will Epic Games' valuation hit (HIGH) $13.5B by December 31?",
-   "outcome": "Yes",
-   "price": 0.4482,
-   "stake": 5.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783634333,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "72834495383235297744666280877384242771579363352963523785873024005920870690952",
-   "cond": "0xa6930fadb08512d5f798c2d474493af6d609ba246d43966cdf11af475b139dd6",
-   "title": "Will Epic Games' valuation hit (HIGH) $14B by December 31?",
-   "outcome": "No",
-   "price": 0.5099,
-   "stake": 5.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": 102.56,
- "updated": 1783770616
+ "updated": 1783770939
 }
