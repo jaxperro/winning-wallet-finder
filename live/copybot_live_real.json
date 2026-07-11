@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 24.73,
- "cash": 17.52,
- "deployed": 5.0,
+ "cash": 16.48,
+ "deployed": 6.03,
  "reserve": 0.0,
- "realized": -1.97,
+ "realized": -1.98,
  "adjustments": 2.2,
  "ledger_drift": -0.0,
- "open_count": 1,
- "fees_paid": 0.74,
+ "open_count": 2,
+ "fees_paid": 0.75,
  "fee_rate": 0.03,
  "lag": {
-  "n": 2,
-  "n24": 1,
-  "avg_s": 3.5,
-  "avg_slip_pct": 0.0424,
+  "n": 3,
+  "n24": 2,
+  "avg_s": 99.7,
+  "avg_slip_pct": -0.0062,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "97030903347936099809712211774880132820716149097020948618258743557775057824890",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Hanwha Life Esports",
+   "title": "LoL: Hanwha Life Esports vs LYON - Game 1 Winner",
+   "their_price": 0.73,
+   "my_price": 0.69,
+   "slippage_pct": -0.0548,
+   "shares": 1.49,
+   "cost": 1.03,
+   "fee": 0.01,
+   "opened": 1783758622,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "76668431089191294884722284769810081002688692300759117208537364410807093425248",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -1161,5 +1179,5 @@
   }
  ],
  "missed_pnl": 102.4,
- "updated": 1783753500
+ "updated": 1783758819
 }
