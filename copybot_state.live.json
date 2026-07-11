@@ -6496,9 +6496,9 @@
       "price": 0.77,
       "stake": 1.0,
       "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "pnl": -1.01,
+      "settled": 1783742299,
       "name": "LSB1"
     },
     {
@@ -6533,8 +6533,8 @@
       "exit_price": 1.0
     }
   ],
-  "feed_sig": "d51f6819844538fd680165247006e85d",
-  "feed_pushed_at": 1783742048.8419328,
+  "feed_sig": "c2b5c3bb95c5f37f58e1dfd3df84b525",
+  "feed_pushed_at": 1783742175.47019,
   "adjustments": [
     {
       "ts": 1783718232,

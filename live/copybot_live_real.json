@@ -204,6 +204,21 @@
  ],
  "missed": [
   {
+   "ts": 1783727075,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "94261332494094465883021120894226351499139897211148377866980779595546383514545",
+   "cond": "0x73deedfe0a8d2167499fe6391f01cc871c8a182f7abc807933e260fe96d6aae1",
+   "title": "Will Botafogo FC win on 2026-07-10?",
+   "outcome": "Yes",
+   "price": 0.77,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
+   "status": "lost",
+   "pnl": -1.01,
+   "settled": 1783742299,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783730662,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "45067024850792209345478857935402657293140220516974974516913686785034525226149",
@@ -229,21 +244,6 @@
    "price": 0.697,
    "stake": 1.0,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
-  },
-  {
-   "ts": 1783727075,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "94261332494094465883021120894226351499139897211148377866980779595546383514545",
-   "cond": "0x73deedfe0a8d2167499fe6391f01cc871c8a182f7abc807933e260fe96d6aae1",
-   "title": "Will Botafogo FC win on 2026-07-10?",
-   "outcome": "Yes",
-   "price": 0.77,
-   "stake": 1.0,
-   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -1157,6 +1157,6 @@
    "exit_price": 0.5255
   }
  ],
- "missed_pnl": 102.83,
- "updated": 1783742175
+ "missed_pnl": 101.82,
+ "updated": 1783742299
 }
