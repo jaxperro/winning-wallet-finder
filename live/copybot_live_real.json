@@ -204,6 +204,22 @@
  ],
  "missed": [
   {
+   "ts": 1783730037,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "103676338032335044429709174398685887348332725157638903811532034719301297769141",
+   "cond": "0xc0a08dd7986cf446238d770a607fc367452e4dd5877203e7d9a4070f7862c124",
+   "title": "Will Boston Legacy FC win on 2026-07-10?",
+   "outcome": "Yes",
+   "price": 0.697,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 0.43,
+   "settled": 1783743418,
+   "name": "LSB1",
+   "exit_price": 1.0
+  },
+  {
    "ts": 1783727075,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "94261332494094465883021120894226351499139897211148377866980779595546383514545",
@@ -234,21 +250,6 @@
    "settled": 1783742174,
    "name": "LSB1",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1783730037,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "103676338032335044429709174398685887348332725157638903811532034719301297769141",
-   "cond": "0xc0a08dd7986cf446238d770a607fc367452e4dd5877203e7d9a4070f7862c124",
-   "title": "Will Boston Legacy FC win on 2026-07-10?",
-   "outcome": "Yes",
-   "price": 0.697,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
   },
   {
    "ts": 1783724102,
@@ -1158,6 +1159,6 @@
    "exit_price": 0.5255
   }
  ],
- "missed_pnl": 101.82,
- "updated": 1783742488
+ "missed_pnl": 102.25,
+ "updated": 1783743419
 }

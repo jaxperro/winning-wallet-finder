@@ -997,6 +997,7 @@
     "0x7a1eaa2c88a522161a5160d38a71aa737ccb62e5a6c9e61ec01a3e761fd087a6",
     "0xc9fc7dfbc2900ae1ffcc9af96e6171095724ac2ee418d53ab4a53f1ee34cb3ea",
     "0xb92c827843d1d189788866277b773ab11bfc78d44fda31d8f5f2cabd5c4d9dff",
+    "0x668ab178a9b08cebe58b5b6d13f76794567daf517e7fd7ad3aa74789dcc25e96",
     "0x4aef71b6d0181dbc88c7a928b756e05c020edaf5508153f97e6a7ae054f6a62f",
     "0x4ea0eabda7669988e7d1185a3205a9e0a488834797c55c6a4f11c17f01cff6ab",
     "0x924c97fcd1337003b7d975bfff546ba34957f3e02c52b79a8abea89c4789d45b",
@@ -6512,10 +6513,11 @@
       "price": 0.697,
       "stake": 1.0,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "LSB1"
+      "status": "sold",
+      "pnl": 0.43,
+      "settled": 1783743418,
+      "name": "LSB1",
+      "exit_price": 1.0
     },
     {
       "ts": 1783730662,
@@ -6535,7 +6537,7 @@
     }
   ],
   "feed_sig": "e0b24668c6c24a9e65150e855f58fedc",
-  "feed_pushed_at": 1783742423.9567285,
+  "feed_pushed_at": 1783743294.1714334,
   "adjustments": [
     {
       "ts": 1783718232,
