@@ -1223,10 +1223,11 @@
    "price": 0.588,
    "stake": 98.4,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
+   "status": "sold",
+   "pnl": 67.73,
+   "settled": 1783742174,
+   "name": "LSB1",
+   "exit_price": 1.0
   },
   {
    "ts": 1783730040,
@@ -1887,6 +1888,6 @@
    "exit_price": 0.95
   }
  ],
- "missed_pnl": -225.76,
- "updated": 1783737635
+ "missed_pnl": -158.03,
+ "updated": 1783742175
 }
