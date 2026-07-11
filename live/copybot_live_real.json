@@ -280,6 +280,22 @@
  ],
  "missed": [
   {
+   "ts": 1783767045,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "72360978495452180080538327232926295248474801559995120453489389067546448362850",
+   "cond": "0x4e63ee19d9d959a06acfd379800ffc7bd0c70bb69178c4c7e6626962309f6af1",
+   "title": "Dota 2: BetBoom Team vs GamerLegion - Game 2 Winner",
+   "outcome": "GamerLegion",
+   "price": 0.26,
+   "stake": 1.0,
+   "reason": "in-play hold expired unfilled (45s)",
+   "status": "sold",
+   "pnl": -0.01,
+   "settled": 1783767426,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.27
+  },
+  {
    "ts": 1783767111,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "94086717682175488292372912031763512631835050964973472839161913179834160769254",
@@ -293,21 +309,6 @@
    "pnl": null,
    "settled": null,
    "name": "LSB1"
-  },
-  {
-   "ts": 1783767045,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "72360978495452180080538327232926295248474801559995120453489389067546448362850",
-   "cond": "0x4e63ee19d9d959a06acfd379800ffc7bd0c70bb69178c4c7e6626962309f6af1",
-   "title": "Dota 2: BetBoom Team vs GamerLegion - Game 2 Winner",
-   "outcome": "GamerLegion",
-   "price": 0.26,
-   "stake": 1.0,
-   "reason": "in-play hold expired unfilled (45s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1783763871,
@@ -1233,6 +1234,6 @@
    "exit_price": 0.4899
   }
  ],
- "missed_pnl": 102.8,
- "updated": 1783767113
+ "missed_pnl": 102.79,
+ "updated": 1783767427
 }
