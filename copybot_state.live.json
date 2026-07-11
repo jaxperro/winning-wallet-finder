@@ -5837,10 +5837,10 @@
       "cost": 1.03,
       "fee": 0.0093,
       "opened": 1783769915,
-      "status": "open",
-      "exit_price": null,
-      "pnl": null,
-      "settled": null,
+      "status": "closed",
+      "exit_price": 0.9106,
+      "pnl": 0.3,
+      "settled": 1783771447,
       "sold_shares": 1.47,
       "sold_proceeds": 1.33859777
     },
@@ -7118,10 +7118,11 @@
       "price": 0.68,
       "stake": 1.0,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "AIcAIc"
+      "status": "sold",
+      "pnl": 0.39,
+      "settled": 1783771579,
+      "name": "AIcAIc",
+      "exit_price": 0.95
     },
     {
       "ts": 1783769964,
@@ -7202,8 +7203,8 @@
       "name": "LSB1"
     }
   ],
-  "feed_sig": "d41499ba7097010c21de166548b126c9",
-  "feed_pushed_at": 1783771319.3728898,
+  "feed_sig": "7bb4a2343167cec9edd9c23564778770",
+  "feed_pushed_at": 1783771447.5239542,
   "adjustments": [
     {
       "ts": 1783718232,
@@ -7211,9 +7212,28 @@
       "note": "2026-07-10 rebase to $22.28 equity baseline (user: retire caps, 4% paper-parity sizing; prior incident P&L stays in history)"
     }
   ],
-  "pending_orders": [],
+  "pending_orders": [
+    {
+      "order_id": "0xf6f6c2991146ddff3e1a4907799304739fb21aa639c219d0b3c98bebc411ef92",
+      "bal0": 2.5,
+      "token": "2744571775903589106980317653847400232271579861889013320024551414528092561305",
+      "side": "SELL",
+      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+      "title": "Dota 2: BetBoom Team vs GamerLegion - Game 1 Winner",
+      "outcome": "GamerLegion",
+      "event": "dota2-bb4-gl-2026-07-11",
+      "cond": "0x32c45da56bf405f951f62fbf1c6d84d16e18a258870438aabb26ed314210d16d",
+      "their_price": 0.001,
+      "their_ts": null,
+      "price": 0.001,
+      "is_add": false,
+      "stake": 0.0025,
+      "ts": 1783771575.5826547,
+      "ttl_s": 600
+    }
+  ],
   "exit_retries": [],
   "exit_attempts": {
-    "2744571775903589106980317653847400232271579861889013320024551414528092561305": 19
+    "2744571775903589106980317653847400232271579861889013320024551414528092561305": 20
   }
 }
