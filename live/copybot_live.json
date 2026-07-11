@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2493.98,
- "cash": 2089.37,
- "deployed": 402.77,
+ "cash": 2089.74,
+ "deployed": 402.43,
  "reserve": 0.0,
- "realized": 1492.11,
+ "realized": 1492.14,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
  "open_count": 7,
@@ -85,7 +85,9 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "sold_shares": 0.56,
+   "sold_proceeds": 0.37
   },
   {
    "token": "111238155193029214626119372717509509454868187612257655146390848111901958320265",
@@ -1352,6 +1354,21 @@
  ],
  "missed": [
   {
+   "ts": 1783769106,
+   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
+   "token": "21317240954584519381735360743926588514834913277324009690727150242237748830303",
+   "cond": "0x10e4d9186c618f9bdc362e941c37785ae28764932548b7502c54d226908d0961",
+   "title": "Bitcoin Up or Down - July 11, 7:20AM-7:25AM ET",
+   "outcome": "Down",
+   "price": 0,
+   "stake": 99.69,
+   "reason": "price 0.000 outside [0.01,0.99]",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "imwalkinghere"
+  },
+  {
    "ts": 1783768873,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "24685222266639618881275458182682767134900023023526773367466764924178936188460",
@@ -2074,5 +2091,5 @@
   }
  ],
  "missed_pnl": -110.15,
- "updated": 1783768985
+ "updated": 1783769106
 }
