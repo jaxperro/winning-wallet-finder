@@ -7168,7 +7168,8 @@
       "status": "won",
       "pnl": 0.66,
       "settled": 1783780827,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783768547,
@@ -7457,7 +7458,7 @@
     }
   ],
   "feed_sig": "1e539e080402571e975c4ca373d01ad2",
-  "feed_pushed_at": 1783780770.4477022,
+  "feed_pushed_at": 1783780895.2074716,
   "adjustments": [
     {
       "ts": 1783718232,
