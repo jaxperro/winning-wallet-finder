@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 96.46,
+ "stake": 96.43,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2099.47,
- "deployed": 312.08,
+ "cash": 2035.33,
+ "deployed": 375.38,
  "reserve": 0.0,
- "realized": 1411.52,
+ "realized": 1410.68,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 6,
- "fees_paid": 127.1,
+ "open_count": 7,
+ "fees_paid": 127.94,
  "fee_rate": 0.03,
  "lag": {
-  "n": 77,
-  "n24": 17,
-  "avg_s": 53.8,
-  "avg_slip_pct": -0.0233,
+  "n": 78,
+  "n24": 18,
+  "avg_s": 50.9,
+  "avg_slip_pct": -0.0377,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "8791795956649331503015492828368165964550912947413307583654882923127899710261",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Denis Zakaria: 3+ shots",
+   "their_price": 0.78,
+   "my_price": 0.56,
+   "slippage_pct": -0.2821,
+   "shares": 113.05,
+   "cost": 63.31,
+   "fee": 0.84,
+   "opened": 1783799617,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "113091218397444067989972632020225312341889014436526883908493943923995167586912",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2374,5 +2392,5 @@
   }
  ],
  "missed_pnl": -150.4,
- "updated": 1783798051
+ "updated": 1783799618
 }
