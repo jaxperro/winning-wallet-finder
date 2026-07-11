@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 96.25,
+ "stake": 96.35,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2493.98,
- "cash": 2153.95,
- "deployed": 252.39,
+ "cash": 2201.4,
+ "deployed": 207.39,
  "reserve": 0.0,
- "realized": 1406.3,
+ "realized": 1408.76,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 6,
- "fees_paid": 103.1,
+ "open_count": 5,
+ "fees_paid": 103.2,
  "fee_rate": 0.03,
  "lag": {
   "n": 63,
@@ -49,6 +49,26 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "67230363321893543312889997321885915798590561925238141510437860465156386610448",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the DFM Real Estate Index hit 18,000 in 2026?",
+   "their_price": 0.9,
+   "my_price": 0.88,
+   "slippage_pct": -0.0222,
+   "shares": 62.5,
+   "cost": 55.0,
+   "fee": 0.2,
+   "opened": 1783698964,
+   "status": "closed",
+   "exit_price": 0.929,
+   "pnl": 2.86,
+   "settled": 1783753384,
+   "sold_shares": 62.5,
+   "sold_proceeds": 58.06
+  },
   {
    "token": "103676338032335044429709174398685887348332725157638903811532034719301297769141",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -320,26 +340,6 @@
    "settled": 1783700339,
    "sold_shares": 20.41,
    "sold_proceeds": 18.79
-  },
-  {
-   "token": "67230363321893543312889997321885915798590561925238141510437860465156386610448",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the DFM Real Estate Index hit 18,000 in 2026?",
-   "their_price": 0.9,
-   "my_price": 0.88,
-   "slippage_pct": -0.0222,
-   "shares": 62.5,
-   "cost": 55.0,
-   "fee": 0.2,
-   "opened": 1783698964,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 11.36,
-   "sold_proceeds": 10.6
   },
   {
    "token": "40594224108520253108624365887167881382842057398183982530866129414581985931630",
@@ -1890,5 +1890,5 @@
   }
  ],
  "missed_pnl": -116.15,
- "updated": 1783751615
+ "updated": 1783753384
 }
