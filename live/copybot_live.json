@@ -1510,6 +1510,21 @@
  ],
  "missed": [
   {
+   "ts": 1783811464,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "85590802024993543661537425965264345251257796759459810241384876806751805341892",
+   "cond": "0x85aa21232741b7a20bb96a9794e6ca05dd3f0e750b76e6f38838530b18184fa2",
+   "title": "Jude Bellingham: 2+ goals",
+   "outcome": "Yes",
+   "price": 0.0299,
+   "stake": 96.6,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783806761,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "103463464943572749166715825902436097005749231905022823443969199466445385329466",
@@ -2455,5 +2470,5 @@
   }
  ],
  "missed_pnl": -150.4,
- "updated": 1783806764
+ "updated": 1783811467
 }
