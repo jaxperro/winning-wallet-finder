@@ -7165,9 +7165,9 @@
       "price": 0.5987,
       "stake": 1.0,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 0.66,
+      "settled": 1783780827,
       "name": "LSB1"
     },
     {
@@ -7456,8 +7456,8 @@
       "name": "0xbadaf319"
     }
   ],
-  "feed_sig": "3ac0fbf33897816054a18be1f6ca2d9d",
-  "feed_pushed_at": 1783780642.1934345,
+  "feed_sig": "1e539e080402571e975c4ca373d01ad2",
+  "feed_pushed_at": 1783780770.4477022,
   "adjustments": [
     {
       "ts": 1783718232,
