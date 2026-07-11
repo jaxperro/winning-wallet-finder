@@ -347,10 +347,11 @@
    "price": 0.5,
    "stake": 1.0,
    "reason": "price moved 0.31\u21920.50",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "1kto1m"
+   "status": "sold",
+   "pnl": -0.57,
+   "settled": 1783771903,
+   "name": "1kto1m",
+   "exit_price": 0.226
   },
   {
    "ts": 1783771804,
@@ -362,10 +363,11 @@
    "price": 0.99,
    "stake": 1.0,
    "reason": "price moved 0.57\u21920.99",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "imwalkinghere"
+   "status": "sold",
+   "pnl": 0.01,
+   "settled": 1783771902,
+   "name": "imwalkinghere",
+   "exit_price": 1.0
   },
   {
    "ts": 1783769964,
@@ -1291,6 +1293,6 @@
    "exit_price": 0.5108
   }
  ],
- "missed_pnl": 102.73,
- "updated": 1783771810
+ "missed_pnl": 102.17,
+ "updated": 1783771903
 }
