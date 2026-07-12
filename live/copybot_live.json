@@ -1601,9 +1601,9 @@
    "price": 0.5675,
    "stake": 96.48,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "lost",
+   "pnl": -97.73,
+   "settled": 1783824818,
    "name": "imwalkinghere"
   },
   {
@@ -2547,6 +2547,6 @@
    "exit_price": 0.6241
   }
  ],
- "missed_pnl": -355.01,
- "updated": 1783824631
+ "missed_pnl": -452.74,
+ "updated": 1783824818
 }
