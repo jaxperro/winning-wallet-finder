@@ -5,14 +5,14 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 24.73,
- "cash": 13.52,
- "deployed": 8.58,
+ "cash": 14.96,
+ "deployed": 7.54,
  "reserve": 0.0,
- "realized": -2.38,
+ "realized": -1.98,
  "adjustments": 2.2,
- "ledger_drift": 2.6,
- "open_count": 5,
- "fees_paid": 1.16,
+ "ledger_drift": 2.61,
+ "open_count": 4,
+ "fees_paid": 1.17,
  "fee_rate": 0.03,
  "lag": {
   "n": 26,
@@ -49,6 +49,26 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "71941893293834599184621753590882651435325558220761902727823613984547213968365",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Vici Gaming",
+   "title": "Dota 2: MOUZ vs Vici Gaming - Game 2 Winner",
+   "their_price": 0.51,
+   "my_price": 0.53,
+   "slippage_pct": 0.0392,
+   "shares": 1.96,
+   "cost": 1.04,
+   "fee": 0.01,
+   "opened": 1783851832,
+   "status": "closed",
+   "exit_price": 0.7342,
+   "pnl": 0.38,
+   "settled": 1783854773,
+   "sold_shares": 1.96,
+   "sold_proceeds": 1.44
+  },
   {
    "token": "14298727521347397971969992444073213603189753350952512402670010770159778335698",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -88,24 +108,6 @@
    "settled": 1783852716,
    "sold_shares": 2.22,
    "sold_proceeds": 0.92
-  },
-  {
-   "token": "71941893293834599184621753590882651435325558220761902727823613984547213968365",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Vici Gaming",
-   "title": "Dota 2: MOUZ vs Vici Gaming - Game 2 Winner",
-   "their_price": 0.51,
-   "my_price": 0.53,
-   "slippage_pct": 0.0392,
-   "shares": 1.96,
-   "cost": 1.04,
-   "fee": 0.01,
-   "opened": 1783851832,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "89628205161429183663335882524534177373428689595495022481997839397142363974023",
@@ -1627,5 +1629,5 @@
   }
  ],
  "missed_pnl": 103.7,
- "updated": 1783854451
+ "updated": 1783854773
 }
