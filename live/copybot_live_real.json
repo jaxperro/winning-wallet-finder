@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 24.73,
- "cash": 14.1,
+ "cash": 13.98,
  "deployed": 5.67,
  "reserve": 0.0,
- "realized": -4.71,
+ "realized": -4.83,
  "adjustments": 2.2,
- "ledger_drift": -0.02,
+ "ledger_drift": -0.01,
  "open_count": 2,
- "fees_paid": 0.95,
+ "fees_paid": 0.97,
  "fee_rate": 0.03,
  "lag": {
-  "n": 16,
-  "n24": 14,
-  "avg_s": 105.3,
-  "avg_slip_pct": -0.0031,
+  "n": 17,
+  "n24": 15,
+  "avg_s": 98.7,
+  "avg_slip_pct": -0.0015,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "67314542042181807230524008268090407287895594712641843494670955324585909703902",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Hanwha Life Esports",
+   "title": "Game Handicap: BLG (-1.5) vs Hanwha Life Esports (+1.5)",
+   "their_price": 0.6467,
+   "my_price": 0.66,
+   "slippage_pct": 0.0205,
+   "shares": 1.54,
+   "cost": 1.02,
+   "fee": 0.01,
+   "opened": 1783841984,
+   "status": "closed",
+   "exit_price": 0.5928,
+   "pnl": -0.12,
+   "settled": 1783842020,
+   "sold_shares": 1.53,
+   "sold_proceeds": 0.91
+  },
   {
    "token": "98130629394630322983110605714141489884435629664812927809724837028685741349685",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -1433,5 +1453,5 @@
   }
  ],
  "missed_pnl": 102.84,
- "updated": 1783830094
+ "updated": 1783842020
 }
