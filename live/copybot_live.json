@@ -1948,6 +1948,21 @@
  ],
  "missed": [
   {
+   "ts": 1783884689,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "112964891228922007291616429059731268652545552701771186142443664268316983972488",
+   "cond": "0x12ffeb9fc7535c924fc64cdbf0be333db1950bd3a78aba459177b80b438bec03",
+   "title": "Will Cuiab\u00e1 EC win on 2026-07-12?",
+   "outcome": "Yes",
+   "price": 0.62,
+   "stake": 90.43,
+   "reason": "price moved 0.50\u21920.62",
+   "status": "lost",
+   "pnl": -91.46,
+   "settled": 1783898872,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783894711,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "50206051919987143398301686023277350657729433627529907465714791269369601841506",
@@ -2006,21 +2021,6 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783884689,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "112964891228922007291616429059731268652545552701771186142443664268316983972488",
-   "cond": "0x12ffeb9fc7535c924fc64cdbf0be333db1950bd3a78aba459177b80b438bec03",
-   "title": "Will Cuiab\u00e1 EC win on 2026-07-12?",
-   "outcome": "Yes",
-   "price": 0.62,
-   "stake": 90.43,
-   "reason": "price moved 0.50\u21920.62",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
   },
   {
    "ts": 1783867991,
@@ -2904,6 +2904,6 @@
    "exit_price": 0.555
   }
  ],
- "missed_pnl": 89892.11,
- "updated": 1783897004
+ "missed_pnl": 89800.65,
+ "updated": 1783898873
 }
