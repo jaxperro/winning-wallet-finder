@@ -1519,10 +1519,11 @@
    "price": 0.99,
    "stake": 92.74,
    "reason": "price moved 0.92\u21920.99",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 0.81,
+   "settled": 1783815558,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.999
   },
   {
    "ts": 1783806761,
@@ -2471,6 +2472,6 @@
    "exit_price": 0.1183
   }
  ],
- "missed_pnl": -326.51,
- "updated": 1783815246
+ "missed_pnl": -325.7,
+ "updated": 1783815559
 }
