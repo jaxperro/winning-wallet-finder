@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 91.28,
+ "stake": 91.26,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2061.46,
- "deployed": 220.48,
+ "cash": 1999.27,
+ "deployed": 282.22,
  "reserve": 0.0,
- "realized": 1281.91,
+ "realized": 1281.46,
  "adjustments": 0.03,
  "ledger_drift": 0.0,
- "open_count": 7,
- "fees_paid": 168.19,
+ "open_count": 8,
+ "fees_paid": 168.63,
  "fee_rate": 0.03,
  "lag": {
-  "n": 99,
-  "n24": 20,
-  "avg_s": 35.3,
-  "avg_slip_pct": -0.0454,
+  "n": 100,
+  "n24": 21,
+  "avg_s": 39.9,
+  "avg_slip_pct": -0.0468,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "50206051919987143398301686023277350657729433627529907465714791269369601841506",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Netflix, Inc. (NFLX) hit (HIGH) $82.50 Week of July 13 2026?",
+   "their_price": 0.82,
+   "my_price": 0.76,
+   "slippage_pct": -0.0732,
+   "shares": 81.24,
+   "cost": 61.74,
+   "fee": 0.44,
+   "opened": 1783894580,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "107179792112987391529646299006880228718467140164269968140132399486412571398191",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1910,6 +1928,21 @@
  ],
  "missed": [
   {
+   "ts": 1783894711,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "50206051919987143398301686023277350657729433627529907465714791269369601841506",
+   "cond": "0xcf710169c9bda6d44066d759780d850b6d3fb02ae09c60f69223e1ed03ff1523",
+   "title": "Will Netflix, Inc. (NFLX) hit (HIGH) $82.50 Week of July 13 2026?",
+   "outcome": "No",
+   "price": 0.82,
+   "stake": 50.63,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783890308,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "57692873707168744410462715873400507686142544046928546188194421200046018282561",
@@ -2849,24 +2882,8 @@
    "settled": 1783671386,
    "name": "imwalkinghere",
    "exit_price": 0.555
-  },
-  {
-   "ts": 1783652092,
-   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
-   "token": "24696476679489653392896522921778886207347569484211127510964843324817442529198",
-   "cond": "0x9f8c5bc5333bc77eda235d424e8c46dc02fde489409d3c501603852929b09e75",
-   "title": "Bitcoin Up or Down - July 9, 10:50PM-10:55PM ET",
-   "outcome": "Up",
-   "price": 0.64,
-   "stake": 84.3,
-   "reason": "price moved 0.51\u21920.64",
-   "status": "sold",
-   "pnl": -18.92,
-   "settled": 1783652153,
-   "name": "imwalkinghere",
-   "exit_price": 0.5108
   }
  ],
  "missed_pnl": 89892.11,
- "updated": 1783894584
+ "updated": 1783894714
 }
