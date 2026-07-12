@@ -1850,6 +1850,21 @@
  ],
  "missed": [
   {
+   "ts": 1783863331,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "84502716136213781728963328899707683260350624645362486645725504535263198032073",
+   "cond": "0xa4807375ad750023e039c1a666413760e915ab367d2bfc57034bc5d631775d07",
+   "title": "Dota 2: 1win vs Team Yandex - Game 2 Winner",
+   "outcome": "1win",
+   "price": 0.47,
+   "stake": 94.02,
+   "reason": "price moved 0.38\u21920.47",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783856662,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
@@ -2791,24 +2806,8 @@
    "settled": 1783628018,
    "name": "gkmgkldfmg",
    "exit_price": 0.5481
-  },
-  {
-   "ts": 1783627210,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
-   "cond": "0x3c07935adc293c658ab20651f7fc6478d36e6bfdb375caab539fca9c81de03fd",
-   "title": "Dota 2: LGD Gaming vs 1win - Game 2 Winner",
-   "outcome": "LGD Gaming",
-   "price": 0.58,
-   "stake": 81.63,
-   "reason": "price moved 0.50\u21920.58",
-   "status": "sold",
-   "pnl": 2.84,
-   "settled": 1783627396,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.6146
   }
  ],
  "missed_pnl": -345.02,
- "updated": 1783862603
+ "updated": 1783863331
 }
