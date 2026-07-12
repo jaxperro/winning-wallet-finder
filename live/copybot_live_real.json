@@ -610,6 +610,21 @@
  ],
  "missed": [
   {
+   "ts": 1783851794,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "90912190630175200805827076506881962170030344593208497487958283062556067846899",
+   "cond": "0x660404f310d6d27f728aa0f5494c157c794cc35b0a3b34536e689e6672947d64",
+   "title": "Dota 2: REKONIX vs Team Nemesis - Game 1 Winner",
+   "outcome": "REKONIX",
+   "price": 0.92,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783848410,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "89628205161429183663335882524534177373428689595495022481997839397142363974023",
@@ -1551,24 +1566,8 @@
    "settled": 1783706850,
    "name": "gkmgkldfmg",
    "exit_price": 0.999
-  },
-  {
-   "ts": 1783700828,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "69027125899922146323810811399170864348440104511791629984973003274267414851012",
-   "cond": "0x02ab4a8dda332808f3c27061a0449645546834bc324e0d5e617bdc33500cf6c5",
-   "title": "Dota 2: REKONIX vs Team Spirit - Game 2 Winner",
-   "outcome": "REKONIX",
-   "price": 0.09,
-   "stake": 4.5,
-   "reason": "capped to $-10.00 < min order $1.00 (caps)",
-   "status": "sold",
-   "pnl": -4.44,
-   "settled": 1783702472,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.0037
   }
  ],
  "missed_pnl": 103.83,
- "updated": 1783851194
+ "updated": 1783851794
 }
