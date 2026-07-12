@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 92.74,
+ "stake": 92.71,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1984.14,
- "deployed": 334.3,
+ "cash": 1890.7,
+ "deployed": 427.04,
  "reserve": 0.0,
- "realized": 1318.41,
+ "realized": 1317.7,
  "adjustments": 0.03,
- "ledger_drift": 0.0,
- "open_count": 7,
- "fees_paid": 128.6,
+ "ledger_drift": 0.01,
+ "open_count": 8,
+ "fees_paid": 129.3,
  "fee_rate": 0.03,
  "lag": {
-  "n": 79,
-  "n24": 17,
-  "avg_s": 62.0,
-  "avg_slip_pct": -0.0428,
+  "n": 80,
+  "n24": 18,
+  "avg_s": 61.6,
+  "avg_slip_pct": -0.0389,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "14635675870982897917581198649476127837975251193150495566552970565909631535281",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "Yes",
+   "title": "Will Argentina win on 2026-07-11?",
+   "their_price": 0.7271,
+   "my_price": 0.7475,
+   "slippage_pct": 0.0281,
+   "shares": 124.06,
+   "cost": 92.74,
+   "fee": 0.7,
+   "opened": 1783818617,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "103463464943572749166715825902436097005749231905022823443969199466445385329466",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -1510,6 +1528,21 @@
  ],
  "missed": [
   {
+   "ts": 1783818670,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "14635675870982897917581198649476127837975251193150495566552970565909631535281",
+   "cond": "0x95f726bbb693b945f94473908298b2389989550b08a7bfd90f97ce7ba62cb719",
+   "title": "Will Argentina win on 2026-07-11?",
+   "outcome": "Yes",
+   "price": 0.727,
+   "stake": 92.74,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783815207,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "20984016543941988843477189471436635378224731224764178152393193587982775548296",
@@ -2453,25 +2486,8 @@
    "name": "gkmgkldfmg",
    "exit_checked": true,
    "exit_price": 0.2742
-  },
-  {
-   "ts": 1783596707,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "67316041392595003970935162895075724563017159074192091517379695493042764601836",
-   "cond": "0x9287e54a43cbc37355e3646f3a450eb4543d975da64960a25e69740966d41aa4",
-   "title": "Dota 2: GamerLegion vs Team Falcons - Game 2 Winner",
-   "outcome": "GamerLegion",
-   "price": 0.26,
-   "stake": 45.29,
-   "reason": "price moved 0.24\u21920.26",
-   "status": "sold",
-   "pnl": -26.23,
-   "settled": 1783606057,
-   "name": "gkmgkldfmg",
-   "exit_checked": true,
-   "exit_price": 0.1183
   }
  ],
  "missed_pnl": -325.7,
- "updated": 1783815559
+ "updated": 1783818672
 }
