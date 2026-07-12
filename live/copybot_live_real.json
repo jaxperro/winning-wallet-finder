@@ -432,6 +432,21 @@
  ],
  "missed": [
   {
+   "ts": 1783815207,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "20984016543941988843477189471436635378224731224764178152393193587982775548296",
+   "cond": "0x3c5895028ee6c15e4da7b73884819bc86897c08a890cf76712b09ac37de5d82d",
+   "title": "UFC 329: Gable Steveson vs. Elisha Ellison (Heavyweight, Prelims)",
+   "outcome": "Gable Steveson",
+   "price": 0.99,
+   "stake": 1.0,
+   "reason": "price moved 0.92\u21920.99",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783806884,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "103463464943572749166715825902436097005749231905022823443969199466445385329466",
@@ -1372,24 +1387,8 @@
    "settled": 1783690676,
    "name": "gkmgkldfmg",
    "exit_price": 0.5648
-  },
-  {
-   "ts": 1783688206,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "30046078570478042875484019498188445069739353707631130122422440814625914406231",
-   "cond": "0x7664d545626cce2926008f88cf77c53e705c817404ada24e31d638e4031c8645",
-   "title": "Dota 2: L1ga Team vs Team Liquid - Game 2 Winner",
-   "outcome": "L1ga Team",
-   "price": 0.15,
-   "stake": 5.0,
-   "reason": "price moved 0.14\u21920.15",
-   "status": "sold",
-   "pnl": 0.75,
-   "settled": 1783688497,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.1809
   }
  ],
  "missed_pnl": 102.28,
- "updated": 1783815089
+ "updated": 1783815207
 }
