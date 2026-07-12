@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 95.34,
+ "stake": 95.28,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1989.08,
- "deployed": 394.32,
+ "cash": 1892.43,
+ "deployed": 489.66,
  "reserve": 0.0,
- "realized": 1383.37,
+ "realized": 1382.05,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 8,
- "fees_paid": 130.51,
+ "open_count": 9,
+ "fees_paid": 131.82,
  "fee_rate": 0.03,
  "lag": {
-  "n": 81,
-  "n24": 18,
-  "avg_s": 59.7,
-  "avg_slip_pct": -0.0422,
+  "n": 82,
+  "n24": 19,
+  "avg_s": 56.7,
+  "avg_slip_pct": -0.0357,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "60829743230974931197831424477251722921940032428553255171871752877191212996952",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Brandon Royval",
+   "title": "UFC 329: Brandon Royval vs. Lone'er Kavanagh (Flyweight, Main Card)",
+   "their_price": 0.4997,
+   "my_price": 0.54,
+   "slippage_pct": 0.0806,
+   "shares": 176.55,
+   "cost": 95.34,
+   "fee": 1.32,
+   "opened": 1783821941,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "75547676899565417061748996551784035227286947758945008419210215158883005757610",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2509,5 +2527,5 @@
   }
  ],
  "missed_pnl": -325.7,
- "updated": 1783821747
+ "updated": 1783821944
 }
