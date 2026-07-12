@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 24.73,
- "cash": 14.66,
- "deployed": 7.73,
+ "cash": 13.61,
+ "deployed": 8.77,
  "reserve": 0.0,
- "realized": -2.09,
+ "realized": -2.11,
  "adjustments": 2.2,
  "ledger_drift": 2.59,
- "open_count": 4,
- "fees_paid": 1.05,
+ "open_count": 5,
+ "fees_paid": 1.07,
  "fee_rate": 0.03,
  "lag": {
-  "n": 21,
-  "n24": 18,
-  "avg_s": 88.0,
-  "avg_slip_pct": 0.0072,
+  "n": 22,
+  "n24": 19,
+  "avg_s": 90.2,
+  "avg_slip_pct": 0.01,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "89628205161429183663335882524534177373428689595495022481997839397142363974023",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Bilibili Gaming",
+   "title": "LoL: Bilibili Gaming vs Hanwha Life Esports - Game 3 Winner",
+   "their_price": 0.5,
+   "my_price": 0.53,
+   "slippage_pct": 0.06,
+   "shares": 1.96,
+   "cost": 1.04,
+   "fee": 0.01,
+   "opened": 1783848286,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "45280196732223750989767984101465690442391116346771016128184193629867669221370",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -567,6 +585,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1783848410,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "89628205161429183663335882524534177373428689595495022481997839397142363974023",
+   "cond": "0x4a79ee243fd2910b21b240699be5e3cabb73de2f18cddc23c88fc842efe87d95",
+   "title": "LoL: Bilibili Gaming vs Hanwha Life Esports - Game 3 Winner",
+   "outcome": "Bilibili Gaming",
+   "price": 0.5,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
   {
    "ts": 1783848284,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1509,24 +1542,8 @@
    "settled": 1783702472,
    "name": "gkmgkldfmg",
    "exit_price": 0.0037
-  },
-  {
-   "ts": 1783698745,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "20753444326597808403433519410324896770837596585358560000183009522246701254242",
-   "cond": "0x06f2a24626f9441cdb0e52b81b0b4f40dab91b6109ee5b9d5e3dce82aefcf2da",
-   "title": "Dota 2: Team Nemesis vs Vici Gaming - Game 2 Winner",
-   "outcome": "Team Nemesis",
-   "price": 0.33,
-   "stake": 4.05,
-   "reason": "capped to $-10.00 < min order $1.00 (caps)",
-   "status": "sold",
-   "pnl": -3.32,
-   "settled": 1783700916,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.0679
   }
  ],
  "missed_pnl": 102.85,
- "updated": 1783848284
+ "updated": 1783848416
 }
