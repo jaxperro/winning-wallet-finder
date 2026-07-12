@@ -1948,6 +1948,22 @@
  ],
  "missed": [
   {
+   "ts": 1783890308,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "57692873707168744410462715873400507686142544046928546188194421200046018282561",
+   "cond": "0x8022dd304232ce80b3866b7a45f7396d2e8cb91ace3b86b3aaffd06a44ec6052",
+   "title": "Ava\u00ed FC vs. Clube N\u00e1utico Capibaribe: O/U 1.5",
+   "outcome": "Over",
+   "price": 0.999,
+   "stake": 90.4,
+   "reason": "price moved 0.46\u21921.00",
+   "status": "sold",
+   "pnl": 0.09,
+   "settled": 1783899442,
+   "name": "LSB1",
+   "exit_price": 1.0
+  },
+  {
    "ts": 1783884689,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "112964891228922007291616429059731268652545552701771186142443664268316983972488",
@@ -1977,21 +1993,6 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783890308,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "57692873707168744410462715873400507686142544046928546188194421200046018282561",
-   "cond": "0x8022dd304232ce80b3866b7a45f7396d2e8cb91ace3b86b3aaffd06a44ec6052",
-   "title": "Ava\u00ed FC vs. Clube N\u00e1utico Capibaribe: O/U 1.5",
-   "outcome": "Over",
-   "price": 0.999,
-   "stake": 90.4,
-   "reason": "price moved 0.46\u21921.00",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
   },
   {
    "ts": 1783889397,
@@ -2905,6 +2906,6 @@
    "exit_price": 0.555
   }
  ],
- "missed_pnl": 89800.65,
- "updated": 1783899128
+ "missed_pnl": 89800.74,
+ "updated": 1783899443
 }
