@@ -452,6 +452,21 @@
  ],
  "missed": [
   {
+   "ts": 1783821747,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "80695764145597442773109303072961778341865154823453604006436935638165430171016",
+   "cond": "0x78fdaa290adbb2780e5f3b391b6cb5009d7c849a1a774bf1966115b75f8d4554",
+   "title": "UFC 329: Brandon Royval vs. Lone'er Kavanagh (Flyweight, Main Card)",
+   "outcome": "Loneer Kavanagh",
+   "price": 0.89,
+   "stake": 1.0,
+   "reason": "price moved 0.74\u21920.89",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783819878,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "75547676899565417061748996551784035227286947758945008419210215158883005757610",
@@ -1391,24 +1406,8 @@
    "settled": 1783691614,
    "name": "gkmgkldfmg",
    "exit_price": 0.2441
-  },
-  {
-   "ts": 1783690709,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "84864321844564005123638956205037810292837868807558456388220877376462415276538",
-   "cond": "0x8545a030f00ef7748aa1c00481a9f01ec4b73550aef97b564a3f5a07b31f8f9d",
-   "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
-   "outcome": "PlayTime",
-   "price": 0.39,
-   "stake": 5.0,
-   "reason": "order rejected: exception: not enough balance / allowance: the balance is no",
-   "status": "sold",
-   "pnl": 2.06,
-   "settled": 1783690991,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.5648
   }
  ],
  "missed_pnl": 102.3,
- "updated": 1783820712
+ "updated": 1783821747
 }
