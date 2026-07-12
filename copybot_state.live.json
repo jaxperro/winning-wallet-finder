@@ -8016,14 +8016,15 @@
       "price": 0.5675,
       "stake": 1.0,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "imwalkinghere"
+      "status": "lost",
+      "pnl": -1.01,
+      "settled": 1783824780,
+      "name": "imwalkinghere",
+      "exit_checked": true
     }
   ],
   "feed_sig": "ddbc7971d62331f34f3864714c45d9a6",
-  "feed_pushed_at": 1783824400.5247674,
+  "feed_pushed_at": 1783824657.0293093,
   "adjustments": [
     {
       "ts": 1783718232,
