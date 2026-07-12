@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 96.38,
+ "stake": 96.32,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2090.14,
- "deployed": 319.35,
+ "cash": 1992.26,
+ "deployed": 415.73,
  "reserve": 0.0,
- "realized": 1409.46,
+ "realized": 1407.96,
  "adjustments": 0.03,
  "ledger_drift": 0.0,
- "open_count": 7,
- "fees_paid": 153.32,
+ "open_count": 8,
+ "fees_paid": 154.82,
  "fee_rate": 0.03,
  "lag": {
-  "n": 93,
-  "n24": 21,
-  "avg_s": 31.1,
-  "avg_slip_pct": -0.0431,
+  "n": 94,
+  "n24": 22,
+  "avg_s": 29.9,
+  "avg_slip_pct": -0.0438,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "307529025202586833979526819648497003008876078326197368134840608701258822521",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "1win",
+   "title": "Dota 2: 1win vs Team Yandex - Game 1 Winner",
+   "their_price": 0.51,
+   "my_price": 0.48,
+   "slippage_pct": -0.0588,
+   "shares": 200.79,
+   "cost": 96.38,
+   "fee": 1.5,
+   "opened": 1783858310,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "98686933205526849260956926098370864586052275369032476650193546947433457446794",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2750,5 +2768,5 @@
   }
  ],
  "missed_pnl": -345.02,
- "updated": 1783858227
+ "updated": 1783858314
 }
