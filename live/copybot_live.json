@@ -1960,7 +1960,8 @@
    "status": "lost",
    "pnl": -91.46,
    "settled": 1783898872,
-   "name": "LSB1"
+   "name": "LSB1",
+   "exit_checked": true
   },
   {
    "ts": 1783894711,
@@ -2905,5 +2906,5 @@
   }
  ],
  "missed_pnl": 89800.65,
- "updated": 1783898873
+ "updated": 1783899128
 }
