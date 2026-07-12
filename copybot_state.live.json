@@ -5748,15 +5748,6 @@
       "event": "amazon-2026-capex-above-180b",
       "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
       "cond": "0x0a1a5f0cd3445aee7ec41eb2756dada597876031c718f31a9bf6ddde8250be6f"
-    },
-    "98130629394630322983110605714141489884435629664812927809724837028685741349685": {
-      "shares": 2.162161,
-      "cost": 0.999999,
-      "title": "Will Argentina win on 2026-07-11?",
-      "outcome": "No",
-      "event": "fifwc-arg-che-2026-07-11",
-      "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-      "cond": "0x95f726bbb693b945f94473908298b2389989550b08a7bfd90f97ce7ba62cb719"
     }
   },
   "spend": {
@@ -5781,10 +5772,9 @@
     "81413637292297741701558038706628285500354162735615522867827508680184700465994": "0x4b1e0b818817492afa73944f7271cc744a6e9027f2c26888b8a6ee76e6aba311",
     "43551466881329966936571085042990699617845453317700345932385022134457322350137": "0xd58ac06933e3a4c74c5014a99e74ad7e9b73b4a0afcd74319de8bf109343ee8a",
     "31844421127747452247920361772593140342967161564902355004027803194678743954899": "0x0a1a5f0cd3445aee7ec41eb2756dada597876031c718f31a9bf6ddde8250be6f",
-    "14635675870982897917581198649476127837975251193150495566552970565909631535281": "0x95f726bbb693b945f94473908298b2389989550b08a7bfd90f97ce7ba62cb719",
-    "98130629394630322983110605714141489884435629664812927809724837028685741349685": "0x95f726bbb693b945f94473908298b2389989550b08a7bfd90f97ce7ba62cb719"
+    "14635675870982897917581198649476127837975251193150495566552970565909631535281": "0x95f726bbb693b945f94473908298b2389989550b08a7bfd90f97ce7ba62cb719"
   },
-  "cash": 11.933611481089555,
+  "cash": 14.095772481089554,
   "lag": {
     "n": 16,
     "sum_s": 1745.7927494049072,
@@ -6279,10 +6269,10 @@
       "cost": 1.0,
       "fee": 0.0161,
       "opened": 1783823297,
-      "status": "open",
-      "exit_price": null,
-      "pnl": null,
-      "settled": null
+      "status": "won",
+      "exit_price": 1.0,
+      "pnl": 1.15,
+      "settled": 1783828844
     }
   },
   "no_miss_toks": [
@@ -7907,10 +7897,12 @@
       "price": 0.727,
       "stake": 1.0,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "LSB1"
+      "status": "sold",
+      "pnl": -0.48,
+      "settled": 1783828831,
+      "name": "LSB1",
+      "exit_checked": true,
+      "exit_price": 0.3899
     },
     {
       "ts": 1783819878,
@@ -7970,10 +7962,11 @@
       "price": 0.6122,
       "stake": 1.0,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "LSB1"
+      "status": "won",
+      "pnl": 0.62,
+      "settled": 1783828831,
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783823519,
@@ -7985,10 +7978,11 @@
       "price": 0.8499,
       "stake": 1.0,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "LSB1"
+      "status": "sold",
+      "pnl": 0.17,
+      "settled": 1783828849,
+      "name": "LSB1",
+      "exit_price": 1.0
     },
     {
       "ts": 1783824116,
@@ -8023,8 +8017,8 @@
       "exit_checked": true
     }
   ],
-  "feed_sig": "ddbc7971d62331f34f3864714c45d9a6",
-  "feed_pushed_at": 1783824657.0293093,
+  "feed_sig": "fda502fcb021091cc6ae91a289776c7e",
+  "feed_pushed_at": 1783828784.6232865,
   "adjustments": [
     {
       "ts": 1783718232,
