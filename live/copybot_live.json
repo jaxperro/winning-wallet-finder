@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 100.74,
+ "stake": 99.63,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2097.81,
- "deployed": 420.66,
+ "cash": 2171.03,
+ "deployed": 319.81,
  "reserve": 0.0,
- "realized": 1518.44,
+ "realized": 1490.81,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 8,
- "fees_paid": 143.32,
+ "open_count": 7,
+ "fees_paid": 144.73,
  "fee_rate": 0.03,
  "lag": {
   "n": 88,
@@ -50,24 +50,6 @@
  },
  "bets": [
   {
-   "token": "98686933205526849260956926098370864586052275369032476650193546947433457446794",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "PARIVISION",
-   "title": "Dota 2: PARIVISION vs Team Spirit - Game 1 Winner",
-   "their_price": 0.6499,
-   "my_price": 0.62,
-   "slippage_pct": -0.0459,
-   "shares": 162.56,
-   "cost": 100.78,
-   "fee": 1.15,
-   "opened": 1783848697,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
    "token": "45280196732223750989767984101465690442391116346771016128184193629867669221370",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -80,6 +62,26 @@
    "cost": 100.85,
    "fee": 1.51,
    "opened": 1783847831,
+   "status": "closed",
+   "exit_price": 0.363,
+   "pnl": -29.15,
+   "settled": 1783850789,
+   "sold_shares": 201.69,
+   "sold_proceeds": 73.21
+  },
+  {
+   "token": "98686933205526849260956926098370864586052275369032476650193546947433457446794",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "PARIVISION",
+   "title": "Dota 2: PARIVISION vs Team Spirit - Game 1 Winner",
+   "their_price": 0.6499,
+   "my_price": 0.62,
+   "slippage_pct": -0.0459,
+   "shares": 162.56,
+   "cost": 100.78,
+   "fee": 1.15,
+   "opened": 1783848697,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -2651,5 +2653,5 @@
   }
  ],
  "missed_pnl": -340.53,
- "updated": 1783850429
+ "updated": 1783850789
 }
