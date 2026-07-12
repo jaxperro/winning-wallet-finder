@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 24.73,
- "cash": 13.98,
- "deployed": 5.67,
+ "cash": 12.94,
+ "deployed": 6.71,
  "reserve": 0.0,
- "realized": -4.83,
+ "realized": -4.84,
  "adjustments": 2.2,
- "ledger_drift": -0.01,
- "open_count": 2,
- "fees_paid": 0.97,
+ "ledger_drift": -0.02,
+ "open_count": 3,
+ "fees_paid": 0.98,
  "fee_rate": 0.03,
  "lag": {
-  "n": 17,
-  "n24": 15,
-  "avg_s": 98.7,
-  "avg_slip_pct": -0.0015,
+  "n": 18,
+  "n24": 16,
+  "avg_s": 96.7,
+  "avg_slip_pct": 0.0015,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "37098243537063616538853806564974418300652058034370047802005035892401938992764",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Hanwha Life Esports",
+   "title": "LoL: Bilibili Gaming vs Hanwha Life Esports - Game 1 Winner",
+   "their_price": 0.63,
+   "my_price": 0.66,
+   "slippage_pct": 0.0476,
+   "shares": 1.56,
+   "cost": 1.03,
+   "fee": 0.01,
+   "opened": 1783842112,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "67314542042181807230524008268090407287895594712641843494670955324585909703902",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -1453,5 +1471,5 @@
   }
  ],
  "missed_pnl": 102.84,
- "updated": 1783842020
+ "updated": 1783842183
 }
