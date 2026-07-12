@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 98.53,
+ "stake": 96.46,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2068.97,
- "deployed": 394.32,
+ "cash": 2110.01,
+ "deployed": 301.58,
  "reserve": 0.0,
- "realized": 1463.26,
+ "realized": 1411.57,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 8,
- "fees_paid": 131.82,
+ "open_count": 7,
+ "fees_paid": 132.66,
  "fee_rate": 0.03,
  "lag": {
   "n": 82,
@@ -49,6 +49,26 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "14635675870982897917581198649476127837975251193150495566552970565909631535281",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "Yes",
+   "title": "Will Argentina win on 2026-07-11?",
+   "their_price": 0.7271,
+   "my_price": 0.7475,
+   "slippage_pct": 0.0281,
+   "shares": 124.06,
+   "cost": 92.74,
+   "fee": 0.7,
+   "opened": 1783818617,
+   "status": "closed",
+   "exit_price": 0.3308,
+   "pnl": -52.4,
+   "settled": 1783823373,
+   "sold_shares": 124.06,
+   "sold_proceeds": 41.04
+  },
   {
    "token": "60829743230974931197831424477251722921940032428553255171871752877191212996952",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -88,24 +108,6 @@
    "settled": 1783820015,
    "sold_shares": 157.13,
    "sold_proceeds": 157.13
-  },
-  {
-   "token": "14635675870982897917581198649476127837975251193150495566552970565909631535281",
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "name": "LSB1",
-   "outcome": "Yes",
-   "title": "Will Argentina win on 2026-07-11?",
-   "their_price": 0.7271,
-   "my_price": 0.7475,
-   "slippage_pct": 0.0281,
-   "shares": 124.06,
-   "cost": 92.74,
-   "fee": 0.7,
-   "opened": 1783818617,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "103463464943572749166715825902436097005749231905022823443969199466445385329466",
@@ -1570,6 +1572,36 @@
  ],
  "missed": [
   {
+   "ts": 1783823370,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "98130629394630322983110605714141489884435629664812927809724837028685741349685",
+   "cond": "0x95f726bbb693b945f94473908298b2389989550b08a7bfd90f97ce7ba62cb719",
+   "title": "Will Argentina win on 2026-07-11?",
+   "outcome": "No",
+   "price": 0.6122,
+   "stake": 98.53,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
+   "ts": 1783823370,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "30832186473485489334120104796032388930526660633476597146132134578867673440960",
+   "cond": "0x1db0a673e54d03be88c155835d1b08286a469fe9ae8cfffe73777d18431533e4",
+   "title": "Argentina vs. Switzerland: O/U 1.5",
+   "outcome": "Over",
+   "price": 0.8499,
+   "stake": 98.53,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783821747,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "80695764145597442773109303072961778341865154823453604006436935638165430171016",
@@ -2495,40 +2527,8 @@
    "name": "gkmgkldfmg",
    "exit_checked": true,
    "exit_price": 0.5677
-  },
-  {
-   "ts": 1783612016,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "18761224788266541727279689677720684189553273901637473351355084093520325570855",
-   "cond": "0x868d295d9e0d6f777b7f4e6abb45f5d02e2f0281bb12b857f6375f7ecc8c91e5",
-   "title": "Dota 2: MOUZ vs Team Nemesis - Game 1 Winner",
-   "outcome": "Team Nemesis",
-   "price": 0.43,
-   "stake": 45.4,
-   "reason": "price moved 0.38\u21920.43",
-   "status": "sold",
-   "pnl": 8.51,
-   "settled": 1783620044,
-   "name": "gkmgkldfmg",
-   "exit_checked": true,
-   "exit_price": 0.5255
-  },
-  {
-   "ts": 1783614355,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
-   "cond": "0xc13c12dd0b8c4a29dedc8f12b2976628fa57e4a8b27bbcc522b82008bb549e02",
-   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $11.2B?",
-   "outcome": "No",
-   "price": 0.8399,
-   "stake": 52.73,
-   "reason": "followed but not placed \u2014 silent exit at copy time (thin/no-ask book most likely; both silent paths instrumented 2026-07-09)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": -355.01,
- "updated": 1783822404
+ "updated": 1783823373
 }
