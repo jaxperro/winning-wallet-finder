@@ -8742,9 +8742,9 @@
       "price": 0.51,
       "stake": 1.0,
       "reason": "in-play hold expired unfilled (60s)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "pnl": -1.01,
+      "settled": 1783867047,
       "name": "LSB1"
     },
     {
@@ -8796,7 +8796,7 @@
     }
   ],
   "feed_sig": "b3803f0559b57b2fded573043a158fe8",
-  "feed_pushed_at": 1783866793.734617,
+  "feed_pushed_at": 1783866917.0985243,
   "adjustments": [
     {
       "ts": 1783718232,

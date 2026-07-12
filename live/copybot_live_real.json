@@ -768,6 +768,21 @@
  ],
  "missed": [
   {
+   "ts": 1783856423,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
+   "cond": "0xba7e1244bc3dabb6c38a128dcf7522104172e8b3a354aa711643c11064e56bf1",
+   "title": "Will Daejeon Hana Citizen FC win on 2026-07-12?",
+   "outcome": "Yes",
+   "price": 0.51,
+   "stake": 1.0,
+   "reason": "in-play hold expired unfilled (60s)",
+   "status": "lost",
+   "pnl": -1.01,
+   "settled": 1783867047,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783866853,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "99894914207898514284631305777217402140704104471002518113888183892335214453642",
@@ -845,21 +860,6 @@
    "settled": 1783857000,
    "name": "gkmgkldfmg",
    "exit_price": 1.0545
-  },
-  {
-   "ts": 1783856423,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
-   "cond": "0xba7e1244bc3dabb6c38a128dcf7522104172e8b3a354aa711643c11064e56bf1",
-   "title": "Will Daejeon Hana Citizen FC win on 2026-07-12?",
-   "outcome": "Yes",
-   "price": 0.51,
-   "stake": 1.0,
-   "reason": "in-play hold expired unfilled (60s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
   },
   {
    "ts": 1783853611,
@@ -1726,6 +1726,6 @@
    "exit_price": 0.8396
   }
  ],
- "missed_pnl": 103.87,
- "updated": 1783866855
+ "missed_pnl": 102.86,
+ "updated": 1783867047
 }
