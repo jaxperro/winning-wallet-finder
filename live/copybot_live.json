@@ -1550,6 +1550,21 @@
  ],
  "missed": [
   {
+   "ts": 1783821747,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "80695764145597442773109303072961778341865154823453604006436935638165430171016",
+   "cond": "0x78fdaa290adbb2780e5f3b391b6cb5009d7c849a1a774bf1966115b75f8d4554",
+   "title": "UFC 329: Brandon Royval vs. Lone'er Kavanagh (Flyweight, Main Card)",
+   "outcome": "Loneer Kavanagh",
+   "price": 0.89,
+   "stake": 95.34,
+   "reason": "price moved 0.74\u21920.89",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783818670,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "14635675870982897917581198649476127837975251193150495566552970565909631535281",
@@ -2491,25 +2506,8 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783602410,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "65585128992878043579543337949365468961659444652241007486927374035531121325136",
-   "cond": "0x7d055d8db3ee70c0781b1a263c29beefcbf83bc9790c06b67199221135e34029",
-   "title": "Dota 2: Nigma Galaxy vs Team Liquid - Game 1 Winner",
-   "outcome": "Team Liquid",
-   "price": 0.35,
-   "stake": 44.98,
-   "reason": "price moved 0.25\u21920.35",
-   "status": "sold",
-   "pnl": -11.38,
-   "settled": 1783611803,
-   "name": "gkmgkldfmg",
-   "exit_checked": true,
-   "exit_price": 0.2742
   }
  ],
  "missed_pnl": -325.7,
- "updated": 1783820718
+ "updated": 1783821747
 }
