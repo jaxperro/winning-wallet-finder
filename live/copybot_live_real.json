@@ -432,6 +432,36 @@
  ],
  "missed": [
   {
+   "ts": 1783811607,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "85590802024993543661537425965264345251257796759459810241384876806751805341892",
+   "cond": "0x85aa21232741b7a20bb96a9794e6ca05dd3f0e750b76e6f38838530b18184fa2",
+   "title": "Jude Bellingham: 2+ goals",
+   "outcome": "Yes",
+   "price": 0.0299,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "lost",
+   "pnl": -1.03,
+   "settled": 1783814817,
+   "name": "LSB1"
+  },
+  {
+   "ts": 1783805945,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "10174584768963875173947852308524484106197371102092547629610032094114021922809",
+   "cond": "0x074ce5163e8590fdf5615ee0c9df73619e1e777a966b973c3055caf06281ec88",
+   "title": "England to score first vs. Norway?",
+   "outcome": "No",
+   "price": 0.8236,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 0.21,
+   "settled": 1783814813,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783806570,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "108451612909496335433925708933377313229531944715204827566329790137714124934964",
@@ -446,21 +476,6 @@
    "settled": 1783814706,
    "name": "LSB1",
    "exit_checked": true
-  },
-  {
-   "ts": 1783811607,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "85590802024993543661537425965264345251257796759459810241384876806751805341892",
-   "cond": "0x85aa21232741b7a20bb96a9794e6ca05dd3f0e750b76e6f38838530b18184fa2",
-   "title": "Jude Bellingham: 2+ goals",
-   "outcome": "Yes",
-   "price": 0.0299,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
   },
   {
    "ts": 1783807073,
@@ -486,21 +501,6 @@
    "title": "Exact Score: Norway 1 - 1 England?",
    "outcome": "No",
    "price": 0.88,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
-  },
-  {
-   "ts": 1783805945,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "10174584768963875173947852308524484106197371102092547629610032094114021922809",
-   "cond": "0x074ce5163e8590fdf5615ee0c9df73619e1e777a966b973c3055caf06281ec88",
-   "title": "England to score first vs. Norway?",
-   "outcome": "No",
-   "price": 0.8236,
    "stake": 1.0,
    "reason": "not copied in the detection window (reconciled)",
    "status": "open",
@@ -1387,6 +1387,6 @@
    "exit_price": 0.1809
   }
  ],
- "missed_pnl": 104.1,
- "updated": 1783814775
+ "missed_pnl": 103.28,
+ "updated": 1783814817
 }

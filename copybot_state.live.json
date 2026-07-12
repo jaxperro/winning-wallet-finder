@@ -7712,9 +7712,9 @@
       "price": 0.8236,
       "stake": 1.0,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 0.21,
+      "settled": 1783814813,
       "name": "LSB1"
     },
     {
@@ -7774,14 +7774,14 @@
       "price": 0.0299,
       "stake": 1.0,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "pnl": -1.03,
+      "settled": 1783814817,
       "name": "LSB1"
     }
   ],
-  "feed_sig": "99d3c65ec737829bcc91dda348a9ce7a",
-  "feed_pushed_at": 1783814644.8864682,
+  "feed_sig": "bb30687101b46af8c31a8906258f597d",
+  "feed_pushed_at": 1783814775.1561582,
   "adjustments": [
     {
       "ts": 1783718232,
