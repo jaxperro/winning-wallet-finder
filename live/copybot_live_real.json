@@ -444,7 +444,8 @@
    "status": "lost",
    "pnl": -1.0,
    "settled": 1783814962,
-   "name": "LSB1"
+   "name": "LSB1",
+   "exit_checked": true
   },
   {
    "ts": 1783811607,
@@ -459,7 +460,8 @@
    "status": "lost",
    "pnl": -1.03,
    "settled": 1783814817,
-   "name": "LSB1"
+   "name": "LSB1",
+   "exit_checked": true
   },
   {
    "ts": 1783805945,
@@ -474,7 +476,8 @@
    "status": "won",
    "pnl": 0.21,
    "settled": 1783814813,
-   "name": "LSB1"
+   "name": "LSB1",
+   "exit_checked": true
   },
   {
    "ts": 1783806570,
@@ -1388,5 +1391,5 @@
   }
  ],
  "missed_pnl": 102.28,
- "updated": 1783814963
+ "updated": 1783815089
 }
