@@ -7881,8 +7881,8 @@
     }
   },
   "hwm": 2548.9580606723184,
-  "feed_sig": "f21f238a29d363ff2d8141912048d36f",
-  "feed_pushed_at": 1783867105.1293714,
+  "feed_sig": "ab348300c3c60893df2aeda9cf325404",
+  "feed_pushed_at": 1783867227.3862529,
   "missed": [
     {
       "ts": 1783590977,
@@ -9021,7 +9021,8 @@
       "status": "lost",
       "pnl": -101.76,
       "settled": 1783867043,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783863331,
