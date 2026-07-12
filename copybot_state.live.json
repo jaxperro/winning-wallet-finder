@@ -8994,10 +8994,11 @@
       "price": 0.999,
       "stake": 1.0,
       "reason": "price moved 0.46\u21921.00",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "LSB1"
+      "status": "sold",
+      "pnl": 0.0,
+      "settled": 1783899291,
+      "name": "LSB1",
+      "exit_price": 1.0
     },
     {
       "ts": 1783894736,
@@ -9016,7 +9017,7 @@
     }
   ],
   "feed_sig": "857427d5ec72731baa6cd1906cd2aad0",
-  "feed_pushed_at": 1783898911.3801773,
+  "feed_pushed_at": 1783899164.3209941,
   "adjustments": [
     {
       "ts": 1783718232,
