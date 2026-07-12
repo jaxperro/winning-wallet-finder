@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 90.43,
+ "stake": 90.4,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2041.62,
- "deployed": 219.03,
+ "cash": 1978.29,
+ "deployed": 281.66,
  "reserve": 0.0,
- "realized": 1260.62,
+ "realized": 1259.92,
  "adjustments": 0.03,
- "ledger_drift": 0.01,
- "open_count": 6,
- "fees_paid": 167.14,
+ "ledger_drift": 0.0,
+ "open_count": 7,
+ "fees_paid": 167.84,
  "fee_rate": 0.03,
  "lag": {
-  "n": 98,
-  "n24": 20,
-  "avg_s": 29.7,
-  "avg_slip_pct": -0.0393,
+  "n": 99,
+  "n24": 21,
+  "avg_s": 40.5,
+  "avg_slip_pct": -0.0471,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "107179792112987391529646299006880228718467140164269968140132399486412571398191",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will GPT-6 be released by August 14, 2026?",
+   "their_price": 0.79,
+   "my_price": 0.63,
+   "slippage_pct": -0.2025,
+   "shares": 99.42,
+   "cost": 62.63,
+   "fee": 0.7,
+   "opened": 1783888174,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -1890,6 +1908,21 @@
  ],
  "missed": [
   {
+   "ts": 1783888427,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "107179792112987391529646299006880228718467140164269968140132399486412571398191",
+   "cond": "0x880d4d315634908ffac985de5cd442ec679beeb25f0166a77bece698f35463f6",
+   "title": "Will GPT-6 be released by August 14, 2026?",
+   "outcome": "No",
+   "price": 0.7899,
+   "stake": 49.48,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783884689,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "112964891228922007291616429059731268652545552701771186142443664268316983972488",
@@ -2832,24 +2865,8 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.8525
-  },
-  {
-   "ts": 1783622007,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "22725380484456966301228939445880731453285484401950854931468064580525084575682",
-   "cond": "0x143c926299a00a8efbbb4368be94376883164ebeca3006dcb384f11b00f85a8a",
-   "title": "PFK CSKA Sofia vs. Derry City FC: Both Teams to Score",
-   "outcome": "Yes",
-   "price": 0.8593,
-   "stake": 77.32,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -0.64,
-   "settled": 1783634212,
-   "name": "LSB1",
-   "exit_price": 0.8594
   }
  ],
  "missed_pnl": 89892.11,
- "updated": 1783886063
+ "updated": 1783888429
 }
