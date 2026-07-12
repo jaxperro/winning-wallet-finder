@@ -670,6 +670,22 @@
  ],
  "missed": [
   {
+   "ts": 1783856323,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "71941893293834599184621753590882651435325558220761902727823613984547213968365",
+   "cond": "0xae59ba73bbfb0e2630cc950c513afa1e536f11a8d52b467282926f91dec3397c",
+   "title": "Dota 2: MOUZ vs Vici Gaming - Game 2 Winner",
+   "outcome": "Vici Gaming",
+   "price": 0.96,
+   "stake": 1.0,
+   "reason": "price 0.960 outside [0.01,0.95]",
+   "status": "sold",
+   "pnl": 0.1,
+   "settled": 1783857000,
+   "name": "gkmgkldfmg",
+   "exit_price": 1.0545
+  },
+  {
    "ts": 1783856423,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
@@ -683,21 +699,6 @@
    "pnl": null,
    "settled": null,
    "name": "LSB1"
-  },
-  {
-   "ts": 1783856323,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "71941893293834599184621753590882651435325558220761902727823613984547213968365",
-   "cond": "0xae59ba73bbfb0e2630cc950c513afa1e536f11a8d52b467282926f91dec3397c",
-   "title": "Dota 2: MOUZ vs Vici Gaming - Game 2 Winner",
-   "outcome": "Vici Gaming",
-   "price": 0.96,
-   "stake": 1.0,
-   "reason": "price 0.960 outside [0.01,0.95]",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1783853611,
@@ -1627,6 +1628,6 @@
    "exit_price": 0.6065
   }
  ],
- "missed_pnl": 104.95,
- "updated": 1783856745
+ "missed_pnl": 105.05,
+ "updated": 1783857003
 }
