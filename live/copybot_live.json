@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 96.48,
+ "stake": 98.47,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2110.3,
- "deployed": 301.58,
+ "cash": 2223.35,
+ "deployed": 238.28,
  "reserve": 0.0,
- "realized": 1411.86,
+ "realized": 1461.6,
  "adjustments": 0.03,
- "ledger_drift": 0.01,
- "open_count": 7,
+ "ledger_drift": 0.02,
+ "open_count": 6,
  "fees_paid": 133.5,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "8791795956649331503015492828368165964550912947413307583654882923127899710261",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Denis Zakaria: 3+ shots",
+   "their_price": 0.78,
+   "my_price": 0.56,
+   "slippage_pct": -0.2821,
+   "shares": 113.05,
+   "cost": 63.31,
+   "fee": 0.84,
+   "opened": 1783799617,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 48.9,
+   "settled": 1783829902
+  },
   {
    "token": "104561914765202402557605641573220843523354738236096573268755318796411743224135",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -146,24 +164,6 @@
    "exit_price": 0.0,
    "pnl": -97.17,
    "settled": 1783814994
-  },
-  {
-   "token": "8791795956649331503015492828368165964550912947413307583654882923127899710261",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Denis Zakaria: 3+ shots",
-   "their_price": 0.78,
-   "my_price": 0.56,
-   "slippage_pct": -0.2821,
-   "shares": 113.05,
-   "cost": 63.31,
-   "fee": 0.84,
-   "opened": 1783799617,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "113091218397444067989972632020225312341889014436526883908493943923995167586912",
@@ -2553,5 +2553,5 @@
   }
  ],
  "missed_pnl": -419.19,
- "updated": 1783829012
+ "updated": 1783829904
 }
