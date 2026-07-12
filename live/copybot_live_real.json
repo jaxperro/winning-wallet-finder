@@ -768,21 +768,6 @@
  ],
  "missed": [
   {
-   "ts": 1783867617,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "99894914207898514284631305777217402140704104471002518113888183892335214453642",
-   "cond": "0x7596ba50d124202d21f9b3695ad1e5611fd2f5db2cc7696d40cf2c198e806f73",
-   "title": "Dota 2: OG vs Virtus.pro - Game 2 Winner",
-   "outcome": "OG",
-   "price": 0.41,
-   "stake": 1.03,
-   "reason": "in-play hold expired unfilled (35s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
-  },
-  {
    "ts": 1783867167,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "4348221964264579870850466669975747411320261540985126046359486164505992457542",
@@ -792,10 +777,27 @@
    "price": 0.63,
    "stake": 1.03,
    "reason": "price moved 0.58\u21920.63",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": -0.04,
+   "settled": 1783867751,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.6184
+  },
+  {
+   "ts": 1783867617,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "99894914207898514284631305777217402140704104471002518113888183892335214453642",
+   "cond": "0x7596ba50d124202d21f9b3695ad1e5611fd2f5db2cc7696d40cf2c198e806f73",
+   "title": "Dota 2: OG vs Virtus.pro - Game 2 Winner",
+   "outcome": "OG",
+   "price": 0.41,
+   "stake": 1.03,
+   "reason": "in-play hold expired unfilled (35s)",
+   "status": "sold",
+   "pnl": 0.08,
+   "settled": 1783867751,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.4551
   },
   {
    "ts": 1783866853,
@@ -1726,6 +1728,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 102.83,
- "updated": 1783867618
+ "missed_pnl": 102.87,
+ "updated": 1783867752
 }
