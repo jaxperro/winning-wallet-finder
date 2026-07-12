@@ -768,6 +768,21 @@
  ],
  "missed": [
   {
+   "ts": 1783894736,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "50206051919987143398301686023277350657729433627529907465714791269369601841506",
+   "cond": "0xcf710169c9bda6d44066d759780d850b6d3fb02ae09c60f69223e1ed03ff1523",
+   "title": "Will Netflix, Inc. (NFLX) hit (HIGH) $82.50 Week of July 13 2026?",
+   "outcome": "No",
+   "price": 0.76,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783890188,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "57692873707168744410462715873400507686142544046928546188194421200046018282561",
@@ -1706,24 +1721,8 @@
    "settled": 1783763084,
    "name": "gkmgkldfmg",
    "exit_price": 0.4604
-  },
-  {
-   "ts": 1783699024,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "67230363321893543312889997321885915798590561925238141510437860465156386610448",
-   "cond": "0xf6d8ff2a90303b8906788c005ecfc5881a435714e6acdc2e1164fa5626ce71e4",
-   "title": "Will the DFM Real Estate Index hit 18,000 in 2026?",
-   "outcome": "No",
-   "price": 0.88,
-   "stake": 4.05,
-   "reason": "capped to $-10.00 < min order $1.00 (caps)",
-   "status": "sold",
-   "pnl": 0.15,
-   "settled": 1783753499,
-   "name": "0xbadaf319",
-   "exit_price": 0.9182
   }
  ],
  "missed_pnl": 1131.81,
- "updated": 1783893326
+ "updated": 1783894736
 }
