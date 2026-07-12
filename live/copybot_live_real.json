@@ -472,6 +472,21 @@
  ],
  "missed": [
   {
+   "ts": 1783824116,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "104561914765202402557605641573220843523354738236096573268755318796411743224135",
+   "cond": "0xe2954cca3112c130113fe7d756c802f7d5b1767490b2ae143d7776ca39715d23",
+   "title": "UFC 329: Cory Sandhagen vs. Mario Bautista (Bantamweight, Main Card)",
+   "outcome": "Mario Bautista",
+   "price": 0.85,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783823519,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "98130629394630322983110605714141489884435629664812927809724837028685741349685",
@@ -1409,24 +1424,8 @@
    "settled": 1783697783,
    "name": "gkmgkldfmg",
    "exit_price": 0.2791
-  },
-  {
-   "ts": 1783695471,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "40594224108520253108624365887167881382842057398183982530866129414581985931630",
-   "cond": "0x958375865506b3a7d8f6d2b134b179243bdf78db9f245d3afbf26e95dbcf0b92",
-   "title": "Dota 2: Team Nemesis vs Vici Gaming - Game 1 Winner",
-   "outcome": "Vici Gaming",
-   "price": 0.62,
-   "stake": 5.0,
-   "reason": "price moved 0.58\u21920.62",
-   "status": "sold",
-   "pnl": 2.59,
-   "settled": 1783697300,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.95
   }
  ],
  "missed_pnl": 102.83,
- "updated": 1783823524
+ "updated": 1783824116
 }
