@@ -768,6 +768,37 @@
  ],
  "missed": [
   {
+   "ts": 1783867167,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "4348221964264579870850466669975747411320261540985126046359486164505992457542",
+   "cond": "0x7596ba50d124202d21f9b3695ad1e5611fd2f5db2cc7696d40cf2c198e806f73",
+   "title": "Dota 2: OG vs Virtus.pro - Game 2 Winner",
+   "outcome": "Virtus.pro",
+   "price": 0.63,
+   "stake": 1.03,
+   "reason": "price moved 0.58\u21920.63",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
+   "ts": 1783866853,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "99894914207898514284631305777217402140704104471002518113888183892335214453642",
+   "cond": "0x7596ba50d124202d21f9b3695ad1e5611fd2f5db2cc7696d40cf2c198e806f73",
+   "title": "Dota 2: OG vs Virtus.pro - Game 2 Winner",
+   "outcome": "OG",
+   "price": 0.33,
+   "stake": 1.03,
+   "reason": "in-play hold expired unfilled (26s)",
+   "status": "sold",
+   "pnl": -0.03,
+   "settled": 1783867117,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.3349
+  },
+  {
    "ts": 1783856423,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
@@ -780,22 +811,8 @@
    "status": "lost",
    "pnl": -1.01,
    "settled": 1783867047,
-   "name": "LSB1"
-  },
-  {
-   "ts": 1783866853,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "99894914207898514284631305777217402140704104471002518113888183892335214453642",
-   "cond": "0x7596ba50d124202d21f9b3695ad1e5611fd2f5db2cc7696d40cf2c198e806f73",
-   "title": "Dota 2: OG vs Virtus.pro - Game 2 Winner",
-   "outcome": "OG",
-   "price": 0.33,
-   "stake": 1.03,
-   "reason": "in-play hold expired unfilled (26s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "name": "LSB1",
+   "exit_checked": true
   },
   {
    "ts": 1783863296,
@@ -1708,24 +1725,8 @@
    "settled": 1783718322,
    "name": "LSB1",
    "exit_checked": true
-  },
-  {
-   "ts": 1783712474,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "51142349456107958414584954407545686562582425523546369924249014347922759701733",
-   "cond": "0x236ca6f052bc08a309294a01031b8a13fed4e2b7a326b54c05c4a852d65bb864",
-   "title": "Spain vs. Belgium: Both Teams to Score in First Half",
-   "outcome": "Yes",
-   "price": 0.8395,
-   "stake": 4.5,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -0.04,
-   "settled": 1783718142,
-   "name": "LSB1",
-   "exit_price": 0.8396
   }
  ],
- "missed_pnl": 102.86,
- "updated": 1783867047
+ "missed_pnl": 102.83,
+ "updated": 1783867167
 }
