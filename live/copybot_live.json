@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 100.24,
+ "stake": 100.41,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1985.63,
- "deployed": 520.46,
+ "cash": 2090.14,
+ "deployed": 420.13,
  "reserve": 0.0,
- "realized": 1506.06,
+ "realized": 1510.24,
  "adjustments": 0.03,
  "ledger_drift": 0.0,
- "open_count": 9,
+ "open_count": 8,
  "fees_paid": 153.32,
  "fee_rate": 0.03,
  "lag": {
@@ -50,24 +50,6 @@
  },
  "bets": [
   {
-   "token": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "name": "LSB1",
-   "outcome": "Yes",
-   "title": "Will Daejeon Hana Citizen FC win on 2026-07-12?",
-   "their_price": 0.5101,
-   "my_price": 0.34,
-   "slippage_pct": -0.3335,
-   "shares": 295.07,
-   "cost": 100.32,
-   "fee": 1.99,
-   "opened": 1783856347,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
    "token": "71941893293834599184621753590882651435325558220761902727823613984547213968365",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -80,6 +62,26 @@
    "cost": 100.33,
    "fee": 0.12,
    "opened": 1783856315,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 4.06,
+   "settled": 1783856980,
+   "sold_shares": 104.51,
+   "sold_proceeds": 104.51
+  },
+  {
+   "token": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "Yes",
+   "title": "Will Daejeon Hana Citizen FC win on 2026-07-12?",
+   "their_price": 0.5101,
+   "my_price": 0.34,
+   "slippage_pct": -0.3335,
+   "shares": 295.07,
+   "cost": 100.32,
+   "fee": 1.99,
+   "opened": 1783856347,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -2748,5 +2750,5 @@
   }
  ],
  "missed_pnl": -345.02,
- "updated": 1783856727
+ "updated": 1783856980
 }
