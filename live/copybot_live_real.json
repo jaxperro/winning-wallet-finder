@@ -768,6 +768,21 @@
  ],
  "missed": [
   {
+   "ts": 1783884565,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "112964891228922007291616429059731268652545552701771186142443664268316983972488",
+   "cond": "0x12ffeb9fc7535c924fc64cdbf0be333db1950bd3a78aba459177b80b438bec03",
+   "title": "Will Cuiab\u00e1 EC win on 2026-07-12?",
+   "outcome": "Yes",
+   "price": 0.61,
+   "stake": 1.0,
+   "reason": "price moved 0.50\u21920.61",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783867991,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "105787237860830132190384323107166398542270087772323787551486824946137398140548",
@@ -1710,24 +1725,8 @@
    "settled": 1783742174,
    "name": "LSB1",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1783724102,
-   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
-   "token": "30171303100765004612243778406121391796571838604034412150376032542494004186310",
-   "cond": "0x432fe43ea6abc8f183fb35a7547be2491d2a36b900c416262188f44584f375bb",
-   "title": "Bitcoin Up or Down - July 10, 6:50PM-6:55PM ET",
-   "outcome": "Up",
-   "price": 0.99,
-   "stake": 1.0,
-   "reason": "price moved 0.63\u21920.99",
-   "status": "sold",
-   "pnl": -0.37,
-   "settled": 1783724155,
-   "name": "imwalkinghere",
-   "exit_price": 0.6333
   }
  ],
  "missed_pnl": 1131.81,
- "updated": 1783870828
+ "updated": 1783884566
 }
