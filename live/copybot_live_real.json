@@ -768,6 +768,21 @@
  ],
  "missed": [
   {
+   "ts": 1783867617,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "99894914207898514284631305777217402140704104471002518113888183892335214453642",
+   "cond": "0x7596ba50d124202d21f9b3695ad1e5611fd2f5db2cc7696d40cf2c198e806f73",
+   "title": "Dota 2: OG vs Virtus.pro - Game 2 Winner",
+   "outcome": "OG",
+   "price": 0.41,
+   "stake": 1.03,
+   "reason": "in-play hold expired unfilled (35s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783867167,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "4348221964264579870850466669975747411320261540985126046359486164505992457542",
@@ -1709,24 +1724,8 @@
    "settled": 1783719457,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1783712474,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "82295795004428430940433303735647458980029294814595402162619417282565717266755",
-   "cond": "0xd0a6bb658382e926ce702e8abb092f34ca7701ab6d383fc1f15e356da8c80ff2",
-   "title": "Exact Score: Spain 3 - 0 Belgium?",
-   "outcome": "No",
-   "price": 0.9375,
-   "stake": 4.5,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "won",
-   "pnl": 0.29,
-   "settled": 1783718322,
-   "name": "LSB1",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 102.83,
- "updated": 1783867167
+ "updated": 1783867618
 }
