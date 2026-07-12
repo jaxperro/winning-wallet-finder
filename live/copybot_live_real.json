@@ -768,6 +768,21 @@
  ],
  "missed": [
   {
+   "ts": 1783888308,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "107179792112987391529646299006880228718467140164269968140132399486412571398191",
+   "cond": "0x880d4d315634908ffac985de5cd442ec679beeb25f0166a77bece698f35463f6",
+   "title": "Will GPT-6 be released by August 14, 2026?",
+   "outcome": "No",
+   "price": 0.7899,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783884565,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "112964891228922007291616429059731268652545552701771186142443664268316983972488",
@@ -1709,24 +1724,8 @@
    "settled": 1783742299,
    "name": "LSB1",
    "exit_checked": true
-  },
-  {
-   "ts": 1783730662,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "45067024850792209345478857935402657293140220516974974516913686785034525226149",
-   "cond": "0x1a56a14c04e06ec08935c53cd4386ab2a2b617fd70518957183e3c9a28054dbc",
-   "title": "SC Recife vs. Botafogo FC: O/U 4.5",
-   "outcome": "Over",
-   "price": 0.588,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.69,
-   "settled": 1783742174,
-   "name": "LSB1",
-   "exit_price": 1.0
   }
  ],
  "missed_pnl": 1131.81,
- "updated": 1783884566
+ "updated": 1783888312
 }
