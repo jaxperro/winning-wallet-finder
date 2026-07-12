@@ -8779,7 +8779,7 @@
     }
   ],
   "feed_sig": "488c93716ba493de5a580d91c8446847",
-  "feed_pushed_at": 1783866030.2006338,
+  "feed_pushed_at": 1783866160.367828,
   "adjustments": [
     {
       "ts": 1783718232,
@@ -8787,26 +8787,7 @@
       "note": "2026-07-10 rebase to $22.28 equity baseline (user: retire caps, 4% paper-parity sizing; prior incident P&L stays in history)"
     }
   ],
-  "pending_orders": [
-    {
-      "order_id": "0xb09188d8ee10df4c997619791b5bee950cf2668403cb1469fcd3285b27adb9c9",
-      "bal0": 1.754384,
-      "token": "13522984739341787711630299374858298769520204179511086795487722642094533431850",
-      "side": "SELL",
-      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-      "title": "Dota 2: OG vs Virtus.pro - Game 1 Winner",
-      "outcome": "OG",
-      "event": "dota2-og-vp-2026-07-12",
-      "cond": "0x892ecd00466ee1787b8f773d3064758ae1be80d7e4c07cc1750df3dc42238a48",
-      "their_price": 0.001,
-      "their_ts": null,
-      "price": 0.001,
-      "is_add": false,
-      "stake": 0.0017543839999999999,
-      "ts": 1783866156.3011205,
-      "ttl_s": 600
-    }
-  ],
+  "pending_orders": [],
   "exit_retries": [],
   "exit_attempts": {
     "2744571775903589106980317653847400232271579861889013320024551414528092561305": 25,
