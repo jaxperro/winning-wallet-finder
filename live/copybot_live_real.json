@@ -1,18 +1,18 @@
 {
  "mode": "live",
  "bankroll": 22.28,
- "stake": 1.0,
+ "stake": 1.04,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 24.73,
- "cash": 13.19,
- "deployed": 7.48,
+ "hwm": 25.94,
+ "cash": 19.23,
+ "deployed": 6.71,
  "reserve": 0.0,
- "realized": -3.82,
+ "realized": 1.45,
  "adjustments": 2.2,
- "ledger_drift": 2.62,
- "open_count": 4,
- "fees_paid": 1.25,
+ "ledger_drift": 7.24,
+ "open_count": 3,
+ "fees_paid": 1.3,
  "fee_rate": 0.03,
  "lag": {
   "n": 29,
@@ -62,12 +62,12 @@
    "cost": 1.03,
    "fee": 0.02,
    "opened": 1783863050,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 0.72,
-   "sold_proceeds": 0.36
+   "status": "closed",
+   "exit_price": 0.6227,
+   "pnl": 0.73,
+   "settled": 1783863241,
+   "sold_shares": 9.24,
+   "sold_proceeds": 6.4
   },
   {
    "token": "45280196732223750989767984101465690442391116346771016128184193629867669221370",
@@ -727,6 +727,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1783863296,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "84502716136213781728963328899707683260350624645362486645725504535263198032073",
+   "cond": "0xa4807375ad750023e039c1a666413760e915ab367d2bfc57034bc5d631775d07",
+   "title": "Dota 2: 1win vs Team Yandex - Game 2 Winner",
+   "outcome": "1win",
+   "price": 0.47,
+   "stake": 1.04,
+   "reason": "price moved 0.38\u21920.47",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
   {
    "ts": 1783859594,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1669,24 +1684,8 @@
    "settled": 1783718138,
    "name": "LSB1",
    "exit_checked": true
-  },
-  {
-   "ts": 1783597988,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "9679320407472932109528091937661974039402650044145955274074635176957029935409",
-   "cond": "0x45bd5bbfdfea7124c07903b2b48804ae485555c5c2edb42c1c1446a0706f1ee9",
-   "title": "Will Micron Technology, Inc. (MU) hit (LOW) $810 Week of July 6 2026?",
-   "outcome": "No",
-   "price": 0.89,
-   "stake": 5.0,
-   "reason": "followed but not placed \u2014 silent exit at copy time (thin/no-ask book most likely; both silent paths instrumented 2026-07-09)",
-   "status": "won",
-   "pnl": 0.6,
-   "settled": 1783715630,
-   "name": "0xbadaf319",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 103.81,
- "updated": 1783863164
+ "updated": 1783863296
 }
