@@ -768,6 +768,21 @@
  ],
  "missed": [
   {
+   "ts": 1783889397,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "18802393565291712436899729429089924858104497792982518694284454990866908025798",
+   "cond": "0x9ea0030337e6416cfbd5e9a52ffb4c80575953b45a52bc513f2d7ecbe299d5f2",
+   "title": "Will the average monthly Ethereum gas price hit 25 Gwei before 2027?",
+   "outcome": "No",
+   "price": 0.009,
+   "stake": 1.0,
+   "reason": "price 0.009 outside [0.01,0.95]",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783888308,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "107179792112987391529646299006880228718467140164269968140132399486412571398191",
@@ -1708,24 +1723,8 @@
    "settled": 1783743418,
    "name": "LSB1",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1783727075,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "94261332494094465883021120894226351499139897211148377866980779595546383514545",
-   "cond": "0x73deedfe0a8d2167499fe6391f01cc871c8a182f7abc807933e260fe96d6aae1",
-   "title": "Will Botafogo FC win on 2026-07-10?",
-   "outcome": "Yes",
-   "price": 0.77,
-   "stake": 1.0,
-   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
-   "status": "lost",
-   "pnl": -1.01,
-   "settled": 1783742299,
-   "name": "LSB1",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 1131.81,
- "updated": 1783888312
+ "updated": 1783889397
 }
