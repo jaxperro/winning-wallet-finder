@@ -472,6 +472,21 @@
  ],
  "missed": [
   {
+   "ts": 1783799619,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "8791795956649331503015492828368165964550912947413307583654882923127899710261",
+   "cond": "0x2d1d3306f300dfc2907eec71fc981190bb010b65e5e182883230d077530cb6c0",
+   "title": "Denis Zakaria: 3+ shots",
+   "outcome": "No",
+   "price": 0.56,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "won",
+   "pnl": 0.77,
+   "settled": 1783829903,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783823519,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "30832186473485489334120104796032388930526660633476597146132134578867673440960",
@@ -695,21 +710,6 @@
    "settled": 1783808154,
    "name": "gkmgkldfmg",
    "exit_price": 0.999
-  },
-  {
-   "ts": 1783799619,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "8791795956649331503015492828368165964550912947413307583654882923127899710261",
-   "cond": "0x2d1d3306f300dfc2907eec71fc981190bb010b65e5e182883230d077530cb6c0",
-   "title": "Denis Zakaria: 3+ shots",
-   "outcome": "No",
-   "price": 0.56,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1783781335,
@@ -1431,6 +1431,6 @@
    "exit_price": 0.8115
   }
  ],
- "missed_pnl": 102.07,
- "updated": 1783828851
+ "missed_pnl": 102.84,
+ "updated": 1783829904
 }
