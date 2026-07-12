@@ -7,31 +7,31 @@
       "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
       "name": "LSB1",
       "class": "volume",
-      "floor": 266.32
+      "floor": 267.75
     },
     {
       "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
       "name": "imwalkinghere",
       "class": "volume",
-      "floor": 122.48
+      "floor": 122.12
     },
     {
       "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
       "name": "Kruto2027",
       "class": "volume",
-      "floor": 125.91
+      "floor": 125.61
     },
     {
       "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
       "name": "0xbadaf319",
       "class": "volume",
-      "floor": 44.91
+      "floor": 44.64
     },
     {
       "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
       "name": "gkmgkldfmg",
       "class": "volume",
-      "floor": 408.5
+      "floor": 457.26
     },
     {
       "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -43,7 +43,7 @@
       "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
       "name": "1kto1m",
       "class": "volume",
-      "floor": 327.43
+      "floor": 327.04
     }
   ],
   "follow": {
