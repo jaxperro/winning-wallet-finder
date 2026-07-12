@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 100.32,
+ "stake": 100.24,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2087.94,
- "deployed": 420.14,
+ "cash": 1985.63,
+ "deployed": 520.46,
  "reserve": 0.0,
- "realized": 1508.05,
+ "realized": 1506.06,
  "adjustments": 0.03,
- "ledger_drift": 0.01,
- "open_count": 8,
- "fees_paid": 151.33,
+ "ledger_drift": 0.0,
+ "open_count": 9,
+ "fees_paid": 153.32,
  "fee_rate": 0.03,
  "lag": {
-  "n": 92,
-  "n24": 22,
-  "avg_s": 31.3,
-  "avg_slip_pct": -0.0263,
+  "n": 93,
+  "n24": 21,
+  "avg_s": 31.1,
+  "avg_slip_pct": -0.0431,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "Yes",
+   "title": "Will Daejeon Hana Citizen FC win on 2026-07-12?",
+   "their_price": 0.5101,
+   "my_price": 0.34,
+   "slippage_pct": -0.3335,
+   "shares": 295.07,
+   "cost": 100.32,
+   "fee": 1.99,
+   "opened": 1783856347,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "71941893293834599184621753590882651435325558220761902727823613984547213968365",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1770,6 +1788,21 @@
  ],
  "missed": [
   {
+   "ts": 1783856662,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
+   "cond": "0xba7e1244bc3dabb6c38a128dcf7522104172e8b3a354aa711643c11064e56bf1",
+   "title": "Will Daejeon Hana Citizen FC win on 2026-07-12?",
+   "outcome": "Yes",
+   "price": 0.5222,
+   "stake": 100.32,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783854172,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "72657587692017665505599725656194205462581472368991422962137490050829927893951",
@@ -2712,24 +2745,8 @@
    "settled": 1783627396,
    "name": "gkmgkldfmg",
    "exit_price": 0.6146
-  },
-  {
-   "ts": 1783625835,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
-   "cond": "0x3c07935adc293c658ab20651f7fc6478d36e6bfdb375caab539fca9c81de03fd",
-   "title": "Dota 2: LGD Gaming vs 1win - Game 2 Winner",
-   "outcome": "LGD Gaming",
-   "price": 0.3851,
-   "stake": 79.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 30.85,
-   "settled": 1783626771,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.55
   }
  ],
  "missed_pnl": -345.02,
- "updated": 1783856318
+ "updated": 1783856727
 }
