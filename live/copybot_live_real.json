@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 24.73,
- "cash": 12.94,
- "deployed": 6.0,
+ "cash": 11.93,
+ "deployed": 7.0,
  "reserve": 0.0,
  "realized": -5.55,
  "adjustments": 2.2,
  "ledger_drift": -0.01,
- "open_count": 2,
- "fees_paid": 0.91,
+ "open_count": 3,
+ "fees_paid": 0.92,
  "fee_rate": 0.03,
  "lag": {
-  "n": 14,
-  "n24": 12,
-  "avg_s": 86.0,
-  "avg_slip_pct": 0.0127,
+  "n": 15,
+  "n24": 13,
+  "avg_s": 95.9,
+  "avg_slip_pct": 0.0155,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "14635675870982897917581198649476127837975251193150495566552970565909631535281",
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "name": "LSB1",
+   "outcome": "Yes",
+   "title": "Will Argentina win on 2026-07-11?",
+   "their_price": 0.7271,
+   "my_price": 0.7625,
+   "slippage_pct": 0.0487,
+   "shares": 1.31,
+   "cost": 1.0,
+   "fee": 0.01,
+   "opened": 1783818617,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "103463464943572749166715825902436097005749231905022823443969199466445385329466",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -431,6 +449,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1783818828,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "14635675870982897917581198649476127837975251193150495566552970565909631535281",
+   "cond": "0x95f726bbb693b945f94473908298b2389989550b08a7bfd90f97ce7ba62cb719",
+   "title": "Will Argentina win on 2026-07-11?",
+   "outcome": "Yes",
+   "price": 0.727,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
   {
    "ts": 1783815207,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1372,24 +1405,8 @@
    "settled": 1783690677,
    "name": "gkmgkldfmg",
    "exit_price": 0.75
-  },
-  {
-   "ts": 1783690339,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "84864321844564005123638956205037810292837868807558456388220877376462415276538",
-   "cond": "0x8545a030f00ef7748aa1c00481a9f01ec4b73550aef97b564a3f5a07b31f8f9d",
-   "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
-   "outcome": "PlayTime",
-   "price": 0.47,
-   "stake": 5.0,
-   "reason": "order rejected: exception: not enough balance / allowance: the balance is no",
-   "status": "sold",
-   "pnl": 0.85,
-   "settled": 1783690676,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.5648
   }
  ],
  "missed_pnl": 102.29,
- "updated": 1783815402
+ "updated": 1783818834
 }
