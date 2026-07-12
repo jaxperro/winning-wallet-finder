@@ -5,14 +5,14 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 24.73,
- "cash": 12.75,
- "deployed": 8.77,
+ "cash": 14.61,
+ "deployed": 7.73,
  "reserve": 0.0,
- "realized": -2.97,
+ "realized": -2.15,
  "adjustments": 2.2,
  "ledger_drift": 2.6,
- "open_count": 5,
- "fees_paid": 1.08,
+ "open_count": 4,
+ "fees_paid": 1.09,
  "fee_rate": 0.03,
  "lag": {
   "n": 23,
@@ -50,6 +50,26 @@
  },
  "bets": [
   {
+   "token": "89628205161429183663335882524534177373428689595495022481997839397142363974023",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Bilibili Gaming",
+   "title": "LoL: Bilibili Gaming vs Hanwha Life Esports - Game 3 Winner",
+   "their_price": 0.5,
+   "my_price": 0.53,
+   "slippage_pct": 0.06,
+   "shares": 1.96,
+   "cost": 1.04,
+   "fee": 0.01,
+   "opened": 1783848286,
+   "status": "closed",
+   "exit_price": 0.9486,
+   "pnl": 0.8,
+   "settled": 1783850378,
+   "sold_shares": 1.96,
+   "sold_proceeds": 1.86
+  },
+  {
    "token": "104613171158418884854896736058208721759560827691797924531445045849197085819243",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -82,24 +102,6 @@
    "cost": 1.02,
    "fee": 0.01,
    "opened": 1783848697,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
-   "token": "89628205161429183663335882524534177373428689595495022481997839397142363974023",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Bilibili Gaming",
-   "title": "LoL: Bilibili Gaming vs Hanwha Life Esports - Game 3 Winner",
-   "their_price": 0.5,
-   "my_price": 0.53,
-   "slippage_pct": 0.06,
-   "shares": 1.96,
-   "cost": 1.04,
-   "fee": 0.01,
-   "opened": 1783848286,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -1565,5 +1567,5 @@
   }
  ],
  "missed_pnl": 102.85,
- "updated": 1783849689
+ "updated": 1783850378
 }
