@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 92.71,
+ "stake": 92.66,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1890.7,
- "deployed": 427.04,
+ "cash": 1796.85,
+ "deployed": 519.75,
  "reserve": 0.0,
- "realized": 1317.7,
+ "realized": 1316.56,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 8,
- "fees_paid": 129.3,
+ "open_count": 9,
+ "fees_paid": 130.44,
  "fee_rate": 0.03,
  "lag": {
-  "n": 80,
-  "n24": 17,
-  "avg_s": 63.1,
+  "n": 81,
+  "n24": 18,
+  "avg_s": 59.7,
   "avg_slip_pct": -0.0422,
   "window_h": 24
  },
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "75547676899565417061748996551784035227286947758945008419210215158883005757610",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "King Green",
+   "title": "UFC 329: King Green vs. Terrance McKinney (Lightweight, Main Card)",
+   "their_price": 0.6152,
+   "my_price": 0.59,
+   "slippage_pct": -0.0409,
+   "shares": 157.13,
+   "cost": 92.71,
+   "fee": 1.14,
+   "opened": 1783819873,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "14635675870982897917581198649476127837975251193150495566552970565909631535281",
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -2489,5 +2507,5 @@
   }
  ],
  "missed_pnl": -325.7,
- "updated": 1783819733
+ "updated": 1783819875
 }
