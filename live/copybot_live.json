@@ -1890,6 +1890,21 @@
  ],
  "missed": [
   {
+   "ts": 1783867167,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "4348221964264579870850466669975747411320261540985126046359486164505992457542",
+   "cond": "0x7596ba50d124202d21f9b3695ad1e5611fd2f5db2cc7696d40cf2c198e806f73",
+   "title": "Dota 2: OG vs Virtus.pro - Game 2 Winner",
+   "outcome": "Virtus.pro",
+   "price": 0.63,
+   "stake": 90.43,
+   "reason": "price moved 0.58\u21920.63",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783856662,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
@@ -2831,24 +2846,8 @@
    "settled": 1783632973,
    "name": "imwalkinghere",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1783627634,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
-   "cond": "0x3c07935adc293c658ab20651f7fc6478d36e6bfdb375caab539fca9c81de03fd",
-   "title": "Dota 2: LGD Gaming vs 1win - Game 2 Winner",
-   "outcome": "LGD Gaming",
-   "price": 0.51,
-   "stake": 81.69,
-   "reason": "price moved 0.47\u21920.51",
-   "status": "sold",
-   "pnl": 3.72,
-   "settled": 1783628018,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.5481
   }
  ],
  "missed_pnl": -441.07,
- "updated": 1783867043
+ "updated": 1783867167
 }
