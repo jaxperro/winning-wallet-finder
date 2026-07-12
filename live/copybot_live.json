@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 91.41,
+ "stake": 91.33,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2063.91,
- "deployed": 221.22,
+ "cash": 1970.63,
+ "deployed": 312.63,
  "reserve": 0.0,
- "realized": 1285.11,
+ "realized": 1283.23,
  "adjustments": 0.03,
  "ledger_drift": 0.0,
- "open_count": 8,
- "fees_paid": 169.0,
+ "open_count": 9,
+ "fees_paid": 170.88,
  "fee_rate": 0.03,
  "lag": {
-  "n": 100,
-  "n24": 21,
-  "avg_s": 39.9,
-  "avg_slip_pct": -0.0468,
+  "n": 101,
+  "n24": 22,
+  "avg_s": 38.3,
+  "avg_slip_pct": -0.0731,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "18802393565291712436899729429089924858104497792982518694284454990866908025798",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the average monthly Ethereum gas price hit 25 Gwei before 2027?",
+   "their_price": 0.842,
+   "my_price": 0.315,
+   "slippage_pct": -0.6259,
+   "shares": 290.18,
+   "cost": 91.41,
+   "fee": 1.88,
+   "opened": 1783897001,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "50206051919987143398301686023277350657729433627529907465714791269369601841506",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2887,5 +2905,5 @@
   }
  ],
  "missed_pnl": 89892.11,
- "updated": 1783895394
+ "updated": 1783897004
 }
