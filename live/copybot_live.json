@@ -1510,6 +1510,21 @@
  ],
  "missed": [
   {
+   "ts": 1783815207,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "20984016543941988843477189471436635378224731224764178152393193587982775548296",
+   "cond": "0x3c5895028ee6c15e4da7b73884819bc86897c08a890cf76712b09ac37de5d82d",
+   "title": "UFC 329: Gable Steveson vs. Elisha Ellison (Heavyweight, Prelims)",
+   "outcome": "Gable Steveson",
+   "price": 0.99,
+   "stake": 92.74,
+   "reason": "price moved 0.92\u21920.99",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783806761,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "103463464943572749166715825902436097005749231905022823443969199466445385329466",
@@ -1522,7 +1537,8 @@
    "status": "lost",
    "pnl": -96.97,
    "settled": 1783814995,
-   "name": "LSB1"
+   "name": "LSB1",
+   "exit_checked": true
   },
   {
    "ts": 1783811464,
@@ -2453,25 +2469,8 @@
    "name": "gkmgkldfmg",
    "exit_checked": true,
    "exit_price": 0.1183
-  },
-  {
-   "ts": 1783590977,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "20414976475690894265425364948116786155162480053919701442335217459387124913382",
-   "cond": "0x9feec0e8301d26be7db36412dfd040769f7fbd3efcc892309863c6062adb3cf7",
-   "title": "LoL: Bilibili Gaming vs Hanwha Life Esports - Game 3 Winner",
-   "outcome": "Hanwha Life Esports",
-   "price": 0.62,
-   "stake": 41.67,
-   "reason": "followed but not placed \u2014 silent exit at copy time (thin/no-ask book most likely; both silent paths instrumented 2026-07-09)",
-   "status": "sold",
-   "pnl": 21.61,
-   "settled": 1783600276,
-   "name": "AIcAIc",
-   "exit_checked": true,
-   "exit_price": 0.95
   }
  ],
  "missed_pnl": -326.51,
- "updated": 1783814995
+ "updated": 1783815246
 }
