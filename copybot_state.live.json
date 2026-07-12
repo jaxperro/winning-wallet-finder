@@ -8352,14 +8352,15 @@
       "price": 0.5,
       "stake": 1.0,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "gkmgkldfmg"
+      "status": "sold",
+      "pnl": 0.98,
+      "settled": 1783850631,
+      "name": "gkmgkldfmg",
+      "exit_price": 0.999
     }
   ],
-  "feed_sig": "ce527c9aad7efde1908f81a0d722b2ca",
-  "feed_pushed_at": 1783850316.5697157,
+  "feed_sig": "69e0da2fb84cf7d24ea46a69965575fc",
+  "feed_pushed_at": 1783850566.8474114,
   "adjustments": [
     {
       "ts": 1783718232,
