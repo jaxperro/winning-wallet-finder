@@ -7636,8 +7636,8 @@
     }
   },
   "hwm": 2548.9580606723184,
-  "feed_sig": "e71c58d70e83302342b8fdca380b647a",
-  "feed_pushed_at": 1783853354.2532506,
+  "feed_sig": "8818114410aeefdb2bf355b3851ba78c",
+  "feed_pushed_at": 1783853474.8860028,
   "missed": [
     {
       "ts": 1783590977,
@@ -8730,6 +8730,21 @@
       "settled": 1783850428,
       "name": "gkmgkldfmg",
       "exit_price": 0.999
+    },
+    {
+      "ts": 1783853541,
+      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+      "token": "14298727521347397971969992444073213603189753350952512402670010770159778335698",
+      "cond": "0x8a89800369f7126ae60760e942afa581f8b248bf197563f98394d3835bb9dbe3",
+      "title": "Dota 2: PARIVISION vs Team Spirit - Game 2 Winner",
+      "outcome": "PARIVISION",
+      "price": 0.4925,
+      "stake": 100.33,
+      "reason": "not copied in the detection window (reconciled)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "gkmgkldfmg"
     }
   ],
   "no_miss_toks": [

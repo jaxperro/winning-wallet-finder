@@ -1732,6 +1732,21 @@
  ],
  "missed": [
   {
+   "ts": 1783853541,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "14298727521347397971969992444073213603189753350952512402670010770159778335698",
+   "cond": "0x8a89800369f7126ae60760e942afa581f8b248bf197563f98394d3835bb9dbe3",
+   "title": "Dota 2: PARIVISION vs Team Spirit - Game 2 Winner",
+   "outcome": "PARIVISION",
+   "price": 0.4925,
+   "stake": 100.33,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783848444,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "89628205161429183663335882524534177373428689595495022481997839397142363974023",
@@ -2674,24 +2689,8 @@
    "settled": 1783620639,
    "exit_price": 0.3101,
    "name": "gkmgkldfmg"
-  },
-  {
-   "ts": 1783604149,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "67641966972047957873936737096988118191995511744453931882847190188392441958087",
-   "cond": "0xecde241a4741d42286e5395049fceaf619514722fba5924637cc8207246b7eb8",
-   "title": "SPY (SPY) Up or Down on July 9?",
-   "outcome": "Up",
-   "price": 0.71,
-   "stake": 44.73,
-   "reason": "price moved 0.59\u21920.71",
-   "status": "sold",
-   "pnl": 1.14,
-   "settled": 1783620288,
-   "name": "1kto1m",
-   "exit_price": 0.74
   }
  ],
  "missed_pnl": -340.53,
- "updated": 1783853415
+ "updated": 1783853543
 }
