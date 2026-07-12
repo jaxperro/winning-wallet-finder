@@ -484,7 +484,8 @@
    "status": "won",
    "pnl": 0.77,
    "settled": 1783829903,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1783823519,
@@ -1432,5 +1433,5 @@
   }
  ],
  "missed_pnl": 102.84,
- "updated": 1783829904
+ "updated": 1783830094
 }
