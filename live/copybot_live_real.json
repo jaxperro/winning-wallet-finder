@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 24.73,
- "cash": 16.9,
+ "cash": 16.74,
  "deployed": 5.67,
  "reserve": 0.0,
- "realized": -1.91,
+ "realized": -2.07,
  "adjustments": 2.2,
  "ledger_drift": 2.58,
  "open_count": 2,
- "fees_paid": 0.99,
+ "fees_paid": 1.03,
  "fee_rate": 0.03,
  "lag": {
-  "n": 18,
-  "n24": 15,
-  "avg_s": 90.1,
-  "avg_slip_pct": 0.0053,
+  "n": 19,
+  "n24": 16,
+  "avg_s": 84.6,
+  "avg_slip_pct": 0.0039,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "58177852542026635694424411749702887961596240830711524679308970260940138352630",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Up",
+   "title": "Bitcoin Up or Down - July 12, 5:00AM-5:15AM ET",
+   "their_price": 0.4066,
+   "my_price": 0.4,
+   "slippage_pct": -0.0163,
+   "shares": 2.5,
+   "cost": 1.0,
+   "fee": 0.02,
+   "opened": 1783847089,
+   "status": "closed",
+   "exit_price": 0.3432,
+   "pnl": -0.16,
+   "settled": 1783847162,
+   "sold_shares": 2.5,
+   "sold_proceeds": 0.86
+  },
   {
    "token": "37098243537063616538853806564974418300652058034370047802005035892401938992764",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -511,6 +531,22 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1783847109,
+   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
+   "token": "39914244553987465540792566278348498734923249672615251266280042181105318419717",
+   "cond": "0x248fe1a9b246808baabfb9bf452d3d57f314050eb5776a9c53a5b1c027dd41fc",
+   "title": "Bitcoin Up or Down - July 12, 5:00AM-5:05AM ET",
+   "outcome": "Down",
+   "price": 0.99,
+   "stake": 1.0,
+   "reason": "price moved 0.81\u21920.99",
+   "status": "sold",
+   "pnl": 0.01,
+   "settled": 1783847161,
+   "name": "imwalkinghere",
+   "exit_price": 1.0
+  },
   {
    "ts": 1783799619,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1454,24 +1490,8 @@
    "settled": 1783700566,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1783694603,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "16341441115314407349877008586386599112394401117565529613770834118938995329927",
-   "cond": "0xcbb96e9ee02c2a7f26c4ce6aed642958d44e4e6491ebec087027de301ad20290",
-   "title": "Will the price of Ethereum be above $1,800 on July 10?",
-   "outcome": "No",
-   "price": 0.773,
-   "stake": 5.0,
-   "reason": "order rejected: exception: not enough balance / allowance: the balance is no",
-   "status": "sold",
-   "pnl": 0.19,
-   "settled": 1783700285,
-   "name": "0xbadaf319",
-   "exit_price": 0.8115
   }
  ],
- "missed_pnl": 102.84,
- "updated": 1783845235
+ "missed_pnl": 102.85,
+ "updated": 1783847162
 }
