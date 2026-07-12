@@ -432,6 +432,22 @@
  ],
  "missed": [
   {
+   "ts": 1783806570,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "108451612909496335433925708933377313229531944715204827566329790137714124934964",
+   "cond": "0x3c5aeecefc413cf0c049d13327ad40456fd925fd7b5e1364e31239980154869d",
+   "title": "Exact Score: Norway 1 - 0 England?",
+   "outcome": "No",
+   "price": 0.94,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 0.06,
+   "settled": 1783814706,
+   "name": "LSB1",
+   "exit_checked": true
+  },
+  {
    "ts": 1783811607,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "85590802024993543661537425965264345251257796759459810241384876806751805341892",
@@ -470,21 +486,6 @@
    "title": "Exact Score: Norway 1 - 1 England?",
    "outcome": "No",
    "price": 0.88,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
-  },
-  {
-   "ts": 1783806570,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "108451612909496335433925708933377313229531944715204827566329790137714124934964",
-   "cond": "0x3c5aeecefc413cf0c049d13327ad40456fd925fd7b5e1364e31239980154869d",
-   "title": "Exact Score: Norway 1 - 0 England?",
-   "outcome": "No",
-   "price": 0.94,
    "stake": 1.0,
    "reason": "not copied in the detection window (reconciled)",
    "status": "open",
@@ -1386,6 +1387,6 @@
    "exit_price": 0.1809
   }
  ],
- "missed_pnl": 104.04,
- "updated": 1783814143
+ "missed_pnl": 104.1,
+ "updated": 1783814775
 }
