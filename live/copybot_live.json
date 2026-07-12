@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 100.33,
+ "stake": 100.28,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2188.54,
- "deployed": 319.81,
+ "cash": 2086.94,
+ "deployed": 420.15,
  "reserve": 0.0,
- "realized": 1508.32,
+ "realized": 1507.06,
  "adjustments": 0.03,
- "ledger_drift": 0.01,
- "open_count": 7,
- "fees_paid": 148.69,
+ "ledger_drift": 0.0,
+ "open_count": 8,
+ "fees_paid": 149.96,
  "fee_rate": 0.03,
  "lag": {
-  "n": 90,
-  "n24": 23,
-  "avg_s": 39.9,
-  "avg_slip_pct": -0.0357,
+  "n": 91,
+  "n24": 24,
+  "avg_s": 38.4,
+  "avg_slip_pct": -0.0321,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "14298727521347397971969992444073213603189753350952512402670010770159778335698",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "PARIVISION",
+   "title": "Dota 2: PARIVISION vs Team Spirit - Game 2 Winner",
+   "their_price": 0.5522,
+   "my_price": 0.58,
+   "slippage_pct": 0.0503,
+   "shares": 172.99,
+   "cost": 100.33,
+   "fee": 1.26,
+   "opened": 1783853696,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "72657587692017665505599725656194205462581472368991422962137490050829927893951",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2692,5 +2710,5 @@
   }
  ],
  "missed_pnl": -340.53,
- "updated": 1783853543
+ "updated": 1783853700
 }
