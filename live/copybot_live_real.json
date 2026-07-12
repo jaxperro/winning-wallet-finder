@@ -450,6 +450,21 @@
  ],
  "missed": [
   {
+   "ts": 1783819878,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "75547676899565417061748996551784035227286947758945008419210215158883005757610",
+   "cond": "0x3c8f0d7032eab68cfbfcd50bd36f4d2749851d8a13df42f15740e9ac3381fe4c",
+   "title": "UFC 329: King Green vs. Terrance McKinney (Lightweight, Main Card)",
+   "outcome": "King Green",
+   "price": 0.99,
+   "stake": 1.0,
+   "reason": "price moved 0.62\u21920.99",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783818828,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "14635675870982897917581198649476127837975251193150495566552970565909631535281",
@@ -1389,24 +1404,8 @@
    "settled": 1783690991,
    "name": "gkmgkldfmg",
    "exit_price": 0.5648
-  },
-  {
-   "ts": 1783690583,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "49886282303318964434544606851164664333698127985256361511182784657423645654000",
-   "cond": "0x8545a030f00ef7748aa1c00481a9f01ec4b73550aef97b564a3f5a07b31f8f9d",
-   "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
-   "outcome": "Aurora",
-   "price": 0.42,
-   "stake": 5.0,
-   "reason": "order rejected: exception: not enough balance / allowance: the balance is no",
-   "status": "sold",
-   "pnl": 3.77,
-   "settled": 1783690677,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.75
   }
  ],
  "missed_pnl": 102.29,
- "updated": 1783818834
+ "updated": 1783819878
 }
