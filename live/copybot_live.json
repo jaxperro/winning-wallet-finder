@@ -1592,6 +1592,21 @@
  ],
  "missed": [
   {
+   "ts": 1783824628,
+   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
+   "token": "86486366666900934251692510513012809256323129155701648230490642360929725335546",
+   "cond": "0x74e592f35b0751cf0bf4bc7e04ec5e4722c3bcee1332140faa86307c70616763",
+   "title": "Bitcoin Up or Down - July 11, 10:40PM-10:45PM ET",
+   "outcome": "Down",
+   "price": 0.5675,
+   "stake": 96.48,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "imwalkinghere"
+  },
+  {
    "ts": 1783823370,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "98130629394630322983110605714141489884435629664812927809724837028685741349685",
@@ -2530,25 +2545,8 @@
    "settled": 1783620288,
    "name": "gkmgkldfmg",
    "exit_price": 0.6241
-  },
-  {
-   "ts": 1783611728,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "65984611303909407052169607993537741220891602509766446043631462077119911368849",
-   "cond": "0x868d295d9e0d6f777b7f4e6abb45f5d02e2f0281bb12b857f6375f7ecc8c91e5",
-   "title": "Dota 2: MOUZ vs Team Nemesis - Game 1 Winner",
-   "outcome": "MOUZ",
-   "price": 0.62,
-   "stake": 45.4,
-   "reason": "price moved 0.42\u21920.62",
-   "status": "sold",
-   "pnl": -4.89,
-   "settled": 1783620044,
-   "name": "gkmgkldfmg",
-   "exit_checked": true,
-   "exit_price": 0.5677
   }
  ],
  "missed_pnl": -355.01,
- "updated": 1783824243
+ "updated": 1783824631
 }
