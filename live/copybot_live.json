@@ -1652,6 +1652,21 @@
  ],
  "missed": [
   {
+   "ts": 1783847109,
+   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
+   "token": "39914244553987465540792566278348498734923249672615251266280042181105318419717",
+   "cond": "0x248fe1a9b246808baabfb9bf452d3d57f314050eb5776a9c53a5b1c027dd41fc",
+   "title": "Bitcoin Up or Down - July 12, 5:00AM-5:05AM ET",
+   "outcome": "Down",
+   "price": 0.99,
+   "stake": 100.82,
+   "reason": "price moved 0.81\u21920.99",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "imwalkinghere"
+  },
+  {
    "ts": 1783823370,
    "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
    "token": "30832186473485489334120104796032388930526660633476597146132134578867673440960",
@@ -2594,24 +2609,8 @@
    "settled": 1783620288,
    "name": "gkmgkldfmg",
    "exit_price": 0.6162
-  },
-  {
-   "ts": 1783613629,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "50563396050108174063968999790600921955430682357744232042472551252897944666519",
-   "cond": "0xaddacc919dbdf646885587fff2dd2967bc88b0c87f00ae3f014f8038597696f2",
-   "title": "Dota 2: Vici Gaming vs Team Spirit - Game 1 Winner",
-   "outcome": "Team Spirit",
-   "price": 0.64,
-   "stake": 76.75,
-   "reason": "price moved 0.42\u21920.64",
-   "status": "sold",
-   "pnl": -3.58,
-   "settled": 1783620288,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.6241
   }
  ],
  "missed_pnl": -419.19,
- "updated": 1783847091
+ "updated": 1783847109
 }
