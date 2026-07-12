@@ -7361,8 +7361,8 @@
     }
   },
   "hwm": 2548.9580606723184,
-  "feed_sig": "9edbcc29152ec24db043382cbea8248f",
-  "feed_pushed_at": 1783824757.107629,
+  "feed_sig": "66f7757f067a2a070e2fe6f4e9845acf",
+  "feed_pushed_at": 1783824881.2316144,
   "missed": [
     {
       "ts": 1783590977,
@@ -8417,7 +8417,8 @@
       "status": "lost",
       "pnl": -97.73,
       "settled": 1783824818,
-      "name": "imwalkinghere"
+      "name": "imwalkinghere",
+      "exit_checked": true
     }
   ],
   "no_miss_toks": [
