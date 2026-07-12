@@ -452,6 +452,22 @@
  ],
  "missed": [
   {
+   "ts": 1783821956,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "60829743230974931197831424477251722921940032428553255171871752877191212996952",
+   "cond": "0x78fdaa290adbb2780e5f3b391b6cb5009d7c849a1a774bf1966115b75f8d4554",
+   "title": "UFC 329: Brandon Royval vs. Lone'er Kavanagh (Flyweight, Main Card)",
+   "outcome": "Brandon Royval",
+   "price": 0.54,
+   "stake": 1.0,
+   "reason": "in-play hold expired unfilled (8s)",
+   "status": "sold",
+   "pnl": 0.84,
+   "settled": 1783822587,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.999
+  },
+  {
    "ts": 1783821747,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "80695764145597442773109303072961778341865154823453604006436935638165430171016",
@@ -466,21 +482,6 @@
    "settled": 1783821961,
    "name": "gkmgkldfmg",
    "exit_price": 0.6264
-  },
-  {
-   "ts": 1783821956,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "60829743230974931197831424477251722921940032428553255171871752877191212996952",
-   "cond": "0x78fdaa290adbb2780e5f3b391b6cb5009d7c849a1a774bf1966115b75f8d4554",
-   "title": "UFC 329: Brandon Royval vs. Lone'er Kavanagh (Flyweight, Main Card)",
-   "outcome": "Brandon Royval",
-   "price": 0.54,
-   "stake": 1.0,
-   "reason": "in-play hold expired unfilled (8s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1783819878,
@@ -1408,6 +1409,6 @@
    "exit_price": 0.1266
   }
  ],
- "missed_pnl": 101.99,
- "updated": 1783821962
+ "missed_pnl": 102.83,
+ "updated": 1783822587
 }
