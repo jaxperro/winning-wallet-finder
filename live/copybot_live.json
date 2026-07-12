@@ -1899,10 +1899,11 @@
    "price": 0.001,
    "stake": 90.43,
    "reason": "price 0.001 outside [0.01,0.99]",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
+   "status": "sold",
+   "pnl": 90336.86,
+   "settled": 1783869474,
+   "name": "0xbadaf319",
+   "exit_price": 1.0
   },
   {
    "ts": 1783867167,
@@ -2849,6 +2850,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": -444.75,
- "updated": 1783867991
+ "missed_pnl": 89892.11,
+ "updated": 1783869475
 }

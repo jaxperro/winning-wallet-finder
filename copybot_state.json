@@ -7888,7 +7888,7 @@
   },
   "hwm": 2548.9580606723184,
   "feed_sig": "03085270bc0b11b9f727b478122b8917",
-  "feed_pushed_at": 1783867978.2129998,
+  "feed_pushed_at": 1783869348.7125316,
   "missed": [
     {
       "ts": 1783590977,
@@ -9072,10 +9072,11 @@
       "price": 0.001,
       "stake": 90.43,
       "reason": "price 0.001 outside [0.01,0.99]",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "0xbadaf319"
+      "status": "sold",
+      "pnl": 90336.86,
+      "settled": 1783869474,
+      "name": "0xbadaf319",
+      "exit_price": 1.0
     }
   ],
   "no_miss_toks": [
