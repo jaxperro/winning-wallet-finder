@@ -568,6 +568,21 @@
  ],
  "missed": [
   {
+   "ts": 1783848284,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "98686933205526849260956926098370864586052275369032476650193546947433457446794",
+   "cond": "0x5feac6140f642f8c3cc84eec974a63bdc99f3c02e9deeb49cdc654c8a7b21209",
+   "title": "Dota 2: PARIVISION vs Team Spirit - Game 1 Winner",
+   "outcome": "PARIVISION",
+   "price": 0.65,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783847109,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "39914244553987465540792566278348498734923249672615251266280042181105318419717",
@@ -1510,24 +1525,8 @@
    "settled": 1783700916,
    "name": "gkmgkldfmg",
    "exit_price": 0.0679
-  },
-  {
-   "ts": 1783699162,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "72883819885036007086315831308179079344710204279662195005519707654209484712749",
-   "cond": "0xaae9427658bf91ef500859fca7100569bdf4ca1fd350a791f8c38ad45617e74e",
-   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on July 10?",
-   "outcome": "No",
-   "price": 0.55,
-   "stake": 4.05,
-   "reason": "capped to $-10.00 < min order $1.00 (caps)",
-   "status": "won",
-   "pnl": 3.26,
-   "settled": 1783700566,
-   "name": "0xbadaf319",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 102.85,
- "updated": 1783847848
+ "updated": 1783848284
 }
