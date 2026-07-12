@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 100.82,
+ "stake": 100.85,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2200.49,
- "deployed": 319.92,
+ "cash": 2302.1,
+ "deployed": 219.03,
  "reserve": 0.0,
- "realized": 1520.37,
+ "realized": 1521.1,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 7,
- "fees_paid": 138.8,
+ "open_count": 6,
+ "fees_paid": 140.66,
  "fee_rate": 0.03,
  "lag": {
   "n": 86,
@@ -62,10 +62,12 @@
    "cost": 100.89,
    "fee": 1.85,
    "opened": 1783847089,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "closed",
+   "exit_price": 0.3928,
+   "pnl": -1.12,
+   "settled": 1783847300,
+   "sold_shares": 258.69,
+   "sold_proceeds": 101.61
   },
   {
    "token": "37098243537063616538853806564974418300652058034370047802005035892401938992764",
@@ -1661,10 +1663,11 @@
    "price": 0.99,
    "stake": 100.82,
    "reason": "price moved 0.81\u21920.99",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "imwalkinghere"
+   "status": "sold",
+   "pnl": 0.99,
+   "settled": 1783847299,
+   "name": "imwalkinghere",
+   "exit_price": 1.0
   },
   {
    "ts": 1783823370,
@@ -2611,6 +2614,6 @@
    "exit_price": 0.6162
   }
  ],
- "missed_pnl": -419.19,
- "updated": 1783847109
+ "missed_pnl": -418.2,
+ "updated": 1783847300
 }
