@@ -670,6 +670,36 @@
  ],
  "missed": [
   {
+   "ts": 1783856423,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
+   "cond": "0xba7e1244bc3dabb6c38a128dcf7522104172e8b3a354aa711643c11064e56bf1",
+   "title": "Will Daejeon Hana Citizen FC win on 2026-07-12?",
+   "outcome": "Yes",
+   "price": 0.51,
+   "stake": 1.0,
+   "reason": "in-play hold expired unfilled (60s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "LSB1"
+  },
+  {
+   "ts": 1783856323,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "71941893293834599184621753590882651435325558220761902727823613984547213968365",
+   "cond": "0xae59ba73bbfb0e2630cc950c513afa1e536f11a8d52b467282926f91dec3397c",
+   "title": "Dota 2: MOUZ vs Vici Gaming - Game 2 Winner",
+   "outcome": "Vici Gaming",
+   "price": 0.96,
+   "stake": 1.0,
+   "reason": "price 0.960 outside [0.01,0.95]",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783853611,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "56756661591231024232293612307766574619510235695228033895614049910615833094309",
@@ -1595,40 +1625,8 @@
    "settled": 1783710916,
    "name": "gkmgkldfmg",
    "exit_price": 0.6065
-  },
-  {
-   "ts": 1783710277,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "69332829857352543341630758571211075272974294373246290749231665438041402756556",
-   "cond": "0x3207dfbac2bd6155ce62d8fc9ef44154e679f4833de116bf823a02f9c7fdd425",
-   "title": "Dota 2: 1win vs OG - Game 2 Winner",
-   "outcome": "OG",
-   "price": 0.43,
-   "stake": 4.5,
-   "reason": "capped to $-10.00 < min order $1.00 (caps)",
-   "status": "sold",
-   "pnl": 1.7,
-   "settled": 1783710600,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.6065
-  },
-  {
-   "ts": 1783709709,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "69332829857352543341630758571211075272974294373246290749231665438041402756556",
-   "cond": "0x3207dfbac2bd6155ce62d8fc9ef44154e679f4833de116bf823a02f9c7fdd425",
-   "title": "Dota 2: 1win vs OG - Game 2 Winner",
-   "outcome": "OG",
-   "price": 0.24,
-   "stake": 4.5,
-   "reason": "capped to $-10.00 < min order $1.00 (caps)",
-   "status": "sold",
-   "pnl": 0.66,
-   "settled": 1783709974,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.2867
   }
  ],
  "missed_pnl": 104.95,
- "updated": 1783856037
+ "updated": 1783856425
 }
