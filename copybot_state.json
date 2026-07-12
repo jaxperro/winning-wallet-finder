@@ -7362,7 +7362,7 @@
   },
   "hwm": 2548.9580606723184,
   "feed_sig": "f45fff72711e245d6ad8271d60fa5053",
-  "feed_pushed_at": 1783828761.287187,
+  "feed_pushed_at": 1783828884.0592897,
   "missed": [
     {
       "ts": 1783590977,
@@ -8353,10 +8353,12 @@
       "price": 0.727,
       "stake": 92.74,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "lost",
-      "pnl": -93.5,
+      "status": "sold",
+      "pnl": -44.68,
       "settled": 1783828832,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true,
+      "exit_price": 0.3899
     },
     {
       "ts": 1783821747,
@@ -8387,7 +8389,8 @@
       "status": "won",
       "pnl": 61.27,
       "settled": 1783828832,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783823370,
@@ -8399,10 +8402,11 @@
       "price": 0.8499,
       "stake": 98.53,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "LSB1"
+      "status": "sold",
+      "pnl": 16.96,
+      "settled": 1783829011,
+      "name": "LSB1",
+      "exit_price": 1.0
     },
     {
       "ts": 1783824628,
