@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 19.23,
- "deployed": 6.71,
+ "cash": 18.16,
+ "deployed": 7.76,
  "reserve": 0.0,
- "realized": 1.45,
+ "realized": 1.44,
  "adjustments": 2.2,
  "ledger_drift": 7.24,
- "open_count": 3,
- "fees_paid": 1.3,
+ "open_count": 4,
+ "fees_paid": 1.32,
  "fee_rate": 0.03,
  "lag": {
-  "n": 29,
-  "n24": 19,
-  "avg_s": 74.6,
-  "avg_slip_pct": 0.0132,
+  "n": 30,
+  "n24": 20,
+  "avg_s": 71.2,
+  "avg_slip_pct": 0.0135,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "99894914207898514284631305777217402140704104471002518113888183892335214453642",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "OG",
+   "title": "Dota 2: OG vs Virtus.pro - Game 2 Winner",
+   "their_price": 0.52,
+   "my_price": 0.53,
+   "slippage_pct": 0.0192,
+   "shares": 1.98,
+   "cost": 1.05,
+   "fee": 0.01,
+   "opened": 1783864399,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "81729627908647113838238535400683468580916119670288864624921465071586268502282",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1688,5 +1706,5 @@
   }
  ],
  "missed_pnl": 103.87,
- "updated": 1783863613
+ "updated": 1783864405
 }
