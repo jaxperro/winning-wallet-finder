@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 100.85,
+ "stake": 100.78,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2302.1,
- "deployed": 219.03,
+ "cash": 2199.74,
+ "deployed": 319.87,
  "reserve": 0.0,
- "realized": 1521.1,
+ "realized": 1519.59,
  "adjustments": 0.03,
  "ledger_drift": 0.01,
- "open_count": 6,
- "fees_paid": 140.66,
+ "open_count": 7,
+ "fees_paid": 142.17,
  "fee_rate": 0.03,
  "lag": {
-  "n": 86,
-  "n24": 22,
-  "avg_s": 43.5,
-  "avg_slip_pct": -0.0283,
+  "n": 87,
+  "n24": 23,
+  "avg_s": 41.7,
+  "avg_slip_pct": -0.0289,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,24 @@
   "1kto1m": 322.02
  },
  "bets": [
+  {
+   "token": "45280196732223750989767984101465690442391116346771016128184193629867669221370",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Nemesis",
+   "title": "Dota 2: REKONIX vs Team Nemesis - Game 1 Winner",
+   "their_price": 0.5228,
+   "my_price": 0.5,
+   "slippage_pct": -0.0436,
+   "shares": 201.69,
+   "cost": 100.85,
+   "fee": 1.51,
+   "opened": 1783847831,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "58177852542026635694424411749702887961596240830711524679308970260940138352630",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -2615,5 +2633,5 @@
   }
  ],
  "missed_pnl": -418.2,
- "updated": 1783847300
+ "updated": 1783847834
 }
