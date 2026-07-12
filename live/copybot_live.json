@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 91,
-  "n24": 24,
-  "avg_s": 38.4,
-  "avg_slip_pct": -0.0321,
+  "n24": 23,
+  "avg_s": 33.0,
+  "avg_slip_pct": -0.0276,
   "window_h": 24
  },
  "wallets": [
@@ -1752,6 +1752,21 @@
  ],
  "missed": [
   {
+   "ts": 1783854172,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "72657587692017665505599725656194205462581472368991422962137490050829927893951",
+   "cond": "0x8a89800369f7126ae60760e942afa581f8b248bf197563f98394d3835bb9dbe3",
+   "title": "Dota 2: PARIVISION vs Team Spirit - Game 2 Winner",
+   "outcome": "Team Spirit",
+   "price": 0.48,
+   "stake": 100.33,
+   "reason": "price moved 0.22\u21920.48",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783853541,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "14298727521347397971969992444073213603189753350952512402670010770159778335698",
@@ -1761,10 +1776,11 @@
    "price": 0.4925,
    "stake": 100.33,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 17.36,
+   "settled": 1783854171,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.5925
   },
   {
    "ts": 1783848444,
@@ -2693,24 +2709,8 @@
    "settled": 1783626771,
    "name": "gkmgkldfmg",
    "exit_price": 0.55
-  },
-  {
-   "ts": 1783620287,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "101398220491720323754799949069639964958286012335853846453785209954253068634131",
-   "cond": "0x44321e793575ffc4f54c11a226dacb86e4b5595d2bd48479dd222ae7d85211a1",
-   "title": "Dota 2: OG vs Inner Circle - Game 1 Winner",
-   "outcome": "Inner Circle",
-   "price": 0.2899,
-   "stake": 77.32,
-   "reason": "fill-split entry: clips read sub-floor individually (merge fix 2026-07-09)",
-   "status": "sold",
-   "pnl": 2.04,
-   "settled": 1783620639,
-   "exit_price": 0.3101,
-   "name": "gkmgkldfmg"
   }
  ],
- "missed_pnl": -340.53,
- "updated": 1783853787
+ "missed_pnl": -323.17,
+ "updated": 1783854172
 }
