@@ -6,12 +6,12 @@
  "event_cap": 0,
  "hwm": 24.73,
  "cash": 14.96,
- "deployed": 7.54,
+ "deployed": 6.53,
  "reserve": 0.0,
- "realized": -1.98,
+ "realized": -2.99,
  "adjustments": 2.2,
  "ledger_drift": 2.61,
- "open_count": 4,
+ "open_count": 3,
  "fees_paid": 1.17,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,24 @@
   "1kto1m": 320.95
  },
  "bets": [
+  {
+   "token": "98686933205526849260956926098370864586052275369032476650193546947433457446794",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "PARIVISION",
+   "title": "Dota 2: PARIVISION vs Team Spirit - Game 1 Winner",
+   "their_price": 0.6499,
+   "my_price": 0.65,
+   "slippage_pct": 0.0002,
+   "shares": 1.56,
+   "cost": 1.02,
+   "fee": 0.01,
+   "opened": 1783848697,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -1.03,
+   "settled": 1783858198
+  },
   {
    "token": "71941893293834599184621753590882651435325558220761902727823613984547213968365",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -148,24 +166,6 @@
    "settled": 1783849689,
    "sold_shares": 1.72,
    "sold_proceeds": 0.17
-  },
-  {
-   "token": "98686933205526849260956926098370864586052275369032476650193546947433457446794",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "PARIVISION",
-   "title": "Dota 2: PARIVISION vs Team Spirit - Game 1 Winner",
-   "their_price": 0.6499,
-   "my_price": 0.65,
-   "slippage_pct": 0.0002,
-   "shares": 1.56,
-   "cost": 1.02,
-   "fee": 0.01,
-   "opened": 1783848697,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "45280196732223750989767984101465690442391116346771016128184193629867669221370",
@@ -670,6 +670,21 @@
  ],
  "missed": [
   {
+   "ts": 1783848284,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "98686933205526849260956926098370864586052275369032476650193546947433457446794",
+   "cond": "0x5feac6140f642f8c3cc84eec974a63bdc99f3c02e9deeb49cdc654c8a7b21209",
+   "title": "Dota 2: PARIVISION vs Team Spirit - Game 1 Winner",
+   "outcome": "PARIVISION",
+   "price": 0.65,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
+   "status": "lost",
+   "pnl": -1.01,
+   "settled": 1783858199,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783856323,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "71941893293834599184621753590882651435325558220761902727823613984547213968365",
@@ -795,21 +810,6 @@
    "settled": 1783850631,
    "name": "gkmgkldfmg",
    "exit_price": 0.999
-  },
-  {
-   "ts": 1783848284,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "98686933205526849260956926098370864586052275369032476650193546947433457446794",
-   "cond": "0x5feac6140f642f8c3cc84eec974a63bdc99f3c02e9deeb49cdc654c8a7b21209",
-   "title": "Dota 2: PARIVISION vs Team Spirit - Game 1 Winner",
-   "outcome": "PARIVISION",
-   "price": 0.65,
-   "stake": 1.0,
-   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1783847109,
@@ -1628,6 +1628,6 @@
    "exit_price": 0.6065
   }
  ],
- "missed_pnl": 105.05,
- "updated": 1783857003
+ "missed_pnl": 104.04,
+ "updated": 1783858199
 }
