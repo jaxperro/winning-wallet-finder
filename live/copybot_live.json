@@ -1592,6 +1592,36 @@
  ],
  "missed": [
   {
+   "ts": 1783818670,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "14635675870982897917581198649476127837975251193150495566552970565909631535281",
+   "cond": "0x95f726bbb693b945f94473908298b2389989550b08a7bfd90f97ce7ba62cb719",
+   "title": "Will Argentina win on 2026-07-11?",
+   "outcome": "Yes",
+   "price": 0.727,
+   "stake": 92.74,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "lost",
+   "pnl": -93.5,
+   "settled": 1783828832,
+   "name": "LSB1"
+  },
+  {
+   "ts": 1783823370,
+   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
+   "token": "98130629394630322983110605714141489884435629664812927809724837028685741349685",
+   "cond": "0x95f726bbb693b945f94473908298b2389989550b08a7bfd90f97ce7ba62cb719",
+   "title": "Will Argentina win on 2026-07-11?",
+   "outcome": "No",
+   "price": 0.6122,
+   "stake": 98.53,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 61.27,
+   "settled": 1783828832,
+   "name": "LSB1"
+  },
+  {
    "ts": 1783824628,
    "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
    "token": "86486366666900934251692510513012809256323129155701648230490642360929725335546",
@@ -1606,21 +1636,6 @@
    "settled": 1783824818,
    "name": "imwalkinghere",
    "exit_checked": true
-  },
-  {
-   "ts": 1783823370,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "98130629394630322983110605714141489884435629664812927809724837028685741349685",
-   "cond": "0x95f726bbb693b945f94473908298b2389989550b08a7bfd90f97ce7ba62cb719",
-   "title": "Will Argentina win on 2026-07-11?",
-   "outcome": "No",
-   "price": 0.6122,
-   "stake": 98.53,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
   },
   {
    "ts": 1783823370,
@@ -1652,21 +1667,6 @@
    "settled": 1783822114,
    "name": "gkmgkldfmg",
    "exit_price": 0.6264
-  },
-  {
-   "ts": 1783818670,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "14635675870982897917581198649476127837975251193150495566552970565909631535281",
-   "cond": "0x95f726bbb693b945f94473908298b2389989550b08a7bfd90f97ce7ba62cb719",
-   "title": "Will Argentina win on 2026-07-11?",
-   "outcome": "Yes",
-   "price": 0.727,
-   "stake": 92.74,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "LSB1"
   },
   {
    "ts": 1783815207,
@@ -2548,6 +2548,6 @@
    "exit_price": 0.6241
   }
  ],
- "missed_pnl": -452.74,
- "updated": 1783824948
+ "missed_pnl": -484.97,
+ "updated": 1783828832
 }
