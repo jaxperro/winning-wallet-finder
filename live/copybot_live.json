@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 92.96,
+ "stake": 92.93,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2022.6,
- "deployed": 301.51,
+ "cash": 1928.74,
+ "deployed": 394.47,
  "reserve": 0.0,
- "realized": 1324.08,
+ "realized": 1323.19,
  "adjustments": 0.03,
- "ledger_drift": 0.01,
- "open_count": 7,
- "fees_paid": 172.45,
+ "ledger_drift": 0.0,
+ "open_count": 8,
+ "fees_paid": 173.34,
  "fee_rate": 0.03,
  "lag": {
-  "n": 105,
-  "n24": 9,
-  "avg_s": 72.9,
-  "avg_slip_pct": -0.1366,
+  "n": 106,
+  "n24": 10,
+  "avg_s": 79.5,
+  "avg_slip_pct": -0.1195,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,24 @@
   "1kto1m": 327.04
  },
  "bets": [
+  {
+   "token": "7410717121876145332418373180741433428881685336911848406679670735933068361996",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Down",
+   "title": "S&P 500 (SPX) Up or Down on July 13?",
+   "their_price": 0.6571,
+   "my_price": 0.68,
+   "slippage_pct": 0.0348,
+   "shares": 136.71,
+   "cost": 92.96,
+   "fee": 0.89,
+   "opened": 1783949720,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "59710612631848725344763865983471814895562224915658392985168656890608650443974",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2980,5 +2998,5 @@
   }
  ],
  "missed_pnl": 90278.75,
- "updated": 1783948921
+ "updated": 1783949859
 }
