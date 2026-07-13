@@ -621,8 +621,26 @@ class RtdsListener:
                 open(path, "w").writelines(lines)
         except Exception:
             pass
+        # SEED the funnel with the RTDS payload itself (2026-07-13): the
+        # message carries every field handle_trade needs, so the copy no
+        # longer waits on the data-api indexer — which lagged 130-305s on
+        # badaf/1kto1m crypto+index markets even though RTDS delivered at
+        # ~0.3s. on_wallet_activity still re-fetches and merges (fill-split
+        # clips), deduped by tx, so nothing is lost; the seed just guarantees
+        # the trade is in the candidate set at ~1s regardless of the indexer.
+        try:
+            usd = float(p.get("size") or 0) * float(p.get("price") or 0)
+        except (TypeError, ValueError):
+            usd = 0
+        seed = {"transactionHash": tx, "asset": p.get("asset"),
+                "side": p.get("side"), "size": p.get("size"),
+                "price": p.get("price"), "usdcSize": round(usd, 2),
+                "title": p.get("title"),
+                "outcome": p.get("outcome"), "conditionId": p.get("conditionId"),
+                "eventSlug": p.get("eventSlug") or p.get("slug"),
+                "timestamp": int(ts) if ts else None}
         try:                              # same funnel as the Alchemy push —
-            self.bot.on_wallet_activity(w)   # locks internally, never raises out
+            self.bot.on_wallet_activity(w, seed_trade=seed)   # locks internally
         except Exception as e:
             log(f"rtds handler error: {e}")
 
@@ -1625,11 +1643,16 @@ class Copybot:
             cur[wallet.lower()] = max(since, newest)
         return [t for t in rows if (t.get("timestamp") or 0) > since - 600]
 
-    def on_wallet_activity(self, wallet, ignore_stale=False):
+    def on_wallet_activity(self, wallet, ignore_stale=False, seed_trade=None):
         """A watched wallet just transacted — pull its latest trades and route any
-        new, recent one through the filter and (if it passes) the engine."""
+        new, recent one through the filter and (if it passes) the engine.
+        `seed_trade` (from the RTDS push) is merged into the fetched set so a
+        lagging data-api indexer can't delay the copy — deduped by tx."""
         name = self.names.get(wallet.lower(), wallet[:10] + "…")
         trades = self._fetch_since_cursor(wallet)
+        if seed_trade and seed_trade.get("transactionHash") and seed_trade.get("asset"):
+            if seed_trade["transactionHash"] not in {t.get("transactionHash") for t in trades}:
+                trades = trades + [seed_trade]
         # ONE conviction bet often arrives as several fills — a sweep through
         # the book or rapid clip entries (gkmg 2026-07-09: a $612 MOUZ entry =
         # 3×$204 same-second rows, every clip sub-floor while the backtest's
