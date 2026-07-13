@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 31,
-  "n24": 13,
-  "avg_s": 45.5,
-  "avg_slip_pct": 0.0379,
+  "n24": 12,
+  "avg_s": 49.0,
+  "avg_slip_pct": 0.0424,
   "window_h": 24
  },
  "wallets": [
@@ -763,6 +763,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1783933595,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "59710612631848725344763865983471814895562224915658392985168656890608650443974",
+   "cond": "0x1d608eeaf0869a3f906ed50c0340d97a592f9cdcdf7b475524de5d75d847eec8",
+   "title": "WTI Crude Oil (WTI) closes above $76 on July 13?",
+   "outcome": "No",
+   "price": 0.84,
+   "stake": 1.0,
+   "reason": "order rejected: exception: max_price must conform to tick size 0.01 with at ",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1783918819,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1720,24 +1735,8 @@
    "settled": 1783908726,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783908655,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "32644312087282503158923407674949581157417062987499559484811470839958233135323",
-   "cond": "0x4dbff56fcce4c395a29ad2f7392d7b2e83a5a71fba57cd4446b2fd6136fcdac4",
-   "title": "Algeria vs. Austria: Austria O/U 2.5",
-   "outcome": "Over",
-   "price": 0.8042,
-   "stake": 1.0,
-   "reason": "too slow to follow (21492m late)",
-   "status": "won",
-   "pnl": 0.24,
-   "settled": 1783908726,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 1052.52,
- "updated": 1783928604
+ "missed_pnl": 1051.31,
+ "updated": 1783933595
 }
