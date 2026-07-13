@@ -1942,6 +1942,21 @@
  ],
  "missed": [
   {
+   "ts": 1783915558,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "17233538369622331395311990544159709275677306359062920824570611974340792501916",
+   "cond": "0xec4147d703a1013d0bdc0ef4dcaf129fe8443e6ad1318edcd2a2ac9eff6c8421",
+   "title": "Moscow air traffic suspended by August 31?",
+   "outcome": "Yes",
+   "price": 0.8504,
+   "stake": 82.88,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783908632,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "7841049009621582008134872487806885426539273489007529352564848565148427144802",
@@ -2903,24 +2918,8 @@
    "settled": 1783908697,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783908624,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "29415453159794834942425007931592775378834455098319729948319440441190671601513",
-   "cond": "0x2c3609f9d3db7b776daea52464d1d2e6eb9353d835a463c9c769437fce25a347",
-   "title": "Austria to win the second half?",
-   "outcome": "No",
-   "price": 0.4762,
-   "stake": 91.33,
-   "reason": "too slow to follow (21529m late)",
-   "status": "won",
-   "pnl": 99.02,
-   "settled": 1783908697,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 90266.45,
- "updated": 1783913371
+ "updated": 1783915561
 }
