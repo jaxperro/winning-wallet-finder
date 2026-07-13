@@ -764,6 +764,21 @@
  ],
  "missed": [
   {
+   "ts": 1783915414,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "17233538369622331395311990544159709275677306359062920824570611974340792501916",
+   "cond": "0xec4147d703a1013d0bdc0ef4dcaf129fe8443e6ad1318edcd2a2ac9eff6c8421",
+   "title": "Moscow air traffic suspended by August 31?",
+   "outcome": "Yes",
+   "price": 0.8504,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783908977,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "108947296508063592085718442826411169359443176266922838741305348631169975990701",
@@ -1721,24 +1736,8 @@
    "settled": 1783908726,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783908655,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "3314515325884682119805342280881559604426234904808254486770712937521319975190",
-   "cond": "0x71f181b2f5beff73bbf717272088ebd35f67b06228b8edc4b810bd9c6d6e1d04",
-   "title": "Will AC Goianiense win on 2026-06-28?",
-   "outcome": "Yes",
-   "price": 0.89,
-   "stake": 1.0,
-   "reason": "too slow to follow (20573m late)",
-   "status": "won",
-   "pnl": 0.12,
-   "settled": 1783908726,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 1052.15,
- "updated": 1783913259
+ "missed_pnl": 1052.54,
+ "updated": 1783915417
 }
