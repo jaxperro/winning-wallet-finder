@@ -1951,10 +1951,11 @@
    "price": 0.8504,
    "stake": 82.88,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
+   "status": "sold",
+   "pnl": 13.72,
+   "settled": 1783916816,
+   "name": "0xbadaf319",
+   "exit_price": 0.9951
   },
   {
    "ts": 1783908632,
@@ -2920,6 +2921,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 90266.45,
- "updated": 1783915561
+ "missed_pnl": 90280.17,
+ "updated": 1783916828
 }
