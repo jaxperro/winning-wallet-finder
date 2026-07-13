@@ -18,7 +18,8 @@
     {
       "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
       "name": "Kruto2027",
-      "class": "volume"
+      "class": "volume",
+      "floor": 80.0
     },
     {
       "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
