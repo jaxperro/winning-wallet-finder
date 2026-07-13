@@ -1942,6 +1942,21 @@
  ],
  "missed": [
   {
+   "ts": 1783918704,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "70962318786911412106087113936707965213554584784375688261632728234676581794613",
+   "cond": "0xec6a9c47b73a00f12acbd46e137a9e5da64224be4efdbfea479d64261a44d52f",
+   "title": "Will Palantir Technologies Inc. (PLTR) hit (LOW) $102 in July?",
+   "outcome": "No",
+   "price": 0.7929,
+   "stake": 49.84,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783915558,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "17233538369622331395311990544159709275677306359062920824570611974340792501916",
@@ -2903,24 +2918,8 @@
    "settled": 1783908697,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783908624,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "101870693068643777907933185168096005823100471428921617507976765091257562327892",
-   "cond": "0xca1f4760e175d71d1c7677dbc56a1856dc2cee6a4d8de8275a16dbca716afd24",
-   "title": "Will Austria win on 2026-06-27?",
-   "outcome": "Yes",
-   "price": 0.6696,
-   "stake": 91.33,
-   "reason": "too slow to follow (21534m late)",
-   "status": "lost",
-   "pnl": -92.24,
-   "settled": 1783908697,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 90280.17,
- "updated": 1783916828
+ "updated": 1783918706
 }
