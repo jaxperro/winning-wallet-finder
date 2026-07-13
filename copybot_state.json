@@ -8316,8 +8316,8 @@
     }
   },
   "hwm": 2548.9580606723184,
-  "feed_sig": "780bcab58ec9b4ba717f01a35943c3c1",
-  "feed_pushed_at": 1783908556.7958684,
+  "feed_sig": "197adb644dc6f1059ca3f1fc9c119a81",
+  "feed_pushed_at": 1783908827.5211217,
   "missed": [
     {
       "ts": 1783590977,
@@ -9597,7 +9597,8 @@
       "status": "won",
       "pnl": 6.68,
       "settled": 1783908694,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9612,7 +9613,8 @@
       "status": "won",
       "pnl": 23.39,
       "settled": 1783908694,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9627,7 +9629,8 @@
       "status": "won",
       "pnl": 18.91,
       "settled": 1783908694,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9642,7 +9645,8 @@
       "status": "won",
       "pnl": 15.07,
       "settled": 1783908694,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9657,7 +9661,8 @@
       "status": "won",
       "pnl": 13.29,
       "settled": 1783908694,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9672,7 +9677,8 @@
       "status": "won",
       "pnl": 25.9,
       "settled": 1783908694,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9687,7 +9693,8 @@
       "status": "won",
       "pnl": 76.79,
       "settled": 1783908694,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9702,7 +9709,8 @@
       "status": "won",
       "pnl": 41.62,
       "settled": 1783908694,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9717,7 +9725,8 @@
       "status": "lost",
       "pnl": -92.14,
       "settled": 1783908694,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9729,10 +9738,12 @@
       "price": 0.7793,
       "stake": 91.33,
       "reason": "too slow to follow (27271m late)",
-      "status": "lost",
-      "pnl": -91.93,
+      "status": "sold",
+      "pnl": -54.58,
       "settled": 1783908695,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true,
+      "exit_price": 0.3253
     },
     {
       "ts": 1783908622,
@@ -9744,10 +9755,12 @@
       "price": 0.4471,
       "stake": 91.33,
       "reason": "too slow to follow (27271m late)",
-      "status": "lost",
-      "pnl": -92.84,
+      "status": "sold",
+      "pnl": -70.41,
       "settled": 1783908695,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true,
+      "exit_price": 0.1128
     },
     {
       "ts": 1783908622,
@@ -9762,7 +9775,8 @@
       "status": "won",
       "pnl": 8.87,
       "settled": 1783908695,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9777,7 +9791,8 @@
       "status": "won",
       "pnl": 13.29,
       "settled": 1783908695,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9792,7 +9807,8 @@
       "status": "won",
       "pnl": 26.42,
       "settled": 1783908695,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9807,7 +9823,8 @@
       "status": "won",
       "pnl": 46.12,
       "settled": 1783908695,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9822,7 +9839,8 @@
       "status": "won",
       "pnl": 6.55,
       "settled": 1783908695,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9837,7 +9855,8 @@
       "status": "won",
       "pnl": 9.88,
       "settled": 1783908695,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9852,7 +9871,8 @@
       "status": "won",
       "pnl": 66.29,
       "settled": 1783908695,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9867,7 +9887,8 @@
       "status": "won",
       "pnl": 31.0,
       "settled": 1783908695,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9882,7 +9903,8 @@
       "status": "won",
       "pnl": 22.28,
       "settled": 1783908695,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9897,7 +9919,8 @@
       "status": "won",
       "pnl": 37.06,
       "settled": 1783908695,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9912,7 +9935,8 @@
       "status": "won",
       "pnl": 10.12,
       "settled": 1783908695,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908622,
@@ -9927,7 +9951,8 @@
       "status": "won",
       "pnl": 6.72,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908623,
@@ -9942,7 +9967,8 @@
       "status": "won",
       "pnl": 20.89,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908623,
@@ -9957,7 +9983,8 @@
       "status": "won",
       "pnl": 18.75,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908623,
@@ -9972,7 +9999,8 @@
       "status": "won",
       "pnl": 15.71,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908623,
@@ -9987,7 +10015,8 @@
       "status": "won",
       "pnl": 8.79,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908623,
@@ -10002,7 +10031,8 @@
       "status": "won",
       "pnl": 22.21,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908623,
@@ -10017,7 +10047,8 @@
       "status": "won",
       "pnl": 31.64,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908623,
@@ -10032,7 +10063,8 @@
       "status": "won",
       "pnl": 17.24,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908623,
@@ -10047,7 +10079,8 @@
       "status": "won",
       "pnl": 46.55,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908623,
@@ -10062,7 +10095,8 @@
       "status": "won",
       "pnl": 6.73,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908623,
@@ -10077,7 +10111,8 @@
       "status": "won",
       "pnl": 15.71,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908623,
@@ -10089,10 +10124,12 @@
       "price": 0.6771,
       "stake": 91.33,
       "reason": "too slow to follow (22370m late)",
-      "status": "won",
-      "pnl": 42.67,
+      "status": "sold",
+      "pnl": -14.96,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true,
+      "exit_price": 0.5801
     },
     {
       "ts": 1783908623,
@@ -10107,7 +10144,8 @@
       "status": "won",
       "pnl": 15.71,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908623,
@@ -10122,7 +10160,8 @@
       "status": "won",
       "pnl": 13.27,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908624,
@@ -10137,7 +10176,8 @@
       "status": "lost",
       "pnl": -91.63,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908624,
@@ -10152,7 +10192,8 @@
       "status": "lost",
       "pnl": -91.82,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908624,
@@ -10167,7 +10208,8 @@
       "status": "lost",
       "pnl": -92.26,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908624,
@@ -10182,7 +10224,8 @@
       "status": "won",
       "pnl": 15.95,
       "settled": 1783908696,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908624,
@@ -10197,7 +10240,8 @@
       "status": "won",
       "pnl": 45.46,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908624,
@@ -10212,7 +10256,8 @@
       "status": "won",
       "pnl": 8.02,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908624,
@@ -10227,7 +10272,8 @@
       "status": "lost",
       "pnl": -92.24,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908624,
@@ -10242,7 +10288,8 @@
       "status": "won",
       "pnl": 99.02,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908624,
@@ -10257,7 +10304,8 @@
       "status": "won",
       "pnl": 27.06,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908624,
@@ -10272,7 +10320,8 @@
       "status": "won",
       "pnl": 21.7,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908624,
@@ -10287,7 +10336,8 @@
       "status": "won",
       "pnl": 4.94,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908624,
@@ -10302,7 +10352,8 @@
       "status": "won",
       "pnl": 10.99,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908625,
@@ -10317,7 +10368,8 @@
       "status": "won",
       "pnl": 83.29,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908625,
@@ -10332,7 +10384,8 @@
       "status": "won",
       "pnl": 19.45,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908625,
@@ -10347,7 +10400,8 @@
       "status": "won",
       "pnl": 89.96,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908625,
@@ -10362,7 +10416,8 @@
       "status": "won",
       "pnl": 20.9,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908625,
@@ -10377,7 +10432,8 @@
       "status": "won",
       "pnl": 23.64,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908625,
@@ -10392,7 +10448,8 @@
       "status": "won",
       "pnl": 22.49,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908625,
@@ -10407,7 +10464,8 @@
       "status": "won",
       "pnl": 24.02,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908625,
@@ -10422,7 +10480,8 @@
       "status": "won",
       "pnl": 6.35,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908625,
@@ -10437,7 +10496,8 @@
       "status": "won",
       "pnl": 13.17,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908625,
@@ -10452,7 +10512,8 @@
       "status": "won",
       "pnl": 12.13,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908625,
@@ -10467,7 +10528,8 @@
       "status": "won",
       "pnl": 12.13,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908625,
@@ -10482,7 +10544,8 @@
       "status": "won",
       "pnl": 33.02,
       "settled": 1783908697,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908626,
@@ -10497,7 +10560,8 @@
       "status": "won",
       "pnl": 15.71,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908626,
@@ -10512,7 +10576,8 @@
       "status": "won",
       "pnl": 18.67,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908626,
@@ -10527,7 +10592,8 @@
       "status": "won",
       "pnl": 47.52,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908626,
@@ -10542,7 +10608,8 @@
       "status": "won",
       "pnl": 17.56,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908626,
@@ -10557,7 +10624,8 @@
       "status": "won",
       "pnl": 21.33,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908626,
@@ -10572,7 +10640,8 @@
       "status": "won",
       "pnl": 110.12,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908626,
@@ -10587,7 +10656,8 @@
       "status": "won",
       "pnl": 38.32,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908626,
@@ -10602,7 +10672,8 @@
       "status": "won",
       "pnl": 12.14,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908626,
@@ -10617,7 +10688,8 @@
       "status": "won",
       "pnl": 8.32,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908626,
@@ -10632,7 +10704,8 @@
       "status": "lost",
       "pnl": -92.24,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908626,
@@ -10647,7 +10720,8 @@
       "status": "won",
       "pnl": 4.67,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908626,
@@ -10662,7 +10736,8 @@
       "status": "lost",
       "pnl": -91.88,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908627,
@@ -10677,7 +10752,8 @@
       "status": "won",
       "pnl": 6.79,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908627,
@@ -10692,7 +10768,8 @@
       "status": "lost",
       "pnl": -93.09,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908627,
@@ -10707,7 +10784,8 @@
       "status": "won",
       "pnl": 9.22,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908627,
@@ -10722,7 +10800,8 @@
       "status": "won",
       "pnl": 5.99,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908627,
@@ -10737,7 +10816,8 @@
       "status": "won",
       "pnl": 16.92,
       "settled": 1783908698,
-      "name": "LSB1"
+      "name": "LSB1",
+      "exit_checked": true
     },
     {
       "ts": 1783908628,
@@ -10752,7 +10832,8 @@
       "status": "won",
       "pnl": 53.98,
       "settled": 1783908698,
-      "name": "imwalkinghere"
+      "name": "imwalkinghere",
+      "exit_checked": true
     },
     {
       "ts": 1783908628,
@@ -10767,7 +10848,8 @@
       "status": "lost",
       "pnl": -92.65,
       "settled": 1783908698,
-      "name": "imwalkinghere"
+      "name": "imwalkinghere",
+      "exit_checked": true
     },
     {
       "ts": 1783908628,
@@ -10782,7 +10864,8 @@
       "status": "won",
       "pnl": 45.56,
       "settled": 1783908699,
-      "name": "imwalkinghere"
+      "name": "imwalkinghere",
+      "exit_checked": true
     },
     {
       "ts": 1783908628,
@@ -10797,7 +10880,8 @@
       "status": "won",
       "pnl": 49.08,
       "settled": 1783908699,
-      "name": "imwalkinghere"
+      "name": "imwalkinghere",
+      "exit_checked": true
     },
     {
       "ts": 1783908628,
@@ -10812,7 +10896,8 @@
       "status": "lost",
       "pnl": -92.41,
       "settled": 1783908699,
-      "name": "imwalkinghere"
+      "name": "imwalkinghere",
+      "exit_checked": true
     },
     {
       "ts": 1783908628,
@@ -10827,7 +10912,8 @@
       "status": "lost",
       "pnl": -92.84,
       "settled": 1783908699,
-      "name": "imwalkinghere"
+      "name": "imwalkinghere",
+      "exit_checked": true
     },
     {
       "ts": 1783908629,
@@ -10839,10 +10925,12 @@
       "price": 0.55,
       "stake": 91.33,
       "reason": "too slow to follow (26877m late)",
-      "status": "refund",
-      "pnl": -9.54,
+      "status": "sold",
+      "pnl": -5.35,
       "settled": 1783908700,
-      "name": "Kruto2027"
+      "name": "Kruto2027",
+      "exit_checked": true,
+      "exit_price": 0.5327
     },
     {
       "ts": 1783908629,
@@ -10857,7 +10945,8 @@
       "status": "won",
       "pnl": 87.7,
       "settled": 1783908700,
-      "name": "Kruto2027"
+      "name": "Kruto2027",
+      "exit_checked": true
     },
     {
       "ts": 1783908629,
@@ -10872,7 +10961,8 @@
       "status": "lost",
       "pnl": -93.33,
       "settled": 1783908700,
-      "name": "Kruto2027"
+      "name": "Kruto2027",
+      "exit_checked": true
     },
     {
       "ts": 1783908629,
@@ -10887,7 +10977,8 @@
       "status": "won",
       "pnl": 11.39,
       "settled": 1783908700,
-      "name": "Kruto2027"
+      "name": "Kruto2027",
+      "exit_checked": true
     },
     {
       "ts": 1783908629,
@@ -10899,10 +10990,12 @@
       "price": 0.4411,
       "stake": 91.33,
       "reason": "too slow to follow (19059m late)",
-      "status": "won",
-      "pnl": 114.19,
+      "status": "sold",
+      "pnl": -2.36,
       "settled": 1783908700,
-      "name": "Kruto2027"
+      "name": "Kruto2027",
+      "exit_checked": true,
+      "exit_price": 0.4445
     },
     {
       "ts": 1783908629,
@@ -10917,7 +11010,8 @@
       "status": "won",
       "pnl": 31.21,
       "settled": 1783908700,
-      "name": "Kruto2027"
+      "name": "Kruto2027",
+      "exit_checked": true
     },
     {
       "ts": 1783908629,
@@ -10929,10 +11023,12 @@
       "price": 0.45,
       "stake": 91.33,
       "reason": "too slow to follow (16055m late)",
-      "status": "won",
-      "pnl": 110.12,
+      "status": "sold",
+      "pnl": 24.75,
       "settled": 1783908700,
-      "name": "Kruto2027"
+      "name": "Kruto2027",
+      "exit_checked": true,
+      "exit_price": 0.5867
     },
     {
       "ts": 1783908629,
@@ -10944,10 +11040,12 @@
       "price": 0.53,
       "stake": 91.33,
       "reason": "too slow to follow (10707m late)",
-      "status": "lost",
-      "pnl": -92.62,
+      "status": "sold",
+      "pnl": 0.88,
       "settled": 1783908700,
-      "name": "Kruto2027"
+      "name": "Kruto2027",
+      "exit_checked": true,
+      "exit_price": 0.55
     },
     {
       "ts": 1783908629,
@@ -10962,7 +11060,8 @@
       "status": "lost",
       "pnl": -92.65,
       "settled": 1783908700,
-      "name": "Kruto2027"
+      "name": "Kruto2027",
+      "exit_checked": true
     },
     {
       "ts": 1783908629,
@@ -10974,10 +11073,12 @@
       "price": 0.06,
       "stake": 91.33,
       "reason": "too slow to follow (7728m late)",
-      "status": "lost",
-      "pnl": -93.91,
+      "status": "sold",
+      "pnl": 56.9,
       "settled": 1783908700,
-      "name": "Kruto2027"
+      "name": "Kruto2027",
+      "exit_checked": true,
+      "exit_price": 0.1018
     },
     {
       "ts": 1783908630,
@@ -10989,10 +11090,12 @@
       "price": 0.68,
       "stake": 91.33,
       "reason": "too slow to follow (3656m late)",
-      "status": "won",
-      "pnl": 42.1,
+      "status": "sold",
+      "pnl": -14.04,
       "settled": 1783908700,
-      "name": "gkmgkldfmg"
+      "name": "gkmgkldfmg",
+      "exit_checked": true,
+      "exit_price": 0.5893
     },
     {
       "ts": 1783908630,
@@ -11004,10 +11107,12 @@
       "price": 0.4606,
       "stake": 91.33,
       "reason": "too slow to follow (3629m late)",
-      "status": "lost",
-      "pnl": -92.81,
+      "status": "sold",
+      "pnl": -45.51,
       "settled": 1783908700,
-      "name": "gkmgkldfmg"
+      "name": "gkmgkldfmg",
+      "exit_checked": true,
+      "exit_price": 0.2441
     },
     {
       "ts": 1783908630,
@@ -11019,10 +11124,12 @@
       "price": 0.2211,
       "stake": 91.33,
       "reason": "too slow to follow (3529m late)",
-      "status": "lost",
-      "pnl": -93.46,
+      "status": "sold",
+      "pnl": 19.33,
       "settled": 1783908700,
-      "name": "gkmgkldfmg"
+      "name": "gkmgkldfmg",
+      "exit_checked": true,
+      "exit_price": 0.2791
     },
     {
       "ts": 1783908630,
@@ -11034,10 +11141,12 @@
       "price": 0.6577,
       "stake": 91.33,
       "reason": "too slow to follow (2433m late)",
-      "status": "won",
-      "pnl": 46.59,
+      "status": "sold",
+      "pnl": -10.17,
       "settled": 1783908700,
-      "name": "gkmgkldfmg"
+      "name": "gkmgkldfmg",
+      "exit_checked": true,
+      "exit_price": 0.5984
     },
     {
       "ts": 1783908630,
@@ -11049,10 +11158,12 @@
       "price": 0.7369,
       "stake": 91.33,
       "reason": "too slow to follow (2219m late)",
-      "status": "lost",
-      "pnl": -92.05,
+      "status": "sold",
+      "pnl": -37.07,
       "settled": 1783908701,
-      "name": "gkmgkldfmg"
+      "name": "gkmgkldfmg",
+      "exit_checked": true,
+      "exit_price": 0.4511
     },
     {
       "ts": 1783908630,
@@ -11067,7 +11178,8 @@
       "status": "lost",
       "pnl": -92.4,
       "settled": 1783908701,
-      "name": "gkmgkldfmg"
+      "name": "gkmgkldfmg",
+      "exit_checked": true
     },
     {
       "ts": 1783908630,
@@ -11079,10 +11191,12 @@
       "price": 0.4583,
       "stake": 91.33,
       "reason": "too slow to follow (955m late)",
-      "status": "lost",
-      "pnl": -92.81,
+      "status": "sold",
+      "pnl": -24.94,
       "settled": 1783908701,
-      "name": "gkmgkldfmg"
+      "name": "gkmgkldfmg",
+      "exit_checked": true,
+      "exit_price": 0.3474
     },
     {
       "ts": 1783908631,
@@ -11097,7 +11211,8 @@
       "status": "won",
       "pnl": 16.1,
       "settled": 1783908701,
-      "name": "AIcAIc"
+      "name": "AIcAIc",
+      "exit_checked": true
     },
     {
       "ts": 1783908631,
@@ -11112,7 +11227,8 @@
       "status": "won",
       "pnl": 25.39,
       "settled": 1783908701,
-      "name": "AIcAIc"
+      "name": "AIcAIc",
+      "exit_checked": true
     },
     {
       "ts": 1783908631,
@@ -11127,7 +11243,8 @@
       "status": "lost",
       "pnl": -91.48,
       "settled": 1783908701,
-      "name": "AIcAIc"
+      "name": "AIcAIc",
+      "exit_checked": true
     },
     {
       "ts": 1783908631,
@@ -11142,7 +11259,8 @@
       "status": "won",
       "pnl": 64.98,
       "settled": 1783908701,
-      "name": "AIcAIc"
+      "name": "AIcAIc",
+      "exit_checked": true
     },
     {
       "ts": 1783908631,
@@ -11157,7 +11275,8 @@
       "status": "lost",
       "pnl": -92.59,
       "settled": 1783908701,
-      "name": "AIcAIc"
+      "name": "AIcAIc",
+      "exit_checked": true
     },
     {
       "ts": 1783908631,
@@ -11169,10 +11288,12 @@
       "price": 0.35,
       "stake": 91.33,
       "reason": "too slow to follow (31072m late)",
-      "status": "lost",
-      "pnl": -93.11,
+      "status": "sold",
+      "pnl": -3.56,
       "settled": 1783908701,
-      "name": "AIcAIc"
+      "name": "AIcAIc",
+      "exit_checked": true,
+      "exit_price": 0.35
     },
     {
       "ts": 1783908631,
@@ -11184,10 +11305,12 @@
       "price": 0.6,
       "stake": 91.33,
       "reason": "too slow to follow (22522m late)",
-      "status": "won",
-      "pnl": 59.79,
+      "status": "sold",
+      "pnl": 28.62,
       "settled": 1783908701,
-      "name": "AIcAIc"
+      "name": "AIcAIc",
+      "exit_checked": true,
+      "exit_price": 0.8
     },
     {
       "ts": 1783908631,
@@ -11202,7 +11325,8 @@
       "status": "won",
       "pnl": 50.14,
       "settled": 1783908701,
-      "name": "AIcAIc"
+      "name": "AIcAIc",
+      "exit_checked": true
     },
     {
       "ts": 1783908631,
@@ -11214,10 +11338,12 @@
       "price": 0.71,
       "stake": 91.33,
       "reason": "too slow to follow (20458m late)",
-      "status": "won",
-      "pnl": 36.51,
+      "status": "sold",
+      "pnl": 31.22,
       "settled": 1783908701,
-      "name": "AIcAIc"
+      "name": "AIcAIc",
+      "exit_checked": true,
+      "exit_price": 0.96
     },
     {
       "ts": 1783908631,
@@ -11229,10 +11355,12 @@
       "price": 0.73,
       "stake": 91.33,
       "reason": "too slow to follow (17564m late)",
-      "status": "won",
-      "pnl": 33.04,
+      "status": "sold",
+      "pnl": 13.79,
       "settled": 1783908701,
-      "name": "AIcAIc"
+      "name": "AIcAIc",
+      "exit_checked": true,
+      "exit_price": 0.85
     },
     {
       "ts": 1783908631,
@@ -11244,10 +11372,12 @@
       "price": 0.68,
       "stake": 91.33,
       "reason": "too slow to follow (16854m late)",
-      "status": "won",
-      "pnl": 42.1,
+      "status": "sold",
+      "pnl": 36.57,
       "settled": 1783908701,
-      "name": "AIcAIc"
+      "name": "AIcAIc",
+      "exit_checked": true,
+      "exit_price": 0.96
     },
     {
       "ts": 1783908631,
@@ -11259,10 +11389,12 @@
       "price": 0.68,
       "stake": 91.33,
       "reason": "too slow to follow (14126m late)",
-      "status": "won",
-      "pnl": 42.1,
+      "status": "sold",
+      "pnl": 36.57,
       "settled": 1783908701,
-      "name": "AIcAIc"
+      "name": "AIcAIc",
+      "exit_checked": true,
+      "exit_price": 0.96
     },
     {
       "ts": 1783908631,
@@ -11277,7 +11409,8 @@
       "status": "lost",
       "pnl": -92.51,
       "settled": 1783908701,
-      "name": "AIcAIc"
+      "name": "AIcAIc",
+      "exit_checked": true
     },
     {
       "ts": 1783908631,
@@ -11289,10 +11422,12 @@
       "price": 0.48,
       "stake": 91.33,
       "reason": "too slow to follow (14032m late)",
-      "status": "won",
-      "pnl": 97.52,
+      "status": "sold",
+      "pnl": 77.96,
       "settled": 1783908701,
-      "name": "AIcAIc"
+      "name": "AIcAIc",
+      "exit_checked": true,
+      "exit_price": 0.8999
     },
     {
       "ts": 1783908632,
@@ -11307,7 +11442,8 @@
       "status": "lost",
       "pnl": -93.02,
       "settled": 1783908702,
-      "name": "1kto1m"
+      "name": "1kto1m",
+      "exit_checked": true
     },
     {
       "ts": 1783908632,
@@ -11319,10 +11455,12 @@
       "price": 0.374,
       "stake": 91.33,
       "reason": "too slow to follow (2297m late)",
-      "status": "won",
-      "pnl": 151.15,
+      "status": "sold",
+      "pnl": -16.7,
       "settled": 1783908702,
-      "name": "1kto1m"
+      "name": "1kto1m",
+      "exit_checked": true,
+      "exit_price": 0.3191
     }
   ],
   "no_miss_toks": [
