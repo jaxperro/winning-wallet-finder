@@ -938,6 +938,7 @@ class Copybot:
                 "outcome": t.get("outcome"), "title": (t.get("title") or "")[:90],
                 "their_price": round(their_p, 4), "my_price": round(my_p, 4),
                 "slippage_pct": round(slip_pct, 4),
+                "lag_s": round(detect_s, 1) if detect_s is not None else None,
                 "shares": round(fill["shares"], 2), "cost": round(fill["shares"] * my_p, 2),
                 "fee": fill.get("fee", 0),
                 "opened": int(their_ts or now), "status": "open",
@@ -1173,11 +1174,18 @@ class Copybot:
             "open_count": len(mp),
             "fees_paid": round(st.get("fees_paid", 0.0), 2),
             "fee_rate": self.fee_rate,
-            # avg_s / avg_slip_pct are the 24h ROLLING view (current execution);
-            # n is the lifetime copy count, n24 the fills in the window
+            # avg_s / avg_slip_pct are the 24h ROLLING view (current execution)
+            # falling back to the LIFETIME average when the window is empty —
+            # the dashboard's Lag tile showed "—" whenever a book went a day
+            # without copies (2026-07-13 user report). n = lifetime copies,
+            # n24 = fills in the window.
             "lag": (lambda t: {"n": lag.get("n", 0), "n24": t[0],
-                               "avg_s": round(t[1], 1) if t[1] is not None else None,
-                               "avg_slip_pct": round(t[2], 4) if t[2] is not None else None,
+                               "avg_s": (round(t[1], 1) if t[1] is not None
+                                         else (round(lag["sum_s"] / lag["n"], 1)
+                                               if lag.get("n") else None)),
+                               "avg_slip_pct": (round(t[2], 4) if t[2] is not None
+                                                else (round(lag["sum_slip_pct"] / lag["n"], 4)
+                                                      if lag.get("n") else None)),
                                "window_h": 24})(self.lag_24h()),
             "wallets": [w.get("name", w["wallet"][:10]) for w in self.cfg.get("watch", [])],
             "classes": {w.get("name", w["wallet"][:10]): self.engine.wallet_class(w["wallet"])
@@ -1596,6 +1604,12 @@ class Copybot:
         and only after a fetch, so a failed page just re-reads next time."""
         cur = self.engine.state.setdefault("trade_cursor", {})
         since = cur.get(wallet.lower(), 0)
+        if not since:
+            # COLD START: no cursor yet — behave like the pre-cursor fetch
+            # (fresh trades only). Walking history here poured 500 rows/wallet
+            # of weeks-old trades through the funnel at the 2026-07-13 02:10
+            # boot and spammed ~230 phantom "too slow" missed rows per book.
+            since = time.time() - RECENT_TRADE_WINDOW_S
         rows, offset = [], 0
         for _ in range(5):
             page = recent_trades(wallet, limit=100, offset=offset)
