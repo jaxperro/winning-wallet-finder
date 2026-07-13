@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 93.61,
+ "stake": 93.6,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2038.85,
- "deployed": 301.51,
+ "cash": 1944.84,
+ "deployed": 395.12,
  "reserve": 0.0,
- "realized": 1340.33,
+ "realized": 1339.93,
  "adjustments": 0.03,
- "ledger_drift": 0.01,
- "open_count": 7,
- "fees_paid": 173.97,
+ "ledger_drift": 0.0,
+ "open_count": 8,
+ "fees_paid": 174.36,
  "fee_rate": 0.03,
  "lag": {
-  "n": 106,
-  "n24": 8,
-  "avg_s": 98.9,
-  "avg_slip_pct": -0.1429,
+  "n": 107,
+  "n24": 9,
+  "avg_s": 121.9,
+  "avg_slip_pct": -0.123,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,24 @@
   "1kto1m": 327.04
  },
  "bets": [
+  {
+   "token": "7410717121876145332418373180741433428881685336911848406679670735933068361996",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Down",
+   "title": "S&P 500 (SPX) Up or Down on July 13?",
+   "their_price": 0.83,
+   "my_price": 0.86,
+   "slippage_pct": 0.0361,
+   "shares": 108.85,
+   "cost": 93.61,
+   "fee": 0.39,
+   "opened": 1783953304,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "7410717121876145332418373180741433428881685336911848406679670735933068361996",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -1998,26 +2016,6 @@
    "settled": 1783577316,
    "sold_shares": 45.05,
    "sold_proceeds": 41.49
-  },
-  {
-   "token": "81571380492002640837831762878498865181928814950219688494239020033973603013673",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will Graham Platner drop out by July 17?",
-   "their_price": 0.949,
-   "my_price": 0.951,
-   "slippage_pct": 0.0021,
-   "shares": 42.06,
-   "cost": 40.0,
-   "fee": 0.06,
-   "opened": 1783555919,
-   "status": "closed",
-   "exit_price": 0.9891,
-   "pnl": 1.54,
-   "settled": 1783556032,
-   "sold_shares": 42.06,
-   "sold_proceeds": 41.6
   }
  ],
  "missed": [
@@ -3000,5 +2998,5 @@
   }
  ],
  "missed_pnl": 90278.75,
- "updated": 1783951736
+ "updated": 1783953609
 }
