@@ -764,6 +764,21 @@
  ],
  "missed": [
   {
+   "ts": 1783965172,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "68863380862470769473817017624526026576800718695897153538391077057952557372819",
+   "cond": "0x67d054d9a655ca606802150b8850a07e611c10364de253187869e9d2d0cdfadc",
+   "title": "Set Handicap: Giese/Rafiq (-1.5) vs Ayeni/Chopra (+1.5)",
+   "outcome": "Ayeni/Chopra",
+   "price": 0.7,
+   "stake": 1.0,
+   "reason": "book unreliable (spread 0.29 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1783958437,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "76755883373039851290695610249455633595892527905785960150127813908400558868227",
@@ -1700,24 +1715,8 @@
    "settled": 1783776954,
    "name": "gkmgkldfmg",
    "exit_price": 0.4511
-  },
-  {
-   "ts": 1783774507,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "43551466881329966936571085042990699617845453317700345932385022134457322350137",
-   "cond": "0xd58ac06933e3a4c74c5014a99e74ad7e9b73b4a0afcd74319de8bf109343ee8a",
-   "title": "Dota 2: PlayTime vs Nigma Galaxy - Game 1 Winner",
-   "outcome": "PlayTime",
-   "price": 0.47,
-   "stake": 1.0,
-   "reason": "in-play hold expired unfilled (60s)",
-   "status": "sold",
-   "pnl": 0.63,
-   "settled": 1783775074,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.78
   }
  ],
  "missed_pnl": 1042.19,
- "updated": 1783959681
+ "updated": 1783965173
 }
