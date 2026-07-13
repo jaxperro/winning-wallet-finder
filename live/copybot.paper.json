@@ -62,7 +62,7 @@
     "daily_spend_cap_usd": 1000000.0,
     "max_total_exposure_usd": 1000000.0,
     "max_open_positions": 1000,
-    "min_price": 0.01,
+    "min_price": 0.0,
     "max_price": 0.99,
     "min_order_usd": 5.0,
     "max_per_event": 0

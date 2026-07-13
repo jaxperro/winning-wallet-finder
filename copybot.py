@@ -341,16 +341,24 @@ class LedgerLiveExecutor:
             return {"ok": False, "filled_shares": 0.0, "price": price,
                     "resp": f"pre-check failed: {e}", "paper": False}
         try:
+            # protected prices round to 4dp and scale WITH the price — 2dp
+            # rounding zeroed the bound on sub-penny books (0.001 longshots
+            # are the follow set's specialty; the min_price floor removal
+            # 2026-07-13 makes them copyable, so the executor must survive
+            # them). BUY never bounds below the quoted cross; SELL never
+            # bounds above the quoted bid.
             if side == "BUY":
                 r = self.client.place_market_order(
                     token_id=token_id, side="BUY",
                     amount=round(sz * price, 2),
-                    max_price=min(round(price * (1 + self._slip), 2), 0.99),
+                    max_price=min(max(round(price * (1 + self._slip), 4),
+                                      price), 0.99),
                     order_type=self._otype)
             else:
                 r = self.client.place_market_order(
                     token_id=token_id, side="SELL", shares=sz,
-                    min_price=max(round(price * (1 - self._slip), 2), 0.01),
+                    min_price=min(max(round(price * (1 - self._slip), 4),
+                                      0.0001), price),
                     order_type=self._otype)
         except Exception as e:                # NEVER raise into the trade loop —
             # but a timed-out post may still be resting: sweep + measure first
