@@ -54,6 +54,18 @@ def main():
     now = int(time.time())
     changed = []
     for w in ws:
+        # MANUAL OVERRIDE (2026-07-13): a wallet with `floor_pin` keeps that
+        # floor across daily runs — otherwise this clobbered a deliberate
+        # lowering back to p80 every 08:00 (Kruto2027 80→125.61 silently, so
+        # the paper book stopped matching the live book's floor). Mirror the
+        # same pin in backtest.json to keep all three books comparable.
+        pin = w.get("floor_pin")
+        if pin is not None:
+            if w.get("floor") != round(float(pin), 2):
+                changed.append((w.get("name", w["wallet"][:8]), w.get("floor"),
+                                round(float(pin), 2)))
+            w["floor"] = round(float(pin), 2)
+            continue
         p80 = trusted_p80(w["wallet"], now)
         if p80 == float("inf"):
             continue                        # no trusted sized bets — leave as-is
