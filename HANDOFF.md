@@ -1,4 +1,32 @@
-# Session handoff — 2026-07-13 (rev 9: RTDS on BOTH books; oversell + H3 fixed)
+# Session handoff — 2026-07-13 (rev 10: depth gate + guard-validated + clob_user own-fill push)
+
+## Items 2-4 shipped (2026-07-13, evidence from a 3-agent analysis workflow)
+
+- **DEPTH GATE** (copytrade.book_depth + gate in _handle_their_buy;
+  config.depth_gate, both books). Fitted on 131 book-annotated fills:
+  before ordering, SKIP if spread>0.08 (market mid-move, median |slip|
+  ~14%) or ask5c<$50 (dust books mispriced every fill), else cap stake at
+  10% of 5c ask depth (impact <~2%; >20% of depth → >+2% slip 33-50% of
+  the time). Fail-open on a book-fetch error. This is what lets stakes
+  SCALE — binds mainly on slow-market wallets (badaf median 23% of depth
+  at $40-100). 5 stub paths pass.
+- **PRICE GUARD validated, unchanged**: counterfactuals put 0.05 exactly at
+  the EV knee (0.05-0.10 moves ≈ breakeven, >0.10 = -20% ROI). Comment
+  records it. The +9-14% slip tail is lag-drift in deep esports books —
+  a detection problem RTDS ~1s already addresses, not a guard problem.
+- **clob_user OWN-FILL PUSH** (UserFillsListener, live only): streams our
+  order/trade lifecycle from ws-subscriptions-clob/ws/user (auth =
+  client.credentials; all-markets). A matching order id fires an IMMEDIATE
+  resolve_pendings() — in-play holds adopt on match, not on the 60s tick.
+  Events only TRIGGER; get_order stays the arbiter (2026-07-12 invariant).
+  resolve_pendings is now re-entrancy-locked (ws + heartbeat race). 60s
+  poll stays as fallback; ws failure degrades to today. Heartbeat shows
+  `userws up`. VERIFIED connected on the live box.
+- **Sub-$1 BUY fix**: gated $1.00 stakes shaved to $0.99 by share-flooring
+  → 7 of 13 live rejections. Now bumped to the $1 venue minimum.
+- Follow-set (rev 9→10): 5 wallets live (dropped imwalkinghere, demoted
+  LSB1; Kruto floor 80 pinned in backtest too for comparability). Backtest
+  proves 11 (bench: Vahan88, 42021, BikesAreTheBikes, EdwardIN).
 
 ## Since rev 8 (2026-07-11 → 07-13)
 
