@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 91.35,
+ "stake": 91.41,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1914.57,
- "deployed": 369.27,
+ "cash": 1922.79,
+ "deployed": 362.57,
  "reserve": 0.0,
- "realized": 1283.81,
+ "realized": 1285.33,
  "adjustments": 0.03,
- "ledger_drift": 0.0,
- "open_count": 9,
- "fees_paid": 171.18,
+ "ledger_drift": 0.01,
+ "open_count": 7,
+ "fees_paid": 171.2,
  "fee_rate": 0.03,
  "lag": {
   "n": 102,
@@ -43,6 +43,46 @@
   "1kto1m": 327.04
  },
  "bets": [
+  {
+   "token": "112398855248126389642334724080634566219399886008841203075173521868162852635909",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "IAEA visits Isfahan, Fordow, or Natanz nuclear site by October 31?",
+   "their_price": 0.5765,
+   "my_price": 0.55,
+   "slippage_pct": -0.0459,
+   "shares": 144.45,
+   "cost": 79.45,
+   "fee": 1.07,
+   "opened": 1783650970,
+   "status": "closed",
+   "exit_price": 0.7648,
+   "pnl": 29.95,
+   "settled": 1783936091,
+   "sold_shares": 144.45,
+   "sold_proceeds": 110.47
+  },
+  {
+   "token": "50206051919987143398301686023277350657729433627529907465714791269369601841506",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Netflix, Inc. (NFLX) hit (HIGH) $82.50 Week of July 13 2026?",
+   "their_price": 0.82,
+   "my_price": 0.76,
+   "slippage_pct": -0.0732,
+   "shares": 81.24,
+   "cost": 61.74,
+   "fee": 0.44,
+   "opened": 1783894580,
+   "status": "closed",
+   "exit_price": 0.805,
+   "pnl": 3.21,
+   "settled": 1783936091,
+   "sold_shares": 81.24,
+   "sold_proceeds": 65.4
+  },
   {
    "token": "107179792112987391529646299006880228718467140164269968140132399486412571398191",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -98,26 +138,6 @@
    "exit_price": null,
    "pnl": null,
    "settled": null
-  },
-  {
-   "token": "50206051919987143398301686023277350657729433627529907465714791269369601841506",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Netflix, Inc. (NFLX) hit (HIGH) $82.50 Week of July 13 2026?",
-   "their_price": 0.82,
-   "my_price": 0.76,
-   "slippage_pct": -0.0732,
-   "shares": 81.24,
-   "cost": 61.74,
-   "fee": 0.44,
-   "opened": 1783894580,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 80.26,
-   "sold_proceeds": 64.64
   },
   {
    "token": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
@@ -1316,8 +1336,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 37.4,
-   "sold_proceeds": 35.1
+   "sold_shares": 42.11,
+   "sold_proceeds": 39.8
   },
   {
    "token": "95966691396738472275344791788162735368640282726919372432646833886066957862309",
@@ -1376,26 +1396,6 @@
    "settled": 1783653705,
    "sold_shares": 44.44,
    "sold_proceeds": 42.68
-  },
-  {
-   "token": "112398855248126389642334724080634566219399886008841203075173521868162852635909",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "IAEA visits Isfahan, Fordow, or Natanz nuclear site by October 31?",
-   "their_price": 0.5765,
-   "my_price": 0.55,
-   "slippage_pct": -0.0459,
-   "shares": 144.45,
-   "cost": 79.45,
-   "fee": 1.07,
-   "opened": 1783650970,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 141.1,
-   "sold_proceeds": 107.7
   },
   {
    "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
@@ -2938,5 +2938,5 @@
   }
  ],
  "missed_pnl": 90280.17,
- "updated": 1783936082
+ "updated": 1783936091
 }
