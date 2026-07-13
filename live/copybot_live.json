@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 93.89,
+ "stake": 93.91,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2045.86,
- "deployed": 301.51,
+ "cash": 2046.42,
+ "deployed": 301.29,
  "reserve": 0.0,
- "realized": 1347.34,
+ "realized": 1347.67,
  "adjustments": 0.03,
  "ledger_drift": -0.0,
- "open_count": 7,
+ "open_count": 6,
  "fees_paid": 174.58,
  "fee_rate": 0.03,
  "lag": {
@@ -43,6 +43,26 @@
   "1kto1m": 327.04
  },
  "bets": [
+  {
+   "token": "37211745484282012925266837530256587065398391037537765685819517059038544194325",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the Houthis successfully target shipping by July 17, 2026?",
+   "their_price": 0.33,
+   "my_price": 0.26,
+   "slippage_pct": -0.2121,
+   "shares": 67.8,
+   "cost": 17.63,
+   "fee": 0.39,
+   "opened": 1783942541,
+   "status": "closed",
+   "exit_price": 0.7372,
+   "pnl": 31.96,
+   "settled": 1783954238,
+   "sold_shares": 67.8,
+   "sold_proceeds": 49.98
+  },
   {
    "token": "7410717121876145332418373180741433428881685336911848406679670735933068361996",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -122,26 +142,6 @@
    "settled": 1783945157,
    "sold_shares": 98.18,
    "sold_proceeds": 93.09
-  },
-  {
-   "token": "37211745484282012925266837530256587065398391037537765685819517059038544194325",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the Houthis successfully target shipping by July 17, 2026?",
-   "their_price": 0.33,
-   "my_price": 0.26,
-   "slippage_pct": -0.2121,
-   "shares": 67.8,
-   "cost": 17.63,
-   "fee": 0.39,
-   "opened": 1783942541,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 66.95,
-   "sold_proceeds": 49.42
   },
   {
    "token": "112398855248126389642334724080634566219399886008841203075173521868162852635909",
@@ -3000,5 +3000,5 @@
   }
  ],
  "missed_pnl": 90278.75,
- "updated": 1783953925
+ "updated": 1783954238
 }
