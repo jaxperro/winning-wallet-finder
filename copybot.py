@@ -1565,6 +1565,10 @@ class Copybot:
             st = rtds.status()
             driftstr += (f" · rtds {st}" if st.startswith("up")
                          else f" · ⚠ rtds {st}")
+        uw = getattr(self, "userws", None)
+        if uw is not None:
+            driftstr += (" · userws up" if uw.state == "up"
+                         else f" · ⚠ userws {uw.state}")
         log(f"[{cycle}] open {n} · deployed ${exp:,.0f} · free ${cash:,.0f}/${bank:,.0f}"
             f"{bankstr} · realized ${realized:+,.2f}{lagstr}{driftstr}"
             + (f" · CAN'T OPEN (free < ${stake:,.0f} stake — bets missed)"
