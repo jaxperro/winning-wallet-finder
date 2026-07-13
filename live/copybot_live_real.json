@@ -764,6 +764,21 @@
  ],
  "missed": [
   {
+   "ts": 1783941532,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "72815518641084313518338622403512394035277151459724826799424021294207163996674",
+   "cond": "0xa8c3b49a760866402205c38a6b7fc007a80676fce85af89232afd219d021236a",
+   "title": "WTI Crude Oil (WTI) Up or Down on July 13?",
+   "outcome": "Up",
+   "price": 0.931,
+   "stake": 1.0,
+   "reason": "order rejected: exception: max_price must conform to tick size 0.001 with at",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783939156,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "72663413633237870742152602912076949024714881200491601361514812636170232854563",
@@ -1719,24 +1734,8 @@
    "settled": 1783908727,
    "name": "0xd96750bf",
    "exit_checked": true
-  },
-  {
-   "ts": 1783908655,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "47094384573188159979825788972027395641855848273342934284326263699223525415354",
-   "cond": "0xd84cf73796c229c5fd8d5987f3ecbc93d0c469e1b31d8578820743afb07d4e54",
-   "title": "Exact Score: Jordan 0 - 3 Argentina?",
-   "outcome": "No",
-   "price": 0.9172,
-   "stake": 1.0,
-   "reason": "too slow to follow (21535m late)",
-   "status": "won",
-   "pnl": 0.09,
-   "settled": 1783908726,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 1048.71,
- "updated": 1783939839
+ "missed_pnl": 1047.12,
+ "updated": 1783941532
 }
