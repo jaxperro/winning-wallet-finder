@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 93.91,
+ "stake": 93.88,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2046.42,
- "deployed": 301.29,
+ "cash": 1951.86,
+ "deployed": 395.19,
  "reserve": 0.0,
- "realized": 1347.67,
+ "realized": 1347.03,
  "adjustments": 0.03,
  "ledger_drift": -0.0,
- "open_count": 6,
- "fees_paid": 174.58,
+ "open_count": 7,
+ "fees_paid": 175.23,
  "fee_rate": 0.03,
  "lag": {
-  "n": 107,
-  "n24": 9,
-  "avg_s": 121.9,
-  "avg_slip_pct": -0.123,
+  "n": 108,
+  "n24": 10,
+  "avg_s": 110.1,
+  "avg_slip_pct": -0.1132,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "1kto1m": 328.07
  },
  "bets": [
+  {
+   "token": "60806317326159607374282200707556294855206853468836223934335735983346661186527",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Yes",
+   "title": "Will WTI Crude Oil (WTI) hit (HIGH) $80 in July?",
+   "their_price": 0.7898,
+   "my_price": 0.77,
+   "slippage_pct": -0.0251,
+   "lag_s": 4.0,
+   "shares": 121.96,
+   "cost": 93.91,
+   "fee": 0.65,
+   "opened": 1783973558,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "37211745484282012925266837530256587065398391037537765685819517059038544194325",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1998,26 +2017,6 @@
    "settled": 1783590829,
    "sold_shares": 121.6,
    "sold_proceeds": 80.67
-  },
-  {
-   "token": "71026075704437556922683872464818734295123056708831878845925107841264506547843",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $136 Week of July 6 2026?",
-   "their_price": 0.9036,
-   "my_price": 0.889,
-   "slippage_pct": -0.0161,
-   "shares": 45.06,
-   "cost": 40.06,
-   "fee": 0.13,
-   "opened": 1783573790,
-   "status": "closed",
-   "exit_price": 0.9209,
-   "pnl": 1.29,
-   "settled": 1783577316,
-   "sold_shares": 45.05,
-   "sold_proceeds": 41.49
   }
  ],
  "missed": [
@@ -2980,5 +2979,5 @@
   }
  ],
  "missed_pnl": 89813.04,
- "updated": 1783965174
+ "updated": 1783973575
 }
