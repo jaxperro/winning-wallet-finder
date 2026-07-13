@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 91.42,
+ "stake": 91.46,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1871.93,
- "deployed": 413.5,
+ "cash": 1906.27,
+ "deployed": 380.19,
  "reserve": 0.0,
- "realized": 1285.4,
+ "realized": 1286.43,
  "adjustments": 0.03,
- "ledger_drift": 0.0,
- "open_count": 9,
- "fees_paid": 171.88,
+ "ledger_drift": 0.01,
+ "open_count": 8,
+ "fees_paid": 171.92,
  "fee_rate": 0.03,
  "lag": {
   "n": 105,
@@ -44,6 +44,26 @@
  },
  "bets": [
   {
+   "token": "72815518641084313518338622403512394035277151459724826799424021294207163996674",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Up",
+   "title": "WTI Crude Oil (WTI) Up or Down on July 13?",
+   "their_price": 0.94,
+   "my_price": 0.931,
+   "slippage_pct": -0.0096,
+   "shares": 98.18,
+   "cost": 91.4,
+   "fee": 0.19,
+   "opened": 1783941506,
+   "status": "closed",
+   "exit_price": 0.9482,
+   "pnl": 1.5,
+   "settled": 1783945157,
+   "sold_shares": 98.18,
+   "sold_proceeds": 93.09
+  },
+  {
    "token": "37211745484282012925266837530256587065398391037537765685819517059038544194325",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -60,26 +80,6 @@
    "exit_price": null,
    "pnl": null,
    "settled": null
-  },
-  {
-   "token": "72815518641084313518338622403512394035277151459724826799424021294207163996674",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Up",
-   "title": "WTI Crude Oil (WTI) Up or Down on July 13?",
-   "their_price": 0.94,
-   "my_price": 0.931,
-   "slippage_pct": -0.0096,
-   "shares": 98.18,
-   "cost": 91.4,
-   "fee": 0.19,
-   "opened": 1783941506,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 62.41,
-   "sold_proceeds": 58.76
   },
   {
    "token": "112398855248126389642334724080634566219399886008841203075173521868162852635909",
@@ -2975,5 +2975,5 @@
   }
  ],
  "missed_pnl": 90279.73,
- "updated": 1783944738
+ "updated": 1783945157
 }
