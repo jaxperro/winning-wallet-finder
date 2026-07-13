@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 91.32,
+ "stake": 91.35,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1909.07,
- "deployed": 373.91,
+ "cash": 1914.57,
+ "deployed": 369.27,
  "reserve": 0.0,
- "realized": 1282.95,
+ "realized": 1283.81,
  "adjustments": 0.03,
  "ledger_drift": 0.0,
- "open_count": 10,
- "fees_paid": 171.16,
+ "open_count": 9,
+ "fees_paid": 171.18,
  "fee_rate": 0.03,
  "lag": {
   "n": 102,
@@ -43,6 +43,26 @@
   "1kto1m": 327.04
  },
  "bets": [
+  {
+   "token": "107179792112987391529646299006880228718467140164269968140132399486412571398191",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will GPT-6 be released by August 14, 2026?",
+   "their_price": 0.79,
+   "my_price": 0.63,
+   "slippage_pct": -0.2025,
+   "shares": 99.42,
+   "cost": 62.63,
+   "fee": 0.7,
+   "opened": 1783888174,
+   "status": "closed",
+   "exit_price": 0.8564,
+   "pnl": 21.81,
+   "settled": 1783936082,
+   "sold_shares": 99.41,
+   "sold_proceeds": 85.14
+  },
   {
    "token": "59710612631848725344763865983471814895562224915658392985168656890608650443974",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -98,26 +118,6 @@
    "settled": null,
    "sold_shares": 80.26,
    "sold_proceeds": 64.64
-  },
-  {
-   "token": "107179792112987391529646299006880228718467140164269968140132399486412571398191",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will GPT-6 be released by August 14, 2026?",
-   "their_price": 0.79,
-   "my_price": 0.63,
-   "slippage_pct": -0.2025,
-   "shares": 99.42,
-   "cost": 62.63,
-   "fee": 0.7,
-   "opened": 1783888174,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 97.11,
-   "sold_proceeds": 83.16
   },
   {
    "token": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
@@ -608,8 +608,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 60.35,
-   "sold_proceeds": 55.39
+   "sold_shares": 63.53,
+   "sold_proceeds": 58.05
   },
   {
    "token": "43551466881329966936571085042990699617845453317700345932385022134457322350137",
@@ -1394,8 +1394,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 140.05,
-   "sold_proceeds": 106.84
+   "sold_shares": 141.1,
+   "sold_proceeds": 107.7
   },
   {
    "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
@@ -2938,5 +2938,5 @@
   }
  ],
  "missed_pnl": 90280.17,
- "updated": 1783935101
+ "updated": 1783936082
 }
