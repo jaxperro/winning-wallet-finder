@@ -1,4 +1,71 @@
-# Session handoff — 2026-07-13 (rev 10: depth gate + guard-validated + clob_user own-fill push)
+# Session handoff — 2026-07-13 (rev 11: RTDS-seed lag fix, tick-conform prices, floor_pin audit)
+
+## Operating boundary set by the user (2026-07-13, "away for a while")
+**Full autonomy on BOTH bots**; real-money bot **stays ARMED**. Never touch
+the private key, never raise/loosen caps, never rotate the Discord webhook
+(needs their login — STILL OPEN). If something looks genuinely dangerous,
+DISARM the live bot (`flyctl secrets unset LIVE_CONFIRM`) rather than push
+through it.
+
+## Shipped since rev 10 (all deployed + verified)
+- **RTDS-seed lag fix** (the big one): RTDS detected trades at ~0.3s but the
+  copy landed 130-305s later — `on_wallet_activity` threw the RTDS payload
+  away and re-fetched the data-api, whose indexer lagged that long on
+  badaf/1kto1m crypto+index markets, so the 300s backstop poll did the copy.
+  Now the RTDS message SEEDS the funnel directly (deduped by tx; re-fetch +
+  fill-split merge still run). Verified live: first RTDS-era copy landed at
+  **4s lag** (heartbeat `24h lag 4s`). This was "option B done as augmentation".
+- **Tick-conform protected prices**: the sub-penny 4dp bound violated tick
+  size on 1c books ('max_price must conform to tick size 0.01' — cost a
+  winning SPX copy). Bound now rounds to the QUOTE's own precision (a quote
+  is always a tick multiple → its decimals are the finest safe precision).
+- **Cursor cold-start**: `_fetch_since_cursor` with no cursor now seeds at
+  now-600s (fresh only). The bug walked 500 rows/wallet of history at the
+  02:10 boot → ~230 phantom "too slow (20,000m late)" missed rows/book;
+  purged both books.
+- **Dashboard**: exec-lag tile falls back to lifetime avg when the 24h window
+  is empty; per-copy `lag_s` now renders in the Slip cell. `/live` verified.
+- **floor_pin + audit** (3-agent clobber audit of every automated writer):
+  sync_floors.py was silently reverting manual floors to p80 nightly (Kruto
+  80→125.61) — the paper book diverged from the live book. Fixed with a
+  `floor_pin` field it honors; Kruto pinned 80 across paper+live+backtest.
+  Audit also fixed: pin now really mirrors to backtest.json (comment lied),
+  a loud warning when reverting an unpinned hand-edited floor, watch_sharps
+  add/drop diff logging + generated-only doc, class_pct paper/backtest parity
+  guard in daily.sh. **Audit verdict: otherwise CLEAN** — sync_floors is the
+  ONLY pipeline step that mutates a manual-knob file, and it round-trips the
+  whole JSON touching only `floor`; config.live.example.json is untouched by
+  every automated writer (safe by neglect).
+
+## Known live quirk (not a bug): RTDS stream FLAPS
+The undocumented RTDS socket drops a few times a day and hits the 60s
+reconnect-backoff cap; heartbeat shows `⚠ rtds down` briefly then `rtds up`.
+Detection is covered by the Alchemy webhook (~3s) + 300s poll + the 120s
+silent-stale guard throughout. This is the layered-fallback design working.
+If it ever flaps CONSTANTLY, that's when to investigate (RTDS deprecation?).
+
+## Current state (2026-07-13 ~20:40Z)
+- **Live** (`wwf-copybot-live`, ARMED): ~$16 equity, 32 copies, realized
+  −$5.33 (day-1 incident still dominates), `rtds up · userws up`, books
+  chain-exact. Follow set: Kruto2027(floor 80), 0xbadaf319, gkmgkldfmg,
+  AIcAIc, 1kto1m.
+- **Paper** (`wwf-copybot`): +$1,347 realized, 107 copies. Same 5 wallets.
+- **Backtest** proves 11 (bench: Vahan88, 42021, BikesAreTheBikes, EdwardIN).
+- Two persistent monitors were watching failure signatures this session
+  (they end with the session — re-arm in the next one if desired).
+
+## Next-session priorities
+1. **Friday bench review**: pull the per-wallet forward table for the 4
+   backtest candidates + re-read guard/floor counterfactuals; decide
+   promotions and the bankroll top-up size (the live-vs-paper per-signal
+   ratio is the number — now clean & comparable on both books).
+2. Watch the exec-lag tile fall toward ~1-2s as RTDS-era copies replace the
+   pre-RTDS average.
+3. The protected-price/amount rounding (5 lines in copybot.py `_order`) has
+   been the buggiest corner — 4 fixes now, each for a different quote class.
+   Believed done (tests pin every class) but it's the first place to look if
+   an `ORDER FAILED: … conform/amount` line appears.
+4. User to-do still open: rotate the Discord webhook (their login).
 
 ## Items 2-4 shipped (2026-07-13, evidence from a 3-agent analysis workflow)
 
