@@ -69,18 +69,12 @@ cd "$DIR"
 # API is unreachable — never blocks the boot forever).
 for try in 1 2 3 4; do
   LOCAL_SHA=$(git rev-parse HEAD)
-  # Bearer auth first (fine-grained PATs reject the legacy "token" scheme —
-  # the 06:04 401), falling back to unauthenticated — which itself rate-limits
-  # on Fly's SHARED egress IPs (60/hr across tenants; bit at 01:49).
-  REMOTE_SHA=$(curl -sf --max-time 10 \
-    -H "Authorization: Bearer ${GITHUB_TOKEN}" \
-    -H "Accept: application/vnd.github.sha" \
-    https://api.github.com/repos/jaxperro/winning-wallet-finder/commits/main \
-    || curl -sf --max-time 10 \
-    -H "Accept: application/vnd.github.sha" \
-    https://api.github.com/repos/jaxperro/winning-wallet-finder/commits/main \
-    || true)
-  # a sha is 40 hex chars — anything else (error JSON, rate-limit body) = unusable
+  # ask over the GIT transport, not the REST API: ls-remote uses the exact
+  # same authenticated smart-HTTP path the clone itself just used, so it is
+  # reachable by construction (api.github.com was NOT from Fly boxes —
+  # Bearer 401s and the anonymous path rate-limits on shared egress IPs;
+  # the guard failed open on every boot until 2026-07-13).
+  REMOTE_SHA=$(git ls-remote "$REPO_URL" refs/heads/main 2>/dev/null | cut -f1)
   echo "$REMOTE_SHA" | grep -qE '^[0-9a-f]{40}$' || REMOTE_SHA=""
   if [ -z "$REMOTE_SHA" ]; then
     echo "[clone-guard] GitHub API unreachable — proceeding with $LOCAL_SHA"
