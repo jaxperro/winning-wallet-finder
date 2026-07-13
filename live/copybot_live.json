@@ -2022,6 +2022,21 @@
  ],
  "missed": [
   {
+   "ts": 1783965172,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "68863380862470769473817017624526026576800718695897153538391077057952557372819",
+   "cond": "0x67d054d9a655ca606802150b8850a07e611c10364de253187869e9d2d0cdfadc",
+   "title": "Set Handicap: Giese/Rafiq (-1.5) vs Ayeni/Chopra (+1.5)",
+   "outcome": "Ayeni/Chopra",
+   "price": 0.7,
+   "stake": 93.91,
+   "reason": "book unreliable (spread 0.29 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1783933772,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "59710612631848725344763865983471814895562224915658392985168656890608650443974",
@@ -2962,24 +2977,8 @@
    "settled": 1783690503,
    "name": "gkmgkldfmg",
    "exit_price": 0.5648
-  },
-  {
-   "ts": 1783689565,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "49886282303318964434544606851164664333698127985256361511182784657423645654000",
-   "cond": "0x8545a030f00ef7748aa1c00481a9f01ec4b73550aef97b564a3f5a07b31f8f9d",
-   "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
-   "outcome": "Aurora",
-   "price": 0.6799,
-   "stake": 82.22,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 7.01,
-   "settled": 1783689878,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.75
   }
  ],
  "missed_pnl": 89813.04,
- "updated": 1783962629
+ "updated": 1783965174
 }
