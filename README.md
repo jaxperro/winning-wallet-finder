@@ -24,21 +24,26 @@ Three deployed pieces + one static dashboard:
 | piece | where it runs | what it does |
 |-------|--------------|--------------|
 | **daily pipeline** (`live/daily.sh`) | this Mac, launchd **08:00** (a `pmset repeat wakeorpoweron` RTC wake at **07:58** makes this run on time even from sleep — set 2026-07-08, undo with `sudo pmset repeat cancel`; job wrapped in `caffeinate -i` so mid-run idle-sleep can't kill it. Heads-up: the wake fires even lid-closed-in-a-bag — cancel it if the Mac travels) | refresh the bet cache → 5-gate skill scan → fee-aware sharp selection → conviction floors → backtest book → publish JSON feeds to GitHub |
-| **copybot worker** (`copybot.py` via `host/start.sh`) | **Fly.io app `wwf-copybot`, region `arn` (Stockholm), 24/7** — migrated off Railway 2026-07-06: Railway ran it in a US region, which Polymarket's IP geoblock would 403 the moment orders got real; Stockholm is unrestricted AND ~25ms from the CLOB's eu-west-2 primaries. Every boot self-checks the geo-gate (`host/geocheck.py`) | **push mode**: an Alchemy address-activity webhook (`copybot follow set`, Polygon) pings `POST /alchemy` the moment a followed wallet trades (~2–5s detection), signature-verified; a 60s heartbeat settles/publishes and a 5-min backstop poll catches dropped pushes. Paper-copies with real fees/lag/slippage, settles at CLOB resolution, commits its book back to the repo |
-| **REAL-MONEY worker** (same code, `COPYBOT_ROLE=live`) | **Fly.io app `wwf-copybot-live`, `arn`, 24/7, ARMED 2026-07-10** — separate app so the two books never share a process, state file, or failure mode. Trades the signer's **Deposit Wallet** `0x455e…45a1` (pUSD collateral, ~$22 bankroll) via the unified SDK (`polymarket-client`) | **push mode with its OWN Alchemy webhook** (~3–6s sharp-to-fill, chain-proven) + 60s heartbeat + 5-min backstop poll. Paper-parity sizing (4% of equity, $1 venue floor, hard caps retired 2026-07-10 by user decision); in-play `delayed` holds tracked in a pending registry (adopt-on-fill / TTL-cancel); every placement/exit/settle pings Discord. Disarm: `flyctl secrets unset LIVE_CONFIRM -a wwf-copybot-live` |
+| **copybot worker** (`copybot.py` via `host/start.sh`) | **Fly.io app `wwf-copybot`, region `arn` (Stockholm), 24/7** — migrated off Railway 2026-07-06: Railway ran it in a US region, which Polymarket's IP geoblock would 403 the moment orders got real; Stockholm is unrestricted AND ~25ms from the CLOB's eu-west-2 primaries. Every boot self-checks the geo-gate (`host/geocheck.py`) and verifies the clone against `git ls-remote` (stale-replica guard) | **T0 = the RTDS trade stream** (gotcha 18): every platform trade, wallet-attributed, **~1s detection** (measured p50 0.8s over 22k msgs), silent-stale guard force-reconnects a quiet socket. Backstops: the Alchemy address-activity webhook (~3s, `POST /alchemy`, signature-verified), a 5-min backstop poll, and the reconcile janitor. Per-wallet **trade cursor** paginates the activity feed so clip bursts can't scroll past a fetch (H3). 60s heartbeat settles/publishes; paper-copies with real fees/lag/slippage; commits its book back to the repo |
+| **REAL-MONEY worker** (same code, `COPYBOT_ROLE=live`) | **Fly.io app `wwf-copybot-live`, `arn`, 24/7, ARMED 2026-07-10** — separate app so the two books never share a process, state file, or failure mode. Trades the signer's **Deposit Wallet** `0x455e…45a1` (pUSD collateral) via the unified SDK (`polymarket-client`) | Same T0 RTDS detection (`RTDS_DETECT=1`) + Alchemy/poll backstops; **own-fill push** via the CLOB user channel (`userws` in the heartbeat) makes in-play pending holds adopt the moment they match — ws events only *trigger* the resolver, `get_order` stays the arbiter (gotcha 17). Paper-parity sizing (4% of equity, $1 venue floor, no price floor, hard caps retired — the **depth gate** is the scaling rail: skip spread>0.08 or ask5c<$50, stake ≤10% of 5c depth). Every placement/exit/settle pings Discord. Disarm: `flyctl secrets unset LIVE_CONFIRM -a wwf-copybot-live` |
 | **Discord digest** (`live/discord_daily.py`) | end of the daily pipeline | one message/day: the sharp list with profile links + 30-day conviction stats (per-trade pings retired 2026-07-04 for PAPER; the LIVE book pings every real placement/exit/settle) |
 | **dashboard** | [jaxperro.com/trading](https://jaxperro.com/trading) + [jaxperro.com/live](https://jaxperro.com/live) (static, in the `jaxperro` repo) | `/trading` renders the paper book, backtest book and sharp table; `/live` is the REAL MONEY page (reads `live/copybot_live_real.json` — live since 2026-07-10). Both pages share `trading/copybot-section.js` — one renderer, no drift |
 
 **The calibration experiment (running now):** a fresh $1,000 paper book,
 **reset 2026-07-08** so it measures exactly one thing — the follow set in
 **`live/copybot.paper.json`** (the single source of truth) from a clean start,
-with every bookkeeping fix live from day one. The follow set is **Set E**
-(2026-07-08): seven moderate-bet volume wallets — **LSB1, imwalkinghere,
-Kruto2027, 0xbadaf319, gkmgkldfmg, AIcAIc, 1kto1m** — chosen by the *aligned*
-honest replay (see FINDINGS "Aligning the three books"). All are copied on
-their **conviction bets only** (top-20%-by-stake, floor pinned daily from the
+with every bookkeeping fix live from day one. The follow set is **Set E rev 2**
+(2026-07-13, curated on the 5-day forward sample): five volume wallets —
+**Kruto2027 (floor lowered to $80 — +$736 from 2 copies at z=19.3),
+0xbadaf319, gkmgkldfmg, AIcAIc, 1kto1m**. Dropped: imwalkinghere (his flow
+is 5-min BTC Up/Down markets that resolve faster than any copy — 0 copies,
+misses would have LOST) and LSB1 (worst forward P&L, −$397 — demoted to
+`backtest.json` to re-prove). The backtest additionally proves a bench:
+Vahan88, 42021, BikesAreTheBikes, EdwardIN. All are copied on their
+**conviction bets only** (top-20%-by-stake, floor pinned daily from the
 trusted cache p80 via `sync_floors.py`), 4% of equity/bet, **capped at the
-signal's own bet size**. The whale class (12%/bet, follow-all) is retired.
+signal's own bet size** and by the **depth gate** (≤10% of visible 5c ask
+depth). The whale class (12%/bet, follow-all) is retired.
 Every fill records detection lag, price slippage, and the taker fee; missed
 bets are recorded and settled hypothetically. **The point of the fresh book:
 the backtest of the same set says +2103%/30d — an in-sample ceiling. The
@@ -216,6 +221,14 @@ backtest and bot share:
   (better odds, by rule); only adverse drift of **>5 points absolute**
   (`price_guard_abs`, 2026-07-10) is skipped — 0.14→0.15 follows, 0.14→0.20
   skips. (The old relative 5% blocked one-tick moves on cheap in-play books.)
+  **Validated 2026-07-13 by missed-ledger counterfactuals**: 0.05 sits at the
+  EV knee — refused moves of 0.05–0.10 were breakeven, >0.10 ran −20% ROI.
+- **Depth gate** (`config.depth_gate`, 2026-07-13, fitted on 131
+  book-annotated fills): before ordering, skip if spread > 0.08 (market
+  mid-move — median |slippage| ~14% out there) or ask-side 5c depth < $50
+  (dust books mispriced every observed fill), else cap the stake at **10% of
+  visible 5c ask depth** (keeps impact <~2%). Fails open on a book-fetch
+  error. This is the rail that lets stakes scale.
 - **Conviction filter (volume class only)**: copy a wallet's top-20%-by-stake
   bets. Floors are **auto-derived at boot** (p80 of recent position stakes from
   the data-api — the worker has no cache) unless pinned with `"floor":` in the
@@ -249,6 +262,8 @@ runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
 | Alchemy (Polygon) | the push-mode address-activity webhook (instant trade detection) + funding-cluster traces; Notify API (`dashboard.alchemy.com/api`) drives the automatic address-list sync |
 | `bridge.polymarket.com` | deposits/withdrawals for the 2026 pUSD stack — the ONLY sanctioned native-USDC→pUSD conversion (gotcha 16); `/deposit` registers a per-wallet address, `/status/{addr}` tracks delivery |
 | `relayer-v2.polymarket.com` | gasless transactions from the deposit wallet (via `SecureClient.execute_transaction`; needs an in-process Builder API key) |
+| `wss://ws-live-data.polymarket.com` (RTDS) | **T0 detection**: `activity/trades` streams EVERY platform trade, wallet-attributed, ~1s (gotcha 18). Undocumented-but-official (powers polymarket.com's live feed); server-side filters broken → subscribe unfiltered, filter client-side |
+| `wss://ws-subscriptions-clob.polymarket.com/ws/user` | **own-fill push** (live bot): order/trade lifecycle for OUR account (auth = the SDK's derived L2 creds via `client.credentials`); triggers immediate pending-adoption |
 
 **Candidate next sources** (researched 2026-07, not yet wired in):
 
@@ -402,6 +417,29 @@ runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
     poll `get_order`, cancel the remainder, then measure the fill as the
     exchange's CONDITIONAL-balance diff (chain truth beats response parsing).
     Same sweep runs on exception paths (a timed-out POST may still fill).
+    **Corollary (the 2026-07-12 +$7.86 phantom-cash sequel): the balance
+    diff is a FALLBACK, never the primary.** With several pendings on one
+    token, each diff window saw the same balance move and one real
+    1.48-share sell booked 3×. Since then: the order's own `size_matched`
+    is authoritative, every adoption caps at the order's own size and at
+    book holdings, the diff is consulted only when the exchange no longer
+    answers for the order, and only ONE pending may rest per token.
+18. **The RTDS trade stream is the real detection layer** — and it lies in
+    two small ways. `wss://ws-live-data.polymarket.com`, topic
+    `activity`/type `trades`: every platform trade with `proxyWallet`
+    attribution at ~1s (probe: p50 0.8s, p99 6.4s over 22k msgs). It is
+    undocumented but official (spec'd in Polymarket/real-time-data-client;
+    powers the site's live feed). Quirk 1: server-side `filters` silently
+    return nothing (RTDC issue #34) — subscribe unfiltered and filter
+    client-side (~45 msg/s peak, trivial). Quirk 2: the socket can go
+    SILENT while staying connected (35 min once) — no close event, so an
+    on-close reconnect never fires; the listener force-closes after 120s
+    without messages. Both bots keep Alchemy push + 300s poll as backstops:
+    losing RTDS degrades detection, never blinds it. The live bot also
+    streams its OWN fills from the CLOB user channel (auth =
+    `client.credentials`) purely as a resolver TRIGGER — heartbeat fields
+    `rtds up Ns · userws up` are the liveness truth, since boot log lines
+    scroll out of Fly's buffer.
 
 ---
 

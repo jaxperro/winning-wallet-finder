@@ -3,13 +3,18 @@
 
 Marries the two halves you already built:
 
-  * webhook_receiver.py's **push** trigger — Alchemy's Address-Activity webhook
-    POSTs here the instant a watched wallet transacts on Polygon. No polling.
+  * a layered **push** trigger stack — T0 is the RTDS trade stream
+    (`RtdsListener`: every platform trade, wallet-attributed, ~1s — README
+    gotcha 18), backstopped by Alchemy's Address-Activity webhook (~3s,
+    POST /alchemy), a 5-min backstop poll over per-wallet trade cursors,
+    and the reconcile janitor. The live bot also streams its OWN fills
+    (`UserFillsListener`) to adopt in-play holds the moment they match.
   * copytrade.py's hardened **execution engine** — paper executor + the LIVE
     executor on the unified SDK (`polymarket-client`; py-clob-client is
     archived and the CLOB rejects its orders — README gotcha 16), risk gates,
-    absolute price guard, no-backfill seeding, proportional entry/exit
-    mirroring, and the pending-order registry for in-play `delayed` holds
+    absolute price guard, the depth gate (stake ≤10% of visible 5c ask
+    depth), no-backfill seeding, proportional entry/exit mirroring, and the
+    pending-order registry for in-play `delayed` holds
     (gotcha 17: an accepted-but-held order is NEVER a rejection).
 
 Flow:
