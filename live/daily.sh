@@ -52,6 +52,15 @@ python3 conviction_scan.py
 python3 validate_timing.py
 echo "[daily] $(date '+%F %T') 5/7 floors: pin copy-bot p80 conviction floors -> copybot.paper.json"
 python3 sync_floors.py || echo "[daily] floor sync skipped"
+# parity guard (2026-07-13 audit): class_pct lives in BOTH copybot.paper.json
+# and backtest.json with no generator — warn if they silently desync so the
+# paper book and backtest don't drift apart on sizing.
+python3 - <<'PY' || true
+import json
+p=json.load(open("copybot.paper.json")).get("follow",{}).get("class_pct")
+b=json.load(open("backtest.json")).get("class_pct")
+if p!=b: print(f"[daily] ⚠ class_pct DESYNC: paper {p} != backtest {b}")
+PY
 echo "[daily] $(date '+%F %T') portfolio: cache-based \$1k book -> portfolio.json"
 python3 portfolio.py || echo "[daily] portfolio skipped"
 echo "[daily] $(date '+%F %T') calibration: live-book vs model, one row/day"

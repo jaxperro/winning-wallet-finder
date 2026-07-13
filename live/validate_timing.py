@@ -418,7 +418,21 @@ def main():
               f"{(str(c['held_won'])+'-'+str(c['held_lost'])):>9}"
               f"{sp:>5.0f}%{ld:>9}  {(c.get('name') or c['wallet'][:10])}")
 
-    json.dump(sharps, open(os.path.join(HERE, "watch_sharps.json"), "w"), indent=2)
+    # GENERATED-ONLY file (2026-07-13 audit): regenerated wholesale nightly —
+    # any hand edit here is silently clobbered. Manual follow decisions live
+    # in copybot.paper.json, not here. Log the delta vs the prior file so a
+    # replacement always leaves an audit trail in daily.log. Format stays a
+    # plain list (the dashboard + discord_daily read it as one).
+    path = os.path.join(HERE, "watch_sharps.json")
+    try:
+        prev = {s.get("wallet") for s in json.load(open(path))}
+        cur = {s.get("wallet") for s in sharps}
+        if cur - prev or prev - cur:
+            print(f"   sharps Δ: +{len(cur - prev)} {[w[:10] for w in cur - prev]} "
+                  f"· -{len(prev - cur)} {[w[:10] for w in prev - cur]}")
+    except Exception:
+        pass
+    json.dump(sharps, open(path, "w"), indent=2)
     print(f"\n-> watch_sharps.json ({len(sharps)} copy-positive holders)")
 
 

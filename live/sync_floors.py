@@ -30,6 +30,35 @@ import trust      # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAPER = os.path.join(HERE, "copybot.paper.json")
+BACKTEST = os.path.join(HERE, "backtest.json")
+
+
+def mirror_pins_to_backtest(paper_ws):
+    """Keep backtest.json's floors on the SAME pins as the paper book so the
+    three books stay comparable (the audit found the code never did this
+    despite the comment claiming it — a floor_pin=80 on Kruto in paper vs a
+    dynamic p80=125.61 in the backtest silently defeated the calibration)."""
+    pins = {w["wallet"].lower(): w["floor_pin"]
+            for w in paper_ws if w.get("floor_pin") is not None}
+    if not pins:
+        return
+    try:
+        bt = json.load(open(BACKTEST))
+    except Exception:
+        return
+    touched = 0
+    for w in bt.get("wallets", []):
+        p = pins.get(w["wallet"].lower())
+        if p is not None:
+            w["floor_pin"] = round(float(p), 2)
+            if w.get("floor") != round(float(p), 2):
+                touched += 1
+            w["floor"] = round(float(p), 2)
+    if touched:
+        tmp = BACKTEST + ".tmp"
+        json.dump(bt, open(tmp, "w"), indent=2)
+        os.replace(tmp, BACKTEST)
+        print(f"[floors] mirrored {len(pins)} pin(s) into backtest.json")
 
 
 def trusted_p80(wallet, now=None):
@@ -71,12 +100,19 @@ def main():
             continue                        # no trusted sized bets — leave as-is
         new = round(p80, 2)
         old = w.get("floor")
+        # a big UNPINNED gap = a hand edit about to be reverted. floor_pin is
+        # the only protected key; warn loudly so a direct floor edit doesn't
+        # vanish silently at 08:00 (the trap behind the original Kruto bug).
+        if old is not None and abs(old - new) > 5 and abs(old - new) / max(new, 1) > 0.15:
+            print(f"[floors] ⚠ {w.get('name', w['wallet'][:8])} floor {old}→{new} "
+                  f"(p80) — was this a manual edit? add \"floor_pin\": {old} to keep it")
         w["floor"] = new
         if old is None or abs((old or 0) - new) > 0.5:
             changed.append((w.get("name", w["wallet"][:8]), old, new))
     tmp = PAPER + ".tmp"
     json.dump(cfg, open(tmp, "w"), indent=2)
     os.replace(tmp, PAPER)
+    mirror_pins_to_backtest(ws)
     print(f"[floors] pinned {len(ws)} trusted-p80 floors to copybot.paper.json"
           + (f"; changed: " + ", ".join(f"{n} {o}→{v:g}" for n, o, v in changed)
              if changed else " (no material change)"))
