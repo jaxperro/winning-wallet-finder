@@ -23,16 +23,15 @@
       "floor": 457.26
     },
     {
-      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-      "name": "AIcAIc",
-      "class": "volume",
-      "floor": 300.0
-    },
-    {
       "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
       "name": "1kto1m",
       "class": "volume",
       "floor": 328.07
+    },
+    {
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "name": "BikesAreTheBikes",
+      "class": "volume"
     }
   ],
   "follow": {
