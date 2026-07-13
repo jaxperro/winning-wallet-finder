@@ -764,6 +764,22 @@
  ],
  "missed": [
   {
+   "ts": 1783941532,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "72815518641084313518338622403512394035277151459724826799424021294207163996674",
+   "cond": "0xa8c3b49a760866402205c38a6b7fc007a80676fce85af89232afd219d021236a",
+   "title": "WTI Crude Oil (WTI) Up or Down on July 13?",
+   "outcome": "Up",
+   "price": 0.931,
+   "stake": 1.0,
+   "reason": "order rejected: exception: max_price must conform to tick size 0.001 with at",
+   "status": "sold",
+   "pnl": 0.01,
+   "settled": 1783945337,
+   "name": "0xbadaf319",
+   "exit_price": 0.9469
+  },
+  {
    "ts": 1783942543,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "25252139719387305389090759227041579550456702736511482208905350724277919018200",
@@ -788,21 +804,6 @@
    "price": 0.26,
    "stake": 1.0,
    "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783941532,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "72815518641084313518338622403512394035277151459724826799424021294207163996674",
-   "cond": "0xa8c3b49a760866402205c38a6b7fc007a80676fce85af89232afd219d021236a",
-   "title": "WTI Crude Oil (WTI) Up or Down on July 13?",
-   "outcome": "Up",
-   "price": 0.931,
-   "stake": 1.0,
-   "reason": "order rejected: exception: max_price must conform to tick size 0.001 with at",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -1734,6 +1735,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 1050.29,
- "updated": 1783944738
+ "missed_pnl": 1050.3,
+ "updated": 1783945338
 }
