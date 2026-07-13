@@ -40,13 +40,13 @@
   "1kto1m": "volume"
  },
  "floors": {
-  "LSB1": 261.31,
-  "imwalkinghere": 122.43,
-  "Kruto2027": 125.94,
-  "0xbadaf319": 44.38,
-  "gkmgkldfmg": 397.8,
+  "LSB1": 267.75,
+  "imwalkinghere": 122.12,
+  "Kruto2027": 125.61,
+  "0xbadaf319": 44.64,
+  "gkmgkldfmg": 457.26,
   "AIcAIc": 298.64,
-  "1kto1m": 322.02
+  "1kto1m": 327.04
  },
  "bets": [
   {
@@ -2907,5 +2907,5 @@
   }
  ],
  "missed_pnl": 89800.74,
- "updated": 1783906280
+ "updated": 1783907316
 }
