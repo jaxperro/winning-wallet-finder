@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1922.79,
- "deployed": 362.57,
+ "cash": 1831.19,
+ "deployed": 453.98,
  "reserve": 0.0,
- "realized": 1285.33,
+ "realized": 1285.14,
  "adjustments": 0.03,
- "ledger_drift": 0.01,
- "open_count": 7,
- "fees_paid": 171.2,
+ "ledger_drift": 0.0,
+ "open_count": 8,
+ "fees_paid": 171.39,
  "fee_rate": 0.03,
  "lag": {
-  "n": 102,
-  "n24": 11,
-  "avg_s": 86.8,
-  "avg_slip_pct": -0.1434,
+  "n": 104,
+  "n24": 13,
+  "avg_s": 78.0,
+  "avg_slip_pct": -0.1228,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,24 @@
   "1kto1m": 327.04
  },
  "bets": [
+  {
+   "token": "72815518641084313518338622403512394035277151459724826799424021294207163996674",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Up",
+   "title": "WTI Crude Oil (WTI) Up or Down on July 13?",
+   "their_price": 0.94,
+   "my_price": 0.931,
+   "slippage_pct": -0.0096,
+   "shares": 98.18,
+   "cost": 91.4,
+   "fee": 0.19,
+   "opened": 1783941506,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "112398855248126389642334724080634566219399886008841203075173521868162852635909",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2938,5 +2956,5 @@
   }
  ],
  "missed_pnl": 90279.73,
- "updated": 1783940145
+ "updated": 1783941564
 }
