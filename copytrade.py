@@ -496,6 +496,15 @@ class CopyTrader:
                 self.record_miss(wallet, token, cond, title, outcome, price,
                                  want_usd, reason)
             return
+        # ONE outstanding in-play hold per token: a second order while a
+        # pending rests re-buys the same signal and poisons the resolver's
+        # balance-diff window (2026-07-12: overlapping pendings booked one
+        # real fill several times → +$7.86 phantom cash).
+        if any(po.get("token") == token
+               for po in self.state.get("pending_orders", [])):
+            self.log(f"{kind} {label} — skip (in-play hold already pending "
+                     "on this token)")
+            return
         shares = allowed / price
         res = self.ex.buy(token, shares, price, {"title": title})
         if not res["ok"]:
@@ -552,6 +561,11 @@ class CopyTrader:
             return
         price = self._live_price(token, "sell")
         if price is None:
+            return
+        if any(po.get("token") == token
+               for po in self.state.get("pending_orders", [])):
+            self.log(f"EXIT {label} — skip (in-play hold already pending on "
+                     "this token; resolver owns it)")
             return
         res = self.ex.sell(token, sell_shares, price, {})
         if not res["ok"]:

@@ -381,7 +381,8 @@ class LedgerLiveExecutor:
                                                 deadline_s=8, cancel=False)
             if filled <= 0:
                 return {"ok": False, "filled_shares": 0.0, "price": price,
-                        "pending": {"order_id": r.order_id, "bal0": bal0},
+                        "pending": {"order_id": r.order_id, "bal0": bal0,
+                                    "sz": sz},
                         "resp": {"order_id": r.order_id, "status": r.status,
                                  "note": "in-play hold — pending resolver"},
                         "paper": False}
@@ -1194,10 +1195,12 @@ class Copybot:
         for p in pend:
             tok = p["token"]
             px, status, matched = p["price"], "gone", 0.0
+            order_view = False            # did the exchange answer for THIS order?
             try:
                 o = ex.client.get_order(order_id=p["order_id"])
                 matched = float(o.size_matched or 0)
                 status = o.status
+                order_view = True
                 if matched > 0:
                     px = float(o.price or px)
             except Exception:
@@ -1211,13 +1214,26 @@ class Copybot:
                     ex.client.cancel_order(order_id=p["order_id"])
                 except Exception:
                     pass
-            filled = matched
-            try:                          # balance diff is the arbiter
-                bal1 = ex._shares_held(tok)
-                diff = (bal1 - p["bal0"]) if p["side"] == "BUY" else (p["bal0"] - bal1)
-                filled = max(filled, diff)
-            except Exception:
-                pass
+            # THE 2026-07-12 LESSON (+$7.86 phantom cash): with several
+            # pendings on ONE token, each balance-diff window sees the SAME
+            # balance move, so max(matched, diff) booked one real fill many
+            # times (a 1.56-share position "sold" 4.52 shares). The order's
+            # own matched size is authoritative; the diff is a FALLBACK for
+            # orders gone from the open view, and everything caps at the
+            # order's own size.
+            sz_cap = p.get("sz") or p.get("shares_req") or float("inf")
+            filled = min(matched, sz_cap)
+            if filled <= 0 and not order_view:
+                # the exchange no longer knows the order — ONLY then is the
+                # balance diff worth consulting (a definitive killed/0 answer
+                # above means unfilled, full stop)
+                try:
+                    bal1 = ex._shares_held(tok)
+                    diff = (bal1 - p["bal0"]) if p["side"] == "BUY" \
+                        else (p["bal0"] - bal1)
+                    filled = min(max(diff, 0.0), sz_cap)
+                except Exception:
+                    pass
             if filled <= 0.01:
                 log(f"pending expired unfilled: {p['outcome']} · {p['title'][:40]}")
                 if p["side"] == "BUY" and not p.get("is_add"):
@@ -1258,12 +1274,16 @@ class Copybot:
                                   f"(held {int(now - p['ts'])}s)"))
             else:                          # SELL adoption: reduce the position
                 mine = st["my_pos"].get(tok)
-                if mine and mine.get("shares"):
-                    frac = min(1.0, filled / mine["shares"])
-                    mine["cost"] *= (1 - frac)
-                    mine["shares"] -= filled
-                    if mine["shares"] <= 0.01:
-                        st["my_pos"].pop(tok, None)
+                if not mine or not mine.get("shares"):
+                    log(f"pending sell adoption: no position left for "
+                        f"{p['title'][:36]} — dropping (nothing to book)")
+                    continue
+                filled = min(filled, mine["shares"])   # book can't sell more
+                frac = min(1.0, filled / mine["shares"])
+                mine["cost"] *= (1 - frac)
+                mine["shares"] -= filled
+                if mine["shares"] <= 0.01:
+                    st["my_pos"].pop(tok, None)
                 ex.fills.append({"side": "SELL", "token": tok,
                                  "shares": filled, "price": px})
                 self._drain_fills()
@@ -1294,6 +1314,10 @@ class Copybot:
             mine = st["my_pos"].get(tok)
             if not mine or mine.get("shares", 0) <= 0.01:
                 continue                    # settled/sold meanwhile — done
+            if any(po.get("token") == tok
+                   for po in st.get("pending_orders", [])):
+                keep.append(r)              # resolver owns this token right now
+                continue
             shares = min(r["shares"], mine["shares"])
             price = self.engine._live_price(tok, "sell")
             if price is None:
