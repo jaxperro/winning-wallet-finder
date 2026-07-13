@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 91.33,
+ "stake": 91.32,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1970.63,
- "deployed": 312.63,
+ "cash": 1909.07,
+ "deployed": 373.91,
  "reserve": 0.0,
- "realized": 1283.23,
+ "realized": 1282.95,
  "adjustments": 0.03,
  "ledger_drift": 0.0,
- "open_count": 9,
- "fees_paid": 170.88,
+ "open_count": 10,
+ "fees_paid": 171.16,
  "fee_rate": 0.03,
  "lag": {
-  "n": 101,
-  "n24": 15,
-  "avg_s": 51.4,
-  "avg_slip_pct": -0.1091,
+  "n": 102,
+  "n24": 16,
+  "avg_s": 60.5,
+  "avg_slip_pct": -0.1051,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,24 @@
   "1kto1m": 327.04
  },
  "bets": [
+  {
+   "token": "59710612631848725344763865983471814895562224915658392985168656890608650443974",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "WTI Crude Oil (WTI) closes above $76 on July 13?",
+   "their_price": 0.89,
+   "my_price": 0.85,
+   "slippage_pct": -0.0449,
+   "shares": 72.1,
+   "cost": 61.28,
+   "fee": 0.28,
+   "opened": 1783933577,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "18802393565291712436899729429089924858104497792982518694284454990866908025798",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1942,6 +1960,21 @@
  ],
  "missed": [
   {
+   "ts": 1783933772,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "59710612631848725344763865983471814895562224915658392985168656890608650443974",
+   "cond": "0x1d608eeaf0869a3f906ed50c0340d97a592f9cdcdf7b475524de5d75d847eec8",
+   "title": "WTI Crude Oil (WTI) closes above $76 on July 13?",
+   "outcome": "No",
+   "price": 0.8899,
+   "stake": 54.54,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783918704,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "70962318786911412106087113936707965213554584784375688261632728234676581794613",
@@ -2902,24 +2935,8 @@
    "settled": 1783908697,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783908624,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "47094384573188159979825788972027395641855848273342934284326263699223525415354",
-   "cond": "0xd84cf73796c229c5fd8d5987f3ecbc93d0c469e1b31d8578820743afb07d4e54",
-   "title": "Exact Score: Jordan 0 - 3 Argentina?",
-   "outcome": "No",
-   "price": 0.9172,
-   "stake": 91.33,
-   "reason": "too slow to follow (21534m late)",
-   "status": "won",
-   "pnl": 8.02,
-   "settled": 1783908697,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 90280.17,
- "updated": 1783933518
+ "updated": 1783933774
 }
