@@ -764,6 +764,21 @@
  ],
  "missed": [
   {
+   "ts": 1783918819,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "70962318786911412106087113936707965213554584784375688261632728234676581794613",
+   "cond": "0xec6a9c47b73a00f12acbd46e137a9e5da64224be4efdbfea479d64261a44d52f",
+   "title": "Will Palantir Technologies Inc. (PLTR) hit (LOW) $102 in July?",
+   "outcome": "No",
+   "price": 0.7929,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783915414,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "17233538369622331395311990544159709275677306359062920824570611974340792501916",
@@ -1721,24 +1736,8 @@
    "settled": 1783908726,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783908655,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "41126122403517169524266031190434725666512241418948402732824405912018206626414",
-   "cond": "0x23d16c03078139cb18e2636afe6bbacee2536d25ae9315caf423fac4663f1edc",
-   "title": "Exact Score: Dalian Yingbo FC 1 - 3 Shanghai Shenhua FC?",
-   "outcome": "No",
-   "price": 0.9473,
-   "stake": 1.0,
-   "reason": "too slow to follow (20957m late)",
-   "status": "won",
-   "pnl": 0.05,
-   "settled": 1783908726,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 1052.71,
- "updated": 1783916975
+ "missed_pnl": 1052.52,
+ "updated": 1783918821
 }
