@@ -1,4 +1,33 @@
-# Session handoff — 2026-07-10 (rev 8: RTDS T0 detection — paper shadow run live)
+# Session handoff — 2026-07-13 (rev 9: RTDS on BOTH books; oversell + H3 fixed)
+
+## Since rev 8 (2026-07-11 → 07-13)
+
+- **RTDS shadow verdict: GO** — 916 detections, p50 0.8s / p99 6.4s / max
+  9.9s (in-play emits within 10s). **RTDS_DETECT=1 is live on the
+  real-money bot**; detections stream on both books; Alchemy + 300s poll
+  remain backstops. Silent-stale guard force-reconnects a 120s-quiet
+  socket (the stream once sat "up" delivering nothing for 35 min).
+- **Phantom-cash incident (+$7.86, book-only, alarms caught it)**:
+  overlapping pendings on one token each read the same balance move —
+  one real 1.48-share sell booked 3×. FIXED: order-size caps every
+  adoption, balance-diff only when the exchange no longer answers, SELLs
+  cap at book holdings, ONE pending per token (engine + retries refuse
+  while the resolver owns a token). Book rebuilt from chain ($11.21,
+  drift 0, poisoned bets corrected from real fills, residual −$0.08).
+- **No price floor** (user call after a 0.001 longshot was blocked):
+  risk.min_price 0 on both books, cap stays 0.95; executor protected
+  prices now 4dp and price-proportional (2dp zeroed sub-penny bounds).
+- **H3 fixed**: per-wallet trade cursor + paginated activity fetch (5×100,
+  walks to the last processed ts) — bursts can't scroll past a page.
+- **clone-guard works now**: verifies over `git ls-remote` (the REST API
+  is unreachable from Fly boxes — Bearer 401 + anon rate-limit; it failed
+  open on every boot until 07-13). Both boots log `clone verified @ sha`.
+- preflight_live.py rewritten for the unified SDK (deposit wallet, pUSD,
+  book access, RTDS stream, geo). Drift ALARM floor 1c→5c (penny rounding
+  isn't a bug; the self-heal path keeps its threshold).
+- Live book truth: 31 copies, realized −$5.32 lifetime (day-one incident
+  dominates), ~$11.2 cash + LAB + 1 small open. User to-dos: polymarket.us
+  key REVOKED, $32 RESOLVED; Discord webhook rotation still open.
 
 ## RTDS shadow run (started 2026-07-10 22:26Z)
 
