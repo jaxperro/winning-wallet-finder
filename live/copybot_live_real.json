@@ -766,26 +766,27 @@
   {
    "ts": 1783958437,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "6077633070230470776652108532581280898684441958087418509077540637819937906663",
-   "cond": "0x636f780f794635820e8cafe81924ef2dd67622fc01b6b2e5e64e9cc99593a005",
-   "title": "Will Iran announce withdrawal from MOU negotiations by July 31?",
-   "outcome": "Yes",
-   "price": 0.3949,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783958437,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "76755883373039851290695610249455633595892527905785960150127813908400558868227",
    "cond": "0xa5bd4b831f180564aef6a119e1f94a5d574344e25a546b7a1f14aec7cc6e2d83",
    "title": "Will Iran announce withdrawal from MOU negotiations by July 24?",
    "outcome": "No",
    "price": 0.5789,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 0.14,
+   "settled": 1783959680,
+   "name": "0xbadaf319",
+   "exit_price": 0.676
+  },
+  {
+   "ts": 1783958437,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "6077633070230470776652108532581280898684441958087418509077540637819937906663",
+   "cond": "0x636f780f794635820e8cafe81924ef2dd67622fc01b6b2e5e64e9cc99593a005",
+   "title": "Will Iran announce withdrawal from MOU negotiations by July 31?",
+   "outcome": "Yes",
+   "price": 0.3949,
    "stake": 1.0,
    "reason": "not copied in the detection window (reconciled)",
    "status": "open",
@@ -1717,6 +1718,6 @@
    "exit_price": 0.78
   }
  ],
- "missed_pnl": 1042.05,
- "updated": 1783958440
+ "missed_pnl": 1042.19,
+ "updated": 1783959681
 }
