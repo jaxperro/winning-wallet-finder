@@ -2021,6 +2021,21 @@
  ],
  "missed": [
   {
+   "ts": 1783973850,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "113811126480011515107509517146411015240698493006125965388028738076036215548925",
+   "cond": "0x7b815d5ee7f26512f22e42943519b051ce430586fd88fd0acb167ab2252a688b",
+   "title": "Over $95M committed to the Credible public sale?",
+   "outcome": "No",
+   "price": 0.7575,
+   "stake": 56.21,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783965172,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "68863380862470769473817017624526026576800718695897153538391077057952557372819",
@@ -2960,24 +2975,8 @@
    "settled": 1783690824,
    "name": "gkmgkldfmg",
    "exit_price": 0.75
-  },
-  {
-   "ts": 1783690401,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "84864321844564005123638956205037810292837868807558456388220877376462415276538",
-   "cond": "0x8545a030f00ef7748aa1c00481a9f01ec4b73550aef97b564a3f5a07b31f8f9d",
-   "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
-   "outcome": "PlayTime",
-   "price": 0.56,
-   "stake": 82.17,
-   "reason": "price moved 0.49\u21920.56",
-   "status": "sold",
-   "pnl": -1.46,
-   "settled": 1783690503,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.5648
   }
  ],
  "missed_pnl": 89813.04,
- "updated": 1783973575
+ "updated": 1783973853
 }
