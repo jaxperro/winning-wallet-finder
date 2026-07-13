@@ -764,6 +764,21 @@
  ],
  "missed": [
   {
+   "ts": 1783939156,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "72663413633237870742152602912076949024714881200491601361514812636170232854563",
+   "cond": "0xd50d0276f9b6c57d7a1b23be8be23a8dcdffed0aebae867de372b26593a9a238",
+   "title": "Hyperbeat FDV above $300M one day after launch?",
+   "outcome": "No",
+   "price": 0.898,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783918819,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "70962318786911412106087113936707965213554584784375688261632728234676581794613",
@@ -1720,24 +1735,8 @@
    "settled": 1783908726,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783908655,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "101870693068643777907933185168096005823100471428921617507976765091257562327892",
-   "cond": "0xca1f4760e175d71d1c7677dbc56a1856dc2cee6a4d8de8275a16dbca716afd24",
-   "title": "Will Austria win on 2026-06-27?",
-   "outcome": "Yes",
-   "price": 0.6696,
-   "stake": 1.0,
-   "reason": "too slow to follow (21534m late)",
-   "status": "lost",
-   "pnl": -1.01,
-   "settled": 1783908726,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 1051.3,
- "updated": 1783938561
+ "missed_pnl": 1048.71,
+ "updated": 1783939158
 }
