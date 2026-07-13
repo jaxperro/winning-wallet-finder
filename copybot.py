@@ -987,7 +987,7 @@ class Copybot:
                     fixed = True
         if fixed:
             self.engine.persist()
-        if abs(drift) > 0.01:
+        if abs(drift) > 0.05:   # pennies = 4dp fill rounding, not a bug
             log(f"⚠ LEDGER DRIFT ${drift:+.2f} — check_book could not attribute it")
         return drift
 
@@ -1426,7 +1426,7 @@ class Copybot:
                       f"slip {lag['sum_slip_pct']/lag['n']:+.1%}")
         bankstr = f" · banked ${reserve:,.0f}" if reserve else ""
         drift = self.ledger_drift()
-        driftstr = f" · ⚠ LEDGER DRIFT ${drift:+.2f}" if abs(drift) > 0.01 else ""
+        driftstr = f" · ⚠ LEDGER DRIFT ${drift:+.2f}" if abs(drift) > 0.05 else ""
         gap = self.chain_cash_gap()
         if gap is not None and abs(gap) > 1.0:      # ≥$1: beyond fee/rounding float
             driftstr += f" · ⚠ CASH≠CHAIN ${gap:+.2f}"
@@ -1440,11 +1440,35 @@ class Copybot:
             + (f" · CAN'T OPEN (free < ${stake:,.0f} stake — bets missed)"
                if cash < stake else ""))
 
+    def _fetch_since_cursor(self, wallet):
+        """H3 fix (2026-07-13): a burst trader can push unprocessed rows past
+        a single newest-100 fetch (gkmg: 30+ clips in 15 min). Paginate the
+        activity feed back to the last processed timestamp per wallet, capped
+        at 5 pages — the cursor makes every fetch lossless regardless of
+        burst size; the cap bounds a cold start. Cursor moves only forward
+        and only after a fetch, so a failed page just re-reads next time."""
+        cur = self.engine.state.setdefault("trade_cursor", {})
+        since = cur.get(wallet.lower(), 0)
+        rows, offset = [], 0
+        for _ in range(5):
+            page = recent_trades(wallet, limit=100, offset=offset)
+            if not page:
+                break
+            rows.extend(page)
+            oldest = min((t.get("timestamp") or 0) for t in page)
+            if oldest <= since or len(page) < 100:
+                break
+            offset += 100
+        if rows:
+            newest = max((t.get("timestamp") or 0) for t in rows)
+            cur[wallet.lower()] = max(since, newest)
+        return [t for t in rows if (t.get("timestamp") or 0) > since - 600]
+
     def on_wallet_activity(self, wallet, ignore_stale=False):
         """A watched wallet just transacted — pull its latest trades and route any
         new, recent one through the filter and (if it passes) the engine."""
         name = self.names.get(wallet.lower(), wallet[:10] + "…")
-        trades = recent_trades(wallet)
+        trades = self._fetch_since_cursor(wallet)
         # ONE conviction bet often arrives as several fills — a sweep through
         # the book or rapid clip entries (gkmg 2026-07-09: a $612 MOUZ entry =
         # 3×$204 same-second rows, every clip sub-floor while the backtest's

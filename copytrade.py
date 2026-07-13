@@ -167,10 +167,13 @@ def their_positions(wallet):
     return pos
 
 
-def recent_trades(wallet, limit=100):
-    """Newest-first TRADE activity for a wallet."""
+def recent_trades(wallet, limit=100, offset=0):
+    """Newest-first TRADE activity for a wallet. `offset` pages deeper —
+    the copybot's per-wallet cursor fetch (H3) walks back through bursts
+    that overflow a single page."""
     return get_json("/activity",
-                    {"user": wallet, "type": "TRADE", "limit": limit}) or []
+                    {"user": wallet, "type": "TRADE", "limit": limit,
+                     "offset": offset}) or []
 
 
 def event_key(t):

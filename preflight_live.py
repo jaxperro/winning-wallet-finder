@@ -1,28 +1,31 @@
 #!/usr/bin/env python3
 """Read-only preflight for live trading — verifies credentials, balance, and
-market access WITHOUT placing any order.
+market access on the UNIFIED SDK (polymarket-client) WITHOUT placing any
+order. (Rewritten 2026-07-13: the original validated the archived
+py-clob-client stack, whose orders the CLOB rejects — gotcha 16.)
 
     python3 preflight_live.py            # uses config.live.json
+    python3 preflight_live.py --config config.live.example.json   # Fly path
 
 Checks, in order:
-  1. config.live.json parses; private key + funder present
-  2. CLOB auth: derive L2 API creds from the key (proves the key signs)
-  3. USDC balance + allowance on the funder (proves deposits landed and the
-     proxy can spend — the balance the bot will actually trade with)
-  4. live order book fetch for one of the followed wallets' recent markets
-     (proves market-data access end to end)
-  5. Polygon RPC + EOA POL gas balance (needed by auto-redeem)
+  1. config parses; private key present (env LIVE_PRIVATE_KEY wins)
+  2. unified-SDK auth: SecureClient.create resolves the Deposit Wallet
+  3. pUSD collateral via get_balance_allowance — the balance the exchange
+     will actually let the bot trade with (raw USDC reads 0 — gotcha 16)
+  4. live order book fetch for a followed wallet's recent market
+  5. RTDS trade stream: connect + subscribe + first message (T0 detection)
+  6. geo-gate verdict (informational on a blocked box; the bot enforces
+     fatally at boot)
 
 Exit code 0 = every check passed; anything else prints what to fix.
 """
 
 import json
-import sys
-import time
-import urllib.request
+import os
 import ssl
+import sys
+import urllib.request
 
-CLOB = "https://clob.polymarket.com"
 _SSL = ssl._create_unverified_context()
 OK, BAD = "  ✓", "  ✗"
 failures = []
@@ -34,113 +37,92 @@ def check(name, fn):
         print(f"{OK} {name}" + (f" — {msg}" if msg else ""))
     except Exception as e:
         failures.append(name)
-        print(f"{BAD} {name} — {e}")
+        print(f"{BAD} {name} — {type(e).__name__}: {e}")
+
+
+def get(url):
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    return json.load(urllib.request.urlopen(req, timeout=15, context=_SSL))
 
 
 def main():
-    # config: --config PATH, else config.live.json. Secrets: env wins (the Fly
-    # worker path — LIVE_PRIVATE_KEY / LIVE_FUNDER_ADDRESS / LIVE_SIGNATURE_TYPE
-    # / ALCHEMY_RPC_URL — same 1.2 override chain as copybot; no key file needs
-    # to exist anywhere on the box).
-    import os
     path = "config.live.json"
     if "--config" in sys.argv:
         path = sys.argv[sys.argv.index("--config") + 1]
     cfg = json.load(open(path))
     live = cfg.setdefault("live", {})
-    for env, key in (("LIVE_PRIVATE_KEY", "private_key"),
-                     ("LIVE_FUNDER_ADDRESS", "funder_address"),
-                     ("LIVE_SIGNATURE_TYPE", "signature_type"),
-                     ("ALCHEMY_RPC_URL", "rpc_url")):
-        if (os.environ.get(env) or "").strip():
-            live[key] = os.environ[env].strip()    # tolerate pasted newlines
-    if "watchlist" not in cfg and cfg.get("wallets"):
-        cfg["watchlist"] = [w["wallet"] for w in cfg["wallets"]]
-    pk, funder = live.get("private_key"), live.get("funder_address")
-    if not pk or not funder:
-        sys.exit("fill live.private_key and live.funder_address (config or env) first\n"
-                 "(Polymarket profile -> the deposit/profile address is the funder;\n"
-                 " email-login accounts export the key in Settings)")
+    if (os.environ.get("LIVE_PRIVATE_KEY") or "").strip():
+        live["private_key"] = os.environ["LIVE_PRIVATE_KEY"].strip()
+    pk = live.get("private_key")
+    if not pk:
+        sys.exit(f"{BAD} no live.private_key in {path} and no LIVE_PRIVATE_KEY env")
+    print(f"{OK} config parses — key present, pct {cfg.get('bankroll_pct')}, "
+          f"band [{cfg['risk'].get('min_price')},{cfg['risk'].get('max_price')}]")
 
-    from py_clob_client.client import ClobClient
-    from py_clob_client.clob_types import BalanceAllowanceParams, AssetType
-
-    client = ClobClient(host=CLOB, key=pk, chain_id=137,
-                        signature_type=int(live.get("signature_type") or 1), funder=funder)
+    from polymarket import SecureClient
+    client = SecureClient.create(private_key=pk)
 
     def auth():
-        creds = client.create_or_derive_api_creds()
-        client.set_api_creds(creds)
-        return f"L2 api key {creds.api_key[:8]}… derived (signer {client.get_address()[:10]}…)"
-    check("CLOB auth (key signs, creds derive)", auth)
+        return f"deposit wallet {client.wallet}"
+    check("unified-SDK auth (SecureClient.create)", auth)
 
-    def balance():
-        r = client.get_balance_allowance(
-            BalanceAllowanceParams(asset_type=AssetType.COLLATERAL))
-        bal = int(r.get("balance", 0)) / 1e6
-        if bal <= 0:
-            raise RuntimeError("USDC balance is $0 — deposit test funds to the funder address first")
-        return f"${bal:,.2f} USDC spendable on {funder[:10]}…"
-    check("USDC balance on funder", balance)
+    def collateral():
+        b = client.get_balance_allowance(asset_type="COLLATERAL")
+        usd = b.balance / 1e6
+        if usd <= 0:
+            raise RuntimeError("exchange-view collateral is $0 — bankroll "
+                               "not wrapped to pUSD? (gotcha 16)")
+        return f"${usd:,.2f} pUSD, {len(b.allowances)} spender allowances"
+    check("exchange-view collateral (pUSD)", collateral)
 
     def book():
-        # a sharp's LATEST trade is often an in-play market that has already
-        # closed (404 = "no orderbook", which itself proves connectivity) —
-        # walk recent trades until one still has a live book
-        last = None
-        for w in cfg["watchlist"]:
-            req = urllib.request.Request(
-                "https://data-api.polymarket.com/activity?user=" + w
-                + "&type=TRADE&limit=10",
-                headers={"User-Agent": "Mozilla/5.0"})
-            for t in json.loads(urllib.request.urlopen(req, timeout=15, context=_SSL).read()):
-                try:
-                    ob = client.get_order_book(t["asset"])
-                except Exception as e:
-                    last = e
+        for w in [x["wallet"] for x in cfg.get("wallets", [])][:3]:
+            for t in get(f"https://data-api.polymarket.com/activity?user={w}"
+                         f"&type=TRADE&limit=5"):
+                tok = t.get("asset")
+                if not tok:
                     continue
-                bid = ob.bids[-1].price if ob.bids else "—"
-                ask = ob.asks[-1].price if ob.asks else "—"
-                return f"{(t.get('title') or '')[:40]}… bid {bid} / ask {ask}"
-        # every followed wallet is fully in-play right now — prove book access
-        # against any active market instead
-        req = urllib.request.Request(
-            "https://gamma-api.polymarket.com/markets?active=true&closed=false"
-            "&limit=1&order=volume24hr&ascending=false",
-            headers={"User-Agent": "Mozilla/5.0"})
-        gm = json.loads(urllib.request.urlopen(req, timeout=15, context=_SSL).read())[0]
-        tok = json.loads(gm["clobTokenIds"])[0]
-        ob = client.get_order_book(tok)
-        bid = ob.bids[-1].price if ob.bids else "—"
-        ask = ob.asks[-1].price if ob.asks else "—"
-        return f"[fallback: {(gm.get('question') or '')[:36]}…] bid {bid} / ask {ask}"
-    check("order book fetch (market access)", book)
+                ob = get(f"https://clob.polymarket.com/book?token_id={tok}")
+                bids, asks = ob.get("bids") or [], ob.get("asks") or []
+                return (f"{len(bids)} bids / {len(asks)} asks on "
+                        f"{(t.get('title') or '?')[:40]}")
+        raise RuntimeError("no recent market found across the follow set")
+    check("order-book access (followed wallet's market)", book)
 
-    def gas():
-        if live.get("auto_redeem") is False:
-            return "auto_redeem OFF — manual UI redeems; no POL needed (CASH≠CHAIN will nag after wins until redeemed)"
-        from web3 import Web3
-        rpc = live.get("rpc_url") or (
-            f"https://polygon-mainnet.g.alchemy.com/v2/{cfg.get('alchemy_key')}"
-            if cfg.get("alchemy_key") else None)
-        if not rpc:
-            raise RuntimeError("no live.rpc_url and no alchemy_key — auto-redeem needs a Polygon RPC")
-        w3 = Web3(Web3.HTTPProvider(rpc))
-        acct = w3.eth.account.from_key(pk)
-        pol = w3.eth.get_balance(acct.address) / 1e18
-        if pol < 0.05:
-            raise RuntimeError(f"EOA {acct.address[:10]}… holds {pol:.3f} POL — "
-                               "send ~1 POL for redeem gas (or set live.auto_redeem false)")
-        return f"{pol:.2f} POL gas on EOA {acct.address[:10]}…"
-    check("Polygon RPC + redeem gas", gas)
+    def rtds():
+        import threading
+        import websocket
+        got = []
 
-    print()
+        def on_open(ws):
+            ws.send(json.dumps({"action": "subscribe", "subscriptions": [
+                {"topic": "activity", "type": "trades", "filters": ""}]}))
+
+        def on_message(ws, raw):
+            got.append(raw)
+            ws.close()
+        app = websocket.WebSocketApp("wss://ws-live-data.polymarket.com",
+                                     on_open=on_open, on_message=on_message)
+        t = threading.Thread(target=lambda: app.run_forever(
+            sslopt={"cert_reqs": ssl.CERT_NONE}), daemon=True)
+        t.start()
+        t.join(timeout=15)
+        if not got:
+            raise RuntimeError("no message within 15s")
+        return "stream delivers (T0 detection reachable)"
+    check("RTDS trade stream", rtds)
+
+    def geo():
+        r = get("https://polymarket.com/api/geoblock")
+        return ("TRADABLE from here" if not r.get("blocked")
+                else f"BLOCKED here ({r.get('country')}) — bot must run on "
+                     "the Fly box (informational)")
+    check("geo-gate", geo)
+
+    client.close()
     if failures:
-        sys.exit(f"NOT ready: fix {len(failures)} item(s) above.")
-    print("ALL CHECKS PASSED — ready for the supervised live test:")
-    print("  python3 copybot.py --config config.live.json "
-          "--state copybot_state.live.json --poll 60 --live")
-    print('  (it will ask you to type the confirmation phrase before anything is placed)')
+        sys.exit(f"\n{len(failures)} check(s) failed: {', '.join(failures)}")
+    print("\nall checks passed — safe to arm")
 
 
 if __name__ == "__main__":
