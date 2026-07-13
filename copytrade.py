@@ -63,7 +63,15 @@ DEFAULT_CONFIG = {
     "price_guard_abs": 0.05,         # skip if price moved >5 POINTS above their
                                      # fill (absolute, 2026-07-10: 0.14→0.15 must
                                      # follow; relative % blocked 1-tick moves on
-                                     # cheap in-play books)
+                                     # cheap in-play books). VALIDATED 2026-07-13
+                                     # by the missed-ledger counterfactuals: the
+                                     # 0.05 line sits at the EV knee (0.05-0.10
+                                     # moves ≈ breakeven, >0.10 = −20% ROI).
+    "depth_gate": {                  # 2026-07-13, fitted on 131 gated fills —
+        "max_spread": 0.08,          # wider = market mid-move (med |slip| ~14%)
+        "min_ask5c": 50.0,           # dust books mispriced every observed fill
+        "max_frac_of_ask5c": 0.10,   # stake ≤10% of 5c ask depth (impact <~2%)
+    },
     "risk": {
         "max_trade_usd": 50.0,       # hard ceiling on any single copy
         "max_position_usd": 40.0,    # hard ceiling on total cost in one market
@@ -142,6 +150,32 @@ def clob_price(token_id, side):
         with urllib.request.urlopen(req, timeout=10, context=SSL_CTX) as r:
             return float(json.loads(r.read().decode())["price"])
     except (urllib.error.URLError, KeyError, ValueError, TimeoutError):
+        return None
+
+
+def book_depth(token_id):
+    """Top-of-book + $-depth within 5c of touch — the DEPTH GATE's input
+    (2026-07-13, fitted on 131 gated fills). Returns {bb, ba, spread, bid5c,
+    ask5c} or None on any failure (the gate then declines to bind — the
+    price guard and protected prices still bound the copy)."""
+    try:
+        url = f"{CLOB_API}/book?token_id={token_id}"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=8, context=SSL_CTX) as r:
+            b = json.loads(r.read().decode())
+        bids, asks = b.get("bids") or [], b.get("asks") or []
+        bb = max((float(x["price"]) for x in bids), default=None)
+        ba = min((float(x["price"]) for x in asks), default=None)
+
+        def depth(side, ref, sgn):
+            if ref is None:
+                return None
+            return round(sum(float(x["size"]) * float(x["price"]) for x in side
+                             if sgn * (float(x["price"]) - ref) >= -0.05), 2)
+        return {"bb": bb, "ba": ba,
+                "spread": round(ba - bb, 4) if bb is not None and ba is not None else None,
+                "bid5c": depth(bids, bb, 1), "ask5c": depth(asks, ba, -1)}
+    except Exception:
         return None
 
 
@@ -499,6 +533,39 @@ class CopyTrader:
                 self.record_miss(wallet, token, cond, title, outcome, price,
                                  want_usd, reason)
             return
+        # DEPTH GATE (2026-07-13, fitted on 131 book-annotated fills): the
+        # book must absorb the stake. Fills into <$90 of 5c-depth paid
+        # +2.6–4.2%; >20% of visible depth made >+2% slippage 33–50% likely;
+        # spread>0.08 books ran median |slip| ~14% (market mid-move). Shrink
+        # to 10% of depth, skip dust/unreliable books. A failed book fetch
+        # declines to bind — guard + protected prices still bound the copy.
+        dg = self.cfg.get("depth_gate")
+        if dg:
+            bk = book_depth(token)
+            if bk and bk.get("ask5c") is not None:
+                d_reason = None
+                if (bk.get("spread") or 0) > dg["max_spread"]:
+                    d_reason = (f"book unreliable (spread {bk['spread']:.2f} > "
+                                f"{dg['max_spread']:.2f})")
+                elif bk["ask5c"] < dg["min_ask5c"]:
+                    d_reason = (f"thin book (${bk['ask5c']:.0f} within 5c < "
+                                f"${dg['min_ask5c']:.0f})")
+                else:
+                    cap = dg["max_frac_of_ask5c"] * bk["ask5c"]
+                    if cap < self.risk["min_order_usd"]:
+                        d_reason = (f"depth cap ${cap:.2f} below min order "
+                                    f"(ask5c ${bk['ask5c']:.0f})")
+                    elif cap < allowed:
+                        self.log(f"{kind} {label} — depth gate shrinks "
+                                 f"${allowed:.2f} → ${cap:.2f} "
+                                 f"(10% of ${bk['ask5c']:.0f} ask depth)")
+                        allowed = cap
+                if d_reason:
+                    self.log(f"{kind} {label} — skip ({d_reason})")
+                    if not is_add:
+                        self.record_miss(wallet, token, cond, title, outcome,
+                                         price, allowed, d_reason)
+                    return
         # ONE outstanding in-play hold per token: a second order while a
         # pending rests re-buys the same signal and poisons the resolver's
         # balance-diff window (2026-07-12: overlapping pendings booked one

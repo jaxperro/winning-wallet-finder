@@ -348,9 +348,14 @@ class LedgerLiveExecutor:
             # them). BUY never bounds below the quoted cross; SELL never
             # bounds above the quoted bid.
             if side == "BUY":
+                # share-flooring can shave a gated $1.00 stake to $0.99, which
+                # the venue rejects ('invalid amount for a marketable BUY') —
+                # 7 of 13 live rejections in the first 3 days. Bump to the $1
+                # minimum; worst case pays a cent over the gated stake.
+                amt = max(round(sz * price, 2), 1.0)
                 r = self.client.place_market_order(
                     token_id=token_id, side="BUY",
-                    amount=round(sz * price, 2),
+                    amount=amt,
                     max_price=min(max(round(price * (1 + self._slip), 4),
                                       price), 0.99),
                     order_type=self._otype)
@@ -607,6 +612,117 @@ class RtdsListener:
             self.bot.on_wallet_activity(w)   # locks internally, never raises out
         except Exception as e:
             log(f"rtds handler error: {e}")
+
+
+# ── own-fill push: the CLOB user channel ─────────────────────────────────────
+
+class UserFillsListener:
+    """LIVE only. Streams OUR order/trade lifecycle from the canonical CLOB
+    user channel and turns a matching event into an IMMEDIATE
+    resolve_pendings() pass — in-play holds adopt the second they match
+    instead of on the next 60s tick. Events only TRIGGER the resolver;
+    get_order stays the single arbiter (the 2026-07-12 anti-phantom-cash
+    invariant books nothing from ws payloads). Auth = the CLOB L2 creds the
+    SDK already derived (client.credentials). On any failure the listener
+    logs and stays down while the 60s poll carries — never below today."""
+
+    URL = "wss://ws-subscriptions-clob.polymarket.com/ws/user"
+
+    def __init__(self, bot):
+        self.bot = bot
+        self.state = "off"
+        self.last_msg = 0.0
+
+    def start(self):
+        try:
+            import websocket  # noqa: F401
+            creds = self.bot.engine.ex.client.credentials
+            self._auth = {"apiKey": creds.key, "secret": creds.secret,
+                          "passphrase": creds.passphrase}
+        except Exception as e:
+            log(f"user-ws: unavailable ({type(e).__name__}: {str(e)[:60]}) — "
+                "pending adoption stays on the 60s poll")
+            return False
+        import websocket
+        threading.Thread(target=self._run, args=(websocket,),
+                         daemon=True, name="user-ws").start()
+        return True
+
+    def _pending_ids(self):
+        return {p.get("order_id")
+                for p in self.bot.engine.state.get("pending_orders", [])}
+
+    def _run(self, websocket):
+        backoff = 1
+
+        def on_open(ws):
+            # all-markets subscription: omit "markets" entirely (the SDK's
+            # own UserSpec does the same) — no per-market management needed
+            ws.send(json.dumps({"type": "user", "auth": self._auth}))
+            self.state = "up"
+            self.last_msg = time.time()
+            log("user-ws: connected — own-fill events live")
+
+            def ping():
+                while ws.keep_running:
+                    time.sleep(10)
+                    try:
+                        ws.send("PING")
+                    except Exception:
+                        break
+                    if time.time() - self.last_msg > 30:
+                        log("user-ws: silent 30s — forcing reconnect")
+                        try:
+                            ws.close()
+                        except Exception:
+                            pass
+                        break
+            threading.Thread(target=ping, daemon=True).start()
+
+        def on_message(ws, raw):
+            self.last_msg = time.time()
+            if raw == "PONG":
+                return
+            try:
+                m = json.loads(raw)
+            except Exception:
+                return
+            events = m if isinstance(m, list) else [m]
+            hit = False
+            for ev in events:
+                if not isinstance(ev, dict):
+                    continue
+                et = ev.get("event_type")
+                ids = set()
+                if et == "order" and ev.get("type") == "UPDATE" \
+                        and float(ev.get("size_matched") or 0) > 0:
+                    ids.add(ev.get("id"))
+                elif et == "trade" and ev.get("status") in (
+                        "MATCHED", "MINED", "CONFIRMED"):
+                    ids.add(ev.get("taker_order_id"))
+                    for mo in ev.get("maker_orders") or []:
+                        if isinstance(mo, dict):
+                            ids.add(mo.get("order_id"))
+                if ids & self._pending_ids():
+                    hit = True
+            if hit:
+                log("user-ws: pending order matched — resolving now")
+                try:
+                    self.bot.resolve_pendings()
+                except Exception as e:
+                    log(f"user-ws resolver error: {e}")
+
+        while True:
+            try:
+                app = websocket.WebSocketApp(self.URL, on_open=on_open,
+                                             on_message=on_message)
+                app.run_forever(sslopt={"cert_reqs": ssl.CERT_NONE})
+            except Exception as e:
+                log(f"user-ws: listener error {str(e)[:80]}")
+            self.state = "down"
+            log(f"user-ws: down — reconnect in {backoff}s (60s poll carries)")
+            time.sleep(backoff)
+            backoff = min(backoff * 2, 120)
 
 
 # ── the push → filter → execute bridge ──────────────────────────────────────
@@ -1197,6 +1313,20 @@ class Copybot:
         pend = st.get("pending_orders") or []
         if not pend or not self.engine.ex.live:
             return
+        # user-ws events and the heartbeat both call this — one pass at a
+        # time; a concurrent caller just skips (the running pass adopts)
+        rl = getattr(self, "_resolve_lock", None)
+        if rl is None:
+            rl = self._resolve_lock = threading.Lock()
+        if not rl.acquire(blocking=False):
+            return
+        try:
+            self._resolve_pendings_locked(st)
+        finally:
+            rl.release()
+
+    def _resolve_pendings_locked(self, st):
+        pend = st.get("pending_orders") or []
         ex = self.engine.ex
         now = time.time()
         keep = []
@@ -2115,6 +2245,11 @@ def main():
         bot.rtds.start()
     else:
         log("rtds: T0 listener disabled for this role (RTDS_DETECT=1 enables)")
+    if want_live:
+        # own-fill push (2026-07-13): in-play holds adopt the moment they
+        # match instead of on the next 60s resolver tick
+        bot.userws = UserFillsListener(bot)
+        bot.userws.start()
 
     # on-chain resolution RPC (payout vectors for operator-resolved markets):
     # env ALCHEMY_RPC_URL wins (the Fly worker has no config.json), else the
