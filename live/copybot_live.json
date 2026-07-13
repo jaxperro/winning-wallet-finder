@@ -36,7 +36,7 @@
   "1kto1m": "volume"
  },
  "floors": {
-  "Kruto2027": 125.61,
+  "Kruto2027": 80.0,
   "0xbadaf319": 44.13,
   "gkmgkldfmg": 457.26,
   "AIcAIc": 300.0,
@@ -59,7 +59,7 @@
    "status": "closed",
    "exit_price": 0.7372,
    "pnl": 31.96,
-   "settled": 1783955646,
+   "settled": 1783962629,
    "sold_shares": 67.8,
    "sold_proceeds": 49.98
   },
@@ -2981,5 +2981,5 @@
   }
  ],
  "missed_pnl": 89813.04,
- "updated": 1783955646
+ "updated": 1783962629
 }
