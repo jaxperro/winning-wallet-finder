@@ -779,9 +779,9 @@
    "price": 0.4724,
    "stake": 1.0,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "lost",
+   "pnl": -1.02,
+   "settled": 1783909043,
    "name": "gkmgkldfmg"
   },
   {
@@ -1744,6 +1744,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 1053.17,
- "updated": 1783908981
+ "missed_pnl": 1052.15,
+ "updated": 1783909043
 }

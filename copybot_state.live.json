@@ -10414,7 +10414,8 @@
       "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "0xbadaf319"
     },
     {
       "ts": 1783908977,
@@ -10426,13 +10427,14 @@
       "price": 0.4724,
       "stake": 1.0,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -1.02,
+      "settled": 1783909043,
+      "name": "gkmgkldfmg"
     }
   ],
-  "feed_sig": "3b36c9108182ab4da7a76fdd40eff5da",
-  "feed_pushed_at": 1783908854.1713035,
+  "feed_sig": "e55d760fc76c7aa75afdca9c39e64545",
+  "feed_pushed_at": 1783908981.1343699,
   "adjustments": [
     {
       "ts": 1783906689,
