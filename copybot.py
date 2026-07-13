@@ -345,13 +345,21 @@ class LedgerLiveExecutor:
         except Exception as e:      # no truth anchor → refuse to place at all
             return {"ok": False, "filled_shares": 0.0, "price": price,
                     "resp": f"pre-check failed: {e}", "paper": False}
+        # protected prices must (a) scale WITH the price — flat 2dp rounding
+        # zeroed the bound on sub-penny books — and (b) CONFORM to the tick:
+        # the SDK rejects more decimals than the book's tick allows
+        # (2026-07-13: a 4dp bound on a 1c SPX book failed a winning copy).
+        # The quoted price is always a tick multiple, so its own decimal
+        # count is the finest precision that is safe on this book; a coarser
+        # bound is valid on finer ticks, never the reverse.
+        d = 2
+        for cand in (2, 3, 4):
+            if abs(round(price, cand) - price) < 1e-9:
+                d = cand
+                break
+        else:
+            d = 4
         try:
-            # protected prices round to 4dp and scale WITH the price — 2dp
-            # rounding zeroed the bound on sub-penny books (0.001 longshots
-            # are the follow set's specialty; the min_price floor removal
-            # 2026-07-13 makes them copyable, so the executor must survive
-            # them). BUY never bounds below the quoted cross; SELL never
-            # bounds above the quoted bid.
             if side == "BUY":
                 # share-flooring can shave a gated $1.00 stake to $0.99, which
                 # the venue rejects ('invalid amount for a marketable BUY') —
@@ -361,14 +369,14 @@ class LedgerLiveExecutor:
                 r = self.client.place_market_order(
                     token_id=token_id, side="BUY",
                     amount=amt,
-                    max_price=min(max(round(price * (1 + self._slip), 4),
+                    max_price=min(max(round(price * (1 + self._slip), d),
                                       price), 0.99),
                     order_type=self._otype)
             else:
                 r = self.client.place_market_order(
                     token_id=token_id, side="SELL", shares=sz,
-                    min_price=min(max(round(price * (1 - self._slip), 4),
-                                      0.0001), price),
+                    min_price=min(max(round(price * (1 - self._slip), d),
+                                      10 ** -d), price),
                     order_type=self._otype)
         except Exception as e:                # NEVER raise into the trade loop —
             # but a timed-out post may still be resting: sweep + measure first
