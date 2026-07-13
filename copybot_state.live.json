@@ -11181,13 +11181,15 @@
       "price": 0.85,
       "stake": 1.0,
       "reason": "order rejected: exception: max_price must conform to tick size 0.01 with at ",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "sold",
+      "pnl": 0.08,
+      "settled": 1783953687,
+      "name": "1kto1m",
+      "exit_price": 0.9261
     }
   ],
-  "feed_sig": "b03cd7a92bc2c0c4ad5b498913f94c75",
-  "feed_pushed_at": 1783953252.18891,
+  "feed_sig": "f1800750abf64498a2e900e817b84a1f",
+  "feed_pushed_at": 1783953623.6329277,
   "adjustments": [
     {
       "ts": 1783906689,
@@ -11210,7 +11212,7 @@
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1783949852,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1783953313,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1783953382,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1783869068,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1783843568,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1783953304

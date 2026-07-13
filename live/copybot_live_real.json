@@ -773,10 +773,11 @@
    "price": 0.85,
    "stake": 1.0,
    "reason": "order rejected: exception: max_price must conform to tick size 0.01 with at ",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "1kto1m"
+   "status": "sold",
+   "pnl": 0.08,
+   "settled": 1783953687,
+   "name": "1kto1m",
+   "exit_price": 0.9261
   },
   {
    "ts": 1783949981,
@@ -1735,6 +1736,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 1051.69,
- "updated": 1783953377
+ "missed_pnl": 1051.77,
+ "updated": 1783953688
 }
