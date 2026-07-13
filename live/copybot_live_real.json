@@ -22,8 +22,6 @@
   "window_h": 24
  },
  "wallets": [
-  "LSB1",
-  "imwalkinghere",
   "Kruto2027",
   "0xbadaf319",
   "gkmgkldfmg",
@@ -31,8 +29,6 @@
   "1kto1m"
  ],
  "classes": {
-  "LSB1": "volume",
-  "imwalkinghere": "volume",
   "Kruto2027": "volume",
   "0xbadaf319": "volume",
   "gkmgkldfmg": "volume",
@@ -40,9 +36,7 @@
   "1kto1m": "volume"
  },
  "floors": {
-  "LSB1": 258.51,
-  "imwalkinghere": 122.32,
-  "Kruto2027": 126.84,
+  "Kruto2027": 80.0,
   "0xbadaf319": 44.98,
   "gkmgkldfmg": 304.34,
   "AIcAIc": 295.32,
@@ -782,7 +776,8 @@
    "status": "lost",
    "pnl": -1.02,
    "settled": 1783909043,
-   "name": "gkmgkldfmg"
+   "name": "gkmgkldfmg",
+   "exit_checked": true
   },
   {
    "ts": 1783908976,
@@ -1275,7 +1270,7 @@
    "status": "won",
    "pnl": 0.54,
    "settled": 1783908728,
-   "name": "imwalkinghere",
+   "name": "0xd96750bf",
    "exit_checked": true
   },
   {
@@ -1291,7 +1286,7 @@
    "status": "lost",
    "pnl": -1.01,
    "settled": 1783908728,
-   "name": "imwalkinghere",
+   "name": "0xd96750bf",
    "exit_checked": true
   },
   {
@@ -1340,7 +1335,7 @@
    "status": "won",
    "pnl": 0.2,
    "settled": 1783908727,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1356,7 +1351,7 @@
    "status": "won",
    "pnl": 0.52,
    "settled": 1783908727,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1372,7 +1367,7 @@
    "status": "won",
    "pnl": 0.19,
    "settled": 1783908727,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1388,7 +1383,7 @@
    "status": "won",
    "pnl": 0.23,
    "settled": 1783908727,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1404,7 +1399,7 @@
    "status": "won",
    "pnl": 1.21,
    "settled": 1783908727,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1420,7 +1415,7 @@
    "status": "won",
    "pnl": 0.42,
    "settled": 1783908727,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1436,7 +1431,7 @@
    "status": "won",
    "pnl": 0.13,
    "settled": 1783908727,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1452,7 +1447,7 @@
    "status": "won",
    "pnl": 0.09,
    "settled": 1783908727,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1468,7 +1463,7 @@
    "status": "lost",
    "pnl": -1.01,
    "settled": 1783908727,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1484,7 +1479,7 @@
    "status": "won",
    "pnl": 0.05,
    "settled": 1783908727,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1500,7 +1495,7 @@
    "status": "lost",
    "pnl": -1.01,
    "settled": 1783908727,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1516,7 +1511,7 @@
    "status": "won",
    "pnl": 0.07,
    "settled": 1783908727,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1532,7 +1527,7 @@
    "status": "lost",
    "pnl": -1.02,
    "settled": 1783908727,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1548,7 +1543,7 @@
    "status": "won",
    "pnl": 0.1,
    "settled": 1783908727,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1564,7 +1559,7 @@
    "status": "won",
    "pnl": 0.07,
    "settled": 1783908727,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1580,7 +1575,7 @@
    "status": "won",
    "pnl": 0.19,
    "settled": 1783908727,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1596,7 +1591,7 @@
    "status": "won",
    "pnl": 0.59,
    "settled": 1783908727,
-   "name": "imwalkinghere",
+   "name": "0xd96750bf",
    "exit_checked": true
   },
   {
@@ -1612,7 +1607,7 @@
    "status": "lost",
    "pnl": -1.01,
    "settled": 1783908727,
-   "name": "imwalkinghere",
+   "name": "0xd96750bf",
    "exit_checked": true
   },
   {
@@ -1628,7 +1623,7 @@
    "status": "won",
    "pnl": 0.5,
    "settled": 1783908727,
-   "name": "imwalkinghere",
+   "name": "0xd96750bf",
    "exit_checked": true
   },
   {
@@ -1644,7 +1639,7 @@
    "status": "won",
    "pnl": 0.09,
    "settled": 1783908726,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1660,7 +1655,7 @@
    "status": "lost",
    "pnl": -1.01,
    "settled": 1783908726,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1676,7 +1671,7 @@
    "status": "won",
    "pnl": 1.08,
    "settled": 1783908726,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1692,7 +1687,7 @@
    "status": "won",
    "pnl": 0.3,
    "settled": 1783908726,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1708,7 +1703,7 @@
    "status": "won",
    "pnl": 0.24,
    "settled": 1783908726,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1724,7 +1719,7 @@
    "status": "won",
    "pnl": 0.05,
    "settled": 1783908726,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -1740,10 +1735,10 @@
    "status": "won",
    "pnl": 0.12,
    "settled": 1783908726,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   }
  ],
  "missed_pnl": 1052.15,
- "updated": 1783909043
+ "updated": 1783909236
 }
