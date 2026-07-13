@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 31,
-  "n24": 2,
-  "avg_s": 6.3,
-  "avg_slip_pct": 0.0296,
+  "n24": 1,
+  "avg_s": 6.7,
+  "avg_slip_pct": 0.04,
   "window_h": 24
  },
  "wallets": [
@@ -773,10 +773,11 @@
    "price": 0.68,
    "stake": 1.0,
    "reason": "order rejected: exception: max_price must conform to tick size 0.01 with at ",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "1kto1m"
+   "status": "sold",
+   "pnl": 0.17,
+   "settled": 1783950909,
+   "name": "1kto1m",
+   "exit_price": 0.81
   },
   {
    "ts": 1783933595,
@@ -1735,6 +1736,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 1047.08,
- "updated": 1783949981
+ "missed_pnl": 1047.25,
+ "updated": 1783950910
 }
