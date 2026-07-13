@@ -764,6 +764,21 @@
  ],
  "missed": [
   {
+   "ts": 1783953377,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "7410717121876145332418373180741433428881685336911848406679670735933068361996",
+   "cond": "0xfa68c2d7750d6d7ed9b1103e86ac534bfbcd38724c2cd66f8358d71ed433cfc3",
+   "title": "S&P 500 (SPX) Up or Down on July 13?",
+   "outcome": "Down",
+   "price": 0.85,
+   "stake": 1.0,
+   "reason": "order rejected: exception: max_price must conform to tick size 0.01 with at ",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1783949981,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "7410717121876145332418373180741433428881685336911848406679670735933068361996",
@@ -1718,24 +1733,8 @@
    "settled": 1783908727,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783908657,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "57930102683433250075457413118893558792602979960386065251172552716781072751256",
-   "cond": "0xa0415664157dc5476cea34084eed13420911094589f854ba48ebce18ed357b2b",
-   "title": "Exact Score: Canada 0 - 2 Morocco?",
-   "outcome": "No",
-   "price": 0.8403,
-   "stake": 1.0,
-   "reason": "too slow to follow (11949m late)",
-   "status": "won",
-   "pnl": 0.19,
-   "settled": 1783908727,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 1047.25,
- "updated": 1783951771
+ "missed_pnl": 1051.69,
+ "updated": 1783953377
 }
