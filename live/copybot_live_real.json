@@ -991,6 +991,21 @@
  ],
  "missed": [
   {
+   "ts": 1784056905,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "47930487385442068307660985236580604031118404338161837203208216877292039014153",
+   "cond": "",
+   "title": "",
+   "outcome": "",
+   "price": 0.66,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784054881,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "106117170598299515991778271448868055604686257762862584190468389838818487912270",
@@ -1923,24 +1938,8 @@
    "settled": 1783820084,
    "name": "gkmgkldfmg",
    "exit_price": 0.999
-  },
-  {
-   "ts": 1783815207,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "20984016543941988843477189471436635378224731224764178152393193587982775548296",
-   "cond": "0x3c5895028ee6c15e4da7b73884819bc86897c08a890cf76712b09ac37de5d82d",
-   "title": "UFC 329: Gable Steveson vs. Elisha Ellison (Heavyweight, Prelims)",
-   "outcome": "Gable Steveson",
-   "price": 0.99,
-   "stake": 1.0,
-   "reason": "price moved 0.92\u21920.99",
-   "status": "sold",
-   "pnl": 0.01,
-   "settled": 1783815401,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.999
   }
  ],
  "missed_pnl": 1041.14,
- "updated": 1784054881
+ "updated": 1784056905
 }
