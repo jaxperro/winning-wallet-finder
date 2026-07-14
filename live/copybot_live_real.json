@@ -5,19 +5,19 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 9.38,
- "deployed": 7.67,
+ "cash": 8.34,
+ "deployed": 8.7,
  "reserve": 0.0,
- "realized": -5.14,
+ "realized": -5.16,
  "adjustments": -0.08,
- "ledger_drift": 0.0,
- "open_count": 4,
- "fees_paid": 1.51,
+ "ledger_drift": 0.01,
+ "open_count": 5,
+ "fees_paid": 1.52,
  "fee_rate": 0.03,
  "lag": {
-  "n": 39,
-  "n24": 8,
-  "avg_s": 7.5,
+  "n": 40,
+  "n24": 9,
+  "avg_s": 7.2,
   "avg_slip_pct": 0.0309,
   "window_h": 24
  },
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "38404839370859900572663651821110620858010736415606391321540518400366572036926",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Xtreme Gaming",
+   "title": "Dota 2: Team Liquid vs Xtreme Gaming (BO3) - Esports World Cup Survival",
+   "their_price": 0.3883,
+   "my_price": 0.4,
+   "slippage_pct": 0.0303,
+   "lag_s": 4.5,
+   "shares": 2.56,
+   "cost": 1.03,
+   "fee": 0.02,
+   "opened": 1784041783,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "4736352029144535005890820408231925407036939257059587790513004893363322306014",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -1879,5 +1898,5 @@
   }
  ],
  "missed_pnl": 1042.1,
- "updated": 1784040726
+ "updated": 1784041788
 }
