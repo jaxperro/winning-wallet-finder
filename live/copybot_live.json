@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 98.23,
+ "stake": 98.16,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1907.23,
- "deployed": 548.49,
+ "cash": 1807.17,
+ "deployed": 646.72,
  "reserve": 0.0,
- "realized": 1455.69,
+ "realized": 1453.86,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 12,
- "fees_paid": 188.09,
+ "open_count": 13,
+ "fees_paid": 189.92,
  "fee_rate": 0.03,
  "lag": {
-  "n": 119,
-  "n24": 12,
-  "avg_s": 3.7,
-  "avg_slip_pct": -0.0278,
+  "n": 120,
+  "n24": 13,
+  "avg_s": 3.5,
+  "avg_slip_pct": -0.0273,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "38404839370859900572663651821110620858010736415606391321540518400366572036926",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Xtreme Gaming",
+   "title": "Dota 2: Team Liquid vs Xtreme Gaming (BO3) - Esports World Cup Survival",
+   "their_price": 0.3883,
+   "my_price": 0.38,
+   "slippage_pct": -0.0213,
+   "lag_s": 0.7,
+   "shares": 258.5,
+   "cost": 98.23,
+   "fee": 1.83,
+   "opened": 1784041783,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "4736352029144535005890820408231925407036939257059587790513004893363322306014",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -1998,26 +2017,6 @@
    "settled": 1783613206,
    "sold_shares": 1596.64,
    "sold_proceeds": 771.25
-  },
-  {
-   "token": "18761224788266541727279689677720684189553273901637473351355084093520325570855",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Nemesis",
-   "title": "Dota 2: MOUZ vs Team Nemesis - Game 1 Winner",
-   "their_price": 0.3791,
-   "my_price": 0.39,
-   "slippage_pct": 0.0288,
-   "shares": 116.42,
-   "cost": 45.4,
-   "fee": 0.83,
-   "opened": 1783612177,
-   "status": "closed",
-   "exit_price": 0.9285,
-   "pnl": 61.86,
-   "settled": 1783612472,
-   "sold_shares": 116.42,
-   "sold_proceeds": 108.09
   }
  ],
  "missed": [
@@ -2979,5 +2978,5 @@
   }
  ],
  "missed_pnl": 89793.56,
- "updated": 1784040726
+ "updated": 1784041786
 }
