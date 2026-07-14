@@ -888,6 +888,21 @@
  ],
  "missed": [
   {
+   "ts": 1784038064,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "74079800819371354810882430985275264634530851270424415749197209350942756192264",
+   "cond": "0x73b1e8e9993114bd0b92588ecdc2a6f490ba9cc6f85844d927ae62e0b3c15ca5",
+   "title": "Will Russia capture Pokrovka by July 31?",
+   "outcome": "No",
+   "price": 0.244,
+   "stake": 1.0,
+   "reason": "book unreliable (spread 0.69 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784038010,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "103599543732484870090369455326920139987823898856081914791151504750897348686596",
@@ -1820,24 +1835,8 @@
    "settled": 1783814962,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783811607,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "85590802024993543661537425965264345251257796759459810241384876806751805341892",
-   "cond": "0x85aa21232741b7a20bb96a9794e6ca05dd3f0e750b76e6f38838530b18184fa2",
-   "title": "Jude Bellingham: 2+ goals",
-   "outcome": "Yes",
-   "price": 0.0299,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "lost",
-   "pnl": -1.03,
-   "settled": 1783814817,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 1042.37,
- "updated": 1784038010
+ "updated": 1784038064
 }
