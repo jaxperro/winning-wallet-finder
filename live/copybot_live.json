@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1792.57,
- "deployed": 592.3,
+ "cash": 1730.53,
+ "deployed": 654.19,
  "reserve": 0.0,
- "realized": 1384.84,
+ "realized": 1384.69,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 13,
- "fees_paid": 194.43,
+ "ledger_drift": -0.03,
+ "open_count": 14,
+ "fees_paid": 194.58,
  "fee_rate": 0.03,
  "lag": {
-  "n": 126,
-  "n24": 18,
-  "avg_s": 3.2,
-  "avg_slip_pct": -0.0238,
+  "n": 127,
+  "n24": 19,
+  "avg_s": 3.1,
+  "avg_slip_pct": -0.0225,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "43095392816043282955413670152475016788331574493234594924666373412188513296982",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Solana be above $80 on July 15?",
+   "their_price": 0.92,
+   "my_price": 0.921,
+   "slippage_pct": 0.0011,
+   "lag_s": 1.3,
+   "shares": 67.2,
+   "cost": 61.89,
+   "fee": 0.15,
+   "opened": 1784066818,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "31227781598316880280877760465683086508096359894740658336497080463300979927822",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2002,26 +2021,6 @@
    "settled": 1783623672,
    "sold_shares": 70.72,
    "sold_proceeds": 67.0
-  },
-  {
-   "token": "5331398174498187031334378168888081929069329815866835423456661839681650230348",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "1win",
-   "title": "Dota 2: LGD Gaming vs 1win - Game 1 Winner",
-   "their_price": 0.59,
-   "my_price": 0.6,
-   "slippage_pct": 0.0169,
-   "shares": 128.87,
-   "cost": 77.32,
-   "fee": 0.93,
-   "opened": 1783622992,
-   "status": "closed",
-   "exit_price": 0.6634,
-   "pnl": 7.24,
-   "settled": 1783623035,
-   "sold_shares": 128.87,
-   "sold_proceeds": 85.49
   }
  ],
  "missed": [
@@ -2983,5 +2982,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784065072
+ "updated": 1784066821
 }
