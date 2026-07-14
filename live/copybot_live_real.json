@@ -888,6 +888,21 @@
  ],
  "missed": [
   {
+   "ts": 1784037768,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "103599543732484870090369455326920139987823898856081914791151504750897348686596",
+   "cond": "0x54570618ec2d24713f09896dd1e120b43515537c161d825656bdc1fef54ea66b",
+   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 2 Winner",
+   "outcome": "Team Liquid",
+   "price": 0.62,
+   "stake": 1.0,
+   "reason": "thin book ($3 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784036252,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "103599543732484870090369455326920139987823898856081914791151504750897348686596",
@@ -1822,24 +1837,8 @@
    "settled": 1783814706,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783807073,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "41431787580808021883550475444911970497280039876200573287917642852315122937096",
-   "cond": "0xf3eb354ee5c488ebdbf228ec19848d52f8ae89fa4e0c75df6c71f2f3ec6af854",
-   "title": "UFC 329: Farid Basharat vs. John Garza (Bantamweight, Early Prelims)",
-   "outcome": "Farid Basharat",
-   "price": 0.64,
-   "stake": 1.0,
-   "reason": "in-play hold expired unfilled (17s)",
-   "status": "sold",
-   "pnl": 0.55,
-   "settled": 1783808154,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.999
   }
  ],
  "missed_pnl": 1042.26,
- "updated": 1784037400
+ "updated": 1784037768
 }
