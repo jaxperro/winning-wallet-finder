@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 95.37,
+ "stake": 95.39,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1902.48,
+ "cash": 1903.0,
  "deployed": 481.82,
  "reserve": 0.0,
- "realized": 1384.27,
+ "realized": 1384.78,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 10,
- "fees_paid": 193.63,
+ "fees_paid": 193.96,
  "fee_rate": 0.03,
  "lag": {
-  "n": 121,
-  "n24": 14,
-  "avg_s": 3.6,
-  "avg_slip_pct": -0.0242,
+  "n": 122,
+  "n24": 15,
+  "avg_s": 3.8,
+  "avg_slip_pct": -0.0181,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,27 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "16167991169842969662552149172415147847102093356587677921265845709187217219794",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "MOUZ",
+   "title": "Dota 2: LGD Gaming vs MOUZ - Game 2 Winner",
+   "their_price": 0.2343,
+   "my_price": 0.25,
+   "slippage_pct": 0.0669,
+   "lag_s": 6.7,
+   "shares": 27.92,
+   "cost": 6.98,
+   "fee": 0.16,
+   "opened": 1784055074,
+   "status": "closed",
+   "exit_price": 0.274,
+   "pnl": 0.51,
+   "settled": 1784055097,
+   "sold_shares": 27.92,
+   "sold_proceeds": 7.65
+  },
   {
    "token": "114408446604886353206911847633106829807018038464913763376714523293436793199652",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2002,26 +2023,6 @@
    "settled": 1783615111,
    "sold_shares": 49.66,
    "sold_proceeds": 47.89
-  },
-  {
-   "token": "50563396050108174063968999790600921955430682357744232042472551252897944666519",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Spirit",
-   "title": "Dota 2: Vici Gaming vs Team Spirit - Game 1 Winner",
-   "their_price": 0.3992,
-   "my_price": 0.37,
-   "slippage_pct": -0.0732,
-   "shares": 207.59,
-   "cost": 76.81,
-   "fee": 1.45,
-   "opened": 1783613576,
-   "status": "closed",
-   "exit_price": 0.5626,
-   "pnl": 38.54,
-   "settled": 1783613734,
-   "sold_shares": 207.59,
-   "sold_proceeds": 116.8
   }
  ],
  "missed": [
@@ -2982,5 +2983,5 @@
   }
  ],
  "missed_pnl": 89793.56,
- "updated": 1784054882
+ "updated": 1784055097
 }
