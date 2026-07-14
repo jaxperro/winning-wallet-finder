@@ -2037,10 +2037,11 @@
    "price": 0.35,
    "stake": 95.37,
    "reason": "thin book ($5 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
+   "status": "lost",
+   "pnl": -97.23,
+   "settled": 1784063079,
+   "name": "BikesAreTheBikes",
+   "exit_checked": true
   },
   {
    "ts": 1784038062,
@@ -2983,6 +2984,6 @@
    "exit_price": 0.0037
   }
  ],
- "missed_pnl": 89793.56,
- "updated": 1784060461
+ "missed_pnl": 89696.33,
+ "updated": 1784063085
 }
