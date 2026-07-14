@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 96.96,
+ "stake": 96.15,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
  "cash": 1824.83,
- "deployed": 599.22,
+ "deployed": 578.81,
  "reserve": 0.0,
- "realized": 1424.02,
+ "realized": 1403.61,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 12,
+ "ledger_drift": -0.03,
+ "open_count": 11,
  "fees_paid": 192.69,
  "fee_rate": 0.03,
  "lag": {
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "66043823927578785385332294647462770708290770399339210264516767845856140852007",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Elon Musk post 180-199 tweets from July 7 to July 14, 2026?",
+   "their_price": 0.351,
+   "my_price": 0.356,
+   "slippage_pct": 0.0142,
+   "lag_s": 0.9,
+   "shares": 57.34,
+   "cost": 20.41,
+   "fee": 0.39,
+   "opened": 1783996757,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -20.8,
+   "settled": 1784053019
+  },
   {
    "token": "114408446604886353206911847633106829807018038464913763376714523293436793199652",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -246,25 +265,6 @@
    "settled": 1784027887,
    "sold_shares": 122.44,
    "sold_proceeds": 98.61
-  },
-  {
-   "token": "66043823927578785385332294647462770708290770399339210264516767845856140852007",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will Elon Musk post 180-199 tweets from July 7 to July 14, 2026?",
-   "their_price": 0.351,
-   "my_price": 0.356,
-   "slippage_pct": 0.0142,
-   "lag_s": 0.9,
-   "shares": 57.34,
-   "cost": 20.41,
-   "fee": 0.39,
-   "opened": 1783996757,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "109624481875348569318303102429519724032296483676540566321245418804293736322472",
@@ -2981,5 +2981,5 @@
   }
  ],
  "missed_pnl": 89793.56,
- "updated": 1784052490
+ "updated": 1784053021
 }
