@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 9.58,
- "deployed": 7.67,
+ "cash": 8.58,
+ "deployed": 8.67,
  "reserve": 0.0,
- "realized": -4.94,
+ "realized": -4.95,
  "adjustments": -0.08,
  "ledger_drift": 0.01,
- "open_count": 4,
+ "open_count": 5,
  "fees_paid": 1.57,
  "fee_rate": 0.03,
  "lag": {
-  "n": 42,
-  "n24": 10,
-  "avg_s": 7.6,
-  "avg_slip_pct": 0.036,
+  "n": 43,
+  "n24": 11,
+  "avg_s": 7.4,
+  "avg_slip_pct": 0.0337,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "31227781598316880280877760465683086508096359894740658336497080463300979927822",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Over $55M committed to the Credible public sale?",
+   "their_price": 0.89,
+   "my_price": 0.9,
+   "slippage_pct": 0.0112,
+   "lag_s": 5.3,
+   "shares": 1.11,
+   "cost": 1.0,
+   "fee": 0.0,
+   "opened": 1784065064,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "114408446604886353206911847633106829807018038464913763376714523293436793199652",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1941,5 +1960,5 @@
   }
  ],
  "missed_pnl": 1040.12,
- "updated": 1784064011
+ "updated": 1784065069
 }
