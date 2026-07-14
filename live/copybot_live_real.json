@@ -897,10 +897,26 @@
    "price": 0.62,
    "stake": 1.0,
    "reason": "thin book ($3 within 5c < $50)",
+   "status": "sold",
+   "pnl": 0.11,
+   "settled": 1784037916,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.7
+  },
+  {
+   "ts": 1784037862,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "74666452124906997243440599268041315324945968051973641396724746828966017436262",
+   "cond": "0xb34a462d975da3248d4ef3c19dfb3dfa9bac7569828b81dedb63698656e7be48",
+   "title": "Will the price of Bitcoin be between $64,000 and $66,000 on July 14?",
+   "outcome": "No",
+   "price": 0.778,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
    "status": "open",
    "pnl": null,
    "settled": null,
-   "name": "gkmgkldfmg"
+   "name": "0xbadaf319"
   },
   {
    "ts": 1784036252,
@@ -1821,24 +1837,8 @@
    "settled": 1783814813,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783806570,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "108451612909496335433925708933377313229531944715204827566329790137714124934964",
-   "cond": "0x3c5aeecefc413cf0c049d13327ad40456fd925fd7b5e1364e31239980154869d",
-   "title": "Exact Score: Norway 1 - 0 England?",
-   "outcome": "No",
-   "price": 0.94,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "won",
-   "pnl": 0.06,
-   "settled": 1783814706,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 1042.26,
- "updated": 1784037768
+ "missed_pnl": 1042.37,
+ "updated": 1784037917
 }
