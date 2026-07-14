@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 96.45,
+ "stake": 96.83,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1939.74,
- "deployed": 471.59,
+ "cash": 1998.19,
+ "deployed": 422.65,
  "reserve": 0.0,
- "realized": 1411.3,
+ "realized": 1420.81,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 11,
- "fees_paid": 183.26,
+ "open_count": 10,
+ "fees_paid": 183.3,
  "fee_rate": 0.03,
  "lag": {
   "n": 115,
@@ -43,6 +43,27 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "107133788521613312162567181824294634873967810582690705864827492796504434100258",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "WTI Crude Oil (WTI) closes above $78 on July 14?",
+   "their_price": 0.86,
+   "my_price": 0.82,
+   "slippage_pct": -0.0465,
+   "lag_s": 3.5,
+   "shares": 75.54,
+   "cost": 61.94,
+   "fee": 0.33,
+   "opened": 1784028613,
+   "status": "closed",
+   "exit_price": 0.9557,
+   "pnl": 9.92,
+   "settled": 1784033039,
+   "sold_shares": 75.54,
+   "sold_proceeds": 72.19
+  },
   {
    "token": "61047556128408287981194744648173296818501226243273740117171493124431115643554",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -82,27 +103,6 @@
    "exit_price": null,
    "pnl": null,
    "settled": null
-  },
-  {
-   "token": "107133788521613312162567181824294634873967810582690705864827492796504434100258",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "WTI Crude Oil (WTI) closes above $78 on July 14?",
-   "their_price": 0.86,
-   "my_price": 0.82,
-   "slippage_pct": -0.0465,
-   "lag_s": 3.5,
-   "shares": 75.54,
-   "cost": 61.94,
-   "fee": 0.33,
-   "opened": 1784028613,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 15.85,
-   "sold_proceeds": 13.74
   },
   {
    "token": "76755883373039851290695610249455633595892527905785960150127813908400558868227",
@@ -2980,5 +2980,5 @@
   }
  ],
  "missed_pnl": 89805.17,
- "updated": 1784032824
+ "updated": 1784033039
 }
