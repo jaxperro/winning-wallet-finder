@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 96.99,
+ "stake": 96.96,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1922.58,
- "deployed": 502.23,
+ "cash": 1824.83,
+ "deployed": 599.22,
  "reserve": 0.0,
- "realized": 1424.78,
+ "realized": 1424.02,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 11,
- "fees_paid": 191.93,
+ "open_count": 12,
+ "fees_paid": 192.69,
  "fee_rate": 0.03,
  "lag": {
-  "n": 120,
-  "n24": 13,
-  "avg_s": 3.5,
-  "avg_slip_pct": -0.0273,
+  "n": 121,
+  "n24": 14,
+  "avg_s": 3.6,
+  "avg_slip_pct": -0.0242,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "114408446604886353206911847633106829807018038464913763376714523293436793199652",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "LGD Gaming",
+   "title": "Dota 2: LGD Gaming vs MOUZ - Game 2 Winner",
+   "their_price": 0.7282,
+   "my_price": 0.74,
+   "slippage_pct": 0.0163,
+   "lag_s": 4.5,
+   "shares": 131.07,
+   "cost": 96.99,
+   "fee": 0.76,
+   "opened": 1784052486,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "74666452124906997243440599268041315324945968051973641396724746828966017436262",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2001,26 +2020,6 @@
    "settled": 1783613734,
    "sold_shares": 207.59,
    "sold_proceeds": 116.8
-  },
-  {
-   "token": "65561282581543333083769484681733882641597892294255282935267357087854721926205",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Team Syntax",
-   "title": "Dota 2: Hive vs Team Syntax (BO3) - European Pro League Playoffs",
-   "their_price": 0.03,
-   "my_price": 0.03,
-   "slippage_pct": 0.0,
-   "shares": 1596.64,
-   "cost": 47.9,
-   "fee": 1.39,
-   "opened": 1783613102,
-   "status": "closed",
-   "exit_price": 0.483,
-   "pnl": 721.95,
-   "settled": 1783613206,
-   "sold_shares": 1596.64,
-   "sold_proceeds": 771.25
   }
  ],
  "missed": [
@@ -2982,5 +2981,5 @@
   }
  ],
  "missed_pnl": 89793.56,
- "updated": 1784043320
+ "updated": 1784052490
 }
