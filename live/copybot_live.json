@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1903.0,
- "deployed": 481.82,
+ "cash": 1895.1,
+ "deployed": 489.63,
  "reserve": 0.0,
- "realized": 1384.78,
+ "realized": 1384.7,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 10,
- "fees_paid": 193.96,
+ "open_count": 11,
+ "fees_paid": 194.04,
  "fee_rate": 0.03,
  "lag": {
-  "n": 122,
-  "n24": 15,
-  "avg_s": 3.8,
-  "avg_slip_pct": -0.0181,
+  "n": 123,
+  "n24": 16,
+  "avg_s": 3.6,
+  "avg_slip_pct": -0.0219,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "47930487385442068307660985236580604031118404338161837203208216877292039014153",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "",
+   "title": "",
+   "their_price": 0.7168,
+   "my_price": 0.66,
+   "slippage_pct": -0.0793,
+   "lag_s": 0.6,
+   "shares": 11.84,
+   "cost": 7.82,
+   "fee": 0.08,
+   "opened": 1784056902,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "16167991169842969662552149172415147847102093356587677921265845709187217219794",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2003,26 +2022,6 @@
    "settled": 1783615554,
    "sold_shares": 195.87,
    "sold_proceeds": 53.91
-  },
-  {
-   "token": "5935284746747952722647052327314425731758209998268351888638837864133688247636",
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "name": "1kto1m",
-   "outcome": "Down",
-   "title": "WTI Crude Oil (WTI) Up or Down on July 9?",
-   "their_price": 0.9,
-   "my_price": 0.9,
-   "slippage_pct": 0.0,
-   "shares": 49.66,
-   "cost": 44.7,
-   "fee": 0.13,
-   "opened": 1783609346,
-   "status": "closed",
-   "exit_price": 0.9643,
-   "pnl": 3.05,
-   "settled": 1783615111,
-   "sold_shares": 49.66,
-   "sold_proceeds": 47.89
   }
  ],
  "missed": [
@@ -2983,5 +2982,5 @@
   }
  ],
  "missed_pnl": 89793.56,
- "updated": 1784055097
+ "updated": 1784056904
 }
