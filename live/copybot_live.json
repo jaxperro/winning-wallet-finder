@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 97.54,
+ "stake": 97.53,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2015.95,
- "deployed": 422.65,
+ "cash": 1969.37,
+ "deployed": 468.91,
  "reserve": 0.0,
- "realized": 1438.57,
+ "realized": 1438.25,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 10,
- "fees_paid": 185.57,
+ "open_count": 11,
+ "fees_paid": 185.89,
  "fee_rate": 0.03,
  "lag": {
-  "n": 116,
-  "n24": 10,
-  "avg_s": 34.0,
-  "avg_slip_pct": -0.0265,
+  "n": 117,
+  "n24": 11,
+  "avg_s": 31.2,
+  "avg_slip_pct": -0.0232,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "74666452124906997243440599268041315324945968051973641396724746828966017436262",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Bitcoin be between $64,000 and $66,000 on July 14?",
+   "their_price": 0.762,
+   "my_price": 0.769,
+   "slippage_pct": 0.0092,
+   "lag_s": 3.7,
+   "shares": 60.15,
+   "cost": 46.26,
+   "fee": 0.32,
+   "opened": 1784037859,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "97876504653834435837420333457865531621599310718225369500483292700893101165019",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -1999,26 +2018,6 @@
    "settled": 1783610007,
    "sold_shares": 57.32,
    "sold_proceeds": 42.78
-  },
-  {
-   "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Ethereal FDV above $500M one day after launch?",
-   "their_price": 0.82,
-   "my_price": 0.6,
-   "slippage_pct": -0.2683,
-   "shares": 74.55,
-   "cost": 44.73,
-   "fee": 0.54,
-   "opened": 1783604345,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 32.08,
-   "sold_proceeds": 25.84
   }
  ],
  "missed": [
@@ -2981,5 +2980,5 @@
   }
  ],
  "missed_pnl": 89793.56,
- "updated": 1784037708
+ "updated": 1784037862
 }
