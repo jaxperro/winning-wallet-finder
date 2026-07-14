@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 97.53,
+ "stake": 97.51,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1969.37,
- "deployed": 468.91,
+ "cash": 1871.2,
+ "deployed": 566.44,
  "reserve": 0.0,
- "realized": 1438.25,
+ "realized": 1437.61,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 11,
- "fees_paid": 185.89,
+ "open_count": 12,
+ "fees_paid": 186.54,
  "fee_rate": 0.03,
  "lag": {
-  "n": 117,
-  "n24": 11,
-  "avg_s": 31.2,
-  "avg_slip_pct": -0.0232,
+  "n": 118,
+  "n24": 12,
+  "avg_s": 28.7,
+  "avg_slip_pct": -0.0229,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "103599543732484870090369455326920139987823898856081914791151504750897348686596",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Liquid",
+   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 2 Winner",
+   "their_price": 0.7957,
+   "my_price": 0.78,
+   "slippage_pct": -0.0197,
+   "lag_s": 0.9,
+   "shares": 125.04,
+   "cost": 97.53,
+   "fee": 0.64,
+   "opened": 1784039149,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "74666452124906997243440599268041315324945968051973641396724746828966017436262",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1998,26 +2017,6 @@
    "settled": 1783610632,
    "sold_shares": 159.68,
    "sold_proceeds": 90.15
-  },
-  {
-   "token": "65984611303909407052169607993537741220891602509766446043631462077119911368849",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "MOUZ",
-   "title": "Dota 2: MOUZ vs Team Nemesis - Game 1 Winner",
-   "their_price": 0.77,
-   "my_price": 0.78,
-   "slippage_pct": 0.013,
-   "shares": 57.32,
-   "cost": 44.71,
-   "fee": 0.3,
-   "opened": 1783608410,
-   "status": "closed",
-   "exit_price": 0.7463,
-   "pnl": -2.23,
-   "settled": 1783610007,
-   "sold_shares": 57.32,
-   "sold_proceeds": 42.78
   }
  ],
  "missed": [
@@ -2979,5 +2978,5 @@
   }
  ],
  "missed_pnl": 89793.56,
- "updated": 1784038065
+ "updated": 1784039152
 }
