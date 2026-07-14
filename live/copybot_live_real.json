@@ -6,12 +6,12 @@
  "event_cap": 0,
  "hwm": 25.94,
  "cash": 10.4,
- "deployed": 6.75,
+ "deployed": 6.67,
  "reserve": 0.0,
- "realized": -5.05,
+ "realized": -5.13,
  "adjustments": -0.08,
- "ledger_drift": -0.0,
- "open_count": 4,
+ "ledger_drift": 0.0,
+ "open_count": 3,
  "fees_paid": 1.49,
  "fee_rate": 0.03,
  "lag": {
@@ -43,6 +43,27 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "43429083182986427425572947360954920494954132341616449095164581234599055860363",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Liquid",
+   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 1 Winner",
+   "their_price": 0.4087,
+   "my_price": 0.44,
+   "slippage_pct": 0.0767,
+   "lag_s": 11.5,
+   "shares": 2.33,
+   "cost": 1.02,
+   "fee": 0.02,
+   "opened": 1784030233,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": 0.06,
+   "settled": 1784040014,
+   "sold_shares": 2.16,
+   "sold_proceeds": 1.1
+  },
   {
    "token": "103599543732484870090369455326920139987823898856081914791151504750897348686596",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -126,27 +147,6 @@
    "settled": 1784032846,
    "sold_shares": 3.03,
    "sold_proceeds": 1.42
-  },
-  {
-   "token": "43429083182986427425572947360954920494954132341616449095164581234599055860363",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Liquid",
-   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 1 Winner",
-   "their_price": 0.4087,
-   "my_price": 0.44,
-   "slippage_pct": 0.0767,
-   "lag_s": 11.5,
-   "shares": 2.33,
-   "cost": 1.02,
-   "fee": 0.02,
-   "opened": 1784030233,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 2.16,
-   "sold_proceeds": 1.1
   },
   {
    "token": "17264384174229353627298328583540706050639011162572972591356343858147006483134",
@@ -1860,5 +1860,5 @@
   }
  ],
  "missed_pnl": 1042.1,
- "updated": 1784039457
+ "updated": 1784040017
 }
