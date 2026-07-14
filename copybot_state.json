@@ -11418,7 +11418,7 @@
   },
   "hwm": 2548.9580606723184,
   "feed_sig": "078b081ea5e660dbca222b5a507c9742",
-  "feed_pushed_at": 1783996747.5408592,
+  "feed_pushed_at": 1783997248.0183647,
   "missed": [
     {
       "ts": 1783590977,
@@ -12776,9 +12776,9 @@
       "price": 0.7,
       "stake": 93.91,
       "reason": "book unreliable (spread 0.29 > 0.08)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "refund",
+      "pnl": -27.68,
+      "settled": 1783997372,
       "name": "Kruto2027"
     },
     {

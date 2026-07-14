@@ -2020,6 +2020,21 @@
  ],
  "missed": [
   {
+   "ts": 1783965172,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "68863380862470769473817017624526026576800718695897153538391077057952557372819",
+   "cond": "0x67d054d9a655ca606802150b8850a07e611c10364de253187869e9d2d0cdfadc",
+   "title": "Set Handicap: Giese/Rafiq (-1.5) vs Ayeni/Chopra (+1.5)",
+   "outcome": "Ayeni/Chopra",
+   "price": 0.7,
+   "stake": 93.91,
+   "reason": "book unreliable (spread 0.29 > 0.08)",
+   "status": "refund",
+   "pnl": -27.68,
+   "settled": 1783997372,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1783973850,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "113811126480011515107509517146411015240698493006125965388028738076036215548925",
@@ -2033,21 +2048,6 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783965172,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "68863380862470769473817017624526026576800718695897153538391077057952557372819",
-   "cond": "0x67d054d9a655ca606802150b8850a07e611c10364de253187869e9d2d0cdfadc",
-   "title": "Set Handicap: Giese/Rafiq (-1.5) vs Ayeni/Chopra (+1.5)",
-   "outcome": "Ayeni/Chopra",
-   "price": 0.7,
-   "stake": 93.91,
-   "reason": "book unreliable (spread 0.29 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
   },
   {
    "ts": 1783933772,
@@ -2976,6 +2976,6 @@
    "exit_price": 0.75
   }
  ],
- "missed_pnl": 89813.04,
- "updated": 1783996759
+ "missed_pnl": 89785.36,
+ "updated": 1783997372
 }
