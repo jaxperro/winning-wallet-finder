@@ -2023,6 +2023,21 @@
  ],
  "missed": [
   {
+   "ts": 1784036922,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "105476473765378697704173602882253304048974245706445258100084642430904375742011",
+   "cond": "0x54570618ec2d24713f09896dd1e120b43515537c161d825656bdc1fef54ea66b",
+   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 2 Winner",
+   "outcome": "Xtreme Gaming",
+   "price": 0.46,
+   "stake": 97.54,
+   "reason": "thin book ($34 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784030419,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "43429083182986427425572947360954920494954132341616449095164581234599055860363",
@@ -2962,24 +2977,8 @@
    "settled": 1783697696,
    "name": "gkmgkldfmg",
    "exit_price": 0.2791
-  },
-  {
-   "ts": 1783695374,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "61106160955805000545726176309339696645249790307545132698548552906744856723300",
-   "cond": "0x958375865506b3a7d8f6d2b134b179243bdf78db9f245d3afbf26e95dbcf0b92",
-   "title": "Dota 2: Team Nemesis vs Vici Gaming - Game 1 Winner",
-   "outcome": "Team Nemesis",
-   "price": 0.37,
-   "stake": 84.18,
-   "reason": "price moved 0.35\u21920.37",
-   "status": "sold",
-   "pnl": -5.32,
-   "settled": 1783695501,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.3605
   }
  ],
  "missed_pnl": 89805.17,
- "updated": 1784036266
+ "updated": 1784036922
 }
