@@ -8,17 +8,17 @@
  "cash": 10.69,
  "deployed": 6.75,
  "reserve": 0.0,
- "realized": -4.77,
+ "realized": -4.76,
  "adjustments": -0.08,
- "ledger_drift": -0.0,
+ "ledger_drift": -0.01,
  "open_count": 4,
- "fees_paid": 1.44,
+ "fees_paid": 1.45,
  "fee_rate": 0.03,
  "lag": {
-  "n": 35,
-  "n24": 4,
-  "avg_s": 7.7,
-  "avg_slip_pct": 0.016,
+  "n": 36,
+  "n24": 5,
+  "avg_s": 7.3,
+  "avg_slip_pct": 0.0316,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,27 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "61047556128408287981194744648173296818501226243273740117171493124431115643554",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Rune Eaters",
+   "title": "Dota 2: Rune Eaters vs Virtus.pro - Game 2 Winner",
+   "their_price": 0.64,
+   "my_price": 0.7,
+   "slippage_pct": 0.0937,
+   "lag_s": 5.6,
+   "shares": 1.45,
+   "cost": 1.01,
+   "fee": 0.01,
+   "opened": 1784035745,
+   "status": "closed",
+   "exit_price": 0.714,
+   "pnl": 0.01,
+   "settled": 1784035876,
+   "sold_shares": 1.44,
+   "sold_proceeds": 1.03
+  },
   {
    "token": "61047556128408287981194744648173296818501226243273740117171493124431115643554",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1799,5 +1820,5 @@
   }
  ],
  "missed_pnl": 1042.2,
- "updated": 1784033164
+ "updated": 1784035876
 }
