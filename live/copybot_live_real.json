@@ -785,6 +785,21 @@
  ],
  "missed": [
   {
+   "ts": 1783991964,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "24842837270178563045080596501119383388959231063439941109817831657351105273923",
+   "cond": "0x7b2b0ac174514a7ec6351f91a01edd5064cf670c29f539cdfcc4d88bdb9937d0",
+   "title": "Will the next Claude Opus model be released by July 31, 2026?",
+   "outcome": "Yes",
+   "price": 0.79,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1783973910,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "113811126480011515107509517146411015240698493006125965388028738076036215548925",
@@ -1719,24 +1734,8 @@
    "settled": 1783777582,
    "name": "gkmgkldfmg",
    "exit_price": 0.92
-  },
-  {
-   "ts": 1783776636,
-   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
-   "token": "66542966921479736150492153890010290615172456230777295742236316360180197142463",
-   "cond": "0x28027472fa8bf888fcfb6bd87350fb2f952f425f1f439877ac89faedcf68f5b9",
-   "title": "Bitcoin Up or Down - July 11, 9:25AM-9:30AM ET",
-   "outcome": "Up",
-   "price": 0.5076,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "lost",
-   "pnl": -1.01,
-   "settled": 1783777014,
-   "name": "0xd96750bf",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 1042.19,
- "updated": 1783983853
+ "updated": 1783991964
 }
