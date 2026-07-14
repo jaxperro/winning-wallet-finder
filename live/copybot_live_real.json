@@ -785,6 +785,21 @@
  ],
  "missed": [
   {
+   "ts": 1784028615,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "107133788521613312162567181824294634873967810582690705864827492796504434100258",
+   "cond": "0xb575d94615e11aab02c5f8acc2b9e231fc91636362159ad6b52607835c75d7ec",
+   "title": "WTI Crude Oil (WTI) closes above $78 on July 14?",
+   "outcome": "Yes",
+   "price": 0.82,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784027686,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "76755883373039851290695610249455633595892527905785960150127813908400558868227",
@@ -1719,24 +1734,8 @@
    "settled": 1783780827,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783770287,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "105212104196091726392140052817325444324784813554106263063196477471085394528921",
-   "cond": "0xde8bac1e7c29832d29ae69c93248e6085e947a9909ff9c95f11ea7504257dd45",
-   "title": "Gwangju FC vs. Pohang Steelers FC: Pohang Steelers FC O/U 1.5",
-   "outcome": "Over",
-   "price": 0.91,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.1,
-   "settled": 1783780392,
-   "name": "0x41558102",
-   "exit_price": 1.0
   }
  ],
  "missed_pnl": 1041.53,
- "updated": 1784027786
+ "updated": 1784028615
 }
