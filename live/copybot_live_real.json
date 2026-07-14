@@ -5,19 +5,19 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 9.39,
- "deployed": 7.67,
+ "cash": 8.35,
+ "deployed": 8.71,
  "reserve": 0.0,
- "realized": -5.13,
+ "realized": -5.14,
  "adjustments": -0.08,
  "ledger_drift": 0.0,
- "open_count": 4,
- "fees_paid": 1.54,
+ "open_count": 5,
+ "fees_paid": 1.55,
  "fee_rate": 0.03,
  "lag": {
-  "n": 40,
-  "n24": 9,
-  "avg_s": 7.2,
+  "n": 41,
+  "n24": 10,
+  "avg_s": 7.3,
   "avg_slip_pct": 0.0309,
   "window_h": 24
  },
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "13318307853713698631378338331363859253307181326670279453872289373503626710742",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "LUA Gaming",
+   "title": "LoL: LUA Gaming vs FALKE Esports (BO3) - LES Regular Season",
+   "their_price": 0.63,
+   "my_price": 0.65,
+   "slippage_pct": 0.0317,
+   "lag_s": 8.7,
+   "shares": 1.59,
+   "cost": 1.03,
+   "fee": 0.01,
+   "opened": 1784047883,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "38404839370859900572663651821110620858010736415606391321540518400366572036926",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1901,5 +1920,5 @@
   }
  ],
  "missed_pnl": 1041.14,
- "updated": 1784043635
+ "updated": 1784047891
 }
