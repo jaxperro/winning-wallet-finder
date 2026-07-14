@@ -888,6 +888,22 @@
  ],
  "missed": [
   {
+   "ts": 1784038010,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "103599543732484870090369455326920139987823898856081914791151504750897348686596",
+   "cond": "0x54570618ec2d24713f09896dd1e120b43515537c161d825656bdc1fef54ea66b",
+   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 2 Winner",
+   "outcome": "Team Liquid",
+   "price": 0.41,
+   "stake": 1.0,
+   "reason": "price moved 0.36\u21920.41",
+   "status": "sold",
+   "pnl": -0.27,
+   "settled": 1784038243,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.3126
+  },
+  {
    "ts": 1784038064,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "74079800819371354810882430985275264634530851270424415749197209350942756192264",
@@ -901,21 +917,6 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784038010,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "103599543732484870090369455326920139987823898856081914791151504750897348686596",
-   "cond": "0x54570618ec2d24713f09896dd1e120b43515537c161d825656bdc1fef54ea66b",
-   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 2 Winner",
-   "outcome": "Team Liquid",
-   "price": 0.41,
-   "stake": 1.0,
-   "reason": "price moved 0.36\u21920.41",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1784037768,
@@ -1837,6 +1838,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 1042.37,
- "updated": 1784038064
+ "missed_pnl": 1042.1,
+ "updated": 1784038243
 }
