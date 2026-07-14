@@ -785,6 +785,21 @@
  ],
  "missed": [
   {
+   "ts": 1783996214,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "109624481875348569318303102429519724032296483676540566321245418804293736322472",
+   "cond": "0x73f249c806a34946776e96c784a6631b8b8421813a791903f9f9f576c4abaa7d",
+   "title": "Will South Korea ETF (EWY) hit (HIGH) $185 Week of July 13 2026?",
+   "outcome": "No",
+   "price": 0.78,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783991964,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "24842837270178563045080596501119383388959231063439941109817831657351105273923",
@@ -1718,24 +1733,8 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783777265,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "32083946557663920503716775865697460526633197303585051527116966709905217705878",
-   "cond": "0xc9f52d4c1e790f736f69fcd522263b02bcd3c2b17a729dbf048970ed59ee5808",
-   "title": "Dota 2: L1ga Team vs Level UP - Game 2 Winner",
-   "outcome": "L1ga Team",
-   "price": 0.5485,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.66,
-   "settled": 1783777582,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.92
   }
  ],
  "missed_pnl": 1042.19,
- "updated": 1783991964
+ "updated": 1783996216
 }
