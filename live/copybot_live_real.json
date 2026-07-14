@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 10.69,
- "deployed": 6.75,
+ "cash": 9.63,
+ "deployed": 7.8,
  "reserve": 0.0,
- "realized": -4.76,
+ "realized": -4.77,
  "adjustments": -0.08,
  "ledger_drift": -0.01,
- "open_count": 4,
- "fees_paid": 1.45,
+ "open_count": 5,
+ "fees_paid": 1.47,
  "fee_rate": 0.03,
  "lag": {
-  "n": 36,
-  "n24": 5,
-  "avg_s": 7.3,
-  "avg_slip_pct": 0.0316,
+  "n": 37,
+  "n24": 6,
+  "avg_s": 8.1,
+  "avg_slip_pct": 0.0341,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "105476473765378697704173602882253304048974245706445258100084642430904375742011",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Xtreme Gaming",
+   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 2 Winner",
+   "their_price": 0.5638,
+   "my_price": 0.59,
+   "slippage_pct": 0.0465,
+   "lag_s": 12.4,
+   "shares": 1.78,
+   "cost": 1.05,
+   "fee": 0.01,
+   "opened": 1784036912,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "61047556128408287981194744648173296818501226243273740117171493124431115643554",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -867,6 +886,22 @@
  ],
  "missed": [
   {
+   "ts": 1784036252,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "103599543732484870090369455326920139987823898856081914791151504750897348686596",
+   "cond": "0x54570618ec2d24713f09896dd1e120b43515537c161d825656bdc1fef54ea66b",
+   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 2 Winner",
+   "outcome": "Team Liquid",
+   "price": 0.76,
+   "stake": 1.0,
+   "reason": "in-play hold expired unfilled (30s)",
+   "status": "sold",
+   "pnl": -0.09,
+   "settled": 1784036958,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.7
+  },
+  {
    "ts": 1784036144,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "97876504653834435837420333457865531621599310718225369500483292700893101165019",
@@ -881,21 +916,6 @@
    "settled": 1784036324,
    "name": "1kto1m",
    "exit_price": 0.68
-  },
-  {
-   "ts": 1784036252,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "103599543732484870090369455326920139987823898856081914791151504750897348686596",
-   "cond": "0x54570618ec2d24713f09896dd1e120b43515537c161d825656bdc1fef54ea66b",
-   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 2 Winner",
-   "outcome": "Team Liquid",
-   "price": 0.76,
-   "stake": 1.0,
-   "reason": "in-play hold expired unfilled (30s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1784028615,
@@ -1818,6 +1838,6 @@
    "exit_price": 0.999
   }
  ],
- "missed_pnl": 1042.35,
- "updated": 1784036324
+ "missed_pnl": 1042.26,
+ "updated": 1784036958
 }
