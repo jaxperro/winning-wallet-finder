@@ -1,4 +1,4 @@
-# Session handoff — 2026-07-13 (rev 11: RTDS-seed lag fix, tick-conform prices, floor_pin audit)
+# Session handoff — 2026-07-14 (rev 12: chain-seed — fills decoded from the tx receipt)
 
 ## Operating boundary set by the user (2026-07-13, "away for a while")
 **Full autonomy on BOTH bots**; real-money bot **stays ARMED**. Never touch
@@ -6,6 +6,31 @@ the private key, never raise/loosen caps, never rotate the Discord webhook
 (needs their login — STILL OPEN). If something looks genuinely dangerous,
 DISARM the live bot (`flyctl secrets unset LIVE_CONFIRM`) rather than push
 through it.
+
+## Shipped since rev 11 (2026-07-14)
+- **CHAIN SEED (T0b)**: the missed-bets review found the one remaining
+  detection leak — RTDS doesn't emit every market (the "Credible public
+  sale" sweep was missed on BOTH books at 20:18Z despite the rev-11 fix:
+  RTDS silent + data-api indexer past the 600s window; badaf's detection
+  misses are the only +EV ones, +$34.60/10 on paper). Now the Alchemy push
+  carries its tx hashes into `on_wallet_activity(hint_txs=…)`; any hash the
+  data-api fetch didn't return is decoded straight from the receipt
+  (`fills_from_tx`: OrderFilled logs, maker==wallet row; gamma lookup for
+  title/outcome/cond; block ts). Validated 200/200 against shadow-ledger
+  fills and end-to-end on the actual missed Credible txs. Fail-open on any
+  RPC/gamma error (backstops unchanged); forged-event-safe (only the two
+  new-stack exchange contracts 0xe111…996b / 0xe2222…0f59 are trusted
+  emitters — a dust transfer can trigger the webhook, so this matters).
+  Tests: tests/test_chainseed.py (6 stub paths). Both boxes have
+  ALCHEMY_RPC_URL, so the path is live on deploy. Watch for the first
+  `chainseed:` line — expected on badaf niche markets during RTDS flaps.
+- **Missed-bets audit verdict** (what prompted this): price guard skips are
+  net-NEGATIVE would-be P&L on both books (validated again — leave at 0.05);
+  old detection misses were -EV and all from since-dropped wallets; conform/
+  sub-$1/sub-penny categories all fixed pre-rev-11. Remaining candidates NOT
+  built: thin-book FAK no-match → resting limit via the pending registry
+  (small now, scales with stakes), paper thin-book modeling parity (biases the
+  live-vs-paper ratio optimistic).
 
 ## Shipped since rev 10 (all deployed + verified)
 - **RTDS-seed lag fix** (the big one): RTDS detected trades at ~0.3s but the

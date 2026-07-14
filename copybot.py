@@ -84,13 +84,17 @@ _RPC_URL = None            # resolved once in main() (env/config), stays None wi
 _PAYOUTS = {}              # cond -> [p0, p1], cached once resolved (immutable)
 
 
-def _eth_call(data):
-    body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "eth_call",
-                       "params": [{"to": CTF_ADDR, "data": data}, "latest"]}).encode()
+def _rpc(method, params):
+    body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": method,
+                       "params": params}).encode()
     req = urllib.request.Request(_RPC_URL, data=body,
                                  headers={"Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=15, context=SSL_CTX) as r:
         return json.loads(r.read())["result"]
+
+
+def _eth_call(data):
+    return _rpc("eth_call", [{"to": CTF_ADDR, "data": data}, "latest"])
 
 
 def onchain_payouts(cond):
@@ -111,6 +115,100 @@ def onchain_payouts(cond):
         return _PAYOUTS[cond]
     except Exception:
         return None
+
+
+# ── T0b: fills straight from the tx receipt (Alchemy push) ──────────────────
+# RTDS doesn't emit every market (2026-07-13: badaf's "Credible public sale"
+# entry was missed on BOTH books — RTDS silent, and the data-api indexer
+# lagged past the 600s window, so the ~3s Alchemy push detected a trade it
+# couldn't fetch). The push carries the tx hash, and the fill is fully
+# decodable from the receipt — so no market's copy speed depends on RTDS
+# coverage or indexer freshness.
+_ORDER_FILLED = "0xd543adfd945773f1a62f74f0ee55a5e3b9b1a28262980ba90b1a89f2ea84d8ee"
+_EXCHANGES = {  # new-stack (pUSD) exchange contracts, the only trusted
+    # OrderFilled emitters — an attacker CAN trigger the webhook with a dust
+    # transfer, so never decode fills from arbitrary contracts' events.
+    # Both observed across 200/200 shadow-ledger fills (2026-07-14).
+    "0xe111180000d2663c0091e4f400237545b87b996b",
+    "0xe2222d279d744050d28e00520010520000310f59",
+}
+_TOK_MKT = {}                   # token id -> (title, outcome, cond), immutable
+_TOK_LOCK = threading.Lock()
+
+
+def _token_market(token):
+    """token id -> (title, outcome, conditionId) via the gamma API, or None.
+    A failed lookup means the caller drops the seed — the backstop poll still
+    copies the trade once the indexer catches up (honest, never guessy)."""
+    with _TOK_LOCK:
+        if token in _TOK_MKT:
+            return _TOK_MKT[token]
+    try:
+        req = urllib.request.Request(
+            f"https://gamma-api.polymarket.com/markets?clob_token_ids={token}",
+            headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=12, context=SSL_CTX) as r:
+            m = (json.loads(r.read().decode()) or [{}])[0]
+        toks = json.loads(m["clobTokenIds"])
+        got = (m.get("question") or "",
+               json.loads(m["outcomes"])[toks.index(token)],
+               m.get("conditionId"))
+    except Exception:
+        return None
+    with _TOK_LOCK:
+        _TOK_MKT[token] = got
+    return got
+
+
+def fills_from_tx(tx, wallet):
+    """The watched wallet's fills decoded from the receipt, as data-api-shaped
+    trade dicts ([] without an RPC / on any failure — backstops still cover).
+    OrderFilled topics: (sig, orderHash, maker, taker); the wallet's own order
+    is the maker==wallet row (aggregate when it took, per-order when it made).
+    Data words: (assetClassGiven, tokenId, amountGiven, amountTaken, fee…) in
+    6dp base units; class 0 = gave cash = BUY, else gave tokens = SELL.
+    Validated 200/200 against shadow-ledger fills — side, size, price exact."""
+    if not _RPC_URL:
+        return []
+    try:
+        rcpt = _rpc("eth_getTransactionReceipt", [tx])
+    except Exception:
+        return []
+    if not rcpt:
+        return []
+    try:                        # block ts keeps the staleness gate + lag stat honest
+        ts = int(_rpc("eth_getBlockByNumber",
+                      [rcpt["blockNumber"], False])["timestamp"], 16)
+    except Exception:
+        ts = int(time.time())
+    w40, out = wallet[2:].lower(), []
+    for lg in rcpt.get("logs", []):
+        t = lg.get("topics") or []
+        if (len(t) < 4 or t[0].lower() != _ORDER_FILLED
+                or (lg.get("address") or "").lower() not in _EXCHANGES
+                or t[2][-40:].lower() != w40):
+            continue
+        d = lg.get("data", "0x")[2:]
+        wd = [int(d[i:i + 64], 16) for i in range(0, len(d), 64)]
+        if len(wd) < 4:
+            continue
+        side = "BUY" if wd[0] == 0 else "SELL"
+        token, given, taken = str(wd[1]), wd[2] / 1e6, wd[3] / 1e6
+        usd, size = (given, taken) if side == "BUY" else (taken, given)
+        if not size:
+            continue
+        meta = _token_market(token)
+        if not meta:
+            log(f"chainseed: no metadata for token …{token[-8:]} "
+                f"({tx[:10]}…) — left to the backstop poll")
+            continue
+        out.append({"transactionHash": tx, "asset": token, "side": side,
+                    "size": size, "price": round(usd / size, 6),
+                    "usdcSize": round(usd, 2), "title": meta[0],
+                    "outcome": meta[1], "conditionId": meta[2],
+                    "timestamp": ts})
+    return out
+
 
 # follow-filter defaults — merged under cfg["follow"]; permissive so nothing is
 # silently dropped until you opt in. The engine's risk caps bound everything
@@ -1643,16 +1741,29 @@ class Copybot:
             cur[wallet.lower()] = max(since, newest)
         return [t for t in rows if (t.get("timestamp") or 0) > since - 600]
 
-    def on_wallet_activity(self, wallet, ignore_stale=False, seed_trade=None):
+    def on_wallet_activity(self, wallet, ignore_stale=False, seed_trade=None,
+                           hint_txs=None):
         """A watched wallet just transacted — pull its latest trades and route any
         new, recent one through the filter and (if it passes) the engine.
         `seed_trade` (from the RTDS push) is merged into the fetched set so a
-        lagging data-api indexer can't delay the copy — deduped by tx."""
+        lagging data-api indexer can't delay the copy — deduped by tx.
+        `hint_txs` (from the Alchemy push) are receipt hashes: any hash the
+        fetch didn't return is decoded straight from the chain (fills_from_tx),
+        so an RTDS-silent market still copies at push speed."""
         name = self.names.get(wallet.lower(), wallet[:10] + "…")
         trades = self._fetch_since_cursor(wallet)
         if seed_trade and seed_trade.get("transactionHash") and seed_trade.get("asset"):
             if seed_trade["transactionHash"] not in {t.get("transactionHash") for t in trades}:
                 trades = trades + [seed_trade]
+        have = {t.get("transactionHash") for t in trades}
+        for tx in (hint_txs or []):
+            if tx in have or tx in self.engine.seen or tx in self.skipped:
+                continue
+            have.add(tx)
+            for f in fills_from_tx(tx, wallet):
+                log(f"chainseed: {name} {f['side']} {f['size']:g} @ "
+                    f"{f['price']:.3f} · {str(f['title'])[:40]}")
+                trades = trades + [f]
         # ONE conviction bet often arrives as several fills — a sweep through
         # the book or rapid clip entries (gkmg 2026-07-09: a $612 MOUZ entry =
         # 3×$204 same-second rows, every clip sub-floor while the backtest's
@@ -2065,13 +2176,18 @@ def verify(raw, sig, signing_key):
 
 
 def addresses_in_payload(payload, watched):
-    out = set()
+    """-> {watched wallet: sorted tx hashes}. The hashes ride along so a
+    trade the data-api can't return yet is decoded from its receipt instead
+    of waiting on the indexer (fills_from_tx)."""
+    out = {}
     for a in payload.get("event", {}).get("activity", []):
         for k in ("fromAddress", "toAddress"):
-            v = a.get(k)
-            if v and v.lower() in watched:
-                out.add(v.lower())
-    return out
+            v = (a.get(k) or "").lower()
+            if v in watched:
+                txs = out.setdefault(v, set())
+                if a.get("hash"):
+                    txs.add(a["hash"])
+    return {w: sorted(txs) for w, txs in out.items()}
 
 
 def make_handler(bot, signing_key):
@@ -2096,8 +2212,8 @@ def make_handler(bot, signing_key):
             try:
                 bot.settle_resolved()               # recycle any newly-resolved positions
                 payload = json.loads(raw or b"{}")
-                for w in addresses_in_payload(payload, watched):
-                    bot.on_wallet_activity(w)
+                for w, txs in addresses_in_payload(payload, watched).items():
+                    bot.on_wallet_activity(w, hint_txs=txs)
                 bot.write_feed()                    # refresh + publish the dashboard feed
                 bot.publish_feed()
             except Exception as e:
