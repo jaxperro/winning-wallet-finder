@@ -2019,6 +2019,21 @@
  ],
  "missed": [
   {
+   "ts": 1784030419,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "43429083182986427425572947360954920494954132341616449095164581234599055860363",
+   "cond": "0x2bb66399ec3f2a5eac9af9e5431f5f7f3b912e0d41619a01135459c6546bdf42",
+   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 1 Winner",
+   "outcome": "Team Liquid",
+   "price": 0.431,
+   "stake": 94.4,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783965172,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "68863380862470769473817017624526026576800718695897153538391077057952557372819",
@@ -2958,24 +2973,8 @@
    "settled": 1783695501,
    "name": "gkmgkldfmg",
    "exit_price": 0.3605
-  },
-  {
-   "ts": 1783690584,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "49886282303318964434544606851164664333698127985256361511182784657423645654000",
-   "cond": "0x8545a030f00ef7748aa1c00481a9f01ec4b73550aef97b564a3f5a07b31f8f9d",
-   "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
-   "outcome": "Aurora",
-   "price": 0.55,
-   "stake": 82.82,
-   "reason": "price moved 0.46\u21920.55",
-   "status": "sold",
-   "pnl": 28.15,
-   "settled": 1783690824,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.75
   }
  ],
  "missed_pnl": 89785.36,
- "updated": 1784029463
+ "updated": 1784030421
 }
