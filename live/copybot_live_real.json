@@ -991,6 +991,21 @@
  ],
  "missed": [
   {
+   "ts": 1784054881,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "106117170598299515991778271448868055604686257762862584190468389838818487912270",
+   "cond": "0xbe259598e5a6c822d9d5cd125a853fecf6ebed30425621c4dd6fe4151b32d9ab",
+   "title": "Israel enacts military exemption for Yeshiva students by Sep 30?",
+   "outcome": "No",
+   "price": 0.35,
+   "stake": 1.0,
+   "reason": "thin book ($5 within 5c < $50)",
+   "status": "lost",
+   "pnl": -1.02,
+   "settled": 1784063058,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784056905,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "47930487385442068307660985236580604031118404338161837203208216877292039014153",
@@ -1004,21 +1019,6 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1784054881,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "106117170598299515991778271448868055604686257762862584190468389838818487912270",
-   "cond": "0xbe259598e5a6c822d9d5cd125a853fecf6ebed30425621c4dd6fe4151b32d9ab",
-   "title": "Israel enacts military exemption for Yeshiva students by Sep 30?",
-   "outcome": "No",
-   "price": 0.35,
-   "stake": 1.0,
-   "reason": "thin book ($5 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784037862,
@@ -1940,6 +1940,6 @@
    "exit_price": 0.999
   }
  ],
- "missed_pnl": 1041.14,
- "updated": 1784059997
+ "missed_pnl": 1040.12,
+ "updated": 1784063058
 }
