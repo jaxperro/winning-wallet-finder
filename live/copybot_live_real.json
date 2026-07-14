@@ -949,6 +949,22 @@
  ],
  "missed": [
   {
+   "ts": 1784037862,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "74666452124906997243440599268041315324945968051973641396724746828966017436262",
+   "cond": "0xb34a462d975da3248d4ef3c19dfb3dfa9bac7569828b81dedb63698656e7be48",
+   "title": "Will the price of Bitcoin be between $64,000 and $66,000 on July 14?",
+   "outcome": "No",
+   "price": 0.778,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "sold",
+   "pnl": -0.96,
+   "settled": 1784043634,
+   "name": "0xbadaf319",
+   "exit_price": 0.037
+  },
+  {
    "ts": 1784038010,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "103599543732484870090369455326920139987823898856081914791151504750897348686596",
@@ -994,21 +1010,6 @@
    "settled": 1784037916,
    "name": "gkmgkldfmg",
    "exit_price": 0.7
-  },
-  {
-   "ts": 1784037862,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "74666452124906997243440599268041315324945968051973641396724746828966017436262",
-   "cond": "0xb34a462d975da3248d4ef3c19dfb3dfa9bac7569828b81dedb63698656e7be48",
-   "title": "Will the price of Bitcoin be between $64,000 and $66,000 on July 14?",
-   "outcome": "No",
-   "price": 0.778,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784036252,
@@ -1899,6 +1900,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 1042.1,
- "updated": 1784042358
+ "missed_pnl": 1041.14,
+ "updated": 1784043635
 }
