@@ -867,6 +867,36 @@
  ],
  "missed": [
   {
+   "ts": 1784036252,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "103599543732484870090369455326920139987823898856081914791151504750897348686596",
+   "cond": "0x54570618ec2d24713f09896dd1e120b43515537c161d825656bdc1fef54ea66b",
+   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 2 Winner",
+   "outcome": "Team Liquid",
+   "price": 0.76,
+   "stake": 1.0,
+   "reason": "in-play hold expired unfilled (30s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
+   "ts": 1784036144,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "97876504653834435837420333457865531621599310718225369500483292700893101165019",
+   "cond": "0x3f21ea30dd56b175bcbf30f0dd3cbfc57957035404f5ab0d2f4fe10859f5d267",
+   "title": "S&P 500 (SPX) Up or Down on July 14?",
+   "outcome": "Up",
+   "price": 0.58,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1784028615,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "107133788521613312162567181824294634873967810582690705864827492796504434100258",
@@ -1785,40 +1815,8 @@
    "settled": 1783808154,
    "name": "gkmgkldfmg",
    "exit_price": 0.999
-  },
-  {
-   "ts": 1783781335,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "27632180525380684914321906274705941073296172029015605436272337722097971624328",
-   "cond": "0x6d1bc898781da9b481d170cc8fc7915273eb391e466d50164dbc1dbe94efea73",
-   "title": "Mjallby AIF vs. AIK: O/U 2.5",
-   "outcome": "Over",
-   "price": 0.8598,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.16,
-   "settled": 1783789468,
-   "name": "0x41558102",
-   "exit_price": 1.0
-  },
-  {
-   "ts": 1783779844,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "6204759428229444483121269411993202060365882790720181835870759405978643810801",
-   "cond": "0x9a00a35b561ef8c283ba3e47f599b71c5d4af452346e02cc1f142f07f732e21e",
-   "title": "Will Jio Platforms IPO by August 31, 2026?",
-   "outcome": "No",
-   "price": 0.59,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "sold",
-   "pnl": 0.06,
-   "settled": 1783786981,
-   "name": "0xbadaf319",
-   "exit_price": 0.6397
   }
  ],
  "missed_pnl": 1042.2,
- "updated": 1784035876
+ "updated": 1784036254
 }
