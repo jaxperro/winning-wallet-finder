@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 98.11,
+ "stake": 96.99,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1920.9,
- "deployed": 531.77,
+ "cash": 1922.58,
+ "deployed": 502.23,
  "reserve": 0.0,
- "realized": 1452.65,
+ "realized": 1424.78,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 12,
- "fees_paid": 191.88,
+ "open_count": 11,
+ "fees_paid": 191.93,
  "fee_rate": 0.03,
  "lag": {
   "n": 120,
@@ -43,6 +43,27 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "74666452124906997243440599268041315324945968051973641396724746828966017436262",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Bitcoin be between $64,000 and $66,000 on July 14?",
+   "their_price": 0.762,
+   "my_price": 0.769,
+   "slippage_pct": 0.0092,
+   "lag_s": 3.7,
+   "shares": 60.15,
+   "cost": 46.26,
+   "fee": 0.32,
+   "opened": 1784037859,
+   "status": "closed",
+   "exit_price": 0.0595,
+   "pnl": -43.0,
+   "settled": 1784043320,
+   "sold_shares": 60.15,
+   "sold_proceeds": 3.58
+  },
   {
    "token": "38404839370859900572663651821110620858010736415606391321540518400366572036926",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -103,27 +124,6 @@
    "settled": 1784039404,
    "sold_shares": 125.04,
    "sold_proceeds": 116.94
-  },
-  {
-   "token": "74666452124906997243440599268041315324945968051973641396724746828966017436262",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Bitcoin be between $64,000 and $66,000 on July 14?",
-   "their_price": 0.762,
-   "my_price": 0.769,
-   "slippage_pct": 0.0092,
-   "lag_s": 3.7,
-   "shares": 60.15,
-   "cost": 46.26,
-   "fee": 0.32,
-   "opened": 1784037859,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 21.73,
-   "sold_proceeds": 1.9
   },
   {
    "token": "97876504653834435837420333457865531621599310718225369500483292700893101165019",
@@ -2982,5 +2982,5 @@
   }
  ],
  "missed_pnl": 89793.56,
- "updated": 1784043215
+ "updated": 1784043320
 }
