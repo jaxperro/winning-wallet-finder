@@ -11,7 +11,7 @@
  "realized": -5.11,
  "adjustments": -0.08,
  "ledger_drift": -0.01,
- "open_count": 5,
+ "open_count": 4,
  "fees_paid": 1.48,
  "fee_rate": 0.03,
  "lag": {
@@ -57,12 +57,12 @@
    "cost": 1.05,
    "fee": 0.01,
    "opened": 1784036912,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 1.77,
-   "sold_proceeds": 0.71
+   "status": "closed",
+   "exit_price": 0.4026,
+   "pnl": -0.35,
+   "settled": 1784038885,
+   "sold_shares": 1.78,
+   "sold_proceeds": 0.72
   },
   {
    "token": "61047556128408287981194744648173296818501226243273740117171493124431115643554",
@@ -1839,5 +1839,5 @@
   }
  ],
  "missed_pnl": 1042.1,
- "updated": 1784038243
+ "updated": 1784038885
 }
