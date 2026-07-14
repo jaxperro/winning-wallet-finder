@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 10.34,
- "deployed": 6.75,
+ "cash": 9.3,
+ "deployed": 7.78,
  "reserve": 0.0,
  "realized": -5.11,
  "adjustments": -0.08,
- "ledger_drift": -0.01,
- "open_count": 4,
- "fees_paid": 1.48,
+ "ledger_drift": -0.0,
+ "open_count": 5,
+ "fees_paid": 1.49,
  "fee_rate": 0.03,
  "lag": {
-  "n": 37,
-  "n24": 6,
-  "avg_s": 8.1,
-  "avg_slip_pct": 0.0341,
+  "n": 38,
+  "n24": 7,
+  "avg_s": 7.7,
+  "avg_slip_pct": 0.0353,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "103599543732484870090369455326920139987823898856081914791151504750897348686596",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Liquid",
+   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 2 Winner",
+   "their_price": 0.7957,
+   "my_price": 0.8299,
+   "slippage_pct": 0.043,
+   "lag_s": 5.4,
+   "shares": 1.25,
+   "cost": 1.04,
+   "fee": 0.01,
+   "opened": 1784039149,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "105476473765378697704173602882253304048974245706445258100084642430904375742011",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1839,5 +1858,5 @@
   }
  ],
  "missed_pnl": 1042.1,
- "updated": 1784038885
+ "updated": 1784039155
 }
