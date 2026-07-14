@@ -11559,17 +11559,17 @@
       "cost": 94.28,
       "fee": 0.6505,
       "opened": 1784027681,
-      "status": "open",
-      "exit_price": null,
-      "pnl": null,
-      "settled": null,
+      "status": "closed",
+      "exit_price": 0.8054,
+      "pnl": 3.68,
+      "settled": 1784027887,
       "sold_shares": 122.43745493623818,
       "sold_proceeds": 98.60904476891233
     }
   },
   "hwm": 2548.9580606723184,
-  "feed_sig": "a0a2703aa0131f0bda8e5422af825789",
-  "feed_pushed_at": 1784027757.4069848,
+  "feed_sig": "c0ac59e671003a379761ad1e6e522b35",
+  "feed_pushed_at": 1784027887.5348122,
   "missed": [
     {
       "ts": 1783590977,
