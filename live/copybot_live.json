@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 94.42,
+ "stake": 94.41,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1996.71,
- "deployed": 363.9,
+ "cash": 1934.43,
+ "deployed": 425.84,
  "reserve": 0.0,
- "realized": 1360.57,
+ "realized": 1360.24,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 9,
- "fees_paid": 177.56,
+ "ledger_drift": -0.02,
+ "open_count": 10,
+ "fees_paid": 177.89,
  "fee_rate": 0.03,
  "lag": {
-  "n": 112,
-  "n24": 8,
-  "avg_s": 58.1,
-  "avg_slip_pct": -0.0303,
+  "n": 113,
+  "n24": 9,
+  "avg_s": 52.1,
+  "avg_slip_pct": -0.0321,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "107133788521613312162567181824294634873967810582690705864827492796504434100258",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "WTI Crude Oil (WTI) closes above $78 on July 14?",
+   "their_price": 0.86,
+   "my_price": 0.82,
+   "slippage_pct": -0.0465,
+   "lag_s": 3.5,
+   "shares": 75.54,
+   "cost": 61.94,
+   "fee": 0.33,
+   "opened": 1784028613,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "76755883373039851290695610249455633595892527905785960150127813908400558868227",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -1995,27 +2014,6 @@
    "settled": 1783597696,
    "sold_shares": 560.46,
    "sold_proceeds": 44.31
-  },
-  {
-   "token": "67316041392595003970935162895075724563017159074192091517379695493042764601836",
-   "wallet": "0xd7d363457b9d4f527524ea6a7c9f8b0e2c0e4a00",
-   "name": "gkmgkldfmg",
-   "outcome": "GamerLegion",
-   "title": "Dota 2: GamerLegion vs Team Falcons - Game 2 Winner?",
-   "their_price": null,
-   "my_price": 0.39,
-   "slippage_pct": null,
-   "shares": 116.92,
-   "cost": 45.6,
-   "fee": 0.83,
-   "sold_shares": 116.92,
-   "sold_proceeds": 27.37,
-   "opened": 1783597238,
-   "status": "closed",
-   "exit_price": 0.2341,
-   "pnl": -19.06,
-   "settled": 1783597386,
-   "note": "reconstructed from fills ledger 2026-07-09 \u2014 round clobbered pre-archive-fix"
   }
  ],
  "missed": [
@@ -2978,5 +2976,5 @@
   }
  ],
  "missed_pnl": 89785.36,
- "updated": 1784028013
+ "updated": 1784028616
 }
