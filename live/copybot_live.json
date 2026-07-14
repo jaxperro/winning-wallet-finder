@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 96.15,
+ "stake": 95.37,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1824.83,
- "deployed": 578.81,
+ "cash": 1902.48,
+ "deployed": 481.82,
  "reserve": 0.0,
- "realized": 1403.61,
+ "realized": 1384.27,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 11,
- "fees_paid": 192.69,
+ "open_count": 10,
+ "fees_paid": 193.63,
  "fee_rate": 0.03,
  "lag": {
   "n": 121,
@@ -44,6 +44,27 @@
  },
  "bets": [
   {
+   "token": "114408446604886353206911847633106829807018038464913763376714523293436793199652",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "LGD Gaming",
+   "title": "Dota 2: LGD Gaming vs MOUZ - Game 2 Winner",
+   "their_price": 0.7282,
+   "my_price": 0.74,
+   "slippage_pct": 0.0163,
+   "lag_s": 4.5,
+   "shares": 131.07,
+   "cost": 96.99,
+   "fee": 0.76,
+   "opened": 1784052486,
+   "status": "closed",
+   "exit_price": 0.5924,
+   "pnl": -20.09,
+   "settled": 1784054791,
+   "sold_shares": 131.07,
+   "sold_proceeds": 77.65
+  },
+  {
    "token": "66043823927578785385332294647462770708290770399339210264516767845856140852007",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "name": "BikesAreTheBikes",
@@ -61,25 +82,6 @@
    "exit_price": 0.0,
    "pnl": -20.8,
    "settled": 1784053019
-  },
-  {
-   "token": "114408446604886353206911847633106829807018038464913763376714523293436793199652",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "LGD Gaming",
-   "title": "Dota 2: LGD Gaming vs MOUZ - Game 2 Winner",
-   "their_price": 0.7282,
-   "my_price": 0.74,
-   "slippage_pct": 0.0163,
-   "lag_s": 4.5,
-   "shares": 131.07,
-   "cost": 96.99,
-   "fee": 0.76,
-   "opened": 1784052486,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "74666452124906997243440599268041315324945968051973641396724746828966017436262",
@@ -2024,6 +2026,21 @@
  ],
  "missed": [
   {
+   "ts": 1784054882,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "106117170598299515991778271448868055604686257762862584190468389838818487912270",
+   "cond": "0xbe259598e5a6c822d9d5cd125a853fecf6ebed30425621c4dd6fe4151b32d9ab",
+   "title": "Israel enacts military exemption for Yeshiva students by Sep 30?",
+   "outcome": "No",
+   "price": 0.35,
+   "stake": 95.37,
+   "reason": "thin book ($5 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784038062,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "74079800819371354810882430985275264634530851270424415749197209350942756192264",
@@ -2962,24 +2979,8 @@
    "settled": 1783702410,
    "name": "gkmgkldfmg",
    "exit_price": 0.0037
-  },
-  {
-   "ts": 1783698949,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "20753444326597808403433519410324896770837596585358560000183009522246701254242",
-   "cond": "0x06f2a24626f9441cdb0e52b81b0b4f40dab91b6109ee5b9d5e3dce82aefcf2da",
-   "title": "Dota 2: Team Nemesis vs Vici Gaming - Game 2 Winner",
-   "outcome": "Team Nemesis",
-   "price": 0.339,
-   "stake": 87.7,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -72.38,
-   "settled": 1783700847,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.0679
   }
  ],
  "missed_pnl": 89793.56,
- "updated": 1784053021
+ "updated": 1784054882
 }
