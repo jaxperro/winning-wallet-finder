@@ -991,6 +991,21 @@
  ],
  "missed": [
   {
+   "ts": 1784063559,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "6237386819428750235511557154093150991879160039847931747938354455286350107208",
+   "cond": "",
+   "title": "",
+   "outcome": "",
+   "price": 0.86,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784054881,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "106117170598299515991778271448868055604686257762862584190468389838818487912270",
@@ -1923,24 +1938,8 @@
    "settled": 1783821961,
    "name": "gkmgkldfmg",
    "exit_price": 0.6264
-  },
-  {
-   "ts": 1783819878,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "75547676899565417061748996551784035227286947758945008419210215158883005757610",
-   "cond": "0x3c8f0d7032eab68cfbfcd50bd36f4d2749851d8a13df42f15740e9ac3381fe4c",
-   "title": "UFC 329: King Green vs. Terrance McKinney (Lightweight, Main Card)",
-   "outcome": "King Green",
-   "price": 0.99,
-   "stake": 1.0,
-   "reason": "price moved 0.62\u21920.99",
-   "status": "sold",
-   "pnl": 0.01,
-   "settled": 1783820084,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.999
   }
  ],
  "missed_pnl": 1040.12,
- "updated": 1784063253
+ "updated": 1784063560
 }
