@@ -2022,6 +2022,21 @@
  ],
  "missed": [
   {
+   "ts": 1784038062,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "74079800819371354810882430985275264634530851270424415749197209350942756192264",
+   "cond": "0x73b1e8e9993114bd0b92588ecdc2a6f490ba9cc6f85844d927ae62e0b3c15ca5",
+   "title": "Will Russia capture Pokrovka by July 31?",
+   "outcome": "No",
+   "price": 0.242,
+   "stake": 97.53,
+   "reason": "book unreliable (spread 0.69 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784036922,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "105476473765378697704173602882253304048974245706445258100084642430904375742011",
@@ -2961,24 +2976,8 @@
    "settled": 1783700847,
    "name": "gkmgkldfmg",
    "exit_price": 0.0679
-  },
-  {
-   "ts": 1783697381,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "9680605212686211980723723137267513726715630041509403278769393973882140080333",
-   "cond": "0xfb659e6505a847f578b31814f4cc241aba23f9dfe751fbb09d54b0661e0ca17d",
-   "title": "Dota 2: PARIVISION vs MOUZ - Game 1 Winner",
-   "outcome": "MOUZ",
-   "price": 0.2711,
-   "stake": 87.62,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -1.28,
-   "settled": 1783697696,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.2791
   }
  ],
  "missed_pnl": 89793.56,
- "updated": 1784037862
+ "updated": 1784038065
 }
