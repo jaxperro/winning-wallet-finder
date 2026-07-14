@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 94.4,
+ "stake": 94.32,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1852.8,
- "deployed": 507.25,
+ "cash": 1756.47,
+ "deployed": 601.65,
  "reserve": 0.0,
- "realized": 1360.01,
+ "realized": 1358.09,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 11,
- "fees_paid": 178.91,
+ "open_count": 12,
+ "fees_paid": 180.83,
  "fee_rate": 0.03,
  "lag": {
-  "n": 114,
-  "n24": 9,
-  "avg_s": 52.3,
-  "avg_slip_pct": -0.0118,
+  "n": 115,
+  "n24": 10,
+  "avg_s": 47.8,
+  "avg_slip_pct": -0.0165,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "61047556128408287981194744648173296818501226243273740117171493124431115643554",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Rune Eaters",
+   "title": "Dota 2: Rune Eaters vs Virtus.pro - Game 2 Winner",
+   "their_price": 0.34,
+   "my_price": 0.32,
+   "slippage_pct": -0.0588,
+   "lag_s": 7.7,
+   "shares": 295.01,
+   "cost": 94.4,
+   "fee": 1.93,
+   "opened": 1784032216,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "17264384174229353627298328583540706050639011162572972591356343858147006483134",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -1995,26 +2014,6 @@
    "settled": 1783603227,
    "sold_shares": 214.2,
    "sold_proceeds": 39.76
-  },
-  {
-   "token": "16715417243220322396142870043481262520588676345464011493691658221983914911537",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Aurora",
-   "title": "Dota 2: L1ga Team vs Aurora - Game 1 Winner",
-   "their_price": 0.77,
-   "my_price": 0.75,
-   "slippage_pct": -0.026,
-   "shares": 59.67,
-   "cost": 44.75,
-   "fee": 0.34,
-   "opened": 1783598831,
-   "status": "closed",
-   "exit_price": 0.8527,
-   "pnl": 5.79,
-   "settled": 1783601457,
-   "sold_shares": 59.67,
-   "sold_proceeds": 50.88
   }
  ],
  "missed": [
@@ -2977,5 +2976,5 @@
   }
  ],
  "missed_pnl": 89805.17,
- "updated": 1784031064
+ "updated": 1784032223
 }
