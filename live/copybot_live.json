@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 95.41,
+ "stake": 95.39,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1888.31,
- "deployed": 496.9,
+ "cash": 1792.57,
+ "deployed": 592.3,
  "reserve": 0.0,
- "realized": 1385.18,
+ "realized": 1384.84,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 12,
- "fees_paid": 194.09,
+ "ledger_drift": -0.02,
+ "open_count": 13,
+ "fees_paid": 194.43,
  "fee_rate": 0.03,
  "lag": {
-  "n": 124,
-  "n24": 16,
-  "avg_s": 3.4,
-  "avg_slip_pct": -0.0249,
+  "n": 126,
+  "n24": 18,
+  "avg_s": 3.2,
+  "avg_slip_pct": -0.0238,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "31227781598316880280877760465683086508096359894740658336497080463300979927822",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Over $55M committed to the Credible public sale?",
+   "their_price": 0.89,
+   "my_price": 0.8801,
+   "slippage_pct": -0.0112,
+   "lag_s": 2.1,
+   "shares": 108.41,
+   "cost": 95.4,
+   "fee": 0.34,
+   "opened": 1784065065,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "6237386819428750235511557154093150991879160039847931747938354455286350107208",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2003,26 +2022,6 @@
    "settled": 1783623035,
    "sold_shares": 128.87,
    "sold_proceeds": 85.49
-  },
-  {
-   "token": "5331398174498187031334378168888081929069329815866835423456661839681650230348",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "1win",
-   "title": "Dota 2: LGD Gaming vs 1win - Game 1 Winner",
-   "their_price": 0.6232,
-   "my_price": 0.65,
-   "slippage_pct": 0.0431,
-   "shares": 118.96,
-   "cost": 77.32,
-   "fee": 0.81,
-   "opened": 1783622674,
-   "status": "closed",
-   "exit_price": 0.6568,
-   "pnl": -0.01,
-   "settled": 1783622836,
-   "sold_shares": 118.96,
-   "sold_proceeds": 78.13
   }
  ],
  "missed": [
@@ -2984,5 +2983,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784063561
+ "updated": 1784065072
 }
