@@ -991,6 +991,21 @@
  ],
  "missed": [
   {
+   "ts": 1784054881,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "106117170598299515991778271448868055604686257762862584190468389838818487912270",
+   "cond": "0xbe259598e5a6c822d9d5cd125a853fecf6ebed30425621c4dd6fe4151b32d9ab",
+   "title": "Israel enacts military exemption for Yeshiva students by Sep 30?",
+   "outcome": "No",
+   "price": 0.35,
+   "stake": 1.0,
+   "reason": "thin book ($5 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784037862,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "74666452124906997243440599268041315324945968051973641396724746828966017436262",
@@ -1924,24 +1939,8 @@
    "settled": 1783815401,
    "name": "gkmgkldfmg",
    "exit_price": 0.999
-  },
-  {
-   "ts": 1783806884,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "103463464943572749166715825902436097005749231905022823443969199466445385329466",
-   "cond": "0x086013bff1b8a3a5ccd79397212c4249e6dfbc30ebe2af6302c1672139090d4d",
-   "title": "Exact Score: Norway 1 - 1 England?",
-   "outcome": "No",
-   "price": 0.88,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "lost",
-   "pnl": -1.0,
-   "settled": 1783814962,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 1041.14,
- "updated": 1784054784
+ "updated": 1784054881
 }
