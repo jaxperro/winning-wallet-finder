@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 10.4,
- "deployed": 6.67,
+ "cash": 9.38,
+ "deployed": 7.67,
  "reserve": 0.0,
- "realized": -5.13,
+ "realized": -5.14,
  "adjustments": -0.08,
  "ledger_drift": 0.0,
- "open_count": 3,
- "fees_paid": 1.49,
+ "open_count": 4,
+ "fees_paid": 1.51,
  "fee_rate": 0.03,
  "lag": {
-  "n": 38,
-  "n24": 7,
-  "avg_s": 7.7,
-  "avg_slip_pct": 0.0353,
+  "n": 39,
+  "n24": 8,
+  "avg_s": 7.5,
+  "avg_slip_pct": 0.0309,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "4736352029144535005890820408231925407036939257059587790513004893363322306014",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will the Fed Pause\u2013Pause\u2013Pause in the next three decisions (Jun\u2013Jul\u2013Sep)?",
+   "their_price": 0.45,
+   "my_price": 0.45,
+   "slippage_pct": -0.0,
+   "lag_s": 5.9,
+   "shares": 2.22,
+   "cost": 1.0,
+   "fee": 0.02,
+   "opened": 1784040721,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "43429083182986427425572947360954920494954132341616449095164581234599055860363",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -1860,5 +1879,5 @@
   }
  ],
  "missed_pnl": 1042.1,
- "updated": 1784040017
+ "updated": 1784040726
 }
