@@ -2032,10 +2032,11 @@
    "price": 0.46,
    "stake": 97.54,
    "reason": "thin book ($34 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": -11.61,
+   "settled": 1784037708,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.42
   },
   {
    "ts": 1784030419,
@@ -2979,6 +2980,6 @@
    "exit_price": 0.2791
   }
  ],
- "missed_pnl": 89805.17,
- "updated": 1784036922
+ "missed_pnl": 89793.56,
+ "updated": 1784037708
 }
