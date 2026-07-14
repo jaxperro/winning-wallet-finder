@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 2056.31,
- "deployed": 301.29,
+ "cash": 2050.15,
+ "deployed": 307.41,
  "reserve": 0.0,
- "realized": 1357.56,
+ "realized": 1357.52,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 6,
- "fees_paid": 175.67,
+ "open_count": 7,
+ "fees_paid": 175.71,
  "fee_rate": 0.03,
  "lag": {
-  "n": 108,
-  "n24": 7,
-  "avg_s": 101.2,
-  "avg_slip_pct": -0.0329,
+  "n": 109,
+  "n24": 8,
+  "avg_s": 89.2,
+  "avg_slip_pct": -0.0304,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 113.44
  },
  "bets": [
+  {
+   "token": "24842837270178563045080596501119383388959231063439941109817831657351105273923",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will the next Claude Opus model be released by July 31, 2026?",
+   "their_price": 0.8,
+   "my_price": 0.79,
+   "slippage_pct": -0.0125,
+   "lag_s": 5.0,
+   "shares": 7.75,
+   "cost": 6.12,
+   "fee": 0.04,
+   "opened": 1783991960,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "60806317326159607374282200707556294855206853468836223934335735983346661186527",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -1999,26 +2018,6 @@
    "settled": 1783591642,
    "sold_shares": 143.2,
    "sold_proceeds": 140.25
-  },
-  {
-   "token": "60128921184547509999277097764007729598143622125863097354448637354814148313346",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Poor Rangers",
-   "title": "Dota 2: Poor Rangers vs Xtreme Gaming - Game 1 Winner",
-   "their_price": 0.3196,
-   "my_price": 0.33,
-   "slippage_pct": 0.0325,
-   "shares": 121.6,
-   "cost": 40.13,
-   "fee": 0.81,
-   "opened": 1783588595,
-   "status": "closed",
-   "exit_price": 0.6634,
-   "pnl": 39.73,
-   "settled": 1783590829,
-   "sold_shares": 121.6,
-   "sold_proceeds": 80.67
   }
  ],
  "missed": [
@@ -2980,5 +2979,5 @@
   }
  ],
  "missed_pnl": 89813.04,
- "updated": 1783983853
+ "updated": 1783991966
 }
