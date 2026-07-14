@@ -804,6 +804,21 @@
  ],
  "missed": [
   {
+   "ts": 1784029349,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "43429083182986427425572947360954920494954132341616449095164581234599055860363",
+   "cond": "0x2bb66399ec3f2a5eac9af9e5431f5f7f3b912e0d41619a01135459c6546bdf42",
+   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 1 Winner",
+   "outcome": "Team Liquid",
+   "price": 0.619,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784028615,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "107133788521613312162567181824294634873967810582690705864827492796504434100258",
@@ -1737,24 +1752,8 @@
    "settled": 1783781079,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783767111,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "94086717682175488292372912031763512631835050964973472839161913179834160769254",
-   "cond": "0x14272984bc3c6a49e9c6141e93b2b6534573765ec89c438986f26151ccfa3d3c",
-   "title": "Will Pohang Steelers FC win on 2026-07-11?",
-   "outcome": "Yes",
-   "price": 0.5987,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "won",
-   "pnl": 0.66,
-   "settled": 1783780827,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 1041.53,
- "updated": 1784029181
+ "updated": 1784029352
 }
