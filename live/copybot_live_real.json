@@ -846,6 +846,22 @@
  ],
  "missed": [
   {
+   "ts": 1784028615,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "107133788521613312162567181824294634873967810582690705864827492796504434100258",
+   "cond": "0xb575d94615e11aab02c5f8acc2b9e231fc91636362159ad6b52607835c75d7ec",
+   "title": "WTI Crude Oil (WTI) closes above $78 on July 14?",
+   "outcome": "Yes",
+   "price": 0.82,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "sold",
+   "pnl": 0.13,
+   "settled": 1784033163,
+   "name": "0xbadaf319",
+   "exit_price": 0.9349
+  },
+  {
    "ts": 1784030737,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "43429083182986427425572947360954920494954132341616449095164581234599055860363",
@@ -892,21 +908,6 @@
    "settled": 1784029669,
    "name": "gkmgkldfmg",
    "exit_price": 0.6416
-  },
-  {
-   "ts": 1784028615,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "107133788521613312162567181824294634873967810582690705864827492796504434100258",
-   "cond": "0xb575d94615e11aab02c5f8acc2b9e231fc91636362159ad6b52607835c75d7ec",
-   "title": "WTI Crude Oil (WTI) closes above $78 on July 14?",
-   "outcome": "Yes",
-   "price": 0.82,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784027686,
@@ -1797,6 +1798,6 @@
    "exit_price": 0.6397
   }
  ],
- "missed_pnl": 1042.07,
- "updated": 1784032846
+ "missed_pnl": 1042.2,
+ "updated": 1784033164
 }
