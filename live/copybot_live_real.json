@@ -797,7 +797,8 @@
    "status": "refund",
    "pnl": -0.29,
    "settled": 1783997367,
-   "name": "Kruto2027"
+   "name": "Kruto2027",
+   "exit_checked": true
   },
   {
    "ts": 1783996214,
@@ -1736,5 +1737,5 @@
   }
  ],
  "missed_pnl": 1041.9,
- "updated": 1783997368
+ "updated": 1783997496
 }

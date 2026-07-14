@@ -11544,7 +11544,8 @@
       "status": "refund",
       "pnl": -0.29,
       "settled": 1783997367,
-      "name": "Kruto2027"
+      "name": "Kruto2027",
+      "exit_checked": true
     },
     {
       "ts": 1783973910,
@@ -11592,8 +11593,8 @@
       "name": "0xbadaf319"
     }
   ],
-  "feed_sig": "7500cfb5a3cc7f01cfda42249927a22c",
-  "feed_pushed_at": 1783997306.15421,
+  "feed_sig": "1a735b5f62f52162dae3e2b40033d2da",
+  "feed_pushed_at": 1783997429.568497,
   "adjustments": [
     {
       "ts": 1783906689,
