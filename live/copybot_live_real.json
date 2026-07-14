@@ -1003,7 +1003,8 @@
    "status": "lost",
    "pnl": -1.02,
    "settled": 1784063058,
-   "name": "BikesAreTheBikes"
+   "name": "BikesAreTheBikes",
+   "exit_checked": true
   },
   {
    "ts": 1784056905,
@@ -1941,5 +1942,5 @@
   }
  ],
  "missed_pnl": 1040.12,
- "updated": 1784063058
+ "updated": 1784063253
 }
