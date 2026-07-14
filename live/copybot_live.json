@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 94.41,
+ "stake": 94.37,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1934.43,
- "deployed": 425.84,
+ "cash": 1839.06,
+ "deployed": 520.25,
  "reserve": 0.0,
- "realized": 1360.24,
+ "realized": 1359.28,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 10,
- "fees_paid": 177.89,
+ "open_count": 11,
+ "fees_paid": 178.85,
  "fee_rate": 0.03,
  "lag": {
-  "n": 113,
-  "n24": 8,
-  "avg_s": 58.2,
-  "avg_slip_pct": -0.0096,
+  "n": 114,
+  "n24": 9,
+  "avg_s": 52.3,
+  "avg_slip_pct": -0.0118,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "17264384174229353627298328583540706050639011162572972591356343858147006483134",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will the Fed Pause\u2013Pause\u2013Pause in the next three decisions (Jul\u2013Sep\u2013Oct)?",
+   "their_price": 0.68,
+   "my_price": 0.66,
+   "slippage_pct": -0.0294,
+   "lag_s": 4.8,
+   "shares": 143.05,
+   "cost": 94.41,
+   "fee": 0.96,
+   "opened": 1784029177,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "107133788521613312162567181824294634873967810582690705864827492796504434100258",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1994,26 +2013,6 @@
    "settled": 1783601457,
    "sold_shares": 59.67,
    "sold_proceeds": 50.88
-  },
-  {
-   "token": "67316041392595003970935162895075724563017159074192091517379695493042764601836",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "GamerLegion",
-   "title": "Dota 2: GamerLegion vs Team Falcons - Game 2 Winner",
-   "their_price": 0.1642,
-   "my_price": 0.08,
-   "slippage_pct": -0.5128,
-   "shares": 560.46,
-   "cost": 44.84,
-   "fee": 1.24,
-   "opened": 1783597601,
-   "status": "closed",
-   "exit_price": 0.0791,
-   "pnl": -1.77,
-   "settled": 1783597696,
-   "sold_shares": 560.46,
-   "sold_proceeds": 44.31
   }
  ],
  "missed": [
@@ -2976,5 +2975,5 @@
   }
  ],
  "missed_pnl": 89785.36,
- "updated": 1784028962
+ "updated": 1784029181
 }
