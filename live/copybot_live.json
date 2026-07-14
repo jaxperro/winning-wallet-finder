@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1897.64,
- "deployed": 487.61,
+ "cash": 1888.31,
+ "deployed": 496.9,
  "reserve": 0.0,
- "realized": 1385.22,
+ "realized": 1385.18,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 11,
- "fees_paid": 194.05,
+ "open_count": 12,
+ "fees_paid": 194.09,
  "fee_rate": 0.03,
  "lag": {
-  "n": 123,
-  "n24": 15,
-  "avg_s": 3.6,
-  "avg_slip_pct": -0.0217,
+  "n": 124,
+  "n24": 16,
+  "avg_s": 3.4,
+  "avg_slip_pct": -0.0249,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "6237386819428750235511557154093150991879160039847931747938354455286350107208",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "",
+   "title": "",
+   "their_price": 0.9269,
+   "my_price": 0.86,
+   "slippage_pct": -0.0722,
+   "lag_s": 0.9,
+   "shares": 10.8,
+   "cost": 9.28,
+   "fee": 0.04,
+   "opened": 1784063558,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "47930487385442068307660985236580604031118404338161837203208216877292039014153",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2004,26 +2023,6 @@
    "settled": 1783622836,
    "sold_shares": 118.96,
    "sold_proceeds": 78.13
-  },
-  {
-   "token": "50791341385334046613460519572782001062280267000857299264059966530179274650265",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Nemesis",
-   "title": "Dota 2: MOUZ vs Team Nemesis - Game 2 Winner",
-   "their_price": 0.4186,
-   "my_price": 0.4,
-   "slippage_pct": -0.0443,
-   "shares": 195.87,
-   "cost": 78.35,
-   "fee": 1.41,
-   "opened": 1783614275,
-   "status": "closed",
-   "exit_price": 0.2752,
-   "pnl": -25.85,
-   "settled": 1783615554,
-   "sold_shares": 195.87,
-   "sold_proceeds": 53.91
   }
  ],
  "missed": [
@@ -2985,5 +2984,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784063085
+ "updated": 1784063561
 }
