@@ -825,21 +825,6 @@
  ],
  "missed": [
   {
-   "ts": 1784030803,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "78606978205884676140588406781312633617915931593346428322716704814515315675619",
-   "cond": "0x2bb66399ec3f2a5eac9af9e5431f5f7f3b912e0d41619a01135459c6546bdf42",
-   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 1 Winner",
-   "outcome": "Xtreme Gaming",
-   "price": 0.5,
-   "stake": 1.0,
-   "reason": "price moved 0.41\u21920.50",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
-  },
-  {
    "ts": 1784030737,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "43429083182986427425572947360954920494954132341616449095164581234599055860363",
@@ -849,10 +834,27 @@
    "price": 0.51,
    "stake": 1.0,
    "reason": "price moved 0.33\u21920.51",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 0.02,
+   "settled": 1784030939,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.5363
+  },
+  {
+   "ts": 1784030803,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "78606978205884676140588406781312633617915931593346428322716704814515315675619",
+   "cond": "0x2bb66399ec3f2a5eac9af9e5431f5f7f3b912e0d41619a01135459c6546bdf42",
+   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 1 Winner",
+   "outcome": "Xtreme Gaming",
+   "price": 0.5,
+   "stake": 1.0,
+   "reason": "price moved 0.41\u21920.50",
+   "status": "sold",
+   "pnl": 0.51,
+   "settled": 1784030939,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.7689
   },
   {
    "ts": 1784029349,
@@ -1774,6 +1776,6 @@
    "exit_price": 0.6397
   }
  ],
- "missed_pnl": 1041.54,
- "updated": 1784030806
+ "missed_pnl": 1042.07,
+ "updated": 1784030939
 }
