@@ -1531,6 +1531,22 @@
  ],
  "missed": [
   {
+   "ts": 1784136881,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "75636274443607445614938470591337628868615181893893587977168160999705149850480",
+   "cond": "0x7446c13b91bf8ece3c07cb6127008ff534ab2853dd3cd31dce5a1452367b461a",
+   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
+   "outcome": "Vici Gaming",
+   "price": 0.79,
+   "stake": 1.0,
+   "reason": "price moved 0.67\u21920.79",
+   "status": "sold",
+   "pnl": 0.12,
+   "settled": 1784138211,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.8937
+  },
+  {
    "ts": 1784136358,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
@@ -1545,21 +1561,6 @@
    "settled": 1784136938,
    "name": "gkmgkldfmg",
    "exit_price": 0.4086
-  },
-  {
-   "ts": 1784136881,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "75636274443607445614938470591337628868615181893893587977168160999705149850480",
-   "cond": "0x7446c13b91bf8ece3c07cb6127008ff534ab2853dd3cd31dce5a1452367b461a",
-   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
-   "outcome": "Vici Gaming",
-   "price": 0.79,
-   "stake": 1.0,
-   "reason": "price moved 0.67\u21920.79",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1784136107,
@@ -2476,6 +2477,6 @@
    "exit_price": 0.066
   }
  ],
- "missed_pnl": 1040.77,
- "updated": 1784137856
+ "missed_pnl": 1040.89,
+ "updated": 1784138211
 }
