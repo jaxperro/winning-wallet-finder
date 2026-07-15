@@ -5,13 +5,13 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 5.33,
- "deployed": 11.63,
+ "cash": 6.31,
+ "deployed": 10.59,
  "reserve": 0.0,
- "realized": -5.24,
+ "realized": -5.3,
  "adjustments": -0.08,
- "ledger_drift": 0.0,
- "open_count": 8,
+ "ledger_drift": -0.0,
+ "open_count": 7,
  "fees_paid": 1.77,
  "fee_rate": 0.03,
  "lag": {
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "54808825071623730922593344072571837691813951745707044026991588993889799442913",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Marques",
+   "title": "Set 1 Winner: Marques vs Domingues",
+   "their_price": 0.5055,
+   "my_price": 0.53,
+   "slippage_pct": 0.0484,
+   "lag_s": 13.3,
+   "shares": 1.96,
+   "cost": 1.04,
+   "fee": 0.01,
+   "opened": 1784114273,
+   "status": "refund",
+   "exit_price": 0.5,
+   "pnl": -0.07,
+   "settled": 1784117145
+  },
   {
    "token": "60763476143396891752355094701933688260848785572068480907324289768708153882048",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -84,25 +103,6 @@
    "settled": 1784115099,
    "sold_shares": 1.25,
    "sold_proceeds": 1.08
-  },
-  {
-   "token": "54808825071623730922593344072571837691813951745707044026991588993889799442913",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Marques",
-   "title": "Set 1 Winner: Marques vs Domingues",
-   "their_price": 0.5055,
-   "my_price": 0.53,
-   "slippage_pct": 0.0484,
-   "lag_s": 13.3,
-   "shares": 1.96,
-   "cost": 1.04,
-   "fee": 0.01,
-   "opened": 1784114273,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "40571829497236400754130791233572006681671269527083953387110532077407893416357",
@@ -2289,5 +2289,5 @@
   }
  ],
  "missed_pnl": 1040.21,
- "updated": 1784116854
+ "updated": 1784117147
 }
