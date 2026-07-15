@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 99.83,
+ "stake": 99.81,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1646.15,
- "deployed": 849.71,
+ "cash": 1545.6,
+ "deployed": 949.54,
  "reserve": 0.0,
- "realized": 1495.83,
+ "realized": 1495.11,
  "adjustments": 0.03,
- "ledger_drift": -0.0,
- "open_count": 17,
- "fees_paid": 222.43,
+ "ledger_drift": -0.01,
+ "open_count": 18,
+ "fees_paid": 223.15,
  "fee_rate": 0.03,
  "lag": {
-  "n": 157,
-  "n24": 37,
-  "avg_s": 19.3,
-  "avg_slip_pct": -0.0108,
+  "n": 158,
+  "n24": 38,
+  "avg_s": 18.9,
+  "avg_slip_pct": -0.0105,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "98673470314914232793147498865854269968418522576820779615973193548136548813556",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "1win",
+   "title": "Dota 2: 1win vs Vici Gaming - Game 2 Winner",
+   "their_price": 0.76,
+   "my_price": 0.76,
+   "slippage_pct": 0.0,
+   "lag_s": 6.4,
+   "shares": 131.36,
+   "cost": 99.83,
+   "fee": 0.72,
+   "opened": 1784129492,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "10108167089466831864668878573560375084000044848088780176588585191663597254227",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2023,26 +2042,6 @@
    "settled": 1783695443,
    "sold_shares": 300.91,
    "sold_proceeds": 118.85
-  },
-  {
-   "token": "84864321844564005123638956205037810292837868807558456388220877376462415276538",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "PlayTime",
-   "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
-   "their_price": 0.4638,
-   "my_price": 0.41,
-   "slippage_pct": -0.116,
-   "shares": 204.18,
-   "cost": 83.71,
-   "fee": 1.48,
-   "opened": 1783690799,
-   "status": "closed",
-   "exit_price": 0.4858,
-   "pnl": 14.0,
-   "settled": 1783690947,
-   "sold_shares": 204.18,
-   "sold_proceeds": 99.19
   }
  ],
  "missed": [
@@ -3002,5 +3001,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784128795
+ "updated": 1784129498
 }
