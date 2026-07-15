@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 101.51,
+ "stake": 102.09,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 2548.96,
- "cash": 1844.07,
+ "hwm": 2552.14,
+ "cash": 1858.39,
  "deployed": 693.75,
  "reserve": 0.0,
- "realized": 1537.79,
+ "realized": 1552.11,
  "adjustments": 0.03,
  "ledger_drift": -0.0,
  "open_count": 15,
- "fees_paid": 234.47,
+ "fees_paid": 238.71,
  "fee_rate": 0.03,
  "lag": {
-  "n": 161,
-  "n24": 41,
-  "avg_s": 17.9,
-  "avg_slip_pct": -0.0098,
+  "n": 162,
+  "n24": 42,
+  "avg_s": 17.5,
+  "avg_slip_pct": -0.0133,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,27 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "1win",
+   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
+   "their_price": 0.3927,
+   "my_price": 0.33,
+   "slippage_pct": -0.1596,
+   "lag_s": 1.3,
+   "shares": 307.61,
+   "cost": 101.51,
+   "fee": 2.04,
+   "opened": 1784136469,
+   "status": "closed",
+   "exit_price": 0.3832,
+   "pnl": 14.33,
+   "settled": 1784136544,
+   "sold_shares": 307.61,
+   "sold_proceeds": 117.88
+  },
   {
    "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2031,24 +2052,6 @@
    "settled": 1783700692,
    "sold_shares": 584.37,
    "sold_proceeds": 10.06
-  },
-  {
-   "token": "72883819885036007086315831308179079344710204279662195005519707654209484712749",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on July 10?",
-   "their_price": 0.6849,
-   "my_price": 0.55,
-   "slippage_pct": -0.1969,
-   "shares": 127.4,
-   "cost": 70.07,
-   "fee": 0.95,
-   "opened": 1783699159,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 56.39,
-   "settled": 1783700537
   }
  ],
  "missed": [
@@ -3008,5 +3011,5 @@
   }
  ],
  "missed_pnl": 89697.54,
- "updated": 1784136460
+ "updated": 1784136544
 }
