@@ -5,19 +5,19 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 6.31,
- "deployed": 10.59,
+ "cash": 5.27,
+ "deployed": 11.61,
  "reserve": 0.0,
- "realized": -5.3,
+ "realized": -5.32,
  "adjustments": -0.08,
- "ledger_drift": -0.0,
- "open_count": 7,
- "fees_paid": 1.77,
+ "ledger_drift": 0.0,
+ "open_count": 8,
+ "fees_paid": 1.79,
  "fee_rate": 0.03,
  "lag": {
-  "n": 59,
-  "n24": 24,
-  "avg_s": 12.8,
+  "n": 60,
+  "n24": 25,
+  "avg_s": 12.6,
   "avg_slip_pct": 0.0263,
   "window_h": 24
  },
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "30170770852623682463283902530627549920331526605828543295200389453300351881285",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Liquid",
+   "title": "Dota 2: Team Spirit vs Team Liquid - Game 2 Winner",
+   "their_price": 0.38,
+   "my_price": 0.39,
+   "slippage_pct": 0.0263,
+   "lag_s": 9.4,
+   "shares": 2.63,
+   "cost": 1.03,
+   "fee": 0.02,
+   "opened": 1784119888,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "54808825071623730922593344072571837691813951745707044026991588993889799442913",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2289,5 +2308,5 @@
   }
  ],
  "missed_pnl": 1040.22,
- "updated": 1784119781
+ "updated": 1784119908
 }
