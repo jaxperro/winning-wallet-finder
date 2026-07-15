@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 95.53,
+ "stake": 95.64,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1607.53,
- "deployed": 780.79,
+ "cash": 1641.28,
+ "deployed": 749.83,
  "reserve": 0.0,
- "realized": 1388.29,
+ "realized": 1391.09,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 17,
- "fees_paid": 208.13,
+ "open_count": 16,
+ "fees_paid": 208.18,
  "fee_rate": 0.03,
  "lag": {
   "n": 150,
@@ -43,6 +43,27 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "63771637378784413148462482237923583124136983802351410739819251381721139402800",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Over $60M committed to the Credible public sale?",
+   "their_price": 0.91,
+   "my_price": 0.87,
+   "slippage_pct": -0.044,
+   "lag_s": 1.4,
+   "shares": 69.0,
+   "cost": 60.03,
+   "fee": 0.23,
+   "opened": 1784097545,
+   "status": "closed",
+   "exit_price": 0.9486,
+   "pnl": 5.18,
+   "settled": 1784110948,
+   "sold_shares": 69.0,
+   "sold_proceeds": 65.45
+  },
   {
    "token": "51819545177992980050544653528219085611945377861594412412561048331713992664435",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -290,27 +311,6 @@
    "exit_price": null,
    "pnl": null,
    "settled": null
-  },
-  {
-   "token": "63771637378784413148462482237923583124136983802351410739819251381721139402800",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Over $60M committed to the Credible public sale?",
-   "their_price": 0.91,
-   "my_price": 0.87,
-   "slippage_pct": -0.044,
-   "lag_s": 1.4,
-   "shares": 69.0,
-   "cost": 60.03,
-   "fee": 0.23,
-   "opened": 1784097545,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 33.42,
-   "sold_proceeds": 31.7
   },
   {
    "token": "43095392816043282955413670152475016788331574493234594924666373412188513296982",
@@ -2996,5 +2996,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784106696
+ "updated": 1784110948
 }
