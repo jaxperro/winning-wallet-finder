@@ -2061,6 +2061,21 @@
  ],
  "missed": [
   {
+   "ts": 1784148369,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "97790474719190241406489821993233180311618193540151039410585653304993937141574",
+   "cond": "",
+   "title": "",
+   "outcome": "",
+   "price": 0.716,
+   "stake": 64.21,
+   "reason": "book unreliable (spread 0.14 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784145016,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "69816346859095495747189627053263753156196009953825285858477796399815602774300",
@@ -2997,23 +3012,8 @@
    "settled": 1783718413,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783718289,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "40157116416490623239679394844195379171683621861511438824716931745872340078199",
-   "cond": "0x2e5100b759d2e6da51f0d457028d8e42b833f4808edd8ff95e3d242aa1ef6102",
-   "title": "Will Revolut's valuation hit (HIGH) $175B by December 31?",
-   "outcome": "No",
-   "price": 0.8699,
-   "stake": 44.62,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": 89701.99,
- "updated": 1784145020
+ "updated": 1784148369
 }
