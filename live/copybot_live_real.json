@@ -1342,21 +1342,6 @@
  ],
  "missed": [
   {
-   "ts": 1784114589,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "99902433281669699237282389313263144275718377343205924960975145491381233618580",
-   "cond": "0x39e04bf6b09df29f9846fcf08aeb1cb364b498c0eaa2526e17cb8ca82fdc0a5b",
-   "title": "Marques vs. Domingues: Set 1 Games O/U 8.5",
-   "outcome": "Under",
-   "price": 0.49,
-   "stake": 1.0,
-   "reason": "in-play hold expired unfilled (20s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
-  },
-  {
    "ts": 1784114280,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "54808825071623730922593344072571837691813951745707044026991588993889799442913",
@@ -1366,6 +1351,22 @@
    "price": 0.5,
    "stake": 1.0,
    "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": -0.03,
+   "settled": 1784116853,
+   "name": "Kruto2027",
+   "exit_price": 0.5
+  },
+  {
+   "ts": 1784114589,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "99902433281669699237282389313263144275718377343205924960975145491381233618580",
+   "cond": "0x39e04bf6b09df29f9846fcf08aeb1cb364b498c0eaa2526e17cb8ca82fdc0a5b",
+   "title": "Marques vs. Domingues: Set 1 Games O/U 8.5",
+   "outcome": "Under",
+   "price": 0.49,
+   "stake": 1.0,
+   "reason": "in-play hold expired unfilled (20s)",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -2287,6 +2288,6 @@
    "exit_price": 1.0
   }
  ],
- "missed_pnl": 1040.24,
- "updated": 1784116657
+ "missed_pnl": 1040.21,
+ "updated": 1784116854
 }
