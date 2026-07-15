@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 99.4,
+ "stake": 99.36,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1791.15,
- "deployed": 693.75,
+ "cash": 1690.74,
+ "deployed": 793.15,
  "reserve": 0.0,
- "realized": 1484.87,
+ "realized": 1483.85,
  "adjustments": 0.03,
- "ledger_drift": -0.0,
- "open_count": 15,
- "fees_paid": 225.04,
+ "ledger_drift": 0.0,
+ "open_count": 16,
+ "fees_paid": 226.05,
  "fee_rate": 0.03,
  "lag": {
-  "n": 158,
-  "n24": 38,
-  "avg_s": 18.9,
-  "avg_slip_pct": -0.0105,
+  "n": 159,
+  "n24": 39,
+  "avg_s": 18.6,
+  "avg_slip_pct": -0.0117,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "1win",
+   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
+   "their_price": 0.7,
+   "my_price": 0.66,
+   "slippage_pct": -0.0571,
+   "lag_s": 5.5,
+   "shares": 150.6,
+   "cost": 99.4,
+   "fee": 1.01,
+   "opened": 1784133967,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "43095392816043282955413670152475016788331574493234594924666373412188513296982",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2026,26 +2045,6 @@
    "settled": 1783696061,
    "sold_shares": 145.03,
    "sold_proceeds": 137.0
-  },
-  {
-   "token": "61106160955805000545726176309339696645249790307545132698548552906744856723300",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Nemesis",
-   "title": "Dota 2: Team Nemesis vs Vici Gaming - Game 1 Winner",
-   "their_price": 0.2847,
-   "my_price": 0.28,
-   "slippage_pct": -0.0165,
-   "shares": 300.91,
-   "cost": 84.25,
-   "fee": 1.82,
-   "opened": 1783695034,
-   "status": "closed",
-   "exit_price": 0.395,
-   "pnl": 32.78,
-   "settled": 1783695443,
-   "sold_shares": 300.91,
-   "sold_proceeds": 118.85
   }
  ],
  "missed": [
@@ -3005,5 +3004,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784132561
+ "updated": 1784133972
 }
