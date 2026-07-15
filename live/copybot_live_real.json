@@ -1533,6 +1533,21 @@
  ],
  "missed": [
   {
+   "ts": 1784148364,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "97790474719190241406489821993233180311618193540151039410585653304993937141574",
+   "cond": "",
+   "title": "",
+   "outcome": "",
+   "price": 0.705,
+   "stake": 1.0,
+   "reason": "book unreliable (spread 0.10 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784145016,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "69816346859095495747189627053263753156196009953825285858477796399815602774300",
@@ -2460,24 +2475,8 @@
    "settled": 1783867047,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783863296,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "84502716136213781728963328899707683260350624645362486645725504535263198032073",
-   "cond": "0xa4807375ad750023e039c1a666413760e915ab367d2bfc57034bc5d631775d07",
-   "title": "Dota 2: 1win vs Team Yandex - Game 2 Winner",
-   "outcome": "1win",
-   "price": 0.47,
-   "stake": 1.04,
-   "reason": "price moved 0.38\u21920.47",
-   "status": "sold",
-   "pnl": 0.06,
-   "settled": 1783863612,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.5135
   }
  ],
  "missed_pnl": 1040.89,
- "updated": 1784145019
+ "updated": 1784148365
 }
