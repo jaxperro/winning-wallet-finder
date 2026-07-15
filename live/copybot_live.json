@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 99.39,
+ "stake": 99.2,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1635.14,
- "deployed": 849.67,
+ "cash": 1730.25,
+ "deployed": 749.83,
  "reserve": 0.0,
- "realized": 1484.77,
+ "realized": 1480.05,
  "adjustments": 0.03,
- "ledger_drift": -0.0,
- "open_count": 17,
- "fees_paid": 224.26,
+ "ledger_drift": -0.01,
+ "open_count": 16,
+ "fees_paid": 225.04,
  "fee_rate": 0.03,
  "lag": {
   "n": 158,
@@ -44,6 +44,27 @@
  },
  "bets": [
   {
+   "token": "98673470314914232793147498865854269968418522576820779615973193548136548813556",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "1win",
+   "title": "Dota 2: 1win vs Vici Gaming - Game 2 Winner",
+   "their_price": 0.76,
+   "my_price": 0.76,
+   "slippage_pct": 0.0,
+   "lag_s": 6.4,
+   "shares": 131.36,
+   "cost": 99.83,
+   "fee": 0.72,
+   "opened": 1784129492,
+   "status": "closed",
+   "exit_price": 0.7241,
+   "pnl": -5.43,
+   "settled": 1784130784,
+   "sold_shares": 131.36,
+   "sold_proceeds": 95.12
+  },
+  {
    "token": "10108167089466831864668878573560375084000044848088780176588585191663597254227",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -63,25 +84,6 @@
    "settled": 1784130520,
    "sold_shares": 153.66,
    "sold_proceeds": 89.54
-  },
-  {
-   "token": "98673470314914232793147498865854269968418522576820779615973193548136548813556",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "1win",
-   "title": "Dota 2: 1win vs Vici Gaming - Game 2 Winner",
-   "their_price": 0.76,
-   "my_price": 0.76,
-   "slippage_pct": 0.0,
-   "lag_s": 6.4,
-   "shares": 131.36,
-   "cost": 99.83,
-   "fee": 0.72,
-   "opened": 1784129492,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "97088071698669685592562490277029468095283178025275209576407341311883833186246",
@@ -3003,5 +3005,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784130520
+ "updated": 1784130784
 }
