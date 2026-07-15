@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 7.65,
- "deployed": 9.59,
+ "cash": 6.65,
+ "deployed": 10.59,
  "reserve": 0.0,
  "realized": -4.96,
  "adjustments": -0.08,
  "ledger_drift": 0.01,
- "open_count": 6,
+ "open_count": 7,
  "fees_paid": 1.58,
  "fee_rate": 0.03,
  "lag": {
-  "n": 44,
-  "n24": 12,
-  "avg_s": 7.0,
-  "avg_slip_pct": 0.0346,
+  "n": 45,
+  "n24": 13,
+  "avg_s": 6.8,
+  "avg_slip_pct": 0.0319,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "16686602356235900511267666457287992561973903059220978509691578764880532993490",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will ByteDance's valuation hit (HIGH) $1.5T by December 31?",
+   "their_price": 0.95,
+   "my_price": 0.95,
+   "slippage_pct": -0.0,
+   "lag_s": 4.7,
+   "shares": 1.05,
+   "cost": 1.0,
+   "fee": 0.0,
+   "opened": 1784100418,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "43095392816043282955413670152475016788331574493234594924666373412188513296982",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1980,5 +1999,5 @@
   }
  ],
  "missed_pnl": 1040.12,
- "updated": 1784098573
+ "updated": 1784100422
 }
