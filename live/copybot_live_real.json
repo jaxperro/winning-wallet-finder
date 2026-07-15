@@ -1393,10 +1393,27 @@
    "price": 0.54,
    "stake": 1.0,
    "reason": "price moved 0.49\u21920.54",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 0.28,
+   "settled": 1784122585,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.7057
+  },
+  {
+   "ts": 1784122515,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "38651466023261064319289939085261731331133306541561545573527282497528641470405",
+   "cond": "0xf9abba1374af046e14e0df5c5a731446244a86dbb952683bf8bdd7bbaeb07c9d",
+   "title": "Dota 2: Team Spirit vs Team Liquid - Game 2 Winner",
+   "outcome": "Team Spirit",
+   "price": 0.43,
+   "stake": 1.0,
+   "reason": "in-play hold expired unfilled (8s)",
+   "status": "sold",
+   "pnl": 0.05,
+   "settled": 1784122585,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.4656
   },
   {
    "ts": 1784121603,
@@ -2312,24 +2329,8 @@
    "settled": 1783850631,
    "name": "gkmgkldfmg",
    "exit_price": 0.999
-  },
-  {
-   "ts": 1783847109,
-   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
-   "token": "39914244553987465540792566278348498734923249672615251266280042181105318419717",
-   "cond": "0x248fe1a9b246808baabfb9bf452d3d57f314050eb5776a9c53a5b1c027dd41fc",
-   "title": "Bitcoin Up or Down - July 12, 5:00AM-5:05AM ET",
-   "outcome": "Down",
-   "price": 0.99,
-   "stake": 1.0,
-   "reason": "price moved 0.81\u21920.99",
-   "status": "sold",
-   "pnl": 0.01,
-   "settled": 1783847161,
-   "name": "0xd96750bf",
-   "exit_price": 1.0
   }
  ],
- "missed_pnl": 1040.54,
- "updated": 1784122436
+ "missed_pnl": 1040.87,
+ "updated": 1784122585
 }
