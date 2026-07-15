@@ -1510,6 +1510,21 @@
  ],
  "missed": [
   {
+   "ts": 1784135838,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
+   "cond": "0x7446c13b91bf8ece3c07cb6127008ff534ab2853dd3cd31dce5a1452367b461a",
+   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
+   "outcome": "1win",
+   "price": 0.53,
+   "stake": 1.0,
+   "reason": "in-play hold expired unfilled (41s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784134156,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "54062655540339804038642939640911207386246833007847007872193563918612772592874",
@@ -2438,24 +2453,8 @@
    "settled": 1783856036,
    "name": "gkmgkldfmg",
    "exit_price": 0.999
-  },
-  {
-   "ts": 1783854216,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "72657587692017665505599725656194205462581472368991422962137490050829927893951",
-   "cond": "0x8a89800369f7126ae60760e942afa581f8b248bf197563f98394d3835bb9dbe3",
-   "title": "Dota 2: PARIVISION vs Team Spirit - Game 2 Winner",
-   "outcome": "Team Spirit",
-   "price": 0.48,
-   "stake": 1.0,
-   "reason": "price moved 0.22\u21920.48",
-   "status": "sold",
-   "pnl": -0.22,
-   "settled": 1783854450,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.3901
   }
  ],
  "missed_pnl": 1040.6,
- "updated": 1784135652
+ "updated": 1784135841
 }
