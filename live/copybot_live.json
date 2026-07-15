@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 96.01,
+ "stake": 96.02,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1538.26,
- "deployed": 861.88,
+ "cash": 1555.08,
+ "deployed": 845.39,
  "reserve": 0.0,
- "realized": 1400.11,
+ "realized": 1400.45,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 18,
+ "open_count": 17,
  "fees_paid": 216.51,
  "fee_rate": 0.03,
  "lag": {
@@ -43,6 +43,27 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "54808825071623730922593344072571837691813951745707044026991588993889799442913",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Marques",
+   "title": "Set 1 Winner: Marques vs Domingues",
+   "their_price": 0.5055,
+   "my_price": 0.49,
+   "slippage_pct": -0.0307,
+   "lag_s": 5.1,
+   "shares": 195.14,
+   "cost": 95.62,
+   "fee": 1.46,
+   "opened": 1784114274,
+   "status": "refund",
+   "exit_price": 0.5,
+   "pnl": -0.72,
+   "settled": 1784117146,
+   "sold_shares": 161.5,
+   "sold_proceeds": 79.54
+  },
   {
    "token": "60763476143396891752355094701933688260848785572068480907324289768708153882048",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -103,27 +124,6 @@
    "exit_price": null,
    "pnl": null,
    "settled": null
-  },
-  {
-   "token": "54808825071623730922593344072571837691813951745707044026991588993889799442913",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Marques",
-   "title": "Set 1 Winner: Marques vs Domingues",
-   "their_price": 0.5055,
-   "my_price": 0.49,
-   "slippage_pct": -0.0307,
-   "lag_s": 5.1,
-   "shares": 195.14,
-   "cost": 95.62,
-   "fee": 1.46,
-   "opened": 1784114274,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 161.5,
-   "sold_proceeds": 79.54
   },
   {
    "token": "63771637378784413148462482237923583124136983802351410739819251381721139402800",
@@ -3000,5 +3000,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784115966
+ "updated": 1784117147
 }
