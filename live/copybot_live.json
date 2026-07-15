@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 96.1,
+ "stake": 96.02,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1652.6,
- "deployed": 749.83,
+ "cash": 1554.68,
+ "deployed": 845.93,
  "reserve": 0.0,
- "realized": 1402.4,
+ "realized": 1400.58,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 16,
- "fees_paid": 216.51,
+ "open_count": 17,
+ "fees_paid": 218.33,
  "fee_rate": 0.03,
  "lag": {
-  "n": 154,
-  "n24": 39,
-  "avg_s": 18.2,
-  "avg_slip_pct": -0.0118,
+  "n": 155,
+  "n24": 40,
+  "avg_s": 17.9,
+  "avg_slip_pct": -0.0122,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "30170770852623682463283902530627549920331526605828543295200389453300351881285",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Liquid",
+   "title": "Dota 2: Team Spirit vs Team Liquid - Game 2 Winner",
+   "their_price": 0.38,
+   "my_price": 0.37,
+   "slippage_pct": -0.0263,
+   "lag_s": 6.4,
+   "shares": 259.72,
+   "cost": 96.1,
+   "fee": 1.82,
+   "opened": 1784119888,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "99902433281669699237282389313263144275718377343205924960975145491381233618580",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2022,24 +2041,6 @@
    "settled": 1783690401,
    "sold_shares": 174.94,
    "sold_proceeds": 98.43
-  },
-  {
-   "token": "47405794293316148244590035888323531202770006061275899647071095856237793879763",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "G2 Esports",
-   "title": "LoL: G2 Esports vs LYON - Game 3 Winner",
-   "their_price": 0.39,
-   "my_price": 0.38,
-   "slippage_pct": -0.0256,
-   "shares": 223.95,
-   "cost": 85.1,
-   "fee": 1.58,
-   "opened": 1783678190,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -86.68,
-   "settled": 1783689250
   }
  ],
  "missed": [
@@ -3000,5 +3001,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784119822
+ "updated": 1784119894
 }
