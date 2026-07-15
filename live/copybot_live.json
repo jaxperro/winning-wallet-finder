@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 99.28,
+ "stake": 101.24,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1589.59,
- "deployed": 892.5,
+ "cash": 1837.24,
+ "deployed": 693.75,
  "reserve": 0.0,
- "realized": 1482.06,
+ "realized": 1530.96,
  "adjustments": 0.03,
- "ledger_drift": 0.01,
- "open_count": 17,
- "fees_paid": 227.84,
+ "ledger_drift": 0.0,
+ "open_count": 15,
+ "fees_paid": 230.64,
  "fee_rate": 0.03,
  "lag": {
   "n": 160,
@@ -44,25 +44,6 @@
  },
  "bets": [
   {
-   "token": "54062655540339804038642939640911207386246833007847007872193563918612772592874",
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "name": "1kto1m",
-   "outcome": "Up",
-   "title": "SPY (SPY) Up or Down on July 15?",
-   "their_price": 0.4,
-   "my_price": 0.4,
-   "slippage_pct": 0.0,
-   "lag_s": 0.8,
-   "shares": 248.39,
-   "cost": 99.36,
-   "fee": 1.79,
-   "opened": 1784134155,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
    "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -76,10 +57,33 @@
    "cost": 99.4,
    "fee": 1.01,
    "opened": 1784133967,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "closed",
+   "exit_price": 0.6335,
+   "pnl": -5.01,
+   "settled": 1784135344,
+   "sold_shares": 150.6,
+   "sold_proceeds": 95.4
+  },
+  {
+   "token": "54062655540339804038642939640911207386246833007847007872193563918612772592874",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Up",
+   "title": "SPY (SPY) Up or Down on July 15?",
+   "their_price": 0.4,
+   "my_price": 0.4,
+   "slippage_pct": 0.0,
+   "lag_s": 0.8,
+   "shares": 248.39,
+   "cost": 99.36,
+   "fee": 1.79,
+   "opened": 1784134155,
+   "status": "closed",
+   "exit_price": 0.6129,
+   "pnl": 51.1,
+   "settled": 1784135326,
+   "sold_shares": 248.39,
+   "sold_proceeds": 152.24
   },
   {
    "token": "43095392816043282955413670152475016788331574493234594924666373412188513296982",
@@ -3003,5 +3007,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784134159
+ "updated": 1784135344
 }
