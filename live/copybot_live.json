@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 95.44,
+ "stake": 96.06,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1253.76,
- "deployed": 1132.16,
+ "cash": 1364.88,
+ "deployed": 1036.52,
  "reserve": 0.0,
- "realized": 1385.9,
+ "realized": 1401.37,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 20,
- "fees_paid": 213.37,
+ "ledger_drift": -0.01,
+ "open_count": 19,
+ "fees_paid": 213.64,
  "fee_rate": 0.03,
  "lag": {
   "n": 154,
@@ -43,6 +43,27 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "101552238332151500626156871765097980002581205887395904949373260936477658068746",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Aurora",
+   "title": "Dota 2: Aurora vs Rune Eaters - Game 1 Winner",
+   "their_price": 0.8,
+   "my_price": 0.79,
+   "slippage_pct": -0.0125,
+   "lag_s": 13.4,
+   "shares": 121.07,
+   "cost": 95.64,
+   "fee": 0.6,
+   "opened": 1784114036,
+   "status": "closed",
+   "exit_price": 0.9178,
+   "pnl": 14.87,
+   "settled": 1784115096,
+   "sold_shares": 121.07,
+   "sold_proceeds": 111.12
+  },
   {
    "token": "60763476143396891752355094701933688260848785572068480907324289768708153882048",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -95,25 +116,6 @@
    "cost": 95.62,
    "fee": 1.46,
    "opened": 1784114274,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
-   "token": "101552238332151500626156871765097980002581205887395904949373260936477658068746",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Aurora",
-   "title": "Dota 2: Aurora vs Rune Eaters - Game 1 Winner",
-   "their_price": 0.8,
-   "my_price": 0.79,
-   "slippage_pct": -0.0125,
-   "lag_s": 13.4,
-   "shares": 121.07,
-   "cost": 95.64,
-   "fee": 0.6,
-   "opened": 1784114036,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -2994,5 +2996,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784115073
+ "updated": 1784115096
 }
