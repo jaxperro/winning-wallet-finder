@@ -1029,6 +1029,21 @@
  ],
  "missed": [
   {
+   "ts": 1784097550,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "63771637378784413148462482237923583124136983802351410739819251381721139402800",
+   "cond": "0xcb1ce68d68dfda31c9f49b9b839afd9ff89feaeb3a8e7b90eed5fda189d57159",
+   "title": "Over $60M committed to the Credible public sale?",
+   "outcome": "No",
+   "price": 0.87,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784063559,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "6237386819428750235511557154093150991879160039847931747938354455286350107208",
@@ -1960,24 +1975,8 @@
    "settled": 1783822587,
    "name": "gkmgkldfmg",
    "exit_price": 0.999
-  },
-  {
-   "ts": 1783821747,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "80695764145597442773109303072961778341865154823453604006436935638165430171016",
-   "cond": "0x78fdaa290adbb2780e5f3b391b6cb5009d7c849a1a774bf1966115b75f8d4554",
-   "title": "UFC 329: Brandon Royval vs. Lone'er Kavanagh (Flyweight, Main Card)",
-   "outcome": "Loneer Kavanagh",
-   "price": 0.89,
-   "stake": 1.0,
-   "reason": "price moved 0.74\u21920.89",
-   "status": "sold",
-   "pnl": -0.31,
-   "settled": 1783821961,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.6264
   }
  ],
  "missed_pnl": 1040.12,
- "updated": 1784066821
+ "updated": 1784097550
 }
