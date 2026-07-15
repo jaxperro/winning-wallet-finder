@@ -5,13 +5,13 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 6.42,
- "deployed": 10.6,
+ "cash": 6.43,
+ "deployed": 10.59,
  "reserve": 0.0,
  "realized": -5.18,
  "adjustments": -0.08,
  "ledger_drift": 0.01,
- "open_count": 8,
+ "open_count": 7,
  "fees_paid": 1.71,
  "fee_rate": 0.03,
  "lag": {
@@ -44,6 +44,27 @@
  },
  "bets": [
   {
+   "token": "51819545177992980050544653528219085611945377861594412412561048331713992664435",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Bitcoin reach $74,000 July 13-19?",
+   "their_price": 0.7592,
+   "my_price": 0.765,
+   "slippage_pct": 0.0077,
+   "lag_s": 3.4,
+   "shares": 1.31,
+   "cost": 1.0,
+   "fee": 0.01,
+   "opened": 1784104258,
+   "status": "closed",
+   "exit_price": 0.7603,
+   "pnl": -0.02,
+   "settled": 1784104778,
+   "sold_shares": 1.3,
+   "sold_proceeds": 0.99
+  },
+  {
    "token": "108143450534940407450381347060623594467078916233801426854469869492374845960413",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -63,27 +84,6 @@
    "settled": 1784104594,
    "sold_shares": 1.51,
    "sold_proceeds": 0.96
-  },
-  {
-   "token": "51819545177992980050544653528219085611945377861594412412561048331713992664435",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Bitcoin reach $74,000 July 13-19?",
-   "their_price": 0.7592,
-   "my_price": 0.765,
-   "slippage_pct": 0.0077,
-   "lag_s": 3.4,
-   "shares": 1.31,
-   "cost": 1.0,
-   "fee": 0.01,
-   "opened": 1784104258,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 1.29,
-   "sold_proceeds": 0.98
   },
   {
    "token": "91957590828077571068600467857177108160302141593906132362699363384132161023807",
@@ -2209,5 +2209,5 @@
   }
  ],
  "missed_pnl": 1040.17,
- "updated": 1784104594
+ "updated": 1784104778
 }
