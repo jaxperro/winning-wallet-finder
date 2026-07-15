@@ -1538,6 +1538,22 @@
    "price": 0.38,
    "stake": 1.0,
    "reason": "in-play hold expired unfilled (69s)",
+   "status": "sold",
+   "pnl": 0.04,
+   "settled": 1784136938,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.4086
+  },
+  {
+   "ts": 1784136881,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "75636274443607445614938470591337628868615181893893587977168160999705149850480",
+   "cond": "0x7446c13b91bf8ece3c07cb6127008ff534ab2853dd3cd31dce5a1452367b461a",
+   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
+   "outcome": "Vici Gaming",
+   "price": 0.79,
+   "stake": 1.0,
+   "reason": "price moved 0.67\u21920.79",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -2456,24 +2472,8 @@
    "settled": 1783859847,
    "name": "gkmgkldfmg",
    "exit_price": 0.066
-  },
-  {
-   "ts": 1783848284,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "98686933205526849260956926098370864586052275369032476650193546947433457446794",
-   "cond": "0x5feac6140f642f8c3cc84eec974a63bdc99f3c02e9deeb49cdc654c8a7b21209",
-   "title": "Dota 2: PARIVISION vs Team Spirit - Game 1 Winner",
-   "outcome": "PARIVISION",
-   "price": 0.65,
-   "stake": 1.0,
-   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
-   "status": "lost",
-   "pnl": -1.01,
-   "settled": 1783858199,
-   "name": "gkmgkldfmg",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 1040.73,
- "updated": 1784136660
+ "missed_pnl": 1040.77,
+ "updated": 1784136938
 }
