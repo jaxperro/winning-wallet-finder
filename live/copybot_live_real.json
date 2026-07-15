@@ -1363,6 +1363,21 @@
  ],
  "missed": [
   {
+   "ts": 1784121603,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "30170770852623682463283902530627549920331526605828543295200389453300351881285",
+   "cond": "0xf9abba1374af046e14e0df5c5a731446244a86dbb952683bf8bdd7bbaeb07c9d",
+   "title": "Dota 2: Team Spirit vs Team Liquid - Game 2 Winner",
+   "outcome": "Team Liquid",
+   "price": 0.34,
+   "stake": 1.0,
+   "reason": "book unreliable (spread 0.10 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784114589,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "99902433281669699237282389313263144275718377343205924960975145491381233618580",
@@ -2292,24 +2307,8 @@
    "settled": 1783829903,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1783823519,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "30832186473485489334120104796032388930526660633476597146132134578867673440960",
-   "cond": "0x1db0a673e54d03be88c155835d1b08286a469fe9ae8cfffe73777d18431533e4",
-   "title": "Argentina vs. Switzerland: O/U 1.5",
-   "outcome": "Over",
-   "price": 0.8499,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.17,
-   "settled": 1783828849,
-   "name": "0x41558102",
-   "exit_price": 1.0
   }
  ],
  "missed_pnl": 1040.22,
- "updated": 1784120503
+ "updated": 1784121605
 }
