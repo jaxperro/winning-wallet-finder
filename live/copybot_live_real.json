@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 6.99,
- "deployed": 10.59,
+ "cash": 5.93,
+ "deployed": 11.63,
  "reserve": 0.0,
- "realized": -4.63,
+ "realized": -4.64,
  "adjustments": -0.08,
  "ledger_drift": 0.0,
- "open_count": 7,
- "fees_paid": 1.85,
+ "open_count": 8,
+ "fees_paid": 1.86,
  "fee_rate": 0.03,
  "lag": {
-  "n": 62,
-  "n24": 23,
-  "avg_s": 12.9,
-  "avg_slip_pct": 0.0227,
+  "n": 63,
+  "n24": 24,
+  "avg_s": 13.9,
+  "avg_slip_pct": 0.0237,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "10108167089466831864668878573560375084000044848088780176588585191663597254227",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Karmine Corp",
+   "title": "LoL: Team Secret  vs Karmine Corp - Game 2 Winner",
+   "their_price": 0.66,
+   "my_price": 0.69,
+   "slippage_pct": 0.0455,
+   "lag_s": 36.4,
+   "shares": 1.51,
+   "cost": 1.04,
+   "fee": 0.01,
+   "opened": 1784127877,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "97088071698669685592562490277029468095283178025275209576407341311883833186246",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2353,5 +2372,5 @@
   }
  ],
  "missed_pnl": 1040.87,
- "updated": 1784127535
+ "updated": 1784127915
 }
