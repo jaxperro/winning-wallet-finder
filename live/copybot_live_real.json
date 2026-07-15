@@ -5,13 +5,13 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 6.83,
- "deployed": 9.74,
+ "cash": 6.88,
+ "deployed": 9.67,
  "reserve": 0.0,
- "realized": -5.63,
+ "realized": -5.65,
  "adjustments": -0.08,
- "ledger_drift": -0.0,
- "open_count": 7,
+ "ledger_drift": 0.0,
+ "open_count": 6,
  "fees_paid": 1.97,
  "fee_rate": 0.03,
  "lag": {
@@ -44,6 +44,27 @@
  },
  "bets": [
   {
+   "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "1win",
+   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
+   "their_price": 0.7,
+   "my_price": 0.71,
+   "slippage_pct": 0.0143,
+   "lag_s": 3.5,
+   "shares": 1.45,
+   "cost": 1.03,
+   "fee": 0.01,
+   "opened": 1784133966,
+   "status": "closed",
+   "exit_price": 0.5987,
+   "pnl": -0.18,
+   "settled": 1784135652,
+   "sold_shares": 1.44,
+   "sold_proceeds": 0.86
+  },
+  {
    "token": "75636274443607445614938470591337628868615181893893587977168160999705149850480",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -63,27 +84,6 @@
    "settled": 1784135536,
    "sold_shares": 2.63,
    "sold_proceeds": 1.09
-  },
-  {
-   "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "1win",
-   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
-   "their_price": 0.7,
-   "my_price": 0.71,
-   "slippage_pct": 0.0143,
-   "lag_s": 3.5,
-   "shares": 1.45,
-   "cost": 1.03,
-   "fee": 0.01,
-   "opened": 1784133966,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 1.35,
-   "sold_proceeds": 0.81
   },
   {
    "token": "43095392816043282955413670152475016788331574493234594924666373412188513296982",
@@ -2457,5 +2457,5 @@
   }
  ],
  "missed_pnl": 1040.6,
- "updated": 1784135536
+ "updated": 1784135652
 }
