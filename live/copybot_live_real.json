@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 6.5,
- "deployed": 10.59,
+ "cash": 5.49,
+ "deployed": 11.59,
  "reserve": 0.0,
- "realized": -5.11,
+ "realized": -5.12,
  "adjustments": -0.08,
  "ledger_drift": 0.01,
- "open_count": 7,
+ "open_count": 8,
  "fees_paid": 1.68,
  "fee_rate": 0.03,
  "lag": {
-  "n": 53,
-  "n24": 21,
-  "avg_s": 14.0,
-  "avg_slip_pct": 0.0217,
+  "n": 54,
+  "n24": 22,
+  "avg_s": 13.5,
+  "avg_slip_pct": 0.021,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "51819545177992980050544653528219085611945377861594412412561048331713992664435",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Bitcoin reach $74,000 July 13-19?",
+   "their_price": 0.7592,
+   "my_price": 0.765,
+   "slippage_pct": 0.0077,
+   "lag_s": 3.4,
+   "shares": 1.31,
+   "cost": 1.0,
+   "fee": 0.01,
+   "opened": 1784104258,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "91957590828077571068600467857177108160302141593906132362699363384132161023807",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2167,5 +2186,5 @@
   }
  ],
  "missed_pnl": 1040.17,
- "updated": 1784104035
+ "updated": 1784104261
 }
