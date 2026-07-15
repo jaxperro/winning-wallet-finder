@@ -1281,6 +1281,22 @@
  ],
  "missed": [
   {
+   "ts": 1784097550,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "63771637378784413148462482237923583124136983802351410739819251381721139402800",
+   "cond": "0xcb1ce68d68dfda31c9f49b9b839afd9ff89feaeb3a8e7b90eed5fda189d57159",
+   "title": "Over $60M committed to the Credible public sale?",
+   "outcome": "No",
+   "price": 0.87,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "sold",
+   "pnl": 0.07,
+   "settled": 1784111118,
+   "name": "0xbadaf319",
+   "exit_price": 0.94
+  },
+  {
    "ts": 1784106348,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "48230344805568764262522696442077527559175899701365768465113438102738863593763",
@@ -1326,21 +1342,6 @@
    "settled": 1784103812,
    "name": "0xbadaf319",
    "exit_price": 0.8976
-  },
-  {
-   "ts": 1784097550,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "63771637378784413148462482237923583124136983802351410739819251381721139402800",
-   "cond": "0xcb1ce68d68dfda31c9f49b9b839afd9ff89feaeb3a8e7b90eed5fda189d57159",
-   "title": "Over $60M committed to the Credible public sale?",
-   "outcome": "No",
-   "price": 0.87,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784063559,
@@ -2228,6 +2229,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 1040.17,
- "updated": 1784110208
+ "missed_pnl": 1040.24,
+ "updated": 1784111118
 }
