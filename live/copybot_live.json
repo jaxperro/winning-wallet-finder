@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 99.88,
+ "stake": 99.83,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1747.07,
- "deployed": 749.83,
+ "cash": 1646.15,
+ "deployed": 849.71,
  "reserve": 0.0,
- "realized": 1496.87,
+ "realized": 1495.83,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 16,
- "fees_paid": 221.38,
+ "ledger_drift": -0.0,
+ "open_count": 17,
+ "fees_paid": 222.43,
  "fee_rate": 0.03,
  "lag": {
-  "n": 156,
-  "n24": 37,
-  "avg_s": 19.2,
-  "avg_slip_pct": -0.011,
+  "n": 157,
+  "n24": 38,
+  "avg_s": 18.8,
+  "avg_slip_pct": -0.0111,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "10108167089466831864668878573560375084000044848088780176588585191663597254227",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Karmine Corp",
+   "title": "LoL: Team Secret  vs Karmine Corp - Game 2 Winner",
+   "their_price": 0.66,
+   "my_price": 0.65,
+   "slippage_pct": -0.0152,
+   "lag_s": 5.4,
+   "shares": 153.66,
+   "cost": 99.88,
+   "fee": 1.05,
+   "opened": 1784127877,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "97088071698669685592562490277029468095283178025275209576407341311883833186246",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2024,26 +2043,6 @@
    "settled": 1783690947,
    "sold_shares": 204.18,
    "sold_proceeds": 99.19
-  },
-  {
-   "token": "84864321844564005123638956205037810292837868807558456388220877376462415276538",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "PlayTime",
-   "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
-   "their_price": 0.397,
-   "my_price": 0.39,
-   "slippage_pct": -0.0177,
-   "shares": 212.35,
-   "cost": 82.82,
-   "fee": 1.52,
-   "opened": 1783690706,
-   "status": "closed",
-   "exit_price": 0.5025,
-   "pnl": 22.37,
-   "settled": 1783690760,
-   "sold_shares": 212.35,
-   "sold_proceeds": 106.71
   }
  ],
  "missed": [
@@ -3004,5 +3003,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784127513
+ "updated": 1784127882
 }
