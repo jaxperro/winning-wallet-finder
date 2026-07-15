@@ -26,13 +26,13 @@
       "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
       "name": "1kto1m",
       "class": "volume",
-      "floor": 328.32
+      "floor": 328.31
     },
     {
       "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
       "name": "BikesAreTheBikes",
       "class": "volume",
-      "floor": 221.89
+      "floor": 227.39
     }
   ],
   "follow": {
