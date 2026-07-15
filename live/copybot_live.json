@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 95.39,
+ "stake": 95.38,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1730.53,
- "deployed": 654.19,
+ "cash": 1670.27,
+ "deployed": 714.22,
  "reserve": 0.0,
- "realized": 1384.69,
+ "realized": 1384.46,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 14,
- "fees_paid": 194.58,
+ "ledger_drift": -0.02,
+ "open_count": 15,
+ "fees_paid": 194.81,
  "fee_rate": 0.03,
  "lag": {
-  "n": 127,
-  "n24": 16,
-  "avg_s": 3.2,
-  "avg_slip_pct": -0.0217,
+  "n": 128,
+  "n24": 17,
+  "avg_s": 3.1,
+  "avg_slip_pct": -0.023,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "63771637378784413148462482237923583124136983802351410739819251381721139402800",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Over $60M committed to the Credible public sale?",
+   "their_price": 0.91,
+   "my_price": 0.87,
+   "slippage_pct": -0.044,
+   "lag_s": 1.4,
+   "shares": 69.0,
+   "cost": 60.03,
+   "fee": 0.23,
+   "opened": 1784097545,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "43095392816043282955413670152475016788331574493234594924666373412188513296982",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2001,26 +2020,6 @@
    "settled": 1783624126,
    "sold_shares": 125.18,
    "sold_proceeds": 93.33
-  },
-  {
-   "token": "39972622924517602245489680060778385204723280241121244048574854937226619835364",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "S&P 500 (SPY) closes above $745 on July 9?",
-   "their_price": 0.65,
-   "my_price": 0.6582,
-   "slippage_pct": -0.0308,
-   "shares": 70.71,
-   "cost": 46.55,
-   "fee": 0.46,
-   "opened": 1783571957,
-   "status": "closed",
-   "exit_price": 0.9474,
-   "pnl": 19.99,
-   "settled": 1783623672,
-   "sold_shares": 70.72,
-   "sold_proceeds": 67.0
   }
  ],
  "missed": [
@@ -2982,5 +2981,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784083167
+ "updated": 1784097548
 }
