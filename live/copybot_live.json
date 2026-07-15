@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 99.36,
+ "stake": 99.28,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1690.74,
- "deployed": 793.15,
+ "cash": 1589.59,
+ "deployed": 892.5,
  "reserve": 0.0,
- "realized": 1483.85,
+ "realized": 1482.06,
  "adjustments": 0.03,
- "ledger_drift": 0.0,
- "open_count": 16,
- "fees_paid": 226.05,
+ "ledger_drift": 0.01,
+ "open_count": 17,
+ "fees_paid": 227.84,
  "fee_rate": 0.03,
  "lag": {
-  "n": 159,
-  "n24": 39,
-  "avg_s": 18.6,
-  "avg_slip_pct": -0.0117,
+  "n": 160,
+  "n24": 40,
+  "avg_s": 18.2,
+  "avg_slip_pct": -0.0114,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "54062655540339804038642939640911207386246833007847007872193563918612772592874",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Up",
+   "title": "SPY (SPY) Up or Down on July 15?",
+   "their_price": 0.4,
+   "my_price": 0.4,
+   "slippage_pct": 0.0,
+   "lag_s": 0.8,
+   "shares": 248.39,
+   "cost": 99.36,
+   "fee": 1.79,
+   "opened": 1784134155,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2025,26 +2044,6 @@
    "settled": 1783700339,
    "sold_shares": 20.41,
    "sold_proceeds": 18.79
-  },
-  {
-   "token": "40594224108520253108624365887167881382842057398183982530866129414581985931630",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Vici Gaming",
-   "title": "Dota 2: Team Nemesis vs Vici Gaming - Game 1 Winner",
-   "their_price": 0.5809,
-   "my_price": 0.59,
-   "slippage_pct": 0.0156,
-   "shares": 145.03,
-   "cost": 85.57,
-   "fee": 1.05,
-   "opened": 1783695466,
-   "status": "closed",
-   "exit_price": 0.9447,
-   "pnl": 50.38,
-   "settled": 1783696061,
-   "sold_shares": 145.03,
-   "sold_proceeds": 137.0
   }
  ],
  "missed": [
@@ -3004,5 +3003,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784133972
+ "updated": 1784134159
 }
