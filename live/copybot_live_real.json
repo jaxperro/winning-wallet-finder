@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 6.45,
- "deployed": 10.59,
+ "cash": 5.41,
+ "deployed": 11.63,
  "reserve": 0.0,
- "realized": -5.16,
+ "realized": -5.17,
  "adjustments": -0.08,
  "ledger_drift": 0.01,
- "open_count": 7,
- "fees_paid": 1.71,
+ "open_count": 8,
+ "fees_paid": 1.72,
  "fee_rate": 0.03,
  "lag": {
-  "n": 56,
-  "n24": 24,
-  "avg_s": 12.8,
-  "avg_slip_pct": 0.0212,
+  "n": 57,
+  "n24": 25,
+  "avg_s": 12.5,
+  "avg_slip_pct": 0.0218,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "101552238332151500626156871765097980002581205887395904949373260936477658068746",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Aurora",
+   "title": "Dota 2: Aurora vs Rune Eaters - Game 1 Winner",
+   "their_price": 0.8,
+   "my_price": 0.8299,
+   "slippage_pct": 0.0374,
+   "lag_s": 4.3,
+   "shares": 1.25,
+   "cost": 1.04,
+   "fee": 0.01,
+   "opened": 1784114036,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "40571829497236400754130791233572006681671269527083953387110532077407893416357",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2230,5 +2249,5 @@
   }
  ],
  "missed_pnl": 1040.24,
- "updated": 1784111118
+ "updated": 1784114041
 }
