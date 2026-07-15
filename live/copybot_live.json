@@ -2040,6 +2040,21 @@
  ],
  "missed": [
   {
+   "ts": 1784106382,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "48230344805568764262522696442077527559175899701365768465113438102738863593763",
+   "cond": "0xb3d5d0894da9a6438744854fb9a4cb0b6efa8ff0e8805adf8b4eb8c7f4f4344b",
+   "title": "WTI Crude Oil (WTI) Up or Down on July 15?",
+   "outcome": "Up",
+   "price": 0.4599,
+   "stake": 52.7,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784054882,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "106117170598299515991778271448868055604686257762862584190468389838818487912270",
@@ -2978,24 +2993,8 @@
    "settled": 1783710874,
    "name": "gkmgkldfmg",
    "exit_price": 0.6065
-  },
-  {
-   "ts": 1783701159,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "69027125899922146323810811399170864348440104511791629984973003274267414851012",
-   "cond": "0x02ab4a8dda332808f3c27061a0449645546834bc324e0d5e617bdc33500cf6c5",
-   "title": "Dota 2: REKONIX vs Team Spirit - Game 2 Winner",
-   "outcome": "REKONIX",
-   "price": 0.1005,
-   "stake": 87.32,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -86.53,
-   "settled": 1783702410,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.0037
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784104776
+ "updated": 1784106384
 }
