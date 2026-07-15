@@ -2061,6 +2061,21 @@
  ],
  "missed": [
   {
+   "ts": 1784106382,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "48230344805568764262522696442077527559175899701365768465113438102738863593763",
+   "cond": "0xb3d5d0894da9a6438744854fb9a4cb0b6efa8ff0e8805adf8b4eb8c7f4f4344b",
+   "title": "WTI Crude Oil (WTI) Up or Down on July 15?",
+   "outcome": "Up",
+   "price": 0.4599,
+   "stake": 52.7,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 61.04,
+   "settled": 1784157230,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784038062,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "74079800819371354810882430985275264634530851270424415749197209350942756192264",
@@ -2152,21 +2167,6 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784106382,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "48230344805568764262522696442077527559175899701365768465113438102738863593763",
-   "cond": "0xb3d5d0894da9a6438744854fb9a4cb0b6efa8ff0e8805adf8b4eb8c7f4f4344b",
-   "title": "WTI Crude Oil (WTI) Up or Down on July 15?",
-   "outcome": "Up",
-   "price": 0.4599,
-   "stake": 52.7,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784054882,
@@ -3015,6 +3015,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 89602.24,
- "updated": 1784154418
+ "missed_pnl": 89663.28,
+ "updated": 1784157230
 }
