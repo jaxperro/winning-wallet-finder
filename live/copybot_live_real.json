@@ -5,14 +5,14 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 4.4,
- "deployed": 12.65,
+ "cash": 5.33,
+ "deployed": 11.63,
  "reserve": 0.0,
- "realized": -5.15,
+ "realized": -5.24,
  "adjustments": -0.08,
- "ledger_drift": 0.01,
- "open_count": 9,
- "fees_paid": 1.76,
+ "ledger_drift": 0.0,
+ "open_count": 8,
+ "fees_paid": 1.77,
  "fee_rate": 0.03,
  "lag": {
   "n": 59,
@@ -44,6 +44,27 @@
  },
  "bets": [
   {
+   "token": "60763476143396891752355094701933688260848785572068480907324289768708153882048",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Liquid",
+   "title": "Dota 2: Team Spirit vs Team Liquid - Game 1 Winner",
+   "their_price": 0.4,
+   "my_price": 0.44,
+   "slippage_pct": 0.1,
+   "lag_s": 8.5,
+   "shares": 2.33,
+   "cost": 1.02,
+   "fee": 0.02,
+   "opened": 1784114581,
+   "status": "closed",
+   "exit_price": 0.4027,
+   "pnl": -0.1,
+   "settled": 1784115502,
+   "sold_shares": 2.32,
+   "sold_proceeds": 0.93
+  },
+  {
    "token": "101552238332151500626156871765097980002581205887395904949373260936477658068746",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -63,25 +84,6 @@
    "settled": 1784115099,
    "sold_shares": 1.25,
    "sold_proceeds": 1.08
-  },
-  {
-   "token": "60763476143396891752355094701933688260848785572068480907324289768708153882048",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Liquid",
-   "title": "Dota 2: Team Spirit vs Team Liquid - Game 1 Winner",
-   "their_price": 0.4,
-   "my_price": 0.44,
-   "slippage_pct": 0.1,
-   "lag_s": 8.5,
-   "shares": 2.33,
-   "cost": 1.02,
-   "fee": 0.02,
-   "opened": 1784114581,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "54808825071623730922593344072571837691813951745707044026991588993889799442913",
@@ -2286,5 +2288,5 @@
   }
  ],
  "missed_pnl": 1040.24,
- "updated": 1784115099
+ "updated": 1784115502
 }
