@@ -2061,6 +2061,21 @@
  ],
  "missed": [
   {
+   "ts": 1784145016,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "69816346859095495747189627053263753156196009953825285858477796399815602774300",
+   "cond": "0x518df6d694ad4658fe6c284850c029c6f00c9b3609cf05f7757d1fecba1641f8",
+   "title": "US-Iran 60 day negotiation period extended?",
+   "outcome": "No",
+   "price": 0.51,
+   "stake": 103.56,
+   "reason": "price moved 0.45\u21920.51",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784136878,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "75636274443607445614938470591337628868615181893893587977168160999705149850480",
@@ -2997,24 +3012,8 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783712755,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "51142349456107958414584954407545686562582425523546369924249014347922759701733",
-   "cond": "0x236ca6f052bc08a309294a01031b8a13fed4e2b7a326b54c05c4a852d65bb864",
-   "title": "Spain vs. Belgium: Both Teams to Score in First Half",
-   "outcome": "Yes",
-   "price": 0.8395,
-   "stake": 94.36,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -0.9,
-   "settled": 1783718118,
-   "name": "0x41558102",
-   "exit_price": 0.8396
   }
  ],
  "missed_pnl": 89701.99,
- "updated": 1784144162
+ "updated": 1784145020
 }
