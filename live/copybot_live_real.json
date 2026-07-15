@@ -1300,6 +1300,21 @@
  ],
  "missed": [
   {
+   "ts": 1784114280,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "54808825071623730922593344072571837691813951745707044026991588993889799442913",
+   "cond": "0x9bf551b914e6e79d34a5147bc0e740954f67ed2b7fee0d7fd350859460343fdf",
+   "title": "Set 1 Winner: Marques vs Domingues",
+   "outcome": "Marques",
+   "price": 0.5,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1784097550,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "63771637378784413148462482237923583124136983802351410739819251381721139402800",
@@ -2230,24 +2245,8 @@
    "name": "0x41558102",
    "exit_checked": true,
    "exit_price": 0.3899
-  },
-  {
-   "ts": 1783823519,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "98130629394630322983110605714141489884435629664812927809724837028685741349685",
-   "cond": "0x95f726bbb693b945f94473908298b2389989550b08a7bfd90f97ce7ba62cb719",
-   "title": "Will Argentina win on 2026-07-11?",
-   "outcome": "No",
-   "price": 0.6122,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "won",
-   "pnl": 0.62,
-   "settled": 1783828831,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 1040.24,
- "updated": 1784114041
+ "updated": 1784114284
 }
