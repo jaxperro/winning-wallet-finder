@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 99.2,
+ "stake": 99.4,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1730.25,
- "deployed": 749.83,
+ "cash": 1791.15,
+ "deployed": 693.75,
  "reserve": 0.0,
- "realized": 1480.05,
+ "realized": 1484.87,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 16,
+ "ledger_drift": -0.0,
+ "open_count": 15,
  "fees_paid": 225.04,
  "fee_rate": 0.03,
  "lag": {
@@ -43,6 +43,27 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "43095392816043282955413670152475016788331574493234594924666373412188513296982",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Solana be above $80 on July 15?",
+   "their_price": 0.92,
+   "my_price": 0.921,
+   "slippage_pct": 0.0011,
+   "lag_s": 1.3,
+   "shares": 67.2,
+   "cost": 61.89,
+   "fee": 0.15,
+   "opened": 1784066818,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 4.59,
+   "settled": 1784132560,
+   "sold_shares": 6.31,
+   "sold_proceeds": 5.74
+  },
   {
    "token": "98673470314914232793147498865854269968418522576820779615973193548136548813556",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -477,27 +498,6 @@
    "exit_price": null,
    "pnl": null,
    "settled": null
-  },
-  {
-   "token": "43095392816043282955413670152475016788331574493234594924666373412188513296982",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Solana be above $80 on July 15?",
-   "their_price": 0.92,
-   "my_price": 0.921,
-   "slippage_pct": 0.0011,
-   "lag_s": 1.3,
-   "shares": 67.2,
-   "cost": 61.89,
-   "fee": 0.15,
-   "opened": 1784066818,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 6.31,
-   "sold_proceeds": 5.74
   },
   {
    "token": "31227781598316880280877760465683086508096359894740658336497080463300979927822",
@@ -3005,5 +3005,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784130784
+ "updated": 1784132561
 }
