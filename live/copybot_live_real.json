@@ -1424,6 +1424,21 @@
  ],
  "missed": [
   {
+   "ts": 1784128795,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "36572361863292743525172722296256449344593421343195350786366455281513675169221",
+   "cond": "0xd2a97dd956e70c9c4abda30d2864588ece0c7213013eb3fa664b88509ff829b1",
+   "title": "Will \"The Odyssey\" Opening Weekend Box Office be greater than 115m?",
+   "outcome": "No",
+   "price": 0.44,
+   "stake": 1.0,
+   "reason": "book unreliable (spread 0.09 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784122065,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "30170770852623682463283902530627549920331526605828543295200389453300351881285",
@@ -2353,24 +2368,8 @@
    "settled": 1783852211,
    "name": "gkmgkldfmg",
    "exit_price": 0.999
-  },
-  {
-   "ts": 1783848410,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "89628205161429183663335882524534177373428689595495022481997839397142363974023",
-   "cond": "0x4a79ee243fd2910b21b240699be5e3cabb73de2f18cddc23c88fc842efe87d95",
-   "title": "LoL: Bilibili Gaming vs Hanwha Life Esports - Game 3 Winner",
-   "outcome": "Bilibili Gaming",
-   "price": 0.5,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.98,
-   "settled": 1783850631,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.999
   }
  ],
  "missed_pnl": 1040.87,
- "updated": 1784128214
+ "updated": 1784128795
 }
