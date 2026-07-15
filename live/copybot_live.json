@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 96.06,
+ "stake": 95.99,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1364.88,
- "deployed": 1036.52,
+ "cash": 1458.72,
+ "deployed": 941.01,
  "reserve": 0.0,
- "realized": 1401.37,
+ "realized": 1399.71,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 19,
- "fees_paid": 213.64,
+ "open_count": 18,
+ "fees_paid": 215.3,
  "fee_rate": 0.03,
  "lag": {
   "n": 154,
-  "n24": 41,
-  "avg_s": 17.6,
-  "avg_slip_pct": -0.0134,
+  "n24": 40,
+  "avg_s": 17.9,
+  "avg_slip_pct": -0.013,
   "window_h": 24
  },
  "wallets": [
@@ -44,6 +44,27 @@
  },
  "bets": [
   {
+   "token": "60763476143396891752355094701933688260848785572068480907324289768708153882048",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Liquid",
+   "title": "Dota 2: Team Spirit vs Team Liquid - Game 1 Winner",
+   "their_price": 0.4,
+   "my_price": 0.42,
+   "slippage_pct": 0.05,
+   "lag_s": 6.4,
+   "shares": 227.39,
+   "cost": 95.5,
+   "fee": 1.66,
+   "opened": 1784114581,
+   "status": "closed",
+   "exit_price": 0.4127,
+   "pnl": -3.32,
+   "settled": 1784115498,
+   "sold_shares": 227.39,
+   "sold_proceeds": 93.84
+  },
+  {
    "token": "101552238332151500626156871765097980002581205887395904949373260936477658068746",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -63,25 +84,6 @@
    "settled": 1784115096,
    "sold_shares": 121.07,
    "sold_proceeds": 111.12
-  },
-  {
-   "token": "60763476143396891752355094701933688260848785572068480907324289768708153882048",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Liquid",
-   "title": "Dota 2: Team Spirit vs Team Liquid - Game 1 Winner",
-   "their_price": 0.4,
-   "my_price": 0.42,
-   "slippage_pct": 0.05,
-   "lag_s": 6.4,
-   "shares": 227.39,
-   "cost": 95.5,
-   "fee": 1.66,
-   "opened": 1784114581,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "99902433281669699237282389313263144275718377343205924960975145491381233618580",
@@ -2996,5 +2998,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784115096
+ "updated": 1784115587
 }
