@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 95.38,
+ "stake": 95.37,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1676.01,
- "deployed": 708.41,
+ "cash": 1625.39,
+ "deployed": 758.93,
  "reserve": 0.0,
- "realized": 1384.39,
+ "realized": 1384.3,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 15,
- "fees_paid": 194.83,
+ "open_count": 16,
+ "fees_paid": 194.92,
  "fee_rate": 0.03,
  "lag": {
-  "n": 128,
-  "n24": 17,
-  "avg_s": 3.1,
-  "avg_slip_pct": -0.023,
+  "n": 129,
+  "n24": 18,
+  "avg_s": 3.0,
+  "avg_slip_pct": -0.0223,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "16686602356235900511267666457287992561973903059220978509691578764880532993490",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "",
+   "title": "",
+   "their_price": 0.95,
+   "my_price": 0.94,
+   "slippage_pct": -0.0105,
+   "lag_s": 0.7,
+   "shares": 53.75,
+   "cost": 50.53,
+   "fee": 0.09,
+   "opened": 1784100418,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "63771637378784413148462482237923583124136983802351410739819251381721139402800",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2002,26 +2021,6 @@
    "settled": 1783626462,
    "sold_shares": 111.84,
    "sold_proceeds": 92.36
-  },
-  {
-   "token": "5331398174498187031334378168888081929069329815866835423456661839681650230348",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "1win",
-   "title": "Dota 2: LGD Gaming vs 1win - Game 1 Winner",
-   "their_price": 0.595,
-   "my_price": 0.62,
-   "slippage_pct": 0.0421,
-   "shares": 125.18,
-   "cost": 77.61,
-   "fee": 0.88,
-   "opened": 1783623229,
-   "status": "closed",
-   "exit_price": 0.7456,
-   "pnl": 14.83,
-   "settled": 1783624126,
-   "sold_shares": 125.18,
-   "sold_proceeds": 93.33
   }
  ],
  "missed": [
@@ -2983,5 +2982,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784098572
+ "updated": 1784100420
 }
