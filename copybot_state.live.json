@@ -13571,7 +13571,8 @@
       "status": "lost",
       "pnl": -1.02,
       "settled": 1784148557,
-      "name": "BikesAreTheBikes"
+      "name": "BikesAreTheBikes",
+      "exit_checked": true
     },
     {
       "ts": 1784054881,
@@ -13921,7 +13922,7 @@
     }
   ],
   "feed_sig": "e5041461f5d0d42e0a982fbfff5d0b57",
-  "feed_pushed_at": 1784148529.904742,
+  "feed_pushed_at": 1784148656.0137045,
   "adjustments": [
     {
       "ts": 1783906689,
