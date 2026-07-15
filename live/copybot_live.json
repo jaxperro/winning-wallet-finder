@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 96.02,
+ "stake": 96.1,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1555.08,
- "deployed": 845.39,
+ "cash": 1652.6,
+ "deployed": 749.83,
  "reserve": 0.0,
- "realized": 1400.45,
+ "realized": 1402.4,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 17,
+ "open_count": 16,
  "fees_paid": 216.51,
  "fee_rate": 0.03,
  "lag": {
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "99902433281669699237282389313263144275718377343205924960975145491381233618580",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Under",
+   "title": "Marques vs. Domingues: Set 1 Games O/U 8.5",
+   "their_price": 0.5,
+   "my_price": 0.49,
+   "slippage_pct": -0.02,
+   "lag_s": 5.6,
+   "shares": 195.02,
+   "cost": 95.56,
+   "fee": 1.46,
+   "opened": 1784114562,
+   "status": "refund",
+   "exit_price": 0.5,
+   "pnl": 0.49,
+   "settled": 1784119815
+  },
   {
    "token": "54808825071623730922593344072571837691813951745707044026991588993889799442913",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -105,25 +124,6 @@
    "settled": 1784115096,
    "sold_shares": 121.07,
    "sold_proceeds": 111.12
-  },
-  {
-   "token": "99902433281669699237282389313263144275718377343205924960975145491381233618580",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Under",
-   "title": "Marques vs. Domingues: Set 1 Games O/U 8.5",
-   "their_price": 0.5,
-   "my_price": 0.49,
-   "slippage_pct": -0.02,
-   "lag_s": 5.6,
-   "shares": 195.02,
-   "cost": 95.56,
-   "fee": 1.46,
-   "opened": 1784114562,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "63771637378784413148462482237923583124136983802351410739819251381721139402800",
@@ -3000,5 +3000,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784118669
+ "updated": 1784119822
 }
