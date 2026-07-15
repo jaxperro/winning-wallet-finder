@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 6.79,
+ "cash": 6.83,
  "deployed": 9.74,
  "reserve": 0.0,
- "realized": -5.67,
+ "realized": -5.63,
  "adjustments": -0.08,
  "ledger_drift": -0.0,
  "open_count": 7,
- "fees_paid": 1.93,
+ "fees_paid": 1.97,
  "fee_rate": 0.03,
  "lag": {
-  "n": 66,
-  "n24": 25,
-  "avg_s": 13.7,
-  "avg_slip_pct": 0.0292,
+  "n": 67,
+  "n24": 26,
+  "avg_s": 13.5,
+  "avg_slip_pct": 0.0312,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,27 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "75636274443607445614938470591337628868615181893893587977168160999705149850480",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Vici Gaming",
+   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
+   "their_price": 0.36,
+   "my_price": 0.39,
+   "slippage_pct": 0.0833,
+   "lag_s": 8.9,
+   "shares": 2.63,
+   "cost": 1.03,
+   "fee": 0.02,
+   "opened": 1784135474,
+   "status": "closed",
+   "exit_price": 0.4127,
+   "pnl": 0.04,
+   "settled": 1784135536,
+   "sold_shares": 2.63,
+   "sold_proceeds": 1.09
+  },
   {
    "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2436,5 +2457,5 @@
   }
  ],
  "missed_pnl": 1040.6,
- "updated": 1784135389
+ "updated": 1784135536
 }
