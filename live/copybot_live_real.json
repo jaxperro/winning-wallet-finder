@@ -1510,6 +1510,21 @@
  ],
  "missed": [
   {
+   "ts": 1784136358,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
+   "cond": "0x7446c13b91bf8ece3c07cb6127008ff534ab2853dd3cd31dce5a1452367b461a",
+   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
+   "outcome": "1win",
+   "price": 0.38,
+   "stake": 1.0,
+   "reason": "in-play hold expired unfilled (69s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784136107,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "75636274443607445614938470591337628868615181893893587977168160999705149850480",
@@ -1519,10 +1534,11 @@
    "price": 0.69,
    "stake": 1.0,
    "reason": "price moved 0.57\u21920.69",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": -0.05,
+   "settled": 1784136297,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.6712
   },
   {
    "ts": 1784135838,
@@ -2437,24 +2453,8 @@
    "settled": 1783858199,
    "name": "gkmgkldfmg",
    "exit_checked": true
-  },
-  {
-   "ts": 1783856323,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "71941893293834599184621753590882651435325558220761902727823613984547213968365",
-   "cond": "0xae59ba73bbfb0e2630cc950c513afa1e536f11a8d52b467282926f91dec3397c",
-   "title": "Dota 2: MOUZ vs Vici Gaming - Game 2 Winner",
-   "outcome": "Vici Gaming",
-   "price": 0.96,
-   "stake": 1.0,
-   "reason": "price 0.960 outside [0.01,0.95]",
-   "status": "sold",
-   "pnl": 0.1,
-   "settled": 1783857000,
-   "name": "gkmgkldfmg",
-   "exit_price": 1.0545
   }
  ],
- "missed_pnl": 1040.78,
- "updated": 1784136107
+ "missed_pnl": 1040.73,
+ "updated": 1784136360
 }
