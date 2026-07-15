@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 95.45,
+ "stake": 95.41,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1516.5,
- "deployed": 869.77,
+ "cash": 1520.93,
+ "deployed": 864.43,
  "reserve": 0.0,
- "realized": 1386.24,
+ "realized": 1385.33,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 18,
- "fees_paid": 205.59,
+ "open_count": 19,
+ "fees_paid": 207.43,
  "fee_rate": 0.03,
  "lag": {
-  "n": 148,
-  "n24": 37,
-  "avg_s": 18.9,
-  "avg_slip_pct": -0.0142,
+  "n": 150,
+  "n24": 39,
+  "avg_s": 18.0,
+  "avg_slip_pct": -0.0148,
   "window_h": 24
  },
  "wallets": [
@@ -44,6 +44,27 @@
  },
  "bets": [
   {
+   "token": "108143450534940407450381347060623594467078916233801426854469869492374845960413",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Bitcoin reach $72,000 July 13-19?",
+   "their_price": 0.66,
+   "my_price": 0.643,
+   "slippage_pct": -0.0258,
+   "lag_s": 0.5,
+   "shares": 148.37,
+   "cost": 95.4,
+   "fee": 1.02,
+   "opened": 1784104572,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "sold_shares": 49.49,
+   "sold_proceeds": 32.33
+  },
+  {
    "token": "51819545177992980050544653528219085611945377861594412412561048331713992664435",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -60,7 +81,9 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "sold_shares": 90.21,
+   "sold_proceeds": 68.53
   },
   {
    "token": "91957590828077571068600467857177108160302141593906132362699363384132161023807",
@@ -105,27 +128,6 @@
    "sold_proceeds": 99.51
   },
   {
-   "token": "108143450534940407450381347060623594467078916233801426854469869492374845960413",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Bitcoin reach $72,000 July 13-19?",
-   "their_price": 0.634,
-   "my_price": 0.641,
-   "slippage_pct": 0.011,
-   "lag_s": 38.6,
-   "shares": 148.61,
-   "cost": 95.26,
-   "fee": 1.03,
-   "opened": 1784103473,
-   "status": "closed",
-   "exit_price": 0.6351,
-   "pnl": -1.9,
-   "settled": 1784103822,
-   "sold_shares": 148.61,
-   "sold_proceeds": 94.38
-  },
-  {
    "token": "91957590828077571068600467857177108160302141593906132362699363384132161023807",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -145,6 +147,27 @@
    "settled": 1784103822,
    "sold_shares": 106.15,
    "sold_proceeds": 82.36
+  },
+  {
+   "token": "108143450534940407450381347060623594467078916233801426854469869492374845960413",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Bitcoin reach $72,000 July 13-19?",
+   "their_price": 0.634,
+   "my_price": 0.641,
+   "slippage_pct": 0.011,
+   "lag_s": 38.6,
+   "shares": 148.61,
+   "cost": 95.26,
+   "fee": 1.03,
+   "opened": 1784103473,
+   "status": "closed",
+   "exit_price": 0.6351,
+   "pnl": -1.9,
+   "settled": 1784103822,
+   "sold_shares": 148.61,
+   "sold_proceeds": 94.38
   },
   {
    "token": "51819545177992980050544653528219085611945377861594412412561048331713992664435",
@@ -2013,26 +2036,6 @@
    "settled": 1783685696,
    "sold_shares": 172.8,
    "sold_proceeds": 85.1
-  },
-  {
-   "token": "93467767591188896649627269967147548436732758009195510676247808663528278284319",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "BetBoom Team",
-   "title": "Dota 2: Xtreme Gaming vs BetBoom Team - Game 2 Winner",
-   "their_price": 0.64,
-   "my_price": 0.63,
-   "slippage_pct": -0.0156,
-   "shares": 136.43,
-   "cost": 85.95,
-   "fee": 0.95,
-   "opened": 1783679662,
-   "status": "closed",
-   "exit_price": 0.9865,
-   "pnl": 47.68,
-   "settled": 1783681072,
-   "sold_shares": 136.43,
-   "sold_proceeds": 134.58
   }
  ],
  "missed": [
@@ -2994,5 +2997,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784104443
+ "updated": 1784104591
 }
