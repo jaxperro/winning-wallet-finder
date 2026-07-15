@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 6.21,
+ "cash": 6.06,
  "deployed": 10.59,
  "reserve": 0.0,
- "realized": -5.4,
+ "realized": -5.55,
  "adjustments": -0.08,
- "ledger_drift": 0.0,
+ "ledger_drift": -0.0,
  "open_count": 7,
- "fees_paid": 1.88,
+ "fees_paid": 1.91,
  "fee_rate": 0.03,
  "lag": {
-  "n": 64,
-  "n24": 24,
-  "avg_s": 14.2,
-  "avg_slip_pct": 0.0246,
+  "n": 65,
+  "n24": 25,
+  "avg_s": 13.9,
+  "avg_slip_pct": 0.0299,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,27 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "95258819910849737625236607586397007048396582198549809843327200924394330624542",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Vici Gaming",
+   "title": "Dota 2: 1win vs Vici Gaming - Game 2 Winner",
+   "their_price": 0.3892,
+   "my_price": 0.45,
+   "slippage_pct": 0.1562,
+   "lag_s": 5.6,
+   "shares": 2.32,
+   "cost": 1.04,
+   "fee": 0.02,
+   "opened": 1784131261,
+   "status": "closed",
+   "exit_price": 0.3928,
+   "pnl": -0.15,
+   "settled": 1784131336,
+   "sold_shares": 2.31,
+   "sold_proceeds": 0.91
+  },
   {
    "token": "98673470314914232793147498865854269968418522576820779615973193548136548813556",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2393,5 +2414,5 @@
   }
  ],
  "missed_pnl": 1040.87,
- "updated": 1784131113
+ "updated": 1784131336
 }
