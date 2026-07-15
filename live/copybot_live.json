@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 95.56,
+ "stake": 95.44,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1447.95,
- "deployed": 941.1,
+ "cash": 1253.76,
+ "deployed": 1132.16,
  "reserve": 0.0,
- "realized": 1389.02,
+ "realized": 1385.9,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 18,
- "fees_paid": 210.25,
+ "ledger_drift": -0.02,
+ "open_count": 20,
+ "fees_paid": 213.37,
  "fee_rate": 0.03,
  "lag": {
-  "n": 152,
-  "n24": 40,
-  "avg_s": 17.8,
-  "avg_slip_pct": -0.0156,
+  "n": 154,
+  "n24": 42,
+  "avg_s": 17.3,
+  "avg_slip_pct": -0.0142,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,44 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "60763476143396891752355094701933688260848785572068480907324289768708153882048",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Liquid",
+   "title": "Dota 2: Team Spirit vs Team Liquid - Game 1 Winner",
+   "their_price": 0.4,
+   "my_price": 0.42,
+   "slippage_pct": 0.05,
+   "lag_s": 6.4,
+   "shares": 227.39,
+   "cost": 95.5,
+   "fee": 1.66,
+   "opened": 1784114581,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
+  {
+   "token": "99902433281669699237282389313263144275718377343205924960975145491381233618580",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Under",
+   "title": "Marques vs. Domingues: Set 1 Games O/U 8.5",
+   "their_price": 0.5,
+   "my_price": 0.49,
+   "slippage_pct": -0.02,
+   "lag_s": 5.6,
+   "shares": 195.02,
+   "cost": 95.56,
+   "fee": 1.46,
+   "opened": 1784114562,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "54808825071623730922593344072571837691813951745707044026991588993889799442913",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -1996,44 +2034,6 @@
    "exit_price": 0.0,
    "pnl": -86.68,
    "settled": 1783689250
-  },
-  {
-   "token": "1161663761026248928741317236361093152095776065309269380062540556077381245572",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "G2 Esports",
-   "title": "LoL: G2 Esports vs LYON - Game 2 Winner",
-   "their_price": 0.64,
-   "my_price": 0.63,
-   "slippage_pct": -0.0156,
-   "shares": 135.14,
-   "cost": 85.14,
-   "fee": 0.95,
-   "opened": 1783674604,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -86.09,
-   "settled": 1783689186
-  },
-  {
-   "token": "64240896700312109784630886706605953876703771364083875350159352793781549030993",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Prestige Academy",
-   "title": "Map Handicap: LEO (-1.5) vs Prestige Academy (+1.5)",
-   "their_price": 0.5,
-   "my_price": 0.52,
-   "slippage_pct": 0.04,
-   "shares": 162.43,
-   "cost": 84.46,
-   "fee": 1.22,
-   "opened": 1783632065,
-   "status": "closed",
-   "exit_price": 0.6122,
-   "pnl": 13.75,
-   "settled": 1783688399,
-   "sold_shares": 162.42,
-   "sold_proceeds": 99.43
   }
  ],
  "missed": [
@@ -2994,5 +2994,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784114279
+ "updated": 1784114587
 }
