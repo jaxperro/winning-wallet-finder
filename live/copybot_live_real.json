@@ -1519,10 +1519,11 @@
    "price": 0.53,
    "stake": 1.0,
    "reason": "in-play hold expired unfilled (41s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 0.18,
+   "settled": 1784135972,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.64
   },
   {
    "ts": 1784134156,
@@ -2455,6 +2456,6 @@
    "exit_price": 0.999
   }
  ],
- "missed_pnl": 1040.6,
- "updated": 1784135841
+ "missed_pnl": 1040.78,
+ "updated": 1784135972
 }
