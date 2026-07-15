@@ -1260,6 +1260,21 @@
  ],
  "missed": [
   {
+   "ts": 1784106348,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "48230344805568764262522696442077527559175899701365768465113438102738863593763",
+   "cond": "0xb3d5d0894da9a6438744854fb9a4cb0b6efa8ff0e8805adf8b4eb8c7f4f4344b",
+   "title": "WTI Crude Oil (WTI) Up or Down on July 15?",
+   "outcome": "Up",
+   "price": 0.4599,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784103479,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "2095727639302065570465180607725469222723131570608498785177886618037154393648",
@@ -2190,24 +2205,8 @@
    "settled": 1783828831,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783824463,
-   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
-   "token": "86486366666900934251692510513012809256323129155701648230490642360929725335546",
-   "cond": "0x74e592f35b0751cf0bf4bc7e04ec5e4722c3bcee1332140faa86307c70616763",
-   "title": "Bitcoin Up or Down - July 11, 10:40PM-10:45PM ET",
-   "outcome": "Down",
-   "price": 0.5675,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "lost",
-   "pnl": -1.01,
-   "settled": 1783824780,
-   "name": "0xd96750bf",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 1040.17,
- "updated": 1784104778
+ "updated": 1784106352
 }
