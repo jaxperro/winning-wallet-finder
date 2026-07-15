@@ -1447,6 +1447,21 @@
  ],
  "missed": [
   {
+   "ts": 1784131111,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "95258819910849737625236607586397007048396582198549809843327200924394330624542",
+   "cond": "0x26ed9c1dc439447898a1d3f22855381113ad8fac69fe8099f7eacc5503496c67",
+   "title": "Dota 2: 1win vs Vici Gaming - Game 2 Winner",
+   "outcome": "Vici Gaming",
+   "price": 0.36,
+   "stake": 1.0,
+   "reason": "in-play hold expired unfilled (33s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784128795,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "36572361863292743525172722296256449344593421343195350786366455281513675169221",
@@ -2375,24 +2390,8 @@
    "settled": 1783853489,
    "name": "gkmgkldfmg",
    "exit_price": 0.3901
-  },
-  {
-   "ts": 1783851794,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "90912190630175200805827076506881962170030344593208497487958283062556067846899",
-   "cond": "0x660404f310d6d27f728aa0f5494c157c794cc35b0a3b34536e689e6672947d64",
-   "title": "Dota 2: REKONIX vs Team Nemesis - Game 1 Winner",
-   "outcome": "REKONIX",
-   "price": 0.92,
-   "stake": 1.0,
-   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.99)",
-   "status": "sold",
-   "pnl": 0.08,
-   "settled": 1783852211,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.999
   }
  ],
  "missed_pnl": 1040.87,
- "updated": 1784130794
+ "updated": 1784131113
 }
