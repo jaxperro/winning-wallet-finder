@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 6.88,
- "deployed": 9.67,
+ "cash": 5.86,
+ "deployed": 10.67,
  "reserve": 0.0,
- "realized": -5.65,
+ "realized": -5.66,
  "adjustments": -0.08,
  "ledger_drift": 0.0,
- "open_count": 6,
- "fees_paid": 1.97,
+ "open_count": 7,
+ "fees_paid": 1.98,
  "fee_rate": 0.03,
  "lag": {
-  "n": 67,
-  "n24": 26,
-  "avg_s": 13.5,
-  "avg_slip_pct": 0.0312,
+  "n": 68,
+  "n24": 27,
+  "avg_s": 13.1,
+  "avg_slip_pct": 0.0301,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "69816346859095495747189627053263753156196009953825285858477796399815602774300",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "US-Iran 60 day negotiation period extended?",
+   "their_price": 0.58,
+   "my_price": 0.58,
+   "slippage_pct": -0.0,
+   "lag_s": 3.7,
+   "shares": 1.72,
+   "cost": 1.0,
+   "fee": 0.01,
+   "opened": 1784136654,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2456,5 +2475,5 @@
   }
  ],
  "missed_pnl": 1040.73,
- "updated": 1784136360
+ "updated": 1784136660
 }
