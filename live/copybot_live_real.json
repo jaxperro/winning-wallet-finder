@@ -5,13 +5,13 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 6.25,
- "deployed": 10.89,
+ "cash": 6.37,
+ "deployed": 10.76,
  "reserve": 0.0,
- "realized": -5.06,
+ "realized": -5.07,
  "adjustments": -0.08,
  "ledger_drift": 0.01,
- "open_count": 9,
+ "open_count": 8,
  "fees_paid": 1.65,
  "fee_rate": 0.03,
  "lag": {
@@ -43,6 +43,27 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "8020089880920958927009226502257340268216634167927175441316718981939077905748",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will the price of Bitcoin be above $56,000 on July 20?",
+   "their_price": 0.9,
+   "my_price": 0.9,
+   "slippage_pct": -0.0,
+   "lag_s": 50.7,
+   "shares": 1.11,
+   "cost": 1.0,
+   "fee": 0.0,
+   "opened": 1784103469,
+   "status": "closed",
+   "exit_price": 0.8911,
+   "pnl": -0.01,
+   "settled": 1784103616,
+   "sold_shares": 1.11,
+   "sold_proceeds": 0.99
+  },
   {
    "token": "73148754771904705789992839223698652347584217442761841171877207189768130833542",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -126,27 +147,6 @@
    "settled": 1784103541,
    "sold_shares": 1.09,
    "sold_proceeds": 0.98
-  },
-  {
-   "token": "8020089880920958927009226502257340268216634167927175441316718981939077905748",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will the price of Bitcoin be above $56,000 on July 20?",
-   "their_price": 0.9,
-   "my_price": 0.9,
-   "slippage_pct": -0.0,
-   "lag_s": 50.7,
-   "shares": 1.11,
-   "cost": 1.0,
-   "fee": 0.0,
-   "opened": 1784103469,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 0.97,
-   "sold_proceeds": 0.87
   },
   {
    "token": "91957590828077571068600467857177108160302141593906132362699363384132161023807",
@@ -2123,5 +2123,5 @@
   }
  ],
  "missed_pnl": 1040.12,
- "updated": 1784103575
+ "updated": 1784103616
 }
