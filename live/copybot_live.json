@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 101.24,
+ "stake": 101.16,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1837.24,
- "deployed": 693.75,
+ "cash": 1734.12,
+ "deployed": 794.99,
  "reserve": 0.0,
- "realized": 1530.96,
+ "realized": 1529.08,
  "adjustments": 0.03,
  "ledger_drift": 0.0,
- "open_count": 15,
- "fees_paid": 230.64,
+ "open_count": 16,
+ "fees_paid": 232.52,
  "fee_rate": 0.03,
  "lag": {
-  "n": 160,
-  "n24": 40,
-  "avg_s": 18.2,
-  "avg_slip_pct": -0.0114,
+  "n": 161,
+  "n24": 41,
+  "avg_s": 17.9,
+  "avg_slip_pct": -0.0098,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "1win",
+   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
+   "their_price": 0.3595,
+   "my_price": 0.38,
+   "slippage_pct": 0.057,
+   "lag_s": 5.7,
+   "shares": 266.42,
+   "cost": 101.24,
+   "fee": 1.88,
+   "opened": 1784136283,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2028,26 +2047,6 @@
    "exit_price": 1.0,
    "pnl": 56.39,
    "settled": 1783700537
-  },
-  {
-   "token": "16341441115314407349877008586386599112394401117565529613770834118938995329927",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Ethereum be above $1,800 on July 10?",
-   "their_price": 0.772,
-   "my_price": 0.773,
-   "slippage_pct": 0.0013,
-   "shares": 82.58,
-   "cost": 63.83,
-   "fee": 0.43,
-   "opened": 1783694600,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 16.69,
-   "settled": 1783700339,
-   "sold_shares": 20.41,
-   "sold_proceeds": 18.79
   }
  ],
  "missed": [
@@ -3006,5 +3005,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784136108
+ "updated": 1784136288
 }
