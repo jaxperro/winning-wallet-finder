@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 95.45,
+ "stake": 95.46,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2548.96,
- "cash": 1585.52,
- "deployed": 800.85,
+ "cash": 1586.4,
+ "deployed": 800.17,
  "reserve": 0.0,
- "realized": 1386.34,
+ "realized": 1386.54,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 18,
+ "open_count": 17,
  "fees_paid": 208.1,
  "fee_rate": 0.03,
  "lag": {
@@ -44,6 +44,27 @@
  },
  "bets": [
   {
+   "token": "51819545177992980050544653528219085611945377861594412412561048331713992664435",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Bitcoin reach $74,000 July 13-19?",
+   "their_price": 0.7592,
+   "my_price": 0.764,
+   "slippage_pct": 0.0063,
+   "lag_s": 3.5,
+   "shares": 91.1,
+   "cost": 69.6,
+   "fee": 0.49,
+   "opened": 1784104258,
+   "status": "closed",
+   "exit_price": 0.7618,
+   "pnl": -0.69,
+   "settled": 1784104776,
+   "sold_shares": 91.1,
+   "sold_proceeds": 69.4
+  },
+  {
    "token": "108143450534940407450381347060623594467078916233801426854469869492374845960413",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -63,27 +84,6 @@
    "settled": 1784104596,
    "sold_shares": 148.37,
    "sold_proceeds": 96.93
-  },
-  {
-   "token": "51819545177992980050544653528219085611945377861594412412561048331713992664435",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Bitcoin reach $74,000 July 13-19?",
-   "their_price": 0.7592,
-   "my_price": 0.764,
-   "slippage_pct": 0.0063,
-   "lag_s": 3.5,
-   "shares": 91.1,
-   "cost": 69.6,
-   "fee": 0.49,
-   "opened": 1784104258,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 90.21,
-   "sold_proceeds": 68.53
   },
   {
    "token": "91957590828077571068600467857177108160302141593906132362699363384132161023807",
@@ -2997,5 +2997,5 @@
   }
  ],
  "missed_pnl": 89696.33,
- "updated": 1784104596
+ "updated": 1784104776
 }
