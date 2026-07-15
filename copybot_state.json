@@ -13560,7 +13560,7 @@
   },
   "hwm": 2589.582930968435,
   "feed_sig": "a9a6141ce34ace260c50589bfd2ce0e3",
-  "feed_pushed_at": 1784148301.0159326,
+  "feed_pushed_at": 1784148438.4565256,
   "missed": [
     {
       "ts": 1783590977,
@@ -14981,9 +14981,9 @@
       "price": 0.242,
       "stake": 97.53,
       "reason": "book unreliable (spread 0.69 > 0.08)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "pnl": -99.75,
+      "settled": 1784148557,
       "name": "BikesAreTheBikes"
     },
     {
@@ -15167,7 +15167,7 @@
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784145826,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784148362,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784148373,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784140289,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1783843568,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784146207,

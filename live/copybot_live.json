@@ -2061,6 +2061,21 @@
  ],
  "missed": [
   {
+   "ts": 1784038062,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "74079800819371354810882430985275264634530851270424415749197209350942756192264",
+   "cond": "0x73b1e8e9993114bd0b92588ecdc2a6f490ba9cc6f85844d927ae62e0b3c15ca5",
+   "title": "Will Russia capture Pokrovka by July 31?",
+   "outcome": "No",
+   "price": 0.242,
+   "stake": 97.53,
+   "reason": "book unreliable (spread 0.69 > 0.08)",
+   "status": "lost",
+   "pnl": -99.75,
+   "settled": 1784148557,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784148369,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "97790474719190241406489821993233180311618193540151039410585653304993937141574",
@@ -2167,21 +2182,6 @@
    "settled": 1784063079,
    "name": "BikesAreTheBikes",
    "exit_checked": true
-  },
-  {
-   "ts": 1784038062,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "74079800819371354810882430985275264634530851270424415749197209350942756192264",
-   "cond": "0x73b1e8e9993114bd0b92588ecdc2a6f490ba9cc6f85844d927ae62e0b3c15ca5",
-   "title": "Will Russia capture Pokrovka by July 31?",
-   "outcome": "No",
-   "price": 0.242,
-   "stake": 97.53,
-   "reason": "book unreliable (spread 0.69 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784036922,
@@ -3014,6 +3014,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 89701.99,
- "updated": 1784148369
+ "missed_pnl": 89602.24,
+ "updated": 1784148558
 }
