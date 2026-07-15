@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 4.35,
- "deployed": 12.66,
+ "cash": 3.31,
+ "deployed": 13.69,
  "reserve": 0.0,
- "realized": -5.18,
+ "realized": -5.2,
  "adjustments": -0.08,
  "ledger_drift": 0.01,
- "open_count": 9,
- "fees_paid": 1.73,
+ "open_count": 10,
+ "fees_paid": 1.75,
  "fee_rate": 0.03,
  "lag": {
-  "n": 58,
-  "n24": 26,
-  "avg_s": 12.5,
-  "avg_slip_pct": 0.0228,
+  "n": 59,
+  "n24": 27,
+  "avg_s": 12.3,
+  "avg_slip_pct": 0.0257,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "60763476143396891752355094701933688260848785572068480907324289768708153882048",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Liquid",
+   "title": "Dota 2: Team Spirit vs Team Liquid - Game 1 Winner",
+   "their_price": 0.4,
+   "my_price": 0.44,
+   "slippage_pct": 0.1,
+   "lag_s": 8.5,
+   "shares": 2.33,
+   "cost": 1.02,
+   "fee": 0.02,
+   "opened": 1784114581,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "54808825071623730922593344072571837691813951745707044026991588993889799442913",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -1319,6 +1338,21 @@
  ],
  "missed": [
   {
+   "ts": 1784114589,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "99902433281669699237282389313263144275718377343205924960975145491381233618580",
+   "cond": "0x39e04bf6b09df29f9846fcf08aeb1cb364b498c0eaa2526e17cb8ca82fdc0a5b",
+   "title": "Marques vs. Domingues: Set 1 Games O/U 8.5",
+   "outcome": "Under",
+   "price": 0.49,
+   "stake": 1.0,
+   "reason": "in-play hold expired unfilled (20s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1784114280,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "54808825071623730922593344072571837691813951745707044026991588993889799442913",
@@ -2247,25 +2281,8 @@
    "settled": 1783828849,
    "name": "0x41558102",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1783818828,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "14635675870982897917581198649476127837975251193150495566552970565909631535281",
-   "cond": "0x95f726bbb693b945f94473908298b2389989550b08a7bfd90f97ce7ba62cb719",
-   "title": "Will Argentina win on 2026-07-11?",
-   "outcome": "Yes",
-   "price": 0.727,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -0.48,
-   "settled": 1783828831,
-   "name": "0x41558102",
-   "exit_checked": true,
-   "exit_price": 0.3899
   }
  ],
  "missed_pnl": 1040.24,
- "updated": 1784114288
+ "updated": 1784114607
 }
