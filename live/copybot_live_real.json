@@ -1573,6 +1573,21 @@
  ],
  "missed": [
   {
+   "ts": 1784203192,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "66952920895333160548355799812097590238621013306550825104377190101291120901091",
+   "cond": "0x5fee4f88a5795fa8a370c428b53650c5422d243d43865b9e1762c63b8e461256",
+   "title": "Dota 2: Team Yandex vs Team Spirit - Game 1 Winner",
+   "outcome": "Team Spirit",
+   "price": 0.43,
+   "stake": 1.0,
+   "reason": "price moved 0.34\u21920.43",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784203120,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "10142042254085112476456489233335925486747213286746834444247538330158153223906",
@@ -2500,24 +2515,8 @@
    "settled": 1783869326,
    "name": "0xbadaf319",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1783867167,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "4348221964264579870850466669975747411320261540985126046359486164505992457542",
-   "cond": "0x7596ba50d124202d21f9b3695ad1e5611fd2f5db2cc7696d40cf2c198e806f73",
-   "title": "Dota 2: OG vs Virtus.pro - Game 2 Winner",
-   "outcome": "Virtus.pro",
-   "price": 0.63,
-   "stake": 1.03,
-   "reason": "price moved 0.58\u21920.63",
-   "status": "sold",
-   "pnl": -0.04,
-   "settled": 1783867751,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.6184
   }
  ],
  "missed_pnl": 1039.84,
- "updated": 1784203122
+ "updated": 1784203195
 }
