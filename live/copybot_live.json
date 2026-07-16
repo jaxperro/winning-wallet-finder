@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 104.32,
+ "stake": 104.43,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2619.54,
- "cash": 1790.08,
- "deployed": 817.81,
+ "cash": 1818.15,
+ "deployed": 792.71,
  "reserve": 0.0,
- "realized": 1607.86,
+ "realized": 1610.83,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 17,
- "fees_paid": 258.1,
+ "fees_paid": 258.12,
  "fee_rate": 0.03,
  "lag": {
   "n": 171,
@@ -788,8 +788,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 35.82,
-   "sold_proceeds": 34.87
+   "sold_shares": 64.34,
+   "sold_proceeds": 62.94
   },
   {
    "token": "6237386819428750235511557154093150991879160039847931747938354455286350107208",
@@ -3024,5 +3024,5 @@
   }
  ],
  "missed_pnl": 89588.9,
- "updated": 1784211095
+ "updated": 1784213385
 }
