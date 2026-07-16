@@ -2077,10 +2077,11 @@
    "price": 0.56,
    "stake": 103.89,
    "reason": "no ask side on the book at copy time",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": -22.66,
+   "settled": 1784206970,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.4527
   },
   {
    "ts": 1784203157,
@@ -3021,6 +3022,6 @@
    "exit_price": 1.0
   }
  ],
- "missed_pnl": 89608.98,
- "updated": 1784206834
+ "missed_pnl": 89586.32,
+ "updated": 1784206971
 }

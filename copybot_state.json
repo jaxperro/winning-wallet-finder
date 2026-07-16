@@ -13661,8 +13661,8 @@
     }
   },
   "hwm": 2619.544502590673,
-  "feed_sig": "4f0334a59068236b13e9ed81a6d064e1",
-  "feed_pushed_at": 1784206768.6242766,
+  "feed_sig": "9a7fce508afb7f600bec220c2acd1d66",
+  "feed_pushed_at": 1784206900.9793274,
   "missed": [
     {
       "ts": 1783590977,
@@ -15240,10 +15240,11 @@
       "price": 0.56,
       "stake": 103.89,
       "reason": "no ask side on the book at copy time",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "gkmgkldfmg"
+      "status": "sold",
+      "pnl": -22.66,
+      "settled": 1784206970,
+      "name": "gkmgkldfmg",
+      "exit_price": 0.4527
     }
   ],
   "no_miss_toks": [
