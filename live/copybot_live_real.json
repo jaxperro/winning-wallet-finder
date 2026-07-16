@@ -1573,6 +1573,21 @@
  ],
  "missed": [
   {
+   "ts": 1784203120,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "10142042254085112476456489233335925486747213286746834444247538330158153223906",
+   "cond": "0x5fee4f88a5795fa8a370c428b53650c5422d243d43865b9e1762c63b8e461256",
+   "title": "Dota 2: Team Yandex vs Team Spirit - Game 1 Winner",
+   "outcome": "Team Yandex",
+   "price": 0.57,
+   "stake": 1.0,
+   "reason": "book unreliable (spread 0.13 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784175026,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
@@ -2501,24 +2516,8 @@
    "settled": 1783867751,
    "name": "gkmgkldfmg",
    "exit_price": 0.6184
-  },
-  {
-   "ts": 1783867617,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "99894914207898514284631305777217402140704104471002518113888183892335214453642",
-   "cond": "0x7596ba50d124202d21f9b3695ad1e5611fd2f5db2cc7696d40cf2c198e806f73",
-   "title": "Dota 2: OG vs Virtus.pro - Game 2 Winner",
-   "outcome": "OG",
-   "price": 0.41,
-   "stake": 1.03,
-   "reason": "in-play hold expired unfilled (35s)",
-   "status": "sold",
-   "pnl": 0.08,
-   "settled": 1783867751,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.4551
   }
  ],
  "missed_pnl": 1039.84,
- "updated": 1784200989
+ "updated": 1784203122
 }
