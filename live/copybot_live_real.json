@@ -26,21 +26,24 @@
   "0xbadaf319",
   "gkmgkldfmg",
   "1kto1m",
-  "BikesAreTheBikes"
+  "BikesAreTheBikes",
+  "AIcAIc"
  ],
  "classes": {
   "Kruto2027": "volume",
   "0xbadaf319": "volume",
   "gkmgkldfmg": "volume",
   "1kto1m": "volume",
-  "BikesAreTheBikes": "volume"
+  "BikesAreTheBikes": "volume",
+  "AIcAIc": "volume"
  },
  "floors": {
   "Kruto2027": 80.0,
   "0xbadaf319": 44.98,
   "gkmgkldfmg": 304.34,
   "1kto1m": 320.95,
-  "BikesAreTheBikes": 158.0
+  "BikesAreTheBikes": 158.0,
+  "AIcAIc": 542.0
  },
  "bets": [
   {
@@ -2645,5 +2648,5 @@
   }
  ],
  "missed_pnl": 1040.87,
- "updated": 1784236756
+ "updated": 1784237020
 }
