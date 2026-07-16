@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2619.54,
- "cash": 1653.23,
- "deployed": 963.28,
+ "cash": 1642.82,
+ "deployed": 973.68,
  "reserve": 0.0,
- "realized": 1616.48,
+ "realized": 1616.47,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 18,
- "fees_paid": 258.95,
+ "open_count": 19,
+ "fees_paid": 258.96,
  "fee_rate": 0.03,
  "lag": {
-  "n": 175,
-  "n24": 10,
-  "avg_s": 60.3,
-  "avg_slip_pct": 0.0068,
+  "n": 176,
+  "n24": 11,
+  "avg_s": 54.9,
+  "avg_slip_pct": 0.0062,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "29198556434804110591228001401963930700463402583244929766816225903118874844031",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will NVIDIA (NVDA) hit (HIGH) $220 Week of July 13 2026?",
+   "their_price": 0.95,
+   "my_price": 0.95,
+   "slippage_pct": 0.0,
+   "lag_s": 0.7,
+   "shares": 10.94,
+   "cost": 10.4,
+   "fee": 0.02,
+   "opened": 1784244953,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "96493470136581654430268359631814450290137534659017161119334974730318350734648",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2049,26 +2068,6 @@
    "settled": 1783759181,
    "sold_shares": 145.99,
    "sold_proceeds": 128.01
-  },
-  {
-   "token": "67230363321893543312889997321885915798590561925238141510437860465156386610448",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the DFM Real Estate Index hit 18,000 in 2026?",
-   "their_price": 0.9,
-   "my_price": 0.88,
-   "slippage_pct": -0.0222,
-   "shares": 62.5,
-   "cost": 55.0,
-   "fee": 0.2,
-   "opened": 1783698964,
-   "status": "closed",
-   "exit_price": 0.929,
-   "pnl": 2.86,
-   "settled": 1783753384,
-   "sold_shares": 62.5,
-   "sold_proceeds": 58.06
   }
  ],
  "missed": [
@@ -3027,5 +3026,5 @@
   }
  ],
  "missed_pnl": 89588.9,
- "updated": 1784237336
+ "updated": 1784244957
 }
