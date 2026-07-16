@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 6.16,
- "deployed": 10.37,
+ "cash": 5.15,
+ "deployed": 11.37,
  "reserve": 0.0,
  "realized": -5.67,
  "adjustments": -0.08,
  "ledger_drift": 0.0,
- "open_count": 8,
- "fees_paid": 2.03,
+ "open_count": 9,
+ "fees_paid": 2.04,
  "fee_rate": 0.03,
  "lag": {
-  "n": 70,
-  "n24": 11,
-  "avg_s": 8.9,
-  "avg_slip_pct": 0.0407,
+  "n": 71,
+  "n24": 12,
+  "avg_s": 8.3,
+  "avg_slip_pct": 0.0384,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "52277341117061676402936201599481724705704245418989224868304419115133008528281",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Down",
+   "title": "Gold (XAUUSD) Up or Down on July 16?",
+   "their_price": 0.77,
+   "my_price": 0.78,
+   "slippage_pct": 0.013,
+   "lag_s": 2.0,
+   "shares": 1.28,
+   "cost": 1.0,
+   "fee": 0.01,
+   "opened": 1784203549,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "110149901661791632318870033509195606722453896981581944225999632147320785007115",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -1573,6 +1592,21 @@
  ],
  "missed": [
   {
+   "ts": 1784203662,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "10142042254085112476456489233335925486747213286746834444247538330158153223906",
+   "cond": "0x5fee4f88a5795fa8a370c428b53650c5422d243d43865b9e1762c63b8e461256",
+   "title": "Dota 2: Team Yandex vs Team Spirit - Game 1 Winner",
+   "outcome": "Team Yandex",
+   "price": 0.57,
+   "stake": 1.0,
+   "reason": "price moved 0.49\u21920.57",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784203192,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "66952920895333160548355799812097590238621013306550825104377190101291120901091",
@@ -2501,24 +2535,8 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783867991,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "105787237860830132190384323107166398542270087772323787551486824946137398140548",
-   "cond": "0x81af4ac7bf99204e9d6182691058bd92fb2b42dcec494654e1189dfde08f7004",
-   "title": "Bitcoin above 63,200 on July 12, 11AM ET?",
-   "outcome": "Yes",
-   "price": 0.001,
-   "stake": 1.03,
-   "reason": "price 0.001 outside [0.01,0.95]",
-   "status": "sold",
-   "pnl": 1028.94,
-   "settled": 1783869326,
-   "name": "0xbadaf319",
-   "exit_price": 1.0
   }
  ],
  "missed_pnl": 1039.76,
- "updated": 1784203480
+ "updated": 1784203666
 }
