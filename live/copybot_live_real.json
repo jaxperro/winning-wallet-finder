@@ -5,13 +5,13 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 6.13,
- "deployed": 10.73,
+ "cash": 7.42,
+ "deployed": 9.69,
  "reserve": 0.0,
- "realized": -5.34,
+ "realized": -5.1,
  "adjustments": -0.08,
- "ledger_drift": 0.01,
- "open_count": 8,
+ "ledger_drift": 0.02,
+ "open_count": 7,
  "fees_paid": 2.09,
  "fee_rate": 0.03,
  "lag": {
@@ -44,6 +44,27 @@
  },
  "bets": [
   {
+   "token": "70071514755027914725023328573024847971805733187006977673637026985321376228783",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Kaufland Hangry Knights",
+   "title": "LoL: VfB eSports vs Kaufland Hangry Knights (BO1) - Prime League 1st Division Regular Seas",
+   "their_price": 0.74,
+   "my_price": 0.7699,
+   "slippage_pct": 0.0404,
+   "lag_s": 4.5,
+   "shares": 1.35,
+   "cost": 1.04,
+   "fee": 0.01,
+   "opened": 1784221560,
+   "status": "closed",
+   "exit_price": 0.9486,
+   "pnl": 0.23,
+   "settled": 1784223283,
+   "sold_shares": 1.35,
+   "sold_proceeds": 1.28
+  },
+  {
    "token": "31227781598316880280877760465683086508096359894740658336497080463300979927822",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -63,25 +84,6 @@
    "settled": 1784223192,
    "sold_shares": 1.11,
    "sold_proceeds": 1.07
-  },
-  {
-   "token": "70071514755027914725023328573024847971805733187006977673637026985321376228783",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Kaufland Hangry Knights",
-   "title": "LoL: VfB eSports vs Kaufland Hangry Knights (BO1) - Prime League 1st Division Regular Seas",
-   "their_price": 0.74,
-   "my_price": 0.7699,
-   "slippage_pct": 0.0404,
-   "lag_s": 4.5,
-   "shares": 1.35,
-   "cost": 1.04,
-   "fee": 0.01,
-   "opened": 1784221560,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "6542858065381328138604971534407515790260577773140917193780294419054693674045",
@@ -2624,5 +2626,5 @@
   }
  ],
  "missed_pnl": 1040.87,
- "updated": 1784223192
+ "updated": 1784223283
 }
