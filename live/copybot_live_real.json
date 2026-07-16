@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 7.42,
- "deployed": 9.69,
+ "cash": 6.41,
+ "deployed": 10.69,
  "reserve": 0.0,
  "realized": -5.1,
  "adjustments": -0.08,
  "ledger_drift": 0.02,
- "open_count": 7,
- "fees_paid": 2.09,
+ "open_count": 8,
+ "fees_paid": 2.1,
  "fee_rate": 0.03,
  "lag": {
-  "n": 75,
-  "n24": 7,
-  "avg_s": 3.8,
-  "avg_slip_pct": 0.028,
+  "n": 76,
+  "n24": 8,
+  "avg_s": 3.6,
+  "avg_slip_pct": 0.0247,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "104354766235014413556450504744840326540657851486089721436856141808878413679918",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Netflix, Inc. (NFLX) hit (HIGH) $85 Week of July 13 2026?",
+   "their_price": 0.896,
+   "my_price": 0.897,
+   "slippage_pct": 0.0011,
+   "lag_s": 2.3,
+   "shares": 1.11,
+   "cost": 1.0,
+   "fee": 0.0,
+   "opened": 1784232921,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "70071514755027914725023328573024847971805733187006977673637026985321376228783",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2626,5 +2645,5 @@
   }
  ],
  "missed_pnl": 1040.87,
- "updated": 1784223283
+ "updated": 1784232925
 }
