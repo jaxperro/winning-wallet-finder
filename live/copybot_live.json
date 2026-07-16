@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 169,
-  "n24": 15,
-  "avg_s": 3.6,
-  "avg_slip_pct": -0.0109,
+  "n24": 14,
+  "avg_s": 3.4,
+  "avg_slip_pct": -0.0098,
   "window_h": 24
  },
  "wallets": [
@@ -3017,5 +3017,5 @@
   }
  ],
  "missed_pnl": 89608.98,
- "updated": 1784206124
+ "updated": 1784206323
 }
