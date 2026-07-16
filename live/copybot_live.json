@@ -2063,6 +2063,21 @@
  ],
  "missed": [
   {
+   "ts": 1784206122,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "6542858065381328138604971534407515790260577773140917193780294419054693674045",
+   "cond": "0x6266a812b672fb0424235909307279a2d4f52ad291b00e4a85767c146d10a2c0",
+   "title": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
+   "outcome": "Team Yandex",
+   "price": 0.56,
+   "stake": 103.89,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784203157,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "10142042254085112476456489233335925486747213286746834444247538330158153223906",
@@ -2999,25 +3014,8 @@
    "settled": 1783742174,
    "name": "0x41558102",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1783724102,
-   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
-   "token": "30171303100765004612243778406121391796571838604034412150376032542494004186310",
-   "cond": "0x432fe43ea6abc8f183fb35a7547be2491d2a36b900c416262188f44584f375bb",
-   "title": "Bitcoin Up or Down - July 10, 6:50PM-6:55PM ET",
-   "outcome": "Up",
-   "price": 0.99,
-   "stake": 95.73,
-   "reason": "price moved 0.63\u21920.99",
-   "status": "sold",
-   "pnl": -35.19,
-   "settled": 1783724442,
-   "name": "0xd96750bf",
-   "exit_checked": true,
-   "exit_price": 0.6333
   }
  ],
  "missed_pnl": 89608.98,
- "updated": 1784203554
+ "updated": 1784206124
 }
