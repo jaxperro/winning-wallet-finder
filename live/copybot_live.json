@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 104.69,
+ "stake": 104.67,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2619.54,
- "cash": 1863.23,
- "deployed": 753.93,
+ "cash": 1758.19,
+ "deployed": 858.61,
  "reserve": 0.0,
- "realized": 1617.13,
+ "realized": 1616.78,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 16,
- "fees_paid": 258.3,
+ "open_count": 17,
+ "fees_paid": 258.66,
  "fee_rate": 0.03,
  "lag": {
-  "n": 172,
-  "n24": 7,
-  "avg_s": 2.5,
-  "avg_slip_pct": 0.0135,
+  "n": 174,
+  "n24": 9,
+  "avg_s": 2.2,
+  "avg_slip_pct": 0.0085,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 227.39
  },
  "bets": [
+  {
+   "token": "104354766235014413556450504744840326540657851486089721436856141808878413679918",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Netflix, Inc. (NFLX) hit (HIGH) $85 Week of July 13 2026?",
+   "their_price": 0.896,
+   "my_price": 0.8875,
+   "slippage_pct": -0.0123,
+   "lag_s": 0.9,
+   "shares": 117.95,
+   "cost": 104.68,
+   "fee": 0.35,
+   "opened": 1784232921,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "31227781598316880280877760465683086508096359894740658336497080463300979927822",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2046,26 +2065,6 @@
    "exit_price": 1.0,
    "pnl": 9.6,
    "settled": 1783743543
-  },
-  {
-   "token": "94261332494094465883021120894226351499139897211148377866980779595546383514545",
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "name": "LSB1",
-   "outcome": "Yes",
-   "title": "Will Botafogo FC win on 2026-07-10?",
-   "their_price": 0.8163,
-   "my_price": 0.77,
-   "slippage_pct": -0.0567,
-   "shares": 126.92,
-   "cost": 97.73,
-   "fee": 0.67,
-   "opened": 1783727072,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -98.31,
-   "settled": 1783742299,
-   "sold_shares": 0.64,
-   "sold_proceeds": 0.1
   }
  ],
  "missed": [
@@ -3025,5 +3024,5 @@
   }
  ],
  "missed_pnl": 89588.9,
- "updated": 1784223327
+ "updated": 1784232928
 }
