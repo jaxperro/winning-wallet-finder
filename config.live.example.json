@@ -72,6 +72,11 @@
       "name": "BikesAreTheBikes",
       "class": "volume",
       "floor": 158.0
+    },
+    {
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "name": "AIcAIc",
+      "class": "volume"
     }
   ],
   "feed_path": "live/copybot_live_real.json",

@@ -7,6 +7,28 @@ the private key, never raise/loosen caps, never rotate the Discord webhook
 DISARM the live bot (`flyctl secrets unset LIVE_CONFIRM`) rather than push
 through it.
 
+## Bench review 2026-07-16 (follow set rev 4: AIcAIc re-added, no bench promotions)
+Forward table = portfolio.json resolved rows (model $-weighted), two windows:
+since 07-11 and since the 07-13 21:30Z swap. Verdict:
+- **NO promotion for Vahan88 (−21.6% / −30.5%) or EdwardIN (−11.1% / −8.9%)**
+  — both negative in both windows (EdwardIN ate two ~$1k Norway–England
+  halftime props). Both stay benched in backtest.json.
+- **AIcAIc RE-ADDED (6th wallet, auto p80 floor)**: +25.6% since 07-11 and
+  +21.9% across 11 bets since being dropped — spread across many LoL markets,
+  not one hit. The Esports World Cup (its exact niche) runs through August;
+  the 07-13 drop was made mid-bad-stretch, right as its season started.
+  WHIPSAW RISK acknowledged: the drop and the re-add are both ~2-week-noise
+  decisions; the tiebreaker is the seasonal catalyst + the informed-niche
+  prior (June replay). If AIcAIc is negative again next Friday, it goes for
+  good and the slot rule tightens.
+- **Kruto2027 stays** (floor 80 pinned): inert (3 model bets, −12.8%) but an
+  idle wallet costs nothing and its 30d +$3.5k says it's worth the seat.
+- **BikesAreTheBikes stays**: −3.7%/−6.1% on n≤12 — too early to cut.
+- **LSB1 note**: +21.4% post-swap (16 bets) but −7.5% on the longer window
+  and −$438 all-time paper — NOT re-added; re-check next Friday.
+- Guard/floor counterfactuals: re-validated 07-14 by the missed-bets audit
+  (guard skips net-negative would-be on both books) — unchanged.
+
 ## Shipped since rev 12 (2026-07-15)
 - **PAPER FAK PARITY**: PaperExecutor BUYs now model live FAK reality — if
   the depth gate's book snapshot (threaded through meta["book"], no second

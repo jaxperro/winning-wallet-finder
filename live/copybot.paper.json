@@ -33,6 +33,11 @@
       "name": "BikesAreTheBikes",
       "class": "volume",
       "floor": 227.2
+    },
+    {
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "name": "AIcAIc",
+      "class": "volume"
     }
   ],
   "follow": {
