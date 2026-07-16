@@ -1,4 +1,4 @@
-# Session handoff — 2026-07-14 (rev 12: chain-seed — fills decoded from the tx receipt)
+# Session handoff — 2026-07-15 (rev 13: paper FAK parity; rev 12: chain-seed)
 
 ## Operating boundary set by the user (2026-07-13, "away for a while")
 **Full autonomy on BOTH bots**; real-money bot **stays ARMED**. Never touch
@@ -6,6 +6,27 @@ the private key, never raise/loosen caps, never rotate the Discord webhook
 (needs their login — STILL OPEN). If something looks genuinely dangerous,
 DISARM the live bot (`flyctl secrets unset LIVE_CONFIRM`) rather than push
 through it.
+
+## Shipped since rev 12 (2026-07-15)
+- **PAPER FAK PARITY**: PaperExecutor BUYs now model live FAK reality — if
+  the depth gate's book snapshot (threaded through meta["book"], no second
+  fetch) has no ask ≤ quote×1.05 (live.max_slippage_pct default), the paper
+  "fill" is a rejection and the engine records the same "order rejected: no
+  orders found to match" miss live logs. Rationale: post-chain-seed this is
+  live's #1 miss class (10/33) and paper pretended to fill them (it "filled"
+  the Claude Opus bet live's FAK couldn't) — biasing the live-vs-paper
+  per-signal ratio (the top-up number) OPTIMISTIC. Chain-seed verdict after
+  41h: detection misses 23→3 live / 35→2 paper; the residual tail is
+  no-trigger-at-all. Resting-limit fix for live FAK no-match evaluated and
+  REJECTED for now: recent 10-row sample is −$0.97 would-be net + a resting
+  bid is adversely selected (fills when price falls through it, not when
+  we're right). Revisit only with paper-parity data showing real cost.
+  Fail-open on dead book fetch; SELLs stay optimistic (exits need the
+  retry/pending machinery to model honestly — out of scope). Live book
+  unaffected (meta ignored). Tests: tests/test_paper_fak.py (8 paths);
+  LedgerPaperExecutor no longer appends a fill row for a rejection.
+  Deploy: paper app restart only. Expect paper misses like "order rejected:
+  no orders found … (paper model: best ask 0.900 > cap 0.840)".
 
 ## Shipped since rev 11 (2026-07-14)
 - **CHAIN SEED (T0b)**: the missed-bets review found the one remaining

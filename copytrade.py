@@ -223,10 +223,36 @@ def event_key(t):
 # ── execution ────────────────────────────────────────────────────────────────
 
 class PaperExecutor:
-    """Simulates fills at the current best price. Places nothing."""
+    """Simulates fills at the current best price. Places nothing.
+
+    BUYs model live FAK reality (2026-07-15): live sends fill-and-kill with a
+    protected cap of quote × (1 + max_slippage_pct); on a thin book with no
+    ask inside that band the order dies ('no orders found to match') — the #1
+    live miss class once detection got fast (the copy arrives in the crater
+    the sharp just swept, before makers requote). Paper used to 'fill' those,
+    which biased the live-vs-paper per-signal ratio — the bankroll top-up
+    number — optimistic. Now the same book snapshot the depth gate fetched
+    (meta['book'], else fetched here) decides: no ask ≤ cap -> rejected, and
+    the engine records the same 'order rejected' miss live would. A failed
+    book fetch fails OPEN (fills, today's behavior) — a dead data source
+    shouldn't fabricate misses. SELLs stay optimistic-fill: exits are
+    proportional mirrors of a position we hold, and modeling exit failure
+    honestly needs the retry/pending machinery, not a one-line reject."""
     live = False
+    max_slippage_pct = 0.05        # mirrors live.max_slippage_pct's default
 
     def buy(self, token_id, shares, price, meta):
+        bk = (meta or {}).get("book")
+        if bk is None:
+            bk = book_depth(token_id)
+        if bk is not None:
+            ba, cap = bk.get("ba"), price * (1 + self.max_slippage_pct)
+            if ba is None or ba > cap:
+                gone = ("no asks" if ba is None
+                        else f"best ask {ba:.3f} > cap {cap:.3f}")
+                return {"ok": False, "filled_shares": 0.0, "price": price,
+                        "resp": "no orders found to match with FAK order "
+                                f"(paper model: {gone})", "paper": True}
         return {"ok": True, "filled_shares": shares, "price": price, "paper": True}
 
     def sell(self, token_id, shares, price, meta):
@@ -540,6 +566,7 @@ class CopyTrader:
         # to 10% of depth, skip dust/unreliable books. A failed book fetch
         # declines to bind — guard + protected prices still bound the copy.
         dg = self.cfg.get("depth_gate")
+        bk = None                       # reused by the paper FAK model below
         if dg:
             bk = book_depth(token)
             if bk and bk.get("ask5c") is not None:
@@ -576,7 +603,7 @@ class CopyTrader:
                      "on this token)")
             return
         shares = allowed / price
-        res = self.ex.buy(token, shares, price, {"title": title})
+        res = self.ex.buy(token, shares, price, {"title": title, "book": bk})
         if not res["ok"]:
             # in-play books ACCEPT orders with a delayed hold — the executor
             # reports those as pending (order id + pre-order balance) instead

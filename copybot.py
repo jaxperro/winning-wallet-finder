@@ -336,8 +336,9 @@ class LedgerPaperExecutor(PaperExecutor):
 
     def buy(self, token_id, shares, price, meta):
         r = super().buy(token_id, shares, price, meta)
-        self.fills.append({"side": "BUY", "token": token_id,
-                           "shares": r["filled_shares"], "price": r["price"]})
+        if r["ok"]:                  # a paper FAK no-match is not a fill
+            self.fills.append({"side": "BUY", "token": token_id,
+                               "shares": r["filled_shares"], "price": r["price"]})
         return r
 
     def sell(self, token_id, shares, price, meta):
