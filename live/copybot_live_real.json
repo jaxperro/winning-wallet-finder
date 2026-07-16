@@ -5,13 +5,13 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 6.72,
- "deployed": 10.12,
+ "cash": 6.73,
+ "deployed": 10.11,
  "reserve": 0.0,
- "realized": -5.37,
+ "realized": -5.36,
  "adjustments": -0.08,
  "ledger_drift": 0.01,
- "open_count": 9,
+ "open_count": 8,
  "fees_paid": 2.08,
  "fee_rate": 0.03,
  "lag": {
@@ -43,6 +43,27 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "6542858065381328138604971534407515790260577773140917193780294419054693674045",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Yandex",
+   "title": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
+   "their_price": 0.4852,
+   "my_price": 0.53,
+   "slippage_pct": 0.0924,
+   "lag_s": 4.4,
+   "shares": 1.96,
+   "cost": 1.04,
+   "fee": 0.01,
+   "opened": 1784206536,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": -0.32,
+   "settled": 1784216641,
+   "sold_shares": 1.95,
+   "sold_proceeds": 0.73
+  },
   {
    "token": "94846649734011849767196765067022411183171400090337931779295250573488021840336",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -105,27 +126,6 @@
    "settled": 1784206643,
    "sold_shares": 1.28,
    "sold_proceeds": 1.17
-  },
-  {
-   "token": "6542858065381328138604971534407515790260577773140917193780294419054693674045",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Yandex",
-   "title": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
-   "their_price": 0.4852,
-   "my_price": 0.53,
-   "slippage_pct": 0.0924,
-   "lag_s": 4.4,
-   "shares": 1.96,
-   "cost": 1.04,
-   "fee": 0.01,
-   "opened": 1784206536,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 1.95,
-   "sold_proceeds": 0.73
   },
   {
    "token": "110149901661791632318870033509195606722453896981581944225999632147320785007115",
@@ -2605,5 +2605,5 @@
   }
  ],
  "missed_pnl": 1040.87,
- "updated": 1784215939
+ "updated": 1784216642
 }
