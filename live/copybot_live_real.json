@@ -1615,6 +1615,21 @@
  ],
  "missed": [
   {
+   "ts": 1784207018,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "6542858065381328138604971534407515790260577773140917193780294419054693674045",
+   "cond": "0x6266a812b672fb0424235909307279a2d4f52ad291b00e4a85767c146d10a2c0",
+   "title": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
+   "outcome": "Team Yandex",
+   "price": 0.66,
+   "stake": 1.0,
+   "reason": "price moved 0.60\u21920.66",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784206122,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "6542858065381328138604971534407515790260577773140917193780294419054693674045",
@@ -2544,24 +2559,8 @@
    "settled": 1783899291,
    "name": "0x41558102",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1783884565,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "112964891228922007291616429059731268652545552701771186142443664268316983972488",
-   "cond": "0x12ffeb9fc7535c924fc64cdbf0be333db1950bd3a78aba459177b80b438bec03",
-   "title": "Will Cuiab\u00e1 EC win on 2026-07-12?",
-   "outcome": "Yes",
-   "price": 0.61,
-   "stake": 1.0,
-   "reason": "price moved 0.50\u21920.61",
-   "status": "lost",
-   "pnl": -1.01,
-   "settled": 1783898972,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 1039.81,
- "updated": 1784206971
+ "updated": 1784207021
 }
