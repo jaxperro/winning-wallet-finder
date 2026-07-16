@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 103.89,
+ "stake": 104.32,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2619.54,
- "cash": 1779.46,
+ "cash": 1790.08,
  "deployed": 817.81,
  "reserve": 0.0,
- "realized": 1597.24,
+ "realized": 1607.86,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
+ "ledger_drift": -0.02,
  "open_count": 17,
- "fees_paid": 256.14,
+ "fees_paid": 258.1,
  "fee_rate": 0.03,
  "lag": {
-  "n": 170,
-  "n24": 15,
-  "avg_s": 3.3,
-  "avg_slip_pct": -0.0071,
+  "n": 171,
+  "n24": 16,
+  "avg_s": 3.8,
+  "avg_slip_pct": -0.0029,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,27 @@
   "BikesAreTheBikes": 227.39
  },
  "bets": [
+  {
+   "token": "6542858065381328138604971534407515790260577773140917193780294419054693674045",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Yandex",
+   "title": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
+   "their_price": 0.6221,
+   "my_price": 0.66,
+   "slippage_pct": 0.0609,
+   "lag_s": 11.4,
+   "shares": 157.41,
+   "cost": 103.89,
+   "fee": 1.06,
+   "opened": 1784207018,
+   "status": "closed",
+   "exit_price": 0.7342,
+   "pnl": 10.63,
+   "settled": 1784207069,
+   "sold_shares": 157.41,
+   "sold_proceeds": 115.58
+  },
   {
    "token": "6542858065381328138604971534407515790260577773140917193780294419054693674045",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2044,26 +2065,6 @@
    "settled": 1783732219,
    "sold_shares": 168.85,
    "sold_proceeds": 138.21
-  },
-  {
-   "token": "76668431089191294884722284769810081002688692300759117208537364410807093425248",
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "name": "1kto1m",
-   "outcome": "Up",
-   "title": "Bitcoin Up or Down - July 10, 7PM ET",
-   "their_price": 0.6236,
-   "my_price": 0.64,
-   "slippage_pct": 0.0264,
-   "shares": 152.66,
-   "cost": 97.7,
-   "fee": 1.06,
-   "opened": 1783727677,
-   "status": "closed",
-   "exit_price": 0.7635,
-   "pnl": 17.81,
-   "settled": 1783727871,
-   "sold_shares": 152.66,
-   "sold_proceeds": 116.56
   }
  ],
  "missed": [
@@ -3023,5 +3024,5 @@
   }
  ],
  "missed_pnl": 89586.32,
- "updated": 1784206971
+ "updated": 1784207069
 }
