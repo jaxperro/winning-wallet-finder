@@ -1552,6 +1552,21 @@
  ],
  "missed": [
   {
+   "ts": 1784175026,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
+   "cond": "0xc13c12dd0b8c4a29dedc8f12b2976628fa57e4a8b27bbcc522b82008bb549e02",
+   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $11.2B?",
+   "outcome": "No",
+   "price": 0.7425,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784128795,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "36572361863292743525172722296256449344593421343195350786366455281513675169221",
@@ -2481,24 +2496,8 @@
    "settled": 1783867751,
    "name": "gkmgkldfmg",
    "exit_price": 0.4551
-  },
-  {
-   "ts": 1783866853,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "99894914207898514284631305777217402140704104471002518113888183892335214453642",
-   "cond": "0x7596ba50d124202d21f9b3695ad1e5611fd2f5db2cc7696d40cf2c198e806f73",
-   "title": "Dota 2: OG vs Virtus.pro - Game 2 Winner",
-   "outcome": "OG",
-   "price": 0.33,
-   "stake": 1.03,
-   "reason": "in-play hold expired unfilled (26s)",
-   "status": "sold",
-   "pnl": -0.03,
-   "settled": 1783867117,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.3349
   }
  ],
  "missed_pnl": 1039.84,
- "updated": 1784174397
+ "updated": 1784175029
 }

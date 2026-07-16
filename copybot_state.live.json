@@ -13976,10 +13976,25 @@
       "pnl": null,
       "settled": null,
       "name": "0xbadaf319"
+    },
+    {
+      "ts": 1784175026,
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
+      "cond": "0xc13c12dd0b8c4a29dedc8f12b2976628fa57e4a8b27bbcc522b82008bb549e02",
+      "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $11.2B?",
+      "outcome": "No",
+      "price": 0.7425,
+      "stake": 1.0,
+      "reason": "not copied in the detection window (reconciled)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "0xbadaf319"
     }
   ],
-  "feed_sig": "e5e3ff5545177e42dba2ecefa43bacbc",
-  "feed_pushed_at": 1784174329.8967528,
+  "feed_sig": "1b8185505ac428e7777e452d6e3c8e7f",
+  "feed_pushed_at": 1784174962.0786335,
   "adjustments": [
     {
       "ts": 1783906689,
@@ -14008,7 +14023,7 @@
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784159531,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784173589,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784174963,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784140289,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1783843568,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784154233,
