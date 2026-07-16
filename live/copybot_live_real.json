@@ -1700,6 +1700,21 @@
  ],
  "missed": [
   {
+   "ts": 1784244954,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "29198556434804110591228001401963930700463402583244929766816225903118874844031",
+   "cond": "0x9b78e5101ab1282de40e522ae764a43a685d199fb0fab699af8093b5f0332b7b",
+   "title": "Will NVIDIA (NVDA) hit (HIGH) $220 Week of July 13 2026?",
+   "outcome": "No",
+   "price": 0.95,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784236754,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "96493470136581654430268359631814450290137534659017161119334974730318350734648",
@@ -2629,24 +2644,8 @@
    "settled": 1783916967,
    "name": "0xbadaf319",
    "exit_price": 0.9951
-  },
-  {
-   "ts": 1783908977,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "108947296508063592085718442826411169359443176266922838741305348631169975990701",
-   "cond": "0x88e5fd695215f57adc94fb184ea54e639bd6fa6a71e49666d7529adb442a51ae",
-   "title": "Dota 2: Ilbirs eSports vs Nemiga Gaming - Game 2 Winner",
-   "outcome": "Ilbirs eSports",
-   "price": 0.4724,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "lost",
-   "pnl": -1.02,
-   "settled": 1783909043,
-   "name": "gkmgkldfmg",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 1040.87,
- "updated": 1784237020
+ "updated": 1784244956
 }
