@@ -2062,6 +2062,21 @@
  ],
  "missed": [
   {
+   "ts": 1784203157,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "10142042254085112476456489233335925486747213286746834444247538330158153223906",
+   "cond": "0x5fee4f88a5795fa8a370c428b53650c5422d243d43865b9e1762c63b8e461256",
+   "title": "Dota 2: Team Yandex vs Team Spirit - Game 1 Winner",
+   "outcome": "Team Yandex",
+   "price": 0.5343,
+   "stake": 103.92,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784167406,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "7384451899802911723249599486996406665182105515403617543497677786694027499060",
@@ -2999,24 +3014,8 @@
    "name": "0xd96750bf",
    "exit_checked": true,
    "exit_price": 0.6333
-  },
-  {
-   "ts": 1783709296,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "64116761477742027701109652941632411292105231683011506366532020565363935650673",
-   "cond": "0x9d4a016f4a18ff8f3b28a0c0adf2a03254033f6d022c88e13495738e2178c3d9",
-   "title": "Hans Vanaken: 3+ shots",
-   "outcome": "No",
-   "price": 0.7844,
-   "stake": 83.09,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "won",
-   "pnl": 22.3,
-   "settled": 1783719420,
-   "name": "0xbadaf319",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 89595.48,
- "updated": 1784200988
+ "updated": 1784203159
 }
