@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 104.78,
+ "stake": 103.89,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2619.54,
- "cash": 1697.84,
- "deployed": 921.71,
+ "cash": 1779.46,
+ "deployed": 817.81,
  "reserve": 0.0,
- "realized": 1619.51,
+ "realized": 1597.24,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 18,
- "fees_paid": 254.64,
+ "open_count": 17,
+ "fees_paid": 256.14,
  "fee_rate": 0.03,
  "lag": {
   "n": 170,
@@ -44,6 +44,27 @@
  },
  "bets": [
   {
+   "token": "6542858065381328138604971534407515790260577773140917193780294419054693674045",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Yandex",
+   "title": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
+   "their_price": 0.4852,
+   "my_price": 0.5,
+   "slippage_pct": 0.0306,
+   "lag_s": 1.3,
+   "shares": 207.79,
+   "cost": 103.89,
+   "fee": 1.56,
+   "opened": 1784206536,
+   "status": "closed",
+   "exit_price": 0.3928,
+   "pnl": -23.83,
+   "settled": 1784206834,
+   "sold_shares": 207.79,
+   "sold_proceeds": 81.62
+  },
+  {
    "token": "52277341117061676402936201599481724705704245418989224868304419115133008528281",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "name": "1kto1m",
@@ -63,25 +84,6 @@
    "settled": 1784206643,
    "sold_shares": 119.37,
    "sold_proceeds": 114.46
-  },
-  {
-   "token": "6542858065381328138604971534407515790260577773140917193780294419054693674045",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Yandex",
-   "title": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
-   "their_price": 0.4852,
-   "my_price": 0.5,
-   "slippage_pct": 0.0306,
-   "lag_s": 1.3,
-   "shares": 207.79,
-   "cost": 103.89,
-   "fee": 1.56,
-   "opened": 1784206536,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "110149901661791632318870033509195606722453896981581944225999632147320785007115",
@@ -3020,5 +3022,5 @@
   }
  ],
  "missed_pnl": 89608.98,
- "updated": 1784206643
+ "updated": 1784206834
 }
