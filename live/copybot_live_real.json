@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 6.0,
- "deployed": 10.38,
+ "cash": 4.96,
+ "deployed": 11.41,
  "reserve": 0.0,
- "realized": -5.82,
+ "realized": -5.83,
  "adjustments": -0.08,
  "ledger_drift": 0.0,
- "open_count": 9,
- "fees_paid": 2.07,
+ "open_count": 10,
+ "fees_paid": 2.08,
  "fee_rate": 0.03,
  "lag": {
-  "n": 72,
-  "n24": 10,
-  "avg_s": 8.4,
-  "avg_slip_pct": 0.048,
+  "n": 73,
+  "n24": 11,
+  "avg_s": 8.0,
+  "avg_slip_pct": 0.0464,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "94846649734011849767196765067022411183171400090337931779295250573488021840336",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Dplus KIA",
+   "title": "LoL: G2 Esports vs Dplus KIA - Game 2 Winner",
+   "their_price": 0.66,
+   "my_price": 0.68,
+   "slippage_pct": 0.0303,
+   "lag_s": 3.7,
+   "shares": 1.52,
+   "cost": 1.03,
+   "fee": 0.01,
+   "opened": 1784212635,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "52277341117061676402936201599481724705704245418989224868304419115133008528281",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -2563,5 +2582,5 @@
   }
  ],
  "missed_pnl": 1040.87,
- "updated": 1784211094
+ "updated": 1784212641
 }
