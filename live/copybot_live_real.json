@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 6.0,
- "deployed": 10.5,
+ "cash": 4.99,
+ "deployed": 11.5,
  "reserve": 0.0,
- "realized": -5.7,
+ "realized": -5.71,
  "adjustments": -0.08,
  "ledger_drift": 0.0,
- "open_count": 8,
- "fees_paid": 2.0,
+ "open_count": 9,
+ "fees_paid": 2.01,
  "fee_rate": 0.03,
  "lag": {
-  "n": 69,
-  "n24": 24,
-  "avg_s": 14.0,
-  "avg_slip_pct": 0.0294,
+  "n": 70,
+  "n24": 25,
+  "avg_s": 13.7,
+  "avg_slip_pct": 0.0291,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "110149901661791632318870033509195606722453896981581944225999632147320785007115",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Up",
+   "title": "S&P 500 (SPX) Up or Down on July 16?",
+   "their_price": 0.45,
+   "my_price": 0.46,
+   "slippage_pct": 0.0222,
+   "lag_s": 5.7,
+   "shares": 2.17,
+   "cost": 1.0,
+   "fee": 0.02,
+   "opened": 1784188027,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "35358889366059131445607416132477521541386270328042995107702816540034073998102",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2499,5 +2518,5 @@
   }
  ],
  "missed_pnl": 1039.84,
- "updated": 1784186873
+ "updated": 1784188032
 }
