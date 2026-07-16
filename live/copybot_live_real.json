@@ -1592,6 +1592,21 @@
  ],
  "missed": [
   {
+   "ts": 1784206122,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "6542858065381328138604971534407515790260577773140917193780294419054693674045",
+   "cond": "0x6266a812b672fb0424235909307279a2d4f52ad291b00e4a85767c146d10a2c0",
+   "title": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
+   "outcome": "Team Yandex",
+   "price": 0.56,
+   "stake": 1.0,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784203662,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "10142042254085112476456489233335925486747213286746834444247538330158153223906",
@@ -2521,23 +2536,8 @@
    "settled": 1783898972,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783889397,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "18802393565291712436899729429089924858104497792982518694284454990866908025798",
-   "cond": "0x9ea0030337e6416cfbd5e9a52ffb4c80575953b45a52bc513f2d7ecbe299d5f2",
-   "title": "Will the average monthly Ethereum gas price hit 25 Gwei before 2027?",
-   "outcome": "No",
-   "price": 0.009,
-   "stake": 1.0,
-   "reason": "price 0.009 outside [0.01,0.95]",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": 1040.03,
- "updated": 1784204440
+ "updated": 1784206124
 }
