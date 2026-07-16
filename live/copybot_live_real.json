@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 5.15,
- "deployed": 11.37,
+ "cash": 4.1,
+ "deployed": 12.41,
  "reserve": 0.0,
- "realized": -5.67,
+ "realized": -5.69,
  "adjustments": -0.08,
  "ledger_drift": 0.0,
- "open_count": 9,
- "fees_paid": 2.04,
+ "open_count": 10,
+ "fees_paid": 2.05,
  "fee_rate": 0.03,
  "lag": {
-  "n": 71,
-  "n24": 11,
-  "avg_s": 8.2,
-  "avg_slip_pct": 0.0395,
+  "n": 72,
+  "n24": 12,
+  "avg_s": 7.9,
+  "avg_slip_pct": 0.0439,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "6542858065381328138604971534407515790260577773140917193780294419054693674045",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Yandex",
+   "title": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
+   "their_price": 0.4852,
+   "my_price": 0.53,
+   "slippage_pct": 0.0924,
+   "lag_s": 4.4,
+   "shares": 1.96,
+   "cost": 1.04,
+   "fee": 0.01,
+   "opened": 1784206536,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "52277341117061676402936201599481724705704245418989224868304419115133008528281",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -2539,5 +2558,5 @@
   }
  ],
  "missed_pnl": 1040.03,
- "updated": 1784206324
+ "updated": 1784206542
 }
