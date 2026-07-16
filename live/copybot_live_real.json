@@ -1697,6 +1697,21 @@
  ],
  "missed": [
   {
+   "ts": 1784236754,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "96493470136581654430268359631814450290137534659017161119334974730318350734648",
+   "cond": "0x95a7c8f39ccda84bf59b54c474f2a006cbc4167737630365f416670466b37ab9",
+   "title": "Will Nigel Farage win the Clacton by-election?",
+   "outcome": "Yes",
+   "price": 0.905,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784207361,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "98849429077363983479976319570357712213755247481827901912930434552765906797396",
@@ -2627,23 +2642,8 @@
    "settled": 1783909043,
    "name": "gkmgkldfmg",
    "exit_checked": true
-  },
-  {
-   "ts": 1783908976,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
-   "cond": "0xa164172b7cee74420cfce554c3a265b2553cb80e48b36e286e67f302b6574712",
-   "title": "Ethereal FDV above $500M one day after launch?",
-   "outcome": "No",
-   "price": 0.8163,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": 1040.87,
- "updated": 1784232925
+ "updated": 1784236756
 }
