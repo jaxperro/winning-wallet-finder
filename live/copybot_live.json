@@ -2069,6 +2069,21 @@
  ],
  "missed": [
   {
+   "ts": 1784207355,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "98849429077363983479976319570357712213755247481827901912930434552765906797396",
+   "cond": "0x6266a812b672fb0424235909307279a2d4f52ad291b00e4a85767c146d10a2c0",
+   "title": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
+   "outcome": "Team Spirit",
+   "price": 0.47,
+   "stake": 11.58,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784206122,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "6542858065381328138604971534407515790260577773140917193780294419054693674045",
@@ -3005,24 +3020,8 @@
    "settled": 1783743419,
    "name": "0x41558102",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1783730663,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "45067024850792209345478857935402657293140220516974974516913686785034525226149",
-   "cond": "0x1a56a14c04e06ec08935c53cd4386ab2a2b617fd70518957183e3c9a28054dbc",
-   "title": "SC Recife vs. Botafogo FC: O/U 4.5",
-   "outcome": "Over",
-   "price": 0.588,
-   "stake": 98.4,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 67.73,
-   "settled": 1783742174,
-   "name": "0x41558102",
-   "exit_price": 1.0
   }
  ],
  "missed_pnl": 89586.32,
- "updated": 1784207069
+ "updated": 1784207358
 }
