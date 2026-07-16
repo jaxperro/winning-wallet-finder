@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 25.94,
- "cash": 6.73,
- "deployed": 10.11,
+ "cash": 5.68,
+ "deployed": 11.15,
  "reserve": 0.0,
- "realized": -5.36,
+ "realized": -5.37,
  "adjustments": -0.08,
  "ledger_drift": 0.01,
- "open_count": 8,
- "fees_paid": 2.08,
+ "open_count": 9,
+ "fees_paid": 2.09,
  "fee_rate": 0.03,
  "lag": {
-  "n": 74,
-  "n24": 8,
-  "avg_s": 4.3,
-  "avg_slip_pct": 0.0299,
+  "n": 75,
+  "n24": 9,
+  "avg_s": 4.4,
+  "avg_slip_pct": 0.0311,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 158.0
  },
  "bets": [
+  {
+   "token": "70071514755027914725023328573024847971805733187006977673637026985321376228783",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Kaufland Hangry Knights",
+   "title": "LoL: VfB eSports vs Kaufland Hangry Knights (BO1) - Prime League 1st Division Regular Seas",
+   "their_price": 0.74,
+   "my_price": 0.7699,
+   "slippage_pct": 0.0404,
+   "lag_s": 4.5,
+   "shares": 1.35,
+   "cost": 1.04,
+   "fee": 0.01,
+   "opened": 1784221560,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "6542858065381328138604971534407515790260577773140917193780294419054693674045",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2605,5 +2624,5 @@
   }
  ],
  "missed_pnl": 1040.87,
- "updated": 1784220395
+ "updated": 1784221565
 }
