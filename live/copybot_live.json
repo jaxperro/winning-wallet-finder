@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 103.6,
+ "stake": 103.55,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2590.07,
- "cash": 1863.32,
- "deployed": 726.75,
+ "cash": 1758.41,
+ "deployed": 830.35,
  "reserve": 0.0,
- "realized": 1590.04,
+ "realized": 1588.73,
  "adjustments": 0.03,
- "ledger_drift": 0.0,
- "open_count": 16,
- "fees_paid": 245.06,
+ "ledger_drift": -0.0,
+ "open_count": 17,
+ "fees_paid": 246.37,
  "fee_rate": 0.03,
  "lag": {
-  "n": 165,
-  "n24": 38,
-  "avg_s": 19.2,
-  "avg_slip_pct": -0.0104,
+  "n": 166,
+  "n24": 39,
+  "avg_s": 18.7,
+  "avg_slip_pct": -0.0097,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 120.82
  },
  "bets": [
+  {
+   "token": "37906844316173351653431141004376509492088028380479597728611617251805844178802",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Elon Musk post 140-159 tweets from July 10 to July 17, 2026?",
+   "their_price": 0.57,
+   "my_price": 0.58,
+   "slippage_pct": 0.0175,
+   "lag_s": 0.5,
+   "shares": 178.63,
+   "cost": 103.6,
+   "fee": 1.31,
+   "opened": 1784165984,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "75636274443607445614938470591337628868615181893893587977168160999705149850480",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2037,26 +2056,6 @@
    "settled": 1783710317,
    "sold_shares": 209.29,
    "sold_proceeds": 111.46
-  },
-  {
-   "token": "41527735652152287965662705198504489542457379550490679965396371339149288130273",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Yandex",
-   "title": "Dota 2: LGD Gaming vs Team Yandex - Game 1 Winner",
-   "their_price": 0.68,
-   "my_price": 0.67,
-   "slippage_pct": -0.0147,
-   "shares": 130.29,
-   "cost": 87.3,
-   "fee": 0.86,
-   "opened": 1783704926,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": 42.13,
-   "settled": 1783707423,
-   "sold_shares": 130.29,
-   "sold_proceeds": 130.29
   }
  ],
  "missed": [
@@ -3018,5 +3017,5 @@
   }
  ],
  "missed_pnl": 89595.48,
- "updated": 1784157300
+ "updated": 1784165987
 }
