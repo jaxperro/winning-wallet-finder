@@ -1533,6 +1533,21 @@
  ],
  "missed": [
   {
+   "ts": 1784167406,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "7384451899802911723249599486996406665182105515403617543497677786694027499060",
+   "cond": "0x99527e3fb165b1b7ef5ccc75255c39a46e69a3006cf641f010ca2e23f4e9cb1b",
+   "title": "Will South Korea ETF (EWY) hit (HIGH) $188 Week of July 13 2026?",
+   "outcome": "No",
+   "price": 0.35,
+   "stake": 1.0,
+   "reason": "book unreliable (spread 0.64 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784106348,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "48230344805568764262522696442077527559175899701365768465113438102738863593763",
@@ -2462,24 +2477,8 @@
    "settled": 1783867117,
    "name": "gkmgkldfmg",
    "exit_price": 0.3349
-  },
-  {
-   "ts": 1783856423,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
-   "cond": "0xba7e1244bc3dabb6c38a128dcf7522104172e8b3a354aa711643c11064e56bf1",
-   "title": "Will Daejeon Hana Citizen FC win on 2026-07-12?",
-   "outcome": "Yes",
-   "price": 0.51,
-   "stake": 1.0,
-   "reason": "in-play hold expired unfilled (60s)",
-   "status": "lost",
-   "pnl": -1.01,
-   "settled": 1783867047,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 1039.74,
- "updated": 1784157354
+ "updated": 1784167409
 }
