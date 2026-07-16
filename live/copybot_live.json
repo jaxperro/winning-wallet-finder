@@ -26,21 +26,24 @@
   "0xbadaf319",
   "gkmgkldfmg",
   "1kto1m",
-  "BikesAreTheBikes"
+  "BikesAreTheBikes",
+  "AIcAIc"
  ],
  "classes": {
   "Kruto2027": "volume",
   "0xbadaf319": "volume",
   "gkmgkldfmg": "volume",
   "1kto1m": "volume",
-  "BikesAreTheBikes": "volume"
+  "BikesAreTheBikes": "volume",
+  "AIcAIc": "volume"
  },
  "floors": {
   "Kruto2027": 80.0,
-  "0xbadaf319": 44.12,
+  "0xbadaf319": 41.21,
   "gkmgkldfmg": 470.51,
-  "1kto1m": 328.31,
-  "BikesAreTheBikes": 227.39
+  "1kto1m": 328.77,
+  "BikesAreTheBikes": 227.2,
+  "AIcAIc": 542.0
  },
  "bets": [
   {
@@ -2970,7 +2973,7 @@
    "status": "sold",
    "pnl": 38.55,
    "settled": 1783771497,
-   "name": "0x921433c9",
+   "name": "AIcAIc",
    "exit_price": 0.95
   },
   {
@@ -3023,5 +3026,5 @@
   }
  ],
  "missed_pnl": 89588.9,
- "updated": 1784236756
+ "updated": 1784237018
 }
