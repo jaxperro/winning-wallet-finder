@@ -2069,6 +2069,21 @@
  ],
  "missed": [
   {
+   "ts": 1784236753,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "96493470136581654430268359631814450290137534659017161119334974730318350734648",
+   "cond": "0x95a7c8f39ccda84bf59b54c474f2a006cbc4167737630365f416670466b37ab9",
+   "title": "Will Nigel Farage win the Clacton by-election?",
+   "outcome": "Yes",
+   "price": 0.905,
+   "stake": 104.67,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784207355,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "98849429077363983479976319570357712213755247481827901912930434552765906797396",
@@ -3005,24 +3020,8 @@
    "settled": 1783763084,
    "name": "gkmgkldfmg",
    "exit_price": 0.4604
-  },
-  {
-   "ts": 1783730040,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "103676338032335044429709174398685887348332725157638903811532034719301297769141",
-   "cond": "0xc0a08dd7986cf446238d770a607fc367452e4dd5877203e7d9a4070f7862c124",
-   "title": "Will Boston Legacy FC win on 2026-07-10?",
-   "outcome": "Yes",
-   "price": 0.697,
-   "stake": 98.4,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 41.88,
-   "settled": 1783743419,
-   "name": "0x41558102",
-   "exit_price": 1.0
   }
  ],
  "missed_pnl": 89588.9,
- "updated": 1784232928
+ "updated": 1784236756
 }
