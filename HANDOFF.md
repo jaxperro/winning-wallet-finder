@@ -28,6 +28,17 @@ since 07-11 and since the 07-13 21:30Z swap. Verdict:
   and −$438 all-time paper — NOT re-added; re-check next Friday.
 - Guard/floor counterfactuals: re-validated 07-14 by the missed-bets audit
   (guard skips net-negative would-be on both books) — unchanged.
+- **BANKROLL decision instrumented (live/edge.py, in daily.sh + digest
+  footer)**: parity-era per-signal paper edge vs the MEASURED live fee
+  hurdle (1.9% of stake — real, not the 3-4% guess; extreme-price copies
+  keep p(1−p) small) + matched live-paper drag (6.4pp @ $1 stakes).
+  Decision rule: size up only when edge > hurdle+2pp on n≥30 parity-era
+  resolved signals (~end of July). history/edge.csv accrues one row/day;
+  `python3 live/edge.py` any time for the current verdict. RECOMMENDED to
+  the user (2026-07-16, no decision yet): ~$30-50 coverage top-up now at
+  most (the free-cash gate is skipping signals at $6 free), big sizing
+  waits for the measurement; caps bind at ~$60-125 equity anyway and stay
+  untouched. Deposits are the user's to make — never move funds.
 
 ## Shipped since rev 12 (2026-07-15)
 - **PAPER FAK PARITY**: PaperExecutor BUYs now model live FAK reality — if

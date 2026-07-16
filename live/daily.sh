@@ -95,6 +95,10 @@ with open(path, "a", newline="") as fh:
 print(f"[daily] calibration: live ${row['live_equity']:,} vs model "
       f"${row['model_equity']:,} -> {path}")
 CALIB
+echo "[daily] $(date '+%F %T') edge: parity-era per-signal edge vs fee hurdle -> history/edge.csv"
+# The bankroll-decision number (HANDOFF rev 13 / 2026-07-16): one row/day;
+# the verdict line rides the Discord digest footer below.
+python3 edge.py || echo "[daily] edge skipped"
 echo "[daily] $(date '+%F %T') 6/7 dashboard"
 python3 dashboard.py
 mkdir -p history && cp watch_skilled.json "history/watch_$(date '+%Y%m%d').json" 2>/dev/null
@@ -118,4 +122,5 @@ echo "[daily] $(date '+%F %T') done -> watch_sharps.json + dashboard.html"
 # Discord: the daily sharp-list digest (profile links + 30D conviction stats).
 # The only Discord output in the system — per-trade pings retired 2026-07-04.
 # Webhook lives in gitignored ../config.json -> daily_webhook.
-python3 discord_daily.py "feed: $PUBLISH" || echo "[daily] discord digest failed (non-fatal)"
+EDGE_LINE="$(head -1 edge_verdict.txt 2>/dev/null || true)"
+python3 discord_daily.py "feed: $PUBLISH${EDGE_LINE:+ · $EDGE_LINE}" || echo "[daily] discord digest failed (non-fatal)"

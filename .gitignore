@@ -42,3 +42,4 @@ live/watch_prejune*.json
 live/history/
 live/slug_cache.json
 archive/local/
+live/edge_verdict.txt
