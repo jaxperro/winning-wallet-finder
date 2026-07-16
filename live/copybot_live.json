@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 104.67,
+ "stake": 104.66,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2619.54,
- "cash": 1758.19,
- "deployed": 858.61,
+ "cash": 1653.23,
+ "deployed": 963.28,
  "reserve": 0.0,
- "realized": 1616.78,
+ "realized": 1616.48,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 17,
- "fees_paid": 258.66,
+ "open_count": 18,
+ "fees_paid": 258.95,
  "fee_rate": 0.03,
  "lag": {
-  "n": 174,
-  "n24": 9,
-  "avg_s": 2.2,
-  "avg_slip_pct": 0.0085,
+  "n": 175,
+  "n24": 10,
+  "avg_s": 60.3,
+  "avg_slip_pct": 0.0068,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "96493470136581654430268359631814450290137534659017161119334974730318350734648",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will Nigel Farage win the Clacton by-election?",
+   "their_price": 0.914,
+   "my_price": 0.907,
+   "slippage_pct": -0.0077,
+   "lag_s": 583.6,
+   "shares": 115.4,
+   "cost": 104.67,
+   "fee": 0.29,
+   "opened": 1784236753,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "104354766235014413556450504744840326540657851486089721436856141808878413679918",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2050,24 +2069,6 @@
    "settled": 1783753384,
    "sold_shares": 62.5,
    "sold_proceeds": 58.06
-  },
-  {
-   "token": "103676338032335044429709174398685887348332725157638903811532034719301297769141",
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "name": "LSB1",
-   "outcome": "Yes",
-   "title": "Will Boston Legacy FC win on 2026-07-10?",
-   "their_price": 0.894,
-   "my_price": 0.91,
-   "slippage_pct": 0.0179,
-   "shares": 109.63,
-   "cost": 99.76,
-   "fee": 0.27,
-   "opened": 1783733290,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 9.6,
-   "settled": 1783743543
   }
  ],
  "missed": [
@@ -3026,5 +3027,5 @@
   }
  ],
  "missed_pnl": 89588.9,
- "updated": 1784237018
+ "updated": 1784237336
 }
