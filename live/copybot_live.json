@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 103.92,
+ "stake": 103.89,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2598.02,
- "cash": 1780.21,
- "deployed": 817.81,
+ "cash": 1688.83,
+ "deployed": 908.53,
  "reserve": 0.0,
- "realized": 1597.99,
+ "realized": 1597.34,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 17,
- "fees_paid": 252.29,
+ "open_count": 18,
+ "fees_paid": 252.94,
  "fee_rate": 0.03,
  "lag": {
-  "n": 168,
-  "n24": 14,
-  "avg_s": 3.8,
-  "avg_slip_pct": -0.0108,
+  "n": 169,
+  "n24": 15,
+  "avg_s": 3.6,
+  "avg_slip_pct": -0.0109,
   "window_h": 24
  },
  "wallets": [
@@ -43,6 +43,25 @@
   "BikesAreTheBikes": 227.39
  },
  "bets": [
+  {
+   "token": "52277341117061676402936201599481724705704245418989224868304419115133008528281",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Down",
+   "title": "Gold (XAUUSD) Up or Down on July 16?",
+   "their_price": 0.77,
+   "my_price": 0.76,
+   "slippage_pct": -0.013,
+   "lag_s": 0.9,
+   "shares": 119.37,
+   "cost": 90.72,
+   "fee": 0.65,
+   "opened": 1784203549,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "110149901661791632318870033509195606722453896981581944225999632147320785007115",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -2040,24 +2059,6 @@
    "exit_price": 1.0,
    "pnl": 14.81,
    "settled": 1783719420
-  },
-  {
-   "token": "9679320407472932109528091937661974039402650044145955274074635176957029935409",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Micron Technology, Inc. (MU) hit (LOW) $810 Week of July 6 2026?",
-   "their_price": 0.89,
-   "my_price": 0.71,
-   "slippage_pct": -0.2022,
-   "shares": 63.05,
-   "cost": 44.77,
-   "fee": 0.39,
-   "opened": 1783597933,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 17.89,
-   "settled": 1783715664
   }
  ],
  "missed": [
@@ -3018,5 +3019,5 @@
   }
  ],
  "missed_pnl": 89608.98,
- "updated": 1784203480
+ "updated": 1784203554
 }
