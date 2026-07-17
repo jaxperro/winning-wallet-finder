@@ -1779,6 +1779,22 @@
  ],
  "missed": [
   {
+   "ts": 1784252512,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
+   "cond": "0x0fb63e987b28940eb8d299b466a34e5b404e0bd9a5c98df908bb55e6d00b694b",
+   "title": "Will Epic Games' valuation hit (HIGH) $13.5B by December 31?",
+   "outcome": "Yes",
+   "price": 0.4482,
+   "stake": 2.45,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 0.28,
+   "settled": 1784305890,
+   "name": "0xbadaf319",
+   "exit_price": 0.5147
+  },
+  {
    "ts": 1784305076,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "28782906734976367034652809126970357901755811695575578507894349405056833093999",
@@ -1931,21 +1947,6 @@
    "price": 0.28,
    "stake": 2.45,
    "reason": "book unreliable (spread 0.64 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1784252512,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
-   "cond": "0x0fb63e987b28940eb8d299b466a34e5b404e0bd9a5c98df908bb55e6d00b694b",
-   "title": "Will Epic Games' valuation hit (HIGH) $13.5B by December 31?",
-   "outcome": "Yes",
-   "price": 0.4482,
-   "stake": 2.45,
-   "reason": "not copied in the detection window (reconciled)",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -2725,6 +2726,6 @@
    "exit_price": 0.676
   }
  ],
- "missed_pnl": 1040.07,
- "updated": 1784305545
+ "missed_pnl": 1040.35,
+ "updated": 1784305891
 }
