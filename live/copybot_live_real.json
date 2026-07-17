@@ -1779,6 +1779,23 @@
  ],
  "missed": [
   {
+   "ts": 1783973910,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "113811126480011515107509517146411015240698493006125965388028738076036215548925",
+   "cond": "0x7b815d5ee7f26512f22e42943519b051ce430586fd88fd0acb167ab2252a688b",
+   "title": "Over $95M committed to the Credible public sale?",
+   "outcome": "No",
+   "price": 0.7575,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 0.25,
+   "settled": 1784315249,
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.9542
+  },
+  {
    "ts": 1784252512,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
@@ -2695,21 +2712,6 @@
    "name": "BikesAreTheBikes"
   },
   {
-   "ts": 1783973910,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "113811126480011515107509517146411015240698493006125965388028738076036215548925",
-   "cond": "0x7b815d5ee7f26512f22e42943519b051ce430586fd88fd0acb167ab2252a688b",
-   "title": "Over $95M committed to the Credible public sale?",
-   "outcome": "No",
-   "price": 0.7575,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1783958437,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "76755883373039851290695610249455633595892527905785960150127813908400558868227",
@@ -2726,6 +2728,6 @@
    "exit_price": 0.676
   }
  ],
- "missed_pnl": 1040.35,
- "updated": 1784308017
+ "missed_pnl": 1040.6,
+ "updated": 1784315258
 }
