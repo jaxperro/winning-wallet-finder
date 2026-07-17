@@ -39,10 +39,10 @@
  },
  "floors": {
   "Kruto2027": 80.0,
-  "0xbadaf319": 44.98,
-  "gkmgkldfmg": 304.34,
-  "1kto1m": 320.95,
-  "BikesAreTheBikes": 158.0,
+  "0xbadaf319": 41.21,
+  "gkmgkldfmg": 470.51,
+  "1kto1m": 328.77,
+  "BikesAreTheBikes": 227.2,
   "AIcAIc": 542.0
  },
  "bets": [
@@ -1700,6 +1700,36 @@
  ],
  "missed": [
   {
+   "ts": 1784252512,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
+   "cond": "0x0fb63e987b28940eb8d299b466a34e5b404e0bd9a5c98df908bb55e6d00b694b",
+   "title": "Will Epic Games' valuation hit (HIGH) $13.5B by December 31?",
+   "outcome": "Yes",
+   "price": 0.4482,
+   "stake": 2.45,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1784252512,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "40157116416490623239679394844195379171683621861511438824716931745872340078199",
+   "cond": "0x2e5100b759d2e6da51f0d457028d8e42b833f4808edd8ff95e3d242aa1ef6102",
+   "title": "Will Revolut's valuation hit (HIGH) $175B by December 31?",
+   "outcome": "No",
+   "price": 0.8699,
+   "stake": 2.45,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784244954,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "29198556434804110591228001401963930700463402583244929766816225903118874844031",
@@ -2612,40 +2642,8 @@
    "settled": 1783936078,
    "name": "0xbadaf319",
    "exit_price": 0.7596
-  },
-  {
-   "ts": 1783888308,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "107179792112987391529646299006880228718467140164269968140132399486412571398191",
-   "cond": "0x880d4d315634908ffac985de5cd442ec679beeb25f0166a77bece698f35463f6",
-   "title": "Will GPT-6 be released by August 14, 2026?",
-   "outcome": "No",
-   "price": 0.7899,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.04,
-   "settled": 1783936077,
-   "name": "0xbadaf319",
-   "exit_price": 0.8326
-  },
-  {
-   "ts": 1783915414,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "17233538369622331395311990544159709275677306359062920824570611974340792501916",
-   "cond": "0xec4147d703a1013d0bdc0ef4dcaf129fe8443e6ad1318edcd2a2ac9eff6c8421",
-   "title": "Moscow air traffic suspended by August 31?",
-   "outcome": "Yes",
-   "price": 0.8504,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.17,
-   "settled": 1783916967,
-   "name": "0xbadaf319",
-   "exit_price": 0.9951
   }
  ],
  "missed_pnl": 1040.87,
- "updated": 1784251883
+ "updated": 1784252516
 }
