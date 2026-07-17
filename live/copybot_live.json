@@ -2084,10 +2084,11 @@
    "price": 0.57,
    "stake": 102.53,
    "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
+   "status": "sold",
+   "pnl": -15.26,
+   "settled": 1784303999,
+   "name": "BikesAreTheBikes",
+   "exit_price": 0.5
   },
   {
    "ts": 1784287003,
@@ -3026,6 +3027,6 @@
    "name": "1kto1m"
   }
  ],
- "missed_pnl": 89538.86,
- "updated": 1784303816
+ "missed_pnl": 89523.6,
+ "updated": 1784304000
 }
