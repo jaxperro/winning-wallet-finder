@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "bankroll": 61.21,
+ "bankroll": 66.42,
  "stake": 2.45,
  "stake_pct": 0.04,
  "event_cap": 0,
@@ -8,9 +8,9 @@
  "cash": 50.53,
  "deployed": 10.69,
  "reserve": 0.0,
- "realized": -44.03,
- "adjustments": 44.04,
- "ledger_drift": -38.91,
+ "realized": -5.14,
+ "adjustments": -0.06,
+ "ledger_drift": -0.03,
  "open_count": 8,
  "fees_paid": 2.1,
  "fee_rate": 0.03,
@@ -2645,5 +2645,5 @@
   }
  ],
  "missed_pnl": 1040.87,
- "updated": 1784252516
+ "updated": 1784253215
 }
