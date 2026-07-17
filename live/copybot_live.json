@@ -2079,10 +2079,11 @@
    "price": 0.42,
    "stake": 104.81,
    "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 55.83,
+   "settled": 1784289655,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.6578
   },
   {
    "ts": 1784287003,
@@ -3020,6 +3021,6 @@
    "exit_price": 0.95
   }
  ],
- "missed_pnl": 89588.9,
- "updated": 1784288946
+ "missed_pnl": 89644.73,
+ "updated": 1784289656
 }
