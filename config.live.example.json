@@ -32,7 +32,7 @@
     "funder_address": "",
     "signature_type": 1,
     "order_type": "FAK",
-    "auto_redeem": false,
+    "auto_redeem": true,
     "rpc_url": ""
   },
   "wallets": [
