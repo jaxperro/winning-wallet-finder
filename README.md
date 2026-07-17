@@ -24,7 +24,7 @@ Three deployed pieces + one static dashboard:
 | piece | where it runs | what it does |
 |-------|--------------|--------------|
 | **daily pipeline** (`live/daily.sh`) | this Mac, launchd **08:00** (a `pmset repeat wakeorpoweron` RTC wake at **07:58** makes this run on time even from sleep — set 2026-07-08, undo with `sudo pmset repeat cancel`; job wrapped in `caffeinate -i` so mid-run idle-sleep can't kill it. Heads-up: the wake fires even lid-closed-in-a-bag — cancel it if the Mac travels) | refresh the bet cache → 5-gate skill scan → fee-aware sharp selection → conviction floors → backtest book → publish JSON feeds to GitHub |
-| **copybot worker** (`copybot.py` via `host/start.sh`) | **Fly.io app `wwf-copybot`, region `arn` (Stockholm), 24/7** — migrated off Railway 2026-07-06: Railway ran it in a US region, which Polymarket's IP geoblock would 403 the moment orders got real; Stockholm is unrestricted AND ~25ms from the CLOB's eu-west-2 primaries. Every boot self-checks the geo-gate (`host/geocheck.py`) and verifies the clone against `git ls-remote` (stale-replica guard) | **T0 = the RTDS trade stream** (gotcha 18): every platform trade, wallet-attributed, **~1s detection** (measured p50 0.8s over 22k msgs), silent-stale guard force-reconnects a quiet socket. Backstops: the Alchemy address-activity webhook (~3s, `POST /alchemy`, signature-verified), a 5-min backstop poll, and the reconcile janitor. Per-wallet **trade cursor** paginates the activity feed so clip bursts can't scroll past a fetch (H3). 60s heartbeat settles/publishes; paper-copies with real fees/lag/slippage; commits its book back to the repo |
+| **copybot worker** (`copybot.py` via `host/start.sh`) | **Fly.io app `wwf-copybot`, region `arn` (Stockholm), 24/7** — migrated off Railway 2026-07-06: Railway ran it in a US region, which Polymarket's IP geoblock would 403 the moment orders got real; Stockholm is unrestricted AND ~25ms from the CLOB's eu-west-2 primaries. Every boot self-checks the geo-gate (`host/geocheck.py`) and verifies the clone against `git ls-remote` (stale-replica guard) | **T0 = the RTDS trade stream** (gotcha 18): every platform trade, wallet-attributed, **~1s detection** (measured p50 0.8s over 22k msgs), silent-stale guard force-reconnects a quiet socket. Backstops: the Alchemy address-activity webhook (~3s, `POST /alchemy`, signature-verified — **T0b chain seed** 2026-07-14: its tx hashes decode straight from the receipt's OrderFilled logs when the data-api indexer lags, so RTDS-silent markets still copy at push speed), a 5-min backstop poll, and the reconcile janitor. Per-wallet **trade cursor** paginates the activity feed so clip bursts can't scroll past a fetch (H3). 60s heartbeat settles/publishes; paper-copies with real fees/lag/slippage AND live-FAK thin-book reality (**paper FAK parity** 2026-07-16: a quote with no ask inside the protected band books a MISS, not a fill — keeps the live-vs-paper per-signal ratio honest; `live/edge.py` turns it into the daily bankroll-decision verdict in `history/edge.csv` + the Discord digest footer); commits its book back to the repo |
 | **REAL-MONEY worker** (same code, `COPYBOT_ROLE=live`) | **Fly.io app `wwf-copybot-live`, `arn`, 24/7, ARMED 2026-07-10** — separate app so the two books never share a process, state file, or failure mode. Trades the signer's **Deposit Wallet** `0x455e…45a1` (pUSD collateral) via the unified SDK (`polymarket-client`) | Same T0 RTDS detection (`RTDS_DETECT=1`) + Alchemy/poll backstops; **own-fill push** via the CLOB user channel (`userws` in the heartbeat) makes in-play pending holds adopt the moment they match — ws events only *trigger* the resolver, `get_order` stays the arbiter (gotcha 17). Paper-parity sizing (4% of equity, $1 venue floor, no price floor, hard caps retired — the **depth gate** is the scaling rail: skip spread>0.08 or ask5c<$50, stake ≤10% of 5c depth). Every placement/exit/settle pings Discord. Disarm: `flyctl secrets unset LIVE_CONFIRM -a wwf-copybot-live` |
 | **Discord digest** (`live/discord_daily.py`) | end of the daily pipeline | one message/day: the sharp list with profile links + 30-day conviction stats (per-trade pings retired 2026-07-04 for PAPER; the LIVE book pings every real placement/exit/settle) |
 | **dashboard** | [jaxperro.com/trading](https://jaxperro.com/trading) + [jaxperro.com/live](https://jaxperro.com/live) (static, in the `jaxperro` repo) | `/trading` renders the paper book, backtest book and sharp table; `/live` is the REAL MONEY page (reads `live/copybot_live_real.json` — live since 2026-07-10). Both pages share `trading/copybot-section.js` — one renderer, no drift |
@@ -32,14 +32,16 @@ Three deployed pieces + one static dashboard:
 **The calibration experiment (running now):** a fresh $1,000 paper book,
 **reset 2026-07-08** so it measures exactly one thing — the follow set in
 **`live/copybot.paper.json`** (the single source of truth) from a clean start,
-with every bookkeeping fix live from day one. The follow set is **Set E rev 2**
-(2026-07-13, curated on the 5-day forward sample): five volume wallets —
-**Kruto2027 (floor lowered to $80 — +$736 from 2 copies at z=19.3),
-0xbadaf319, gkmgkldfmg, AIcAIc, 1kto1m**. Dropped: imwalkinghere (his flow
-is 5-min BTC Up/Down markets that resolve faster than any copy — 0 copies,
-misses would have LOST) and LSB1 (worst forward P&L, −$397 — demoted to
-`backtest.json` to re-prove). The backtest additionally proves a bench:
-Vahan88, 42021, BikesAreTheBikes, EdwardIN. All are copied on their
+with every bookkeeping fix live from day one. The follow set is **Set E rev 4**
+(2026-07-16, weekly bench review — HANDOFF logs each revision's evidence):
+six volume wallets — **Kruto2027 (floor 80 PINNED — `floor_pin` survives the
+nightly p80 sync), 0xbadaf319, gkmgkldfmg, 1kto1m, BikesAreTheBikes
+(promoted 07-13), AIcAIc (dropped 07-13, re-added 07-16 on +22%-since-drop
+forward + the Esports World Cup catalyst)**. Out: imwalkinghere (his flow is
+5-min BTC Up/Down markets that resolve faster than any copy), LSB1 (−$438
+all-time paper). The backtest additionally proves the bench: Vahan88,
+EdwardIN (both negative forward at the 07-16 review — not promoted). All
+followed wallets are copied on their
 **conviction bets only** (top-20%-by-stake, floor pinned daily from the
 trusted cache p80 via `sync_floors.py`), 4% of equity/bet, **capped at the
 signal's own bet size** and by the **depth gate** (≤10% of visible 5c ask
@@ -182,7 +184,7 @@ in [`live/README.md`](live/README.md).
 |------|-------|
 | `live/copybot.paper.json` | **committed** (no secrets): the live paper bot's wallet set + classes + follow/risk params — deploy with `live/deploy_bot.sh` |
 | `config.json` | `daily_webhook` (Discord digest) · `alchemy_notify_token` + `alchemy_webhook_id` (webhook address sync) · `alchemy_signing_key` (local push-mode runs) · Alchemy RPC key · a legacy curated watchlist + floors (`sync_floors.py`) |
-| `config.live.json` | live-trading credentials (`private_key`, `funder_address`) + tiny test caps — see `LIVE_TEST.md` |
+| `config.live.json` | live-trading credentials (`private_key`, `funder_address`); the Fly worker instead reads committed `config.live.example.json` + env secrets. Risk block is **paper-parity** (caps retired 2026-07-10 by user decision; bands/floors mirror `live/copybot.paper.json` — kept in sync MANUALLY, nothing auto-writes it) |
 | Fly `wwf-copybot` secrets | `GITHUB_TOKEN` (fine-grained PAT, contents-RW on this repo — the bot commits its state/feed back) · `ALCHEMY_SIGNING_KEY` (presence = push mode; remove it to fall back to 60s polling) · `DISCORD_WEBHOOK`. The webhook ingress is `https://wwf-copybot.fly.dev/alchemy` (Alchemy webhook `wh_blf4qjjvfdbqs9mc`, address list auto-synced by `deploy_bot.sh`) |
 
 ---
@@ -388,6 +390,13 @@ runner is retired (GitHub throttled `*/5` to ~2h in practice — it copied 1 of
     corollaries: a state push while the bot runs WILL be overwritten, and a
     boot clone seconds after a push can read a stale GitHub replica — after
     any surgery, verify the first heartbeat shows the book you wrote.
+    THIRD corollary (2026-07-17 bankroll rebase): `flyctl machine stop` can
+    report "stopped" while the process keeps running for many more minutes
+    (heartbeat cycle numbers kept incrementing 25 min past the "stop") — the
+    machine then boots on whatever it cloned at ITS OWN restart moment, not
+    yours. Before editing state, WATCH the heartbeats actually cease; if a
+    surgery boot shows stale numbers, just restart again once your push is
+    on origin (second boot picked it up cleanly).
 16. **The 2026 exchange stack: pUSD collateral + the unified SDK.**
     py-clob-client is ARCHIVED (May 2026) — reads/auth still work but the
     CLOB rejects its orders globally ('invalid order version'). Placement

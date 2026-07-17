@@ -1,4 +1,28 @@
-# Session handoff — 2026-07-15 (rev 13: paper FAK parity; rev 12: chain-seed)
+# Session handoff — 2026-07-17 (rev 14: +$44 bankroll, exact paper-parity config; rev 13: FAK parity; rev 12: chain-seed)
+
+## 2026-07-17: bankroll top-up + USER DIRECTIVE — live mirrors paper EXACTLY
+- **User deposited +$44.14** (Cash App → BTC → bridge, 70241 sats; ~$6 lost
+  to Cash App spread + BTC conversion — Polygon USDC is the cheap route).
+  Book rebased: cash = chain $50.53, bankroll $22.28 → **$61.21** (= equity
+  at rebase, per the config rule). Adjustment logged as deposit-not-P&L.
+  4%-sizing now ≈ $2.45/bet.
+- **USER DIRECTIVE (2026-07-16): the live bot mirrors the paper test
+  EXACTLY.** Caps were already off (retired 07-10). Parity sync applied:
+  risk.max_price 0.95 → **0.99** (paper's), wallet floors synced to paper's
+  current pins, dead `follow.per_wallet_min_usd` block removed (overwritten
+  at load by wallets[] — it had gone stale). DELIBERATE exception:
+  min_order_usd stays $1 (venue physical minimum; paper's $5 never binds at
+  its equity — copying it would force $2.45 signals up to $5 = 8% of equity,
+  DIVERGING from the 4% rule). NOTE: nothing auto-writes the live config —
+  floors drift from paper's nightly sync until manually re-synced; check at
+  each Friday bench review.
+- **Ops lesson (now README gotcha 15, third corollary)**: `flyctl machine
+  stop` reported stopped while the process ran 25 more minutes — the rebase
+  boot came up stale with ⚠ CASH≠CHAIN −$44.12 (alarm correct, money safe).
+  A plain restart after the push landed picked everything up cleanly. Before
+  state surgery: watch heartbeats actually CEASE.
+- Docs sweep: README follow-set (Set E rev 4), chain-seed + FAK-parity +
+  edge.py coverage, stale "tiny test caps" pointer fixed.
 
 ## Operating boundary set by the user (2026-07-13, "away for a while")
 **Full autonomy on BOTH bots**; real-money bot **stays ARMED**. Never touch
