@@ -5,13 +5,13 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1676.79,
+ "cash": 1676.8,
  "deployed": 961.43,
  "reserve": 0.0,
  "realized": 1638.19,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 20,
+ "ledger_drift": -0.04,
+ "open_count": 19,
  "fees_paid": 270.78,
  "fee_rate": 0.03,
  "lag": {
@@ -46,6 +46,26 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will Epic Games' valuation hit (HIGH) $13.5B by December 31?",
+   "their_price": 0.4513,
+   "my_price": 0.28,
+   "slippage_pct": -0.3796,
+   "shares": 301.35,
+   "cost": 84.38,
+   "fee": 1.82,
+   "opened": 1783633993,
+   "status": "closed",
+   "exit_price": 0.6589,
+   "pnl": 112.35,
+   "settled": 1784305976,
+   "sold_shares": 301.35,
+   "sold_proceeds": 198.55
+  },
   {
    "token": "96950124081618618921481886565893597118962484567379764630538216424318356050283",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2051,29 +2071,25 @@
    "settled": 1783776824,
    "sold_shares": 164.45,
    "sold_proceeds": 56.03
-  },
-  {
-   "token": "106618579082857173205099187418291680068349149870923665139597643374871754972322",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Hanwha Life Esports",
-   "title": "LoL: Hanwha Life Esports vs LYON (BO5) - Mid-Season Invitational Playoffs",
-   "their_price": 0.68,
-   "my_price": 0.64,
-   "slippage_pct": -0.0588,
-   "shares": 156.3,
-   "cost": 100.03,
-   "fee": 1.08,
-   "opened": 1783769915,
-   "status": "closed",
-   "exit_price": 0.9588,
-   "pnl": 48.76,
-   "settled": 1783771371,
-   "sold_shares": 156.3,
-   "sold_proceeds": 149.87
   }
  ],
  "missed": [
+  {
+   "ts": 1783634211,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
+   "cond": "0x0fb63e987b28940eb8d299b466a34e5b404e0bd9a5c98df908bb55e6d00b694b",
+   "title": "Will Epic Games' valuation hit (HIGH) $13.5B by December 31?",
+   "outcome": "Yes",
+   "price": 0.4482,
+   "stake": 76.99,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 8.86,
+   "settled": 1784305975,
+   "name": "0xbadaf319",
+   "exit_price": 0.5147
+  },
   {
    "ts": 1784305076,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -3009,24 +3025,8 @@
    "settled": 1783777012,
    "name": "0xd96750bf",
    "exit_checked": true
-  },
-  {
-   "ts": 1783771804,
-   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
-   "token": "14558559907212874105816406765075619812711660815177458275599881262140416485351",
-   "cond": "0xcff1cd5b482a91c324614ee06b7e43c7a702f192bedca126a7e0e6d9bf70c75d",
-   "title": "Bitcoin Up or Down - July 11, 8:05AM-8:10AM ET",
-   "outcome": "Up",
-   "price": 0.99,
-   "stake": 101.96,
-   "reason": "price moved 0.57\u21920.99",
-   "status": "sold",
-   "pnl": 1.0,
-   "settled": 1783772127,
-   "name": "0xd96750bf",
-   "exit_price": 1.0
   }
  ],
- "missed_pnl": 89681.7,
- "updated": 1784305682
+ "missed_pnl": 89690.56,
+ "updated": 1784305976
 }
