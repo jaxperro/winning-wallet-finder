@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 105.54,
+ "stake": 105.53,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1680.33,
- "deployed": 958.07,
+ "cash": 1574.59,
+ "deployed": 1063.6,
  "reserve": 0.0,
- "realized": 1638.37,
+ "realized": 1638.16,
  "adjustments": 0.03,
- "ledger_drift": -0.04,
- "open_count": 19,
- "fees_paid": 270.78,
+ "ledger_drift": -0.03,
+ "open_count": 20,
+ "fees_paid": 270.98,
  "fee_rate": 0.03,
  "lag": {
-  "n": 183,
-  "n24": 11,
-  "avg_s": 61.0,
-  "avg_slip_pct": -0.004,
+  "n": 184,
+  "n24": 12,
+  "avg_s": 56.6,
+  "avg_slip_pct": -0.0038,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Iran leadership change by July 31?",
+   "their_price": 0.936,
+   "my_price": 0.935,
+   "slippage_pct": -0.0011,
+   "lag_s": 7.6,
+   "shares": 112.87,
+   "cost": 105.54,
+   "fee": 0.21,
+   "opened": 1784319276,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2053,26 +2072,6 @@
    "settled": null,
    "sold_shares": 63.53,
    "sold_proceeds": 58.05
-  },
-  {
-   "token": "43551466881329966936571085042990699617845453317700345932385022134457322350137",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "PlayTime",
-   "title": "Dota 2: PlayTime vs Nigma Galaxy - Game 1 Winner",
-   "their_price": 0.6593,
-   "my_price": 0.62,
-   "slippage_pct": -0.0596,
-   "shares": 164.45,
-   "cost": 101.96,
-   "fee": 1.16,
-   "opened": 1783776182,
-   "status": "closed",
-   "exit_price": 0.3407,
-   "pnl": -47.09,
-   "settled": 1783776824,
-   "sold_shares": 164.45,
-   "sold_proceeds": 56.03
   }
  ],
  "missed": [
@@ -3032,5 +3031,5 @@
   }
  ],
  "missed_pnl": 89704.65,
- "updated": 1784315327
+ "updated": 1784319283
 }
