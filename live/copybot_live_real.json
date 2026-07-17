@@ -1,17 +1,17 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.45,
+ "stake": 2.35,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
  "cash": 46.19,
- "deployed": 15.04,
+ "deployed": 12.51,
  "reserve": 0.0,
- "realized": -5.13,
+ "realized": -7.66,
  "adjustments": -0.06,
  "ledger_drift": -0.03,
- "open_count": 10,
+ "open_count": 9,
  "fees_paid": 2.16,
  "fee_rate": 0.03,
  "lag": {
@@ -47,25 +47,6 @@
  },
  "bets": [
   {
-   "token": "96950124081618618921481886565893597118962484567379764630538216424318356050283",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Hanwha Life Esports",
-   "title": "LoL: Hanwha Life Esports vs T1 - Game 2 Winner",
-   "their_price": 0.58,
-   "my_price": 0.61,
-   "slippage_pct": 0.0517,
-   "lag_s": 10.4,
-   "shares": 4.14,
-   "cost": 2.52,
-   "fee": 0.03,
-   "opened": 1784288932,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
    "token": "99769792009260570054217311703996683522727922229995804271060316488330979046706",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "name": "AIcAIc",
@@ -79,6 +60,25 @@
    "cost": 2.53,
    "fee": 0.03,
    "opened": 1784287050,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -2.56,
+   "settled": 1784296751
+  },
+  {
+   "token": "96950124081618618921481886565893597118962484567379764630538216424318356050283",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Hanwha Life Esports",
+   "title": "LoL: Hanwha Life Esports vs T1 - Game 2 Winner",
+   "their_price": 0.58,
+   "my_price": 0.61,
+   "slippage_pct": 0.0517,
+   "lag_s": 10.4,
+   "shares": 4.14,
+   "cost": 2.52,
+   "fee": 0.03,
+   "opened": 1784288932,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -1740,6 +1740,22 @@
  ],
  "missed": [
   {
+   "ts": 1784286969,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "99769792009260570054217311703996683522727922229995804271060316488330979046706",
+   "cond": "0x9d407ed371fd904ef375724783d30eef0405e5d63d6bf1280d913b76492a035d",
+   "title": "LoL: Hanwha Life Esports vs T1 - Game 1 Winner",
+   "outcome": "Hanwha Life Esports",
+   "price": 0.5699,
+   "stake": 2.45,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "lost",
+   "pnl": -2.48,
+   "settled": 1784296753,
+   "name": "gkmgkldfmg",
+   "exit_checked": true
+  },
+  {
    "ts": 1784293898,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "6389531886339326872019040087067931507394742569293799407834024235601037900549",
@@ -1802,21 +1818,6 @@
    "settled": 1784288596,
    "name": "gkmgkldfmg",
    "exit_price": 0.2769
-  },
-  {
-   "ts": 1784286969,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "99769792009260570054217311703996683522727922229995804271060316488330979046706",
-   "cond": "0x9d407ed371fd904ef375724783d30eef0405e5d63d6bf1280d913b76492a035d",
-   "title": "LoL: Hanwha Life Esports vs T1 - Game 1 Winner",
-   "outcome": "Hanwha Life Esports",
-   "price": 0.5699,
-   "stake": 2.45,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1784285988,
@@ -2684,6 +2685,6 @@
    "exit_price": 0.9261
   }
  ],
- "missed_pnl": 1045.9,
- "updated": 1784296434
+ "missed_pnl": 1043.42,
+ "updated": 1784296761
 }
