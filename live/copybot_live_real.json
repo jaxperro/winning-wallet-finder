@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 78,
-  "n24": 8,
-  "avg_s": 6.7,
-  "avg_slip_pct": 0.0325,
+  "n24": 7,
+  "avg_s": 7.3,
+  "avg_slip_pct": 0.0353,
   "window_h": 24
  },
  "wallets": [
@@ -1749,10 +1749,11 @@
    "price": 0.77,
    "stake": 2.45,
    "reason": "price moved 0.67\u21920.77",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": -0.4,
+   "settled": 1784289902,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.6578
   },
   {
    "ts": 1784288268,
@@ -2683,6 +2684,6 @@
    "exit_price": 0.88
   }
  ],
- "missed_pnl": 1040.78,
- "updated": 1784289890
+ "missed_pnl": 1040.38,
+ "updated": 1784289965
 }
