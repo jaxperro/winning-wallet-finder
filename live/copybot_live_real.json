@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 46.19,
- "deployed": 12.51,
+ "cash": 43.84,
+ "deployed": 14.85,
  "reserve": 0.0,
- "realized": -7.66,
+ "realized": -7.67,
  "adjustments": -0.06,
- "ledger_drift": -0.03,
- "open_count": 9,
- "fees_paid": 2.16,
+ "ledger_drift": 2.32,
+ "open_count": 10,
+ "fees_paid": 2.17,
  "fee_rate": 0.03,
  "lag": {
-  "n": 78,
-  "n24": 4,
-  "avg_s": 9.5,
-  "avg_slip_pct": 0.0316,
+  "n": 79,
+  "n24": 5,
+  "avg_s": 9.1,
+  "avg_slip_pct": 0.0356,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,24 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "8310650677069487821478025416478130051168635736368290554555541536659374960027",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+   "their_price": null,
+   "my_price": 0.8205,
+   "slippage_pct": null,
+   "shares": 5.7,
+   "cost": 4.68,
+   "fee": 0.03,
+   "opened": 1784300236,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "99769792009260570054217311703996683522727922229995804271060316488330979046706",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -1749,10 +1767,11 @@
    "price": 0.26,
    "stake": 2.35,
    "reason": "in-play hold expired unfilled (36s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": -2.39,
+   "settled": 1784300337,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.0016
   },
   {
    "ts": 1784286969,
@@ -2684,6 +2703,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 1043.42,
- "updated": 1784300201
+ "missed_pnl": 1041.03,
+ "updated": 1784300338
 }
