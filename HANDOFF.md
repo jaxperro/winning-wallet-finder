@@ -3,9 +3,13 @@
 ## 2026-07-17: bankroll top-up + USER DIRECTIVE — live mirrors paper EXACTLY
 - **User deposited +$44.14** (Cash App → BTC → bridge, 70241 sats; ~$6 lost
   to Cash App spread + BTC conversion — Polygon USDC is the cheap route).
-  Book rebased: cash = chain $50.53, bankroll $22.28 → **$61.21** (= equity
-  at rebase, per the config rule). Adjustment logged as deposit-not-P&L.
-  4%-sizing now ≈ $2.45/bet.
+  Book rebased: cash = chain $50.53, bankroll $22.28 → **$66.42 = capital
+  contributed** (the deposit lives in bankroll_usd ONLY — first attempt also
+  logged it as an adjustment, double-counting it: realized read −$44, ledger
+  drift −$38.91; the invariant is cash = bank + Σadj + Σpnl + flows, so a
+  deposit enters EXACTLY ONE term). Realized preserved at lifetime −$5.14;
+  sizing is 4% of working equity (cash+cost basis) ≈ $2.45/bet — bankroll_usd
+  is baseline/display only.
 - **USER DIRECTIVE (2026-07-16): the live bot mirrors the paper test
   EXACTLY.** Caps were already off (retired 07-10). Parity sync applied:
   risk.max_price 0.95 → **0.99** (paper's), wallet floors synced to paper's
