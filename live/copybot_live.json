@@ -5,13 +5,13 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1616.02,
- "deployed": 1026.37,
+ "cash": 1616.56,
+ "deployed": 1025.96,
  "reserve": 0.0,
- "realized": 1642.36,
+ "realized": 1642.48,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 18,
+ "open_count": 17,
  "fees_paid": 270.98,
  "fee_rate": 0.03,
  "lag": {
@@ -46,6 +46,27 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "109624481875348569318303102429519724032296483676540566321245418804293736322472",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will South Korea ETF (EWY) hit (HIGH) $185 Week of July 13 2026?",
+   "their_price": 0.85,
+   "my_price": 0.78,
+   "slippage_pct": -0.0824,
+   "lag_s": 0.8,
+   "shares": 46.25,
+   "cost": 36.07,
+   "fee": 0.24,
+   "opened": 1783996213,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 0.58,
+   "settled": 1784320165,
+   "sold_shares": 45.71,
+   "sold_proceeds": 36.35
+  },
   {
    "token": "104354766235014413556450504744840326540657851486089721436856141808878413679918",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1343,27 +1364,6 @@
    "sold_proceeds": 98.61
   },
   {
-   "token": "109624481875348569318303102429519724032296483676540566321245418804293736322472",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will South Korea ETF (EWY) hit (HIGH) $185 Week of July 13 2026?",
-   "their_price": 0.85,
-   "my_price": 0.78,
-   "slippage_pct": -0.0824,
-   "lag_s": 0.8,
-   "shares": 46.25,
-   "cost": 36.07,
-   "fee": 0.24,
-   "opened": 1783996213,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 45.71,
-   "sold_proceeds": 36.35
-  },
-  {
    "token": "24842837270178563045080596501119383388959231063439941109817831657351105273923",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "name": "BikesAreTheBikes",
@@ -2085,10 +2085,12 @@
    "price": 0.35,
    "stake": 62.07,
    "reason": "book unreliable (spread 0.64 > 0.08)",
-   "status": "won",
-   "pnl": 114.06,
+   "status": "sold",
+   "pnl": 92.95,
    "settled": 1784319963,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.884
   },
   {
    "ts": 1783973850,
@@ -3030,6 +3032,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 89818.71,
- "updated": 1784320102
+ "missed_pnl": 89797.6,
+ "updated": 1784320172
 }
