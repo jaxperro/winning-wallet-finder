@@ -62,7 +62,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 from copytrade import (  # the execution engine (sizing, gates, executors)
     CopyTrader, PaperExecutor, LiveExecutor, DEFAULT_CONFIG,
-    load_json, save_json, new_state, recent_trades, confirm_live,
+    load_json, save_json, new_state, recent_trades, confirm_live, clob_price,
 )
 import smart_money as sm  # noqa: E402
 from smart_money import SSL_CTX  # noqa: E402
@@ -1640,6 +1640,68 @@ class Copybot:
         st["exit_retries"] = keep
         self.engine.persist()
 
+    DUST_MIN_USD = 0.10          # below this a sweep sell isn't worth the fee
+    DUST_WALLET = "0x455e252e45Ee46d6C4cc1c8fAdD3899d68f245a1"   # deposit wallet
+
+    def sweep_dust(self, cycle):
+        """Exit-dust reclaimer (2026-07-17): proportional mirror-exits leave
+        sub-share remainders on chain after the book closes the bet (found by
+        the platform-vs-book reconcile: 4 residues worth ~$1.90). Shortly
+        after boot and ~daily, market-sell any LIVE-market wallet holding the
+        book does NOT track and credit the proceeds as a documented
+        ADJUSTMENT — recovery of already-settled bets, never new realized P&L
+        (the ledger invariant needs the cash move in exactly one term).
+        Never touches my_pos / pending / retry tokens; a failed sell (dust
+        books FAK no-match, sub-$1 rejects) just waits for the next pass."""
+        if not getattr(self.engine.ex, "live", False):
+            return
+        if cycle != 5 and cycle % 1440 != 0:
+            return
+        pos = sm.get_json("/positions", {"user": self.DUST_WALLET,
+                                         "sizeThreshold": 0}) or []
+        st = self.engine.state
+        skip = (set(st["my_pos"])
+                | {p.get("token") for p in st.get("pending_orders", [])}
+                | {r.get("token") for r in st.get("exit_retries", [])})
+        recovered, sold, tried = 0.0, [], 0
+        for p in pos:
+            tok, val = p.get("asset"), p.get("currentValue") or 0
+            cur, shares = p.get("curPrice") or 0, p.get("size") or 0
+            if (not tok or tok in skip or val < self.DUST_MIN_USD
+                    or p.get("redeemable") or not 0.01 <= cur <= 0.99
+                    or shares <= 0):
+                continue
+            if tried >= 10:
+                break
+            tried += 1
+            quote = clob_price(tok, "sell")
+            if not quote:
+                continue
+            with self.lock:
+                before = st["cash"]
+                r = self.engine.ex.sell(tok, shares, quote,
+                                        {"title": p.get("title") or "dust"})
+                self._drain_fills()
+                delta = st["cash"] - before
+                if r.get("ok") and delta > 0:
+                    recovered += delta
+                    sold.append(f"{shares:.2f}sh @ {r['price']:.3f} "
+                                f"{str(p.get('title'))[:36]}")
+                    log(f"DUST SWEEP +${delta:.2f} · {sold[-1]}")
+                else:
+                    log(f"dust sweep skip ({str(r.get('resp'))[:50]}) · "
+                        f"{str(p.get('title'))[:40]}")
+        if recovered > 0:
+            st.setdefault("adjustments", []).append({
+                "ts": int(time.time()), "amount": round(recovered, 6),
+                "note": f"dust sweep: {len(sold)} residual holdings sold "
+                        "(recovery of closed bets, not P&L)"})
+            self.engine.persist()
+            self.engine.alert(
+                f"dust sweep recovered ${recovered:.2f} ({len(sold)} holdings)",
+                discord_text=(f"🧹 **DUST SWEEP** [LIVE] +${recovered:.2f}\n"
+                              + "\n".join(sold[:8])))
+
     _chain_bal = (0.0, None)     # (checked_at, usdc) — cached; poll ≤1/min
 
     def chain_cash_gap(self):
@@ -2534,6 +2596,7 @@ def main():
                 bot.resolve_pendings()     # adopt/expire in-play held orders
                 bot.retry_stuck_exits()    # LIVE_ROLLOUT 1.6
                 bot.settle_resolved()
+                bot.sweep_dust(cycle)      # reclaim untracked exit residue (live)
                 if cycle % 5 == 0:
                     bot.reconcile_exits()
                     bot.reconcile_entries()
