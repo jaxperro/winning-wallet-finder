@@ -2072,6 +2072,21 @@
  ],
  "missed": [
   {
+   "ts": 1784275928,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "15456330829547795037828293282236765253933989530349029925038235552652310014831",
+   "cond": "0x240c2424f9e2de98676f8a2dce520b2dfee499b68194ac5db0537be851f56989",
+   "title": "Will Revolut's valuation hit (HIGH) $90B by December 31?",
+   "outcome": "Yes",
+   "price": 0.28,
+   "stake": 47.29,
+   "reason": "book unreliable (spread 0.64 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784236753,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "96493470136581654430268359631814450290137534659017161119334974730318350734648",
@@ -3007,24 +3022,8 @@
    "settled": 1783769298,
    "name": "gkmgkldfmg",
    "exit_price": 0.6998
-  },
-  {
-   "ts": 1783762772,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "2744571775903589106980317653847400232271579861889013320024551414528092561305",
-   "cond": "0x32c45da56bf405f951f62fbf1c6d84d16e18a258870438aabb26ed314210d16d",
-   "title": "Dota 2: BetBoom Team vs GamerLegion - Game 1 Winner",
-   "outcome": "GamerLegion",
-   "price": 0.4198,
-   "stake": 97.58,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 6.0,
-   "settled": 1783763084,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.4604
   }
  ],
  "missed_pnl": 89588.9,
- "updated": 1784274475
+ "updated": 1784275928
 }
