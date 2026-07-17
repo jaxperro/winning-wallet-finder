@@ -1,7 +1,6 @@
 {
   "started_at": 1783572616.4091802,
   "seen_tx": [
-    "0xca1b303ea4d21736d17c2a611e6f5292e6a38e316284a03ee2f80ff149a999ef",
     "0xae40175da7c6cbb8f9561853a1f4662731e80ebe71fbbce201d0a2fcf4e772a7",
     "0x7a99659d44ced6c6dc740c6d4fb52af1aef7f1b9a81dcc0a128a5bec3570657d",
     "0x015dcc1eb8e35102320e5ef55ddf973902039b4eac27eccce7ba09f84b14a559",
@@ -740,6 +739,7 @@
     "0xf0935d46b0ec72ee5e176a486536de431db6130fe5e62d9883bf9dd01d65662b",
     "0xf86c49f1c0fd8119aaf262717f1607b2d9659210b9f7d522f96db15ea2c23af3",
     "0x362cd361d3053f4c36e9ea049896d05e776b0c7edf79c7262b7c5429edc97168",
+    "0x587cb5d52e8fe4e93020cfcf2e41e155d6a82e9a1a95e0651137b198d253710b",
     "0x2c83377702d158ee826695bd396cf4e98c4d268619b40f232822142b9d7717f5",
     "0x7b52c8a43a4240a227278fae653a9f5e559d25826696b93a63aecb0be1515f49",
     "0x994f1b17574a4efd40c39104d1b177ef3547e2e39eda0aea1920cb8b81ac8f5a",
@@ -14366,10 +14366,25 @@
       "pnl": null,
       "settled": null,
       "name": "BikesAreTheBikes"
+    },
+    {
+      "ts": 1784286969,
+      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+      "token": "99769792009260570054217311703996683522727922229995804271060316488330979046706",
+      "cond": "0x9d407ed371fd904ef375724783d30eef0405e5d63d6bf1280d913b76492a035d",
+      "title": "LoL: Hanwha Life Esports vs T1 - Game 1 Winner",
+      "outcome": "Hanwha Life Esports",
+      "price": 0.5699,
+      "stake": 2.45,
+      "reason": "not copied in the detection window (reconciled)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "gkmgkldfmg"
     }
   ],
-  "feed_sig": "1a533efffcd70fd1bdb9417fc96f4750",
-  "feed_pushed_at": 1784285873.8552096,
+  "feed_sig": "d34f8e0f5c642306ce3928621f0f7f9c",
+  "feed_pushed_at": 1784286904.3787434,
   "adjustments": [
     {
       "ts": 1783906689,
@@ -14404,10 +14419,10 @@
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784247182,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784285814,
-    "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784280195,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784286522,
+    "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784286738,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784208739,
-    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784285436,
-    "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784281470
+    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784286000,
+    "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784285982
   }
 }
