@@ -1798,6 +1798,21 @@
  ],
  "missed": [
   {
+   "ts": 1784167406,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "7384451899802911723249599486996406665182105515403617543497677786694027499060",
+   "cond": "0x99527e3fb165b1b7ef5ccc75255c39a46e69a3006cf641f010ca2e23f4e9cb1b",
+   "title": "Will South Korea ETF (EWY) hit (HIGH) $188 Week of July 13 2026?",
+   "outcome": "No",
+   "price": 0.35,
+   "stake": 1.0,
+   "reason": "book unreliable (spread 0.64 > 0.08)",
+   "status": "won",
+   "pnl": 1.84,
+   "settled": 1784319968,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783973910,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "113811126480011515107509517146411015240698493006125965388028738076036215548925",
@@ -2159,21 +2174,6 @@
    "settled": 1784174397,
    "name": "BikesAreTheBikes",
    "exit_price": 0.5
-  },
-  {
-   "ts": 1784167406,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "7384451899802911723249599486996406665182105515403617543497677786694027499060",
-   "cond": "0x99527e3fb165b1b7ef5ccc75255c39a46e69a3006cf641f010ca2e23f4e9cb1b",
-   "title": "Will South Korea ETF (EWY) hit (HIGH) $188 Week of July 13 2026?",
-   "outcome": "No",
-   "price": 0.35,
-   "stake": 1.0,
-   "reason": "book unreliable (spread 0.64 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784106348,
@@ -2747,6 +2747,6 @@
    "exit_price": 0.676
   }
  ],
- "missed_pnl": 1040.6,
- "updated": 1784319376
+ "missed_pnl": 1042.44,
+ "updated": 1784319969
 }
