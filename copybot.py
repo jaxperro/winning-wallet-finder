@@ -1667,12 +1667,31 @@ class Copybot:
         for p in pos:
             tok, val = p.get("asset"), p.get("currentValue") or 0
             cur, shares = p.get("curPrice") or 0, p.get("size") or 0
-            if (not tok or tok in skip or val < self.DUST_MIN_USD
-                    or p.get("redeemable") or not 0.01 <= cur <= 0.99
-                    or shares <= 0):
+            if not tok or tok in skip or val < self.DUST_MIN_USD or shares <= 0:
                 continue
             if tried >= 10:
                 break
+            if p.get("redeemable") or cur >= 0.99:
+                # resolved WINNER residual (the 2026-07-17 $1.90 case): the
+                # tracked-position redeemer never sees untracked tokens, so
+                # collect here. Refunds/winners pay at the vector price.
+                cond = p.get("conditionId")
+                if not (self.redeemer and cond) or market_neg_risk(cond):
+                    continue
+                tried += 1
+                ok, info = self.redeemer.try_redeem(cond)
+                if ok:
+                    with self.lock:
+                        st["cash"] += val
+                    recovered += val
+                    sold.append(f"redeemed {shares:.2f}sh ≈ ${val:.2f} "
+                                f"{str(p.get('title'))[:36]}")
+                    log(f"DUST REDEEM +${val:.2f} · {sold[-1]}")
+                else:
+                    log(f"dust redeem failed ({str(info)[:40]}) — retry next pass")
+                continue
+            if not 0.01 <= cur <= 0.99:
+                continue
             tried += 1
             quote = clob_price(tok, "sell")
             if not quote:
