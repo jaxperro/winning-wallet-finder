@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 43.84,
- "deployed": 12.33,
+ "cash": 41.56,
+ "deployed": 14.58,
  "reserve": 0.0,
- "realized": -10.19,
+ "realized": -10.22,
  "adjustments": -0.06,
  "ledger_drift": 2.32,
- "open_count": 9,
- "fees_paid": 2.17,
+ "open_count": 10,
+ "fees_paid": 2.19,
  "fee_rate": 0.03,
  "lag": {
-  "n": 79,
-  "n24": 5,
-  "avg_s": 9.1,
-  "avg_slip_pct": 0.0356,
+  "n": 80,
+  "n24": 6,
+  "avg_s": 7.8,
+  "avg_slip_pct": 0.0296,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "110536989543612561899836326685728311541346128503675227319696677241365666291302",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will Anthropic extend Claude Fable 5 paid-plan access again by July 19?",
+   "their_price": 0.6,
+   "my_price": 0.6,
+   "slippage_pct": 0.0,
+   "lag_s": 1.2,
+   "shares": 3.75,
+   "cost": 2.25,
+   "fee": 0.03,
+   "opened": 1784303812,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "96950124081618618921481886565893597118962484567379764630538216424318356050283",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2704,5 +2723,5 @@
   }
  ],
  "missed_pnl": 1041.03,
- "updated": 1784302465
+ "updated": 1784303816
 }
