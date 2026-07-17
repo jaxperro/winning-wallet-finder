@@ -1749,10 +1749,11 @@
    "price": 0.29,
    "stake": 2.45,
    "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
+   "status": "sold",
+   "pnl": 5.51,
+   "settled": 1784296434,
+   "name": "AIcAIc",
+   "exit_price": 0.95
   },
   {
    "ts": 1784292836,
@@ -2683,6 +2684,6 @@
    "exit_price": 0.9261
   }
  ],
- "missed_pnl": 1040.39,
- "updated": 1784293903
+ "missed_pnl": 1045.9,
+ "updated": 1784296434
 }
