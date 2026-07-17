@@ -1798,6 +1798,22 @@
  ],
  "missed": [
   {
+   "ts": 1784321590,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "36572361863292743525172722296256449344593421343195350786366455281513675169221",
+   "cond": "0xd2a97dd956e70c9c4abda30d2864588ece0c7213013eb3fa664b88509ff829b1",
+   "title": "Will \"The Odyssey\" Opening Weekend Box Office be greater than 115m?",
+   "outcome": "No",
+   "price": 0.21,
+   "stake": 2.25,
+   "reason": "thin book ($41 within 5c < $50)",
+   "status": "sold",
+   "pnl": 0.16,
+   "settled": 1784321701,
+   "name": "BikesAreTheBikes",
+   "exit_price": 0.2357
+  },
+  {
    "ts": 1784244954,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "29198556434804110591228001401963930700463402583244929766816225903118874844031",
@@ -2734,24 +2750,8 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1783958437,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "76755883373039851290695610249455633595892527905785960150127813908400558868227",
-   "cond": "0xa5bd4b831f180564aef6a119e1f94a5d574344e25a546b7a1f14aec7cc6e2d83",
-   "title": "Will Iran announce withdrawal from MOU negotiations by July 24?",
-   "outcome": "No",
-   "price": 0.5789,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.14,
-   "settled": 1783959680,
-   "name": "0xbadaf319",
-   "exit_price": 0.676
   }
  ],
- "missed_pnl": 1042.09,
- "updated": 1784320106
+ "missed_pnl": 1042.25,
+ "updated": 1784321702
 }
