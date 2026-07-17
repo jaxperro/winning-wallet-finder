@@ -1,0 +1,14 @@
+# wwf-valuebot — the VALUE silo's own Fly app (value/PLAN.md). No http_service:
+# nothing probes it, nothing auto-restarts it under a state surgery.
+app = "wwf-valuebot"
+primary_region = "arn"
+
+[build]
+  dockerfile = "value/fly.Dockerfile"
+
+[[restart]]
+  policy = "always"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"
