@@ -1,0 +1,18 @@
+# wwf-recorder — RTDS tape (recorder/recorder.py). Own app + volume so bot
+# deploys never gap the tape. No http_service (gotcha 15).
+app = "wwf-recorder"
+primary_region = "arn"
+
+[build]
+  dockerfile = "recorder/fly.Dockerfile"
+
+[[mounts]]
+  source = "tape"
+  destination = "/data"
+
+[[restart]]
+  policy = "always"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"
