@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 109.67,
+ "stake": 105.32,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1630.52,
- "deployed": 1111.33,
+ "cash": 1521.86,
+ "deployed": 1111.23,
  "reserve": 0.0,
- "realized": 1741.82,
+ "realized": 1633.06,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 21,
- "fees_paid": 268.08,
+ "fees_paid": 268.76,
  "fee_rate": 0.03,
  "lag": {
-  "n": 181,
+  "n": 182,
   "n24": 10,
-  "avg_s": 65.1,
-  "avg_slip_pct": -0.0069,
+  "avg_s": 65.4,
+  "avg_slip_pct": -0.0046,
   "window_h": 24
  },
  "wallets": [
@@ -60,6 +60,27 @@
    "cost": 109.77,
    "fee": 2.44,
    "opened": 1784298334,
+   "status": "closed",
+   "exit_price": 0.0039,
+   "pnl": -110.57,
+   "settled": 1784300281,
+   "sold_shares": 422.2,
+   "sold_proceeds": 1.64
+  },
+  {
+   "token": "8310650677069487821478025416478130051168635736368290554555541536659374960027",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+   "their_price": 0.78,
+   "my_price": 0.81,
+   "slippage_pct": 0.0385,
+   "lag_s": 4.7,
+   "shares": 135.4,
+   "cost": 109.67,
+   "fee": 0.63,
+   "opened": 1784300229,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -2049,26 +2070,6 @@
    "settled": 1783770308,
    "sold_shares": 161.28,
    "sold_proceeds": 100.48
-  },
-  {
-   "token": "24685222266639618881275458182682767134900023023526773367466764924178936188460",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Falcons",
-   "title": "Dota 2: Xtreme Gaming vs Team Falcons - Game 2 Winner",
-   "their_price": 0.62,
-   "my_price": 0.62,
-   "slippage_pct": 0.0,
-   "shares": 160.86,
-   "cost": 99.73,
-   "fee": 1.14,
-   "opened": 1783768913,
-   "status": "closed",
-   "exit_price": 0.6742,
-   "pnl": 7.58,
-   "settled": 1783769229,
-   "sold_shares": 160.86,
-   "sold_proceeds": 108.45
   }
  ],
  "missed": [
@@ -3026,5 +3027,5 @@
   }
  ],
  "missed_pnl": 89538.86,
- "updated": 1784298339
+ "updated": 1784300281
 }
