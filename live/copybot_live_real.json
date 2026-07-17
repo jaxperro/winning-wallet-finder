@@ -1719,6 +1719,21 @@
  ],
  "missed": [
   {
+   "ts": 1784288268,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "49357014671746556855560755614469742325519994297167600840929876681819057732694",
+   "cond": "0xf9640023159d57007d91bf9f077c1bdedb11c2b9d9a26d750f7d3db79307ba39",
+   "title": "Dota 2: Team Falcons vs Vici Gaming - Game 1 Winner",
+   "outcome": "Vici Gaming",
+   "price": 0.3726,
+   "stake": 2.45,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784286969,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "99769792009260570054217311703996683522727922229995804271060316488330979046706",
@@ -2645,23 +2660,8 @@
    "settled": 1783945337,
    "name": "0xbadaf319",
    "exit_price": 0.9469
-  },
-  {
-   "ts": 1783942543,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "25252139719387305389090759227041579550456702736511482208905350724277919018200",
-   "cond": "0x1121a02fc780ddeb79cf91cdf2fea0a7dc2a8eb91a8643e86a4a415ab519ab90",
-   "title": "Will the Houthis successfully target shipping by August 31, 2026?",
-   "outcome": "Yes",
-   "price": 0.29,
-   "stake": 1.0,
-   "reason": "book unreliable (spread 0.15 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": 1041.49,
- "updated": 1784287070
+ "updated": 1784288273
 }
