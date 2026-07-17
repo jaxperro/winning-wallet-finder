@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 106.72,
+ "stake": 102.53,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
  "cash": 1556.77,
- "deployed": 1111.23,
+ "deployed": 1006.42,
  "reserve": 0.0,
- "realized": 1667.97,
+ "realized": 1563.16,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 21,
+ "open_count": 20,
  "fees_paid": 269.96,
  "fee_rate": 0.03,
  "lag": {
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "96950124081618618921481886565893597118962484567379764630538216424318356050283",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Hanwha Life Esports",
+   "title": "LoL: Hanwha Life Esports vs T1 - Game 2 Winner",
+   "their_price": 0.58,
+   "my_price": 0.58,
+   "slippage_pct": 0.0,
+   "lag_s": 14.5,
+   "shares": 180.71,
+   "cost": 104.81,
+   "fee": 1.32,
+   "opened": 1784288932,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -106.13,
+   "settled": 1784302467
+  },
   {
    "token": "19340078937013577148171238392323646866463928268582140624100333248568207116627",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -167,25 +186,6 @@
    "settled": 1784290249,
    "sold_shares": 75.85,
    "sold_proceeds": 54.84
-  },
-  {
-   "token": "96950124081618618921481886565893597118962484567379764630538216424318356050283",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Hanwha Life Esports",
-   "title": "LoL: Hanwha Life Esports vs T1 - Game 2 Winner",
-   "their_price": 0.58,
-   "my_price": 0.58,
-   "slippage_pct": 0.0,
-   "lag_s": 14.5,
-   "shares": 180.71,
-   "cost": 104.81,
-   "fee": 1.32,
-   "opened": 1784288932,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "29198556434804110591228001401963930700463402583244929766816225903118874844031",
@@ -3028,5 +3028,5 @@
   }
  ],
  "missed_pnl": 89538.86,
- "updated": 1784302115
+ "updated": 1784302469
 }
