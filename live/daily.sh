@@ -99,6 +99,8 @@ echo "[daily] $(date '+%F %T') edge: parity-era per-signal edge vs fee hurdle ->
 # The bankroll-decision number (HANDOFF rev 13 / 2026-07-16): one row/day;
 # the verdict line rides the Discord digest footer below.
 python3 edge.py || echo "[daily] edge skipped"
+echo "[daily] $(date '+%F %T') tape: ingest RTDS segments -> live/rtds.duckdb"
+python3 ../recorder/ingest.py || echo "[daily] tape ingest skipped"
 echo "[daily] $(date '+%F %T') 6/7 dashboard"
 python3 dashboard.py
 mkdir -p history && cp watch_skilled.json "history/watch_$(date '+%Y%m%d').json" 2>/dev/null
