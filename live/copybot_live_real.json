@@ -1700,6 +1700,21 @@
  ],
  "missed": [
   {
+   "ts": 1784282642,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "89931707622153123477324295539885211618444747121850482137781459507217585245391",
+   "cond": "0xd7691a148f8d595e68f8b97b26d47dd26ae5f33e4a94d6bcd250fc6311c65e8b",
+   "title": "BNB Up or Down - July 17, 6:00AM-6:05AM ET",
+   "outcome": "Up",
+   "price": 0.63,
+   "stake": 2.45,
+   "reason": "price moved 0.57\u21920.63",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1784275921,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "15456330829547795037828293282236765253933989530349029925038235552652310014831",
@@ -2625,24 +2640,8 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783918819,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "70962318786911412106087113936707965213554584784375688261632728234676581794613",
-   "cond": "0xec6a9c47b73a00f12acbd46e137a9e5da64224be4efdbfea479d64261a44d52f",
-   "title": "Will Palantir Technologies Inc. (PLTR) hit (LOW) $102 in July?",
-   "outcome": "No",
-   "price": 0.7929,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -0.04,
-   "settled": 1783936079,
-   "name": "0xbadaf319",
-   "exit_price": 0.7698
   }
  ],
  "missed_pnl": 1040.87,
- "updated": 1784275924
+ "updated": 1784282642
 }
