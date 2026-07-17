@@ -13926,8 +13926,8 @@
     }
   },
   "hwm": 2849.150445045735,
-  "feed_sig": "6f71894db5a24428308d19317470af54",
-  "feed_pushed_at": 1784296659.5149155,
+  "feed_sig": "32378866b2f96968c5838e68d7ff3424",
+  "feed_pushed_at": 1784296787.122096,
   "missed": [
     {
       "ts": 1783590977,
@@ -15570,7 +15570,8 @@
       "status": "lost",
       "pnl": -106.21,
       "settled": 1784296724,
-      "name": "gkmgkldfmg"
+      "name": "gkmgkldfmg",
+      "exit_checked": true
     },
     {
       "ts": 1784288939,

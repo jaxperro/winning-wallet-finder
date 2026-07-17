@@ -2086,7 +2086,8 @@
    "status": "lost",
    "pnl": -106.21,
    "settled": 1784296724,
-   "name": "gkmgkldfmg"
+   "name": "gkmgkldfmg",
+   "exit_checked": true
   },
   {
    "ts": 1784292916,
@@ -3026,5 +3027,5 @@
   }
  ],
  "missed_pnl": 89538.86,
- "updated": 1784296724
+ "updated": 1784296860
 }
