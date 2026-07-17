@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 105.32,
+ "stake": 105.29,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1521.86,
- "deployed": 1111.23,
+ "cash": 1415.59,
+ "deployed": 1216.56,
  "reserve": 0.0,
- "realized": 1633.06,
+ "realized": 1632.11,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 21,
- "fees_paid": 268.76,
+ "ledger_drift": -0.04,
+ "open_count": 22,
+ "fees_paid": 269.7,
  "fee_rate": 0.03,
  "lag": {
-  "n": 182,
-  "n24": 10,
-  "avg_s": 65.4,
-  "avg_slip_pct": -0.0046,
+  "n": 183,
+  "n24": 11,
+  "avg_s": 61.0,
+  "avg_slip_pct": -0.004,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "19340078937013577148171238392323646866463928268582140624100333248568207116627",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Bilibili Gaming",
+   "title": "LoL: Bilibili Gaming vs Dplus KIA (BO3) - Esports World Cup Playoffs",
+   "their_price": 0.6993,
+   "my_price": 0.7,
+   "slippage_pct": 0.001,
+   "lag_s": 17.1,
+   "shares": 150.46,
+   "cost": 105.32,
+   "fee": 0.95,
+   "opened": 1784301051,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "65083870366687373086730707346131907305811131359213614908957826335591758208",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2050,26 +2069,6 @@
    "settled": 1783771371,
    "sold_shares": 156.3,
    "sold_proceeds": 149.87
-  },
-  {
-   "token": "81413637292297741701558038706628285500354162735615522867827508680184700465994",
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "name": "1kto1m",
-   "outcome": "Down",
-   "title": "Bitcoin Up or Down - July 11, 7AM ET",
-   "their_price": 0.5894,
-   "my_price": 0.62,
-   "slippage_pct": 0.0519,
-   "shares": 161.28,
-   "cost": 99.99,
-   "fee": 1.14,
-   "opened": 1783770278,
-   "status": "closed",
-   "exit_price": 0.623,
-   "pnl": -0.65,
-   "settled": 1783770308,
-   "sold_shares": 161.28,
-   "sold_proceeds": 100.48
   }
  ],
  "missed": [
@@ -3027,5 +3026,5 @@
   }
  ],
  "missed_pnl": 89538.86,
- "updated": 1784300281
+ "updated": 1784301068
 }
