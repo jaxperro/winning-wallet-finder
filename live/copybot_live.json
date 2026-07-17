@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 105.13,
+ "stake": 105.04,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2628.37,
- "cash": 1521.71,
- "deployed": 1106.42,
+ "cash": 1414.35,
+ "deployed": 1211.55,
  "reserve": 0.0,
- "realized": 1628.11,
+ "realized": 1625.87,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 21,
- "fees_paid": 262.51,
+ "open_count": 22,
+ "fees_paid": 264.75,
  "fee_rate": 0.03,
  "lag": {
-  "n": 179,
-  "n24": 8,
-  "avg_s": 80.5,
-  "avg_slip_pct": 0.0002,
+  "n": 180,
+  "n24": 9,
+  "avg_s": 72.2,
+  "avg_slip_pct": -0.0035,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "6389531886339326872019040087067931507394742569293799407834024235601037900549",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Dplus KIA",
+   "title": "LoL: Bilibili Gaming vs Dplus KIA - Game 1 Winner",
+   "their_price": 0.3,
+   "my_price": 0.29,
+   "slippage_pct": -0.0333,
+   "lag_s": 5.6,
+   "shares": 362.5,
+   "cost": 105.13,
+   "fee": 2.24,
+   "opened": 1784293898,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "49357014671746556855560755614469742325519994297167600840929876681819057732694",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2049,26 +2068,6 @@
    "settled": 1783768985,
    "sold_shares": 146.47,
    "sold_proceeds": 138.94
-  },
-  {
-   "token": "72360978495452180080538327232926295248474801559995120453489389067546448362850",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "GamerLegion",
-   "title": "Dota 2: BetBoom Team vs GamerLegion - Game 2 Winner",
-   "their_price": 0.27,
-   "my_price": 0.26,
-   "slippage_pct": -0.037,
-   "shares": 376.11,
-   "cost": 97.79,
-   "fee": 2.17,
-   "opened": 1783766995,
-   "status": "closed",
-   "exit_price": 0.2937,
-   "pnl": 10.5,
-   "settled": 1783767209,
-   "sold_shares": 376.11,
-   "sold_proceeds": 110.46
   }
  ],
  "missed": [
@@ -3025,5 +3024,5 @@
   }
  ],
  "missed_pnl": 89645.07,
- "updated": 1784293575
+ "updated": 1784293907
 }
