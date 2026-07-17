@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 105.13,
+ "stake": 105.12,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2628.37,
- "cash": 1521.95,
- "deployed": 1106.42,
+ "cash": 1495.61,
+ "deployed": 1132.38,
  "reserve": 0.0,
- "realized": 1628.34,
+ "realized": 1627.96,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 21,
- "fees_paid": 261.61,
+ "open_count": 22,
+ "fees_paid": 262.3,
  "fee_rate": 0.03,
  "lag": {
-  "n": 178,
-  "n24": 9,
-  "avg_s": 70.6,
-  "avg_slip_pct": 0.0071,
+  "n": 179,
+  "n24": 10,
+  "avg_s": 65.7,
+  "avg_slip_pct": 0.0093,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,27 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "49357014671746556855560755614469742325519994297167600840929876681819057732694",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Vici Gaming",
+   "title": "Dota 2: Team Falcons vs Vici Gaming - Game 1 Winner",
+   "their_price": 0.6998,
+   "my_price": 0.72,
+   "slippage_pct": 0.0288,
+   "lag_s": 21.7,
+   "shares": 75.85,
+   "cost": 54.61,
+   "fee": 0.46,
+   "opened": 1784290083,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "sold_shares": 39.79,
+   "sold_proceeds": 28.73
+  },
   {
    "token": "96950124081618618921481886565893597118962484567379764630538216424318356050283",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2048,26 +2069,6 @@
    "settled": 1783767209,
    "sold_shares": 376.11,
    "sold_proceeds": 110.46
-  },
-  {
-   "token": "100094646481889411045608903542709537170681601408861322501769657932997311570009",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Hanwha Life Esports",
-   "title": "LoL: Hanwha Life Esports vs LYON - Game 3 Winner",
-   "their_price": 0.72,
-   "my_price": 0.71,
-   "slippage_pct": -0.0139,
-   "shares": 135.95,
-   "cost": 96.52,
-   "fee": 0.84,
-   "opened": 1783763869,
-   "status": "closed",
-   "exit_price": 0.9486,
-   "pnl": 31.6,
-   "settled": 1783765295,
-   "sold_shares": 135.95,
-   "sold_proceeds": 128.96
   }
  ],
  "missed": [
@@ -3024,5 +3025,5 @@
   }
  ],
  "missed_pnl": 89644.73,
- "updated": 1784289983
+ "updated": 1784290202
 }
