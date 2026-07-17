@@ -1779,6 +1779,21 @@
  ],
  "missed": [
   {
+   "ts": 1784305076,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "28782906734976367034652809126970357901755811695575578507894349405056833093999",
+   "cond": "0x2958e5aaa8ff729d588001f798ea3b84ad0d786927e1a92bd819d8c87477a640",
+   "title": "Dota 2: Nigma Galaxy vs BetBoom Team - Game 2 Winner",
+   "outcome": "Nigma Galaxy",
+   "price": 0.09,
+   "stake": 2.24,
+   "reason": "book unreliable (spread 0.16 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784298373,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "65083870366687373086730707346131907305811131359213614908957826335591758208",
@@ -2707,23 +2722,8 @@
    "settled": 1783959680,
    "name": "0xbadaf319",
    "exit_price": 0.676
-  },
-  {
-   "ts": 1783958437,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "6077633070230470776652108532581280898684441958087418509077540637819937906663",
-   "cond": "0x636f780f794635820e8cafe81924ef2dd67622fc01b6b2e5e64e9cc99593a005",
-   "title": "Will Iran announce withdrawal from MOU negotiations by July 31?",
-   "outcome": "Yes",
-   "price": 0.3949,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": 1041.03,
- "updated": 1784304888
+ "updated": 1784305080
 }
