@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 109.77,
+ "stake": 109.67,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1742.73,
- "deployed": 1001.56,
+ "cash": 1630.52,
+ "deployed": 1111.33,
  "reserve": 0.0,
- "realized": 1744.26,
+ "realized": 1741.82,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 20,
- "fees_paid": 265.64,
+ "open_count": 21,
+ "fees_paid": 268.08,
  "fee_rate": 0.03,
  "lag": {
-  "n": 180,
-  "n24": 9,
-  "avg_s": 72.2,
-  "avg_slip_pct": -0.0035,
+  "n": 181,
+  "n24": 10,
+  "avg_s": 65.1,
+  "avg_slip_pct": -0.0069,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "65083870366687373086730707346131907305811131359213614908957826335591758208",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Nigma Galaxy",
+   "title": "Dota 2: Nigma Galaxy vs BetBoom Team - Game 1 Winner",
+   "their_price": 0.27,
+   "my_price": 0.26,
+   "slippage_pct": -0.037,
+   "lag_s": 1.1,
+   "shares": 422.2,
+   "cost": 109.77,
+   "fee": 2.44,
+   "opened": 1784298334,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "99769792009260570054217311703996683522727922229995804271060316488330979046706",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2050,26 +2069,6 @@
    "settled": 1783769229,
    "sold_shares": 160.86,
    "sold_proceeds": 108.45
-  },
-  {
-   "token": "22293458003405574504714007164622746211949900414139391877327291617757461162520",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Hanwha Life Esports",
-   "title": "LoL: Hanwha Life Esports vs LYON - Game 4 Winner",
-   "their_price": 0.69,
-   "my_price": 0.67,
-   "slippage_pct": -0.029,
-   "shares": 146.47,
-   "cost": 98.14,
-   "fee": 0.97,
-   "opened": 1783768543,
-   "status": "closed",
-   "exit_price": 0.9486,
-   "pnl": 39.83,
-   "settled": 1783768985,
-   "sold_shares": 146.47,
-   "sold_proceeds": 138.94
   }
  ],
  "missed": [
@@ -3027,5 +3026,5 @@
   }
  ],
  "missed_pnl": 89538.86,
- "updated": 1784296860
+ "updated": 1784298339
 }
