@@ -1,17 +1,17 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.24,
+ "stake": 2.25,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 41.54,
- "deployed": 14.57,
+ "cash": 41.88,
+ "deployed": 14.27,
  "reserve": 0.0,
- "realized": -10.25,
+ "realized": -10.22,
  "adjustments": -0.06,
  "ledger_drift": 2.32,
- "open_count": 10,
+ "open_count": 9,
  "fees_paid": 2.22,
  "fee_rate": 0.03,
  "lag": {
@@ -46,6 +46,27 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "104354766235014413556450504744840326540657851486089721436856141808878413679918",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Netflix, Inc. (NFLX) hit (HIGH) $85 Week of July 13 2026?",
+   "their_price": 0.896,
+   "my_price": 0.897,
+   "slippage_pct": 0.0011,
+   "lag_s": 2.3,
+   "shares": 1.11,
+   "cost": 1.0,
+   "fee": 0.0,
+   "opened": 1784232921,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 0.11,
+   "settled": 1784320096,
+   "sold_shares": 0.78,
+   "sold_proceeds": 0.78
+  },
   {
    "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -141,27 +162,6 @@
    "exit_price": 0.0,
    "pnl": -2.56,
    "settled": 1784296751
-  },
-  {
-   "token": "104354766235014413556450504744840326540657851486089721436856141808878413679918",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Netflix, Inc. (NFLX) hit (HIGH) $85 Week of July 13 2026?",
-   "their_price": 0.896,
-   "my_price": 0.897,
-   "slippage_pct": 0.0011,
-   "lag_s": 2.3,
-   "shares": 1.11,
-   "cost": 1.0,
-   "fee": 0.0,
-   "opened": 1784232921,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 0.78,
-   "sold_proceeds": 0.78
   },
   {
    "token": "70071514755027914725023328573024847971805733187006977673637026985321376228783",
@@ -1798,6 +1798,39 @@
  ],
  "missed": [
   {
+   "ts": 1784244954,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "29198556434804110591228001401963930700463402583244929766816225903118874844031",
+   "cond": "0x9b78e5101ab1282de40e522ae764a43a685d199fb0fab699af8093b5f0332b7b",
+   "title": "Will NVIDIA (NVDA) hit (HIGH) $220 Week of July 13 2026?",
+   "outcome": "No",
+   "price": 0.95,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "won",
+   "pnl": 0.05,
+   "settled": 1784320099,
+   "name": "0xbadaf319",
+   "exit_checked": true
+  },
+  {
+   "ts": 1783996214,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "109624481875348569318303102429519724032296483676540566321245418804293736322472",
+   "cond": "0x73f249c806a34946776e96c784a6631b8b8421813a791903f9f9f576c4abaa7d",
+   "title": "Will South Korea ETF (EWY) hit (HIGH) $185 Week of July 13 2026?",
+   "outcome": "No",
+   "price": 0.78,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "sold",
+   "pnl": -0.06,
+   "settled": 1784320098,
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.743
+  },
+  {
    "ts": 1784167406,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "7384451899802911723249599486996406665182105515403617543497677786694027499060",
@@ -1807,10 +1840,12 @@
    "price": 0.35,
    "stake": 1.0,
    "reason": "book unreliable (spread 0.64 > 0.08)",
-   "status": "won",
-   "pnl": 1.84,
+   "status": "sold",
+   "pnl": 1.5,
    "settled": 1784319968,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.884
   },
   {
    "ts": 1783973910,
@@ -2013,21 +2048,6 @@
    "price": 0.8699,
    "stake": 2.45,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1784244954,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "29198556434804110591228001401963930700463402583244929766816225903118874844031",
-   "cond": "0x9b78e5101ab1282de40e522ae764a43a685d199fb0fab699af8093b5f0332b7b",
-   "title": "Will NVIDIA (NVDA) hit (HIGH) $220 Week of July 13 2026?",
-   "outcome": "No",
-   "price": 0.95,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -2701,21 +2721,6 @@
    "exit_checked": true
   },
   {
-   "ts": 1783996214,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "109624481875348569318303102429519724032296483676540566321245418804293736322472",
-   "cond": "0x73f249c806a34946776e96c784a6631b8b8421813a791903f9f9f576c4abaa7d",
-   "title": "Will South Korea ETF (EWY) hit (HIGH) $185 Week of July 13 2026?",
-   "outcome": "No",
-   "price": 0.78,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1783991964,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "24842837270178563045080596501119383388959231063439941109817831657351105273923",
@@ -2747,6 +2752,6 @@
    "exit_price": 0.676
   }
  ],
- "missed_pnl": 1042.44,
- "updated": 1784319969
+ "missed_pnl": 1042.09,
+ "updated": 1784320106
 }

@@ -10347,15 +10347,6 @@
       "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
       "cond": ""
     },
-    "104354766235014413556450504744840326540657851486089721436856141808878413679918": {
-      "shares": 0.33482600000000007,
-      "cost": 0.30033864508721536,
-      "title": "Will Netflix, Inc. (NFLX) hit (HIGH) $85 Week of July 13 2026?",
-      "outcome": "No",
-      "event": "will-nflx-hit-week-of-july-13-2026",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "cond": "0xb648b18d07653753d75ebac69d4896300be8f234c9137e67e514b22b187febb6"
-    },
     "8310650677069487821478025416478130051168635736368290554555541536659374960027": {
       "shares": 2.853655,
       "cost": 2.339997,
@@ -10443,12 +10434,11 @@
     "94846649734011849767196765067022411183171400090337931779295250573488021840336": "0xd31423cb4ebe6efffdfcf1657944406765a28719215d8fd90321eb6f6b610f33",
     "33873561500205954397168619257230846593108517022766612303805480582152511862669": "0x5c8ff7602393cc120f311a659a94bd1e886e7e024d9c24c1edeb31c8bc2c0a2a",
     "70071514755027914725023328573024847971805733187006977673637026985321376228783": "0xcbb3accb99485c62bbad6f8ee54c06b450d4b9a5e03d4d47b9f6a92731eea8a5",
-    "104354766235014413556450504744840326540657851486089721436856141808878413679918": "0xb648b18d07653753d75ebac69d4896300be8f234c9137e67e514b22b187febb6",
     "8310650677069487821478025416478130051168635736368290554555541536659374960027": "0x31327c6fbdc70a44d97f8e8973f536b6a748e01b4c0ca5549ed0910c703b1d7b",
     "110536989543612561899836326685728311541346128503675227319696677241365666291302": "0x33202ea27cf7fbf8d387c6ef1e0eb956dc999ffb96385b6fe67b84ea4a364952",
     "81227913022464789020420026850668797006106628368067299950425613264309232066763": "0x0d3ad3afe0e01075d00e6869a09f1982742fba950b4cae8fff452b282b5a80fc"
   },
-  "cash": 41.543198326329886,
+  "cash": 41.878024326329886,
   "lag": {
     "n": 81,
     "sum_s": 2909.021454811096,
@@ -12134,10 +12124,10 @@
       "cost": 1.0,
       "fee": 0.0031,
       "opened": 1784232921,
-      "status": "open",
-      "exit_price": null,
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "exit_price": 1.0,
+      "pnl": 0.11,
+      "settled": 1784320096,
       "sold_shares": 0.78,
       "sold_proceeds": 0.7767867744
     },
@@ -13754,10 +13744,12 @@
       "price": 0.78,
       "stake": 1.0,
       "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "0xbadaf319"
+      "status": "sold",
+      "pnl": -0.06,
+      "settled": 1784320098,
+      "name": "0xbadaf319",
+      "exit_checked": true,
+      "exit_price": 0.743
     },
     {
       "ts": 1784027686,
@@ -14294,10 +14286,12 @@
       "price": 0.35,
       "stake": 1.0,
       "reason": "book unreliable (spread 0.64 > 0.08)",
-      "status": "won",
-      "pnl": 1.84,
+      "status": "sold",
+      "pnl": 1.5,
       "settled": 1784319968,
-      "name": "0xbadaf319"
+      "name": "0xbadaf319",
+      "exit_checked": true,
+      "exit_price": 0.884
     },
     {
       "ts": 1784175026,
@@ -14435,10 +14429,11 @@
       "price": 0.95,
       "stake": 1.0,
       "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "0xbadaf319"
+      "status": "won",
+      "pnl": 0.05,
+      "settled": 1784320099,
+      "name": "0xbadaf319",
+      "exit_checked": true
     },
     {
       "ts": 1784252512,
@@ -14630,8 +14625,8 @@
       "exit_price": 0.0554
     }
   ],
-  "feed_sig": "2c08fd9c84f43479ce9e2b495bd7d910",
-  "feed_pushed_at": 1784319896.9173596,
+  "feed_sig": "99a2bcf6c5bba116253ff9d78e2b4de4",
+  "feed_pushed_at": 1784320032.2073216,
   "adjustments": [
     {
       "ts": 1783906689,
