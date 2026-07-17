@@ -1788,10 +1788,11 @@
    "price": 0.09,
    "stake": 2.24,
    "reason": "book unreliable (spread 0.16 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": -0.96,
+   "settled": 1784305544,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.0554
   },
   {
    "ts": 1784298373,
@@ -2724,6 +2725,6 @@
    "exit_price": 0.676
   }
  ],
- "missed_pnl": 1041.03,
- "updated": 1784305080
+ "missed_pnl": 1040.07,
+ "updated": 1784305545
 }
