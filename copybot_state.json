@@ -13828,8 +13828,8 @@
     }
   },
   "hwm": 2621.621760768745,
-  "feed_sig": "0ec30cdddba70b6c16f23e53b7c1d8e6",
-  "feed_pushed_at": 1784286420.4835308,
+  "feed_sig": "e6b61a6bb0b13f90852056c972c33c14",
+  "feed_pushed_at": 1784286936.9231153,
   "missed": [
     {
       "ts": 1783590977,
@@ -15458,6 +15458,21 @@
       "pnl": null,
       "settled": null,
       "name": "0xbadaf319"
+    },
+    {
+      "ts": 1784287003,
+      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+      "token": "99769792009260570054217311703996683522727922229995804271060316488330979046706",
+      "cond": "0x9d407ed371fd904ef375724783d30eef0405e5d63d6bf1280d913b76492a035d",
+      "title": "LoL: Hanwha Life Esports vs T1 - Game 1 Winner",
+      "outcome": "Hanwha Life Esports",
+      "price": 0.5699,
+      "stake": 104.86,
+      "reason": "not copied in the detection window (reconciled)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "gkmgkldfmg"
     }
   ],
   "no_miss_toks": [
@@ -15541,7 +15556,7 @@
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784247182,
     "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784286522,
-    "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784280195,
+    "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784286738,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784208739,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784286000,
     "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784285982

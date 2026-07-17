@@ -2072,6 +2072,21 @@
  ],
  "missed": [
   {
+   "ts": 1784287003,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "99769792009260570054217311703996683522727922229995804271060316488330979046706",
+   "cond": "0x9d407ed371fd904ef375724783d30eef0405e5d63d6bf1280d913b76492a035d",
+   "title": "LoL: Hanwha Life Esports vs T1 - Game 1 Winner",
+   "outcome": "Hanwha Life Esports",
+   "price": 0.5699,
+   "stake": 104.86,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784275928,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "15456330829547795037828293282236765253933989530349029925038235552652310014831",
@@ -3006,24 +3021,8 @@
    "settled": 1783769486,
    "name": "0xd96750bf",
    "exit_checked": true
-  },
-  {
-   "ts": 1783768873,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "24685222266639618881275458182682767134900023023526773367466764924178936188460",
-   "cond": "0xa54a1b59dfc7dbd086084ec8482284753f018c7d47a85fd3fbcc181fc994fa37",
-   "title": "Dota 2: Xtreme Gaming vs Team Falcons - Game 2 Winner",
-   "outcome": "Team Falcons",
-   "price": 0.65,
-   "stake": 98.1,
-   "reason": "price moved 0.60\u21920.65",
-   "status": "sold",
-   "pnl": 5.54,
-   "settled": 1783769298,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.6998
   }
  ],
  "missed_pnl": 89588.9,
- "updated": 1784286526
+ "updated": 1784287006
 }
