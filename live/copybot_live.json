@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 179,
-  "n24": 10,
-  "avg_s": 65.7,
-  "avg_slip_pct": 0.0093,
+  "n24": 9,
+  "avg_s": 72.8,
+  "avg_slip_pct": 0.0069,
   "window_h": 24
  },
  "wallets": [
@@ -2073,6 +2073,21 @@
  ],
  "missed": [
   {
+   "ts": 1784292916,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "60643960237912042991623385995992740897392655866310010945852324078346572439711",
+   "cond": "0x0cd083d5f5c038e479f99618104cf4c1189a26db07b36806d4e46d4c21d019a7",
+   "title": "Dota 2: Team Falcons vs Vici Gaming - Game 2 Winner",
+   "outcome": "Vici Gaming",
+   "price": 0.3425,
+   "stake": 105.13,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784288939,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "49357014671746556855560755614469742325519994297167600840929876681819057732694",
@@ -3006,24 +3021,8 @@
    "settled": 1783771498,
    "name": "1kto1m",
    "exit_price": 0.3191
-  },
-  {
-   "ts": 1783770235,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "106618579082857173205099187418291680068349149870923665139597643374871754972322",
-   "cond": "0xbb5243e8e12a186025c0f27597a8c4808a206379f1f9762d4072718644dc9fa3",
-   "title": "LoL: Hanwha Life Esports vs LYON (BO5) - Mid-Season Invitational Playoffs",
-   "outcome": "Hanwha Life Esports",
-   "price": 0.68,
-   "stake": 100.03,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 38.55,
-   "settled": 1783771497,
-   "name": "AIcAIc",
-   "exit_price": 0.95
   }
  ],
  "missed_pnl": 89644.73,
- "updated": 1784290249
+ "updated": 1784292982
 }
