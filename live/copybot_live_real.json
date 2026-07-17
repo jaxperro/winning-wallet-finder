@@ -1740,6 +1740,21 @@
  ],
  "missed": [
   {
+   "ts": 1784293898,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "6389531886339326872019040087067931507394742569293799407834024235601037900549",
+   "cond": "0x6039ef424e317626646d8149a1661c49278cbe2499431de7daac664f2d9bab64",
+   "title": "LoL: Bilibili Gaming vs Dplus KIA - Game 1 Winner",
+   "outcome": "Dplus KIA",
+   "price": 0.29,
+   "stake": 2.45,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1784292836,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "60643960237912042991623385995992740897392655866310010945852324078346572439711",
@@ -2666,24 +2681,8 @@
    "settled": 1783953687,
    "name": "1kto1m",
    "exit_price": 0.9261
-  },
-  {
-   "ts": 1783949981,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "7410717121876145332418373180741433428881685336911848406679670735933068361996",
-   "cond": "0xfa68c2d7750d6d7ed9b1103e86ac534bfbcd38724c2cd66f8358d71ed433cfc3",
-   "title": "S&P 500 (SPX) Up or Down on July 13?",
-   "outcome": "Down",
-   "price": 0.68,
-   "stake": 1.0,
-   "reason": "order rejected: exception: max_price must conform to tick size 0.01 with at ",
-   "status": "sold",
-   "pnl": 0.17,
-   "settled": 1783950909,
-   "name": "1kto1m",
-   "exit_price": 0.81
   }
  ],
  "missed_pnl": 1040.39,
- "updated": 1784293824
+ "updated": 1784293903
 }
