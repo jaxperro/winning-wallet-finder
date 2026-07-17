@@ -1,7 +1,7 @@
 {
   "mode": "live",
   "_comment": "Live-test config, SECRET-FREE and committed. The Fly live worker (wwf-copybot-live, COPYBOT_ROLE=live) reads THIS file and takes secrets from env (LIVE_PRIVATE_KEY/LIVE_FUNDER_ADDRESS + LIVE_CONFIRM to arm). Mac use: cp -> config.live.json and fill live.*. RULES: bankroll_usd MUST equal actual equity at rebase time (the 1.4 cash-anchor checks state cash vs chain). 2026-07-10 USER decision: hard caps retired \u2014 sizing is paper-parity 4%-of-equity (floored at the venue $1 min order); follow set mirrors copybot.paper.json (Set E) so paper and live books stay comparable.",
-  "bankroll_usd": 61.21,
+  "bankroll_usd": 66.42,
   "bankroll_pct": 0.04,
   "price_guard_abs": 0.05,
   "taker_fee_rate": 0.03,
