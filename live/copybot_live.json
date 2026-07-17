@@ -2077,6 +2077,23 @@
  ],
  "missed": [
   {
+   "ts": 1783973850,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "113811126480011515107509517146411015240698493006125965388028738076036215548925",
+   "cond": "0x7b815d5ee7f26512f22e42943519b051ce430586fd88fd0acb167ab2252a688b",
+   "title": "Over $95M committed to the Credible public sale?",
+   "outcome": "No",
+   "price": 0.7575,
+   "stake": 56.21,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 14.09,
+   "settled": 1784315257,
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.9542
+  },
+  {
    "ts": 1783634211,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
@@ -2438,21 +2455,6 @@
    "settled": 1783997372,
    "name": "Kruto2027",
    "exit_checked": true
-  },
-  {
-   "ts": 1783973850,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "113811126480011515107509517146411015240698493006125965388028738076036215548925",
-   "cond": "0x7b815d5ee7f26512f22e42943519b051ce430586fd88fd0acb167ab2252a688b",
-   "title": "Over $95M committed to the Credible public sale?",
-   "outcome": "No",
-   "price": 0.7575,
-   "stake": 56.21,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1783933772,
@@ -3029,6 +3031,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 89690.56,
- "updated": 1784314485
+ "missed_pnl": 89704.65,
+ "updated": 1784315327
 }
