@@ -1738,6 +1738,21 @@
  ],
  "missed": [
   {
+   "ts": 1784289696,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "49357014671746556855560755614469742325519994297167600840929876681819057732694",
+   "cond": "0xf9640023159d57007d91bf9f077c1bdedb11c2b9d9a26d750f7d3db79307ba39",
+   "title": "Dota 2: Team Falcons vs Vici Gaming - Game 1 Winner",
+   "outcome": "Vici Gaming",
+   "price": 0.77,
+   "stake": 2.45,
+   "reason": "price moved 0.67\u21920.77",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784288268,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "49357014671746556855560755614469742325519994297167600840929876681819057732694",
@@ -2664,24 +2679,8 @@
    "settled": 1783948741,
    "name": "0xbadaf319",
    "exit_price": 0.88
-  },
-  {
-   "ts": 1783941532,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "72815518641084313518338622403512394035277151459724826799424021294207163996674",
-   "cond": "0xa8c3b49a760866402205c38a6b7fc007a80676fce85af89232afd219d021236a",
-   "title": "WTI Crude Oil (WTI) Up or Down on July 13?",
-   "outcome": "Up",
-   "price": 0.931,
-   "stake": 1.0,
-   "reason": "order rejected: exception: max_price must conform to tick size 0.001 with at",
-   "status": "sold",
-   "pnl": 0.01,
-   "settled": 1783945337,
-   "name": "0xbadaf319",
-   "exit_price": 0.9469
   }
  ],
  "missed_pnl": 1040.78,
- "updated": 1784288944
+ "updated": 1784289696
 }
