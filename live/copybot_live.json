@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 103.71,
+ "stake": 103.42,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1530.54,
- "deployed": 1062.25,
+ "cash": 1627.1,
+ "deployed": 958.49,
  "reserve": 0.0,
- "realized": 1592.76,
+ "realized": 1585.56,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 18,
- "fees_paid": 287.41,
+ "ledger_drift": -0.02,
+ "open_count": 17,
+ "fees_paid": 288.85,
  "fee_rate": 0.03,
  "lag": {
   "n": 191,
@@ -60,10 +60,12 @@
    "cost": 103.76,
    "fee": 1.43,
    "opened": 1784387164,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "closed",
+   "exit_price": 0.5025,
+   "pnl": -8.64,
+   "settled": 1784388912,
+   "sold_shares": 192.15,
+   "sold_proceeds": 96.55
   },
   {
    "token": "3506443794566179214052380628578788380776940712896382718637294140773955061401",
@@ -2087,6 +2089,21 @@
  ],
  "missed": [
   {
+   "ts": 1784388877,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "58169143653343450326195498215538236930997670878228551327845934859747060865016",
+   "cond": "0x68bdc057bd18669f01b3e4b408d14733b2680a61c6e5c7a5cd5bdc86a1f41df6",
+   "title": "Dota 2: Team Yandex vs PARIVISION - Game 2 Winner",
+   "outcome": "Team Yandex",
+   "price": 0.45,
+   "stake": 103.71,
+   "reason": "price moved 0.32\u21920.45",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1783939208,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "72663413633237870742152602912076949024714881200491601361514812636170232854563",
@@ -3025,24 +3042,8 @@
    "settled": 1783781024,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783767107,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "94086717682175488292372912031763512631835050964973472839161913179834160769254",
-   "cond": "0x14272984bc3c6a49e9c6141e93b2b6534573765ec89c438986f26151ccfa3d3c",
-   "title": "Will Pohang Steelers FC win on 2026-07-11?",
-   "outcome": "Yes",
-   "price": 0.5987,
-   "stake": 97.7,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "won",
-   "pnl": 64.31,
-   "settled": 1783780828,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 90132.17,
- "updated": 1784388061
+ "updated": 1784388912
 }
