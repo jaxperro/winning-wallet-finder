@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 39.24,
- "deployed": 15.27,
+ "cash": 36.95,
+ "deployed": 17.53,
  "reserve": 0.0,
- "realized": -11.85,
+ "realized": -11.88,
  "adjustments": -0.06,
  "ledger_drift": 2.32,
- "open_count": 10,
- "fees_paid": 2.44,
+ "open_count": 11,
+ "fees_paid": 2.47,
  "fee_rate": 0.03,
  "lag": {
-  "n": 86,
-  "n24": 6,
-  "avg_s": 6.0,
-  "avg_slip_pct": 0.0371,
+  "n": 87,
+  "n24": 7,
+  "avg_s": 6.3,
+  "avg_slip_pct": 0.0373,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "100047439701441329020616151882361846010601062649169172857788350014215786534216",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "PARIVISION",
+   "title": "Dota 2: Team Yandex vs PARIVISION (BO3) - Esports World Cup Playoffs",
+   "their_price": 0.52,
+   "my_price": 0.54,
+   "slippage_pct": 0.0385,
+   "lag_s": 8.4,
+   "shares": 4.19,
+   "cost": 2.26,
+   "fee": 0.03,
+   "opened": 1784393080,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "58169143653343450326195498215538236930997670878228551327845934859747060865016",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2862,5 +2881,5 @@
   }
  ],
  "missed_pnl": 1040.93,
- "updated": 1784391740
+ "updated": 1784393088
 }
