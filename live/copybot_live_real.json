@@ -1823,6 +1823,21 @@
  ],
  "missed": [
   {
+   "ts": 1784377056,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "10916744353953665895148740879560856223867654434417397094964240555712472099459",
+   "cond": "0x9728557919be9ab35b2fd13c763c81ea4456de4dee839ea2982c4e699edb522e",
+   "title": "Map Handicap: JustP (-1.5) vs QUAZAR (+1.5)",
+   "outcome": "QUAZAR",
+   "price": 0.76,
+   "stake": 2.24,
+   "reason": "book unreliable (spread 0.22 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1784285988,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "44468469502362896904382382268326429514759034374954168469772685401278157136699",
@@ -2761,23 +2776,8 @@
    "settled": 1783997367,
    "name": "Kruto2027",
    "exit_checked": true
-  },
-  {
-   "ts": 1783991964,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "24842837270178563045080596501119383388959231063439941109817831657351105273923",
-   "cond": "0x7b2b0ac174514a7ec6351f91a01edd5064cf670c29f539cdfcc4d88bdb9937d0",
-   "title": "Will the next Claude Opus model be released by July 31, 2026?",
-   "outcome": "Yes",
-   "price": 0.79,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
  "missed_pnl": 1039.74,
- "updated": 1784376442
+ "updated": 1784377059
 }
