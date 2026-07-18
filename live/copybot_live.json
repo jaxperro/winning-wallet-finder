@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 102.29,
+ "stake": 98.06,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
  "cash": 1496.48,
- "deployed": 1060.84,
+ "deployed": 955.0,
  "reserve": 0.0,
- "realized": 1557.3,
+ "realized": 1451.45,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 18,
+ "ledger_drift": -0.03,
+ "open_count": 17,
  "fees_paid": 292.47,
  "fee_rate": 0.03,
  "lag": {
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "72443268588318480762947626028985209515769939740457770606675272750357292062749",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "T1",
+   "title": "LoL: T1 vs Karmine Corp - Game 2 Winner",
+   "their_price": 0.65,
+   "my_price": 0.64,
+   "slippage_pct": -0.0154,
+   "lag_s": 1.8,
+   "shares": 165.38,
+   "cost": 105.85,
+   "fee": 1.14,
+   "opened": 1784376436,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -106.99,
+   "settled": 1784393226
+  },
   {
    "token": "100047439701441329020616151882361846010601062649169172857788350014215786534216",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -232,25 +251,6 @@
    "settled": 1784377863,
    "sold_shares": 151.14,
    "sold_proceeds": 112.51
-  },
-  {
-   "token": "72443268588318480762947626028985209515769939740457770606675272750357292062749",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "T1",
-   "title": "LoL: T1 vs Karmine Corp - Game 2 Winner",
-   "their_price": 0.65,
-   "my_price": 0.64,
-   "slippage_pct": -0.0154,
-   "lag_s": 1.8,
-   "shares": 165.38,
-   "cost": 105.85,
-   "fee": 1.14,
-   "opened": 1784376436,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "109624481875348569318303102429519724032296483676540566321245418804293736322472",
@@ -3047,5 +3047,5 @@
   }
  ],
  "missed_pnl": 90262.37,
- "updated": 1784393083
+ "updated": 1784393227
 }
