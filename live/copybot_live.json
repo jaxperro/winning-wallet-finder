@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 102.96,
+ "stake": 103.76,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1510.98,
- "deployed": 1062.97,
+ "cash": 1634.28,
+ "deployed": 959.72,
  "reserve": 0.0,
- "realized": 1573.92,
+ "realized": 1593.97,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 18,
- "fees_paid": 285.63,
+ "open_count": 17,
+ "fees_paid": 285.97,
  "fee_rate": 0.03,
  "lag": {
   "n": 190,
@@ -46,6 +46,27 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "3506443794566179214052380628578788380776940712896382718637294140773955061401",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Gen.G",
+   "title": "LoL: Gen.G vs Dplus KIA - Game 1 Winner",
+   "their_price": 0.77,
+   "my_price": 0.76,
+   "slippage_pct": -0.013,
+   "lag_s": 6.3,
+   "shares": 135.85,
+   "cost": 103.25,
+   "fee": 0.74,
+   "opened": 1784384295,
+   "status": "closed",
+   "exit_price": 0.9075,
+   "pnl": 19.3,
+   "settled": 1784387058,
+   "sold_shares": 135.85,
+   "sold_proceeds": 123.29
+  },
   {
    "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -87,25 +108,6 @@
    "settled": 1784384711,
    "sold_shares": 224.39,
    "sold_proceeds": 98.32
-  },
-  {
-   "token": "3506443794566179214052380628578788380776940712896382718637294140773955061401",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Gen.G",
-   "title": "LoL: Gen.G vs Dplus KIA - Game 1 Winner",
-   "their_price": 0.77,
-   "my_price": 0.76,
-   "slippage_pct": -0.013,
-   "lag_s": 6.3,
-   "shares": 135.85,
-   "cost": 103.25,
-   "fee": 0.74,
-   "opened": 1784384295,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "99187050584684374496347488572453490542664664321038879329793286200731669569886",
@@ -3043,5 +3045,5 @@
   }
  ],
  "missed_pnl": 90132.17,
- "updated": 1784386657
+ "updated": 1784387058
 }
