@@ -1926,6 +1926,21 @@
  ],
  "missed": [
   {
+   "ts": 1784402106,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "91990736572156896332531437772162323719378402759982493855773735188693457077937",
+   "cond": "0x478199016ea7651f150e1fd9beb673cdf17b4c3dbf0f6f19991dddf60b3bb432",
+   "title": "Tauson vs. Krejcikova: Match O/U 22.5",
+   "outcome": "Over",
+   "price": 0.18,
+   "stake": 2.0,
+   "reason": "book unreliable (spread 0.75 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1784391360,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "58169143653343450326195498215538236930997670878228551327845934859747060865016",
@@ -2864,24 +2879,8 @@
    "settled": 1784036324,
    "name": "1kto1m",
    "exit_price": 0.68
-  },
-  {
-   "ts": 1784028615,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "107133788521613312162567181824294634873967810582690705864827492796504434100258",
-   "cond": "0xb575d94615e11aab02c5f8acc2b9e231fc91636362159ad6b52607835c75d7ec",
-   "title": "WTI Crude Oil (WTI) closes above $78 on July 14?",
-   "outcome": "Yes",
-   "price": 0.82,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "sold",
-   "pnl": 0.13,
-   "settled": 1784033163,
-   "name": "0xbadaf319",
-   "exit_price": 0.9349
   }
  ],
  "missed_pnl": 1040.93,
- "updated": 1784395840
+ "updated": 1784402108
 }
