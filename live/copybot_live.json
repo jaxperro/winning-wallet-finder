@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 105.8,
+ "stake": 105.76,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1679.67,
- "deployed": 965.31,
+ "cash": 1572.92,
+ "deployed": 1071.11,
  "reserve": 0.0,
- "realized": 1644.95,
+ "realized": 1644.0,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 18,
- "fees_paid": 272.65,
+ "open_count": 19,
+ "fees_paid": 273.6,
  "fee_rate": 0.03,
  "lag": {
-  "n": 185,
-  "n24": 6,
-  "avg_s": 6.3,
-  "avg_slip_pct": -0.0079,
+  "n": 186,
+  "n24": 7,
+  "avg_s": 5.5,
+  "avg_slip_pct": -0.0088,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "23218419272209042426022712455684092939407650489595858954369385238326321169744",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "BetBoom Team",
+   "title": "Dota 2: BetBoom Team vs Vici Gaming - Game 2 Winner",
+   "their_price": 0.71,
+   "my_price": 0.7,
+   "slippage_pct": -0.0141,
+   "lag_s": 0.5,
+   "shares": 151.14,
+   "cost": 105.8,
+   "fee": 0.95,
+   "opened": 1784377089,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "72443268588318480762947626028985209515769939740457770606675272750357292062749",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2057,29 +2076,24 @@
    "settled": 1783786856,
    "sold_shares": 135.78,
    "sold_proceeds": 86.56
-  },
-  {
-   "token": "111238155193029214626119372717509509454868187612257655146390848111901958320265",
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "name": "LSB1",
-   "outcome": "Yes",
-   "title": "Will Gimcheon Sangmu FC win on 2026-07-11?",
-   "their_price": 0.5088,
-   "my_price": 0.44,
-   "slippage_pct": -0.1352,
-   "shares": 223.2,
-   "cost": 98.21,
-   "fee": 1.65,
-   "opened": 1783767565,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -97.41,
-   "settled": 1783780646,
-   "sold_shares": 5.8,
-   "sold_proceeds": 2.45
   }
  ],
  "missed": [
+  {
+   "ts": 1784377056,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "10916744353953665895148740879560856223867654434417397094964240555712472099459",
+   "cond": "0x9728557919be9ab35b2fd13c763c81ea4456de4dee839ea2982c4e699edb522e",
+   "title": "Map Handicap: JustP (-1.5) vs QUAZAR (+1.5)",
+   "outcome": "QUAZAR",
+   "price": 0.76,
+   "stake": 105.8,
+   "reason": "book unreliable (spread 0.22 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1784340508,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -3019,24 +3033,8 @@
    "settled": 1783780583,
    "name": "0x41558102",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1783777135,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "32083946557663920503716775865697460526633197303585051527116966709905217705878",
-   "cond": "0xc9f52d4c1e790f736f69fcd522263b02bcd3c2b17a729dbf048970ed59ee5808",
-   "title": "Dota 2: L1ga Team vs Level UP - Game 2 Winner",
-   "outcome": "L1ga Team",
-   "price": 0.5485,
-   "stake": 100.07,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 66.02,
-   "settled": 1783777453,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.92
   }
  ],
  "missed_pnl": 90138.24,
- "updated": 1784376550
+ "updated": 1784377092
 }
