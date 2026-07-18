@@ -1884,6 +1884,22 @@
  ],
  "missed": [
   {
+   "ts": 1783939156,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "72663413633237870742152602912076949024714881200491601361514812636170232854563",
+   "cond": "0xd50d0276f9b6c57d7a1b23be8be23a8dcdffed0aebae867de372b26593a9a238",
+   "title": "Hyperbeat FDV above $300M one day after launch?",
+   "outcome": "No",
+   "price": 0.898,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 0.08,
+   "settled": 1784386262,
+   "name": "0xbadaf319",
+   "exit_price": 0.9728
+  },
+  {
    "ts": 1784379486,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "46464336901469148231749620229467543535010257111143284104831372917724022712604",
@@ -2821,24 +2837,8 @@
    "settled": 1784029669,
    "name": "gkmgkldfmg",
    "exit_price": 0.6416
-  },
-  {
-   "ts": 1784027686,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "76755883373039851290695610249455633595892527905785960150127813908400558868227",
-   "cond": "0xa5bd4b831f180564aef6a119e1f94a5d574344e25a546b7a1f14aec7cc6e2d83",
-   "title": "Will Iran announce withdrawal from MOU negotiations by July 24?",
-   "outcome": "No",
-   "price": 0.77,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "sold",
-   "pnl": -0.37,
-   "settled": 1784027785,
-   "name": "BikesAreTheBikes",
-   "exit_price": 0.5
   }
  ],
- "missed_pnl": 1037.65,
- "updated": 1784385157
+ "missed_pnl": 1037.73,
+ "updated": 1784386264
 }
