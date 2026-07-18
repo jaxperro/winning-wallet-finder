@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 105.73,
+ "stake": 105.74,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1635.15,
- "deployed": 1008.23,
+ "cash": 1637.85,
+ "deployed": 1005.57,
  "reserve": 0.0,
- "realized": 1643.34,
+ "realized": 1643.4,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 17,
- "fees_paid": 271.07,
+ "fees_paid": 271.08,
  "fee_rate": 0.03,
  "lag": {
   "n": 184,
@@ -229,8 +229,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 0.12,
-   "sold_proceeds": 0.1
+   "sold_shares": 3.39,
+   "sold_proceeds": 2.8
   },
   {
    "token": "99769792009260570054217311703996683522727922229995804271060316488330979046706",
@@ -2082,6 +2082,21 @@
  ],
  "missed": [
   {
+   "ts": 1784340508,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "75617938399072215829402097410146281839699850277349010268419461006890822261261",
+   "cond": "0x68ffc65d12b23f8f259ff5e69c3af7a2403fc324ce812ea36fb645c8f5e66be3",
+   "title": "Bitcoin Up or Down - July 17, 10:00PM-10:15PM ET",
+   "outcome": "Up",
+   "price": 0.2037,
+   "stake": 105.73,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1784167406,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "7384451899802911723249599486996406665182105515403617543497677786694027499060",
@@ -3020,24 +3035,8 @@
    "settled": 1783777453,
    "name": "gkmgkldfmg",
    "exit_price": 0.92
-  },
-  {
-   "ts": 1783776820,
-   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
-   "token": "66542966921479736150492153890010290615172456230777295742236316360180197142463",
-   "cond": "0x28027472fa8bf888fcfb6bd87350fb2f952f425f1f439877ac89faedcf68f5b9",
-   "title": "Bitcoin Up or Down - July 11, 9:25AM-9:30AM ET",
-   "outcome": "Up",
-   "price": 0.5076,
-   "stake": 100.64,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "lost",
-   "pnl": -102.13,
-   "settled": 1783777012,
-   "name": "0xd96750bf",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 89797.6,
- "updated": 1784339130
+ "updated": 1784340519
 }
