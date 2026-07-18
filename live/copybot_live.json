@@ -2103,10 +2103,11 @@
    "price": 0.18,
    "stake": 98.65,
    "reason": "book unreliable (spread 0.75 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
+   "status": "won",
+   "pnl": 446.98,
+   "settled": 1784411180,
+   "name": "Kruto2027",
+   "exit_checked": true
   },
   {
    "ts": 1784389064,
@@ -3050,6 +3051,6 @@
    "exit_price": 1.0
   }
  ],
- "missed_pnl": 90262.37,
- "updated": 1784405716
+ "missed_pnl": 90709.35,
+ "updated": 1784411185
 }
