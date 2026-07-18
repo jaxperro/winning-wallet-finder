@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 42.98,
- "deployed": 13.1,
+ "cash": 40.65,
+ "deployed": 15.4,
  "reserve": 0.0,
- "realized": -10.29,
+ "realized": -10.31,
  "adjustments": -0.06,
  "ledger_drift": 2.31,
- "open_count": 10,
- "fees_paid": 2.26,
+ "open_count": 11,
+ "fees_paid": 2.28,
  "fee_rate": 0.03,
  "lag": {
-  "n": 82,
-  "n24": 4,
-  "avg_s": 3.9,
-  "avg_slip_pct": 0.0272,
+  "n": 83,
+  "n24": 5,
+  "avg_s": 4.8,
+  "avg_slip_pct": 0.0274,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "23218419272209042426022712455684092939407650489595858954369385238326321169744",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "BetBoom Team",
+   "title": "Dota 2: BetBoom Team vs Vici Gaming - Game 2 Winner",
+   "their_price": 0.71,
+   "my_price": 0.73,
+   "slippage_pct": 0.0282,
+   "lag_s": 8.6,
+   "shares": 3.15,
+   "cost": 2.3,
+   "fee": 0.02,
+   "opened": 1784377089,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "72443268588318480762947626028985209515769939740457770606675272750357292062749",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2779,5 +2798,5 @@
   }
  ],
  "missed_pnl": 1039.74,
- "updated": 1784377059
+ "updated": 1784377115
 }
