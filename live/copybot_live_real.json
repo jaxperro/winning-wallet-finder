@@ -1844,6 +1844,21 @@
  ],
  "missed": [
   {
+   "ts": 1784379486,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "46464336901469148231749620229467543535010257111143284104831372917724022712604",
+   "cond": "0x6b049bc3befa02c22d0cfaee77625fc94e9a6d571f00c015ba7a3b442e306fbc",
+   "title": "LoL: T1 vs Karmine Corp (BO3) - Esports World Cup Playoffs",
+   "outcome": "Karmine Corp",
+   "price": 0.26,
+   "stake": 2.24,
+   "reason": "in-play hold expired unfilled (1s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1784377056,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "10916744353953665895148740879560856223867654434417397094964240555712472099459",
@@ -2781,24 +2796,8 @@
    "settled": 1784027785,
    "name": "BikesAreTheBikes",
    "exit_price": 0.5
-  },
-  {
-   "ts": 1783965172,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "68863380862470769473817017624526026576800718695897153538391077057952557372819",
-   "cond": "0x67d054d9a655ca606802150b8850a07e611c10364de253187869e9d2d0cdfadc",
-   "title": "Set Handicap: Giese/Rafiq (-1.5) vs Ayeni/Chopra (+1.5)",
-   "outcome": "Ayeni/Chopra",
-   "price": 0.7,
-   "stake": 1.0,
-   "reason": "book unreliable (spread 0.29 > 0.08)",
-   "status": "refund",
-   "pnl": -0.29,
-   "settled": 1783997367,
-   "name": "Kruto2027",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 1039.74,
- "updated": 1784378332
+ "updated": 1784379488
 }
