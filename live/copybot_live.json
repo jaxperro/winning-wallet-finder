@@ -2090,21 +2090,6 @@
  ],
  "missed": [
   {
-   "ts": 1784389064,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "69652550707564368147617985733665950972926852562360271813685562356348115305033",
-   "cond": "0x68bdc057bd18669f01b3e4b408d14733b2680a61c6e5c7a5cd5bdc86a1f41df6",
-   "title": "Dota 2: Team Yandex vs PARIVISION - Game 2 Winner",
-   "outcome": "PARIVISION",
-   "price": 0.49,
-   "stake": 103.38,
-   "reason": "book unreliable (spread 0.15 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
-  },
-  {
    "ts": 1784388877,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "58169143653343450326195498215538236930997670878228551327845934859747060865016",
@@ -2114,6 +2099,22 @@
    "price": 0.45,
    "stake": 103.71,
    "reason": "price moved 0.32\u21920.45",
+   "status": "sold",
+   "pnl": 27.12,
+   "settled": 1784389228,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.5824
+  },
+  {
+   "ts": 1784389064,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "69652550707564368147617985733665950972926852562360271813685562356348115305033",
+   "cond": "0x68bdc057bd18669f01b3e4b408d14733b2680a61c6e5c7a5cd5bdc86a1f41df6",
+   "title": "Dota 2: Team Yandex vs PARIVISION - Game 2 Winner",
+   "outcome": "PARIVISION",
+   "price": 0.49,
+   "stake": 103.38,
+   "reason": "book unreliable (spread 0.15 > 0.08)",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -3044,6 +3045,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 90132.17,
- "updated": 1784389074
+ "missed_pnl": 90159.29,
+ "updated": 1784389229
 }
