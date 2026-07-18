@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 40.92,
- "deployed": 14.95,
+ "cash": 38.59,
+ "deployed": 17.27,
  "reserve": 0.0,
- "realized": -10.49,
+ "realized": -10.5,
  "adjustments": -0.06,
- "ledger_drift": 2.31,
- "open_count": 11,
- "fees_paid": 2.34,
+ "ledger_drift": 2.32,
+ "open_count": 12,
+ "fees_paid": 2.35,
  "fee_rate": 0.03,
  "lag": {
-  "n": 84,
-  "n24": 6,
-  "avg_s": 4.5,
-  "avg_slip_pct": 0.0266,
+  "n": 85,
+  "n24": 7,
+  "avg_s": 5.1,
+  "avg_slip_pct": 0.0284,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "3506443794566179214052380628578788380776940712896382718637294140773955061401",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Gen.G",
+   "title": "LoL: Gen.G vs Dplus KIA - Game 1 Winner",
+   "their_price": 0.77,
+   "my_price": 0.8,
+   "slippage_pct": 0.039,
+   "lag_s": 8.3,
+   "shares": 2.9,
+   "cost": 2.32,
+   "fee": 0.01,
+   "opened": 1784384295,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "99187050584684374496347488572453490542664664321038879329793286200731669569886",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2821,5 +2840,5 @@
   }
  ],
  "missed_pnl": 1037.65,
- "updated": 1784384116
+ "updated": 1784384322
 }
