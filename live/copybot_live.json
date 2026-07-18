@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 102.35,
+ "stake": 102.29,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1600.34,
- "deployed": 958.49,
+ "cash": 1496.48,
+ "deployed": 1060.84,
  "reserve": 0.0,
- "realized": 1558.8,
+ "realized": 1557.3,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 17,
- "fees_paid": 290.97,
+ "open_count": 18,
+ "fees_paid": 292.47,
  "fee_rate": 0.03,
  "lag": {
-  "n": 192,
-  "n24": 9,
-  "avg_s": 3.4,
-  "avg_slip_pct": 0.0167,
+  "n": 193,
+  "n24": 10,
+  "avg_s": 3.1,
+  "avg_slip_pct": 0.0131,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "100047439701441329020616151882361846010601062649169172857788350014215786534216",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "PARIVISION",
+   "title": "Dota 2: Team Yandex vs PARIVISION (BO3) - Esports World Cup Playoffs",
+   "their_price": 0.52,
+   "my_price": 0.51,
+   "slippage_pct": -0.0192,
+   "lag_s": 0.5,
+   "shares": 200.69,
+   "cost": 102.35,
+   "fee": 1.5,
+   "opened": 1784393080,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "58169143653343450326195498215538236930997670878228551327845934859747060865016",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2066,26 +2085,6 @@
    "exit_price": 1.0,
    "pnl": 48.9,
    "settled": 1783829902
-  },
-  {
-   "token": "104561914765202402557605641573220843523354738236096573268755318796411743224135",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Mario Bautista",
-   "title": "UFC 329: Cory Sandhagen vs. Mario Bautista (Bantamweight, Main Card)",
-   "their_price": 0.8274,
-   "my_price": 0.85,
-   "slippage_pct": 0.0274,
-   "shares": 113.49,
-   "cost": 96.46,
-   "fee": 0.43,
-   "opened": 1783824112,
-   "status": "closed",
-   "exit_price": 0.8564,
-   "pnl": 0.29,
-   "settled": 1783824243,
-   "sold_shares": 113.49,
-   "sold_proceeds": 97.19
   }
  ],
  "missed": [
@@ -3048,5 +3047,5 @@
   }
  ],
  "missed_pnl": 90262.37,
- "updated": 1784389871
+ "updated": 1784393083
 }
