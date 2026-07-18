@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 103.76,
+ "stake": 103.7,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1634.28,
- "deployed": 959.72,
+ "cash": 1529.08,
+ "deployed": 1063.48,
  "reserve": 0.0,
- "realized": 1593.97,
+ "realized": 1592.54,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 17,
- "fees_paid": 285.97,
+ "open_count": 18,
+ "fees_paid": 287.4,
  "fee_rate": 0.03,
  "lag": {
-  "n": 190,
-  "n24": 8,
-  "avg_s": 5.5,
-  "avg_slip_pct": 0.0074,
+  "n": 191,
+  "n24": 9,
+  "avg_s": 5.2,
+  "avg_slip_pct": 0.0087,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "58169143653343450326195498215538236930997670878228551327845934859747060865016",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Yandex",
+   "title": "Dota 2: Team Yandex vs PARIVISION - Game 2 Winner",
+   "their_price": 0.53,
+   "my_price": 0.54,
+   "slippage_pct": 0.0189,
+   "lag_s": 2.4,
+   "shares": 192.15,
+   "cost": 103.76,
+   "fee": 1.43,
+   "opened": 1784387164,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "3506443794566179214052380628578788380776940712896382718637294140773955061401",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2064,26 +2083,6 @@
    "settled": 1783823373,
    "sold_shares": 124.06,
    "sold_proceeds": 41.04
-  },
-  {
-   "token": "60829743230974931197831424477251722921940032428553255171871752877191212996952",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Brandon Royval",
-   "title": "UFC 329: Brandon Royval vs. Lone'er Kavanagh (Flyweight, Main Card)",
-   "their_price": 0.4997,
-   "my_price": 0.54,
-   "slippage_pct": 0.0806,
-   "shares": 176.55,
-   "cost": 95.34,
-   "fee": 1.32,
-   "opened": 1783821941,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": 79.89,
-   "settled": 1783822404,
-   "sold_shares": 176.55,
-   "sold_proceeds": 176.55
   }
  ],
  "missed": [
@@ -3045,5 +3044,5 @@
   }
  ],
  "missed_pnl": 90132.17,
- "updated": 1784387058
+ "updated": 1784387168
 }
