@@ -5,14 +5,14 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 38.59,
- "deployed": 17.27,
+ "cash": 40.4,
+ "deployed": 15.34,
  "reserve": 0.0,
- "realized": -10.5,
+ "realized": -10.62,
  "adjustments": -0.06,
  "ledger_drift": 2.32,
- "open_count": 12,
- "fees_paid": 2.35,
+ "open_count": 11,
+ "fees_paid": 2.39,
  "fee_rate": 0.03,
  "lag": {
   "n": 85,
@@ -47,6 +47,27 @@
  },
  "bets": [
   {
+   "token": "99187050584684374496347488572453490542664664321038879329793286200731669569886",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "PARIVISION",
+   "title": "Dota 2: Team Yandex vs PARIVISION - Game 1 Winner",
+   "their_price": 0.44,
+   "my_price": 0.45,
+   "slippage_pct": 0.0227,
+   "lag_s": 3.2,
+   "shares": 5.09,
+   "cost": 2.29,
+   "fee": 0.04,
+   "opened": 1784383396,
+   "status": "closed",
+   "exit_price": 0.4275,
+   "pnl": -0.15,
+   "settled": 1784384489,
+   "sold_shares": 5.09,
+   "sold_proceeds": 2.18
+  },
+  {
    "token": "3506443794566179214052380628578788380776940712896382718637294140773955061401",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -64,27 +85,6 @@
    "exit_price": null,
    "pnl": null,
    "settled": null
-  },
-  {
-   "token": "99187050584684374496347488572453490542664664321038879329793286200731669569886",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "PARIVISION",
-   "title": "Dota 2: Team Yandex vs PARIVISION - Game 1 Winner",
-   "their_price": 0.44,
-   "my_price": 0.45,
-   "slippage_pct": 0.0227,
-   "lag_s": 3.2,
-   "shares": 5.09,
-   "cost": 2.29,
-   "fee": 0.04,
-   "opened": 1784383396,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 0.8,
-   "sold_proceeds": 0.37
   },
   {
    "token": "23218419272209042426022712455684092939407650489595858954369385238326321169744",
@@ -2840,5 +2840,5 @@
   }
  ],
  "missed_pnl": 1037.65,
- "updated": 1784384322
+ "updated": 1784384489
 }
