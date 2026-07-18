@@ -1,18 +1,18 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.23,
+ "stake": 2.18,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 38.14,
- "deployed": 17.57,
+ "cash": 39.24,
+ "deployed": 15.27,
  "reserve": 0.0,
- "realized": -10.65,
+ "realized": -11.85,
  "adjustments": -0.06,
  "ledger_drift": 2.32,
- "open_count": 11,
- "fees_paid": 2.42,
+ "open_count": 10,
+ "fees_paid": 2.44,
  "fee_rate": 0.03,
  "lag": {
   "n": 86,
@@ -60,10 +60,12 @@
    "cost": 2.3,
    "fee": 0.03,
    "opened": 1784387164,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "closed",
+   "exit_price": 0.274,
+   "pnl": -1.23,
+   "settled": 1784389488,
+   "sold_shares": 4.03,
+   "sold_proceeds": 1.1
   },
   {
    "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
@@ -1903,6 +1905,22 @@
  ],
  "missed": [
   {
+   "ts": 1784377056,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "10916744353953665895148740879560856223867654434417397094964240555712472099459",
+   "cond": "0x9728557919be9ab35b2fd13c763c81ea4456de4dee839ea2982c4e699edb522e",
+   "title": "Map Handicap: JustP (-1.5) vs QUAZAR (+1.5)",
+   "outcome": "QUAZAR",
+   "price": 0.76,
+   "stake": 2.24,
+   "reason": "book unreliable (spread 0.22 > 0.08)",
+   "status": "sold",
+   "pnl": 0.6,
+   "settled": 1784389487,
+   "name": "Kruto2027",
+   "exit_price": 0.9701
+  },
+  {
    "ts": 1784388877,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "58169143653343450326195498215538236930997670878228551327845934859747060865016",
@@ -1964,21 +1982,6 @@
    "settled": 1784381747,
    "name": "AIcAIc",
    "exit_price": 0.0239
-  },
-  {
-   "ts": 1784377056,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "10916744353953665895148740879560856223867654434417397094964240555712472099459",
-   "cond": "0x9728557919be9ab35b2fd13c763c81ea4456de4dee839ea2982c4e699edb522e",
-   "title": "Map Handicap: JustP (-1.5) vs QUAZAR (+1.5)",
-   "outcome": "QUAZAR",
-   "price": 0.76,
-   "stake": 2.24,
-   "reason": "book unreliable (spread 0.22 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
   },
   {
    "ts": 1784285988,
@@ -2857,6 +2860,6 @@
    "exit_price": 0.5363
   }
  ],
- "missed_pnl": 1038.25,
- "updated": 1784389162
+ "missed_pnl": 1038.85,
+ "updated": 1784389488
 }
