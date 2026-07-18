@@ -1905,6 +1905,21 @@
  ],
  "missed": [
   {
+   "ts": 1784391360,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "58169143653343450326195498215538236930997670878228551327845934859747060865016",
+   "cond": "0x68bdc057bd18669f01b3e4b408d14733b2680a61c6e5c7a5cd5bdc86a1f41df6",
+   "title": "Dota 2: Team Yandex vs PARIVISION - Game 2 Winner",
+   "outcome": "Team Yandex",
+   "price": 0.75,
+   "stake": 2.18,
+   "reason": "book unreliable (spread 0.14 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784389064,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "69652550707564368147617985733665950972926852562360271813685562356348115305033",
@@ -2843,24 +2858,8 @@
    "settled": 1784033163,
    "name": "0xbadaf319",
    "exit_price": 0.9349
-  },
-  {
-   "ts": 1784030737,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "43429083182986427425572947360954920494954132341616449095164581234599055860363",
-   "cond": "0x2bb66399ec3f2a5eac9af9e5431f5f7f3b912e0d41619a01135459c6546bdf42",
-   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 1 Winner",
-   "outcome": "Team Liquid",
-   "price": 0.51,
-   "stake": 1.0,
-   "reason": "price moved 0.33\u21920.51",
-   "status": "sold",
-   "pnl": 0.02,
-   "settled": 1784030939,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.5363
   }
  ],
  "missed_pnl": 1040.46,
- "updated": 1784390257
+ "updated": 1784391360
 }
