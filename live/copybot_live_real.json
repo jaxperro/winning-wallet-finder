@@ -1804,6 +1804,21 @@
  ],
  "missed": [
   {
+   "ts": 1784285988,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "44468469502362896904382382268326429514759034374954168469772685401278157136699",
+   "cond": "0x33202ea27cf7fbf8d387c6ef1e0eb956dc999ffb96385b6fe67b84ea4a364952",
+   "title": "Will Anthropic extend Claude Fable 5 paid-plan access again by July 19?",
+   "outcome": "No",
+   "price": 0.21,
+   "stake": 2.45,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "lost",
+   "pnl": -2.51,
+   "settled": 1784351625,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784321590,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "36572361863292743525172722296256449344593421343195350786366455281513675169221",
@@ -2013,21 +2028,6 @@
    "settled": 1784288596,
    "name": "gkmgkldfmg",
    "exit_price": 0.2769
-  },
-  {
-   "ts": 1784285988,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "44468469502362896904382382268326429514759034374954168469772685401278157136699",
-   "cond": "0x33202ea27cf7fbf8d387c6ef1e0eb956dc999ffb96385b6fe67b84ea4a364952",
-   "title": "Will Anthropic extend Claude Fable 5 paid-plan access again by July 19?",
-   "outcome": "No",
-   "price": 0.21,
-   "stake": 2.45,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784282642,
@@ -2758,6 +2758,6 @@
    "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 1042.25,
- "updated": 1784346138
+ "missed_pnl": 1039.74,
+ "updated": 1784351625
 }
