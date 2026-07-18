@@ -2091,10 +2091,11 @@
    "price": 0.2037,
    "stake": 105.73,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "1kto1m"
+   "status": "sold",
+   "pnl": 340.64,
+   "settled": 1784341135,
+   "name": "1kto1m",
+   "exit_price": 0.8683
   },
   {
    "ts": 1784167406,
@@ -3037,6 +3038,6 @@
    "exit_price": 0.92
   }
  ],
- "missed_pnl": 89797.6,
- "updated": 1784340519
+ "missed_pnl": 90138.24,
+ "updated": 1784341136
 }
