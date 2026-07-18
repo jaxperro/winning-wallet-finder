@@ -96,6 +96,8 @@ def main():
     while True:
         def on_open(ws):
             ws.send(SUB)
+            tape.last_msg = time.time()   # fresh clock — a stale one from the
+            # PREVIOUS connection would trip the guard instantly and loop
             log("rtds: connected — recording unfiltered trades")
 
             def ping():
@@ -105,8 +107,8 @@ def main():
                         ws.send('{"action":"ping"}')
                     except Exception:
                         break
-                    if time.time() - tape.last_msg > 120:
-                        log("rtds: silent 120s — forcing reconnect")
+                    if time.time() - tape.last_msg > 45:
+                        log("rtds: silent 45s — forcing reconnect")
                         tape.gaps += 1
                         try:
                             ws.close()
