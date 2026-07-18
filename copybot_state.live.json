@@ -15002,10 +15002,24 @@
       "pnl": null,
       "settled": null,
       "name": "Kruto2027"
+    },
+    {
+      "ts": 1784405095,
+      "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+      "token": "90139378703681641386129407288116535136755368754469047343471414606378876598264",
+      "cond": "0xd861520749b6b912c50fcb8911be659834db5b9f1aad02ed792c79ebc89808ba",
+      "title": "Bitcoin Up or Down - July 18, 4:00PM-4:15PM ET",
+      "outcome": "Up",
+      "price": 0.401,
+      "stake": 2.0,
+      "reason": "not copied in the detection window (reconciled)",
+      "status": "open",
+      "pnl": null,
+      "settled": null
     }
   ],
   "feed_sig": "bca76a97ff96190d32655f0987199891",
-  "feed_pushed_at": 1784404707.1060152,
+  "feed_pushed_at": 1784404964.6888635,
   "adjustments": [
     {
       "ts": 1783906689,
@@ -15045,7 +15059,7 @@
     "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784403555,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784395746,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784387404,
-    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784403732,
+    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784405071,
     "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784404618
   }
 }

@@ -1926,6 +1926,21 @@
  ],
  "missed": [
   {
+   "ts": 1784405095,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "90139378703681641386129407288116535136755368754469047343471414606378876598264",
+   "cond": "0xd861520749b6b912c50fcb8911be659834db5b9f1aad02ed792c79ebc89808ba",
+   "title": "Bitcoin Up or Down - July 18, 4:00PM-4:15PM ET",
+   "outcome": "Up",
+   "price": 0.401,
+   "stake": 2.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1784402106,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "91990736572156896332531437772162323719378402759982493855773735188693457077937",
@@ -2863,24 +2878,8 @@
    "settled": 1784036958,
    "name": "gkmgkldfmg",
    "exit_price": 0.7
-  },
-  {
-   "ts": 1784036144,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "97876504653834435837420333457865531621599310718225369500483292700893101165019",
-   "cond": "0x3f21ea30dd56b175bcbf30f0dd3cbfc57957035404f5ab0d2f4fe10859f5d267",
-   "title": "S&P 500 (SPX) Up or Down on July 14?",
-   "outcome": "Up",
-   "price": 0.58,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "sold",
-   "pnl": 0.15,
-   "settled": 1784036324,
-   "name": "1kto1m",
-   "exit_price": 0.68
   }
  ],
  "missed_pnl": 1040.93,
- "updated": 1784404818
+ "updated": 1784405098
 }
