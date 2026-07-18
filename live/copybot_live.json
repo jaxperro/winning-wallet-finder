@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 103.22,
+ "stake": 103.17,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1515.37,
- "deployed": 1065.09,
+ "cash": 1419.1,
+ "deployed": 1160.27,
  "reserve": 0.0,
- "realized": 1580.44,
+ "realized": 1579.33,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 19,
- "fees_paid": 282.3,
+ "open_count": 20,
+ "fees_paid": 284.1,
  "fee_rate": 0.03,
  "lag": {
-  "n": 189,
-  "n24": 9,
-  "avg_s": 4.6,
-  "avg_slip_pct": -0.0026,
+  "n": 190,
+  "n24": 10,
+  "avg_s": 5.0,
+  "avg_slip_pct": 0.0061,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,27 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "99187050584684374496347488572453490542664664321038879329793286200731669569886",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "PARIVISION",
+   "title": "Dota 2: Team Yandex vs PARIVISION - Game 1 Winner",
+   "their_price": 0.4241,
+   "my_price": 0.46,
+   "slippage_pct": 0.0848,
+   "lag_s": 9.0,
+   "shares": 224.39,
+   "cost": 103.22,
+   "fee": 1.67,
+   "opened": 1784384319,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "sold_shares": 17.49,
+   "sold_proceeds": 8.61
+  },
   {
    "token": "3506443794566179214052380628578788380776940712896382718637294140773955061401",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2061,26 +2082,6 @@
    "settled": 1783822404,
    "sold_shares": 176.55,
    "sold_proceeds": 176.55
-  },
-  {
-   "token": "75547676899565417061748996551784035227286947758945008419210215158883005757610",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "King Green",
-   "title": "UFC 329: King Green vs. Terrance McKinney (Lightweight, Main Card)",
-   "their_price": 0.6152,
-   "my_price": 0.59,
-   "slippage_pct": -0.0409,
-   "shares": 157.13,
-   "cost": 92.71,
-   "fee": 1.14,
-   "opened": 1783819873,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": 63.28,
-   "settled": 1783820015,
-   "sold_shares": 157.13,
-   "sold_proceeds": 157.13
   }
  ],
  "missed": [
@@ -3040,5 +3041,5 @@
   }
  ],
  "missed_pnl": 90138.24,
- "updated": 1784384301
+ "updated": 1784384392
 }
