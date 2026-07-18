@@ -1853,10 +1853,11 @@
    "price": 0.26,
    "stake": 2.24,
    "reason": "in-play hold expired unfilled (1s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
+   "status": "sold",
+   "pnl": -2.09,
+   "settled": 1784381747,
+   "name": "AIcAIc",
+   "exit_price": 0.0239
   },
   {
    "ts": 1784377056,
@@ -2798,6 +2799,6 @@
    "exit_price": 0.5
   }
  ],
- "missed_pnl": 1039.74,
- "updated": 1784379488
+ "missed_pnl": 1037.65,
+ "updated": 1784381747
 }
