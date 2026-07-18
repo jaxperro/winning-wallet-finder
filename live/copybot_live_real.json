@@ -1,24 +1,24 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.24,
+ "stake": 2.23,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 42.88,
- "deployed": 13.02,
+ "cash": 40.55,
+ "deployed": 15.31,
  "reserve": 0.0,
- "realized": -10.46,
+ "realized": -10.5,
  "adjustments": -0.06,
- "ledger_drift": 2.32,
- "open_count": 10,
- "fees_paid": 2.3,
+ "ledger_drift": 2.31,
+ "open_count": 11,
+ "fees_paid": 2.33,
  "fee_rate": 0.03,
  "lag": {
-  "n": 83,
-  "n24": 5,
-  "avg_s": 4.8,
-  "avg_slip_pct": 0.0274,
+  "n": 84,
+  "n24": 6,
+  "avg_s": 4.5,
+  "avg_slip_pct": 0.0266,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "99187050584684374496347488572453490542664664321038879329793286200731669569886",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "PARIVISION",
+   "title": "Dota 2: Team Yandex vs PARIVISION - Game 1 Winner",
+   "their_price": 0.44,
+   "my_price": 0.45,
+   "slippage_pct": 0.0227,
+   "lag_s": 3.2,
+   "shares": 5.09,
+   "cost": 2.29,
+   "fee": 0.04,
+   "opened": 1784383396,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "23218419272209042426022712455684092939407650489595858954369385238326321169744",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2800,5 +2819,5 @@
   }
  ],
  "missed_pnl": 1037.65,
- "updated": 1784381747
+ "updated": 1784383401
 }
