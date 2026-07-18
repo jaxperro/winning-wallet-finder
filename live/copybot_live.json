@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 103.25,
+ "stake": 103.22,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1619.36,
- "deployed": 961.84,
+ "cash": 1515.37,
+ "deployed": 1065.09,
  "reserve": 0.0,
- "realized": 1581.18,
+ "realized": 1580.44,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 18,
- "fees_paid": 281.56,
+ "open_count": 19,
+ "fees_paid": 282.3,
  "fee_rate": 0.03,
  "lag": {
-  "n": 188,
-  "n24": 8,
-  "avg_s": 4.3,
-  "avg_slip_pct": -0.0014,
+  "n": 189,
+  "n24": 9,
+  "avg_s": 4.6,
+  "avg_slip_pct": -0.0026,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "3506443794566179214052380628578788380776940712896382718637294140773955061401",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Gen.G",
+   "title": "LoL: Gen.G vs Dplus KIA - Game 1 Winner",
+   "their_price": 0.77,
+   "my_price": 0.76,
+   "slippage_pct": -0.013,
+   "lag_s": 6.3,
+   "shares": 135.85,
+   "cost": 103.25,
+   "fee": 0.74,
+   "opened": 1784384295,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "99187050584684374496347488572453490542664664321038879329793286200731669569886",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2062,27 +2081,24 @@
    "settled": 1783820015,
    "sold_shares": 157.13,
    "sold_proceeds": 157.13
-  },
-  {
-   "token": "103463464943572749166715825902436097005749231905022823443969199466445385329466",
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "name": "LSB1",
-   "outcome": "No",
-   "title": "Exact Score: Norway 1 - 1 England?",
-   "their_price": 0.88,
-   "my_price": 0.81,
-   "slippage_pct": -0.0795,
-   "shares": 119.29,
-   "cost": 96.62,
-   "fee": 0.55,
-   "opened": 1783806619,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -97.17,
-   "settled": 1783814994
   }
  ],
  "missed": [
+  {
+   "ts": 1784384209,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "99187050584684374496347488572453490542664664321038879329793286200731669569886",
+   "cond": "0xb2edf42ea5c8ec24809ee447a5ff06d39b70afbc52d94ae24d62d0280a08be91",
+   "title": "Dota 2: Team Yandex vs PARIVISION - Game 1 Winner",
+   "outcome": "PARIVISION",
+   "price": 0.53,
+   "stake": 103.25,
+   "reason": "price moved 0.45\u21920.53",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
   {
    "ts": 1784377056,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -3021,24 +3037,8 @@
    "settled": 1783780828,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783770234,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "105212104196091726392140052817325444324784813554106263063196477471085394528921",
-   "cond": "0xde8bac1e7c29832d29ae69c93248e6085e947a9909ff9c95f11ea7504257dd45",
-   "title": "Gwangju FC vs. Pohang Steelers FC: Pohang Steelers FC O/U 1.5",
-   "outcome": "Over",
-   "price": 0.91,
-   "stake": 100.03,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 9.62,
-   "settled": 1783780583,
-   "name": "0x41558102",
-   "exit_price": 1.0
   }
  ],
  "missed_pnl": 90138.24,
- "updated": 1784384166
+ "updated": 1784384301
 }
