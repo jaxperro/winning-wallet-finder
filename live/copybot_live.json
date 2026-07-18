@@ -2094,6 +2094,21 @@
  ],
  "missed": [
   {
+   "ts": 1784402106,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "91990736572156896332531437772162323719378402759982493855773735188693457077937",
+   "cond": "0x478199016ea7651f150e1fd9beb673cdf17b4c3dbf0f6f19991dddf60b3bb432",
+   "title": "Tauson vs. Krejcikova: Match O/U 22.5",
+   "outcome": "Over",
+   "price": 0.18,
+   "stake": 98.65,
+   "reason": "book unreliable (spread 0.75 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1784389064,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "69652550707564368147617985733665950972926852562360271813685562356348115305033",
@@ -3033,24 +3048,8 @@
    "settled": 1783789653,
    "name": "0x41558102",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1783784707,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "107268250696899722989818361141009210381365569902222649850764832303284830201491",
-   "cond": "0xb2b222cf79fcf899e479bbf711e02198af67817a2740286f71b950830717e3e2",
-   "title": "Will the price of Bitcoin be above $64,000 on July 11?",
-   "outcome": "Yes",
-   "price": 0.831,
-   "stake": 96.3,
-   "reason": "price moved 0.76\u21920.83",
-   "status": "won",
-   "pnl": 19.1,
-   "settled": 1783786726,
-   "name": "0xbadaf319",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 90262.37,
- "updated": 1784394359
+ "updated": 1784402108
 }
