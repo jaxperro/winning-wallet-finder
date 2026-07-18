@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 103.53,
+ "stake": 103.45,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1626.3,
- "deployed": 961.84,
+ "cash": 1521.0,
+ "deployed": 1065.37,
  "reserve": 0.0,
- "realized": 1588.11,
+ "realized": 1586.34,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 18,
- "fees_paid": 278.04,
+ "open_count": 19,
+ "fees_paid": 279.81,
  "fee_rate": 0.03,
  "lag": {
-  "n": 187,
-  "n24": 7,
-  "avg_s": 4.9,
-  "avg_slip_pct": 0.0017,
+  "n": 188,
+  "n24": 8,
+  "avg_s": 4.3,
+  "avg_slip_pct": -0.0014,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "99187050584684374496347488572453490542664664321038879329793286200731669569886",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "PARIVISION",
+   "title": "Dota 2: Team Yandex vs PARIVISION - Game 1 Winner",
+   "their_price": 0.44,
+   "my_price": 0.43,
+   "slippage_pct": -0.0227,
+   "lag_s": 0.8,
+   "shares": 240.76,
+   "cost": 103.53,
+   "fee": 1.77,
+   "opened": 1784383396,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "46464336901469148231749620229467543535010257111143284104831372917724022712604",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2059,26 +2078,6 @@
    "exit_price": 0.0,
    "pnl": -97.17,
    "settled": 1783814994
-  },
-  {
-   "token": "113091218397444067989972632020225312341889014436526883908493943923995167586912",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on July 11?",
-   "their_price": 0.905,
-   "my_price": 0.853,
-   "slippage_pct": -0.0575,
-   "shares": 73.42,
-   "cost": 62.63,
-   "fee": 0.28,
-   "opened": 1783784263,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": -0.61,
-   "settled": 1783786979,
-   "sold_shares": 67.1,
-   "sold_proceeds": 55.97
   }
  ],
  "missed": [
@@ -3039,5 +3038,5 @@
   }
  ],
  "missed_pnl": 90138.24,
- "updated": 1784381294
+ "updated": 1784383399
 }
