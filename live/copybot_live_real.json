@@ -5,14 +5,14 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 37.69,
- "deployed": 14.56,
+ "cash": 39.29,
+ "deployed": 12.99,
  "reserve": 0.0,
- "realized": -14.11,
+ "realized": -14.08,
  "adjustments": -0.06,
  "ledger_drift": 2.32,
- "open_count": 10,
- "fees_paid": 2.48,
+ "open_count": 9,
+ "fees_paid": 2.5,
  "fee_rate": 0.03,
  "lag": {
   "n": 87,
@@ -47,6 +47,27 @@
  },
  "bets": [
   {
+   "token": "100047439701441329020616151882361846010601062649169172857788350014215786534216",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "PARIVISION",
+   "title": "Dota 2: Team Yandex vs PARIVISION (BO3) - Esports World Cup Playoffs",
+   "their_price": 0.52,
+   "my_price": 0.54,
+   "slippage_pct": 0.0385,
+   "lag_s": 8.4,
+   "shares": 4.19,
+   "cost": 2.26,
+   "fee": 0.03,
+   "opened": 1784393080,
+   "status": "closed",
+   "exit_price": 0.5588,
+   "pnl": 0.05,
+   "settled": 1784393909,
+   "sold_shares": 4.19,
+   "sold_proceeds": 2.34
+  },
+  {
    "token": "72443268588318480762947626028985209515769939740457770606675272750357292062749",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "name": "AIcAIc",
@@ -64,27 +85,6 @@
    "exit_price": 0.0,
    "pnl": -2.29,
    "settled": 1784393199
-  },
-  {
-   "token": "100047439701441329020616151882361846010601062649169172857788350014215786534216",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "PARIVISION",
-   "title": "Dota 2: Team Yandex vs PARIVISION (BO3) - Esports World Cup Playoffs",
-   "their_price": 0.52,
-   "my_price": 0.54,
-   "slippage_pct": 0.0385,
-   "lag_s": 8.4,
-   "shares": 4.19,
-   "cost": 2.26,
-   "fee": 0.03,
-   "opened": 1784393080,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 1.29,
-   "sold_proceeds": 0.74
   },
   {
    "token": "58169143653343450326195498215538236930997670878228551327845934859747060865016",
@@ -2883,5 +2883,5 @@
   }
  ],
  "missed_pnl": 1040.93,
- "updated": 1784393854
+ "updated": 1784393909
 }
