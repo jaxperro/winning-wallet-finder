@@ -5,13 +5,13 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 40.4,
- "deployed": 15.34,
+ "cash": 40.46,
+ "deployed": 15.28,
  "reserve": 0.0,
- "realized": -10.62,
+ "realized": -10.63,
  "adjustments": -0.06,
  "ledger_drift": 2.32,
- "open_count": 11,
+ "open_count": 10,
  "fees_paid": 2.39,
  "fee_rate": 0.03,
  "lag": {
@@ -46,6 +46,27 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Iran leadership change by July 31?",
+   "their_price": 0.936,
+   "my_price": 0.961,
+   "slippage_pct": 0.0267,
+   "lag_s": 2.0,
+   "shares": 2.33,
+   "cost": 2.24,
+   "fee": 0.0,
+   "opened": 1784319276,
+   "status": "closed",
+   "exit_price": 0.955,
+   "pnl": -0.02,
+   "settled": 1784385157,
+   "sold_shares": 2.33,
+   "sold_proceeds": 2.23
+  },
   {
    "token": "99187050584684374496347488572453490542664664321038879329793286200731669569886",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -146,27 +167,6 @@
    "settled": 1784320096,
    "sold_shares": 0.78,
    "sold_proceeds": 0.78
-  },
-  {
-   "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Iran leadership change by July 31?",
-   "their_price": 0.936,
-   "my_price": 0.961,
-   "slippage_pct": 0.0267,
-   "lag_s": 2.0,
-   "shares": 2.33,
-   "cost": 2.24,
-   "fee": 0.0,
-   "opened": 1784319276,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 2.27,
-   "sold_proceeds": 2.17
   },
   {
    "token": "110536989543612561899836326685728311541346128503675227319696677241365666291302",
@@ -2840,5 +2840,5 @@
   }
  ],
  "missed_pnl": 1037.65,
- "updated": 1784384489
+ "updated": 1784385157
 }
