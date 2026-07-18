@@ -2090,6 +2090,22 @@
  ],
  "missed": [
   {
+   "ts": 1784377056,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "10916744353953665895148740879560856223867654434417397094964240555712472099459",
+   "cond": "0x9728557919be9ab35b2fd13c763c81ea4456de4dee839ea2982c4e699edb522e",
+   "title": "Map Handicap: JustP (-1.5) vs QUAZAR (+1.5)",
+   "outcome": "QUAZAR",
+   "price": 0.76,
+   "stake": 105.8,
+   "reason": "book unreliable (spread 0.22 > 0.08)",
+   "status": "sold",
+   "pnl": 28.37,
+   "settled": 1784389548,
+   "name": "Kruto2027",
+   "exit_price": 0.9701
+  },
+  {
    "ts": 1784388877,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "58169143653343450326195498215538236930997670878228551327845934859747060865016",
@@ -2151,21 +2167,6 @@
    "settled": 1784384731,
    "name": "gkmgkldfmg",
    "exit_price": 0.495
-  },
-  {
-   "ts": 1784377056,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "10916744353953665895148740879560856223867654434417397094964240555712472099459",
-   "cond": "0x9728557919be9ab35b2fd13c763c81ea4456de4dee839ea2982c4e699edb522e",
-   "title": "Map Handicap: JustP (-1.5) vs QUAZAR (+1.5)",
-   "outcome": "QUAZAR",
-   "price": 0.76,
-   "stake": 105.8,
-   "reason": "book unreliable (spread 0.22 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
   },
   {
    "ts": 1784340508,
@@ -3045,6 +3046,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 90159.29,
- "updated": 1784389229
+ "missed_pnl": 90187.66,
+ "updated": 1784389549
 }

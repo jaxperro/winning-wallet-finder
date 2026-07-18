@@ -14289,8 +14289,8 @@
     }
   },
   "hwm": 2849.150445045735,
-  "feed_sig": "fe54f3a0638b0969f535daaba6dbb20f",
-  "feed_pushed_at": 1784389218.36025,
+  "feed_sig": "0963ea9adf18270199fa14a0cd48f425",
+  "feed_pushed_at": 1784389481.2120318,
   "missed": [
     {
       "ts": 1783590977,
@@ -16032,10 +16032,11 @@
       "price": 0.76,
       "stake": 105.8,
       "reason": "book unreliable (spread 0.22 > 0.08)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "Kruto2027"
+      "status": "sold",
+      "pnl": 28.37,
+      "settled": 1784389548,
+      "name": "Kruto2027",
+      "exit_price": 0.9701
     },
     {
       "ts": 1784384209,
