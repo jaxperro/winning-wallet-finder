@@ -44,7 +44,16 @@ FILLS = os.path.join(HERE, "valuebot_fills.jsonl")
 
 BANK = 1000.0                      # paper bankroll
 STAKE = 1.0                        # flat, = venue minimum (reality)
-MAX_PX = 0.02                      # the studied bucket boundary
+MIN_PX = 0.01                      # V0.1 (2026-07-17 sub-bucket study): the
+MAX_PX = 0.02                      # bucket is a BARBELL — 1-2c runs 1.28x
+                                   # (n=424k, net +24%/$) while 0.2-1c is
+                                   # toxic (0.62-0.70x) and 0-0.2c (3.13x in
+                                   # history) is shelved until the RTDS tape
+                                   # can confirm it in the current era: the
+                                   # paper book's 404 straight 0.1c losses
+                                   # can't reject it (E[wins]=1.3) but the
+                                   # same-day weather-ladder composition
+                                   # smells like modern adverse selection.
 BAND = 1.05                        # protected band: ask*(1+5%), like the live executor
 MAX_OPEN = 300                     # portfolio cap -> max $300 deployed
 SCAN_S = 300
@@ -121,7 +130,7 @@ def scan_universe(max_pages=60):
             if len(prices) != len(toks) or not toks:
                 continue
             for i, px in enumerate(prices):
-                if 0.0 < px <= MAX_PX:
+                if MIN_PX <= px <= MAX_PX:
                     ev = (m.get("events") or [{}])[0]
                     out.append({
                         "token": toks[i], "outcome": outs[i] if i < len(outs) else "?",
@@ -148,7 +157,7 @@ def book_asks(token):
         return None
 
 
-def model_fill(asks, stake, max_px, band=BAND):
+def model_fill(asks, stake, max_px, band=BAND, min_px=0.0):
     """Walk the real ask ladder inside min(max_px, best_ask*band); a FAK for
     `stake` dollars either fully fills inside the band or is an honest MISS
     (None, reason). Returns (shares, avg_price, None) on fill."""
@@ -159,6 +168,8 @@ def model_fill(asks, stake, max_px, band=BAND):
     best = asks[0][0]
     if best > max_px:
         return None, None, f"best ask {best:.3f} above {max_px:.2f}"
+    if best < min_px:
+        return None, None, f"best ask {best:.3f} below band floor {min_px:.2f}"
     cap = min(max_px, round(best * band, 6))
     usd, shares = 0.0, 0.0
     for px, sz in asks:
@@ -249,7 +260,7 @@ def open_positions(st, cands, budget):
         st["attempted"][tok] = now
         checked += 1
         st["stats"]["attempts"] += 1
-        shares, px, reason = model_fill(book_asks(tok), STAKE, MAX_PX)
+        shares, px, reason = model_fill(book_asks(tok), STAKE, MAX_PX, min_px=MIN_PX)
         if reason:
             st["stats"]["misses"] += 1
             st["missed"].append({"ts": int(now), "token": tok, "mark": c["mark"],
@@ -321,7 +332,7 @@ def write_feed(st):
     deployed = sum(p["cost"] for p in st["my_pos"].values())
     mult = (s["returned"] / s["staked"]) if s["staked"] else None
     # break-even multiple is 1 + fee drag; the study's promise was ~1.24x
-    feed = {"mode": "paper-value", "bank": BANK, "cash": round(st["cash"], 2),
+    feed = {"mode": "paper-value", "strategy": "v0.1 1-2c band", "bank": BANK, "cash": round(st["cash"], 2),
             "deployed": round(deployed, 2), "open_count": len(st["my_pos"]),
             "stats": s, "realized_multiple": round(mult, 4) if mult else None,
             "fill_rate": round(s["fills"] / s["attempts"], 4) if s["attempts"] else None,
