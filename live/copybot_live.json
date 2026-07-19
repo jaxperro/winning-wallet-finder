@@ -2102,6 +2102,21 @@
  ],
  "missed": [
   {
+   "ts": 1784481244,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "42936981830905824453534043956708985265540220333757051125171389193089187972089",
+   "cond": "0x01a6556cf3057f36658c61ba18b2c8023bfd7e1eac2541523f54ed19bfc9da53",
+   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 3 Winner",
+   "outcome": "BetBoom Team",
+   "price": 0.19,
+   "stake": 105.73,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784477395,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "89753340355558804329056284757801794404260582483119786963475710029909788245640",
@@ -3034,24 +3049,8 @@
    "settled": 1783867043,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783863331,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "84502716136213781728963328899707683260350624645362486645725504535263198032073",
-   "cond": "0xa4807375ad750023e039c1a666413760e915ab367d2bfc57034bc5d631775d07",
-   "title": "Dota 2: 1win vs Team Yandex - Game 2 Winner",
-   "outcome": "1win",
-   "price": 0.47,
-   "stake": 94.02,
-   "reason": "price moved 0.38\u21920.47",
-   "status": "sold",
-   "pnl": 5.71,
-   "settled": 1783863540,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.5135
   }
  ],
  "missed_pnl": 90548.8,
- "updated": 1784480713
+ "updated": 1784481248
 }
