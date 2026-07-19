@@ -2094,6 +2094,21 @@
  ],
  "missed": [
   {
+   "ts": 1784438567,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "63579552197509143589959693779993809440480166595009463744830254978620312708977",
+   "cond": "0x46d3552e03b57d3dd99685973c0e2df2e1f177c70c3641fe17d539e3a4a23a22",
+   "title": "Will Trump's approval rating hit 46% in 2026?",
+   "outcome": "No",
+   "price": 0.769,
+   "stake": 61.58,
+   "reason": "book unreliable (spread 0.13 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784425689,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "29977440714027702794755312644671117389655288253327722609561816044442289528639",
@@ -3033,24 +3048,8 @@
    "settled": 1783814995,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783811464,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "85590802024993543661537425965264345251257796759459810241384876806751805341892",
-   "cond": "0x85aa21232741b7a20bb96a9794e6ca05dd3f0e750b76e6f38838530b18184fa2",
-   "title": "Jude Bellingham: 2+ goals",
-   "outcome": "Yes",
-   "price": 0.0299,
-   "stake": 96.6,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "lost",
-   "pnl": -99.41,
-   "settled": 1783814864,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 90686.25,
- "updated": 1784426319
+ "updated": 1784438568
 }
