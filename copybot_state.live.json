@@ -1,7 +1,6 @@
 {
   "started_at": 1783572616.4091802,
   "seen_tx": [
-    "0x43c0a9f672a612e4d12faaede3daa07b4d52bdacde07b9d35c6788a535eeeb8f",
     "0x6980de1b2d4c7a1d77a26fa9dd5f079bc9ec440d8ade0435d078c8e1d0b5794e",
     "0xf25eb3c07633bb148085811e78249ada330a6a9ae63c79ac76d7c186de16d426",
     "0x33937d88a753bec3092b6b4cc30831642317f0af11b44ce4f0e07c9f75095640",
@@ -5000,7 +4999,8 @@
     "0x73385ddd7cd10d74b9c06ae5ebcb632349f25931b024df318da38d0142534e11",
     "0x1ba5d4f101206ff1472788c1873c23f4d088fd353765267960425724cf8a83e3",
     "0x5eb1a5c3402d659e5f61f882fceb262e1761e6982c15bfd3cbeba361c987bf3b",
-    "0x49163985c2dcdb28585c7489accea007fa2bbd1b1b3942286e85f2094d9d2b00"
+    "0x49163985c2dcdb28585c7489accea007fa2bbd1b1b3942286e85f2094d9d2b00",
+    "0x4f7896de2eda55540c3076339a5a2c778a3f4a45ba7c8c9e0a56ac7454de55dc"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -15687,14 +15687,15 @@
       "price": 0.4326,
       "stake": 2.35,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "1kto1m"
+      "status": "sold",
+      "pnl": 0.53,
+      "settled": 1784485797,
+      "name": "1kto1m",
+      "exit_price": 0.5448
     }
   ],
   "feed_sig": "af062e8d2e8f80b8f8a582b7e2d114a8",
-  "feed_pushed_at": 1784485534.5316827,
+  "feed_pushed_at": 1784485662.952609,
   "adjustments": [
     {
       "ts": 1783906689,
