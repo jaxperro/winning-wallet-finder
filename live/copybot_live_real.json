@@ -1926,6 +1926,21 @@
  ],
  "missed": [
   {
+   "ts": 1784450723,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "32952048155093419718055060819712841482842350791391116195205201413217889733414",
+   "cond": "0xe6d5e5da83874cd82c9b651a8a5d4fc541a800a295fb62e85124b4f5a04a4b7d",
+   "title": "Will China invade Taiwan by December 31, 2027?",
+   "outcome": "No",
+   "price": 0.82,
+   "stake": 2.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784446784,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "38793358179615174908021309915819238458278082712284959468246018176126033234516",
@@ -2863,24 +2878,8 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1784054881,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "106117170598299515991778271448868055604686257762862584190468389838818487912270",
-   "cond": "0xbe259598e5a6c822d9d5cd125a853fecf6ebed30425621c4dd6fe4151b32d9ab",
-   "title": "Israel enacts military exemption for Yeshiva students by Sep 30?",
-   "outcome": "No",
-   "price": 0.35,
-   "stake": 1.0,
-   "reason": "thin book ($5 within 5c < $50)",
-   "status": "lost",
-   "pnl": -1.02,
-   "settled": 1784063058,
-   "name": "BikesAreTheBikes",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 1051.59,
- "updated": 1784448514
+ "updated": 1784450725
 }
