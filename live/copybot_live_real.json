@@ -2050,6 +2050,21 @@
  ],
  "missed": [
   {
+   "ts": 1784481439,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "42936981830905824453534043956708985265540220333757051125171389193089187972089",
+   "cond": "0x01a6556cf3057f36658c61ba18b2c8023bfd7e1eac2541523f54ed19bfc9da53",
+   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 3 Winner",
+   "outcome": "BetBoom Team",
+   "price": 0.3,
+   "stake": 2.35,
+   "reason": "in-play hold expired unfilled (10s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784481303,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "42936981830905824453534043956708985265540220333757051125171389193089187972089",
@@ -2984,24 +2999,8 @@
    "settled": 1784136297,
    "name": "gkmgkldfmg",
    "exit_price": 0.6712
-  },
-  {
-   "ts": 1784135838,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
-   "cond": "0x7446c13b91bf8ece3c07cb6127008ff534ab2853dd3cd31dce5a1452367b461a",
-   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
-   "outcome": "1win",
-   "price": 0.53,
-   "stake": 1.0,
-   "reason": "in-play hold expired unfilled (41s)",
-   "status": "sold",
-   "pnl": 0.18,
-   "settled": 1784135972,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.64
   }
  ],
  "missed_pnl": 1050.72,
- "updated": 1784481379
+ "updated": 1784481443
 }

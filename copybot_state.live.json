@@ -15650,10 +15650,25 @@
       "pnl": null,
       "settled": null,
       "name": "1kto1m"
+    },
+    {
+      "ts": 1784481439,
+      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+      "token": "42936981830905824453534043956708985265540220333757051125171389193089187972089",
+      "cond": "0x01a6556cf3057f36658c61ba18b2c8023bfd7e1eac2541523f54ed19bfc9da53",
+      "title": "Dota 2: BetBoom Team vs PARIVISION - Game 3 Winner",
+      "outcome": "BetBoom Team",
+      "price": 0.3,
+      "stake": 2.35,
+      "reason": "in-play hold expired unfilled (10s)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "gkmgkldfmg"
     }
   ],
-  "feed_sig": "d1167a53f46d27ae1fbe7c5991b2cf40",
-  "feed_pushed_at": 1784481306.8628669,
+  "feed_sig": "1406f3df5757b3a3765e56899277ea8d",
+  "feed_pushed_at": 1784481432.405422,
   "adjustments": [
     {
       "ts": 1783906689,
@@ -15671,33 +15686,13 @@
       "note": "unattributed chain-over-book: platform auto-redemptions + favorable fill rounding, folded at 2026-07-19 reconcile (not P&L)"
     }
   ],
-  "pending_orders": [
-    {
-      "order_id": "0xca8f14082237dbd2f1be42f14fb40cf9c6397f8a5eaf98afa8d8c7a3a603acfe",
-      "bal0": 0.0,
-      "sz": 7.84,
-      "token": "42936981830905824453534043956708985265540220333757051125171389193089187972089",
-      "side": "BUY",
-      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-      "title": "Dota 2: BetBoom Team vs PARIVISION - Game 3 Winner",
-      "outcome": "BetBoom Team",
-      "event": "dota2-bb4-pari-2026-07-19",
-      "cond": "0x01a6556cf3057f36658c61ba18b2c8023bfd7e1eac2541523f54ed19bfc9da53",
-      "their_price": 0.3104871093107396,
-      "their_ts": 1784481426,
-      "price": 0.3,
-      "is_add": false,
-      "stake": 2.3548105250184266,
-      "ts": 1784481429.5211892,
-      "ttl_s": 600
-    }
-  ],
+  "pending_orders": [],
   "exit_retries": [
     {
       "token": "107519224001054263439274706964696866987866557807915774909819079291264377299291",
       "shares": 0.12395200000000002,
       "label": "BetBoom Team \u00b7 Dota 2: BetBoom Team vs PARIVISION - Game ",
-      "attempts": 6,
+      "attempts": 9,
       "ts": 1784480664
     }
   ],
