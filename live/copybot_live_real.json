@@ -1947,6 +1947,21 @@
  ],
  "missed": [
   {
+   "ts": 1784469105,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "42900587076366844229913834194744356425297818081286466764921250179690312755990",
+   "cond": "0xc0f70912445fc2aeee051c61d367a31ceebe940831ac329e63a406bdbc31528a",
+   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 1 Winner",
+   "outcome": "BetBoom Team",
+   "price": 0.41,
+   "stake": 2.04,
+   "reason": "in-play hold expired unfilled (36s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784454959,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "73692579062193639095122093771528419354995015035612768219622062530252811614581",
@@ -2882,24 +2897,8 @@
    "settled": 1784119781,
    "name": "Kruto2027",
    "exit_checked": true
-  },
-  {
-   "ts": 1784114280,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "54808825071623730922593344072571837691813951745707044026991588993889799442913",
-   "cond": "0x9bf551b914e6e79d34a5147bc0e740954f67ed2b7fee0d7fd350859460343fdf",
-   "title": "Set 1 Winner: Marques vs Domingues",
-   "outcome": "Marques",
-   "price": 0.5,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -0.03,
-   "settled": 1784116853,
-   "name": "Kruto2027",
-   "exit_price": 0.5
   }
  ],
  "missed_pnl": 1049.73,
- "updated": 1784464119
+ "updated": 1784469108
 }
