@@ -2072,6 +2072,21 @@
  ],
  "missed": [
   {
+   "ts": 1784503159,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "107531561888318513792277163301281336651898062064090922046801464380647002668604",
+   "cond": "0xe67f4d31f0eba1b009b49d7a7739b2a5f53a2d7d979a0902b465a510492c33bb",
+   "title": "Will 2026 be the hottest year on record?",
+   "outcome": "No",
+   "price": 0.56,
+   "stake": 2.41,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784496391,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "115428153746996892211798999366308897078723117634059783423375188043903703749062",
@@ -3007,23 +3022,8 @@
    "settled": 1784148557,
    "name": "BikesAreTheBikes",
    "exit_checked": true
-  },
-  {
-   "ts": 1784148364,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "97790474719190241406489821993233180311618193540151039410585653304993937141574",
-   "cond": "",
-   "title": "",
-   "outcome": "",
-   "price": 0.705,
-   "stake": 1.0,
-   "reason": "book unreliable (spread 0.10 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": 1052.18,
- "updated": 1784497466
+ "updated": 1784503160
 }
