@@ -2094,6 +2094,21 @@
  ],
  "missed": [
   {
+   "ts": 1784420641,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "35364363129310485685520220202960553864892167102727987653115207699893583866920",
+   "cond": "0x33404f245944056e45d2668d28e3a1c70cc6addc16d25cece1fb0e3a2427525b",
+   "title": "Bitcoin Up or Down - July 18, 8:15PM-8:30PM ET",
+   "outcome": "Up",
+   "price": 0.3102,
+   "stake": 98.66,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1784402106,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "91990736572156896332531437772162323719378402759982493855773735188693457077937",
@@ -3033,24 +3048,8 @@
    "settled": 1783814681,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783781525,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "27632180525380684914321906274705941073296172029015605436272337722097971624328",
-   "cond": "0x6d1bc898781da9b481d170cc8fc7915273eb391e466d50164dbc1dbe94efea73",
-   "title": "Mjallby AIF vs. AIK: O/U 2.5",
-   "outcome": "Over",
-   "price": 0.8598,
-   "stake": 96.19,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 15.28,
-   "settled": 1783789653,
-   "name": "0x41558102",
-   "exit_price": 1.0
   }
  ],
  "missed_pnl": 90709.35,
- "updated": 1784411185
+ "updated": 1784420643
 }
