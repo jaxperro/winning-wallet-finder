@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1799.94,
- "deployed": 843.44,
+ "cash": 1694.02,
+ "deployed": 949.17,
  "reserve": 0.0,
- "realized": 1643.34,
+ "realized": 1643.16,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 16,
- "fees_paid": 318.95,
+ "ledger_drift": -0.03,
+ "open_count": 17,
+ "fees_paid": 319.13,
  "fee_rate": 0.03,
  "lag": {
-  "n": 204,
-  "n24": 10,
+  "n": 205,
+  "n24": 11,
   "avg_s": 4.6,
-  "avg_slip_pct": 0.0027,
+  "avg_slip_pct": 0.0023,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 341.23
  },
  "bets": [
+  {
+   "token": "69255676899700790711525989127308958019475795404138315524495668898066870353801",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Putin out as President of Russia by August 31, 2026?",
+   "their_price": 0.944,
+   "my_price": 0.943,
+   "slippage_pct": -0.0011,
+   "lag_s": 4.2,
+   "shares": 112.13,
+   "cost": 105.73,
+   "fee": 0.18,
+   "opened": 1784486890,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "107519224001054263439274706964696866987866557807915774909819079291264377299291",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2080,24 +2099,6 @@
    "settled": 1783858798,
    "sold_shares": 200.79,
    "sold_proceeds": 53.03
-  },
-  {
-   "token": "98686933205526849260956926098370864586052275369032476650193546947433457446794",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "PARIVISION",
-   "title": "Dota 2: PARIVISION vs Team Spirit - Game 1 Winner",
-   "their_price": 0.6499,
-   "my_price": 0.62,
-   "slippage_pct": -0.0459,
-   "shares": 162.56,
-   "cost": 100.78,
-   "fee": 1.15,
-   "opened": 1783848697,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -101.93,
-   "settled": 1783858222
   }
  ],
  "missed": [
@@ -3052,5 +3053,5 @@
   }
  ],
  "missed_pnl": 90579.31,
- "updated": 1784485765
+ "updated": 1784486894
 }
