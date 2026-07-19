@@ -2103,6 +2103,21 @@
  ],
  "missed": [
   {
+   "ts": 1784492349,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "62074667087255747412382561081475311823484268378809285620641251664614873335395",
+   "cond": "0x514c3dd24cde8101ec8e3982b74fca425c592e3fe7526056a4d80aa269c98808",
+   "title": "Israel x Iran ceasefire continues through July 20?",
+   "outcome": "Yes",
+   "price": 0.79,
+   "stake": 105.73,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784469295,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "38596120750074321785333064789385162164853013897516945380739845321752073819772",
@@ -3036,23 +3051,8 @@
    "settled": 1783898872,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783889397,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "18802393565291712436899729429089924858104497792982518694284454990866908025798",
-   "cond": "0x9ea0030337e6416cfbd5e9a52ffb4c80575953b45a52bc513f2d7ecbe299d5f2",
-   "title": "Will the average monthly Ethereum gas price hit 25 Gwei before 2027?",
-   "outcome": "No",
-   "price": 0.009,
-   "stake": 62.98,
-   "reason": "price 0.009 outside [0.01,0.99]",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": 90659.17,
- "updated": 1784489318
+ "updated": 1784492349
 }
