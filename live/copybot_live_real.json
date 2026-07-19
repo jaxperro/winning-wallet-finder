@@ -1935,10 +1935,11 @@
    "price": 0.87,
    "stake": 2.0,
    "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
+   "status": "sold",
+   "pnl": 0.17,
+   "settled": 1784447037,
+   "name": "0xbadaf319",
+   "exit_price": 0.95
   },
   {
    "ts": 1784438883,
@@ -2880,6 +2881,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 1051.42,
- "updated": 1784446784
+ "missed_pnl": 1051.59,
+ "updated": 1784447037
 }

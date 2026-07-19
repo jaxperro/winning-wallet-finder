@@ -15149,14 +15149,15 @@
       "price": 0.87,
       "stake": 2.0,
       "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "0xbadaf319"
+      "status": "sold",
+      "pnl": 0.17,
+      "settled": 1784447037,
+      "name": "0xbadaf319",
+      "exit_price": 0.95
     }
   ],
-  "feed_sig": "1f27f2e18f5aa73efaebee7ef045c0c5",
-  "feed_pushed_at": 1784446718.800541,
+  "feed_sig": "523d8c6b9f53532502388ef9d1bab2f4",
+  "feed_pushed_at": 1784446971.2646825,
   "adjustments": [
     {
       "ts": 1783906689,
@@ -15193,7 +15194,7 @@
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784412433,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784446789,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784446795,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784395746,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784387404,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784427619,
