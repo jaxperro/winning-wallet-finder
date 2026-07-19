@@ -39,11 +39,11 @@
  },
  "floors": {
   "Kruto2027": 80.0,
-  "0xbadaf319": 41.15,
+  "0xbadaf319": 40.1,
   "gkmgkldfmg": 470.51,
-  "1kto1m": 328.34,
-  "BikesAreTheBikes": 225.74,
-  "AIcAIc": 338.88
+  "1kto1m": 329.09,
+  "BikesAreTheBikes": 224.77,
+  "AIcAIc": 341.23
  },
  "bets": [
   {
@@ -3052,5 +3052,5 @@
   }
  ],
  "missed_pnl": 90564.91,
- "updated": 1784482284
+ "updated": 1784484488
 }
