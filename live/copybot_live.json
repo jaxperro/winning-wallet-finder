@@ -2095,6 +2095,21 @@
  ],
  "missed": [
   {
+   "ts": 1784451912,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "86567202803696185629704724961398129231892610051254319801824623009047556217191",
+   "cond": "0xa6480903e54c68f2ee79cacb7861dfcc9b473e8b07d6dcaf2c9923034a5fb56f",
+   "title": "Israel x Iran ceasefire continues through July 31?",
+   "outcome": "No",
+   "price": 0.41,
+   "stake": 98.79,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784451863,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "50488227317031565004575684525878022626020008256198844799050708993499540064859",
@@ -3030,24 +3045,8 @@
    "settled": 1783828832,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783824628,
-   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
-   "token": "86486366666900934251692510513012809256323129155701648230490642360929725335546",
-   "cond": "0x74e592f35b0751cf0bf4bc7e04ec5e4722c3bcee1332140faa86307c70616763",
-   "title": "Bitcoin Up or Down - July 11, 10:40PM-10:45PM ET",
-   "outcome": "Down",
-   "price": 0.5675,
-   "stake": 96.48,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "lost",
-   "pnl": -97.73,
-   "settled": 1783824818,
-   "name": "0xd96750bf",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 90686.25,
- "updated": 1784451865
+ "updated": 1784451914
 }
