@@ -2103,6 +2103,22 @@
    "price": 0.5197,
    "stake": 98.66,
    "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 25.59,
+   "settled": 1784425689,
+   "name": "1kto1m",
+   "exit_price": 0.6686
+  },
+  {
+   "ts": 1784425689,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "29977440714027702794755312644671117389655288253327722609561816044442289528639",
+   "cond": "0xe9db87577e7c580bd784cd40ca6b4dab103040a14073a78494beb502c340aba6",
+   "title": "Bitcoin Up or Down - July 18, 9:45PM-10:00PM ET",
+   "outcome": "Down",
+   "price": 0.5045,
+   "stake": 98.66,
+   "reason": "not copied in the detection window (reconciled)",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -3032,24 +3048,8 @@
    "settled": 1783814864,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783805820,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "10174584768963875173947852308524484106197371102092547629610032094114021922809",
-   "cond": "0x074ce5163e8590fdf5615ee0c9df73619e1e777a966b973c3055caf06281ec88",
-   "title": "England to score first vs. Norway?",
-   "outcome": "No",
-   "price": 0.8236,
-   "stake": 96.62,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "won",
-   "pnl": 20.18,
-   "settled": 1783814817,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 90692.66,
- "updated": 1784424744
+ "missed_pnl": 90718.25,
+ "updated": 1784425690
 }
