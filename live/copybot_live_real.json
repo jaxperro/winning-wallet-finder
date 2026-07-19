@@ -1926,6 +1926,21 @@
  ],
  "missed": [
   {
+   "ts": 1784438883,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "18859662100986706442931434084612043934725834523854128874928569872427180020630",
+   "cond": "",
+   "title": "",
+   "outcome": "",
+   "price": 0.83,
+   "stake": 2.0,
+   "reason": "thin book ($17 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784438563,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "63579552197509143589959693779993809440480166595009463744830254978620312708977",
@@ -2863,24 +2878,8 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1784037862,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "74666452124906997243440599268041315324945968051973641396724746828966017436262",
-   "cond": "0xb34a462d975da3248d4ef3c19dfb3dfa9bac7569828b81dedb63698656e7be48",
-   "title": "Will the price of Bitcoin be between $64,000 and $66,000 on July 14?",
-   "outcome": "No",
-   "price": 0.778,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "sold",
-   "pnl": -0.96,
-   "settled": 1784043634,
-   "name": "0xbadaf319",
-   "exit_price": 0.037
   }
  ],
  "missed_pnl": 1051.42,
- "updated": 1784438566
+ "updated": 1784438886
 }
