@@ -15,6 +15,10 @@ class Ex:
     def __init__(self):
         self.fills, self.sold = [], []
 
+    def _shares_held(self, tok):
+        # chain truth for the audit-3.2 gate: DUST really exists on chain
+        return {"DUST": 1.0}.get(tok, 0.0)
+
     def sell(self, tok, shares, price, meta):
         self.sold.append(tok)
         self.fills.append({"side": "SELL", "token": tok, "shares": shares,

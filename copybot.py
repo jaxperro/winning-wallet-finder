@@ -48,6 +48,7 @@ Usage:
 """
 
 import argparse
+import uuid
 import hashlib
 import hmac
 import json
@@ -846,7 +847,9 @@ class UserFillsListener:
             try:
                 app = websocket.WebSocketApp(self.URL, on_open=on_open,
                                              on_message=on_message)
-                app.run_forever(sslopt={"cert_reqs": ssl.CERT_NONE})
+                app.run_forever()   # audit 3.6: this socket carries live L2
+                # API creds — VERIFY certs (CERT_NONE was cargo-culted from the
+                # read-only RTDS pattern, where it stays)
             except Exception as e:
                 log(f"user-ws: listener error {str(e)[:80]}")
             self.state = "down"
@@ -914,8 +917,11 @@ class Copybot:
         it overstates the edge."""
         ex = self.engine.ex
         buys = []
-        if hasattr(ex, "fills") and ex.fills:
-            for f in ex.fills:
+        # atomic snapshot-and-swap (audit 3.1): two threads draining the same
+        # shared list each applied every fill's cash delta before one cleared
+        fills, ex.fills = (ex.fills if hasattr(ex, "fills") else []), []
+        if fills:
+            for f in fills:
                 sign = -1 if f["side"] == "BUY" else 1
                 fee = taker_fee(f["shares"], f["price"], self.fee_rate)
                 f["fee"] = round(fee, 4)
@@ -945,7 +951,6 @@ class Copybot:
                             }) + "\n")
                     except Exception:
                         pass
-            ex.fills.clear()
         return buys
 
     def ledger_drift(self):
@@ -1239,6 +1244,10 @@ class Copybot:
         return drift
 
     def write_feed(self):
+        with self.lock:          # audit 3.1: reconcile mutates bet records
+            return self._write_feed_locked()
+
+    def _write_feed_locked(self):
         """Publish the bot's live book to live/copybot_live.json — the feed the
         top of jaxperro.com/trading reads. Reconciles any open bet no longer held
         (mirror-sold) to 'closed'."""
@@ -1402,6 +1411,20 @@ class Copybot:
                 subprocess.run(["git", "-C", repo, "commit", "-q", "-m",
                                 "copybot: live paper feed (resynced after "
                                 "conflicted rebase) [skip ci]"], capture_output=True)
+            try:                       # audit 3.4: stale-writer suicide guard
+                up = subprocess.run(["git", "-C", repo, "show",
+                                     "@{u}:" + self.engine.state_path],
+                                    capture_output=True, text=True)
+                if up.returncode == 0:
+                    ub = (json.loads(up.stdout).get("boot") or {})
+                    ours = st.get("boot") or {}
+                    if (ub.get("id") and ours.get("id") and ub["id"] != ours["id"]
+                            and ub.get("ts", 0) > ours.get("ts", 0)):
+                        log("⚠ a NEWER boot owns the book on origin — this "
+                            "stale writer is exiting instead of overwriting it")
+                        os._exit(0)
+            except Exception:
+                pass
             p = subprocess.run(["git", "-C", repo, "push", "-q", "origin", "main"],
                                capture_output=True, text=True)
             log("published live feed → dashboard" if p.returncode == 0
@@ -1459,7 +1482,8 @@ class Copybot:
         if not rl.acquire(blocking=False):
             return
         try:
-            self._resolve_pendings_locked(st)
+            with self.lock:      # audit 3.1: adoption mutates cash/my_pos/spend
+                self._resolve_pendings_locked(st)
         finally:
             rl.release()
 
@@ -1584,6 +1608,10 @@ class Copybot:
         retries = st.get("exit_retries") or []
         if not retries:
             return
+        with self.lock:          # audit 3.1: sells + fill drains mutate the book
+            self._retry_stuck_exits_locked(st, retries)
+
+    def _retry_stuck_exits_locked(self, st, retries):
         keep = []
         for r in retries:
             tok = r["token"]
@@ -1671,6 +1699,19 @@ class Copybot:
                 continue
             if tried >= 10:
                 break
+            # audit 3.2: the data-api LAGS the chain — a residual the chain
+            # already zeroed (platform auto-redeem) keeps reappearing here.
+            # Gate every action on exchange-view truth; act only on confirmed
+            # shares; credit proportionally so a stale row books ~$0.
+            try:
+                chain_sh = self.engine.ex._shares_held(tok)
+            except Exception:
+                continue                      # no chain truth -> no action
+            if chain_sh < max(0.01, shares * 0.5):
+                continue                      # data-api ghost — skip forever
+            if chain_sh < shares:
+                val *= chain_sh / shares
+                shares = chain_sh
             if p.get("redeemable") or cur >= 0.99:
                 # resolved WINNER residual (the 2026-07-17 $1.90 case): the
                 # tracked-position redeemer never sees untracked tokens, so
@@ -2176,6 +2217,12 @@ class Copybot:
             self.engine.persist()
 
     def settle_resolved(self):
+        # audit 4: this ran on EVERY webhook POST ahead of the copy itself —
+        # dozens of redundant CLOB fetches during clip bursts. 20s throttle;
+        # the 60s heartbeat still guarantees timely settles.
+        if time.time() - getattr(self, "_settle_last", 0) < 20:
+            return
+        self._settle_last = time.time()
         """Free capital like the dashboard: when an open position's market has
         resolved, settle it at the winner price (1/0), recycle the cash, and tally
         realized P&L. This is the resolution path the engine's sell-only mirror
@@ -2486,6 +2533,10 @@ def main():
                       if want_live else "")
     filt = FollowFilter(cfg)
     bot = Copybot(cfg, engine, filt, redeemer=redeemer)
+    # single-writer invariant (audit 3.4): every boot stamps the state; a
+    # stale process that survived `machine stop` (gotcha 15c) sees a newer
+    # boot on origin at publish time and yields instead of overwriting it.
+    engine.state["boot"] = {"id": uuid.uuid4().hex[:12], "ts": int(time.time())}
 
     # T0 detection — the RTDS trade stream (~1s, wallet-attributed). Paper
     # runs it by default (the 24h shadow run, 2026-07-10); the REAL-MONEY

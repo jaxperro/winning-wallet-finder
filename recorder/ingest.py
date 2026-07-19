@@ -57,10 +57,12 @@ def main():
                              d.get("size"), d.get("tx"), d.get("title")))
             except Exception:
                 pass
-        if rows:
+        con.execute("BEGIN")           # audit 3.10: atomic pair — a crash
+        if rows:                        # between the two inserts re-ingested
             con.executemany("INSERT INTO trades VALUES (?,?,?,?,?,?,?,?,?)", rows)
         con.execute("INSERT INTO ingested VALUES (?,?,?)",
                     [s, len(rows), int(time.time())])
+        con.execute("COMMIT")
         box(f"rm {SEG}/{s}")
         total += len(rows)
         print(f"[ingest] {s}: {len(rows)} rows")

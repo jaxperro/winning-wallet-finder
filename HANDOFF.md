@@ -1,5 +1,27 @@
 # Session handoff — 2026-07-19 (rev 15: tape+bench+gate; rev 14: +$44 bankroll, exact paper-parity config; rev 13: FAK parity; rev 12: chain-seed)
 
+## 2026-07-19 (rev 16): audit hardening shipped (top-10 items 1-9)
+Deep-audit fixes, all deployed same day: (1) the book is now fully
+serialized — resolve_pendings/retry_stuck_exits/write_feed take bot.lock,
+_drain_fills snapshot-swaps the shared fills list (kills the last July-12
+phantom-cash race class); (2) sweep_dust gates every action on CHAIN share
+balance and credits proportionally (data-api ghosts book ~$0 forever);
+(4) BOOT-ID single-writer guard — a stale process that survived machine-stop
+sees a newer boot in origin's state at publish time and EXITS instead of
+overwriting surgery (gotcha 15c is now an invariant, not a procedure);
+(5) user-ws verifies TLS (it carries L2 creds; RTDS stays CERT_NONE — public
+data); (6) valuebot state is tmp+rename atomic with a loud ⚠ STATE RESET
+alarm; (7) settle_resolved throttled 20s off the webhook hot path (faster
+copies in bursts); (8) daily.sh mkdir-lock (macOS has no flock) + ingest's
+two inserts are one transaction; (9) seen_tx keeps the NEWEST 5000 via a
+recency dict (was an arbitrary set slice); (10) AIcAIc live floor pinned to
+paper's 341.23 (was boot-nondeterministic, violating mirror-exactly).
+STILL QUEUED from the audit: redeem.py pUSD/deposit-wallet fix before any
+auto_redeem re-enable (audit 3.3 — it would book phantom credits today);
+listener-start-after-seed reorder (3.9); dead-code sweep (copytrade
+LiveExecutor + broken CLI, _book_snapshot dedupe); reconcile_entries
+positions-pull diet; sftp tape transport; rpc-down heartbeat flag.
+
 ## 2026-07-19 (rev 15): the rest of the day
 - **RTDS TAPE live end-to-end**: wwf-recorder (own silo, no repo clone —
   code baked in image) tapes every platform trade to hour-rotated gz

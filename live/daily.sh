@@ -30,7 +30,11 @@ if [ -z "${DAILY_COPY:-}" ]; then
     export DAILY_SRC DAILY_COPY
     exec /bin/bash "$DAILY_COPY" "$@"
 fi
-trap 'rm -f "$DAILY_COPY"' EXIT
+LOCKDIR="${TMPDIR:-/tmp}/wwf-daily.lock.d"
+if ! mkdir "$LOCKDIR" 2>/dev/null; then
+    echo "[daily] another run holds the lock ($LOCKDIR) — exiting"; exit 0
+fi
+trap 'rmdir "$LOCKDIR" 2>/dev/null; rm -f "$DAILY_COPY"' EXIT
 cd "$DAILY_SRC"
 # heads-up ping so the run's start is visible in Discord (digest comes at the end)
 python3 discord_daily.py --ping "🔄 Daily pipeline started $(date '+%H:%M') — refreshing the bet cache (takes a while); sharp digest lands when it finishes." || true

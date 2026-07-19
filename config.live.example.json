@@ -69,7 +69,8 @@
     {
       "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
       "name": "AIcAIc",
-      "class": "volume"
+      "class": "volume",
+      "floor": 341.23
     }
   ],
   "feed_path": "live/copybot_live_real.json",

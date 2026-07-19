@@ -227,8 +227,13 @@ def onchain_payouts(cond, rpc):
 def load_state():
     try:
         return json.load(open(STATE))
-    except Exception:
-        return {"cash": BANK, "my_pos": {}, "resolved": [], "missed": [],
+    except FileNotFoundError:
+        pass
+    except Exception as e:
+        # audit 3.5: a corrupt state must NEVER silently become a fresh book
+        log(f"⚠⚠ STATE RESET — {STATE} unreadable ({e}); starting a fresh "
+            "$1k book. History is in git if this was a torn write.")
+    return {"cash": BANK, "my_pos": {}, "resolved": [], "missed": [],
                 "attempted": {}, "stats": {"attempts": 0, "fills": 0,
                 "misses": 0, "resolved": 0, "wins": 0, "refunds": 0,
                 "losses": 0, "staked": 0.0, "returned": 0.0, "fees": 0.0},
@@ -236,7 +241,9 @@ def load_state():
 
 
 def save_state(st):
-    json.dump(st, open(STATE, "w"))
+    tmp = STATE + ".tmp"          # audit 3.5: tmp+rename — a crash mid-write
+    json.dump(st, open(tmp, "w"))  # can't torch the book
+    os.replace(tmp, STATE)
 
 
 def open_positions(st, cands, budget):

@@ -129,6 +129,26 @@ def save_json(path, data):
     os.replace(tmp, path)
 
 
+class _SeenTx(dict):
+    """Set-compatible seen-tx registry that remembers insertion recency so
+    persist() can keep the NEWEST N (membership: `tx in seen`; value = a
+    monotonically increasing sequence number)."""
+    _n = 0
+
+    def __init__(self, items=()):
+        super().__init__(items)
+        if self:      # resume the sequence ABOVE loaded entries, or fresh
+            _SeenTx._n = max(_SeenTx._n, max(self.values()) + 1)
+
+    def add(self, tx):
+        _SeenTx._n += 1
+        self[tx] = _SeenTx._n
+
+    def update(self, txs):
+        for t in txs:
+            self.add(t)
+
+
 def new_state():
     return {
         "started_at": time.time(),
@@ -310,7 +330,7 @@ class CopyTrader:
         self.ex = executor
         self.state_path = state_path
         self.risk = cfg["risk"]
-        self.seen = set(state["seen_tx"])
+        self.seen = _SeenTx((tx, i) for i, tx in enumerate(state["seen_tx"]))
         self.webhook = cfg.get("discord_webhook", "")
         self._discord_warned = False
 
@@ -397,7 +417,9 @@ class CopyTrader:
         del missed[:-200]                           # keep the recent 200
 
     def persist(self):
-        self.state["seen_tx"] = list(self.seen)[-5000:]
+        # newest-5000 by recency (audit 3.8: a set slice kept an ARBITRARY
+        # 5000 — a crash+fast-restart could re-copy a fresh trade)
+        self.state["seen_tx"] = sorted(self.seen, key=self.seen.get)[-5000:]
         save_json(self.state_path, self.state)
 
     # -- risk gate: returns (allowed_usd, reason_if_blocked) --
