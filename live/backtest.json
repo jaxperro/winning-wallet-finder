@@ -56,6 +56,31 @@
       "wallet": "0x0c3e55cf50a00a7e74fabd8584c6fdde21603c4c",
       "name": "EdwardIN",
       "class": "volume"
+    },
+    {
+      "wallet": "0x82d2e4dbb0a849ff8e2f5380719769145648beea",
+      "name": "lma0o0o0o",
+      "class": "volume"
+    },
+    {
+      "wallet": "0xe542afd3881c4c330ba0ebbb603bb470b2ba0a37",
+      "name": "leegunner",
+      "class": "volume"
+    },
+    {
+      "wallet": "0xc684828f6b03487759ced2ebdd975f91f3532228",
+      "name": "oliman2",
+      "class": "volume"
+    },
+    {
+      "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+      "name": "JuiceFarm",
+      "class": "volume"
+    },
+    {
+      "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
+      "name": "0xb0E43B",
+      "class": "volume"
     }
   ]
 }
