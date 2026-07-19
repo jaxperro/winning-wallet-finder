@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 101.72,
+ "stake": 101.67,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1677.75,
- "deployed": 865.18,
+ "cash": 1589.78,
+ "deployed": 951.88,
  "reserve": 0.0,
- "realized": 1542.9,
+ "realized": 1541.63,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 17,
- "fees_paid": 303.75,
+ "open_count": 18,
+ "fees_paid": 305.31,
  "fee_rate": 0.03,
  "lag": {
-  "n": 198,
-  "n24": 8,
-  "avg_s": 3.6,
-  "avg_slip_pct": 0.0053,
+  "n": 199,
+  "n24": 9,
+  "avg_s": 3.4,
+  "avg_slip_pct": -0.0009,
   "window_h": 24
  },
  "wallets": [
@@ -47,6 +47,25 @@
  },
  "bets": [
   {
+   "token": "37824164809093918071945208007872743881921286805762898355468714704460471077939",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Dplus KIA",
+   "title": "LoL: Karmine Corp vs Dplus KIA - Game 2 Winner",
+   "their_price": 0.59,
+   "my_price": 0.56,
+   "slippage_pct": -0.0508,
+   "lag_s": 1.1,
+   "shares": 181.64,
+   "cost": 101.72,
+   "fee": 1.34,
+   "opened": 1784471012,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
+  {
    "token": "42900587076366844229913834194744356425297818081286466764921250179690312755990",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -64,8 +83,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 156.55,
-   "sold_proceeds": 84.55
+   "sold_shares": 186.0,
+   "sold_proceeds": 99.64
   },
   {
    "token": "42900587076366844229913834194744356425297818081286466764921250179690312755990",
@@ -2074,26 +2093,6 @@
    "settled": 1783852664,
    "sold_shares": 256.33,
    "sold_proceeds": 110.89
-  },
-  {
-   "token": "90912190630175200805827076506881962170030344593208497487958283062556067846899",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "REKONIX",
-   "title": "Dota 2: REKONIX vs Team Nemesis - Game 1 Winner",
-   "their_price": 0.9135,
-   "my_price": 0.92,
-   "slippage_pct": 0.0071,
-   "shares": 108.3,
-   "cost": 99.63,
-   "fee": 0.24,
-   "opened": 1783851791,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": 8.43,
-   "settled": 1783851883,
-   "sold_shares": 108.3,
-   "sold_proceeds": 108.3
   }
  ],
  "missed": [
@@ -3049,5 +3048,5 @@
   }
  ],
  "missed_pnl": 90594.47,
- "updated": 1784470896
+ "updated": 1784471016
 }
