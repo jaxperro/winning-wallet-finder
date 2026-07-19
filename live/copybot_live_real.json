@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 37.85,
- "deployed": 13.12,
+ "cash": 35.97,
+ "deployed": 14.94,
  "reserve": 0.0,
- "realized": -15.39,
+ "realized": -15.44,
  "adjustments": -0.06,
- "ledger_drift": 2.32,
- "open_count": 10,
- "fees_paid": 2.62,
+ "ledger_drift": 2.31,
+ "open_count": 11,
+ "fees_paid": 2.65,
  "fee_rate": 0.03,
  "lag": {
-  "n": 90,
-  "n24": 5,
-  "avg_s": 8.8,
-  "avg_slip_pct": 0.055,
+  "n": 91,
+  "n24": 6,
+  "avg_s": 8.0,
+  "avg_slip_pct": 0.0458,
   "window_h": 24
  },
  "wallets": [
@@ -47,6 +47,25 @@
  },
  "bets": [
   {
+   "token": "37824164809093918071945208007872743881921286805762898355468714704460471077939",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Dplus KIA",
+   "title": "LoL: Karmine Corp vs Dplus KIA - Game 2 Winner",
+   "their_price": 0.59,
+   "my_price": 0.59,
+   "slippage_pct": 0.0,
+   "lag_s": 3.8,
+   "shares": 3.56,
+   "cost": 2.1,
+   "fee": 0.03,
+   "opened": 1784471012,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
+  {
    "token": "42900587076366844229913834194744356425297818081286466764921250179690312755990",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -64,8 +83,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 3.07,
-   "sold_proceeds": 1.57
+   "sold_shares": 3.58,
+   "sold_proceeds": 1.82
   },
   {
    "token": "38596120750074321785333064789385162164853013897516945380739845321752073819772",
@@ -2940,5 +2959,5 @@
   }
  ],
  "missed_pnl": 1049.73,
- "updated": 1784470898
+ "updated": 1784471018
 }
