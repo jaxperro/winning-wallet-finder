@@ -14574,10 +14574,10 @@
       "cost": 117.41205272160391,
       "fee": 1.6975,
       "opened": 1784469697,
-      "status": "open",
-      "exit_price": null,
-      "pnl": null,
-      "settled": null,
+      "status": "closed",
+      "exit_price": 0.5533,
+      "pnl": 6.46,
+      "settled": 1784471149,
       "sold_shares": 226.95110647816958,
       "sold_proceeds": 125.5655249617656
     },
@@ -14623,8 +14623,8 @@
     }
   },
   "hwm": 2849.150445045735,
-  "feed_sig": "241f80b9ff11082b493e5bacca93803d",
-  "feed_pushed_at": 1784471016.7969995,
+  "feed_sig": "436b0d64208641fb000b421cfc3d68fb",
+  "feed_pushed_at": 1784471149.4392292,
   "missed": [
     {
       "ts": 1783590977,
@@ -16605,6 +16605,21 @@
       "pnl": null,
       "settled": null,
       "name": "0xbadaf319"
+    },
+    {
+      "ts": 1784471224,
+      "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+      "token": "46772667468744288997268807185140962881162063147482944578224960298326897165693",
+      "cond": "0x0b5ca9a26521274332651c17a582205c1e7f8ecb8488effc461f03b3250c6158",
+      "title": "Bitcoin Up or Down - July 19, 10AM ET",
+      "outcome": "Up",
+      "price": 0.4496,
+      "stake": 101.79,
+      "reason": "not copied in the detection window (reconciled)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "1kto1m"
     }
   ],
   "no_miss_toks": [
@@ -16699,9 +16714,9 @@
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784470237,
     "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784470284,
-    "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784471020,
-    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784464114,
-    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784470972,
+    "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784471145,
+    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784471013,
+    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784471227,
     "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784467036
   }
 }

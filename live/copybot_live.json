@@ -2097,6 +2097,21 @@
  ],
  "missed": [
   {
+   "ts": 1784471224,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "46772667468744288997268807185140962881162063147482944578224960298326897165693",
+   "cond": "0x0b5ca9a26521274332651c17a582205c1e7f8ecb8488effc461f03b3250c6158",
+   "title": "Bitcoin Up or Down - July 19, 10AM ET",
+   "outcome": "Up",
+   "price": 0.4496,
+   "stake": 101.79,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1784469295,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "38596120750074321785333064789385162164853013897516945380739845321752073819772",
@@ -3029,24 +3044,8 @@
    "settled": 1783850428,
    "name": "gkmgkldfmg",
    "exit_price": 0.999
-  },
-  {
-   "ts": 1783847109,
-   "wallet": "0xd96750bf8d941a8186e592b0ae6e096da66aa266",
-   "token": "39914244553987465540792566278348498734923249672615251266280042181105318419717",
-   "cond": "0x248fe1a9b246808baabfb9bf452d3d57f314050eb5776a9c53a5b1c027dd41fc",
-   "title": "Bitcoin Up or Down - July 12, 5:00AM-5:05AM ET",
-   "outcome": "Down",
-   "price": 0.99,
-   "stake": 100.82,
-   "reason": "price moved 0.81\u21920.99",
-   "status": "sold",
-   "pnl": 0.99,
-   "settled": 1783847299,
-   "name": "0xd96750bf",
-   "exit_price": 1.0
   }
  ],
  "missed_pnl": 90594.47,
- "updated": 1784471149
+ "updated": 1784471227
 }
