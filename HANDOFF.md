@@ -1,4 +1,30 @@
-# Session handoff — 2026-07-17 (rev 14: +$44 bankroll, exact paper-parity config; rev 13: FAK parity; rev 12: chain-seed)
+# Session handoff — 2026-07-19 (rev 15: tape+bench+gate; rev 14: +$44 bankroll, exact paper-parity config; rev 13: FAK parity; rev 12: chain-seed)
+
+## 2026-07-19 (rev 15): the rest of the day
+- **RTDS TAPE live end-to-end**: wwf-recorder (own silo, no repo clone —
+  code baked in image) tapes every platform trade to hour-rotated gz
+  segments on a 10GB volume; nightly ingest (daily.sh step, 900s/segment
+  timeout after busy hours outgrew 300s; flyctl resolved absolutely — the
+  launchd PATH broke night one) pulls into live/rtds.duckdb (own DB file,
+  never contends with cache.duckdb). **4.9M trades already banked.**
+  Recorder reconnect-clock bug fixed (196 flaps/34h → ~0; 45s stale guard).
+- **VALUEBOT v0.1**: sub-bucket study showed a BARBELL (0-0.2c 3.13x in
+  history but 404 straight live losses = modern adverse selection suspected;
+  0.2-1c toxic 0.62-0.70x; 1-2c 1.28x n=424k) — bot now trades 1-2c ONLY;
+  0-0.2c shelved pending tape confirmation. Dashboard: jaxperro.com/value.
+- **BENCH rev 5**: five fresh sharps benched in backtest.json (lma0o0o0o,
+  leegunner, oliman2, JuiceFarm, 0xb0E43B); ArbTraderRookie EXCLUDED (res_t
+  poison history). Verdict next Friday; run insider.py on the 100%-win two.
+- **Live book reconciles clean**: +$7.14 chain-over-book folded (platform
+  auto-redemptions + favorable rounding — the venue auto-redeems winners,
+  which also makes our own Redeemer less urgent), +$2.31 drift recognition,
+  BetBoom ghost/zombie purged (data-api lag resurrected a 0.12sh residual
+  the chain zeroed — reconciler trusts the laggy API; ROOT FIX QUEUED:
+  verify residuals against chain balance before resurrecting). auto_redeem
+  OFF again (Redeemer needs web3 in the live image + ALCHEMY_RPC_URL env
+  fallback — QUEUED). Realized −$16.94 lifetime after honest recognitions.
+- **Deep architecture audit run** (read-only agent, 2026-07-19) — findings
+  in the session log; act on the top recommendations next session.
 
 ## 2026-07-19: spread skip retired (both books)
 The depth gate's hard spread>0.08 skip was a lag-era relic: fitted at 39-90s
