@@ -2669,6 +2669,10 @@ def main():
                 bot.settle_resolved()                 # recycle capital at resolution
                 if cycle % 5 == 0:
                     bot.reconcile_exits()
+                if cycle % 30 == 0:
+                    # closes #12: entries-reconcile is miss BOOKKEEPING, not a
+                    # trading decision — the dominant steady-state API load
+                    # (positions?limit=500/wallet) needs no 5-min cadence
                     bot.reconcile_entries()
                 for w in cfg.get("watchlist", []):
                     try:
@@ -2708,6 +2712,10 @@ def main():
                 bot.sweep_dust(cycle)      # reclaim untracked exit residue (live)
                 if cycle % 5 == 0:
                     bot.reconcile_exits()
+                if cycle % 30 == 0:
+                    # closes #12: entries-reconcile is miss BOOKKEEPING, not a
+                    # trading decision — the dominant steady-state API load
+                    # (positions?limit=500/wallet) needs no 5-min cadence
                     bot.reconcile_entries()
                     for w in cfg.get("watchlist", []):
                         bot.on_wallet_activity(w)

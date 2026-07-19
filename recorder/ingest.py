@@ -63,12 +63,31 @@ def main():
     ping(f"📼 tape ingest started — {len(segs)} segment(s) queued")
     total = 0
     for s in sorted(segs):
-        raw = box(f"base64 {SEG}/{s}")
+        # closes #11: sftp moves the gz BINARY in one session (base64-over-
+        # console was +33% bytes and needed 900s timeouts at busy-hour sizes);
+        # the old path stays as the fallback because sftp exits 0 even on
+        # some failures — the gunzip is the integrity check either way.
+        lines = None
+        local = os.path.join("/tmp", s)
         try:
-            lines = gzip.decompress(base64.b64decode(raw)).decode().splitlines()
-        except Exception as e:
-            print(f"[ingest] {s}: fetch/decode failed ({e}) — left on box")
-            continue
+            subprocess.run([FLYCTL, "ssh", "sftp", "get", f"{SEG}/{s}", local,
+                            "-a", APP], capture_output=True, timeout=300)
+            with gzip.open(local, "rb") as fh:
+                lines = fh.read().decode().splitlines()
+        except Exception:
+            lines = None
+        finally:
+            try:
+                os.remove(local)
+            except OSError:
+                pass
+        if lines is None:
+            raw = box(f"base64 {SEG}/{s}")
+            try:
+                lines = gzip.decompress(base64.b64decode(raw)).decode().splitlines()
+            except Exception as e:
+                print(f"[ingest] {s}: fetch/decode failed ({e}) — left on box")
+                continue
         rows, aux = [], []
         for ln in lines:
             try:
