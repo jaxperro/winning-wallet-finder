@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 47.48,
- "deployed": 12.87,
+ "cash": 45.06,
+ "deployed": 15.28,
  "reserve": 0.0,
  "realized": -15.46,
  "adjustments": 9.39,
  "ledger_drift": 0.0,
- "open_count": 9,
+ "open_count": 10,
  "fees_paid": 2.8,
  "fee_rate": 0.03,
  "lag": {
-  "n": 94,
-  "n24": 7,
-  "avg_s": 6.2,
-  "avg_slip_pct": 0.0241,
+  "n": 95,
+  "n24": 8,
+  "avg_s": 10.9,
+  "avg_slip_pct": 0.0228,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 341.23
  },
  "bets": [
+  {
+   "token": "33752982532314842955867034258985568949958761450943043689987049583448528253590",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Bab el-Mandeb Strait effectively closed by July 31?",
+   "their_price": 0.911,
+   "my_price": 0.924,
+   "slippage_pct": 0.0143,
+   "lag_s": 44.4,
+   "shares": 2.61,
+   "cost": 2.41,
+   "fee": 0.01,
+   "opened": 1784493015,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "38596120750074321785333064789385162164853013897516945380739845321752073819772",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2047,24 +2066,6 @@
    "pnl": 3.6568,
    "settled": 1783697039,
    "note": "reconstructed 2026-07-10: in-play 'delayed' acceptance mis-read as rejection; order filled untracked"
-  },
-  {
-   "token": "72380260523779452108747496691590035418744958761813904753644512394906005337193",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will LAB reach $24 before 2027?",
-   "their_price": 0.95,
-   "my_price": 0.95,
-   "slippage_pct": -0.0,
-   "shares": 5.26,
-   "cost": 5.0,
-   "fee": 0.01,
-   "opened": 1783665151,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   }
  ],
  "missed": [
@@ -3021,5 +3022,5 @@
   }
  ],
  "missed_pnl": 1052.12,
- "updated": 1784493026
+ "updated": 1784493059
 }
