@@ -8,25 +8,11 @@ Watches a list of wallets and mirrors their trades onto your own account:
   - guard:  skip a copy if the price rose >5 POINTS above their fill
             (absolute — 0.14→0.15 follows; better-than-theirs never blocked)
 
-SAFETY
-------
-Runs in PAPER mode by default — it logs exactly what it would do and places
-nothing. Live trading requires ALL of:
-    1. "mode": "live" in the config,
-    2. the --live command-line flag,
-    3. typing the confirmation phrase when prompted,
-    4. py-clob-client installed and valid credentials in the config.
-Hard risk caps (per-trade, daily spend, total exposure, open positions, price
-bounds) apply in both modes. This is real money in live mode — you are
-responsible for the configuration and the outcomes.
-
-Usage
------
-    python3 copytrade.py --init           # write config.example.json
-    python3 copytrade.py                   # paper mode (safe)
-    python3 copytrade.py --once            # one polling pass, then exit
-    python3 copytrade.py --live            # live mode (requires config + confirm)
-    python3 copytrade.py --config my.json  # custom config path
+This is the ENGINE ONLY (the standalone CLI was retired 2026-07-19 — it had
+been broken since the 07-10 price_guard rename, proof nobody ran it; closes
+#6). copybot.py is the sole runner: it wires the engine to detection, the
+executors, and the book. Hard risk caps and the paper-default safety model
+live in DEFAULT_CONFIG + confirm_live().
 """
 
 import argparse
@@ -56,7 +42,6 @@ DEFAULT_CONFIG = {
     "bankroll_pct": 0.02,            # fraction of CURRENT equity per new entry
                                      # (compounds up and down; falls back to a flat
                                      # fraction of bankroll_usd when cash isn't tracked)
-    "stake_cap_usd": 0,              # >0: pin stakes at this size once the book grows
                                      # past cap/bankroll_pct — surplus cash is SWEPT to
                                      # state["reserve"], a banked pot that never bets
                                      # (profit ratchet + keeps fills inside book depth)
@@ -280,48 +265,6 @@ class PaperExecutor:
         return {"ok": True, "filled_shares": shares, "price": price, "paper": True}
 
 
-class LiveExecutor:
-    """Places real orders via py-clob-client. Imported lazily."""
-    live = True
-
-    def __init__(self, cfg):
-        try:
-            from py_clob_client.client import ClobClient
-            from py_clob_client.clob_types import OrderArgs, OrderType
-            from py_clob_client.order_builder.constants import BUY, SELL
-        except ImportError:
-            sys.exit("Live mode needs py-clob-client:  pip install py-clob-client")
-        self._OrderArgs, self._OrderType = OrderArgs, OrderType
-        self._BUY, self._SELL = BUY, SELL
-        live = cfg["live"]
-        if not live.get("private_key"):
-            sys.exit("Live mode needs live.private_key in the config.")
-        self.client = ClobClient(
-            host=CLOB_API,
-            key=live["private_key"],
-            chain_id=POLYGON_CHAIN_ID,
-            signature_type=live.get("signature_type", 1),
-            funder=live.get("funder_address") or None,
-        )
-        self.client.set_api_creds(self.client.create_or_derive_api_creds())
-
-    def _order(self, token_id, shares, price, side):
-        args = self._OrderArgs(price=round(price, 3), size=round(shares, 2),
-                               side=side, token_id=token_id)
-        signed = self.client.create_order(args)
-        resp = self.client.post_order(signed, self._OrderType.GTC)
-        ok = bool(resp and resp.get("success", True))
-        return {"ok": ok, "filled_shares": shares, "price": price,
-                "resp": resp, "paper": False}
-
-    def buy(self, token_id, shares, price, meta):
-        return self._order(token_id, shares, price, self._BUY)
-
-    def sell(self, token_id, shares, price, meta):
-        return self._order(token_id, shares, price, self._SELL)
-
-
-# ── engine ────────────────────────────────────────────────────────────────
 
 class CopyTrader:
     def __init__(self, cfg, state, executor, state_path):
@@ -752,50 +695,6 @@ class CopyTrader:
                  f"(won't be copied as new entries)")
 
     # -- one polling pass over every watched wallet --
-    def poll_once(self, first_pass):
-        started = self.state["started_at"]
-        for wallet in self.cfg["watchlist"]:
-            self.seed_wallet(wallet)
-            trades = recent_trades(wallet)
-            # oldest-first so position math is causal
-            for t in sorted(trades, key=lambda x: x.get("timestamp", 0)):
-                # on the very first pass, ignore anything from before we started
-                if first_pass and t.get("timestamp", 0) < started:
-                    self.seen.add(t.get("transactionHash"))
-                    continue
-                self.handle_trade(wallet, t)
-        self.persist()
-
-    def run(self, once):
-        mode = "LIVE — REAL MONEY" if self.ex.live else "PAPER (no orders placed)"
-        self.log(f"copy-trader started · mode: {mode}")
-        self.log(f"watching {len(self.cfg['watchlist'])} wallets · "
-                 f"bankroll ${self.cfg['bankroll_usd']:.0f} @ "
-                 f"{self.cfg['bankroll_pct']:.1%}/entry · "
-                 f"guard {self.cfg['price_guard_pct']:.0%}")
-        if self.webhook:
-            post_discord(self.webhook,
-                         f"✅ **Copy-trade tracker connected** ({mode})\n"
-                         f"watching {len(self.cfg['watchlist'])} wallets · "
-                         f"${self.cfg['bankroll_usd']:.0f} bankroll @ "
-                         f"{self.cfg['bankroll_pct']:.1%}/entry · "
-                         f"guard {self.cfg['price_guard_pct']:.0%}\n"
-                         f"You'll get a ping on every trade it would place.")
-        if not self.cfg["watchlist"]:
-            self.log("watchlist is empty — add wallets to the config. "
-                     "(Run smart_money.py to find them.)")
-            return
-        first = True
-        try:
-            while True:
-                self.poll_once(first_pass=first)
-                first = False
-                if once:
-                    break
-                time.sleep(self.cfg["poll_seconds"])
-        except KeyboardInterrupt:
-            self.log("stopped.")
-
 
 # ── cli ──────────────────────────────────────────────────────────────────
 
@@ -825,42 +724,3 @@ def confirm_live(cfg):
         sys.exit("Aborted — not confirmed.")
 
 
-def main():
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--config", default="config.json")
-    ap.add_argument("--state", default=STATE_PATH_DEFAULT)
-    ap.add_argument("--live", action="store_true",
-                    help="enable live trading (also needs mode:live in config)")
-    ap.add_argument("--once", action="store_true", help="one pass, then exit")
-    ap.add_argument("--init", action="store_true",
-                    help="write config.example.json and exit")
-    args = ap.parse_args()
-
-    if args.init:
-        save_json("config.example.json", DEFAULT_CONFIG)
-        print("Wrote config.example.json — copy to config.json and edit.")
-        return
-
-    if not os.path.exists(args.config):
-        sys.exit(f"No config at {args.config}. Run --init to create a template.")
-    cfg = {**DEFAULT_CONFIG, **load_json(args.config, {})}
-    cfg["risk"] = {**DEFAULT_CONFIG["risk"], **cfg.get("risk", {})}
-    cfg["live"] = {**DEFAULT_CONFIG["live"], **cfg.get("live", {})}
-
-    want_live = args.live and cfg.get("mode") == "live"
-    if args.live and cfg.get("mode") != "live":
-        sys.exit('--live given but config "mode" is not "live". Refusing to trade.')
-
-    state = load_json(args.state, new_state())
-    if want_live:
-        confirm_live(cfg)
-        executor = LiveExecutor(cfg)
-    else:
-        executor = PaperExecutor()
-
-    CopyTrader(cfg, state, executor, args.state).run(once=args.once)
-
-
-if __name__ == "__main__":
-    main()

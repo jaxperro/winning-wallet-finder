@@ -62,8 +62,8 @@ import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 from copytrade import (  # the execution engine (sizing, gates, executors)
-    CopyTrader, PaperExecutor, LiveExecutor, DEFAULT_CONFIG,
-    load_json, save_json, new_state, recent_trades, confirm_live, clob_price,
+    CopyTrader, PaperExecutor, DEFAULT_CONFIG, load_json, save_json,
+    new_state, recent_trades, confirm_live, clob_price, book_depth,
 )
 import smart_money as sm  # noqa: E402
 from smart_money import SSL_CTX  # noqa: E402
@@ -979,25 +979,7 @@ class Copybot:
         backtest and a depth gate before sizing up. NB captured just AFTER
         our own fill, so ask-side depth is net of what we took — fine for a
         first-order model. Best-effort: never blocks or fails a copy."""
-        try:
-            req = urllib.request.Request(f"{CLOB_API}/book?token_id={token}",
-                                         headers={"User-Agent": "Mozilla/5.0"})
-            b = json.loads(urllib.request.urlopen(req, timeout=6, context=SSL_CTX).read())
-            bids = b.get("bids") or []
-            asks = b.get("asks") or []
-            bb = max((float(x["price"]) for x in bids), default=None)
-            ba = min((float(x["price"]) for x in asks), default=None)
-
-            def depth(side, ref, sgn):
-                if ref is None:
-                    return None
-                return round(sum(float(x["size"]) * float(x["price"]) for x in side
-                                 if sgn * (float(x["price"]) - ref) >= -0.05), 2)
-            return {"bb": bb, "ba": ba,
-                    "spread": round(ba - bb, 4) if bb is not None and ba is not None else None,
-                    "bid5c": depth(bids, bb, 1), "ask5c": depth(asks, ba, -1)}
-        except Exception:
-            return None
+        return book_depth(token)   # dedupe 2026-07-19 (closes #6): was a line-for-line copy
 
     def _record_lag(self, wallet, t, fill):
         """Gap 1 — log the detection lag and price slippage of a copy: their fill
