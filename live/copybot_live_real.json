@@ -2070,6 +2070,21 @@
  ],
  "missed": [
   {
+   "ts": 1784496391,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "115428153746996892211798999366308897078723117634059783423375188043903703749062",
+   "cond": "0x0c4cd2055d6ea89354ffddc55d6dbcef9355748112ea952fc925f3db6a5c457f",
+   "title": "Will Argentina win the 2026 FIFA World Cup?",
+   "outcome": "No",
+   "price": 0.711,
+   "stake": 2.41,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784492349,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "62074667087255747412382561081475311823484268378809285620641251664614873335395",
@@ -3004,23 +3019,8 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1784145016,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "69816346859095495747189627053263753156196009953825285858477796399815602774300",
-   "cond": "0x518df6d694ad4658fe6c284850c029c6f00c9b3609cf05f7757d1fecba1641f8",
-   "title": "US-Iran 60 day negotiation period extended?",
-   "outcome": "No",
-   "price": 0.51,
-   "stake": 1.0,
-   "reason": "price moved 0.45\u21920.51",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
  "missed_pnl": 1052.12,
- "updated": 1784493059
+ "updated": 1784496391
 }
