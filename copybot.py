@@ -1623,6 +1623,18 @@ class Copybot:
                 keep.append(r)              # resolver owns this token right now
                 continue
             shares = min(r["shares"], mine["shares"])
+            if getattr(self.engine.ex, "live", False):
+                try:                       # closes #7: never retry a ghost
+                    chain_sh = self.engine.ex._shares_held(tok)
+                except Exception:
+                    keep.append(r)
+                    continue
+                if chain_sh < 0.01:
+                    log(f"retry: ghost holding (chain 0) — dropping "
+                        f"{r.get('label','?')[:40]}")
+                    st["my_pos"].pop(tok, None)
+                    continue
+                shares = min(shares, chain_sh)
             price = self.engine._live_price(tok, "sell")
             if price is None:
                 res = {"ok": False, "resp": "no bid side"}
@@ -2024,6 +2036,23 @@ class Copybot:
                 pos = mp.get(token)
                 if not pos:
                     continue
+                # closes #7: the BOOK's share count can drift above the CHAIN's
+                # (venue rounding on partial exits — the BetBoom 0.12sh ghost
+                # looped "not enough balance" forever). Chain is the arbiter:
+                # clamp the exit to what actually exists; a ghost (<0.01sh on
+                # chain) is dropped outright, loudly, instead of retried.
+                if getattr(self.engine.ex, "live", False):
+                    try:
+                        chain_sh = self.engine.ex._shares_held(token)
+                    except Exception:
+                        continue            # no chain truth -> no action this pass
+                    if chain_sh < 0.01:
+                        log(f"reconcile: ghost position (book "
+                            f"{pos['shares']:.2f}sh, chain 0) — dropping "
+                            f"{pos.get('title','?')[:40]}")
+                        del mp[token]
+                        continue
+                    pos["shares"] = min(pos["shares"], chain_sh)
                 name = self.names.get(wallet.lower(), wallet[:10])
                 log(f"reconcile: {name} exited {pos.get('title','?')[:42]} while we "
                     f"weren't listening — mirror-exiting {pos['shares']:.1f}sh now")

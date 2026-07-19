@@ -9,12 +9,30 @@ import gzip
 import json
 import os
 import shutil
+import ssl
 import subprocess
 import time
+import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DB = os.path.join(HERE, "..", "live", "rtds.duckdb")
 APP, SEG = "wwf-recorder", "/data/segments"
+
+
+def ping(msg):
+    """Best-effort Discord ping to the DAILY channel (user ask 2026-07-19:
+    the nightly pull announces start + finish). Never fatal."""
+    try:
+        hook = json.load(open(os.path.join(HERE, "..", "config.json"))).get("daily_webhook")
+        if not hook:
+            return
+        req = urllib.request.Request(hook, data=json.dumps({"content": msg}).encode(),
+                                     headers={"Content-Type": "application/json",
+                                              "User-Agent": "Mozilla/5.0"})
+        urllib.request.urlopen(req, timeout=10,
+                               context=ssl._create_unverified_context()).read()
+    except Exception:
+        pass
 
 
 # launchd runs daily.sh with a minimal PATH (no /opt/homebrew/bin) — the
@@ -42,6 +60,7 @@ def main():
     have = {r[0] for r in con.execute("SELECT segment FROM ingested").fetchall()}
     segs = [s for s in box(f"ls {SEG}").split()
             if s.endswith(".gz") and s not in have]
+    ping(f"📼 tape ingest started — {len(segs)} segment(s) queued")
     total = 0
     for s in sorted(segs):
         raw = box(f"base64 {SEG}/{s}")
@@ -76,6 +95,8 @@ def main():
         print(f"[ingest] {s}: {len(rows)} trades + {len(aux)} aux")
     n = con.execute("SELECT count(*) FROM trades").fetchone()[0]
     print(f"[ingest] +{total} rows · rtds.duckdb now {n:,} trades")
+    ping(f"📼 tape ingest done: +{total:,} rows across {len(segs)} segment(s) "
+         f"· rtds.duckdb now {n:,} trades")
 
 
 if __name__ == "__main__":
