@@ -56,16 +56,32 @@ the number that decides real-money sizing** (see [`LIVE_ROLLOUT.md`](LIVE_ROLLOU
 for the phased path; Phase 1 code prep is complete, Phase 2 is funding).
 
 ```
- data layer            selection                          execution              display
- ──────────            ─────────                          ─────────              ───────
- live/cache.duckdb ──▶ trust.py (trusted-row filter)      copybot.py (Fly arn) ─▶ jaxperro.com/trading
- (schema v2:           skill.py (5-gate funnel)           · class % of equity,    · copybot_live.json
-  35k wallets,         conviction_scan.py (p80 + z_all)     capped at the           (live bot book)
-  20M+ resolved bets,  validate_timing.py (fee-aware        signal's own bet     · portfolio.json
-  token-keyed,          copy replay → watch_sharps)       · taker fees modeled     (rolling backtest)
-  archival;            portfolio.py (rolling replay of    · lag/slip per fill   · watch_sharps.json
-  TRUSTED rows only     backtest.json's wallet set)       · missed-bet ledger      (sharp table)
-  may score)           sync_floors.py (bot parity)        · CLOB settle + redeem
+ DETECTION (Fly arn, ~1-4s)          EXECUTION (one code, two apps)       DISPLAY (jaxperro.com)
+ ──────────────────────────          ──────────────────────────────       ──────────────────────
+ RTDS ws (every trade, ~1s) ─┐       wwf-copybot        PAPER $1k book    /trading  (paper+bench)
+ Alchemy push ~3s ───────────┼─▶     wwf-copybot-live   REAL pUSD, the    /live     (real money)
+  └─ T0b chain seed: fills   │        deposit wallet 0x455e…45a1          /value    (frozen record
+     decoded from tx receipts│       · FollowFilter — conviction p80       of the killed sub-2¢
+ 300s backstop poll ─────────┘         floors, entry band, +0.05 guard     experiment, 2026-07-19)
+ user-ws own-fill push (live)        · CopyTrader — 4% of equity, their-
+                                       bet ceiling, depth stake cap
+ All four funnel into                · Ledger{Paper,Live}Executor — FAK
+ on_wallet_activity (dedupe            with protected prices; paper uses
+ by tx, clip-merge, stale gate)        the SAME band vs the REAL book
+                                       (honest misses, never phantom fills)
+                                     · chain-truth settles (payout vectors)
+                                     · boot-id single-writer guard; book
+                                       committed to THIS repo (git = WAL)
+
+ RESEARCH (Mac, launchd 08:00, lockfile)                 TAPE SILO (Fly arn)
+ ───────────────────────────────────────                 ───────────────────
+ daily.sh: enumerate → collect → skill (5-gate)          wwf-recorder: EVERY platform
+ → conviction+timing gates → sync_floors (pins)          trade → hour-gz segments on a
+ → portfolio.py (bench forward table) → edge.py          10GB volume (2-3k trades/min)
+ (bankroll verdict → digest footer) → tape ingest        → nightly ingest →
+ → dashboard → publish → Discord digest                  live/rtds.duckdb (5M+ rows —
+ cache.duckdb: 26M resolved bets, single-writer;         current-era ground truth for
+ TRUSTED rows only may score (trust.py)                  the next strategy hypotheses)
 ```
 
 ---
@@ -169,9 +185,10 @@ python3 portfolio.py                   # the backtest book -> portfolio.json
 python3 copybot.py --config live/copybot.paper.json --state /tmp/s.json --poll 60
 python3 copybot.py --test-wallet 0x…   # dry-run one wallet's latest trade
 
-# live trading (real money): read LIVE_TEST.md, then
-pip3 install py-clob-client web3
-python3 preflight_live.py              # read-only credential/balance check
+# live trading (real money): read HANDOFF.md first — the live worker runs the
+# unified SDK (polymarket-client) on Fly with env secrets; py-clob-client is
+# ARCHIVED (reads only, placement dead — gotcha 16). preflight_live.py is the
+# read-only credential/balance check for the current stack.
 ```
 
 The cache is the point: **every score re-runs in seconds from
