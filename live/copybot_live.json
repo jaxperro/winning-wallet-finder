@@ -2103,6 +2103,21 @@
  ],
  "missed": [
   {
+   "ts": 1784469295,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "38596120750074321785333064789385162164853013897516945380739845321752073819772",
+   "cond": "0xf137d500bee37ff54903e73dfb8cabcfdf8ef4c13c1dd322b649c329cb70c008",
+   "title": "Will Charles Leclerc win the 2026 F1 Belgian Grand Prix?",
+   "outcome": "No",
+   "price": 0.5559,
+   "stake": 101.66,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 79.86,
+   "settled": 1784489183,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784485443,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "3306035343466503934184175896783360690575375600980458166852017344010969201326",
@@ -2228,21 +2243,6 @@
    "settled": 1784471551,
    "name": "1kto1m",
    "exit_price": 0.4171
-  },
-  {
-   "ts": 1784469295,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "38596120750074321785333064789385162164853013897516945380739845321752073819772",
-   "cond": "0xf137d500bee37ff54903e73dfb8cabcfdf8ef4c13c1dd322b649c329cb70c008",
-   "title": "Will Charles Leclerc win the 2026 F1 Belgian Grand Prix?",
-   "outcome": "No",
-   "price": 0.5559,
-   "stake": 101.66,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784454959,
@@ -3052,6 +3052,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 90579.31,
- "updated": 1784486894
+ "missed_pnl": 90659.17,
+ "updated": 1784489183
 }
