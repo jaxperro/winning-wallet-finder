@@ -1,5 +1,7 @@
 # VALUE — the undervalued-market paper bot
 
+**STATUS: CLOSED 2026-07-19 — hypothesis refuted (1W/993L, 0.075x; see PLAN.md post-mortem). App destroyed; files kept as the record.**
+
 A **silo'd** experiment: can systematically buying sub-2¢ Polymarket contracts
 beat their price? Research says yes on paper (~1.24x gross); this bot exists
 to find out if the fills are real. It shares **no code path, state, app, or

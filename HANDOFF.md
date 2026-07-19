@@ -1,5 +1,11 @@
 # Session handoff — 2026-07-19 (rev 15: tape+bench+gate; rev 14: +$44 bankroll, exact paper-parity config; rev 13: FAK parity; rev 12: chain-seed)
 
+## 2026-07-19: VALUEBOT KILLED (user call, pre-registered criterion met)
+994 resolved: 1W/993L, 0.075x — historical 1.24-1.28x edge refuted in the
+current era (expected ~12 wins, got 1). Post-mortem in value/PLAN.md; Fly
+app destroyed; feed/dashboard kept as record. Reusable takeaways: the honest
+fill model + silo pattern; next hypothesis should come from the RTDS tape.
+
 ## 2026-07-19 (rev 16): audit hardening shipped (top-10 items 1-9)
 Deep-audit fixes, all deployed same day: (1) the book is now fully
 serialized — resolve_pendings/retry_stuck_exits/write_feed take bot.lock,

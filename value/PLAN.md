@@ -1,3 +1,19 @@
+# ── POST-MORTEM (2026-07-19): EXPERIMENT CLOSED — HYPOTHESIS REFUTED ──
+Killed by the pre-registered criterion, decisively: 994 resolved tickets,
+**1W / 993L, 0.075x realized multiple** (paper bank $1,000 spent; 32 tickets
+/ ~$32 still open at shutdown — even if ALL win, the multiple caps ~0.1x).
+The v0 sub-2¢ mix AND the v0.1 1-2c band both failed live-paper despite the
+cache showing 1.24-1.28x historically. Expected wins at the historical rate:
+~12; observed: 1 (p ≈ 0 — not variance).
+
+VERDICT: today's sub-2¢ asks are near-perfectly informed. The 2025-era
+calibration edge no longer exists in the current market — the visible cheap
+tail is pure adverse selection now. The honest FAK fill model + $1 stakes
+made this a ~$1,000-paper-dollar lesson instead of a real one; the fill
+model, chain settles, and silo pattern all worked exactly as designed and
+are reusable for the next hypothesis (tape-derived flow signals).
+Fly app destroyed 2026-07-19; feed/state/dashboard remain as the record.
+
 # VALUE — undervalued-market bot (silo'd from the copy trader)
 
 Status: RESEARCH + PLAN (2026-07-17). No bot code yet. USER directives:
