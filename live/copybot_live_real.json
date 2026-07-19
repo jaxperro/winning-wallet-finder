@@ -2050,6 +2050,21 @@
  ],
  "missed": [
   {
+   "ts": 1784485474,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "3306035343466503934184175896783360690575375600980458166852017344010969201326",
+   "cond": "0x55396f414e79e269de30965a8304b16ecf3e993ed13505c39ec0f5ece7296b4a",
+   "title": "Bitcoin Up or Down - July 19, 2:15PM-2:30PM ET",
+   "outcome": "Up",
+   "price": 0.4326,
+   "stake": 2.35,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1784482279,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "17973586937761078448873484917108971852340583833844287573538816307502825884858",
@@ -2984,24 +2999,8 @@
    "settled": 1784138211,
    "name": "gkmgkldfmg",
    "exit_price": 0.8937
-  },
-  {
-   "ts": 1784136358,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
-   "cond": "0x7446c13b91bf8ece3c07cb6127008ff534ab2853dd3cd31dce5a1452367b461a",
-   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
-   "outcome": "1win",
-   "price": 0.38,
-   "stake": 1.0,
-   "reason": "in-play hold expired unfilled (69s)",
-   "status": "sold",
-   "pnl": 0.04,
-   "settled": 1784136938,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.4086
   }
  ],
  "missed_pnl": 1051.59,
- "updated": 1784484515
+ "updated": 1784485479
 }
