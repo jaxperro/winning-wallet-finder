@@ -63,16 +63,25 @@ class Tape:
             os.remove(plain)
             log(f"rotated {fam}_{cur[0]} ({cur[2]} rows)")
         self.files[fam] = [hour, open(os.path.join(DIR, f"{fam}_{hour}.jsonl"), "a"), 0]
-        # disk guard: drop oldest closed segments past 85% usage
+        # disk policy (user directive 2026-07-19): NEVER delete tape the Mac
+        # hasn't downloaded — only the nightly ingest deletes, post-verified
+        # insert. The 25GB volume holds ~5 weeks un-pulled. Warn from 80%;
+        # only at >=95% (weeks of no ingest, disk about to kill the CURRENT
+        # tape too) drop the single oldest segment per rotation, loudly —
+        # losing the oldest hour beats the recorder crashing on a full disk
+        # and losing everything forward.
         try:
             st = os.statvfs(DIR)
-            while st.f_bavail / st.f_blocks < 0.15:
+            free = st.f_bavail / st.f_blocks
+            if free < 0.20:
+                log(f"⚠ tape volume {100*(1-free):.0f}% full — ingest has not "
+                    "run in a long while; check the Mac / daily pipeline")
+            if free < 0.05:
                 old = sorted(f for f in os.listdir(DIR) if f.endswith(".gz"))
-                if not old:
-                    break
-                os.remove(os.path.join(DIR, old[0]))
-                log(f"disk guard dropped {old[0]}")
-                st = os.statvfs(DIR)
+                if old:
+                    os.remove(os.path.join(DIR, old[0]))
+                    log(f"⚠⚠ TAPE LOSS: disk full — dropped oldest segment "
+                        f"{old[0]} (last resort; fix the ingest!)")
         except Exception:
             pass
 
