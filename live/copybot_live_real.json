@@ -1,24 +1,24 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.41,
+ "stake": 2.42,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 45.06,
- "deployed": 15.28,
+ "cash": 44.11,
+ "deployed": 16.27,
  "reserve": 0.0,
- "realized": -15.46,
+ "realized": -15.43,
  "adjustments": 9.39,
  "ledger_drift": 0.0,
- "open_count": 10,
- "fees_paid": 2.8,
+ "open_count": 11,
+ "fees_paid": 2.81,
  "fee_rate": 0.03,
  "lag": {
-  "n": 95,
-  "n24": 8,
-  "avg_s": 10.9,
-  "avg_slip_pct": 0.0228,
+  "n": 96,
+  "n24": 9,
+  "avg_s": 10.1,
+  "avg_slip_pct": 0.024,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,27 @@
   "AIcAIc": 341.23
  },
  "bets": [
+  {
+   "token": "6457952357077230044054791268159160058712529625831041550558183767114352456975",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "New Zealand",
+   "title": "ODI Series West Indies vs. New Zealand: West Indies vs New Zealand",
+   "their_price": 0.8856,
+   "my_price": 0.915,
+   "slippage_pct": 0.0331,
+   "lag_s": 3.2,
+   "shares": 2.65,
+   "cost": 2.42,
+   "fee": 0.01,
+   "opened": 1784497171,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "sold_shares": 1.57,
+   "sold_proceeds": 1.48
+  },
   {
    "token": "33752982532314842955867034258985568949958761450943043689987049583448528253590",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2047,25 +2068,6 @@
    "pnl": -5.15,
    "settled": 1783697039,
    "note": "reconstructed 2026-07-10: in-play 'delayed' acceptance mis-read as rejection; order filled untracked"
-  },
-  {
-   "token": "reconstructed-1783686500",
-   "wallet": "",
-   "name": "(incident)",
-   "outcome": "Aurora",
-   "title": "Dota 2: Aurora vs PlayTime - Game 1 Winner",
-   "their_price": 0.57,
-   "my_price": 0.57,
-   "slippage_pct": 0.0,
-   "shares": 8.77,
-   "cost": 5.0,
-   "fee": 0.11,
-   "opened": 1783686500,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 3.6568,
-   "settled": 1783697039,
-   "note": "reconstructed 2026-07-10: in-play 'delayed' acceptance mis-read as rejection; order filled untracked"
   }
  ],
  "missed": [
@@ -3023,5 +3025,5 @@
   }
  ],
  "missed_pnl": 1052.18,
- "updated": 1784496787
+ "updated": 1784497295
 }
