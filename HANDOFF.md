@@ -1,5 +1,17 @@
 # Session handoff — 2026-07-17 (rev 14: +$44 bankroll, exact paper-parity config; rev 13: FAK parity; rev 12: chain-seed)
 
+## 2026-07-19: spread skip retired (both books)
+The depth gate's hard spread>0.08 skip was a lag-era relic: fitted at 39-90s
+detection when wide spread meant the book repriced under a late copy. At ~4s
+RTDS lag the mechanism is gone (fills ledger: median |slip| 3.7%→1.7% era
+over era; Kruto+gkmg in-play mean +0.4%), and the skip fired on the informed
+wallets' best moments — 17 resolved skips would have run 12W/5L (+$11 live /
++$674 paper, Tauson tennis +$447 the headline). Overpay stays bounded by the
+price guard (+0.05 abs) and FAK protected band; the depth STAKE CAP and dust
+skip remain (thin misses were net-protective, 0W/2L). Watch: wide-spread
+copies' realized slip on the dashboards — if mean slip degrades past ~+3%,
+revisit with a guard-anchored executable-ask check instead of a spread skip.
+
 ## 2026-07-17: bankroll top-up + USER DIRECTIVE — live mirrors paper EXACTLY
 - **User deposited +$44.14** (Cash App → BTC → bridge, 70241 sats; ~$6 lost
   to Cash App spread + BTC conversion — Polygon USDC is the cheap route).

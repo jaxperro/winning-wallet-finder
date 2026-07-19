@@ -68,7 +68,8 @@ DEFAULT_CONFIG = {
                                      # 0.05 line sits at the EV knee (0.05-0.10
                                      # moves ≈ breakeven, >0.10 = −20% ROI).
     "depth_gate": {                  # 2026-07-13, fitted on 131 gated fills —
-        "max_spread": 0.08,          # wider = market mid-move (med |slip| ~14%)
+        "max_spread": 0.08,          # RETIRED as a skip 2026-07-19 (lag-era
+                                     # relic) — kept for config compatibility
         "min_ask5c": 50.0,           # dust books mispriced every observed fill
         "max_frac_of_ask5c": 0.10,   # stake ≤10% of 5c ask depth (impact <~2%)
     },
@@ -571,10 +572,17 @@ class CopyTrader:
             bk = book_depth(token)
             if bk and bk.get("ask5c") is not None:
                 d_reason = None
-                if (bk.get("spread") or 0) > dg["max_spread"]:
-                    d_reason = (f"book unreliable (spread {bk['spread']:.2f} > "
-                                f"{dg['max_spread']:.2f})")
-                elif bk["ask5c"] < dg["min_ask5c"]:
+                # SPREAD SKIP RETIRED (2026-07-19): the 0.08 rule was fitted in
+                # the 39-90s-lag era, when a wide spread meant the book had
+                # repriced under a late copy (med |slip| ~14%). At RTDS-era
+                # ~4s lag the mechanism is gone (median |slip| 3.7%→1.7%,
+                # Kruto+gkmg in-play mean +0.4%), and the skip was firing on
+                # the informed wallets' BEST moments — in-play chaos IS their
+                # signal (17 resolved skips ran 12W/5L, +$11 live/+$674 paper
+                # would-be). Overpay is already bounded twice: the price guard
+                # (their fill +0.05 abs) and the FAK protected band. The
+                # depth-based stake cap and dust skip below KEEP earning.
+                if bk["ask5c"] < dg["min_ask5c"]:
                     d_reason = (f"thin book (${bk['ask5c']:.0f} within 5c < "
                                 f"${dg['min_ask5c']:.0f})")
                 else:
