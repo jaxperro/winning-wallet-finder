@@ -1,7 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0x133ef5c74e9bd495b15259f91bbbf959e862f1da99dba2dbc1d563c98379b9e9",
     "0x82fb8ff52c08191fb802d8e7b87ef1e3915bd5cd6e027166d4e4ba83181b7cff",
     "0xb58da9b7978227d900a95c4e8eca1d4b0bbceafa5ab4f86eb840427e53371aee",
     "0xf4eff7cfcf3d62ebac3793cab8cbf1efe96450d0011ffbe6444d0177313a912e",
@@ -5000,7 +4999,8 @@
     "0x88fd8950b8dd014430b2e42c497e577003a85c9448582ee9e96bb41860aee4df",
     "0xdfade483aa4b12963b8cc63ad53892fdf179597199b53230d411cf97c886da9f",
     "0x2c92664443c28bce5fdeb343502f660ea26c2faa455be1f55ef18da83e02e922",
-    "0xfcac2d80eb4a5c10326d54c1f1edddf25b351a3e38c7800f9c99cf4c1549b6e6"
+    "0xfcac2d80eb4a5c10326d54c1f1edddf25b351a3e38c7800f9c99cf4c1549b6e6",
+    "0x2e2b61e86b060e7ad0511e758c577cb17e66b86c3283c7a17e06f4631c68763f"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -14731,8 +14731,8 @@
     }
   },
   "hwm": 2849.150445045735,
-  "feed_sig": "1d3358b962d0f4b5eb9192815af304c9",
-  "feed_pushed_at": 1784482198.8827558,
+  "feed_sig": "37220af3315775cfc35c03c3d5eefc47",
+  "feed_pushed_at": 1784485376.8423476,
   "missed": [
     {
       "ts": 1783590977,
@@ -16824,6 +16824,21 @@
       "pnl": null,
       "settled": null,
       "name": "BikesAreTheBikes"
+    },
+    {
+      "ts": 1784485443,
+      "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+      "token": "3306035343466503934184175896783360690575375600980458166852017344010969201326",
+      "cond": "0x55396f414e79e269de30965a8304b16ecf3e993ed13505c39ec0f5ece7296b4a",
+      "title": "Bitcoin Up or Down - July 19, 2:15PM-2:30PM ET",
+      "outcome": "Up",
+      "price": 0.4664,
+      "stake": 105.73,
+      "reason": "not copied in the detection window (reconciled)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "1kto1m"
     }
   ],
   "no_miss_toks": [
@@ -16916,12 +16931,12 @@
   "trade_cursor": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
-    "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784482024,
+    "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784485147,
     "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784480334,
-    "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784481786,
+    "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784482447,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784472576,
-    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784480701,
-    "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784475483
+    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784485437,
+    "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784482278
   },
   "boot": {
     "id": "e249d5106e15",
