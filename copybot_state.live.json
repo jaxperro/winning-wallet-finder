@@ -15234,14 +15234,15 @@
       "price": 0.3669,
       "stake": 2.0,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "1kto1m"
+      "status": "sold",
+      "pnl": -1.88,
+      "settled": 1784454324,
+      "name": "1kto1m",
+      "exit_price": 0.0304
     }
   ],
-  "feed_sig": "d91391389961dd6d4d858424c952c1f4",
-  "feed_pushed_at": 1784453933.6705546,
+  "feed_sig": "786d041b545c875f47cbc0ec7903e0d0",
+  "feed_pushed_at": 1784454315.330347,
   "adjustments": [
     {
       "ts": 1783906689,
@@ -15281,7 +15282,7 @@
     "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784453008,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784395746,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784387404,
-    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784454010,
+    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784454372,
     "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784451912
   }
 }
