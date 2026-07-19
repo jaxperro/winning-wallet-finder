@@ -1,17 +1,17 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.35,
+ "stake": 2.41,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 43.81,
- "deployed": 15.01,
+ "cash": 47.48,
+ "deployed": 12.87,
  "reserve": 0.0,
- "realized": -16.99,
+ "realized": -15.46,
  "adjustments": 9.39,
  "ledger_drift": 0.0,
- "open_count": 10,
+ "open_count": 9,
  "fees_paid": 2.8,
  "fee_rate": 0.03,
  "lag": {
@@ -46,6 +46,25 @@
   "AIcAIc": 341.23
  },
  "bets": [
+  {
+   "token": "38596120750074321785333064789385162164853013897516945380739845321752073819772",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Charles Leclerc win the 2026 F1 Belgian Grand Prix?",
+   "their_price": 0.556,
+   "my_price": 0.582,
+   "slippage_pct": 0.0468,
+   "lag_s": 12.4,
+   "shares": 3.67,
+   "cost": 2.14,
+   "fee": 0.03,
+   "opened": 1784469280,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 1.5,
+   "settled": 1784489144
+  },
   {
    "token": "69255676899700790711525989127308958019475795404138315524495668898066870353801",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -148,25 +167,6 @@
    "settled": 1784471234,
    "sold_shares": 3.92,
    "sold_proceeds": 2.01
-  },
-  {
-   "token": "38596120750074321785333064789385162164853013897516945380739845321752073819772",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Charles Leclerc win the 2026 F1 Belgian Grand Prix?",
-   "their_price": 0.556,
-   "my_price": 0.582,
-   "slippage_pct": 0.0468,
-   "lag_s": 12.4,
-   "shares": 3.67,
-   "cost": 2.14,
-   "fee": 0.03,
-   "opened": 1784469280,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "85741798597373637454857132313237665672348948280062152561851890771142395823036",
@@ -3022,5 +3022,5 @@
   }
  ],
  "missed_pnl": 1052.12,
- "updated": 1784486892
+ "updated": 1784489146
 }
