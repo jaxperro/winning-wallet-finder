@@ -8,6 +8,7 @@ import base64
 import gzip
 import json
 import os
+import shutil
 import subprocess
 import time
 
@@ -16,8 +17,13 @@ DB = os.path.join(HERE, "..", "live", "rtds.duckdb")
 APP, SEG = "wwf-recorder", "/data/segments"
 
 
+# launchd runs daily.sh with a minimal PATH (no /opt/homebrew/bin) — the
+# 2026-07-18 run died on FileNotFoundError: 'flyctl'. Resolve it explicitly.
+FLYCTL = shutil.which("flyctl") or "/opt/homebrew/bin/flyctl"
+
+
 def box(cmd):
-    r = subprocess.run(["flyctl", "ssh", "console", "-a", APP, "-C",
+    r = subprocess.run([FLYCTL, "ssh", "console", "-a", APP, "-C",
                         f"bash -c '{cmd}'"], capture_output=True, text=True,
                        timeout=300)
     return r.stdout
