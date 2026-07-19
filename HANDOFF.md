@@ -9,6 +9,22 @@ backlog, Friday bench reviews, verdict gates). Commits that resolve one say
 [HANDOFF_ARCHIVE.md](HANDOFF_ARCHIVE.md) — incident post-mortems, decision
 rationale, the whole story. This file stays ~a page: boundary, snapshot, ops.
 
+## Issue burndown 2026-07-19 (audit → shipped)
+Migrated the queue to GitHub Issues (labels/milestones; `closes #N` in
+commits). Closed same day: #3 webhook rotated · #5 listeners start after
+seed · #6 dead-code sweep (retired copytrade CLI + LiveExecutor) · #7
+chain-balance gate in reconcile_exits + retry (kills the BetBoom zombie
+class) · #8 rpc-down heartbeat flag · #9 memory caps (skipped recency-
+bounded, settled bets >30d spool to an archive with drift-invariant
+compensation — TESTED identical drift) · #10 publish-failure alarm · #11
+tape ingest sftp-first (base64 fallback) · #12 reconcile_entries 5m→30m.
+REOPENED #4: the redeemer's phantom-cash BOOBY TRAP is fixed + proven
+(on-chain sim SUCCESS; live fails honestly), but actually redeeming needs a
+Builder API Key (SDK gasless relay) the runtime bot deliberately lacks —
+LOW urgency, the platform auto-redeems winners itself. auto_redeem OFF.
+Open now: #1 Signal A, #2 tape research, #4 redeem builder-key, #13 Fri
+bench, #14 edge verdict.
+
 ## Operating boundary (user, 2026-07-13 — standing)
 **Full autonomy on the bots**; the real-money bot **stays ARMED**. Never
 touch the private key, Discord alerts webhook ROTATED 2026-07-19 (#3 closed),
