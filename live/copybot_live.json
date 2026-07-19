@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 101.79,
+ "stake": 104.58,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1599.67,
- "deployed": 945.16,
+ "cash": 1770.99,
+ "deployed": 843.44,
  "reserve": 0.0,
- "realized": 1544.8,
+ "realized": 1614.4,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 17,
- "fees_paid": 305.8,
+ "open_count": 16,
+ "fees_paid": 306.08,
  "fee_rate": 0.03,
  "lag": {
   "n": 200,
@@ -47,6 +47,27 @@
  },
  "bets": [
   {
+   "token": "37824164809093918071945208007872743881921286805762898355468714704460471077939",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Dplus KIA",
+   "title": "LoL: Karmine Corp vs Dplus KIA - Game 2 Winner",
+   "their_price": 0.59,
+   "my_price": 0.56,
+   "slippage_pct": -0.0508,
+   "lag_s": 1.1,
+   "shares": 181.64,
+   "cost": 101.72,
+   "fee": 1.34,
+   "opened": 1784471012,
+   "status": "closed",
+   "exit_price": 0.9432,
+   "pnl": 68.26,
+   "settled": 1784472579,
+   "sold_shares": 181.64,
+   "sold_proceeds": 171.32
+  },
+  {
    "token": "42900587076366844229913834194744356425297818081286466764921250179690312755990",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -66,25 +87,6 @@
    "settled": 1784471149,
    "sold_shares": 226.95,
    "sold_proceeds": 125.57
-  },
-  {
-   "token": "37824164809093918071945208007872743881921286805762898355468714704460471077939",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Dplus KIA",
-   "title": "LoL: Karmine Corp vs Dplus KIA - Game 2 Winner",
-   "their_price": 0.59,
-   "my_price": 0.56,
-   "slippage_pct": -0.0508,
-   "lag_s": 1.1,
-   "shares": 181.64,
-   "cost": 101.72,
-   "fee": 1.34,
-   "opened": 1784471012,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "42900587076366844229913834194744356425297818081286466764921250179690312755990",
@@ -3048,5 +3050,5 @@
   }
  ],
  "missed_pnl": 90594.72,
- "updated": 1784471876
+ "updated": 1784472579
 }
