@@ -2102,6 +2102,21 @@
  ],
  "missed": [
   {
+   "ts": 1784481427,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "42936981830905824453534043956708985265540220333757051125171389193089187972089",
+   "cond": "0x01a6556cf3057f36658c61ba18b2c8023bfd7e1eac2541523f54ed19bfc9da53",
+   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 3 Winner",
+   "outcome": "BetBoom Team",
+   "price": 0.3,
+   "stake": 32.59,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784481244,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "42936981830905824453534043956708985265540220333757051125171389193089187972089",
@@ -3034,24 +3049,8 @@
    "settled": 1783867915,
    "name": "gkmgkldfmg",
    "exit_price": 0.6184
-  },
-  {
-   "ts": 1783856662,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
-   "cond": "0xba7e1244bc3dabb6c38a128dcf7522104172e8b3a354aa711643c11064e56bf1",
-   "title": "Will Daejeon Hana Citizen FC win on 2026-07-12?",
-   "outcome": "Yes",
-   "price": 0.5222,
-   "stake": 100.32,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "lost",
-   "pnl": -101.76,
-   "settled": 1783867043,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 90565.53,
- "updated": 1784481425
+ "updated": 1784481431
 }
