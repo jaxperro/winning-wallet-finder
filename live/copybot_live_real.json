@@ -2050,6 +2050,21 @@
  ],
  "missed": [
   {
+   "ts": 1784480664,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "7053256648875791145597897290283880355436947345055175213430816442613499819460",
+   "cond": "0xfb2118c2ec1decae1284e002717a85b6157ae99ba1fd60fd3478cea44c50cb9c",
+   "title": "Bitcoin Up or Down - July 19, 1:00PM-1:15PM ET",
+   "outcome": "Up",
+   "price": 0.3496,
+   "stake": 2.35,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1784477428,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "89753340355558804329056284757801794404260582483119786963475710029909788245640",
@@ -2985,24 +3000,8 @@
    "settled": 1784132139,
    "name": "gkmgkldfmg",
    "exit_price": 0.1664
-  },
-  {
-   "ts": 1784131111,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "95258819910849737625236607586397007048396582198549809843327200924394330624542",
-   "cond": "0x26ed9c1dc439447898a1d3f22855381113ad8fac69fe8099f7eacc5503496c67",
-   "title": "Dota 2: 1win vs Vici Gaming - Game 2 Winner",
-   "outcome": "Vici Gaming",
-   "price": 0.36,
-   "stake": 1.0,
-   "reason": "in-play hold expired unfilled (33s)",
-   "status": "sold",
-   "pnl": 0.14,
-   "settled": 1784131502,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.4238
   }
  ],
  "missed_pnl": 1049.82,
- "updated": 1784479493
+ "updated": 1784480668
 }
