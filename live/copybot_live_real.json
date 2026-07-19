@@ -2050,6 +2050,21 @@
  ],
  "missed": [
   {
+   "ts": 1784482279,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "17973586937761078448873484917108971852340583833844287573538816307502825884858",
+   "cond": "0xb12f5e328a7d9f7a26e0a074625ea775025104e673c776d575dab422a472ef59",
+   "title": "Israel closes its airspace by July 31?",
+   "outcome": "No",
+   "price": 0.66,
+   "stake": 2.35,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784481439,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "42936981830905824453534043956708985265540220333757051125171389193089187972089",
@@ -2985,24 +3000,8 @@
    "settled": 1784136938,
    "name": "gkmgkldfmg",
    "exit_price": 0.4086
-  },
-  {
-   "ts": 1784136107,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "75636274443607445614938470591337628868615181893893587977168160999705149850480",
-   "cond": "0x7446c13b91bf8ece3c07cb6127008ff534ab2853dd3cd31dce5a1452367b461a",
-   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
-   "outcome": "Vici Gaming",
-   "price": 0.69,
-   "stake": 1.0,
-   "reason": "price moved 0.57\u21920.69",
-   "status": "sold",
-   "pnl": -0.05,
-   "settled": 1784136297,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.6712
   }
  ],
  "missed_pnl": 1051.59,
- "updated": 1784482034
+ "updated": 1784482281
 }
