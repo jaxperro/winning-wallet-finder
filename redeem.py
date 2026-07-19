@@ -1,99 +1,87 @@
 #!/usr/bin/env python3
-"""On-chain redemption of resolved Polymarket positions (live mode, gap 2).
+"""On-chain redemption of resolved Polymarket positions — 2026 pUSD stack.
 
-After a market resolves, winning conditional-token shares are still ERC-1155
-tokens — you must REDEEM them through Gnosis CTF (ConditionalTokens) to turn them
-back into USDC. The CLOB API doesn't do this; copybot calls this module so a
-resolved winner's freed capital is actually back in the wallet (in paper mode the
-recycle is just a number; live needs the real redemption).
+REWRITTEN 2026-07-19 (closes #4; audit 3.3). The old web3 version was a
+silent no-op booby trap on the current stack: it redeemed with USDC.e
+collateral from the EOA, but live positions are pUSD-collateralized
+(0xC011a7…, README gotcha 16) and live in the DEPOSIT WALLET (0x455e…45a1).
+`redeemPositions` with the wrong collateral/holder SUCCEEDS doing nothing —
+try_redeem returned ok and callers booked proceeds that never arrived.
 
-Covers standard binary markets via CTF.redeemPositions. NEG-RISK markets settle
-through a different adapter and are NOT handled here — copybot warns and you redeem
-those in the Polymarket UI. (Neg-risk auto-redeem is a clean follow-up.)
+Now: zero web3. The unified SDK's gasless relay executes redeemPositions
+FROM the deposit wallet (same `execute_transaction` path the 07-10 bridge
+wrap used), with pUSD as the collateral token. Selector 0x01b7037c =
+keccak4("redeemPositions(address,bytes32,bytes32,uint256[])"), computed and
+pinned 2026-07-19. The result reports the MEASURED pUSD delta so callers can
+see what actually landed (the balance can move concurrently with trading, so
+the delta is evidence, not the ledger entry).
 
-Requires:  pip install web3   and a Polygon RPC. RPC comes from config
-live.rpc_url, else is built from your Alchemy key. Each redeem costs a little POL
-(MATIC) in gas — fund the EOA with a few POL.
+NEG-RISK markets settle through a different adapter — callers must keep
+excluding them (market_neg_risk guard); redeeming them here is a no-op.
 
-UNTESTED against live until you run it on a small position — verify one redemption
-manually before trusting the loop:
-    python3 redeem.py <conditionId>     # redeem one resolved market, print tx hash
+    python3 redeem.py <conditionId>    # one-shot manual redeem (local config)
 """
 
 import json
 import os
 import sys
+import time
 
-# Polygon mainnet
-CHAIN_ID = 137
-CTF_ADDRESS = "0x4D97DCd97eC945f40cF65F87097ACe5EA0476045"   # Gnosis ConditionalTokens
-USDC_ADDRESS = "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"  # USDC.e (collateral)
-ZERO32 = b"\x00" * 32                                          # parentCollectionId
-
-CTF_ABI = json.loads("""[
-  {"constant": false,
-   "inputs": [
-     {"name": "collateralToken", "type": "address"},
-     {"name": "parentCollectionId", "type": "bytes32"},
-     {"name": "conditionId", "type": "bytes32"},
-     {"name": "indexSets", "type": "uint256[]"}],
-   "name": "redeemPositions",
-   "outputs": [], "stateMutability": "nonpayable", "type": "function"}
-]""")
+CTF = "0x4D97DCd97eC945f40cF65F87097ACe5EA0476045"    # ConditionalTokens
+PUSD = "0xC011a7E12a19f7B1f670d46F03B03f3342E82DFB"   # CollateralToken (2026 stack)
+_SEL_REDEEM = "01b7037c"   # redeemPositions(address,bytes32,bytes32,uint256[])
 
 
-def _rpc(cfg):
-    url = cfg.get("live", {}).get("rpc_url")
-    if url:
-        return url
-    key = cfg.get("alchemy_key")
-    if key:
-        return f"https://polygon-mainnet.g.alchemy.com/v2/{key}"
-    raise RuntimeError("no Polygon RPC — set live.rpc_url or alchemy_key in config")
+def _w32(v):
+    if isinstance(v, int):
+        return hex(v)[2:].rjust(64, "0")
+    h = v[2:] if v.startswith("0x") else v
+    return h.lower().rjust(64, "0")
+
+
+def redeem_calldata(condition_id, index_sets=(1, 2)):
+    """ABI-encode redeemPositions(pUSD, 0x0, cond, indexSets). Head: 3 static
+    words + the dynamic-array offset (0x80); tail: length + members."""
+    head = _w32(PUSD) + _w32(0) + _w32(condition_id) + _w32(0x80)
+    tail = _w32(len(index_sets)) + "".join(_w32(i) for i in index_sets)
+    return "0x" + _SEL_REDEEM + head + tail
 
 
 class Redeemer:
-    def __init__(self, cfg):
-        from web3 import Web3                       # imported lazily (live-only dep)
-        self.Web3 = Web3
-        pk = cfg.get("live", {}).get("private_key")
-        if not pk:
-            raise RuntimeError("live.private_key required to redeem")
-        self.w3 = Web3(Web3.HTTPProvider(_rpc(cfg)))
-        if not self.w3.is_connected():
-            raise RuntimeError("Polygon RPC not reachable")
-        self.acct = self.w3.eth.account.from_key(pk)
-        self.address = self.acct.address
-        self.ctf = self.w3.eth.contract(
-            address=Web3.to_checksum_address(CTF_ADDRESS), abi=CTF_ABI)
-        self.usdc = Web3.to_checksum_address(USDC_ADDRESS)
+    """Redeems via an already-authenticated SecureClient (share the live
+    executor's — one client, one deposit wallet, no second key path)."""
 
-    @staticmethod
-    def _cond_bytes(condition_id):
-        h = condition_id[2:] if condition_id.startswith("0x") else condition_id
-        return bytes.fromhex(h)
+    def __init__(self, client):
+        if client is None:
+            raise RuntimeError("Redeemer needs the live executor's SecureClient")
+        self.client = client
+
+    def _collateral(self):
+        try:
+            return self.client.get_balance_allowance(asset_type="COLLATERAL").balance
+        except Exception:
+            return None
 
     def try_redeem(self, condition_id, index_sets=(1, 2)):
-        """Redeem all of this wallet's holdings in a resolved binary market.
-        Returns (ok, tx_hash_or_reason). index_sets [1,2] covers both outcome
-        slots — the winning one pays USDC, the losing one is a no-op."""
+        """-> (ok, info). ok = the relayed tx was accepted; info carries the
+        measured pUSD delta (evidence — concurrent fills can move it too)."""
         try:
-            fn = self.ctf.functions.redeemPositions(
-                self.usdc, ZERO32, self._cond_bytes(condition_id), list(index_sets))
-            tx = fn.build_transaction({
-                "from": self.address,
-                "nonce": self.w3.eth.get_transaction_count(self.address),
-                "chainId": CHAIN_ID,
-                "gasPrice": int(self.w3.eth.gas_price * 1.25),
-            })
-            signed = self.acct.sign_transaction(tx)
-            raw = getattr(signed, "raw_transaction", None) or signed.rawTransaction
-            h = self.w3.eth.send_raw_transaction(raw)
-            rcpt = self.w3.eth.wait_for_transaction_receipt(h, timeout=180)
-            hx = self.w3.to_hex(h)
-            return (True, hx) if rcpt.status == 1 else (False, f"reverted {hx}")
+            from polymarket import calls as pmcalls
+            before = self._collateral()
+            call = pmcalls.TransactionCall(to=CTF,
+                                           data=redeem_calldata(condition_id,
+                                                                index_sets))
+            h = self.client.execute_transaction(
+                calls=[call], metadata=f"redeem {condition_id[:14]}")
+            out = h.wait() if hasattr(h, "wait") else h
+            time.sleep(2)                       # let the relayed state settle
+            after = self._collateral()
+            delta = (after - before) / 1e6 if None not in (before, after) else None
+            return True, (f"redeemed · pUSD delta "
+                          f"{f'{delta:+.2f}' if delta is not None else 'unmeasured'}"
+                          f" · {str(out)[:60]}")
         except Exception as e:
-            return False, str(e)
+            return False, f"{type(e).__name__}: {str(e)[:80]}"
 
 
 def main():
@@ -101,8 +89,12 @@ def main():
         sys.exit("usage: python3 redeem.py <conditionId>")
     cfg = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                       "config.json")))
-    r = Redeemer(cfg)
-    print(f"redeeming {sys.argv[1]} from {r.address} …")
+    from polymarket import SecureClient
+    pk = (os.environ.get("LIVE_PRIVATE_KEY") or "").strip() \
+        or cfg.get("live", {}).get("private_key")
+    if not pk:
+        sys.exit("no live.private_key / LIVE_PRIVATE_KEY")
+    r = Redeemer(SecureClient.create(private_key=pk))
     ok, info = r.try_redeem(sys.argv[1])
     print(("✅ " if ok else "❌ ") + info)
 

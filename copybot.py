@@ -2547,11 +2547,15 @@ def main():
         if cfg.get("live", {}).get("auto_redeem", True):
             try:
                 from redeem import Redeemer
-                redeemer = Redeemer(cfg)
-                log("on-chain auto-redeem ENABLED (resolved winners redeemed to USDC)")
+                # 2026-07-19 rewrite (closes #4): shares the executor's
+                # SecureClient — gasless redeemPositions FROM the deposit
+                # wallet with pUSD collateral (the web3/EOA/USDC.e version
+                # was a silent no-op on this stack)
+                redeemer = Redeemer(executor.client)
+                log("on-chain auto-redeem ENABLED (pUSD, deposit-wallet gasless)")
             except Exception as e:
                 log(f"⚠ auto-redeem unavailable ({e}) — resolved winners must be "
-                    f"redeemed manually in the UI. (pip install web3, set live.private_key)")
+                    f"redeemed manually in the UI.")
     else:
         executor = LedgerPaperExecutor()   # tracks cash flows for realized-P&L reporting
 
