@@ -1926,6 +1926,21 @@
  ],
  "missed": [
   {
+   "ts": 1784451862,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "50488227317031565004575684525878022626020008256198844799050708993499540064859",
+   "cond": "0x4c80df6f557bb0b9de08c0301ebdce500dd9bdc58400d9269fb8fab1709ed584",
+   "title": "China x Taiwan military clash before 2027?",
+   "outcome": "No",
+   "price": 0.731,
+   "stake": 2.0,
+   "reason": "book unreliable (spread 0.18 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784450723,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "32952048155093419718055060819712841482842350791391116195205201413217889733414",
@@ -2863,23 +2878,8 @@
    "settled": 1784103812,
    "name": "0xbadaf319",
    "exit_price": 0.8976
-  },
-  {
-   "ts": 1784063559,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "6237386819428750235511557154093150991879160039847931747938354455286350107208",
-   "cond": "",
-   "title": "",
-   "outcome": "",
-   "price": 0.86,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": 1051.59,
- "updated": 1784450725
+ "updated": 1784451865
 }
