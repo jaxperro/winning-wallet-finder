@@ -25,7 +25,7 @@ FLYCTL = shutil.which("flyctl") or "/opt/homebrew/bin/flyctl"
 def box(cmd):
     r = subprocess.run([FLYCTL, "ssh", "console", "-a", APP, "-C",
                         f"bash -c '{cmd}'"], capture_output=True, text=True,
-                       timeout=300)
+                       timeout=900)   # busy-hour segments (~15MB gz) outgrow 300s over ssh
     return r.stdout
 
 
