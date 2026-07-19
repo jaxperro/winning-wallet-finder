@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 105.73,
+ "stake": 105.71,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1694.02,
- "deployed": 949.17,
+ "cash": 1587.89,
+ "deployed": 1054.9,
  "reserve": 0.0,
- "realized": 1643.16,
+ "realized": 1642.75,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 17,
- "fees_paid": 319.13,
+ "open_count": 18,
+ "fees_paid": 319.54,
  "fee_rate": 0.03,
  "lag": {
-  "n": 205,
-  "n24": 11,
-  "avg_s": 4.6,
-  "avg_slip_pct": 0.0023,
+  "n": 206,
+  "n24": 12,
+  "avg_s": 4.3,
+  "avg_slip_pct": 0.0008,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 341.23
  },
  "bets": [
+  {
+   "token": "6457952357077230044054791268159160058712529625831041550558183767114352456975",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "New Zealand",
+   "title": "ODI Series West Indies vs. New Zealand: West Indies vs New Zealand",
+   "their_price": 0.8856,
+   "my_price": 0.871,
+   "slippage_pct": -0.0165,
+   "lag_s": 0.7,
+   "shares": 121.39,
+   "cost": 105.73,
+   "fee": 0.41,
+   "opened": 1784497171,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "69255676899700790711525989127308958019475795404138315524495668898066870353801",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2079,26 +2098,6 @@
    "settled": 1783858884,
    "sold_shares": 497.82,
    "sold_proceeds": 131.47
-  },
-  {
-   "token": "307529025202586833979526819648497003008876078326197368134840608701258822521",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "1win",
-   "title": "Dota 2: 1win vs Team Yandex - Game 1 Winner",
-   "their_price": 0.51,
-   "my_price": 0.48,
-   "slippage_pct": -0.0588,
-   "shares": 200.79,
-   "cost": 96.38,
-   "fee": 1.5,
-   "opened": 1783858310,
-   "status": "closed",
-   "exit_price": 0.2641,
-   "pnl": -44.86,
-   "settled": 1783858798,
-   "sold_shares": 200.79,
-   "sold_proceeds": 53.03
   }
  ],
  "missed": [
@@ -3052,5 +3051,5 @@
   }
  ],
  "missed_pnl": 90659.17,
- "updated": 1784496391
+ "updated": 1784497172
 }
