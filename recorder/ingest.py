@@ -37,6 +37,8 @@ def main():
         price DOUBLE, size DOUBLE, tx VARCHAR, title VARCHAR)""")
     con.execute("""CREATE TABLE IF NOT EXISTS ingested(
         segment VARCHAR PRIMARY KEY, rows BIGINT, ingested_at BIGINT)""")
+    con.execute("""CREATE TABLE IF NOT EXISTS aux(
+        ts DOUBLE, topic VARCHAR, type VARCHAR, payload VARCHAR)""")
     have = {r[0] for r in con.execute("SELECT segment FROM ingested").fetchall()}
     segs = [s for s in box(f"ls {SEG}").split()
             if s.endswith(".gz") and s not in have]
@@ -48,24 +50,30 @@ def main():
         except Exception as e:
             print(f"[ingest] {s}: fetch/decode failed ({e}) — left on box")
             continue
-        rows = []
+        rows, aux = [], []
         for ln in lines:
             try:
                 d = json.loads(ln)
-                rows.append((d.get("ts"), d.get("wallet"), d.get("asset"),
-                             d.get("cond"), d.get("side"), d.get("price"),
-                             d.get("size"), d.get("tx"), d.get("title")))
+                if s.startswith("aux_"):
+                    aux.append((d.get("ts"), d.get("topic"), d.get("type"),
+                                json.dumps(d.get("payload"))))
+                else:
+                    rows.append((d.get("ts"), d.get("wallet"), d.get("asset"),
+                                 d.get("cond"), d.get("side"), d.get("price"),
+                                 d.get("size"), d.get("tx"), d.get("title")))
             except Exception:
                 pass
         con.execute("BEGIN")           # audit 3.10: atomic pair — a crash
         if rows:                        # between the two inserts re-ingested
             con.executemany("INSERT INTO trades VALUES (?,?,?,?,?,?,?,?,?)", rows)
+        if aux:
+            con.executemany("INSERT INTO aux VALUES (?,?,?,?)", aux)
         con.execute("INSERT INTO ingested VALUES (?,?,?)",
-                    [s, len(rows), int(time.time())])
+                    [s, len(rows) + len(aux), int(time.time())])
         con.execute("COMMIT")
         box(f"rm {SEG}/{s}")
-        total += len(rows)
-        print(f"[ingest] {s}: {len(rows)} rows")
+        total += len(rows) + len(aux)
+        print(f"[ingest] {s}: {len(rows)} trades + {len(aux)} aux")
     n = con.execute("SELECT count(*) FROM trades").fetchone()[0]
     print(f"[ingest] +{total} rows · rtds.duckdb now {n:,} trades")
 
