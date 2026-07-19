@@ -2103,6 +2103,21 @@
  ],
  "missed": [
   {
+   "ts": 1784493015,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "33752982532314842955867034258985568949958761450943043689987049583448528253590",
+   "cond": "0x8240c24b4ac5c954241ee6a10cffc627abf676d88b9d7de5b034c2f7c060b00a",
+   "title": "Bab el-Mandeb Strait effectively closed by July 31?",
+   "outcome": "No",
+   "price": 0.882,
+   "stake": 105.73,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784492349,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "62074667087255747412382561081475311823484268378809285620641251664614873335395",
@@ -3035,24 +3050,8 @@
    "settled": 1783899442,
    "name": "0x41558102",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1783884689,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "112964891228922007291616429059731268652545552701771186142443664268316983972488",
-   "cond": "0x12ffeb9fc7535c924fc64cdbf0be333db1950bd3a78aba459177b80b438bec03",
-   "title": "Will Cuiab\u00e1 EC win on 2026-07-12?",
-   "outcome": "Yes",
-   "price": 0.62,
-   "stake": 90.43,
-   "reason": "price moved 0.50\u21920.62",
-   "status": "lost",
-   "pnl": -91.46,
-   "settled": 1783898872,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 90659.17,
- "updated": 1784492349
+ "updated": 1784493019
 }
