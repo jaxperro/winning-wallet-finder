@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 98.79,
+ "stake": 98.74,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1626.43,
- "deployed": 843.44,
+ "cash": 1526.27,
+ "deployed": 942.23,
  "reserve": 0.0,
- "realized": 1469.84,
+ "realized": 1468.48,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 16,
- "fees_paid": 295.93,
+ "open_count": 17,
+ "fees_paid": 297.29,
  "fee_rate": 0.03,
  "lag": {
-  "n": 195,
-  "n24": 11,
-  "avg_s": 3.0,
-  "avg_slip_pct": 0.0093,
+  "n": 196,
+  "n24": 12,
+  "avg_s": 2.8,
+  "avg_slip_pct": 0.0085,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "85741798597373637454857132313237665672348948280062152561851890771142395823036",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Gen.G",
+   "title": "LoL: T1 vs Gen.G (BO3) - Esports World Cup Playoffs",
+   "their_price": 0.54,
+   "my_price": 0.54,
+   "slippage_pct": 0.0,
+   "lag_s": 0.4,
+   "shares": 182.95,
+   "cost": 98.79,
+   "fee": 1.36,
+   "opened": 1784462567,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "38793358179615174908021309915819238458278082712284959468246018176126033234516",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2071,26 +2090,6 @@
    "settled": 1783847300,
    "sold_shares": 258.69,
    "sold_proceeds": 101.61
-  },
-  {
-   "token": "37098243537063616538853806564974418300652058034370047802005035892401938992764",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Hanwha Life Esports",
-   "title": "LoL: Bilibili Gaming vs Hanwha Life Esports - Game 1 Winner",
-   "their_price": 0.63,
-   "my_price": 0.63,
-   "slippage_pct": 0.0,
-   "shares": 156.57,
-   "cost": 98.64,
-   "fee": 1.09,
-   "opened": 1783842112,
-   "status": "closed",
-   "exit_price": 0.9961,
-   "pnl": 56.23,
-   "settled": 1783843888,
-   "sold_shares": 156.57,
-   "sold_proceeds": 155.96
   }
  ],
  "missed": [
@@ -3047,5 +3046,5 @@
   }
  ],
  "missed_pnl": 90594.47,
- "updated": 1784455288
+ "updated": 1784462570
 }
