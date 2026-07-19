@@ -71,7 +71,7 @@ def main():
         local = os.path.join("/tmp", s)
         try:
             subprocess.run([FLYCTL, "ssh", "sftp", "get", f"{SEG}/{s}", local,
-                            "-a", APP], capture_output=True, timeout=300)
+                            "-a", APP], capture_output=True, timeout=900)
             with gzip.open(local, "rb") as fh:
                 lines = fh.read().decode().splitlines()
         except Exception:
@@ -82,11 +82,15 @@ def main():
             except OSError:
                 pass
         if lines is None:
-            raw = box(f"base64 {SEG}/{s}")
             try:
+                raw = box(f"base64 {SEG}/{s}")
                 lines = gzip.decompress(base64.b64decode(raw)).decode().splitlines()
             except Exception as e:
-                print(f"[ingest] {s}: fetch/decode failed ({e}) — left on box")
+                # BOTH transports failed — skip, never crash: a single monster
+                # segment (rtds_20260718_21, 2026-07-19) blocked the whole
+                # sorted backlog behind it when this timeout escaped the try
+                print(f"[ingest] {s}: both transports failed ({type(e).__name__}) "
+                      "— left on box, continuing")
                 continue
         rows, aux = [], []
         for ln in lines:
