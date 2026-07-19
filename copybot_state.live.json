@@ -15598,8 +15598,8 @@
       "exit_price": 0.0912
     }
   ],
-  "feed_sig": "d582d680599edd52933d761720647787",
-  "feed_pushed_at": 1784477687.3678415,
+  "feed_sig": "ac2955a265390ffcb15a8117cb484808",
+  "feed_pushed_at": 1784479367.5719092,
   "adjustments": [
     {
       "ts": 1783906689,
@@ -15623,7 +15623,7 @@
       "token": "107519224001054263439274706964696866987866557807915774909819079291264377299291",
       "shares": 0.12395200000000002,
       "label": "BetBoom Team \u00b7 Dota 2: BetBoom Team vs PARIVISION - Game ",
-      "attempts": 1,
+      "attempts": 3,
       "ts": 1784477759
     }
   ],
