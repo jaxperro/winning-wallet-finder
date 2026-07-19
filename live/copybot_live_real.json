@@ -1926,6 +1926,21 @@
  ],
  "missed": [
   {
+   "ts": 1784438563,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "63579552197509143589959693779993809440480166595009463744830254978620312708977",
+   "cond": "0x46d3552e03b57d3dd99685973c0e2df2e1f177c70c3641fe17d539e3a4a23a22",
+   "title": "Will Trump's approval rating hit 46% in 2026?",
+   "outcome": "No",
+   "price": 0.766,
+   "stake": 2.0,
+   "reason": "book unreliable (spread 0.13 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784425686,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "29977440714027702794755312644671117389655288253327722609561816044442289528639",
@@ -2864,24 +2879,8 @@
    "settled": 1784043634,
    "name": "0xbadaf319",
    "exit_price": 0.037
-  },
-  {
-   "ts": 1784038010,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "103599543732484870090369455326920139987823898856081914791151504750897348686596",
-   "cond": "0x54570618ec2d24713f09896dd1e120b43515537c161d825656bdc1fef54ea66b",
-   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 2 Winner",
-   "outcome": "Team Liquid",
-   "price": 0.41,
-   "stake": 1.0,
-   "reason": "price moved 0.36\u21920.41",
-   "status": "sold",
-   "pnl": -0.27,
-   "settled": 1784038243,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.3126
   }
  ],
  "missed_pnl": 1051.42,
- "updated": 1784426319
+ "updated": 1784438566
 }
