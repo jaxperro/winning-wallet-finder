@@ -2095,6 +2095,21 @@
  ],
  "missed": [
   {
+   "ts": 1784454959,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "73692579062193639095122093771528419354995015035612768219622062530252811614581",
+   "cond": "0x6ef951ec911045212964ad09a85853036c70ae7edf6fdab2f9d68d7f560e2d94",
+   "title": "Bitcoin Up or Down - July 19, 5:45AM-6:00AM ET",
+   "outcome": "Up",
+   "price": 0.6311,
+   "stake": 98.79,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1784453998,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "20413144546134673104026764291663662744630163650305273852347168329867810784203",
@@ -3028,25 +3043,8 @@
    "settled": 1783829011,
    "name": "0x41558102",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1783818670,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "14635675870982897917581198649476127837975251193150495566552970565909631535281",
-   "cond": "0x95f726bbb693b945f94473908298b2389989550b08a7bfd90f97ce7ba62cb719",
-   "title": "Will Argentina win on 2026-07-11?",
-   "outcome": "Yes",
-   "price": 0.727,
-   "stake": 92.74,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -44.68,
-   "settled": 1783828832,
-   "name": "0x41558102",
-   "exit_checked": true,
-   "exit_price": 0.3899
   }
  ],
  "missed_pnl": 90593.54,
- "updated": 1784454324
+ "updated": 1784454962
 }
