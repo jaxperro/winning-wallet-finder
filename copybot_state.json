@@ -14759,8 +14759,8 @@
     }
   },
   "hwm": 2849.150445045735,
-  "feed_sig": "0cbcac4c2708da96cc4574e2d089d9ac",
-  "feed_pushed_at": 1784489120.123758,
+  "feed_sig": "cbaaf5fa5601d762c9eff1074bec470f",
+  "feed_pushed_at": 1784489246.1400824,
   "missed": [
     {
       "ts": 1783590977,
@@ -16740,7 +16740,8 @@
       "status": "won",
       "pnl": 79.86,
       "settled": 1784489183,
-      "name": "0xbadaf319"
+      "name": "0xbadaf319",
+      "exit_checked": true
     },
     {
       "ts": 1784471224,
