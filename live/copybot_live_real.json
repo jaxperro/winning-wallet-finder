@@ -2027,6 +2027,21 @@
  ],
  "missed": [
   {
+   "ts": 1784472135,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "42900587076366844229913834194744356425297818081286466764921250179690312755990",
+   "cond": "0xc0f70912445fc2aeee051c61d367a31ceebe940831ac329e63a406bdbc31528a",
+   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 1 Winner",
+   "outcome": "BetBoom Team",
+   "price": 0.68,
+   "stake": 2.03,
+   "reason": "price moved 0.60\u21920.68",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784471230,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "46772667468744288997268807185140962881162063147482944578224960298326897165693",
@@ -2962,24 +2977,8 @@
    "settled": 1784122585,
    "name": "gkmgkldfmg",
    "exit_price": 0.4656
-  },
-  {
-   "ts": 1784121603,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "30170770852623682463283902530627549920331526605828543295200389453300351881285",
-   "cond": "0xf9abba1374af046e14e0df5c5a731446244a86dbb952683bf8bdd7bbaeb07c9d",
-   "title": "Dota 2: Team Spirit vs Team Liquid - Game 2 Winner",
-   "outcome": "Team Liquid",
-   "price": 0.34,
-   "stake": 1.0,
-   "reason": "book unreliable (spread 0.10 > 0.08)",
-   "status": "sold",
-   "pnl": 0.32,
-   "settled": 1784121946,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.4634
   }
  ],
  "missed_pnl": 1050.39,
- "updated": 1784471561
+ "updated": 1784472135
 }
