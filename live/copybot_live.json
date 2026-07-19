@@ -2095,6 +2095,21 @@
  ],
  "missed": [
   {
+   "ts": 1784451863,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "50488227317031565004575684525878022626020008256198844799050708993499540064859",
+   "cond": "0x4c80df6f557bb0b9de08c0301ebdce500dd9bdc58400d9269fb8fab1709ed584",
+   "title": "China x Taiwan military clash before 2027?",
+   "outcome": "No",
+   "price": 0.731,
+   "stake": 98.79,
+   "reason": "book unreliable (spread 0.18 > 0.08)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784450722,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "32952048155093419718055060819712841482842350791391116195205201413217889733414",
@@ -3031,24 +3046,8 @@
    "settled": 1783824818,
    "name": "0xd96750bf",
    "exit_checked": true
-  },
-  {
-   "ts": 1783821747,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "80695764145597442773109303072961778341865154823453604006436935638165430171016",
-   "cond": "0x78fdaa290adbb2780e5f3b391b6cb5009d7c849a1a774bf1966115b75f8d4554",
-   "title": "UFC 329: Brandon Royval vs. Lone'er Kavanagh (Flyweight, Main Card)",
-   "outcome": "Loneer Kavanagh",
-   "price": 0.89,
-   "stake": 95.34,
-   "reason": "price moved 0.74\u21920.89",
-   "status": "sold",
-   "pnl": -29.31,
-   "settled": 1783822114,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.6264
   }
  ],
  "missed_pnl": 90686.25,
- "updated": 1784450725
+ "updated": 1784451865
 }
