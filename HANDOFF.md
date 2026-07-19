@@ -11,7 +11,7 @@ rationale, the whole story. This file stays ~a page: boundary, snapshot, ops.
 
 ## Operating boundary (user, 2026-07-13 — standing)
 **Full autonomy on the bots**; the real-money bot **stays ARMED**. Never
-touch the private key, never rotate the Discord webhook (user's login — #3),
+touch the private key, Discord alerts webhook ROTATED 2026-07-19 (#3 closed),
 sizing/caps/deposits are the USER's call. USER DIRECTIVE 2026-07-16: the
 live bot mirrors the paper test EXACTLY (one deliberate exception:
 min_order_usd $1 = venue reality). If something looks genuinely dangerous,
