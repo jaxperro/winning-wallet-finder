@@ -63,7 +63,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 from copytrade import (  # the execution engine (sizing, gates, executors)
     CopyTrader, PaperExecutor, DEFAULT_CONFIG, load_json, save_json,
-    new_state, recent_trades, confirm_live, clob_price, book_depth,
+    new_state, recent_trades, confirm_live, clob_price, book_depth, _SeenTx,
 )
 import smart_money as sm  # noqa: E402
 from smart_money import SSL_CTX  # noqa: E402
@@ -876,7 +876,7 @@ class Copybot:
         self.names = {}
         for w in cfg.get("watch", []):
             self.names[w["wallet"].lower()] = w.get("name", w["wallet"][:10])
-        self.skipped = set()       # tx we've already evaluated-and-skipped (no re-log)
+        self.skipped = _SeenTx()   # evaluated-and-skipped txs, recency-capped (closes #9)
         self.negrisk_warned = set()    # conds we've already warned need manual redeem
         self.lock = threading.Lock()   # serialize engine/settle access (webhook is threaded)
         self.here = os.path.dirname(os.path.abspath(__file__))
@@ -966,7 +966,8 @@ class Copybot:
         st = self.engine.state
         bets = st.get("bets", {})
         adj = sum(a["amount"] for a in st.get("adjustments", []))
-        realized = sum(b["pnl"] for b in bets.values() if b.get("pnl") is not None)
+        realized = (sum(b["pnl"] for b in bets.values() if b.get("pnl") is not None)
+                    + st.get("spooled_pnl", 0.0))   # closes #9: spooled history
         # in-flight flows keyed on "no P&L booked yet", NOT on my_pos membership:
         # a fully-exited bet leaves my_pos immediately but only gets its pnl at
         # the next write_feed reconcile — keying on my_pos made the invariant
@@ -1680,6 +1681,35 @@ class Copybot:
         st["exit_retries"] = keep
         self.engine.persist()
 
+    SPOOL_AFTER_S = 30 * 86400   # settled bets older than this leave the state
+
+    def _spool_old_bets(self, cycle):
+        """Closes #9: the git-committed state grew forever (every settled bet
+        stays in bets{} so realized/drift keep counting it). Once a day, move
+        bets settled >30d ago to an append-only side ledger and fold their
+        pnl into state["spooled_pnl"] — ledger_drift() adds it back, so the
+        invariant cash = bank + adj + Σpnl + flows is unchanged. The feed's
+        resolved table and per-wallet stats become a 30-day window (the
+        archive keeps the full history)."""
+        if cycle % 1440 != 20:
+            return
+        st = self.engine.state
+        cut = time.time() - self.SPOOL_AFTER_S
+        arch = self.fill_log.replace("fills", "bets_archive")
+        with self.lock:
+            old = {k: b for k, b in st.get("bets", {}).items()
+                   if b.get("pnl") is not None and (b.get("settled") or 0)
+                   and b["settled"] < cut}
+            if not old:
+                return
+            with open(os.path.join(self.here, arch), "a") as fh:
+                for k, b in old.items():
+                    fh.write(json.dumps({"key": k, **b}) + "\n")
+                    st["spooled_pnl"] = st.get("spooled_pnl", 0.0) + (b["pnl"] or 0)
+                    del st["bets"][k]
+            self.engine.persist()
+            log(f"spooled {len(old)} settled bets (>30d) → {arch}")
+
     DUST_MIN_USD = 0.10          # below this a sweep sell isn't worth the fee
     DUST_WALLET = "0x455e252e45Ee46d6C4cc1c8fAdD3899d68f245a1"   # deposit wallet
 
@@ -1843,6 +1873,9 @@ class Copybot:
                          else f" · ⚠ userws {uw.state}")
         if _RPC_URL and _RPC_FAILS >= 5:
             driftstr += f" · ⚠ rpc down ({_RPC_FAILS} fails)"
+        if len(self.skipped) > 20000:      # closes #9: was unbounded (MBs/month)
+            for k in sorted(self.skipped, key=self.skipped.get)[:-15000]:
+                del self.skipped[k]
         log(f"[{cycle}] open {n} · deployed ${exp:,.0f} · free ${cash:,.0f}/${bank:,.0f}"
             f"{bankstr} · realized ${realized:+,.2f}{lagstr}{driftstr}"
             + (f" · CAN'T OPEN (free < ${stake:,.0f} stake — bets missed)"
@@ -2710,6 +2743,7 @@ def main():
                 bot.retry_stuck_exits()    # LIVE_ROLLOUT 1.6
                 bot.settle_resolved()
                 bot.sweep_dust(cycle)      # reclaim untracked exit residue (live)
+                bot._spool_old_bets(cycle) # cap state growth (closes #9)
                 if cycle % 5 == 0:
                     bot.reconcile_exits()
                 if cycle % 30 == 0:
