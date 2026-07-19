@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 39.44,
- "deployed": 10.52,
+ "cash": 37.34,
+ "deployed": 12.59,
  "reserve": 0.0,
- "realized": -16.4,
+ "realized": -16.43,
  "adjustments": -0.06,
  "ledger_drift": 2.31,
- "open_count": 8,
- "fees_paid": 2.5,
+ "open_count": 9,
+ "fees_paid": 2.53,
  "fee_rate": 0.03,
  "lag": {
-  "n": 87,
-  "n24": 6,
-  "avg_s": 7.0,
-  "avg_slip_pct": 0.0391,
+  "n": 88,
+  "n24": 7,
+  "avg_s": 6.5,
+  "avg_slip_pct": 0.0414,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "85741798597373637454857132313237665672348948280062152561851890771142395823036",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Gen.G",
+   "title": "LoL: T1 vs Gen.G (BO3) - Esports World Cup Playoffs",
+   "their_price": 0.54,
+   "my_price": 0.57,
+   "slippage_pct": 0.0556,
+   "lag_s": 3.3,
+   "shares": 3.64,
+   "cost": 2.07,
+   "fee": 0.03,
+   "opened": 1784462567,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "3506443794566179214052380628578788380776940712896382718637294140773955061401",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2880,5 +2899,5 @@
   }
  ],
  "missed_pnl": 1049.73,
- "updated": 1784455288
+ "updated": 1784462572
 }
