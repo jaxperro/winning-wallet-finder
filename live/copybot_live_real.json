@@ -5,8 +5,8 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 38.98,
- "deployed": 12.75,
+ "cash": 39.02,
+ "deployed": 12.71,
  "reserve": 0.0,
  "realized": -14.63,
  "adjustments": -0.06,
@@ -64,8 +64,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 4.61,
-   "sold_proceeds": 2.01
+   "sold_shares": 4.69,
+   "sold_proceeds": 2.05
   },
   {
    "token": "37824164809093918071945208007872743881921286805762898355468714704460471077939",
@@ -2050,6 +2050,21 @@
  ],
  "missed": [
   {
+   "ts": 1784475771,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "107519224001054263439274706964696866987866557807915774909819079291264377299291",
+   "cond": "0x2621f174955892ef32bcabd62ae74d1e14530f0585527322fdf2d2cb7e41c27a",
+   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 2 Winner",
+   "outcome": "BetBoom Team",
+   "price": 0.46,
+   "stake": 2.07,
+   "reason": "price moved 0.33\u21920.46",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784472135,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "42900587076366844229913834194744356425297818081286466764921250179690312755990",
@@ -2985,24 +3000,8 @@
    "settled": 1784122585,
    "name": "gkmgkldfmg",
    "exit_price": 0.7057
-  },
-  {
-   "ts": 1784122515,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "38651466023261064319289939085261731331133306541561545573527282497528641470405",
-   "cond": "0xf9abba1374af046e14e0df5c5a731446244a86dbb952683bf8bdd7bbaeb07c9d",
-   "title": "Dota 2: Team Spirit vs Team Liquid - Game 2 Winner",
-   "outcome": "Team Spirit",
-   "price": 0.43,
-   "stake": 1.0,
-   "reason": "in-play hold expired unfilled (8s)",
-   "status": "sold",
-   "pnl": 0.05,
-   "settled": 1784122585,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.4656
   }
  ],
  "missed_pnl": 1051.54,
- "updated": 1784475648
+ "updated": 1784475848
 }
