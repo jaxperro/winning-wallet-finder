@@ -25,8 +25,10 @@ push through.
   07-19 reconcile. **wwf-copybot** (paper $1k): same set, FAK-parity fills.
   Both on the audit-hardened build (locks, chain-gated sweep, boot-id
   single-writer guard, TLS'd user-ws — HANDOFF_ARCHIVE rev 16).
-- **wwf-recorder**: tapes every platform trade → nightly ingest →
-  `live/rtds.duckdb` (5M+ rows). The current-era ground truth for research.
+- **wwf-recorder**: the FULL firehose (trades + order matches + comments
+  + crypto ticks, ~8M events/day, dual-socket ~99.9% capture, 25GB volume,
+  NOTHING deleted until the Mac verifiably ingests it) → nightly →
+  `live/rtds.duckdb` (trades + aux). Current-era ground truth for research.
 - **VALUE experiment: CLOSED 2026-07-19** — sub-2¢ hypothesis refuted
   (1W/993L, 0.075x); post-mortem in value/PLAN.md; app destroyed.
 - **Verdicts pending**: edge/size-up (#14, ~end of July, pre-registered) ·
