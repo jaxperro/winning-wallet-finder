@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 38.43,
- "deployed": 12.66,
+ "cash": 36.29,
+ "deployed": 14.78,
  "reserve": 0.0,
- "realized": -15.27,
+ "realized": -15.3,
  "adjustments": -0.06,
- "ledger_drift": 2.31,
- "open_count": 9,
- "fees_paid": 2.57,
+ "ledger_drift": 2.32,
+ "open_count": 10,
+ "fees_paid": 2.6,
  "fee_rate": 0.03,
  "lag": {
-  "n": 89,
-  "n24": 6,
-  "avg_s": 7.4,
-  "avg_slip_pct": 0.0463,
+  "n": 90,
+  "n24": 7,
+  "avg_s": 8.0,
+  "avg_slip_pct": 0.0481,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "42900587076366844229913834194744356425297818081286466764921250179690312755990",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "BetBoom Team",
+   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 1 Winner",
+   "their_price": 0.51,
+   "my_price": 0.54,
+   "slippage_pct": 0.0588,
+   "lag_s": 11.0,
+   "shares": 3.92,
+   "cost": 2.12,
+   "fee": 0.03,
+   "opened": 1784469697,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "38596120750074321785333064789385162164853013897516945380739845321752073819772",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2919,5 +2938,5 @@
   }
  ],
  "missed_pnl": 1049.73,
- "updated": 1784469294
+ "updated": 1784469708
 }
