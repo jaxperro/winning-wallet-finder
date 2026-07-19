@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 105.26,
+ "stake": 105.73,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1697.76,
- "deployed": 933.87,
+ "cash": 1799.94,
+ "deployed": 843.44,
  "reserve": 0.0,
- "realized": 1631.59,
+ "realized": 1643.34,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 17,
- "fees_paid": 313.52,
+ "open_count": 16,
+ "fees_paid": 318.95,
  "fee_rate": 0.03,
  "lag": {
-  "n": 203,
-  "n24": 11,
-  "avg_s": 4.4,
-  "avg_slip_pct": -0.0044,
+  "n": 204,
+  "n24": 12,
+  "avg_s": 4.6,
+  "avg_slip_pct": -0.0,
   "window_h": 24
  },
  "wallets": [
@@ -52,6 +52,27 @@
    "name": "gkmgkldfmg",
    "outcome": "BetBoom Team",
    "title": "Dota 2: BetBoom Team vs PARIVISION - Game 2 Winner",
+   "their_price": 0.4007,
+   "my_price": 0.42,
+   "slippage_pct": 0.0481,
+   "lag_s": 6.8,
+   "shares": 251.15,
+   "cost": 105.48,
+   "fee": 1.84,
+   "opened": 1784475613,
+   "status": "closed",
+   "exit_price": 0.4525,
+   "pnl": 6.34,
+   "settled": 1784475647,
+   "sold_shares": 251.15,
+   "sold_proceeds": 113.66
+  },
+  {
+   "token": "107519224001054263439274706964696866987866557807915774909819079291264377299291",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "BetBoom Team",
+   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 2 Winner",
    "their_price": 0.3705,
    "my_price": 0.38,
    "slippage_pct": 0.0257,
@@ -60,12 +81,12 @@
    "cost": 145.69,
    "fee": 2.71,
    "opened": 1784475472,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 145.42,
-   "sold_proceeds": 56.42
+   "status": "closed",
+   "exit_price": 0.3971,
+   "pnl": 3.86,
+   "settled": 1784475572,
+   "sold_shares": 383.4,
+   "sold_proceeds": 152.27
   },
   {
    "token": "107519224001054263439274706964696866987866557807915774909819079291264377299291",
@@ -2077,26 +2098,6 @@
    "exit_price": 0.0,
    "pnl": -101.93,
    "settled": 1783858222
-  },
-  {
-   "token": "71941893293834599184621753590882651435325558220761902727823613984547213968365",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Vici Gaming",
-   "title": "Dota 2: MOUZ vs Vici Gaming - Game 2 Winner",
-   "their_price": 0.9353,
-   "my_price": 0.96,
-   "slippage_pct": 0.0264,
-   "shares": 104.51,
-   "cost": 100.33,
-   "fee": 0.12,
-   "opened": 1783856315,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": 4.06,
-   "settled": 1783856980,
-   "sold_shares": 104.51,
-   "sold_proceeds": 104.51
   }
  ],
  "missed": [
@@ -3051,5 +3052,5 @@
   }
  ],
  "missed_pnl": 90594.72,
- "updated": 1784475568
+ "updated": 1784475647
 }
