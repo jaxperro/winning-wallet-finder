@@ -2104,6 +2104,36 @@
  ],
  "missed": [
   {
+   "ts": 1784503159,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "107531561888318513792277163301281336651898062064090922046801464380647002668604",
+   "cond": "0xe67f4d31f0eba1b009b49d7a7739b2a5f53a2d7d979a0902b465a510492c33bb",
+   "title": "Will 2026 be the hottest year on record?",
+   "outcome": "No",
+   "price": 0.56,
+   "stake": 106.32,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
+   "ts": 1784503159,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "29659986108488397735882658288901718486356813252845923931653357875218546128408",
+   "cond": "0x439d44381d8808f463b076d8f0ffb7d65bec3180bfe98a68f1eb505264c31ec5",
+   "title": "Will NYC Mayor post 60-79 posts from July 14 to July 21, 2026?",
+   "outcome": "No",
+   "price": 0.619,
+   "stake": 50,
+   "reason": "thin book ($9 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784496391,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "115428153746996892211798999366308897078723117634059783423375188043903703749062",
@@ -3019,40 +3049,8 @@
    "settled": 1783936410,
    "name": "0xbadaf319",
    "exit_price": 0.8326
-  },
-  {
-   "ts": 1783894711,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "50206051919987143398301686023277350657729433627529907465714791269369601841506",
-   "cond": "0xcf710169c9bda6d44066d759780d850b6d3fb02ae09c60f69223e1ed03ff1523",
-   "title": "Will Netflix, Inc. (NFLX) hit (HIGH) $82.50 Week of July 13 2026?",
-   "outcome": "No",
-   "price": 0.82,
-   "stake": 50.63,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -4.34,
-   "settled": 1783936410,
-   "name": "0xbadaf319",
-   "exit_price": 0.7596
-  },
-  {
-   "ts": 1783915558,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "17233538369622331395311990544159709275677306359062920824570611974340792501916",
-   "cond": "0xec4147d703a1013d0bdc0ef4dcaf129fe8443e6ad1318edcd2a2ac9eff6c8421",
-   "title": "Moscow air traffic suspended by August 31?",
-   "outcome": "Yes",
-   "price": 0.8504,
-   "stake": 82.88,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 13.72,
-   "settled": 1783916816,
-   "name": "0xbadaf319",
-   "exit_price": 0.9951
   }
  ],
  "missed_pnl": 90660.7,
- "updated": 1784498080
+ "updated": 1784503163
 }
