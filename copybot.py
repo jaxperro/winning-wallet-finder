@@ -82,6 +82,8 @@ CTF_ADDR = "0x4D97DCd97eC945f40cF65F87097ACe5EA0476045"
 _SEL_DEN = "0xdd34de67"    # payoutDenominator(bytes32)
 _SEL_NUM = "0x0504c814"    # payoutNumerators(bytes32,uint256)
 _RPC_URL = None            # resolved once in main() (env/config), stays None without a key
+_RPC_FAILS = 0             # consecutive onchain_payouts failures (closes #8: a dead
+                           # key silently stalled tier-2 settlement forever)
 _PAYOUTS = {}              # cond -> [p0, p1], cached once resolved (immutable)
 
 
@@ -105,9 +107,11 @@ def onchain_payouts(cond):
         return None
     if cond in _PAYOUTS:
         return _PAYOUTS[cond]
+    global _RPC_FAILS
     try:
         c = cond[2:].rjust(64, "0")
         den = int(_eth_call(_SEL_DEN + c), 16)
+        _RPC_FAILS = 0
         if not den:
             return None
         nums = [int(_eth_call(_SEL_NUM + c + hex(i)[2:].rjust(64, "0")), 16)
@@ -115,6 +119,7 @@ def onchain_payouts(cond):
         _PAYOUTS[cond] = [n / den for n in nums]
         return _PAYOUTS[cond]
     except Exception:
+        _RPC_FAILS += 1
         return None
 
 
@@ -1409,8 +1414,21 @@ class Copybot:
                 pass
             p = subprocess.run(["git", "-C", repo, "push", "-q", "origin", "main"],
                                capture_output=True, text=True)
-            log("published live feed → dashboard" if p.returncode == 0
-                else "feed push failed (will retry next change)")
+            if p.returncode == 0:
+                self._pub_fails = 0
+                log("published live feed → dashboard")
+            else:
+                # closes #10: a dead GITHUB_TOKEN ends durability SILENTLY —
+                # after 10 straight failures, say so where someone will look
+                self._pub_fails = getattr(self, "_pub_fails", 0) + 1
+                log("feed push failed (will retry next change)")
+                if self._pub_fails == 10:
+                    self.engine.alert(
+                        "⚠ feed publish failing repeatedly — book durability "
+                        "is OFF (check GITHUB_TOKEN)",
+                        discord_text="🚨 **PUBLISH FAILING** — 10 straight "
+                        "push failures; the book is not being backed up "
+                        "(GITHUB_TOKEN dead?)")
         except Exception as e:
             log(f"feed publish error: {e}")
 
@@ -1811,6 +1829,8 @@ class Copybot:
         if uw is not None:
             driftstr += (" · userws up" if uw.state == "up"
                          else f" · ⚠ userws {uw.state}")
+        if _RPC_URL and _RPC_FAILS >= 5:
+            driftstr += f" · ⚠ rpc down ({_RPC_FAILS} fails)"
         log(f"[{cycle}] open {n} · deployed ${exp:,.0f} · free ${cash:,.0f}/${bank:,.0f}"
             f"{bankstr} · realized ${realized:+,.2f}{lagstr}{driftstr}"
             + (f" · CAN'T OPEN (free < ${stake:,.0f} stake — bets missed)"
@@ -2520,21 +2540,6 @@ def main():
     # boot on origin at publish time and yields instead of overwriting it.
     engine.state["boot"] = {"id": uuid.uuid4().hex[:12], "ts": int(time.time())}
 
-    # T0 detection — the RTDS trade stream (~1s, wallet-attributed). Paper
-    # runs it by default (the 24h shadow run, 2026-07-10); the REAL-MONEY
-    # role stays on the proven Alchemy+poll stack until the shadow validates,
-    # then: flyctl secrets set RTDS_DETECT=1 -a wwf-copybot-live.
-    rtds_default = "0" if os.environ.get("COPYBOT_ROLE", "paper") == "live" else "1"
-    if (os.environ.get("RTDS_DETECT") or rtds_default) == "1":
-        bot.rtds = RtdsListener(bot)
-        bot.rtds.start()
-    else:
-        log("rtds: T0 listener disabled for this role (RTDS_DETECT=1 enables)")
-    if want_live:
-        # own-fill push (2026-07-13): in-play holds adopt the moment they
-        # match instead of on the next 60s resolver tick
-        bot.userws = UserFillsListener(bot)
-        bot.userws.start()
 
     # on-chain resolution RPC (payout vectors for operator-resolved markets):
     # env ALCHEMY_RPC_URL wins (the Fly worker has no config.json), else the
@@ -2562,6 +2567,25 @@ def main():
     # here, where no trade is in flight — heal a never-debited orphan's cash
     # if the drift matches it exactly (HANDOFF proper fix, Option A)
     bot.check_book(heal_cash=True)
+
+    # T0 detection — started AFTER seed()/check_book (closes #5: a trade
+    # arriving before their_pos is seeded made an ADD look like a fresh
+    # OPEN and broke sell-fraction basis). Backstops cover the boot gap.
+    # The RTDS trade stream (~1s, wallet-attributed). Paper
+    # runs it by default (the 24h shadow run, 2026-07-10); the REAL-MONEY
+    # role stays on the proven Alchemy+poll stack until the shadow validates,
+    # then: flyctl secrets set RTDS_DETECT=1 -a wwf-copybot-live.
+    rtds_default = "0" if os.environ.get("COPYBOT_ROLE", "paper") == "live" else "1"
+    if (os.environ.get("RTDS_DETECT") or rtds_default) == "1":
+        bot.rtds = RtdsListener(bot)
+        bot.rtds.start()
+    else:
+        log("rtds: T0 listener disabled for this role (RTDS_DETECT=1 enables)")
+    if want_live:
+        # own-fill push (2026-07-13): in-play holds adopt the moment they
+        # match instead of on the next 60s resolver tick
+        bot.userws = UserFillsListener(bot)
+        bot.userws.start()
 
     # one-shot pipeline test: no server, just push a wallet's latest trade through
     if args.test_wallet:
