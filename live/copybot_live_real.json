@@ -5,13 +5,13 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 36.1,
- "deployed": 14.83,
+ "cash": 36.17,
+ "deployed": 14.76,
  "reserve": 0.0,
  "realized": -15.43,
  "adjustments": -0.06,
  "ledger_drift": 2.31,
- "open_count": 11,
+ "open_count": 10,
  "fees_paid": 2.65,
  "fee_rate": 0.03,
  "lag": {
@@ -47,6 +47,27 @@
  },
  "bets": [
   {
+   "token": "42900587076366844229913834194744356425297818081286466764921250179690312755990",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "BetBoom Team",
+   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 1 Winner",
+   "their_price": 0.51,
+   "my_price": 0.54,
+   "slippage_pct": 0.0588,
+   "lag_s": 11.0,
+   "shares": 3.92,
+   "cost": 2.12,
+   "fee": 0.03,
+   "opened": 1784469697,
+   "status": "closed",
+   "exit_price": 0.5127,
+   "pnl": -0.14,
+   "settled": 1784471234,
+   "sold_shares": 3.92,
+   "sold_proceeds": 2.01
+  },
+  {
    "token": "37824164809093918071945208007872743881921286805762898355468714704460471077939",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "name": "AIcAIc",
@@ -64,27 +85,6 @@
    "exit_price": null,
    "pnl": null,
    "settled": null
-  },
-  {
-   "token": "42900587076366844229913834194744356425297818081286466764921250179690312755990",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "BetBoom Team",
-   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 1 Winner",
-   "their_price": 0.51,
-   "my_price": 0.54,
-   "slippage_pct": 0.0588,
-   "lag_s": 11.0,
-   "shares": 3.92,
-   "cost": 2.12,
-   "fee": 0.03,
-   "opened": 1784469697,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 3.79,
-   "sold_proceeds": 1.94
   },
   {
    "token": "38596120750074321785333064789385162164853013897516945380739845321752073819772",
@@ -2015,10 +2015,26 @@
    "price": 0.41,
    "stake": 2.04,
    "reason": "in-play hold expired unfilled (36s)",
+   "status": "sold",
+   "pnl": 0.87,
+   "settled": 1784471234,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.5995
+  },
+  {
+   "ts": 1784471230,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "46772667468744288997268807185140962881162063147482944578224960298326897165693",
+   "cond": "0x0b5ca9a26521274332651c17a582205c1e7f8ecb8488effc461f03b3250c6158",
+   "title": "Bitcoin Up or Down - July 19, 10AM ET",
+   "outcome": "Up",
+   "price": 0.4496,
+   "stake": 2.04,
+   "reason": "not copied in the detection window (reconciled)",
    "status": "open",
    "pnl": null,
    "settled": null,
-   "name": "gkmgkldfmg"
+   "name": "1kto1m"
   },
   {
    "ts": 1784454959,
@@ -2940,24 +2956,8 @@
    "settled": 1784121946,
    "name": "gkmgkldfmg",
    "exit_price": 0.4634
-  },
-  {
-   "ts": 1784114589,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "99902433281669699237282389313263144275718377343205924960975145491381233618580",
-   "cond": "0x39e04bf6b09df29f9846fcf08aeb1cb364b498c0eaa2526e17cb8ca82fdc0a5b",
-   "title": "Marques vs. Domingues: Set 1 Games O/U 8.5",
-   "outcome": "Under",
-   "price": 0.49,
-   "stake": 1.0,
-   "reason": "in-play hold expired unfilled (20s)",
-   "status": "refund",
-   "pnl": 0.01,
-   "settled": 1784119781,
-   "name": "Kruto2027",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 1049.73,
- "updated": 1784471150
+ "missed_pnl": 1050.6,
+ "updated": 1784471234
 }
