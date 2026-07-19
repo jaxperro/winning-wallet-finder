@@ -1,18 +1,18 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.03,
+ "stake": 2.07,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 35.93,
- "deployed": 14.76,
+ "cash": 39.12,
+ "deployed": 12.66,
  "reserve": 0.0,
- "realized": -15.67,
+ "realized": -14.58,
  "adjustments": -0.06,
- "ledger_drift": 2.32,
- "open_count": 10,
- "fees_paid": 2.71,
+ "ledger_drift": 2.31,
+ "open_count": 9,
+ "fees_paid": 2.72,
  "fee_rate": 0.03,
  "lag": {
   "n": 92,
@@ -46,6 +46,27 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "37824164809093918071945208007872743881921286805762898355468714704460471077939",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Dplus KIA",
+   "title": "LoL: Karmine Corp vs Dplus KIA - Game 2 Winner",
+   "their_price": 0.59,
+   "my_price": 0.59,
+   "slippage_pct": 0.0,
+   "lag_s": 3.8,
+   "shares": 3.56,
+   "cost": 2.1,
+   "fee": 0.03,
+   "opened": 1784471012,
+   "status": "closed",
+   "exit_price": 0.8964,
+   "pnl": 1.07,
+   "settled": 1784472581,
+   "sold_shares": 3.56,
+   "sold_proceeds": 3.19
+  },
   {
    "token": "55756224092672312452220271511023752032089675393435446819167450327852495044652",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -87,25 +108,6 @@
    "settled": 1784471234,
    "sold_shares": 3.92,
    "sold_proceeds": 2.01
-  },
-  {
-   "token": "37824164809093918071945208007872743881921286805762898355468714704460471077939",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Dplus KIA",
-   "title": "LoL: Karmine Corp vs Dplus KIA - Game 2 Winner",
-   "their_price": 0.59,
-   "my_price": 0.59,
-   "slippage_pct": 0.0,
-   "lag_s": 3.8,
-   "shares": 3.56,
-   "cost": 2.1,
-   "fee": 0.03,
-   "opened": 1784471012,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "38596120750074321785333064789385162164853013897516945380739845321752073819772",
@@ -2036,10 +2038,11 @@
    "price": 0.68,
    "stake": 2.03,
    "reason": "price moved 0.60\u21920.68",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 1.15,
+   "settled": 1784472574,
+   "name": "gkmgkldfmg",
+   "exit_price": 1.068
   },
   {
    "ts": 1784471230,
@@ -2979,6 +2982,6 @@
    "exit_price": 0.4656
   }
  ],
- "missed_pnl": 1050.39,
- "updated": 1784472135
+ "missed_pnl": 1051.54,
+ "updated": 1784472581
 }
