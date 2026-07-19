@@ -2103,6 +2103,21 @@
  ],
  "missed": [
   {
+   "ts": 1784496391,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "115428153746996892211798999366308897078723117634059783423375188043903703749062",
+   "cond": "0x0c4cd2055d6ea89354ffddc55d6dbcef9355748112ea952fc925f3db6a5c457f",
+   "title": "Will Argentina win the 2026 FIFA World Cup?",
+   "outcome": "No",
+   "price": 0.711,
+   "stake": 63.59,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784493015,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "33752982532314842955867034258985568949958761450943043689987049583448528253590",
@@ -3034,24 +3049,8 @@
    "settled": 1783916816,
    "name": "0xbadaf319",
    "exit_price": 0.9951
-  },
-  {
-   "ts": 1783890308,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "57692873707168744410462715873400507686142544046928546188194421200046018282561",
-   "cond": "0x8022dd304232ce80b3866b7a45f7396d2e8cb91ace3b86b3aaffd06a44ec6052",
-   "title": "Ava\u00ed FC vs. Clube N\u00e1utico Capibaribe: O/U 1.5",
-   "outcome": "Over",
-   "price": 0.999,
-   "stake": 90.4,
-   "reason": "price moved 0.46\u21921.00",
-   "status": "sold",
-   "pnl": 0.09,
-   "settled": 1783899442,
-   "name": "0x41558102",
-   "exit_price": 1.0
   }
  ],
  "missed_pnl": 90659.17,
- "updated": 1784493019
+ "updated": 1784496391
 }
