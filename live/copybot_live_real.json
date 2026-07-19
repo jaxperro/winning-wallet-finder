@@ -1926,6 +1926,21 @@
  ],
  "missed": [
   {
+   "ts": 1784424727,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "79543505323749041351214009509945263468780378185758945288970137854254779524794",
+   "cond": "0x21588ac86fd81dffc6c7e69789427cef88cd18250daf9c93f4fd29f56ddb516c",
+   "title": "Bitcoin Up or Down - July 18, 9:30PM-9:45PM ET",
+   "outcome": "Down",
+   "price": 0.5197,
+   "stake": 2.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1784402106,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "91990736572156896332531437772162323719378402759982493855773735188693457077937",
@@ -2864,24 +2879,8 @@
    "settled": 1784037916,
    "name": "gkmgkldfmg",
    "exit_price": 0.7
-  },
-  {
-   "ts": 1784036252,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "103599543732484870090369455326920139987823898856081914791151504750897348686596",
-   "cond": "0x54570618ec2d24713f09896dd1e120b43515537c161d825656bdc1fef54ea66b",
-   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 2 Winner",
-   "outcome": "Team Liquid",
-   "price": 0.76,
-   "stake": 1.0,
-   "reason": "in-play hold expired unfilled (30s)",
-   "status": "sold",
-   "pnl": -0.09,
-   "settled": 1784036958,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.7
   }
  ],
  "missed_pnl": 1051.55,
- "updated": 1784422698
+ "updated": 1784424730
 }
