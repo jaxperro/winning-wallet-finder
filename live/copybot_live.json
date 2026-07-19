@@ -2094,6 +2094,21 @@
  ],
  "missed": [
   {
+   "ts": 1784424742,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "79543505323749041351214009509945263468780378185758945288970137854254779524794",
+   "cond": "0x21588ac86fd81dffc6c7e69789427cef88cd18250daf9c93f4fd29f56ddb516c",
+   "title": "Bitcoin Up or Down - July 18, 9:30PM-9:45PM ET",
+   "outcome": "Down",
+   "price": 0.5197,
+   "stake": 98.66,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1784420641,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "35364363129310485685520220202960553864892167102727987653115207699893583866920",
@@ -3033,24 +3048,8 @@
    "settled": 1783814817,
    "name": "0x41558102",
    "exit_checked": true
-  },
-  {
-   "ts": 1783806624,
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "token": "108451612909496335433925708933377313229531944715204827566329790137714124934964",
-   "cond": "0x3c5aeecefc413cf0c049d13327ad40456fd925fd7b5e1364e31239980154869d",
-   "title": "Exact Score: Norway 1 - 0 England?",
-   "outcome": "No",
-   "price": 0.999,
-   "stake": 96.62,
-   "reason": "price moved 0.94\u21921.00",
-   "status": "won",
-   "pnl": 0.09,
-   "settled": 1783814681,
-   "name": "0x41558102",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 90692.66,
- "updated": 1784422699
+ "updated": 1784424744
 }
