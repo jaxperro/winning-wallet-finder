@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 46.16,
- "deployed": 12.66,
+ "cash": 43.81,
+ "deployed": 15.01,
  "reserve": 0.0,
  "realized": -16.99,
  "adjustments": 9.39,
  "ledger_drift": 0.0,
- "open_count": 9,
- "fees_paid": 2.79,
+ "open_count": 10,
+ "fees_paid": 2.8,
  "fee_rate": 0.03,
  "lag": {
-  "n": 93,
-  "n24": 6,
-  "avg_s": 6.8,
-  "avg_slip_pct": 0.0217,
+  "n": 94,
+  "n24": 7,
+  "avg_s": 6.2,
+  "avg_slip_pct": 0.0241,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 341.23
  },
  "bets": [
+  {
+   "token": "69255676899700790711525989127308958019475795404138315524495668898066870353801",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Putin out as President of Russia by August 31, 2026?",
+   "their_price": 0.944,
+   "my_price": 0.98,
+   "slippage_pct": 0.0381,
+   "lag_s": 2.5,
+   "shares": 2.4,
+   "cost": 2.35,
+   "fee": 0.0,
+   "opened": 1784486890,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "107519224001054263439274706964696866987866557807915774909819079291264377299291",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -3003,5 +3022,5 @@
   }
  ],
  "missed_pnl": 1052.12,
- "updated": 1784485798
+ "updated": 1784486892
 }
