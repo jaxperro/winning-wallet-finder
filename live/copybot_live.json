@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 101.59,
+ "stake": 101.53,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1696.28,
- "deployed": 843.44,
+ "cash": 1593.2,
+ "deployed": 945.03,
  "reserve": 0.0,
- "realized": 1539.69,
+ "realized": 1538.19,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 16,
- "fees_paid": 301.09,
+ "open_count": 17,
+ "fees_paid": 302.58,
  "fee_rate": 0.03,
  "lag": {
-  "n": 197,
-  "n24": 10,
-  "avg_s": 3.8,
-  "avg_slip_pct": 0.0091,
+  "n": 198,
+  "n24": 11,
+  "avg_s": 4.1,
+  "avg_slip_pct": 0.0083,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 542.0
  },
  "bets": [
+  {
+   "token": "42900587076366844229913834194744356425297818081286466764921250179690312755990",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "BetBoom Team",
+   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 1 Winner",
+   "their_price": 0.51,
+   "my_price": 0.51,
+   "slippage_pct": 0.0,
+   "lag_s": 7.7,
+   "shares": 199.19,
+   "cost": 101.59,
+   "fee": 1.49,
+   "opened": 1784469697,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "42900587076366844229913834194744356425297818081286466764921250179690312755990",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2073,26 +2092,6 @@
    "settled": 1783851883,
    "sold_shares": 108.3,
    "sold_proceeds": 108.3
-  },
-  {
-   "token": "45280196732223750989767984101465690442391116346771016128184193629867669221370",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Nemesis",
-   "title": "Dota 2: REKONIX vs Team Nemesis - Game 1 Winner",
-   "their_price": 0.5228,
-   "my_price": 0.5,
-   "slippage_pct": -0.0436,
-   "shares": 201.69,
-   "cost": 100.85,
-   "fee": 1.51,
-   "opened": 1783847831,
-   "status": "closed",
-   "exit_price": 0.363,
-   "pnl": -29.15,
-   "settled": 1783850789,
-   "sold_shares": 201.69,
-   "sold_proceeds": 73.21
   }
  ],
  "missed": [
@@ -3048,5 +3047,5 @@
   }
  ],
  "missed_pnl": 90594.47,
- "updated": 1784469298
+ "updated": 1784469704
 }
