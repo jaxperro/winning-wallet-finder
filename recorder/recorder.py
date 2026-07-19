@@ -33,11 +33,18 @@ def log(m):
 
 
 class Tape:
+    """Thread-safe: TWO sockets write concurrently (dual-connection capture,
+    2026-07-19 — single-socket tape measured 92.9% minute-coverage; the RTDS
+    stream silences per-CONNECTION every ~10 min, so a twin covers the gap).
+    Dedupe on (tx, asset, side, size, price) with a 2-min recency window."""
+
     def __init__(self):
         os.makedirs(DIR, exist_ok=True)
         self.hour, self.fh, self.n = None, None, 0
-        self.msgs = self.gaps = 0
+        self.msgs = self.dupes = self.gaps = 0
         self.last_msg = time.time()
+        self._wlock = threading.Lock()
+        self._recent = {}              # dedupe key -> ts
 
     def _rotate(self, hour):
         if self.fh:
@@ -63,6 +70,21 @@ class Tape:
             pass
 
     def write(self, p):
+        key = (p.get("transactionHash"), p.get("asset"), p.get("side"),
+               str(p.get("size")), str(p.get("price")))
+        now = time.time()
+        with self._wlock:
+            self.last_msg = now        # either socket delivering = stream alive
+            if key in self._recent:
+                self.dupes += 1
+                return
+            self._recent[key] = now
+            if len(self._recent) > 40000:      # ~2 busy minutes; prune old
+                cut = now - 120
+                self._recent = {k: t for k, t in self._recent.items() if t > cut}
+            self._do_write(p, now)
+
+    def _do_write(self, p, now):
         hour = time.strftime("%Y%m%d_%H", time.gmtime())
         if hour != self.hour:
             self._rotate(hour)
@@ -78,27 +100,21 @@ class Tape:
             "title": str(p.get("title") or "")[:60]}) + "\n")
         self.n += 1
         self.msgs += 1
-        self.last_msg = time.time()
 
 
-def main():
-    tape = Tape()
-
-    def hb():
-        last = 0
-        while True:
-            time.sleep(60)
-            log(f"tape: {tape.msgs - last} msg/min · hour rows {tape.n} · gaps {tape.gaps}")
-            last = tape.msgs
-    threading.Thread(target=hb, daemon=True).start()
-
+def run_conn(tag, tape):
+    """One socket. Per-connection freshness clock + 15s stale guard: at the
+    observed 3k+ trades/min, 5s of per-conn silence is already pathological,
+    and with a TWIN connection a false trip costs nothing (dedupe absorbs the
+    overlap). gaps counts once per reconnect, per connection."""
     backoff = 2
     while True:
+        state = {"fresh": time.time()}
+
         def on_open(ws):
             ws.send(SUB)
-            tape.last_msg = time.time()   # fresh clock — a stale one from the
-            # PREVIOUS connection would trip the guard instantly and loop
-            log("rtds: connected — recording unfiltered trades")
+            state["fresh"] = time.time()
+            log(f"rtds[{tag}]: connected")
 
             def ping():
                 while ws.keep_running:
@@ -107,9 +123,8 @@ def main():
                         ws.send('{"action":"ping"}')
                     except Exception:
                         break
-                    if time.time() - tape.last_msg > 45:
-                        log("rtds: silent 45s — forcing reconnect")
-                        tape.gaps += 1
+                    if time.time() - state["fresh"] > 15:
+                        log(f"rtds[{tag}]: silent 15s — reconnect (twin covers)")
                         try:
                             ws.close()
                         except Exception:
@@ -118,6 +133,7 @@ def main():
             threading.Thread(target=ping, daemon=True).start()
 
         def on_message(ws, raw):
+            state["fresh"] = time.time()
             try:
                 m = json.loads(raw)
             except Exception:
@@ -128,13 +144,25 @@ def main():
         try:
             app = websocket.WebSocketApp(URL, on_open=on_open, on_message=on_message)
             app.run_forever(sslopt={"cert_reqs": ssl.CERT_NONE})
-            backoff = 2
         except Exception as e:
-            log(f"listener error {str(e)[:70]}")
+            log(f"rtds[{tag}]: listener error {str(e)[:60]}")
         tape.gaps += 1
-        log(f"stream down — reconnect in {backoff}s")
-        time.sleep(backoff)
-        backoff = min(backoff * 2, 60)
+        time.sleep(backoff + (1 if tag == "b" else 0))   # desync the twins
+        backoff = min(backoff * 2, 30)
+        if time.time() - state["fresh"] < 60:
+            backoff = 2                # healthy until just now — quick return
+
+
+def main():
+    tape = Tape()
+    for tag in ("a", "b"):             # dual-connection capture
+        threading.Thread(target=run_conn, args=(tag, tape), daemon=True).start()
+    last = lastd = 0
+    while True:
+        time.sleep(60)
+        log(f"tape: {tape.msgs - last} msg/min · dupes {tape.dupes - lastd}/min "
+            f"· hour rows {tape.n} · reconnects {tape.gaps}")
+        last, lastd = tape.msgs, tape.dupes
 
 
 if __name__ == "__main__":
