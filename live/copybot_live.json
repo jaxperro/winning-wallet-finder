@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 106.4,
+ "stake": 106.36,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1714.14,
- "deployed": 945.88,
+ "cash": 1655.65,
+ "deployed": 1003.43,
  "reserve": 0.0,
- "realized": 1659.99,
+ "realized": 1659.05,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 17,
- "fees_paid": 319.56,
+ "open_count": 18,
+ "fees_paid": 320.51,
  "fee_rate": 0.03,
  "lag": {
-  "n": 206,
-  "n24": 0,
-  "avg_s": 29.2,
-  "avg_slip_pct": -0.0331,
+  "n": 207,
+  "n24": 1,
+  "avg_s": 5.1,
+  "avg_slip_pct": 0.0465,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 344.56
  },
  "bets": [
+  {
+   "token": "6467608425341586311851272664218259937970959338795566500089367688884232468049",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Elon Musk post 140-159 tweets from July 14 to July 21, 2026?",
+   "their_price": 0.43,
+   "my_price": 0.45,
+   "slippage_pct": 0.0465,
+   "lag_s": 5.1,
+   "shares": 127.88,
+   "cost": 57.54,
+   "fee": 0.95,
+   "opened": 1784586251,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "6457952357077230044054791268159160058712529625831041550558183767114352456975",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2080,26 +2099,6 @@
    "settled": 1783861406,
    "sold_shares": 171.37,
    "sold_proceeds": 48.64
-  },
-  {
-   "token": "307529025202586833979526819648497003008876078326197368134840608701258822521",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "1win",
-   "title": "Dota 2: 1win vs Team Yandex - Game 1 Winner",
-   "their_price": 0.2363,
-   "my_price": 0.19,
-   "slippage_pct": -0.1959,
-   "shares": 497.82,
-   "cost": 94.59,
-   "fee": 2.3,
-   "opened": 1783858823,
-   "status": "closed",
-   "exit_price": 0.2641,
-   "pnl": 34.58,
-   "settled": 1783858884,
-   "sold_shares": 497.82,
-   "sold_proceeds": 131.47
   }
  ],
  "missed": [
@@ -3048,5 +3047,5 @@
   }
  ],
  "missed_pnl": 90550.8,
- "updated": 1784583954
+ "updated": 1784586256
 }
