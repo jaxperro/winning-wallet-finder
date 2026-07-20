@@ -2104,6 +2104,21 @@
  ],
  "missed": [
   {
+   "ts": 1784542228,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "94721150294315642159523163478678619726456567670111052245574554614840104448926",
+   "cond": "0x819865625d6f3a6333cf7ce5a4aa4405871553a37148b85d0ffa8b7e17ee94a8",
+   "title": "Bitcoin Up or Down - July 20, 6:00AM-6:15AM ET",
+   "outcome": "Down",
+   "price": 0.3114,
+   "stake": 106.4,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1784528216,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "80568398380615613281811262196000400273657215935776416622694841219164637714912",
@@ -3027,24 +3042,8 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784054882,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "106117170598299515991778271448868055604686257762862584190468389838818487912270",
-   "cond": "0xbe259598e5a6c822d9d5cd125a853fecf6ebed30425621c4dd6fe4151b32d9ab",
-   "title": "Israel enacts military exemption for Yeshiva students by Sep 30?",
-   "outcome": "No",
-   "price": 0.35,
-   "stake": 95.37,
-   "reason": "thin book ($5 within 5c < $50)",
-   "status": "lost",
-   "pnl": -97.23,
-   "settled": 1784063079,
-   "name": "BikesAreTheBikes",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 90683.36,
- "updated": 1784538729
+ "updated": 1784542232
 }
