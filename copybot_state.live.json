@@ -16233,7 +16233,8 @@
       "status": "lost",
       "pnl": -2.42,
       "settled": 1784580432,
-      "name": "0xbadaf319"
+      "name": "0xbadaf319",
+      "exit_checked": true
     },
     {
       "ts": 1784563074,
@@ -16283,8 +16284,8 @@
       "name": "BikesAreTheBikes"
     }
   ],
-  "feed_sig": "a6a833fddfff65099e8f1a0e8075a7c4",
-  "feed_pushed_at": 1784580306.3395205,
+  "feed_sig": "f8abf625fa283da753f7fc081ce35e45",
+  "feed_pushed_at": 1784581204.9812858,
   "adjustments": [
     {
       "ts": 1783906689,
