@@ -2104,6 +2104,21 @@
  ],
  "missed": [
   {
+   "ts": 1784572639,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "87122687121608029703081699232336906033160920614329826898705893750616809914369",
+   "cond": "0x075228a9709cdbea4f2ecf8286b1e70e27e18a4e07cc499ccb1c1ea7bdb0bbba",
+   "title": "SPY (SPY) Up or Down on July 20?",
+   "outcome": "Up",
+   "price": 0.69,
+   "stake": 44.8,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1784563071,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "81614773617418907184361485498947350465036514500422317775261099705727224721455",
@@ -3029,24 +3044,8 @@
    "settled": 1784206970,
    "name": "gkmgkldfmg",
    "exit_price": 0.4527
-  },
-  {
-   "ts": 1784203157,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "10142042254085112476456489233335925486747213286746834444247538330158153223906",
-   "cond": "0x5fee4f88a5795fa8a370c428b53650c5422d243d43865b9e1762c63b8e461256",
-   "title": "Dota 2: Team Yandex vs Team Spirit - Game 1 Winner",
-   "outcome": "Team Yandex",
-   "price": 0.5343,
-   "stake": 103.92,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 13.5,
-   "settled": 1784203480,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.6182
   }
  ],
  "missed_pnl": 90643.59,
- "updated": 1784565538
+ "updated": 1784572640
 }
