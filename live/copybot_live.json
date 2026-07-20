@@ -2104,6 +2104,21 @@
  ],
  "missed": [
   {
+   "ts": 1784506363,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "27385644035915002110547363484247121532744022000859958113912667466557544439681",
+   "cond": "0x365fe978d6a00ed0afdfb7b0d097df040fd0dbb56065c42617c05b37de3d459a",
+   "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $146 Week of July 20 2026?",
+   "outcome": "Yes",
+   "price": 0.52,
+   "stake": 68.5,
+   "reason": "thin book ($36 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784503159,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "29659986108488397735882658288901718486356813252845923931653357875218546128408",
@@ -3034,24 +3049,8 @@
    "settled": 1783936410,
    "name": "0xbadaf319",
    "exit_price": 0.6194
-  },
-  {
-   "ts": 1783888427,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "107179792112987391529646299006880228718467140164269968140132399486412571398191",
-   "cond": "0x880d4d315634908ffac985de5cd442ec679beeb25f0166a77bece698f35463f6",
-   "title": "Will GPT-6 be released by August 14, 2026?",
-   "outcome": "No",
-   "price": 0.7899,
-   "stake": 49.48,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 2.1,
-   "settled": 1783936410,
-   "name": "0xbadaf319",
-   "exit_price": 0.8326
   }
  ],
  "missed_pnl": 90683.36,
- "updated": 1784503787
+ "updated": 1784506364
 }
