@@ -1,17 +1,17 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.41,
+ "stake": 2.42,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 45.08,
- "deployed": 15.28,
+ "cash": 47.58,
+ "deployed": 12.87,
  "reserve": 0.0,
- "realized": -15.45,
+ "realized": -15.36,
  "adjustments": 9.39,
  "ledger_drift": -0.0,
- "open_count": 10,
+ "open_count": 9,
  "fees_paid": 2.81,
  "fee_rate": 0.03,
  "lag": {
@@ -47,6 +47,27 @@
  },
  "bets": [
   {
+   "token": "33752982532314842955867034258985568949958761450943043689987049583448528253590",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Bab el-Mandeb Strait effectively closed by July 31?",
+   "their_price": 0.911,
+   "my_price": 0.924,
+   "slippage_pct": 0.0143,
+   "lag_s": 44.4,
+   "shares": 2.61,
+   "cost": 2.41,
+   "fee": 0.01,
+   "opened": 1784493015,
+   "status": "closed",
+   "exit_price": 0.963,
+   "pnl": 0.09,
+   "settled": 1784581666,
+   "sold_shares": 2.6,
+   "sold_proceeds": 2.5
+  },
+  {
    "token": "6457952357077230044054791268159160058712529625831041550558183767114352456975",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "name": "Kruto2027",
@@ -66,25 +87,6 @@
    "settled": 1784497466,
    "sold_shares": 2.64,
    "sold_proceeds": 2.44
-  },
-  {
-   "token": "33752982532314842955867034258985568949958761450943043689987049583448528253590",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Bab el-Mandeb Strait effectively closed by July 31?",
-   "their_price": 0.911,
-   "my_price": 0.924,
-   "slippage_pct": 0.0143,
-   "lag_s": 44.4,
-   "shares": 2.61,
-   "cost": 2.41,
-   "fee": 0.01,
-   "opened": 1784493015,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "38596120750074321785333064789385162164853013897516945380739845321752073819772",
@@ -3023,5 +3025,5 @@
   }
  ],
  "missed_pnl": 1051.06,
- "updated": 1784581340
+ "updated": 1784581666
 }
