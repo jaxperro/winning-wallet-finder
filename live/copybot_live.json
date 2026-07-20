@@ -2104,6 +2104,21 @@
  ],
  "missed": [
   {
+   "ts": 1784517526,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "94940524945210845047467028525980880667745668441880643750095925409687698630543",
+   "cond": "0xe7092235327ee5dcf40eef80c9da3c0170287ceb2b58a05292218ecd6d0dff6b",
+   "title": "Will Squid launch a token by March 31, 2027?",
+   "outcome": "Yes",
+   "price": 0.091,
+   "stake": 51.19,
+   "reason": "thin book ($2 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784507597,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "78980297018571400404799403103137601328646521882772163061763690804240957815229",
@@ -3029,24 +3044,8 @@
    "settled": 1784037708,
    "name": "gkmgkldfmg",
    "exit_price": 0.42
-  },
-  {
-   "ts": 1784030419,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "43429083182986427425572947360954920494954132341616449095164581234599055860363",
-   "cond": "0x2bb66399ec3f2a5eac9af9e5431f5f7f3b912e0d41619a01135459c6546bdf42",
-   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 1 Winner",
-   "outcome": "Team Liquid",
-   "price": 0.431,
-   "stake": 94.4,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 19.81,
-   "settled": 1784031064,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.5363
   }
  ],
  "missed_pnl": 90683.36,
- "updated": 1784507601
+ "updated": 1784517531
 }
