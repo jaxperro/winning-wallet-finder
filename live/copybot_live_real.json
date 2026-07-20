@@ -2072,6 +2072,21 @@
  ],
  "missed": [
   {
+   "ts": 1784506363,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "27385644035915002110547363484247121532744022000859958113912667466557544439681",
+   "cond": "0x365fe978d6a00ed0afdfb7b0d097df040fd0dbb56065c42617c05b37de3d459a",
+   "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $146 Week of July 20 2026?",
+   "outcome": "Yes",
+   "price": 0.52,
+   "stake": 2.41,
+   "reason": "thin book ($36 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784506248,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "49788775469879840378761895139813138992013557532307513142725478482968059934617",
@@ -3004,25 +3019,8 @@
    "settled": 1784174397,
    "name": "BikesAreTheBikes",
    "exit_price": 0.5
-  },
-  {
-   "ts": 1784106348,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "48230344805568764262522696442077527559175899701365768465113438102738863593763",
-   "cond": "0xb3d5d0894da9a6438744854fb9a4cb0b6efa8ff0e8805adf8b4eb8c7f4f4344b",
-   "title": "WTI Crude Oil (WTI) Up or Down on July 15?",
-   "outcome": "Up",
-   "price": 0.4599,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -0.13,
-   "settled": 1784157222,
-   "name": "0xbadaf319",
-   "exit_checked": true,
-   "exit_price": 0.4157
   }
  ],
  "missed_pnl": 1052.18,
- "updated": 1784506253
+ "updated": 1784506364
 }
