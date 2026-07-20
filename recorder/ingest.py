@@ -29,8 +29,14 @@ def ping(msg):
         req = urllib.request.Request(hook, data=json.dumps({"content": msg}).encode(),
                                      headers={"Content-Type": "application/json",
                                               "User-Agent": "Mozilla/5.0"})
-        urllib.request.urlopen(req, timeout=10,
-                               context=ssl._create_unverified_context()).read()
+        for attempt in range(5):   # ride out the post-wake DNS gap (2026-07-20)
+            try:
+                urllib.request.urlopen(req, timeout=10,
+                                       context=ssl._create_unverified_context()).read()
+                return
+            except Exception:
+                if attempt < 4:
+                    time.sleep(5 * (2 ** attempt))
     except Exception:
         pass
 
@@ -41,9 +47,11 @@ FLYCTL = shutil.which("flyctl") or "/opt/homebrew/bin/flyctl"
 
 
 def box(cmd):
+    # stdin=DEVNULL: under launchd there is no tty, and any flyctl subcommand
+    # that reads stdin will otherwise hang or read garbage (2026-07-20).
     r = subprocess.run([FLYCTL, "ssh", "console", "-a", APP, "-C",
                         f"bash -c '{cmd}'"], capture_output=True, text=True,
-                       timeout=900)   # busy-hour segments (~15MB gz) outgrow 300s over ssh
+                       timeout=900, stdin=subprocess.DEVNULL)
     return r.stdout
 
 
@@ -67,11 +75,17 @@ def main():
         # console was +33% bytes and needed 900s timeouts at busy-hour sizes);
         # the old path stays as the fallback because sftp exits 0 even on
         # some failures — the gunzip is the integrity check either way.
-        lines = None
+        lines, fsize = None, 0
         local = os.path.join("/tmp", s)
         try:
+            # stdin=DEVNULL is LOAD-BEARING (2026-07-20): without it, sftp
+            # under launchd (no tty) produced empty/partial files with rc 0,
+            # which decoded to [] and — via the missing guard below — got
+            # marked ingested and DELETED. 36 segments were lost this way.
             subprocess.run([FLYCTL, "ssh", "sftp", "get", f"{SEG}/{s}", local,
-                            "-a", APP], capture_output=True, timeout=900)
+                            "-a", APP], capture_output=True, timeout=900,
+                           stdin=subprocess.DEVNULL)
+            fsize = os.path.getsize(local)
             with gzip.open(local, "rb") as fh:
                 lines = fh.read().decode().splitlines()
         except Exception:
@@ -84,14 +98,21 @@ def main():
         if lines is None:
             try:
                 raw = box(f"base64 {SEG}/{s}")
-                lines = gzip.decompress(base64.b64decode(raw)).decode().splitlines()
+                blob = base64.b64decode(raw)
+                fsize = len(blob)
+                lines = gzip.decompress(blob).decode().splitlines()
             except Exception as e:
-                # BOTH transports failed — skip, never crash: a single monster
-                # segment (rtds_20260718_21, 2026-07-19) blocked the whole
-                # sorted backlog behind it when this timeout escaped the try
                 print(f"[ingest] {s}: both transports failed ({type(e).__name__}) "
                       "— left on box, continuing")
                 continue
+        # INTEGRITY GUARD (2026-07-20): a non-trivial gz that yields ZERO lines
+        # is a truncated/empty FETCH, not an empty hour (a genuinely empty hour
+        # gzips to ~20-30 bytes). NEVER mark+delete it — leave it on the box to
+        # retry. This is the guard whose absence cost 36 segments.
+        if not lines and fsize > 200:
+            print(f"[ingest] {s}: {fsize}B gz decoded to 0 lines — FETCH FAILED, "
+                  "left on box for retry")
+            continue
         rows, aux = [], []
         for ln in lines:
             try:

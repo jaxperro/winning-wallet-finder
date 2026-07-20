@@ -24,12 +24,24 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 MAX_ROWS = 30            # embed description caps at 4096 chars; 30 rows fits
 
 
-def _post(hook, payload):
+def _post(hook, payload, tries=6):
+    """POST with retry+backoff on ANY error (2026-07-20: the DIGEST send — not
+    just the start ping — was dying on the post-wake DNS gap / transient network
+    blips with no retry, so the whole daily digest silently never arrived).
+    Backoff 5,10,20,40,80s ≈ 2.5min of coverage; raises only if all tries fail."""
     req = urllib.request.Request(
         hook, data=json.dumps(payload).encode(),
         headers={"Content-Type": "application/json",
                  "User-Agent": "Mozilla/5.0"})     # Discord 403s the default UA
-    urllib.request.urlopen(req, timeout=15, context=ssl._create_unverified_context())
+    for attempt in range(tries):
+        try:
+            urllib.request.urlopen(req, timeout=15,
+                                   context=ssl._create_unverified_context())
+            return
+        except Exception:
+            if attempt == tries - 1:
+                raise
+            time.sleep(5 * (2 ** attempt))
 
 
 def main():
@@ -48,16 +60,11 @@ def main():
         # after wake, so a single try fails instantly with getaddrinfo "nodename
         # nor servname" (harmless: the end-of-run digest lands fine). Retry a few
         # times with backoff to ride out the post-wake network gap.
-        for attempt in range(4):
-            try:
-                _post(hook, {"content": sys.argv[2]})
-                print("[discord] ping sent" + (f" (attempt {attempt + 1})" if attempt else ""))
-                return
-            except Exception as e:
-                if attempt == 3:
-                    print("[discord] ping failed after retries:", e)
-                else:
-                    time.sleep(5 * (attempt + 1))     # 5s, 10s, 15s — DNS usually up by 15s
+        try:
+            _post(hook, {"content": sys.argv[2]})   # _post now retries internally
+            print("[discord] ping sent")
+        except Exception as e:
+            print("[discord] ping failed after retries:", e)
         return
     try:
         sharps = json.load(open(os.path.join(HERE, "watch_sharps.json")))
