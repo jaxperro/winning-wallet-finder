@@ -276,6 +276,10 @@ class CopyTrader:
         self.seen = _SeenTx((tx, i) for i, tx in enumerate(state["seen_tx"]))
         self.webhook = cfg.get("discord_webhook", "")
         self._discord_warned = False
+        # host-installed hook (copybot.Copybot.fak_requote_retry): called with
+        # the copy context when an OPEN's FAK dies unmatched, instead of
+        # recording the miss immediately. None = old behavior (miss at once).
+        self.on_fak_reject = None
 
     # -- helpers --
     def log(self, msg):
@@ -447,7 +451,10 @@ class CopyTrader:
 
     def _handle_their_buy(self, wallet, token, their_size, their_price,
                           label, title, outcome, event=None, cond=None,
-                          their_ts=None):
+                          their_ts=None, retry=False):
+        # retry=True: re-entry from the host's FAK re-quote retry. The caller
+        # passes their_size=0 — their_pos already counts the copied trade, so
+        # passing the size again would double-count their stake in the ceiling.
         mine = self.state["my_pos"].get(token)
         is_add = mine is not None
         # the signal's position in this token BEFORE this trade — the their-bet
@@ -593,10 +600,26 @@ class CopyTrader:
                          f"order {str(res['pending'].get('order_id'))[:14]}…)")
                 self.persist()
                 return
-            self.log(f"{kind} {label} — ORDER FAILED: {res.get('resp')}")
+            resp_s = str(res.get("resp"))
+            self.log(f"{kind} {label} — ORDER FAILED: {resp_s}")
+            # FAK no-match = the copy landed in the crater the sharp just
+            # swept (see PaperExecutor) — makers usually restore the ask side
+            # within seconds. Hand a first-attempt OPEN to the host's one-shot
+            # re-quote retry instead of recording the miss now; the retry
+            # re-runs this whole gated path (fresh quote, price guard, depth
+            # gate) exactly once, and its failure lands in the branch below.
+            if (not retry and not is_add and self.on_fak_reject is not None
+                    and "no orders found to match" in resp_s):
+                self.on_fak_reject({
+                    "wallet": wallet, "token": token,
+                    "their_price": their_price, "label": label,
+                    "title": title, "outcome": outcome,
+                    "event": event, "cond": cond, "their_ts": their_ts})
+                return
             if not is_add:                     # a rejected OPEN is a missed bet
+                tag = " twice (re-quote retry)" if retry else ""
                 self.record_miss(wallet, token, cond, title, outcome, price,
-                                 allowed, f"order rejected: {str(res.get('resp'))[:60]}")
+                                 allowed, f"order rejected{tag}: {resp_s[:60]}")
             return
         spent = res["filled_shares"] * res["price"]
         self.state["spend"]["usd"] += spent

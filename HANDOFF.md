@@ -40,7 +40,9 @@ push through.
   6-wallet Set E rev 4, 4% of working equity/bet, alarm-free after the
   07-19 reconcile. **wwf-copybot** (paper $1k): same set, FAK-parity fills.
   Both on the audit-hardened build (locks, chain-gated sweep, boot-id
-  single-writer guard, TLS'd user-ws — HANDOFF_ARCHIVE rev 16).
+  single-writer guard, TLS'd user-ws — HANDOFF_ARCHIVE rev 16). 2026-07-20:
+  FAK no-match OPENs get one 10s re-quote retry on both bots (`fak_retry_s`,
+  paper-parity; misses from a second rejection tag "twice (re-quote retry)").
 - **wwf-recorder**: the FULL firehose (trades + order matches + comments
   + crypto ticks, ~8M events/day, dual-socket ~99.9% capture, 25GB volume,
   NOTHING deleted until the Mac verifiably ingests it) → nightly →

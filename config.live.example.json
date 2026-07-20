@@ -4,6 +4,7 @@
   "bankroll_usd": 66.42,
   "bankroll_pct": 0.04,
   "price_guard_abs": 0.05,
+  "fak_retry_s": 10,
   "taker_fee_rate": 0.03,
   "discord_webhook": "",
   "follow": {

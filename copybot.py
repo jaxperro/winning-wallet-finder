@@ -893,6 +893,9 @@ class Copybot:
         if "lag_recent" not in engine.state:
             engine.state["lag_recent"] = self._backfill_lag_recent()
         self.fee_rate = float(cfg.get("taker_fee_rate", TAKER_FEE_RATE))
+        # FAK no-match re-quote retry wait (s); 0 disables (miss recorded at
+        # the first rejection, pre-2026-07-20 behavior)
+        self.fak_retry_s = float(cfg.get("fak_retry_s", 10))
 
     def _backfill_lag_recent(self, window_s=86400):
         """[[ts, lag_s, slip], …] for fills in the last window_s, read from the
@@ -1146,6 +1149,48 @@ class Copybot:
             }
         log(f"  ↳ untracked buy booked: {(pos.get('title') or '?')[:42]} — "
             f"{f['shares']:.1f}sh @ {f['price']:.3f}")
+
+    def fak_requote_retry(self, ctx):
+        """One-shot re-quote retry for an OPEN whose FAK died unmatched
+        (2026-07-20: 13 of 48h's misses were 'no orders found to match' — the
+        copy arrives in the crater the sharp just swept, before makers
+        requote; the resolved ones were net-positive would-be P&L). Sleep
+        OUTSIDE the bot lock (a burst is exactly when these fire), then
+        re-run the whole gated buy path — fresh quote, price guard, depth
+        gate — exactly once (retry=True can't re-schedule). Mirrors the
+        webhook call site's fill drain so a retry fill books its lag + bet
+        rows instead of surfacing later as an untracked orphan; a second
+        rejection records the miss inside _handle_their_buy, tagged
+        'twice (re-quote retry)'. Installed on engine.on_fak_reject by
+        main() when cfg fak_retry_s > 0 (default 10)."""
+        def run():
+            time.sleep(self.fak_retry_s)
+            tok = ctx["token"]
+            try:
+                with self.lock:
+                    self.engine._handle_their_buy(
+                        ctx["wallet"], tok, 0.0, ctx["their_price"],
+                        ctx["label"], ctx["title"], ctx["outcome"],
+                        event=ctx["event"], cond=ctx["cond"],
+                        their_ts=ctx["their_ts"], retry=True)
+                    self.engine.persist()
+                    if tok in self.engine.state["my_pos"] \
+                            and tok not in self.conds and ctx["cond"]:
+                        self.conds[tok] = ctx["cond"]
+                    synth = {"timestamp": ctx["their_ts"],
+                             "price": ctx["their_price"],
+                             "outcome": ctx["outcome"], "title": ctx["title"]}
+                    for f in self._drain_fills():
+                        if f["token"] == tok:
+                            self._record_lag(ctx["wallet"], synth, f)
+                        else:
+                            self._record_untracked_buy(f)
+                    self.check_book()
+            except Exception as e:
+                log(f"re-quote retry error ({ctx['label'][:36]}): {e}")
+        log(f"FAK no-match — re-quote retry in {self.fak_retry_s:.0f}s: "
+            f"{ctx['label'][:48]}")
+        threading.Thread(target=run, daemon=True).start()
 
     def _ledger_buy_tokens(self):
         """Tokens with a BUY line in the fills ledger — i.e. positions whose
@@ -2601,6 +2646,8 @@ def main():
                       if want_live else "")
     filt = FollowFilter(cfg)
     bot = Copybot(cfg, engine, filt, redeemer=redeemer)
+    if bot.fak_retry_s > 0:      # FAK crater misses get one re-quote retry
+        engine.on_fak_reject = bot.fak_requote_retry
     # single-writer invariant (audit 3.4): every boot stamps the state; a
     # stale process that survived `machine stop` (gotcha 15c) sees a newer
     # boot on origin at publish time and yields instead of overwriting it.
