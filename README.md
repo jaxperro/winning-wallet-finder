@@ -134,6 +134,7 @@ does).
 | `insider.py` | the original detector: z-score, pre-resolution timing, fresh-wallet flags, funding-cluster rings |
 | `smart_money.py` | shared HTTP helper + survivorship-corrected win-rate dashboard (`:8899`) |
 | `archive/webhook_receiver.py` | retired 2026-07-04: Alchemy webhook → per-trade Discord pings (replaced by `live/discord_daily.py`'s daily digest) |
+| `research/` | tape-era edge factory, **SILO'd from the bots** ([research/README](research/README.md)): read-only RTDS loaders, execution sim calibrated on the live ledger, pre-registered studies (#16 surge momentum, #17 oracle fair value), nightly forward ledger — the only source of study verdicts |
 | `wide/` | frozen-subgraph bulk scanner (1.76M wallets, historical only — subgraph froze Jan 2026) |
 | `archive/` | everything retired, kept honest ([archive/README](archive/README.md)): the six failed strategies, earlier research sweeps (`hunt/huntwide/oos/copyback`), the superseded live selection layer (`live-research/`), the scrapped Polymarket-US venue probe (`us-venue/`), and retired infra (`retired-infra/`: Railway config, Mac launchd runner, GH-Actions cron) |
 

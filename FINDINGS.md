@@ -22,6 +22,8 @@ automatable from public data.
 | **Multi-outcome logical arb** | ❌ dead | True partitions priced efficiently (min sum 0.999). Apparent "arbs" were non-exclusive market groupings. |
 | **Cross-venue arb (Polymarket↔Kalshi)** | ❌ dead | Venues agree to ~1¢; locking both legs costs **>$1 after fees**. Real gaps last ~seconds and are taken by bots. |
 | **Insider / sharp detection** | ✅ **works** | Statistical improbability (z-score of wins vs. odds) is a real, hard-to-fake edge signal. See `insider.py`. |
+| **In-play surge momentum (tape)** | ⏳ forward window | Sim: ~+$24/fill after fees at measured execution; wallet identity adds NOTHING (controls match). Pre-registered verdict pending — #16. |
+| **Crypto oracle fair-value taking** | ⏳ forward window | 86% of mispricings die as craters; big fillable edges are winner's-curse traps. Nothing frozen — #17. |
 
 ## The big technical findings
 
@@ -462,6 +464,49 @@ decision: the replay compounds *faster* on smaller banks (`--bank 500` →
 their-bet ceilings later — percentage returns from small books are the most
 optimistic view, discount accordingly.
 
+## The tape era opens: first RTDS findings (2026-07-20)
+
+Three days of the recorder's firehose in `live/rtds.duckdb` (13.8M fills,
+160k wallets, every fill *including the losers*) killed the survivorship
+problem at the source and produced four findings in one day — details, code,
+and frozen parameters in `research/` (silo'd from the bots; see its README):
+
+**1. The tape sharp screen works, and its resolution proxy is exact.**
+Terminal-VWAP convergence (≥0.97/≤0.03, 2h quiet, sibling veto) agreed with
+on-chain CTF payout vectors on **742 of 742** validated bets. First run
+(`live/tape_sharps.py`): 2,360 wallets with ≥8 resolved held bets, 25
+copyable candidates at z 4.0–5.5 (discrete conviction entries, sports/
+esports in-play profile — the Set-E archetype), cleanly separated from an
+uncopyable **algo-flow tier** (z 9–12, 10–37 fills/bet, $M volumes: the
+crater-sweepers). Benchmark sanity: benched sharps scored positive, benched
+disappointments negative.
+
+**2. Wallet identity might not matter (the null that redirects the program).**
+Study A (#16): a $300/60s net-flow surge into an in-play sports/esports
+market at 0.10–0.90 simulates to ~+$24/$100-fill after fees *at our
+measured execution* — but 10 activity-matched random wallet sets produce
+the SAME EV (+23.85 pooled vs +23.68 informed). The herd's lean is the
+signal; *who* leans adds nothing so far. Hypothesis revised at freeze:
+surge momentum primary, identity lift secondary. Verdict comes only from
+the forward ledger (research nightly, pre-registered thresholds).
+
+**3. The oracle edge is real on paper and mostly untakeable — worse at size.**
+Study B (#17): fair value from the venue's own settlement tick feed flags
+~9k mispricings/21h, but 86% die as FAK craters (crypto makers requote
+<4s), and the fillable remainder shows winner's-curse inversion — demanding
+a 10¢ edge *loses* $31/fill. Nothing froze (no cell hit 30 fills);
+candidate v2 uses are inverted: copy filter / maker-side.
+
+**4. Craters refill on a clock, and it's niche-shaped.** 775k crater prints:
+crypto refills within 4s 94% of the time, esports 83% by 10s, sports needs
+~25s, geo/politics tails run minutes. Shipped straight into the bots as
+per-niche `fak_retry` waits (the flat 10s was calibrated to nothing).
+
+Execution realism note for everything above: the research simulator is
+fitted on the live bot's own 29 labeled attempts (fills + FAK misses) and
+carries a measured **−2¢/fill optimism bias** — every pre-registered pass
+threshold sits at least 2× above it.
+
 ## Repo layout
 
 - `insider.py` — the detector: z-score/p-value, timing/freshness/sizing signals,
@@ -476,6 +521,11 @@ optimistic view, discount accordingly.
   daily refresh. The dashboard (jaxperro repo) renders those two JSON feeds. See
   `live/README.md`. *Copy execution (`copybot.py`, `sync_floors.py`) is a separate,
   in-progress system — this finder is selection + tracking only.*
+- `research/` — the tape-era edge factory (SILO'd from the bots): read-only
+  RTDS loaders, execution sim calibrated on the live ledger, pre-registered
+  studies (#16 surge momentum, #17 oracle fair value), nightly forward
+  ledger. Verdicts come from `research/forward_ledger.jsonl` only. See
+  `research/README.md`.
 - `wide/` — bulk subgraph→DuckDB scanner (survivorship-bias-free, all wallets);
   public subgraph frozen at Jan 2026, so historical-only. See `wide/README.md`.
 - `archive/` — the strategies that didn't work, kept for reference. See

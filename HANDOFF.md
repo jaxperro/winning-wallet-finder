@@ -23,7 +23,8 @@ REOPENED #4: the redeemer's phantom-cash BOOBY TRAP is fixed + proven
 Builder API Key (SDK gasless relay) the runtime bot deliberately lacks —
 LOW urgency, the platform auto-redeems winners itself. auto_redeem OFF.
 Open now: #1 Signal A, #2 tape research, #4 redeem builder-key, #13 Fri
-bench, #14 edge verdict.
+bench, #14 edge verdict, #16 surge momentum (forward window OPEN), #17
+oracle fair value (accumulating, nothing frozen).
 
 ## Operating boundary (user, 2026-07-13 — standing)
 **Full autonomy on the bots**; the real-money bot **stays ARMED**. Never
@@ -51,11 +52,22 @@ push through.
   `live/rtds.duckdb` (trades + aux). Current-era ground truth for research.
 - **VALUE experiment: CLOSED 2026-07-19** — sub-2¢ hypothesis refuted
   (1W/993L, 0.075x); post-mortem in value/PLAN.md; app destroyed.
+- **research/ (NEW 2026-07-20, SILO — never touches the bots)**: tape-era
+  edge factory. Sharp screen (`live/tape_sharps.py`, resolution proxy
+  chain-validated 742/742, 25 copyable candidates); execution sim fitted on
+  our own 29 labeled attempts (−2¢/fill optimism bias, thresholds sit 2×
+  above it); Study A surge momentum #16 (identity NULL result — controls
+  match the informed set) and Study B oracle fair value #17 (86% craters,
+  winner's-curse inversion). Verdicts ONLY from research/forward_ledger.jsonl.
 - **Verdicts pending**: edge/size-up (#14, ~end of July, pre-registered) ·
-  bench review Friday (#13: five new sharps + AIcAIc's prove-it week).
+  bench review Friday (#13: five new sharps + AIcAIc's prove-it week —
+  cross-read the tape screen's candidates in live/tape_sharps.json) ·
+  #16/#17 forward thresholds (in their issues).
 - Dashboards: jaxperro.com/{trading,live,value} · daily pipeline on the Mac
   at 08:00 (launchd, lockfile) — floors, bench forward table, edge row,
-  tape ingest, Discord digest.
+  tape ingest, Discord digest · research nightly at 09:15
+  (com.jaxperro.research-nightly → research/nightly.sh, self-commits the
+  forward ledger; remove with `launchctl unload`).
 
 ## Ops quick-reference
 - Follow-set change: edit live/copybot.paper.json → `./live/deploy_bot.sh`;
