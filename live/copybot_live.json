@@ -2104,6 +2104,21 @@
  ],
  "missed": [
   {
+   "ts": 1784562364,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "103988361056715557688108806696666000436932711957896745224025885715803818393567",
+   "cond": "0x65ca30aee9dfec7f2f0292049b3a4d950808105864a3895b986402e2d86a631a",
+   "title": "Ethereum above 1,900 on July 20, 12PM ET?",
+   "outcome": "No",
+   "price": 0.8,
+   "stake": 23.29,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784552316,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "44447031562738174918016769793991804433486269578769473189935766976836636647978",
@@ -3030,24 +3045,8 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.4157
-  },
-  {
-   "ts": 1784038062,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "74079800819371354810882430985275264634530851270424415749197209350942756192264",
-   "cond": "0x73b1e8e9993114bd0b92588ecdc2a6f490ba9cc6f85844d927ae62e0b3c15ca5",
-   "title": "Will Russia capture Pokrovka by July 31?",
-   "outcome": "No",
-   "price": 0.242,
-   "stake": 97.53,
-   "reason": "book unreliable (spread 0.69 > 0.08)",
-   "status": "lost",
-   "pnl": -99.75,
-   "settled": 1784148557,
-   "name": "BikesAreTheBikes",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 90728.24,
- "updated": 1784562039
+ "updated": 1784562365
 }
