@@ -2104,6 +2104,21 @@
  ],
  "missed": [
   {
+   "ts": 1784557341,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "67913011466625262359588841481742993497498081452195278087275807248301608894093",
+   "cond": "0x6abe5fe01ca113b7d6040604a8619cadf181d4e4a6d8db3a082542417af806fd",
+   "title": "Will SpaceX Starship Flight Test 13 launch by August 31?",
+   "outcome": "Yes",
+   "price": 0.824,
+   "stake": 65.29,
+   "reason": "thin book ($4 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784546090,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "99938107423318996756322333138555738106297484333668883121178163046396546977526",
@@ -3030,23 +3045,8 @@
    "settled": 1784148557,
    "name": "BikesAreTheBikes",
    "exit_checked": true
-  },
-  {
-   "ts": 1784148369,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "97790474719190241406489821993233180311618193540151039410585653304993937141574",
-   "cond": "",
-   "title": "",
-   "outcome": "",
-   "price": 0.716,
-   "stake": 64.21,
-   "reason": "book unreliable (spread 0.14 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": 90668.12,
- "updated": 1784556106
+ "updated": 1784557341
 }
