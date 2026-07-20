@@ -24,7 +24,8 @@ Builder API Key (SDK gasless relay) the runtime bot deliberately lacks —
 LOW urgency, the platform auto-redeems winners itself. auto_redeem OFF.
 Open now: #1 Signal A, #2 tape research, #4 redeem builder-key, #13 Fri
 bench, #14 edge verdict, #16 surge momentum (forward window OPEN), #17
-oracle fair value (accumulating, nothing frozen).
+oracle fair value (accumulating, nothing frozen), #18 empty-cond copies
+are unsettleable (2026-07-20 CASH≠CHAIN post-mortem).
 
 ## Operating boundary (user, 2026-07-13 — standing)
 **Full autonomy on the bots**; the real-money bot **stays ARMED**. Never
@@ -36,10 +37,12 @@ DISARM (`flyctl secrets unset LIVE_CONFIRM -a wwf-copybot-live`) rather than
 push through.
 
 ## Snapshot (2026-07-19)
-- **wwf-copybot-live** (REAL, ARMED): ~$59 equity ($66.42 contributed,
-  realized −$16.94 lifetime — day-one incident + honest recognitions),
+- **wwf-copybot-live** (REAL, ARMED): ~$62 equity ($66.42 contributed,
+  realized −$12.17 lifetime — day-one incident + honest recognitions),
   6-wallet Set E rev 4, 4% of working equity/bet, alarm-free after the
-  07-19 reconcile. **wwf-copybot** (paper $1k): same set, FAK-parity fills.
+  07-20 reconcile (CASH≠CHAIN −$1.75: empty-cond Odyssey bet the venue
+  auto-redeemed → hand-settled won +$0.68, $0.05 rounding folded; root
+  cause → #18). **wwf-copybot** (paper $1k): same set, FAK-parity fills.
   Both on the audit-hardened build (locks, chain-gated sweep, boot-id
   single-writer guard, TLS'd user-ws — HANDOFF_ARCHIVE rev 16). 2026-07-20:
   FAK no-match OPENs get one re-quote retry on both bots, PER-NICHE waits
