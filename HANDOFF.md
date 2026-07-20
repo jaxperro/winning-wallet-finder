@@ -41,8 +41,10 @@ push through.
   07-19 reconcile. **wwf-copybot** (paper $1k): same set, FAK-parity fills.
   Both on the audit-hardened build (locks, chain-gated sweep, boot-id
   single-writer guard, TLS'd user-ws — HANDOFF_ARCHIVE rev 16). 2026-07-20:
-  FAK no-match OPENs get one 10s re-quote retry on both bots (`fak_retry_s`,
-  paper-parity; misses from a second rejection tag "twice (re-quote retry)").
+  FAK no-match OPENs get one re-quote retry on both bots, PER-NICHE waits
+  from measured crater-refill times (crypto 4s / esports 10s / sports+slow
+  25s — research/params/requote_timing.json; `fak_retry_niche_s` override,
+  `fak_retry_s` fallback+kill-switch; second rejection tags "twice").
 - **wwf-recorder**: the FULL firehose (trades + order matches + comments
   + crypto ticks, ~8M events/day, dual-socket ~99.9% capture, 25GB volume,
   NOTHING deleted until the Mac verifiably ingests it) → nightly →

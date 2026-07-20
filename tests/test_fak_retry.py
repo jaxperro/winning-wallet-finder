@@ -159,6 +159,7 @@ def t7():
     bot.here = ""
     bot.check_book = lambda: None                # network-touching, not under test
     copybot.book_depth = lambda t: None          # _record_lag's book snapshot
+    bot.fak_retry_niche = {}                     # force the scalar fallback
     bot.fak_retry_s = 0.05
     eng.on_fak_reject = bot.fak_requote_retry
     their_buy(eng)                               # reject -> schedules the retry
@@ -171,6 +172,23 @@ def t7():
     assert b and b["status"] == "open" and b["their_price"] == 0.50, b
     assert not eng.ex.fills, "fill left undrained"
     assert not eng.state.get("missed"), eng.state["missed"]
+
+
+
+@case("per-niche retry waits: measured map, first-match classing, fallback")
+def t8():
+    eng = mkengine("fak")
+    bot = copybot.Copybot(eng.cfg, eng, filt=None)
+    assert bot._fak_wait("Ethereum above 1,900 on July 20, 12PM ET?") == 4.0
+    assert bot._fak_wait("LoL: G2 Esports vs LYON - Game 2 Winner") == 10.0
+    assert bot._fak_wait("Will Argentina win the 2026 FIFA World Cup?") == 25.0
+    assert bot._fak_wait("Israel x Iran ceasefire continues through July 20?") == 25.0
+    assert bot._fak_wait("Completely unclassifiable market") == 25.0  # other
+    assert bot._fak_wait("Wimbledon: Alcaraz set winner") == bot.fak_retry_s  # tennis: no measurement -> fallback
+    eng.cfg["fak_retry_niche_s"] = {"crypto": 2}
+    bot2 = copybot.Copybot(eng.cfg, eng, filt=None)
+    assert bot2._fak_wait("Bitcoin above 63,400 on July 17, 3PM ET?") == 2.0
+
 
 
 print()

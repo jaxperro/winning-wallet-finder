@@ -243,6 +243,40 @@ FEED_PUSH_MIN_S = 120                     # min seconds between feed git-pushes 
 # with "taker_fee_rate" in config.json if that changes.
 TAKER_FEE_RATE = 0.03
 
+# FAK re-quote retry, per market niche. Waits are the measured crater-refill
+# times (research/params/requote_timing.json, 775k crater prints, 2026-07-20):
+# crypto books refill <4s 94% of the time, esports 83% by 10s, sports needs
+# ~25s (70% at 10s -> 76% at 25s); geo/politics/other tails run minutes, so
+# 25s is the cap — beyond that the price guard is the protection, not the
+# retry. Patterns are the validated research/tape.py classifier, first match
+# wins (esports before sports: "LoL: A vs B" must not fall through to
+# sports on " vs "). Config: fak_retry_niche_s overrides per key;
+# fak_retry_s stays the fallback for unmatched niches and 0 disables the
+# whole feature.
+FAK_RETRY_NICHE_DEFAULT = {"crypto": 4.0, "esports": 10.0, "sports": 25.0,
+                           "geo": 25.0, "politics": 25.0, "other": 25.0}
+NICHE_PATTERNS = [
+    ("esports", ["lol:", "dota", "cs2", "csgo", "valorant", "esports",
+                 "bilibili", "map ", "game 1", "game 2", "game 3"]),
+    ("tennis", ["tennis", "atp", "wta", "wimbledon", "set winner"]),
+    ("sports", [" vs. ", " vs ", " @ ", "mlb", "nba", "nhl", "ufc",
+                "world cup", "f1", "grand prix", "fifa"]),
+    ("crypto", ["bitcoin", "btc", "ethereum", "solana", "xrp", "doge",
+                "price of", "up or down"]),
+    ("politics", ["election", "president", "senate", "governor", "mayor",
+                  "nominee", "impeach", "tariff", "fed ", "rate cut"]),
+    ("geo", ["iran", "israel", "russia", "ukraine", "china", "taiwan",
+             "ceasefire", "strike", "nato"]),
+]
+
+
+def market_niche(title):
+    t = (title or "").lower()
+    for label, pats in NICHE_PATTERNS:
+        if any(p in t for p in pats):
+            return label
+    return "other"
+
 
 def taker_fee(shares, price, rate):
     return shares * rate * price * (1.0 - price)
@@ -894,8 +928,16 @@ class Copybot:
             engine.state["lag_recent"] = self._backfill_lag_recent()
         self.fee_rate = float(cfg.get("taker_fee_rate", TAKER_FEE_RATE))
         # FAK no-match re-quote retry wait (s); 0 disables (miss recorded at
-        # the first rejection, pre-2026-07-20 behavior)
+        # the first rejection, pre-2026-07-20 behavior). Per-niche waits from
+        # the measured crater-refill times (see FAK_RETRY_NICHE_DEFAULT);
+        # fak_retry_s is the fallback for niches without a measurement.
         self.fak_retry_s = float(cfg.get("fak_retry_s", 10))
+        self.fak_retry_niche = {
+            k: float(v) for k, v in {**FAK_RETRY_NICHE_DEFAULT,
+                                     **(cfg.get("fak_retry_niche_s") or {})}.items()}
+
+    def _fak_wait(self, title):
+        return self.fak_retry_niche.get(market_niche(title), self.fak_retry_s)
 
     def _backfill_lag_recent(self, window_s=86400):
         """[[ts, lag_s, slip], …] for fills in the last window_s, read from the
@@ -1162,9 +1204,13 @@ class Copybot:
         rows instead of surfacing later as an untracked orphan; a second
         rejection records the miss inside _handle_their_buy, tagged
         'twice (re-quote retry)'. Installed on engine.on_fak_reject by
-        main() when cfg fak_retry_s > 0 (default 10)."""
+        main() when cfg fak_retry_s > 0. The wait is PER NICHE (_fak_wait):
+        measured crater-refill times, crypto 4s / esports 10s / sports+slow
+        books 25s (research requote_timing, 2026-07-20)."""
+        wait = self._fak_wait(ctx["title"])
+
         def run():
-            time.sleep(self.fak_retry_s)
+            time.sleep(wait)
             tok = ctx["token"]
             try:
                 with self.lock:
@@ -1188,8 +1234,8 @@ class Copybot:
                     self.check_book()
             except Exception as e:
                 log(f"re-quote retry error ({ctx['label'][:36]}): {e}")
-        log(f"FAK no-match — re-quote retry in {self.fak_retry_s:.0f}s: "
-            f"{ctx['label'][:48]}")
+        log(f"FAK no-match — re-quote retry in {wait:.0f}s "
+            f"({market_niche(ctx['title'])}): {ctx['label'][:48]}")
         threading.Thread(target=run, daemon=True).start()
 
     def _ledger_buy_tokens(self):

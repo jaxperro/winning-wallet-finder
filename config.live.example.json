@@ -5,6 +5,8 @@
   "bankroll_pct": 0.04,
   "price_guard_abs": 0.05,
   "fak_retry_s": 10,
+  "fak_retry_niche_s": {"crypto": 4, "esports": 10, "sports": 25,
+                        "geo": 25, "politics": 25, "other": 25},
   "taker_fee_rate": 0.03,
   "discord_webhook": "",
   "follow": {
