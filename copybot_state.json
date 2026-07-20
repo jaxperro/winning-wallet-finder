@@ -14995,8 +14995,8 @@
     }
   },
   "hwm": 2849.150445045735,
-  "feed_sig": "779ed39d685e373f1c8cac61748bce3e",
-  "feed_pushed_at": 1784579950.0531294,
+  "feed_sig": "ed2a7eee4c88bbc2a78f81c817c5bfde",
+  "feed_pushed_at": 1784580341.3652263,
   "missed": [
     {
       "ts": 1783590977,
@@ -17410,9 +17410,9 @@
       "price": 0.8,
       "stake": 23.29,
       "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "pnl": -23.43,
+      "settled": 1784580406,
       "name": "0xbadaf319"
     },
     {

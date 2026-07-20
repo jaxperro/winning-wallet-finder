@@ -2104,6 +2104,21 @@
  ],
  "missed": [
   {
+   "ts": 1784562364,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "103988361056715557688108806696666000436932711957896745224025885715803818393567",
+   "cond": "0x65ca30aee9dfec7f2f0292049b3a4d950808105864a3895b986402e2d86a631a",
+   "title": "Ethereum above 1,900 on July 20, 12PM ET?",
+   "outcome": "No",
+   "price": 0.8,
+   "stake": 23.29,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "lost",
+   "pnl": -23.43,
+   "settled": 1784580406,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784579992,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "44886536523187194068204780081456530701237321244412931776973158233298351926383",
@@ -2180,21 +2195,6 @@
    "settled": 1784563785,
    "name": "BikesAreTheBikes",
    "exit_checked": true
-  },
-  {
-   "ts": 1784562364,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "103988361056715557688108806696666000436932711957896745224025885715803818393567",
-   "cond": "0x65ca30aee9dfec7f2f0292049b3a4d950808105864a3895b986402e2d86a631a",
-   "title": "Ethereum above 1,900 on July 20, 12PM ET?",
-   "outcome": "No",
-   "price": 0.8,
-   "stake": 23.29,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784552316,
@@ -3045,6 +3045,6 @@
    "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 90621.3,
- "updated": 1784580014
+ "missed_pnl": 90597.87,
+ "updated": 1784580409
 }
