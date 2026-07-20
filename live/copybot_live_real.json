@@ -2072,6 +2072,21 @@
  ],
  "missed": [
   {
+   "ts": 1784546096,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "99938107423318996756322333138555738106297484333668883121178163046396546977526",
+   "cond": "0xe3c09d18eefd24731660e6509eee5824ebcbba53f33515b2910b56bf059b3734",
+   "title": "Will South Korea ETF (EWY) hit (HIGH) $166 Week of July 20 2026?",
+   "outcome": "Yes",
+   "price": 0.77,
+   "stake": 2.41,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784528216,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "80568398380615613281811262196000400273657215935776416622694841219164637714912",
@@ -3000,24 +3015,8 @@
    "settled": 1784207301,
    "name": "gkmgkldfmg",
    "exit_price": 0.4527
-  },
-  {
-   "ts": 1784206122,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "6542858065381328138604971534407515790260577773140917193780294419054693674045",
-   "cond": "0x6266a812b672fb0424235909307279a2d4f52ad291b00e4a85767c146d10a2c0",
-   "title": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
-   "outcome": "Team Yandex",
-   "price": 0.56,
-   "stake": 1.0,
-   "reason": "no ask side on the book at copy time",
-   "status": "sold",
-   "pnl": -0.22,
-   "settled": 1784206970,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.4527
   }
  ],
  "missed_pnl": 1052.41,
- "updated": 1784528223
+ "updated": 1784546096
 }
