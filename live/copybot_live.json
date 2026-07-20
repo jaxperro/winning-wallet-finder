@@ -2104,6 +2104,21 @@
  ],
  "missed": [
   {
+   "ts": 1784546090,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "99938107423318996756322333138555738106297484333668883121178163046396546977526",
+   "cond": "0xe3c09d18eefd24731660e6509eee5824ebcbba53f33515b2910b56bf059b3734",
+   "title": "Will South Korea ETF (EWY) hit (HIGH) $166 Week of July 20 2026?",
+   "outcome": "Yes",
+   "price": 0.76,
+   "stake": 10.91,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784542228,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "94721150294315642159523163478678619726456567670111052245574554614840104448926",
@@ -3029,23 +3044,8 @@
    "settled": 1784136460,
    "name": "gkmgkldfmg",
    "exit_price": 0.6712
-  },
-  {
-   "ts": 1784128795,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "36572361863292743525172722296256449344593421343195350786366455281513675169221",
-   "cond": "",
-   "title": "",
-   "outcome": "",
-   "price": 0.44,
-   "stake": 99.83,
-   "reason": "book unreliable (spread 0.09 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
  "missed_pnl": 90608.05,
- "updated": 1784544156
+ "updated": 1784546095
 }
