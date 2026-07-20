@@ -2072,6 +2072,22 @@
  ],
  "missed": [
   {
+   "ts": 1784547096,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "109075623115035500221385426519923794314139178452765641614675281069970878340106",
+   "cond": "0xbcd6e99663f8b2056c91b7a766e084d20cde5bcfd54a97432596633921c02443",
+   "title": "US announces halt in Iran offensive operations by July 21?",
+   "outcome": "No",
+   "price": 0.59,
+   "stake": 2.41,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "sold",
+   "pnl": 0.5,
+   "settled": 1784548310,
+   "name": "0xbadaf319",
+   "exit_price": 0.725
+  },
+  {
    "ts": 1784548182,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "45858479053746616749156519360893482359161569156141079722407137651102212018480",
@@ -2085,21 +2101,6 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784547096,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "109075623115035500221385426519923794314139178452765641614675281069970878340106",
-   "cond": "0xbcd6e99663f8b2056c91b7a766e084d20cde5bcfd54a97432596633921c02443",
-   "title": "US announces halt in Iran offensive operations by July 21?",
-   "outcome": "No",
-   "price": 0.59,
-   "stake": 2.41,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784546096,
@@ -3015,6 +3016,6 @@
    "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 1052.41,
- "updated": 1784548182
+ "missed_pnl": 1052.91,
+ "updated": 1784548311
 }
