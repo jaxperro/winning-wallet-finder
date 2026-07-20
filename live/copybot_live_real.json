@@ -2081,10 +2081,11 @@
    "price": 0.69,
    "stake": 2.41,
    "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "1kto1m"
+   "status": "sold",
+   "pnl": -1.2,
+   "settled": 1784575528,
+   "name": "1kto1m",
+   "exit_price": 0.36
   },
   {
    "ts": 1784563074,
@@ -3021,6 +3022,6 @@
    "exit_price": 0.6578
   }
  ],
- "missed_pnl": 1054.68,
- "updated": 1784573595
+ "missed_pnl": 1053.48,
+ "updated": 1784575528
 }
