@@ -2072,6 +2072,21 @@
  ],
  "missed": [
   {
+   "ts": 1784563074,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "81614773617418907184361485498947350465036514500422317775261099705727224721455",
+   "cond": "0xe23cc6e026b34163169a4add977d8f42f80681ea876f94afb3fa0da09f490c29",
+   "title": "Will the price of Ethereum be between $1,800 and $1,900 on July 20?",
+   "outcome": "No",
+   "price": 0.799,
+   "stake": 2.41,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "won",
+   "pnl": 0.59,
+   "settled": 1784564738,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784548182,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "45858479053746616749156519360893482359161569156141079722407137651102212018480",
@@ -2085,21 +2100,6 @@
    "pnl": -2.44,
    "settled": 1784563875,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784563074,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "81614773617418907184361485498947350465036514500422317775261099705727224721455",
-   "cond": "0xe23cc6e026b34163169a4add977d8f42f80681ea876f94afb3fa0da09f490c29",
-   "title": "Will the price of Ethereum be between $1,800 and $1,900 on July 20?",
-   "outcome": "No",
-   "price": 0.799,
-   "stake": 2.41,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784562365,
@@ -3020,6 +3020,6 @@
    "exit_price": 0.2769
   }
  ],
- "missed_pnl": 1054.09,
- "updated": 1784563875
+ "missed_pnl": 1054.68,
+ "updated": 1784564738
 }
