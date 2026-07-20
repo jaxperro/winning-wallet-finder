@@ -2113,10 +2113,12 @@
    "price": 0.3114,
    "stake": 106.4,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "lost",
-   "pnl": -108.6,
+   "status": "sold",
+   "pnl": -75.31,
    "settled": 1784542996,
-   "name": "1kto1m"
+   "name": "1kto1m",
+   "exit_checked": true,
+   "exit_price": 0.1001
   },
   {
    "ts": 1784528216,
@@ -3044,6 +3046,6 @@
    "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 90574.76,
- "updated": 1784542996
+ "missed_pnl": 90608.05,
+ "updated": 1784544156
 }
