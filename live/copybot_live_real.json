@@ -2084,7 +2084,8 @@
    "status": "won",
    "pnl": 0.59,
    "settled": 1784564738,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1784548182,
@@ -2099,7 +2100,8 @@
    "status": "lost",
    "pnl": -2.44,
    "settled": 1784563875,
-   "name": "BikesAreTheBikes"
+   "name": "BikesAreTheBikes",
+   "exit_checked": true
   },
   {
    "ts": 1784562365,
@@ -3021,5 +3023,5 @@
   }
  ],
  "missed_pnl": 1054.68,
- "updated": 1784564738
+ "updated": 1784565742
 }
