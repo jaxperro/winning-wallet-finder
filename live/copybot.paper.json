@@ -14,7 +14,7 @@
       "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
       "name": "0xbadaf319",
       "class": "volume",
-      "floor": 40.1
+      "floor": 37.05
     },
     {
       "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -26,19 +26,19 @@
       "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
       "name": "1kto1m",
       "class": "volume",
-      "floor": 329.09
+      "floor": 320.1
     },
     {
       "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
       "name": "BikesAreTheBikes",
       "class": "volume",
-      "floor": 224.77
+      "floor": 222.85
     },
     {
       "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
       "name": "AIcAIc",
       "class": "volume",
-      "floor": 341.23
+      "floor": 344.56
     }
   ],
   "follow": {
