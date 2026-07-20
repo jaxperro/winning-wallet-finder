@@ -2104,6 +2104,22 @@
  ],
  "missed": [
   {
+   "ts": 1784572639,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "87122687121608029703081699232336906033160920614329826898705893750616809914369",
+   "cond": "0x075228a9709cdbea4f2ecf8286b1e70e27e18a4e07cc499ccb1c1ea7bdb0bbba",
+   "title": "SPY (SPY) Up or Down on July 20?",
+   "outcome": "Up",
+   "price": 0.69,
+   "stake": 44.8,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "sold",
+   "pnl": -22.29,
+   "settled": 1784575514,
+   "name": "1kto1m",
+   "exit_price": 0.36
+  },
+  {
    "ts": 1784573567,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "83778159848246307298177835560751845581203660912608603239968031176372923069932",
@@ -2117,21 +2133,6 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1784572639,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "87122687121608029703081699232336906033160920614329826898705893750616809914369",
-   "cond": "0x075228a9709cdbea4f2ecf8286b1e70e27e18a4e07cc499ccb1c1ea7bdb0bbba",
-   "title": "SPY (SPY) Up or Down on July 20?",
-   "outcome": "Up",
-   "price": 0.69,
-   "stake": 44.8,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "1kto1m"
   },
   {
    "ts": 1784563071,
@@ -3045,6 +3046,6 @@
    "exit_price": 0.5893
   }
  ],
- "missed_pnl": 90643.59,
- "updated": 1784573572
+ "missed_pnl": 90621.3,
+ "updated": 1784575515
 }
