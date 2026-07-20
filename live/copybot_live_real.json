@@ -2072,6 +2072,21 @@
  ],
  "missed": [
   {
+   "ts": 1784572640,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "87122687121608029703081699232336906033160920614329826898705893750616809914369",
+   "cond": "0x075228a9709cdbea4f2ecf8286b1e70e27e18a4e07cc499ccb1c1ea7bdb0bbba",
+   "title": "SPY (SPY) Up or Down on July 20?",
+   "outcome": "Up",
+   "price": 0.69,
+   "stake": 2.41,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1784563074,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "81614773617418907184361485498947350465036514500422317775261099705727224721455",
@@ -3004,24 +3019,8 @@
    "settled": 1784289902,
    "name": "gkmgkldfmg",
    "exit_price": 0.6578
-  },
-  {
-   "ts": 1784288268,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "49357014671746556855560755614469742325519994297167600840929876681819057732694",
-   "cond": "0xf9640023159d57007d91bf9f077c1bdedb11c2b9d9a26d750f7d3db79307ba39",
-   "title": "Dota 2: Team Falcons vs Vici Gaming - Game 1 Winner",
-   "outcome": "Vici Gaming",
-   "price": 0.3726,
-   "stake": 2.45,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -0.71,
-   "settled": 1784288596,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.2769
   }
  ],
  "missed_pnl": 1054.68,
- "updated": 1784565742
+ "updated": 1784572640
 }
