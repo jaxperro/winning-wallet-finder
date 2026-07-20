@@ -16189,8 +16189,8 @@
       "name": "0xbadaf319"
     }
   ],
-  "feed_sig": "a565b03fa87b6a09e50232af8a0d18d8",
-  "feed_pushed_at": 1784557345.4638844,
+  "feed_sig": "c044041b81af230697d6cebceabab398",
+  "feed_pushed_at": 1784557734.3341062,
   "adjustments": [
     {
       "ts": 1783906689,
@@ -16243,7 +16243,7 @@
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784535228,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784472576,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784548879,
-    "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784556190
+    "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784557816
   },
   "boot": {
     "id": "716373f1bb74",
