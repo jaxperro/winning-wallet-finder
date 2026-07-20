@@ -2104,6 +2104,51 @@
  ],
  "missed": [
   {
+   "ts": 1784507597,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "78980297018571400404799403103137601328646521882772163061763690804240957815229",
+   "cond": "0xcda1cbf4da6814c6c842870769e5af7a27e87572ee043ffbaa68a2f7fab7d323",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $140 Week of July 20 2026?",
+   "outcome": "Yes",
+   "price": 0.4074,
+   "stake": 106.32,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1784507597,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "42533251363336805162348806087988408831791767490089792227520004048407304797610",
+   "cond": "0x5548deff712d5250f021e0983e99e251b97f74f9291c24e45673fa0c0244d38f",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $138 Week of July 20 2026?",
+   "outcome": "No",
+   "price": 0.5299,
+   "stake": 106.32,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1784507597,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "28798051369308638598820548419525548679775617348292003491362631387640436001598",
+   "cond": "0xcda1cbf4da6814c6c842870769e5af7a27e87572ee043ffbaa68a2f7fab7d323",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $140 Week of July 20 2026?",
+   "outcome": "No",
+   "price": 0.3073,
+   "stake": 68.62,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784506885,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "90827395403667708709418040026017872248338498816541474972448341541535842153246",
@@ -3000,55 +3045,8 @@
    "settled": 1784031064,
    "name": "gkmgkldfmg",
    "exit_price": 0.5363
-  },
-  {
-   "ts": 1783965172,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "68863380862470769473817017624526026576800718695897153538391077057952557372819",
-   "cond": "0x67d054d9a655ca606802150b8850a07e611c10364de253187869e9d2d0cdfadc",
-   "title": "Set Handicap: Giese/Rafiq (-1.5) vs Ayeni/Chopra (+1.5)",
-   "outcome": "Ayeni/Chopra",
-   "price": 0.7,
-   "stake": 93.91,
-   "reason": "book unreliable (spread 0.29 > 0.08)",
-   "status": "refund",
-   "pnl": -27.68,
-   "settled": 1783997372,
-   "name": "Kruto2027",
-   "exit_checked": true
-  },
-  {
-   "ts": 1783933772,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "59710612631848725344763865983471814895562224915658392985168656890608650443974",
-   "cond": "0x1d608eeaf0869a3f906ed50c0340d97a592f9cdcdf7b475524de5d75d847eec8",
-   "title": "WTI Crude Oil (WTI) closes above $76 on July 13?",
-   "outcome": "No",
-   "price": 0.8899,
-   "stake": 54.54,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -0.98,
-   "settled": 1783948920,
-   "name": "0xbadaf319",
-   "exit_price": 0.88
-  },
-  {
-   "ts": 1783942543,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "25252139719387305389090759227041579550456702736511482208905350724277919018200",
-   "cond": "0x1121a02fc780ddeb79cf91cdf2fea0a7dc2a8eb91a8643e86a4a415ab519ab90",
-   "title": "Will the Houthis successfully target shipping by August 31, 2026?",
-   "outcome": "Yes",
-   "price": 0.28,
-   "stake": 91.41,
-   "reason": "book unreliable (spread 0.16 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": 90683.36,
- "updated": 1784506885
+ "updated": 1784507601
 }
