@@ -2104,6 +2104,22 @@
  ],
  "missed": [
   {
+   "ts": 1784493015,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "33752982532314842955867034258985568949958761450943043689987049583448528253590",
+   "cond": "0x8240c24b4ac5c954241ee6a10cffc627abf676d88b9d7de5b034c2f7c060b00a",
+   "title": "Bab el-Mandeb Strait effectively closed by July 31?",
+   "outcome": "No",
+   "price": 0.882,
+   "stake": 105.73,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "sold",
+   "pnl": -47.07,
+   "settled": 1784583337,
+   "name": "BikesAreTheBikes",
+   "exit_price": 0.5
+  },
+  {
    "ts": 1784562364,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "103988361056715557688108806696666000436932711957896745224025885715803818393567",
@@ -2444,21 +2460,6 @@
    "settled": 1784498079,
    "name": "0xbadaf319",
    "exit_price": 0.74
-  },
-  {
-   "ts": 1784493015,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "33752982532314842955867034258985568949958761450943043689987049583448528253590",
-   "cond": "0x8240c24b4ac5c954241ee6a10cffc627abf676d88b9d7de5b034c2f7c060b00a",
-   "title": "Bab el-Mandeb Strait effectively closed by July 31?",
-   "outcome": "No",
-   "price": 0.882,
-   "stake": 105.73,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784492349,
@@ -3046,6 +3047,6 @@
    "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 90597.87,
- "updated": 1784581392
+ "missed_pnl": 90550.8,
+ "updated": 1784583339
 }
