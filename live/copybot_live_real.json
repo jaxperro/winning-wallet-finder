@@ -2072,6 +2072,23 @@
  ],
  "missed": [
   {
+   "ts": 1784546096,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "99938107423318996756322333138555738106297484333668883121178163046396546977526",
+   "cond": "0xe3c09d18eefd24731660e6509eee5824ebcbba53f33515b2910b56bf059b3734",
+   "title": "Will South Korea ETF (EWY) hit (HIGH) $166 Week of July 20 2026?",
+   "outcome": "Yes",
+   "price": 0.77,
+   "stake": 2.41,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "sold",
+   "pnl": 0.18,
+   "settled": 1784555993,
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.8369
+  },
+  {
    "ts": 1784506363,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "27385644035915002110547363484247121532744022000859958113912667466557544439681",
@@ -2081,10 +2098,12 @@
    "price": 0.52,
    "stake": 2.41,
    "reason": "thin book ($36 within 5c < $50)",
-   "status": "won",
-   "pnl": 2.19,
+   "status": "sold",
+   "pnl": 2.08,
    "settled": 1784555605,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.9768
   },
   {
    "ts": 1784552313,
@@ -2131,21 +2150,6 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784546096,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "99938107423318996756322333138555738106297484333668883121178163046396546977526",
-   "cond": "0xe3c09d18eefd24731660e6509eee5824ebcbba53f33515b2910b56bf059b3734",
-   "title": "Will South Korea ETF (EWY) hit (HIGH) $166 Week of July 20 2026?",
-   "outcome": "Yes",
-   "price": 0.77,
-   "stake": 2.41,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784528216,
@@ -3016,6 +3020,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 1055.1,
- "updated": 1784555708
+ "missed_pnl": 1055.17,
+ "updated": 1784556066
 }
