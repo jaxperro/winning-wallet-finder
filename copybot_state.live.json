@@ -16168,10 +16168,11 @@
       "price": 0.31,
       "stake": 2.41,
       "reason": "thin book ($35 within 5c < $50)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "BikesAreTheBikes"
+      "status": "sold",
+      "pnl": 1.36,
+      "settled": 1784558001,
+      "name": "BikesAreTheBikes",
+      "exit_price": 0.4991
     },
     {
       "ts": 1784557345,
@@ -16190,7 +16191,7 @@
     }
   ],
   "feed_sig": "c044041b81af230697d6cebceabab398",
-  "feed_pushed_at": 1784557734.3341062,
+  "feed_pushed_at": 1784557862.3731964,
   "adjustments": [
     {
       "ts": 1783906689,

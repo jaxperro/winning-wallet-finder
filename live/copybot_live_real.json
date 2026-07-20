@@ -2072,6 +2072,22 @@
  ],
  "missed": [
   {
+   "ts": 1784552313,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "44447031562738174918016769793991804433486269578769473189935766976836636647978",
+   "cond": "0x7e045734da5d2a0743da450cc5cff8e2c1e1298a9731f7fbadd7c13823c5c79c",
+   "title": "China x Philippines military clash before 2027?",
+   "outcome": "Yes",
+   "price": 0.31,
+   "stake": 2.41,
+   "reason": "thin book ($35 within 5c < $50)",
+   "status": "sold",
+   "pnl": 1.36,
+   "settled": 1784558001,
+   "name": "BikesAreTheBikes",
+   "exit_price": 0.4991
+  },
+  {
    "ts": 1784557345,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "67913011466625262359588841481742993497498081452195278087275807248301608894093",
@@ -2119,21 +2135,6 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.9768
-  },
-  {
-   "ts": 1784552313,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "44447031562738174918016769793991804433486269578769473189935766976836636647978",
-   "cond": "0x7e045734da5d2a0743da450cc5cff8e2c1e1298a9731f7fbadd7c13823c5c79c",
-   "title": "China x Philippines military clash before 2027?",
-   "outcome": "Yes",
-   "price": 0.31,
-   "stake": 2.41,
-   "reason": "thin book ($35 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784547096,
@@ -3020,6 +3021,6 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 1055.17,
- "updated": 1784557821
+ "missed_pnl": 1056.53,
+ "updated": 1784558002
 }
