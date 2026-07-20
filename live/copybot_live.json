@@ -2104,6 +2104,21 @@
  ],
  "missed": [
   {
+   "ts": 1784547091,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "109075623115035500221385426519923794314139178452765641614675281069970878340106",
+   "cond": "",
+   "title": "",
+   "outcome": "",
+   "price": 0.59,
+   "stake": 43.58,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784546090,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "99938107423318996756322333138555738106297484333668883121178163046396546977526",
@@ -3028,24 +3043,8 @@
    "settled": 1784138394,
    "name": "gkmgkldfmg",
    "exit_price": 0.8937
-  },
-  {
-   "ts": 1784136108,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "75636274443607445614938470591337628868615181893893587977168160999705149850480",
-   "cond": "0x7446c13b91bf8ece3c07cb6127008ff534ab2853dd3cd31dce5a1452367b461a",
-   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
-   "outcome": "Vici Gaming",
-   "price": 0.65,
-   "stake": 101.24,
-   "reason": "price moved 0.57\u21920.65",
-   "status": "sold",
-   "pnl": 1.21,
-   "settled": 1784136460,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.6712
   }
  ],
  "missed_pnl": 90608.05,
- "updated": 1784546095
+ "updated": 1784547096
 }
