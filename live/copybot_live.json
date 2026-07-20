@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 106.32,
+ "stake": 106.4,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1708.72,
- "deployed": 949.17,
+ "cash": 1714.14,
+ "deployed": 945.88,
  "reserve": 0.0,
- "realized": 1657.86,
+ "realized": 1659.99,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 17,
@@ -3046,5 +3046,5 @@
   }
  ],
  "missed_pnl": 90683.36,
- "updated": 1784533177
+ "updated": 1784538729
 }
