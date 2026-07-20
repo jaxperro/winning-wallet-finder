@@ -2072,6 +2072,21 @@
  ],
  "missed": [
   {
+   "ts": 1784548182,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "45858479053746616749156519360893482359161569156141079722407137651102212018480",
+   "cond": "0x7e045734da5d2a0743da450cc5cff8e2c1e1298a9731f7fbadd7c13823c5c79c",
+   "title": "China x Philippines military clash before 2027?",
+   "outcome": "No",
+   "price": 0.53,
+   "stake": 2.41,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "lost",
+   "pnl": -2.44,
+   "settled": 1784563875,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784563074,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "81614773617418907184361485498947350465036514500422317775261099705727224721455",
@@ -2181,21 +2196,6 @@
    "settled": 1784548310,
    "name": "0xbadaf319",
    "exit_price": 0.725
-  },
-  {
-   "ts": 1784548182,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "45858479053746616749156519360893482359161569156141079722407137651102212018480",
-   "cond": "0x7e045734da5d2a0743da450cc5cff8e2c1e1298a9731f7fbadd7c13823c5c79c",
-   "title": "China x Philippines military clash before 2027?",
-   "outcome": "No",
-   "price": 0.53,
-   "stake": 2.41,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784528216,
@@ -3020,6 +3020,6 @@
    "exit_price": 0.2769
   }
  ],
- "missed_pnl": 1056.53,
- "updated": 1784563074
+ "missed_pnl": 1054.09,
+ "updated": 1784563875
 }
