@@ -2104,6 +2104,21 @@
  ],
  "missed": [
   {
+   "ts": 1784506885,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "90827395403667708709418040026017872248338498816541474972448341541535842153246",
+   "cond": "0xf8b37bd6e5060608e44b34843a2c8ada940c2b62beb1a26fc01088921a70e25b",
+   "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $152 Week of July 20 2026?",
+   "outcome": "No",
+   "price": 0.57,
+   "stake": 61.92,
+   "reason": "thin book ($34 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784506708,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "47220780654207130900897946624720002557366582763680292491834518691726158359185",
@@ -3032,24 +3047,8 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1783918704,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "70962318786911412106087113936707965213554584784375688261632728234676581794613",
-   "cond": "0xec6a9c47b73a00f12acbd46e137a9e5da64224be4efdbfea479d64261a44d52f",
-   "title": "Will Palantir Technologies Inc. (PLTR) hit (LOW) $102 in July?",
-   "outcome": "No",
-   "price": 0.7929,
-   "stake": 49.84,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -2.1,
-   "settled": 1783936411,
-   "name": "0xbadaf319",
-   "exit_price": 0.7698
   }
  ],
  "missed_pnl": 90683.36,
- "updated": 1784506709
+ "updated": 1784506885
 }
