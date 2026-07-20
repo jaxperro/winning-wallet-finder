@@ -39,11 +39,11 @@
  },
  "floors": {
   "Kruto2027": 80.0,
-  "0xbadaf319": 40.1,
+  "0xbadaf319": 37.05,
   "gkmgkldfmg": 470.51,
-  "1kto1m": 329.09,
-  "BikesAreTheBikes": 224.77,
-  "AIcAIc": 341.23
+  "1kto1m": 320.1,
+  "BikesAreTheBikes": 222.85,
+  "AIcAIc": 344.56
  },
  "bets": [
   {
@@ -2104,6 +2104,21 @@
  ],
  "missed": [
   {
+   "ts": 1784573567,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "83778159848246307298177835560751845581203660912608603239968031176372923069932",
+   "cond": "0xf649be9e9c5ce3df0834e80690ee19f9696db9ee7c4b742b06cd3a84167c8a3d",
+   "title": "Will Lambda's valuation hit (HIGH) $8.5B by July 31?",
+   "outcome": "No",
+   "price": 0.75,
+   "stake": 37.5,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784572639,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "87122687121608029703081699232336906033160920614329826898705893750616809914369",
@@ -3028,24 +3043,8 @@
    "settled": 1784207612,
    "name": "gkmgkldfmg",
    "exit_price": 0.5893
-  },
-  {
-   "ts": 1784206122,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "6542858065381328138604971534407515790260577773140917193780294419054693674045",
-   "cond": "0x6266a812b672fb0424235909307279a2d4f52ad291b00e4a85767c146d10a2c0",
-   "title": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
-   "outcome": "Team Yandex",
-   "price": 0.56,
-   "stake": 103.89,
-   "reason": "no ask side on the book at copy time",
-   "status": "sold",
-   "pnl": -22.66,
-   "settled": 1784206970,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.4527
   }
  ],
  "missed_pnl": 90643.59,
- "updated": 1784573353
+ "updated": 1784573572
 }
