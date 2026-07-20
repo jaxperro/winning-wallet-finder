@@ -1,0 +1,37 @@
+{
+ "grid": {
+  "0.04": {
+   "events": 6169,
+   "fills": 26,
+   "misses": 5292,
+   "pending": 851,
+   "ev_per_fill": 12.39,
+   "hit": 0.577,
+   "pnl": 322.14
+  },
+  "0.07": {
+   "events": 4225,
+   "fills": 16,
+   "misses": 3781,
+   "pending": 428,
+   "ev_per_fill": 2.29,
+   "hit": 0.5,
+   "pnl": 36.72
+  },
+  "0.1": {
+   "events": 3151,
+   "fills": 11,
+   "misses": 2885,
+   "pending": 255,
+   "ev_per_fill": -31.03,
+   "hit": 0.455,
+   "pnl": -341.28
+  }
+ },
+ "frozen_edge": null,
+ "n_universe": 8264,
+ "tick_lo": 1784490952.0,
+ "our_fills_graded": [],
+ "frozen_at": "2026-07-20 21:21 UTC",
+ "note": "NO holdout exists (21h ticks) \u2014 belief deferred entirely to forward_ledger"
+}

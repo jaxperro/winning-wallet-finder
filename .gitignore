@@ -44,3 +44,7 @@ live/slug_cache.json
 archive/local/
 live/edge_verdict.txt
 live/rtds.duckdb
+research/forward.log
+research/launchd.log
+research/.nightly.lock.d
+research/__pycache__/
