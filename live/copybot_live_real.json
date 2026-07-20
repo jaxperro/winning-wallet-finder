@@ -2072,6 +2072,21 @@
  ],
  "missed": [
   {
+   "ts": 1784579984,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "44886536523187194068204780081456530701237321244412931776973158233298351926383",
+   "cond": "",
+   "title": "",
+   "outcome": "",
+   "price": 0.68,
+   "stake": 2.41,
+   "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784572640,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "87122687121608029703081699232336906033160920614329826898705893750616809914369",
@@ -3004,24 +3019,8 @@
    "settled": 1784293824,
    "name": "gkmgkldfmg",
    "exit_price": 0.3572
-  },
-  {
-   "ts": 1784289696,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "49357014671746556855560755614469742325519994297167600840929876681819057732694",
-   "cond": "0xf9640023159d57007d91bf9f077c1bdedb11c2b9d9a26d750f7d3db79307ba39",
-   "title": "Dota 2: Team Falcons vs Vici Gaming - Game 1 Winner",
-   "outcome": "Vici Gaming",
-   "price": 0.77,
-   "stake": 2.45,
-   "reason": "price moved 0.67\u21920.77",
-   "status": "sold",
-   "pnl": -0.4,
-   "settled": 1784289902,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.6578
   }
  ],
  "missed_pnl": 1053.48,
- "updated": 1784579463
+ "updated": 1784580048
 }
