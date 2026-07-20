@@ -2072,6 +2072,21 @@
  ],
  "missed": [
   {
+   "ts": 1784563074,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "81614773617418907184361485498947350465036514500422317775261099705727224721455",
+   "cond": "0xe23cc6e026b34163169a4add977d8f42f80681ea876f94afb3fa0da09f490c29",
+   "title": "Will the price of Ethereum be between $1,800 and $1,900 on July 20?",
+   "outcome": "No",
+   "price": 0.799,
+   "stake": 2.41,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784562365,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "103988361056715557688108806696666000436932711957896745224025885715803818393567",
@@ -3003,24 +3018,8 @@
    "settled": 1784288596,
    "name": "gkmgkldfmg",
    "exit_price": 0.2769
-  },
-  {
-   "ts": 1784282642,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "89931707622153123477324295539885211618444747121850482137781459507217585245391",
-   "cond": "0xd7691a148f8d595e68f8b97b26d47dd26ae5f33e4a94d6bcd250fc6311c65e8b",
-   "title": "BNB Up or Down - July 17, 6:00AM-6:05AM ET",
-   "outcome": "Up",
-   "price": 0.63,
-   "stake": 2.45,
-   "reason": "price moved 0.57\u21920.63",
-   "status": "sold",
-   "pnl": 0.62,
-   "settled": 1784282785,
-   "name": "1kto1m",
-   "exit_price": 0.8015
   }
  ],
  "missed_pnl": 1056.53,
- "updated": 1784562369
+ "updated": 1784563074
 }
