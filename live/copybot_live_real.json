@@ -2088,7 +2088,8 @@
    "status": "won",
    "pnl": 0.5,
    "settled": 1784649099,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1784148364,
@@ -2100,10 +2101,12 @@
    "price": 0.705,
    "stake": 1.0,
    "reason": "book unreliable (spread 0.10 > 0.08)",
-   "status": "won",
-   "pnl": 0.41,
+   "status": "sold",
+   "pnl": 0.28,
    "settled": 1784649099,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.908
   },
   {
    "ts": 1784626586,
@@ -3023,6 +3026,6 @@
    "exit_price": 0.884
   }
  ],
- "missed_pnl": 1173.78,
- "updated": 1784649101
+ "missed_pnl": 1173.65,
+ "updated": 1784650965
 }
