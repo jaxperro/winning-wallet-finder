@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 44.34,
- "deployed": 16.75,
+ "cash": 41.84,
+ "deployed": 19.23,
  "reserve": 0.0,
- "realized": -14.77,
+ "realized": -14.79,
  "adjustments": 9.44,
- "ledger_drift": 0.0,
- "open_count": 10,
- "fees_paid": 2.84,
+ "ledger_drift": -0.0,
+ "open_count": 11,
+ "fees_paid": 2.86,
  "fee_rate": 0.03,
  "lag": {
-  "n": 99,
-  "n24": 3,
-  "avg_s": 13.1,
-  "avg_slip_pct": 0.0156,
+  "n": 100,
+  "n24": 4,
+  "avg_s": 11.7,
+  "avg_slip_pct": 0.0188,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 341.23
  },
  "bets": [
+  {
+   "token": "48393982087831129899183531478832099653074965669965652679356454634407980114693",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "BIG",
+   "title": "LoL: E WIE EINFACH E-SPORTS vs BIG - Game 1 Winner",
+   "their_price": 0.7,
+   "my_price": 0.72,
+   "slippage_pct": 0.0286,
+   "lag_s": 7.5,
+   "shares": 3.44,
+   "cost": 2.47,
+   "fee": 0.02,
+   "opened": 1784653424,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "20484110521571350875001435184260822941122652573371898844393462992759163157997",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2053,25 +2072,6 @@
    "pnl": 2.18,
    "settled": 1783699592,
    "note": "reconstructed 2026-07-10: in-play 'delayed' acceptance mis-read as rejection; order filled untracked"
-  },
-  {
-   "token": "1161663761026248928741317236361093152095776065309269380062540556077381245572",
-   "wallet": "0x1d0034ac09da54ba7ec969d1eb756b0a1df475c5",
-   "name": "AIcAIc",
-   "outcome": "G2 Esports",
-   "title": "LoL: G2 Esports vs LYON - Game 2 Winner",
-   "their_price": 0.64,
-   "my_price": 0.64,
-   "slippage_pct": 0.0,
-   "shares": 7.81,
-   "cost": 5.0,
-   "fee": 0.08,
-   "opened": 1783674610,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -5.0844,
-   "settled": 1783697039,
-   "note": "reconstructed 2026-07-10: in-play 'delayed' acceptance mis-read as rejection; order filled untracked"
   }
  ],
  "missed": [
@@ -3027,5 +3027,5 @@
   }
  ],
  "missed_pnl": 1173.65,
- "updated": 1784650965
+ "updated": 1784653431
 }
