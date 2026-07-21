@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 106.36,
+ "stake": 106.34,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1592.31,
- "deployed": 1066.6,
+ "cash": 1529.41,
+ "deployed": 1129.05,
  "reserve": 0.0,
- "realized": 1658.88,
+ "realized": 1658.43,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 19,
- "fees_paid": 320.68,
+ "open_count": 20,
+ "fees_paid": 321.13,
  "fee_rate": 0.03,
  "lag": {
-  "n": 208,
-  "n24": 2,
-  "avg_s": 15.5,
-  "avg_slip_pct": 0.013,
+  "n": 209,
+  "n24": 3,
+  "avg_s": 10.6,
+  "avg_slip_pct": -0.0003,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 344.56
  },
  "bets": [
+  {
+   "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Opensea FDV above $500M one day after launch?",
+   "their_price": 0.782,
+   "my_price": 0.761,
+   "slippage_pct": -0.0269,
+   "lag_s": 0.8,
+   "shares": 82.07,
+   "cost": 62.46,
+   "fee": 0.45,
+   "opened": 1784610028,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "48409467751286486665938959009701710014426367960633333378105361988315138136571",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2078,26 +2097,6 @@
    "settled": 1783866067,
    "sold_shares": 126.98,
    "sold_proceeds": 124.75
-  },
-  {
-   "token": "99894914207898514284631305777217402140704104471002518113888183892335214453642",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "OG",
-   "title": "Dota 2: OG vs Virtus.pro - Game 2 Winner",
-   "their_price": 0.52,
-   "my_price": 0.5,
-   "slippage_pct": -0.0385,
-   "shares": 188.05,
-   "cost": 94.02,
-   "fee": 1.41,
-   "opened": 1783864399,
-   "status": "closed",
-   "exit_price": 0.4027,
-   "pnl": -19.69,
-   "settled": 1783866042,
-   "sold_shares": 188.05,
-   "sold_proceeds": 75.74
   }
  ],
  "missed": [
@@ -3046,5 +3045,5 @@
   }
  ],
  "missed_pnl": 90550.8,
- "updated": 1784597521
+ "updated": 1784610034
 }
