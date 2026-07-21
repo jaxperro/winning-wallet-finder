@@ -28,4 +28,6 @@ Layout:
   requote.py       crater→requote timing measurement (retry tuning)
   forward.py       scores frozen studies on new tape days → forward_ledger.jsonl
   params/          frozen study parameters (committed = frozen)
-  nightly.sh       manual/launchd runner (separate from daily.sh)
+  nightly.sh       launchd runner (fires 09:15, then WAITS for fresh tape —
+                   Stage 0 keeps the tape ~15-min fresh whenever the Mac is
+                   awake; deadline 8h, then scores anyway and logs staleness)

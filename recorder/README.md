@@ -2,10 +2,11 @@
 
 Third silo: records **everything Polymarket's real-time socket emits** —
 every trade, every order match (the maker side of each fill), every market
-comment, every crypto price tick — into a durable, downloadable archive.
-~8M events/day, ~$5-6/month all-in. No keys, no repo clone (code baked into
-the image), no shared anything with the trading bots: a recorder crash can
-never touch trading, a bot deploy can never gap the tape.
+comment, every crypto price tick — into a durable, queryable archive.
+~8M events/day, ~$10/month all-in (1GB VM + volume). No keys, no repo
+clone (code baked into the image), no shared anything with the trading
+bots: a recorder crash can never touch trading, a bot deploy can never gap
+the tape.
 
 ## Capture design (why it's ~complete)
 
@@ -59,12 +60,18 @@ name) as sync_tape, so the two can never double-insert.
 ## Ops
 
 ```bash
-flyctl logs -a wwf-recorder --no-tail          # "tape: N trades/min · aux …"
-python3 recorder/ingest.py                     # manual pull any time
+flyctl logs -a wwf-recorder --no-tail          # capture: "tape: N trades/min"
+flyctl logs -a wwf-recorder --no-tail | grep '\[fold\]'   # fold health
+python3 recorder/sync_tape.py                  # manual mirror pull any time
+                                               # (launchd does it every 15 min)
 flyctl deploy --remote-only -c fly.recorder.toml -a wwf-recorder --ha=false
                                                # ANY code change = image rebuild
+                                               # (~30-60s capture gap — deploy rarely)
 flyctl ssh console -a wwf-recorder -C "df -h /data"   # volume headroom
 ```
 
-Storage: rtds.duckdb grows ~0.5-0.8GB/day on the Mac (~20GB/mo; 1.4TB free
-as of 2026-07-19 — revisit around the ~100GB mark: Parquet-spool old months).
+Storage: parquet ~250-400MB/day on both the volume and the Mac mirror
+(`live/parquet/`); rtds.duckdb adds ~0.5-0.8GB/day on the Mac. The mirror
+IS the Stage-1 warehouse feedstock (MotherDuck/ClickHouse = a load job,
+not a migration); if local disk ever matters, old mirror partitions can be
+cold-stored — they are immutable and manifest-indexed.

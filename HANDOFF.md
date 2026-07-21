@@ -23,10 +23,11 @@ REOPENED #4: the redeemer's phantom-cash BOOBY TRAP is fixed + proven
 Builder API Key (SDK gasless relay) the runtime bot deliberately lacks —
 LOW urgency, the platform auto-redeems winners itself. auto_redeem OFF.
 Open now: #1 Signal A, #2 tape research, #4 redeem builder-key, #13 Fri
-bench, #14 edge verdict, #16 surge momentum (forward window OPEN), #17
-oracle fair value (accumulating, nothing frozen). #18 (empty-cond copies
-unsettleable) closed same day: RTDS seed enrichment + falsy-cond repair
-pass + 1h alarm.
+bench, #14 edge verdict, #15 tape-pull batching (Stage-0 fold+mirror
+superseded the bulk path; per-file sftp batching still worth it), #16
+surge momentum (forward window OPEN), #17 oracle fair value (accumulating,
+nothing frozen). #18 (empty-cond copies unsettleable) closed same day:
+RTDS seed enrichment + falsy-cond repair pass + 1h alarm.
 
 ## Operating boundary (user, 2026-07-13 — standing)
 **Full autonomy on the bots**; the real-money bot **stays ARMED**. Never
@@ -37,7 +38,7 @@ min_order_usd $1 = venue reality). If something looks genuinely dangerous,
 DISARM (`flyctl secrets unset LIVE_CONFIRM -a wwf-copybot-live`) rather than
 push through.
 
-## Snapshot (2026-07-19)
+## Snapshot (2026-07-21)
 - **wwf-copybot-live** (REAL, ARMED): ~$62 equity ($66.42 contributed,
   realized −$12.17 lifetime — day-one incident + honest recognitions),
   6-wallet Set E rev 4, 4% of working equity/bet, alarm-free after the
@@ -75,13 +76,17 @@ push through.
   #16/#17 forward thresholds (in their issues).
 - Dashboards: jaxperro.com/{trading,live,value} · daily pipeline on the Mac
   at 08:00 (launchd, lockfile) — floors, bench forward table, edge row,
-  tape ingest, Discord digest · research nightly at 09:15
-  (com.jaxperro.research-nightly → research/nightly.sh, self-commits the
-  forward ledger; remove with `launchctl unload`).
+  tape sync, Discord digest · tape mirror every 15 min
+  (com.jaxperro.tape-sync → recorder/sync_tape.py) · research nightly
+  fires 09:15 then WAITS for fresh tape (com.jaxperro.research-nightly →
+  research/nightly.sh, self-commits the forward ledger). All launchd agents
+  removable with `launchctl unload ~/Library/LaunchAgents/<label>.plist`.
 
 ## Ops quick-reference
 - Follow-set change: edit live/copybot.paper.json → `./live/deploy_bot.sh`;
   mirror config.live.example.json (nothing auto-writes it) + backtest.json.
+- Tape now: `python3 recorder/sync_tape.py` (launchd does it every 15 min);
+  box-side fold health: `flyctl logs -a wwf-recorder` (grep `[fold]`).
 - State surgery: stop the machine, **watch heartbeats actually CEASE**
   (gotcha 15c — and the boot-id guard now makes a zombie writer yield),
   pull → edit → push → start → verify the first heartbeat.
