@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 112.63,
+ "stake": 110.33,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
  "cash": 1803.07,
- "deployed": 1012.64,
+ "deployed": 955.1,
  "reserve": 0.0,
- "realized": 1815.68,
+ "realized": 1758.14,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 17,
+ "open_count": 16,
  "fees_paid": 324.18,
  "fee_rate": 0.03,
  "lag": {
@@ -46,6 +46,25 @@
   "AIcAIc": 344.56
  },
  "bets": [
+  {
+   "token": "6467608425341586311851272664218259937970959338795566500089367688884232468049",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Elon Musk post 140-159 tweets from July 14 to July 21, 2026?",
+   "their_price": 0.43,
+   "my_price": 0.45,
+   "slippage_pct": 0.0465,
+   "lag_s": 5.1,
+   "shares": 127.88,
+   "cost": 57.54,
+   "fee": 0.95,
+   "opened": 1784586251,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -58.49,
+   "settled": 1784658052
+  },
   {
    "token": "48393982087831129899183531478832099653074965669965652679356454634407980114693",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -201,25 +220,6 @@
    "cost": 63.17,
    "fee": 0.17,
    "opened": 1784595886,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
-   "token": "6467608425341586311851272664218259937970959338795566500089367688884232468049",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will Elon Musk post 140-159 tweets from July 14 to July 21, 2026?",
-   "their_price": 0.43,
-   "my_price": 0.45,
-   "slippage_pct": 0.0465,
-   "lag_s": 5.1,
-   "shares": 127.88,
-   "cost": 57.54,
-   "fee": 0.95,
-   "opened": 1784586251,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -3105,13 +3105,13 @@
    "last_ts": 1784472579
   },
   "BikesAreTheBikes": {
-   "realized": 58.32,
-   "n": 5,
+   "realized": -0.17,
+   "n": 6,
    "wins": 1,
-   "open_cost": 659.73,
-   "open_n": 8,
-   "last_ts": 1784649072
+   "open_cost": 602.19,
+   "open_n": 7,
+   "last_ts": 1784658052
   }
  },
- "updated": 1784657990
+ "updated": 1784658056
 }
