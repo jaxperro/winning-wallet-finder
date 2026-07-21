@@ -2100,6 +2100,21 @@
  ],
  "missed": [
   {
+   "ts": 1784628735,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "31798323952461961650983638405389053740930972138111089234409584277872747279143",
+   "cond": "0x6acdc3316f0b43ca4fbc13623fc018e30f2fd20ae7b93bdc07c8193e99b0ac4d",
+   "title": "Israel x Iran ceasefire continues through August 15?",
+   "outcome": "No",
+   "price": 0.42,
+   "stake": 80.77,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784626586,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "54923619943837902531413944505673826869865789371722858311579457498438152585454",
@@ -3025,24 +3040,8 @@
    "settled": 1784293574,
    "name": "gkmgkldfmg",
    "exit_price": 0.3572
-  },
-  {
-   "ts": 1784288939,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "49357014671746556855560755614469742325519994297167600840929876681819057732694",
-   "cond": "0xf9640023159d57007d91bf9f077c1bdedb11c2b9d9a26d750f7d3db79307ba39",
-   "title": "Dota 2: Team Falcons vs Vici Gaming - Game 1 Winner",
-   "outcome": "Vici Gaming",
-   "price": 0.42,
-   "stake": 104.81,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "sold",
-   "pnl": 55.83,
-   "settled": 1784289655,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.6578
   }
  ],
  "missed_pnl": 90550.8,
- "updated": 1784626611
+ "updated": 1784628793
 }
