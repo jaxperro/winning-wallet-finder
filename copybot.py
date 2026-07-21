@@ -962,9 +962,38 @@ class Copybot:
         self.fak_retry_niche = {
             k: float(v) for k, v in {**FAK_RETRY_NICHE_DEFAULT,
                                      **(cfg.get("fak_retry_niche_s") or {})}.items()}
+        # append-only history spools (2026-07-21 full-history feed): rows
+        # trimmed out of state (bets >30d via _spool_old_bets, missed past
+        # the 200 cap via engine.on_miss_spool) land here and keep feeding
+        # the *_full.json companion feed + lifetime wallet_pnl rollup.
+        self.bets_archive = self.fill_log.replace("fills", "bets_archive")
+        self.missed_archive = self.fill_log.replace("fills", "missed_archive")
 
     def _fak_wait(self, title):
         return self.fak_retry_niche.get(market_niche(title), self.fak_retry_s)
+
+    def spool_missed(self, rows):
+        """engine.on_miss_spool hook: archive rows trimmed off state.missed
+        (display name stamped now — the archive never sees write_feed)."""
+        with open(os.path.join(self.here, self.missed_archive), "a") as fh:
+            for m in rows:
+                m["name"] = self.names.get((m.get("wallet") or "").lower(),
+                                           (m.get("wallet") or "")[:10])
+                fh.write(json.dumps(m) + "\n")
+        log(f"spooled {len(rows)} missed rows → {self.missed_archive}")
+
+    def _load_archive(self, path):
+        rows = []
+        try:
+            with open(os.path.join(self.here, path)) as fh:
+                for ln in fh:
+                    try:
+                        rows.append(json.loads(ln))
+                    except Exception:
+                        pass
+        except FileNotFoundError:
+            pass
+        return rows
 
     def _backfill_lag_recent(self, window_s=86400):
         """[[ts, lag_s, slip], …] for fills in the last window_s, read from the
@@ -1004,6 +1033,15 @@ class Copybot:
                 f["fee"] = round(fee, 4)
                 self.engine.state["cash"] += sign * f["shares"] * f["price"] - fee
                 self.engine.state["fees_paid"] = self.engine.state.get("fees_paid", 0.0) + fee
+                # bot-health "last trade placed" (2026-07-21 dashboard ask)
+                src = (self.engine.state["my_pos"].get(f["token"])
+                       or self.engine.state.get("bets", {}).get(f["token"]) or {})
+                self.engine.state["last_fill"] = {
+                    "ts": int(time.time()), "side": f["side"],
+                    "price": round(f["price"], 4),
+                    "shares": round(f["shares"], 2),
+                    "title": (src.get("title") or "")[:60],
+                    "outcome": src.get("outcome")}
                 if f["side"] == "BUY":
                     buys.append(f)
                 else:
@@ -1437,7 +1475,33 @@ class Copybot:
                              reverse=True)[:60],
             "missed_pnl": round(sum(m["pnl"] for m in missed
                                     if m.get("pnl") is not None), 2),
+            "last_fill": st.get("last_fill"),
         }
+        # LIFETIME per-wallet rollup by display NAME (wallets change address —
+        # AIcAIc did — and the archives carry rows the state has trimmed).
+        # 2026-07-21: the dashboard cards were silently summing the rolling
+        # window; the -5.62 it showed for AIcAIc was really -15.84 lifetime.
+        arch_bets = self._load_archive(self.bets_archive)
+        arch_missed = self._load_archive(self.missed_archive)
+        all_bets = arch_bets + list(bets.values())
+        wp = {}
+        for b in all_bets:
+            nm = b.get("name") or "?"
+            w = wp.setdefault(nm, {"realized": 0.0, "n": 0, "wins": 0,
+                                   "open_cost": 0.0, "open_n": 0, "last_ts": 0})
+            if b.get("pnl") is not None:
+                w["realized"] += b["pnl"]
+                w["n"] += 1
+                w["wins"] += b.get("status") == "won"
+            elif b.get("status") == "open":
+                w["open_cost"] += b.get("cost") or 0
+                w["open_n"] += 1
+            w["last_ts"] = max(w["last_ts"],
+                               int(b.get("settled") or b.get("opened") or 0))
+        for w in wp.values():
+            w["realized"] = round(w["realized"], 2)
+            w["open_cost"] = round(w["open_cost"], 2)
+        feed["wallet_pnl"] = wp
         # only (re)write — and so only commit — when the meaningful content changed,
         # not on every poll. The "updated" stamp advances only on real change, so the
         # scheduled runner doesn't spam a commit every 5 minutes.
@@ -1451,6 +1515,21 @@ class Copybot:
         tmp = path + ".tmp"
         json.dump(feed, open(tmp, "w"), indent=1)
         os.replace(tmp, path)
+        # the FULL companion feed (dashboard "view all" + per-wallet tabs):
+        # every bet and every miss ever — state + spooled archives. Written
+        # only when the main feed changed (same sig gate).
+        full = {"mode": feed["mode"], "updated": feed["updated"],
+                "wallet_pnl": wp,
+                "bets": sorted(all_bets,
+                               key=lambda b: b.get("settled") or b.get("opened") or 0,
+                               reverse=True),
+                "missed": sorted(arch_missed + missed,
+                                 key=lambda m: m.get("settled") or m.get("ts") or 0,
+                                 reverse=True)}
+        fpath = os.path.join(self.here,
+                             self.feed_path.replace(".json", "_full.json"))
+        json.dump(full, open(fpath + ".tmp", "w"), indent=1)
+        os.replace(fpath + ".tmp", fpath)
 
     def publish_feed(self):
         """Commit + push the feed, the state file, and the fills ledger so (a) the
@@ -1482,8 +1561,11 @@ class Copybot:
                 capture_output=True).returncode != 0
             if unchanged and not untracked:
                 return
-            paths = [p for p in (self.feed_path, self.engine.state_path,
-                                 self.fill_log, self.shadow_log)
+            paths = [p for p in (self.feed_path,
+                                 self.feed_path.replace(".json", "_full.json"),
+                                 self.engine.state_path, self.fill_log,
+                                 self.shadow_log, self.bets_archive,
+                                 self.missed_archive)
                      if os.path.exists(os.path.join(repo, p))]
             subprocess.run(["git", "-C", repo, "add", "-f"] + paths, capture_output=True)
             if subprocess.run(["git", "-C", repo, "diff", "--cached", "--quiet"],
@@ -1813,7 +1895,7 @@ class Copybot:
             return
         st = self.engine.state
         cut = time.time() - self.SPOOL_AFTER_S
-        arch = self.fill_log.replace("fills", "bets_archive")
+        arch = self.bets_archive
         with self.lock:
             old = {k: b for k, b in st.get("bets", {}).items()
                    if b.get("pnl") is not None and (b.get("settled") or 0)
@@ -2769,6 +2851,7 @@ def main():
     bot = Copybot(cfg, engine, filt, redeemer=redeemer)
     if bot.fak_retry_s > 0:      # FAK crater misses get one re-quote retry
         engine.on_fak_reject = bot.fak_requote_retry
+    engine.on_miss_spool = bot.spool_missed   # missed history survives the cap
     # single-writer invariant (audit 3.4): every boot stamps the state; a
     # stale process that survived `machine stop` (gotcha 15c) sees a newer
     # boot on origin at publish time and yields instead of overwriting it.

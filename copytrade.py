@@ -280,6 +280,10 @@ class CopyTrader:
         # the copy context when an OPEN's FAK dies unmatched, instead of
         # recording the miss immediately. None = old behavior (miss at once).
         self.on_fak_reject = None
+        # host-installed hook (copybot.Copybot.spool_missed): receives rows
+        # trimmed off state["missed"] so the full-history feed keeps every
+        # skip ever (2026-07-21). None = trimmed rows are simply dropped.
+        self.on_miss_spool = None
 
     # -- helpers --
     def log(self, msg):
@@ -361,7 +365,23 @@ class CopyTrader:
                        "price": round(price or 0, 4), "stake": round(want, 2),
                        "reason": reason, "status": "open", "pnl": None,
                        "settled": None})
-        del missed[:-200]                           # keep the recent 200
+        # cap the STATE copy at 200, spooling the overflow to the host's
+        # archive so history survives (the old flat trim silently deleted).
+        # SETTLED rows spool first — an OPEN miss must stay in state or the
+        # heartbeat's missed-settle pass can never resolve its would-be P&L.
+        if len(missed) > 200:
+            order = sorted(range(len(missed)),
+                           key=lambda i: (missed[i]["status"] == "open",
+                                          missed[i]["ts"]))
+            drop_i = set(order[:len(missed) - 200])
+            drop = [m for i, m in enumerate(missed) if i in drop_i]
+            if self.on_miss_spool is not None:
+                try:
+                    self.on_miss_spool(drop)
+                except Exception:
+                    drop = []               # archive failed: keep rows in state
+            if drop:
+                missed[:] = [m for i, m in enumerate(missed) if i not in drop_i]
 
     def persist(self):
         # newest-5000 by recency (audit 3.8: a set slice kept an ARBITRARY
