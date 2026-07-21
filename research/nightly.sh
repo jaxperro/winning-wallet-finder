@@ -17,11 +17,15 @@ FRESH_S=$((6 * 3600))
 DEADLINE_S=$((8 * 3600))
 POLL_S=900
 
-if ! mkdir .nightly.lock.d 2>/dev/null; then
+# ABSOLUTE lock path: the script cd's to the repo root before the git
+# steps, so a relative trap rmdir missed the dir entirely (2026-07-21 first
+# run: exit 1 + a stale lock that would have skipped every future night).
+LOCK="$(pwd)/.nightly.lock.d"
+if ! mkdir "$LOCK" 2>/dev/null; then
   echo "$(date -u +%FT%TZ) already running — skip" >> forward.log
   exit 0
 fi
-trap 'rmdir .nightly.lock.d' EXIT
+trap 'rmdir "$LOCK"' EXIT
 
 tape_age() {
   "$PY" - <<'EOF'
