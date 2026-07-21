@@ -1423,9 +1423,20 @@ class Copybot:
         cash = st.get("cash", bank)
         lag = st.get("lag", {})
         missed = st.get("missed", [])
-        for m in missed:                            # display names for the feed
-            m["name"] = self.names.get((m.get("wallet") or "").lower(),
-                                       (m.get("wallet") or "")[:10])
+        # display names: current follow set first, then names STORED on bet
+        # records (a retired wallet like LSB1 keeps its name instead of
+        # splitting into an address-prefix twin card — found 2026-07-21 when
+        # per-wallet missed totals landed)
+        arch_bets = self._load_archive(self.bets_archive)
+        arch_missed = self._load_archive(self.missed_archive)
+        all_bets = arch_bets + list(bets.values())
+        addr_names = {(b.get("wallet") or "").lower(): b["name"]
+                      for b in all_bets
+                      if b.get("wallet") and b.get("name")
+                      and not str(b["name"]).startswith("0x")}
+        for m in missed:
+            w = (m.get("wallet") or "").lower()
+            m["name"] = self.names.get(w) or addr_names.get(w) or w[:10]
         feed = {
             "mode": "live" if self.engine.ex.live else "paper",
             "bankroll": bank, "stake": round(self.engine.stake_usd(), 2),
@@ -1481,14 +1492,15 @@ class Copybot:
         # AIcAIc did — and the archives carry rows the state has trimmed).
         # 2026-07-21: the dashboard cards were silently summing the rolling
         # window; the -5.62 it showed for AIcAIc was really -15.84 lifetime.
-        arch_bets = self._load_archive(self.bets_archive)
-        arch_missed = self._load_archive(self.missed_archive)
-        all_bets = arch_bets + list(bets.values())
         wp = {}
+
+        def _w(nm):
+            return wp.setdefault(nm, {"realized": 0.0, "n": 0, "wins": 0,
+                                      "open_cost": 0.0, "open_n": 0,
+                                      "miss_n": 0, "miss_pnl": 0.0,
+                                      "last_ts": 0})
         for b in all_bets:
-            nm = b.get("name") or "?"
-            w = wp.setdefault(nm, {"realized": 0.0, "n": 0, "wins": 0,
-                                   "open_cost": 0.0, "open_n": 0, "last_ts": 0})
+            w = _w(b.get("name") or "?")
             if b.get("pnl") is not None:
                 w["realized"] += b["pnl"]
                 w["n"] += 1
@@ -1498,9 +1510,15 @@ class Copybot:
                 w["open_n"] += 1
             w["last_ts"] = max(w["last_ts"],
                                int(b.get("settled") or b.get("opened") or 0))
+        for m in arch_missed + missed:      # would-be P&L of every skip ever
+            w = _w(m.get("name") or "?")
+            w["miss_n"] += 1
+            if m.get("pnl") is not None:
+                w["miss_pnl"] += m["pnl"]
         for w in wp.values():
             w["realized"] = round(w["realized"], 2)
             w["open_cost"] = round(w["open_cost"], 2)
+            w["miss_pnl"] = round(w["miss_pnl"], 2)
         feed["wallet_pnl"] = wp
         # only (re)write — and so only commit — when the meaningful content changed,
         # not on every poll. The "updated" stamp advances only on real change, so the
