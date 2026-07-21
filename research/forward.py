@@ -162,6 +162,28 @@ def main():
             print(f"oracle {d}: " + (r2.get("skipped") or
                   " ".join(f"E{E}:{g.get('ev_per_fill')}({g['fills']}f)"
                            for E, g in sorted(r2.items()))))
+            # EXPLORATORY arm (2026-07-21, user ask): the same surge signal
+            # on sub-5c longshots, all niches. NOT pre-registered — 20-50x
+            # lottery payoffs mean one hit flips a small sample (first scan:
+            # 31 resolved fills, 4 wins, sign set entirely by two esports
+            # winners), and the sim has no depth model ($100 at 2c = 5,000
+            # shares a longshot book won't hold). Accumulates here until
+            # ~100+ resolved fills exist; only then is a pre-registration
+            # (or a kill) worth writing.
+            band0, nich0 = sf.PRICE_BAND, sf.NICHES
+            try:
+                sf.PRICE_BAND = (0.005, 0.05)
+                sf.NICHES = {"sports", "esports", "tennis", "crypto",
+                             "politics", "geo", "other"}
+                r3 = score_flow(db, {**fz, "flow_usd": 300}, d, cal["hold_s"])
+            finally:
+                sf.PRICE_BAND, sf.NICHES = band0, nich0
+            fh.write(json.dumps({"study": "flow_sub5c_EXPLORATORY", "day": d,
+                                 "computed_at": now, **r3},
+                                default=float) + "\n")
+            print(f"sub5c  {d}: trig {r3['triggers']} "
+                  f"worst {r3['worst'].get('ev_per_fill')} "
+                  f"({r3['worst']['fills']} fills, {r3['worst']['pending']} pend)")
 
 
 if __name__ == "__main__":
