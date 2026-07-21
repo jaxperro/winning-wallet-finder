@@ -1,11 +1,21 @@
 #!/bin/bash
 # research nightly — scores the frozen studies on fresh tape and versions
 # the forward ledger. SILO: touches only research/ (+ the append-only
-# resolutions cache via payouts.py). Runs at 09:15 local via
-# com.jaxperro.research-nightly (after the 08:00 daily pipeline's ingest);
-# safe to run by hand any time: python3 research/forward.py
+# resolutions cache via payouts.py). Fired at 09:15 local by
+# com.jaxperro.research-nightly, but the clock time is advisory: the Mac
+# sleeps and the 08:00 daily pipeline's tape ingest lands whenever it lands
+# (2026-07-21: daily started 09:31 on wake, ingest hours later, and the
+# 09:15 firing both CRASHED on launchd's bare `python3` — no duckdb — and
+# would have scored a stale tape). So: absolute framework python, and WAIT
+# for the tape to be fresh (max ts within FRESH_S of now) before scoring,
+# up to DEADLINE_S; then run anyway and log the staleness.
+# Safe to run by hand any time: bash research/nightly.sh
 set -e
 cd "$(dirname "$0")"
+PY=/Library/Frameworks/Python.framework/Versions/3.11/bin/python3
+FRESH_S=$((6 * 3600))
+DEADLINE_S=$((8 * 3600))
+POLL_S=900
 
 if ! mkdir .nightly.lock.d 2>/dev/null; then
   echo "$(date -u +%FT%TZ) already running — skip" >> forward.log
@@ -13,8 +23,30 @@ if ! mkdir .nightly.lock.d 2>/dev/null; then
 fi
 trap 'rmdir .nightly.lock.d' EXIT
 
-echo "== $(date -u +%FT%TZ) nightly ==" >> forward.log
-python3 forward.py >> forward.log 2>&1
+tape_age() {
+  "$PY" - <<'EOF'
+import duckdb, time
+db = duckdb.connect("../live/rtds.duckdb", read_only=True)
+mx, = db.execute("select max(ts) from trades").fetchone()
+print(int(time.time() - (mx or 0)))
+EOF
+}
+
+start=$(date +%s)
+while true; do
+  age=$(tape_age) || age=999999
+  if [ "$age" -le "$FRESH_S" ]; then
+    echo "== $(date -u +%FT%TZ) nightly (tape age ${age}s) ==" >> forward.log
+    break
+  fi
+  if [ $(( $(date +%s) - start )) -ge "$DEADLINE_S" ]; then
+    echo "== $(date -u +%FT%TZ) nightly DEADLINE — tape still ${age}s stale, scoring anyway ==" >> forward.log
+    break
+  fi
+  sleep "$POLL_S"
+done
+
+"$PY" forward.py >> forward.log 2>&1
 
 cd ..
 git add research/forward_ledger.jsonl
