@@ -2076,6 +2076,36 @@
  ],
  "missed": [
   {
+   "ts": 1784056905,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "47930487385442068307660985236580604031118404338161837203208216877292039014153",
+   "cond": "0x58072ab3a8cdd291b6f7091510bed59f835a374bed783e958a5255c2b274bb65",
+   "title": "Will France win the World Cup?",
+   "outcome": "No",
+   "price": 0.66,
+   "stake": 1.0,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "won",
+   "pnl": 0.5,
+   "settled": 1784649099,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1784148364,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "97790474719190241406489821993233180311618193540151039410585653304993937141574",
+   "cond": "0xb2af625fa98691e234f918fb36e5063ca14d436d5d7b1a1ad299bbb1890694a3",
+   "title": "Will Argentina win the World Cup?",
+   "outcome": "No",
+   "price": 0.705,
+   "stake": 1.0,
+   "reason": "book unreliable (spread 0.10 > 0.08)",
+   "status": "won",
+   "pnl": 0.41,
+   "settled": 1784649099,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784626586,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "54923619943837902531413944505673826869865789371722858311579457498438152585454",
@@ -2991,41 +3021,8 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.884
-  },
-  {
-   "ts": 1783973910,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "113811126480011515107509517146411015240698493006125965388028738076036215548925",
-   "cond": "0x7b815d5ee7f26512f22e42943519b051ce430586fd88fd0acb167ab2252a688b",
-   "title": "Over $95M committed to the Credible public sale?",
-   "outcome": "No",
-   "price": 0.7575,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.25,
-   "settled": 1784315249,
-   "name": "0xbadaf319",
-   "exit_checked": true,
-   "exit_price": 0.9542
-  },
-  {
-   "ts": 1784252512,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
-   "cond": "0x0fb63e987b28940eb8d299b466a34e5b404e0bd9a5c98df908bb55e6d00b694b",
-   "title": "Will Epic Games' valuation hit (HIGH) $13.5B by December 31?",
-   "outcome": "Yes",
-   "price": 0.4482,
-   "stake": 2.45,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.28,
-   "settled": 1784305890,
-   "name": "0xbadaf319",
-   "exit_price": 0.5147
   }
  ],
- "missed_pnl": 1172.87,
- "updated": 1784649037
+ "missed_pnl": 1173.78,
+ "updated": 1784649101
 }

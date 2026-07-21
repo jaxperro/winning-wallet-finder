@@ -15015,15 +15015,15 @@
       "ts": 1784056905,
       "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
       "token": "47930487385442068307660985236580604031118404338161837203208216877292039014153",
-      "cond": "",
-      "title": "",
-      "outcome": "",
+      "cond": "0x58072ab3a8cdd291b6f7091510bed59f835a374bed783e958a5255c2b274bb65",
+      "title": "Will France win the World Cup?",
+      "outcome": "No",
       "price": 0.66,
       "stake": 1.0,
       "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 0.5,
+      "settled": 1784649099,
       "name": "0xbadaf319"
     },
     {
@@ -15333,15 +15333,15 @@
       "ts": 1784148364,
       "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
       "token": "97790474719190241406489821993233180311618193540151039410585653304993937141574",
-      "cond": "",
-      "title": "",
-      "outcome": "",
+      "cond": "0xb2af625fa98691e234f918fb36e5063ca14d436d5d7b1a1ad299bbb1890694a3",
+      "title": "Will Argentina win the World Cup?",
+      "outcome": "No",
       "price": 0.705,
       "stake": 1.0,
       "reason": "book unreliable (spread 0.10 > 0.08)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 0.41,
+      "settled": 1784649099,
       "name": "0xbadaf319"
     },
     {
@@ -16512,8 +16512,8 @@
       "exit_price": 0.6322
     }
   ],
-  "feed_sig": "3ecaaaec53f945220d8829f978950c71",
-  "feed_pushed_at": 1784647930.4646406,
+  "feed_sig": "cbb444419bf30a0286699b5a71d5be37",
+  "feed_pushed_at": 1784649037.5187504,
   "adjustments": [
     {
       "ts": 1783906689,
