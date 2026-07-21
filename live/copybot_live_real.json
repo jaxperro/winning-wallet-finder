@@ -2074,6 +2074,21 @@
  ],
  "missed": [
   {
+   "ts": 1784628735,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "31798323952461961650983638405389053740930972138111089234409584277872747279143",
+   "cond": "0x6acdc3316f0b43ca4fbc13623fc018e30f2fd20ae7b93bdc07c8193e99b0ac4d",
+   "title": "Israel x Iran ceasefire continues through August 15?",
+   "outcome": "No",
+   "price": 0.42,
+   "stake": 2.45,
+   "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784626586,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "54923619943837902531413944505673826869865789371722858311579457498438152585454",
@@ -3006,24 +3021,8 @@
    "settled": 1784305544,
    "name": "gkmgkldfmg",
    "exit_price": 0.0554
-  },
-  {
-   "ts": 1784298373,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "65083870366687373086730707346131907305811131359213614908957826335591758208",
-   "cond": "0x303723d1970e150b23e9f6ef74b696ac3f2b319c3e40c5bddb5c99c8ba7f6567",
-   "title": "Dota 2: Nigma Galaxy vs BetBoom Team - Game 1 Winner",
-   "outcome": "Nigma Galaxy",
-   "price": 0.26,
-   "stake": 2.35,
-   "reason": "in-play hold expired unfilled (36s)",
-   "status": "sold",
-   "pnl": -2.39,
-   "settled": 1784300337,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.0016
   }
  ],
  "missed_pnl": 1171.27,
- "updated": 1784626592
+ "updated": 1784628797
 }
