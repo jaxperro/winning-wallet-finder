@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784663401,
+ "updated": 1784666683,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 537.11,
@@ -8,8 +8,8 @@
    "wins": 12,
    "open_cost": 591.35,
    "open_n": 9,
-   "miss_n": 46,
-   "miss_pnl": 95518.39,
+   "miss_n": 47,
+   "miss_pnl": 95513.56,
    "last_ts": 1784650955
   },
   "gkmgkldfmg": {
@@ -3982,6 +3982,22 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784666234,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "110127509798966540887051550451493333155192689272629249313511785868238474355262",
+   "cond": "0xfac54e7b2f02513939fb462481a830d293ee1f5a39b40b7a510ff0a90689c673",
+   "title": "Will Lyon win the 2026-27 Ligue 1 Championship?",
+   "outcome": "No",
+   "price": 0.952,
+   "stake": 110.33,
+   "reason": "price moved 0.78\u21920.95",
+   "status": "sold",
+   "pnl": -4.83,
+   "settled": 1784666682,
+   "name": "0xbadaf319",
+   "exit_price": 0.9141
+  },
   {
    "ts": 1784663345,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",

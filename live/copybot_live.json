@@ -2109,6 +2109,22 @@
  ],
  "missed": [
   {
+   "ts": 1784666234,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "110127509798966540887051550451493333155192689272629249313511785868238474355262",
+   "cond": "0xfac54e7b2f02513939fb462481a830d293ee1f5a39b40b7a510ff0a90689c673",
+   "title": "Will Lyon win the 2026-27 Ligue 1 Championship?",
+   "outcome": "No",
+   "price": 0.952,
+   "stake": 110.33,
+   "reason": "price moved 0.78\u21920.95",
+   "status": "sold",
+   "pnl": -4.83,
+   "settled": 1784666682,
+   "name": "0xbadaf319",
+   "exit_price": 0.9141
+  },
+  {
    "ts": 1784663345,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "31114539293109191150949144475239465589903245761316798745025708973207317205400",
@@ -3034,26 +3050,9 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.884
-  },
-  {
-   "ts": 1783973850,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "113811126480011515107509517146411015240698493006125965388028738076036215548925",
-   "cond": "0x7b815d5ee7f26512f22e42943519b051ce430586fd88fd0acb167ab2252a688b",
-   "title": "Over $95M committed to the Credible public sale?",
-   "outcome": "No",
-   "price": 0.7575,
-   "stake": 56.21,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 14.09,
-   "settled": 1784315257,
-   "name": "0xbadaf319",
-   "exit_checked": true,
-   "exit_price": 0.9542
   }
  ],
- "missed_pnl": 95295.47,
+ "missed_pnl": 95290.64,
  "last_fill": {
   "ts": 1784660810,
   "side": "BUY",
@@ -3069,8 +3068,8 @@
    "wins": 12,
    "open_cost": 591.35,
    "open_n": 9,
-   "miss_n": 46,
-   "miss_pnl": 95518.39,
+   "miss_n": 47,
+   "miss_pnl": 95513.56,
    "last_ts": 1784650955
   },
   "gkmgkldfmg": {
@@ -3144,5 +3143,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784663401
+ "updated": 1784666683
 }
