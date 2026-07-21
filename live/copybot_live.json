@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 110.68,
+ "stake": 110.64,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1754.37,
- "deployed": 1012.64,
+ "cash": 1642.66,
+ "deployed": 1123.32,
  "reserve": 0.0,
- "realized": 1766.98,
+ "realized": 1765.95,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 17,
- "fees_paid": 323.15,
+ "open_count": 18,
+ "fees_paid": 324.18,
  "fee_rate": 0.03,
  "lag": {
-  "n": 213,
-  "n24": 7,
-  "avg_s": 6.5,
-  "avg_slip_pct": -0.0041,
+  "n": 214,
+  "n24": 8,
+  "avg_s": 5.8,
+  "avg_slip_pct": -0.0054,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 344.56
  },
  "bets": [
+  {
+   "token": "48393982087831129899183531478832099653074965669965652679356454634407980114693",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "BIG",
+   "title": "LoL: E WIE EINFACH E-SPORTS vs BIG - Game 1 Winner",
+   "their_price": 0.7,
+   "my_price": 0.69,
+   "slippage_pct": -0.0143,
+   "lag_s": 0.8,
+   "shares": 160.41,
+   "cost": 110.68,
+   "fee": 1.03,
+   "opened": 1784653424,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "61006664768704077610926643294818298224283851909931383706594588347736676023026",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2083,24 +2102,6 @@
    "settled": 1783936082,
    "sold_shares": 99.41,
    "sold_proceeds": 85.14
-  },
-  {
-   "token": "18802393565291712436899729429089924858104497792982518694284454990866908025798",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the average monthly Ethereum gas price hit 25 Gwei before 2027?",
-   "their_price": 0.842,
-   "my_price": 0.315,
-   "slippage_pct": -0.6259,
-   "shares": 290.18,
-   "cost": 91.41,
-   "fee": 1.88,
-   "opened": 1783897001,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   }
  ],
  "missed": [
@@ -3051,5 +3052,5 @@
   }
  ],
  "missed_pnl": 95298.71,
- "updated": 1784650965
+ "updated": 1784653425
 }
