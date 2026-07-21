@@ -3037,6 +3037,8 @@
    "wins": 4,
    "open_cost": 11.88,
    "open_n": 5,
+   "miss_n": 54,
+   "miss_pnl": 1155.34,
    "last_ts": 1784630337
   },
   "AIcAIc": {
@@ -3045,6 +3047,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
+   "miss_n": 5,
+   "miss_pnl": 4.5,
    "last_ts": 1784472581
   },
   "(incident)": {
@@ -3053,6 +3057,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
+   "miss_n": 0,
+   "miss_pnl": 0.0,
    "last_ts": 1783697039
   },
   "gkmgkldfmg": {
@@ -3061,6 +3067,8 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
+   "miss_n": 70,
+   "miss_pnl": 14.84,
    "last_ts": 1784655322
   },
   "1kto1m": {
@@ -3069,6 +3077,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
+   "miss_n": 20,
+   "miss_pnl": -0.6,
    "last_ts": 1784206643
   },
   "LSB1": {
@@ -3077,6 +3087,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
+   "miss_n": 20,
+   "miss_pnl": -0.66,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -3085,6 +3097,8 @@
    "wins": 1,
    "open_cost": 10.03,
    "open_n": 5,
+   "miss_n": 19,
+   "miss_pnl": -5.74,
    "last_ts": 1784588419
   },
   "Kruto2027": {
@@ -3093,8 +3107,20 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
+   "miss_n": 5,
+   "miss_pnl": 9.35,
    "last_ts": 1784497466
+  },
+  "0xd96750bf": {
+   "realized": 0.0,
+   "n": 0,
+   "wins": 0,
+   "open_cost": 0.0,
+   "open_n": 0,
+   "miss_n": 6,
+   "miss_pnl": -3.38,
+   "last_ts": 0
   }
  },
- "updated": 1784658017
+ "updated": 1784658815
 }

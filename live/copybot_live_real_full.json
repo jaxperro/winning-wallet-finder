@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784658017,
+ "updated": 1784658815,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.45,
@@ -8,6 +8,8 @@
    "wins": 4,
    "open_cost": 11.88,
    "open_n": 5,
+   "miss_n": 54,
+   "miss_pnl": 1155.34,
    "last_ts": 1784630337
   },
   "AIcAIc": {
@@ -16,6 +18,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
+   "miss_n": 5,
+   "miss_pnl": 4.5,
    "last_ts": 1784472581
   },
   "(incident)": {
@@ -24,6 +28,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
+   "miss_n": 0,
+   "miss_pnl": 0.0,
    "last_ts": 1783697039
   },
   "gkmgkldfmg": {
@@ -32,6 +38,8 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
+   "miss_n": 70,
+   "miss_pnl": 14.84,
    "last_ts": 1784655322
   },
   "1kto1m": {
@@ -40,6 +48,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
+   "miss_n": 20,
+   "miss_pnl": -0.6,
    "last_ts": 1784206643
   },
   "LSB1": {
@@ -48,6 +58,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
+   "miss_n": 20,
+   "miss_pnl": -0.66,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -56,6 +68,8 @@
    "wins": 1,
    "open_cost": 10.03,
    "open_n": 5,
+   "miss_n": 19,
+   "miss_pnl": -5.74,
    "last_ts": 1784588419
   },
   "Kruto2027": {
@@ -64,7 +78,19 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
+   "miss_n": 5,
+   "miss_pnl": 9.35,
    "last_ts": 1784497466
+  },
+  "0xd96750bf": {
+   "realized": 0.0,
+   "n": 0,
+   "wins": 0,
+   "open_cost": 0.0,
+   "open_n": 0,
+   "miss_n": 6,
+   "miss_pnl": -3.38,
+   "last_ts": 0
   }
  },
  "bets": [
@@ -4223,7 +4249,7 @@
    "status": "sold",
    "pnl": 0.0,
    "settled": 1783899291,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_price": 1.0
   },
   {
@@ -4239,7 +4265,7 @@
    "status": "lost",
    "pnl": -1.01,
    "settled": 1783898972,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_checked": true
   },
   {
@@ -4334,7 +4360,7 @@
    "status": "lost",
    "pnl": -1.01,
    "settled": 1783867047,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_checked": true
   },
   {
@@ -4542,7 +4568,7 @@
    "status": "sold",
    "pnl": 0.17,
    "settled": 1783828849,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_price": 1.0
   },
   {
@@ -4558,7 +4584,7 @@
    "status": "sold",
    "pnl": -0.48,
    "settled": 1783828831,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_checked": true,
    "exit_price": 0.3899
   },
@@ -4575,7 +4601,7 @@
    "status": "won",
    "pnl": 0.62,
    "settled": 1783828831,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_checked": true
   },
   {
@@ -4687,7 +4713,7 @@
    "status": "lost",
    "pnl": -1.0,
    "settled": 1783814962,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_checked": true
   },
   {
@@ -4703,7 +4729,7 @@
    "status": "lost",
    "pnl": -1.03,
    "settled": 1783814817,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_checked": true
   },
   {
@@ -4719,7 +4745,7 @@
    "status": "won",
    "pnl": 0.21,
    "settled": 1783814813,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_checked": true
   },
   {
@@ -4735,7 +4761,7 @@
    "status": "won",
    "pnl": 0.06,
    "settled": 1783814706,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_checked": true
   },
   {
@@ -4767,7 +4793,7 @@
    "status": "sold",
    "pnl": 0.16,
    "settled": 1783789468,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_price": 1.0
   },
   {
@@ -4815,7 +4841,7 @@
    "status": "won",
    "pnl": 0.2,
    "settled": 1783781079,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_checked": true
   },
   {
@@ -4831,7 +4857,7 @@
    "status": "won",
    "pnl": 0.66,
    "settled": 1783780827,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_checked": true
   },
   {
@@ -4847,7 +4873,7 @@
    "status": "sold",
    "pnl": 0.1,
    "settled": 1783780392,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_price": 1.0
   },
   {
@@ -5150,7 +5176,7 @@
    "status": "sold",
    "pnl": 0.43,
    "settled": 1783743418,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_price": 1.0
   },
   {
@@ -5166,7 +5192,7 @@
    "status": "lost",
    "pnl": -1.01,
    "settled": 1783742299,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_checked": true
   },
   {
@@ -5182,7 +5208,7 @@
    "status": "sold",
    "pnl": 0.69,
    "settled": 1783742174,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_price": 1.0
   },
   {
@@ -5230,7 +5256,7 @@
    "status": "won",
    "pnl": 0.29,
    "settled": 1783718322,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_checked": true
   },
   {
@@ -5246,7 +5272,7 @@
    "status": "sold",
    "pnl": -0.04,
    "settled": 1783718142,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_price": 0.8396
   },
   {
@@ -5262,7 +5288,7 @@
    "status": "won",
    "pnl": 1.33,
    "settled": 1783718138,
-   "name": "0x41558102",
+   "name": "LSB1",
    "exit_checked": true
   },
   {
