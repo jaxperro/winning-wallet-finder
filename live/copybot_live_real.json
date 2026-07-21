@@ -2078,6 +2078,21 @@
  ],
  "missed": [
   {
+   "ts": 1784663346,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "31114539293109191150949144475239465589903245761316798745025708973207317205400",
+   "cond": "0xe0befb0fb9fdcb3b7c46521845d0ce3248eb65352522f67cc3113894b992f3b3",
+   "title": "Over $30M committed to the RipCars public sale?",
+   "outcome": "No",
+   "price": 0.81,
+   "stake": 2.47,
+   "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783991964,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "24842837270178563045080596501119383388959231063439941109817831657351105273923",
@@ -3008,23 +3023,6 @@
    "settled": 1784320099,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1783996214,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "109624481875348569318303102429519724032296483676540566321245418804293736322472",
-   "cond": "0x73f249c806a34946776e96c784a6631b8b8421813a791903f9f9f576c4abaa7d",
-   "title": "Will South Korea ETF (EWY) hit (HIGH) $185 Week of July 13 2026?",
-   "outcome": "No",
-   "price": 0.78,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "sold",
-   "pnl": -0.06,
-   "settled": 1784320098,
-   "name": "0xbadaf319",
-   "exit_checked": true,
-   "exit_price": 0.743
   }
  ],
  "missed_pnl": 1173.27,
@@ -3043,7 +3041,7 @@
    "wins": 4,
    "open_cost": 11.88,
    "open_n": 5,
-   "miss_n": 54,
+   "miss_n": 55,
    "miss_pnl": 1155.34,
    "last_ts": 1784630337
   },
@@ -3128,5 +3126,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784660823
+ "updated": 1784663372
 }
