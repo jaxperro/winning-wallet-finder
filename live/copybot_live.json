@@ -2105,6 +2105,54 @@
  ],
  "missed": [
   {
+   "ts": 1784597503,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "58462461700429243354293772965834869157205755175569336823865220371784986170846",
+   "cond": "0x5704802f1d0ebddb43aea7ab7616c5708487925e6bb2827d6f873d73ee7e0c47",
+   "title": "Farsi Island no longer under Iranian control by August 31?",
+   "outcome": "Yes",
+   "price": 0.01,
+   "stake": 100.0,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "sold",
+   "pnl": 4822.03,
+   "settled": 1784649009,
+   "name": "0xbadaf319",
+   "exit_price": 0.5
+  },
+  {
+   "ts": 1784626586,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "54923619943837902531413944505673826869865789371722858311579457498438152585454",
+   "cond": "0x3f13595c81d4894015e99014f2562cc6edadfa1156b8849e9ebdf379149cb878",
+   "title": "Will Aurelien Tchouameni join Bayern Munich?",
+   "outcome": "No",
+   "price": 0.875,
+   "stake": 27.93,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "sold",
+   "pnl": 1.95,
+   "settled": 1784649009,
+   "name": "0xbadaf319",
+   "exit_price": 0.9412
+  },
+  {
+   "ts": 1784547091,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "109075623115035500221385426519923794314139178452765641614675281069970878340106",
+   "cond": "0xbcd6e99663f8b2056c91b7a766e084d20cde5bcfd54a97432596633921c02443",
+   "title": "US announces halt in Iran offensive operations by July 21?",
+   "outcome": "No",
+   "price": 0.59,
+   "stake": 43.58,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "sold",
+   "pnl": 8.99,
+   "settled": 1784649008,
+   "name": "0xbadaf319",
+   "exit_price": 0.725
+  },
+  {
    "ts": 1784648798,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "63211073606793804423333353862189269330913460147355410611068287262791890789543",
@@ -2133,36 +2181,6 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784626586,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "54923619943837902531413944505673826869865789371722858311579457498438152585454",
-   "cond": "0x3f13595c81d4894015e99014f2562cc6edadfa1156b8849e9ebdf379149cb878",
-   "title": "Will Aurelien Tchouameni join Bayern Munich?",
-   "outcome": "No",
-   "price": 0.875,
-   "stake": 27.93,
-   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1784597503,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "58462461700429243354293772965834869157205755175569336823865220371784986170846",
-   "cond": "0x5704802f1d0ebddb43aea7ab7616c5708487925e6bb2827d6f873d73ee7e0c47",
-   "title": "Farsi Island no longer under Iranian control by August 31?",
-   "outcome": "Yes",
-   "price": 0.01,
-   "stake": 100.0,
-   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784493015,
@@ -2337,21 +2355,6 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.9768
-  },
-  {
-   "ts": 1784547091,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "109075623115035500221385426519923794314139178452765641614675281069970878340106",
-   "cond": "0xbcd6e99663f8b2056c91b7a766e084d20cde5bcfd54a97432596633921c02443",
-   "title": "US announces halt in Iran offensive operations by July 21?",
-   "outcome": "No",
-   "price": 0.59,
-   "stake": 43.58,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784542228,
@@ -3046,6 +3049,6 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 90550.8,
- "updated": 1784648818
+ "missed_pnl": 95383.77,
+ "updated": 1784649010
 }

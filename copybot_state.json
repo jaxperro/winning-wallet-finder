@@ -1,16 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0x6ac93c761aa53772288679d6a46fd4cdbda680fa4c403c023113840f9e88b692",
-    "0xe43eab4d5f9b6fbca7512a274bbaeed1fa452eda242173b984d72758be88ad41",
-    "0x78ff28fbdf64a2251d36b92c799675daae476b21ed2dc745d7243ebe810efca0",
-    "0x7039d54e7b12bf4dfdbb34ebc9c3d22fa0cfb79394282bfada51785584b316f4",
-    "0x935509ff19f7a9525295b87bfdac5447ce31e21e1984beacef700c87a2888e5e",
-    "0xdb38d79f7025fe7d0b5488158161f7fb915478f9bca48012dc87b46ec104455d",
-    "0x552de1ca597821c527ae285a51a2eb7d3eacc118f471906e19346b30843e7375",
-    "0xa4e61491fca93622a34c5a40a48be43790df29fbae17c167a9c6f74f356b58af",
-    "0x747885058525a39c83004814643dd3a83ae373b38aa29538f85af78d321d196b",
-    "0x41a935b6364da267a3bb9a40483f35aff60f878d4ae0c4dc3132c24f328ef3aa",
     "0xf6a7fbb81a6170e47b6e58ad079d03577a899cda11e0b751b7a4d08bab91cc62",
     "0x8cd0a8700e63092cb9362a31d56c1ee260c7462b14c9358d5afc3d820e042763",
     "0x8baf901df1454eec64fec8ce0c42fec6149a429a32bf2e0557ffdd3fc6886dba",
@@ -5000,7 +4990,17 @@
     "0x859537e75dd4b21b1ca75355578568537df495e6886ff2d89770f9e1efaa5cf5",
     "0xa496c1ff79711074c95bc60befe697fa201fbde6ebf9131284d36aef337a8eb8",
     "0x52d9dc06d11d668b6ab725c11891c6f3f34dbb7098963e919dbd8817660d01f4",
-    "0x928bbb87e0671586296db440c2f4018de946da46e9ac1163adba9679ab16530b"
+    "0x928bbb87e0671586296db440c2f4018de946da46e9ac1163adba9679ab16530b",
+    "0xc83712fd031291db0ef4dd3463122bec554aaa071e20c6211db6d8ffd934c876",
+    "0xd62031602cb56f87de3c7777f7aedfd1c5391497e64d98476ca7e16eb543ed53",
+    "0x68506b480ada0055d578ec55d52d8d8fe29da0f0d091fc1c1c801f7784ddb0f8",
+    "0x2c9aff13e3d7968567976427b85c68f7ba8e2a985e32060dc6c4cccf1b3d356d",
+    "0x2e125a010ee5b55a2c67791111c45583df62a8161602be0ee19a113bdc62599b",
+    "0x881c256cae597b3425463ec006628d97786e83d3cd492f502ebfa5c388b6741d",
+    "0xe48e1f8adeb82d18488c9252d11295b668c55e65d59f238eb1523d6e50ad01ff",
+    "0xcd23451031ff3be4114e037ab9fd97f00387f98e4524015d2cf9758fa00bb181",
+    "0x47ef4f3d1a7842a2a50f43ae00dc526cc2d2a2a0ea3ddfa09bf8ecc11a9592f9",
+    "0x46be8aaa41bc18f19ee27a4c62cc00296dc46e4c0d8d5c7591606a94f55c3d6f"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -17595,10 +17595,11 @@
       "price": 0.59,
       "stake": 43.58,
       "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "0xbadaf319"
+      "status": "sold",
+      "pnl": 8.99,
+      "settled": 1784649008,
+      "name": "0xbadaf319",
+      "exit_price": 0.725
     },
     {
       "ts": 1784548183,
@@ -17735,10 +17736,11 @@
       "price": 0.01,
       "stake": 100.0,
       "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "0xbadaf319"
+      "status": "sold",
+      "pnl": 4822.03,
+      "settled": 1784649009,
+      "name": "0xbadaf319",
+      "exit_price": 0.5
     },
     {
       "ts": 1784626586,
@@ -17750,10 +17752,11 @@
       "price": 0.875,
       "stake": 27.93,
       "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "0xbadaf319"
+      "status": "sold",
+      "pnl": 1.95,
+      "settled": 1784649009,
+      "name": "0xbadaf319",
+      "exit_price": 0.9412
     },
     {
       "ts": 1784628735,
@@ -17890,7 +17893,7 @@
     "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784637658
   },
   "boot": {
-    "id": "ff862951fbaa",
-    "ts": 1784647944
+    "id": "11d46782511f",
+    "ts": 1784648997
   }
 }
