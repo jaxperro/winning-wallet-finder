@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 110.34,
+ "stake": 110.68,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1695.02,
- "deployed": 1063.57,
+ "cash": 1754.37,
+ "deployed": 1012.64,
  "reserve": 0.0,
- "realized": 1758.55,
+ "realized": 1766.98,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 18,
+ "ledger_drift": -0.02,
+ "open_count": 17,
  "fees_paid": 323.15,
  "fee_rate": 0.03,
  "lag": {
@@ -46,6 +46,25 @@
   "AIcAIc": 344.56
  },
  "bets": [
+  {
+   "token": "61006664768704077610926643294818298224283851909931383706594588347736676023026",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will the price of Bitcoin be above $58,000 on July 21?",
+   "their_price": 0.864,
+   "my_price": 0.858,
+   "slippage_pct": -0.0069,
+   "lag_s": 51.0,
+   "shares": 59.35,
+   "cost": 50.93,
+   "fee": 0.22,
+   "opened": 1784103469,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 8.21,
+   "settled": 1784650955
+  },
   {
    "token": "47930487385442068307660985236580604031118404338161837203208216877292039014153",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1580,25 +1599,6 @@
    "sold_proceeds": 63.63
   },
   {
-   "token": "61006664768704077610926643294818298224283851909931383706594588347736676023026",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will the price of Bitcoin be above $58,000 on July 21?",
-   "their_price": 0.864,
-   "my_price": 0.858,
-   "slippage_pct": -0.0069,
-   "lag_s": 51.0,
-   "shares": 59.35,
-   "cost": 50.93,
-   "fee": 0.22,
-   "opened": 1784103469,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
    "token": "16686602356235900511267666457287992561973903059220978509691578764880532993490",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -2117,7 +2117,8 @@
    "status": "lost",
    "pnl": -101.51,
    "settled": 1784649073,
-   "name": "BikesAreTheBikes"
+   "name": "BikesAreTheBikes",
+   "exit_checked": true
   },
   {
    "ts": 1784148369,
@@ -2129,10 +2130,12 @@
    "price": 0.716,
    "stake": 64.21,
    "reason": "book unreliable (spread 0.14 > 0.08)",
-   "status": "won",
-   "pnl": 24.92,
+   "status": "sold",
+   "pnl": 16.45,
    "settled": 1784649073,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.908
   },
   {
    "ts": 1784597503,
@@ -3047,6 +3050,6 @@
    "exit_price": 0.2367
   }
  ],
- "missed_pnl": 95307.18,
- "updated": 1784649076
+ "missed_pnl": 95298.71,
+ "updated": 1784650965
 }
