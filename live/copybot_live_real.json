@@ -2076,6 +2076,21 @@
  ],
  "missed": [
   {
+   "ts": 1784643409,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "41408557405269649927496726924900111227532817303569129089131556212120131473157",
+   "cond": "0x1ff3ead7a1d127fc8c042b3ce50ee5f9deece22799b0ce440801da1becd1b038",
+   "title": "Dota 2: Team Lynx vs Spirit Academy - Game 1 Winner",
+   "outcome": "Team Lynx",
+   "price": 0.39,
+   "stake": 2.44,
+   "reason": "in-play hold expired unfilled (4s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1784628735,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "31798323952461961650983638405389053740930972138111089234409584277872747279143",
@@ -3007,24 +3022,8 @@
    "settled": 1784305890,
    "name": "0xbadaf319",
    "exit_price": 0.5147
-  },
-  {
-   "ts": 1784305076,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "28782906734976367034652809126970357901755811695575578507894349405056833093999",
-   "cond": "0x2958e5aaa8ff729d588001f798ea3b84ad0d786927e1a92bd819d8c87477a640",
-   "title": "Dota 2: Nigma Galaxy vs BetBoom Team - Game 2 Winner",
-   "outcome": "Nigma Galaxy",
-   "price": 0.09,
-   "stake": 2.24,
-   "reason": "book unreliable (spread 0.16 > 0.08)",
-   "status": "sold",
-   "pnl": -0.96,
-   "settled": 1784305544,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.0554
   }
  ],
  "missed_pnl": 1171.27,
- "updated": 1784630337
+ "updated": 1784643409
 }
