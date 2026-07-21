@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784666683,
+ "updated": 1784670629,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 537.11,
@@ -9,7 +9,7 @@
    "open_cost": 591.35,
    "open_n": 9,
    "miss_n": 47,
-   "miss_pnl": 95513.56,
+   "miss_pnl": 95524.45,
    "last_ts": 1784650955
   },
   "gkmgkldfmg": {
@@ -3983,6 +3983,22 @@
  ],
  "missed": [
   {
+   "ts": 1784663345,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "31114539293109191150949144475239465589903245761316798745025708973207317205400",
+   "cond": "0xe0befb0fb9fdcb3b7c46521845d0ce3248eb65352522f67cc3113894b992f3b3",
+   "title": "Over $30M committed to the RipCars public sale?",
+   "outcome": "No",
+   "price": 0.81,
+   "stake": 62.54,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "sold",
+   "pnl": 10.89,
+   "settled": 1784670629,
+   "name": "0xbadaf319",
+   "exit_price": 0.9568
+  },
+  {
    "ts": 1784666234,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "110127509798966540887051550451493333155192689272629249313511785868238474355262",
@@ -3997,21 +4013,6 @@
    "settled": 1784666682,
    "name": "0xbadaf319",
    "exit_price": 0.9141
-  },
-  {
-   "ts": 1784663345,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "31114539293109191150949144475239465589903245761316798745025708973207317205400",
-   "cond": "0xe0befb0fb9fdcb3b7c46521845d0ce3248eb65352522f67cc3113894b992f3b3",
-   "title": "Over $30M committed to the RipCars public sale?",
-   "outcome": "No",
-   "price": 0.81,
-   "stake": 62.54,
-   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784648798,
