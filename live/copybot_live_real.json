@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.85,
- "cash": 45.1,
- "deployed": 16.75,
+ "cash": 42.63,
+ "deployed": 19.21,
  "reserve": 0.0,
  "realized": -14.01,
  "adjustments": 9.44,
  "ledger_drift": 0.0,
- "open_count": 10,
+ "open_count": 11,
  "fees_paid": 2.87,
  "fee_rate": 0.03,
  "lag": {
-  "n": 100,
-  "n24": 4,
-  "avg_s": 11.7,
-  "avg_slip_pct": 0.0188,
+  "n": 101,
+  "n24": 5,
+  "avg_s": 14.7,
+  "avg_slip_pct": 0.0228,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 341.23
  },
  "bets": [
+  {
+   "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Iran leadership change by July 31?",
+   "their_price": 0.928,
+   "my_price": 0.964,
+   "slippage_pct": 0.0388,
+   "lag_s": 27.0,
+   "shares": 2.55,
+   "cost": 2.46,
+   "fee": 0.0,
+   "opened": 1784660784,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "48393982087831129899183531478832099653074965669965652679356454634407980114693",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2055,25 +2074,6 @@
    "settled": 1783727871,
    "sold_shares": 1.53,
    "sold_proceeds": 1.25
-  },
-  {
-   "token": "49886282303318964434544606851164664333698127985256361511182784657423645654000",
-   "wallet": "0xd9fa6d54cf294343ee42bbb735b7cff20a4bf0b9",
-   "name": "gkmgkldfmg",
-   "outcome": "Aurora",
-   "title": "Dota 2: Aurora vs PlayTime - Game 2 Winner",
-   "their_price": 0.69,
-   "my_price": 0.69,
-   "slippage_pct": 0.0,
-   "shares": 7.25,
-   "cost": 5.0,
-   "fee": 0.07,
-   "opened": 1783689280,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 2.18,
-   "settled": 1783699592,
-   "note": "reconstructed 2026-07-10: in-play 'delayed' acceptance mis-read as rejection; order filled untracked"
   }
  ],
  "missed": [
@@ -3028,7 +3028,14 @@
   }
  ],
  "missed_pnl": 1173.27,
- "last_fill": null,
+ "last_fill": {
+  "ts": 1784660810,
+  "side": "BUY",
+  "price": 0.964,
+  "shares": 2.55,
+  "title": "Iran leadership change by July 31?",
+  "outcome": "No"
+ },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.45,
@@ -3094,11 +3101,11 @@
    "realized": 0.7,
    "n": 4,
    "wins": 1,
-   "open_cost": 10.03,
-   "open_n": 5,
+   "open_cost": 12.49,
+   "open_n": 6,
    "miss_n": 19,
    "miss_pnl": -6.12,
-   "last_ts": 1784588419
+   "last_ts": 1784660784
   },
   "Kruto2027": {
    "realized": -0.05,
@@ -3121,5 +3128,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784660756
+ "updated": 1784660823
 }

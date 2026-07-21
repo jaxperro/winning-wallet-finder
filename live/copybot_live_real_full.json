@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784660756,
+ "updated": 1784660823,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.45,
@@ -66,11 +66,11 @@
    "realized": 0.7,
    "n": 4,
    "wins": 1,
-   "open_cost": 10.03,
-   "open_n": 5,
+   "open_cost": 12.49,
+   "open_n": 6,
    "miss_n": 19,
    "miss_pnl": -6.12,
-   "last_ts": 1784588419
+   "last_ts": 1784660784
   },
   "Kruto2027": {
    "realized": -0.05,
@@ -94,6 +94,25 @@
   }
  },
  "bets": [
+  {
+   "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Iran leadership change by July 31?",
+   "their_price": 0.928,
+   "my_price": 0.964,
+   "slippage_pct": 0.0388,
+   "lag_s": 27.0,
+   "shares": 2.55,
+   "cost": 2.46,
+   "fee": 0.0027,
+   "opened": 1784660784,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "48393982087831129899183531478832099653074965669965652679356454634407980114693",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
