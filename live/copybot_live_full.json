@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784660821,
+ "updated": 1784663401,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 537.11,
@@ -8,7 +8,7 @@
    "wins": 12,
    "open_cost": 591.35,
    "open_n": 9,
-   "miss_n": 45,
+   "miss_n": 46,
    "miss_pnl": 95518.39,
    "last_ts": 1784650955
   },
@@ -3982,6 +3982,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784663345,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "31114539293109191150949144475239465589903245761316798745025708973207317205400",
+   "cond": "0xe0befb0fb9fdcb3b7c46521845d0ce3248eb65352522f67cc3113894b992f3b3",
+   "title": "Over $30M committed to the RipCars public sale?",
+   "outcome": "No",
+   "price": 0.81,
+   "stake": 62.54,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784648798,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",

@@ -2109,6 +2109,21 @@
  ],
  "missed": [
   {
+   "ts": 1784663345,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "31114539293109191150949144475239465589903245761316798745025708973207317205400",
+   "cond": "0xe0befb0fb9fdcb3b7c46521845d0ce3248eb65352522f67cc3113894b992f3b3",
+   "title": "Over $30M committed to the RipCars public sale?",
+   "outcome": "No",
+   "price": 0.81,
+   "stake": 62.54,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784648798,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "63211073606793804423333353862189269330913460147355410611068287262791890789543",
@@ -3036,22 +3051,6 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.9542
-  },
-  {
-   "ts": 1783634211,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
-   "cond": "0x0fb63e987b28940eb8d299b466a34e5b404e0bd9a5c98df908bb55e6d00b694b",
-   "title": "Will Epic Games' valuation hit (HIGH) $13.5B by December 31?",
-   "outcome": "Yes",
-   "price": 0.4482,
-   "stake": 76.99,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 8.86,
-   "settled": 1784305975,
-   "name": "0xbadaf319",
-   "exit_price": 0.5147
   }
  ],
  "missed_pnl": 95295.47,
@@ -3070,7 +3069,7 @@
    "wins": 12,
    "open_cost": 591.35,
    "open_n": 9,
-   "miss_n": 45,
+   "miss_n": 46,
    "miss_pnl": 95518.39,
    "last_ts": 1784650955
   },
@@ -3145,5 +3144,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784660821
+ "updated": 1784663401
 }
