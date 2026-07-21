@@ -288,9 +288,49 @@ def run_conn(tag, bot):
             backoff = 2
 
 
+def serve_feed(bot, port=8080):
+    """Read-only public feed for the /surge dashboard (paper data only —
+    nothing here can place an order or mutate state). CORS-open."""
+    from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+
+    class H(BaseHTTPRequestHandler):
+        def log_message(self, *a):
+            pass
+
+        def do_GET(self):
+            if self.path.split("?")[0] != "/feed":
+                self.send_response(404)
+                self.end_headers()
+                return
+            with bot.lock:
+                st = bot.state
+                body = json.dumps({
+                    "mode": "paper", "updated": int(time.time()),
+                    "bank": BANK, "equity": round(bot.equity(), 2),
+                    "cash": round(st["cash"], 2),
+                    "day": st["day"], "day_stake": st["day_stake"],
+                    "stake_pct": STAKE_PCT, "event_cap": EVENT_CAP,
+                    "flow_usd": FLOW_USD, "window_s": WINDOW_S,
+                    "band": BAND, "counters": st["counters"],
+                    "informed": bot.set_meta,
+                    "open": [{**p, "asset": a} for a, p in st["open"].items()],
+                    "settled": st["settled"][-200:],
+                    "skips": st["skips"][-100:]}).encode()
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header("Cache-Control", "no-store")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+
+    ThreadingHTTPServer(("0.0.0.0", port), H).serve_forever()
+
+
 def main():
     bot = Surge()
     bot.load_set()
+    threading.Thread(target=serve_feed, args=(bot,), daemon=True).start()
     for tag in ("a", "b"):
         threading.Thread(target=run_conn, args=(tag, bot), daemon=True).start()
     last_set = time.time()
