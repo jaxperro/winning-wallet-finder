@@ -2100,6 +2100,21 @@
  ],
  "missed": [
   {
+   "ts": 1784626586,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "54923619943837902531413944505673826869865789371722858311579457498438152585454",
+   "cond": "",
+   "title": "",
+   "outcome": "",
+   "price": 0.875,
+   "stake": 27.93,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784597503,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "58462461700429243354293772965834869157205755175569336823865220371784986170846",
@@ -3026,23 +3041,8 @@
    "settled": 1784289655,
    "name": "gkmgkldfmg",
    "exit_price": 0.6578
-  },
-  {
-   "ts": 1784275928,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "15456330829547795037828293282236765253933989530349029925038235552652310014831",
-   "cond": "0x240c2424f9e2de98676f8a2dce520b2dfee499b68194ac5db0537be851f56989",
-   "title": "Will Revolut's valuation hit (HIGH) $90B by December 31?",
-   "outcome": "Yes",
-   "price": 0.28,
-   "stake": 47.29,
-   "reason": "book unreliable (spread 0.64 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": 90550.8,
- "updated": 1784625069
+ "updated": 1784626611
 }
