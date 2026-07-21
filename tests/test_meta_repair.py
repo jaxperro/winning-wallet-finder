@@ -14,6 +14,8 @@ import time
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 import copybot  # noqa: E402
 
+REAL_TOKEN_MARKET = copybot._token_market      # section 6 tests the real one
+
 TOK = "35358889366059131445607416132477521541386270328042995107702816540034073998102"
 MISS_TOK = "111"
 COND = "0xd2a97dd956e70c9c4abda30d2864588ece0c7213013eb3fa664b88509ff829b1"
@@ -144,6 +146,41 @@ if b["status"] != "won" or b["pnl"] is None or TOK in st["my_pos"]:
     fails.append(f"repair+settle did not un-stick the bet: {b}")
 if abs(st["cash"] - 11.694914) > 1e-9:
     fails.append(f"settle cash wrong: {st['cash']}")
+
+# 6) _token_market falls back to gamma's closed=true view (#18 follow-up:
+#    the default listing hides closed markets — the exact population repair
+#    cares about) and caches only success
+import json as _json  # noqa: E402
+
+MKT = {"question": TITLE, "conditionId": COND,
+       "clobTokenIds": _json.dumps(["555", TOK]),
+       "outcomes": _json.dumps(["Yes", "No"])}
+queries = []
+
+
+def gamma_closed_only(qs):
+    queries.append(qs)
+    if "closed=true" in qs:
+        return [MKT]
+    raise RuntimeError("transient")        # default view: error, then empty
+
+
+copybot._gamma_markets = gamma_closed_only
+copybot._TOK_MKT.clear()
+got = REAL_TOKEN_MARKET(TOK)
+if got != (TITLE, "No", COND):
+    fails.append(f"closed-view fallback wrong: {got}")
+if len(queries) != 2 or "closed=true" not in queries[1] or "closed=true" in queries[0]:
+    fails.append(f"variant order wrong: {queries}")
+if copybot._TOK_MKT.get(TOK) != got:
+    fails.append("successful lookup not cached")
+queries.clear()
+if REAL_TOKEN_MARKET(TOK) != got or queries:
+    fails.append("cache miss on second call")
+copybot._gamma_markets = lambda qs: []
+copybot._TOK_MKT.clear()
+if REAL_TOKEN_MARKET("404") is not None or copybot._TOK_MKT:
+    fails.append("both-empty lookup should return None and cache nothing")
 
 print("FAILURES:", fails or "none")
 sys.exit(1 if fails else 0)

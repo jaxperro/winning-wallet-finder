@@ -142,28 +142,41 @@ _TOK_MKT = {}                   # token id -> (title, outcome, cond), immutable
 _TOK_LOCK = threading.Lock()
 
 
+def _gamma_markets(qs):
+    """One gamma /markets fetch (separate so tests can stub the HTTP edge)."""
+    req = urllib.request.Request(
+        f"https://gamma-api.polymarket.com/markets?{qs}",
+        headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=12, context=SSL_CTX) as r:
+        return json.loads(r.read().decode()) or []
+
+
 def _token_market(token):
     """token id -> (title, outcome, conditionId) via the gamma API, or None.
     A failed lookup means the caller drops the seed — the backstop poll still
-    copies the trade once the indexer catches up (honest, never guessy)."""
+    copies the trade once the indexer catches up (honest, never guessy).
+    Gamma's DEFAULT listing hides closed markets (#18 follow-up: the resolved
+    Odyssey market returned [] until &closed=true) — and closed markets are
+    exactly what repair_market_meta needs, so fall back to the closed view."""
     with _TOK_LOCK:
         if token in _TOK_MKT:
             return _TOK_MKT[token]
-    try:
-        req = urllib.request.Request(
-            f"https://gamma-api.polymarket.com/markets?clob_token_ids={token}",
-            headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=12, context=SSL_CTX) as r:
-            m = (json.loads(r.read().decode()) or [{}])[0]
-        toks = json.loads(m["clobTokenIds"])
-        got = (m.get("question") or "",
-               json.loads(m["outcomes"])[toks.index(token)],
-               m.get("conditionId"))
-    except Exception:
-        return None
-    with _TOK_LOCK:
-        _TOK_MKT[token] = got
-    return got
+    for extra in ("", "&closed=true"):
+        try:
+            ms = _gamma_markets(f"clob_token_ids={token}{extra}")
+            if not ms:
+                continue
+            m = ms[0]
+            toks = json.loads(m["clobTokenIds"])
+            got = (m.get("question") or "",
+                   json.loads(m["outcomes"])[toks.index(token)],
+                   m.get("conditionId"))
+        except Exception:
+            continue
+        with _TOK_LOCK:
+            _TOK_MKT[token] = got
+        return got
+    return None
 
 
 def fills_from_tx(tx, wallet):
