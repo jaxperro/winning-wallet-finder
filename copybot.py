@@ -778,6 +778,16 @@ class RtdsListener:
                 "outcome": p.get("outcome"), "conditionId": p.get("conditionId"),
                 "eventSlug": p.get("eventSlug") or p.get("slug"),
                 "timestamp": int(ts) if ts else None}
+        # #18: some markets stream with empty title/outcome/conditionId (the
+        # 07-20 Odyssey copy) — a cond-less book entry is UNSETTLEABLE. Enrich
+        # from the token id (gamma, cached) before seeding; on a miss the copy
+        # still goes through and repair_market_meta backfills later.
+        if seed["asset"] and not (seed["conditionId"] and seed["title"]):
+            meta = _token_market(seed["asset"])
+            if meta:
+                seed["title"] = seed["title"] or meta[0]
+                seed["outcome"] = seed["outcome"] or meta[1]
+                seed["conditionId"] = seed["conditionId"] or meta[2]
         try:                              # same funnel as the Alchemy push —
             self.bot.on_wallet_activity(w, seed_trade=seed)   # locks internally
         except Exception as e:
@@ -919,6 +929,10 @@ class Copybot:
         self.shadow_log = cfg.get("shadow_log", "rtds_shadow.jsonl")
         # persisted across restarts via the engine's state file
         self.conds = engine.state.setdefault("conds", {})   # token_id -> conditionId (open positions)
+        # #18 empty-cond repair: in-memory backoff/alarm bookkeeping (a reboot
+        # restarts the 1h clock — fine, the repair itself is what matters)
+        self._meta_fail = {}           # token -> (first_fail_ts, last_attempt_ts)
+        self._meta_warned = set()      # tokens already alarmed as unsettleable
         engine.state.setdefault("cash", cfg["bankroll_usd"])  # free cash (recycles on sell/resolution)
         engine.state.setdefault("lag", {"n": 0, "sum_s": 0.0, "sum_slip_pct": 0.0})
         engine.state.setdefault("fees_paid", 0.0)
@@ -2096,7 +2110,9 @@ class Copybot:
                 self.engine.handle_trade(wallet, t)   # sizes, gates, places (paper/live)
                 self.engine.seen.update(extras)       # component fills of the merged bet
                 tok = t.get("asset")
-                if tok in self.engine.state["my_pos"] and tok not in self.conds:
+                # falsy-overwrite, not key-presence (#18): a seed that stored
+                # cond="" must not block the indexer's richer row from fixing it
+                if tok in self.engine.state["my_pos"] and not self.conds.get(tok):
                     self.conds[tok] = t.get("conditionId")   # remember for settling
                 for f in self._drain_fills():
                     if f["token"] == tok:                    # the fill from this copy
@@ -2371,6 +2387,51 @@ class Copybot:
                     f"hypothetical ${m['pnl']:+.2f} (sold)")
             self.engine.persist()
 
+    META_RETRY_S = 300             # per-token backoff between failed lookups
+    META_WARN_S = 3600             # empty-cond position older than this alarms
+
+    def repair_market_meta(self):
+        """#18: a copy seeded from a metadata-less RTDS row books with
+        title/outcome/cond == "" and settle_resolved's `if not cond` skip makes
+        it silently UNSETTLEABLE — the 07-20 Odyssey bet sat open while the
+        venue auto-redeemed it on-chain, alarming CASH≠CHAIN -$1.75 until
+        manual state surgery. Each settle pass: re-resolve empty conds from
+        the token id (gamma, cached), backfill the position/bet/missed
+        records, and alarm ONCE per token still unsettleable after an hour.
+        Caller holds self.lock (settle_resolved)."""
+        st = self.engine.state
+        now = time.time()
+        empties = [(t, p) for t, p in st["my_pos"].items() if not self.conds.get(t)]
+        for m in st.get("missed", []):     # cond-less misses skip hypothetical
+            if m.get("status") == "open" and not m.get("cond") and m.get("token"):
+                empties.append((m["token"], m))
+        for tok, rec in empties:
+            first, last = self._meta_fail.get(tok, (now, 0.0))
+            if now - last >= self.META_RETRY_S:
+                meta = _token_market(tok)
+                if meta and meta[2]:
+                    self._meta_fail.pop(tok, None)
+                    self._meta_warned.discard(tok)
+                    b = st.get("bets", {}).get(tok)
+                    for d in (rec, b) if b is not None else (rec,):
+                        d["title"] = d.get("title") or meta[0]
+                        d["outcome"] = d.get("outcome") or meta[1]
+                        if "cond" in d or d is rec:
+                            d["cond"] = d.get("cond") or meta[2]
+                    if tok in st["my_pos"]:
+                        self.conds[tok] = meta[2]
+                    log(f"meta repair (#18): …{tok[-8:]} -> "
+                        f"{str(meta[0])[:40]} · {meta[1]}")
+                    continue
+                self._meta_fail[tok] = (first, now)
+            if (tok in st["my_pos"] and now - first > self.META_WARN_S
+                    and tok not in self._meta_warned):
+                self._meta_warned.add(tok)
+                self.engine.alert(
+                    f"⚠ …{tok[-8:]} ({str(rec.get('title') or '?')[:36]}) has had "
+                    f"no condition id for {(now - first) / 3600:.1f}h — "
+                    f"UNSETTLEABLE until metadata resolves (#18)")
+
     def settle_resolved(self):
         # audit 4: this ran on EVERY webhook POST ahead of the copy itself —
         # dozens of redundant CLOB fetches during clip bursts. 20s throttle;
@@ -2383,6 +2444,7 @@ class Copybot:
         realized P&L. This is the resolution path the engine's sell-only mirror
         lacks — without it the $1k never recycles for held-to-resolution bets."""
         with self.lock:
+            self.repair_market_meta()   # #18: un-stick cond-less books first
             mp = self.engine.state["my_pos"]
             for token in list(mp):
                 cond = self.conds.get(token)
