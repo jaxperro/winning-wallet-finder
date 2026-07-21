@@ -1,0 +1,20 @@
+# wwf-surgebot — Study A surge-momentum PAPER harness (research silo).
+# No keys, no orders, no repo clone: code baked in image (recorder pattern).
+# Believing its numbers is gated on the #16 forward verdict; see the
+# sprint-plan issue. State on the volume; the Mac nightly pulls + grades.
+app = "wwf-surgebot"
+primary_region = "arn"
+
+[build]
+  dockerfile = "research/surgebot.Dockerfile"
+
+[[mounts]]
+  source = "surge"
+  destination = "/data"
+
+[[restart]]
+  policy = "always"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"
