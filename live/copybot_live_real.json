@@ -2078,6 +2078,21 @@
  ],
  "missed": [
   {
+   "ts": 1784675472,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "56895600526342043824967043463285146349388358932785516761025080000931732654952",
+   "cond": "0x8047fd260f10a7eaa664b4c6d4aa57b25c63917ceaca7377ffb7d06caacea4fa",
+   "title": "Michelsen vs. Gea: Set 1 Games O/U 10.5",
+   "outcome": "Under",
+   "price": 0.5,
+   "stake": 2.47,
+   "reason": "in-play hold expired unfilled (45s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1784663346,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "31114539293109191150949144475239465589903245761316798745025708973207317205400",
@@ -3008,25 +3023,9 @@
    "settled": 1784351625,
    "name": "BikesAreTheBikes",
    "exit_checked": true
-  },
-  {
-   "ts": 1784321590,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "36572361863292743525172722296256449344593421343195350786366455281513675169221",
-   "cond": "0xd2a97dd956e70c9c4abda30d2864588ece0c7213013eb3fa664b88509ff829b1",
-   "title": "Will \"The Odyssey\" Opening Weekend Box Office be greater than 115m?",
-   "outcome": "No",
-   "price": 0.21,
-   "stake": 2.25,
-   "reason": "thin book ($41 within 5c < $50)",
-   "status": "sold",
-   "pnl": 0.16,
-   "settled": 1784321701,
-   "name": "BikesAreTheBikes",
-   "exit_price": 0.2357
   }
  ],
- "missed_pnl": 1172.21,
+ "missed_pnl": 1170.05,
  "last_fill": {
   "ts": 1784660810,
   "side": "BUY",
@@ -3112,7 +3111,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 5,
+   "miss_n": 6,
    "miss_pnl": 9.35,
    "last_ts": 1784497466
   },
@@ -3127,5 +3126,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784670556
+ "updated": 1784675476
 }
