@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 110.33,
+ "stake": 110.34,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1803.07,
- "deployed": 955.1,
+ "cash": 1809.47,
+ "deployed": 948.98,
  "reserve": 0.0,
- "realized": 1758.14,
+ "realized": 1758.41,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 16,
- "fees_paid": 324.18,
+ "open_count": 15,
+ "fees_paid": 324.21,
  "fee_rate": 0.03,
  "lag": {
   "n": 214,
@@ -46,6 +46,27 @@
   "AIcAIc": 344.56
  },
  "bets": [
+  {
+   "token": "24842837270178563045080596501119383388959231063439941109817831657351105273923",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will the next Claude Opus model be released by July 31, 2026?",
+   "their_price": 0.8,
+   "my_price": 0.79,
+   "slippage_pct": -0.0125,
+   "lag_s": 5.0,
+   "shares": 7.75,
+   "cost": 6.12,
+   "fee": 0.04,
+   "opened": 1783991960,
+   "status": "closed",
+   "exit_price": 0.8258,
+   "pnl": 0.24,
+   "settled": 1784660101,
+   "sold_shares": 7.75,
+   "sold_proceeds": 6.4
+  },
   {
    "token": "6467608425341586311851272664218259937970959338795566500089367688884232468049",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -1906,25 +1927,6 @@
    "sold_proceeds": 98.61
   },
   {
-   "token": "24842837270178563045080596501119383388959231063439941109817831657351105273923",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "Will the next Claude Opus model be released by July 31, 2026?",
-   "their_price": 0.8,
-   "my_price": 0.79,
-   "slippage_pct": -0.0125,
-   "lag_s": 5.0,
-   "shares": 7.75,
-   "cost": 6.12,
-   "fee": 0.04,
-   "opened": 1783991960,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
    "token": "60806317326159607374282200707556294855206853468836223934335735983346661186527",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "name": "1kto1m",
@@ -3054,7 +3056,14 @@
   }
  ],
  "missed_pnl": 95295.47,
- "last_fill": null,
+ "last_fill": {
+  "ts": 1784660100,
+  "side": "SELL",
+  "price": 0.83,
+  "shares": 7.75,
+  "title": "Will the next Claude Opus model be released by July 31, 2026",
+  "outcome": "Yes"
+ },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 537.11,
@@ -3117,14 +3126,14 @@
    "last_ts": 1784472579
   },
   "BikesAreTheBikes": {
-   "realized": -0.17,
-   "n": 6,
+   "realized": 0.07,
+   "n": 7,
    "wins": 1,
-   "open_cost": 602.19,
-   "open_n": 7,
+   "open_cost": 596.07,
+   "open_n": 6,
    "miss_n": 17,
    "miss_pnl": -408.6,
-   "last_ts": 1784658052
+   "last_ts": 1784660101
   },
   "0xd96750bf": {
    "realized": 0.0,
@@ -3137,5 +3146,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784658786
+ "updated": 1784660101
 }

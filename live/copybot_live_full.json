@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784658786,
+ "updated": 1784660101,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 537.11,
@@ -63,14 +63,14 @@
    "last_ts": 1784472579
   },
   "BikesAreTheBikes": {
-   "realized": -0.17,
-   "n": 6,
+   "realized": 0.07,
+   "n": 7,
    "wins": 1,
-   "open_cost": 602.19,
-   "open_n": 7,
+   "open_cost": 596.07,
+   "open_n": 6,
    "miss_n": 17,
    "miss_pnl": -408.6,
-   "last_ts": 1784658052
+   "last_ts": 1784660101
   },
   "0xd96750bf": {
    "realized": 0.0,
@@ -84,6 +84,27 @@
   }
  },
  "bets": [
+  {
+   "token": "24842837270178563045080596501119383388959231063439941109817831657351105273923",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will the next Claude Opus model be released by July 31, 2026?",
+   "their_price": 0.8,
+   "my_price": 0.79,
+   "slippage_pct": -0.0125,
+   "lag_s": 5.0,
+   "shares": 7.75,
+   "cost": 6.12,
+   "fee": 0.0386,
+   "opened": 1783991960,
+   "status": "closed",
+   "exit_price": 0.8258,
+   "pnl": 0.24,
+   "settled": 1784660101,
+   "sold_shares": 7.748101265822785,
+   "sold_proceeds": 6.398126337974683
+  },
   {
    "token": "6467608425341586311851272664218259937970959338795566500089367688884232468049",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -1942,25 +1963,6 @@
    "settled": 1784027887,
    "sold_shares": 122.43745493623818,
    "sold_proceeds": 98.60904476891233
-  },
-  {
-   "token": "24842837270178563045080596501119383388959231063439941109817831657351105273923",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "Will the next Claude Opus model be released by July 31, 2026?",
-   "their_price": 0.8,
-   "my_price": 0.79,
-   "slippage_pct": -0.0125,
-   "lag_s": 5.0,
-   "shares": 7.75,
-   "cost": 6.12,
-   "fee": 0.0386,
-   "opened": 1783991960,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "60806317326159607374282200707556294855206853468836223934335735983346661186527",
