@@ -1,0 +1,128 @@
+{
+ "current_plus_bench5": [
+  {
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "class": "volume"
+  },
+  {
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "class": "volume"
+  },
+  {
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "class": "volume"
+  },
+  {
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "class": "volume"
+  },
+  {
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "class": "volume"
+  },
+  {
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "class": "volume"
+  },
+  {
+   "wallet": "0x82d2e4dbb0a849ff8e2f5380719769145648beea",
+   "name": "lma0o0o0o",
+   "class": "volume"
+  },
+  {
+   "wallet": "0xe542afd3881c4c330ba0ebbb603bb470b2ba0a37",
+   "name": "leegunner",
+   "class": "volume"
+  },
+  {
+   "wallet": "0xc684828f6b03487759ced2ebdd975f91f3532228",
+   "name": "oliman2",
+   "class": "volume"
+  },
+  {
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "class": "volume"
+  },
+  {
+   "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
+   "name": "0xb0E43B",
+   "class": "volume"
+  }
+ ],
+ "bench5_only": [
+  {
+   "wallet": "0x82d2e4dbb0a849ff8e2f5380719769145648beea",
+   "name": "lma0o0o0o",
+   "class": "volume"
+  },
+  {
+   "wallet": "0xe542afd3881c4c330ba0ebbb603bb470b2ba0a37",
+   "name": "leegunner",
+   "class": "volume"
+  },
+  {
+   "wallet": "0xc684828f6b03487759ced2ebdd975f91f3532228",
+   "name": "oliman2",
+   "class": "volume"
+  },
+  {
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "class": "volume"
+  },
+  {
+   "wallet": "0x73afc8160c17830c0c7281a7bf570c871455b880",
+   "name": "0xb0E43B",
+   "class": "volume"
+  }
+ ],
+ "tape_top8": [
+  {
+   "wallet": "0x37c1ff27d21b08d1cae9f38453b895eae2a78de1",
+   "name": "0x37c1ff27",
+   "class": "volume"
+  },
+  {
+   "wallet": "0x9ab303a355bf22a29e485d98fb88d140abb43044",
+   "name": "0x9ab303a3",
+   "class": "volume"
+  },
+  {
+   "wallet": "0x717990979ff84a32d47205a7eede94317aab7d79",
+   "name": "0x71799097",
+   "class": "volume"
+  },
+  {
+   "wallet": "0x3d3bbf5d4855ea12fbc610b4c2b49438ace728bd",
+   "name": "0x3d3bbf5d",
+   "class": "volume"
+  },
+  {
+   "wallet": "0x80d8dddcfdc075eb70f6d2d774a27bfb255ab703",
+   "name": "0x80d8dddc",
+   "class": "volume"
+  },
+  {
+   "wallet": "0x00093a689df7fb09a137f9db7102d9e967c85497",
+   "name": "0x00093a68",
+   "class": "volume"
+  },
+  {
+   "wallet": "0x81a994924efdbed20c3d360bbea3913b0b6bdf08",
+   "name": "0x81a99492",
+   "class": "volume"
+  },
+  {
+   "wallet": "0x7547479d43f4b52d892a6f2254050eea50edd158",
+   "name": "0x7547479d",
+   "class": "volume"
+  }
+ ]
+}
