@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 49.32,
- "deployed": 11.87,
+ "cash": 46.88,
+ "deployed": 14.31,
  "reserve": 0.0,
- "realized": -14.66,
+ "realized": -14.67,
  "adjustments": 9.44,
  "ledger_drift": 0.0,
- "open_count": 8,
- "fees_paid": 2.81,
+ "open_count": 9,
+ "fees_paid": 2.82,
  "fee_rate": 0.03,
  "lag": {
-  "n": 96,
-  "n24": 0,
-  "avg_s": 31.7,
-  "avg_slip_pct": 0.026,
+  "n": 97,
+  "n24": 1,
+  "avg_s": 30.1,
+  "avg_slip_pct": 0.0107,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 341.23
  },
  "bets": [
+  {
+   "token": "48409467751286486665938959009701710014426367960633333378105361988315138136571",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Silver (XAGUSD) hit (LOW) $50 Week of July 20 2026?",
+   "their_price": 0.93,
+   "my_price": 0.94,
+   "slippage_pct": 0.0108,
+   "lag_s": 30.1,
+   "shares": 2.6,
+   "cost": 2.44,
+   "fee": 0.0,
+   "opened": 1784595886,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "35358889366059131445607416132477521541386270328042995107702816540034073998102",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2051,25 +2070,6 @@
    "pnl": -5.15,
    "settled": 1783697039,
    "note": "reconstructed 2026-07-10: in-play 'delayed' acceptance mis-read as rejection; order filled untracked"
-  },
-  {
-   "token": "reconstructed-1783685626",
-   "wallet": "",
-   "name": "(incident)",
-   "outcome": "PlayTime",
-   "title": "Dota 2: Aurora vs PlayTime - Game 1 Winner",
-   "their_price": 0.45,
-   "my_price": 0.45,
-   "slippage_pct": 0.0,
-   "shares": 11.11,
-   "cost": 5.0,
-   "fee": 0.15,
-   "opened": 1783685626,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -5.15,
-   "settled": 1783697039,
-   "note": "reconstructed 2026-07-10: in-play 'delayed' acceptance mis-read as rejection; order filled untracked"
   }
  ],
  "missed": [
@@ -3026,5 +3026,5 @@
   }
  ],
  "missed_pnl": 1053.13,
- "updated": 1784590432
+ "updated": 1784595916
 }
