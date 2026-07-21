@@ -15,4 +15,4 @@ primary_region = "arn"
 
 [[vm]]
   size = "shared-cpu-1x"
-  memory = "256mb"
+  memory = "1gb"          # fold sidecar: duckdb capped at 384MB; capture headroom

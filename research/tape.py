@@ -40,8 +40,17 @@ SYMBOLS = {"bitcoin": "btcusdt", "btc": "btcusdt",
            "dogecoin": "dogeusdt"}
 
 
-def connect():
-    return duckdb.connect(RTDS, read_only=True)
+def connect(tries=4, wait=5):
+    """read_only, with a brief retry: the 15-min tape-sync (Stage 0,
+    2026-07-21) holds the write lock for a few seconds per run."""
+    import time
+    for i in range(tries):
+        try:
+            return duckdb.connect(RTDS, read_only=True)
+        except duckdb.IOException:
+            if i == tries - 1:
+                raise
+            time.sleep(wait)
 
 
 # ── tape proxy-resolution ───────────────────────────────────────────────────

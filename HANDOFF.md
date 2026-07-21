@@ -52,9 +52,14 @@ push through.
   25s — research/params/requote_timing.json; `fak_retry_niche_s` override,
   `fak_retry_s` fallback+kill-switch; second rejection tags "twice").
 - **wwf-recorder**: the FULL firehose (trades + order matches + comments
-  + crypto ticks, ~8M events/day, dual-socket ~99.9% capture, 25GB volume,
-  NOTHING deleted until the Mac verifiably ingests it) → nightly →
-  `live/rtds.duckdb` (trades + aux). Current-era ground truth for research.
+  + crypto ticks, ~8M events/day, dual-socket ~99.9% capture, 25GB volume).
+  **Stage-0 warehouse 2026-07-21**: the box folds its own segments →
+  zstd Parquet partitions on the volume (fold.py sidecar, row-parity
+  verified, manifest + Mac-ack deletion protocol — invariant STRONGER than
+  before); the Mac mirrors + appends into `live/rtds.duckdb` every 15 min
+  (`com.jaxperro.tape-sync` → recorder/sync_tape.py). Tape freshness:
+  nightly → ~15 min; the box no longer needs the Mac to stay healthy.
+  `live/parquet/` = complete durable layer (Stage-1 MotherDuck feedstock).
 - **VALUE experiment: CLOSED 2026-07-19** — sub-2¢ hypothesis refuted
   (1W/993L, 0.075x); post-mortem in value/PLAN.md; app destroyed.
 - **research/ (NEW 2026-07-20, SILO — never touches the bots)**: tape-era

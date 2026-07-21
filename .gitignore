@@ -48,3 +48,5 @@ research/forward.log
 research/launchd.log
 research/.nightly.lock.d
 research/__pycache__/
+live/parquet/
+live/tape_sync.log

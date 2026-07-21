@@ -18,21 +18,43 @@ never touch trading, a bot deploy can never gap the tape.
   5s of silence is pathological; false trips cost nothing with a twin).
 - **Segments**: hour-rotated to the volume — `rtds_YYYYMMDD_HH.jsonl.gz`
   (trades, stable schema) + `aux_…` (everything else, raw payloads).
-- **Preservation (user directive 2026-07-19): nothing is deleted until the
-  Mac has verifiably downloaded it.** Only `ingest.py` deletes, after a
-  committed transaction. The 25GB volume holds ~5 weeks un-pulled; the
-  recorder warns from 80% full and only at 95% drops the single oldest
-  hour per rotation, loudly (`⚠⚠ TAPE LOSS`) — a full disk would otherwise
-  kill the CURRENT tape too.
+- **Preservation (user directive 2026-07-19, STRENGTHENED by Stage 0
+  2026-07-21): nothing is deleted without a verified second copy.** The
+  fold sidecar deletes a raw gz only after its Parquet re-reads with a
+  matching row count; the disk guard deletes Parquet only oldest-first and
+  only files the Mac mirror has ACKED. The recorder's own last-resort
+  guard (95% -> drop oldest, `⚠⚠ TAPE LOSS`) still protects the live tape
+  from a full disk.
 
-## The nightly ingest (Mac, daily.sh)
+## Stage-0 warehouse (2026-07-21): fold on the box, mirror on the Mac
 
-`recorder/ingest.py`: lists closed segments over `flyctl ssh`, pulls each
-(base64 — see issue #8 for the sftp upgrade), inserts into
-`live/rtds.duckdb` (`trades` + `aux` tables; own DB file so it can never
-fight cache.duckdb's writer lock), marks it in `ingested`, then deletes on
-the box. Idempotent and resumable; a crash mid-segment re-ingests cleanly
-(single transaction per segment).
+- **`fold.py`** (sidecar in the same machine, capture is PID 1): every
+  2 min, each closed gz segment becomes
+  `/data/parquet/<family>/date=YYYY-MM-DD/<segment>.parquet` (zstd),
+  row-parity verified, appended to `/data/parquet/manifest.jsonl`, then the
+  gz is deleted. The volume IS the warehouse: immutable Parquet any client
+  mirrors incrementally. duckdb capped at 384MB (1GB VM) so a busy-hour
+  fold can never starve capture. ~250-400MB/day of parquet -> months of
+  headroom, months more once mirrored+acked files get pruned.
+- **`sync_tape.py`** (Mac, every 15 min via `com.jaxperro.tape-sync` +
+  from daily.sh): pulls new manifest entries over `flyctl sftp`,
+  row-verifies each file, appends its rows into `live/rtds.duckdb`'s
+  native tables (research keeps native speed — views-over-parquet was
+  rejected: per-asset point queries would crawl), records it in
+  `ingested`, ACKs the box (`/data/parquet/acks/<f>.ok`). Tape freshness
+  went from "nightly, if the Mac was awake" to ~15 min whenever awake, and
+  the box no longer depends on the Mac to stay healthy for weeks.
+- **`bootstrap_parquet.py`**: one-shot export of the pre-fold history
+  (2026-07-17..21, existed only in rtds.duckdb) into the mirror — ran
+  2026-07-21, parity OK (13.84M trades + 3.07M aux). `live/parquet/` is
+  the complete durable layer Stage 1 (MotherDuck/ClickHouse) would consume.
+
+## The legacy bulk ingest (fallback)
+
+`recorder/ingest.py` (sftp-first, base64 fallback, integrity guards) stays
+as the fallback path for a fold-less recorder; with fold running it finds
+no gz segments and no-ops. Same idempotence keys (`ingested` by segment
+name) as sync_tape, so the two can never double-insert.
 
 ## Ops
 
