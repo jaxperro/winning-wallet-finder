@@ -2102,6 +2102,21 @@
  ],
  "missed": [
   {
+   "ts": 1784597503,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "58462461700429243354293772965834869157205755175569336823865220371784986170846",
+   "cond": "",
+   "title": "",
+   "outcome": "",
+   "price": 0.01,
+   "stake": 100.0,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784493015,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "33752982532314842955867034258985568949958761450943043689987049583448528253590",
@@ -3028,23 +3043,8 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1784236753,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "96493470136581654430268359631814450290137534659017161119334974730318350734648",
-   "cond": "0x95a7c8f39ccda84bf59b54c474f2a006cbc4167737630365f416670466b37ab9",
-   "title": "Will Nigel Farage win the Clacton by-election?",
-   "outcome": "Yes",
-   "price": 0.905,
-   "stake": 104.67,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
  "missed_pnl": 90550.8,
- "updated": 1784595916
+ "updated": 1784597521
 }
