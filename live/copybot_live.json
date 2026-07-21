@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 106.33,
+ "stake": 106.32,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1485.21,
- "deployed": 1172.94,
+ "cash": 1433.59,
+ "deployed": 1224.47,
  "reserve": 0.0,
- "realized": 1658.11,
+ "realized": 1658.03,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 20,
- "fees_paid": 321.44,
+ "open_count": 21,
+ "fees_paid": 321.53,
  "fee_rate": 0.03,
  "lag": {
-  "n": 210,
-  "n24": 4,
-  "avg_s": 8.1,
-  "avg_slip_pct": -0.0069,
+  "n": 211,
+  "n24": 5,
+  "avg_s": 6.7,
+  "avg_slip_pct": -0.0057,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 344.56
  },
  "bets": [
+  {
+   "token": "20484110521571350875001435184260822941122652573371898844393462992759163157997",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "StandX FDV above $7B one day after launch?",
+   "their_price": 0.945,
+   "my_price": 0.944,
+   "slippage_pct": -0.0011,
+   "lag_s": 1.2,
+   "shares": 54.59,
+   "cost": 51.53,
+   "fee": 0.09,
+   "opened": 1784625062,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2077,26 +2096,6 @@
    "exit_price": 0.0,
    "pnl": -102.31,
    "settled": 1783867043
-  },
-  {
-   "token": "81729627908647113838238535400683468580916119670288864624921465071586268502282",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Yandex",
-   "title": "Dota 2: 1win vs Team Yandex - Game 2 Winner",
-   "their_price": 0.75,
-   "my_price": 0.74,
-   "slippage_pct": -0.0133,
-   "shares": 126.98,
-   "cost": 93.97,
-   "fee": 0.73,
-   "opened": 1783865323,
-   "status": "closed",
-   "exit_price": 0.9824,
-   "pnl": 30.05,
-   "settled": 1783866067,
-   "sold_shares": 126.98,
-   "sold_proceeds": 124.75
   }
  ],
  "missed": [
@@ -3045,5 +3044,5 @@
   }
  ],
  "missed_pnl": 90550.8,
- "updated": 1784610780
+ "updated": 1784625069
 }
