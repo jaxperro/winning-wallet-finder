@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784672657,
+ "updated": 1784675482,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 537.11,
@@ -36,11 +36,11 @@
    "realized": 750.16,
    "n": 5,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 11.33,
+   "open_n": 1,
    "miss_n": 3,
    "miss_pnl": 447.67,
-   "last_ts": 1784497270
+   "last_ts": 1784675418
   },
   "LSB1": {
    "realized": -397.16,
@@ -84,6 +84,25 @@
   }
  },
  "bets": [
+  {
+   "token": "56895600526342043824967043463285146349388358932785516761025080000931732654952",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Under",
+   "title": "Michelsen vs. Gea: Set 1 Games O/U 10.5",
+   "their_price": 0.51,
+   "my_price": 0.5,
+   "slippage_pct": -0.0196,
+   "lag_s": 25.8,
+   "shares": 22.66,
+   "cost": 11.33,
+   "fee": 0.17,
+   "opened": 1784675418,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
