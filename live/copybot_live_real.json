@@ -2078,6 +2078,21 @@
  ],
  "missed": [
   {
+   "ts": 1784666234,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "110127509798966540887051550451493333155192689272629249313511785868238474355262",
+   "cond": "0xfac54e7b2f02513939fb462481a830d293ee1f5a39b40b7a510ff0a90689c673",
+   "title": "Will Lyon win the 2026-27 Ligue 1 Championship?",
+   "outcome": "No",
+   "price": 0.952,
+   "stake": 2.47,
+   "reason": "price moved 0.78\u21920.95",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784663346,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "31114539293109191150949144475239465589903245761316798745025708973207317205400",
@@ -3007,25 +3022,9 @@
    "settled": 1784321701,
    "name": "BikesAreTheBikes",
    "exit_price": 0.2357
-  },
-  {
-   "ts": 1784244954,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "29198556434804110591228001401963930700463402583244929766816225903118874844031",
-   "cond": "0x9b78e5101ab1282de40e522ae764a43a685d199fb0fab699af8093b5f0332b7b",
-   "title": "Will NVIDIA (NVDA) hit (HIGH) $220 Week of July 13 2026?",
-   "outcome": "No",
-   "price": 0.95,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "won",
-   "pnl": 0.05,
-   "settled": 1784320099,
-   "name": "0xbadaf319",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 1173.27,
+ "missed_pnl": 1171.89,
  "last_fill": {
   "ts": 1784660810,
   "side": "BUY",
@@ -3041,7 +3040,7 @@
    "wins": 4,
    "open_cost": 11.88,
    "open_n": 5,
-   "miss_n": 55,
+   "miss_n": 56,
    "miss_pnl": 1155.34,
    "last_ts": 1784630337
   },
@@ -3126,5 +3125,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784663372
+ "updated": 1784666243
 }
