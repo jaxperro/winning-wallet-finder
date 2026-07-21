@@ -3029,5 +3029,72 @@
   }
  ],
  "missed_pnl": 1173.65,
- "updated": 1784655322
+ "last_fill": null,
+ "wallet_pnl": {
+  "0xbadaf319": {
+   "realized": 1.45,
+   "n": 17,
+   "wins": 4,
+   "open_cost": 11.88,
+   "open_n": 5,
+   "last_ts": 1784630337
+  },
+  "AIcAIc": {
+   "realized": -15.84,
+   "n": 10,
+   "wins": 0,
+   "open_cost": 0.0,
+   "open_n": 0,
+   "last_ts": 1784472581
+  },
+  "(incident)": {
+   "realized": 5.86,
+   "n": 3,
+   "wins": 2,
+   "open_cost": 0.0,
+   "open_n": 0,
+   "last_ts": 1783697039
+  },
+  "gkmgkldfmg": {
+   "realized": -2.7,
+   "n": 49,
+   "wins": 3,
+   "open_cost": 0.0,
+   "open_n": 0,
+   "last_ts": 1784655322
+  },
+  "1kto1m": {
+   "realized": 0.31,
+   "n": 7,
+   "wins": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
+   "last_ts": 1784206643
+  },
+  "LSB1": {
+   "realized": -1.22,
+   "n": 4,
+   "wins": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
+   "last_ts": 1783828844
+  },
+  "BikesAreTheBikes": {
+   "realized": 0.7,
+   "n": 4,
+   "wins": 1,
+   "open_cost": 10.03,
+   "open_n": 5,
+   "last_ts": 1784588419
+  },
+  "Kruto2027": {
+   "realized": -0.05,
+   "n": 2,
+   "wins": 0,
+   "open_cost": 0.0,
+   "open_n": 0,
+   "last_ts": 1784497466
+  }
+ },
+ "updated": 1784658017
 }
