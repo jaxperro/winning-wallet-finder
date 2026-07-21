@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.23,
- "cash": 46.88,
- "deployed": 14.31,
+ "cash": 44.42,
+ "deployed": 16.75,
  "reserve": 0.0,
- "realized": -14.67,
+ "realized": -14.68,
  "adjustments": 9.44,
  "ledger_drift": 0.0,
- "open_count": 9,
- "fees_paid": 2.82,
+ "open_count": 10,
+ "fees_paid": 2.84,
  "fee_rate": 0.03,
  "lag": {
-  "n": 97,
-  "n24": 1,
-  "avg_s": 30.1,
-  "avg_slip_pct": 0.0107,
+  "n": 98,
+  "n24": 2,
+  "avg_s": 18.4,
+  "avg_slip_pct": 0.0054,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 341.23
  },
  "bets": [
+  {
+   "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Opensea FDV above $500M one day after launch?",
+   "their_price": 0.782,
+   "my_price": 0.782,
+   "slippage_pct": -0.0,
+   "lag_s": 6.6,
+   "shares": 3.12,
+   "cost": 2.44,
+   "fee": 0.02,
+   "opened": 1784610028,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "48409467751286486665938959009701710014426367960633333378105361988315138136571",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2051,25 +2070,6 @@
    "pnl": 7.35,
    "settled": 1783697039,
    "note": "reconstructed 2026-07-10: in-play 'delayed' acceptance mis-read as rejection; order filled untracked"
-  },
-  {
-   "token": "47405794293316148244590035888323531202770006061275899647071095856237793879763",
-   "wallet": "0x1d0034ac09da54ba7ec969d1eb756b0a1df475c5",
-   "name": "AIcAIc",
-   "outcome": "G2 Esports",
-   "title": "LoL: G2 Esports vs LYON - Game 3 Winner",
-   "their_price": 0.39,
-   "my_price": 0.39,
-   "slippage_pct": 0.0,
-   "shares": 12.82,
-   "cost": 5.0,
-   "fee": 0.15,
-   "opened": 1783678196,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -5.15,
-   "settled": 1783697039,
-   "note": "reconstructed 2026-07-10: in-play 'delayed' acceptance mis-read as rejection; order filled untracked"
   }
  ],
  "missed": [
@@ -3026,5 +3026,5 @@
   }
  ],
  "missed_pnl": 1171.27,
- "updated": 1784599971
+ "updated": 1784610034
 }
