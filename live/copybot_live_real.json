@@ -2074,6 +2074,21 @@
  ],
  "missed": [
   {
+   "ts": 1784626586,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "54923619943837902531413944505673826869865789371722858311579457498438152585454",
+   "cond": "",
+   "title": "",
+   "outcome": "",
+   "price": 0.875,
+   "stake": 2.45,
+   "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784597505,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "58462461700429243354293772965834869157205755175569336823865220371784986170846",
@@ -3007,24 +3022,8 @@
    "settled": 1784300337,
    "name": "gkmgkldfmg",
    "exit_price": 0.0016
-  },
-  {
-   "ts": 1784286969,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "99769792009260570054217311703996683522727922229995804271060316488330979046706",
-   "cond": "0x9d407ed371fd904ef375724783d30eef0405e5d63d6bf1280d913b76492a035d",
-   "title": "LoL: Hanwha Life Esports vs T1 - Game 1 Winner",
-   "outcome": "Hanwha Life Esports",
-   "price": 0.5699,
-   "stake": 2.45,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "lost",
-   "pnl": -2.48,
-   "settled": 1784296753,
-   "name": "gkmgkldfmg",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 1171.27,
- "updated": 1784625068
+ "updated": 1784626592
 }
