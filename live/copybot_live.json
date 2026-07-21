@@ -39,10 +39,10 @@
  },
  "floors": {
   "Kruto2027": 80.0,
-  "0xbadaf319": 37.05,
+  "0xbadaf319": 35.78,
   "gkmgkldfmg": 470.51,
-  "1kto1m": 320.1,
-  "BikesAreTheBikes": 222.85,
+  "1kto1m": 318.91,
+  "BikesAreTheBikes": 224.77,
   "AIcAIc": 344.56
  },
  "bets": [
@@ -2108,6 +2108,37 @@
  ],
  "missed": [
   {
+   "ts": 1784648798,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "63211073606793804423333353862189269330913460147355410611068287262791890789543",
+   "cond": "0x5dd201517c0879ed3bcf2046d83586a6b32c3a71ab8c7877e308101f19fda007",
+   "title": "Iran full airspace closure by July 27?",
+   "outcome": "No",
+   "price": 0.72,
+   "stake": 55.01,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "sold",
+   "pnl": -3.24,
+   "settled": 1784657990,
+   "name": "0xbadaf319",
+   "exit_price": 0.69
+  },
+  {
+   "ts": 1784657983,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "83432464582900021768828185200260903111076458489414209503967480044416221851661",
+   "cond": "0xcef977a42d757016fc76c46cf4de3fd65c164ef8af0e6daf62a166058f9f621b",
+   "title": "Will Google (GOOGL) Q2 capital expenditures be above $40B?",
+   "outcome": "Yes",
+   "price": 0.9399,
+   "stake": 38.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784128795,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "36572361863292743525172722296256449344593421343195350786366455281513675169221",
@@ -2187,21 +2218,6 @@
    "settled": 1784649008,
    "name": "0xbadaf319",
    "exit_price": 0.725
-  },
-  {
-   "ts": 1784648798,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "63211073606793804423333353862189269330913460147355410611068287262791890789543",
-   "cond": "0x5dd201517c0879ed3bcf2046d83586a6b32c3a71ab8c7877e308101f19fda007",
-   "title": "Iran full airspace closure by July 27?",
-   "outcome": "No",
-   "price": 0.72,
-   "stake": 55.01,
-   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784628735,
@@ -3035,24 +3051,67 @@
    "settled": 1784305975,
    "name": "0xbadaf319",
    "exit_price": 0.5147
-  },
-  {
-   "ts": 1784305076,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "28782906734976367034652809126970357901755811695575578507894349405056833093999",
-   "cond": "0x2958e5aaa8ff729d588001f798ea3b84ad0d786927e1a92bd819d8c87477a640",
-   "title": "Dota 2: Nigma Galaxy vs BetBoom Team - Game 2 Winner",
-   "outcome": "Nigma Galaxy",
-   "price": 0.09,
-   "stake": 102.53,
-   "reason": "book unreliable (spread 0.16 > 0.08)",
-   "status": "sold",
-   "pnl": 158.1,
-   "settled": 1784305303,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.2367
   }
  ],
- "missed_pnl": 95298.71,
- "updated": 1784655289
+ "missed_pnl": 95295.47,
+ "last_fill": null,
+ "wallet_pnl": {
+  "0xbadaf319": {
+   "realized": 537.11,
+   "n": 46,
+   "wins": 12,
+   "open_cost": 591.35,
+   "open_n": 9,
+   "last_ts": 1784650955
+  },
+  "gkmgkldfmg": {
+   "realized": 776.39,
+   "n": 86,
+   "wins": 0,
+   "open_cost": 0.0,
+   "open_n": 0,
+   "last_ts": 1784655289
+  },
+  "1kto1m": {
+   "realized": 142.98,
+   "n": 12,
+   "wins": 0,
+   "open_cost": 0.0,
+   "open_n": 0,
+   "last_ts": 1784206643
+  },
+  "Kruto2027": {
+   "realized": 750.16,
+   "n": 5,
+   "wins": 0,
+   "open_cost": 0.0,
+   "open_n": 0,
+   "last_ts": 1784497270
+  },
+  "LSB1": {
+   "realized": -397.16,
+   "n": 7,
+   "wins": 2,
+   "open_cost": 0.0,
+   "open_n": 0,
+   "last_ts": 1783867043
+  },
+  "AIcAIc": {
+   "realized": -60.55,
+   "n": 14,
+   "wins": 0,
+   "open_cost": 0.0,
+   "open_n": 0,
+   "last_ts": 1784472579
+  },
+  "BikesAreTheBikes": {
+   "realized": 58.32,
+   "n": 5,
+   "wins": 1,
+   "open_cost": 659.73,
+   "open_n": 8,
+   "last_ts": 1784649072
+  }
+ },
+ "updated": 1784657990
 }
