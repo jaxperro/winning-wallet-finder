@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784754337,
+ "updated": 1784754813,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.57,
@@ -8,7 +8,7 @@
    "wins": 4,
    "open_cost": 11.91,
    "open_n": 5,
-   "miss_n": 59,
+   "miss_n": 60,
    "miss_pnl": 1160.77,
    "last_ts": 1784722113
   },
@@ -58,8 +58,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 16,
-   "miss_pnl": -1.23,
+   "miss_n": 15,
+   "miss_pnl": -1.66,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -88,8 +88,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 4,
-   "miss_pnl": 0.57,
+   "miss_n": 5,
+   "miss_pnl": 1.0,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -2372,6 +2372,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784754808,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "81905629695376179467642152439122205490366546600283546015907818703618943938229",
+   "cond": "0x784aad9ba3f0aa5f8c2e6c4dc9314d8899cd147d6b289e6eb289e66a5b569082",
+   "title": "Will Elon Musk tweet \"Hyperliquid\" by August 31, 2026?",
+   "outcome": "No",
+   "price": 0.004,
+   "stake": 2.52,
+   "reason": "thin book ($9 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784737933,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -5537,7 +5552,7 @@
    "status": "sold",
    "pnl": 0.43,
    "settled": 1783743418,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_price": 1.0
   },
   {

@@ -2083,6 +2083,21 @@
  ],
  "missed": [
   {
+   "ts": 1784754808,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "81905629695376179467642152439122205490366546600283546015907818703618943938229",
+   "cond": "0x784aad9ba3f0aa5f8c2e6c4dc9314d8899cd147d6b289e6eb289e66a5b569082",
+   "title": "Will Elon Musk tweet \"Hyperliquid\" by August 31, 2026?",
+   "outcome": "No",
+   "price": 0.004,
+   "stake": 2.52,
+   "reason": "thin book ($9 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784737933,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "101809971081124775410756971833962290310584447326615818129608807839263253483036",
@@ -3016,24 +3031,9 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1784438563,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "63579552197509143589959693779993809440480166595009463744830254978620312708977",
-   "cond": "0x46d3552e03b57d3dd99685973c0e2df2e1f177c70c3641fe17d539e3a4a23a22",
-   "title": "Will Trump's approval rating hit 46% in 2026?",
-   "outcome": "No",
-   "price": 0.766,
-   "stake": 2.0,
-   "reason": "book unreliable (spread 0.13 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 1165.97,
+ "missed_pnl": 1165.54,
  "last_fill": {
   "ts": 1784725645,
   "side": "SELL",
@@ -3049,7 +3049,7 @@
    "wins": 4,
    "open_cost": 11.91,
    "open_n": 5,
-   "miss_n": 59,
+   "miss_n": 60,
    "miss_pnl": 1160.77,
    "last_ts": 1784722113
   },
@@ -3099,8 +3099,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 16,
-   "miss_pnl": -1.23,
+   "miss_n": 15,
+   "miss_pnl": -1.66,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -3129,8 +3129,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 4,
-   "miss_pnl": 0.57,
+   "miss_n": 5,
+   "miss_pnl": 1.0,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3144,5 +3144,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784754337
+ "updated": 1784754813
 }
