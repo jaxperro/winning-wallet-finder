@@ -38,7 +38,9 @@ the tape.
   fold can never starve capture. ~250-400MB/day of parquet -> months of
   headroom, months more once mirrored+acked files get pruned.
 - **`sync_tape.py`** (Mac, every 15 min via `com.jaxperro.tape-sync` +
-  from daily.sh): pulls new manifest entries over `flyctl sftp`,
+  from daily.sh): pulls new manifest entries over `flyctl sftp` (240s cap,
+  then the base64-over-console fallback that carried ingest.py — sftp
+  flaked twice in two days, 2026-07-22, leaving magic-byte-less partials),
   row-verifies each file, appends its rows into `live/rtds.duckdb`'s
   native tables (research keeps native speed — views-over-parquet was
   rejected: per-asset point queries would crawl), records it in

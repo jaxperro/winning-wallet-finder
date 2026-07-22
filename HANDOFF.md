@@ -24,10 +24,14 @@ Builder API Key (SDK gasless relay) the runtime bot deliberately lacks —
 LOW urgency, the platform auto-redeems winners itself. auto_redeem OFF.
 Open now: #1 Signal A, #2 tape research, #4 redeem builder-key, #13 Fri
 bench, #14 edge verdict, #15 tape-pull batching (Stage-0 fold+mirror
-superseded the bulk path; per-file sftp batching still worth it), #16
-surge momentum (forward window OPEN), #17 oracle fair value (accumulating,
-nothing frozen). #18 (empty-cond copies unsettleable) closed same day:
-RTDS seed enrichment + falsy-cond repair pass + 1h alarm.
+superseded the bulk path; sync now sftp-with-base64-fallback), #16 surge
+momentum (**KILL CRITERIA MET 2026-07-22** — resolution-timing scorer bug,
+FINDINGS round-3 section; formal close at Friday's read), #17 oracle fair
+value (sample ×30 under chain scoring; E0.04 tier killed, E≥0.07 slightly
+positive and accumulating), #19 surge sprint plan (Friday decision matrix;
+surgebot stays paper through the read). #18 (empty-cond copies
+unsettleable) closed same day: RTDS seed enrichment + falsy-cond repair
+pass + 1h alarm.
 
 ## Operating boundary (user, 2026-07-13 — standing)
 **Full autonomy on the bots**; the real-money bot **stays ARMED**. Never
@@ -63,24 +67,33 @@ push through.
   `live/parquet/` = complete durable layer (Stage-1 MotherDuck feedstock).
 - **VALUE experiment: CLOSED 2026-07-19** — sub-2¢ hypothesis refuted
   (1W/993L, 0.075x); post-mortem in value/PLAN.md; app destroyed.
-- **research/ (NEW 2026-07-20, SILO — never touches the bots)**: tape-era
-  edge factory. Sharp screen (`live/tape_sharps.py`, resolution proxy
-  chain-validated 742/742, 25 copyable candidates); execution sim fitted on
-  our own 29 labeled attempts (−2¢/fill optimism bias, thresholds sit 2×
-  above it); Study A surge momentum #16 (identity NULL result — controls
-  match the informed set) and Study B oracle fair value #17 (86% craters,
-  winner's-curse inversion). Verdicts ONLY from research/forward_ledger.jsonl.
+- **research/ (SILO — never touches the bots)**: tape-era edge factory.
+  Sharp screen (`live/tape_sharps.py`, proxy chain-validated 742/742, 25
+  copyable candidates); execution sim fitted on 29 labeled live attempts.
+  **2026-07-22 SCORER LAW (FINDINGS round-3): every arm scores through
+  payouts_for() — tape proxy + mandatory CTF chain overlay. "Pending" is
+  never outcome-neutral on Polymarket (market liveness encodes the
+  outcome: losses hide behind the still-trading winning sibling).** Study
+  A surge (#16): KILLED by that correction (−$6.03/fill × 1,108 forward
+  fills; identity-null stands). Study B oracle (#17): E0.04 killed,
+  E≥0.07 accumulating slightly positive. Verdicts ONLY from
+  research/forward_ledger.jsonl.
+- **wwf-surgebot (PAPER, ~$3/mo)**: real-time surge harness — $100 book,
+  $5 stakes, event cap 2, paper FAK vs live CLOB, /feed endpoint → the
+  /surge dashboard; chain-graded nightly (grade_surge.py). THE instrument
+  that caught the scorer bug (its 57.5% refused to match the ledger's
+  81%). Runs through Friday's read, then archive per #19.
 - **Verdicts pending**: edge/size-up (#14, ~end of July, pre-registered) ·
-  bench review Friday (#13: five new sharps + AIcAIc's prove-it week —
-  cross-read the tape screen's candidates in live/tape_sharps.json) ·
-  #16/#17 forward thresholds (in their issues).
-- Dashboards: jaxperro.com/{trading,live,value} · daily pipeline on the Mac
-  at 08:00 (launchd, lockfile) — floors, bench forward table, edge row,
-  tape sync, Discord digest · tape mirror every 15 min
-  (com.jaxperro.tape-sync → recorder/sync_tape.py) · research nightly
-  fires 09:15 then WAITS for fresh tape (com.jaxperro.research-nightly →
-  research/nightly.sh, self-commits the forward ledger). All launchd agents
-  removable with `launchctl unload ~/Library/LaunchAgents/<label>.plist`.
+  Friday's combined read (#13 bench + #16 formal close + #17 oracle-tier
+  decision + #19 sprint-plan disposition — every number now chain-true).
+- Dashboards: jaxperro.com/{trading,live,surge,value} · daily pipeline on
+  the Mac at 08:00 (launchd, lockfile) — floors, bench forward table, edge
+  row, tape sync, Discord digest · tape mirror every 15 min
+  (com.jaxperro.tape-sync → sync_tape.py, sftp + base64-console fallback)
+  · research nightly fires 09:15 then WAITS for fresh tape
+  (com.jaxperro.research-nightly; self-commits ledger, informed set,
+  surge/oracle grades). All launchd agents removable with
+  `launchctl unload ~/Library/LaunchAgents/<label>.plist`.
 
 ## Ops quick-reference
 - Follow-set change: edit live/copybot.paper.json → `./live/deploy_bot.sh`;

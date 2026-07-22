@@ -22,8 +22,9 @@ automatable from public data.
 | **Multi-outcome logical arb** | ❌ dead | True partitions priced efficiently (min sum 0.999). Apparent "arbs" were non-exclusive market groupings. |
 | **Cross-venue arb (Polymarket↔Kalshi)** | ❌ dead | Venues agree to ~1¢; locking both legs costs **>$1 after fees**. Real gaps last ~seconds and are taken by bots. |
 | **Insider / sharp detection** | ✅ **works** | Statistical improbability (z-score of wins vs. odds) is a real, hard-to-fake edge signal. See `insider.py`. |
-| **In-play surge momentum (tape)** | ⏳ forward window | Sim: ~+$24/fill after fees at measured execution; wallet identity adds NOTHING (controls match). Pre-registered verdict pending — #16. |
-| **Crypto oracle fair-value taking** | ⏳ forward window | 86% of mispricings die as craters; big fillable edges are winner's-curse traps. Nothing frozen — #17. |
+| **In-play surge momentum (tape)** | ❌ dead | The +$24-46/fill was resolution-timing survivorship (bias round 3, below). Chain truth: **−$6/fill over 1,108 forward fills** — pre-registered kill met 2026-07-22, three days before the funding decision. Wallet-identity null stands. |
+| **Sub-5¢ surge longshots** | ❌ dead | 0-for-38 under chain truth; the exploratory scan's 4 "winners" were the same resolution bias. |
+| **Crypto oracle fair-value taking** | ⏳ forward window | Chain resolution grew the sample 30× and flipped the read: noisy-around-zero, slight positive tilt at E≥0.07 (+$1.8-2.3/fill, n≈470-860 fwd). E0.04 tier killed; stricter tiers accumulating — #17. |
 
 ## The big technical findings
 
@@ -466,6 +467,11 @@ optimistic view, discount accordingly.
 
 ## The tape era opens: first RTDS findings (2026-07-20)
 
+> **CORRECTED 2026-07-22**: the Study-A/B *EV figures* in this section were
+> inflated by resolution-timing survivorship (see the next section). The
+> structural findings — sharp screen, identity-null, crater physics —
+> survive; the surge P&L numbers do not.
+
 Three days of the recorder's firehose in `live/rtds.duckdb` (13.8M fills,
 160k wallets, every fill *including the losers*) killed the survivorship
 problem at the source and produced four findings in one day — details, code,
@@ -506,6 +512,54 @@ Execution realism note for everything above: the research simulator is
 fitted on the live bot's own 29 labeled attempts (fills + FAK misses) and
 carries a measured **−2¢/fill optimism bias** — every pre-registered pass
 threshold sits at least 2× above it.
+
+## Survivorship bias, round three: resolution timing kills Study A (2026-07-22)
+
+The forward ledger said the surge signal earned **+$35–46/fill**. The truth
+was **−$6/fill**. The gap was a third, subtler survivorship mechanism — and
+the way it was caught is the real finding.
+
+**The mechanism.** The ledger graded fills with the tape's proxy-resolution
+and skipped "pending" markets. But tape resolution is *win-biased*: when our
+side wins, the losing sibling goes quiet and the market resolves into the
+ledger within hours. When our side **loses**, the *winning* sibling keeps
+printing at 99¢ until close — the sibling-veto keeps the market "alive" and
+the loss hides in the ignored pending bucket. Wins scored same-day; losses
+waited. Jul-21 audit: tape-resolved fills hit 81% (+$46/fill); the 329
+"pending" fills, chain-resolved on the spot, hit **26% (−$49.61/fill)**.
+Combined: 53%, ≈ breakeven-negative.
+
+**How it was caught: an independent instrument refused to agree.** The
+surge paper harness (wwf-surgebot — real-time, $5 stakes, graded nightly
+against CTF payout vectors from day one) read 57.5% while the ledger read
+73–81%. Decomposition ruled out selection (same-trigger cohorts hit alike)
+and entry prices (~1¢ effect); what remained was the scorer itself. The
+same pattern as rounds one (unredeemed losers) and two (res_t poison): a
+too-good number met a measurement that couldn't be sweet-talked.
+
+**The fix** (`research/forward.py payouts_for()`, d34a4c5): chain-truth
+overlay is now mandatory for every arm — tape proxy first, CTF payout
+vectors for the remainder, refunds as scratches. Full recompute:
+
+| arm | corrected verdict |
+|---|---|
+| Study A surge (#16) | **KILL met**: −$6.03/fill over 1,108 forward fills; even the fit day negative. Identity-null unchanged (controls deflated equally). |
+| sub-5¢ longshots | **0-for-38** — the scan's "winners" were the same bias. |
+| Study B oracle (#17) | Sample ×30 under chain resolution (crypto sprints were veto-stuck). Now noisy-zero with a positive tilt at E≥0.07; the 4¢ tier killed, stricter tiers accumulating. |
+
+**What the pre-registration bought.** The kill line was written 2026-07-20,
+before any forward data; when the corrected numbers crossed it there was
+nothing to argue about and no money at risk — the $100 deployment plan
+(#19) was three days from its funding gate. Total cost of the false edge:
+$0 real, ~2 days of compute, one paper book that ended at $99-and-change.
+
+**Standing rules extracted:** (1) any scorer that can say "pending" must
+prove pending is outcome-neutral, or chain-resolve it — on Polymarket it
+never is neutral, because market liveness itself encodes the outcome;
+(2) every study needs one instrument that doesn't share the scorer's
+assumptions (the paper harness earns its keep even when — especially
+when — it disagrees); (3) at 20–50× payoffs, no small sample means
+anything: the sub-5¢ "edge" survived a 31-fill scan and died at 38.
 
 ## Repo layout
 
