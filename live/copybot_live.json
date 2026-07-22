@@ -2114,6 +2114,21 @@
  ],
  "missed": [
   {
+   "ts": 1784506708,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "47220780654207130900897946624720002557366582763680292491834518691726158359185",
+   "cond": "0x943ef1da2c4e06269e15f15bd6840c9a91e730f576e9af3c122d9fc5b895c484",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $142 Week of July 20 2026?",
+   "outcome": "Yes",
+   "price": 0.52,
+   "stake": 6.25,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "won",
+   "pnl": 5.68,
+   "settled": 1784729089,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784727262,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "92050986166401987445069388208414464326154054301377903319727847954822960387891",
@@ -2632,21 +2647,6 @@
    "name": "0xbadaf319"
   },
   {
-   "ts": 1784506708,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "47220780654207130900897946624720002557366582763680292491834518691726158359185",
-   "cond": "0x943ef1da2c4e06269e15f15bd6840c9a91e730f576e9af3c122d9fc5b895c484",
-   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $142 Week of July 20 2026?",
-   "outcome": "Yes",
-   "price": 0.52,
-   "stake": 6.25,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1784503159,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "29659986108488397735882658288901718486356813252845923931653357875218546128408",
@@ -3055,7 +3055,7 @@
    "exit_price": 0.9701
   }
  ],
- "missed_pnl": 95310.74,
+ "missed_pnl": 95316.42,
  "last_fill": {
   "ts": 1784725643,
   "side": "SELL",
@@ -3072,7 +3072,7 @@
    "open_cost": 638.59,
    "open_n": 9,
    "miss_n": 50,
-   "miss_pnl": 95533.66,
+   "miss_pnl": 95539.34,
    "last_ts": 1784722115
   },
   "gkmgkldfmg": {
@@ -3146,5 +3146,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784727262
+ "updated": 1784729091
 }
