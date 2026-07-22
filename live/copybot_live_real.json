@@ -2078,6 +2078,21 @@
  ],
  "missed": [
   {
+   "ts": 1784528216,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "80568398380615613281811262196000400273657215935776416622694841219164637714912",
+   "cond": "0xfcb2ba978ce2e5cc300f76adca25f8b74d9eede005f089498aa6dc0faaf7aaee",
+   "title": "Iran successfully targets shipping by July 31?",
+   "outcome": "Yes",
+   "price": 0.56,
+   "stake": 2.41,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "won",
+   "pnl": 1.86,
+   "settled": 1784700488,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784696452,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "68642938852444405618524357112499284175503313921723452625127267630411120480355",
@@ -2443,21 +2458,6 @@
    "settled": 1784548310,
    "name": "0xbadaf319",
    "exit_price": 0.725
-  },
-  {
-   "ts": 1784528216,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "80568398380615613281811262196000400273657215935776416622694841219164637714912",
-   "cond": "0xfcb2ba978ce2e5cc300f76adca25f8b74d9eede005f089498aa6dc0faaf7aaee",
-   "title": "Iran successfully targets shipping by July 31?",
-   "outcome": "Yes",
-   "price": 0.56,
-   "stake": 2.41,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784506248,
@@ -3024,7 +3024,7 @@
    "exit_price": 0.9728
   }
  ],
- "missed_pnl": 1165.65,
+ "missed_pnl": 1167.51,
  "last_fill": {
   "ts": 1784660810,
   "side": "BUY",
@@ -3041,7 +3041,7 @@
    "open_cost": 11.88,
    "open_n": 5,
    "miss_n": 56,
-   "miss_pnl": 1155.66,
+   "miss_pnl": 1157.52,
    "last_ts": 1784630337
   },
   "AIcAIc": {
@@ -3125,5 +3125,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784696453
+ "updated": 1784700489
 }
