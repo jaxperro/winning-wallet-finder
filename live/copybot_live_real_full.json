@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784753349,
+ "updated": 1784754337,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.57,
@@ -2385,7 +2385,8 @@
    "status": "won",
    "pnl": 0.16,
    "settled": 1784753348,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1784508146,
