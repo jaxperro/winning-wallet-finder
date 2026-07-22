@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.85,
- "cash": 40.14,
- "deployed": 21.68,
+ "cash": 37.6,
+ "deployed": 24.19,
  "reserve": 0.0,
- "realized": -14.03,
+ "realized": -14.06,
  "adjustments": 9.44,
  "ledger_drift": 0.0,
- "open_count": 12,
- "fees_paid": 2.89,
+ "open_count": 13,
+ "fees_paid": 2.92,
  "fee_rate": 0.03,
  "lag": {
-  "n": 102,
-  "n24": 3,
-  "avg_s": 12.1,
-  "avg_slip_pct": 0.0225,
+  "n": 103,
+  "n24": 4,
+  "avg_s": 10.9,
+  "avg_slip_pct": 0.0127,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 341.23
  },
  "bets": [
+  {
+   "token": "61895825019286928316753689208545457497714235075046708292847356747636406191670",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "EDward Gaming",
+   "title": "LoL: LGD Gaming vs EDward Gaming - Game 1 Winner",
+   "their_price": 0.6,
+   "my_price": 0.59,
+   "slippage_pct": -0.0167,
+   "lag_s": 7.3,
+   "shares": 4.26,
+   "cost": 2.51,
+   "fee": 0.03,
+   "opened": 1784712209,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2053,26 +2072,6 @@
    "settled": 1783762711,
    "sold_shares": 1.56,
    "sold_proceeds": 0.91
-  },
-  {
-   "token": "97030903347936099809712211774880132820716149097020948618258743557775057824890",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Hanwha Life Esports",
-   "title": "LoL: Hanwha Life Esports vs LYON - Game 1 Winner",
-   "their_price": 0.73,
-   "my_price": 0.69,
-   "slippage_pct": -0.0548,
-   "shares": 1.49,
-   "cost": 1.03,
-   "fee": 0.01,
-   "opened": 1783758622,
-   "status": "closed",
-   "exit_price": 0.836,
-   "pnl": 0.21,
-   "settled": 1783759184,
-   "sold_shares": 1.49,
-   "sold_proceeds": 1.25
   }
  ],
  "missed": [
@@ -3027,12 +3026,12 @@
  ],
  "missed_pnl": 1166.45,
  "last_fill": {
-  "ts": 1784709739,
+  "ts": 1784712216,
   "side": "BUY",
-  "price": 0.71,
-  "shares": 3.48,
-  "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-  "outcome": "Yes"
+  "price": 0.59,
+  "shares": 4.26,
+  "title": "LoL: LGD Gaming vs EDward Gaming - Game 1 Winner",
+  "outcome": "EDward Gaming"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3049,11 +3048,11 @@
    "realized": -15.84,
    "n": 10,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 2.51,
+   "open_n": 1,
    "miss_n": 5,
    "miss_pnl": 4.5,
-   "last_ts": 1784472581
+   "last_ts": 1784712209
   },
   "(incident)": {
    "realized": 5.86,
@@ -3126,5 +3125,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784711498
+ "updated": 1784712216
 }
