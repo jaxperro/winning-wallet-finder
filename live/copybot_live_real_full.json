@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784747978,
+ "updated": 1784750684,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.57,
@@ -58,8 +58,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 17,
-   "miss_pnl": -2.24,
+   "miss_n": 16,
+   "miss_pnl": -1.23,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -78,7 +78,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 7,
+   "miss_n": 8,
    "miss_pnl": 9.31,
    "last_ts": 1784497466
   },
@@ -88,8 +88,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 3,
-   "miss_pnl": 1.58,
+   "miss_n": 4,
+   "miss_pnl": 0.57,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -2372,6 +2372,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784750680,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "110230164960434404310059385575944076505582891264305624307112518287452413536393",
+   "cond": "0x1d15ca70c93da7338e6134144dd19a41a8120f8a1ad1bca067478cdbf6d5b18a",
+   "title": "LoL: Myth Esports vs Dynasty - Game 1 Winner",
+   "outcome": "Myth Esports",
+   "price": 0.45,
+   "stake": 2.52,
+   "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1784747978,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -5533,7 +5548,7 @@
    "status": "lost",
    "pnl": -1.01,
    "settled": 1783742299,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
