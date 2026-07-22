@@ -2114,6 +2114,21 @@
  ],
  "missed": [
   {
+   "ts": 1784737932,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "101809971081124775410756971833962290310584447326615818129608807839263253483036",
+   "cond": "0x7665295c0d116c9df0dccbbf10148a37f39093a7b1427b2f46358f6ec31b6cd3",
+   "title": "Will NVIDIA (NVDA) close above $205 on July 22?",
+   "outcome": "Yes",
+   "price": 0.94,
+   "stake": 11.49,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784506708,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "47220780654207130900897946624720002557366582763680292491834518691726158359185",
@@ -3039,22 +3054,6 @@
    "settled": 1784389870,
    "name": "gkmgkldfmg",
    "exit_price": 0.8553
-  },
-  {
-   "ts": 1784377056,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "10916744353953665895148740879560856223867654434417397094964240555712472099459",
-   "cond": "0x9728557919be9ab35b2fd13c763c81ea4456de4dee839ea2982c4e699edb522e",
-   "title": "Map Handicap: JustP (-1.5) vs QUAZAR (+1.5)",
-   "outcome": "QUAZAR",
-   "price": 0.76,
-   "stake": 105.8,
-   "reason": "book unreliable (spread 0.22 > 0.08)",
-   "status": "sold",
-   "pnl": 28.37,
-   "settled": 1784389548,
-   "name": "Kruto2027",
-   "exit_price": 0.9701
   }
  ],
  "missed_pnl": 95313.36,
@@ -3073,7 +3072,7 @@
    "wins": 12,
    "open_cost": 638.59,
    "open_n": 9,
-   "miss_n": 50,
+   "miss_n": 51,
    "miss_pnl": 95536.28,
    "last_ts": 1784722115
   },
@@ -3148,5 +3147,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784733059
+ "updated": 1784737987
 }
