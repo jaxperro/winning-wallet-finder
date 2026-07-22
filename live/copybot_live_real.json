@@ -2092,10 +2092,12 @@
    "price": 0.7425,
    "stake": 1.0,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "won",
-   "pnl": 0.34,
+   "status": "sold",
+   "pnl": -0.09,
    "settled": 1784758604,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.6853
   },
   {
    "ts": 1784746882,
@@ -3034,7 +3036,7 @@
    "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 1171.47,
+ "missed_pnl": 1171.04,
  "last_fill": {
   "ts": 1784725645,
   "side": "SELL",
@@ -3051,7 +3053,7 @@
    "open_cost": 11.91,
    "open_n": 5,
    "miss_n": 60,
-   "miss_pnl": 1167.36,
+   "miss_pnl": 1166.93,
    "last_ts": 1784722113
   },
   "AIcAIc": {
@@ -3145,5 +3147,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784758606
+ "updated": 1784760166
 }
