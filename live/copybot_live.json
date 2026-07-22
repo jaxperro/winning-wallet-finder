@@ -2114,6 +2114,21 @@
  ],
  "missed": [
   {
+   "ts": 1784727262,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "92050986166401987445069388208414464326154054301377903319727847954822960387891",
+   "cond": "0xd2a295c1c4015ad115574f49bf871f925b6d6967af23d383ba155670c3ece25c",
+   "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $156 Week of July 20 2026?",
+   "outcome": "No",
+   "price": 0.87,
+   "stake": 51.03,
+   "reason": "thin book ($34 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784724871,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "55322743872828723669471333687599655362701668769312714121349035444960033270363",
@@ -3038,22 +3053,6 @@
    "settled": 1784389548,
    "name": "Kruto2027",
    "exit_price": 0.9701
-  },
-  {
-   "ts": 1784388877,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "58169143653343450326195498215538236930997670878228551327845934859747060865016",
-   "cond": "0x68bdc057bd18669f01b3e4b408d14733b2680a61c6e5c7a5cd5bdc86a1f41df6",
-   "title": "Dota 2: Team Yandex vs PARIVISION - Game 2 Winner",
-   "outcome": "Team Yandex",
-   "price": 0.45,
-   "stake": 103.71,
-   "reason": "price moved 0.32\u21920.45",
-   "status": "sold",
-   "pnl": 27.12,
-   "settled": 1784389228,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.5824
   }
  ],
  "missed_pnl": 95310.74,
@@ -3072,7 +3071,7 @@
    "wins": 12,
    "open_cost": 638.59,
    "open_n": 9,
-   "miss_n": 49,
+   "miss_n": 50,
    "miss_pnl": 95533.66,
    "last_ts": 1784722115
   },
@@ -3147,5 +3146,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784725717
+ "updated": 1784727262
 }
