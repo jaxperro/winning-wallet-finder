@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784713018,
+ "updated": 1784714410,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 537.11,
@@ -56,11 +56,11 @@
    "realized": -90.31,
    "n": 16,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 110.38,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784713018
+   "last_ts": 1784714402
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -84,6 +84,25 @@
   }
  },
  "bets": [
+  {
+   "token": "26988481082400938234620905580029354496814882411644162756993608321400480311992",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "EDward Gaming",
+   "title": "LoL: LGD Gaming vs EDward Gaming (BO3) - LPL Group Ascend",
+   "their_price": 0.27,
+   "my_price": 0.27,
+   "slippage_pct": 0.0,
+   "lag_s": 1.3,
+   "shares": 408.81,
+   "cost": 110.38,
+   "fee": 2.4173,
+   "opened": 1784714402,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "109327236025013742107209446994759648486337225456400949684723230400014744810383",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
