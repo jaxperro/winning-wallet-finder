@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784712216,
+ "updated": 1784712547,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.45,
@@ -18,7 +18,7 @@
    "wins": 0,
    "open_cost": 2.51,
    "open_n": 1,
-   "miss_n": 5,
+   "miss_n": 6,
    "miss_pnl": 4.5,
    "last_ts": 1784712209
   },
@@ -2295,6 +2295,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784712542,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "109327236025013742107209446994759648486337225456400949684723230400014744810383",
+   "cond": "0xa22cb6ca53c2ccef8ee00feffc56ad1993c4cfb360d8f7698b04a094434b2edf",
+   "title": "LoL: LGD Gaming vs EDward Gaming - Game 1 Winner",
+   "outcome": "LGD Gaming",
+   "price": 0.7,
+   "stake": 2.47,
+   "reason": "in-play hold expired unfilled (36s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
   {
    "ts": 1784528216,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
