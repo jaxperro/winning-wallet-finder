@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 111.2,
+ "stake": 111.57,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1687.78,
- "deployed": 1092.3,
+ "cash": 1733.27,
+ "deployed": 1055.98,
  "reserve": 0.0,
- "realized": 1780.05,
+ "realized": 1789.22,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 17,
- "fees_paid": 325.84,
+ "fees_paid": 326.01,
  "fee_rate": 0.03,
  "lag": {
   "n": 218,
@@ -64,8 +64,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 104.96,
-   "sold_proceeds": 93.95
+   "sold_shares": 156.84,
+   "sold_proceeds": 139.44
   },
   {
    "token": "56895600526342043824967043463285146349388358932785516761025080000931732654952",
@@ -3053,10 +3053,10 @@
  ],
  "missed_pnl": 95309.91,
  "last_fill": {
-  "ts": 1784709865,
+  "ts": 1784710120,
   "side": "SELL",
-  "price": 0.89,
-  "shares": 22.8,
+  "price": 0.88,
+  "shares": 22.48,
   "title": "Will Benjamin Netanyahu visit New York City by December 31?",
   "outcome": "Yes"
  },
@@ -3142,5 +3142,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784709871
+ "updated": 1784710120
 }
