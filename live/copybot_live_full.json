@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784723139,
+ "updated": 1784724893,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.9,
@@ -8,7 +8,7 @@
    "wins": 12,
    "open_cost": 638.59,
    "open_n": 9,
-   "miss_n": 48,
+   "miss_n": 49,
    "miss_pnl": 95532.83,
    "last_ts": 1784722115
   },
@@ -56,11 +56,11 @@
    "realized": 103.33,
    "n": 19,
    "wins": 0,
-   "open_cost": 110.38,
-   "open_n": 1,
+   "open_cost": 228.65,
+   "open_n": 2,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784723139
+   "last_ts": 1784724888
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -84,6 +84,25 @@
   }
  },
  "bets": [
+  {
+   "token": "55071405929941363854274866721931311048000830793954776923614437932856724606852",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Top Esports",
+   "title": "LoL: Top Esports vs Team WE - Game 2 Winner",
+   "their_price": 0.6618,
+   "my_price": 0.62,
+   "slippage_pct": -0.0631,
+   "lag_s": 5.5,
+   "shares": 190.75,
+   "cost": 118.27,
+   "fee": 1.3482,
+   "opened": 1784724888,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "95881905429518344941380148326492553933806571454773462059114401886982592434913",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -4148,6 +4167,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784724871,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "55322743872828723669471333687599655362701668769312714121349035444960033270363",
+   "cond": "0x756c8e0bf6d5e4781a2dc0076040132c748a9b6afcce050842897f46a7b493c4",
+   "title": "Will the highest temperature in Istanbul be 31\u00b0C on July 22?",
+   "outcome": "No",
+   "price": 0.943,
+   "stake": 50.68,
+   "reason": "thin book ($24 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784709848,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
