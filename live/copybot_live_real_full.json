@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784729094,
+ "updated": 1784730863,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.57,
@@ -9,7 +9,7 @@
    "open_cost": 11.91,
    "open_n": 5,
    "miss_n": 58,
-   "miss_pnl": 1158.12,
+   "miss_pnl": 1157.09,
    "last_ts": 1784722113
   },
   "AIcAIc": {
@@ -2382,10 +2382,12 @@
    "price": 0.594,
    "stake": 2.41,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "won",
-   "pnl": 1.62,
+   "status": "sold",
+   "pnl": 0.59,
    "settled": 1784729094,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.7514
   },
   {
    "ts": 1784727261,
