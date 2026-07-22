@@ -2126,7 +2126,8 @@
    "status": "refund",
    "pnl": 3.03,
    "settled": 1784756659,
-   "name": "Kruto2027"
+   "name": "Kruto2027",
+   "exit_checked": true
   },
   {
    "ts": 1784275928,
@@ -2141,7 +2142,8 @@
    "status": "won",
    "pnl": 120.58,
    "settled": 1784756458,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1784755189,
@@ -3147,5 +3149,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784756660
+ "updated": 1784757400
 }
