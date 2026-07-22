@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784754810,
+ "updated": 1784755102,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.9,
@@ -8,7 +8,7 @@
    "wins": 12,
    "open_cost": 638.59,
    "open_n": 9,
-   "miss_n": 52,
+   "miss_n": 53,
    "miss_pnl": 95660.04,
    "last_ts": 1784722115
   },
@@ -4169,6 +4169,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784755101,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "61732519224035345472843765202641458946038730839684443029887468562689879517849",
+   "cond": "0x21e1af0405c04efa4d30febd572d99f1d331026a9f52c2df0e9346e695025a52",
+   "title": "Will Alphabet Inc. (GOOGL) hit (LOW) $330 in July?",
+   "outcome": "Yes",
+   "price": 0.06,
+   "stake": 67.09,
+   "reason": "thin book ($2 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784754810,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
