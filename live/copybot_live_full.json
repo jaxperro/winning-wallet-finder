@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784755102,
+ "updated": 1784755189,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.9,
@@ -68,7 +68,7 @@
    "wins": 1,
    "open_cost": 706.41,
    "open_n": 7,
-   "miss_n": 20,
+   "miss_n": 21,
    "miss_pnl": -408.6,
    "last_ts": 1784660784
   },
@@ -4169,6 +4169,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784755189,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "6942521039548952262803452715536366269632833663841807575802631974514414220741",
+   "cond": "0x1121a02fc780ddeb79cf91cdf2fea0a7dc2a8eb91a8643e86a4a415ab519ab90",
+   "title": "Will the Houthis successfully target shipping by August 31, 2026?",
+   "outcome": "No",
+   "price": 0.16,
+   "stake": 116.3,
+   "reason": "thin book ($8 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1784755101,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
