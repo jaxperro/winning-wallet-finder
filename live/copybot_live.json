@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 110.28,
+ "stake": 110.22,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1590.72,
- "deployed": 1166.36,
+ "cash": 1478.85,
+ "deployed": 1276.64,
  "reserve": 0.0,
- "realized": 1757.05,
+ "realized": 1755.46,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 18,
- "fees_paid": 332.31,
+ "open_count": 19,
+ "fees_paid": 333.9,
  "fee_rate": 0.03,
  "lag": {
-  "n": 221,
-  "n24": 10,
-  "avg_s": 8.4,
-  "avg_slip_pct": -0.0211,
+  "n": 222,
+  "n24": 11,
+  "avg_s": 7.8,
+  "avg_slip_pct": -0.0209,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 344.56
  },
  "bets": [
+  {
+   "token": "78756824599620466173157778704367687079439148627730740651855490473811677254129",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "EDward Gaming",
+   "title": "LoL: LGD Gaming vs EDward Gaming - Game 2 Winner",
+   "their_price": 0.53,
+   "my_price": 0.52,
+   "slippage_pct": -0.0189,
+   "lag_s": 1.5,
+   "shares": 212.08,
+   "cost": 110.28,
+   "fee": 1.59,
+   "opened": 1784715732,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "26988481082400938234620905580029354496814882411644162756993608321400480311992",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2086,26 +2105,6 @@
    "settled": 1783962629,
    "sold_shares": 67.8,
    "sold_proceeds": 49.98
-  },
-  {
-   "token": "7410717121876145332418373180741433428881685336911848406679670735933068361996",
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "name": "1kto1m",
-   "outcome": "Down",
-   "title": "S&P 500 (SPX) Up or Down on July 13?",
-   "their_price": 0.83,
-   "my_price": 0.86,
-   "slippage_pct": 0.0361,
-   "shares": 108.85,
-   "cost": 93.61,
-   "fee": 0.39,
-   "opened": 1783953304,
-   "status": "closed",
-   "exit_price": 0.928,
-   "pnl": 7.02,
-   "settled": 1783953925,
-   "sold_shares": 108.85,
-   "sold_proceeds": 101.02
   }
  ],
  "missed": [
@@ -3054,11 +3053,11 @@
  ],
  "missed_pnl": 95309.91,
  "last_fill": {
-  "ts": 1784714403,
+  "ts": 1784715733,
   "side": "BUY",
-  "price": 0.27,
-  "shares": 408.81,
-  "title": "LoL: LGD Gaming vs EDward Gaming (BO3) - LPL Group Ascend",
+  "price": 0.52,
+  "shares": 212.08,
+  "title": "LoL: LGD Gaming vs EDward Gaming - Game 2 Winner",
   "outcome": "EDward Gaming"
  },
  "wallet_pnl": {
@@ -3116,11 +3115,11 @@
    "realized": -90.31,
    "n": 16,
    "wins": 0,
-   "open_cost": 110.38,
-   "open_n": 1,
+   "open_cost": 220.66,
+   "open_n": 2,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784714402
+   "last_ts": 1784715732
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -3143,5 +3142,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784714410
+ "updated": 1784715733
 }
