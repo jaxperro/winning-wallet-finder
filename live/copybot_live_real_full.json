@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784675476,
+ "updated": 1784679281,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.45,
@@ -79,7 +79,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 6,
-   "miss_pnl": 9.35,
+   "miss_pnl": 9.31,
    "last_ts": 1784497466
   },
   "0xd96750bf": {
@@ -2267,9 +2267,9 @@
    "price": 0.5,
    "stake": 2.47,
    "reason": "in-play hold expired unfilled (45s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "refund",
+   "pnl": -0.04,
+   "settled": 1784679280,
    "name": "Kruto2027"
   },
   {

@@ -2087,9 +2087,9 @@
    "price": 0.5,
    "stake": 2.47,
    "reason": "in-play hold expired unfilled (45s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "refund",
+   "pnl": -0.04,
+   "settled": 1784679280,
    "name": "Kruto2027"
   },
   {
@@ -3025,7 +3025,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 1170.05,
+ "missed_pnl": 1170.01,
  "last_fill": {
   "ts": 1784660810,
   "side": "BUY",
@@ -3112,7 +3112,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 6,
-   "miss_pnl": 9.35,
+   "miss_pnl": 9.31,
    "last_ts": 1784497466
   },
   "0xd96750bf": {
@@ -3126,5 +3126,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784675476
+ "updated": 1784679281
 }
