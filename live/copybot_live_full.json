@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784711509,
+ "updated": 1784712216,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 537.11,
@@ -56,11 +56,11 @@
    "realized": -60.55,
    "n": 14,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 111.57,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784472579
+   "last_ts": 1784712209
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -84,6 +84,25 @@
   }
  },
  "bets": [
+  {
+   "token": "61895825019286928316753689208545457497714235075046708292847356747636406191670",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "EDward Gaming",
+   "title": "LoL: LGD Gaming vs EDward Gaming - Game 1 Winner",
+   "their_price": 0.6,
+   "my_price": 0.56,
+   "slippage_pct": -0.0667,
+   "lag_s": 0.4,
+   "shares": 199.23,
+   "cost": 111.57,
+   "fee": 1.4727,
+   "opened": 1784712209,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
