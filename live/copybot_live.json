@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 108.92,
+ "stake": 108.88,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1666.96,
- "deployed": 1055.98,
+ "cash": 1557.03,
+ "deployed": 1164.9,
  "reserve": 0.0,
- "realized": 1722.9,
+ "realized": 1721.89,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 17,
- "fees_paid": 328.57,
+ "open_count": 18,
+ "fees_paid": 329.58,
  "fee_rate": 0.03,
  "lag": {
-  "n": 219,
-  "n24": 8,
-  "avg_s": 9.0,
-  "avg_slip_pct": -0.0134,
+  "n": 220,
+  "n24": 9,
+  "avg_s": 9.2,
+  "avg_slip_pct": -0.0235,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 344.56
  },
  "bets": [
+  {
+   "token": "109327236025013742107209446994759648486337225456400949684723230400014744810383",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "LGD Gaming",
+   "title": "LoL: LGD Gaming vs EDward Gaming - Game 1 Winner",
+   "their_price": 0.77,
+   "my_price": 0.69,
+   "slippage_pct": -0.1039,
+   "lag_s": 11.3,
+   "shares": 157.85,
+   "cost": 108.92,
+   "fee": 1.01,
+   "opened": 1784712503,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "61895825019286928316753689208545457497714235075046708292847356747636406191670",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2086,26 +2105,6 @@
    "settled": 1783950798,
    "sold_shares": 136.71,
    "sold_proceeds": 110.11
-  },
-  {
-   "token": "59710612631848725344763865983471814895562224915658392985168656890608650443974",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "WTI Crude Oil (WTI) closes above $76 on July 13?",
-   "their_price": 0.89,
-   "my_price": 0.85,
-   "slippage_pct": -0.0449,
-   "shares": 72.1,
-   "cost": 61.28,
-   "fee": 0.28,
-   "opened": 1783933577,
-   "status": "closed",
-   "exit_price": 0.928,
-   "pnl": 5.35,
-   "settled": 1783948921,
-   "sold_shares": 72.1,
-   "sold_proceeds": 66.91
   }
  ],
  "missed": [
@@ -3054,12 +3053,12 @@
  ],
  "missed_pnl": 95309.91,
  "last_fill": {
-  "ts": 1784712476,
-  "side": "SELL",
-  "price": 0.24,
-  "shares": 199.23,
+  "ts": 1784712514,
+  "side": "BUY",
+  "price": 0.69,
+  "shares": 157.85,
   "title": "LoL: LGD Gaming vs EDward Gaming - Game 1 Winner",
-  "outcome": "EDward Gaming"
+  "outcome": "LGD Gaming"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3116,11 +3115,11 @@
    "realized": -126.87,
    "n": 15,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 108.92,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784712482
+   "last_ts": 1784712503
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -3143,5 +3142,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784712482
+ "updated": 1784712573
 }
