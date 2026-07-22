@@ -36,6 +36,38 @@ def day_bounds(d):
     return lo, lo + 86400
 
 
+def payouts_for(db, assets):
+    """asset -> payout via tape proxy FIRST, then CTF chain truth for the
+    rest. THE 2026-07-22 SCORER BUG: 'pending' was treated as ignorable,
+    but tape-resolution timing is win-biased — a LOSS keeps its winning
+    sibling trading (sibling-veto holds the market open), so losses hid in
+    pending while wins scored. Jul-21 audit: tape-resolved fills hit 81%;
+    chain-resolving the 'pending' bucket hit 26% (n=329) — combined 53%.
+    The surge paper book (chain-graded from day one) was right; this
+    scorer was flattering every arm. Chain overlay is now mandatory."""
+    out, missing = {}, []
+    for a in set(assets):
+        r = db.execute("SELECT payout::DOUBLE FROM res_tok WHERE asset=?",
+                       [a]).fetchone()
+        if r:
+            out[a] = r[0]
+        else:
+            missing.append(a)
+    conds = {}
+    for a in missing:
+        c = db.execute("SELECT any_value(cond) FROM trades WHERE asset=?",
+                       [a]).fetchone()[0]
+        if c:
+            conds[a] = c
+    if conds:
+        tr = tape.chain_overlay([(c, a) for a, c in conds.items()])
+        for a, c in conds.items():
+            v = tr.get((c, a))
+            if v is not None:
+                out[a] = v          # 1.0 / 0.0 / 0.5 (refund)
+    return out
+
+
 def score_flow(db, fz, d, hold_s):
     lo, hi = day_bounds(d)
     t_max = db.execute("SELECT max(ts) FROM trades").fetchone()[0]
@@ -44,21 +76,24 @@ def score_flow(db, fz, d, hold_s):
     tape.build_resolved(db)
     trig = sf.signals(db, S, lo, hi, fz["window_s"], fz["flow_usd"])
     row = {"triggers": len(trig), "set_size": len(S)}
+    pays = payouts_for(db, [t["asset"] for t in trig])
     for mode in ("first", "worst"):
         s = simmod.Sim(db, lag_s=simmod.LAG_P50, hold_s=hold_s, fill=mode)
-        agg = dict(fills=0, misses=0, pending=0, pnl=0.0, wins=0)
+        agg = dict(fills=0, misses=0, pending=0, refunds=0, pnl=0.0, wins=0)
         for t in trig:
-            pay = db.execute("SELECT payout::DOUBLE FROM res_tok WHERE asset=?",
-                             [t["asset"]]).fetchone()
+            pay = pays.get(t["asset"])
             r = s.try_buy(t["asset"], t["ts"], t["p_ref"], stake_usd=sf.STAKE)
             if not r["filled"]:
                 agg["misses"] += 1
-            elif pay is None:
+            elif pay is None:       # truly unresolved (chain included)
                 agg["pending"] += 1
+            elif pay == 0.5:
+                agg["refunds"] += 1
+                agg["pnl"] += r["shares"] * 0.5 - r["cost"] - r["fee"]
             else:
                 agg["fills"] += 1
-                agg["pnl"] += r["shares"] * (pay[0] - r["price"]) - r["fee"]
-                agg["wins"] += pay[0] == 1.0
+                agg["pnl"] += r["shares"] * (pay - r["price"]) - r["fee"]
+                agg["wins"] += pay == 1.0
         agg["pnl"] = round(agg["pnl"], 2)
         if agg["fills"]:
             agg["ev_per_fill"] = round(agg["pnl"] / agg["fills"], 2)
@@ -68,16 +103,16 @@ def score_flow(db, fz, d, hold_s):
     for seed in CONTROL_SEEDS:
         C = sf.matched_random_set(db, lo, fz["top_n"], seed)
         ctrig = sf.signals(db, C, lo, hi, fz["window_s"], fz["flow_usd"])
+        cpays = payouts_for(db, [t["asset"] for t in ctrig])
         s = simmod.Sim(db, lag_s=simmod.LAG_P50, hold_s=hold_s, fill="worst")
         fills = 0
         pnl = 0.0
         for t in ctrig:
-            pay = db.execute("SELECT payout::DOUBLE FROM res_tok WHERE asset=?",
-                             [t["asset"]]).fetchone()
+            pay = cpays.get(t["asset"])
             r = s.try_buy(t["asset"], t["ts"], t["p_ref"], stake_usd=sf.STAKE)
-            if r["filled"] and pay is not None:
+            if r["filled"] and pay is not None and pay != 0.5:
                 fills += 1
-                pnl += r["shares"] * (pay[0] - r["price"]) - r["fee"]
+                pnl += r["shares"] * (pay - r["price"]) - r["fee"]
         ctl.append({"seed": seed, "fills": fills, "pnl": round(pnl, 2)})
     row["controls_worst"] = ctl
     return row
@@ -94,10 +129,8 @@ def score_oracle(db, P, d, hold_s):
     outcomes = so.outcome_map(db)
     tape.build_resolved(db)
     uni = so.crypto_universe(db, outcomes, series)
-    payout = {a: p for a, p in db.execute(
-        "SELECT asset, payout::DOUBLE FROM res_tok").fetchall()}
     sim = simmod.Sim(db, hold_s=hold_s)
-    row = {}
+    evs = []                         # (asset, edge, sim result) — score after
     for u in uni:
         prints = db.execute("""SELECT ts, price FROM trades WHERE asset=?
             AND ts > ? AND ts <= ? ORDER BY ts""", [u["asset"], lo, hi]).fetchall()
@@ -113,19 +146,29 @@ def score_oracle(db, P, d, hold_s):
             if edge < min(so.EDGE_GRID):
                 continue
             last_ev = ts
-            r = sim.try_buy(u["asset"], ts, float(px), stake_usd=so.STAKE)
-            for E in so.EDGE_GRID:
-                if edge < E:
-                    continue
-                g = row.setdefault(str(E), {"events": 0, "fills": 0,
-                                            "pending": 0, "pnl": 0.0, "wins": 0})
-                g["events"] += 1
-                if not r["filled"]:
-                    continue
-                pay = payout.get(u["asset"])
-                if pay is None:
-                    g["pending"] += 1
-                    continue
+            evs.append((u["asset"], edge,
+                        sim.try_buy(u["asset"], ts, float(px),
+                                    stake_usd=so.STAKE)))
+    # chain-overlay payouts (same 2026-07-22 scorer fix as score_flow)
+    pays = payouts_for(db, [a for a, _, r in evs if r["filled"]])
+    row = {}
+    for asset, edge, r in evs:
+        for E in so.EDGE_GRID:
+            if edge < E:
+                continue
+            g = row.setdefault(str(E), {"events": 0, "fills": 0,
+                                        "pending": 0, "refunds": 0,
+                                        "pnl": 0.0, "wins": 0})
+            g["events"] += 1
+            if not r["filled"]:
+                continue
+            pay = pays.get(asset)
+            if pay is None:
+                g["pending"] += 1
+            elif pay == 0.5:
+                g["refunds"] += 1
+                g["pnl"] += r["shares"] * 0.5 - r["cost"] - r["fee"]
+            else:
                 g["fills"] += 1
                 g["pnl"] += r["shares"] * (pay - r["price"]) - r["fee"]
                 g["wins"] += pay == 1.0
