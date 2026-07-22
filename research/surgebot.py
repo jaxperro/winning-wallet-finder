@@ -81,6 +81,16 @@ def get_json(url, timeout=8):
         return json.loads(r.read().decode())
 
 
+def iso_ts(s):
+    """CLOB end_date_iso -> epoch (None on any parse trouble)."""
+    try:
+        import calendar
+        return calendar.timegm(time.strptime(
+            s.replace("+00:00", "Z")[:20], "%Y-%m-%dT%H:%M:%SZ"))
+    except Exception:
+        return None
+
+
 class Surge:
     def __init__(self):
         self.state = {"cash": BANK, "day": "", "day_stake": 5.0,
@@ -197,10 +207,16 @@ class Surge:
             return
         shares = stake / ba
         fee = FEE_RATE * shares * min(ba, 1 - ba)
+        end_ts = None                    # expected resolution (dashboard ETA)
+        try:
+            m = get_json(f"{CLOB}/markets/{p.get('conditionId')}", timeout=5)
+            end_ts = iso_ts(m.get("end_date_iso") or "")
+        except Exception:
+            pass
         self.state["cash"] -= stake + fee
         self.state["open"][asset] = {
             "ts": int(time.time()), "cond": p.get("conditionId"),
-            "event": ev, "title": title[:60],
+            "event": ev, "title": title[:60], "end_ts": end_ts,
             "outcome": p.get("outcome"), "p_ref": p_ref, "price": ba,
             "shares": round(shares, 4), "cost": stake, "fee": round(fee, 4),
             "flow": round(flow)}
@@ -216,6 +232,8 @@ class Surge:
                 m = get_json(f"{CLOB}/markets/{pos['cond']}")
             except Exception:
                 continue
+            if not pos.get("end_ts"):    # backfill ETAs for pre-ETA fills
+                pos["end_ts"] = iso_ts(m.get("end_date_iso") or "")
             if not m.get("closed"):
                 continue
             pay = None
