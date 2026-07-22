@@ -5,13 +5,13 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1687.45,
- "deployed": 1070.65,
+ "cash": 1698.79,
+ "deployed": 1059.31,
  "reserve": 0.0,
  "realized": 1758.07,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 17,
+ "open_count": 16,
  "fees_paid": 324.56,
  "fee_rate": 0.03,
  "lag": {
@@ -60,10 +60,10 @@
    "cost": 11.33,
    "fee": 0.17,
    "opened": 1784675418,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "refund",
+   "exit_price": 0.5,
+   "pnl": -0.17,
+   "settled": 1784679219
   },
   {
    "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
@@ -3093,14 +3093,14 @@
    "last_ts": 1784206643
   },
   "Kruto2027": {
-   "realized": 750.16,
-   "n": 5,
+   "realized": 749.99,
+   "n": 6,
    "wins": 0,
-   "open_cost": 11.33,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 3,
    "miss_pnl": 447.67,
-   "last_ts": 1784675418
+   "last_ts": 1784679219
   },
   "LSB1": {
    "realized": -397.16,
@@ -3143,5 +3143,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784675482
+ "updated": 1784679222
 }
