@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784734774,
+ "updated": 1784737933,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.57,
@@ -8,7 +8,7 @@
    "wins": 4,
    "open_cost": 11.91,
    "open_n": 5,
-   "miss_n": 58,
+   "miss_n": 59,
    "miss_pnl": 1157.09,
    "last_ts": 1784722113
   },
@@ -58,8 +58,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 19,
-   "miss_pnl": -1.99,
+   "miss_n": 18,
+   "miss_pnl": -1.95,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -88,8 +88,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 1,
-   "miss_pnl": 1.33,
+   "miss_n": 2,
+   "miss_pnl": 1.29,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -2372,6 +2372,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784737933,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "101809971081124775410756971833962290310584447326615818129608807839263253483036",
+   "cond": "0x7665295c0d116c9df0dccbbf10148a37f39093a7b1427b2f46358f6ec31b6cd3",
+   "title": "Will NVIDIA (NVDA) close above $205 on July 22?",
+   "outcome": "Yes",
+   "price": 0.94,
+   "stake": 2.52,
+   "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784714439,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -5568,7 +5583,7 @@
    "status": "sold",
    "pnl": -0.04,
    "settled": 1783718142,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_price": 0.8396
   },
   {
