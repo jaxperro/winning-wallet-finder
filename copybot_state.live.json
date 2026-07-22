@@ -1,8 +1,6 @@
 {
   "started_at": 1783572616.4091802,
   "seen_tx": [
-    "0xa9a05732e749458d2fc454e4151cb2b96d4b36399880a52f779633c995db7bbb",
-    "0x9e1cc57c82678291b0dbb888cda5f7bad28d53e662c8666198a8de3ab87a9711",
     "0x7c3ad480d3fe978cb146f2d4bb1d2a98f2b3a7f1d2c8a967537ea5debcf08c92",
     "0xf34766dea190aac1b44374760460b09cbadc3b3ae06b7f712b9826a3b9aa9c68",
     "0xce53a7c072cb5a5759a7fd6bd987fa9bc2615c2b336808ce29fc3dde69c32bdb",
@@ -5000,7 +4998,9 @@
     "0x8fb8b151094fb5cf95316be7fa9b194dd5ded6970c2ed611f0be58fbb46d8d71",
     "0xe129713195fcc1dc6e1c6aae919d622a7dd0ba24077f34788278038c8f330e77",
     "0xab2fe4de3515eb1651d57b62e47a7a220731a41b5d16cd863053f883727f6c49",
-    "0x91fbff3bdb16ef13af5c22a80e02b042fcb0238538dbe6f5fe593f360fe9cdd5"
+    "0x91fbff3bdb16ef13af5c22a80e02b042fcb0238538dbe6f5fe593f360fe9cdd5",
+    "0x81b6ce59e374d8441528f9c2f71d68eba5b614f2f3c60b189efc6b9daf600f13",
+    "0x861b9bfe495aefab2bbf43cf55b80805624b6b2520a049469c09b95927f1b148"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -16429,9 +16429,9 @@
       "price": 0.4074,
       "stake": 2.41,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 3.46,
+      "settled": 1784751007,
       "name": "0xbadaf319"
     },
     {
@@ -16459,9 +16459,9 @@
       "price": 0.3073,
       "stake": 2.41,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "pnl": -2.46,
+      "settled": 1784751007,
       "name": "0xbadaf319"
     },
     {
@@ -16918,11 +16918,12 @@
       "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "Kruto2027"
     }
   ],
-  "feed_sig": "a1a395aafc5bcca36cc9ca65ff1e37bd",
-  "feed_pushed_at": 1784750559.986871,
+  "feed_sig": "48b893b3e5cea80abb2d1b740b685cf8",
+  "feed_pushed_at": 1784750944.4484096,
   "adjustments": [
     {
       "ts": 1783906689,
@@ -16977,7 +16978,7 @@
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784749375,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784750359,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784750821,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784745123,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784737666,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784749753,
