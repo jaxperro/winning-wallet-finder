@@ -15686,7 +15686,7 @@
   },
   "hwm": 3017.9847339343023,
   "feed_sig": "6312177da961a84d4e7289b924d8f31c",
-  "feed_pushed_at": 1784750920.617405,
+  "feed_pushed_at": 1784751319.7905,
   "missed": [
     {
       "ts": 1783590977,
@@ -17936,10 +17936,12 @@
       "price": 0.4074,
       "stake": 106.32,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "won",
-      "pnl": 152.76,
+      "status": "sold",
+      "pnl": 64.43,
       "settled": 1784750985,
-      "name": "0xbadaf319"
+      "name": "0xbadaf319",
+      "exit_checked": true,
+      "exit_price": 0.6682
     },
     {
       "ts": 1784507597,
@@ -17966,10 +17968,12 @@
       "price": 0.3073,
       "stake": 68.62,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "lost",
-      "pnl": -70.05,
+      "status": "sold",
+      "pnl": 58.62,
       "settled": 1784750985,
-      "name": "0xbadaf319"
+      "name": "0xbadaf319",
+      "exit_checked": true,
+      "exit_price": 0.5835
     },
     {
       "ts": 1784517526,
