@@ -34,9 +34,19 @@ Clocks: prints are stamped at ARRIVAL and crypto ticks at the payload's
 venue ms timestamp — the same two clocks the tape records (recorder stamps
 trades on arrival; load_ticks prefers payload ms). Staleness guards use
 the arrival clock only, so venue clock skew can't fake freshness.
+
+OBSERVATIONAL instrumentation (2026-07-22, NOT semantics — SEM_VER
+unchanged): every attempt (fill/crater/fail/throttle) appends a line with
+top-5 asks + top-3 bids + fair/edge to /data/oracle_attempts.jsonl (real
+book depth at mispricing moments — maker-study groundwork; state's skips
+list trims at 500 and loses this otherwise), and every fill schedules book
+re-reads at +60s/+300s/+1800s (skipping offsets past t1) whose best
+bid/ask land in /data/oracle_markouts.jsonl. Pending re-reads die on
+restart (counted, acceptable — observation only).
 """
 import bisect
 import calendar
+import heapq
 import json
 import math
 import os
@@ -53,8 +63,13 @@ import websocket
 WS_URL = "wss://ws-live-data.polymarket.com"
 CLOB = "https://clob.polymarket.com"
 STATE = os.environ.get("ORACLE_STATE", "/data/oracle_state.json")
+ATTEMPTS = os.environ.get("ORACLE_ATTEMPTS", "/data/oracle_attempts.jsonl")
+MARKOUTS = os.environ.get("ORACLE_MARKOUTS", "/data/oracle_markouts.jsonl")
 DEBUG = bool(os.environ.get("ORACLE_DEBUG"))
 SEM_VER = "b1"                    # bump on ANY semantics-altering change
+MARKOUT_OFFSETS = (60, 300, 1800)  # observational re-reads per fill
+BID_LEVELS = 3
+TOP_LEVELS = 5                    # raw ask levels recorded per attempt
 
 # ── FROZEN — must equal study_oracle.py verbatim ────────────────────────────
 EDGE_GRID = [0.04, 0.07, 0.10]
@@ -218,8 +233,9 @@ def walk_asks(asks, cap, stake_usd=STAKE):
     gets). The first level's price is also the best-ask-only read (~$5-
     deployable). asks arrive UNSORTED from /book."""
     lv = sorted(((float(a["price"]), float(a["size"])) for a in asks or []))
+    top = [[p, s] for p, s in lv[:TOP_LEVELS]]
     if not lv:
-        return {"filled": False, "best_ask": None}
+        return {"filled": False, "best_ask": None, "top": top}
     best = lv[0][0]
     spent = shares = 0.0
     levels = 0
@@ -233,9 +249,9 @@ def walk_asks(asks, cap, stake_usd=STAKE):
         spent += take * px
         levels += 1
     if not shares:
-        return {"filled": False, "best_ask": best}
+        return {"filled": False, "best_ask": best, "top": top}
     return {"filled": True, "vwap": spent / shares, "shares": shares,
-            "usd": spent, "levels": levels, "best_ask": best,
+            "usd": spent, "levels": levels, "best_ask": best, "top": top,
             "partial": spent < stake_usd - 1e-9}
 
 
@@ -339,6 +355,7 @@ class OracleBot:
         self.last_trig = {}            # not persisted — see WARMUP_S comment
         self.lock = threading.Lock()
         self.book_q = queue.Queue(BOOK_QUEUE)
+        self.mo_heap = []              # (due_ts, asset, fill_id, offset)
         self.trades_seen = 0           # unlocked cosmetic counter (firehose
                                        # rate) — folded into state at heartbeat
 
@@ -445,6 +462,7 @@ class OracleBot:
                     if edge >= E:
                         self.state["cells"][str(E)]["throttle"] += 1
                 self._skip(job, "throttle", None)
+                self.log_attempt({**job, "filled": False, "why": "throttle"})
 
     # ── paper execution (workers; network OUT of the lock) ─────────────────
     def book_worker(self):
@@ -463,10 +481,17 @@ class OracleBot:
             with self.lock:
                 self.state["counters"]["skip"]["book_fail"] += 1
                 self._skip(job, "book_fail", None)
+            self.log_attempt({**job, "filled": False, "why": "book_fail"})
             return
         lat_ms = int((time.time() - t_req) * 1000)
         cap = min(job["p_ref"] * (1 + SLIP_CAP), 0.99)
         r = walk_asks(book.get("asks"), cap)
+        bid_top = sorted(((float(b["price"]), float(b["size"]))
+                          for b in book.get("bids") or []),
+                         reverse=True)[:BID_LEVELS]
+        rec = {**job, "cap": round(cap, 4), "latency_ms": lat_ms,
+               "top": r["top"], "bid_top": [[p, s] for p, s in bid_top],
+               "best_ask": r["best_ask"], "filled": r["filled"]}
         with self.lock:
             c = self.state["counters"]
             if not r["filled"]:
@@ -479,26 +504,37 @@ class OracleBot:
                 log(f"CRATER {job['title'][:38]} ref {job['p_ref']:.3f} "
                     f"ask {ba} edge {job['edge']:+.3f} ({lat_ms}ms)")
                 self.persist()
-                return
-            fee = FEE_RATE * r["shares"] * min(r["vwap"], 1 - r["vwap"])
-            lot = {**job, "cap": round(cap, 4), "price": round(r["vwap"], 5),
-                   "best_ask": r["best_ask"],
-                   "shares": round(r["shares"], 4),
-                   "cost": round(r["usd"], 2), "fee": round(fee, 4),
-                   "levels": r["levels"], "partial": r["partial"],
-                   "latency_ms": lat_ms}
-            self.state["open"][f"{job['asset']}:{job['ts']}"] = lot
-            c["fills"] += 1
-            for E in EDGE_GRID:
-                if job["edge"] >= E:
-                    cell = self.state["cells"][str(E)]
-                    cell["fills"] += 1
-                    cell["staked"] = round(cell["staked"] + lot["cost"], 2)
-            log(f"FILL {job['outcome']} · {job['title'][:38]} @ "
-                f"{lot['price']:.3f} (${lot['cost']:.2f}"
-                f"{' partial' if lot['partial'] else ''}, "
-                f"edge {job['edge']:+.3f}, {lat_ms}ms)")
-            self.persist()
+            else:
+                fee = FEE_RATE * r["shares"] * min(r["vwap"], 1 - r["vwap"])
+                lot = {**job, "cap": round(cap, 4),
+                       "price": round(r["vwap"], 5),
+                       "best_ask": r["best_ask"],
+                       "shares": round(r["shares"], 4),
+                       "cost": round(r["usd"], 2), "fee": round(fee, 4),
+                       "levels": r["levels"], "partial": r["partial"],
+                       "latency_ms": lat_ms}
+                self.state["open"][f"{job['asset']}:{job['ts']}"] = lot
+                c["fills"] += 1
+                for E in EDGE_GRID:
+                    if job["edge"] >= E:
+                        cell = self.state["cells"][str(E)]
+                        cell["fills"] += 1
+                        cell["staked"] = round(cell["staked"] + lot["cost"], 2)
+                rec.update({"price": lot["price"], "shares": lot["shares"],
+                            "usd": lot["cost"], "fee": lot["fee"],
+                            "partial": lot["partial"]})
+                for off in MARKOUT_OFFSETS:   # observational exit marks
+                    if job["t1"] and job["ts"] + off > job["t1"]:
+                        continue
+                    heapq.heappush(self.mo_heap,
+                                   (job["ts"] + off, job["asset"],
+                                    f"{job['asset']}:{job['ts']}", off))
+                log(f"FILL {job['outcome']} · {job['title'][:38]} @ "
+                    f"{lot['price']:.3f} (${lot['cost']:.2f}"
+                    f"{' partial' if lot['partial'] else ''}, "
+                    f"edge {job['edge']:+.3f}, {lat_ms}ms)")
+                self.persist()
+        self.log_attempt(rec)
 
     def _skip(self, job, why, ba):     # under lock
         self.state["skips"].append(
@@ -506,6 +542,51 @@ class OracleBot:
              "p_ref": job["p_ref"], "edge": job["edge"], "ba": ba,
              "title": job["title"]})
         del self.state["skips"][:-SKIPS_TRIM]
+
+    def log_attempt(self, rec):
+        """Append-only full attempt stream (observational — maker-study
+        groundwork; the state's skips list trims and loses book detail)."""
+        try:
+            with open(ATTEMPTS, "a") as fh:
+                fh.write(json.dumps(rec) + "\n")
+        except Exception as e:
+            log(f"⚠ attempts log write failed: {e}")
+
+    def markout_worker(self):
+        """Observational: due book re-reads -> best bid/ask marks. Never
+        touches the signal path; pending marks die on restart (counted)."""
+        while True:
+            due = None
+            with self.lock:
+                if self.mo_heap and self.mo_heap[0][0] <= time.time():
+                    due = heapq.heappop(self.mo_heap)
+            if due is None:
+                time.sleep(2)
+                continue
+            due_ts, asset, fid, off = due
+            rec = {"fill_id": fid, "asset": asset, "offset_s": off,
+                   "due_ts": round(due_ts, 1),
+                   "read_ts": round(time.time(), 3)}
+            try:
+                book = get_json(f"{CLOB}/book?token_id={asset}")
+                bids = sorted(((float(b["price"]), float(b["size"]))
+                               for b in book.get("bids") or []), reverse=True)
+                asks = sorted(((float(a["price"]), float(a["size"]))
+                               for a in book.get("asks") or []))
+                rec["bid"], rec["bid_sz"] = (bids[0] if bids else (None, None))
+                rec["ask"], rec["ask_sz"] = (asks[0] if asks else (None, None))
+                key = "mo_done"
+            except Exception as e:
+                rec["err"] = str(e)[:40]
+                key = "mo_err"
+            with self.lock:
+                c = self.state["counters"]
+                c[key] = c.get(key, 0) + 1
+            try:
+                with open(MARKOUTS, "a") as fh:
+                    fh.write(json.dumps(rec) + "\n")
+            except Exception as e:
+                log(f"⚠ markouts log write failed: {e}")
 
     # ── settlement ─────────────────────────────────────────────────────────
     # (a) instant, from the same feed the venue settles on (under lock)
@@ -774,6 +855,8 @@ def main():
     threading.Thread(target=serve_feed, args=(bot,), daemon=True).start()
     for _ in range(BOOK_WORKERS):
         threading.Thread(target=bot.book_worker, daemon=True).start()
+    for _ in range(2):
+        threading.Thread(target=bot.markout_worker, daemon=True).start()
     for tag in ("a", "b"):
         threading.Thread(target=run_conn, args=(tag, bot), daemon=True).start()
     n = 0

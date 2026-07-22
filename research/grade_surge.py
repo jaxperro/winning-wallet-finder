@@ -40,6 +40,8 @@ def sftp(remote, local):
 def main():
     ok = sftp("/data/surge2_state.json", STATE_PULL)
     sftp("/data/surge_attempts.jsonl", ATT_PULL)
+    sftp("/data/surge_markouts.jsonl",
+         os.path.join(HERE, ".surge_markouts.pull.jsonl"))
     if not ok:
         print("[grade_surge] box unreachable or no state yet — skip")
         return 0

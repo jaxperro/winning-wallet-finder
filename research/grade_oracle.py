@@ -21,10 +21,28 @@ FLYCTL = shutil.which("flyctl") or "/opt/homebrew/bin/flyctl"
 EDGE_GRID = (0.04, 0.07, 0.10)     # cells keyed str(E): "0.04"/"0.07"/"0.1"
 
 
+def sftp(remote, local):
+    subprocess.run([FLYCTL, "ssh", "sftp", "get", remote, local + ".new",
+                    "-a", "wwf-oraclebot"], capture_output=True,
+                   timeout=600, stdin=subprocess.DEVNULL)
+    if os.path.exists(local + ".new") and os.path.getsize(local + ".new") > 0:
+        os.replace(local + ".new", local)   # keep last good pull on failure
+        return True
+    try:
+        os.remove(local + ".new")
+    except FileNotFoundError:
+        pass
+    return False
+
+
 def main():
     r = subprocess.run([FLYCTL, "ssh", "sftp", "get", "/data/oracle_state.json",
                         TMP, "-a", "wwf-oraclebot"], capture_output=True,
                        timeout=300, stdin=subprocess.DEVNULL)
+    sftp("/data/oracle_attempts.jsonl",
+         os.path.join(HERE, ".oracle_attempts.pull.jsonl"))
+    sftp("/data/oracle_markouts.jsonl",
+         os.path.join(HERE, ".oracle_markouts.pull.jsonl"))
     if not os.path.exists(TMP) or os.path.getsize(TMP) == 0:
         print("[grade_oracle] box unreachable or no state yet — skip")
         return 0

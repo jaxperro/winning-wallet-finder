@@ -34,7 +34,15 @@ the nightly CTF payout re-grade (grade_surge.py -> surge_meas_ledger.jsonl;
 v1's surge_paper_ledger.jsonl is closed and untouched, as is its state at
 /data/surge_state.json). Any semantics-altering fix bumps SEM_VER and
 restarts the shakedown clock.
+
+OBSERVATIONAL instrumentation (2026-07-22, NOT semantics — SEM_VER
+unchanged): attempts also record top-3 bids (spread context; exit-fill
+realism), and every fill schedules book re-reads at +60s/+300s/+1800s whose
+best bid/ask land in /data/surge_markouts.jsonl — real exit marks for the
+markout-exit study instead of print-inferred guesses. Pending re-reads are
+lost on restart (counted, acceptable — observation only).
 """
+import heapq
 import json
 import os
 import queue
@@ -52,7 +60,10 @@ SET_URL = ("https://raw.githubusercontent.com/jaxperro/winning-wallet-finder/"
            "main/research/params/informed_set.json")
 STATE = os.environ.get("SURGE_STATE", "/data/surge2_state.json")
 ATTEMPTS = os.environ.get("SURGE_ATTEMPTS", "/data/surge_attempts.jsonl")
+MARKOUTS = os.environ.get("SURGE_MARKOUTS", "/data/surge_markouts.jsonl")
 SEM_VER = "a2"                    # bump on ANY semantics-altering change
+MARKOUT_OFFSETS = (60, 300, 1800)  # observational re-reads per fill
+BID_LEVELS = 3
 
 # ── FROZEN — must equal params/study_flow.json / forward.py ────────────────
 FLOW_USD = 300.0
@@ -174,6 +185,7 @@ class Surge:
         self.last_trig = {}
         self.lock = threading.Lock()
         self.book_q = queue.Queue(BOOK_QUEUE)
+        self.mo_heap = []              # (due_ts, asset, fill_id, offset)
 
     # ── config ─────────────────────────────────────────────────────────────
     def load_set(self):
@@ -254,6 +266,9 @@ class Surge:
         lat_ms = int((time.time() - t_req) * 1000)
         cap = min(job["p_ref"] * (1 + SLIP_CAP), 0.99)
         r = walk_asks(book.get("asks"), cap)
+        bid_top = sorted(((float(b["price"]), float(b["size"]))
+                          for b in book.get("bids") or []),
+                         reverse=True)[:BID_LEVELS]
         end_ts = None                    # expected resolution (dashboard ETA)
         if r["filled"]:
             try:
@@ -262,8 +277,8 @@ class Surge:
             except Exception:
                 pass
         rec = {**job, "cap": round(cap, 4), "latency_ms": lat_ms,
-               "top": r["top"], "best_ask": r["best_ask"],
-               "filled": r["filled"]}
+               "top": r["top"], "bid_top": [[p, s] for p, s in bid_top],
+               "best_ask": r["best_ask"], "filled": r["filled"]}
         with self.lock:
             c = self.state["counters"]
             if not r["filled"]:
@@ -285,6 +300,12 @@ class Surge:
                 rec.update({"price": lot["price"], "shares": lot["shares"],
                             "usd": lot["cost"], "fee": lot["fee"],
                             "partial": lot["partial"], "end_ts": end_ts})
+                for off in MARKOUT_OFFSETS:   # observational exit marks
+                    if end_ts and job["ts"] + off > end_ts:
+                        continue
+                    heapq.heappush(self.mo_heap,
+                                   (job["ts"] + off, job["asset"],
+                                    f"{job['asset']}:{job['ts']}", off))
                 log(f"FILL {job['outcome']} · {job['title'][:38]} @ "
                     f"{lot['price']:.3f} (${lot['cost']:.2f}"
                     f"{' partial' if lot['partial'] else ''}, "
@@ -300,6 +321,42 @@ class Surge:
                 fh.write(json.dumps(rec) + "\n")
         except Exception as e:
             log(f"⚠ attempts log write failed: {e}")
+
+    def markout_worker(self):
+        """Observational: due book re-reads -> best bid/ask marks. Never
+        touches the signal path; pending marks die on restart (counted)."""
+        while True:
+            due = None
+            with self.lock:
+                if self.mo_heap and self.mo_heap[0][0] <= time.time():
+                    due = heapq.heappop(self.mo_heap)
+            if due is None:
+                time.sleep(2)
+                continue
+            due_ts, asset, fid, off = due
+            rec = {"fill_id": fid, "asset": asset, "offset_s": off,
+                   "due_ts": round(due_ts, 1),
+                   "read_ts": round(time.time(), 3)}
+            try:
+                book = get_json(f"{CLOB}/book?token_id={asset}")
+                bids = sorted(((float(b["price"]), float(b["size"]))
+                               for b in book.get("bids") or []), reverse=True)
+                asks = sorted(((float(a["price"]), float(a["size"]))
+                               for a in book.get("asks") or []))
+                rec["bid"], rec["bid_sz"] = (bids[0] if bids else (None, None))
+                rec["ask"], rec["ask_sz"] = (asks[0] if asks else (None, None))
+                key = "mo_done"
+            except Exception as e:
+                rec["err"] = str(e)[:40]
+                key = "mo_err"
+            with self.lock:
+                c = self.state["counters"]
+                c[key] = c.get(key, 0) + 1
+            try:
+                with open(MARKOUTS, "a") as fh:
+                    fh.write(json.dumps(rec) + "\n")
+            except Exception as e:
+                log(f"⚠ markouts log write failed: {e}")
 
     def _skip(self, job, why, ba):     # under lock
         self.state["skips"].append(
@@ -494,6 +551,8 @@ def main():
     threading.Thread(target=serve_feed, args=(bot,), daemon=True).start()
     for _ in range(BOOK_WORKERS):
         threading.Thread(target=bot.book_worker, daemon=True).start()
+    for _ in range(2):
+        threading.Thread(target=bot.markout_worker, daemon=True).start()
     for tag in ("a", "b"):
         threading.Thread(target=run_conn, args=(tag, bot), daemon=True).start()
     last_set = time.time()
