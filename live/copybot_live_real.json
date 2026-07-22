@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 101,
-  "n24": 4,
-  "avg_s": 10.9,
-  "avg_slip_pct": 0.0258,
+  "n24": 3,
+  "avg_s": 12.3,
+  "avg_slip_pct": 0.0344,
   "window_h": 24
  },
  "wallets": [
@@ -2078,6 +2078,21 @@
  ],
  "missed": [
   {
+   "ts": 1784696452,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "68642938852444405618524357112499284175503313921723452625127267630411120480355",
+   "cond": "0x3143454e474c199ec69abacc2a962885b1b82f9201837624ab0883be9e15436d",
+   "title": "Will Elon Musk post 140-159 tweets from July 17 to July 24, 2026?",
+   "outcome": "No",
+   "price": 0.64,
+   "stake": 2.47,
+   "reason": "price moved 0.59\u21920.64",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784682919,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "66006680389192620317816056197058298603060937483253191311974086024874814208778",
@@ -3007,25 +3022,9 @@
    "settled": 1784386262,
    "name": "0xbadaf319",
    "exit_price": 0.9728
-  },
-  {
-   "ts": 1784379486,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "46464336901469148231749620229467543535010257111143284104831372917724022712604",
-   "cond": "0x6b049bc3befa02c22d0cfaee77625fc94e9a6d571f00c015ba7a3b442e306fbc",
-   "title": "LoL: T1 vs Karmine Corp (BO3) - Esports World Cup Playoffs",
-   "outcome": "Karmine Corp",
-   "price": 0.26,
-   "stake": 2.24,
-   "reason": "in-play hold expired unfilled (1s)",
-   "status": "sold",
-   "pnl": -2.09,
-   "settled": 1784381747,
-   "name": "AIcAIc",
-   "exit_price": 0.0239
   }
  ],
- "missed_pnl": 1169.67,
+ "missed_pnl": 1165.65,
  "last_fill": {
   "ts": 1784660810,
   "side": "BUY",
@@ -3101,7 +3100,7 @@
    "wins": 1,
    "open_cost": 12.49,
    "open_n": 6,
-   "miss_n": 20,
+   "miss_n": 21,
    "miss_pnl": -6.12,
    "last_ts": 1784660784
   },
@@ -3126,5 +3125,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784682931
+ "updated": 1784696453
 }

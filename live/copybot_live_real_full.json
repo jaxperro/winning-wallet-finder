@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784682931,
+ "updated": 1784696453,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.45,
@@ -68,7 +68,7 @@
    "wins": 1,
    "open_cost": 12.49,
    "open_n": 6,
-   "miss_n": 20,
+   "miss_n": 21,
    "miss_pnl": -6.12,
    "last_ts": 1784660784
   },
@@ -2257,6 +2257,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784696452,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "68642938852444405618524357112499284175503313921723452625127267630411120480355",
+   "cond": "0x3143454e474c199ec69abacc2a962885b1b82f9201837624ab0883be9e15436d",
+   "title": "Will Elon Musk post 140-159 tweets from July 17 to July 24, 2026?",
+   "outcome": "No",
+   "price": 0.64,
+   "stake": 2.47,
+   "reason": "price moved 0.59\u21920.64",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1784682919,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
