@@ -2114,6 +2114,21 @@
  ],
  "missed": [
   {
+   "ts": 1784750680,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "110230164960434404310059385575944076505582891264305624307112518287452413536393",
+   "cond": "0x1d15ca70c93da7338e6134144dd19a41a8120f8a1ad1bca067478cdbf6d5b18a",
+   "title": "LoL: Myth Esports vs Dynasty - Game 1 Winner",
+   "outcome": "Myth Esports",
+   "price": 0.45,
+   "stake": 101.5,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1784747979,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "68080778697884921540335032370654180051222428162809511382222697646266365598353",
@@ -3036,22 +3051,6 @@
    "settled": 1784425689,
    "name": "1kto1m",
    "exit_price": 0.6686
-  },
-  {
-   "ts": 1784420641,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "35364363129310485685520220202960553864892167102727987653115207699893583866920",
-   "cond": "0x33404f245944056e45d2668d28e3a1c70cc6addc16d25cece1fb0e3a2427525b",
-   "title": "Bitcoin Up or Down - July 18, 8:15PM-8:30PM ET",
-   "outcome": "Up",
-   "price": 0.3102,
-   "stake": 98.66,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -16.69,
-   "settled": 1784420961,
-   "name": "1kto1m",
-   "exit_price": 0.27
   }
  ],
  "missed_pnl": 95313.36,
@@ -3100,7 +3099,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 4,
+   "miss_n": 5,
    "miss_pnl": 447.67,
    "last_ts": 1784679219
   },
@@ -3145,5 +3144,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784747979
+ "updated": 1784750717
 }

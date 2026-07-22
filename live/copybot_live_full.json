@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784747979,
+ "updated": 1784750717,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.9,
@@ -38,7 +38,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 4,
+   "miss_n": 5,
    "miss_pnl": 447.67,
    "last_ts": 1784679219
   },
@@ -4169,6 +4169,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784750680,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "110230164960434404310059385575944076505582891264305624307112518287452413536393",
+   "cond": "0x1d15ca70c93da7338e6134144dd19a41a8120f8a1ad1bca067478cdbf6d5b18a",
+   "title": "LoL: Myth Esports vs Dynasty - Game 1 Winner",
+   "outcome": "Myth Esports",
+   "price": 0.45,
+   "stake": 101.5,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1784747979,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
