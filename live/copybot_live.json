@@ -2114,6 +2114,21 @@
  ],
  "missed": [
   {
+   "ts": 1784747979,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "68080778697884921540335032370654180051222428162809511382222697646266365598353",
+   "cond": "0xf473c2e521258a81d44f16fd65e811de7bcb6646912561583969004b81c10ec1",
+   "title": "Israel x Iran ceasefire continues through July 25?",
+   "outcome": "Yes",
+   "price": 0.56,
+   "stake": 116.3,
+   "reason": "price moved 0.44\u21920.56",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784746881,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "101073632313407449841258966324566339609029406016329643951331988915036734803060",
@@ -3037,22 +3052,6 @@
    "settled": 1784420961,
    "name": "1kto1m",
    "exit_price": 0.27
-  },
-  {
-   "ts": 1784402106,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "91990736572156896332531437772162323719378402759982493855773735188693457077937",
-   "cond": "0x478199016ea7651f150e1fd9beb673cdf17b4c3dbf0f6f19991dddf60b3bb432",
-   "title": "Tauson vs. Krejcikova: Match O/U 22.5",
-   "outcome": "Over",
-   "price": 0.18,
-   "stake": 98.65,
-   "reason": "book unreliable (spread 0.75 > 0.08)",
-   "status": "won",
-   "pnl": 446.98,
-   "settled": 1784411180,
-   "name": "Kruto2027",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 95313.36,
@@ -3131,7 +3130,7 @@
    "wins": 1,
    "open_cost": 706.41,
    "open_n": 7,
-   "miss_n": 19,
+   "miss_n": 20,
    "miss_pnl": -408.6,
    "last_ts": 1784660784
   },
@@ -3146,5 +3145,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784747264
+ "updated": 1784747979
 }
