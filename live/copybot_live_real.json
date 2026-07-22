@@ -2083,6 +2083,21 @@
  ],
  "missed": [
   {
+   "ts": 1784737933,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "101809971081124775410756971833962290310584447326615818129608807839263253483036",
+   "cond": "0x7665295c0d116c9df0dccbbf10148a37f39093a7b1427b2f46358f6ec31b6cd3",
+   "title": "Will NVIDIA (NVDA) close above $205 on July 22?",
+   "outcome": "Yes",
+   "price": 0.94,
+   "stake": 2.52,
+   "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
+   "status": "won",
+   "pnl": 0.16,
+   "settled": 1784753348,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784508146,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "78980297018571400404799403103137601328646521882772163061763690804240957815229",
@@ -2160,21 +2175,6 @@
    "pnl": null,
    "settled": null,
    "name": "Kruto2027"
-  },
-  {
-   "ts": 1784737933,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "101809971081124775410756971833962290310584447326615818129608807839263253483036",
-   "cond": "0x7665295c0d116c9df0dccbbf10148a37f39093a7b1427b2f46358f6ec31b6cd3",
-   "title": "Will NVIDIA (NVDA) close above $205 on July 22?",
-   "outcome": "Yes",
-   "price": 0.94,
-   "stake": 2.52,
-   "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784714439,
@@ -3032,7 +3032,7 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 1165.81,
+ "missed_pnl": 1165.97,
  "last_fill": {
   "ts": 1784725645,
   "side": "SELL",
@@ -3049,7 +3049,7 @@
    "open_cost": 11.91,
    "open_n": 5,
    "miss_n": 59,
-   "miss_pnl": 1160.61,
+   "miss_pnl": 1160.77,
    "last_ts": 1784722113
   },
   "AIcAIc": {
@@ -3143,5 +3143,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784752394
+ "updated": 1784753349
 }
