@@ -2083,6 +2083,21 @@
  ],
  "missed": [
   {
+   "ts": 1784747978,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "68080778697884921540335032370654180051222428162809511382222697646266365598353",
+   "cond": "0xf473c2e521258a81d44f16fd65e811de7bcb6646912561583969004b81c10ec1",
+   "title": "Israel x Iran ceasefire continues through July 25?",
+   "outcome": "Yes",
+   "price": 0.56,
+   "stake": 2.52,
+   "reason": "price moved 0.44\u21920.56",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784746882,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "101073632313407449841258966324566339609029406016329643951331988915036734803060",
@@ -3012,25 +3027,9 @@
    "settled": 1784426319,
    "name": "1kto1m",
    "exit_price": 0.3552
-  },
-  {
-   "ts": 1784424727,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "79543505323749041351214009509945263468780378185758945288970137854254779524794",
-   "cond": "0x21588ac86fd81dffc6c7e69789427cef88cd18250daf9c93f4fd29f56ddb516c",
-   "title": "Bitcoin Up or Down - July 18, 9:30PM-9:45PM ET",
-   "outcome": "Down",
-   "price": 0.5197,
-   "stake": 2.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.52,
-   "settled": 1784425689,
-   "name": "1kto1m",
-   "exit_price": 0.6686
   }
  ],
- "missed_pnl": 1160.91,
+ "missed_pnl": 1161.28,
  "last_fill": {
   "ts": 1784725645,
   "side": "SELL",
@@ -3106,7 +3105,7 @@
    "wins": 1,
    "open_cost": 12.49,
    "open_n": 6,
-   "miss_n": 21,
+   "miss_n": 22,
    "miss_pnl": -6.12,
    "last_ts": 1784660784
   },
@@ -3141,5 +3140,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784747219
+ "updated": 1784747978
 }

@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784747219,
+ "updated": 1784747978,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.57,
@@ -68,7 +68,7 @@
    "wins": 1,
    "open_cost": 12.49,
    "open_n": 6,
-   "miss_n": 21,
+   "miss_n": 22,
    "miss_pnl": -6.12,
    "last_ts": 1784660784
   },
@@ -2372,6 +2372,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784747978,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "68080778697884921540335032370654180051222428162809511382222697646266365598353",
+   "cond": "0xf473c2e521258a81d44f16fd65e811de7bcb6646912561583969004b81c10ec1",
+   "title": "Israel x Iran ceasefire continues through July 25?",
+   "outcome": "Yes",
+   "price": 0.56,
+   "stake": 2.52,
+   "reason": "price moved 0.44\u21920.56",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1784746882,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
