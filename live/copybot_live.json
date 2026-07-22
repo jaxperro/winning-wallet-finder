@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 116.3,
+ "stake": 116.44,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1914.8,
- "deployed": 992.81,
+ "cash": 1924.16,
+ "deployed": 986.89,
  "reserve": 0.0,
- "realized": 1907.57,
+ "realized": 1911.01,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 16,
- "fees_paid": 342.96,
+ "fees_paid": 342.97,
  "fee_rate": 0.03,
  "lag": {
   "n": 225,
@@ -3060,12 +3060,12 @@
  ],
  "missed_pnl": 95560.73,
  "last_fill": {
-  "ts": 1784725643,
+  "ts": 1784758429,
   "side": "SELL",
   "price": 0.95,
-  "shares": 82.32,
-  "title": "LoL: Top Esports vs Team WE - Game 2 Winner",
-  "outcome": "Top Esports"
+  "shares": 9.87,
+  "title": "Ethereal FDV above $500M one day after launch?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3149,5 +3149,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784757400
+ "updated": 1784758430
 }
