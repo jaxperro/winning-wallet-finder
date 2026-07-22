@@ -1,16 +1,16 @@
 {
  "mode": "live",
- "updated": 1784701587,
+ "updated": 1784709740,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.45,
    "n": 17,
    "wins": 4,
-   "open_cost": 11.88,
-   "open_n": 5,
+   "open_cost": 14.35,
+   "open_n": 6,
    "miss_n": 56,
    "miss_pnl": 1156.46,
-   "last_ts": 1784630337
+   "last_ts": 1784709738
   },
   "AIcAIc": {
    "realized": -15.84,
@@ -94,6 +94,25 @@
   }
  },
  "bets": [
+  {
+   "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+   "their_price": 0.71,
+   "my_price": 0.71,
+   "slippage_pct": -0.0,
+   "lag_s": 1.9,
+   "shares": 3.48,
+   "cost": 2.47,
+   "fee": 0.0215,
+   "opened": 1784709738,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
