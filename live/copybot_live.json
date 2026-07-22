@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 118.21,
+ "stake": 120.72,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 2956.66,
- "cash": 1733.86,
- "deployed": 1221.45,
+ "hwm": 3017.98,
+ "cash": 1914.8,
+ "deployed": 1103.19,
  "reserve": 0.0,
- "realized": 1955.28,
+ "realized": 2017.95,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 18,
- "fees_paid": 342.69,
+ "ledger_drift": -0.02,
+ "open_count": 17,
+ "fees_paid": 342.96,
  "fee_rate": 0.03,
  "lag": {
   "n": 225,
@@ -60,10 +60,12 @@
    "cost": 118.27,
    "fee": 1.35,
    "opened": 1784724888,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "closed",
+   "exit_price": 0.9486,
+   "pnl": 61.32,
+   "settled": 1784725644,
+   "sold_shares": 190.75,
+   "sold_proceeds": 180.94
   },
   {
    "token": "95881905429518344941380148326492553933806571454773462059114401886982592434913",
@@ -2121,10 +2123,11 @@
    "price": 0.943,
    "stake": 50.68,
    "reason": "thin book ($24 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
+   "status": "sold",
+   "pnl": 0.83,
+   "settled": 1784725717,
+   "name": "0xbadaf319",
+   "exit_price": 0.9612
   },
   {
    "ts": 1784709848,
@@ -3053,12 +3056,12 @@
    "exit_price": 0.5824
   }
  ],
- "missed_pnl": 95309.91,
+ "missed_pnl": 95310.74,
  "last_fill": {
-  "ts": 1784724893,
-  "side": "BUY",
-  "price": 0.62,
-  "shares": 190.75,
+  "ts": 1784725643,
+  "side": "SELL",
+  "price": 0.95,
+  "shares": 82.32,
   "title": "LoL: Top Esports vs Team WE - Game 2 Winner",
   "outcome": "Top Esports"
  },
@@ -3070,7 +3073,7 @@
    "open_cost": 638.59,
    "open_n": 9,
    "miss_n": 49,
-   "miss_pnl": 95532.83,
+   "miss_pnl": 95533.66,
    "last_ts": 1784722115
   },
   "gkmgkldfmg": {
@@ -3114,14 +3117,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 103.33,
-   "n": 19,
+   "realized": 164.65,
+   "n": 20,
    "wins": 0,
-   "open_cost": 228.65,
-   "open_n": 2,
+   "open_cost": 110.38,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784724888
+   "last_ts": 1784725644
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -3144,5 +3147,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784724893
+ "updated": 1784725717
 }

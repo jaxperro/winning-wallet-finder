@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784724893,
+ "updated": 1784725717,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.9,
@@ -9,7 +9,7 @@
    "open_cost": 638.59,
    "open_n": 9,
    "miss_n": 49,
-   "miss_pnl": 95532.83,
+   "miss_pnl": 95533.66,
    "last_ts": 1784722115
   },
   "gkmgkldfmg": {
@@ -53,14 +53,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 103.33,
-   "n": 19,
+   "realized": 164.65,
+   "n": 20,
    "wins": 0,
-   "open_cost": 228.65,
-   "open_n": 2,
+   "open_cost": 110.38,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784724888
+   "last_ts": 1784725644
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -98,10 +98,12 @@
    "cost": 118.27,
    "fee": 1.3482,
    "opened": 1784724888,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "closed",
+   "exit_price": 0.9486,
+   "pnl": 61.32,
+   "settled": 1784725644,
+   "sold_shares": 190.7507558182911,
+   "sold_proceeds": 180.9413982003355
   },
   {
    "token": "95881905429518344941380148326492553933806571454773462059114401886982592434913",
@@ -4177,10 +4179,11 @@
    "price": 0.943,
    "stake": 50.68,
    "reason": "thin book ($24 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
+   "status": "sold",
+   "pnl": 0.83,
+   "settled": 1784725717,
+   "name": "0xbadaf319",
+   "exit_price": 0.9612
   },
   {
    "ts": 1784709848,
