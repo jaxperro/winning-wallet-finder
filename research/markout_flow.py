@@ -1,21 +1,20 @@
 #!/usr/bin/env python3
-"""EXPLORATORY (2026-07-22, user ask) — markout-exit curve for the surge
-signal: does the in-play under-reaction edge peak early and decay, i.e.
-should Study A2-scalp EXIT at a fixed horizon instead of holding to
-resolution? Motivated by the v1 book post-mortem: >3h holds bled −21.9%
-while <3h holds were +4.1%.
+"""EXPLORATORY (2026-07-22, user ask; CORRECTED same night) — markout-exit
+curve for the surge signal: given the round-3 corrected verdict (surge
+holds LOSE −$6/fill under chain truth, #16 KILL met), does exiting at a
+fixed horizon beat holding — i.e. was there a scalp hiding inside a dead
+hold-to-resolution strategy?
 
-NOT pre-registered — output shapes a possible A2-scalp pre-registration,
-nothing more. Prints-based v0: exits are marked at the LAST PRINT <= t+H
-(sim.markout), which is optimistic vs hitting the real bid — the live
-harnesses now record best bid/ask at +60/300/1800s per fill precisely to
-haircut this in v1 of the study. Exit fee charged same as entry.
+v0 of this script used res_tok only and concluded "hold wins everywhere"
+(+$43/fill holds) — that conclusion was resolution-timing survivorship
+(FINDINGS round 3): the resolved cohort IS the winners. This version
+scores every fill with forward.payouts_for() (tape proxy + mandatory CTF
+chain overlay, refunds as scratches) and splits cohorts explicitly.
 
-Method: per tape day — informed set as-of 00:00 UTC (frozen method),
-signals() with frozen params (flow>=$300/60s, band 10-90c, cooldown 900s),
-worst-print $100 entries at p50 lag / calibrated hold. For each RESOLVED
-fill: hold-to-resolution PnL (res_tok) vs exit PnL at each horizon.
-Coverage (no print in window => no exit) reported per horizon."""
+Still prints-based on the EXIT leg (last print <= t+H ≈ optimistic vs the
+real bid; the harnesses' markout re-reads at +60/300/1800s accrue the real
+bid marks to haircut this). Exit fee charged same as entry. NOT
+pre-registered — shapes (or kills) a possible A3-scalp hypothesis only."""
 import json
 import os
 import time
@@ -23,6 +22,7 @@ import time
 import tape
 import sim as simmod
 import study_flow as sf
+import forward as fwd
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 HORIZONS = (60, 300, 1800, 7200)
@@ -45,46 +45,50 @@ def main():
         days.append(time.strftime("%Y-%m-%d", time.gmtime(t)))
         t += 86400
     tape.build_resolved(db)
-    payout = {a: (p, lts) for a, p, lts in db.execute(
-        "SELECT asset, payout::DOUBLE, last_ts FROM res_tok").fetchall()}
+    tape_resolved = {a for (a,) in db.execute(
+        "SELECT asset FROM res_tok").fetchall()}
     sim = simmod.Sim(db, lag_s=simmod.LAG_P50, hold_s=cal["hold_s"],
                      fill="worst")
-    rows = []
+    fills = []
     for d in days:
         lo, hi = day_bounds(d)
         hi = min(hi, t_max)
         S = sf.informed_set(db, lo, fz["top_n"])
         trig = sf.signals(db, S, lo, hi, fz["window_s"], fz["flow_usd"])
-        forward = d >= "2026-07-21"          # after the 07-20 freeze
         for t_ in trig:
             r = sim.try_buy(t_["asset"], t_["ts"], t_["p_ref"],
                             stake_usd=sf.STAKE)
-            if not r["filled"]:
+            if r["filled"]:
+                fills.append({"day": d, "fwd": d >= "2026-07-21",
+                              "asset": t_["asset"], **r})
+        print(f"{d}: {len(trig)} triggers")
+    pays = fwd.payouts_for(db, [f["asset"] for f in fills])
+    rows = []
+    for f in fills:
+        pay = pays.get(f["asset"])
+        if pay is None:
+            continue                     # truly unresolved even on chain
+        row = {"day": f["day"], "fwd": f["fwd"], "px": f["price"],
+               "cohort": "tape" if f["asset"] in tape_resolved else "chain",
+               "hold_pnl": f["shares"] * (pay - f["price"]) - f["fee"],
+               "win": pay == 1.0, "refund": pay == 0.5, "mo": {}}
+        for H in HORIZONS:
+            m = sim.markout(f["asset"], f["fill_ts"], H)
+            if m is None:
                 continue
-            pay = payout.get(t_["asset"])
-            if pay is None:
-                continue                     # resolution leg required
-            row = {"day": d, "fwd": forward, "px": r["price"],
-                   "shares": r["shares"], "efee": r["fee"],
-                   "hold_s": pay[1] - r["fill_ts"],
-                   "hold_pnl": r["shares"] * (pay[0] - r["price"]) - r["fee"],
-                   "win": pay[0] == 1.0, "mo": {}}
-            for H in HORIZONS:
-                m = sim.markout(t_["asset"], r["fill_ts"], H)
-                if m is None:
-                    continue
-                xfee = FEE * r["shares"] * min(m, 1 - m)
-                row["mo"][H] = r["shares"] * (m - r["price"]) - r["fee"] - xfee
-            rows.append(row)
-        print(f"{d}: {len(trig)} triggers scored")
+            xfee = FEE * f["shares"] * min(m, 1 - m)
+            row["mo"][H] = f["shares"] * (m - f["price"]) - f["fee"] - xfee
+        rows.append(row)
 
     def report(tag, rs):
         if not rs:
             return
         n = len(rs)
         hold = sum(r["hold_pnl"] for r in rs)
-        print(f"\n== {tag} — {n} resolved fills · hold-to-resolution "
-              f"EV/fill {hold/n:+.2f} · hit {sum(r['win'] for r in rs)/n:.2f}")
+        print(f"\n== {tag} — {n} chain-graded fills · HOLD EV/fill "
+              f"{hold/n:+.2f} · hit {sum(r['win'] for r in rs)/n:.2f}"
+              + (f" · {sum(r['refund'] for r in rs)} refunds"
+                 if any(r["refund"] for r in rs) else ""))
         for H in HORIZONS:
             sub = [r for r in rs if H in r["mo"]]
             if not sub:
@@ -95,17 +99,17 @@ def main():
                   f"{hold_sub/len(sub):+7.2f} on same {len(sub)} "
                   f"({100*len(sub)/n:.0f}% coverage)")
 
-    fwd = [r for r in rows if r["fwd"]]
-    ins = [r for r in rows if not r["fwd"]]
-    report("IN-SAMPLE days (<= 07-20)", ins)
-    report("FORWARD days (>= 07-21)", fwd)
-    report("FORWARD · hold > 3h (the v1 bleed bucket)",
-           [r for r in fwd if r["hold_s"] > 10800])
-    report("FORWARD · hold < 3h", [r for r in fwd if r["hold_s"] <= 10800])
+    fwd_rows = [r for r in rows if r["fwd"]]
+    report("ALL days", rows)
+    report("FORWARD days (>= 07-21)", fwd_rows)
+    report("FORWARD · tape-resolved cohort (the old scorer's sample)",
+           [r for r in fwd_rows if r["cohort"] == "tape"])
+    report("FORWARD · chain-only cohort (the hidden losses)",
+           [r for r in fwd_rows if r["cohort"] == "chain"])
     for lo_, hi_, tag in [(0, .3, "entry 0-30c"), (.3, .5, "entry 30-50c"),
                           (.5, .7, "entry 50-70c"), (.7, .95, "entry 70-95c")]:
         report(f"FORWARD · {tag}",
-               [r for r in fwd if lo_ <= r["px"] < hi_])
+               [r for r in fwd_rows if lo_ <= r["px"] < hi_])
 
 
 if __name__ == "__main__":
