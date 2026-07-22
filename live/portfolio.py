@@ -599,7 +599,14 @@ def main():
                      "won": v["won"], "lost": v["lost"], "ref": v.get("ref", 0),
                      "sold": v.get("sold", 0), "class": v.get("class", "volume"),
                      "invested": round(v["invested"], 2), "realized": round(v["realized"], 2),
-                     "conv_thr": conv_thr.get(v["wallet"], 1e12)}
+                     "conv_thr": conv_thr.get(v["wallet"], 1e12),
+                     # per-wallet missed totals over the FULL missed list —
+                     # the feed's missed[] is a 60-row window, so the cards
+                     # must get lifetime numbers server-side (2026-07-22,
+                     # same lesson as the copybot dash's wallet_pnl)
+                     "missed_n": sum(1 for m in missed if m["name"] == v["name"]),
+                     "missed_pnl": round(sum(hypo_pnl(m) for m in missed
+                                             if m["name"] == v["name"]), 2)}
                     for v in perW.values()],
         "current": [{"title": c.get("title", ""), "name": c["name"], "outcome": c.get("outcome", ""),
                      "stake": c.get("stake"), "val": round(c["val"], 2), "pnl": round(c["pnl"], 2),
