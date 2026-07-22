@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784716236,
+ "updated": 1784721019,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 537.11,
@@ -56,11 +56,11 @@
    "realized": -25.56,
    "n": 17,
    "wins": 0,
-   "open_cost": 110.38,
-   "open_n": 1,
+   "open_cost": 223.25,
+   "open_n": 2,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784716236
+   "last_ts": 1784721013
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -84,6 +84,25 @@
   }
  },
  "bets": [
+  {
+   "token": "5672952468548015184968602470125350481899055121933384423405096851532324921748",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Team WE",
+   "title": "LoL: Top Esports vs Team WE - Game 1 Winner",
+   "their_price": 0.35,
+   "my_price": 0.34,
+   "slippage_pct": -0.0286,
+   "lag_s": 0.7,
+   "shares": 331.98,
+   "cost": 112.87,
+   "fee": 2.2349,
+   "opened": 1784721013,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "78756824599620466173157778704367687079439148627730740651855490473811677254129",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",

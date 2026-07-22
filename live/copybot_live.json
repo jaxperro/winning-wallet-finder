@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 112.87,
+ "stake": 112.78,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1655.46,
- "deployed": 1166.36,
+ "cash": 1540.36,
+ "deployed": 1279.23,
  "reserve": 0.0,
- "realized": 1821.79,
+ "realized": 1819.56,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 18,
- "fees_paid": 334.76,
+ "open_count": 19,
+ "fees_paid": 337.0,
  "fee_rate": 0.03,
  "lag": {
-  "n": 222,
-  "n24": 11,
-  "avg_s": 7.8,
-  "avg_slip_pct": -0.0209,
+  "n": 223,
+  "n24": 12,
+  "avg_s": 7.2,
+  "avg_slip_pct": -0.0215,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 344.56
  },
  "bets": [
+  {
+   "token": "5672952468548015184968602470125350481899055121933384423405096851532324921748",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Team WE",
+   "title": "LoL: Top Esports vs Team WE - Game 1 Winner",
+   "their_price": 0.35,
+   "my_price": 0.34,
+   "slippage_pct": -0.0286,
+   "lag_s": 0.7,
+   "shares": 331.98,
+   "cost": 112.87,
+   "fee": 2.23,
+   "opened": 1784721013,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "78756824599620466173157778704367687079439148627730740651855490473811677254129",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2087,26 +2106,6 @@
    "settled": 1783983853,
    "sold_shares": 121.96,
    "sold_proceeds": 104.44
-  },
-  {
-   "token": "37211745484282012925266837530256587065398391037537765685819517059038544194325",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the Houthis successfully target shipping by July 17, 2026?",
-   "their_price": 0.33,
-   "my_price": 0.26,
-   "slippage_pct": -0.2121,
-   "shares": 67.8,
-   "cost": 17.63,
-   "fee": 0.39,
-   "opened": 1783942541,
-   "status": "closed",
-   "exit_price": 0.7372,
-   "pnl": 31.96,
-   "settled": 1783962629,
-   "sold_shares": 67.8,
-   "sold_proceeds": 49.98
   }
  ],
  "missed": [
@@ -3055,12 +3054,12 @@
  ],
  "missed_pnl": 95309.91,
  "last_fill": {
-  "ts": 1784716234,
-  "side": "SELL",
-  "price": 0.85,
-  "shares": 50.58,
-  "title": "LoL: LGD Gaming vs EDward Gaming - Game 2 Winner",
-  "outcome": "EDward Gaming"
+  "ts": 1784721013,
+  "side": "BUY",
+  "price": 0.34,
+  "shares": 331.98,
+  "title": "LoL: Top Esports vs Team WE - Game 1 Winner",
+  "outcome": "Team WE"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3117,11 +3116,11 @@
    "realized": -25.56,
    "n": 17,
    "wins": 0,
-   "open_cost": 110.38,
-   "open_n": 1,
+   "open_cost": 223.25,
+   "open_n": 2,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784716236
+   "last_ts": 1784721013
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -3144,5 +3143,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784716236
+ "updated": 1784721019
 }
