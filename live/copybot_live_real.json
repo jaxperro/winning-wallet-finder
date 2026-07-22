@@ -1,18 +1,18 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.47,
+ "stake": 2.43,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.85,
- "cash": 37.6,
- "deployed": 24.19,
+ "cash": 39.1,
+ "deployed": 21.68,
  "reserve": 0.0,
- "realized": -14.06,
+ "realized": -15.08,
  "adjustments": 9.44,
- "ledger_drift": 0.0,
- "open_count": 13,
- "fees_paid": 2.92,
+ "ledger_drift": -0.0,
+ "open_count": 12,
+ "fees_paid": 2.95,
  "fee_rate": 0.03,
  "lag": {
   "n": 103,
@@ -60,10 +60,12 @@
    "cost": 2.51,
    "fee": 0.03,
    "opened": 1784712209,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "closed",
+   "exit_price": 0.3531,
+   "pnl": -1.04,
+   "settled": 1784712677,
+   "sold_shares": 4.25,
+   "sold_proceeds": 1.5
   },
   {
    "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
@@ -3025,10 +3027,10 @@
  ],
  "missed_pnl": 1165.24,
  "last_fill": {
-  "ts": 1784712216,
-  "side": "BUY",
-  "price": 0.59,
-  "shares": 4.26,
+  "ts": 1784712618,
+  "side": "SELL",
+  "price": 0.36,
+  "shares": 4.25,
   "title": "LoL: LGD Gaming vs EDward Gaming - Game 1 Winner",
   "outcome": "EDward Gaming"
  },
@@ -3044,14 +3046,14 @@
    "last_ts": 1784709738
   },
   "AIcAIc": {
-   "realized": -15.84,
-   "n": 10,
+   "realized": -16.88,
+   "n": 11,
    "wins": 0,
-   "open_cost": 2.51,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 6,
    "miss_pnl": 4.5,
-   "last_ts": 1784712209
+   "last_ts": 1784712677
   },
   "(incident)": {
    "realized": 5.86,
@@ -3124,5 +3126,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784712547
+ "updated": 1784712677
 }

@@ -11199,15 +11199,6 @@
       "event": null,
       "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
       "cond": "0x5d02cb8ef8fe6c50dd2d58283dfe5742b4f13cfa5acbaa4b75dc25a438c6594d"
-    },
-    "61895825019286928316753689208545457497714235075046708292847356747636406191670": {
-      "shares": 4.258619,
-      "cost": 2.51258521,
-      "title": "LoL: LGD Gaming vs EDward Gaming - Game 1 Winner",
-      "outcome": "EDward Gaming",
-      "event": "lol-lgd-edg-2026-07-22",
-      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-      "cond": "0xa22cb6ca53c2ccef8ee00feffc56ad1993c4cfb360d8f7698b04a094434b2edf"
     }
   },
   "spend": {
@@ -11298,13 +11289,13 @@
     "30518385375198439635185229487622977022492810585983145828956543777339451661080": "0x5d02cb8ef8fe6c50dd2d58283dfe5742b4f13cfa5acbaa4b75dc25a438c6594d",
     "61895825019286928316753689208545457497714235075046708292847356747636406191670": "0xa22cb6ca53c2ccef8ee00feffc56ad1993c4cfb360d8f7698b04a094434b2edf"
   },
-  "cash": 37.59858564761447,
+  "cash": 39.09920964761447,
   "lag": {
     "n": 103,
     "sum_s": 3124.6190972328186,
     "sum_slip_pct": 2.589593382213365
   },
-  "fees_paid": 2.921191637445528,
+  "fees_paid": 2.950567637445528,
   "lag_recent": [
     [
       1784653431.5,
@@ -13522,10 +13513,12 @@
       "cost": 2.51,
       "fee": 0.0309,
       "opened": 1784712209,
-      "status": "open",
-      "exit_price": null,
-      "pnl": null,
-      "settled": null
+      "status": "closed",
+      "exit_price": 0.3531,
+      "pnl": -1.04,
+      "settled": 1784712677,
+      "sold_shares": 4.25,
+      "sold_proceeds": 1.500624
     }
   },
   "no_miss_toks": [
@@ -16779,8 +16772,8 @@
       "name": "AIcAIc"
     }
   ],
-  "feed_sig": "c5589ac7aba0c451c212331ba1aed237",
-  "feed_pushed_at": 1784712482.5561657,
+  "feed_sig": "8fedef8b7dffb9688b03a8983acb51c6",
+  "feed_pushed_at": 1784712617.28267,
   "adjustments": [
     {
       "ts": 1783906689,
@@ -16808,27 +16801,7 @@
       "note": "unattributed chain-over-book remainder: favorable fill rounding, folded at 2026-07-20 reconcile after settling the Odyssey auto-redeem as bet P&L \u2014 non-trading income, zeroes CASH\u2260CHAIN, cash credited"
     }
   ],
-  "pending_orders": [
-    {
-      "order_id": "0x395cfcb15a7a74543252346a57770d45977016a903d4c9f85f1f9ade7cbce1cf",
-      "bal0": 4.258619,
-      "sz": 4.25,
-      "token": "61895825019286928316753689208545457497714235075046708292847356747636406191670",
-      "side": "SELL",
-      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-      "title": "LoL: LGD Gaming vs EDward Gaming - Game 1 Winner",
-      "outcome": "EDward Gaming",
-      "event": "lol-lgd-edg-2026-07-22",
-      "cond": "0xa22cb6ca53c2ccef8ee00feffc56ad1993c4cfb360d8f7698b04a094434b2edf",
-      "their_price": 0.38,
-      "their_ts": null,
-      "price": 0.38,
-      "is_add": false,
-      "stake": 1.6182752200000001,
-      "ts": 1784712617.1848989,
-      "ttl_s": 600
-    }
-  ],
+  "pending_orders": [],
   "exit_retries": [],
   "exit_attempts": {
     "2744571775903589106980317653847400232271579861889013320024551414528092561305": 25,
@@ -16857,7 +16830,7 @@
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784676256,
     "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784711779,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784659468,
-    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784712477,
+    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784712504,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784682235,
     "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784707374
   },
@@ -16866,10 +16839,10 @@
     "ts": 1784658804
   },
   "last_fill": {
-    "ts": 1784712216,
-    "side": "BUY",
-    "price": 0.59,
-    "shares": 4.26,
+    "ts": 1784712618,
+    "side": "SELL",
+    "price": 0.36,
+    "shares": 4.25,
     "title": "LoL: LGD Gaming vs EDward Gaming - Game 1 Winner",
     "outcome": "EDward Gaming"
   }
