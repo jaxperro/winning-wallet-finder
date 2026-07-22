@@ -1,8 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0x1c451c8444abe79d4f3309db62742826a3756780a1bc234f1208864b0ca89d5f",
-    "0x7f613c3c61154672d604d267f5f320e3a80e01bbe032e23a192b27726f66ab26",
     "0xa8d8669265075f34a2e4ddf6813522e92c3e1c88665b06a10b0ca1267ad302aa",
     "0xa5978deccba358407abff3ed102a08514c8b560e85e781feefa8b0cca861a512",
     "0xfadad54a859fefe9c9a91112eb7945c1b0a033cace2a7e3b1bdf353fed2936e3",
@@ -5000,7 +4998,9 @@
     "0x8fb8b151094fb5cf95316be7fa9b194dd5ded6970c2ed611f0be58fbb46d8d71",
     "0xe129713195fcc1dc6e1c6aae919d622a7dd0ba24077f34788278038c8f330e77",
     "0xab2fe4de3515eb1651d57b62e47a7a220731a41b5d16cd863053f883727f6c49",
-    "0x91fbff3bdb16ef13af5c22a80e02b042fcb0238538dbe6f5fe593f360fe9cdd5"
+    "0x91fbff3bdb16ef13af5c22a80e02b042fcb0238538dbe6f5fe593f360fe9cdd5",
+    "0x81b6ce59e374d8441528f9c2f71d68eba5b614f2f3c60b189efc6b9daf600f13",
+    "0x861b9bfe495aefab2bbf43cf55b80805624b6b2520a049469c09b95927f1b148"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -15685,8 +15685,8 @@
     }
   },
   "hwm": 3017.9847339343023,
-  "feed_sig": "ae27eccfdc11887343b72dad95014d8c",
-  "feed_pushed_at": 1784750651.4593859,
+  "feed_sig": "6312177da961a84d4e7289b924d8f31c",
+  "feed_pushed_at": 1784750920.617405,
   "missed": [
     {
       "ts": 1783590977,
@@ -17936,9 +17936,9 @@
       "price": 0.4074,
       "stake": 106.32,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 152.76,
+      "settled": 1784750985,
       "name": "0xbadaf319"
     },
     {
@@ -17966,9 +17966,9 @@
       "price": 0.3073,
       "stake": 68.62,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "pnl": -70.05,
+      "settled": 1784750985,
       "name": "0xbadaf319"
     },
     {
@@ -18522,7 +18522,7 @@
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784749375,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784750359,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784750821,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784745123,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784737666,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784749249,
