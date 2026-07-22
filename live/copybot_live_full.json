@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784755189,
+ "updated": 1784756460,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.9,
@@ -9,7 +9,7 @@
    "open_cost": 638.59,
    "open_n": 9,
    "miss_n": 53,
-   "miss_pnl": 95660.04,
+   "miss_pnl": 95780.62,
    "last_ts": 1784722115
   },
   "gkmgkldfmg": {
@@ -4170,6 +4170,21 @@
  ],
  "missed": [
   {
+   "ts": 1784275928,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "15456330829547795037828293282236765253933989530349029925038235552652310014831",
+   "cond": "0x240c2424f9e2de98676f8a2dce520b2dfee499b68194ac5db0537be851f56989",
+   "title": "Will Revolut's valuation hit (HIGH) $90B by December 31?",
+   "outcome": "Yes",
+   "price": 0.28,
+   "stake": 47.29,
+   "reason": "book unreliable (spread 0.64 > 0.08)",
+   "status": "won",
+   "pnl": 120.58,
+   "settled": 1784756458,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784755189,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "6942521039548952262803452715536366269632833663841807575802631974514414220741",
@@ -5415,21 +5430,6 @@
    "settled": 1784289655,
    "name": "gkmgkldfmg",
    "exit_price": 0.6578
-  },
-  {
-   "ts": 1784275928,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "15456330829547795037828293282236765253933989530349029925038235552652310014831",
-   "cond": "0x240c2424f9e2de98676f8a2dce520b2dfee499b68194ac5db0537be851f56989",
-   "title": "Will Revolut's valuation hit (HIGH) $90B by December 31?",
-   "outcome": "Yes",
-   "price": 0.28,
-   "stake": 47.29,
-   "reason": "book unreliable (spread 0.64 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784236753,

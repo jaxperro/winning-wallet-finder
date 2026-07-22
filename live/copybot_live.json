@@ -2114,6 +2114,21 @@
  ],
  "missed": [
   {
+   "ts": 1784275928,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "15456330829547795037828293282236765253933989530349029925038235552652310014831",
+   "cond": "0x240c2424f9e2de98676f8a2dce520b2dfee499b68194ac5db0537be851f56989",
+   "title": "Will Revolut's valuation hit (HIGH) $90B by December 31?",
+   "outcome": "Yes",
+   "price": 0.28,
+   "stake": 47.29,
+   "reason": "book unreliable (spread 0.64 > 0.08)",
+   "status": "won",
+   "pnl": 120.58,
+   "settled": 1784756458,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784755189,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "6942521039548952262803452715536366269632833663841807575802631974514414220741",
@@ -3039,24 +3054,9 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784438883,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "18859662100986706442931434084612043934725834523854128874928569872427180020630",
-   "cond": "0x4906333de7e9252101ded75f9bac59e07d158573381c89afe6f719dd3baadefd",
-   "title": "Will Western Digital (WDC) Q4 exabytes shipped be above 255?",
-   "outcome": "No",
-   "price": 0.83,
-   "stake": 50.59,
-   "reason": "thin book ($17 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 95437.12,
+ "missed_pnl": 95557.7,
  "last_fill": {
   "ts": 1784725643,
   "side": "SELL",
@@ -3073,7 +3073,7 @@
    "open_cost": 638.59,
    "open_n": 9,
    "miss_n": 53,
-   "miss_pnl": 95660.04,
+   "miss_pnl": 95780.62,
    "last_ts": 1784722115
   },
   "gkmgkldfmg": {
@@ -3147,5 +3147,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784755189
+ "updated": 1784756460
 }
