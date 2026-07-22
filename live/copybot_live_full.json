@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1784721019,
+ "updated": 1784722115,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 537.11,
-   "n": 46,
+   "realized": 542.9,
+   "n": 47,
    "wins": 12,
-   "open_cost": 701.76,
-   "open_n": 10,
+   "open_cost": 638.59,
+   "open_n": 9,
    "miss_n": 48,
    "miss_pnl": 95532.83,
-   "last_ts": 1784709738
+   "last_ts": 1784722115
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -84,6 +84,27 @@
   }
  },
  "bets": [
+  {
+   "token": "48409467751286486665938959009701710014426367960633333378105361988315138136571",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Silver (XAGUSD) hit (LOW) $50 Week of July 20 2026?",
+   "their_price": 0.93,
+   "my_price": 0.911,
+   "slippage_pct": -0.0204,
+   "lag_s": 25.9,
+   "shares": 69.34,
+   "cost": 63.17,
+   "fee": 0.1687,
+   "opened": 1784595886,
+   "status": "closed",
+   "exit_price": 0.9969,
+   "pnl": 5.79,
+   "settled": 1784722115,
+   "sold_shares": 69.34142919722316,
+   "sold_proceeds": 69.12718290318962
+  },
   {
    "token": "5672952468548015184968602470125350481899055121933384423405096851532324921748",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -420,25 +441,6 @@
    "cost": 106.34311715292759,
    "fee": 0.7624,
    "opened": 1784610028,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
-  },
-  {
-   "token": "48409467751286486665938959009701710014426367960633333378105361988315138136571",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Silver (XAGUSD) hit (LOW) $50 Week of July 20 2026?",
-   "their_price": 0.93,
-   "my_price": 0.911,
-   "slippage_pct": -0.0204,
-   "lag_s": 25.9,
-   "shares": 69.34,
-   "cost": 63.17,
-   "fee": 0.1687,
-   "opened": 1784595886,
    "status": "open",
    "exit_price": null,
    "pnl": null,
