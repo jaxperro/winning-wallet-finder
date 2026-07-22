@@ -53,10 +53,11 @@ done
 "$PY" forward.py >> forward.log 2>&1
 "$PY" informed_set.py >> forward.log 2>&1     # surge harness reads this daily
 "$PY" grade_surge.py >> forward.log 2>&1 || true   # paper book -> chain truth
+"$PY" grade_oracle.py >> forward.log 2>&1 || true  # oracle paper -> chain truth
 
 cd ..
 git add research/forward_ledger.jsonl research/params/informed_set.json \
-        research/surge_paper_ledger.jsonl 2>/dev/null
+        research/surge_paper_ledger.jsonl research/oracle_paper_ledger.jsonl 2>/dev/null
 if ! git diff --cached --quiet; then
   git commit -q -m "research: forward ledger $(date -u +%F) [skip ci]"
   git pull --rebase --autostash -q && git push -q

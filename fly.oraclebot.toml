@@ -1,0 +1,29 @@
+# wwf-oraclebot — Study B crypto-oracle PAPER harness (research silo).
+# No keys, no orders, no repo clone: code baked in image (recorder pattern).
+# Believing its numbers is gated on the #17 forward verdict; the harness
+# measures real-time capturability only. State on the volume; the Mac
+# nightly pulls + grades (grade_oracle.py).
+app = "wwf-oraclebot"
+primary_region = "arn"
+
+[build]
+  dockerfile = "research/oraclebot.Dockerfile"
+
+[[mounts]]
+  source = "oracle"
+  destination = "/data"
+
+# read-only paper feed for jaxperro.com/oracle (GET /feed, CORS-open)
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+
+[[restart]]
+  policy = "always"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"
