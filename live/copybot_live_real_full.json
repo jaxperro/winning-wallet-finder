@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784682351,
+ "updated": 1784682931,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.45,
@@ -68,7 +68,7 @@
    "wins": 1,
    "open_cost": 12.49,
    "open_n": 6,
-   "miss_n": 19,
+   "miss_n": 20,
    "miss_pnl": -6.12,
    "last_ts": 1784660784
   },
@@ -2257,6 +2257,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784682919,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "66006680389192620317816056197058298603060937483253191311974086024874814208778",
+   "cond": "0x78322c43b6c76c3f29208ae75bf81d455c3b3b803c891a8945e25fe4376a3a8e",
+   "title": "Will the next Claude Opus model be released by July 24, 2026?",
+   "outcome": "No",
+   "price": 0.52,
+   "stake": 2.47,
+   "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1784675472,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
