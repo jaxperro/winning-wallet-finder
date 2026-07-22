@@ -2078,6 +2078,21 @@
  ],
  "missed": [
   {
+   "ts": 1784714439,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "26988481082400938234620905580029354496814882411644162756993608321400480311992",
+   "cond": "0xddfe7926b77c8c942a69d8f655c09bd3acffc469a7b19df5ea4895dc97c95649",
+   "title": "LoL: LGD Gaming vs EDward Gaming (BO3) - LPL Group Ascend",
+   "outcome": "EDward Gaming",
+   "price": 0.27,
+   "stake": 2.43,
+   "reason": "in-play hold expired unfilled (34s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1784712542,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "109327236025013742107209446994759648486337225456400949684723230400014744810383",
@@ -3008,25 +3023,9 @@
    "settled": 1784389487,
    "name": "Kruto2027",
    "exit_price": 0.9701
-  },
-  {
-   "ts": 1784388877,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "58169143653343450326195498215538236930997670878228551327845934859747060865016",
-   "cond": "0x68bdc057bd18669f01b3e4b408d14733b2680a61c6e5c7a5cd5bdc86a1f41df6",
-   "title": "Dota 2: Team Yandex vs PARIVISION - Game 2 Winner",
-   "outcome": "Team Yandex",
-   "price": 0.46,
-   "stake": 2.23,
-   "reason": "price moved 0.36\u21920.46",
-   "status": "sold",
-   "pnl": 0.52,
-   "settled": 1784389162,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.5824
   }
  ],
- "missed_pnl": 1165.73,
+ "missed_pnl": 1165.07,
  "last_fill": {
   "ts": 1784712618,
   "side": "SELL",
@@ -3052,7 +3051,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 6,
+   "miss_n": 7,
    "miss_pnl": 4.99,
    "last_ts": 1784712677
   },
@@ -3127,5 +3126,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784713276
+ "updated": 1784714440
 }

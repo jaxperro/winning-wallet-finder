@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784713276,
+ "updated": 1784714440,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.45,
@@ -18,7 +18,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 6,
+   "miss_n": 7,
    "miss_pnl": 4.99,
    "last_ts": 1784712677
   },
@@ -2297,6 +2297,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784714439,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "26988481082400938234620905580029354496814882411644162756993608321400480311992",
+   "cond": "0xddfe7926b77c8c942a69d8f655c09bd3acffc469a7b19df5ea4895dc97c95649",
+   "title": "LoL: LGD Gaming vs EDward Gaming (BO3) - LPL Group Ascend",
+   "outcome": "EDward Gaming",
+   "price": 0.27,
+   "stake": 2.43,
+   "reason": "in-play hold expired unfilled (34s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
   {
    "ts": 1784712542,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
