@@ -2083,6 +2083,21 @@
  ],
  "missed": [
   {
+   "ts": 1784755189,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "6942521039548952262803452715536366269632833663841807575802631974514414220741",
+   "cond": "0x1121a02fc780ddeb79cf91cdf2fea0a7dc2a8eb91a8643e86a4a415ab519ab90",
+   "title": "Will the Houthis successfully target shipping by August 31, 2026?",
+   "outcome": "No",
+   "price": 0.16,
+   "stake": 2.52,
+   "reason": "thin book ($8 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784754808,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "81905629695376179467642152439122205490366546600283546015907818703618943938229",
@@ -3016,24 +3031,9 @@
    "settled": 1784447037,
    "name": "0xbadaf319",
    "exit_price": 0.95
-  },
-  {
-   "ts": 1784438883,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "18859662100986706442931434084612043934725834523854128874928569872427180020630",
-   "cond": "0x4906333de7e9252101ded75f9bac59e07d158573381c89afe6f719dd3baadefd",
-   "title": "Will Western Digital (WDC) Q4 exabytes shipped be above 255?",
-   "outcome": "No",
-   "price": 0.83,
-   "stake": 2.0,
-   "reason": "thin book ($17 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 1165.54,
+ "missed_pnl": 1164.85,
  "last_fill": {
   "ts": 1784725645,
   "side": "SELL",
@@ -3099,8 +3099,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 15,
-   "miss_pnl": -1.66,
+   "miss_n": 14,
+   "miss_pnl": -2.35,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -3109,7 +3109,7 @@
    "wins": 1,
    "open_cost": 12.49,
    "open_n": 6,
-   "miss_n": 22,
+   "miss_n": 23,
    "miss_pnl": -6.12,
    "last_ts": 1784660784
   },
@@ -3129,8 +3129,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 5,
-   "miss_pnl": 1.0,
+   "miss_n": 6,
+   "miss_pnl": 1.69,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3144,5 +3144,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784754813
+ "updated": 1784755189
 }
