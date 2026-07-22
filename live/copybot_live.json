@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 120.72,
+ "stake": 116.3,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
  "cash": 1914.8,
- "deployed": 1103.19,
+ "deployed": 992.81,
  "reserve": 0.0,
- "realized": 2017.95,
+ "realized": 1907.57,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 17,
+ "open_count": 16,
  "fees_paid": 342.96,
  "fee_rate": 0.03,
  "lag": {
@@ -46,6 +46,25 @@
   "AIcAIc": 344.56
  },
  "bets": [
+  {
+   "token": "26988481082400938234620905580029354496814882411644162756993608321400480311992",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "EDward Gaming",
+   "title": "LoL: LGD Gaming vs EDward Gaming (BO3) - LPL Group Ascend",
+   "their_price": 0.27,
+   "my_price": 0.27,
+   "slippage_pct": 0.0,
+   "lag_s": 1.3,
+   "shares": 408.81,
+   "cost": 110.38,
+   "fee": 2.42,
+   "opened": 1784714402,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -112.8,
+   "settled": 1784733056
+  },
   {
    "token": "55071405929941363854274866721931311048000830793954776923614437932856724606852",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -150,25 +169,6 @@
    "settled": 1784716236,
    "sold_shares": 212.08,
    "sold_proceeds": 176.61
-  },
-  {
-   "token": "26988481082400938234620905580029354496814882411644162756993608321400480311992",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "EDward Gaming",
-   "title": "LoL: LGD Gaming vs EDward Gaming (BO3) - LPL Group Ascend",
-   "their_price": 0.27,
-   "my_price": 0.27,
-   "slippage_pct": 0.0,
-   "lag_s": 1.3,
-   "shares": 408.81,
-   "cost": 110.38,
-   "fee": 2.42,
-   "opened": 1784714402,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "109327236025013742107209446994759648486337225456400949684723230400014744810383",
@@ -3118,14 +3118,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 164.65,
-   "n": 20,
+   "realized": 51.85,
+   "n": 21,
    "wins": 0,
-   "open_cost": 110.38,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784725644
+   "last_ts": 1784733056
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -3148,5 +3148,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784729828
+ "updated": 1784733059
 }
