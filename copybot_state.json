@@ -1,8 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0xfe4c10ee1e72161ae264dec9e5540d41d2523875194f745f26073021292b4cbf",
-    "0x5a5629e543650f510d3d636b03b2c96482609fd3d65674e413c85670df4cee90",
     "0x093736d9bcde09335404567054e83e1496831284d5c6b514cafb2183b206074a",
     "0xc4eff7d13dc2c33b8cba5bc7f3a30e7a56b57aef6b56c6b716f0ecd010877d7a",
     "0x5d90dff21cc6ddb0a74dcb0a91779052f473b6ab7f5993f0ce4c154aadd1d049",
@@ -5000,7 +4998,9 @@
     "0xe97b94edc83191acfe25ff8c433595732d46092a05bd606dd0eb3f4b56e9e0ba",
     "0x277089131e1677dfb42c69e8f630f2d577f88636e1653d0bb56ae8f4f1dae4b6",
     "0xc2f5fabb34f23b9bc34a5a6d58892be20d8ba85cd6de8f7549bb6fe2932ad693",
-    "0x89ed8f3f2511e09c527a36dbd9878c19e38589f476b779544f488c0b14bd174e"
+    "0x89ed8f3f2511e09c527a36dbd9878c19e38589f476b779544f488c0b14bd174e",
+    "0x0a15ec84fb67066934cfb802a43264226bb2282265a3cd5d2054c652b6f2f89e",
+    "0xb5134c7687244c3e44b2d001ac3bc2149e70db41b5c4d36d73bfdc5d272b0376"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -15700,8 +15700,8 @@
     }
   },
   "hwm": 3017.9847339343023,
-  "feed_sig": "ef89eb48ea068b0721773ff2c72591e8",
-  "feed_pushed_at": 1784756323.5295606,
+  "feed_sig": "f9a98b23b346ce59cb83e8c2e0f494f1",
+  "feed_pushed_at": 1784756594.0436664,
   "missed": [
     {
       "ts": 1783590977,
@@ -18408,9 +18408,9 @@
       "price": 0.48,
       "stake": 116.3,
       "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "refund",
+      "pnl": 3.03,
+      "settled": 1784756659,
       "name": "Kruto2027"
     },
     {
@@ -18587,7 +18587,7 @@
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784750670,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784755866,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784756491,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784745123,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784737666,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784749753,
