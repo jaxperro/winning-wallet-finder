@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 110.42,
+ "stake": 111.03,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1705.23,
- "deployed": 1055.37,
+ "cash": 1667.56,
+ "deployed": 1108.25,
  "reserve": 0.0,
- "realized": 1760.57,
+ "realized": 1775.78,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 16,
- "fees_paid": 324.56,
+ "open_count": 17,
+ "fees_paid": 325.77,
  "fee_rate": 0.03,
  "lag": {
-  "n": 216,
-  "n24": 6,
-  "avg_s": 11.0,
-  "avg_slip_pct": -0.0022,
+  "n": 218,
+  "n24": 8,
+  "avg_s": 9.1,
+  "avg_slip_pct": -0.0052,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,27 @@
   "AIcAIc": 344.56
  },
  "bets": [
+  {
+   "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+   "their_price": 0.71,
+   "my_price": 0.7,
+   "slippage_pct": -0.0141,
+   "lag_s": 5.5,
+   "shares": 157.71,
+   "cost": 110.4,
+   "fee": 0.99,
+   "opened": 1784709738,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "sold_shares": 82.16,
+   "sold_proceeds": 73.72
+  },
   {
    "token": "56895600526342043824967043463285146349388358932785516761025080000931732654952",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2084,29 +2105,24 @@
    "settled": 1783945157,
    "sold_shares": 98.18,
    "sold_proceeds": 93.09
-  },
-  {
-   "token": "112398855248126389642334724080634566219399886008841203075173521868162852635909",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "IAEA visits Isfahan, Fordow, or Natanz nuclear site by October 31?",
-   "their_price": 0.5765,
-   "my_price": 0.55,
-   "slippage_pct": -0.0459,
-   "shares": 144.45,
-   "cost": 79.45,
-   "fee": 1.07,
-   "opened": 1783650970,
-   "status": "closed",
-   "exit_price": 0.7648,
-   "pnl": 29.95,
-   "settled": 1783936091,
-   "sold_shares": 144.45,
-   "sold_proceeds": 110.47
   }
  ],
  "missed": [
+  {
+   "ts": 1784709848,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "16746455674526792453091721753802082438321089440613204909132014300251813407275",
+   "cond": "0x236fabcdc7506a5bde811505d8dc35863599dfea80ac3d39ac6f6d28dc922b08",
+   "title": "Will Benjamin Netanyahu visit New York City by September 30?",
+   "outcome": "No",
+   "price": 0.2557,
+   "stake": 40.53,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784528216,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -3033,43 +3049,27 @@
    "settled": 1784386017,
    "name": "0xbadaf319",
    "exit_price": 0.9728
-  },
-  {
-   "ts": 1784384209,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "99187050584684374496347488572453490542664664321038879329793286200731669569886",
-   "cond": "0xb2edf42ea5c8ec24809ee447a5ff06d39b70afbc52d94ae24d62d0280a08be91",
-   "title": "Dota 2: Team Yandex vs PARIVISION - Game 1 Winner",
-   "outcome": "PARIVISION",
-   "price": 0.53,
-   "stake": 103.25,
-   "reason": "price moved 0.45\u21920.53",
-   "status": "sold",
-   "pnl": -9.74,
-   "settled": 1784384731,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.495
   }
  ],
  "missed_pnl": 95309.91,
  "last_fill": {
-  "ts": 1784708749,
+  "ts": 1784709771,
   "side": "SELL",
-  "price": 0.98,
-  "shares": 6.58,
-  "title": "Ethereal FDV above $500M one day after launch?",
-  "outcome": "No"
+  "price": 0.9,
+  "shares": 82.16,
+  "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 537.11,
    "n": 46,
    "wins": 12,
-   "open_cost": 591.35,
-   "open_n": 9,
-   "miss_n": 47,
+   "open_cost": 701.76,
+   "open_n": 10,
+   "miss_n": 48,
    "miss_pnl": 95532.83,
-   "last_ts": 1784650955
+   "last_ts": 1784709738
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -3142,5 +3142,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784708755
+ "updated": 1784709855
 }

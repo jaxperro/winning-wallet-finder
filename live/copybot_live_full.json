@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1784708755,
+ "updated": 1784709855,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 537.11,
    "n": 46,
    "wins": 12,
-   "open_cost": 591.35,
-   "open_n": 9,
-   "miss_n": 47,
+   "open_cost": 701.76,
+   "open_n": 10,
+   "miss_n": 48,
    "miss_pnl": 95532.83,
-   "last_ts": 1784650955
+   "last_ts": 1784709738
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -84,6 +84,27 @@
   }
  },
  "bets": [
+  {
+   "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+   "their_price": 0.71,
+   "my_price": 0.7000190221455304,
+   "slippage_pct": -0.0141,
+   "lag_s": 5.5,
+   "shares": 157.71091621615264,
+   "cost": 110.40064135130685,
+   "fee": 0.9936,
+   "opened": 1784709738,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "sold_shares": 82.16066632642203,
+   "sold_proceeds": 73.7227658946985
+  },
   {
    "token": "56895600526342043824967043463285146349388358932785516761025080000931732654952",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -4001,6 +4022,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784709848,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "16746455674526792453091721753802082438321089440613204909132014300251813407275",
+   "cond": "0x236fabcdc7506a5bde811505d8dc35863599dfea80ac3d39ac6f6d28dc922b08",
+   "title": "Will Benjamin Netanyahu visit New York City by September 30?",
+   "outcome": "No",
+   "price": 0.2557,
+   "stake": 40.53,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784528216,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
