@@ -2108,6 +2108,21 @@
  ],
  "missed": [
   {
+   "ts": 1784682914,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "66006680389192620317816056197058298603060937483253191311974086024874814208778",
+   "cond": "0x78322c43b6c76c3f29208ae75bf81d455c3b3b803c891a8945e25fe4376a3a8e",
+   "title": "Will the next Claude Opus model be released by July 24, 2026?",
+   "outcome": "No",
+   "price": 0.52,
+   "stake": 110.32,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784663345,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "31114539293109191150949144475239465589903245761316798745025708973207317205400",
@@ -3033,23 +3048,6 @@
    "settled": 1784341135,
    "name": "1kto1m",
    "exit_price": 0.8683
-  },
-  {
-   "ts": 1784167406,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "7384451899802911723249599486996406665182105515403617543497677786694027499060",
-   "cond": "0x99527e3fb165b1b7ef5ccc75255c39a46e69a3006cf641f010ca2e23f4e9cb1b",
-   "title": "Will South Korea ETF (EWY) hit (HIGH) $188 Week of July 13 2026?",
-   "outcome": "No",
-   "price": 0.35,
-   "stake": 62.07,
-   "reason": "book unreliable (spread 0.64 > 0.08)",
-   "status": "sold",
-   "pnl": 92.95,
-   "settled": 1784319963,
-   "name": "0xbadaf319",
-   "exit_checked": true,
-   "exit_price": 0.884
   }
  ],
  "missed_pnl": 95301.53,
@@ -3128,7 +3126,7 @@
    "wins": 1,
    "open_cost": 706.41,
    "open_n": 7,
-   "miss_n": 17,
+   "miss_n": 18,
    "miss_pnl": -408.6,
    "last_ts": 1784660784
   },
@@ -3143,5 +3141,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784682351
+ "updated": 1784682943
 }
