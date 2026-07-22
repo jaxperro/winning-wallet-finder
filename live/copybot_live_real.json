@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 61.85,
- "cash": 39.1,
- "deployed": 21.68,
+ "cash": 36.54,
+ "deployed": 24.2,
  "reserve": 0.0,
- "realized": -15.08,
+ "realized": -15.11,
  "adjustments": 9.44,
  "ledger_drift": -0.0,
- "open_count": 12,
- "fees_paid": 2.95,
+ "open_count": 13,
+ "fees_paid": 2.98,
  "fee_rate": 0.03,
  "lag": {
-  "n": 103,
-  "n24": 4,
-  "avg_s": 10.9,
-  "avg_slip_pct": 0.0127,
+  "n": 104,
+  "n24": 5,
+  "avg_s": 9.4,
+  "avg_slip_pct": 0.0177,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 341.23
  },
  "bets": [
+  {
+   "token": "78756824599620466173157778704367687079439148627730740651855490473811677254129",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "EDward Gaming",
+   "title": "LoL: LGD Gaming vs EDward Gaming - Game 2 Winner",
+   "their_price": 0.53,
+   "my_price": 0.55,
+   "slippage_pct": 0.0377,
+   "lag_s": 3.4,
+   "shares": 4.58,
+   "cost": 2.52,
+   "fee": 0.03,
+   "opened": 1784715731,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "61895825019286928316753689208545457497714235075046708292847356747636406191670",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2054,26 +2073,6 @@
    "settled": 1783770359,
    "sold_shares": 1.58,
    "sold_proceeds": 0.95
-  },
-  {
-   "token": "51058471821673607745532428112221296386180873156470169836568216937497505135529",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "BetBoom Team",
-   "title": "Dota 2: BetBoom Team vs GamerLegion - Game 1 Winner",
-   "their_price": 0.6567,
-   "my_price": 0.66,
-   "slippage_pct": 0.005,
-   "shares": 1.56,
-   "cost": 1.03,
-   "fee": 0.01,
-   "opened": 1783762621,
-   "status": "closed",
-   "exit_price": 0.5827,
-   "pnl": -0.13,
-   "settled": 1783762711,
-   "sold_shares": 1.56,
-   "sold_proceeds": 0.91
   }
  ],
  "missed": [
@@ -3027,11 +3026,11 @@
  ],
  "missed_pnl": 1165.07,
  "last_fill": {
-  "ts": 1784712618,
-  "side": "SELL",
-  "price": 0.36,
-  "shares": 4.25,
-  "title": "LoL: LGD Gaming vs EDward Gaming - Game 1 Winner",
+  "ts": 1784715734,
+  "side": "BUY",
+  "price": 0.55,
+  "shares": 4.58,
+  "title": "LoL: LGD Gaming vs EDward Gaming - Game 2 Winner",
   "outcome": "EDward Gaming"
  },
  "wallet_pnl": {
@@ -3049,11 +3048,11 @@
    "realized": -16.88,
    "n": 11,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 2.52,
+   "open_n": 1,
    "miss_n": 7,
    "miss_pnl": 4.99,
-   "last_ts": 1784712677
+   "last_ts": 1784715731
   },
   "(incident)": {
    "realized": 5.86,
@@ -3126,5 +3125,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784714440
+ "updated": 1784715736
 }
