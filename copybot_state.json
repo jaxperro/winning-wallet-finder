@@ -15704,7 +15704,7 @@
   },
   "hwm": 3017.9847339343023,
   "feed_sig": "1724de7d716cb165aa08433887b666d1",
-  "feed_pushed_at": 1784758313.9848843,
+  "feed_pushed_at": 1784758449.515196,
   "missed": [
     {
       "ts": 1783590977,
@@ -15865,9 +15865,9 @@
       "price": 0.8399,
       "stake": 52.73,
       "reason": "followed but not placed \u2014 silent exit at copy time (thin/no-ask book most likely; both silent paths instrumented 2026-07-09)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 9.8,
+      "settled": 1784758578,
       "name": "0xbadaf319"
     },
     {

@@ -2114,6 +2114,21 @@
  ],
  "missed": [
   {
+   "ts": 1783614355,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
+   "cond": "0xc13c12dd0b8c4a29dedc8f12b2976628fa57e4a8b27bbcc522b82008bb549e02",
+   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $11.2B?",
+   "outcome": "No",
+   "price": 0.8399,
+   "stake": 52.73,
+   "reason": "followed but not placed \u2014 silent exit at copy time (thin/no-ask book most likely; both silent paths instrumented 2026-07-09)",
+   "status": "won",
+   "pnl": 9.8,
+   "settled": 1784758578,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784746881,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "101073632313407449841258966324566339609029406016329643951331988915036734803060",
@@ -3041,24 +3056,9 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784450722,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "32952048155093419718055060819712841482842350791391116195205201413217889733414",
-   "cond": "0xe6d5e5da83874cd82c9b651a8a5d4fc541a800a295fb62e85124b4f5a04a4b7d",
-   "title": "Will China invade Taiwan by December 31, 2027?",
-   "outcome": "No",
-   "price": 0.82,
-   "stake": 98.79,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 95560.73,
+ "missed_pnl": 95570.53,
  "last_fill": {
   "ts": 1784758429,
   "side": "SELL",
@@ -3075,7 +3075,7 @@
    "open_cost": 638.59,
    "open_n": 9,
    "miss_n": 53,
-   "miss_pnl": 95780.62,
+   "miss_pnl": 95790.42,
    "last_ts": 1784722115
   },
   "gkmgkldfmg": {
@@ -3149,5 +3149,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784758430
+ "updated": 1784758582
 }

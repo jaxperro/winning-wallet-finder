@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784758430,
+ "updated": 1784758582,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.9,
@@ -9,7 +9,7 @@
    "open_cost": 638.59,
    "open_n": 9,
    "miss_n": 53,
-   "miss_pnl": 95780.62,
+   "miss_pnl": 95790.42,
    "last_ts": 1784722115
   },
   "gkmgkldfmg": {
@@ -4170,6 +4170,21 @@
  ],
  "missed": [
   {
+   "ts": 1783614355,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
+   "cond": "0xc13c12dd0b8c4a29dedc8f12b2976628fa57e4a8b27bbcc522b82008bb549e02",
+   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $11.2B?",
+   "outcome": "No",
+   "price": 0.8399,
+   "stake": 52.73,
+   "reason": "followed but not placed \u2014 silent exit at copy time (thin/no-ask book most likely; both silent paths instrumented 2026-07-09)",
+   "status": "won",
+   "pnl": 9.8,
+   "settled": 1784758578,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784746881,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "101073632313407449841258966324566339609029406016329643951331988915036734803060",
@@ -6889,21 +6904,6 @@
    "name": "gkmgkldfmg",
    "exit_checked": true,
    "exit_price": 0.5255
-  },
-  {
-   "ts": 1783614355,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
-   "cond": "0xc13c12dd0b8c4a29dedc8f12b2976628fa57e4a8b27bbcc522b82008bb549e02",
-   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $11.2B?",
-   "outcome": "No",
-   "price": 0.8399,
-   "stake": 52.73,
-   "reason": "followed but not placed \u2014 silent exit at copy time (thin/no-ask book most likely; both silent paths instrumented 2026-07-09)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1783602410,
