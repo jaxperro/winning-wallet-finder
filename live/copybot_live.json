@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 113.79,
+ "stake": 118.27,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 2849.15,
- "cash": 1627.59,
- "deployed": 1217.04,
+ "hwm": 2956.66,
+ "cash": 1853.47,
+ "deployed": 1103.19,
  "reserve": 0.0,
- "realized": 1844.6,
+ "realized": 1956.63,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 18,
- "fees_paid": 341.16,
+ "open_count": 17,
+ "fees_paid": 341.34,
  "fee_rate": 0.03,
  "lag": {
   "n": 224,
@@ -60,10 +60,12 @@
    "cost": 113.85,
    "fee": 1.74,
    "opened": 1784722470,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "closed",
+   "exit_price": 0.9721,
+   "pnl": 110.29,
+   "settled": 1784723139,
+   "sold_shares": 232.36,
+   "sold_proceeds": 225.88
   },
   {
    "token": "5672952468548015184968602470125350481899055121933384423405096851532324921748",
@@ -3056,10 +3058,10 @@
  ],
  "missed_pnl": 95309.91,
  "last_fill": {
-  "ts": 1784722476,
-  "side": "BUY",
-  "price": 0.49,
-  "shares": 232.36,
+  "ts": 1784723139,
+  "side": "SELL",
+  "price": 0.99,
+  "shares": 15.49,
   "title": "LoL: Top Esports vs Team WE - Game 1 Winner",
   "outcome": "Top Esports"
  },
@@ -3115,14 +3117,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -6.96,
-   "n": 18,
+   "realized": 103.33,
+   "n": 19,
    "wins": 0,
-   "open_cost": 224.23,
-   "open_n": 2,
+   "open_cost": 110.38,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784722470
+   "last_ts": 1784723139
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -3145,5 +3147,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784722476
+ "updated": 1784723139
 }
