@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784739834,
+ "updated": 1784746886,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.57,
@@ -58,8 +58,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 18,
-   "miss_pnl": -1.95,
+   "miss_n": 17,
+   "miss_pnl": -2.24,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -78,7 +78,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 6,
+   "miss_n": 7,
    "miss_pnl": 9.31,
    "last_ts": 1784497466
   },
@@ -88,8 +88,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 2,
-   "miss_pnl": 1.29,
+   "miss_n": 3,
+   "miss_pnl": 1.58,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -2372,6 +2372,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784746882,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "101073632313407449841258966324566339609029406016329643951331988915036734803060",
+   "cond": "0xd51ea730858a341990e878b08c665d0361dfec8a6f29d41b0c598f7c5a27561c",
+   "title": "Set 1 Winner: Gonzalez vs Valdez",
+   "outcome": "Gonzalez",
+   "price": 0.48,
+   "stake": 2.52,
+   "reason": "in-play hold expired unfilled (23s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1784737933,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -5567,7 +5582,7 @@
    "status": "won",
    "pnl": 0.29,
    "settled": 1783718322,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
