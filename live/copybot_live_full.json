@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784739832,
+ "updated": 1784746890,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.9,
@@ -38,7 +38,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 3,
+   "miss_n": 4,
    "miss_pnl": 447.67,
    "last_ts": 1784679219
   },
@@ -4169,6 +4169,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784746881,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "101073632313407449841258966324566339609029406016329643951331988915036734803060",
+   "cond": "0xd51ea730858a341990e878b08c665d0361dfec8a6f29d41b0c598f7c5a27561c",
+   "title": "Set 1 Winner: Gonzalez vs Valdez",
+   "outcome": "Gonzalez",
+   "price": 0.48,
+   "stake": 116.3,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1784737932,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
