@@ -2092,10 +2092,12 @@
    "price": 0.4074,
    "stake": 2.41,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "won",
-   "pnl": 3.46,
+   "status": "sold",
+   "pnl": 1.46,
    "settled": 1784751007,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.6682
   },
   {
    "ts": 1784508146,
@@ -2107,10 +2109,12 @@
    "price": 0.3073,
    "stake": 2.41,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "lost",
-   "pnl": -2.46,
+   "status": "sold",
+   "pnl": 2.06,
    "settled": 1784751007,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.5835
   },
   {
    "ts": 1784750680,
@@ -3028,7 +3032,7 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 1163.29,
+ "missed_pnl": 1165.81,
  "last_fill": {
   "ts": 1784725645,
   "side": "SELL",
@@ -3045,7 +3049,7 @@
    "open_cost": 11.91,
    "open_n": 5,
    "miss_n": 59,
-   "miss_pnl": 1158.09,
+   "miss_pnl": 1160.61,
    "last_ts": 1784722113
   },
   "AIcAIc": {
@@ -3139,5 +3143,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784751009
+ "updated": 1784752394
 }
