@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784700489,
+ "updated": 1784701587,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.45,
@@ -9,7 +9,7 @@
    "open_cost": 11.88,
    "open_n": 5,
    "miss_n": 56,
-   "miss_pnl": 1157.52,
+   "miss_pnl": 1156.46,
    "last_ts": 1784630337
   },
   "AIcAIc": {
@@ -2267,10 +2267,12 @@
    "price": 0.56,
    "stake": 2.41,
    "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "won",
-   "pnl": 1.86,
+   "status": "sold",
+   "pnl": 0.8,
    "settled": 1784700488,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.7583
   },
   {
    "ts": 1784696452,

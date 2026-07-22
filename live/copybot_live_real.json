@@ -2087,10 +2087,12 @@
    "price": 0.56,
    "stake": 2.41,
    "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "won",
-   "pnl": 1.86,
+   "status": "sold",
+   "pnl": 0.8,
    "settled": 1784700488,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.7583
   },
   {
    "ts": 1784696452,
@@ -3024,7 +3026,7 @@
    "exit_price": 0.9728
   }
  ],
- "missed_pnl": 1167.51,
+ "missed_pnl": 1166.45,
  "last_fill": {
   "ts": 1784660810,
   "side": "BUY",
@@ -3041,7 +3043,7 @@
    "open_cost": 11.88,
    "open_n": 5,
    "miss_n": 56,
-   "miss_pnl": 1157.52,
+   "miss_pnl": 1156.46,
    "last_ts": 1784630337
   },
   "AIcAIc": {
@@ -3125,5 +3127,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784700489
+ "updated": 1784701587
 }
