@@ -2095,7 +2095,8 @@
    "status": "lost",
    "pnl": -2.48,
    "settled": 1784732990,
-   "name": "AIcAIc"
+   "name": "AIcAIc",
+   "exit_checked": true
   },
   {
    "ts": 1784508146,
@@ -3142,5 +3143,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784732990
+ "updated": 1784734774
 }
