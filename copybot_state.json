@@ -15703,8 +15703,8 @@
     }
   },
   "hwm": 3017.9847339343023,
-  "feed_sig": "431639cd38ca7129d87980ccc2df1109",
-  "feed_pushed_at": 1784758582.1182525,
+  "feed_sig": "533655109fddf128ddef6b015b829308",
+  "feed_pushed_at": 1784759244.0445926,
   "missed": [
     {
       "ts": 1783590977,
@@ -15865,10 +15865,12 @@
       "price": 0.8399,
       "stake": 52.73,
       "reason": "followed but not placed \u2014 silent exit at copy time (thin/no-ask book most likely; both silent paths instrumented 2026-07-09)",
-      "status": "won",
-      "pnl": 9.8,
+      "status": "sold",
+      "pnl": -10.36,
       "settled": 1784758578,
-      "name": "0xbadaf319"
+      "name": "0xbadaf319",
+      "exit_checked": true,
+      "exit_price": 0.6853
     },
     {
       "ts": 1783620287,
@@ -18276,7 +18278,8 @@
       "status": "won",
       "pnl": 2.36,
       "settled": 1784758713,
-      "name": "0xbadaf319"
+      "name": "0xbadaf319",
+      "exit_checked": true
     },
     {
       "ts": 1784663345,
