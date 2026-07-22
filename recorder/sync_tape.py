@@ -41,11 +41,44 @@ def box(cmd, timeout=120):
     return r.stdout
 
 
-def sftp_get(remote, local, timeout=900):
-    subprocess.run([FLYCTL, "ssh", "sftp", "get", remote, local, "-a", APP],
-                   capture_output=True, timeout=timeout,
-                   stdin=subprocess.DEVNULL)
-    return os.path.exists(local) and os.path.getsize(local) > 0
+def sftp_get(remote, local, timeout=240):
+    """sftp first (a healthy multi-MB fetch takes <60s — the old 900s window
+    just burned the 15-min cadence when it hung), then the base64-over-
+    console fallback that carried ingest.py through the same flakiness
+    (2026-07-22: sftp timeouts left magic-byte-less partial parquets while
+    console commands stayed fast). Integrity is the caller's manifest
+    row-count verify either way; partial files are removed here."""
+    try:
+        subprocess.run([FLYCTL, "ssh", "sftp", "get", remote, local, "-a", APP],
+                       capture_output=True, timeout=timeout,
+                       stdin=subprocess.DEVNULL)
+    except subprocess.TimeoutExpired:
+        pass
+    if os.path.exists(local) and os.path.getsize(local) > 0:
+        return True
+    try:
+        os.remove(local)
+    except OSError:
+        pass
+    try:
+        import base64
+        raw = box(f"base64 {remote}", timeout=600)
+        blob = base64.b64decode(raw)
+        if not blob:
+            return False
+        with open(local, "wb") as fh:
+            fh.write(blob)
+        print(f"[sync] {os.path.basename(remote)}: sftp failed — "
+              f"base64 fallback carried {len(blob)//1024}KB")
+        return True
+    except Exception as e:
+        print(f"[sync] {os.path.basename(remote)}: both transports failed "
+              f"({type(e).__name__})")
+        try:
+            os.remove(local)
+        except OSError:
+            pass
+        return False
 
 
 def load_manifest(path):
