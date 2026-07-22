@@ -2114,6 +2114,21 @@
  ],
  "missed": [
   {
+   "ts": 1784657983,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "83432464582900021768828185200260903111076458489414209503967480044416221851661",
+   "cond": "0xcef977a42d757016fc76c46cf4de3fd65c164ef8af0e6daf62a166058f9f621b",
+   "title": "Will Google (GOOGL) Q2 capital expenditures be above $40B?",
+   "outcome": "Yes",
+   "price": 0.9399,
+   "stake": 38.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 2.36,
+   "settled": 1784758713,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1783614355,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
@@ -2442,21 +2457,6 @@
    "settled": 1784657990,
    "name": "0xbadaf319",
    "exit_price": 0.69
-  },
-  {
-   "ts": 1784657983,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "83432464582900021768828185200260903111076458489414209503967480044416221851661",
-   "cond": "0xcef977a42d757016fc76c46cf4de3fd65c164ef8af0e6daf62a166058f9f621b",
-   "title": "Will Google (GOOGL) Q2 capital expenditures be above $40B?",
-   "outcome": "Yes",
-   "price": 0.9399,
-   "stake": 38.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784128795,
@@ -3058,7 +3058,7 @@
    "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 95570.53,
+ "missed_pnl": 95572.89,
  "last_fill": {
   "ts": 1784758429,
   "side": "SELL",
@@ -3075,7 +3075,7 @@
    "open_cost": 638.59,
    "open_n": 9,
    "miss_n": 53,
-   "miss_pnl": 95790.42,
+   "miss_pnl": 95792.78,
    "last_ts": 1784722115
   },
   "gkmgkldfmg": {
@@ -3149,5 +3149,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784758582
+ "updated": 1784758717
 }
