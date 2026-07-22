@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784722113,
+ "updated": 1784722316,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.57,
@@ -13,14 +13,14 @@
    "last_ts": 1784722113
   },
   "AIcAIc": {
-   "realized": -15.74,
-   "n": 12,
+   "realized": -15.63,
+   "n": 13,
    "wins": 0,
-   "open_cost": 2.55,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 7,
    "miss_pnl": 4.99,
-   "last_ts": 1784721013
+   "last_ts": 1784722316
   },
   "(incident)": {
    "realized": 5.86,
@@ -95,6 +95,27 @@
  },
  "bets": [
   {
+   "token": "5672952468548015184968602470125350481899055121933384423405096851532324921748",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Team WE",
+   "title": "LoL: Top Esports vs Team WE - Game 1 Winner",
+   "their_price": 0.35,
+   "my_price": 0.36,
+   "slippage_pct": 0.0286,
+   "lag_s": 3.4,
+   "shares": 7.09,
+   "cost": 2.55,
+   "fee": 0.049,
+   "opened": 1784721013,
+   "status": "closed",
+   "exit_price": 0.3829,
+   "pnl": 0.11,
+   "settled": 1784722316,
+   "sold_shares": 7.08,
+   "sold_proceeds": 2.71067004
+  },
+  {
    "token": "48409467751286486665938959009701710014426367960633333378105361988315138136571",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -114,25 +135,6 @@
    "settled": 1784722113,
    "sold_shares": 2.59,
    "sold_proceeds": 2.56333077
-  },
-  {
-   "token": "5672952468548015184968602470125350481899055121933384423405096851532324921748",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Team WE",
-   "title": "LoL: Top Esports vs Team WE - Game 1 Winner",
-   "their_price": 0.35,
-   "my_price": 0.36,
-   "slippage_pct": 0.0286,
-   "lag_s": 3.4,
-   "shares": 7.09,
-   "cost": 2.55,
-   "fee": 0.049,
-   "opened": 1784721013,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "78756824599620466173157778704367687079439148627730740651855490473811677254129",
