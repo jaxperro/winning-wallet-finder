@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 113.02,
+ "stake": 113.85,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 2849.15,
- "cash": 1609.48,
- "deployed": 1216.06,
+ "cash": 1743.19,
+ "deployed": 1103.19,
  "reserve": 0.0,
- "realized": 1825.51,
+ "realized": 1846.34,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 18,
- "fees_paid": 337.0,
+ "ledger_drift": -0.03,
+ "open_count": 17,
+ "fees_paid": 339.41,
  "fee_rate": 0.03,
  "lag": {
   "n": 223,
@@ -47,6 +47,27 @@
  },
  "bets": [
   {
+   "token": "5672952468548015184968602470125350481899055121933384423405096851532324921748",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Team WE",
+   "title": "LoL: Top Esports vs Team WE - Game 1 Winner",
+   "their_price": 0.35,
+   "my_price": 0.34,
+   "slippage_pct": -0.0286,
+   "lag_s": 0.7,
+   "shares": 331.98,
+   "cost": 112.87,
+   "fee": 2.23,
+   "opened": 1784721013,
+   "status": "closed",
+   "exit_price": 0.4027,
+   "pnl": 18.6,
+   "settled": 1784722315,
+   "sold_shares": 331.98,
+   "sold_proceeds": 133.7
+  },
+  {
    "token": "48409467751286486665938959009701710014426367960633333378105361988315138136571",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -66,25 +87,6 @@
    "settled": 1784722115,
    "sold_shares": 69.34,
    "sold_proceeds": 69.13
-  },
-  {
-   "token": "5672952468548015184968602470125350481899055121933384423405096851532324921748",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Team WE",
-   "title": "LoL: Top Esports vs Team WE - Game 1 Winner",
-   "their_price": 0.35,
-   "my_price": 0.34,
-   "slippage_pct": -0.0286,
-   "lag_s": 0.7,
-   "shares": 331.98,
-   "cost": 112.87,
-   "fee": 2.23,
-   "opened": 1784721013,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "78756824599620466173157778704367687079439148627730740651855490473811677254129",
@@ -3056,12 +3058,12 @@
  ],
  "missed_pnl": 95309.91,
  "last_fill": {
-  "ts": 1784722115,
+  "ts": 1784722309,
   "side": "SELL",
-  "price": 0.997,
-  "shares": 69.34,
-  "title": "Will Silver (XAGUSD) hit (LOW) $50 Week of July 20 2026?",
-  "outcome": "No"
+  "price": 0.41,
+  "shares": 331.98,
+  "title": "LoL: Top Esports vs Team WE - Game 1 Winner",
+  "outcome": "Team WE"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3115,14 +3117,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -25.56,
-   "n": 17,
+   "realized": -6.96,
+   "n": 18,
    "wins": 0,
-   "open_cost": 223.25,
-   "open_n": 2,
+   "open_cost": 110.38,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784721013
+   "last_ts": 1784722315
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -3145,5 +3147,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784722115
+ "updated": 1784722315
 }

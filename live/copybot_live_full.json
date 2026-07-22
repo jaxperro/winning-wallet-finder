@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784722115,
+ "updated": 1784722315,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.9,
@@ -53,14 +53,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -25.56,
-   "n": 17,
+   "realized": -6.96,
+   "n": 18,
    "wins": 0,
-   "open_cost": 223.25,
-   "open_n": 2,
+   "open_cost": 110.38,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784721013
+   "last_ts": 1784722315
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -85,6 +85,27 @@
  },
  "bets": [
   {
+   "token": "5672952468548015184968602470125350481899055121933384423405096851532324921748",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Team WE",
+   "title": "LoL: Top Esports vs Team WE - Game 1 Winner",
+   "their_price": 0.35,
+   "my_price": 0.34,
+   "slippage_pct": -0.0286,
+   "lag_s": 0.7,
+   "shares": 331.98,
+   "cost": 112.87,
+   "fee": 2.2349,
+   "opened": 1784721013,
+   "status": "closed",
+   "exit_price": 0.4027,
+   "pnl": 18.6,
+   "settled": 1784722315,
+   "sold_shares": 331.9791357582149,
+   "sold_proceeds": 133.70227307267072
+  },
+  {
    "token": "48409467751286486665938959009701710014426367960633333378105361988315138136571",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -104,25 +125,6 @@
    "settled": 1784722115,
    "sold_shares": 69.34142919722316,
    "sold_proceeds": 69.12718290318962
-  },
-  {
-   "token": "5672952468548015184968602470125350481899055121933384423405096851532324921748",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Team WE",
-   "title": "LoL: Top Esports vs Team WE - Game 1 Winner",
-   "their_price": 0.35,
-   "my_price": 0.34,
-   "slippage_pct": -0.0286,
-   "lag_s": 0.7,
-   "shares": 331.98,
-   "cost": 112.87,
-   "fee": 2.2349,
-   "opened": 1784721013,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   },
   {
    "token": "78756824599620466173157778704367687079439148627730740651855490473811677254129",
