@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1784823492,
+ "updated": 1784824187,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 548.47,
-   "n": 48,
-   "wins": 12,
-   "open_cost": 853.09,
-   "open_n": 11,
+   "realized": 557.51,
+   "n": 49,
+   "wins": 13,
+   "open_cost": 736.54,
+   "open_n": 10,
    "miss_n": 60,
    "miss_pnl": 96986.24,
-   "last_ts": 1784821177
+   "last_ts": 1784824112
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -68,7 +68,7 @@
    "wins": 1,
    "open_cost": 729.65,
    "open_n": 7,
-   "miss_n": 22,
+   "miss_n": 23,
    "miss_pnl": -466.97,
    "last_ts": 1784660784
   },
@@ -84,6 +84,27 @@
   }
  },
  "bets": [
+  {
+   "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Ethereum be between $1,900 and $2,000 on July 23?",
+   "their_price": 0.95,
+   "my_price": 0.9204851994391966,
+   "slippage_pct": -0.0211,
+   "lag_s": 0.5,
+   "shares": 126.62610832529148,
+   "cost": 116.55745857601525,
+   "fee": 0.27759999999999996,
+   "opened": 1784819629,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 9.04,
+   "settled": 1784824112,
+   "sold_shares": 5.235649752469704,
+   "sold_proceeds": 4.483747620218025
+  },
   {
    "token": "82768531874539579332422216880159980913196623213037059365722754442149714478353",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -104,27 +125,6 @@
    "settled": 1784821177,
    "sold_shares": 42.364000000000004,
    "sold_proceeds": 37.579536932
-  },
-  {
-   "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Ethereum be between $1,900 and $2,000 on July 23?",
-   "their_price": 0.95,
-   "my_price": 0.9204851994391966,
-   "slippage_pct": -0.0211,
-   "lag_s": 0.5,
-   "shares": 126.62610832529148,
-   "cost": 116.55745857601525,
-   "fee": 0.27759999999999996,
-   "opened": 1784819629,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 5.235649752469704,
-   "sold_proceeds": 4.483747620218025
   },
   {
    "token": "80270372288514892122229303181424592994977341771902366596528480848577129708762",
@@ -4232,6 +4232,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784824150,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "53147856084273572324920349998954911060427762367735766007832600228479869956378",
+   "cond": "0x25ecc56fd4f2853fa7f7a1068d9cbab84bfebada5eae442610f0e4547c50e1e1",
+   "title": "Will the next Claude Opus model be released by July 23, 2026?",
+   "outcome": "Yes",
+   "price": 0.78,
+   "stake": 45.09,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1784823419,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
