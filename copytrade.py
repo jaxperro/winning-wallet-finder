@@ -261,6 +261,16 @@ class PaperExecutor:
                                 f"(paper model: {gone})", "paper": True}
         return {"ok": True, "filled_shares": shares, "price": price, "paper": True}
 
+    def maker_buy(self, token_id, shares, price, meta):
+        """#20 dark path (paper): a resting bid never fills at placement —
+        the host's paper-maker registry fills it from RTDS prints <= bid
+        within TTL, or expires it into an honest miss."""
+        import math
+        sz = math.floor(shares * 100) / 100.0
+        return {"ok": False, "filled_shares": 0.0, "price": price,
+                "pending": {"paper_maker": True, "sz": sz, "mode": "maker"},
+                "paper": True}
+
     def sell(self, token_id, shares, price, meta):
         return {"ok": True, "filled_shares": shares, "price": price, "paper": True}
 
@@ -284,6 +294,10 @@ class CopyTrader:
         # trimmed off state["missed"] so the full-history feed keeps every
         # skip ever (2026-07-21). None = trimmed rows are simply dropped.
         self.on_miss_spool = None
+        # host-installed hook (#21 hold-through): receives each ignored
+        # mirror-exit so the sell counterfactual stays exactly computable
+        # forward. None = ignored exits are only console-logged.
+        self.on_ignored_exit = None
 
     # -- helpers --
     def log(self, msg):
@@ -602,22 +616,46 @@ class CopyTrader:
             self.log(f"{kind} {label} — skip (in-play hold already pending "
                      "on this token)")
             return
-        shares = allowed / price
-        res = self.ex.buy(token, shares, price, {"title": title, "book": bk})
+        f = self.cfg.get("follow") or {}
+        maker = f.get("entry_mode", "taker") == "maker"
+        if maker:
+            # #20: rest at THEIR price (not the current ask) — same gated
+            # opportunity set as taker mode, only the execution differs
+            entry_px = their_price
+            shares = allowed / entry_px
+            res = self.ex.maker_buy(token, shares, entry_px,
+                                    {"title": title, "book": bk})
+        else:
+            entry_px = price
+            shares = allowed / price
+            res = self.ex.buy(token, shares, price,
+                              {"title": title, "book": bk})
         if not res["ok"]:
             # in-play books ACCEPT orders with a delayed hold — the executor
             # reports those as pending (order id + pre-order balance) instead
             # of failed. Park the full copy context; the heartbeat resolver
             # adopts the fill when it lands or converts to a miss at TTL.
+            # (Maker bids park the same way with their own, shorter TTL.)
             if res.get("pending"):
-                self.state.setdefault("pending_orders", []).append({
+                pend = {
                     **res["pending"], "token": token, "side": "BUY",
                     "wallet": wallet, "title": title, "outcome": outcome,
                     "event": event, "cond": cond, "their_price": their_price,
-                    "their_ts": their_ts, "price": price, "is_add": is_add,
-                    "stake": allowed, "ts": time.time(), "ttl_s": 600})
-                self.log(f"{kind} {label} — PENDING (in-play hold, "
-                         f"order {str(res['pending'].get('order_id'))[:14]}…)")
+                    "their_ts": their_ts, "price": entry_px, "is_add": is_add,
+                    "stake": allowed, "ts": time.time(),
+                    "ttl_s": (float(f.get("maker_ttl_s", 60))
+                              if res["pending"].get("mode") == "maker"
+                              else 600),
+                    "ba_at_signal": (bk or {}).get("ba")}
+                if res["pending"].get("paper_maker"):
+                    self.state.setdefault("paper_maker", []).append(pend)
+                    self.log(f"{kind} {label} — MAKER bid {entry_px:.3f} "
+                             f"resting (paper, {pend['ttl_s']:.0f}s)")
+                else:
+                    self.state.setdefault("pending_orders", []).append(pend)
+                    self.log(f"{kind} {label} — PENDING ("
+                             f"{'maker bid' if pend.get('mode') == 'maker' else 'in-play hold'}, "
+                             f"order {str(res['pending'].get('order_id'))[:14]}…)")
                 self.persist()
                 return
             resp_s = str(res.get("resp"))
@@ -668,6 +706,25 @@ class CopyTrader:
         mine = self.state["my_pos"].get(token)
         if not mine:
             return  # we don't hold it
+        if (self.cfg.get("follow") or {}).get("exit_mode", "mirror") == "hold":
+            # #21 dark path: never mirror their exits — positions ride to
+            # resolution. Every ignored sell is logged so the mirror-exit
+            # counterfactual stays exactly computable forward (the
+            # pre-registered verdict's control).
+            frac = 1.0 if their_prev <= 0 else min(1.0, their_size / their_prev)
+            self.log(f"EXIT {label} — HOLD-THROUGH (exit_mode=hold, "
+                     f"their frac {frac:.2f})")
+            if self.on_ignored_exit:
+                self.on_ignored_exit({
+                    "ts": round(time.time(), 1), "token": str(token),
+                    "their_size": their_size, "their_prev": their_prev,
+                    "frac": round(frac, 4),
+                    "shares_held": round(mine.get("shares", 0), 4),
+                    "cost_held": round(mine.get("cost", 0), 2),
+                    "title": (mine.get("title") or "")[:80],
+                    "outcome": mine.get("outcome"),
+                    "wallet": mine.get("wallet", "")})
+            return
         frac = 1.0 if their_prev <= 0 else min(1.0, their_size / their_prev)
         sell_shares = min(mine["shares"], mine["shares"] * frac)
         if sell_shares <= 0:

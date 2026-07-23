@@ -238,6 +238,10 @@ FOLLOW_DEFAULT = {
     "per_wallet_min_usd": {},  # {wallet: usd} — overrides the global floor per wallet
     "min_entry": 0.0,          # only copy entries with their fill price in this band
     "max_entry": 1.0,          #   (the archetype/copyability zone; 0.35–0.70 = value)
+    # #20/#21 dark flags (pre-registered; flip only at the Friday read):
+    "entry_mode": "taker",     # "maker" = rest a GTC bid at their price
+    "exit_mode": "mirror",     # "hold"  = never mirror their sells
+    "maker_ttl_s": 60,         # registry-side cancel for resting maker bids
 }
 
 RECENT_TRADE_WINDOW_S = 600    # webhook just told us a trade happened; ignore stale
@@ -577,6 +581,66 @@ class LedgerLiveExecutor:
                                "shares": r["filled_shares"], "price": r["price"]})
         return r
 
+    def maker_buy(self, token_id, shares, price, meta):
+        """#20 dark path (live): rest a GTC limit BUY at the sharp's own
+        price; the pending registry adopts the fill or cancels at its TTL.
+        An instant cross books like a fill (taker at their price or better —
+        the same semantics the backtest counted); any instant PARTIAL cancels
+        its remainder so no order outlives this call untracked (the 07-10
+        invariant). Venue-side GTD needs >=3min, so TTL is registry-side."""
+        import math
+        sz = math.floor(shares * 100) / 100.0
+        try:
+            bal0 = self._shares_held(token_id)
+        except Exception as e:
+            return {"ok": False, "filled_shares": 0.0, "price": price,
+                    "resp": f"pre-check failed: {e}", "paper": False}
+        d = 2
+        for cand in (2, 3, 4):
+            if abs(round(price, cand) - price) < 1e-9:
+                d = cand
+                break
+        else:
+            d = 4
+        try:
+            r = self.client.place_limit_order(
+                token_id=token_id, side="BUY", size=sz, price=round(price, d))
+        except Exception as e:      # a timed-out post may still be resting
+            filled, px = self._settle_uncertain(token_id, "BUY", bal0, price)
+            if filled > 0:
+                self.fills.append({"side": "BUY", "token": token_id,
+                                   "shares": filled, "price": px,
+                                   "maker": True})
+                return {"ok": True, "filled_shares": filled, "price": px,
+                        "resp": f"filled despite client error: {e}",
+                        "paper": False}
+            return {"ok": False, "filled_shares": 0.0, "price": price,
+                    "resp": f"exception: {e}", "paper": False}
+        if not getattr(r, "ok", False):
+            return {"ok": False, "filled_shares": 0.0, "price": price,
+                    "resp": f"{getattr(r, 'code', '?')}: "
+                            f"{getattr(r, 'message', r)}", "paper": False}
+        making = float(r.making_amount or 0)
+        taking = float(r.taking_amount or 0)
+        filled = taking
+        if filled > 0:
+            px = making / filled if filled else price
+            if filled < sz - 0.01:          # partial cross: kill the rest
+                try:
+                    self.client.cancel_order(order_id=r.order_id)
+                except Exception:
+                    pass
+            self.fills.append({"side": "BUY", "token": token_id,
+                               "shares": filled, "price": px, "maker": True})
+            return {"ok": True, "filled_shares": filled, "price": px,
+                    "resp": {"order_id": r.order_id, "status": r.status},
+                    "paper": False}
+        return {"ok": False, "filled_shares": 0.0, "price": price,
+                "pending": {"order_id": r.order_id, "bal0": bal0, "sz": sz,
+                            "mode": "maker"},
+                "resp": {"order_id": r.order_id, "status": r.status,
+                         "note": "maker bid resting"}, "paper": False}
+
     def sell(self, token_id, shares, price, meta):
         r = self._order(token_id, shares, price, "SELL")
         if r["ok"]:
@@ -599,6 +663,8 @@ class FollowFilter:
     def __init__(self, cfg):
         f = {**FOLLOW_DEFAULT, **cfg.get("follow", {})}
         self.buy_only = f["buy_only"]
+        self.entry_mode = f.get("entry_mode", "taker")
+        self.exit_mode = f.get("exit_mode", "mirror")
         self.min_their_usd = float(f["min_their_usd"])
         self.per_wallet = {k.lower(): float(v) for k, v in f["per_wallet_min_usd"].items()}
         self.min_entry = float(f["min_entry"])
@@ -638,9 +704,12 @@ class FollowFilter:
     def describe(self):
         pw = f" · {len(self.per_wallet)} per-wallet floors" if self.per_wallet else ""
         wh = f" · {len(self.whales)} whales follow-all" if self.whales else ""
+        md = (f" · entry_mode {self.entry_mode} · exit_mode {self.exit_mode}"
+              if (self.entry_mode, self.exit_mode) != ("taker", "mirror")
+              else "")
         return (f"follow filter · {'BUY-only' if self.buy_only else 'BUY+SELL'} · "
                 f"conviction ≥ ${self.min_their_usd:,.0f}{pw}{wh} · "
-                f"entry [{self.min_entry:.2f},{self.max_entry:.2f}]")
+                f"entry [{self.min_entry:.2f},{self.max_entry:.2f}]{md}")
 
 
 # ── T0: the real-time trade stream (RTDS) ───────────────────────────────────
@@ -742,6 +811,13 @@ class RtdsListener:
         if m.get("topic") != "activity" or m.get("type") != "trades":
             return
         p = m.get("payload") or {}
+        # #20 paper leg: every platform print passes here — fill any resting
+        # paper maker bid the print crosses. Cheap no-op unless bids exist.
+        if self.bot.engine.state.get("paper_maker"):
+            try:
+                self.bot.paper_maker_probe(p)
+            except Exception as e:
+                log(f"⚠ paper_maker_probe error: {e}")
         w = (p.get("proxyWallet") or "").lower()
         if w not in self.watched:
             return
@@ -940,6 +1016,8 @@ class Copybot:
         self.feed_path = cfg.get("feed_path", FEED)
         self.fill_log = cfg.get("fill_log", FILL_LOG)
         self.shadow_log = cfg.get("shadow_log", "rtds_shadow.jsonl")
+        # #21: append-only ignored-exit ledger (derived per book)
+        self.ignored_log = self.fill_log.replace("fills", "ignored_exits")
         # persisted across restarts via the engine's state file
         self.conds = engine.state.setdefault("conds", {})   # token_id -> conditionId (open positions)
         # #18 empty-cond repair: in-memory backoff/alarm bookkeeping (a reboot
@@ -1097,6 +1175,102 @@ class Copybot:
         first-order model. Best-effort: never blocks or fails a copy."""
         return book_depth(token)   # dedupe 2026-07-19 (closes #6): was a line-for-line copy
 
+    def write_ignored_exit(self, rec):
+        """#21 hold-through instrumentation: one JSONL row per ignored
+        mirror-exit (the forward counterfactual's raw data) + a trimmed tail
+        in state for the feed."""
+        rec["mode"] = "live" if self.engine.ex.live else "paper"
+        try:
+            with open(os.path.join(self.here, self.ignored_log), "a") as fh:
+                fh.write(json.dumps(rec) + "\n")
+        except Exception:
+            pass
+        tail = self.engine.state.setdefault("ignored_exits", [])
+        tail.append(rec)
+        del tail[:-200]
+
+    # ── #20 paper-maker registry (paper books only; live uses the pending
+    #    registry with the same TTL semantics) ─────────────────────────────
+    def paper_maker_probe(self, p):
+        """RTDS shows every platform print — fill any resting paper maker
+        bid the print crosses (price <= bid, fill AT our bid)."""
+        tok = str(p.get("asset") or "")
+        try:
+            px = float(p.get("price") or 0)
+        except (TypeError, ValueError):
+            return
+        if not tok or px <= 0:
+            return
+        with self.lock:
+            pend = self.engine.state.get("paper_maker") or []
+            if not pend:
+                return
+            keep = []
+            for e in pend:
+                if str(e["token"]) != tok or px > e["price"] + 1e-9:
+                    keep.append(e)
+                    continue
+                self._book_paper_maker_fill(e)
+            self.engine.state["paper_maker"] = keep
+
+    def _book_paper_maker_fill(self, e):     # under self.lock
+        st = self.engine.state
+        filled, px = e["sz"], e["price"]
+        spent = filled * px
+        st["spend"]["usd"] += spent
+        mine = st["my_pos"].get(e["token"])
+        if e.get("is_add") and mine:
+            mine["shares"] += filled
+            mine["cost"] += spent
+        else:
+            st["my_pos"][e["token"]] = {
+                "shares": filled, "cost": spent, "title": e.get("title"),
+                "outcome": e.get("outcome"), "event": e.get("event"),
+                "wallet": e.get("wallet"), "cond": e.get("cond")}
+        self.engine.ex.fills.append({"side": "BUY", "token": e["token"],
+                                     "shares": filled, "price": px,
+                                     "maker": True})
+        for f in self._drain_fills():
+            synth = {"timestamp": e.get("their_ts"),
+                     "price": e.get("their_price"),
+                     "outcome": e.get("outcome"), "title": e.get("title")}
+            self._record_lag(e.get("wallet", ""), synth, f)
+        ms = st.setdefault("maker_stats", {"fills": 0, "misses": 0})
+        ms["fills"] += 1
+        held = time.time() - e["ts"]
+        self.engine.alert(
+            f"MAKER FILLED · {e.get('outcome')} · {str(e.get('title'))[:40]} — "
+            f"buy {filled:.2f} @ {px:.3f} (${spent:.2f}, rested {held:.0f}s)",
+            discord_text=(f"🟢 **OPEN (maker bid filled)** [PAPER]\n"
+                          f"{e.get('outcome')} · {str(e.get('title'))[:60]}\n"
+                          f"buy {filled:.2f} @ {px:.3f} = **${spent:.2f}** "
+                          f"(rested {held:.0f}s)"))
+        self.engine.persist()
+
+    def paper_maker_sweep(self):
+        """Expire resting paper bids at TTL into honest misses."""
+        st = self.engine.state
+        if not st.get("paper_maker"):
+            return
+        now = time.time()
+        with self.lock:
+            keep = []
+            for e in st.get("paper_maker") or []:
+                if now - e["ts"] <= e.get("ttl_s", 60):
+                    keep.append(e)
+                    continue
+                ms = st.setdefault("maker_stats", {"fills": 0, "misses": 0})
+                ms["misses"] += 1
+                if not e.get("is_add"):
+                    self.engine.record_miss(
+                        e.get("wallet", ""), e["token"], e.get("cond"),
+                        e.get("title"), e.get("outcome"), e["price"],
+                        e.get("stake", 0),
+                        f"maker bid unfilled ({int(now - e['ts'])}s)")
+                log(f"MAKER expired unfilled: {e.get('outcome')} · "
+                    f"{str(e.get('title'))[:40]}")
+            st["paper_maker"] = keep
+
     def _record_lag(self, wallet, t, fill):
         """Gap 1 — log the detection lag and price slippage of a copy: their fill
         time/price vs ours. Appends to copybot_fills.jsonl and tracks running
@@ -1118,6 +1292,7 @@ class Copybot:
             "fee": fill.get("fee", 0),
             "mode": "live" if self.engine.ex.live else "paper",
             "book": self._book_snapshot(fill["token"]),
+            **({"maker": True} if fill.get("maker") else {}),
         }
         try:
             with open(os.path.join(self.here, self.fill_log), "a") as fh:
@@ -1582,6 +1757,7 @@ class Copybot:
             paths = [p for p in (self.feed_path,
                                  self.feed_path.replace(".json", "_full.json"),
                                  self.engine.state_path, self.fill_log,
+                                 self.ignored_log,
                                  self.shadow_log, self.bets_archive,
                                  self.missed_archive)
                      if os.path.exists(os.path.join(repo, p))]
@@ -1754,12 +1930,19 @@ class Copybot:
                 except Exception:
                     pass
             if filled <= 0.01:
-                log(f"pending expired unfilled: {p['outcome']} · {p['title'][:40]}")
+                is_maker = p.get("mode") == "maker"
+                why = "maker bid unfilled" if is_maker \
+                    else "in-play hold expired unfilled"
+                log(f"pending expired unfilled: {p['outcome']} · "
+                    f"{p['title'][:40]}" + (" (maker)" if is_maker else ""))
+                if is_maker:
+                    ms = st.setdefault("maker_stats", {"fills": 0, "misses": 0})
+                    ms["misses"] += 1
                 if p["side"] == "BUY" and not p.get("is_add"):
                     self.engine.record_miss(
                         p["wallet"], tok, p.get("cond"), p["title"], p["outcome"],
                         p["price"], p.get("stake", 0),
-                        f"in-play hold expired unfilled ({int(now - p['ts'])}s)")
+                        f"{why} ({int(now - p['ts'])}s)")
                 continue
             spent = filled * px
             if p["side"] == "BUY":
@@ -2307,6 +2490,20 @@ class Copybot:
                         continue
                     pos["shares"] = min(pos["shares"], chain_sh)
                 name = self.names.get(wallet.lower(), wallet[:10])
+                if (self.engine.cfg.get("follow") or {}).get(
+                        "exit_mode", "mirror") == "hold":
+                    # #21: they exited while we weren't listening — log the
+                    # ignored exit ONCE (the flag stops backstop-poll spam;
+                    # we keep holding, so the trigger condition never clears)
+                    if not pos.get("hold_thru_logged"):
+                        pos["hold_thru_logged"] = int(time.time())
+                        log(f"reconcile: {name} exited "
+                            f"{pos.get('title','?')[:42]} — HOLD-THROUGH "
+                            f"(exit_mode=hold)")
+                        self.engine._handle_their_sell(
+                            token, 0, 0, f"{pos.get('outcome','?')} · "
+                                         f"{pos.get('title','?')[:42]}")
+                    continue
                 log(f"reconcile: {name} exited {pos.get('title','?')[:42]} while we "
                     f"weren't listening — mirror-exiting {pos['shares']:.1f}sh now")
                 # their_prev<=0 -> frac 1.0: sell everything we hold
@@ -2869,6 +3066,7 @@ def main():
     bot = Copybot(cfg, engine, filt, redeemer=redeemer)
     if bot.fak_retry_s > 0:      # FAK crater misses get one re-quote retry
         engine.on_fak_reject = bot.fak_requote_retry
+    engine.on_ignored_exit = bot.write_ignored_exit    # #21 instrumentation
     engine.on_miss_spool = bot.spool_missed   # missed history survives the cap
     # single-writer invariant (audit 3.4): every boot stamps the state; a
     # stale process that survived `machine stop` (gotcha 15c) sees a newer
@@ -3009,6 +3207,7 @@ def main():
             cycle += 1
             try:
                 bot.resolve_pendings()     # adopt/expire in-play held orders
+                bot.paper_maker_sweep()    # #20: expire resting paper bids
                 bot.retry_stuck_exits()    # LIVE_ROLLOUT 1.6
                 bot.settle_resolved()
                 bot.sweep_dust(cycle)      # reclaim untracked exit residue (live)
