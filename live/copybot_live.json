@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 116.44,
+ "stake": 116.43,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1861.27,
- "deployed": 1049.68,
+ "cash": 1826.0,
+ "deployed": 1084.84,
  "reserve": 0.0,
- "realized": 1910.92,
+ "realized": 1910.8,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 17,
- "fees_paid": 343.06,
+ "fees_paid": 343.18,
  "fee_rate": 0.03,
  "lag": {
-  "n": 226,
-  "n24": 10,
-  "avg_s": 5.9,
-  "avg_slip_pct": -0.0293,
+  "n": 227,
+  "n24": 11,
+  "avg_s": 5.5,
+  "avg_slip_pct": -0.0294,
   "window_h": 24
  },
  "wallets": [
@@ -53,12 +53,12 @@
    "outcome": "No",
    "title": "Will the highest temperature in Hong Kong be 34\u00b0C on July 23?",
    "their_price": 0.918,
-   "my_price": 0.951,
+   "my_price": 0.9266,
    "slippage_pct": 0.0359,
    "lag_s": 25.8,
-   "shares": 66.04,
-   "cost": 62.8,
-   "fee": 0.09,
+   "shares": 105.71,
+   "cost": 97.95,
+   "fee": 0.21,
    "opened": 1784790370,
    "status": "open",
    "exit_price": null,
@@ -3066,10 +3066,10 @@
  ],
  "missed_pnl": 95673.52,
  "last_fill": {
-  "ts": 1784790395,
+  "ts": 1784790470,
   "side": "BUY",
-  "price": 0.951,
-  "shares": 66.04,
+  "price": 0.886,
+  "shares": 39.67,
   "title": "Will the highest temperature in Hong Kong be 34\u00b0C on July 23",
   "outcome": "No"
  },
@@ -3078,7 +3078,7 @@
    "realized": 542.9,
    "n": 47,
    "wins": 12,
-   "open_cost": 701.39,
+   "open_cost": 736.54,
    "open_n": 10,
    "miss_n": 53,
    "miss_pnl": 96012.64,
@@ -3155,5 +3155,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784790420
+ "updated": 1784790477
 }
