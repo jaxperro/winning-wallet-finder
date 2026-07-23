@@ -2083,6 +2083,36 @@
  ],
  "missed": [
   {
+   "ts": 1784755189,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "6942521039548952262803452715536366269632833663841807575802631974514414220741",
+   "cond": "0x1121a02fc780ddeb79cf91cdf2fea0a7dc2a8eb91a8643e86a4a415ab519ab90",
+   "title": "Will the Houthis successfully target shipping by August 31, 2026?",
+   "outcome": "No",
+   "price": 0.16,
+   "stake": 2.52,
+   "reason": "thin book ($8 within 5c < $50)",
+   "status": "lost",
+   "pnl": -2.58,
+   "settled": 1784772284,
+   "name": "BikesAreTheBikes"
+  },
+  {
+   "ts": 1783942543,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "25252139719387305389090759227041579550456702736511482208905350724277919018200",
+   "cond": "0x1121a02fc780ddeb79cf91cdf2fea0a7dc2a8eb91a8643e86a4a415ab519ab90",
+   "title": "Will the Houthis successfully target shipping by August 31, 2026?",
+   "outcome": "Yes",
+   "price": 0.29,
+   "stake": 1.0,
+   "reason": "book unreliable (spread 0.15 > 0.08)",
+   "status": "won",
+   "pnl": 2.43,
+   "settled": 1784772281,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784175026,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
@@ -2130,21 +2160,6 @@
    "settled": 1784756267,
    "name": "0xbadaf319",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1784755189,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "6942521039548952262803452715536366269632833663841807575802631974514414220741",
-   "cond": "0x1121a02fc780ddeb79cf91cdf2fea0a7dc2a8eb91a8643e86a4a415ab519ab90",
-   "title": "Will the Houthis successfully target shipping by August 31, 2026?",
-   "outcome": "No",
-   "price": 0.16,
-   "stake": 2.52,
-   "reason": "thin book ($8 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784754808,
@@ -3019,24 +3034,9 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784451862,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "50488227317031565004575684525878022626020008256198844799050708993499540064859",
-   "cond": "0x4c80df6f557bb0b9de08c0301ebdce500dd9bdc58400d9269fb8fab1709ed584",
-   "title": "China x Taiwan military clash before 2027?",
-   "outcome": "No",
-   "price": 0.731,
-   "stake": 2.0,
-   "reason": "book unreliable (spread 0.18 > 0.08)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 1171.04,
+ "missed_pnl": 1170.89,
  "last_fill": {
   "ts": 1784725645,
   "side": "SELL",
@@ -3053,7 +3053,7 @@
    "open_cost": 11.91,
    "open_n": 5,
    "miss_n": 60,
-   "miss_pnl": 1166.93,
+   "miss_pnl": 1169.36,
    "last_ts": 1784722113
   },
   "AIcAIc": {
@@ -3113,7 +3113,7 @@
    "open_cost": 12.49,
    "open_n": 6,
    "miss_n": 23,
-   "miss_pnl": -6.12,
+   "miss_pnl": -8.7,
    "last_ts": 1784660784
   },
   "Kruto2027": {
@@ -3147,5 +3147,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784760166
+ "updated": 1784772284
 }
