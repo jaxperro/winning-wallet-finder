@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1784824187,
+ "updated": 1784824868,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 557.51,
    "n": 49,
    "wins": 13,
-   "open_cost": 736.54,
-   "open_n": 10,
+   "open_cost": 783.54,
+   "open_n": 11,
    "miss_n": 60,
    "miss_pnl": 96986.24,
-   "last_ts": 1784824112
+   "last_ts": 1784824866
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -84,6 +84,25 @@
   }
  },
  "bets": [
+  {
+   "token": "78639892723644623147617890032845605442018473848411325154446303980329931711515",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Amazon.com, Inc. (AMZN) hit (HIGH) $280 in July?",
+   "their_price": 0.8998,
+   "my_price": 0.887,
+   "slippage_pct": -0.0142,
+   "lag_s": 2.5,
+   "shares": 52.99,
+   "cost": 47.0,
+   "fee": 0.1593,
+   "opened": 1784824866,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
