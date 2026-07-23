@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1924.16,
- "deployed": 986.89,
+ "cash": 1861.27,
+ "deployed": 1049.68,
  "reserve": 0.0,
- "realized": 1911.01,
+ "realized": 1910.92,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 16,
- "fees_paid": 342.97,
+ "open_count": 17,
+ "fees_paid": 343.06,
  "fee_rate": 0.03,
  "lag": {
-  "n": 225,
-  "n24": 9,
-  "avg_s": 3.7,
-  "avg_slip_pct": -0.0366,
+  "n": 226,
+  "n24": 10,
+  "avg_s": 5.9,
+  "avg_slip_pct": -0.0293,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 344.56
  },
  "bets": [
+  {
+   "token": "80270372288514892122229303181424592994977341771902366596528480848577129708762",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the highest temperature in Hong Kong be 34\u00b0C on July 23?",
+   "their_price": 0.918,
+   "my_price": 0.951,
+   "slippage_pct": 0.0359,
+   "lag_s": 25.8,
+   "shares": 66.04,
+   "cost": 62.8,
+   "fee": 0.09,
+   "opened": 1784790370,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "26988481082400938234620905580029354496814882411644162756993608321400480311992",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2091,25 +2110,6 @@
    "settled": 1784032824,
    "sold_shares": 295.0,
    "sold_proceeds": 146.92
-  },
-  {
-   "token": "17264384174229353627298328583540706050639011162572972591356343858147006483134",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will the Fed Pause\u2013Pause\u2013Pause in the next three decisions (Jul\u2013Sep\u2013Oct)?",
-   "their_price": 0.68,
-   "my_price": 0.66,
-   "slippage_pct": -0.0294,
-   "lag_s": 4.8,
-   "shares": 143.05,
-   "cost": 94.41,
-   "fee": 0.96,
-   "opened": 1784029177,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
   }
  ],
  "missed": [
@@ -3066,11 +3066,11 @@
  ],
  "missed_pnl": 95673.52,
  "last_fill": {
-  "ts": 1784758429,
-  "side": "SELL",
-  "price": 0.95,
-  "shares": 9.87,
-  "title": "Ethereal FDV above $500M one day after launch?",
+  "ts": 1784790395,
+  "side": "BUY",
+  "price": 0.951,
+  "shares": 66.04,
+  "title": "Will the highest temperature in Hong Kong be 34\u00b0C on July 23",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3078,11 +3078,11 @@
    "realized": 542.9,
    "n": 47,
    "wins": 12,
-   "open_cost": 638.59,
-   "open_n": 9,
+   "open_cost": 701.39,
+   "open_n": 10,
    "miss_n": 53,
    "miss_pnl": 96012.64,
-   "last_ts": 1784722115
+   "last_ts": 1784790370
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -3155,5 +3155,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784773163
+ "updated": 1784790420
 }

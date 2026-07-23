@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1784773163,
+ "updated": 1784790420,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.9,
    "n": 47,
    "wins": 12,
-   "open_cost": 638.59,
-   "open_n": 9,
+   "open_cost": 701.39,
+   "open_n": 10,
    "miss_n": 53,
    "miss_pnl": 96012.64,
-   "last_ts": 1784722115
+   "last_ts": 1784790370
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -84,6 +84,25 @@
   }
  },
  "bets": [
+  {
+   "token": "80270372288514892122229303181424592994977341771902366596528480848577129708762",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the highest temperature in Hong Kong be 34\u00b0C on July 23?",
+   "their_price": 0.918,
+   "my_price": 0.951,
+   "slippage_pct": 0.0359,
+   "lag_s": 25.8,
+   "shares": 66.04,
+   "cost": 62.8,
+   "fee": 0.0923,
+   "opened": 1784790370,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "26988481082400938234620905580029354496814882411644162756993608321400480311992",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
