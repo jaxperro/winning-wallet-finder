@@ -1,0 +1,39 @@
+{
+ "computed_at": "2026-07-22 22:29 UTC",
+ "spec": {
+  "bank": 100.0,
+  "stake_pct": 0.05,
+  "stake_floor": 1.0,
+  "event_cap": 2,
+  "fee_rate": 0.03,
+  "slip_cap": 0.05
+ },
+ "sem_ver_source": "a2 attempts stream",
+ "equity": 98.32,
+ "cash": 13.32,
+ "open_n": 17,
+ "settled": 0,
+ "wins": 0,
+ "losses": 0,
+ "pnl_realized": 0.0,
+ "chain_graded_settles": 0,
+ "counters": {
+  "attempts_seen": 20,
+  "taken": 17,
+  "cash_skip": 0,
+  "event_skip": 0,
+  "open_skip": 0,
+  "crater": 3,
+  "open_unresolved": 17
+ },
+ "curve": [
+  [
+   1784759179,
+   100.0
+  ],
+  [
+   1784759375,
+   98.32
+  ]
+ ]
+}

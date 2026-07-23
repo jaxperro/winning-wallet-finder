@@ -1,0 +1,375 @@
+{
+ "ran_at": 1784652368,
+ "tape": [
+  1784307337.0,
+  1784649573.0
+ ],
+ "lag_s": 6.7,
+ "results": {
+  "current@500": {
+   "bankroll": 500.0,
+   "copies": 488,
+   "realized": 63.27,
+   "open_mark": 36.17,
+   "end_equity": 599.43,
+   "misses": {
+    "crater": 48,
+    "entry_band": 17,
+    "capital": 463
+   },
+   "capital_miss_hypo": -64.6,
+   "peak_deploy_pct": 97.2,
+   "mean_deploy": 290.51,
+   "per_wallet": {
+    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 6.63,
+    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 30.6,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 19.69,
+    "0xd7d36345c4aab150e59577e360696b01d01d698b": 6.34
+   }
+  },
+  "current@1000": {
+   "bankroll": 1000.0,
+   "copies": 488,
+   "realized": 137.05,
+   "open_mark": 76.01,
+   "end_equity": 1213.07,
+   "misses": {
+    "crater": 49,
+    "entry_band": 17,
+    "capital": 463
+   },
+   "capital_miss_hypo": -133.03,
+   "peak_deploy_pct": 97.5,
+   "mean_deploy": 586.57,
+   "per_wallet": {
+    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 19.94,
+    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 62.58,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 39.7,
+    "0xd7d36345c4aab150e59577e360696b01d01d698b": 14.83
+   }
+  },
+  "current@2000": {
+   "bankroll": 2000.0,
+   "copies": 493,
+   "realized": 206.5,
+   "open_mark": 147.21,
+   "end_equity": 2353.71,
+   "misses": {
+    "crater": 50,
+    "entry_band": 17,
+    "capital": 459
+   },
+   "capital_miss_hypo": -191.6,
+   "peak_deploy_pct": 99.9,
+   "mean_deploy": 1193.53,
+   "per_wallet": {
+    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 40.61,
+    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 74.12,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 57.65,
+    "0xd7d36345c4aab150e59577e360696b01d01d698b": 34.11
+   }
+  },
+  "current@5000": {
+   "bankroll": 5000.0,
+   "copies": 579,
+   "realized": 270.42,
+   "open_mark": 200.29,
+   "end_equity": 5470.72,
+   "misses": {
+    "crater": 57,
+    "entry_band": 17,
+    "capital": 429
+   },
+   "capital_miss_hypo": -481.29,
+   "peak_deploy_pct": 99.7,
+   "mean_deploy": 2960.77,
+   "per_wallet": {
+    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 99.43,
+    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 28.35,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 57.65,
+    "0xd7d36345c4aab150e59577e360696b01d01d698b": 84.99
+   }
+  },
+  "current_plus_bench5@500": {
+   "bankroll": 500.0,
+   "copies": 388,
+   "realized": 94.71,
+   "open_mark": -24.08,
+   "end_equity": 570.63,
+   "misses": {
+    "crater": 81,
+    "capital": 1385,
+    "entry_band": 20
+   },
+   "capital_miss_hypo": 385.23,
+   "peak_deploy_pct": 99.8,
+   "mean_deploy": 352.7,
+   "per_wallet": {
+    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 53.64,
+    "0x73afc8160c17830c0c7281a7bf570c871455b880": -0.85,
+    "0x82d2e4dbb0a849ff8e2f5380719769145648beea": -4.03,
+    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 22.07,
+    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 56.98,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 0.11,
+    "0xc684828f6b03487759ced2ebdd975f91f3532228": -18.96,
+    "0xd7d36345c4aab150e59577e360696b01d01d698b": 6.42,
+    "0xe542afd3881c4c330ba0ebbb603bb470b2ba0a37": -20.66
+   }
+  },
+  "current_plus_bench5@1000": {
+   "bankroll": 1000.0,
+   "copies": 396,
+   "realized": 249.83,
+   "open_mark": -17.13,
+   "end_equity": 1232.7,
+   "misses": {
+    "crater": 87,
+    "capital": 1379,
+    "entry_band": 20
+   },
+   "capital_miss_hypo": 430.94,
+   "peak_deploy_pct": 99.3,
+   "mean_deploy": 726.02,
+   "per_wallet": {
+    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 107.67,
+    "0x73afc8160c17830c0c7281a7bf570c871455b880": -1.71,
+    "0x82d2e4dbb0a849ff8e2f5380719769145648beea": 33.73,
+    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 50.51,
+    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 129.56,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 0.21,
+    "0xc684828f6b03487759ced2ebdd975f91f3532228": -37.92,
+    "0xd7d36345c4aab150e59577e360696b01d01d698b": 9.13,
+    "0xe542afd3881c4c330ba0ebbb603bb470b2ba0a37": -41.36
+   }
+  },
+  "current_plus_bench5@2000": {
+   "bankroll": 2000.0,
+   "copies": 400,
+   "realized": 565.54,
+   "open_mark": -44.98,
+   "end_equity": 2520.56,
+   "misses": {
+    "crater": 94,
+    "capital": 1374,
+    "entry_band": 20
+   },
+   "capital_miss_hypo": 994.23,
+   "peak_deploy_pct": 99.9,
+   "mean_deploy": 1479.45,
+   "per_wallet": {
+    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 215.29,
+    "0x73afc8160c17830c0c7281a7bf570c871455b880": -3.41,
+    "0x82d2e4dbb0a849ff8e2f5380719769145648beea": 67.35,
+    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 101.75,
+    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 260.48,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 57.65,
+    "0xc684828f6b03487759ced2ebdd975f91f3532228": -73.98,
+    "0xd7d36345c4aab150e59577e360696b01d01d698b": 23.11,
+    "0xe542afd3881c4c330ba0ebbb603bb470b2ba0a37": -82.7
+   }
+  },
+  "current_plus_bench5@5000": {
+   "bankroll": 5000.0,
+   "copies": 306,
+   "realized": -294.03,
+   "open_mark": -557.2,
+   "end_equity": 4148.77,
+   "misses": {
+    "crater": 77,
+    "capital": 1451,
+    "entry_band": 20
+   },
+   "capital_miss_hypo": 7826.46,
+   "peak_deploy_pct": 100.0,
+   "mean_deploy": 2849.91,
+   "per_wallet": {
+    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 385.26,
+    "0x73afc8160c17830c0c7281a7bf570c871455b880": -8.31,
+    "0x82d2e4dbb0a849ff8e2f5380719769145648beea": -203.48,
+    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": -170.65,
+    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 29.92,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 56.62,
+    "0xc684828f6b03487759ced2ebdd975f91f3532228": -185.87,
+    "0xd7d36345c4aab150e59577e360696b01d01d698b": 6.61,
+    "0xe542afd3881c4c330ba0ebbb603bb470b2ba0a37": -204.14
+   }
+  },
+  "bench5_only@500": {
+   "bankroll": 500.0,
+   "copies": 96,
+   "realized": 163.71,
+   "open_mark": -91.34,
+   "end_equity": 572.37,
+   "misses": {
+    "crater": 108,
+    "entry_band": 3,
+    "capital": 576
+   },
+   "capital_miss_hypo": 45.23,
+   "peak_deploy_pct": 99.9,
+   "mean_deploy": 349.25,
+   "per_wallet": {
+    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 35.11,
+    "0x73afc8160c17830c0c7281a7bf570c871455b880": -0.9,
+    "0x82d2e4dbb0a849ff8e2f5380719769145648beea": 142.64,
+    "0xc684828f6b03487759ced2ebdd975f91f3532228": 16.11,
+    "0xe542afd3881c4c330ba0ebbb603bb470b2ba0a37": -29.24
+   }
+  },
+  "bench5_only@1000": {
+   "bankroll": 1000.0,
+   "copies": 96,
+   "realized": 327.41,
+   "open_mark": -182.68,
+   "end_equity": 1144.73,
+   "misses": {
+    "crater": 108,
+    "entry_band": 3,
+    "capital": 578
+   },
+   "capital_miss_hypo": 79.55,
+   "peak_deploy_pct": 99.9,
+   "mean_deploy": 698.5,
+   "per_wallet": {
+    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 70.22,
+    "0x73afc8160c17830c0c7281a7bf570c871455b880": -1.81,
+    "0x82d2e4dbb0a849ff8e2f5380719769145648beea": 285.27,
+    "0xc684828f6b03487759ced2ebdd975f91f3532228": 32.22,
+    "0xe542afd3881c4c330ba0ebbb603bb470b2ba0a37": -58.49
+   }
+  },
+  "bench5_only@2000": {
+   "bankroll": 2000.0,
+   "copies": 100,
+   "realized": 663.55,
+   "open_mark": -365.32,
+   "end_equity": 2298.23,
+   "misses": {
+    "crater": 118,
+    "entry_band": 3,
+    "capital": 576
+   },
+   "capital_miss_hypo": 146.74,
+   "peak_deploy_pct": 99.5,
+   "mean_deploy": 1416.72,
+   "per_wallet": {
+    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 140.11,
+    "0x73afc8160c17830c0c7281a7bf570c871455b880": -3.61,
+    "0x82d2e4dbb0a849ff8e2f5380719769145648beea": 573.81,
+    "0xc684828f6b03487759ced2ebdd975f91f3532228": 66.27,
+    "0xe542afd3881c4c330ba0ebbb603bb470b2ba0a37": -113.03
+   }
+  },
+  "bench5_only@5000": {
+   "bankroll": 5000.0,
+   "copies": 108,
+   "realized": 1686.63,
+   "open_mark": -905.76,
+   "end_equity": 5780.87,
+   "misses": {
+    "crater": 126,
+    "entry_band": 3,
+    "capital": 579
+   },
+   "capital_miss_hypo": 281.19,
+   "peak_deploy_pct": 100.0,
+   "mean_deploy": 3776.85,
+   "per_wallet": {
+    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 345.54,
+    "0x73afc8160c17830c0c7281a7bf570c871455b880": -8.9,
+    "0x82d2e4dbb0a849ff8e2f5380719769145648beea": 1428.46,
+    "0xc684828f6b03487759ced2ebdd975f91f3532228": 162.79,
+    "0xe542afd3881c4c330ba0ebbb603bb470b2ba0a37": -241.27
+   }
+  },
+  "tape_top8@500": {
+   "bankroll": 500.0,
+   "copies": 24,
+   "realized": 234.06,
+   "open_mark": -34.09,
+   "end_equity": 699.97,
+   "misses": {
+    "crater": 56,
+    "capital": 1899,
+    "entry_band": 4
+   },
+   "capital_miss_hypo": 10255.45,
+   "peak_deploy_pct": 98.6,
+   "mean_deploy": 256.68,
+   "per_wallet": {
+    "0x717990979ff84a32d47205a7eede94317aab7d79": 92.14,
+    "0x7547479d43f4b52d892a6f2254050eea50edd158": 21.95,
+    "0x80d8dddcfdc075eb70f6d2d774a27bfb255ab703": 40.93,
+    "0x81a994924efdbed20c3d360bbea3913b0b6bdf08": 17.91,
+    "0x9ab303a355bf22a29e485d98fb88d140abb43044": 61.13
+   }
+  },
+  "tape_top8@1000": {
+   "bankroll": 1000.0,
+   "copies": 24,
+   "realized": 468.11,
+   "open_mark": -68.18,
+   "end_equity": 1399.94,
+   "misses": {
+    "crater": 56,
+    "capital": 1899,
+    "entry_band": 4
+   },
+   "capital_miss_hypo": 20493.44,
+   "peak_deploy_pct": 98.6,
+   "mean_deploy": 513.36,
+   "per_wallet": {
+    "0x717990979ff84a32d47205a7eede94317aab7d79": 184.28,
+    "0x7547479d43f4b52d892a6f2254050eea50edd158": 43.91,
+    "0x80d8dddcfdc075eb70f6d2d774a27bfb255ab703": 81.86,
+    "0x81a994924efdbed20c3d360bbea3913b0b6bdf08": 35.82,
+    "0x9ab303a355bf22a29e485d98fb88d140abb43044": 122.25
+   }
+  },
+  "tape_top8@2000": {
+   "bankroll": 2000.0,
+   "copies": 24,
+   "realized": 936.23,
+   "open_mark": -136.35,
+   "end_equity": 2799.87,
+   "misses": {
+    "crater": 56,
+    "capital": 1899,
+    "entry_band": 4
+   },
+   "capital_miss_hypo": 39961.13,
+   "peak_deploy_pct": 98.6,
+   "mean_deploy": 1026.72,
+   "per_wallet": {
+    "0x717990979ff84a32d47205a7eede94317aab7d79": 368.56,
+    "0x7547479d43f4b52d892a6f2254050eea50edd158": 87.81,
+    "0x80d8dddcfdc075eb70f6d2d774a27bfb255ab703": 163.72,
+    "0x81a994924efdbed20c3d360bbea3913b0b6bdf08": 71.63,
+    "0x9ab303a355bf22a29e485d98fb88d140abb43044": 244.5
+   }
+  },
+  "tape_top8@5000": {
+   "bankroll": 5000.0,
+   "copies": 32,
+   "realized": 1986.34,
+   "open_mark": -603.02,
+   "end_equity": 6383.32,
+   "misses": {
+    "crater": 68,
+    "capital": 1884,
+    "entry_band": 4
+   },
+   "capital_miss_hypo": 82755.52,
+   "peak_deploy_pct": 99.5,
+   "mean_deploy": 2630.6,
+   "per_wallet": {
+    "0x00093a689df7fb09a137f9db7102d9e967c85497": 17.26,
+    "0x717990979ff84a32d47205a7eede94317aab7d79": 667.1,
+    "0x7547479d43f4b52d892a6f2254050eea50edd158": 90.09,
+    "0x80d8dddcfdc075eb70f6d2d774a27bfb255ab703": 421.55,
+    "0x81a994924efdbed20c3d360bbea3913b0b6bdf08": 179.08,
+    "0x9ab303a355bf22a29e485d98fb88d140abb43044": 611.26
+   }
+  }
+ }
+}

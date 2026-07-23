@@ -43,6 +43,8 @@ def main():
          os.path.join(HERE, ".oracle_attempts.pull.jsonl"))
     sftp("/data/oracle_markouts.jsonl",
          os.path.join(HERE, ".oracle_markouts.pull.jsonl"))
+    sftp("/data/oracle_settles.jsonl",
+         os.path.join(HERE, ".oracle_settles.pull.jsonl"))
     if not os.path.exists(TMP) or os.path.getsize(TMP) == 0:
         print("[grade_oracle] box unreachable or no state yet — skip")
         return 0

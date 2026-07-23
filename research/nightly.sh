@@ -55,6 +55,7 @@ done
 "$PY" grade_surge.py >> forward.log 2>&1 || true   # A2 measurement -> chain truth
 "$PY" surge_book_replay.py >> forward.log 2>&1 || true  # virtual $100/5% book
 "$PY" grade_oracle.py >> forward.log 2>&1 || true  # oracle paper -> chain truth
+"$PY" meta_snap.py >> forward.log 2>&1 || true     # market metadata (local gz)
 
 cd ..
 git add research/forward_ledger.jsonl research/params/informed_set.json \

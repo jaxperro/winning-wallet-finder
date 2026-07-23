@@ -50,3 +50,6 @@ research/.nightly.lock.d
 research/__pycache__/
 live/parquet/
 live/tape_sync.log
+research/meta/
+research/.surge*.pull.*
+research/.oracle*.pull.*

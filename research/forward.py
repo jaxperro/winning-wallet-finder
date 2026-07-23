@@ -186,9 +186,30 @@ def main():
     flow_p = json.load(open(os.path.join(HERE, "params", "study_flow.json")))
     fz = flow_p["frozen"]
     frozen_at = flow_p["frozen_at"]
-    t_max = db.execute("SELECT max(ts) FROM trades").fetchone()[0]
-    days = [time.strftime("%Y-%m-%d", time.gmtime(t_max - i * 86400))
-            for i in range(RESCORE_DAYS)]
+    t_min, t_max = db.execute("SELECT min(ts), max(ts) FROM trades").fetchone()
+    days = {time.strftime("%Y-%m-%d", time.gmtime(t_max - i * 86400))
+            for i in range(RESCORE_DAYS)}
+    # offline-proofing (2026-07-22): a Mac gap > RESCORE_DAYS must not leave
+    # permanent holes in the verdict evidence — also score any tape-covered
+    # day the ledger has never seen (additive; scoring method unchanged)
+    have = set()
+    try:
+        for ln in open(LEDGER):
+            try:
+                r_ = json.loads(ln)
+                if r_.get("study") == "flow":
+                    have.add(r_["day"])
+            except Exception:
+                pass
+    except FileNotFoundError:
+        pass
+    t = t_min
+    while t < t_max:
+        d_ = time.strftime("%Y-%m-%d", time.gmtime(t))
+        if d_ not in have:
+            days.add(d_)
+        t += 86400
+    days = sorted(days)
     now = time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime())
     with open(LEDGER, "a") as fh:
         for d in days:

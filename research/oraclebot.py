@@ -65,6 +65,7 @@ CLOB = "https://clob.polymarket.com"
 STATE = os.environ.get("ORACLE_STATE", "/data/oracle_state.json")
 ATTEMPTS = os.environ.get("ORACLE_ATTEMPTS", "/data/oracle_attempts.jsonl")
 MARKOUTS = os.environ.get("ORACLE_MARKOUTS", "/data/oracle_markouts.jsonl")
+SETTLES = os.environ.get("ORACLE_SETTLES", "/data/oracle_settles.jsonl")
 DEBUG = bool(os.environ.get("ORACLE_DEBUG"))
 SEM_VER = "b1"                    # bump on ANY semantics-altering change
 MARKOUT_OFFSETS = (60, 300, 1800)  # observational re-reads per fill
@@ -669,11 +670,16 @@ class OracleBot:
         c = self.state["counters"]
         c["settled_total"] += 1
         c["settle_tick" if source == "tick" else "settle_clob"] += 1
-        self.state["settled"].append(
-            {**lot, "payout": pay, "source": source, "provisional": True,
-             "settled_ts": int(time.time()), "pnl": pnl})
+        rec = {**lot, "payout": pay, "source": source, "provisional": True,
+               "settled_ts": int(time.time()), "pnl": pnl}
+        self.state["settled"].append(rec)
         del self.state["settled"][:-SETTLED_TRIM]
         del self.state["open"][lid]
+        try:                            # durable append-log: SETTLED_TRIM can
+            with open(SETTLES, "a") as fh:   # never rotate a settle away
+                fh.write(json.dumps(rec) + "\n")
+        except Exception as e:
+            log(f"⚠ settles log write failed: {e}")
         word = "WON" if pay == 1.0 else "refund" if pay == 0.5 else "lost"
         log(f"SETTLE[{source}] {word} {lot['title'][:36]} {pnl:+.2f} · "
             f"realized {self.state['pnl_realized']:+.2f}")

@@ -61,6 +61,7 @@ SET_URL = ("https://raw.githubusercontent.com/jaxperro/winning-wallet-finder/"
 STATE = os.environ.get("SURGE_STATE", "/data/surge2_state.json")
 ATTEMPTS = os.environ.get("SURGE_ATTEMPTS", "/data/surge_attempts.jsonl")
 MARKOUTS = os.environ.get("SURGE_MARKOUTS", "/data/surge_markouts.jsonl")
+SETTLES = os.environ.get("SURGE_SETTLES", "/data/surge_settles.jsonl")
 SEM_VER = "a2"                    # bump on ANY semantics-altering change
 MARKOUT_OFFSETS = (60, 300, 1800)  # observational re-reads per fill
 BID_LEVELS = 3
@@ -410,11 +411,16 @@ class Surge:
         c = self.state["counters"]
         c["settled_total"] += 1
         c["settle_clob"] += 1
-        self.state["settled"].append(
-            {**lot, "payout": pay, "provisional": True,
-             "settled_ts": int(time.time()), "pnl": pnl})
+        rec = {**lot, "payout": pay, "provisional": True,
+               "settled_ts": int(time.time()), "pnl": pnl}
+        self.state["settled"].append(rec)
         del self.state["settled"][:-SETTLED_TRIM]
         del self.state["open"][lid]
+        try:                            # durable append-log: SETTLED_TRIM can
+            with open(SETTLES, "a") as fh:   # never rotate a settle away
+                fh.write(json.dumps(rec) + "\n")
+        except Exception as e:
+            log(f"⚠ settles log write failed: {e}")
         word = "WON" if pay == 1.0 else "refund" if pay == 0.5 else "lost"
         log(f"SETTLE {word} {lot['title'][:36]} {pnl:+.2f} · "
             f"realized {self.state['pnl_realized']:+.2f}")
