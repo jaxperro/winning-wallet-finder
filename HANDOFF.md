@@ -52,11 +52,15 @@ push through.
   **7-wallet Set E rev 5** (JuiceFarm promoted 2026-07-23 off the #13
   bench method run early: +17%/+34% both windows, insider z 2.5, 1%
   refunds; auto p80 floor $753), 4% of working equity/bet.
-  **#20/#21 FLIPPED LIVE 2026-07-23 18:36 UTC at 0108cca** — both books
-  now run `entry_mode maker` (GTC at the sharp's price, 60s registry TTL,
-  no chase) + `exit_mode hold` (mirrored exits ignored + ledgered to
-  copybot_ignored_exits[.live].jsonl as the live counterfactual). Forward
-  windows open at that commit; verdict bars per #20/#21 at n>=30; revert =
+  **#20 LIVE at 0108cca; #21 SUPERSEDED at 54f4c51 (2026-07-23 22:35Z)**
+  — both books run `entry_mode maker` (GTC at the sharp's price, 60s
+  registry TTL — T11: 60s is already optimal) + **band-guarded mirror**:
+  `exit_mode mirror` + `mirror_sell_min_p 0.90`. Sell-band study: every
+  band <90¢ LOSES by mirroring, ≥90¢ SAVES — so ≥90¢ sells mirror
+  (profit-locks, frees capital), sub-band sells are ignored + ledgered
+  (reason:"band") to copybot_ignored_exits[.live].jsonl. Backtest parity
+  reads +41% band-mirror vs +36% pure-hold. #20 window open (bars at
+  n>=30); #21's ~28h pure-hold sample preserved in the ledgers; revert =
   one config flip back. **wwf-copybot** (paper $1k): same set, same modes.
   Both on the audit-hardened build (locks, chain-gated sweep, boot-id
   single-writer guard, TLS'd user-ws — HANDOFF_ARCHIVE rev 16). 2026-07-20:
