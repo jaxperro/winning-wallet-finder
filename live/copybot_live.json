@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 116.54,
+ "stake": 116.53,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1814.64,
- "deployed": 1098.9,
+ "cash": 1782.63,
+ "deployed": 1130.68,
  "reserve": 0.0,
- "realized": 1913.52,
+ "realized": 1913.28,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 18,
- "fees_paid": 343.6,
+ "ledger_drift": -0.03,
+ "open_count": 19,
+ "fees_paid": 343.84,
  "fee_rate": 0.03,
  "lag": {
-  "n": 229,
-  "n24": 4,
-  "avg_s": 7.2,
-  "avg_slip_pct": -0.0064,
+  "n": 230,
+  "n24": 5,
+  "avg_s": 5.9,
+  "avg_slip_pct": -0.0176,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 344.56
  },
  "bets": [
+  {
+   "token": "82768531874539579332422216880159980913196623213037059365722754442149714478353",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the highest temperature in London be 27\u00b0C on July 23?",
+   "their_price": 0.8,
+   "my_price": 0.75,
+   "slippage_pct": -0.0625,
+   "lag_s": 0.8,
+   "shares": 42.36,
+   "cost": 31.77,
+   "fee": 0.24,
+   "opened": 1784820335,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2091,27 +2110,6 @@
    "settled": 1784036266,
    "sold_shares": 166.95,
    "sold_proceeds": 115.82
-  },
-  {
-   "token": "107133788521613312162567181824294634873967810582690705864827492796504434100258",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "WTI Crude Oil (WTI) closes above $78 on July 14?",
-   "their_price": 0.86,
-   "my_price": 0.82,
-   "slippage_pct": -0.0465,
-   "lag_s": 3.5,
-   "shares": 75.54,
-   "cost": 61.94,
-   "fee": 0.33,
-   "opened": 1784028613,
-   "status": "closed",
-   "exit_price": 0.9557,
-   "pnl": 9.92,
-   "settled": 1784033039,
-   "sold_shares": 75.54,
-   "sold_proceeds": 72.19
   }
  ],
  "missed": [
@@ -3071,11 +3069,11 @@
  ],
  "missed_pnl": 96775.96,
  "last_fill": {
-  "ts": 1784820189,
-  "side": "SELL",
-  "price": 0.86,
-  "shares": 5.24,
-  "title": "Will the price of Ethereum be between $1,900 and $2,000 on J",
+  "ts": 1784820335,
+  "side": "BUY",
+  "price": 0.75,
+  "shares": 42.36,
+  "title": "Will the highest temperature in London be 27\u00b0C on July 23?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3083,11 +3081,11 @@
    "realized": 542.9,
    "n": 47,
    "wins": 12,
-   "open_cost": 853.09,
-   "open_n": 11,
+   "open_cost": 884.86,
+   "open_n": 12,
    "miss_n": 55,
    "miss_pnl": 97054.22,
-   "last_ts": 1784819629
+   "last_ts": 1784820335
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -3160,5 +3158,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784820189
+ "updated": 1784820340
 }
