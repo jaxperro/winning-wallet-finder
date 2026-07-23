@@ -721,6 +721,26 @@ def main():
     mf = (OUT[:-5] if OUT.endswith(".json") else OUT) + "_missed.json"
     json.dump(mfull, open(os.path.join(HERE, mf) if not os.path.isabs(mf)
                           else mf, "w"), separators=(",", ":"))
+    # companion 2: EVERY replayed bet with join keys (cond/asset) — the
+    # three-book reconciliation study (#24) joins these against both bots'
+    # fills/misses to decompose backtest-vs-reality per named gap bucket
+    bfull = []
+    _mids = {id(m) for m in missed}
+    for b in stream:
+        st_ = ("missed" if id(b) in _mids else
+               "open" if b.get("kind") == "open" or b.get("cur") is not None
+               else "sold" if b.get("sold") else "resolved")
+        bfull.append({"cond": b.get("cond"), "asset": b.get("asset"),
+                      "name": b["name"], "p": b.get("p"),
+                      "their": b.get("their"), "stake": b.get("stake"),
+                      "entry_t": int(b.get("entry_t") or 0), "status": st_,
+                      "capped": bool(b.get("capped")),
+                      "wp": b.get("wp"),
+                      "pnl": round(b["pnl"], 2) if b.get("pnl") is not None
+                      else None})
+    bf = (OUT[:-5] if OUT.endswith(".json") else OUT) + "_bets.json"
+    json.dump(bfull, open(os.path.join(HERE, bf) if not os.path.isabs(bf)
+                          else bf, "w"), separators=(",", ":"))
     save_slug_cache()
     print(f"portfolio[{DAYS}d rolling]: equity ${equity:,.0f} ({(equity-BANK)/BANK*100:+.0f}%) | banked ${reserve:,.0f} "
           f"| realized ${realized:+,.0f} | fees ${fees_paid:,.0f} | next stake ${cur_stake():,.0f} "
