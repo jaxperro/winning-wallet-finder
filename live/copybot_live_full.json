@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784816239,
+ "updated": 1784818263,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.9,
@@ -8,7 +8,7 @@
    "wins": 12,
    "open_cost": 736.54,
    "open_n": 10,
-   "miss_n": 53,
+   "miss_n": 54,
    "miss_pnl": 97071.82,
    "last_ts": 1784790370
   },
@@ -4190,6 +4190,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784818263,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "27550239637632399096048782995950028754921427598196211548179911390834637255919",
+   "cond": "0xa843abc8eee73c1dcf3871d27b50200900767539d9638446eb0bceff0f363a8c",
+   "title": "Hibernian FC to score first vs. FC Malisheva?",
+   "outcome": "No",
+   "price": 0.96,
+   "stake": 56.11,
+   "reason": "thin book ($29 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784507597,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
