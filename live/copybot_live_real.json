@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
- "cash": 36.2,
- "deployed": 24.27,
+ "cash": 36.39,
+ "deployed": 24.08,
  "reserve": 0.0,
- "realized": -15.39,
+ "realized": -15.38,
  "adjustments": 9.44,
  "ledger_drift": 0.01,
  "open_count": 13,
@@ -3066,11 +3066,11 @@
  ],
  "missed_pnl": 1168.03,
  "last_fill": {
-  "ts": 1784835163,
-  "side": "BUY",
-  "price": 0.35,
-  "shares": 7.19,
-  "title": "Will Trump meet with Netanyahu by July 31, 2026?",
+  "ts": 1784847808,
+  "side": "SELL",
+  "price": 0.965,
+  "shares": 0.2,
+  "title": "Amazon 2026 capex above $180B?",
   "outcome": "Yes"
  },
  "wallet_pnl": {
@@ -3185,5 +3185,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784846126
+ "updated": 1784847808
 }
