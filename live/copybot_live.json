@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 118.4,
+ "stake": 118.51,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1551.48,
- "deployed": 1408.61,
+ "cash": 1572.08,
+ "deployed": 1390.55,
  "reserve": 0.0,
- "realized": 1960.05,
+ "realized": 1962.6,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 21,
@@ -3079,11 +3079,11 @@
  ],
  "missed_pnl": 96649.36,
  "last_fill": {
-  "ts": 1784842585,
-  "side": "BUY",
-  "price": 0.65,
-  "shares": 179.98,
-  "title": "Israel x Iran ceasefire continues through July 25?",
+  "ts": 1784847806,
+  "side": "SELL",
+  "price": 0.998,
+  "shares": 20.64,
+  "title": "Amazon 2026 capex above $180B?",
   "outcome": "Yes"
  },
  "wallet_pnl": {
@@ -3178,5 +3178,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784846425
+ "updated": 1784847812
 }
