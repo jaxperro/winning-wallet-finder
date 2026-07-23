@@ -48,12 +48,12 @@ push through.
   **7-wallet Set E rev 5** (JuiceFarm promoted 2026-07-23 off the #13
   bench method run early: +17%/+34% both windows, insider z 2.5, 1%
   refunds; auto p80 floor $753), 4% of working equity/bet.
-  **#20/#21 dark flags deployed 2026-07-23** (`follow.entry_mode` /
-  `exit_mode`, defaults taker/mirror = byte-identical behavior; flip at
-  Friday's read opens the pre-registered forward windows — maker entries
-  rest at the sharp's price w/ 60s registry TTL; hold-through logs every
-  ignored sell to copybot_ignored_exits[.live].jsonl as the mirror
-  counterfactual). **wwf-copybot** (paper $1k): same set, FAK-parity fills.
+  **#20/#21 FLIPPED LIVE 2026-07-23 18:36 UTC at 0108cca** — both books
+  now run `entry_mode maker` (GTC at the sharp's price, 60s registry TTL,
+  no chase) + `exit_mode hold` (mirrored exits ignored + ledgered to
+  copybot_ignored_exits[.live].jsonl as the live counterfactual). Forward
+  windows open at that commit; verdict bars per #20/#21 at n>=30; revert =
+  one config flip back. **wwf-copybot** (paper $1k): same set, same modes.
   Both on the audit-hardened build (locks, chain-gated sweep, boot-id
   single-writer guard, TLS'd user-ws — HANDOFF_ARCHIVE rev 16). 2026-07-20:
   FAK no-match OPENs get one re-quote retry on both bots, PER-NICHE waits
