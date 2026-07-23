@@ -48,6 +48,8 @@
   ],
   "follow": {
     "buy_only": true,
+    "entry_mode": "maker",
+    "exit_mode": "hold",
     "min_their_usd": 25.0,
     "min_entry": 0.0,
     "max_entry": 0.95,
