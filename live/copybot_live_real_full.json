@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784835168,
+ "updated": 1784835873,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.65,
@@ -375,7 +375,8 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "end_ts": 1785456000
   },
   {
    "token": "48393982087831129899183531478832099653074965669965652679356454634407980114693",
@@ -864,7 +865,8 @@
    "pnl": null,
    "settled": null,
    "sold_shares": 1.75,
-   "sold_proceeds": 1.3905826599999997
+   "sold_proceeds": 1.3905826599999997,
+   "end_ts": 1788134400
   },
   {
    "token": "99769792009260570054217311703996683522727922229995804271060316488330979046706",
@@ -1051,7 +1053,8 @@
    "pnl": null,
    "settled": null,
    "sold_shares": 0.12,
-   "sold_proceeds": 0.07274818
+   "sold_proceeds": 0.07274818,
+   "end_ts": 1787184000
   },
   {
    "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
@@ -1553,7 +1556,8 @@
    "pnl": null,
    "settled": null,
    "sold_shares": 1.04,
-   "sold_proceeds": 0.95450368
+   "sold_proceeds": 0.95450368,
+   "end_ts": 1798761600
   },
   {
    "token": "114408446604886353206911847633106829807018038464913763376714523293436793199652",
@@ -1635,7 +1639,8 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "end_ts": 1789516800
   },
   {
    "token": "43429083182986427425572947360954920494954132341616449095164581234599055860363",
@@ -1759,7 +1764,8 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "end_ts": 1793145600
   },
   {
    "token": "60806317326159607374282200707556294855206853468836223934335735983346661186527",
@@ -2210,7 +2216,8 @@
    "pnl": null,
    "settled": null,
    "sold_shares": 0.35000000000000003,
-   "sold_proceeds": 0.3240986
+   "sold_proceeds": 0.3240986,
+   "end_ts": 1809043200
   },
   {
    "token": "73893970296257160435491465547806830475405138836098479326244164349063701653888",
@@ -2498,7 +2505,8 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "end_ts": 1798761600
   }
  ],
  "missed": [
