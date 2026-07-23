@@ -180,6 +180,16 @@ push through.
   set, surge/oracle/lag grades, virtual book, meta snapshot). All launchd agents
   removable with `launchctl unload ~/Library/LaunchAgents/<label>.plist`.
 
+## OFFLINE PAUSE (2026-07-23 evening — user traveling)
+All three Mac launchd agents UNLOADED at user request (bandwidth):
+tape-sync, research-nightly, skilled-daily. T15 (sharp_halflife) killed
+mid-ensure — resumable. Re-enable: `launchctl load
+~/Library/LaunchAgents/com.jaxperro.<name>.plist` x3, rerun
+sharp_halflife.py. pmset 07:58 wake still armed (user sudo to cancel).
+Fly side fully autonomous: recorder (~3+ weeks headroom), 3 harnesses,
+both copybots — nothing depends on the Mac while paused. On return the
+tape mirror + nightly self-heal (freshness wait + ledger backfill).
+
 ## Ops quick-reference
 - Follow-set change: edit live/copybot.paper.json → `./live/deploy_bot.sh`;
   mirror config.live.example.json (nothing auto-writes it) + backtest.json.
