@@ -57,6 +57,9 @@ GAMMA = "https://gamma-api.polymarket.com"
 #     python3 portfolio.py --wallets 0xabc,0xdef:whale --days 30 --out /tmp/t.json
 _ap = argparse.ArgumentParser()
 _ap.add_argument("--wallets", help="comma list of addresses; ':whale' suffix opts into whale class")
+_ap.add_argument("--follow-only", action="store_true",
+                 help="replay only the paper bot's follow set "
+                      "(backtest.json entries ∩ copybot.paper.json wallets)")
 _ap.add_argument("--days", type=int, help="window length (default backtest.json's, else 30)")
 _ap.add_argument("--bank", type=float, help="starting bankroll (default backtest.json's, else 1000)")
 _ap.add_argument("--out", help="output path (default $PORTFOLIO_OUT or portfolio.json)")
@@ -116,6 +119,14 @@ if _ARGS.wallets:
 else:
     WALLETS = [{"wallet": w["wallet"], "name": w.get("name", w["wallet"][:10]),
                 "class": w.get("class", "volume")} for w in _BT.get("wallets", [])]
+if _ARGS.follow_only:
+    # the paper bot's live follow set — names/classes stay from backtest.json
+    try:
+        _FSET = {w["wallet"].lower() for w in
+                 json.load(open(os.path.join(HERE, "copybot.paper.json")))["wallets"]}
+        WALLETS = [w for w in WALLETS if w["wallet"].lower() in _FSET]
+    except Exception as _e:
+        raise SystemExit(f"--follow-only: cannot read copybot.paper.json ({_e})")
 if not WALLETS:
     raise SystemExit("no wallets to replay: create live/backtest.json or pass --wallets")
 
@@ -695,6 +706,7 @@ def main():
         "missed_pnl": round(sum(hypo_pnl(m) for m in missed), 2),
         "entry_mode": ENTRY_MODE, "exit_mode": EXIT_MODE,
         "mirror_sell_min_p": MIRROR_SELL_MIN_P,
+        "follow_only": bool(_ARGS.follow_only),
     }
     json.dump(out, open(os.path.join(HERE, OUT) if not os.path.isabs(OUT) else OUT, "w"),
               separators=(",", ":"))

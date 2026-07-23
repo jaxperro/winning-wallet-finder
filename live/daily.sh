@@ -67,6 +67,8 @@ if p!=b: print(f"[daily] ⚠ class_pct DESYNC: paper {p} != backtest {b}")
 PY
 echo "[daily] $(date '+%F %T') portfolio: cache-based \$1k book -> portfolio.json"
 python3 portfolio.py || echo "[daily] portfolio skipped"
+echo "[daily] $(date '+%F %T') portfolio: followed-set-only book -> portfolio_follow.json"
+python3 portfolio.py --follow-only --out portfolio_follow.json || echo "[daily] follow portfolio skipped"
 echo "[daily] $(date '+%F %T') calibration: live-book vs model, one row/day"
 # The number that sizes real money (FINDINGS "The calibration experiment"):
 # the measured ratio between the live paper book and the backtest of the SAME
@@ -115,7 +117,7 @@ python3 dashboard.py
 mkdir -p history && cp watch_skilled.json "history/watch_$(date '+%Y%m%d').json" 2>/dev/null
 echo "[daily] $(date '+%F %T') 7/7 publish (commit + push refreshed outputs)"
 PUBLISH="no changes"
-git add watch_skilled.json watch_sharps.json conviction_wallets.json dashboard.html portfolio.json copybot.paper.json 2>/dev/null
+git add watch_skilled.json watch_sharps.json conviction_wallets.json dashboard.html portfolio.json portfolio_follow.json copybot.paper.json 2>/dev/null
 if git diff --cached --quiet 2>/dev/null; then
     echo "[daily] no output changes to publish"
 elif git commit -q -m "live: daily refresh — skilled + sharp wallets [skip ci]"; then
