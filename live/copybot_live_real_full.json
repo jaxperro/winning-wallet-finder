@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784844991,
+ "updated": 1784846126,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.65,
@@ -69,7 +69,7 @@
    "open_cost": 17.52,
    "open_n": 8,
    "miss_n": 25,
-   "miss_pnl": -7.34,
+   "miss_pnl": -7.37,
    "last_ts": 1784835161
   },
   "Kruto2027": {
@@ -90,7 +90,7 @@
    "open_n": 0,
    "miss_n": 0,
    "miss_pnl": 0.0,
-   "last_ts": 1784844991
+   "last_ts": 1784846126
   },
   "0x41558102": {
    "realized": 0.0,
@@ -131,7 +131,7 @@
    "status": "closed",
    "exit_price": null,
    "pnl": null,
-   "settled": 1784844991,
+   "settled": 1784846126,
    "end_ts": 1784851200
   },
   {
@@ -2517,6 +2517,22 @@
  ],
  "missed": [
   {
+   "ts": 1784492349,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "62074667087255747412382561081475311823484268378809285620641251664614873335395",
+   "cond": "0x514c3dd24cde8101ec8e3982b74fca425c592e3fe7526056a4d80aa269c98808",
+   "title": "Israel x Iran ceasefire continues through July 20?",
+   "outcome": "Yes",
+   "price": 0.79,
+   "stake": 2.41,
+   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
+   "status": "sold",
+   "pnl": -0.03,
+   "settled": 1784846124,
+   "name": "BikesAreTheBikes",
+   "exit_price": 0.79
+  },
+  {
    "ts": 1784750680,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "110230164960434404310059385575944076505582891264305624307112518287452413536393",
@@ -3314,21 +3330,6 @@
    "settled": 1784496786,
    "name": "0xbadaf319",
    "exit_price": 0.74
-  },
-  {
-   "ts": 1784492349,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "62074667087255747412382561081475311823484268378809285620641251664614873335395",
-   "cond": "0x514c3dd24cde8101ec8e3982b74fca425c592e3fe7526056a4d80aa269c98808",
-   "title": "Israel x Iran ceasefire continues through July 20?",
-   "outcome": "Yes",
-   "price": 0.79,
-   "stake": 2.41,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784485474,
