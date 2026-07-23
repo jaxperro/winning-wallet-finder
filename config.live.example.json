@@ -74,6 +74,11 @@
       "name": "AIcAIc",
       "class": "volume",
       "floor": 341.23
+    },
+    {
+      "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+      "name": "JuiceFarm",
+      "class": "volume"
     }
   ],
   "feed_path": "live/copybot_live_real.json",
