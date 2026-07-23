@@ -341,6 +341,17 @@ def market_neg_risk(cond):
     return bool(m.get("neg_risk")) if m else False
 
 
+def _iso_end(s):
+    """CLOB end_date_iso -> epoch (None on parse trouble). Display metadata
+    only — in-play markets usually resolve well before the scheduled end."""
+    try:
+        import calendar
+        return calendar.timegm(time.strptime(
+            s.replace("+00:00", "Z")[:20], "%Y-%m-%dT%H:%M:%SZ"))
+    except Exception:
+        return None
+
+
 def resolution_price(token_id, cond, outcome=None):
     """Settled price of our held token — 1.0 won, 0.0 lost, 0.5 refunded
     (50/50 resolution: walkovers/abandonments), None if not resolved yet.
@@ -1612,6 +1623,21 @@ class Copybot:
         for m in missed:
             w = (m.get("wallet") or "").lower()
             m["name"] = self.names.get(w) or addr_names.get(w) or w[:10]
+        # expected-resolution ETA (2026-07-23, display metadata only): one
+        # cached market fetch per open bet lifetime, <=8 per publish pass;
+        # "end_ts" in the record marks fetched-even-if-unknown (no refetch
+        # loops on metadata-less markets)
+        fetched = 0
+        for tok, b in bets.items():
+            if b.get("status") != "open" or "end_ts" in b or fetched >= 8:
+                continue
+            cond = (mp.get(tok) or {}).get("cond")
+            if not cond:
+                b["end_ts"] = None
+                continue
+            m = _market(cond) or {}
+            b["end_ts"] = _iso_end(m.get("end_date_iso") or "")
+            fetched += 1
         feed = {
             "mode": "live" if self.engine.ex.live else "paper",
             "bankroll": bank, "stake": round(self.engine.stake_usd(), 2),
