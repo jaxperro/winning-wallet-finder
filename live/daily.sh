@@ -117,7 +117,7 @@ python3 dashboard.py
 mkdir -p history && cp watch_skilled.json "history/watch_$(date '+%Y%m%d').json" 2>/dev/null
 echo "[daily] $(date '+%F %T') 7/7 publish (commit + push refreshed outputs)"
 PUBLISH="no changes"
-git add watch_skilled.json watch_sharps.json conviction_wallets.json dashboard.html portfolio.json portfolio_follow.json copybot.paper.json 2>/dev/null
+git add watch_skilled.json watch_sharps.json conviction_wallets.json dashboard.html portfolio.json portfolio_missed.json portfolio_follow.json portfolio_follow_missed.json copybot.paper.json 2>/dev/null
 if git diff --cached --quiet 2>/dev/null; then
     echo "[daily] no output changes to publish"
 elif git commit -q -m "live: daily refresh — skilled + sharp wallets [skip ci]"; then

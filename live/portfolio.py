@@ -637,8 +637,8 @@ def main():
         return "won" if w else "lost"
 
     missed.sort(key=lambda m: m.get("res_t") or 0, reverse=True)
-    for m in missed[:60]:
-        m["title"] = market_meta(m["cond"])["title"]
+    for m in missed:                 # full enrichment: the companion file
+        m["title"] = market_meta(m["cond"])["title"]     # (disk-cached)
         m["pnl"] = hypo_pnl(m)
     wins = sum(1 for r in resolved if r.get("won"))
     refunds = sum(1 for r in resolved if r.get("refund"))
@@ -710,6 +710,17 @@ def main():
     }
     json.dump(out, open(os.path.join(HERE, OUT) if not os.path.isabs(OUT) else OUT, "w"),
               separators=(",", ":"))
+    # companion: the COMPLETE missed list (the feed's missed[] is a 60-row
+    # window; wallet cards sum the full list server-side — this file lets
+    # the dashboard's wallet modal show every row behind those totals)
+    mfull = [{"title": m.get("title", ""), "name": m["name"],
+              "won": _missed_won(m), "status": _missed_status(m),
+              "stake": m.get("stake"), "capped": bool(m.get("capped")),
+              "pnl": round(m["pnl"], 2),
+              "date": m.get("exit_t") or m.get("res_t")} for m in missed]
+    mf = (OUT[:-5] if OUT.endswith(".json") else OUT) + "_missed.json"
+    json.dump(mfull, open(os.path.join(HERE, mf) if not os.path.isabs(mf)
+                          else mf, "w"), separators=(",", ":"))
     save_slug_cache()
     print(f"portfolio[{DAYS}d rolling]: equity ${equity:,.0f} ({(equity-BANK)/BANK*100:+.0f}%) | banked ${reserve:,.0f} "
           f"| realized ${realized:+,.0f} | fees ${fees_paid:,.0f} | next stake ${cur_stake():,.0f} "
