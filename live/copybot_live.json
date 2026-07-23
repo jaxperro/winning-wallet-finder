@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 116.43,
+ "stake": 116.57,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1826.0,
- "deployed": 1084.84,
+ "cash": 1927.0,
+ "deployed": 987.16,
  "reserve": 0.0,
- "realized": 1910.8,
+ "realized": 1914.13,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 17,
- "fees_paid": 343.18,
+ "fees_paid": 343.31,
  "fee_rate": 0.03,
  "lag": {
   "n": 227,
@@ -63,7 +63,9 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "sold_shares": 105.41,
+   "sold_proceeds": 101.0
   },
   {
    "token": "26988481082400938234620905580029354496814882411644162756993608321400480311992",
@@ -3066,10 +3068,10 @@
  ],
  "missed_pnl": 95673.52,
  "last_fill": {
-  "ts": 1784790470,
-  "side": "BUY",
-  "price": 0.886,
-  "shares": 39.67,
+  "ts": 1784791174,
+  "side": "SELL",
+  "price": 0.959,
+  "shares": 11.54,
   "title": "Will the highest temperature in Hong Kong be 34\u00b0C on July 23",
   "outcome": "No"
  },
@@ -3155,5 +3157,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784790477
+ "updated": 1784791174
 }
