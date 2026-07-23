@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784802153,
+ "updated": 1784802578,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.45,
@@ -68,7 +68,7 @@
    "wins": 1,
    "open_cost": 12.49,
    "open_n": 6,
-   "miss_n": 23,
+   "miss_n": 24,
    "miss_pnl": -7.34,
    "last_ts": 1784660784
   },
@@ -2393,6 +2393,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784802578,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "28239418772633645184924651434956000849078365566842629564562475378531350731731",
+   "cond": "0xac02cbb049e46d6a3627c0fdf52fa554982a9025d45968207b362acb6ca4b830",
+   "title": "Will the Fed decrease interest rates by 25 bps after the September 2026 meeting?",
+   "outcome": "No",
+   "price": 0.9142,
+   "stake": 2.51,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1784696452,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

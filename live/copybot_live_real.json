@@ -2086,6 +2086,21 @@
  ],
  "missed": [
   {
+   "ts": 1784802578,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "28239418772633645184924651434956000849078365566842629564562475378531350731731",
+   "cond": "0xac02cbb049e46d6a3627c0fdf52fa554982a9025d45968207b362acb6ca4b830",
+   "title": "Will the Fed decrease interest rates by 25 bps after the September 2026 meeting?",
+   "outcome": "No",
+   "price": 0.9142,
+   "stake": 2.51,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784696452,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "68642938852444405618524357112499284175503313921723452625127267630411120480355",
@@ -3026,24 +3041,9 @@
    "settled": 1784454324,
    "name": "1kto1m",
    "exit_price": 0.0304
-  },
-  {
-   "ts": 1784451912,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "86567202803696185629704724961398129231892610051254319801824623009047556217191",
-   "cond": "0xa6480903e54c68f2ee79cacb7861dfcc9b473e8b07d6dcaf2c9923034a5fb56f",
-   "title": "Israel x Iran ceasefire continues through July 31?",
-   "outcome": "No",
-   "price": 0.41,
-   "stake": 2.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 1172.32,
+ "missed_pnl": 1172.26,
  "last_fill": {
   "ts": 1784791175,
   "side": "SELL",
@@ -3119,7 +3119,7 @@
    "wins": 1,
    "open_cost": 12.49,
    "open_n": 6,
-   "miss_n": 23,
+   "miss_n": 24,
    "miss_pnl": -7.34,
    "last_ts": 1784660784
   },
@@ -3154,5 +3154,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784802153
+ "updated": 1784802578
 }
