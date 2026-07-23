@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784772298,
+ "updated": 1784773163,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.9,
@@ -9,7 +9,7 @@
    "open_cost": 638.59,
    "open_n": 9,
    "miss_n": 53,
-   "miss_pnl": 96005.7,
+   "miss_pnl": 96012.64,
    "last_ts": 1784722115
   },
   "gkmgkldfmg": {
@@ -4182,7 +4182,8 @@
    "status": "lost",
    "pnl": -119.23,
    "settled": 1784772298,
-   "name": "BikesAreTheBikes"
+   "name": "BikesAreTheBikes",
+   "exit_checked": true
   },
   {
    "ts": 1783942543,
@@ -4194,10 +4195,12 @@
    "price": 0.28,
    "stake": 91.41,
    "reason": "book unreliable (spread 0.16 > 0.08)",
-   "status": "won",
-   "pnl": 233.08,
+   "status": "sold",
+   "pnl": 240.02,
    "settled": 1784772296,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 1.0206
   },
   {
    "ts": 1784657983,
