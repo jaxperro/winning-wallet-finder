@@ -561,6 +561,58 @@ assumptions (the paper harness earns its keep even when — especially
 when — it disagrees); (3) at 20–50× payoffs, no small sample means
 anything: the sub-5¢ "edge" survived a 31-fill scan and died at 38.
 
+## The measurement split + the data moat (2026-07-22, same night)
+
+Round three's kill landed while a parallel line of work was rebuilding the
+instruments; the two converged into an architecture change and one more
+corrected verdict.
+
+**One instrument can't sample and rehearse at once.** The v1 surge book
+halted at its pre-registered −50% line the same evening. First diagnosis
+blamed the cash gate for adverse selection — the ~2% subsample it could
+afford read −$9/fill vs "+$41/fill" for the full signal. Round three
+dissolved that comparator (the +$41 was the resolved-only bias; chain
+truth −$6/fill, right next to the subsample's −$9): the book wasn't
+sampling badly, the signal was dead. The structural lesson survives the
+autopsy either way: a physically cash-gated harness measures a bankroll's
+shadow, not a signal. Both harnesses now run **measurement-mode** — every
+trigger attempted at the ledger's stake, and bankroll specs replayed
+OFFLINE over the recorded attempt stream (`surge_book_replay.py`), where
+gating can never touch the sample it's judged on.
+
+**No scalp was hiding in the corpse.** The markout-exit study (chain-true;
+its res_tok v0 self-corrected within hours — same round-three mechanism,
+caught by the same law): 1,146 forward fills, hold −$5.92/fill, and every
+exit horizon negative too (best −$4.18 at +30m). The cohort split is the
+microstructure finding: winners drift monotonically to +$44 held; the
+losses the old scorer hid bleed from minute one (−$6@60s → −$44@2h).
+Surge moments are symmetric information events, priced in immediately —
+after fees and worst-print entry there is nothing for a taker at ANY
+horizon. Whatever earns money at those moments is on the other side of
+the book (maker study: staged, tape-sim first).
+
+**Two more scorer artifacts, disclosed on #17 before they could bite:**
+the tape scorer reads sprint strikes from the FUTURE window-open tick for
+pre-window prints (live gates ts ≥ t₀; 404 such prints suppressed in an
+8.5-min shakedown), and unlabeled non-sprint tokens default to the
+yes-side, turning No-side dust prints into fake ~+0.99-edge events (the
+harness reads labels from the trade payload itself — same rule, better
+input).
+
+**The data moat, hardened (DATA LAW, research/README).** Everything
+accrues Mac-independent on Fly volumes (recorder: 25GB at 4%, ~3+ weeks
+of offline headroom; harness streams: attempts with top-5 asks + top-3
+bids + latency, markout book re-reads at +60/300/1800s per fill, durable
+settle logs immune to state trims; daily volume snapshots ×5). The Mac is
+only the grader/archiver, and its two offline failure modes are closed:
+`forward.py` now backfills any tape-covered day the ledger has never
+seen, and settle logs mean trims can never rotate evidence away.
+`meta_snap.py` snapshots every active market nightly (~12k: end dates,
+tags, token→outcome maps) — τ becomes knowable AT TRIGGER for every tape
+trigger, and the label-gap artifact class dies at the source. Tests are
+additive, never subtractive: raw streams are append-only, analysis reads
+only, and a study that needs different data records a NEW stream.
+
 ## Repo layout
 
 - `insider.py` — the detector: z-score/p-value, timing/freshness/sizing signals,

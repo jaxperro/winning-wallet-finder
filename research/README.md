@@ -25,6 +25,13 @@ anything on the live bot"):
 - **Every study gets one instrument that does not share the scorer's
   assumptions** — the surge paper harness (chain-graded from day one) is
   what caught the bug. Divergence between instruments is signal, not noise.
+- **DATA LAW (2026-07-22): tests are additive, never subtractive.** Raw
+  streams (tape, attempts, markouts, settles, meta snapshots) are
+  append-only; analysis opens them read-only; no script rewrites or
+  rotates a raw stream. Bot-state trims exist ONLY where an append-only
+  log on the volume carries the same rows durably (settles) or the nightly
+  pull archives them (attempts/markouts). A study that would need to
+  mutate a stream records a NEW stream instead.
 
 Layout:
   tape.py     read-only loaders · tape proxy-resolution (terminal-VWAP +
@@ -40,11 +47,41 @@ Layout:
                    (payouts_for chain overlay mandatory; controls + sub5c
                    exploratory arm — 0-for-38, dead)
   informed_set.py  publishes params/informed_set.json nightly (surgebot input)
-  surgebot.py      real-time PAPER harness (wwf-surgebot, /feed endpoint →
-                   jaxperro.com/surge) — $100 book, $5 stakes, event cap 2
-  grade_surge.py   nightly chain-truth re-grade of the surge paper book
-                   → surge_paper_ledger.jsonl
+  surgebot.py      A2 MEASUREMENT harness (wwf-surgebot → jaxperro.com/test):
+                   every cooldown-passed trigger paper-FAK'd at $100 against
+                   the live asks; v1's cash-gated $100/5% book (halted at its
+                   −50% line 2026-07-22) is replayed offline instead —
+                   surge_book_replay.py → surge_book.json. v1 artifacts
+                   frozen: surge_paper_ledger.jsonl + /data/surge_state.json.
+  oraclebot.py     Study B real-time PAPER harness (wwf-oraclebot →
+                   jaxperro.com/test): fair value tick-by-tick on the venue's
+                   own settlement feed, all E-tiers tracked, three settle
+                   layers (own-feed tick → CLOB flags → nightly chain truth)
+  grade_surge.py / grade_oracle.py   nightly chain-truth re-grades →
+                   surge_meas_ledger.jsonl / oracle_paper_ledger.jsonl;
+                   also pull the raw volume streams to local .pull copies
+  markout_flow.py  exploratory markout-exit curve (chain-truth verdict: NO
+                   scalp inside the dead surge signal — losers bleed from
+                   minute one; v0's res_tok version was round-3-biased)
+  meta_snap.py     nightly gzipped snapshot of ALL active markets (~12k/day,
+                   research/meta/, local-only) — τ knowable at trigger for
+                   every tape trigger; token→outcome maps close the
+                   label-gap artifact class
   params/          frozen study parameters (committed = frozen)
   nightly.sh       launchd runner (fires 09:15, then WAITS for fresh tape —
                    Stage 0 keeps the tape ~15-min fresh whenever the Mac is
                    awake; deadline 8h, then scores anyway and logs staleness)
+
+Data streams (the moat — all append-only, per DATA LAW):
+  Fly volumes (accrue 24/7, Mac-independent; daily Fly snapshots ×5):
+    wwf-recorder /data   full firehose → Parquet folds (25GB, ~3+ weeks of
+                         Mac-offline headroom before the 85% disk guard)
+    wwf-surgebot /data   surge_attempts.jsonl (every attempt + top-5 asks +
+                         top-3 bids + latency) · surge_markouts.jsonl (book
+                         re-reads +60/300/1800s per fill) · surge_settles
+                         .jsonl (durable settles) · surge2_state.json
+    wwf-oraclebot /data  oracle_attempts / oracle_markouts / oracle_settles
+                         .jsonl + oracle_state.json (same shapes)
+  Mac (nightly pulls + git): ledgers + params committed; raw .pull copies
+    and meta/ gzips local. forward.py backfills any tape-covered day the
+    ledger has never seen — a Mac gap > RESCORE_DAYS leaves no holes.

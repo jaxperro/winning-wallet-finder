@@ -78,22 +78,39 @@ push through.
   fills; identity-null stands). Study B oracle (#17): E0.04 killed,
   E≥0.07 accumulating slightly positive. Verdicts ONLY from
   research/forward_ledger.jsonl.
-- **wwf-surgebot (PAPER, ~$3/mo)**: real-time surge harness — $100 book,
-  $5 stakes, event cap 2, paper FAK vs live CLOB, /feed endpoint → the
-  /surge dashboard; chain-graded nightly (grade_surge.py). THE instrument
-  that caught the scorer bug (its 57.5% refused to match the ledger's
-  81%). Runs through Friday's read, then archive per #19.
+- **wwf-surgebot (PAPER, ~$3/mo)**: THE instrument that caught the scorer
+  bug (its 57.5% refused to match the ledger's 81%). v1 cash-gated book
+  halted 2026-07-22 at its pre-registered −50% line (state + ledger frozen
+  as audit artifacts); relaunched same day as **A2 measurement arm** —
+  every trigger paper-FAK'd at $100, attempts/markouts/settles append-only
+  on the volume, the $100/5% spec replayed OFFLINE nightly
+  (surge_book_replay.py → surge_book.json). Runs through Friday's read;
+  its capture/depth/latency streams feed successor hypotheses per #19.
+- **wwf-oraclebot (PAPER, ~$3/mo, live 2026-07-22)**: Study B real-time
+  harness — fair value tick-by-tick on the venue's own settlement feed,
+  all E-tiers tracked, $100 FAK walks, three settle layers ending in
+  nightly chain truth (grade_oracle.py → oracle_paper_ledger.jsonl). Early
+  live cells lean positive at E≥0.07 — consistent with the corrected tape
+  read. Same attempts/markouts/settles streams as A2.
+- **Data moat (2026-07-22, DATA LAW in research/README)**: all raw streams
+  append-only and Mac-independent (Fly volumes + daily snapshots; recorder
+  has ~3+ weeks offline headroom); forward.py backfills ledger-missing
+  days after any Mac gap; meta_snap.py snapshots ~12k active markets
+  nightly (τ-at-trigger + token→outcome for every future study). Markout
+  study (chain-true): NO scalp inside the dead surge signal — hidden-loss
+  cohort bleeds from minute one; taker case closed at every horizon.
 - **Verdicts pending**: edge/size-up (#14, ~end of July, pre-registered) ·
   Friday's combined read (#13 bench + #16 formal close + #17 oracle-tier
   decision + #19 sprint-plan disposition — every number now chain-true).
-- Dashboards: jaxperro.com/{trading,live,surge,value} · daily pipeline on
-  the Mac at 08:00 (launchd, lockfile) — floors, bench forward table, edge
-  row, tape sync, Discord digest · tape mirror every 15 min
+- Dashboards: jaxperro.com/{trading,live,test,value} — /test = both paper
+  studies on one page (old /surge + /oracle URLs redirect) · daily pipeline
+  on the Mac at 08:00 (launchd, lockfile) — floors, bench forward table,
+  edge row, tape sync, Discord digest · tape mirror every 15 min
   (com.jaxperro.tape-sync → sync_tape.py, sftp + base64-console fallback)
   · research nightly fires 09:15 then WAITS for fresh tape
   (com.jaxperro.research-nightly; self-commits ledger, informed set,
-  surge/oracle grades). All launchd agents removable with
-  `launchctl unload ~/Library/LaunchAgents/<label>.plist`.
+  surge/oracle grades, virtual book, meta snapshot). All launchd agents
+  removable with `launchctl unload ~/Library/LaunchAgents/<label>.plist`.
 
 ## Ops quick-reference
 - Follow-set change: edit live/copybot.paper.json → `./live/deploy_bot.sh`;
