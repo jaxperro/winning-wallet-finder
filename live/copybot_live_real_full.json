@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784824185,
+ "updated": 1784824900,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.65,
@@ -8,7 +8,7 @@
    "wins": 5,
    "open_cost": 11.91,
    "open_n": 5,
-   "miss_n": 62,
+   "miss_n": 63,
    "miss_pnl": 1169.13,
    "last_ts": 1784824182
   },
@@ -2435,6 +2435,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784824895,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "78639892723644623147617890032845605442018473848411325154446303980329931711515",
+   "cond": "0xe9ab976f5c3b9c65ea229b1a7890ba92da55c06a8c5dfe6c911320d5ecfa6a9f",
+   "title": "Will Amazon.com, Inc. (AMZN) hit (HIGH) $280 in July?",
+   "outcome": "No",
+   "price": 0.887,
+   "stake": 2.52,
+   "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784824151,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

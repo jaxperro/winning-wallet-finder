@@ -2093,6 +2093,21 @@
  ],
  "missed": [
   {
+   "ts": 1784824895,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "78639892723644623147617890032845605442018473848411325154446303980329931711515",
+   "cond": "0xe9ab976f5c3b9c65ea229b1a7890ba92da55c06a8c5dfe6c911320d5ecfa6a9f",
+   "title": "Will Amazon.com, Inc. (AMZN) hit (HIGH) $280 in July?",
+   "outcome": "No",
+   "price": 0.887,
+   "stake": 2.52,
+   "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784824151,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "53147856084273572324920349998954911060427762367735766007832600228479869956378",
@@ -3032,25 +3047,9 @@
    "settled": 1784472574,
    "name": "gkmgkldfmg",
    "exit_price": 1.068
-  },
-  {
-   "ts": 1784471230,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "46772667468744288997268807185140962881162063147482944578224960298326897165693",
-   "cond": "0x0b5ca9a26521274332651c17a582205c1e7f8ecb8488effc461f03b3250c6158",
-   "title": "Bitcoin Up or Down - July 19, 10AM ET",
-   "outcome": "Up",
-   "price": 0.4496,
-   "stake": 2.04,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -0.21,
-   "settled": 1784471560,
-   "name": "1kto1m",
-   "exit_price": 0.4171
   }
  ],
- "missed_pnl": 1170.97,
+ "missed_pnl": 1170.62,
  "last_fill": {
   "ts": 1784821433,
   "side": "SELL",
@@ -3066,7 +3065,7 @@
    "wins": 5,
    "open_cost": 11.91,
    "open_n": 5,
-   "miss_n": 62,
+   "miss_n": 63,
    "miss_pnl": 1169.13,
    "last_ts": 1784824182
   },
@@ -3161,5 +3160,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784824185
+ "updated": 1784824900
 }
