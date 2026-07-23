@@ -53,3 +53,4 @@ live/tape_sync.log
 research/meta/
 research/.surge*.pull.*
 research/.oracle*.pull.*
+research/replay_out/

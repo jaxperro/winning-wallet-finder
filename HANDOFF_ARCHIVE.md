@@ -365,7 +365,7 @@ reviewing the fix. Recommended: re-run a probe on an IN-PLAY market first.**
 
 Self-contained pickup for a fresh session (human or AI). Read
 [README.md](README.md) gotchas 1–16 (16 is the new-stack one), 
-[FINDINGS.md](FINDINGS.md), [ETHERSCAN_MIGRATION.md](ETHERSCAN_MIGRATION.md),
+[FINDINGS.md](FINDINGS.md), [archive/ETHERSCAN_MIGRATION.md](archive/ETHERSCAN_MIGRATION.md),
 [LIVE_ROLLOUT.md](LIVE_ROLLOUT.md). The repo is authoritative.
 
 ## THE CRITICAL PATH IS DONE (2026-07-10 05:08Z)
@@ -474,7 +474,7 @@ that; the 5-min backstop poll covers detection meanwhile).
 
 ## Queued work (unchanged priorities)
 
-1. ETHERSCAN_MIGRATION.md phases 0→5.
+1. archive/ETHERSCAN_MIGRATION.md phases 0→5.
 2. Empirical fill model from `book` snapshots; depth gate before sizing up.
 3. Funding-cluster tracer port to Etherscan logs.
 4. Live-app watchdog (poll mode has no /health).

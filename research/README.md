@@ -39,9 +39,26 @@ Layout:
               win-biased; see SCORER LAW) · title parsers · chain_overlay()
   sim.py      execution replayer calibrated on OUR live fills ledger
               (lag, FAK no-match, protected band, 3% taker fee)
-  study_flow.py    Study A — surge momentum (KILLED 2026-07-22, #16)
-  study_oracle.py  Study B — crypto oracle fair value (#17: E0.04 killed,
-                   E≥0.07 accumulating)
+  study_flow.py    Study A — surge momentum (KILLED 2026-07-22, #16; A2
+                   chain grade −$7.54/fill × 1,344 independently confirms)
+  study_oracle.py  Study B — crypto oracle fair value (#17: E0.04 killed;
+                   E≥0.07/0.1 ledger-positive but the harness chain grade
+                   2026-07-23 reads −$8.51/−$5.90 per fill at real latency
+                   — taker arm evidence-dead, tiers accrue to their formal
+                   bars, maker pivot is the successor hypothesis)
+  copy_edge_slices.py   T5 — parity-era copy edge by niche/lag/band/wallet
+                        (esports carries it; feeds #14)
+  copy_maker_entry.py   T3 — resting-bid copy entries beat taker FAKs
+                        (+$17.45 vs +$12.86/signal; basis of #20)
+  sell_mirror_study.py  sharp exits are bankroll ops, not signal
+                        (basis of #21 hold-through)
+  maker_sharps.py       T2 — 673 improbably-winning MAKERS in
+                        orders_matched (86% invisible to taker screens);
+                        follow-on: inventory-lean signal
+  sibling_sum_scan.py   T4 — print-substrate sum-arb scan (artifact-
+                        dominated; needs standing-book data; parked)
+  maker_quote_sim.py    T1 — crypto maker quoting at fair−m (stale-quote
+                        latency model; re-run pending)
   requote.py       crater→requote timing (feeds the bots' per-niche retry)
   forward.py       scores frozen studies on new tape days → forward_ledger
                    (payouts_for chain overlay mandatory; controls + sub5c

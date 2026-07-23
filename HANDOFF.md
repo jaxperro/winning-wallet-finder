@@ -42,14 +42,18 @@ min_order_usd $1 = venue reality). If something looks genuinely dangerous,
 DISARM (`flyctl secrets unset LIVE_CONFIRM -a wwf-copybot-live`) rather than
 push through.
 
-## Snapshot (2026-07-21)
+## Snapshot (2026-07-23)
 - **wwf-copybot-live** (REAL, ARMED): ~$62 equity ($66.42 contributed,
   realized −$12.17 lifetime — day-one incident + honest recognitions),
-  6-wallet Set E rev 4, 4% of working equity/bet, alarm-free after the
-  07-20 reconcile (CASH≠CHAIN −$1.75: empty-cond Odyssey bet the venue
-  auto-redeemed → hand-settled won +$0.68, $0.05 rounding folded; root
-  cause FIXED same day, #18: RTDS metadata-less rows now enrich at seed,
-  repair_market_meta un-sticks cond-less books each settle pass). **wwf-copybot** (paper $1k): same set, FAK-parity fills.
+  **7-wallet Set E rev 5** (JuiceFarm promoted 2026-07-23 off the #13
+  bench method run early: +17%/+34% both windows, insider z 2.5, 1%
+  refunds; auto p80 floor $753), 4% of working equity/bet.
+  **#20/#21 dark flags deployed 2026-07-23** (`follow.entry_mode` /
+  `exit_mode`, defaults taker/mirror = byte-identical behavior; flip at
+  Friday's read opens the pre-registered forward windows — maker entries
+  rest at the sharp's price w/ 60s registry TTL; hold-through logs every
+  ignored sell to copybot_ignored_exits[.live].jsonl as the mirror
+  counterfactual). **wwf-copybot** (paper $1k): same set, FAK-parity fills.
   Both on the audit-hardened build (locks, chain-gated sweep, boot-id
   single-writer guard, TLS'd user-ws — HANDOFF_ARCHIVE rev 16). 2026-07-20:
   FAK no-match OPENs get one re-quote retry on both bots, PER-NICHE waits
@@ -66,7 +70,7 @@ push through.
   nightly → ~15 min; the box no longer needs the Mac to stay healthy.
   `live/parquet/` = complete durable layer (Stage-1 MotherDuck feedstock).
 - **VALUE experiment: CLOSED 2026-07-19** — sub-2¢ hypothesis refuted
-  (1W/993L, 0.075x); post-mortem in value/PLAN.md; app destroyed.
+  (1W/993L, 0.075x); post-mortem in archive/value/PLAN.md; app destroyed.
 - **research/ (SILO — never touches the bots)**: tape-era edge factory.
   Sharp screen (`live/tape_sharps.py`, proxy chain-validated 742/742, 25
   copyable candidates); execution sim fitted on 29 labeled live attempts.
@@ -89,9 +93,13 @@ push through.
 - **wwf-oraclebot (PAPER, ~$3/mo, live 2026-07-22)**: Study B real-time
   harness — fair value tick-by-tick on the venue's own settlement feed,
   all E-tiers tracked, $100 FAK walks, three settle layers ending in
-  nightly chain truth (grade_oracle.py → oracle_paper_ledger.jsonl). Early
-  live cells lean positive at E≥0.07 — consistent with the corrected tape
-  read. Same attempts/markouts/settles streams as A2.
+  nightly chain truth (grade_oracle.py → oracle_paper_ledger.jsonl).
+  **First chain grade (2026-07-23): E≥0.07 −$8.51/fill (n=235), E≥0.10
+  −$5.90 (n=127), ~40% hit — real execution loses at every tier while the
+  sim ledger reads positive. Both instruments share the scorer now, so the
+  divergence is the sim's 6.7s-lag FILL model flattering the tiers (round
+  3's lesson recurring in the fill model). Taker arm is evidence-dead;
+  formal tier bars keep accruing; maker pivot (T1 sim) is the successor.**
 - **Data moat (2026-07-22, DATA LAW in research/README)**: all raw streams
   append-only and Mac-independent (Fly volumes + daily snapshots; recorder
   has ~3+ weeks offline headroom); forward.py backfills ledger-missing
@@ -100,8 +108,16 @@ push through.
   study (chain-true): NO scalp inside the dead surge signal — hidden-loss
   cohort bleeds from minute one; taker case closed at every horizon.
 - **Verdicts pending**: edge/size-up (#14, ~end of July, pre-registered) ·
-  Friday's combined read (#13 bench + #16 formal close + #17 oracle-tier
-  decision + #19 sprint-plan disposition — every number now chain-true).
+  Friday's combined read (#13 bench + #16 formal close [A2 chain grade
+  −$7.54/fill × 1,344 independently confirms the kill; virtual book's
+  +26% on n=46 is the variance footnote, not a signal] + #17 taker-arm
+  decision + #19 disposition + **#20/#21 flip decisions** — every number
+  chain-true). Five tandem tests 2026-07-23 (research/: copy_edge_slices,
+  copy_maker_entry, maker_sharps, sibling_sum_scan, sell_mirror_study):
+  T3 maker entries +$17.45 vs +$12.86 taker → #20; sells anti-signal →
+  #21; 673-wallet maker-sharp species (+$5.9M, 86% invisible to taker
+  screens) → inventory-lean follow-on; sibling-sum = print artifact,
+  parked; T1 crypto maker-quote sim needs its re-run.
 - Dashboards: jaxperro.com/{trading,live,test,value} — /test = both paper
   studies on one page (old /surge + /oracle URLs redirect) · daily pipeline
   on the Mac at 08:00 (launchd, lockfile) — floors, bench forward table,
@@ -126,4 +142,4 @@ push through.
 - The bots commit their own state — always `git pull --rebase --autostash`
   before pushing from a session.
 - Read next: README.md (architecture + gotchas 1-18) · FINDINGS.md (research
-  story) · value/PLAN.md (the refutation) · HANDOFF_ARCHIVE.md (history).
+  story) · archive/value/PLAN.md (the refutation) · HANDOFF_ARCHIVE.md (history).

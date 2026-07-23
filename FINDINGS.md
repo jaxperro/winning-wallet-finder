@@ -613,6 +613,48 @@ trigger, and the label-gap artifact class dies at the source. Tests are
 additive, never subtractive: raw streams are append-only, analysis reads
 only, and a study that needs different data records a NEW stream.
 
+## The fill model is the next scorer (2026-07-23)
+
+The first full chain grades of both measurement harnesses landed together
+and told one story from two directions.
+
+**Study A, confirmed dead twice.** The A2 arm's 1,344 chain-graded settles
+read **−$7.54/fill** — within $2 of the corrected ledger, at real
+execution, on the full trigger stream. Meanwhile the offline replay of the
+v1 $100/5% bankroll spec over the same attempts stream sat at **+26%** —
+its cash gate picked 70 of 2,692 attempts and got lucky (29W/17L). A book
+trajectory at n=46 carries no information a measurement at n=1,344
+doesn't overrule; that asymmetry is why bankroll specs lost verdict power
+in the A2 redesign, filed here as the standing example.
+
+**Study B, the divergence that matters.** The oracle harness's first chain
+grade: **E≥0.07 −$8.51/fill (n=235) · E≥0.10 −$5.90 (n=127) · ~40% hit**
+— while the forward ledger holds those tiers slightly positive. Both now
+score through payouts_for, so this is not round three again — it is the
+same LESSON one layer down: after the resolution model, the **fill model**
+is the next place a sim quietly manufactures edge. The ledger's
+6.7s-lag/3s-hold worst-print fills include entries no real order could
+have gotten (the book repriced) and price the rest against prints instead
+of the adversely-selected residue a live taker actually receives. The
+capturability instrument existed precisely to veto this; it has. Taker
+arm: evidence-dead (formal tier bars keep accruing, per pre-registration).
+
+**Five tandem tests, one day, all on already-flowing data** (scripts in
+research/, each rerunnable): the copy edge is REAL but concentrated
+(esports ~all of it; the live book's drag sits exactly there — the #14
+tension quantified); resting-bid copy entries beat taker FAKs **+$17.45
+vs +$12.86 per $100 signal** at 93% 60s trade-through (→ #20,
+pre-registered, dark-deployed); mirrored sharp exits are bankroll ops,
+not signal — no wallet's exits added value, 0xbadaf319's were 99% wrong
+(→ #21, same); the orders_matched stream holds a **673-wallet
+maker-sharp species** (+$5.9M pooled, ~33 expected by chance, 86%
+invisible to every taker screen) — not copyable by taking, the
+inventory-lean signal is the follow-on; and the sibling-sum scan showed
+print-substrate "arbs" are resolution-dust artifacts — standing-book data
+or nothing. The through-line of the week, now written as one sentence:
+**every taker edge died at the requote wall, and every instrument that
+measured the wall found the makers standing on top of it.**
+
 ## Repo layout
 
 - `insider.py` — the detector: z-score/p-value, timing/freshness/sizing signals,
