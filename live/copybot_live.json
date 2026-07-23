@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 116.53,
+ "stake": 116.52,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1782.63,
- "deployed": 1130.68,
+ "cash": 1759.06,
+ "deployed": 1153.92,
  "reserve": 0.0,
- "realized": 1913.28,
+ "realized": 1912.95,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 19,
- "fees_paid": 343.84,
+ "fees_paid": 344.17,
  "fee_rate": 0.03,
  "lag": {
-  "n": 230,
-  "n24": 5,
-  "avg_s": 5.9,
-  "avg_slip_pct": -0.0176,
+  "n": 231,
+  "n24": 6,
+  "avg_s": 5.0,
+  "avg_slip_pct": -0.0081,
   "window_h": 24
  },
  "wallets": [
@@ -1391,12 +1391,12 @@
    "outcome": "No",
    "title": "US-Iran 60 day negotiation period extended?",
    "their_price": 0.58,
-   "my_price": 0.56,
+   "my_price": 0.5542,
    "slippage_pct": -0.0345,
    "lag_s": 5.8,
-   "shares": 182.17,
-   "cost": 102.01,
-   "fee": 1.35,
+   "shares": 226.03,
+   "cost": 125.25,
+   "fee": 1.67,
    "opened": 1784136655,
    "status": "open",
    "exit_price": null,
@@ -3069,11 +3069,11 @@
  ],
  "missed_pnl": 96775.96,
  "last_fill": {
-  "ts": 1784820335,
+  "ts": 1784820994,
   "side": "BUY",
-  "price": 0.75,
-  "shares": 42.36,
-  "title": "Will the highest temperature in London be 27\u00b0C on July 23?",
+  "price": 0.53,
+  "shares": 43.86,
+  "title": "US-Iran 60 day negotiation period extended?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3141,7 +3141,7 @@
    "realized": 0.07,
    "n": 7,
    "wins": 1,
-   "open_cost": 706.41,
+   "open_cost": 729.65,
    "open_n": 7,
    "miss_n": 22,
    "miss_pnl": -466.97,
@@ -3158,5 +3158,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784820340
+ "updated": 1784821000
 }

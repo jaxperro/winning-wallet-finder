@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784820340,
+ "updated": 1784821000,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.9,
@@ -66,7 +66,7 @@
    "realized": 0.07,
    "n": 7,
    "wins": 1,
-   "open_cost": 706.41,
+   "open_cost": 729.65,
    "open_n": 7,
    "miss_n": 22,
    "miss_pnl": -466.97,
@@ -1429,12 +1429,12 @@
    "outcome": "No",
    "title": "US-Iran 60 day negotiation period extended?",
    "their_price": 0.58,
-   "my_price": 0.56,
+   "my_price": 0.554156081176523,
    "slippage_pct": -0.0345,
    "lag_s": 5.8,
-   "shares": 182.17,
-   "cost": 102.01,
-   "fee": 1.3466,
+   "shares": 226.02590048034872,
+   "cost": 125.25362725458484,
+   "fee": 1.6743000000000001,
    "opened": 1784136655,
    "status": "open",
    "exit_price": null,
