@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1864.99,
- "deployed": 1049.04,
+ "cash": 1810.16,
+ "deployed": 1103.72,
  "reserve": 0.0,
- "realized": 1914.0,
+ "realized": 1913.85,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 18,
- "fees_paid": 343.44,
+ "fees_paid": 343.58,
  "fee_rate": 0.03,
  "lag": {
-  "n": 228,
-  "n24": 3,
-  "avg_s": 9.0,
-  "avg_slip_pct": -0.0049,
+  "n": 229,
+  "n24": 4,
+  "avg_s": 7.2,
+  "avg_slip_pct": -0.0064,
   "window_h": 24
  },
  "wallets": [
@@ -53,12 +53,12 @@
    "outcome": "No",
    "title": "Will the price of Ethereum be between $1,900 and $2,000 on July 23?",
    "their_price": 0.95,
-   "my_price": 0.93,
+   "my_price": 0.9205,
    "slippage_pct": -0.0211,
    "lag_s": 0.5,
-   "shares": 66.53,
-   "cost": 61.87,
-   "fee": 0.13,
+   "shares": 126.63,
+   "cost": 116.56,
+   "fee": 0.28,
    "opened": 1784819629,
    "status": "open",
    "exit_price": null,
@@ -3069,10 +3069,10 @@
  ],
  "missed_pnl": 96793.56,
  "last_fill": {
-  "ts": 1784819629,
+  "ts": 1784819791,
   "side": "BUY",
-  "price": 0.93,
-  "shares": 66.53,
+  "price": 0.91,
+  "shares": 60.1,
   "title": "Will the price of Ethereum be between $1,900 and $2,000 on J",
   "outcome": "No"
  },
@@ -3081,7 +3081,7 @@
    "realized": 542.9,
    "n": 47,
    "wins": 12,
-   "open_cost": 798.41,
+   "open_cost": 853.09,
    "open_n": 11,
    "miss_n": 54,
    "miss_pnl": 97071.82,
@@ -3158,5 +3158,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784819648
+ "updated": 1784819792
 }
