@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 62.94,
- "cash": 41.15,
- "deployed": 21.66,
+ "cash": 38.63,
+ "deployed": 24.16,
  "reserve": 0.0,
- "realized": -13.05,
+ "realized": -13.07,
  "adjustments": 9.44,
  "ledger_drift": 0.0,
- "open_count": 12,
- "fees_paid": 3.15,
+ "open_count": 13,
+ "fees_paid": 3.17,
  "fee_rate": 0.03,
  "lag": {
-  "n": 108,
-  "n24": 2,
-  "avg_s": 14.4,
-  "avg_slip_pct": 0.0283,
+  "n": 109,
+  "n24": 3,
+  "avg_s": 11.5,
+  "avg_slip_pct": 0.0064,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 341.23
  },
  "bets": [
+  {
+   "token": "82768531874539579332422216880159980913196623213037059365722754442149714478353",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the highest temperature in London be 27\u00b0C on July 23?",
+   "their_price": 0.8,
+   "my_price": 0.77,
+   "slippage_pct": -0.0375,
+   "lag_s": 5.6,
+   "shares": 3.25,
+   "cost": 2.5,
+   "fee": 0.02,
+   "opened": 1784820335,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2065,24 +2084,6 @@
    "settled": null,
    "sold_shares": 0.35,
    "sold_proceeds": 0.32
-  },
-  {
-   "token": "73893970296257160435491465547806830475405138836098479326244164349063701653888",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Poor Rangers",
-   "title": "Dota 2: Poor Rangers vs Rune Eaters - Game 2 Winner",
-   "their_price": 0.4702,
-   "my_price": 0.5,
-   "slippage_pct": 0.0633,
-   "shares": 2.04,
-   "cost": 1.02,
-   "fee": 0.02,
-   "opened": 1783767100,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -1.04,
-   "settled": 1783776386
   }
  ],
  "missed": [
@@ -3047,11 +3048,11 @@
  ],
  "missed_pnl": 1171.63,
  "last_fill": {
-  "ts": 1784820179,
-  "side": "SELL",
-  "price": 0.85,
-  "shares": 0.1,
-  "title": "Will the price of Ethereum be between $1,900 and $2,000 on J",
+  "ts": 1784820340,
+  "side": "BUY",
+  "price": 0.77,
+  "shares": 3.25,
+  "title": "Will the highest temperature in London be 27\u00b0C on July 23?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3059,11 +3060,11 @@
    "realized": 1.45,
    "n": 19,
    "wins": 4,
-   "open_cost": 14.42,
-   "open_n": 6,
+   "open_cost": 16.92,
+   "open_n": 7,
    "miss_n": 62,
    "miss_pnl": 1169.13,
-   "last_ts": 1784819629
+   "last_ts": 1784820335
   },
   "AIcAIc": {
    "realized": -14.85,
@@ -3156,5 +3157,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784820213
+ "updated": 1784820340
 }
