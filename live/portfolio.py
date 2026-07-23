@@ -132,9 +132,30 @@ except Exception:
     _PINNED = {}
 
 
+# ---- execution mode: mirrors the PAPER BOT's follow flags (2026-07-23) ------
+# The backtest replays the same execution the paper test runs (#20/#21):
+#   entry_mode "maker": fill at the sharp's own price, no fee, no slip (the
+#     deployed bot rests at their price, 60s TTL; T3/T11 measured 90% touch
+#     with the never-filled tail being winners — so 100%-fill-at-their-price
+#     is the DECLARED optimistic bound; wallet-selection bench, not an EV
+#     certification — verdicts stay with the bots' own #20/#21 windows)
+#   exit_mode "hold": mirrored sells ignored; every position rides to chain
+#     truth (sold-but-unresolved positions carry as open, marked at the
+#     signal's exit print). Flip copybot.paper.json back -> backtest follows.
+try:
+    _FOLLOW = json.load(open(os.path.join(HERE, "copybot.paper.json")))["follow"]
+except Exception:
+    _FOLLOW = {}
+ENTRY_MODE = os.environ.get("BT_ENTRY_MODE", _FOLLOW.get("entry_mode", "taker"))
+EXIT_MODE = os.environ.get("BT_EXIT_MODE", _FOLLOW.get("exit_mode", "mirror"))
+
+
 def entry_model(p, stake):
-    """(effective entry price, entry fee, total cash cost) of a $stake copy:
-    price worsened by the lag-slippage haircut, taker fee on top of the stake."""
+    """(effective entry price, entry fee, total cash cost) of a $stake copy.
+    taker: price worsened by the lag-slippage haircut, taker fee on top.
+    maker: the sharp's own price, feeless (see ENTRY_MODE note above)."""
+    if ENTRY_MODE == "maker":
+        return p, 0.0, stake
     p_eff = min(0.999, p * (1 + SLIP))
     fee = stake * FEE_RATE * (1 - p_eff)
     return p_eff, fee, stake + fee
@@ -504,7 +525,7 @@ def main():
             cash -= cost; fees_paid += fee; perW[b["wallet"]]["bets"] += 1
             shares = stake / p_eff                        # lag-adjusted entry price
             if b["kind"] == "res":
-                if b.get("exit_t"):
+                if b.get("exit_t") and EXIT_MODE != "hold":
                     # the signal SOLD pre-resolution -> mirror the exit, like the
                     # live bot: their exit price with the slippage haircut against
                     # us, minus the taker fee (sells pay it; redeems don't)
@@ -513,6 +534,15 @@ def main():
                     fees_paid += fee_out
                     b["sold"] = True
                     held.append((b["exit_t"], cost, shares * xp - fee_out, b))
+                elif b.get("wp") is None and b.get("won") is None:
+                    # hold mode, signal sold, market NOT resolved: no truth to
+                    # grade against yet -> carry as an open position marked at
+                    # the signal's exit print (best known price; conservative:
+                    # capital stays locked until real resolution)
+                    b["kind"] = "open"
+                    b["cur"] = b.get("exit_p") or b["p"]
+                    held.append((None, cost, 0.0, b))
+                    b["val"] = shares * b["cur"]
                 else:
                     # held to resolution: chain-truth payout (1/0/0.5) when
                     # known, else the cache mark; redeem is fee-free
@@ -551,15 +581,38 @@ def main():
         stake = m.get("stake") or STAKE_MIN
         p_eff, fee, cost = entry_model(m["p"], stake)
         shares = stake / p_eff
-        if m.get("exit_t"):                     # would have mirrored their exit
+        if m.get("exit_t") and EXIT_MODE != "hold":   # would have mirrored
             xp = max(0.001, m["exit_p"] * (1 - SLIP))
             return shares * xp - shares * FEE_RATE * xp * (1 - xp) - cost
-        if "won" in m:
+        if m.get("wp") is not None or m.get("won") is not None:
             wp = m.get("wp")
             if wp is None:
                 wp = 1.0 if m["won"] else 0.0
             return shares * wp - cost
-        return stake * (m.get("cur", p_eff) / p_eff) - cost
+        # no truth yet (open, or hold-mode sold-unresolved): mark to price
+        mark = m.get("cur") or m.get("exit_p") or p_eff
+        return shares * mark - cost
+
+    def _truth_won(m):
+        """Chain/cache-truth won for a missed rec, None when undecided."""
+        if m.get("wp") is not None:
+            return m["wp"] > 0.5
+        return m.get("won")
+
+    def _missed_won(m):
+        if m.get("exit_t") and EXIT_MODE != "hold":
+            return None                       # mirrored exit: truth is the price
+        return _truth_won(m)
+
+    def _missed_status(m):
+        if m.get("exit_t") and EXIT_MODE != "hold":
+            return "sold"
+        w = _truth_won(m)
+        if w is None:
+            return None
+        if m.get("wp") == 0.5:
+            return "refund"
+        return "won" if w else "lost"
 
     missed.sort(key=lambda m: m.get("res_t") or 0, reverse=True)
     for m in missed[:60]:
@@ -623,17 +676,13 @@ def main():
                       "date": r.get("exit_t") or r.get("res_t")}
                      for r in resolved[:250]],
         "missed": [{"title": m.get("title", ""), "name": m["name"],
-                    "won": (None if "won" not in m or m.get("exit_t")
-                            else (m["won"] if m.get("wp") is None else m["wp"] > 0.5)),
-                    "status": ("sold" if m.get("exit_t")
-                               else None if "won" not in m
-                               else "refund" if m.get("wp") == 0.5
-                               else "won" if (m["won"] if m.get("wp") is None else m["wp"] > 0.5)
-                               else "lost"),
+                    "won": _missed_won(m),
+                    "status": _missed_status(m),
                     "stake": m.get("stake"), "capped": bool(m.get("capped")),
                     "pnl": round(m["pnl"], 2), "date": m.get("exit_t") or m.get("res_t")}
                    for m in missed[:60]],
         "missed_pnl": round(sum(hypo_pnl(m) for m in missed), 2),
+        "entry_mode": ENTRY_MODE, "exit_mode": EXIT_MODE,
     }
     json.dump(out, open(os.path.join(HERE, OUT) if not os.path.isabs(OUT) else OUT, "w"),
               separators=(",", ":"))
