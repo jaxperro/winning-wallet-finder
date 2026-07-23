@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784836462,
+ "updated": 1784837831,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.65,
@@ -2529,7 +2529,8 @@
    "status": "lost",
    "pnl": -2.56,
    "settled": 1784836462,
-   "name": "Kruto2027"
+   "name": "Kruto2027",
+   "exit_checked": true
   },
   {
    "ts": 1784824895,
