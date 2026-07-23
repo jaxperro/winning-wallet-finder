@@ -57,8 +57,11 @@ Layout:
                         follow-on: inventory-lean signal
   sibling_sum_scan.py   T4 — print-substrate sum-arb scan (artifact-
                         dominated; needs standing-book data; parked)
-  maker_quote_sim.py    T1 — crypto maker quoting at fair−m (stale-quote
-                        latency model; re-run pending)
+  maker_quote_sim.py    T1 — crypto maker quoting at fair−m: STAGE-1
+                        KILL 2026-07-23 (best cell +$0.37/fill at
+                        m=4c/R=1s under queue-front optimism; every
+                        R=4s cell −$7-9/fill — staleness IS the
+                        adverse selection; ~31-50k graded fills/cell)
   requote.py       crater→requote timing (feeds the bots' per-niche retry)
   forward.py       scores frozen studies on new tape days → forward_ledger
                    (payouts_for chain overlay mandatory; controls + sub5c

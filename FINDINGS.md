@@ -655,6 +655,19 @@ or nothing. The through-line of the week, now written as one sentence:
 **every taker edge died at the requote wall, and every instrument that
 measured the wall found the makers standing on top of it.**
 
+Coda, same night: we simmed standing on the wall ourselves
+(maker_quote_sim — quotes at oracle-fair−m, 25k tokens, ~31–50k
+chain-graded fills per cell, every trade-through assumed to fill us
+at queue-front). Best cell **+$0.37/fill**; every 4s-requote cell
+−$7–9/fill. A stale quote buys below *stale* fair, and the flow that
+reaches it is the informed flow — staleness IS the adverse selection.
+The wall pays sub-second colocated speed and queue position, not a
+fair-value formula at hobbyist latency. Maker pivot: killed at Stage
+1, $0 spent, one evening. What survives the week: the concentrated
+copy edge and its two pre-registered execution upgrades (#20/#21),
+and the human-maker inventory-lean line — following the wall's
+incumbents, not competing with them.
+
 ## Repo layout
 
 - `insider.py` — the detector: z-score/p-value, timing/freshness/sizing signals,
