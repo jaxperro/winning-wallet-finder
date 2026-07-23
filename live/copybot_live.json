@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 117.08,
+ "stake": 116.99,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1637.05,
- "deployed": 1290.06,
+ "cash": 1517.68,
+ "deployed": 1407.15,
  "reserve": 0.0,
- "realized": 1927.08,
+ "realized": 1924.8,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 20,
- "fees_paid": 345.62,
+ "open_count": 21,
+ "fees_paid": 347.9,
  "fee_rate": 0.03,
  "lag": {
-  "n": 234,
-  "n24": 9,
-  "avg_s": 3.8,
-  "avg_slip_pct": -0.0074,
+  "n": 235,
+  "n24": 10,
+  "avg_s": 3.6,
+  "avg_slip_pct": -0.0066,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,25 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "87461865681689699081648262736937951256169066109275377425968376597869321557502",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will Trump meet with Netanyahu by July 31, 2026?",
+   "their_price": 0.35,
+   "my_price": 0.35,
+   "slippage_pct": 0.0,
+   "lag_s": 1.4,
+   "shares": 334.52,
+   "cost": 117.08,
+   "fee": 2.28,
+   "opened": 1784835161,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "107504891632815999637002772178305299765396815437535131855162503864828528783551",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2090,27 +2109,6 @@
    "settled": 1784043320,
    "sold_shares": 60.15,
    "sold_proceeds": 3.58
-  },
-  {
-   "token": "38404839370859900572663651821110620858010736415606391321540518400366572036926",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Xtreme Gaming",
-   "title": "Dota 2: Team Liquid vs Xtreme Gaming (BO3) - Esports World Cup Survival",
-   "their_price": 0.3883,
-   "my_price": 0.38,
-   "slippage_pct": -0.0213,
-   "lag_s": 0.7,
-   "shares": 258.5,
-   "cost": 98.23,
-   "fee": 1.83,
-   "opened": 1784041783,
-   "status": "closed",
-   "exit_price": 0.4326,
-   "pnl": 11.77,
-   "settled": 1784042322,
-   "sold_shares": 258.5,
-   "sold_proceeds": 111.83
   }
  ],
  "missed": [
@@ -3066,12 +3064,12 @@
  ],
  "missed_pnl": 96707.98,
  "last_fill": {
-  "ts": 1784833129,
+  "ts": 1784835162,
   "side": "BUY",
-  "price": 0.76,
-  "shares": 152.01,
-  "title": "LoL: Solary vs ZYB Esport (BO1) - LFL Regular Season",
-  "outcome": "Solary"
+  "price": 0.35,
+  "shares": 334.52,
+  "title": "Will Trump meet with Netanyahu by July 31, 2026?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3138,11 +3136,11 @@
    "realized": 0.07,
    "n": 7,
    "wins": 1,
-   "open_cost": 846.78,
-   "open_n": 8,
+   "open_cost": 963.86,
+   "open_n": 9,
    "miss_n": 23,
    "miss_pnl": -466.97,
-   "last_ts": 1784825313
+   "last_ts": 1784835161
   },
   "JuiceFarm": {
    "realized": 0.0,
@@ -3165,5 +3163,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784833130
+ "updated": 1784835168
 }

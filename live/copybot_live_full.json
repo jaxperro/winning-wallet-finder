@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784833130,
+ "updated": 1784835168,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 557.51,
@@ -66,11 +66,11 @@
    "realized": 0.07,
    "n": 7,
    "wins": 1,
-   "open_cost": 846.78,
-   "open_n": 8,
+   "open_cost": 963.86,
+   "open_n": 9,
    "miss_n": 23,
    "miss_pnl": -466.97,
-   "last_ts": 1784825313
+   "last_ts": 1784835161
   },
   "JuiceFarm": {
    "realized": 0.0,
@@ -94,6 +94,25 @@
   }
  },
  "bets": [
+  {
+   "token": "87461865681689699081648262736937951256169066109275377425968376597869321557502",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will Trump meet with Netanyahu by July 31, 2026?",
+   "their_price": 0.35,
+   "my_price": 0.35,
+   "slippage_pct": 0.0,
+   "lag_s": 1.4,
+   "shares": 334.52,
+   "cost": 117.08,
+   "fee": 2.2831,
+   "opened": 1784835161,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "107504891632815999637002772178305299765396815437535131855162503864828528783551",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
