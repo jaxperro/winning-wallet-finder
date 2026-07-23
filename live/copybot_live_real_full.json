@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784835873,
+ "updated": 1784835937,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.65,
@@ -131,7 +131,8 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "end_ts": 1785456000
   },
   {
    "token": "107504891632815999637002772178305299765396815437535131855162503864828528783551",
@@ -150,7 +151,8 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "end_ts": 1784851200
   },
   {
    "token": "9143471318122042059988785265162570023911768060235394311552003051606225073096",
@@ -169,7 +171,8 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "end_ts": 1788134400
   },
   {
    "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
@@ -356,7 +359,8 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "end_ts": null
   },
   {
    "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
@@ -437,7 +441,8 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "end_ts": 1798761600
   },
   {
    "token": "35358889366059131445607416132477521541386270328042995107702816540034073998102",
@@ -536,7 +541,8 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "end_ts": 1788134400
   },
   {
    "token": "107519224001054263439274706964696866987866557807915774909819079291264377299291",
