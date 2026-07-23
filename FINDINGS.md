@@ -668,6 +668,21 @@ copy edge and its two pre-registered execution upgrades (#20/#21),
 and the human-maker inventory-lean line — following the wall's
 incumbents, not competing with them.
 
+**Batch two, same discipline (2026-07-23 night):** five more tests, two
+survivors, one theme. Maker inventory-leans are informed when SMALL
+(follow +$2.51/lean, walk-forward-consistent over three days; the $2k+
+whale-bags invert to fade +$13.38 — absorbed retail flow vs getting run
+over, in one size split), and same-outcome sibling markets reprice
+LATE after leader bursts (+$9.73/$100 chain-graded across 2,028
+episodes, stale-print-entry optimism stated). Settlement-discount
+harvesting is real but industrialized and sub-scale for us; the guard
+audit found the gates earning their keep (crater-rejects were GOOD
+misses — the winner's curse protecting us by accident); market-age
+slicing needs more sample. The unifying picture, joining the week's
+kills to its survivors: **speed is the moat where repricing is fast, and
+every edge we can actually reach lives where repricing is slow — stale
+siblings, absorbed inventory, and the sharps' own entry prices.**
+
 ## Repo layout
 
 - `insider.py` — the detector: z-score/p-value, timing/freshness/sizing signals,

@@ -57,6 +57,25 @@ Layout:
                         follow-on: inventory-lean signal
   sibling_sum_scan.py   T4 — print-substrate sum-arb scan (artifact-
                         dominated; needs standing-book data; parked)
+  maker_lean.py         T6 — WALK-FORWARD POSITIVE: follow small maker
+                        inventory leans (+$2.51/lean, 59% hit, positive
+                        all 3 days); fade $2k+ whale bags (+$13.38,
+                        n=422). Pre-registration candidate pending
+                        event-concentration + execution checks.
+  event_leadlag.py      T9 — POSITIVE: same-outcome siblings reprice
+                        slowly after leader bursts (+$9.73/$100 chain,
+                        n=2,028; stale-print entry optimism stated —
+                        Stage-2 is execution realism)
+  settle_discount.py    T7 — settlement-discount niche: industrialized
+                        by incumbents (+2-3%/hold for the good ones);
+                        residual unproven (63% of vol outside
+                        tape-resolution); parked at our scale
+  miss_audit.py         T8 — guard counterfactual: guards earn their
+                        keep; crater-rejects were GOOD misses (retry EV
+                        follow-up queued)
+  copy_age_slices.py    T10 — market-age gradient inconclusive at
+                        n<=15/cell (6-24h positive both books;
+                        age~market-type confound); reruns as fills accrue
   maker_quote_sim.py    T1 — crypto maker quoting at fair−m: STAGE-1
                         KILL 2026-07-23 (best cell +$0.37/fill at
                         m=4c/R=1s under queue-front optimism; every
