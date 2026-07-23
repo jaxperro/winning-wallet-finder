@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 116.99,
+ "stake": 116.94,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1517.68,
- "deployed": 1407.15,
+ "cash": 1399.47,
+ "deployed": 1524.13,
  "reserve": 0.0,
- "realized": 1924.8,
+ "realized": 1923.57,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 21,
- "fees_paid": 347.9,
+ "ledger_drift": -0.02,
+ "open_count": 22,
+ "fees_paid": 349.13,
  "fee_rate": 0.03,
  "lag": {
-  "n": 235,
-  "n24": 10,
-  "avg_s": 3.6,
-  "avg_slip_pct": -0.0066,
+  "n": 236,
+  "n24": 11,
+  "avg_s": 3.3,
+  "avg_slip_pct": -0.006,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "JuiceFarm": 756.14
  },
  "bets": [
+  {
+   "token": "68080778697884921540335032370654180051222428162809511382222697646266365598353",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Israel x Iran ceasefire continues through July 25?",
+   "their_price": 0.65,
+   "my_price": 0.65,
+   "slippage_pct": 0.0,
+   "lag_s": 0.4,
+   "shares": 179.98,
+   "cost": 116.99,
+   "fee": 1.23,
+   "opened": 1784842585,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784937600
+  },
   {
    "token": "87461865681689699081648262736937951256169066109275377425968376597869321557502",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2102,27 +2122,6 @@
    "exit_price": 0.0,
    "pnl": -20.8,
    "settled": 1784053019
-  },
-  {
-   "token": "74666452124906997243440599268041315324945968051973641396724746828966017436262",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Bitcoin be between $64,000 and $66,000 on July 14?",
-   "their_price": 0.762,
-   "my_price": 0.769,
-   "slippage_pct": 0.0092,
-   "lag_s": 3.7,
-   "shares": 60.15,
-   "cost": 46.26,
-   "fee": 0.32,
-   "opened": 1784037859,
-   "status": "closed",
-   "exit_price": 0.0595,
-   "pnl": -43.0,
-   "settled": 1784043320,
-   "sold_shares": 60.15,
-   "sold_proceeds": 3.58
   }
  ],
  "missed": [
@@ -3079,11 +3078,11 @@
  ],
  "missed_pnl": 96604.81,
  "last_fill": {
-  "ts": 1784835162,
+  "ts": 1784842585,
   "side": "BUY",
-  "price": 0.35,
-  "shares": 334.52,
-  "title": "Will Trump meet with Netanyahu by July 31, 2026?",
+  "price": 0.65,
+  "shares": 179.98,
+  "title": "Israel x Iran ceasefire continues through July 25?",
   "outcome": "Yes"
  },
  "wallet_pnl": {
@@ -3151,11 +3150,11 @@
    "realized": 0.07,
    "n": 7,
    "wins": 1,
-   "open_cost": 963.86,
-   "open_n": 9,
+   "open_cost": 1080.85,
+   "open_n": 10,
    "miss_n": 23,
    "miss_pnl": -466.97,
-   "last_ts": 1784835161
+   "last_ts": 1784842585
   },
   "JuiceFarm": {
    "realized": 0.0,
@@ -3178,5 +3177,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784837846
+ "updated": 1784842591
 }
