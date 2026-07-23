@@ -2116,6 +2116,22 @@
  ],
  "missed": [
   {
+   "ts": 1784755101,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "61732519224035345472843765202641458946038730839684443029887468562689879517849",
+   "cond": "0x21e1af0405c04efa4d30febd572d99f1d331026a9f52c2df0e9346e695025a52",
+   "title": "Will Alphabet Inc. (GOOGL) hit (LOW) $330 in July?",
+   "outcome": "Yes",
+   "price": 0.06,
+   "stake": 67.09,
+   "reason": "thin book ($2 within 5c < $50)",
+   "status": "sold",
+   "pnl": 1037.62,
+   "settled": 1784814260,
+   "name": "0xbadaf319",
+   "exit_price": 0.99
+  },
+  {
    "ts": 1784696451,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "68642938852444405618524357112499284175503313921723452625127267630411120480355",
@@ -2243,21 +2259,6 @@
    "settled": 1784756458,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1784755101,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "61732519224035345472843765202641458946038730839684443029887468562689879517849",
-   "cond": "0x21e1af0405c04efa4d30febd572d99f1d331026a9f52c2df0e9346e695025a52",
-   "title": "Will Alphabet Inc. (GOOGL) hit (LOW) $330 in July?",
-   "outcome": "Yes",
-   "price": 0.06,
-   "stake": 67.09,
-   "reason": "thin book ($2 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784754810,
@@ -3067,7 +3068,7 @@
    "exit_price": 0.0304
   }
  ],
- "missed_pnl": 95734.38,
+ "missed_pnl": 96772.0,
  "last_fill": {
   "ts": 1784791174,
   "side": "SELL",
@@ -3084,7 +3085,7 @@
    "open_cost": 736.54,
    "open_n": 10,
    "miss_n": 53,
-   "miss_pnl": 96012.64,
+   "miss_pnl": 97050.26,
    "last_ts": 1784790370
   },
   "gkmgkldfmg": {
@@ -3158,5 +3159,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784811315
+ "updated": 1784814261
 }
