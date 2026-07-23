@@ -24,7 +24,20 @@ FROZEN v0 params (declared before the run, not tuned after):
   unwind  |net| <= 0.5 * peak|net|, same sign, first per (w,a,day)
   price   lean-side last print in [0.05, 0.95] at unwind
 Kill bar for the idea: STAY EV/unwind >= 0 at n >= 100 (exit rule adds
-nothing); informative if STAY <= -$3/unwind at n >= 100."""
+nothing); informative if STAY <= -$3/unwind at n >= 100.
+
+VERDICT (2026-07-23 run; 318 unwinds, 265 chain-graded over 3 walk days):
+STAY +$5.95/unwind (58% lean-side hit) · FADE -$5.22 -> the pre-declared
+"exit rule adds nothing" bar is met at 2.6x the required n: holding
+through a maker-sharp's unwind WINS, fading it LOSES. Mirrors #21's
+taker-sharp finding one species over — the lean's information outlives
+the sharp's own profit-taking. Study C keeps NO exit rule.
+Caveats, stated plainly: day 1 of 3 was negative (-$7.87, n=40; days 2-3
++$5.77/+$10.38); and the STAY total (+$1,578) is CONCENTRATED — top-5
+assets sum to +$3,113 in |contribution| vs a net-negative tail — so the
+positive EV is real for the exit-rule question (an exit rule would have
+cost money) but must NOT be read as a new harvestable edge. $500-2k
+peaks were strongest (+$14.83, 62% hit); $2k+ tiny-n (13) and flat."""
 import json
 import os
 import sys
@@ -96,7 +109,9 @@ def main():
     db = tape.connect()
     if "--grade-only" in sys.argv:
         # walk already done; grade the dumped triggers (lets a re-grade
-        # queue behind another process's cache.duckdb write lock)
+        # queue behind another process's cache.duckdb write lock).
+        # payouts_for needs res_tok on THIS connection (T11's lesson).
+        tape.build_resolved(db)
         triggers = json.load(open(dump))
         print(f"grade-only: {len(triggers)} dumped triggers", flush=True)
     else:
