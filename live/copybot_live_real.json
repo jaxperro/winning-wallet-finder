@@ -1,18 +1,18 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.52,
+ "stake": 2.51,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 62.94,
- "cash": 41.19,
- "deployed": 21.75,
+ "cash": 43.57,
+ "deployed": 19.24,
  "reserve": 0.0,
- "realized": -12.92,
+ "realized": -13.04,
  "adjustments": 9.44,
  "ledger_drift": 0.0,
- "open_count": 12,
- "fees_paid": 3.14,
+ "open_count": 11,
+ "fees_paid": 3.15,
  "fee_rate": 0.03,
  "lag": {
   "n": 107,
@@ -60,10 +60,12 @@
    "cost": 2.51,
    "fee": 0.0,
    "opened": 1784790370,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "closed",
+   "exit_price": 0.9258,
+   "pnl": -0.12,
+   "settled": 1784791175,
+   "sold_shares": 2.58,
+   "sold_proceeds": 2.39
   },
   {
    "token": "55071405929941363854274866721931311048000830793954776923614437932856724606852",
@@ -3042,23 +3044,23 @@
  ],
  "missed_pnl": 1170.96,
  "last_fill": {
-  "ts": 1784790397,
-  "side": "BUY",
-  "price": 0.97,
-  "shares": 2.59,
+  "ts": 1784791175,
+  "side": "SELL",
+  "price": 0.929,
+  "shares": 0.29,
   "title": "Will the highest temperature in Hong Kong be 34\u00b0C on July 23",
   "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 1.57,
-   "n": 18,
+   "realized": 1.45,
+   "n": 19,
    "wins": 4,
-   "open_cost": 14.42,
-   "open_n": 6,
+   "open_cost": 11.91,
+   "open_n": 5,
    "miss_n": 60,
    "miss_pnl": 1169.43,
-   "last_ts": 1784790370
+   "last_ts": 1784791175
   },
   "AIcAIc": {
    "realized": -14.85,
@@ -3151,5 +3153,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784790439
+ "updated": 1784791175
 }
