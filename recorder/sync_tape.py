@@ -48,13 +48,17 @@ def sftp_get(remote, local, timeout=240):
     (2026-07-22: sftp timeouts left magic-byte-less partial parquets while
     console commands stayed fast). Integrity is the caller's manifest
     row-count verify either way; partial files are removed here."""
+    timed_out = False
     try:
         subprocess.run([FLYCTL, "ssh", "sftp", "get", remote, local, "-a", APP],
                        capture_output=True, timeout=timeout,
                        stdin=subprocess.DEVNULL)
     except subprocess.TimeoutExpired:
-        pass
-    if os.path.exists(local) and os.path.getsize(local) > 0:
+        timed_out = True     # a timed-out get leaves a size>0 PARTIAL — must
+                             # not be blessed, or the base64 fallback never
+                             # runs and the file loops unreadable forever
+                             # (2026-07-23: 8h of exactly that)
+    if not timed_out and os.path.exists(local) and os.path.getsize(local) > 0:
         return True
     try:
         os.remove(local)
