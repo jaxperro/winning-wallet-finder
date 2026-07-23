@@ -683,6 +683,27 @@ kills to its survivors: **speed is the moat where repricing is fast, and
 every edge we can actually reach lives where repricing is slow — stale
 siblings, absorbed inventory, and the sharps' own entry prices.**
 
+**Stage-2 the same night: the lead-lag edge gets its instrument
+(2026-07-23).** T9's +$9.73/$100 carried a stated optimism — entries at
+stale prints nobody may still be quoting. Per the fill-model lesson we
+didn't argue with the number, we built the instrument: **wwf-lagbot**
+(Study D, #23, deployed 2026-07-23 20:56Z) buys the lagging sibling's
+book for real — paper $100 FAKs, premium cap stale+4¢, and down-moves
+routed through the sibling's *complement* token (chasing a crashing
+sibling's own asks would measure the mirage, not the lag). Both arms of
+the question are instrumented: every attempt logs the standing ask's
+premium over the stale print, so the **observational kill-switch (median
+premium ≥ +8¢ over 3 days = the sim's entries never existed)** can kill
+the study without waiting for a paper sample. Two shakedown hours taught
+what the tape couldn't: the first premium sample's median sat exactly AT
+that bar (+8.5¢ — mirages concentrate in handicap/spread siblings wearing
+ancient prints under 0.92–0.98 asks), and a stale-but-cheap ask can be
+stale-but-*empty* ($0.55 of $100 filled on a +1.2¢ "bargain") — so the
+grader reports EV per episode **and** per dollar staked, and partials
+can't flatter the verdict. Either outcome is a finding: the premium
+median kills the mirage in three days, or the paper ledger prices the
+first edge that survives its own execution.
+
 ## Repo layout
 
 - `insider.py` — the detector: z-score/p-value, timing/freshness/sizing signals,
@@ -699,8 +720,10 @@ siblings, absorbed inventory, and the sharps' own entry prices.**
   in-progress system — this finder is selection + tracking only.*
 - `research/` — the tape-era edge factory (SILO'd from the bots): read-only
   RTDS loaders, execution sim calibrated on the live ledger, pre-registered
-  studies (#16 surge momentum, #17 oracle fair value), nightly forward
-  ledger. Verdicts come from `research/forward_ledger.jsonl` only. See
+  studies (#16 surge and #17 oracle — both killed chain-true; #22
+  lean-follow and #23 lead-lag — windows open), three measurement harnesses
+  (wwf-surgebot A2, wwf-oraclebot, wwf-lagbot), nightly forward ledger.
+  Verdicts come from the chain-graded ledgers only. See
   `research/README.md`.
 - `wide/` — bulk subgraph→DuckDB scanner (survivorship-bias-free, all wallets);
   public subgraph frozen at Jan 2026, so historical-only. See `wide/README.md`.

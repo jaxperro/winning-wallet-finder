@@ -29,9 +29,13 @@ momentum **CLOSED 2026-07-23** (kill executed as pre-registered — both
 instruments chain-true; A2 runs through Friday's #19 read), #17 oracle fair
 value (E0.04 killed; higher tiers ledger-positive but harness-vetoed —
 taker arm evidence-dead, decision Friday), #19 surge sprint plan (Friday:
-disposition + #20/#21 flip decisions). #18 (empty-cond copies
-unsettleable) closed same day: RTDS seed enrichment + falsy-cond repair
-pass + 1h alarm.
+disposition), #20/#21 execution flips **FLIPPED LIVE 2026-07-23 18:36Z**
+(windows open, bars at n≥30 each), #22 Study C lean-follow
+(pre-registered, frozen 052eda0; window opens with the first nightly
+lean rows), #23 Study D sibling lead-lag (pre-registered;
+**wwf-lagbot DEPLOYED 2026-07-23 20:56Z**, shakedown numbers on the
+issue). #18 (empty-cond copies unsettleable) closed same day: RTDS seed
+enrichment + falsy-cond repair pass + 1h alarm.
 
 ## Operating boundary (user, 2026-07-13 — standing)
 **Full autonomy on the bots**; the real-money bot **stays ARMED**. Never
@@ -99,7 +103,20 @@ push through.
   sim ledger reads positive. Both instruments share the scorer now, so the
   divergence is the sim's 6.7s-lag FILL model flattering the tiers (round
   3's lesson recurring in the fill model). Taker arm is evidence-dead;
-  formal tier bars keep accruing; maker pivot (T1 sim) is the successor.**
+  formal tier bars keep accruing; maker pivot (T1 sim) KILLED at Stage 1
+  same night — staleness IS the adverse selection.**
+- **wwf-lagbot (PAPER, ~$3/mo, deployed 2026-07-23 20:56Z)**: Study D #23
+  — T9's sibling lead-lag edge (+$9.73/$100 tape, n=2,028, stale-print
+  optimism stated) at real books. Leader bursts ≥10¢/120s → paper-FAK
+  $100 on ≤2 lagging same-outcome siblings at ≤ stale+4¢; down-moves buy
+  the sibling's COMPLEMENT token; cooldown 600s/event. Attempts log every
+  standing ask premium — the observational kill-switch (median ≥+8¢ over
+  3 days = mirage) can kill without a paper sample. Shakedown 07-23: first
+  8 attempts' median +8.5¢ (AT the bar — mirages concentrate in
+  handicap/spread siblings with ancient prints); the 3 fills were +1-2¢,
+  one $0.55-of-$100 partial → grade_lag reports $/episode AND %-of-staked.
+  PASS ≥+$4/$100 @ n≥400/≥5d · KILL ≤0 @ n≥300. Nightly grade_lag.py →
+  lag_paper_ledger.jsonl.
 - **Data moat (2026-07-22, DATA LAW in research/README)**: all raw streams
   append-only and Mac-independent (Fly volumes + daily snapshots; recorder
   has ~3+ weeks offline headroom); forward.py backfills ledger-missing
@@ -111,21 +128,25 @@ push through.
   Friday's combined read (#13 bench + #16 formal close [A2 chain grade
   −$7.54/fill × 1,344 independently confirms the kill; virtual book's
   +26% on n=46 is the variance footnote, not a signal] + #17 taker-arm
-  decision + #19 disposition + **#20/#21 flip decisions** — every number
-  chain-true). Five tandem tests 2026-07-23 (research/: copy_edge_slices,
-  copy_maker_entry, maker_sharps, sibling_sum_scan, sell_mirror_study):
-  T3 maker entries +$17.45 vs +$12.86 taker → #20; sells anti-signal →
-  #21; 673-wallet maker-sharp species (+$5.9M, 86% invisible to taker
-  screens) → inventory-lean follow-on; sibling-sum = print artifact,
-  parked; T1 crypto maker-quote sim needs its re-run.
-- Dashboards: jaxperro.com/{trading,live,test,value} — /test = both paper
+  decision + #19 disposition + early #20/#21 window check — every number
+  chain-true) · **#22 lean-follow** (PASS ≥+$2/lean & hit≥.56 @ n≥1,500;
+  KILL ≤0 @ n≥1,000) · **#23 lead-lag** (bars above). Ten tandem tests
+  2026-07-23 (scripts + verdicts in research/): batch one — T3 maker
+  entries +$17.45 vs +$12.86 taker → #20; sells anti-signal → #21;
+  673-wallet maker-sharp species → inventory-lean line; sibling-sum =
+  print artifact; T5 esports concentration → #14 tension. Batch two —
+  T6 lean-follow → #22 (fade arm FAILED its concentration gate,
+  report-only); T9 lead-lag → #23; T1 maker-quote Stage-1 KILL; T7
+  settlement-discount industrialized, parked; T8 crater-rejects were
+  good misses; T10 age gradient needs sample.
+- Dashboards: jaxperro.com/{trading,live,test,value} — /test = all four
   studies on one page (old /surge + /oracle URLs redirect) · daily pipeline
   on the Mac at 08:00 (launchd, lockfile) — floors, bench forward table,
   edge row, tape sync, Discord digest · tape mirror every 15 min
   (com.jaxperro.tape-sync → sync_tape.py, sftp + base64-console fallback)
   · research nightly fires 09:15 then WAITS for fresh tape
-  (com.jaxperro.research-nightly; self-commits ledger, informed set,
-  surge/oracle grades, virtual book, meta snapshot). All launchd agents
+  (com.jaxperro.research-nightly; self-commits ledger + lean rows, informed
+  set, surge/oracle/lag grades, virtual book, meta snapshot). All launchd agents
   removable with `launchctl unload ~/Library/LaunchAgents/<label>.plist`.
 
 ## Ops quick-reference

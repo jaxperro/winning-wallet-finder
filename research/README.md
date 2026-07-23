@@ -59,13 +59,16 @@ Layout:
                         dominated; needs standing-book data; parked)
   maker_lean.py         T6 — WALK-FORWARD POSITIVE: follow small maker
                         inventory leans (+$2.51/lean, 59% hit, positive
-                        all 3 days); fade $2k+ whale bags (+$13.38,
-                        n=422). Pre-registration candidate pending
-                        event-concentration + execution checks.
+                        all 3 days) → STUDY C #22 PRE-REGISTERED
+                        (params/study_lean.json frozen 052eda0; follow
+                        arm verdict-gated, fade $2k+ FAILED its
+                        event-concentration gate — report-only; nightly
+                        rows via forward.py score_lean, study:"lean")
   event_leadlag.py      T9 — POSITIVE: same-outcome siblings reprice
                         slowly after leader bursts (+$9.73/$100 chain,
-                        n=2,028; stale-print entry optimism stated —
-                        Stage-2 is execution realism)
+                        n=2,028; stale-print entry optimism stated) →
+                        STUDY D #23: wwf-lagbot harness (below) is the
+                        Stage-2 execution-realism instrument
   settle_discount.py    T7 — settlement-discount niche: industrialized
                         by incumbents (+2-3%/hold for the good ones);
                         residual unproven (63% of vol outside
@@ -96,9 +99,21 @@ Layout:
                    jaxperro.com/test): fair value tick-by-tick on the venue's
                    own settlement feed, all E-tiers tracked, three settle
                    layers (own-feed tick → CLOB flags → nightly chain truth)
-  grade_surge.py / grade_oracle.py   nightly chain-truth re-grades →
-                   surge_meas_ledger.jsonl / oracle_paper_ledger.jsonl;
-                   also pull the raw volume streams to local .pull copies
+  lagbot.py        Study D real-time PAPER harness (wwf-lagbot →
+                   jaxperro.com/test, deployed 2026-07-23, SEM_VER l1):
+                   leader bursts ≥10¢/120s → paper-FAK $100 on ≤2 lagging
+                   same-outcome siblings at ≤ stale+4¢; DOWN-moves buy the
+                   sibling's COMPLEMENT token; cooldown 600s/event, 30-min
+                   warmup (leader maps built live from the stream). Every
+                   attempt logs the ask premium over the stale print — the
+                   observational kill-switch (median ≥+8¢ over 3 days =
+                   mirage) can kill #23 without a paper sample
+  grade_surge.py / grade_oracle.py / grade_lag.py   nightly chain-truth
+                   re-grades → surge_meas / oracle_paper / lag_paper
+                   ledgers (grade_lag also prints EV per episode AND
+                   %-of-staked — partial fills can't flatter the verdict —
+                   plus the median-premium kill-switch read); all three
+                   pull the raw volume streams to local .pull copies
   markout_flow.py  exploratory markout-exit curve (chain-truth verdict: NO
                    scalp inside the dead surge signal — losers bleed from
                    minute one; v0's res_tok version was round-3-biased)
@@ -121,6 +136,9 @@ Data streams (the moat — all append-only, per DATA LAW):
                          .jsonl (durable settles) · surge2_state.json
     wwf-oraclebot /data  oracle_attempts / oracle_markouts / oracle_settles
                          .jsonl + oracle_state.json (same shapes)
+    wwf-lagbot /data     lag_attempts.jsonl (every attempt + top-5 asks +
+                         premium vs stale + latency) · lag_settles.jsonl
+                         (durable settles) · lag_state.json
   Mac (nightly pulls + git): ledgers + params committed; raw .pull copies
     and meta/ gzips local. forward.py backfills any tape-covered day the
     ledger has never seen — a Mac gap > RESCORE_DAYS leaves no holes.
