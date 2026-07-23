@@ -54,3 +54,4 @@ research/meta/
 research/.surge*.pull.*
 research/.oracle*.pull.*
 research/replay_out/
+research/.maker_lean_triggers.json

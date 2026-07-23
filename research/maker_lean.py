@@ -17,6 +17,7 @@ FROZEN v0 params (declared before the run, not tuned after):
   price    lean-side last print in [0.05, 0.95] at trigger
   score    $100 at trigger print -> chain payout; follow-EV and fade-EV
 Kill bar: BOTH directions EV <= 0 at n>=100 leans."""
+import os
 import sys
 import time
 
@@ -63,6 +64,43 @@ def screen_asof(db, t_cut):
     return out
 
 
+def day_leans(db, lo, hi, sharps):
+    """First lean crossings for screened wallets in [lo,hi) — the frozen
+    trigger (used by the exploration AND forward.py's nightly scoring)."""
+    rows = db.execute("""
+      SELECT lower(json_extract_string(payload,'$.proxyWallet')) w,
+             json_extract_string(payload,'$.asset') a,
+             json_extract_string(payload,'$.side') s,
+             cast(json_extract(payload,'$.price') AS DOUBLE) p,
+             cast(json_extract(payload,'$.size') AS DOUBLE) z, ts
+      FROM aux WHERE type='orders_matched' AND ts >= ? AND ts < ?
+      ORDER BY ts""", [lo, hi]).fetchall()
+    book, fired, out = {}, set(), []
+    for w, a, s_, p, z, ts in rows:
+        if w not in sharps or (w, a) in fired:
+            continue
+        st = book.setdefault((w, a), [0.0, 0.0])
+        st[0] += z if s_ == "BUY" else -z
+        st[1] += z
+        net, gross = st
+        if gross < 1e-9:
+            continue
+        px = db.execute("""SELECT price FROM trades WHERE asset=?
+            AND ts<=? ORDER BY ts DESC LIMIT 1""", [a, ts]).fetchone()
+        if px is None:
+            continue
+        px = float(px[0])
+        lean_px = px if net > 0 else 1 - px
+        if (abs(net) * px >= LEAN_USD and abs(net) / gross >= NET_GROSS
+                and BAND[0] <= lean_px <= BAND[1]):
+            fired.add((w, a))
+            out.append({"w": w, "a": a, "ts": ts,
+                        "side": 1 if net > 0 else -1,
+                        "lean_usd": abs(net) * px,
+                        "px": px, "lean_px": lean_px})
+    return out
+
+
 def main():
     db = tape.connect()
     t_lo, t_hi = db.execute(
@@ -79,43 +117,17 @@ def main():
         if not sharps:
             print(f"{d_str}: 0 screened wallets", flush=True)
             continue
-        rows = db.execute("""
-          SELECT lower(json_extract_string(payload,'$.proxyWallet')) w,
-                 json_extract_string(payload,'$.asset') a,
-                 json_extract_string(payload,'$.side') s,
-                 cast(json_extract(payload,'$.price') AS DOUBLE) p,
-                 cast(json_extract(payload,'$.size') AS DOUBLE) z, ts
-          FROM aux WHERE type='orders_matched' AND ts >= ? AND ts < ?
-          ORDER BY ts""", [lo, hi]).fetchall()
-        book = {}                          # (w,a) -> [net, gross, vwap$]
-        fired = set()
-        n_day = 0
-        for w, a, s, p, z, ts in rows:
-            if w not in sharps or (w, a) in fired:
-                continue
-            st = book.setdefault((w, a), [0.0, 0.0])
-            st[0] += z if s == "BUY" else -z
-            st[1] += z
-            net, gross = st
-            if gross < 1e-9:
-                continue
-            px = db.execute("""SELECT price FROM trades WHERE asset=?
-                AND ts<=? ORDER BY ts DESC LIMIT 1""", [a, ts]).fetchone()
-            if px is None:
-                continue
-            px = float(px[0])
-            lean_px = px if net > 0 else 1 - px   # lean-side price
-            if (abs(net) * px >= LEAN_USD
-                    and abs(net) / gross >= NET_GROSS
-                    and BAND[0] <= lean_px <= BAND[1]):
-                fired.add((w, a))
-                n_day += 1
-                triggers.append({"w": w, "a": a, "ts": ts, "day": d_str,
-                                 "side": 1 if net > 0 else -1,
-                                 "lean_usd": abs(net) * px,
-                                 "px": px, "lean_px": lean_px})
+        found = day_leans(db, lo, hi, sharps)
+        for t in found:
+            t["day"] = d_str
+        triggers.extend(found)
+        n_day = len(found)
         print(f"{d_str}: {len(sharps)} screened · {n_day} leans", flush=True)
     print(f"total leans: {len(triggers)}", flush=True)
+    import json as _json
+    _json.dump(triggers, open(os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        ".maker_lean_triggers.json"), "w"))
     pays = fwd.payouts_for(db, [t["a"] for t in triggers])
     graded = [(t, pays.get(t["a"])) for t in triggers]
     graded = [(t, p) for t, p in graded if p is not None and p != 0.5]

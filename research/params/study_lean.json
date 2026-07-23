@@ -1,0 +1,21 @@
+{
+ "frozen_at": "2026-07-23 21:55 UTC",
+ "study": "C — maker inventory-lean (follow absorbed flow)",
+ "screen": {"source": "orders_matched maker fills, as-of day start (strictly prior tape)",
+            "min_z": 2.5, "min_bets": 6, "pnl_positive": true},
+ "trigger": {"lean_usd_min": 150.0, "net_gross_min": 0.6,
+             "first_crossing_per_wallet_asset_day": true,
+             "lean_px_band": [0.05, 0.95]},
+ "arms": {
+  "follow_small": {"role": "VERDICT", "range_usd": [150, 500], "direction": "follow",
+   "pass": "pooled forward EV >= +$2/lean AND hit >= 0.56 at n >= 1500 across >= 5 forward days",
+   "kill": "pooled forward EV <= 0 at n >= 1000"},
+  "mid_report": {"role": "report-only", "range_usd": [500, 2000], "direction": "follow"},
+  "fade_whale": {"role": "report-only — FAILED pre-declared concentration gate 2026-07-23",
+   "range_usd": [2000, null], "direction": "fade",
+   "gate_result": "top-event share 32% (>30% line); top-5 events +$7,799 vs +$5,911 total (tail net-negative); 87/224 events positive"}
+ },
+ "scoring": "last-print entry (STATED OPTIMISM) -> chain truth via payouts_for; nightly rows study='lean' in forward_ledger.jsonl (forward.score_lean)",
+ "graduation": "PASS graduates to a real-execution paper arm (honest instrument), never directly to money",
+ "exploration": "research/maker_lean.py walk-forward 07-21..23: follow_small +$2.90-4.39/lean, 59% hit, positive all 3 days; concentration follow 14% top-event / 869 events"
+}

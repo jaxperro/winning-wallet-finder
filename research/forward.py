@@ -180,6 +180,56 @@ def score_oracle(db, P, d, hold_s):
     return row
 
 
+def score_lean(db, d):
+    """Study C (maker inventory-lean, pre-registered): walk-forward day row.
+    Screen as-of day start (maker_lean.screen_asof — tape strictly before
+    the day), frozen trigger (maker_lean.day_leans), chain truth via
+    payouts_for. Arms: follow_small ($150-500) · fade_whale ($2k+) · mid
+    bucket report-only. Scored at last-print entry (stated optimism — a
+    PASS graduates to a real-execution paper arm, never to money)."""
+    import maker_lean as ml
+    lo, hi = day_bounds(d)
+    t_max = db.execute(
+        "SELECT max(ts) FROM aux WHERE type='orders_matched'").fetchone()[0]
+    hi = min(hi, t_max or 0)
+    if hi <= lo:
+        return {"skipped": "no maker-stream coverage"}
+    tape.build_resolved(db)
+    sharps = ml.screen_asof(db, lo)
+    if not sharps:
+        return {"skipped": "no screened wallets as-of day"}
+    leans = ml.day_leans(db, lo, hi, sharps)
+    pays = payouts_for(db, [t["a"] for t in leans])
+    row = {"screened": len(sharps), "leans": len(leans)}
+    arms = {"follow_small": ("follow", lambda u: u < 500),
+            "mid_report": ("follow", lambda u: 500 <= u < 2000),
+            "fade_whale": ("fade", lambda u: u >= 2000)}
+    for name, (direction, sel) in arms.items():
+        n = pend = wins = 0
+        pnl = 0.0
+        for t in leans:
+            if not sel(t["lean_usd"]):
+                continue
+            p = pays.get(t["a"])
+            if p is None:
+                pend += 1
+                continue
+            if p == 0.5:
+                continue
+            lean_pay = p if t["side"] > 0 else 1 - p
+            px, pay = ((t["lean_px"], lean_pay) if direction == "follow"
+                       else (1 - t["lean_px"], 1 - lean_pay))
+            if not (0.05 <= px <= 0.95):
+                continue
+            n += 1
+            pnl += 100.0 / px * (pay - px)
+            wins += pay == 1.0
+        row[name] = {"n": n, "pending": pend, "pnl": round(pnl, 2),
+                     "ev_per_lean": round(pnl / n, 2) if n else None,
+                     "hit": round(wins / n, 3) if n else None}
+    return row
+
+
 def main():
     db = tape.connect()
     cal = json.load(open(os.path.join(HERE, "params", "sim_calibration.json")))
@@ -248,6 +298,16 @@ def main():
             print(f"sub5c  {d}: trig {r3['triggers']} "
                   f"worst {r3['worst'].get('ev_per_fill')} "
                   f"({r3['worst']['fills']} fills, {r3['worst']['pending']} pend)")
+            r5 = score_lean(db, d)
+            fh.write(json.dumps({"study": "lean", "day": d,
+                                 "computed_at": now, **r5},
+                                default=float) + "\n")
+            print(f"lean   {d}: " + (r5.get("skipped") or
+                  f"{r5['leans']} leans · follow_small "
+                  f"{r5['follow_small'].get('ev_per_lean')} "
+                  f"({r5['follow_small']['n']}n) · fade_whale "
+                  f"{r5['fade_whale'].get('ev_per_lean')} "
+                  f"({r5['fade_whale']['n']}n)"))
 
 
 if __name__ == "__main__":
