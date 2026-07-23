@@ -1,16 +1,16 @@
 {
  "mode": "live",
- "updated": 1784818262,
+ "updated": 1784819656,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.45,
    "n": 19,
    "wins": 4,
-   "open_cost": 11.91,
-   "open_n": 5,
+   "open_cost": 14.42,
+   "open_n": 6,
    "miss_n": 61,
    "miss_pnl": 1169.92,
-   "last_ts": 1784791175
+   "last_ts": 1784819629
   },
   "AIcAIc": {
    "realized": -14.85,
@@ -104,6 +104,25 @@
   }
  },
  "bets": [
+  {
+   "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Ethereum be between $1,900 and $2,000 on July 23?",
+   "their_price": 0.95,
+   "my_price": 0.95,
+   "slippage_pct": 0.0,
+   "lag_s": 1.0,
+   "shares": 2.64,
+   "cost": 2.51,
+   "fee": 0.0038,
+   "opened": 1784819629,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "80270372288514892122229303181424592994977341771902366596528480848577129708762",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",

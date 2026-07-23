@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 62.94,
- "cash": 43.57,
- "deployed": 19.24,
+ "cash": 41.06,
+ "deployed": 21.75,
  "reserve": 0.0,
  "realized": -13.04,
  "adjustments": 9.44,
  "ledger_drift": 0.0,
- "open_count": 11,
+ "open_count": 12,
  "fees_paid": 3.15,
  "fee_rate": 0.03,
  "lag": {
-  "n": 107,
-  "n24": 1,
-  "avg_s": 27.8,
-  "avg_slip_pct": 0.0566,
+  "n": 108,
+  "n24": 2,
+  "avg_s": 14.4,
+  "avg_slip_pct": 0.0283,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 341.23
  },
  "bets": [
+  {
+   "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Ethereum be between $1,900 and $2,000 on July 23?",
+   "their_price": 0.95,
+   "my_price": 0.95,
+   "slippage_pct": 0.0,
+   "lag_s": 1.0,
+   "shares": 2.64,
+   "cost": 2.51,
+   "fee": 0.0,
+   "opened": 1784819629,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "80270372288514892122229303181424592994977341771902366596528480848577129708762",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2062,26 +2081,6 @@
    "exit_price": 0.0,
    "pnl": -1.04,
    "settled": 1783776386
-  },
-  {
-   "token": "43551466881329966936571085042990699617845453317700345932385022134457322350137",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "PlayTime",
-   "title": "Dota 2: PlayTime vs Nigma Galaxy - Game 1 Winner",
-   "their_price": 0.3585,
-   "my_price": 0.41,
-   "slippage_pct": 0.1436,
-   "shares": 2.5,
-   "cost": 1.02,
-   "fee": 0.02,
-   "opened": 1783772728,
-   "status": "closed",
-   "exit_price": 0.4925,
-   "pnl": 0.19,
-   "settled": 1783774116,
-   "sold_shares": 2.5,
-   "sold_proceeds": 1.23
   }
  ],
  "missed": [
@@ -3046,11 +3045,11 @@
  ],
  "missed_pnl": 1172.41,
  "last_fill": {
-  "ts": 1784791175,
-  "side": "SELL",
-  "price": 0.929,
-  "shares": 0.29,
-  "title": "Will the highest temperature in Hong Kong be 34\u00b0C on July 23",
+  "ts": 1784819630,
+  "side": "BUY",
+  "price": 0.95,
+  "shares": 2.64,
+  "title": "Will the price of Ethereum be between $1,900 and $2,000 on J",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3058,11 +3057,11 @@
    "realized": 1.45,
    "n": 19,
    "wins": 4,
-   "open_cost": 11.91,
-   "open_n": 5,
+   "open_cost": 14.42,
+   "open_n": 6,
    "miss_n": 61,
    "miss_pnl": 1169.92,
-   "last_ts": 1784791175
+   "last_ts": 1784819629
   },
   "AIcAIc": {
    "realized": -14.85,
@@ -3155,5 +3154,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784818262
+ "updated": 1784819656
 }
