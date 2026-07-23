@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784802648,
+ "updated": 1784804368,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.9,
@@ -4203,7 +4203,8 @@
    "status": "won",
    "pnl": 60.86,
    "settled": 1784802647,
-   "name": "BikesAreTheBikes"
+   "name": "BikesAreTheBikes",
+   "exit_checked": true
   },
   {
    "ts": 1784802577,
