@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784831799,
+ "updated": 1784833130,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 557.51,
@@ -72,6 +72,16 @@
    "miss_pnl": -466.97,
    "last_ts": 1784825313
   },
+  "JuiceFarm": {
+   "realized": 0.0,
+   "n": 0,
+   "wins": 0,
+   "open_cost": 115.53,
+   "open_n": 1,
+   "miss_n": 0,
+   "miss_pnl": 0.0,
+   "last_ts": 1784833129
+  },
   "0xd96750bf": {
    "realized": 0.0,
    "n": 0,
@@ -84,6 +94,25 @@
   }
  },
  "bets": [
+  {
+   "token": "107504891632815999637002772178305299765396815437535131855162503864828528783551",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Solary",
+   "title": "LoL: Solary vs ZYB Esport (BO1) - LFL Regular Season",
+   "their_price": 0.76,
+   "my_price": 0.76,
+   "slippage_pct": 0.0,
+   "lag_s": 0.7,
+   "shares": 152.01,
+   "cost": 115.53,
+   "fee": 0.8318,
+   "opened": 1784833129,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "9143471318122042059988785265162570023911768060235394311552003051606225073096",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
