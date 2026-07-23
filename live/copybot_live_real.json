@@ -2086,6 +2086,21 @@
  ],
  "missed": [
   {
+   "ts": 1784818262,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "27550239637632399096048782995950028754921427598196211548179911390834637255919",
+   "cond": "0xa843abc8eee73c1dcf3871d27b50200900767539d9638446eb0bceff0f363a8c",
+   "title": "Hibernian FC to score first vs. FC Malisheva?",
+   "outcome": "No",
+   "price": 0.96,
+   "stake": 2.51,
+   "reason": "thin book ($29 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784508146,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "42533251363336805162348806087988408831791767490089792227520004048407304797610",
@@ -3027,25 +3042,9 @@
    "settled": 1784455287,
    "name": "1kto1m",
    "exit_price": 0.6509
-  },
-  {
-   "ts": 1784453998,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "20413144546134673104026764291663662744630163650305273852347168329867810784203",
-   "cond": "0x909f37860be24ec17981866ed02eb7e0779226585a18faf89e2b2201ca443236",
-   "title": "Bitcoin Up or Down - July 19, 5:30AM-5:45AM ET",
-   "outcome": "Up",
-   "price": 0.3669,
-   "stake": 2.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -1.88,
-   "settled": 1784454324,
-   "name": "1kto1m",
-   "exit_price": 0.0304
   }
  ],
- "missed_pnl": 1172.75,
+ "missed_pnl": 1172.41,
  "last_fill": {
   "ts": 1784791175,
   "side": "SELL",
@@ -3061,7 +3060,7 @@
    "wins": 4,
    "open_cost": 11.91,
    "open_n": 5,
-   "miss_n": 60,
+   "miss_n": 61,
    "miss_pnl": 1169.92,
    "last_ts": 1784791175
   },
@@ -3156,5 +3155,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784816334
+ "updated": 1784818262
 }
