@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784824900,
+ "updated": 1784825319,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.65,
@@ -66,11 +66,11 @@
    "realized": 0.7,
    "n": 4,
    "wins": 1,
-   "open_cost": 12.49,
-   "open_n": 6,
+   "open_cost": 15.0,
+   "open_n": 7,
    "miss_n": 25,
    "miss_pnl": -7.34,
-   "last_ts": 1784660784
+   "last_ts": 1784825313
   },
   "Kruto2027": {
    "realized": -0.05,
@@ -104,6 +104,25 @@
   }
  },
  "bets": [
+  {
+   "token": "9143471318122042059988785265162570023911768060235394311552003051606225073096",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Iran invades Kuwait by August 31?",
+   "their_price": 0.909,
+   "my_price": 0.934,
+   "slippage_pct": 0.0275,
+   "lag_s": 1.8,
+   "shares": 2.69,
+   "cost": 2.51,
+   "fee": 0.005,
+   "opened": 1784825313,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
