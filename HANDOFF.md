@@ -160,7 +160,16 @@ push through.
   section (realized + would-be-missed > 0): 12/15 clear it; JuiceFarm
   trimmed (+$33 realized, −$72 would-be). JuiceFarm's conviction floor
   pins at the next 08:00 sync_floors run (whole-book copies until
-  then — flagged 2026-07-23 evening).
+  then — flagged 2026-07-23 evening). TWO backtest books daily now:
+  portfolio.json (15-wallet bench → "Profitable bench" section) +
+  portfolio_follow.json (--follow-only, followed 7 → "Back Test") —
+  follow-only reads +312% vs +41% bench at the same $1k: bench
+  crowding was starving the follow set's capital in the shared
+  replay. Bank sweep (1/2/5/10k): missed COUNT barely moves
+  (1,569→1,501) — %-of-equity sizing self-throttles, so capturing
+  the missed pool is a sizing-fraction question (user's call), not
+  a bank-size question. All /trading wallet cards open the detail
+  modal (bench-only wallets fall back to replay rows).
 - Dashboards: jaxperro.com/{trading,live,test,value} — /test = all four
   studies on one page (old /surge + /oracle URLs redirect) · daily pipeline
   on the Mac at 08:00 (launchd, lockfile) — floors, bench forward table,
