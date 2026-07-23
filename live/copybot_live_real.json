@@ -27,7 +27,8 @@
   "gkmgkldfmg",
   "1kto1m",
   "BikesAreTheBikes",
-  "AIcAIc"
+  "AIcAIc",
+  "JuiceFarm"
  ],
  "classes": {
   "Kruto2027": "volume",
@@ -35,7 +36,8 @@
   "gkmgkldfmg": "volume",
   "1kto1m": "volume",
   "BikesAreTheBikes": "volume",
-  "AIcAIc": "volume"
+  "AIcAIc": "volume",
+  "JuiceFarm": "volume"
  },
  "floors": {
   "Kruto2027": 80.0,
@@ -43,7 +45,8 @@
   "gkmgkldfmg": 470.51,
   "1kto1m": 328.77,
   "BikesAreTheBikes": 227.2,
-  "AIcAIc": 341.23
+  "AIcAIc": 341.23,
+  "JuiceFarm": 752.73
  },
  "bets": [
   {
@@ -3159,5 +3162,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784821437
+ "updated": 1784823494
 }
