@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 116.56,
+ "stake": 116.54,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1810.16,
- "deployed": 1103.72,
+ "cash": 1814.64,
+ "deployed": 1098.9,
  "reserve": 0.0,
- "realized": 1913.85,
+ "realized": 1913.52,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 18,
- "fees_paid": 343.58,
+ "fees_paid": 343.6,
  "fee_rate": 0.03,
  "lag": {
   "n": 229,
@@ -63,7 +63,9 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "sold_shares": 5.24,
+   "sold_proceeds": 4.48
   },
   {
    "token": "80270372288514892122229303181424592994977341771902366596528480848577129708762",
@@ -2123,6 +2125,22 @@
    "price": 0.96,
    "stake": 56.11,
    "reason": "thin book ($29 within 5c < $50)",
+   "status": "sold",
+   "pnl": -17.6,
+   "settled": 1784820188,
+   "name": "0xbadaf319",
+   "exit_price": 0.6667
+  },
+  {
+   "ts": 1784820182,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "29922880124871912107369653749261396163687764000386220237409162132192311391947",
+   "cond": "0xfe5188a5b3eb20224878822f8deb3e7e1270415c3d5eb6ad14c9e8380d16b115",
+   "title": "Will Microsoft Corporation (MSFT) hit (HIGH) $450 in July?",
+   "outcome": "No",
+   "price": 0.8594,
+   "stake": 64.45,
+   "reason": "not copied in the detection window (reconciled)",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -3049,30 +3067,14 @@
    "settled": 1784471551,
    "name": "1kto1m",
    "exit_price": 0.4171
-  },
-  {
-   "ts": 1784454959,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "73692579062193639095122093771528419354995015035612768219622062530252811614581",
-   "cond": "0x6ef951ec911045212964ad09a85853036c70ae7edf6fdab2f9d68d7f560e2d94",
-   "title": "Bitcoin Up or Down - July 19, 5:45AM-6:00AM ET",
-   "outcome": "Up",
-   "price": 0.6311,
-   "stake": 98.79,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.93,
-   "settled": 1784455287,
-   "name": "1kto1m",
-   "exit_price": 0.6509
   }
  ],
- "missed_pnl": 96793.56,
+ "missed_pnl": 96775.96,
  "last_fill": {
-  "ts": 1784819791,
-  "side": "BUY",
-  "price": 0.91,
-  "shares": 60.1,
+  "ts": 1784820189,
+  "side": "SELL",
+  "price": 0.86,
+  "shares": 5.24,
   "title": "Will the price of Ethereum be between $1,900 and $2,000 on J",
   "outcome": "No"
  },
@@ -3083,8 +3085,8 @@
    "wins": 12,
    "open_cost": 853.09,
    "open_n": 11,
-   "miss_n": 54,
-   "miss_pnl": 97071.82,
+   "miss_n": 55,
+   "miss_pnl": 97054.22,
    "last_ts": 1784819629
   },
   "gkmgkldfmg": {
@@ -3158,5 +3160,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784819792
+ "updated": 1784820189
 }
