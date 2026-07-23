@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784802147,
+ "updated": 1784802648,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.9,
@@ -68,8 +68,8 @@
    "wins": 1,
    "open_cost": 706.41,
    "open_n": 7,
-   "miss_n": 21,
-   "miss_pnl": -527.83,
+   "miss_n": 22,
+   "miss_pnl": -466.97,
    "last_ts": 1784660784
   },
   "0xd96750bf": {
@@ -4191,6 +4191,36 @@
  ],
  "missed": [
   {
+   "ts": 1784696451,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "68642938852444405618524357112499284175503313921723452625127267630411120480355",
+   "cond": "0x3143454e474c199ec69abacc2a962885b1b82f9201837624ab0883be9e15436d",
+   "title": "Will Elon Musk post 140-159 tweets from July 17 to July 24, 2026?",
+   "outcome": "No",
+   "price": 0.64,
+   "stake": 110.32,
+   "reason": "price moved 0.59\u21920.64",
+   "status": "won",
+   "pnl": 60.86,
+   "settled": 1784802647,
+   "name": "BikesAreTheBikes"
+  },
+  {
+   "ts": 1784802577,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "28239418772633645184924651434956000849078365566842629564562475378531350731731",
+   "cond": "0xac02cbb049e46d6a3627c0fdf52fa554982a9025d45968207b362acb6ca4b830",
+   "title": "Will the Fed decrease interest rates by 25 bps after the September 2026 meeting?",
+   "outcome": "No",
+   "price": 0.92,
+   "stake": 116.57,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784755189,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "6942521039548952262803452715536366269632833663841807575802631974514414220741",
@@ -4477,21 +4507,6 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.7583
-  },
-  {
-   "ts": 1784696451,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "68642938852444405618524357112499284175503313921723452625127267630411120480355",
-   "cond": "0x3143454e474c199ec69abacc2a962885b1b82f9201837624ab0883be9e15436d",
-   "title": "Will Elon Musk post 140-159 tweets from July 17 to July 24, 2026?",
-   "outcome": "No",
-   "price": 0.64,
-   "stake": 110.32,
-   "reason": "price moved 0.59\u21920.64",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784682914,
