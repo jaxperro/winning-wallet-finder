@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784821177,
+ "updated": 1784823427,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 548.47,
@@ -8,7 +8,7 @@
    "wins": 12,
    "open_cost": 853.09,
    "open_n": 11,
-   "miss_n": 55,
+   "miss_n": 60,
    "miss_pnl": 97054.22,
    "last_ts": 1784821177
   },
@@ -4232,6 +4232,81 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784823420,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "53864929757641923279848610727880389145399611177187939181757886904167965697807",
+   "cond": "0x0d3bdcf422b886240b03a86ca18854b09d7e5db1a51693f702d7378b53e5bc63",
+   "title": "Will Lionel Messi win the Silver Ball at the 2026 FIFA World Cup?",
+   "outcome": "No",
+   "price": 0.5799,
+   "stake": 34.81,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1784823420,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "45139241414469860954947578765028277034812078372494153843579493704976148448651",
+   "cond": "0x65791b55c71bf4314b7234f0406f052727201d521f68721d360563b3ac59a3a3",
+   "title": "Tuyo FDV above $500M one day after launch?",
+   "outcome": "No",
+   "price": 0.7499,
+   "stake": 35.36,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1784823420,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "44360920780922767656954735357129256432039074408110623509391936414714437499560",
+   "cond": "0x09d587f63d04643fb9ea6247f58e3dd5b436e23e0d3a3fe643d6936424561e78",
+   "title": "Will Justin Bieber's monthly listeners figure hit 140m by August 31?",
+   "outcome": "No",
+   "price": 0.8799,
+   "stake": 34.75,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1784823419,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "10648768902294223005281776472791443674603816737553002058221071348281139541856",
+   "cond": "0x30034a8bfb66e13d0235c5a8483b5f4ba974c0221e3c9ca67f1382723d19a801",
+   "title": "Bitcoin above 66,000 on July 22, 12PM ET?",
+   "outcome": "No",
+   "price": 0.39,
+   "stake": 32.14,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1784823419,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "8333078091351388621146592798724535139068755779946609679053201076909843903284",
+   "cond": "0x71c12ea3c50fdee199b076a107eae1e6969c133d9ec3454354603b4ab9e07aec",
+   "title": "Will AVAX reach $10 by December 31, 2026?",
+   "outcome": "No",
+   "price": 0.5,
+   "stake": 32.91,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784818263,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
