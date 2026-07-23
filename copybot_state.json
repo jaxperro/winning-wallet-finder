@@ -17725,8 +17725,8 @@
     }
   },
   "hwm": 3017.9847339343023,
-  "feed_sig": "fa3006fbad6fc80fa32fb08318dc9fe1",
-  "feed_pushed_at": 1784845679.870735,
+  "feed_sig": "e0cd044266e5ee14b70d795a13600c0c",
+  "feed_pushed_at": 1784846354.5515926,
   "missed": [
     {
       "ts": 1783590977,
@@ -19854,9 +19854,9 @@
       "price": 0.79,
       "stake": 105.73,
       "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 27.44,
+      "settled": 1784846419,
       "name": "BikesAreTheBikes"
     },
     {
@@ -20775,7 +20775,7 @@
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784745123,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784807970,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784844553,
-    "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784842651,
+    "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784845413,
     "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1784833129
   },
   "boot": {

@@ -2126,6 +2126,21 @@
  ],
  "missed": [
   {
+   "ts": 1784492349,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "62074667087255747412382561081475311823484268378809285620641251664614873335395",
+   "cond": "0x514c3dd24cde8101ec8e3982b74fca425c592e3fe7526056a4d80aa269c98808",
+   "title": "Israel x Iran ceasefire continues through July 20?",
+   "outcome": "Yes",
+   "price": 0.79,
+   "stake": 105.73,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "won",
+   "pnl": 27.44,
+   "settled": 1784846419,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784823419,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "8333078091351388621146592798724535139068755779946609679053201076909843903284",
@@ -3015,21 +3030,6 @@
    "exit_price": 0.74
   },
   {
-   "ts": 1784492349,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "62074667087255747412382561081475311823484268378809285620641251664614873335395",
-   "cond": "0x514c3dd24cde8101ec8e3982b74fca425c592e3fe7526056a4d80aa269c98808",
-   "title": "Israel x Iran ceasefire continues through July 20?",
-   "outcome": "Yes",
-   "price": 0.79,
-   "stake": 105.73,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
-  },
-  {
    "ts": 1784469295,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "38596120750074321785333064789385162164853013897516945380739845321752073819772",
@@ -3077,7 +3077,7 @@
    "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 96621.92,
+ "missed_pnl": 96649.36,
  "last_fill": {
   "ts": 1784842585,
   "side": "BUY",
@@ -3154,7 +3154,7 @@
    "open_cost": 1080.85,
    "open_n": 10,
    "miss_n": 23,
-   "miss_pnl": -466.97,
+   "miss_pnl": -439.53,
    "last_ts": 1784842585
   },
   "JuiceFarm": {
@@ -3178,5 +3178,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784846093
+ "updated": 1784846425
 }
