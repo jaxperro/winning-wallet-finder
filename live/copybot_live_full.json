@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784848089,
+ "updated": 1784851004,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 557.51,
@@ -66,11 +66,11 @@
    "realized": 0.07,
    "n": 7,
    "wins": 1,
-   "open_cost": 1080.85,
-   "open_n": 10,
+   "open_cost": 1199.35,
+   "open_n": 11,
    "miss_n": 23,
    "miss_pnl": -439.53,
-   "last_ts": 1784842585
+   "last_ts": 1784851003
   },
   "JuiceFarm": {
    "realized": 35.65,
@@ -94,6 +94,26 @@
   }
  },
  "bets": [
+  {
+   "token": "88095392088380018988811128905056685420681684247700244221273733002608971216833",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will AfD win the most seats in the 2026 Berlin state elections?",
+   "their_price": 0.787,
+   "my_price": 0.787,
+   "slippage_pct": 0.0,
+   "lag_s": 0.8,
+   "shares": 150.57,
+   "cost": 118.5,
+   "fee": 0.7572,
+   "opened": 1784851003,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1789862400
+  },
   {
    "token": "107504891632815999637002772178305299765396815437535131855162503864828528783551",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",

@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 118.51,
+ "stake": 118.47,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1572.08,
- "deployed": 1390.55,
+ "cash": 1452.82,
+ "deployed": 1509.05,
  "reserve": 0.0,
- "realized": 1962.6,
+ "realized": 1961.84,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 21,
- "fees_paid": 349.13,
+ "ledger_drift": -0.02,
+ "open_count": 22,
+ "fees_paid": 349.89,
  "fee_rate": 0.03,
  "lag": {
-  "n": 236,
-  "n24": 11,
-  "avg_s": 3.3,
-  "avg_slip_pct": -0.006,
+  "n": 237,
+  "n24": 12,
+  "avg_s": 3.1,
+  "avg_slip_pct": -0.0055,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "88095392088380018988811128905056685420681684247700244221273733002608971216833",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will AfD win the most seats in the 2026 Berlin state elections?",
+   "their_price": 0.787,
+   "my_price": 0.787,
+   "slippage_pct": 0.0,
+   "lag_s": 0.8,
+   "shares": 150.57,
+   "cost": 118.5,
+   "fee": 0.76,
+   "opened": 1784851003,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1789862400
+  },
   {
    "token": "107504891632815999637002772178305299765396815437535131855162503864828528783551",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2103,25 +2123,6 @@
    "settled": 1784054791,
    "sold_shares": 131.07,
    "sold_proceeds": 77.65
-  },
-  {
-   "token": "66043823927578785385332294647462770708290770399339210264516767845856140852007",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will Elon Musk post 180-199 tweets from July 7 to July 14, 2026?",
-   "their_price": 0.351,
-   "my_price": 0.356,
-   "slippage_pct": 0.0142,
-   "lag_s": 0.9,
-   "shares": 57.34,
-   "cost": 20.41,
-   "fee": 0.39,
-   "opened": 1783996757,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -20.8,
-   "settled": 1784053019
   }
  ],
  "missed": [
@@ -3080,12 +3081,12 @@
  ],
  "missed_pnl": 96649.36,
  "last_fill": {
-  "ts": 1784847806,
-  "side": "SELL",
-  "price": 0.998,
-  "shares": 20.64,
-  "title": "Amazon 2026 capex above $180B?",
-  "outcome": "Yes"
+  "ts": 1784851003,
+  "side": "BUY",
+  "price": 0.787,
+  "shares": 150.57,
+  "title": "Will AfD win the most seats in the 2026 Berlin state electio",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3152,11 +3153,11 @@
    "realized": 0.07,
    "n": 7,
    "wins": 1,
-   "open_cost": 1080.85,
-   "open_n": 10,
+   "open_cost": 1199.35,
+   "open_n": 11,
    "miss_n": 23,
    "miss_pnl": -439.53,
-   "last_ts": 1784842585
+   "last_ts": 1784851003
   },
   "JuiceFarm": {
    "realized": 35.65,
@@ -3179,5 +3180,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784848089
+ "updated": 1784851004
 }
