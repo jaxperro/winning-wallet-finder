@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 117.13,
+ "stake": 117.12,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1870.87,
- "deployed": 1057.41,
+ "cash": 1753.41,
+ "deployed": 1174.54,
  "reserve": 0.0,
- "realized": 1928.25,
+ "realized": 1927.92,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 18,
- "fees_paid": 344.45,
+ "open_count": 19,
+ "fees_paid": 344.78,
  "fee_rate": 0.03,
  "lag": {
-  "n": 232,
-  "n24": 7,
-  "avg_s": 4.7,
-  "avg_slip_pct": -0.009,
+  "n": 233,
+  "n24": 8,
+  "avg_s": 4.2,
+  "avg_slip_pct": -0.0083,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,25 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "9143471318122042059988785265162570023911768060235394311552003051606225073096",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Iran invades Kuwait by August 31?",
+   "their_price": 0.909,
+   "my_price": 0.906,
+   "slippage_pct": -0.0033,
+   "lag_s": 1.3,
+   "shares": 129.28,
+   "cost": 117.13,
+   "fee": 0.33,
+   "opened": 1784825313,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "78639892723644623147617890032845605442018473848411325154446303980329931711515",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2092,27 +2111,6 @@
    "exit_price": null,
    "pnl": null,
    "settled": null
-  },
-  {
-   "token": "103599543732484870090369455326920139987823898856081914791151504750897348686596",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Liquid",
-   "title": "Dota 2: Team Liquid vs Xtreme Gaming - Game 2 Winner",
-   "their_price": 0.7957,
-   "my_price": 0.78,
-   "slippage_pct": -0.0197,
-   "lag_s": 0.9,
-   "shares": 125.04,
-   "cost": 97.53,
-   "fee": 0.64,
-   "opened": 1784039149,
-   "status": "closed",
-   "exit_price": 0.9353,
-   "pnl": 18.77,
-   "settled": 1784039404,
-   "sold_shares": 125.04,
-   "sold_proceeds": 116.94
   }
  ],
  "missed": [
@@ -2144,7 +2142,8 @@
    "status": "lost",
    "pnl": -32.73,
    "settled": 1784823492,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1784823420,
@@ -2159,7 +2158,8 @@
    "status": "lost",
    "pnl": -35.25,
    "settled": 1784823492,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1784823420,
@@ -3066,11 +3066,11 @@
  ],
  "missed_pnl": 96707.98,
  "last_fill": {
-  "ts": 1784824868,
+  "ts": 1784825314,
   "side": "BUY",
-  "price": 0.887,
-  "shares": 52.99,
-  "title": "Will Amazon.com, Inc. (AMZN) hit (HIGH) $280 in July?",
+  "price": 0.906,
+  "shares": 129.28,
+  "title": "Iran invades Kuwait by August 31?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3138,11 +3138,11 @@
    "realized": 0.07,
    "n": 7,
    "wins": 1,
-   "open_cost": 729.65,
-   "open_n": 7,
+   "open_cost": 846.78,
+   "open_n": 8,
    "miss_n": 23,
    "miss_pnl": -466.97,
-   "last_ts": 1784660784
+   "last_ts": 1784825313
   },
   "0xd96750bf": {
    "realized": 0.0,
@@ -3155,5 +3155,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784824868
+ "updated": 1784825411
 }
