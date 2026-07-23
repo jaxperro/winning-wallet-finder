@@ -1,16 +1,16 @@
 {
  "mode": "live",
- "updated": 1784823494,
+ "updated": 1784824185,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 1.54,
-   "n": 20,
-   "wins": 4,
-   "open_cost": 14.42,
-   "open_n": 6,
+   "realized": 1.65,
+   "n": 21,
+   "wins": 5,
+   "open_cost": 11.91,
+   "open_n": 5,
    "miss_n": 62,
    "miss_pnl": 1169.13,
-   "last_ts": 1784821437
+   "last_ts": 1784824182
   },
   "AIcAIc": {
    "realized": -14.85,
@@ -58,8 +58,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 14,
-   "miss_pnl": -2.35,
+   "miss_n": 13,
+   "miss_pnl": -3.01,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -68,7 +68,7 @@
    "wins": 1,
    "open_cost": 12.49,
    "open_n": 6,
-   "miss_n": 24,
+   "miss_n": 25,
    "miss_pnl": -7.34,
    "last_ts": 1784660784
   },
@@ -88,8 +88,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 6,
-   "miss_pnl": 1.69,
+   "miss_n": 7,
+   "miss_pnl": 2.35,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -104,6 +104,27 @@
   }
  },
  "bets": [
+  {
+   "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Ethereum be between $1,900 and $2,000 on July 23?",
+   "their_price": 0.95,
+   "my_price": 0.95,
+   "slippage_pct": 0.0,
+   "lag_s": 1.0,
+   "shares": 2.64,
+   "cost": 2.51,
+   "fee": 0.0038,
+   "opened": 1784819629,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 0.11,
+   "settled": 1784824182,
+   "sold_shares": 0.1,
+   "sold_proceeds": 0.08461750000000001
+  },
   {
    "token": "82768531874539579332422216880159980913196623213037059365722754442149714478353",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -124,27 +145,6 @@
    "settled": 1784821437,
    "sold_shares": 3.24,
    "sold_proceeds": 2.60944092
-  },
-  {
-   "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Ethereum be between $1,900 and $2,000 on July 23?",
-   "their_price": 0.95,
-   "my_price": 0.95,
-   "slippage_pct": 0.0,
-   "lag_s": 1.0,
-   "shares": 2.64,
-   "cost": 2.51,
-   "fee": 0.0038,
-   "opened": 1784819629,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 0.1,
-   "sold_proceeds": 0.08461750000000001
   },
   {
    "token": "80270372288514892122229303181424592994977341771902366596528480848577129708762",
@@ -2435,6 +2435,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784824151,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "53147856084273572324920349998954911060427762367735766007832600228479869956378",
+   "cond": "0x25ecc56fd4f2853fa7f7a1068d9cbab84bfebada5eae442610f0e4547c50e1e1",
+   "title": "Will the next Claude Opus model be released by July 23, 2026?",
+   "outcome": "Yes",
+   "price": 0.78,
+   "stake": 2.52,
+   "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1784818262,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -5367,7 +5382,7 @@
    "status": "won",
    "pnl": 0.66,
    "settled": 1783780827,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
