@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 107,
-  "n24": 5,
-  "avg_s": 9.1,
-  "avg_slip_pct": 0.0268,
+  "n24": 4,
+  "avg_s": 9.5,
+  "avg_slip_pct": 0.0376,
   "window_h": 24
  },
  "wallets": [
@@ -3153,5 +3153,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784796182
+ "updated": 1784798663
 }
