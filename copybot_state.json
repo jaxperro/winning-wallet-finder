@@ -17513,8 +17513,8 @@
     }
   },
   "hwm": 3017.9847339343023,
-  "feed_sig": "d276346b2f1259ad42c18152d69d4782",
-  "feed_pushed_at": 1784821105.826,
+  "feed_sig": "ab150b1e9f383971302aa0447bed787a",
+  "feed_pushed_at": 1784823427.5438862,
   "missed": [
     {
       "ts": 1783590977,
@@ -20369,9 +20369,10 @@
       "price": 0.39,
       "stake": 32.14,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -32.73,
+      "settled": 1784823492,
+      "name": "0xbadaf319"
     },
     {
       "ts": 1784823419,
@@ -20385,7 +20386,8 @@
       "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "0xbadaf319"
     },
     {
       "ts": 1784823420,
@@ -20397,9 +20399,10 @@
       "price": 0.5799,
       "stake": 34.81,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -35.25,
+      "settled": 1784823492,
+      "name": "0xbadaf319"
     },
     {
       "ts": 1784823420,
@@ -20413,7 +20416,8 @@
       "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "0xbadaf319"
     },
     {
       "ts": 1784823420,
@@ -20427,7 +20431,8 @@
       "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "0xbadaf319"
     }
   ],
   "no_miss_toks": [

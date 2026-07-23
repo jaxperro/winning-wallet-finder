@@ -2119,6 +2119,21 @@
  ],
  "missed": [
   {
+   "ts": 1784823419,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "10648768902294223005281776472791443674603816737553002058221071348281139541856",
+   "cond": "0x30034a8bfb66e13d0235c5a8483b5f4ba974c0221e3c9ca67f1382723d19a801",
+   "title": "Bitcoin above 66,000 on July 22, 12PM ET?",
+   "outcome": "No",
+   "price": 0.39,
+   "stake": 32.14,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "lost",
+   "pnl": -32.73,
+   "settled": 1784823492,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784823420,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "53864929757641923279848610727880389145399611177187939181757886904167965697807",
@@ -2128,9 +2143,9 @@
    "price": 0.5799,
    "stake": 34.81,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "lost",
+   "pnl": -35.25,
+   "settled": 1784823492,
    "name": "0xbadaf319"
   },
   {
@@ -2157,21 +2172,6 @@
    "outcome": "No",
    "price": 0.8799,
    "stake": 34.75,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1784823419,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "10648768902294223005281776472791443674603816737553002058221071348281139541856",
-   "cond": "0x30034a8bfb66e13d0235c5a8483b5f4ba974c0221e3c9ca67f1382723d19a801",
-   "title": "Bitcoin above 66,000 on July 22, 12PM ET?",
-   "outcome": "No",
-   "price": 0.39,
-   "stake": 32.14,
    "reason": "not copied in the detection window (reconciled)",
    "status": "open",
    "pnl": null,
@@ -3067,7 +3067,7 @@
    "exit_price": 0.307
   }
  ],
- "missed_pnl": 96775.96,
+ "missed_pnl": 96707.98,
  "last_fill": {
   "ts": 1784821177,
   "side": "SELL",
@@ -3084,7 +3084,7 @@
    "open_cost": 853.09,
    "open_n": 11,
    "miss_n": 60,
-   "miss_pnl": 97054.22,
+   "miss_pnl": 96986.24,
    "last_ts": 1784821177
   },
   "gkmgkldfmg": {
@@ -3158,5 +3158,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784823427
+ "updated": 1784823492
 }
