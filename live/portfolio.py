@@ -716,7 +716,7 @@ def main():
     mfull = [{"title": m.get("title", ""), "name": m["name"],
               "won": _missed_won(m), "status": _missed_status(m),
               "stake": m.get("stake"), "capped": bool(m.get("capped")),
-              "pnl": round(m["pnl"], 2),
+              "p": m.get("p"), "pnl": round(m["pnl"], 2),
               "date": m.get("exit_t") or m.get("res_t")} for m in missed]
     mf = (OUT[:-5] if OUT.endswith(".json") else OUT) + "_missed.json"
     json.dump(mfull, open(os.path.join(HERE, mf) if not os.path.isabs(mf)
