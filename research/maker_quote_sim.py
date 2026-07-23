@@ -49,6 +49,18 @@ def main():
     print(f"universe {len(uni)} tokens · tick span {span_d:.1f}d")
     cells = {(m, R): dict(fills=[], last=0.0, n_tok={})
              for m in MARGINS for R in LATENCIES}
+    # per-(sym, second) vol memo: ticks are ~1/s, so vol_1s within one
+    # second is identical — this turns the O(window)-per-print killer into
+    # a dict hit (the un-memoized run needed hours and died unwitnessed)
+    vol_cache = {}
+
+    def vol_at(s, sym, ts):
+        k = (sym, int(ts))
+        if k not in vol_cache:
+            vol_cache[k] = s.vol_1s(ts)
+        return vol_cache[k]
+
+    done = 0
     for u in uni:
         mkt = u["mkt"]
         prints = db.execute("""SELECT ts, price FROM trades
@@ -63,7 +75,7 @@ def main():
             px = float(px)
             if mkt["kind"] == "sprint" and ts < (mkt["t0"] or 0):
                 continue                     # no pre-window quoting
-            sig = s.vol_1s(ts)
+            sig = vol_at(s, mkt["sym"], ts)
             if sig is None:
                 continue
             for R in LATENCIES:
@@ -88,6 +100,11 @@ def main():
                     cells[k]["fills"].append(
                         {"asset": u["asset"], "ts": ts, "bid": bid,
                          "fair": f, "mo60": (f60 - bid) if f60 else None})
+        done += 1
+        if done % 500 == 0:
+            nf = sum(len(c["fills"]) for c in cells.values())
+            print(f"  … {done}/{len(uni)} tokens · {nf} fills so far",
+                  flush=True)
     filled_assets = {f["asset"] for c in cells.values() for f in c["fills"]}
     pays = fwd.payouts_for(db, list(filled_assets))
     print(f"grading {len(filled_assets)} filled tokens (chain overlay)…")

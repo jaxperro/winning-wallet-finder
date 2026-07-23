@@ -39,7 +39,7 @@ Layout:
               win-biased; see SCORER LAW) · title parsers · chain_overlay()
   sim.py      execution replayer calibrated on OUR live fills ledger
               (lag, FAK no-match, protected band, 3% taker fee)
-  study_flow.py    Study A — surge momentum (KILLED 2026-07-22, #16; A2
+  study_flow.py    Study A — surge momentum (#16 CLOSED 2026-07-23; A2
                    chain grade −$7.54/fill × 1,344 independently confirms)
   study_oracle.py  Study B — crypto oracle fair value (#17: E0.04 killed;
                    E≥0.07/0.1 ledger-positive but the harness chain grade

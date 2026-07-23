@@ -25,11 +25,11 @@ LOW urgency, the platform auto-redeems winners itself. auto_redeem OFF.
 Open now: #1 Signal A, #2 tape research, #4 redeem builder-key, #13 Fri
 bench, #14 edge verdict, #15 tape-pull batching (Stage-0 fold+mirror
 superseded the bulk path; sync now sftp-with-base64-fallback), #16 surge
-momentum (**KILL CRITERIA MET 2026-07-22** — resolution-timing scorer bug,
-FINDINGS round-3 section; formal close at Friday's read), #17 oracle fair
-value (sample ×30 under chain scoring; E0.04 tier killed, E≥0.07 slightly
-positive and accumulating), #19 surge sprint plan (Friday decision matrix;
-surgebot stays paper through the read). #18 (empty-cond copies
+momentum **CLOSED 2026-07-23** (kill executed as pre-registered — both
+instruments chain-true; A2 runs through Friday's #19 read), #17 oracle fair
+value (E0.04 killed; higher tiers ledger-positive but harness-vetoed —
+taker arm evidence-dead, decision Friday), #19 surge sprint plan (Friday:
+disposition + #20/#21 flip decisions). #18 (empty-cond copies
 unsettleable) closed same day: RTDS seed enrichment + falsy-cond repair
 pass + 1h alarm.
 
