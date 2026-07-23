@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 116.57,
+ "stake": 116.56,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1927.0,
- "deployed": 987.16,
+ "cash": 1864.99,
+ "deployed": 1049.04,
  "reserve": 0.0,
- "realized": 1914.13,
+ "realized": 1914.0,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 17,
- "fees_paid": 343.31,
+ "open_count": 18,
+ "fees_paid": 343.44,
  "fee_rate": 0.03,
  "lag": {
-  "n": 227,
-  "n24": 2,
-  "avg_s": 13.3,
-  "avg_slip_pct": 0.0032,
+  "n": 228,
+  "n24": 3,
+  "avg_s": 9.0,
+  "avg_slip_pct": -0.0049,
   "window_h": 24
  },
  "wallets": [
@@ -46,6 +46,25 @@
   "AIcAIc": 344.56
  },
  "bets": [
+  {
+   "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Ethereum be between $1,900 and $2,000 on July 23?",
+   "their_price": 0.95,
+   "my_price": 0.93,
+   "slippage_pct": -0.0211,
+   "lag_s": 0.5,
+   "shares": 66.53,
+   "cost": 61.87,
+   "fee": 0.13,
+   "opened": 1784819629,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null
+  },
   {
    "token": "80270372288514892122229303181424592994977341771902366596528480848577129708762",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2091,27 +2110,6 @@
    "settled": 1784033039,
    "sold_shares": 75.54,
    "sold_proceeds": 72.19
-  },
-  {
-   "token": "61047556128408287981194744648173296818501226243273740117171493124431115643554",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Rune Eaters",
-   "title": "Dota 2: Rune Eaters vs Virtus.pro - Game 2 Winner",
-   "their_price": 0.34,
-   "my_price": 0.32,
-   "slippage_pct": -0.0588,
-   "lag_s": 7.7,
-   "shares": 295.01,
-   "cost": 94.4,
-   "fee": 1.93,
-   "opened": 1784032216,
-   "status": "closed",
-   "exit_price": 0.498,
-   "pnl": 50.59,
-   "settled": 1784032824,
-   "sold_shares": 295.0,
-   "sold_proceeds": 146.92
   }
  ],
  "missed": [
@@ -3071,11 +3069,11 @@
  ],
  "missed_pnl": 96793.56,
  "last_fill": {
-  "ts": 1784791174,
-  "side": "SELL",
-  "price": 0.959,
-  "shares": 11.54,
-  "title": "Will the highest temperature in Hong Kong be 34\u00b0C on July 23",
+  "ts": 1784819629,
+  "side": "BUY",
+  "price": 0.93,
+  "shares": 66.53,
+  "title": "Will the price of Ethereum be between $1,900 and $2,000 on J",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3083,11 +3081,11 @@
    "realized": 542.9,
    "n": 47,
    "wins": 12,
-   "open_cost": 736.54,
-   "open_n": 10,
+   "open_cost": 798.41,
+   "open_n": 11,
    "miss_n": 54,
    "miss_pnl": 97071.82,
-   "last_ts": 1784790370
+   "last_ts": 1784819629
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -3160,5 +3158,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784818263
+ "updated": 1784819648
 }
