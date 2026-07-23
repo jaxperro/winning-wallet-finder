@@ -1,9 +1,6 @@
 {
   "started_at": 1783572616.4091802,
   "seen_tx": [
-    "0xe43eab4d5f9b6fbca7512a274bbaeed1fa452eda242173b984d72758be88ad41",
-    "0x574cdd7d25b1ad77636e388c46babb97e9855ca1b0a6b203f74aa11337012df3",
-    "0x23a92376d6356f9209021c23cf62bd07b30fb00641e4041c6e9dbac5fba1ba9d",
     "0x51299b5e1bf72d9ad2b0eaa70f9f9ed3f6e38c00857f7cd96a19ffba08d6797d",
     "0x3fa08b9915769bcf540ef51a0fbc76eeb4ebca782c79bf0c1d10c0ab767bd934",
     "0xc7f96b12bd972229787c60f9b09a47a122f3a0e5013ce7d9b3643022b88f366a",
@@ -5000,7 +4997,10 @@
     "0x90173370a51e9e2f6dc5a70e8ac1b1e4c2ce4fad95663c89facc2112d8fca4b9",
     "0xb3ffa52aaf202589449c56ed01ddcbf628e91f9e80c87cd9719c7e42652951bd",
     "0x56e78db2e6806c0de9d0649c253158a98b88f2de3f3b8fd4c923d31d63982306",
-    "0xbd752ea572e02bdca49882a0485251036a3cfbfbe97301ec39099e8a9c253fdf"
+    "0xbd752ea572e02bdca49882a0485251036a3cfbfbe97301ec39099e8a9c253fdf",
+    "0x542a41f9641f05afbf84aedc011ec67c4ca727dc99fdbb39482d73e44b068c24",
+    "0x92dea0e5b0065eba7cfa24367ffef76475ff584ffe06c67174d49dda4f41c12b",
+    "0xf548e2bfbc6def6f445cf3acabfd13e7d8d8c239c18ee30e713cc2a587e41408"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -7195,7 +7195,8 @@
       "106507761033389376443609222018734385575718403979519595838350473596011994572031": 0.0,
       "48574977780602359973424721409966057674554416160116329470530397807988468635509": 0.0,
       "37191856477013737208001983122060014111424139697068666732101920490654689721653": 0.0,
-      "45276939554340428771698865022604030782253660716041002232668611227463504055173": 61.87368
+      "45276939554340428771698865022604030782253660716041002232668611227463504055173": 294.9199,
+      "70195645594183504777678766878116662362245796053178329148702111955860840923559": 0.0
     },
     "0xd7d36345c4aab150e59577e360696b01d01d698b": {
       "100468734153214358233990589631364606641061328246006529504204481849428608539045": 5322.2848,
@@ -11413,8 +11414,8 @@
       "cond": "0x5d02cb8ef8fe6c50dd2d58283dfe5742b4f13cfa5acbaa4b75dc25a438c6594d"
     },
     "45276939554340428771698865022604030782253660716041002232668611227463504055173": {
-      "shares": 2.6421,
-      "cost": 2.509995,
+      "shares": 2.5421,
+      "cost": 2.4149950000000002,
       "title": "Will the price of Ethereum be between $1,900 and $2,000 on July 23?",
       "outcome": "No",
       "event": "ethereum-price-on-july-23-2026",
@@ -11515,13 +11516,13 @@
     "80270372288514892122229303181424592994977341771902366596528480848577129708762": "0x2c0febfae1214f1a85b6f9a39f4c74523ed5217590eb246857d671d7861b35fe",
     "45276939554340428771698865022604030782253660716041002232668611227463504055173": "0x4bb8b2a094bdb1153e3b6c00ce53427fd5d987edd5090181162782b90764129f"
   },
-  "cash": 41.060721529785475,
+  "cash": 41.145339029785475,
   "lag": {
     "n": 108,
     "sum_s": 3163.7723774909973,
     "sum_slip_pct": 2.7400886974940355
   },
-  "fees_paid": 3.1517592352745276,
+  "fees_paid": 3.152141735274528,
   "lag_recent": [
     [
       1784790397.8,
@@ -13839,7 +13840,9 @@
       "status": "open",
       "exit_price": null,
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "sold_shares": 0.1,
+      "sold_proceeds": 0.08461750000000001
     }
   },
   "no_miss_toks": [
@@ -13915,22 +13918,6 @@
   ],
   "hwm": 62.940091360075144,
   "missed": [
-    {
-      "ts": 1783767045,
-      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-      "token": "72360978495452180080538327232926295248474801559995120453489389067546448362850",
-      "cond": "0x4e63ee19d9d959a06acfd379800ffc7bd0c70bb69178c4c7e6626962309f6af1",
-      "title": "Dota 2: BetBoom Team vs GamerLegion - Game 2 Winner",
-      "outcome": "GamerLegion",
-      "price": 0.26,
-      "stake": 1.0,
-      "reason": "in-play hold expired unfilled (45s)",
-      "status": "sold",
-      "pnl": -0.01,
-      "settled": 1783767426,
-      "name": "gkmgkldfmg",
-      "exit_price": 0.27
-    },
     {
       "ts": 1783767111,
       "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -17100,14 +17087,29 @@
       "price": 0.96,
       "stake": 2.51,
       "reason": "thin book ($29 within 5c < $50)",
+      "status": "sold",
+      "pnl": -0.79,
+      "settled": 1784820212,
+      "name": "0xbadaf319",
+      "exit_price": 0.6667
+    },
+    {
+      "ts": 1784820207,
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "token": "29922880124871912107369653749261396163687764000386220237409162132192311391947",
+      "cond": "0xfe5188a5b3eb20224878822f8deb3e7e1270415c3d5eb6ad14c9e8380d16b115",
+      "title": "Will Microsoft Corporation (MSFT) hit (HIGH) $450 in July?",
+      "outcome": "No",
+      "price": 0.8594,
+      "stake": 2.51,
+      "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null,
-      "name": "0xbadaf319"
+      "settled": null
     }
   ],
-  "feed_sig": "c2b2740e037ec8e992e314392fe91e4f",
-  "feed_pushed_at": 1784819561.1050277,
+  "feed_sig": "f7c3d9a873763b3aedddd61f5fd530dd",
+  "feed_pushed_at": 1784820076.0873349,
   "adjustments": [
     {
       "ts": 1783906689,
@@ -17162,7 +17164,7 @@
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784814235,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784819646,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784819791,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784745123,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784807970,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784798961,
@@ -17173,10 +17175,10 @@
     "ts": 1784658804
   },
   "last_fill": {
-    "ts": 1784819630,
-    "side": "BUY",
-    "price": 0.95,
-    "shares": 2.64,
+    "ts": 1784820179,
+    "side": "SELL",
+    "price": 0.85,
+    "shares": 0.1,
     "title": "Will the price of Ethereum be between $1,900 and $2,000 on J",
     "outcome": "No"
   }

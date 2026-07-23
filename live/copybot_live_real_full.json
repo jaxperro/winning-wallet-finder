@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784819656,
+ "updated": 1784820213,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.45,
@@ -8,8 +8,8 @@
    "wins": 4,
    "open_cost": 14.42,
    "open_n": 6,
-   "miss_n": 61,
-   "miss_pnl": 1169.92,
+   "miss_n": 62,
+   "miss_pnl": 1169.13,
    "last_ts": 1784819629
   },
   "AIcAIc": {
@@ -121,7 +121,9 @@
    "status": "open",
    "exit_price": null,
    "pnl": null,
-   "settled": null
+   "settled": null,
+   "sold_shares": 0.1,
+   "sold_proceeds": 0.08461750000000001
   },
   {
    "token": "80270372288514892122229303181424592994977341771902366596528480848577129708762",
@@ -2422,6 +2424,22 @@
    "price": 0.96,
    "stake": 2.51,
    "reason": "thin book ($29 within 5c < $50)",
+   "status": "sold",
+   "pnl": -0.79,
+   "settled": 1784820212,
+   "name": "0xbadaf319",
+   "exit_price": 0.6667
+  },
+  {
+   "ts": 1784820207,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "29922880124871912107369653749261396163687764000386220237409162132192311391947",
+   "cond": "0xfe5188a5b3eb20224878822f8deb3e7e1270415c3d5eb6ad14c9e8380d16b115",
+   "title": "Will Microsoft Corporation (MSFT) hit (HIGH) $450 in July?",
+   "outcome": "No",
+   "price": 0.8594,
+   "stake": 2.51,
+   "reason": "not copied in the detection window (reconciled)",
    "status": "open",
    "pnl": null,
    "settled": null,
