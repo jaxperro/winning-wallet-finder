@@ -1,73 +1,74 @@
 {
-  "mode": "paper",
-  "bankroll_usd": 1000.0,
-  "bankroll_pct": 0.04,
-  "wallets": [
-    {
-      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-      "name": "Kruto2027",
-      "class": "volume",
-      "floor": 80.0,
-      "floor_pin": 80.0
-    },
-    {
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "name": "0xbadaf319",
-      "class": "volume",
-      "floor": 30.71
-    },
-    {
-      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-      "name": "gkmgkldfmg",
-      "class": "volume",
-      "floor": 470.51
-    },
-    {
-      "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-      "name": "1kto1m",
-      "class": "volume",
-      "floor": 314.43
-    },
-    {
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "name": "BikesAreTheBikes",
-      "class": "volume",
-      "floor": 219.66
-    },
-    {
-      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-      "name": "AIcAIc",
-      "class": "volume",
-      "floor": 375.06
-    },
-    {
-      "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-      "name": "JuiceFarm",
-      "class": "volume"
-    }
-  ],
-  "follow": {
-    "buy_only": true,
-    "entry_mode": "maker",
-    "exit_mode": "hold",
-    "min_their_usd": 25.0,
-    "min_entry": 0.0,
-    "max_entry": 0.95,
-    "class_pct": {
-      "volume": 0.04,
-      "whale": 0.12
-    }
+ "mode": "paper",
+ "bankroll_usd": 1000.0,
+ "bankroll_pct": 0.04,
+ "wallets": [
+  {
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "class": "volume",
+   "floor": 80.0,
+   "floor_pin": 80.0
   },
-  "risk": {
-    "max_trade_usd": 1000000.0,
-    "max_position_usd": 1000000.0,
-    "daily_spend_cap_usd": 1000000.0,
-    "max_total_exposure_usd": 1000000.0,
-    "max_open_positions": 1000,
-    "min_price": 0.0,
-    "max_price": 0.99,
-    "min_order_usd": 5.0,
-    "max_per_event": 0
+  {
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "class": "volume",
+   "floor": 30.71
   },
-  "price_guard_abs": 0.05
+  {
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "class": "volume",
+   "floor": 470.51
+  },
+  {
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "class": "volume",
+   "floor": 314.43
+  },
+  {
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "class": "volume",
+   "floor": 219.66
+  },
+  {
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "class": "volume",
+   "floor": 375.06
+  },
+  {
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "class": "volume"
+  }
+ ],
+ "follow": {
+  "buy_only": true,
+  "entry_mode": "maker",
+  "exit_mode": "mirror",
+  "min_their_usd": 25.0,
+  "min_entry": 0.0,
+  "max_entry": 0.95,
+  "class_pct": {
+   "volume": 0.04,
+   "whale": 0.12
+  },
+  "mirror_sell_min_p": 0.9
+ },
+ "risk": {
+  "max_trade_usd": 1000000.0,
+  "max_position_usd": 1000000.0,
+  "daily_spend_cap_usd": 1000000.0,
+  "max_total_exposure_usd": 1000000.0,
+  "max_open_positions": 1000,
+  "min_price": 0.0,
+  "max_price": 0.99,
+  "min_order_usd": 5.0,
+  "max_per_event": 0
+ },
+ "price_guard_abs": 0.05
 }

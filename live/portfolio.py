@@ -148,6 +148,17 @@ except Exception:
     _FOLLOW = {}
 ENTRY_MODE = os.environ.get("BT_ENTRY_MODE", _FOLLOW.get("entry_mode", "taker"))
 EXIT_MODE = os.environ.get("BT_EXIT_MODE", _FOLLOW.get("exit_mode", "mirror"))
+# band-guarded mirroring (#21 successor): sells below this price are NOT
+# mirrored — held to truth like hold mode (sell-band study: every band
+# <90c lost by mirroring; >=90c saved). 0.0 = mirror everything.
+MIRROR_SELL_MIN_P = float(os.environ.get(
+    "BT_MIRROR_SELL_MIN_P", _FOLLOW.get("mirror_sell_min_p", 0.0)))
+
+
+def _mirrors(exit_p):
+    """Would the bot mirror a sell at this price under the current flags?"""
+    return (EXIT_MODE != "hold"
+            and (exit_p or 0) >= MIRROR_SELL_MIN_P)
 
 
 def entry_model(p, stake):
@@ -525,7 +536,7 @@ def main():
             cash -= cost; fees_paid += fee; perW[b["wallet"]]["bets"] += 1
             shares = stake / p_eff                        # lag-adjusted entry price
             if b["kind"] == "res":
-                if b.get("exit_t") and EXIT_MODE != "hold":
+                if b.get("exit_t") and _mirrors(b.get("exit_p")):
                     # the signal SOLD pre-resolution -> mirror the exit, like the
                     # live bot: their exit price with the slippage haircut against
                     # us, minus the taker fee (sells pay it; redeems don't)
@@ -581,7 +592,7 @@ def main():
         stake = m.get("stake") or STAKE_MIN
         p_eff, fee, cost = entry_model(m["p"], stake)
         shares = stake / p_eff
-        if m.get("exit_t") and EXIT_MODE != "hold":   # would have mirrored
+        if m.get("exit_t") and _mirrors(m.get("exit_p")):  # would have mirrored
             xp = max(0.001, m["exit_p"] * (1 - SLIP))
             return shares * xp - shares * FEE_RATE * xp * (1 - xp) - cost
         if m.get("wp") is not None or m.get("won") is not None:
@@ -600,12 +611,12 @@ def main():
         return m.get("won")
 
     def _missed_won(m):
-        if m.get("exit_t") and EXIT_MODE != "hold":
+        if m.get("exit_t") and _mirrors(m.get("exit_p")):
             return None                       # mirrored exit: truth is the price
         return _truth_won(m)
 
     def _missed_status(m):
-        if m.get("exit_t") and EXIT_MODE != "hold":
+        if m.get("exit_t") and _mirrors(m.get("exit_p")):
             return "sold"
         w = _truth_won(m)
         if w is None:
@@ -683,6 +694,7 @@ def main():
                    for m in missed[:60]],
         "missed_pnl": round(sum(hypo_pnl(m) for m in missed), 2),
         "entry_mode": ENTRY_MODE, "exit_mode": EXIT_MODE,
+        "mirror_sell_min_p": MIRROR_SELL_MIN_P,
     }
     json.dump(out, open(os.path.join(HERE, OUT) if not os.path.isabs(OUT) else OUT, "w"),
               separators=(",", ":"))

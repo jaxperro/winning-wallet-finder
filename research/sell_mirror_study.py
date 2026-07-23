@@ -37,6 +37,28 @@ def main():
     db = tape.connect()
     tape.build_resolved(db)
     pays = fwd.payouts_for(db, [str(s["token"]) for s in sells])
+    # sell-price band slice: WHERE is mirroring unprofitable? delta>0 = the
+    # exit gave up value (holding won); delta<0 = the exit saved us.
+    BANDS = [(0, .30, "<30c"), (.30, .50, "30-50c"), (.50, .70, "50-70c"),
+             (.70, .90, "70-90c"), (.90, 1.01, ">=90c")]
+    print("\n== SELL-PRICE BANDS (both books pooled, chain-graded) ==")
+    for lo, hi, tag in BANDS:
+        bn = bd = 0
+        for s2 in sells:
+            p2 = pays.get(str(s2["token"]))
+            if p2 is None or p2 == 0.5:
+                continue
+            sp = s2.get("price") or 0
+            if not (lo <= sp < hi):
+                continue
+            sh2 = s2.get("shares") or 0
+            bn += 1
+            bd += (p2 - sp) * sh2
+        if bn:
+            lbl = ("SKIP-MIRROR (exits gave up value)" if bd > 0
+                   else "mirror OK (exits saved money)")
+            print(f"  {tag:>7}: n={bn:>3} · net delta {bd:+8.2f} "
+                  f"(${bd/bn:+.2f}/sell) -> {lbl}")
     for book in ("live", "paper"):
         ss = [s for s in sells if s["_book"] == book]
         n = unk = refund = right = wrong = 0

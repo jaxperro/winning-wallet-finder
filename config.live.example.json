@@ -1,89 +1,96 @@
 {
-  "mode": "live",
-  "_comment": "Live-test config, SECRET-FREE and committed. The Fly live worker (wwf-copybot-live, COPYBOT_ROLE=live) reads THIS file and takes secrets from env (LIVE_PRIVATE_KEY/LIVE_FUNDER_ADDRESS + LIVE_CONFIRM to arm). Mac use: cp -> config.live.json and fill live.*. RULES: bankroll_usd MUST equal actual equity at rebase time (the 1.4 cash-anchor checks state cash vs chain). 2026-07-10 USER decision: hard caps retired \u2014 sizing is paper-parity 4%-of-equity (floored at the venue $1 min order); follow set mirrors copybot.paper.json (Set E) so paper and live books stay comparable.",
-  "bankroll_usd": 66.42,
-  "bankroll_pct": 0.04,
-  "price_guard_abs": 0.05,
-  "fak_retry_s": 10,
-  "fak_retry_niche_s": {"crypto": 4, "esports": 10, "sports": 25,
-                        "geo": 25, "politics": 25, "other": 25},
-  "taker_fee_rate": 0.03,
-  "discord_webhook": "",
-  "follow": {
-    "buy_only": true,
-    "entry_mode": "maker",
-    "exit_mode": "hold",
-    "min_their_usd": 25.0,
-    "min_entry": 0.0,
-    "max_entry": 0.95,
-    "class_pct": {
-      "volume": 0.04,
-      "whale": 0.12
-    }
+ "mode": "live",
+ "_comment": "Live-test config, SECRET-FREE and committed. The Fly live worker (wwf-copybot-live, COPYBOT_ROLE=live) reads THIS file and takes secrets from env (LIVE_PRIVATE_KEY/LIVE_FUNDER_ADDRESS + LIVE_CONFIRM to arm). Mac use: cp -> config.live.json and fill live.*. RULES: bankroll_usd MUST equal actual equity at rebase time (the 1.4 cash-anchor checks state cash vs chain). 2026-07-10 USER decision: hard caps retired \u2014 sizing is paper-parity 4%-of-equity (floored at the venue $1 min order); follow set mirrors copybot.paper.json (Set E) so paper and live books stay comparable.",
+ "bankroll_usd": 66.42,
+ "bankroll_pct": 0.04,
+ "price_guard_abs": 0.05,
+ "fak_retry_s": 10,
+ "fak_retry_niche_s": {
+  "crypto": 4,
+  "esports": 10,
+  "sports": 25,
+  "geo": 25,
+  "politics": 25,
+  "other": 25
+ },
+ "taker_fee_rate": 0.03,
+ "discord_webhook": "",
+ "follow": {
+  "buy_only": true,
+  "entry_mode": "maker",
+  "exit_mode": "mirror",
+  "min_their_usd": 25.0,
+  "min_entry": 0.0,
+  "max_entry": 0.95,
+  "class_pct": {
+   "volume": 0.04,
+   "whale": 0.12
   },
-  "risk": {
-    "max_trade_usd": 1000000.0,
-    "max_position_usd": 1000000.0,
-    "daily_spend_cap_usd": 1000000.0,
-    "max_total_exposure_usd": 1000000.0,
-    "max_open_positions": 1000,
-    "max_per_event": 0,
-    "min_price": 0.0,
-    "max_price": 0.99,
-    "min_order_usd": 1.0
+  "mirror_sell_min_p": 0.9
+ },
+ "risk": {
+  "max_trade_usd": 1000000.0,
+  "max_position_usd": 1000000.0,
+  "daily_spend_cap_usd": 1000000.0,
+  "max_total_exposure_usd": 1000000.0,
+  "max_open_positions": 1000,
+  "max_per_event": 0,
+  "min_price": 0.0,
+  "max_price": 0.99,
+  "min_order_usd": 1.0
+ },
+ "live": {
+  "private_key": "",
+  "funder_address": "",
+  "signature_type": 1,
+  "order_type": "FAK",
+  "auto_redeem": false,
+  "rpc_url": ""
+ },
+ "wallets": [
+  {
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "class": "volume",
+   "floor": 80.0
   },
-  "live": {
-    "private_key": "",
-    "funder_address": "",
-    "signature_type": 1,
-    "order_type": "FAK",
-    "auto_redeem": false,
-    "rpc_url": ""
+  {
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "class": "volume",
+   "floor": 41.21
   },
-  "wallets": [
-    {
-      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-      "name": "Kruto2027",
-      "class": "volume",
-      "floor": 80.0
-    },
-    {
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "name": "0xbadaf319",
-      "class": "volume",
-      "floor": 41.21
-    },
-    {
-      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-      "name": "gkmgkldfmg",
-      "class": "volume",
-      "floor": 470.51
-    },
-    {
-      "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-      "name": "1kto1m",
-      "class": "volume",
-      "floor": 328.77
-    },
-    {
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "name": "BikesAreTheBikes",
-      "class": "volume",
-      "floor": 227.2
-    },
-    {
-      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-      "name": "AIcAIc",
-      "class": "volume",
-      "floor": 341.23
-    },
-    {
-      "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-      "name": "JuiceFarm",
-      "class": "volume"
-    }
-  ],
-  "feed_path": "live/copybot_live_real.json",
-  "fill_log": "copybot_fills.live.jsonl",
-  "shadow_log": "rtds_shadow.live.jsonl"
+  {
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "class": "volume",
+   "floor": 470.51
+  },
+  {
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "class": "volume",
+   "floor": 328.77
+  },
+  {
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "class": "volume",
+   "floor": 227.2
+  },
+  {
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "class": "volume",
+   "floor": 341.23
+  },
+  {
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "class": "volume"
+  }
+ ],
+ "feed_path": "live/copybot_live_real.json",
+ "fill_log": "copybot_fills.live.jsonl",
+ "shadow_log": "rtds_shadow.live.jsonl"
 }

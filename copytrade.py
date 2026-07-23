@@ -732,6 +732,29 @@ class CopyTrader:
         price = self._live_price(token, "sell")
         if price is None:
             return
+        # band-guarded mirroring (2026-07-23, #21 successor): the sell-band
+        # study (research/sell_mirror_study.py) showed mirrored exits LOSE
+        # in every band below 90c (exits gave up value; <30c +$79/sell left
+        # on the table) and SAVE money at >=90c (near-resolution
+        # profit-taking, n=68 -$0.85/sell). Sells below the floor are
+        # ignored-and-ledgered exactly like hold mode, so the
+        # counterfactual stream keeps accruing.
+        min_p = (self.cfg.get("follow") or {}).get("mirror_sell_min_p", 0.0)
+        if price < min_p:
+            self.log(f"EXIT {label} — BAND-SKIP (sell {price:.2f} < "
+                     f"{min_p:.2f} floor, their frac {frac:.2f})")
+            if self.on_ignored_exit:
+                self.on_ignored_exit({
+                    "ts": round(time.time(), 1), "token": str(token),
+                    "their_size": their_size, "their_prev": their_prev,
+                    "frac": round(frac, 4), "reason": "band",
+                    "sell_px": round(price, 4),
+                    "shares_held": round(mine.get("shares", 0), 4),
+                    "cost_held": round(mine.get("cost", 0), 2),
+                    "title": (mine.get("title") or "")[:80],
+                    "outcome": mine.get("outcome"),
+                    "wallet": mine.get("wallet", "")})
+            return
         if any(po.get("token") == token
                for po in self.state.get("pending_orders", [])):
             self.log(f"EXIT {label} — skip (in-play hold already pending on "
