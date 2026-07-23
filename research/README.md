@@ -84,6 +84,26 @@ Layout:
                         m=4c/R=1s under queue-front optimism; every
                         R=4s cell −$7-9/fill — staleness IS the
                         adverse selection; ~31-50k graded fills/cell)
+  copy_maker_patience.py  T11 — #20's 60s maker TTL is ALREADY OPTIMAL:
+                        touches land in 1-2s, fill rate flat after 5m,
+                        and the marginal late fills lower EV (loser
+                        fill-rate 100% at 5m+ — patience past a minute
+                        only harvests adverse selection)
+  maker_unwind.py       T12 — maker-sharp unwinds are NOT exit signals:
+                        STAY +$5.95/unwind (n=265, 2.6x the bar) vs
+                        FADE -$5.22 — #21 one species over; Study C
+                        keeps NO exit rule (concentration caveat in
+                        the header; --grade-only re-grades the dump)
+  depth_imbalance.py    T14 — book imbalance at fill is a BAND: extremes
+                        adverse both ways, balanced 0.25-0.47 least-bad
+                        in BOTH harnesses (portable #23 guard
+                        candidate); slope "gate" = quantile-tie
+                        artifact — check feature variance first
+  sharp_halflife.py     T15 — published-set churn is violent: 49% of
+                        detected sharps gone in 1 day, ~10% at 28d
+                        (real as-of git history of watch_sharps.json);
+                        EV-by-age = churn's meaning — pending its
+                        81k-cond chain-ensure
   requote.py       crater→requote timing (feeds the bots' per-niche retry)
   forward.py       scores frozen studies on new tape days → forward_ledger
                    (payouts_for chain overlay mandatory; controls + sub5c

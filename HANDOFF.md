@@ -138,7 +138,25 @@ push through.
   T6 lean-follow → #22 (fade arm FAILED its concentration gate,
   report-only); T9 lead-lag → #23; T1 maker-quote Stage-1 KILL; T7
   settlement-discount industrialized, parked; T8 crater-rejects were
-  good misses; T10 age gradient needs sample.
+  good misses; T10 age gradient needs sample. Batch three (same night)
+  — T11: #20's 60s TTL already optimal, patience past 60s = adverse
+  selection; T12: maker-sharp unwinds NOT exit signals (STAY
+  +$5.95/unwind n=265; Study C keeps no exit rule; #22 comment); T14:
+  balanced-book imbalance band (0.25-0.47) = portable fill-guard
+  candidate for #23; T15: sharp-screen churn 49%/1d, ~10%/28d
+  (EV-by-age grade pending its chain-ensure).
+- **Backtest = paper-execution parity (2026-07-23, 004911b)**:
+  live/portfolio.py replays the PAPER book's follow flags (maker
+  feeless entries — declared optimistic bound; hold-through exits;
+  sold-unresolved carry as open at the exit print). The backtest is NO
+  LONGER a taker control — it tracks whatever copybot.paper.json runs.
+  First maker/hold run: equity +36%, 0 fees, 86 resolved (vs 390 under
+  mirror) — hold-mode LOCKS capital, misses swell to 1,588; that is
+  #21's cost side, visible. /trading gained a "Profitable bench"
+  section (realized + would-be-missed > 0): 12/15 clear it; JuiceFarm
+  trimmed (+$33 realized, −$72 would-be). JuiceFarm's conviction floor
+  pins at the next 08:00 sync_floors run (whole-book copies until
+  then — flagged 2026-07-23 evening).
 - Dashboards: jaxperro.com/{trading,live,test,value} — /test = all four
   studies on one page (old /surge + /oracle URLs redirect) · daily pipeline
   on the Mac at 08:00 (launchd, lockfile) — floors, bench forward table,

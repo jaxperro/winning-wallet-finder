@@ -704,6 +704,50 @@ can't flatter the verdict. Either outcome is a finding: the premium
 median kills the mirage in three days, or the paper ledger prices the
 first edge that survives its own execution.
 
+**Batch three (2026-07-23 night, while the harness deployed):** four
+more questions answered on already-flowing data, plus the backtest
+itself brought under the discipline.
+
+- **T11, the patience curve:** #20's 60-second maker TTL is already
+  optimal. Touches arrive in 1–2s (p90 ≤7s), fill rate flatlines by 5
+  minutes, and the marginal late fills LOWER EV/signal (+$16.62 @60s vs
+  +$15.36 @5m+) — at 5m+ every eventual loser reaches the bid and the
+  3% that never fill are winners running away. Patience past a minute
+  buys nothing but adverse selection.
+- **T14, depth structure:** one real cross-harness regularity in 1,923
+  chain-graded fills — book imbalance at fill time is a BAND, not a
+  dial. Extremes are adverse both ways (empty-bid books = falling
+  knives, bid-heavy books = the winner's curse); the balanced 0.25–0.47
+  middle is least-bad in both instruments. A portable fill-quality
+  guard candidate for #23's thin siblings. The slope feature's
+  "consistent" gate was a quantile-tie artifact (books cluster at 4-5¢
+  across five levels; the quartile boundary landed inside tied values)
+  — discarded, lesson logged: check feature variance before trusting a
+  quantile gate.
+- **T12, unwinds:** maker-sharp inventory take-backs are NOT exit
+  signals. STAY on the lean after the sharp unwinds half: +$5.95/unwind
+  (n=265, 2.6× the pre-declared bar); FADE it: −$5.22. #21's finding
+  one species over — the lean's information outlives the sharp's own
+  profit-taking. Study C keeps no exit rule. (Concentration caveat in
+  the file header: top-5 assets carry the total, the tail bleeds —
+  decisive for the exit-rule question, not a new edge.)
+- **T15, sharp half-life (first half):** the published sharp screen
+  churns HARD — 49% of newly detected wallets are gone within a day,
+  34% survive three days, ~10% a month. Whether that is edge death or
+  threshold jitter awaits the EV-by-age grade (the chain-ensure over
+  these wallets' pre-pipeline history is the long pole).
+- **The backtest now replays the paper book's execution** (portfolio.py
+  reads the follow flags — maker feeless entries as the DECLARED
+  optimistic bound, hold-through exits; flip the config back and the
+  backtest follows). Its first maker/hold run surfaced #21's cost side
+  honestly: holding to resolution locks capital — the $1k replay places
+  ~4× fewer bets (86 resolved vs 390 under mirror-exits) while missed
+  bets swell. The /trading "Profitable bench" section now scores the
+  15-wallet bench on realized + would-be-missed P&L: 12 of 15 carry
+  their weight, several only BECAUSE of their misses (EdwardIN −$81
+  realized, +$791 would-be) — and JuiceFarm is trimmed (+$33 realized,
+  −$72 would-be: its misses were good misses).
+
 ## Repo layout
 
 - `insider.py` — the detector: z-score/p-value, timing/freshness/sizing signals,
