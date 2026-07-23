@@ -1,0 +1,27 @@
+# wwf-lagbot — T9 Stage-2 lead-lag PAPER harness (research silo).
+# No keys, no orders, code baked in image. Verdict binds to its
+# pre-registration issue; graded nightly on the Mac (grade_lag.py).
+app = "wwf-lagbot"
+primary_region = "arn"
+
+[build]
+  dockerfile = "research/lagbot.Dockerfile"
+
+[[mounts]]
+  source = "lag"
+  destination = "/data"
+
+# read-only paper feed (GET /feed, CORS-open)
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+
+[[restart]]
+  policy = "always"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"
