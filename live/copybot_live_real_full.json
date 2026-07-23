@@ -1,16 +1,16 @@
 {
  "mode": "live",
- "updated": 1784820340,
+ "updated": 1784821437,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 1.45,
-   "n": 19,
+   "realized": 1.54,
+   "n": 20,
    "wins": 4,
-   "open_cost": 16.92,
-   "open_n": 7,
+   "open_cost": 14.42,
+   "open_n": 6,
    "miss_n": 62,
    "miss_pnl": 1169.13,
-   "last_ts": 1784820335
+   "last_ts": 1784821437
   },
   "AIcAIc": {
    "realized": -14.85,
@@ -118,10 +118,12 @@
    "cost": 2.5,
    "fee": 0.0172,
    "opened": 1784820335,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null
+   "status": "closed",
+   "exit_price": 0.8054,
+   "pnl": 0.09,
+   "settled": 1784821437,
+   "sold_shares": 3.24,
+   "sold_proceeds": 2.60944092
   },
   {
    "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
