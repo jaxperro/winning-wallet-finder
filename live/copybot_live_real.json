@@ -1,17 +1,17 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.52,
+ "stake": 2.42,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
  "cash": 36.2,
- "deployed": 26.75,
+ "deployed": 24.27,
  "reserve": 0.0,
- "realized": -12.91,
+ "realized": -15.39,
  "adjustments": 9.44,
  "ledger_drift": 0.01,
- "open_count": 14,
+ "open_count": 13,
  "fees_paid": 3.26,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
  },
  "bets": [
   {
+   "token": "107504891632815999637002772178305299765396815437535131855162503864828528783551",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Solary",
+   "title": "LoL: Solary vs ZYB Esport (BO1) - LFL Regular Season",
+   "their_price": 0.76,
+   "my_price": 0.75,
+   "slippage_pct": -0.0132,
+   "lag_s": 4.9,
+   "shares": 3.31,
+   "cost": 2.48,
+   "fee": 0.02,
+   "opened": 1784833129,
+   "status": "closed",
+   "exit_price": null,
+   "pnl": null,
+   "settled": 1784844991,
+   "end_ts": 1784851200
+  },
+  {
    "token": "87461865681689699081648262736937951256169066109275377425968376597869321557502",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "name": "BikesAreTheBikes",
@@ -68,26 +88,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785456000
-  },
-  {
-   "token": "107504891632815999637002772178305299765396815437535131855162503864828528783551",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "Solary",
-   "title": "LoL: Solary vs ZYB Esport (BO1) - LFL Regular Season",
-   "their_price": 0.76,
-   "my_price": 0.75,
-   "slippage_pct": -0.0132,
-   "lag_s": 4.9,
-   "shares": 3.31,
-   "cost": 2.48,
-   "fee": 0.02,
-   "opened": 1784833129,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784851200
   },
   {
    "token": "9143471318122042059988785265162570023911768060235394311552003051606225073096",
@@ -3157,11 +3157,11 @@
    "realized": 0.0,
    "n": 0,
    "wins": 0,
-   "open_cost": 2.48,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 0,
    "miss_pnl": 0.0,
-   "last_ts": 1784833129
+   "last_ts": 1784844991
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3184,5 +3184,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784837831
+ "updated": 1784844991
 }
