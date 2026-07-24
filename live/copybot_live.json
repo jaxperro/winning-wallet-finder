@@ -2127,6 +2127,21 @@
  ],
  "missed": [
   {
+   "ts": 1784853302,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "109311392430765088290844176098874963554774723556919562323769686251788471847414",
+   "cond": "0x6ff3921d3101cb89b2e201753a0c915482b566ff65d08c4d0f18505aea8675b2",
+   "title": "Will NVIDIA (NVDA) hit (HIGH) $224 Week of July 20 2026?",
+   "outcome": "No",
+   "price": 0.943,
+   "stake": 44.67,
+   "reason": "maker bid unfilled (111s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784492349,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "62074667087255747412382561081475311823484268378809285620641251664614873335395",
@@ -3062,21 +3077,6 @@
    "settled": 1784485764,
    "name": "1kto1m",
    "exit_price": 0.5448
-  },
-  {
-   "ts": 1784482284,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "17973586937761078448873484917108971852340583833844287573538816307502825884858",
-   "cond": "0xb12f5e328a7d9f7a26e0a074625ea775025104e673c776d575dab422a472ef59",
-   "title": "Israel closes its airspace by July 31?",
-   "outcome": "No",
-   "price": 0.63,
-   "stake": 24.52,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
  "missed_pnl": 96649.36,
@@ -3095,7 +3095,7 @@
    "wins": 13,
    "open_cost": 783.54,
    "open_n": 11,
-   "miss_n": 60,
+   "miss_n": 61,
    "miss_pnl": 97003.35,
    "last_ts": 1784824866
   },
@@ -3180,5 +3180,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784851004
+ "updated": 1784853308
 }

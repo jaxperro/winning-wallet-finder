@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784851004,
+ "updated": 1784853308,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 557.51,
@@ -8,7 +8,7 @@
    "wins": 13,
    "open_cost": 783.54,
    "open_n": 11,
-   "miss_n": 60,
+   "miss_n": 61,
    "miss_pnl": 97003.35,
    "last_ts": 1784824866
   },
@@ -4379,6 +4379,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784853302,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "109311392430765088290844176098874963554774723556919562323769686251788471847414",
+   "cond": "0x6ff3921d3101cb89b2e201753a0c915482b566ff65d08c4d0f18505aea8675b2",
+   "title": "Will NVIDIA (NVDA) hit (HIGH) $224 Week of July 20 2026?",
+   "outcome": "No",
+   "price": 0.943,
+   "stake": 44.67,
+   "reason": "maker bid unfilled (111s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784492349,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
