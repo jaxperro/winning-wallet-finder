@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 121.03,
+ "stake": 121.05,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3026.5,
- "cash": 1337.81,
- "deployed": 1688.01,
+ "cash": 1342.98,
+ "deployed": 1683.38,
  "reserve": 0.0,
- "realized": 2025.79,
+ "realized": 2026.32,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
  "open_count": 24,
- "fees_paid": 352.87,
+ "fees_paid": 352.88,
  "fee_rate": 0.03,
  "lag": {
   "n": 243,
@@ -3082,10 +3082,10 @@
  ],
  "missed_pnl": 96603.97,
  "last_fill": {
-  "ts": 1784886202,
+  "ts": 1784886433,
   "side": "SELL",
   "price": 0.96,
-  "shares": 5.25,
+  "shares": 5.39,
   "title": "Le Pen endorses non-Bardella PM by December 31, 2026?",
   "outcome": "No"
  },
@@ -3181,5 +3181,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784886202
+ "updated": 1784886434
 }
