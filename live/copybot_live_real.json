@@ -2108,6 +2108,21 @@
  ],
  "missed": [
   {
+   "ts": 1784876364,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "80495693308906829029683308162293224578453743674738440139240596924963250131399",
+   "cond": "0x7d31a4289f70ec791327d21344714975ac446c7cf82377889fa2eaa57d671804",
+   "title": "Will the highest temperature in Shanghai be 35\u00b0C on July 24?",
+   "outcome": "No",
+   "price": 0.89,
+   "stake": 2.42,
+   "reason": "order rejected: exception: price must conform to tick size 0.01 with at most",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784824151,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "53147856084273572324920349998954911060427762367735766007832600228479869956378",
@@ -3048,25 +3063,9 @@
    "settled": 1784477763,
    "name": "1kto1m",
    "exit_price": 0.0912
-  },
-  {
-   "ts": 1784475771,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "107519224001054263439274706964696866987866557807915774909819079291264377299291",
-   "cond": "0x2621f174955892ef32bcabd62ae74d1e14530f0585527322fdf2d2cb7e41c27a",
-   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 2 Winner",
-   "outcome": "BetBoom Team",
-   "price": 0.46,
-   "stake": 2.07,
-   "reason": "price moved 0.33\u21920.46",
-   "status": "sold",
-   "pnl": -0.3,
-   "settled": 1784476134,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.4072
   }
  ],
- "missed_pnl": 1165.51,
+ "missed_pnl": 1166.52,
  "last_fill": {
   "ts": 1784874173,
   "side": "BUY",
@@ -3082,7 +3081,7 @@
    "wins": 5,
    "open_cost": 14.33,
    "open_n": 6,
-   "miss_n": 64,
+   "miss_n": 65,
    "miss_pnl": 1169.13,
    "last_ts": 1784874168
   },
@@ -3187,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784874173
+ "updated": 1784876364
 }
