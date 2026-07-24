@@ -26,7 +26,8 @@
    "volume": 0.04,
    "whale": 0.12
   },
-  "mirror_sell_min_p": 0.9
+  "mirror_sell_min_p": 0.9,
+  "conviction_scope": "trade"
  },
  "risk": {
   "max_trade_usd": 1000000.0,

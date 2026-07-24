@@ -243,6 +243,13 @@ FOLLOW_DEFAULT = {
     "entry_mode": "taker",     # "maker" = rest a GTC bid at their price
     "exit_mode": "mirror",     # "hold"  = never mirror their sells
     "maker_ttl_s": 60,         # registry-side cancel for resting maker bids
+    # #25 dark flag (pre-registered): what level the conviction floor checks.
+    # "trade"    = each individual fill must clear the floor (current)
+    # "position" = a rolling net-USD aggregate per (wallet, token) counts —
+    #   clip-built conviction passes once the aggregate crosses the floor
+    #   (the 1kto1m class: 36 sub-floor-clip positions in one parity week).
+    #   In-memory aggregate: rebuilds from flow after a restart (declared).
+    "conviction_scope": "trade",
 }
 
 RECENT_TRADE_WINDOW_S = 600    # webhook just told us a trade happened; ignore stale
@@ -722,6 +729,26 @@ class FollowFilter:
                        if c == "whale"}
         wl = cfg.get("watchlist") or [w["wallet"] for w in cfg.get("watch", [])]
         self.wallets = {w.lower() for w in wl}
+        # #25: conviction_scope "position" — rolling net-USD per (wallet,
+        # token), fed by EVERY in-set trade (including sub-floor clips the
+        # engine never sees). In-memory; rebuilds from flow after restart.
+        self.scope = f.get("conviction_scope", "trade")
+        self.agg = {}                  # (wallet, token) -> [net_usd, last_ts]
+
+    def _agg_update(self, wallet, t):
+        a = t.get("asset")
+        if not a:
+            return 0.0
+        usd = t.get("usdcSize") or t.get("size", 0) * t.get("price", 0) or 0
+        key = (wallet.lower(), str(a))
+        st = self.agg.get(key) or [0.0, 0.0]
+        st[0] = max(0.0, st[0] + (usd if t.get("side") == "BUY" else -usd))
+        st[1] = time.time()
+        self.agg[key] = st
+        if len(self.agg) > 8000:       # prune stalest tenth, bound memory
+            for k in sorted(self.agg, key=lambda k: self.agg[k][1])[:800]:
+                del self.agg[k]
+        return st[0]
 
     def floor(self, wallet):
         if wallet.lower() in self.whales:
@@ -734,12 +761,19 @@ class FollowFilter:
             return False, "wallet not in follow set"
         side = t.get("side")
         if side == "SELL":
+            if self.scope == "position":
+                self._agg_update(wallet, t)         # sells shrink the aggregate
             return True, None                       # engine exits only if we hold
         if side != "BUY":
             return False, f"side {side}"
         usd = t.get("usdcSize") or t.get("size", 0) * t.get("price", 0)
         fl = self.floor(wallet)
-        if usd < fl:
+        if self.scope == "position":
+            net = self._agg_update(wallet, t)
+            if usd < fl and net < fl:
+                return False, (f"clip ${usd:,.0f} · aggregate ${net:,.0f} "
+                               f"< conviction floor ${fl:,.0f}")
+        elif usd < fl:
             return False, f"${usd:,.0f} < conviction floor ${fl:,.0f}"
         p = t.get("price", 0)
         if not (self.min_entry <= p <= self.max_entry):
@@ -752,6 +786,8 @@ class FollowFilter:
         md = (f" · entry_mode {self.entry_mode} · exit_mode {self.exit_mode}"
               if (self.entry_mode, self.exit_mode) != ("taker", "mirror")
               else "")
+        md += (f" · conviction_scope {self.scope}"
+               if self.scope != "trade" else "")
         return (f"follow filter · {'BUY-only' if self.buy_only else 'BUY+SELL'} · "
                 f"conviction ≥ ${self.min_their_usd:,.0f}{pw}{wh} · "
                 f"entry [{self.min_entry:.2f},{self.max_entry:.2f}]{md}")
