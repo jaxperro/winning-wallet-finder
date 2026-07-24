@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784898656,
+ "updated": 1784902291,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.61,
@@ -8,7 +8,7 @@
    "wins": 5,
    "open_cost": 13.33,
    "open_n": 5,
-   "miss_n": 65,
+   "miss_n": 66,
    "miss_pnl": 1169.25,
    "last_ts": 1784886185
   },
@@ -2576,6 +2576,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784902290,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "38365494018831710677520416689919565222584467732964144219797493486772775024046",
+   "cond": "0x4d7f97d4107a6b724a4f5bff30dd2821841a6e025ee61eae84cc9e3facf40349",
+   "title": "Will Trump meet with Netanyahu by August 31, 2026?",
+   "outcome": "Yes",
+   "price": 0.72,
+   "stake": 2.42,
+   "reason": "price moved 0.62\u21920.72",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784898656,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
