@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 126.33,
+ "stake": 129.17,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1367.34,
- "deployed": 1790.8,
+ "cash": 1564.84,
+ "deployed": 1664.42,
  "reserve": 0.0,
- "realized": 2158.11,
+ "realized": 2229.23,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 25,
- "fees_paid": 362.16,
+ "open_count": 24,
+ "fees_paid": 362.33,
  "fee_rate": 0.03,
  "lag": {
   "n": 251,
@@ -63,11 +63,13 @@
    "cost": 126.38,
    "fee": 1.44,
    "opened": 1784920113,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784851200
+   "status": "closed",
+   "exit_price": 0.9691,
+   "pnl": 69.68,
+   "settled": 1784923179,
+   "end_ts": 1784851200,
+   "sold_shares": 203.79,
+   "sold_proceeds": 197.5
   },
   {
    "token": "17278012384173360502232131272354786231595802723343593413625940837844848366978",
@@ -3085,9 +3087,9 @@
  ],
  "missed_pnl": 96486.01,
  "last_fill": {
-  "ts": 1784920113,
-  "side": "BUY",
-  "price": 0.6201,
+  "ts": 1784923179,
+  "side": "SELL",
+  "price": 0.97,
   "shares": 203.79,
   "title": "S&P 500 (SPX) Up or Down on July 24?",
   "outcome": "Down"
@@ -3114,14 +3116,14 @@
    "last_ts": 1784655289
   },
   "1kto1m": {
-   "realized": 251.46,
-   "n": 13,
+   "realized": 321.14,
+   "n": 14,
    "wins": 0,
-   "open_cost": 126.38,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 14,
    "miss_pnl": -16.16,
-   "last_ts": 1784920113
+   "last_ts": 1784923179
   },
   "Kruto2027": {
    "realized": 749.99,
@@ -3184,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784922843
+ "updated": 1784923179
 }
