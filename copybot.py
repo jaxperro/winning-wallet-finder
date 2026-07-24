@@ -53,6 +53,7 @@ import hashlib
 import hmac
 import json
 import os
+import re
 import ssl
 import sys
 import threading
@@ -555,9 +556,42 @@ class LedgerLiveExecutor:
             return {"ok": False, "filled_shares": 0.0, "price": price,
                     "resp": f"exception: {e}", "paper": False}
         if not getattr(r, "ok", False):       # RejectedOrder: typed code + message
-            return {"ok": False, "filled_shares": 0.0, "price": price,
-                    "resp": f"{getattr(r, 'code', '?')}: {getattr(r, 'message', r)}",
-                    "paper": False}
+            msg = str(getattr(r, "message", r))
+            # tick-size conformance retry (2026-07-24, #24 audit): `d` infers
+            # precision from the INPUT price's decimals, but a sharp's VWAP
+            # (e.g. 0.485) on a 0.01-tick market yields an off-tick bound the
+            # venue rejects. The rejection message names the real tick —
+            # requantize the bound to it (BUY floors, SELL ceils: both only
+            # tighten) and retry ONCE.
+            m_t = re.search(r"tick size (0\.0*1)", msg)
+            if m_t:
+                tick = float(m_t.group(1))
+                dp = max(0, -int(math.floor(math.log10(tick) + 1e-9)))
+                try:
+                    if side == "BUY":
+                        mp = max(tick, math.floor(
+                            min(max(price * (1 + self._slip), price), 0.99)
+                            / tick) * tick)
+                        r = self.client.place_market_order(
+                            token_id=token_id, side="BUY",
+                            amount=max(round(sz * price, 2), 1.0),
+                            max_price=round(mp, dp), order_type=self._otype)
+                    else:
+                        mp = max(tick, math.ceil(
+                            min(max(price * (1 - self._slip), tick), price)
+                            / tick) * tick)
+                        r = self.client.place_market_order(
+                            token_id=token_id, side="SELL", shares=sz,
+                            min_price=round(mp, dp), order_type=self._otype)
+                except Exception as e:
+                    return {"ok": False, "filled_shares": 0.0, "price": price,
+                            "resp": f"exception (tick retry): {e}",
+                            "paper": False}
+            if not getattr(r, "ok", False):
+                return {"ok": False, "filled_shares": 0.0, "price": price,
+                        "resp": f"{getattr(r, 'code', '?')}: "
+                                f"{getattr(r, 'message', r)}",
+                        "paper": False}
         making = float(r.making_amount or 0)  # what we gave (matched)
         taking = float(r.taking_amount or 0)  # what we got (matched)
         filled, usd = (taking, making) if side == "BUY" else (making, taking)
@@ -1029,6 +1063,7 @@ class Copybot:
         self.shadow_log = cfg.get("shadow_log", "rtds_shadow.jsonl")
         # #21: append-only ignored-exit ledger (derived per book)
         self.ignored_log = self.fill_log.replace("fills", "ignored_exits")
+        self.reject_log = self.fill_log.replace("fills", "rejects")
         # persisted across restarts via the engine's state file
         self.conds = engine.state.setdefault("conds", {})   # token_id -> conditionId (open positions)
         # #18 empty-cond repair: in-memory backoff/alarm bookkeeping (a reboot
@@ -1185,6 +1220,19 @@ class Copybot:
         our own fill, so ask-side depth is net of what we took — fine for a
         first-order model. Best-effort: never blocks or fails a copy."""
         return book_depth(token)   # dedupe 2026-07-19 (closes #6): was a line-for-line copy
+
+    def write_reject(self, rec):
+        """#24 v1 instrumentation: one JSONL row per follow-filter rejection
+        of an IN-SET wallet's BUY (floor / entry-band). Append-only; splits
+        the reconciliation's UNSEEN bucket into screen-vs-universe honestly
+        (the 1kto1m clip class was invisible without this). Not a behavior
+        change — the signal was already being skipped, now it leaves a row."""
+        rec["mode"] = "live" if self.engine.ex.live else "paper"
+        try:
+            with open(os.path.join(self.here, self.reject_log), "a") as fh:
+                fh.write(json.dumps(rec) + "\n")
+        except Exception:
+            pass
 
     def write_ignored_exit(self, rec):
         """#21 hold-through instrumentation: one JSONL row per ignored
@@ -2400,6 +2448,19 @@ class Copybot:
             # were too slow on WOULD have qualified — a qualifying miss is worth
             # recording; a below-floor/out-of-band one is a deliberate skip.
             follow, reason = self.filt.check(wallet, t)
+            # #24 v1: an in-set wallet's BUY that the filter rejects leaves a
+            # row (floor/band skips were invisible — screen gap wearing a
+            # universe-gap costume in the reconciliation)
+            if (not follow and reason and t.get("side") == "BUY"
+                    and "not in follow set" not in reason):
+                self.write_reject({
+                    "ts": round(time.time(), 1), "wallet": wallet,
+                    "token": str(t.get("asset") or ""),
+                    "cond": t.get("conditionId"),
+                    "usd": round(t.get("usdcSize") or
+                                 (t.get("size", 0) * t.get("price", 0)), 2),
+                    "price": t.get("price"), "reason": reason,
+                    "title": (t.get("title") or "")[:80]})
             stale = not ignore_stale and time.time() - t.get("timestamp", 0) > RECENT_TRADE_WINDOW_S
             if follow and stale:
                 # a bet we'd have copied but didn't catch in time — webhook missed
