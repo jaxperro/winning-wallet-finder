@@ -2108,6 +2108,21 @@
  ],
  "missed": [
   {
+   "ts": 1784905371,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "35613520187412099541224398067273773941235385627221930769717313222719613151332",
+   "cond": "0xc3a579d99e8b291b923f6cdf026fe86a510411bb0b5190cb5d8764bd425974de",
+   "title": "S&P 500 (SPY) closes above $750 on July 24?",
+   "outcome": "No",
+   "price": 0.844,
+   "stake": 2.42,
+   "reason": "order rejected: exception: order 0x381d202b753c6c4bbb54f66cd4a4cc626bac19b17",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784898192,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "73739632839816504626737108532045400878921898467348280846632249640824887675542",
@@ -3048,25 +3063,9 @@
    "settled": 1784548310,
    "name": "0xbadaf319",
    "exit_price": 0.725
-  },
-  {
-   "ts": 1784506248,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "49788775469879840378761895139813138992013557532307513142725478482968059934617",
-   "cond": "0x56e413f49fa8d580f8bbc354544c6c1c06b0073c4ea572b29136e08924b42fd1",
-   "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $154 Week of July 20 2026?",
-   "outcome": "No",
-   "price": 0.7738,
-   "stake": 2.41,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.23,
-   "settled": 1784513865,
-   "name": "0xbadaf319",
-   "exit_price": 0.8578
   }
  ],
- "missed_pnl": 1169.39,
+ "missed_pnl": 1169.19,
  "last_fill": {
   "ts": 1784887122,
   "side": "BUY",
@@ -3082,7 +3081,7 @@
    "wins": 5,
    "open_cost": 13.33,
    "open_n": 5,
-   "miss_n": 66,
+   "miss_n": 67,
    "miss_pnl": 1169.25,
    "last_ts": 1784886185
   },
@@ -3132,8 +3131,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 12,
-   "miss_pnl": -3.11,
+   "miss_n": 11,
+   "miss_pnl": -3.31,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -3172,8 +3171,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 8,
-   "miss_pnl": 2.45,
+   "miss_n": 9,
+   "miss_pnl": 2.65,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3187,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784904628
+ "updated": 1784905376
 }
