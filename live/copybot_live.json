@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 124.02,
+ "stake": 123.96,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3101.54,
- "cash": 1342.87,
- "deployed": 1757.75,
+ "cash": 1217.28,
+ "deployed": 1881.77,
  "reserve": 0.0,
- "realized": 2100.58,
+ "realized": 2099.02,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 24,
- "fees_paid": 355.85,
+ "open_count": 25,
+ "fees_paid": 357.41,
  "fee_rate": 0.03,
  "lag": {
-  "n": 245,
-  "n24": 18,
-  "avg_s": 3.8,
-  "avg_slip_pct": -0.004,
+  "n": 246,
+  "n24": 19,
+  "avg_s": 3.9,
+  "avg_slip_pct": -0.0038,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "73739632839816504626737108532045400878921898467348280846632249640824887675542",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Bilibili Gaming",
+   "title": "LoL: EDward Gaming vs Bilibili Gaming (BO3) - LPL Group Ascend",
+   "their_price": 0.58,
+   "my_price": 0.58,
+   "slippage_pct": 0.0,
+   "lag_s": 6.0,
+   "shares": 213.83,
+   "cost": 124.02,
+   "fee": 1.56,
+   "opened": 1784898186,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784851200
+  },
   {
    "token": "68315926096182221986995516814797530272425122547938404327641913821151049555944",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2105,27 +2125,6 @@
    "settled": 1784103822,
    "sold_shares": 120.51,
    "sold_proceeds": 99.51
-  },
-  {
-   "token": "91957590828077571068600467857177108160302141593906132362699363384132161023807",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Bitcoin dip to $56,000 July 13-19?",
-   "their_price": 0.771,
-   "my_price": 0.7717,
-   "slippage_pct": -0.0013,
-   "lag_s": 2.4,
-   "shares": 106.15,
-   "cost": 81.91,
-   "fee": 0.56,
-   "opened": 1784103458,
-   "status": "closed",
-   "exit_price": 0.7759,
-   "pnl": -0.12,
-   "settled": 1784103822,
-   "sold_shares": 106.15,
-   "sold_proceeds": 82.36
   }
  ],
  "missed": [
@@ -3087,11 +3086,11 @@
  ],
  "missed_pnl": 96624.23,
  "last_fill": {
-  "ts": 1784895744,
+  "ts": 1784898192,
   "side": "BUY",
-  "price": 0.75,
-  "shares": 165.41,
-  "title": "LoL: EDward Gaming vs Bilibili Gaming - Game 1 Winner",
+  "price": 0.58,
+  "shares": 213.83,
+  "title": "LoL: EDward Gaming vs Bilibili Gaming (BO3) - LPL Group Asce",
   "outcome": "Bilibili Gaming"
  },
  "wallet_pnl": {
@@ -3149,11 +3148,11 @@
    "realized": 181.21,
    "n": 23,
    "wins": 0,
-   "open_cost": 124.06,
-   "open_n": 1,
+   "open_cost": 248.08,
+   "open_n": 2,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784895724
+   "last_ts": 1784898186
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -3186,5 +3185,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784895764
+ "updated": 1784898233
 }
