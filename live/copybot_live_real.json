@@ -2108,6 +2108,21 @@
  ],
  "missed": [
   {
+   "ts": 1784895725,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "68315926096182221986995516814797530272425122547938404327641913821151049555944",
+   "cond": "0x0d58180fdd497d4b5fad00494ea00827c2ff181cb84893d1aa10aa4e56d68c99",
+   "title": "LoL: EDward Gaming vs Bilibili Gaming - Game 1 Winner",
+   "outcome": "Bilibili Gaming",
+   "price": 0.75,
+   "stake": 2.42,
+   "reason": "order rejected: exception: order 0x01ccccea8e5886cc25d979a32418f34effc261392",
+   "status": "lost",
+   "pnl": -2.44,
+   "settled": 1784907170,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1784905371,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "35613520187412099541224398067273773941235385627221930769717313222719613151332",
@@ -2167,21 +2182,6 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784895725,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "68315926096182221986995516814797530272425122547938404327641913821151049555944",
-   "cond": "0x0d58180fdd497d4b5fad00494ea00827c2ff181cb84893d1aa10aa4e56d68c99",
-   "title": "LoL: EDward Gaming vs Bilibili Gaming - Game 1 Winner",
-   "outcome": "Bilibili Gaming",
-   "price": 0.75,
-   "stake": 2.42,
-   "reason": "order rejected: exception: order 0x01ccccea8e5886cc25d979a32418f34effc261392",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
   },
   {
    "ts": 1784885070,
@@ -3065,7 +3065,7 @@
    "exit_price": 0.725
   }
  ],
- "missed_pnl": 1169.19,
+ "missed_pnl": 1166.75,
  "last_fill": {
   "ts": 1784887122,
   "side": "BUY",
@@ -3092,7 +3092,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 12,
-   "miss_pnl": 8.37,
+   "miss_pnl": 5.93,
    "last_ts": 1784725704
   },
   "(incident)": {
@@ -3186,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784906745
+ "updated": 1784907170
 }
