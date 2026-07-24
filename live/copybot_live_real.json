@@ -2108,6 +2108,21 @@
  ],
  "missed": [
   {
+   "ts": 1784895725,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "68315926096182221986995516814797530272425122547938404327641913821151049555944",
+   "cond": "0x0d58180fdd497d4b5fad00494ea00827c2ff181cb84893d1aa10aa4e56d68c99",
+   "title": "LoL: EDward Gaming vs Bilibili Gaming - Game 1 Winner",
+   "outcome": "Bilibili Gaming",
+   "price": 0.75,
+   "stake": 2.42,
+   "reason": "order rejected: exception: order 0x01ccccea8e5886cc25d979a32418f34effc261392",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1784885070,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "34383281909044259756215667723509413820839811815716463480957480797279993360122",
@@ -3050,24 +3065,9 @@
    "settled": 1784485797,
    "name": "1kto1m",
    "exit_price": 0.5448
-  },
-  {
-   "ts": 1784482279,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "17973586937761078448873484917108971852340583833844287573538816307502825884858",
-   "cond": "0xb12f5e328a7d9f7a26e0a074625ea775025104e673c776d575dab422a472ef59",
-   "title": "Israel closes its airspace by July 31?",
-   "outcome": "No",
-   "price": 0.66,
-   "stake": 2.35,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 1168.34,
+ "missed_pnl": 1168.11,
  "last_fill": {
   "ts": 1784887122,
   "side": "BUY",
@@ -3093,7 +3093,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 10,
+   "miss_n": 11,
    "miss_pnl": 7.08,
    "last_ts": 1784725704
   },
@@ -3188,5 +3188,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784887137
+ "updated": 1784895729
 }
