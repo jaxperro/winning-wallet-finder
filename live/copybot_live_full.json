@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784902290,
+ "updated": 1784904120,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 569.48,
@@ -26,11 +26,11 @@
    "realized": 142.98,
    "n": 12,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 123.96,
+   "open_n": 1,
    "miss_n": 14,
    "miss_pnl": -16.16,
-   "last_ts": 1784206643
+   "last_ts": 1784904025
   },
   "Kruto2027": {
    "realized": 749.99,
@@ -94,6 +94,26 @@
   }
  },
  "bets": [
+  {
+   "token": "41280738325832192366820609767968905496399103307083568825188630965658856693531",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Up",
+   "title": "S&P 500 (SPX) Up or Down on July 24?",
+   "their_price": 0.48,
+   "my_price": 0.48,
+   "slippage_pct": 0.0,
+   "lag_s": 57.1,
+   "shares": 258.25,
+   "cost": 123.96,
+   "fee": 1.9338,
+   "opened": 1784904025,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784851200
+  },
   {
    "token": "73739632839816504626737108532045400878921898467348280846632249640824887675542",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
