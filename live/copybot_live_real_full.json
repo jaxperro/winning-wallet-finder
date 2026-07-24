@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784877273,
+ "updated": 1784877689,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.65,
@@ -18,7 +18,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 8,
+   "miss_n": 9,
    "miss_pnl": 4.9,
    "last_ts": 1784725704
   },
@@ -2556,6 +2556,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784877689,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "67912387740604654388311594539741757732325634041020667730293753310456593145775",
+   "cond": "0x366e55ad583f0bc42db0af8c076a07f003d8099ddea6e309aeac8f4086e3f1bd",
+   "title": "LoL: Anyone's Legend vs LGD Gaming - Game 1 Winner",
+   "outcome": "Anyone's Legend",
+   "price": 0.65,
+   "stake": 2.42,
+   "reason": "order rejected: exception: order 0xa61660e19d8101e715ba7ef921f806f74989e6ce8",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
   {
    "ts": 1784876364,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
