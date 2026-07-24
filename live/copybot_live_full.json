@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784882993,
+ "updated": 1784885077,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 562.22,
@@ -56,11 +56,11 @@
    "realized": 114.43,
    "n": 22,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 121.06,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784879002
+   "last_ts": 1784885069
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -94,6 +94,26 @@
   }
  },
  "bets": [
+  {
+   "token": "34383281909044259756215667723509413820839811815716463480957480797279993360122",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Team WE",
+   "title": "LoL: Team WE vs JD Gaming - Game 1 Winner",
+   "their_price": 0.64,
+   "my_price": 0.64,
+   "slippage_pct": 0.0,
+   "lag_s": 1.5,
+   "shares": 189.15,
+   "cost": 121.06,
+   "fee": 1.3074,
+   "opened": 1784885069,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784851200
+  },
   {
    "token": "40257860192328331039995645096358822071679870588847044844154817698500464424757",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",

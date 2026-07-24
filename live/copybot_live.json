@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 121.06,
+ "stake": 121.01,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3026.5,
- "cash": 1454.15,
- "deployed": 1572.35,
+ "cash": 1331.79,
+ "deployed": 1693.41,
  "reserve": 0.0,
- "realized": 2026.47,
+ "realized": 2025.16,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 24,
- "fees_paid": 351.56,
+ "open_count": 25,
+ "fees_paid": 352.87,
  "fee_rate": 0.03,
  "lag": {
-  "n": 242,
-  "n24": 15,
-  "avg_s": 2.3,
-  "avg_slip_pct": -0.0048,
+  "n": 243,
+  "n24": 16,
+  "avg_s": 2.2,
+  "avg_slip_pct": -0.0045,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "34383281909044259756215667723509413820839811815716463480957480797279993360122",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Team WE",
+   "title": "LoL: Team WE vs JD Gaming - Game 1 Winner",
+   "their_price": 0.64,
+   "my_price": 0.64,
+   "slippage_pct": 0.0,
+   "lag_s": 1.5,
+   "shares": 189.15,
+   "cost": 121.06,
+   "fee": 1.31,
+   "opened": 1784885069,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784851200
+  },
   {
    "token": "40257860192328331039995645096358822071679870588847044844154817698500464424757",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2103,27 +2123,6 @@
    "settled": 1784103567,
    "sold_shares": 110.84,
    "sold_proceeds": 99.37
-  },
-  {
-   "token": "73148754771904705789992839223698652347584217442761841171877207189768130833542",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Bitcoin reach $76,000 July 13-19?",
-   "their_price": 0.823,
-   "my_price": 0.829,
-   "slippage_pct": 0.0073,
-   "lag_s": 34.1,
-   "shares": 114.93,
-   "cost": 95.28,
-   "fee": 0.49,
-   "opened": 1784103467,
-   "status": "closed",
-   "exit_price": 0.8258,
-   "pnl": -0.86,
-   "settled": 1784103566,
-   "sold_shares": 114.93,
-   "sold_proceeds": 94.91
   }
  ],
  "missed": [
@@ -3082,12 +3081,12 @@
  ],
  "missed_pnl": 96603.97,
  "last_fill": {
-  "ts": 1784882987,
-  "side": "SELL",
-  "price": 0.92,
-  "shares": 6.33,
-  "title": "WTI Crude Oil (WTI) closes above $94 on July 24?",
-  "outcome": "No"
+  "ts": 1784885070,
+  "side": "BUY",
+  "price": 0.64,
+  "shares": 189.15,
+  "title": "LoL: Team WE vs JD Gaming - Game 1 Winner",
+  "outcome": "Team WE"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3144,11 +3143,11 @@
    "realized": 114.43,
    "n": 22,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 121.06,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784879002
+   "last_ts": 1784885069
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -3181,5 +3180,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784882993
+ "updated": 1784885077
 }
