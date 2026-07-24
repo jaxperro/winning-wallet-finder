@@ -1867,7 +1867,7 @@ class Copybot:
             paths = [p for p in (self.feed_path,
                                  self.feed_path.replace(".json", "_full.json"),
                                  self.engine.state_path, self.fill_log,
-                                 self.ignored_log,
+                                 self.ignored_log, self.reject_log,
                                  self.shadow_log, self.bets_archive,
                                  self.missed_archive)
                      if os.path.exists(os.path.join(repo, p))]
