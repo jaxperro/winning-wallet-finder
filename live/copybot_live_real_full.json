@@ -1,16 +1,16 @@
 {
  "mode": "live",
- "updated": 1784873359,
+ "updated": 1784874173,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.65,
    "n": 21,
    "wins": 5,
-   "open_cost": 11.91,
-   "open_n": 5,
+   "open_cost": 14.33,
+   "open_n": 6,
    "miss_n": 64,
    "miss_pnl": 1169.13,
-   "last_ts": 1784824182
+   "last_ts": 1784874168
   },
   "AIcAIc": {
    "realized": -14.85,
@@ -114,6 +114,26 @@
   }
  },
  "bets": [
+  {
+   "token": "68354490231292339705788355645447204244217234157276853910593583690623904256055",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Canva's valuation hit (LOW) $39B by July 31?",
+   "their_price": 0.8,
+   "my_price": 0.8,
+   "slippage_pct": -0.0,
+   "lag_s": 5.7,
+   "shares": 3.02,
+   "cost": 2.42,
+   "fee": 0.0145,
+   "opened": 1784874168,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785542400
+  },
   {
    "token": "88095392088380018988811128905056685420681684247700244221273733002608971216833",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

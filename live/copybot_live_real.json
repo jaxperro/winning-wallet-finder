@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
- "cash": 33.98,
- "deployed": 26.48,
+ "cash": 31.55,
+ "deployed": 28.89,
  "reserve": 0.0,
- "realized": -15.4,
+ "realized": -15.41,
  "adjustments": 9.44,
- "ledger_drift": 0.0,
- "open_count": 14,
- "fees_paid": 3.27,
+ "ledger_drift": 0.01,
+ "open_count": 15,
+ "fees_paid": 3.29,
  "fee_rate": 0.03,
  "lag": {
-  "n": 113,
-  "n24": 7,
-  "avg_s": 6.4,
-  "avg_slip_pct": 0.0035,
+  "n": 114,
+  "n24": 8,
+  "avg_s": 6.3,
+  "avg_slip_pct": 0.0031,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "68354490231292339705788355645447204244217234157276853910593583690623904256055",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Canva's valuation hit (LOW) $39B by July 31?",
+   "their_price": 0.8,
+   "my_price": 0.8,
+   "slippage_pct": -0.0,
+   "lag_s": 5.7,
+   "shares": 3.02,
+   "cost": 2.42,
+   "fee": 0.01,
+   "opened": 1784874168,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785542400
+  },
   {
    "token": "88095392088380018988811128905056685420681684247700244221273733002608971216833",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2084,24 +2104,6 @@
    "settled": 1783823524,
    "sold_shares": 1.31,
    "sold_proceeds": 0.69
-  },
-  {
-   "token": "103463464943572749166715825902436097005749231905022823443969199466445385329466",
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "name": "LSB1",
-   "outcome": "No",
-   "title": "Exact Score: Norway 1 - 1 England?",
-   "their_price": 0.88,
-   "my_price": 0.82,
-   "slippage_pct": -0.0682,
-   "shares": 1.22,
-   "cost": 1.0,
-   "fee": 0.01,
-   "opened": 1783806619,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -1.01,
-   "settled": 1783814961
   }
  ],
  "missed": [
@@ -3066,11 +3068,11 @@
  ],
  "missed_pnl": 1165.51,
  "last_fill": {
-  "ts": 1784851004,
+  "ts": 1784874173,
   "side": "BUY",
-  "price": 0.78,
-  "shares": 3.07,
-  "title": "Will AfD win the most seats in the 2026 Berlin state electio",
+  "price": 0.8,
+  "shares": 3.02,
+  "title": "Will Canva's valuation hit (LOW) $39B by July 31?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3078,11 +3080,11 @@
    "realized": 1.65,
    "n": 21,
    "wins": 5,
-   "open_cost": 11.91,
-   "open_n": 5,
+   "open_cost": 14.33,
+   "open_n": 6,
    "miss_n": 64,
    "miss_pnl": 1169.13,
-   "last_ts": 1784824182
+   "last_ts": 1784874168
   },
   "AIcAIc": {
    "realized": -14.85,
@@ -3185,5 +3187,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784873359
+ "updated": 1784874173
 }
