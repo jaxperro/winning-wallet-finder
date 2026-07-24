@@ -2106,6 +2106,21 @@
  ],
  "missed": [
   {
+   "ts": 1784853195,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "109311392430765088290844176098874963554774723556919562323769686251788471847414",
+   "cond": "0x6ff3921d3101cb89b2e201753a0c915482b566ff65d08c4d0f18505aea8675b2",
+   "title": "Will NVIDIA (NVDA) hit (HIGH) $224 Week of July 20 2026?",
+   "outcome": "No",
+   "price": 0.939,
+   "stake": 2.42,
+   "reason": "order rejected: exception: order 0xaf87b4baa9f76ff22e12670eae64e89f8b0ea76cb",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784492349,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "62074667087255747412382561081475311823484268378809285620641251664614873335395",
@@ -3046,25 +3061,9 @@
    "settled": 1784476134,
    "name": "gkmgkldfmg",
    "exit_price": 0.4072
-  },
-  {
-   "ts": 1784472135,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "42900587076366844229913834194744356425297818081286466764921250179690312755990",
-   "cond": "0xc0f70912445fc2aeee051c61d367a31ceebe940831ac329e63a406bdbc31528a",
-   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 1 Winner",
-   "outcome": "BetBoom Team",
-   "price": 0.68,
-   "stake": 2.03,
-   "reason": "price moved 0.60\u21920.68",
-   "status": "sold",
-   "pnl": 1.15,
-   "settled": 1784472574,
-   "name": "gkmgkldfmg",
-   "exit_price": 1.068
   }
  ],
- "missed_pnl": 1168.03,
+ "missed_pnl": 1168.05,
  "last_fill": {
   "ts": 1784851004,
   "side": "BUY",
@@ -3080,7 +3079,7 @@
    "wins": 5,
    "open_cost": 11.91,
    "open_n": 5,
-   "miss_n": 63,
+   "miss_n": 64,
    "miss_pnl": 1169.13,
    "last_ts": 1784824182
   },
@@ -3185,5 +3184,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784851008
+ "updated": 1784853195
 }
