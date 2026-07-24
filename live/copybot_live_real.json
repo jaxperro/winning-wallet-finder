@@ -1,17 +1,17 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.42,
+ "stake": 2.37,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
  "cash": 27.98,
- "deployed": 32.46,
+ "deployed": 31.3,
  "reserve": 0.0,
- "realized": -15.42,
+ "realized": -16.58,
  "adjustments": 9.44,
  "ledger_drift": 0.02,
- "open_count": 16,
+ "open_count": 15,
  "fees_paid": 3.33,
  "fee_rate": 0.03,
  "lag": {
@@ -63,10 +63,10 @@
    "cost": 2.42,
    "fee": 0.01,
    "opened": 1784908328,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
+   "status": "closed",
+   "exit_price": 0.954,
+   "pnl": -1.13,
+   "settled": 1784910835,
    "end_ts": 1784851200,
    "sold_shares": 1.36,
    "sold_proceeds": 1.3
@@ -3081,14 +3081,14 @@
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 1.61,
-   "n": 22,
+   "realized": 0.48,
+   "n": 23,
    "wins": 5,
-   "open_cost": 15.75,
-   "open_n": 6,
+   "open_cost": 13.33,
+   "open_n": 5,
    "miss_n": 67,
    "miss_pnl": 1169.25,
-   "last_ts": 1784908328
+   "last_ts": 1784910835
   },
   "AIcAIc": {
    "realized": -14.85,
@@ -3191,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784908783
+ "updated": 1784910835
 }
