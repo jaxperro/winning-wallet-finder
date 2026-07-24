@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 123.7,
+ "stake": 124.0,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3094.45,
- "cash": 1406.38,
- "deployed": 1686.1,
+ "hwm": 3099.91,
+ "cash": 1448.82,
+ "deployed": 1651.1,
  "reserve": 0.0,
- "realized": 2092.45,
+ "realized": 2099.88,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 24,
- "fees_paid": 354.85,
+ "open_count": 23,
+ "fees_paid": 354.9,
  "fee_rate": 0.03,
  "lag": {
   "n": 244,
@@ -49,6 +49,28 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "40257860192328331039995645096358822071679870588847044844154817698500464424757",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "WTI Crude Oil (WTI) closes above $94 on July 24?",
+   "their_price": 0.79,
+   "my_price": 0.79,
+   "slippage_pct": 0.0,
+   "lag_s": 6.1,
+   "shares": 50.63,
+   "cost": 40.0,
+   "fee": 0.25,
+   "opened": 1784881321,
+   "status": "closed",
+   "exit_price": 0.9528,
+   "pnl": 7.99,
+   "settled": 1784894344,
+   "end_ts": 1784851200,
+   "sold_shares": 50.63,
+   "sold_proceeds": 48.24
+  },
   {
    "token": "86567202803696185629704724961398129231892610051254319801824623009047556217191",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -112,28 +134,6 @@
    "sold_shares": 53.74,
    "sold_proceeds": 49.89,
    "end_ts": 1798761600
-  },
-  {
-   "token": "40257860192328331039995645096358822071679870588847044844154817698500464424757",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "WTI Crude Oil (WTI) closes above $94 on July 24?",
-   "their_price": 0.79,
-   "my_price": 0.79,
-   "slippage_pct": 0.0,
-   "lag_s": 6.1,
-   "shares": 50.63,
-   "cost": 40.0,
-   "fee": 0.25,
-   "opened": 1784881321,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784851200,
-   "sold_shares": 6.33,
-   "sold_proceeds": 5.81
   },
   {
    "token": "67912387740604654388311594539741757732325634041020667730293753310456593145775",
@@ -3086,23 +3086,23 @@
  ],
  "missed_pnl": 96624.23,
  "last_fill": {
-  "ts": 1784887124,
-  "side": "BUY",
-  "price": 0.47,
-  "shares": 263.35,
-  "title": "Israel x Iran ceasefire continues through July 31?",
+  "ts": 1784894339,
+  "side": "SELL",
+  "price": 0.959,
+  "shares": 44.3,
+  "title": "WTI Crude Oil (WTI) closes above $94 on July 24?",
   "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 561.49,
-   "n": 52,
+   "realized": 569.48,
+   "n": 53,
    "wins": 14,
-   "open_cost": 703.64,
-   "open_n": 12,
+   "open_cost": 663.64,
+   "open_n": 11,
    "miss_n": 62,
    "miss_pnl": 97023.61,
-   "last_ts": 1784886186
+   "last_ts": 1784894344
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -3185,5 +3185,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784887960
+ "updated": 1784894344
 }
