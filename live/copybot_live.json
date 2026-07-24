@@ -2133,6 +2133,23 @@
  ],
  "missed": [
   {
+   "ts": 1784856070,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "52998619540131236497547594447014700470168657421344143046644809127712598896777",
+   "cond": "0x13ae062bd68a15fcbaae29b584fd8030a546b4fb9b2211055a7124f17c2b3ef2",
+   "title": "WTI Crude Oil (WTI) Up or Down on July 24?",
+   "outcome": "Down",
+   "price": 0.63,
+   "stake": 62.21,
+   "reason": "maker bid unfilled (124s)",
+   "status": "sold",
+   "pnl": 13.58,
+   "settled": 1784934648,
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.7796
+  },
+  {
    "ts": 1784927019,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "13771338838328601734339816906945515194595281212781971576981933533238318254216",
@@ -2399,21 +2416,6 @@
    "settled": 1784873265,
    "name": "BikesAreTheBikes",
    "exit_checked": true
-  },
-  {
-   "ts": 1784856070,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "52998619540131236497547594447014700470168657421344143046644809127712598896777",
-   "cond": "0x13ae062bd68a15fcbaae29b584fd8030a546b4fb9b2211055a7124f17c2b3ef2",
-   "title": "WTI Crude Oil (WTI) Up or Down on July 24?",
-   "outcome": "Down",
-   "price": 0.63,
-   "stake": 62.21,
-   "reason": "maker bid unfilled (124s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784492349,
@@ -3088,7 +3090,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 96493.46,
+ "missed_pnl": 96507.04,
  "last_fill": {
   "ts": 1784924188,
   "side": "SELL",
@@ -3105,7 +3107,7 @@
    "open_cost": 663.64,
    "open_n": 11,
    "miss_n": 68,
-   "miss_pnl": 97004.75,
+   "miss_pnl": 97018.33,
    "last_ts": 1784925233
   },
   "gkmgkldfmg": {
@@ -3189,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784932892
+ "updated": 1784934719
 }
