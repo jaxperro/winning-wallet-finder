@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 118.48,
+ "stake": 121.04,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3017.98,
- "cash": 1306.23,
- "deployed": 1655.89,
+ "hwm": 3025.94,
+ "cash": 1488.59,
+ "deployed": 1537.35,
  "reserve": 0.0,
- "realized": 1962.09,
+ "realized": 2025.91,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 24,
+ "ledger_drift": -0.01,
+ "open_count": 23,
  "fees_paid": 351.29,
  "fee_rate": 0.03,
  "lag": {
@@ -63,11 +63,13 @@
    "cost": 118.53,
    "fee": 1.24,
    "opened": 1784877684,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784851200
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 62.58,
+   "settled": 1784879002,
+   "end_ts": 1784851200,
+   "sold_shares": 182.36,
+   "sold_proceeds": 182.36
   },
   {
    "token": "80495693308906829029683308162293224578453743674738440139240596924963250131399",
@@ -3079,9 +3081,9 @@
  ],
  "missed_pnl": 96603.97,
  "last_fill": {
-  "ts": 1784877688,
-  "side": "BUY",
-  "price": 0.65,
+  "ts": 1784879002,
+  "side": "SELL",
+  "price": 1.0,
   "shares": 182.36,
   "title": "LoL: Anyone's Legend vs LGD Gaming - Game 1 Winner",
   "outcome": "Anyone's Legend"
@@ -3138,14 +3140,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 51.85,
-   "n": 21,
+   "realized": 114.43,
+   "n": 22,
    "wins": 0,
-   "open_cost": 118.53,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784877684
+   "last_ts": 1784879002
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -3178,5 +3180,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784877754
+ "updated": 1784879002
 }
