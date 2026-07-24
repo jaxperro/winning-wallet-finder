@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 126.24,
+ "stake": 126.23,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1470.69,
- "deployed": 1685.22,
+ "cash": 1454.63,
+ "deployed": 1701.24,
  "reserve": 0.0,
- "realized": 2155.88,
+ "realized": 2155.84,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 25,
- "fees_paid": 360.67,
+ "fees_paid": 360.71,
  "fee_rate": 0.03,
  "lag": {
-  "n": 249,
-  "n24": 18,
-  "avg_s": 7.4,
-  "avg_slip_pct": -0.001,
+  "n": 250,
+  "n24": 19,
+  "avg_s": 7.1,
+  "avg_slip_pct": -0.0009,
   "window_h": 24
  },
  "wallets": [
@@ -56,12 +56,12 @@
    "outcome": "Yes",
    "title": "Will the price of Bitcoin be above $64,000 on July 24?",
    "their_price": 0.89,
-   "my_price": 0.89,
+   "my_price": 0.8994,
    "slippage_pct": 0.0,
    "lag_s": 1.1,
-   "shares": 41.35,
-   "cost": 36.8,
-   "fee": 0.12,
+   "shares": 58.72,
+   "cost": 52.82,
+   "fee": 0.16,
    "opened": 1784908007,
    "status": "open",
    "exit_price": null,
@@ -3089,10 +3089,10 @@
  ],
  "missed_pnl": 96628.37,
  "last_fill": {
-  "ts": 1784908135,
-  "side": "SELL",
-  "price": 0.914,
-  "shares": 17.97,
+  "ts": 1784908328,
+  "side": "BUY",
+  "price": 0.922,
+  "shares": 17.37,
   "title": "Will the price of Bitcoin be above $64,000 on July 24?",
   "outcome": "Yes"
  },
@@ -3101,7 +3101,7 @@
    "realized": 569.48,
    "n": 53,
    "wins": 14,
-   "open_cost": 731.17,
+   "open_cost": 747.18,
    "open_n": 13,
    "miss_n": 64,
    "miss_pnl": 97027.75,
@@ -3188,5 +3188,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784908142
+ "updated": 1784908335
 }
