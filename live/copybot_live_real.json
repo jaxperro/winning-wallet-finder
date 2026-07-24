@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
- "cash": 27.98,
- "deployed": 31.3,
+ "cash": 25.58,
+ "deployed": 33.67,
  "reserve": 0.0,
- "realized": -16.58,
+ "realized": -16.61,
  "adjustments": 9.44,
  "ledger_drift": 0.02,
- "open_count": 15,
- "fees_paid": 3.33,
+ "open_count": 16,
+ "fees_paid": 3.37,
  "fee_rate": 0.03,
  "lag": {
-  "n": 116,
-  "n24": 4,
-  "avg_s": 4.5,
-  "avg_slip_pct": -0.0022,
+  "n": 117,
+  "n24": 5,
+  "avg_s": 3.9,
+  "avg_slip_pct": -0.0018,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "5506960250160396168975872633831816223181816814113506849144916695207660278211",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Down",
+   "title": "S&P 500 (SPX) Up or Down on July 24?",
+   "their_price": 0.5,
+   "my_price": 0.5,
+   "slippage_pct": 0.0,
+   "lag_s": 1.8,
+   "shares": 4.74,
+   "cost": 2.37,
+   "fee": 0.04,
+   "opened": 1784923242,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784851200
+  },
   {
    "token": "17278012384173360502232131272354786231595802723343593413625940837844848366978",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2088,26 +2108,6 @@
    "sold_shares": 4.52,
    "sold_proceeds": 1.38,
    "note": "2026-07-13 corrected from chain fills (phantom-sell incident)"
-  },
-  {
-   "token": "67314542042181807230524008268090407287895594712641843494670955324585909703902",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Hanwha Life Esports",
-   "title": "Game Handicap: BLG (-1.5) vs Hanwha Life Esports (+1.5)",
-   "their_price": 0.6467,
-   "my_price": 0.66,
-   "slippage_pct": 0.0205,
-   "shares": 1.54,
-   "cost": 1.02,
-   "fee": 0.01,
-   "opened": 1783841984,
-   "status": "closed",
-   "exit_price": 0.5928,
-   "pnl": -0.12,
-   "settled": 1783842020,
-   "sold_shares": 1.53,
-   "sold_proceeds": 0.91
   }
  ],
  "missed": [
@@ -3073,12 +3073,12 @@
  ],
  "missed_pnl": 1164.01,
  "last_fill": {
-  "ts": 1784908779,
-  "side": "SELL",
-  "price": 0.981,
-  "shares": 0.07,
-  "title": "Will the price of Bitcoin be above $64,000 on July 24?",
-  "outcome": "Yes"
+  "ts": 1784923243,
+  "side": "BUY",
+  "price": 0.5,
+  "shares": 4.74,
+  "title": "S&P 500 (SPX) Up or Down on July 24?",
+  "outcome": "Down"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3125,11 +3125,11 @@
    "realized": 0.31,
    "n": 7,
    "wins": 1,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 2.37,
+   "open_n": 1,
    "miss_n": 21,
    "miss_pnl": -0.82,
-   "last_ts": 1784206643
+   "last_ts": 1784923242
   },
   "LSB1": {
    "realized": -1.22,
@@ -3192,5 +3192,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784922678
+ "updated": 1784923248
 }
