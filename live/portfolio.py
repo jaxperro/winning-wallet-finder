@@ -127,6 +127,16 @@ if _ARGS.follow_only:
         WALLETS = [w for w in WALLETS if w["wallet"].lower() in _FSET]
     except Exception as _e:
         raise SystemExit(f"--follow-only: cannot read copybot.paper.json ({_e})")
+    # #24 v1: never replay a wallet before we actually followed it (the
+    # JuiceFarm class — pre-follow bets are not copyable reality). Dates
+    # from the follow config's own git history (live/follow_since.py).
+    try:
+        FOLLOW_SINCE = {k.lower(): int(v) for k, v in json.load(
+            open(os.path.join(HERE, "follow_since.json"))).items()}
+    except Exception:
+        FOLLOW_SINCE = {}
+else:
+    FOLLOW_SINCE = {}
 if not WALLETS:
     raise SystemExit("no wallets to replay: create live/backtest.json or pass --wallets")
 
@@ -460,6 +470,13 @@ def main():
         if b["cond"] and (b["cond"] not in by_mkt or b["entry_t"] < by_mkt[b["cond"]]["entry_t"]):
             b["kind"] = "open"; by_mkt[b["cond"]] = b
     stream = sorted(by_mkt.values(), key=lambda b: b["entry_t"])
+    if FOLLOW_SINCE:
+        _pre = len(stream)
+        stream = [b for b in stream if b["entry_t"] >=
+                  FOLLOW_SINCE.get(b["wallet"].lower(), 0)]
+        if _pre != len(stream):
+            print(f"portfolio: follow-since dropped {_pre - len(stream)} "
+                  f"pre-follow bets", flush=True)
 
     # ONLY_CONDS=<json path>: replay only these markets — {cond: bool} or
     # us_listable.py's {cond: {"listed": bool, ...}}. Models "same signal, but
@@ -707,6 +724,7 @@ def main():
         "entry_mode": ENTRY_MODE, "exit_mode": EXIT_MODE,
         "mirror_sell_min_p": MIRROR_SELL_MIN_P,
         "follow_only": bool(_ARGS.follow_only),
+        "follow_since_applied": bool(FOLLOW_SINCE),
     }
     json.dump(out, open(os.path.join(HERE, OUT) if not os.path.isabs(OUT) else OUT, "w"),
               separators=(",", ":"))

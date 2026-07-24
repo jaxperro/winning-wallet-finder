@@ -23,6 +23,7 @@ honest. Companion input: live/portfolio_follow_bets.json (portfolio.py
 import json
 import os
 import sys
+import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import tape                                    # noqa: E402
@@ -77,13 +78,34 @@ def bot_views():
     return v
 
 
+def rejects():
+    """{book: {token,...}} — the reject ledgers (live since 2026-07-24)
+    split UNSEEN into REJECTED (screen: the bot saw and filtered) vs
+    truly unseen (universe)."""
+    out = {"paper": set(), "live": set()}
+    for book, f in (("paper", "copybot_rejects.jsonl"),
+                    ("live", "copybot_rejects.live.jsonl")):
+        for r in load_jsonl(f):
+            if r.get("token"):
+                out[book].add(str(r["token"]))
+    return out
+
+
 def main():
     bets = json.load(open(os.path.join(ROOT, "live",
                                        "portfolio_follow_bets.json")))
+    try:
+        fs = {k.lower(): int(v) for k, v in json.load(open(os.path.join(
+            ROOT, "live", "follow_since.json"))).items()}
+        nm2w = {w["name"]: w["wallet"].lower() for w in json.load(open(
+            os.path.join(ROOT, "live", "copybot.paper.json")))["wallets"]}
+    except Exception:
+        fs, nm2w = {}, {}
     bets = [b for b in bets if b.get("entry_t", 0) >= PARITY_T0
-            and b.get("asset") and b.get("p")]
-    print(f"backtest bets in the parity era with join keys: {len(bets)}",
-          flush=True)
+            and b.get("asset") and b.get("p")
+            and b.get("entry_t", 0) >= fs.get(nm2w.get(b["name"], ""), 0)]
+    print(f"backtest bets in the parity era with join keys "
+          f"(follow-since applied): {len(bets)}", flush=True)
     db = tape.connect()
     tape.build_resolved(db)
     pays = fwd.payouts_for(db, [b["asset"] for b in bets])
@@ -100,9 +122,11 @@ def main():
     print(f"chain-graded (refunds/pending excluded): {len(graded)}\n",
           flush=True)
 
+    rej = rejects()
+    row = {"date": time.strftime("%Y-%m-%d"), "n": len(graded)}
     for book in ("paper", "live"):
         f, mset = v[book]["fills"], v[book]["missed"]
-        buckets = {"FILLED": [], "MISSED": [], "UNSEEN": []}
+        buckets = {"FILLED": [], "MISSED": [], "REJECTED": [], "UNSEEN": []}
         pg = 0.0
         for b in graded:
             a = b["asset"]
@@ -114,17 +138,23 @@ def main():
                 pg += b["_ev_bt"] - ev_real
             elif a in mset:
                 buckets["MISSED"].append(b)
+            elif a in rej[book]:
+                buckets["REJECTED"].append(b)      # screen gap, now visible
             else:
-                buckets["UNSEEN"].append(b)
+                buckets["UNSEEN"].append(b)        # universe gap
         tot_bt = sum(b["_ev_bt"] for b in graded)
+        row[f"{book}_bt_ev"] = round(tot_bt)
         print(f"== {book.upper()} (n={len(graded)} signals · backtest "
               f"$100-EV {tot_bt:+,.0f}) ==")
-        for k in ("FILLED", "MISSED", "UNSEEN"):
+        for k in ("FILLED", "MISSED", "REJECTED", "UNSEEN"):
             bs = buckets[k]
             ev = sum(b["_ev_bt"] for b in bs)
             share = 100 * ev / tot_bt if tot_bt else 0
-            print(f"  {k:>7}: n={len(bs):>4} · backtest EV in bucket "
+            row[f"{book}_{k.lower()}_n"] = len(bs)
+            row[f"{book}_{k.lower()}_ev"] = round(ev)
+            print(f"  {k:>8}: n={len(bs):>4} · backtest EV in bucket "
                   f"{ev:+9.0f} ({share:+5.1f}% of story)")
+        row[f"{book}_fill_gap"] = round(pg)
         print(f"  fill-price gap on FILLED (their_p feeless -> my_p+fee): "
               f"{pg:+,.0f}")
         un = buckets["UNSEEN"]
@@ -135,8 +165,60 @@ def main():
             top = sorted(byw.items(), key=lambda kv: -kv[1])[:4]
             print(f"  unseen by wallet: {top}")
         print(flush=True)
-    json.dump({"n": len(graded)}, open(os.path.join(
-        HERE, "copy_reconcile.json"), "w"))
+    # live-bankroll replica residual: the model at the live book's capital
+    # vs the live book itself (window-aligned numbers recorded raw)
+    try:
+        rep = json.load(open(os.path.join(ROOT, "live",
+                                          "portfolio_live_replica.json")))
+        lv = json.load(open(os.path.join(ROOT, "live",
+                                         "copybot_live_real_full.json")))
+        row["replica_pnl"] = round(rep.get("pnl") or 0, 2)
+        row["live_realized"] = round(lv.get("pnl_realized")
+                                     or lv.get("realized") or 0, 2)
+        print(f"REPLICA: model-at-live-bank 30d P&L {row['replica_pnl']:+.2f}"
+              f" vs live book realized {row['live_realized']:+.2f} "
+              f"(residual {row['replica_pnl'] - row['live_realized']:+.2f})",
+              flush=True)
+    except Exception:
+        pass
+    json.dump(row, open(os.path.join(HERE, "copy_reconcile.json"), "w"))
+
+    if "--csv" in sys.argv:
+        import csv as _csv
+        path = os.path.join(ROOT, "history", "reconcile.csv")
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        rows = []
+        try:
+            rows = list(_csv.DictReader(open(path)))
+        except FileNotFoundError:
+            pass
+        rows = [r for r in rows if r.get("date") != row["date"]]
+        # drift alarm: any bucket-EV share moved >15pp vs the trailing mean
+        if len(rows) >= 5:
+            import statistics as _st
+            for book in ("paper", "live"):
+                for k in ("filled", "missed", "rejected", "unseen"):
+                    key = f"{book}_{k}_ev"
+                    tot_k = f"{book}_bt_ev"
+                    hist = [float(r[key]) / max(1, abs(float(r[tot_k])))
+                            for r in rows[-7:] if r.get(key) and r.get(tot_k)]
+                    if not hist:
+                        continue
+                    cur = row[key] / max(1, abs(row[tot_k]))
+                    if abs(cur - _st.mean(hist)) > 0.15:
+                        print(f"⚠ RECONCILE DRIFT {book}.{k}: share "
+                              f"{cur:+.0%} vs 7d mean {_st.mean(hist):+.0%}",
+                              flush=True)
+        rows.append({k: str(vv) for k, vv in row.items()})
+        cols = sorted({c for r in rows for c in r}, key=lambda c:
+                      (c != "date", c))
+        with open(path, "w", newline="") as fh:
+            w = _csv.DictWriter(fh, fieldnames=cols)
+            w.writeheader()
+            for r in rows:
+                w.writerow(r)
+        print(f"[reconcile.csv] {len(rows)} rows -> history/reconcile.csv",
+              flush=True)
 
 
 if __name__ == "__main__":
