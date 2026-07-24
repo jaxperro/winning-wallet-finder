@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 118.48,
+ "stake": 118.47,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1453.12,
- "deployed": 1508.77,
+ "cash": 1431.26,
+ "deployed": 1530.55,
  "reserve": 0.0,
- "realized": 1961.86,
+ "realized": 1961.79,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 21,
- "fees_paid": 349.89,
+ "open_count": 22,
+ "fees_paid": 349.96,
  "fee_rate": 0.03,
  "lag": {
-  "n": 237,
-  "n24": 12,
-  "avg_s": 3.1,
-  "avg_slip_pct": -0.0055,
+  "n": 238,
+  "n24": 13,
+  "avg_s": 2.9,
+  "avg_slip_pct": -0.0051,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "7969149423026217458943279473543428125030119665364187577928855853989845042205",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Khamenei post 10-14 posts from July 17 to July 24, 2026?",
+   "their_price": 0.88,
+   "my_price": 0.88,
+   "slippage_pct": 0.0,
+   "lag_s": 0.2,
+   "shares": 24.75,
+   "cost": 21.78,
+   "fee": 0.08,
+   "opened": 1784869386,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784851200
+  },
   {
    "token": "80270372288514892122229303181424592994977341771902366596528480848577129708762",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2102,27 +2122,6 @@
    "settled": 1784055097,
    "sold_shares": 27.92,
    "sold_proceeds": 7.65
-  },
-  {
-   "token": "114408446604886353206911847633106829807018038464913763376714523293436793199652",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "LGD Gaming",
-   "title": "Dota 2: LGD Gaming vs MOUZ - Game 2 Winner",
-   "their_price": 0.7282,
-   "my_price": 0.74,
-   "slippage_pct": 0.0163,
-   "lag_s": 4.5,
-   "shares": 131.07,
-   "cost": 96.99,
-   "fee": 0.76,
-   "opened": 1784052486,
-   "status": "closed",
-   "exit_price": 0.5924,
-   "pnl": -20.09,
-   "settled": 1784054791,
-   "sold_shares": 131.07,
-   "sold_proceeds": 77.65
   }
  ],
  "missed": [
@@ -3080,11 +3079,11 @@
  ],
  "missed_pnl": 96649.36,
  "last_fill": {
-  "ts": 1784851003,
+  "ts": 1784869386,
   "side": "BUY",
-  "price": 0.787,
-  "shares": 150.57,
-  "title": "Will AfD win the most seats in the 2026 Berlin state electio",
+  "price": 0.88,
+  "shares": 24.75,
+  "title": "Will Khamenei post 10-14 posts from July 17 to July 24, 2026",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3092,11 +3091,11 @@
    "realized": 560.64,
    "n": 50,
    "wins": 14,
-   "open_cost": 685.59,
-   "open_n": 10,
+   "open_cost": 707.37,
+   "open_n": 11,
    "miss_n": 62,
    "miss_pnl": 97003.35,
-   "last_ts": 1784861800
+   "last_ts": 1784869386
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -3179,5 +3178,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784861804
+ "updated": 1784869396
 }
