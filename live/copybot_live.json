@@ -2129,6 +2129,21 @@
  ],
  "missed": [
   {
+   "ts": 1784898753,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "111604417349377875799825956621596386269673370070912696668140891647145772186047",
+   "cond": "0x8bf1c1536ecb1c08fe13c6b71e8ab1f58bf3461c4cb79f5f1679f869a06aef86",
+   "title": "Will there be no change in Fed interest rates after the July 2026 meeting?",
+   "outcome": "Yes",
+   "price": 0.7155,
+   "stake": 123.96,
+   "reason": "maker bid unfilled (91s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784709848,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "16746455674526792453091721753802082438321089440613204909132014300251813407275",
@@ -3067,21 +3082,6 @@
    "settled": 1784503786,
    "name": "0xbadaf319",
    "exit_price": 0.9091
-  },
-  {
-   "ts": 1784503159,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "107531561888318513792277163301281336651898062064090922046801464380647002668604",
-   "cond": "0xe67f4d31f0eba1b009b49d7a7739b2a5f53a2d7d979a0902b465a510492c33bb",
-   "title": "Will 2026 be the hottest year on record?",
-   "outcome": "No",
-   "price": 0.56,
-   "stake": 106.32,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
  "missed_pnl": 96624.23,
@@ -3160,7 +3160,7 @@
    "wins": 1,
    "open_cost": 1323.12,
    "open_n": 12,
-   "miss_n": 23,
+   "miss_n": 24,
    "miss_pnl": -484.92,
    "last_ts": 1784887113
   },
@@ -3185,5 +3185,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784898233
+ "updated": 1784898758
 }
