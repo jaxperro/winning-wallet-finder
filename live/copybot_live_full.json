@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1784879002,
+ "updated": 1784881357,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 562.22,
    "n": 51,
    "wins": 14,
-   "open_cost": 714.17,
-   "open_n": 12,
+   "open_cost": 754.17,
+   "open_n": 13,
    "miss_n": 62,
    "miss_pnl": 97003.35,
-   "last_ts": 1784876556
+   "last_ts": 1784881321
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -94,6 +94,26 @@
   }
  },
  "bets": [
+  {
+   "token": "40257860192328331039995645096358822071679870588847044844154817698500464424757",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "WTI Crude Oil (WTI) closes above $94 on July 24?",
+   "their_price": 0.79,
+   "my_price": 0.79,
+   "slippage_pct": 0.0,
+   "lag_s": 6.1,
+   "shares": 50.63,
+   "cost": 40.0,
+   "fee": 0.252,
+   "opened": 1784881321,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784851200
+  },
   {
    "token": "67912387740604654388311594539741757732325634041020667730293753310456593145775",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",

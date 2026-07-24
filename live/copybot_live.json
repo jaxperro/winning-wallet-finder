@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 121.04,
+ "stake": 121.03,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3025.94,
- "cash": 1488.59,
- "deployed": 1537.35,
+ "cash": 1448.34,
+ "deployed": 1577.35,
  "reserve": 0.0,
- "realized": 2025.91,
+ "realized": 2025.66,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 23,
- "fees_paid": 351.29,
+ "open_count": 24,
+ "fees_paid": 351.54,
  "fee_rate": 0.03,
  "lag": {
-  "n": 241,
-  "n24": 14,
-  "avg_s": 2.0,
-  "avg_slip_pct": -0.0052,
+  "n": 242,
+  "n24": 15,
+  "avg_s": 2.3,
+  "avg_slip_pct": -0.0048,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "40257860192328331039995645096358822071679870588847044844154817698500464424757",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "WTI Crude Oil (WTI) closes above $94 on July 24?",
+   "their_price": 0.79,
+   "my_price": 0.79,
+   "slippage_pct": 0.0,
+   "lag_s": 6.1,
+   "shares": 50.63,
+   "cost": 40.0,
+   "fee": 0.25,
+   "opened": 1784881321,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784851200
+  },
   {
    "token": "67912387740604654388311594539741757732325634041020667730293753310456593145775",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2102,27 +2122,6 @@
    "settled": 1784103566,
    "sold_shares": 114.93,
    "sold_proceeds": 94.91
-  },
-  {
-   "token": "64181675945626372952323128821772321053980258638788461732824523478139203605986",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Bitcoin be above $74,000 on July 21?",
-   "their_price": 0.915,
-   "my_price": 0.9,
-   "slippage_pct": -0.0164,
-   "lag_s": 52.8,
-   "shares": 69.73,
-   "cost": 62.75,
-   "fee": 0.19,
-   "opened": 1784103470,
-   "status": "closed",
-   "exit_price": 0.9127,
-   "pnl": 0.69,
-   "settled": 1784103529,
-   "sold_shares": 69.72,
-   "sold_proceeds": 63.63
   }
  ],
  "missed": [
@@ -3081,23 +3080,23 @@
  ],
  "missed_pnl": 96603.97,
  "last_fill": {
-  "ts": 1784879002,
-  "side": "SELL",
-  "price": 1.0,
-  "shares": 182.36,
-  "title": "LoL: Anyone's Legend vs LGD Gaming - Game 1 Winner",
-  "outcome": "Anyone's Legend"
+  "ts": 1784881327,
+  "side": "BUY",
+  "price": 0.79,
+  "shares": 50.63,
+  "title": "WTI Crude Oil (WTI) closes above $94 on July 24?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 562.22,
    "n": 51,
    "wins": 14,
-   "open_cost": 714.17,
-   "open_n": 12,
+   "open_cost": 754.17,
+   "open_n": 13,
    "miss_n": 62,
    "miss_pnl": 97003.35,
-   "last_ts": 1784876556
+   "last_ts": 1784881321
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -3180,5 +3179,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784879002
+ "updated": 1784881357
 }
