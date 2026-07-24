@@ -2126,6 +2126,21 @@
  ],
  "missed": [
   {
+   "ts": 1784824150,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "53147856084273572324920349998954911060427762367735766007832600228479869956378",
+   "cond": "0x25ecc56fd4f2853fa7f7a1068d9cbab84bfebada5eae442610f0e4547c50e1e1",
+   "title": "Will the next Claude Opus model be released by July 23, 2026?",
+   "outcome": "Yes",
+   "price": 0.78,
+   "stake": 45.09,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "lost",
+   "pnl": -45.39,
+   "settled": 1784873265,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784856070,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "52998619540131236497547594447014700470168657421344143046644809127712598896777",
@@ -2202,21 +2217,6 @@
    "settled": 1784836444,
    "name": "Kruto2027",
    "exit_checked": true
-  },
-  {
-   "ts": 1784824150,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "53147856084273572324920349998954911060427762367735766007832600228479869956378",
-   "cond": "0x25ecc56fd4f2853fa7f7a1068d9cbab84bfebada5eae442610f0e4547c50e1e1",
-   "title": "Will the next Claude Opus model be released by July 23, 2026?",
-   "outcome": "Yes",
-   "price": 0.78,
-   "stake": 45.09,
-   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784823419,
@@ -3077,7 +3077,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 96649.36,
+ "missed_pnl": 96603.97,
  "last_fill": {
   "ts": 1784869386,
   "side": "BUY",
@@ -3154,7 +3154,7 @@
    "open_cost": 1199.35,
    "open_n": 11,
    "miss_n": 23,
-   "miss_pnl": -439.53,
+   "miss_pnl": -484.92,
    "last_ts": 1784851003
   },
   "JuiceFarm": {
@@ -3178,5 +3178,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784869396
+ "updated": 1784873266
 }
