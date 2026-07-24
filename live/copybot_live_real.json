@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
- "cash": 26.68,
- "deployed": 33.71,
+ "cash": 27.88,
+ "deployed": 32.55,
  "reserve": 0.0,
- "realized": -15.46,
+ "realized": -15.42,
  "adjustments": 9.44,
  "ledger_drift": 0.02,
  "open_count": 16,
@@ -67,7 +67,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1784851200
+   "end_ts": 1784851200,
+   "sold_shares": 1.26,
+   "sold_proceeds": 1.2
   },
   {
    "token": "86567202803696185629704724961398129231892610051254319801824623009047556217191",
@@ -2122,7 +2124,8 @@
    "status": "lost",
    "pnl": -2.44,
    "settled": 1784907170,
-   "name": "AIcAIc"
+   "name": "AIcAIc",
+   "exit_checked": true
   },
   {
    "ts": 1784905371,
@@ -3069,10 +3072,10 @@
  ],
  "missed_pnl": 1166.75,
  "last_fill": {
-  "ts": 1784908329,
-  "side": "BUY",
-  "price": 0.922,
-  "shares": 2.62,
+  "ts": 1784908522,
+  "side": "SELL",
+  "price": 0.953,
+  "shares": 1.26,
   "title": "Will the price of Bitcoin be above $64,000 on July 24?",
   "outcome": "Yes"
  },
@@ -3188,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784908334
+ "updated": 1784908537
 }

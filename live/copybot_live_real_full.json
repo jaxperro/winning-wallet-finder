@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784908334,
+ "updated": 1784908537,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.61,
@@ -132,7 +132,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1784851200
+   "end_ts": 1784851200,
+   "sold_shares": 1.26,
+   "sold_proceeds": 1.1990869002
   },
   {
    "token": "86567202803696185629704724961398129231892610051254319801824623009047556217191",
@@ -2609,7 +2611,8 @@
    "status": "lost",
    "pnl": -2.44,
    "settled": 1784907170,
-   "name": "AIcAIc"
+   "name": "AIcAIc",
+   "exit_checked": true
   },
   {
    "ts": 1784905371,
