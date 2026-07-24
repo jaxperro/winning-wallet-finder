@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 129.13,
+ "stake": 129.22,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1467.63,
- "deployed": 1760.74,
+ "cash": 1500.39,
+ "deployed": 1730.01,
  "reserve": 0.0,
- "realized": 2228.34,
+ "realized": 2230.37,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 25,
+ "open_count": 24,
  "fees_paid": 363.89,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "35613520187412099541224398067273773941235385627221930769717313222719613151332",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "S&P 500 (SPY) closes above $750 on July 24?",
+   "their_price": 0.938,
+   "my_price": 0.938,
+   "slippage_pct": 0.0,
+   "lag_s": 5.6,
+   "shares": 32.76,
+   "cost": 30.73,
+   "fee": 0.06,
+   "opened": 1784905786,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 1.97,
+   "settled": 1784925233,
+   "end_ts": 1784851200
+  },
   {
    "token": "92311770312753199093108882953860845402721893472375016535613900981432589828768",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -176,26 +196,6 @@
    "end_ts": 1784851200,
    "sold_shares": 258.25,
    "sold_proceeds": 234.37
-  },
-  {
-   "token": "35613520187412099541224398067273773941235385627221930769717313222719613151332",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "S&P 500 (SPY) closes above $750 on July 24?",
-   "their_price": 0.938,
-   "my_price": 0.938,
-   "slippage_pct": 0.0,
-   "lag_s": 5.6,
-   "shares": 32.76,
-   "cost": 30.73,
-   "fee": 0.06,
-   "opened": 1784905786,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784851200
   },
   {
    "token": "73739632839816504626737108532045400878921898467348280846632249640824887675542",
@@ -2133,6 +2133,36 @@
  ],
  "missed": [
   {
+   "ts": 1784905448,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "35613520187412099541224398067273773941235385627221930769717313222719613151332",
+   "cond": "0xc3a579d99e8b291b923f6cdf026fe86a510411bb0b5190cb5d8764bd425974de",
+   "title": "S&P 500 (SPY) closes above $750 on July 24?",
+   "outcome": "No",
+   "price": 0.906,
+   "stake": 17.48,
+   "reason": "maker bid unfilled (77s)",
+   "status": "won",
+   "pnl": 1.76,
+   "settled": 1784925235,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1784727262,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "92050986166401987445069388208414464326154054301377903319727847954822960387891",
+   "cond": "0xd2a295c1c4015ad115574f49bf871f925b6d6967af23d383ba155670c3ece25c",
+   "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $156 Week of July 20 2026?",
+   "outcome": "No",
+   "price": 0.87,
+   "stake": 51.03,
+   "reason": "thin book ($34 within 5c < $50)",
+   "status": "won",
+   "pnl": 7.43,
+   "settled": 1784925098,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784853302,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "109311392430765088290844176098874963554774723556919562323769686251788471847414",
@@ -2205,21 +2235,6 @@
    "price": 0.86,
    "stake": 28.47,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1784905448,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "35613520187412099541224398067273773941235385627221930769717313222719613151332",
-   "cond": "0xc3a579d99e8b291b923f6cdf026fe86a510411bb0b5190cb5d8764bd425974de",
-   "title": "S&P 500 (SPY) closes above $750 on July 24?",
-   "outcome": "No",
-   "price": 0.906,
-   "stake": 17.48,
-   "reason": "maker bid unfilled (77s)",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -2768,21 +2783,6 @@
    "exit_price": 0.7514
   },
   {
-   "ts": 1784727262,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "92050986166401987445069388208414464326154054301377903319727847954822960387891",
-   "cond": "0xd2a295c1c4015ad115574f49bf871f925b6d6967af23d383ba155670c3ece25c",
-   "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $156 Week of July 20 2026?",
-   "outcome": "No",
-   "price": 0.87,
-   "stake": 51.03,
-   "reason": "thin book ($34 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1784724871,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "55322743872828723669471333687599655362701668769312714121349035444960033270363",
@@ -3086,7 +3086,7 @@
    "exit_price": 0.4991
   }
  ],
- "missed_pnl": 96485.86,
+ "missed_pnl": 96495.05,
  "last_fill": {
   "ts": 1784924188,
   "side": "SELL",
@@ -3097,14 +3097,14 @@
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 573.98,
-   "n": 55,
-   "wins": 15,
-   "open_cost": 694.37,
-   "open_n": 12,
+   "realized": 575.95,
+   "n": 56,
+   "wins": 16,
+   "open_cost": 663.64,
+   "open_n": 11,
    "miss_n": 67,
-   "miss_pnl": 96997.15,
-   "last_ts": 1784924188
+   "miss_pnl": 97006.34,
+   "last_ts": 1784925233
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -3187,5 +3187,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784924845
+ "updated": 1784925236
 }
