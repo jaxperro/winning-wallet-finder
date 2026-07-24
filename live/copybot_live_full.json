@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784894344,
+ "updated": 1784895764,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 569.48,
@@ -56,11 +56,11 @@
    "realized": 181.21,
    "n": 23,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 124.06,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784886695
+   "last_ts": 1784895724
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -94,6 +94,26 @@
   }
  },
  "bets": [
+  {
+   "token": "68315926096182221986995516814797530272425122547938404327641913821151049555944",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Bilibili Gaming",
+   "title": "LoL: EDward Gaming vs Bilibili Gaming - Game 1 Winner",
+   "their_price": 0.75,
+   "my_price": 0.75,
+   "slippage_pct": 0.0,
+   "lag_s": 20.2,
+   "shares": 165.41,
+   "cost": 124.06,
+   "fee": 0.9304,
+   "opened": 1784895724,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784851200
+  },
   {
    "token": "40257860192328331039995645096358822071679870588847044844154817698500464424757",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -404,7 +424,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1785542400
+   "end_ts": 1785542400,
+   "sold_shares": 19.625036535972274,
+   "sold_proceeds": 19.039331834314584
   },
   {
    "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",

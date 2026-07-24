@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 124.0,
+ "stake": 124.02,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3099.91,
- "cash": 1448.82,
- "deployed": 1651.1,
+ "hwm": 3101.54,
+ "cash": 1342.87,
+ "deployed": 1757.75,
  "reserve": 0.0,
- "realized": 2099.88,
+ "realized": 2100.58,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 23,
- "fees_paid": 354.9,
+ "open_count": 24,
+ "fees_paid": 355.85,
  "fee_rate": 0.03,
  "lag": {
-  "n": 244,
-  "n24": 17,
-  "avg_s": 2.8,
-  "avg_slip_pct": -0.0043,
+  "n": 245,
+  "n24": 18,
+  "avg_s": 3.8,
+  "avg_slip_pct": -0.004,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "68315926096182221986995516814797530272425122547938404327641913821151049555944",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Bilibili Gaming",
+   "title": "LoL: EDward Gaming vs Bilibili Gaming - Game 1 Winner",
+   "their_price": 0.75,
+   "my_price": 0.75,
+   "slippage_pct": 0.0,
+   "lag_s": 20.2,
+   "shares": 165.41,
+   "cost": 124.06,
+   "fee": 0.93,
+   "opened": 1784895724,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784851200
+  },
   {
    "token": "40257860192328331039995645096358822071679870588847044844154817698500464424757",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -359,7 +379,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1785542400
+   "end_ts": 1785542400,
+   "sold_shares": 19.63,
+   "sold_proceeds": 19.04
   },
   {
    "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
@@ -2104,27 +2126,6 @@
    "settled": 1784103822,
    "sold_shares": 106.15,
    "sold_proceeds": 82.36
-  },
-  {
-   "token": "108143450534940407450381347060623594467078916233801426854469869492374845960413",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Bitcoin reach $72,000 July 13-19?",
-   "their_price": 0.634,
-   "my_price": 0.641,
-   "slippage_pct": 0.011,
-   "lag_s": 38.6,
-   "shares": 148.61,
-   "cost": 95.26,
-   "fee": 1.03,
-   "opened": 1784103473,
-   "status": "closed",
-   "exit_price": 0.6351,
-   "pnl": -1.9,
-   "settled": 1784103822,
-   "sold_shares": 148.61,
-   "sold_proceeds": 94.38
   }
  ],
  "missed": [
@@ -3086,12 +3087,12 @@
  ],
  "missed_pnl": 96624.23,
  "last_fill": {
-  "ts": 1784894339,
-  "side": "SELL",
-  "price": 0.959,
-  "shares": 44.3,
-  "title": "WTI Crude Oil (WTI) closes above $94 on July 24?",
-  "outcome": "No"
+  "ts": 1784895744,
+  "side": "BUY",
+  "price": 0.75,
+  "shares": 165.41,
+  "title": "LoL: EDward Gaming vs Bilibili Gaming - Game 1 Winner",
+  "outcome": "Bilibili Gaming"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3148,11 +3149,11 @@
    "realized": 181.21,
    "n": 23,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 124.06,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784886695
+   "last_ts": 1784895724
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -3185,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784894344
+ "updated": 1784895764
 }
