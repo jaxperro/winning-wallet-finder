@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 123.78,
+ "stake": 123.7,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3094.45,
- "cash": 1532.13,
- "deployed": 1562.32,
+ "cash": 1406.38,
+ "deployed": 1686.1,
  "reserve": 0.0,
- "realized": 2094.42,
+ "realized": 2092.45,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 23,
- "fees_paid": 352.88,
+ "open_count": 24,
+ "fees_paid": 354.85,
  "fee_rate": 0.03,
  "lag": {
-  "n": 243,
-  "n24": 16,
-  "avg_s": 2.2,
-  "avg_slip_pct": -0.0045,
+  "n": 244,
+  "n24": 17,
+  "avg_s": 2.8,
+  "avg_slip_pct": -0.0043,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "86567202803696185629704724961398129231892610051254319801824623009047556217191",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Israel x Iran ceasefire continues through July 31?",
+   "their_price": 0.47,
+   "my_price": 0.47,
+   "slippage_pct": 0.0,
+   "lag_s": 11.6,
+   "shares": 263.35,
+   "cost": 123.77,
+   "fee": 1.97,
+   "opened": 1784887113,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785456000
+  },
   {
    "token": "34383281909044259756215667723509413820839811815716463480957480797279993360122",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2105,27 +2125,6 @@
    "settled": 1784103822,
    "sold_shares": 148.61,
    "sold_proceeds": 94.38
-  },
-  {
-   "token": "51819545177992980050544653528219085611945377861594412412561048331713992664435",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Bitcoin reach $74,000 July 13-19?",
-   "their_price": 0.75,
-   "my_price": 0.757,
-   "slippage_pct": 0.0093,
-   "lag_s": 76.7,
-   "shares": 251.99,
-   "cost": 190.76,
-   "fee": 1.39,
-   "opened": 1784103484,
-   "status": "closed",
-   "exit_price": 0.7525,
-   "pnl": -2.53,
-   "settled": 1784103772,
-   "sold_shares": 251.99,
-   "sold_proceeds": 189.62
   }
  ],
  "missed": [
@@ -3084,12 +3083,12 @@
  ],
  "missed_pnl": 96603.97,
  "last_fill": {
-  "ts": 1784886688,
-  "side": "SELL",
-  "price": 1.0,
-  "shares": 189.15,
-  "title": "LoL: Team WE vs JD Gaming - Game 1 Winner",
-  "outcome": "Team WE"
+  "ts": 1784887124,
+  "side": "BUY",
+  "price": 0.47,
+  "shares": 263.35,
+  "title": "Israel x Iran ceasefire continues through July 31?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3156,11 +3155,11 @@
    "realized": 0.07,
    "n": 7,
    "wins": 1,
-   "open_cost": 1199.35,
-   "open_n": 11,
+   "open_cost": 1323.12,
+   "open_n": 12,
    "miss_n": 23,
    "miss_pnl": -484.92,
-   "last_ts": 1784851003
+   "last_ts": 1784887113
   },
   "JuiceFarm": {
    "realized": 35.65,
@@ -3183,5 +3182,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784886695
+ "updated": 1784887148
 }
