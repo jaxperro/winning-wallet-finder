@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784898758,
+ "updated": 1784899893,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 569.48,
@@ -9,7 +9,7 @@
    "open_cost": 663.64,
    "open_n": 11,
    "miss_n": 62,
-   "miss_pnl": 97023.61,
+   "miss_pnl": 97027.75,
    "last_ts": 1784894344
   },
   "gkmgkldfmg": {
@@ -4572,6 +4572,22 @@
  ],
  "missed": [
   {
+   "ts": 1784823420,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "44360920780922767656954735357129256432039074408110623509391936414714437499560",
+   "cond": "0x09d587f63d04643fb9ea6247f58e3dd5b436e23e0d3a3fe643d6936424561e78",
+   "title": "Will Justin Bieber's monthly listeners figure hit 140m by August 31?",
+   "outcome": "No",
+   "price": 0.8799,
+   "stake": 34.75,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 4.14,
+   "settled": 1784899892,
+   "name": "0xbadaf319",
+   "exit_price": 0.9882
+  },
+  {
    "ts": 1784898753,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "111604417349377875799825956621596386269673370070912696668140891647145772186047",
@@ -4801,21 +4817,6 @@
    "outcome": "No",
    "price": 0.7499,
    "stake": 35.36,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1784823420,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "44360920780922767656954735357129256432039074408110623509391936414714437499560",
-   "cond": "0x09d587f63d04643fb9ea6247f58e3dd5b436e23e0d3a3fe643d6936424561e78",
-   "title": "Will Justin Bieber's monthly listeners figure hit 140m by August 31?",
-   "outcome": "No",
-   "price": 0.8799,
-   "stake": 34.75,
    "reason": "not copied in the detection window (reconciled)",
    "status": "open",
    "pnl": null,
