@@ -2112,6 +2112,21 @@
  ],
  "missed": [
   {
+   "ts": 1784920119,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "5506960250160396168975872633831816223181816814113506849144916695207660278211",
+   "cond": "0x1b9e81dfcbfcf530a3d96c2e67f82d69ef77369c5ada234d52c7c0da21a81c55",
+   "title": "S&P 500 (SPX) Up or Down on July 24?",
+   "outcome": "Down",
+   "price": 0.61,
+   "stake": 2.37,
+   "reason": "order rejected: exception: price must conform to tick size 0.01 with at most",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1784895725,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "68315926096182221986995516814797530272425122547938404327641913821151049555944",
@@ -3052,25 +3067,9 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.9768
-  },
-  {
-   "ts": 1784547096,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "109075623115035500221385426519923794314139178452765641614675281069970878340106",
-   "cond": "0xbcd6e99663f8b2056c91b7a766e084d20cde5bcfd54a97432596633921c02443",
-   "title": "US announces halt in Iran offensive operations by July 21?",
-   "outcome": "No",
-   "price": 0.59,
-   "stake": 2.41,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "sold",
-   "pnl": 0.5,
-   "settled": 1784548310,
-   "name": "0xbadaf319",
-   "exit_price": 0.725
   }
  ],
- "missed_pnl": 1166.75,
+ "missed_pnl": 1166.74,
  "last_fill": {
   "ts": 1784908779,
   "side": "SELL",
@@ -3126,7 +3125,7 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 20,
+   "miss_n": 21,
    "miss_pnl": -0.6,
    "last_ts": 1784206643
   },
@@ -3191,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784919569
+ "updated": 1784920119
 }
