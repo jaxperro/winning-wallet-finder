@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784920712,
+ "updated": 1784920972,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 0.48,
@@ -69,7 +69,7 @@
    "open_cost": 22.33,
    "open_n": 10,
    "miss_n": 26,
-   "miss_pnl": -9.91,
+   "miss_pnl": -12.42,
    "last_ts": 1784887113
   },
   "Kruto2027": {
@@ -2599,6 +2599,21 @@
  ],
  "missed": [
   {
+   "ts": 1784682919,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "66006680389192620317816056197058298603060937483253191311974086024874814208778",
+   "cond": "0x78322c43b6c76c3f29208ae75bf81d455c3b3b803c891a8945e25fe4376a3a8e",
+   "title": "Will the next Claude Opus model be released by July 24, 2026?",
+   "outcome": "No",
+   "price": 0.52,
+   "stake": 2.47,
+   "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
+   "status": "lost",
+   "pnl": -2.51,
+   "settled": 1784920971,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784920119,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "5506960250160396168975872633831816223181816814113506849144916695207660278211",
@@ -3234,21 +3249,6 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.7583
-  },
-  {
-   "ts": 1784682919,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "66006680389192620317816056197058298603060937483253191311974086024874814208778",
-   "cond": "0x78322c43b6c76c3f29208ae75bf81d455c3b3b803c891a8945e25fe4376a3a8e",
-   "title": "Will the next Claude Opus model be released by July 24, 2026?",
-   "outcome": "No",
-   "price": 0.52,
-   "stake": 2.47,
-   "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784675472,

@@ -18733,9 +18733,9 @@
       "price": 0.52,
       "stake": 2.47,
       "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "pnl": -2.51,
+      "settled": 1784920971,
       "name": "BikesAreTheBikes"
     },
     {
@@ -19161,8 +19161,8 @@
       "exit_price": 0.568
     }
   ],
-  "feed_sig": "8884ba99635f8e40f7748aab9b1ade6d",
-  "feed_pushed_at": 1784920567.7400842,
+  "feed_sig": "a58109a6f6c58e8d0665657b5a2c23af",
+  "feed_pushed_at": 1784920843.8786054,
   "adjustments": [
     {
       "ts": 1783906689,
@@ -19219,7 +19219,7 @@
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784882427,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784920173,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784920306,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784886999,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784904358,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784920384,
