@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1424.42,
- "deployed": 1537.35,
+ "cash": 1412.58,
+ "deployed": 1549.15,
  "reserve": 0.0,
- "realized": 1961.74,
+ "realized": 1961.7,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 23,
- "fees_paid": 350.0,
+ "open_count": 24,
+ "fees_paid": 350.05,
  "fee_rate": 0.03,
  "lag": {
-  "n": 239,
-  "n24": 14,
-  "avg_s": 3.1,
-  "avg_slip_pct": -0.0047,
+  "n": 240,
+  "n24": 15,
+  "avg_s": 3.4,
+  "avg_slip_pct": -0.0044,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "80495693308906829029683308162293224578453743674738440139240596924963250131399",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the highest temperature in Shanghai be 35\u00b0C on July 24?",
+   "their_price": 0.8778,
+   "my_price": 0.8778,
+   "slippage_pct": 0.0,
+   "lag_s": 7.0,
+   "shares": 13.44,
+   "cost": 11.8,
+   "fee": 0.04,
+   "opened": 1784876363,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784851200
+  },
   {
    "token": "68354490231292339705788355645447204244217234157276853910593583690623904256055",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2101,26 +2121,6 @@
    "sold_shares": 53.19,
    "sold_proceeds": 49.36,
    "end_ts": 1798761600
-  },
-  {
-   "token": "6237386819428750235511557154093150991879160039847931747938354455286350107208",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Le Pen endorses non-Bardella PM by December 31, 2026?",
-   "their_price": 0.9269,
-   "my_price": 0.86,
-   "slippage_pct": -0.0722,
-   "lag_s": 0.9,
-   "shares": 10.8,
-   "cost": 9.28,
-   "fee": 0.04,
-   "opened": 1784063558,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1798675200
   }
  ],
  "missed": [
@@ -3079,11 +3079,11 @@
  ],
  "missed_pnl": 96603.97,
  "last_fill": {
-  "ts": 1784874174,
+  "ts": 1784876370,
   "side": "BUY",
-  "price": 0.8,
-  "shares": 8.5,
-  "title": "Will Canva's valuation hit (LOW) $39B by July 31?",
+  "price": 0.8778,
+  "shares": 13.44,
+  "title": "Will the highest temperature in Shanghai be 35\u00b0C on July 24?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3091,11 +3091,11 @@
    "realized": 560.64,
    "n": 50,
    "wins": 14,
-   "open_cost": 714.17,
-   "open_n": 12,
+   "open_cost": 725.97,
+   "open_n": 13,
    "miss_n": 62,
    "miss_pnl": 97003.35,
-   "last_ts": 1784874168
+   "last_ts": 1784876363
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -3178,5 +3178,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784874211
+ "updated": 1784876370
 }
