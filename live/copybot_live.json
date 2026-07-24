@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 121.03,
+ "stake": 121.06,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3025.94,
- "cash": 1448.34,
- "deployed": 1577.35,
+ "hwm": 3026.5,
+ "cash": 1454.15,
+ "deployed": 1572.35,
  "reserve": 0.0,
- "realized": 2025.66,
+ "realized": 2026.47,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
  "open_count": 24,
- "fees_paid": 351.54,
+ "fees_paid": 351.56,
  "fee_rate": 0.03,
  "lag": {
   "n": 242,
@@ -67,7 +67,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1784851200
+   "end_ts": 1784851200,
+   "sold_shares": 6.33,
+   "sold_proceeds": 5.81
   },
   {
    "token": "67912387740604654388311594539741757732325634041020667730293753310456593145775",
@@ -3080,10 +3082,10 @@
  ],
  "missed_pnl": 96603.97,
  "last_fill": {
-  "ts": 1784881327,
-  "side": "BUY",
-  "price": 0.79,
-  "shares": 50.63,
+  "ts": 1784882987,
+  "side": "SELL",
+  "price": 0.92,
+  "shares": 6.33,
   "title": "WTI Crude Oil (WTI) closes above $94 on July 24?",
   "outcome": "No"
  },
@@ -3179,5 +3181,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784881357
+ "updated": 1784882993
 }
