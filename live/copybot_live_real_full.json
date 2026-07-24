@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784920119,
+ "updated": 1784920712,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 0.48,
@@ -49,7 +49,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 21,
-   "miss_pnl": -0.6,
+   "miss_pnl": -0.82,
    "last_ts": 1784206643
   },
   "LSB1": {
@@ -2608,10 +2608,11 @@
    "price": 0.61,
    "stake": 2.37,
    "reason": "order rejected: exception: price must conform to tick size 0.01 with at most",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "1kto1m"
+   "status": "sold",
+   "pnl": -0.22,
+   "settled": 1784920711,
+   "name": "1kto1m",
+   "exit_price": 0.568
   },
   {
    "ts": 1784895725,
