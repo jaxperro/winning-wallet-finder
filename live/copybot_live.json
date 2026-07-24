@@ -2129,6 +2129,21 @@
  ],
  "missed": [
   {
+   "ts": 1784902289,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "38365494018831710677520416689919565222584467732964144219797493486772775024046",
+   "cond": "0x4d7f97d4107a6b724a4f5bff30dd2821841a6e025ee61eae84cc9e3facf40349",
+   "title": "Will Trump meet with Netanyahu by August 31, 2026?",
+   "outcome": "Yes",
+   "price": 0.72,
+   "stake": 123.96,
+   "reason": "price moved 0.62\u21920.72",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784823420,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "44360920780922767656954735357129256432039074408110623509391936414714437499560",
@@ -3067,22 +3082,6 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1784503159,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "29659986108488397735882658288901718486356813252845923931653357875218546128408",
-   "cond": "0x439d44381d8808f463b076d8f0ffb7d65bec3180bfe98a68f1eb505264c31ec5",
-   "title": "Will NYC Mayor post 60-79 posts from July 14 to July 21, 2026?",
-   "outcome": "No",
-   "price": 0.619,
-   "stake": 50,
-   "reason": "thin book ($9 within 5c < $50)",
-   "status": "sold",
-   "pnl": 22.66,
-   "settled": 1784503786,
-   "name": "0xbadaf319",
-   "exit_price": 0.9091
   }
  ],
  "missed_pnl": 96628.37,
@@ -3101,7 +3100,7 @@
    "wins": 14,
    "open_cost": 663.64,
    "open_n": 11,
-   "miss_n": 62,
+   "miss_n": 63,
    "miss_pnl": 97027.75,
    "last_ts": 1784894344
   },
@@ -3186,5 +3185,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784899893
+ "updated": 1784902290
 }
