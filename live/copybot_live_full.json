@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784853308,
+ "updated": 1784856076,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 557.51,
@@ -8,7 +8,7 @@
    "wins": 13,
    "open_cost": 783.54,
    "open_n": 11,
-   "miss_n": 61,
+   "miss_n": 62,
    "miss_pnl": 97003.35,
    "last_ts": 1784824866
   },
@@ -4379,6 +4379,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784856070,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "52998619540131236497547594447014700470168657421344143046644809127712598896777",
+   "cond": "0x13ae062bd68a15fcbaae29b584fd8030a546b4fb9b2211055a7124f17c2b3ef2",
+   "title": "WTI Crude Oil (WTI) Up or Down on July 24?",
+   "outcome": "Down",
+   "price": 0.63,
+   "stake": 62.21,
+   "reason": "maker bid unfilled (124s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784853302,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
