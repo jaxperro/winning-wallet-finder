@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 131.19,
+ "stake": 126.23,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
  "cash": 1491.22,
- "deployed": 1788.48,
+ "deployed": 1664.42,
  "reserve": 0.0,
- "realized": 2279.67,
+ "realized": 2155.61,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 25,
+ "open_count": 24,
  "fees_paid": 360.51,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "68315926096182221986995516814797530272425122547938404327641913821151049555944",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Bilibili Gaming",
+   "title": "LoL: EDward Gaming vs Bilibili Gaming - Game 1 Winner",
+   "their_price": 0.75,
+   "my_price": 0.75,
+   "slippage_pct": 0.0,
+   "lag_s": 20.2,
+   "shares": 165.41,
+   "cost": 124.06,
+   "fee": 0.93,
+   "opened": 1784895724,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -124.99,
+   "settled": 1784907138,
+   "end_ts": 1784851200
+  },
   {
    "token": "41280738325832192366820609767968905496399103307083568825188630965658856693531",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -112,26 +132,6 @@
    "end_ts": 1784851200,
    "sold_shares": 213.83,
    "sold_proceeds": 196.25
-  },
-  {
-   "token": "68315926096182221986995516814797530272425122547938404327641913821151049555944",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Bilibili Gaming",
-   "title": "LoL: EDward Gaming vs Bilibili Gaming - Game 1 Winner",
-   "their_price": 0.75,
-   "my_price": 0.75,
-   "slippage_pct": 0.0,
-   "lag_s": 20.2,
-   "shares": 165.41,
-   "cost": 124.06,
-   "fee": 0.93,
-   "opened": 1784895724,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784851200
   },
   {
    "token": "40257860192328331039995645096358822071679870588847044844154817698500464424757",
@@ -3147,14 +3147,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 251.88,
-   "n": 24,
+   "realized": 126.89,
+   "n": 25,
    "wins": 0,
-   "open_cost": 124.06,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784904364
+   "last_ts": 1784907138
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -3187,5 +3187,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784906740
+ "updated": 1784907141
 }
