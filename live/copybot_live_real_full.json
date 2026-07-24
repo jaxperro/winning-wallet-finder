@@ -1,16 +1,16 @@
 {
  "mode": "live",
- "updated": 1784885075,
+ "updated": 1784886185,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 1.65,
-   "n": 21,
+   "realized": 1.61,
+   "n": 22,
    "wins": 5,
-   "open_cost": 14.33,
-   "open_n": 6,
+   "open_cost": 13.33,
+   "open_n": 5,
    "miss_n": 65,
    "miss_pnl": 1169.23,
-   "last_ts": 1784874168
+   "last_ts": 1784886185
   },
   "AIcAIc": {
    "realized": -14.85,
@@ -114,6 +114,28 @@
   }
  },
  "bets": [
+  {
+   "token": "16686602356235900511267666457287992561973903059220978509691578764880532993490",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will ByteDance's valuation hit (HIGH) $1.5T by December 31?",
+   "their_price": 0.95,
+   "my_price": 0.95,
+   "slippage_pct": -0.0,
+   "lag_s": 4.7,
+   "shares": 1.05,
+   "cost": 1.0,
+   "fee": 0.0015,
+   "opened": 1784100418,
+   "status": "closed",
+   "exit_price": 0.9178,
+   "pnl": -0.04,
+   "settled": 1784886185,
+   "sold_shares": 1.05,
+   "sold_proceeds": 0.9636815999999999,
+   "end_ts": 1798761600
+  },
   {
    "token": "68354490231292339705788355645447204244217234157276853910593583690623904256055",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1582,28 +1604,6 @@
    "settled": 1784103541,
    "sold_shares": 1.09,
    "sold_proceeds": 0.978057
-  },
-  {
-   "token": "16686602356235900511267666457287992561973903059220978509691578764880532993490",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will ByteDance's valuation hit (HIGH) $1.5T by December 31?",
-   "their_price": 0.95,
-   "my_price": 0.95,
-   "slippage_pct": -0.0,
-   "lag_s": 4.7,
-   "shares": 1.05,
-   "cost": 1.0,
-   "fee": 0.0015,
-   "opened": 1784100418,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 1.04,
-   "sold_proceeds": 0.95450368,
-   "end_ts": 1798761600
   },
   {
    "token": "114408446604886353206911847633106829807018038464913763376714523293436793199652",
