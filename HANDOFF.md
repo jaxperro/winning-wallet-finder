@@ -34,7 +34,11 @@ disposition), #20/#21 execution flips **FLIPPED LIVE 2026-07-23 18:36Z**
 (pre-registered, frozen 052eda0; window opens with the first nightly
 lean rows), #23 Study D sibling lead-lag (pre-registered;
 **wwf-lagbot DEPLOYED 2026-07-23 20:56Z**, shakedown numbers on the
-issue). #18 (empty-cond copies unsettleable) closed same day: RTDS seed
+issue), #24 three-book reconciliation (v0: backtest absolutes =
+decoration, 82-112% unseen+missed; reject-logging + tick-size retry
+LIVE 2026-07-24 @d4fff27), #25 Study E position-scope conviction
+(pre-registered; dark flag @85954d8 — conviction_scope trade|position,
+rolling net-USD aggregate; flip = operator's call). #18 (empty-cond copies unsettleable) closed same day: RTDS seed
 enrichment + falsy-cond repair pass + 1h alarm.
 
 ## Operating boundary (user, 2026-07-13 — standing)
