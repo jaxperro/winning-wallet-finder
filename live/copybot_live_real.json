@@ -2108,6 +2108,21 @@
  ],
  "missed": [
   {
+   "ts": 1784885070,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "34383281909044259756215667723509413820839811815716463480957480797279993360122",
+   "cond": "0xa2822aa2467aca2d04968c26fd5444d88fb54c4dc5f8eac7d27d84a494ac8b50",
+   "title": "LoL: Team WE vs JD Gaming - Game 1 Winner",
+   "outcome": "Team WE",
+   "price": 0.65,
+   "stake": 2.42,
+   "reason": "order rejected: exception: order 0xf108bfade0b5c26134b80f55a6f4d9451bfd28517",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1784877689,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "67912387740604654388311594539741757732325634041020667730293753310456593145775",
@@ -3048,25 +3063,9 @@
    "settled": 1784481379,
    "name": "gkmgkldfmg",
    "exit_price": 0.23
-  },
-  {
-   "ts": 1784480664,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "7053256648875791145597897290283880355436947345055175213430816442613499819460",
-   "cond": "0xfb2118c2ec1decae1284e002717a85b6157ae99ba1fd60fd3478cea44c50cb9c",
-   "title": "Bitcoin Up or Down - July 19, 1:00PM-1:15PM ET",
-   "outcome": "Up",
-   "price": 0.3496,
-   "stake": 2.35,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.67,
-   "settled": 1784481052,
-   "name": "1kto1m",
-   "exit_price": 0.4634
   }
  ],
- "missed_pnl": 1167.62,
+ "missed_pnl": 1167.23,
  "last_fill": {
   "ts": 1784874173,
   "side": "BUY",
@@ -3092,7 +3091,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 9,
+   "miss_n": 10,
    "miss_pnl": 5.99,
    "last_ts": 1784725704
   },
@@ -3187,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784879234
+ "updated": 1784885075
 }
