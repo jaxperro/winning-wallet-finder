@@ -2130,6 +2130,21 @@
  ],
  "missed": [
   {
+   "ts": 1784905448,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "35613520187412099541224398067273773941235385627221930769717313222719613151332",
+   "cond": "0xc3a579d99e8b291b923f6cdf026fe86a510411bb0b5190cb5d8764bd425974de",
+   "title": "S&P 500 (SPY) closes above $750 on July 24?",
+   "outcome": "No",
+   "price": 0.906,
+   "stake": 17.48,
+   "reason": "maker bid unfilled (77s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784902289,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "38365494018831710677520416689919565222584467732964144219797493486772775024046",
@@ -3068,21 +3083,6 @@
    "name": "1kto1m",
    "exit_checked": true,
    "exit_price": 0.1001
-  },
-  {
-   "ts": 1784517526,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "94940524945210845047467028525980880667745668441880643750095925409687698630543",
-   "cond": "0xe7092235327ee5dcf40eef80c9da3c0170287ceb2b58a05292218ecd6d0dff6b",
-   "title": "Will Squid launch a token by March 31, 2027?",
-   "outcome": "Yes",
-   "price": 0.091,
-   "stake": 51.19,
-   "reason": "thin book ($2 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": 96628.37,
@@ -3101,7 +3101,7 @@
    "wins": 14,
    "open_cost": 663.64,
    "open_n": 11,
-   "miss_n": 63,
+   "miss_n": 64,
    "miss_pnl": 97027.75,
    "last_ts": 1784894344
   },
@@ -3186,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784904364
+ "updated": 1784905453
 }
