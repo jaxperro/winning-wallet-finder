@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784925265,
+ "updated": 1784926560,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 0.48,
@@ -9,7 +9,7 @@
    "open_cost": 13.33,
    "open_n": 5,
    "miss_n": 67,
-   "miss_pnl": 1170.21,
+   "miss_pnl": 1170.13,
    "last_ts": 1784910835
   },
   "AIcAIc": {
@@ -2631,7 +2631,8 @@
    "status": "won",
    "pnl": 0.44,
    "settled": 1784925261,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1784853195,
@@ -2646,7 +2647,8 @@
    "status": "won",
    "pnl": 0.15,
    "settled": 1784925112,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1784727261,
@@ -2658,10 +2660,12 @@
    "price": 0.87,
    "stake": 2.52,
    "reason": "thin book ($34 within 5c < $50)",
-   "status": "won",
-   "pnl": 0.37,
+   "status": "sold",
+   "pnl": 0.29,
    "settled": 1784925111,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.9737
   },
   {
    "ts": 1784682919,
