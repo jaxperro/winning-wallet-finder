@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784876870,
+ "updated": 1784877754,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 562.22,
@@ -56,11 +56,11 @@
    "realized": 51.85,
    "n": 21,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 118.53,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784733056
+   "last_ts": 1784877684
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -94,6 +94,26 @@
   }
  },
  "bets": [
+  {
+   "token": "67912387740604654388311594539741757732325634041020667730293753310456593145775",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Anyone's Legend",
+   "title": "LoL: Anyone's Legend vs LGD Gaming - Game 1 Winner",
+   "their_price": 0.65,
+   "my_price": 0.65,
+   "slippage_pct": 0.0,
+   "lag_s": 4.4,
+   "shares": 182.36,
+   "cost": 118.53,
+   "fee": 1.2446,
+   "opened": 1784877684,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784851200
+  },
   {
    "token": "80495693308906829029683308162293224578453743674738440139240596924963250131399",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",

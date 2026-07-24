@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 118.53,
+ "stake": 118.48,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3017.98,
- "cash": 1426.01,
- "deployed": 1537.35,
+ "cash": 1306.23,
+ "deployed": 1655.89,
  "reserve": 0.0,
- "realized": 1963.33,
+ "realized": 1962.09,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 23,
- "fees_paid": 350.05,
+ "ledger_drift": -0.02,
+ "open_count": 24,
+ "fees_paid": 351.29,
  "fee_rate": 0.03,
  "lag": {
-  "n": 240,
-  "n24": 13,
-  "avg_s": 1.8,
-  "avg_slip_pct": -0.0056,
+  "n": 241,
+  "n24": 14,
+  "avg_s": 2.0,
+  "avg_slip_pct": -0.0052,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "67912387740604654388311594539741757732325634041020667730293753310456593145775",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Anyone's Legend",
+   "title": "LoL: Anyone's Legend vs LGD Gaming - Game 1 Winner",
+   "their_price": 0.65,
+   "my_price": 0.65,
+   "slippage_pct": 0.0,
+   "lag_s": 4.4,
+   "shares": 182.36,
+   "cost": 118.53,
+   "fee": 1.24,
+   "opened": 1784877684,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784851200
+  },
   {
    "token": "80495693308906829029683308162293224578453743674738440139240596924963250131399",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2101,28 +2121,6 @@
    "settled": 1784103529,
    "sold_shares": 69.72,
    "sold_proceeds": 63.63
-  },
-  {
-   "token": "16686602356235900511267666457287992561973903059220978509691578764880532993490",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will ByteDance's valuation hit (HIGH) $1.5T by December 31?",
-   "their_price": 0.95,
-   "my_price": 0.94,
-   "slippage_pct": -0.0105,
-   "lag_s": 0.7,
-   "shares": 53.75,
-   "cost": 50.53,
-   "fee": 0.09,
-   "opened": 1784100418,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 53.19,
-   "sold_proceeds": 49.36,
-   "end_ts": 1798761600
   }
  ],
  "missed": [
@@ -3081,12 +3079,12 @@
  ],
  "missed_pnl": 96603.97,
  "last_fill": {
-  "ts": 1784876556,
-  "side": "SELL",
-  "price": 0.999,
-  "shares": 13.44,
-  "title": "Will the highest temperature in Shanghai be 35\u00b0C on July 24?",
-  "outcome": "No"
+  "ts": 1784877688,
+  "side": "BUY",
+  "price": 0.65,
+  "shares": 182.36,
+  "title": "LoL: Anyone's Legend vs LGD Gaming - Game 1 Winner",
+  "outcome": "Anyone's Legend"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3143,11 +3141,11 @@
    "realized": 51.85,
    "n": 21,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 118.53,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784733056
+   "last_ts": 1784877684
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -3180,5 +3178,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784876870
+ "updated": 1784877754
 }
