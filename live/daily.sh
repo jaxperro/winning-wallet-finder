@@ -68,7 +68,15 @@ PY
 echo "[daily] $(date '+%F %T') portfolio: cache-based \$1k book -> portfolio.json"
 python3 portfolio.py || echo "[daily] portfolio skipped"
 echo "[daily] $(date '+%F %T') portfolio: followed-set-only book -> portfolio_follow.json"
+python3 follow_since.py || echo "[daily] follow_since skipped"
 python3 portfolio.py --follow-only --out portfolio_follow.json || echo "[daily] follow portfolio skipped"
+echo "[daily] $(date '+%F %T') portfolio: live-bankroll replica -> portfolio_live_replica.json"
+# #24 v1: the model at the LIVE book's capital ($66.42 contributed; static
+# bank — deposit timing not ledgered, declared). Reproduces live = model
+# validated; residual = unmodeled reality, tracked in reconcile.csv.
+python3 portfolio.py --follow-only --bank 66.42 --out portfolio_live_replica.json || echo "[daily] replica skipped"
+echo "[daily] $(date '+%F %T') reconcile: three-book decomposition row"
+python3 ../research/copy_reconcile.py --csv || echo "[daily] reconcile skipped"
 echo "[daily] $(date '+%F %T') calibration: live-book vs model, one row/day"
 # The number that sizes real money (FINDINGS "The calibration experiment"):
 # the measured ratio between the live paper book and the backtest of the SAME
@@ -117,7 +125,7 @@ python3 dashboard.py
 mkdir -p history && cp watch_skilled.json "history/watch_$(date '+%Y%m%d').json" 2>/dev/null
 echo "[daily] $(date '+%F %T') 7/7 publish (commit + push refreshed outputs)"
 PUBLISH="no changes"
-git add watch_skilled.json watch_sharps.json conviction_wallets.json dashboard.html portfolio.json portfolio_missed.json portfolio_follow.json portfolio_follow_missed.json copybot.paper.json 2>/dev/null
+git add watch_skilled.json watch_sharps.json conviction_wallets.json dashboard.html portfolio.json portfolio_missed.json portfolio_follow.json portfolio_follow_missed.json copybot.paper.json follow_since.json portfolio_live_replica.json ../history/reconcile.csv 2>/dev/null
 if git diff --cached --quiet 2>/dev/null; then
     echo "[daily] no output changes to publish"
 elif git commit -q -m "live: daily refresh — skilled + sharp wallets [skip ci]"; then
