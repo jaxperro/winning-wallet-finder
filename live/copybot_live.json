@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 129.17,
+ "stake": 129.11,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1564.84,
- "deployed": 1664.42,
+ "cash": 1467.07,
+ "deployed": 1760.74,
  "reserve": 0.0,
- "realized": 2229.23,
+ "realized": 2227.78,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 24,
- "fees_paid": 362.33,
+ "open_count": 25,
+ "fees_paid": 363.78,
  "fee_rate": 0.03,
  "lag": {
-  "n": 251,
-  "n24": 16,
-  "avg_s": 8.1,
+  "n": 252,
+  "n24": 17,
+  "avg_s": 7.9,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "5506960250160396168975872633831816223181816814113506849144916695207660278211",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Down",
+   "title": "S&P 500 (SPX) Up or Down on July 24?",
+   "their_price": 0.5,
+   "my_price": 0.5,
+   "slippage_pct": 0.0,
+   "lag_s": 3.7,
+   "shares": 192.64,
+   "cost": 96.32,
+   "fee": 1.44,
+   "opened": 1784923242,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784851200
+  },
   {
    "token": "5506960250160396168975872633831816223181816814113506849144916695207660278211",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -2108,27 +2128,6 @@
    "settled": 1784115096,
    "sold_shares": 121.07,
    "sold_proceeds": 111.12
-  },
-  {
-   "token": "63771637378784413148462482237923583124136983802351410739819251381721139402800",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Over $60M committed to the Credible public sale?",
-   "their_price": 0.91,
-   "my_price": 0.87,
-   "slippage_pct": -0.044,
-   "lag_s": 1.4,
-   "shares": 69.0,
-   "cost": 60.03,
-   "fee": 0.23,
-   "opened": 1784097545,
-   "status": "closed",
-   "exit_price": 0.9486,
-   "pnl": 5.18,
-   "settled": 1784110948,
-   "sold_shares": 69.0,
-   "sold_proceeds": 65.45
   }
  ],
  "missed": [
@@ -3087,10 +3086,10 @@
  ],
  "missed_pnl": 96486.01,
  "last_fill": {
-  "ts": 1784923179,
-  "side": "SELL",
-  "price": 0.97,
-  "shares": 203.79,
+  "ts": 1784923245,
+  "side": "BUY",
+  "price": 0.5,
+  "shares": 192.64,
   "title": "S&P 500 (SPX) Up or Down on July 24?",
   "outcome": "Down"
  },
@@ -3119,11 +3118,11 @@
    "realized": 321.14,
    "n": 14,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 96.32,
+   "open_n": 1,
    "miss_n": 14,
    "miss_pnl": -16.16,
-   "last_ts": 1784923179
+   "last_ts": 1784923242
   },
   "Kruto2027": {
    "realized": 749.99,
@@ -3186,5 +3185,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784923179
+ "updated": 1784923313
 }
