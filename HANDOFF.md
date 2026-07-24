@@ -194,6 +194,15 @@ Fly side fully autonomous: recorder (~3+ weeks headroom), 3 harnesses,
 both copybots — nothing depends on the Mac while paused. On return the
 tape mirror + nightly self-heal (freshness wait + ledger backfill).
 
+## Floors FROZEN (user directive 2026-07-24)
+All 7 conviction floors floor_pin'd at the 07-24 p80s (Kruto 80 ·
+0xbadaf319 27.50 · gkm 470.51 · 1kto1m 314.91 · Bikes 227.01 · AIcAIc
+379.05 · JuiceFarm 735) across copybot.paper.json + config.live.example
++ backtest.json. sync_floors respects floor_pin — the daily no longer
+moves them. Re-pin = REMOVE floor_pin deliberately (a windowed act, not
+an 08:00 side effect). Rationale: drifting floors change what gets
+copied daily and contaminate open windows (#20/#25/reconcile baselines).
+
 ## Ops quick-reference
 - Follow-set change: edit live/copybot.paper.json → `./live/deploy_bot.sh`;
   mirror config.live.example.json (nothing auto-writes it) + backtest.json.
