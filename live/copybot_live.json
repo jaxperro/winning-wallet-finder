@@ -2129,6 +2129,86 @@
  ],
  "missed": [
   {
+   "ts": 1784709848,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "16746455674526792453091721753802082438321089440613204909132014300251813407275",
+   "cond": "0x236fabcdc7506a5bde811505d8dc35863599dfea80ac3d39ac6f6d28dc922b08",
+   "title": "Will Benjamin Netanyahu visit New York City by September 30?",
+   "outcome": "No",
+   "price": 0.2557,
+   "stake": 40.53,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": -12.44,
+   "settled": 1784887957,
+   "name": "0xbadaf319",
+   "exit_price": 0.1875
+  },
+  {
+   "ts": 1784557341,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "67913011466625262359588841481742993497498081452195278087275807248301608894093",
+   "cond": "0x6abe5fe01ca113b7d6040604a8619cadf181d4e4a6d8db3a082542417af806fd",
+   "title": "Will SpaceX Starship Flight Test 13 launch by August 31?",
+   "outcome": "Yes",
+   "price": 0.824,
+   "stake": 65.29,
+   "reason": "thin book ($4 within 5c < $50)",
+   "status": "sold",
+   "pnl": 3.26,
+   "settled": 1784887956,
+   "name": "0xbadaf319",
+   "exit_price": 0.8729
+  },
+  {
+   "ts": 1784506885,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "90827395403667708709418040026017872248338498816541474972448341541535842153246",
+   "cond": "0xf8b37bd6e5060608e44b34843a2c8ada940c2b62beb1a26fc01088921a70e25b",
+   "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $152 Week of July 20 2026?",
+   "outcome": "No",
+   "price": 0.57,
+   "stake": 61.92,
+   "reason": "thin book ($34 within 5c < $50)",
+   "status": "sold",
+   "pnl": 26.65,
+   "settled": 1784887955,
+   "name": "0xbadaf319",
+   "exit_price": 0.827
+  },
+  {
+   "ts": 1784438883,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "18859662100986706442931434084612043934725834523854128874928569872427180020630",
+   "cond": "0x4906333de7e9252101ded75f9bac59e07d158573381c89afe6f719dd3baadefd",
+   "title": "Will Western Digital (WDC) Q4 exabytes shipped be above 255?",
+   "outcome": "No",
+   "price": 0.83,
+   "stake": 50.59,
+   "reason": "thin book ($17 within 5c < $50)",
+   "status": "sold",
+   "pnl": 2.3,
+   "settled": 1784887954,
+   "name": "0xbadaf319",
+   "exit_price": 0.8753
+  },
+  {
+   "ts": 1783718289,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "40157116416490623239679394844195379171683621861511438824716931745872340078199",
+   "cond": "0x2e5100b759d2e6da51f0d457028d8e42b833f4808edd8ff95e3d242aa1ef6102",
+   "title": "Will Revolut's valuation hit (HIGH) $175B by December 31?",
+   "outcome": "No",
+   "price": 0.8699,
+   "stake": 44.62,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 0.49,
+   "settled": 1784887953,
+   "name": "0xbadaf319",
+   "exit_price": 0.8858
+  },
+  {
    "ts": 1784824150,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "53147856084273572324920349998954911060427762367735766007832600228479869956378",
@@ -2606,21 +2686,6 @@
    "exit_price": 0.9612
   },
   {
-   "ts": 1784709848,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "16746455674526792453091721753802082438321089440613204909132014300251813407275",
-   "cond": "0x236fabcdc7506a5bde811505d8dc35863599dfea80ac3d39ac6f6d28dc922b08",
-   "title": "Will Benjamin Netanyahu visit New York City by September 30?",
-   "outcome": "No",
-   "price": 0.2557,
-   "stake": 40.53,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1784528216,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "80568398380615613281811262196000400273657215935776416622694841219164637714912",
@@ -2923,21 +2988,6 @@
    "exit_price": 0.4991
   },
   {
-   "ts": 1784557341,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "67913011466625262359588841481742993497498081452195278087275807248301608894093",
-   "cond": "0x6abe5fe01ca113b7d6040604a8619cadf181d4e4a6d8db3a082542417af806fd",
-   "title": "Will SpaceX Starship Flight Test 13 launch by August 31?",
-   "outcome": "Yes",
-   "price": 0.824,
-   "stake": 65.29,
-   "reason": "thin book ($4 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1784546090,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "99938107423318996756322333138555738106297484333668883121178163046396546977526",
@@ -3003,21 +3053,6 @@
    "name": "0xbadaf319"
   },
   {
-   "ts": 1784506885,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "90827395403667708709418040026017872248338498816541474972448341541535842153246",
-   "cond": "0xf8b37bd6e5060608e44b34843a2c8ada940c2b62beb1a26fc01088921a70e25b",
-   "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $152 Week of July 20 2026?",
-   "outcome": "No",
-   "price": 0.57,
-   "stake": 61.92,
-   "reason": "thin book ($34 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1784503159,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "29659986108488397735882658288901718486356813252845923931653357875218546128408",
@@ -3047,41 +3082,9 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784496391,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "115428153746996892211798999366308897078723117634059783423375188043903703749062",
-   "cond": "0x0c4cd2055d6ea89354ffddc55d6dbcef9355748112ea952fc925f3db6a5c457f",
-   "title": "Will Argentina win the 2026 FIFA World Cup?",
-   "outcome": "No",
-   "price": 0.711,
-   "stake": 63.59,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "sold",
-   "pnl": 1.53,
-   "settled": 1784498079,
-   "name": "0xbadaf319",
-   "exit_price": 0.74
-  },
-  {
-   "ts": 1784469295,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "38596120750074321785333064789385162164853013897516945380739845321752073819772",
-   "cond": "0xf137d500bee37ff54903e73dfb8cabcfdf8ef4c13c1dd322b649c329cb70c008",
-   "title": "Will Charles Leclerc win the 2026 F1 Belgian Grand Prix?",
-   "outcome": "No",
-   "price": 0.5559,
-   "stake": 101.66,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "won",
-   "pnl": 79.86,
-   "settled": 1784489183,
-   "name": "0xbadaf319",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 96603.97,
+ "missed_pnl": 96624.23,
  "last_fill": {
   "ts": 1784887124,
   "side": "BUY",
@@ -3098,7 +3101,7 @@
    "open_cost": 703.64,
    "open_n": 12,
    "miss_n": 62,
-   "miss_pnl": 97003.35,
+   "miss_pnl": 97023.61,
    "last_ts": 1784886186
   },
   "gkmgkldfmg": {
@@ -3182,5 +3185,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784887148
+ "updated": 1784887960
 }
