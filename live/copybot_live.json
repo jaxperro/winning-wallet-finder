@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 121.05,
+ "stake": 123.78,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3026.5,
- "cash": 1342.98,
- "deployed": 1683.38,
+ "hwm": 3094.45,
+ "cash": 1532.13,
+ "deployed": 1562.32,
  "reserve": 0.0,
- "realized": 2026.32,
+ "realized": 2094.42,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 24,
+ "open_count": 23,
  "fees_paid": 352.88,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,28 @@
  },
  "bets": [
   {
+   "token": "34383281909044259756215667723509413820839811815716463480957480797279993360122",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Team WE",
+   "title": "LoL: Team WE vs JD Gaming - Game 1 Winner",
+   "their_price": 0.64,
+   "my_price": 0.64,
+   "slippage_pct": 0.0,
+   "lag_s": 1.5,
+   "shares": 189.15,
+   "cost": 121.06,
+   "fee": 1.31,
+   "opened": 1784885069,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 66.78,
+   "settled": 1784886695,
+   "end_ts": 1784851200,
+   "sold_shares": 189.15,
+   "sold_proceeds": 189.15
+  },
+  {
    "token": "16686602356235900511267666457287992561973903059220978509691578764880532993490",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -70,26 +92,6 @@
    "sold_shares": 53.74,
    "sold_proceeds": 49.89,
    "end_ts": 1798761600
-  },
-  {
-   "token": "34383281909044259756215667723509413820839811815716463480957480797279993360122",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Team WE",
-   "title": "LoL: Team WE vs JD Gaming - Game 1 Winner",
-   "their_price": 0.64,
-   "my_price": 0.64,
-   "slippage_pct": 0.0,
-   "lag_s": 1.5,
-   "shares": 189.15,
-   "cost": 121.06,
-   "fee": 1.31,
-   "opened": 1784885069,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784851200
   },
   {
    "token": "40257860192328331039995645096358822071679870588847044844154817698500464424757",
@@ -3082,12 +3084,12 @@
  ],
  "missed_pnl": 96603.97,
  "last_fill": {
-  "ts": 1784886433,
+  "ts": 1784886688,
   "side": "SELL",
-  "price": 0.96,
-  "shares": 5.39,
-  "title": "Le Pen endorses non-Bardella PM by December 31, 2026?",
-  "outcome": "No"
+  "price": 1.0,
+  "shares": 189.15,
+  "title": "LoL: Team WE vs JD Gaming - Game 1 Winner",
+  "outcome": "Team WE"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3141,14 +3143,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 114.43,
-   "n": 22,
+   "realized": 181.21,
+   "n": 23,
    "wins": 0,
-   "open_cost": 121.06,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784885069
+   "last_ts": 1784886695
   },
   "BikesAreTheBikes": {
    "realized": 0.07,
@@ -3181,5 +3183,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784886434
+ "updated": 1784886695
 }
