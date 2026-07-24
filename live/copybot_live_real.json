@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
- "cash": 31.56,
- "deployed": 28.88,
+ "cash": 29.1,
+ "deployed": 31.3,
  "reserve": 0.0,
- "realized": -15.42,
+ "realized": -15.46,
  "adjustments": 9.44,
  "ledger_drift": 0.01,
- "open_count": 14,
- "fees_paid": 3.29,
+ "open_count": 15,
+ "fees_paid": 3.33,
  "fee_rate": 0.03,
  "lag": {
-  "n": 114,
-  "n24": 7,
-  "avg_s": 3.2,
-  "avg_slip_pct": -0.0046,
+  "n": 115,
+  "n24": 8,
+  "avg_s": 4.0,
+  "avg_slip_pct": -0.004,
   "window_h": 24
  },
  "wallets": [
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "86567202803696185629704724961398129231892610051254319801824623009047556217191",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Israel x Iran ceasefire continues through July 31?",
+   "their_price": 0.47,
+   "my_price": 0.47,
+   "slippage_pct": 0.0,
+   "lag_s": 9.6,
+   "shares": 5.14,
+   "cost": 2.42,
+   "fee": 0.04,
+   "opened": 1784887113,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785456000
+  },
   {
    "token": "16686602356235900511267666457287992561973903059220978509691578764880532993490",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2084,26 +2104,6 @@
    "exit_price": 1.0,
    "pnl": 1.15,
    "settled": 1783828844
-  },
-  {
-   "token": "14635675870982897917581198649476127837975251193150495566552970565909631535281",
-   "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-   "name": "LSB1",
-   "outcome": "Yes",
-   "title": "Will Argentina win on 2026-07-11?",
-   "their_price": 0.7271,
-   "my_price": 0.7625,
-   "slippage_pct": 0.0487,
-   "shares": 1.31,
-   "cost": 1.0,
-   "fee": 0.01,
-   "opened": 1783818617,
-   "status": "closed",
-   "exit_price": 0.53,
-   "pnl": -0.31,
-   "settled": 1783823524,
-   "sold_shares": 1.31,
-   "sold_proceeds": 0.69
   }
  ],
  "missed": [
@@ -2117,10 +2117,75 @@
    "price": 0.65,
    "stake": 2.42,
    "reason": "order rejected: exception: order 0xf108bfade0b5c26134b80f55a6f4d9451bfd28517",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
+   "status": "sold",
+   "pnl": 1.09,
+   "settled": 1784887137,
+   "name": "AIcAIc",
+   "exit_price": 0.95
+  },
+  {
+   "ts": 1784557345,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "67913011466625262359588841481742993497498081452195278087275807248301608894093",
+   "cond": "0x6abe5fe01ca113b7d6040604a8619cadf181d4e4a6d8db3a082542417af806fd",
+   "title": "Will SpaceX Starship Flight Test 13 launch by August 31?",
+   "outcome": "Yes",
+   "price": 0.824,
+   "stake": 2.41,
+   "reason": "thin book ($4 within 5c < $50)",
+   "status": "sold",
+   "pnl": 0.12,
+   "settled": 1784887134,
+   "name": "0xbadaf319",
+   "exit_price": 0.8729
+  },
+  {
+   "ts": 1784438883,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "18859662100986706442931434084612043934725834523854128874928569872427180020630",
+   "cond": "0x4906333de7e9252101ded75f9bac59e07d158573381c89afe6f719dd3baadefd",
+   "title": "Will Western Digital (WDC) Q4 exabytes shipped be above 255?",
+   "outcome": "No",
+   "price": 0.83,
+   "stake": 2.0,
+   "reason": "thin book ($17 within 5c < $50)",
+   "status": "sold",
+   "pnl": 0.09,
+   "settled": 1784887133,
+   "name": "0xbadaf319",
+   "exit_price": 0.8753
+  },
+  {
+   "ts": 1784252512,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "40157116416490623239679394844195379171683621861511438824716931745872340078199",
+   "cond": "0x2e5100b759d2e6da51f0d457028d8e42b833f4808edd8ff95e3d242aa1ef6102",
+   "title": "Will Revolut's valuation hit (HIGH) $175B by December 31?",
+   "outcome": "No",
+   "price": 0.8699,
+   "stake": 2.45,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 0.03,
+   "settled": 1784887132,
+   "name": "0xbadaf319",
+   "exit_price": 0.8858
+  },
+  {
+   "ts": 1783958437,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "6077633070230470776652108532581280898684441958087418509077540637819937906663",
+   "cond": "0x636f780f794635820e8cafe81924ef2dd67622fc01b6b2e5e64e9cc99593a005",
+   "title": "Will Iran announce withdrawal from MOU negotiations by July 31?",
+   "outcome": "Yes",
+   "price": 0.3949,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": -0.22,
+   "settled": 1784887131,
+   "name": "0xbadaf319",
+   "exit_price": 0.3234
   },
   {
    "ts": 1784877689,
@@ -2874,21 +2939,6 @@
    "exit_price": 0.4991
   },
   {
-   "ts": 1784557345,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "67913011466625262359588841481742993497498081452195278087275807248301608894093",
-   "cond": "0x6abe5fe01ca113b7d6040604a8619cadf181d4e4a6d8db3a082542417af806fd",
-   "title": "Will SpaceX Starship Flight Test 13 launch by August 31?",
-   "outcome": "Yes",
-   "price": 0.824,
-   "stake": 2.41,
-   "reason": "thin book ($4 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1784546096,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "99938107423318996756322333138555738106297484333668883121178163046396546977526",
@@ -3015,63 +3065,15 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784481439,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "42936981830905824453534043956708985265540220333757051125171389193089187972089",
-   "cond": "0x01a6556cf3057f36658c61ba18b2c8023bfd7e1eac2541523f54ed19bfc9da53",
-   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 3 Winner",
-   "outcome": "BetBoom Team",
-   "price": 0.3,
-   "stake": 2.35,
-   "reason": "in-play hold expired unfilled (10s)",
-   "status": "sold",
-   "pnl": -0.04,
-   "settled": 1784482033,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.307
-  },
-  {
-   "ts": 1784481379,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "7053256648875791145597897290283880355436947345055175213430816442613499819460",
-   "cond": "0xfb2118c2ec1decae1284e002717a85b6157ae99ba1fd60fd3478cea44c50cb9c",
-   "title": "Bitcoin Up or Down - July 19, 1:00PM-1:15PM ET",
-   "outcome": "Up",
-   "price": 0.3239,
-   "stake": 2.35,
-   "reason": "too slow to follow (12m late)",
-   "status": "sold",
-   "pnl": 0.91,
-   "settled": 1784481705,
-   "name": "1kto1m",
-   "exit_price": 0.4634
-  },
-  {
-   "ts": 1784481303,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "42936981830905824453534043956708985265540220333757051125171389193089187972089",
-   "cond": "0x01a6556cf3057f36658c61ba18b2c8023bfd7e1eac2541523f54ed19bfc9da53",
-   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 3 Winner",
-   "outcome": "BetBoom Team",
-   "price": 0.2,
-   "stake": 2.35,
-   "reason": "in-play hold expired unfilled (50s)",
-   "status": "sold",
-   "pnl": 0.23,
-   "settled": 1784481379,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.23
   }
  ],
- "missed_pnl": 1167.23,
+ "missed_pnl": 1168.34,
  "last_fill": {
-  "ts": 1784886185,
-  "side": "SELL",
-  "price": 0.92,
-  "shares": 0.01,
-  "title": "Will ByteDance's valuation hit (HIGH) $1.5T by December 31?",
+  "ts": 1784887122,
+  "side": "BUY",
+  "price": 0.47,
+  "shares": 5.14,
+  "title": "Israel x Iran ceasefire continues through July 31?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3082,7 +3084,7 @@
    "open_cost": 13.33,
    "open_n": 5,
    "miss_n": 65,
-   "miss_pnl": 1169.23,
+   "miss_pnl": 1169.25,
    "last_ts": 1784886185
   },
   "AIcAIc": {
@@ -3092,7 +3094,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 10,
-   "miss_pnl": 5.99,
+   "miss_pnl": 7.08,
    "last_ts": 1784725704
   },
   "(incident)": {
@@ -3139,11 +3141,11 @@
    "realized": 0.7,
    "n": 4,
    "wins": 1,
-   "open_cost": 19.91,
-   "open_n": 9,
+   "open_cost": 22.33,
+   "open_n": 10,
    "miss_n": 25,
    "miss_pnl": -9.91,
-   "last_ts": 1784851003
+   "last_ts": 1784887113
   },
   "Kruto2027": {
    "realized": -0.05,
@@ -3186,5 +3188,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784886185
+ "updated": 1784887137
 }
