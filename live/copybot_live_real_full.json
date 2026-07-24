@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784898192,
+ "updated": 1784898656,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.61,
@@ -68,7 +68,7 @@
    "wins": 1,
    "open_cost": 22.33,
    "open_n": 10,
-   "miss_n": 25,
+   "miss_n": 26,
    "miss_pnl": -9.91,
    "last_ts": 1784887113
   },
@@ -2576,6 +2576,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784898656,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "111604417349377875799825956621596386269673370070912696668140891647145772186047",
+   "cond": "0x8bf1c1536ecb1c08fe13c6b71e8ab1f58bf3461c4cb79f5f1679f869a06aef86",
+   "title": "Will there be no change in Fed interest rates after the July 2026 meeting?",
+   "outcome": "Yes",
+   "price": 0.714,
+   "stake": 2.42,
+   "reason": "order rejected: exception: price must conform to tick size 0.001 with at mos",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1784898192,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",

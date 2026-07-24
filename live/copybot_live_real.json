@@ -2108,6 +2108,21 @@
  ],
  "missed": [
   {
+   "ts": 1784898656,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "111604417349377875799825956621596386269673370070912696668140891647145772186047",
+   "cond": "0x8bf1c1536ecb1c08fe13c6b71e8ab1f58bf3461c4cb79f5f1679f869a06aef86",
+   "title": "Will there be no change in Fed interest rates after the July 2026 meeting?",
+   "outcome": "Yes",
+   "price": 0.714,
+   "stake": 2.42,
+   "reason": "order rejected: exception: price must conform to tick size 0.001 with at mos",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784898192,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "73739632839816504626737108532045400878921898467348280846632249640824887675542",
@@ -3048,25 +3063,9 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784496391,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "115428153746996892211798999366308897078723117634059783423375188043903703749062",
-   "cond": "0x0c4cd2055d6ea89354ffddc55d6dbcef9355748112ea952fc925f3db6a5c457f",
-   "title": "Will Argentina win the 2026 FIFA World Cup?",
-   "outcome": "No",
-   "price": 0.711,
-   "stake": 2.41,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "sold",
-   "pnl": 0.06,
-   "settled": 1784496786,
-   "name": "0xbadaf319",
-   "exit_price": 0.74
   }
  ],
- "missed_pnl": 1168.01,
+ "missed_pnl": 1167.88,
  "last_fill": {
   "ts": 1784887122,
   "side": "BUY",
@@ -3142,7 +3141,7 @@
    "wins": 1,
    "open_cost": 22.33,
    "open_n": 10,
-   "miss_n": 25,
+   "miss_n": 26,
    "miss_pnl": -9.91,
    "last_ts": 1784887113
   },
@@ -3187,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784898192
+ "updated": 1784898656
 }
