@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784926560,
+ "updated": 1784926954,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 0.48,
@@ -8,7 +8,7 @@
    "wins": 5,
    "open_cost": 13.33,
    "open_n": 5,
-   "miss_n": 67,
+   "miss_n": 68,
    "miss_pnl": 1170.13,
    "last_ts": 1784910835
   },
@@ -2618,6 +2618,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784926954,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "13771338838328601734339816906945515194595281212781971576981933533238318254216",
+   "cond": "0xfb4d7cdb6ded97ed94b0cc9e9cfd89b93b41bc1a0768b095c1329e65aeaf2375",
+   "title": "Will Madonna's monthly listeners figure hit 60m by August 31?",
+   "outcome": "No",
+   "price": 0.89,
+   "stake": 2.37,
+   "reason": "order rejected: exception: order 0x4166ca4fae37199fcfd53c21152b054ba4e61339f",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784905371,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
