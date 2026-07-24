@@ -2145,7 +2145,8 @@
    "status": "won",
    "pnl": 1.76,
    "settled": 1784925235,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1784727262,
@@ -2157,10 +2158,12 @@
    "price": 0.87,
    "stake": 51.03,
    "reason": "thin book ($34 within 5c < $50)",
-   "status": "won",
-   "pnl": 7.43,
+   "status": "sold",
+   "pnl": 5.84,
    "settled": 1784925098,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.9737
   },
   {
    "ts": 1784853302,
@@ -3086,7 +3089,7 @@
    "exit_price": 0.4991
   }
  ],
- "missed_pnl": 96495.05,
+ "missed_pnl": 96493.46,
  "last_fill": {
   "ts": 1784924188,
   "side": "SELL",
@@ -3103,7 +3106,7 @@
    "open_cost": 663.64,
    "open_n": 11,
    "miss_n": 67,
-   "miss_pnl": 97006.34,
+   "miss_pnl": 97004.75,
    "last_ts": 1784925233
   },
   "gkmgkldfmg": {
@@ -3187,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784925236
+ "updated": 1784926828
 }
