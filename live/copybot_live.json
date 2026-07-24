@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 126.23,
+ "stake": 126.26,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1454.63,
- "deployed": 1701.24,
+ "cash": 1462.86,
+ "deployed": 1693.63,
  "reserve": 0.0,
- "realized": 2155.84,
+ "realized": 2156.46,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 25,
@@ -68,8 +68,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1784851200,
-   "sold_shares": 17.97,
-   "sold_proceeds": 16.39
+   "sold_shares": 26.4,
+   "sold_proceeds": 24.61
   },
   {
    "token": "68315926096182221986995516814797530272425122547938404327641913821151049555944",
@@ -3089,10 +3089,10 @@
  ],
  "missed_pnl": 96628.37,
  "last_fill": {
-  "ts": 1784908328,
-  "side": "BUY",
-  "price": 0.922,
-  "shares": 17.37,
+  "ts": 1784908522,
+  "side": "SELL",
+  "price": 0.977,
+  "shares": 8.42,
   "title": "Will the price of Bitcoin be above $64,000 on July 24?",
   "outcome": "Yes"
  },
@@ -3188,5 +3188,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784908335
+ "updated": 1784908528
 }
