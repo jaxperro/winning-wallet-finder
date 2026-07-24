@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784920120,
+ "updated": 1784921036,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 573.42,
@@ -69,7 +69,7 @@
    "open_cost": 1323.12,
    "open_n": 12,
    "miss_n": 24,
-   "miss_pnl": -484.92,
+   "miss_pnl": -596.83,
    "last_ts": 1784887113
   },
   "JuiceFarm": {
@@ -4658,6 +4658,21 @@
  ],
  "missed": [
   {
+   "ts": 1784682914,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "66006680389192620317816056197058298603060937483253191311974086024874814208778",
+   "cond": "0x78322c43b6c76c3f29208ae75bf81d455c3b3b803c891a8945e25fe4376a3a8e",
+   "title": "Will the next Claude Opus model be released by July 24, 2026?",
+   "outcome": "No",
+   "price": 0.52,
+   "stake": 110.32,
+   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
+   "status": "lost",
+   "pnl": -111.91,
+   "settled": 1784921034,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784914783,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "40721468567018229427830693104124829389096865246100141431731263782329757924925",
@@ -5322,21 +5337,6 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.7583
-  },
-  {
-   "ts": 1784682914,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "66006680389192620317816056197058298603060937483253191311974086024874814208778",
-   "cond": "0x78322c43b6c76c3f29208ae75bf81d455c3b3b803c891a8945e25fe4376a3a8e",
-   "title": "Will the next Claude Opus model be released by July 24, 2026?",
-   "outcome": "No",
-   "price": 0.52,
-   "stake": 110.32,
-   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784663345,
