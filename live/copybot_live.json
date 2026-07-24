@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 121.01,
+ "stake": 121.03,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3026.5,
- "cash": 1331.79,
- "deployed": 1693.41,
+ "cash": 1337.81,
+ "deployed": 1688.01,
  "reserve": 0.0,
- "realized": 2025.16,
+ "realized": 2025.79,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 25,
+ "open_count": 24,
  "fees_paid": 352.87,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,28 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "16686602356235900511267666457287992561973903059220978509691578764880532993490",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will ByteDance's valuation hit (HIGH) $1.5T by December 31?",
+   "their_price": 0.95,
+   "my_price": 0.94,
+   "slippage_pct": -0.0105,
+   "lag_s": 0.7,
+   "shares": 53.75,
+   "cost": 50.53,
+   "fee": 0.09,
+   "opened": 1784100418,
+   "status": "closed",
+   "exit_price": 0.9283,
+   "pnl": -0.73,
+   "settled": 1784886186,
+   "sold_shares": 53.74,
+   "sold_proceeds": 49.89,
+   "end_ts": 1798761600
+  },
   {
    "token": "34383281909044259756215667723509413820839811815716463480957480797279993360122",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2102,27 +2124,6 @@
    "settled": 1784103772,
    "sold_shares": 251.99,
    "sold_proceeds": 189.62
-  },
-  {
-   "token": "8020089880920958927009226502257340268216634167927175441316718981939077905748",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will the price of Bitcoin be above $56,000 on July 20?",
-   "their_price": 0.9,
-   "my_price": 0.8597,
-   "slippage_pct": -0.0589,
-   "lag_s": 48.4,
-   "shares": 110.84,
-   "cost": 95.28,
-   "fee": 0.4,
-   "opened": 1784103466,
-   "status": "closed",
-   "exit_price": 0.8966,
-   "pnl": 3.69,
-   "settled": 1784103567,
-   "sold_shares": 110.84,
-   "sold_proceeds": 99.37
   }
  ],
  "missed": [
@@ -3081,23 +3082,23 @@
  ],
  "missed_pnl": 96603.97,
  "last_fill": {
-  "ts": 1784885070,
-  "side": "BUY",
-  "price": 0.64,
-  "shares": 189.15,
-  "title": "LoL: Team WE vs JD Gaming - Game 1 Winner",
-  "outcome": "Team WE"
+  "ts": 1784886202,
+  "side": "SELL",
+  "price": 0.96,
+  "shares": 5.25,
+  "title": "Le Pen endorses non-Bardella PM by December 31, 2026?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 562.22,
-   "n": 51,
+   "realized": 561.49,
+   "n": 52,
    "wins": 14,
-   "open_cost": 754.17,
-   "open_n": 13,
+   "open_cost": 703.64,
+   "open_n": 12,
    "miss_n": 62,
    "miss_pnl": 97003.35,
-   "last_ts": 1784881321
+   "last_ts": 1784886186
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -3180,5 +3181,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784885077
+ "updated": 1784886202
 }

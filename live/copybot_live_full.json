@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1784885077,
+ "updated": 1784886202,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 562.22,
-   "n": 51,
+   "realized": 561.49,
+   "n": 52,
    "wins": 14,
-   "open_cost": 754.17,
-   "open_n": 13,
+   "open_cost": 703.64,
+   "open_n": 12,
    "miss_n": 62,
    "miss_pnl": 97003.35,
-   "last_ts": 1784881321
+   "last_ts": 1784886186
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -94,6 +94,28 @@
   }
  },
  "bets": [
+  {
+   "token": "16686602356235900511267666457287992561973903059220978509691578764880532993490",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will ByteDance's valuation hit (HIGH) $1.5T by December 31?",
+   "their_price": 0.95,
+   "my_price": 0.94,
+   "slippage_pct": -0.0105,
+   "lag_s": 0.7,
+   "shares": 53.75,
+   "cost": 50.53,
+   "fee": 0.0909,
+   "opened": 1784100418,
+   "status": "closed",
+   "exit_price": 0.9283,
+   "pnl": -0.73,
+   "settled": 1784886186,
+   "sold_shares": 53.74469556639891,
+   "sold_proceeds": 49.88895970327982,
+   "end_ts": 1798761600
+  },
   {
    "token": "34383281909044259756215667723509413820839811815716463480957480797279993360122",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2212,28 +2234,6 @@
    "sold_proceeds": 63.633153958333324
   },
   {
-   "token": "16686602356235900511267666457287992561973903059220978509691578764880532993490",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will ByteDance's valuation hit (HIGH) $1.5T by December 31?",
-   "their_price": 0.95,
-   "my_price": 0.94,
-   "slippage_pct": -0.0105,
-   "lag_s": 0.7,
-   "shares": 53.75,
-   "cost": 50.53,
-   "fee": 0.0909,
-   "opened": 1784100418,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 53.19148936170213,
-   "sold_proceeds": 49.36420212765958,
-   "end_ts": 1798761600
-  },
-  {
    "token": "6237386819428750235511557154093150991879160039847931747938354455286350107208",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -2251,7 +2251,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1798675200
+   "end_ts": 1798675200,
+   "sold_shares": 5.252708420707168,
+   "sold_proceeds": 5.036548963778226
   },
   {
    "token": "16167991169842969662552149172415147847102093356587677921265845709187217219794",
@@ -3899,8 +3901,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 62.755379933982226,
-   "sold_proceeds": 60.40043474652968,
+   "sold_shares": 62.970071073834525,
+   "sold_proceeds": 60.614241461937546,
    "end_ts": 1809043200
   },
   {
@@ -4297,8 +4299,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 54.01307145111316,
-   "sold_proceeds": 47.06994699007986,
+   "sold_shares": 54.28111800543663,
+   "sold_proceeds": 47.315957973265505,
    "end_ts": 1830297600
   },
   {
