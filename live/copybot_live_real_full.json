@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784926954,
+ "updated": 1784932846,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 0.48,
@@ -43,14 +43,14 @@
    "last_ts": 1784655322
   },
   "1kto1m": {
-   "realized": 0.31,
-   "n": 7,
+   "realized": -2.1,
+   "n": 8,
    "wins": 1,
-   "open_cost": 2.37,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 21,
    "miss_pnl": -0.82,
-   "last_ts": 1784923242
+   "last_ts": 1784932843
   },
   "LSB1": {
    "realized": -1.22,
@@ -128,10 +128,10 @@
    "cost": 2.37,
    "fee": 0.0355,
    "opened": 1784923242,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -2.41,
+   "settled": 1784932843,
    "end_ts": 1784851200
   },
   {
