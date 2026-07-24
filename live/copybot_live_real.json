@@ -2108,6 +2108,21 @@
  ],
  "missed": [
   {
+   "ts": 1784898192,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "73739632839816504626737108532045400878921898467348280846632249640824887675542",
+   "cond": "0x6d69e16e27fb4587d357ad9cf30ebd740070d2ed9f615958df4bce0cfbb69bbe",
+   "title": "LoL: EDward Gaming vs Bilibili Gaming (BO3) - LPL Group Ascend",
+   "outcome": "Bilibili Gaming",
+   "price": 0.58,
+   "stake": 2.42,
+   "reason": "maker bid unfilled (0s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1784895725,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "68315926096182221986995516814797530272425122547938404327641913821151049555944",
@@ -3049,25 +3064,9 @@
    "settled": 1784496786,
    "name": "0xbadaf319",
    "exit_price": 0.74
-  },
-  {
-   "ts": 1784485474,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "3306035343466503934184175896783360690575375600980458166852017344010969201326",
-   "cond": "0x55396f414e79e269de30965a8304b16ecf3e993ed13505c39ec0f5ece7296b4a",
-   "title": "Bitcoin Up or Down - July 19, 2:15PM-2:30PM ET",
-   "outcome": "Up",
-   "price": 0.4326,
-   "stake": 2.35,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 0.53,
-   "settled": 1784485797,
-   "name": "1kto1m",
-   "exit_price": 0.5448
   }
  ],
- "missed_pnl": 1168.11,
+ "missed_pnl": 1168.01,
  "last_fill": {
   "ts": 1784887122,
   "side": "BUY",
@@ -3093,7 +3092,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 11,
+   "miss_n": 12,
    "miss_pnl": 7.08,
    "last_ts": 1784725704
   },
@@ -3133,8 +3132,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 13,
-   "miss_pnl": -3.01,
+   "miss_n": 12,
+   "miss_pnl": -3.11,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -3173,8 +3172,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 7,
-   "miss_pnl": 2.35,
+   "miss_n": 8,
+   "miss_pnl": 2.45,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3188,5 +3187,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784895729
+ "updated": 1784898192
 }

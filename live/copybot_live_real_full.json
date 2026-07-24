@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784895729,
+ "updated": 1784898192,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 1.61,
@@ -18,7 +18,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 11,
+   "miss_n": 12,
    "miss_pnl": 7.08,
    "last_ts": 1784725704
   },
@@ -58,8 +58,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 13,
-   "miss_pnl": -3.01,
+   "miss_n": 12,
+   "miss_pnl": -3.11,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -98,8 +98,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 7,
-   "miss_pnl": 2.35,
+   "miss_n": 8,
+   "miss_pnl": 2.45,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -2576,6 +2576,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784898192,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "73739632839816504626737108532045400878921898467348280846632249640824887675542",
+   "cond": "0x6d69e16e27fb4587d357ad9cf30ebd740070d2ed9f615958df4bce0cfbb69bbe",
+   "title": "LoL: EDward Gaming vs Bilibili Gaming (BO3) - LPL Group Ascend",
+   "outcome": "Bilibili Gaming",
+   "price": 0.58,
+   "stake": 2.42,
+   "reason": "maker bid unfilled (0s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
   {
    "ts": 1784895725,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -5639,7 +5654,7 @@
    "status": "sold",
    "pnl": 0.1,
    "settled": 1783780392,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_price": 1.0
   },
   {
