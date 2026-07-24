@@ -171,10 +171,9 @@ def main():
         rep = json.load(open(os.path.join(ROOT, "live",
                                           "portfolio_live_replica.json")))
         lv = json.load(open(os.path.join(ROOT, "live",
-                                         "copybot_live_real_full.json")))
+                                         "copybot_live_real.json")))
         row["replica_pnl"] = round(rep.get("pnl") or 0, 2)
-        row["live_realized"] = round(lv.get("pnl_realized")
-                                     or lv.get("realized") or 0, 2)
+        row["live_realized"] = round(lv.get("realized") or 0, 2)
         print(f"REPLICA: model-at-live-bank 30d P&L {row['replica_pnl']:+.2f}"
               f" vs live book realized {row['live_realized']:+.2f} "
               f"(residual {row['replica_pnl'] - row['live_realized']:+.2f})",
