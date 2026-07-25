@@ -2136,6 +2136,22 @@
  ],
  "missed": [
   {
+   "ts": 1784754810,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "81905629695376179467642152439122205490366546600283546015907818703618943938229",
+   "cond": "0x784aad9ba3f0aa5f8c2e6c4dc9314d8899cd147d6b289e6eb289e66a5b569082",
+   "title": "Will Elon Musk tweet \"Hyperliquid\" by August 31, 2026?",
+   "outcome": "No",
+   "price": 0.004,
+   "stake": 65.95,
+   "reason": "thin book ($9 within 5c < $50)",
+   "status": "sold",
+   "pnl": 14848.26,
+   "settled": 1784974284,
+   "name": "0xbadaf319",
+   "exit_price": 0.9072
+  },
+  {
    "ts": 1784966431,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "3901986631446153023403890805451260510191347162609117497694534689649201812603",
@@ -2755,21 +2771,6 @@
    "exit_checked": true
   },
   {
-   "ts": 1784754810,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "81905629695376179467642152439122205490366546600283546015907818703618943938229",
-   "cond": "0x784aad9ba3f0aa5f8c2e6c4dc9314d8899cd147d6b289e6eb289e66a5b569082",
-   "title": "Will Elon Musk tweet \"Hyperliquid\" by August 31, 2026?",
-   "outcome": "No",
-   "price": 0.004,
-   "stake": 65.95,
-   "reason": "thin book ($9 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1784737932,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "101809971081124775410756971833962290310584447326615818129608807839263253483036",
@@ -3092,7 +3093,7 @@
    "exit_price": 0.36
   }
  ],
- "missed_pnl": 96515.46,
+ "missed_pnl": 111363.72,
  "last_fill": {
   "ts": 1784970122,
   "side": "BUY",
@@ -3109,7 +3110,7 @@
    "open_cost": 695.99,
    "open_n": 11,
    "miss_n": 70,
-   "miss_pnl": 97026.75,
+   "miss_pnl": 111875.01,
    "last_ts": 1784970119
   },
   "gkmgkldfmg": {
@@ -3193,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784973574
+ "updated": 1784974287
 }
