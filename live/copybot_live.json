@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 113.81,
+ "stake": 113.76,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 973.93,
- "deployed": 1871.39,
+ "cash": 858.89,
+ "deployed": 1985.21,
  "reserve": 0.0,
- "realized": 1845.3,
+ "realized": 1844.07,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 25,
- "fees_paid": 376.78,
+ "open_count": 26,
+ "fees_paid": 378.01,
  "fee_rate": 0.03,
  "lag": {
-  "n": 266,
-  "n24": 16,
-  "avg_s": 16.7,
+  "n": 267,
+  "n24": 17,
+  "avg_s": 16.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "49331878508394871833592446045300865060542314418976779518068691623730505202112",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Karmine Corp",
+   "title": "LoL: Karmine Corp vs Movistar KOI - Game 1 Winner",
+   "their_price": 0.64,
+   "my_price": 0.64,
+   "slippage_pct": 0.0,
+   "lag_s": 7.0,
+   "shares": 177.83,
+   "cost": 113.81,
+   "fee": 1.23,
+   "opened": 1784997557,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784937600
+  },
   {
    "token": "111811929502290362982122721758046162774175984777524039918857735995004907450973",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2109,27 +2129,6 @@
    "sold_shares": 15.58,
    "sold_proceeds": 9.87,
    "end_ts": 1787184000
-  },
-  {
-   "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "1win",
-   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
-   "their_price": 0.3927,
-   "my_price": 0.33,
-   "slippage_pct": -0.1596,
-   "lag_s": 1.3,
-   "shares": 307.61,
-   "cost": 101.51,
-   "fee": 2.04,
-   "opened": 1784136469,
-   "status": "closed",
-   "exit_price": 0.3832,
-   "pnl": 14.33,
-   "settled": 1784136544,
-   "sold_shares": 307.61,
-   "sold_proceeds": 117.88
   }
  ],
  "missed": [
@@ -3092,12 +3091,12 @@
  ],
  "missed_pnl": 111363.98,
  "last_fill": {
-  "ts": 1784991651,
+  "ts": 1784997564,
   "side": "BUY",
-  "price": 0.5,
-  "shares": 174.52,
-  "title": "Will Lando Norris get pole position at the 2026 F1 Hungarian",
-  "outcome": "No"
+  "price": 0.64,
+  "shares": 177.83,
+  "title": "LoL: Karmine Corp vs Movistar KOI - Game 1 Winner",
+  "outcome": "Karmine Corp"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3154,11 +3153,11 @@
    "realized": -113.87,
    "n": 30,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 113.81,
+   "open_n": 1,
    "miss_n": 3,
    "miss_pnl": 60.16,
-   "last_ts": 1784994471
+   "last_ts": 1784997557
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -3191,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784994735
+ "updated": 1784997595
 }
