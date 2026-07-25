@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 117.28,
+ "stake": 113.79,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
  "cash": 1182.72,
- "deployed": 1749.28,
+ "deployed": 1662.02,
  "reserve": 0.0,
- "realized": 1931.97,
+ "realized": 1844.71,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 24,
+ "open_count": 23,
  "fees_paid": 378.14,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "8520939197524385894693978702254214426383751437032693433763418213436851058226",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Lando Norris get pole position at the 2026 F1 Hungarian Grand Prix?",
+   "their_price": 0.5,
+   "my_price": 0.5,
+   "slippage_pct": 0.0,
+   "lag_s": 2.7,
+   "shares": 174.52,
+   "cost": 87.26,
+   "fee": 1.31,
+   "opened": 1784991649,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -88.57,
+   "settled": 1785011468,
+   "end_ts": 1785542400
+  },
   {
    "token": "107156085038944146438947590438365026964800691960988984359921209164919978522933",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -110,26 +130,6 @@
    "pnl": -127.95,
    "settled": 1784994471,
    "end_ts": 1784937600
-  },
-  {
-   "token": "8520939197524385894693978702254214426383751437032693433763418213436851058226",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Lando Norris get pole position at the 2026 F1 Hungarian Grand Prix?",
-   "their_price": 0.5,
-   "my_price": 0.5,
-   "slippage_pct": 0.0,
-   "lag_s": 2.7,
-   "shares": 174.52,
-   "cost": 87.26,
-   "fee": 1.31,
-   "opened": 1784991649,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785542400
   },
   {
    "token": "31734979589136676783620439669736424886669000930046383039286241799551299417224",
@@ -3103,14 +3103,14 @@
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 593.76,
-   "n": 59,
+   "realized": 505.19,
+   "n": 60,
    "wins": 19,
-   "open_cost": 783.25,
-   "open_n": 12,
+   "open_cost": 695.99,
+   "open_n": 11,
    "miss_n": 72,
    "miss_pnl": 111875.27,
-   "last_ts": 1784991649
+   "last_ts": 1785011468
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -3193,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785010467
+ "updated": 1785011471
 }
