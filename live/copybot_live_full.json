@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785011471,
+ "updated": 1785011567,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 505.19,
-   "n": 60,
+   "realized": 525.84,
+   "n": 61,
    "wins": 19,
-   "open_cost": 695.99,
-   "open_n": 11,
+   "open_cost": 651.26,
+   "open_n": 10,
    "miss_n": 72,
    "miss_pnl": 111875.27,
-   "last_ts": 1785011468
+   "last_ts": 1785011567
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -94,6 +94,27 @@
   }
  },
  "bets": [
+  {
+   "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Ethereal FDV above $500M one day after launch?",
+   "their_price": 0.82,
+   "my_price": 0.6,
+   "slippage_pct": -0.2683,
+   "shares": 74.55,
+   "cost": 44.73,
+   "fee": 0.5368,
+   "opened": 1783604345,
+   "status": "closed",
+   "exit_price": 0.8842,
+   "pnl": 20.65,
+   "settled": 1785011567,
+   "sold_shares": 74.54300072543349,
+   "sold_proceeds": 65.91215183861686,
+   "end_ts": 1830297600
+  },
   {
    "token": "8520939197524385894693978702254214426383751437032693433763418213436851058226",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -4727,27 +4748,6 @@
    "settled": 1783610007,
    "sold_shares": 57.31919474591893,
    "sold_proceeds": 42.77965753153833
-  },
-  {
-   "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Ethereal FDV above $500M one day after launch?",
-   "their_price": 0.82,
-   "my_price": 0.6,
-   "slippage_pct": -0.2683,
-   "shares": 74.55,
-   "cost": 44.73,
-   "fee": 0.5368,
-   "opened": 1783604345,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 54.28111800543663,
-   "sold_proceeds": 47.315957973265505,
-   "end_ts": 1830297600
   },
   {
    "token": "65585128992878043579543337949365468961659444652241007486927374035531121325136",
