@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785000156,
+ "updated": 1785005783,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 593.76,
@@ -73,14 +73,14 @@
    "last_ts": 1784953416
   },
   "JuiceFarm": {
-   "realized": 35.65,
-   "n": 1,
-   "wins": 1,
-   "open_cost": 122.12,
-   "open_n": 1,
+   "realized": 63.59,
+   "n": 2,
+   "wins": 2,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 0,
    "miss_pnl": 0.0,
-   "last_ts": 1784979741
+   "last_ts": 1785005780
   },
   "0xd96750bf": {
    "realized": 0.0,
@@ -94,6 +94,26 @@
   }
  },
  "bets": [
+  {
+   "token": "107156085038944146438947590438365026964800691960988984359921209164919978522933",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Top Esports",
+   "title": "LoL: Top Esports vs ThunderTalk Gaming (BO3) - LPL Group Ascend",
+   "their_price": 0.81,
+   "my_price": 0.81,
+   "slippage_pct": 0.0,
+   "lag_s": 7.1,
+   "shares": 150.76,
+   "cost": 122.12,
+   "fee": 0.6961,
+   "opened": 1784979741,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 27.94,
+   "settled": 1785005780,
+   "end_ts": 1784937600
+  },
   {
    "token": "49331878508394871833592446045300865060542314418976779518068691623730505202112",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -197,26 +217,6 @@
    "end_ts": 1784937600,
    "sold_shares": 169.56,
    "sold_proceeds": 169.56
-  },
-  {
-   "token": "107156085038944146438947590438365026964800691960988984359921209164919978522933",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "Top Esports",
-   "title": "LoL: Top Esports vs ThunderTalk Gaming (BO3) - LPL Group Ascend",
-   "their_price": 0.81,
-   "my_price": 0.81,
-   "slippage_pct": 0.0,
-   "lag_s": 7.1,
-   "shares": 150.76,
-   "cost": 122.12,
-   "fee": 0.6961,
-   "opened": 1784979741,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784937600
   },
   {
    "token": "24538227191540742319290192357327280598675171199196475574105878696409564463051",
