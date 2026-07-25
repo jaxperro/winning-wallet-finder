@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784937404,
+ "updated": 1784943182,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 0.48,
@@ -68,7 +68,7 @@
    "wins": 1,
    "open_cost": 22.33,
    "open_n": 10,
-   "miss_n": 26,
+   "miss_n": 27,
    "miss_pnl": -12.42,
    "last_ts": 1784887113
   },
@@ -2618,6 +2618,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784943182,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "101732096022791033420874767768998282176255049842341266029460503775596933298889",
+   "cond": "0xf12648e8f9b52f1d6d2fa8aafd965df15544876cecf53fc1be6c0ab178bbc814",
+   "title": "Will \"The Odyssey\" 2nd Weekend Box Office be between 86m and 92m?",
+   "outcome": "No",
+   "price": 0.46,
+   "stake": 2.27,
+   "reason": "thin book ($1 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1784926954,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
