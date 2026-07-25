@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 124.26,
+ "stake": 126.09,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1413.63,
- "deployed": 1692.81,
+ "cash": 1544.37,
+ "deployed": 1607.88,
  "reserve": 0.0,
- "realized": 2106.42,
+ "realized": 2152.22,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 23,
- "fees_paid": 366.73,
+ "open_count": 22,
+ "fees_paid": 366.85,
  "fee_rate": 0.03,
  "lag": {
   "n": 258,
@@ -63,13 +63,13 @@
    "cost": 123.52,
    "fee": 1.37,
    "opened": 1784966555,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
+   "status": "closed",
+   "exit_price": 0.96,
+   "pnl": 63.33,
+   "settled": 1784968110,
    "end_ts": 1784937600,
-   "sold_shares": 61.27,
-   "sold_proceeds": 57.49
+   "sold_shares": 196.07,
+   "sold_proceeds": 188.22
   },
   {
    "token": "30105308353288988924984162628182939641372197734077392129497102501234749347616",
@@ -3095,10 +3095,10 @@
  ],
  "missed_pnl": 96515.46,
  "last_fill": {
-  "ts": 1784968025,
+  "ts": 1784968110,
   "side": "SELL",
-  "price": 0.94,
-  "shares": 61.27,
+  "price": 0.97,
+  "shares": 19.01,
   "title": "LoL: LGD Gaming vs Team WE - Game 2 Winner",
   "outcome": "Team WE"
  },
@@ -3154,14 +3154,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 126.89,
-   "n": 25,
+   "realized": 190.22,
+   "n": 26,
    "wins": 0,
-   "open_cost": 123.52,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784966555
+   "last_ts": 1784968110
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -3194,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784968031
+ "updated": 1784968110
 }
