@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 123.53,
+ "stake": 123.47,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1476.22,
- "deployed": 1611.91,
+ "cash": 1351.32,
+ "deployed": 1735.43,
  "reserve": 0.0,
- "realized": 2088.1,
+ "realized": 2086.72,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 22,
- "fees_paid": 365.24,
+ "open_count": 23,
+ "fees_paid": 366.62,
  "fee_rate": 0.03,
  "lag": {
-  "n": 257,
-  "n24": 16,
-  "avg_s": 11.7,
+  "n": 258,
+  "n24": 17,
+  "avg_s": 11.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "41128359410147540990090031143993561801439881809667646963277254224817395601063",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Team WE",
+   "title": "LoL: LGD Gaming vs Team WE - Game 2 Winner",
+   "their_price": 0.63,
+   "my_price": 0.63,
+   "slippage_pct": 0.0,
+   "lag_s": 7.2,
+   "shares": 196.07,
+   "cost": 123.52,
+   "fee": 1.37,
+   "opened": 1784966555,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784937600
+  },
   {
    "token": "30105308353288988924984162628182939641372197734077392129497102501234749347616",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2109,27 +2129,6 @@
    "settled": 1784127513,
    "sold_shares": 157.31,
    "sold_proceeds": 157.31
-  },
-  {
-   "token": "30170770852623682463283902530627549920331526605828543295200389453300351881285",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Liquid",
-   "title": "Dota 2: Team Spirit vs Team Liquid - Game 2 Winner",
-   "their_price": 0.38,
-   "my_price": 0.37,
-   "slippage_pct": -0.0263,
-   "lag_s": 6.4,
-   "shares": 259.72,
-   "cost": 96.1,
-   "fee": 1.82,
-   "opened": 1784119888,
-   "status": "closed",
-   "exit_price": 0.5149,
-   "pnl": 35.81,
-   "settled": 1784120499,
-   "sold_shares": 259.72,
-   "sold_proceeds": 133.73
   }
  ],
  "missed": [
@@ -3092,12 +3091,12 @@
  ],
  "missed_pnl": 96515.46,
  "last_fill": {
-  "ts": 1784951746,
-  "side": "SELL",
-  "price": 0.9,
-  "shares": 34.08,
-  "title": "Will the Houthis successfully target shipping by July 31, 20",
-  "outcome": "Yes"
+  "ts": 1784966562,
+  "side": "BUY",
+  "price": 0.63,
+  "shares": 196.07,
+  "title": "LoL: LGD Gaming vs Team WE - Game 2 Winner",
+  "outcome": "Team WE"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3154,11 +3153,11 @@
    "realized": 126.89,
    "n": 25,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 123.52,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784907138
+   "last_ts": 1784966555
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -3191,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784966436
+ "updated": 1784966563
 }

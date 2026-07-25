@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784966436,
+ "updated": 1784966563,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 593.76,
@@ -56,11 +56,11 @@
    "realized": 126.89,
    "n": 25,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 123.52,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784907138
+   "last_ts": 1784966555
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -94,6 +94,26 @@
   }
  },
  "bets": [
+  {
+   "token": "41128359410147540990090031143993561801439881809667646963277254224817395601063",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Team WE",
+   "title": "LoL: LGD Gaming vs Team WE - Game 2 Winner",
+   "their_price": 0.63,
+   "my_price": 0.63,
+   "slippage_pct": 0.0,
+   "lag_s": 7.2,
+   "shares": 196.07,
+   "cost": 123.52,
+   "fee": 1.3711,
+   "opened": 1784966555,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784937600
+  },
   {
    "token": "30105308353288988924984162628182939641372197734077392129497102501234749347616",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
