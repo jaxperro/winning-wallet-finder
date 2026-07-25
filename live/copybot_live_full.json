@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784992216,
+ "updated": 1784994479,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 593.76,
@@ -53,14 +53,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 14.08,
-   "n": 29,
+   "realized": -113.87,
+   "n": 30,
    "wins": 0,
-   "open_cost": 125.98,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 3,
    "miss_pnl": 60.16,
-   "last_ts": 1784991400
+   "last_ts": 1784994471
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -94,6 +94,26 @@
   }
  },
  "bets": [
+  {
+   "token": "111811929502290362982122721758046162774175984777524039918857735995004907450973",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Weibo Gaming",
+   "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
+   "their_price": 0.48,
+   "my_price": 0.48,
+   "slippage_pct": 0.0,
+   "lag_s": 40.7,
+   "shares": 262.45,
+   "cost": 125.98,
+   "fee": 1.9652,
+   "opened": 1784978129,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -127.95,
+   "settled": 1784994471,
+   "end_ts": 1784937600
+  },
   {
    "token": "8520939197524385894693978702254214426383751437032693433763418213436851058226",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -197,26 +217,6 @@
    "end_ts": 1784937600,
    "sold_shares": 167.85956930176002,
    "sold_proceeds": 159.1119463198905
-  },
-  {
-   "token": "111811929502290362982122721758046162774175984777524039918857735995004907450973",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Weibo Gaming",
-   "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
-   "their_price": 0.48,
-   "my_price": 0.48,
-   "slippage_pct": 0.0,
-   "lag_s": 40.7,
-   "shares": 262.45,
-   "cost": 125.98,
-   "fee": 1.9652,
-   "opened": 1784978129,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784937600
   },
   {
    "token": "30763135880765767714915424809927017029690489225123793413196619783027580637320",

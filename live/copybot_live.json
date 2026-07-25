@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 118.85,
+ "stake": 113.81,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
  "cash": 973.93,
- "deployed": 1997.37,
+ "deployed": 1871.39,
  "reserve": 0.0,
- "realized": 1971.27,
+ "realized": 1845.3,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 26,
+ "open_count": 25,
  "fees_paid": 376.78,
  "fee_rate": 0.03,
  "lag": {
   "n": 266,
-  "n24": 18,
-  "avg_s": 14.9,
+  "n24": 17,
+  "avg_s": 15.7,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "111811929502290362982122721758046162774175984777524039918857735995004907450973",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Weibo Gaming",
+   "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
+   "their_price": 0.48,
+   "my_price": 0.48,
+   "slippage_pct": 0.0,
+   "lag_s": 40.7,
+   "shares": 262.45,
+   "cost": 125.98,
+   "fee": 1.97,
+   "opened": 1784978129,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -127.95,
+   "settled": 1784994471,
+   "end_ts": 1784937600
+  },
   {
    "token": "8520939197524385894693978702254214426383751437032693433763418213436851058226",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -152,26 +172,6 @@
    "end_ts": 1784937600,
    "sold_shares": 167.86,
    "sold_proceeds": 159.11
-  },
-  {
-   "token": "111811929502290362982122721758046162774175984777524039918857735995004907450973",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Weibo Gaming",
-   "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
-   "their_price": 0.48,
-   "my_price": 0.48,
-   "slippage_pct": 0.0,
-   "lag_s": 40.7,
-   "shares": 262.45,
-   "cost": 125.98,
-   "fee": 1.97,
-   "opened": 1784978129,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784937600
   },
   {
    "token": "30763135880765767714915424809927017029690489225123793413196619783027580637320",
@@ -3151,14 +3151,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 14.08,
-   "n": 29,
+   "realized": -113.87,
+   "n": 30,
    "wins": 0,
-   "open_cost": 125.98,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 3,
    "miss_pnl": 60.16,
-   "last_ts": 1784991400
+   "last_ts": 1784994471
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -3191,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784992216
+ "updated": 1784994479
 }
