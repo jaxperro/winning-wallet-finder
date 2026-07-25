@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 126.06,
+ "stake": 125.98,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1489.39,
- "deployed": 1662.02,
+ "cash": 1361.37,
+ "deployed": 1788.07,
  "reserve": 0.0,
- "realized": 2151.38,
+ "realized": 2149.41,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 23,
- "fees_paid": 367.69,
+ "open_count": 24,
+ "fees_paid": 369.66,
  "fee_rate": 0.03,
  "lag": {
-  "n": 259,
-  "n24": 15,
-  "avg_s": 11.9,
+  "n": 260,
+  "n24": 16,
+  "avg_s": 11.5,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "31734979589136676783620439669736424886669000930046383039286241799551299417224",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Weibo Gaming",
+   "title": "LoL: Invictus Gaming vs Weibo Gaming - Game 2 Winner",
+   "their_price": 0.48,
+   "my_price": 0.48,
+   "slippage_pct": 0.0,
+   "lag_s": 5.2,
+   "shares": 262.61,
+   "cost": 126.05,
+   "fee": 1.97,
+   "opened": 1784974783,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784937600
+  },
   {
    "token": "30763135880765767714915424809927017029690489225123793413196619783027580637320",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2111,30 +2131,24 @@
    "settled": 1784130784,
    "sold_shares": 131.36,
    "sold_proceeds": 95.12
-  },
-  {
-   "token": "10108167089466831864668878573560375084000044848088780176588585191663597254227",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Karmine Corp",
-   "title": "LoL: Team Secret  vs Karmine Corp - Game 2 Winner",
-   "their_price": 0.66,
-   "my_price": 0.65,
-   "slippage_pct": -0.0152,
-   "lag_s": 5.4,
-   "shares": 153.66,
-   "cost": 99.88,
-   "fee": 1.05,
-   "opened": 1784127877,
-   "status": "closed",
-   "exit_price": 0.5827,
-   "pnl": -11.39,
-   "settled": 1784130520,
-   "sold_shares": 153.66,
-   "sold_proceeds": 89.54
   }
  ],
  "missed": [
+  {
+   "ts": 1784974802,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "114122610912091833368377556749935026832747126298476646591672628854053567552557",
+   "cond": "0x92c1784a70aa80d59450fd7fa163faecc38e5465c0555ec1bef545bc978446d0",
+   "title": "Will the lowest temperature in New York City be between 64-65\u00b0F on July 25?",
+   "outcome": "No",
+   "price": 0.9,
+   "stake": 39.59,
+   "reason": "thin book ($5 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784754810,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -3075,32 +3089,16 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784572639,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "87122687121608029703081699232336906033160920614329826898705893750616809914369",
-   "cond": "0x075228a9709cdbea4f2ecf8286b1e70e27e18a4e07cc499ccb1c1ea7bdb0bbba",
-   "title": "SPY (SPY) Up or Down on July 20?",
-   "outcome": "Up",
-   "price": 0.69,
-   "stake": 44.8,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "sold",
-   "pnl": -22.29,
-   "settled": 1784575514,
-   "name": "1kto1m",
-   "exit_price": 0.36
   }
  ],
  "missed_pnl": 111363.72,
  "last_fill": {
-  "ts": 1784970122,
+  "ts": 1784974788,
   "side": "BUY",
   "price": 0.48,
-  "shares": 112.78,
-  "title": "Will Stephen Lynch be the Democratic nominee for MA-08?",
-  "outcome": "No"
+  "shares": 262.61,
+  "title": "LoL: Invictus Gaming vs Weibo Gaming - Game 2 Winner",
+  "outcome": "Weibo Gaming"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3109,7 +3107,7 @@
    "wins": 19,
    "open_cost": 695.99,
    "open_n": 11,
-   "miss_n": 70,
+   "miss_n": 71,
    "miss_pnl": 111875.01,
    "last_ts": 1784970119
   },
@@ -3157,11 +3155,11 @@
    "realized": 190.22,
    "n": 26,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 126.05,
+   "open_n": 1,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784968110
+   "last_ts": 1784974783
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -3194,5 +3192,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784974287
+ "updated": 1784974809
 }
