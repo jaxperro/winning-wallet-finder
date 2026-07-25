@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 118.9,
+ "stake": 118.85,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1062.5,
- "deployed": 1910.11,
+ "cash": 973.93,
+ "deployed": 1997.37,
  "reserve": 0.0,
- "realized": 1972.58,
+ "realized": 1971.27,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 25,
- "fees_paid": 375.48,
+ "open_count": 26,
+ "fees_paid": 376.78,
  "fee_rate": 0.03,
  "lag": {
-  "n": 265,
-  "n24": 18,
-  "avg_s": 15.1,
+  "n": 266,
+  "n24": 19,
+  "avg_s": 14.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "8520939197524385894693978702254214426383751437032693433763418213436851058226",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Lando Norris get pole position at the 2026 F1 Hungarian Grand Prix?",
+   "their_price": 0.5,
+   "my_price": 0.5,
+   "slippage_pct": 0.0,
+   "lag_s": 2.7,
+   "shares": 174.52,
+   "cost": 87.26,
+   "fee": 1.31,
+   "opened": 1784991649,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785542400
+  },
   {
    "token": "31734979589136676783620439669736424886669000930046383039286241799551299417224",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2110,27 +2130,6 @@
    "settled": 1784136544,
    "sold_shares": 307.61,
    "sold_proceeds": 117.88
-  },
-  {
-   "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "1win",
-   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
-   "their_price": 0.3595,
-   "my_price": 0.38,
-   "slippage_pct": 0.057,
-   "lag_s": 5.7,
-   "shares": 266.42,
-   "cost": 101.24,
-   "fee": 1.88,
-   "opened": 1784136283,
-   "status": "closed",
-   "exit_price": 0.4127,
-   "pnl": 6.83,
-   "settled": 1784136329,
-   "sold_shares": 266.42,
-   "sold_proceeds": 109.95
   }
  ],
  "missed": [
@@ -3093,23 +3092,23 @@
  ],
  "missed_pnl": 111363.98,
  "last_fill": {
-  "ts": 1784984184,
-  "side": "SELL",
-  "price": 1.0,
-  "shares": 169.56,
-  "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
-  "outcome": "Top Esports"
+  "ts": 1784991651,
+  "side": "BUY",
+  "price": 0.5,
+  "shares": 174.52,
+  "title": "Will Lando Norris get pole position at the 2026 F1 Hungarian",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 593.76,
    "n": 59,
    "wins": 19,
-   "open_cost": 695.99,
-   "open_n": 11,
+   "open_cost": 783.25,
+   "open_n": 12,
    "miss_n": 72,
    "miss_pnl": 111875.27,
-   "last_ts": 1784970119
+   "last_ts": 1784991649
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -3192,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784991403
+ "updated": 1784991665
 }

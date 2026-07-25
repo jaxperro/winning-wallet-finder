@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1784991403,
+ "updated": 1784991665,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 593.76,
    "n": 59,
    "wins": 19,
-   "open_cost": 695.99,
-   "open_n": 11,
+   "open_cost": 783.25,
+   "open_n": 12,
    "miss_n": 72,
    "miss_pnl": 111875.27,
-   "last_ts": 1784970119
+   "last_ts": 1784991649
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -94,6 +94,26 @@
   }
  },
  "bets": [
+  {
+   "token": "8520939197524385894693978702254214426383751437032693433763418213436851058226",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Lando Norris get pole position at the 2026 F1 Hungarian Grand Prix?",
+   "their_price": 0.5,
+   "my_price": 0.5,
+   "slippage_pct": 0.0,
+   "lag_s": 2.7,
+   "shares": 174.52,
+   "cost": 87.26,
+   "fee": 1.3089,
+   "opened": 1784991649,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785542400
+  },
   {
    "token": "31734979589136676783620439669736424886669000930046383039286241799551299417224",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
