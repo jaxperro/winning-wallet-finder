@@ -1,17 +1,17 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.18,
+ "stake": 2.2,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
- "cash": 20.99,
- "deployed": 33.57,
+ "cash": 23.73,
+ "deployed": 31.3,
  "reserve": 0.0,
- "realized": -21.29,
+ "realized": -20.83,
  "adjustments": 9.44,
  "ledger_drift": 0.02,
- "open_count": 16,
+ "open_count": 15,
  "fees_paid": 3.41,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
  },
  "bets": [
   {
+   "token": "33617782943606593457233658595461209550659667672324965420014965311339164331375",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will the Houthis successfully target shipping by July 25, 2026?",
+   "their_price": 0.83,
+   "my_price": 0.83,
+   "slippage_pct": 0.0,
+   "lag_s": 6.3,
+   "shares": 2.74,
+   "cost": 2.27,
+   "fee": 0.01,
+   "opened": 1784944416,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 0.46,
+   "settled": 1784960798,
+   "end_ts": 1784937600
+  },
+  {
    "token": "95523031090032630493379749841042373483392094122589567942892903275780964514373",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "name": "BikesAreTheBikes",
@@ -68,26 +88,6 @@
    "pnl": -2.3,
    "settled": 1784953448,
    "end_ts": 1784851200
-  },
-  {
-   "token": "33617782943606593457233658595461209550659667672324965420014965311339164331375",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will the Houthis successfully target shipping by July 25, 2026?",
-   "their_price": 0.83,
-   "my_price": 0.83,
-   "slippage_pct": 0.0,
-   "lag_s": 6.3,
-   "shares": 2.74,
-   "cost": 2.27,
-   "fee": 0.01,
-   "opened": 1784944416,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784937600
   },
   {
    "token": "5506960250160396168975872633831816223181816814113506849144916695207660278211",
@@ -3079,14 +3079,14 @@
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 0.48,
-   "n": 23,
-   "wins": 5,
-   "open_cost": 15.6,
-   "open_n": 6,
+   "realized": 0.94,
+   "n": 24,
+   "wins": 6,
+   "open_cost": 13.33,
+   "open_n": 5,
    "miss_n": 70,
    "miss_pnl": 1170.13,
-   "last_ts": 1784944416
+   "last_ts": 1784960798
   },
   "AIcAIc": {
    "realized": -14.85,
@@ -3189,5 +3189,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784960597
+ "updated": 1784960801
 }
