@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784990531,
+ "updated": 1784991403,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 593.76,
@@ -53,14 +53,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 142.1,
-   "n": 28,
+   "realized": 14.08,
+   "n": 29,
    "wins": 0,
-   "open_cost": 252.03,
-   "open_n": 2,
+   "open_cost": 125.98,
+   "open_n": 1,
    "miss_n": 3,
    "miss_pnl": 60.16,
-   "last_ts": 1784984191
+   "last_ts": 1784991400
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -94,6 +94,26 @@
   }
  },
  "bets": [
+  {
+   "token": "31734979589136676783620439669736424886669000930046383039286241799551299417224",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Weibo Gaming",
+   "title": "LoL: Invictus Gaming vs Weibo Gaming - Game 2 Winner",
+   "their_price": 0.48,
+   "my_price": 0.48,
+   "slippage_pct": 0.0,
+   "lag_s": 5.2,
+   "shares": 262.61,
+   "cost": 126.05,
+   "fee": 1.9664,
+   "opened": 1784974783,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -128.02,
+   "settled": 1784991400,
+   "end_ts": 1784937600
+  },
   {
    "token": "39204188212807654862524084563129756709425912681035817068891674648908999999428",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -172,26 +192,6 @@
    "cost": 125.98,
    "fee": 1.9652,
    "opened": 1784978129,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784937600
-  },
-  {
-   "token": "31734979589136676783620439669736424886669000930046383039286241799551299417224",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Weibo Gaming",
-   "title": "LoL: Invictus Gaming vs Weibo Gaming - Game 2 Winner",
-   "their_price": 0.48,
-   "my_price": 0.48,
-   "slippage_pct": 0.0,
-   "lag_s": 5.2,
-   "shares": 262.61,
-   "cost": 126.05,
-   "fee": 1.9664,
-   "opened": 1784974783,
    "status": "open",
    "exit_price": null,
    "pnl": null,
