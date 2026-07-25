@@ -1,13 +1,6 @@
 {
   "started_at": 1783572616.4091802,
   "seen_tx": [
-    "0x475dacc8e210aba710758bcc6d67671b94f23602f29a188eb4e567a1fb1b7e78",
-    "0x920b889ce3e6d3a3cdc558f0ed43bb2fb3294f2795f7712282e65bd922dd33a3",
-    "0xd07707b98682a6212316ea5e0ee31cb09cb630f4258be5f81c89ad51c4489c3a",
-    "0x61bdccaa40aba36a5fce671bd8de352ad4c4284e70834a5d98f21bfa18c3e4e6",
-    "0x3dc7159c45d534e4ae37635a4f737fd89f8245d8ffbb7bd6837a10f232f971e3",
-    "0x26e4382fd53026eb52b1abb03552ee47a3018b1118771d90299cf365d797e1cf",
-    "0xabe6f6036319b96e28030ee793161f06986364af9fbbf21896196cd6bf7d1cdc",
     "0x447ffff0fb79fe58d88394b8d338f9f5e77d79edadfdae1b9ea26d4cf26a37d6",
     "0xc26ebc320d4f27b309e7bacbb0a3f51e9e94a0118e36985894d977fd88d1d6b7",
     "0x7c937604a14024c76a262b7ced86edd2972ba327cee2aee1c31371f297410937",
@@ -5000,7 +4993,14 @@
     "0xe2ea53a8baccbe1752698ab8eee74fcfdcab1ee4895408b2ed469a8b69bf2314",
     "0x02beeffd7c89a883d8c32f3f93eeec8a1599c7b16e0a0f3b846c17010f524d3b",
     "0x75dadca3e5dd1e6ec2ccbac7089bb4f412e855842ce6b3873a3ab5395426326a",
-    "0x773475f256987e9c292e15d046c9244f8f71c6d6e0d06de3703de974545ccc6f"
+    "0x773475f256987e9c292e15d046c9244f8f71c6d6e0d06de3703de974545ccc6f",
+    "0xdfc0a867063ec2d5af992e35e1c16a8f2dd54e072d6ccf3f75a04c026ed6e3ef",
+    "0xbb13b059960c9cf3015c3dbd2018b354ba23be2cde0a9d2c9a557509373923bd",
+    "0x7a796cbb90085f6c91a3f4d6dd16be400a49ecaaabdfd937509014a409d046a2",
+    "0xbdabbf4fb8f34a171c047c523453c6e2ef7b9d5658cb812c3b5880e704f82335",
+    "0x193c187eab1f083583a0c83a56700124e7dc9680ca071c0f135a46cf91425721",
+    "0x014a01821e1f6121dfb2cbf82fc48e5865755db407f7c1102180d6bd4cd2c150",
+    "0x2e5096afb9147539cf51a06f0a99ea0596b7ab394b9e8a58a1aff3a87f7c5ba6"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -7430,7 +7430,9 @@
       "47034099876934716229864815975836182216313111895646858261682393378917482915024": 0.0,
       "86705424646174727923267700086147644009730647561101693109217607619813821338225": 0.0,
       "64991828518526705535686850701348205236004830669948221664384755427844289776098": 0.0,
-      "26526281670161030597651349221172200132306604891388465651834140785924791722259": 0.0
+      "26526281670161030597651349221172200132306604891388465651834140785924791722259": 0.0,
+      "114122610912091833368377556749935026832747126298476646591672628854053567552557": 0.0,
+      "47290966884379731570128546010587110076978459764565814771507770927296972965560": 0.0
     },
     "0xd7d36345c4aab150e59577e360696b01d01d698b": {
       "100468734153214358233990589631364606641061328246006529504204481849428608539045": 5322.2848,
@@ -7785,7 +7787,8 @@
       "50477218550119742997653520412318100004588205365663359233281150659184612552755": 0.0,
       "28663843077083508848298232545012772599006038287022896105207383593905747564218": 0.0,
       "41128359410147540990090031143993561801439881809667646963277254224817395601063": 0.0,
-      "16206820570033738519873913829913072693524337091387448721678194503511799926627": 0.0
+      "16206820570033738519873913829913072693524337091387448721678194503511799926627": 0.0,
+      "40953256834709782582083026137837154363268518322153927046311922612544097496805": 0.0
     },
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": {
       "113186575675900877797300695454355745875377602467971187276073118459901699932154": 767.49,
@@ -7836,7 +7839,8 @@
       "73739632839816504626737108532045400878921898467348280846632249640824887675542": 0.005557000000067092,
       "41128359410147540990090031143993561801439881809667646963277254224817395601063": 0.0,
       "16206820570033738519873913829913072693524337091387448721678194503511799926627": 0.0,
-      "31734979589136676783620439669736424886669000930046383039286241799551299417224": 1499.9907
+      "31734979589136676783620439669736424886669000930046383039286241799551299417224": 1499.9907,
+      "111811929502290362982122721758046162774175984777524039918857735995004907450973": 1500
     },
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": {
       "59855952379545476461266875939089074481171378466995213858930892770855011813551": 10000,
@@ -16183,22 +16187,6 @@
   "hwm": 63.02149853522214,
   "missed": [
     {
-      "ts": 1783777265,
-      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-      "token": "32083946557663920503716775865697460526633197303585051527116966709905217705878",
-      "cond": "0xc9f52d4c1e790f736f69fcd522263b02bcd3c2b17a729dbf048970ed59ee5808",
-      "title": "Dota 2: L1ga Team vs Level UP - Game 2 Winner",
-      "outcome": "L1ga Team",
-      "price": 0.5485,
-      "stake": 1.0,
-      "reason": "not copied in the detection window (reconciled)",
-      "status": "sold",
-      "pnl": 0.66,
-      "settled": 1783777582,
-      "name": "gkmgkldfmg",
-      "exit_price": 0.92
-    },
-    {
       "ts": 1783779829,
       "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
@@ -19377,10 +19365,24 @@
       "settled": 1784960881,
       "name": "0xbadaf319",
       "exit_checked": true
+    },
+    {
+      "ts": 1784978134,
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "token": "111811929502290362982122721758046162774175984777524039918857735995004907450973",
+      "cond": "0xe901d84e835d00e4899ffd2f3ad57e5517b8eb5bb0ecb954038d7e8175ed71cf",
+      "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
+      "outcome": "Weibo Gaming",
+      "price": 0.49,
+      "stake": 2.24,
+      "reason": "order rejected: exception: order 0xccdbfbd661fc2f1c629480662fc57300d8383387f",
+      "status": "open",
+      "pnl": null,
+      "settled": null
     }
   ],
-  "feed_sig": "bb76bb4203aebf44058bc121a8ffefdb",
-  "feed_pushed_at": 1784974901.931816,
+  "feed_sig": "1fb762a11d47eec3b7b3860cc2cbaf71",
+  "feed_pushed_at": 1784978010.1917832,
   "adjustments": [
     {
       "ts": 1783906689,
@@ -19431,18 +19433,18 @@
     "6457952357077230044054791268159160058712529625831041550558183767114352456975": 1,
     "61895825019286928316753689208545457497714235075046708292847356747636406191670": 1,
     "82768531874539579332422216880159980913196623213037059365722754442149714478353": 1,
-    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 261
+    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 269
   },
   "trade_cursor": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784882427,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784974803,
-    "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784974740,
-    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784972305,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784977765,
+    "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784976618,
+    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784974783,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784966379,
     "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784971734,
-    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1784974668
+    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1784976462
   },
   "boot": {
     "id": "9bd34bdee6e2",
@@ -19457,126 +19459,6 @@
     "outcome": "Weibo Gaming"
   },
   "ignored_exits": [
-    {
-      "ts": 1784908206.6,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 3.4789,
-      "cost_held": 2.47,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "live"
-    },
-    {
-      "ts": 1784908530.2,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 3.4789,
-      "cost_held": 2.47,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "live"
-    },
-    {
-      "ts": 1784908866.3,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 3.4789,
-      "cost_held": 2.47,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "live"
-    },
-    {
-      "ts": 1784909196.0,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 3.4789,
-      "cost_held": 2.47,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "live"
-    },
-    {
-      "ts": 1784909523.5,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 3.4789,
-      "cost_held": 2.47,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "live"
-    },
-    {
-      "ts": 1784909850.5,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 3.4789,
-      "cost_held": 2.47,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "live"
-    },
-    {
-      "ts": 1784910177.2,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 3.4789,
-      "cost_held": 2.47,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "live"
-    },
-    {
-      "ts": 1784910499.6,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 3.4789,
-      "cost_held": 2.47,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "live"
-    },
     {
       "ts": 1784910834.1,
       "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
@@ -22444,6 +22326,126 @@
     },
     {
       "ts": 1784975035.1,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.87,
+      "shares_held": 3.4789,
+      "cost_held": 2.47,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "live"
+    },
+    {
+      "ts": 1784975371.2,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.87,
+      "shares_held": 3.4789,
+      "cost_held": 2.47,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "live"
+    },
+    {
+      "ts": 1784975694.8,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.87,
+      "shares_held": 3.4789,
+      "cost_held": 2.47,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "live"
+    },
+    {
+      "ts": 1784976018.6,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.87,
+      "shares_held": 3.4789,
+      "cost_held": 2.47,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "live"
+    },
+    {
+      "ts": 1784976342.5,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.87,
+      "shares_held": 3.4789,
+      "cost_held": 2.47,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "live"
+    },
+    {
+      "ts": 1784976658.0,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.87,
+      "shares_held": 3.4789,
+      "cost_held": 2.47,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "live"
+    },
+    {
+      "ts": 1784976982.0,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.87,
+      "shares_held": 3.4789,
+      "cost_held": 2.47,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "live"
+    },
+    {
+      "ts": 1784977312.5,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.87,
+      "shares_held": 3.4789,
+      "cost_held": 2.47,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "live"
+    },
+    {
+      "ts": 1784977941.7,
       "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
       "their_size": 0,
       "their_prev": 0,

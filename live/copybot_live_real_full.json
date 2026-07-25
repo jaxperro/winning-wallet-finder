@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784975042,
+ "updated": 1784978134,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 0.94,
@@ -18,7 +18,7 @@
    "wins": 0,
    "open_cost": 2.24,
    "open_n": 1,
-   "miss_n": 12,
+   "miss_n": 13,
    "miss_pnl": 5.93,
    "last_ts": 1784974783
   },
@@ -2702,6 +2702,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784978134,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "111811929502290362982122721758046162774175984777524039918857735995004907450973",
+   "cond": "0xe901d84e835d00e4899ffd2f3ad57e5517b8eb5bb0ecb954038d7e8175ed71cf",
+   "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
+   "outcome": "Weibo Gaming",
+   "price": 0.49,
+   "stake": 2.24,
+   "reason": "order rejected: exception: order 0xccdbfbd661fc2f1c629480662fc57300d8383387f",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
   {
    "ts": 1784754808,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
