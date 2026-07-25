@@ -13432,15 +13432,6 @@
       "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
       "cond": "0x0e000fcdcc214b1a05b9f10611ae307210a43bf083643d021573aa4dc7e5fe75"
     },
-    "37396056216978472002674926504514491318505793793759544366379504943870958326106": {
-      "shares": 3.76,
-      "cost": 2.256,
-      "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
-      "outcome": "ThunderTalk Gaming",
-      "event": null,
-      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-      "cond": "0xa255ab978a1eab78a7bd29479b0b9fe8e3de1904044f9887e470cebb7e04c63b"
-    },
     "81971570430631246702272897060581472251947225950350133003310719122599499176971": {
       "shares": 2.5,
       "cost": 2.25,
@@ -13572,7 +13563,6 @@
     "41128359410147540990090031143993561801439881809667646963277254224817395601063": "0xba5c00eaab56d7b64b194e8ed03dae7f9f29b98e215601aa147fc30fd59af78a",
     "24538227191540742319290192357327280598675171199196475574105878696409564463051": "0xe901d84e835d00e4899ffd2f3ad57e5517b8eb5bb0ecb954038d7e8175ed71cf",
     "107156085038944146438947590438365026964800691960988984359921209164919978522933": "0x0e000fcdcc214b1a05b9f10611ae307210a43bf083643d021573aa4dc7e5fe75",
-    "37396056216978472002674926504514491318505793793759544366379504943870958326106": "0xa255ab978a1eab78a7bd29479b0b9fe8e3de1904044f9887e470cebb7e04c63b",
     "81971570430631246702272897060581472251947225950350133003310719122599499176971": "0xdc47b3cf88f5039d49fab5296c8576dd5618c86ac224588f54f2ebc33503336e",
     "8520939197524385894693978702254214426383751437032693433763418213436851058226": "0xb4e3b496c3fc4787fa8bf353914ca955d475a60296fe80624ad180f1aab3f9ed",
     "49331878508394871833592446045300865060542314418976779518068691623730505202112": "0xb7ff4745276006c8f163d67d588b3320c2a088e1ef72633405a77e3267ef0931"
@@ -16284,10 +16274,10 @@
       "cost": 2.26,
       "fee": 0.0271,
       "opened": 1784982970,
-      "status": "open",
-      "exit_price": null,
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "exit_price": 0.0,
+      "pnl": -2.29,
+      "settled": 1784999177,
       "end_ts": 1784937600
     },
     "81971570430631246702272897060581472251947225950350133003310719122599499176971": {
@@ -16347,7 +16337,8 @@
       "status": "open",
       "exit_price": null,
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "end_ts": 1784937600
     }
   },
   "no_miss_toks": [
@@ -19631,8 +19622,8 @@
       "exit_price": 0.3115
     }
   ],
-  "feed_sig": "860e0359d2266016eaeb3bad2ef4d7cc",
-  "feed_pushed_at": 1784997481.9427507,
+  "feed_sig": "acc12d19dcb1cbbb9ec9765057b29e15",
+  "feed_pushed_at": 1784999051.333274,
   "adjustments": [
     {
       "ts": 1783906689,
@@ -19683,19 +19674,19 @@
     "6457952357077230044054791268159160058712529625831041550558183767114352456975": 1,
     "61895825019286928316753689208545457497714235075046708292847356747636406191670": 1,
     "82768531874539579332422216880159980913196623213037059365722754442149714478353": 1,
-    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 324,
+    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 329,
     "24538227191540742319290192357327280598675171199196475574105878696409564463051": 1
   },
   "trade_cursor": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784882427,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784995969,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784998114,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784980261,
-    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784994087,
+    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784997558,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784981110,
-    "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784971734,
-    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1784997253
+    "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784997150,
+    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1784997919
   },
   "boot": {
     "id": "9bd34bdee6e2",
@@ -19710,81 +19701,6 @@
     "outcome": "Karmine Corp"
   },
   "ignored_exits": [
-    {
-      "ts": 1784931417.9,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 3.4789,
-      "cost_held": 2.47,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "live"
-    },
-    {
-      "ts": 1784931741.6,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 3.4789,
-      "cost_held": 2.47,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "live"
-    },
-    {
-      "ts": 1784932070.5,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 3.4789,
-      "cost_held": 2.47,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "live"
-    },
-    {
-      "ts": 1784932389.4,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 3.4789,
-      "cost_held": 2.47,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "live"
-    },
-    {
-      "ts": 1784932716.9,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 3.4789,
-      "cost_held": 2.47,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "live"
-    },
     {
       "ts": 1784933042.9,
       "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
@@ -22697,6 +22613,81 @@
     },
     {
       "ts": 1784997415.6,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 3.4789,
+      "cost_held": 2.47,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "live"
+    },
+    {
+      "ts": 1784997744.7,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 3.4789,
+      "cost_held": 2.47,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "live"
+    },
+    {
+      "ts": 1784998067.7,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 3.4789,
+      "cost_held": 2.47,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "live"
+    },
+    {
+      "ts": 1784998390.6,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 3.4789,
+      "cost_held": 2.47,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "live"
+    },
+    {
+      "ts": 1784998721.1,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 3.4789,
+      "cost_held": 2.47,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "live"
+    },
+    {
+      "ts": 1784999049.1,
       "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
       "their_size": 0,
       "their_prev": 0,

@@ -1,17 +1,17 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.16,
+ "stake": 2.07,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
  "cash": 11.8,
- "deployed": 42.3,
+ "deployed": 40.04,
  "reserve": 0.0,
- "realized": -21.76,
+ "realized": -24.01,
  "adjustments": 9.44,
- "ledger_drift": 0.02,
- "open_count": 20,
+ "ledger_drift": 0.03,
+ "open_count": 19,
  "fees_paid": 3.6,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "37396056216978472002674926504514491318505793793759544366379504943870958326106",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "ThunderTalk Gaming",
+   "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
+   "their_price": 0.6,
+   "my_price": 0.6,
+   "slippage_pct": 0.0,
+   "lag_s": 4.2,
+   "shares": 3.76,
+   "cost": 2.26,
+   "fee": 0.03,
+   "opened": 1784982970,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -2.29,
+   "settled": 1784999177,
+   "end_ts": 1784937600
+  },
   {
    "token": "49331878508394871833592446045300865060542314418976779518068691623730505202112",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -128,26 +148,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785024000
-  },
-  {
-   "token": "37396056216978472002674926504514491318505793793759544366379504943870958326106",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "ThunderTalk Gaming",
-   "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
-   "their_price": 0.6,
-   "my_price": 0.6,
-   "slippage_pct": 0.0,
-   "lag_s": 4.2,
-   "shares": 3.76,
-   "cost": 2.26,
-   "fee": 0.03,
-   "opened": 1784982970,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784937600
   },
   {
    "token": "107156085038944146438947590438365026964800691960988984359921209164919978522933",
@@ -3101,14 +3101,14 @@
    "last_ts": 1784991649
   },
   "AIcAIc": {
-   "realized": -15.68,
-   "n": 17,
+   "realized": -17.97,
+   "n": 18,
    "wins": 0,
-   "open_cost": 4.42,
-   "open_n": 2,
+   "open_cost": 2.16,
+   "open_n": 1,
    "miss_n": 14,
    "miss_pnl": 3.33,
-   "last_ts": 1784997557
+   "last_ts": 1784999177
   },
   "(incident)": {
    "realized": 5.86,
@@ -3201,5 +3201,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784997611
+ "updated": 1784999180
 }
