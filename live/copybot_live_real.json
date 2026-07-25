@@ -2133,7 +2133,8 @@
    "status": "lost",
    "pnl": -2.06,
    "settled": 1785009090,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1785009018,
@@ -2148,7 +2149,8 @@
    "status": "lost",
    "pnl": -2.05,
    "settled": 1785009090,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1785009018,
@@ -2163,7 +2165,8 @@
    "status": "lost",
    "pnl": -2.05,
    "settled": 1785009090,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1785009019,
@@ -3194,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785009685
+ "updated": 1785011010
 }
