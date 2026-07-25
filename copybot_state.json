@@ -1,9 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0xe5f11bb76729335a36d4160020e94269c58f97a3a6e4814a71d5780fa7ce3637",
-    "0x93aa4831b842370f2d40a8ed03d8b2fd56ae6f23533afba6eb1677b2e70d97ce",
-    "0x9bbe292b2bb1c9098c0eef9f6396acb17d04145d1343de7b0bcf01ca22332c9a",
     "0x1a873fd3dd16303f55751e59a575fa49de724e83bbdaf12a819769b165b560ea",
     "0xc35ac2f404e06b902820525da973dfb9ff6ee6e5391354842de13406da0b2b8b",
     "0x4afb46811050d43fafac203667e9b3a754cd66814ce6142738798a5baf66acf1",
@@ -5000,7 +4997,10 @@
     "0x24c9d97f91532a3564c46a277890e77fa68d18c8324a28af9210d3ed1fcd6666",
     "0xeb7a630c0d643a172b83731244636603cc2bc830a32d5b375f00e014916f02f5",
     "0x95d56ec0f8842e0be470f3d4fbd984b04ffcb314b013e940de2b66f074282656",
-    "0x3f9a652e325a2a7e4770193d5e56c6fc4a34005159bf6bd9b2beb8dd4cb7c882"
+    "0x3f9a652e325a2a7e4770193d5e56c6fc4a34005159bf6bd9b2beb8dd4cb7c882",
+    "0x75e434bd2b54f5ad040e19f06bc25f853ebff64f84118e41d019212c4731af7b",
+    "0x6026b8d7fdbc16304eb3ef4964ddf63a14791d55ab35090e38c501c812ae5bc1",
+    "0xd397354c9dc61e1beed3ff3747860206e9be38ac8fb6c0362380b4c5ebd0255f"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -7919,7 +7919,8 @@
       "31734979589136676783620439669736424886669000930046383039286241799551299417224": 1499.9907,
       "111811929502290362982122721758046162774175984777524039918857735995004907450973": 0.0,
       "24538227191540742319290192357327280598675171199196475574105878696409564463051": 0.007055999999920459,
-      "39204188212807654862524084563129756709425912681035817068891674648908999999428": 5000
+      "39204188212807654862524084563129756709425912681035817068891674648908999999428": 0.0,
+      "37396056216978472002674926504514491318505793793759544366379504943870958326106": 3493.04
     },
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": {
       "59855952379545476461266875939089074481171378466995213858930892770855011813551": 10000,
@@ -18660,8 +18661,8 @@
     }
   },
   "hwm": 3279.700634625008,
-  "feed_sig": "2ed734584d74eedc152378fe1a71cef3",
-  "feed_pushed_at": 1784982071.5488646,
+  "feed_sig": "5a6eff115456027e4aa02ac89617ba13",
+  "feed_pushed_at": 1784983015.6930768,
   "missed": [
     {
       "ts": 1783590977,
@@ -21813,6 +21814,21 @@
       "settled": 1784978225,
       "name": "0xbadaf319",
       "exit_price": 0.9111
+    },
+    {
+      "ts": 1784983075,
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "token": "37396056216978472002674926504514491318505793793759544366379504943870958326106",
+      "cond": "0xa255ab978a1eab78a7bd29479b0b9fe8e3de1904044f9887e470cebb7e04c63b",
+      "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
+      "outcome": "ThunderTalk Gaming",
+      "price": 0.6,
+      "stake": 122.05,
+      "reason": "maker bid unfilled (100s)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "AIcAIc"
     }
   ],
   "no_miss_toks": [
@@ -21925,23 +21941,24 @@
     "111238155193029214626119372717509509454868187612257655146390848111901958320265": 1,
     "54808825071623730922593344072571837691813951745707044026991588993889799442913": 1,
     "45276939554340428771698865022604030782253660716041002232668611227463504055173": 1,
-    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 275,
+    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 277,
     "17278012384173360502232131272354786231595802723343593413625940837844848366978": 1,
     "35613520187412099541224398067273773941235385627221930769717313222719613151332": 1,
     "30105308353288988924984162628182939641372197734077392129497102501234749347616": 1,
     "30763135880765767714915424809927017029690489225123793413196619783027580637320": 1,
-    "111811929502290362982122721758046162774175984777524039918857735995004907450973": 11
+    "111811929502290362982122721758046162774175984777524039918857735995004907450973": 13,
+    "39204188212807654862524084563129756709425912681035817068891674648908999999428": 1
   },
   "trade_cursor": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784882427,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784981932,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784981943,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784980261,
-    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784981593,
+    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784982876,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784981110,
     "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784971734,
-    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1784981689
+    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1784982088
   },
   "boot": {
     "id": "3903d6663a1f",
@@ -21958,99 +21975,9 @@
   "paper_maker": [],
   "maker_stats": {
     "fills": 32,
-    "misses": 11
+    "misses": 13
   },
   "ignored_exits": [
-    {
-      "ts": 1784922172.2,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1784922174.2,
-      "token": "5506960250160396168975872633831816223181816814113506849144916695207660278211",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.69,
-      "shares_held": 203.79,
-      "cost_held": 126.38,
-      "title": "S&P 500 (SPX) Up or Down on July 24?",
-      "outcome": "Down",
-      "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-      "mode": "paper"
-    },
-    {
-      "ts": 1784922505.4,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1784922507.6,
-      "token": "5506960250160396168975872633831816223181816814113506849144916695207660278211",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.75,
-      "shares_held": 203.79,
-      "cost_held": 126.38,
-      "title": "S&P 500 (SPX) Up or Down on July 24?",
-      "outcome": "Down",
-      "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-      "mode": "paper"
-    },
-    {
-      "ts": 1784922834.4,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1784922836.4,
-      "token": "5506960250160396168975872633831816223181816814113506849144916695207660278211",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.75,
-      "shares_held": 203.79,
-      "cost_held": 126.38,
-      "title": "S&P 500 (SPX) Up or Down on July 24?",
-      "outcome": "Down",
-      "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-      "mode": "paper"
-    },
     {
       "ts": 1784923177.1,
       "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
@@ -24958,6 +24885,96 @@
       "cost_held": 125.98,
       "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
       "outcome": "Weibo Gaming",
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "mode": "paper"
+    },
+    {
+      "ts": 1784982547.8,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.87,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1784982549.9,
+      "token": "111811929502290362982122721758046162774175984777524039918857735995004907450973",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.001,
+      "shares_held": 262.45,
+      "cost_held": 125.98,
+      "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
+      "outcome": "Weibo Gaming",
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "mode": "paper"
+    },
+    {
+      "ts": 1784982878.6,
+      "token": "39204188212807654862524084563129756709425912681035817068891674648908999999428",
+      "their_size": 5000,
+      "their_prev": 5000,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.31,
+      "shares_held": 169.56,
+      "cost_held": 122.08,
+      "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
+      "outcome": "Top Esports",
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "mode": "paper"
+    },
+    {
+      "ts": 1784982882.2,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.87,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1784982884.4,
+      "token": "111811929502290362982122721758046162774175984777524039918857735995004907450973",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.001,
+      "shares_held": 262.45,
+      "cost_held": 125.98,
+      "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
+      "outcome": "Weibo Gaming",
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "mode": "paper"
+    },
+    {
+      "ts": 1784982885.0,
+      "token": "39204188212807654862524084563129756709425912681035817068891674648908999999428",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.32,
+      "shares_held": 169.56,
+      "cost_held": 122.08,
+      "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
+      "outcome": "Top Esports",
       "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
       "mode": "paper"
     }

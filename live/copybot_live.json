@@ -2133,6 +2133,21 @@
  ],
  "missed": [
   {
+   "ts": 1784983075,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "37396056216978472002674926504514491318505793793759544366379504943870958326106",
+   "cond": "0xa255ab978a1eab78a7bd29479b0b9fe8e3de1904044f9887e470cebb7e04c63b",
+   "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
+   "outcome": "ThunderTalk Gaming",
+   "price": 0.6,
+   "stake": 122.05,
+   "reason": "maker bid unfilled (100s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1784974802,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "114122610912091833368377556749935026832747126298476646591672628854053567552557",
@@ -3073,21 +3088,6 @@
    "settled": 1784580406,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1784579992,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "44886536523187194068204780081456530701237321244412931776973158233298351926383",
-   "cond": "0x7ea1e76e67652187bc6c484f832840a92ca3af5f36b5d86b2f78db66b28d972a",
-   "title": "Andrew Tate released from custody by December 31, 2026?",
-   "outcome": "No",
-   "price": 0.69,
-   "stake": 64.69,
-   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
  "missed_pnl": 111363.98,
@@ -3156,7 +3156,7 @@
    "wins": 0,
    "open_cost": 374.11,
    "open_n": 3,
-   "miss_n": 2,
+   "miss_n": 3,
    "miss_pnl": 60.16,
    "last_ts": 1784981592
   },
@@ -3191,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784982215
+ "updated": 1784983081
 }

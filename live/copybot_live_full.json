@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784982215,
+ "updated": 1784983081,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 593.76,
@@ -58,7 +58,7 @@
    "wins": 0,
    "open_cost": 374.11,
    "open_n": 3,
-   "miss_n": 2,
+   "miss_n": 3,
    "miss_pnl": 60.16,
    "last_ts": 1784981592
   },
@@ -4909,6 +4909,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784983075,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "37396056216978472002674926504514491318505793793759544366379504943870958326106",
+   "cond": "0xa255ab978a1eab78a7bd29479b0b9fe8e3de1904044f9887e470cebb7e04c63b",
+   "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
+   "outcome": "ThunderTalk Gaming",
+   "price": 0.6,
+   "stake": 122.05,
+   "reason": "maker bid unfilled (100s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
   {
    "ts": 1784974802,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
