@@ -5,19 +5,19 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1361.58,
- "deployed": 1771.41,
+ "cash": 1331.3,
+ "deployed": 1801.75,
  "reserve": 0.0,
- "realized": 2132.96,
+ "realized": 2133.02,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 25,
- "fees_paid": 364.98,
+ "open_count": 26,
+ "fees_paid": 365.15,
  "fee_rate": 0.03,
  "lag": {
-  "n": 256,
-  "n24": 19,
-  "avg_s": 7.8,
+  "n": 257,
+  "n24": 20,
+  "avg_s": 10.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "30105308353288988924984162628182939641372197734077392129497102501234749347616",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will the Houthis successfully target shipping by July 31, 2026?",
+   "their_price": 0.8801,
+   "my_price": 0.8801,
+   "slippage_pct": 0.0,
+   "lag_s": 55.6,
+   "shares": 45.95,
+   "cost": 40.44,
+   "fee": 0.15,
+   "opened": 1784951520,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "sold_shares": 11.48,
+   "sold_proceeds": 10.31,
+   "end_ts": 1785456000
+  },
   {
    "token": "95523031090032630493379749841042373483392094122589567942892903275780964514373",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2108,25 +2130,6 @@
    "settled": 1784120499,
    "sold_shares": 259.72,
    "sold_proceeds": 133.73
-  },
-  {
-   "token": "99902433281669699237282389313263144275718377343205924960975145491381233618580",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Under",
-   "title": "Marques vs. Domingues: Set 1 Games O/U 8.5",
-   "their_price": 0.5,
-   "my_price": 0.49,
-   "slippage_pct": -0.02,
-   "lag_s": 5.6,
-   "shares": 195.02,
-   "cost": 95.56,
-   "fee": 1.46,
-   "opened": 1784114562,
-   "status": "refund",
-   "exit_price": 0.5,
-   "pnl": 0.49,
-   "settled": 1784119815
   }
  ],
  "missed": [
@@ -3089,11 +3092,11 @@
  ],
  "missed_pnl": 96507.04,
  "last_fill": {
-  "ts": 1784945735,
-  "side": "BUY",
-  "price": 0.85,
-  "shares": 28.24,
-  "title": "Will the Houthis successfully target shipping by July 25, 20",
+  "ts": 1784951575,
+  "side": "SELL",
+  "price": 0.9,
+  "shares": 11.48,
+  "title": "Will the Houthis successfully target shipping by July 31, 20",
   "outcome": "Yes"
  },
  "wallet_pnl": {
@@ -3101,11 +3104,11 @@
    "realized": 575.95,
    "n": 56,
    "wins": 16,
-   "open_cost": 738.24,
-   "open_n": 12,
+   "open_cost": 778.68,
+   "open_n": 13,
    "miss_n": 68,
    "miss_pnl": 97018.33,
-   "last_ts": 1784944415
+   "last_ts": 1784951520
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -3188,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784945736
+ "updated": 1784951576
 }
