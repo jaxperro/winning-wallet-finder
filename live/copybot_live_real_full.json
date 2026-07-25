@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784999180,
+ "updated": 1784999380,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 0.94,
@@ -152,7 +152,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1784937600
+   "end_ts": 1784937600,
+   "sold_shares": 1.07,
+   "sold_proceeds": 0.9564267600000003
   },
   {
    "token": "8520939197524385894693978702254214426383751437032693433763418213436851058226",

@@ -1,14 +1,14 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.07,
+ "stake": 2.08,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
- "cash": 11.8,
- "deployed": 40.04,
+ "cash": 12.76,
+ "deployed": 39.36,
  "reserve": 0.0,
- "realized": -24.01,
+ "realized": -23.74,
  "adjustments": 9.44,
  "ledger_drift": 0.03,
  "open_count": 19,
@@ -87,7 +87,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1784937600
+   "end_ts": 1784937600,
+   "sold_shares": 1.07,
+   "sold_proceeds": 0.96
   },
   {
    "token": "8520939197524385894693978702254214426383751437032693433763418213436851058226",
@@ -3082,10 +3084,10 @@
  ],
  "missed_pnl": 1730.49,
  "last_fill": {
-  "ts": 1784997559,
-  "side": "BUY",
-  "price": 0.64,
-  "shares": 3.38,
+  "ts": 1784999365,
+  "side": "SELL",
+  "price": 0.88,
+  "shares": 0.08,
   "title": "LoL: Karmine Corp vs Movistar KOI - Game 1 Winner",
   "outcome": "Karmine Corp"
  },
@@ -3201,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784999180
+ "updated": 1784999380
 }
