@@ -1,9 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0xab8ebc9f73407b6abdc9bc23e5135cb930d2af039df2a270ee5d645ba4238df4",
-    "0xe984da9c65385cf12f2110fc4ba4df05d6185818f4792a70ef451b35b3ae5dd4",
-    "0xcd2332c84f83cb9bb8a9ce07527fea9d1125ce5c665d989174c489544fd27160",
     "0xa54cf97852de7c7b8affe61fa3417e3a2417acea25c03de099c27d453a7880d8",
     "0xd96283699ab9722e7dcd6d70a111a308b9ce0013b6ac6be83d8ccf038c84f62d",
     "0x3e397ac654f031c712ea7a0a853fd185086b5f6874b4f44f2b64ea10bb1dbc16",
@@ -5000,7 +4997,10 @@
     "0xa37eab2d47e3cb4e2d6dbd630028ad572d7a9fa50396ca7e67cccbe94e6a6032",
     "0x549c3b7f305a8998c50ab52ddf5b4fdb884c2d63f4db7ee904f541a25e74935c",
     "0x31c4ca0db7467b4142c2e8f9542d467692e040361289b80cd03912542cea66a8",
-    "0x4a031894543bf8f106a06ed61d4248f981cec2345603ce35ab8fe8a92d4344f4"
+    "0x4a031894543bf8f106a06ed61d4248f981cec2345603ce35ab8fe8a92d4344f4",
+    "0x07ef11d15f3e2e438708876a2d178ba27267376ea9f7fc2743e2501b2d16fd6e",
+    "0x5227b8d2b16b0112df5d1337a268b44cf0c8d0c0ec1690b5ee279a9c342872df",
+    "0xbdcc29cb4d78cd5647688b9a6d6bb6797ff41b767b1f45b1b936d58ef1b58761"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -7902,7 +7902,7 @@
       "16206820570033738519873913829913072693524337091387448721678194503511799926627": 0.0,
       "31734979589136676783620439669736424886669000930046383039286241799551299417224": 1499.9907,
       "111811929502290362982122721758046162774175984777524039918857735995004907450973": 0.0,
-      "24538227191540742319290192357327280598675171199196475574105878696409564463051": 2750.0
+      "24538227191540742319290192357327280598675171199196475574105878696409564463051": 0.007055999999920459
     },
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": {
       "59855952379545476461266875939089074481171378466995213858930892770855011813551": 10000,
@@ -13508,15 +13508,6 @@
       "event": "lol-ig1-wb-2026-07-25",
       "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
       "cond": "0xe901d84e835d00e4899ffd2f3ad57e5517b8eb5bb0ecb954038d7e8175ed71cf"
-    },
-    "24538227191540742319290192357327280598675171199196475574105878696409564463051": {
-      "shares": 167.86,
-      "cost": 125.89500000000001,
-      "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
-      "outcome": "Invictus Gaming",
-      "event": null,
-      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-      "cond": "0xe901d84e835d00e4899ffd2f3ad57e5517b8eb5bb0ecb954038d7e8175ed71cf"
     }
   },
   "spend": {
@@ -13700,13 +13691,13 @@
     "111811929502290362982122721758046162774175984777524039918857735995004907450973": "0xe901d84e835d00e4899ffd2f3ad57e5517b8eb5bb0ecb954038d7e8175ed71cf",
     "24538227191540742319290192357327280598675171199196475574105878696409564463051": "0xe901d84e835d00e4899ffd2f3ad57e5517b8eb5bb0ecb954038d7e8175ed71cf"
   },
-  "cash": 979.7513092250256,
+  "cash": 1138.863255544916,
   "lag": {
     "n": 263,
     "sum_s": 6561.873314857483,
     "sum_slip_pct": -7.247834511462669
   },
-  "fees_paid": 373.51180989639806,
+  "fees_paid": 373.75357327058435,
   "lag_recent": [
     [
       1784895744.2,
@@ -18570,15 +18561,18 @@
       "cost": 251.79500000000002,
       "fee": 1.8884,
       "opened": 1784978647,
-      "status": "open",
-      "exit_price": null,
-      "pnl": null,
-      "settled": null
+      "status": "closed",
+      "exit_price": 0.9479,
+      "pnl": -94.57,
+      "settled": 1784979253,
+      "end_ts": 1784937600,
+      "sold_shares": 167.85956930176002,
+      "sold_proceeds": 159.1119463198905
     }
   },
   "hwm": 3279.700634625008,
-  "feed_sig": "5c5ffaf939759ccf82cdc09d9a4846b2",
-  "feed_pushed_at": 1784978621.3992376,
+  "feed_sig": "b019e38b9b14b70b72c2d8f37b84597e",
+  "feed_pushed_at": 1784979151.8857913,
   "missed": [
     {
       "ts": 1783590977,
@@ -21841,11 +21835,12 @@
     "111238155193029214626119372717509509454868187612257655146390848111901958320265": 1,
     "54808825071623730922593344072571837691813951745707044026991588993889799442913": 1,
     "45276939554340428771698865022604030782253660716041002232668611227463504055173": 1,
-    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 264,
+    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 266,
     "17278012384173360502232131272354786231595802723343593413625940837844848366978": 1,
     "35613520187412099541224398067273773941235385627221930769717313222719613151332": 1,
     "30105308353288988924984162628182939641372197734077392129497102501234749347616": 1,
-    "30763135880765767714915424809927017029690489225123793413196619783027580637320": 1
+    "30763135880765767714915424809927017029690489225123793413196619783027580637320": 1,
+    "111811929502290362982122721758046162774175984777524039918857735995004907450973": 2
   },
   "trade_cursor": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
@@ -21853,7 +21848,7 @@
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784882427,
     "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1784977951,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1784976618,
-    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784978616,
+    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1784979220,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1784966379,
     "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1784971734,
     "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1784977623
@@ -21863,10 +21858,10 @@
     "ts": 1784914776
   },
   "last_fill": {
-    "ts": 1784978709,
-    "side": "BUY",
-    "price": 0.75,
-    "shares": 167.86,
+    "ts": 1784979253,
+    "side": "SELL",
+    "price": 0.96,
+    "shares": 75.07,
     "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirva",
     "outcome": "Invictus Gaming"
   },
@@ -21876,66 +21871,6 @@
     "misses": 11
   },
   "ignored_exits": [
-    {
-      "ts": 1784917144.1,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1784917476.8,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1784917812.7,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1784918141.6,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
     {
       "ts": 1784918476.9,
       "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
@@ -24869,6 +24804,66 @@
       "frac": 1.0,
       "reason": "band",
       "sell_px": 0.25,
+      "shares_held": 262.45,
+      "cost_held": 125.98,
+      "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
+      "outcome": "Weibo Gaming",
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "mode": "paper"
+    },
+    {
+      "ts": 1784978888.0,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.87,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1784978890.4,
+      "token": "111811929502290362982122721758046162774175984777524039918857735995004907450973",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.15,
+      "shares_held": 262.45,
+      "cost_held": 125.98,
+      "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
+      "outcome": "Weibo Gaming",
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "mode": "paper"
+    },
+    {
+      "ts": 1784979220.4,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.87,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1784979222.6,
+      "token": "111811929502290362982122721758046162774175984777524039918857735995004907450973",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.07,
       "shares_held": 262.45,
       "cost_held": 125.98,
       "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
