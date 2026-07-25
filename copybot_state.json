@@ -1,7 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0x1a873fd3dd16303f55751e59a575fa49de724e83bbdaf12a819769b165b560ea",
     "0xc35ac2f404e06b902820525da973dfb9ff6ee6e5391354842de13406da0b2b8b",
     "0x4afb46811050d43fafac203667e9b3a754cd66814ce6142738798a5baf66acf1",
     "0x45badd2b677db7078ee7188d449a80d8bbb9abd1eb375557990816928da790f3",
@@ -5000,7 +4999,8 @@
     "0x3f9a652e325a2a7e4770193d5e56c6fc4a34005159bf6bd9b2beb8dd4cb7c882",
     "0x75e434bd2b54f5ad040e19f06bc25f853ebff64f84118e41d019212c4731af7b",
     "0x6026b8d7fdbc16304eb3ef4964ddf63a14791d55ab35090e38c501c812ae5bc1",
-    "0xd397354c9dc61e1beed3ff3747860206e9be38ac8fb6c0362380b4c5ebd0255f"
+    "0xd397354c9dc61e1beed3ff3747860206e9be38ac8fb6c0362380b4c5ebd0255f",
+    "0x97fde6634275ae6cfed93a07b7b19418b9b547074e777959d92aef689de1d5e2"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -7503,7 +7503,8 @@
       "109992301177192211731267309899813987154060468277440272330718609724940776385970": 0.0,
       "10464491800773792854998056739493996185318647898012046234375304783270175462607": 0.0,
       "45850952682579111091921037894880934681624365409074249760315384324338434970540": 0.0,
-      "91220165555203750439158805301605574586065652357012107022759332240224719781108": 0.0
+      "91220165555203750439158805301605574586065652357012107022759332240224719781108": 0.0,
+      "34901692862930468335703457056374015485253491541300539660351443798999980417042": 0.0
     },
     "0xd7d36345c4aab150e59577e360696b01d01d698b": {
       "100468734153214358233990589631364606641061328246006529504204481849428608539045": 5322.2848,
@@ -13537,15 +13538,6 @@
       "event": "lol-tes-tt-2026-07-25",
       "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
       "cond": "0x0e000fcdcc214b1a05b9f10611ae307210a43bf083643d021573aa4dc7e5fe75"
-    },
-    "39204188212807654862524084563129756709425912681035817068891674648908999999428": {
-      "shares": 169.56,
-      "cost": 122.08319999999999,
-      "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
-      "outcome": "Top Esports",
-      "event": "lol-tes-tt-2026-07-25",
-      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-      "cond": "0xa255ab978a1eab78a7bd29479b0b9fe8e3de1904044f9887e470cebb7e04c63b"
     }
   },
   "spend": {
@@ -13731,7 +13723,7 @@
     "107156085038944146438947590438365026964800691960988984359921209164919978522933": "0x0e000fcdcc214b1a05b9f10611ae307210a43bf083643d021573aa4dc7e5fe75",
     "39204188212807654862524084563129756709425912681035817068891674648908999999428": "0xa255ab978a1eab78a7bd29479b0b9fe8e3de1904044f9887e470cebb7e04c63b"
   },
-  "cash": 892.942897744916,
+  "cash": 1062.502897744916,
   "lag": {
     "n": 265,
     "sum_s": 6569.884865522385,
@@ -18657,12 +18649,14 @@
       "exit_price": null,
       "pnl": null,
       "settled": null,
-      "end_ts": 1784937600
+      "end_ts": 1784937600,
+      "sold_shares": 169.56,
+      "sold_proceeds": 169.56
     }
   },
   "hwm": 3279.700634625008,
   "feed_sig": "5a6eff115456027e4aa02ac89617ba13",
-  "feed_pushed_at": 1784983015.6930768,
+  "feed_pushed_at": 1784984046.839468,
   "missed": [
     {
       "ts": 1783590977,
@@ -21941,13 +21935,12 @@
     "111238155193029214626119372717509509454868187612257655146390848111901958320265": 1,
     "54808825071623730922593344072571837691813951745707044026991588993889799442913": 1,
     "45276939554340428771698865022604030782253660716041002232668611227463504055173": 1,
-    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 277,
+    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 279,
     "17278012384173360502232131272354786231595802723343593413625940837844848366978": 1,
     "35613520187412099541224398067273773941235385627221930769717313222719613151332": 1,
     "30105308353288988924984162628182939641372197734077392129497102501234749347616": 1,
     "30763135880765767714915424809927017029690489225123793413196619783027580637320": 1,
-    "111811929502290362982122721758046162774175984777524039918857735995004907450973": 13,
-    "39204188212807654862524084563129756709425912681035817068891674648908999999428": 1
+    "111811929502290362982122721758046162774175984777524039918857735995004907450973": 15
   },
   "trade_cursor": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
@@ -21965,9 +21958,9 @@
     "ts": 1784914776
   },
   "last_fill": {
-    "ts": 1784981592,
-    "side": "BUY",
-    "price": 0.72,
+    "ts": 1784984184,
+    "side": "SELL",
+    "price": 1.0,
     "shares": 169.56,
     "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
     "outcome": "Top Esports"
@@ -21978,81 +21971,6 @@
     "misses": 13
   },
   "ignored_exits": [
-    {
-      "ts": 1784923177.1,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1784923516.9,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1784923850.3,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1784924186.3,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1784924515.9,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
     {
       "ts": 1784924836.4,
       "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
@@ -24975,6 +24893,81 @@
       "cost_held": 122.08,
       "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
       "outcome": "Top Esports",
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "mode": "paper"
+    },
+    {
+      "ts": 1784983528.0,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.87,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1784983535.2,
+      "token": "111811929502290362982122721758046162774175984777524039918857735995004907450973",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.001,
+      "shares_held": 262.45,
+      "cost_held": 125.98,
+      "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
+      "outcome": "Weibo Gaming",
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "mode": "paper"
+    },
+    {
+      "ts": 1784983535.9,
+      "token": "39204188212807654862524084563129756709425912681035817068891674648908999999428",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.63,
+      "shares_held": 169.56,
+      "cost_held": 122.08,
+      "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
+      "outcome": "Top Esports",
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "mode": "paper"
+    },
+    {
+      "ts": 1784984176.2,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.87,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1784984183.5,
+      "token": "111811929502290362982122721758046162774175984777524039918857735995004907450973",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.001,
+      "shares_held": 262.45,
+      "cost_held": 125.98,
+      "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
+      "outcome": "Weibo Gaming",
       "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
       "mode": "paper"
     }
