@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784978716,
+ "updated": 1784978921,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 0.94,
@@ -19,7 +19,7 @@
    "open_cost": 4.47,
    "open_n": 2,
    "miss_n": 13,
-   "miss_pnl": 5.93,
+   "miss_pnl": 4.65,
    "last_ts": 1784978647
   },
   "(incident)": {
@@ -2732,10 +2732,11 @@
    "price": 0.49,
    "stake": 2.24,
    "reason": "order rejected: exception: order 0xccdbfbd661fc2f1c629480662fc57300d8383387f",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
+   "status": "sold",
+   "pnl": -1.28,
+   "settled": 1784978920,
+   "name": "AIcAIc",
+   "exit_price": 0.2227
   },
   {
    "ts": 1784754808,
