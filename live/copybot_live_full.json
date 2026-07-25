@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784999568,
+ "updated": 1785000156,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 593.76,
@@ -4966,7 +4966,8 @@
    "status": "lost",
    "pnl": -123.51,
    "settled": 1784999125,
-   "name": "AIcAIc"
+   "name": "AIcAIc",
+   "exit_checked": true
   },
   {
    "ts": 1784990183,
