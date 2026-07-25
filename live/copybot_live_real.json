@@ -1,17 +1,17 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.25,
+ "stake": 2.26,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
- "cash": 21.72,
- "deployed": 34.45,
+ "cash": 22.99,
+ "deployed": 33.45,
  "reserve": 0.0,
- "realized": -19.68,
+ "realized": -19.42,
  "adjustments": 9.44,
  "ledger_drift": 0.02,
- "open_count": 17,
+ "open_count": 16,
  "fees_paid": 3.5,
  "fee_rate": 0.03,
  "lag": {
@@ -63,13 +63,13 @@
    "cost": 2.23,
    "fee": 0.02,
    "opened": 1784978647,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
+   "status": "closed",
+   "exit_price": 0.9151,
+   "pnl": 0.48,
+   "settled": 1784979637,
    "end_ts": 1784937600,
-   "sold_shares": 1.64,
-   "sold_proceeds": 1.46
+   "sold_shares": 2.98,
+   "sold_proceeds": 2.73
   },
   {
    "token": "31734979589136676783620439669736424886669000930046383039286241799551299417224",
@@ -3080,10 +3080,10 @@
  ],
  "missed_pnl": 1731.87,
  "last_fill": {
-  "ts": 1784979254,
+  "ts": 1784979574,
   "side": "SELL",
-  "price": 0.9,
-  "shares": 0.11,
+  "price": 0.95,
+  "shares": 1.34,
   "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirva",
   "outcome": "Invictus Gaming"
  },
@@ -3099,14 +3099,14 @@
    "last_ts": 1784960798
   },
   "AIcAIc": {
-   "realized": -13.89,
-   "n": 15,
+   "realized": -13.41,
+   "n": 16,
    "wins": 0,
-   "open_cost": 4.47,
-   "open_n": 2,
+   "open_cost": 2.24,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": 4.65,
-   "last_ts": 1784978647
+   "last_ts": 1784979637
   },
   "(incident)": {
    "realized": 5.86,
@@ -3199,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784979255
+ "updated": 1784979637
 }
