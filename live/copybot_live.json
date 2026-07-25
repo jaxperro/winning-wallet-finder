@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 125.32,
+ "stake": 125.35,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1331.3,
- "deployed": 1801.75,
+ "cash": 1361.88,
+ "deployed": 1771.75,
  "reserve": 0.0,
- "realized": 2133.02,
+ "realized": 2133.6,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 26,
- "fees_paid": 365.15,
+ "fees_paid": 365.24,
  "fee_rate": 0.03,
  "lag": {
   "n": 257,
@@ -67,8 +67,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 11.48,
-   "sold_proceeds": 10.31,
+   "sold_shares": 45.56,
+   "sold_proceeds": 40.88,
    "end_ts": 1785456000
   },
   {
@@ -3092,10 +3092,10 @@
  ],
  "missed_pnl": 96507.04,
  "last_fill": {
-  "ts": 1784951575,
+  "ts": 1784951746,
   "side": "SELL",
   "price": 0.9,
-  "shares": 11.48,
+  "shares": 34.08,
   "title": "Will the Houthis successfully target shipping by July 31, 20",
   "outcome": "Yes"
  },
@@ -3191,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784951576
+ "updated": 1784951746
 }
