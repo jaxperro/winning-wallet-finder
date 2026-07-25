@@ -2111,6 +2111,21 @@
  ],
  "missed": [
   {
+   "ts": 1784953684,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "14096872842779339413548558470847919419635424431027565090825243321390264025612",
+   "cond": "0x526ce3aa2f946f6b0d4d97a0928f585d3e8fe919accd5d04096f2abb7da3d141",
+   "title": "Will the Houthis successfully target shipping by August 15, 2026?",
+   "outcome": "Yes",
+   "price": 0.9296,
+   "stake": 2.18,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784951732,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "30105308353288988924984162628182939641372197734077392129497102501234749347616",
@@ -3051,25 +3066,9 @@
    "settled": 1784564738,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1784548182,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "45858479053746616749156519360893482359161569156141079722407137651102212018480",
-   "cond": "0x7e045734da5d2a0743da450cc5cff8e2c1e1298a9731f7fbadd7c13823c5c79c",
-   "title": "China x Philippines military clash before 2027?",
-   "outcome": "No",
-   "price": 0.53,
-   "stake": 2.41,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "lost",
-   "pnl": -2.44,
-   "settled": 1784563875,
-   "name": "BikesAreTheBikes",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 1165.17,
+ "missed_pnl": 1166.18,
  "last_fill": {
   "ts": 1784945241,
   "side": "BUY",
@@ -3085,7 +3084,7 @@
    "wins": 5,
    "open_cost": 15.6,
    "open_n": 6,
-   "miss_n": 69,
+   "miss_n": 70,
    "miss_pnl": 1170.13,
    "last_ts": 1784944416
   },
@@ -3190,5 +3189,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784953451
+ "updated": 1784953690
 }

@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784953451,
+ "updated": 1784953690,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 0.48,
@@ -8,7 +8,7 @@
    "wins": 5,
    "open_cost": 15.6,
    "open_n": 6,
-   "miss_n": 69,
+   "miss_n": 70,
    "miss_pnl": 1170.13,
    "last_ts": 1784944416
   },
@@ -2658,6 +2658,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784953684,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "14096872842779339413548558470847919419635424431027565090825243321390264025612",
+   "cond": "0x526ce3aa2f946f6b0d4d97a0928f585d3e8fe919accd5d04096f2abb7da3d141",
+   "title": "Will the Houthis successfully target shipping by August 15, 2026?",
+   "outcome": "Yes",
+   "price": 0.9296,
+   "stake": 2.18,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784951732,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
