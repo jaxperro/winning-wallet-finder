@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 114.67,
+ "stake": 116.13,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 930.18,
- "deployed": 1936.54,
+ "cash": 1031.96,
+ "deployed": 1871.39,
  "reserve": 0.0,
- "realized": 1866.69,
+ "realized": 1903.33,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 26,
+ "open_count": 25,
  "fees_paid": 378.14,
  "fee_rate": 0.03,
  "lag": {
@@ -63,13 +63,13 @@
    "cost": 113.81,
    "fee": 1.23,
    "opened": 1784997557,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
+   "status": "closed",
+   "exit_price": 0.9733,
+   "pnl": 58.03,
+   "settled": 1784999568,
    "end_ts": 1784937600,
-   "sold_shares": 76.04,
-   "sold_proceeds": 71.29
+   "sold_shares": 177.82,
+   "sold_proceeds": 173.07
   },
   {
    "token": "111811929502290362982122721758046162774175984777524039918857735995004907450973",
@@ -3093,10 +3093,10 @@
  ],
  "missed_pnl": 111240.47,
  "last_fill": {
-  "ts": 1784999356,
+  "ts": 1784999568,
   "side": "SELL",
-  "price": 0.93,
-  "shares": 3.9,
+  "price": 1.0,
+  "shares": 101.78,
   "title": "LoL: Karmine Corp vs Movistar KOI - Game 1 Winner",
   "outcome": "Karmine Corp"
  },
@@ -3152,14 +3152,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -113.87,
-   "n": 30,
+   "realized": -55.84,
+   "n": 31,
    "wins": 0,
-   "open_cost": 113.81,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 3,
    "miss_pnl": -63.35,
-   "last_ts": 1784997557
+   "last_ts": 1784999568
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -3192,5 +3192,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784999357
+ "updated": 1784999568
 }
