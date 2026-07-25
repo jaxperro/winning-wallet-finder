@@ -5,13 +5,13 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
- "cash": 24.78,
- "deployed": 31.22,
+ "cash": 24.79,
+ "deployed": 31.21,
  "reserve": 0.0,
  "realized": -19.86,
  "adjustments": 9.44,
- "ledger_drift": 0.02,
- "open_count": 16,
+ "ledger_drift": 0.03,
+ "open_count": 15,
  "fees_paid": 3.44,
  "fee_rate": 0.03,
  "lag": {
@@ -63,13 +63,13 @@
    "cost": 2.2,
    "fee": 0.02,
    "opened": 1784966556,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
+   "status": "closed",
+   "exit_price": 0.9129,
+   "pnl": 0.96,
+   "settled": 1784968260,
    "end_ts": 1784937600,
-   "sold_shares": 3.48,
-   "sold_proceeds": 3.18
+   "sold_shares": 3.49,
+   "sold_proceeds": 3.19
   },
   {
    "token": "33617782943606593457233658595461209550659667672324965420014965311339164331375",
@@ -3077,10 +3077,10 @@
  ],
  "missed_pnl": 1166.45,
  "last_fill": {
-  "ts": 1784968115,
+  "ts": 1784968260,
   "side": "SELL",
-  "price": 0.93,
-  "shares": 1.9,
+  "price": 0.944,
+  "shares": 0.01,
   "title": "LoL: LGD Gaming vs Team WE - Game 2 Winner",
   "outcome": "Team WE"
  },
@@ -3096,14 +3096,14 @@
    "last_ts": 1784960798
   },
   "AIcAIc": {
-   "realized": -14.85,
-   "n": 14,
+   "realized": -13.89,
+   "n": 15,
    "wins": 0,
-   "open_cost": 2.2,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 12,
    "miss_pnl": 5.93,
-   "last_ts": 1784966556
+   "last_ts": 1784968260
   },
   "(incident)": {
    "realized": 5.86,
@@ -3196,5 +3196,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784968115
+ "updated": 1784968260
 }
