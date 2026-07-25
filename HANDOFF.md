@@ -194,6 +194,17 @@ Fly side fully autonomous: recorder (~3+ weeks headroom), 3 harnesses,
 both copybots — nothing depends on the Mac while paused. On return the
 tape mirror + nightly self-heal (freshness wait + ledger backfill).
 
+## Studies A + B DECOMMISSIONED (user directive 2026-07-25)
+#17 formally KILLED (final grades: oracle −$12.89/fill n=3,308 at E≥.04;
+surge A2 final −$2.17/fill n=8,700) · #19 closed · **wwf-surgebot +
+wwf-oraclebot scaled to 0** (machines destroyed, apps + volumes +
+ledgers retained frozen; full teardown = flyctl apps destroy). /test
+dash = Study C + Study D only. Study D first chain grade 07-25:
+**+$22.33/ep (+27.1% of staked) n=140, mirage KILLED (+4.0¢ median,
+n=321), ex-top-5 +$8.99/ep, edge concentrates in 15-40¢ complements**
+— PASS-track, bars n≥400/5d. Study C day-4: pooled +$0.007/lean
+n=12,542 — flat; neither bar met.
+
 ## Floors FROZEN (user directive 2026-07-24)
 All 7 conviction floors floor_pin'd at the 07-24 p80s (Kruto 80 ·
 0xbadaf319 27.50 · gkm 470.51 · 1kto1m 314.91 · Bikes 227.01 · AIcAIc
