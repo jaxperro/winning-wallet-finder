@@ -2126,10 +2126,11 @@
    "price": 0.72,
    "stake": 2.26,
    "reason": "order rejected: exception: order 0x4fc3c4d99267437d31d249112890cbd0fecffdaea",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
+   "status": "sold",
+   "pnl": -1.32,
+   "settled": 1784984744,
+   "name": "AIcAIc",
+   "exit_price": 0.3115
   },
   {
    "ts": 1784978134,
@@ -3077,7 +3078,7 @@
    "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 1731.81,
+ "missed_pnl": 1730.49,
  "last_fill": {
   "ts": 1784982974,
   "side": "BUY",
@@ -3104,7 +3105,7 @@
    "open_cost": 4.5,
    "open_n": 2,
    "miss_n": 14,
-   "miss_pnl": 4.65,
+   "miss_pnl": 3.33,
    "last_ts": 1784982970
   },
   "(incident)": {
@@ -3198,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784983009
+ "updated": 1784984744
 }
