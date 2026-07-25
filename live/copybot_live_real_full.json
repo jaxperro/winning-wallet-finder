@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784999380,
+ "updated": 1784999576,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 0.94,
@@ -13,14 +13,14 @@
    "last_ts": 1784991649
   },
   "AIcAIc": {
-   "realized": -17.97,
-   "n": 18,
+   "realized": -17.02,
+   "n": 19,
    "wins": 0,
-   "open_cost": 2.16,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 14,
    "miss_pnl": 3.33,
-   "last_ts": 1784999177
+   "last_ts": 1784999576
   },
   "(incident)": {
    "realized": 5.86,
@@ -115,6 +115,28 @@
  },
  "bets": [
   {
+   "token": "49331878508394871833592446045300865060542314418976779518068691623730505202112",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Karmine Corp",
+   "title": "LoL: Karmine Corp vs Movistar KOI - Game 1 Winner",
+   "their_price": 0.64,
+   "my_price": 0.64,
+   "slippage_pct": 0.0,
+   "lag_s": 2.1,
+   "shares": 3.38,
+   "cost": 2.16,
+   "fee": 0.0234,
+   "opened": 1784997557,
+   "status": "closed",
+   "exit_price": 0.9312,
+   "pnl": 0.95,
+   "settled": 1784999576,
+   "end_ts": 1784937600,
+   "sold_shares": 3.37,
+   "sold_proceeds": 3.13814926
+  },
+  {
    "token": "37396056216978472002674926504514491318505793793759544366379504943870958326106",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "name": "AIcAIc",
@@ -133,28 +155,6 @@
    "pnl": -2.29,
    "settled": 1784999177,
    "end_ts": 1784937600
-  },
-  {
-   "token": "49331878508394871833592446045300865060542314418976779518068691623730505202112",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Karmine Corp",
-   "title": "LoL: Karmine Corp vs Movistar KOI - Game 1 Winner",
-   "their_price": 0.64,
-   "my_price": 0.64,
-   "slippage_pct": 0.0,
-   "lag_s": 2.1,
-   "shares": 3.38,
-   "cost": 2.16,
-   "fee": 0.0234,
-   "opened": 1784997557,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784937600,
-   "sold_shares": 1.07,
-   "sold_proceeds": 0.9564267600000003
   },
   {
    "token": "8520939197524385894693978702254214426383751437032693433763418213436851058226",
