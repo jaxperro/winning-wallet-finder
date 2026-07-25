@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 126.09,
+ "stake": 126.06,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1544.37,
- "deployed": 1607.88,
+ "cash": 1489.39,
+ "deployed": 1662.02,
  "reserve": 0.0,
- "realized": 2152.22,
+ "realized": 2151.38,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 22,
- "fees_paid": 366.85,
+ "ledger_drift": -0.04,
+ "open_count": 23,
+ "fees_paid": 367.69,
  "fee_rate": 0.03,
  "lag": {
-  "n": 258,
-  "n24": 16,
-  "avg_s": 11.7,
+  "n": 259,
+  "n24": 17,
+  "avg_s": 11.3,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "30763135880765767714915424809927017029690489225123793413196619783027580637320",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Stephen Lynch be the Democratic nominee for MA-08?",
+   "their_price": 0.48,
+   "my_price": 0.48,
+   "slippage_pct": 0.0,
+   "lag_s": 3.8,
+   "shares": 112.78,
+   "cost": 54.13,
+   "fee": 0.84,
+   "opened": 1784970119,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800
+  },
   {
    "token": "41128359410147540990090031143993561801439881809667646963277254224817395601063",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2112,27 +2132,6 @@
    "settled": 1784130520,
    "sold_shares": 153.66,
    "sold_proceeds": 89.54
-  },
-  {
-   "token": "97088071698669685592562490277029468095283178025275209576407341311883833186246",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Spirit",
-   "title": "Dota 2: Team Spirit vs Team Liquid (BO3) - Esports World Cup Survival",
-   "their_price": 0.63,
-   "my_price": 0.62,
-   "slippage_pct": -0.0159,
-   "lag_s": 5.5,
-   "shares": 157.31,
-   "cost": 97.53,
-   "fee": 1.11,
-   "opened": 1784124648,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": 58.66,
-   "settled": 1784127513,
-   "sold_shares": 157.31,
-   "sold_proceeds": 157.31
   }
  ],
  "missed": [
@@ -3095,23 +3094,23 @@
  ],
  "missed_pnl": 96515.46,
  "last_fill": {
-  "ts": 1784968110,
-  "side": "SELL",
-  "price": 0.97,
-  "shares": 19.01,
-  "title": "LoL: LGD Gaming vs Team WE - Game 2 Winner",
-  "outcome": "Team WE"
+  "ts": 1784970122,
+  "side": "BUY",
+  "price": 0.48,
+  "shares": 112.78,
+  "title": "Will Stephen Lynch be the Democratic nominee for MA-08?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 593.76,
    "n": 59,
    "wins": 19,
-   "open_cost": 641.86,
-   "open_n": 10,
+   "open_cost": 695.99,
+   "open_n": 11,
    "miss_n": 70,
    "miss_pnl": 97026.75,
-   "last_ts": 1784960840
+   "last_ts": 1784970119
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -3194,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784968110
+ "updated": 1784970124
 }

@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1784968110,
+ "updated": 1784970124,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 593.76,
    "n": 59,
    "wins": 19,
-   "open_cost": 641.86,
-   "open_n": 10,
+   "open_cost": 695.99,
+   "open_n": 11,
    "miss_n": 70,
    "miss_pnl": 97026.75,
-   "last_ts": 1784960840
+   "last_ts": 1784970119
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -94,6 +94,26 @@
   }
  },
  "bets": [
+  {
+   "token": "30763135880765767714915424809927017029690489225123793413196619783027580637320",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Stephen Lynch be the Democratic nominee for MA-08?",
+   "their_price": 0.48,
+   "my_price": 0.48,
+   "slippage_pct": 0.0,
+   "lag_s": 3.8,
+   "shares": 112.78,
+   "cost": 54.13,
+   "fee": 0.8445,
+   "opened": 1784970119,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800
+  },
   {
    "token": "41128359410147540990090031143993561801439881809667646963277254224817395601063",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
