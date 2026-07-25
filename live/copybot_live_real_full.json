@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1785005593,
+ "updated": 1785009025,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 0.94,
@@ -8,7 +8,7 @@
    "wins": 6,
    "open_cost": 17.75,
    "open_n": 7,
-   "miss_n": 70,
+   "miss_n": 79,
    "miss_pnl": 1737.76,
    "last_ts": 1784991649
   },
@@ -58,8 +58,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 11,
-   "miss_pnl": -3.31,
+   "miss_n": 6,
+   "miss_pnl": -1.71,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -90,7 +90,7 @@
    "open_n": 0,
    "miss_n": 0,
    "miss_pnl": 0.0,
-   "last_ts": 1785005593
+   "last_ts": 1785009025
   },
   "0x41558102": {
    "realized": 0.0,
@@ -98,8 +98,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 9,
-   "miss_pnl": 2.65,
+   "miss_n": 14,
+   "miss_pnl": 1.05,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -131,7 +131,7 @@
    "status": "closed",
    "exit_price": null,
    "pnl": null,
-   "settled": 1785005593,
+   "settled": 1785009025,
    "end_ts": 1784937600
   },
   {
@@ -2826,6 +2826,141 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785009019,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "71010957146987743570906714869412317330027794776414854320227602497864300978774",
+   "cond": "0x8084019b7fb72aadb8202bf727b3bb324b559f797caa94df04a08ea4e074c257",
+   "title": "Over $3B crypto hack value in 2026?",
+   "outcome": "No",
+   "price": 0.86,
+   "stake": 2.02,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785009018,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "38175379283808228327034811002747441529537312086974479792536732908990840238523",
+   "cond": "0x9027a12cbbf78e9bff760402ab106732fa5a4af2002e4f48e5cc406ac1447800",
+   "title": "Opensea FDV above $100M one day after launch?",
+   "outcome": "Yes",
+   "price": 0.1798,
+   "stake": 2.02,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785009018,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "10648768902294223005281776472791443674603816737553002058221071348281139541856",
+   "cond": "0x30034a8bfb66e13d0235c5a8483b5f4ba974c0221e3c9ca67f1382723d19a801",
+   "title": "Bitcoin above 66,000 on July 22, 12PM ET?",
+   "outcome": "No",
+   "price": 0.39,
+   "stake": 2.02,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785009018,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "53864929757641923279848610727880389145399611177187939181757886904167965697807",
+   "cond": "0x0d3bdcf422b886240b03a86ca18854b09d7e5db1a51693f702d7378b53e5bc63",
+   "title": "Will Lionel Messi win the Silver Ball at the 2026 FIFA World Cup?",
+   "outcome": "No",
+   "price": 0.5799,
+   "stake": 2.02,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785009018,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "40721468567018229427830693104124829389096865246100141431731263782329757924925",
+   "cond": "0x9126622317c7329b835455ad727953d5ed03d13a6c6b6d0e1bf326330e591d19",
+   "title": "Will the price of Bitcoin be between $64,000 and $66,000 on July 10?",
+   "outcome": "No",
+   "price": 0.5,
+   "stake": 2.02,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785009018,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "3901986631446153023403890805451260510191347162609117497694534689649201812603",
+   "cond": "0x6d440b85cbe22665a737fa92e1d698aebae32754d627e8f4214b5e258de7b05d",
+   "title": "Tread FDV above $300M one day after launch",
+   "outcome": "No",
+   "price": 0.723,
+   "stake": 2.02,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785009018,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "83778159848246307298177835560751845581203660912608603239968031176372923069932",
+   "cond": "0xf649be9e9c5ce3df0834e80690ee19f9696db9ee7c4b742b06cd3a84167c8a3d",
+   "title": "Will Lambda's valuation hit (HIGH) $8.5B by July 31?",
+   "outcome": "No",
+   "price": 0.75,
+   "stake": 2.02,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785009018,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "45139241414469860954947578765028277034812078372494153843579493704976148448651",
+   "cond": "0x65791b55c71bf4314b7234f0406f052727201d521f68721d360563b3ac59a3a3",
+   "title": "Tuyo FDV above $500M one day after launch?",
+   "outcome": "No",
+   "price": 0.7499,
+   "stake": 2.02,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785009018,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "57590278468135932985122265201166347717203805819317356723801980532081946556108",
+   "cond": "0x724fe3bb76a4c9dc5a1d72612bd762991d436b18253bef55152efcf7083cb48a",
+   "title": "Valantis FDV above $200M one day after launch?",
+   "outcome": "No",
+   "price": 0.83,
+   "stake": 2.02,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784981598,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -5908,7 +6043,7 @@
    "status": "lost",
    "pnl": -1.0,
    "settled": 1783814962,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -5924,7 +6059,7 @@
    "status": "lost",
    "pnl": -1.03,
    "settled": 1783814817,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -5940,7 +6075,7 @@
    "status": "won",
    "pnl": 0.21,
    "settled": 1783814813,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -5956,7 +6091,7 @@
    "status": "won",
    "pnl": 0.06,
    "settled": 1783814706,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
@@ -5988,7 +6123,7 @@
    "status": "sold",
    "pnl": 0.16,
    "settled": 1783789468,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_price": 1.0
   },
   {
