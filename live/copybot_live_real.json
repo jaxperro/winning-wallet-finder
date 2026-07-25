@@ -2111,21 +2111,6 @@
  ],
  "missed": [
   {
-   "ts": 1784953684,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "14096872842779339413548558470847919419635424431027565090825243321390264025612",
-   "cond": "0x526ce3aa2f946f6b0d4d97a0928f585d3e8fe919accd5d04096f2abb7da3d141",
-   "title": "Will the Houthis successfully target shipping by August 15, 2026?",
-   "outcome": "Yes",
-   "price": 0.9296,
-   "stake": 2.18,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1784951732,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "30105308353288988924984162628182939641372197734077392129497102501234749347616",
@@ -2135,9 +2120,24 @@
    "price": 0.8834,
    "stake": 2.27,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "won",
+   "pnl": 0.29,
+   "settled": 1784960881,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1784953684,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "14096872842779339413548558470847919419635424431027565090825243321390264025612",
+   "cond": "0x526ce3aa2f946f6b0d4d97a0928f585d3e8fe919accd5d04096f2abb7da3d141",
+   "title": "Will the Houthis successfully target shipping by August 15, 2026?",
+   "outcome": "Yes",
+   "price": 0.9296,
+   "stake": 2.18,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 0.16,
+   "settled": 1784960881,
    "name": "0xbadaf319"
   },
   {
@@ -3068,7 +3068,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 1166.18,
+ "missed_pnl": 1166.63,
  "last_fill": {
   "ts": 1784945241,
   "side": "BUY",
@@ -3085,7 +3085,7 @@
    "open_cost": 13.33,
    "open_n": 5,
    "miss_n": 70,
-   "miss_pnl": 1170.13,
+   "miss_pnl": 1170.58,
    "last_ts": 1784960798
   },
   "AIcAIc": {
@@ -3189,5 +3189,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784960801
+ "updated": 1784960881
 }

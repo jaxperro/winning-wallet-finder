@@ -19282,9 +19282,9 @@
       "price": 0.8834,
       "stake": 2.27,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 0.29,
+      "settled": 1784960881,
       "name": "0xbadaf319"
     },
     {
@@ -19297,14 +19297,14 @@
       "price": 0.9296,
       "stake": 2.18,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 0.16,
+      "settled": 1784960881,
       "name": "0xbadaf319"
     }
   ],
-  "feed_sig": "cc7678c8dc0685dc9d1a1581bdb6a892",
-  "feed_pushed_at": 1784960685.2936015,
+  "feed_sig": "9eefa24c636f357f62811e88bdf4936d",
+  "feed_pushed_at": 1784960815.3352304,
   "adjustments": [
     {
       "ts": 1783906689,
