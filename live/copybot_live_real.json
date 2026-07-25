@@ -5,18 +5,18 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
- "cash": 24.79,
- "deployed": 31.21,
+ "cash": 22.52,
+ "deployed": 33.45,
  "reserve": 0.0,
- "realized": -19.86,
+ "realized": -19.89,
  "adjustments": 9.44,
  "ledger_drift": 0.03,
- "open_count": 15,
- "fees_paid": 3.44,
+ "open_count": 16,
+ "fees_paid": 3.47,
  "fee_rate": 0.03,
  "lag": {
-  "n": 120,
-  "n24": 5,
+  "n": 121,
+  "n24": 6,
   "avg_s": 3.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "31734979589136676783620439669736424886669000930046383039286241799551299417224",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Weibo Gaming",
+   "title": "LoL: Invictus Gaming vs Weibo Gaming - Game 2 Winner",
+   "their_price": 0.48,
+   "my_price": 0.48,
+   "slippage_pct": 0.0,
+   "lag_s": 3.2,
+   "shares": 4.66,
+   "cost": 2.24,
+   "fee": 0.03,
+   "opened": 1784974783,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784937600
+  },
   {
    "token": "41128359410147540990090031143993561801439881809667646963277254224817395601063",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2091,26 +2111,6 @@
    "settled": 1783852716,
    "sold_shares": 2.22,
    "sold_proceeds": 0.92
-  },
-  {
-   "token": "89628205161429183663335882524534177373428689595495022481997839397142363974023",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Bilibili Gaming",
-   "title": "LoL: Bilibili Gaming vs Hanwha Life Esports - Game 3 Winner",
-   "their_price": 0.5,
-   "my_price": 0.53,
-   "slippage_pct": 0.06,
-   "shares": 1.96,
-   "cost": 1.04,
-   "fee": 0.01,
-   "opened": 1783848286,
-   "status": "closed",
-   "exit_price": 0.9486,
-   "pnl": 0.8,
-   "settled": 1783850378,
-   "sold_shares": 1.96,
-   "sold_proceeds": 1.86
   }
  ],
  "missed": [
@@ -3077,12 +3077,12 @@
  ],
  "missed_pnl": 1166.45,
  "last_fill": {
-  "ts": 1784968260,
-  "side": "SELL",
-  "price": 0.944,
-  "shares": 0.01,
-  "title": "LoL: LGD Gaming vs Team WE - Game 2 Winner",
-  "outcome": "Team WE"
+  "ts": 1784974786,
+  "side": "BUY",
+  "price": 0.48,
+  "shares": 4.66,
+  "title": "LoL: Invictus Gaming vs Weibo Gaming - Game 2 Winner",
+  "outcome": "Weibo Gaming"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3099,11 +3099,11 @@
    "realized": -13.89,
    "n": 15,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 2.24,
+   "open_n": 1,
    "miss_n": 12,
    "miss_pnl": 5.93,
-   "last_ts": 1784968260
+   "last_ts": 1784974783
   },
   "(incident)": {
    "realized": 5.86,
@@ -3196,5 +3196,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784973572
+ "updated": 1784974808
 }
