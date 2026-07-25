@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 122.82,
+ "stake": 122.94,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1361.88,
- "deployed": 1708.63,
+ "cash": 1386.63,
+ "deployed": 1686.85,
  "reserve": 0.0,
- "realized": 2070.48,
+ "realized": 2073.45,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 25,
+ "ledger_drift": -0.02,
+ "open_count": 24,
  "fees_paid": 365.24,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "7969149423026217458943279473543428125030119665364187577928855853989845042205",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Khamenei post 10-14 posts from July 17 to July 24, 2026?",
+   "their_price": 0.88,
+   "my_price": 0.88,
+   "slippage_pct": 0.0,
+   "lag_s": 0.2,
+   "shares": 24.75,
+   "cost": 21.78,
+   "fee": 0.08,
+   "opened": 1784869386,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 2.89,
+   "settled": 1784959721,
+   "end_ts": 1784851200
+  },
   {
    "token": "95523031090032630493379749841042373483392094122589567942892903275780964514373",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -430,26 +450,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785542400
-  },
-  {
-   "token": "7969149423026217458943279473543428125030119665364187577928855853989845042205",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Khamenei post 10-14 posts from July 17 to July 24, 2026?",
-   "their_price": 0.88,
-   "my_price": 0.88,
-   "slippage_pct": 0.0,
-   "lag_s": 0.2,
-   "shares": 24.75,
-   "cost": 21.78,
-   "fee": 0.08,
-   "opened": 1784869386,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784851200
   },
   {
    "token": "80270372288514892122229303181424592994977341771902366596528480848577129708762",
@@ -3101,14 +3101,14 @@
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 575.95,
-   "n": 56,
-   "wins": 16,
-   "open_cost": 778.68,
-   "open_n": 13,
+   "realized": 578.84,
+   "n": 57,
+   "wins": 17,
+   "open_cost": 756.9,
+   "open_n": 12,
    "miss_n": 69,
    "miss_pnl": 97026.75,
-   "last_ts": 1784951520
+   "last_ts": 1784959721
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -3191,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784958470
+ "updated": 1784959724
 }
