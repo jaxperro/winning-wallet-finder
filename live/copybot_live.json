@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 123.5,
+ "stake": 124.26,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1356.15,
- "deployed": 1731.41,
+ "cash": 1413.63,
+ "deployed": 1692.81,
  "reserve": 0.0,
- "realized": 2087.53,
+ "realized": 2106.42,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 23,
- "fees_paid": 366.63,
+ "fees_paid": 366.73,
  "fee_rate": 0.03,
  "lag": {
   "n": 258,
@@ -67,7 +67,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1784937600
+   "end_ts": 1784937600,
+   "sold_shares": 61.27,
+   "sold_proceeds": 57.49
   },
   {
    "token": "30105308353288988924984162628182939641372197734077392129497102501234749347616",
@@ -3093,12 +3095,12 @@
  ],
  "missed_pnl": 96515.46,
  "last_fill": {
-  "ts": 1784966925,
+  "ts": 1784968025,
   "side": "SELL",
-  "price": 0.915,
-  "shares": 5.29,
-  "title": "Opensea FDV above $500M one day after launch?",
-  "outcome": "No"
+  "price": 0.94,
+  "shares": 61.27,
+  "title": "LoL: LGD Gaming vs Team WE - Game 2 Winner",
+  "outcome": "Team WE"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3192,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784967743
+ "updated": 1784968031
 }
