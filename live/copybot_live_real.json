@@ -5,19 +5,19 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
- "cash": 23.29,
- "deployed": 33.57,
+ "cash": 20.99,
+ "deployed": 35.84,
  "reserve": 0.0,
- "realized": -19.0,
+ "realized": -19.02,
  "adjustments": 9.44,
  "ledger_drift": 0.02,
- "open_count": 16,
- "fees_paid": 3.38,
+ "open_count": 17,
+ "fees_paid": 3.41,
  "fee_rate": 0.03,
  "lag": {
-  "n": 118,
-  "n24": 5,
-  "avg_s": 4.9,
+  "n": 119,
+  "n24": 6,
+  "avg_s": 4.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "95523031090032630493379749841042373483392094122589567942892903275780964514373",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Trump say \"Iran\" 3+ times during White House Correspondents Dinner?",
+   "their_price": 0.62,
+   "my_price": 0.62,
+   "slippage_pct": 0.0,
+   "lag_s": 1.5,
+   "shares": 3.66,
+   "cost": 2.27,
+   "fee": 0.03,
+   "opened": 1784945240,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784851200
+  },
   {
    "token": "33617782943606593457233658595461209550659667672324965420014965311339164331375",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2087,26 +2107,6 @@
    "settled": 1783849689,
    "sold_shares": 1.72,
    "sold_proceeds": 0.17
-  },
-  {
-   "token": "58177852542026635694424411749702887961596240830711524679308970260940138352630",
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "name": "1kto1m",
-   "outcome": "Up",
-   "title": "Bitcoin Up or Down - July 12, 5:00AM-5:15AM ET",
-   "their_price": 0.4066,
-   "my_price": 0.4,
-   "slippage_pct": -0.0163,
-   "shares": 2.5,
-   "cost": 1.0,
-   "fee": 0.02,
-   "opened": 1783847089,
-   "status": "closed",
-   "exit_price": 0.3432,
-   "pnl": -0.16,
-   "settled": 1783847162,
-   "sold_shares": 2.5,
-   "sold_proceeds": 0.86
   }
  ],
  "missed": [
@@ -3072,12 +3072,12 @@
  ],
  "missed_pnl": 1164.83,
  "last_fill": {
-  "ts": 1784944422,
+  "ts": 1784945241,
   "side": "BUY",
-  "price": 0.83,
-  "shares": 2.74,
-  "title": "Will the Houthis successfully target shipping by July 25, 20",
-  "outcome": "Yes"
+  "price": 0.62,
+  "shares": 3.66,
+  "title": "Will Trump say \"Iran\" 3+ times during White House Correspond",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3144,11 +3144,11 @@
    "realized": 0.7,
    "n": 4,
    "wins": 1,
-   "open_cost": 22.33,
-   "open_n": 10,
+   "open_cost": 24.6,
+   "open_n": 11,
    "miss_n": 27,
    "miss_pnl": -12.42,
-   "last_ts": 1784887113
+   "last_ts": 1784945240
   },
   "Kruto2027": {
    "realized": -0.05,
@@ -3191,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784944422
+ "updated": 1784945241
 }

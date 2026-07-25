@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784944422,
+ "updated": 1784945241,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 0.48,
@@ -66,11 +66,11 @@
    "realized": 0.7,
    "n": 4,
    "wins": 1,
-   "open_cost": 22.33,
-   "open_n": 10,
+   "open_cost": 24.6,
+   "open_n": 11,
    "miss_n": 27,
    "miss_pnl": -12.42,
-   "last_ts": 1784887113
+   "last_ts": 1784945240
   },
   "Kruto2027": {
    "realized": -0.05,
@@ -114,6 +114,26 @@
   }
  },
  "bets": [
+  {
+   "token": "95523031090032630493379749841042373483392094122589567942892903275780964514373",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Trump say \"Iran\" 3+ times during White House Correspondents Dinner?",
+   "their_price": 0.62,
+   "my_price": 0.62,
+   "slippage_pct": 0.0,
+   "lag_s": 1.5,
+   "shares": 3.66,
+   "cost": 2.27,
+   "fee": 0.0259,
+   "opened": 1784945240,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784851200
+  },
   {
    "token": "33617782943606593457233658595461209550659667672324965420014965311339164331375",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
