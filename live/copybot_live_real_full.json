@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1784951738,
+ "updated": 1784953451,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 0.48,
@@ -63,14 +63,14 @@
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
-   "realized": 0.7,
-   "n": 4,
+   "realized": -1.6,
+   "n": 5,
    "wins": 1,
-   "open_cost": 24.6,
-   "open_n": 11,
+   "open_cost": 22.33,
+   "open_n": 10,
    "miss_n": 27,
    "miss_pnl": -12.42,
-   "last_ts": 1784945240
+   "last_ts": 1784953448
   },
   "Kruto2027": {
    "realized": -0.05,
@@ -128,10 +128,10 @@
    "cost": 2.27,
    "fee": 0.0259,
    "opened": 1784945240,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -2.3,
+   "settled": 1784953448,
    "end_ts": 1784851200
   },
   {

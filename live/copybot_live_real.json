@@ -1,17 +1,17 @@
 {
  "mode": "live",
  "bankroll": 66.42,
- "stake": 2.27,
+ "stake": 2.18,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
  "cash": 20.99,
- "deployed": 35.84,
+ "deployed": 33.57,
  "reserve": 0.0,
- "realized": -19.02,
+ "realized": -21.29,
  "adjustments": 9.44,
  "ledger_drift": 0.02,
- "open_count": 17,
+ "open_count": 16,
  "fees_paid": 3.41,
  "fee_rate": 0.03,
  "lag": {
@@ -63,10 +63,10 @@
    "cost": 2.27,
    "fee": 0.03,
    "opened": 1784945240,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -2.3,
+   "settled": 1784953448,
    "end_ts": 1784851200
   },
   {
@@ -3140,14 +3140,14 @@
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
-   "realized": 0.7,
-   "n": 4,
+   "realized": -1.6,
+   "n": 5,
    "wins": 1,
-   "open_cost": 24.6,
-   "open_n": 11,
+   "open_cost": 22.33,
+   "open_n": 10,
    "miss_n": 27,
    "miss_pnl": -12.42,
-   "last_ts": 1784945240
+   "last_ts": 1784953448
   },
   "Kruto2027": {
    "realized": -0.05,
@@ -3190,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784951738
+ "updated": 1784953451
 }
