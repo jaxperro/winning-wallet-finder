@@ -2121,6 +2121,51 @@
  ],
  "missed": [
   {
+   "ts": 1785009018,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "10648768902294223005281776472791443674603816737553002058221071348281139541856",
+   "cond": "0x30034a8bfb66e13d0235c5a8483b5f4ba974c0221e3c9ca67f1382723d19a801",
+   "title": "Bitcoin above 66,000 on July 22, 12PM ET?",
+   "outcome": "No",
+   "price": 0.39,
+   "stake": 2.02,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "lost",
+   "pnl": -2.06,
+   "settled": 1785009090,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785009018,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "53864929757641923279848610727880389145399611177187939181757886904167965697807",
+   "cond": "0x0d3bdcf422b886240b03a86ca18854b09d7e5db1a51693f702d7378b53e5bc63",
+   "title": "Will Lionel Messi win the Silver Ball at the 2026 FIFA World Cup?",
+   "outcome": "No",
+   "price": 0.5799,
+   "stake": 2.02,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "lost",
+   "pnl": -2.05,
+   "settled": 1785009090,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785009018,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "40721468567018229427830693104124829389096865246100141431731263782329757924925",
+   "cond": "0x9126622317c7329b835455ad727953d5ed03d13a6c6b6d0e1bf326330e591d19",
+   "title": "Will the price of Bitcoin be between $64,000 and $66,000 on July 10?",
+   "outcome": "No",
+   "price": 0.5,
+   "stake": 2.02,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "lost",
+   "pnl": -2.05,
+   "settled": 1785009090,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785009019,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "71010957146987743570906714869412317330027794776414854320227602497864300978774",
@@ -2143,51 +2188,6 @@
    "title": "Opensea FDV above $100M one day after launch?",
    "outcome": "Yes",
    "price": 0.1798,
-   "stake": 2.02,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785009018,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "10648768902294223005281776472791443674603816737553002058221071348281139541856",
-   "cond": "0x30034a8bfb66e13d0235c5a8483b5f4ba974c0221e3c9ca67f1382723d19a801",
-   "title": "Bitcoin above 66,000 on July 22, 12PM ET?",
-   "outcome": "No",
-   "price": 0.39,
-   "stake": 2.02,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785009018,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "53864929757641923279848610727880389145399611177187939181757886904167965697807",
-   "cond": "0x0d3bdcf422b886240b03a86ca18854b09d7e5db1a51693f702d7378b53e5bc63",
-   "title": "Will Lionel Messi win the Silver Ball at the 2026 FIFA World Cup?",
-   "outcome": "No",
-   "price": 0.5799,
-   "stake": 2.02,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785009018,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "40721468567018229427830693104124829389096865246100141431731263782329757924925",
-   "cond": "0x9126622317c7329b835455ad727953d5ed03d13a6c6b6d0e1bf326330e591d19",
-   "title": "Will the price of Bitcoin be between $64,000 and $66,000 on July 10?",
-   "outcome": "No",
-   "price": 0.5,
    "stake": 2.02,
    "reason": "not copied in the detection window (reconciled)",
    "status": "open",
@@ -3073,7 +3073,7 @@
    "exit_price": 0.5
   }
  ],
- "missed_pnl": 1730.56,
+ "missed_pnl": 1724.4,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3090,7 +3090,7 @@
    "open_cost": 17.75,
    "open_n": 7,
    "miss_n": 79,
-   "miss_pnl": 1737.76,
+   "miss_pnl": 1731.6,
    "last_ts": 1784991649
   },
   "AIcAIc": {
@@ -3194,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785009025
+ "updated": 1785009091
 }

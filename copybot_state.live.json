@@ -16241,10 +16241,10 @@
       "cost": 2.25,
       "fee": 0.0128,
       "opened": 1784979741,
-      "status": "open",
+      "status": "closed",
       "exit_price": null,
       "pnl": null,
-      "settled": null,
+      "settled": 1785009025,
       "end_ts": 1784937600
     },
     "37396056216978472002674926504514491318505793793759544366379504943870958326106": {
@@ -19480,7 +19480,8 @@
       "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "0xbadaf319"
     },
     {
       "ts": 1785009018,
@@ -19492,9 +19493,10 @@
       "price": 0.39,
       "stake": 2.02,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -2.06,
+      "settled": 1785009090,
+      "name": "0xbadaf319"
     },
     {
       "ts": 1785009018,
@@ -19506,9 +19508,10 @@
       "price": 0.5799,
       "stake": 2.02,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -2.05,
+      "settled": 1785009090,
+      "name": "0xbadaf319"
     },
     {
       "ts": 1785009018,
@@ -19520,9 +19523,10 @@
       "price": 0.5,
       "stake": 2.02,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -2.05,
+      "settled": 1785009090,
+      "name": "0xbadaf319"
     },
     {
       "ts": 1785009018,
@@ -19536,7 +19540,8 @@
       "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "0xbadaf319"
     },
     {
       "ts": 1785009018,
@@ -19550,7 +19555,8 @@
       "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "0xbadaf319"
     },
     {
       "ts": 1785009018,
@@ -19564,7 +19570,8 @@
       "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "0xbadaf319"
     },
     {
       "ts": 1785009018,
@@ -19578,7 +19585,8 @@
       "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "0xbadaf319"
     },
     {
       "ts": 1785009019,
@@ -19592,11 +19600,12 @@
       "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "0xbadaf319"
     }
   ],
-  "feed_sig": "327741c0411dc29972d9c66d7e406ca2",
-  "feed_pushed_at": 1785005460.3821704,
+  "feed_sig": "3860e77f542928e914e464b6fb380c4e",
+  "feed_pushed_at": 1785009025.9241898,
   "adjustments": [
     {
       "ts": 1783906689,
