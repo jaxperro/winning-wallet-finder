@@ -2134,6 +2134,21 @@
  ],
  "missed": [
   {
+   "ts": 1784966431,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "3901986631446153023403890805451260510191347162609117497694534689649201812603",
+   "cond": "0x6d440b85cbe22665a737fa92e1d698aebae32754d627e8f4214b5e258de7b05d",
+   "title": "Tread FDV above $300M one day after launch",
+   "outcome": "No",
+   "price": 0.723,
+   "stake": 7.31,
+   "reason": "maker bid unfilled (70s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784957802,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "84136887953338024754895453606615907387507802935603233306412924655539834091881",
@@ -3073,21 +3088,6 @@
    "settled": 1784575514,
    "name": "1kto1m",
    "exit_price": 0.36
-  },
-  {
-   "ts": 1784573567,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "83778159848246307298177835560751845581203660912608603239968031176372923069932",
-   "cond": "0xf649be9e9c5ce3df0834e80690ee19f9696db9ee7c4b742b06cd3a84167c8a3d",
-   "title": "Will Lambda's valuation hit (HIGH) $8.5B by July 31?",
-   "outcome": "No",
-   "price": 0.75,
-   "stake": 37.5,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
  "missed_pnl": 96515.46,
@@ -3106,7 +3106,7 @@
    "wins": 19,
    "open_cost": 641.86,
    "open_n": 10,
-   "miss_n": 69,
+   "miss_n": 70,
    "miss_pnl": 97026.75,
    "last_ts": 1784960840
   },
@@ -3191,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784964122
+ "updated": 1784966436
 }
