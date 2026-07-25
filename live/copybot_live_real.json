@@ -2117,6 +2117,21 @@
  ],
  "missed": [
   {
+   "ts": 1784981598,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "39204188212807654862524084563129756709425912681035817068891674648908999999428",
+   "cond": "0xa255ab978a1eab78a7bd29479b0b9fe8e3de1904044f9887e470cebb7e04c63b",
+   "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
+   "outcome": "Top Esports",
+   "price": 0.72,
+   "stake": 2.26,
+   "reason": "order rejected: exception: order 0x4fc3c4d99267437d31d249112890cbd0fecffdaea",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1784978134,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "111811929502290362982122721758046162774175984777524039918857735995004907450973",
@@ -3060,25 +3075,9 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784572640,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "87122687121608029703081699232336906033160920614329826898705893750616809914369",
-   "cond": "0x075228a9709cdbea4f2ecf8286b1e70e27e18a4e07cc499ccb1c1ea7bdb0bbba",
-   "title": "SPY (SPY) Up or Down on July 20?",
-   "outcome": "Up",
-   "price": 0.69,
-   "stake": 2.41,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "sold",
-   "pnl": -1.2,
-   "settled": 1784575528,
-   "name": "1kto1m",
-   "exit_price": 0.36
   }
  ],
- "missed_pnl": 1731.87,
+ "missed_pnl": 1731.81,
  "last_fill": {
   "ts": 1784979743,
   "side": "BUY",
@@ -3104,7 +3103,7 @@
    "wins": 0,
    "open_cost": 2.24,
    "open_n": 1,
-   "miss_n": 13,
+   "miss_n": 14,
    "miss_pnl": 4.65,
    "last_ts": 1784979637
   },
@@ -3199,5 +3198,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784979747
+ "updated": 1784981598
 }
