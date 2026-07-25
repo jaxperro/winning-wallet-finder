@@ -2120,10 +2120,12 @@
    "price": 0.8834,
    "stake": 2.27,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "won",
-   "pnl": 0.29,
+   "status": "sold",
+   "pnl": 0.11,
    "settled": 1784960881,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true,
+   "exit_price": 0.9317
   },
   {
    "ts": 1784953684,
@@ -2138,7 +2140,8 @@
    "status": "won",
    "pnl": 0.16,
    "settled": 1784960881,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1784943182,
@@ -3068,7 +3071,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 1166.63,
+ "missed_pnl": 1166.45,
  "last_fill": {
   "ts": 1784945241,
   "side": "BUY",
@@ -3085,7 +3088,7 @@
    "open_cost": 13.33,
    "open_n": 5,
    "miss_n": 70,
-   "miss_pnl": 1170.58,
+   "miss_pnl": 1170.4,
    "last_ts": 1784960798
   },
   "AIcAIc": {
@@ -3189,5 +3192,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784960881
+ "updated": 1784961476
 }
