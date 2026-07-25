@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 122.09,
+ "stake": 122.05,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1016.05,
- "deployed": 2036.16,
+ "cash": 892.94,
+ "deployed": 2158.25,
  "reserve": 0.0,
- "realized": 2052.18,
+ "realized": 2051.16,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 26,
- "fees_paid": 374.45,
+ "open_count": 27,
+ "fees_paid": 375.48,
  "fee_rate": 0.03,
  "lag": {
-  "n": 264,
-  "n24": 20,
-  "avg_s": 17.7,
+  "n": 265,
+  "n24": 21,
+  "avg_s": 16.9,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "39204188212807654862524084563129756709425912681035817068891674648908999999428",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Top Esports",
+   "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
+   "their_price": 0.72,
+   "my_price": 0.72,
+   "slippage_pct": 0.0,
+   "lag_s": 0.9,
+   "shares": 169.56,
+   "cost": 122.08,
+   "fee": 1.03,
+   "opened": 1784981592,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784937600
+  },
   {
    "token": "107156085038944146438947590438365026964800691960988984359921209164919978522933",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2109,27 +2129,6 @@
    "settled": 1784136329,
    "sold_shares": 266.42,
    "sold_proceeds": 109.95
-  },
-  {
-   "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "1win",
-   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
-   "their_price": 0.7,
-   "my_price": 0.66,
-   "slippage_pct": -0.0571,
-   "lag_s": 5.5,
-   "shares": 150.6,
-   "cost": 99.4,
-   "fee": 1.01,
-   "opened": 1784133967,
-   "status": "closed",
-   "exit_price": 0.6335,
-   "pnl": -5.01,
-   "settled": 1784135344,
-   "sold_shares": 150.6,
-   "sold_proceeds": 95.4
   }
  ],
  "missed": [
@@ -3093,11 +3092,11 @@
  ],
  "missed_pnl": 111363.98,
  "last_fill": {
-  "ts": 1784979748,
+  "ts": 1784981592,
   "side": "BUY",
-  "price": 0.81,
-  "shares": 150.76,
-  "title": "LoL: Top Esports vs ThunderTalk Gaming (BO3) - LPL Group Asc",
+  "price": 0.72,
+  "shares": 169.56,
+  "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
   "outcome": "Top Esports"
  },
  "wallet_pnl": {
@@ -3155,11 +3154,11 @@
    "realized": 95.65,
    "n": 27,
    "wins": 0,
-   "open_cost": 252.03,
-   "open_n": 2,
+   "open_cost": 374.11,
+   "open_n": 3,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784979253
+   "last_ts": 1784981592
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -3192,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784979762
+ "updated": 1784981599
 }

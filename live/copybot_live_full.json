@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784979762,
+ "updated": 1784981599,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 593.76,
@@ -56,11 +56,11 @@
    "realized": 95.65,
    "n": 27,
    "wins": 0,
-   "open_cost": 252.03,
-   "open_n": 2,
+   "open_cost": 374.11,
+   "open_n": 3,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784979253
+   "last_ts": 1784981592
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -94,6 +94,26 @@
   }
  },
  "bets": [
+  {
+   "token": "39204188212807654862524084563129756709425912681035817068891674648908999999428",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Top Esports",
+   "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
+   "their_price": 0.72,
+   "my_price": 0.72,
+   "slippage_pct": 0.0,
+   "lag_s": 0.9,
+   "shares": 169.56,
+   "cost": 122.08,
+   "fee": 1.0255,
+   "opened": 1784981592,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784937600
+  },
   {
    "token": "107156085038944146438947590438365026964800691960988984359921209164919978522933",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
