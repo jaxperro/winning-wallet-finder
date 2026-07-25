@@ -2121,6 +2121,22 @@
  ],
  "missed": [
   {
+   "ts": 1783908976,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
+   "cond": "0xa164172b7cee74420cfce554c3a265b2553cb80e48b36e286e67f302b6574712",
+   "title": "Ethereal FDV above $500M one day after launch?",
+   "outcome": "No",
+   "price": 0.8163,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": -0.0,
+   "settled": 1785012975,
+   "name": "0xbadaf319",
+   "exit_price": 0.822
+  },
+  {
    "ts": 1785009018,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "10648768902294223005281776472791443674603816737553002058221071348281139541856",
@@ -3058,22 +3074,6 @@
    "settled": 1784666647,
    "name": "0xbadaf319",
    "exit_price": 0.9141
-  },
-  {
-   "ts": 1783991964,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "24842837270178563045080596501119383388959231063439941109817831657351105273923",
-   "cond": "0x7b2b0ac174514a7ec6351f91a01edd5064cf670c29f539cdfcc4d88bdb9937d0",
-   "title": "Will the next Claude Opus model be released by July 31, 2026?",
-   "outcome": "Yes",
-   "price": 0.79,
-   "stake": 1.0,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "sold",
-   "pnl": -0.38,
-   "settled": 1784660752,
-   "name": "BikesAreTheBikes",
-   "exit_price": 0.5
   }
  ],
  "missed_pnl": 1724.4,
@@ -3197,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785011535
+ "updated": 1785012981
 }
