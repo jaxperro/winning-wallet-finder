@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784957807,
+ "updated": 1784958470,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 575.95,
@@ -9,7 +9,7 @@
    "open_cost": 778.68,
    "open_n": 13,
    "miss_n": 69,
-   "miss_pnl": 97018.33,
+   "miss_pnl": 97026.75,
    "last_ts": 1784951520
   },
   "gkmgkldfmg": {
@@ -4773,10 +4773,11 @@
    "price": 0.74,
    "stake": 38.75,
    "reason": "thin book ($22 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
+   "status": "sold",
+   "pnl": 8.42,
+   "settled": 1784958469,
+   "name": "0xbadaf319",
+   "exit_price": 0.9091
   },
   {
    "ts": 1784943181,
