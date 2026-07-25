@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 122.12,
+ "stake": 122.09,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1138.86,
- "deployed": 1914.05,
+ "cash": 1016.05,
+ "deployed": 2036.16,
  "reserve": 0.0,
- "realized": 2052.88,
+ "realized": 2052.18,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 25,
- "fees_paid": 373.75,
+ "open_count": 26,
+ "fees_paid": 374.45,
  "fee_rate": 0.03,
  "lag": {
-  "n": 263,
-  "n24": 19,
-  "avg_s": 18.3,
+  "n": 264,
+  "n24": 20,
+  "avg_s": 17.7,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "107156085038944146438947590438365026964800691960988984359921209164919978522933",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Top Esports",
+   "title": "LoL: Top Esports vs ThunderTalk Gaming (BO3) - LPL Group Ascend",
+   "their_price": 0.81,
+   "my_price": 0.81,
+   "slippage_pct": 0.0,
+   "lag_s": 7.1,
+   "shares": 150.76,
+   "cost": 122.12,
+   "fee": 0.7,
+   "opened": 1784979741,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784937600
+  },
   {
    "token": "24538227191540742319290192357327280598675171199196475574105878696409564463051",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2110,27 +2130,6 @@
    "settled": 1784135344,
    "sold_shares": 150.6,
    "sold_proceeds": 95.4
-  },
-  {
-   "token": "54062655540339804038642939640911207386246833007847007872193563918612772592874",
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "name": "1kto1m",
-   "outcome": "Up",
-   "title": "SPY (SPY) Up or Down on July 15?",
-   "their_price": 0.4,
-   "my_price": 0.4,
-   "slippage_pct": 0.0,
-   "lag_s": 0.8,
-   "shares": 248.39,
-   "cost": 99.36,
-   "fee": 1.79,
-   "opened": 1784134155,
-   "status": "closed",
-   "exit_price": 0.6129,
-   "pnl": 51.1,
-   "settled": 1784135326,
-   "sold_shares": 248.39,
-   "sold_proceeds": 152.24
   }
  ],
  "missed": [
@@ -3094,12 +3093,12 @@
  ],
  "missed_pnl": 111363.98,
  "last_fill": {
-  "ts": 1784979253,
-  "side": "SELL",
-  "price": 0.96,
-  "shares": 75.07,
-  "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirva",
-  "outcome": "Invictus Gaming"
+  "ts": 1784979748,
+  "side": "BUY",
+  "price": 0.81,
+  "shares": 150.76,
+  "title": "LoL: Top Esports vs ThunderTalk Gaming (BO3) - LPL Group Asc",
+  "outcome": "Top Esports"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3176,11 +3175,11 @@
    "realized": 35.65,
    "n": 1,
    "wins": 1,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 122.12,
+   "open_n": 1,
    "miss_n": 0,
    "miss_pnl": 0.0,
-   "last_ts": 1784845083
+   "last_ts": 1784979741
   },
   "0xd96750bf": {
    "realized": 0.0,
@@ -3193,5 +3192,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784979253
+ "updated": 1784979762
 }
