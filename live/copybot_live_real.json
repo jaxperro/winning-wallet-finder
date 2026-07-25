@@ -5,19 +5,19 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
- "cash": 22.52,
- "deployed": 33.45,
+ "cash": 20.26,
+ "deployed": 35.68,
  "reserve": 0.0,
- "realized": -19.89,
+ "realized": -19.91,
  "adjustments": 9.44,
- "ledger_drift": 0.03,
- "open_count": 16,
- "fees_paid": 3.47,
+ "ledger_drift": 0.02,
+ "open_count": 17,
+ "fees_paid": 3.49,
  "fee_rate": 0.03,
  "lag": {
-  "n": 121,
-  "n24": 6,
-  "avg_s": 3.2,
+  "n": 122,
+  "n24": 7,
+  "avg_s": 3.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "24538227191540742319290192357327280598675171199196475574105878696409564463051",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Invictus Gaming",
+   "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
+   "their_price": 0.75,
+   "my_price": 0.75,
+   "slippage_pct": 0.0,
+   "lag_s": 6.3,
+   "shares": 2.98,
+   "cost": 2.23,
+   "fee": 0.02,
+   "opened": 1784978647,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784937600
+  },
   {
    "token": "31734979589136676783620439669736424886669000930046383039286241799551299417224",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2091,26 +2111,6 @@
    "settled": 1783853812,
    "sold_shares": 1.81,
    "sold_proceeds": 1.03
-  },
-  {
-   "token": "72657587692017665505599725656194205462581472368991422962137490050829927893951",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Spirit",
-   "title": "Dota 2: PARIVISION vs Team Spirit - Game 2 Winner",
-   "their_price": 0.42,
-   "my_price": 0.46,
-   "slippage_pct": 0.0952,
-   "shares": 2.22,
-   "cost": 1.02,
-   "fee": 0.02,
-   "opened": 1783852102,
-   "status": "closed",
-   "exit_price": 0.4127,
-   "pnl": -0.12,
-   "settled": 1783852716,
-   "sold_shares": 2.22,
-   "sold_proceeds": 0.92
   }
  ],
  "missed": [
@@ -3077,12 +3077,12 @@
  ],
  "missed_pnl": 1733.15,
  "last_fill": {
-  "ts": 1784974786,
+  "ts": 1784978653,
   "side": "BUY",
-  "price": 0.48,
-  "shares": 4.66,
-  "title": "LoL: Invictus Gaming vs Weibo Gaming - Game 2 Winner",
-  "outcome": "Weibo Gaming"
+  "price": 0.75,
+  "shares": 2.98,
+  "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirva",
+  "outcome": "Invictus Gaming"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3099,11 +3099,11 @@
    "realized": -13.89,
    "n": 15,
    "wins": 0,
-   "open_cost": 2.24,
-   "open_n": 1,
+   "open_cost": 4.47,
+   "open_n": 2,
    "miss_n": 13,
    "miss_pnl": 5.93,
-   "last_ts": 1784974783
+   "last_ts": 1784978647
   },
   "(incident)": {
    "realized": 5.86,
@@ -3196,5 +3196,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784978134
+ "updated": 1784978716
 }
