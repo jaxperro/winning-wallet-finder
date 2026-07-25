@@ -5,19 +5,19 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
- "cash": 18.44,
- "deployed": 37.96,
+ "cash": 16.19,
+ "deployed": 40.21,
  "reserve": 0.0,
- "realized": -19.46,
+ "realized": -19.47,
  "adjustments": 9.44,
  "ledger_drift": 0.03,
- "open_count": 18,
+ "open_count": 19,
  "fees_paid": 3.54,
  "fee_rate": 0.03,
  "lag": {
-  "n": 124,
-  "n24": 9,
-  "avg_s": 3.5,
+  "n": 125,
+  "n24": 10,
+  "avg_s": 3.3,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 752.73
  },
  "bets": [
+  {
+   "token": "81971570430631246702272897060581472251947225950350133003310719122599499176971",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the margin of victory at the end of the 2026 Tour De France be >7 minutes?",
+   "their_price": 0.9,
+   "my_price": 0.9,
+   "slippage_pct": 0.0,
+   "lag_s": 1.7,
+   "shares": 2.5,
+   "cost": 2.25,
+   "fee": 0.01,
+   "opened": 1784990098,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785024000
+  },
   {
    "token": "37396056216978472002674926504514491318505793793759544366379504943870958326106",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2095,24 +2115,6 @@
    "settled": 1783858902,
    "sold_shares": 4.0,
    "sold_proceeds": 0.98
-  },
-  {
-   "token": "98686933205526849260956926098370864586052275369032476650193546947433457446794",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "PARIVISION",
-   "title": "Dota 2: PARIVISION vs Team Spirit - Game 1 Winner",
-   "their_price": 0.6499,
-   "my_price": 0.65,
-   "slippage_pct": 0.0002,
-   "shares": 1.56,
-   "cost": 1.02,
-   "fee": 0.01,
-   "opened": 1783848697,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -1.03,
-   "settled": 1783858198
   }
  ],
  "missed": [
@@ -3080,23 +3082,23 @@
  ],
  "missed_pnl": 1730.49,
  "last_fill": {
-  "ts": 1784982974,
+  "ts": 1784990099,
   "side": "BUY",
-  "price": 0.6,
-  "shares": 3.76,
-  "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
-  "outcome": "ThunderTalk Gaming"
+  "price": 0.9,
+  "shares": 2.5,
+  "title": "Will the margin of victory at the end of the 2026 Tour De Fr",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 0.94,
    "n": 24,
    "wins": 6,
-   "open_cost": 13.33,
-   "open_n": 5,
+   "open_cost": 15.58,
+   "open_n": 6,
    "miss_n": 70,
    "miss_pnl": 1737.76,
-   "last_ts": 1784960798
+   "last_ts": 1784990098
   },
   "AIcAIc": {
    "realized": -13.41,
@@ -3199,5 +3201,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784984744
+ "updated": 1784990104
 }
