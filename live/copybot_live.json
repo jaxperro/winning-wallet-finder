@@ -2134,6 +2134,21 @@
  ],
  "missed": [
   {
+   "ts": 1784957802,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "84136887953338024754895453606615907387507802935603233306412924655539834091881",
+   "cond": "0xb9ba5a1aab7799113572597370d54d3493e7e51448a9f90942e690f36f8c3587",
+   "title": "Will the highest temperature in Hong Kong be 32\u00b0C on July 25?",
+   "outcome": "No",
+   "price": 0.74,
+   "stake": 38.75,
+   "reason": "thin book ($22 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784943181,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "101732096022791033420874767768998282176255049842341266029460503775596933298889",
@@ -3072,22 +3087,6 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1784563071,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "81614773617418907184361485498947350465036514500422317775261099705727224721455",
-   "cond": "0xe23cc6e026b34163169a4add977d8f42f80681ea876f94afb3fa0da09f490c29",
-   "title": "Will the price of Ethereum be between $1,800 and $1,900 on July 20?",
-   "outcome": "No",
-   "price": 0.733,
-   "stake": 65.27,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "won",
-   "pnl": 23.25,
-   "settled": 1784564739,
-   "name": "0xbadaf319",
-   "exit_checked": true
   }
  ],
  "missed_pnl": 96507.04,
@@ -3106,7 +3105,7 @@
    "wins": 16,
    "open_cost": 778.68,
    "open_n": 13,
-   "miss_n": 68,
+   "miss_n": 69,
    "miss_pnl": 97018.33,
    "last_ts": 1784951520
   },
@@ -3191,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784955789
+ "updated": 1784957807
 }
