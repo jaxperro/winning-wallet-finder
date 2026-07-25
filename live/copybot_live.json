@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 122.94,
+ "stake": 123.53,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1386.63,
- "deployed": 1686.85,
+ "cash": 1476.22,
+ "deployed": 1611.91,
  "reserve": 0.0,
- "realized": 2073.45,
+ "realized": 2088.1,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 24,
+ "ledger_drift": -0.03,
+ "open_count": 22,
  "fees_paid": 365.24,
  "fee_rate": 0.03,
  "lag": {
@@ -49,6 +49,48 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "30105308353288988924984162628182939641372197734077392129497102501234749347616",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will the Houthis successfully target shipping by July 31, 2026?",
+   "their_price": 0.8801,
+   "my_price": 0.8801,
+   "slippage_pct": 0.0,
+   "lag_s": 55.6,
+   "shares": 45.95,
+   "cost": 40.44,
+   "fee": 0.15,
+   "opened": 1784951520,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 0.69,
+   "settled": 1784960840,
+   "sold_shares": 45.56,
+   "sold_proceeds": 40.88,
+   "end_ts": 1785456000
+  },
+  {
+   "token": "33617782943606593457233658595461209550659667672324965420014965311339164331375",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will the Houthis successfully target shipping by July 25, 2026?",
+   "their_price": 0.83,
+   "my_price": 0.8364,
+   "slippage_pct": 0.0,
+   "lag_s": 6.3,
+   "shares": 89.2,
+   "cost": 74.6,
+   "fee": 0.37,
+   "opened": 1784944415,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 14.23,
+   "settled": 1784960799,
+   "end_ts": 1784937600
+  },
   {
    "token": "7969149423026217458943279473543428125030119665364187577928855853989845042205",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -88,48 +130,6 @@
    "pnl": -63.84,
    "settled": 1784953416,
    "end_ts": 1784851200
-  },
-  {
-   "token": "30105308353288988924984162628182939641372197734077392129497102501234749347616",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will the Houthis successfully target shipping by July 31, 2026?",
-   "their_price": 0.8801,
-   "my_price": 0.8801,
-   "slippage_pct": 0.0,
-   "lag_s": 55.6,
-   "shares": 45.95,
-   "cost": 40.44,
-   "fee": 0.15,
-   "opened": 1784951520,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 45.56,
-   "sold_proceeds": 40.88,
-   "end_ts": 1785456000
-  },
-  {
-   "token": "33617782943606593457233658595461209550659667672324965420014965311339164331375",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will the Houthis successfully target shipping by July 25, 2026?",
-   "their_price": 0.83,
-   "my_price": 0.8364,
-   "slippage_pct": 0.0,
-   "lag_s": 6.3,
-   "shares": 89.2,
-   "cost": 74.6,
-   "fee": 0.37,
-   "opened": 1784944415,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784937600
   },
   {
    "token": "5506960250160396168975872633831816223181816814113506849144916695207660278211",
@@ -3101,14 +3101,14 @@
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 578.84,
-   "n": 57,
-   "wins": 17,
-   "open_cost": 756.9,
-   "open_n": 12,
+   "realized": 593.76,
+   "n": 59,
+   "wins": 19,
+   "open_cost": 641.86,
+   "open_n": 10,
    "miss_n": 69,
    "miss_pnl": 97026.75,
-   "last_ts": 1784959721
+   "last_ts": 1784960840
   },
   "gkmgkldfmg": {
    "realized": 776.39,
@@ -3191,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1784960597
+ "updated": 1784960842
 }
