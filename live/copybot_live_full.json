@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1784978226,
+ "updated": 1784978752,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 593.76,
@@ -56,11 +56,11 @@
    "realized": 190.22,
    "n": 26,
    "wins": 0,
-   "open_cost": 252.03,
-   "open_n": 2,
+   "open_cost": 503.83,
+   "open_n": 3,
    "miss_n": 2,
    "miss_pnl": 60.16,
-   "last_ts": 1784978129
+   "last_ts": 1784978647
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -94,6 +94,26 @@
   }
  },
  "bets": [
+  {
+   "token": "24538227191540742319290192357327280598675171199196475574105878696409564463051",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Invictus Gaming",
+   "title": "LoL: Invictus Gaming vs Weibo Gaming (BO3) - LPL Group Nirvana",
+   "their_price": 0.75,
+   "my_price": 0.7500148933635172,
+   "slippage_pct": 0.0,
+   "lag_s": 62.6,
+   "shares": 335.72,
+   "cost": 251.79500000000002,
+   "fee": 1.8884,
+   "opened": 1784978647,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1784937600
+  },
   {
    "token": "111811929502290362982122721758046162774175984777524039918857735995004907450973",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
