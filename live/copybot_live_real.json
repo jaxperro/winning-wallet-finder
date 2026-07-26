@@ -2121,6 +2121,38 @@
  ],
  "missed": [
   {
+   "ts": 1785069395,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "3632761527830851126218403972215896322866498280718052589856316229871893863849",
+   "cond": "0x6c433c24fb3c1f54e74a3a016eaf7820f8b6d18486e04d0ba7ad515085cdecf0",
+   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 2 Winner",
+   "outcome": "Anyone's Legend",
+   "price": 0.5,
+   "stake": 1.0,
+   "reason": "no ask side on the book at copy time",
+   "status": "sold",
+   "pnl": 0.98,
+   "settled": 1785073777,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.999
+  },
+  {
+   "ts": 1785068199,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "70779665945520640638060284527025322569040195676030813411312036650498709891533",
+   "cond": "0x6c433c24fb3c1f54e74a3a016eaf7820f8b6d18486e04d0ba7ad515085cdecf0",
+   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 2 Winner",
+   "outcome": "Bilibili Gaming",
+   "price": 0.55,
+   "stake": 1.0,
+   "reason": "no ask side on the book at copy time",
+   "status": "sold",
+   "pnl": -0.83,
+   "settled": 1785073776,
+   "name": "AIcAIc",
+   "exit_price": 0.1012
+  },
+  {
    "ts": 1785072243,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "113359571003047396767826426301838860151873706137356935468347609290162612073776",
@@ -2152,21 +2184,6 @@
    "exit_price": 0.99
   },
   {
-   "ts": 1785069395,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "3632761527830851126218403972215896322866498280718052589856316229871893863849",
-   "cond": "0x6c433c24fb3c1f54e74a3a016eaf7820f8b6d18486e04d0ba7ad515085cdecf0",
-   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 2 Winner",
-   "outcome": "Anyone's Legend",
-   "price": 0.5,
-   "stake": 1.0,
-   "reason": "no ask side on the book at copy time",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
-  },
-  {
    "ts": 1785068257,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "38870680360291703970571093973856484238741940564373297411198274857317071595974",
@@ -2180,21 +2197,6 @@
    "pnl": null,
    "settled": null,
    "name": "gkmgkldfmg"
-  },
-  {
-   "ts": 1785068199,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "70779665945520640638060284527025322569040195676030813411312036650498709891533",
-   "cond": "0x6c433c24fb3c1f54e74a3a016eaf7820f8b6d18486e04d0ba7ad515085cdecf0",
-   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 2 Winner",
-   "outcome": "Bilibili Gaming",
-   "price": 0.55,
-   "stake": 1.0,
-   "reason": "no ask side on the book at copy time",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
   },
   {
    "ts": 1785065613,
@@ -3070,7 +3072,7 @@
    "exit_price": 0.5835
   }
  ],
- "missed_pnl": 1727.18,
+ "missed_pnl": 1727.33,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3097,7 +3099,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 21,
-   "miss_pnl": 4.89,
+   "miss_pnl": 4.06,
    "last_ts": 1784999576
   },
   "(incident)": {
@@ -3117,7 +3119,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 72,
-   "miss_pnl": 14.84,
+   "miss_pnl": 15.82,
    "last_ts": 1784655322
   },
   "1kto1m": {
@@ -3191,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785072243
+ "updated": 1785073778
 }
