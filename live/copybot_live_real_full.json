@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1785031656,
+ "updated": 1785051234,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": -1.26,
@@ -18,7 +18,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 14,
+   "miss_n": 15,
    "miss_pnl": 3.33,
    "last_ts": 1784999576
   },
@@ -58,8 +58,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 6,
-   "miss_pnl": -1.71,
+   "miss_n": 5,
+   "miss_pnl": -1.23,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -98,8 +98,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 14,
-   "miss_pnl": 1.05,
+   "miss_n": 15,
+   "miss_pnl": 0.57,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -2826,6 +2826,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785051229,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "9750443237218684936401351443214131681943461238354594128478044162692102765046",
+   "cond": "0xdcc7f905b2c9bdd332ebf271030ccc8376a7014f0c0a4cde0d00772cf0618596",
+   "title": "LoL: LNG Esports vs Ninjas in Pyjamas - Game 2 Winner",
+   "outcome": "Ninjas in Pyjamas",
+   "price": 0.56,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.997",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
   {
    "ts": 1783908976,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -5918,7 +5933,7 @@
    "status": "sold",
    "pnl": -0.48,
    "settled": 1783828831,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true,
    "exit_price": 0.3899
   },

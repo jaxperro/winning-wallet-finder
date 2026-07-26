@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785051229,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "9750443237218684936401351443214131681943461238354594128478044162692102765046",
+   "cond": "0xdcc7f905b2c9bdd332ebf271030ccc8376a7014f0c0a4cde0d00772cf0618596",
+   "title": "LoL: LNG Esports vs Ninjas in Pyjamas - Game 2 Winner",
+   "outcome": "Ninjas in Pyjamas",
+   "price": 0.56,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.997",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1783908976,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
@@ -3058,25 +3073,9 @@
    "settled": 1784670556,
    "name": "0xbadaf319",
    "exit_price": 0.9568
-  },
-  {
-   "ts": 1784666234,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "110127509798966540887051550451493333155192689272629249313511785868238474355262",
-   "cond": "0xfac54e7b2f02513939fb462481a830d293ee1f5a39b40b7a510ff0a90689c673",
-   "title": "Will Lyon win the 2026-27 Ligue 1 Championship?",
-   "outcome": "No",
-   "price": 0.952,
-   "stake": 2.47,
-   "reason": "price moved 0.78\u21920.95",
-   "status": "sold",
-   "pnl": -0.11,
-   "settled": 1784666647,
-   "name": "0xbadaf319",
-   "exit_price": 0.9141
   }
  ],
- "missed_pnl": 1724.4,
+ "missed_pnl": 1724.88,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3102,7 +3101,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 14,
+   "miss_n": 15,
    "miss_pnl": 3.33,
    "last_ts": 1784999576
   },
@@ -3142,8 +3141,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 6,
-   "miss_pnl": -1.71,
+   "miss_n": 5,
+   "miss_pnl": -1.23,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -3182,8 +3181,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 14,
-   "miss_pnl": 1.05,
+   "miss_n": 15,
+   "miss_pnl": 0.57,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3197,5 +3196,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785031656
+ "updated": 1785051234
 }
