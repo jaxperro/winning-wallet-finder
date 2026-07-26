@@ -2138,6 +2138,21 @@
  ],
  "missed": [
   {
+   "ts": 1785069395,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "3632761527830851126218403972215896322866498280718052589856316229871893863849",
+   "cond": "0x6c433c24fb3c1f54e74a3a016eaf7820f8b6d18486e04d0ba7ad515085cdecf0",
+   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 2 Winner",
+   "outcome": "Anyone's Legend",
+   "price": 0.5,
+   "stake": 123.16,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1785065732,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "106906185790690167849895063392041009115494273917041294569591008180490173521485",
@@ -3075,25 +3090,9 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.908
-  },
-  {
-   "ts": 1784597503,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "58462461700429243354293772965834869157205755175569336823865220371784986170846",
-   "cond": "0x5704802f1d0ebddb43aea7ab7616c5708487925e6bb2827d6f873d73ee7e0c47",
-   "title": "Farsi Island no longer under Iranian control by August 31?",
-   "outcome": "Yes",
-   "price": 0.01,
-   "stake": 100.0,
-   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
-   "status": "sold",
-   "pnl": 4822.03,
-   "settled": 1784649009,
-   "name": "0xbadaf319",
-   "exit_price": 0.5
   }
  ],
- "missed_pnl": 111163.63,
+ "missed_pnl": 111175.01,
  "last_fill": {
   "ts": 1785066994,
   "side": "SELL",
@@ -3119,7 +3118,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 52,
+   "miss_n": 53,
    "miss_pnl": 192.44,
    "last_ts": 1784655289
   },
@@ -3194,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785068445
+ "updated": 1785069397
 }
