@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1785083988,
+ "updated": 1785085579,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": -1.26,
@@ -38,7 +38,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 73,
+   "miss_n": 74,
    "miss_pnl": 15.12,
    "last_ts": 1784655322
   },
@@ -2826,6 +2826,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785085571,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "101153729343818198854460643430791650575892746410722572933584859093710282528569",
+   "cond": "0x08a53f69944788b6c5fc6907e98e71fac00952c2cacfc588edaa35496fb29527",
+   "title": "Dota 2: KW vs RE.Arise - Game 2 Winner",
+   "outcome": "KW",
+   "price": 0.5041,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
   {
    "ts": 1785080091,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
