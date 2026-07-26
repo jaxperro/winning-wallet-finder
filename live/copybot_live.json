@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 114.05,
+ "stake": 113.99,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1201.32,
- "deployed": 1649.86,
+ "cash": 1085.84,
+ "deployed": 1763.9,
  "reserve": 0.0,
- "realized": 1851.15,
+ "realized": 1849.71,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 22,
- "fees_paid": 378.19,
+ "open_count": 23,
+ "fees_paid": 379.62,
  "fee_rate": 0.03,
  "lag": {
-  "n": 267,
-  "n24": 10,
-  "avg_s": 19.7,
+  "n": 268,
+  "n24": 11,
+  "avg_s": 18.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "9750443237218684936401351443214131681943461238354594128478044162692102765046",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Ninjas in Pyjamas",
+   "title": "LoL: LNG Esports vs Ninjas in Pyjamas - Game 2 Winner",
+   "their_price": 0.58,
+   "my_price": 0.58,
+   "slippage_pct": 0.0,
+   "lag_s": 9.9,
+   "shares": 196.63,
+   "cost": 114.05,
+   "fee": 1.44,
+   "opened": 1785051228,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785024000
+  },
   {
    "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2109,27 +2129,6 @@
    "settled": 1784138085,
    "sold_shares": 150.13,
    "sold_proceeds": 139.61
-  },
-  {
-   "token": "107621326245822952563176301279688840792822768888579246433859003586959838504667",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "1win",
-   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
-   "their_price": 0.3778,
-   "my_price": 0.41,
-   "slippage_pct": 0.0853,
-   "lag_s": 7.0,
-   "shares": 248.99,
-   "cost": 102.09,
-   "fee": 1.81,
-   "opened": 1784136623,
-   "status": "closed",
-   "exit_price": 0.4226,
-   "pnl": 1.34,
-   "settled": 1784136688,
-   "sold_shares": 248.99,
-   "sold_proceeds": 105.23
   }
  ],
  "missed": [
@@ -3093,12 +3092,12 @@
  ],
  "missed_pnl": 111240.47,
  "last_fill": {
-  "ts": 1785011561,
-  "side": "SELL",
-  "price": 0.92,
-  "shares": 20.26,
-  "title": "Ethereal FDV above $500M one day after launch?",
-  "outcome": "No"
+  "ts": 1785051237,
+  "side": "BUY",
+  "price": 0.58,
+  "shares": 196.63,
+  "title": "LoL: LNG Esports vs Ninjas in Pyjamas - Game 2 Winner",
+  "outcome": "Ninjas in Pyjamas"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3155,11 +3154,11 @@
    "realized": -55.84,
    "n": 31,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 114.05,
+   "open_n": 1,
    "miss_n": 3,
    "miss_pnl": -63.35,
-   "last_ts": 1784999568
+   "last_ts": 1785051228
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -3192,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785037982
+ "updated": 1785051281
 }
