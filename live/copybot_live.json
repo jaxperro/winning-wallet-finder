@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 123.09,
+ "stake": 127.15,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1304.15,
- "deployed": 1773.04,
+ "cash": 1528.81,
+ "deployed": 1649.89,
  "reserve": 0.0,
- "realized": 2077.16,
+ "realized": 2178.67,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 24,
- "fees_paid": 384.82,
+ "ledger_drift": -0.02,
+ "open_count": 23,
+ "fees_paid": 385.16,
  "fee_rate": 0.03,
  "lag": {
   "n": 272,
@@ -63,11 +63,13 @@
    "cost": 123.16,
    "fee": 1.77,
    "opened": 1785072237,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785024000
+   "status": "closed",
+   "exit_price": 0.9486,
+   "pnl": 99.73,
+   "settled": 1785074437,
+   "end_ts": 1785024000,
+   "sold_shares": 236.84,
+   "sold_proceeds": 224.66
   },
   {
    "token": "89340901248495209887282475621636749099978593982836424634713915099029001879979",
@@ -3096,9 +3098,9 @@
  ],
  "missed_pnl": 111221.76,
  "last_fill": {
-  "ts": 1785072254,
-  "side": "BUY",
-  "price": 0.52,
+  "ts": 1785074431,
+  "side": "SELL",
+  "price": 0.95,
   "shares": 236.84,
   "title": "LoL: Anyone's Legend vs Bilibili Gaming (BO3) - LPL Group As",
   "outcome": "Bilibili Gaming"
@@ -3155,14 +3157,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 171.29,
-   "n": 34,
+   "realized": 271.02,
+   "n": 35,
    "wins": 0,
-   "open_cost": 123.16,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 6,
    "miss_pnl": -213.73,
-   "last_ts": 1785072237
+   "last_ts": 1785074437
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -3195,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785074332
+ "updated": 1785074437
 }
