@@ -1,16 +1,16 @@
 {
  "mode": "live",
- "updated": 1785103318,
+ "updated": 1785104762,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": -1.26,
-   "n": 25,
-   "wins": 6,
-   "open_cost": 15.58,
-   "open_n": 6,
+   "realized": -1.02,
+   "n": 26,
+   "wins": 7,
+   "open_cost": 13.33,
+   "open_n": 5,
    "miss_n": 83,
    "miss_pnl": 1731.6,
-   "last_ts": 1785011532
+   "last_ts": 1785104758
   },
   "AIcAIc": {
    "realized": -17.02,
@@ -115,6 +115,26 @@
  },
  "bets": [
   {
+   "token": "81971570430631246702272897060581472251947225950350133003310719122599499176971",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the margin of victory at the end of the 2026 Tour De France be >7 minutes?",
+   "their_price": 0.9,
+   "my_price": 0.9,
+   "slippage_pct": 0.0,
+   "lag_s": 1.7,
+   "shares": 2.5,
+   "cost": 2.25,
+   "fee": 0.0067,
+   "opened": 1784990098,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 0.24,
+   "settled": 1785104758,
+   "end_ts": 1785024000
+  },
+  {
    "token": "8520939197524385894693978702254214426383751437032693433763418213436851058226",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -215,26 +235,6 @@
    "pnl": -2.27,
    "settled": 1784991381,
    "end_ts": 1784937600
-  },
-  {
-   "token": "81971570430631246702272897060581472251947225950350133003310719122599499176971",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the margin of victory at the end of the 2026 Tour De France be >7 minutes?",
-   "their_price": 0.9,
-   "my_price": 0.9,
-   "slippage_pct": 0.0,
-   "lag_s": 1.7,
-   "shares": 2.5,
-   "cost": 2.25,
-   "fee": 0.0067,
-   "opened": 1784990098,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785024000
   },
   {
    "token": "24538227191540742319290192357327280598675171199196475574105878696409564463051",
