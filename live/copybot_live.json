@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 133.21,
+ "stake": 133.33,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3330.4,
- "cash": 1621.49,
- "deployed": 1708.78,
+ "hwm": 3333.33,
+ "cash": 1672.14,
+ "deployed": 1661.2,
  "reserve": 0.0,
- "realized": 2330.25,
+ "realized": 2333.3,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 24,
- "fees_paid": 388.17,
+ "fees_paid": 388.19,
  "fee_rate": 0.03,
  "lag": {
   "n": 275,
@@ -67,7 +67,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1785110400
+   "end_ts": 1785110400,
+   "sold_shares": 51.17,
+   "sold_proceeds": 50.64
   },
   {
    "token": "38653928625312634500254748884896709523765538580393484335273651251587581768973",
@@ -3097,10 +3099,10 @@
  ],
  "missed_pnl": 111125.24,
  "last_fill": {
-  "ts": 1785103318,
-  "side": "BUY",
-  "price": 0.93,
-  "shares": 63.33,
+  "ts": 1785103447,
+  "side": "SELL",
+  "price": 0.99,
+  "shares": 51.17,
   "title": "WTI Crude Oil (WTI) closes above $91 on July 27?",
   "outcome": "No"
  },
@@ -3196,5 +3198,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785103351
+ "updated": 1785103447
 }
