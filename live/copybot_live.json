@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 127.09,
+ "stake": 129.95,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1400.29,
- "deployed": 1777.03,
+ "cash": 1598.95,
+ "deployed": 1649.89,
  "reserve": 0.0,
- "realized": 2177.29,
+ "realized": 2248.81,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 24,
+ "open_count": 23,
  "fees_paid": 386.53,
  "fee_rate": 0.03,
  "lag": {
@@ -63,11 +63,13 @@
    "cost": 127.14,
    "fee": 1.37,
    "opened": 1785080090,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785024000
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 70.15,
+   "settled": 1785082936,
+   "end_ts": 1785024000,
+   "sold_shares": 198.66,
+   "sold_proceeds": 198.66
   },
   {
    "token": "113359571003047396767826426301838860151873706137356935468347609290162612073776",
@@ -3096,9 +3098,9 @@
  ],
  "missed_pnl": 111095.86,
  "last_fill": {
-  "ts": 1785080092,
-  "side": "BUY",
-  "price": 0.64,
+  "ts": 1785082936,
+  "side": "SELL",
+  "price": 1.0,
   "shares": 198.66,
   "title": "Dota 2: KW vs RE.Arise - Game 1 Winner",
   "outcome": "RE.Arise"
@@ -3115,14 +3117,14 @@
    "last_ts": 1785059815
   },
   "gkmgkldfmg": {
-   "realized": 776.39,
-   "n": 86,
+   "realized": 846.54,
+   "n": 87,
    "wins": 0,
-   "open_cost": 127.14,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 53,
    "miss_pnl": 188.74,
-   "last_ts": 1785080090
+   "last_ts": 1785082936
   },
   "1kto1m": {
    "realized": 223.38,
@@ -3195,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785082278
+ "updated": 1785082936
 }
