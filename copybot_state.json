@@ -1,7 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0x7009002f232e51ad173b8ba33b137edae90bdff84fed0c9895005df033296df2",
     "0x671526dc88202dbec18458136bb7a570ee617176e527779109a0eadf1136eafe",
     "0x901121cbf63803d4b09b1462bf5347a81c843e0704f520ccbf6ad9e2c85be627",
     "0x58d017fa2feb822f78ad8fb1585b7a5339497c3df7b28034dfb96f92969e8aa4",
@@ -5000,7 +4999,8 @@
     "0xd5b77c5a66fa0b2e0d75ca880af89b448aea59e8060a12b2045a421877e68f88",
     "0x044e889a5a0f8cb792bde0f477a876b29b04b2ca1c8c8b04488e3d9c8bd78a9b",
     "0xf816dcb1a87d5e1aa01d3b01719484680cafed22757c7bbfd1b5505a8c5dce79",
-    "0xd1b78621f9ddac4cb88f29bd93ad7cb61349ea7823db4c419ab6c64c6c732d1b"
+    "0xd1b78621f9ddac4cb88f29bd93ad7cb61349ea7823db4c419ab6c64c6c732d1b",
+    "0xadd413845a415ef2ba91b51c3e5b65e958541794862558ed892a46ab04e18736"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -7961,7 +7961,7 @@
       "21061879239524957707894360327571380285386263211675190125814371772307670161901": 0.0,
       "9813729238721622440295199072182483266069584287294397729904340441074427123910": 0.0,
       "38870680360291703970571093973856484238741940564373297411198274857317071595974": 883.184209,
-      "3632761527830851126218403972215896322866498280718052589856316229871893863849": 1200
+      "3632761527830851126218403972215896322866498280718052589856316229871893863849": 0.0
     },
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": {
       "113186575675900877797300695454355745875377602467971187276073118459901699932154": 767.49,
@@ -18830,8 +18830,8 @@
     }
   },
   "hwm": 3279.700634625008,
-  "feed_sig": "8739c6dd00963bc517732bcaeea2fb64",
-  "feed_pushed_at": 1785072230.833313,
+  "feed_sig": "bd0b250c8cd8834bcdd6a00201282979",
+  "feed_pushed_at": 1785074189.2597156,
   "missed": [
     {
       "ts": 1783604149,
@@ -22021,10 +22021,11 @@
       "price": 0.5,
       "stake": 123.16,
       "reason": "no ask side on the book at copy time",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "gkmgkldfmg"
+      "status": "sold",
+      "pnl": 121.06,
+      "settled": 1785074331,
+      "name": "gkmgkldfmg",
+      "exit_price": 0.999
     }
   ],
   "no_miss_toks": [
@@ -22139,7 +22140,7 @@
     "111238155193029214626119372717509509454868187612257655146390848111901958320265": 1,
     "54808825071623730922593344072571837691813951745707044026991588993889799442913": 1,
     "45276939554340428771698865022604030782253660716041002232668611227463504055173": 1,
-    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 527,
+    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 531,
     "17278012384173360502232131272354786231595802723343593413625940837844848366978": 1,
     "35613520187412099541224398067273773941235385627221930769717313222719613151332": 1,
     "30105308353288988924984162628182939641372197734077392129497102501234749347616": 1,
@@ -22151,9 +22152,9 @@
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1784882427,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1785071061,
-    "0xd7d36345c4aab150e59577e360696b01d01d698b": 1785069663,
-    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1785071901,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1785071826,
+    "0xd7d36345c4aab150e59577e360696b01d01d698b": 1785072703,
+    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1785072238,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1785061483,
     "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1785048738,
     "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1785060190
@@ -22176,66 +22177,6 @@
     "misses": 16
   },
   "ignored_exits": [
-    {
-      "ts": 1785001829.7,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.88,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1785002162.7,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.88,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1785002507.0,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.88,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1785002845.7,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.88,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
     {
       "ts": 1785003179.6,
       "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
@@ -25163,6 +25104,66 @@
     },
     {
       "ts": 1785072364.7,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1785073015.0,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1785073349.1,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1785073682.0,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1785074322.7,
       "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
       "their_size": 0,
       "their_prev": 0,
