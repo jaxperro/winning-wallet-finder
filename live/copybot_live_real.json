@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785059815,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "91266914832076152890178245367327746643886105568273548856344063538633019008684",
+   "cond": "0xfe395db7923c74606153cd29c07c46c2e4421f57983408965937dacf02aa062d",
+   "title": "Will the next Claude Opus debut at a score of at least 1520 by December 31, 2026?",
+   "outcome": "No",
+   "price": 0.813,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.994",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785059589,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "89340901248495209887282475621636749099978593982836424634713915099029001879979",
@@ -3055,26 +3070,9 @@
    "settled": 1784713275,
    "name": "AIcAIc",
    "exit_price": 0.85
-  },
-  {
-   "ts": 1784528216,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "80568398380615613281811262196000400273657215935776416622694841219164637714912",
-   "cond": "0xfcb2ba978ce2e5cc300f76adca25f8b74d9eede005f089498aa6dc0faaf7aaee",
-   "title": "Iran successfully targets shipping by July 31?",
-   "outcome": "Yes",
-   "price": 0.56,
-   "stake": 2.41,
-   "reason": "order rejected: exception: no orders found to match with FAK order. FAK orde",
-   "status": "sold",
-   "pnl": 0.8,
-   "settled": 1784700488,
-   "name": "0xbadaf319",
-   "exit_checked": true,
-   "exit_price": 0.7583
   }
  ],
- "missed_pnl": 1725.86,
+ "missed_pnl": 1725.02,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3090,7 +3088,7 @@
    "wins": 6,
    "open_cost": 15.58,
    "open_n": 6,
-   "miss_n": 79,
+   "miss_n": 80,
    "miss_pnl": 1731.6,
    "last_ts": 1785011532
   },
@@ -3195,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785059589
+ "updated": 1785059820
 }
