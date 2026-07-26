@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 123.16,
+ "stake": 123.09,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1429.08,
- "deployed": 1649.89,
+ "cash": 1304.15,
+ "deployed": 1773.04,
  "reserve": 0.0,
- "realized": 2078.94,
+ "realized": 2077.16,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 23,
- "fees_paid": 383.05,
+ "ledger_drift": -0.01,
+ "open_count": 24,
+ "fees_paid": 384.82,
  "fee_rate": 0.03,
  "lag": {
-  "n": 271,
-  "n24": 6,
-  "avg_s": 3.8,
+  "n": 272,
+  "n24": 7,
+  "avg_s": 5.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "113359571003047396767826426301838860151873706137356935468347609290162612073776",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Bilibili Gaming",
+   "title": "LoL: Anyone's Legend vs Bilibili Gaming (BO3) - LPL Group Ascend",
+   "their_price": 0.52,
+   "my_price": 0.52,
+   "slippage_pct": 0.0,
+   "lag_s": 17.7,
+   "shares": 236.84,
+   "cost": 123.16,
+   "fee": 1.77,
+   "opened": 1785072237,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785024000
+  },
   {
    "token": "89340901248495209887282475621636749099978593982836424634713915099029001879979",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2113,30 +2133,25 @@
    "settled": 1784206834,
    "sold_shares": 207.79,
    "sold_proceeds": 81.62
-  },
-  {
-   "token": "52277341117061676402936201599481724705704245418989224868304419115133008528281",
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "name": "1kto1m",
-   "outcome": "Down",
-   "title": "Gold (XAUUSD) Up or Down on July 16?",
-   "their_price": 0.77,
-   "my_price": 0.76,
-   "slippage_pct": -0.013,
-   "lag_s": 0.9,
-   "shares": 119.37,
-   "cost": 90.72,
-   "fee": 0.65,
-   "opened": 1784203549,
-   "status": "closed",
-   "exit_price": 0.9588,
-   "pnl": 23.08,
-   "settled": 1784206643,
-   "sold_shares": 119.37,
-   "sold_proceeds": 114.46
   }
  ],
  "missed": [
+  {
+   "ts": 1785068199,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "70779665945520640638060284527025322569040195676030813411312036650498709891533",
+   "cond": "0x6c433c24fb3c1f54e74a3a016eaf7820f8b6d18486e04d0ba7ad515085cdecf0",
+   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 2 Winner",
+   "outcome": "Bilibili Gaming",
+   "price": 0.55,
+   "stake": 123.16,
+   "reason": "no ask side on the book at copy time",
+   "status": "sold",
+   "pnl": -102.78,
+   "settled": 1785072373,
+   "name": "AIcAIc",
+   "exit_price": 0.1012
+  },
   {
    "ts": 1785067124,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2198,21 +2213,6 @@
    "pnl": null,
    "settled": null,
    "name": "gkmgkldfmg"
-  },
-  {
-   "ts": 1785068199,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "70779665945520640638060284527025322569040195676030813411312036650498709891533",
-   "cond": "0x6c433c24fb3c1f54e74a3a016eaf7820f8b6d18486e04d0ba7ad515085cdecf0",
-   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 2 Winner",
-   "outcome": "Bilibili Gaming",
-   "price": 0.55,
-   "stake": 123.16,
-   "reason": "no ask side on the book at copy time",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
   },
   {
    "ts": 1784983075,
@@ -3093,14 +3093,14 @@
    "exit_price": 0.908
   }
  ],
- "missed_pnl": 111203.48,
+ "missed_pnl": 111100.7,
  "last_fill": {
-  "ts": 1785066994,
-  "side": "SELL",
-  "price": 0.927,
-  "shares": 12.97,
-  "title": "Will the next Claude Opus debut at a score of at least 1520 ",
-  "outcome": "No"
+  "ts": 1785072254,
+  "side": "BUY",
+  "price": 0.52,
+  "shares": 236.84,
+  "title": "LoL: Anyone's Legend vs Bilibili Gaming (BO3) - LPL Group As",
+  "outcome": "Bilibili Gaming"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3157,11 +3157,11 @@
    "realized": 171.29,
    "n": 34,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 123.16,
+   "open_n": 1,
    "miss_n": 6,
-   "miss_pnl": -110.95,
-   "last_ts": 1785063175
+   "miss_pnl": -213.73,
+   "last_ts": 1785072237
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -3194,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785070417
+ "updated": 1785072374
 }
