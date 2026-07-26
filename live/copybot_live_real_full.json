@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1785068257,
+ "updated": 1785069396,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": -1.26,
@@ -38,7 +38,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 71,
+   "miss_n": 72,
    "miss_pnl": 14.84,
    "last_ts": 1784655322
   },
@@ -2826,6 +2826,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785069395,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "3632761527830851126218403972215896322866498280718052589856316229871893863849",
+   "cond": "0x6c433c24fb3c1f54e74a3a016eaf7820f8b6d18486e04d0ba7ad515085cdecf0",
+   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 2 Winner",
+   "outcome": "Anyone's Legend",
+   "price": 0.5,
+   "stake": 1.0,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
   {
    "ts": 1785068257,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",

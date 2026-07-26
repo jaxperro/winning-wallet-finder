@@ -16,8 +16,8 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 127,
-  "n24": 4,
-  "avg_s": 2.3,
+  "n24": 3,
+  "avg_s": 1.7,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785069395,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "3632761527830851126218403972215896322866498280718052589856316229871893863849",
+   "cond": "0x6c433c24fb3c1f54e74a3a016eaf7820f8b6d18486e04d0ba7ad515085cdecf0",
+   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 2 Winner",
+   "outcome": "Anyone's Legend",
+   "price": 0.5,
+   "stake": 1.0,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1785068257,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "38870680360291703970571093973856484238741940564373297411198274857317071595974",
@@ -3052,25 +3067,9 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784714439,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "26988481082400938234620905580029354496814882411644162756993608321400480311992",
-   "cond": "0xddfe7926b77c8c942a69d8f655c09bd3acffc469a7b19df5ea4895dc97c95649",
-   "title": "LoL: LGD Gaming vs EDward Gaming (BO3) - LPL Group Ascend",
-   "outcome": "EDward Gaming",
-   "price": 0.27,
-   "stake": 2.43,
-   "reason": "in-play hold expired unfilled (34s)",
-   "status": "lost",
-   "pnl": -2.48,
-   "settled": 1784732990,
-   "name": "AIcAIc",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 1725.96,
+ "missed_pnl": 1725.95,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3116,7 +3115,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 71,
+   "miss_n": 72,
    "miss_pnl": 14.84,
    "last_ts": 1784655322
   },
@@ -3191,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785068257
+ "updated": 1785069396
 }
