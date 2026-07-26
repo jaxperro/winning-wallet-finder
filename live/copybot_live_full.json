@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785088263,
+ "updated": 1785097449,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 525.84,
@@ -16,11 +16,11 @@
    "realized": 846.54,
    "n": 87,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 129.95,
+   "open_n": 1,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785082936
+   "last_ts": 1785097442
   },
   "1kto1m": {
    "realized": 223.38,
@@ -94,6 +94,26 @@
   }
  },
  "bets": [
+  {
+   "token": "38653928625312634500254748884896709523765538580393484335273651251587581768973",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Liquid",
+   "title": "LoL: Team Liquid vs Cloud9 - Game 1 Winner",
+   "their_price": 0.61,
+   "my_price": 0.61,
+   "slippage_pct": 0.0,
+   "lag_s": 1.1,
+   "shares": 213.03,
+   "cost": 129.95,
+   "fee": 1.5204,
+   "opened": 1785097442,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785110400
+  },
   {
    "token": "98557002898950649707610758478512958595262755016561795127783281070673537274115",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
