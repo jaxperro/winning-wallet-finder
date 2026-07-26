@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 123.13,
+ "stake": 123.16,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1414.56,
- "deployed": 1663.7,
+ "cash": 1429.08,
+ "deployed": 1649.89,
  "reserve": 0.0,
- "realized": 2078.23,
+ "realized": 2078.94,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 23,
- "fees_paid": 383.01,
+ "fees_paid": 383.05,
  "fee_rate": 0.03,
  "lag": {
   "n": 271,
@@ -89,7 +89,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1798675200
+   "end_ts": 1798675200,
+   "sold_shares": 15.7,
+   "sold_proceeds": 14.52
   },
   {
    "token": "9813729238721622440295199072182483266069584287294397729904340441074427123910",
@@ -3094,12 +3096,12 @@
  ],
  "missed_pnl": 111240.47,
  "last_fill": {
-  "ts": 1785063175,
+  "ts": 1785066994,
   "side": "SELL",
-  "price": 1.0,
-  "shares": 224.48,
-  "title": "LoL: ThunderTalk Gaming vs EDward Gaming - Game 2 Winner",
-  "outcome": "ThunderTalk Gaming"
+  "price": 0.927,
+  "shares": 12.97,
+  "title": "Will the next Claude Opus debut at a score of at least 1520 ",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3193,5 +3195,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785066206
+ "updated": 1785066995
 }
