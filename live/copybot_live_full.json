@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785097449,
+ "updated": 1785100004,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 525.84,
@@ -13,14 +13,14 @@
    "last_ts": 1785059815
   },
   "gkmgkldfmg": {
-   "realized": 846.54,
-   "n": 87,
+   "realized": 928.1,
+   "n": 88,
    "wins": 0,
-   "open_cost": 129.95,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785097442
+   "last_ts": 1785100004
   },
   "1kto1m": {
    "realized": 223.38,
@@ -108,11 +108,13 @@
    "cost": 129.95,
    "fee": 1.5204,
    "opened": 1785097442,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785110400
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 81.56,
+   "settled": 1785100004,
+   "end_ts": 1785110400,
+   "sold_shares": 213.02945421711925,
+   "sold_proceeds": 213.02945421711925
   },
   {
    "token": "98557002898950649707610758478512958595262755016561795127783281070673537274115",

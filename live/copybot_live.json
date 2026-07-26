@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 129.89,
+ "stake": 133.22,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3279.7,
- "cash": 1467.49,
- "deployed": 1779.83,
+ "hwm": 3330.4,
+ "cash": 1680.52,
+ "deployed": 1649.89,
  "reserve": 0.0,
- "realized": 2247.29,
+ "realized": 2330.37,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 24,
+ "open_count": 23,
  "fees_paid": 388.05,
  "fee_rate": 0.03,
  "lag": {
@@ -63,11 +63,13 @@
    "cost": 129.95,
    "fee": 1.52,
    "opened": 1785097442,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785110400
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 81.56,
+   "settled": 1785100004,
+   "end_ts": 1785110400,
+   "sold_shares": 213.03,
+   "sold_proceeds": 213.03
   },
   {
    "token": "98557002898950649707610758478512958595262755016561795127783281070673537274115",
@@ -3097,9 +3099,9 @@
  ],
  "missed_pnl": 111133.75,
  "last_fill": {
-  "ts": 1785097443,
-  "side": "BUY",
-  "price": 0.61,
+  "ts": 1785099998,
+  "side": "SELL",
+  "price": 1.0,
   "shares": 213.03,
   "title": "LoL: Team Liquid vs Cloud9 - Game 1 Winner",
   "outcome": "Team Liquid"
@@ -3116,14 +3118,14 @@
    "last_ts": 1785059815
   },
   "gkmgkldfmg": {
-   "realized": 846.54,
-   "n": 87,
+   "realized": 928.1,
+   "n": 88,
    "wins": 0,
-   "open_cost": 129.95,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785097442
+   "last_ts": 1785100004
   },
   "1kto1m": {
    "realized": 223.38,
@@ -3196,5 +3198,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785097449
+ "updated": 1785100004
 }
