@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785057797,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "9813729238721622440295199072182483266069584287294397729904340441074427123910",
+   "cond": "0x429f11968ea12d2f528bff9ce14d601fe160aa8e84ad78e6b33ce894bfe7ca29",
+   "title": "LoL: ThunderTalk Gaming vs EDward Gaming - Game 1 Winner",
+   "outcome": "ThunderTalk Gaming",
+   "price": 0.62,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.996",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1785051229,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "9750443237218684936401351443214131681943461238354594128478044162692102765046",
@@ -3058,25 +3073,9 @@
    "settled": 1784679280,
    "name": "Kruto2027",
    "exit_checked": true
-  },
-  {
-   "ts": 1784663346,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "31114539293109191150949144475239465589903245761316798745025708973207317205400",
-   "cond": "0xe0befb0fb9fdcb3b7c46521845d0ce3248eb65352522f67cc3113894b992f3b3",
-   "title": "Over $30M committed to the RipCars public sale?",
-   "outcome": "No",
-   "price": 0.81,
-   "stake": 2.47,
-   "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
-   "status": "sold",
-   "pnl": 0.43,
-   "settled": 1784670556,
-   "name": "0xbadaf319",
-   "exit_price": 0.9568
   }
  ],
- "missed_pnl": 1725.56,
+ "missed_pnl": 1725.55,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3102,7 +3101,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 15,
+   "miss_n": 16,
    "miss_pnl": 4.01,
    "last_ts": 1784999576
   },
@@ -3197,5 +3196,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785056101
+ "updated": 1785057802
 }
