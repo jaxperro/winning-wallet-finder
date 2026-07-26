@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 116.91,
+ "stake": 116.86,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1272.88,
- "deployed": 1649.86,
+ "cash": 1154.78,
+ "deployed": 1766.76,
  "reserve": 0.0,
- "realized": 1922.71,
+ "realized": 1921.52,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 22,
- "fees_paid": 379.89,
+ "ledger_drift": -0.01,
+ "open_count": 23,
+ "fees_paid": 381.08,
  "fee_rate": 0.03,
  "lag": {
-  "n": 268,
-  "n24": 9,
-  "avg_s": 21.8,
+  "n": 269,
+  "n24": 10,
+  "avg_s": 19.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "9813729238721622440295199072182483266069584287294397729904340441074427123910",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "ThunderTalk Gaming",
+   "title": "LoL: ThunderTalk Gaming vs EDward Gaming - Game 1 Winner",
+   "their_price": 0.66,
+   "my_price": 0.66,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 177.13,
+   "cost": 116.91,
+   "fee": 1.19,
+   "opened": 1785057797,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785024000
+  },
   {
    "token": "9750443237218684936401351443214131681943461238354594128478044162692102765046",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2110,27 +2130,6 @@
    "settled": 1784166177,
    "sold_shares": 178.63,
    "sold_proceeds": 104.09
-  },
-  {
-   "token": "75636274443607445614938470591337628868615181893893587977168160999705149850480",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Vici Gaming",
-   "title": "Dota 2: 1win vs Vici Gaming (BO3) - Esports World Cup Survival",
-   "their_price": 0.67,
-   "my_price": 0.68,
-   "slippage_pct": 0.0149,
-   "lag_s": 0.9,
-   "shares": 150.13,
-   "cost": 102.09,
-   "fee": 0.98,
-   "opened": 1784136872,
-   "status": "closed",
-   "exit_price": 0.93,
-   "pnl": 36.54,
-   "settled": 1784138085,
-   "sold_shares": 150.13,
-   "sold_proceeds": 139.61
   }
  ],
  "missed": [
@@ -3094,12 +3093,12 @@
  ],
  "missed_pnl": 111240.47,
  "last_fill": {
-  "ts": 1785054579,
-  "side": "SELL",
-  "price": 0.96,
-  "shares": 100.05,
-  "title": "LoL: LNG Esports vs Ninjas in Pyjamas - Game 2 Winner",
-  "outcome": "Ninjas in Pyjamas"
+  "ts": 1785057797,
+  "side": "BUY",
+  "price": 0.66,
+  "shares": 177.13,
+  "title": "LoL: ThunderTalk Gaming vs EDward Gaming - Game 1 Winner",
+  "outcome": "ThunderTalk Gaming"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3156,11 +3155,11 @@
    "realized": 15.72,
    "n": 32,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 116.91,
+   "open_n": 1,
    "miss_n": 3,
    "miss_pnl": -63.35,
-   "last_ts": 1785054585
+   "last_ts": 1785057797
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -3193,5 +3192,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785056529
+ "updated": 1785057798
 }
