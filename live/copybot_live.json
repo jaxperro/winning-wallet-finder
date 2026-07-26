@@ -2138,6 +2138,21 @@
  ],
  "missed": [
   {
+   "ts": 1785068256,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "38870680360291703970571093973856484238741940564373297411198274857317071595974",
+   "cond": "0x849fbccbb748690f5e8775dbd4c6806714bcb87e161de4c7c0877f462d4e835b",
+   "title": "LoL: CTBC Flying Oyster vs Deep Cross Gaming - Game 2 Winner",
+   "outcome": "Deep Cross Gaming",
+   "price": 0.5661,
+   "stake": 123.16,
+   "reason": "no ask side on the book at copy time",
+   "status": "lost",
+   "pnl": -124.76,
+   "settled": 1785080352,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1785078307,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "54620342958738283704802452250340372295186538019357418907215676271029676157053",
@@ -2215,21 +2230,6 @@
    "settled": 1785068444,
    "name": "AIcAIc",
    "exit_price": 0.18
-  },
-  {
-   "ts": 1785068256,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "38870680360291703970571093973856484238741940564373297411198274857317071595974",
-   "cond": "0x849fbccbb748690f5e8775dbd4c6806714bcb87e161de4c7c0877f462d4e835b",
-   "title": "LoL: CTBC Flying Oyster vs Deep Cross Gaming - Game 2 Winner",
-   "outcome": "Deep Cross Gaming",
-   "price": 0.5661,
-   "stake": 123.16,
-   "reason": "no ask side on the book at copy time",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1784983075,
@@ -3093,7 +3093,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 111220.62,
+ "missed_pnl": 111095.86,
  "last_fill": {
   "ts": 1785080092,
   "side": "BUY",
@@ -3120,7 +3120,7 @@
    "open_cost": 127.14,
    "open_n": 1,
    "miss_n": 53,
-   "miss_pnl": 313.5,
+   "miss_pnl": 188.74,
    "last_ts": 1785080090
   },
   "1kto1m": {
@@ -3194,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785080145
+ "updated": 1785080352
 }
