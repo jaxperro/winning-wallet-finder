@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1785057802,
+ "updated": 1785059589,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": -1.26,
@@ -18,7 +18,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 16,
+   "miss_n": 17,
    "miss_pnl": 4.01,
    "last_ts": 1784999576
   },
@@ -2826,6 +2826,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785059589,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "89340901248495209887282475621636749099978593982836424634713915099029001879979",
+   "cond": "0x074950031f61621075f900096a3a667a0dfe233d175e841b9f9b483cca3328b7",
+   "title": "LoL: ThunderTalk Gaming vs EDward Gaming - Game 2 Winner",
+   "outcome": "ThunderTalk Gaming",
+   "price": 0.52,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.996",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
   {
    "ts": 1785057797,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",

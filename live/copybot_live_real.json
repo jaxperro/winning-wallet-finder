@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785059589,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "89340901248495209887282475621636749099978593982836424634713915099029001879979",
+   "cond": "0x074950031f61621075f900096a3a667a0dfe233d175e841b9f9b483cca3328b7",
+   "title": "LoL: ThunderTalk Gaming vs EDward Gaming - Game 2 Winner",
+   "outcome": "ThunderTalk Gaming",
+   "price": 0.52,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.996",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1785057797,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "9813729238721622440295199072182483266069584287294397729904340441074427123910",
@@ -3057,25 +3072,9 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.7583
-  },
-  {
-   "ts": 1784675472,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "56895600526342043824967043463285146349388358932785516761025080000931732654952",
-   "cond": "0x8047fd260f10a7eaa664b4c6d4aa57b25c63917ceaca7377ffb7d06caacea4fa",
-   "title": "Michelsen vs. Gea: Set 1 Games O/U 10.5",
-   "outcome": "Under",
-   "price": 0.5,
-   "stake": 2.47,
-   "reason": "in-play hold expired unfilled (45s)",
-   "status": "refund",
-   "pnl": -0.04,
-   "settled": 1784679280,
-   "name": "Kruto2027",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 1725.55,
+ "missed_pnl": 1725.86,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3101,7 +3100,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 16,
+   "miss_n": 17,
    "miss_pnl": 4.01,
    "last_ts": 1784999576
   },
@@ -3196,5 +3195,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785057802
+ "updated": 1785059589
 }
