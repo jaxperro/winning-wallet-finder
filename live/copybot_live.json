@@ -2138,6 +2138,36 @@
  ],
  "missed": [
   {
+   "ts": 1785068256,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "38870680360291703970571093973856484238741940564373297411198274857317071595974",
+   "cond": "0x849fbccbb748690f5e8775dbd4c6806714bcb87e161de4c7c0877f462d4e835b",
+   "title": "LoL: CTBC Flying Oyster vs Deep Cross Gaming - Game 2 Winner",
+   "outcome": "Deep Cross Gaming",
+   "price": 0.5661,
+   "stake": 123.16,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
+   "ts": 1785068199,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "70779665945520640638060284527025322569040195676030813411312036650498709891533",
+   "cond": "0x6c433c24fb3c1f54e74a3a016eaf7820f8b6d18486e04d0ba7ad515085cdecf0",
+   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 2 Winner",
+   "outcome": "Bilibili Gaming",
+   "price": 0.55,
+   "stake": 123.16,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1785067124,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "51653736840206909477127809769417338510771268257928893059964060309325560583787",
@@ -3060,41 +3090,9 @@
    "settled": 1784649009,
    "name": "0xbadaf319",
    "exit_price": 0.5
-  },
-  {
-   "ts": 1784626586,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "54923619943837902531413944505673826869865789371722858311579457498438152585454",
-   "cond": "0x3f13595c81d4894015e99014f2562cc6edadfa1156b8849e9ebdf379149cb878",
-   "title": "Will Aurelien Tchouameni join Bayern Munich?",
-   "outcome": "No",
-   "price": 0.875,
-   "stake": 27.93,
-   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
-   "status": "sold",
-   "pnl": 1.95,
-   "settled": 1784649009,
-   "name": "0xbadaf319",
-   "exit_price": 0.9412
-  },
-  {
-   "ts": 1784547091,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "109075623115035500221385426519923794314139178452765641614675281069970878340106",
-   "cond": "0xbcd6e99663f8b2056c91b7a766e084d20cde5bcfd54a97432596633921c02443",
-   "title": "US announces halt in Iran offensive operations by July 21?",
-   "outcome": "No",
-   "price": 0.59,
-   "stake": 43.58,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "sold",
-   "pnl": 8.99,
-   "settled": 1784649008,
-   "name": "0xbadaf319",
-   "exit_price": 0.725
   }
  ],
- "missed_pnl": 111218.86,
+ "missed_pnl": 111239.7,
  "last_fill": {
   "ts": 1785066994,
   "side": "SELL",
@@ -3120,7 +3118,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 51,
+   "miss_n": 52,
    "miss_pnl": 192.44,
    "last_ts": 1784655289
   },
@@ -3160,7 +3158,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 5,
+   "miss_n": 6,
    "miss_pnl": -63.35,
    "last_ts": 1785063175
   },
@@ -3195,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785068046
+ "updated": 1785068257
 }

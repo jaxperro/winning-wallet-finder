@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785068046,
+ "updated": 1785068257,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 525.84,
@@ -18,7 +18,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 51,
+   "miss_n": 52,
    "miss_pnl": 192.44,
    "last_ts": 1784655289
   },
@@ -58,7 +58,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 5,
+   "miss_n": 6,
    "miss_pnl": -63.35,
    "last_ts": 1785063175
   },
@@ -5041,6 +5041,36 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785068256,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "38870680360291703970571093973856484238741940564373297411198274857317071595974",
+   "cond": "0x849fbccbb748690f5e8775dbd4c6806714bcb87e161de4c7c0877f462d4e835b",
+   "title": "LoL: CTBC Flying Oyster vs Deep Cross Gaming - Game 2 Winner",
+   "outcome": "Deep Cross Gaming",
+   "price": 0.5661,
+   "stake": 123.16,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
+   "ts": 1785068199,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "70779665945520640638060284527025322569040195676030813411312036650498709891533",
+   "cond": "0x6c433c24fb3c1f54e74a3a016eaf7820f8b6d18486e04d0ba7ad515085cdecf0",
+   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 2 Winner",
+   "outcome": "Bilibili Gaming",
+   "price": 0.55,
+   "stake": 123.16,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
   {
    "ts": 1785067124,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
