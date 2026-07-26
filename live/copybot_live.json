@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 114.06,
+ "stake": 115.39,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1090.08,
- "deployed": 1761.3,
+ "cash": 1176.95,
+ "deployed": 1707.89,
  "reserve": 0.0,
- "realized": 1851.35,
+ "realized": 1884.81,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 23,
- "fees_paid": 379.63,
+ "fees_paid": 379.78,
  "fee_rate": 0.03,
  "lag": {
   "n": 268,
@@ -68,8 +68,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785024000,
-   "sold_shares": 4.49,
-   "sold_proceeds": 4.25
+   "sold_shares": 96.57,
+   "sold_proceeds": 91.11
   },
   {
    "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
@@ -3094,10 +3094,10 @@
  ],
  "missed_pnl": 111240.47,
  "last_fill": {
-  "ts": 1785053694,
+  "ts": 1785053977,
   "side": "SELL",
-  "price": 0.94,
-  "shares": 0.79,
+  "price": 0.95,
+  "shares": 3.98,
   "title": "LoL: LNG Esports vs Ninjas in Pyjamas - Game 2 Winner",
   "outcome": "Ninjas in Pyjamas"
  },
@@ -3193,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785053694
+ "updated": 1785053983
 }
