@@ -2121,6 +2121,22 @@
  ],
  "missed": [
   {
+   "ts": 1785067055,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "51653736840206909477127809769417338510771268257928893059964060309325560583787",
+   "cond": "0xeb31fb61257a0d23cae612629fecf7f454153f6e3cd2712e8415177b214d4601",
+   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 1 Winner",
+   "outcome": "Bilibili Gaming",
+   "price": 0.81,
+   "stake": 1.0,
+   "reason": "order rejected: exception: order 0xb2bab9797849292afd7ad285ab4a23673463c0e2b",
+   "status": "sold",
+   "pnl": 0.22,
+   "settled": 1785069874,
+   "name": "AIcAIc",
+   "exit_price": 0.99
+  },
+  {
    "ts": 1785069395,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "3632761527830851126218403972215896322866498280718052589856316229871893863849",
@@ -2180,21 +2196,6 @@
    "settled": 1785067926,
    "name": "AIcAIc",
    "exit_price": 0.18
-  },
-  {
-   "ts": 1785067055,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "51653736840206909477127809769417338510771268257928893059964060309325560583787",
-   "cond": "0xeb31fb61257a0d23cae612629fecf7f454153f6e3cd2712e8415177b214d4601",
-   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 1 Winner",
-   "outcome": "Bilibili Gaming",
-   "price": 0.81,
-   "stake": 1.0,
-   "reason": "order rejected: exception: order 0xb2bab9797849292afd7ad285ab4a23673463c0e2b",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
   },
   {
    "ts": 1785059589,
@@ -3069,7 +3070,7 @@
    "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 1725.95,
+ "missed_pnl": 1726.17,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3096,7 +3097,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 20,
-   "miss_pnl": 4.67,
+   "miss_pnl": 4.89,
    "last_ts": 1784999576
   },
   "(incident)": {
@@ -3190,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785069396
+ "updated": 1785069875
 }
