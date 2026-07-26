@@ -2140,6 +2140,21 @@
  ],
  "missed": [
   {
+   "ts": 1785086253,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "101153729343818198854460643430791650575892746410722572933584859093710282528569",
+   "cond": "0x08a53f69944788b6c5fc6907e98e71fac00952c2cacfc588edaa35496fb29527",
+   "title": "Dota 2: KW vs RE.Arise - Game 2 Winner",
+   "outcome": "KW",
+   "price": 0.5041,
+   "stake": 129.95,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1785068256,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "38870680360291703970571093973856484238741940564373297411198274857317071595974",
@@ -3078,25 +3093,9 @@
    "settled": 1784657990,
    "name": "0xbadaf319",
    "exit_price": 0.69
-  },
-  {
-   "ts": 1784128795,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "36572361863292743525172722296256449344593421343195350786366455281513675169221",
-   "cond": "0xd2a97dd956e70c9c4abda30d2864588ece0c7213013eb3fa664b88509ff829b1",
-   "title": "Will \"The Odyssey\" Opening Weekend Box Office be greater than 115m?",
-   "outcome": "No",
-   "price": 0.44,
-   "stake": 99.83,
-   "reason": "book unreliable (spread 0.09 > 0.08)",
-   "status": "lost",
-   "pnl": -101.51,
-   "settled": 1784649073,
-   "name": "BikesAreTheBikes",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 111095.86,
+ "missed_pnl": 111100.75,
  "last_fill": {
   "ts": 1785082936,
   "side": "SELL",
@@ -3122,7 +3121,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 53,
+   "miss_n": 54,
    "miss_pnl": 188.74,
    "last_ts": 1785082936
   },
@@ -3197,5 +3196,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785083988
+ "updated": 1785086259
 }
