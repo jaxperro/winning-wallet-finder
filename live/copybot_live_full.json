@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785069397,
+ "updated": 1785070417,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 525.84,
@@ -59,7 +59,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 6,
-   "miss_pnl": -139.42,
+   "miss_pnl": -110.95,
    "last_ts": 1785063175
   },
   "BikesAreTheBikes": {
@@ -5042,6 +5042,22 @@
  ],
  "missed": [
   {
+   "ts": 1785067124,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "51653736840206909477127809769417338510771268257928893059964060309325560583787",
+   "cond": "0xeb31fb61257a0d23cae612629fecf7f454153f6e3cd2712e8415177b214d4601",
+   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 1 Winner",
+   "outcome": "Bilibili Gaming",
+   "price": 0.8,
+   "stake": 123.16,
+   "reason": "maker bid unfilled (69s)",
+   "status": "sold",
+   "pnl": 28.47,
+   "settled": 1785070416,
+   "name": "AIcAIc",
+   "exit_price": 0.99
+  },
+  {
    "ts": 1785069395,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "3632761527830851126218403972215896322866498280718052589856316229871893863849",
@@ -5097,21 +5113,6 @@
    "price": 0.55,
    "stake": 123.16,
    "reason": "no ask side on the book at copy time",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
-  },
-  {
-   "ts": 1785067124,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "51653736840206909477127809769417338510771268257928893059964060309325560583787",
-   "cond": "0xeb31fb61257a0d23cae612629fecf7f454153f6e3cd2712e8415177b214d4601",
-   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 1 Winner",
-   "outcome": "Bilibili Gaming",
-   "price": 0.8,
-   "stake": 123.16,
-   "reason": "maker bid unfilled (69s)",
    "status": "open",
    "pnl": null,
    "settled": null,
