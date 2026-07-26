@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785097442,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "38653928625312634500254748884896709523765538580393484335273651251587581768973",
+   "cond": "0x669ccff5b823276fa737b2588aced3d00ddb278c291fbff05bf4aa3ca012fb3f",
+   "title": "LoL: Team Liquid vs Cloud9 - Game 1 Winner",
+   "outcome": "Team Liquid",
+   "price": 0.61,
+   "stake": 1.0,
+   "reason": "order rejected: exception: order 0xfd2edcb47353811b58b12a59359af74fe0b3e0de2",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1785085571,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "101153729343818198854460643430791650575892746410722572933584859093710282528569",
@@ -3053,25 +3068,9 @@
    "settled": 1784756271,
    "name": "Kruto2027",
    "exit_price": 0.5
-  },
-  {
-   "ts": 1784275921,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "15456330829547795037828293282236765253933989530349029925038235552652310014831",
-   "cond": "0x240c2424f9e2de98676f8a2dce520b2dfee499b68194ac5db0537be851f56989",
-   "title": "Will Revolut's valuation hit (HIGH) $90B by December 31?",
-   "outcome": "Yes",
-   "price": 0.28,
-   "stake": 2.45,
-   "reason": "book unreliable (spread 0.64 > 0.08)",
-   "status": "sold",
-   "pnl": 6.25,
-   "settled": 1784756267,
-   "name": "0xbadaf319",
-   "exit_price": 1.0
   }
  ],
- "missed_pnl": 1726.13,
+ "missed_pnl": 1726.08,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3117,7 +3116,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 74,
+   "miss_n": 75,
    "miss_pnl": 15.37,
    "last_ts": 1784655322
   },
@@ -3192,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785087554
+ "updated": 1785097448
 }

@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1785087554,
+ "updated": 1785097448,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": -1.26,
@@ -38,7 +38,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 74,
+   "miss_n": 75,
    "miss_pnl": 15.37,
    "last_ts": 1784655322
   },
@@ -2826,6 +2826,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785097442,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "38653928625312634500254748884896709523765538580393484335273651251587581768973",
+   "cond": "0x669ccff5b823276fa737b2588aced3d00ddb278c291fbff05bf4aa3ca012fb3f",
+   "title": "LoL: Team Liquid vs Cloud9 - Game 1 Winner",
+   "outcome": "Team Liquid",
+   "price": 0.61,
+   "stake": 1.0,
+   "reason": "order rejected: exception: order 0xfd2edcb47353811b58b12a59359af74fe0b3e0de2",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
   {
    "ts": 1785085571,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
