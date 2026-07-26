@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785072243,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "113359571003047396767826426301838860151873706137356935468347609290162612073776",
+   "cond": "0x0b1cbc36ef6e5b8616ab4b64e0fc050343a2e8322a1d3002ef68ee61fdaeeef5",
+   "title": "LoL: Anyone's Legend vs Bilibili Gaming (BO3) - LPL Group Ascend",
+   "outcome": "Bilibili Gaming",
+   "price": 0.51,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.998",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1785067055,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "51653736840206909477127809769417338510771268257928893059964060309325560583787",
@@ -3053,24 +3068,9 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.5835
-  },
-  {
-   "ts": 1784747978,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "68080778697884921540335032370654180051222428162809511382222697646266365598353",
-   "cond": "0xf473c2e521258a81d44f16fd65e811de7bcb6646912561583969004b81c10ec1",
-   "title": "Israel x Iran ceasefire continues through July 25?",
-   "outcome": "Yes",
-   "price": 0.56,
-   "stake": 2.52,
-   "reason": "price moved 0.44\u21920.56",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 1726.17,
+ "missed_pnl": 1727.18,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3096,7 +3096,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 20,
+   "miss_n": 21,
    "miss_pnl": 4.89,
    "last_ts": 1784999576
   },
@@ -3191,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785069875
+ "updated": 1785072243
 }

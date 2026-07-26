@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1785069875,
+ "updated": 1785072243,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": -1.26,
@@ -18,7 +18,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 20,
+   "miss_n": 21,
    "miss_pnl": 4.89,
    "last_ts": 1784999576
   },
@@ -2826,6 +2826,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785072243,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "113359571003047396767826426301838860151873706137356935468347609290162612073776",
+   "cond": "0x0b1cbc36ef6e5b8616ab4b64e0fc050343a2e8322a1d3002ef68ee61fdaeeef5",
+   "title": "LoL: Anyone's Legend vs Bilibili Gaming (BO3) - LPL Group Ascend",
+   "outcome": "Bilibili Gaming",
+   "price": 0.51,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.998",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
   {
    "ts": 1785067055,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
