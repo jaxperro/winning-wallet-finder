@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785059061,
+ "updated": 1785059649,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 525.84,
@@ -56,11 +56,11 @@
    "realized": 67.46,
    "n": 33,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 118.97,
+   "open_n": 1,
    "miss_n": 3,
    "miss_pnl": -63.35,
-   "last_ts": 1785059061
+   "last_ts": 1785059588
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -94,6 +94,26 @@
   }
  },
  "bets": [
+  {
+   "token": "89340901248495209887282475621636749099978593982836424634713915099029001879979",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "ThunderTalk Gaming",
+   "title": "LoL: ThunderTalk Gaming vs EDward Gaming - Game 2 Winner",
+   "their_price": 0.53,
+   "my_price": 0.53,
+   "slippage_pct": 0.0,
+   "lag_s": 2.2,
+   "shares": 224.48,
+   "cost": 118.97,
+   "fee": 1.6775,
+   "opened": 1785059588,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785024000
+  },
   {
    "token": "9813729238721622440295199072182483266069584287294397729904340441074427123910",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",

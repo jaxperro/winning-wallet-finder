@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 118.98,
+ "stake": 118.91,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3279.7,
- "cash": 1324.63,
- "deployed": 1649.86,
+ "cash": 1203.97,
+ "deployed": 1768.83,
  "reserve": 0.0,
- "realized": 1974.45,
+ "realized": 1972.77,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 22,
- "fees_paid": 381.29,
+ "ledger_drift": -0.02,
+ "open_count": 23,
+ "fees_paid": 382.96,
  "fee_rate": 0.03,
  "lag": {
-  "n": 269,
-  "n24": 10,
-  "avg_s": 19.6,
+  "n": 270,
+  "n24": 11,
+  "avg_s": 18.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "89340901248495209887282475621636749099978593982836424634713915099029001879979",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "ThunderTalk Gaming",
+   "title": "LoL: ThunderTalk Gaming vs EDward Gaming - Game 2 Winner",
+   "their_price": 0.53,
+   "my_price": 0.53,
+   "slippage_pct": 0.0,
+   "lag_s": 2.2,
+   "shares": 224.48,
+   "cost": 118.97,
+   "fee": 1.68,
+   "opened": 1785059588,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785024000
+  },
   {
    "token": "9813729238721622440295199072182483266069584287294397729904340441074427123910",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2111,27 +2131,6 @@
    "settled": 1784192597,
    "sold_shares": 221.79,
    "sold_proceeds": 110.2
-  },
-  {
-   "token": "37906844316173351653431141004376509492088028380479597728611617251805844178802",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will Elon Musk post 140-159 tweets from July 10 to July 17, 2026?",
-   "their_price": 0.57,
-   "my_price": 0.58,
-   "slippage_pct": 0.0175,
-   "lag_s": 0.5,
-   "shares": 178.63,
-   "cost": 103.6,
-   "fee": 1.31,
-   "opened": 1784165984,
-   "status": "closed",
-   "exit_price": 0.5827,
-   "pnl": -0.81,
-   "settled": 1784166177,
-   "sold_shares": 178.63,
-   "sold_proceeds": 104.09
   }
  ],
  "missed": [
@@ -3095,11 +3094,11 @@
  ],
  "missed_pnl": 111240.47,
  "last_fill": {
-  "ts": 1785059061,
-  "side": "SELL",
-  "price": 0.96,
-  "shares": 177.13,
-  "title": "LoL: ThunderTalk Gaming vs EDward Gaming - Game 1 Winner",
+  "ts": 1785059590,
+  "side": "BUY",
+  "price": 0.53,
+  "shares": 224.48,
+  "title": "LoL: ThunderTalk Gaming vs EDward Gaming - Game 2 Winner",
   "outcome": "ThunderTalk Gaming"
  },
  "wallet_pnl": {
@@ -3157,11 +3156,11 @@
    "realized": 67.46,
    "n": 33,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 118.97,
+   "open_n": 1,
    "miss_n": 3,
    "miss_pnl": -63.35,
-   "last_ts": 1785059061
+   "last_ts": 1785059588
   },
   "BikesAreTheBikes": {
    "realized": -63.77,
@@ -3194,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785059061
+ "updated": 1785059649
 }
