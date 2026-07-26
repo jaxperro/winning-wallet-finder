@@ -2121,6 +2121,22 @@
  ],
  "missed": [
   {
+   "ts": 1785057797,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "9813729238721622440295199072182483266069584287294397729904340441074427123910",
+   "cond": "0x429f11968ea12d2f528bff9ce14d601fe160aa8e84ad78e6b33ce894bfe7ca29",
+   "title": "LoL: ThunderTalk Gaming vs EDward Gaming - Game 1 Winner",
+   "outcome": "ThunderTalk Gaming",
+   "price": 0.62,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.996",
+   "status": "sold",
+   "pnl": 0.52,
+   "settled": 1785060049,
+   "name": "AIcAIc",
+   "exit_price": 0.95
+  },
+  {
    "ts": 1785059815,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "91266914832076152890178245367327746643886105568273548856344063538633019008684",
@@ -2143,21 +2159,6 @@
    "title": "LoL: ThunderTalk Gaming vs EDward Gaming - Game 2 Winner",
    "outcome": "ThunderTalk Gaming",
    "price": 0.52,
-   "stake": 1.0,
-   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.996",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
-  },
-  {
-   "ts": 1785057797,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "9813729238721622440295199072182483266069584287294397729904340441074427123910",
-   "cond": "0x429f11968ea12d2f528bff9ce14d601fe160aa8e84ad78e6b33ce894bfe7ca29",
-   "title": "LoL: ThunderTalk Gaming vs EDward Gaming - Game 1 Winner",
-   "outcome": "ThunderTalk Gaming",
-   "price": 0.62,
    "stake": 1.0,
    "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.996",
    "status": "open",
@@ -3072,7 +3073,7 @@
    "exit_price": 0.85
   }
  ],
- "missed_pnl": 1725.02,
+ "missed_pnl": 1725.54,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3099,7 +3100,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 17,
-   "miss_pnl": 4.01,
+   "miss_pnl": 4.53,
    "last_ts": 1784999576
   },
   "(incident)": {
@@ -3193,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785059820
+ "updated": 1785060050
 }
