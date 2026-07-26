@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785078294,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "54620342958738283704802452250340372295186538019357418907215676271029676157053",
+   "cond": "0x7751647558c676e670214b1161ba938c16417b09c7b577310ad80652d70066c1",
+   "title": "Unit FDV above $400M one day after launch?",
+   "outcome": "No",
+   "price": 0.5,
+   "stake": 1.0,
+   "reason": "order rejected: exception: order 0x4c85689567f50b5654feb2d052fd5f24d16100747",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785072243,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "113359571003047396767826426301838860151873706137356935468347609290162612073776",
@@ -3054,26 +3069,9 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.6682
-  },
-  {
-   "ts": 1784508146,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "28798051369308638598820548419525548679775617348292003491362631387640436001598",
-   "cond": "0xcda1cbf4da6814c6c842870769e5af7a27e87572ee043ffbaa68a2f7fab7d323",
-   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $140 Week of July 20 2026?",
-   "outcome": "No",
-   "price": 0.3073,
-   "stake": 2.41,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 2.06,
-   "settled": 1784751007,
-   "name": "0xbadaf319",
-   "exit_checked": true,
-   "exit_price": 0.5835
   }
  ],
- "missed_pnl": 1727.6,
+ "missed_pnl": 1726.62,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3089,7 +3087,7 @@
    "wins": 6,
    "open_cost": 15.58,
    "open_n": 6,
-   "miss_n": 80,
+   "miss_n": 81,
    "miss_pnl": 1731.6,
    "last_ts": 1785011532
   },
@@ -3194,5 +3192,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785078104
+ "updated": 1785078294
 }

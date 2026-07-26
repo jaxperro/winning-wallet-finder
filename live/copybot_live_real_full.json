@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1785078104,
+ "updated": 1785078294,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": -1.26,
@@ -8,7 +8,7 @@
    "wins": 6,
    "open_cost": 15.58,
    "open_n": 6,
-   "miss_n": 80,
+   "miss_n": 81,
    "miss_pnl": 1731.6,
    "last_ts": 1785011532
   },
@@ -2826,6 +2826,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785078294,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "54620342958738283704802452250340372295186538019357418907215676271029676157053",
+   "cond": "0x7751647558c676e670214b1161ba938c16417b09c7b577310ad80652d70066c1",
+   "title": "Unit FDV above $400M one day after launch?",
+   "outcome": "No",
+   "price": 0.5,
+   "stake": 1.0,
+   "reason": "order rejected: exception: order 0x4c85689567f50b5654feb2d052fd5f24d16100747",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785072243,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
