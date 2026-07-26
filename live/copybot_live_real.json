@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785103318,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "73772414999817992515088687755193145487336993356690533986692595350122387340288",
+   "cond": "0x0cc87d69aedb41c2960de6c155f9b444241c9d7d375214c70b14a3262b010846",
+   "title": "WTI Crude Oil (WTI) closes above $91 on July 27?",
+   "outcome": "No",
+   "price": 0.92,
+   "stake": 1.0,
+   "reason": "order rejected: exception: order 0xfad089f06ed65e22afbfd8dffffae8ce34b36df34",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785102626,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "11175144790294018473883407522370233749764592141943374533997532765754332298932",
@@ -3051,26 +3066,9 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 1.0206
-  },
-  {
-   "ts": 1784175026,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
-   "cond": "0xc13c12dd0b8c4a29dedc8f12b2976628fa57e4a8b27bbcc522b82008bb549e02",
-   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $11.2B?",
-   "outcome": "No",
-   "price": 0.7425,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -0.09,
-   "settled": 1784758604,
-   "name": "0xbadaf319",
-   "exit_checked": true,
-   "exit_price": 0.6853
   }
  ],
- "missed_pnl": 1725.46,
+ "missed_pnl": 1725.68,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3086,7 +3084,7 @@
    "wins": 6,
    "open_cost": 15.58,
    "open_n": 6,
-   "miss_n": 82,
+   "miss_n": 83,
    "miss_pnl": 1731.6,
    "last_ts": 1785011532
   },
@@ -3191,5 +3189,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785102627
+ "updated": 1785103318
 }

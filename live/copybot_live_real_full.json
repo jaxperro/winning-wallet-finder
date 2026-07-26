@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1785102627,
+ "updated": 1785103318,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": -1.26,
@@ -8,7 +8,7 @@
    "wins": 6,
    "open_cost": 15.58,
    "open_n": 6,
-   "miss_n": 82,
+   "miss_n": 83,
    "miss_pnl": 1731.6,
    "last_ts": 1785011532
   },
@@ -2826,6 +2826,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785103318,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "73772414999817992515088687755193145487336993356690533986692595350122387340288",
+   "cond": "0x0cc87d69aedb41c2960de6c155f9b444241c9d7d375214c70b14a3262b010846",
+   "title": "WTI Crude Oil (WTI) closes above $91 on July 27?",
+   "outcome": "No",
+   "price": 0.92,
+   "stake": 1.0,
+   "reason": "order rejected: exception: order 0xfad089f06ed65e22afbfd8dffffae8ce34b36df34",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785102626,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
