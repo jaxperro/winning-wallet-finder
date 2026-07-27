@@ -4,14 +4,14 @@
  "stake": 135.16,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3378.88,
- "cash": 1743.21,
- "deployed": 1635.67,
+ "hwm": 3378.89,
+ "cash": 1743.26,
+ "deployed": 1635.63,
  "reserve": 0.0,
- "realized": 2378.85,
+ "realized": 2378.86,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 25,
+ "open_count": 24,
  "fees_paid": 390.04,
  "fee_rate": 0.03,
  "lag": {
@@ -63,13 +63,13 @@
    "cost": 52.49,
    "fee": 0.43,
    "opened": 1785166432,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
+   "status": "closed",
+   "exit_price": 0.9362,
+   "pnl": 14.41,
+   "settled": 1785166601,
    "end_ts": 1788134400,
-   "sold_shares": 71.86,
-   "sold_proceeds": 67.27
+   "sold_shares": 71.91,
+   "sold_proceeds": 67.32
   },
   {
    "token": "5093836280630653877561190382016580808144147177143767913302616853585042535941",
@@ -3098,23 +3098,23 @@
  ],
  "missed_pnl": 111150.97,
  "last_fill": {
-  "ts": 1785166553,
+  "ts": 1785166601,
   "side": "SELL",
-  "price": 0.93,
-  "shares": 14.5,
+  "price": 0.91,
+  "shares": 0.05,
   "title": "US announces halt in Iran offensive operations by August 31?",
   "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 538.65,
-   "n": 64,
+   "realized": 553.06,
+   "n": 65,
    "wins": 19,
-   "open_cost": 756.94,
-   "open_n": 13,
+   "open_cost": 704.45,
+   "open_n": 12,
    "miss_n": 81,
    "miss_pnl": 111921.67,
-   "last_ts": 1785166432
+   "last_ts": 1785166601
   },
   "gkmgkldfmg": {
    "realized": 928.1,
@@ -3207,5 +3207,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785166553
+ "updated": 1785166601
 }
