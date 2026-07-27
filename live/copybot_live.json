@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 134.57,
+ "stake": 134.58,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3364.32,
- "cash": 1724.71,
- "deployed": 1639.61,
+ "hwm": 3364.49,
+ "cash": 1728.86,
+ "deployed": 1635.63,
  "reserve": 0.0,
- "realized": 2364.29,
+ "realized": 2364.46,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 24,
- "fees_paid": 389.48,
+ "fees_paid": 389.49,
  "fee_rate": 0.03,
  "lag": {
   "n": 279,
@@ -3095,10 +3095,10 @@
  ],
  "missed_pnl": 111150.97,
  "last_fill": {
-  "ts": 1785162562,
+  "ts": 1785162655,
   "side": "SELL",
   "price": 0.95,
-  "shares": 10.93,
+  "shares": 4.37,
   "title": "Will LAB reach $24 before 2027?",
   "outcome": "No"
  },
@@ -3204,5 +3204,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785162569
+ "updated": 1785162662
 }
