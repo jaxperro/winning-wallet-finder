@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785192499,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "80566427864683264408132975495806825930535536706191596908698304900201437338755",
+   "cond": "0xfcaddf3ef2d9f976e0c9673ed54c380bdc3338d02ab0fa8aa7f22960f594e964",
+   "title": "S&P 500 (SPY) closes above $730 on July 28?",
+   "outcome": "Yes",
+   "price": 0.65,
+   "stake": 1.0,
+   "reason": "order rejected: exception: order 0xa2d10630247477eb272c5a0ed40a7d8a82f013468",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785191856,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "45691138284392247799480039269191461630142831037707390402697922072569909819489",
@@ -3044,25 +3059,9 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784885070,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "34383281909044259756215667723509413820839811815716463480957480797279993360122",
-   "cond": "0xa2822aa2467aca2d04968c26fd5444d88fb54c4dc5f8eac7d27d84a494ac8b50",
-   "title": "LoL: Team WE vs JD Gaming - Game 1 Winner",
-   "outcome": "Team WE",
-   "price": 0.65,
-   "stake": 2.42,
-   "reason": "order rejected: exception: order 0xf108bfade0b5c26134b80f55a6f4d9451bfd28517",
-   "status": "sold",
-   "pnl": 1.09,
-   "settled": 1784887137,
-   "name": "AIcAIc",
-   "exit_price": 0.95
   }
  ],
- "missed_pnl": 702.4,
+ "missed_pnl": 702.32,
  "last_fill": {
   "ts": 1785175095,
   "side": "SELL",
@@ -3078,7 +3077,7 @@
    "wins": 7,
    "open_cost": 13.33,
    "open_n": 5,
-   "miss_n": 95,
+   "miss_n": 96,
    "miss_pnl": 1733.79,
    "last_ts": 1785104758
   },
@@ -3183,5 +3182,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785191856
+ "updated": 1785192499
 }

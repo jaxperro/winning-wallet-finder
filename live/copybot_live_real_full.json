@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1785191856,
+ "updated": 1785192499,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": -1.02,
@@ -8,7 +8,7 @@
    "wins": 7,
    "open_cost": 13.33,
    "open_n": 5,
-   "miss_n": 95,
+   "miss_n": 96,
    "miss_pnl": 1733.79,
    "last_ts": 1785104758
   },
@@ -2828,6 +2828,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785192499,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "80566427864683264408132975495806825930535536706191596908698304900201437338755",
+   "cond": "0xfcaddf3ef2d9f976e0c9673ed54c380bdc3338d02ab0fa8aa7f22960f594e964",
+   "title": "S&P 500 (SPY) closes above $730 on July 28?",
+   "outcome": "Yes",
+   "price": 0.65,
+   "stake": 1.0,
+   "reason": "order rejected: exception: order 0xa2d10630247477eb272c5a0ed40a7d8a82f013468",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785191856,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
