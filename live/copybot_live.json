@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 135.22,
+ "stake": 135.34,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3380.41,
- "cash": 1780.57,
- "deployed": 1599.84,
+ "hwm": 3383.42,
+ "cash": 1805.32,
+ "deployed": 1578.1,
  "reserve": 0.0,
- "realized": 2380.38,
+ "realized": 2383.39,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 24,
@@ -3099,12 +3099,12 @@
  ],
  "missed_pnl": 111189.97,
  "last_fill": {
-  "ts": 1785170796,
+  "ts": 1785175094,
   "side": "SELL",
-  "price": 0.95,
-  "shares": 17.47,
-  "title": "Will LAB reach $24 before 2027?",
-  "outcome": "No"
+  "price": 0.996,
+  "shares": 24.85,
+  "title": "Amazon 2026 capex above $180B?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3208,5 +3208,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785172561
+ "updated": 1785175101
 }
