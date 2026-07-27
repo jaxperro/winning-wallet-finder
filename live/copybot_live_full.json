@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785183868,
+ "updated": 1785185017,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 553.06,
-   "n": 65,
-   "wins": 19,
-   "open_cost": 704.45,
-   "open_n": 12,
+   "realized": 555.08,
+   "n": 66,
+   "wins": 20,
+   "open_cost": 648.84,
+   "open_n": 11,
    "miss_n": 81,
    "miss_pnl": 111921.67,
-   "last_ts": 1785166601
+   "last_ts": 1785185014
   },
   "gkmgkldfmg": {
    "realized": 928.1,
@@ -105,6 +105,28 @@
  },
  "bets": [
   {
+   "token": "79670417518965340166637380137891741750752210241055933511013597289989925437928",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Up",
+   "title": "SPY (SPY) Up or Down on July 27?",
+   "their_price": 0.9,
+   "my_price": 0.9,
+   "slippage_pct": 0.0,
+   "lag_s": 6.7,
+   "shares": 61.79,
+   "cost": 55.61,
+   "fee": 0.1668,
+   "opened": 1785130838,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 2.02,
+   "settled": 1785185014,
+   "end_ts": 1785110400,
+   "sold_shares": 55.55545565543569,
+   "sold_proceeds": 51.55807395466013
+  },
+  {
    "token": "49952690042474298096697107838501147620642888076204079490031529723234270830286",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -169,28 +191,6 @@
    "end_ts": 1785542400,
    "sold_shares": 52.98759864712514,
    "sold_proceeds": 51.68070311369994
-  },
-  {
-   "token": "79670417518965340166637380137891741750752210241055933511013597289989925437928",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Up",
-   "title": "SPY (SPY) Up or Down on July 27?",
-   "their_price": 0.9,
-   "my_price": 0.9,
-   "slippage_pct": 0.0,
-   "lag_s": 6.7,
-   "shares": 61.79,
-   "cost": 55.61,
-   "fee": 0.1668,
-   "opened": 1785130838,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785110400,
-   "sold_shares": 55.55545565543569,
-   "sold_proceeds": 51.55807395466013
   },
   {
    "token": "52897893276285627510690194142963884799788689807458708980439810896103687693971",
