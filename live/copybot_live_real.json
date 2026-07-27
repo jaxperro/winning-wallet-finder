@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785166433,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "49952690042474298096697107838501147620642888076204079490031529723234270830286",
+   "cond": "0x5e0190c0160f075a95fd5034b1d97d2245ef0c1ccb725fcbbadfc54db2ac8028",
+   "title": "US announces halt in Iran offensive operations by August 31?",
+   "outcome": "Yes",
+   "price": 0.74,
+   "stake": 1.0,
+   "reason": "order rejected: exception: order 0xdeb8c90090edaa13a833d8e808b20f321941b5741",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785162758,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "65075316665858123310904205342608300814898488753088658332913116406808619343398",
@@ -3044,25 +3059,9 @@
    "settled": 1784887132,
    "name": "0xbadaf319",
    "exit_price": 0.8858
-  },
-  {
-   "ts": 1783958437,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "6077633070230470776652108532581280898684441958087418509077540637819937906663",
-   "cond": "0x636f780f794635820e8cafe81924ef2dd67622fc01b6b2e5e64e9cc99593a005",
-   "title": "Will Iran announce withdrawal from MOU negotiations by July 31?",
-   "outcome": "Yes",
-   "price": 0.3949,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -0.22,
-   "settled": 1784887131,
-   "name": "0xbadaf319",
-   "exit_price": 0.3234
   }
  ],
- "missed_pnl": 700.9,
+ "missed_pnl": 701.92,
  "last_fill": {
   "ts": 1785162655,
   "side": "SELL",
@@ -3078,7 +3077,7 @@
    "wins": 7,
    "open_cost": 13.33,
    "open_n": 5,
-   "miss_n": 92,
+   "miss_n": 93,
    "miss_pnl": 1733.56,
    "last_ts": 1785104758
   },
@@ -3183,5 +3182,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785162767
+ "updated": 1785166433
 }
