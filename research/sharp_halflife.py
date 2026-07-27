@@ -21,7 +21,23 @@ SIGNAL decay, not our execution (T3/T11 own execution).
 Outputs: EV/bet by age-in-set bucket (0-2d / 3-6d / 7-13d / 14d+),
 pooled AND per-wallet-day mean-of-means (concentration guard), plus the
 survival curve (fraction of detected wallets still published at age k).
-NOT pre-registered — informs a rotation policy for the follow set."""
+NOT pre-registered — informs a rotation policy for the follow set.
+
+VERDICT (2026-07-27, cached-only grading, COVERAGE 14%): NO EDGE DECAY.
+EV/bet by age-in-set: 0-2d +$13.75 (n=867) · 3-6d +$17.97 (n=839) ·
+7-13d +$22.24 (n=1,569) · 14d+ +$19.81 (n=2,406) — the FRESHEST bucket
+is the weakest and edge holds past two weeks. Set against the survival
+curve (49% of detections gone within 1 day, 11% at 28d), the churn is
+THRESHOLD JITTER around the z-cutoff, not wallets going stale.
+=> Do NOT build an age-based rotation rule; age is not a decay signal.
+Caveats: 14% coverage (cached chain truth only — rises on its own as
+other nightlies fill the payouts cache; rerun later to confirm) and
+top-5 wallets carry 44% of the pooled total.
+
+METHOD NOTE: ensure() over every cond these wallets ever touched was a
+TREADMILL (84k conds, RPC-bound, count grows daily) — five runs across
+five days never finished it. Cached-only + honest coverage answered the
+same question in minutes. Pass --ensure to crawl the tail anyway."""
 import collections
 import json
 import os
@@ -120,14 +136,29 @@ def main():
           flush=True)
 
     import payouts
+    # CACHED-ONLY grading (2026-07-27): ensure() over every cond these
+    # wallets ever touched is a TREADMILL — 84k conds, RPC-bound, and the
+    # count grows daily as they keep betting; five runs across five days
+    # never finished it. The question ("does edge decay after detection")
+    # does not need every historical bet: it needs an unbiased sample of
+    # post-detection ones. So grade what chain truth is ALREADY cached and
+    # report coverage; the cache fills from every other nightly anyway, so
+    # coverage rises on its own without a dedicated crawl.
     conds = sorted({b[1] for b in bets if b[1]})
-    print(f"ensuring {len(conds)} conds against chain…", flush=True)
-    payouts.ensure(conds)
+    if "--ensure" in sys.argv:
+        print(f"ensuring {len(conds)} conds against chain…", flush=True)
+        payouts.ensure(conds)
+    else:
+        print(f"cached-only grading over {len(conds)} conds "
+              f"(pass --ensure to crawl the uncached tail)", flush=True)
 
     per_bucket = {tag: [] for _, _, tag in BUCKETS}
     per_wd = {tag: collections.defaultdict(list) for _, _, tag in BUCKETS}
     graded = skipped = 0
     for w, cond, asset, p, ts in bets:
+        if ts is None or p is None:        # cache rows with no entry time
+            skipped += 1
+            continue
         if ts // 86400 < det_n[w]:
             continue                    # pre-detection bet
         pay = payouts.truth(cond, asset)
@@ -142,8 +173,11 @@ def main():
                 per_bucket[tag].append(ev)
                 per_wd[tag][(w, int(ts // 86400))].append(ev)
                 break
+    cov = 100 * graded / max(1, graded + skipped)
     print(f"chain-graded post-detection bets: {graded} "
-          f"(ungraded/refund skipped: {skipped})\n", flush=True)
+          f"(ungraded/refund skipped: {skipped}) · COVERAGE {cov:.0f}%"
+          f"{'  ⚠ low — treat buckets as indicative' if cov < 50 else ''}\n",
+          flush=True)
 
     print("EV BY AGE-IN-SET (per $100 at the wallet's own entry, feeless):",
           flush=True)
