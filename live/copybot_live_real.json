@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
- "cash": 18.4,
- "deployed": 30.23,
+ "cash": 18.78,
+ "deployed": 29.84,
  "reserve": 0.0,
- "realized": -27.23,
+ "realized": -27.24,
  "adjustments": 9.44,
  "ledger_drift": 0.03,
  "open_count": 15,
@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785162758,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "65075316665858123310904205342608300814898488753088658332913116406808619343398",
+   "cond": "0x6899f21b3a3d26c8ae9d0332c25d160fc08b9c3b834f0d8fe116d2ec87905dc9",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $130 Week of July 27 2026?",
+   "outcome": "No",
+   "price": 0.5463,
+   "stake": 1.0,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785111590,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "112774766992396377485489579919863607374726156472090313068282277768607356552228",
@@ -2590,22 +2605,6 @@
    "exit_price": 0.95
   },
   {
-   "ts": 1783908976,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
-   "cond": "0xa164172b7cee74420cfce554c3a265b2553cb80e48b36e286e67f302b6574712",
-   "title": "Ethereal FDV above $500M one day after launch?",
-   "outcome": "No",
-   "price": 0.8163,
-   "stake": 1.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -0.0,
-   "settled": 1785012975,
-   "name": "0xbadaf319",
-   "exit_price": 0.822
-  },
-  {
    "ts": 1785009018,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "10648768902294223005281776472791443674603816737553002058221071348281139541856",
@@ -3065,10 +3064,10 @@
  ],
  "missed_pnl": 700.9,
  "last_fill": {
-  "ts": 1785162570,
+  "ts": 1785162655,
   "side": "SELL",
   "price": 0.93,
-  "shares": 1.03,
+  "shares": 0.41,
   "title": "Will LAB reach $24 before 2027?",
   "outcome": "No"
  },
@@ -3079,7 +3078,7 @@
    "wins": 7,
    "open_cost": 13.33,
    "open_n": 5,
-   "miss_n": 91,
+   "miss_n": 92,
    "miss_pnl": 1733.56,
    "last_ts": 1785104758
   },
@@ -3184,5 +3183,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785162570
+ "updated": 1785162767
 }
