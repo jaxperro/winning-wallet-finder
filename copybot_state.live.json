@@ -19574,10 +19574,11 @@
       "price": 0.44,
       "stake": 1.0,
       "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.995",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
-      "name": "0xbadaf319"
+      "status": "sold",
+      "pnl": 0.82,
+      "settled": 1785160792,
+      "name": "0xbadaf319",
+      "exit_price": 0.8122
     },
     {
       "ts": 1785113978,
@@ -19607,7 +19608,8 @@
       "status": "won",
       "pnl": 0.33,
       "settled": 1785160321,
-      "name": "0xbadaf319"
+      "name": "0xbadaf319",
+      "exit_checked": true
     },
     {
       "ts": 1785127066,
@@ -19718,7 +19720,7 @@
     }
   ],
   "feed_sig": "cdda36841e91acc8d8974dc9b083e71d",
-  "feed_pushed_at": 1785160256.1518402,
+  "feed_pushed_at": 1785160650.1450486,
   "adjustments": [
     {
       "ts": 1783906689,
@@ -19769,7 +19771,7 @@
     "6457952357077230044054791268159160058712529625831041550558183767114352456975": 1,
     "61895825019286928316753689208545457497714235075046708292847356747636406191670": 1,
     "82768531874539579332422216880159980913196623213037059365722754442149714478353": 1,
-    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 792,
+    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 794,
     "24538227191540742319290192357327280598675171199196475574105878696409564463051": 1
   },
   "trade_cursor": {
@@ -19796,36 +19798,6 @@
     "outcome": "Karmine Corp"
   },
   "ignored_exits": [
-    {
-      "ts": 1785093802.9,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.88,
-      "shares_held": 3.4789,
-      "cost_held": 2.47,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "live"
-    },
-    {
-      "ts": 1785094126.4,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.88,
-      "shares_held": 3.4789,
-      "cost_held": 2.47,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "live"
-    },
     {
       "ts": 1785094455.8,
       "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
@@ -22783,6 +22755,36 @@
     },
     {
       "ts": 1785160123.8,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 3.4789,
+      "cost_held": 2.47,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "live"
+    },
+    {
+      "ts": 1785160451.4,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 3.4789,
+      "cost_held": 2.47,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "live"
+    },
+    {
+      "ts": 1785160783.7,
       "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
       "their_size": 0,
       "their_prev": 0,

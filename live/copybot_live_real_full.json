@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1785160322,
+ "updated": 1785160793,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": -1.02,
@@ -9,7 +9,7 @@
    "open_cost": 13.33,
    "open_n": 5,
    "miss_n": 91,
-   "miss_pnl": 1732.74,
+   "miss_pnl": 1733.56,
    "last_ts": 1785104758
   },
   "AIcAIc": {
@@ -2827,6 +2827,22 @@
  ],
  "missed": [
   {
+   "ts": 1785111590,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "112774766992396377485489579919863607374726156472090313068282277768607356552228",
+   "cond": "0x1b158a9177d2b8cb17144844069b93753c2578ace89a07d06fe1872c86ff8e90",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $140 Week of July 27 2026?",
+   "outcome": "Yes",
+   "price": 0.44,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.995",
+   "status": "sold",
+   "pnl": 0.82,
+   "settled": 1785160792,
+   "name": "0xbadaf319",
+   "exit_price": 0.8122
+  },
+  {
    "ts": 1785126941,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "74119673575030259137547668301986785745647371043511033522238877972140940630607",
@@ -2839,7 +2855,8 @@
    "status": "won",
    "pnl": 0.33,
    "settled": 1785160321,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1785139495,
@@ -3010,21 +3027,6 @@
    "settled": 1785113169,
    "name": "0xbadaf319",
    "exit_price": 0.895
-  },
-  {
-   "ts": 1785111590,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "112774766992396377485489579919863607374726156472090313068282277768607356552228",
-   "cond": "0x1b158a9177d2b8cb17144844069b93753c2578ace89a07d06fe1872c86ff8e90",
-   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $140 Week of July 27 2026?",
-   "outcome": "Yes",
-   "price": 0.44,
-   "stake": 1.0,
-   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.995",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1785110815,
