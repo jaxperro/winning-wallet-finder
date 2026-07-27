@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 133.35,
+ "stake": 133.48,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3333.72,
- "cash": 1653.09,
- "deployed": 1680.63,
+ "hwm": 3337.07,
+ "cash": 1663.54,
+ "deployed": 1673.53,
  "reserve": 0.0,
- "realized": 2333.69,
+ "realized": 2337.04,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 24,
- "fees_paid": 388.53,
+ "fees_paid": 388.56,
  "fee_rate": 0.03,
  "lag": {
   "n": 276,
@@ -89,7 +89,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1785456000
+   "end_ts": 1785456000,
+   "sold_shares": 11.27,
+   "sold_proceeds": 10.46
   },
   {
    "token": "38653928625312634500254748884896709523765538580393484335273651251587581768973",
@@ -3096,12 +3098,12 @@
  ],
  "missed_pnl": 111157.38,
  "last_fill": {
-  "ts": 1785115560,
+  "ts": 1785121857,
   "side": "SELL",
-  "price": 0.99,
-  "shares": 12.16,
-  "title": "WTI Crude Oil (WTI) closes above $91 on July 27?",
-  "outcome": "No"
+  "price": 0.93,
+  "shares": 11.27,
+  "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $140 Week of July 27 2026",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3195,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785118194
+ "updated": 1785121864
 }
