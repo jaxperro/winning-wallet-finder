@@ -2141,6 +2141,21 @@
  ],
  "missed": [
   {
+   "ts": 1785114042,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "87696708406779453134902801895465089795764350419182531911213489596972812010552",
+   "cond": "0x726f8c733ea83c15eb7bf25eca3fb324440c78a49fd2e233138214c69cdb46f0",
+   "title": "Another NATO Article 4 invocation by October 31, 2026?",
+   "outcome": "No",
+   "price": 0.68,
+   "stake": 22.36,
+   "reason": "maker bid unfilled (66s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1784966431,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "3901986631446153023403890805451260510191347162609117497694534689649201812603",
@@ -2933,23 +2948,6 @@
    "exit_checked": true
   },
   {
-   "ts": 1783614355,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "89242338311934607563982674007060874462410613449265345423154631111798741937421",
-   "cond": "0xc13c12dd0b8c4a29dedc8f12b2976628fa57e4a8b27bbcc522b82008bb549e02",
-   "title": "Will Google (GOOGL) Q2 YouTube ads revenue be above $11.2B?",
-   "outcome": "No",
-   "price": 0.8399,
-   "stake": 52.73,
-   "reason": "followed but not placed \u2014 silent exit at copy time (thin/no-ask book most likely; both silent paths instrumented 2026-07-09)",
-   "status": "sold",
-   "pnl": -10.36,
-   "settled": 1784758578,
-   "name": "0xbadaf319",
-   "exit_checked": true,
-   "exit_price": 0.6853
-  },
-  {
    "ts": 1784746881,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "101073632313407449841258966324566339609029406016329643951331988915036734803060",
@@ -3097,7 +3095,7 @@
    "exit_price": 0.7583
   }
  ],
- "missed_pnl": 111134.49,
+ "missed_pnl": 111144.85,
  "last_fill": {
   "ts": 1785111591,
   "side": "BUY",
@@ -3113,7 +3111,7 @@
    "wins": 19,
    "open_cost": 754.74,
    "open_n": 13,
-   "miss_n": 76,
+   "miss_n": 77,
    "miss_pnl": 111876.4,
    "last_ts": 1785111585
   },
@@ -3198,5 +3196,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785112194
+ "updated": 1785114047
 }

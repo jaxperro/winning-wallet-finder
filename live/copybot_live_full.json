@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785112194,
+ "updated": 1785114047,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 525.84,
@@ -8,7 +8,7 @@
    "wins": 19,
    "open_cost": 754.74,
    "open_n": 13,
-   "miss_n": 76,
+   "miss_n": 77,
    "miss_pnl": 111876.4,
    "last_ts": 1785111585
   },
@@ -5149,6 +5149,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785114042,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "87696708406779453134902801895465089795764350419182531911213489596972812010552",
+   "cond": "0x726f8c733ea83c15eb7bf25eca3fb324440c78a49fd2e233138214c69cdb46f0",
+   "title": "Another NATO Article 4 invocation by October 31, 2026?",
+   "outcome": "No",
+   "price": 0.68,
+   "stake": 22.36,
+   "reason": "maker bid unfilled (66s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1784966431,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
