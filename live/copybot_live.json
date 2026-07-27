@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 133.33,
+ "stake": 133.32,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3333.33,
- "cash": 1672.14,
- "deployed": 1661.2,
+ "cash": 1641.05,
+ "deployed": 1691.94,
  "reserve": 0.0,
- "realized": 2333.3,
+ "realized": 2332.96,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 24,
- "fees_paid": 388.19,
+ "open_count": 25,
+ "fees_paid": 388.53,
  "fee_rate": 0.03,
  "lag": {
-  "n": 275,
-  "n24": 8,
-  "avg_s": 4.6,
+  "n": 276,
+  "n24": 9,
+  "avg_s": 4.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "112774766992396377485489579919863607374726156472090313068282277768607356552228",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $140 Week of July 27 2026?",
+   "their_price": 0.63,
+   "my_price": 0.63,
+   "slippage_pct": 0.0,
+   "lag_s": 6.7,
+   "shares": 48.8,
+   "cost": 30.74,
+   "fee": 0.34,
+   "opened": 1785111585,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785456000
+  },
   {
    "token": "73772414999817992515088687755193145487336993356690533986692595350122387340288",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2117,27 +2137,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1814313600
-  },
-  {
-   "token": "31227781598316880280877760465683086508096359894740658336497080463300979927822",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Over $55M committed to the Credible public sale?",
-   "their_price": 0.89,
-   "my_price": 0.8801,
-   "slippage_pct": -0.0112,
-   "lag_s": 2.1,
-   "shares": 108.41,
-   "cost": 95.4,
-   "fee": 0.34,
-   "opened": 1784065065,
-   "status": "closed",
-   "exit_price": 0.9795,
-   "pnl": 10.44,
-   "settled": 1784223191,
-   "sold_shares": 108.41,
-   "sold_proceeds": 106.18
   }
  ],
  "missed": [
@@ -3099,23 +3098,23 @@
  ],
  "missed_pnl": 111132.84,
  "last_fill": {
-  "ts": 1785103447,
-  "side": "SELL",
-  "price": 0.99,
-  "shares": 51.17,
-  "title": "WTI Crude Oil (WTI) closes above $91 on July 27?",
-  "outcome": "No"
+  "ts": 1785111591,
+  "side": "BUY",
+  "price": 0.63,
+  "shares": 48.8,
+  "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $140 Week of July 27 2026",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 525.84,
    "n": 61,
    "wins": 19,
-   "open_cost": 724.0,
-   "open_n": 12,
+   "open_cost": 754.74,
+   "open_n": 13,
    "miss_n": 76,
    "miss_pnl": 111874.75,
-   "last_ts": 1785103316
+   "last_ts": 1785111585
   },
   "gkmgkldfmg": {
    "realized": 928.1,
@@ -3198,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785110821
+ "updated": 1785111657
 }
