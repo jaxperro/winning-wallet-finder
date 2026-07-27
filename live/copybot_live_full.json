@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785129711,
+ "updated": 1785130867,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 534.13,
    "n": 63,
    "wins": 19,
-   "open_cost": 695.84,
-   "open_n": 12,
+   "open_cost": 751.45,
+   "open_n": 13,
    "miss_n": 80,
    "miss_pnl": 111890.97,
-   "last_ts": 1785129711
+   "last_ts": 1785130838
   },
   "gkmgkldfmg": {
    "realized": 928.1,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "79670417518965340166637380137891741750752210241055933511013597289989925437928",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Up",
+   "title": "SPY (SPY) Up or Down on July 27?",
+   "their_price": 0.9,
+   "my_price": 0.9,
+   "slippage_pct": 0.0,
+   "lag_s": 6.7,
+   "shares": 61.79,
+   "cost": 55.61,
+   "fee": 0.1668,
+   "opened": 1785130838,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785110400
+  },
   {
    "token": "52897893276285627510690194142963884799788689807458708980439810896103687693971",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
