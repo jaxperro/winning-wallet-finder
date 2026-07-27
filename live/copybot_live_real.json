@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785113978,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "87696708406779453134902801895465089795764350419182531911213489596972812010552",
+   "cond": "0x726f8c733ea83c15eb7bf25eca3fb324440c78a49fd2e233138214c69cdb46f0",
+   "title": "Another NATO Article 4 invocation by October 31, 2026?",
+   "outcome": "No",
+   "price": 0.67,
+   "stake": 1.0,
+   "reason": "order rejected: exception: order 0xf215688810e41d482a5d17e580dea6a7ece262957",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785009018,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "3901986631446153023403890805451260510191347162609117497694534689649201812603",
@@ -3048,24 +3063,9 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.6516
-  },
-  {
-   "ts": 1784802578,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "28239418772633645184924651434956000849078365566842629564562475378531350731731",
-   "cond": "0xac02cbb049e46d6a3627c0fdf52fa554982a9025d45968207b362acb6ca4b830",
-   "title": "Will the Fed decrease interest rates by 25 bps after the September 2026 meeting?",
-   "outcome": "No",
-   "price": 0.9142,
-   "stake": 2.51,
-   "reason": "no ask side on the book at copy time",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 1727.28,
+ "missed_pnl": 1727.22,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3081,7 +3081,7 @@
    "wins": 7,
    "open_cost": 13.33,
    "open_n": 5,
-   "miss_n": 86,
+   "miss_n": 87,
    "miss_pnl": 1732.06,
    "last_ts": 1785104758
   },
@@ -3186,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785113172
+ "updated": 1785113978
 }
