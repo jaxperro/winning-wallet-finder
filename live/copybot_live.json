@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 134.49,
+ "stake": 134.56,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3362.34,
- "cash": 1662.79,
- "deployed": 1699.55,
+ "hwm": 3363.9,
+ "cash": 1714.35,
+ "deployed": 1649.55,
  "reserve": 0.0,
- "realized": 2362.31,
+ "realized": 2363.87,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 24,
- "fees_paid": 389.36,
+ "fees_paid": 389.47,
  "fee_rate": 0.03,
  "lag": {
   "n": 279,
@@ -111,7 +111,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1785110400
+   "end_ts": 1785110400,
+   "sold_shares": 55.56,
+   "sold_proceeds": 51.56
   },
   {
    "token": "52897893276285627510690194142963884799788689807458708980439810896103687693971",
@@ -3093,12 +3095,12 @@
  ],
  "missed_pnl": 111121.1,
  "last_fill": {
-  "ts": 1785153020,
+  "ts": 1785159013,
   "side": "SELL",
-  "price": 1.0,
-  "shares": 151.88,
-  "title": "LoL: Dplus KIA vs T1 (BO1) - KeSPA Cup Group Stage",
-  "outcome": "T1"
+  "price": 0.93,
+  "shares": 55.56,
+  "title": "SPY (SPY) Up or Down on July 27?",
+  "outcome": "Up"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3202,5 +3204,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785158702
+ "updated": 1785159014
 }
