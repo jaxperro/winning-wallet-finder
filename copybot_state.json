@@ -1,8 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0xbbc51478c16e480fb69b23103bb12c8658d75f538127d5f74470f9bc1c2af11e",
-    "0x15600a6362cee311b6dc9b6af5b552b976e778dab5c2eb3a0a618ed8e7143060",
     "0x50c17a8e074bcfa3a310a22c948d82a6d32f172ef028cbe9cc06ff381ef32c9e",
     "0x58760a37e5a3ffdb03a29de23e34952e10f2c49ac50831f6d391ad89f1e5aa9b",
     "0x27ae93e64542a884f80aa39b79fb9e43bc104d2bb8c0a7c6b54f199d1f6a9e00",
@@ -5000,7 +4998,9 @@
     "0xecf5634b77002bcffa1099b4bfc058d88da23ea21bcfc93417db35d2e46e3bd4",
     "0x0429bffec62316239ac09d9e928d17cbf4df158dfc88c1815c3aa0e743d9b08b",
     "0x9c274f15aab17560c6ace3db682590c8154c0def6b0ac24b49b3c9f62455a2ee",
-    "0x828b8b16a7ec7a58b70e3ff525728fe85ade39aef90e9e170b6923e60de3163d"
+    "0x828b8b16a7ec7a58b70e3ff525728fe85ade39aef90e9e170b6923e60de3163d",
+    "0xcee4cc5d4fdc256552f36eb9ccc9701979db02d2c2f6769bed64310e92c06d83",
+    "0xe20c4adb4d7adf3675bb1d984717a0327668e4e35a814dfad5fcc25efc7842b0"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -6490,7 +6490,7 @@
       "109958302980349095043587408331164562453355804118734239907178040912550372526216": 0.0,
       "30509041580474719076558149276592937932974099398082845534087663872827361120489": 0.0,
       "34169893446527289548891449255431135452354964012918433647453068449674435245016": 0.0,
-      "52897893276285627510690194142963884799788689807458708980439810896103687693971": 43.8508,
+      "52897893276285627510690194142963884799788689807458708980439810896103687693971": 0.0007999999999981355,
       "60150351109760741041545820166718640114818526713423843432345009792230315219459": 0.0,
       "56034269791694450648947108563533420613291311035256930463660640310944050569520": 0.0,
       "42000324023092811211521591365265666014272235562583700114691967593736545832712": 0.0,
@@ -13683,15 +13683,6 @@
       "event": "will-abnb-hit-week-of-july-27-2026",
       "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
       "cond": "0x1b158a9177d2b8cb17144844069b93753c2578ace89a07d06fe1872c86ff8e90"
-    },
-    "52897893276285627510690194142963884799788689807458708980439810896103687693971": {
-      "shares": 48.72,
-      "cost": 43.848,
-      "title": "Will the next Claude Opus debut at a score of at least 1490 by December 31, 2026?",
-      "outcome": "Yes",
-      "event": null,
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "cond": "0x0cabaf08be1954680599a1cc5d3f715558d8880b6bcb819d2e32ca404c400b35"
     }
   },
   "spend": {
@@ -13885,13 +13876,13 @@
     "112774766992396377485489579919863607374726156472090313068282277768607356552228": "0x1b158a9177d2b8cb17144844069b93753c2578ace89a07d06fe1872c86ff8e90",
     "52897893276285627510690194142963884799788689807458708980439810896103687693971": "0x0cabaf08be1954680599a1cc5d3f715558d8880b6bcb819d2e32ca404c400b35"
   },
-  "cash": 1619.5637832156776,
+  "cash": 1668.1825388608345,
   "lag": {
     "n": 277,
     "sum_s": 6629.604552268982,
     "sum_slip_pct": -7.247834511462669
   },
-  "fees_paid": 388.68819639143095,
+  "fees_paid": 388.6911136918077,
   "lag_recent": [
     [
       1785051237.9,
@@ -19014,16 +19005,18 @@
       "cost": 43.85,
       "fee": 0.1315,
       "opened": 1785127060,
-      "status": "open",
-      "exit_price": null,
-      "pnl": null,
-      "settled": null,
-      "end_ts": 1798675200
+      "status": "closed",
+      "exit_price": 0.9979,
+      "pnl": 4.64,
+      "settled": 1785129711,
+      "end_ts": 1798675200,
+      "sold_shares": 48.71911116786923,
+      "sold_proceeds": 48.61875564515676
     }
   },
-  "hwm": 3337.0746401351366,
-  "feed_sig": "7210a405849f4d90ea31795506c468dd",
-  "feed_pushed_at": 1785127998.2251542,
+  "hwm": 3341.713851780293,
+  "feed_sig": "f932159b11e8e34815f9876aa4ac7c14",
+  "feed_pushed_at": 1785129615.8477442,
   "missed": [
     {
       "ts": 1783627210,
@@ -22210,7 +22203,8 @@
       "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "0xbadaf319"
     }
   ],
   "no_miss_toks": [
@@ -22325,7 +22319,7 @@
     "111238155193029214626119372717509509454868187612257655146390848111901958320265": 1,
     "54808825071623730922593344072571837691813951745707044026991588993889799442913": 1,
     "45276939554340428771698865022604030782253660716041002232668611227463504055173": 1,
-    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 689,
+    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 693,
     "17278012384173360502232131272354786231595802723343593413625940837844848366978": 1,
     "35613520187412099541224398067273773941235385627221930769717313222719613151332": 1,
     "30105308353288988924984162628182939641372197734077392129497102501234749347616": 1,
@@ -22337,7 +22331,7 @@
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1785077212,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1785127807,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1785127893,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1785099999,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1785074847,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1785121536,
@@ -22349,9 +22343,9 @@
     "ts": 1785008984
   },
   "last_fill": {
-    "ts": 1785127066,
-    "side": "BUY",
-    "price": 0.9,
+    "ts": 1785129711,
+    "side": "SELL",
+    "price": 0.998,
     "shares": 48.72,
     "title": "Will the next Claude Opus debut at a score of at least 1490 ",
     "outcome": "Yes"
@@ -22362,66 +22356,6 @@
     "misses": 19
   },
   "ignored_exits": [
-    {
-      "ts": 1785064494.3,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.88,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1785064832.6,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.88,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1785065473.9,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.88,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1785065806.2,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.88,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
     {
       "ts": 1785066139.3,
       "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
@@ -25349,6 +25283,66 @@
     },
     {
       "ts": 1785128132.6,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1785128477.5,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1785128813.2,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1785129147.1,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1785129481.0,
       "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
       "their_size": 0,
       "their_prev": 0,

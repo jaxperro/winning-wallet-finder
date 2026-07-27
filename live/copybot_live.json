@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 133.48,
+ "stake": 133.67,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3337.07,
- "cash": 1619.56,
- "deployed": 1717.38,
+ "hwm": 3341.71,
+ "cash": 1668.18,
+ "deployed": 1673.53,
  "reserve": 0.0,
- "realized": 2336.91,
+ "realized": 2341.68,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 25,
+ "open_count": 24,
  "fees_paid": 388.69,
  "fee_rate": 0.03,
  "lag": {
@@ -63,11 +63,13 @@
    "cost": 43.85,
    "fee": 0.13,
    "opened": 1785127060,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1798675200
+   "status": "closed",
+   "exit_price": 0.9979,
+   "pnl": 4.64,
+   "settled": 1785129711,
+   "end_ts": 1798675200,
+   "sold_shares": 48.72,
+   "sold_proceeds": 48.62
   },
   {
    "token": "73772414999817992515088687755193145487336993356690533986692595350122387340288",
@@ -3095,23 +3097,23 @@
  ],
  "missed_pnl": 111127.17,
  "last_fill": {
-  "ts": 1785127066,
-  "side": "BUY",
-  "price": 0.9,
+  "ts": 1785129711,
+  "side": "SELL",
+  "price": 0.998,
   "shares": 48.72,
   "title": "Will the next Claude Opus debut at a score of at least 1490 ",
   "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 529.49,
-   "n": 62,
+   "realized": 534.13,
+   "n": 63,
    "wins": 19,
-   "open_cost": 739.69,
-   "open_n": 13,
+   "open_cost": 695.84,
+   "open_n": 12,
    "miss_n": 80,
    "miss_pnl": 111890.97,
-   "last_ts": 1785127060
+   "last_ts": 1785129711
   },
   "gkmgkldfmg": {
    "realized": 928.1,
@@ -3204,5 +3206,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785128143
+ "updated": 1785129711
 }
