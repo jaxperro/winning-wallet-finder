@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1785182798,
+ "updated": 1785184790,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": -1.02,
@@ -9,7 +9,7 @@
    "open_cost": 13.33,
    "open_n": 5,
    "miss_n": 93,
-   "miss_pnl": 1733.82,
+   "miss_pnl": 1733.79,
    "last_ts": 1785104758
   },
   "AIcAIc": {
@@ -2829,6 +2829,22 @@
  ],
  "missed": [
   {
+   "ts": 1785130838,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "79670417518965340166637380137891741750752210241055933511013597289989925437928",
+   "cond": "0xe682172dec68535c41b59d24d80803f4522b6ec3bcd6a7343d32c0a720bfec53",
+   "title": "SPY (SPY) Up or Down on July 27?",
+   "outcome": "Up",
+   "price": 0.89,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.999",
+   "status": "sold",
+   "pnl": -0.03,
+   "settled": 1785184789,
+   "name": "0xbadaf319",
+   "exit_price": 0.8669
+  },
+  {
    "ts": 1785182494,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "115289753838857732506008126031819274849142757215567510934288229988887639669500",
@@ -3000,21 +3016,6 @@
    "settled": 1785130889,
    "name": "0xbadaf319",
    "exit_price": 0.9873
-  },
-  {
-   "ts": 1785130838,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "79670417518965340166637380137891741750752210241055933511013597289989925437928",
-   "cond": "0xe682172dec68535c41b59d24d80803f4522b6ec3bcd6a7343d32c0a720bfec53",
-   "title": "SPY (SPY) Up or Down on July 27?",
-   "outcome": "Up",
-   "price": 0.89,
-   "stake": 1.0,
-   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.999",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1785128918,
