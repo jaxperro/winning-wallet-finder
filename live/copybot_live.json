@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 133.66,
+ "stake": 133.64,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3341.71,
- "cash": 1612.4,
- "deployed": 1729.14,
+ "cash": 1478.27,
+ "deployed": 1862.8,
  "reserve": 0.0,
- "realized": 2341.52,
+ "realized": 2341.04,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 25,
- "fees_paid": 388.86,
+ "ledger_drift": -0.03,
+ "open_count": 26,
+ "fees_paid": 389.34,
  "fee_rate": 0.03,
  "lag": {
-  "n": 278,
-  "n24": 10,
-  "avg_s": 4.7,
+  "n": 279,
+  "n24": 11,
+  "avg_s": 7.0,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "5093836280630653877561190382016580808144147177143767913302616853585042535941",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "T1",
+   "title": "LoL: Dplus KIA vs T1 (BO1) - KeSPA Cup Group Stage",
+   "their_price": 0.88,
+   "my_price": 0.88,
+   "slippage_pct": 0.0,
+   "lag_s": 30.2,
+   "shares": 151.88,
+   "cost": 133.65,
+   "fee": 0.48,
+   "opened": 1785139491,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785110400
+  },
   {
    "token": "79670417518965340166637380137891741750752210241055933511013597289989925437928",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2119,27 +2139,6 @@
    "exit_price": 0.0,
    "pnl": -106.15,
    "settled": 1784296722
-  },
-  {
-   "token": "6389531886339326872019040087067931507394742569293799407834024235601037900549",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Dplus KIA",
-   "title": "LoL: Bilibili Gaming vs Dplus KIA - Game 1 Winner",
-   "their_price": 0.3,
-   "my_price": 0.29,
-   "slippage_pct": -0.0333,
-   "lag_s": 5.6,
-   "shares": 362.5,
-   "cost": 105.13,
-   "fee": 2.24,
-   "opened": 1784293898,
-   "status": "closed",
-   "exit_price": 0.9059,
-   "pnl": 221.01,
-   "settled": 1784296219,
-   "sold_shares": 362.5,
-   "sold_proceeds": 328.38
   }
  ],
  "missed": [
@@ -3096,12 +3095,12 @@
  ],
  "missed_pnl": 111127.17,
  "last_fill": {
-  "ts": 1785130844,
+  "ts": 1785139521,
   "side": "BUY",
-  "price": 0.9,
-  "shares": 61.79,
-  "title": "SPY (SPY) Up or Down on July 27?",
-  "outcome": "Up"
+  "price": 0.88,
+  "shares": 151.88,
+  "title": "LoL: Dplus KIA vs T1 (BO1) - KeSPA Cup Group Stage",
+  "outcome": "T1"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3178,11 +3177,11 @@
    "realized": 63.59,
    "n": 2,
    "wins": 2,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 133.65,
+   "open_n": 1,
    "miss_n": 0,
    "miss_pnl": 0.0,
-   "last_ts": 1785005780
+   "last_ts": 1785139491
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3205,5 +3204,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785137691
+ "updated": 1785139565
 }

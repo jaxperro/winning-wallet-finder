@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785137691,
+ "updated": 1785139565,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 534.13,
@@ -76,11 +76,11 @@
    "realized": 63.59,
    "n": 2,
    "wins": 2,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 133.65,
+   "open_n": 1,
    "miss_n": 0,
    "miss_pnl": 0.0,
-   "last_ts": 1785005780
+   "last_ts": 1785139491
   },
   "0x41558102": {
    "realized": 0.0,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "5093836280630653877561190382016580808144147177143767913302616853585042535941",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "T1",
+   "title": "LoL: Dplus KIA vs T1 (BO1) - KeSPA Cup Group Stage",
+   "their_price": 0.88,
+   "my_price": 0.88,
+   "slippage_pct": 0.0,
+   "lag_s": 30.2,
+   "shares": 151.88,
+   "cost": 133.65,
+   "fee": 0.4812,
+   "opened": 1785139491,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785110400
+  },
   {
    "token": "79670417518965340166637380137891741750752210241055933511013597289989925437928",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
