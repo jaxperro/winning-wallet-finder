@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 134.56,
+ "stake": 134.57,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3363.9,
- "cash": 1714.35,
- "deployed": 1649.55,
+ "hwm": 3364.32,
+ "cash": 1724.71,
+ "deployed": 1639.61,
  "reserve": 0.0,
- "realized": 2363.87,
+ "realized": 2364.29,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 24,
- "fees_paid": 389.47,
+ "fees_paid": 389.48,
  "fee_rate": 0.03,
  "lag": {
   "n": 279,
@@ -3095,12 +3095,12 @@
  ],
  "missed_pnl": 111150.97,
  "last_fill": {
-  "ts": 1785159013,
+  "ts": 1785162562,
   "side": "SELL",
-  "price": 0.93,
-  "shares": 55.56,
-  "title": "SPY (SPY) Up or Down on July 27?",
-  "outcome": "Up"
+  "price": 0.95,
+  "shares": 10.93,
+  "title": "Will LAB reach $24 before 2027?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3204,5 +3204,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785162438
+ "updated": 1785162569
 }
