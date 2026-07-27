@@ -2149,6 +2149,22 @@
  ],
  "missed": [
   {
+   "ts": 1785191856,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "45691138284392247799480039269191461630142831037707390402697922072569909819489",
+   "cond": "0xec8fb126cb6166a24fe41ca44772fb092efd591ffa9e8a8bd27b292f3353a6b5",
+   "title": "US x Iran diplomatic meeting by August 7, 2026?",
+   "outcome": "No",
+   "price": 0.55,
+   "stake": 135.36,
+   "reason": "price moved 0.47\u21920.55",
+   "status": "sold",
+   "pnl": 17.31,
+   "settled": 1785196176,
+   "name": "0xbadaf319",
+   "exit_price": 0.6347
+  },
+  {
    "ts": 1785102628,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "11175144790294018473883407522370233749764592141943374533997532765754332298932",
@@ -2179,21 +2195,6 @@
    "settled": 1785192830,
    "name": "0xbadaf319",
    "exit_price": 0.88
-  },
-  {
-   "ts": 1785191856,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "45691138284392247799480039269191461630142831037707390402697922072569909819489",
-   "cond": "0xec8fb126cb6166a24fe41ca44772fb092efd591ffa9e8a8bd27b292f3353a6b5",
-   "title": "US x Iran diplomatic meeting by August 7, 2026?",
-   "outcome": "No",
-   "price": 0.55,
-   "stake": 135.36,
-   "reason": "price moved 0.47\u21920.55",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1785182570,
@@ -3096,7 +3097,7 @@
    "exit_price": 1.0206
   }
  ],
- "missed_pnl": 111206.7,
+ "missed_pnl": 111224.01,
  "last_fill": {
   "ts": 1785191856,
   "side": "BUY",
@@ -3113,7 +3114,7 @@
    "open_cost": 717.81,
    "open_n": 12,
    "miss_n": 83,
-   "miss_pnl": 111931.3,
+   "miss_pnl": 111948.61,
    "last_ts": 1785191855
   },
   "gkmgkldfmg": {
@@ -3207,5 +3208,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785194162
+ "updated": 1785196177
 }
