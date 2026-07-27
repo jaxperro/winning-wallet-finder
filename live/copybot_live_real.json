@@ -17,6 +17,7 @@
  "lag": {
   "n": 127,
   "n24": 0,
+  "basis": "lifetime",
   "avg_s": 25.4,
   "avg_slip_pct": 0.0213,
   "window_h": 24
@@ -2121,6 +2122,22 @@
  ],
  "missed": [
   {
+   "ts": 1785102626,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "11175144790294018473883407522370233749764592141943374533997532765754332298932",
+   "cond": "0x1a53f4e1df8653751aa2865bdf33129c9fba1b51a6ba3a4397c330894265f3fb",
+   "title": "WTI Crude Oil (WTI) Up or Down on July 27?",
+   "outcome": "Down",
+   "price": 0.82,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.994",
+   "status": "sold",
+   "pnl": 0.12,
+   "settled": 1785194132,
+   "name": "0xbadaf319",
+   "exit_price": 0.9243
+  },
+  {
    "ts": 1785192499,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "80566427864683264408132975495806825930535536706191596908698304900201437338755",
@@ -2442,21 +2459,6 @@
    "price": 0.49,
    "stake": 1.0,
    "reason": "thin book ($7 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785102626,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "11175144790294018473883407522370233749764592141943374533997532765754332298932",
-   "cond": "0x1a53f4e1df8653751aa2865bdf33129c9fba1b51a6ba3a4397c330894265f3fb",
-   "title": "WTI Crude Oil (WTI) Up or Down on July 27?",
-   "outcome": "Down",
-   "price": 0.82,
-   "stake": 1.0,
-   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.994",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -3062,7 +3064,7 @@
    "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 702.66,
+ "missed_pnl": 702.78,
  "last_fill": {
   "ts": 1785175095,
   "side": "SELL",
@@ -3079,7 +3081,7 @@
    "open_cost": 13.33,
    "open_n": 5,
    "miss_n": 96,
-   "miss_pnl": 1734.13,
+   "miss_pnl": 1734.25,
    "last_ts": 1785104758
   },
   "AIcAIc": {
@@ -3183,5 +3185,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785192770
+ "updated": 1785194134
 }
