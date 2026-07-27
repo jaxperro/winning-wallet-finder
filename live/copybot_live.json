@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 135.16,
+ "stake": 135.19,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3378.89,
- "cash": 1743.26,
- "deployed": 1635.63,
+ "hwm": 3379.74,
+ "cash": 1763.99,
+ "deployed": 1615.74,
  "reserve": 0.0,
- "realized": 2378.86,
+ "realized": 2379.71,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 24,
- "fees_paid": 390.04,
+ "fees_paid": 390.07,
  "fee_rate": 0.03,
  "lag": {
   "n": 280,
@@ -3098,12 +3098,12 @@
  ],
  "missed_pnl": 111150.97,
  "last_fill": {
-  "ts": 1785166601,
+  "ts": 1785170383,
   "side": "SELL",
-  "price": 0.91,
-  "shares": 0.05,
-  "title": "US announces halt in Iran offensive operations by August 31?",
-  "outcome": "Yes"
+  "price": 0.95,
+  "shares": 21.85,
+  "title": "Will LAB reach $24 before 2027?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3207,5 +3207,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785166601
+ "updated": 1785170383
 }
