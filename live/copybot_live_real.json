@@ -2121,6 +2121,22 @@
  ],
  "missed": [
   {
+   "ts": 1785139619,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "97295656101998898580206897902568143074088191062355235431234344721344276341985",
+   "cond": "0xde9ebb2f290bc03104ef13f869ddbf9d78a1f9391f6335455a03b1baea5fcf01",
+   "title": "LoL: T1 vs DN SOOPers (BO1) - KeSPA Cup Group Stage",
+   "outcome": "T1",
+   "price": 0.77,
+   "stake": 1.0,
+   "reason": "order rejected: exception: order 0xb23969cb2a9cd69d6a772789997b02201afd4881f",
+   "status": "sold",
+   "pnl": 0.29,
+   "settled": 1785172789,
+   "name": "JuiceFarm",
+   "exit_price": 1.0
+  },
+  {
    "ts": 1785166433,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "49952690042474298096697107838501147620642888076204079490031529723234270830286",
@@ -2243,21 +2259,6 @@
    "settled": 1785144823,
    "name": "0xbadaf319",
    "exit_price": 0.9537
-  },
-  {
-   "ts": 1785139619,
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "token": "97295656101998898580206897902568143074088191062355235431234344721344276341985",
-   "cond": "0xde9ebb2f290bc03104ef13f869ddbf9d78a1f9391f6335455a03b1baea5fcf01",
-   "title": "LoL: T1 vs DN SOOPers (BO1) - KeSPA Cup Group Stage",
-   "outcome": "T1",
-   "price": 0.77,
-   "stake": 1.0,
-   "reason": "order rejected: exception: order 0xb23969cb2a9cd69d6a772789997b02201afd4881f",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "JuiceFarm"
   },
   {
    "ts": 1785127066,
@@ -3061,7 +3062,7 @@
    "exit_price": 0.8858
   }
  ],
- "missed_pnl": 701.92,
+ "missed_pnl": 702.21,
  "last_fill": {
   "ts": 1785170793,
   "side": "SELL",
@@ -3158,7 +3159,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 4,
-   "miss_pnl": 0.15,
+   "miss_pnl": 0.44,
    "last_ts": 1785009025
   },
   "0x41558102": {
@@ -3182,5 +3183,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785170793
+ "updated": 1785172791
 }
