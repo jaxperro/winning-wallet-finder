@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785114047,
+ "updated": 1785115560,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 525.84,
-   "n": 61,
+   "realized": 529.49,
+   "n": 62,
    "wins": 19,
-   "open_cost": 754.74,
-   "open_n": 13,
+   "open_cost": 695.84,
+   "open_n": 12,
    "miss_n": 77,
    "miss_pnl": 111876.4,
-   "last_ts": 1785111585
+   "last_ts": 1785115560
   },
   "gkmgkldfmg": {
    "realized": 928.1,
@@ -95,6 +95,28 @@
  },
  "bets": [
   {
+   "token": "73772414999817992515088687755193145487336993356690533986692595350122387340288",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "WTI Crude Oil (WTI) closes above $91 on July 27?",
+   "their_price": 0.93,
+   "my_price": 0.93,
+   "slippage_pct": 0.0,
+   "lag_s": 2.8,
+   "shares": 63.33,
+   "cost": 58.9,
+   "fee": 0.1237,
+   "opened": 1785103316,
+   "status": "closed",
+   "exit_price": 0.9897,
+   "pnl": 3.65,
+   "settled": 1785115560,
+   "end_ts": 1785110400,
+   "sold_shares": 63.328260210975166,
+   "sold_proceeds": 62.67616911558275
+  },
+  {
    "token": "112774766992396377485489579919863607374726156472090313068282277768607356552228",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -113,28 +135,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785456000
-  },
-  {
-   "token": "73772414999817992515088687755193145487336993356690533986692595350122387340288",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "WTI Crude Oil (WTI) closes above $91 on July 27?",
-   "their_price": 0.93,
-   "my_price": 0.93,
-   "slippage_pct": 0.0,
-   "lag_s": 2.8,
-   "shares": 63.33,
-   "cost": 58.9,
-   "fee": 0.1237,
-   "opened": 1785103316,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785110400,
-   "sold_shares": 51.17020514331584,
-   "sold_proceeds": 50.64330554095511
   },
   {
    "token": "38653928625312634500254748884896709523765538580393484335273651251587581768973",
