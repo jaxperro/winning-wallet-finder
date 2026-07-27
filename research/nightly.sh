@@ -73,14 +73,17 @@ done
 
 "$PY" forward.py >> forward.log 2>&1
 "$PY" informed_set.py >> forward.log 2>&1     # surge harness reads this daily
+"$PY" maker_set.py >> forward.log 2>&1 || true       # leanbot input (#26)
 "$PY" grade_surge.py >> forward.log 2>&1 || true   # A2 measurement -> chain truth
 "$PY" surge_book_replay.py >> forward.log 2>&1 || true  # virtual $100/5% book
 "$PY" grade_oracle.py >> forward.log 2>&1 || true  # oracle paper -> chain truth
 "$PY" grade_lag.py >> forward.log 2>&1 || true      # lead-lag paper -> chain truth
+"$PY" grade_lean.py >> forward.log 2>&1 || true     # maker-lean paper -> chain truth
 "$PY" meta_snap.py >> forward.log 2>&1 || true     # market metadata (local gz)
 
 cd ..
 git add research/forward_ledger.jsonl research/params/informed_set.json \
+        research/lean_paper_ledger.jsonl research/params/maker_set.json \
         research/surge_paper_ledger.jsonl research/oracle_paper_ledger.jsonl research/lag_paper_ledger.jsonl \
         research/surge_meas_ledger.jsonl research/surge_book.json 2>/dev/null
 if ! git diff --cached --quiet; then
