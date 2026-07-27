@@ -1746,6 +1746,13 @@ class Copybot:
             # without copies (2026-07-13 user report). n = lifetime copies,
             # n24 = fills in the window.
             "lag": (lambda t: {"n": lag.get("n", 0), "n24": t[0],
+                               # window empty -> we show the LIFETIME mean, so
+                               # SAY so; the tile used to label it "24h" and
+                               # quietly report a number dragged by the retired
+                               # poll era (2026-07-27 user report)
+                               "basis": ("24h" if t[1] is not None
+                                         else "lifetime" if lag.get("n")
+                                         else "none"),
                                "avg_s": (round(t[1], 1) if t[1] is not None
                                          else (round(lag["sum_s"] / lag["n"], 1)
                                                if lag.get("n") else None)),
@@ -2347,7 +2354,12 @@ class Copybot:
         if not rec:
             return 0, None, None
         n = len(rec)
-        return n, sum(r[1] for r in rec) / n, sum(r[2] for r in rec) / n
+        # MEDIAN, not mean (2026-07-27): one 269s early-rollout outlier made a
+        # 3s bot read as 25s. The tile is a health signal, not an accounting
+        # total, so the typical fill is the honest summary.
+        lags = sorted(r[1] for r in rec)
+        med = lags[n // 2] if n % 2 else (lags[n // 2 - 1] + lags[n // 2]) / 2
+        return n, med, sum(r[2] for r in rec) / n
 
     def summary(self, cycle):
         bank = self.cfg["bankroll_usd"]

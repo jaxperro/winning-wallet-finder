@@ -33,6 +33,12 @@ CLOB_API = "https://clob.polymarket.com"
 POLYGON_CHAIN_ID = 137
 CONFIRM_PHRASE = "TRADE LIVE"
 
+# Polymarket rejects orders under this many shares regardless of dollar
+# value ("Size (1.47) lower than the minimum: 5", observed live 2026-07-27).
+# It makes the real floor PRICE-dependent: a 90c market needs $4.50, a 20c
+# market $1.00 — which is why a $1-stake book can only trade deep longshots.
+MIN_SHARES = 5.0
+
 DEFAULT_CONFIG = {
     "mode": "paper",                 # "paper" or "live"
     "poll_seconds": 12,              # how often to check each wallet
@@ -431,6 +437,17 @@ class CopyTrader:
         if allowed < r["min_order_usd"]:
             return 0.0, (f"capped to ${allowed:.2f} < min order "
                          f"${r['min_order_usd']:.2f} (caps)")
+        # VENUE SHARE MINIMUM (2026-07-27): Polymarket rejects any order
+        # under MIN_SHARES shares — "Size (1.47) lower than the minimum: 5"
+        # — which is a PRICE-dependent dollar floor the $-only gate above
+        # cannot see. At a $1 stake that caps us to <=20c markets; every
+        # 40-90c signal fired a doomed order and booked a venue rejection.
+        # Skip honestly instead, and say what the bet would have needed.
+        need = MIN_SHARES * price
+        if allowed < need - 1e-9:
+            return 0.0, (f"below venue {MIN_SHARES:g}-share minimum: "
+                         f"${allowed:.2f} at {price:.2f} = "
+                         f"{allowed / price:.2f} shares (needs ${need:.2f})")
         return allowed, None
 
     # -- process one of their trades --
