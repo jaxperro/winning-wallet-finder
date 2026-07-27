@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785127066,
+ "updated": 1785128143,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 529.49,
@@ -8,7 +8,7 @@
    "wins": 19,
    "open_cost": 739.69,
    "open_n": 13,
-   "miss_n": 79,
+   "miss_n": 80,
    "miss_pnl": 111890.97,
    "last_ts": 1785127060
   },
@@ -5181,6 +5181,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785128135,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "45008911945219735557521805884729456911272112830419157569734797577265875509979",
+   "cond": "0x44a785ee8973526fd587f902739da9579f29b2326a77d0f2040e480ecc6263c7",
+   "title": "Will Predict.fun launch a token by September 30, 2027?",
+   "outcome": "Yes",
+   "price": 0.5548,
+   "stake": 31.16,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785126129,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
