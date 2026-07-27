@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 63.02,
- "cash": 17.44,
- "deployed": 31.21,
+ "cash": 18.4,
+ "deployed": 30.23,
  "reserve": 0.0,
- "realized": -27.21,
+ "realized": -27.23,
  "adjustments": 9.44,
  "ledger_drift": 0.03,
  "open_count": 15,
@@ -3065,12 +3065,12 @@
  ],
  "missed_pnl": 700.9,
  "last_fill": {
-  "ts": 1784999565,
+  "ts": 1785162570,
   "side": "SELL",
-  "price": 0.95,
-  "shares": 2.3,
-  "title": "LoL: Karmine Corp vs Movistar KOI - Game 1 Winner",
-  "outcome": "Karmine Corp"
+  "price": 0.93,
+  "shares": 1.03,
+  "title": "Will LAB reach $24 before 2027?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3184,5 +3184,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785160793
+ "updated": 1785162570
 }
