@@ -1,8 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0x99526c4edb3c640274ff43dc5c3a7dbc8fb8557b9417bcfd9ce6e8f88e2bc56d",
-    "0x7094e9b788f6455fb6018e31a14ff559406b16793627d7ccb7fbf0f87cd019ef",
     "0xad68e83d1cb01d624192199f4371a0de90735cfae0beb95080112aecdf85797c",
     "0x81c7fadcdbb77c04c4686c9bc98e4be8eee2fe606bbb5982ea284fd9a8ea94e8",
     "0x33d38ca34b90327ba532750fec22b9a32353eb4623460267581e62adf67e9879",
@@ -5000,7 +4998,9 @@
     "0x79514573ed5d870dabb3b60fabfb2c7bdd652d7bc6aa840b6a3b3efe47c539ac",
     "0xc78b97a10c0425c698a9c40b4ccf78037f6627df412630c9fdae48eb3eff004d",
     "0xa08cedfbe9ba30410340544b69263564489d53edebb0c390f0fbbb50d0950f6c",
-    "0xd80c6009e1ead950e6df90ff48e44788ee30a80f9f310bd5b6be7d54c006793d"
+    "0xd80c6009e1ead950e6df90ff48e44788ee30a80f9f310bd5b6be7d54c006793d",
+    "0xd13025f9d8cd0221685b864b03fb853d07883deae214ad407f475a33e5f5ef48",
+    "0xfb11e780b10190efeb32e2f26ae8226016691d705250e03bd948aa69923df5f3"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -19085,25 +19085,9 @@
     }
   },
   "hwm": 3341.713851780293,
-  "feed_sig": "c67a829ff95220befde72ad4cd80b7cf",
-  "feed_pushed_at": 1785139497.0978322,
+  "feed_sig": "530f0f4326cbf3cfd3f8237187023b68",
+  "feed_pushed_at": 1785139626.2270613,
   "missed": [
-    {
-      "ts": 1783627210,
-      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-      "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
-      "cond": "0x3c07935adc293c658ab20651f7fc6478d36e6bfdb375caab539fca9c81de03fd",
-      "title": "Dota 2: LGD Gaming vs 1win - Game 2 Winner",
-      "outcome": "LGD Gaming",
-      "price": 0.58,
-      "stake": 81.63,
-      "reason": "price moved 0.50\u21920.58",
-      "status": "sold",
-      "pnl": 2.84,
-      "settled": 1783627396,
-      "name": "gkmgkldfmg",
-      "exit_price": 0.6146
-    },
     {
       "ts": 1783627634,
       "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -22275,6 +22259,21 @@
       "pnl": null,
       "settled": null,
       "name": "0xbadaf319"
+    },
+    {
+      "ts": 1785139689,
+      "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+      "token": "97295656101998898580206897902568143074088191062355235431234344721344276341985",
+      "cond": "0xde9ebb2f290bc03104ef13f869ddbf9d78a1f9391f6335455a03b1baea5fcf01",
+      "title": "LoL: T1 vs DN SOOPers (BO1) - KeSPA Cup Group Stage",
+      "outcome": "T1",
+      "price": 0.77,
+      "stake": 133.64,
+      "reason": "maker bid unfilled (62s)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "JuiceFarm"
     }
   ],
   "no_miss_toks": [
@@ -22401,12 +22400,12 @@
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1785077212,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1785139224,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1785139228,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1785099999,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1785074847,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1785121536,
     "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1785134371,
-    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1785139585
+    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1785139708
   },
   "boot": {
     "id": "82639ab81f3e",
@@ -22420,31 +22419,10 @@
     "title": "LoL: Dplus KIA vs T1 (BO1) - KeSPA Cup Group Stage",
     "outcome": "T1"
   },
-  "paper_maker": [
-    {
-      "paper_maker": true,
-      "sz": 173.56,
-      "mode": "maker",
-      "token": "97295656101998898580206897902568143074088191062355235431234344721344276341985",
-      "side": "BUY",
-      "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-      "title": "LoL: T1 vs DN SOOPers (BO1) - KeSPA Cup Group Stage",
-      "outcome": "T1",
-      "event": null,
-      "cond": "0xde9ebb2f290bc03104ef13f869ddbf9d78a1f9391f6335455a03b1baea5fcf01",
-      "their_price": 0.77,
-      "their_ts": 1785139620,
-      "price": 0.77,
-      "is_add": false,
-      "stake": 133.64263451761173,
-      "ts": 1785139626.1476548,
-      "ttl_s": 60.0,
-      "ba_at_signal": 0.78
-    }
-  ],
+  "paper_maker": [],
   "maker_stats": {
     "fills": 46,
-    "misses": 19
+    "misses": 20
   },
   "ignored_exits": [
     {
