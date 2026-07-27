@@ -2147,6 +2147,21 @@
  ],
  "missed": [
   {
+   "ts": 1785162430,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "65075316665858123310904205342608300814898488753088658332913116406808619343398",
+   "cond": "0x6899f21b3a3d26c8ae9d0332c25d160fc08b9c3b834f0d8fe116d2ec87905dc9",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $130 Week of July 27 2026?",
+   "outcome": "No",
+   "price": 0.5463,
+   "stake": 33.91,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785126129,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "74119673575030259137547668301986785745647371043511033522238877972140940630607",
@@ -3076,25 +3091,9 @@
    "settled": 1784756458,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1784737932,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "101809971081124775410756971833962290310584447326615818129608807839263253483036",
-   "cond": "0x7665295c0d116c9df0dccbbf10148a37f39093a7b1427b2f46358f6ec31b6cd3",
-   "title": "Will NVIDIA (NVDA) close above $205 on July 22?",
-   "outcome": "Yes",
-   "price": 0.94,
-   "stake": 11.49,
-   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
-   "status": "won",
-   "pnl": 0.71,
-   "settled": 1784753351,
-   "name": "0xbadaf319",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 111151.8,
+ "missed_pnl": 111150.97,
  "last_fill": {
   "ts": 1785159013,
   "side": "SELL",
@@ -3110,7 +3109,7 @@
    "wins": 19,
    "open_cost": 704.45,
    "open_n": 12,
-   "miss_n": 80,
+   "miss_n": 81,
    "miss_pnl": 111921.67,
    "last_ts": 1785144326
   },
@@ -3205,5 +3204,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785160462
+ "updated": 1785162438
 }
