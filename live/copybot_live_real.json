@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785139495,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "5093836280630653877561190382016580808144147177143767913302616853585042535941",
+   "cond": "0xd58aa21e48555a4f12eaf634bf513b10d00e380c365a13d90d725d774f5efd23",
+   "title": "LoL: Dplus KIA vs T1 (BO1) - KeSPA Cup Group Stage",
+   "outcome": "T1",
+   "price": 0.87,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.994",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "JuiceFarm"
+  },
+  {
    "ts": 1785127066,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "52897893276285627510690194142963884799788689807458708980439810896103687693971",
@@ -3046,25 +3061,9 @@
    "settled": 1784846124,
    "name": "BikesAreTheBikes",
    "exit_price": 0.79
-  },
-  {
-   "ts": 1784750680,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "110230164960434404310059385575944076505582891264305624307112518287452413536393",
-   "cond": "0x1d15ca70c93da7338e6134144dd19a41a8120f8a1ad1bca067478cdbf6d5b18a",
-   "title": "LoL: Myth Esports vs Dynasty - Game 1 Winner",
-   "outcome": "Myth Esports",
-   "price": 0.45,
-   "stake": 2.52,
-   "reason": "order rejected twice (re-quote retry): exception: no orders found to match with FAK order. FAK orde",
-   "status": "lost",
-   "pnl": -2.56,
-   "settled": 1784836462,
-   "name": "Kruto2027",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 698.44,
+ "missed_pnl": 699.45,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3130,8 +3129,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 2,
-   "miss_pnl": -1.01,
+   "miss_n": 1,
+   "miss_pnl": 0.0,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -3160,7 +3159,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 0,
+   "miss_n": 1,
    "miss_pnl": 0.0,
    "last_ts": 1785009025
   },
@@ -3170,8 +3169,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 18,
-   "miss_pnl": 0.35,
+   "miss_n": 19,
+   "miss_pnl": -0.66,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3185,5 +3184,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785130890
+ "updated": 1785139495
 }
