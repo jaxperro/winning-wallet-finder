@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785189785,
+ "updated": 1785191863,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 555.08,
    "n": 66,
    "wins": 20,
-   "open_cost": 648.84,
-   "open_n": 11,
-   "miss_n": 81,
+   "open_cost": 717.81,
+   "open_n": 12,
+   "miss_n": 82,
    "miss_pnl": 111921.67,
-   "last_ts": 1785185014
+   "last_ts": 1785191855
   },
   "gkmgkldfmg": {
    "realized": 928.1,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "45117272123752214028376460723544361926835506941716663290099518852020253462421",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "US x Iran diplomatic meeting by August 15, 2026?",
+   "their_price": 0.41,
+   "my_price": 0.41,
+   "slippage_pct": 0.0,
+   "lag_s": 1.3,
+   "shares": 168.23,
+   "cost": 68.97,
+   "fee": 1.2208,
+   "opened": 1785191855,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786752000
+  },
   {
    "token": "79670417518965340166637380137891741750752210241055933511013597289989925437928",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -5251,6 +5271,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785191856,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "45691138284392247799480039269191461630142831037707390402697922072569909819489",
+   "cond": "0xec8fb126cb6166a24fe41ca44772fb092efd591ffa9e8a8bd27b292f3353a6b5",
+   "title": "US x Iran diplomatic meeting by August 7, 2026?",
+   "outcome": "No",
+   "price": 0.55,
+   "stake": 135.36,
+   "reason": "price moved 0.47\u21920.55",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785182570,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",

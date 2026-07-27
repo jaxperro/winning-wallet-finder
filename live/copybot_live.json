@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 135.36,
+ "stake": 135.31,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3384.05,
- "cash": 1811.56,
- "deployed": 1572.49,
+ "cash": 1741.36,
+ "deployed": 1641.46,
  "reserve": 0.0,
- "realized": 2384.02,
+ "realized": 2382.79,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 23,
- "fees_paid": 390.1,
+ "open_count": 24,
+ "fees_paid": 391.32,
  "fee_rate": 0.03,
  "lag": {
-  "n": 280,
-  "n24": 5,
-  "avg_s": 11.5,
+  "n": 281,
+  "n24": 6,
+  "avg_s": 9.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "45117272123752214028376460723544361926835506941716663290099518852020253462421",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "US x Iran diplomatic meeting by August 15, 2026?",
+   "their_price": 0.41,
+   "my_price": 0.41,
+   "slippage_pct": 0.0,
+   "lag_s": 1.3,
+   "shares": 168.23,
+   "cost": 68.97,
+   "fee": 1.22,
+   "opened": 1785191855,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786752000
+  },
   {
    "token": "79670417518965340166637380137891741750752210241055933511013597289989925437928",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2124,31 +2144,24 @@
    "settled": 1784300281,
    "sold_shares": 422.2,
    "sold_proceeds": 1.64
-  },
-  {
-   "token": "8310650677069487821478025416478130051168635736368290554555541536659374960027",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Bab el-Mandeb Strait effectively closed by August 31?",
-   "their_price": 0.78,
-   "my_price": 0.81,
-   "slippage_pct": 0.0385,
-   "lag_s": 4.7,
-   "shares": 135.4,
-   "cost": 109.67,
-   "fee": 0.63,
-   "opened": 1784300229,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 84.27,
-   "sold_proceeds": 68.68,
-   "end_ts": 1788134400
   }
  ],
  "missed": [
+  {
+   "ts": 1785191856,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "45691138284392247799480039269191461630142831037707390402697922072569909819489",
+   "cond": "0xec8fb126cb6166a24fe41ca44772fb092efd591ffa9e8a8bd27b292f3353a6b5",
+   "title": "US x Iran diplomatic meeting by August 7, 2026?",
+   "outcome": "No",
+   "price": 0.55,
+   "stake": 135.36,
+   "reason": "price moved 0.47\u21920.55",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785182570,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -3079,31 +3092,15 @@
    "settled": 1784758713,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1784746881,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "101073632313407449841258966324566339609029406016329643951331988915036734803060",
-   "cond": "0xd51ea730858a341990e878b08c665d0361dfec8a6f29d41b0c598f7c5a27561c",
-   "title": "Set 1 Winner: Gonzalez vs Valdez",
-   "outcome": "Gonzalez",
-   "price": 0.48,
-   "stake": 116.3,
-   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
-   "status": "refund",
-   "pnl": 3.03,
-   "settled": 1784756659,
-   "name": "Kruto2027",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 111182.05,
+ "missed_pnl": 111178.15,
  "last_fill": {
-  "ts": 1785175094,
-  "side": "SELL",
-  "price": 0.996,
-  "shares": 24.85,
-  "title": "Amazon 2026 capex above $180B?",
+  "ts": 1785191856,
+  "side": "BUY",
+  "price": 0.41,
+  "shares": 168.23,
+  "title": "US x Iran diplomatic meeting by August 15, 2026?",
   "outcome": "Yes"
  },
  "wallet_pnl": {
@@ -3111,11 +3108,11 @@
    "realized": 555.08,
    "n": 66,
    "wins": 20,
-   "open_cost": 648.84,
-   "open_n": 11,
-   "miss_n": 81,
+   "open_cost": 717.81,
+   "open_n": 12,
+   "miss_n": 82,
    "miss_pnl": 111921.67,
-   "last_ts": 1785185014
+   "last_ts": 1785191855
   },
   "gkmgkldfmg": {
    "realized": 928.1,
@@ -3208,5 +3205,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785189785
+ "updated": 1785191863
 }
