@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785175101,
+ "updated": 1785182576,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 553.06,
@@ -38,7 +38,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 5,
+   "miss_n": 6,
    "miss_pnl": 347.53,
    "last_ts": 1784679219
   },
@@ -5251,6 +5251,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785182570,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "115289753838857732506008126031819274849142757215567510934288229988887639669500",
+   "cond": "0xb4b758f84d9c2acd555dfe98b2ce9b817ef3935a955688254545d290f5d5baa4",
+   "title": "Fritz vs. Bergs: Match O/U 22.5",
+   "outcome": "Under",
+   "price": 0.58,
+   "stake": 5.15,
+   "reason": "maker bid unfilled (76s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1785139689,
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
