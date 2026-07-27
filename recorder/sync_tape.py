@@ -132,6 +132,7 @@ def main():
         return 0
     have = {r[0] for r in con.execute("SELECT segment FROM ingested").fetchall()}
     got = 0
+    pending_acks = []
     for d in new:
         rel, seg = d["path"], d["segment"]
         dst = os.path.join(MIRROR, rel)
@@ -171,9 +172,29 @@ def main():
             con.execute("COMMIT")
         with open(LOCAL_MANIFEST, "a") as fh:
             fh.write(json.dumps(d) + "\n")
-        box(f"touch {PQ}/acks/{os.path.basename(rel)}.ok")
+        # ACK IS DEFERRED AND NON-FATAL (2026-07-27): one ssh round-trip per
+        # file rides WireGuard, which travel networks throttle to the point
+        # of timing out — and a raised TimeoutExpired used to kill the whole
+        # sync mid-backlog (52 files in, 12 to go). The invariant is
+        # one-directional: the box may delete ONLY what the Mac acked, so a
+        # MISSING ack is always safe (box keeps the file; 25GB ≈ 3+ weeks).
+        # Batch them at the end, best-effort.
+        pending_acks.append(os.path.basename(rel))
         got += 1
-        print(f"[sync] {rel}: {n} rows -> db + mirror + ack")
+        print(f"[sync] {rel}: {n} rows -> db + mirror (ack queued)")
+    # batched ack: ONE ssh round-trip for the whole run (was one per file).
+    # Never fatal — unacked files simply wait for a healthier network; the
+    # next run re-acks them (touch is idempotent, and `have` keeps the DB
+    # from re-ingesting).
+    if pending_acks:
+        try:
+            box("touch " + " ".join(f"{PQ}/acks/{a}.ok"
+                                    for a in pending_acks), timeout=180)
+            print(f"[sync] acked {len(pending_acks)} file(s) in one call")
+        except Exception as e:
+            print(f"[sync] ⚠ ack deferred ({type(e).__name__}) — box keeps "
+                  f"{len(pending_acks)} file(s) until a healthier run; "
+                  f"data already in db + mirror")
     n, = con.execute("SELECT count(*) FROM trades").fetchone()
     print(f"[sync] +{got}/{len(new)} files · rtds.duckdb now {n:,} trades")
     return 0
