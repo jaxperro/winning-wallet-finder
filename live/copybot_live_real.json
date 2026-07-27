@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785145522,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "109560195847127443718098720993839508458395767835235641294925271566812897320563",
+   "cond": "0xcdf022c2b67b00eeb6325e4f2e7471cc6db10f907185b12f0a1d5f41b5f64b11",
+   "title": "LoL: Solary vs Esprit Sh\u014dnen (BO1) - LFL Regular Season",
+   "outcome": "Solary",
+   "price": 0.88,
+   "stake": 1.0,
+   "reason": "order rejected: exception: order 0x3c811b9bf6510a7c361b4fab91abf5cd065a955b0",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "JuiceFarm"
+  },
+  {
    "ts": 1785145428,
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
    "token": "44947152591637181972300049650785829928165871645008039071331001566404599378498",
@@ -3043,25 +3058,9 @@
    "settled": 1784887131,
    "name": "0xbadaf319",
    "exit_price": 0.3234
-  },
-  {
-   "ts": 1784877689,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "67912387740604654388311594539741757732325634041020667730293753310456593145775",
-   "cond": "0x366e55ad583f0bc42db0af8c076a07f003d8099ddea6e309aeac8f4086e3f1bd",
-   "title": "LoL: Anyone's Legend vs LGD Gaming - Game 1 Winner",
-   "outcome": "Anyone's Legend",
-   "price": 0.65,
-   "stake": 2.42,
-   "reason": "order rejected: exception: order 0xa61660e19d8101e715ba7ef921f806f74989e6ce8",
-   "status": "sold",
-   "pnl": 1.09,
-   "settled": 1784879233,
-   "name": "AIcAIc",
-   "exit_price": 0.95
   }
  ],
- "missed_pnl": 699.59,
+ "missed_pnl": 699.6,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3157,7 +3156,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 3,
+   "miss_n": 4,
    "miss_pnl": 0.0,
    "last_ts": 1785009025
   },
@@ -3182,5 +3181,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785145428
+ "updated": 1785145528
 }

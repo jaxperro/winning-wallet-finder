@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1785145428,
+ "updated": 1785145528,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": -1.02,
@@ -88,7 +88,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 3,
+   "miss_n": 4,
    "miss_pnl": 0.0,
    "last_ts": 1785009025
   },
@@ -2826,6 +2826,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785145522,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "109560195847127443718098720993839508458395767835235641294925271566812897320563",
+   "cond": "0xcdf022c2b67b00eeb6325e4f2e7471cc6db10f907185b12f0a1d5f41b5f64b11",
+   "title": "LoL: Solary vs Esprit Sh\u014dnen (BO1) - LFL Regular Season",
+   "outcome": "Solary",
+   "price": 0.88,
+   "stake": 1.0,
+   "reason": "order rejected: exception: order 0x3c811b9bf6510a7c361b4fab91abf5cd065a955b0",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "JuiceFarm"
+  },
   {
    "ts": 1785145428,
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
