@@ -27,11 +27,23 @@ if ! mkdir "$LOCK" 2>/dev/null; then
   # later night then skips SILENTLY. Trust the recorded PID: if it is gone,
   # the lock is debris, so take it over.
   OWNER=$(cat "$LOCK/pid" 2>/dev/null)
-  if [ -n "$OWNER" ] && kill -0 "$OWNER" 2>/dev/null; then
-    echo "$(date -u +%FT%TZ) already running (pid $OWNER) — skip" >> forward.log
-    exit 0
+  if [ -n "$OWNER" ]; then
+    if kill -0 "$OWNER" 2>/dev/null; then
+      echo "$(date -u +%FT%TZ) already running (pid $OWNER) — skip" >> forward.log
+      exit 0
+    fi
+    echo "$(date -u +%FT%TZ) STALE lock (pid $OWNER gone) — taking over" >> forward.log
+  else
+    # No pid file = a lock from before this guard existed (or a crash between
+    # mkdir and the write). Do NOT assume stale — that ran two nightlies at
+    # once on 2026-07-27. Age it out instead: 6h is longer than any real run.
+    AGE=$(( $(date +%s) - $(stat -f %m "$LOCK" 2>/dev/null || echo 0) ))
+    if [ "$AGE" -lt 21600 ]; then
+      echo "$(date -u +%FT%TZ) lock held (no pid, age ${AGE}s < 6h) — skip" >> forward.log
+      exit 0
+    fi
+    echo "$(date -u +%FT%TZ) STALE lock (no pid, age ${AGE}s) — taking over" >> forward.log
   fi
-  echo "$(date -u +%FT%TZ) STALE lock (pid ${OWNER:-none} gone) — taking over" >> forward.log
 fi
 echo $$ > "$LOCK/pid"
 trap 'rmdir "$LOCK"' EXIT
