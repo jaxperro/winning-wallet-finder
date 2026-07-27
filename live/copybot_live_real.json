@@ -2121,6 +2121,36 @@
  ],
  "missed": [
   {
+   "ts": 1785191856,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "45691138284392247799480039269191461630142831037707390402697922072569909819489",
+   "cond": "0xec8fb126cb6166a24fe41ca44772fb092efd591ffa9e8a8bd27b292f3353a6b5",
+   "title": "US x Iran diplomatic meeting by August 7, 2026?",
+   "outcome": "No",
+   "price": 0.55,
+   "stake": 1.0,
+   "reason": "price moved 0.47\u21920.55",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785191856,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "45117272123752214028376460723544361926835506941716663290099518852020253462421",
+   "cond": "0x7f0d84b155c484b801f2cba68eb0f9ef8b2a0a54b7e6bb0fa53a1778964f53fd",
+   "title": "US x Iran diplomatic meeting by August 15, 2026?",
+   "outcome": "Yes",
+   "price": 0.39,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.996",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785130838,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "79670417518965340166637380137891741750752210241055933511013597289989925437928",
@@ -3030,38 +3060,6 @@
    "settled": 1784887137,
    "name": "AIcAIc",
    "exit_price": 0.95
-  },
-  {
-   "ts": 1784557345,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "67913011466625262359588841481742993497498081452195278087275807248301608894093",
-   "cond": "0x6abe5fe01ca113b7d6040604a8619cadf181d4e4a6d8db3a082542417af806fd",
-   "title": "Will SpaceX Starship Flight Test 13 launch by August 31?",
-   "outcome": "Yes",
-   "price": 0.824,
-   "stake": 2.41,
-   "reason": "thin book ($4 within 5c < $50)",
-   "status": "sold",
-   "pnl": 0.12,
-   "settled": 1784887134,
-   "name": "0xbadaf319",
-   "exit_price": 0.8729
-  },
-  {
-   "ts": 1784438883,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "18859662100986706442931434084612043934725834523854128874928569872427180020630",
-   "cond": "0x4906333de7e9252101ded75f9bac59e07d158573381c89afe6f719dd3baadefd",
-   "title": "Will Western Digital (WDC) Q4 exabytes shipped be above 255?",
-   "outcome": "No",
-   "price": 0.83,
-   "stake": 2.0,
-   "reason": "thin book ($17 within 5c < $50)",
-   "status": "sold",
-   "pnl": 0.09,
-   "settled": 1784887133,
-   "name": "0xbadaf319",
-   "exit_price": 0.8753
   }
  ],
  "missed_pnl": 702.4,
@@ -3080,7 +3078,7 @@
    "wins": 7,
    "open_cost": 13.33,
    "open_n": 5,
-   "miss_n": 93,
+   "miss_n": 95,
    "miss_pnl": 1733.79,
    "last_ts": 1785104758
   },
@@ -3185,5 +3183,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785184790
+ "updated": 1785191856
 }
