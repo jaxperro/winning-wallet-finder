@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1785192499,
+ "updated": 1785192770,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": -1.02,
@@ -9,7 +9,7 @@
    "open_cost": 13.33,
    "open_n": 5,
    "miss_n": 96,
-   "miss_pnl": 1733.79,
+   "miss_pnl": 1734.13,
    "last_ts": 1785104758
   },
   "AIcAIc": {
@@ -2838,10 +2838,11 @@
    "price": 0.65,
    "stake": 1.0,
    "reason": "order rejected: exception: order 0xa2d10630247477eb272c5a0ed40a7d8a82f013468",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
+   "status": "sold",
+   "pnl": 0.34,
+   "settled": 1785192769,
+   "name": "0xbadaf319",
+   "exit_price": 0.88
   },
   {
    "ts": 1785191856,
