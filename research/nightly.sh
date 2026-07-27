@@ -22,9 +22,18 @@ POLL_S=900
 # run: exit 1 + a stale lock that would have skipped every future night).
 LOCK="$(pwd)/.nightly.lock.d"
 if ! mkdir "$LOCK" 2>/dev/null; then
-  echo "$(date -u +%FT%TZ) already running — skip" >> forward.log
-  exit 0
+  # STALE-LOCK GUARD (2026-07-27): a killed run (pause, crash, reboot) can
+  # leave the dir behind — the EXIT trap never fires on SIGKILL — and every
+  # later night then skips SILENTLY. Trust the recorded PID: if it is gone,
+  # the lock is debris, so take it over.
+  OWNER=$(cat "$LOCK/pid" 2>/dev/null)
+  if [ -n "$OWNER" ] && kill -0 "$OWNER" 2>/dev/null; then
+    echo "$(date -u +%FT%TZ) already running (pid $OWNER) — skip" >> forward.log
+    exit 0
+  fi
+  echo "$(date -u +%FT%TZ) STALE lock (pid ${OWNER:-none} gone) — taking over" >> forward.log
 fi
+echo $$ > "$LOCK/pid"
 trap 'rmdir "$LOCK"' EXIT
 
 tape_age() {

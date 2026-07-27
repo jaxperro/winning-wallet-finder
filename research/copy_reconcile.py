@@ -106,7 +106,20 @@ def main():
             and b.get("entry_t", 0) >= fs.get(nm2w.get(b["name"], ""), 0)]
     print(f"backtest bets in the parity era with join keys "
           f"(follow-since applied): {len(bets)}", flush=True)
-    db = tape.connect()
+    # rtds.duckdb is single-writer and the 15-min tape-sync agent holds it in
+    # bursts; the daily's reconcile step used to die outright on the
+    # collision (2026-07-27). Wait it out — the sync finishes in seconds.
+    for _try in range(20):
+        try:
+            db = tape.connect()
+            break
+        except Exception as e:
+            if "lock" not in str(e).lower() or _try == 19:
+                raise
+            if _try == 0:
+                print("[reconcile] tape locked by the sync agent — waiting…",
+                      flush=True)
+            time.sleep(30)
     tape.build_resolved(db)
     pays = fwd.payouts_for(db, [b["asset"] for b in bets])
     v = bot_views()
