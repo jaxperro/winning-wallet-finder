@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785110815,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "48824398491280100431239513921328336173859523998182185336991038266268084020611",
+   "cond": "0xceb1b54f8e0fa8fb4d240b042505ec7681715758a89f82b3e356a003094c8438",
+   "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $148 Week of July 27 2026?",
+   "outcome": "No",
+   "price": 0.67,
+   "stake": 1.0,
+   "reason": "thin book ($21 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785110779,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "35886998552783861513685353913940426093865851929878480433719442414123918040441",
@@ -3048,25 +3063,9 @@
    "settled": 1784800803,
    "name": "BikesAreTheBikes",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1784755189,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "6942521039548952262803452715536366269632833663841807575802631974514414220741",
-   "cond": "0x1121a02fc780ddeb79cf91cdf2fea0a7dc2a8eb91a8643e86a4a415ab519ab90",
-   "title": "Will the Houthis successfully target shipping by August 31, 2026?",
-   "outcome": "No",
-   "price": 0.16,
-   "stake": 2.52,
-   "reason": "thin book ($8 within 5c < $50)",
-   "status": "lost",
-   "pnl": -2.58,
-   "settled": 1784772284,
-   "name": "BikesAreTheBikes",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 1725.58,
+ "missed_pnl": 1726.59,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3082,7 +3081,7 @@
    "wins": 7,
    "open_cost": 13.33,
    "open_n": 5,
-   "miss_n": 84,
+   "miss_n": 85,
    "miss_pnl": 1731.6,
    "last_ts": 1785104758
   },
@@ -3132,8 +3131,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 3,
-   "miss_pnl": -2.02,
+   "miss_n": 2,
+   "miss_pnl": -1.01,
    "last_ts": 1783828844
   },
   "BikesAreTheBikes": {
@@ -3172,8 +3171,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 17,
-   "miss_pnl": 1.36,
+   "miss_n": 18,
+   "miss_pnl": 0.35,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3187,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785110785
+ "updated": 1785110821
 }
