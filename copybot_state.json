@@ -1,8 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0xc330ba60c373509cf6bb5bf6af6d088e09b5b16e5c500f598d4deabb8abdd874",
-    "0xf6bdd2611abc39c4700af76314dc5aedd279861de8cc19867d9ab97a6207d091",
     "0xc5c701e5f9d877a5abce35512ede941642ff36cf99ee0a35aaf7ae6adc0243d7",
     "0x7e2706d82b7c5cc78bce7484b26e647ecc6bdf3b8b17e749c152d2ec7873d649",
     "0x37271a3b42706f6bdd350b52b7934010f7fe84325e216d981b6b8f67539b27c8",
@@ -5000,7 +4998,9 @@
     "0x53637425fafff18facb8de30944622996495ebec0d13fd39c04d152868ed828f",
     "0xe6c75dc2ed36ed1187c26c1447c5e5be35e7a65c506f666512ba044fd3c0b52f",
     "0xf3c9c4c3ecc52efb85d6a68476bf191dfe06806b6ec0c0dcb315e87029f61d68",
-    "0x144fb1d15ec4e532293187a2884122e438ef20b676dece5f2f16632a3d5773eb"
+    "0x144fb1d15ec4e532293187a2884122e438ef20b676dece5f2f16632a3d5773eb",
+    "0xa736c9171ccadef0768132835548764ff5405869937cc6ba75502c5ef0579e3a",
+    "0xe84fb251dfaecf6dc242fb4d495d1f84366744ed7bca2f7ab5880d97ee8f0d83"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -10396,7 +10396,9 @@
       "107504891632815999637002772178305299765396815437535131855162503864828528783551": 0.0,
       "107156085038944146438947590438365026964800691960988984359921209164919978522933": 0.0,
       "5093836280630653877561190382016580808144147177143767913302616853585042535941": 1500,
-      "97295656101998898580206897902568143074088191062355235431234344721344276341985": 1190.07
+      "97295656101998898580206897902568143074088191062355235431234344721344276341985": 1190.07,
+      "44947152591637181972300049650785829928165871645008039071331001566404599378498": 1063.71,
+      "109560195847127443718098720993839508458395767835235641294925271566812897320563": 935.5
     }
   },
   "seed_tokens": {
@@ -19079,25 +19081,9 @@
     }
   },
   "hwm": 3344.114641627086,
-  "feed_sig": "c1c1b33e053d403b2df04b0ca1553277",
-  "feed_pushed_at": 1785144264.576005,
+  "feed_sig": "30f476cd112246470b37c4b2bcd1990e",
+  "feed_pushed_at": 1785145462.8225374,
   "missed": [
-    {
-      "ts": 1783627634,
-      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-      "token": "103411465761314013516623317407991195647989479153015683264102111901794650848128",
-      "cond": "0x3c07935adc293c658ab20651f7fc6478d36e6bfdb375caab539fca9c81de03fd",
-      "title": "Dota 2: LGD Gaming vs 1win - Game 2 Winner",
-      "outcome": "LGD Gaming",
-      "price": 0.51,
-      "stake": 81.69,
-      "reason": "price moved 0.47\u21920.51",
-      "status": "sold",
-      "pnl": 3.72,
-      "settled": 1783628018,
-      "name": "gkmgkldfmg",
-      "exit_price": 0.5481
-    },
     {
       "ts": 1783628730,
       "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -22268,6 +22254,21 @@
       "pnl": null,
       "settled": null,
       "name": "JuiceFarm"
+    },
+    {
+      "ts": 1785145529,
+      "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+      "token": "44947152591637181972300049650785829928165871645008039071331001566404599378498",
+      "cond": "0x26df9caa9bf1d7d5a3454ba68aebc046a48e25b65e1c70c972268c20fa7c8ec2",
+      "title": "LoL: Solary vs Ici Japon Corp. Esport (BO1) - LFL Regular Season",
+      "outcome": "Solary",
+      "price": 0.7931,
+      "stake": 133.76,
+      "reason": "maker bid unfilled (95s)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "JuiceFarm"
     }
   ],
   "no_miss_toks": [
@@ -22383,7 +22384,7 @@
     "111238155193029214626119372717509509454868187612257655146390848111901958320265": 1,
     "54808825071623730922593344072571837691813951745707044026991588993889799442913": 1,
     "45276939554340428771698865022604030782253660716041002232668611227463504055173": 1,
-    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 735,
+    "30518385375198439635185229487622977022492810585983145828956543777339451661080": 739,
     "17278012384173360502232131272354786231595802723343593413625940837844848366978": 1,
     "35613520187412099541224398067273773941235385627221930769717313222719613151332": 1,
     "30105308353288988924984162628182939641372197734077392129497102501234749347616": 1,
@@ -22400,7 +22401,7 @@
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1785074847,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1785121536,
     "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1785134371,
-    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1785141379
+    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1785145498
   },
   "boot": {
     "id": "82639ab81f3e",
@@ -22414,72 +22415,33 @@
     "title": "Will Amazon.com, Inc. (AMZN) hit (HIGH) $280 in July?",
     "outcome": "No"
   },
-  "paper_maker": [],
+  "paper_maker": [
+    {
+      "paper_maker": true,
+      "sz": 152.0,
+      "mode": "maker",
+      "token": "109560195847127443718098720993839508458395767835235641294925271566812897320563",
+      "side": "BUY",
+      "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+      "title": "LoL: Solary vs Esprit Sh\u014dnen (BO1) - LFL Regular Season",
+      "outcome": "Solary",
+      "event": null,
+      "cond": "0xcdf022c2b67b00eeb6325e4f2e7471cc6db10f907185b12f0a1d5f41b5f64b11",
+      "their_price": 0.88,
+      "their_ts": 1785145522,
+      "price": 0.88,
+      "is_add": false,
+      "stake": 133.76458566508344,
+      "ts": 1785145529.1891558,
+      "ttl_s": 60.0,
+      "ba_at_signal": 0.9
+    }
+  ],
   "maker_stats": {
     "fills": 46,
-    "misses": 20
+    "misses": 21
   },
   "ignored_exits": [
-    {
-      "ts": 1785080582.8,
-      "token": "98557002898950649707610758478512958595262755016561795127783281070673537274115",
-      "their_size": 36.144577,
-      "their_prev": 1633.6066,
-      "frac": 0.0221,
-      "reason": "band",
-      "sell_px": 0.83,
-      "shares_held": 198.66,
-      "cost_held": 127.14,
-      "title": "Dota 2: KW vs RE.Arise - Game 1 Winner",
-      "outcome": "RE.Arise",
-      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-      "mode": "paper"
-    },
-    {
-      "ts": 1785080596.4,
-      "token": "98557002898950649707610758478512958595262755016561795127783281070673537274115",
-      "their_size": 1960.66,
-      "their_prev": 1597.462023,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.85,
-      "shares_held": 198.66,
-      "cost_held": 127.14,
-      "title": "Dota 2: KW vs RE.Arise - Game 1 Winner",
-      "outcome": "RE.Arise",
-      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-      "mode": "paper"
-    },
-    {
-      "ts": 1785080614.9,
-      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.88,
-      "shares_held": 0.8746,
-      "cost_held": 0.61,
-      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1785080617.1,
-      "token": "98557002898950649707610758478512958595262755016561795127783281070673537274115",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.84,
-      "shares_held": 198.66,
-      "cost_held": 127.14,
-      "title": "Dota 2: KW vs RE.Arise - Game 1 Winner",
-      "outcome": "RE.Arise",
-      "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-      "mode": "paper"
-    },
     {
       "ts": 1785080947.6,
       "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
@@ -25407,6 +25369,66 @@
     },
     {
       "ts": 1785144254.2,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1785144597.3,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1785144933.4,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1785145268.6,
+      "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 0.8746,
+      "cost_held": 0.61,
+      "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1785145597.6,
       "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
       "their_size": 0,
       "their_prev": 0,
