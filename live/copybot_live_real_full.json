@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1785182500,
+ "updated": 1785182798,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": -1.02,
@@ -79,7 +79,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 9,
-   "miss_pnl": 6.78,
+   "miss_pnl": 6.91,
    "last_ts": 1784497466
   },
   "JuiceFarm": {
@@ -2838,10 +2838,11 @@
    "price": 0.61,
    "stake": 1.0,
    "reason": "order rejected: exception: order 0xe91744d4b0b591902a6b4e052905ed05e6e56d512",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
+   "status": "sold",
+   "pnl": 0.13,
+   "settled": 1785182797,
+   "name": "Kruto2027",
+   "exit_price": 0.7
   },
   {
    "ts": 1785166433,
