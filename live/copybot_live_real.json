@@ -2121,6 +2121,21 @@
  ],
  "missed": [
   {
+   "ts": 1785111590,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "112774766992396377485489579919863607374726156472090313068282277768607356552228",
+   "cond": "0x1b158a9177d2b8cb17144844069b93753c2578ace89a07d06fe1872c86ff8e90",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $140 Week of July 27 2026?",
+   "outcome": "Yes",
+   "price": 0.44,
+   "stake": 1.0,
+   "reason": "order rejected: exception: invalid amount for a marketable BUY order ($0.995",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785110815,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "48824398491280100431239513921328336173859523998182185336991038266268084020611",
@@ -3047,25 +3062,9 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784696452,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "68642938852444405618524357112499284175503313921723452625127267630411120480355",
-   "cond": "0x3143454e474c199ec69abacc2a962885b1b82f9201837624ab0883be9e15436d",
-   "title": "Will Elon Musk post 140-159 tweets from July 17 to July 24, 2026?",
-   "outcome": "No",
-   "price": 0.64,
-   "stake": 2.47,
-   "reason": "price moved 0.59\u21920.64",
-   "status": "sold",
-   "pnl": 1.36,
-   "settled": 1784800803,
-   "name": "BikesAreTheBikes",
-   "exit_price": 1.0
   }
  ],
- "missed_pnl": 1726.59,
+ "missed_pnl": 1726.82,
  "last_fill": {
   "ts": 1784999565,
   "side": "SELL",
@@ -3081,7 +3080,7 @@
    "wins": 7,
    "open_cost": 13.33,
    "open_n": 5,
-   "miss_n": 85,
+   "miss_n": 86,
    "miss_pnl": 1731.6,
    "last_ts": 1785104758
   },
@@ -3186,5 +3185,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785110821
+ "updated": 1785111590
 }
