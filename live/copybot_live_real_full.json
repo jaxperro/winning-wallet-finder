@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": 1785144828,
+ "updated": 1785145428,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": -1.02,
@@ -58,7 +58,7 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 1,
+   "miss_n": 0,
    "miss_pnl": 0.0,
    "last_ts": 1783828844
   },
@@ -88,7 +88,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 2,
+   "miss_n": 3,
    "miss_pnl": 0.0,
    "last_ts": 1785009025
   },
@@ -98,7 +98,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 19,
+   "miss_n": 20,
    "miss_pnl": -0.66,
    "last_ts": 0
   },
@@ -2826,6 +2826,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785145428,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "44947152591637181972300049650785829928165871645008039071331001566404599378498",
+   "cond": "0x26df9caa9bf1d7d5a3454ba68aebc046a48e25b65e1c70c972268c20fa7c8ec2",
+   "title": "LoL: Solary vs Ici Japon Corp. Esport (BO1) - LFL Regular Season",
+   "outcome": "Solary",
+   "price": 0.8,
+   "stake": 1.0,
+   "reason": "order rejected: exception: price must conform to tick size 0.01 with at most",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "JuiceFarm"
+  },
   {
    "ts": 1784824895,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -5989,7 +6004,7 @@
    "status": "sold",
    "pnl": 0.0,
    "settled": 1783899291,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_price": 1.0
   },
   {
