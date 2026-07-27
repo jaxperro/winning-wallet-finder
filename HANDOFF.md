@@ -41,6 +41,27 @@ LIVE 2026-07-24 @d4fff27), #25 Study E position-scope conviction
 rolling net-USD aggregate; flip = operator's call). #18 (empty-cond copies unsettleable) closed same day: RTDS seed
 enrichment + falsy-cond repair pass + 1h alarm.
 
+## LIVE BOT PAUSED (user, 2026-07-27)
+`LIVE_CONFIRM` UNSET — wwf-copybot-live reboots into `geocheck --idle`
+(no clone, no book, no orders). Key + funder secrets untouched; re-arm =
+`flyctl secrets set LIVE_CONFIRM="TRADE LIVE" -a wwf-copybot-live`.
+State at pause: book $48.55 · $22.48 free · 15 open ($26.07, five at
+93-98c) · realized −$27.31. Open positions now ride to resolution
+UNMANAGED (no >=90c band exits; platform auto-redeems winners). /live
+feed is frozen at this state until re-armed.
+
+**WHY it was paused — the finding that triggered it:** Polymarket enforces
+a **5-share minimum per order** ("Size (1.47) lower than the minimum: 5").
+That is a PRICE-dependent dollar floor: at the book's $1 braked stake
+(4% of $48.55, halved by the drawdown brake, floored to the $1 venue
+min) only <=20c markets are reachable, so every 40-90c signal fired an
+order that could not succeed — 25 venue rejections in 3 days, while 204
+other signals were correctly floor-rejected as sub-conviction. Fixed at
+the gate (copytrade.MIN_SHARES=5.0 blocks with the shares/dollars
+needed instead of firing doomed orders), but the CAPITAL fact stands:
+**~$113 equity at 4%, or ~$225 under the drawdown brake, is the minimum
+viable size to trade 90c markets.** Sizing/funding is the USER's call.
+
 ## Operating boundary (user, 2026-07-13 — standing)
 **Full autonomy on the bots**; the real-money bot **stays ARMED**. Never
 touch the private key, Discord alerts webhook ROTATED 2026-07-19 (#3 closed),
