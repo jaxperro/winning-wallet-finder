@@ -1,23 +1,23 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 134.58,
+ "stake": 134.56,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3364.49,
- "cash": 1728.86,
- "deployed": 1635.63,
+ "cash": 1675.94,
+ "deployed": 1688.12,
  "reserve": 0.0,
- "realized": 2364.46,
+ "realized": 2364.03,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 24,
- "fees_paid": 389.49,
+ "open_count": 25,
+ "fees_paid": 389.92,
  "fee_rate": 0.03,
  "lag": {
-  "n": 279,
-  "n24": 7,
-  "avg_s": 8.0,
+  "n": 280,
+  "n24": 8,
+  "avg_s": 7.9,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -49,6 +49,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "49952690042474298096697107838501147620642888076204079490031529723234270830286",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "US announces halt in Iran offensive operations by August 31?",
+   "their_price": 0.73,
+   "my_price": 0.73,
+   "slippage_pct": 0.0,
+   "lag_s": 7.4,
+   "shares": 71.91,
+   "cost": 52.49,
+   "fee": 0.43,
+   "opened": 1785166432,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "5093836280630653877561190382016580808144147177143767913302616853585042535941",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2124,25 +2144,6 @@
    "sold_shares": 84.27,
    "sold_proceeds": 68.68,
    "end_ts": 1788134400
-  },
-  {
-   "token": "99769792009260570054217311703996683522727922229995804271060316488330979046706",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Hanwha Life Esports",
-   "title": "LoL: Hanwha Life Esports vs T1 - Game 1 Winner",
-   "their_price": 0.6,
-   "my_price": 0.59,
-   "slippage_pct": -0.0167,
-   "lag_s": 19.9,
-   "shares": 177.74,
-   "cost": 104.86,
-   "fee": 1.29,
-   "opened": 1784287050,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -106.15,
-   "settled": 1784296722
   }
  ],
  "missed": [
@@ -3095,23 +3096,23 @@
  ],
  "missed_pnl": 111150.97,
  "last_fill": {
-  "ts": 1785162655,
-  "side": "SELL",
-  "price": 0.95,
-  "shares": 4.37,
-  "title": "Will LAB reach $24 before 2027?",
-  "outcome": "No"
+  "ts": 1785166439,
+  "side": "BUY",
+  "price": 0.73,
+  "shares": 71.91,
+  "title": "US announces halt in Iran offensive operations by August 31?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 538.65,
    "n": 64,
    "wins": 19,
-   "open_cost": 704.45,
-   "open_n": 12,
+   "open_cost": 756.94,
+   "open_n": 13,
    "miss_n": 81,
    "miss_pnl": 111921.67,
-   "last_ts": 1785144326
+   "last_ts": 1785166432
   },
   "gkmgkldfmg": {
    "realized": 928.1,
@@ -3204,5 +3205,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785162662
+ "updated": 1785166439
 }
