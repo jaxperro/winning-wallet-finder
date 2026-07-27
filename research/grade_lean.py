@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-"""Nightly chain-truth grading of the lead-lag harness (wwf-lagbot).
+"""Nightly chain-truth grading of the maker-lean harness (wwf-leanbot).
 
-Pulls /data/lag_state.json + lag_attempts.jsonl + lag_settles.jsonl off
+Pulls /data/lean_state.json + lean_attempts.jsonl + lean_settles.jsonl off
 the box (read-only), re-grades every settle with CTF payout vectors,
-appends to research/lag_paper_ledger.jsonl (keyed asset+ts, idempotent),
-and prints the two pre-registered readouts: paper-leg EV/episode and the
-OBSERVATIONAL kill-switch — the median ask premium over the stale print
-(>= 8c over 3 days = the edge was a mirage, no paper sample needed)."""
+appends to research/lean_paper_ledger.jsonl (keyed asset+ts, idempotent),
+and prints the pre-registered readouts for #26: paper-leg EV/fill WITH
+the shared concentration guards (guards.py — ex-best-day, ex-top5,
+top-event share; a headline PASS that fails them is CONCENTRATED and does
+not graduate), plus the OBSERVATIONAL kill-switch — the median ask
+premium over the lean-side print (>= 8c over 3 days = the tape's entry
+was a mirage, no paper sample needed)."""
 import json
 import os
 import shutil
@@ -15,19 +18,16 @@ import subprocess
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-LEDGER = os.path.join(HERE, "lag_paper_ledger.jsonl")
-STATE_PULL = os.path.join(HERE, ".lag_state.pull.json")
-ATT_PULL = os.path.join(HERE, ".lag_attempts.pull.jsonl")
-SET_PULL = os.path.join(HERE, ".lag_settles.pull.jsonl")
+LEDGER = os.path.join(HERE, "lean_paper_ledger.jsonl")
+STATE_PULL = os.path.join(HERE, ".lean_state.pull.json")
+ATT_PULL = os.path.join(HERE, ".lean_attempts.pull.jsonl")
+SET_PULL = os.path.join(HERE, ".lean_settles.pull.jsonl")
 FLYCTL = shutil.which("flyctl") or "/opt/homebrew/bin/flyctl"
-# #27 freeze: v2 scores ONLY fills at/after this instant. v1 fills are
-# not reusable for the band verdict (the band was found by slicing them).
-V2_FREEZE_TS = 1785200000        # 2026-07-27 ~19:33Z, the commit that ships it
 
 
 def sftp(remote, local):
     subprocess.run([FLYCTL, "ssh", "sftp", "get", remote, local + ".new",
-                    "-a", "wwf-lagbot"], capture_output=True,
+                    "-a", "wwf-leanbot"], capture_output=True,
                    timeout=600, stdin=subprocess.DEVNULL)
     if os.path.exists(local + ".new") and os.path.getsize(local + ".new") > 0:
         os.replace(local + ".new", local)
@@ -40,11 +40,11 @@ def sftp(remote, local):
 
 
 def main():
-    ok = sftp("/data/lag_state.json", STATE_PULL)
-    sftp("/data/lag_attempts.jsonl", ATT_PULL)
-    sftp("/data/lag_settles.jsonl", SET_PULL)
+    ok = sftp("/data/lean_state.json", STATE_PULL)
+    sftp("/data/lean_attempts.jsonl", ATT_PULL)
+    sftp("/data/lean_settles.jsonl", SET_PULL)
     if not ok:
-        print("[grade_lag] box unreachable or no state yet — skip")
+        print("[grade_lean] box unreachable or no state yet — skip")
         return 0
     stt = json.load(open(STATE_PULL))
     sys.path.insert(0, os.path.join(HERE, "..", "live"))
@@ -87,15 +87,14 @@ def main():
                                  "flip": t is not None
                                  and abs(t - s["payout"]) > 1e-9}) + "\n")
             graded += 1
-    total = wins = 0
-    pnl_sum = staked = 0.0
+    import guards
+    led = []
     try:
         for ln in open(LEDGER):
-            d = json.loads(ln)
-            total += 1
-            wins += d["chain_payout"] == 1.0
-            pnl_sum += d["chain_pnl"]
-            staked += d.get("cost", 0)
+            try:
+                led.append(json.loads(ln))
+            except Exception:
+                pass
     except FileNotFoundError:
         pass
     # observational kill-switch: median premium across ALL attempts with a
@@ -112,42 +111,17 @@ def main():
     except FileNotFoundError:
         pass
     c = stt.get("counters", {})
-    ev = pnl_sum / total if total else None
-    print(f"[grade_lag] +{graded} settles ({flips} flips) · paper leg: "
-          f"{total} settled {wins}W · chain P&L ${pnl_sum:+.2f}"
-          f"{f' (${ev:+.2f}/ep · {pnl_sum/staked*100:+.1f}% of staked)' if ev is not None and staked else ''} · "
-          f"lifetime bursts {c.get('bursts')} att {c.get('attempts')} "
+    cuts = guards.cuts(led)
+    print(f"[grade_lean] +{graded} settles ({flips} flips) · "
+          f"lifetime cross {c.get('crossings')} att {c.get('attempts')} "
           f"fill {c.get('fills')} prem-skip {c.get('premium_skips')}")
+    print("[grade_lean] " + guards.line("PAPER LEG", cuts, pass_ev=2.0))
     if prem:
         prem.sort()
-        print(f"[grade_lag] OBSERVATIONAL: median ask premium "
+        print(f"[grade_lean] OBSERVATIONAL: median ask premium "
               f"{st.median(prem)*100:+.1f}c over {len(prem)} attempts "
               f"(kill-switch: >= +8c across 3 days)")
-    # ── #27 v2: the 15-40c complement band, forward fills only ───────────
-    import guards
-    led = []
-    try:
-        for ln in open(LEDGER):
-            try:
-                led.append(json.loads(ln))
-            except Exception:
-                pass
-    except FileNotFoundError:
-        pass
-    print("[grade_lag] " + guards.line("v1 ALL-BANDS", guards.cuts(led),
-                                       pass_ev=4.0))
-    v2 = [r for r in led if r.get("ts", 0) >= V2_FREEZE_TS
-          and 0.15 <= (r.get("price") or 0) < 0.40]
-    print("[grade_lag] " + guards.line("v2 BAND 15-40c", guards.cuts(v2),
-                                       pass_ev=8.0))
-    for lo, hi, tag in ((0.0, 0.15, "<15c"), (0.40, 0.70, "40-70c"),
-                        (0.70, 1.01, ">=70c")):
-        ctl = [r for r in led if r.get("ts", 0) >= V2_FREEZE_TS
-               and lo <= (r.get("price") or 0) < hi]
-        if ctl:
-            print("[grade_lag]   control " + guards.line(tag, guards.cuts(ctl)))
-    print("[grade_lag] verdict binds to the Study D pre-registration (v1) "
-          "and #27 (v2 band; PASS needs EV>=+$8 AND all guards clear)")
+    print("[grade_lean] verdict binds to the Study C Stage-2 (#26) pre-registration")
     return 0
 
 

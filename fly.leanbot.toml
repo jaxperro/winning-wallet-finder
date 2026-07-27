@@ -1,0 +1,28 @@
+# wwf-leanbot — Study C Stage-2 maker-lean PAPER harness (research silo).
+# No keys, no orders, code baked in image. The screened wallet set is
+# published nightly by maker_set.py — the box never screens itself.
+# Verdict binds to #26; graded nightly on the Mac (grade_lean.py).
+app = "wwf-leanbot"
+primary_region = "arn"
+
+[build]
+  dockerfile = "research/leanbot.Dockerfile"
+
+[[mounts]]
+  source = "lean"
+  destination = "/data"
+
+# read-only paper feed (GET /feed, CORS-open)
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+
+[[restart]]
+  policy = "always"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"
