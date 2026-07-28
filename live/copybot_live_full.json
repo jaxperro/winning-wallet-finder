@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785261051,
+ "updated": 1785262747,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 555.08,
@@ -8,7 +8,7 @@
    "wins": 20,
    "open_cost": 1178.75,
    "open_n": 18,
-   "miss_n": 89,
+   "miss_n": 90,
    "miss_pnl": 111974.17,
    "last_ts": 1785253659
   },
@@ -5437,6 +5437,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785262738,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "92205817338549581942996291977146287067184626116756204357001405482376199798910",
+   "cond": "0xbdc6833f8a1907f7103fd11b3212a270abdc79fca68c247942efd492956b38ac",
+   "title": "Will the next Google Gemini Pro model added to the Arena Leaderboard debut at a score of at least 1500?",
+   "outcome": "Yes",
+   "price": 0.4,
+   "stake": 40.15,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785261051,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
