@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785252435,
+ "updated": 1785252629,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 555.08,
    "n": 66,
    "wins": 20,
-   "open_cost": 830.49,
-   "open_n": 15,
+   "open_cost": 950.79,
+   "open_n": 16,
    "miss_n": 86,
    "miss_pnl": 111947.91,
-   "last_ts": 1785242651
+   "last_ts": 1785252600
   },
   "gkmgkldfmg": {
    "realized": 946.8,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "4725621767646797937918206024832177295593632589877868366197031747377041042448",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Ethereum be between $1,800 and $1,900 on July 28?",
+   "their_price": 0.87,
+   "my_price": 0.8651431035386355,
+   "slippage_pct": 0.0,
+   "lag_s": 0.7,
+   "shares": 139.06,
+   "cost": 120.30679997808267,
+   "fee": 0.4867,
+   "opened": 1785252600,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785196800
+  },
   {
    "token": "115022349425230056420599576774053150964082288276346642481948600625364544056404",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",

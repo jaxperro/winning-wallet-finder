@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 131.73,
+ "stake": 131.71,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3385.41,
- "cash": 1548.68,
- "deployed": 1744.53,
+ "cash": 1427.89,
+ "deployed": 1864.83,
  "reserve": 0.0,
- "realized": 2293.18,
+ "realized": 2292.69,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 27,
- "fees_paid": 394.36,
+ "open_count": 28,
+ "fees_paid": 394.85,
  "fee_rate": 0.03,
  "lag": {
-  "n": 286,
-  "n24": 7,
+  "n": 288,
+  "n24": 9,
   "basis": "24h",
-  "avg_s": 5.3,
+  "avg_s": 4.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "4725621767646797937918206024832177295593632589877868366197031747377041042448",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Ethereum be between $1,800 and $1,900 on July 28?",
+   "their_price": 0.87,
+   "my_price": 0.8651,
+   "slippage_pct": 0.0,
+   "lag_s": 0.7,
+   "shares": 139.06,
+   "cost": 120.31,
+   "fee": 0.49,
+   "opened": 1785252600,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785196800
+  },
   {
    "token": "115022349425230056420599576774053150964082288276346642481948600625364544056404",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2126,27 +2146,6 @@
    "settled": 1784320165,
    "sold_shares": 45.71,
    "sold_proceeds": 36.35
-  },
-  {
-   "token": "104354766235014413556450504744840326540657851486089721436856141808878413679918",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Netflix, Inc. (NFLX) hit (HIGH) $85 Week of July 13 2026?",
-   "their_price": 0.896,
-   "my_price": 0.8875,
-   "slippage_pct": -0.0123,
-   "lag_s": 0.9,
-   "shares": 117.95,
-   "cost": 104.68,
-   "fee": 0.35,
-   "opened": 1784232921,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 12.83,
-   "settled": 1784320101,
-   "sold_shares": 83.93,
-   "sold_proceeds": 83.84
   }
  ],
  "missed": [
@@ -3100,23 +3099,23 @@
  ],
  "missed_pnl": 111223.37,
  "last_fill": {
-  "ts": 1785249408,
-  "side": "SELL",
-  "price": 1.0,
-  "shares": 154.51,
-  "title": "Dota 2: No Hoodwink vs PuckChamp - Game 2 Winner",
-  "outcome": "No Hoodwink"
+  "ts": 1785252609,
+  "side": "BUY",
+  "price": 0.86,
+  "shares": 67.88,
+  "title": "Will the price of Ethereum be between $1,800 and $1,900 on J",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 555.08,
    "n": 66,
    "wins": 20,
-   "open_cost": 830.49,
-   "open_n": 15,
+   "open_cost": 950.79,
+   "open_n": 16,
    "miss_n": 86,
    "miss_pnl": 111947.91,
-   "last_ts": 1785242651
+   "last_ts": 1785252600
   },
   "gkmgkldfmg": {
    "realized": 946.8,
@@ -3209,5 +3208,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785252435
+ "updated": 1785252629
 }
