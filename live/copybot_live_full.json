@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785277111,
+ "updated": 1785278053,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 432.72,
@@ -63,14 +63,14 @@
    "last_ts": 1785074437
   },
   "BikesAreTheBikes": {
-   "realized": 151.39,
-   "n": 9,
+   "realized": 213.15,
+   "n": 10,
    "wins": 2,
-   "open_cost": 1206.04,
-   "open_n": 11,
+   "open_cost": 1089.05,
+   "open_n": 10,
    "miss_n": 25,
    "miss_pnl": -724.22,
-   "last_ts": 1785266916
+   "last_ts": 1785278053
   },
   "JuiceFarm": {
    "realized": 81.34,
@@ -104,6 +104,28 @@
   }
  },
  "bets": [
+  {
+   "token": "68080778697884921540335032370654180051222428162809511382222697646266365598353",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Israel x Iran ceasefire continues through July 25?",
+   "their_price": 0.65,
+   "my_price": 0.65,
+   "slippage_pct": 0.0,
+   "lag_s": 0.4,
+   "shares": 179.98,
+   "cost": 116.99,
+   "fee": 1.2284,
+   "opened": 1784842585,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 61.76,
+   "settled": 1785278053,
+   "end_ts": 1784937600,
+   "sold_shares": 179.98,
+   "sold_proceeds": 179.98
+  },
   {
    "token": "99168594369112900321075065263037928819848865546262777337590843994370476821249",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1290,26 +1312,6 @@
    "pnl": 35.65,
    "settled": 1784845083,
    "end_ts": 1784851200
-  },
-  {
-   "token": "68080778697884921540335032370654180051222428162809511382222697646266365598353",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "Israel x Iran ceasefire continues through July 25?",
-   "their_price": 0.65,
-   "my_price": 0.65,
-   "slippage_pct": 0.0,
-   "lag_s": 0.4,
-   "shares": 179.98,
-   "cost": 116.99,
-   "fee": 1.2284,
-   "opened": 1784842585,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1784937600
   },
   {
    "token": "9143471318122042059988785265162570023911768060235394311552003051606225073096",
