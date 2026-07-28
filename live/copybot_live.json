@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 135.92,
+ "stake": 135.51,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3397.98,
- "cash": 1686.16,
- "deployed": 1711.82,
+ "cash": 1760.23,
+ "deployed": 1627.41,
  "reserve": 0.0,
- "realized": 2397.95,
+ "realized": 2387.61,
  "adjustments": 0.03,
- "ledger_drift": -0.04,
- "open_count": 27,
+ "ledger_drift": -0.03,
+ "open_count": 25,
  "fees_paid": 395.45,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,46 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "99168594369112900321075065263037928819848865546262777337590843994370476821249",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on July 28?",
+   "their_price": 0.4744,
+   "my_price": 0.4744,
+   "slippage_pct": 0.0,
+   "lag_s": 2.7,
+   "shares": 30.23,
+   "cost": 14.34,
+   "fee": 0.23,
+   "opened": 1785253659,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -14.57,
+   "settled": 1785277108,
+   "end_ts": 1785196800
+  },
+  {
+   "token": "36691622618442161420564423274570099987634772496502598170189501595483083268777",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "S&P 500 (SPY) closes above $755 on July 28?",
+   "their_price": 0.946,
+   "my_price": 0.946,
+   "slippage_pct": 0.0,
+   "lag_s": 10.1,
+   "shares": 213.75,
+   "cost": 202.21,
+   "fee": 0.33,
+   "opened": 1785253613,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": -128.47,
+   "settled": 1785277106,
+   "end_ts": 1785196800
+  },
   {
    "token": "87461865681689699081648262736937951256169066109275377425968376597869321557502",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -113,46 +153,6 @@
    "end_ts": 1785196800,
    "sold_shares": 16.8,
    "sold_proceeds": 16.74
-  },
-  {
-   "token": "99168594369112900321075065263037928819848865546262777337590843994370476821249",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on July 28?",
-   "their_price": 0.4744,
-   "my_price": 0.4744,
-   "slippage_pct": 0.0,
-   "lag_s": 2.7,
-   "shares": 30.23,
-   "cost": 14.34,
-   "fee": 0.23,
-   "opened": 1785253659,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785196800
-  },
-  {
-   "token": "36691622618442161420564423274570099987634772496502598170189501595483083268777",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "S&P 500 (SPY) closes above $755 on July 28?",
-   "their_price": 0.946,
-   "my_price": 0.946,
-   "slippage_pct": 0.0,
-   "lag_s": 10.1,
-   "shares": 213.75,
-   "cost": 202.21,
-   "fee": 0.33,
-   "opened": 1785253613,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785196800
   },
   {
    "token": "115022349425230056420599576774053150964082288276346642481948600625364544056404",
@@ -3112,14 +3112,14 @@
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 575.76,
-   "n": 68,
-   "wins": 22,
-   "open_cost": 1033.2,
-   "open_n": 16,
+   "realized": 432.72,
+   "n": 70,
+   "wins": 23,
+   "open_cost": 816.65,
+   "open_n": 14,
    "miss_n": 90,
    "miss_pnl": 112020.03,
-   "last_ts": 1785266766
+   "last_ts": 1785277108
   },
   "gkmgkldfmg": {
    "realized": 946.8,
@@ -3212,5 +3212,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785277043
+ "updated": 1785277111
 }
