@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785248887,
+ "updated": 1785249266,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 555.08,
@@ -23,14 +23,14 @@
    "last_ts": 1785248822
   },
   "1kto1m": {
-   "realized": 223.38,
-   "n": 15,
+   "realized": 113.06,
+   "n": 16,
    "wins": 0,
-   "open_cost": 108.52,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 15,
    "miss_pnl": 8.98,
-   "last_ts": 1785242663
+   "last_ts": 1785249263
   },
   "Kruto2027": {
    "realized": 749.99,
@@ -105,26 +105,6 @@
  },
  "bets": [
   {
-   "token": "115022349425230056420599576774053150964082288276346642481948600625364544056404",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "No Hoodwink",
-   "title": "Dota 2: No Hoodwink vs PuckChamp - Game 2 Winner",
-   "their_price": 0.8758,
-   "my_price": 0.8758,
-   "slippage_pct": 0.0,
-   "lag_s": 51.1,
-   "shares": 154.51,
-   "cost": 135.31,
-   "fee": 0.5043,
-   "opened": 1785248822,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785196800
-  },
-  {
    "token": "64694885593632675781317938696736040286617580212029967143105168259299625512290",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "name": "1kto1m",
@@ -138,6 +118,26 @@
    "cost": 108.52,
    "fee": 1.7995,
    "opened": 1785242663,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -110.32,
+   "settled": 1785249263,
+   "end_ts": 1785196800
+  },
+  {
+   "token": "115022349425230056420599576774053150964082288276346642481948600625364544056404",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "No Hoodwink",
+   "title": "Dota 2: No Hoodwink vs PuckChamp - Game 2 Winner",
+   "their_price": 0.8758,
+   "my_price": 0.8758,
+   "slippage_pct": 0.0,
+   "lag_s": 51.1,
+   "shares": 154.51,
+   "cost": 135.31,
+   "fee": 0.5043,
+   "opened": 1785248822,
    "status": "open",
    "exit_price": null,
    "pnl": null,
