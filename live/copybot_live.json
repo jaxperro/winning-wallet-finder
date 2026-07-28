@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 135.4,
+ "stake": 135.32,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3385.41,
- "cash": 1666.64,
- "deployed": 1718.34,
+ "cash": 1529.99,
+ "deployed": 1853.04,
  "reserve": 0.0,
- "realized": 2384.95,
+ "realized": 2383.01,
  "adjustments": 0.03,
- "ledger_drift": -0.04,
- "open_count": 26,
- "fees_paid": 391.91,
+ "ledger_drift": -0.03,
+ "open_count": 28,
+ "fees_paid": 393.86,
  "fee_rate": 0.03,
  "lag": {
-  "n": 283,
-  "n24": 4,
+  "n": 285,
+  "n24": 6,
   "basis": "24h",
-  "avg_s": 5.9,
+  "avg_s": 4.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,46 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "64694885593632675781317938696736040286617580212029967143105168259299625512290",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Down",
+   "title": "Bitcoin Up or Down - July 28, 8AM ET",
+   "their_price": 0.4473,
+   "my_price": 0.4473,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 242.63,
+   "cost": 108.52,
+   "fee": 1.8,
+   "opened": 1785242663,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785196800
+  },
+  {
+   "token": "80808145657906667113795891925826034935213900714245802195985269085181895227480",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Unit FDV above $2B one day after launch?",
+   "their_price": 0.8132,
+   "my_price": 0.8132,
+   "slippage_pct": 0.0,
+   "lag_s": 5.3,
+   "shares": 32.2,
+   "cost": 26.19,
+   "fee": 0.15,
+   "opened": 1785242651,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1830297600
+  },
   {
    "token": "86679239858518906873492617617658695793360100462726529532253226646142736420327",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2106,45 +2146,6 @@
    "settled": 1784320101,
    "sold_shares": 3.54,
    "sold_proceeds": 3.54
-  },
-  {
-   "token": "9744962581292514108386284350412915753392587449882449095731887011173957456753",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will Epic Games' valuation hit (HIGH) $13.5B by December 31?",
-   "their_price": 0.4513,
-   "my_price": 0.28,
-   "slippage_pct": -0.3796,
-   "shares": 301.35,
-   "cost": 84.38,
-   "fee": 1.82,
-   "opened": 1783633993,
-   "status": "closed",
-   "exit_price": 0.6589,
-   "pnl": 112.35,
-   "settled": 1784305976,
-   "sold_shares": 301.35,
-   "sold_proceeds": 198.55
-  },
-  {
-   "token": "96950124081618618921481886565893597118962484567379764630538216424318356050283",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Hanwha Life Esports",
-   "title": "LoL: Hanwha Life Esports vs T1 - Game 2 Winner",
-   "their_price": 0.58,
-   "my_price": 0.58,
-   "slippage_pct": 0.0,
-   "lag_s": 14.5,
-   "shares": 180.71,
-   "cost": 104.81,
-   "fee": 1.32,
-   "opened": 1784288932,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -106.13,
-   "settled": 1784302467
   }
  ],
  "missed": [
@@ -3098,23 +3099,23 @@
  ],
  "missed_pnl": 111188.88,
  "last_fill": {
-  "ts": 1785235545,
+  "ts": 1785242663,
   "side": "BUY",
-  "price": 0.776,
-  "shares": 82.51,
-  "title": "Will Tesla, Inc. (TSLA) hit (LOW) $270 in July?",
-  "outcome": "No"
+  "price": 0.4473,
+  "shares": 242.63,
+  "title": "Bitcoin Up or Down - July 28, 8AM ET",
+  "outcome": "Down"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 555.08,
    "n": 66,
    "wins": 20,
-   "open_cost": 804.3,
-   "open_n": 14,
+   "open_cost": 830.49,
+   "open_n": 15,
    "miss_n": 85,
    "miss_pnl": 111947.91,
-   "last_ts": 1785235541
+   "last_ts": 1785242651
   },
   "gkmgkldfmg": {
    "realized": 928.1,
@@ -3130,11 +3131,11 @@
    "realized": 223.38,
    "n": 15,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 108.52,
+   "open_n": 1,
    "miss_n": 15,
    "miss_pnl": -16.16,
-   "last_ts": 1784932889
+   "last_ts": 1785242663
   },
   "Kruto2027": {
    "realized": 749.99,
@@ -3207,5 +3208,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785242395
+ "updated": 1785242663
 }
