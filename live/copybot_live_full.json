@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785249409,
+ "updated": 1785252435,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 555.08,
@@ -8,7 +8,7 @@
    "wins": 20,
    "open_cost": 830.49,
    "open_n": 15,
-   "miss_n": 85,
+   "miss_n": 86,
    "miss_pnl": 111947.91,
    "last_ts": 1785242651
   },
@@ -5375,6 +5375,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785252427,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "42255817850096714307727261256815922486155091845919156053691558108406981739401",
+   "cond": "0x3008f783badb62b8e95c23d121209a0e3f3b77d3d7026772d6f00889a91d42f2",
+   "title": "Will the price of Bitcoin be between $64,000 and $66,000 on July 28?",
+   "outcome": "No",
+   "price": 0.8301,
+   "stake": 55.21,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785242388,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
