@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 135.38,
+ "stake": 135.41,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3384.44,
- "cash": 1726.74,
- "deployed": 1657.7,
+ "hwm": 3385.36,
+ "cash": 1730.89,
+ "deployed": 1654.48,
  "reserve": 0.0,
- "realized": 2384.41,
+ "realized": 2385.33,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 25,
@@ -69,8 +69,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785456000,
-   "sold_shares": 8.08,
-   "sold_proceeds": 8.0
+   "sold_shares": 12.27,
+   "sold_proceeds": 12.14
   },
   {
    "token": "45117272123752214028376460723544361926835506941716663290099518852020253462421",
@@ -3101,10 +3101,10 @@
  ],
  "missed_pnl": 111096.62,
  "last_fill": {
-  "ts": 1785205660,
+  "ts": 1785208726,
   "side": "SELL",
   "price": 0.99,
-  "shares": 4.1,
+  "shares": 4.19,
   "title": "Will Silver (XAGUSD) hit (LOW) $52 Week of July 27 2026?",
   "outcome": "No"
  },
@@ -3210,5 +3210,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785205661
+ "updated": 1785208733
 }
