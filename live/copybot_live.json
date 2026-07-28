@@ -2164,7 +2164,8 @@
    "status": "won",
    "pnl": 89.84,
    "settled": 1785278384,
-   "name": "BikesAreTheBikes"
+   "name": "BikesAreTheBikes",
+   "exit_checked": true
   },
   {
    "ts": 1785237314,
@@ -3214,5 +3215,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785278392
+ "updated": 1785279045
 }
