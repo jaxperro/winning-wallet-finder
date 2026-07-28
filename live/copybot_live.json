@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 126.44,
+ "stake": 126.49,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3385.41,
- "cash": 1207.93,
- "deployed": 1953.18,
+ "cash": 1216.08,
+ "deployed": 1946.12,
  "reserve": 0.0,
- "realized": 2161.08,
+ "realized": 2162.17,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 30,
@@ -109,8 +109,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785196800,
-   "sold_shares": 8.63,
-   "sold_proceeds": 8.59
+   "sold_shares": 16.8,
+   "sold_proceeds": 16.74
   },
   {
    "token": "115022349425230056420599576774053150964082288276346642481948600625364544056404",
@@ -2150,6 +2150,21 @@
  ],
  "missed": [
   {
+   "ts": 1785253756,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "55747552002095525592184246353402214181358260885453816054765586513715468529042",
+   "cond": "0xb35cf8fea60478adec7f4bf9fff35d42cea26c2c68b5afda2f2f5871232cd310",
+   "title": "Bitcoin above 64,000 on July 28, 12PM ET?",
+   "outcome": "No",
+   "price": 0.48,
+   "stake": 33.95,
+   "reason": "maker bid unfilled (92s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785252427,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "42255817850096714307727261256815922486155091845919156053691558108406981739401",
@@ -3079,30 +3094,14 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.6516
-  },
-  {
-   "ts": 1784755101,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "61732519224035345472843765202641458946038730839684443029887468562689879517849",
-   "cond": "0x21e1af0405c04efa4d30febd572d99f1d331026a9f52c2df0e9346e695025a52",
-   "title": "Will Alphabet Inc. (GOOGL) hit (LOW) $330 in July?",
-   "outcome": "Yes",
-   "price": 0.06,
-   "stake": 67.09,
-   "reason": "thin book ($2 within 5c < $50)",
-   "status": "sold",
-   "pnl": 1037.62,
-   "settled": 1784814260,
-   "name": "0xbadaf319",
-   "exit_price": 0.99
   }
  ],
- "missed_pnl": 111223.37,
+ "missed_pnl": 111204.32,
  "last_fill": {
-  "ts": 1785253748,
+  "ts": 1785253798,
   "side": "SELL",
-  "price": 0.997,
-  "shares": 4.33,
+  "price": 0.998,
+  "shares": 8.17,
   "title": "Will the price of Ethereum be between $1,800 and $1,900 on J",
   "outcome": "No"
  },
@@ -3113,7 +3112,7 @@
    "wins": 20,
    "open_cost": 1178.75,
    "open_n": 18,
-   "miss_n": 86,
+   "miss_n": 87,
    "miss_pnl": 111947.91,
    "last_ts": 1785253659
   },
@@ -3208,5 +3207,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785253755
+ "updated": 1785253806
 }
