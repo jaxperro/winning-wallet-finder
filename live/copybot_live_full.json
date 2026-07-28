@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785266770,
+ "updated": 1785266921,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 575.76,
@@ -63,14 +63,14 @@
    "last_ts": 1785074437
   },
   "BikesAreTheBikes": {
-   "realized": -63.77,
-   "n": 8,
-   "wins": 1,
-   "open_cost": 1323.12,
-   "open_n": 12,
+   "realized": 151.39,
+   "n": 9,
+   "wins": 2,
+   "open_cost": 1206.04,
+   "open_n": 11,
    "miss_n": 25,
    "miss_pnl": -724.22,
-   "last_ts": 1784953416
+   "last_ts": 1785266916
   },
   "JuiceFarm": {
    "realized": 81.34,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "87461865681689699081648262736937951256169066109275377425968376597869321557502",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will Trump meet with Netanyahu by July 31, 2026?",
+   "their_price": 0.35,
+   "my_price": 0.35,
+   "slippage_pct": 0.0,
+   "lag_s": 1.4,
+   "shares": 334.52,
+   "cost": 117.08,
+   "fee": 2.2831,
+   "opened": 1784835161,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 215.16,
+   "settled": 1785266916,
+   "end_ts": 1785456000
+  },
   {
    "token": "91266914832076152890178245367327746643886105568273548856344063538633019008684",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1290,26 +1310,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1784937600
-  },
-  {
-   "token": "87461865681689699081648262736937951256169066109275377425968376597869321557502",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "Will Trump meet with Netanyahu by July 31, 2026?",
-   "their_price": 0.35,
-   "my_price": 0.35,
-   "slippage_pct": 0.0,
-   "lag_s": 1.4,
-   "shares": 334.52,
-   "cost": 117.08,
-   "fee": 2.2831,
-   "opened": 1784835161,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785456000
   },
   {
    "token": "9143471318122042059988785265162570023911768060235394311552003051606225073096",
