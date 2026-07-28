@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 131.71,
+ "stake": 131.72,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3385.41,
- "cash": 1416.44,
- "deployed": 1876.23,
+ "cash": 1419.13,
+ "deployed": 1873.89,
  "reserve": 0.0,
- "realized": 2292.65,
+ "realized": 2292.99,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 28,
- "fees_paid": 394.89,
+ "fees_paid": 394.9,
  "fee_rate": 0.03,
  "lag": {
   "n": 289,
@@ -68,7 +68,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1785196800
+   "end_ts": 1785196800,
+   "sold_shares": 2.71,
+   "sold_proceeds": 2.69
   },
   {
    "token": "115022349425230056420599576774053150964082288276346642481948600625364544056404",
@@ -3099,10 +3101,10 @@
  ],
  "missed_pnl": 111223.37,
  "last_fill": {
-  "ts": 1785252699,
-  "side": "BUY",
-  "price": 0.86,
-  "shares": 13.26,
+  "ts": 1785253450,
+  "side": "SELL",
+  "price": 0.991,
+  "shares": 2.71,
   "title": "Will the price of Ethereum be between $1,800 and $1,900 on J",
   "outcome": "No"
  },
@@ -3208,5 +3210,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785252841
+ "updated": 1785253457
 }
