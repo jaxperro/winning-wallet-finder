@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 131.72,
+ "stake": 126.44,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3385.41,
- "cash": 1419.13,
- "deployed": 1873.89,
+ "cash": 1207.93,
+ "deployed": 1953.18,
  "reserve": 0.0,
- "realized": 2292.99,
+ "realized": 2161.08,
  "adjustments": 0.03,
- "ledger_drift": -0.04,
- "open_count": 28,
- "fees_paid": 394.9,
+ "ledger_drift": -0.03,
+ "open_count": 30,
+ "fees_paid": 395.45,
  "fee_rate": 0.03,
  "lag": {
-  "n": 289,
-  "n24": 9,
+  "n": 293,
+  "n24": 13,
   "basis": "24h",
-  "avg_s": 1.9,
+  "avg_s": 4.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -51,6 +51,46 @@
  },
  "bets": [
   {
+   "token": "99168594369112900321075065263037928819848865546262777337590843994370476821249",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on July 28?",
+   "their_price": 0.4744,
+   "my_price": 0.4744,
+   "slippage_pct": 0.0,
+   "lag_s": 2.7,
+   "shares": 30.23,
+   "cost": 14.34,
+   "fee": 0.23,
+   "opened": 1785253659,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785196800
+  },
+  {
+   "token": "36691622618442161420564423274570099987634772496502598170189501595483083268777",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "S&P 500 (SPY) closes above $755 on July 28?",
+   "their_price": 0.946,
+   "my_price": 0.946,
+   "slippage_pct": 0.0,
+   "lag_s": 10.1,
+   "shares": 213.75,
+   "cost": 202.21,
+   "fee": 0.33,
+   "opened": 1785253613,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785196800
+  },
+  {
    "token": "4725621767646797937918206024832177295593632589877868366197031747377041042448",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -69,8 +109,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785196800,
-   "sold_shares": 2.71,
-   "sold_proceeds": 2.69
+   "sold_shares": 8.63,
+   "sold_proceeds": 8.59
   },
   {
    "token": "115022349425230056420599576774053150964082288276346642481948600625364544056404",
@@ -2106,48 +2146,6 @@
    "settled": 1784381294,
    "sold_shares": 407.82,
    "sold_proceeds": 45.7
-  },
-  {
-   "token": "23218419272209042426022712455684092939407650489595858954369385238326321169744",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "BetBoom Team",
-   "title": "Dota 2: BetBoom Team vs Vici Gaming - Game 2 Winner",
-   "their_price": 0.71,
-   "my_price": 0.7,
-   "slippage_pct": -0.0141,
-   "lag_s": 0.5,
-   "shares": 151.14,
-   "cost": 105.8,
-   "fee": 0.95,
-   "opened": 1784377089,
-   "status": "closed",
-   "exit_price": 0.7444,
-   "pnl": 5.75,
-   "settled": 1784377863,
-   "sold_shares": 151.14,
-   "sold_proceeds": 112.51
-  },
-  {
-   "token": "109624481875348569318303102429519724032296483676540566321245418804293736322472",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will South Korea ETF (EWY) hit (HIGH) $185 Week of July 13 2026?",
-   "their_price": 0.85,
-   "my_price": 0.78,
-   "slippage_pct": -0.0824,
-   "lag_s": 0.8,
-   "shares": 46.25,
-   "cost": 36.07,
-   "fee": 0.24,
-   "opened": 1783996213,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 0.58,
-   "settled": 1784320165,
-   "sold_shares": 45.71,
-   "sold_proceeds": 36.35
   }
  ],
  "missed": [
@@ -3101,10 +3099,10 @@
  ],
  "missed_pnl": 111223.37,
  "last_fill": {
-  "ts": 1785253450,
+  "ts": 1785253748,
   "side": "SELL",
-  "price": 0.991,
-  "shares": 2.71,
+  "price": 0.997,
+  "shares": 4.33,
   "title": "Will the price of Ethereum be between $1,800 and $1,900 on J",
   "outcome": "No"
  },
@@ -3113,11 +3111,11 @@
    "realized": 555.08,
    "n": 66,
    "wins": 20,
-   "open_cost": 962.2,
-   "open_n": 16,
+   "open_cost": 1178.75,
+   "open_n": 18,
    "miss_n": 86,
    "miss_pnl": 111947.91,
-   "last_ts": 1785252600
+   "last_ts": 1785253659
   },
   "gkmgkldfmg": {
    "realized": 946.8,
@@ -3210,5 +3208,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785253457
+ "updated": 1785253755
 }
