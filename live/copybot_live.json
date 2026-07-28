@@ -2149,6 +2149,21 @@
  ],
  "missed": [
   {
+   "ts": 1784943181,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "101732096022791033420874767768998282176255049842341266029460503775596933298889",
+   "cond": "0xf12648e8f9b52f1d6d2fa8aafd965df15544876cecf53fc1be6c0ab178bbc814",
+   "title": "Will \"The Odyssey\" 2nd Weekend Box Office be between 86m and 92m?",
+   "outcome": "No",
+   "price": 0.46,
+   "stake": 125.36,
+   "reason": "thin book ($1 within 5c < $50)",
+   "status": "lost",
+   "pnl": -127.39,
+   "settled": 1785196825,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1785191856,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "45691138284392247799480039269191461630142831037707390402697922072569909819489",
@@ -2572,21 +2587,6 @@
    "settled": 1784958469,
    "name": "0xbadaf319",
    "exit_price": 0.9091
-  },
-  {
-   "ts": 1784943181,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "101732096022791033420874767768998282176255049842341266029460503775596933298889",
-   "cond": "0xf12648e8f9b52f1d6d2fa8aafd965df15544876cecf53fc1be6c0ab178bbc814",
-   "title": "Will \"The Odyssey\" 2nd Weekend Box Office be between 86m and 92m?",
-   "outcome": "No",
-   "price": 0.46,
-   "stake": 125.36,
-   "reason": "thin book ($1 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784856070,
@@ -3097,7 +3097,7 @@
    "exit_price": 1.0206
   }
  ],
- "missed_pnl": 111224.01,
+ "missed_pnl": 111096.62,
  "last_fill": {
   "ts": 1785191856,
   "side": "BUY",
@@ -3174,7 +3174,7 @@
    "open_cost": 1323.12,
    "open_n": 12,
    "miss_n": 25,
-   "miss_pnl": -596.83,
+   "miss_pnl": -724.22,
    "last_ts": 1784953416
   },
   "JuiceFarm": {
@@ -3208,5 +3208,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785196177
+ "updated": 1785196826
 }
