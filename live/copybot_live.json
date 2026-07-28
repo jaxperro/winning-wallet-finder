@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 293,
-  "n24": 13,
+  "n24": 12,
   "basis": "24h",
-  "avg_s": 4.4,
+  "avg_s": 4.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -2152,6 +2152,21 @@
  ],
  "missed": [
   {
+   "ts": 1784747979,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "68080778697884921540335032370654180051222428162809511382222697646266365598353",
+   "cond": "0xf473c2e521258a81d44f16fd65e811de7bcb6646912561583969004b81c10ec1",
+   "title": "Israel x Iran ceasefire continues through July 25?",
+   "outcome": "Yes",
+   "price": 0.56,
+   "stake": 116.3,
+   "reason": "price moved 0.44\u21920.56",
+   "status": "won",
+   "pnl": 89.84,
+   "settled": 1785278384,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1785237314,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "58439042405851389569374765202464187342355223435744588096613828375820301761935",
@@ -3086,24 +3101,9 @@
    "settled": 1784823492,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1784823420,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "45139241414469860954947578765028277034812078372494153843579493704976148448651",
-   "cond": "0x65791b55c71bf4314b7234f0406f052727201d521f68721d360563b3ac59a3a3",
-   "title": "Tuyo FDV above $500M one day after launch?",
-   "outcome": "No",
-   "price": 0.7499,
-   "stake": 35.36,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 111257.55,
+ "missed_pnl": 111347.39,
  "last_fill": {
   "ts": 1785278050,
   "side": "SELL",
@@ -3180,7 +3180,7 @@
    "open_cost": 1089.05,
    "open_n": 10,
    "miss_n": 25,
-   "miss_pnl": -724.22,
+   "miss_pnl": -634.38,
    "last_ts": 1785278053
   },
   "JuiceFarm": {
@@ -3214,5 +3214,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785278053
+ "updated": 1785278392
 }
