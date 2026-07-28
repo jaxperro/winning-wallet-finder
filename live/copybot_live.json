@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 135.32,
+ "stake": 135.3,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3385.41,
- "cash": 1529.99,
- "deployed": 1853.04,
+ "cash": 1394.17,
+ "deployed": 1988.36,
  "reserve": 0.0,
- "realized": 2383.01,
+ "realized": 2382.5,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 28,
- "fees_paid": 393.86,
+ "ledger_drift": -0.04,
+ "open_count": 29,
+ "fees_paid": 394.36,
  "fee_rate": 0.03,
  "lag": {
-  "n": 285,
-  "n24": 6,
+  "n": 286,
+  "n24": 7,
   "basis": "24h",
-  "avg_s": 4.8,
+  "avg_s": 5.3,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "115022349425230056420599576774053150964082288276346642481948600625364544056404",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "No Hoodwink",
+   "title": "Dota 2: No Hoodwink vs PuckChamp - Game 2 Winner",
+   "their_price": 0.8758,
+   "my_price": 0.8758,
+   "slippage_pct": 0.0,
+   "lag_s": 51.1,
+   "shares": 154.51,
+   "cost": 135.31,
+   "fee": 0.5,
+   "opened": 1785248822,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785196800
+  },
   {
    "token": "64694885593632675781317938696736040286617580212029967143105168259299625512290",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -2125,27 +2145,6 @@
    "settled": 1784320101,
    "sold_shares": 83.93,
    "sold_proceeds": 83.84
-  },
-  {
-   "token": "29198556434804110591228001401963930700463402583244929766816225903118874844031",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will NVIDIA (NVDA) hit (HIGH) $220 Week of July 13 2026?",
-   "their_price": 0.95,
-   "my_price": 0.95,
-   "slippage_pct": 0.0,
-   "lag_s": 0.7,
-   "shares": 10.94,
-   "cost": 10.4,
-   "fee": 0.02,
-   "opened": 1784244953,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 0.53,
-   "settled": 1784320101,
-   "sold_shares": 3.54,
-   "sold_proceeds": 3.54
   }
  ],
  "missed": [
@@ -3100,12 +3099,12 @@
  ],
  "missed_pnl": 111214.02,
  "last_fill": {
-  "ts": 1785242663,
+  "ts": 1785248873,
   "side": "BUY",
-  "price": 0.4473,
-  "shares": 242.63,
-  "title": "Bitcoin Up or Down - July 28, 8AM ET",
-  "outcome": "Down"
+  "price": 0.8758,
+  "shares": 154.51,
+  "title": "Dota 2: No Hoodwink vs PuckChamp - Game 2 Winner",
+  "outcome": "No Hoodwink"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3122,11 +3121,11 @@
    "realized": 928.1,
    "n": 88,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 135.31,
+   "open_n": 1,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785100004
+   "last_ts": 1785248822
   },
   "1kto1m": {
    "realized": 223.38,
@@ -3209,5 +3208,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785244368
+ "updated": 1785248887
 }

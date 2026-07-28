@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785244368,
+ "updated": 1785248887,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 555.08,
@@ -16,11 +16,11 @@
    "realized": 928.1,
    "n": 88,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 135.31,
+   "open_n": 1,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785100004
+   "last_ts": 1785248822
   },
   "1kto1m": {
    "realized": 223.38,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "115022349425230056420599576774053150964082288276346642481948600625364544056404",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "No Hoodwink",
+   "title": "Dota 2: No Hoodwink vs PuckChamp - Game 2 Winner",
+   "their_price": 0.8758,
+   "my_price": 0.8758,
+   "slippage_pct": 0.0,
+   "lag_s": 51.1,
+   "shares": 154.51,
+   "cost": 135.31,
+   "fee": 0.5043,
+   "opened": 1785248822,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785196800
+  },
   {
    "token": "64694885593632675781317938696736040286617580212029967143105168259299625512290",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
