@@ -2164,7 +2164,8 @@
    "status": "won",
    "pnl": 34.06,
    "settled": 1785280578,
-   "name": "JuiceFarm"
+   "name": "JuiceFarm",
+   "exit_checked": true
   },
   {
    "ts": 1784747979,
@@ -3215,5 +3216,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785280579
+ "updated": 1785281041
 }
