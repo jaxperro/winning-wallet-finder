@@ -2149,6 +2149,21 @@
  ],
  "missed": [
   {
+   "ts": 1785237314,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "58439042405851389569374765202464187342355223435744588096613828375820301761935",
+   "cond": "0xf6b798166e4afc0cb21e1221c34270a9ce3f3594b6692de3507a9c352020feba",
+   "title": "Will Micron Technology, Inc. (MU) hit (LOW) $750 Week of July 27 2026?",
+   "outcome": "No",
+   "price": 0.62,
+   "stake": 135.4,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785236078,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "36265250796161854432369131892129450974997795066135083465560318874244070874973",
@@ -3078,25 +3093,9 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1784755189,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "6942521039548952262803452715536366269632833663841807575802631974514414220741",
-   "cond": "0x1121a02fc780ddeb79cf91cdf2fea0a7dc2a8eb91a8643e86a4a415ab519ab90",
-   "title": "Will the Houthis successfully target shipping by August 31, 2026?",
-   "outcome": "No",
-   "price": 0.16,
-   "stake": 116.3,
-   "reason": "thin book ($8 within 5c < $50)",
-   "status": "lost",
-   "pnl": -119.23,
-   "settled": 1784772298,
-   "name": "BikesAreTheBikes",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 111134.64,
+ "missed_pnl": 111102.9,
  "last_fill": {
   "ts": 1785235545,
   "side": "BUY",
@@ -3112,7 +3111,7 @@
    "wins": 20,
    "open_cost": 804.3,
    "open_n": 14,
-   "miss_n": 84,
+   "miss_n": 85,
    "miss_pnl": 111948.61,
    "last_ts": 1785235541
   },
@@ -3207,5 +3206,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785236084
+ "updated": 1785237315
 }
