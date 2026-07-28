@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3384.05,
- "cash": 1741.36,
- "deployed": 1641.46,
+ "cash": 1718.75,
+ "deployed": 1663.92,
  "reserve": 0.0,
- "realized": 2382.79,
+ "realized": 2382.64,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 24,
- "fees_paid": 391.32,
+ "open_count": 25,
+ "fees_paid": 391.48,
  "fee_rate": 0.03,
  "lag": {
-  "n": 281,
-  "n24": 5,
+  "n": 282,
+  "n24": 6,
   "basis": "24h",
-  "avg_s": 6.7,
+  "avg_s": 7.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "45110992399056657070414988111806772840513629662508128679624612897635752010841",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Silver (XAGUSD) hit (LOW) $52 Week of July 27 2026?",
+   "their_price": 0.77,
+   "my_price": 0.77,
+   "slippage_pct": 0.0,
+   "lag_s": 9.4,
+   "shares": 29.17,
+   "cost": 22.46,
+   "fee": 0.15,
+   "opened": 1785202403,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785456000
+  },
   {
    "token": "45117272123752214028376460723544361926835506941716663290099518852020253462421",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2124,27 +2144,6 @@
    "settled": 1784302115,
    "sold_shares": 150.46,
    "sold_proceeds": 141.18
-  },
-  {
-   "token": "65083870366687373086730707346131907305811131359213614908957826335591758208",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Nigma Galaxy",
-   "title": "Dota 2: Nigma Galaxy vs BetBoom Team - Game 1 Winner",
-   "their_price": 0.27,
-   "my_price": 0.26,
-   "slippage_pct": -0.037,
-   "lag_s": 1.1,
-   "shares": 422.2,
-   "cost": 109.77,
-   "fee": 2.44,
-   "opened": 1784298334,
-   "status": "closed",
-   "exit_price": 0.0039,
-   "pnl": -110.57,
-   "settled": 1784300281,
-   "sold_shares": 422.2,
-   "sold_proceeds": 1.64
   }
  ],
  "missed": [
@@ -3100,23 +3099,23 @@
  ],
  "missed_pnl": 111096.62,
  "last_fill": {
-  "ts": 1785191856,
+  "ts": 1785202412,
   "side": "BUY",
-  "price": 0.41,
-  "shares": 168.23,
-  "title": "US x Iran diplomatic meeting by August 15, 2026?",
-  "outcome": "Yes"
+  "price": 0.77,
+  "shares": 29.17,
+  "title": "Will Silver (XAGUSD) hit (LOW) $52 Week of July 27 2026?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 555.08,
    "n": 66,
    "wins": 20,
-   "open_cost": 717.81,
-   "open_n": 12,
+   "open_cost": 740.27,
+   "open_n": 13,
    "miss_n": 83,
    "miss_pnl": 111948.61,
-   "last_ts": 1785191855
+   "last_ts": 1785202403
   },
   "gkmgkldfmg": {
    "realized": 928.1,
@@ -3209,5 +3208,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785198198
+ "updated": 1785202416
 }
