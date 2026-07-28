@@ -2149,6 +2149,21 @@
  ],
  "missed": [
   {
+   "ts": 1785242388,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "24287003028980466247187044550266063653998500972848075666609032620527619393071",
+   "cond": "0x7f4a0faa0782fd295dac8587db732728d18d7547f689f3f9ec9cd210cd08e69b",
+   "title": "Bitcoin Up or Down - July 28, 8:30AM-8:45AM ET",
+   "outcome": "Up",
+   "price": 0.4629,
+   "stake": 135.4,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1785236078,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "36265250796161854432369131892129450974997795066135083465560318874244070874973",
@@ -3079,24 +3094,9 @@
    "settled": 1784802647,
    "name": "BikesAreTheBikes",
    "exit_checked": true
-  },
-  {
-   "ts": 1784802577,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "28239418772633645184924651434956000849078365566842629564562475378531350731731",
-   "cond": "0xac02cbb049e46d6a3627c0fdf52fa554982a9025d45968207b362acb6ca4b830",
-   "title": "Will the Fed decrease interest rates by 25 bps after the September 2026 meeting?",
-   "outcome": "No",
-   "price": 0.92,
-   "stake": 116.57,
-   "reason": "no ask side on the book at copy time",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 111102.2,
+ "missed_pnl": 111188.88,
  "last_fill": {
   "ts": 1785235545,
   "side": "BUY",
@@ -3132,7 +3132,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 14,
+   "miss_n": 15,
    "miss_pnl": -16.16,
    "last_ts": 1784932889
   },
@@ -3207,5 +3207,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785240380
+ "updated": 1785242395
 }
