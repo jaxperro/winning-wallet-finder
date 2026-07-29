@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 138.17,
+ "stake": 138.24,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3454.3,
- "cash": 1896.71,
- "deployed": 1557.59,
+ "hwm": 3455.91,
+ "cash": 1930.85,
+ "deployed": 1525.06,
  "reserve": 0.0,
- "realized": 2454.27,
+ "realized": 2455.88,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 25,
+ "ledger_drift": -0.04,
+ "open_count": 24,
  "fees_paid": 396.25,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Iran leadership change by July 31?",
+   "their_price": 0.928,
+   "my_price": 0.948,
+   "slippage_pct": 0.0216,
+   "lag_s": 26.0,
+   "shares": 116.39,
+   "cost": 110.34,
+   "fee": 0.17,
+   "opened": 1784660784,
+   "status": "closed",
+   "exit_price": 0.9938,
+   "pnl": 5.16,
+   "settled": 1785296848,
+   "end_ts": 1785456000,
+   "sold_shares": 116.39,
+   "sold_proceeds": 115.67
+  },
   {
    "token": "55805599679396794643020959724265487381144406111284276240185102465706193783798",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -1298,8 +1320,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400,
-   "sold_shares": 3.05,
-   "sold_proceeds": 2.95
+   "sold_shares": 4.86,
+   "sold_proceeds": 4.71
   },
   {
    "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
@@ -1549,28 +1571,6 @@
    "exit_price": 0.5,
    "pnl": -0.17,
    "settled": 1784679219
-  },
-  {
-   "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Iran leadership change by July 31?",
-   "their_price": 0.928,
-   "my_price": 0.948,
-   "slippage_pct": 0.0216,
-   "lag_s": 26.0,
-   "shares": 116.39,
-   "cost": 110.34,
-   "fee": 0.17,
-   "opened": 1784660784,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785456000,
-   "sold_shares": 83.8,
-   "sold_proceeds": 83.28
   },
   {
    "token": "24842837270178563045080596501119383388959231063439941109817831657351105273923",
@@ -3112,11 +3112,11 @@
  ],
  "missed_pnl": 111381.45,
  "last_fill": {
-  "ts": 1785295774,
+  "ts": 1785296848,
   "side": "SELL",
-  "price": 0.994,
-  "shares": 41.9,
-  "title": "Iran leadership change by July 31?",
+  "price": 0.97,
+  "shares": 1.81,
+  "title": "Iran invades Kuwait by August 31?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3181,14 +3181,14 @@
    "last_ts": 1785074437
   },
   "BikesAreTheBikes": {
-   "realized": 213.15,
-   "n": 10,
+   "realized": 218.31,
+   "n": 11,
    "wins": 2,
-   "open_cost": 1227.07,
-   "open_n": 11,
+   "open_cost": 1116.73,
+   "open_n": 10,
    "miss_n": 25,
    "miss_pnl": -634.38,
-   "last_ts": 1785292870
+   "last_ts": 1785296848
   },
   "JuiceFarm": {
    "realized": 81.34,
@@ -3221,5 +3221,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785295774
+ "updated": 1785296848
 }

@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785295774,
+ "updated": 1785296848,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 432.72,
@@ -63,14 +63,14 @@
    "last_ts": 1785074437
   },
   "BikesAreTheBikes": {
-   "realized": 213.15,
-   "n": 10,
+   "realized": 218.31,
+   "n": 11,
    "wins": 2,
-   "open_cost": 1227.07,
-   "open_n": 11,
+   "open_cost": 1116.73,
+   "open_n": 10,
    "miss_n": 25,
    "miss_pnl": -634.38,
-   "last_ts": 1785292870
+   "last_ts": 1785296848
   },
   "JuiceFarm": {
    "realized": 81.34,
@@ -104,6 +104,28 @@
   }
  },
  "bets": [
+  {
+   "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Iran leadership change by July 31?",
+   "their_price": 0.928,
+   "my_price": 0.948,
+   "slippage_pct": 0.0216,
+   "lag_s": 26.0,
+   "shares": 116.39,
+   "cost": 110.34,
+   "fee": 0.1721,
+   "opened": 1784660784,
+   "status": "closed",
+   "exit_price": 0.9938,
+   "pnl": 5.16,
+   "settled": 1785296848,
+   "end_ts": 1785456000,
+   "sold_shares": 116.38997355581424,
+   "sold_proceeds": 115.67080922041073
+  },
   {
    "token": "55805599679396794643020959724265487381144406111284276240185102465706193783798",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -1352,8 +1374,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400,
-   "sold_shares": 3.045349320048725,
-   "sold_proceeds": 2.951330250490861
+   "sold_shares": 4.8573382054406675,
+   "sold_proceeds": 4.707377603024098
   },
   {
    "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
@@ -1603,28 +1625,6 @@
    "exit_price": 0.5,
    "pnl": -0.17,
    "settled": 1784679219
-  },
-  {
-   "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Iran leadership change by July 31?",
-   "their_price": 0.928,
-   "my_price": 0.948,
-   "slippage_pct": 0.0216,
-   "lag_s": 26.0,
-   "shares": 116.39,
-   "cost": 110.34,
-   "fee": 0.1721,
-   "opened": 1784660784,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785456000,
-   "sold_shares": 83.8013172886169,
-   "sold_proceeds": 83.2835156531959
   },
   {
    "token": "24842837270178563045080596501119383388959231063439941109817831657351105273923",
