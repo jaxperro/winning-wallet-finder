@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 138.24,
+ "stake": 141.6,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3459.02,
- "cash": 1699.22,
- "deployed": 1756.69,
+ "hwm": 3539.99,
+ "cash": 1921.66,
+ "deployed": 1618.33,
  "reserve": 0.0,
- "realized": 2455.87,
+ "realized": 2539.96,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 26,
- "fees_paid": 399.41,
+ "open_count": 25,
+ "fees_paid": 399.74,
  "fee_rate": 0.03,
  "lag": {
   "n": 296,
@@ -51,26 +51,6 @@
  },
  "bets": [
   {
-   "token": "19253596955895064939693767900265163520232524064146679171250301920280524237883",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Nongshim Red Force",
-   "title": "LoL: Kiwoom DRX vs Nongshim Red Force (BO3) - LCK Round 3-4 Rise Group",
-   "their_price": 0.66,
-   "my_price": 0.66,
-   "slippage_pct": 0.0,
-   "lag_s": 12.0,
-   "shares": 209.53,
-   "cost": 138.29,
-   "fee": 1.41,
-   "opened": 1785312515,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785283200
-  },
-  {
    "token": "49056695315898035490832146867193788368377247728686254182873260938497809681300",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -84,6 +64,28 @@
    "cost": 138.35,
    "fee": 1.7,
    "opened": 1785312315,
+   "status": "closed",
+   "exit_price": 0.9486,
+   "pnl": 82.39,
+   "settled": 1785313235,
+   "end_ts": 1785283200,
+   "sold_shares": 234.5,
+   "sold_proceeds": 222.44
+  },
+  {
+   "token": "19253596955895064939693767900265163520232524064146679171250301920280524237883",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Nongshim Red Force",
+   "title": "LoL: Kiwoom DRX vs Nongshim Red Force (BO3) - LCK Round 3-4 Rise Group",
+   "their_price": 0.66,
+   "my_price": 0.66,
+   "slippage_pct": 0.0,
+   "lag_s": 12.0,
+   "shares": 209.53,
+   "cost": 138.29,
+   "fee": 1.41,
+   "opened": 1785312515,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -3109,11 +3111,11 @@
  ],
  "missed_pnl": 111357.17,
  "last_fill": {
-  "ts": 1785312527,
-  "side": "BUY",
-  "price": 0.66,
-  "shares": 209.53,
-  "title": "LoL: Kiwoom DRX vs Nongshim Red Force (BO3) - LCK Round 3-4 ",
+  "ts": 1785313235,
+  "side": "SELL",
+  "price": 0.95,
+  "shares": 234.5,
+  "title": "LoL: Kiwoom DRX vs Nongshim Red Force - Game 1 Winner",
   "outcome": "Nongshim Red Force"
  },
  "wallet_pnl": {
@@ -3128,14 +3130,14 @@
    "last_ts": 1785277108
   },
   "gkmgkldfmg": {
-   "realized": 946.8,
-   "n": 89,
+   "realized": 1029.19,
+   "n": 90,
    "wins": 0,
-   "open_cost": 138.35,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785312315
+   "last_ts": 1785313235
   },
   "1kto1m": {
    "realized": 113.06,
@@ -3218,5 +3220,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785312588
+ "updated": 1785313235
 }
