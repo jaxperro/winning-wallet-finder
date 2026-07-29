@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 128.26,
+ "stake": 129.19,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1649.8,
- "deployed": 1556.63,
+ "cash": 1788.58,
+ "deployed": 1441.29,
  "reserve": 0.0,
- "realized": 2206.4,
+ "realized": 2229.84,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 27,
+ "open_count": 26,
  "fees_paid": 409.36,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "114023575411564465664998216295132384015264339083303639055288358207370730671183",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Ethereum be above $1,900 on July 29?",
+   "their_price": 0.78,
+   "my_price": 0.8311,
+   "slippage_pct": 0.0,
+   "lag_s": 42.5,
+   "shares": 138.78,
+   "cost": 115.34,
+   "fee": 0.57,
+   "opened": 1785339080,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 22.88,
+   "settled": 1785352116,
+   "end_ts": 1785283200
+  },
   {
    "token": "9143471318122042059988785265162570023911768060235394311552003051606225073096",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -157,26 +177,6 @@
    "end_ts": 1785283200,
    "sold_shares": 24.87,
    "sold_proceeds": 24.29
-  },
-  {
-   "token": "114023575411564465664998216295132384015264339083303639055288358207370730671183",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Ethereum be above $1,900 on July 29?",
-   "their_price": 0.78,
-   "my_price": 0.8311,
-   "slippage_pct": 0.0,
-   "lag_s": 42.5,
-   "shares": 138.78,
-   "cost": 115.34,
-   "fee": 0.57,
-   "opened": 1785339080,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785283200
   },
   {
    "token": "69247652735973581341182571044145013027536118239238026605770359361059723046536",
@@ -3120,14 +3120,14 @@
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 444.18,
-   "n": 72,
-   "wins": 23,
-   "open_cost": 1055.5,
-   "open_n": 18,
+   "realized": 467.06,
+   "n": 73,
+   "wins": 24,
+   "open_cost": 940.16,
+   "open_n": 17,
    "miss_n": 92,
    "miss_pnl": 112018.58,
-   "last_ts": 1785345581
+   "last_ts": 1785352116
   },
   "gkmgkldfmg": {
    "realized": 906.63,
@@ -3220,5 +3220,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785350982
+ "updated": 1785352120
 }
