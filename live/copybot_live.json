@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 141.66,
+ "stake": 141.68,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3543.39,
- "cash": 1843.27,
- "deployed": 1698.25,
+ "cash": 1851.93,
+ "deployed": 1690.15,
  "reserve": 0.0,
- "realized": 2541.48,
+ "realized": 2542.05,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 26,
- "fees_paid": 401.65,
+ "fees_paid": 401.66,
  "fee_rate": 0.03,
  "lag": {
   "n": 297,
@@ -1382,8 +1382,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400,
-   "sold_shares": 79.79,
-   "sold_proceeds": 77.3
+   "sold_shares": 88.73,
+   "sold_proceeds": 85.96
   },
   {
    "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
@@ -3110,12 +3110,12 @@
  ],
  "missed_pnl": 111357.17,
  "last_fill": {
-  "ts": 1785315646,
-  "side": "BUY",
-  "price": 0.56,
-  "shares": 253.09,
-  "title": "LoL: Kiwoom DRX vs Nongshim Red Force - Game 2 Winner",
-  "outcome": "Kiwoom DRX"
+  "ts": 1785315791,
+  "side": "SELL",
+  "price": 0.97,
+  "shares": 8.94,
+  "title": "Iran invades Kuwait by August 31?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3219,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785315687
+ "updated": 1785315797
 }
