@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 137.99,
+ "stake": 138.09,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3450.63,
- "cash": 1801.41,
- "deployed": 1648.45,
+ "hwm": 3452.27,
+ "cash": 1853.31,
+ "deployed": 1598.95,
  "reserve": 0.0,
- "realized": 2449.83,
+ "realized": 2452.24,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 25,
- "fees_paid": 396.22,
+ "fees_paid": 396.24,
  "fee_rate": 0.03,
  "lag": {
   "n": 294,
@@ -1297,7 +1297,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1788134400
+   "end_ts": 1788134400,
+   "sold_shares": 1.23,
+   "sold_proceeds": 1.2
   },
   {
    "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
@@ -1566,7 +1568,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1785456000
+   "end_ts": 1785456000,
+   "sold_shares": 41.9,
+   "sold_proceeds": 41.64
   },
   {
    "token": "24842837270178563045080596501119383388959231063439941109817831657351105273923",
@@ -1791,7 +1795,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1788134400
+   "end_ts": 1788134400,
+   "sold_shares": 9.18,
+   "sold_proceeds": 9.06
   },
   {
    "token": "107519224001054263439274706964696866987866557807915774909819079291264377299291",
@@ -3106,11 +3112,11 @@
  ],
  "missed_pnl": 111381.45,
  "last_fill": {
-  "ts": 1785292870,
-  "side": "BUY",
-  "price": 0.813,
-  "shares": 169.77,
-  "title": "Will Moonshot have the best Chinese AI model at the end of J",
+  "ts": 1785294870,
+  "side": "SELL",
+  "price": 0.994,
+  "shares": 41.9,
+  "title": "Iran leadership change by July 31?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3215,5 +3221,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785292877
+ "updated": 1785294871
 }
