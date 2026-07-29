@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 128.9,
+ "stake": 128.92,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1651.7,
- "deployed": 1570.92,
+ "cash": 1655.37,
+ "deployed": 1567.64,
  "reserve": 0.0,
- "realized": 2222.58,
+ "realized": 2222.98,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 27,
- "fees_paid": 412.86,
+ "fees_paid": 412.87,
  "fee_rate": 0.03,
  "lag": {
   "n": 316,
@@ -3110,12 +3110,12 @@
  ],
  "missed_pnl": 111405.58,
  "last_fill": {
-  "ts": 1785354654,
-  "side": "BUY",
-  "price": 0.74,
-  "shares": 10.52,
-  "title": "Apple (AAPL) Up or Down on July 29?",
-  "outcome": "Down"
+  "ts": 1785355381,
+  "side": "SELL",
+  "price": 0.91,
+  "shares": 4.04,
+  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3219,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785354996
+ "updated": 1785355391
 }
