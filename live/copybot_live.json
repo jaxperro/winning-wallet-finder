@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 141.68,
+ "stake": 144.01,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3543.39,
- "cash": 1757.2,
- "deployed": 1784.68,
+ "hwm": 3600.19,
+ "cash": 1953.81,
+ "deployed": 1646.39,
  "reserve": 0.0,
- "realized": 2541.85,
+ "realized": 2600.16,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 27,
- "fees_paid": 404.06,
+ "open_count": 26,
+ "fees_paid": 404.41,
  "fee_rate": 0.03,
  "lag": {
   "n": 298,
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "19253596955895064939693767900265163520232524064146679171250301920280524237883",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Nongshim Red Force",
+   "title": "LoL: Kiwoom DRX vs Nongshim Red Force (BO3) - LCK Round 3-4 Rise Group",
+   "their_price": 0.66,
+   "my_price": 0.66,
+   "slippage_pct": 0.0,
+   "lag_s": 12.0,
+   "shares": 209.53,
+   "cost": 138.29,
+   "fee": 1.41,
+   "opened": 1785312515,
+   "status": "closed",
+   "exit_price": 0.9383,
+   "pnl": 56.9,
+   "settled": 1785316781,
+   "end_ts": 1785283200,
+   "sold_shares": 209.53,
+   "sold_proceeds": 196.6
+  },
   {
    "token": "44268329315636111419901094380165521911713439651558819204937076716198280335678",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -111,26 +133,6 @@
    "end_ts": 1785283200,
    "sold_shares": 234.5,
    "sold_proceeds": 222.44
-  },
-  {
-   "token": "19253596955895064939693767900265163520232524064146679171250301920280524237883",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Nongshim Red Force",
-   "title": "LoL: Kiwoom DRX vs Nongshim Red Force (BO3) - LCK Round 3-4 Rise Group",
-   "their_price": 0.66,
-   "my_price": 0.66,
-   "slippage_pct": 0.0,
-   "lag_s": 12.0,
-   "shares": 209.53,
-   "cost": 138.29,
-   "fee": 1.41,
-   "opened": 1785312515,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785283200
   },
   {
    "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
@@ -3109,12 +3111,12 @@
  ],
  "missed_pnl": 111357.17,
  "last_fill": {
-  "ts": 1785316444,
+  "ts": 1785316780,
   "side": "SELL",
-  "price": 0.987,
-  "shares": 50.0,
-  "title": "Putin out as President of Russia by August 31, 2026?",
-  "outcome": "No"
+  "price": 0.94,
+  "shares": 209.53,
+  "title": "LoL: Kiwoom DRX vs Nongshim Red Force (BO3) - LCK Round 3-4 ",
+  "outcome": "Nongshim Red Force"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3168,14 +3170,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 271.02,
-   "n": 35,
+   "realized": 327.92,
+   "n": 36,
    "wins": 0,
-   "open_cost": 280.02,
-   "open_n": 2,
+   "open_cost": 141.73,
+   "open_n": 1,
    "miss_n": 6,
    "miss_pnl": -213.73,
-   "last_ts": 1785315623
+   "last_ts": 1785316781
   },
   "BikesAreTheBikes": {
    "realized": 218.31,
@@ -3218,5 +3220,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785316444
+ "updated": 1785316781
 }
