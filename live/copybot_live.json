@@ -2157,6 +2157,21 @@
  ],
  "missed": [
   {
+   "ts": 1785319058,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "67592192089512957670850160794576017380707023789350585506938353759516727569825",
+   "cond": "0xbbaa0df1467dd8c0ba4891b68f35d1d63c7e1082bc16151a73092a858408e392",
+   "title": "LoL: T1 vs KT Rolster - Game 1 Winner",
+   "outcome": "KT Rolster",
+   "price": 0.3,
+   "stake": 144.01,
+   "reason": "maker bid unfilled (60s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1785312030,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "24411114427282578875426055969732348605035863582713101684063218947039334428561",
@@ -3091,25 +3106,9 @@
    "settled": 1784845827,
    "name": "0xbadaf319",
    "exit_price": 0.7728
-  },
-  {
-   "ts": 1784750680,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "110230164960434404310059385575944076505582891264305624307112518287452413536393",
-   "cond": "0x1d15ca70c93da7338e6134144dd19a41a8120f8a1ad1bca067478cdbf6d5b18a",
-   "title": "LoL: Myth Esports vs Dynasty - Game 1 Winner",
-   "outcome": "Myth Esports",
-   "price": 0.45,
-   "stake": 101.5,
-   "reason": "order rejected twice (re-quote retry): no orders found to match with FAK order (paper model: best a",
-   "status": "lost",
-   "pnl": -103.17,
-   "settled": 1784836444,
-   "name": "Kruto2027",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 111357.17,
+ "missed_pnl": 111358.45,
  "last_fill": {
   "ts": 1785316780,
   "side": "SELL",
@@ -3175,7 +3174,7 @@
    "wins": 0,
    "open_cost": 141.73,
    "open_n": 1,
-   "miss_n": 6,
+   "miss_n": 7,
    "miss_pnl": -213.73,
    "last_ts": 1785316781
   },
@@ -3220,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785316781
+ "updated": 1785319064
 }
