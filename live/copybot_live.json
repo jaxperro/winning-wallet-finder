@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1798.46,
- "deployed": 1692.22,
+ "cash": 1791.91,
+ "deployed": 1698.73,
  "reserve": 0.0,
- "realized": 2490.66,
+ "realized": 2490.61,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 28,
- "fees_paid": 407.64,
+ "fees_paid": 407.69,
  "fee_rate": 0.03,
  "lag": {
-  "n": 302,
-  "n24": 17,
+  "n": 303,
+  "n24": 18,
   "basis": "24h",
-  "avg_s": 3.1,
+  "avg_s": 4.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -57,12 +57,12 @@
    "outcome": "Down",
    "title": "SPY (SPY) Up or Down on July 29?",
    "their_price": 0.55,
-   "my_price": 0.55,
+   "my_price": 0.5868,
    "slippage_pct": 0.0,
    "lag_s": 1.0,
-   "shares": 41.9,
-   "cost": 23.04,
-   "fee": 0.31,
+   "shares": 50.35,
+   "cost": 29.55,
+   "fee": 0.36,
    "opened": 1785333049,
    "status": "open",
    "exit_price": null,
@@ -3110,19 +3110,19 @@
  ],
  "missed_pnl": 111333.07,
  "last_fill": {
-  "ts": 1785333677,
-  "side": "SELL",
-  "price": 0.97,
-  "shares": 12.08,
-  "title": "Iran invades Kuwait by August 31?",
-  "outcome": "No"
+  "ts": 1785334453,
+  "side": "BUY",
+  "price": 0.77,
+  "shares": 8.45,
+  "title": "SPY (SPY) Up or Down on July 29?",
+  "outcome": "Down"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 432.72,
    "n": 70,
    "wins": 23,
-   "open_cost": 871.15,
+   "open_cost": 877.65,
    "open_n": 16,
    "miss_n": 92,
    "miss_pnl": 112018.58,
@@ -3219,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785333684
+ "updated": 1785334455
 }
