@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 127.73,
+ "stake": 128.24,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1662.98,
- "deployed": 1530.38,
+ "cash": 1699.92,
+ "deployed": 1506.0,
  "reserve": 0.0,
- "realized": 2193.33,
+ "realized": 2205.89,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 28,
+ "open_count": 27,
  "fees_paid": 409.22,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "18336686533395239035817826518946179380426460262862186300738403852712569444780",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Nemiga Gaming",
+   "title": "Dota 2: Amaru Gaming vs Nemiga Gaming - Game 1 Winner",
+   "their_price": 0.66,
+   "my_price": 0.66,
+   "slippage_pct": 0.0,
+   "lag_s": 8.4,
+   "shares": 72.84,
+   "cost": 48.08,
+   "fee": 0.49,
+   "opened": 1785339020,
+   "status": "closed",
+   "exit_price": 0.9997,
+   "pnl": -11.51,
+   "settled": 1785341708,
+   "end_ts": 1785283200,
+   "sold_shares": 37.07,
+   "sold_proceeds": 37.06
+  },
   {
    "token": "51267062251560817207098332467530677863898622748963484735709679405829292177649",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -113,28 +135,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785283200
-  },
-  {
-   "token": "18336686533395239035817826518946179380426460262862186300738403852712569444780",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Nemiga Gaming",
-   "title": "Dota 2: Amaru Gaming vs Nemiga Gaming - Game 1 Winner",
-   "their_price": 0.66,
-   "my_price": 0.66,
-   "slippage_pct": 0.0,
-   "lag_s": 8.4,
-   "shares": 72.84,
-   "cost": 48.08,
-   "fee": 0.49,
-   "opened": 1785339020,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785283200,
-   "sold_shares": 0.13,
-   "sold_proceeds": 0.12
   },
   {
    "token": "69247652735973581341182571044145013027536118239238026605770359361059723046536",
@@ -3112,10 +3112,10 @@
  ],
  "missed_pnl": 111333.07,
  "last_fill": {
-  "ts": 1785340928,
+  "ts": 1785341697,
   "side": "SELL",
-  "price": 0.91,
-  "shares": 0.13,
+  "price": 1.0,
+  "shares": 36.94,
   "title": "Dota 2: Amaru Gaming vs Nemiga Gaming - Game 1 Winner",
   "outcome": "Nemiga Gaming"
  },
@@ -3131,14 +3131,14 @@
    "last_ts": 1785340806
   },
   "gkmgkldfmg": {
-   "realized": 918.14,
-   "n": 92,
+   "realized": 906.63,
+   "n": 93,
    "wins": 0,
-   "open_cost": 48.08,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785339020
+   "last_ts": 1785341708
   },
   "1kto1m": {
    "realized": 113.06,
@@ -3221,5 +3221,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785340940
+ "updated": 1785341708
 }
