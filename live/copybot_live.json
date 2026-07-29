@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 127.27,
+ "stake": 127.26,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1651.4,
- "deployed": 1530.47,
+ "cash": 1567.95,
+ "deployed": 1613.55,
  "reserve": 0.0,
- "realized": 2181.84,
+ "realized": 2181.46,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 28,
- "fees_paid": 408.77,
+ "open_count": 30,
+ "fees_paid": 409.14,
  "fee_rate": 0.03,
  "lag": {
-  "n": 308,
-  "n24": 15,
+  "n": 310,
+  "n24": 17,
   "basis": "24h",
-  "avg_s": 5.6,
+  "avg_s": 3.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,46 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "51267062251560817207098332467530677863898622748963484735709679405829292177649",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Bitcoin be above $64,000 on July 29?",
+   "their_price": 0.85,
+   "my_price": 0.85,
+   "slippage_pct": 0.0,
+   "lag_s": 1.4,
+   "shares": 72.87,
+   "cost": 61.94,
+   "fee": 0.28,
+   "opened": 1785340578,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785283200
+  },
+  {
+   "token": "9383991600622724404882999893729515690106662764511288750902146955396820283685",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Bitcoin above 64,000 on July 29, 12PM ET?",
+   "their_price": 0.85,
+   "my_price": 0.85,
+   "slippage_pct": 0.0,
+   "lag_s": 1.3,
+   "shares": 24.87,
+   "cost": 21.14,
+   "fee": 0.1,
+   "opened": 1785340545,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785283200
+  },
   {
    "token": "114023575411564465664998216295132384015264339083303639055288358207370730671183",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2109,48 +2149,6 @@
    "settled": 1784471149,
    "sold_shares": 226.95,
    "sold_proceeds": 125.57
-  },
-  {
-   "token": "42900587076366844229913834194744356425297818081286466764921250179690312755990",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "BetBoom Team",
-   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 1 Winner",
-   "their_price": 0.42,
-   "my_price": 0.42,
-   "slippage_pct": 0.0,
-   "lag_s": 7.5,
-   "shares": 242.21,
-   "cost": 101.73,
-   "fee": 1.77,
-   "opened": 1784469066,
-   "status": "closed",
-   "exit_price": 0.4127,
-   "pnl": -3.54,
-   "settled": 1784469298,
-   "sold_shares": 242.21,
-   "sold_proceeds": 99.96
-  },
-  {
-   "token": "85741798597373637454857132313237665672348948280062152561851890771142395823036",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Gen.G",
-   "title": "LoL: T1 vs Gen.G (BO3) - Esports World Cup Playoffs",
-   "their_price": 0.54,
-   "my_price": 0.54,
-   "slippage_pct": 0.0,
-   "lag_s": 0.4,
-   "shares": 182.95,
-   "cost": 98.79,
-   "fee": 1.36,
-   "opened": 1784462567,
-   "status": "closed",
-   "exit_price": 0.9486,
-   "pnl": 73.39,
-   "settled": 1784464117,
-   "sold_shares": 182.95,
-   "sold_proceeds": 173.54
   }
  ],
  "missed": [
@@ -3108,11 +3106,11 @@
  ],
  "missed_pnl": 111333.07,
  "last_fill": {
-  "ts": 1785340136,
+  "ts": 1785340579,
   "side": "BUY",
-  "price": 0.95,
-  "shares": 27.65,
-  "title": "Will the price of Ethereum be above $1,900 on July 29?",
+  "price": 0.85,
+  "shares": 72.87,
+  "title": "Will the price of Bitcoin be above $64,000 on July 29?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3120,11 +3118,11 @@
    "realized": 432.72,
    "n": 70,
    "wins": 23,
-   "open_cost": 992.99,
-   "open_n": 17,
+   "open_cost": 1076.07,
+   "open_n": 19,
    "miss_n": 92,
    "miss_pnl": 112018.58,
-   "last_ts": 1785339080
+   "last_ts": 1785340578
   },
   "gkmgkldfmg": {
    "realized": 918.14,
@@ -3217,5 +3215,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785340166
+ "updated": 1785340603
 }
