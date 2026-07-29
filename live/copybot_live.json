@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 138.36,
+ "stake": 138.29,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3459.02,
- "cash": 1978.97,
- "deployed": 1480.04,
+ "cash": 1838.92,
+ "deployed": 1618.4,
  "reserve": 0.0,
- "realized": 2458.99,
+ "realized": 2457.29,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 24,
- "fees_paid": 396.3,
+ "open_count": 25,
+ "fees_paid": 398.0,
  "fee_rate": 0.03,
  "lag": {
-  "n": 294,
-  "n24": 12,
+  "n": 295,
+  "n24": 13,
   "basis": "24h",
-  "avg_s": 3.6,
+  "avg_s": 2.7,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "49056695315898035490832146867193788368377247728686254182873260938497809681300",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Nongshim Red Force",
+   "title": "LoL: Kiwoom DRX vs Nongshim Red Force - Game 1 Winner",
+   "their_price": 0.59,
+   "my_price": 0.59,
+   "slippage_pct": 0.0,
+   "lag_s": 0.9,
+   "shares": 234.5,
+   "cost": 138.35,
+   "fee": 1.7,
+   "opened": 1785312315,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785283200
+  },
   {
    "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2132,27 +2152,6 @@
    "settled": 1784384711,
    "sold_shares": 224.39,
    "sold_proceeds": 98.32
-  },
-  {
-   "token": "99187050584684374496347488572453490542664664321038879329793286200731669569886",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "PARIVISION",
-   "title": "Dota 2: Team Yandex vs PARIVISION - Game 1 Winner",
-   "their_price": 0.44,
-   "my_price": 0.43,
-   "slippage_pct": -0.0227,
-   "lag_s": 0.8,
-   "shares": 240.76,
-   "cost": 103.53,
-   "fee": 1.77,
-   "opened": 1784383396,
-   "status": "closed",
-   "exit_price": 0.4086,
-   "pnl": -6.94,
-   "settled": 1784384166,
-   "sold_shares": 240.76,
-   "sold_proceeds": 98.36
   }
  ],
  "missed": [
@@ -3111,12 +3110,12 @@
  ],
  "missed_pnl": 111357.17,
  "last_fill": {
-  "ts": 1785312072,
-  "side": "SELL",
-  "price": 0.97,
-  "shares": 2.8,
-  "title": "Iran invades Kuwait by August 31?",
-  "outcome": "No"
+  "ts": 1785312315,
+  "side": "BUY",
+  "price": 0.59,
+  "shares": 234.5,
+  "title": "LoL: Kiwoom DRX vs Nongshim Red Force - Game 1 Winner",
+  "outcome": "Nongshim Red Force"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3133,11 +3132,11 @@
    "realized": 946.8,
    "n": 89,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 138.35,
+   "open_n": 1,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785249409
+   "last_ts": 1785312315
   },
   "1kto1m": {
    "realized": 113.06,
@@ -3220,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785312078
+ "updated": 1785312316
 }

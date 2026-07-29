@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785312078,
+ "updated": 1785312316,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 432.72,
@@ -16,11 +16,11 @@
    "realized": 946.8,
    "n": 89,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 138.35,
+   "open_n": 1,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785249409
+   "last_ts": 1785312315
   },
   "1kto1m": {
    "realized": 113.06,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "49056695315898035490832146867193788368377247728686254182873260938497809681300",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Nongshim Red Force",
+   "title": "LoL: Kiwoom DRX vs Nongshim Red Force - Game 1 Winner",
+   "their_price": 0.59,
+   "my_price": 0.59,
+   "slippage_pct": 0.0,
+   "lag_s": 0.9,
+   "shares": 234.5,
+   "cost": 138.35,
+   "fee": 1.7018,
+   "opened": 1785312315,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785283200
+  },
   {
    "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
