@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 127.39,
+ "stake": 127.73,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1592.24,
- "deployed": 1592.41,
+ "cash": 1662.86,
+ "deployed": 1530.47,
  "reserve": 0.0,
- "realized": 2184.62,
+ "realized": 2193.3,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 29,
- "fees_paid": 409.16,
+ "open_count": 28,
+ "fees_paid": 409.22,
  "fee_rate": 0.03,
  "lag": {
   "n": 310,
@@ -51,6 +51,28 @@
  },
  "bets": [
   {
+   "token": "51267062251560817207098332467530677863898622748963484735709679405829292177649",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Bitcoin be above $64,000 on July 29?",
+   "their_price": 0.85,
+   "my_price": 0.85,
+   "slippage_pct": 0.0,
+   "lag_s": 1.4,
+   "shares": 72.87,
+   "cost": 61.94,
+   "fee": 0.28,
+   "opened": 1785340578,
+   "status": "closed",
+   "exit_price": 0.9691,
+   "pnl": 8.4,
+   "settled": 1785340806,
+   "end_ts": 1785283200,
+   "sold_shares": 72.87,
+   "sold_proceeds": 70.62
+  },
+  {
    "token": "9383991600622724404882999893729515690106662764511288750902146955396820283685",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -71,26 +93,6 @@
    "end_ts": 1785283200,
    "sold_shares": 24.87,
    "sold_proceeds": 24.29
-  },
-  {
-   "token": "51267062251560817207098332467530677863898622748963484735709679405829292177649",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Bitcoin be above $64,000 on July 29?",
-   "their_price": 0.85,
-   "my_price": 0.85,
-   "slippage_pct": 0.0,
-   "lag_s": 1.4,
-   "shares": 72.87,
-   "cost": 61.94,
-   "fee": 0.28,
-   "opened": 1785340578,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785283200
   },
   {
    "token": "114023575411564465664998216295132384015264339083303639055288358207370730671183",
@@ -3108,23 +3110,23 @@
  ],
  "missed_pnl": 111333.07,
  "last_fill": {
-  "ts": 1785340710,
+  "ts": 1785340806,
   "side": "SELL",
-  "price": 0.98,
-  "shares": 21.75,
-  "title": "Bitcoin above 64,000 on July 29, 12PM ET?",
+  "price": 0.97,
+  "shares": 72.87,
+  "title": "Will the price of Bitcoin be above $64,000 on July 29?",
   "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 435.78,
-   "n": 71,
+   "realized": 444.18,
+   "n": 72,
    "wins": 23,
-   "open_cost": 1054.93,
-   "open_n": 18,
+   "open_cost": 992.99,
+   "open_n": 17,
    "miss_n": 92,
    "miss_pnl": 112018.58,
-   "last_ts": 1785340711
+   "last_ts": 1785340806
   },
   "gkmgkldfmg": {
    "realized": 918.14,
@@ -3217,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785340711
+ "updated": 1785340806
 }
