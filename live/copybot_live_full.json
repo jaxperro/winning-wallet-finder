@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785306646,
+ "updated": 1785306798,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 432.72,
@@ -8,7 +8,7 @@
    "wins": 23,
    "open_cost": 816.65,
    "open_n": 14,
-   "miss_n": 90,
+   "miss_n": 91,
    "miss_pnl": 112018.58,
    "last_ts": 1785277108
   },
@@ -5465,6 +5465,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785306786,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "24004558937841837085615737318743242391761003362634559995158204873168219508775",
+   "cond": "0x1b15f5db5f6c513bcedde08ff1d70b3f122fa71012bf2230095ad38e26d092a2",
+   "title": "S&P 500 (SPY) closes above $740 on July 29?",
+   "outcome": "Yes",
+   "price": 0.52,
+   "stake": 62.98,
+   "reason": "thin book ($40 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785262738,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
