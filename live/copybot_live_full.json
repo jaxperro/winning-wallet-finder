@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785352852,
+ "updated": 1785353229,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 467.06,
@@ -36,11 +36,11 @@
    "realized": 749.99,
    "n": 6,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 129.44,
+   "open_n": 1,
    "miss_n": 6,
    "miss_pnl": 348.47,
-   "last_ts": 1784679219
+   "last_ts": 1785353228
   },
   "LSB1": {
    "realized": -397.16,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "61786389752515367835821565534386371514405052384932121340794230250818428934092",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Skillcamp Esport",
+   "title": "LoL: Galions vs Skillcamp Esport (BO1) - LFL Regular Season",
+   "their_price": 0.22,
+   "my_price": 0.22,
+   "slippage_pct": 0.0,
+   "lag_s": 1.5,
+   "shares": 588.38,
+   "cost": 129.44,
+   "fee": 3.029,
+   "opened": 1785353228,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785369600
+  },
   {
    "token": "114023575411564465664998216295132384015264339083303639055288358207370730671183",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
