@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 129.15,
+ "stake": 129.14,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1313.55,
- "deployed": 1915.09,
+ "cash": 1304.31,
+ "deployed": 1924.1,
  "reserve": 0.0,
- "realized": 2228.6,
+ "realized": 2228.38,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 28,
- "fees_paid": 419.7,
+ "fees_paid": 419.93,
  "fee_rate": 0.03,
  "lag": {
-  "n": 321,
-  "n24": 28,
+  "n": 322,
+  "n24": 29,
   "basis": "24h",
-  "avg_s": 4.5,
+  "avg_s": 5.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -101,12 +101,12 @@
    "outcome": "RED Academy",
    "title": "LoL: RED Academy vs Estral Esports (BO1) - Circuito Desafiante Regular Season",
    "their_price": 0.1115,
-   "my_price": 0.1115,
+   "my_price": 0.1152,
    "slippage_pct": 0.0,
    "lag_s": 1.2,
-   "shares": 793.11,
-   "cost": 88.42,
-   "fee": 2.36,
+   "shares": 846.11,
+   "cost": 97.43,
+   "fee": 2.58,
    "opened": 1785361786,
    "status": "open",
    "exit_price": null,
@@ -3111,12 +3111,12 @@
  ],
  "missed_pnl": 111413.98,
  "last_fill": {
-  "ts": 1785363156,
-  "side": "SELL",
-  "price": 1.0,
-  "shares": 42.27,
-  "title": "Apple (AAPL) Up or Down on July 29?",
-  "outcome": "Down"
+  "ts": 1785363827,
+  "side": "BUY",
+  "price": 0.17,
+  "shares": 53.0,
+  "title": "LoL: RED Academy vs Estral Esports (BO1) - Circuito Desafian",
+  "outcome": "RED Academy"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3153,7 +3153,7 @@
    "realized": 749.99,
    "n": 6,
    "wins": 0,
-   "open_cost": 509.64,
+   "open_cost": 518.65,
    "open_n": 4,
    "miss_n": 6,
    "miss_pnl": 348.47,
@@ -3220,5 +3220,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785363165
+ "updated": 1785363827
 }

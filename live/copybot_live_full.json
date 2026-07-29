@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785363165,
+ "updated": 1785363827,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 474.8,
@@ -36,7 +36,7 @@
    "realized": 749.99,
    "n": 6,
    "wins": 0,
-   "open_cost": 509.64,
+   "open_cost": 518.65,
    "open_n": 4,
    "miss_n": 6,
    "miss_pnl": 348.47,
@@ -155,12 +155,12 @@
    "outcome": "RED Academy",
    "title": "LoL: RED Academy vs Estral Esports (BO1) - Circuito Desafiante Regular Season",
    "their_price": 0.1115,
-   "my_price": 0.1115,
+   "my_price": 0.1151505123447306,
    "slippage_pct": 0.0,
    "lag_s": 1.2,
-   "shares": 793.11,
-   "cost": 88.42,
-   "fee": 2.3568,
+   "shares": 846.11,
+   "cost": 97.43,
+   "fee": 2.5810999999999997,
    "opened": 1785361786,
    "status": "open",
    "exit_price": null,
