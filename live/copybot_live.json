@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 128.23,
+ "stake": 128.24,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1637.27,
- "deployed": 1568.52,
+ "cash": 1644.73,
+ "deployed": 1561.39,
  "reserve": 0.0,
- "realized": 2205.76,
+ "realized": 2206.09,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 28,
- "fees_paid": 409.35,
+ "fees_paid": 409.36,
  "fee_rate": 0.03,
  "lag": {
   "n": 311,
@@ -2068,8 +2068,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400,
-   "sold_shares": 100.47,
-   "sold_proceeds": 99.14
+   "sold_shares": 108.04,
+   "sold_proceeds": 106.6
   },
   {
    "token": "107519224001054263439274706964696866987866557807915774909819079291264377299291",
@@ -3111,11 +3111,11 @@
  ],
  "missed_pnl": 111333.07,
  "last_fill": {
-  "ts": 1785345581,
-  "side": "BUY",
-  "price": 0.93,
-  "shares": 67.22,
-  "title": "Will Revolut's valuation hit (LOW) $75B by December 31?",
+  "ts": 1785348215,
+  "side": "SELL",
+  "price": 0.987,
+  "shares": 7.56,
+  "title": "Putin out as President of Russia by August 31, 2026?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3220,5 +3220,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785345588
+ "updated": 1785348223
 }
