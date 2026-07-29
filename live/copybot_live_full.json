@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785358535,
+ "updated": 1785360187,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 467.06,
@@ -36,11 +36,11 @@
    "realized": 749.99,
    "n": 6,
    "wins": 0,
-   "open_cost": 224.1,
-   "open_n": 2,
+   "open_cost": 352.94,
+   "open_n": 3,
    "miss_n": 6,
    "miss_pnl": 348.47,
-   "last_ts": 1785358477
+   "last_ts": 1785360166
   },
   "LSB1": {
    "realized": -397.16,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "73729038726669069404058491316491538761744291522842760243389656513468416826452",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "KaBuM! Ilha das Lendas",
+   "title": "LoL: RMD Gaming vs KaBuM! Ilha das Lendas (BO1) - Circuito Desafiante Regular Season",
+   "their_price": 0.6721,
+   "my_price": 0.6721,
+   "slippage_pct": 0.0,
+   "lag_s": 7.8,
+   "shares": 191.7,
+   "cost": 128.84,
+   "fee": 1.2674,
+   "opened": 1785360166,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785369600
+  },
   {
    "token": "54815727746640547967672254072133541716883461619401150888777316620441172319772",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
