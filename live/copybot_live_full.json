@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785312316,
+ "updated": 1785312588,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 432.72,
@@ -56,11 +56,11 @@
    "realized": 271.02,
    "n": 35,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 138.29,
+   "open_n": 1,
    "miss_n": 6,
    "miss_pnl": -213.73,
-   "last_ts": 1785074437
+   "last_ts": 1785312515
   },
   "BikesAreTheBikes": {
    "realized": 218.31,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "19253596955895064939693767900265163520232524064146679171250301920280524237883",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Nongshim Red Force",
+   "title": "LoL: Kiwoom DRX vs Nongshim Red Force (BO3) - LCK Round 3-4 Rise Group",
+   "their_price": 0.66,
+   "my_price": 0.66,
+   "slippage_pct": 0.0,
+   "lag_s": 12.0,
+   "shares": 209.53,
+   "cost": 138.29,
+   "fee": 1.4106,
+   "opened": 1785312515,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785283200
+  },
   {
    "token": "49056695315898035490832146867193788368377247728686254182873260938497809681300",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
