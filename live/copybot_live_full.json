@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785348947,
+ "updated": 1785350037,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 444.18,
@@ -63,14 +63,14 @@
    "last_ts": 1785332363
   },
   "BikesAreTheBikes": {
-   "realized": 218.31,
-   "n": 11,
+   "realized": 226.11,
+   "n": 12,
    "wins": 2,
-   "open_cost": 1116.73,
-   "open_n": 10,
+   "open_cost": 999.6,
+   "open_n": 9,
    "miss_n": 26,
    "miss_pnl": -648.4,
-   "last_ts": 1785296848
+   "last_ts": 1785350037
   },
   "JuiceFarm": {
    "realized": -63.75,
@@ -104,6 +104,28 @@
   }
  },
  "bets": [
+  {
+   "token": "9143471318122042059988785265162570023911768060235394311552003051606225073096",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Iran invades Kuwait by August 31?",
+   "their_price": 0.909,
+   "my_price": 0.906,
+   "slippage_pct": -0.0033,
+   "lag_s": 1.3,
+   "shares": 129.28,
+   "cost": 117.13,
+   "fee": 0.3303,
+   "opened": 1784825313,
+   "status": "closed",
+   "exit_price": 0.9689,
+   "pnl": 7.8,
+   "settled": 1785350037,
+   "end_ts": 1788134400,
+   "sold_shares": 129.28299098753456,
+   "sold_proceeds": 125.26328681850424
+  },
   {
    "token": "34320045222277936713720830397426891082987734367890243003396143984338989258132",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1626,28 +1648,6 @@
    "pnl": 35.65,
    "settled": 1784845083,
    "end_ts": 1784851200
-  },
-  {
-   "token": "9143471318122042059988785265162570023911768060235394311552003051606225073096",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Iran invades Kuwait by August 31?",
-   "their_price": 0.909,
-   "my_price": 0.906,
-   "slippage_pct": -0.0033,
-   "lag_s": 1.3,
-   "shares": 129.28,
-   "cost": 117.13,
-   "fee": 0.3303,
-   "opened": 1784825313,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788134400,
-   "sold_shares": 124.96804145512121,
-   "sold_proceeds": 121.08155272300509
   },
   {
    "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
