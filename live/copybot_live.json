@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1703.5,
- "deployed": 1478.51,
+ "cash": 1677.71,
+ "deployed": 1504.2,
  "reserve": 0.0,
- "realized": 2181.99,
+ "realized": 2181.88,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 28,
- "fees_paid": 408.62,
+ "fees_paid": 408.73,
  "fee_rate": 0.03,
  "lag": {
-  "n": 306,
-  "n24": 17,
+  "n": 307,
+  "n24": 18,
   "basis": "24h",
-  "avg_s": 7.2,
+  "avg_s": 6.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -57,12 +57,12 @@
    "outcome": "No",
    "title": "Will the price of Ethereum be above $1,900 on July 29?",
    "their_price": 0.78,
-   "my_price": 0.78,
+   "my_price": 0.8015,
    "slippage_pct": 0.0,
    "lag_s": 42.5,
-   "shares": 81.26,
-   "cost": 63.38,
-   "fee": 0.42,
+   "shares": 111.13,
+   "cost": 89.07,
+   "fee": 0.53,
    "opened": 1785339080,
    "status": "open",
    "exit_price": null,
@@ -3108,11 +3108,11 @@
  ],
  "missed_pnl": 111333.07,
  "last_fill": {
-  "ts": 1785339642,
-  "side": "SELL",
-  "price": 0.9,
-  "shares": 0.61,
-  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+  "ts": 1785339665,
+  "side": "BUY",
+  "price": 0.86,
+  "shares": 29.87,
+  "title": "Will the price of Ethereum be above $1,900 on July 29?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3120,7 +3120,7 @@
    "realized": 432.72,
    "n": 70,
    "wins": 23,
-   "open_cost": 941.03,
+   "open_cost": 966.72,
    "open_n": 17,
    "miss_n": 92,
    "miss_pnl": 112018.58,
@@ -3217,5 +3217,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785339649
+ "updated": 1785339671
 }
