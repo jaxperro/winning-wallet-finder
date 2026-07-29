@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1808.72,
- "deployed": 1790.4,
+ "cash": 1777.1,
+ "deployed": 1821.85,
  "reserve": 0.0,
- "realized": 2599.08,
+ "realized": 2598.92,
  "adjustments": 0.03,
- "ledger_drift": -0.04,
- "open_count": 27,
- "fees_paid": 405.49,
+ "ledger_drift": -0.03,
+ "open_count": 28,
+ "fees_paid": 405.65,
  "fee_rate": 0.03,
  "lag": {
-  "n": 299,
-  "n24": 16,
+  "n": 300,
+  "n24": 17,
   "basis": "24h",
-  "avg_s": 4.2,
+  "avg_s": 3.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "105470050397895416738353896203765735520950460751992940982686152479742202067000",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "WTI Crude Oil (WTI) closes above $86 on July 29?",
+   "their_price": 0.832,
+   "my_price": 0.832,
+   "slippage_pct": 0.0,
+   "lag_s": 1.3,
+   "shares": 37.81,
+   "cost": 31.46,
+   "fee": 0.16,
+   "opened": 1785327437,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785283200
+  },
   {
    "token": "69247652735973581341182571044145013027536118239238026605770359361059723046536",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2131,27 +2151,6 @@
    "exit_price": 0.0,
    "pnl": -106.99,
    "settled": 1784393226
-  },
-  {
-   "token": "58169143653343450326195498215538236930997670878228551327845934859747060865016",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Yandex",
-   "title": "Dota 2: Team Yandex vs PARIVISION - Game 2 Winner",
-   "their_price": 0.55,
-   "my_price": 0.59,
-   "slippage_pct": 0.0727,
-   "lag_s": 0.7,
-   "shares": 144.98,
-   "cost": 85.54,
-   "fee": 1.05,
-   "opened": 1784389057,
-   "status": "closed",
-   "exit_price": 0.4127,
-   "pnl": -26.76,
-   "settled": 1784389074,
-   "sold_shares": 144.98,
-   "sold_proceeds": 59.83
   }
  ],
  "missed": [
@@ -3109,23 +3108,23 @@
  ],
  "missed_pnl": 111333.07,
  "last_fill": {
-  "ts": 1785321598,
+  "ts": 1785327438,
   "side": "BUY",
-  "price": 0.75,
-  "shares": 192.01,
-  "title": "LoL: T1 vs KT Rolster - Game 2 Winner",
-  "outcome": "T1"
+  "price": 0.832,
+  "shares": 37.81,
+  "title": "WTI Crude Oil (WTI) closes above $86 on July 29?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 432.72,
    "n": 70,
    "wins": 23,
-   "open_cost": 816.65,
-   "open_n": 14,
+   "open_cost": 848.11,
+   "open_n": 15,
    "miss_n": 92,
    "miss_pnl": 112018.58,
-   "last_ts": 1785277108
+   "last_ts": 1785327437
   },
   "gkmgkldfmg": {
    "realized": 1029.19,
@@ -3218,5 +3217,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785322528
+ "updated": 1785327439
 }
