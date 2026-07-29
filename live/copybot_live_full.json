@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785348223,
+ "updated": 1785348947,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 444.18,
@@ -69,7 +69,7 @@
    "open_cost": 1116.73,
    "open_n": 10,
    "miss_n": 26,
-   "miss_pnl": -634.38,
+   "miss_pnl": -648.4,
    "last_ts": 1785296848
   },
   "JuiceFarm": {
@@ -5738,6 +5738,22 @@
  ],
  "missed": [
   {
+   "ts": 1784451912,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "86567202803696185629704724961398129231892610051254319801824623009047556217191",
+   "cond": "0xa6480903e54c68f2ee79cacb7861dfcc9b473e8b07d6dcaf2c9923034a5fb56f",
+   "title": "Israel x Iran ceasefire continues through July 31?",
+   "outcome": "No",
+   "price": 0.41,
+   "stake": 98.79,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "sold",
+   "pnl": -14.02,
+   "settled": 1785348943,
+   "name": "BikesAreTheBikes",
+   "exit_price": 0.366
+  },
+  {
    "ts": 1785319058,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "67592192089512957670850160794576017380707023789350585506938353759516727569825",
@@ -7616,21 +7632,6 @@
    "settled": 1784454324,
    "name": "1kto1m",
    "exit_price": 0.0304
-  },
-  {
-   "ts": 1784451912,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "86567202803696185629704724961398129231892610051254319801824623009047556217191",
-   "cond": "0xa6480903e54c68f2ee79cacb7861dfcc9b473e8b07d6dcaf2c9923034a5fb56f",
-   "title": "Israel x Iran ceasefire continues through July 31?",
-   "outcome": "No",
-   "price": 0.41,
-   "stake": 98.79,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784451863,
