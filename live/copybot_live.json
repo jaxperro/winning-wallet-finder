@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3543.39,
- "cash": 1851.93,
- "deployed": 1690.15,
+ "cash": 1757.2,
+ "deployed": 1784.68,
  "reserve": 0.0,
- "realized": 2542.05,
+ "realized": 2541.85,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 26,
- "fees_paid": 401.66,
+ "open_count": 27,
+ "fees_paid": 404.06,
  "fee_rate": 0.03,
  "lag": {
-  "n": 297,
-  "n24": 15,
+  "n": 298,
+  "n24": 16,
   "basis": "24h",
-  "avg_s": 4.4,
+  "avg_s": 3.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "44268329315636111419901094380165521911713439651558819204937076716198280335678",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Top Esports",
+   "title": "LoL: Top Esports vs Anyone's Legend - Game 1 Winner",
+   "their_price": 0.44,
+   "my_price": 0.44,
+   "slippage_pct": 0.0,
+   "lag_s": 3.1,
+   "shares": 322.0,
+   "cost": 141.68,
+   "fee": 2.38,
+   "opened": 1785316362,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785283200
+  },
   {
    "token": "103571541388540797188675210796137540235836253758187660366648677646356255933450",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -1858,8 +1878,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400,
-   "sold_shares": 50.47,
-   "sold_proceeds": 49.81
+   "sold_shares": 100.47,
+   "sold_proceeds": 99.14
   },
   {
    "token": "107519224001054263439274706964696866987866557807915774909819079291264377299291",
@@ -2131,27 +2151,6 @@
    "settled": 1784388912,
    "sold_shares": 192.15,
    "sold_proceeds": 96.55
-  },
-  {
-   "token": "3506443794566179214052380628578788380776940712896382718637294140773955061401",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Gen.G",
-   "title": "LoL: Gen.G vs Dplus KIA - Game 1 Winner",
-   "their_price": 0.77,
-   "my_price": 0.76,
-   "slippage_pct": -0.013,
-   "lag_s": 6.3,
-   "shares": 135.85,
-   "cost": 103.25,
-   "fee": 0.74,
-   "opened": 1784384295,
-   "status": "closed",
-   "exit_price": 0.9075,
-   "pnl": 19.3,
-   "settled": 1784387058,
-   "sold_shares": 135.85,
-   "sold_proceeds": 123.29
   }
  ],
  "missed": [
@@ -3110,11 +3109,11 @@
  ],
  "missed_pnl": 111357.17,
  "last_fill": {
-  "ts": 1785315791,
+  "ts": 1785316444,
   "side": "SELL",
-  "price": 0.97,
-  "shares": 8.94,
-  "title": "Iran invades Kuwait by August 31?",
+  "price": 0.987,
+  "shares": 50.0,
+  "title": "Putin out as President of Russia by August 31, 2026?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3132,11 +3131,11 @@
    "realized": 1029.19,
    "n": 90,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 141.68,
+   "open_n": 1,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785313235
+   "last_ts": 1785316362
   },
   "1kto1m": {
    "realized": 113.06,
@@ -3219,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785315797
+ "updated": 1785316444
 }

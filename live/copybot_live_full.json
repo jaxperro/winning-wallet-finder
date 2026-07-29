@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785315797,
+ "updated": 1785316444,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 432.72,
@@ -16,11 +16,11 @@
    "realized": 1029.19,
    "n": 90,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 141.68,
+   "open_n": 1,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785313235
+   "last_ts": 1785316362
   },
   "1kto1m": {
    "realized": 113.06,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "44268329315636111419901094380165521911713439651558819204937076716198280335678",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Top Esports",
+   "title": "LoL: Top Esports vs Anyone's Legend - Game 1 Winner",
+   "their_price": 0.44,
+   "my_price": 0.44,
+   "slippage_pct": 0.0,
+   "lag_s": 3.1,
+   "shares": 322.0,
+   "cost": 141.68,
+   "fee": 2.3802,
+   "opened": 1785316362,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785283200
+  },
   {
    "token": "103571541388540797188675210796137540235836253758187660366648677646356255933450",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -1912,8 +1932,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400,
-   "sold_shares": 50.474029685266586,
-   "sold_proceeds": 49.807884720067385
+   "sold_shares": 100.47351031584665,
+   "sold_proceeds": 99.1381258023708
   },
   {
    "token": "107519224001054263439274706964696866987866557807915774909819079291264377299291",
