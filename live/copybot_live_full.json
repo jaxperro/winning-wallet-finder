@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785338551,
+ "updated": 1785339112,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 432.72,
@@ -16,11 +16,11 @@
    "realized": 918.14,
    "n": 92,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.08,
+   "open_n": 1,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785336814
+   "last_ts": 1785339020
   },
   "1kto1m": {
    "realized": 113.06,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "18336686533395239035817826518946179380426460262862186300738403852712569444780",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Nemiga Gaming",
+   "title": "Dota 2: Amaru Gaming vs Nemiga Gaming - Game 1 Winner",
+   "their_price": 0.66,
+   "my_price": 0.6600247116968698,
+   "slippage_pct": 0.0,
+   "lag_s": 8.4,
+   "shares": 72.84,
+   "cost": 48.0762,
+   "fee": 0.49039999999999995,
+   "opened": 1785339020,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785283200
+  },
   {
    "token": "69247652735973581341182571044145013027536118239238026605770359361059723046536",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",

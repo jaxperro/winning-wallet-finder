@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 128.26,
+ "stake": 127.3,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1815.33,
- "deployed": 1391.15,
+ "cash": 1766.76,
+ "deployed": 1415.62,
  "reserve": 0.0,
- "realized": 2206.45,
+ "realized": 2182.35,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 26,
- "fees_paid": 407.71,
+ "open_count": 27,
+ "fees_paid": 408.2,
  "fee_rate": 0.03,
  "lag": {
-  "n": 303,
-  "n24": 17,
+  "n": 305,
+  "n24": 16,
   "basis": "24h",
-  "avg_s": 3.1,
+  "avg_s": 6.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "18336686533395239035817826518946179380426460262862186300738403852712569444780",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Nemiga Gaming",
+   "title": "Dota 2: Amaru Gaming vs Nemiga Gaming - Game 1 Winner",
+   "their_price": 0.66,
+   "my_price": 0.66,
+   "slippage_pct": 0.0,
+   "lag_s": 8.4,
+   "shares": 72.84,
+   "cost": 48.08,
+   "fee": 0.49,
+   "opened": 1785339020,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785283200
+  },
   {
    "token": "69247652735973581341182571044145013027536118239238026605770359361059723046536",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2132,27 +2152,6 @@
    "settled": 1784447037,
    "sold_shares": 73.41,
    "sold_proceeds": 67.37
-  },
-  {
-   "token": "100047439701441329020616151882361846010601062649169172857788350014215786534216",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "PARIVISION",
-   "title": "Dota 2: Team Yandex vs PARIVISION (BO3) - Esports World Cup Playoffs",
-   "their_price": 0.7456,
-   "my_price": 0.74,
-   "slippage_pct": -0.0075,
-   "lag_s": 8.8,
-   "shares": 133.37,
-   "cost": 98.69,
-   "fee": 0.77,
-   "opened": 1784394303,
-   "status": "closed",
-   "exit_price": 0.7379,
-   "pnl": -1.05,
-   "settled": 1784394359,
-   "sold_shares": 133.37,
-   "sold_proceeds": 98.41
   }
  ],
  "missed": [
@@ -3110,12 +3109,12 @@
  ],
  "missed_pnl": 111333.07,
  "last_fill": {
-  "ts": 1785334578,
-  "side": "SELL",
-  "price": 0.97,
-  "shares": 24.16,
-  "title": "Iran invades Kuwait by August 31?",
-  "outcome": "No"
+  "ts": 1785339028,
+  "side": "BUY",
+  "price": 0.66,
+  "shares": 37.07,
+  "title": "Dota 2: Amaru Gaming vs Nemiga Gaming - Game 1 Winner",
+  "outcome": "Nemiga Gaming"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3132,11 +3131,11 @@
    "realized": 918.14,
    "n": 92,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.08,
+   "open_n": 1,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785336814
+   "last_ts": 1785339020
   },
   "1kto1m": {
    "realized": 113.06,
@@ -3219,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785338551
+ "updated": 1785339112
 }
