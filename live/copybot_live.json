@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 134.02,
+ "stake": 128.26,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 1815.33,
- "deployed": 1535.16,
+ "deployed": 1391.15,
  "reserve": 0.0,
- "realized": 2350.46,
+ "realized": 2206.45,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 27,
+ "open_count": 26,
  "fees_paid": 407.71,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "69247652735973581341182571044145013027536118239238026605770359361059723046536",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "T1",
+   "title": "LoL: T1 vs KT Rolster - Game 2 Winner",
+   "their_price": 0.75,
+   "my_price": 0.75,
+   "slippage_pct": 0.0,
+   "lag_s": 34.4,
+   "shares": 192.01,
+   "cost": 144.01,
+   "fee": 1.08,
+   "opened": 1785321564,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -145.09,
+   "settled": 1785338548,
+   "end_ts": 1785283200
+  },
   {
    "token": "44268329315636111419901094380165521911713439651558819204937076716198280335678",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -146,26 +166,6 @@
    "cost": 31.46,
    "fee": 0.16,
    "opened": 1785327437,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785283200
-  },
-  {
-   "token": "69247652735973581341182571044145013027536118239238026605770359361059723046536",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "T1",
-   "title": "LoL: T1 vs KT Rolster - Game 2 Winner",
-   "their_price": 0.75,
-   "my_price": 0.75,
-   "slippage_pct": 0.0,
-   "lag_s": 34.4,
-   "shares": 192.01,
-   "cost": 144.01,
-   "fee": 1.08,
-   "opened": 1785321564,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -3189,14 +3189,14 @@
    "last_ts": 1785296848
   },
   "JuiceFarm": {
-   "realized": 81.34,
-   "n": 3,
+   "realized": -63.75,
+   "n": 4,
    "wins": 2,
-   "open_cost": 144.01,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 3,
    "miss_pnl": 73.06,
-   "last_ts": 1785321564
+   "last_ts": 1785338548
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3219,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785336817
+ "updated": 1785338551
 }
