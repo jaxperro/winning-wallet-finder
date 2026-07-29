@@ -2157,6 +2157,21 @@
  ],
  "missed": [
   {
+   "ts": 1785312030,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "24411114427282578875426055969732348605035863582713101684063218947039334428561",
+   "cond": "0x5d284999aa83866c46cfa5fe672537a225edd19e2c420433707e08964a3037f0",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $134 Week of July 27 2026?",
+   "outcome": "No",
+   "price": 0.8,
+   "stake": 138.35,
+   "reason": "price moved 0.45\u21920.80",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785306786,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "24004558937841837085615737318743242391761003362634559995158204873168219508775",
@@ -3092,25 +3107,9 @@
    "settled": 1784836444,
    "name": "Kruto2027",
    "exit_checked": true
-  },
-  {
-   "ts": 1784823419,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "10648768902294223005281776472791443674603816737553002058221071348281139541856",
-   "cond": "0x30034a8bfb66e13d0235c5a8483b5f4ba974c0221e3c9ca67f1382723d19a801",
-   "title": "Bitcoin above 66,000 on July 22, 12PM ET?",
-   "outcome": "No",
-   "price": 0.39,
-   "stake": 32.14,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "lost",
-   "pnl": -32.73,
-   "settled": 1784823492,
-   "name": "0xbadaf319",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 111351.85,
+ "missed_pnl": 111357.17,
  "last_fill": {
   "ts": 1785311177,
   "side": "SELL",
@@ -3126,7 +3125,7 @@
    "wins": 23,
    "open_cost": 816.65,
    "open_n": 14,
-   "miss_n": 91,
+   "miss_n": 92,
    "miss_pnl": 112018.58,
    "last_ts": 1785277108
   },
@@ -3221,5 +3220,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785311178
+ "updated": 1785312037
 }
