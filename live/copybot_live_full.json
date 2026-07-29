@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785361793,
+ "updated": 1785363165,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 467.06,
-   "n": 73,
+   "realized": 474.8,
+   "n": 75,
    "wins": 24,
-   "open_cost": 992.63,
-   "open_n": 18,
+   "open_cost": 910.62,
+   "open_n": 16,
    "miss_n": 94,
-   "miss_pnl": 112018.58,
-   "last_ts": 1785354641
+   "miss_pnl": 112021.31,
+   "last_ts": 1785363165
   },
   "gkmgkldfmg": {
    "realized": 906.63,
@@ -79,7 +79,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 3,
-   "miss_pnl": 73.06,
+   "miss_pnl": 90.82,
    "last_ts": 1785338548
   },
   "0x41558102": {
@@ -104,6 +104,50 @@
   }
  },
  "bets": [
+  {
+   "token": "101236487153880410126079538630224897926983898229295262349314695253663048007189",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Down",
+   "title": "SPY (SPY) Up or Down on July 29?",
+   "their_price": 0.55,
+   "my_price": 0.5868222438032771,
+   "slippage_pct": 0.0,
+   "lag_s": 1.0,
+   "shares": 50.349999999999994,
+   "cost": 29.546499975495,
+   "fee": 0.356,
+   "opened": 1785333049,
+   "status": "closed",
+   "exit_price": 0.9583,
+   "pnl": 18.35,
+   "settled": 1785363165,
+   "end_ts": 1785283200,
+   "sold_shares": 50.34999999999999,
+   "sold_proceeds": 48.24968107843491
+  },
+  {
+   "token": "99766335537853682233080165920322263659372534609770854295198969461406895970272",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Down",
+   "title": "Apple (AAPL) Up or Down on July 29?",
+   "their_price": 0.7392,
+   "my_price": 0.7361503307778904,
+   "slippage_pct": 0.0,
+   "lag_s": 6.4,
+   "shares": 71.27,
+   "cost": 52.46543407454024,
+   "fee": 0.4153,
+   "opened": 1785354641,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": -10.61,
+   "settled": 1785363165,
+   "end_ts": 1785283200,
+   "sold_shares": 42.269999999999996,
+   "sold_proceeds": 42.269999999999996
+  },
   {
    "token": "17480166814702290785530852378381854525201787151638025511297996406280125724476",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -163,26 +207,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785369600
-  },
-  {
-   "token": "99766335537853682233080165920322263659372534609770854295198969461406895970272",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Down",
-   "title": "Apple (AAPL) Up or Down on July 29?",
-   "their_price": 0.7392,
-   "my_price": 0.7361503307778904,
-   "slippage_pct": 0.0,
-   "lag_s": 6.4,
-   "shares": 71.27,
-   "cost": 52.46543407454024,
-   "fee": 0.4153,
-   "opened": 1785354641,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785283200
   },
   {
    "token": "69255676899700790711525989127308958019475795404138315524495668898066870353801",
@@ -393,28 +417,6 @@
    "pnl": -144.06,
    "settled": 1785336814,
    "end_ts": 1785283200
-  },
-  {
-   "token": "101236487153880410126079538630224897926983898229295262349314695253663048007189",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Down",
-   "title": "SPY (SPY) Up or Down on July 29?",
-   "their_price": 0.55,
-   "my_price": 0.5868222438032771,
-   "slippage_pct": 0.0,
-   "lag_s": 1.0,
-   "shares": 50.349999999999994,
-   "cost": 29.546499975495,
-   "fee": 0.356,
-   "opened": 1785333049,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785283200,
-   "sold_shares": 47.420007353161665,
-   "sold_proceeds": 45.31968843159659
   },
   {
    "token": "40243886581435132390322826547088998385013323121398351002089270516281955063259",
@@ -5840,6 +5842,38 @@
  ],
  "missed": [
   {
+   "ts": 1785145662,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "109560195847127443718098720993839508458395767835235641294925271566812897320563",
+   "cond": "0xcdf022c2b67b00eeb6325e4f2e7471cc6db10f907185b12f0a1d5f41b5f64b11",
+   "title": "LoL: Solary vs Esprit Sh\u014dnen (BO1) - LFL Regular Season",
+   "outcome": "Solary",
+   "price": 0.88,
+   "stake": 133.76,
+   "reason": "maker bid unfilled (133s)",
+   "status": "sold",
+   "pnl": 17.76,
+   "settled": 1785363163,
+   "name": "JuiceFarm",
+   "exit_price": 1.0
+  },
+  {
+   "ts": 1784820182,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "29922880124871912107369653749261396163687764000386220237409162132192311391947",
+   "cond": "0xfe5188a5b3eb20224878822f8deb3e7e1270415c3d5eb6ad14c9e8380d16b115",
+   "title": "Will Microsoft Corporation (MSFT) hit (HIGH) $450 in July?",
+   "outcome": "No",
+   "price": 0.8594,
+   "stake": 64.45,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 2.73,
+   "settled": 1785363161,
+   "name": "0xbadaf319",
+   "exit_price": 0.9021
+  },
+  {
    "ts": 1785356857,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "82740535108653012552624203462371653094102041666491123851481106526593652328066",
@@ -6297,21 +6331,6 @@
    "settled": 1785160376,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1785145662,
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "token": "109560195847127443718098720993839508458395767835235641294925271566812897320563",
-   "cond": "0xcdf022c2b67b00eeb6325e4f2e7471cc6db10f907185b12f0a1d5f41b5f64b11",
-   "title": "LoL: Solary vs Esprit Sh\u014dnen (BO1) - LFL Regular Season",
-   "outcome": "Solary",
-   "price": 0.88,
-   "stake": 133.76,
-   "reason": "maker bid unfilled (133s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "JuiceFarm"
   },
   {
    "ts": 1785128135,
@@ -6932,21 +6951,6 @@
    "settled": 1784820188,
    "name": "0xbadaf319",
    "exit_price": 0.6667
-  },
-  {
-   "ts": 1784820182,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "29922880124871912107369653749261396163687764000386220237409162132192311391947",
-   "cond": "0xfe5188a5b3eb20224878822f8deb3e7e1270415c3d5eb6ad14c9e8380d16b115",
-   "title": "Will Microsoft Corporation (MSFT) hit (HIGH) $450 in July?",
-   "outcome": "No",
-   "price": 0.8594,
-   "stake": 64.45,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784507597,
