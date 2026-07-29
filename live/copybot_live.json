@@ -2157,6 +2157,21 @@
  ],
  "missed": [
   {
+   "ts": 1785365970,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "63550387015457905261067790993301678078487745417722923506637352556734301722686",
+   "cond": "0x1aeeb3b53950cfa8792f94cecc1db5ebcc8bbd0541bd51fa7e8b4cbb569bb4a6",
+   "title": "Will Meta Platforms, Inc. (META) hit (LOW) $460 in July?",
+   "outcome": "No",
+   "price": 0.914,
+   "stake": 62.23,
+   "reason": "thin book ($10 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785306786,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "24004558937841837085615737318743242391761003362634559995158204873168219508775",
@@ -3093,25 +3108,9 @@
    "settled": 1784887956,
    "name": "0xbadaf319",
    "exit_price": 0.8729
-  },
-  {
-   "ts": 1784506885,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "90827395403667708709418040026017872248338498816541474972448341541535842153246",
-   "cond": "0xf8b37bd6e5060608e44b34843a2c8ada940c2b62beb1a26fc01088921a70e25b",
-   "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $152 Week of July 20 2026?",
-   "outcome": "No",
-   "price": 0.57,
-   "stake": 61.92,
-   "reason": "thin book ($34 within 5c < $50)",
-   "status": "sold",
-   "pnl": 26.65,
-   "settled": 1784887955,
-   "name": "0xbadaf319",
-   "exit_price": 0.827
   }
  ],
- "missed_pnl": 111236.38,
+ "missed_pnl": 111262.81,
  "last_fill": {
   "ts": 1785364706,
   "side": "BUY",
@@ -3127,7 +3126,7 @@
    "wins": 24,
    "open_cost": 910.62,
    "open_n": 16,
-   "miss_n": 94,
+   "miss_n": 95,
    "miss_pnl": 111843.71,
    "last_ts": 1785363165
   },
@@ -3222,5 +3221,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785365187
+ "updated": 1785365970
 }
