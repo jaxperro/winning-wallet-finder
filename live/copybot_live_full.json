@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785360979,
+ "updated": 1785361793,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 467.06,
@@ -36,11 +36,11 @@
    "realized": 749.99,
    "n": 6,
    "wins": 0,
-   "open_cost": 421.22,
-   "open_n": 3,
+   "open_cost": 509.64,
+   "open_n": 4,
    "miss_n": 6,
    "miss_pnl": 348.47,
-   "last_ts": 1785360166
+   "last_ts": 1785361786
   },
   "LSB1": {
    "realized": -397.16,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "17480166814702290785530852378381854525201787151638025511297996406280125724476",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "RED Academy",
+   "title": "LoL: RED Academy vs Estral Esports (BO1) - Circuito Desafiante Regular Season",
+   "their_price": 0.1115,
+   "my_price": 0.1115,
+   "slippage_pct": 0.0,
+   "lag_s": 1.2,
+   "shares": 793.11,
+   "cost": 88.42,
+   "fee": 2.3568,
+   "opened": 1785361786,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785369600
+  },
   {
    "token": "73729038726669069404058491316491538761744291522842760243389656513468416826452",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
