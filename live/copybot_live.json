@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 127.3,
+ "stake": 127.28,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1766.76,
- "deployed": 1415.62,
+ "cash": 1702.96,
+ "deployed": 1479.0,
  "reserve": 0.0,
- "realized": 2182.35,
+ "realized": 2181.93,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 27,
- "fees_paid": 408.2,
+ "open_count": 28,
+ "fees_paid": 408.62,
  "fee_rate": 0.03,
  "lag": {
-  "n": 305,
-  "n24": 16,
+  "n": 306,
+  "n24": 17,
   "basis": "24h",
-  "avg_s": 6.4,
+  "avg_s": 7.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "114023575411564465664998216295132384015264339083303639055288358207370730671183",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Ethereum be above $1,900 on July 29?",
+   "their_price": 0.78,
+   "my_price": 0.78,
+   "slippage_pct": 0.0,
+   "lag_s": 42.5,
+   "shares": 81.26,
+   "cost": 63.38,
+   "fee": 0.42,
+   "opened": 1785339080,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785283200
+  },
   {
    "token": "18336686533395239035817826518946179380426460262862186300738403852712569444780",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2131,27 +2151,6 @@
    "settled": 1784464117,
    "sold_shares": 182.95,
    "sold_proceeds": 173.54
-  },
-  {
-   "token": "38793358179615174908021309915819238458278082712284959468246018176126033234516",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Carnita Atwater win the 2026 Tennessee Governor Democratic primary election?",
-   "their_price": 0.89,
-   "my_price": 0.87,
-   "slippage_pct": -0.0225,
-   "lag_s": 1.1,
-   "shares": 73.41,
-   "cost": 63.87,
-   "fee": 0.25,
-   "opened": 1784446776,
-   "status": "closed",
-   "exit_price": 0.9178,
-   "pnl": 3.25,
-   "settled": 1784447037,
-   "sold_shares": 73.41,
-   "sold_proceeds": 67.37
   }
  ],
  "missed": [
@@ -3109,23 +3108,23 @@
  ],
  "missed_pnl": 111333.07,
  "last_fill": {
-  "ts": 1785339028,
+  "ts": 1785339122,
   "side": "BUY",
-  "price": 0.66,
-  "shares": 37.07,
-  "title": "Dota 2: Amaru Gaming vs Nemiga Gaming - Game 1 Winner",
-  "outcome": "Nemiga Gaming"
+  "price": 0.78,
+  "shares": 81.26,
+  "title": "Will the price of Ethereum be above $1,900 on July 29?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 432.72,
    "n": 70,
    "wins": 23,
-   "open_cost": 877.65,
-   "open_n": 16,
+   "open_cost": 941.03,
+   "open_n": 17,
    "miss_n": 92,
    "miss_pnl": 112018.58,
-   "last_ts": 1785333049
+   "last_ts": 1785339080
   },
   "gkmgkldfmg": {
    "realized": 918.14,
@@ -3218,5 +3217,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785339112
+ "updated": 1785339182
 }
