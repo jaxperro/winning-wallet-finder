@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785319064,
+ "updated": 1785319399,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 432.72,
@@ -68,7 +68,7 @@
    "wins": 2,
    "open_cost": 1116.73,
    "open_n": 10,
-   "miss_n": 25,
+   "miss_n": 26,
    "miss_pnl": -634.38,
    "last_ts": 1785296848
   },
@@ -5549,6 +5549,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785319393,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "44366458982156171422796551330299704518162863942866740121745454633979905778791",
+   "cond": "0x8c48f3acf4177b5ceb012a8a2dc7a9c219eeae4a032d6ddcbc3c2ffab907439a",
+   "title": "Will the Liberal Democratic Party of Russia (LDPR) gain the most seats in the next Russian parliamentary election?",
+   "outcome": "No",
+   "price": 0.93,
+   "stake": 144.01,
+   "reason": "maker bid unfilled (89s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1785319058,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
