@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 138.03,
+ "stake": 137.99,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3450.63,
- "cash": 1940.21,
- "deployed": 1510.43,
+ "cash": 1801.41,
+ "deployed": 1648.45,
  "reserve": 0.0,
- "realized": 2450.6,
+ "realized": 2449.83,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 24,
- "fees_paid": 395.45,
+ "open_count": 25,
+ "fees_paid": 396.22,
  "fee_rate": 0.03,
  "lag": {
-  "n": 293,
-  "n24": 11,
+  "n": 294,
+  "n24": 12,
   "basis": "24h",
-  "avg_s": 4.4,
+  "avg_s": 3.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "55805599679396794643020959724265487381144406111284276240185102465706193783798",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Moonshot have the best Chinese AI model at the end of July 2026?",
+   "their_price": 0.813,
+   "my_price": 0.813,
+   "slippage_pct": 0.0,
+   "lag_s": 0.9,
+   "shares": 169.77,
+   "cost": 138.02,
+   "fee": 0.77,
+   "opened": 1785292870,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785456000
+  },
   {
    "token": "68080778697884921540335032370654180051222428162809511382222697646266365598353",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2127,27 +2147,6 @@
    "settled": 1784384166,
    "sold_shares": 240.76,
    "sold_proceeds": 98.36
-  },
-  {
-   "token": "46464336901469148231749620229467543535010257111143284104831372917724022712604",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Karmine Corp",
-   "title": "LoL: T1 vs Karmine Corp (BO3) - Esports World Cup Playoffs",
-   "their_price": 0.25,
-   "my_price": 0.26,
-   "slippage_pct": 0.04,
-   "lag_s": 1.2,
-   "shares": 407.82,
-   "cost": 106.03,
-   "fee": 2.35,
-   "opened": 1784379482,
-   "status": "closed",
-   "exit_price": 0.1121,
-   "pnl": -62.68,
-   "settled": 1784381294,
-   "sold_shares": 407.82,
-   "sold_proceeds": 45.7
   }
  ],
  "missed": [
@@ -3107,12 +3106,12 @@
  ],
  "missed_pnl": 111381.45,
  "last_fill": {
-  "ts": 1785278050,
-  "side": "SELL",
-  "price": 1.0,
-  "shares": 179.98,
-  "title": "Israel x Iran ceasefire continues through July 25?",
-  "outcome": "Yes"
+  "ts": 1785292870,
+  "side": "BUY",
+  "price": 0.813,
+  "shares": 169.77,
+  "title": "Will Moonshot have the best Chinese AI model at the end of J",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3179,11 +3178,11 @@
    "realized": 213.15,
    "n": 10,
    "wins": 2,
-   "open_cost": 1089.05,
-   "open_n": 10,
+   "open_cost": 1227.07,
+   "open_n": 11,
    "miss_n": 25,
    "miss_pnl": -634.38,
-   "last_ts": 1785278053
+   "last_ts": 1785292870
   },
   "JuiceFarm": {
    "realized": 81.34,
@@ -3216,5 +3215,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785288853
+ "updated": 1785292877
 }
