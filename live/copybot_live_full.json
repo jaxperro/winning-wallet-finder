@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785354037,
+ "updated": 1785354713,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 467.06,
    "n": 73,
    "wins": 24,
-   "open_cost": 940.16,
-   "open_n": 17,
+   "open_cost": 992.63,
+   "open_n": 18,
    "miss_n": 92,
    "miss_pnl": 112018.58,
-   "last_ts": 1785352116
+   "last_ts": 1785354641
   },
   "gkmgkldfmg": {
    "realized": 906.63,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "99766335537853682233080165920322263659372534609770854295198969461406895970272",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Down",
+   "title": "Apple (AAPL) Up or Down on July 29?",
+   "their_price": 0.7392,
+   "my_price": 0.7361503307778904,
+   "slippage_pct": 0.0,
+   "lag_s": 6.4,
+   "shares": 71.27,
+   "cost": 52.46543407454024,
+   "fee": 0.4153,
+   "opened": 1785354641,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785283200
+  },
   {
    "token": "69255676899700790711525989127308958019475795404138315524495668898066870353801",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
