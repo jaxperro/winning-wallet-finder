@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785364772,
+ "updated": 1785365187,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 474.8,
@@ -5854,7 +5854,8 @@
    "status": "lost",
    "pnl": -63.89,
    "settled": 1785364373,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1785354988,
@@ -5869,7 +5870,8 @@
    "status": "lost",
    "pnl": -113.71,
    "settled": 1785364167,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1785145662,
