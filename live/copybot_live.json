@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 141.74,
+ "stake": 141.66,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3543.39,
- "cash": 1986.87,
- "deployed": 1556.52,
+ "cash": 1843.27,
+ "deployed": 1698.25,
  "reserve": 0.0,
- "realized": 2543.36,
+ "realized": 2541.48,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 25,
- "fees_paid": 399.78,
+ "open_count": 26,
+ "fees_paid": 401.65,
  "fee_rate": 0.03,
  "lag": {
-  "n": 296,
-  "n24": 14,
+  "n": 297,
+  "n24": 15,
   "basis": "24h",
-  "avg_s": 3.6,
+  "avg_s": 4.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "103571541388540797188675210796137540235836253758187660366648677646356255933450",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Kiwoom DRX",
+   "title": "LoL: Kiwoom DRX vs Nongshim Red Force - Game 2 Winner",
+   "their_price": 0.56,
+   "my_price": 0.56,
+   "slippage_pct": 0.0,
+   "lag_s": 23.4,
+   "shares": 253.09,
+   "cost": 141.73,
+   "fee": 1.87,
+   "opened": 1785315623,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785283200
+  },
   {
    "token": "49056695315898035490832146867193788368377247728686254182873260938497809681300",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2132,27 +2152,6 @@
    "settled": 1784387058,
    "sold_shares": 135.85,
    "sold_proceeds": 123.29
-  },
-  {
-   "token": "81227913022464789020420026850668797006106628368067299950425613264309232066763",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Iran leadership change by July 31?",
-   "their_price": 0.936,
-   "my_price": 0.935,
-   "slippage_pct": -0.0011,
-   "lag_s": 7.6,
-   "shares": 112.87,
-   "cost": 105.54,
-   "fee": 0.21,
-   "opened": 1784319276,
-   "status": "closed",
-   "exit_price": 0.9595,
-   "pnl": 2.56,
-   "settled": 1784385158,
-   "sold_shares": 112.87,
-   "sold_proceeds": 108.3
   }
  ],
  "missed": [
@@ -3111,12 +3110,12 @@
  ],
  "missed_pnl": 111357.17,
  "last_fill": {
-  "ts": 1785315531,
-  "side": "SELL",
-  "price": 0.987,
-  "shares": 41.3,
-  "title": "Putin out as President of Russia by August 31, 2026?",
-  "outcome": "No"
+  "ts": 1785315646,
+  "side": "BUY",
+  "price": 0.56,
+  "shares": 253.09,
+  "title": "LoL: Kiwoom DRX vs Nongshim Red Force - Game 2 Winner",
+  "outcome": "Kiwoom DRX"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3173,11 +3172,11 @@
    "realized": 271.02,
    "n": 35,
    "wins": 0,
-   "open_cost": 138.29,
-   "open_n": 1,
+   "open_cost": 280.02,
+   "open_n": 2,
    "miss_n": 6,
    "miss_pnl": -213.73,
-   "last_ts": 1785312515
+   "last_ts": 1785315623
   },
   "BikesAreTheBikes": {
    "realized": 218.31,
@@ -3220,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785315531
+ "updated": 1785315687
 }
