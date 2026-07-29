@@ -1,22 +1,22 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 128.8,
+ "stake": 128.74,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1428.78,
- "deployed": 1791.14,
+ "cash": 1359.12,
+ "deployed": 1859.42,
  "reserve": 0.0,
- "realized": 2219.89,
+ "realized": 2218.5,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 29,
- "fees_paid": 415.96,
+ "fees_paid": 417.35,
  "fee_rate": 0.03,
  "lag": {
-  "n": 318,
-  "n24": 25,
+  "n": 320,
+  "n24": 27,
   "basis": "24h",
   "avg_s": 5.6,
   "avg_slip_pct": 0.0,
@@ -77,12 +77,12 @@
    "outcome": "7REX",
    "title": "LoL: paiN Gaming Academy vs 7REX (BO1) - Circuito Desafiante Regular Season",
    "their_price": 0.3577,
-   "my_price": 0.3577,
+   "my_price": 0.3432,
    "slippage_pct": 0.0,
    "lag_s": 8.9,
-   "shares": 264.66,
-   "cost": 94.66,
-   "fee": 1.82,
+   "shares": 474.79,
+   "cost": 162.94,
+   "fee": 3.21,
    "opened": 1785358477,
    "status": "open",
    "exit_price": null,
@@ -3109,12 +3109,12 @@
  ],
  "missed_pnl": 111393.49,
  "last_fill": {
-  "ts": 1785360173,
+  "ts": 1785360954,
   "side": "BUY",
-  "price": 0.6721,
-  "shares": 191.7,
-  "title": "LoL: RMD Gaming vs KaBuM! Ilha das Lendas (BO1) - Circuito D",
-  "outcome": "KaBuM! Ilha das Lendas"
+  "price": 0.32,
+  "shares": 106.68,
+  "title": "LoL: paiN Gaming Academy vs 7REX (BO1) - Circuito Desafiante",
+  "outcome": "7REX"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3151,7 +3151,7 @@
    "realized": 749.99,
    "n": 6,
    "wins": 0,
-   "open_cost": 352.94,
+   "open_cost": 421.22,
    "open_n": 3,
    "miss_n": 6,
    "miss_pnl": 348.47,
@@ -3218,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785360187
+ "updated": 1785360979
 }

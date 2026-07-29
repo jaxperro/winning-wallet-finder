@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785360187,
+ "updated": 1785360979,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 467.06,
@@ -36,7 +36,7 @@
    "realized": 749.99,
    "n": 6,
    "wins": 0,
-   "open_cost": 352.94,
+   "open_cost": 421.22,
    "open_n": 3,
    "miss_n": 6,
    "miss_pnl": 348.47,
@@ -131,12 +131,12 @@
    "outcome": "7REX",
    "title": "LoL: paiN Gaming Academy vs 7REX (BO1) - Circuito Desafiante Regular Season",
    "their_price": 0.3577,
-   "my_price": 0.3577,
+   "my_price": 0.3431750879336128,
    "slippage_pct": 0.0,
    "lag_s": 8.9,
-   "shares": 264.66,
-   "cost": 94.66,
-   "fee": 1.8241,
+   "shares": 474.79,
+   "cost": 162.9361,
+   "fee": 3.2067,
    "opened": 1785358477,
    "status": "open",
    "exit_price": null,
