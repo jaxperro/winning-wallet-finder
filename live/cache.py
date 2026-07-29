@@ -66,12 +66,14 @@ def conv_cutoff(sizes, q=CONV_PCTILE):
 _lock = threading.Lock()
 
 
-def _connect(db=None, tries=24, wait=15):
+def _connect(db=None, tries=240, wait=15):
     """duckdb is SINGLE-WRITER and this module connects at IMPORT time, so a
     daily/nightly overlap used to raise straight out of `import cache` —
     killing forward.py and, through nightly.sh's `set -e`, every grader
     behind it (2026-07-27 and again 07-28: the graders silently never ran).
-    Wait the other writer out instead; 6 min covers a collect pass."""
+    Wait the other writer out instead. 60 min, because the daily holds
+    this lock for its WHOLE collect+score phase (~30 min at 1.5 wallets/s
+    over ~2,600 wallets) — a 6-min wait died against it on 2026-07-29."""
     db = db or DB
     for i in range(tries):
         try:
