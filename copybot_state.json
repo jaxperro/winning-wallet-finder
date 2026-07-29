@@ -19996,7 +19996,7 @@
   },
   "hwm": 3600.1933566560215,
   "feed_sig": "1ceb0d6278bb4581627eb83643652135",
-  "feed_pushed_at": 1785364101.476694,
+  "feed_pushed_at": 1785364239.8002543,
   "missed": [
     {
       "ts": 1783710821,
@@ -23109,9 +23109,9 @@
       "price": 0.52,
       "stake": 62.98,
       "reason": "thin book ($40 within 5c < $50)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "pnl": -63.89,
+      "settled": 1785364373,
       "name": "0xbadaf319"
     },
     {
