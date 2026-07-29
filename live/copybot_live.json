@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 138.35,
+ "stake": 138.36,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3458.84,
- "cash": 1976.26,
- "deployed": 1482.58,
+ "hwm": 3459.02,
+ "cash": 1978.97,
+ "deployed": 1480.04,
  "reserve": 0.0,
- "realized": 2458.81,
+ "realized": 2458.99,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 24,
- "fees_paid": 396.29,
+ "fees_paid": 396.3,
  "fee_rate": 0.03,
  "lag": {
   "n": 294,
@@ -1320,8 +1320,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400,
-   "sold_shares": 51.74,
-   "sold_proceeds": 50.11
+   "sold_shares": 54.54,
+   "sold_proceeds": 52.83
   },
   {
    "token": "45276939554340428771698865022604030782253660716041002232668611227463504055173",
@@ -3111,9 +3111,9 @@
  ],
  "missed_pnl": 111357.17,
  "last_fill": {
-  "ts": 1785311177,
+  "ts": 1785312072,
   "side": "SELL",
-  "price": 0.969,
+  "price": 0.97,
   "shares": 2.8,
   "title": "Iran invades Kuwait by August 31?",
   "outcome": "No"
@@ -3220,5 +3220,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785312037
+ "updated": 1785312078
 }
