@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 143.91,
+ "stake": 138.24,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 1631.98,
- "deployed": 1965.81,
+ "deployed": 1824.08,
  "reserve": 0.0,
- "realized": 2597.76,
+ "realized": 2456.03,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 29,
+ "open_count": 28,
  "fees_paid": 406.82,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "103571541388540797188675210796137540235836253758187660366648677646356255933450",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Kiwoom DRX",
+   "title": "LoL: Kiwoom DRX vs Nongshim Red Force - Game 2 Winner",
+   "their_price": 0.56,
+   "my_price": 0.56,
+   "slippage_pct": 0.0,
+   "lag_s": 23.4,
+   "shares": 253.09,
+   "cost": 141.73,
+   "fee": 1.87,
+   "opened": 1785315623,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -143.6,
+   "settled": 1785332363,
+   "end_ts": 1785283200
+  },
   {
    "token": "40243886581435132390322826547088998385013323121398351002089270516281955063259",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -146,26 +166,6 @@
    "cost": 141.68,
    "fee": 2.38,
    "opened": 1785316362,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785283200
-  },
-  {
-   "token": "103571541388540797188675210796137540235836253758187660366648677646356255933450",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Kiwoom DRX",
-   "title": "LoL: Kiwoom DRX vs Nongshim Red Force - Game 2 Winner",
-   "their_price": 0.56,
-   "my_price": 0.56,
-   "slippage_pct": 0.0,
-   "lag_s": 23.4,
-   "shares": 253.09,
-   "cost": 141.73,
-   "fee": 1.87,
-   "opened": 1785315623,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -3168,14 +3168,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 327.92,
-   "n": 36,
+   "realized": 184.32,
+   "n": 37,
    "wins": 0,
-   "open_cost": 141.73,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 7,
    "miss_pnl": -311.49,
-   "last_ts": 1785316781
+   "last_ts": 1785332363
   },
   "BikesAreTheBikes": {
    "realized": 218.31,
@@ -3218,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785331952
+ "updated": 1785332370
 }
