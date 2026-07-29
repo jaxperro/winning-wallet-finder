@@ -25,6 +25,21 @@ anything on the live bot"):
 - **Every study gets one instrument that does not share the scorer's
   assumptions** — the surge paper harness (chain-graded from day one) is
   what caught the bug. Divergence between instruments is signal, not noise.
+- **DEFINITION LAW (2026-07-28, from #26): a tape scorer and its harness
+  must be shown to name the SAME EVENTS before any tape verdict is
+  trusted.** Study C scored +$2.17/lean on tape and −$2.26/fill at a real
+  book with entry price ruled out (median ask premium +1c, 72% fill).
+  The crossing diagnostic (lean_crossing_diag.py) found only 51% of the
+  harness's attempts had a matching tape crossing, and 84% of the tape's
+  crossings were invisible to a live bot — the two were measuring
+  different signals under one name. Exposure comes from triggers that
+  depend on RECONSTRUCTED STATE (running inventory, rolling windows,
+  cumulative flow): the scorer sees a whole day, the bot sees from boot.
+  Point-in-time triggers (one print, one burst) are not exposed, which is
+  why Study D's harness matched its Stage-1 definition and C's did not.
+  For any state-dependent trigger the crossing diagnostic — not the P&L —
+  is the FIRST check, and a harness should warm-start its state from tape
+  rather than from zero.
 - **DATA LAW (2026-07-22): tests are additive, never subtractive.** Raw
   streams (tape, attempts, markouts, settles, meta snapshots) are
   append-only; analysis opens them read-only; no script rewrites or
