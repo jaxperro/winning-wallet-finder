@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785332900,
+ "updated": 1785332913,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 432.72,
@@ -13,14 +13,14 @@
    "last_ts": 1785327437
   },
   "gkmgkldfmg": {
-   "realized": 1029.19,
-   "n": 90,
+   "realized": 1062.2,
+   "n": 91,
    "wins": 0,
-   "open_cost": 285.64,
-   "open_n": 2,
+   "open_cost": 141.68,
+   "open_n": 1,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785331871
+   "last_ts": 1785332913
   },
   "1kto1m": {
    "realized": 113.06,
@@ -105,6 +105,28 @@
  },
  "bets": [
   {
+   "token": "40243886581435132390322826547088998385013323121398351002089270516281955063259",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Bilibili Gaming",
+   "title": "LoL: Bilibili Gaming vs LGD Gaming (BO3) - LPL Group Ascend",
+   "their_price": 0.73,
+   "my_price": 0.73,
+   "slippage_pct": 0.0,
+   "lag_s": 12.7,
+   "shares": 197.2,
+   "cost": 143.96,
+   "fee": 1.166,
+   "opened": 1785331871,
+   "status": "closed",
+   "exit_price": 0.9033,
+   "pnl": 33.01,
+   "settled": 1785332913,
+   "end_ts": 1785283200,
+   "sold_shares": 197.19627672197873,
+   "sold_proceeds": 178.1324887498928
+  },
+  {
    "token": "103571541388540797188675210796137540235836253758187660366648677646356255933450",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "name": "AIcAIc",
@@ -123,28 +145,6 @@
    "pnl": -143.6,
    "settled": 1785332363,
    "end_ts": 1785283200
-  },
-  {
-   "token": "40243886581435132390322826547088998385013323121398351002089270516281955063259",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Bilibili Gaming",
-   "title": "LoL: Bilibili Gaming vs LGD Gaming (BO3) - LPL Group Ascend",
-   "their_price": 0.73,
-   "my_price": 0.73,
-   "slippage_pct": 0.0,
-   "lag_s": 12.7,
-   "shares": 197.2,
-   "cost": 143.96,
-   "fee": 1.166,
-   "opened": 1785331871,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785283200,
-   "sold_shares": 116.00797103009569,
-   "sold_proceeds": 105.28222205256615
   },
   {
    "token": "105470050397895416738353896203765735520950460751992940982686152479742202067000",
