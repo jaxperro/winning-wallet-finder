@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 143.96,
+ "stake": 143.91,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1777.1,
- "deployed": 1821.85,
+ "cash": 1631.98,
+ "deployed": 1965.81,
  "reserve": 0.0,
- "realized": 2598.92,
+ "realized": 2597.76,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 28,
- "fees_paid": 405.65,
+ "open_count": 29,
+ "fees_paid": 406.82,
  "fee_rate": 0.03,
  "lag": {
-  "n": 300,
-  "n24": 15,
+  "n": 301,
+  "n24": 16,
   "basis": "24h",
-  "avg_s": 3.1,
+  "avg_s": 4.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "40243886581435132390322826547088998385013323121398351002089270516281955063259",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Bilibili Gaming",
+   "title": "LoL: Bilibili Gaming vs LGD Gaming (BO3) - LPL Group Ascend",
+   "their_price": 0.73,
+   "my_price": 0.73,
+   "slippage_pct": 0.0,
+   "lag_s": 12.7,
+   "shares": 197.2,
+   "cost": 143.96,
+   "fee": 1.17,
+   "opened": 1785331871,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785283200
+  },
   {
    "token": "105470050397895416738353896203765735520950460751992940982686152479742202067000",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2132,25 +2152,6 @@
    "settled": 1784393906,
    "sold_shares": 200.69,
    "sold_proceeds": 118.2
-  },
-  {
-   "token": "72443268588318480762947626028985209515769939740457770606675272750357292062749",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "T1",
-   "title": "LoL: T1 vs Karmine Corp - Game 2 Winner",
-   "their_price": 0.65,
-   "my_price": 0.64,
-   "slippage_pct": -0.0154,
-   "lag_s": 1.8,
-   "shares": 165.38,
-   "cost": 105.85,
-   "fee": 1.14,
-   "opened": 1784376436,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -106.99,
-   "settled": 1784393226
   }
  ],
  "missed": [
@@ -3108,12 +3109,12 @@
  ],
  "missed_pnl": 111333.07,
  "last_fill": {
-  "ts": 1785327438,
+  "ts": 1785331883,
   "side": "BUY",
-  "price": 0.832,
-  "shares": 37.81,
-  "title": "WTI Crude Oil (WTI) closes above $86 on July 29?",
-  "outcome": "No"
+  "price": 0.73,
+  "shares": 197.2,
+  "title": "LoL: Bilibili Gaming vs LGD Gaming (BO3) - LPL Group Ascend",
+  "outcome": "Bilibili Gaming"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3130,11 +3131,11 @@
    "realized": 1029.19,
    "n": 90,
    "wins": 0,
-   "open_cost": 141.68,
-   "open_n": 1,
+   "open_cost": 285.64,
+   "open_n": 2,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785316362
+   "last_ts": 1785331871
   },
   "1kto1m": {
    "realized": 113.06,
@@ -3217,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785329111
+ "updated": 1785331952
 }
