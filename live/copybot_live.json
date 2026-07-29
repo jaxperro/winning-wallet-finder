@@ -2157,6 +2157,22 @@
  ],
  "missed": [
   {
+   "ts": 1785262738,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "92205817338549581942996291977146287067184626116756204357001405482376199798910",
+   "cond": "0xbdc6833f8a1907f7103fd11b3212a270abdc79fca68c247942efd492956b38ac",
+   "title": "Will the next Google Gemini Pro model added to the Arena Leaderboard debut at a score of at least 1500?",
+   "outcome": "Yes",
+   "price": 0.4,
+   "stake": 40.15,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": -1.45,
+   "settled": 1785306472,
+   "name": "0xbadaf319",
+   "exit_price": 0.4
+  },
+  {
    "ts": 1785145529,
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
    "token": "44947152591637181972300049650785829928165871645008039071331001566404599378498",
@@ -2267,21 +2283,6 @@
    "settled": 1785264783,
    "name": "0xbadaf319",
    "exit_price": 0.8532
-  },
-  {
-   "ts": 1785262738,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "92205817338549581942996291977146287067184626116756204357001405482376199798910",
-   "cond": "0xbdc6833f8a1907f7103fd11b3212a270abdc79fca68c247942efd492956b38ac",
-   "title": "Will the next Google Gemini Pro model added to the Arena Leaderboard debut at a score of at least 1500?",
-   "outcome": "Yes",
-   "price": 0.4,
-   "stake": 40.15,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1785261051,
@@ -3110,7 +3111,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 111381.45,
+ "missed_pnl": 111380.0,
  "last_fill": {
   "ts": 1785305739,
   "side": "SELL",
@@ -3127,7 +3128,7 @@
    "open_cost": 816.65,
    "open_n": 14,
    "miss_n": 90,
-   "miss_pnl": 112020.03,
+   "miss_pnl": 112018.58,
    "last_ts": 1785277108
   },
   "gkmgkldfmg": {
@@ -3221,5 +3222,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785305740
+ "updated": 1785306472
 }
