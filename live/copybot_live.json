@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 129.68,
+ "stake": 129.78,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1698.45,
- "deployed": 1543.49,
+ "cash": 1704.58,
+ "deployed": 1539.89,
  "reserve": 0.0,
- "realized": 2241.91,
+ "realized": 2244.44,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 26,
@@ -279,8 +279,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785283200,
-   "sold_shares": 41.29,
-   "sold_proceeds": 39.2
+   "sold_shares": 47.42,
+   "sold_proceeds": 45.32
   },
   {
    "token": "40243886581435132390322826547088998385013323121398351002089270516281955063259",
@@ -3115,7 +3115,7 @@
   "ts": 1785354037,
   "side": "SELL",
   "price": 0.999,
-  "shares": 19.1,
+  "shares": 6.13,
   "title": "SPY (SPY) Up or Down on July 29?",
   "outcome": "Down"
  },
