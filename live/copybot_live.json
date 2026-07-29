@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 141.66,
+ "stake": 141.74,
  "stake_pct": 0.04,
  "event_cap": 0,
- "hwm": 3541.58,
- "cash": 1946.13,
- "deployed": 1595.46,
+ "hwm": 3543.39,
+ "cash": 1986.87,
+ "deployed": 1556.52,
  "reserve": 0.0,
- "realized": 2541.55,
+ "realized": 2543.36,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 25,
- "fees_paid": 399.77,
+ "fees_paid": 399.78,
  "fee_rate": 0.03,
  "lag": {
   "n": 296,
@@ -1838,8 +1838,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400,
-   "sold_shares": 9.18,
-   "sold_proceeds": 9.06
+   "sold_shares": 50.47,
+   "sold_proceeds": 49.81
   },
   {
    "token": "107519224001054263439274706964696866987866557807915774909819079291264377299291",
@@ -3111,11 +3111,11 @@
  ],
  "missed_pnl": 111357.17,
  "last_fill": {
-  "ts": 1785314890,
+  "ts": 1785315531,
   "side": "SELL",
-  "price": 0.97,
-  "shares": 12.62,
-  "title": "Iran invades Kuwait by August 31?",
+  "price": 0.987,
+  "shares": 41.3,
+  "title": "Putin out as President of Russia by August 31, 2026?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3220,5 +3220,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785314890
+ "updated": 1785315531
 }
