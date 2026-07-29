@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785341708,
+ "updated": 1785345588,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 444.18,
    "n": 72,
    "wins": 23,
-   "open_cost": 992.99,
-   "open_n": 17,
+   "open_cost": 1055.5,
+   "open_n": 18,
    "miss_n": 92,
    "miss_pnl": 112018.58,
-   "last_ts": 1785340806
+   "last_ts": 1785345581
   },
   "gkmgkldfmg": {
    "realized": 906.63,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "34320045222277936713720830397426891082987734367890243003396143984338989258132",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Revolut's valuation hit (LOW) $75B by December 31?",
+   "their_price": 0.93,
+   "my_price": 0.93,
+   "slippage_pct": 0.0,
+   "lag_s": 0.4,
+   "shares": 67.22,
+   "cost": 62.51,
+   "fee": 0.1313,
+   "opened": 1785345581,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798761600
+  },
   {
    "token": "18336686533395239035817826518946179380426460262862186300738403852712569444780",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
