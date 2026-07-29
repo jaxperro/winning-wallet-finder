@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1662.86,
- "deployed": 1530.47,
+ "cash": 1662.98,
+ "deployed": 1530.38,
  "reserve": 0.0,
- "realized": 2193.3,
+ "realized": 2193.33,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 28,
@@ -132,7 +132,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1785283200
+   "end_ts": 1785283200,
+   "sold_shares": 0.13,
+   "sold_proceeds": 0.12
   },
   {
    "token": "69247652735973581341182571044145013027536118239238026605770359361059723046536",
@@ -3110,12 +3112,12 @@
  ],
  "missed_pnl": 111333.07,
  "last_fill": {
-  "ts": 1785340806,
+  "ts": 1785340928,
   "side": "SELL",
-  "price": 0.97,
-  "shares": 72.87,
-  "title": "Will the price of Bitcoin be above $64,000 on July 29?",
-  "outcome": "No"
+  "price": 0.91,
+  "shares": 0.13,
+  "title": "Dota 2: Amaru Gaming vs Nemiga Gaming - Game 1 Winner",
+  "outcome": "Nemiga Gaming"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3219,5 +3221,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785340806
+ "updated": 1785340940
 }
