@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 128.92,
+ "stake": 128.85,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1655.37,
- "deployed": 1567.64,
+ "cash": 1558.89,
+ "deployed": 1662.3,
  "reserve": 0.0,
- "realized": 2222.98,
+ "realized": 2221.15,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 27,
- "fees_paid": 412.87,
+ "open_count": 28,
+ "fees_paid": 414.7,
  "fee_rate": 0.03,
  "lag": {
-  "n": 316,
-  "n24": 23,
+  "n": 317,
+  "n24": 24,
   "basis": "24h",
-  "avg_s": 3.5,
+  "avg_s": 4.5,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "54815727746640547967672254072133541716883461619401150888777316620441172319772",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "7REX",
+   "title": "LoL: paiN Gaming Academy vs 7REX (BO1) - Circuito Desafiante Regular Season",
+   "their_price": 0.3577,
+   "my_price": 0.3577,
+   "slippage_pct": 0.0,
+   "lag_s": 8.9,
+   "shares": 264.66,
+   "cost": 94.66,
+   "fee": 1.82,
+   "opened": 1785358477,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785369600
+  },
   {
    "token": "99766335537853682233080165920322263659372534609770854295198969461406895970272",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2133,27 +2153,6 @@
    "settled": 1784475647,
    "sold_shares": 251.15,
    "sold_proceeds": 113.66
-  },
-  {
-   "token": "107519224001054263439274706964696866987866557807915774909819079291264377299291",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "BetBoom Team",
-   "title": "Dota 2: BetBoom Team vs PARIVISION - Game 2 Winner",
-   "their_price": 0.3705,
-   "my_price": 0.38,
-   "slippage_pct": 0.0257,
-   "lag_s": 6.7,
-   "shares": 383.4,
-   "cost": 145.69,
-   "fee": 2.71,
-   "opened": 1784475472,
-   "status": "closed",
-   "exit_price": 0.3971,
-   "pnl": 3.86,
-   "settled": 1784475572,
-   "sold_shares": 383.4,
-   "sold_proceeds": 152.27
   }
  ],
  "missed": [
@@ -3111,12 +3110,12 @@
  ],
  "missed_pnl": 111393.49,
  "last_fill": {
-  "ts": 1785355381,
-  "side": "SELL",
-  "price": 0.91,
-  "shares": 4.04,
-  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
-  "outcome": "No"
+  "ts": 1785358485,
+  "side": "BUY",
+  "price": 0.3577,
+  "shares": 264.66,
+  "title": "LoL: paiN Gaming Academy vs 7REX (BO1) - Circuito Desafiante",
+  "outcome": "7REX"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3153,11 +3152,11 @@
    "realized": 749.99,
    "n": 6,
    "wins": 0,
-   "open_cost": 129.44,
-   "open_n": 1,
+   "open_cost": 224.1,
+   "open_n": 2,
    "miss_n": 6,
    "miss_pnl": 348.47,
-   "last_ts": 1785353228
+   "last_ts": 1785358477
   },
   "LSB1": {
    "realized": -397.16,
@@ -3220,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785357052
+ "updated": 1785358535
 }
