@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785319399,
+ "updated": 1785321638,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 432.72,
@@ -76,11 +76,11 @@
    "realized": 81.34,
    "n": 3,
    "wins": 2,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 144.01,
+   "open_n": 1,
    "miss_n": 3,
    "miss_pnl": 73.06,
-   "last_ts": 1785153020
+   "last_ts": 1785321564
   },
   "0x41558102": {
    "realized": 0.0,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "69247652735973581341182571044145013027536118239238026605770359361059723046536",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "T1",
+   "title": "LoL: T1 vs KT Rolster - Game 2 Winner",
+   "their_price": 0.75,
+   "my_price": 0.75,
+   "slippage_pct": 0.0,
+   "lag_s": 34.4,
+   "shares": 192.01,
+   "cost": 144.01,
+   "fee": 1.0801,
+   "opened": 1785321564,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785283200
+  },
   {
    "token": "19253596955895064939693767900265163520232524064146679171250301920280524237883",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",

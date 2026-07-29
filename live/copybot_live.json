@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 144.01,
+ "stake": 143.96,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1953.81,
- "deployed": 1646.39,
+ "cash": 1808.72,
+ "deployed": 1790.4,
  "reserve": 0.0,
- "realized": 2600.16,
+ "realized": 2599.08,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 26,
- "fees_paid": 404.41,
+ "open_count": 27,
+ "fees_paid": 405.49,
  "fee_rate": 0.03,
  "lag": {
-  "n": 298,
-  "n24": 16,
+  "n": 299,
+  "n24": 17,
   "basis": "24h",
-  "avg_s": 3.8,
+  "avg_s": 4.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "69247652735973581341182571044145013027536118239238026605770359361059723046536",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "T1",
+   "title": "LoL: T1 vs KT Rolster - Game 2 Winner",
+   "their_price": 0.75,
+   "my_price": 0.75,
+   "slippage_pct": 0.0,
+   "lag_s": 34.4,
+   "shares": 192.01,
+   "cost": 144.01,
+   "fee": 1.08,
+   "opened": 1785321564,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785283200
+  },
   {
    "token": "19253596955895064939693767900265163520232524064146679171250301920280524237883",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2132,27 +2152,6 @@
    "settled": 1784389074,
    "sold_shares": 144.98,
    "sold_proceeds": 59.83
-  },
-  {
-   "token": "58169143653343450326195498215538236930997670878228551327845934859747060865016",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Yandex",
-   "title": "Dota 2: Team Yandex vs PARIVISION - Game 2 Winner",
-   "their_price": 0.53,
-   "my_price": 0.54,
-   "slippage_pct": 0.0189,
-   "lag_s": 2.4,
-   "shares": 192.15,
-   "cost": 103.76,
-   "fee": 1.43,
-   "opened": 1784387164,
-   "status": "closed",
-   "exit_price": 0.5025,
-   "pnl": -8.64,
-   "settled": 1784388912,
-   "sold_shares": 192.15,
-   "sold_proceeds": 96.55
   }
  ],
  "missed": [
@@ -3109,12 +3108,12 @@
  ],
  "missed_pnl": 111430.83,
  "last_fill": {
-  "ts": 1785316780,
-  "side": "SELL",
-  "price": 0.94,
-  "shares": 209.53,
-  "title": "LoL: Kiwoom DRX vs Nongshim Red Force (BO3) - LCK Round 3-4 ",
-  "outcome": "Nongshim Red Force"
+  "ts": 1785321598,
+  "side": "BUY",
+  "price": 0.75,
+  "shares": 192.01,
+  "title": "LoL: T1 vs KT Rolster - Game 2 Winner",
+  "outcome": "T1"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3191,11 +3190,11 @@
    "realized": 81.34,
    "n": 3,
    "wins": 2,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 144.01,
+   "open_n": 1,
    "miss_n": 3,
    "miss_pnl": 73.06,
-   "last_ts": 1785153020
+   "last_ts": 1785321564
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3218,5 +3217,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785319399
+ "updated": 1785321638
 }
