@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785417182,
+ "updated": 1785417851,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 484.28,
@@ -56,11 +56,11 @@
    "realized": 184.32,
    "n": 37,
    "wins": 0,
-   "open_cost": 56.07,
-   "open_n": 1,
+   "open_cost": 111.08,
+   "open_n": 2,
    "miss_n": 7,
    "miss_pnl": -311.49,
-   "last_ts": 1785406012
+   "last_ts": 1785417802
   },
   "BikesAreTheBikes": {
    "realized": 249.59,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "22243280273498234987031341437063630596733850966298635604549136405175256264690",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "JD Gaming",
+   "title": "LoL: ThunderTalk Gaming vs JD Gaming (BO3) - LPL Group Ascend",
+   "their_price": 0.66,
+   "my_price": 0.66,
+   "slippage_pct": 0.0,
+   "lag_s": 6.6,
+   "shares": 83.35,
+   "cost": 55.01,
+   "fee": 0.5611,
+   "opened": 1785417802,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785369600
+  },
   {
    "token": "91005296975747185884827993266438280160416160824604371127998336237333692040745",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
