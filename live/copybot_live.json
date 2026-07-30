@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1433.92,
- "deployed": 1276.77,
+ "cash": 1434.24,
+ "deployed": 1276.48,
  "reserve": 0.0,
- "realized": 1710.66,
+ "realized": 1710.69,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
  "open_count": 24,
@@ -133,8 +133,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785369600,
-   "sold_shares": 29.49,
-   "sold_proceeds": 28.14
+   "sold_shares": 29.81,
+   "sold_proceeds": 28.46
   },
   {
    "token": "54815727746640547967672254072133541716883461619401150888777316620441172319772",
@@ -2159,6 +2159,54 @@
  ],
  "missed": [
   {
+   "ts": 1785319393,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "44366458982156171422796551330299704518162863942866740121745454633979905778791",
+   "cond": "0x8c48f3acf4177b5ceb012a8a2dc7a9c219eeae4a032d6ddcbc3c2ffab907439a",
+   "title": "Will the Liberal Democratic Party of Russia (LDPR) gain the most seats in the next Russian parliamentary election?",
+   "outcome": "No",
+   "price": 0.93,
+   "stake": 144.01,
+   "reason": "maker bid unfilled (89s)",
+   "status": "sold",
+   "pnl": 2.18,
+   "settled": 1785397188,
+   "name": "BikesAreTheBikes",
+   "exit_price": 0.9476
+  },
+  {
+   "ts": 1785078307,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "54620342958738283704802452250340372295186538019357418907215676271029676157053",
+   "cond": "0x7751647558c676e670214b1161ba938c16417b09c7b577310ad80652d70066c1",
+   "title": "Unit FDV above $400M one day after launch?",
+   "outcome": "No",
+   "price": 0.5199,
+   "stake": 35.33,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 8.79,
+   "settled": 1785397187,
+   "name": "0xbadaf319",
+   "exit_price": 0.6634
+  },
+  {
+   "ts": 1784517526,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "94940524945210845047467028525980880667745668441880643750095925409687698630543",
+   "cond": "0xe7092235327ee5dcf40eef80c9da3c0170287ceb2b58a05292218ecd6d0dff6b",
+   "title": "Will Squid launch a token by March 31, 2027?",
+   "outcome": "Yes",
+   "price": 0.091,
+   "stake": 51.19,
+   "reason": "thin book ($2 within 5c < $50)",
+   "status": "sold",
+   "pnl": 433.1,
+   "settled": 1785397185,
+   "name": "0xbadaf319",
+   "exit_price": 0.8669
+  },
+  {
    "ts": 1784450722,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "32952048155093419718055060819712841482842350791391116195205201413217889733414",
@@ -2378,21 +2426,6 @@
    "settled": 1785322527,
    "name": "AIcAIc",
    "exit_price": 0.1055
-  },
-  {
-   "ts": 1785319393,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "44366458982156171422796551330299704518162863942866740121745454633979905778791",
-   "cond": "0x8c48f3acf4177b5ceb012a8a2dc7a9c219eeae4a032d6ddcbc3c2ffab907439a",
-   "title": "Will the Liberal Democratic Party of Russia (LDPR) gain the most seats in the next Russian parliamentary election?",
-   "outcome": "No",
-   "price": 0.93,
-   "stake": 144.01,
-   "reason": "maker bid unfilled (89s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1785312030,
@@ -2856,21 +2889,6 @@
    "exit_checked": true
   },
   {
-   "ts": 1785078307,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "54620342958738283704802452250340372295186538019357418907215676271029676157053",
-   "cond": "0x7751647558c676e670214b1161ba938c16417b09c7b577310ad80652d70066c1",
-   "title": "Unit FDV above $400M one day after launch?",
-   "outcome": "No",
-   "price": 0.5199,
-   "stake": 35.33,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1785069395,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "3632761527830851126218403972215896322866498280718052589856316229871893863849",
@@ -3094,32 +3112,16 @@
    "settled": 1784921034,
    "name": "BikesAreTheBikes",
    "exit_checked": true
-  },
-  {
-   "ts": 1784914783,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "40721468567018229427830693104124829389096865246100141431731263782329757924925",
-   "cond": "0x9126622317c7329b835455ad727953d5ed03d13a6c6b6d0e1bf326330e591d19",
-   "title": "Will the price of Bitcoin be between $64,000 and $66,000 on July 10?",
-   "outcome": "No",
-   "price": 0.5,
-   "stake": 30.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "lost",
-   "pnl": -30.45,
-   "settled": 1784914857,
-   "name": "0xbadaf319",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 111233.14,
+ "missed_pnl": 111677.21,
  "last_fill": {
-  "ts": 1785395523,
+  "ts": 1785397136,
   "side": "SELL",
-  "price": 0.93,
-  "shares": 169.77,
-  "title": "Will Moonshot have the best Chinese AI model at the end of J",
-  "outcome": "No"
+  "price": 0.988,
+  "shares": 0.32,
+  "title": "Israel x Iran ceasefire continues through July 30?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3129,7 +3131,7 @@
    "open_cost": 891.31,
    "open_n": 16,
    "miss_n": 99,
-   "miss_pnl": 111844.84,
+   "miss_pnl": 112286.73,
    "last_ts": 1785390491
   },
   "gkmgkldfmg": {
@@ -3189,7 +3191,7 @@
    "open_cost": 812.09,
    "open_n": 8,
    "miss_n": 26,
-   "miss_pnl": -659.47,
+   "miss_pnl": -657.29,
    "last_ts": 1785395523
   },
   "JuiceFarm": {
@@ -3223,5 +3225,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785395523
+ "updated": 1785397190
 }
