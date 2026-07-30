@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785428244,
+ "updated": 1785429275,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 484.28,
@@ -69,7 +69,7 @@
    "open_cost": 868.15,
    "open_n": 9,
    "miss_n": 29,
-   "miss_pnl": -657.29,
+   "miss_pnl": -646.17,
    "last_ts": 1785407674
   },
   "JuiceFarm": {
@@ -6116,6 +6116,22 @@
  ],
  "missed": [
   {
+   "ts": 1784482284,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "17973586937761078448873484917108971852340583833844287573538816307502825884858",
+   "cond": "0xb12f5e328a7d9f7a26e0a074625ea775025104e673c776d575dab422a472ef59",
+   "title": "Israel closes its airspace by July 31?",
+   "outcome": "No",
+   "price": 0.63,
+   "stake": 24.52,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "sold",
+   "pnl": 11.12,
+   "settled": 1785429268,
+   "name": "BikesAreTheBikes",
+   "exit_price": 0.9247
+  },
+  {
    "ts": 1785421302,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "65024137053855672135754289102601167808275997078238687431817057463095951022316",
@@ -6128,7 +6144,8 @@
    "status": "won",
    "pnl": 2.58,
    "settled": 1785428238,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1785425539,
@@ -8213,21 +8230,6 @@
    "settled": 1784485764,
    "name": "1kto1m",
    "exit_price": 0.5448
-  },
-  {
-   "ts": 1784482284,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "17973586937761078448873484917108971852340583833844287573538816307502825884858",
-   "cond": "0xb12f5e328a7d9f7a26e0a074625ea775025104e673c776d575dab422a472ef59",
-   "title": "Israel closes its airspace by July 31?",
-   "outcome": "No",
-   "price": 0.63,
-   "stake": 24.52,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784481427,
