@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 54.4,
+ "stake": 53.28,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 1287.3,
- "deployed": 1432.62,
+ "deployed": 1376.52,
  "reserve": 0.0,
- "realized": 1719.89,
+ "realized": 1663.79,
  "adjustments": 0.03,
- "ledger_drift": -0.06,
- "open_count": 29,
+ "ledger_drift": -0.05,
+ "open_count": 28,
  "fees_paid": 429.15,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "15936256786231936393406572307889188250969935165041173084711910210197660722650",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Solary",
+   "title": "LoL: Solary vs Vitality.Bee (BO1) - LFL Regular Season",
+   "their_price": 0.77,
+   "my_price": 0.77,
+   "slippage_pct": 0.0,
+   "lag_s": 8.3,
+   "shares": 72.86,
+   "cost": 56.1,
+   "fee": 0.39,
+   "opened": 1785414421,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -56.49,
+   "settled": 1785443983,
+   "end_ts": 1785369600
+  },
   {
    "token": "36265250796161854432369131892129450974997795066135083465560318874244070874973",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -151,26 +171,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785456000
-  },
-  {
-   "token": "15936256786231936393406572307889188250969935165041173084711910210197660722650",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "Solary",
-   "title": "LoL: Solary vs Vitality.Bee (BO1) - LFL Regular Season",
-   "their_price": 0.77,
-   "my_price": 0.77,
-   "slippage_pct": 0.0,
-   "lag_s": 8.3,
-   "shares": 72.86,
-   "cost": 56.1,
-   "fee": 0.39,
-   "opened": 1785414421,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785369600
   },
   {
    "token": "49689086638781123153263269337649600392273111259209599236468134989844879829316",
@@ -3193,14 +3193,14 @@
    "last_ts": 1785407674
   },
   "JuiceFarm": {
-   "realized": -63.75,
-   "n": 4,
+   "realized": -120.24,
+   "n": 5,
    "wins": 2,
-   "open_cost": 112.2,
-   "open_n": 2,
+   "open_cost": 56.1,
+   "open_n": 1,
    "miss_n": 3,
    "miss_pnl": 90.82,
-   "last_ts": 1785414469
+   "last_ts": 1785443983
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3223,5 +3223,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785443651
+ "updated": 1785443993
 }
