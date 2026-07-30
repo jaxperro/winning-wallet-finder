@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 54.21,
+ "stake": 54.19,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1381.37,
- "deployed": 1329.08,
+ "cash": 1326.32,
+ "deployed": 1383.18,
  "reserve": 0.0,
- "realized": 1710.41,
+ "realized": 1709.47,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 25,
- "fees_paid": 422.06,
+ "open_count": 26,
+ "fees_paid": 423.0,
  "fee_rate": 0.03,
  "lag": {
-  "n": 328,
-  "n24": 30,
+  "n": 329,
+  "n24": 31,
   "basis": "24h",
-  "avg_s": 6.8,
+  "avg_s": 7.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "91005296975747185884827993266438280160416160824604371127998336237333692040745",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Nigma Galaxy",
+   "title": "Dota 2: Nigma Galaxy vs 1win - Game 1 Winner",
+   "their_price": 0.4199,
+   "my_price": 0.4199,
+   "slippage_pct": 0.0,
+   "lag_s": 7.3,
+   "shares": 128.84,
+   "cost": 54.1,
+   "fee": 0.94,
+   "opened": 1785403805,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785369600
+  },
   {
    "token": "109766849616564973583260694788676807786232255749165024201845384716685533661901",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2135,27 +2155,6 @@
    "exit_price": 1.0,
    "pnl": 8.21,
    "settled": 1784650955
-  },
-  {
-   "token": "47930487385442068307660985236580604031118404338161837203208216877292039014153",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will France win the World Cup?",
-   "their_price": 0.7168,
-   "my_price": 0.66,
-   "slippage_pct": -0.0793,
-   "lag_s": 0.6,
-   "shares": 11.84,
-   "cost": 7.82,
-   "fee": 0.08,
-   "opened": 1784056902,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 3.42,
-   "settled": 1784649072,
-   "sold_shares": 3.06,
-   "sold_proceeds": 2.54
   }
  ],
  "missed": [
@@ -3112,12 +3111,12 @@
  ],
  "missed_pnl": 111541.64,
  "last_fill": {
-  "ts": 1785402284,
+  "ts": 1785403812,
   "side": "BUY",
-  "price": 0.74,
-  "shares": 73.26,
-  "title": "LoL: DN SOOPers vs BNK FEARX - Game 2 Winner",
-  "outcome": "BNK FEARX"
+  "price": 0.4199,
+  "shares": 128.84,
+  "title": "Dota 2: Nigma Galaxy vs 1win - Game 1 Winner",
+  "outcome": "Nigma Galaxy"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3134,11 +3133,11 @@
    "realized": 906.63,
    "n": 93,
    "wins": 0,
-   "open_cost": 54.21,
-   "open_n": 1,
+   "open_cost": 108.31,
+   "open_n": 2,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785402279
+   "last_ts": 1785403805
   },
   "1kto1m": {
    "realized": 113.06,
@@ -3221,5 +3220,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785403179
+ "updated": 1785403812
 }
