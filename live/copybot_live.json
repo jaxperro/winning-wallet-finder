@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 55.49,
+ "stake": 54.37,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 1275.73,
- "deployed": 1498.76,
+ "deployed": 1442.69,
  "reserve": 0.0,
- "realized": 1774.46,
+ "realized": 1718.39,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 29,
+ "open_count": 28,
  "fees_paid": 429.09,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "634630064714299321077497320934035372668565093802737701187762655182629990503",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Hanwha Life Esports",
+   "title": "LoL: Hanwha Life Esports vs Dplus KIA - Game 1 Winner",
+   "their_price": 0.62,
+   "my_price": 0.62,
+   "slippage_pct": 0.0,
+   "lag_s": 1.7,
+   "shares": 90.44,
+   "cost": 56.07,
+   "fee": 0.64,
+   "opened": 1785406012,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -56.71,
+   "settled": 1785419952,
+   "end_ts": 1785369600
+  },
   {
    "token": "22243280273498234987031341437063630596733850966298635604549136405175256264690",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -193,26 +213,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400
-  },
-  {
-   "token": "634630064714299321077497320934035372668565093802737701187762655182629990503",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Hanwha Life Esports",
-   "title": "LoL: Hanwha Life Esports vs Dplus KIA - Game 1 Winner",
-   "their_price": 0.62,
-   "my_price": 0.62,
-   "slippage_pct": 0.0,
-   "lag_s": 1.7,
-   "shares": 90.44,
-   "cost": 56.07,
-   "fee": 0.64,
-   "opened": 1785406012,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785369600
   },
   {
    "token": "32601582308722203478850434701890333664439834614093834593139437190021937902354",
@@ -3175,14 +3175,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 207.81,
-   "n": 38,
+   "realized": 151.1,
+   "n": 39,
    "wins": 0,
-   "open_cost": 56.07,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 7,
    "miss_pnl": -311.49,
-   "last_ts": 1785418465
+   "last_ts": 1785419952
   },
   "BikesAreTheBikes": {
    "realized": 249.59,
@@ -3225,5 +3225,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785419470
+ "updated": 1785419956
 }
