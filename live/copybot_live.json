@@ -2163,6 +2163,51 @@
  ],
  "missed": [
   {
+   "ts": 1785422324,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "99066438906324631442065100961971704734219939817870242563137379220022107951416",
+   "cond": "0x14e52ca4ef18d690718dfe665c32f250a80cbbd16d8df1538d476071b9e1927a",
+   "title": "Tesla (TSLA) Up or Down on July 30?",
+   "outcome": "Up",
+   "price": 0.91,
+   "stake": 18.85,
+   "reason": "maker bid unfilled (111s)",
+   "status": "won",
+   "pnl": 1.81,
+   "settled": 1785443091,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785425539,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "49096838469319785284977438732691316133406822442318517146017951204646833825601",
+   "cond": "0x22452b38b25ef76546f4b47f85540e57fb360b27ae27e7affa59feb6d2303b0e",
+   "title": "Will NVIDIA (NVDA) close above $190 on July 30?",
+   "outcome": "Yes",
+   "price": 0.85,
+   "stake": 7.93,
+   "reason": "maker bid unfilled (68s)",
+   "status": "won",
+   "pnl": 1.36,
+   "settled": 1785443025,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785397377,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "39269986509343926601716046818556340014937567237911903122563938140480316098298",
+   "cond": "0xc12ddf2480827eb5183af5ec33fc3a55d34a37ae9aa593929eb94bc7622be659",
+   "title": "Will Microsoft (MSFT) close above $390 on July 30?",
+   "outcome": "Yes",
+   "price": 0.9489,
+   "stake": 34.46,
+   "reason": "maker bid unfilled (66s)",
+   "status": "won",
+   "pnl": 1.8,
+   "settled": 1785443023,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785438136,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "62474359384438151756967307997575848219189410783384033652191452044688986782350",
@@ -2210,21 +2255,6 @@
    "exit_checked": true
   },
   {
-   "ts": 1785425539,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "49096838469319785284977438732691316133406822442318517146017951204646833825601",
-   "cond": "0x22452b38b25ef76546f4b47f85540e57fb360b27ae27e7affa59feb6d2303b0e",
-   "title": "Will NVIDIA (NVDA) close above $190 on July 30?",
-   "outcome": "Yes",
-   "price": 0.85,
-   "stake": 7.93,
-   "reason": "maker bid unfilled (68s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1785423436,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "87150316911747710389398782447337377964271008938887702894316010075241429634797",
@@ -2268,21 +2298,6 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1785422324,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "99066438906324631442065100961971704734219939817870242563137379220022107951416",
-   "cond": "0x14e52ca4ef18d690718dfe665c32f250a80cbbd16d8df1538d476071b9e1927a",
-   "title": "Tesla (TSLA) Up or Down on July 30?",
-   "outcome": "Up",
-   "price": 0.91,
-   "stake": 18.85,
-   "reason": "maker bid unfilled (111s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1785418993,
@@ -2403,21 +2418,6 @@
    "price": 0.79,
    "stake": 54.22,
    "reason": "price moved 0.73\u21920.79",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785397377,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "39269986509343926601716046818556340014937567237911903122563938140480316098298",
-   "cond": "0xc12ddf2480827eb5183af5ec33fc3a55d34a37ae9aa593929eb94bc7622be659",
-   "title": "Will Microsoft (MSFT) close above $390 on July 30?",
-   "outcome": "Yes",
-   "price": 0.9489,
-   "stake": 34.46,
-   "reason": "maker bid unfilled (66s)",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -3107,7 +3107,7 @@
    "exit_price": 0.8766
   }
  ],
- "missed_pnl": 111648.02,
+ "missed_pnl": 111652.99,
  "last_fill": {
   "ts": 1785442584,
   "side": "BUY",
@@ -3124,7 +3124,7 @@
    "open_cost": 906.23,
    "open_n": 18,
    "miss_n": 107,
-   "miss_pnl": 112295.07,
+   "miss_pnl": 112300.04,
    "last_ts": 1785442584
   },
   "gkmgkldfmg": {
@@ -3218,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785442592
+ "updated": 1785443092
 }
