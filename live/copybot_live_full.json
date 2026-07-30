@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785423070,
+ "updated": 1785423436,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 484.28,
@@ -68,7 +68,7 @@
    "wins": 2,
    "open_cost": 868.15,
    "open_n": 9,
-   "miss_n": 28,
+   "miss_n": 29,
    "miss_pnl": -657.29,
    "last_ts": 1785407674
   },
@@ -6115,6 +6115,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785423436,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "87150316911747710389398782447337377964271008938887702894316010075241429634797",
+   "cond": "0x86a2515d1df361ecd588ca8705c6eb83567cc9fbe907780c5d5d470877c1ce0c",
+   "title": "Will the next Google Gemini Pro model be released by August 14, 2026?",
+   "outcome": "No",
+   "price": 0.75,
+   "stake": 54.4,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1785423069,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

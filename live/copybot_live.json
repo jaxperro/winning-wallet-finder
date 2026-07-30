@@ -2164,6 +2164,21 @@
  ],
  "missed": [
   {
+   "ts": 1785423436,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "87150316911747710389398782447337377964271008938887702894316010075241429634797",
+   "cond": "0x86a2515d1df361ecd588ca8705c6eb83567cc9fbe907780c5d5d470877c1ce0c",
+   "title": "Will the next Google Gemini Pro model be released by August 14, 2026?",
+   "outcome": "No",
+   "price": 0.75,
+   "stake": 54.4,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1785423069,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "102617319572539919553357676752315366758463499662855057808806666308412570450045",
@@ -3092,25 +3107,9 @@
    "settled": 1785074331,
    "name": "gkmgkldfmg",
    "exit_price": 0.999
-  },
-  {
-   "ts": 1785068199,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "70779665945520640638060284527025322569040195676030813411312036650498709891533",
-   "cond": "0x6c433c24fb3c1f54e74a3a016eaf7820f8b6d18486e04d0ba7ad515085cdecf0",
-   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 2 Winner",
-   "outcome": "Bilibili Gaming",
-   "price": 0.55,
-   "stake": 123.16,
-   "reason": "no ask side on the book at copy time",
-   "status": "sold",
-   "pnl": -102.78,
-   "settled": 1785072373,
-   "name": "AIcAIc",
-   "exit_price": 0.1012
   }
  ],
- "missed_pnl": 111539.73,
+ "missed_pnl": 111598.21,
  "last_fill": {
   "ts": 1785422764,
   "side": "SELL",
@@ -3186,7 +3185,7 @@
    "wins": 2,
    "open_cost": 868.15,
    "open_n": 9,
-   "miss_n": 28,
+   "miss_n": 29,
    "miss_pnl": -657.29,
    "last_ts": 1785407674
   },
@@ -3221,5 +3220,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785423070
+ "updated": 1785423436
 }
