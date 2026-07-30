@@ -2164,6 +2164,21 @@
  ],
  "missed": [
   {
+   "ts": 1785421302,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "65024137053855672135754289102601167808275997078238687431817057463095951022316",
+   "cond": "0x99876cb72454597a319ed26c2fb8e2ae26847bb5017c303edd7abdc1204115f8",
+   "title": "Bitcoin Up or Down on July 30?",
+   "outcome": "Up",
+   "price": 0.95,
+   "stake": 50.53,
+   "reason": "maker bid unfilled (60s)",
+   "status": "won",
+   "pnl": 2.58,
+   "settled": 1785428238,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785425539,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "49096838469319785284977438732691316133406822442318517146017951204646833825601",
@@ -2233,21 +2248,6 @@
    "price": 0.91,
    "stake": 18.85,
    "reason": "maker bid unfilled (111s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785421302,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "65024137053855672135754289102601167808275997078238687431817057463095951022316",
-   "cond": "0x99876cb72454597a319ed26c2fb8e2ae26847bb5017c303edd7abdc1204115f8",
-   "title": "Bitcoin Up or Down on July 30?",
-   "outcome": "Up",
-   "price": 0.95,
-   "stake": 50.53,
-   "reason": "maker bid unfilled (60s)",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -3108,7 +3108,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 111700.34,
+ "missed_pnl": 111702.92,
  "last_fill": {
   "ts": 1785422764,
   "side": "SELL",
@@ -3125,7 +3125,7 @@
    "open_cost": 899.29,
    "open_n": 17,
    "miss_n": 107,
-   "miss_pnl": 112292.49,
+   "miss_pnl": 112295.07,
    "last_ts": 1785408348
   },
   "gkmgkldfmg": {
@@ -3219,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785427031
+ "updated": 1785428244
 }
