@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785395188,
+ "updated": 1785395523,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 484.28,
@@ -63,14 +63,14 @@
    "last_ts": 1785332363
   },
   "BikesAreTheBikes": {
-   "realized": 230.83,
-   "n": 13,
+   "realized": 249.59,
+   "n": 14,
    "wins": 2,
-   "open_cost": 950.11,
-   "open_n": 9,
+   "open_cost": 812.09,
+   "open_n": 8,
    "miss_n": 26,
    "miss_pnl": -659.47,
-   "last_ts": 1785375708
+   "last_ts": 1785395523
   },
   "JuiceFarm": {
    "realized": -63.75,
@@ -104,6 +104,28 @@
   }
  },
  "bets": [
+  {
+   "token": "55805599679396794643020959724265487381144406111284276240185102465706193783798",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Moonshot have the best Chinese AI model at the end of July 2026?",
+   "their_price": 0.813,
+   "my_price": 0.813,
+   "slippage_pct": 0.0,
+   "lag_s": 0.9,
+   "shares": 169.77,
+   "cost": 138.02,
+   "fee": 0.7743,
+   "opened": 1785292870,
+   "status": "closed",
+   "exit_price": 0.928,
+   "pnl": 18.76,
+   "settled": 1785395523,
+   "end_ts": 1785456000,
+   "sold_shares": 169.77,
+   "sold_proceeds": 157.55453919
+  },
   {
    "token": "73822848958833581920509853766928409035356407100619064692171326316721805299603",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -609,26 +631,6 @@
    "end_ts": 1785456000,
    "sold_shares": 116.38997355581424,
    "sold_proceeds": 115.67080922041073
-  },
-  {
-   "token": "55805599679396794643020959724265487381144406111284276240185102465706193783798",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will Moonshot have the best Chinese AI model at the end of July 2026?",
-   "their_price": 0.813,
-   "my_price": 0.813,
-   "slippage_pct": 0.0,
-   "lag_s": 0.9,
-   "shares": 169.77,
-   "cost": 138.02,
-   "fee": 0.7743,
-   "opened": 1785292870,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785456000
   },
   {
    "token": "68080778697884921540335032370654180051222428162809511382222697646266365598353",
