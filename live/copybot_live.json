@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 56.07,
+ "stake": 56.06,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1477.13,
- "deployed": 1326.57,
+ "cash": 1420.42,
+ "deployed": 1382.64,
  "reserve": 0.0,
- "realized": 1803.67,
+ "realized": 1803.03,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 25,
- "fees_paid": 425.85,
+ "open_count": 26,
+ "fees_paid": 426.49,
  "fee_rate": 0.03,
  "lag": {
-  "n": 331,
-  "n24": 33,
+  "n": 332,
+  "n24": 34,
   "basis": "24h",
-  "avg_s": 7.1,
+  "avg_s": 6.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "634630064714299321077497320934035372668565093802737701187762655182629990503",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Hanwha Life Esports",
+   "title": "LoL: Hanwha Life Esports vs Dplus KIA - Game 1 Winner",
+   "their_price": 0.62,
+   "my_price": 0.62,
+   "slippage_pct": 0.0,
+   "lag_s": 1.7,
+   "shares": 90.44,
+   "cost": 56.07,
+   "fee": 0.64,
+   "opened": 1785406012,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785369600
+  },
   {
    "token": "32601582308722203478850434701890333664439834614093834593139437190021937902354",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2139,27 +2159,6 @@
    "exit_price": 0.0,
    "pnl": -58.49,
    "settled": 1784658052
-  },
-  {
-   "token": "48393982087831129899183531478832099653074965669965652679356454634407980114693",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "BIG",
-   "title": "LoL: E WIE EINFACH E-SPORTS vs BIG - Game 1 Winner",
-   "their_price": 0.7,
-   "my_price": 0.69,
-   "slippage_pct": -0.0143,
-   "lag_s": 0.8,
-   "shares": 160.41,
-   "cost": 110.68,
-   "fee": 1.03,
-   "opened": 1784653424,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": 48.7,
-   "settled": 1784655289,
-   "sold_shares": 160.41,
-   "sold_proceeds": 160.41
   }
  ],
  "missed": [
@@ -3117,12 +3116,12 @@
  ],
  "missed_pnl": 111541.64,
  "last_fill": {
-  "ts": 1785405535,
-  "side": "SELL",
-  "price": 0.91,
-  "shares": 204.14,
-  "title": "Dota 2: Nigma Galaxy vs 1win - Game 1 Winner",
-  "outcome": "1win"
+  "ts": 1785406013,
+  "side": "BUY",
+  "price": 0.62,
+  "shares": 90.44,
+  "title": "LoL: Hanwha Life Esports vs Dplus KIA - Game 1 Winner",
+  "outcome": "Hanwha Life Esports"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3179,11 +3178,11 @@
    "realized": 184.32,
    "n": 37,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 56.07,
+   "open_n": 1,
    "miss_n": 7,
    "miss_pnl": -311.49,
-   "last_ts": 1785332363
+   "last_ts": 1785406012
   },
   "BikesAreTheBikes": {
    "realized": 249.59,
@@ -3226,5 +3225,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785405535
+ "updated": 1785406055
 }

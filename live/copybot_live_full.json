@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785405535,
+ "updated": 1785406055,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 484.28,
@@ -56,11 +56,11 @@
    "realized": 184.32,
    "n": 37,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 56.07,
+   "open_n": 1,
    "miss_n": 7,
    "miss_pnl": -311.49,
-   "last_ts": 1785332363
+   "last_ts": 1785406012
   },
   "BikesAreTheBikes": {
    "realized": 249.59,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "634630064714299321077497320934035372668565093802737701187762655182629990503",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Hanwha Life Esports",
+   "title": "LoL: Hanwha Life Esports vs Dplus KIA - Game 1 Winner",
+   "their_price": 0.62,
+   "my_price": 0.62,
+   "slippage_pct": 0.0,
+   "lag_s": 1.7,
+   "shares": 90.44,
+   "cost": 56.07,
+   "fee": 0.6392,
+   "opened": 1785406012,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785369600
+  },
   {
    "token": "32601582308722203478850434701890333664439834614093834593139437190021937902354",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
