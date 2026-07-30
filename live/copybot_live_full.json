@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785389314,
+ "updated": 1785389650,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 480.99,
@@ -8,7 +8,7 @@
    "wins": 25,
    "open_cost": 927.06,
    "open_n": 17,
-   "miss_n": 98,
+   "miss_n": 99,
    "miss_pnl": 111845.2,
    "last_ts": 1785389280
   },
@@ -5903,6 +5903,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785389644,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "48905394170305541744328748582998455459621629534326295447768125812721237965617",
+   "cond": "0xfc6584616ca3ec385e40881bd568fe291713cad93ab95be921f4ba2bf3b456e3",
+   "title": "WTI Crude Oil (WTI) closes above $86 on July 30?",
+   "outcome": "No",
+   "price": 0.68,
+   "stake": 27.26,
+   "reason": "maker bid unfilled (92s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785381127,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
