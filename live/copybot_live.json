@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1273.08,
- "deployed": 1501.19,
+ "cash": 1275.73,
+ "deployed": 1498.76,
  "reserve": 0.0,
- "realized": 1774.24,
+ "realized": 1774.46,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
  "open_count": 29,
@@ -341,8 +341,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785369600,
-   "sold_shares": 38.11,
-   "sold_proceeds": 36.66
+   "sold_shares": 40.79,
+   "sold_proceeds": 39.32
   },
   {
    "token": "54815727746640547967672254072133541716883461619401150888777316620441172319772",
@@ -2173,10 +2173,11 @@
    "price": 0.6774,
    "stake": 40.23,
    "reason": "maker bid unfilled (105s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": -3.0,
+   "settled": 1785419209,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.6403
   },
   {
    "ts": 1785415197,
@@ -3113,14 +3114,14 @@
    "exit_price": 0.9111
   }
  ],
- "missed_pnl": 111584.41,
+ "missed_pnl": 111581.41,
  "last_fill": {
-  "ts": 1785418464,
+  "ts": 1785419157,
   "side": "SELL",
-  "price": 0.95,
-  "shares": 83.35,
-  "title": "LoL: ThunderTalk Gaming vs JD Gaming (BO3) - LPL Group Ascen",
-  "outcome": "JD Gaming"
+  "price": 0.989,
+  "shares": 2.68,
+  "title": "Israel x Iran ceasefire continues through July 30?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3140,7 +3141,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 56,
-   "miss_pnl": 237.03,
+   "miss_pnl": 234.03,
    "last_ts": 1785414639
   },
   "1kto1m": {
@@ -3224,5 +3225,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785418993
+ "updated": 1785419209
 }
