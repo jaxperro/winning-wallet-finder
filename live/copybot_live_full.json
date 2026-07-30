@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785441116,
+ "updated": 1785442592,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 484.28,
    "n": 77,
    "wins": 25,
-   "open_cost": 899.29,
-   "open_n": 17,
+   "open_cost": 906.23,
+   "open_n": 18,
    "miss_n": 107,
    "miss_pnl": 112295.07,
-   "last_ts": 1785408348
+   "last_ts": 1785442584
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "36265250796161854432369131892129450974997795066135083465560318874244070874973",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will South Korea ETF (EWY) hit (HIGH) $168 Week of July 27 2026?",
+   "their_price": 0.73,
+   "my_price": 0.73,
+   "slippage_pct": 0.0,
+   "lag_s": 0.8,
+   "shares": 9.51,
+   "cost": 6.94,
+   "fee": 0.0562,
+   "opened": 1785442584,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785456000
+  },
   {
    "token": "634630064714299321077497320934035372668565093802737701187762655182629990503",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
