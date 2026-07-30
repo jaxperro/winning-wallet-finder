@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785403922,
+ "updated": 1785404321,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 484.28,
@@ -16,11 +16,11 @@
    "realized": 925.26,
    "n": 94,
    "wins": 0,
-   "open_cost": 54.1,
-   "open_n": 1,
+   "open_cost": 162.09,
+   "open_n": 2,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785403922
+   "last_ts": 1785404267
   },
   "1kto1m": {
    "realized": 113.06,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "32601582308722203478850434701890333664439834614093834593139437190021937902354",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "1win",
+   "title": "Dota 2: Nigma Galaxy vs 1win - Game 1 Winner",
+   "their_price": 0.2824,
+   "my_price": 0.2744522678292641,
+   "slippage_pct": 0.0,
+   "lag_s": 4.4,
+   "shares": 393.47,
+   "cost": 107.98873382278055,
+   "fee": 2.3498,
+   "opened": 1785404267,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785369600
+  },
   {
    "token": "109766849616564973583260694788676807786232255749165024201845384716685533661901",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
