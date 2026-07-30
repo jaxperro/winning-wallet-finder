@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 124.18,
+ "stake": 119.02,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1312.69,
- "deployed": 1791.91,
+ "cash": 1300.36,
+ "deployed": 1675.22,
  "reserve": 0.0,
- "realized": 2104.57,
+ "realized": 1975.54,
  "adjustments": 0.03,
- "ledger_drift": -0.04,
+ "ledger_drift": -0.03,
  "open_count": 26,
- "fees_paid": 420.65,
+ "fees_paid": 420.83,
  "fee_rate": 0.03,
  "lag": {
-  "n": 324,
-  "n24": 31,
+  "n": 325,
+  "n24": 32,
   "basis": "24h",
-  "avg_s": 6.4,
+  "avg_s": 6.0,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,46 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "73729038726669069404058491316491538761744291522842760243389656513468416826452",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "KaBuM! Ilha das Lendas",
+   "title": "LoL: RMD Gaming vs KaBuM! Ilha das Lendas (BO1) - Circuito Desafiante Regular Season",
+   "their_price": 0.6721,
+   "my_price": 0.6721,
+   "slippage_pct": 0.0,
+   "lag_s": 7.8,
+   "shares": 191.7,
+   "cost": 128.84,
+   "fee": 1.27,
+   "opened": 1785360166,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -130.11,
+   "settled": 1785373149,
+   "end_ts": 1785369600
+  },
+  {
+   "token": "98251225144804978202460241491785897955759287546023379403187647333812007726510",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Gold (XAUUSD) hit (LOW) $3,600 in August?",
+   "their_price": 0.5,
+   "my_price": 0.5,
+   "slippage_pct": 0.0,
+   "lag_s": 5.6,
+   "shares": 24.3,
+   "cost": 12.15,
+   "fee": 0.18,
+   "opened": 1785373147,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800
+  },
   {
    "token": "61786389752515367835821565534386371514405052384932121340794230250818428934092",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -148,26 +188,6 @@
    "cost": 126.14,
    "fee": 3.3,
    "opened": 1785361786,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785369600
-  },
-  {
-   "token": "73729038726669069404058491316491538761744291522842760243389656513468416826452",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "KaBuM! Ilha das Lendas",
-   "title": "LoL: RMD Gaming vs KaBuM! Ilha das Lendas (BO1) - Circuito Desafiante Regular Season",
-   "their_price": 0.6721,
-   "my_price": 0.6721,
-   "slippage_pct": 0.0,
-   "lag_s": 7.8,
-   "shares": 191.7,
-   "cost": 128.84,
-   "fee": 1.27,
-   "opened": 1785360166,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -2131,31 +2151,24 @@
    "settled": 1784630337,
    "sold_shares": 54.59,
    "sold_proceeds": 53.24
-  },
-  {
-   "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Opensea FDV above $500M one day after launch?",
-   "their_price": 0.782,
-   "my_price": 0.761,
-   "slippage_pct": -0.0269,
-   "lag_s": 0.8,
-   "shares": 139.74,
-   "cost": 106.34,
-   "fee": 0.76,
-   "opened": 1784610028,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1798761600,
-   "sold_shares": 5.29,
-   "sold_proceeds": 4.83
   }
  ],
  "missed": [
+  {
+   "ts": 1785373146,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "35250490631162852068665560333425207330394186153713200652716697624945520016963",
+   "cond": "0xece0409ad250895990f9022209e9ae9b544283bbd4bdb76982c9a21e1587e76c",
+   "title": "Will Gold (XAUUSD) hit (LOW) $3,700 in August?",
+   "outcome": "Yes",
+   "price": 0.06,
+   "stake": 66.79,
+   "reason": "thin book ($15 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785365970,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -3093,43 +3106,27 @@
    "settled": 1784887957,
    "name": "0xbadaf319",
    "exit_price": 0.1875
-  },
-  {
-   "ts": 1784557341,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "67913011466625262359588841481742993497498081452195278087275807248301608894093",
-   "cond": "0x6abe5fe01ca113b7d6040604a8619cadf181d4e4a6d8db3a082542417af806fd",
-   "title": "Will SpaceX Starship Flight Test 13 launch by August 31?",
-   "outcome": "Yes",
-   "price": 0.824,
-   "stake": 65.29,
-   "reason": "thin book ($4 within 5c < $50)",
-   "status": "sold",
-   "pnl": 3.26,
-   "settled": 1784887956,
-   "name": "0xbadaf319",
-   "exit_price": 0.8729
   }
  ],
- "missed_pnl": 111264.3,
+ "missed_pnl": 111260.48,
  "last_fill": {
-  "ts": 1785364706,
+  "ts": 1785373152,
   "side": "BUY",
-  "price": 0.16,
-  "shares": 135.61,
-  "title": "LoL: RED Academy vs Estral Esports (BO1) - Circuito Desafian",
-  "outcome": "RED Academy"
+  "price": 0.5,
+  "shares": 24.3,
+  "title": "Will Gold (XAUUSD) hit (LOW) $3,600 in August?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 480.99,
    "n": 76,
    "wins": 25,
-   "open_cost": 879.16,
-   "open_n": 15,
-   "miss_n": 95,
+   "open_cost": 891.31,
+   "open_n": 16,
+   "miss_n": 96,
    "miss_pnl": 111845.2,
-   "last_ts": 1785366578
+   "last_ts": 1785373147
   },
   "gkmgkldfmg": {
    "realized": 906.63,
@@ -3152,14 +3149,14 @@
    "last_ts": 1785249263
   },
   "Kruto2027": {
-   "realized": 617.52,
-   "n": 7,
+   "realized": 487.41,
+   "n": 8,
    "wins": 0,
-   "open_cost": 417.92,
-   "open_n": 3,
+   "open_cost": 289.08,
+   "open_n": 2,
    "miss_n": 6,
    "miss_pnl": 348.47,
-   "last_ts": 1785369032
+   "last_ts": 1785373149
   },
   "LSB1": {
    "realized": -397.16,
@@ -3167,8 +3164,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 19,
-   "miss_pnl": -107.43,
+   "miss_n": 18,
+   "miss_pnl": -111.25,
    "last_ts": 1783867043
   },
   "AIcAIc": {
@@ -3207,8 +3204,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 1,
-   "miss_pnl": -0.64,
+   "miss_n": 2,
+   "miss_pnl": 3.18,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3222,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785369035
+ "updated": 1785373172
 }
