@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 53.75,
+ "stake": 53.76,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1270.62,
- "deployed": 1417.08,
+ "cash": 1271.81,
+ "deployed": 1415.97,
  "reserve": 0.0,
- "realized": 1687.67,
+ "realized": 1687.75,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 25,
@@ -89,8 +89,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785369600,
-   "sold_shares": 26.97,
-   "sold_proceeds": 25.67
+   "sold_shares": 28.19,
+   "sold_proceeds": 26.86
   },
   {
    "token": "54815727746640547967672254072133541716883461619401150888777316620441172319772",
@@ -3109,10 +3109,10 @@
  ],
  "missed_pnl": 111255.27,
  "last_fill": {
-  "ts": 1785387866,
+  "ts": 1785388971,
   "side": "SELL",
-  "price": 0.966,
-  "shares": 0.6,
+  "price": 0.974,
+  "shares": 1.22,
   "title": "Israel x Iran ceasefire continues through July 30?",
   "outcome": "Yes"
  },
@@ -3218,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785387866
+ "updated": 1785388977
 }
