@@ -2162,6 +2162,36 @@
  ],
  "missed": [
   {
+   "ts": 1785453599,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "112061967240382599149689205198858360526948984998429264738900923425548076008244",
+   "cond": "0x39605ffa16456a7b84b238d7a2305443fbc971cbbf94bf84c34c76cd5410180a",
+   "title": "Will Gold (GC) dip to (LOW) $3,000 by end of December?",
+   "outcome": "Yes",
+   "price": 0.11,
+   "stake": 8.42,
+   "reason": "maker bid unfilled (125s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785453599,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "44951722963953529750522869714032390697712163183988488207431058937951658664117",
+   "cond": "0xfcd83805692939d3ea7ee66a1bd93aa08d973ced7cb4000a51cbf484a133ff7a",
+   "title": "Will Gold (GC) dip to (LOW) $2,500 by end of December?",
+   "outcome": "No",
+   "price": 0.1,
+   "stake": 5.94,
+   "reason": "maker bid unfilled (125s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785452006,
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
    "token": "86222734336247731664864731734281512829733267574920066804362888057386190851592",
@@ -3076,40 +3106,9 @@
    "settled": 1785118193,
    "name": "0xbadaf319",
    "exit_price": 0.9221
-  },
-  {
-   "ts": 1785114042,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "87696708406779453134902801895465089795764350419182531911213489596972812010552",
-   "cond": "0x726f8c733ea83c15eb7bf25eca3fb324440c78a49fd2e233138214c69cdb46f0",
-   "title": "Another NATO Article 4 invocation by October 31, 2026?",
-   "outcome": "No",
-   "price": 0.68,
-   "stake": 22.36,
-   "reason": "maker bid unfilled (66s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1784966431,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "3901986631446153023403890805451260510191347162609117497694534689649201812603",
-   "cond": "0x6d440b85cbe22665a737fa92e1d698aebae32754d627e8f4214b5e258de7b05d",
-   "title": "Tread FDV above $300M one day after launch",
-   "outcome": "No",
-   "price": 0.723,
-   "stake": 7.31,
-   "reason": "maker bid unfilled (70s)",
-   "status": "sold",
-   "pnl": 1.65,
-   "settled": 1785112193,
-   "name": "0xbadaf319",
-   "exit_price": 0.895
   }
  ],
- "missed_pnl": 111651.36,
+ "missed_pnl": 111612.08,
  "last_fill": {
   "ts": 1785451841,
   "side": "BUY",
@@ -3125,7 +3124,7 @@
    "wins": 25,
    "open_cost": 906.23,
    "open_n": 18,
-   "miss_n": 107,
+   "miss_n": 109,
    "miss_pnl": 112313.69,
    "last_ts": 1785442584
   },
@@ -3165,8 +3164,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 10,
-   "miss_pnl": -335.69,
+   "miss_n": 9,
+   "miss_pnl": -355.87,
    "last_ts": 1783867043
   },
   "AIcAIc": {
@@ -3205,8 +3204,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 10,
-   "miss_pnl": 227.62,
+   "miss_n": 11,
+   "miss_pnl": 247.8,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3220,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785452012
+ "updated": 1785453606
 }
