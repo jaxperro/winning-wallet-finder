@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785408021,
+ "updated": 1785408356,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 484.28,
    "n": 77,
    "wins": 25,
-   "open_cost": 891.31,
-   "open_n": 16,
+   "open_cost": 899.29,
+   "open_n": 17,
    "miss_n": 102,
    "miss_pnl": 112286.73,
-   "last_ts": 1785390491
+   "last_ts": 1785408348
   },
   "gkmgkldfmg": {
    "realized": 1000.19,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "29186422049166680837602032454275007649609188074464534125827790682823121106548",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Silver (XAGUSD) hit (LOW) $55 Week of July 27 2026?",
+   "their_price": 0.83,
+   "my_price": 0.83,
+   "slippage_pct": 0.0,
+   "lag_s": 1.2,
+   "shares": 9.61,
+   "cost": 7.98,
+   "fee": 0.0407,
+   "opened": 1785408348,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785456000
+  },
   {
    "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
