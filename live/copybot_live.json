@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1420.42,
- "deployed": 1382.64,
+ "cash": 1420.51,
+ "deployed": 1382.56,
  "reserve": 0.0,
- "realized": 1803.03,
+ "realized": 1803.04,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
  "open_count": 26,
@@ -3116,12 +3116,12 @@
  ],
  "missed_pnl": 111541.64,
  "last_fill": {
-  "ts": 1785406013,
-  "side": "BUY",
-  "price": 0.62,
-  "shares": 90.44,
-  "title": "LoL: Hanwha Life Esports vs Dplus KIA - Game 1 Winner",
-  "outcome": "Hanwha Life Esports"
+  "ts": 1785407046,
+  "side": "SELL",
+  "price": 0.93,
+  "shares": 0.1,
+  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3225,5 +3225,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785406055
+ "updated": 1785407046
 }
