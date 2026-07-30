@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785414530,
+ "updated": 1785414643,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 484.28,
@@ -13,14 +13,14 @@
    "last_ts": 1785408348
   },
   "gkmgkldfmg": {
-   "realized": 1003.49,
-   "n": 96,
+   "realized": 948.45,
+   "n": 97,
    "wins": 0,
-   "open_cost": 54.1,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785411917
+   "last_ts": 1785414639
   },
   "1kto1m": {
    "realized": 113.06,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "91005296975747185884827993266438280160416160824604371127998336237333692040745",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Nigma Galaxy",
+   "title": "Dota 2: Nigma Galaxy vs 1win - Game 1 Winner",
+   "their_price": 0.4199,
+   "my_price": 0.4199,
+   "slippage_pct": 0.0,
+   "lag_s": 7.3,
+   "shares": 128.84,
+   "cost": 54.1,
+   "fee": 0.9415,
+   "opened": 1785403805,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -55.04,
+   "settled": 1785414639,
+   "end_ts": 1785369600
+  },
   {
    "token": "102357232418942179672028130858766408228809563367413802735032151943425338940696",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -269,26 +289,6 @@
    "end_ts": 1785369600,
    "sold_shares": 73.26,
    "sold_proceeds": 73.26
-  },
-  {
-   "token": "91005296975747185884827993266438280160416160824604371127998336237333692040745",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Nigma Galaxy",
-   "title": "Dota 2: Nigma Galaxy vs 1win - Game 1 Winner",
-   "their_price": 0.4199,
-   "my_price": 0.4199,
-   "slippage_pct": 0.0,
-   "lag_s": 7.3,
-   "shares": 128.84,
-   "cost": 54.1,
-   "fee": 0.9415,
-   "opened": 1785403805,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785369600
   },
   {
    "token": "55805599679396794643020959724265487381144406111284276240185102465706193783798",
