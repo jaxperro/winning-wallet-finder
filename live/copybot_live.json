@@ -2164,6 +2164,21 @@
  ],
  "missed": [
   {
+   "ts": 1785438136,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "62474359384438151756967307997575848219189410783384033652191452044688986782350",
+   "cond": "0x0cfaa8fabad4d452be63950f47b07339ce192820df5d64569496fb91eb55b502",
+   "title": "Will Sofia host Eurovision 2027?",
+   "outcome": "Yes",
+   "price": 0.6686,
+   "stake": 54.4,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1784482284,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "17973586937761078448873484917108971852340583833844287573538816307502825884858",
@@ -3091,25 +3106,9 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.8766
-  },
-  {
-   "ts": 1785086253,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "101153729343818198854460643430791650575892746410722572933584859093710282528569",
-   "cond": "0x08a53f69944788b6c5fc6907e98e71fac00952c2cacfc588edaa35496fb29527",
-   "title": "Dota 2: KW vs RE.Arise - Game 2 Winner",
-   "outcome": "KW",
-   "price": 0.5041,
-   "stake": 129.95,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 33.0,
-   "settled": 1785088262,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.6465
   }
  ],
- "missed_pnl": 111714.04,
+ "missed_pnl": 111648.02,
  "last_fill": {
   "ts": 1785433219,
   "side": "SELL",
@@ -3185,7 +3184,7 @@
    "wins": 2,
    "open_cost": 868.15,
    "open_n": 9,
-   "miss_n": 29,
+   "miss_n": 30,
    "miss_pnl": -646.17,
    "last_ts": 1785407674
   },
@@ -3220,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785433219
+ "updated": 1785438136
 }
