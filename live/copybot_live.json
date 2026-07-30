@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 53.28,
+ "stake": 53.26,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1288.18,
- "deployed": 1375.71,
+ "cash": 1234.22,
+ "deployed": 1428.99,
  "reserve": 0.0,
- "realized": 1663.87,
+ "realized": 1663.18,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 28,
- "fees_paid": 429.15,
+ "open_count": 29,
+ "fees_paid": 429.84,
  "fee_rate": 0.03,
  "lag": {
-  "n": 339,
-  "n24": 15,
+  "n": 340,
+  "n24": 16,
   "basis": "24h",
-  "avg_s": 6.6,
+  "avg_s": 6.9,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "30254318320353641204277690542860922564879092609585509463603793724900287946783",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "BNK FEARX",
+   "title": "LoL: Nongshim Red Force vs BNK FEARX (BO3) - LCK Round 3-4 Rise Group",
+   "their_price": 0.57,
+   "my_price": 0.57,
+   "slippage_pct": 0.0,
+   "lag_s": 19.6,
+   "shares": 93.47,
+   "cost": 53.28,
+   "fee": 0.69,
+   "opened": 1785451822,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785542400
+  },
   {
    "token": "15936256786231936393406572307889188250969935165041173084711910210197660722650",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2138,27 +2158,6 @@
    "settled": 1784722315,
    "sold_shares": 331.98,
    "sold_proceeds": 133.7
-  },
-  {
-   "token": "48409467751286486665938959009701710014426367960633333378105361988315138136571",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Silver (XAGUSD) hit (LOW) $50 Week of July 20 2026?",
-   "their_price": 0.93,
-   "my_price": 0.911,
-   "slippage_pct": -0.0204,
-   "lag_s": 25.9,
-   "shares": 69.34,
-   "cost": 63.17,
-   "fee": 0.17,
-   "opened": 1784595886,
-   "status": "closed",
-   "exit_price": 0.9969,
-   "pnl": 5.79,
-   "settled": 1784722115,
-   "sold_shares": 69.34,
-   "sold_proceeds": 69.13
   }
  ],
  "missed": [
@@ -3114,12 +3113,12 @@
  ],
  "missed_pnl": 111666.64,
  "last_fill": {
-  "ts": 1785447998,
-  "side": "SELL",
-  "price": 0.996,
-  "shares": 0.89,
-  "title": "Israel x Iran ceasefire continues through July 30?",
-  "outcome": "Yes"
+  "ts": 1785451841,
+  "side": "BUY",
+  "price": 0.57,
+  "shares": 93.47,
+  "title": "LoL: Nongshim Red Force vs BNK FEARX (BO3) - LCK Round 3-4 R",
+  "outcome": "BNK FEARX"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3196,11 +3195,11 @@
    "realized": -120.24,
    "n": 5,
    "wins": 2,
-   "open_cost": 56.1,
-   "open_n": 1,
+   "open_cost": 109.38,
+   "open_n": 2,
    "miss_n": 3,
    "miss_pnl": 90.82,
-   "last_ts": 1785443983
+   "last_ts": 1785451822
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3223,5 +3222,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785451165
+ "updated": 1785451869
 }
