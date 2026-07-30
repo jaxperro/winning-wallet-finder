@@ -2163,6 +2163,36 @@
  ],
  "missed": [
   {
+   "ts": 1785416755,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "67068564392815062965239534587125906161223843442987784298273297839583708579362",
+   "cond": "0x00cb87d62e4a2668754fc58ed8f1462393c516794b2eca2d7991d3d0a043ab0e",
+   "title": "Tread FDV above $100M one day after launch",
+   "outcome": "No",
+   "price": 0.52,
+   "stake": 10.02,
+   "reason": "maker bid unfilled (114s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785416641,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "97404502201244152966308197548411815397482847053527035814522627546697214883681",
+   "cond": "0xe8da89e5a6daede04f1fc3ce3f3957370b50552e176dc27c2a37c4d60bf76134",
+   "title": "Tread FDV above $80M one day after launch",
+   "outcome": "Yes",
+   "price": 0.34,
+   "stake": 55.01,
+   "reason": "thin book ($6 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785415197,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "13388595125574691833144243840473829759157749848506045646745311015534690743621",
@@ -3079,42 +3109,9 @@
    "settled": 1784974284,
    "name": "0xbadaf319",
    "exit_price": 0.9072
-  },
-  {
-   "ts": 1784957802,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "84136887953338024754895453606615907387507802935603233306412924655539834091881",
-   "cond": "0xb9ba5a1aab7799113572597370d54d3493e7e51448a9f90942e690f36f8c3587",
-   "title": "Will the highest temperature in Hong Kong be 32\u00b0C on July 25?",
-   "outcome": "No",
-   "price": 0.74,
-   "stake": 38.75,
-   "reason": "thin book ($22 within 5c < $50)",
-   "status": "sold",
-   "pnl": 8.42,
-   "settled": 1784958469,
-   "name": "0xbadaf319",
-   "exit_price": 0.9091
-  },
-  {
-   "ts": 1784856070,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "52998619540131236497547594447014700470168657421344143046644809127712598896777",
-   "cond": "0x13ae062bd68a15fcbaae29b584fd8030a546b4fb9b2211055a7124f17c2b3ef2",
-   "title": "WTI Crude Oil (WTI) Up or Down on July 24?",
-   "outcome": "Down",
-   "price": 0.63,
-   "stake": 62.21,
-   "reason": "maker bid unfilled (124s)",
-   "status": "sold",
-   "pnl": 13.58,
-   "settled": 1784934648,
-   "name": "0xbadaf319",
-   "exit_checked": true,
-   "exit_price": 0.7796
   }
  ],
- "missed_pnl": 111477.33,
+ "missed_pnl": 111572.98,
  "last_fill": {
   "ts": 1785416175,
   "side": "SELL",
@@ -3130,7 +3127,7 @@
    "wins": 25,
    "open_cost": 899.29,
    "open_n": 17,
-   "miss_n": 102,
+   "miss_n": 104,
    "miss_pnl": 112286.73,
    "last_ts": 1785408348
   },
@@ -3225,5 +3222,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785416182
+ "updated": 1785416762
 }
