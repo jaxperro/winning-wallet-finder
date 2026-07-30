@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 338,
-  "n24": 35,
+  "n24": 32,
   "basis": "24h",
-  "avg_s": 7.1,
+  "avg_s": 6.5,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -2164,6 +2164,21 @@
  ],
  "missed": [
   {
+   "ts": 1785425539,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "49096838469319785284977438732691316133406822442318517146017951204646833825601",
+   "cond": "0x22452b38b25ef76546f4b47f85540e57fb360b27ae27e7affa59feb6d2303b0e",
+   "title": "Will NVIDIA (NVDA) close above $190 on July 30?",
+   "outcome": "Yes",
+   "price": 0.85,
+   "stake": 7.93,
+   "reason": "maker bid unfilled (68s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785423436,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "87150316911747710389398782447337377964271008938887702894316010075241429634797",
@@ -3091,25 +3106,9 @@
    "settled": 1785080352,
    "name": "gkmgkldfmg",
    "exit_checked": true
-  },
-  {
-   "ts": 1785069395,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "3632761527830851126218403972215896322866498280718052589856316229871893863849",
-   "cond": "0x6c433c24fb3c1f54e74a3a016eaf7820f8b6d18486e04d0ba7ad515085cdecf0",
-   "title": "LoL: Anyone's Legend vs Bilibili Gaming - Game 2 Winner",
-   "outcome": "Anyone's Legend",
-   "price": 0.5,
-   "stake": 123.16,
-   "reason": "no ask side on the book at copy time",
-   "status": "sold",
-   "pnl": 121.06,
-   "settled": 1785074331,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.999
   }
  ],
- "missed_pnl": 111598.21,
+ "missed_pnl": 111700.34,
  "last_fill": {
   "ts": 1785422764,
   "side": "SELL",
@@ -3125,7 +3124,7 @@
    "wins": 25,
    "open_cost": 899.29,
    "open_n": 17,
-   "miss_n": 106,
+   "miss_n": 107,
    "miss_pnl": 112292.49,
    "last_ts": 1785408348
   },
@@ -3220,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785423436
+ "updated": 1785425539
 }
