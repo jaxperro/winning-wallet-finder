@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1358.7,
- "deployed": 1446.6,
+ "cash": 1359.58,
+ "deployed": 1445.79,
  "reserve": 0.0,
- "realized": 1805.27,
+ "realized": 1805.34,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
  "open_count": 28,
@@ -279,8 +279,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785369600,
-   "sold_shares": 34.24,
-   "sold_proceeds": 32.84
+   "sold_shares": 35.13,
+   "sold_proceeds": 33.72
   },
   {
    "token": "54815727746640547967672254072133541716883461619401150888777316620441172319772",
@@ -3119,12 +3119,12 @@
  ],
  "missed_pnl": 111541.64,
  "last_fill": {
-  "ts": 1785411910,
+  "ts": 1785413100,
   "side": "SELL",
-  "price": 1.0,
-  "shares": 59.44,
-  "title": "Dota 2: Nigma Galaxy vs 1win - Game 2 Winner",
-  "outcome": "1win"
+  "price": 0.99,
+  "shares": 0.89,
+  "title": "Israel x Iran ceasefire continues through July 30?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3228,5 +3228,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785411917
+ "updated": 1785413107
 }
