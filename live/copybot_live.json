@@ -2164,6 +2164,21 @@
  ],
  "missed": [
   {
+   "ts": 1785422324,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "99066438906324631442065100961971704734219939817870242563137379220022107951416",
+   "cond": "0x14e52ca4ef18d690718dfe665c32f250a80cbbd16d8df1538d476071b9e1927a",
+   "title": "Tesla (TSLA) Up or Down on July 30?",
+   "outcome": "Up",
+   "price": 0.91,
+   "stake": 18.85,
+   "reason": "maker bid unfilled (111s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785421302,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "65024137053855672135754289102601167808275997078238687431817057463095951022316",
@@ -3095,25 +3110,9 @@
    "settled": 1785068444,
    "name": "AIcAIc",
    "exit_price": 0.18
-  },
-  {
-   "ts": 1784983075,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "37396056216978472002674926504514491318505793793759544366379504943870958326106",
-   "cond": "0xa255ab978a1eab78a7bd29479b0b9fe8e3de1904044f9887e470cebb7e04c63b",
-   "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
-   "outcome": "ThunderTalk Gaming",
-   "price": 0.6,
-   "stake": 122.05,
-   "reason": "maker bid unfilled (100s)",
-   "status": "lost",
-   "pnl": -123.51,
-   "settled": 1784999125,
-   "name": "AIcAIc",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 111542.86,
+ "missed_pnl": 111522.45,
  "last_fill": {
   "ts": 1785421855,
   "side": "SELL",
@@ -3129,7 +3128,7 @@
    "wins": 25,
    "open_cost": 899.29,
    "open_n": 17,
-   "miss_n": 105,
+   "miss_n": 106,
    "miss_pnl": 112292.49,
    "last_ts": 1785408348
   },
@@ -3169,8 +3168,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 12,
-   "miss_pnl": -300.0,
+   "miss_n": 11,
+   "miss_pnl": -320.41,
    "last_ts": 1783867043
   },
   "AIcAIc": {
@@ -3209,8 +3208,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 8,
-   "miss_pnl": 191.93,
+   "miss_n": 9,
+   "miss_pnl": 212.34,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3224,5 +3223,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785421856
+ "updated": 1785422331
 }

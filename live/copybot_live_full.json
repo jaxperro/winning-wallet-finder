@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785421856,
+ "updated": 1785422331,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 484.28,
@@ -8,7 +8,7 @@
    "wins": 25,
    "open_cost": 899.29,
    "open_n": 17,
-   "miss_n": 105,
+   "miss_n": 106,
    "miss_pnl": 112292.49,
    "last_ts": 1785408348
   },
@@ -48,8 +48,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 12,
-   "miss_pnl": -300.0,
+   "miss_n": 11,
+   "miss_pnl": -320.41,
    "last_ts": 1783867043
   },
   "AIcAIc": {
@@ -88,8 +88,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 8,
-   "miss_pnl": 191.93,
+   "miss_n": 9,
+   "miss_pnl": 212.34,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -6116,6 +6116,21 @@
  ],
  "missed": [
   {
+   "ts": 1785422324,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "99066438906324631442065100961971704734219939817870242563137379220022107951416",
+   "cond": "0x14e52ca4ef18d690718dfe665c32f250a80cbbd16d8df1538d476071b9e1927a",
+   "title": "Tesla (TSLA) Up or Down on July 30?",
+   "outcome": "Up",
+   "price": 0.91,
+   "stake": 18.85,
+   "reason": "maker bid unfilled (111s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785421302,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "65024137053855672135754289102601167808275997078238687431817057463095951022316",
@@ -9286,7 +9301,7 @@
    "status": "won",
    "pnl": 20.41,
    "settled": 1783781024,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
