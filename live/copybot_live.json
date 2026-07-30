@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 56.06,
+ "stake": 56.04,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1420.51,
- "deployed": 1382.56,
+ "cash": 1363.41,
+ "deployed": 1438.62,
  "reserve": 0.0,
- "realized": 1803.04,
+ "realized": 1802.0,
  "adjustments": 0.03,
- "ledger_drift": -0.06,
- "open_count": 26,
- "fees_paid": 426.49,
+ "ledger_drift": -0.07,
+ "open_count": 27,
+ "fees_paid": 427.53,
  "fee_rate": 0.03,
  "lag": {
-  "n": 332,
-  "n24": 34,
+  "n": 333,
+  "n24": 35,
   "basis": "24h",
-  "avg_s": 6.8,
+  "avg_s": 6.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "US announces end of Iranian blockade by August 31, 2026?",
+   "their_price": 0.38,
+   "my_price": 0.38,
+   "slippage_pct": 0.0,
+   "lag_s": 1.2,
+   "shares": 147.53,
+   "cost": 56.06,
+   "fee": 1.04,
+   "opened": 1785407674,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "634630064714299321077497320934035372668565093802737701187762655182629990503",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2140,25 +2160,6 @@
    "settled": 1784660101,
    "sold_shares": 7.75,
    "sold_proceeds": 6.4
-  },
-  {
-   "token": "6467608425341586311851272664218259937970959338795566500089367688884232468049",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will Elon Musk post 140-159 tweets from July 14 to July 21, 2026?",
-   "their_price": 0.43,
-   "my_price": 0.45,
-   "slippage_pct": 0.0465,
-   "lag_s": 5.1,
-   "shares": 127.88,
-   "cost": 57.54,
-   "fee": 0.95,
-   "opened": 1784586251,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -58.49,
-   "settled": 1784658052
   }
  ],
  "missed": [
@@ -3116,12 +3117,12 @@
  ],
  "missed_pnl": 111541.64,
  "last_fill": {
-  "ts": 1785407046,
-  "side": "SELL",
-  "price": 0.93,
-  "shares": 0.1,
-  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
-  "outcome": "No"
+  "ts": 1785407675,
+  "side": "BUY",
+  "price": 0.38,
+  "shares": 147.53,
+  "title": "US announces end of Iranian blockade by August 31, 2026?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3188,11 +3189,11 @@
    "realized": 249.59,
    "n": 14,
    "wins": 2,
-   "open_cost": 812.09,
-   "open_n": 8,
+   "open_cost": 868.15,
+   "open_n": 9,
    "miss_n": 26,
    "miss_pnl": -657.29,
-   "last_ts": 1785395523
+   "last_ts": 1785407674
   },
   "JuiceFarm": {
    "realized": -63.75,
@@ -3225,5 +3226,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785407046
+ "updated": 1785407681
 }
