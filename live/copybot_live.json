@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 54.22,
+ "stake": 54.21,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1436.0,
- "deployed": 1274.86,
+ "cash": 1381.37,
+ "deployed": 1329.08,
  "reserve": 0.0,
- "realized": 1710.83,
+ "realized": 1710.41,
  "adjustments": 0.03,
- "ledger_drift": -0.05,
- "open_count": 24,
- "fees_paid": 421.63,
+ "ledger_drift": -0.06,
+ "open_count": 25,
+ "fees_paid": 422.06,
  "fee_rate": 0.03,
  "lag": {
-  "n": 327,
-  "n24": 30,
+  "n": 328,
+  "n24": 31,
   "basis": "24h",
-  "avg_s": 6.8,
+  "avg_s": 6.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "109766849616564973583260694788676807786232255749165024201845384716685533661901",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "BNK FEARX",
+   "title": "LoL: DN SOOPers vs BNK FEARX - Game 2 Winner",
+   "their_price": 0.74,
+   "my_price": 0.74,
+   "slippage_pct": 0.0,
+   "lag_s": 5.9,
+   "shares": 73.26,
+   "cost": 54.21,
+   "fee": 0.42,
+   "opened": 1785402279,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785369600
+  },
   {
    "token": "55805599679396794643020959724265487381144406111284276240185102465706193783798",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2136,25 +2156,6 @@
    "settled": 1784649072,
    "sold_shares": 3.06,
    "sold_proceeds": 2.54
-  },
-  {
-   "token": "35358889366059131445607416132477521541386270328042995107702816540034073998102",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "Will \"The Odyssey\" Opening Weekend Box Office be greater than 115m?",
-   "their_price": 0.59,
-   "my_price": 0.58,
-   "slippage_pct": -0.0169,
-   "lag_s": 0.6,
-   "shares": 178.57,
-   "cost": 103.57,
-   "fee": 1.3,
-   "opened": 1784174231,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 73.69,
-   "settled": 1784649072
   }
  ],
  "missed": [
@@ -3112,12 +3113,12 @@
  ],
  "missed_pnl": 111602.79,
  "last_fill": {
-  "ts": 1785398065,
-  "side": "SELL",
-  "price": 0.988,
-  "shares": 1.78,
-  "title": "Israel x Iran ceasefire continues through July 30?",
-  "outcome": "Yes"
+  "ts": 1785402284,
+  "side": "BUY",
+  "price": 0.74,
+  "shares": 73.26,
+  "title": "LoL: DN SOOPers vs BNK FEARX - Game 2 Winner",
+  "outcome": "BNK FEARX"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3134,11 +3135,11 @@
    "realized": 906.63,
    "n": 93,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 54.21,
+   "open_n": 1,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785341708
+   "last_ts": 1785402279
   },
   "1kto1m": {
    "realized": 113.06,
@@ -3221,5 +3222,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785402050
+ "updated": 1785402284
 }
