@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 53.56,
+ "stake": 53.59,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1305.23,
- "deployed": 1372.89,
+ "cash": 1314.53,
+ "deployed": 1365.01,
  "reserve": 0.0,
- "realized": 1678.09,
+ "realized": 1679.51,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
  "open_count": 28,
- "fees_paid": 429.84,
+ "fees_paid": 429.85,
  "fee_rate": 0.03,
  "lag": {
   "n": 340,
@@ -232,7 +232,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1785456000
+   "end_ts": 1785456000,
+   "sold_shares": 9.5,
+   "sold_proceeds": 9.3
   },
   {
    "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
@@ -3110,12 +3112,12 @@
  ],
  "missed_pnl": 111612.08,
  "last_fill": {
-  "ts": 1785451841,
-  "side": "BUY",
-  "price": 0.57,
-  "shares": 93.47,
-  "title": "LoL: Nongshim Red Force vs BNK FEARX (BO3) - LCK Round 3-4 R",
-  "outcome": "BNK FEARX"
+  "ts": 1785455276,
+  "side": "SELL",
+  "price": 0.98,
+  "shares": 9.5,
+  "title": "Will Silver (XAGUSD) hit (LOW) $55 Week of July 27 2026?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3219,5 +3221,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785454493
+ "updated": 1785455283
 }
