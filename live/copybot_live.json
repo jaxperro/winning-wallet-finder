@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 53.75,
+ "stake": 53.82,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1235.88,
- "deployed": 1451.73,
+ "cash": 1275.09,
+ "deployed": 1415.97,
  "reserve": 0.0,
- "realized": 1687.57,
+ "realized": 1691.03,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 26,
- "fees_paid": 421.2,
+ "open_count": 25,
+ "fees_paid": 421.3,
  "fee_rate": 0.03,
  "lag": {
   "n": 327,
@@ -64,11 +64,13 @@
    "cost": 35.75,
    "fee": 0.18,
    "opened": 1785389280,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788134400
+   "status": "closed",
+   "exit_price": 0.9157,
+   "pnl": 3.29,
+   "settled": 1785390491,
+   "end_ts": 1788134400,
+   "sold_shares": 42.82,
+   "sold_proceeds": 39.21
   },
   {
    "token": "17480166814702290785530852378381854525201787151638025511297996406280125724476",
@@ -3108,23 +3110,23 @@
  ],
  "missed_pnl": 111254.78,
  "last_fill": {
-  "ts": 1785389287,
-  "side": "BUY",
-  "price": 0.835,
+  "ts": 1785390491,
+  "side": "SELL",
+  "price": 0.918,
   "shares": 42.82,
   "title": "NATO x Russia military clash by August 31, 2026?",
   "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 480.99,
-   "n": 76,
+   "realized": 484.28,
+   "n": 77,
    "wins": 25,
-   "open_cost": 927.06,
-   "open_n": 17,
+   "open_cost": 891.31,
+   "open_n": 16,
    "miss_n": 99,
    "miss_pnl": 111845.2,
-   "last_ts": 1785389280
+   "last_ts": 1785390491
   },
   "gkmgkldfmg": {
    "realized": 906.63,
@@ -3217,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785389650
+ "updated": 1785390491
 }
