@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785379274,
+ "updated": 1785381132,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 480.99,
@@ -8,7 +8,7 @@
    "wins": 25,
    "open_cost": 891.31,
    "open_n": 16,
-   "miss_n": 97,
+   "miss_n": 98,
    "miss_pnl": 111845.2,
    "last_ts": 1785373147
   },
@@ -48,8 +48,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 17,
-   "miss_pnl": -110.35,
+   "miss_n": 16,
+   "miss_pnl": -116.46,
    "last_ts": 1783867043
   },
   "AIcAIc": {
@@ -88,8 +88,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 3,
-   "miss_pnl": 2.28,
+   "miss_n": 4,
+   "miss_pnl": 8.39,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -5882,6 +5882,21 @@
  ],
  "missed": [
   {
+   "ts": 1785381127,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "49096838469319785284977438732691316133406822442318517146017951204646833825601",
+   "cond": "0x22452b38b25ef76546f4b47f85540e57fb360b27ae27e7affa59feb6d2303b0e",
+   "title": "Will NVIDIA (NVDA) close above $190 on July 30?",
+   "outcome": "Yes",
+   "price": 0.6,
+   "stake": 50,
+   "reason": "maker bid unfilled (60s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785379176,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "92062876943642517334204166558488649767389043731898736327419367578333707352166",
@@ -9135,7 +9150,7 @@
    "status": "won",
    "pnl": 6.11,
    "settled": 1783718413,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
