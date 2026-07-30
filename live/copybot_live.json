@@ -2154,6 +2154,21 @@
  ],
  "missed": [
   {
+   "ts": 1785379176,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "92062876943642517334204166558488649767389043731898736327419367578333707352166",
+   "cond": "0x2c2d6a33bd848d03b55f9c9ae23518675aafe29a116868168168a1036211a431",
+   "title": "Will \"Spider-Man: Brand New Day\" score at least 90 on the Rotten Tomatoes Tomatometer?",
+   "outcome": "Yes",
+   "price": 0.87,
+   "stake": 53.73,
+   "reason": "maker bid unfilled (90s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785373146,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "35250490631162852068665560333425207330394186153713200652716697624945520016963",
@@ -3089,25 +3104,9 @@
    "settled": 1784899892,
    "name": "0xbadaf319",
    "exit_price": 0.9882
-  },
-  {
-   "ts": 1784709848,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "16746455674526792453091721753802082438321089440613204909132014300251813407275",
-   "cond": "0x236fabcdc7506a5bde811505d8dc35863599dfea80ac3d39ac6f6d28dc922b08",
-   "title": "Will Benjamin Netanyahu visit New York City by September 30?",
-   "outcome": "No",
-   "price": 0.2557,
-   "stake": 40.53,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -12.44,
-   "settled": 1784887957,
-   "name": "0xbadaf319",
-   "exit_price": 0.1875
   }
  ],
- "missed_pnl": 111260.48,
+ "missed_pnl": 111261.38,
  "last_fill": {
   "ts": 1785375766,
   "side": "BUY",
@@ -3123,7 +3122,7 @@
    "wins": 25,
    "open_cost": 891.31,
    "open_n": 16,
-   "miss_n": 96,
+   "miss_n": 97,
    "miss_pnl": 111845.2,
    "last_ts": 1785373147
   },
@@ -3163,8 +3162,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 18,
-   "miss_pnl": -111.25,
+   "miss_n": 17,
+   "miss_pnl": -110.35,
    "last_ts": 1783867043
   },
   "AIcAIc": {
@@ -3203,8 +3202,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 2,
-   "miss_pnl": 3.18,
+   "miss_n": 3,
+   "miss_pnl": 2.28,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3218,5 +3217,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785378444
+ "updated": 1785379194
 }

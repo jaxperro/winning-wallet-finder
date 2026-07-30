@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785378444,
+ "updated": 1785379194,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 480.99,
@@ -8,7 +8,7 @@
    "wins": 25,
    "open_cost": 891.31,
    "open_n": 16,
-   "miss_n": 96,
+   "miss_n": 97,
    "miss_pnl": 111845.2,
    "last_ts": 1785373147
   },
@@ -48,8 +48,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 18,
-   "miss_pnl": -111.25,
+   "miss_n": 17,
+   "miss_pnl": -110.35,
    "last_ts": 1783867043
   },
   "AIcAIc": {
@@ -88,8 +88,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 2,
-   "miss_pnl": 3.18,
+   "miss_n": 3,
+   "miss_pnl": 2.28,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -5882,6 +5882,21 @@
  ],
  "missed": [
   {
+   "ts": 1785379176,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "92062876943642517334204166558488649767389043731898736327419367578333707352166",
+   "cond": "0x2c2d6a33bd848d03b55f9c9ae23518675aafe29a116868168168a1036211a431",
+   "title": "Will \"Spider-Man: Brand New Day\" score at least 90 on the Rotten Tomatoes Tomatometer?",
+   "outcome": "Yes",
+   "price": 0.87,
+   "stake": 53.73,
+   "reason": "maker bid unfilled (90s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785373146,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "35250490631162852068665560333425207330394186153713200652716697624945520016963",
@@ -9136,7 +9151,7 @@
    "status": "sold",
    "pnl": -0.9,
    "settled": 1783718118,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_price": 0.8396
   },
   {
