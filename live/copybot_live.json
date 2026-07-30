@@ -2163,6 +2163,21 @@
  ],
  "missed": [
   {
+   "ts": 1785415197,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "13388595125574691833144243840473829759157749848506045646745311015534690743621",
+   "cond": "0xe299795d6454fc63c76d4e790f10f6fce6408abd7eab1bdbf5602f112e0b55d0",
+   "title": "Dota 2: LGD Gaming vs MOUZ - Game 1 Winner",
+   "outcome": "MOUZ",
+   "price": 0.4692,
+   "stake": 55.01,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1785403166,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "110869556039123254261458336492051379784793695798413838645727516760560518948877",
@@ -3097,24 +3112,9 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.7796
-  },
-  {
-   "ts": 1784927019,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "13771338838328601734339816906945515194595281212781971576981933533238318254216",
-   "cond": "0xfb4d7cdb6ded97ed94b0cc9e9cfd89b93b41bc1a0768b095c1329e65aeaf2375",
-   "title": "Will Madonna's monthly listeners figure hit 60m by August 31?",
-   "outcome": "No",
-   "price": 0.93,
-   "stake": 62.03,
-   "reason": "maker bid unfilled (65s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 111541.64,
+ "missed_pnl": 111477.33,
  "last_fill": {
   "ts": 1785414906,
   "side": "SELL",
@@ -3140,7 +3140,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 54,
+   "miss_n": 55,
    "miss_pnl": 221.74,
    "last_ts": 1785414639
   },
@@ -3170,8 +3170,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 14,
-   "miss_pnl": -226.07,
+   "miss_n": 13,
+   "miss_pnl": -290.38,
    "last_ts": 1783867043
   },
   "AIcAIc": {
@@ -3210,8 +3210,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 6,
-   "miss_pnl": 118.0,
+   "miss_n": 7,
+   "miss_pnl": 182.31,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3225,5 +3225,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785414914
+ "updated": 1785415204
 }

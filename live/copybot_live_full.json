@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785414914,
+ "updated": 1785415204,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 484.28,
@@ -18,7 +18,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 54,
+   "miss_n": 55,
    "miss_pnl": 221.74,
    "last_ts": 1785414639
   },
@@ -48,8 +48,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 14,
-   "miss_pnl": -226.07,
+   "miss_n": 13,
+   "miss_pnl": -290.38,
    "last_ts": 1783867043
   },
   "AIcAIc": {
@@ -88,8 +88,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 6,
-   "miss_pnl": 118.0,
+   "miss_n": 7,
+   "miss_pnl": 182.31,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -6094,6 +6094,21 @@
  ],
  "missed": [
   {
+   "ts": 1785415197,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "13388595125574691833144243840473829759157749848506045646745311015534690743621",
+   "cond": "0xe299795d6454fc63c76d4e790f10f6fce6408abd7eab1bdbf5602f112e0b55d0",
+   "title": "Dota 2: LGD Gaming vs MOUZ - Game 1 Winner",
+   "outcome": "MOUZ",
+   "price": 0.4692,
+   "stake": 55.01,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1785403166,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "110869556039123254261458336492051379784793695798413838645727516760560518948877",
@@ -9202,7 +9217,7 @@
    "status": "won",
    "pnl": 64.31,
    "settled": 1783780828,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_checked": true
   },
   {
