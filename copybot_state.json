@@ -20348,8 +20348,8 @@
     }
   },
   "hwm": 3600.1933566560215,
-  "feed_sig": "be42231e0a1bed718e95833fc74603f3",
-  "feed_pushed_at": 1785442957.8483636,
+  "feed_sig": "d71eb4898fc22dc035b9109a529df911",
+  "feed_pushed_at": 1785443092.3046832,
   "missed": [
     {
       "ts": 1783781525,
@@ -23332,9 +23332,9 @@
       "price": 0.79,
       "stake": 54.22,
       "reason": "price moved 0.73\u21920.79",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 14.07,
+      "settled": 1785443160,
       "name": "0xbadaf319"
     },
     {
