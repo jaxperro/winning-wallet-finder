@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 55.01,
+ "stake": 55.02,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1248.41,
- "deployed": 1502.27,
+ "cash": 1249.29,
+ "deployed": 1501.46,
  "reserve": 0.0,
- "realized": 1750.65,
+ "realized": 1750.72,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
  "open_count": 29,
@@ -319,8 +319,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785369600,
-   "sold_shares": 36.92,
-   "sold_proceeds": 35.49
+   "sold_shares": 37.81,
+   "sold_proceeds": 36.37
   },
   {
    "token": "54815727746640547967672254072133541716883461619401150888777316620441172319772",
@@ -2163,6 +2163,38 @@
  ],
  "missed": [
   {
+   "ts": 1785415197,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "13388595125574691833144243840473829759157749848506045646745311015534690743621",
+   "cond": "0xe299795d6454fc63c76d4e790f10f6fce6408abd7eab1bdbf5602f112e0b55d0",
+   "title": "Dota 2: LGD Gaming vs MOUZ - Game 1 Winner",
+   "outcome": "MOUZ",
+   "price": 0.4692,
+   "stake": 55.01,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 15.29,
+   "settled": 1785417181,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.6142
+  },
+  {
+   "ts": 1785389644,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "48905394170305541744328748582998455459621629534326295447768125812721237965617",
+   "cond": "0xfc6584616ca3ec385e40881bd568fe291713cad93ab95be921f4ba2bf3b456e3",
+   "title": "WTI Crude Oil (WTI) closes above $86 on July 30?",
+   "outcome": "No",
+   "price": 0.68,
+   "stake": 27.26,
+   "reason": "maker bid unfilled (92s)",
+   "status": "sold",
+   "pnl": 5.76,
+   "settled": 1785417180,
+   "name": "0xbadaf319",
+   "exit_price": 0.8342
+  },
+  {
    "ts": 1785416755,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "67068564392815062965239534587125906161223843442987784298273297839583708579362",
@@ -2191,21 +2223,6 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785415197,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "13388595125574691833144243840473829759157749848506045646745311015534690743621",
-   "cond": "0xe299795d6454fc63c76d4e790f10f6fce6408abd7eab1bdbf5602f112e0b55d0",
-   "title": "Dota 2: LGD Gaming vs MOUZ - Game 1 Winner",
-   "outcome": "MOUZ",
-   "price": 0.4692,
-   "stake": 55.01,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
   },
   {
    "ts": 1785403166,
@@ -2347,21 +2364,6 @@
    "settled": 1785391164,
    "name": "0xbadaf319",
    "exit_price": 0.61
-  },
-  {
-   "ts": 1785389644,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "48905394170305541744328748582998455459621629534326295447768125812721237965617",
-   "cond": "0xfc6584616ca3ec385e40881bd568fe291713cad93ab95be921f4ba2bf3b456e3",
-   "title": "WTI Crude Oil (WTI) closes above $86 on July 30?",
-   "outcome": "No",
-   "price": 0.68,
-   "stake": 27.26,
-   "reason": "maker bid unfilled (92s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1785379176,
@@ -3111,9 +3113,9 @@
    "exit_price": 0.9072
   }
  ],
- "missed_pnl": 111572.98,
+ "missed_pnl": 111594.03,
  "last_fill": {
-  "ts": 1785416175,
+  "ts": 1785417099,
   "side": "SELL",
   "price": 0.989,
   "shares": 0.89,
@@ -3128,7 +3130,7 @@
    "open_cost": 899.29,
    "open_n": 17,
    "miss_n": 104,
-   "miss_pnl": 112286.73,
+   "miss_pnl": 112292.49,
    "last_ts": 1785408348
   },
   "gkmgkldfmg": {
@@ -3138,7 +3140,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 55,
-   "miss_pnl": 221.74,
+   "miss_pnl": 237.03,
    "last_ts": 1785414639
   },
   "1kto1m": {
@@ -3222,5 +3224,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785416762
+ "updated": 1785417182
 }
