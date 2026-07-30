@@ -2157,21 +2157,6 @@
  ],
  "missed": [
   {
-   "ts": 1785389644,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "48905394170305541744328748582998455459621629534326295447768125812721237965617",
-   "cond": "0xfc6584616ca3ec385e40881bd568fe291713cad93ab95be921f4ba2bf3b456e3",
-   "title": "WTI Crude Oil (WTI) closes above $86 on July 30?",
-   "outcome": "No",
-   "price": 0.68,
-   "stake": 27.26,
-   "reason": "maker bid unfilled (92s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1785381127,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "49096838469319785284977438732691316133406822442318517146017951204646833825601",
@@ -2181,6 +2166,22 @@
    "price": 0.6,
    "stake": 50,
    "reason": "maker bid unfilled (60s)",
+   "status": "sold",
+   "pnl": -0.36,
+   "settled": 1785391164,
+   "name": "0xbadaf319",
+   "exit_price": 0.61
+  },
+  {
+   "ts": 1785389644,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "48905394170305541744328748582998455459621629534326295447768125812721237965617",
+   "cond": "0xfc6584616ca3ec385e40881bd568fe291713cad93ab95be921f4ba2bf3b456e3",
+   "title": "WTI Crude Oil (WTI) closes above $86 on July 30?",
+   "outcome": "No",
+   "price": 0.68,
+   "stake": 27.26,
+   "reason": "maker bid unfilled (92s)",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -3108,7 +3109,7 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 111254.78,
+ "missed_pnl": 111254.42,
  "last_fill": {
   "ts": 1785390847,
   "side": "SELL",
@@ -3125,7 +3126,7 @@
    "open_cost": 891.31,
    "open_n": 16,
    "miss_n": 99,
-   "miss_pnl": 111845.2,
+   "miss_pnl": 111844.84,
    "last_ts": 1785390491
   },
   "gkmgkldfmg": {
@@ -3219,5 +3220,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785390854
+ "updated": 1785391165
 }
