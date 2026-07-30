@@ -1,7 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0x64191db2673044707d67d4537c948e46d7b2ea7e0915d64b966ec35b4d96561c",
     "0xa5dffaf36e4f2a92b3dff87cdeb3b62f0c16c74ddf8acb147c50181962411a82",
     "0xdf70d98f0da4d809df580d7f6c2a25691c1e97f76ff943334faa782b9c42aff5",
     "0x8d41ecfa386cad90d4bca9b3a9343d021cec305b5b7ff2778db8c516f37e08b4",
@@ -5000,7 +4999,8 @@
     "0x6fbc269eefab85eecb58c9471cf2285f6880856baa650ad85d2d5be190a40f3f",
     "0x078dd965203e6a8191f48ccfa2405040310a2386c9ea76cfd397743be629bdcf",
     "0x35b64b6c92ba74944de8f7229398a9e258d0199bf667cfd9a8ac52846717f62b",
-    "0xc7e05c3a72dcd5cfd97c2c1342171284075457c8cd9ac0f017aea0cf17fede46"
+    "0xc7e05c3a72dcd5cfd97c2c1342171284075457c8cd9ac0f017aea0cf17fede46",
+    "0x652e8e532079f4ef514c1a069417961c0c716b4607506ecad4a19f41c6016bc1"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -10636,7 +10636,8 @@
       "69247652735973581341182571044145013027536118239238026605770359361059723046536": 1250,
       "15936256786231936393406572307889188250969935165041173084711910210197660722650": 1236.42,
       "102357232418942179672028130858766408228809563367413802735032151943425338940696": 1500,
-      "30254318320353641204277690542860922564879092609585509463603793724900287946783": 1400
+      "30254318320353641204277690542860922564879092609585509463603793724900287946783": 1400,
+      "86222734336247731664864731734281512829733267574920066804362888057386190851592": 1420.1
     }
   },
   "seed_tokens": {
@@ -20331,29 +20332,14 @@
       "status": "open",
       "exit_price": null,
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "end_ts": 1785542400
     }
   },
   "hwm": 3600.1933566560215,
-  "feed_sig": "2f432b84df3271842020364ef16157f3",
-  "feed_pushed_at": 1785451758.1551332,
+  "feed_sig": "5c6e1eaaa741f780cbd19bda421c0948",
+  "feed_pushed_at": 1785451878.1658988,
   "missed": [
-    {
-      "ts": 1783781525,
-      "wallet": "0x41558102a796ba971c7567cad41c307e59f8fa41",
-      "token": "27632180525380684914321906274705941073296172029015605436272337722097971624328",
-      "cond": "0x6d1bc898781da9b481d170cc8fc7915273eb391e466d50164dbc1dbe94efea73",
-      "title": "Mjallby AIF vs. AIK: O/U 2.5",
-      "outcome": "Over",
-      "price": 0.8598,
-      "stake": 96.19,
-      "reason": "not copied in the detection window (reconciled)",
-      "status": "sold",
-      "pnl": 15.28,
-      "settled": 1783789653,
-      "name": "LSB1",
-      "exit_price": 1.0
-    },
     {
       "ts": 1783784707,
       "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -23527,6 +23513,20 @@
       "pnl": null,
       "settled": null,
       "name": "BikesAreTheBikes"
+    },
+    {
+      "ts": 1785452006,
+      "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+      "token": "86222734336247731664864731734281512829733267574920066804362888057386190851592",
+      "cond": "0x121c6b7fe5c7d713741d713b03823d0c152bb4b72e20b84e02840e419773cb36",
+      "title": "LoL: KT Rolster vs Hanwha Life Esports (BO3) - LCK Round 3-4 Legend Group",
+      "outcome": "Hanwha Life Esports",
+      "price": 0.7799,
+      "stake": 53.26,
+      "reason": "maker bid unfilled (115s)",
+      "status": "open",
+      "pnl": null,
+      "settled": null
     }
   ],
   "no_miss_toks": [
@@ -23691,7 +23691,7 @@
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1785418464,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1785409197,
     "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1785451835,
-    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1785451803
+    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1785451890
   },
   "boot": {
     "id": "016d484f75b6",
@@ -23708,7 +23708,7 @@
   "paper_maker": [],
   "maker_stats": {
     "fills": 107,
-    "misses": 52
+    "misses": 53
   },
   "ignored_exits": [
     {

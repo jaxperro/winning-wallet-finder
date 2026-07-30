@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785451869,
+ "updated": 1785452012,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 484.28,
@@ -48,8 +48,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 11,
-   "miss_pnl": -320.41,
+   "miss_n": 10,
+   "miss_pnl": -335.69,
    "last_ts": 1783867043
   },
   "AIcAIc": {
@@ -78,7 +78,7 @@
    "wins": 2,
    "open_cost": 109.38,
    "open_n": 2,
-   "miss_n": 3,
+   "miss_n": 4,
    "miss_pnl": 90.82,
    "last_ts": 1785451822
   },
@@ -88,8 +88,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 9,
-   "miss_pnl": 212.34,
+   "miss_n": 10,
+   "miss_pnl": 227.62,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -6156,6 +6156,21 @@
  ],
  "missed": [
   {
+   "ts": 1785452006,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "86222734336247731664864731734281512829733267574920066804362888057386190851592",
+   "cond": "0x121c6b7fe5c7d713741d713b03823d0c152bb4b72e20b84e02840e419773cb36",
+   "title": "LoL: KT Rolster vs Hanwha Life Esports (BO3) - LCK Round 3-4 Legend Group",
+   "outcome": "Hanwha Life Esports",
+   "price": 0.7799,
+   "stake": 53.26,
+   "reason": "maker bid unfilled (115s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "JuiceFarm"
+  },
+  {
    "ts": 1785398908,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "77727904615166835640016150025711177975585784491730986147831526541450550131688",
@@ -9391,7 +9406,7 @@
    "status": "sold",
    "pnl": 15.28,
    "settled": 1783789653,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_price": 1.0
   },
   {
