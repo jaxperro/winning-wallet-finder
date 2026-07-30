@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 53.76,
+ "stake": 53.75,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1271.81,
- "deployed": 1415.97,
+ "cash": 1235.88,
+ "deployed": 1451.73,
  "reserve": 0.0,
- "realized": 1687.75,
+ "realized": 1687.57,
  "adjustments": 0.03,
- "ledger_drift": -0.04,
- "open_count": 25,
- "fees_paid": 421.03,
+ "ledger_drift": -0.05,
+ "open_count": 26,
+ "fees_paid": 421.2,
  "fee_rate": 0.03,
  "lag": {
-  "n": 326,
-  "n24": 32,
+  "n": 327,
+  "n24": 33,
   "basis": "24h",
-  "avg_s": 6.8,
+  "avg_s": 7.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "73822848958833581920509853766928409035356407100619064692171326316721805299603",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "NATO x Russia military clash by August 31, 2026?",
+   "their_price": 0.835,
+   "my_price": 0.835,
+   "slippage_pct": 0.0,
+   "lag_s": 7.6,
+   "shares": 42.82,
+   "cost": 35.75,
+   "fee": 0.18,
+   "opened": 1785389280,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "17480166814702290785530852378381854525201787151638025511297996406280125724476",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2131,27 +2151,6 @@
    "exit_price": 1.0,
    "pnl": 73.69,
    "settled": 1784649072
-  },
-  {
-   "token": "41408557405269649927496726924900111227532817303569129089131556212120131473157",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Team Lynx",
-   "title": "Dota 2: Team Lynx vs Spirit Academy - Game 1 Winner",
-   "their_price": 0.45,
-   "my_price": 0.45,
-   "slippage_pct": 0.0,
-   "lag_s": 6.4,
-   "shares": 111.78,
-   "cost": 50.3,
-   "fee": 0.83,
-   "opened": 1784643402,
-   "status": "closed",
-   "exit_price": 0.6438,
-   "pnl": 20.83,
-   "settled": 1784643569,
-   "sold_shares": 111.78,
-   "sold_proceeds": 71.96
   }
  ],
  "missed": [
@@ -3109,23 +3108,23 @@
  ],
  "missed_pnl": 111255.27,
  "last_fill": {
-  "ts": 1785388971,
-  "side": "SELL",
-  "price": 0.974,
-  "shares": 1.22,
-  "title": "Israel x Iran ceasefire continues through July 30?",
-  "outcome": "Yes"
+  "ts": 1785389287,
+  "side": "BUY",
+  "price": 0.835,
+  "shares": 42.82,
+  "title": "NATO x Russia military clash by August 31, 2026?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 480.99,
    "n": 76,
    "wins": 25,
-   "open_cost": 891.31,
-   "open_n": 16,
+   "open_cost": 927.06,
+   "open_n": 17,
    "miss_n": 98,
    "miss_pnl": 111845.2,
-   "last_ts": 1785373147
+   "last_ts": 1785389280
   },
   "gkmgkldfmg": {
    "realized": 906.63,
@@ -3218,5 +3217,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785388977
+ "updated": 1785389314
 }
