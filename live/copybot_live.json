@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 56.04,
+ "stake": 56.11,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1355.39,
+ "cash": 1358.7,
  "deployed": 1446.6,
  "reserve": 0.0,
- "realized": 1801.96,
+ "realized": 1805.27,
  "adjustments": 0.03,
- "ledger_drift": -0.06,
+ "ledger_drift": -0.05,
  "open_count": 28,
- "fees_paid": 427.57,
+ "fees_paid": 427.67,
  "fee_rate": 0.03,
  "lag": {
-  "n": 334,
-  "n24": 35,
+  "n": 335,
+  "n24": 36,
   "basis": "24h",
-  "avg_s": 5.9,
+  "avg_s": 6.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "49689086638781123153263269337649600392273111259209599236468134989844879829316",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "1win",
+   "title": "Dota 2: Nigma Galaxy vs 1win - Game 2 Winner",
+   "their_price": 0.9427,
+   "my_price": 0.9427,
+   "slippage_pct": 0.0,
+   "lag_s": 7.3,
+   "shares": 59.44,
+   "cost": 56.04,
+   "fee": 0.1,
+   "opened": 1785411832,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 3.3,
+   "settled": 1785411917,
+   "end_ts": 1785369600,
+   "sold_shares": 59.44,
+   "sold_proceeds": 59.44
+  },
   {
    "token": "29186422049166680837602032454275007649609188074464534125827790682823121106548",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2140,25 +2162,6 @@
    "sold_shares": 156.84,
    "sold_proceeds": 139.44,
    "end_ts": null
-  },
-  {
-   "token": "56895600526342043824967043463285146349388358932785516761025080000931732654952",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Under",
-   "title": "Michelsen vs. Gea: Set 1 Games O/U 10.5",
-   "their_price": 0.51,
-   "my_price": 0.5,
-   "slippage_pct": -0.0196,
-   "lag_s": 25.8,
-   "shares": 22.66,
-   "cost": 11.33,
-   "fee": 0.17,
-   "opened": 1784675418,
-   "status": "refund",
-   "exit_price": 0.5,
-   "pnl": -0.17,
-   "settled": 1784679219
   }
  ],
  "missed": [
@@ -3116,12 +3119,12 @@
  ],
  "missed_pnl": 111541.64,
  "last_fill": {
-  "ts": 1785408349,
-  "side": "BUY",
-  "price": 0.83,
-  "shares": 9.61,
-  "title": "Will Silver (XAGUSD) hit (LOW) $55 Week of July 27 2026?",
-  "outcome": "No"
+  "ts": 1785411910,
+  "side": "SELL",
+  "price": 1.0,
+  "shares": 59.44,
+  "title": "Dota 2: Nigma Galaxy vs 1win - Game 2 Winner",
+  "outcome": "1win"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3135,14 +3138,14 @@
    "last_ts": 1785408348
   },
   "gkmgkldfmg": {
-   "realized": 1000.19,
-   "n": 95,
+   "realized": 1003.49,
+   "n": 96,
    "wins": 0,
    "open_cost": 54.1,
    "open_n": 1,
    "miss_n": 54,
    "miss_pnl": 221.74,
-   "last_ts": 1785405535
+   "last_ts": 1785411917
   },
   "1kto1m": {
    "realized": 113.06,
@@ -3225,5 +3228,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785408356
+ "updated": 1785411917
 }
