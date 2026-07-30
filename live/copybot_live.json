@@ -2159,6 +2159,21 @@
  ],
  "missed": [
   {
+   "ts": 1785399884,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "105031123790227090351610621121319179238510007553875150023320472711583933704999",
+   "cond": "0xf2bf04609e7458df56c9bb4b1e051286dea11da1c944bbc1dafbcc6b76904e52",
+   "title": "NATO x Russia military clash by December 31, 2026?",
+   "outcome": "Yes",
+   "price": 0.39,
+   "stake": 54.22,
+   "reason": "maker bid unfilled (105s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785398908,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "77727904615166835640016150025711177975585784491730986147831526541450550131688",
@@ -3093,26 +3108,9 @@
    "settled": 1784925235,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1784727262,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "92050986166401987445069388208414464326154054301377903319727847954822960387891",
-   "cond": "0xd2a295c1c4015ad115574f49bf871f925b6d6967af23d383ba155670c3ece25c",
-   "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $156 Week of July 20 2026?",
-   "outcome": "No",
-   "price": 0.87,
-   "stake": 51.03,
-   "reason": "thin book ($34 within 5c < $50)",
-   "status": "sold",
-   "pnl": 5.84,
-   "settled": 1784925098,
-   "name": "0xbadaf319",
-   "exit_checked": true,
-   "exit_price": 0.9737
   }
  ],
- "missed_pnl": 111670.52,
+ "missed_pnl": 111602.79,
  "last_fill": {
   "ts": 1785398065,
   "side": "SELL",
@@ -3128,7 +3126,7 @@
    "wins": 25,
    "open_cost": 891.31,
    "open_n": 16,
-   "miss_n": 101,
+   "miss_n": 102,
    "miss_pnl": 112286.73,
    "last_ts": 1785390491
   },
@@ -3168,8 +3166,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 15,
-   "miss_pnl": -158.34,
+   "miss_n": 14,
+   "miss_pnl": -226.07,
    "last_ts": 1783867043
   },
   "AIcAIc": {
@@ -3208,8 +3206,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 5,
-   "miss_pnl": 50.27,
+   "miss_n": 6,
+   "miss_pnl": 118.0,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3223,5 +3221,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785398939
+ "updated": 1785399890
 }
