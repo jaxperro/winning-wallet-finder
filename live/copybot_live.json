@@ -2164,6 +2164,21 @@
  ],
  "missed": [
   {
+   "ts": 1785456903,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "38400820373118241582688761399087324153152431599221369317367870141446152567740",
+   "cond": "0x3c1b9e370486b399f6a4c398e0a86cbb75b0e01ae9eb59fc503b62241df18841",
+   "title": "S&P 500 (SPY) closes above $740 on July 31?",
+   "outcome": "Yes",
+   "price": 0.61,
+   "stake": 53.59,
+   "reason": "thin book ($17 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785453599,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "112061967240382599149689205198858360526948984998429264738900923425548076008244",
@@ -3092,25 +3107,9 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785116183,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "16328984566017971835770196682876409647533162437093057559133710618426804960492",
-   "cond": "0x0b0d65e39a6b3a67c9bc4eae0a80a18de26c79a03b2882f42c67f5da637f30c2",
-   "title": "Will South Korea ETF (EWY) hit (HIGH) $166 Week of July 27 2026?",
-   "outcome": "Yes",
-   "price": 0.6281,
-   "stake": 32.13,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 14.57,
-   "settled": 1785118193,
-   "name": "0xbadaf319",
-   "exit_price": 0.9221
   }
  ],
- "missed_pnl": 111612.08,
+ "missed_pnl": 111611.99,
  "last_fill": {
   "ts": 1785455276,
   "side": "SELL",
@@ -3126,7 +3125,7 @@
    "wins": 25,
    "open_cost": 906.23,
    "open_n": 18,
-   "miss_n": 109,
+   "miss_n": 110,
    "miss_pnl": 112313.69,
    "last_ts": 1785442584
   },
@@ -3166,8 +3165,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 9,
-   "miss_pnl": -355.87,
+   "miss_n": 8,
+   "miss_pnl": -355.96,
    "last_ts": 1783867043
   },
   "AIcAIc": {
@@ -3206,8 +3205,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 11,
-   "miss_pnl": 247.8,
+   "miss_n": 12,
+   "miss_pnl": 247.89,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3221,5 +3220,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785455283
+ "updated": 1785456911
 }
