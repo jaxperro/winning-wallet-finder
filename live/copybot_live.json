@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1314.53,
- "deployed": 1365.01,
+ "cash": 1267.13,
+ "deployed": 1412.19,
  "reserve": 0.0,
- "realized": 1679.51,
+ "realized": 1679.28,
  "adjustments": 0.03,
- "ledger_drift": -0.05,
- "open_count": 28,
- "fees_paid": 429.85,
+ "ledger_drift": -0.06,
+ "open_count": 29,
+ "fees_paid": 430.07,
  "fee_rate": 0.03,
  "lag": {
-  "n": 340,
-  "n24": 15,
+  "n": 341,
+  "n24": 16,
   "basis": "24h",
-  "avg_s": 7.3,
+  "avg_s": 6.9,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "83238601971392806337519868379536973256360561854626786157799008219480674006551",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "WTI Crude Oil (WTI) closes above $80 on July 31?",
+   "their_price": 0.84,
+   "my_price": 0.84,
+   "slippage_pct": 0.0,
+   "lag_s": 1.6,
+   "shares": 56.16,
+   "cost": 47.17,
+   "fee": 0.23,
+   "opened": 1785460409,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785456000
+  },
   {
    "token": "102357232418942179672028130858766408228809563367413802735032151943425338940696",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2139,27 +2159,6 @@
    "settled": 1784723139,
    "sold_shares": 232.36,
    "sold_proceeds": 225.88
-  },
-  {
-   "token": "5672952468548015184968602470125350481899055121933384423405096851532324921748",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Team WE",
-   "title": "LoL: Top Esports vs Team WE - Game 1 Winner",
-   "their_price": 0.35,
-   "my_price": 0.34,
-   "slippage_pct": -0.0286,
-   "lag_s": 0.7,
-   "shares": 331.98,
-   "cost": 112.87,
-   "fee": 2.23,
-   "opened": 1784721013,
-   "status": "closed",
-   "exit_price": 0.4027,
-   "pnl": 18.6,
-   "settled": 1784722315,
-   "sold_shares": 331.98,
-   "sold_proceeds": 133.7
   }
  ],
  "missed": [
@@ -3110,23 +3109,23 @@
  ],
  "missed_pnl": 111808.37,
  "last_fill": {
-  "ts": 1785455276,
-  "side": "SELL",
-  "price": 0.98,
-  "shares": 9.5,
-  "title": "Will Silver (XAGUSD) hit (LOW) $55 Week of July 27 2026?",
-  "outcome": "No"
+  "ts": 1785460410,
+  "side": "BUY",
+  "price": 0.84,
+  "shares": 56.16,
+  "title": "WTI Crude Oil (WTI) closes above $80 on July 31?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 484.28,
    "n": 77,
    "wins": 25,
-   "open_cost": 906.23,
-   "open_n": 18,
+   "open_cost": 953.4,
+   "open_n": 19,
    "miss_n": 111,
    "miss_pnl": 112313.69,
-   "last_ts": 1785442584
+   "last_ts": 1785460409
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3219,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785459560
+ "updated": 1785460417
 }
