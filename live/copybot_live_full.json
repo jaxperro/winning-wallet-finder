@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785529436,
+ "updated": 1785529506,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 518.97,
-   "n": 81,
-   "wins": 26,
-   "open_cost": 961.87,
-   "open_n": 20,
+   "realized": 525.84,
+   "n": 82,
+   "wins": 27,
+   "open_cost": 951.37,
+   "open_n": 19,
    "miss_n": 113,
-   "miss_pnl": 112277.35,
-   "last_ts": 1785529424
+   "miss_pnl": 112230.21,
+   "last_ts": 1785529502
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -105,6 +105,28 @@
  },
  "bets": [
   {
+   "token": "68654388570090540693504706309016258592141967889448520850585121976978344249779",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will Microsoft (MSFT) close above $450 on July 31?",
+   "their_price": 0.6,
+   "my_price": 0.6,
+   "slippage_pct": 0.0,
+   "lag_s": 4.2,
+   "shares": 17.5,
+   "cost": 10.5,
+   "fee": 0.126,
+   "opened": 1785504608,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 6.87,
+   "settled": 1785529502,
+   "end_ts": 1785456000,
+   "sold_shares": 1.062122034582557,
+   "sold_proceeds": 1.062122034582557
+  },
+  {
    "token": "66731682772014681185953064174456659922804074645921817840242815858628390435891",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -185,28 +207,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785456000
-  },
-  {
-   "token": "68654388570090540693504706309016258592141967889448520850585121976978344249779",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will Microsoft (MSFT) close above $450 on July 31?",
-   "their_price": 0.6,
-   "my_price": 0.6,
-   "slippage_pct": 0.0,
-   "lag_s": 4.2,
-   "shares": 17.5,
-   "cost": 10.5,
-   "fee": 0.126,
-   "opened": 1785504608,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785456000,
-   "sold_shares": 1.062122034582557,
-   "sold_proceeds": 1.062122034582557
   },
   {
    "token": "69355216620763944290038016217055240184869140983658291063098880395274580074984",
@@ -6374,6 +6374,21 @@
  ],
  "missed": [
   {
+   "ts": 1785505110,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "25526593810196524643796155718642580515954324477358866326703379026943421853087",
+   "cond": "0xc550d430fb66ae9694f620dd61cd2d9b4883f064f2cb27d9f3a2aad57f09ff80",
+   "title": "Microsoft (MSFT) Up or Down on July 31?",
+   "outcome": "Down",
+   "price": 0.3111,
+   "stake": 46.19,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "lost",
+   "pnl": -47.14,
+   "settled": 1785529506,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785456903,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "38400820373118241582688761399087324153152431599221369317367870141446152567740",
@@ -6511,21 +6526,6 @@
    "settled": 1785509241,
    "name": "AIcAIc",
    "exit_checked": true
-  },
-  {
-   "ts": 1785505110,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "25526593810196524643796155718642580515954324477358866326703379026943421853087",
-   "cond": "0xc550d430fb66ae9694f620dd61cd2d9b4883f064f2cb27d9f3a2aad57f09ff80",
-   "title": "Microsoft (MSFT) Up or Down on July 31?",
-   "outcome": "Down",
-   "price": 0.3111,
-   "stake": 46.19,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1785399884,
