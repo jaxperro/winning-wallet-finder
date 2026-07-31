@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785531454,
+ "updated": 1785532140,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 529.3,
@@ -6401,7 +6401,8 @@
    "status": "won",
    "pnl": 33.76,
    "settled": 1785530908,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1785527422,
