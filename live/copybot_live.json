@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 54.16,
+ "stake": 55.13,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1242.79,
- "deployed": 1465.04,
+ "cash": 1315.57,
+ "deployed": 1441.05,
  "reserve": 0.0,
- "realized": 1707.8,
+ "realized": 1756.59,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
  "open_count": 31,
- "fees_paid": 432.39,
+ "fees_paid": 432.48,
  "fee_rate": 0.03,
  "lag": {
   "n": 345,
@@ -3112,11 +3112,11 @@
  ],
  "missed_pnl": 111852.24,
  "last_fill": {
-  "ts": 1785494049,
+  "ts": 1785494171,
   "side": "SELL",
-  "price": 0.94,
-  "shares": 60.85,
-  "title": "Will Revolut's valuation hit (LOW) $75B by December 31?",
+  "price": 0.957,
+  "shares": 76.15,
+  "title": "Will the average monthly Ethereum gas price hit 25 Gwei befo",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3221,5 +3221,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785494077
+ "updated": 1785494171
 }
