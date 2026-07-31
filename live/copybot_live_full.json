@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785504827,
+ "updated": 1785505120,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 513.13,
@@ -8,7 +8,7 @@
    "wins": 25,
    "open_cost": 1015.9,
    "open_n": 21,
-   "miss_n": 111,
+   "miss_n": 113,
    "miss_pnl": 112298.93,
    "last_ts": 1785504768
   },
@@ -6365,6 +6365,36 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785505110,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "114650730184360314712304282318526198157180187083623658761895705210865420589569",
+   "cond": "0xa789796484c53802d0c5929a3435f602d3a09af17c5cb19c861d004a14901c66",
+   "title": "Will Micron (MU) finish week of July 27 above $960?",
+   "outcome": "Yes",
+   "price": 0.2646,
+   "stake": 54.03,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785505110,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "25526593810196524643796155718642580515954324477358866326703379026943421853087",
+   "cond": "0xc550d430fb66ae9694f620dd61cd2d9b4883f064f2cb27d9f3a2aad57f09ff80",
+   "title": "Microsoft (MSFT) Up or Down on July 31?",
+   "outcome": "Down",
+   "price": 0.3111,
+   "stake": 46.19,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785502041,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
