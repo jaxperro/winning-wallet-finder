@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 54.04,
+ "stake": 54.03,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1216.5,
- "deployed": 1485.51,
+ "cash": 1107.79,
+ "deployed": 1593.56,
  "reserve": 0.0,
- "realized": 1701.98,
+ "realized": 1701.32,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 32,
- "fees_paid": 433.51,
+ "open_count": 34,
+ "fees_paid": 434.17,
  "fee_rate": 0.03,
  "lag": {
-  "n": 348,
-  "n24": 10,
+  "n": 352,
+  "n24": 14,
   "basis": "24h",
-  "avg_s": 2.9,
+  "avg_s": 3.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,46 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "66731682772014681185953064174456659922804074645921817840242815858628390435891",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Up",
+   "title": "Meta (META) Up or Down on July 31?",
+   "their_price": 0.9,
+   "my_price": 0.9,
+   "slippage_pct": 0.0,
+   "lag_s": 7.0,
+   "shares": 60.03,
+   "cost": 54.03,
+   "fee": 0.16,
+   "opened": 1785504768,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785456000
+  },
+  {
+   "token": "115635155479667353862665794187637382945087171557088427227495541201629678991249",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Micron (MU) finish week of July 27 above $970?",
+   "their_price": 0.7,
+   "my_price": 0.6959,
+   "slippage_pct": 0.0,
+   "lag_s": 4.2,
+   "shares": 77.64,
+   "cost": 54.03,
+   "fee": 0.49,
+   "opened": 1785504757,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785456000
+  },
   {
    "token": "68654388570090540693504706309016258592141967889448520850585121976978344249779",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2120,48 +2160,6 @@
    "end_ts": 1784851200,
    "sold_shares": 13.44,
    "sold_proceeds": 13.43
-  },
-  {
-   "token": "68354490231292339705788355645447204244217234157276853910593583690623904256055",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Canva's valuation hit (LOW) $39B by July 31?",
-   "their_price": 0.8,
-   "my_price": 0.8,
-   "slippage_pct": 0.0,
-   "lag_s": 6.2,
-   "shares": 8.5,
-   "cost": 6.8,
-   "fee": 0.04,
-   "opened": 1784874168,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785542400
-  },
-  {
-   "token": "80270372288514892122229303181424592994977341771902366596528480848577129708762",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the highest temperature in Hong Kong be 34\u00b0C on July 23?",
-   "their_price": 0.918,
-   "my_price": 0.9266,
-   "slippage_pct": 0.0359,
-   "lag_s": 25.8,
-   "shares": 105.71,
-   "cost": 97.95,
-   "fee": 0.21,
-   "opened": 1784790370,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 3.13,
-   "settled": 1784861800,
-   "sold_shares": 105.41,
-   "sold_proceeds": 101.0,
-   "end_ts": 1784764800
   }
  ],
  "missed": [
@@ -3109,23 +3107,23 @@
  ],
  "missed_pnl": 111788.56,
  "last_fill": {
-  "ts": 1785504612,
+  "ts": 1785504775,
   "side": "BUY",
-  "price": 0.6,
-  "shares": 17.5,
-  "title": "Will Microsoft (MSFT) close above $450 on July 31?",
-  "outcome": "Yes"
+  "price": 0.9,
+  "shares": 60.03,
+  "title": "Meta (META) Up or Down on July 31?",
+  "outcome": "Up"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 513.13,
    "n": 80,
    "wins": 25,
-   "open_cost": 907.85,
-   "open_n": 19,
+   "open_cost": 1015.9,
+   "open_n": 21,
    "miss_n": 111,
    "miss_pnl": 112298.93,
-   "last_ts": 1785504608
+   "last_ts": 1785504768
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3218,5 +3216,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785504612
+ "updated": 1785504827
 }

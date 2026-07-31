@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785504612,
+ "updated": 1785504827,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 513.13,
    "n": 80,
    "wins": 25,
-   "open_cost": 907.85,
-   "open_n": 19,
+   "open_cost": 1015.9,
+   "open_n": 21,
    "miss_n": 111,
    "miss_pnl": 112298.93,
-   "last_ts": 1785504608
+   "last_ts": 1785504768
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -104,6 +104,46 @@
   }
  },
  "bets": [
+  {
+   "token": "66731682772014681185953064174456659922804074645921817840242815858628390435891",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Up",
+   "title": "Meta (META) Up or Down on July 31?",
+   "their_price": 0.9,
+   "my_price": 0.9,
+   "slippage_pct": 0.0,
+   "lag_s": 7.0,
+   "shares": 60.03,
+   "cost": 54.03,
+   "fee": 0.1621,
+   "opened": 1785504768,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785456000
+  },
+  {
+   "token": "115635155479667353862665794187637382945087171557088427227495541201629678991249",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Micron (MU) finish week of July 27 above $970?",
+   "their_price": 0.7,
+   "my_price": 0.6958552260768297,
+   "slippage_pct": 0.0,
+   "lag_s": 4.2,
+   "shares": 77.64,
+   "cost": 54.02619975260506,
+   "fee": 0.4928,
+   "opened": 1785504757,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785456000
+  },
   {
    "token": "68654388570090540693504706309016258592141967889448520850585121976978344249779",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
