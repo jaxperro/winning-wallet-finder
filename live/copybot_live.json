@@ -5,14 +5,14 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1569.66,
- "deployed": 1230.15,
+ "cash": 1572.15,
+ "deployed": 1228.0,
  "reserve": 0.0,
- "realized": 1799.78,
+ "realized": 1800.12,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
  "open_count": 25,
- "fees_paid": 434.24,
+ "fees_paid": 434.25,
  "fee_rate": 0.03,
  "lag": {
   "n": 352,
@@ -3120,12 +3120,12 @@
  ],
  "missed_pnl": 111832.21,
  "last_fill": {
-  "ts": 1785519401,
+  "ts": 1785534806,
   "side": "SELL",
-  "price": 1.0,
-  "shares": 87.83,
-  "title": "ESTAC Troyes vs. FC Goal: Both Teams to Score in First Half",
-  "outcome": "Yes"
+  "price": 0.94,
+  "shares": 2.65,
+  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3229,5 +3229,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785534230
+ "updated": 1785534812
 }
