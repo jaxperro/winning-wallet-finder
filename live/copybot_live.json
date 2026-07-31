@@ -5,8 +5,8 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1227.08,
- "deployed": 1475.05,
+ "cash": 1227.12,
+ "deployed": 1475.01,
  "reserve": 0.0,
  "realized": 1702.1,
  "adjustments": 0.03,
@@ -549,8 +549,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785369600,
-   "sold_shares": 61.35,
-   "sold_proceeds": 59.66
+   "sold_shares": 61.39,
+   "sold_proceeds": 59.7
   },
   {
    "token": "54815727746640547967672254072133541716883461619401150888777316620441172319772",
@@ -3109,12 +3109,12 @@
  ],
  "missed_pnl": 111788.56,
  "last_fill": {
-  "ts": 1785502164,
-  "side": "BUY",
-  "price": 0.85,
-  "shares": 63.58,
-  "title": "ESTAC Troyes vs. FC Goal: O/U 5.5",
-  "outcome": "Over"
+  "ts": 1785503797,
+  "side": "SELL",
+  "price": 0.997,
+  "shares": 0.04,
+  "title": "Israel x Iran ceasefire continues through July 30?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3218,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785502165
+ "updated": 1785503797
 }
