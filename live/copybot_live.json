@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 54.03,
+ "stake": 54.1,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1107.79,
- "deployed": 1593.56,
+ "cash": 1164.17,
+ "deployed": 1540.76,
  "reserve": 0.0,
- "realized": 1701.32,
+ "realized": 1704.9,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
  "open_count": 34,
- "fees_paid": 434.17,
+ "fees_paid": 434.24,
  "fee_rate": 0.03,
  "lag": {
   "n": 352,
@@ -232,7 +232,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1785542400
+   "end_ts": 1785542400,
+   "sold_shares": 58.93,
+   "sold_proceeds": 56.38
   },
   {
    "token": "83238601971392806337519868379536973256360561854626786157799008219480674006551",
@@ -3105,12 +3107,12 @@
  ],
  "missed_pnl": 111885.3,
  "last_fill": {
-  "ts": 1785504775,
-  "side": "BUY",
-  "price": 0.9,
-  "shares": 60.03,
-  "title": "Meta (META) Up or Down on July 31?",
-  "outcome": "Up"
+  "ts": 1785505412,
+  "side": "SELL",
+  "price": 0.958,
+  "shares": 58.93,
+  "title": "Will Amazon.com, Inc. (AMZN) hit (HIGH) $280 in July?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3214,5 +3216,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785505120
+ "updated": 1785505421
 }
