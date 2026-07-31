@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785532140,
+ "updated": 1785534230,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 529.3,
-   "n": 86,
-   "wins": 30,
-   "open_cost": 796.03,
-   "open_n": 15,
+   "realized": 552.42,
+   "n": 87,
+   "wins": 31,
+   "open_cost": 742.01,
+   "open_n": 14,
    "miss_n": 113,
-   "miss_pnl": 112260.97,
-   "last_ts": 1785530906
+   "miss_pnl": 112262.27,
+   "last_ts": 1785534227
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "115635155479667353862665794187637382945087171557088427227495541201629678991249",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Micron (MU) finish week of July 27 above $970?",
+   "their_price": 0.7,
+   "my_price": 0.6958552260768297,
+   "slippage_pct": 0.0,
+   "lag_s": 4.2,
+   "shares": 77.64,
+   "cost": 54.02619975260506,
+   "fee": 0.4928,
+   "opened": 1785504757,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 23.12,
+   "settled": 1785534227,
+   "end_ts": 1785456000
+  },
   {
    "token": "36265250796161854432369131892129450974997795066135083465560318874244070874973",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -270,26 +290,6 @@
    "exit_price": 1.0,
    "pnl": 9.3,
    "settled": 1785511817,
-   "end_ts": 1785456000
-  },
-  {
-   "token": "115635155479667353862665794187637382945087171557088427227495541201629678991249",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Micron (MU) finish week of July 27 above $970?",
-   "their_price": 0.7,
-   "my_price": 0.6958552260768297,
-   "slippage_pct": 0.0,
-   "lag_s": 4.2,
-   "shares": 77.64,
-   "cost": 54.02619975260506,
-   "fee": 0.4928,
-   "opened": 1785504757,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
    "end_ts": 1785456000
   },
   {
@@ -6374,6 +6374,22 @@
  ],
  "missed": [
   {
+   "ts": 1785356857,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "82740535108653012552624203462371653094102041666491123851481106526593652328066",
+   "cond": "0x66277180ae51efaa69652e681ab08ca9c1e739828feb739a1899ebacc749ff4b",
+   "title": "Will Tesla, Inc. (TSLA) hit (HIGH) $337.50 Week of July 27 2026?",
+   "outcome": "No",
+   "price": 0.88,
+   "stake": 45,
+   "reason": "thin book ($32 within 5c < $50)",
+   "status": "sold",
+   "pnl": 1.3,
+   "settled": 1785534160,
+   "name": "0xbadaf319",
+   "exit_price": 0.9111
+  },
+  {
    "ts": 1785531442,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "51783880760599120440014289525159847949469877325479084384177696513850906603472",
@@ -7125,21 +7141,6 @@
    "settled": 1785363161,
    "name": "0xbadaf319",
    "exit_price": 0.9021
-  },
-  {
-   "ts": 1785356857,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "82740535108653012552624203462371653094102041666491123851481106526593652328066",
-   "cond": "0x66277180ae51efaa69652e681ab08ca9c1e739828feb739a1899ebacc749ff4b",
-   "title": "Will Tesla, Inc. (TSLA) hit (HIGH) $337.50 Week of July 27 2026?",
-   "outcome": "No",
-   "price": 0.88,
-   "stake": 45,
-   "reason": "thin book ($32 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784898753,
