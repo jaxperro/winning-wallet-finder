@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 54.1,
+ "stake": 54.16,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1164.17,
- "deployed": 1540.76,
+ "cash": 1170.13,
+ "deployed": 1537.72,
  "reserve": 0.0,
- "realized": 1704.9,
+ "realized": 1707.82,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
  "open_count": 34,
@@ -672,7 +672,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1788220800
+   "end_ts": 1788220800,
+   "sold_shares": 6.09,
+   "sold_proceeds": 5.96
   },
   {
    "token": "61786389752515367835821565534386371514405052384932121340794230250818428934092",
@@ -3107,11 +3109,11 @@
  ],
  "missed_pnl": 111885.3,
  "last_fill": {
-  "ts": 1785505412,
+  "ts": 1785505694,
   "side": "SELL",
-  "price": 0.958,
-  "shares": 58.93,
-  "title": "Will Amazon.com, Inc. (AMZN) hit (HIGH) $280 in July?",
+  "price": 0.98,
+  "shares": 6.09,
+  "title": "Will Gold (XAUUSD) hit (LOW) $3,600 in August?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3216,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785505421
+ "updated": 1785505703
 }
