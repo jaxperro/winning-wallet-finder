@@ -20643,7 +20643,7 @@
   },
   "hwm": 3600.1933566560215,
   "feed_sig": "58fbd64ba3c8d4c08c06f6cafe3bcb17",
-  "feed_pushed_at": 1785529436.7659829,
+  "feed_pushed_at": 1785529574.3154666,
   "missed": [
     {
       "ts": 1783856662,
@@ -23649,9 +23649,9 @@
       "price": 0.2999,
       "stake": 27.64,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "pnl": -28.22,
+      "settled": 1785529710,
       "name": "0xbadaf319"
     },
     {

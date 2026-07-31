@@ -2172,6 +2172,21 @@
  ],
  "missed": [
   {
+   "ts": 1785457799,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "84095995837321901108525598810643779965340385584800089874924016820857675236278",
+   "cond": "0x46ae11da706c5c9de73aaf87179cf8c2cf373f137866820e74220292d5b232fa",
+   "title": "SPY (SPY) Up or Down on July 31?",
+   "outcome": "Down",
+   "price": 0.2999,
+   "stake": 27.64,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "lost",
+   "pnl": -28.22,
+   "settled": 1785529710,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785505110,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "25526593810196524643796155718642580515954324477358866326703379026943421853087",
@@ -2370,21 +2385,6 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1785457799,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "84095995837321901108525598810643779965340385584800089874924016820857675236278",
-   "cond": "0x46ae11da706c5c9de73aaf87179cf8c2cf373f137866820e74220292d5b232fa",
-   "title": "SPY (SPY) Up or Down on July 31?",
-   "outcome": "Down",
-   "price": 0.2999,
-   "stake": 27.64,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1785453599,
@@ -3112,7 +3112,7 @@
    "exit_price": 0.5779
   }
  ],
- "missed_pnl": 111697.46,
+ "missed_pnl": 111669.24,
  "last_fill": {
   "ts": 1785519401,
   "side": "SELL",
@@ -3129,7 +3129,7 @@
    "open_cost": 951.37,
    "open_n": 19,
    "miss_n": 113,
-   "miss_pnl": 112230.21,
+   "miss_pnl": 112201.99,
    "last_ts": 1785529502
   },
   "gkmgkldfmg": {
@@ -3223,5 +3223,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785529506
+ "updated": 1785529711
 }
