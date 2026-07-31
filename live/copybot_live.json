@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1315.57,
- "deployed": 1441.05,
+ "cash": 1321.54,
+ "deployed": 1435.13,
  "reserve": 0.0,
- "realized": 1756.59,
+ "realized": 1756.64,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 31,
- "fees_paid": 432.48,
+ "open_count": 30,
+ "fees_paid": 432.49,
  "fee_rate": 0.03,
  "lag": {
   "n": 345,
-  "n24": 12,
+  "n24": 11,
   "basis": "24h",
-  "avg_s": 4.1,
+  "avg_s": 6.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "34320045222277936713720830397426891082987734367890243003396143984338989258132",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Revolut's valuation hit (LOW) $75B by December 31?",
+   "their_price": 0.93,
+   "my_price": 0.93,
+   "slippage_pct": 0.0,
+   "lag_s": 0.4,
+   "shares": 67.22,
+   "cost": 62.51,
+   "fee": 0.13,
+   "opened": 1785345581,
+   "status": "closed",
+   "exit_price": 0.9383,
+   "pnl": 0.43,
+   "settled": 1785494769,
+   "end_ts": 1798761600,
+   "sold_shares": 67.22,
+   "sold_proceeds": 63.07
+  },
   {
    "token": "64268764042079970141370201979497971145194836965078827125217869938686952808386",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -697,28 +719,6 @@
    "end_ts": 1788134400,
    "sold_shares": 129.28,
    "sold_proceeds": 125.26
-  },
-  {
-   "token": "34320045222277936713720830397426891082987734367890243003396143984338989258132",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Revolut's valuation hit (LOW) $75B by December 31?",
-   "their_price": 0.93,
-   "my_price": 0.93,
-   "slippage_pct": 0.0,
-   "lag_s": 0.4,
-   "shares": 67.22,
-   "cost": 62.51,
-   "fee": 0.13,
-   "opened": 1785345581,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1798761600,
-   "sold_shares": 60.85,
-   "sold_proceeds": 57.1
   },
   {
    "token": "18336686533395239035817826518946179380426460262862186300738403852712569444780",
@@ -2167,6 +2167,22 @@
  ],
  "missed": [
   {
+   "ts": 1785399884,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "105031123790227090351610621121319179238510007553875150023320472711583933704999",
+   "cond": "0xf2bf04609e7458df56c9bb4b1e051286dea11da1c944bbc1dafbcc6b76904e52",
+   "title": "NATO x Russia military clash by December 31, 2026?",
+   "outcome": "Yes",
+   "price": 0.39,
+   "stake": 54.22,
+   "reason": "maker bid unfilled (105s)",
+   "status": "sold",
+   "pnl": -14.76,
+   "settled": 1785494766,
+   "name": "0xbadaf319",
+   "exit_price": 0.2972
+  },
+  {
    "ts": 1785490613,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "58548018851175151695677252161875555791453124930015531332114582862335177135998",
@@ -2536,21 +2552,6 @@
    "settled": 1785403179,
    "name": "1kto1m",
    "exit_checked": true
-  },
-  {
-   "ts": 1785399884,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "105031123790227090351610621121319179238510007553875150023320472711583933704999",
-   "cond": "0xf2bf04609e7458df56c9bb4b1e051286dea11da1c944bbc1dafbcc6b76904e52",
-   "title": "NATO x Russia military clash by December 31, 2026?",
-   "outcome": "Yes",
-   "price": 0.39,
-   "stake": 54.22,
-   "reason": "maker bid unfilled (105s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1785319393,
@@ -3110,25 +3111,25 @@
    "exit_price": 0.7
   }
  ],
- "missed_pnl": 111852.24,
+ "missed_pnl": 111837.48,
  "last_fill": {
-  "ts": 1785494171,
+  "ts": 1785494769,
   "side": "SELL",
-  "price": 0.957,
-  "shares": 76.15,
-  "title": "Will the average monthly Ethereum gas price hit 25 Gwei befo",
+  "price": 0.94,
+  "shares": 6.37,
+  "title": "Will Revolut's valuation hit (LOW) $75B by December 31?",
   "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 512.7,
-   "n": 79,
+   "realized": 513.13,
+   "n": 80,
    "wins": 25,
-   "open_cost": 959.86,
-   "open_n": 19,
+   "open_cost": 897.35,
+   "open_n": 18,
    "miss_n": 111,
-   "miss_pnl": 112313.69,
-   "last_ts": 1785488258
+   "miss_pnl": 112298.93,
+   "last_ts": 1785494769
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3221,5 +3222,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785494171
+ "updated": 1785494769
 }
