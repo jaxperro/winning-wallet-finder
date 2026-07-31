@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 53.84,
+ "stake": 54.08,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1136.84,
- "deployed": 1555.17,
+ "cash": 1175.76,
+ "deployed": 1528.45,
  "reserve": 0.0,
- "realized": 1691.98,
+ "realized": 1704.18,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
  "open_count": 32,
- "fees_paid": 432.17,
+ "fees_paid": 432.26,
  "fee_rate": 0.03,
  "lag": {
   "n": 345,
@@ -131,8 +131,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1830211200,
-   "sold_shares": 31.81,
-   "sold_proceeds": 30.17
+   "sold_shares": 74.22,
+   "sold_proceeds": 69.1
   },
   {
    "token": "108571806153453077888243294663984245780177684183406082076002016448584873901936",
@@ -3111,10 +3111,10 @@
  ],
  "missed_pnl": 111807.56,
  "last_fill": {
-  "ts": 1785487299,
+  "ts": 1785487951,
   "side": "SELL",
-  "price": 0.95,
-  "shares": 31.81,
+  "price": 0.92,
+  "shares": 42.41,
   "title": "Will Bloomberg IPO by March 31, 2027?",
   "outcome": "No"
  },
@@ -3220,5 +3220,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785487307
+ "updated": 1785487960
 }
