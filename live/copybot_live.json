@@ -2164,6 +2164,21 @@
  ],
  "missed": [
   {
+   "ts": 1785457799,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "84095995837321901108525598810643779965340385584800089874924016820857675236278",
+   "cond": "0x46ae11da706c5c9de73aaf87179cf8c2cf373f137866820e74220292d5b232fa",
+   "title": "SPY (SPY) Up or Down on July 31?",
+   "outcome": "Down",
+   "price": 0.2999,
+   "stake": 27.64,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785456903,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "38400820373118241582688761399087324153152431599221369317367870141446152567740",
@@ -3092,24 +3107,9 @@
    "settled": 1785160376,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1785128135,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "45008911945219735557521805884729456911272112830419157569734797577265875509979",
-   "cond": "0x44a785ee8973526fd587f902739da9579f29b2326a77d0f2040e480ecc6263c7",
-   "title": "Will Predict.fun launch a token by September 30, 2027?",
-   "outcome": "Yes",
-   "price": 0.5548,
-   "stake": 31.16,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 111611.99,
+ "missed_pnl": 111708.96,
  "last_fill": {
   "ts": 1785455276,
   "side": "SELL",
@@ -3125,7 +3125,7 @@
    "wins": 25,
    "open_cost": 906.23,
    "open_n": 18,
-   "miss_n": 110,
+   "miss_n": 111,
    "miss_pnl": 112313.69,
    "last_ts": 1785442584
   },
@@ -3165,8 +3165,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 8,
-   "miss_pnl": -355.96,
+   "miss_n": 7,
+   "miss_pnl": -258.99,
    "last_ts": 1783867043
   },
   "AIcAIc": {
@@ -3205,8 +3205,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 12,
-   "miss_pnl": 247.89,
+   "miss_n": 13,
+   "miss_pnl": 150.92,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3220,5 +3220,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785456911
+ "updated": 1785457807
 }
