@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785500529,
+ "updated": 1785500671,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 513.13,
@@ -36,11 +36,11 @@
    "realized": 191.83,
    "n": 10,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 39.52,
+   "open_n": 1,
    "miss_n": 7,
    "miss_pnl": 348.47,
-   "last_ts": 1785378441
+   "last_ts": 1785500666
   },
   "LSB1": {
    "realized": -397.16,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "98864892241165634034845879919226813719761907293882249061978686663075404066718",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Yes",
+   "title": "ESTAC Troyes vs. FC Goal: Both Teams to Score in First Half",
+   "their_price": 0.45,
+   "my_price": 0.45,
+   "slippage_pct": 0.0,
+   "lag_s": 5.0,
+   "shares": 87.83,
+   "cost": 39.52,
+   "fee": 0.6521,
+   "opened": 1785500666,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785456000
+  },
   {
    "token": "69355216620763944290038016217055240184869140983658291063098880395274580074984",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
