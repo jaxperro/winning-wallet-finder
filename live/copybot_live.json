@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 55.32,
+ "stake": 55.44,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1322.61,
- "deployed": 1443.51,
+ "cash": 1382.64,
+ "deployed": 1389.49,
  "reserve": 0.0,
- "realized": 1766.09,
+ "realized": 1772.09,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 32,
+ "open_count": 31,
  "fees_paid": 434.24,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "66731682772014681185953064174456659922804074645921817840242815858628390435891",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Up",
+   "title": "Meta (META) Up or Down on July 31?",
+   "their_price": 0.9,
+   "my_price": 0.9,
+   "slippage_pct": 0.0,
+   "lag_s": 7.0,
+   "shares": 60.03,
+   "cost": 54.03,
+   "fee": 0.16,
+   "opened": 1785504768,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 5.84,
+   "settled": 1785529424,
+   "end_ts": 1785456000
+  },
   {
    "token": "98864892241165634034845879919226813719761907293882249061978686663075404066718",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -90,26 +110,6 @@
    "exit_price": 1.0,
    "pnl": 9.3,
    "settled": 1785511817,
-   "end_ts": 1785456000
-  },
-  {
-   "token": "66731682772014681185953064174456659922804074645921817840242815858628390435891",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Up",
-   "title": "Meta (META) Up or Down on July 31?",
-   "their_price": 0.9,
-   "my_price": 0.9,
-   "slippage_pct": 0.0,
-   "lag_s": 7.0,
-   "shares": 60.03,
-   "cost": 54.03,
-   "fee": 0.16,
-   "opened": 1785504768,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
    "end_ts": 1785456000
   },
   {
@@ -2172,6 +2172,36 @@
  ],
  "missed": [
   {
+   "ts": 1785456903,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "38400820373118241582688761399087324153152431599221369317367870141446152567740",
+   "cond": "0x3c1b9e370486b399f6a4c398e0a86cbb75b0e01ae9eb59fc503b62241df18841",
+   "title": "S&P 500 (SPY) closes above $740 on July 31?",
+   "outcome": "Yes",
+   "price": 0.61,
+   "stake": 53.59,
+   "reason": "thin book ($17 within 5c < $50)",
+   "status": "won",
+   "pnl": 33.64,
+   "settled": 1785529428,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785505110,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "114650730184360314712304282318526198157180187083623658761895705210865420589569",
+   "cond": "0xa789796484c53802d0c5929a3435f602d3a09af17c5cb19c861d004a14901c66",
+   "title": "Will Micron (MU) finish week of July 27 above $960?",
+   "outcome": "Yes",
+   "price": 0.2646,
+   "stake": 54.03,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "lost",
+   "pnl": -55.22,
+   "settled": 1785529428,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785529154,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "39652532623602170846456682951463932352134896182641898905432425437612057868317",
@@ -2283,21 +2313,6 @@
   {
    "ts": 1785505110,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "114650730184360314712304282318526198157180187083623658761895705210865420589569",
-   "cond": "0xa789796484c53802d0c5929a3435f602d3a09af17c5cb19c861d004a14901c66",
-   "title": "Will Micron (MU) finish week of July 27 above $960?",
-   "outcome": "Yes",
-   "price": 0.2646,
-   "stake": 54.03,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785505110,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "25526593810196524643796155718642580515954324477358866326703379026943421853087",
    "cond": "0xc550d430fb66ae9694f620dd61cd2d9b4883f064f2cb27d9f3a2aad57f09ff80",
    "title": "Microsoft (MSFT) Up or Down on July 31?",
@@ -2366,21 +2381,6 @@
    "price": 0.2999,
    "stake": 27.64,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785456903,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "38400820373118241582688761399087324153152431599221369317367870141446152567740",
-   "cond": "0x3c1b9e370486b399f6a4c398e0a86cbb75b0e01ae9eb59fc503b62241df18841",
-   "title": "S&P 500 (SPY) closes above $740 on July 31?",
-   "outcome": "Yes",
-   "price": 0.61,
-   "stake": 53.59,
-   "reason": "thin book ($17 within 5c < $50)",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -3112,7 +3112,7 @@
    "exit_price": 0.5779
   }
  ],
- "missed_pnl": 111766.18,
+ "missed_pnl": 111744.6,
  "last_fill": {
   "ts": 1785519401,
   "side": "SELL",
@@ -3123,14 +3123,14 @@
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 513.13,
-   "n": 80,
-   "wins": 25,
-   "open_cost": 1015.9,
-   "open_n": 21,
+   "realized": 518.97,
+   "n": 81,
+   "wins": 26,
+   "open_cost": 961.87,
+   "open_n": 20,
    "miss_n": 113,
-   "miss_pnl": 112298.93,
-   "last_ts": 1785504768
+   "miss_pnl": 112277.35,
+   "last_ts": 1785529424
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3223,5 +3223,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785529154
+ "updated": 1785529436
 }
