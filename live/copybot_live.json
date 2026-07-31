@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 56.08,
+ "stake": 56.25,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1588.96,
- "deployed": 1215.05,
+ "cash": 1606.42,
+ "deployed": 1205.95,
  "reserve": 0.0,
- "realized": 1803.98,
+ "realized": 1812.34,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 23,
- "fees_paid": 434.25,
+ "open_count": 22,
+ "fees_paid": 434.27,
  "fee_rate": 0.03,
  "lag": {
   "n": 352,
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "98251225144804978202460241491785897955759287546023379403187647333812007726510",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Gold (XAUUSD) hit (LOW) $3,600 in August?",
+   "their_price": 0.5,
+   "my_price": 0.5,
+   "slippage_pct": 0.0,
+   "lag_s": 5.6,
+   "shares": 24.3,
+   "cost": 12.15,
+   "fee": 0.18,
+   "opened": 1785373147,
+   "status": "closed",
+   "exit_price": 0.964,
+   "pnl": 11.09,
+   "settled": 1785541229,
+   "end_ts": 1788220800,
+   "sold_shares": 24.3,
+   "sold_proceeds": 23.43
+  },
   {
    "token": "29186422049166680837602032454275007649609188074464534125827790682823121106548",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -721,28 +743,6 @@
    "pnl": -130.11,
    "settled": 1785373149,
    "end_ts": 1785369600
-  },
-  {
-   "token": "98251225144804978202460241491785897955759287546023379403187647333812007726510",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Gold (XAUUSD) hit (LOW) $3,600 in August?",
-   "their_price": 0.5,
-   "my_price": 0.5,
-   "slippage_pct": 0.0,
-   "lag_s": 5.6,
-   "shares": 24.3,
-   "cost": 12.15,
-   "fee": 0.18,
-   "opened": 1785373147,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788220800,
-   "sold_shares": 6.09,
-   "sold_proceeds": 5.96
   },
   {
    "token": "61786389752515367835821565534386371514405052384932121340794230250818428934092",
@@ -3119,23 +3119,23 @@
  ],
  "missed_pnl": 111772.93,
  "last_fill": {
-  "ts": 1785534806,
+  "ts": 1785541223,
   "side": "SELL",
-  "price": 0.94,
-  "shares": 2.65,
-  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+  "price": 0.96,
+  "shares": 18.21,
+  "title": "Will Gold (XAUUSD) hit (LOW) $3,600 in August?",
   "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 560.24,
-   "n": 89,
+   "realized": 571.33,
+   "n": 90,
    "wins": 33,
-   "open_cost": 711.57,
-   "open_n": 12,
+   "open_cost": 699.42,
+   "open_n": 11,
    "miss_n": 113,
    "miss_pnl": 112262.27,
-   "last_ts": 1785539367
+   "last_ts": 1785541229
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3228,5 +3228,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785540197
+ "updated": 1785541229
 }
