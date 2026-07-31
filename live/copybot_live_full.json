@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785534812,
+ "updated": 1785536038,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 552.42,
@@ -68,7 +68,7 @@
    "wins": 2,
    "open_cost": 921.74,
    "open_n": 10,
-   "miss_n": 35,
+   "miss_n": 36,
    "miss_pnl": -646.17,
    "last_ts": 1785473555
   },
@@ -6373,6 +6373,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785536031,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "89213299320340519312609800070963866900731006421290655419739582074858285792863",
+   "cond": "0xc1556ecbe613e403dfb9e38bf1b25a8aee2aa1687f2b343bc896dd2c9763ed74",
+   "title": "Israel x Iran ceasefire continues through August 31?",
+   "outcome": "No",
+   "price": 0.51,
+   "stake": 56.0,
+   "reason": "maker bid unfilled (102s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1785356857,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
