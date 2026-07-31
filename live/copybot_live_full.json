@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785529021,
+ "updated": 1785529154,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 513.13,
@@ -68,7 +68,7 @@
    "wins": 2,
    "open_cost": 921.74,
    "open_n": 10,
-   "miss_n": 33,
+   "miss_n": 34,
    "miss_pnl": -646.17,
    "last_ts": 1785473555
   },
@@ -6373,6 +6373,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785529154,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "39652532623602170846456682951463932352134896182641898905432425437612057868317",
+   "cond": "0x26a6c7e4a905dfc13f23c44a8e41d0b96ad60569ef49869c46c237dfd8f3c003",
+   "title": "Will Darline Graham Nordone be the new republican nominee for Senate in South Carolina?",
+   "outcome": "No",
+   "price": 0.395,
+   "stake": 55.32,
+   "reason": "maker bid unfilled (75s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1785527422,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",

@@ -2172,6 +2172,21 @@
  ],
  "missed": [
   {
+   "ts": 1785529154,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "39652532623602170846456682951463932352134896182641898905432425437612057868317",
+   "cond": "0x26a6c7e4a905dfc13f23c44a8e41d0b96ad60569ef49869c46c237dfd8f3c003",
+   "title": "Will Darline Graham Nordone be the new republican nominee for Senate in South Carolina?",
+   "outcome": "No",
+   "price": 0.395,
+   "stake": 55.32,
+   "reason": "maker bid unfilled (75s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1785527422,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "10602688578724309582987348080322230036626259483794842612849826830636333831694",
@@ -3095,25 +3110,9 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.5779
-  },
-  {
-   "ts": 1785253756,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "55747552002095525592184246353402214181358260885453816054765586513715468529042",
-   "cond": "0xb35cf8fea60478adec7f4bf9fff35d42cea26c2c68b5afda2f2f5871232cd310",
-   "title": "Bitcoin above 64,000 on July 28, 12PM ET?",
-   "outcome": "No",
-   "price": 0.48,
-   "stake": 33.95,
-   "reason": "maker bid unfilled (92s)",
-   "status": "sold",
-   "pnl": 36.18,
-   "settled": 1785256544,
-   "name": "0xbadaf319",
-   "exit_price": 0.999
   }
  ],
- "missed_pnl": 111744.33,
+ "missed_pnl": 111766.18,
  "last_fill": {
   "ts": 1785519401,
   "side": "SELL",
@@ -3189,7 +3188,7 @@
    "wins": 2,
    "open_cost": 921.74,
    "open_n": 10,
-   "miss_n": 33,
+   "miss_n": 34,
    "miss_pnl": -646.17,
    "last_ts": 1785473555
   },
@@ -3224,5 +3223,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785529021
+ "updated": 1785529154
 }
