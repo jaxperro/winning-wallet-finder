@@ -20599,8 +20599,8 @@
     }
   },
   "hwm": 3600.1933566560215,
-  "feed_sig": "349a507112ad5f4ff502154c39be01e8",
-  "feed_pushed_at": 1785538050.159858,
+  "feed_sig": "d4c2961273f5b20364bd0e6ea978f059",
+  "feed_pushed_at": 1785538196.5883722,
   "missed": [
     {
       "ts": 1783867991,
@@ -23780,9 +23780,10 @@
       "price": 0.2533,
       "stake": 56.0,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -57.25,
+      "settled": 1785538263,
+      "name": "1kto1m"
     }
   ],
   "no_miss_toks": [
@@ -23955,7 +23956,7 @@
     "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1785530748,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1785429351,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1785524652,
-    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1785537302,
+    "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1785537303,
     "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1785538158,
     "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1785536421
   },

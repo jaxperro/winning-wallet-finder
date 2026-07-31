@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 352,
-  "n24": 13,
+  "n24": 12,
   "basis": "24h",
-  "avg_s": 4.2,
+  "avg_s": 3.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -2181,9 +2181,9 @@
    "price": 0.2533,
    "stake": 56.0,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "lost",
+   "pnl": -57.25,
+   "settled": 1785538263,
    "name": "1kto1m"
   },
   {
@@ -3116,7 +3116,7 @@
    "exit_price": 0.0003
   }
  ],
- "missed_pnl": 111830.18,
+ "missed_pnl": 111772.93,
  "last_fill": {
   "ts": 1785534806,
   "side": "SELL",
@@ -3153,7 +3153,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 17,
-   "miss_pnl": -46.17,
+   "miss_pnl": -103.42,
    "last_ts": 1785249263
   },
   "Kruto2027": {
@@ -3227,5 +3227,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785538196
+ "updated": 1785538264
 }
