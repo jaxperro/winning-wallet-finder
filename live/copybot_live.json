@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 56.0,
+ "stake": 56.08,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1572.15,
- "deployed": 1228.0,
+ "cash": 1588.96,
+ "deployed": 1215.05,
  "reserve": 0.0,
- "realized": 1800.12,
+ "realized": 1803.98,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 25,
+ "open_count": 23,
  "fees_paid": 434.25,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,50 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "29186422049166680837602032454275007649609188074464534125827790682823121106548",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Silver (XAGUSD) hit (LOW) $55 Week of July 27 2026?",
+   "their_price": 0.83,
+   "my_price": 0.83,
+   "slippage_pct": 0.0,
+   "lag_s": 1.2,
+   "shares": 9.61,
+   "cost": 7.98,
+   "fee": 0.04,
+   "opened": 1785408348,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 1.39,
+   "settled": 1785539367,
+   "end_ts": 1785456000,
+   "sold_shares": 9.5,
+   "sold_proceeds": 9.3
+  },
+  {
+   "token": "45110992399056657070414988111806772840513629662508128679624612897635752010841",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Silver (XAGUSD) hit (LOW) $52 Week of July 27 2026?",
+   "their_price": 0.77,
+   "my_price": 0.77,
+   "slippage_pct": 0.0,
+   "lag_s": 9.4,
+   "shares": 29.17,
+   "cost": 22.46,
+   "fee": 0.15,
+   "opened": 1785202403,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 6.43,
+   "settled": 1785539366,
+   "end_ts": 1785456000,
+   "sold_shares": 12.48,
+   "sold_proceeds": 12.35
+  },
   {
    "token": "115635155479667353862665794187637382945087171557088427227495541201629678991249",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -487,28 +531,6 @@
    "end_ts": 1785369600,
    "sold_shares": 59.44,
    "sold_proceeds": 59.44
-  },
-  {
-   "token": "29186422049166680837602032454275007649609188074464534125827790682823121106548",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Silver (XAGUSD) hit (LOW) $55 Week of July 27 2026?",
-   "their_price": 0.83,
-   "my_price": 0.83,
-   "slippage_pct": 0.0,
-   "lag_s": 1.2,
-   "shares": 9.61,
-   "cost": 7.98,
-   "fee": 0.04,
-   "opened": 1785408348,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785456000,
-   "sold_shares": 9.5,
-   "sold_proceeds": 9.3
   },
   {
    "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
@@ -1271,28 +1293,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1830297600
-  },
-  {
-   "token": "45110992399056657070414988111806772840513629662508128679624612897635752010841",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Silver (XAGUSD) hit (LOW) $52 Week of July 27 2026?",
-   "their_price": 0.77,
-   "my_price": 0.77,
-   "slippage_pct": 0.0,
-   "lag_s": 9.4,
-   "shares": 29.17,
-   "cost": 22.46,
-   "fee": 0.15,
-   "opened": 1785202403,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785456000,
-   "sold_shares": 12.48,
-   "sold_proceeds": 12.35
   },
   {
    "token": "45117272123752214028376460723544361926835506941716663290099518852020253462421",
@@ -3127,14 +3127,14 @@
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 552.42,
-   "n": 87,
-   "wins": 31,
-   "open_cost": 742.01,
-   "open_n": 14,
+   "realized": 560.24,
+   "n": 89,
+   "wins": 33,
+   "open_cost": 711.57,
+   "open_n": 12,
    "miss_n": 113,
    "miss_pnl": 112262.27,
-   "last_ts": 1785534227
+   "last_ts": 1785539367
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3227,5 +3227,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785538264
+ "updated": 1785539370
 }
