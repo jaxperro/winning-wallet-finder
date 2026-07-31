@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 54.36,
+ "stake": 55.32,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1234.78,
- "deployed": 1483.04,
+ "cash": 1322.61,
+ "deployed": 1443.51,
  "reserve": 0.0,
- "realized": 1717.78,
+ "realized": 1766.09,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 33,
+ "open_count": 32,
  "fees_paid": 434.24,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "98864892241165634034845879919226813719761907293882249061978686663075404066718",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Yes",
+   "title": "ESTAC Troyes vs. FC Goal: Both Teams to Score in First Half",
+   "their_price": 0.45,
+   "my_price": 0.45,
+   "slippage_pct": 0.0,
+   "lag_s": 5.0,
+   "shares": 87.83,
+   "cost": 39.52,
+   "fee": 0.65,
+   "opened": 1785500666,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 47.66,
+   "settled": 1785519402,
+   "end_ts": 1785456000,
+   "sold_shares": 87.83,
+   "sold_proceeds": 87.83
+  },
   {
    "token": "6996318170995090898079684117604581969097883161785725897799066353548919956889",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -131,26 +153,6 @@
    "end_ts": 1785456000,
    "sold_shares": 1.06,
    "sold_proceeds": 1.06
-  },
-  {
-   "token": "98864892241165634034845879919226813719761907293882249061978686663075404066718",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Yes",
-   "title": "ESTAC Troyes vs. FC Goal: Both Teams to Score in First Half",
-   "their_price": 0.45,
-   "my_price": 0.45,
-   "slippage_pct": 0.0,
-   "lag_s": 5.0,
-   "shares": 87.83,
-   "cost": 39.52,
-   "fee": 0.65,
-   "opened": 1785500666,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785456000
   },
   {
    "token": "69355216620763944290038016217055240184869140983658291063098880395274580074984",
@@ -3114,11 +3116,11 @@
  ],
  "missed_pnl": 111837.04,
  "last_fill": {
-  "ts": 1785515086,
+  "ts": 1785519401,
   "side": "SELL",
   "price": 1.0,
-  "shares": 1.06,
-  "title": "Will Microsoft (MSFT) close above $450 on July 31?",
+  "shares": 87.83,
+  "title": "ESTAC Troyes vs. FC Goal: Both Teams to Score in First Half",
   "outcome": "Yes"
  },
  "wallet_pnl": {
@@ -3153,14 +3155,14 @@
    "last_ts": 1785249263
   },
   "Kruto2027": {
-   "realized": 201.13,
-   "n": 11,
+   "realized": 248.79,
+   "n": 12,
    "wins": 1,
-   "open_cost": 39.52,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 9,
    "miss_pnl": 355.37,
-   "last_ts": 1785511817
+   "last_ts": 1785519402
   },
   "LSB1": {
    "realized": -397.16,
@@ -3223,5 +3225,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785515087
+ "updated": 1785519402
 }
