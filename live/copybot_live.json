@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 54.15,
+ "stake": 54.16,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1185.69,
- "deployed": 1521.63,
+ "cash": 1242.79,
+ "deployed": 1465.04,
  "reserve": 0.0,
- "realized": 1707.29,
+ "realized": 1707.8,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
  "open_count": 31,
- "fees_paid": 432.28,
+ "fees_paid": 432.39,
  "fee_rate": 0.03,
  "lag": {
   "n": 345,
-  "n24": 13,
+  "n24": 12,
   "basis": "24h",
-  "avg_s": 1.6,
+  "avg_s": 4.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -716,7 +716,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1798761600
+   "end_ts": 1798761600,
+   "sold_shares": 60.85,
+   "sold_proceeds": 57.1
   },
   {
    "token": "18336686533395239035817826518946179380426460262862186300738403852712569444780",
@@ -3110,11 +3112,11 @@
  ],
  "missed_pnl": 111852.24,
  "last_fill": {
-  "ts": 1785488258,
+  "ts": 1785494049,
   "side": "SELL",
-  "price": 0.92,
-  "shares": 10.81,
-  "title": "Will Bloomberg IPO by March 31, 2027?",
+  "price": 0.94,
+  "shares": 60.85,
+  "title": "Will Revolut's valuation hit (LOW) $75B by December 31?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3219,5 +3221,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785492475
+ "updated": 1785494077
 }
