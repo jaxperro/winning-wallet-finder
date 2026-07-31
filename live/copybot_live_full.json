@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785473557,
+ "updated": 1785475187,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 484.28,
    "n": 77,
    "wins": 25,
-   "open_cost": 953.4,
-   "open_n": 19,
+   "open_cost": 1006.98,
+   "open_n": 20,
    "miss_n": 111,
    "miss_pnl": 112313.69,
-   "last_ts": 1785460409
+   "last_ts": 1785475179
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "64268764042079970141370201979497971145194836965078827125217869938686952808386",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Bloomberg IPO by March 31, 2027?",
+   "their_price": 0.63,
+   "my_price": 0.63,
+   "slippage_pct": 0.0,
+   "lag_s": 0.8,
+   "shares": 85.04,
+   "cost": 53.58,
+   "fee": 0.5947,
+   "opened": 1785475179,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1830211200
+  },
   {
    "token": "108571806153453077888243294663984245780177684183406082076002016448584873901936",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

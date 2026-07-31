@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 53.58,
+ "stake": 53.56,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1213.82,
- "deployed": 1464.96,
+ "cash": 1159.65,
+ "deployed": 1518.54,
  "reserve": 0.0,
- "realized": 1678.75,
+ "realized": 1678.16,
  "adjustments": 0.03,
- "ledger_drift": -0.06,
- "open_count": 30,
- "fees_paid": 430.68,
+ "ledger_drift": -0.05,
+ "open_count": 31,
+ "fees_paid": 431.28,
  "fee_rate": 0.03,
  "lag": {
-  "n": 342,
-  "n24": 16,
+  "n": 343,
+  "n24": 17,
   "basis": "24h",
-  "avg_s": 6.2,
+  "avg_s": 5.9,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "64268764042079970141370201979497971145194836965078827125217869938686952808386",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Bloomberg IPO by March 31, 2027?",
+   "their_price": 0.63,
+   "my_price": 0.63,
+   "slippage_pct": 0.0,
+   "lag_s": 0.8,
+   "shares": 85.04,
+   "cost": 53.58,
+   "fee": 0.59,
+   "opened": 1785475179,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1830211200
+  },
   {
    "token": "108571806153453077888243294663984245780177684183406082076002016448584873901936",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2137,27 +2157,6 @@
    "exit_price": 0.0,
    "pnl": -112.8,
    "settled": 1784733056
-  },
-  {
-   "token": "55071405929941363854274866721931311048000830793954776923614437932856724606852",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Top Esports",
-   "title": "LoL: Top Esports vs Team WE - Game 2 Winner",
-   "their_price": 0.6618,
-   "my_price": 0.62,
-   "slippage_pct": -0.0631,
-   "lag_s": 5.5,
-   "shares": 190.75,
-   "cost": 118.27,
-   "fee": 1.35,
-   "opened": 1784724888,
-   "status": "closed",
-   "exit_price": 0.9486,
-   "pnl": 61.32,
-   "settled": 1784725644,
-   "sold_shares": 190.75,
-   "sold_proceeds": 180.94
   }
  ],
  "missed": [
@@ -3108,23 +3107,23 @@
  ],
  "missed_pnl": 111807.56,
  "last_fill": {
-  "ts": 1785473556,
+  "ts": 1785475179,
   "side": "BUY",
-  "price": 0.62,
-  "shares": 86.43,
-  "title": "Israel x Hamas Ceasefire Phase II by December 31?",
-  "outcome": "Yes"
+  "price": 0.63,
+  "shares": 85.04,
+  "title": "Will Bloomberg IPO by March 31, 2027?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 484.28,
    "n": 77,
    "wins": 25,
-   "open_cost": 953.4,
-   "open_n": 19,
+   "open_cost": 1006.98,
+   "open_n": 20,
    "miss_n": 111,
    "miss_pnl": 112313.69,
-   "last_ts": 1785460409
+   "last_ts": 1785475179
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3217,5 +3216,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785473557
+ "updated": 1785475187
 }
