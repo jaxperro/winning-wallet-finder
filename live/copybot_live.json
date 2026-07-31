@@ -2172,6 +2172,21 @@
  ],
  "missed": [
   {
+   "ts": 1785527135,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "3833250547311424992805456252782158332407335422350263044535636678503072819141",
+   "cond": "0x1e5204036bd51e6ca0e0da6221319c5839bd9940782adc6d0f6fa703aa8a3bf4",
+   "title": "Will Hamas agree to disarm by December 31?",
+   "outcome": "Yes",
+   "price": 0.23,
+   "stake": 55.32,
+   "reason": "thin book ($44 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1785501290,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "111356505539987008216635024271011105698318536126509147350243305568453804452135",
@@ -3097,25 +3112,9 @@
    "settled": 1785244368,
    "name": "1kto1m",
    "exit_price": 0.5637
-  },
-  {
-   "ts": 1785236078,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "36265250796161854432369131892129450974997795066135083465560318874244070874973",
-   "cond": "0xc303a9de6d4671bb428d41cc1014db4c0ce4ad56a6f19ce6a2a5807ecf393f6a",
-   "title": "Will South Korea ETF (EWY) hit (HIGH) $168 Week of July 27 2026?",
-   "outcome": "No",
-   "price": 0.71,
-   "stake": 40.0,
-   "reason": "maker bid unfilled (91s)",
-   "status": "sold",
-   "pnl": -0.7,
-   "settled": 1785240379,
-   "name": "0xbadaf319",
-   "exit_price": 0.7099
   }
  ],
- "missed_pnl": 111839.36,
+ "missed_pnl": 111761.69,
  "last_fill": {
   "ts": 1785519401,
   "side": "SELL",
@@ -3191,7 +3190,7 @@
    "wins": 2,
    "open_cost": 921.74,
    "open_n": 10,
-   "miss_n": 32,
+   "miss_n": 33,
    "miss_pnl": -646.17,
    "last_ts": 1785473555
   },
@@ -3226,5 +3225,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785519763
+ "updated": 1785527143
 }

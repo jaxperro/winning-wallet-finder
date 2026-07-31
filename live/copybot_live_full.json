@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785519763,
+ "updated": 1785527143,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 513.13,
@@ -68,7 +68,7 @@
    "wins": 2,
    "open_cost": 921.74,
    "open_n": 10,
-   "miss_n": 32,
+   "miss_n": 33,
    "miss_pnl": -646.17,
    "last_ts": 1785473555
   },
@@ -6373,6 +6373,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785527135,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "3833250547311424992805456252782158332407335422350263044535636678503072819141",
+   "cond": "0x1e5204036bd51e6ca0e0da6221319c5839bd9940782adc6d0f6fa703aa8a3bf4",
+   "title": "Will Hamas agree to disarm by December 31?",
+   "outcome": "Yes",
+   "price": 0.23,
+   "stake": 55.32,
+   "reason": "thin book ($44 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1785501290,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
