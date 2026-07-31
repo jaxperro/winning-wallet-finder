@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1267.13,
- "deployed": 1412.19,
+ "cash": 1268.02,
+ "deployed": 1411.38,
  "reserve": 0.0,
- "realized": 1679.28,
+ "realized": 1679.37,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
  "open_count": 29,
@@ -403,8 +403,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785369600,
-   "sold_shares": 60.45,
-   "sold_proceeds": 58.77
+   "sold_shares": 61.35,
+   "sold_proceeds": 59.66
   },
   {
    "token": "54815727746640547967672254072133541716883461619401150888777316620441172319772",
@@ -3109,11 +3109,11 @@
  ],
  "missed_pnl": 111808.37,
  "last_fill": {
-  "ts": 1785460410,
-  "side": "BUY",
-  "price": 0.84,
-  "shares": 56.16,
-  "title": "WTI Crude Oil (WTI) closes above $80 on July 31?",
+  "ts": 1785460669,
+  "side": "SELL",
+  "price": 0.997,
+  "shares": 0.89,
+  "title": "Israel x Iran ceasefire continues through July 30?",
   "outcome": "Yes"
  },
  "wallet_pnl": {
@@ -3218,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785460417
+ "updated": 1785460677
 }
