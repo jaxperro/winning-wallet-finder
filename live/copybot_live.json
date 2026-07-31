@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1156.82,
- "deployed": 1525.0,
+ "cash": 1106.67,
+ "deployed": 1575.21,
  "reserve": 0.0,
- "realized": 1681.79,
+ "realized": 1681.84,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 31,
- "fees_paid": 431.58,
+ "open_count": 32,
+ "fees_paid": 432.12,
  "fee_rate": 0.03,
  "lag": {
-  "n": 344,
-  "n24": 17,
+  "n": 345,
+  "n24": 18,
   "basis": "24h",
-  "avg_s": 4.4,
+  "avg_s": 5.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "69355216620763944290038016217055240184869140983658291063098880395274580074984",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Gen.G",
+   "title": "LoL: Gen.G vs T1 - Game 1 Winner",
+   "their_price": 0.67,
+   "my_price": 0.67,
+   "slippage_pct": 0.0,
+   "lag_s": 9.7,
+   "shares": 80.07,
+   "cost": 53.65,
+   "fee": 0.53,
+   "opened": 1785485338,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785456000
+  },
   {
    "token": "78639892723644623147617890032845605442018473848411325154446303980329931711515",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2139,27 +2159,6 @@
    "settled": 1784824112,
    "sold_shares": 5.24,
    "sold_proceeds": 4.48
-  },
-  {
-   "token": "82768531874539579332422216880159980913196623213037059365722754442149714478353",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the highest temperature in London be 27\u00b0C on July 23?",
-   "their_price": 0.8,
-   "my_price": 0.75,
-   "slippage_pct": -0.0625,
-   "lag_s": 0.8,
-   "shares": 42.36,
-   "cost": 31.77,
-   "fee": 0.24,
-   "opened": 1784820335,
-   "status": "closed",
-   "exit_price": 0.8871,
-   "pnl": 5.57,
-   "settled": 1784821177,
-   "sold_shares": 42.36,
-   "sold_proceeds": 37.58
   }
  ],
  "missed": [
@@ -3110,12 +3109,12 @@
  ],
  "missed_pnl": 111807.56,
  "last_fill": {
-  "ts": 1785484806,
+  "ts": 1785485347,
   "side": "BUY",
-  "price": 0.896,
-  "shares": 59.86,
-  "title": "Will Amazon.com, Inc. (AMZN) hit (HIGH) $280 in July?",
-  "outcome": "No"
+  "price": 0.67,
+  "shares": 80.07,
+  "title": "LoL: Gen.G vs T1 - Game 1 Winner",
+  "outcome": "Gen.G"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3172,11 +3171,11 @@
    "realized": 151.1,
    "n": 39,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 53.65,
+   "open_n": 1,
    "miss_n": 7,
    "miss_pnl": -311.49,
-   "last_ts": 1785419952
+   "last_ts": 1785485338
   },
   "BikesAreTheBikes": {
    "realized": 249.59,
@@ -3219,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785484814
+ "updated": 1785485350
 }
