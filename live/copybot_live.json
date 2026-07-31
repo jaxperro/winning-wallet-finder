@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 54.35,
+ "stake": 54.36,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1233.71,
- "deployed": 1483.68,
+ "cash": 1234.78,
+ "deployed": 1483.04,
  "reserve": 0.0,
- "realized": 1717.36,
+ "realized": 1717.78,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
  "open_count": 33,
@@ -128,7 +128,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1785456000
+   "end_ts": 1785456000,
+   "sold_shares": 1.06,
+   "sold_proceeds": 1.06
   },
   {
    "token": "98864892241165634034845879919226813719761907293882249061978686663075404066718",
@@ -3112,12 +3114,12 @@
  ],
  "missed_pnl": 111837.04,
  "last_fill": {
-  "ts": 1785505694,
+  "ts": 1785515086,
   "side": "SELL",
-  "price": 0.98,
-  "shares": 6.09,
-  "title": "Will Gold (XAUUSD) hit (LOW) $3,600 in August?",
-  "outcome": "No"
+  "price": 1.0,
+  "shares": 1.06,
+  "title": "Will Microsoft (MSFT) close above $450 on July 31?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3221,5 +3223,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785513488
+ "updated": 1785515087
 }
