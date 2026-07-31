@@ -2165,6 +2165,21 @@
  ],
  "missed": [
   {
+   "ts": 1785490613,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "58548018851175151695677252161875555791453124930015531332114582862335177135998",
+   "cond": "0xf325580a5c4b072c90064f0525808c1e1d02677e71182fd1f5acf92962d92138",
+   "title": "LoL: Team WE vs Bilibili Gaming - Game 1 Winner",
+   "outcome": "Team WE",
+   "price": 0.38,
+   "stake": 54.15,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1785470250,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "103870460409416656847338772401285687754272075210292233734346832088838695487128",
@@ -3091,25 +3106,9 @@
    "settled": 1785182726,
    "name": "Kruto2027",
    "exit_price": 0.7
-  },
-  {
-   "ts": 1785139689,
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "token": "97295656101998898580206897902568143074088191062355235431234344721344276341985",
-   "cond": "0xde9ebb2f290bc03104ef13f869ddbf9d78a1f9391f6335455a03b1baea5fcf01",
-   "title": "LoL: T1 vs DN SOOPers (BO1) - KeSPA Cup Group Stage",
-   "outcome": "T1",
-   "price": 0.77,
-   "stake": 133.64,
-   "reason": "maker bid unfilled (62s)",
-   "status": "sold",
-   "pnl": 39.0,
-   "settled": 1785172559,
-   "name": "JuiceFarm",
-   "exit_price": 1.0
   }
  ],
- "missed_pnl": 111807.56,
+ "missed_pnl": 111852.24,
  "last_fill": {
   "ts": 1785488258,
   "side": "SELL",
@@ -3165,8 +3164,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 6,
-   "miss_pnl": -159.58,
+   "miss_n": 5,
+   "miss_pnl": -114.9,
    "last_ts": 1783867043
   },
   "AIcAIc": {
@@ -3175,7 +3174,7 @@
    "wins": 0,
    "open_cost": 53.65,
    "open_n": 1,
-   "miss_n": 7,
+   "miss_n": 8,
    "miss_pnl": -311.49,
    "last_ts": 1785485338
   },
@@ -3205,8 +3204,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 14,
-   "miss_pnl": 51.51,
+   "miss_n": 15,
+   "miss_pnl": 6.83,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3220,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785490264
+ "updated": 1785490621
 }
