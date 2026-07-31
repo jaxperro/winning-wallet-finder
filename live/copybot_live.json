@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 55.95,
+ "stake": 55.52,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1482.51,
- "deployed": 1314.76,
+ "cash": 1492.02,
+ "deployed": 1284.18,
  "reserve": 0.0,
- "realized": 1797.25,
+ "realized": 1776.17,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 28,
+ "open_count": 26,
  "fees_paid": 434.24,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,48 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "36265250796161854432369131892129450974997795066135083465560318874244070874973",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will South Korea ETF (EWY) hit (HIGH) $168 Week of July 27 2026?",
+   "their_price": 0.73,
+   "my_price": 0.73,
+   "slippage_pct": 0.0,
+   "lag_s": 0.8,
+   "shares": 9.51,
+   "cost": 6.94,
+   "fee": 0.06,
+   "opened": 1785442584,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 2.51,
+   "settled": 1785530906,
+   "end_ts": 1785456000
+  },
+  {
+   "token": "112774766992396377485489579919863607374726156472090313068282277768607356552228",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $140 Week of July 27 2026?",
+   "their_price": 0.63,
+   "my_price": 0.63,
+   "slippage_pct": 0.0,
+   "lag_s": 6.7,
+   "shares": 48.8,
+   "cost": 30.74,
+   "fee": 0.34,
+   "opened": 1785111585,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -20.62,
+   "settled": 1785530905,
+   "end_ts": 1785456000,
+   "sold_shares": 11.27,
+   "sold_proceeds": 10.46
+  },
   {
    "token": "78639892723644623147617890032845605442018473848411325154446303980329931711515",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -361,26 +403,6 @@
    "pnl": -56.49,
    "settled": 1785443983,
    "end_ts": 1785369600
-  },
-  {
-   "token": "36265250796161854432369131892129450974997795066135083465560318874244070874973",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will South Korea ETF (EWY) hit (HIGH) $168 Week of July 27 2026?",
-   "their_price": 0.73,
-   "my_price": 0.73,
-   "slippage_pct": 0.0,
-   "lag_s": 0.8,
-   "shares": 9.51,
-   "cost": 6.94,
-   "fee": 0.06,
-   "opened": 1785442584,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785456000
   },
   {
    "token": "634630064714299321077497320934035372668565093802737701187762655182629990503",
@@ -1425,28 +1447,6 @@
    "sold_proceeds": 62.68
   },
   {
-   "token": "112774766992396377485489579919863607374726156472090313068282277768607356552228",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $140 Week of July 27 2026?",
-   "their_price": 0.63,
-   "my_price": 0.63,
-   "slippage_pct": 0.0,
-   "lag_s": 6.7,
-   "shares": 48.8,
-   "cost": 30.74,
-   "fee": 0.34,
-   "opened": 1785111585,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785456000,
-   "sold_shares": 11.27,
-   "sold_proceeds": 10.46
-  },
-  {
    "token": "38653928625312634500254748884896709523765538580393484335273651251587581768973",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -2171,6 +2171,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785312030,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "24411114427282578875426055969732348605035863582713101684063218947039334428561",
+   "cond": "0x5d284999aa83866c46cfa5fe672537a225edd19e2c420433707e08964a3037f0",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $134 Week of July 27 2026?",
+   "outcome": "No",
+   "price": 0.8,
+   "stake": 138.35,
+   "reason": "price moved 0.45\u21920.80",
+   "status": "won",
+   "pnl": 33.76,
+   "settled": 1785530908,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785527422,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2958,21 +2973,6 @@
    "exit_price": 0.1055
   },
   {
-   "ts": 1785312030,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "24411114427282578875426055969732348605035863582713101684063218947039334428561",
-   "cond": "0x5d284999aa83866c46cfa5fe672537a225edd19e2c420433707e08964a3037f0",
-   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $134 Week of July 27 2026?",
-   "outcome": "No",
-   "price": 0.8,
-   "stake": 138.35,
-   "reason": "price moved 0.45\u21920.80",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1785262738,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "92205817338549581942996291977146287067184626116756204357001405482376199798910",
@@ -3116,7 +3116,7 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 111695.39,
+ "missed_pnl": 111729.15,
  "last_fill": {
   "ts": 1785519401,
   "side": "SELL",
@@ -3127,14 +3127,14 @@
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 547.41,
-   "n": 84,
-   "wins": 29,
-   "open_cost": 833.71,
-   "open_n": 17,
+   "realized": 529.3,
+   "n": 86,
+   "wins": 30,
+   "open_cost": 796.03,
+   "open_n": 15,
    "miss_n": 113,
-   "miss_pnl": 112227.21,
-   "last_ts": 1785530703
+   "miss_pnl": 112260.97,
+   "last_ts": 1785530906
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3227,5 +3227,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785530707
+ "updated": 1785530910
 }
