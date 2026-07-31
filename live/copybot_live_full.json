@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785462211,
+ "updated": 1785470257,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 484.28,
@@ -68,7 +68,7 @@
    "wins": 2,
    "open_cost": 868.15,
    "open_n": 9,
-   "miss_n": 31,
+   "miss_n": 32,
    "miss_pnl": -646.17,
    "last_ts": 1785407674
   },
@@ -6177,6 +6177,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785470250,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "103870460409416656847338772401285687754272075210292233734346832088838695487128",
+   "cond": "0xbe48dfd8fb2d44ebad08c3b170799c6633af2b68ce0df17e633e12a89ed734e3",
+   "title": "Will PH win the 2026 Negeri Sembilan general elections?",
+   "outcome": "No",
+   "price": 0.71,
+   "stake": 53.59,
+   "reason": "maker bid unfilled (117s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1785458766,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

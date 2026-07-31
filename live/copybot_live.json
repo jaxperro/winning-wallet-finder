@@ -2163,6 +2163,21 @@
  ],
  "missed": [
   {
+   "ts": 1785470250,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "103870460409416656847338772401285687754272075210292233734346832088838695487128",
+   "cond": "0xbe48dfd8fb2d44ebad08c3b170799c6633af2b68ce0df17e633e12a89ed734e3",
+   "title": "Will PH win the 2026 Negeri Sembilan general elections?",
+   "outcome": "No",
+   "price": 0.71,
+   "stake": 53.59,
+   "reason": "maker bid unfilled (117s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1785458766,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "78728112054519033757681466973844566499703528896052761274000178959410659593",
@@ -3090,24 +3105,9 @@
    "settled": 1785172559,
    "name": "JuiceFarm",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1785162430,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "65075316665858123310904205342608300814898488753088658332913116406808619343398",
-   "cond": "0x6899f21b3a3d26c8ae9d0332c25d160fc08b9c3b834f0d8fe116d2ec87905dc9",
-   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $130 Week of July 27 2026?",
-   "outcome": "No",
-   "price": 0.5463,
-   "stake": 33.91,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 111808.37,
+ "missed_pnl": 111807.56,
  "last_fill": {
   "ts": 1785460669,
   "side": "SELL",
@@ -3183,7 +3183,7 @@
    "wins": 2,
    "open_cost": 868.15,
    "open_n": 9,
-   "miss_n": 31,
+   "miss_n": 32,
    "miss_pnl": -646.17,
    "last_ts": 1785407674
   },
@@ -3218,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785462211
+ "updated": 1785470257
 }
