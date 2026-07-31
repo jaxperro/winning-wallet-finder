@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785500197,
+ "updated": 1785500529,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 513.13,
@@ -38,7 +38,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 6,
+   "miss_n": 7,
    "miss_pnl": 348.47,
    "last_ts": 1785378441
   },
@@ -6265,6 +6265,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785500522,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "33122285872204232583035000300995070380947923388240967750177330113964704091101",
+   "cond": "0x1e7c8a8e8b86679648019df2b2d62753d347ce8caf65bb843a8d6fe01e29689b",
+   "title": "ESTAC Troyes vs. FC Goal: O/U 4.5",
+   "outcome": "Over",
+   "price": 0.7788,
+   "stake": 9.84,
+   "reason": "maker bid unfilled (74s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1785399884,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
