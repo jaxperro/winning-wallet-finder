@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785530137,
+ "updated": 1785530457,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 525.84,
-   "n": 82,
-   "wins": 27,
-   "open_cost": 951.37,
-   "open_n": 19,
+   "realized": 543.89,
+   "n": 83,
+   "wins": 28,
+   "open_cost": 887.34,
+   "open_n": 18,
    "miss_n": 113,
    "miss_pnl": 112227.21,
-   "last_ts": 1785529502
+   "last_ts": 1785530452
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "86679239858518906873492617617658695793360100462726529532253226646142736420327",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Tesla, Inc. (TSLA) hit (LOW) $270 in July?",
+   "their_price": 0.776,
+   "my_price": 0.776,
+   "slippage_pct": 0.0,
+   "lag_s": 4.4,
+   "shares": 82.51,
+   "cost": 64.03,
+   "fee": 0.4303,
+   "opened": 1785235541,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 18.05,
+   "settled": 1785530452,
+   "end_ts": 1785542400
+  },
   {
    "token": "68654388570090540693504706309016258592141967889448520850585121976978344249779",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1283,26 +1303,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1830297600
-  },
-  {
-   "token": "86679239858518906873492617617658695793360100462726529532253226646142736420327",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Tesla, Inc. (TSLA) hit (LOW) $270 in July?",
-   "their_price": 0.776,
-   "my_price": 0.776,
-   "slippage_pct": 0.0,
-   "lag_s": 4.4,
-   "shares": 82.51,
-   "cost": 64.03,
-   "fee": 0.4303,
-   "opened": 1785235541,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785542400
   },
   {
    "token": "45110992399056657070414988111806772840513629662508128679624612897635752010841",
