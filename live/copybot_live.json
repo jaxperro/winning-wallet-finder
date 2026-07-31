@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 54.05,
+ "stake": 54.04,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1281.37,
- "deployed": 1421.01,
+ "cash": 1227.08,
+ "deployed": 1475.05,
  "reserve": 0.0,
- "realized": 1702.34,
+ "realized": 1702.1,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 30,
- "fees_paid": 433.14,
+ "open_count": 31,
+ "fees_paid": 433.39,
  "fee_rate": 0.03,
  "lag": {
-  "n": 346,
-  "n24": 9,
+  "n": 347,
+  "n24": 10,
   "basis": "24h",
-  "avg_s": 1.6,
+  "avg_s": 3.3,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "6996318170995090898079684117604581969097883161785725897799066353548919956889",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Over",
+   "title": "ESTAC Troyes vs. FC Goal: O/U 5.5",
+   "their_price": 0.85,
+   "my_price": 0.85,
+   "slippage_pct": 0.0,
+   "lag_s": 8.6,
+   "shares": 63.58,
+   "cost": 54.04,
+   "fee": 0.24,
+   "opened": 1785502156,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785456000
+  },
   {
    "token": "98864892241165634034845879919226813719761907293882249061978686663075404066718",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2142,26 +2162,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1789862400
-  },
-  {
-   "token": "107504891632815999637002772178305299765396815437535131855162503864828528783551",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "Solary",
-   "title": "LoL: Solary vs ZYB Esport (BO1) - LFL Regular Season",
-   "their_price": 0.76,
-   "my_price": 0.76,
-   "slippage_pct": 0.0,
-   "lag_s": 0.7,
-   "shares": 152.01,
-   "cost": 115.53,
-   "fee": 0.83,
-   "opened": 1784833129,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 35.65,
-   "settled": 1784845083,
-   "end_ts": 1784851200
   }
  ],
  "missed": [
@@ -3109,12 +3109,12 @@
  ],
  "missed_pnl": 111788.56,
  "last_fill": {
-  "ts": 1785500670,
+  "ts": 1785502164,
   "side": "BUY",
-  "price": 0.45,
-  "shares": 87.83,
-  "title": "ESTAC Troyes vs. FC Goal: Both Teams to Score in First Half",
-  "outcome": "Yes"
+  "price": 0.85,
+  "shares": 63.58,
+  "title": "ESTAC Troyes vs. FC Goal: O/U 5.5",
+  "outcome": "Over"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3151,11 +3151,11 @@
    "realized": 191.83,
    "n": 10,
    "wins": 0,
-   "open_cost": 39.52,
-   "open_n": 1,
+   "open_cost": 93.56,
+   "open_n": 2,
    "miss_n": 9,
    "miss_pnl": 348.47,
-   "last_ts": 1785500666
+   "last_ts": 1785502156
   },
   "LSB1": {
    "realized": -397.16,
@@ -3218,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785502049
+ "updated": 1785502165
 }
