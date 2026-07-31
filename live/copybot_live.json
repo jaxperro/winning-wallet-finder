@@ -2172,6 +2172,38 @@
  ],
  "missed": [
   {
+   "ts": 1785527422,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "10602688578724309582987348080322230036626259483794842612849826830636333831694",
+   "cond": "0x98516e7287d517ffa921dfb31918d68b6d631ac3af105c32bd3f844198fe24af",
+   "title": "T20 Series Kenya vs Bahrain: Kenya vs Bahrain",
+   "outcome": "Bahrain",
+   "price": 0.4292,
+   "stake": 25.04,
+   "reason": "maker bid unfilled (60s)",
+   "status": "sold",
+   "pnl": 0.93,
+   "settled": 1785530136,
+   "name": "Kruto2027",
+   "exit_price": 0.46
+  },
+  {
+   "ts": 1785162430,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "65075316665858123310904205342608300814898488753088658332913116406808619343398",
+   "cond": "0x6899f21b3a3d26c8ae9d0332c25d160fc08b9c3b834f0d8fe116d2ec87905dc9",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $130 Week of July 27 2026?",
+   "outcome": "No",
+   "price": 0.5463,
+   "stake": 33.91,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 25.22,
+   "settled": 1785530132,
+   "name": "0xbadaf319",
+   "exit_price": 0.9612
+  },
+  {
    "ts": 1785457799,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "84095995837321901108525598810643779965340385584800089874924016820857675236278",
@@ -2184,7 +2216,8 @@
    "status": "lost",
    "pnl": -28.22,
    "settled": 1785529710,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1785505110,
@@ -2199,7 +2232,8 @@
    "status": "lost",
    "pnl": -47.14,
    "settled": 1785529506,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1785456903,
@@ -2214,7 +2248,8 @@
    "status": "won",
    "pnl": 33.64,
    "settled": 1785529428,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1785505110,
@@ -2229,7 +2264,8 @@
    "status": "lost",
    "pnl": -55.22,
    "settled": 1785529428,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1785529154,
@@ -2245,21 +2281,6 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1785527422,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "10602688578724309582987348080322230036626259483794842612849826830636333831694",
-   "cond": "0x98516e7287d517ffa921dfb31918d68b6d631ac3af105c32bd3f844198fe24af",
-   "title": "T20 Series Kenya vs Bahrain: Kenya vs Bahrain",
-   "outcome": "Bahrain",
-   "price": 0.4292,
-   "stake": 25.04,
-   "reason": "maker bid unfilled (60s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
   },
   {
    "ts": 1785527135,
@@ -3093,26 +3114,9 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785110815,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "48824398491280100431239513921328336173859523998182185336991038266268084020611",
-   "cond": "0xceb1b54f8e0fa8fb4d240b042505ec7681715758a89f82b3e356a003094c8438",
-   "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $148 Week of July 27 2026?",
-   "outcome": "No",
-   "price": 0.67,
-   "stake": 62.66,
-   "reason": "thin book ($21 within 5c < $50)",
-   "status": "sold",
-   "pnl": -9.92,
-   "settled": 1785258537,
-   "name": "0xbadaf319",
-   "exit_checked": true,
-   "exit_price": 0.5779
   }
  ],
- "missed_pnl": 111669.24,
+ "missed_pnl": 111695.39,
  "last_fill": {
   "ts": 1785519401,
   "side": "SELL",
@@ -3129,7 +3133,7 @@
    "open_cost": 951.37,
    "open_n": 19,
    "miss_n": 113,
-   "miss_pnl": 112201.99,
+   "miss_pnl": 112227.21,
    "last_ts": 1785529502
   },
   "gkmgkldfmg": {
@@ -3159,7 +3163,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 10,
-   "miss_pnl": 357.69,
+   "miss_pnl": 358.62,
    "last_ts": 1785519402
   },
   "LSB1": {
@@ -3223,5 +3227,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785529711
+ "updated": 1785530137
 }
