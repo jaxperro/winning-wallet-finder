@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 57.19,
+ "stake": 57.21,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1570.65,
- "deployed": 1289.02,
+ "cash": 1585.48,
+ "deployed": 1274.98,
  "reserve": 0.0,
- "realized": 1859.64,
+ "realized": 1860.43,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 24,
+ "open_count": 23,
  "fees_paid": 437.98,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "43171108223683792926229116193941513170619352156926725221875963255678260552099",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Bitcoin dip to $40,000 in August?",
+   "their_price": 0.94,
+   "my_price": 0.94,
+   "slippage_pct": 0.0,
+   "lag_s": 10.1,
+   "shares": 60.24,
+   "cost": 56.63,
+   "fee": 0.1,
+   "opened": 1785567480,
+   "status": "closed",
+   "exit_price": 0.9951,
+   "pnl": 3.21,
+   "settled": 1785596252,
+   "end_ts": 1788220800,
+   "sold_shares": 60.24,
+   "sold_proceeds": 59.94
+  },
   {
    "token": "30254318320353641204277690542860922564879092609585509463603793724900287946783",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -195,28 +217,6 @@
    "pnl": 11.14,
    "settled": 1785567618,
    "end_ts": 1785542400
-  },
-  {
-   "token": "43171108223683792926229116193941513170619352156926725221875963255678260552099",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Bitcoin dip to $40,000 in August?",
-   "their_price": 0.94,
-   "my_price": 0.94,
-   "slippage_pct": 0.0,
-   "lag_s": 10.1,
-   "shares": 60.24,
-   "cost": 56.63,
-   "fee": 0.1,
-   "opened": 1785567480,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788220800,
-   "sold_shares": 45.3,
-   "sold_proceeds": 45.11
   },
   {
    "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
@@ -3108,23 +3108,23 @@
  ],
  "missed_pnl": 21573.36,
  "last_fill": {
-  "ts": 1785593308,
+  "ts": 1785596246,
   "side": "SELL",
-  "price": 0.93,
-  "shares": 0.03,
-  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+  "price": 0.993,
+  "shares": 14.94,
+  "title": "Will Bitcoin dip to $40,000 in August?",
   "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 600.16,
-   "n": 91,
+   "realized": 603.37,
+   "n": 92,
    "wins": 33,
-   "open_cost": 713.46,
-   "open_n": 13,
+   "open_cost": 656.83,
+   "open_n": 12,
    "miss_n": 120,
    "miss_pnl": 112320.46,
-   "last_ts": 1785582809
+   "last_ts": 1785596252
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3217,5 +3217,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785593315
+ "updated": 1785596252
 }
