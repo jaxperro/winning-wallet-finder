@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 56.09,
+ "stake": 56.07,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1594.03,
- "deployed": 1210.69,
+ "cash": 1536.47,
+ "deployed": 1266.79,
  "reserve": 0.0,
- "realized": 1804.69,
+ "realized": 1803.23,
  "adjustments": 0.03,
- "ledger_drift": -0.04,
- "open_count": 21,
- "fees_paid": 437.98,
+ "ledger_drift": -0.05,
+ "open_count": 22,
+ "fees_paid": 439.45,
  "fee_rate": 0.03,
  "lag": {
-  "n": 360,
-  "n24": 8,
+  "n": 361,
+  "n24": 9,
   "basis": "24h",
-  "avg_s": 6.1,
+  "avg_s": 6.7,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "69096949813045225336683960679829035937696902053122957721872788215708031375062",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Israel x Iran ceasefire continues through August 2?",
+   "their_price": 0.13,
+   "my_price": 0.13,
+   "slippage_pct": 0.0,
+   "lag_s": 12.5,
+   "shares": 431.49,
+   "cost": 56.09,
+   "fee": 1.46,
+   "opened": 1785628277,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785628800
+  },
   {
    "token": "52147710483318183023156143315213141415940410632254734638455935907277139704912",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2138,28 +2158,6 @@
    "end_ts": 1785196800,
    "sold_shares": 33.42,
    "sold_proceeds": 31.7
-  },
-  {
-   "token": "5506960250160396168975872633831816223181816814113506849144916695207660278211",
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "name": "1kto1m",
-   "outcome": "Down",
-   "title": "S&P 500 (SPX) Up or Down on July 24?",
-   "their_price": 0.6201,
-   "my_price": 0.6201,
-   "slippage_pct": 0.0,
-   "lag_s": 1.0,
-   "shares": 203.79,
-   "cost": 126.38,
-   "fee": 1.44,
-   "opened": 1784920113,
-   "status": "closed",
-   "exit_price": 0.9691,
-   "pnl": 69.68,
-   "settled": 1784923179,
-   "end_ts": 1784851200,
-   "sold_shares": 203.79,
-   "sold_proceeds": 197.5
   }
  ],
  "missed": [
@@ -3106,11 +3104,11 @@
  ],
  "missed_pnl": 21370.85,
  "last_fill": {
-  "ts": 1785604565,
-  "side": "SELL",
-  "price": 0.93,
-  "shares": 0.04,
-  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+  "ts": 1785628289,
+  "side": "BUY",
+  "price": 0.13,
+  "shares": 431.49,
+  "title": "Israel x Iran ceasefire continues through August 2?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3178,11 +3176,11 @@
    "realized": 251.76,
    "n": 15,
    "wins": 2,
-   "open_cost": 921.74,
-   "open_n": 10,
+   "open_cost": 977.83,
+   "open_n": 11,
    "miss_n": 39,
    "miss_pnl": -652.34,
-   "last_ts": 1785580995
+   "last_ts": 1785628277
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3215,5 +3213,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785621501
+ "updated": 1785628355
 }
