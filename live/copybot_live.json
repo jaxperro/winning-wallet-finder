@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 57.22,
+ "stake": 57.45,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1602.3,
- "deployed": 1258.81,
+ "cash": 1599.9,
+ "deployed": 1272.51,
  "reserve": 0.0,
- "realized": 1861.08,
+ "realized": 1872.38,
  "adjustments": 0.03,
- "ledger_drift": -0.06,
+ "ledger_drift": -0.05,
  "open_count": 24,
- "fees_paid": 435.4,
+ "fees_paid": 435.5,
  "fee_rate": 0.03,
  "lag": {
-  "n": 355,
-  "n24": 12,
+  "n": 356,
+  "n24": 13,
   "basis": "24h",
-  "avg_s": 4.6,
+  "avg_s": 5.0,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -64,11 +64,31 @@
    "cost": 42.92,
    "fee": 0.27,
    "opened": 1785567035,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 11.14,
+   "settled": 1785567618,
+   "end_ts": 1785542400
+  },
+  {
+   "token": "43171108223683792926229116193941513170619352156926725221875963255678260552099",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Bitcoin dip to $40,000 in August?",
+   "their_price": 0.94,
+   "my_price": 0.94,
+   "slippage_pct": 0.0,
+   "lag_s": 10.1,
+   "shares": 60.24,
+   "cost": 56.63,
+   "fee": 0.1,
+   "opened": 1785567480,
    "status": "open",
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1785542400
+   "end_ts": 1788220800
   },
   {
    "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
@@ -2140,28 +2160,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785456000
-  },
-  {
-   "token": "34383281909044259756215667723509413820839811815716463480957480797279993360122",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Team WE",
-   "title": "LoL: Team WE vs JD Gaming - Game 1 Winner",
-   "their_price": 0.64,
-   "my_price": 0.64,
-   "slippage_pct": 0.0,
-   "lag_s": 1.5,
-   "shares": 189.15,
-   "cost": 121.06,
-   "fee": 1.31,
-   "opened": 1784885069,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": 66.78,
-   "settled": 1784886695,
-   "end_ts": 1784851200,
-   "sold_shares": 189.15,
-   "sold_proceeds": 189.15
   }
  ],
  "missed": [
@@ -3109,23 +3107,23 @@
  ],
  "missed_pnl": 21539.55,
  "last_fill": {
-  "ts": 1785567040,
+  "ts": 1785567490,
   "side": "BUY",
-  "price": 0.79,
-  "shares": 54.33,
-  "title": "Bitcoin Up or Down - August 1, 2:50AM-2:55AM ET",
-  "outcome": "Up"
+  "price": 0.94,
+  "shares": 60.24,
+  "title": "Will Bitcoin dip to $40,000 in August?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 571.33,
    "n": 90,
    "wins": 33,
-   "open_cost": 709.81,
-   "open_n": 12,
+   "open_cost": 766.44,
+   "open_n": 13,
    "miss_n": 117,
    "miss_pnl": 112272.14,
-   "last_ts": 1785560349
+   "last_ts": 1785567480
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3138,14 +3136,14 @@
    "last_ts": 1785414639
   },
   "1kto1m": {
-   "realized": 162.12,
-   "n": 17,
-   "wins": 1,
-   "open_cost": 42.92,
-   "open_n": 1,
+   "realized": 173.26,
+   "n": 18,
+   "wins": 2,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 17,
    "miss_pnl": -103.42,
-   "last_ts": 1785567035
+   "last_ts": 1785567618
   },
   "Kruto2027": {
    "realized": 248.79,
@@ -3218,5 +3216,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785567348
+ "updated": 1785567622
 }

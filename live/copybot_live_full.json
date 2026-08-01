@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785567348,
+ "updated": 1785567622,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 571.33,
    "n": 90,
    "wins": 33,
-   "open_cost": 709.81,
-   "open_n": 12,
+   "open_cost": 766.44,
+   "open_n": 13,
    "miss_n": 117,
    "miss_pnl": 112272.14,
-   "last_ts": 1785560349
+   "last_ts": 1785567480
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -23,14 +23,14 @@
    "last_ts": 1785414639
   },
   "1kto1m": {
-   "realized": 162.12,
-   "n": 17,
-   "wins": 1,
-   "open_cost": 42.92,
-   "open_n": 1,
+   "realized": 173.26,
+   "n": 18,
+   "wins": 2,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 17,
    "miss_pnl": -103.42,
-   "last_ts": 1785567035
+   "last_ts": 1785567618
   },
   "Kruto2027": {
    "realized": 248.79,
@@ -118,11 +118,31 @@
    "cost": 42.92,
    "fee": 0.2704,
    "opened": 1785567035,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 11.14,
+   "settled": 1785567618,
+   "end_ts": 1785542400
+  },
+  {
+   "token": "43171108223683792926229116193941513170619352156926725221875963255678260552099",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Bitcoin dip to $40,000 in August?",
+   "their_price": 0.94,
+   "my_price": 0.94,
+   "slippage_pct": 0.0,
+   "lag_s": 10.1,
+   "shares": 60.24,
+   "cost": 56.63,
+   "fee": 0.1019,
+   "opened": 1785567480,
    "status": "open",
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1785542400
+   "end_ts": 1788220800
   },
   {
    "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
