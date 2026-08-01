@@ -2164,6 +2164,36 @@
  ],
  "missed": [
   {
+   "ts": 1785578341,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "42899432488342704988410057610915628594524688649436238250083617450163825293663",
+   "cond": "0xa754dbf949dd2b1fbafa3d846564288df3e8e3da4b4062306055bee6b372d4fa",
+   "title": "Will Palantir Technologies Inc. (PLTR) hit (HIGH) $150 in August?",
+   "outcome": "No",
+   "price": 0.5799,
+   "stake": 28.15,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785578340,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "50825092058293657542194164596745813272825150865419431118334975989194381746273",
+   "cond": "0x04646097993a3f048d428dcc051596a0f9962c7955540983a5815eef02e55edf",
+   "title": "Mohammed Ghalibaf out as Speaker of Iran Parliament by December 31, 2026?",
+   "outcome": "Yes",
+   "price": 0.2581,
+   "stake": 30.35,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785577039,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "1326211055864075133719974649484864249770259286643912456278981364786578715890",
@@ -3071,41 +3101,9 @@
    "name": "BikesAreTheBikes",
    "exit_checked": true,
    "exit_price": 0.7856
-  },
-  {
-   "ts": 1784451912,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "86567202803696185629704724961398129231892610051254319801824623009047556217191",
-   "cond": "0xa6480903e54c68f2ee79cacb7861dfcc9b473e8b07d6dcaf2c9923034a5fb56f",
-   "title": "Israel x Iran ceasefire continues through July 31?",
-   "outcome": "No",
-   "price": 0.41,
-   "stake": 98.79,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "sold",
-   "pnl": -14.02,
-   "settled": 1785348943,
-   "name": "BikesAreTheBikes",
-   "exit_price": 0.366
-  },
-  {
-   "ts": 1785319058,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "67592192089512957670850160794576017380707023789350585506938353759516727569825",
-   "cond": "0xbbaa0df1467dd8c0ba4891b68f35d1d63c7e1082bc16151a73092a858408e392",
-   "title": "LoL: T1 vs KT Rolster - Game 1 Winner",
-   "outcome": "KT Rolster",
-   "price": 0.3,
-   "stake": 144.01,
-   "reason": "maker bid unfilled (60s)",
-   "status": "sold",
-   "pnl": -97.76,
-   "settled": 1785322527,
-   "name": "AIcAIc",
-   "exit_price": 0.1055
   }
  ],
- "missed_pnl": 21523.19,
+ "missed_pnl": 21526.27,
  "last_fill": {
   "ts": 1785577874,
   "side": "SELL",
@@ -3121,7 +3119,7 @@
    "wins": 33,
    "open_cost": 823.87,
    "open_n": 14,
-   "miss_n": 118,
+   "miss_n": 120,
    "miss_pnl": 112272.14,
    "last_ts": 1785576842
   },
@@ -3216,5 +3214,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785577881
+ "updated": 1785578350
 }

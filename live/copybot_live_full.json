@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785577881,
+ "updated": 1785578350,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 571.33,
@@ -8,7 +8,7 @@
    "wins": 33,
    "open_cost": 823.87,
    "open_n": 14,
-   "miss_n": 118,
+   "miss_n": 120,
    "miss_pnl": 112272.14,
    "last_ts": 1785576842
   },
@@ -6517,6 +6517,36 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785578341,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "42899432488342704988410057610915628594524688649436238250083617450163825293663",
+   "cond": "0xa754dbf949dd2b1fbafa3d846564288df3e8e3da4b4062306055bee6b372d4fa",
+   "title": "Will Palantir Technologies Inc. (PLTR) hit (HIGH) $150 in August?",
+   "outcome": "No",
+   "price": 0.5799,
+   "stake": 28.15,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785578340,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "50825092058293657542194164596745813272825150865419431118334975989194381746273",
+   "cond": "0x04646097993a3f048d428dcc051596a0f9962c7955540983a5815eef02e55edf",
+   "title": "Mohammed Ghalibaf out as Speaker of Iran Parliament by December 31, 2026?",
+   "outcome": "Yes",
+   "price": 0.2581,
+   "stake": 30.35,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785577039,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
