@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1585.48,
- "deployed": 1274.98,
+ "cash": 1585.53,
+ "deployed": 1274.94,
  "reserve": 0.0,
- "realized": 1860.43,
+ "realized": 1860.44,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 23,
@@ -3109,11 +3109,11 @@
  ],
  "missed_pnl": 21576.94,
  "last_fill": {
-  "ts": 1785596246,
+  "ts": 1785604565,
   "side": "SELL",
-  "price": 0.993,
-  "shares": 14.94,
-  "title": "Will Bitcoin dip to $40,000 in August?",
+  "price": 0.93,
+  "shares": 0.04,
+  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3218,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785596601
+ "updated": 1785604565
 }
