@@ -1,22 +1,22 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 57.45,
+ "stake": 57.43,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1599.9,
- "deployed": 1272.51,
+ "cash": 1484.27,
+ "deployed": 1387.39,
  "reserve": 0.0,
- "realized": 1872.38,
+ "realized": 1871.63,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 24,
- "fees_paid": 435.5,
+ "open_count": 26,
+ "fees_paid": 436.26,
  "fee_rate": 0.03,
  "lag": {
-  "n": 356,
-  "n24": 11,
+  "n": 358,
+  "n24": 13,
   "basis": "24h",
   "avg_s": 5.0,
   "avg_slip_pct": 0.0,
@@ -50,6 +50,46 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "10286659768913348993358470598849242742860975803412404099275992956393149144886",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Israel x Iran ceasefire continues through August 1?",
+   "their_price": 0.91,
+   "my_price": 0.91,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 63.11,
+   "cost": 57.43,
+   "fee": 0.16,
+   "opened": 1785574869,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785542400
+  },
+  {
+   "token": "52147710483318183023156143315213141415940410632254734638455935907277139704912",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "GIANTX",
+   "title": "LoL: GIANTX vs SK Gaming (BO3) - LEC Regular Season",
+   "their_price": 0.65,
+   "my_price": 0.65,
+   "slippage_pct": 0.0,
+   "lag_s": 7.4,
+   "shares": 88.38,
+   "cost": 57.45,
+   "fee": 0.6,
+   "opened": 1785574823,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785542400
+  },
   {
    "token": "51755566490633190587710009082328558101318630200939268705320724845423074644286",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -2118,48 +2158,6 @@
    "end_ts": 1784851200,
    "sold_shares": 213.83,
    "sold_proceeds": 196.25
-  },
-  {
-   "token": "40257860192328331039995645096358822071679870588847044844154817698500464424757",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "WTI Crude Oil (WTI) closes above $94 on July 24?",
-   "their_price": 0.79,
-   "my_price": 0.79,
-   "slippage_pct": 0.0,
-   "lag_s": 6.1,
-   "shares": 50.63,
-   "cost": 40.0,
-   "fee": 0.25,
-   "opened": 1784881321,
-   "status": "closed",
-   "exit_price": 0.9528,
-   "pnl": 7.99,
-   "settled": 1784894344,
-   "end_ts": 1784851200,
-   "sold_shares": 50.63,
-   "sold_proceeds": 48.24
-  },
-  {
-   "token": "86567202803696185629704724961398129231892610051254319801824623009047556217191",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Israel x Iran ceasefire continues through July 31?",
-   "their_price": 0.47,
-   "my_price": 0.47,
-   "slippage_pct": 0.0,
-   "lag_s": 11.6,
-   "shares": 263.35,
-   "cost": 123.77,
-   "fee": 1.97,
-   "opened": 1784887113,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785456000
   }
  ],
  "missed": [
@@ -3108,12 +3106,12 @@
  ],
  "missed_pnl": 21536.91,
  "last_fill": {
-  "ts": 1785567490,
+  "ts": 1785574869,
   "side": "BUY",
-  "price": 0.94,
-  "shares": 60.24,
-  "title": "Will Bitcoin dip to $40,000 in August?",
-  "outcome": "No"
+  "price": 0.91,
+  "shares": 63.11,
+  "title": "Israel x Iran ceasefire continues through August 1?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3180,21 +3178,21 @@
    "realized": 249.59,
    "n": 14,
    "wins": 2,
-   "open_cost": 921.74,
-   "open_n": 10,
+   "open_cost": 979.17,
+   "open_n": 11,
    "miss_n": 37,
    "miss_pnl": -648.81,
-   "last_ts": 1785473555
+   "last_ts": 1785574869
   },
   "JuiceFarm": {
    "realized": -105.68,
    "n": 6,
    "wins": 3,
-   "open_cost": 53.28,
-   "open_n": 1,
+   "open_cost": 110.73,
+   "open_n": 2,
    "miss_n": 4,
    "miss_pnl": 90.82,
-   "last_ts": 1785454490
+   "last_ts": 1785574823
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3217,5 +3215,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785574290
+ "updated": 1785574877
 }

@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785574290,
+ "updated": 1785574877,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 571.33,
@@ -66,21 +66,21 @@
    "realized": 249.59,
    "n": 14,
    "wins": 2,
-   "open_cost": 921.74,
-   "open_n": 10,
+   "open_cost": 979.17,
+   "open_n": 11,
    "miss_n": 37,
    "miss_pnl": -648.81,
-   "last_ts": 1785473555
+   "last_ts": 1785574869
   },
   "JuiceFarm": {
    "realized": -105.68,
    "n": 6,
    "wins": 3,
-   "open_cost": 53.28,
-   "open_n": 1,
+   "open_cost": 110.73,
+   "open_n": 2,
    "miss_n": 4,
    "miss_pnl": 90.82,
-   "last_ts": 1785454490
+   "last_ts": 1785574823
   },
   "0x41558102": {
    "realized": 0.0,
@@ -104,6 +104,46 @@
   }
  },
  "bets": [
+  {
+   "token": "10286659768913348993358470598849242742860975803412404099275992956393149144886",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Israel x Iran ceasefire continues through August 1?",
+   "their_price": 0.91,
+   "my_price": 0.91,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 63.11,
+   "cost": 57.43,
+   "fee": 0.1551,
+   "opened": 1785574869,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785542400
+  },
+  {
+   "token": "52147710483318183023156143315213141415940410632254734638455935907277139704912",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "GIANTX",
+   "title": "LoL: GIANTX vs SK Gaming (BO3) - LEC Regular Season",
+   "their_price": 0.65,
+   "my_price": 0.65,
+   "slippage_pct": 0.0,
+   "lag_s": 7.4,
+   "shares": 88.38,
+   "cost": 57.45,
+   "fee": 0.6032,
+   "opened": 1785574823,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785542400
+  },
   {
    "token": "51755566490633190587710009082328558101318630200939268705320724845423074644286",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
