@@ -2166,6 +2166,21 @@
  ],
  "missed": [
   {
+   "ts": 1785604907,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "14980109967714475040425172542938759843822646035539893575852591461888569553959",
+   "cond": "0x76c1a69f2b0a7fcfa97b56ddbeaad1981a8cb3d8f24c1adce62ffa2d010ebbe0",
+   "title": "Will Spider-Man: Brand New Day have the best domestic opening weekend in 2026?",
+   "outcome": "No",
+   "price": 0.3701,
+   "stake": 57.21,
+   "reason": "maker bid unfilled (94s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1785584907,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "10286659768913348993358470598849242742860975803412404099275992956393149144886",
@@ -3090,25 +3105,9 @@
    "settled": 1785364167,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1785145662,
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "token": "109560195847127443718098720993839508458395767835235641294925271566812897320563",
-   "cond": "0xcdf022c2b67b00eeb6325e4f2e7471cc6db10f907185b12f0a1d5f41b5f64b11",
-   "title": "LoL: Solary vs Esprit Sh\u014dnen (BO1) - LFL Regular Season",
-   "outcome": "Solary",
-   "price": 0.88,
-   "stake": 133.76,
-   "reason": "maker bid unfilled (133s)",
-   "status": "sold",
-   "pnl": 17.76,
-   "settled": 1785363163,
-   "name": "JuiceFarm",
-   "exit_price": 1.0
   }
  ],
- "missed_pnl": 21582.25,
+ "missed_pnl": 21342.23,
  "last_fill": {
   "ts": 1785604565,
   "side": "SELL",
@@ -3184,7 +3183,7 @@
    "wins": 2,
    "open_cost": 921.74,
    "open_n": 10,
-   "miss_n": 38,
+   "miss_n": 39,
    "miss_pnl": -641.06,
    "last_ts": 1785580995
   },
@@ -3219,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785604713
+ "updated": 1785604913
 }
