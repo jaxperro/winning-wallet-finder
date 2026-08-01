@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 56.23,
+ "stake": 57.23,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1555.86,
- "deployed": 1255.76,
+ "cash": 1655.48,
+ "deployed": 1205.95,
  "reserve": 0.0,
- "realized": 1811.59,
+ "realized": 1861.4,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 23,
+ "open_count": 22,
  "fees_paid": 435.01,
  "fee_rate": 0.03,
  "lag": {
@@ -64,10 +64,10 @@
    "cost": 49.81,
    "fee": 0.75,
    "opened": 1785547038,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 49.06,
+   "settled": 1785547756,
    "end_ts": 1785542400
   },
   {
@@ -3145,14 +3145,14 @@
    "last_ts": 1785414639
   },
   "1kto1m": {
-   "realized": 113.06,
-   "n": 16,
-   "wins": 0,
-   "open_cost": 49.81,
-   "open_n": 1,
+   "realized": 162.12,
+   "n": 17,
+   "wins": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 17,
    "miss_pnl": -103.42,
-   "last_ts": 1785547038
+   "last_ts": 1785547756
   },
   "Kruto2027": {
    "realized": 248.79,
@@ -3225,5 +3225,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785547166
+ "updated": 1785547760
 }
