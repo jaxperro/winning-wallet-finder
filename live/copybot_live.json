@@ -5,8 +5,8 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1570.61,
- "deployed": 1342.34,
+ "cash": 1570.63,
+ "deployed": 1342.32,
  "reserve": 0.0,
  "realized": 1912.92,
  "adjustments": 0.03,
@@ -3106,12 +3106,12 @@
  ],
  "missed_pnl": 21509.78,
  "last_fill": {
-  "ts": 1785582806,
+  "ts": 1785589105,
   "side": "SELL",
-  "price": 0.9,
-  "shares": 0.87,
-  "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-  "outcome": "Yes"
+  "price": 0.93,
+  "shares": 0.02,
+  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3215,5 +3215,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785588610
+ "updated": 1785589105
 }
