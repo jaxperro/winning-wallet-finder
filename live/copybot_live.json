@@ -2170,6 +2170,21 @@
  ],
  "missed": [
   {
+   "ts": 1785549850,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "8310650677069487821478025416478130051168635736368290554555541536659374960027",
+   "cond": "0x31327c6fbdc70a44d97f8e8973f536b6a748e01b4c0ca5549ed0910c703b1d7b",
+   "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+   "outcome": "No",
+   "price": 0.85,
+   "stake": 57.23,
+   "reason": "price moved 0.47\u21920.85",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1785549161,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "42772917662483318526183537135033179986000015683684617429577504494110939593913",
@@ -3095,25 +3110,9 @@
    "settled": 1785278384,
    "name": "BikesAreTheBikes",
    "exit_checked": true
-  },
-  {
-   "ts": 1785237314,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "58439042405851389569374765202464187342355223435744588096613828375820301761935",
-   "cond": "0xf6b798166e4afc0cb21e1221c34270a9ce3f3594b6692de3507a9c352020feba",
-   "title": "Will Micron Technology, Inc. (MU) hit (LOW) $750 Week of July 27 2026?",
-   "outcome": "No",
-   "price": 0.62,
-   "stake": 135.4,
-   "reason": "no ask side on the book at copy time",
-   "status": "sold",
-   "pnl": -12.82,
-   "settled": 1785277042,
-   "name": "0xbadaf319",
-   "exit_price": 0.5757
   }
  ],
- "missed_pnl": 21527.53,
+ "missed_pnl": 21525.43,
  "last_fill": {
   "ts": 1785547038,
   "side": "BUY",
@@ -3189,7 +3188,7 @@
    "wins": 2,
    "open_cost": 921.74,
    "open_n": 10,
-   "miss_n": 36,
+   "miss_n": 37,
    "miss_pnl": -646.17,
    "last_ts": 1785473555
   },
@@ -3224,5 +3223,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785549167
+ "updated": 1785549850
 }
