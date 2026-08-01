@@ -2170,6 +2170,21 @@
  ],
  "missed": [
   {
+   "ts": 1785549161,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "42772917662483318526183537135033179986000015683684617429577504494110939593913",
+   "cond": "0xf94c3481523d10cb1757da1b8ce20c666400bcb83f232835e2e6b05676421710",
+   "title": "Will Silver (XAGUSD) hit (LOW) $48 in August?",
+   "outcome": "No",
+   "price": 0.67,
+   "stake": 55.8,
+   "reason": "maker bid unfilled (117s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785547159,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "71739557560388946044087731872467452814125074603840391771492036693615154840015",
@@ -3096,25 +3111,9 @@
    "settled": 1785277042,
    "name": "0xbadaf319",
    "exit_price": 0.5757
-  },
-  {
-   "ts": 1785252427,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "42255817850096714307727261256815922486155091845919156053691558108406981739401",
-   "cond": "0x3008f783badb62b8e95c23d121209a0e3f3b77d3d7026772d6f00889a91d42f2",
-   "title": "Will the price of Bitcoin be between $64,000 and $66,000 on July 28?",
-   "outcome": "No",
-   "price": 0.8301,
-   "stake": 55.21,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 9.35,
-   "settled": 1785277042,
-   "name": "0xbadaf319",
-   "exit_price": 0.9756
   }
  ],
- "missed_pnl": 21436.07,
+ "missed_pnl": 21527.53,
  "last_fill": {
   "ts": 1785547038,
   "side": "BUY",
@@ -3130,7 +3129,7 @@
    "wins": 33,
    "open_cost": 699.42,
    "open_n": 11,
-   "miss_n": 114,
+   "miss_n": 115,
    "miss_pnl": 112262.27,
    "last_ts": 1785541229
   },
@@ -3170,8 +3169,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 2,
-   "miss_pnl": -91.37,
+   "miss_n": 1,
+   "miss_pnl": 0.09,
    "last_ts": 1783867043
   },
   "AIcAIc": {
@@ -3210,8 +3209,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 18,
-   "miss_pnl": -16.7,
+   "miss_n": 19,
+   "miss_pnl": -108.16,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -3225,5 +3224,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785547760
+ "updated": 1785549167
 }
