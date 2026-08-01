@@ -2176,7 +2176,8 @@
    "status": "won",
    "pnl": 12.22,
    "settled": 1785612413,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1785611745,
@@ -3214,5 +3215,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785612416
+ "updated": 1785612845
 }
