@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 57.46,
+ "stake": 116.41,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1415.28,
- "deployed": 1457.62,
+ "cash": 1510.1,
+ "deployed": 1400.15,
  "reserve": 0.0,
- "realized": 1872.86,
+ "realized": 1910.21,
  "adjustments": 0.03,
- "ledger_drift": -0.05,
- "open_count": 28,
- "fees_paid": 437.63,
+ "ledger_drift": -0.04,
+ "open_count": 27,
+ "fees_paid": 437.88,
  "fee_rate": 0.03,
  "lag": {
   "n": 360,
@@ -64,11 +64,13 @@
    "cost": 57.47,
    "fee": 0.78,
    "opened": 1785578676,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785542400
+   "status": "closed",
+   "exit_price": 0.9075,
+   "pnl": 36.57,
+   "settled": 1785579722,
+   "end_ts": 1785542400,
+   "sold_shares": 104.49,
+   "sold_proceeds": 94.82
   },
   {
    "token": "41924814385271001327475674741821953575251218962289218166941963169991583786761",
@@ -3103,12 +3105,12 @@
  ],
  "missed_pnl": 21526.27,
  "last_fill": {
-  "ts": 1785578930,
+  "ts": 1785579722,
   "side": "SELL",
-  "price": 0.94,
-  "shares": 1.14,
-  "title": "Israel x Iran ceasefire continues through August 1?",
-  "outcome": "Yes"
+  "price": 0.91,
+  "shares": 103.63,
+  "title": "LoL: LGD Gaming vs Top Esports - Game 2 Winner",
+  "outcome": "Top Esports"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3162,14 +3164,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 96.92,
-   "n": 40,
+   "realized": 133.49,
+   "n": 41,
    "wins": 0,
-   "open_cost": 57.47,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 8,
    "miss_pnl": -366.65,
-   "last_ts": 1785578676
+   "last_ts": 1785579722
   },
   "BikesAreTheBikes": {
    "realized": 249.59,
@@ -3212,5 +3214,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785578937
+ "updated": 1785579722
 }
