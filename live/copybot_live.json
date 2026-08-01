@@ -2160,6 +2160,21 @@
  ],
  "missed": [
   {
+   "ts": 1785577039,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "1326211055864075133719974649484864249770259286643912456278981364786578715890",
+   "cond": "0x487a2c7f3e43fdb74fe584b3ec3596cef5f26f37fd8eed1370256dbcb45898b8",
+   "title": "Mohammed Ghalibaf out as Speaker of Iran Parliament by September 30, 2026?",
+   "outcome": "No",
+   "price": 0.4,
+   "stake": 17.86,
+   "reason": "maker bid unfilled (98s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785536031,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "89213299320340519312609800070963866900731006421290655419739582074858285792863",
@@ -3084,25 +3099,9 @@
    "settled": 1785322527,
    "name": "AIcAIc",
    "exit_price": 0.1055
-  },
-  {
-   "ts": 1785262738,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "92205817338549581942996291977146287067184626116756204357001405482376199798910",
-   "cond": "0xbdc6833f8a1907f7103fd11b3212a270abdc79fca68c247942efd492956b38ac",
-   "title": "Will the next Google Gemini Pro model added to the Arena Leaderboard debut at a score of at least 1500?",
-   "outcome": "Yes",
-   "price": 0.4,
-   "stake": 40.15,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -1.45,
-   "settled": 1785306472,
-   "name": "0xbadaf319",
-   "exit_price": 0.4
   }
  ],
- "missed_pnl": 21536.91,
+ "missed_pnl": 21523.19,
  "last_fill": {
   "ts": 1785576842,
   "side": "BUY",
@@ -3118,7 +3117,7 @@
    "wins": 33,
    "open_cost": 823.87,
    "open_n": 14,
-   "miss_n": 117,
+   "miss_n": 118,
    "miss_pnl": 112272.14,
    "last_ts": 1785576842
   },
@@ -3213,5 +3212,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785576842
+ "updated": 1785577046
 }
