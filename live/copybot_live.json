@@ -2166,6 +2166,54 @@
  ],
  "missed": [
   {
+   "ts": 1785453599,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "112061967240382599149689205198858360526948984998429264738900923425548076008244",
+   "cond": "0x39605ffa16456a7b84b238d7a2305443fbc971cbbf94bf84c34c76cd5410180a",
+   "title": "Will Gold (GC) dip to (LOW) $3,000 by end of December?",
+   "outcome": "Yes",
+   "price": 0.11,
+   "stake": 8.42,
+   "reason": "maker bid unfilled (125s)",
+   "status": "sold",
+   "pnl": -1.2,
+   "settled": 1785592598,
+   "name": "0xbadaf319",
+   "exit_price": 0.1
+  },
+  {
+   "ts": 1785453599,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "44951722963953529750522869714032390697712163183988488207431058937951658664117",
+   "cond": "0xfcd83805692939d3ea7ee66a1bd93aa08d973ced7cb4000a51cbf484a133ff7a",
+   "title": "Will Gold (GC) dip to (LOW) $2,500 by end of December?",
+   "outcome": "No",
+   "price": 0.1,
+   "stake": 5.94,
+   "reason": "maker bid unfilled (125s)",
+   "status": "sold",
+   "pnl": 49.52,
+   "settled": 1785592598,
+   "name": "0xbadaf319",
+   "exit_price": 0.9381
+  },
+  {
+   "ts": 1784451863,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "50488227317031565004575684525878022626020008256198844799050708993499540064859",
+   "cond": "0x4c80df6f557bb0b9de08c0301ebdce500dd9bdc58400d9269fb8fab1709ed584",
+   "title": "China x Taiwan military clash before 2027?",
+   "outcome": "No",
+   "price": 0.731,
+   "stake": 98.79,
+   "reason": "book unreliable (spread 0.18 > 0.08)",
+   "status": "sold",
+   "pnl": 15.26,
+   "settled": 1785592593,
+   "name": "BikesAreTheBikes",
+   "exit_price": 0.8535
+  },
+  {
    "ts": 1785470250,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "103870460409416656847338772401285687754272075210292233734346832088838695487128",
@@ -2618,36 +2666,6 @@
    "name": "BikesAreTheBikes"
   },
   {
-   "ts": 1785453599,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "112061967240382599149689205198858360526948984998429264738900923425548076008244",
-   "cond": "0x39605ffa16456a7b84b238d7a2305443fbc971cbbf94bf84c34c76cd5410180a",
-   "title": "Will Gold (GC) dip to (LOW) $3,000 by end of December?",
-   "outcome": "Yes",
-   "price": 0.11,
-   "stake": 8.42,
-   "reason": "maker bid unfilled (125s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785453599,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "44951722963953529750522869714032390697712163183988488207431058937951658664117",
-   "cond": "0xfcd83805692939d3ea7ee66a1bd93aa08d973ced7cb4000a51cbf484a133ff7a",
-   "title": "Will Gold (GC) dip to (LOW) $2,500 by end of December?",
-   "outcome": "No",
-   "price": 0.1,
-   "stake": 5.94,
-   "reason": "maker bid unfilled (125s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1785452006,
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
    "token": "86222734336247731664864731734281512829733267574920066804362888057386190851592",
@@ -3086,25 +3104,9 @@
    "settled": 1785363163,
    "name": "JuiceFarm",
    "exit_price": 1.0
-  },
-  {
-   "ts": 1784820182,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "29922880124871912107369653749261396163687764000386220237409162132192311391947",
-   "cond": "0xfe5188a5b3eb20224878822f8deb3e7e1270415c3d5eb6ad14c9e8380d16b115",
-   "title": "Will Microsoft Corporation (MSFT) hit (HIGH) $450 in July?",
-   "outcome": "No",
-   "price": 0.8594,
-   "stake": 64.45,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 2.73,
-   "settled": 1785363161,
-   "name": "0xbadaf319",
-   "exit_price": 0.9021
   }
  ],
- "missed_pnl": 21509.78,
+ "missed_pnl": 21573.36,
  "last_fill": {
   "ts": 1785589105,
   "side": "SELL",
@@ -3121,7 +3123,7 @@
    "open_cost": 713.46,
    "open_n": 13,
    "miss_n": 120,
-   "miss_pnl": 112272.14,
+   "miss_pnl": 112320.46,
    "last_ts": 1785582809
   },
   "gkmgkldfmg": {
@@ -3181,7 +3183,7 @@
    "open_cost": 921.74,
    "open_n": 10,
    "miss_n": 38,
-   "miss_pnl": -661.63,
+   "miss_pnl": -646.37,
    "last_ts": 1785580995
   },
   "JuiceFarm": {
@@ -3215,5 +3217,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785591236
+ "updated": 1785592602
 }
