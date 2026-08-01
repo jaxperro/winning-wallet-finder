@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785618875,
+ "updated": 1785621501,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 605.03,
@@ -73,14 +73,14 @@
    "last_ts": 1785580995
   },
   "JuiceFarm": {
-   "realized": -159.65,
-   "n": 7,
+   "realized": -217.7,
+   "n": 8,
    "wins": 3,
-   "open_cost": 57.45,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 4,
    "miss_pnl": 90.82,
-   "last_ts": 1785592666
+   "last_ts": 1785621497
   },
   "0x41558102": {
    "realized": 0.0,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "52147710483318183023156143315213141415940410632254734638455935907277139704912",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "GIANTX",
+   "title": "LoL: GIANTX vs SK Gaming (BO3) - LEC Regular Season",
+   "their_price": 0.65,
+   "my_price": 0.65,
+   "slippage_pct": 0.0,
+   "lag_s": 7.4,
+   "shares": 88.38,
+   "cost": 57.45,
+   "fee": 0.6032,
+   "opened": 1785574823,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -58.05,
+   "settled": 1785621497,
+   "end_ts": 1785542400
+  },
   {
    "token": "68354490231292339705788355645447204244217234157276853910593583690623904256055",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -251,26 +271,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788220800
-  },
-  {
-   "token": "52147710483318183023156143315213141415940410632254734638455935907277139704912",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "GIANTX",
-   "title": "LoL: GIANTX vs SK Gaming (BO3) - LEC Regular Season",
-   "their_price": 0.65,
-   "my_price": 0.65,
-   "slippage_pct": 0.0,
-   "lag_s": 7.4,
-   "shares": 88.38,
-   "cost": 57.45,
-   "fee": 0.6032,
-   "opened": 1785574823,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785542400
   },
   {
    "token": "51755566490633190587710009082328558101318630200939268705320724845423074644286",
