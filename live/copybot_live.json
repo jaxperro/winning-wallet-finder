@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 56.25,
+ "stake": 56.23,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1606.42,
- "deployed": 1205.95,
+ "cash": 1555.86,
+ "deployed": 1255.76,
  "reserve": 0.0,
- "realized": 1812.34,
+ "realized": 1811.59,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 22,
- "fees_paid": 434.27,
+ "open_count": 23,
+ "fees_paid": 435.01,
  "fee_rate": 0.03,
  "lag": {
-  "n": 352,
-  "n24": 11,
+  "n": 353,
+  "n24": 12,
   "basis": "24h",
-  "avg_s": 4.2,
+  "avg_s": 3.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "94214193770477382934396291061412874061038799084471765478411102971348046903311",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Down",
+   "title": "Bitcoin Up or Down - July 31, 9:15PM-9:20PM ET",
+   "their_price": 0.5,
+   "my_price": 0.5,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 99.62,
+   "cost": 49.81,
+   "fee": 0.75,
+   "opened": 1785547038,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785542400
+  },
   {
    "token": "98251225144804978202460241491785897955759287546023379403187647333812007726510",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2146,31 +2166,24 @@
    "end_ts": 1784851200,
    "sold_shares": 182.36,
    "sold_proceeds": 182.36
-  },
-  {
-   "token": "80495693308906829029683308162293224578453743674738440139240596924963250131399",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the highest temperature in Shanghai be 35\u00b0C on July 24?",
-   "their_price": 0.8778,
-   "my_price": 0.8778,
-   "slippage_pct": 0.0,
-   "lag_s": 7.0,
-   "shares": 13.44,
-   "cost": 11.8,
-   "fee": 0.04,
-   "opened": 1784876363,
-   "status": "closed",
-   "exit_price": 0.999,
-   "pnl": 1.58,
-   "settled": 1784876556,
-   "end_ts": 1784851200,
-   "sold_shares": 13.44,
-   "sold_proceeds": 13.43
   }
  ],
  "missed": [
+  {
+   "ts": 1785547159,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "71739557560388946044087731872467452814125074603840391771492036693615154840015",
+   "cond": "0xf167107f5ced42d688c51576c51f6393efcef0827da02e11b997d503633606b7",
+   "title": "Will Coinbase Global, Inc. (COIN) hit (LOW) $155 in August?",
+   "outcome": "Yes",
+   "price": 0.8411,
+   "stake": 44.06,
+   "reason": "maker bid unfilled (101s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785538189,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -3099,32 +3112,16 @@
    "settled": 1785277042,
    "name": "0xbadaf319",
    "exit_price": 0.9756
-  },
-  {
-   "ts": 1785254456,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "10729113877982954627733259296519930255153096234865579997117363600105394623598",
-   "cond": "0x31a3ddeea7de2cede5400708fa2916a3d9e14e57aef68737a358027a84f88943",
-   "title": "Will the price of Ethereum be above $1,900 on July 28?",
-   "outcome": "No",
-   "price": 0.1124,
-   "stake": 28.32,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": -29.01,
-   "settled": 1785264788,
-   "name": "0xbadaf319",
-   "exit_price": 0.0003
   }
  ],
- "missed_pnl": 111772.93,
+ "missed_pnl": 21436.07,
  "last_fill": {
-  "ts": 1785541223,
-  "side": "SELL",
-  "price": 0.96,
-  "shares": 18.21,
-  "title": "Will Gold (XAUUSD) hit (LOW) $3,600 in August?",
-  "outcome": "No"
+  "ts": 1785547038,
+  "side": "BUY",
+  "price": 0.5,
+  "shares": 99.62,
+  "title": "Bitcoin Up or Down - July 31, 9:15PM-9:20PM ET",
+  "outcome": "Down"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3133,7 +3130,7 @@
    "wins": 33,
    "open_cost": 699.42,
    "open_n": 11,
-   "miss_n": 113,
+   "miss_n": 114,
    "miss_pnl": 112262.27,
    "last_ts": 1785541229
   },
@@ -3151,11 +3148,11 @@
    "realized": 113.06,
    "n": 16,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 49.81,
+   "open_n": 1,
    "miss_n": 17,
    "miss_pnl": -103.42,
-   "last_ts": 1785249263
+   "last_ts": 1785547038
   },
   "Kruto2027": {
    "realized": 248.79,
@@ -3228,5 +3225,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785546831
+ "updated": 1785547166
 }

@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785546831,
+ "updated": 1785547166,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 571.33,
@@ -8,7 +8,7 @@
    "wins": 33,
    "open_cost": 699.42,
    "open_n": 11,
-   "miss_n": 113,
+   "miss_n": 114,
    "miss_pnl": 112262.27,
    "last_ts": 1785541229
   },
@@ -26,11 +26,11 @@
    "realized": 113.06,
    "n": 16,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 49.81,
+   "open_n": 1,
    "miss_n": 17,
    "miss_pnl": -103.42,
-   "last_ts": 1785249263
+   "last_ts": 1785547038
   },
   "Kruto2027": {
    "realized": 248.79,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "94214193770477382934396291061412874061038799084471765478411102971348046903311",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Down",
+   "title": "Bitcoin Up or Down - July 31, 9:15PM-9:20PM ET",
+   "their_price": 0.5,
+   "my_price": 0.5,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 99.62,
+   "cost": 49.81,
+   "fee": 0.7471,
+   "opened": 1785547038,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785542400
+  },
   {
    "token": "98251225144804978202460241491785897955759287546023379403187647333812007726510",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -6373,6 +6393,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785547159,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "71739557560388946044087731872467452814125074603840391771492036693615154840015",
+   "cond": "0xf167107f5ced42d688c51576c51f6393efcef0827da02e11b997d503633606b7",
+   "title": "Will Coinbase Global, Inc. (COIN) hit (LOW) $155 in August?",
+   "outcome": "Yes",
+   "price": 0.8411,
+   "stake": 44.06,
+   "reason": "maker bid unfilled (101s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785538189,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
