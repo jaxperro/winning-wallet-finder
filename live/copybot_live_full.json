@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785562318,
+ "updated": 1785562938,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 571.33,
@@ -8,7 +8,7 @@
    "wins": 33,
    "open_cost": 709.81,
    "open_n": 12,
-   "miss_n": 115,
+   "miss_n": 116,
    "miss_pnl": 112272.14,
    "last_ts": 1785560349
   },
@@ -48,8 +48,8 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 1,
-   "miss_pnl": 0.09,
+   "miss_n": 0,
+   "miss_pnl": 0.0,
    "last_ts": 1783867043
   },
   "AIcAIc": {
@@ -88,8 +88,8 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 19,
-   "miss_pnl": -108.16,
+   "miss_n": 20,
+   "miss_pnl": -108.07,
    "last_ts": 0
   },
   "0xd96750bf": {
@@ -6414,6 +6414,21 @@
  ],
  "missed": [
   {
+   "ts": 1785562936,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "100720310613801593018338978226305070422958119598669850594088450940775255709584",
+   "cond": "0x046323588aa622773f8f4bfee9f659a67b48934cdc18d6241d0ccd1db44f963a",
+   "title": "Will Amazon.com, Inc. (AMZN) hit (HIGH) $256 in August?",
+   "outcome": "Yes",
+   "price": 0.53,
+   "stake": 57.23,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785549161,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "42772917662483318526183537135033179986000015683684617429577504494110939593913",
@@ -9658,7 +9673,7 @@
    "status": "sold",
    "pnl": 0.09,
    "settled": 1783899442,
-   "name": "LSB1",
+   "name": "0x41558102",
    "exit_price": 1.0
   },
   {
