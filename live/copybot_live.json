@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 57.43,
+ "stake": 57.42,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1484.27,
- "deployed": 1387.39,
+ "cash": 1426.26,
+ "deployed": 1444.82,
  "reserve": 0.0,
- "realized": 1871.63,
+ "realized": 1871.04,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 26,
- "fees_paid": 436.26,
+ "open_count": 27,
+ "fees_paid": 436.84,
  "fee_rate": 0.03,
  "lag": {
-  "n": 358,
-  "n24": 13,
+  "n": 359,
+  "n24": 14,
   "basis": "24h",
-  "avg_s": 5.0,
+  "avg_s": 4.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "41924814385271001327475674741821953575251218962289218166941963169991583786761",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will South Korea ETF (EWY) hit (HIGH) $164 in August?",
+   "their_price": 0.66,
+   "my_price": 0.66,
+   "slippage_pct": 0.0,
+   "lag_s": 0.3,
+   "shares": 87.01,
+   "cost": 57.43,
+   "fee": 0.59,
+   "opened": 1785576842,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800
+  },
   {
    "token": "10286659768913348993358470598849242742860975803412404099275992956393149144886",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2136,28 +2156,6 @@
    "end_ts": 1784851200,
    "sold_shares": 258.25,
    "sold_proceeds": 234.37
-  },
-  {
-   "token": "73739632839816504626737108532045400878921898467348280846632249640824887675542",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Bilibili Gaming",
-   "title": "LoL: EDward Gaming vs Bilibili Gaming (BO3) - LPL Group Ascend",
-   "their_price": 0.58,
-   "my_price": 0.58,
-   "slippage_pct": 0.0,
-   "lag_s": 6.0,
-   "shares": 213.83,
-   "cost": 124.02,
-   "fee": 1.56,
-   "opened": 1784898186,
-   "status": "closed",
-   "exit_price": 0.9178,
-   "pnl": 70.67,
-   "settled": 1784904364,
-   "end_ts": 1784851200,
-   "sold_shares": 213.83,
-   "sold_proceeds": 196.25
   }
  ],
  "missed": [
@@ -3106,11 +3104,11 @@
  ],
  "missed_pnl": 21536.91,
  "last_fill": {
-  "ts": 1785574869,
+  "ts": 1785576842,
   "side": "BUY",
-  "price": 0.91,
-  "shares": 63.11,
-  "title": "Israel x Iran ceasefire continues through August 1?",
+  "price": 0.66,
+  "shares": 87.01,
+  "title": "Will South Korea ETF (EWY) hit (HIGH) $164 in August?",
   "outcome": "Yes"
  },
  "wallet_pnl": {
@@ -3118,11 +3116,11 @@
    "realized": 571.33,
    "n": 90,
    "wins": 33,
-   "open_cost": 766.44,
-   "open_n": 13,
+   "open_cost": 823.87,
+   "open_n": 14,
    "miss_n": 117,
    "miss_pnl": 112272.14,
-   "last_ts": 1785567480
+   "last_ts": 1785576842
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3215,5 +3213,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785574877
+ "updated": 1785576842
 }
