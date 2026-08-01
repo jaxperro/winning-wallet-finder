@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 57.23,
+ "stake": 57.22,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1645.49,
- "deployed": 1215.89,
+ "cash": 1602.3,
+ "deployed": 1258.81,
  "reserve": 0.0,
- "realized": 1861.35,
+ "realized": 1861.08,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 23,
- "fees_paid": 435.13,
+ "open_count": 24,
+ "fees_paid": 435.4,
  "fee_rate": 0.03,
  "lag": {
-  "n": 354,
-  "n24": 11,
+  "n": 355,
+  "n24": 12,
   "basis": "24h",
-  "avg_s": 4.2,
+  "avg_s": 4.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "51755566490633190587710009082328558101318630200939268705320724845423074644286",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Up",
+   "title": "Bitcoin Up or Down - August 1, 2:50AM-2:55AM ET",
+   "their_price": 0.79,
+   "my_price": 0.79,
+   "slippage_pct": 0.0,
+   "lag_s": 5.5,
+   "shares": 54.33,
+   "cost": 42.92,
+   "fee": 0.27,
+   "opened": 1785567035,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785542400
+  },
   {
    "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2142,28 +2162,6 @@
    "end_ts": 1784851200,
    "sold_shares": 189.15,
    "sold_proceeds": 189.15
-  },
-  {
-   "token": "16686602356235900511267666457287992561973903059220978509691578764880532993490",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will ByteDance's valuation hit (HIGH) $1.5T by December 31?",
-   "their_price": 0.95,
-   "my_price": 0.94,
-   "slippage_pct": -0.0105,
-   "lag_s": 0.7,
-   "shares": 53.75,
-   "cost": 50.53,
-   "fee": 0.09,
-   "opened": 1784100418,
-   "status": "closed",
-   "exit_price": 0.9283,
-   "pnl": -0.73,
-   "settled": 1784886186,
-   "sold_shares": 53.74,
-   "sold_proceeds": 49.89,
-   "end_ts": 1798761600
   }
  ],
  "missed": [
@@ -3112,12 +3110,12 @@
  ],
  "missed_pnl": 21535.21,
  "last_fill": {
-  "ts": 1785565140,
-  "side": "SELL",
-  "price": 0.91,
-  "shares": 0.26,
-  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
-  "outcome": "No"
+  "ts": 1785567040,
+  "side": "BUY",
+  "price": 0.79,
+  "shares": 54.33,
+  "title": "Bitcoin Up or Down - August 1, 2:50AM-2:55AM ET",
+  "outcome": "Up"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3144,11 +3142,11 @@
    "realized": 162.12,
    "n": 17,
    "wins": 1,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 42.92,
+   "open_n": 1,
    "miss_n": 17,
    "miss_pnl": -103.42,
-   "last_ts": 1785547756
+   "last_ts": 1785567035
   },
   "Kruto2027": {
    "realized": 248.79,
@@ -3221,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785565145
+ "updated": 1785567080
 }
