@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 57.42,
+ "stake": 57.47,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1426.26,
- "deployed": 1444.82,
+ "cash": 1471.37,
+ "deployed": 1402.24,
  "reserve": 0.0,
- "realized": 1871.04,
+ "realized": 1873.57,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
  "open_count": 27,
- "fees_paid": 436.84,
+ "fees_paid": 436.85,
  "fee_rate": 0.03,
  "lag": {
   "n": 359,
@@ -148,7 +148,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1788220800
+   "end_ts": 1788220800,
+   "sold_shares": 45.3,
+   "sold_proceeds": 45.11
   },
   {
    "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
@@ -3103,12 +3105,12 @@
  ],
  "missed_pnl": 21523.19,
  "last_fill": {
-  "ts": 1785576842,
-  "side": "BUY",
-  "price": 0.66,
-  "shares": 87.01,
-  "title": "Will South Korea ETF (EWY) hit (HIGH) $164 in August?",
-  "outcome": "Yes"
+  "ts": 1785577321,
+  "side": "SELL",
+  "price": 0.996,
+  "shares": 15.1,
+  "title": "Will Bitcoin dip to $40,000 in August?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3212,5 +3214,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785577046
+ "updated": 1785577321
 }
