@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785587100,
+ "updated": 1785588540,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 600.16,
@@ -69,7 +69,7 @@
    "open_cost": 921.74,
    "open_n": 10,
    "miss_n": 38,
-   "miss_pnl": -648.81,
+   "miss_pnl": -661.63,
    "last_ts": 1785580995
   },
   "JuiceFarm": {
@@ -6540,6 +6540,22 @@
  ],
  "missed": [
   {
+   "ts": 1785470250,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "103870460409416656847338772401285687754272075210292233734346832088838695487128",
+   "cond": "0xbe48dfd8fb2d44ebad08c3b170799c6633af2b68ce0df17e633e12a89ed734e3",
+   "title": "Will PH win the 2026 Negeri Sembilan general elections?",
+   "outcome": "No",
+   "price": 0.71,
+   "stake": 53.59,
+   "reason": "maker bid unfilled (117s)",
+   "status": "sold",
+   "pnl": -12.82,
+   "settled": 1785588537,
+   "name": "BikesAreTheBikes",
+   "exit_price": 0.5537
+  },
+  {
    "ts": 1785584907,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "10286659768913348993358470598849242742860975803412404099275992956393149144886",
@@ -6959,21 +6975,6 @@
    "settled": 1785494766,
    "name": "0xbadaf319",
    "exit_price": 0.2972
-  },
-  {
-   "ts": 1785470250,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "103870460409416656847338772401285687754272075210292233734346832088838695487128",
-   "cond": "0xbe48dfd8fb2d44ebad08c3b170799c6633af2b68ce0df17e633e12a89ed734e3",
-   "title": "Will PH win the 2026 Negeri Sembilan general elections?",
-   "outcome": "No",
-   "price": 0.71,
-   "stake": 53.59,
-   "reason": "maker bid unfilled (117s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1785458766,
