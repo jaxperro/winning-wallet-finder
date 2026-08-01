@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1645.03,
- "deployed": 1216.3,
+ "cash": 1645.25,
+ "deployed": 1216.1,
  "reserve": 0.0,
- "realized": 1861.3,
+ "realized": 1861.32,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
  "open_count": 23,
@@ -3113,12 +3113,12 @@
  ],
  "missed_pnl": 21535.3,
  "last_fill": {
-  "ts": 1785560355,
-  "side": "BUY",
-  "price": 0.6453,
-  "shares": 16.1,
-  "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
-  "outcome": "Yes"
+  "ts": 1785562318,
+  "side": "SELL",
+  "price": 0.92,
+  "shares": 0.25,
+  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3222,5 +3222,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785561635
+ "updated": 1785562318
 }
