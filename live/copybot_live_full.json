@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785604913,
+ "updated": 1785611752,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 603.37,
@@ -8,7 +8,7 @@
    "wins": 33,
    "open_cost": 656.83,
    "open_n": 12,
-   "miss_n": 120,
+   "miss_n": 121,
    "miss_pnl": 112324.04,
    "last_ts": 1785596252
   },
@@ -6539,6 +6539,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785611745,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "97308898246544661993978659530768075063335593853601089388728293522650950988709",
+   "cond": "0x88a19761fa049ae36da8a403464db9f356a7ea7d0163415052ed748bf72a20bf",
+   "title": "Puffpaw FDV above $400M one day after launch?",
+   "outcome": "No",
+   "price": 0.781,
+   "stake": 41.06,
+   "reason": "thin book ($1 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785604907,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
