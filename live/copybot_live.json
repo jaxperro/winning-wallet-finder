@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1655.48,
- "deployed": 1205.95,
+ "cash": 1655.53,
+ "deployed": 1205.91,
  "reserve": 0.0,
- "realized": 1861.4,
+ "realized": 1861.41,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
  "open_count": 22,
@@ -3115,12 +3115,12 @@
  ],
  "missed_pnl": 21535.3,
  "last_fill": {
-  "ts": 1785547038,
-  "side": "BUY",
-  "price": 0.5,
-  "shares": 99.62,
-  "title": "Bitcoin Up or Down - July 31, 9:15PM-9:20PM ET",
-  "outcome": "Down"
+  "ts": 1785551489,
+  "side": "SELL",
+  "price": 0.91,
+  "shares": 0.05,
+  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3224,5 +3224,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785550244
+ "updated": 1785551490
 }
