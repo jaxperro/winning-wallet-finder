@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 116.51,
+ "stake": 116.52,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1569.82,
- "deployed": 1342.95,
+ "cash": 1570.61,
+ "deployed": 1342.34,
  "reserve": 0.0,
- "realized": 1912.74,
+ "realized": 1912.92,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 26,
+ "open_count": 25,
  "fees_paid": 437.98,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+   "their_price": 0.71,
+   "my_price": 0.7,
+   "slippage_pct": -0.0141,
+   "lag_s": 5.5,
+   "shares": 157.71,
+   "cost": 110.4,
+   "fee": 0.99,
+   "opened": 1784709738,
+   "status": "closed",
+   "exit_price": 0.8891,
+   "pnl": 28.83,
+   "settled": 1785582809,
+   "sold_shares": 157.71,
+   "sold_proceeds": 140.22,
+   "end_ts": null
+  },
   {
    "token": "10286659768913348993358470598849242742860975803412404099275992956393149144886",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2140,26 +2162,6 @@
    "end_ts": 1784851200,
    "sold_shares": 29.03,
    "sold_proceeds": 27.23
-  },
-  {
-   "token": "68315926096182221986995516814797530272425122547938404327641913821151049555944",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Bilibili Gaming",
-   "title": "LoL: EDward Gaming vs Bilibili Gaming - Game 1 Winner",
-   "their_price": 0.75,
-   "my_price": 0.75,
-   "slippage_pct": 0.0,
-   "lag_s": 20.2,
-   "shares": 165.41,
-   "cost": 124.06,
-   "fee": 0.93,
-   "opened": 1784895724,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -124.99,
-   "settled": 1784907138,
-   "end_ts": 1784851200
   }
  ],
  "missed": [
@@ -3105,23 +3107,23 @@
  ],
  "missed_pnl": 21526.27,
  "last_fill": {
-  "ts": 1785581189,
+  "ts": 1785582806,
   "side": "SELL",
-  "price": 0.93,
-  "shares": 2.24,
-  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
-  "outcome": "No"
+  "price": 0.9,
+  "shares": 0.87,
+  "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 571.33,
-   "n": 90,
+   "realized": 600.16,
+   "n": 91,
    "wins": 33,
-   "open_cost": 823.87,
-   "open_n": 14,
+   "open_cost": 713.46,
+   "open_n": 13,
    "miss_n": 120,
    "miss_pnl": 112272.14,
-   "last_ts": 1785576842
+   "last_ts": 1785582809
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3214,5 +3216,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785581189
+ "updated": 1785582809
 }

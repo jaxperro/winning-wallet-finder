@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785581189,
+ "updated": 1785582809,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 571.33,
-   "n": 90,
+   "realized": 600.16,
+   "n": 91,
    "wins": 33,
-   "open_cost": 823.87,
-   "open_n": 14,
+   "open_cost": 713.46,
+   "open_n": 13,
    "miss_n": 120,
    "miss_pnl": 112272.14,
-   "last_ts": 1785576842
+   "last_ts": 1785582809
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -104,6 +104,28 @@
   }
  },
  "bets": [
+  {
+   "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will Benjamin Netanyahu visit New York City by December 31?",
+   "their_price": 0.71,
+   "my_price": 0.7000190221455304,
+   "slippage_pct": -0.0141,
+   "lag_s": 5.5,
+   "shares": 157.71091621615264,
+   "cost": 110.40064135130685,
+   "fee": 0.9936,
+   "opened": 1784709738,
+   "status": "closed",
+   "exit_price": 0.8891,
+   "pnl": 28.83,
+   "settled": 1785582809,
+   "sold_shares": 157.7139890732955,
+   "sold_proceeds": 140.2214814706291,
+   "end_ts": null
+  },
   {
    "token": "10286659768913348993358470598849242742860975803412404099275992956393149144886",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2678,28 +2700,6 @@
    "settled": 1784712482,
    "sold_shares": 199.232291631961,
    "sold_proceeds": 46.72555089186055
-  },
-  {
-   "token": "30518385375198439635185229487622977022492810585983145828956543777339451661080",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will Benjamin Netanyahu visit New York City by December 31?",
-   "their_price": 0.71,
-   "my_price": 0.7000190221455304,
-   "slippage_pct": -0.0141,
-   "lag_s": 5.5,
-   "shares": 157.71091621615264,
-   "cost": 110.40064135130685,
-   "fee": 0.9936,
-   "opened": 1784709738,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 156.83943619758801,
-   "sold_proceeds": 139.4367451752568,
-   "end_ts": null
   },
   {
    "token": "56895600526342043824967043463285146349388358932785516761025080000931732654952",
