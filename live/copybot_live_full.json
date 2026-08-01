@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785611752,
+ "updated": 1785612416,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 603.37,
-   "n": 92,
-   "wins": 33,
-   "open_cost": 656.83,
-   "open_n": 12,
+   "realized": 605.03,
+   "n": 93,
+   "wins": 34,
+   "open_cost": 650.03,
+   "open_n": 11,
    "miss_n": 121,
-   "miss_pnl": 112324.04,
-   "last_ts": 1785596252
+   "miss_pnl": 112336.26,
+   "last_ts": 1785612410
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "68354490231292339705788355645447204244217234157276853910593583690623904256055",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Canva's valuation hit (LOW) $39B by July 31?",
+   "their_price": 0.8,
+   "my_price": 0.8,
+   "slippage_pct": 0.0,
+   "lag_s": 6.2,
+   "shares": 8.5,
+   "cost": 6.8,
+   "fee": 0.0408,
+   "opened": 1784874168,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 1.66,
+   "settled": 1785612410,
+   "end_ts": 1785542400
+  },
   {
    "token": "43171108223683792926229116193941513170619352156926725221875963255678260552099",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2410,26 +2430,6 @@
    "end_ts": 1784851200,
    "sold_shares": 13.44,
    "sold_proceeds": 13.4261572032
-  },
-  {
-   "token": "68354490231292339705788355645447204244217234157276853910593583690623904256055",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Canva's valuation hit (LOW) $39B by July 31?",
-   "their_price": 0.8,
-   "my_price": 0.8,
-   "slippage_pct": 0.0,
-   "lag_s": 6.2,
-   "shares": 8.5,
-   "cost": 6.8,
-   "fee": 0.0408,
-   "opened": 1784874168,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785542400
   },
   {
    "token": "80270372288514892122229303181424592994977341771902366596528480848577129708762",
@@ -6540,6 +6540,21 @@
  ],
  "missed": [
   {
+   "ts": 1784573567,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "83778159848246307298177835560751845581203660912608603239968031176372923069932",
+   "cond": "0xf649be9e9c5ce3df0834e80690ee19f9696db9ee7c4b742b06cd3a84167c8a3d",
+   "title": "Will Lambda's valuation hit (HIGH) $8.5B by July 31?",
+   "outcome": "No",
+   "price": 0.75,
+   "stake": 37.5,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 12.22,
+   "settled": 1785612413,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785611745,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "97308898246544661993978659530768075063335593853601089388728293522650950988709",
@@ -8969,21 +8984,6 @@
    "settled": 1784575514,
    "name": "1kto1m",
    "exit_price": 0.36
-  },
-  {
-   "ts": 1784573567,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "83778159848246307298177835560751845581203660912608603239968031176372923069932",
-   "cond": "0xf649be9e9c5ce3df0834e80690ee19f9696db9ee7c4b742b06cd3a84167c8a3d",
-   "title": "Will Lambda's valuation hit (HIGH) $8.5B by July 31?",
-   "outcome": "No",
-   "price": 0.75,
-   "stake": 37.5,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784563071,
