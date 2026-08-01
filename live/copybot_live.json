@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1414.21,
- "deployed": 1458.65,
+ "cash": 1415.28,
+ "deployed": 1457.62,
  "reserve": 0.0,
- "realized": 1872.83,
+ "realized": 1872.86,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
  "open_count": 28,
@@ -109,8 +109,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785542400,
-   "sold_shares": 1.14,
-   "sold_proceeds": 1.07
+   "sold_shares": 2.27,
+   "sold_proceeds": 2.13
   },
   {
    "token": "52147710483318183023156143315213141415940410632254734638455935907277139704912",
@@ -3103,12 +3103,12 @@
  ],
  "missed_pnl": 21526.27,
  "last_fill": {
-  "ts": 1785578718,
+  "ts": 1785578930,
   "side": "SELL",
-  "price": 0.93,
-  "shares": 0.03,
-  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
-  "outcome": "No"
+  "price": 0.94,
+  "shares": 1.14,
+  "title": "Israel x Iran ceasefire continues through August 1?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3212,5 +3212,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785578726
+ "updated": 1785578937
 }
