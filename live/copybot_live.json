@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 56.07,
+ "stake": 56.05,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1536.47,
- "deployed": 1266.79,
+ "cash": 1479.49,
+ "deployed": 1322.85,
  "reserve": 0.0,
- "realized": 1803.23,
+ "realized": 1802.31,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 22,
- "fees_paid": 439.45,
+ "open_count": 23,
+ "fees_paid": 440.36,
  "fee_rate": 0.03,
  "lag": {
-  "n": 361,
-  "n24": 9,
+  "n": 362,
+  "n24": 10,
   "basis": "24h",
-  "avg_s": 6.7,
+  "avg_s": 6.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "42904109279829735534970379368330412783573788683856067315929342371394889824245",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Up",
+   "title": "Bitcoin Up or Down - August 1, 8PM ET",
+   "their_price": 0.4572,
+   "my_price": 0.4572,
+   "slippage_pct": 0.0,
+   "lag_s": 7.0,
+   "shares": 122.61,
+   "cost": 56.06,
+   "fee": 0.91,
+   "opened": 1785632064,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785628800
+  },
   {
    "token": "69096949813045225336683960679829035937696902053122957721872788215708031375062",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2136,28 +2156,6 @@
    "pnl": 1.97,
    "settled": 1784925233,
    "end_ts": 1784851200
-  },
-  {
-   "token": "92311770312753199093108882953860845402721893472375016535613900981432589828768",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will \"Ransom Canyon: Season 2\" be the top global Netflix show this week?",
-   "their_price": 0.93,
-   "my_price": 0.93,
-   "slippage_pct": 0.0,
-   "lag_s": 0.9,
-   "shares": 33.42,
-   "cost": 31.08,
-   "fee": 0.07,
-   "opened": 1784924018,
-   "status": "closed",
-   "exit_price": 0.9486,
-   "pnl": 0.56,
-   "settled": 1784924188,
-   "end_ts": 1785196800,
-   "sold_shares": 33.42,
-   "sold_proceeds": 31.7
   }
  ],
  "missed": [
@@ -3104,12 +3102,12 @@
  ],
  "missed_pnl": 21370.85,
  "last_fill": {
-  "ts": 1785628289,
+  "ts": 1785632071,
   "side": "BUY",
-  "price": 0.13,
-  "shares": 431.49,
-  "title": "Israel x Iran ceasefire continues through August 2?",
-  "outcome": "No"
+  "price": 0.4572,
+  "shares": 122.61,
+  "title": "Bitcoin Up or Down - August 1, 8PM ET",
+  "outcome": "Up"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3136,11 +3134,11 @@
    "realized": 173.26,
    "n": 18,
    "wins": 2,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 56.06,
+   "open_n": 1,
    "miss_n": 17,
    "miss_pnl": -103.42,
-   "last_ts": 1785567618
+   "last_ts": 1785632064
   },
   "Kruto2027": {
    "realized": 248.79,
@@ -3213,5 +3211,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785628355
+ "updated": 1785632072
 }
