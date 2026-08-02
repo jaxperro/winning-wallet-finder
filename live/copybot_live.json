@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 115.64,
+ "stake": 56.67,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 1436.82,
- "deployed": 1454.26,
+ "deployed": 1396.68,
  "reserve": 0.0,
- "realized": 1891.05,
+ "realized": 1833.47,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 26,
+ "open_count": 25,
  "fees_paid": 448.81,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "102071153892246039627048034194967021680193759805083679061162745293075874048047",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "ThunderTalk Gaming",
+   "title": "LoL: ThunderTalk Gaming vs Team WE (BO3) - LPL Group Ascend",
+   "their_price": 0.33,
+   "my_price": 0.33,
+   "slippage_pct": 0.0,
+   "lag_s": 1.8,
+   "shares": 174.5,
+   "cost": 57.59,
+   "fee": 1.16,
+   "opened": 1785660187,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -58.75,
+   "settled": 1785678289,
+   "end_ts": 1785628800
+  },
   {
    "token": "76752916551697359157851234269297016591012843522959969977805224055761398575042",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -91,26 +111,6 @@
    "end_ts": 1785628800,
    "sold_shares": 268.18,
    "sold_proceeds": 243.38
-  },
-  {
-   "token": "102071153892246039627048034194967021680193759805083679061162745293075874048047",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "ThunderTalk Gaming",
-   "title": "LoL: ThunderTalk Gaming vs Team WE (BO3) - LPL Group Ascend",
-   "their_price": 0.33,
-   "my_price": 0.33,
-   "slippage_pct": 0.0,
-   "lag_s": 1.8,
-   "shares": 174.5,
-   "cost": 57.59,
-   "fee": 1.16,
-   "opened": 1785660187,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785628800
   },
   {
    "token": "10583274140258354908819985785786606483313711451324503548018721478661081656491",
@@ -3163,14 +3163,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 142.73,
-   "n": 43,
+   "realized": 83.98,
+   "n": 44,
    "wins": 0,
-   "open_cost": 57.59,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 8,
    "miss_pnl": -366.65,
-   "last_ts": 1785676407
+   "last_ts": 1785678289
   },
   "BikesAreTheBikes": {
    "realized": 251.76,
@@ -3213,5 +3213,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785676417
+ "updated": 1785678299
 }
