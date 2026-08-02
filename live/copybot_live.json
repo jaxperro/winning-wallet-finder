@@ -2160,6 +2160,21 @@
  ],
  "missed": [
   {
+   "ts": 1785684067,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "23537842165977046370574778086600347274303604738338768967720021180647769610330",
+   "cond": "0x225a5d5900068fcf5c0a9f4dc9cbaf84d492be94c71782fbcea0461cd935048c",
+   "title": "Trump out as President by August 31?",
+   "outcome": "No",
+   "price": 0.989,
+   "stake": 56.67,
+   "reason": "price moved 0.92\u21920.99",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1785531442,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "51783880760599120440014289525159847949469877325479084384177696513850906603472",
@@ -3083,25 +3098,9 @@
    "settled": 1785397187,
    "name": "0xbadaf319",
    "exit_price": 0.6634
-  },
-  {
-   "ts": 1784517526,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "94940524945210845047467028525980880667745668441880643750095925409687698630543",
-   "cond": "0xe7092235327ee5dcf40eef80c9da3c0170287ceb2b58a05292218ecd6d0dff6b",
-   "title": "Will Squid launch a token by March 31, 2027?",
-   "outcome": "Yes",
-   "price": 0.091,
-   "stake": 51.19,
-   "reason": "thin book ($2 within 5c < $50)",
-   "status": "sold",
-   "pnl": 433.1,
-   "settled": 1785397185,
-   "name": "0xbadaf319",
-   "exit_price": 0.8669
   }
  ],
- "missed_pnl": 21455.08,
+ "missed_pnl": 21552.31,
  "last_fill": {
   "ts": 1785681366,
   "side": "BUY",
@@ -3177,7 +3176,7 @@
    "wins": 2,
    "open_cost": 1080.52,
    "open_n": 13,
-   "miss_n": 40,
+   "miss_n": 41,
    "miss_pnl": -651.77,
    "last_ts": 1785643532
   },
@@ -3212,5 +3211,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785681565
+ "updated": 1785684067
 }
