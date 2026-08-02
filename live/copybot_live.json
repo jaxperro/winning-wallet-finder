@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 115.24,
+ "stake": 57.59,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1368.99,
- "deployed": 1512.03,
+ "cash": 1252.14,
+ "deployed": 1627.27,
  "reserve": 0.0,
- "realized": 1880.99,
+ "realized": 1879.37,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 26,
- "fees_paid": 445.38,
+ "open_count": 27,
+ "fees_paid": 446.99,
  "fee_rate": 0.03,
  "lag": {
-  "n": 368,
-  "n24": 12,
+  "n": 369,
+  "n24": 13,
   "basis": "24h",
-  "avg_s": 1.2,
+  "avg_s": 1.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "76752916551697359157851234269297016591012843522959969977805224055761398575042",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "ThunderTalk Gaming",
+   "title": "LoL: ThunderTalk Gaming vs Team WE - Game 2 Winner",
+   "their_price": 0.5329,
+   "my_price": 0.5329,
+   "slippage_pct": 0.0,
+   "lag_s": 7.8,
+   "shares": 216.26,
+   "cost": 115.24,
+   "fee": 1.61,
+   "opened": 1785658581,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785628800
+  },
   {
    "token": "107302480629937459746801418935680895835862951318163699611993485492174680492656",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2136,28 +2156,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788220800
-  },
-  {
-   "token": "41128359410147540990090031143993561801439881809667646963277254224817395601063",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Team WE",
-   "title": "LoL: LGD Gaming vs Team WE - Game 2 Winner",
-   "their_price": 0.63,
-   "my_price": 0.63,
-   "slippage_pct": 0.0,
-   "lag_s": 7.2,
-   "shares": 196.07,
-   "cost": 123.52,
-   "fee": 1.37,
-   "opened": 1784966555,
-   "status": "closed",
-   "exit_price": 0.96,
-   "pnl": 63.33,
-   "settled": 1784968110,
-   "end_ts": 1784937600,
-   "sold_shares": 196.07,
-   "sold_proceeds": 188.22
   }
  ],
  "missed": [
@@ -3105,12 +3103,12 @@
  ],
  "missed_pnl": 21354.76,
  "last_fill": {
-  "ts": 1785656660,
+  "ts": 1785658588,
   "side": "BUY",
-  "price": 0.43,
-  "shares": 268.18,
-  "title": "LoL: ThunderTalk Gaming vs Team WE (BO3) - LPL Group Ascend",
-  "outcome": "Team WE"
+  "price": 0.5329,
+  "shares": 216.26,
+  "title": "LoL: ThunderTalk Gaming vs Team WE - Game 2 Winner",
+  "outcome": "ThunderTalk Gaming"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3167,11 +3165,11 @@
    "realized": 133.49,
    "n": 41,
    "wins": 0,
-   "open_cost": 115.32,
-   "open_n": 1,
+   "open_cost": 230.56,
+   "open_n": 2,
    "miss_n": 8,
    "miss_pnl": -366.65,
-   "last_ts": 1785656597
+   "last_ts": 1785658581
   },
   "BikesAreTheBikes": {
    "realized": 251.76,
@@ -3214,5 +3212,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785656728
+ "updated": 1785658632
 }

@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785656728,
+ "updated": 1785658632,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 604.15,
@@ -56,11 +56,11 @@
    "realized": 133.49,
    "n": 41,
    "wins": 0,
-   "open_cost": 115.32,
-   "open_n": 1,
+   "open_cost": 230.56,
+   "open_n": 2,
    "miss_n": 8,
    "miss_pnl": -366.65,
-   "last_ts": 1785656597
+   "last_ts": 1785658581
   },
   "BikesAreTheBikes": {
    "realized": 251.76,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "76752916551697359157851234269297016591012843522959969977805224055761398575042",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "ThunderTalk Gaming",
+   "title": "LoL: ThunderTalk Gaming vs Team WE - Game 2 Winner",
+   "their_price": 0.5329,
+   "my_price": 0.5329,
+   "slippage_pct": 0.0,
+   "lag_s": 7.8,
+   "shares": 216.26,
+   "cost": 115.24,
+   "fee": 1.6149,
+   "opened": 1785658581,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785628800
+  },
   {
    "token": "107302480629937459746801418935680895835862951318163699611993485492174680492656",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
