@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785636854,
+ "updated": 1785640474,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 605.03,
@@ -66,11 +66,11 @@
    "realized": 251.76,
    "n": 15,
    "wins": 2,
-   "open_cost": 977.83,
-   "open_n": 11,
+   "open_cost": 1035.21,
+   "open_n": 12,
    "miss_n": 40,
    "miss_pnl": -652.34,
-   "last_ts": 1785628277
+   "last_ts": 1785640467
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "31798323952461961650983638405389053740930972138111089234409584277872747279143",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Israel x Iran ceasefire continues through August 15?",
+   "their_price": 0.16,
+   "my_price": 0.16,
+   "slippage_pct": 0.0,
+   "lag_s": 1.1,
+   "shares": 358.61,
+   "cost": 57.38,
+   "fee": 1.4459,
+   "opened": 1785640467,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786752000
+  },
   {
    "token": "42904109279829735534970379368330412783573788683856067315929342371394889824245",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
