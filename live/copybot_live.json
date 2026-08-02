@@ -2172,7 +2172,8 @@
    "status": "won",
    "pnl": 6.47,
    "settled": 1785633775,
-   "name": "1kto1m"
+   "name": "1kto1m",
+   "exit_checked": true
   },
   {
    "ts": 1784628735,
@@ -3211,5 +3212,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785633775
+ "updated": 1785634990
 }
