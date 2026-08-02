@@ -2162,6 +2162,21 @@
  ],
  "missed": [
   {
+   "ts": 1785671059,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "17391547350755989425804702732311542223226424331639399782496706299760208244671",
+   "cond": "0x563292d4a0e819ca52af928027450cedad7fff7ef7588252b8752c75a035c407",
+   "title": "Will Rocket Lab USA, Inc. (RKLB) hit (HIGH) $80 in August?",
+   "outcome": "No",
+   "price": 0.61,
+   "stake": 5.46,
+   "reason": "maker bid unfilled (75s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785644854,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "78773028590498295371277243725072177227643111430128121386647940889892206666258",
@@ -3085,25 +3100,9 @@
    "settled": 1785397185,
    "name": "0xbadaf319",
    "exit_price": 0.8669
-  },
-  {
-   "ts": 1784450722,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "32952048155093419718055060819712841482842350791391116195205201413217889733414",
-   "cond": "0xe6d5e5da83874cd82c9b651a8a5d4fc541a800a295fb62e85124b4f5a04a4b7d",
-   "title": "Will China invade Taiwan by December 31, 2027?",
-   "outcome": "No",
-   "price": 0.82,
-   "stake": 98.79,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "sold",
-   "pnl": -21.28,
-   "settled": 1785395183,
-   "name": "BikesAreTheBikes",
-   "exit_price": 0.6546
   }
  ],
- "missed_pnl": 21354.76,
+ "missed_pnl": 21454.51,
  "last_fill": {
   "ts": 1785665997,
   "side": "SELL",
@@ -3119,7 +3118,7 @@
    "wins": 34,
    "open_cost": 677.31,
    "open_n": 12,
-   "miss_n": 122,
+   "miss_n": 123,
    "miss_pnl": 112335.99,
    "last_ts": 1785656393
   },
@@ -3214,5 +3213,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785666004
+ "updated": 1785671059
 }
