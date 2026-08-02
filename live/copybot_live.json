@@ -2162,6 +2162,21 @@
  ],
  "missed": [
   {
+   "ts": 1785644854,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "78773028590498295371277243725072177227643111430128121386647940889892206666258",
+   "cond": "0x93642e5f0f0731dafb4e683a664d3c0a4022b0d4bc9a09180ed957b97bbf648f",
+   "title": "Will Silver (XAGUSD) hit (LOW) $52 in August?",
+   "outcome": "No",
+   "price": 0.63,
+   "stake": 62.84,
+   "reason": "maker bid unfilled (98s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785636848,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "106384382902272259275653733417531627173944931937610707897597239994735553962869",
@@ -3085,25 +3100,9 @@
    "settled": 1785395183,
    "name": "BikesAreTheBikes",
    "exit_price": 0.6546
-  },
-  {
-   "ts": 1785381127,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "49096838469319785284977438732691316133406822442318517146017951204646833825601",
-   "cond": "0x22452b38b25ef76546f4b47f85540e57fb360b27ae27e7affa59feb6d2303b0e",
-   "title": "Will NVIDIA (NVDA) close above $190 on July 30?",
-   "outcome": "Yes",
-   "price": 0.6,
-   "stake": 50,
-   "reason": "maker bid unfilled (60s)",
-   "status": "sold",
-   "pnl": -0.36,
-   "settled": 1785391164,
-   "name": "0xbadaf319",
-   "exit_price": 0.61
   }
  ],
- "missed_pnl": 21343.42,
+ "missed_pnl": 21355.03,
  "last_fill": {
   "ts": 1785643532,
   "side": "BUY",
@@ -3119,7 +3118,7 @@
    "wins": 34,
    "open_cost": 650.03,
    "open_n": 11,
-   "miss_n": 121,
+   "miss_n": 122,
    "miss_pnl": 112336.26,
    "last_ts": 1785612410
   },
@@ -3214,5 +3213,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785643532
+ "updated": 1785644860
 }
