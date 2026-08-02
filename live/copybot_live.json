@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 56.15,
+ "stake": 55.02,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 1272.19,
- "deployed": 1535.5,
+ "deployed": 1478.84,
  "reserve": 0.0,
- "realized": 1807.66,
+ "realized": 1751.0,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 28,
+ "open_count": 27,
  "fees_paid": 451.26,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "105228447769711522038232773133913525386743086795835584168368052566540977107792",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "No",
+   "title": "Exact Score: Udinese Calcio 0 - 1 Trabzonspor?",
+   "their_price": 0.76,
+   "my_price": 0.7397,
+   "slippage_pct": 0.0,
+   "lag_s": 1.6,
+   "shares": 153.22,
+   "cost": 113.33,
+   "fee": 0.88,
+   "opened": 1785685845,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -114.22,
+   "settled": 1785696160,
+   "end_ts": 1785628800
+  },
   {
    "token": "36288736401955665119786973077283875206752336249826000621290926077161772340777",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -91,26 +111,6 @@
    "end_ts": 1785628800,
    "sold_shares": 92.52,
    "sold_proceeds": 88.71
-  },
-  {
-   "token": "105228447769711522038232773133913525386743086795835584168368052566540977107792",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "No",
-   "title": "Exact Score: Udinese Calcio 0 - 1 Trabzonspor?",
-   "their_price": 0.76,
-   "my_price": 0.7397,
-   "slippage_pct": 0.0,
-   "lag_s": 1.6,
-   "shares": 153.22,
-   "cost": 113.33,
-   "fee": 0.88,
-   "opened": 1785685845,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785628800
   },
   {
    "token": "84833713274530571479250444223158955887841795944345736012615608017701449951658",
@@ -3143,14 +3143,14 @@
    "last_ts": 1785643259
   },
   "Kruto2027": {
-   "realized": 248.79,
-   "n": 12,
+   "realized": 134.57,
+   "n": 13,
    "wins": 1,
-   "open_cost": 113.33,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 10,
    "miss_pnl": 358.62,
-   "last_ts": 1785685845
+   "last_ts": 1785696160
   },
   "LSB1": {
    "realized": -397.16,
@@ -3213,5 +3213,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785694081
+ "updated": 1785696164
 }
