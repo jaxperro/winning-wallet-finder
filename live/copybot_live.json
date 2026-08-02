@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 55.02,
+ "stake": 55.0,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1260.9,
- "deployed": 1490.1,
+ "cash": 1205.02,
+ "deployed": 1545.11,
  "reserve": 0.0,
- "realized": 1750.96,
+ "realized": 1750.1,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 27,
- "fees_paid": 451.3,
+ "ledger_drift": -0.02,
+ "open_count": 28,
+ "fees_paid": 452.15,
  "fee_rate": 0.03,
  "lag": {
-  "n": 376,
-  "n24": 16,
+  "n": 377,
+  "n24": 17,
   "basis": "24h",
-  "avg_s": 3.1,
+  "avg_s": 4.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "25666257384729943287558818626325079689158559409645151459011325464093864355481",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "LYON",
+   "title": "LoL: LYON vs Shopify Rebellion - Game 1 Winner",
+   "their_price": 0.48,
+   "my_price": 0.48,
+   "slippage_pct": 0.0,
+   "lag_s": 7.4,
+   "shares": 114.62,
+   "cost": 55.02,
+   "fee": 0.86,
+   "opened": 1785702008,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785715200
+  },
   {
    "token": "105228447769711522038232773133913525386743086795835584168368052566540977107792",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2134,28 +2154,6 @@
    "pnl": 27.94,
    "settled": 1785005780,
    "end_ts": 1784937600
-  },
-  {
-   "token": "49331878508394871833592446045300865060542314418976779518068691623730505202112",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Karmine Corp",
-   "title": "LoL: Karmine Corp vs Movistar KOI - Game 1 Winner",
-   "their_price": 0.64,
-   "my_price": 0.64,
-   "slippage_pct": 0.0,
-   "lag_s": 7.0,
-   "shares": 177.83,
-   "cost": 113.81,
-   "fee": 1.23,
-   "opened": 1784997557,
-   "status": "closed",
-   "exit_price": 0.9733,
-   "pnl": 58.03,
-   "settled": 1784999568,
-   "end_ts": 1784937600,
-   "sold_shares": 177.82,
-   "sold_proceeds": 173.07
   }
  ],
  "missed": [
@@ -3104,12 +3102,12 @@
  ],
  "missed_pnl": 21521.51,
  "last_fill": {
-  "ts": 1785700263,
+  "ts": 1785702015,
   "side": "BUY",
-  "price": 0.9,
-  "shares": 12.51,
-  "title": "Will Apple (AAPL) hit (LOW) $328 in August?",
-  "outcome": "Yes"
+  "price": 0.48,
+  "shares": 114.62,
+  "title": "LoL: LYON vs Shopify Rebellion - Game 1 Winner",
+  "outcome": "LYON"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3166,11 +3164,11 @@
    "realized": 116.52,
    "n": 45,
    "wins": 0,
-   "open_cost": 56.16,
-   "open_n": 1,
+   "open_cost": 111.18,
+   "open_n": 2,
    "miss_n": 8,
    "miss_pnl": -366.65,
-   "last_ts": 1785694073
+   "last_ts": 1785702008
   },
   "BikesAreTheBikes": {
    "realized": 251.76,
@@ -3213,5 +3211,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785700270
+ "updated": 1785702015
 }
