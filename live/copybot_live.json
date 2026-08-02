@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 57.35,
+ "stake": 57.34,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1543.28,
- "deployed": 1324.17,
+ "cash": 1485.53,
+ "deployed": 1381.51,
  "reserve": 0.0,
- "realized": 1867.41,
+ "realized": 1867.01,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 23,
- "fees_paid": 441.81,
+ "open_count": 24,
+ "fees_paid": 442.21,
  "fee_rate": 0.03,
  "lag": {
-  "n": 363,
-  "n24": 10,
+  "n": 364,
+  "n24": 11,
   "basis": "24h",
-  "avg_s": 6.8,
+  "avg_s": 6.7,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "35541486565488511478317358956149065396867876001943158371971416633068368116209",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Up",
+   "title": "Bitcoin Up or Down - August 1, 11PM ET",
+   "their_price": 0.7637,
+   "my_price": 0.7637,
+   "slippage_pct": 0.0,
+   "lag_s": 1.0,
+   "shares": 75.08,
+   "cost": 57.34,
+   "fee": 0.41,
+   "opened": 1785642588,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785628800
+  },
   {
    "token": "31798323952461961650983638405389053740930972138111089234409584277872747279143",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2136,26 +2156,6 @@
    "pnl": -63.84,
    "settled": 1784953416,
    "end_ts": 1784851200
-  },
-  {
-   "token": "5506960250160396168975872633831816223181816814113506849144916695207660278211",
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "name": "1kto1m",
-   "outcome": "Down",
-   "title": "S&P 500 (SPX) Up or Down on July 24?",
-   "their_price": 0.5,
-   "my_price": 0.5,
-   "slippage_pct": 0.0,
-   "lag_s": 3.7,
-   "shares": 192.64,
-   "cost": 96.32,
-   "fee": 1.44,
-   "opened": 1784923242,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -97.76,
-   "settled": 1784932889,
-   "end_ts": 1784851200
   }
  ],
  "missed": [
@@ -3103,12 +3103,12 @@
  ],
  "missed_pnl": 21343.42,
  "last_fill": {
-  "ts": 1785640468,
+  "ts": 1785642588,
   "side": "BUY",
-  "price": 0.16,
-  "shares": 358.61,
-  "title": "Israel x Iran ceasefire continues through August 15?",
-  "outcome": "No"
+  "price": 0.7637,
+  "shares": 75.08,
+  "title": "Bitcoin Up or Down - August 1, 11PM ET",
+  "outcome": "Up"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3135,11 +3135,11 @@
    "realized": 238.9,
    "n": 19,
    "wins": 3,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 57.34,
+   "open_n": 1,
    "miss_n": 18,
    "miss_pnl": -96.95,
-   "last_ts": 1785633565
+   "last_ts": 1785642588
   },
   "Kruto2027": {
    "realized": 248.79,
@@ -3212,5 +3212,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785640474
+ "updated": 1785642589
 }
