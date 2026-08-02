@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 56.25,
+ "stake": 56.39,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1312.3,
- "deployed": 1500.27,
+ "cash": 1329.64,
+ "deployed": 1490.1,
  "reserve": 0.0,
- "realized": 1812.55,
+ "realized": 1819.7,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 28,
+ "open_count": 27,
  "fees_paid": 452.34,
  "fee_rate": 0.03,
  "lag": {
@@ -64,13 +64,13 @@
    "cost": 14.47,
    "fee": 0.18,
    "opened": 1785708008,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
+   "status": "closed",
+   "exit_price": 0.9897,
+   "pnl": 10.0,
+   "settled": 1785708162,
    "end_ts": 1788220800,
-   "sold_shares": 7.39,
-   "sold_proceeds": 7.32
+   "sold_shares": 24.91,
+   "sold_proceeds": 24.65
   },
   {
    "token": "25666257384729943287558818626325079689158559409645151459011325464093864355481",
@@ -3107,23 +3107,23 @@
  ],
  "missed_pnl": 21628.51,
  "last_fill": {
-  "ts": 1785708090,
+  "ts": 1785708162,
   "side": "SELL",
   "price": 0.99,
-  "shares": 3.48,
+  "shares": 13.38,
   "title": "Will Natural Gas (NG) hit (LOW) $1.80 in August?",
   "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 604.15,
-   "n": 94,
+   "realized": 614.15,
+   "n": 95,
    "wins": 34,
-   "open_cost": 729.04,
-   "open_n": 14,
+   "open_cost": 714.57,
+   "open_n": 13,
    "miss_n": 124,
    "miss_pnl": 112338.67,
-   "last_ts": 1785708008
+   "last_ts": 1785708162
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3216,5 +3216,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785708097
+ "updated": 1785708162
 }
