@@ -2162,6 +2162,21 @@
  ],
  "missed": [
   {
+   "ts": 1785708383,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "21005039642732637989429444477398837601208977664640014960101226836645659307122",
+   "cond": "0x8433670f312ac7e4da05ebf58242122dcf412243ca3a8d02766e0aae1a4a711f",
+   "title": "Will Abdul El-Sayed win Macomb County in the Michigan Senate Democratic primary?",
+   "outcome": "No",
+   "price": 0.2107,
+   "stake": 56.39,
+   "reason": "maker bid unfilled (85s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1785671059,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "17391547350755989425804702732311542223226424331639399782496706299760208244671",
@@ -3088,24 +3103,9 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785416641,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "97404502201244152966308197548411815397482847053527035814522627546697214883681",
-   "cond": "0xe8da89e5a6daede04f1fc3ce3f3957370b50552e176dc27c2a37c4d60bf76134",
-   "title": "Tread FDV above $80M one day after launch",
-   "outcome": "Yes",
-   "price": 0.34,
-   "stake": 55.01,
-   "reason": "thin book ($6 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 21628.51,
+ "missed_pnl": 21627.3,
  "last_fill": {
   "ts": 1785708162,
   "side": "SELL",
@@ -3181,7 +3181,7 @@
    "wins": 2,
    "open_cost": 1080.52,
    "open_n": 13,
-   "miss_n": 42,
+   "miss_n": 43,
    "miss_pnl": -632.91,
    "last_ts": 1785643532
   },
@@ -3216,5 +3216,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785708162
+ "updated": 1785708390
 }

@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785708162,
+ "updated": 1785708390,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 614.15,
@@ -68,7 +68,7 @@
    "wins": 2,
    "open_cost": 1080.52,
    "open_n": 13,
-   "miss_n": 42,
+   "miss_n": 43,
    "miss_pnl": -632.91,
    "last_ts": 1785643532
   },
@@ -6871,6 +6871,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785708383,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "21005039642732637989429444477398837601208977664640014960101226836645659307122",
+   "cond": "0x8433670f312ac7e4da05ebf58242122dcf412243ca3a8d02766e0aae1a4a711f",
+   "title": "Will Abdul El-Sayed win Macomb County in the Michigan Senate Democratic primary?",
+   "outcome": "No",
+   "price": 0.2107,
+   "stake": 56.39,
+   "reason": "maker bid unfilled (85s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1785671059,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
