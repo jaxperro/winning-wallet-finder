@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785646818,
+ "updated": 1785646968,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 605.03,
    "n": 93,
    "wins": 34,
-   "open_cost": 650.03,
-   "open_n": 11,
+   "open_cost": 677.31,
+   "open_n": 12,
    "miss_n": 122,
-   "miss_pnl": 112336.26,
-   "last_ts": 1785612410
+   "miss_pnl": 112335.99,
+   "last_ts": 1785646892
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "1326211055864075133719974649484864249770259286643912456278981364786578715890",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Mohammed Ghalibaf out as Speaker of Iran Parliament by September 30, 2026?",
+   "their_price": 0.78,
+   "my_price": 0.78,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 34.97,
+   "cost": 27.28,
+   "fee": 0.18,
+   "opened": 1785646892,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1790726400
+  },
   {
    "token": "8380715925577845977184977030716387784969501288623224112825735013253473276536",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -6651,10 +6671,11 @@
    "price": 0.63,
    "stake": 62.84,
    "reason": "maker bid unfilled (98s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
+   "status": "sold",
+   "pnl": -0.27,
+   "settled": 1785646967,
+   "name": "0xbadaf319",
+   "exit_price": 0.6412
   },
   {
    "ts": 1785636848,
