@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785632072,
+ "updated": 1785632968,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 605.03,
@@ -28,7 +28,7 @@
    "wins": 2,
    "open_cost": 56.06,
    "open_n": 1,
-   "miss_n": 17,
+   "miss_n": 18,
    "miss_pnl": -103.42,
    "last_ts": 1785632064
   },
@@ -6579,6 +6579,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785632960,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "100624493784742066196172882799389607658238738180944134780099178110174173337292",
+   "cond": "0x9046deabbb7238f459ebd73a7c09ae384e28846cb21d92988cea3fc076986e24",
+   "title": "Bitcoin Up or Down - August 1, 9:00PM-9:15PM ET",
+   "outcome": "Up",
+   "price": 0.894,
+   "stake": 56.05,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
   {
    "ts": 1784628735,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
