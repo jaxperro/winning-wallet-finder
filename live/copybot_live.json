@@ -2160,6 +2160,22 @@
  ],
  "missed": [
   {
+   "ts": 1785671059,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "17391547350755989425804702732311542223226424331639399782496706299760208244671",
+   "cond": "0x563292d4a0e819ca52af928027450cedad7fff7ef7588252b8752c75a035c407",
+   "title": "Will Rocket Lab USA, Inc. (RKLB) hit (HIGH) $80 in August?",
+   "outcome": "No",
+   "price": 0.61,
+   "stake": 5.46,
+   "reason": "maker bid unfilled (75s)",
+   "status": "sold",
+   "pnl": -1.47,
+   "settled": 1785706233,
+   "name": "0xbadaf319",
+   "exit_price": 0.46
+  },
+  {
    "ts": 1785702449,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "63284803361703132321048739956780460363879925620696486229140595548329650415109",
@@ -2269,21 +2285,6 @@
    "settled": 1785681563,
    "name": "BikesAreTheBikes",
    "exit_price": 0.7809
-  },
-  {
-   "ts": 1785671059,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "17391547350755989425804702732311542223226424331639399782496706299760208244671",
-   "cond": "0x563292d4a0e819ca52af928027450cedad7fff7ef7588252b8752c75a035c407",
-   "title": "Will Rocket Lab USA, Inc. (RKLB) hit (HIGH) $80 in August?",
-   "outcome": "No",
-   "price": 0.61,
-   "stake": 5.46,
-   "reason": "maker bid unfilled (75s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1785644854,
@@ -3102,7 +3103,7 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 21629.98,
+ "missed_pnl": 21628.51,
  "last_fill": {
   "ts": 1785704178,
   "side": "SELL",
@@ -3119,7 +3120,7 @@
    "open_cost": 714.57,
    "open_n": 13,
    "miss_n": 124,
-   "miss_pnl": 112340.14,
+   "miss_pnl": 112338.67,
    "last_ts": 1785681356
   },
   "gkmgkldfmg": {
@@ -3213,5 +3214,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785704189
+ "updated": 1785706233
 }
