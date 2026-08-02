@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785634990,
+ "updated": 1785636854,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 605.03,
@@ -68,7 +68,7 @@
    "wins": 2,
    "open_cost": 977.83,
    "open_n": 11,
-   "miss_n": 39,
+   "miss_n": 40,
    "miss_pnl": -652.34,
    "last_ts": 1785628277
   },
@@ -6579,6 +6579,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785636848,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "106384382902272259275653733417531627173944931937610707897597239994735553962869",
+   "cond": "0xa055e1cf533c2fcb1f1c89c20c41c8aa25526dcf27c3ff6be69c230fd8898282",
+   "title": "US announces end of Iranian blockade by August 15, 2026?",
+   "outcome": "No",
+   "price": 0.65,
+   "stake": 20.81,
+   "reason": "maker bid unfilled (112s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1785632960,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
