@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785633569,
+ "updated": 1785633775,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 605.03,
@@ -29,7 +29,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 18,
-   "miss_pnl": -103.42,
+   "miss_pnl": -96.95,
    "last_ts": 1785633565
   },
   "Kruto2027": {
@@ -6589,9 +6589,9 @@
    "price": 0.894,
    "stake": 56.05,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "won",
+   "pnl": 6.47,
+   "settled": 1785633775,
    "name": "1kto1m"
   },
   {

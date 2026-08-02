@@ -20845,7 +20845,7 @@
   },
   "hwm": 3600.1933566560215,
   "feed_sig": "b0cebbc17925e30d96478142b2f61d86",
-  "feed_pushed_at": 1785633500.943612,
+  "feed_pushed_at": 1785633640.3947387,
   "missed": [
     {
       "ts": 1783889397,
@@ -24022,9 +24022,9 @@
       "price": 0.894,
       "stake": 56.05,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null,
+      "status": "won",
+      "pnl": 6.47,
+      "settled": 1785633775,
       "name": "1kto1m"
     }
   ],
@@ -24209,7 +24209,7 @@
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1785429351,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1785587592,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1785632844,
-    "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1785633065,
+    "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1785633716,
     "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1785617775
   },
   "boot": {
