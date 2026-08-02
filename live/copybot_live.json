@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 56.39,
+ "stake": 56.4,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1329.64,
- "deployed": 1490.1,
+ "cash": 1330.32,
+ "deployed": 1489.47,
  "reserve": 0.0,
- "realized": 1819.7,
+ "realized": 1819.77,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 27,
+ "ledger_drift": -0.02,
+ "open_count": 26,
  "fees_paid": 452.34,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "85120775770768568171037319691430512769043349724236381575493834592043972740948",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Israel x Iran ceasefire continues through July 30?",
+   "their_price": 0.906,
+   "my_price": 0.906,
+   "slippage_pct": 0.0,
+   "lag_s": 58.9,
+   "shares": 62.08,
+   "cost": 56.24,
+   "fee": 0.16,
+   "opened": 1785375708,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 3.99,
+   "settled": 1785710549,
+   "end_ts": 1785369600,
+   "sold_shares": 61.39,
+   "sold_proceeds": 59.7
+  },
   {
    "token": "31992191456114199144963723550413010500964262070722647318272730091545468567522",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -1221,28 +1243,6 @@
    "pnl": -129.44,
    "settled": 1785378441,
    "end_ts": 1785369600
-  },
-  {
-   "token": "85120775770768568171037319691430512769043349724236381575493834592043972740948",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "Israel x Iran ceasefire continues through July 30?",
-   "their_price": 0.906,
-   "my_price": 0.906,
-   "slippage_pct": 0.0,
-   "lag_s": 58.9,
-   "shares": 62.08,
-   "cost": 56.24,
-   "fee": 0.16,
-   "opened": 1785375708,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785369600,
-   "sold_shares": 61.39,
-   "sold_proceeds": 59.7
   },
   {
    "token": "54815727746640547967672254072133541716883461619401150888777316620441172319772",
@@ -3176,14 +3176,14 @@
    "last_ts": 1785704189
   },
   "BikesAreTheBikes": {
-   "realized": 251.76,
-   "n": 15,
-   "wins": 2,
-   "open_cost": 1080.52,
-   "open_n": 13,
+   "realized": 255.75,
+   "n": 16,
+   "wins": 3,
+   "open_cost": 1024.28,
+   "open_n": 12,
    "miss_n": 43,
    "miss_pnl": -632.91,
-   "last_ts": 1785643532
+   "last_ts": 1785710549
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3216,5 +3216,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785708390
+ "updated": 1785710559
 }
