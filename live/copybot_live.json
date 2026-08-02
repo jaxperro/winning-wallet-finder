@@ -2160,6 +2160,21 @@
  ],
  "missed": [
   {
+   "ts": 1785684971,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "6503729227203238475503335964241924670130495964232872084820616852737731379951",
+   "cond": "0x4fbb76d3dac48e76b80978c0d35b9a4f9d4656fc2cb5284d501a9703f875895c",
+   "title": "Ethereum Up or Down on August 2?",
+   "outcome": "Down",
+   "price": 0.93,
+   "stake": 56.67,
+   "reason": "maker bid unfilled (60s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785684067,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "23537842165977046370574778086600347274303604738338768967720021180647769610330",
@@ -3082,25 +3097,9 @@
    "settled": 1785397188,
    "name": "BikesAreTheBikes",
    "exit_price": 0.9476
-  },
-  {
-   "ts": 1785078307,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "54620342958738283704802452250340372295186538019357418907215676271029676157053",
-   "cond": "0x7751647558c676e670214b1161ba938c16417b09c7b577310ad80652d70066c1",
-   "title": "Unit FDV above $400M one day after launch?",
-   "outcome": "No",
-   "price": 0.5199,
-   "stake": 35.33,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 8.79,
-   "settled": 1785397187,
-   "name": "0xbadaf319",
-   "exit_price": 0.6634
   }
  ],
- "missed_pnl": 21552.31,
+ "missed_pnl": 21559.07,
  "last_fill": {
   "ts": 1785681366,
   "side": "BUY",
@@ -3116,7 +3115,7 @@
    "wins": 34,
    "open_cost": 703.31,
    "open_n": 13,
-   "miss_n": 123,
+   "miss_n": 124,
    "miss_pnl": 112335.99,
    "last_ts": 1785681356
   },
@@ -3211,5 +3210,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785684067
+ "updated": 1785684984
 }
