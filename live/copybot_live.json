@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 115.32,
+ "stake": 115.24,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1486.28,
- "deployed": 1396.71,
+ "cash": 1368.99,
+ "deployed": 1512.03,
  "reserve": 0.0,
- "realized": 1882.96,
+ "realized": 1880.99,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 25,
- "fees_paid": 443.41,
+ "open_count": 26,
+ "fees_paid": 445.38,
  "fee_rate": 0.03,
  "lag": {
-  "n": 367,
-  "n24": 11,
+  "n": 368,
+  "n24": 12,
   "basis": "24h",
-  "avg_s": 1.1,
+  "avg_s": 1.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "107302480629937459746801418935680895835862951318163699611993485492174680492656",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Team WE",
+   "title": "LoL: ThunderTalk Gaming vs Team WE (BO3) - LPL Group Ascend",
+   "their_price": 0.43,
+   "my_price": 0.43,
+   "slippage_pct": 0.0,
+   "lag_s": 63.0,
+   "shares": 268.18,
+   "cost": 115.32,
+   "fee": 1.97,
+   "opened": 1785656597,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785628800
+  },
   {
    "token": "10583274140258354908819985785786606483313711451324503548018721478661081656491",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2138,28 +2158,6 @@
    "end_ts": 1784937600,
    "sold_shares": 196.07,
    "sold_proceeds": 188.22
-  },
-  {
-   "token": "30105308353288988924984162628182939641372197734077392129497102501234749347616",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will the Houthis successfully target shipping by July 31, 2026?",
-   "their_price": 0.8801,
-   "my_price": 0.8801,
-   "slippage_pct": 0.0,
-   "lag_s": 55.6,
-   "shares": 45.95,
-   "cost": 40.44,
-   "fee": 0.15,
-   "opened": 1784951520,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 0.69,
-   "settled": 1784960840,
-   "sold_shares": 45.56,
-   "sold_proceeds": 40.88,
-   "end_ts": 1785456000
   }
  ],
  "missed": [
@@ -3107,12 +3105,12 @@
  ],
  "missed_pnl": 21354.76,
  "last_fill": {
-  "ts": 1785656393,
-  "side": "SELL",
-  "price": 0.91,
-  "shares": 59.88,
-  "title": "Will Epic Games' valuation hit (HIGH) $25B by December 31?",
-  "outcome": "No"
+  "ts": 1785656660,
+  "side": "BUY",
+  "price": 0.43,
+  "shares": 268.18,
+  "title": "LoL: ThunderTalk Gaming vs Team WE (BO3) - LPL Group Ascend",
+  "outcome": "Team WE"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3169,11 +3167,11 @@
    "realized": 133.49,
    "n": 41,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 115.32,
+   "open_n": 1,
    "miss_n": 8,
    "miss_pnl": -366.65,
-   "last_ts": 1785579722
+   "last_ts": 1785656597
   },
   "BikesAreTheBikes": {
    "realized": 251.76,
@@ -3216,5 +3214,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785656393
+ "updated": 1785656728
 }
