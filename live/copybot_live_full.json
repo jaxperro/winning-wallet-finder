@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785678299,
+ "updated": 1785681413,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 604.15,
    "n": 94,
    "wins": 34,
-   "open_cost": 677.31,
-   "open_n": 12,
+   "open_cost": 703.31,
+   "open_n": 13,
    "miss_n": 123,
    "miss_pnl": 112335.99,
-   "last_ts": 1785656393
+   "last_ts": 1785681356
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "84833713274530571479250444223158955887841795944345736012615608017701449951658",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will Apple (AAPL) hit (LOW) $328 in August?",
+   "their_price": 0.89,
+   "my_price": 0.89,
+   "slippage_pct": 0.0,
+   "lag_s": 10.4,
+   "shares": 29.21,
+   "cost": 26.0,
+   "fee": 0.0858,
+   "opened": 1785681356,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800
+  },
   {
    "token": "102071153892246039627048034194967021680193759805083679061162745293075874048047",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
