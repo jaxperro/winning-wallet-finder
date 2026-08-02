@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 115.35,
+ "stake": 115.32,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1431.93,
- "deployed": 1451.8,
+ "cash": 1486.28,
+ "deployed": 1396.71,
  "reserve": 0.0,
- "realized": 1883.71,
+ "realized": 1882.96,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 26,
- "fees_paid": 443.26,
+ "open_count": 25,
+ "fees_paid": 443.41,
  "fee_rate": 0.03,
  "lag": {
   "n": 367,
@@ -64,11 +64,13 @@
    "cost": 55.09,
    "fee": 0.13,
    "opened": 1785647546,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1798761600
+   "status": "closed",
+   "exit_price": 0.9075,
+   "pnl": -0.88,
+   "settled": 1785656393,
+   "end_ts": 1798761600,
+   "sold_shares": 59.88,
+   "sold_proceeds": 54.34
   },
   {
    "token": "1326211055864075133719974649484864249770259286643912456278981364786578715890",
@@ -3105,23 +3107,23 @@
  ],
  "missed_pnl": 21354.76,
  "last_fill": {
-  "ts": 1785650852,
+  "ts": 1785656393,
   "side": "SELL",
-  "price": 0.94,
-  "shares": 0.02,
-  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+  "price": 0.91,
+  "shares": 59.88,
+  "title": "Will Epic Games' valuation hit (HIGH) $25B by December 31?",
   "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 605.03,
-   "n": 93,
+   "realized": 604.15,
+   "n": 94,
    "wins": 34,
-   "open_cost": 732.4,
-   "open_n": 13,
+   "open_cost": 677.31,
+   "open_n": 12,
    "miss_n": 122,
    "miss_pnl": 112335.99,
-   "last_ts": 1785647546
+   "last_ts": 1785656393
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3214,5 +3216,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785653950
+ "updated": 1785656393
 }
