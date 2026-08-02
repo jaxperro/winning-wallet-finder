@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 56.19,
+ "stake": 56.25,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1319.64,
- "deployed": 1490.1,
+ "cash": 1312.3,
+ "deployed": 1500.27,
  "reserve": 0.0,
- "realized": 1809.71,
+ "realized": 1812.55,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 27,
- "fees_paid": 452.15,
+ "ledger_drift": -0.03,
+ "open_count": 28,
+ "fees_paid": 452.34,
  "fee_rate": 0.03,
  "lag": {
-  "n": 377,
-  "n24": 17,
+  "n": 378,
+  "n24": 18,
   "basis": "24h",
-  "avg_s": 4.4,
+  "avg_s": 3.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "31992191456114199144963723550413010500964262070722647318272730091545468567522",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Natural Gas (NG) hit (LOW) $1.80 in August?",
+   "their_price": 0.581,
+   "my_price": 0.581,
+   "slippage_pct": 0.0,
+   "lag_s": 1.2,
+   "shares": 24.91,
+   "cost": 14.47,
+   "fee": 0.18,
+   "opened": 1785708008,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800,
+   "sold_shares": 7.39,
+   "sold_proceeds": 7.32
+  },
   {
    "token": "25666257384729943287558818626325079689158559409645151459011325464093864355481",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2136,26 +2158,6 @@
    "pnl": -88.57,
    "settled": 1785011468,
    "end_ts": 1785542400
-  },
-  {
-   "token": "107156085038944146438947590438365026964800691960988984359921209164919978522933",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "Top Esports",
-   "title": "LoL: Top Esports vs ThunderTalk Gaming (BO3) - LPL Group Ascend",
-   "their_price": 0.81,
-   "my_price": 0.81,
-   "slippage_pct": 0.0,
-   "lag_s": 7.1,
-   "shares": 150.76,
-   "cost": 122.12,
-   "fee": 0.7,
-   "opened": 1784979741,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 27.94,
-   "settled": 1785005780,
-   "end_ts": 1784937600
   }
  ],
  "missed": [
@@ -3105,23 +3107,23 @@
  ],
  "missed_pnl": 21628.51,
  "last_fill": {
-  "ts": 1785704178,
+  "ts": 1785708090,
   "side": "SELL",
-  "price": 1.0,
-  "shares": 114.62,
-  "title": "LoL: LYON vs Shopify Rebellion - Game 1 Winner",
-  "outcome": "LYON"
+  "price": 0.99,
+  "shares": 3.48,
+  "title": "Will Natural Gas (NG) hit (LOW) $1.80 in August?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 604.15,
    "n": 94,
    "wins": 34,
-   "open_cost": 714.57,
-   "open_n": 13,
+   "open_cost": 729.04,
+   "open_n": 14,
    "miss_n": 124,
    "miss_pnl": 112338.67,
-   "last_ts": 1785681356
+   "last_ts": 1785708008
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3214,5 +3216,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785706233
+ "updated": 1785708097
 }
