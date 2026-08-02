@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785672252,
+ "updated": 1785676417,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 604.15,
@@ -53,14 +53,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 259.58,
-   "n": 42,
+   "realized": 142.73,
+   "n": 43,
    "wins": 0,
-   "open_cost": 172.83,
-   "open_n": 2,
+   "open_cost": 57.59,
+   "open_n": 1,
    "miss_n": 8,
    "miss_pnl": -366.65,
-   "last_ts": 1785661836
+   "last_ts": 1785676407
   },
   "BikesAreTheBikes": {
    "realized": 251.76,
@@ -105,6 +105,26 @@
  },
  "bets": [
   {
+   "token": "76752916551697359157851234269297016591012843522959969977805224055761398575042",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "ThunderTalk Gaming",
+   "title": "LoL: ThunderTalk Gaming vs Team WE - Game 2 Winner",
+   "their_price": 0.5329,
+   "my_price": 0.5329,
+   "slippage_pct": 0.0,
+   "lag_s": 7.8,
+   "shares": 216.26,
+   "cost": 115.24,
+   "fee": 1.6149,
+   "opened": 1785658581,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -116.85,
+   "settled": 1785676407,
+   "end_ts": 1785628800
+  },
+  {
    "token": "107302480629937459746801418935680895835862951318163699611993485492174680492656",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "name": "AIcAIc",
@@ -140,26 +160,6 @@
    "cost": 57.59,
    "fee": 1.1575,
    "opened": 1785660187,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785628800
-  },
-  {
-   "token": "76752916551697359157851234269297016591012843522959969977805224055761398575042",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "ThunderTalk Gaming",
-   "title": "LoL: ThunderTalk Gaming vs Team WE - Game 2 Winner",
-   "their_price": 0.5329,
-   "my_price": 0.5329,
-   "slippage_pct": 0.0,
-   "lag_s": 7.8,
-   "shares": 216.26,
-   "cost": 115.24,
-   "fee": 1.6149,
-   "opened": 1785658581,
    "status": "open",
    "exit_price": null,
    "pnl": null,
