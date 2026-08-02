@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785693899,
+ "updated": 1785694081,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 604.15,
@@ -56,11 +56,11 @@
    "realized": 116.52,
    "n": 45,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 56.16,
+   "open_n": 1,
    "miss_n": 8,
    "miss_pnl": -366.65,
-   "last_ts": 1785692270
+   "last_ts": 1785694073
   },
   "BikesAreTheBikes": {
    "realized": 251.76,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "36288736401955665119786973077283875206752336249826000621290926077161772340777",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Movistar KOI",
+   "title": "LoL: Fnatic vs Movistar KOI - Game 2 Winner",
+   "their_price": 0.5783,
+   "my_price": 0.5783,
+   "slippage_pct": 0.0,
+   "lag_s": 8.8,
+   "shares": 97.11,
+   "cost": 56.16,
+   "fee": 0.7104,
+   "opened": 1785694073,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785628800
+  },
   {
    "token": "34177183522290529087941989999542317105887053912920323890269808191629069001437",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
