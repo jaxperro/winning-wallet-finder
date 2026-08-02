@@ -1,22 +1,22 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 56.67,
+ "stake": 55.52,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1410.74,
- "deployed": 1422.67,
+ "cash": 1296.53,
+ "deployed": 1479.34,
  "reserve": 0.0,
- "realized": 1833.38,
+ "realized": 1775.83,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 26,
- "fees_paid": 448.9,
+ "ledger_drift": -0.02,
+ "open_count": 27,
+ "fees_paid": 449.78,
  "fee_rate": 0.03,
  "lag": {
-  "n": 371,
-  "n24": 11,
+  "n": 373,
+  "n24": 13,
   "basis": "24h",
   "avg_s": 1.8,
   "avg_slip_pct": 0.0,
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "105228447769711522038232773133913525386743086795835584168368052566540977107792",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "No",
+   "title": "Exact Score: Udinese Calcio 0 - 1 Trabzonspor?",
+   "their_price": 0.76,
+   "my_price": 0.7397,
+   "slippage_pct": 0.0,
+   "lag_s": 1.6,
+   "shares": 153.22,
+   "cost": 113.33,
+   "fee": 0.88,
+   "opened": 1785685845,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785628800
+  },
   {
    "token": "84833713274530571479250444223158955887841795944345736012615608017701449951658",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2134,28 +2154,6 @@
    "pnl": -128.02,
    "settled": 1784991400,
    "end_ts": 1784937600
-  },
-  {
-   "token": "39204188212807654862524084563129756709425912681035817068891674648908999999428",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Top Esports",
-   "title": "LoL: Top Esports vs ThunderTalk Gaming - Game 1 Winner",
-   "their_price": 0.72,
-   "my_price": 0.72,
-   "slippage_pct": 0.0,
-   "lag_s": 0.9,
-   "shares": 169.56,
-   "cost": 122.08,
-   "fee": 1.03,
-   "opened": 1784981592,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": 46.45,
-   "settled": 1784984191,
-   "end_ts": 1784937600,
-   "sold_shares": 169.56,
-   "sold_proceeds": 169.56
   }
  ],
  "missed": [
@@ -3101,12 +3099,12 @@
  ],
  "missed_pnl": 21559.07,
  "last_fill": {
-  "ts": 1785681366,
+  "ts": 1785685849,
   "side": "BUY",
-  "price": 0.89,
-  "shares": 29.21,
-  "title": "Will Apple (AAPL) hit (LOW) $328 in August?",
-  "outcome": "Yes"
+  "price": 0.7203,
+  "shares": 78.66,
+  "title": "Exact Score: Udinese Calcio 0 - 1 Trabzonspor?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3143,11 +3141,11 @@
    "realized": 248.79,
    "n": 12,
    "wins": 1,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 113.33,
+   "open_n": 1,
    "miss_n": 10,
    "miss_pnl": 358.62,
-   "last_ts": 1785519402
+   "last_ts": 1785685845
   },
   "LSB1": {
    "realized": -397.16,
@@ -3210,5 +3208,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785684984
+ "updated": 1785685850
 }
