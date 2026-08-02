@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1272.19,
- "deployed": 1478.84,
+ "cash": 1260.9,
+ "deployed": 1490.1,
  "reserve": 0.0,
- "realized": 1751.0,
+ "realized": 1750.96,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 27,
- "fees_paid": 451.26,
+ "fees_paid": 451.3,
  "fee_rate": 0.03,
  "lag": {
-  "n": 375,
-  "n24": 15,
+  "n": 376,
+  "n24": 16,
   "basis": "24h",
-  "avg_s": 4.4,
+  "avg_s": 3.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -119,12 +119,12 @@
    "outcome": "Yes",
    "title": "Will Apple (AAPL) hit (LOW) $328 in August?",
    "their_price": 0.89,
-   "my_price": 0.89,
+   "my_price": 0.8931,
    "slippage_pct": 0.0,
    "lag_s": 10.4,
-   "shares": 29.21,
-   "cost": 26.0,
-   "fee": 0.09,
+   "shares": 41.72,
+   "cost": 37.26,
+   "fee": 0.12,
    "opened": 1785681356,
    "status": "open",
    "exit_price": null,
@@ -3104,19 +3104,19 @@
  ],
  "missed_pnl": 21521.51,
  "last_fill": {
-  "ts": 1785694081,
+  "ts": 1785700263,
   "side": "BUY",
-  "price": 0.5783,
-  "shares": 97.11,
-  "title": "LoL: Fnatic vs Movistar KOI - Game 2 Winner",
-  "outcome": "Movistar KOI"
+  "price": 0.9,
+  "shares": 12.51,
+  "title": "Will Apple (AAPL) hit (LOW) $328 in August?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 604.15,
    "n": 94,
    "wins": 34,
-   "open_cost": 703.31,
+   "open_cost": 714.57,
    "open_n": 13,
    "miss_n": 124,
    "miss_pnl": 112340.14,
@@ -3213,5 +3213,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785698030
+ "updated": 1785700270
 }
