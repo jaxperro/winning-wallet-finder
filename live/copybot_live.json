@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1487.13,
- "deployed": 1396.73,
+ "cash": 1431.91,
+ "deployed": 1451.82,
  "reserve": 0.0,
- "realized": 1883.84,
+ "realized": 1883.7,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 25,
- "fees_paid": 443.13,
+ "open_count": 26,
+ "fees_paid": 443.26,
  "fee_rate": 0.03,
  "lag": {
-  "n": 366,
-  "n24": 12,
+  "n": 367,
+  "n24": 13,
   "basis": "24h",
-  "avg_s": 3.3,
+  "avg_s": 1.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "10583274140258354908819985785786606483313711451324503548018721478661081656491",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Epic Games' valuation hit (HIGH) $25B by December 31?",
+   "their_price": 0.92,
+   "my_price": 0.92,
+   "slippage_pct": 0.0,
+   "lag_s": 1.4,
+   "shares": 59.88,
+   "cost": 55.09,
+   "fee": 0.13,
+   "opened": 1785647546,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798761600
+  },
   {
    "token": "1326211055864075133719974649484864249770259286643912456278981364786578715890",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2138,26 +2158,6 @@
    "sold_shares": 45.56,
    "sold_proceeds": 40.88,
    "end_ts": 1785456000
-  },
-  {
-   "token": "33617782943606593457233658595461209550659667672324965420014965311339164331375",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will the Houthis successfully target shipping by July 25, 2026?",
-   "their_price": 0.83,
-   "my_price": 0.8364,
-   "slippage_pct": 0.0,
-   "lag_s": 6.3,
-   "shares": 89.2,
-   "cost": 74.6,
-   "fee": 0.37,
-   "opened": 1784944415,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 14.23,
-   "settled": 1784960799,
-   "end_ts": 1784937600
   }
  ],
  "missed": [
@@ -3105,11 +3105,11 @@
  ],
  "missed_pnl": 21354.76,
  "last_fill": {
-  "ts": 1785646892,
+  "ts": 1785647547,
   "side": "BUY",
-  "price": 0.78,
-  "shares": 34.97,
-  "title": "Mohammed Ghalibaf out as Speaker of Iran Parliament by Septe",
+  "price": 0.92,
+  "shares": 59.88,
+  "title": "Will Epic Games' valuation hit (HIGH) $25B by December 31?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3117,11 +3117,11 @@
    "realized": 605.03,
    "n": 93,
    "wins": 34,
-   "open_cost": 677.31,
-   "open_n": 12,
+   "open_cost": 732.4,
+   "open_n": 13,
    "miss_n": 122,
    "miss_pnl": 112335.99,
-   "last_ts": 1785646892
+   "last_ts": 1785647546
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3214,5 +3214,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785646968
+ "updated": 1785647554
 }
