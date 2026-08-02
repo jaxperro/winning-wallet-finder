@@ -2162,6 +2162,21 @@
  ],
  "missed": [
   {
+   "ts": 1785714325,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "22543406314196444245323960026442066534512011193983246558699690573164322842611",
+   "cond": "0x63764d6d2fb1c9cf8eca39c65725190116e768c9c7903a52d72a4a0d92f4ebed",
+   "title": "Will Palantir Technologies Inc. (PLTR) hit (HIGH) $123 Week of August 3 2026?",
+   "outcome": "Yes",
+   "price": 0.72,
+   "stake": 28.8,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785708383,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "21005039642732637989429444477398837601208977664640014960101226836645659307122",
@@ -3088,24 +3103,9 @@
    "settled": 1785417180,
    "name": "0xbadaf319",
    "exit_price": 0.8342
-  },
-  {
-   "ts": 1785416755,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "67068564392815062965239534587125906161223843442987784298273297839583708579362",
-   "cond": "0x00cb87d62e4a2668754fc58ed8f1462393c516794b2eca2d7991d3d0a043ab0e",
-   "title": "Tread FDV above $100M one day after launch",
-   "outcome": "No",
-   "price": 0.52,
-   "stake": 10.02,
-   "reason": "maker bid unfilled (114s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 21627.3,
+ "missed_pnl": 21622.85,
  "last_fill": {
   "ts": 1785708162,
   "side": "SELL",
@@ -3121,7 +3121,7 @@
    "wins": 34,
    "open_cost": 714.57,
    "open_n": 13,
-   "miss_n": 124,
+   "miss_n": 125,
    "miss_pnl": 112338.67,
    "last_ts": 1785708162
   },
@@ -3216,5 +3216,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785710963
+ "updated": 1785714334
 }
