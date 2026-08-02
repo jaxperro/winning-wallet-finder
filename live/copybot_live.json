@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 56.4,
+ "stake": 55.27,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 1330.32,
- "deployed": 1489.47,
+ "deployed": 1433.31,
  "reserve": 0.0,
- "realized": 1819.77,
+ "realized": 1763.6,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 26,
+ "open_count": 25,
  "fees_paid": 452.34,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "36288736401955665119786973077283875206752336249826000621290926077161772340777",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Movistar KOI",
+   "title": "LoL: Fnatic vs Movistar KOI - Game 2 Winner",
+   "their_price": 0.5783,
+   "my_price": 0.5783,
+   "slippage_pct": 0.0,
+   "lag_s": 8.8,
+   "shares": 97.11,
+   "cost": 56.16,
+   "fee": 0.71,
+   "opened": 1785694073,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -56.87,
+   "settled": 1785710954,
+   "end_ts": 1785628800
+  },
   {
    "token": "85120775770768568171037319691430512769043349724236381575493834592043972740948",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -134,26 +154,6 @@
    "exit_price": 0.0,
    "pnl": -114.22,
    "settled": 1785696160,
-   "end_ts": 1785628800
-  },
-  {
-   "token": "36288736401955665119786973077283875206752336249826000621290926077161772340777",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Movistar KOI",
-   "title": "LoL: Fnatic vs Movistar KOI - Game 2 Winner",
-   "their_price": 0.5783,
-   "my_price": 0.5783,
-   "slippage_pct": 0.0,
-   "lag_s": 8.8,
-   "shares": 97.11,
-   "cost": 56.16,
-   "fee": 0.71,
-   "opened": 1785694073,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
    "end_ts": 1785628800
   },
   {
@@ -3166,14 +3166,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 175.26,
-   "n": 46,
+   "realized": 118.39,
+   "n": 47,
    "wins": 0,
-   "open_cost": 56.16,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 8,
    "miss_pnl": -366.65,
-   "last_ts": 1785704189
+   "last_ts": 1785710954
   },
   "BikesAreTheBikes": {
    "realized": 255.75,
@@ -3216,5 +3216,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785710559
+ "updated": 1785710963
 }
