@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785643279,
+ "updated": 1785643532,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 605.03,
@@ -66,11 +66,11 @@
    "realized": 251.76,
    "n": 15,
    "wins": 2,
-   "open_cost": 1035.21,
-   "open_n": 12,
+   "open_cost": 1080.52,
+   "open_n": 13,
    "miss_n": 40,
    "miss_pnl": -652.34,
-   "last_ts": 1785640467
+   "last_ts": 1785643532
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "8380715925577845977184977030716387784969501288623224112825735013253473276536",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "US x Iran diplomatic meeting by August 31, 2026?",
+   "their_price": 0.46,
+   "my_price": 0.46,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 98.5,
+   "cost": 45.31,
+   "fee": 0.734,
+   "opened": 1785643532,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "35541486565488511478317358956149065396867876001943158371971416633068368116209",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",

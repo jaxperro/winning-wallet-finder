@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 115.39,
+ "stake": 115.36,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1560.63,
- "deployed": 1324.15,
+ "cash": 1514.59,
+ "deployed": 1369.46,
  "reserve": 0.0,
- "realized": 1884.75,
+ "realized": 1884.02,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 23,
- "fees_paid": 442.21,
+ "open_count": 24,
+ "fees_paid": 442.95,
  "fee_rate": 0.03,
  "lag": {
-  "n": 364,
-  "n24": 11,
+  "n": 365,
+  "n24": 12,
   "basis": "24h",
-  "avg_s": 6.7,
+  "avg_s": 6.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "8380715925577845977184977030716387784969501288623224112825735013253473276536",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "US x Iran diplomatic meeting by August 31, 2026?",
+   "their_price": 0.46,
+   "my_price": 0.46,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 98.5,
+   "cost": 45.31,
+   "fee": 0.73,
+   "opened": 1785643532,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "35541486565488511478317358956149065396867876001943158371971416633068368116209",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
@@ -2138,26 +2158,6 @@
    "pnl": 2.89,
    "settled": 1784959721,
    "end_ts": 1784851200
-  },
-  {
-   "token": "95523031090032630493379749841042373483392094122589567942892903275780964514373",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will Trump say \"Iran\" 3+ times during White House Correspondents Dinner?",
-   "their_price": 0.62,
-   "my_price": 0.62,
-   "slippage_pct": 0.0,
-   "lag_s": 2.3,
-   "shares": 101.81,
-   "cost": 63.12,
-   "fee": 0.72,
-   "opened": 1784945240,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -63.84,
-   "settled": 1784953416,
-   "end_ts": 1784851200
   }
  ],
  "missed": [
@@ -3105,11 +3105,11 @@
  ],
  "missed_pnl": 21343.42,
  "last_fill": {
-  "ts": 1785643279,
-  "side": "SELL",
-  "price": 0.94,
-  "shares": 0.02,
-  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+  "ts": 1785643532,
+  "side": "BUY",
+  "price": 0.46,
+  "shares": 98.5,
+  "title": "US x Iran diplomatic meeting by August 31, 2026?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3177,11 +3177,11 @@
    "realized": 251.76,
    "n": 15,
    "wins": 2,
-   "open_cost": 1035.21,
-   "open_n": 12,
+   "open_cost": 1080.52,
+   "open_n": 13,
    "miss_n": 40,
    "miss_pnl": -652.34,
-   "last_ts": 1785640467
+   "last_ts": 1785643532
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3214,5 +3214,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785643279
+ "updated": 1785643532
 }
