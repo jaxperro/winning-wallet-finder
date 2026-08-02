@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1436.78,
- "deployed": 1569.54,
+ "cash": 1436.8,
+ "deployed": 1569.52,
  "reserve": 0.0,
- "realized": 2006.28,
+ "realized": 2006.29,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 27,
@@ -3105,12 +3105,12 @@
  ],
  "missed_pnl": 21354.76,
  "last_fill": {
-  "ts": 1785661835,
+  "ts": 1785665997,
   "side": "SELL",
-  "price": 0.91,
-  "shares": 268.18,
-  "title": "LoL: ThunderTalk Gaming vs Team WE (BO3) - LPL Group Ascend",
-  "outcome": "Team WE"
+  "price": 0.95,
+  "shares": 0.02,
+  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3214,5 +3214,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785665150
+ "updated": 1785666004
 }
