@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1785765325,
+ "updated": 1785765385,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 614.15,
-   "n": 95,
-   "wins": 34,
-   "open_cost": 727.8,
-   "open_n": 14,
+   "realized": 618.49,
+   "n": 96,
+   "wins": 35,
+   "open_cost": 690.54,
+   "open_n": 13,
    "miss_n": 128,
-   "miss_pnl": 112355.68,
-   "last_ts": 1785747610
+   "miss_pnl": 112405.62,
+   "last_ts": 1785765358
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -104,6 +104,28 @@
   }
  },
  "bets": [
+  {
+   "token": "84833713274530571479250444223158955887841795944345736012615608017701449951658",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will Apple (AAPL) hit (LOW) $328 in August?",
+   "their_price": 0.89,
+   "my_price": 0.8930728667305848,
+   "slippage_pct": 0.0,
+   "lag_s": 10.4,
+   "shares": 41.72,
+   "cost": 37.259,
+   "fee": 0.1196,
+   "opened": 1785681356,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 4.34,
+   "settled": 1785765358,
+   "end_ts": 1788220800,
+   "sold_shares": 41.30937390591562,
+   "sold_proceeds": 41.30937390591562
+  },
   {
    "token": "113961999169187060881581100751857993788831983957610857176049971164400740097648",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -271,28 +293,6 @@
    "end_ts": 1785628800,
    "sold_shares": 92.52,
    "sold_proceeds": 88.71261695999999
-  },
-  {
-   "token": "84833713274530571479250444223158955887841795944345736012615608017701449951658",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will Apple (AAPL) hit (LOW) $328 in August?",
-   "their_price": 0.89,
-   "my_price": 0.8930728667305848,
-   "slippage_pct": 0.0,
-   "lag_s": 10.4,
-   "shares": 41.72,
-   "cost": 37.259,
-   "fee": 0.1196,
-   "opened": 1785681356,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788220800,
-   "sold_shares": 41.30937390591562,
-   "sold_proceeds": 41.30937390591562
   },
   {
    "token": "102071153892246039627048034194967021680193759805083679061162745293075874048047",
@@ -6914,6 +6914,21 @@
  ],
  "missed": [
   {
+   "ts": 1785562936,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "100720310613801593018338978226305070422958119598669850594088450940775255709584",
+   "cond": "0x046323588aa622773f8f4bfee9f659a67b48934cdc18d6241d0ccd1db44f963a",
+   "title": "Will Amazon.com, Inc. (AMZN) hit (HIGH) $256 in August?",
+   "outcome": "Yes",
+   "price": 0.53,
+   "stake": 57.23,
+   "reason": "no ask side on the book at copy time",
+   "status": "won",
+   "pnl": 49.94,
+   "settled": 1785765384,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785714325,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "22543406314196444245323960026442066534512011193983246558699690573164322842611",
@@ -7429,21 +7444,6 @@
    "settled": 1785574288,
    "name": "BikesAreTheBikes",
    "exit_price": 0.501
-  },
-  {
-   "ts": 1785562936,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "100720310613801593018338978226305070422958119598669850594088450940775255709584",
-   "cond": "0x046323588aa622773f8f4bfee9f659a67b48934cdc18d6241d0ccd1db44f963a",
-   "title": "Will Amazon.com, Inc. (AMZN) hit (HIGH) $256 in August?",
-   "outcome": "Yes",
-   "price": 0.53,
-   "stake": 57.23,
-   "reason": "no ask side on the book at copy time",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1785549161,
