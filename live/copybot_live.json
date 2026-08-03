@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 55.27,
+ "stake": 55.36,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1317.23,
- "deployed": 1446.37,
+ "cash": 1358.54,
+ "deployed": 1409.48,
  "reserve": 0.0,
- "realized": 1763.56,
+ "realized": 1767.98,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 26,
@@ -216,7 +216,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1788220800
+   "end_ts": 1788220800,
+   "sold_shares": 41.31,
+   "sold_proceeds": 41.31
   },
   {
    "token": "102071153892246039627048034194967021680193759805083679061162745293075874048047",
@@ -3107,12 +3109,12 @@
  ],
  "missed_pnl": 21555.45,
  "last_fill": {
-  "ts": 1785748087,
+  "ts": 1785748476,
   "side": "SELL",
-  "price": 0.96,
-  "shares": 0.07,
-  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
-  "outcome": "No"
+  "price": 1.0,
+  "shares": 10.02,
+  "title": "Will Apple (AAPL) hit (LOW) $328 in August?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3216,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785748095
+ "updated": 1785748477
 }
