@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1330.46,
- "deployed": 1433.19,
+ "cash": 1317.16,
+ "deployed": 1446.42,
  "reserve": 0.0,
- "realized": 1763.62,
+ "realized": 1763.55,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 25,
- "fees_paid": 452.34,
+ "open_count": 26,
+ "fees_paid": 452.42,
  "fee_rate": 0.03,
  "lag": {
-  "n": 378,
-  "n24": 8,
+  "n": 379,
+  "n24": 9,
   "basis": "24h",
-  "avg_s": 5.9,
+  "avg_s": 4.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "36170784529909729175483932196304779852897425726715038923506785466386030402957",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Cuba nationwide internet/power outage by December 31?",
+   "their_price": 0.82,
+   "my_price": 0.82,
+   "slippage_pct": 0.0,
+   "lag_s": 2.1,
+   "shares": 16.13,
+   "cost": 13.23,
+   "fee": 0.07,
+   "opened": 1785747610,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798675200
+  },
   {
    "token": "36288736401955665119786973077283875206752336249826000621290926077161772340777",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2138,26 +2158,6 @@
    "sold_shares": 74.54,
    "sold_proceeds": 65.91,
    "end_ts": 1830297600
-  },
-  {
-   "token": "8520939197524385894693978702254214426383751437032693433763418213436851058226",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Lando Norris get pole position at the 2026 F1 Hungarian Grand Prix?",
-   "their_price": 0.5,
-   "my_price": 0.5,
-   "slippage_pct": 0.0,
-   "lag_s": 2.7,
-   "shares": 174.52,
-   "cost": 87.26,
-   "fee": 1.31,
-   "opened": 1784991649,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -88.57,
-   "settled": 1785011468,
-   "end_ts": 1785542400
   }
  ],
  "missed": [
@@ -3107,23 +3107,23 @@
  ],
  "missed_pnl": 21555.45,
  "last_fill": {
-  "ts": 1785745680,
-  "side": "SELL",
-  "price": 0.962,
-  "shares": 0.07,
-  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
-  "outcome": "No"
+  "ts": 1785747612,
+  "side": "BUY",
+  "price": 0.82,
+  "shares": 16.13,
+  "title": "Cuba nationwide internet/power outage by December 31?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 614.15,
    "n": 95,
    "wins": 34,
-   "open_cost": 714.57,
-   "open_n": 13,
+   "open_cost": 727.8,
+   "open_n": 14,
    "miss_n": 125,
    "miss_pnl": 112338.67,
-   "last_ts": 1785708162
+   "last_ts": 1785747610
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3216,5 +3216,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785746608
+ "updated": 1785747618
 }
