@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785798029,
+ "updated": 1785798377,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 649.64,
@@ -36,11 +36,11 @@
    "realized": 134.57,
    "n": 13,
    "wins": 1,
-   "open_cost": 54.74,
-   "open_n": 1,
+   "open_cost": 107.34,
+   "open_n": 2,
    "miss_n": 10,
    "miss_pnl": 358.62,
-   "last_ts": 1785783818
+   "last_ts": 1785798367
   },
   "LSB1": {
    "realized": -397.16,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "44629810392325306078320885126725432925432567001348877770307512058002095840308",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Marcelina Podlinska",
+   "title": "Warsaw: Marcelina Podlinska vs Vendula Valdmannova",
+   "their_price": 0.4693,
+   "my_price": 0.4693,
+   "slippage_pct": 0.0,
+   "lag_s": 6.8,
+   "shares": 112.09,
+   "cost": 52.6,
+   "fee": 0.8375,
+   "opened": 1785798367,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786406400
+  },
   {
    "token": "86567202803696185629704724961398129231892610051254319801824623009047556217191",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

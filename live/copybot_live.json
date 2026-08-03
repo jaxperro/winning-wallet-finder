@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 52.6,
+ "stake": 52.59,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1318.92,
- "deployed": 1311.25,
+ "cash": 1265.49,
+ "deployed": 1363.85,
  "reserve": 0.0,
- "realized": 1630.14,
+ "realized": 1629.3,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 24,
- "fees_paid": 454.28,
+ "open_count": 25,
+ "fees_paid": 455.12,
  "fee_rate": 0.03,
  "lag": {
-  "n": 382,
-  "n24": 4,
+  "n": 383,
+  "n24": 5,
   "basis": "24h",
-  "avg_s": 1.5,
+  "avg_s": 2.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "44629810392325306078320885126725432925432567001348877770307512058002095840308",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Marcelina Podlinska",
+   "title": "Warsaw: Marcelina Podlinska vs Vendula Valdmannova",
+   "their_price": 0.4693,
+   "my_price": 0.4693,
+   "slippage_pct": 0.0,
+   "lag_s": 6.8,
+   "shares": 112.09,
+   "cost": 52.6,
+   "fee": 0.84,
+   "opened": 1785798367,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786406400
+  },
   {
    "token": "86567202803696185629704724961398129231892610051254319801824623009047556217191",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2133,28 +2153,6 @@
    "end_ts": 1785024000,
    "sold_shares": 198.66,
    "sold_proceeds": 198.66
-  },
-  {
-   "token": "113359571003047396767826426301838860151873706137356935468347609290162612073776",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Bilibili Gaming",
-   "title": "LoL: Anyone's Legend vs Bilibili Gaming (BO3) - LPL Group Ascend",
-   "their_price": 0.52,
-   "my_price": 0.52,
-   "slippage_pct": 0.0,
-   "lag_s": 17.7,
-   "shares": 236.84,
-   "cost": 123.16,
-   "fee": 1.77,
-   "opened": 1785072237,
-   "status": "closed",
-   "exit_price": 0.9486,
-   "pnl": 99.73,
-   "settled": 1785074437,
-   "end_ts": 1785024000,
-   "sold_shares": 236.84,
-   "sold_proceeds": 224.66
   }
  ],
  "missed": [
@@ -3104,12 +3102,12 @@
  ],
  "missed_pnl": 21414.49,
  "last_fill": {
-  "ts": 1785789617,
-  "side": "SELL",
-  "price": 0.99,
-  "shares": 29.71,
-  "title": "Will South Korea ETF (EWY) hit (HIGH) $164 in August?",
-  "outcome": "Yes"
+  "ts": 1785798373,
+  "side": "BUY",
+  "price": 0.4693,
+  "shares": 112.09,
+  "title": "Warsaw: Marcelina Podlinska vs Vendula Valdmannova",
+  "outcome": "Marcelina Podlinska"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3146,11 +3144,11 @@
    "realized": 134.57,
    "n": 13,
    "wins": 1,
-   "open_cost": 54.74,
-   "open_n": 1,
+   "open_cost": 107.34,
+   "open_n": 2,
    "miss_n": 10,
    "miss_pnl": 358.62,
-   "last_ts": 1785783818
+   "last_ts": 1785798367
   },
   "LSB1": {
    "realized": -397.16,
@@ -3213,5 +3211,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785798029
+ "updated": 1785798377
 }
