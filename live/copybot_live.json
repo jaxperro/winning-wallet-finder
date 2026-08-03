@@ -5,8 +5,8 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1330.37,
- "deployed": 1433.27,
+ "cash": 1330.4,
+ "deployed": 1433.25,
  "reserve": 0.0,
  "realized": 1763.61,
  "adjustments": 0.03,
@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 378,
-  "n24": 14,
+  "n24": 13,
   "basis": "24h",
-  "avg_s": 3.1,
+  "avg_s": 4.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -3105,10 +3105,10 @@
  ],
  "missed_pnl": 21616.66,
  "last_fill": {
-  "ts": 1785719126,
+  "ts": 1785729982,
   "side": "SELL",
-  "price": 0.958,
-  "shares": 0.05,
+  "price": 0.959,
+  "shares": 0.02,
   "title": "Bab el-Mandeb Strait effectively closed by August 31?",
   "outcome": "No"
  },
@@ -3214,5 +3214,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785729007
+ "updated": 1785729989
 }
