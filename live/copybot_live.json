@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 55.08,
+ "stake": 52.6,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 1318.92,
- "deployed": 1435.02,
+ "deployed": 1311.25,
  "reserve": 0.0,
- "realized": 1753.91,
+ "realized": 1630.14,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 25,
+ "ledger_drift": -0.01,
+ "open_count": 24,
  "fees_paid": 454.28,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "86567202803696185629704724961398129231892610051254319801824623009047556217191",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Israel x Iran ceasefire continues through July 31?",
+   "their_price": 0.47,
+   "my_price": 0.47,
+   "slippage_pct": 0.0,
+   "lag_s": 11.6,
+   "shares": 263.35,
+   "cost": 123.77,
+   "fee": 1.97,
+   "opened": 1784887113,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -125.74,
+   "settled": 1785796734,
+   "end_ts": 1785456000
+  },
   {
    "token": "41924814385271001327475674741821953575251218962289218166941963169991583786761",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2135,28 +2155,6 @@
    "end_ts": 1785024000,
    "sold_shares": 236.84,
    "sold_proceeds": 224.66
-  },
-  {
-   "token": "89340901248495209887282475621636749099978593982836424634713915099029001879979",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "ThunderTalk Gaming",
-   "title": "LoL: ThunderTalk Gaming vs EDward Gaming - Game 2 Winner",
-   "their_price": 0.53,
-   "my_price": 0.53,
-   "slippage_pct": 0.0,
-   "lag_s": 2.2,
-   "shares": 224.48,
-   "cost": 118.97,
-   "fee": 1.68,
-   "opened": 1785059588,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": 103.83,
-   "settled": 1785063175,
-   "end_ts": 1785024000,
-   "sold_shares": 224.48,
-   "sold_proceeds": 224.48
   }
  ],
  "missed": [
@@ -3176,14 +3174,14 @@
    "last_ts": 1785710954
   },
   "BikesAreTheBikes": {
-   "realized": 208.42,
-   "n": 17,
+   "realized": 82.68,
+   "n": 18,
    "wins": 3,
-   "open_cost": 1079.73,
-   "open_n": 13,
+   "open_cost": 955.96,
+   "open_n": 12,
    "miss_n": 45,
    "miss_pnl": -694.12,
-   "last_ts": 1785780667
+   "last_ts": 1785796734
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3216,5 +3214,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785794799
+ "updated": 1785796739
 }
