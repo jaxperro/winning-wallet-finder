@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 55.37,
+ "stake": 55.38,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1362.82,
- "deployed": 1405.86,
+ "cash": 1364.97,
+ "deployed": 1404.04,
  "reserve": 0.0,
- "realized": 1768.65,
+ "realized": 1768.98,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 26,
@@ -3109,7 +3109,7 @@
  ],
  "missed_pnl": 21555.45,
  "last_fill": {
-  "ts": 1785758396,
+  "ts": 1785759297,
   "side": "SELL",
   "price": 0.96,
   "shares": 2.24,
@@ -3218,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785758403
+ "updated": 1785759304
 }
