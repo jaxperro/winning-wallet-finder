@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785763815,
+ "updated": 1785764923,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 614.15,
@@ -8,7 +8,7 @@
    "wins": 34,
    "open_cost": 727.8,
    "open_n": 14,
-   "miss_n": 125,
+   "miss_n": 126,
    "miss_pnl": 112338.67,
    "last_ts": 1785747610
   },
@@ -6893,6 +6893,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785764923,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "21719030549920839782400045989779409306132128111576509534594737801642680036604",
+   "cond": "0xffe63153186b9f685328cbe65795408d369e4ffffb890ff667d050e9464b96d6",
+   "title": "Fuse FDV above $8B one day after launch?",
+   "outcome": "No",
+   "price": 0.83,
+   "stake": 55.41,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785636848,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
