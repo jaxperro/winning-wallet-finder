@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 54.74,
+ "stake": 54.72,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1320.92,
- "deployed": 1416.09,
+ "cash": 1265.28,
+ "deployed": 1470.83,
  "reserve": 0.0,
- "realized": 1736.98,
+ "realized": 1736.08,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 25,
- "fees_paid": 453.36,
+ "open_count": 26,
+ "fees_paid": 454.27,
  "fee_rate": 0.03,
  "lag": {
-  "n": 381,
-  "n24": 6,
+  "n": 382,
+  "n24": 7,
   "basis": "24h",
-  "avg_s": 1.1,
+  "avg_s": 1.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "56882011917273640084823249326001053189225136904142472220170731855262149705156",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Miomir Kecmanovic",
+   "title": "National Bank Open: Michael Zheng vs Miomir Kecmanovic",
+   "their_price": 0.45,
+   "my_price": 0.45,
+   "slippage_pct": 0.0,
+   "lag_s": 7.9,
+   "shares": 121.64,
+   "cost": 54.74,
+   "fee": 0.9,
+   "opened": 1785783818,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786233600
+  },
   {
    "token": "113961999169187060881581100751857993788831983957610857176049971164400740097648",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2137,28 +2157,6 @@
    "end_ts": 1785024000,
    "sold_shares": 224.48,
    "sold_proceeds": 224.48
-  },
-  {
-   "token": "9813729238721622440295199072182483266069584287294397729904340441074427123910",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "ThunderTalk Gaming",
-   "title": "LoL: ThunderTalk Gaming vs EDward Gaming - Game 1 Winner",
-   "their_price": 0.66,
-   "my_price": 0.66,
-   "slippage_pct": 0.0,
-   "lag_s": 0.6,
-   "shares": 177.13,
-   "cost": 116.91,
-   "fee": 1.19,
-   "opened": 1785057797,
-   "status": "closed",
-   "exit_price": 0.9588,
-   "pnl": 51.74,
-   "settled": 1785059061,
-   "end_ts": 1785024000,
-   "sold_shares": 177.13,
-   "sold_proceeds": 169.84
   }
  ],
  "missed": [
@@ -3110,12 +3108,12 @@
  ],
  "missed_pnl": 21537.65,
  "last_fill": {
-  "ts": 1785780216,
-  "side": "SELL",
-  "price": 0.998,
-  "shares": 32.76,
-  "title": "Will South Korea ETF (EWY) hit (HIGH) $164 in August?",
-  "outcome": "Yes"
+  "ts": 1785783825,
+  "side": "BUY",
+  "price": 0.45,
+  "shares": 121.64,
+  "title": "National Bank Open: Michael Zheng vs Miomir Kecmanovic",
+  "outcome": "Miomir Kecmanovic"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3152,11 +3150,11 @@
    "realized": 134.57,
    "n": 13,
    "wins": 1,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 54.74,
+   "open_n": 1,
    "miss_n": 10,
    "miss_pnl": 358.62,
-   "last_ts": 1785696160
+   "last_ts": 1785783818
   },
   "LSB1": {
    "realized": -397.16,
@@ -3219,5 +3217,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785780671
+ "updated": 1785783835
 }

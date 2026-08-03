@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785780671,
+ "updated": 1785783835,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 621.32,
@@ -36,11 +36,11 @@
    "realized": 134.57,
    "n": 13,
    "wins": 1,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 54.74,
+   "open_n": 1,
    "miss_n": 10,
    "miss_pnl": 358.62,
-   "last_ts": 1785696160
+   "last_ts": 1785783818
   },
   "LSB1": {
    "realized": -397.16,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "56882011917273640084823249326001053189225136904142472220170731855262149705156",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Miomir Kecmanovic",
+   "title": "National Bank Open: Michael Zheng vs Miomir Kecmanovic",
+   "their_price": 0.45,
+   "my_price": 0.45,
+   "slippage_pct": 0.0,
+   "lag_s": 7.9,
+   "shares": 121.64,
+   "cost": 54.74,
+   "fee": 0.9032,
+   "opened": 1785783818,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786233600
+  },
   {
    "token": "113961999169187060881581100751857993788831983957610857176049971164400740097648",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
