@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1330.32,
- "deployed": 1433.31,
+ "cash": 1330.37,
+ "deployed": 1433.27,
  "reserve": 0.0,
- "realized": 1763.6,
+ "realized": 1763.61,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 25,
@@ -3106,11 +3106,11 @@
  ],
  "missed_pnl": 21633.11,
  "last_fill": {
-  "ts": 1785708162,
+  "ts": 1785719126,
   "side": "SELL",
-  "price": 0.99,
-  "shares": 13.38,
-  "title": "Will Natural Gas (NG) hit (LOW) $1.80 in August?",
+  "price": 0.958,
+  "shares": 0.05,
+  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3215,5 +3215,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785718488
+ "updated": 1785719134
 }
