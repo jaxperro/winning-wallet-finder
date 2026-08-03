@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 55.45,
+ "stake": 55.67,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1288.23,
- "deployed": 1484.31,
+ "cash": 1320.92,
+ "deployed": 1462.69,
  "reserve": 0.0,
- "realized": 1772.51,
+ "realized": 1783.58,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 26,
@@ -632,7 +632,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1788220800
+   "end_ts": 1788220800,
+   "sold_shares": 32.76,
+   "sold_proceeds": 32.69
   },
   {
    "token": "51755566490633190587710009082328558101318630200939268705320724845423074644286",
@@ -3108,11 +3110,11 @@
  ],
  "missed_pnl": 21537.65,
  "last_fill": {
-  "ts": 1785775008,
-  "side": "BUY",
-  "price": 0.88,
-  "shares": 63.01,
-  "title": "US announces end of Iranian blockade by December 31, 2026?",
+  "ts": 1785780216,
+  "side": "SELL",
+  "price": 0.998,
+  "shares": 32.76,
+  "title": "Will South Korea ETF (EWY) hit (HIGH) $164 in August?",
   "outcome": "Yes"
  },
  "wallet_pnl": {
@@ -3217,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785777728
+ "updated": 1785780224
 }
