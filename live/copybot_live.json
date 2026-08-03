@@ -5,8 +5,8 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1327.32,
- "deployed": 1442.45,
+ "cash": 1327.34,
+ "deployed": 1442.43,
  "reserve": 0.0,
  "realized": 1769.74,
  "adjustments": 0.03,
@@ -2175,7 +2175,8 @@
    "status": "won",
    "pnl": 49.94,
    "settled": 1785765384,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1785714325,
@@ -3108,11 +3109,11 @@
  ],
  "missed_pnl": 21538.61,
  "last_fill": {
-  "ts": 1785765324,
-  "side": "BUY",
-  "price": 0.48,
-  "shares": 97.08,
-  "title": "Will Elon Musk post 40-64 tweets from August 1 to August 3, ",
+  "ts": 1785767146,
+  "side": "SELL",
+  "price": 0.959,
+  "shares": 0.02,
+  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3217,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785765385
+ "updated": 1785767226
 }
