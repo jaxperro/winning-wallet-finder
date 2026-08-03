@@ -148,7 +148,19 @@ def main():
     json.dump(rows, open(os.path.join(HERE, OUT.replace(".json", "_scored.json")), "w"))
 
     val = sum(1 for r in skilled if r["tier"] == "validated")
-    print(f"\nscored {len(rows):,} wallets · BH@{int(FDR_Q*100)}% threshold p<= {thresh:.1e}")
+    # A zero threshold is NOT a broken bar — it is BH reporting that nothing
+    # cleared FDR. Say so, with the numbers that make it checkable (2026-08-02:
+    # "p<= 0.0e+00" read like a defect and cost an hour of forensics).
+    if thresh > 0:
+        print(f"\nscored {len(rows):,} wallets · BH@{int(FDR_Q*100)}% "
+              f"threshold p<= {thresh:.1e}")
+    else:
+        _ps = sorted(r["pval"] for r in rows) or [float("nan")]
+        print(f"\nscored {len(rows):,} wallets · BH@{int(FDR_Q*100)}%: "
+              f"NOBODY CLEARED FDR — best p={_ps[0]:.2e} vs the rank-1 bar "
+              f"p<={FDR_Q/max(1,len(rows)):.2e}. Not a bug: with "
+              f"{len(rows):,} simultaneous tests the bar tightens, so a "
+              f"z~3 wallet is no longer distinguishable from luck.")
     print(f"SKILLED: {len(skilled)} ({val} validated OOS, {len(skilled)-val} candidate) "
           f"-> watch_skilled.json\n")
     hdr = f"{'tier':>10}{'z':>6}{'z_oos':>6}{'rec':>12}{'win%':>6}{'avgP':>6}{'0.2-0.4':>8}  wallet"

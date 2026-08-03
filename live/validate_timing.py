@@ -28,6 +28,7 @@ copy_pnl (fees, mirror exits) remains the other selection leg, and held stats
 are still computed for display.
 """
 
+import collections
 import json
 import os
 import ssl
@@ -376,6 +377,7 @@ def main():
         stats = list(ex.map(safe_stats, conv))
     cut30 = time.time() - 30 * 86400
     sharps = []
+    gate_fails = collections.Counter()
     for c, ds in zip(conv, stats):
         if ds is None:
             continue
@@ -397,12 +399,26 @@ def main():
         # clear majority with positive flat-stake ROI on a real sample, so the edge
         # survives live latency and isn't longshot variance or all sell-timing. A
         # light lead floor drops true sub-hour snipers.
-        if ((ds["last_trade"] or 0) >= cut30 and ds["copy_pnl"] > 0
-                and tr["n"] >= MIN_HELD and tr["wr"] >= MIN_HELD_WR and tr["roi"] > 0
-                and (c["med_lead_h"] is None or c["med_lead_h"] >= MIN_LEAD_H)):
+        # FIRST-FAILURE TALLY (2026-08-02): the gate went 37->34->14->0 across
+        # runs and the log said only "0 copy-positive holders" — reconstructing
+        # WHICH condition bit took an hour of hand queries. Count them here so
+        # any future zero explains itself in daily.log.
+        checks = (("inactive_30d", (ds["last_trade"] or 0) >= cut30),
+                  ("copy_pnl<=0", ds["copy_pnl"] > 0),
+                  (f"trust_n<{MIN_HELD}", tr["n"] >= MIN_HELD),
+                  (f"trust_wr<{MIN_HELD_WR:.0%}", tr["wr"] >= MIN_HELD_WR),
+                  ("trust_roi<=0", tr["roi"] > 0),
+                  (f"lead<{MIN_LEAD_H}h", c["med_lead_h"] is None
+                   or c["med_lead_h"] >= MIN_LEAD_H))
+        failed = [name for name, ok in checks if not ok]
+        if failed:
+            gate_fails[failed[0]] += 1
+        else:
+            gate_fails["PASS"] += 1
             sharps.append(c)
 
     sharps.sort(key=lambda c: c["copy_pnl"], reverse=True)
+    print(f"   gate first-failure: {dict(gate_fails.most_common())}")
     print(f"copy-positive holders (copy>0, trust_n>={MIN_HELD}, trust_wr>={MIN_HELD_WR:.0%}, "
           f"trust_roi>0 over {TRUST_DAYS}d, active, lead>={MIN_LEAD_H}h): "
           f"{len(sharps)} of {len(conv)}\n")
