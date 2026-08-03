@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 54.72,
+ "stake": 55.08,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1265.28,
- "deployed": 1470.83,
+ "cash": 1318.92,
+ "deployed": 1435.02,
  "reserve": 0.0,
- "realized": 1736.08,
+ "realized": 1753.91,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 26,
- "fees_paid": 454.27,
+ "ledger_drift": -0.02,
+ "open_count": 25,
+ "fees_paid": 454.28,
  "fee_rate": 0.03,
  "lag": {
   "n": 382,
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "41924814385271001327475674741821953575251218962289218166941963169991583786761",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will South Korea ETF (EWY) hit (HIGH) $164 in August?",
+   "their_price": 0.66,
+   "my_price": 0.66,
+   "slippage_pct": 0.0,
+   "lag_s": 0.3,
+   "shares": 87.01,
+   "cost": 57.43,
+   "fee": 0.59,
+   "opened": 1785576842,
+   "status": "closed",
+   "exit_price": 0.9922,
+   "pnl": 28.32,
+   "settled": 1785789617,
+   "end_ts": 1788220800,
+   "sold_shares": 87.01,
+   "sold_proceeds": 86.33
+  },
   {
    "token": "56882011917273640084823249326001053189225136904142472220170731855262149705156",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -633,28 +655,6 @@
    "end_ts": 1785542400,
    "sold_shares": 104.49,
    "sold_proceeds": 94.82
-  },
-  {
-   "token": "41924814385271001327475674741821953575251218962289218166941963169991583786761",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will South Korea ETF (EWY) hit (HIGH) $164 in August?",
-   "their_price": 0.66,
-   "my_price": 0.66,
-   "slippage_pct": 0.0,
-   "lag_s": 0.3,
-   "shares": 87.01,
-   "cost": 57.43,
-   "fee": 0.59,
-   "opened": 1785576842,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788220800,
-   "sold_shares": 32.76,
-   "sold_proceeds": 32.69
   },
   {
    "token": "51755566490633190587710009082328558101318630200939268705320724845423074644286",
@@ -3108,23 +3108,23 @@
  ],
  "missed_pnl": 21537.65,
  "last_fill": {
-  "ts": 1785783825,
-  "side": "BUY",
-  "price": 0.45,
-  "shares": 121.64,
-  "title": "National Bank Open: Michael Zheng vs Miomir Kecmanovic",
-  "outcome": "Miomir Kecmanovic"
+  "ts": 1785789617,
+  "side": "SELL",
+  "price": 0.99,
+  "shares": 29.71,
+  "title": "Will South Korea ETF (EWY) hit (HIGH) $164 in August?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 621.32,
-   "n": 97,
+   "realized": 649.64,
+   "n": 98,
    "wins": 36,
-   "open_cost": 677.31,
-   "open_n": 12,
+   "open_cost": 619.88,
+   "open_n": 11,
    "miss_n": 128,
    "miss_pnl": 112404.66,
-   "last_ts": 1785773960
+   "last_ts": 1785789617
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3217,5 +3217,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785788432
+ "updated": 1785789618
 }
