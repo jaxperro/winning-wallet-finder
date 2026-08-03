@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785765215,
+ "updated": 1785765325,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 614.15,
@@ -66,11 +66,11 @@
    "realized": 255.75,
    "n": 16,
    "wins": 3,
-   "open_cost": 1024.28,
-   "open_n": 12,
+   "open_cost": 1070.88,
+   "open_n": 13,
    "miss_n": 45,
    "miss_pnl": -694.12,
-   "last_ts": 1785710549
+   "last_ts": 1785765324
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "113961999169187060881581100751857993788831983957610857176049971164400740097648",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Elon Musk post 40-64 tweets from August 1 to August 3, 2026?",
+   "their_price": 0.48,
+   "my_price": 0.48,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 97.08,
+   "cost": 46.6,
+   "fee": 0.7269,
+   "opened": 1785765324,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785715200
+  },
   {
    "token": "36170784529909729175483932196304779852897425726715038923506785466386030402957",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",

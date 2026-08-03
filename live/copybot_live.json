@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 55.41,
+ "stake": 55.39,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1374.23,
- "deployed": 1396.22,
+ "cash": 1326.91,
+ "deployed": 1442.82,
  "reserve": 0.0,
- "realized": 1770.42,
+ "realized": 1769.69,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 26,
- "fees_paid": 452.43,
+ "open_count": 27,
+ "fees_paid": 453.16,
  "fee_rate": 0.03,
  "lag": {
-  "n": 379,
-  "n24": 9,
+  "n": 380,
+  "n24": 10,
   "basis": "24h",
-  "avg_s": 4.4,
+  "avg_s": 3.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "113961999169187060881581100751857993788831983957610857176049971164400740097648",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Elon Musk post 40-64 tweets from August 1 to August 3, 2026?",
+   "their_price": 0.48,
+   "my_price": 0.48,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 97.08,
+   "cost": 46.6,
+   "fee": 0.73,
+   "opened": 1785765324,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785715200
+  },
   {
    "token": "36170784529909729175483932196304779852897425726715038923506785466386030402957",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2139,27 +2159,6 @@
    "end_ts": 1785024000,
    "sold_shares": 196.62,
    "sold_proceeds": 187.05
-  },
-  {
-   "token": "44955835255986870213886955575315970674806073263991248758756749076487124445148",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Ethereal FDV above $500M one day after launch?",
-   "their_price": 0.82,
-   "my_price": 0.6,
-   "slippage_pct": -0.2683,
-   "shares": 74.55,
-   "cost": 44.73,
-   "fee": 0.54,
-   "opened": 1783604345,
-   "status": "closed",
-   "exit_price": 0.8842,
-   "pnl": 20.65,
-   "settled": 1785011567,
-   "sold_shares": 74.54,
-   "sold_proceeds": 65.91,
-   "end_ts": 1830297600
   }
  ],
  "missed": [
@@ -3109,11 +3108,11 @@
  ],
  "missed_pnl": 21488.67,
  "last_fill": {
-  "ts": 1785763815,
-  "side": "SELL",
-  "price": 0.96,
-  "shares": 0.72,
-  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+  "ts": 1785765324,
+  "side": "BUY",
+  "price": 0.48,
+  "shares": 97.08,
+  "title": "Will Elon Musk post 40-64 tweets from August 1 to August 3, ",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3181,11 +3180,11 @@
    "realized": 255.75,
    "n": 16,
    "wins": 3,
-   "open_cost": 1024.28,
-   "open_n": 12,
+   "open_cost": 1070.88,
+   "open_n": 13,
    "miss_n": 45,
    "miss_pnl": -694.12,
-   "last_ts": 1785710549
+   "last_ts": 1785765324
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3218,5 +3217,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785765215
+ "updated": 1785765325
 }
