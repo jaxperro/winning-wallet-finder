@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785780534,
+ "updated": 1785780671,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 621.32,
@@ -63,14 +63,14 @@
    "last_ts": 1785710954
   },
   "BikesAreTheBikes": {
-   "realized": 255.75,
-   "n": 16,
+   "realized": 208.42,
+   "n": 17,
    "wins": 3,
-   "open_cost": 1126.33,
-   "open_n": 14,
+   "open_cost": 1079.73,
+   "open_n": 13,
    "miss_n": 45,
    "miss_pnl": -694.12,
-   "last_ts": 1785775008
+   "last_ts": 1785780667
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "113961999169187060881581100751857993788831983957610857176049971164400740097648",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Elon Musk post 40-64 tweets from August 1 to August 3, 2026?",
+   "their_price": 0.48,
+   "my_price": 0.48,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 97.08,
+   "cost": 46.6,
+   "fee": 0.7269,
+   "opened": 1785765324,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -47.33,
+   "settled": 1785780667,
+   "end_ts": 1785715200
+  },
   {
    "token": "86011229287950365043519117852041614651767455889324682112682327985496937935368",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -165,26 +185,6 @@
    "end_ts": 1788220800,
    "sold_shares": 41.30937390591562,
    "sold_proceeds": 41.30937390591562
-  },
-  {
-   "token": "113961999169187060881581100751857993788831983957610857176049971164400740097648",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will Elon Musk post 40-64 tweets from August 1 to August 3, 2026?",
-   "their_price": 0.48,
-   "my_price": 0.48,
-   "slippage_pct": 0.0,
-   "lag_s": 0.6,
-   "shares": 97.08,
-   "cost": 46.6,
-   "fee": 0.7269,
-   "opened": 1785765324,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785715200
   },
   {
    "token": "36288736401955665119786973077283875206752336249826000621290926077161772340777",
