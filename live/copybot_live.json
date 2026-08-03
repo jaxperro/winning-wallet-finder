@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1317.16,
- "deployed": 1446.42,
+ "cash": 1317.23,
+ "deployed": 1446.37,
  "reserve": 0.0,
- "realized": 1763.55,
+ "realized": 1763.56,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
  "open_count": 26,
@@ -3107,12 +3107,12 @@
  ],
  "missed_pnl": 21555.45,
  "last_fill": {
-  "ts": 1785747612,
-  "side": "BUY",
-  "price": 0.82,
-  "shares": 16.13,
-  "title": "Cuba nationwide internet/power outage by December 31?",
-  "outcome": "Yes"
+  "ts": 1785748087,
+  "side": "SELL",
+  "price": 0.96,
+  "shares": 0.07,
+  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3216,5 +3216,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785747618
+ "updated": 1785748095
 }
