@@ -2164,6 +2164,68 @@
  ],
  "missed": [
   {
+   "ts": 1785714325,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "22543406314196444245323960026442066534512011193983246558699690573164322842611",
+   "cond": "0x63764d6d2fb1c9cf8eca39c65725190116e768c9c7903a52d72a4a0d92f4ebed",
+   "title": "Will Palantir Technologies Inc. (PLTR) hit (HIGH) $123 Week of August 3 2026?",
+   "outcome": "Yes",
+   "price": 0.72,
+   "stake": 28.8,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 8.93,
+   "settled": 1785765208,
+   "name": "0xbadaf319",
+   "exit_price": 0.9507
+  },
+  {
+   "ts": 1785547159,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "71739557560388946044087731872467452814125074603840391771492036693615154840015",
+   "cond": "0xf167107f5ced42d688c51576c51f6393efcef0827da02e11b997d503633606b7",
+   "title": "Will Coinbase Global, Inc. (COIN) hit (LOW) $155 in August?",
+   "outcome": "Yes",
+   "price": 0.8411,
+   "stake": 44.06,
+   "reason": "maker bid unfilled (101s)",
+   "status": "sold",
+   "pnl": 8.08,
+   "settled": 1785765205,
+   "name": "0xbadaf319",
+   "exit_price": 0.9993
+  },
+  {
+   "ts": 1785765199,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "105325057331617843593500921322985327200497446237876935215440565478876478702870",
+   "cond": "0xa50d4dfbd3162502a8f6319f6f03bf96d11a29e59c966f074d362fac414586ea",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $148 Week of August 3 2026?",
+   "outcome": "No",
+   "price": 0.3083,
+   "stake": 32.23,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785765199,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "55959144997843871163283791486660253833743728047314190261335173160541128732918",
+   "cond": "0x5a3ea7926fc133f2319a1ffe07829b6bfafa3a13b24939238905c038efd4f350",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $150 Week of August 3 2026?",
+   "outcome": "Yes",
+   "price": 0.6415,
+   "stake": 55.41,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785764923,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "21719030549920839782400045989779409306132128111576509534594737801642680036604",
@@ -2224,21 +2286,6 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1785714325,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "22543406314196444245323960026442066534512011193983246558699690573164322842611",
-   "cond": "0x63764d6d2fb1c9cf8eca39c65725190116e768c9c7903a52d72a4a0d92f4ebed",
-   "title": "Will Palantir Technologies Inc. (PLTR) hit (HIGH) $123 Week of August 3 2026?",
-   "outcome": "Yes",
-   "price": 0.72,
-   "stake": 28.8,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1785708383,
@@ -2664,21 +2711,6 @@
    "name": "BikesAreTheBikes"
   },
   {
-   "ts": 1785547159,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "71739557560388946044087731872467452814125074603840391771492036693615154840015",
-   "cond": "0xf167107f5ced42d688c51576c51f6393efcef0827da02e11b997d503633606b7",
-   "title": "Will Coinbase Global, Inc. (COIN) hit (LOW) $155 in August?",
-   "outcome": "Yes",
-   "price": 0.8411,
-   "stake": 44.06,
-   "reason": "maker bid unfilled (101s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1785538189,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "42545434228659485569831692832667457006480927794525728856287124784939219621691",
@@ -3073,40 +3105,9 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1785423043,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "32952048155093419718055060819712841482842350791391116195205201413217889733414",
-   "cond": "0xe6d5e5da83874cd82c9b651a8a5d4fc541a800a295fb62e85124b4f5a04a4b7d",
-   "title": "Will China invade Taiwan by December 31, 2027?",
-   "outcome": "No",
-   "price": 0.7732,
-   "stake": 54.4,
-   "reason": "no ask side on the book at copy time",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1785418993,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "36453674909550008103342680265266205187293615233375154579690068331297603601870",
-   "cond": "0x4e7c65ffae56bb534e856b5a801bf6f4fbda48d68fed0dd30b8393098867d8bd",
-   "title": "Dota 2: LGD Gaming vs MOUZ - Game 2 Winner",
-   "outcome": "LGD Gaming",
-   "price": 0.6774,
-   "stake": 40.23,
-   "reason": "maker bid unfilled (105s)",
-   "status": "sold",
-   "pnl": -3.0,
-   "settled": 1785419209,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.6403
   }
  ],
- "missed_pnl": 21462.5,
+ "missed_pnl": 21488.67,
  "last_fill": {
   "ts": 1785763815,
   "side": "SELL",
@@ -3122,8 +3123,8 @@
    "wins": 34,
    "open_cost": 727.8,
    "open_n": 14,
-   "miss_n": 126,
-   "miss_pnl": 112338.67,
+   "miss_n": 128,
+   "miss_pnl": 112355.68,
    "last_ts": 1785747610
   },
   "gkmgkldfmg": {
@@ -3217,5 +3218,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785764923
+ "updated": 1785765215
 }
