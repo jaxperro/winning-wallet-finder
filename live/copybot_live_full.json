@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785719134,
+ "updated": 1785723617,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 614.15,
@@ -68,7 +68,7 @@
    "wins": 3,
    "open_cost": 1024.28,
    "open_n": 12,
-   "miss_n": 44,
+   "miss_n": 45,
    "miss_pnl": -632.91,
    "last_ts": 1785710549
   },
@@ -6871,6 +6871,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785723609,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "15394737252115511624698733646046193249964740097060021118061023239685546384550",
+   "cond": "0x2c185587bad5fe008a477755ed1dfbbb9f5828e84596aa9c6d9f60ebe6bc705d",
+   "title": "Will a Chinese company have one of the top 5 AI models by December 31?",
+   "outcome": "No",
+   "price": 0.04,
+   "stake": 55.27,
+   "reason": "thin book ($13 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1785718176,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

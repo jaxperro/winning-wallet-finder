@@ -2162,6 +2162,21 @@
  ],
  "missed": [
   {
+   "ts": 1785723609,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "15394737252115511624698733646046193249964740097060021118061023239685546384550",
+   "cond": "0x2c185587bad5fe008a477755ed1dfbbb9f5828e84596aa9c6d9f60ebe6bc705d",
+   "title": "Will a Chinese company have one of the top 5 AI models by December 31?",
+   "outcome": "No",
+   "price": 0.04,
+   "stake": 55.27,
+   "reason": "thin book ($13 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1785718176,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "34336750619875308256599829547670506010305636448259915722708507966106063783608",
@@ -3086,25 +3101,9 @@
    "settled": 1785417181,
    "name": "gkmgkldfmg",
    "exit_price": 0.6142
-  },
-  {
-   "ts": 1785389644,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "48905394170305541744328748582998455459621629534326295447768125812721237965617",
-   "cond": "0xfc6584616ca3ec385e40881bd568fe291713cad93ab95be921f4ba2bf3b456e3",
-   "title": "WTI Crude Oil (WTI) closes above $86 on July 30?",
-   "outcome": "No",
-   "price": 0.68,
-   "stake": 27.26,
-   "reason": "maker bid unfilled (92s)",
-   "status": "sold",
-   "pnl": 5.76,
-   "settled": 1785417180,
-   "name": "0xbadaf319",
-   "exit_price": 0.8342
   }
  ],
- "missed_pnl": 21633.11,
+ "missed_pnl": 21616.66,
  "last_fill": {
   "ts": 1785719126,
   "side": "SELL",
@@ -3180,7 +3179,7 @@
    "wins": 3,
    "open_cost": 1024.28,
    "open_n": 12,
-   "miss_n": 44,
+   "miss_n": 45,
    "miss_pnl": -632.91,
    "last_ts": 1785710549
   },
@@ -3215,5 +3214,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785719134
+ "updated": 1785723617
 }
