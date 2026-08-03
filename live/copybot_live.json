@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 55.4,
+ "stake": 55.45,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1327.62,
- "deployed": 1442.2,
+ "cash": 1343.75,
+ "deployed": 1428.97,
  "reserve": 0.0,
- "realized": 1769.79,
+ "realized": 1772.69,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 26,
+ "open_count": 25,
  "fees_paid": 453.16,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "36170784529909729175483932196304779852897425726715038923506785466386030402957",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Cuba nationwide internet/power outage by December 31?",
+   "their_price": 0.82,
+   "my_price": 0.82,
+   "slippage_pct": 0.0,
+   "lag_s": 2.1,
+   "shares": 16.13,
+   "cost": 13.23,
+   "fee": 0.07,
+   "opened": 1785747610,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 2.83,
+   "settled": 1785773960,
+   "end_ts": 1798675200
+  },
   {
    "token": "84833713274530571479250444223158955887841795944345736012615608017701449951658",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -91,26 +111,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785715200
-  },
-  {
-   "token": "36170784529909729175483932196304779852897425726715038923506785466386030402957",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Cuba nationwide internet/power outage by December 31?",
-   "their_price": 0.82,
-   "my_price": 0.82,
-   "slippage_pct": 0.0,
-   "lag_s": 2.1,
-   "shares": 16.13,
-   "cost": 13.23,
-   "fee": 0.07,
-   "opened": 1785747610,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1798675200
   },
   {
    "token": "36288736401955665119786973077283875206752336249826000621290926077161772340777",
@@ -3119,14 +3119,14 @@
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 618.49,
-   "n": 96,
-   "wins": 35,
-   "open_cost": 690.54,
-   "open_n": 13,
+   "realized": 621.32,
+   "n": 97,
+   "wins": 36,
+   "open_cost": 677.31,
+   "open_n": 12,
    "miss_n": 128,
    "miss_pnl": 112404.66,
-   "last_ts": 1785765358
+   "last_ts": 1785773960
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3219,5 +3219,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785773361
+ "updated": 1785773964
 }
