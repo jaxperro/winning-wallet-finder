@@ -2159,6 +2159,21 @@
  ],
  "missed": [
   {
+   "ts": 1785830582,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "24637207133949609919399691173678761328784545323421628849922935609077566628235",
+   "cond": "0xf7c417ac2bf0888ac6d358131cab1de8797ed413e1899278b378a40a10cfc686",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $128 in August?",
+   "outcome": "No",
+   "price": 0.47,
+   "stake": 7.0,
+   "reason": "maker bid unfilled (117s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785828541,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "34202871818293327873019109384233612300844391276682641362875608341774765501606",
@@ -3086,25 +3101,9 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.956
-  },
-  {
-   "ts": 1785397377,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "39269986509343926601716046818556340014937567237911903122563938140480316098298",
-   "cond": "0xc12ddf2480827eb5183af5ec33fc3a55d34a37ae9aa593929eb94bc7622be659",
-   "title": "Will Microsoft (MSFT) close above $390 on July 30?",
-   "outcome": "Yes",
-   "price": 0.9489,
-   "stake": 34.46,
-   "reason": "maker bid unfilled (66s)",
-   "status": "won",
-   "pnl": 1.8,
-   "settled": 1785443023,
-   "name": "0xbadaf319",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 21470.95,
+ "missed_pnl": 21415.12,
  "last_fill": {
   "ts": 1785809591,
   "side": "SELL",
@@ -3120,7 +3119,7 @@
    "wins": 36,
    "open_cost": 619.88,
    "open_n": 11,
-   "miss_n": 131,
+   "miss_n": 132,
    "miss_pnl": 112410.96,
    "last_ts": 1785809599
   },
@@ -3215,5 +3214,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785828550
+ "updated": 1785830606
 }

@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785828550,
+ "updated": 1785830606,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 655.37,
@@ -8,7 +8,7 @@
    "wins": 36,
    "open_cost": 619.88,
    "open_n": 11,
-   "miss_n": 131,
+   "miss_n": 132,
    "miss_pnl": 112410.96,
    "last_ts": 1785809599
   },
@@ -6999,6 +6999,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785830582,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "24637207133949609919399691173678761328784545323421628849922935609077566628235",
+   "cond": "0xf7c417ac2bf0888ac6d358131cab1de8797ed413e1899278b378a40a10cfc686",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $128 in August?",
+   "outcome": "No",
+   "price": 0.47,
+   "stake": 7.0,
+   "reason": "maker bid unfilled (117s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785828541,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
