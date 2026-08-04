@@ -2151,6 +2151,51 @@
  ],
  "missed": [
   {
+   "ts": 1785765199,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "55959144997843871163283791486660253833743728047314190261335173160541128732918",
+   "cond": "0x5a3ea7926fc133f2319a1ffe07829b6bfafa3a13b24939238905c038efd4f350",
+   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $150 Week of August 3 2026?",
+   "outcome": "Yes",
+   "price": 0.6415,
+   "stake": 55.41,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 30.37,
+   "settled": 1785854393,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785794792,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "91055215141400171032349291180455453315879372168040806088662189239076731092652",
+   "cond": "0xc0e8be14f224376ce44307bc7cb4569fa30942c638e81a06b6a8d5630df0abd1",
+   "title": "Will Rocket Lab USA, Inc. (RKLB) hit (HIGH) $72 in August?",
+   "outcome": "Yes",
+   "price": 0.1,
+   "stake": 40.54,
+   "reason": "thin book ($5 within 5c < $50)",
+   "status": "won",
+   "pnl": 363.77,
+   "settled": 1785854393,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785578341,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "42899432488342704988410057610915628594524688649436238250083617450163825293663",
+   "cond": "0xa754dbf949dd2b1fbafa3d846564288df3e8e3da4b4062306055bee6b372d4fa",
+   "title": "Will Palantir Technologies Inc. (PLTR) hit (HIGH) $150 in August?",
+   "outcome": "No",
+   "price": 0.5799,
+   "stake": 28.15,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "lost",
+   "pnl": -28.5,
+   "settled": 1785854392,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785852517,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "44952859930591206375449316303350129121071883825837753443431097609201876804363",
@@ -2275,21 +2320,6 @@
    "exit_price": 0.9327
   },
   {
-   "ts": 1785794792,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "91055215141400171032349291180455453315879372168040806088662189239076731092652",
-   "cond": "0xc0e8be14f224376ce44307bc7cb4569fa30942c638e81a06b6a8d5630df0abd1",
-   "title": "Will Rocket Lab USA, Inc. (RKLB) hit (HIGH) $72 in August?",
-   "outcome": "Yes",
-   "price": 0.1,
-   "stake": 40.54,
-   "reason": "thin book ($5 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1785379176,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "92062876943642517334204166558488649767389043731898736327419367578333707352166",
@@ -2362,21 +2392,6 @@
    "outcome": "No",
    "price": 0.3083,
    "stake": 32.23,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785765199,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "55959144997843871163283791486660253833743728047314190261335173160541128732918",
-   "cond": "0x5a3ea7926fc133f2319a1ffe07829b6bfafa3a13b24939238905c038efd4f350",
-   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $150 Week of August 3 2026?",
-   "outcome": "Yes",
-   "price": 0.6415,
-   "stake": 55.41,
    "reason": "not copied in the detection window (reconciled)",
    "status": "open",
    "pnl": null,
@@ -2747,21 +2762,6 @@
    "exit_price": 0.5537
   },
   {
-   "ts": 1785578341,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "42899432488342704988410057610915628594524688649436238250083617450163825293663",
-   "cond": "0xa754dbf949dd2b1fbafa3d846564288df3e8e3da4b4062306055bee6b372d4fa",
-   "title": "Will Palantir Technologies Inc. (PLTR) hit (HIGH) $150 in August?",
-   "outcome": "No",
-   "price": 0.5799,
-   "stake": 28.15,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1785578340,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "50825092058293657542194164596745813272825150865419431118334975989194381746273",
@@ -3093,7 +3093,7 @@
    "exit_price": 0.2972
   }
  ],
- "missed_pnl": 20937.89,
+ "missed_pnl": 21303.53,
  "last_fill": {
   "ts": 1785849945,
   "side": "BUY",
@@ -3110,7 +3110,7 @@
    "open_cost": 695.3,
    "open_n": 13,
    "miss_n": 136,
-   "miss_pnl": 112417.55,
+   "miss_pnl": 112783.19,
    "last_ts": 1785844868
   },
   "gkmgkldfmg": {
@@ -3204,5 +3204,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785852517
+ "updated": 1785854393
 }
