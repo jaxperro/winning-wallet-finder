@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785838301,
+ "updated": 1785840691,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 655.37,
@@ -8,7 +8,7 @@
    "wins": 36,
    "open_cost": 669.88,
    "open_n": 12,
-   "miss_n": 133,
+   "miss_n": 134,
    "miss_pnl": 112410.96,
    "last_ts": 1785838016
   },
@@ -7019,6 +7019,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785840667,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "110424200765701164806975547968417847902674941184254977722491050392032231955206",
+   "cond": "0x7c6bd37544556a8c2b4b67e14d84ad5a909f34d4b455832cc0e71b3be109f1dc",
+   "title": "WTI Crude Oil (WTI) closes above $80 on August 4?",
+   "outcome": "Yes",
+   "price": 0.69,
+   "stake": 50,
+   "reason": "maker bid unfilled (118s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785838288,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
