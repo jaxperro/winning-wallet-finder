@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785840691,
+ "updated": 1785842608,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 655.37,
@@ -56,11 +56,11 @@
    "realized": 118.39,
    "n": 47,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 54.04,
+   "open_n": 1,
    "miss_n": 8,
    "miss_pnl": -366.65,
-   "last_ts": 1785710954
+   "last_ts": 1785842576
   },
   "BikesAreTheBikes": {
    "realized": 82.68,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "41800024459753239846641136399457022409586964534205265889258791197815836336250",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Kiwoom DRX",
+   "title": "LoL: HANJIN BRION vs Kiwoom DRX - Game 1 Winner",
+   "their_price": 0.5899,
+   "my_price": 0.5899,
+   "slippage_pct": 0.0,
+   "lag_s": 7.6,
+   "shares": 91.6,
+   "cost": 54.04,
+   "fee": 0.6648,
+   "opened": 1785842576,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785801600
+  },
   {
    "token": "106115320143789078209815024545651655998344368776988969384790307418401251093243",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",

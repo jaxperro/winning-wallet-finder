@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 54.04,
+ "stake": 54.02,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1342.78,
- "deployed": 1359.11,
+ "cash": 1288.08,
+ "deployed": 1413.15,
  "reserve": 0.0,
- "realized": 1701.86,
+ "realized": 1701.2,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 25,
- "fees_paid": 455.38,
+ "open_count": 26,
+ "fees_paid": 456.05,
  "fee_rate": 0.03,
  "lag": {
-  "n": 385,
-  "n24": 6,
+  "n": 386,
+  "n24": 7,
   "basis": "24h",
-  "avg_s": 0.7,
+  "avg_s": 0.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "41800024459753239846641136399457022409586964534205265889258791197815836336250",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Kiwoom DRX",
+   "title": "LoL: HANJIN BRION vs Kiwoom DRX - Game 1 Winner",
+   "their_price": 0.5899,
+   "my_price": 0.5899,
+   "slippage_pct": 0.0,
+   "lag_s": 7.6,
+   "shares": 91.6,
+   "cost": 54.04,
+   "fee": 0.66,
+   "opened": 1785842576,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785801600
+  },
   {
    "token": "106115320143789078209815024545651655998344368776988969384790307418401251093243",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2131,28 +2151,6 @@
    "end_ts": 1798675200,
    "sold_shares": 48.72,
    "sold_proceeds": 48.62
-  },
-  {
-   "token": "73772414999817992515088687755193145487336993356690533986692595350122387340288",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "WTI Crude Oil (WTI) closes above $91 on July 27?",
-   "their_price": 0.93,
-   "my_price": 0.93,
-   "slippage_pct": 0.0,
-   "lag_s": 2.8,
-   "shares": 63.33,
-   "cost": 58.9,
-   "fee": 0.12,
-   "opened": 1785103316,
-   "status": "closed",
-   "exit_price": 0.9897,
-   "pnl": 3.65,
-   "settled": 1785115560,
-   "end_ts": 1785110400,
-   "sold_shares": 63.33,
-   "sold_proceeds": 62.68
   }
  ],
  "missed": [
@@ -3100,12 +3098,12 @@
  ],
  "missed_pnl": 21430.04,
  "last_fill": {
-  "ts": 1785838016,
+  "ts": 1785842583,
   "side": "BUY",
-  "price": 0.95,
-  "shares": 52.63,
-  "title": "Will Palantir Technologies Inc. (PLTR) hit (LOW) $105 Week o",
-  "outcome": "No"
+  "price": 0.5899,
+  "shares": 91.6,
+  "title": "LoL: HANJIN BRION vs Kiwoom DRX - Game 1 Winner",
+  "outcome": "Kiwoom DRX"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3162,11 +3160,11 @@
    "realized": 118.39,
    "n": 47,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 54.04,
+   "open_n": 1,
    "miss_n": 8,
    "miss_pnl": -366.65,
-   "last_ts": 1785710954
+   "last_ts": 1785842576
   },
   "BikesAreTheBikes": {
    "realized": 82.68,
@@ -3209,5 +3207,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785840691
+ "updated": 1785842608
 }
