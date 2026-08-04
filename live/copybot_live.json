@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 53.92,
+ "stake": 54.01,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1372.61,
- "deployed": 1323.48,
+ "cash": 1388.06,
+ "deployed": 1312.52,
  "reserve": 0.0,
- "realized": 1696.06,
+ "realized": 1700.55,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
  "open_count": 25,
- "fees_paid": 455.27,
+ "fees_paid": 455.3,
  "fee_rate": 0.03,
  "lag": {
   "n": 384,
@@ -68,7 +68,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1786665600
+   "end_ts": 1786665600,
+   "sold_shares": 16.6,
+   "sold_proceeds": 15.45
   },
   {
    "token": "56882011917273640084823249326001053189225136904142472220170731855262149705156",
@@ -3103,10 +3105,10 @@
  ],
  "missed_pnl": 21420.79,
  "last_fill": {
-  "ts": 1785809205,
-  "side": "BUY",
-  "price": 0.66,
-  "shares": 21.77,
+  "ts": 1785809559,
+  "side": "SELL",
+  "price": 0.93,
+  "shares": 5.71,
   "title": "Will Ukraine target Moscow by August 14, 2026?",
   "outcome": "Yes"
  },
@@ -3212,5 +3214,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785809218
+ "updated": 1785809559
 }
