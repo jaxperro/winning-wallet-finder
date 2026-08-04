@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785864820,
+ "updated": 1785865058,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 621.89,
@@ -66,11 +66,11 @@
    "realized": 82.68,
    "n": 18,
    "wins": 3,
-   "open_cost": 1122.85,
-   "open_n": 15,
+   "open_cost": 1149.48,
+   "open_n": 16,
    "miss_n": 45,
    "miss_pnl": -750.17,
-   "last_ts": 1785858016
+   "last_ts": 1785865057
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "87623015856302842960010309762440982581803742318399419544646008856275103748218",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will the next Google Gemini Pro model be released by August 21, 2026?",
+   "their_price": 0.77,
+   "my_price": 0.77,
+   "slippage_pct": 0.0,
+   "lag_s": 1.1,
+   "shares": 34.58,
+   "cost": 26.63,
+   "fee": 0.1837,
+   "opened": 1785865057,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787270400
+  },
   {
    "token": "41800024459753239846641136399457022409586964534205265889258791197815836336250",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
