@@ -2147,6 +2147,21 @@
  ],
  "missed": [
   {
+   "ts": 1785873965,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "21751923774410707808683920186948365220718038102980599954544331059059132219371",
+   "cond": "0x17e477d0ef3af26c1398f661d8da808dc3a8867b18c95269b3cdca41acb0a0c6",
+   "title": "Will Opendoor Technologies Inc. (OPEN) hit (LOW) $3.25 Week of August 3 2026?",
+   "outcome": "No",
+   "price": 0.12,
+   "stake": 51.16,
+   "reason": "thin book ($34 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785860438,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "84280178692633099813648719405806308896735741056341574019747445899888245266337",
@@ -3075,25 +3090,9 @@
    "settled": 1785511821,
    "name": "Kruto2027",
    "exit_checked": true
-  },
-  {
-   "ts": 1785502041,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "6996318170995090898079684117604581969097883161785725897799066353548919956889",
-   "cond": "0x367f4e9d624f08f3408a038726ca702412acdf940eddd6b7ed6ec1d51021b2c7",
-   "title": "ESTAC Troyes vs. FC Goal: O/U 5.5",
-   "outcome": "Over",
-   "price": 0.89,
-   "stake": 34.68,
-   "reason": "maker bid unfilled (87s)",
-   "status": "won",
-   "pnl": 4.17,
-   "settled": 1785511821,
-   "name": "Kruto2027",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 21273.25,
+ "missed_pnl": 21246.13,
  "last_fill": {
   "ts": 1785872585,
   "side": "BUY",
@@ -3109,7 +3108,7 @@
    "wins": 36,
    "open_cost": 747.56,
    "open_n": 14,
-   "miss_n": 137,
+   "miss_n": 138,
    "miss_pnl": 112771.54,
    "last_ts": 1785857012
   },
@@ -3204,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785872619
+ "updated": 1785873974
 }
