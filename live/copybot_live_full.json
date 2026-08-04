@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785849988,
+ "updated": 1785851048,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 655.37,
@@ -9,7 +9,7 @@
    "open_cost": 695.3,
    "open_n": 13,
    "miss_n": 135,
-   "miss_pnl": 112415.25,
+   "miss_pnl": 112417.55,
    "last_ts": 1785844868
   },
   "gkmgkldfmg": {
@@ -7080,6 +7080,22 @@
  ],
  "missed": [
   {
+   "ts": 1785838288,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "66711702808511448322611227108148154237187065963992292280195651046556289653359",
+   "cond": "0xe2e4bc40275b304dc7e468e3b617527e03db83a121d8d87881b7b8b16ad78a68",
+   "title": "Will Palantir Technologies Inc. (PLTR) hit (LOW) $111 Week of August 3 2026?",
+   "outcome": "No",
+   "price": 0.94,
+   "stake": 50.03,
+   "reason": "maker bid unfilled (116s)",
+   "status": "sold",
+   "pnl": 2.3,
+   "settled": 1785851047,
+   "name": "0xbadaf319",
+   "exit_price": 0.9854
+  },
+  {
    "ts": 1785830582,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "24637207133949609919399691173678761328784545323421628849922935609077566628235",
@@ -7120,21 +7136,6 @@
    "price": 0.69,
    "stake": 50,
    "reason": "maker bid unfilled (118s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785838288,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "66711702808511448322611227108148154237187065963992292280195651046556289653359",
-   "cond": "0xe2e4bc40275b304dc7e468e3b617527e03db83a121d8d87881b7b8b16ad78a68",
-   "title": "Will Palantir Technologies Inc. (PLTR) hit (LOW) $111 Week of August 3 2026?",
-   "outcome": "No",
-   "price": 0.94,
-   "stake": 50.03,
-   "reason": "maker bid unfilled (116s)",
    "status": "open",
    "pnl": null,
    "settled": null,
