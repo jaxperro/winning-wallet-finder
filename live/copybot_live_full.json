@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785878527,
+ "updated": 1785881783,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 569.32,
@@ -66,11 +66,11 @@
    "realized": 82.68,
    "n": 18,
    "wins": 3,
-   "open_cost": 1180.57,
-   "open_n": 17,
+   "open_cost": 1230.68,
+   "open_n": 18,
    "miss_n": 45,
    "miss_pnl": -750.17,
-   "last_ts": 1785872577
+   "last_ts": 1785881774
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "68738068644868341944434960825834721671808502341396366180204745788748636004884",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will Darline Graham Nordone win the first round of the South Carolina Republican Senate sp",
+   "their_price": 0.85,
+   "my_price": 0.85,
+   "slippage_pct": 0.0,
+   "lag_s": 7.9,
+   "shares": 58.95,
+   "cost": 50.11,
+   "fee": 0.2255,
+   "opened": 1785881774,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786406400
+  },
   {
    "token": "32819665155605755010236143779947009768327413152372332911300524837573851288404",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",

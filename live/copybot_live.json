@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 949.19,
- "deployed": 1556.52,
+ "cash": 898.85,
+ "deployed": 1606.63,
  "reserve": 0.0,
- "realized": 1505.68,
+ "realized": 1505.45,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 30,
- "fees_paid": 459.9,
+ "open_count": 31,
+ "fees_paid": 460.13,
  "fee_rate": 0.03,
  "lag": {
-  "n": 396,
-  "n24": 14,
+  "n": 397,
+  "n24": 15,
   "basis": "24h",
-  "avg_s": 4.6,
+  "avg_s": 6.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "68738068644868341944434960825834721671808502341396366180204745788748636004884",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will Darline Graham Nordone win the first round of the South Carolina Republican Senate sp",
+   "their_price": 0.85,
+   "my_price": 0.85,
+   "slippage_pct": 0.0,
+   "lag_s": 7.9,
+   "shares": 58.95,
+   "cost": 50.11,
+   "fee": 0.23,
+   "opened": 1785881774,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786406400
+  },
   {
    "token": "32819665155605755010236143779947009768327413152372332911300524837573851288404",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2121,28 +2141,6 @@
    "end_ts": 1785196800,
    "sold_shares": 16.8,
    "sold_proceeds": 16.74
-  },
-  {
-   "token": "115022349425230056420599576774053150964082288276346642481948600625364544056404",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "No Hoodwink",
-   "title": "Dota 2: No Hoodwink vs PuckChamp - Game 2 Winner",
-   "their_price": 0.8758,
-   "my_price": 0.8758,
-   "slippage_pct": 0.0,
-   "lag_s": 51.1,
-   "shares": 154.51,
-   "cost": 135.31,
-   "fee": 0.5,
-   "opened": 1785248822,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": 18.7,
-   "settled": 1785249409,
-   "end_ts": 1785196800,
-   "sold_shares": 154.51,
-   "sold_proceeds": 154.51
   }
  ],
  "missed": [
@@ -3094,11 +3092,11 @@
  ],
  "missed_pnl": 21246.13,
  "last_fill": {
-  "ts": 1785872585,
+  "ts": 1785881781,
   "side": "BUY",
-  "price": 0.61,
-  "shares": 50.96,
-  "title": "Iran charges Hormuz fees by December 31?",
+  "price": 0.85,
+  "shares": 58.95,
+  "title": "Will Darline Graham Nordone win the first round of the South",
   "outcome": "Yes"
  },
  "wallet_pnl": {
@@ -3166,11 +3164,11 @@
    "realized": 82.68,
    "n": 18,
    "wins": 3,
-   "open_cost": 1180.57,
-   "open_n": 17,
+   "open_cost": 1230.68,
+   "open_n": 18,
    "miss_n": 45,
    "miss_pnl": -750.17,
-   "last_ts": 1785872577
+   "last_ts": 1785881774
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3203,5 +3201,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785878527
+ "updated": 1785881783
 }
