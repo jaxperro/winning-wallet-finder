@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 52.97,
+ "stake": 52.95,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1253.71,
- "deployed": 1394.68,
+ "cash": 1199.95,
+ "deployed": 1447.65,
  "reserve": 0.0,
- "realized": 1648.36,
+ "realized": 1647.57,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 26,
- "fees_paid": 456.28,
+ "open_count": 27,
+ "fees_paid": 457.08,
  "fee_rate": 0.03,
  "lag": {
-  "n": 388,
-  "n24": 9,
+  "n": 389,
+  "n24": 10,
   "basis": "24h",
-  "avg_s": 0.8,
+  "avg_s": 1.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "87823307068114498763935325850531429658457985750942226626931639924771886967405",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "US announces end of Iranian blockade by August 7, 2026?",
+   "their_price": 0.5,
+   "my_price": 0.5,
+   "slippage_pct": 0.0,
+   "lag_s": 2.4,
+   "shares": 105.93,
+   "cost": 52.97,
+   "fee": 0.79,
+   "opened": 1785849943,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786060800
+  },
   {
    "token": "44629810392325306078320885126725432925432567001348877770307512058002095840308",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2127,28 +2147,6 @@
    "end_ts": 1785110400,
    "sold_shares": 151.88,
    "sold_proceeds": 151.88
-  },
-  {
-   "token": "78639892723644623147617890032845605442018473848411325154446303980329931711515",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Amazon.com, Inc. (AMZN) hit (HIGH) $280 in July?",
-   "their_price": 0.8998,
-   "my_price": 0.887,
-   "slippage_pct": -0.0142,
-   "lag_s": 2.5,
-   "shares": 52.99,
-   "cost": 47.0,
-   "fee": 0.16,
-   "opened": 1784824866,
-   "status": "closed",
-   "exit_price": 0.9753,
-   "pnl": 4.52,
-   "settled": 1785144326,
-   "end_ts": 1785542400,
-   "sold_shares": 52.99,
-   "sold_proceeds": 51.68
   }
  ],
  "missed": [
@@ -3096,11 +3094,11 @@
  ],
  "missed_pnl": 21276.23,
  "last_fill": {
-  "ts": 1785844868,
+  "ts": 1785849945,
   "side": "BUY",
-  "price": 0.85,
-  "shares": 29.91,
-  "title": "Will AVAX reach $11 by December 31, 2026?",
+  "price": 0.5,
+  "shares": 105.93,
+  "title": "US announces end of Iranian blockade by August 7, 2026?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3168,11 +3166,11 @@
    "realized": 82.68,
    "n": 18,
    "wins": 3,
-   "open_cost": 964.68,
-   "open_n": 12,
+   "open_cost": 1017.65,
+   "open_n": 13,
    "miss_n": 45,
    "miss_pnl": -750.17,
-   "last_ts": 1785796734
+   "last_ts": 1785849943
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3205,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785849463
+ "updated": 1785849988
 }
