@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785885011,
+ "updated": 1785885080,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 569.32,
@@ -9,7 +9,7 @@
    "open_cost": 728.19,
    "open_n": 14,
    "miss_n": 138,
-   "miss_pnl": 112721.07,
+   "miss_pnl": 112913.69,
    "last_ts": 1785882857
   },
   "gkmgkldfmg": {
@@ -7242,6 +7242,21 @@
  ],
  "missed": [
   {
+   "ts": 1785842752,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "49572627866407082193354668600167067426622369988298041863708324191905072670415",
+   "cond": "0x3b6950e345e5a704b25fdb2759ba7a1e9f59ce79e693486d18177b68398fa1c9",
+   "title": "WTI Crude Oil (WTI) Up or Down on August 4?",
+   "outcome": "Down",
+   "price": 0.2179,
+   "stake": 54.02,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 192.62,
+   "settled": 1785885080,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785840667,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "110424200765701164806975547968417847902674941184254977722491050392032231955206",
@@ -7413,21 +7428,6 @@
    "settled": 1785846912,
    "name": "0xbadaf319",
    "exit_price": 0.7706
-  },
-  {
-   "ts": 1785842752,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "49572627866407082193354668600167067426622369988298041863708324191905072670415",
-   "cond": "0x3b6950e345e5a704b25fdb2759ba7a1e9f59ce79e693486d18177b68398fa1c9",
-   "title": "WTI Crude Oil (WTI) Up or Down on August 4?",
-   "outcome": "Down",
-   "price": 0.2179,
-   "stake": 54.02,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1785828541,
