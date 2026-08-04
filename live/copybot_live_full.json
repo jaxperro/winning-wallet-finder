@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785851760,
+ "updated": 1785852517,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 655.37,
@@ -8,7 +8,7 @@
    "wins": 36,
    "open_cost": 695.3,
    "open_n": 13,
-   "miss_n": 135,
+   "miss_n": 136,
    "miss_pnl": 112417.55,
    "last_ts": 1785844868
   },
@@ -7079,6 +7079,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785852517,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "44952859930591206375449316303350129121071883825837753443431097609201876804363",
+   "cond": "0x5f8b66fe0b59a44b181102f8c02b69630b5feddae7185ad5bf150fe4ee9aa16e",
+   "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $160 Week of August 3 2026?",
+   "outcome": "No",
+   "price": 0.6,
+   "stake": 52.95,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785838288,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
