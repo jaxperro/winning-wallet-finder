@@ -2155,6 +2155,21 @@
  ],
  "missed": [
   {
+   "ts": 1785842752,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "49572627866407082193354668600167067426622369988298041863708324191905072670415",
+   "cond": "0x3b6950e345e5a704b25fdb2759ba7a1e9f59ce79e693486d18177b68398fa1c9",
+   "title": "WTI Crude Oil (WTI) Up or Down on August 4?",
+   "outcome": "Down",
+   "price": 0.2179,
+   "stake": 54.02,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785840667,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "110424200765701164806975547968417847902674941184254977722491050392032231955206",
@@ -3078,25 +3093,9 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1785398908,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "77727904615166835640016150025711177975585784491730986147831526541450550131688",
-   "cond": "0xcede2bac83f5535296134b7ae3149df0be3754631eee0bfe2decce327064c01f",
-   "title": "Amazon (AMZN) Up or Down on July 30?",
-   "outcome": "Up",
-   "price": 0.79,
-   "stake": 54.22,
-   "reason": "price moved 0.73\u21920.79",
-   "status": "won",
-   "pnl": 14.07,
-   "settled": 1785443160,
-   "name": "0xbadaf319",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 21430.04,
+ "missed_pnl": 21271.94,
  "last_fill": {
   "ts": 1785842583,
   "side": "BUY",
@@ -3112,7 +3111,7 @@
    "wins": 36,
    "open_cost": 669.88,
    "open_n": 12,
-   "miss_n": 134,
+   "miss_n": 135,
    "miss_pnl": 112410.96,
    "last_ts": 1785838016
   },
@@ -3207,5 +3206,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785842608
+ "updated": 1785842761
 }
