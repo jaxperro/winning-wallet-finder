@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785858931,
+ "updated": 1785860446,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 621.89,
@@ -58,7 +58,7 @@
    "wins": 0,
    "open_cost": 54.04,
    "open_n": 1,
-   "miss_n": 8,
+   "miss_n": 9,
    "miss_pnl": -366.65,
    "last_ts": 1785842576
   },
@@ -7161,6 +7161,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785860438,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "84280178692633099813648719405806308896735741056341574019747445899888245266337",
+   "cond": "0x059c5895cf8d87c45c4741cce23dd45cf1db267867ceec2684a0bb623708ae24",
+   "title": "LoL: HANJIN BRION vs Nongshim Red Force - Game 1 Winner",
+   "outcome": "Nongshim Red Force",
+   "price": 0.63,
+   "stake": 52.25,
+   "reason": "maker bid unfilled (71s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
   {
    "ts": 1785858922,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
