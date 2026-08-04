@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785842761,
+ "updated": 1785844530,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 655.37,
@@ -66,7 +66,7 @@
    "realized": 82.68,
    "n": 18,
    "wins": 3,
-   "open_cost": 955.96,
+   "open_cost": 964.68,
    "open_n": 12,
    "miss_n": 45,
    "miss_pnl": -750.17,
@@ -571,12 +571,12 @@
    "outcome": "No",
    "title": "US x Iran diplomatic meeting by August 31, 2026?",
    "their_price": 0.46,
-   "my_price": 0.46,
+   "my_price": 0.47246807766311005,
    "slippage_pct": 0.0,
    "lag_s": 0.6,
-   "shares": 98.5,
-   "cost": 45.31,
-   "fee": 0.734,
+   "shares": 114.34,
+   "cost": 54.022000000000006,
+   "fee": 0.8516,
    "opened": 1785643532,
    "status": "open",
    "exit_price": null,

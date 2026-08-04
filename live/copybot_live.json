@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1288.08,
- "deployed": 1413.15,
+ "cash": 1279.25,
+ "deployed": 1421.86,
  "reserve": 0.0,
- "realized": 1701.2,
+ "realized": 1701.08,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
  "open_count": 26,
- "fees_paid": 456.05,
+ "fees_paid": 456.17,
  "fee_rate": 0.03,
  "lag": {
-  "n": 386,
-  "n24": 7,
+  "n": 387,
+  "n24": 8,
   "basis": "24h",
-  "avg_s": 0.8,
+  "avg_s": 3.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -517,12 +517,12 @@
    "outcome": "No",
    "title": "US x Iran diplomatic meeting by August 31, 2026?",
    "their_price": 0.46,
-   "my_price": 0.46,
+   "my_price": 0.4725,
    "slippage_pct": 0.0,
    "lag_s": 0.6,
-   "shares": 98.5,
-   "cost": 45.31,
-   "fee": 0.73,
+   "shares": 114.34,
+   "cost": 54.02,
+   "fee": 0.85,
    "opened": 1785643532,
    "status": "open",
    "exit_price": null,
@@ -3097,12 +3097,12 @@
  ],
  "missed_pnl": 21271.94,
  "last_fill": {
-  "ts": 1785842583,
+  "ts": 1785844530,
   "side": "BUY",
-  "price": 0.5899,
-  "shares": 91.6,
-  "title": "LoL: HANJIN BRION vs Kiwoom DRX - Game 1 Winner",
-  "outcome": "Kiwoom DRX"
+  "price": 0.55,
+  "shares": 15.84,
+  "title": "US x Iran diplomatic meeting by August 31, 2026?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3169,7 +3169,7 @@
    "realized": 82.68,
    "n": 18,
    "wins": 3,
-   "open_cost": 955.96,
+   "open_cost": 964.68,
    "open_n": 12,
    "miss_n": 45,
    "miss_pnl": -750.17,
@@ -3206,5 +3206,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785842761
+ "updated": 1785844530
 }
