@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 52.59,
+ "stake": 53.92,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1265.49,
- "deployed": 1363.85,
+ "cash": 1387.13,
+ "deployed": 1309.11,
  "reserve": 0.0,
- "realized": 1629.3,
+ "realized": 1696.2,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 25,
+ "ledger_drift": -0.02,
+ "open_count": 24,
  "fees_paid": 455.12,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "56882011917273640084823249326001053189225136904142472220170731855262149705156",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Miomir Kecmanovic",
+   "title": "National Bank Open: Michael Zheng vs Miomir Kecmanovic",
+   "their_price": 0.45,
+   "my_price": 0.45,
+   "slippage_pct": 0.0,
+   "lag_s": 7.9,
+   "shares": 121.64,
+   "cost": 54.74,
+   "fee": 0.9,
+   "opened": 1785783818,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 66.0,
+   "settled": 1785806837,
+   "end_ts": 1786233600,
+   "sold_shares": 121.64,
+   "sold_proceeds": 121.64
+  },
   {
    "token": "44629810392325306078320885126725432925432567001348877770307512058002095840308",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -111,26 +133,6 @@
    "end_ts": 1788220800,
    "sold_shares": 87.01,
    "sold_proceeds": 86.33
-  },
-  {
-   "token": "56882011917273640084823249326001053189225136904142472220170731855262149705156",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Miomir Kecmanovic",
-   "title": "National Bank Open: Michael Zheng vs Miomir Kecmanovic",
-   "their_price": 0.45,
-   "my_price": 0.45,
-   "slippage_pct": 0.0,
-   "lag_s": 7.9,
-   "shares": 121.64,
-   "cost": 54.74,
-   "fee": 0.9,
-   "opened": 1785783818,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786233600
   },
   {
    "token": "113961999169187060881581100751857993788831983957610857176049971164400740097648",
@@ -3103,12 +3105,12 @@
  ],
  "missed_pnl": 21420.79,
  "last_fill": {
-  "ts": 1785798373,
-  "side": "BUY",
-  "price": 0.4693,
-  "shares": 112.09,
-  "title": "Warsaw: Marcelina Podlinska vs Vendula Valdmannova",
-  "outcome": "Marcelina Podlinska"
+  "ts": 1785806836,
+  "side": "SELL",
+  "price": 1.0,
+  "shares": 121.64,
+  "title": "National Bank Open: Michael Zheng vs Miomir Kecmanovic",
+  "outcome": "Miomir Kecmanovic"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3142,14 +3144,14 @@
    "last_ts": 1785643259
   },
   "Kruto2027": {
-   "realized": 134.57,
-   "n": 13,
+   "realized": 200.57,
+   "n": 14,
    "wins": 1,
-   "open_cost": 107.34,
-   "open_n": 2,
+   "open_cost": 52.6,
+   "open_n": 1,
    "miss_n": 10,
    "miss_pnl": 358.62,
-   "last_ts": 1785798367
+   "last_ts": 1785806837
   },
   "LSB1": {
    "realized": -397.16,
@@ -3212,5 +3214,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785804123
+ "updated": 1785806837
 }

@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785804123,
+ "updated": 1785806837,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 649.64,
@@ -33,14 +33,14 @@
    "last_ts": 1785643259
   },
   "Kruto2027": {
-   "realized": 134.57,
-   "n": 13,
+   "realized": 200.57,
+   "n": 14,
    "wins": 1,
-   "open_cost": 107.34,
-   "open_n": 2,
+   "open_cost": 52.6,
+   "open_n": 1,
    "miss_n": 10,
    "miss_pnl": 358.62,
-   "last_ts": 1785798367
+   "last_ts": 1785806837
   },
   "LSB1": {
    "realized": -397.16,
@@ -105,6 +105,28 @@
  },
  "bets": [
   {
+   "token": "56882011917273640084823249326001053189225136904142472220170731855262149705156",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Miomir Kecmanovic",
+   "title": "National Bank Open: Michael Zheng vs Miomir Kecmanovic",
+   "their_price": 0.45,
+   "my_price": 0.45,
+   "slippage_pct": 0.0,
+   "lag_s": 7.9,
+   "shares": 121.64,
+   "cost": 54.74,
+   "fee": 0.9032,
+   "opened": 1785783818,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 66.0,
+   "settled": 1785806837,
+   "end_ts": 1786233600,
+   "sold_shares": 121.64,
+   "sold_proceeds": 121.64
+  },
+  {
    "token": "44629810392325306078320885126725432925432567001348877770307512058002095840308",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "name": "Kruto2027",
@@ -165,26 +187,6 @@
    "end_ts": 1788220800,
    "sold_shares": 87.00877152525143,
    "sold_proceeds": 86.33217142247683
-  },
-  {
-   "token": "56882011917273640084823249326001053189225136904142472220170731855262149705156",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Miomir Kecmanovic",
-   "title": "National Bank Open: Michael Zheng vs Miomir Kecmanovic",
-   "their_price": 0.45,
-   "my_price": 0.45,
-   "slippage_pct": 0.0,
-   "lag_s": 7.9,
-   "shares": 121.64,
-   "cost": 54.74,
-   "fee": 0.9032,
-   "opened": 1785783818,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786233600
   },
   {
    "token": "113961999169187060881581100751857993788831983957610857176049971164400740097648",
