@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 52.95,
+ "stake": 52.93,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1199.95,
- "deployed": 1447.65,
+ "cash": 1146.14,
+ "deployed": 1500.6,
  "reserve": 0.0,
- "realized": 1647.57,
+ "realized": 1646.71,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 27,
- "fees_paid": 457.08,
+ "open_count": 28,
+ "fees_paid": 457.94,
  "fee_rate": 0.03,
  "lag": {
-  "n": 389,
-  "n24": 9,
+  "n": 390,
+  "n24": 10,
   "basis": "24h",
-  "avg_s": 2.4,
+  "avg_s": 1.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "105018125001683421642188507083357166141411975719572822588636238221967305408092",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "US announces end of Iranian blockade by August 7, 2026?",
+   "their_price": 0.458,
+   "my_price": 0.458,
+   "slippage_pct": 0.0,
+   "lag_s": 1.2,
+   "shares": 115.61,
+   "cost": 52.95,
+   "fee": 0.86,
+   "opened": 1785855256,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786060800
+  },
   {
    "token": "87823307068114498763935325850531429658457985750942226626931639924771886967405",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2125,28 +2145,6 @@
    "end_ts": 1788134400,
    "sold_shares": 71.91,
    "sold_proceeds": 67.32
-  },
-  {
-   "token": "5093836280630653877561190382016580808144147177143767913302616853585042535941",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "T1",
-   "title": "LoL: Dplus KIA vs T1 (BO1) - KeSPA Cup Group Stage",
-   "their_price": 0.88,
-   "my_price": 0.88,
-   "slippage_pct": 0.0,
-   "lag_s": 30.2,
-   "shares": 151.88,
-   "cost": 133.65,
-   "fee": 0.48,
-   "opened": 1785139491,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": 17.75,
-   "settled": 1785153020,
-   "end_ts": 1785110400,
-   "sold_shares": 151.88,
-   "sold_proceeds": 151.88
   }
  ],
  "missed": [
@@ -3100,12 +3098,12 @@
  ],
  "missed_pnl": 21310.52,
  "last_fill": {
-  "ts": 1785849945,
+  "ts": 1785855257,
   "side": "BUY",
-  "price": 0.5,
-  "shares": 105.93,
+  "price": 0.458,
+  "shares": 115.61,
   "title": "US announces end of Iranian blockade by August 7, 2026?",
-  "outcome": "No"
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3172,11 +3170,11 @@
    "realized": 82.68,
    "n": 18,
    "wins": 3,
-   "open_cost": 1017.65,
-   "open_n": 13,
+   "open_cost": 1070.6,
+   "open_n": 14,
    "miss_n": 45,
    "miss_pnl": -750.17,
-   "last_ts": 1785849943
+   "last_ts": 1785855256
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3209,5 +3207,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785854866
+ "updated": 1785855264
 }
