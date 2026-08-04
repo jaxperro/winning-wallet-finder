@@ -2157,6 +2157,21 @@
  ],
  "missed": [
   {
+   "ts": 1785838288,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "66711702808511448322611227108148154237187065963992292280195651046556289653359",
+   "cond": "0xe2e4bc40275b304dc7e468e3b617527e03db83a121d8d87881b7b8b16ad78a68",
+   "title": "Will Palantir Technologies Inc. (PLTR) hit (LOW) $111 Week of August 3 2026?",
+   "outcome": "No",
+   "price": 0.94,
+   "stake": 50.03,
+   "reason": "maker bid unfilled (116s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785830582,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "24637207133949609919399691173678761328784545323421628849922935609077566628235",
@@ -3082,26 +3097,9 @@
    "settled": 1785443091,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1785425539,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "49096838469319785284977438732691316133406822442318517146017951204646833825601",
-   "cond": "0x22452b38b25ef76546f4b47f85540e57fb360b27ae27e7affa59feb6d2303b0e",
-   "title": "Will NVIDIA (NVDA) close above $190 on July 30?",
-   "outcome": "Yes",
-   "price": 0.85,
-   "stake": 7.93,
-   "reason": "maker bid unfilled (68s)",
-   "status": "sold",
-   "pnl": 0.94,
-   "settled": 1785443025,
-   "name": "0xbadaf319",
-   "exit_checked": true,
-   "exit_price": 0.956
   }
  ],
- "missed_pnl": 21415.12,
+ "missed_pnl": 21414.78,
  "last_fill": {
   "ts": 1785838016,
   "side": "BUY",
@@ -3117,7 +3115,7 @@
    "wins": 36,
    "open_cost": 669.88,
    "open_n": 12,
-   "miss_n": 132,
+   "miss_n": 133,
    "miss_pnl": 112410.96,
    "last_ts": 1785838016
   },
@@ -3212,5 +3210,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785838023
+ "updated": 1785838301
 }
