@@ -2159,6 +2159,21 @@
  ],
  "missed": [
   {
+   "ts": 1785828541,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "34202871818293327873019109384233612300844391276682641362875608341774765501606",
+   "cond": "0x3625923142ebee77a65aa51835b0af86f5231bd7e5371870903fb2f2c3217f03",
+   "title": "Multipli.fi FDV above $50M one day after launch?",
+   "outcome": "Yes",
+   "price": 0.5991,
+   "stake": 37.5,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785718176,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "34336750619875308256599829547670506010305636448259915722708507966106063783608",
@@ -3087,24 +3102,9 @@
    "settled": 1785443023,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1785438136,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "62474359384438151756967307997575848219189410783384033652191452044688986782350",
-   "cond": "0x0cfaa8fabad4d452be63950f47b07339ce192820df5d64569496fb91eb55b502",
-   "title": "Will Sofia host Eurovision 2027?",
-   "outcome": "Yes",
-   "price": 0.6686,
-   "stake": 54.4,
-   "reason": "no ask side on the book at copy time",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 21364.74,
+ "missed_pnl": 21470.95,
  "last_fill": {
   "ts": 1785809591,
   "side": "SELL",
@@ -3120,7 +3120,7 @@
    "wins": 36,
    "open_cost": 619.88,
    "open_n": 11,
-   "miss_n": 130,
+   "miss_n": 131,
    "miss_pnl": 112410.96,
    "last_ts": 1785809599
   },
@@ -3215,5 +3215,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785814314
+ "updated": 1785828550
 }
