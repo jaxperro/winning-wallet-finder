@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1279.25,
- "deployed": 1421.86,
+ "cash": 1253.71,
+ "deployed": 1447.28,
  "reserve": 0.0,
- "realized": 1701.08,
+ "realized": 1700.96,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 26,
- "fees_paid": 456.17,
+ "ledger_drift": -0.02,
+ "open_count": 27,
+ "fees_paid": 456.28,
  "fee_rate": 0.03,
  "lag": {
-  "n": 387,
-  "n24": 8,
+  "n": 388,
+  "n24": 9,
   "basis": "24h",
-  "avg_s": 3.8,
+  "avg_s": 0.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "98528096414959732755127193270546193676246051874665814098499552238165658456996",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will AVAX reach $11 by December 31, 2026?",
+   "their_price": 0.85,
+   "my_price": 0.85,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 29.91,
+   "cost": 25.42,
+   "fee": 0.11,
+   "opened": 1785844868,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798761600
+  },
   {
    "token": "41800024459753239846641136399457022409586964534205265889258791197815836336250",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2129,28 +2149,6 @@
    "end_ts": 1785542400,
    "sold_shares": 52.99,
    "sold_proceeds": 51.68
-  },
-  {
-   "token": "52897893276285627510690194142963884799788689807458708980439810896103687693971",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will the next Claude Opus debut at a score of at least 1490 by December 31, 2026?",
-   "their_price": 0.9,
-   "my_price": 0.9,
-   "slippage_pct": 0.0,
-   "lag_s": 6.5,
-   "shares": 48.72,
-   "cost": 43.85,
-   "fee": 0.13,
-   "opened": 1785127060,
-   "status": "closed",
-   "exit_price": 0.9979,
-   "pnl": 4.64,
-   "settled": 1785129711,
-   "end_ts": 1798675200,
-   "sold_shares": 48.72,
-   "sold_proceeds": 48.62
   }
  ],
  "missed": [
@@ -3097,11 +3095,11 @@
  ],
  "missed_pnl": 21271.94,
  "last_fill": {
-  "ts": 1785844530,
+  "ts": 1785844868,
   "side": "BUY",
-  "price": 0.55,
-  "shares": 15.84,
-  "title": "US x Iran diplomatic meeting by August 31, 2026?",
+  "price": 0.85,
+  "shares": 29.91,
+  "title": "Will AVAX reach $11 by December 31, 2026?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3109,11 +3107,11 @@
    "realized": 655.37,
    "n": 99,
    "wins": 36,
-   "open_cost": 669.88,
-   "open_n": 12,
+   "open_cost": 695.3,
+   "open_n": 13,
    "miss_n": 135,
    "miss_pnl": 112410.96,
-   "last_ts": 1785838016
+   "last_ts": 1785844868
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3206,5 +3204,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785844530
+ "updated": 1785844877
 }
