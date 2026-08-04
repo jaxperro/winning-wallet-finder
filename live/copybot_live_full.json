@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785809599,
+ "updated": 1785813696,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 655.37,
@@ -69,7 +69,7 @@
    "open_cost": 955.96,
    "open_n": 12,
    "miss_n": 45,
-   "miss_pnl": -694.12,
+   "miss_pnl": -750.17,
    "last_ts": 1785796734
   },
   "JuiceFarm": {
@@ -7000,6 +7000,21 @@
  ],
  "missed": [
   {
+   "ts": 1785718176,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "34336750619875308256599829547670506010305636448259915722708507966106063783608",
+   "cond": "0x7b69d995101730f541059753d84a23ca3cd3416d8a89145cec76b851ca82f9f1",
+   "title": "Will \"Spider-Man: Brand New Day\" Opening Weekend Box Office be between 350m and 360m?",
+   "outcome": "Yes",
+   "price": 0.5275,
+   "stake": 55.27,
+   "reason": "no ask side on the book at copy time",
+   "status": "lost",
+   "pnl": -56.05,
+   "settled": 1785813695,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1785798006,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "30377688379486757325933493742392724072652492107160855290823263402628575646225",
@@ -7170,21 +7185,6 @@
    "settled": 1785743470,
    "name": "BikesAreTheBikes",
    "exit_checked": true
-  },
-  {
-   "ts": 1785718176,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "34336750619875308256599829547670506010305636448259915722708507966106063783608",
-   "cond": "0x7b69d995101730f541059753d84a23ca3cd3416d8a89145cec76b851ca82f9f1",
-   "title": "Will \"Spider-Man: Brand New Day\" Opening Weekend Box Office be between 350m and 360m?",
-   "outcome": "Yes",
-   "price": 0.5275,
-   "stake": 55.27,
-   "reason": "no ask side on the book at copy time",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1785708383,
