@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 51.17,
+ "stake": 51.16,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 980.63,
- "deployed": 1577.7,
+ "cash": 949.19,
+ "deployed": 1608.79,
  "reserve": 0.0,
- "realized": 1558.31,
+ "realized": 1557.94,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 30,
- "fees_paid": 459.54,
+ "open_count": 31,
+ "fees_paid": 459.9,
  "fee_rate": 0.03,
  "lag": {
-  "n": 395,
-  "n24": 13,
+  "n": 396,
+  "n24": 14,
   "basis": "24h",
-  "avg_s": 2.4,
+  "avg_s": 4.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "30084046110340630915815124176402512146373063505864644025251039436415886255442",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Iran charges Hormuz fees by December 31?",
+   "their_price": 0.61,
+   "my_price": 0.61,
+   "slippage_pct": 0.0,
+   "lag_s": 8.5,
+   "shares": 50.96,
+   "cost": 31.09,
+   "fee": 0.36,
+   "opened": 1785872577,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798675200
+  },
   {
    "token": "87623015856302842960010309762440982581803742318399419544646008856275103748218",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2123,26 +2143,6 @@
    "end_ts": 1785196800,
    "sold_shares": 154.51,
    "sold_proceeds": 154.51
-  },
-  {
-   "token": "64694885593632675781317938696736040286617580212029967143105168259299625512290",
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "name": "1kto1m",
-   "outcome": "Down",
-   "title": "Bitcoin Up or Down - July 28, 8AM ET",
-   "their_price": 0.4473,
-   "my_price": 0.4473,
-   "slippage_pct": 0.0,
-   "lag_s": 0.6,
-   "shares": 242.63,
-   "cost": 108.52,
-   "fee": 1.8,
-   "opened": 1785242663,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -110.32,
-   "settled": 1785249263,
-   "end_ts": 1785196800
   }
  ],
  "missed": [
@@ -3095,11 +3095,11 @@
  ],
  "missed_pnl": 21273.25,
  "last_fill": {
-  "ts": 1785865058,
+  "ts": 1785872585,
   "side": "BUY",
-  "price": 0.77,
-  "shares": 34.58,
-  "title": "Will the next Google Gemini Pro model be released by August ",
+  "price": 0.61,
+  "shares": 50.96,
+  "title": "Iran charges Hormuz fees by December 31?",
   "outcome": "Yes"
  },
  "wallet_pnl": {
@@ -3167,11 +3167,11 @@
    "realized": 82.68,
    "n": 18,
    "wins": 3,
-   "open_cost": 1149.48,
-   "open_n": 16,
+   "open_cost": 1180.57,
+   "open_n": 17,
    "miss_n": 45,
    "miss_pnl": -750.17,
-   "last_ts": 1785865057
+   "last_ts": 1785872577
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3204,5 +3204,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785870257
+ "updated": 1785872619
 }
