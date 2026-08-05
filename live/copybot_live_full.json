@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785936365,
+ "updated": 1785936795,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 569.32,
@@ -38,7 +38,7 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 10,
+   "miss_n": 11,
    "miss_pnl": 358.62,
    "last_ts": 1785925830
   },
@@ -7282,6 +7282,21 @@
  ],
  "missed": [
   {
+   "ts": 1785936785,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "109029073236008253777271401282424368239552562521098804138123470142302629228656",
+   "cond": "0x42358019688d791bd4769abc9127d32e56b1a820363613db15fd55df220eb02a",
+   "title": "Hammarby IF FF vs. FK Apolonia Fier: FK Apolonia Fier O/U 1.5",
+   "outcome": "Under",
+   "price": 0.4797,
+   "stake": 50.64,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1785860438,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "84280178692633099813648719405806308896735741056341574019747445899888245266337",
@@ -7294,7 +7309,8 @@
    "status": "lost",
    "pnl": -52.83,
    "settled": 1785936296,
-   "name": "AIcAIc"
+   "name": "AIcAIc",
+   "exit_checked": true
   },
   {
    "ts": 1785935821,
