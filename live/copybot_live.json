@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 50.64,
+ "stake": 49.64,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 842.52,
- "deployed": 1689.62,
+ "deployed": 1639.53,
  "reserve": 0.0,
- "realized": 1532.11,
+ "realized": 1482.02,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 33,
+ "open_count": 32,
  "fees_paid": 461.65,
  "fee_rate": 0.03,
  "lag": {
@@ -51,6 +51,26 @@
  },
  "bets": [
   {
+   "token": "15469460331352019135823646480486919090388437520615806921617791717165460861234",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Nongshim Red Force",
+   "title": "LoL: HANJIN BRION vs Nongshim Red Force (BO3) - LCK Round 3-4 Rise Group",
+   "their_price": 0.41,
+   "my_price": 0.41,
+   "slippage_pct": 0.0,
+   "lag_s": 8.1,
+   "shares": 122.18,
+   "cost": 50.09,
+   "fee": 0.89,
+   "opened": 1785919635,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -50.98,
+   "settled": 1785938050,
+   "end_ts": 1785888000
+  },
+  {
    "token": "44878213123264609020900502267992317958528606661890344163785451259153992473346",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "name": "Kruto2027",
@@ -69,26 +89,6 @@
    "pnl": 27.64,
    "settled": 1785925830,
    "end_ts": 1786492800
-  },
-  {
-   "token": "15469460331352019135823646480486919090388437520615806921617791717165460861234",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Nongshim Red Force",
-   "title": "LoL: HANJIN BRION vs Nongshim Red Force (BO3) - LCK Round 3-4 Rise Group",
-   "their_price": 0.41,
-   "my_price": 0.41,
-   "slippage_pct": 0.0,
-   "lag_s": 8.1,
-   "shares": 122.18,
-   "cost": 50.09,
-   "fee": 0.89,
-   "opened": 1785919635,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785888000
   },
   {
    "token": "35806246373913666691919011026597618487771516182291701095229500844593341879004",
@@ -3149,14 +3149,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 63.69,
-   "n": 48,
+   "realized": 12.71,
+   "n": 49,
    "wins": 0,
-   "open_cost": 50.09,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 10,
    "miss_pnl": -419.48,
-   "last_ts": 1785919635
+   "last_ts": 1785938050
   },
   "BikesAreTheBikes": {
    "realized": 82.68,
@@ -3199,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785936795
+ "updated": 1785938055
 }
