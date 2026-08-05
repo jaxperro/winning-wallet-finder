@@ -2153,7 +2153,8 @@
    "status": "lost",
    "pnl": -51.31,
    "settled": 1785924895,
-   "name": "1kto1m"
+   "name": "1kto1m",
+   "exit_checked": true
   },
   {
    "ts": 1785852517,
@@ -3200,5 +3201,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785925834
+ "updated": 1785926707
 }
