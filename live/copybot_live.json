@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 400,
-  "n24": 12,
+  "n24": 11,
   "basis": "24h",
-  "avg_s": 4.7,
+  "avg_s": 6.9,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -2141,6 +2141,21 @@
  ],
  "missed": [
   {
+   "ts": 1785860438,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "84280178692633099813648719405806308896735741056341574019747445899888245266337",
+   "cond": "0x059c5895cf8d87c45c4741cce23dd45cf1db267867ceec2684a0bb623708ae24",
+   "title": "LoL: HANJIN BRION vs Nongshim Red Force - Game 1 Winner",
+   "outcome": "Nongshim Red Force",
+   "price": 0.63,
+   "stake": 52.25,
+   "reason": "maker bid unfilled (71s)",
+   "status": "lost",
+   "pnl": -52.83,
+   "settled": 1785936296,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1785935821,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "29157307478711328163255012593661568193070862576476585623810735042881640216835",
@@ -2295,21 +2310,6 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785860438,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "84280178692633099813648719405806308896735741056341574019747445899888245266337",
-   "cond": "0x059c5895cf8d87c45c4741cce23dd45cf1db267867ceec2684a0bb623708ae24",
-   "title": "LoL: HANJIN BRION vs Nongshim Red Force - Game 1 Winner",
-   "outcome": "Nongshim Red Force",
-   "price": 0.63,
-   "stake": 52.25,
-   "reason": "maker bid unfilled (71s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
   },
   {
    "ts": 1785858922,
@@ -3088,7 +3088,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 20777.85,
+ "missed_pnl": 20725.02,
  "last_fill": {
   "ts": 1785919643,
   "side": "BUY",
@@ -3155,7 +3155,7 @@
    "open_cost": 50.09,
    "open_n": 1,
    "miss_n": 10,
-   "miss_pnl": -366.65,
+   "miss_pnl": -419.48,
    "last_ts": 1785919635
   },
   "BikesAreTheBikes": {
@@ -3199,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785935822
+ "updated": 1785936365
 }
