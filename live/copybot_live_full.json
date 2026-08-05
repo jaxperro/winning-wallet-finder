@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785895627,
+ "updated": 1785899231,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 569.32,
@@ -68,7 +68,7 @@
    "wins": 3,
    "open_cost": 1230.68,
    "open_n": 18,
-   "miss_n": 45,
+   "miss_n": 46,
    "miss_pnl": -750.17,
    "last_ts": 1785881774
   },
@@ -7261,6 +7261,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785899224,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "79158324293483742061692162126299855592840699195098556683716242391216371755017",
+   "cond": "0x261a223d19c9dca63e5819e2e768dbc1b7d442a7a0054220f1eced143c29a9c7",
+   "title": "Will IShowSpeed attend Cristiano Ronaldo's wedding?",
+   "outcome": "No",
+   "price": 0.86,
+   "stake": 50.1,
+   "reason": "maker bid unfilled (94s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1785842752,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
