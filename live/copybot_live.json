@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.63,
+ "stake": 49.09,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 765.77,
- "deployed": 1715.64,
+ "deployed": 1688.95,
  "reserve": 0.0,
- "realized": 1481.38,
+ "realized": 1454.69,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 34,
+ "open_count": 33,
  "fees_paid": 462.29,
  "fee_rate": 0.03,
  "lag": {
@@ -51,6 +51,26 @@
  },
  "bets": [
   {
+   "token": "12655298432856023401377623311129453877580829892143866780900963131940895536375",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will Amazon (AMZN) close above $275 on August 5?",
+   "their_price": 0.59,
+   "my_price": 0.59,
+   "slippage_pct": 0.0,
+   "lag_s": 17.1,
+   "shares": 45.24,
+   "cost": 26.69,
+   "fee": 0.33,
+   "opened": 1785938180,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -27.02,
+   "settled": 1785961805,
+   "end_ts": 1785888000
+  },
+  {
    "token": "87970647543236439083440944769400298504759134074324143770349947929248763079016",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "name": "BikesAreTheBikes",
@@ -69,26 +89,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1785974400
-  },
-  {
-   "token": "12655298432856023401377623311129453877580829892143866780900963131940895536375",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will Amazon (AMZN) close above $275 on August 5?",
-   "their_price": 0.59,
-   "my_price": 0.59,
-   "slippage_pct": 0.0,
-   "lag_s": 17.1,
-   "shares": 45.24,
-   "cost": 26.69,
-   "fee": 0.33,
-   "opened": 1785938180,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785888000
   },
   {
    "token": "15469460331352019135823646480486919090388437520615806921617791717165460861234",
@@ -3097,14 +3097,14 @@
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 569.32,
-   "n": 101,
+   "realized": 542.3,
+   "n": 102,
    "wins": 36,
-   "open_cost": 754.88,
-   "open_n": 15,
+   "open_cost": 728.19,
+   "open_n": 14,
    "miss_n": 145,
    "miss_pnl": 112878.71,
-   "last_ts": 1785938180
+   "last_ts": 1785961805
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3197,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785958987
+ "updated": 1785961810
 }
