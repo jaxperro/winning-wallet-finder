@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785947585,
+ "updated": 1785951183,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 569.32,
@@ -39,7 +39,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 11,
-   "miss_pnl": 358.62,
+   "miss_pnl": 412.76,
    "last_ts": 1785925830
   },
   "LSB1": {
@@ -7322,6 +7322,21 @@
  ],
  "missed": [
   {
+   "ts": 1785936785,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "109029073236008253777271401282424368239552562521098804138123470142302629228656",
+   "cond": "0x42358019688d791bd4769abc9127d32e56b1a820363613db15fd55df220eb02a",
+   "title": "Hammarby IF FF vs. FK Apolonia Fier: FK Apolonia Fier O/U 1.5",
+   "outcome": "Under",
+   "price": 0.4797,
+   "stake": 50.64,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 54.14,
+   "settled": 1785951183,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1785935821,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "29157307478711328163255012593661568193070862576476585623810735042881640216835",
@@ -7382,21 +7397,6 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1785936785,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "109029073236008253777271401282424368239552562521098804138123470142302629228656",
-   "cond": "0x42358019688d791bd4769abc9127d32e56b1a820363613db15fd55df220eb02a",
-   "title": "Hammarby IF FF vs. FK Apolonia Fier: FK Apolonia Fier O/U 1.5",
-   "outcome": "Under",
-   "price": 0.4797,
-   "stake": 50.64,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
   },
   {
    "ts": 1785860438,
