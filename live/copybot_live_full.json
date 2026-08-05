@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785946937,
+ "updated": 1785947585,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 569.32,
@@ -59,7 +59,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 10,
-   "miss_pnl": -419.48,
+   "miss_pnl": -470.85,
    "last_ts": 1785938050
   },
   "BikesAreTheBikes": {
@@ -7322,6 +7322,22 @@
  ],
  "missed": [
   {
+   "ts": 1785935821,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "29157307478711328163255012593661568193070862576476585623810735042881640216835",
+   "cond": "0xc1714a28decf72cdfa86c4c7421c3002bcfed119f79ad527e5cc96e833738e1b",
+   "title": "LoL: Hanwha Life Esports vs Gen.G (BO3) - LCK Round 3-4 Legend Group",
+   "outcome": "Hanwha Life Esports",
+   "price": 0.52,
+   "stake": 50.64,
+   "reason": "maker bid unfilled (69s)",
+   "status": "lost",
+   "pnl": -51.37,
+   "settled": 1785947497,
+   "name": "AIcAIc",
+   "exit_checked": true
+  },
+  {
    "ts": 1785931269,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "33878421148010326359647142087479814628977903627267416974053838062316314287016",
@@ -7334,7 +7350,8 @@
    "status": "won",
    "pnl": 1.63,
    "settled": 1785946936,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1785946788,
@@ -7396,21 +7413,6 @@
    "settled": 1785936296,
    "name": "AIcAIc",
    "exit_checked": true
-  },
-  {
-   "ts": 1785935821,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "29157307478711328163255012593661568193070862576476585623810735042881640216835",
-   "cond": "0xc1714a28decf72cdfa86c4c7421c3002bcfed119f79ad527e5cc96e833738e1b",
-   "title": "LoL: Hanwha Life Esports vs Gen.G (BO3) - LCK Round 3-4 Legend Group",
-   "outcome": "Hanwha Life Esports",
-   "price": 0.52,
-   "stake": 50.64,
-   "reason": "maker bid unfilled (69s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
   },
   {
    "ts": 1785934729,
