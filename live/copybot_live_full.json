@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785902462,
+ "updated": 1785919643,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 569.32,
@@ -56,11 +56,11 @@
    "realized": 63.69,
    "n": 48,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 50.09,
+   "open_n": 1,
    "miss_n": 9,
    "miss_pnl": -366.65,
-   "last_ts": 1785864809
+   "last_ts": 1785919635
   },
   "BikesAreTheBikes": {
    "realized": 82.68,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "15469460331352019135823646480486919090388437520615806921617791717165460861234",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Nongshim Red Force",
+   "title": "LoL: HANJIN BRION vs Nongshim Red Force (BO3) - LCK Round 3-4 Rise Group",
+   "their_price": 0.41,
+   "my_price": 0.41,
+   "slippage_pct": 0.0,
+   "lag_s": 8.1,
+   "shares": 122.18,
+   "cost": 50.09,
+   "fee": 0.8867,
+   "opened": 1785919635,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785888000
+  },
   {
    "token": "44878213123264609020900502267992317958528606661890344163785451259153992473346",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",

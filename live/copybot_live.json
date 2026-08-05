@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 50.1,
+ "stake": 50.08,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 815.21,
- "deployed": 1689.63,
+ "cash": 764.23,
+ "deployed": 1739.73,
  "reserve": 0.0,
- "realized": 1504.81,
+ "realized": 1503.93,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 33,
- "fees_paid": 460.77,
+ "open_count": 34,
+ "fees_paid": 461.65,
  "fee_rate": 0.03,
  "lag": {
-  "n": 399,
-  "n24": 15,
+  "n": 400,
+  "n24": 16,
   "basis": "24h",
-  "avg_s": 2.4,
+  "avg_s": 4.7,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "15469460331352019135823646480486919090388437520615806921617791717165460861234",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Nongshim Red Force",
+   "title": "LoL: HANJIN BRION vs Nongshim Red Force (BO3) - LCK Round 3-4 Rise Group",
+   "their_price": 0.41,
+   "my_price": 0.41,
+   "slippage_pct": 0.0,
+   "lag_s": 8.1,
+   "shares": 122.18,
+   "cost": 50.09,
+   "fee": 0.89,
+   "opened": 1785919635,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785888000
+  },
   {
    "token": "44878213123264609020900502267992317958528606661890344163785451259153992473346",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2117,26 +2137,6 @@
    "pnl": -128.47,
    "settled": 1785277106,
    "end_ts": 1785196800
-  },
-  {
-   "token": "87461865681689699081648262736937951256169066109275377425968376597869321557502",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "Will Trump meet with Netanyahu by July 31, 2026?",
-   "their_price": 0.35,
-   "my_price": 0.35,
-   "slippage_pct": 0.0,
-   "lag_s": 1.4,
-   "shares": 334.52,
-   "cost": 117.08,
-   "fee": 2.28,
-   "opened": 1784835161,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 215.16,
-   "settled": 1785266916,
-   "end_ts": 1785456000
   }
  ],
  "missed": [
@@ -3091,12 +3091,12 @@
  ],
  "missed_pnl": 21260.16,
  "last_fill": {
-  "ts": 1785888912,
+  "ts": 1785919643,
   "side": "BUY",
-  "price": 0.64,
-  "shares": 78.29,
-  "title": "ITF Kursumlijska Banja: Maria Camila Torres Murcia vs Petja ",
-  "outcome": "Petja Drame"
+  "price": 0.41,
+  "shares": 122.18,
+  "title": "LoL: HANJIN BRION vs Nongshim Red Force (BO3) - LCK Round 3-",
+  "outcome": "Nongshim Red Force"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3153,11 +3153,11 @@
    "realized": 63.69,
    "n": 48,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 50.09,
+   "open_n": 1,
    "miss_n": 9,
    "miss_pnl": -366.65,
-   "last_ts": 1785864809
+   "last_ts": 1785919635
   },
   "BikesAreTheBikes": {
    "realized": 82.68,
@@ -3200,5 +3200,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785902462
+ "updated": 1785919643
 }
