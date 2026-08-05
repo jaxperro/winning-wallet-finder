@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785956095,
+ "updated": 1785958775,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 569.32,
@@ -8,7 +8,7 @@
    "wins": 36,
    "open_cost": 754.88,
    "open_n": 15,
-   "miss_n": 144,
+   "miss_n": 145,
    "miss_pnl": 112878.71,
    "last_ts": 1785938180
   },
@@ -7321,6 +7321,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785958766,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "89339842467755846916895340090811107531055862929812328249086116756300859728253",
+   "cond": "0x426727e12645a0057d1280d8d14911a23c5aac767277cea8a1e408b9edf4a9dc",
+   "title": "Will Revolut's valuation hit (HIGH) $135B by August 31?",
+   "outcome": "No",
+   "price": 0.719,
+   "stake": 45.32,
+   "reason": "maker bid unfilled (70s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785956086,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
