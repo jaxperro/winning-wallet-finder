@@ -2141,6 +2141,21 @@
  ],
  "missed": [
   {
+   "ts": 1785924697,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "90469292497237570114296900301747942795452356710050650559449505654578561909046",
+   "cond": "0x58af38eb47ef62ddea7702b5295f239a971beefd7d73bf9dc8e2b3c7f62af11f",
+   "title": "Bitcoin Up or Down - August 5, 5:45AM-6:00AM ET",
+   "outcome": "Up",
+   "price": 0.1795,
+   "stake": 50.08,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1785852517,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "44952859930591206375449316303350129121071883825837753443431097609201876804363",
@@ -3072,25 +3087,9 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1785501290,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "111356505539987008216635024271011105698318536126509147350243305568453804452135",
-   "cond": "0xb2799b1a25bc9ea67e66d623b3f2abd2bc846810043d2e49c604d4ed4e74a748",
-   "title": "ESTAC Troyes vs. FC Goal: 1st Half O/U 2.5",
-   "outcome": "Over",
-   "price": 0.8,
-   "stake": 9.5,
-   "reason": "maker bid unfilled (93s)",
-   "status": "sold",
-   "pnl": 2.32,
-   "settled": 1785519762,
-   "name": "Kruto2027",
-   "exit_price": 1.0
   }
  ],
- "missed_pnl": 21255.34,
+ "missed_pnl": 20808.36,
  "last_fill": {
   "ts": 1785919643,
   "side": "BUY",
@@ -3126,7 +3125,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 18,
+   "miss_n": 19,
    "miss_pnl": -96.95,
    "last_ts": 1785643259
   },
@@ -3201,5 +3200,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785924427
+ "updated": 1785924705
 }
