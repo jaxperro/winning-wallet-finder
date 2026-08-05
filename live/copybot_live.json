@@ -2141,6 +2141,21 @@
  ],
  "missed": [
   {
+   "ts": 1785970015,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "57281115335446974163166076474736638531373976632651533675668876798786495744077",
+   "cond": "0x62af2a8a605a6ec28752015e1805a01a2ad336485eb662eef22f616a840412ad",
+   "title": "Will Amazon.com, Inc. (AMZN) hit (LOW) $184 in August?",
+   "outcome": "No",
+   "price": 0.896,
+   "stake": 47.97,
+   "reason": "thin book ($7 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785958766,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "89339842467755846916895340090811107531055862929812328249086116756300859728253",
@@ -3068,25 +3083,9 @@
    "settled": 1785538263,
    "name": "1kto1m",
    "exit_checked": true
-  },
-  {
-   "ts": 1785356857,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "82740535108653012552624203462371653094102041666491123851481106526593652328066",
-   "cond": "0x66277180ae51efaa69652e681ab08ca9c1e739828feb739a1899ebacc749ff4b",
-   "title": "Will Tesla, Inc. (TSLA) hit (HIGH) $337.50 Week of July 27 2026?",
-   "outcome": "No",
-   "price": 0.88,
-   "stake": 45,
-   "reason": "thin book ($32 within 5c < $50)",
-   "status": "sold",
-   "pnl": 1.3,
-   "settled": 1785534160,
-   "name": "0xbadaf319",
-   "exit_price": 0.9111
   }
  ],
- "missed_pnl": 20761.38,
+ "missed_pnl": 20772.07,
  "last_fill": {
   "ts": 1785944420,
   "side": "BUY",
@@ -3102,7 +3101,7 @@
    "wins": 36,
    "open_cost": 728.19,
    "open_n": 14,
-   "miss_n": 145,
+   "miss_n": 146,
    "miss_pnl": 112878.71,
    "last_ts": 1785961805
   },
@@ -3197,5 +3196,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785969572
+ "updated": 1785970024
 }

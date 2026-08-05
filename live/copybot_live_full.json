@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785969572,
+ "updated": 1785970024,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.3,
@@ -8,7 +8,7 @@
    "wins": 36,
    "open_cost": 728.19,
    "open_n": 14,
-   "miss_n": 145,
+   "miss_n": 146,
    "miss_pnl": 112878.71,
    "last_ts": 1785961805
   },
@@ -7321,6 +7321,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785970015,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "57281115335446974163166076474736638531373976632651533675668876798786495744077",
+   "cond": "0x62af2a8a605a6ec28752015e1805a01a2ad336485eb662eef22f616a840412ad",
+   "title": "Will Amazon.com, Inc. (AMZN) hit (LOW) $184 in August?",
+   "outcome": "No",
+   "price": 0.896,
+   "stake": 47.97,
+   "reason": "thin book ($7 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785958766,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
