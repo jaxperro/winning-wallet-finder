@@ -2141,6 +2141,21 @@
  ],
  "missed": [
   {
+   "ts": 1785939046,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "13887896800265966487014179943559375403384011039339488276489274832989862323735",
+   "cond": "0xadffc96f54f350b3655f72fe2853c81bfd705e9703f62469e6a14782ad5d4ec0",
+   "title": "Will Avigdor Lieberman be the next Prime Minister of Israel?",
+   "outcome": "No",
+   "price": 0.931,
+   "stake": 49.63,
+   "reason": "maker bid unfilled (107s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1785936785,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "109029073236008253777271401282424368239552562521098804138123470142302629228656",
@@ -2883,22 +2898,6 @@
    "exit_price": 0.9381
   },
   {
-   "ts": 1784451863,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "50488227317031565004575684525878022626020008256198844799050708993499540064859",
-   "cond": "0x4c80df6f557bb0b9de08c0301ebdce500dd9bdc58400d9269fb8fab1709ed584",
-   "title": "China x Taiwan military clash before 2027?",
-   "outcome": "No",
-   "price": 0.731,
-   "stake": 98.79,
-   "reason": "book unreliable (spread 0.18 > 0.08)",
-   "status": "sold",
-   "pnl": 15.26,
-   "settled": 1785592593,
-   "name": "BikesAreTheBikes",
-   "exit_price": 0.8535
-  },
-  {
    "ts": 1785470250,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "103870460409416656847338772401285687754272075210292233734346832088838695487128",
@@ -3088,7 +3087,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 20746.3,
+ "missed_pnl": 20731.04,
  "last_fill": {
   "ts": 1785938197,
   "side": "BUY",
@@ -3164,7 +3163,7 @@
    "wins": 3,
    "open_cost": 1230.68,
    "open_n": 18,
-   "miss_n": 46,
+   "miss_n": 47,
    "miss_pnl": -771.79,
    "last_ts": 1785881774
   },
@@ -3199,5 +3198,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785938265
+ "updated": 1785939060
 }

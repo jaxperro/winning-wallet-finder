@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785938265,
+ "updated": 1785939060,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 569.32,
@@ -68,7 +68,7 @@
    "wins": 3,
    "open_cost": 1230.68,
    "open_n": 18,
-   "miss_n": 46,
+   "miss_n": 47,
    "miss_pnl": -771.79,
    "last_ts": 1785881774
   },
@@ -7301,6 +7301,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785939046,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "13887896800265966487014179943559375403384011039339488276489274832989862323735",
+   "cond": "0xadffc96f54f350b3655f72fe2853c81bfd705e9703f62469e6a14782ad5d4ec0",
+   "title": "Will Avigdor Lieberman be the next Prime Minister of Israel?",
+   "outcome": "No",
+   "price": 0.931,
+   "stake": 49.63,
+   "reason": "maker bid unfilled (107s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1785936785,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
