@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 815.5,
- "deployed": 1666.22,
+ "cash": 765.77,
+ "deployed": 1715.64,
  "reserve": 0.0,
- "realized": 1481.69,
+ "realized": 1481.38,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 33,
- "fees_paid": 461.98,
+ "open_count": 34,
+ "fees_paid": 462.29,
  "fee_rate": 0.03,
  "lag": {
-  "n": 401,
-  "n24": 8,
+  "n": 402,
+  "n24": 9,
   "basis": "24h",
-  "avg_s": 8.0,
+  "avg_s": 7.9,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "87970647543236439083440944769400298504759134074324143770349947929248763079016",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Charlie Hatcher be the TN-05 Republican nominee?",
+   "their_price": 0.79,
+   "my_price": 0.79,
+   "slippage_pct": 0.0,
+   "lag_s": 1.5,
+   "shares": 62.56,
+   "cost": 49.42,
+   "fee": 0.31,
+   "opened": 1785944419,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785974400
+  },
   {
    "token": "12655298432856023401377623311129453877580829892143866780900963131940895536375",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2117,26 +2137,6 @@
    "end_ts": 1784937600,
    "sold_shares": 179.98,
    "sold_proceeds": 179.98
-  },
-  {
-   "token": "99168594369112900321075065263037928819848865546262777337590843994370476821249",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on July 28?",
-   "their_price": 0.4744,
-   "my_price": 0.4744,
-   "slippage_pct": 0.0,
-   "lag_s": 2.7,
-   "shares": 30.23,
-   "cost": 14.34,
-   "fee": 0.23,
-   "opened": 1785253659,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -14.57,
-   "settled": 1785277108,
-   "end_ts": 1785196800
   }
  ],
  "missed": [
@@ -3089,12 +3089,12 @@
  ],
  "missed_pnl": 20731.04,
  "last_fill": {
-  "ts": 1785938197,
+  "ts": 1785944420,
   "side": "BUY",
-  "price": 0.59,
-  "shares": 45.24,
-  "title": "Will Amazon (AMZN) close above $275 on August 5?",
-  "outcome": "Yes"
+  "price": 0.79,
+  "shares": 62.56,
+  "title": "Will Charlie Hatcher be the TN-05 Republican nominee?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3161,11 +3161,11 @@
    "realized": 82.68,
    "n": 18,
    "wins": 3,
-   "open_cost": 1230.68,
-   "open_n": 18,
+   "open_cost": 1280.1,
+   "open_n": 19,
    "miss_n": 47,
    "miss_pnl": -771.79,
-   "last_ts": 1785881774
+   "last_ts": 1785944419
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3198,5 +3198,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785943443
+ "updated": 1785944435
 }
