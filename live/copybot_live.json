@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.09,
+ "stake": 47.97,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 765.77,
- "deployed": 1688.95,
+ "deployed": 1632.85,
  "reserve": 0.0,
- "realized": 1454.69,
+ "realized": 1398.59,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 33,
+ "ledger_drift": -0.02,
+ "open_count": 32,
  "fees_paid": 462.29,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "69096949813045225336683960679829035937696902053122957721872788215708031375062",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Israel x Iran ceasefire continues through August 2?",
+   "their_price": 0.13,
+   "my_price": 0.13,
+   "slippage_pct": 0.0,
+   "lag_s": 12.5,
+   "shares": 431.49,
+   "cost": 56.09,
+   "fee": 1.46,
+   "opened": 1785628277,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -57.55,
+   "settled": 1785969566,
+   "end_ts": 1785628800
+  },
   {
    "token": "12655298432856023401377623311129453877580829892143866780900963131940895536375",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -872,26 +892,6 @@
    "exit_price": 1.0,
    "pnl": 65.64,
    "settled": 1785633565,
-   "end_ts": 1785628800
-  },
-  {
-   "token": "69096949813045225336683960679829035937696902053122957721872788215708031375062",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Israel x Iran ceasefire continues through August 2?",
-   "their_price": 0.13,
-   "my_price": 0.13,
-   "slippage_pct": 0.0,
-   "lag_s": 12.5,
-   "shares": 431.49,
-   "cost": 56.09,
-   "fee": 1.46,
-   "opened": 1785628277,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
    "end_ts": 1785628800
   },
   {
@@ -3157,14 +3157,14 @@
    "last_ts": 1785938050
   },
   "BikesAreTheBikes": {
-   "realized": 82.68,
-   "n": 18,
+   "realized": 25.13,
+   "n": 19,
    "wins": 3,
-   "open_cost": 1280.1,
-   "open_n": 19,
+   "open_cost": 1224.01,
+   "open_n": 18,
    "miss_n": 47,
    "miss_pnl": -771.79,
-   "last_ts": 1785944419
+   "last_ts": 1785969566
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3197,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785969287
+ "updated": 1785969572
 }
