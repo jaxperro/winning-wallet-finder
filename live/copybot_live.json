@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 400,
-  "n24": 13,
+  "n24": 12,
   "basis": "24h",
-  "avg_s": 2.4,
+  "avg_s": 4.7,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -2141,6 +2141,21 @@
  ],
  "missed": [
   {
+   "ts": 1785931269,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "33878421148010326359647142087479814628977903627267416974053838062316314287016",
+   "cond": "0xc907be75d363552369f828aab9633ce8f8d06f9b81ac8441f615a384e1191ef9",
+   "title": "Will the price of XRP be between $1.10 and $1.20 on August 5?",
+   "outcome": "No",
+   "price": 0.968,
+   "stake": 50.64,
+   "reason": "price moved 0.91\u21920.97",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785924697,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "90469292497237570114296900301747942795452356710050650559449505654578561909046",
@@ -3073,24 +3088,9 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1785527135,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "3833250547311424992805456252782158332407335422350263044535636678503072819141",
-   "cond": "0x1e5204036bd51e6ca0e0da6221319c5839bd9940782adc6d0f6fa703aa8a3bf4",
-   "title": "Will Hamas agree to disarm by December 31?",
-   "outcome": "Yes",
-   "price": 0.23,
-   "stake": 55.32,
-   "reason": "thin book ($44 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 20757.05,
+ "missed_pnl": 20773.74,
  "last_fill": {
   "ts": 1785919643,
   "side": "BUY",
@@ -3106,7 +3106,7 @@
    "wins": 36,
    "open_cost": 728.19,
    "open_n": 14,
-   "miss_n": 138,
+   "miss_n": 139,
    "miss_pnl": 112877.08,
    "last_ts": 1785882857
   },
@@ -3201,5 +3201,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785930973
+ "updated": 1785931280
 }
