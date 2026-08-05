@@ -2141,6 +2141,21 @@
  ],
  "missed": [
   {
+   "ts": 1785935821,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "29157307478711328163255012593661568193070862576476585623810735042881640216835",
+   "cond": "0xc1714a28decf72cdfa86c4c7421c3002bcfed119f79ad527e5cc96e833738e1b",
+   "title": "LoL: Hanwha Life Esports vs Gen.G (BO3) - LCK Round 3-4 Legend Group",
+   "outcome": "Hanwha Life Esports",
+   "price": 0.52,
+   "stake": 50.64,
+   "reason": "maker bid unfilled (69s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1785934729,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "74194061752563069773117791642611986792054012064112195386921673027093776691864",
@@ -3071,25 +3086,9 @@
    "settled": 1785529506,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1785456903,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "38400820373118241582688761399087324153152431599221369317367870141446152567740",
-   "cond": "0x3c1b9e370486b399f6a4c398e0a86cbb75b0e01ae9eb59fc503b62241df18841",
-   "title": "S&P 500 (SPY) closes above $740 on July 31?",
-   "outcome": "Yes",
-   "price": 0.61,
-   "stake": 53.59,
-   "reason": "thin book ($17 within 5c < $50)",
-   "status": "won",
-   "pnl": 33.64,
-   "settled": 1785529428,
-   "name": "0xbadaf319",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 20780.15,
+ "missed_pnl": 20777.85,
  "last_fill": {
   "ts": 1785919643,
   "side": "BUY",
@@ -3155,7 +3154,7 @@
    "wins": 0,
    "open_cost": 50.09,
    "open_n": 1,
-   "miss_n": 9,
+   "miss_n": 10,
    "miss_pnl": -366.65,
    "last_ts": 1785919635
   },
@@ -3200,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785934738
+ "updated": 1785935822
 }
