@@ -2141,6 +2141,21 @@
  ],
  "missed": [
   {
+   "ts": 1785953953,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "23107913951671005991985539426993172792762385608856370611599765901862020627379",
+   "cond": "0x6d09979202ab1494303d4a857907dcbde95e902afeca4ae7f19f8e7a494f55a3",
+   "title": "Will South Korea ETF (EWY) hit (LOW) $151 Week of August 3 2026?",
+   "outcome": "No",
+   "price": 0.8,
+   "stake": 34.83,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785936785,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "109029073236008253777271401282424368239552562521098804138123470142302629228656",
@@ -3071,25 +3086,9 @@
    "settled": 1785530136,
    "name": "Kruto2027",
    "exit_price": 0.46
-  },
-  {
-   "ts": 1785162430,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "65075316665858123310904205342608300814898488753088658332913116406808619343398",
-   "cond": "0x6899f21b3a3d26c8ae9d0332c25d160fc08b9c3b834f0d8fe116d2ec87905dc9",
-   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $130 Week of July 27 2026?",
-   "outcome": "No",
-   "price": 0.5463,
-   "stake": 33.91,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 25.22,
-   "settled": 1785530132,
-   "name": "0xbadaf319",
-   "exit_price": 0.9612
   }
  ],
- "missed_pnl": 20749.46,
+ "missed_pnl": 20842.17,
  "last_fill": {
   "ts": 1785944420,
   "side": "BUY",
@@ -3105,7 +3104,7 @@
    "wins": 36,
    "open_cost": 754.88,
    "open_n": 15,
-   "miss_n": 142,
+   "miss_n": 143,
    "miss_pnl": 112878.71,
    "last_ts": 1785938180
   },
@@ -3200,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785951834
+ "updated": 1785953963
 }
