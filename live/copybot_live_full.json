@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785899231,
+ "updated": 1785902462,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 569.32,
@@ -69,7 +69,7 @@
    "open_cost": 1230.68,
    "open_n": 18,
    "miss_n": 46,
-   "miss_pnl": -750.17,
+   "miss_pnl": -771.79,
    "last_ts": 1785881774
   },
   "JuiceFarm": {
@@ -7271,10 +7271,11 @@
    "price": 0.86,
    "stake": 50.1,
    "reason": "maker bid unfilled (94s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
+   "status": "sold",
+   "pnl": -21.62,
+   "settled": 1785902461,
+   "name": "BikesAreTheBikes",
+   "exit_price": 0.5
   },
   {
    "ts": 1785842752,
