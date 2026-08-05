@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785953963,
+ "updated": 1785956095,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 569.32,
@@ -8,7 +8,7 @@
    "wins": 36,
    "open_cost": 754.88,
    "open_n": 15,
-   "miss_n": 143,
+   "miss_n": 144,
    "miss_pnl": 112878.71,
    "last_ts": 1785938180
   },
@@ -7321,6 +7321,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1785956086,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "83148755782129672545061829336942774987155028452435468770344013725833558912903",
+   "cond": "0xd8b1ee6b352978f7e8fedfbe67e73c229573514a5830d238cd7c95c18f10369f",
+   "title": "Will Tabi launch a token by December 31, 2027?",
+   "outcome": "Yes",
+   "price": 0.4157,
+   "stake": 34.27,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1785953953,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",

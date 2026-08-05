@@ -2141,6 +2141,21 @@
  ],
  "missed": [
   {
+   "ts": 1785956086,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "83148755782129672545061829336942774987155028452435468770344013725833558912903",
+   "cond": "0xd8b1ee6b352978f7e8fedfbe67e73c229573514a5830d238cd7c95c18f10369f",
+   "title": "Will Tabi launch a token by December 31, 2027?",
+   "outcome": "Yes",
+   "price": 0.4157,
+   "stake": 34.27,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785953953,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "23107913951671005991985539426993172792762385608856370611599765901862020627379",
@@ -3070,25 +3085,9 @@
    "settled": 1785530908,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1785527422,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "10602688578724309582987348080322230036626259483794842612849826830636333831694",
-   "cond": "0x98516e7287d517ffa921dfb31918d68b6d631ac3af105c32bd3f844198fe24af",
-   "title": "T20 Series Kenya vs Bahrain: Kenya vs Bahrain",
-   "outcome": "Bahrain",
-   "price": 0.4292,
-   "stake": 25.04,
-   "reason": "maker bid unfilled (60s)",
-   "status": "sold",
-   "pnl": 0.93,
-   "settled": 1785530136,
-   "name": "Kruto2027",
-   "exit_price": 0.46
   }
  ],
- "missed_pnl": 20842.17,
+ "missed_pnl": 20841.24,
  "last_fill": {
   "ts": 1785944420,
   "side": "BUY",
@@ -3104,7 +3103,7 @@
    "wins": 36,
    "open_cost": 754.88,
    "open_n": 15,
-   "miss_n": 143,
+   "miss_n": 144,
    "miss_pnl": 112878.71,
    "last_ts": 1785938180
   },
@@ -3199,5 +3198,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785953963
+ "updated": 1785956095
 }
