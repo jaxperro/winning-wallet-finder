@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785946788,
+ "updated": 1785946937,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 569.32,
@@ -9,7 +9,7 @@
    "open_cost": 754.88,
    "open_n": 15,
    "miss_n": 142,
-   "miss_pnl": 112877.08,
+   "miss_pnl": 112878.71,
    "last_ts": 1785938180
   },
   "gkmgkldfmg": {
@@ -7322,6 +7322,21 @@
  ],
  "missed": [
   {
+   "ts": 1785931269,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "33878421148010326359647142087479814628977903627267416974053838062316314287016",
+   "cond": "0xc907be75d363552369f828aab9633ce8f8d06f9b81ac8441f615a384e1191ef9",
+   "title": "Will the price of XRP be between $1.10 and $1.20 on August 5?",
+   "outcome": "No",
+   "price": 0.968,
+   "stake": 50.64,
+   "reason": "price moved 0.91\u21920.97",
+   "status": "won",
+   "pnl": 1.63,
+   "settled": 1785946936,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785946788,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "112642191328596131899261381629595999993248108696545484436032154719158169979395",
@@ -7422,21 +7437,6 @@
    "price": 0.64,
    "stake": 50.64,
    "reason": "no ask side on the book at copy time",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785931269,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "33878421148010326359647142087479814628977903627267416974053838062316314287016",
-   "cond": "0xc907be75d363552369f828aab9633ce8f8d06f9b81ac8441f615a384e1191ef9",
-   "title": "Will the price of XRP be between $1.10 and $1.20 on August 5?",
-   "outcome": "No",
-   "price": 0.968,
-   "stake": 50.64,
-   "reason": "price moved 0.91\u21920.97",
    "status": "open",
    "pnl": null,
    "settled": null,
