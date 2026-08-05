@@ -21924,12 +21924,13 @@
       "status": "open",
       "exit_price": null,
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "end_ts": 1785974400
     }
   },
   "hwm": 3600.1933566560215,
-  "feed_sig": "9b15e74a9ddc868f682e590f2cbf5cda",
-  "feed_pushed_at": 1785944293.5202415,
+  "feed_sig": "4f23e68c10d66f9da0de00080b6f4a3e",
+  "feed_pushed_at": 1785944435.240377,
   "missed": [
     {
       "ts": 1783889397,
