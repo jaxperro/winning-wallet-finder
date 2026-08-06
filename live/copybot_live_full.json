@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786031011,
+ "updated": 1786039844,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.3,
@@ -9,7 +9,7 @@
    "open_cost": 728.19,
    "open_n": 14,
    "miss_n": 146,
-   "miss_pnl": 113197.24,
+   "miss_pnl": 113207.71,
    "last_ts": 1785961805
   },
   "gkmgkldfmg": {
@@ -7366,6 +7366,22 @@
  ],
  "missed": [
   {
+   "ts": 1785934475,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "25001539795348323929752224001225194858880904518700321743987044515817333255498",
+   "cond": "0x2526d7ca0fec313070d85f6ef4d016996c854df0cd356cdd7a93f9a2463c0107",
+   "title": "Will LI.FI launch a token by March 31, 2027?",
+   "outcome": "No",
+   "price": 0.64,
+   "stake": 50.64,
+   "reason": "no ask side on the book at copy time",
+   "status": "sold",
+   "pnl": 10.47,
+   "settled": 1786039841,
+   "name": "0xbadaf319",
+   "exit_price": 0.7844
+  },
+  {
    "ts": 1786031011,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "200151319696111844652491412631482014847337257056971003992808586181134014409",
@@ -7639,21 +7655,6 @@
    "price": 0.3072,
    "stake": 34.76,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785934475,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "25001539795348323929752224001225194858880904518700321743987044515817333255498",
-   "cond": "0x2526d7ca0fec313070d85f6ef4d016996c854df0cd356cdd7a93f9a2463c0107",
-   "title": "Will LI.FI launch a token by March 31, 2027?",
-   "outcome": "No",
-   "price": 0.64,
-   "stake": 50.64,
-   "reason": "no ask side on the book at copy time",
    "status": "open",
    "pnl": null,
    "settled": null,
