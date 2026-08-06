@@ -2141,6 +2141,22 @@
  ],
  "missed": [
   {
+   "ts": 1785708383,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "21005039642732637989429444477398837601208977664640014960101226836645659307122",
+   "cond": "0x8433670f312ac7e4da05ebf58242122dcf412243ca3a8d02766e0aae1a4a711f",
+   "title": "Will Abdul El-Sayed win Macomb County in the Michigan Senate Democratic primary?",
+   "outcome": "No",
+   "price": 0.2107,
+   "stake": 56.39,
+   "reason": "maker bid unfilled (85s)",
+   "status": "sold",
+   "pnl": 209.91,
+   "settled": 1785989658,
+   "name": "BikesAreTheBikes",
+   "exit_price": 1.0
+  },
+  {
    "ts": 1785970015,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "57281115335446974163166076474736638531373976632651533675668876798786495744077",
@@ -2692,21 +2708,6 @@
    "exit_checked": true
   },
   {
-   "ts": 1785708383,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "21005039642732637989429444477398837601208977664640014960101226836645659307122",
-   "cond": "0x8433670f312ac7e4da05ebf58242122dcf412243ca3a8d02766e0aae1a4a711f",
-   "title": "Will Abdul El-Sayed win Macomb County in the Michigan Senate Democratic primary?",
-   "outcome": "No",
-   "price": 0.2107,
-   "stake": 56.39,
-   "reason": "maker bid unfilled (85s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
-  },
-  {
    "ts": 1785671059,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "17391547350755989425804702732311542223226424331639399782496706299760208244671",
@@ -3085,7 +3086,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 20772.07,
+ "missed_pnl": 20981.98,
  "last_fill": {
   "ts": 1785987921,
   "side": "SELL",
@@ -3162,7 +3163,7 @@
    "open_cost": 1224.01,
    "open_n": 18,
    "miss_n": 47,
-   "miss_pnl": -771.79,
+   "miss_pnl": -561.88,
    "last_ts": 1785969566
   },
   "JuiceFarm": {
@@ -3196,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785987921
+ "updated": 1785989661
 }
