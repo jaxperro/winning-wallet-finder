@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786007460,
+ "updated": 1786014863,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.3,
@@ -66,11 +66,11 @@
    "realized": 25.13,
    "n": 19,
    "wins": 3,
-   "open_cost": 1224.01,
-   "open_n": 18,
+   "open_cost": 1272.31,
+   "open_n": 19,
    "miss_n": 47,
    "miss_pnl": -561.88,
-   "last_ts": 1785969566
+   "last_ts": 1786014800
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "24078451613163097416410370805562772205827071462344242816835897193771116630414",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Cleitinho Azevedo win the 2026 Minas Gerais gubernatorial election?",
+   "their_price": 0.87,
+   "my_price": 0.87,
+   "slippage_pct": 0.0,
+   "lag_s": 63.3,
+   "shares": 55.52,
+   "cost": 48.3,
+   "fee": 0.1884,
+   "opened": 1786014800,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1791072000
+  },
   {
    "token": "54454320447199793390647050027653271985412597042191832216838799636248932328400",
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
