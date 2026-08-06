@@ -2139,6 +2139,21 @@
  ],
  "missed": [
   {
+   "ts": 1786043456,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "74457541582800364997994635987661292481282387447685228185311068172440500018333",
+   "cond": "0xbedd1ed681f1876cda3c3421ac07a4e2d39a7d840fceeb31317958d6e40c7246",
+   "title": "FC Thun vs. KF V\u00edkingur: KF V\u00edkingur O/U 3.5 Corners",
+   "outcome": "Under",
+   "price": 0.01,
+   "stake": 48.41,
+   "reason": "thin book ($5 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1785934475,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "25001539795348323929752224001225194858880904518700321743987044515817333255498",
@@ -3069,24 +3084,9 @@
    "settled": 1785588537,
    "name": "BikesAreTheBikes",
    "exit_price": 0.5537
-  },
-  {
-   "ts": 1785578340,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "50825092058293657542194164596745813272825150865419431118334975989194381746273",
-   "cond": "0x04646097993a3f048d428dcc051596a0f9962c7955540983a5815eef02e55edf",
-   "title": "Mohammed Ghalibaf out as Speaker of Iran Parliament by December 31, 2026?",
-   "outcome": "Yes",
-   "price": 0.2581,
-   "stake": 30.35,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 21332.65,
+ "missed_pnl": 21315.92,
  "last_fill": {
   "ts": 1786043159,
   "side": "BUY",
@@ -3132,7 +3132,7 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 11,
+   "miss_n": 12,
    "miss_pnl": 412.76,
    "last_ts": 1785925830
   },
@@ -3197,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786043167
+ "updated": 1786043464
 }
