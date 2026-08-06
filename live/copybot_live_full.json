@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786015215,
+ "updated": 1786016930,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.3,
@@ -63,14 +63,14 @@
    "last_ts": 1785938050
   },
   "BikesAreTheBikes": {
-   "realized": 28.45,
-   "n": 20,
+   "realized": 35.81,
+   "n": 21,
    "wins": 3,
-   "open_cost": 1224.01,
-   "open_n": 18,
+   "open_cost": 1114.34,
+   "open_n": 17,
    "miss_n": 47,
-   "miss_pnl": -561.88,
-   "last_ts": 1786015215
+   "miss_pnl": -571.16,
+   "last_ts": 1786016930
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -104,6 +104,28 @@
   }
  },
  "bets": [
+  {
+   "token": "8310650677069487821478025416478130051168635736368290554555541536659374960027",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+   "their_price": 0.78,
+   "my_price": 0.81,
+   "slippage_pct": 0.0385,
+   "lag_s": 4.7,
+   "shares": 135.4,
+   "cost": 109.67,
+   "fee": 0.6251,
+   "opened": 1784300229,
+   "status": "closed",
+   "exit_price": 0.8689,
+   "pnl": 7.36,
+   "settled": 1786016930,
+   "sold_shares": 135.3999332851717,
+   "sold_proceeds": 117.65350116626686,
+   "end_ts": 1788134400
+  },
   {
    "token": "24078451613163097416410370805562772205827071462344242816835897193771116630414",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -4293,28 +4315,6 @@
    "sold_proceeds": 1.6383297241557933
   },
   {
-   "token": "8310650677069487821478025416478130051168635736368290554555541536659374960027",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Bab el-Mandeb Strait effectively closed by August 31?",
-   "their_price": 0.78,
-   "my_price": 0.81,
-   "slippage_pct": 0.0385,
-   "lag_s": 4.7,
-   "shares": 135.4,
-   "cost": 109.67,
-   "fee": 0.6251,
-   "opened": 1784300229,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "sold_shares": 117.06113352150771,
-   "sold_proceeds": 99.63565478907068,
-   "end_ts": 1788134400
-  },
-  {
    "token": "99769792009260570054217311703996683522727922229995804271060316488330979046706",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "name": "AIcAIc",
@@ -7366,6 +7366,22 @@
  ],
  "missed": [
   {
+   "ts": 1785549850,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "8310650677069487821478025416478130051168635736368290554555541536659374960027",
+   "cond": "0x31327c6fbdc70a44d97f8e8973f536b6a748e01b4c0ca5549ed0910c703b1d7b",
+   "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+   "outcome": "No",
+   "price": 0.85,
+   "stake": 57.23,
+   "reason": "price moved 0.47\u21920.85",
+   "status": "sold",
+   "pnl": -9.28,
+   "settled": 1786016926,
+   "name": "BikesAreTheBikes",
+   "exit_price": 0.7221
+  },
+  {
    "ts": 1786007453,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "14131033894487534647221385663405546877727077170844653754311092470913263385962",
@@ -8341,21 +8357,6 @@
    "settled": 1785550244,
    "name": "0xbadaf319",
    "exit_price": 0.8
-  },
-  {
-   "ts": 1785549850,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "8310650677069487821478025416478130051168635736368290554555541536659374960027",
-   "cond": "0x31327c6fbdc70a44d97f8e8973f536b6a748e01b4c0ca5549ed0910c703b1d7b",
-   "title": "Bab el-Mandeb Strait effectively closed by August 31?",
-   "outcome": "No",
-   "price": 0.85,
-   "stake": 57.23,
-   "reason": "price moved 0.47\u21920.85",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1785538189,
