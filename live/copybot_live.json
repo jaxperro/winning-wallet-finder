@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.3,
+ "stake": 48.37,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 733.81,
- "deployed": 1681.16,
+ "cash": 785.62,
+ "deployed": 1632.85,
  "reserve": 0.0,
- "realized": 1414.94,
+ "realized": 1418.44,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 33,
- "fees_paid": 463.13,
+ "ledger_drift": -0.02,
+ "open_count": 32,
+ "fees_paid": 463.23,
  "fee_rate": 0.03,
  "lag": {
   "n": 404,
@@ -64,11 +64,13 @@
    "cost": 48.3,
    "fee": 0.19,
    "opened": 1786014800,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1791072000
+   "status": "closed",
+   "exit_price": 0.9332,
+   "pnl": 3.32,
+   "settled": 1786015215,
+   "end_ts": 1791072000,
+   "sold_shares": 55.52,
+   "sold_proceeds": 51.81
   },
   {
    "token": "54454320447199793390647050027653271985412597042191832216838799636248932328400",
@@ -3086,9 +3088,9 @@
  ],
  "missed_pnl": 20972.37,
  "last_fill": {
-  "ts": 1786014863,
-  "side": "BUY",
-  "price": 0.87,
+  "ts": 1786015215,
+  "side": "SELL",
+  "price": 0.935,
   "shares": 55.52,
   "title": "Will Cleitinho Azevedo win the 2026 Minas Gerais gubernatori",
   "outcome": "No"
@@ -3155,14 +3157,14 @@
    "last_ts": 1785938050
   },
   "BikesAreTheBikes": {
-   "realized": 25.13,
-   "n": 19,
+   "realized": 28.45,
+   "n": 20,
    "wins": 3,
-   "open_cost": 1272.31,
-   "open_n": 19,
+   "open_cost": 1224.01,
+   "open_n": 18,
    "miss_n": 47,
    "miss_pnl": -561.88,
-   "last_ts": 1786014800
+   "last_ts": 1786015215
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3195,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786014863
+ "updated": 1786015215
 }
