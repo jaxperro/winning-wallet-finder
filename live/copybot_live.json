@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.97,
+ "stake": 47.96,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 765.77,
- "deployed": 1632.85,
+ "cash": 717.32,
+ "deployed": 1680.83,
  "reserve": 0.0,
- "realized": 1398.59,
+ "realized": 1398.12,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 32,
- "fees_paid": 462.29,
+ "open_count": 33,
+ "fees_paid": 462.77,
  "fee_rate": 0.03,
  "lag": {
-  "n": 402,
-  "n24": 3,
+  "n": 403,
+  "n24": 4,
   "basis": "24h",
-  "avg_s": 8.1,
+  "avg_s": 4.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "54454320447199793390647050027653271985412597042191832216838799636248932328400",
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "name": "1kto1m",
+   "outcome": "Down",
+   "title": "Bitcoin Up or Down - August 5, 11PM ET",
+   "their_price": 0.67,
+   "my_price": 0.67,
+   "slippage_pct": 0.0,
+   "lag_s": 1.5,
+   "shares": 71.6,
+   "cost": 47.97,
+   "fee": 0.47,
+   "opened": 1785986936,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1785974400
+  },
   {
    "token": "69096949813045225336683960679829035937696902053122957721872788215708031375062",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2115,28 +2135,6 @@
    "end_ts": 1785456000,
    "sold_shares": 116.39,
    "sold_proceeds": 115.67
-  },
-  {
-   "token": "68080778697884921540335032370654180051222428162809511382222697646266365598353",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "Israel x Iran ceasefire continues through July 25?",
-   "their_price": 0.65,
-   "my_price": 0.65,
-   "slippage_pct": 0.0,
-   "lag_s": 0.4,
-   "shares": 179.98,
-   "cost": 116.99,
-   "fee": 1.23,
-   "opened": 1784842585,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": 61.76,
-   "settled": 1785278053,
-   "end_ts": 1784937600,
-   "sold_shares": 179.98,
-   "sold_proceeds": 179.98
   }
  ],
  "missed": [
@@ -3087,12 +3085,12 @@
  ],
  "missed_pnl": 20772.07,
  "last_fill": {
-  "ts": 1785944420,
+  "ts": 1785986937,
   "side": "BUY",
-  "price": 0.79,
-  "shares": 62.56,
-  "title": "Will Charlie Hatcher be the TN-05 Republican nominee?",
-  "outcome": "No"
+  "price": 0.67,
+  "shares": 71.6,
+  "title": "Bitcoin Up or Down - August 5, 11PM ET",
+  "outcome": "Down"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3119,11 +3117,11 @@
    "realized": 256.23,
    "n": 20,
    "wins": 3,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 47.97,
+   "open_n": 1,
    "miss_n": 19,
    "miss_pnl": -148.26,
-   "last_ts": 1785643259
+   "last_ts": 1785986936
   },
   "Kruto2027": {
    "realized": 174.77,
@@ -3196,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785975314
+ "updated": 1785986937
 }
