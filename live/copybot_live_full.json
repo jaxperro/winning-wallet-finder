@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786019031,
+ "updated": 1786023181,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.3,
@@ -9,7 +9,7 @@
    "open_cost": 728.19,
    "open_n": 14,
    "miss_n": 146,
-   "miss_pnl": 112880.04,
+   "miss_pnl": 113197.24,
    "last_ts": 1785961805
   },
   "gkmgkldfmg": {
@@ -7366,6 +7366,22 @@
  ],
  "missed": [
   {
+   "ts": 1785873965,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "21751923774410707808683920186948365220718038102980599954544331059059132219371",
+   "cond": "0x17e477d0ef3af26c1398f661d8da808dc3a8867b18c95269b3cdca41acb0a0c6",
+   "title": "Will Opendoor Technologies Inc. (OPEN) hit (LOW) $3.25 Week of August 3 2026?",
+   "outcome": "No",
+   "price": 0.12,
+   "stake": 51.16,
+   "reason": "thin book ($34 within 5c < $50)",
+   "status": "sold",
+   "pnl": 317.2,
+   "settled": 1786023178,
+   "name": "0xbadaf319",
+   "exit_price": 0.8706
+  },
+  {
    "ts": 1786007453,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "14131033894487534647221385663405546877727077170844653754311092470913263385962",
@@ -7693,21 +7709,6 @@
    "settled": 1785885010,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1785873965,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "21751923774410707808683920186948365220718038102980599954544331059059132219371",
-   "cond": "0x17e477d0ef3af26c1398f661d8da808dc3a8867b18c95269b3cdca41acb0a0c6",
-   "title": "Will Opendoor Technologies Inc. (OPEN) hit (LOW) $3.25 Week of August 3 2026?",
-   "outcome": "No",
-   "price": 0.12,
-   "stake": 51.16,
-   "reason": "thin book ($34 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1785858922,
