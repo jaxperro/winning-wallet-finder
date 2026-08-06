@@ -2141,6 +2141,21 @@
  ],
  "missed": [
   {
+   "ts": 1786027437,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "40081275558852222228080198821361202017557872256707631666334039001378518619916",
+   "cond": "0x18b1c135d0a40c5894da9412e77311827d9caf16cf4cd6591b247a34730af919",
+   "title": "Will J.D. Vance win the 2028 Republican presidential nomination?",
+   "outcome": "Yes",
+   "price": 0.439,
+   "stake": 48.43,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1785873965,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "21751923774410707808683920186948365220718038102980599954544331059059132219371",
@@ -3070,25 +3085,9 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785536031,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "89213299320340519312609800070963866900731006421290655419739582074858285792863",
-   "cond": "0xc1556ecbe613e403dfb9e38bf1b25a8aee2aa1687f2b343bc896dd2c9763ed74",
-   "title": "Israel x Iran ceasefire continues through August 31?",
-   "outcome": "No",
-   "price": 0.51,
-   "stake": 56.0,
-   "reason": "maker bid unfilled (102s)",
-   "status": "sold",
-   "pnl": -2.64,
-   "settled": 1785574288,
-   "name": "BikesAreTheBikes",
-   "exit_price": 0.501
   }
  ],
- "missed_pnl": 21276.26,
+ "missed_pnl": 21249.77,
  "last_fill": {
   "ts": 1786016915,
   "side": "SELL",
@@ -3164,7 +3163,7 @@
    "wins": 3,
    "open_cost": 1114.34,
    "open_n": 17,
-   "miss_n": 47,
+   "miss_n": 48,
    "miss_pnl": -571.16,
    "last_ts": 1786016930
   },
@@ -3199,5 +3198,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786024665
+ "updated": 1786027437
 }

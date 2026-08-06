@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786024665,
+ "updated": 1786027437,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.3,
@@ -68,7 +68,7 @@
    "wins": 3,
    "open_cost": 1114.34,
    "open_n": 17,
-   "miss_n": 47,
+   "miss_n": 48,
    "miss_pnl": -571.16,
    "last_ts": 1786016930
   },
@@ -7365,6 +7365,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786027437,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "40081275558852222228080198821361202017557872256707631666334039001378518619916",
+   "cond": "0x18b1c135d0a40c5894da9412e77311827d9caf16cf4cd6591b247a34730af919",
+   "title": "Will J.D. Vance win the 2028 Republican presidential nomination?",
+   "outcome": "Yes",
+   "price": 0.439,
+   "stake": 48.43,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1785873965,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
