@@ -2141,6 +2141,22 @@
  ],
  "missed": [
   {
+   "ts": 1784823420,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "45139241414469860954947578765028277034812078372494153843579493704976148448651",
+   "cond": "0x65791b55c71bf4314b7234f0406f052727201d521f68721d360563b3ac59a3a3",
+   "title": "Tuyo FDV above $500M one day after launch?",
+   "outcome": "No",
+   "price": 0.7499,
+   "stake": 35.36,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 1.33,
+   "settled": 1785995926,
+   "name": "0xbadaf319",
+   "exit_price": 0.7888
+  },
+  {
    "ts": 1785708383,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "21005039642732637989429444477398837601208977664640014960101226836645659307122",
@@ -3068,25 +3084,9 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1785538189,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "42545434228659485569831692832667457006480927794525728856287124784939219621691",
-   "cond": "0xe8616ad87788776aea916857de3e4818b1bbe0330bebdb46e39d9537a8e74781",
-   "title": "Bitcoin Up or Down - July 31, 6:30PM-6:35PM ET",
-   "outcome": "Down",
-   "price": 0.2533,
-   "stake": 56.0,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "lost",
-   "pnl": -57.25,
-   "settled": 1785538263,
-   "name": "1kto1m",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 20981.98,
+ "missed_pnl": 20983.31,
  "last_fill": {
   "ts": 1785987921,
   "side": "SELL",
@@ -3103,7 +3103,7 @@
    "open_cost": 728.19,
    "open_n": 14,
    "miss_n": 146,
-   "miss_pnl": 112878.71,
+   "miss_pnl": 112880.04,
    "last_ts": 1785961805
   },
   "gkmgkldfmg": {
@@ -3197,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1785989661
+ "updated": 1785995934
 }
