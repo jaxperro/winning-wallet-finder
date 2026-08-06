@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 803.64,
- "deployed": 1618.0,
+ "cash": 754.86,
+ "deployed": 1666.43,
  "reserve": 0.0,
- "realized": 1421.61,
+ "realized": 1421.25,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 31,
- "fees_paid": 463.24,
+ "ledger_drift": -0.02,
+ "open_count": 32,
+ "fees_paid": 463.6,
  "fee_rate": 0.03,
  "lag": {
-  "n": 404,
-  "n24": 2,
+  "n": 405,
+  "n24": 3,
   "basis": "24h",
-  "avg_s": 32.4,
+  "avg_s": 8.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "60736604095974956194543682313156464544142668961532964567135396949190081432607",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "US x Iran Effective Ceasefire by August 14?",
+   "their_price": 0.7554,
+   "my_price": 0.7554,
+   "slippage_pct": 0.0,
+   "lag_s": 8.1,
+   "shares": 64.11,
+   "cost": 48.43,
+   "fee": 0.36,
+   "opened": 1786040027,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786665600
+  },
   {
    "token": "8310650677069487821478025416478130051168635736368290554555541536659374960027",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2115,28 +2135,6 @@
    "pnl": -143.6,
    "settled": 1785332363,
    "end_ts": 1785283200
-  },
-  {
-   "token": "19253596955895064939693767900265163520232524064146679171250301920280524237883",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Nongshim Red Force",
-   "title": "LoL: Kiwoom DRX vs Nongshim Red Force (BO3) - LCK Round 3-4 Rise Group",
-   "their_price": 0.66,
-   "my_price": 0.66,
-   "slippage_pct": 0.0,
-   "lag_s": 12.0,
-   "shares": 209.53,
-   "cost": 138.29,
-   "fee": 1.41,
-   "opened": 1785312515,
-   "status": "closed",
-   "exit_price": 0.9383,
-   "pnl": 56.9,
-   "settled": 1785316781,
-   "end_ts": 1785283200,
-   "sold_shares": 209.53,
-   "sold_proceeds": 196.6
   }
  ],
  "missed": [
@@ -3090,12 +3088,12 @@
  ],
  "missed_pnl": 21332.65,
  "last_fill": {
-  "ts": 1786016915,
-  "side": "SELL",
-  "price": 0.983,
-  "shares": 18.34,
-  "title": "Bab el-Mandeb Strait effectively closed by August 31?",
-  "outcome": "No"
+  "ts": 1786040035,
+  "side": "BUY",
+  "price": 0.7554,
+  "shares": 64.11,
+  "title": "US x Iran Effective Ceasefire by August 14?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3162,11 +3160,11 @@
    "realized": 35.81,
    "n": 21,
    "wins": 3,
-   "open_cost": 1114.34,
-   "open_n": 17,
+   "open_cost": 1162.77,
+   "open_n": 18,
    "miss_n": 49,
    "miss_pnl": -571.16,
-   "last_ts": 1786016930
+   "last_ts": 1786040027
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3199,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786039844
+ "updated": 1786040044
 }
