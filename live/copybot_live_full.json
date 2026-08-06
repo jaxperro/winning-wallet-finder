@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1785986937,
+ "updated": 1785987921,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.3,
@@ -23,14 +23,14 @@
    "last_ts": 1785414639
   },
   "1kto1m": {
-   "realized": 256.23,
-   "n": 20,
+   "realized": 272.77,
+   "n": 21,
    "wins": 3,
-   "open_cost": 47.97,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 19,
    "miss_pnl": -148.26,
-   "last_ts": 1785986936
+   "last_ts": 1785987921
   },
   "Kruto2027": {
    "realized": 174.77,
@@ -118,11 +118,13 @@
    "cost": 47.97,
    "fee": 0.4749,
    "opened": 1785986936,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785974400
+   "status": "closed",
+   "exit_price": 0.9075,
+   "pnl": 16.54,
+   "settled": 1785987921,
+   "end_ts": 1785974400,
+   "sold_shares": 71.6,
+   "sold_proceeds": 64.98007879999999
   },
   {
    "token": "69096949813045225336683960679829035937696902053122957721872788215708031375062",
