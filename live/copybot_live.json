@@ -2141,6 +2141,21 @@
  ],
  "missed": [
   {
+   "ts": 1786007453,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "14131033894487534647221385663405546877727077170844653754311092470913263385962",
+   "cond": "0xa567663e5aec821ed0f85a1bd8cd0d6d07925b1aa5c582cb01f3c3def8e04725",
+   "title": "S&P 500 (SPX) Opens Up or Down on August 6?",
+   "outcome": "Up",
+   "price": 0.76,
+   "stake": 48.3,
+   "reason": "thin book ($24 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1784823420,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "45139241414469860954947578765028277034812078372494153843579493704976148448651",
@@ -3069,24 +3084,9 @@
    "settled": 1785550244,
    "name": "0xbadaf319",
    "exit_price": 0.8
-  },
-  {
-   "ts": 1785549850,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "8310650677069487821478025416478130051168635736368290554555541536659374960027",
-   "cond": "0x31327c6fbdc70a44d97f8e8973f536b6a748e01b4c0ca5549ed0910c703b1d7b",
-   "title": "Bab el-Mandeb Strait effectively closed by August 31?",
-   "outcome": "No",
-   "price": 0.85,
-   "stake": 57.23,
-   "reason": "price moved 0.47\u21920.85",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 20983.31,
+ "missed_pnl": 20972.37,
  "last_fill": {
   "ts": 1785987921,
   "side": "SELL",
@@ -3122,7 +3122,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 19,
+   "miss_n": 20,
    "miss_pnl": -148.26,
    "last_ts": 1785987921
   },
@@ -3197,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786006057
+ "updated": 1786007460
 }
