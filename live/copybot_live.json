@@ -2139,6 +2139,21 @@
  ],
  "missed": [
   {
+   "ts": 1786113047,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "23515221700905694854900888621593248886654890374386134630990707970966819867940",
+   "cond": "0x2d8df77da52cde87078501a9aa732d414d1fb5efadfedf6480258584a71a0229",
+   "title": "Will Edu Aguirre attend Cristiano Ronaldo's wedding?",
+   "outcome": "Yes",
+   "price": 0.5123,
+   "stake": 48.65,
+   "reason": "maker bid unfilled (65s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1785946788,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "112642191328596131899261381629595999993248108696545484436032154719158169979395",
@@ -3071,24 +3086,9 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785604907,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "14980109967714475040425172542938759843822646035539893575852591461888569553959",
-   "cond": "0x76c1a69f2b0a7fcfa97b56ddbeaad1981a8cb3d8f24c1adce62ffa2d010ebbe0",
-   "title": "Will Spider-Man: Brand New Day have the best domestic opening weekend in 2026?",
-   "outcome": "No",
-   "price": 0.3701,
-   "stake": 57.21,
-   "reason": "maker bid unfilled (94s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 21162.67,
+ "missed_pnl": 21209.74,
  "last_fill": {
   "ts": 1786109675,
   "side": "BUY",
@@ -3164,7 +3164,7 @@
    "wins": 3,
    "open_cost": 1210.42,
    "open_n": 19,
-   "miss_n": 51,
+   "miss_n": 52,
    "miss_pnl": -662.54,
    "last_ts": 1786064354
   },
@@ -3199,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786112570
+ "updated": 1786113055
 }
