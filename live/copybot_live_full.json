@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786050344,
+ "updated": 1786061713,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.3,
@@ -63,14 +63,14 @@
    "last_ts": 1785938050
   },
   "BikesAreTheBikes": {
-   "realized": 35.81,
-   "n": 21,
+   "realized": 47.99,
+   "n": 22,
    "wins": 3,
-   "open_cost": 1211.19,
-   "open_n": 19,
+   "open_cost": 1161.77,
+   "open_n": 18,
    "miss_n": 49,
    "miss_pnl": -572.61,
-   "last_ts": 1786043158
+   "last_ts": 1786061713
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -104,6 +104,28 @@
   }
  },
  "bets": [
+  {
+   "token": "87970647543236439083440944769400298504759134074324143770349947929248763079016",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Charlie Hatcher be the TN-05 Republican nominee?",
+   "their_price": 0.79,
+   "my_price": 0.79,
+   "slippage_pct": 0.0,
+   "lag_s": 1.5,
+   "shares": 62.56,
+   "cost": 49.42,
+   "fee": 0.3114,
+   "opened": 1785944419,
+   "status": "closed",
+   "exit_price": 0.9897,
+   "pnl": 12.18,
+   "settled": 1786061713,
+   "end_ts": 1785974400,
+   "sold_shares": 62.56,
+   "sold_proceeds": 61.915819680000006
+  },
   {
    "token": "106384382902272259275653733417531627173944931937610707897597239994735553962869",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -249,26 +271,6 @@
    "pnl": -27.02,
    "settled": 1785961805,
    "end_ts": 1785888000
-  },
-  {
-   "token": "87970647543236439083440944769400298504759134074324143770349947929248763079016",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will Charlie Hatcher be the TN-05 Republican nominee?",
-   "their_price": 0.79,
-   "my_price": 0.79,
-   "slippage_pct": 0.0,
-   "lag_s": 1.5,
-   "shares": 62.56,
-   "cost": 49.42,
-   "fee": 0.3114,
-   "opened": 1785944419,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1785974400
   },
   {
    "token": "15469460331352019135823646480486919090388437520615806921617791717165460861234",
