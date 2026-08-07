@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1786131512,
+ "updated": 1786134090,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 542.3,
-   "n": 102,
-   "wins": 36,
-   "open_cost": 744.56,
-   "open_n": 15,
+   "realized": 548.42,
+   "n": 104,
+   "wins": 38,
+   "open_cost": 661.67,
+   "open_n": 13,
    "miss_n": 149,
    "miss_pnl": 113248.03,
-   "last_ts": 1786109668
+   "last_ts": 1786134084
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -104,6 +104,46 @@
   }
  },
  "bets": [
+  {
+   "token": "106115320143789078209815024545651655998344368776988969384790307418401251093243",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Palantir Technologies Inc. (PLTR) hit (LOW) $105 Week of August 3 2026?",
+   "their_price": 0.95,
+   "my_price": 0.95,
+   "slippage_pct": 0.0,
+   "lag_s": 0.1,
+   "shares": 52.63,
+   "cost": 50.0,
+   "fee": 0.075,
+   "opened": 1785838016,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 2.56,
+   "settled": 1786134084,
+   "end_ts": 1786060800
+  },
+  {
+   "token": "35806246373913666691919011026597618487771516182291701095229500844593341879004",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will S&P 500 (SPY) hit (LOW) $735 Week of August 3 2026?",
+   "their_price": 0.9,
+   "my_price": 0.9,
+   "slippage_pct": 0.0,
+   "lag_s": 0.2,
+   "shares": 36.55,
+   "cost": 32.89,
+   "fee": 0.0987,
+   "opened": 1785882857,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 3.56,
+   "settled": 1786134042,
+   "end_ts": 1786060800
+  },
   {
    "token": "71877431772881692404314318981764548881152635985584226603729882292372121391484",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -373,26 +413,6 @@
    "end_ts": 1786492800
   },
   {
-   "token": "35806246373913666691919011026597618487771516182291701095229500844593341879004",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will S&P 500 (SPY) hit (LOW) $735 Week of August 3 2026?",
-   "their_price": 0.9,
-   "my_price": 0.9,
-   "slippage_pct": 0.0,
-   "lag_s": 0.2,
-   "shares": 36.55,
-   "cost": 32.89,
-   "fee": 0.0987,
-   "opened": 1785882857,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786060800
-  },
-  {
    "token": "68738068644868341944434960825834721671808502341396366180204745788748636004884",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "name": "BikesAreTheBikes",
@@ -613,26 +633,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1798761600
-  },
-  {
-   "token": "106115320143789078209815024545651655998344368776988969384790307418401251093243",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Palantir Technologies Inc. (PLTR) hit (LOW) $105 Week of August 3 2026?",
-   "their_price": 0.95,
-   "my_price": 0.95,
-   "slippage_pct": 0.0,
-   "lag_s": 0.1,
-   "shares": 52.63,
-   "cost": 50.0,
-   "fee": 0.075,
-   "opened": 1785838016,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786060800
   },
   {
    "token": "69546314151438248260496384444874667390117560523671723212893326463407321740824",
