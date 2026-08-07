@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786126449,
+ "updated": 1786129154,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.3,
@@ -56,11 +56,11 @@
    "realized": 12.71,
    "n": 49,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.65,
+   "open_n": 1,
    "miss_n": 10,
    "miss_pnl": -470.85,
-   "last_ts": 1785938050
+   "last_ts": 1786129145
   },
   "BikesAreTheBikes": {
    "realized": 47.99,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "71877431772881692404314318981764548881152635985584226603729882292372121391484",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Fnatic",
+   "title": "LoL: Team Heretics vs Fnatic (BO3) - LEC Regular Season",
+   "their_price": 0.4672,
+   "my_price": 0.4672,
+   "slippage_pct": 0.0,
+   "lag_s": 1.0,
+   "shares": 104.13,
+   "cost": 48.65,
+   "fee": 0.7776,
+   "opened": 1786129145,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786060800
+  },
   {
    "token": "23419569171744003081075633749696226931585310684198313465939745712314121846204",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
