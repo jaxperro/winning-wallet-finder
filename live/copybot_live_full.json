@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786061713,
+ "updated": 1786063569,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.3,
@@ -68,7 +68,7 @@
    "wins": 3,
    "open_cost": 1161.77,
    "open_n": 18,
-   "miss_n": 49,
+   "miss_n": 51,
    "miss_pnl": -572.61,
    "last_ts": 1786061713
   },
@@ -7407,6 +7407,36 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786063562,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "87970647543236439083440944769400298504759134074324143770349947929248763079016",
+   "cond": "0x14ba4a9b638d59ec070561731d266b46f9c4f88c67f1e2357dabab89a807f390",
+   "title": "Will Charlie Hatcher be the TN-05 Republican nominee?",
+   "outcome": "No",
+   "price": 0.6365,
+   "stake": 48.66,
+   "reason": "maker bid unfilled (119s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
+   "ts": 1786063502,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "53812289218965842163370625485093046804125242126283385267078097747938545122586",
+   "cond": "0x81c49fcaac8e32fd0fc87e108f89493cbb961d3c0fdd872fed515d0693f5322a",
+   "title": "Will Andy Ogles be the TN-05 Republican nominee?",
+   "outcome": "Yes",
+   "price": 0.5051,
+   "stake": 5.05,
+   "reason": "maker bid unfilled (60s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1786031011,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

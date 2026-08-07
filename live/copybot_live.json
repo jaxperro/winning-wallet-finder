@@ -2141,6 +2141,36 @@
  ],
  "missed": [
   {
+   "ts": 1786063562,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "87970647543236439083440944769400298504759134074324143770349947929248763079016",
+   "cond": "0x14ba4a9b638d59ec070561731d266b46f9c4f88c67f1e2357dabab89a807f390",
+   "title": "Will Charlie Hatcher be the TN-05 Republican nominee?",
+   "outcome": "No",
+   "price": 0.6365,
+   "stake": 48.66,
+   "reason": "maker bid unfilled (119s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
+   "ts": 1786063502,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "53812289218965842163370625485093046804125242126283385267078097747938545122586",
+   "cond": "0x81c49fcaac8e32fd0fc87e108f89493cbb961d3c0fdd872fed515d0693f5322a",
+   "title": "Will Andy Ogles be the TN-05 Republican nominee?",
+   "outcome": "Yes",
+   "price": 0.5051,
+   "stake": 5.05,
+   "reason": "maker bid unfilled (60s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1786031011,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "200151319696111844652491412631482014847337257056971003992808586181134014409",
@@ -3054,41 +3084,9 @@
    "settled": 1785596601,
    "name": "0xbadaf319",
    "exit_price": 0.9905
-  },
-  {
-   "ts": 1785453599,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "112061967240382599149689205198858360526948984998429264738900923425548076008244",
-   "cond": "0x39605ffa16456a7b84b238d7a2305443fbc971cbbf94bf84c34c76cd5410180a",
-   "title": "Will Gold (GC) dip to (LOW) $3,000 by end of December?",
-   "outcome": "Yes",
-   "price": 0.11,
-   "stake": 8.42,
-   "reason": "maker bid unfilled (125s)",
-   "status": "sold",
-   "pnl": -1.2,
-   "settled": 1785592598,
-   "name": "0xbadaf319",
-   "exit_price": 0.1
-  },
-  {
-   "ts": 1785453599,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "44951722963953529750522869714032390697712163183988488207431058937951658664117",
-   "cond": "0xfcd83805692939d3ea7ee66a1bd93aa08d973ced7cb4000a51cbf484a133ff7a",
-   "title": "Will Gold (GC) dip to (LOW) $2,500 by end of December?",
-   "outcome": "No",
-   "price": 0.1,
-   "stake": 5.94,
-   "reason": "maker bid unfilled (125s)",
-   "status": "sold",
-   "pnl": 49.52,
-   "settled": 1785592598,
-   "name": "0xbadaf319",
-   "exit_price": 0.9381
   }
  ],
- "missed_pnl": 21315.09,
+ "missed_pnl": 21289.57,
  "last_fill": {
   "ts": 1786061713,
   "side": "SELL",
@@ -3164,7 +3162,7 @@
    "wins": 3,
    "open_cost": 1161.77,
    "open_n": 18,
-   "miss_n": 49,
+   "miss_n": 51,
    "miss_pnl": -572.61,
    "last_ts": 1786061713
   },
@@ -3199,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786061713
+ "updated": 1786063569
 }
