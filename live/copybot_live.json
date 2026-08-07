@@ -2139,6 +2139,21 @@
  ],
  "missed": [
   {
+   "ts": 1786063502,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "53812289218965842163370625485093046804125242126283385267078097747938545122586",
+   "cond": "0x81c49fcaac8e32fd0fc87e108f89493cbb961d3c0fdd872fed515d0693f5322a",
+   "title": "Will Andy Ogles be the TN-05 Republican nominee?",
+   "outcome": "Yes",
+   "price": 0.5051,
+   "stake": 5.05,
+   "reason": "maker bid unfilled (60s)",
+   "status": "lost",
+   "pnl": -5.12,
+   "settled": 1786092007,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1786043456,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "74457541582800364997994635987661292481282387447685228185311068172440500018333",
@@ -2164,21 +2179,6 @@
    "price": 0.6365,
    "stake": 48.66,
    "reason": "maker bid unfilled (119s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1786063502,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "53812289218965842163370625485093046804125242126283385267078097747938545122586",
-   "cond": "0x81c49fcaac8e32fd0fc87e108f89493cbb961d3c0fdd872fed515d0693f5322a",
-   "title": "Will Andy Ogles be the TN-05 Republican nominee?",
-   "outcome": "Yes",
-   "price": 0.5051,
-   "stake": 5.05,
-   "reason": "maker bid unfilled (60s)",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -3085,7 +3085,7 @@
    "exit_price": 0.9905
   }
  ],
- "missed_pnl": 21239.72,
+ "missed_pnl": 21234.6,
  "last_fill": {
   "ts": 1786064362,
   "side": "BUY",
@@ -3162,7 +3162,7 @@
    "open_cost": 1210.42,
    "open_n": 19,
    "miss_n": 51,
-   "miss_pnl": -572.61,
+   "miss_pnl": -577.73,
    "last_ts": 1786064354
   },
   "JuiceFarm": {
@@ -3196,5 +3196,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786073382
+ "updated": 1786092007
 }
