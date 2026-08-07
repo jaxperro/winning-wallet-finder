@@ -1,6 +1,6 @@
 {
- "computed_at": 1785978668,
- "as_of": 1785974400,
+ "computed_at": 1786138483,
+ "as_of": 1786060800,
  "method": "maker_lean.screen_asof (z>=2.5, >=6 resolved maker bets, pnl>0) on orders_matched strictly before as_of",
  "frozen_params": {
   "lean_usd": [
