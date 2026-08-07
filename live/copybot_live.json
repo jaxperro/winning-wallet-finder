@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.76,
+ "stake": 48.94,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 741.67,
- "deployed": 1696.2,
+ "cash": 799.19,
+ "deployed": 1647.78,
  "reserve": 0.0,
- "realized": 1437.84,
+ "realized": 1446.94,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 33,
- "fees_paid": 465.81,
+ "open_count": 32,
+ "fees_paid": 465.98,
  "fee_rate": 0.03,
  "lag": {
   "n": 409,
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "60736604095974956194543682313156464544142668961532964567135396949190081432607",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "US x Iran Effective Ceasefire by August 14?",
+   "their_price": 0.7554,
+   "my_price": 0.7554,
+   "slippage_pct": 0.0,
+   "lag_s": 8.1,
+   "shares": 64.11,
+   "cost": 48.43,
+   "fee": 0.36,
+   "opened": 1786040027,
+   "status": "closed",
+   "exit_price": 0.8973,
+   "pnl": 8.74,
+   "settled": 1786141601,
+   "end_ts": 1786665600,
+   "sold_shares": 64.11,
+   "sold_proceeds": 57.53
+  },
   {
    "token": "106115320143789078209815024545651655998344368776988969384790307418401251093243",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -191,26 +213,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1786752000
-  },
-  {
-   "token": "60736604095974956194543682313156464544142668961532964567135396949190081432607",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "US x Iran Effective Ceasefire by August 14?",
-   "their_price": 0.7554,
-   "my_price": 0.7554,
-   "slippage_pct": 0.0,
-   "lag_s": 8.1,
-   "shares": 64.11,
-   "cost": 48.43,
-   "fee": 0.36,
-   "opened": 1786040027,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786665600
   },
   {
    "token": "8310650677069487821478025416478130051168635736368290554555541536659374960027",
@@ -3093,12 +3095,12 @@
  ],
  "missed_pnl": 21217.04,
  "last_fill": {
-  "ts": 1786129146,
-  "side": "BUY",
-  "price": 0.4672,
-  "shares": 104.13,
-  "title": "LoL: Team Heretics vs Fnatic (BO3) - LEC Regular Season",
-  "outcome": "Fnatic"
+  "ts": 1786141600,
+  "side": "SELL",
+  "price": 0.9,
+  "shares": 64.11,
+  "title": "US x Iran Effective Ceasefire by August 14?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3162,14 +3164,14 @@
    "last_ts": 1786129145
   },
   "BikesAreTheBikes": {
-   "realized": 47.99,
-   "n": 22,
+   "realized": 56.73,
+   "n": 23,
    "wins": 3,
-   "open_cost": 1210.42,
-   "open_n": 19,
+   "open_cost": 1161.99,
+   "open_n": 18,
    "miss_n": 52,
    "miss_pnl": -662.54,
-   "last_ts": 1786064354
+   "last_ts": 1786141601
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3202,5 +3204,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786135711
+ "updated": 1786141601
 }
