@@ -2139,6 +2139,22 @@
  ],
  "missed": [
   {
+   "ts": 1785423436,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "87150316911747710389398782447337377964271008938887702894316010075241429634797",
+   "cond": "0x86a2515d1df361ecd588ca8705c6eb83567cc9fbe907780c5d5d470877c1ce0c",
+   "title": "Will the next Google Gemini Pro model be released by August 14, 2026?",
+   "outcome": "No",
+   "price": 0.75,
+   "stake": 54.4,
+   "reason": "no ask side on the book at copy time",
+   "status": "sold",
+   "pnl": -35.62,
+   "settled": 1786106384,
+   "name": "BikesAreTheBikes",
+   "exit_price": 0.2704
+  },
+  {
    "ts": 1786094789,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "38952357974068357896293012176440716894628591320948514343279282400674861252347",
@@ -3068,25 +3084,9 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1785584907,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "10286659768913348993358470598849242742860975803412404099275992956393149144886",
-   "cond": "0x98f962ca4a21a47b73c8a914d08f224be31bc6dbdc609b3f0edd9654bbc802a1",
-   "title": "Israel x Iran ceasefire continues through August 1?",
-   "outcome": "Yes",
-   "price": 0.87,
-   "stake": 116.52,
-   "reason": "no ask side on the book at copy time",
-   "status": "sold",
-   "pnl": 5.31,
-   "settled": 1785604713,
-   "name": "BikesAreTheBikes",
-   "exit_price": 0.9153
   }
  ],
- "missed_pnl": 21157.97,
+ "missed_pnl": 21122.35,
  "last_fill": {
   "ts": 1786064362,
   "side": "BUY",
@@ -3163,7 +3163,7 @@
    "open_cost": 1210.42,
    "open_n": 19,
    "miss_n": 51,
-   "miss_pnl": -626.92,
+   "miss_pnl": -662.54,
    "last_ts": 1786064354
   },
   "JuiceFarm": {
@@ -3197,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786101328
+ "updated": 1786106390
 }

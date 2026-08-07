@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786101328,
+ "updated": 1786106390,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.3,
@@ -69,7 +69,7 @@
    "open_cost": 1210.42,
    "open_n": 19,
    "miss_n": 51,
-   "miss_pnl": -626.92,
+   "miss_pnl": -662.54,
    "last_ts": 1786064354
   },
   "JuiceFarm": {
@@ -7428,6 +7428,22 @@
  ],
  "missed": [
   {
+   "ts": 1785423436,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "87150316911747710389398782447337377964271008938887702894316010075241429634797",
+   "cond": "0x86a2515d1df361ecd588ca8705c6eb83567cc9fbe907780c5d5d470877c1ce0c",
+   "title": "Will the next Google Gemini Pro model be released by August 14, 2026?",
+   "outcome": "No",
+   "price": 0.75,
+   "stake": 54.4,
+   "reason": "no ask side on the book at copy time",
+   "status": "sold",
+   "pnl": -35.62,
+   "settled": 1786106384,
+   "name": "BikesAreTheBikes",
+   "exit_price": 0.2704
+  },
+  {
    "ts": 1786094789,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "38952357974068357896293012176440716894628591320948514343279282400674861252347",
@@ -8912,21 +8928,6 @@
    "settled": 1785428238,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1785423436,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "87150316911747710389398782447337377964271008938887702894316010075241429634797",
-   "cond": "0x86a2515d1df361ecd588ca8705c6eb83567cc9fbe907780c5d5d470877c1ce0c",
-   "title": "Will the next Google Gemini Pro model be released by August 14, 2026?",
-   "outcome": "No",
-   "price": 0.75,
-   "stake": 54.4,
-   "reason": "no ask side on the book at copy time",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1785423043,
