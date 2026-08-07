@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786129621,
+ "updated": 1786131512,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.3,
@@ -8,7 +8,7 @@
    "wins": 36,
    "open_cost": 744.56,
    "open_n": 15,
-   "miss_n": 148,
+   "miss_n": 149,
    "miss_pnl": 113248.03,
    "last_ts": 1786109668
   },
@@ -7467,6 +7467,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786131503,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "6357272102649682784864726779373165758763355455310114948463912031131771819143",
+   "cond": "0xa5b0fb083c0d7fddda00ce4ceb290039d88faf88482b98b4f34bf546e9342c12",
+   "title": "Meta (META) Up or Down on August 7?",
+   "outcome": "Up",
+   "price": 0.8867,
+   "stake": 33.78,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1786113047,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

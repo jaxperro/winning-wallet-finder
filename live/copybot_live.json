@@ -2139,6 +2139,21 @@
  ],
  "missed": [
   {
+   "ts": 1786131503,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "6357272102649682784864726779373165758763355455310114948463912031131771819143",
+   "cond": "0xa5b0fb083c0d7fddda00ce4ceb290039d88faf88482b98b4f34bf546e9342c12",
+   "title": "Meta (META) Up or Down on August 7?",
+   "outcome": "Up",
+   "price": 0.8867,
+   "stake": 33.78,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1786113047,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "23515221700905694854900888621593248886654890374386134630990707970966819867940",
@@ -3071,24 +3086,9 @@
    "settled": 1785612413,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1785611745,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "97308898246544661993978659530768075063335593853601089388728293522650950988709",
-   "cond": "0x88a19761fa049ae36da8a403464db9f356a7ea7d0163415052ed748bf72a20bf",
-   "title": "Puffpaw FDV above $400M one day after launch?",
-   "outcome": "No",
-   "price": 0.781,
-   "stake": 41.06,
-   "reason": "thin book ($1 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 21209.74,
+ "missed_pnl": 21208.21,
  "last_fill": {
   "ts": 1786129146,
   "side": "BUY",
@@ -3104,7 +3104,7 @@
    "wins": 36,
    "open_cost": 744.56,
    "open_n": 15,
-   "miss_n": 148,
+   "miss_n": 149,
    "miss_pnl": 113248.03,
    "last_ts": 1786109668
   },
@@ -3199,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786129621
+ "updated": 1786131512
 }
