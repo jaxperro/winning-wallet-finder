@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.94,
+ "stake": 47.97,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 799.19,
- "deployed": 1647.78,
+ "deployed": 1599.13,
  "reserve": 0.0,
- "realized": 1446.94,
+ "realized": 1398.29,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 32,
+ "open_count": 31,
  "fees_paid": 465.98,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "71877431772881692404314318981764548881152635985584226603729882292372121391484",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Fnatic",
+   "title": "LoL: Team Heretics vs Fnatic (BO3) - LEC Regular Season",
+   "their_price": 0.4672,
+   "my_price": 0.4672,
+   "slippage_pct": 0.0,
+   "lag_s": 1.0,
+   "shares": 104.13,
+   "cost": 48.65,
+   "fee": 0.78,
+   "opened": 1786129145,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -49.43,
+   "settled": 1786144284,
+   "end_ts": 1786060800
+  },
   {
    "token": "60736604095974956194543682313156464544142668961532964567135396949190081432607",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -110,26 +130,6 @@
    "exit_price": 1.0,
    "pnl": 3.56,
    "settled": 1786134042,
-   "end_ts": 1786060800
-  },
-  {
-   "token": "71877431772881692404314318981764548881152635985584226603729882292372121391484",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Fnatic",
-   "title": "LoL: Team Heretics vs Fnatic (BO3) - LEC Regular Season",
-   "their_price": 0.4672,
-   "my_price": 0.4672,
-   "slippage_pct": 0.0,
-   "lag_s": 1.0,
-   "shares": 104.13,
-   "cost": 48.65,
-   "fee": 0.78,
-   "opened": 1786129145,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
    "end_ts": 1786060800
   },
   {
@@ -3154,14 +3154,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 12.71,
-   "n": 49,
+   "realized": -36.72,
+   "n": 50,
    "wins": 0,
-   "open_cost": 48.65,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 10,
    "miss_pnl": -470.85,
-   "last_ts": 1786129145
+   "last_ts": 1786144284
   },
   "BikesAreTheBikes": {
    "realized": 56.73,
@@ -3204,5 +3204,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786141601
+ "updated": 1786144289
 }
