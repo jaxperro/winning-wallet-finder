@@ -2148,9 +2148,24 @@
    "price": 0.8867,
    "stake": 33.78,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "won",
+   "pnl": 4.2,
+   "settled": 1786134294,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1785953953,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "23107913951671005991985539426993172792762385608856370611599765901862020627379",
+   "cond": "0x6d09979202ab1494303d4a857907dcbde95e902afeca4ae7f19f8e7a494f55a3",
+   "title": "Will South Korea ETF (EWY) hit (LOW) $151 Week of August 3 2026?",
+   "outcome": "No",
+   "price": 0.8,
+   "stake": 34.83,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 8.5,
+   "settled": 1786134293,
    "name": "0xbadaf319"
   },
   {
@@ -2445,21 +2460,6 @@
    "outcome": "Yes",
    "price": 0.4157,
    "stake": 34.27,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785953953,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "23107913951671005991985539426993172792762385608856370611599765901862020627379",
-   "cond": "0x6d09979202ab1494303d4a857907dcbde95e902afeca4ae7f19f8e7a494f55a3",
-   "title": "Will South Korea ETF (EWY) hit (LOW) $151 Week of August 3 2026?",
-   "outcome": "No",
-   "price": 0.8,
-   "stake": 34.83,
    "reason": "not copied in the detection window (reconciled)",
    "status": "open",
    "pnl": null,
@@ -3088,7 +3088,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 21208.21,
+ "missed_pnl": 21220.91,
  "last_fill": {
   "ts": 1786129146,
   "side": "BUY",
@@ -3105,7 +3105,7 @@
    "open_cost": 661.67,
    "open_n": 13,
    "miss_n": 149,
-   "miss_pnl": 113248.03,
+   "miss_pnl": 113260.73,
    "last_ts": 1786134084
   },
   "gkmgkldfmg": {
@@ -3199,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786134090
+ "updated": 1786134303
 }
