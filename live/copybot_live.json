@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 718.36,
- "deployed": 1714.08,
+ "cash": 701.91,
+ "deployed": 1730.45,
  "reserve": 0.0,
- "realized": 1432.41,
+ "realized": 1432.33,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 33,
- "fees_paid": 464.96,
+ "open_count": 34,
+ "fees_paid": 465.03,
  "fee_rate": 0.03,
  "lag": {
-  "n": 407,
-  "n24": 3,
+  "n": 408,
+  "n24": 4,
   "basis": "24h",
-  "avg_s": 8.1,
+  "avg_s": 7.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "23419569171744003081075633749696226931585310684198313465939745712314121846204",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will SpaceX (SPCX) hit (LOW) $85 in August?",
+   "their_price": 0.85,
+   "my_price": 0.85,
+   "slippage_pct": 0.0,
+   "lag_s": 7.6,
+   "shares": 19.26,
+   "cost": 16.37,
+   "fee": 0.07,
+   "opened": 1786109668,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800
+  },
   {
    "token": "6333843735155285450143276508143481064003286679791924447055152610295680774877",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2115,26 +2135,6 @@
    "pnl": -145.09,
    "settled": 1785338548,
    "end_ts": 1785283200
-  },
-  {
-   "token": "44268329315636111419901094380165521911713439651558819204937076716198280335678",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Top Esports",
-   "title": "LoL: Top Esports vs Anyone's Legend - Game 1 Winner",
-   "their_price": 0.44,
-   "my_price": 0.44,
-   "slippage_pct": 0.0,
-   "lag_s": 3.1,
-   "shares": 322.0,
-   "cost": 141.68,
-   "fee": 2.38,
-   "opened": 1785316362,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -144.06,
-   "settled": 1785336814,
-   "end_ts": 1785283200
   }
  ],
  "missed": [
@@ -3088,11 +3088,11 @@
  ],
  "missed_pnl": 21122.35,
  "last_fill": {
-  "ts": 1786064362,
+  "ts": 1786109675,
   "side": "BUY",
-  "price": 0.65,
-  "shares": 74.85,
-  "title": "Will the total domestic gross for The Odyssey be between 530",
+  "price": 0.85,
+  "shares": 19.26,
+  "title": "Will SpaceX (SPCX) hit (LOW) $85 in August?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3100,11 +3100,11 @@
    "realized": 542.3,
    "n": 102,
    "wins": 36,
-   "open_cost": 728.19,
-   "open_n": 14,
+   "open_cost": 744.56,
+   "open_n": 15,
    "miss_n": 148,
    "miss_pnl": 113207.71,
-   "last_ts": 1785961805
+   "last_ts": 1786109668
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3197,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786106390
+ "updated": 1786109678
 }
