@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786093892,
+ "updated": 1786094797,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.3,
@@ -8,7 +8,7 @@
    "wins": 36,
    "open_cost": 728.19,
    "open_n": 14,
-   "miss_n": 147,
+   "miss_n": 148,
    "miss_pnl": 113207.71,
    "last_ts": 1785961805
   },
@@ -7427,6 +7427,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786094789,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "38952357974068357896293012176440716894628591320948514343279282400674861252347",
+   "cond": "0x31c7f076e507e5bf5691bca1e66f620b0bfc16e001242fc638014c9656767f02",
+   "title": "Will the 10-year Treasury yield dip below 3.0% before 2027?",
+   "outcome": "No",
+   "price": 0.95,
+   "stake": 10.63,
+   "reason": "maker bid unfilled (117s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1786063562,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

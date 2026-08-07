@@ -2139,6 +2139,21 @@
  ],
  "missed": [
   {
+   "ts": 1786094789,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "38952357974068357896293012176440716894628591320948514343279282400674861252347",
+   "cond": "0x31c7f076e507e5bf5691bca1e66f620b0bfc16e001242fc638014c9656767f02",
+   "title": "Will the 10-year Treasury yield dip below 3.0% before 2027?",
+   "outcome": "No",
+   "price": 0.95,
+   "stake": 10.63,
+   "reason": "maker bid unfilled (117s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1786063562,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "87970647543236439083440944769400298504759134074324143770349947929248763079016",
@@ -3069,25 +3084,9 @@
    "settled": 1785604713,
    "name": "BikesAreTheBikes",
    "exit_price": 0.9153
-  },
-  {
-   "ts": 1785567342,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "43171108223683792926229116193941513170619352156926725221875963255678260552099",
-   "cond": "0x6d241c554cf546599063b5b87c12c5c9c569f7f9e4828cf349c3e7ea3e73f1d1",
-   "title": "Will Bitcoin dip to $40,000 in August?",
-   "outcome": "No",
-   "price": 0.93,
-   "stake": 57.22,
-   "reason": "maker bid unfilled (96s)",
-   "status": "sold",
-   "pnl": 3.58,
-   "settled": 1785596601,
-   "name": "0xbadaf319",
-   "exit_price": 0.9905
   }
  ],
- "missed_pnl": 21185.41,
+ "missed_pnl": 21157.97,
  "last_fill": {
   "ts": 1786064362,
   "side": "BUY",
@@ -3103,7 +3102,7 @@
    "wins": 36,
    "open_cost": 728.19,
    "open_n": 14,
-   "miss_n": 147,
+   "miss_n": 148,
    "miss_pnl": 113207.71,
    "last_ts": 1785961805
   },
@@ -3198,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786093892
+ "updated": 1786094797
 }
