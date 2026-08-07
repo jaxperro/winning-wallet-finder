@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786063569,
+ "updated": 1786064396,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 542.3,
@@ -66,11 +66,11 @@
    "realized": 47.99,
    "n": 22,
    "wins": 3,
-   "open_cost": 1161.77,
-   "open_n": 18,
+   "open_cost": 1210.42,
+   "open_n": 19,
    "miss_n": 51,
    "miss_pnl": -572.61,
-   "last_ts": 1786061713
+   "last_ts": 1786064354
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "6333843735155285450143276508143481064003286679791924447055152610295680774877",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will the total domestic gross for The Odyssey be between 530m and 550m by August 31?",
+   "their_price": 0.65,
+   "my_price": 0.65,
+   "slippage_pct": 0.0,
+   "lag_s": 8.6,
+   "shares": 74.85,
+   "cost": 48.65,
+   "fee": 0.5109,
+   "opened": 1786064354,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "87970647543236439083440944769400298504759134074324143770349947929248763079016",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
