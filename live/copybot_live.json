@@ -2139,6 +2139,21 @@
  ],
  "missed": [
   {
+   "ts": 1786043456,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "74457541582800364997994635987661292481282387447685228185311068172440500018333",
+   "cond": "0xbedd1ed681f1876cda3c3421ac07a4e2d39a7d840fceeb31317958d6e40c7246",
+   "title": "FC Thun vs. KF V\u00edkingur: KF V\u00edkingur O/U 3.5 Corners",
+   "outcome": "Under",
+   "price": 0.01,
+   "stake": 48.41,
+   "reason": "thin book ($5 within 5c < $50)",
+   "status": "lost",
+   "pnl": -49.85,
+   "settled": 1786067870,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1786063562,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "87970647543236439083440944769400298504759134074324143770349947929248763079016",
@@ -2198,21 +2213,6 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1786043456,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "74457541582800364997994635987661292481282387447685228185311068172440500018333",
-   "cond": "0xbedd1ed681f1876cda3c3421ac07a4e2d39a7d840fceeb31317958d6e40c7246",
-   "title": "FC Thun vs. KF V\u00edkingur: KF V\u00edkingur O/U 3.5 Corners",
-   "outcome": "Under",
-   "price": 0.01,
-   "stake": 48.41,
-   "reason": "thin book ($5 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
   },
   {
    "ts": 1785934475,
@@ -3084,7 +3084,7 @@
    "exit_price": 0.9905
   }
  ],
- "missed_pnl": 21289.57,
+ "missed_pnl": 21239.72,
  "last_fill": {
   "ts": 1786064362,
   "side": "BUY",
@@ -3131,7 +3131,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 12,
-   "miss_pnl": 412.76,
+   "miss_pnl": 362.91,
    "last_ts": 1785925830
   },
   "LSB1": {
@@ -3195,5 +3195,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786064396
+ "updated": 1786067871
 }
