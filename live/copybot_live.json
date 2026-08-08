@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.97,
+ "stake": 47.96,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 905.12,
- "deployed": 1493.22,
+ "cash": 856.87,
+ "deployed": 1541.18,
  "reserve": 0.0,
- "realized": 1398.31,
+ "realized": 1398.02,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 29,
- "fees_paid": 465.98,
+ "open_count": 30,
+ "fees_paid": 466.27,
  "fee_rate": 0.03,
  "lag": {
-  "n": 409,
-  "n24": 2,
+  "n": 410,
+  "n24": 3,
   "basis": "24h",
-  "avg_s": 4.3,
+  "avg_s": 2.3,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "29886341249261328795182573383036530504170574765280862983740336186729016438291",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Bitcoin be between $66,000 and $68,000 on August 9?",
+   "their_price": 0.797,
+   "my_price": 0.797,
+   "slippage_pct": 0.0,
+   "lag_s": 2.3,
+   "shares": 60.18,
+   "cost": 47.96,
+   "fee": 0.29,
+   "opened": 1786177658,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786233600
+  },
   {
    "token": "87823307068114498763935325850531429658457985750942226626931639924771886967405",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2115,31 +2135,24 @@
    "end_ts": 1785283200,
    "sold_shares": 72.87,
    "sold_proceeds": 70.62
-  },
-  {
-   "token": "9383991600622724404882999893729515690106662764511288750902146955396820283685",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Bitcoin above 64,000 on July 29, 12PM ET?",
-   "their_price": 0.85,
-   "my_price": 0.85,
-   "slippage_pct": 0.0,
-   "lag_s": 1.3,
-   "shares": 24.87,
-   "cost": 21.14,
-   "fee": 0.1,
-   "opened": 1785340545,
-   "status": "closed",
-   "exit_price": 0.9768,
-   "pnl": 3.06,
-   "settled": 1785340711,
-   "end_ts": 1785283200,
-   "sold_shares": 24.87,
-   "sold_proceeds": 24.29
   }
  ],
  "missed": [
+  {
+   "ts": 1786177659,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "29886341249261328795182573383036530504170574765280862983740336186729016438291",
+   "cond": "0xb5b46d8e1140505b134c99cdbd7f5df71c4784cf630e7206e09d691d9fc0b0bb",
+   "title": "Will the price of Bitcoin be between $66,000 and $68,000 on August 9?",
+   "outcome": "No",
+   "price": 0.77,
+   "stake": 47.97,
+   "reason": "thin book ($14 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1786170931,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -3075,43 +3088,27 @@
    "settled": 1785646967,
    "name": "0xbadaf319",
    "exit_price": 0.6412
-  },
-  {
-   "ts": 1785632960,
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "token": "100624493784742066196172882799389607658238738180944134780099178110174173337292",
-   "cond": "0x9046deabbb7238f459ebd73a7c09ae384e28846cb21d92988cea3fc076986e24",
-   "title": "Bitcoin Up or Down - August 1, 9:00PM-9:15PM ET",
-   "outcome": "Up",
-   "price": 0.894,
-   "stake": 56.05,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "won",
-   "pnl": 6.47,
-   "settled": 1785633775,
-   "name": "1kto1m",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 21114.76,
+ "missed_pnl": 21112.14,
  "last_fill": {
-  "ts": 1786141600,
-  "side": "SELL",
-  "price": 0.9,
-  "shares": 64.11,
-  "title": "US x Iran Effective Ceasefire by August 14?",
-  "outcome": "Yes"
+  "ts": 1786177660,
+  "side": "BUY",
+  "price": 0.797,
+  "shares": 60.18,
+  "title": "Will the price of Bitcoin be between $66,000 and $68,000 on ",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 548.42,
    "n": 104,
    "wins": 38,
-   "open_cost": 661.67,
-   "open_n": 13,
-   "miss_n": 150,
+   "open_cost": 709.63,
+   "open_n": 14,
+   "miss_n": 151,
    "miss_pnl": 113257.04,
-   "last_ts": 1786134084
+   "last_ts": 1786177658
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3204,5 +3201,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786172657
+ "updated": 1786177660
 }
