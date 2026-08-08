@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786213197,
+ "updated": 1786214077,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 558.07,
@@ -9,7 +9,7 @@
    "open_cost": 730.59,
    "open_n": 15,
    "miss_n": 153,
-   "miss_pnl": 113264.12,
+   "miss_pnl": 113269.47,
    "last_ts": 1786213197
   },
   "gkmgkldfmg": {
@@ -7576,6 +7576,22 @@
  ],
  "missed": [
   {
+   "ts": 1786177659,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "29886341249261328795182573383036530504170574765280862983740336186729016438291",
+   "cond": "0xb5b46d8e1140505b134c99cdbd7f5df71c4784cf630e7206e09d691d9fc0b0bb",
+   "title": "Will the price of Bitcoin be between $66,000 and $68,000 on August 9?",
+   "outcome": "No",
+   "price": 0.77,
+   "stake": 47.97,
+   "reason": "thin book ($14 within 5c < $50)",
+   "status": "sold",
+   "pnl": 5.35,
+   "settled": 1786214076,
+   "name": "0xbadaf319",
+   "exit_price": 0.8648
+  },
+  {
    "ts": 1786194716,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "2829852299537035253430283542362459353409117273749772092993076006310052192682",
@@ -7616,21 +7632,6 @@
    "price": 0.708,
    "stake": 47.96,
    "reason": "thin book ($37 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1786177659,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "29886341249261328795182573383036530504170574765280862983740336186729016438291",
-   "cond": "0xb5b46d8e1140505b134c99cdbd7f5df71c4784cf630e7206e09d691d9fc0b0bb",
-   "title": "Will the price of Bitcoin be between $66,000 and $68,000 on August 9?",
-   "outcome": "No",
-   "price": 0.77,
-   "stake": 47.97,
-   "reason": "thin book ($14 within 5c < $50)",
    "status": "open",
    "pnl": null,
    "settled": null,
