@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.99,
+ "stake": 48.05,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 723.2,
- "deployed": 1676.32,
+ "cash": 740.32,
+ "deployed": 1662.17,
  "reserve": 0.0,
- "realized": 1399.49,
+ "realized": 1402.45,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 34,
- "fees_paid": 468.58,
+ "fees_paid": 468.6,
  "fee_rate": 0.03,
  "lag": {
   "n": 414,
@@ -151,8 +151,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1786233600,
-   "sold_shares": 11.58,
-   "sold_proceeds": 10.96
+   "sold_shares": 29.34,
+   "sold_proceeds": 28.08
   },
   {
    "token": "87823307068114498763935325850531429658457985750942226626931639924771886967405",
@@ -3089,12 +3089,12 @@
  ],
  "missed_pnl": 21028.14,
  "last_fill": {
-  "ts": 1786209687,
+  "ts": 1786212844,
   "side": "SELL",
-  "price": 0.94,
-  "shares": 10.35,
-  "title": "Iran successfully targets shipping by September 30, 2026?",
-  "outcome": "Yes"
+  "price": 0.965,
+  "shares": 6.77,
+  "title": "Will the price of Bitcoin be between $66,000 and $68,000 on ",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3198,5 +3198,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786209687
+ "updated": 1786212844
 }
