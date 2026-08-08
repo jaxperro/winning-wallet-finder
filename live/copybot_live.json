@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 923.28,
- "deployed": 1621.39,
+ "cash": 872.2,
+ "deployed": 1672.28,
  "reserve": 0.0,
- "realized": 1544.64,
+ "realized": 1544.44,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 34,
- "fees_paid": 469.22,
+ "open_count": 35,
+ "fees_paid": 469.42,
  "fee_rate": 0.03,
  "lag": {
-  "n": 415,
-  "n24": 6,
+  "n": 416,
+  "n24": 7,
   "basis": "24h",
-  "avg_s": 2.0,
+  "avg_s": 2.3,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "81687261828485923370301293448268747277317716692301661215171974481135044780719",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Karmine Corp",
+   "title": "LoL: Fnatic vs Karmine Corp (BO3) - LEC Regular Season",
+   "their_price": 0.87,
+   "my_price": 0.87,
+   "slippage_pct": 0.0,
+   "lag_s": 16.4,
+   "shares": 58.49,
+   "cost": 50.89,
+   "fee": 0.2,
+   "opened": 1786224364,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786233600
+  },
   {
    "token": "28246806272807385475359212337668662438574077035888650625591761821033218424548",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2109,28 +2129,6 @@
    "end_ts": 1785283200,
    "sold_shares": 50.35,
    "sold_proceeds": 48.25
-  },
-  {
-   "token": "99766335537853682233080165920322263659372534609770854295198969461406895970272",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Down",
-   "title": "Apple (AAPL) Up or Down on July 29?",
-   "their_price": 0.7392,
-   "my_price": 0.7362,
-   "slippage_pct": 0.0,
-   "lag_s": 6.4,
-   "shares": 71.27,
-   "cost": 52.47,
-   "fee": 0.42,
-   "opened": 1785354641,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": -10.61,
-   "settled": 1785363165,
-   "end_ts": 1785283200,
-   "sold_shares": 42.27,
-   "sold_proceeds": 42.27
   }
  ],
  "missed": [
@@ -3088,12 +3086,12 @@
  ],
  "missed_pnl": 21033.49,
  "last_fill": {
-  "ts": 1786224170,
+  "ts": 1786224380,
   "side": "BUY",
-  "price": 0.77,
-  "shares": 66.1,
-  "title": "LoL: ThunderTalk Gaming vs Top Esports (BO3) - LPL Group Asc",
-  "outcome": "Top Esports"
+  "price": 0.87,
+  "shares": 58.49,
+  "title": "LoL: Fnatic vs Karmine Corp (BO3) - LEC Regular Season",
+  "outcome": "Karmine Corp"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3170,11 +3168,11 @@
    "realized": -217.7,
    "n": 8,
    "wins": 3,
-   "open_cost": 50.9,
-   "open_n": 1,
+   "open_cost": 101.79,
+   "open_n": 2,
    "miss_n": 4,
    "miss_pnl": 37.21,
-   "last_ts": 1786224151
+   "last_ts": 1786224364
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3197,5 +3195,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786224206
+ "updated": 1786224398
 }
