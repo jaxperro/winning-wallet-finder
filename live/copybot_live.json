@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.05,
+ "stake": 48.15,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 740.32,
- "deployed": 1662.17,
+ "cash": 770.14,
+ "deployed": 1637.58,
  "reserve": 0.0,
- "realized": 1402.45,
+ "realized": 1407.69,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 34,
- "fees_paid": 468.6,
+ "open_count": 33,
+ "fees_paid": 468.63,
  "fee_rate": 0.03,
  "lag": {
   "n": 414,
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "29886341249261328795182573383036530504170574765280862983740336186729016438291",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Bitcoin be between $66,000 and $68,000 on August 9?",
+   "their_price": 0.797,
+   "my_price": 0.797,
+   "slippage_pct": 0.0,
+   "lag_s": 2.3,
+   "shares": 60.18,
+   "cost": 47.96,
+   "fee": 0.29,
+   "opened": 1786177658,
+   "status": "closed",
+   "exit_price": 0.9622,
+   "pnl": 9.65,
+   "settled": 1786213197,
+   "end_ts": 1786233600,
+   "sold_shares": 60.17,
+   "sold_proceeds": 57.9
+  },
   {
    "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -131,28 +153,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1786233600
-  },
-  {
-   "token": "29886341249261328795182573383036530504170574765280862983740336186729016438291",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Bitcoin be between $66,000 and $68,000 on August 9?",
-   "their_price": 0.797,
-   "my_price": 0.797,
-   "slippage_pct": 0.0,
-   "lag_s": 2.3,
-   "shares": 60.18,
-   "cost": 47.96,
-   "fee": 0.29,
-   "opened": 1786177658,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786233600,
-   "sold_shares": 29.34,
-   "sold_proceeds": 28.08
   },
   {
    "token": "87823307068114498763935325850531429658457985750942226626931639924771886967405",
@@ -3089,23 +3089,23 @@
  ],
  "missed_pnl": 21028.14,
  "last_fill": {
-  "ts": 1786212844,
+  "ts": 1786213197,
   "side": "SELL",
-  "price": 0.965,
-  "shares": 6.77,
+  "price": 0.968,
+  "shares": 4.53,
   "title": "Will the price of Bitcoin be between $66,000 and $68,000 on ",
   "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 548.42,
-   "n": 104,
+   "realized": 558.07,
+   "n": 105,
    "wins": 38,
-   "open_cost": 778.55,
-   "open_n": 16,
+   "open_cost": 730.59,
+   "open_n": 15,
    "miss_n": 153,
    "miss_pnl": 113264.12,
-   "last_ts": 1786199666
+   "last_ts": 1786213197
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3198,5 +3198,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786212844
+ "updated": 1786213197
 }
