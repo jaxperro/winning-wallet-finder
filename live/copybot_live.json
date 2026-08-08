@@ -2139,6 +2139,21 @@
  ],
  "missed": [
   {
+   "ts": 1786194716,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "2829852299537035253430283542362459353409117273749772092993076006310052192682",
+   "cond": "0xb3a359b0b6027d4fae156051a5f02fb0fdc026b4af4db4fd7269173a31da89c3",
+   "title": "Iran successfully targets shipping by August 16, 2026?",
+   "outcome": "Yes",
+   "price": 0.44,
+   "stake": 8.14,
+   "reason": "maker bid unfilled (109s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1785611745,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "97308898246544661993978659530768075063335593853601089388728293522650950988709",
@@ -3072,24 +3087,9 @@
    "settled": 1785687531,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1785684067,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "23537842165977046370574778086600347274303604738338768967720021180647769610330",
-   "cond": "0x225a5d5900068fcf5c0a9f4dc9cbaf84d492be94c71782fbcea0461cd935048c",
-   "title": "Trump out as President by August 31?",
-   "outcome": "No",
-   "price": 0.989,
-   "stake": 56.67,
-   "reason": "price moved 0.92\u21920.99",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 21092.57,
+ "missed_pnl": 21028.14,
  "last_fill": {
   "ts": 1786194614,
   "side": "BUY",
@@ -3105,7 +3105,7 @@
    "wins": 38,
    "open_cost": 757.62,
    "open_n": 15,
-   "miss_n": 152,
+   "miss_n": 153,
    "miss_pnl": 113264.12,
    "last_ts": 1786194606
   },
@@ -3200,5 +3200,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786194614
+ "updated": 1786194723
 }
