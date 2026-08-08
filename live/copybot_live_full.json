@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1786187075,
+ "updated": 1786194614,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 548.42,
    "n": 104,
    "wins": 38,
-   "open_cost": 709.63,
-   "open_n": 14,
+   "open_cost": 757.62,
+   "open_n": 15,
    "miss_n": 152,
    "miss_pnl": 113264.12,
-   "last_ts": 1786177658
+   "last_ts": 1786194606
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "66611161618038095197921470357471217644766577616624479600534797050825065601256",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Iran successfully targets shipping by August 9, 2026?",
+   "their_price": 0.51,
+   "my_price": 0.51,
+   "slippage_pct": 0.0,
+   "lag_s": 8.3,
+   "shares": 94.1,
+   "cost": 47.99,
+   "fee": 0.7055,
+   "opened": 1786194606,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786233600
+  },
   {
    "token": "29886341249261328795182573383036530504170574765280862983740336186729016438291",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
