@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786196102,
+ "updated": 1786197161,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 548.42,
@@ -66,11 +66,11 @@
    "realized": 55.09,
    "n": 25,
    "wins": 4,
-   "open_cost": 1056.07,
-   "open_n": 16,
+   "open_cost": 1104.05,
+   "open_n": 17,
    "miss_n": 53,
    "miss_pnl": -683.24,
-   "last_ts": 1786169289
+   "last_ts": 1786197152
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "91570590690641088544290660823634625453926632109992583886416794033671791601246",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "US-Iran Hormuz Agreement by August 31?",
+   "their_price": 0.46,
+   "my_price": 0.46,
+   "slippage_pct": 0.0,
+   "lag_s": 1.0,
+   "shares": 104.3,
+   "cost": 47.98,
+   "fee": 0.7772,
+   "opened": 1786197152,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "66611161618038095197921470357471217644766577616624479600534797050825065601256",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
