@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.97,
+ "stake": 47.99,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 713.48,
- "deployed": 1685.12,
+ "cash": 723.2,
+ "deployed": 1676.32,
  "reserve": 0.0,
- "realized": 1398.57,
+ "realized": 1399.49,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 34,
- "fees_paid": 468.56,
+ "fees_paid": 468.58,
  "fee_rate": 0.03,
  "lag": {
   "n": 414,
@@ -89,8 +89,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1790726400,
-   "sold_shares": 13.75,
-   "sold_proceeds": 12.76
+   "sold_shares": 24.1,
+   "sold_proceeds": 22.47
   },
   {
    "token": "91570590690641088544290660823634625453926632109992583886416794033671791601246",
@@ -3089,10 +3089,10 @@
  ],
  "missed_pnl": 21028.14,
  "last_fill": {
-  "ts": 1786205151,
+  "ts": 1786209687,
   "side": "SELL",
-  "price": 0.93,
-  "shares": 13.75,
+  "price": 0.94,
+  "shares": 10.35,
   "title": "Iran successfully targets shipping by September 30, 2026?",
   "outcome": "Yes"
  },
@@ -3198,5 +3198,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786205151
+ "updated": 1786209687
 }
