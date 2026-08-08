@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.96,
+ "stake": 48.0,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 856.87,
- "deployed": 1541.18,
+ "cash": 867.83,
+ "deployed": 1531.95,
  "reserve": 0.0,
- "realized": 1398.02,
+ "realized": 1399.75,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 30,
- "fees_paid": 466.27,
+ "fees_paid": 466.29,
  "fee_rate": 0.03,
  "lag": {
   "n": 410,
@@ -68,7 +68,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1786233600
+   "end_ts": 1786233600,
+   "sold_shares": 11.58,
+   "sold_proceeds": 10.96
   },
   {
    "token": "87823307068114498763935325850531429658457985750942226626931639924771886967405",
@@ -3091,10 +3093,10 @@
  ],
  "missed_pnl": 21085.49,
  "last_fill": {
-  "ts": 1786177660,
-  "side": "BUY",
-  "price": 0.797,
-  "shares": 60.18,
+  "ts": 1786178020,
+  "side": "SELL",
+  "price": 0.947,
+  "shares": 4.91,
   "title": "Will the price of Bitcoin be between $66,000 and $68,000 on ",
   "outcome": "No"
  },
@@ -3200,5 +3202,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786177991
+ "updated": 1786178021
 }
