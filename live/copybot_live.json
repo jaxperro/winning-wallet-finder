@@ -2133,6 +2133,22 @@
  ],
  "missed": [
   {
+   "ts": 1785128135,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "45008911945219735557521805884729456911272112830419157569734797577265875509979",
+   "cond": "0x44a785ee8973526fd587f902739da9579f29b2326a77d0f2040e480ecc6263c7",
+   "title": "Will Predict.fun launch a token by September 30, 2027?",
+   "outcome": "Yes",
+   "price": 0.5548,
+   "stake": 31.16,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 5.86,
+   "settled": 1786232865,
+   "name": "0xbadaf319",
+   "exit_price": 0.6731
+  },
+  {
    "ts": 1786177659,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "29886341249261328795182573383036530504170574765280862983740336186729016438291",
@@ -3066,25 +3082,9 @@
    "settled": 1785691846,
    "name": "BikesAreTheBikes",
    "exit_price": 0.91
-  },
-  {
-   "ts": 1785684971,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "6503729227203238475503335964241924670130495964232872084820616852737731379951",
-   "cond": "0x4fbb76d3dac48e76b80978c0d35b9a4f9d4656fc2cb5284d501a9703f875895c",
-   "title": "Ethereum Up or Down on August 2?",
-   "outcome": "Down",
-   "price": 0.93,
-   "stake": 56.67,
-   "reason": "maker bid unfilled (60s)",
-   "status": "won",
-   "pnl": 4.15,
-   "settled": 1785687531,
-   "name": "0xbadaf319",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 21033.49,
+ "missed_pnl": 21039.35,
  "last_fill": {
   "ts": 1786224380,
   "side": "BUY",
@@ -3101,7 +3101,7 @@
    "open_cost": 730.59,
    "open_n": 15,
    "miss_n": 153,
-   "miss_pnl": 113269.47,
+   "miss_pnl": 113275.33,
    "last_ts": 1786213197
   },
   "gkmgkldfmg": {
@@ -3195,5 +3195,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786224398
+ "updated": 1786232871
 }
