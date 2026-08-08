@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.15,
+ "stake": 48.8,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 770.14,
- "deployed": 1637.58,
+ "cash": 818.04,
+ "deployed": 1621.85,
  "reserve": 0.0,
- "realized": 1407.69,
+ "realized": 1439.86,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 33,
- "fees_paid": 468.63,
+ "fees_paid": 468.69,
  "fee_rate": 0.03,
  "lag": {
   "n": 414,
@@ -3090,11 +3090,11 @@
  ],
  "missed_pnl": 21033.49,
  "last_fill": {
-  "ts": 1786213197,
+  "ts": 1786219257,
   "side": "SELL",
-  "price": 0.968,
-  "shares": 4.53,
-  "title": "Will the price of Bitcoin be between $66,000 and $68,000 on ",
+  "price": 0.96,
+  "shares": 49.95,
+  "title": "Will the average monthly Ethereum gas price hit 25 Gwei befo",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3199,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786215608
+ "updated": 1786219257
 }
