@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.8,
+ "stake": 50.9,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 818.04,
- "deployed": 1621.85,
+ "cash": 974.53,
+ "deployed": 1570.49,
  "reserve": 0.0,
- "realized": 1439.86,
+ "realized": 1544.99,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
  "open_count": 33,
- "fees_paid": 468.69,
+ "fees_paid": 468.87,
  "fee_rate": 0.03,
  "lag": {
   "n": 414,
@@ -3090,10 +3090,10 @@
  ],
  "missed_pnl": 21033.49,
  "last_fill": {
-  "ts": 1786219257,
+  "ts": 1786221119,
   "side": "SELL",
-  "price": 0.96,
-  "shares": 49.95,
+  "price": 0.961,
+  "shares": 29.82,
   "title": "Will the average monthly Ethereum gas price hit 25 Gwei befo",
   "outcome": "No"
  },
@@ -3199,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786219257
+ "updated": 1786221119
 }
