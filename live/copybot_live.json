@@ -2139,6 +2139,21 @@
  ],
  "missed": [
   {
+   "ts": 1786177991,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "20174661506232867894667707134816571263646452665587867099504831699679426769222",
+   "cond": "0x32faa375788686e264fa93c02a0dfe0ace191c2463a1638d979acc028eef767d",
+   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on August 9?",
+   "outcome": "No",
+   "price": 0.708,
+   "stake": 47.96,
+   "reason": "thin book ($37 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1786177659,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "29886341249261328795182573383036530504170574765280862983740336186729016438291",
@@ -3072,25 +3087,9 @@
    "settled": 1785681563,
    "name": "BikesAreTheBikes",
    "exit_price": 0.7809
-  },
-  {
-   "ts": 1785644854,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "78773028590498295371277243725072177227643111430128121386647940889892206666258",
-   "cond": "0x93642e5f0f0731dafb4e683a664d3c0a4022b0d4bc9a09180ed957b97bbf648f",
-   "title": "Will Silver (XAGUSD) hit (LOW) $52 in August?",
-   "outcome": "No",
-   "price": 0.63,
-   "stake": 62.84,
-   "reason": "maker bid unfilled (98s)",
-   "status": "sold",
-   "pnl": -0.27,
-   "settled": 1785646967,
-   "name": "0xbadaf319",
-   "exit_price": 0.6412
   }
  ],
- "missed_pnl": 21112.14,
+ "missed_pnl": 21085.49,
  "last_fill": {
   "ts": 1786177660,
   "side": "BUY",
@@ -3106,7 +3105,7 @@
    "wins": 38,
    "open_cost": 709.63,
    "open_n": 14,
-   "miss_n": 151,
+   "miss_n": 152,
    "miss_pnl": 113257.04,
    "last_ts": 1786177658
   },
@@ -3201,5 +3200,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786177660
+ "updated": 1786177991
 }
