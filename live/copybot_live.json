@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.96,
+ "stake": 47.95,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 749.36,
- "deployed": 1648.85,
+ "cash": 700.73,
+ "deployed": 1696.81,
  "reserve": 0.0,
- "realized": 1398.17,
+ "realized": 1397.5,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 33,
- "fees_paid": 467.87,
+ "open_count": 34,
+ "fees_paid": 468.54,
  "fee_rate": 0.03,
  "lag": {
-  "n": 413,
-  "n24": 5,
+  "n": 414,
+  "n24": 6,
   "basis": "24h",
-  "avg_s": 1.8,
+  "avg_s": 1.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by August 31?",
+   "their_price": 0.533,
+   "my_price": 0.533,
+   "slippage_pct": 0.0,
+   "lag_s": 0.8,
+   "shares": 89.98,
+   "cost": 47.96,
+   "fee": 0.67,
+   "opened": 1786201916,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "72536510430716664691218819418838618454702329583538314310462490939825249228099",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2111,26 +2131,6 @@
    "end_ts": 1788134400,
    "sold_shares": 112.13,
    "sold_proceeds": 110.63
-  },
-  {
-   "token": "114023575411564465664998216295132384015264339083303639055288358207370730671183",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Ethereum be above $1,900 on July 29?",
-   "their_price": 0.78,
-   "my_price": 0.8311,
-   "slippage_pct": 0.0,
-   "lag_s": 42.5,
-   "shares": 138.78,
-   "cost": 115.34,
-   "fee": 0.57,
-   "opened": 1785339080,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 22.88,
-   "settled": 1785352116,
-   "end_ts": 1785283200
   }
  ],
  "missed": [
@@ -3087,12 +3087,12 @@
  ],
  "missed_pnl": 21028.14,
  "last_fill": {
-  "ts": 1786199667,
+  "ts": 1786201916,
   "side": "BUY",
-  "price": 0.85,
-  "shares": 24.62,
-  "title": "Iran successfully targets shipping by September 30, 2026?",
-  "outcome": "Yes"
+  "price": 0.533,
+  "shares": 89.98,
+  "title": "Will the total domestic gross for Spider-Man: Brand New Day ",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3159,11 +3159,11 @@
    "realized": 55.09,
    "n": 25,
    "wins": 4,
-   "open_cost": 1104.05,
-   "open_n": 17,
+   "open_cost": 1152.01,
+   "open_n": 18,
    "miss_n": 53,
    "miss_pnl": -683.24,
-   "last_ts": 1786197152
+   "last_ts": 1786201916
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3196,5 +3196,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786199706
+ "updated": 1786201925
 }

@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786199706,
+ "updated": 1786201925,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 548.42,
@@ -66,11 +66,11 @@
    "realized": 55.09,
    "n": 25,
    "wins": 4,
-   "open_cost": 1104.05,
-   "open_n": 17,
+   "open_cost": 1152.01,
+   "open_n": 18,
    "miss_n": 53,
    "miss_pnl": -683.24,
-   "last_ts": 1786197152
+   "last_ts": 1786201916
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by August 31?",
+   "their_price": 0.533,
+   "my_price": 0.533,
+   "slippage_pct": 0.0,
+   "lag_s": 0.8,
+   "shares": 89.98,
+   "cost": 47.96,
+   "fee": 0.6719,
+   "opened": 1786201916,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "72536510430716664691218819418838618454702329583538314310462490939825249228099",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
