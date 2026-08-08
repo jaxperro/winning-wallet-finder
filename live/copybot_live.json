@@ -2141,6 +2141,21 @@
  ],
  "missed": [
   {
+   "ts": 1786157163,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "69141437687280797909842906522113185821588440341109326905184567797418829651638",
+   "cond": "0xaae4e59f5cf7f7b7ae56e27017925e220af17c69dd3d7e57dffc08f3de988d79",
+   "title": "Will Anduril's valuation hit (HIGH) $125B by December 31?",
+   "outcome": "Yes",
+   "price": 0.47,
+   "stake": 47.97,
+   "reason": "thin book ($38 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1786131503,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "6357272102649682784864726779373165758763355455310114948463912031131771819143",
@@ -3075,25 +3090,9 @@
    "settled": 1785618869,
    "name": "BikesAreTheBikes",
    "exit_price": 0.3757
-  },
-  {
-   "ts": 1784573567,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "83778159848246307298177835560751845581203660912608603239968031176372923069932",
-   "cond": "0xf649be9e9c5ce3df0834e80690ee19f9696db9ee7c4b742b06cd3a84167c8a3d",
-   "title": "Will Lambda's valuation hit (HIGH) $8.5B by July 31?",
-   "outcome": "No",
-   "price": 0.75,
-   "stake": 37.5,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "won",
-   "pnl": 12.22,
-   "settled": 1785612413,
-   "name": "0xbadaf319",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 21217.04,
+ "missed_pnl": 21194.38,
  "last_fill": {
   "ts": 1786141600,
   "side": "SELL",
@@ -3109,7 +3108,7 @@
    "wins": 38,
    "open_cost": 661.67,
    "open_n": 13,
-   "miss_n": 149,
+   "miss_n": 150,
    "miss_pnl": 113256.86,
    "last_ts": 1786134084
   },
@@ -3204,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786150810
+ "updated": 1786157171
 }
