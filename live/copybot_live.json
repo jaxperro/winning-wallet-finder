@@ -2131,6 +2131,21 @@
  ],
  "missed": [
   {
+   "ts": 1786276621,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "78735213477140259179719985437634225008013438052010449207550476177307188383355",
+   "cond": "0xfed2dd1e83691ca08b8bc08d2bed09cb19003730f2be47da6a467ee37df96fbb",
+   "title": "Mojtaba Khamenei seen in public by December 31?",
+   "outcome": "No",
+   "price": 0.4469,
+   "stake": 49.87,
+   "reason": "maker bid unfilled (60s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1786275766,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "87712920673252297509200151045391015262449055764880659907762503287643101055970",
@@ -3064,25 +3079,9 @@
    "settled": 1785743470,
    "name": "BikesAreTheBikes",
    "exit_checked": true
-  },
-  {
-   "ts": 1785671059,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "17391547350755989425804702732311542223226424331639399782496706299760208244671",
-   "cond": "0x563292d4a0e819ca52af928027450cedad7fff7ef7588252b8752c75a035c407",
-   "title": "Will Rocket Lab USA, Inc. (RKLB) hit (HIGH) $80 in August?",
-   "outcome": "No",
-   "price": 0.61,
-   "stake": 5.46,
-   "reason": "maker bid unfilled (75s)",
-   "status": "sold",
-   "pnl": -1.47,
-   "settled": 1785706233,
-   "name": "0xbadaf319",
-   "exit_price": 0.46
   }
  ],
- "missed_pnl": 20555.63,
+ "missed_pnl": 20547.25,
  "last_fill": {
   "ts": 1786275799,
   "side": "BUY",
@@ -3158,7 +3157,7 @@
    "wins": 4,
    "open_cost": 1302.71,
    "open_n": 21,
-   "miss_n": 55,
+   "miss_n": 56,
    "miss_pnl": -683.24,
    "last_ts": 1786275799
   },
@@ -3193,5 +3192,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786275808
+ "updated": 1786276629
 }
