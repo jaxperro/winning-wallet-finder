@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.87,
+ "stake": 48.87,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 669.15,
- "deployed": 1824.46,
+ "deployed": 1774.54,
  "reserve": 0.0,
- "realized": 1493.58,
+ "realized": 1443.66,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 37,
+ "ledger_drift": -0.02,
+ "open_count": 36,
  "fees_paid": 472.37,
  "fee_rate": 0.03,
  "lag": {
@@ -51,6 +51,26 @@
  },
  "bets": [
   {
+   "token": "55988445465443317989518698191518392638991784735715624944906249117088857406975",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "KT Rolster",
+   "title": "LoL: Dplus KIA vs KT Rolster - Game 2 Winner",
+   "their_price": 0.5762,
+   "my_price": 0.5762,
+   "slippage_pct": 0.0,
+   "lag_s": 8.4,
+   "shares": 86.63,
+   "cost": 49.92,
+   "fee": 0.63,
+   "opened": 1786266816,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -50.55,
+   "settled": 1786277532,
+   "end_ts": 1786233600
+  },
+  {
    "token": "106352973084247809978722887479381361784509565887960822996102387300658431649079",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "name": "BikesAreTheBikes",
@@ -89,26 +109,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400
-  },
-  {
-   "token": "55988445465443317989518698191518392638991784735715624944906249117088857406975",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "KT Rolster",
-   "title": "LoL: Dplus KIA vs KT Rolster - Game 2 Winner",
-   "their_price": 0.5762,
-   "my_price": 0.5762,
-   "slippage_pct": 0.0,
-   "lag_s": 8.4,
-   "shares": 86.63,
-   "cost": 49.92,
-   "fee": 0.63,
-   "opened": 1786266816,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786233600
   },
   {
    "token": "66611161618038095197921470357471217644766577616624479600534797050825065601256",
@@ -2131,6 +2131,21 @@
  ],
  "missed": [
   {
+   "ts": 1786277528,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "11840728643633323051076845974892673823676187986380364152051490212323317288352",
+   "cond": "0x690f95ba728de5aed3fb861db575fb0c756baa37db50b2872bd5b857d3e74793",
+   "title": "LoL: BNK FEARX vs Kiwoom DRX - Game 2 Winner",
+   "outcome": "BNK FEARX",
+   "price": 0.83,
+   "stake": 49.87,
+   "reason": "maker bid unfilled (99s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1786277396,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "43180192744264932534137000240241088432530085209515029021308017322422968247012",
@@ -3062,25 +3077,9 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785636848,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "106384382902272259275653733417531627173944931937610707897597239994735553962869",
-   "cond": "0xa055e1cf533c2fcb1f1c89c20c41c8aa25526dcf27c3ff6be69c230fd8898282",
-   "title": "US announces end of Iranian blockade by August 15, 2026?",
-   "outcome": "No",
-   "price": 0.65,
-   "stake": 20.81,
-   "reason": "maker bid unfilled (112s)",
-   "status": "sold",
-   "pnl": -4.35,
-   "settled": 1785744932,
-   "name": "BikesAreTheBikes",
-   "exit_price": 0.5284
   }
  ],
- "missed_pnl": 20622.56,
+ "missed_pnl": 20621.59,
  "last_fill": {
   "ts": 1786275799,
   "side": "BUY",
@@ -3141,14 +3140,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -36.72,
-   "n": 50,
+   "realized": -87.27,
+   "n": 51,
    "wins": 0,
-   "open_cost": 49.92,
-   "open_n": 1,
-   "miss_n": 12,
+   "open_cost": 0.0,
+   "open_n": 0,
+   "miss_n": 13,
    "miss_pnl": -453.58,
-   "last_ts": 1786266816
+   "last_ts": 1786277532
   },
   "BikesAreTheBikes": {
    "realized": 55.09,
@@ -3191,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786277396
+ "updated": 1786277537
 }

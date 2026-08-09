@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786277396,
+ "updated": 1786277537,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 511.34,
@@ -53,14 +53,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -36.72,
-   "n": 50,
+   "realized": -87.27,
+   "n": 51,
    "wins": 0,
-   "open_cost": 49.92,
-   "open_n": 1,
-   "miss_n": 12,
+   "open_cost": 0.0,
+   "open_n": 0,
+   "miss_n": 13,
    "miss_pnl": -453.58,
-   "last_ts": 1786266816
+   "last_ts": 1786277532
   },
   "BikesAreTheBikes": {
    "realized": 55.09,
@@ -105,6 +105,26 @@
  },
  "bets": [
   {
+   "token": "55988445465443317989518698191518392638991784735715624944906249117088857406975",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "KT Rolster",
+   "title": "LoL: Dplus KIA vs KT Rolster - Game 2 Winner",
+   "their_price": 0.5762,
+   "my_price": 0.5762,
+   "slippage_pct": 0.0,
+   "lag_s": 8.4,
+   "shares": 86.63,
+   "cost": 49.92,
+   "fee": 0.6346,
+   "opened": 1786266816,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -50.55,
+   "settled": 1786277532,
+   "end_ts": 1786233600
+  },
+  {
    "token": "106352973084247809978722887479381361784509565887960822996102387300658431649079",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "name": "BikesAreTheBikes",
@@ -143,26 +163,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400
-  },
-  {
-   "token": "55988445465443317989518698191518392638991784735715624944906249117088857406975",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "KT Rolster",
-   "title": "LoL: Dplus KIA vs KT Rolster - Game 2 Winner",
-   "their_price": 0.5762,
-   "my_price": 0.5762,
-   "slippage_pct": 0.0,
-   "lag_s": 8.4,
-   "shares": 86.63,
-   "cost": 49.92,
-   "fee": 0.6346,
-   "opened": 1786266816,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786233600
   },
   {
    "token": "66611161618038095197921470357471217644766577616624479600534797050825065601256",
@@ -7722,6 +7722,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786277528,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "11840728643633323051076845974892673823676187986380364152051490212323317288352",
+   "cond": "0x690f95ba728de5aed3fb861db575fb0c756baa37db50b2872bd5b857d3e74793",
+   "title": "LoL: BNK FEARX vs Kiwoom DRX - Game 2 Winner",
+   "outcome": "BNK FEARX",
+   "price": 0.83,
+   "stake": 49.87,
+   "reason": "maker bid unfilled (99s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
   {
    "ts": 1786277396,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",

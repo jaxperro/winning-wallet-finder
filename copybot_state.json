@@ -1,8 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0x9ef6fc3077b1855a236223a14b237194cf581b08c9f49d8f4b48e571881272ba",
-    "0x73db6fe5590c76b6c013d3bd68e426356a90d73354936b208644410dc3462e0c",
     "0x4d0cec1a81b93352775ebc8f753ace5db5755b36eed472799a161479df773705",
     "0x45691dcedab88c52072fd13597a9a448e28f9f1f72ab490e448d6355ca71a9a7",
     "0x15db1b5e298868442fa5b8890aa275871a3c2cc9ea4347e3a962ee1dfe3bfb52",
@@ -5000,7 +4998,9 @@
     "0x01662f38d2a54af34b4032b5acaab2f7578c498bcc9c3a28b4eb189082fff12e",
     "0x2450fe6c427fc7f0aaeeaa0a96c56f44ada1e91ffcbba81771b9cba220a21249",
     "0x7334e8c19476ede9503aceade3dcabd4b5c3cf6c060bc03ccba65f4f911de8c0",
-    "0x4e4c510a0e0f7b126f93da90cde737860a2b6bfb18e03c75cf12ddc8027d92fa"
+    "0x4e4c510a0e0f7b126f93da90cde737860a2b6bfb18e03c75cf12ddc8027d92fa",
+    "0x9a42e6c7d0584d0902dee64b6e18fffe649e4ecaf76fb4073927562d47b0ce06",
+    "0x532601ba67ad0e70cf254dda643b463d79388cffcc7574b8f40011339ca61fbc"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -8654,7 +8654,8 @@
       "37750384297022766101975087481419817972118887253289052516799854220141684641193": 0.0,
       "63991651071165338300868325282495387357017636962656608775506647054222941185409": 0.0250589999999562,
       "36272270054990828841352991179646268130709029157258563703631989970928609993186": 0.0,
-      "43180192744264932534137000240241088432530085209515029021308017322422968247012": 1500.0
+      "43180192744264932534137000240241088432530085209515029021308017322422968247012": 958.16,
+      "11840728643633323051076845974892673823676187986380364152051490212323317288352": 1000
     },
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": {
       "59855952379545476461266875939089074481171378466995213858930892770855011813551": 10000,
@@ -14584,15 +14585,6 @@
       "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
       "cond": "0x30174f3f46398e37c96a07b45916e01eab9a8a854ecb624ac73a91a8490fd074"
     },
-    "55988445465443317989518698191518392638991784735715624944906249117088857406975": {
-      "shares": 86.63,
-      "cost": 49.920500372857134,
-      "title": "LoL: Dplus KIA vs KT Rolster - Game 2 Winner",
-      "outcome": "KT Rolster",
-      "event": "lol-dk-kt-2026-08-09",
-      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-      "cond": "0xeffdac67e9965c936ab90f26cf925cb24ecbe6811c353d4f147ac1295ec23d0b"
-    },
     "46847307656882602122997465306414904346129309754935831590213955739893205462517": {
       "shares": 99.82,
       "cost": 49.91,
@@ -14856,7 +14848,6 @@
     "28246806272807385475359212337668662438574077035888650625591761821033218424548": "0xbc8d6d2280e60953b0e89a0bd58279691c8fe17bcb0baa3656486e725350e9f3",
     "81687261828485923370301293448268747277317716692301661215171974481135044780719": "0x9fa4edd8e4dce50bb436593e714821566a96132c77832043d6cc269a1720f473",
     "88752597571738831347942513760817776151125290177540731190810686943474863159303": "0x30174f3f46398e37c96a07b45916e01eab9a8a854ecb624ac73a91a8490fd074",
-    "55988445465443317989518698191518392638991784735715624944906249117088857406975": "0xeffdac67e9965c936ab90f26cf925cb24ecbe6811c353d4f147ac1295ec23d0b",
     "46847307656882602122997465306414904346129309754935831590213955739893205462517": "0xbf1aa15d0707bc6425a3d9a392910870904464188d56fee0ddce49418413db9e",
     "106352973084247809978722887479381361784509565887960822996102387300658431649079": "0xfed2dd1e83691ca08b8bc08d2bed09cb19003730f2be47da6a467ee37df96fbb"
   },
@@ -21881,10 +21872,10 @@
       "cost": 49.92,
       "fee": 0.6346,
       "opened": 1786266816,
-      "status": "open",
-      "exit_price": null,
-      "pnl": null,
-      "settled": null,
+      "status": "lost",
+      "exit_price": 0.0,
+      "pnl": -50.55,
+      "settled": 1786277532,
       "end_ts": 1786233600
     },
     "46847307656882602122997465306414904346129309754935831590213955739893205462517": {
@@ -21929,8 +21920,8 @@
     }
   },
   "hwm": 3600.1933566560215,
-  "feed_sig": "e6b28b99828eaff8d950cc09017ffef7",
-  "feed_pushed_at": 1786277263.4886658,
+  "feed_sig": "6052cf7a5987a4619d6689655f1c92e1",
+  "feed_pushed_at": 1786277396.9107084,
   "missed": [
     {
       "ts": 1783889397,
@@ -21991,39 +21982,6 @@
       "pnl": null,
       "settled": null,
       "name": "BikesAreTheBikes"
-    },
-    {
-      "ts": 1784542228,
-      "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-      "token": "94721150294315642159523163478678619726456567670111052245574554614840104448926",
-      "cond": "0x819865625d6f3a6333cf7ce5a4aa4405871553a37148b85d0ffa8b7e17ee94a8",
-      "title": "Bitcoin Up or Down - July 20, 6:00AM-6:15AM ET",
-      "outcome": "Down",
-      "price": 0.3114,
-      "stake": 106.4,
-      "reason": "not copied in the detection window (reconciled)",
-      "status": "sold",
-      "pnl": -75.31,
-      "settled": 1784542996,
-      "name": "1kto1m",
-      "exit_checked": true,
-      "exit_price": 0.1001
-    },
-    {
-      "ts": 1784546090,
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "token": "99938107423318996756322333138555738106297484333668883121178163046396546977526",
-      "cond": "0xe3c09d18eefd24731660e6509eee5824ebcbba53f33515b2910b56bf059b3734",
-      "title": "Will South Korea ETF (EWY) hit (HIGH) $166 Week of July 20 2026?",
-      "outcome": "Yes",
-      "price": 0.76,
-      "stake": 10.91,
-      "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-      "status": "sold",
-      "pnl": 0.97,
-      "settled": 1784555782,
-      "name": "0xbadaf319",
-      "exit_price": 0.8369
     },
     {
       "ts": 1784547091,
@@ -25105,6 +25063,35 @@
       "pnl": null,
       "settled": null,
       "name": "BikesAreTheBikes"
+    },
+    {
+      "ts": 1786277396,
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "token": "43180192744264932534137000240241088432530085209515029021308017322422968247012",
+      "cond": "0x690f95ba728de5aed3fb861db575fb0c756baa37db50b2872bd5b857d3e74793",
+      "title": "LoL: BNK FEARX vs Kiwoom DRX - Game 2 Winner",
+      "outcome": "Kiwoom DRX",
+      "price": 0.4744,
+      "stake": 49.87,
+      "reason": "maker bid unfilled (103s)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "AIcAIc"
+    },
+    {
+      "ts": 1786277528,
+      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+      "token": "11840728643633323051076845974892673823676187986380364152051490212323317288352",
+      "cond": "0x690f95ba728de5aed3fb861db575fb0c756baa37db50b2872bd5b857d3e74793",
+      "title": "LoL: BNK FEARX vs Kiwoom DRX - Game 2 Winner",
+      "outcome": "BNK FEARX",
+      "price": 0.83,
+      "stake": 49.87,
+      "reason": "maker bid unfilled (99s)",
+      "status": "open",
+      "pnl": null,
+      "settled": null
     }
   ],
   "no_miss_toks": [
@@ -25325,7 +25312,7 @@
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1786051556,
     "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1786277005,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1785429351,
-    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1786275703,
+    "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1786277419,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1786276639,
     "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1786276548,
     "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1786257312
@@ -25342,31 +25329,10 @@
     "title": "Mojtaba Khamenei seen in public by December 31?",
     "outcome": "Yes"
   },
-  "paper_maker": [
-    {
-      "paper_maker": true,
-      "sz": 105.13,
-      "mode": "maker",
-      "token": "43180192744264932534137000240241088432530085209515029021308017322422968247012",
-      "side": "BUY",
-      "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-      "title": "LoL: BNK FEARX vs Kiwoom DRX - Game 2 Winner",
-      "outcome": "Kiwoom DRX",
-      "event": null,
-      "cond": "0x690f95ba728de5aed3fb861db575fb0c756baa37db50b2872bd5b857d3e74793",
-      "their_price": 0.474367,
-      "their_ts": 1786277280,
-      "price": 0.474367,
-      "is_add": false,
-      "stake": 49.8722768832505,
-      "ts": 1786277288.2785182,
-      "ttl_s": 60.0,
-      "ba_at_signal": 0.43
-    }
-  ],
+  "paper_maker": [],
   "maker_stats": {
     "fills": 187,
-    "misses": 102
+    "misses": 104
   },
   "ignored_exits": [
     {
