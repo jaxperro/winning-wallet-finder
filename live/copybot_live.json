@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.18,
+ "stake": 48.34,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 685.52,
- "deployed": 1723.64,
+ "cash": 744.01,
+ "deployed": 1672.76,
  "reserve": 0.0,
- "realized": 1409.13,
+ "realized": 1416.73,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 35,
+ "ledger_drift": -0.01,
+ "open_count": 34,
  "fees_paid": 473.23,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "81687261828485923370301293448268747277317716692301661215171974481135044780719",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Karmine Corp",
+   "title": "LoL: Fnatic vs Karmine Corp (BO3) - LEC Regular Season",
+   "their_price": 0.87,
+   "my_price": 0.87,
+   "slippage_pct": 0.0,
+   "lag_s": 16.4,
+   "shares": 58.49,
+   "cost": 50.89,
+   "fee": 0.2,
+   "opened": 1786224364,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 7.4,
+   "settled": 1786314909,
+   "end_ts": 1786233600
+  },
   {
    "token": "43180192744264932534137000240241088432530085209515029021308017322422968247012",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -211,26 +231,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1790726400
-  },
-  {
-   "token": "81687261828485923370301293448268747277317716692301661215171974481135044780719",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "Karmine Corp",
-   "title": "LoL: Fnatic vs Karmine Corp (BO3) - LEC Regular Season",
-   "their_price": 0.87,
-   "my_price": 0.87,
-   "slippage_pct": 0.0,
-   "lag_s": 16.4,
-   "shares": 58.49,
-   "cost": 50.89,
-   "fee": 0.2,
-   "opened": 1786224364,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786233600
   },
   {
    "token": "29886341249261328795182573383036530504170574765280862983740336186729016438291",
@@ -3165,14 +3165,14 @@
    "last_ts": 1786275799
   },
   "JuiceFarm": {
-   "realized": -202.85,
-   "n": 9,
-   "wins": 4,
-   "open_cost": 50.89,
-   "open_n": 1,
+   "realized": -195.45,
+   "n": 10,
+   "wins": 5,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 4,
    "miss_pnl": 37.21,
-   "last_ts": 1786285878
+   "last_ts": 1786314909
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3195,5 +3195,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786310783
+ "updated": 1786314915
 }
