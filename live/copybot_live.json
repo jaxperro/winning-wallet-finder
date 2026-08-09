@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 50.89,
+ "stake": 50.88,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 872.2,
- "deployed": 1672.28,
+ "cash": 820.96,
+ "deployed": 1723.17,
  "reserve": 0.0,
- "realized": 1544.44,
+ "realized": 1544.09,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 35,
- "fees_paid": 469.42,
+ "open_count": 36,
+ "fees_paid": 469.77,
  "fee_rate": 0.03,
  "lag": {
-  "n": 416,
-  "n24": 7,
+  "n": 417,
+  "n24": 8,
   "basis": "24h",
-  "avg_s": 2.3,
+  "avg_s": 5.3,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "88752597571738831347942513760817776151125290177540731190810686943474863159303",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "US announces end of Iranian blockade by September 30, 2026?",
+   "their_price": 0.77,
+   "my_price": 0.77,
+   "slippage_pct": 0.0,
+   "lag_s": 8.9,
+   "shares": 66.09,
+   "cost": 50.89,
+   "fee": 0.35,
+   "opened": 1786236782,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1790726400
+  },
   {
    "token": "81687261828485923370301293448268747277317716692301661215171974481135044780719",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2107,28 +2127,6 @@
    "pnl": 6.19,
    "settled": 1785366578,
    "end_ts": 1785283200
-  },
-  {
-   "token": "101236487153880410126079538630224897926983898229295262349314695253663048007189",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Down",
-   "title": "SPY (SPY) Up or Down on July 29?",
-   "their_price": 0.55,
-   "my_price": 0.5868,
-   "slippage_pct": 0.0,
-   "lag_s": 1.0,
-   "shares": 50.35,
-   "cost": 29.55,
-   "fee": 0.36,
-   "opened": 1785333049,
-   "status": "closed",
-   "exit_price": 0.9583,
-   "pnl": 18.35,
-   "settled": 1785363165,
-   "end_ts": 1785283200,
-   "sold_shares": 50.35,
-   "sold_proceeds": 48.25
   }
  ],
  "missed": [
@@ -3086,12 +3084,12 @@
  ],
  "missed_pnl": 21039.35,
  "last_fill": {
-  "ts": 1786224380,
+  "ts": 1786236790,
   "side": "BUY",
-  "price": 0.87,
-  "shares": 58.49,
-  "title": "LoL: Fnatic vs Karmine Corp (BO3) - LEC Regular Season",
-  "outcome": "Karmine Corp"
+  "price": 0.77,
+  "shares": 66.09,
+  "title": "US announces end of Iranian blockade by September 30, 2026?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3158,11 +3156,11 @@
    "realized": 55.09,
    "n": 25,
    "wins": 4,
-   "open_cost": 1152.01,
-   "open_n": 18,
+   "open_cost": 1202.9,
+   "open_n": 19,
    "miss_n": 53,
    "miss_pnl": -683.24,
-   "last_ts": 1786201916
+   "last_ts": 1786236782
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3195,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786232871
+ "updated": 1786236821
 }
