@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786277840,
+ "updated": 1786278667,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 511.34,
@@ -59,7 +59,7 @@
    "open_cost": 48.87,
    "open_n": 1,
    "miss_n": 13,
-   "miss_pnl": -453.58,
+   "miss_pnl": -511.43,
    "last_ts": 1786277832
   },
   "BikesAreTheBikes": {
@@ -69,7 +69,7 @@
    "open_cost": 1302.71,
    "open_n": 21,
    "miss_n": 56,
-   "miss_pnl": -683.24,
+   "miss_pnl": -678.98,
    "last_ts": 1786275799
   },
   "JuiceFarm": {
@@ -7743,19 +7743,20 @@
  ],
  "missed": [
   {
-   "ts": 1786277528,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "11840728643633323051076845974892673823676187986380364152051490212323317288352",
-   "cond": "0x690f95ba728de5aed3fb861db575fb0c756baa37db50b2872bd5b857d3e74793",
-   "title": "LoL: BNK FEARX vs Kiwoom DRX - Game 2 Winner",
-   "outcome": "BNK FEARX",
-   "price": 0.83,
+   "ts": 1786276621,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "78735213477140259179719985437634225008013438052010449207550476177307188383355",
+   "cond": "0xfed2dd1e83691ca08b8bc08d2bed09cb19003730f2be47da6a467ee37df96fbb",
+   "title": "Mojtaba Khamenei seen in public by December 31?",
+   "outcome": "No",
+   "price": 0.4469,
    "stake": 49.87,
-   "reason": "maker bid unfilled (99s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
+   "reason": "maker bid unfilled (60s)",
+   "status": "sold",
+   "pnl": 4.26,
+   "settled": 1786278666,
+   "name": "BikesAreTheBikes",
+   "exit_price": 0.5
   },
   {
    "ts": 1786277396,
@@ -7767,25 +7768,27 @@
    "price": 0.4744,
    "stake": 49.87,
    "reason": "maker bid unfilled (103s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
+   "status": "sold",
+   "pnl": -43.16,
+   "settled": 1786278666,
+   "name": "AIcAIc",
+   "exit_price": 0.0733
   },
   {
-   "ts": 1786276621,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "78735213477140259179719985437634225008013438052010449207550476177307188383355",
-   "cond": "0xfed2dd1e83691ca08b8bc08d2bed09cb19003730f2be47da6a467ee37df96fbb",
-   "title": "Mojtaba Khamenei seen in public by December 31?",
-   "outcome": "No",
-   "price": 0.4469,
+   "ts": 1786277528,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "11840728643633323051076845974892673823676187986380364152051490212323317288352",
+   "cond": "0x690f95ba728de5aed3fb861db575fb0c756baa37db50b2872bd5b857d3e74793",
+   "title": "LoL: BNK FEARX vs Kiwoom DRX - Game 2 Winner",
+   "outcome": "BNK FEARX",
+   "price": 0.83,
    "stake": 49.87,
-   "reason": "maker bid unfilled (60s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
+   "reason": "maker bid unfilled (99s)",
+   "status": "sold",
+   "pnl": -14.69,
+   "settled": 1786278666,
+   "name": "AIcAIc",
+   "exit_price": 0.5969
   },
   {
    "ts": 1786275766,
