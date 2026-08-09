@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786264114,
+ "updated": 1786266824,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 511.34,
@@ -56,11 +56,11 @@
    "realized": -36.72,
    "n": 50,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 49.92,
+   "open_n": 1,
    "miss_n": 10,
    "miss_pnl": -470.85,
-   "last_ts": 1786144284
+   "last_ts": 1786266816
   },
   "BikesAreTheBikes": {
    "realized": 55.09,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "55988445465443317989518698191518392638991784735715624944906249117088857406975",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "KT Rolster",
+   "title": "LoL: Dplus KIA vs KT Rolster - Game 2 Winner",
+   "their_price": 0.5762,
+   "my_price": 0.5762,
+   "slippage_pct": 0.0,
+   "lag_s": 8.4,
+   "shares": 86.63,
+   "cost": 49.92,
+   "fee": 0.6346,
+   "opened": 1786266816,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786233600
+  },
   {
    "token": "66611161618038095197921470357471217644766577616624479600534797050825065601256",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
