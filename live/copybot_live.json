@@ -2131,6 +2131,21 @@
  ],
  "missed": [
   {
+   "ts": 1786271457,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "63991651071165338300868325282495387357017636962656608775506647054222941185409",
+   "cond": "0x943623cbb05d1004194d3115a8e85d59740680975d2d3643932932ca5df36f75",
+   "title": "LoL: ThunderTalk Gaming vs Top Esports - Game 2 Winner",
+   "outcome": "Top Esports",
+   "price": 0.7,
+   "stake": 49.91,
+   "reason": "maker bid unfilled (60s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1786262714,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "90637634602465887787679268906394947498675150453246427560023668237516913996412",
@@ -3065,25 +3080,9 @@
    "settled": 1785704188,
    "name": "BikesAreTheBikes",
    "exit_price": 0.5557
-  },
-  {
-   "ts": 1785452006,
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "token": "86222734336247731664864731734281512829733267574920066804362888057386190851592",
-   "cond": "0x121c6b7fe5c7d713741d713b03823d0c152bb4b72e20b84e02840e419773cb36",
-   "title": "LoL: KT Rolster vs Hanwha Life Esports (BO3) - LCK Round 3-4 Legend Group",
-   "outcome": "Hanwha Life Esports",
-   "price": 0.7799,
-   "stake": 53.26,
-   "reason": "maker bid unfilled (115s)",
-   "status": "lost",
-   "pnl": -53.61,
-   "settled": 1785693881,
-   "name": "JuiceFarm",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 21030.08,
+ "missed_pnl": 20971.46,
  "last_fill": {
   "ts": 1786266824,
   "side": "BUY",
@@ -3149,7 +3148,7 @@
    "wins": 0,
    "open_cost": 49.92,
    "open_n": 1,
-   "miss_n": 10,
+   "miss_n": 11,
    "miss_pnl": -470.85,
    "last_ts": 1786266816
   },
@@ -3194,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786266824
+ "updated": 1786271465
 }
