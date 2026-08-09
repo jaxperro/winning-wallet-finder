@@ -2131,6 +2131,21 @@
  ],
  "missed": [
   {
+   "ts": 1786177991,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "20174661506232867894667707134816571263646452665587867099504831699679426769222",
+   "cond": "0x32faa375788686e264fa93c02a0dfe0ace191c2463a1638d979acc028eef767d",
+   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on August 9?",
+   "outcome": "No",
+   "price": 0.708,
+   "stake": 47.96,
+   "reason": "thin book ($37 within 5c < $50)",
+   "status": "won",
+   "pnl": 19.36,
+   "settled": 1786292666,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1786276621,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "78735213477140259179719985437634225008013438052010449207550476177307188383355",
@@ -2288,21 +2303,6 @@
    "settled": 1786187071,
    "name": "0xbadaf319",
    "exit_price": 0.923
-  },
-  {
-   "ts": 1786177991,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "20174661506232867894667707134816571263646452665587867099504831699679426769222",
-   "cond": "0x32faa375788686e264fa93c02a0dfe0ace191c2463a1638d979acc028eef767d",
-   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on August 9?",
-   "outcome": "No",
-   "price": 0.708,
-   "stake": 47.96,
-   "reason": "thin book ($37 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1786170931,
@@ -3082,7 +3082,7 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 20568.0,
+ "missed_pnl": 20587.36,
  "last_fill": {
   "ts": 1786277832,
   "side": "BUY",
@@ -3099,7 +3099,7 @@
    "open_cost": 661.67,
    "open_n": 13,
    "miss_n": 153,
-   "miss_pnl": 113287.62,
+   "miss_pnl": 113306.98,
    "last_ts": 1786260298
   },
   "gkmgkldfmg": {
@@ -3193,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786289524
+ "updated": 1786292675
 }
