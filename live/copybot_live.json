@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.91,
+ "stake": 49.9,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 770.92,
- "deployed": 1724.65,
+ "cash": 720.26,
+ "deployed": 1774.56,
  "reserve": 0.0,
- "realized": 1495.54,
+ "realized": 1494.8,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 35,
- "fees_paid": 470.41,
+ "open_count": 36,
+ "fees_paid": 471.15,
  "fee_rate": 0.03,
  "lag": {
-  "n": 418,
-  "n24": 8,
+  "n": 419,
+  "n24": 9,
   "basis": "24h",
-  "avg_s": 8.4,
+  "avg_s": 8.3,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "46847307656882602122997465306414904346129309754935831590213955739893205462517",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will the next Google Gemini Pro model be released by August 31, 2026?",
+   "their_price": 0.5,
+   "my_price": 0.5,
+   "slippage_pct": 0.0,
+   "lag_s": 0.5,
+   "shares": 99.82,
+   "cost": 49.91,
+   "fee": 0.75,
+   "opened": 1786272200,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "55988445465443317989518698191518392638991784735715624944906249117088857406975",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2107,26 +2127,6 @@
    "pnl": -130.11,
    "settled": 1785373149,
    "end_ts": 1785369600
-  },
-  {
-   "token": "61786389752515367835821565534386371514405052384932121340794230250818428934092",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Skillcamp Esport",
-   "title": "LoL: Galions vs Skillcamp Esport (BO1) - LFL Regular Season",
-   "their_price": 0.22,
-   "my_price": 0.22,
-   "slippage_pct": 0.0,
-   "lag_s": 1.5,
-   "shares": 588.38,
-   "cost": 129.44,
-   "fee": 3.03,
-   "opened": 1785353228,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -132.47,
-   "settled": 1785369032,
-   "end_ts": 1785369600
   }
  ],
  "missed": [
@@ -3084,12 +3084,12 @@
  ],
  "missed_pnl": 20971.46,
  "last_fill": {
-  "ts": 1786266824,
+  "ts": 1786272200,
   "side": "BUY",
-  "price": 0.5762,
-  "shares": 86.63,
-  "title": "LoL: Dplus KIA vs KT Rolster - Game 2 Winner",
-  "outcome": "KT Rolster"
+  "price": 0.5,
+  "shares": 99.82,
+  "title": "Will the next Google Gemini Pro model be released by August ",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3156,11 +3156,11 @@
    "realized": 55.09,
    "n": 25,
    "wins": 4,
-   "open_cost": 1202.9,
-   "open_n": 19,
+   "open_cost": 1252.81,
+   "open_n": 20,
    "miss_n": 54,
    "miss_pnl": -683.24,
-   "last_ts": 1786236782
+   "last_ts": 1786272200
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -3193,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786271465
+ "updated": 1786272209
 }
