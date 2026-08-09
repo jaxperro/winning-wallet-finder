@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786314915,
+ "updated": 1786317772,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 511.34,
@@ -68,7 +68,7 @@
    "wins": 4,
    "open_cost": 1302.71,
    "open_n": 21,
-   "miss_n": 56,
+   "miss_n": 57,
    "miss_pnl": -678.98,
    "last_ts": 1786275799
   },
@@ -7742,6 +7742,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786317765,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "50581924507864317513377511571246156361777403028710345226389789090830213052286",
+   "cond": "0xa81a7633a52bb2f358ba6cb1fc584f02235dc8f97d376b4086ee529d5e826ff2",
+   "title": "Will Kai and Speed beat the Minecraft challenge by August 14?",
+   "outcome": "No",
+   "price": 0.787,
+   "stake": 48.34,
+   "reason": "maker bid unfilled (60s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1786177991,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
