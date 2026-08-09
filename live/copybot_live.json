@@ -2131,6 +2131,21 @@
  ],
  "missed": [
   {
+   "ts": 1786262714,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "90637634602465887787679268906394947498675150453246427560023668237516913996412",
+   "cond": "0xfa52f5817ea613138cbd376abf4adf5d128dcee82c7b04751409577b70cb15bc",
+   "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by August 31?",
+   "outcome": "Yes",
+   "price": 0.619,
+   "stake": 49.92,
+   "reason": "maker bid unfilled (75s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1786194716,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "2829852299537035253430283542362459353409117273749772092993076006310052192682",
@@ -3066,25 +3081,9 @@
    "settled": 1785693881,
    "name": "JuiceFarm",
    "exit_checked": true
-  },
-  {
-   "ts": 1785423069,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "102617319572539919553357676752315366758463499662855057808806666308412570450045",
-   "cond": "0xa466e17524bcc473279c4ca86f4f1fb01932946a8204e68f6ca96628f8bf2b5e",
-   "title": "China x Japan military clash before 2027?",
-   "outcome": "No",
-   "price": 0.64,
-   "stake": 54.4,
-   "reason": "no ask side on the book at copy time",
-   "status": "sold",
-   "pnl": 22.16,
-   "settled": 1785691846,
-   "name": "BikesAreTheBikes",
-   "exit_price": 0.91
   }
  ],
- "missed_pnl": 21051.64,
+ "missed_pnl": 21030.08,
  "last_fill": {
   "ts": 1786236790,
   "side": "BUY",
@@ -3160,7 +3159,7 @@
    "wins": 4,
    "open_cost": 1202.9,
    "open_n": 19,
-   "miss_n": 53,
+   "miss_n": 54,
    "miss_pnl": -683.24,
    "last_ts": 1786236782
   },
@@ -3195,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786260303
+ "updated": 1786262721
 }
