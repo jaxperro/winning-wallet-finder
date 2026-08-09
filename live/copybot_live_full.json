@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786272377,
+ "updated": 1786275808,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 511.34,
@@ -66,11 +66,11 @@
    "realized": 55.09,
    "n": 25,
    "wins": 4,
-   "open_cost": 1252.81,
-   "open_n": 20,
-   "miss_n": 54,
+   "open_cost": 1302.71,
+   "open_n": 21,
+   "miss_n": 55,
    "miss_pnl": -683.24,
-   "last_ts": 1786272200
+   "last_ts": 1786275799
   },
   "JuiceFarm": {
    "realized": -217.7,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "106352973084247809978722887479381361784509565887960822996102387300658431649079",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Mojtaba Khamenei seen in public by December 31?",
+   "their_price": 0.19,
+   "my_price": 0.19,
+   "slippage_pct": 0.0,
+   "lag_s": 0.7,
+   "shares": 262.61,
+   "cost": 49.9,
+   "fee": 1.2125,
+   "opened": 1786275799,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798675200
+  },
   {
    "token": "46847307656882602122997465306414904346129309754935831590213955739893205462517",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -7675,6 +7695,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786275766,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "87712920673252297509200151045391015262449055764880659907762503287643101055970",
+   "cond": "0xcee04ba47d02f6c64642369b34193c355f64de1b9ae425c71ea4efef1989d271",
+   "title": "US announces end of Iranian blockade by October 31, 2026?",
+   "outcome": "Yes",
+   "price": 0.76,
+   "stake": 49.9,
+   "reason": "maker bid unfilled (85s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1786271457,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
