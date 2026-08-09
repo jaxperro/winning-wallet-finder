@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786277537,
+ "updated": 1786277840,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 511.34,
@@ -56,11 +56,11 @@
    "realized": -87.27,
    "n": 51,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.87,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": -453.58,
-   "last_ts": 1786277532
+   "last_ts": 1786277832
   },
   "BikesAreTheBikes": {
    "realized": 55.09,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "43180192744264932534137000240241088432530085209515029021308017322422968247012",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Kiwoom DRX",
+   "title": "LoL: BNK FEARX vs Kiwoom DRX - Game 2 Winner",
+   "their_price": 0.4092,
+   "my_price": 0.4092,
+   "slippage_pct": 0.0,
+   "lag_s": 0.0,
+   "shares": 119.43,
+   "cost": 48.87,
+   "fee": 0.8662,
+   "opened": 1786277832,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786233600
+  },
   {
    "token": "55988445465443317989518698191518392638991784735715624944906249117088857406975",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",

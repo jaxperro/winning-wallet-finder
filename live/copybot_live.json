@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.87,
+ "stake": 48.86,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 669.15,
- "deployed": 1774.54,
+ "cash": 619.42,
+ "deployed": 1823.41,
  "reserve": 0.0,
- "realized": 1443.66,
+ "realized": 1442.8,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 36,
- "fees_paid": 472.37,
+ "open_count": 37,
+ "fees_paid": 473.23,
  "fee_rate": 0.03,
  "lag": {
-  "n": 420,
-  "n24": 10,
+  "n": 421,
+  "n24": 11,
   "basis": "24h",
-  "avg_s": 5.1,
+  "avg_s": 1.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "43180192744264932534137000240241088432530085209515029021308017322422968247012",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Kiwoom DRX",
+   "title": "LoL: BNK FEARX vs Kiwoom DRX - Game 2 Winner",
+   "their_price": 0.4092,
+   "my_price": 0.4092,
+   "slippage_pct": 0.0,
+   "lag_s": 0.0,
+   "shares": 119.43,
+   "cost": 48.87,
+   "fee": 0.87,
+   "opened": 1786277832,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786233600
+  },
   {
    "token": "55988445465443317989518698191518392638991784735715624944906249117088857406975",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2107,26 +2127,6 @@
    "pnl": -129.44,
    "settled": 1785378441,
    "end_ts": 1785369600
-  },
-  {
-   "token": "54815727746640547967672254072133541716883461619401150888777316620441172319772",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "7REX",
-   "title": "LoL: paiN Gaming Academy vs 7REX (BO1) - Circuito Desafiante Regular Season",
-   "their_price": 0.3577,
-   "my_price": 0.3432,
-   "slippage_pct": 0.0,
-   "lag_s": 8.9,
-   "shares": 474.79,
-   "cost": 162.94,
-   "fee": 3.21,
-   "opened": 1785358477,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -166.14,
-   "settled": 1785375370,
-   "end_ts": 1785369600
   }
  ],
  "missed": [
@@ -3081,12 +3081,12 @@
  ],
  "missed_pnl": 20621.59,
  "last_fill": {
-  "ts": 1786275799,
+  "ts": 1786277832,
   "side": "BUY",
-  "price": 0.19,
-  "shares": 262.61,
-  "title": "Mojtaba Khamenei seen in public by December 31?",
-  "outcome": "Yes"
+  "price": 0.4092,
+  "shares": 119.43,
+  "title": "LoL: BNK FEARX vs Kiwoom DRX - Game 2 Winner",
+  "outcome": "Kiwoom DRX"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3143,11 +3143,11 @@
    "realized": -87.27,
    "n": 51,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.87,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": -453.58,
-   "last_ts": 1786277532
+   "last_ts": 1786277832
   },
   "BikesAreTheBikes": {
    "realized": 55.09,
@@ -3190,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786277537
+ "updated": 1786277840
 }
