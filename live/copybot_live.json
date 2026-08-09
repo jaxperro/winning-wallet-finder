@@ -16,9 +16,9 @@
  "fee_rate": 0.03,
  "lag": {
   "n": 421,
-  "n24": 9,
+  "n24": 8,
   "basis": "24h",
-  "avg_s": 1.8,
+  "avg_s": 4.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -3193,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786285884
+ "updated": 1786286098
 }
