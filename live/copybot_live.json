@@ -2131,6 +2131,21 @@
  ],
  "missed": [
   {
+   "ts": 1786277396,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "43180192744264932534137000240241088432530085209515029021308017322422968247012",
+   "cond": "0x690f95ba728de5aed3fb861db575fb0c756baa37db50b2872bd5b857d3e74793",
+   "title": "LoL: BNK FEARX vs Kiwoom DRX - Game 2 Winner",
+   "outcome": "Kiwoom DRX",
+   "price": 0.4744,
+   "stake": 49.87,
+   "reason": "maker bid unfilled (103s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1786276621,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "78735213477140259179719985437634225008013438052010449207550476177307188383355",
@@ -3063,25 +3078,9 @@
    "settled": 1785744932,
    "name": "BikesAreTheBikes",
    "exit_price": 0.5284
-  },
-  {
-   "ts": 1785723609,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "15394737252115511624698733646046193249964740097060021118061023239685546384550",
-   "cond": "0x2c185587bad5fe008a477755ed1dfbbb9f5828e84596aa9c6d9f60ebe6bc705d",
-   "title": "Will a Chinese company have one of the top 5 AI models by December 31?",
-   "outcome": "No",
-   "price": 0.04,
-   "stake": 55.27,
-   "reason": "thin book ($13 within 5c < $50)",
-   "status": "lost",
-   "pnl": -56.86,
-   "settled": 1785743470,
-   "name": "BikesAreTheBikes",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 20547.25,
+ "missed_pnl": 20622.56,
  "last_fill": {
   "ts": 1786275799,
   "side": "BUY",
@@ -3147,7 +3146,7 @@
    "wins": 0,
    "open_cost": 49.92,
    "open_n": 1,
-   "miss_n": 11,
+   "miss_n": 12,
    "miss_pnl": -453.58,
    "last_ts": 1786266816
   },
@@ -3192,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786276629
+ "updated": 1786277396
 }

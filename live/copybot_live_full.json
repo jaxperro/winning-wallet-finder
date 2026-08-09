@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786276629,
+ "updated": 1786277396,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 511.34,
@@ -58,7 +58,7 @@
    "wins": 0,
    "open_cost": 49.92,
    "open_n": 1,
-   "miss_n": 11,
+   "miss_n": 12,
    "miss_pnl": -453.58,
    "last_ts": 1786266816
   },
@@ -7722,6 +7722,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786277396,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "43180192744264932534137000240241088432530085209515029021308017322422968247012",
+   "cond": "0x690f95ba728de5aed3fb861db575fb0c756baa37db50b2872bd5b857d3e74793",
+   "title": "LoL: BNK FEARX vs Kiwoom DRX - Game 2 Winner",
+   "outcome": "Kiwoom DRX",
+   "price": 0.4744,
+   "stake": 49.87,
+   "reason": "maker bid unfilled (103s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
   {
    "ts": 1786276621,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
