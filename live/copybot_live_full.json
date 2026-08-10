@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786378620,
+ "updated": 1786380842,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 511.34,
@@ -56,11 +56,11 @@
    "realized": -109.02,
    "n": 53,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.88,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786378620
+   "last_ts": 1786380833
   },
   "BikesAreTheBikes": {
    "realized": 55.09,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "80816336957278030669860087258457821819123973887451237624766856723962249646287",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "G2 Esports",
+   "title": "LoL: Natus Vincere vs G2 Esports - Game 1 Winner",
+   "their_price": 0.65,
+   "my_price": 0.65,
+   "slippage_pct": 0.0,
+   "lag_s": 9.7,
+   "shares": 75.2,
+   "cost": 48.88,
+   "fee": 0.5132,
+   "opened": 1786380833,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786320000
+  },
   {
    "token": "13964501528670969731926712524730593662396375964640639861462472778947059744581",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
