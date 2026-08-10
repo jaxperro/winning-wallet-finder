@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.87,
+ "stake": 49.34,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 673.68,
- "deployed": 1769.97,
+ "cash": 745.78,
+ "deployed": 1721.09,
  "reserve": 0.0,
- "realized": 1443.62,
+ "realized": 1466.84,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 36,
- "fees_paid": 475.17,
+ "ledger_drift": -0.01,
+ "open_count": 35,
+ "fees_paid": 475.26,
  "fee_rate": 0.03,
  "lag": {
   "n": 424,
@@ -64,11 +64,13 @@
    "cost": 48.88,
    "fee": 0.51,
    "opened": 1786380833,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786320000
+   "status": "closed",
+   "exit_price": 0.9588,
+   "pnl": 22.71,
+   "settled": 1786383015,
+   "end_ts": 1786320000,
+   "sold_shares": 75.2,
+   "sold_proceeds": 72.11
   },
   {
    "token": "13964501528670969731926712524730593662396375964640639861462472778947059744581",
@@ -3084,9 +3086,9 @@
  ],
  "missed_pnl": 20705.35,
  "last_fill": {
-  "ts": 1786380842,
-  "side": "BUY",
-  "price": 0.65,
+  "ts": 1786383005,
+  "side": "SELL",
+  "price": 0.96,
   "shares": 75.2,
   "title": "LoL: Natus Vincere vs G2 Esports - Game 1 Winner",
   "outcome": "G2 Esports"
@@ -3143,14 +3145,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -109.02,
-   "n": 53,
+   "realized": -86.31,
+   "n": 54,
    "wins": 0,
-   "open_cost": 48.88,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786380833
+   "last_ts": 1786383015
   },
   "BikesAreTheBikes": {
    "realized": 55.09,
@@ -3193,5 +3195,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786380842
+ "updated": 1786383015
 }
