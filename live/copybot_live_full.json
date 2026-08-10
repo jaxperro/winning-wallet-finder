@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786364867,
+ "updated": 1786369968,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 511.34,
@@ -8,7 +8,7 @@
    "wins": 39,
    "open_cost": 661.67,
    "open_n": 13,
-   "miss_n": 153,
+   "miss_n": 154,
    "miss_pnl": 113305.38,
    "last_ts": 1786260298
   },
@@ -7762,6 +7762,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786369960,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "10926921687109899708979814747729996660370634657736577860168940157994107458977",
+   "cond": "0xcdfd21665e8a427fb0a623ec0c3c41ad98391867be19d7036f8a6fa18e80b709",
+   "title": "Will Meta Platforms, Inc. (META) hit (LOW) $580 Week of August 10 2026?",
+   "outcome": "No",
+   "price": 0.44,
+   "stake": 48.32,
+   "reason": "maker bid unfilled (92s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1786317765,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

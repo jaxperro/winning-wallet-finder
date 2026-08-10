@@ -2131,6 +2131,21 @@
  ],
  "missed": [
   {
+   "ts": 1786369960,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "10926921687109899708979814747729996660370634657736577860168940157994107458977",
+   "cond": "0xcdfd21665e8a427fb0a623ec0c3c41ad98391867be19d7036f8a6fa18e80b709",
+   "title": "Will Meta Platforms, Inc. (META) hit (LOW) $580 Week of August 10 2026?",
+   "outcome": "No",
+   "price": 0.44,
+   "stake": 48.32,
+   "reason": "maker bid unfilled (92s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1786317765,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "50581924507864317513377511571246156361777403028710345226389789090830213052286",
@@ -3066,25 +3081,9 @@
    "settled": 1785765208,
    "name": "0xbadaf319",
    "exit_price": 0.9507
-  },
-  {
-   "ts": 1785547159,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "71739557560388946044087731872467452814125074603840391771492036693615154840015",
-   "cond": "0xf167107f5ced42d688c51576c51f6393efcef0827da02e11b997d503633606b7",
-   "title": "Will Coinbase Global, Inc. (COIN) hit (LOW) $155 in August?",
-   "outcome": "Yes",
-   "price": 0.8411,
-   "stake": 44.06,
-   "reason": "maker bid unfilled (101s)",
-   "status": "sold",
-   "pnl": 8.08,
-   "settled": 1785765205,
-   "name": "0xbadaf319",
-   "exit_price": 0.9993
   }
  ],
- "missed_pnl": 20576.77,
+ "missed_pnl": 20684.67,
  "last_fill": {
   "ts": 1786364866,
   "side": "BUY",
@@ -3100,7 +3099,7 @@
    "wins": 39,
    "open_cost": 661.67,
    "open_n": 13,
-   "miss_n": 153,
+   "miss_n": 154,
    "miss_pnl": 113305.38,
    "last_ts": 1786260298
   },
@@ -3195,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786364867
+ "updated": 1786369968
 }
