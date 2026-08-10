@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.34,
+ "stake": 49.33,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 745.78,
- "deployed": 1721.09,
+ "cash": 696.11,
+ "deployed": 1770.42,
  "reserve": 0.0,
- "realized": 1466.84,
+ "realized": 1466.5,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 35,
- "fees_paid": 475.26,
+ "ledger_drift": -0.02,
+ "open_count": 36,
+ "fees_paid": 475.6,
  "fee_rate": 0.03,
  "lag": {
-  "n": 424,
-  "n24": 3,
+  "n": 425,
+  "n24": 4,
   "basis": "24h",
-  "avg_s": 9.7,
+  "avg_s": 15.3,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "21223226011943147995787591472366702123511343160408904343308111540440246076026",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Hanwha Life Esports",
+   "title": "LoL: Hanwha Life Esports vs DN SOOPers (BO5) - KeSPA Cup Playoffs",
+   "their_price": 0.77,
+   "my_price": 0.77,
+   "slippage_pct": 0.0,
+   "lag_s": 21.0,
+   "shares": 64.07,
+   "cost": 49.33,
+   "fee": 0.34,
+   "opened": 1786392750,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786406400
+  },
   {
    "token": "80816336957278030669860087258457821819123973887451237624766856723962249646287",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2105,28 +2125,6 @@
    "end_ts": 1785369600,
    "sold_shares": 204.14,
    "sold_proceeds": 185.27
-  },
-  {
-   "token": "109766849616564973583260694788676807786232255749165024201845384716685533661901",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "BNK FEARX",
-   "title": "LoL: DN SOOPers vs BNK FEARX - Game 2 Winner",
-   "their_price": 0.74,
-   "my_price": 0.74,
-   "slippage_pct": 0.0,
-   "lag_s": 5.9,
-   "shares": 73.26,
-   "cost": 54.21,
-   "fee": 0.42,
-   "opened": 1785402279,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": 18.63,
-   "settled": 1785403922,
-   "end_ts": 1785369600,
-   "sold_shares": 73.26,
-   "sold_proceeds": 73.26
   }
  ],
  "missed": [
@@ -3086,12 +3084,12 @@
  ],
  "missed_pnl": 20705.35,
  "last_fill": {
-  "ts": 1786383005,
-  "side": "SELL",
-  "price": 0.96,
-  "shares": 75.2,
-  "title": "LoL: Natus Vincere vs G2 Esports - Game 1 Winner",
-  "outcome": "G2 Esports"
+  "ts": 1786392771,
+  "side": "BUY",
+  "price": 0.77,
+  "shares": 64.07,
+  "title": "LoL: Hanwha Life Esports vs DN SOOPers (BO5) - KeSPA Cup Pla",
+  "outcome": "Hanwha Life Esports"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3168,11 +3166,11 @@
    "realized": -195.45,
    "n": 10,
    "wins": 5,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 49.33,
+   "open_n": 1,
    "miss_n": 4,
    "miss_pnl": 37.21,
-   "last_ts": 1786314909
+   "last_ts": 1786392750
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3195,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786383015
+ "updated": 1786392786
 }

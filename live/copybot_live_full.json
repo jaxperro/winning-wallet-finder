@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786383015,
+ "updated": 1786392786,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 511.34,
@@ -76,11 +76,11 @@
    "realized": -195.45,
    "n": 10,
    "wins": 5,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 49.33,
+   "open_n": 1,
    "miss_n": 4,
    "miss_pnl": 37.21,
-   "last_ts": 1786314909
+   "last_ts": 1786392750
   },
   "0x41558102": {
    "realized": 0.0,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "21223226011943147995787591472366702123511343160408904343308111540440246076026",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Hanwha Life Esports",
+   "title": "LoL: Hanwha Life Esports vs DN SOOPers (BO5) - KeSPA Cup Playoffs",
+   "their_price": 0.77,
+   "my_price": 0.77,
+   "slippage_pct": 0.0,
+   "lag_s": 21.0,
+   "shares": 64.07,
+   "cost": 49.33,
+   "fee": 0.3404,
+   "opened": 1786392750,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786406400
+  },
   {
    "token": "80816336957278030669860087258457821819123973887451237624766856723962249646287",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
