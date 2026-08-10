@@ -1,25 +1,25 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.34,
+ "stake": 48.32,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 744.01,
- "deployed": 1672.76,
+ "cash": 695.08,
+ "deployed": 1721.09,
  "reserve": 0.0,
- "realized": 1416.73,
+ "realized": 1416.14,
  "adjustments": 0.03,
- "ledger_drift": -0.01,
- "open_count": 34,
- "fees_paid": 473.23,
+ "ledger_drift": -0.02,
+ "open_count": 35,
+ "fees_paid": 473.83,
  "fee_rate": 0.03,
  "lag": {
-  "n": 421,
-  "n24": 0,
-  "basis": "lifetime",
-  "avg_s": 18.6,
-  "avg_slip_pct": -0.0172,
+  "n": 422,
+  "n24": 1,
+  "basis": "24h",
+  "avg_s": 0.8,
+  "avg_slip_pct": 0.0,
   "window_h": 24
  },
  "wallets": [
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "21515528084926948718188410049221867058078937518895951601155499933747657106361",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "US announces end of Iranian blockade by August 31, 2026?",
+   "their_price": 0.59,
+   "my_price": 0.59,
+   "slippage_pct": 0.0,
+   "lag_s": 0.8,
+   "shares": 81.92,
+   "cost": 48.33,
+   "fee": 0.59,
+   "opened": 1786364866,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "81687261828485923370301293448268747277317716692301661215171974481135044780719",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2107,26 +2127,6 @@
    "end_ts": 1788134400,
    "sold_shares": 42.82,
    "sold_proceeds": 39.21
-  },
-  {
-   "token": "17480166814702290785530852378381854525201787151638025511297996406280125724476",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "RED Academy",
-   "title": "LoL: RED Academy vs Estral Esports (BO1) - Circuito Desafiante Regular Season",
-   "their_price": 0.1115,
-   "my_price": 0.1236,
-   "slippage_pct": 0.0,
-   "lag_s": 1.2,
-   "shares": 1020.69,
-   "cost": 126.14,
-   "fee": 3.3,
-   "opened": 1785361786,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -129.44,
-   "settled": 1785378441,
-   "end_ts": 1785369600
   }
  ],
  "missed": [
@@ -3086,12 +3086,12 @@
  ],
  "missed_pnl": 20576.77,
  "last_fill": {
-  "ts": 1786277832,
+  "ts": 1786364866,
   "side": "BUY",
-  "price": 0.4092,
-  "shares": 119.43,
-  "title": "LoL: BNK FEARX vs Kiwoom DRX - Game 2 Winner",
-  "outcome": "Kiwoom DRX"
+  "price": 0.59,
+  "shares": 81.92,
+  "title": "US announces end of Iranian blockade by August 31, 2026?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3158,11 +3158,11 @@
    "realized": 55.09,
    "n": 25,
    "wins": 4,
-   "open_cost": 1302.71,
-   "open_n": 21,
+   "open_cost": 1351.04,
+   "open_n": 22,
    "miss_n": 57,
    "miss_pnl": -678.98,
-   "last_ts": 1786275799
+   "last_ts": 1786364866
   },
   "JuiceFarm": {
    "realized": -195.45,
@@ -3195,5 +3195,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786364301
+ "updated": 1786364867
 }
