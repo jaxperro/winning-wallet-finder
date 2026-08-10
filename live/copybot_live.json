@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.31,
+ "stake": 48.88,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 646.14,
- "deployed": 1769.41,
+ "cash": 723.07,
+ "deployed": 1721.09,
  "reserve": 0.0,
- "realized": 1415.52,
+ "realized": 1444.13,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 36,
- "fees_paid": 474.45,
+ "open_count": 35,
+ "fees_paid": 474.66,
  "fee_rate": 0.03,
  "lag": {
   "n": 423,
@@ -64,11 +64,13 @@
    "cost": 48.32,
    "fee": 0.62,
    "opened": 1786377921,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786320000
+   "status": "closed",
+   "exit_price": 0.9075,
+   "pnl": 27.99,
+   "settled": 1786378620,
+   "end_ts": 1786320000,
+   "sold_shares": 84.77,
+   "sold_proceeds": 76.93
   },
   {
    "token": "21515528084926948718188410049221867058078937518895951601155499933747657106361",
@@ -3084,9 +3086,9 @@
  ],
  "missed_pnl": 20705.35,
  "last_fill": {
-  "ts": 1786378035,
-  "side": "BUY",
-  "price": 0.57,
+  "ts": 1786378620,
+  "side": "SELL",
+  "price": 0.91,
   "shares": 84.77,
   "title": "LoL: SK Gaming vs Team Vitality - Game 2 Winner",
   "outcome": "Team Vitality"
@@ -3143,14 +3145,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -137.01,
-   "n": 52,
+   "realized": -109.02,
+   "n": 53,
    "wins": 0,
-   "open_cost": 48.32,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786377921
+   "last_ts": 1786378620
   },
   "BikesAreTheBikes": {
    "realized": 55.09,
@@ -3193,5 +3195,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786378058
+ "updated": 1786378620
 }
