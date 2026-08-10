@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.32,
+ "stake": 48.31,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 695.08,
- "deployed": 1721.09,
+ "cash": 646.14,
+ "deployed": 1769.41,
  "reserve": 0.0,
- "realized": 1416.14,
+ "realized": 1415.52,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 35,
- "fees_paid": 473.83,
+ "open_count": 36,
+ "fees_paid": 474.45,
  "fee_rate": 0.03,
  "lag": {
-  "n": 422,
-  "n24": 1,
+  "n": 423,
+  "n24": 2,
   "basis": "24h",
-  "avg_s": 0.8,
+  "avg_s": 57.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "13964501528670969731926712524730593662396375964640639861462472778947059744581",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Team Vitality",
+   "title": "LoL: SK Gaming vs Team Vitality - Game 2 Winner",
+   "their_price": 0.57,
+   "my_price": 0.57,
+   "slippage_pct": 0.0,
+   "lag_s": 114.7,
+   "shares": 84.77,
+   "cost": 48.32,
+   "fee": 0.62,
+   "opened": 1786377921,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786320000
+  },
   {
    "token": "21515528084926948718188410049221867058078937518895951601155499933747657106361",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2105,28 +2125,6 @@
    "end_ts": 1785456000,
    "sold_shares": 169.77,
    "sold_proceeds": 157.55
-  },
-  {
-   "token": "73822848958833581920509853766928409035356407100619064692171326316721805299603",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "NATO x Russia military clash by August 31, 2026?",
-   "their_price": 0.835,
-   "my_price": 0.835,
-   "slippage_pct": 0.0,
-   "lag_s": 7.6,
-   "shares": 42.82,
-   "cost": 35.75,
-   "fee": 0.18,
-   "opened": 1785389280,
-   "status": "closed",
-   "exit_price": 0.9157,
-   "pnl": 3.29,
-   "settled": 1785390491,
-   "end_ts": 1788134400,
-   "sold_shares": 42.82,
-   "sold_proceeds": 39.21
   }
  ],
  "missed": [
@@ -3086,12 +3084,12 @@
  ],
  "missed_pnl": 20705.35,
  "last_fill": {
-  "ts": 1786364866,
+  "ts": 1786378035,
   "side": "BUY",
-  "price": 0.59,
-  "shares": 81.92,
-  "title": "US announces end of Iranian blockade by August 31, 2026?",
-  "outcome": "No"
+  "price": 0.57,
+  "shares": 84.77,
+  "title": "LoL: SK Gaming vs Team Vitality - Game 2 Winner",
+  "outcome": "Team Vitality"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3148,11 +3146,11 @@
    "realized": -137.01,
    "n": 52,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.32,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786289512
+   "last_ts": 1786377921
   },
   "BikesAreTheBikes": {
    "realized": 55.09,
@@ -3195,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786373081
+ "updated": 1786378058
 }
