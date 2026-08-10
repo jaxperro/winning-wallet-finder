@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786370959,
+ "updated": 1786372080,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 511.34,
@@ -38,7 +38,7 @@
    "wins": 2,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 12,
+   "miss_n": 13,
    "miss_pnl": 362.91,
    "last_ts": 1785925830
   },
@@ -7762,6 +7762,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786372072,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "13240004139556199914529962846280422357938324797243985587538999012331595956921",
+   "cond": "0x84b1ecfa861cef0fa7e83a4ebc551645b42b212d8acf315c633b60dc182ff2e0",
+   "title": "ITF koksijde: Maximilian Marterer vs Sidane Pontjodikromo",
+   "outcome": "Sidane Pontjodikromo",
+   "price": 0.1475,
+   "stake": 48.32,
+   "reason": "maker bid unfilled (111s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1786369960,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
