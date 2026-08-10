@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.33,
+ "stake": 49.32,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 696.11,
- "deployed": 1770.42,
+ "cash": 646.23,
+ "deployed": 1819.75,
  "reserve": 0.0,
- "realized": 1466.5,
+ "realized": 1465.95,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 36,
- "fees_paid": 475.6,
+ "open_count": 37,
+ "fees_paid": 476.15,
  "fee_rate": 0.03,
  "lag": {
-  "n": 425,
-  "n24": 4,
+  "n": 426,
+  "n24": 5,
   "basis": "24h",
-  "avg_s": 15.3,
+  "avg_s": 9.7,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "54168830547435529454436627291590270129722808725775536743528705116159111874519",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Dplus KIA",
+   "title": "LoL: KT Rolster vs Dplus KIA (BO3) - LCK Round 3-4 Legend Group",
+   "their_price": 0.63,
+   "my_price": 0.63,
+   "slippage_pct": 0.0,
+   "lag_s": 0.7,
+   "shares": 78.3,
+   "cost": 49.33,
+   "fee": 0.55,
+   "opened": 1786393577,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786492800
+  },
   {
    "token": "21223226011943147995787591472366702123511343160408904343308111540440246076026",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2103,28 +2123,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400
-  },
-  {
-   "token": "32601582308722203478850434701890333664439834614093834593139437190021937902354",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "1win",
-   "title": "Dota 2: Nigma Galaxy vs 1win - Game 1 Winner",
-   "their_price": 0.2824,
-   "my_price": 0.2745,
-   "slippage_pct": 0.0,
-   "lag_s": 4.4,
-   "shares": 393.47,
-   "cost": 107.99,
-   "fee": 2.35,
-   "opened": 1785404267,
-   "status": "closed",
-   "exit_price": 0.9075,
-   "pnl": 74.93,
-   "settled": 1785405535,
-   "end_ts": 1785369600,
-   "sold_shares": 204.14,
-   "sold_proceeds": 185.27
   }
  ],
  "missed": [
@@ -3084,12 +3082,12 @@
  ],
  "missed_pnl": 20705.35,
  "last_fill": {
-  "ts": 1786392771,
+  "ts": 1786393577,
   "side": "BUY",
-  "price": 0.77,
-  "shares": 64.07,
-  "title": "LoL: Hanwha Life Esports vs DN SOOPers (BO5) - KeSPA Cup Pla",
-  "outcome": "Hanwha Life Esports"
+  "price": 0.63,
+  "shares": 78.3,
+  "title": "LoL: KT Rolster vs Dplus KIA (BO3) - LCK Round 3-4 Legend Gr",
+  "outcome": "Dplus KIA"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3166,11 +3164,11 @@
    "realized": -195.45,
    "n": 10,
    "wins": 5,
-   "open_cost": 49.33,
-   "open_n": 1,
+   "open_cost": 98.66,
+   "open_n": 2,
    "miss_n": 4,
    "miss_pnl": 37.21,
-   "last_ts": 1786392750
+   "last_ts": 1786393577
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3193,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786392786
+ "updated": 1786393586
 }

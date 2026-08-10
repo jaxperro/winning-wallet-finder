@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786392786,
+ "updated": 1786393586,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 511.34,
@@ -76,11 +76,11 @@
    "realized": -195.45,
    "n": 10,
    "wins": 5,
-   "open_cost": 49.33,
-   "open_n": 1,
+   "open_cost": 98.66,
+   "open_n": 2,
    "miss_n": 4,
    "miss_pnl": 37.21,
-   "last_ts": 1786392750
+   "last_ts": 1786393577
   },
   "0x41558102": {
    "realized": 0.0,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "54168830547435529454436627291590270129722808725775536743528705116159111874519",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Dplus KIA",
+   "title": "LoL: KT Rolster vs Dplus KIA (BO3) - LCK Round 3-4 Legend Group",
+   "their_price": 0.63,
+   "my_price": 0.63,
+   "slippage_pct": 0.0,
+   "lag_s": 0.7,
+   "shares": 78.3,
+   "cost": 49.33,
+   "fee": 0.5476,
+   "opened": 1786393577,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786492800
+  },
   {
    "token": "21223226011943147995787591472366702123511343160408904343308111540440246076026",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
