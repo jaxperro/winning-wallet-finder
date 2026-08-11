@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786459883,
+ "updated": 1786460556,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 511.34,
@@ -39,7 +39,7 @@
    "open_cost": 49.31,
    "open_n": 1,
    "miss_n": 14,
-   "miss_pnl": 440.9,
+   "miss_pnl": 397.0,
    "last_ts": 1786457206
   },
   "LSB1": {
@@ -7922,6 +7922,21 @@
  ],
  "missed": [
   {
+   "ts": 1786396563,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "1366945885431566465879065406924534872494356660131581564847396301242295557447",
+   "cond": "0xa448a578e51eda027c288749ddcc025e052d1d8e9c13a64dae54a14e14b4bf8f",
+   "title": "Map Handicap: RSTR (-1.5) vs Mindfreak (+1.5)",
+   "outcome": "Rooster",
+   "price": 0.3,
+   "stake": 43.0,
+   "reason": "maker bid unfilled (60s)",
+   "status": "lost",
+   "pnl": -43.9,
+   "settled": 1786460556,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1785958766,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "89339842467755846916895340090811107531055862929812328249086116756300859728253",
@@ -7968,21 +7983,6 @@
    "settled": 1786423536,
    "name": "0xbadaf319",
    "exit_price": 0.8001
-  },
-  {
-   "ts": 1786396563,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "1366945885431566465879065406924534872494356660131581564847396301242295557447",
-   "cond": "0xa448a578e51eda027c288749ddcc025e052d1d8e9c13a64dae54a14e14b4bf8f",
-   "title": "Map Handicap: RSTR (-1.5) vs Mindfreak (+1.5)",
-   "outcome": "Rooster",
-   "price": 0.3,
-   "stake": 43.0,
-   "reason": "maker bid unfilled (60s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
   },
   {
    "ts": 1786372072,
