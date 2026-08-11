@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786396572,
+ "updated": 1786423542,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 511.34,
@@ -9,7 +9,7 @@
    "open_cost": 661.67,
    "open_n": 13,
    "miss_n": 154,
-   "miss_pnl": 113308.19,
+   "miss_pnl": 113306.83,
    "last_ts": 1786260298
   },
   "gkmgkldfmg": {
@@ -7882,6 +7882,22 @@
  ],
  "missed": [
   {
+   "ts": 1784914783,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "57590278468135932985122265201166347717203805819317356723801980532081946556108",
+   "cond": "0x724fe3bb76a4c9dc5a1d72612bd762991d436b18253bef55152efcf7083cb48a",
+   "title": "Valantis FDV above $200M one day after launch?",
+   "outcome": "No",
+   "price": 0.83,
+   "stake": 29.05,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": -1.36,
+   "settled": 1786423536,
+   "name": "0xbadaf319",
+   "exit_price": 0.8001
+  },
+  {
    "ts": 1786396563,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "1366945885431566465879065406924534872494356660131581564847396301242295557447",
@@ -10662,21 +10678,6 @@
    "settled": 1784914857,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1784914783,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "57590278468135932985122265201166347717203805819317356723801980532081946556108",
-   "cond": "0x724fe3bb76a4c9dc5a1d72612bd762991d436b18253bef55152efcf7083cb48a",
-   "title": "Valantis FDV above $200M one day after launch?",
-   "outcome": "No",
-   "price": 0.83,
-   "stake": 29.05,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1784914783,
