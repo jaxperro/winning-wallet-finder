@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.59,
+ "stake": 49.2,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 609.82,
- "deployed": 1819.73,
+ "cash": 689.35,
+ "deployed": 1770.42,
  "reserve": 0.0,
- "realized": 1429.51,
+ "realized": 1459.73,
  "adjustments": 0.03,
  "ledger_drift": -0.01,
- "open_count": 37,
+ "open_count": 36,
  "fees_paid": 477.04,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "13316447578737225357026702171465597443147415868165853161202310730878584654286",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Francisca Jorge",
+   "title": "ITF W35 Vigo Women: Celia Cervino Ruiz vs Francisca Jorge",
+   "their_price": 0.62,
+   "my_price": 0.62,
+   "slippage_pct": 0.0,
+   "lag_s": 10.0,
+   "shares": 79.53,
+   "cost": 49.31,
+   "fee": 0.56,
+   "opened": 1786457206,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 29.66,
+   "settled": 1786464121,
+   "end_ts": 1787011200
+  },
   {
    "token": "94846897484381815562163807288403114709066377232684041501595611666261437202302",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -91,26 +111,6 @@
    "pnl": -49.67,
    "settled": 1786459878,
    "end_ts": 1786406400
-  },
-  {
-   "token": "13316447578737225357026702171465597443147415868165853161202310730878584654286",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Francisca Jorge",
-   "title": "ITF W35 Vigo Women: Celia Cervino Ruiz vs Francisca Jorge",
-   "their_price": 0.62,
-   "my_price": 0.62,
-   "slippage_pct": 0.0,
-   "lag_s": 10.0,
-   "shares": 79.53,
-   "cost": 49.31,
-   "fee": 0.56,
-   "opened": 1786457206,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787011200
   },
   {
    "token": "54168830547435529454436627291590270129722808725775536743528705116159111874519",
@@ -3123,14 +3123,14 @@
    "last_ts": 1785987921
   },
   "Kruto2027": {
-   "realized": 174.77,
-   "n": 16,
-   "wins": 2,
-   "open_cost": 49.31,
-   "open_n": 1,
+   "realized": 204.43,
+   "n": 17,
+   "wins": 3,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 14,
    "miss_pnl": 397.0,
-   "last_ts": 1786457206
+   "last_ts": 1786464121
   },
   "LSB1": {
    "realized": -397.16,
@@ -3193,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786461572
+ "updated": 1786464125
 }
