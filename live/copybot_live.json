@@ -2127,6 +2127,21 @@
  ],
  "missed": [
   {
+   "ts": 1786479866,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "103988361056715557688108806696666000436932711957896745224025885715803818393567",
+   "cond": "0x65ca30aee9dfec7f2f0292049b3a4d950808105864a3895b986402e2d86a631a",
+   "title": "Ethereum above 1,900 on July 20, 12PM ET?",
+   "outcome": "No",
+   "price": 0.2237,
+   "stake": 49.19,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "lost",
+   "pnl": -50.34,
+   "settled": 1786479940,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1786478200,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "38117101935565340676082212110824196837805166167562510718204169833601135217606",
@@ -3063,25 +3078,9 @@
    "settled": 1785846912,
    "name": "0xbadaf319",
    "exit_price": 0.7706
-  },
-  {
-   "ts": 1785718176,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "34336750619875308256599829547670506010305636448259915722708507966106063783608",
-   "cond": "0x7b69d995101730f541059753d84a23ca3cd3416d8a89145cec76b851ca82f9f1",
-   "title": "Will \"Spider-Man: Brand New Day\" Opening Weekend Box Office be between 350m and 360m?",
-   "outcome": "Yes",
-   "price": 0.5275,
-   "stake": 55.27,
-   "reason": "no ask side on the book at copy time",
-   "status": "lost",
-   "pnl": -56.05,
-   "settled": 1785813695,
-   "name": "BikesAreTheBikes",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 20700.04,
+ "missed_pnl": 20626.45,
  "last_fill": {
   "ts": 1786470071,
   "side": "BUY",
@@ -3097,8 +3096,8 @@
    "wins": 39,
    "open_cost": 673.02,
    "open_n": 14,
-   "miss_n": 155,
-   "miss_pnl": 113326.61,
+   "miss_n": 156,
+   "miss_pnl": 113276.27,
    "last_ts": 1786470000
   },
   "gkmgkldfmg": {
@@ -3192,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786479173
+ "updated": 1786479940
 }
