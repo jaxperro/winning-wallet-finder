@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.31,
+ "stake": 49.3,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 596.59,
- "deployed": 1869.07,
+ "cash": 546.72,
+ "deployed": 1918.38,
  "reserve": 0.0,
- "realized": 1465.63,
+ "realized": 1465.07,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 38,
- "fees_paid": 476.47,
+ "open_count": 39,
+ "fees_paid": 477.03,
  "fee_rate": 0.03,
  "lag": {
-  "n": 427,
-  "n24": 5,
+  "n": 428,
+  "n24": 6,
   "basis": "24h",
-  "avg_s": 11.3,
+  "avg_s": 10.7,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "13316447578737225357026702171465597443147415868165853161202310730878584654286",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Francisca Jorge",
+   "title": "ITF W35 Vigo Women: Celia Cervino Ruiz vs Francisca Jorge",
+   "their_price": 0.62,
+   "my_price": 0.62,
+   "slippage_pct": 0.0,
+   "lag_s": 10.0,
+   "shares": 79.53,
+   "cost": 49.31,
+   "fee": 0.56,
+   "opened": 1786457206,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787011200
+  },
   {
    "token": "94846897484381815562163807288403114709066377232684041501595611666261437202302",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2101,28 +2121,6 @@
    "pnl": -55.04,
    "settled": 1785414639,
    "end_ts": 1785369600
-  },
-  {
-   "token": "49689086638781123153263269337649600392273111259209599236468134989844879829316",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "1win",
-   "title": "Dota 2: Nigma Galaxy vs 1win - Game 2 Winner",
-   "their_price": 0.9427,
-   "my_price": 0.9427,
-   "slippage_pct": 0.0,
-   "lag_s": 7.3,
-   "shares": 59.44,
-   "cost": 56.04,
-   "fee": 0.1,
-   "opened": 1785411832,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": 3.3,
-   "settled": 1785411917,
-   "end_ts": 1785369600,
-   "sold_shares": 59.44,
-   "sold_proceeds": 59.44
   }
  ],
  "missed": [
@@ -3083,12 +3081,12 @@
  ],
  "missed_pnl": 20720.51,
  "last_fill": {
-  "ts": 1786456196,
+  "ts": 1786457215,
   "side": "BUY",
-  "price": 0.78,
-  "shares": 63.23,
-  "title": "Will the price of Ethereum be above $1,900 on August 11?",
-  "outcome": "No"
+  "price": 0.62,
+  "shares": 79.53,
+  "title": "ITF W35 Vigo Women: Celia Cervino Ruiz vs Francisca Jorge",
+  "outcome": "Francisca Jorge"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3125,11 +3123,11 @@
    "realized": 174.77,
    "n": 16,
    "wins": 2,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 49.31,
+   "open_n": 1,
    "miss_n": 14,
    "miss_pnl": 440.9,
-   "last_ts": 1785925830
+   "last_ts": 1786457206
   },
   "LSB1": {
    "realized": -397.16,
@@ -3192,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786456265
+ "updated": 1786457222
 }
