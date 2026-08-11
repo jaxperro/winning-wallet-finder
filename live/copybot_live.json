@@ -2137,7 +2137,8 @@
    "status": "lost",
    "pnl": -43.9,
    "settled": 1786460556,
-   "name": "Kruto2027"
+   "name": "Kruto2027",
+   "exit_checked": true
   },
   {
    "ts": 1785958766,
@@ -3190,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786460556
+ "updated": 1786461227
 }
