@@ -21020,8 +21020,8 @@
     }
   },
   "hwm": 3600.1933566560215,
-  "feed_sig": "02cdb8218dd3a93e9f1d4d04dd2af5be",
-  "feed_pushed_at": 1786479792.7905357,
+  "feed_sig": "9d07bb47fbcd7372b914a9c062c34efe",
+  "feed_pushed_at": 1786479940.5652444,
   "missed": [
     {
       "ts": 1783889397,
