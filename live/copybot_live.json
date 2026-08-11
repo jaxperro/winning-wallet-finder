@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.32,
+ "stake": 48.59,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 546.72,
- "deployed": 1869.05,
+ "cash": 609.82,
+ "deployed": 1819.73,
  "reserve": 0.0,
- "realized": 1415.73,
+ "realized": 1429.51,
  "adjustments": 0.03,
- "ledger_drift": -0.02,
- "open_count": 38,
- "fees_paid": 477.03,
+ "ledger_drift": -0.01,
+ "open_count": 37,
+ "fees_paid": 477.04,
  "fee_rate": 0.03,
  "lag": {
   "n": 428,
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "94846897484381815562163807288403114709066377232684041501595611666261437202302",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Ethereum be above $1,900 on August 11?",
+   "their_price": 0.78,
+   "my_price": 0.78,
+   "slippage_pct": 0.0,
+   "lag_s": 11.3,
+   "shares": 63.23,
+   "cost": 49.32,
+   "fee": 0.33,
+   "opened": 1786456185,
+   "status": "closed",
+   "exit_price": 0.9979,
+   "pnl": 13.45,
+   "settled": 1786461572,
+   "end_ts": 1786406400,
+   "sold_shares": 63.23,
+   "sold_proceeds": 63.1
+  },
   {
    "token": "21223226011943147995787591472366702123511343160408904343308111540440246076026",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -89,26 +111,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1787011200
-  },
-  {
-   "token": "94846897484381815562163807288403114709066377232684041501595611666261437202302",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Ethereum be above $1,900 on August 11?",
-   "their_price": 0.78,
-   "my_price": 0.78,
-   "slippage_pct": 0.0,
-   "lag_s": 11.3,
-   "shares": 63.23,
-   "cost": 49.32,
-   "fee": 0.33,
-   "opened": 1786456185,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786406400
   },
   {
    "token": "54168830547435529454436627291590270129722808725775536743528705116159111874519",
@@ -3082,23 +3084,23 @@
  ],
  "missed_pnl": 20676.61,
  "last_fill": {
-  "ts": 1786457215,
-  "side": "BUY",
-  "price": 0.62,
-  "shares": 79.53,
-  "title": "ITF W35 Vigo Women: Celia Cervino Ruiz vs Francisca Jorge",
-  "outcome": "Francisca Jorge"
+  "ts": 1786461571,
+  "side": "SELL",
+  "price": 0.998,
+  "shares": 63.23,
+  "title": "Will the price of Ethereum be above $1,900 on August 11?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 511.34,
-   "n": 107,
+   "realized": 524.79,
+   "n": 108,
    "wins": 39,
-   "open_cost": 710.99,
-   "open_n": 14,
+   "open_cost": 661.67,
+   "open_n": 13,
    "miss_n": 154,
    "miss_pnl": 113326.61,
-   "last_ts": 1786456185
+   "last_ts": 1786461572
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3191,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786461227
+ "updated": 1786461572
 }
