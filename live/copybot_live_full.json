@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786481971,
+ "updated": 1786522000,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 524.79,
@@ -56,11 +56,11 @@
    "realized": -86.31,
    "n": 54,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 49.19,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786383015
+   "last_ts": 1786521980
   },
   "BikesAreTheBikes": {
    "realized": 55.09,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "105996216775030833597187112688301335665231707951948564552107280368142255537289",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "DN SOOPers",
+   "title": "LoL: DN SOOPers vs Nongshim Red Force - Game 1 Winner",
+   "their_price": 0.4309,
+   "my_price": 0.4309,
+   "slippage_pct": 0.0,
+   "lag_s": 0.7,
+   "shares": 114.16,
+   "cost": 49.19,
+   "fee": 0.8399,
+   "opened": 1786521980,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786492800
+  },
   {
    "token": "15886027499946795909098276041690237519380186875237795420801329039781177259342",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
