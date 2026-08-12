@@ -2130,6 +2130,21 @@
  ],
  "missed": [
   {
+   "ts": 1786549546,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "95659968482643585182512992327973398148494916712890352616447490449893562877730",
+   "cond": "0xd177065bbb8af64b7eacea93ed9bc8b24869c8a5471fa1e6547352a5a6c80bd2",
+   "title": "Will the next Grok model (4.6+) debut at a score of at least 1480 by December 31, 2026?",
+   "outcome": "No",
+   "price": 0.928,
+   "stake": 47.96,
+   "reason": "maker bid unfilled (102s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1786540744,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "1118463852891260387925307362698332549317433261605384045096778267783254709750",
@@ -3063,26 +3078,9 @@
    "settled": 1785854393,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1785794792,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "91055215141400171032349291180455453315879372168040806088662189239076731092652",
-   "cond": "0xc0e8be14f224376ce44307bc7cb4569fa30942c638e81a06b6a8d5630df0abd1",
-   "title": "Will Rocket Lab USA, Inc. (RKLB) hit (HIGH) $72 in August?",
-   "outcome": "Yes",
-   "price": 0.1,
-   "stake": 40.54,
-   "reason": "thin book ($5 within 5c < $50)",
-   "status": "sold",
-   "pnl": 339.09,
-   "settled": 1785854393,
-   "name": "0xbadaf319",
-   "exit_checked": true,
-   "exit_price": 0.9408
   }
  ],
- "missed_pnl": 15810.81,
+ "missed_pnl": 15808.86,
  "last_fill": {
   "ts": 1786547857,
   "side": "SELL",
@@ -3098,7 +3096,7 @@
    "wins": 39,
    "open_cost": 394.46,
    "open_n": 9,
-   "miss_n": 156,
+   "miss_n": 157,
    "miss_pnl": 113276.27,
    "last_ts": 1786547859
   },
@@ -3193,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786547859
+ "updated": 1786549554
 }
