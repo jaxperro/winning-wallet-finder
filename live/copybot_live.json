@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.18,
+ "stake": 49.17,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 627.91,
- "deployed": 1830.96,
+ "cash": 578.34,
+ "deployed": 1880.13,
  "reserve": 0.0,
- "realized": 1458.84,
+ "realized": 1458.44,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 38,
- "fees_paid": 477.93,
+ "open_count": 39,
+ "fees_paid": 478.33,
  "fee_rate": 0.03,
  "lag": {
-  "n": 430,
-  "n24": 4,
+  "n": 431,
+  "n24": 5,
   "basis": "24h",
-  "avg_s": 10.7,
+  "avg_s": 10.0,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "90124365027179498944135537873011406007424798856804275766237849764473331663944",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Anyone's Legend",
+   "title": "LoL: EDward Gaming vs Anyone's Legend - Game 1 Winner",
+   "their_price": 0.73,
+   "my_price": 0.73,
+   "slippage_pct": 0.0,
+   "lag_s": 7.1,
+   "shares": 67.36,
+   "cost": 49.17,
+   "fee": 0.4,
+   "opened": 1786526913,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786492800
+  },
   {
    "token": "105996216775030833597187112688301335665231707951948564552107280368142255537289",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2101,26 +2121,6 @@
    "pnl": -56.49,
    "settled": 1785443983,
    "end_ts": 1785369600
-  },
-  {
-   "token": "634630064714299321077497320934035372668565093802737701187762655182629990503",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Hanwha Life Esports",
-   "title": "LoL: Hanwha Life Esports vs Dplus KIA - Game 1 Winner",
-   "their_price": 0.62,
-   "my_price": 0.62,
-   "slippage_pct": 0.0,
-   "lag_s": 1.7,
-   "shares": 90.44,
-   "cost": 56.07,
-   "fee": 0.64,
-   "opened": 1785406012,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -56.71,
-   "settled": 1785419952,
-   "end_ts": 1785369600
   }
  ],
  "missed": [
@@ -3081,12 +3081,12 @@
  ],
  "missed_pnl": 20626.45,
  "last_fill": {
-  "ts": 1786521980,
+  "ts": 1786526920,
   "side": "BUY",
-  "price": 0.4309,
-  "shares": 114.16,
-  "title": "LoL: DN SOOPers vs Nongshim Red Force - Game 1 Winner",
-  "outcome": "DN SOOPers"
+  "price": 0.73,
+  "shares": 67.36,
+  "title": "LoL: EDward Gaming vs Anyone's Legend - Game 1 Winner",
+  "outcome": "Anyone's Legend"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3143,11 +3143,11 @@
    "realized": -86.31,
    "n": 54,
    "wins": 0,
-   "open_cost": 49.19,
-   "open_n": 1,
+   "open_cost": 98.36,
+   "open_n": 2,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786521980
+   "last_ts": 1786526913
   },
   "BikesAreTheBikes": {
    "realized": 55.09,
@@ -3190,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786522000
+ "updated": 1786526988
 }

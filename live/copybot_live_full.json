@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786522000,
+ "updated": 1786526988,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 524.79,
@@ -56,11 +56,11 @@
    "realized": -86.31,
    "n": 54,
    "wins": 0,
-   "open_cost": 49.19,
-   "open_n": 1,
+   "open_cost": 98.36,
+   "open_n": 2,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786521980
+   "last_ts": 1786526913
   },
   "BikesAreTheBikes": {
    "realized": 55.09,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "90124365027179498944135537873011406007424798856804275766237849764473331663944",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Anyone's Legend",
+   "title": "LoL: EDward Gaming vs Anyone's Legend - Game 1 Winner",
+   "their_price": 0.73,
+   "my_price": 0.73,
+   "slippage_pct": 0.0,
+   "lag_s": 7.1,
+   "shares": 67.36,
+   "cost": 49.17,
+   "fee": 0.3983,
+   "opened": 1786526913,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786492800
+  },
   {
    "token": "105996216775030833597187112688301335665231707951948564552107280368142255537289",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
