@@ -2125,6 +2125,36 @@
  ],
  "missed": [
   {
+   "ts": 1786540763,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "115534871393944226831319356978723418599549011716127351050996618780320247898492",
+   "cond": "0x562a66dd8c0ec620142e7de751bf0c30b9fb5120f65342f6cfa00eb7a8830985",
+   "title": "SSVg Velbert vs. Borussia Monchengladbach: O/U 3.5",
+   "outcome": "Over",
+   "price": 0.26,
+   "stake": 47.2,
+   "reason": "thin book ($13 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
+   "ts": 1786540744,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "1118463852891260387925307362698332549317433261605384045096778267783254709750",
+   "cond": "0xc6e1aaf0d16559f11bc1013b5dd3901dddcd6a71809209ec6fa90748587c7a68",
+   "title": "Will Borussia Monchengladbach win on 2026-08-12?",
+   "outcome": "Yes",
+   "price": 0.8493,
+   "stake": 7.36,
+   "reason": "maker bid unfilled (84s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1786540739,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "12816737707556083048957476999993845601210133169615287068080825521015304431377",
@@ -3043,42 +3073,9 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.9408
-  },
-  {
-   "ts": 1785578341,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "42899432488342704988410057610915628594524688649436238250083617450163825293663",
-   "cond": "0xa754dbf949dd2b1fbafa3d846564288df3e8e3da4b4062306055bee6b372d4fa",
-   "title": "Will Palantir Technologies Inc. (PLTR) hit (HIGH) $150 in August?",
-   "outcome": "No",
-   "price": 0.5799,
-   "stake": 28.15,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 3.17,
-   "settled": 1785854392,
-   "name": "0xbadaf319",
-   "exit_checked": true,
-   "exit_price": 0.6592
-  },
-  {
-   "ts": 1785838288,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "66711702808511448322611227108148154237187065963992292280195651046556289653359",
-   "cond": "0xe2e4bc40275b304dc7e468e3b617527e03db83a121d8d87881b7b8b16ad78a68",
-   "title": "Will Palantir Technologies Inc. (PLTR) hit (LOW) $111 Week of August 3 2026?",
-   "outcome": "No",
-   "price": 0.94,
-   "stake": 50.03,
-   "reason": "maker bid unfilled (116s)",
-   "status": "sold",
-   "pnl": 2.3,
-   "settled": 1785851047,
-   "name": "0xbadaf319",
-   "exit_price": 0.9854
   }
  ],
- "missed_pnl": 20648.74,
+ "missed_pnl": 15814.49,
  "last_fill": {
   "ts": 1786526920,
   "side": "BUY",
@@ -3124,7 +3121,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 15,
+   "miss_n": 17,
    "miss_pnl": 397.0,
    "last_ts": 1786464121
   },
@@ -3189,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786540739
+ "updated": 1786540764
 }

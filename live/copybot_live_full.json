@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786540739,
+ "updated": 1786540764,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 524.79,
@@ -38,7 +38,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 15,
+   "miss_n": 17,
    "miss_pnl": 397.0,
    "last_ts": 1786464121
   },
@@ -8006,6 +8006,36 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786540763,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "115534871393944226831319356978723418599549011716127351050996618780320247898492",
+   "cond": "0x562a66dd8c0ec620142e7de751bf0c30b9fb5120f65342f6cfa00eb7a8830985",
+   "title": "SSVg Velbert vs. Borussia Monchengladbach: O/U 3.5",
+   "outcome": "Over",
+   "price": 0.26,
+   "stake": 47.2,
+   "reason": "thin book ($13 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
+   "ts": 1786540744,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "1118463852891260387925307362698332549317433261605384045096778267783254709750",
+   "cond": "0xc6e1aaf0d16559f11bc1013b5dd3901dddcd6a71809209ec6fa90748587c7a68",
+   "title": "Will Borussia Monchengladbach win on 2026-08-12?",
+   "outcome": "Yes",
+   "price": 0.8493,
+   "stake": 7.36,
+   "reason": "maker bid unfilled (84s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1786540739,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
