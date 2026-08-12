@@ -2128,6 +2128,21 @@
  ],
  "missed": [
   {
+   "ts": 1786565958,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "62617141377167369014526407022480228428988361649185671203729881996113160458100",
+   "cond": "0x50252667cc26fd14fed4893784989dce489339f41264c683491b60989bc02dc1",
+   "title": "Will Kai and Speed finish their Minecraft marathon by August 20?",
+   "outcome": "Yes",
+   "price": 0.8311,
+   "stake": 6.38,
+   "reason": "maker bid unfilled (123s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1786553497,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "428028705768133458775628964948946925100428752499736728482724687802346198593",
@@ -2318,22 +2333,6 @@
    "settled": 1786550736,
    "name": "0xbadaf319",
    "exit_price": 0.3007
-  },
-  {
-   "ts": 1784438567,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "63579552197509143589959693779993809440480166595009463744830254978620312708977",
-   "cond": "0x46d3552e03b57d3dd99685973c0e2df2e1f177c70c3641fe17d539e3a4a23a22",
-   "title": "Will Trump's approval rating hit 46% in 2026?",
-   "outcome": "No",
-   "price": 0.769,
-   "stake": 61.58,
-   "reason": "book unreliable (spread 0.13 > 0.08)",
-   "status": "sold",
-   "pnl": 8.93,
-   "settled": 1786550734,
-   "name": "0xbadaf319",
-   "exit_price": 0.8888
   },
   {
    "ts": 1786549546,
@@ -3081,7 +3080,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 15940.61,
+ "missed_pnl": 15931.68,
  "last_fill": {
   "ts": 1786554356,
   "side": "BUY",
@@ -3097,7 +3096,7 @@
    "wins": 39,
    "open_cost": 394.46,
    "open_n": 9,
-   "miss_n": 157,
+   "miss_n": 158,
    "miss_pnl": 119141.98,
    "last_ts": 1786547859
   },
@@ -3192,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786556486
+ "updated": 1786565969
 }
