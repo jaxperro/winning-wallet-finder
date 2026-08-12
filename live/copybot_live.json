@@ -2125,6 +2125,22 @@
  ],
  "missed": [
   {
+   "ts": 1786540739,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "12816737707556083048957476999993845601210133169615287068080825521015304431377",
+   "cond": "0xc6be6d4a544c1f31c0f88b000cafacbb06d64cc378d08d233ea4ab2a4dbef09a",
+   "title": "SSVg Velbert vs. Borussia Monchengladbach: O/U 5.5",
+   "outcome": "Over",
+   "price": 0.52,
+   "stake": 47.2,
+   "reason": "thin book ($8 within 5c < $50)",
+   "status": "sold",
+   "pnl": -4.32,
+   "settled": 1786542211,
+   "name": "Kruto2027",
+   "exit_price": 0.4874
+  },
+  {
    "ts": 1786540763,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "115534871393944226831319356978723418599549011716127351050996618780320247898492",
@@ -2149,21 +2165,6 @@
    "price": 0.8493,
    "stake": 7.36,
    "reason": "maker bid unfilled (84s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
-  },
-  {
-   "ts": 1786540739,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "12816737707556083048957476999993845601210133169615287068080825521015304431377",
-   "cond": "0xc6be6d4a544c1f31c0f88b000cafacbb06d64cc378d08d233ea4ab2a4dbef09a",
-   "title": "SSVg Velbert vs. Borussia Monchengladbach: O/U 5.5",
-   "outcome": "Over",
-   "price": 0.52,
-   "stake": 47.2,
-   "reason": "thin book ($8 within 5c < $50)",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -3075,7 +3076,7 @@
    "exit_price": 0.9408
   }
  ],
- "missed_pnl": 15814.49,
+ "missed_pnl": 15810.17,
  "last_fill": {
   "ts": 1786526920,
   "side": "BUY",
@@ -3122,7 +3123,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 17,
-   "miss_pnl": 397.0,
+   "miss_pnl": 392.68,
    "last_ts": 1786464121
   },
   "LSB1": {
@@ -3186,5 +3187,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786540764
+ "updated": 1786542212
 }
