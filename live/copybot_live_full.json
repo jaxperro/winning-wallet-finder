@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786550745,
+ "updated": 1786553503,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 728.58,
@@ -38,7 +38,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 17,
+   "miss_n": 18,
    "miss_pnl": 478.7,
    "last_ts": 1786464121
   },
@@ -8010,6 +8010,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786553497,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "428028705768133458775628964948946925100428752499736728482724687802346198593",
+   "cond": "0x7c806cbaa3650ece7c6ec9a45b420469161ca8609dc909b9c01f854664aaab41",
+   "title": "Will FC Bayern Munich Legends vs. RB Leipzig end in a draw?",
+   "outcome": "No",
+   "price": 0.5215,
+   "stake": 38.64,
+   "reason": "maker bid unfilled (66s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1786540763,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",

@@ -2130,6 +2130,21 @@
  ],
  "missed": [
   {
+   "ts": 1786553497,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "428028705768133458775628964948946925100428752499736728482724687802346198593",
+   "cond": "0x7c806cbaa3650ece7c6ec9a45b420469161ca8609dc909b9c01f854664aaab41",
+   "title": "Will FC Bayern Munich Legends vs. RB Leipzig end in a draw?",
+   "outcome": "No",
+   "price": 0.5215,
+   "stake": 38.64,
+   "reason": "maker bid unfilled (66s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1786540763,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "115534871393944226831319356978723418599549011716127351050996618780320247898492",
@@ -2304,22 +2319,6 @@
    "settled": 1786550736,
    "name": "0xbadaf319",
    "exit_price": 0.3007
-  },
-  {
-   "ts": 1783889397,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "18802393565291712436899729429089924858104497792982518694284454990866908025798",
-   "cond": "0x9ea0030337e6416cfbd5e9a52ffb4c80575953b45a52bc513f2d7ecbe299d5f2",
-   "title": "Will the average monthly Ethereum gas price hit 25 Gwei before 2027?",
-   "outcome": "No",
-   "price": 0.009,
-   "stake": 62.98,
-   "reason": "price 0.009 outside [0.01,0.99]",
-   "status": "sold",
-   "pnl": 5804.2,
-   "settled": 1786550734,
-   "name": "0xbadaf319",
-   "exit_price": 0.8427
   },
   {
    "ts": 1784438567,
@@ -3083,7 +3082,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 21759.95,
+ "missed_pnl": 15955.75,
  "last_fill": {
   "ts": 1786547857,
   "side": "SELL",
@@ -3129,7 +3128,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 17,
+   "miss_n": 18,
    "miss_pnl": 478.7,
    "last_ts": 1786464121
   },
@@ -3194,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786550745
+ "updated": 1786553503
 }
