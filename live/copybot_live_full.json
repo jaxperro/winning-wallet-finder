@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1786546400,
+ "updated": 1786547656,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 524.79,
-   "n": 108,
+   "realized": 525.82,
+   "n": 109,
    "wins": 39,
-   "open_cost": 673.02,
-   "open_n": 14,
+   "open_cost": 663.74,
+   "open_n": 13,
    "miss_n": 156,
    "miss_pnl": 113276.27,
-   "last_ts": 1786470000
+   "last_ts": 1786547593
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -73,14 +73,14 @@
    "last_ts": 1786364866
   },
   "JuiceFarm": {
-   "realized": -245.12,
-   "n": 11,
-   "wins": 5,
-   "open_cost": 49.33,
-   "open_n": 1,
+   "realized": -216.7,
+   "n": 12,
+   "wins": 6,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 4,
    "miss_pnl": 37.21,
-   "last_ts": 1786459878
+   "last_ts": 1786547650
   },
   "0x41558102": {
    "realized": 0.0,
@@ -104,6 +104,48 @@
   }
  },
  "bets": [
+  {
+   "token": "54168830547435529454436627291590270129722808725775536743528705116159111874519",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Dplus KIA",
+   "title": "LoL: KT Rolster vs Dplus KIA (BO3) - LCK Round 3-4 Legend Group",
+   "their_price": 0.63,
+   "my_price": 0.63,
+   "slippage_pct": 0.0,
+   "lag_s": 0.7,
+   "shares": 78.3,
+   "cost": 49.33,
+   "fee": 0.5476,
+   "opened": 1786393577,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 28.42,
+   "settled": 1786547650,
+   "end_ts": 1786492800
+  },
+  {
+   "token": "6237386819428750235511557154093150991879160039847931747938354455286350107208",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Le Pen endorses non-Bardella PM by December 31, 2026?",
+   "their_price": 0.9269,
+   "my_price": 0.86,
+   "slippage_pct": -0.0722,
+   "lag_s": 0.9,
+   "shares": 10.8,
+   "cost": 9.28,
+   "fee": 0.039,
+   "opened": 1784063558,
+   "status": "closed",
+   "exit_price": 0.9587,
+   "pnl": 1.03,
+   "settled": 1786547593,
+   "end_ts": 1798675200,
+   "sold_shares": 10.79431580455323,
+   "sold_proceeds": 10.348561236454218
+  },
   {
    "token": "90124365027179498944135537873011406007424798856804275766237849764473331663944",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -225,26 +267,6 @@
    "pnl": -49.67,
    "settled": 1786459878,
    "end_ts": 1786406400
-  },
-  {
-   "token": "54168830547435529454436627291590270129722808725775536743528705116159111874519",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "Dplus KIA",
-   "title": "LoL: KT Rolster vs Dplus KIA (BO3) - LCK Round 3-4 Legend Group",
-   "their_price": 0.63,
-   "my_price": 0.63,
-   "slippage_pct": 0.0,
-   "lag_s": 0.7,
-   "shares": 78.3,
-   "cost": 49.33,
-   "fee": 0.5476,
-   "opened": 1786393577,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786492800
   },
   {
    "token": "80816336957278030669860087258457821819123973887451237624766856723962249646287",
@@ -1484,7 +1506,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1790726400
+   "end_ts": 1790726400,
+   "sold_shares": 34.70491721524038,
+   "sold_proceeds": 32.92021684744664
   },
   {
    "token": "8380715925577845977184977030716387784969501288623224112825735013253473276536",
@@ -2976,7 +3000,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1830297600
+   "end_ts": 1830297600,
+   "sold_shares": 3.3973029775285637,
+   "sold_proceeds": 3.04839996173638
   },
   {
    "token": "45117272123752214028376460723544361926835506941716663290099518852020253462421",
@@ -5663,28 +5689,6 @@
    "sold_proceeds": 63.633153958333324
   },
   {
-   "token": "6237386819428750235511557154093150991879160039847931747938354455286350107208",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Le Pen endorses non-Bardella PM by December 31, 2026?",
-   "their_price": 0.9269,
-   "my_price": 0.86,
-   "slippage_pct": -0.0722,
-   "lag_s": 0.9,
-   "shares": 10.8,
-   "cost": 9.28,
-   "fee": 0.039,
-   "opened": 1784063558,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1798675200,
-   "sold_shares": 10.643738163159625,
-   "sold_proceeds": 10.20572705026928
-  },
-  {
    "token": "16167991169842969662552149172415147847102093356587677921265845709187217219794",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -6131,8 +6135,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1798761600,
-   "sold_shares": 289.13534307034956,
-   "sold_proceeds": 277.1696648526736
+   "sold_shares": 290.13442856817386,
+   "sold_proceeds": 278.09686315167295
   },
   {
    "key": "113717050736693090954094949076546722767581299124112759312610889973919287772155",
@@ -7391,8 +7395,8 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "sold_shares": 87.82469918750483,
-   "sold_proceeds": 85.36648043800103,
+   "sold_shares": 114.380341716928,
+   "sold_proceeds": 110.61104752678115,
    "end_ts": 1809043200
   },
   {
@@ -7434,8 +7438,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1798761600,
-   "sold_shares": 54.62747543342732,
-   "sold_proceeds": 51.818257509263326
+   "sold_shares": 55.51039670383477,
+   "sold_proceeds": 52.66484480355097
   },
   {
    "key": "244048590847349569142622450288686721247802348946192951002087804863968899",
