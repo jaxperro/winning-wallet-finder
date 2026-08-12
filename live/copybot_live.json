@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 720.09,
- "deployed": 1677.88,
+ "cash": 708.93,
+ "deployed": 1688.93,
  "reserve": 0.0,
- "realized": 1397.94,
+ "realized": 1397.83,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 31,
- "fees_paid": 478.43,
+ "open_count": 32,
+ "fees_paid": 478.54,
  "fee_rate": 0.03,
  "lag": {
-  "n": 431,
-  "n24": 3,
+  "n": 432,
+  "n24": 4,
   "basis": "24h",
-  "avg_s": 7.1,
+  "avg_s": 39.3,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "12901503982787647441429771765025737399487337273250608810988203666001942559982",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Yes",
+   "title": "Will FC Bayern Munich Legends vs. RB Leipzig end in a draw?",
+   "their_price": 0.6552,
+   "my_price": 0.6552,
+   "slippage_pct": 0.0,
+   "lag_s": 101.2,
+   "shares": 16.85,
+   "cost": 11.04,
+   "fee": 0.11,
+   "opened": 1786554255,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786752000
+  },
   {
    "token": "72380260523779452108747496691590035418744958761813904753644512394906005337193",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2104,28 +2124,6 @@
    "end_ts": 1798761600,
    "sold_shares": 67.22,
    "sold_proceeds": 63.07
-  },
-  {
-   "token": "64268764042079970141370201979497971145194836965078827125217869938686952808386",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Bloomberg IPO by March 31, 2027?",
-   "their_price": 0.63,
-   "my_price": 0.63,
-   "slippage_pct": 0.0,
-   "lag_s": 0.8,
-   "shares": 85.04,
-   "cost": 53.58,
-   "fee": 0.59,
-   "opened": 1785475179,
-   "status": "closed",
-   "exit_price": 0.9293,
-   "pnl": 24.85,
-   "settled": 1785488258,
-   "end_ts": 1830211200,
-   "sold_shares": 85.03,
-   "sold_proceeds": 79.02
   }
  ],
  "missed": [
@@ -3084,12 +3082,12 @@
  ],
  "missed_pnl": 15955.75,
  "last_fill": {
-  "ts": 1786547857,
-  "side": "SELL",
-  "price": 0.95,
-  "shares": 0.27,
-  "title": "Mohammed Ghalibaf out as Speaker of Iran Parliament by Septe",
-  "outcome": "No"
+  "ts": 1786554356,
+  "side": "BUY",
+  "price": 0.6552,
+  "shares": 16.85,
+  "title": "Will FC Bayern Munich Legends vs. RB Leipzig end in a draw?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3126,11 +3124,11 @@
    "realized": 204.43,
    "n": 17,
    "wins": 3,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 11.04,
+   "open_n": 1,
    "miss_n": 18,
    "miss_pnl": 478.7,
-   "last_ts": 1786464121
+   "last_ts": 1786554255
   },
   "LSB1": {
    "realized": -397.16,
@@ -3193,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786553503
+ "updated": 1786554363
 }
