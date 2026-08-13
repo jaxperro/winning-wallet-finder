@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786619329,
+ "updated": 1786620639,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 728.58,
@@ -69,7 +69,7 @@
    "open_cost": 1398.99,
    "open_n": 23,
    "miss_n": 57,
-   "miss_pnl": -727.63,
+   "miss_pnl": -782.57,
    "last_ts": 1786594342
   },
   "JuiceFarm": {
@@ -8120,6 +8120,21 @@
  ],
  "missed": [
   {
+   "ts": 1785438136,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "62474359384438151756967307997575848219189410783384033652191452044688986782350",
+   "cond": "0x0cfaa8fabad4d452be63950f47b07339ce192820df5d64569496fb91eb55b502",
+   "title": "Will Sofia host Eurovision 2027?",
+   "outcome": "Yes",
+   "price": 0.6686,
+   "stake": 54.4,
+   "reason": "no ask side on the book at copy time",
+   "status": "lost",
+   "pnl": -54.94,
+   "settled": 1786620637,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1786613407,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "39070506168532996720098699972119270490920295330713192878910708706961717041332",
@@ -10170,21 +10185,6 @@
    "settled": 1785443023,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1785438136,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "62474359384438151756967307997575848219189410783384033652191452044688986782350",
-   "cond": "0x0cfaa8fabad4d452be63950f47b07339ce192820df5d64569496fb91eb55b502",
-   "title": "Will Sofia host Eurovision 2027?",
-   "outcome": "Yes",
-   "price": 0.6686,
-   "stake": 54.4,
-   "reason": "no ask side on the book at copy time",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784482284,

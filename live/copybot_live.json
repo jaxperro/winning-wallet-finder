@@ -2124,6 +2124,21 @@
  ],
  "missed": [
   {
+   "ts": 1785438136,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "62474359384438151756967307997575848219189410783384033652191452044688986782350",
+   "cond": "0x0cfaa8fabad4d452be63950f47b07339ce192820df5d64569496fb91eb55b502",
+   "title": "Will Sofia host Eurovision 2027?",
+   "outcome": "Yes",
+   "price": 0.6686,
+   "stake": 54.4,
+   "reason": "no ask side on the book at copy time",
+   "status": "lost",
+   "pnl": -54.94,
+   "settled": 1786620637,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1786613407,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "39070506168532996720098699972119270490920295330713192878910708706961717041332",
@@ -3058,24 +3073,9 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1785956086,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "83148755782129672545061829336942774987155028452435468770344013725833558912903",
-   "cond": "0xd8b1ee6b352978f7e8fedfbe67e73c229573514a5830d238cd7c95c18f10369f",
-   "title": "Will Tabi launch a token by December 31, 2027?",
-   "outcome": "Yes",
-   "price": 0.4157,
-   "stake": 34.27,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 15897.55,
+ "missed_pnl": 15842.61,
  "last_fill": {
   "ts": 1786619261,
   "side": "BUY",
@@ -3152,7 +3152,7 @@
    "open_cost": 1398.99,
    "open_n": 23,
    "miss_n": 57,
-   "miss_pnl": -727.63,
+   "miss_pnl": -782.57,
    "last_ts": 1786594342
   },
   "JuiceFarm": {
@@ -3186,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786619329
+ "updated": 1786620639
 }
