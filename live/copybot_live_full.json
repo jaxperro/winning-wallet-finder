@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786641472,
+ "updated": 1786656369,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -9,7 +9,7 @@
    "open_cost": 424.99,
    "open_n": 11,
    "miss_n": 160,
-   "miss_pnl": 119142.4,
+   "miss_pnl": 119143.52,
    "last_ts": 1786641472
   },
   "gkmgkldfmg": {
@@ -8144,6 +8144,22 @@
  ],
  "missed": [
   {
+   "ts": 1786478200,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "38117101935565340676082212110824196837805166167562510718204169833601135217606",
+   "cond": "0xee52eead928533108382b223aecac6b53602c80bd6e32a59303ed6dc5fb35f79",
+   "title": "Will Beezie launch a token by December 31, 2027?",
+   "outcome": "Yes",
+   "price": 0.58,
+   "stake": 35.59,
+   "reason": "maker bid unfilled (73s)",
+   "status": "sold",
+   "pnl": 1.12,
+   "settled": 1786656368,
+   "name": "0xbadaf319",
+   "exit_price": 0.6127
+  },
+  {
    "ts": 1786565958,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "62617141377167369014526407022480228428988361649185671203729881996113160458100",
@@ -8507,21 +8523,6 @@
    "settled": 1786479940,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1786478200,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "38117101935565340676082212110824196837805166167562510718204169833601135217606",
-   "cond": "0xee52eead928533108382b223aecac6b53602c80bd6e32a59303ed6dc5fb35f79",
-   "title": "Will Beezie launch a token by December 31, 2027?",
-   "outcome": "Yes",
-   "price": 0.58,
-   "stake": 35.59,
-   "reason": "maker bid unfilled (73s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1786396563,
