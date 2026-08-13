@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.93,
+ "stake": 48.72,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 581.26,
- "deployed": 1815.36,
+ "cash": 668.43,
+ "deployed": 1767.42,
  "reserve": 0.0,
- "realized": 1396.59,
+ "realized": 1435.81,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 36,
+ "open_count": 35,
  "fees_paid": 479.78,
  "fee_rate": 0.03,
  "lag": {
@@ -64,11 +64,13 @@
    "cost": 47.94,
    "fee": 0.65,
    "opened": 1786619252,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786579200
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 38.58,
+   "settled": 1786621551,
+   "end_ts": 1786579200,
+   "sold_shares": 87.17,
+   "sold_proceeds": 87.17
   },
   {
    "token": "18670935020993642909381098165616875081874974673910239706875622888002650768601",
@@ -2136,7 +2138,8 @@
    "status": "lost",
    "pnl": -54.94,
    "settled": 1786620637,
-   "name": "BikesAreTheBikes"
+   "name": "BikesAreTheBikes",
+   "exit_checked": true
   },
   {
    "ts": 1786613407,
@@ -3077,9 +3080,9 @@
  ],
  "missed_pnl": 15842.61,
  "last_fill": {
-  "ts": 1786619261,
-  "side": "BUY",
-  "price": 0.55,
+  "ts": 1786621543,
+  "side": "SELL",
+  "price": 1.0,
   "shares": 87.17,
   "title": "LoL: Gen.G vs Hanwha Life Esports - Game 1 Winner",
   "outcome": "Gen.G"
@@ -3136,14 +3139,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -185.91,
-   "n": 56,
+   "realized": -147.33,
+   "n": 57,
    "wins": 0,
-   "open_cost": 47.94,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786619252
+   "last_ts": 1786621551
   },
   "BikesAreTheBikes": {
    "realized": 55.09,
@@ -3186,5 +3189,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786620639
+ "updated": 1786621607
 }
