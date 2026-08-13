@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 708.93,
- "deployed": 1688.93,
+ "cash": 683.83,
+ "deployed": 1713.95,
  "reserve": 0.0,
- "realized": 1397.83,
+ "realized": 1397.75,
  "adjustments": 0.03,
  "ledger_drift": -0.02,
- "open_count": 32,
- "fees_paid": 478.54,
+ "open_count": 33,
+ "fees_paid": 478.62,
  "fee_rate": 0.03,
  "lag": {
-  "n": 432,
-  "n24": 3,
+  "n": 433,
+  "n24": 4,
   "basis": "24h",
-  "avg_s": 7.1,
+  "avg_s": 4.0,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "67909545658137017298388452642618716238741019969038957639063237894003904410273",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Neutrl FDV above $500M one day after launch?",
+   "their_price": 0.8979,
+   "my_price": 0.8979,
+   "slippage_pct": 0.0,
+   "lag_s": 0.9,
+   "shares": 27.87,
+   "cost": 25.02,
+   "fee": 0.08,
+   "opened": 1786594023,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1830297600
+  },
   {
    "token": "12901503982787647441429771765025737399487337273250608810988203666001942559982",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2102,28 +2122,6 @@
    "pnl": -54.18,
    "settled": 1785500192,
    "end_ts": 1785456000
-  },
-  {
-   "token": "34320045222277936713720830397426891082987734367890243003396143984338989258132",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Revolut's valuation hit (LOW) $75B by December 31?",
-   "their_price": 0.93,
-   "my_price": 0.93,
-   "slippage_pct": 0.0,
-   "lag_s": 0.4,
-   "shares": 67.22,
-   "cost": 62.51,
-   "fee": 0.13,
-   "opened": 1785345581,
-   "status": "closed",
-   "exit_price": 0.9383,
-   "pnl": 0.43,
-   "settled": 1785494769,
-   "end_ts": 1798761600,
-   "sold_shares": 67.22,
-   "sold_proceeds": 63.07
   }
  ],
  "missed": [
@@ -3083,23 +3081,23 @@
  ],
  "missed_pnl": 15883.03,
  "last_fill": {
-  "ts": 1786554356,
+  "ts": 1786594023,
   "side": "BUY",
-  "price": 0.6552,
-  "shares": 16.85,
-  "title": "Will FC Bayern Munich Legends vs. RB Leipzig end in a draw?",
-  "outcome": "Yes"
+  "price": 0.8979,
+  "shares": 27.87,
+  "title": "Neutrl FDV above $500M one day after launch?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 728.58,
    "n": 113,
    "wins": 39,
-   "open_cost": 394.46,
-   "open_n": 9,
+   "open_cost": 419.48,
+   "open_n": 10,
    "miss_n": 158,
    "miss_pnl": 119141.98,
-   "last_ts": 1786547859
+   "last_ts": 1786594023
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3192,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786581125
+ "updated": 1786594033
 }
