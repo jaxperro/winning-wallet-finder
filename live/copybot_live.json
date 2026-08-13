@@ -2126,6 +2126,22 @@
  ],
  "missed": [
   {
+   "ts": 1786565958,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "62617141377167369014526407022480228428988361649185671203729881996113160458100",
+   "cond": "0x50252667cc26fd14fed4893784989dce489339f41264c683491b60989bc02dc1",
+   "title": "Will Kai and Speed finish their Minecraft marathon by August 20?",
+   "outcome": "Yes",
+   "price": 0.8311,
+   "stake": 6.38,
+   "reason": "maker bid unfilled (123s)",
+   "status": "sold",
+   "pnl": 0.42,
+   "settled": 1786637933,
+   "name": "0xbadaf319",
+   "exit_price": 0.8935
+  },
+  {
    "ts": 1785438136,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "62474359384438151756967307997575848219189410783384033652191452044688986782350",
@@ -2186,21 +2202,6 @@
    "settled": 1786580177,
    "name": "BikesAreTheBikes",
    "exit_checked": true
-  },
-  {
-   "ts": 1786565958,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "62617141377167369014526407022480228428988361649185671203729881996113160458100",
-   "cond": "0x50252667cc26fd14fed4893784989dce489339f41264c683491b60989bc02dc1",
-   "title": "Will Kai and Speed finish their Minecraft marathon by August 20?",
-   "outcome": "Yes",
-   "price": 0.8311,
-   "stake": 6.38,
-   "reason": "maker bid unfilled (123s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1786553497,
@@ -3078,7 +3079,7 @@
    "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 15842.61,
+ "missed_pnl": 15843.03,
  "last_fill": {
   "ts": 1786621543,
   "side": "SELL",
@@ -3095,7 +3096,7 @@
    "open_cost": 424.99,
    "open_n": 11,
    "miss_n": 160,
-   "miss_pnl": 119141.98,
+   "miss_pnl": 119142.4,
    "last_ts": 1786613155
   },
   "gkmgkldfmg": {
@@ -3189,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786621607
+ "updated": 1786637934
 }
