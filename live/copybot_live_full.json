@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786656369,
+ "updated": 1786657242,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -9,7 +9,7 @@
    "open_cost": 424.99,
    "open_n": 11,
    "miss_n": 160,
-   "miss_pnl": 119143.52,
+   "miss_pnl": 119147.14,
    "last_ts": 1786641472
   },
   "gkmgkldfmg": {
@@ -8144,6 +8144,21 @@
  ],
  "missed": [
   {
+   "ts": 1786549546,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "95659968482643585182512992327973398148494916712890352616447490449893562877730",
+   "cond": "0xd177065bbb8af64b7eacea93ed9bc8b24869c8a5471fa1e6547352a5a6c80bd2",
+   "title": "Will the next Grok model (4.6+) debut at a score of at least 1480 by December 31, 2026?",
+   "outcome": "No",
+   "price": 0.928,
+   "stake": 47.96,
+   "reason": "maker bid unfilled (102s)",
+   "status": "won",
+   "pnl": 3.62,
+   "settled": 1786657242,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1786478200,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "38117101935565340676082212110824196837805166167562510718204169833601135217606",
@@ -8460,21 +8475,6 @@
    "settled": 1786550734,
    "name": "0xbadaf319",
    "exit_price": 0.8888
-  },
-  {
-   "ts": 1786549546,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "95659968482643585182512992327973398148494916712890352616447490449893562877730",
-   "cond": "0xd177065bbb8af64b7eacea93ed9bc8b24869c8a5471fa1e6547352a5a6c80bd2",
-   "title": "Will the next Grok model (4.6+) debut at a score of at least 1480 by December 31, 2026?",
-   "outcome": "No",
-   "price": 0.928,
-   "stake": 47.96,
-   "reason": "maker bid unfilled (102s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1786540744,
