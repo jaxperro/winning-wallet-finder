@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.72,
+ "stake": 48.74,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 668.43,
- "deployed": 1767.42,
+ "cash": 636.36,
+ "deployed": 1800.55,
  "reserve": 0.0,
- "realized": 1435.81,
+ "realized": 1436.88,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 35,
- "fees_paid": 479.78,
+ "open_count": 36,
+ "fees_paid": 479.9,
  "fee_rate": 0.03,
  "lag": {
-  "n": 436,
-  "n24": 4,
+  "n": 437,
+  "n24": 5,
   "basis": "24h",
-  "avg_s": 5.2,
+  "avg_s": 2.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "87321705595873539870873608779959212084492436638457343616253519969438751803765",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the next Google Gemini Flash model added to the Arena Leaderboard debut at a score of",
+   "their_price": 0.92,
+   "my_price": 0.92,
+   "slippage_pct": 0.0,
+   "lag_s": 2.2,
+   "shares": 52.95,
+   "cost": 48.71,
+   "fee": 0.12,
+   "opened": 1786641379,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": null,
+   "sold_shares": 16.94,
+   "sold_proceeds": 16.76
+  },
   {
    "token": "65953536747744476714235242995231118379615497746730363094348731234467357002326",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2102,26 +2124,6 @@
    "end_ts": 1785456000,
    "sold_shares": 1.06,
    "sold_proceeds": 1.06
-  },
-  {
-   "token": "66731682772014681185953064174456659922804074645921817840242815858628390435891",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Up",
-   "title": "Meta (META) Up or Down on July 31?",
-   "their_price": 0.9,
-   "my_price": 0.9,
-   "slippage_pct": 0.0,
-   "lag_s": 7.0,
-   "shares": 60.03,
-   "cost": 54.03,
-   "fee": 0.16,
-   "opened": 1785504768,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 5.84,
-   "settled": 1785529424,
-   "end_ts": 1785456000
   }
  ],
  "missed": [
@@ -3081,23 +3083,23 @@
  ],
  "missed_pnl": 15843.03,
  "last_fill": {
-  "ts": 1786621543,
+  "ts": 1786641451,
   "side": "SELL",
-  "price": 1.0,
-  "shares": 87.17,
-  "title": "LoL: Gen.G vs Hanwha Life Esports - Game 1 Winner",
-  "outcome": "Gen.G"
+  "price": 0.99,
+  "shares": 8.47,
+  "title": "Will the next Google Gemini Flash model added to the Arena L",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 728.58,
    "n": 113,
    "wins": 39,
-   "open_cost": 424.99,
-   "open_n": 11,
+   "open_cost": 473.7,
+   "open_n": 12,
    "miss_n": 160,
    "miss_pnl": 119142.4,
-   "last_ts": 1786613155
+   "last_ts": 1786641379
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -3190,5 +3192,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786640786
+ "updated": 1786641452
 }

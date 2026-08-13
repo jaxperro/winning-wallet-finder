@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1786640786,
+ "updated": 1786641452,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 728.58,
    "n": 113,
    "wins": 39,
-   "open_cost": 424.99,
-   "open_n": 11,
+   "open_cost": 473.7,
+   "open_n": 12,
    "miss_n": 160,
    "miss_pnl": 119142.4,
-   "last_ts": 1786613155
+   "last_ts": 1786641379
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -104,6 +104,28 @@
   }
  },
  "bets": [
+  {
+   "token": "87321705595873539870873608779959212084492436638457343616253519969438751803765",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the next Google Gemini Flash model added to the Arena Leaderboard debut at a score of",
+   "their_price": 0.92,
+   "my_price": 0.92,
+   "slippage_pct": 0.0,
+   "lag_s": 2.2,
+   "shares": 52.95,
+   "cost": 48.71,
+   "fee": 0.1169,
+   "opened": 1786641379,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": null,
+   "sold_shares": 16.935166617092523,
+   "sold_proceeds": 16.76078520643632
+  },
   {
    "token": "65953536747744476714235242995231118379615497746730363094348731234467357002326",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
