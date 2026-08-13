@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1786608442,
+ "updated": 1786613171,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 728.58,
    "n": 113,
    "wins": 39,
-   "open_cost": 419.48,
-   "open_n": 10,
-   "miss_n": 158,
+   "open_cost": 424.99,
+   "open_n": 11,
+   "miss_n": 159,
    "miss_pnl": 119141.98,
-   "last_ts": 1786594023
+   "last_ts": 1786613155
   },
   "gkmgkldfmg": {
    "realized": 948.45,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "18670935020993642909381098165616875081874974673910239706875622888002650768601",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Critical Discord Incident by August 31?",
+   "their_price": 0.57,
+   "my_price": 0.57,
+   "slippage_pct": 0.0,
+   "lag_s": 15.7,
+   "shares": 9.67,
+   "cost": 5.51,
+   "fee": 0.0711,
+   "opened": 1786613155,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "70173106851316599378452717299161284730871676083661428980562753042668650152747",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -8079,6 +8099,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786613170,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "18670935020993642909381098165616875081874974673910239706875622888002650768601",
+   "cond": "0x2ce1a5a009430e7a4a5d2512c56ce39d921fa385861f7a19dddd824886018d1d",
+   "title": "Critical Discord Incident by August 31?",
+   "outcome": "No",
+   "price": 0.53,
+   "stake": 47.95,
+   "reason": "thin book ($38 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1786317765,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
