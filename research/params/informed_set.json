@@ -1,5 +1,5 @@
 {
- "generated_at": 1786138469,
+ "generated_at": 1786634433,
  "as_of_tape_ts": 1785931199,
  "method": "study_flow.informed_set FROZEN (top_n=150, z>=2.5, n>=6)",
  "wallets": [
@@ -108,8 +108,8 @@
   "0x2b358a81a9aa4904fad6981ae9ad62e52fe10bfe",
   "0x2f26606ccc45a934838a97d44a30c32012ae0d8f",
   "0x7d0caf83488431bb760f204d52bdf5246e2fa3b7",
-  "0x237f21a15396d2e56c7ca5f74cfbc6af9dade76e",
   "0x56cc7a163d7a56134a394b76abaa47c7bdcad589",
+  "0x237f21a15396d2e56c7ca5f74cfbc6af9dade76e",
   "0x147c2760baa011fdcd0d02ea0f610ffb0fd92540",
   "0x133a9901fcdb918685b90c93f8fd574521df504a",
   "0x35e701f088b6ef25fff6b902769c1cd8b85f8331",
