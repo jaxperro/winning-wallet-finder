@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786613412,
+ "updated": 1786619329,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 728.58,
@@ -56,11 +56,11 @@
    "realized": -185.91,
    "n": 56,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 47.94,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786539077
+   "last_ts": 1786619252
   },
   "BikesAreTheBikes": {
    "realized": 55.09,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "65953536747744476714235242995231118379615497746730363094348731234467357002326",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Gen.G",
+   "title": "LoL: Gen.G vs Hanwha Life Esports - Game 1 Winner",
+   "their_price": 0.55,
+   "my_price": 0.55,
+   "slippage_pct": 0.0,
+   "lag_s": 9.3,
+   "shares": 87.17,
+   "cost": 47.94,
+   "fee": 0.6472,
+   "opened": 1786619252,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786579200
+  },
   {
    "token": "18670935020993642909381098165616875081874974673910239706875622888002650768601",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
