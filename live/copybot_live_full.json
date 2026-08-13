@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786658399,
+ "updated": 1786659406,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -8,7 +8,7 @@
    "wins": 39,
    "open_cost": 424.99,
    "open_n": 11,
-   "miss_n": 160,
+   "miss_n": 161,
    "miss_pnl": 119142.06,
    "last_ts": 1786641472
   },
@@ -8143,6 +8143,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786659394,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "37667520174762086668132420659241412463804022716883098604893555888104597805675",
+   "cond": "0x1ff60bd285eb7f33fa1a5acef5e5a6a876c8635b134518f28e61f3acef546e9c",
+   "title": "Probable FDV above $300M one day after launch?",
+   "outcome": "No",
+   "price": 0.874,
+   "stake": 11.06,
+   "reason": "maker bid unfilled (69s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1786549546,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
