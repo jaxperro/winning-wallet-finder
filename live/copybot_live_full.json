@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786613171,
+ "updated": 1786613412,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 728.58,
@@ -8,7 +8,7 @@
    "wins": 39,
    "open_cost": 424.99,
    "open_n": 11,
-   "miss_n": 159,
+   "miss_n": 160,
    "miss_pnl": 119141.98,
    "last_ts": 1786613155
   },
@@ -8099,6 +8099,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786613407,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "39070506168532996720098699972119270490920295330713192878910708706961717041332",
+   "cond": "0x61f9d7afa905de87048f6ad5bec4cd384dbc66134d69263336c693b28c563f74",
+   "title": "Critical Discord Incident by September 30?",
+   "outcome": "Yes",
+   "price": 0.3995,
+   "stake": 47.95,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1786613170,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
