@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786707770,
+ "updated": 1786708455,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -63,14 +63,14 @@
    "last_ts": 1786695951
   },
   "BikesAreTheBikes": {
-   "realized": 5.27,
-   "n": 26,
-   "wins": 4,
-   "open_cost": 1496.54,
-   "open_n": 25,
+   "realized": 15.71,
+   "n": 27,
+   "wins": 5,
+   "open_cost": 1391.87,
+   "open_n": 24,
    "miss_n": 57,
-   "miss_pnl": -782.57,
-   "last_ts": 1786707767
+   "miss_pnl": -771.88,
+   "last_ts": 1786708449
   },
   "JuiceFarm": {
    "realized": -216.7,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "96493470136581654430268359631814450290137534659017161119334974730318350734648",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will Nigel Farage win the Clacton by-election?",
+   "their_price": 0.914,
+   "my_price": 0.907,
+   "slippage_pct": -0.0077,
+   "lag_s": 583.6,
+   "shares": 115.4,
+   "cost": 104.67,
+   "fee": 0.292,
+   "opened": 1784236753,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 10.44,
+   "settled": 1786708449,
+   "end_ts": 1814313600
+  },
   {
    "token": "87783316912319145558027581244844462010245247230692530143913716079748532252374",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -5227,26 +5247,6 @@
    "sold_proceeds": 54.8366613441015
   },
   {
-   "token": "96493470136581654430268359631814450290137534659017161119334974730318350734648",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "Will Nigel Farage win the Clacton by-election?",
-   "their_price": 0.914,
-   "my_price": 0.907,
-   "slippage_pct": -0.0077,
-   "lag_s": 583.6,
-   "shares": 115.4,
-   "cost": 104.67,
-   "fee": 0.292,
-   "opened": 1784236753,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1814313600
-  },
-  {
    "token": "31227781598316880280877760465683086508096359894740658336497080463300979927822",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -8237,6 +8237,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1784236753,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "96493470136581654430268359631814450290137534659017161119334974730318350734648",
+   "cond": "0x95a7c8f39ccda84bf59b54c474f2a006cbc4167737630365f416670466b37ab9",
+   "title": "Will Nigel Farage win the Clacton by-election?",
+   "outcome": "Yes",
+   "price": 0.905,
+   "stake": 104.67,
+   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
+   "status": "won",
+   "pnl": 10.69,
+   "settled": 1786708386,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1786659394,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -12527,21 +12542,6 @@
    "settled": 1784289655,
    "name": "gkmgkldfmg",
    "exit_price": 0.6578
-  },
-  {
-   "ts": 1784236753,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "96493470136581654430268359631814450290137534659017161119334974730318350734648",
-   "cond": "0x95a7c8f39ccda84bf59b54c474f2a006cbc4167737630365f416670466b37ab9",
-   "title": "Will Nigel Farage win the Clacton by-election?",
-   "outcome": "Yes",
-   "price": 0.905,
-   "stake": 104.67,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1784207355,
