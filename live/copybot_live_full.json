@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786727815,
+ "updated": 1786732315,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -68,7 +68,7 @@
    "wins": 5,
    "open_cost": 1343.11,
    "open_n": 23,
-   "miss_n": 57,
+   "miss_n": 58,
    "miss_pnl": -887.54,
    "last_ts": 1786708795
   },
@@ -8259,6 +8259,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786732315,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "106335826079264931347181345558330414525733792371805698042055926343403911976742",
+   "cond": "0x0082737f1d0dc831a848e92b46fbf572f133dd535bfaf96cc123e5aa7577ce9c",
+   "title": "Will Japan Q2 GDP growth (annualized) be between 0.0% and 0.8%?",
+   "outcome": "Yes",
+   "price": 0.2,
+   "stake": 48.08,
+   "reason": "thin book ($3 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1786713579,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
