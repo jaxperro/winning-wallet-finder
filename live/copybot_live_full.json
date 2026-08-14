@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786708455,
+ "updated": 1786708798,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -63,14 +63,14 @@
    "last_ts": 1786695951
   },
   "BikesAreTheBikes": {
-   "realized": 15.71,
-   "n": 27,
+   "realized": -33.41,
+   "n": 28,
    "wins": 5,
-   "open_cost": 1391.87,
-   "open_n": 24,
+   "open_cost": 1343.11,
+   "open_n": 23,
    "miss_n": 57,
    "miss_pnl": -771.88,
-   "last_ts": 1786708449
+   "last_ts": 1786708795
   },
   "JuiceFarm": {
    "realized": -216.7,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "60521816700202179342317746207548118223260392285250958195635932536737515315087",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Nigel Farage win 60\u201370% of votes in the Clacton parliamentary by-election?",
+   "their_price": 0.752,
+   "my_price": 0.752,
+   "slippage_pct": 0.0,
+   "lag_s": 1.1,
+   "shares": 64.84,
+   "cost": 48.76,
+   "fee": 0.3628,
+   "opened": 1786666777,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -49.12,
+   "settled": 1786708795,
+   "end_ts": 1814313600
+  },
   {
    "token": "96493470136581654430268359631814450290137534659017161119334974730318350734648",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -165,26 +185,6 @@
    "end_ts": 1786665600,
    "sold_shares": 71.73918622926666,
    "sold_proceeds": 69.5243823328105
-  },
-  {
-   "token": "60521816700202179342317746207548118223260392285250958195635932536737515315087",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will Nigel Farage win 60\u201370% of votes in the Clacton parliamentary by-election?",
-   "their_price": 0.752,
-   "my_price": 0.752,
-   "slippage_pct": 0.0,
-   "lag_s": 1.1,
-   "shares": 64.84,
-   "cost": 48.76,
-   "fee": 0.3628,
-   "opened": 1786666777,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1814313600
   },
   {
    "token": "11579523374077486340625849389871632811698420338620172235121664865203221472748",
