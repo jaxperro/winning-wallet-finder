@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786713375,
+ "updated": 1786713579,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -38,7 +38,7 @@
    "wins": 3,
    "open_cost": 11.04,
    "open_n": 1,
-   "miss_n": 20,
+   "miss_n": 21,
    "miss_pnl": 464.78,
    "last_ts": 1786554255
   },
@@ -8259,6 +8259,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786713579,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "33457922300690449044166101961665130527890622638552438186608973373357299513929",
+   "cond": "0xc5062a25993985f853faf65a06e267a03f4f05f58c64807afd53942622f0f7a7",
+   "title": "Spread: AC Milan (-1.5)",
+   "outcome": "Manchester United",
+   "price": 0.75,
+   "stake": 48.08,
+   "reason": "thin book ($10 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1786709545,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",

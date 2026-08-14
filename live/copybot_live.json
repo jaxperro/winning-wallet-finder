@@ -2128,6 +2128,21 @@
  ],
  "missed": [
   {
+   "ts": 1786713579,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "33457922300690449044166101961665130527890622638552438186608973373357299513929",
+   "cond": "0xc5062a25993985f853faf65a06e267a03f4f05f58c64807afd53942622f0f7a7",
+   "title": "Spread: AC Milan (-1.5)",
+   "outcome": "Manchester United",
+   "price": 0.75,
+   "stake": 48.08,
+   "reason": "thin book ($10 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1786709545,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "104143571606909199329708263924791152790335278869472883788501031610059362131174",
@@ -3065,25 +3080,9 @@
    "settled": 1786019030,
    "name": "1kto1m",
    "exit_price": 0.7083
-  },
-  {
-   "ts": 1785549850,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "8310650677069487821478025416478130051168635736368290554555541536659374960027",
-   "cond": "0x31327c6fbdc70a44d97f8e8973f536b6a748e01b4c0ca5549ed0910c703b1d7b",
-   "title": "Bab el-Mandeb Strait effectively closed by August 31?",
-   "outcome": "No",
-   "price": 0.85,
-   "stake": 57.23,
-   "reason": "price moved 0.47\u21920.85",
-   "status": "sold",
-   "pnl": -9.28,
-   "settled": 1786016926,
-   "name": "BikesAreTheBikes",
-   "exit_price": 0.7221
   }
  ],
- "missed_pnl": 15830.66,
+ "missed_pnl": 15835.49,
  "last_fill": {
   "ts": 1786711211,
   "side": "SELL",
@@ -3129,7 +3128,7 @@
    "wins": 3,
    "open_cost": 11.04,
    "open_n": 1,
-   "miss_n": 20,
+   "miss_n": 21,
    "miss_pnl": 464.78,
    "last_ts": 1786554255
   },
@@ -3194,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786713375
+ "updated": 1786713579
 }
