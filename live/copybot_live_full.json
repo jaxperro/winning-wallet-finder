@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786709554,
+ "updated": 1786709968,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -56,11 +56,11 @@
    "realized": -127.05,
    "n": 58,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 47.45,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786695951
+   "last_ts": 1786709891
   },
   "BikesAreTheBikes": {
    "realized": -33.41,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "57642239257019372975669108773625819616832896160298225963974371260902497073711",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Nongshim Red Force",
+   "title": "LoL: Nongshim Red Force vs HANJIN BRION - Game 2 Winner",
+   "their_price": 0.58,
+   "my_price": 0.58,
+   "slippage_pct": 0.0,
+   "lag_s": 4.6,
+   "shares": 81.81,
+   "cost": 47.45,
+   "fee": 0.5979,
+   "opened": 1786709891,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786665600
+  },
   {
    "token": "60521816700202179342317746207548118223260392285250958195635932536737515315087",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

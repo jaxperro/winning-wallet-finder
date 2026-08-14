@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.46,
+ "stake": 47.44,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 685.05,
- "deployed": 1687.71,
+ "cash": 637.0,
+ "deployed": 1735.16,
  "reserve": 0.0,
- "realized": 1372.72,
+ "realized": 1372.12,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 35,
- "fees_paid": 483.15,
+ "open_count": 36,
+ "fees_paid": 483.75,
  "fee_rate": 0.03,
  "lag": {
-  "n": 441,
-  "n24": 5,
+  "n": 442,
+  "n24": 6,
   "basis": "24h",
-  "avg_s": 1.3,
+  "avg_s": 1.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "57642239257019372975669108773625819616832896160298225963974371260902497073711",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Nongshim Red Force",
+   "title": "LoL: Nongshim Red Force vs HANJIN BRION - Game 2 Winner",
+   "their_price": 0.58,
+   "my_price": 0.58,
+   "slippage_pct": 0.0,
+   "lag_s": 4.6,
+   "shares": 81.81,
+   "cost": 47.45,
+   "fee": 0.6,
+   "opened": 1786709891,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786665600
+  },
   {
    "token": "60521816700202179342317746207548118223260392285250958195635932536737515315087",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2102,26 +2122,6 @@
    "end_ts": 1785456000,
    "sold_shares": 12.48,
    "sold_proceeds": 12.35
-  },
-  {
-   "token": "115635155479667353862665794187637382945087171557088427227495541201629678991249",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Micron (MU) finish week of July 27 above $970?",
-   "their_price": 0.7,
-   "my_price": 0.6959,
-   "slippage_pct": 0.0,
-   "lag_s": 4.2,
-   "shares": 77.64,
-   "cost": 54.03,
-   "fee": 0.49,
-   "opened": 1785504757,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 23.12,
-   "settled": 1785534227,
-   "end_ts": 1785456000
   }
  ],
  "missed": [
@@ -3083,12 +3083,12 @@
  ],
  "missed_pnl": 15840.33,
  "last_fill": {
-  "ts": 1786695951,
-  "side": "SELL",
-  "price": 0.97,
-  "shares": 17.13,
-  "title": "LoL: T1 vs Dplus KIA - Game 1 Winner",
-  "outcome": "T1"
+  "ts": 1786709895,
+  "side": "BUY",
+  "price": 0.58,
+  "shares": 81.81,
+  "title": "LoL: Nongshim Red Force vs HANJIN BRION - Game 2 Winner",
+  "outcome": "Nongshim Red Force"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3145,11 +3145,11 @@
    "realized": -127.05,
    "n": 58,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 47.45,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786695951
+   "last_ts": 1786709891
   },
   "BikesAreTheBikes": {
    "realized": -33.41,
@@ -3192,5 +3192,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786709554
+ "updated": 1786709968
 }
