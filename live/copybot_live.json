@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.25,
+ "stake": 48.24,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 726.91,
- "deployed": 1685.67,
+ "cash": 678.24,
+ "deployed": 1733.92,
  "reserve": 0.0,
- "realized": 1412.56,
+ "realized": 1412.14,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 35,
- "fees_paid": 484.06,
+ "open_count": 36,
+ "fees_paid": 484.48,
  "fee_rate": 0.03,
  "lag": {
-  "n": 443,
-  "n24": 6,
+  "n": 444,
+  "n24": 7,
   "basis": "24h",
-  "avg_s": 2.9,
+  "avg_s": 4.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "26418124513273531493042185776538890382070385858747044148067615795770766670254",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Elon Musk post 40-64 tweets from August 13 to August 15, 2026?",
+   "their_price": 0.71,
+   "my_price": 0.71,
+   "slippage_pct": 0.0,
+   "lag_s": 55.4,
+   "shares": 67.96,
+   "cost": 48.25,
+   "fee": 0.42,
+   "opened": 1786742656,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786752000
+  },
   {
    "token": "68738068644868341944434960825834721671808502341396366180204745788748636004884",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2100,28 +2120,6 @@
    "end_ts": 1788220800,
    "sold_shares": 24.3,
    "sold_proceeds": 23.43
-  },
-  {
-   "token": "29186422049166680837602032454275007649609188074464534125827790682823121106548",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Silver (XAGUSD) hit (LOW) $55 Week of July 27 2026?",
-   "their_price": 0.83,
-   "my_price": 0.83,
-   "slippage_pct": 0.0,
-   "lag_s": 1.2,
-   "shares": 9.61,
-   "cost": 7.98,
-   "fee": 0.04,
-   "opened": 1785408348,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 1.39,
-   "settled": 1785539367,
-   "end_ts": 1785456000,
-   "sold_shares": 9.5,
-   "sold_proceeds": 9.3
   }
  ],
  "missed": [
@@ -3082,12 +3080,12 @@
  ],
  "missed_pnl": 15991.09,
  "last_fill": {
-  "ts": 1786741309,
+  "ts": 1786742711,
   "side": "BUY",
-  "price": 0.83,
-  "shares": 57.92,
-  "title": "LoL: Ninjas in Pyjamas vs LNG Esports (BO3) - LPL Group Nirv",
-  "outcome": "Ninjas in Pyjamas"
+  "price": 0.71,
+  "shares": 67.96,
+  "title": "Will Elon Musk post 40-64 tweets from August 13 to August 15",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3154,11 +3152,11 @@
    "realized": -24.8,
    "n": 29,
    "wins": 6,
-   "open_cost": 1293.0,
-   "open_n": 22,
+   "open_cost": 1341.25,
+   "open_n": 23,
    "miss_n": 58,
    "miss_pnl": -887.54,
-   "last_ts": 1786742510
+   "last_ts": 1786742656
   },
   "JuiceFarm": {
    "realized": -216.7,
@@ -3191,5 +3189,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786742515
+ "updated": 1786742719
 }
