@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.08,
+ "stake": 48.07,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 716.28,
- "deployed": 1687.71,
+ "cash": 667.96,
+ "deployed": 1735.78,
  "reserve": 0.0,
- "realized": 1403.96,
+ "realized": 1403.71,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 35,
- "fees_paid": 483.82,
+ "open_count": 36,
+ "fees_paid": 484.06,
  "fee_rate": 0.03,
  "lag": {
-  "n": 442,
-  "n24": 5,
+  "n": 443,
+  "n24": 6,
   "basis": "24h",
-  "avg_s": 1.3,
+  "avg_s": 2.9,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "41894897616090042581435185363845209019415877168112506294380833466254784815261",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Ninjas in Pyjamas",
+   "title": "LoL: Ninjas in Pyjamas vs LNG Esports (BO3) - LPL Group Nirvana",
+   "their_price": 0.83,
+   "my_price": 0.83,
+   "slippage_pct": 0.0,
+   "lag_s": 26.4,
+   "shares": 57.92,
+   "cost": 48.07,
+   "fee": 0.25,
+   "opened": 1786741283,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786752000
+  },
   {
    "token": "57642239257019372975669108773625819616832896160298225963974371260902497073711",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2102,28 +2122,6 @@
    "end_ts": 1785456000,
    "sold_shares": 9.5,
    "sold_proceeds": 9.3
-  },
-  {
-   "token": "45110992399056657070414988111806772840513629662508128679624612897635752010841",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Silver (XAGUSD) hit (LOW) $52 Week of July 27 2026?",
-   "their_price": 0.77,
-   "my_price": 0.77,
-   "slippage_pct": 0.0,
-   "lag_s": 9.4,
-   "shares": 29.17,
-   "cost": 22.46,
-   "fee": 0.15,
-   "opened": 1785202403,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 6.43,
-   "settled": 1785539366,
-   "end_ts": 1785456000,
-   "sold_shares": 12.48,
-   "sold_proceeds": 12.35
   }
  ],
  "missed": [
@@ -3084,12 +3082,12 @@
  ],
  "missed_pnl": 15991.09,
  "last_fill": {
-  "ts": 1786711211,
-  "side": "SELL",
-  "price": 0.97,
-  "shares": 81.81,
-  "title": "LoL: Nongshim Red Force vs HANJIN BRION - Game 2 Winner",
-  "outcome": "Nongshim Red Force"
+  "ts": 1786741309,
+  "side": "BUY",
+  "price": 0.83,
+  "shares": 57.92,
+  "title": "LoL: Ninjas in Pyjamas vs LNG Esports (BO3) - LPL Group Nirv",
+  "outcome": "Ninjas in Pyjamas"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3166,11 +3164,11 @@
    "realized": -216.7,
    "n": 12,
    "wins": 6,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.07,
+   "open_n": 1,
    "miss_n": 4,
    "miss_pnl": 37.21,
-   "last_ts": 1786547650
+   "last_ts": 1786741283
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3193,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786735899
+ "updated": 1786741354
 }

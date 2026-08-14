@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786735899,
+ "updated": 1786741354,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -76,11 +76,11 @@
    "realized": -216.7,
    "n": 12,
    "wins": 6,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.07,
+   "open_n": 1,
    "miss_n": 4,
    "miss_pnl": 37.21,
-   "last_ts": 1786547650
+   "last_ts": 1786741283
   },
   "0x41558102": {
    "realized": 0.0,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "41894897616090042581435185363845209019415877168112506294380833466254784815261",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Ninjas in Pyjamas",
+   "title": "LoL: Ninjas in Pyjamas vs LNG Esports (BO3) - LPL Group Nirvana",
+   "their_price": 0.83,
+   "my_price": 0.83,
+   "slippage_pct": 0.0,
+   "lag_s": 26.4,
+   "shares": 57.92,
+   "cost": 48.07,
+   "fee": 0.2452,
+   "opened": 1786741283,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786752000
+  },
   {
    "token": "57642239257019372975669108773625819616832896160298225963974371260902497073711",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
