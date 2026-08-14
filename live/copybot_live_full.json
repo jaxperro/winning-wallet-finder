@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786684250,
+ "updated": 1786695558,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -56,11 +56,11 @@
    "realized": -147.33,
    "n": 57,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.78,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786621551
+   "last_ts": 1786695485
   },
   "BikesAreTheBikes": {
    "realized": 55.09,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "76927885864763654248913423328819352598474650695508330267711806458429349170329",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "T1",
+   "title": "LoL: T1 vs Dplus KIA - Game 1 Winner",
+   "their_price": 0.68,
+   "my_price": 0.68,
+   "slippage_pct": 0.0,
+   "lag_s": 6.6,
+   "shares": 71.74,
+   "cost": 48.78,
+   "fee": 0.4683,
+   "opened": 1786695485,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786665600
+  },
   {
    "token": "87783316912319145558027581244844462010245247230692530143913716079748532252374",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

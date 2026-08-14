@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.79,
+ "stake": 48.78,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 549.37,
- "deployed": 1889.89,
+ "cash": 500.12,
+ "deployed": 1938.68,
  "reserve": 0.0,
- "realized": 1439.23,
+ "realized": 1438.76,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 38,
- "fees_paid": 482.62,
+ "open_count": 39,
+ "fees_paid": 483.09,
  "fee_rate": 0.03,
  "lag": {
-  "n": 440,
-  "n24": 6,
+  "n": 441,
+  "n24": 7,
   "basis": "24h",
-  "avg_s": 1.8,
+  "avg_s": 2.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "76927885864763654248913423328819352598474650695508330267711806458429349170329",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "T1",
+   "title": "LoL: T1 vs Dplus KIA - Game 1 Winner",
+   "their_price": 0.68,
+   "my_price": 0.68,
+   "slippage_pct": 0.0,
+   "lag_s": 6.6,
+   "shares": 71.74,
+   "cost": 48.78,
+   "fee": 0.47,
+   "opened": 1786695485,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786665600
+  },
   {
    "token": "87783316912319145558027581244844462010245247230692530143913716079748532252374",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2100,28 +2120,6 @@
    "pnl": 2.51,
    "settled": 1785530906,
    "end_ts": 1785456000
-  },
-  {
-   "token": "112774766992396377485489579919863607374726156472090313068282277768607356552228",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $140 Week of July 27 2026?",
-   "their_price": 0.63,
-   "my_price": 0.63,
-   "slippage_pct": 0.0,
-   "lag_s": 6.7,
-   "shares": 48.8,
-   "cost": 30.74,
-   "fee": 0.34,
-   "opened": 1785111585,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -20.62,
-   "settled": 1785530905,
-   "end_ts": 1785456000,
-   "sold_shares": 11.27,
-   "sold_proceeds": 10.46
   }
  ],
  "missed": [
@@ -3084,12 +3082,12 @@
  ],
  "missed_pnl": 15840.33,
  "last_fill": {
-  "ts": 1786684243,
-  "side": "SELL",
-  "price": 0.994,
-  "shares": 26.54,
-  "title": "Neutrl FDV above $500M one day after launch?",
-  "outcome": "No"
+  "ts": 1786695491,
+  "side": "BUY",
+  "price": 0.68,
+  "shares": 71.74,
+  "title": "LoL: T1 vs Dplus KIA - Game 1 Winner",
+  "outcome": "T1"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3146,11 +3144,11 @@
    "realized": -147.33,
    "n": 57,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.78,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786621551
+   "last_ts": 1786695485
   },
   "BikesAreTheBikes": {
    "realized": 55.09,
@@ -3193,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786684250
+ "updated": 1786695558
 }
