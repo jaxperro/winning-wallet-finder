@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786734789,
+ "updated": 1786735899,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -8272,7 +8272,8 @@
    "status": "won",
    "pnl": 43.69,
    "settled": 1786734788,
-   "name": "Kruto2027"
+   "name": "Kruto2027",
+   "exit_checked": true
   },
   {
    "ts": 1786732315,
