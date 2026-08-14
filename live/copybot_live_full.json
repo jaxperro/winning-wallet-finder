@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786711731,
+ "updated": 1786713375,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -39,7 +39,7 @@
    "open_cost": 11.04,
    "open_n": 1,
    "miss_n": 20,
-   "miss_pnl": 463.56,
+   "miss_pnl": 464.78,
    "last_ts": 1786554255
   },
   "LSB1": {
@@ -8260,21 +8260,6 @@
  ],
  "missed": [
   {
-   "ts": 1786711730,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "39243072151150783562052451065312873006817450488260173561913254971232536696534",
-   "cond": "0xdf780b9f11f1b7299ed420e6ac16f54f30f6d87fd8db5bd3ec866b5928212855",
-   "title": "Qingdao Xihaian FC vs. Chongqing Tonglianglong FC: Chongqing Tonglianglong FC O/U 3.5 Corners",
-   "outcome": "Over",
-   "price": 0.52,
-   "stake": 48.08,
-   "reason": "thin book ($5 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
-  },
-  {
    "ts": 1786709545,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "104143571606909199329708263924791152790335278869472883788501031610059362131174",
@@ -8284,6 +8269,22 @@
    "price": 0.6,
    "stake": 14.47,
    "reason": "maker bid unfilled (97s)",
+   "status": "sold",
+   "pnl": 1.22,
+   "settled": 1786713374,
+   "name": "Kruto2027",
+   "exit_price": 0.6646
+  },
+  {
+   "ts": 1786711730,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "39243072151150783562052451065312873006817450488260173561913254971232536696534",
+   "cond": "0xdf780b9f11f1b7299ed420e6ac16f54f30f6d87fd8db5bd3ec866b5928212855",
+   "title": "Qingdao Xihaian FC vs. Chongqing Tonglianglong FC: Chongqing Tonglianglong FC O/U 3.5 Corners",
+   "outcome": "Over",
+   "price": 0.52,
+   "stake": 48.08,
+   "reason": "thin book ($5 within 5c < $50)",
    "status": "open",
    "pnl": null,
    "settled": null,
