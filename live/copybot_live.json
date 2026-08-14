@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.44,
+ "stake": 48.08,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 637.0,
- "deployed": 1735.16,
+ "cash": 716.28,
+ "deployed": 1687.71,
  "reserve": 0.0,
- "realized": 1372.12,
+ "realized": 1403.96,
  "adjustments": 0.03,
- "ledger_drift": -0.04,
- "open_count": 36,
- "fees_paid": 483.75,
+ "ledger_drift": -0.05,
+ "open_count": 35,
+ "fees_paid": 483.82,
  "fee_rate": 0.03,
  "lag": {
   "n": 442,
@@ -64,11 +64,13 @@
    "cost": 47.45,
    "fee": 0.6,
    "opened": 1786709891,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786665600
+   "status": "closed",
+   "exit_price": 0.9691,
+   "pnl": 31.24,
+   "settled": 1786711211,
+   "end_ts": 1786665600,
+   "sold_shares": 81.81,
+   "sold_proceeds": 79.28
   },
   {
    "token": "60521816700202179342317746207548118223260392285250958195635932536737515315087",
@@ -3083,9 +3085,9 @@
  ],
  "missed_pnl": 15840.33,
  "last_fill": {
-  "ts": 1786709895,
-  "side": "BUY",
-  "price": 0.58,
+  "ts": 1786711211,
+  "side": "SELL",
+  "price": 0.97,
   "shares": 81.81,
   "title": "LoL: Nongshim Red Force vs HANJIN BRION - Game 2 Winner",
   "outcome": "Nongshim Red Force"
@@ -3142,14 +3144,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -127.05,
-   "n": 58,
+   "realized": -95.81,
+   "n": 59,
    "wins": 0,
-   "open_cost": 47.45,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786709891
+   "last_ts": 1786711211
   },
   "BikesAreTheBikes": {
    "realized": -33.41,
@@ -3192,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786709968
+ "updated": 1786711211
 }
