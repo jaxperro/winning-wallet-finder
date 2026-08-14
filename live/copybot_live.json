@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.19,
+ "stake": 48.22,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 569.64,
- "deployed": 1889.89,
+ "deployed": 1841.14,
  "reserve": 0.0,
- "realized": 1459.5,
+ "realized": 1410.75,
  "adjustments": 0.03,
- "ledger_drift": -0.05,
- "open_count": 38,
+ "ledger_drift": -0.04,
+ "open_count": 37,
  "fees_paid": 483.15,
  "fee_rate": 0.03,
  "lag": {
@@ -51,6 +51,26 @@
  },
  "bets": [
   {
+   "token": "87783316912319145558027581244844462010245247230692530143913716079748532252374",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Nigel Farage win the 2026 Clacton by-election by between 20% and 40%?",
+   "their_price": 0.27,
+   "my_price": 0.27,
+   "slippage_pct": 0.0,
+   "lag_s": 1.3,
+   "shares": 180.57,
+   "cost": 48.75,
+   "fee": 1.07,
+   "opened": 1786683902,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -49.82,
+   "settled": 1786707767,
+   "end_ts": 1814313600
+  },
+  {
    "token": "76927885864763654248913423328819352598474650695508330267711806458429349170329",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "name": "AIcAIc",
@@ -71,26 +91,6 @@
    "end_ts": 1786665600,
    "sold_shares": 71.74,
    "sold_proceeds": 69.52
-  },
-  {
-   "token": "87783316912319145558027581244844462010245247230692530143913716079748532252374",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will Nigel Farage win the 2026 Clacton by-election by between 20% and 40%?",
-   "their_price": 0.27,
-   "my_price": 0.27,
-   "slippage_pct": 0.0,
-   "lag_s": 1.3,
-   "shares": 180.57,
-   "cost": 48.75,
-   "fee": 1.07,
-   "opened": 1786683902,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1814313600
   },
   {
    "token": "60521816700202179342317746207548118223260392285250958195635932536737515315087",
@@ -3153,14 +3153,14 @@
    "last_ts": 1786695951
   },
   "BikesAreTheBikes": {
-   "realized": 55.09,
-   "n": 25,
+   "realized": 5.27,
+   "n": 26,
    "wins": 4,
-   "open_cost": 1545.29,
-   "open_n": 26,
+   "open_cost": 1496.54,
+   "open_n": 25,
    "miss_n": 57,
    "miss_pnl": -782.57,
-   "last_ts": 1786683902
+   "last_ts": 1786707767
   },
   "JuiceFarm": {
    "realized": -216.7,
@@ -3193,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786705715
+ "updated": 1786707770
 }
