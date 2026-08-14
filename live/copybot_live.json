@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.76,
+ "stake": 48.73,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 572.82,
- "deployed": 1864.96,
+ "cash": 523.0,
+ "deployed": 1913.72,
  "reserve": 0.0,
- "realized": 1437.75,
+ "realized": 1436.68,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 37,
- "fees_paid": 481.55,
+ "open_count": 38,
+ "fees_paid": 482.61,
  "fee_rate": 0.03,
  "lag": {
-  "n": 439,
-  "n24": 5,
+  "n": 440,
+  "n24": 6,
   "basis": "24h",
-  "avg_s": 2.2,
+  "avg_s": 1.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "87783316912319145558027581244844462010245247230692530143913716079748532252374",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Nigel Farage win the 2026 Clacton by-election by between 20% and 40%?",
+   "their_price": 0.27,
+   "my_price": 0.27,
+   "slippage_pct": 0.0,
+   "lag_s": 1.3,
+   "shares": 180.57,
+   "cost": 48.75,
+   "fee": 1.07,
+   "opened": 1786683902,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1814313600
+  },
   {
    "token": "60521816700202179342317746207548118223260392285250958195635932536737515315087",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2100,28 +2120,6 @@
    "end_ts": 1785456000,
    "sold_shares": 11.27,
    "sold_proceeds": 10.46
-  },
-  {
-   "token": "78639892723644623147617890032845605442018473848411325154446303980329931711515",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Amazon.com, Inc. (AMZN) hit (HIGH) $280 in July?",
-   "their_price": 0.896,
-   "my_price": 0.896,
-   "slippage_pct": 0.0,
-   "lag_s": 1.6,
-   "shares": 59.86,
-   "cost": 53.63,
-   "fee": 0.17,
-   "opened": 1785484805,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 3.52,
-   "settled": 1785530703,
-   "end_ts": 1785542400,
-   "sold_shares": 58.93,
-   "sold_proceeds": 56.38
   }
  ],
  "missed": [
@@ -3084,11 +3082,11 @@
  ],
  "missed_pnl": 15840.33,
  "last_fill": {
-  "ts": 1786666778,
+  "ts": 1786683903,
   "side": "BUY",
-  "price": 0.752,
-  "shares": 64.84,
-  "title": "Will Nigel Farage win 60\u201370% of votes in the Clacton parliam",
+  "price": 0.27,
+  "shares": 180.57,
+  "title": "Will Nigel Farage win the 2026 Clacton by-election by betwee",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3156,11 +3154,11 @@
    "realized": 55.09,
    "n": 25,
    "wins": 4,
-   "open_cost": 1496.54,
-   "open_n": 25,
+   "open_cost": 1545.29,
+   "open_n": 26,
    "miss_n": 57,
    "miss_pnl": -782.57,
-   "last_ts": 1786666777
+   "last_ts": 1786683902
   },
   "JuiceFarm": {
    "realized": -216.7,
@@ -3193,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786680771
+ "updated": 1786683903
 }
