@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786666174,
+ "updated": 1786666785,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -66,11 +66,11 @@
    "realized": 55.09,
    "n": 25,
    "wins": 4,
-   "open_cost": 1447.78,
-   "open_n": 24,
+   "open_cost": 1496.54,
+   "open_n": 25,
    "miss_n": 57,
    "miss_pnl": -782.57,
-   "last_ts": 1786666173
+   "last_ts": 1786666777
   },
   "JuiceFarm": {
    "realized": -216.7,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "60521816700202179342317746207548118223260392285250958195635932536737515315087",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Nigel Farage win 60\u201370% of votes in the Clacton parliamentary by-election?",
+   "their_price": 0.752,
+   "my_price": 0.752,
+   "slippage_pct": 0.0,
+   "lag_s": 1.1,
+   "shares": 64.84,
+   "cost": 48.76,
+   "fee": 0.3628,
+   "opened": 1786666777,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1814313600
+  },
   {
    "token": "11579523374077486340625849389871632811698420338620172235121664865203221472748",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 621.94,
- "deployed": 1816.2,
+ "cash": 572.82,
+ "deployed": 1864.96,
  "reserve": 0.0,
- "realized": 1438.11,
+ "realized": 1437.75,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 36,
- "fees_paid": 481.18,
+ "open_count": 37,
+ "fees_paid": 481.55,
  "fee_rate": 0.03,
  "lag": {
-  "n": 438,
-  "n24": 6,
+  "n": 439,
+  "n24": 7,
   "basis": "24h",
-  "avg_s": 1.7,
+  "avg_s": 1.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "60521816700202179342317746207548118223260392285250958195635932536737515315087",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Nigel Farage win 60\u201370% of votes in the Clacton parliamentary by-election?",
+   "their_price": 0.752,
+   "my_price": 0.752,
+   "slippage_pct": 0.0,
+   "lag_s": 1.1,
+   "shares": 64.84,
+   "cost": 48.76,
+   "fee": 0.36,
+   "opened": 1786666777,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1814313600
+  },
   {
    "token": "11579523374077486340625849389871632811698420338620172235121664865203221472748",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2102,26 +2122,6 @@
    "end_ts": 1785542400,
    "sold_shares": 58.93,
    "sold_proceeds": 56.38
-  },
-  {
-   "token": "86679239858518906873492617617658695793360100462726529532253226646142736420327",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Tesla, Inc. (TSLA) hit (LOW) $270 in July?",
-   "their_price": 0.776,
-   "my_price": 0.776,
-   "slippage_pct": 0.0,
-   "lag_s": 4.4,
-   "shares": 82.51,
-   "cost": 64.03,
-   "fee": 0.43,
-   "opened": 1785235541,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 18.05,
-   "settled": 1785530452,
-   "end_ts": 1785542400
   }
  ],
  "missed": [
@@ -3084,12 +3084,12 @@
  ],
  "missed_pnl": 15840.33,
  "last_fill": {
-  "ts": 1786666173,
+  "ts": 1786666778,
   "side": "BUY",
-  "price": 0.1325,
-  "shares": 368.14,
-  "title": "Will New People (NL) gain the most seats in the next Russian",
-  "outcome": "Yes"
+  "price": 0.752,
+  "shares": 64.84,
+  "title": "Will Nigel Farage win 60\u201370% of votes in the Clacton parliam",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3156,11 +3156,11 @@
    "realized": 55.09,
    "n": 25,
    "wins": 4,
-   "open_cost": 1447.78,
-   "open_n": 24,
+   "open_cost": 1496.54,
+   "open_n": 25,
    "miss_n": 57,
    "miss_pnl": -782.57,
-   "last_ts": 1786666173
+   "last_ts": 1786666777
   },
   "JuiceFarm": {
    "realized": -216.7,
@@ -3193,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786666174
+ "updated": 1786666785
 }
