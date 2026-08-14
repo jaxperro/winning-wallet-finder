@@ -2128,6 +2128,21 @@
  ],
  "missed": [
   {
+   "ts": 1786711730,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "39243072151150783562052451065312873006817450488260173561913254971232536696534",
+   "cond": "0xdf780b9f11f1b7299ed420e6ac16f54f30f6d87fd8db5bd3ec866b5928212855",
+   "title": "Qingdao Xihaian FC vs. Chongqing Tonglianglong FC: Chongqing Tonglianglong FC O/U 3.5 Corners",
+   "outcome": "Over",
+   "price": 0.52,
+   "stake": 48.08,
+   "reason": "thin book ($5 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1786709545,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "104143571606909199329708263924791152790335278869472883788501031610059362131174",
@@ -3065,25 +3080,9 @@
    "settled": 1786016926,
    "name": "BikesAreTheBikes",
    "exit_price": 0.7221
-  },
-  {
-   "ts": 1784823420,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "45139241414469860954947578765028277034812078372494153843579493704976148448651",
-   "cond": "0x65791b55c71bf4314b7234f0406f052727201d521f68721d360563b3ac59a3a3",
-   "title": "Tuyo FDV above $500M one day after launch?",
-   "outcome": "No",
-   "price": 0.7499,
-   "stake": 35.36,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 1.33,
-   "settled": 1785995926,
-   "name": "0xbadaf319",
-   "exit_price": 0.7888
   }
  ],
- "missed_pnl": 15840.33,
+ "missed_pnl": 15829.44,
  "last_fill": {
   "ts": 1786711211,
   "side": "SELL",
@@ -3129,7 +3128,7 @@
    "wins": 3,
    "open_cost": 11.04,
    "open_n": 1,
-   "miss_n": 19,
+   "miss_n": 20,
    "miss_pnl": 463.56,
    "last_ts": 1786554255
   },
@@ -3194,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786711211
+ "updated": 1786711731
 }
