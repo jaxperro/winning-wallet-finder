@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786741354,
+ "updated": 1786742515,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -63,14 +63,14 @@
    "last_ts": 1786711211
   },
   "BikesAreTheBikes": {
-   "realized": -33.41,
-   "n": 28,
-   "wins": 5,
-   "open_cost": 1343.11,
-   "open_n": 23,
+   "realized": -24.8,
+   "n": 29,
+   "wins": 6,
+   "open_cost": 1293.0,
+   "open_n": 22,
    "miss_n": 58,
    "miss_pnl": -887.54,
-   "last_ts": 1786708795
+   "last_ts": 1786742510
   },
   "JuiceFarm": {
    "realized": -216.7,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "68738068644868341944434960825834721671808502341396366180204745788748636004884",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will Darline Graham Nordone win the first round of the South Carolina Republican Senate sp",
+   "their_price": 0.85,
+   "my_price": 0.85,
+   "slippage_pct": 0.0,
+   "lag_s": 7.9,
+   "shares": 58.95,
+   "cost": 50.11,
+   "fee": 0.2255,
+   "opened": 1785881774,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 8.61,
+   "settled": 1786742510,
+   "end_ts": 1786406400
+  },
   {
    "token": "41894897616090042581435185363845209019415877168112506294380833466254784815261",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -1280,26 +1300,6 @@
    "pnl": 27.64,
    "settled": 1785925830,
    "end_ts": 1786492800
-  },
-  {
-   "token": "68738068644868341944434960825834721671808502341396366180204745788748636004884",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "Will Darline Graham Nordone win the first round of the South Carolina Republican Senate sp",
-   "their_price": 0.85,
-   "my_price": 0.85,
-   "slippage_pct": 0.0,
-   "lag_s": 7.9,
-   "shares": 58.95,
-   "cost": 50.11,
-   "fee": 0.2255,
-   "opened": 1785881774,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786406400
   },
   {
    "token": "32819665155605755010236143779947009768327413152372332911300524837573851288404",
