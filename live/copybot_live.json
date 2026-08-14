@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.79,
+ "stake": 48.76,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 672.0,
- "deployed": 1767.42,
+ "cash": 621.94,
+ "deployed": 1816.2,
  "reserve": 0.0,
- "realized": 1439.38,
+ "realized": 1438.11,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 35,
- "fees_paid": 479.91,
+ "open_count": 36,
+ "fees_paid": 481.18,
  "fee_rate": 0.03,
  "lag": {
-  "n": 437,
-  "n24": 5,
+  "n": 438,
+  "n24": 6,
   "basis": "24h",
-  "avg_s": 2.2,
+  "avg_s": 1.7,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "11579523374077486340625849389871632811698420338620172235121664865203221472748",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will New People (NL) gain the most seats in the next Russian parliamentary election?",
+   "their_price": 0.1325,
+   "my_price": 0.1325,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 368.14,
+   "cost": 48.79,
+   "fee": 1.27,
+   "opened": 1786666173,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1790726400
+  },
   {
    "token": "87321705595873539870873608779959212084492436638457343616253519969438751803765",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2102,28 +2122,6 @@
    "pnl": 18.05,
    "settled": 1785530452,
    "end_ts": 1785542400
-  },
-  {
-   "token": "68654388570090540693504706309016258592141967889448520850585121976978344249779",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will Microsoft (MSFT) close above $450 on July 31?",
-   "their_price": 0.6,
-   "my_price": 0.6,
-   "slippage_pct": 0.0,
-   "lag_s": 4.2,
-   "shares": 17.5,
-   "cost": 10.5,
-   "fee": 0.13,
-   "opened": 1785504608,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 6.87,
-   "settled": 1785529502,
-   "end_ts": 1785456000,
-   "sold_shares": 1.06,
-   "sold_proceeds": 1.06
   }
  ],
  "missed": [
@@ -3086,12 +3084,12 @@
  ],
  "missed_pnl": 15840.33,
  "last_fill": {
-  "ts": 1786641465,
-  "side": "SELL",
-  "price": 0.99,
-  "shares": 27.55,
-  "title": "Will the next Google Gemini Flash model added to the Arena L",
-  "outcome": "No"
+  "ts": 1786666173,
+  "side": "BUY",
+  "price": 0.1325,
+  "shares": 368.14,
+  "title": "Will New People (NL) gain the most seats in the next Russian",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3158,11 +3156,11 @@
    "realized": 55.09,
    "n": 25,
    "wins": 4,
-   "open_cost": 1398.99,
-   "open_n": 23,
+   "open_cost": 1447.78,
+   "open_n": 24,
    "miss_n": 57,
    "miss_pnl": -782.57,
-   "last_ts": 1786594342
+   "last_ts": 1786666173
   },
   "JuiceFarm": {
    "realized": -216.7,
@@ -3195,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786659406
+ "updated": 1786666174
 }

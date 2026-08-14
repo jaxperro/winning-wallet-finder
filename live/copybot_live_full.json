@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786659406,
+ "updated": 1786666174,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -66,11 +66,11 @@
    "realized": 55.09,
    "n": 25,
    "wins": 4,
-   "open_cost": 1398.99,
-   "open_n": 23,
+   "open_cost": 1447.78,
+   "open_n": 24,
    "miss_n": 57,
    "miss_pnl": -782.57,
-   "last_ts": 1786594342
+   "last_ts": 1786666173
   },
   "JuiceFarm": {
    "realized": -216.7,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "11579523374077486340625849389871632811698420338620172235121664865203221472748",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will New People (NL) gain the most seats in the next Russian parliamentary election?",
+   "their_price": 0.1325,
+   "my_price": 0.1325,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 368.14,
+   "cost": 48.79,
+   "fee": 1.2697,
+   "opened": 1786666173,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1790726400
+  },
   {
    "token": "87321705595873539870873608779959212084492436638457343616253519969438751803765",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
