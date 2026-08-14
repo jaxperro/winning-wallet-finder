@@ -2135,10 +2135,12 @@
    "price": 0.905,
    "stake": 104.67,
    "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "won",
-   "pnl": 10.69,
+   "status": "sold",
+   "pnl": -104.97,
    "settled": 1786708386,
-   "name": "BikesAreTheBikes"
+   "name": "BikesAreTheBikes",
+   "exit_checked": true,
+   "exit_price": 0.0
   },
   {
    "ts": 1786659394,
@@ -3081,7 +3083,7 @@
    "exit_price": 0.7888
   }
  ],
- "missed_pnl": 15851.02,
+ "missed_pnl": 15735.36,
  "last_fill": {
   "ts": 1786695951,
   "side": "SELL",
@@ -3158,7 +3160,7 @@
    "open_cost": 1343.11,
    "open_n": 23,
    "miss_n": 57,
-   "miss_pnl": -771.88,
+   "miss_pnl": -887.54,
    "last_ts": 1786708795
   },
   "JuiceFarm": {
@@ -3192,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786708798
+ "updated": 1786709284
 }
