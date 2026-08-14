@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.73,
+ "stake": 48.79,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 523.0,
- "deployed": 1913.72,
+ "cash": 549.37,
+ "deployed": 1889.89,
  "reserve": 0.0,
- "realized": 1436.68,
+ "realized": 1439.23,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 38,
- "fees_paid": 482.61,
+ "fees_paid": 482.62,
  "fee_rate": 0.03,
  "lag": {
   "n": 440,
@@ -212,7 +212,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1830297600
+   "end_ts": 1830297600,
+   "sold_shares": 26.54,
+   "sold_proceeds": 26.37
   },
   {
    "token": "12901503982787647441429771765025737399487337273250608810988203666001942559982",
@@ -3082,11 +3084,11 @@
  ],
  "missed_pnl": 15840.33,
  "last_fill": {
-  "ts": 1786683903,
-  "side": "BUY",
-  "price": 0.27,
-  "shares": 180.57,
-  "title": "Will Nigel Farage win the 2026 Clacton by-election by betwee",
+  "ts": 1786684243,
+  "side": "SELL",
+  "price": 0.994,
+  "shares": 26.54,
+  "title": "Neutrl FDV above $500M one day after launch?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3191,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786683903
+ "updated": 1786684250
 }
