@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786709284,
+ "updated": 1786709554,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -38,7 +38,7 @@
    "wins": 3,
    "open_cost": 11.04,
    "open_n": 1,
-   "miss_n": 18,
+   "miss_n": 19,
    "miss_pnl": 463.56,
    "last_ts": 1786554255
   },
@@ -8237,6 +8237,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786709545,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "104143571606909199329708263924791152790335278869472883788501031610059362131174",
+   "cond": "0xe9c1dd0e33074e5b513ac1a08798a1060e43e14c654b6b42728dfa9c700e1915",
+   "title": "Navbahor vs. FC Bunyodkor: FC Bunyodkor 1st Half O/U 0.5",
+   "outcome": "Under",
+   "price": 0.6,
+   "stake": 14.47,
+   "reason": "maker bid unfilled (97s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1784236753,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

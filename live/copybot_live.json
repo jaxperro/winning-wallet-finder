@@ -2126,21 +2126,19 @@
  ],
  "missed": [
   {
-   "ts": 1784236753,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "96493470136581654430268359631814450290137534659017161119334974730318350734648",
-   "cond": "0x95a7c8f39ccda84bf59b54c474f2a006cbc4167737630365f416670466b37ab9",
-   "title": "Will Nigel Farage win the Clacton by-election?",
-   "outcome": "Yes",
-   "price": 0.905,
-   "stake": 104.67,
-   "reason": "order rejected: no orders found to match with FAK order (paper model: best a",
-   "status": "sold",
-   "pnl": -104.97,
-   "settled": 1786708386,
-   "name": "BikesAreTheBikes",
-   "exit_checked": true,
-   "exit_price": 0.0
+   "ts": 1786709545,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "104143571606909199329708263924791152790335278869472883788501031610059362131174",
+   "cond": "0xe9c1dd0e33074e5b513ac1a08798a1060e43e14c654b6b42728dfa9c700e1915",
+   "title": "Navbahor vs. FC Bunyodkor: FC Bunyodkor 1st Half O/U 0.5",
+   "outcome": "Under",
+   "price": 0.6,
+   "stake": 14.47,
+   "reason": "maker bid unfilled (97s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
   },
   {
    "ts": 1786659394,
@@ -3083,7 +3081,7 @@
    "exit_price": 0.7888
   }
  ],
- "missed_pnl": 15735.36,
+ "missed_pnl": 15840.33,
  "last_fill": {
   "ts": 1786695951,
   "side": "SELL",
@@ -3129,7 +3127,7 @@
    "wins": 3,
    "open_cost": 11.04,
    "open_n": 1,
-   "miss_n": 18,
+   "miss_n": 19,
    "miss_pnl": 463.56,
    "last_ts": 1786554255
   },
@@ -3194,5 +3192,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786709284
+ "updated": 1786709554
 }
