@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.23,
+ "stake": 49.22,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 629.25,
- "deployed": 1782.16,
+ "cash": 727.31,
+ "deployed": 1733.92,
  "reserve": 0.0,
- "realized": 1411.38,
+ "realized": 1461.2,
  "adjustments": 0.03,
- "ledger_drift": -0.05,
- "open_count": 37,
- "fees_paid": 485.24,
+ "ledger_drift": -0.04,
+ "open_count": 36,
+ "fees_paid": 485.31,
  "fee_rate": 0.03,
  "lag": {
   "n": 445,
@@ -64,11 +64,13 @@
    "cost": 48.24,
    "fee": 0.75,
    "opened": 1786784990,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786752000
+   "status": "closed",
+   "exit_price": 0.9757,
+   "pnl": 49.06,
+   "settled": 1786788346,
+   "end_ts": 1786752000,
+   "sold_shares": 100.5,
+   "sold_proceeds": 98.06
   },
   {
    "token": "26418124513273531493042185776538890382070385858747044148067615795770766670254",
@@ -3080,10 +3082,10 @@
  ],
  "missed_pnl": 15950.07,
  "last_fill": {
-  "ts": 1786784994,
-  "side": "BUY",
-  "price": 0.48,
-  "shares": 100.5,
+  "ts": 1786788346,
+  "side": "SELL",
+  "price": 0.98,
+  "shares": 82.25,
   "title": "LoL: Hanwha Life Esports vs KT Rolster (BO3) - LCK Round 3-4",
   "outcome": "Hanwha Life Esports"
  },
@@ -3139,14 +3141,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -95.81,
-   "n": 59,
+   "realized": -46.75,
+   "n": 60,
    "wins": 0,
-   "open_cost": 48.24,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786784990
+   "last_ts": 1786788346
   },
   "BikesAreTheBikes": {
    "realized": -24.8,
@@ -3189,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786785061
+ "updated": 1786788346
 }
