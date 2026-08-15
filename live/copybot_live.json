@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.53,
+ "stake": 49.3,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 790.41,
- "deployed": 1685.85,
+ "deployed": 1674.81,
  "reserve": 0.0,
- "realized": 1476.23,
+ "realized": 1465.19,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 35,
+ "ledger_drift": -0.04,
+ "open_count": 34,
  "fees_paid": 485.44,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "12901503982787647441429771765025737399487337273250608810988203666001942559982",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Yes",
+   "title": "Will FC Bayern Munich Legends vs. RB Leipzig end in a draw?",
+   "their_price": 0.6552,
+   "my_price": 0.6552,
+   "slippage_pct": 0.0,
+   "lag_s": 101.2,
+   "shares": 16.85,
+   "cost": 11.04,
+   "fee": 0.11,
+   "opened": 1786554255,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -11.15,
+   "settled": 1786815262,
+   "end_ts": 1786752000
+  },
   {
    "token": "30131737524183915943509920696454765893094364841699761469795181734002660650532",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -381,26 +401,6 @@
    "end_ts": 1830297600,
    "sold_shares": 26.54,
    "sold_proceeds": 26.37
-  },
-  {
-   "token": "12901503982787647441429771765025737399487337273250608810988203666001942559982",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Yes",
-   "title": "Will FC Bayern Munich Legends vs. RB Leipzig end in a draw?",
-   "their_price": 0.6552,
-   "my_price": 0.6552,
-   "slippage_pct": 0.0,
-   "lag_s": 101.2,
-   "shares": 16.85,
-   "cost": 11.04,
-   "fee": 0.11,
-   "opened": 1786554255,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786752000
   },
   {
    "token": "72380260523779452108747496691590035418744958761813904753644512394906005337193",
@@ -3121,14 +3121,14 @@
    "last_ts": 1785987921
   },
   "Kruto2027": {
-   "realized": 204.43,
-   "n": 17,
+   "realized": 193.28,
+   "n": 18,
    "wins": 3,
-   "open_cost": 11.04,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 21,
    "miss_pnl": 516.81,
-   "last_ts": 1786554255
+   "last_ts": 1786815262
   },
   "LSB1": {
    "realized": -397.16,
@@ -3191,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786805657
+ "updated": 1786815265
 }
