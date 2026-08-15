@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.42,
+ "stake": 49.53,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 755.04,
- "deployed": 1715.9,
+ "cash": 790.41,
+ "deployed": 1685.85,
  "reserve": 0.0,
- "realized": 1470.91,
+ "realized": 1476.23,
  "adjustments": 0.03,
- "ledger_drift": -0.04,
- "open_count": 36,
+ "ledger_drift": -0.03,
+ "open_count": 35,
  "fees_paid": 485.44,
  "fee_rate": 0.03,
  "lag": {
@@ -64,10 +64,10 @@
    "cost": 30.05,
    "fee": 0.14,
    "opened": 1786797088,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 5.18,
+   "settled": 1786805654,
    "end_ts": 1786752000
   },
   {
@@ -3101,14 +3101,14 @@
    "last_ts": 1786641472
   },
   "gkmgkldfmg": {
-   "realized": 948.45,
-   "n": 97,
-   "wins": 0,
-   "open_cost": 30.05,
-   "open_n": 1,
+   "realized": 953.63,
+   "n": 98,
+   "wins": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 56,
    "miss_pnl": 234.03,
-   "last_ts": 1786797088
+   "last_ts": 1786805654
   },
   "1kto1m": {
    "realized": 272.77,
@@ -3191,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786797106
+ "updated": 1786805657
 }
