@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786781943,
+ "updated": 1786785061,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -56,11 +56,11 @@
    "realized": -95.81,
    "n": 59,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.24,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786711211
+   "last_ts": 1786784990
   },
   "BikesAreTheBikes": {
    "realized": -24.8,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "73734770814856486300500066074271446698519990158075532164869756024990283778283",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Hanwha Life Esports",
+   "title": "LoL: Hanwha Life Esports vs KT Rolster (BO3) - LCK Round 3-4 Legend Group",
+   "their_price": 0.48,
+   "my_price": 0.48,
+   "slippage_pct": 0.0,
+   "lag_s": 4.9,
+   "shares": 100.5,
+   "cost": 48.24,
+   "fee": 0.7525,
+   "opened": 1786784990,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786752000
+  },
   {
    "token": "26418124513273531493042185776538890382070385858747044148067615795770766670254",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
