@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786796314,
+ "updated": 1786797106,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -16,11 +16,11 @@
    "realized": 948.45,
    "n": 97,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 30.05,
+   "open_n": 1,
    "miss_n": 56,
    "miss_pnl": 234.03,
-   "last_ts": 1785414639
+   "last_ts": 1786797088
   },
   "1kto1m": {
    "realized": 272.77,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "30131737524183915943509920696454765893094364841699761469795181734002660650532",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Iron Wing",
+   "title": "Dota 2: Iron Wing vs Team Yandex - Game 1 Winner",
+   "their_price": 0.8495,
+   "my_price": 0.8495,
+   "slippage_pct": 0.0,
+   "lag_s": 9.3,
+   "shares": 35.37,
+   "cost": 30.05,
+   "fee": 0.1356,
+   "opened": 1786797088,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786752000
+  },
   {
    "token": "41894897616090042581435185363845209019415877168112506294380833466254784815261",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
