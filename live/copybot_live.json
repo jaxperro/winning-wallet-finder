@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.55,
+ "stake": 48.59,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 988.32,
- "deployed": 1489.29,
+ "deployed": 1440.96,
  "reserve": 0.0,
- "realized": 1477.59,
+ "realized": 1429.25,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 32,
+ "open_count": 31,
  "fees_paid": 490.3,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "35222394752734454033486083919827096302636502236522852014950650847118196815990",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Team Secret Whales",
+   "title": "LoL: Team Secret Whales vs CTBC Flying Oyster (BO5) - LCP Group Stage",
+   "their_price": 0.86,
+   "my_price": 0.86,
+   "slippage_pct": 0.0,
+   "lag_s": 6.9,
+   "shares": 56.2,
+   "cost": 48.33,
+   "fee": 0.2,
+   "opened": 1786839485,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -48.53,
+   "settled": 1786896863,
+   "end_ts": 1786838400
+  },
   {
    "token": "69816346859095495747189627053263753156196009953825285858477796399815602774300",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -217,26 +237,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": null
-  },
-  {
-   "token": "35222394752734454033486083919827096302636502236522852014950650847118196815990",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "Team Secret Whales",
-   "title": "LoL: Team Secret Whales vs CTBC Flying Oyster (BO5) - LCP Group Stage",
-   "their_price": 0.86,
-   "my_price": 0.86,
-   "slippage_pct": 0.0,
-   "lag_s": 6.9,
-   "shares": 56.2,
-   "cost": 48.33,
-   "fee": 0.2,
-   "opened": 1786839485,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786838400
   },
   {
    "token": "26418124513273531493042185776538890382070385858747044148067615795770766670254",
@@ -3159,14 +3159,14 @@
    "last_ts": 1786888010
   },
   "JuiceFarm": {
-   "realized": -207.1,
-   "n": 13,
+   "realized": -255.63,
+   "n": 14,
    "wins": 7,
-   "open_cost": 48.33,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 7,
    "miss_pnl": 37.21,
-   "last_ts": 1786839485
+   "last_ts": 1786896863
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3189,5 +3189,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786888010
+ "updated": 1786896867
 }
