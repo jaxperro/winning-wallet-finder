@@ -2126,6 +2126,22 @@
  ],
  "missed": [
   {
+   "ts": 1786901048,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "104820978022732824768887939611233414725254412724743402932335797572767258813725",
+   "cond": "0xc1df2c3d4c585b722983fbd56bac657466affa023a226f2638c8aae93474c727",
+   "title": "Exact Score: Sarpsborg 08 FF 1 - 2 Sandefjord Fotball?",
+   "outcome": "Yes",
+   "price": 0.71,
+   "stake": 48.95,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 19.56,
+   "settled": 1786909419,
+   "name": "Kruto2027",
+   "exit_price": 0.9999
+  },
+  {
    "ts": 1786905386,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "3104629708171062356498135654472461762731791851667035051301931240755518332250",
@@ -2170,21 +2186,6 @@
    "pnl": null,
    "settled": null,
    "name": "BikesAreTheBikes"
-  },
-  {
-   "ts": 1786901048,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "104820978022732824768887939611233414725254412724743402932335797572767258813725",
-   "cond": "0xc1df2c3d4c585b722983fbd56bac657466affa023a226f2638c8aae93474c727",
-   "title": "Exact Score: Sarpsborg 08 FF 1 - 2 Sandefjord Fotball?",
-   "outcome": "Yes",
-   "price": 0.71,
-   "stake": 48.95,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
   },
   {
    "ts": 1786878167,
@@ -3078,7 +3079,7 @@
    "exit_price": 0.8806
   }
  ],
- "missed_pnl": -32.03,
+ "missed_pnl": -12.47,
  "last_fill": {
   "ts": 1786900915,
   "side": "BUY",
@@ -3125,7 +3126,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 23,
-   "miss_pnl": 467.05,
+   "miss_pnl": 486.61,
    "last_ts": 1786815262
   },
   "LSB1": {
@@ -3189,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786905386
+ "updated": 1786909421
 }
