@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.92,
+ "stake": 49.63,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 906.73,
- "deployed": 1539.13,
+ "cash": 991.11,
+ "deployed": 1490.19,
  "reserve": 0.0,
- "realized": 1445.84,
+ "realized": 1481.28,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 33,
+ "open_count": 32,
  "fees_paid": 492.42,
  "fee_rate": 0.03,
  "lag": {
@@ -51,26 +51,6 @@
  },
  "bets": [
   {
-   "token": "23235036346873495796270480110388225137357011671137462580436628081036186729432",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "FlyQuest",
-   "title": "LoL: FlyQuest vs Cloud9 - Game 1 Winner",
-   "their_price": 0.45,
-   "my_price": 0.45,
-   "slippage_pct": 0.0,
-   "lag_s": 19.9,
-   "shares": 108.74,
-   "cost": 48.93,
-   "fee": 0.81,
-   "opened": 1786911774,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786924800
-  },
-  {
    "token": "93852880407681866627953037148187186545832939473429997371013707363180289945212",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "name": "AIcAIc",
@@ -84,6 +64,28 @@
    "cost": 48.94,
    "fee": 0.62,
    "opened": 1786910694,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 34.82,
+   "settled": 1786913553,
+   "end_ts": 1786924800,
+   "sold_shares": 84.38,
+   "sold_proceeds": 84.38
+  },
+  {
+   "token": "23235036346873495796270480110388225137357011671137462580436628081036186729432",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "FlyQuest",
+   "title": "LoL: FlyQuest vs Cloud9 - Game 1 Winner",
+   "their_price": 0.45,
+   "my_price": 0.45,
+   "slippage_pct": 0.0,
+   "lag_s": 19.9,
+   "shares": 108.74,
+   "cost": 48.93,
+   "fee": 0.81,
+   "opened": 1786911774,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -3081,12 +3083,12 @@
  ],
  "missed_pnl": -12.47,
  "last_fill": {
-  "ts": 1786911793,
-  "side": "BUY",
-  "price": 0.45,
-  "shares": 108.74,
+  "ts": 1786913547,
+  "side": "SELL",
+  "price": 1.0,
+  "shares": 84.38,
   "title": "LoL: FlyQuest vs Cloud9 - Game 1 Winner",
-  "outcome": "FlyQuest"
+  "outcome": "Cloud9"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3140,14 +3142,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -24.52,
-   "n": 61,
+   "realized": 10.3,
+   "n": 62,
    "wins": 0,
-   "open_cost": 146.82,
-   "open_n": 3,
+   "open_cost": 97.88,
+   "open_n": 2,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786911774
+   "last_ts": 1786913553
   },
   "BikesAreTheBikes": {
    "realized": 79.66,
@@ -3190,5 +3192,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786911837
+ "updated": 1786913553
 }
