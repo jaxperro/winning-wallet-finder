@@ -2126,6 +2126,21 @@
  ],
  "missed": [
   {
+   "ts": 1786903144,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "110230164960434404310059385575944076505582891264305624307112518287452413536393",
+   "cond": "0x1d15ca70c93da7338e6134144dd19a41a8120f8a1ad1bca067478cdbf6d5b18a",
+   "title": "LoL: Myth Esports vs Dynasty - Game 1 Winner",
+   "outcome": "Myth Esports",
+   "price": 0.4499,
+   "stake": 48.95,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1786902282,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "96457047728689967312718596808595855917972601528387916224199457194991670330391",
@@ -3061,24 +3076,9 @@
    "settled": 1786106384,
    "name": "BikesAreTheBikes",
    "exit_price": 0.2704
-  },
-  {
-   "ts": 1786094789,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "38952357974068357896293012176440716894628591320948514343279282400674861252347",
-   "cond": "0x31c7f076e507e5bf5691bca1e66f620b0bfc16e001242fc638014c9656767f02",
-   "title": "Will the 10-year Treasury yield dip below 3.0% before 2027?",
-   "outcome": "No",
-   "price": 0.95,
-   "stake": 10.63,
-   "reason": "maker bid unfilled (117s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 15903.61,
+ "missed_pnl": 1055.35,
  "last_fill": {
   "ts": 1786900915,
   "side": "BUY",
@@ -3124,7 +3124,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 22,
+   "miss_n": 23,
    "miss_pnl": 516.81,
    "last_ts": 1786815262
   },
@@ -3189,5 +3189,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786902282
+ "updated": 1786903150
 }
