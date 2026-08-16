@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786850732,
+ "updated": 1786851762,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -19,7 +19,7 @@
    "open_cost": 97.48,
    "open_n": 1,
    "miss_n": 57,
-   "miss_pnl": 234.03,
+   "miss_pnl": 235.67,
    "last_ts": 1786849926
   },
   "1kto1m": {
@@ -8460,10 +8460,11 @@
    "price": 0.53,
    "stake": 47.74,
    "reason": "price moved 0.48\u21920.53",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 1.64,
+   "settled": 1786851761,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.563
   },
   {
    "ts": 1786839933,
