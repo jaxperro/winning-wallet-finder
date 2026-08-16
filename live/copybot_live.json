@@ -2140,7 +2140,8 @@
    "status": "lost",
    "pnl": -48.53,
    "settled": 1786915066,
-   "name": "JuiceFarm"
+   "name": "JuiceFarm",
+   "exit_checked": true
   },
   {
    "ts": 1786901048,
@@ -3192,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786915067
+ "updated": 1786915624
 }
