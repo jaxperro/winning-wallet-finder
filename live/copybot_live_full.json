@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786913553,
+ "updated": 1786914782,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 661.97,
@@ -53,14 +53,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 10.3,
-   "n": 62,
+   "realized": -39.15,
+   "n": 63,
    "wins": 0,
-   "open_cost": 97.88,
-   "open_n": 2,
+   "open_cost": 48.93,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786913553
+   "last_ts": 1786914779
   },
   "BikesAreTheBikes": {
    "realized": 79.66,
@@ -105,6 +105,26 @@
  },
  "bets": [
   {
+   "token": "18860670346720795784167085703131414244802155311515966448818007123525353828376",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "G2 Esports",
+   "title": "LoL: G2 Esports vs Fnatic - Game 1 Winner",
+   "their_price": 0.6577,
+   "my_price": 0.6577,
+   "slippage_pct": 0.0,
+   "lag_s": 1.8,
+   "shares": 74.43,
+   "cost": 48.95,
+   "fee": 0.5027,
+   "opened": 1786900914,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -49.45,
+   "settled": 1786914779,
+   "end_ts": 1786838400
+  },
+  {
    "token": "93852880407681866627953037148187186545832939473429997371013707363180289945212",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "name": "AIcAIc",
@@ -145,26 +165,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1786924800
-  },
-  {
-   "token": "18860670346720795784167085703131414244802155311515966448818007123525353828376",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "G2 Esports",
-   "title": "LoL: G2 Esports vs Fnatic - Game 1 Winner",
-   "their_price": 0.6577,
-   "my_price": 0.6577,
-   "slippage_pct": 0.0,
-   "lag_s": 1.8,
-   "shares": 74.43,
-   "cost": 48.95,
-   "fee": 0.5027,
-   "opened": 1786900914,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786838400
   },
   {
    "token": "6333843735155285450143276508143481064003286679791924447055152610295680774877",
