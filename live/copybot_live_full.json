@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1786915624,
+ "updated": 1786916382,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 661.97,
    "n": 115,
    "wins": 39,
-   "open_cost": 356.02,
-   "open_n": 10,
+   "open_cost": 394.55,
+   "open_n": 11,
    "miss_n": 162,
    "miss_pnl": 119142.06,
-   "last_ts": 1786864768
+   "last_ts": 1786916350
   },
   "gkmgkldfmg": {
    "realized": 925.46,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "30585812600395727123595511030296883656611291473656044048640986162820004488256",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will any AI model reach 1540 Overall Arena Score by September 30, 2026?",
+   "their_price": 0.93,
+   "my_price": 0.93,
+   "slippage_pct": 0.0,
+   "lag_s": 7.7,
+   "shares": 41.43,
+   "cost": 38.53,
+   "fee": 0.0809,
+   "opened": 1786916350,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1790726400
+  },
   {
    "token": "18860670346720795784167085703131414244802155311515966448818007123525353828376",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
