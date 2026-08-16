@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786839545,
+ "updated": 1786839940,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -78,7 +78,7 @@
    "wins": 7,
    "open_cost": 48.33,
    "open_n": 1,
-   "miss_n": 4,
+   "miss_n": 7,
    "miss_pnl": 37.21,
    "last_ts": 1786839485
   },
@@ -8388,6 +8388,51 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786839933,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "41092582709358687435042023110834332703597887425683496641893347944639497294430",
+   "cond": "0xdb0b2580e3f7ad9b141b60ae8a757f98a8d959d91092f435fa4440c0f0a9ef5f",
+   "title": "LoL: GIANTX vs Karmine Corp (BO3) - LEC Regular Season",
+   "outcome": "Karmine Corp",
+   "price": 0.84,
+   "stake": 48.34,
+   "reason": "maker bid unfilled (100s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "JuiceFarm"
+  },
+  {
+   "ts": 1786839862,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "30449715275070329841463755741003956765558025474675374209757522591111760096991",
+   "cond": "0x4c58ecd28e545198cd0054113f9f038a5afb1e7f04d7fc4d8a0e792b2cb724de",
+   "title": "LoL: G2 Esports vs Fnatic (BO3) - LEC Regular Season",
+   "outcome": "G2 Esports",
+   "price": 0.87,
+   "stake": 48.34,
+   "reason": "maker bid unfilled (103s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "JuiceFarm"
+  },
+  {
+   "ts": 1786839862,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "10509164293913090189801478181174559628006742062297375873350372841521551898308",
+   "cond": "0x4284537fc00a8be5de5b7a76608a85e4a31db83ca4af430105acad7da68bea16",
+   "title": "LoL: Natus Vincere vs Team Heretics (BO3) - LEC Regular Season",
+   "outcome": "Natus Vincere",
+   "price": 0.67,
+   "stake": 48.34,
+   "reason": "maker bid unfilled (60s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "JuiceFarm"
+  },
   {
    "ts": 1786113047,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
