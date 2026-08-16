@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786897637,
+ "updated": 1786901054,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 661.97,
@@ -38,7 +38,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 21,
+   "miss_n": 22,
    "miss_pnl": 516.81,
    "last_ts": 1786815262
   },
@@ -56,11 +56,11 @@
    "realized": -24.52,
    "n": 61,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.95,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786866456
+   "last_ts": 1786900914
   },
   "BikesAreTheBikes": {
    "realized": 79.66,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "18860670346720795784167085703131414244802155311515966448818007123525353828376",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "G2 Esports",
+   "title": "LoL: G2 Esports vs Fnatic - Game 1 Winner",
+   "their_price": 0.6577,
+   "my_price": 0.6577,
+   "slippage_pct": 0.0,
+   "lag_s": 1.8,
+   "shares": 74.43,
+   "cost": 48.95,
+   "fee": 0.5027,
+   "opened": 1786900914,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786838400
+  },
   {
    "token": "6333843735155285450143276508143481064003286679791924447055152610295680774877",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -8502,6 +8522,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786901048,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "104820978022732824768887939611233414725254412724743402932335797572767258813725",
+   "cond": "0xc1df2c3d4c585b722983fbd56bac657466affa023a226f2638c8aae93474c727",
+   "title": "Exact Score: Sarpsborg 08 FF 1 - 2 Sandefjord Fotball?",
+   "outcome": "Yes",
+   "price": 0.71,
+   "stake": 48.95,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1786878167,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
