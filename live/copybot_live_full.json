@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786905245,
+ "updated": 1786905386,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 661.97,
@@ -68,7 +68,7 @@
    "wins": 7,
    "open_cost": 1119.0,
    "open_n": 20,
-   "miss_n": 59,
+   "miss_n": 60,
    "miss_pnl": -936.9,
    "last_ts": 1786897637
   },
@@ -8522,6 +8522,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786905386,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "3104629708171062356498135654472461762731791851667035051301931240755518332250",
+   "cond": "0x650e3ebc043ddbcfa1d1ffda0c5830f19da7389827889fb5db3474bde5b007fb",
+   "title": "Will the Republicans win the Ohio governor race in 2026?",
+   "outcome": "Yes",
+   "price": 0.41,
+   "stake": 48.95,
+   "reason": "price moved 0.36\u21920.41",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1786903144,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",

@@ -2126,6 +2126,21 @@
  ],
  "missed": [
   {
+   "ts": 1786905386,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "3104629708171062356498135654472461762731791851667035051301931240755518332250",
+   "cond": "0x650e3ebc043ddbcfa1d1ffda0c5830f19da7389827889fb5db3474bde5b007fb",
+   "title": "Will the Republicans win the Ohio governor race in 2026?",
+   "outcome": "Yes",
+   "price": 0.41,
+   "stake": 48.95,
+   "reason": "price moved 0.36\u21920.41",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1786903144,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "110230164960434404310059385575944076505582891264305624307112518287452413536393",
@@ -3061,25 +3076,9 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.8806
-  },
-  {
-   "ts": 1785423436,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "87150316911747710389398782447337377964271008938887702894316010075241429634797",
-   "cond": "0x86a2515d1df361ecd588ca8705c6eb83567cc9fbe907780c5d5d470877c1ce0c",
-   "title": "Will the next Google Gemini Pro model be released by August 14, 2026?",
-   "outcome": "No",
-   "price": 0.75,
-   "stake": 54.4,
-   "reason": "no ask side on the book at copy time",
-   "status": "sold",
-   "pnl": -35.62,
-   "settled": 1786106384,
-   "name": "BikesAreTheBikes",
-   "exit_price": 0.2704
   }
  ],
- "missed_pnl": 1005.59,
+ "missed_pnl": -32.03,
  "last_fill": {
   "ts": 1786900915,
   "side": "BUY",
@@ -3155,7 +3154,7 @@
    "wins": 7,
    "open_cost": 1119.0,
    "open_n": 20,
-   "miss_n": 59,
+   "miss_n": 60,
    "miss_pnl": -936.9,
    "last_ts": 1786897637
   },
@@ -3190,5 +3189,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786905245
+ "updated": 1786905386
 }
