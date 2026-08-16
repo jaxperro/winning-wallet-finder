@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786829111,
+ "updated": 1786839545,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -76,11 +76,11 @@
    "realized": -207.1,
    "n": 13,
    "wins": 7,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.33,
+   "open_n": 1,
    "miss_n": 4,
    "miss_pnl": 37.21,
-   "last_ts": 1786795985
+   "last_ts": 1786839485
   },
   "0x41558102": {
    "realized": 0.0,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "35222394752734454033486083919827096302636502236522852014950650847118196815990",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Team Secret Whales",
+   "title": "LoL: Team Secret Whales vs CTBC Flying Oyster (BO5) - LCP Group Stage",
+   "their_price": 0.86,
+   "my_price": 0.86,
+   "slippage_pct": 0.0,
+   "lag_s": 6.9,
+   "shares": 56.2,
+   "cost": 48.33,
+   "fee": 0.203,
+   "opened": 1786839485,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786838400
+  },
   {
    "token": "26418124513273531493042185776538890382070385858747044148067615795770766670254",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
