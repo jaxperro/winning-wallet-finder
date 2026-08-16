@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786864776,
+ "updated": 1786865527,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 661.97,
@@ -13,14 +13,14 @@
    "last_ts": 1786864768
   },
   "gkmgkldfmg": {
-   "realized": 975.03,
-   "n": 100,
+   "realized": 925.46,
+   "n": 101,
    "wins": 1,
-   "open_cost": 48.74,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 58,
    "miss_pnl": 233.07,
-   "last_ts": 1786855823
+   "last_ts": 1786865524
   },
   "1kto1m": {
    "realized": 272.77,
@@ -105,6 +105,26 @@
  },
  "bets": [
   {
+   "token": "106249751199466979592673464582563414433222418883379395137309499869252252126673",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Aurora",
+   "title": "Dota 2: Aurora vs BoomBoys - Game 2 Winner",
+   "their_price": 0.4321,
+   "my_price": 0.4321,
+   "slippage_pct": 0.0,
+   "lag_s": 1.1,
+   "shares": 112.82,
+   "cost": 48.74,
+   "fee": 0.8305,
+   "opened": 1786855823,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -49.57,
+   "settled": 1786865524,
+   "end_ts": 1786838400
+  },
+  {
    "token": "45117272123752214028376460723544361926835506941716663290099518852020253462421",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -163,26 +183,6 @@
    "pnl": 63.36,
    "settled": 1786860657,
    "end_ts": 1786752000
-  },
-  {
-   "token": "106249751199466979592673464582563414433222418883379395137309499869252252126673",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Aurora",
-   "title": "Dota 2: Aurora vs BoomBoys - Game 2 Winner",
-   "their_price": 0.4321,
-   "my_price": 0.4321,
-   "slippage_pct": 0.0,
-   "lag_s": 1.1,
-   "shares": 112.82,
-   "cost": 48.74,
-   "fee": 0.8305,
-   "opened": 1786855823,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786838400
   },
   {
    "token": "60041934296114199949030138669514553448368083021407996547295541089293832568749",
