@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.93,
+ "stake": 48.92,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 956.48,
- "deployed": 1490.2,
+ "cash": 906.73,
+ "deployed": 1539.13,
  "reserve": 0.0,
- "realized": 1446.64,
+ "realized": 1445.84,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 32,
- "fees_paid": 491.62,
+ "open_count": 33,
+ "fees_paid": 492.42,
  "fee_rate": 0.03,
  "lag": {
-  "n": 455,
-  "n24": 9,
+  "n": 456,
+  "n24": 10,
   "basis": "24h",
-  "avg_s": 4.7,
+  "avg_s": 5.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "23235036346873495796270480110388225137357011671137462580436628081036186729432",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "FlyQuest",
+   "title": "LoL: FlyQuest vs Cloud9 - Game 1 Winner",
+   "their_price": 0.45,
+   "my_price": 0.45,
+   "slippage_pct": 0.0,
+   "lag_s": 19.9,
+   "shares": 108.74,
+   "cost": 48.93,
+   "fee": 0.81,
+   "opened": 1786911774,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786924800
+  },
   {
    "token": "93852880407681866627953037148187186545832939473429997371013707363180289945212",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2102,26 +2122,6 @@
    "end_ts": 1785628800,
    "sold_shares": 75.08,
    "sold_proceeds": 75.08
-  },
-  {
-   "token": "31798323952461961650983638405389053740930972138111089234409584277872747279143",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Israel x Iran ceasefire continues through August 15?",
-   "their_price": 0.16,
-   "my_price": 0.16,
-   "slippage_pct": 0.0,
-   "lag_s": 1.1,
-   "shares": 358.61,
-   "cost": 57.38,
-   "fee": 1.45,
-   "opened": 1785640467,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786752000
   }
  ],
  "missed": [
@@ -3081,12 +3081,12 @@
  ],
  "missed_pnl": -12.47,
  "last_fill": {
-  "ts": 1786910703,
+  "ts": 1786911793,
   "side": "BUY",
-  "price": 0.58,
-  "shares": 84.38,
+  "price": 0.45,
+  "shares": 108.74,
   "title": "LoL: FlyQuest vs Cloud9 - Game 1 Winner",
-  "outcome": "Cloud9"
+  "outcome": "FlyQuest"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3143,11 +3143,11 @@
    "realized": -24.52,
    "n": 61,
    "wins": 0,
-   "open_cost": 97.89,
-   "open_n": 2,
+   "open_cost": 146.82,
+   "open_n": 3,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786910694
+   "last_ts": 1786911774
   },
   "BikesAreTheBikes": {
    "realized": 79.66,
@@ -3190,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786910729
+ "updated": 1786911837
 }
