@@ -1,22 +1,22 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.75,
+ "stake": 47.74,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 714.09,
- "deployed": 1723.22,
+ "cash": 615.09,
+ "deployed": 1771.97,
  "reserve": 0.0,
- "realized": 1437.29,
+ "realized": 1387.02,
  "adjustments": 0.03,
- "ledger_drift": -0.04,
- "open_count": 35,
- "fees_paid": 486.8,
+ "ledger_drift": -0.05,
+ "open_count": 36,
+ "fees_paid": 488.33,
  "fee_rate": 0.03,
  "lag": {
-  "n": 449,
-  "n24": 5,
+  "n": 451,
+  "n24": 7,
   "basis": "24h",
   "avg_s": 6.9,
   "avg_slip_pct": 0.0,
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "60041934296114199949030138669514553448368083021407996547295541089293832568749",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "BoomBoys",
+   "title": "Dota 2: Aurora vs BoomBoys - Game 1 Winner",
+   "their_price": 0.48,
+   "my_price": 0.48,
+   "slippage_pct": 0.0,
+   "lag_s": 7.6,
+   "shares": 203.1,
+   "cost": 97.48,
+   "fee": 1.52,
+   "opened": 1786849926,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786838400
+  },
   {
    "token": "38337429669360133090223578122803756142215782439627263022194277667679828062209",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2098,28 +2118,6 @@
    "sold_shares": 157.71,
    "sold_proceeds": 140.22,
    "end_ts": null
-  },
-  {
-   "token": "10286659768913348993358470598849242742860975803412404099275992956393149144886",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "Israel x Iran ceasefire continues through August 1?",
-   "their_price": 0.91,
-   "my_price": 0.91,
-   "slippage_pct": 0.0,
-   "lag_s": 0.6,
-   "shares": 63.11,
-   "cost": 57.43,
-   "fee": 0.16,
-   "opened": 1785574869,
-   "status": "closed",
-   "exit_price": 0.9469,
-   "pnl": 2.17,
-   "settled": 1785580995,
-   "end_ts": 1785542400,
-   "sold_shares": 63.11,
-   "sold_proceeds": 59.76
   }
  ],
  "missed": [
@@ -3080,12 +3078,12 @@
  ],
  "missed_pnl": 15900.82,
  "last_fill": {
-  "ts": 1786849802,
-  "side": "SELL",
-  "price": 1.0,
-  "shares": 70.03,
-  "title": "Dota 2: Team Falcons vs Vici Gaming - Game 1 Winner",
-  "outcome": "Team Falcons"
+  "ts": 1786849933,
+  "side": "BUY",
+  "price": 0.48,
+  "shares": 101.55,
+  "title": "Dota 2: Aurora vs BoomBoys - Game 1 Winner",
+  "outcome": "BoomBoys"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3102,11 +3100,11 @@
    "realized": 974.89,
    "n": 99,
    "wins": 1,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 97.48,
+   "open_n": 1,
    "miss_n": 56,
    "miss_pnl": 234.03,
-   "last_ts": 1786849803
+   "last_ts": 1786849926
   },
   "1kto1m": {
    "realized": 272.77,
@@ -3189,5 +3187,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786849803
+ "updated": 1786849999
 }
