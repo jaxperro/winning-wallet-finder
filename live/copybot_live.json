@@ -2122,6 +2122,21 @@
  ],
  "missed": [
   {
+   "ts": 1786878167,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "55404173257714454784216746048287617327978233453392682929035963447356177416569",
+   "cond": "0x0083a9fa85312e54e9958f167e4620a1ff1f8f0d3882f56dd8e093264af5294b",
+   "title": "Will Lambda's valuation hit (LOW) $6.5B by August 31?",
+   "outcome": "No",
+   "price": 0.9453,
+   "stake": 35.52,
+   "reason": "maker bid unfilled (118s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1786856542,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "106249751199466979592673464582563414433222418883379395137309499869252252126673",
@@ -3059,25 +3074,9 @@
    "settled": 1786092007,
    "name": "BikesAreTheBikes",
    "exit_checked": true
-  },
-  {
-   "ts": 1786043456,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "74457541582800364997994635987661292481282387447685228185311068172440500018333",
-   "cond": "0xbedd1ed681f1876cda3c3421ac07a4e2d39a7d840fceeb31317958d6e40c7246",
-   "title": "FC Thun vs. KF V\u00edkingur: KF V\u00edkingur O/U 3.5 Corners",
-   "outcome": "Under",
-   "price": 0.01,
-   "stake": 48.41,
-   "reason": "thin book ($5 within 5c < $50)",
-   "status": "lost",
-   "pnl": -49.85,
-   "settled": 1786067870,
-   "name": "Kruto2027",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 15893.31,
+ "missed_pnl": 15890.28,
  "last_fill": {
   "ts": 1786866456,
   "side": "SELL",
@@ -3093,7 +3092,7 @@
    "wins": 39,
    "open_cost": 356.02,
    "open_n": 10,
-   "miss_n": 161,
+   "miss_n": 162,
    "miss_pnl": 119142.06,
    "last_ts": 1786864768
   },
@@ -3188,5 +3187,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786871407
+ "updated": 1786878173
 }
