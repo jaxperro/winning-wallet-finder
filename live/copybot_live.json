@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 50.01,
+ "stake": 48.63,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 726.77,
- "deployed": 1773.56,
+ "deployed": 1704.58,
  "reserve": 0.0,
- "realized": 1500.3,
+ "realized": 1431.33,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 36,
+ "open_count": 35,
  "fees_paid": 489.7,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "45117272123752214028376460723544361926835506941716663290099518852020253462421",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "US x Iran diplomatic meeting by August 15, 2026?",
+   "their_price": 0.41,
+   "my_price": 0.41,
+   "slippage_pct": 0.0,
+   "lag_s": 1.3,
+   "shares": 168.23,
+   "cost": 68.97,
+   "fee": 1.22,
+   "opened": 1785191855,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -70.19,
+   "settled": 1786864768,
+   "end_ts": 1786752000
+  },
   {
    "token": "5610842165726021683555265943500609425926260191866810595505563492143684632795",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2096,28 +2116,6 @@
    "pnl": 1.66,
    "settled": 1785612410,
    "end_ts": 1785542400
-  },
-  {
-   "token": "43171108223683792926229116193941513170619352156926725221875963255678260552099",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Bitcoin dip to $40,000 in August?",
-   "their_price": 0.94,
-   "my_price": 0.94,
-   "slippage_pct": 0.0,
-   "lag_s": 10.1,
-   "shares": 60.24,
-   "cost": 56.63,
-   "fee": 0.1,
-   "opened": 1785567480,
-   "status": "closed",
-   "exit_price": 0.9951,
-   "pnl": 3.21,
-   "settled": 1785596252,
-   "end_ts": 1788220800,
-   "sold_shares": 60.24,
-   "sold_proceeds": 59.94
   }
  ],
  "missed": [
@@ -3088,14 +3086,14 @@
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 732.16,
-   "n": 114,
+   "realized": 661.97,
+   "n": 115,
    "wins": 39,
-   "open_cost": 424.99,
-   "open_n": 11,
+   "open_cost": 356.02,
+   "open_n": 10,
    "miss_n": 161,
    "miss_pnl": 119142.06,
-   "last_ts": 1786641472
+   "last_ts": 1786864768
   },
   "gkmgkldfmg": {
    "realized": 975.03,
@@ -3188,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786864573
+ "updated": 1786864776
 }
