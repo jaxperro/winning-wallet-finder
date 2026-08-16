@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786909421,
+ "updated": 1786910729,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 661.97,
@@ -56,11 +56,11 @@
    "realized": -24.52,
    "n": 61,
    "wins": 0,
-   "open_cost": 48.95,
-   "open_n": 1,
+   "open_cost": 97.89,
+   "open_n": 2,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786900914
+   "last_ts": 1786910694
   },
   "BikesAreTheBikes": {
    "realized": 79.66,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "93852880407681866627953037148187186545832939473429997371013707363180289945212",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Cloud9",
+   "title": "LoL: FlyQuest vs Cloud9 - Game 1 Winner",
+   "their_price": 0.58,
+   "my_price": 0.58,
+   "slippage_pct": 0.0,
+   "lag_s": 9.4,
+   "shares": 84.38,
+   "cost": 48.94,
+   "fee": 0.6166,
+   "opened": 1786910694,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786924800
+  },
   {
    "token": "18860670346720795784167085703131414244802155311515966448818007123525353828376",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
