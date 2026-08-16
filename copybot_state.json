@@ -20730,8 +20730,8 @@
     }
   },
   "hwm": 3600.1933566560215,
-  "feed_sig": "f2790d36c372e3be758f6b2d6c7b70d3",
-  "feed_pushed_at": 1786919052.1920831,
+  "feed_sig": "87ba93cde10943989bb0f34811b0a1cc",
+  "feed_pushed_at": 1786919173.3154006,
   "missed": [
     {
       "ts": 1784503159,
@@ -20777,22 +20777,6 @@
       "pnl": null,
       "settled": null,
       "name": "BikesAreTheBikes"
-    },
-    {
-      "ts": 1784818263,
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "token": "27550239637632399096048782995950028754921427598196211548179911390834637255919",
-      "cond": "0xa843abc8eee73c1dcf3871d27b50200900767539d9638446eb0bceff0f363a8c",
-      "title": "Hibernian FC to score first vs. FC Malisheva?",
-      "outcome": "No",
-      "price": 0.96,
-      "stake": 56.11,
-      "reason": "thin book ($29 within 5c < $50)",
-      "status": "sold",
-      "pnl": -17.6,
-      "settled": 1784820188,
-      "name": "0xbadaf319",
-      "exit_price": 0.6667
     },
     {
       "ts": 1784820182,
@@ -23916,6 +23900,21 @@
       "pnl": null,
       "settled": null,
       "name": "Kruto2027"
+    },
+    {
+      "ts": 1786919236,
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "token": "69798396964065261326323092700532888217157326502918720568819393070921313091865",
+      "cond": "0x1c63bd5747fc2bf69453e33263eb3e9525792c9ca78cacb06c8995d37562cb76",
+      "title": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
+      "outcome": "Team Falcons",
+      "price": 0.4151,
+      "stake": 37.41,
+      "reason": "maker bid unfilled (84s)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "Kruto2027"
     }
   ],
   "no_miss_toks": [
@@ -24210,7 +24209,7 @@
   "trade_cursor": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
-    "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1786899759,
+    "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1786919152,
     "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1786916350,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1786868179,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1786918446,
@@ -24230,31 +24229,10 @@
     "title": "Will any AI model reach 1540 Overall Arena Score by Septembe",
     "outcome": "No"
   },
-  "paper_maker": [
-    {
-      "paper_maker": true,
-      "sz": 90.1,
-      "mode": "maker",
-      "token": "69798396964065261326323092700532888217157326502918720568819393070921313091865",
-      "side": "BUY",
-      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-      "title": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
-      "outcome": "Team Falcons",
-      "event": "dota2-ngx-flc-2026-08-20",
-      "cond": "0x1c63bd5747fc2bf69453e33263eb3e9525792c9ca78cacb06c8995d37562cb76",
-      "their_price": 0.4151295572268793,
-      "their_ts": 1786919151,
-      "price": 0.4151295572268793,
-      "is_add": false,
-      "stake": 37.405,
-      "ts": 1786919152.1847427,
-      "ttl_s": 60.0,
-      "ba_at_signal": 0.63
-    }
-  ],
+  "paper_maker": [],
   "maker_stats": {
     "fills": 224,
-    "misses": 124
+    "misses": 125
   },
   "ignored_exits": [
     {

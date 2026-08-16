@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786919148,
+ "updated": 1786919243,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 661.97,
@@ -38,7 +38,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 24,
+   "miss_n": 25,
    "miss_pnl": 486.61,
    "last_ts": 1786815262
   },
@@ -8584,6 +8584,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786919236,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "69798396964065261326323092700532888217157326502918720568819393070921313091865",
+   "cond": "0x1c63bd5747fc2bf69453e33263eb3e9525792c9ca78cacb06c8995d37562cb76",
+   "title": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
+   "outcome": "Team Falcons",
+   "price": 0.4151,
+   "stake": 37.41,
+   "reason": "maker bid unfilled (84s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1786919141,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
