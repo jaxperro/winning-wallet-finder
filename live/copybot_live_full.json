@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786849999,
+ "updated": 1786850732,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -18,7 +18,7 @@
    "wins": 1,
    "open_cost": 97.48,
    "open_n": 1,
-   "miss_n": 56,
+   "miss_n": 57,
    "miss_pnl": 234.03,
    "last_ts": 1786849926
   },
@@ -8450,6 +8450,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786850732,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "79251241637789188843350799450764116240964321566316181450956891613376502677676",
+   "cond": "0x24a86f59ea6f32be34804a0f015f9e823d65f364bf5b13f2968781b4319a900d",
+   "title": "Dota 2: Aurora vs BoomBoys - Game 1 Winner",
+   "outcome": "Aurora",
+   "price": 0.53,
+   "stake": 47.74,
+   "reason": "price moved 0.48\u21920.53",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
   {
    "ts": 1786839933,
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
