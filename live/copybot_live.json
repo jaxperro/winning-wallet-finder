@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.65,
+ "stake": 48.11,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 726.77,
- "deployed": 1655.84,
+ "cash": 799.49,
+ "deployed": 1605.83,
  "reserve": 0.0,
- "realized": 1382.58,
+ "realized": 1405.29,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 34,
- "fees_paid": 489.7,
+ "open_count": 33,
+ "fees_paid": 489.73,
  "fee_rate": 0.03,
  "lag": {
   "n": 453,
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "5610842165726021683555265943500609425926260191866810595505563492143684632795",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "JD Gaming",
+   "title": "LoL: LGD Gaming vs JD Gaming - Game 1 Winner",
+   "their_price": 0.68,
+   "my_price": 0.68,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 73.55,
+   "cost": 50.01,
+   "fee": 0.48,
+   "opened": 1786864573,
+   "status": "closed",
+   "exit_price": 0.9887,
+   "pnl": 22.23,
+   "settled": 1786866456,
+   "end_ts": 1786838400,
+   "sold_shares": 73.55,
+   "sold_proceeds": 72.72
+  },
   {
    "token": "106249751199466979592673464582563414433222418883379395137309499869252252126673",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -89,26 +111,6 @@
    "pnl": -70.19,
    "settled": 1786864768,
    "end_ts": 1786752000
-  },
-  {
-   "token": "5610842165726021683555265943500609425926260191866810595505563492143684632795",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "JD Gaming",
-   "title": "LoL: LGD Gaming vs JD Gaming - Game 1 Winner",
-   "their_price": 0.68,
-   "my_price": 0.68,
-   "slippage_pct": 0.0,
-   "lag_s": 0.6,
-   "shares": 73.55,
-   "cost": 50.01,
-   "fee": 0.48,
-   "opened": 1786864573,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786838400
   },
   {
    "token": "106384382902272259275653733417531627173944931937610707897597239994735553962869",
@@ -3077,10 +3079,10 @@
  ],
  "missed_pnl": 15893.31,
  "last_fill": {
-  "ts": 1786864573,
-  "side": "BUY",
-  "price": 0.68,
-  "shares": 73.55,
+  "ts": 1786866456,
+  "side": "SELL",
+  "price": 1.0,
+  "shares": 53.38,
   "title": "LoL: LGD Gaming vs JD Gaming - Game 1 Winner",
   "outcome": "JD Gaming"
  },
@@ -3136,14 +3138,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -46.75,
-   "n": 60,
+   "realized": -24.52,
+   "n": 61,
    "wins": 0,
-   "open_cost": 50.01,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786864573
+   "last_ts": 1786866456
   },
   "BikesAreTheBikes": {
    "realized": -10.11,
@@ -3186,5 +3188,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786865527
+ "updated": 1786866456
 }
