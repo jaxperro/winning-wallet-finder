@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786860661,
+ "updated": 1786864573,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -56,11 +56,11 @@
    "realized": -46.75,
    "n": 60,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 50.01,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786788346
+   "last_ts": 1786864573
   },
   "BikesAreTheBikes": {
    "realized": -10.11,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "5610842165726021683555265943500609425926260191866810595505563492143684632795",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "JD Gaming",
+   "title": "LoL: LGD Gaming vs JD Gaming - Game 1 Winner",
+   "their_price": 0.68,
+   "my_price": 0.68,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 73.55,
+   "cost": 50.01,
+   "fee": 0.4801,
+   "opened": 1786864573,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786838400
+  },
   {
    "token": "106384382902272259275653733417531627173944931937610707897597239994735553962869",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",

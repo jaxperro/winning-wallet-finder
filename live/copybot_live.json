@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 50.02,
+ "stake": 50.01,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 777.27,
- "deployed": 1723.55,
+ "cash": 726.77,
+ "deployed": 1773.56,
  "reserve": 0.0,
- "realized": 1500.78,
+ "realized": 1500.3,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 35,
- "fees_paid": 489.22,
+ "open_count": 36,
+ "fees_paid": 489.7,
  "fee_rate": 0.03,
  "lag": {
-  "n": 452,
-  "n24": 8,
+  "n": 453,
+  "n24": 9,
   "basis": "24h",
-  "avg_s": 5.9,
+  "avg_s": 4.9,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "5610842165726021683555265943500609425926260191866810595505563492143684632795",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "JD Gaming",
+   "title": "LoL: LGD Gaming vs JD Gaming - Game 1 Winner",
+   "their_price": 0.68,
+   "my_price": 0.68,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 73.55,
+   "cost": 50.01,
+   "fee": 0.48,
+   "opened": 1786864573,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786838400
+  },
   {
    "token": "106384382902272259275653733417531627173944931937610707897597239994735553962869",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2098,26 +2118,6 @@
    "end_ts": 1788220800,
    "sold_shares": 60.24,
    "sold_proceeds": 59.94
-  },
-  {
-   "token": "30254318320353641204277690542860922564879092609585509463603793724900287946783",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "BNK FEARX",
-   "title": "LoL: Nongshim Red Force vs BNK FEARX (BO3) - LCK Round 3-4 Rise Group",
-   "their_price": 0.57,
-   "my_price": 0.57,
-   "slippage_pct": 0.0,
-   "lag_s": 19.6,
-   "shares": 93.47,
-   "cost": 53.28,
-   "fee": 0.69,
-   "opened": 1785451822,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -53.97,
-   "settled": 1785592666,
-   "end_ts": 1785542400
   }
  ],
  "missed": [
@@ -3079,12 +3079,12 @@
  ],
  "missed_pnl": 15893.31,
  "last_fill": {
-  "ts": 1786855824,
+  "ts": 1786864573,
   "side": "BUY",
-  "price": 0.4321,
-  "shares": 112.82,
-  "title": "Dota 2: Aurora vs BoomBoys - Game 2 Winner",
-  "outcome": "Aurora"
+  "price": 0.68,
+  "shares": 73.55,
+  "title": "LoL: LGD Gaming vs JD Gaming - Game 1 Winner",
+  "outcome": "JD Gaming"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3141,11 +3141,11 @@
    "realized": -46.75,
    "n": 60,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 50.01,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786788346
+   "last_ts": 1786864573
   },
   "BikesAreTheBikes": {
    "realized": -10.11,
@@ -3188,5 +3188,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786860661
+ "updated": 1786864573
 }
