@@ -2135,9 +2135,9 @@
    "price": 0.4499,
    "stake": 48.95,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "lost",
+   "pnl": -49.76,
+   "settled": 1786903224,
    "name": "Kruto2027"
   },
   {
@@ -3078,7 +3078,7 @@
    "exit_price": 0.2704
   }
  ],
- "missed_pnl": 1055.35,
+ "missed_pnl": 1005.59,
  "last_fill": {
   "ts": 1786900915,
   "side": "BUY",
@@ -3125,7 +3125,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 23,
-   "miss_pnl": 516.81,
+   "miss_pnl": 467.05,
    "last_ts": 1786815262
   },
   "LSB1": {
@@ -3189,5 +3189,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786903150
+ "updated": 1786903224
 }

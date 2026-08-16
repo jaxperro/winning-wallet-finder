@@ -20629,8 +20629,8 @@
     }
   },
   "hwm": 3600.1933566560215,
-  "feed_sig": "00fa1873d6763c4cad266ddddad1f52c",
-  "feed_pushed_at": 1786903003.0166883,
+  "feed_sig": "b91e5a7496011b24f5ff2418faa42ea7",
+  "feed_pushed_at": 1786903151.0345583,
   "missed": [
     {
       "ts": 1784503159,
@@ -23810,9 +23810,10 @@
       "price": 0.4499,
       "stake": 48.95,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -49.76,
+      "settled": 1786903224,
+      "name": "Kruto2027"
     }
   ],
   "no_miss_toks": [
@@ -24107,7 +24108,7 @@
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1786899759,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1786896306,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1786902534,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1786868179,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1786900915,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1786893589,
