@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.32,
+ "stake": 48.31,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 692.83,
- "deployed": 1723.22,
+ "cash": 644.06,
+ "deployed": 1771.54,
  "reserve": 0.0,
- "realized": 1416.03,
+ "realized": 1415.58,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 35,
- "fees_paid": 486.35,
+ "open_count": 36,
+ "fees_paid": 486.8,
  "fee_rate": 0.03,
  "lag": {
-  "n": 448,
-  "n24": 4,
+  "n": 449,
+  "n24": 5,
   "basis": "24h",
-  "avg_s": 5.9,
+  "avg_s": 6.9,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "38337429669360133090223578122803756142215782439627263022194277667679828062209",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Falcons",
+   "title": "Dota 2: Team Falcons vs Vici Gaming - Game 1 Winner",
+   "their_price": 0.69,
+   "my_price": 0.69,
+   "slippage_pct": 0.0,
+   "lag_s": 7.8,
+   "shares": 70.03,
+   "cost": 48.32,
+   "fee": 0.45,
+   "opened": 1786846562,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786838400
+  },
   {
    "token": "23913381536137166406579511315285934624565002001604591688105636176511254870797",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2098,28 +2118,6 @@
    "end_ts": 1785542400,
    "sold_shares": 63.11,
    "sold_proceeds": 59.76
-  },
-  {
-   "token": "94931881022086117089407923467735257712223629834772704788988893973730960860390",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Top Esports",
-   "title": "LoL: LGD Gaming vs Top Esports - Game 2 Winner",
-   "their_price": 0.55,
-   "my_price": 0.55,
-   "slippage_pct": 0.0,
-   "lag_s": 12.4,
-   "shares": 104.49,
-   "cost": 57.47,
-   "fee": 0.78,
-   "opened": 1785578676,
-   "status": "closed",
-   "exit_price": 0.9075,
-   "pnl": 36.57,
-   "settled": 1785579722,
-   "end_ts": 1785542400,
-   "sold_shares": 104.49,
-   "sold_proceeds": 94.82
   }
  ],
  "missed": [
@@ -3080,12 +3078,12 @@
  ],
  "missed_pnl": 15900.82,
  "last_fill": {
-  "ts": 1786842522,
+  "ts": 1786846569,
   "side": "BUY",
-  "price": 0.51,
-  "shares": 94.77,
-  "title": "Will the Republicans win the Ohio Senate race in 2026?",
-  "outcome": "No"
+  "price": 0.69,
+  "shares": 70.03,
+  "title": "Dota 2: Team Falcons vs Vici Gaming - Game 1 Winner",
+  "outcome": "Team Falcons"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3102,11 +3100,11 @@
    "realized": 953.63,
    "n": 98,
    "wins": 1,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.32,
+   "open_n": 1,
    "miss_n": 56,
    "miss_pnl": 234.03,
-   "last_ts": 1786805654
+   "last_ts": 1786846562
   },
   "1kto1m": {
    "realized": 272.77,
@@ -3189,5 +3187,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786842524
+ "updated": 1786846569
 }

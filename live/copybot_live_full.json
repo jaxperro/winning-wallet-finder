@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786842524,
+ "updated": 1786846569,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 732.16,
@@ -16,11 +16,11 @@
    "realized": 953.63,
    "n": 98,
    "wins": 1,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.32,
+   "open_n": 1,
    "miss_n": 56,
    "miss_pnl": 234.03,
-   "last_ts": 1786805654
+   "last_ts": 1786846562
   },
   "1kto1m": {
    "realized": 272.77,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "38337429669360133090223578122803756142215782439627263022194277667679828062209",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Falcons",
+   "title": "Dota 2: Team Falcons vs Vici Gaming - Game 1 Winner",
+   "their_price": 0.69,
+   "my_price": 0.69,
+   "slippage_pct": 0.0,
+   "lag_s": 7.8,
+   "shares": 70.03,
+   "cost": 48.32,
+   "fee": 0.4494,
+   "opened": 1786846562,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786838400
+  },
   {
    "token": "23913381536137166406579511315285934624565002001604591688105636176511254870797",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
