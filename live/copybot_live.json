@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.31,
+ "stake": 48.75,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 644.06,
- "deployed": 1771.54,
+ "cash": 714.09,
+ "deployed": 1723.22,
  "reserve": 0.0,
- "realized": 1415.58,
+ "realized": 1437.29,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 36,
+ "open_count": 35,
  "fees_paid": 486.8,
  "fee_rate": 0.03,
  "lag": {
@@ -64,11 +64,13 @@
    "cost": 48.32,
    "fee": 0.45,
    "opened": 1786846562,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786838400
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 21.26,
+   "settled": 1786849803,
+   "end_ts": 1786838400,
+   "sold_shares": 70.03,
+   "sold_proceeds": 70.03
   },
   {
    "token": "23913381536137166406579511315285934624565002001604591688105636176511254870797",
@@ -3078,9 +3080,9 @@
  ],
  "missed_pnl": 15900.82,
  "last_fill": {
-  "ts": 1786846569,
-  "side": "BUY",
-  "price": 0.69,
+  "ts": 1786849802,
+  "side": "SELL",
+  "price": 1.0,
   "shares": 70.03,
   "title": "Dota 2: Team Falcons vs Vici Gaming - Game 1 Winner",
   "outcome": "Team Falcons"
@@ -3097,14 +3099,14 @@
    "last_ts": 1786641472
   },
   "gkmgkldfmg": {
-   "realized": 953.63,
-   "n": 98,
+   "realized": 974.89,
+   "n": 99,
    "wins": 1,
-   "open_cost": 48.32,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 56,
    "miss_pnl": 234.03,
-   "last_ts": 1786846562
+   "last_ts": 1786849803
   },
   "1kto1m": {
    "realized": 272.77,
@@ -3187,5 +3189,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786846569
+ "updated": 1786849803
 }
