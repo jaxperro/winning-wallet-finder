@@ -2122,6 +2122,21 @@
  ],
  "missed": [
   {
+   "ts": 1786856542,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "106249751199466979592673464582563414433222418883379395137309499869252252126673",
+   "cond": "0x5302e8310617ef07577fd9e9d6b7c924f3cc2a9849a5e1ce06bdc9d41f2d1842",
+   "title": "Dota 2: Aurora vs BoomBoys - Game 2 Winner",
+   "outcome": "Aurora",
+   "price": 0.67,
+   "stake": 48.73,
+   "reason": "price moved 0.59\u21920.67",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1786850732,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "79251241637789188843350799450764116240964321566316181450956891613376502677676",
@@ -3059,25 +3074,9 @@
    "settled": 1786067870,
    "name": "Kruto2027",
    "exit_checked": true
-  },
-  {
-   "ts": 1786031011,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "200151319696111844652491412631482014847337257056971003992808586181134014409",
-   "cond": "0x1ac391e5a813bb939a3679cc7ddf4ce0621018a47fa473fe17b4ab78cbb0e52b",
-   "title": "Will Elon Musk post 200-219 tweets from July 31 to August 7, 2026?",
-   "outcome": "No",
-   "price": 0.5,
-   "stake": 48.43,
-   "reason": "price moved 0.43\u21920.50",
-   "status": "sold",
-   "pnl": -1.45,
-   "settled": 1786050342,
-   "name": "BikesAreTheBikes",
-   "exit_price": 0.5
   }
  ],
- "missed_pnl": 15896.62,
+ "missed_pnl": 15895.91,
  "last_fill": {
   "ts": 1786855824,
   "side": "BUY",
@@ -3103,7 +3102,7 @@
    "wins": 1,
    "open_cost": 48.74,
    "open_n": 1,
-   "miss_n": 57,
+   "miss_n": 58,
    "miss_pnl": 235.67,
    "last_ts": 1786855823
   },
@@ -3188,5 +3187,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786855831
+ "updated": 1786856542
 }
