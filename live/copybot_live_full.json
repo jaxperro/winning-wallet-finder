@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786914782,
+ "updated": 1786915067,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 661.97,
@@ -79,7 +79,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 7,
-   "miss_pnl": 37.21,
+   "miss_pnl": -11.32,
    "last_ts": 1786896863
   },
   "0x41558102": {
@@ -8565,6 +8565,21 @@
  ],
  "missed": [
   {
+   "ts": 1786839862,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "30449715275070329841463755741003956765558025474675374209757522591111760096991",
+   "cond": "0x4c58ecd28e545198cd0054113f9f038a5afb1e7f04d7fc4d8a0e792b2cb724de",
+   "title": "LoL: G2 Esports vs Fnatic (BO3) - LEC Regular Season",
+   "outcome": "G2 Esports",
+   "price": 0.87,
+   "stake": 48.34,
+   "reason": "maker bid unfilled (103s)",
+   "status": "lost",
+   "pnl": -48.53,
+   "settled": 1786915066,
+   "name": "JuiceFarm"
+  },
+  {
    "ts": 1786901048,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "104820978022732824768887939611233414725254412724743402932335797572767258813725",
@@ -8683,21 +8698,6 @@
    "price": 0.84,
    "stake": 48.34,
    "reason": "maker bid unfilled (100s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "JuiceFarm"
-  },
-  {
-   "ts": 1786839862,
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "token": "30449715275070329841463755741003956765558025474675374209757522591111760096991",
-   "cond": "0x4c58ecd28e545198cd0054113f9f038a5afb1e7f04d7fc4d8a0e792b2cb724de",
-   "title": "LoL: G2 Esports vs Fnatic (BO3) - LEC Regular Season",
-   "outcome": "G2 Esports",
-   "price": 0.87,
-   "stake": 48.34,
-   "reason": "maker bid unfilled (103s)",
    "status": "open",
    "pnl": null,
    "settled": null,
