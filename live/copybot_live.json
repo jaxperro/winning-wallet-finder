@@ -2128,6 +2128,22 @@
  ],
  "missed": [
   {
+   "ts": 1786942377,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "32206500060366495804567453664689710572686411223095415457442886715766533954467",
+   "cond": "0xf9dc607f4bf84ce394845000dc2622c25f8b7ecbcafe1ac3e2301d894776f3b6",
+   "title": "Will Opendoor Technologies Inc. (OPEN) hit (LOW) $2.25 Week of August 17 2026?",
+   "outcome": "No",
+   "price": 0.909,
+   "stake": 36.96,
+   "reason": "maker bid unfilled (81s)",
+   "status": "sold",
+   "pnl": 1.66,
+   "settled": 1786977775,
+   "name": "0xbadaf319",
+   "exit_price": 0.9537
+  },
+  {
    "ts": 1786968690,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "17423891319744596989056481556844489891811840330632446387187415390310175437647",
@@ -2206,21 +2222,6 @@
    "settled": 1786952541,
    "name": "BikesAreTheBikes",
    "exit_price": 0.4934
-  },
-  {
-   "ts": 1786942377,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "32206500060366495804567453664689710572686411223095415457442886715766533954467",
-   "cond": "0xf9dc607f4bf84ce394845000dc2622c25f8b7ecbcafe1ac3e2301d894776f3b6",
-   "title": "Will Opendoor Technologies Inc. (OPEN) hit (LOW) $2.25 Week of August 17 2026?",
-   "outcome": "No",
-   "price": 0.909,
-   "stake": 36.96,
-   "reason": "maker bid unfilled (81s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1786732315,
@@ -3078,7 +3079,7 @@
    "exit_price": 1.1082
   }
  ],
- "missed_pnl": -35.63,
+ "missed_pnl": -33.97,
  "last_fill": {
   "ts": 1786974300,
   "side": "SELL",
@@ -3095,7 +3096,7 @@
    "open_cost": 369.13,
    "open_n": 10,
    "miss_n": 165,
-   "miss_pnl": 119074.08,
+   "miss_pnl": 119075.74,
    "last_ts": 1786974303
   },
   "gkmgkldfmg": {
@@ -3189,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786974303
+ "updated": 1786977775
 }
