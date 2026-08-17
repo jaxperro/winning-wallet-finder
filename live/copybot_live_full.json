@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786954621,
+ "updated": 1786961617,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 661.97,
@@ -56,11 +56,11 @@
    "realized": -88.89,
    "n": 64,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 47.65,
+   "open_n": 1,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786928405
+   "last_ts": 1786961548
   },
   "BikesAreTheBikes": {
    "realized": 79.66,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "49327826281388594665369011399077490430565060717017678724224928515399644205981",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "DN SOOPers",
+   "title": "LoL: T1 vs DN SOOPers - Game 2 Winner",
+   "their_price": 0.56,
+   "my_price": 0.56,
+   "slippage_pct": 0.0,
+   "lag_s": 2.5,
+   "shares": 85.09,
+   "cost": 47.65,
+   "fee": 0.629,
+   "opened": 1786961548,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786924800
+  },
   {
    "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
