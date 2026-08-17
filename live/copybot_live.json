@@ -2130,6 +2130,22 @@
  ],
  "missed": [
   {
+   "ts": 1786981048,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "43910509935922189427382177701090800353832023672255480932139523276667182500142",
+   "cond": "0xcb9b6dea81e9016b8aaa6af65903fb7327e04340aaef506eb586273fd1b1bd08",
+   "title": "LoL: Natus Vincere vs Team Heretics - Game 2 Winner",
+   "outcome": "Natus Vincere",
+   "price": 0.66,
+   "stake": 48.84,
+   "reason": "maker bid unfilled (60s)",
+   "status": "sold",
+   "pnl": 21.62,
+   "settled": 1786983947,
+   "name": "AIcAIc",
+   "exit_price": 0.96
+  },
+  {
    "ts": 1786981865,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "109749585976448774183248124369614955614262791730544648618224681816510077140914",
@@ -2142,22 +2158,8 @@
    "status": "won",
    "pnl": 5.45,
    "settled": 1786983516,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1786981048,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "43910509935922189427382177701090800353832023672255480932139523276667182500142",
-   "cond": "0xcb9b6dea81e9016b8aaa6af65903fb7327e04340aaef506eb586273fd1b1bd08",
-   "title": "LoL: Natus Vincere vs Team Heretics - Game 2 Winner",
-   "outcome": "Natus Vincere",
-   "price": 0.66,
-   "stake": 48.84,
-   "reason": "maker bid unfilled (60s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1786942377,
@@ -3079,7 +3081,7 @@
    "exit_price": 0.95
   }
  ],
- "missed_pnl": 17.02,
+ "missed_pnl": 38.64,
  "last_fill": {
   "ts": 1786983103,
   "side": "SELL",
@@ -3146,7 +3148,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 15,
-   "miss_pnl": -492.55,
+   "miss_pnl": -470.93,
    "last_ts": 1786983110
   },
   "BikesAreTheBikes": {
@@ -3190,5 +3192,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786983516
+ "updated": 1786983949
 }
