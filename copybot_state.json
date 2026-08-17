@@ -20737,8 +20737,8 @@
     }
   },
   "hwm": 3600.1933566560215,
-  "feed_sig": "fe6d4e794358d817a6405c31d7cf628d",
-  "feed_pushed_at": 1786952395.194918,
+  "feed_sig": "7613f3d8c4d3dc2ac0a2d7d3c04fe786",
+  "feed_pushed_at": 1786952542.8020935,
   "missed": [
     {
       "ts": 1784503159,
@@ -23917,9 +23917,10 @@
       "price": 0.39,
       "stake": 32.14,
       "reason": "not copied in the detection window (reconciled)",
-      "status": "open",
-      "pnl": null,
-      "settled": null
+      "status": "lost",
+      "pnl": -32.73,
+      "settled": 1786952613,
+      "name": "0xbadaf319"
     }
   ],
   "no_miss_toks": [
