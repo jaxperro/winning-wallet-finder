@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 989.16,
- "deployed": 1453.08,
+ "cash": 939.88,
+ "deployed": 1501.92,
  "reserve": 0.0,
- "realized": 1442.21,
+ "realized": 1441.77,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 31,
- "fees_paid": 494.49,
+ "open_count": 32,
+ "fees_paid": 494.93,
  "fee_rate": 0.03,
  "lag": {
-  "n": 460,
-  "n24": 7,
+  "n": 461,
+  "n24": 8,
   "basis": "24h",
-  "avg_s": 7.7,
+  "avg_s": 5.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "43910509935922189427382177701090800353832023672255480932139523276667182500142",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Natus Vincere",
+   "title": "LoL: Natus Vincere vs Team Heretics - Game 2 Winner",
+   "their_price": 0.7,
+   "my_price": 0.7,
+   "slippage_pct": 0.0,
+   "lag_s": 0.7,
+   "shares": 69.77,
+   "cost": 48.84,
+   "fee": 0.44,
+   "opened": 1786982287,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786924800
+  },
   {
    "token": "10811295927927222894574381093347915325910075948042896845603378528034740699211",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2104,26 +2124,6 @@
    "pnl": -58.75,
    "settled": 1785678289,
    "end_ts": 1785628800
-  },
-  {
-   "token": "76752916551697359157851234269297016591012843522959969977805224055761398575042",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "ThunderTalk Gaming",
-   "title": "LoL: ThunderTalk Gaming vs Team WE - Game 2 Winner",
-   "their_price": 0.5329,
-   "my_price": 0.5329,
-   "slippage_pct": 0.0,
-   "lag_s": 7.8,
-   "shares": 216.26,
-   "cost": 115.24,
-   "fee": 1.61,
-   "opened": 1785658581,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -116.85,
-   "settled": 1785676407,
-   "end_ts": 1785628800
   }
  ],
  "missed": [
@@ -3079,11 +3079,11 @@
  ],
  "missed_pnl": 11.57,
  "last_fill": {
-  "ts": 1786980861,
-  "side": "SELL",
-  "price": 0.93,
-  "shares": 75.65,
-  "title": "LoL: Natus Vincere vs Team Heretics - Game 1 Winner",
+  "ts": 1786982287,
+  "side": "BUY",
+  "price": 0.7,
+  "shares": 69.77,
+  "title": "LoL: Natus Vincere vs Team Heretics - Game 2 Winner",
   "outcome": "Natus Vincere"
  },
  "wallet_pnl": {
@@ -3141,11 +3141,11 @@
    "realized": -30.82,
    "n": 66,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.84,
+   "open_n": 1,
    "miss_n": 15,
    "miss_pnl": -492.55,
-   "last_ts": 1786980861
+   "last_ts": 1786982287
   },
   "BikesAreTheBikes": {
    "realized": 79.66,
@@ -3188,5 +3188,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786981871
+ "updated": 1786982287
 }
