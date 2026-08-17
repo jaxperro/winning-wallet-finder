@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.18,
+ "stake": 49.17,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 956.67,
- "deployed": 1502.27,
+ "cash": 907.28,
+ "deployed": 1551.45,
  "reserve": 0.0,
- "realized": 1458.92,
+ "realized": 1458.7,
  "adjustments": 0.03,
- "ledger_drift": -0.05,
- "open_count": 32,
- "fees_paid": 495.91,
+ "ledger_drift": -0.06,
+ "open_count": 33,
+ "fees_paid": 496.13,
  "fee_rate": 0.03,
  "lag": {
-  "n": 462,
-  "n24": 8,
+  "n": 463,
+  "n24": 9,
   "basis": "24h",
-  "avg_s": 5.1,
+  "avg_s": 2.5,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
+   "their_price": 0.85,
+   "my_price": 0.85,
+   "slippage_pct": 0.0,
+   "lag_s": 1.0,
+   "shares": 57.85,
+   "cost": 49.17,
+   "fee": 0.22,
+   "opened": 1786994479,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "83783489454659420807679723574840032660002326710045123865554753994450797728825",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2104,28 +2124,6 @@
    "pnl": -114.22,
    "settled": 1785696160,
    "end_ts": 1785628800
-  },
-  {
-   "token": "34177183522290529087941989999542317105887053912920323890269808191629069001437",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Movistar KOI",
-   "title": "LoL: Fnatic vs Movistar KOI - Game 1 Winner",
-   "their_price": 0.6,
-   "my_price": 0.6,
-   "slippage_pct": 0.0,
-   "lag_s": 7.6,
-   "shares": 92.52,
-   "cost": 55.51,
-   "fee": 0.67,
-   "opened": 1785691286,
-   "status": "closed",
-   "exit_price": 0.9588,
-   "pnl": 32.54,
-   "settled": 1785692270,
-   "end_ts": 1785628800,
-   "sold_shares": 92.52,
-   "sold_proceeds": 88.71
   }
  ],
  "missed": [
@@ -3084,12 +3082,12 @@
  ],
  "missed_pnl": 61.97,
  "last_fill": {
-  "ts": 1786992265,
+  "ts": 1786994480,
   "side": "BUY",
-  "price": 0.3852,
-  "shares": 127.7,
-  "title": "Strait of Hormuz traffic returns to normal by December 31?",
-  "outcome": "Yes"
+  "price": 0.85,
+  "shares": 57.85,
+  "title": "Will Russia and Ukraine hold any diplomatic meeting by Augus",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3156,11 +3154,11 @@
    "realized": 79.66,
    "n": 33,
    "wins": 7,
-   "open_cost": 1215.85,
-   "open_n": 22,
+   "open_cost": 1265.02,
+   "open_n": 23,
    "miss_n": 61,
    "miss_pnl": -992.92,
-   "last_ts": 1786992264
+   "last_ts": 1786994479
   },
   "JuiceFarm": {
    "realized": -255.63,
@@ -3193,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786994402
+ "updated": 1786994480
 }
