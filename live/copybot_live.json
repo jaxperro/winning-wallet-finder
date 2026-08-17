@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.2,
+ "stake": 49.18,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 1006.78,
- "deployed": 1453.08,
+ "cash": 956.67,
+ "deployed": 1502.27,
  "reserve": 0.0,
- "realized": 1459.83,
+ "realized": 1458.92,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 31,
- "fees_paid": 495.01,
+ "open_count": 32,
+ "fees_paid": 495.91,
  "fee_rate": 0.03,
  "lag": {
-  "n": 461,
-  "n24": 7,
+  "n": 462,
+  "n24": 8,
   "basis": "24h",
-  "avg_s": 7.7,
+  "avg_s": 5.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "83783489454659420807679723574840032660002326710045123865554753994450797728825",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Strait of Hormuz traffic returns to normal by December 31?",
+   "their_price": 0.3852,
+   "my_price": 0.3852,
+   "slippage_pct": 0.0,
+   "lag_s": 1.0,
+   "shares": 127.7,
+   "cost": 49.19,
+   "fee": 0.91,
+   "opened": 1786992264,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798675200
+  },
   {
    "token": "43910509935922189427382177701090800353832023672255480932139523276667182500142",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2106,26 +2126,6 @@
    "end_ts": 1785628800,
    "sold_shares": 92.52,
    "sold_proceeds": 88.71
-  },
-  {
-   "token": "102071153892246039627048034194967021680193759805083679061162745293075874048047",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "ThunderTalk Gaming",
-   "title": "LoL: ThunderTalk Gaming vs Team WE (BO3) - LPL Group Ascend",
-   "their_price": 0.33,
-   "my_price": 0.33,
-   "slippage_pct": 0.0,
-   "lag_s": 1.8,
-   "shares": 174.5,
-   "cost": 57.59,
-   "fee": 1.16,
-   "opened": 1785660187,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -58.75,
-   "settled": 1785678289,
-   "end_ts": 1785628800
   }
  ],
  "missed": [
@@ -3083,12 +3083,12 @@
  ],
  "missed_pnl": 38.64,
  "last_fill": {
-  "ts": 1786983103,
-  "side": "SELL",
-  "price": 0.96,
-  "shares": 54.35,
-  "title": "LoL: Natus Vincere vs Team Heretics - Game 2 Winner",
-  "outcome": "Natus Vincere"
+  "ts": 1786992265,
+  "side": "BUY",
+  "price": 0.3852,
+  "shares": 127.7,
+  "title": "Strait of Hormuz traffic returns to normal by December 31?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3155,11 +3155,11 @@
    "realized": 79.66,
    "n": 33,
    "wins": 7,
-   "open_cost": 1166.66,
-   "open_n": 21,
+   "open_cost": 1215.85,
+   "open_n": 22,
    "miss_n": 61,
    "miss_pnl": -992.92,
-   "last_ts": 1786950992
+   "last_ts": 1786992264
   },
   "JuiceFarm": {
    "realized": -255.63,
@@ -3192,5 +3192,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786987316
+ "updated": 1786992273
 }

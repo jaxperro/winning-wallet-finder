@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786987316,
+ "updated": 1786992273,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -66,11 +66,11 @@
    "realized": 79.66,
    "n": 33,
    "wins": 7,
-   "open_cost": 1166.66,
-   "open_n": 21,
+   "open_cost": 1215.85,
+   "open_n": 22,
    "miss_n": 61,
    "miss_pnl": -992.92,
-   "last_ts": 1786950992
+   "last_ts": 1786992264
   },
   "JuiceFarm": {
    "realized": -255.63,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "83783489454659420807679723574840032660002326710045123865554753994450797728825",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Strait of Hormuz traffic returns to normal by December 31?",
+   "their_price": 0.3852,
+   "my_price": 0.3852,
+   "slippage_pct": 0.0,
+   "lag_s": 1.0,
+   "shares": 127.7,
+   "cost": 49.19,
+   "fee": 0.9073,
+   "opened": 1786992264,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798675200
+  },
   {
    "token": "43910509935922189427382177701090800353832023672255480932139523276667182500142",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
