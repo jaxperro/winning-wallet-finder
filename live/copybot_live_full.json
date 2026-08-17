@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1786971298,
+ "updated": 1786974303,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 661.97,
-   "n": 115,
+   "realized": 663.27,
+   "n": 116,
    "wins": 39,
-   "open_cost": 394.55,
-   "open_n": 11,
+   "open_cost": 369.13,
+   "open_n": 10,
    "miss_n": 165,
    "miss_pnl": 119074.08,
-   "last_ts": 1786916350
+   "last_ts": 1786974303
   },
   "gkmgkldfmg": {
    "realized": 925.46,
@@ -104,6 +104,28 @@
   }
  },
  "bets": [
+  {
+   "token": "98528096414959732755127193270546193676246051874665814098499552238165658456996",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will AVAX reach $11 by December 31, 2026?",
+   "their_price": 0.85,
+   "my_price": 0.85,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 29.91,
+   "cost": 25.42,
+   "fee": 0.1144,
+   "opened": 1785844868,
+   "status": "closed",
+   "exit_price": 0.8973,
+   "pnl": 1.3,
+   "settled": 1786974303,
+   "end_ts": 1798761600,
+   "sold_shares": 29.91,
+   "sold_proceeds": 26.838243000000002
+  },
   {
    "token": "49327826281388594665369011399077490430565060717017678724224928515399644205981",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -1798,26 +1820,6 @@
    "pnl": -53.44,
    "settled": 1785849459,
    "end_ts": 1786406400
-  },
-  {
-   "token": "98528096414959732755127193270546193676246051874665814098499552238165658456996",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will AVAX reach $11 by December 31, 2026?",
-   "their_price": 0.85,
-   "my_price": 0.85,
-   "slippage_pct": 0.0,
-   "lag_s": 0.6,
-   "shares": 29.91,
-   "cost": 25.42,
-   "fee": 0.1144,
-   "opened": 1785844868,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1798761600
   },
   {
    "token": "69546314151438248260496384444874667390117560523671723212893326463407321740824",
