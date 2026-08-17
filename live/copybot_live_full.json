@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787002801,
+ "updated": 1787004855,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -38,7 +38,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 25,
+   "miss_n": 26,
    "miss_pnl": 486.61,
    "last_ts": 1786815262
   },
@@ -8742,6 +8742,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787004849,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
+   "cond": "0xe07fd72c87239bc4c19c41cb6234dcc6338576443ff74f58db0415814f2d0971",
+   "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
+   "outcome": "Under",
+   "price": 0.55,
+   "stake": 15.34,
+   "reason": "maker bid unfilled (65s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1787002320,
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",

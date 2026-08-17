@@ -2128,6 +2128,21 @@
  ],
  "missed": [
   {
+   "ts": 1787004849,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
+   "cond": "0xe07fd72c87239bc4c19c41cb6234dcc6338576443ff74f58db0415814f2d0971",
+   "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
+   "outcome": "Under",
+   "price": 0.55,
+   "stake": 15.34,
+   "reason": "maker bid unfilled (65s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1787002320,
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
    "token": "32044532626251001454470973498564213866511665482798950142562486285090357572054",
@@ -3063,24 +3078,9 @@
    "settled": 1786278666,
    "name": "AIcAIc",
    "exit_price": 0.5969
-  },
-  {
-   "ts": 1786275766,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "87712920673252297509200151045391015262449055764880659907762503287643101055970",
-   "cond": "0xcee04ba47d02f6c64642369b34193c355f64de1b9ae425c71ea4efef1989d271",
-   "title": "US announces end of Iranian blockade by October 31, 2026?",
-   "outcome": "Yes",
-   "price": 0.76,
-   "stake": 49.9,
-   "reason": "maker bid unfilled (85s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 48.32,
+ "missed_pnl": 38.11,
  "last_fill": {
   "ts": 1787000098,
   "side": "BUY",
@@ -3126,7 +3126,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 25,
+   "miss_n": 26,
    "miss_pnl": 486.61,
    "last_ts": 1786815262
   },
@@ -3191,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787002801
+ "updated": 1787004855
 }
