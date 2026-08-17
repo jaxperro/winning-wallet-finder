@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786981056,
+ "updated": 1786981871,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -8,7 +8,7 @@
    "wins": 39,
    "open_cost": 369.13,
    "open_n": 10,
-   "miss_n": 165,
+   "miss_n": 166,
    "miss_pnl": 119075.74,
    "last_ts": 1786974303
   },
@@ -8660,6 +8660,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786981865,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "109749585976448774183248124369614955614262791730544648618224681816510077140914",
+   "cond": "0x158b19e34dc10f1bd7ba37d8adc36b66a1def6d6b8c16ba499315d8d8053599f",
+   "title": "Bitcoin above 64,000 on August 17, 12PM ET?",
+   "outcome": "Yes",
+   "price": 0.8439,
+   "stake": 30.24,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1786981048,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
