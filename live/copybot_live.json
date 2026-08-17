@@ -2135,10 +2135,26 @@
    "price": 0.558,
    "stake": 47.67,
    "reason": "price moved 0.49\u21920.56",
+   "status": "sold",
+   "pnl": -6.79,
+   "settled": 1786952541,
+   "name": "BikesAreTheBikes",
+   "exit_price": 0.4934
+  },
+  {
+   "ts": 1786952536,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "10648768902294223005281776472791443674603816737553002058221071348281139541856",
+   "cond": "0x30034a8bfb66e13d0235c5a8483b5f4ba974c0221e3c9ca67f1382723d19a801",
+   "title": "Bitcoin above 66,000 on July 22, 12PM ET?",
+   "outcome": "No",
+   "price": 0.39,
+   "stake": 32.14,
+   "reason": "not copied in the detection window (reconciled)",
    "status": "open",
    "pnl": null,
    "settled": null,
-   "name": "BikesAreTheBikes"
+   "name": "0xbadaf319"
   },
   {
    "ts": 1786942377,
@@ -3057,25 +3073,9 @@
    "settled": 1786187071,
    "name": "0xbadaf319",
    "exit_price": 0.923
-  },
-  {
-   "ts": 1786170931,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "87712920673252297509200151045391015262449055764880659907762503287643101055970",
-   "cond": "0xcee04ba47d02f6c64642369b34193c355f64de1b9ae425c71ea4efef1989d271",
-   "title": "US announces end of Iranian blockade by October 31, 2026?",
-   "outcome": "Yes",
-   "price": 0.86,
-   "stake": 47.97,
-   "reason": "maker bid unfilled (67s)",
-   "status": "sold",
-   "pnl": -20.7,
-   "settled": 1786172657,
-   "name": "BikesAreTheBikes",
-   "exit_price": 0.5
   }
  ],
- "missed_pnl": 56.6,
+ "missed_pnl": 32.7,
  "last_fill": {
   "ts": 1786950993,
   "side": "BUY",
@@ -3091,7 +3091,7 @@
    "wins": 39,
    "open_cost": 394.55,
    "open_n": 11,
-   "miss_n": 163,
+   "miss_n": 164,
    "miss_pnl": 119142.06,
    "last_ts": 1786916350
   },
@@ -3152,7 +3152,7 @@
    "open_cost": 1166.66,
    "open_n": 21,
    "miss_n": 61,
-   "miss_pnl": -986.13,
+   "miss_pnl": -992.92,
    "last_ts": 1786950992
   },
   "JuiceFarm": {
@@ -3186,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786951000
+ "updated": 1786952542
 }
