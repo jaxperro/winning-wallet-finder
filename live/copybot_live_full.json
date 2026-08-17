@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786925915,
+ "updated": 1786928409,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 661.97,
@@ -53,14 +53,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -39.15,
-   "n": 63,
+   "realized": -88.89,
+   "n": 64,
    "wins": 0,
-   "open_cost": 48.93,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786914779
+   "last_ts": 1786928405
   },
   "BikesAreTheBikes": {
    "realized": 79.66,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "23235036346873495796270480110388225137357011671137462580436628081036186729432",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "FlyQuest",
+   "title": "LoL: FlyQuest vs Cloud9 - Game 1 Winner",
+   "their_price": 0.45,
+   "my_price": 0.45,
+   "slippage_pct": 0.0,
+   "lag_s": 19.9,
+   "shares": 108.74,
+   "cost": 48.93,
+   "fee": 0.8074,
+   "opened": 1786911774,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -49.74,
+   "settled": 1786928405,
+   "end_ts": 1786924800
+  },
   {
    "token": "30585812600395727123595511030296883656611291473656044048640986162820004488256",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -165,26 +185,6 @@
    "end_ts": 1786924800,
    "sold_shares": 84.38,
    "sold_proceeds": 84.38
-  },
-  {
-   "token": "23235036346873495796270480110388225137357011671137462580436628081036186729432",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "FlyQuest",
-   "title": "LoL: FlyQuest vs Cloud9 - Game 1 Winner",
-   "their_price": 0.45,
-   "my_price": 0.45,
-   "slippage_pct": 0.0,
-   "lag_s": 19.9,
-   "shares": 108.74,
-   "cost": 48.93,
-   "fee": 0.8074,
-   "opened": 1786911774,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786924800
   },
   {
    "token": "6333843735155285450143276508143481064003286679791924447055152610295680774877",
