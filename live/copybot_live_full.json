@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786969268,
+ "updated": 1786971298,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 661.97,
@@ -59,7 +59,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 14,
-   "miss_pnl": -511.43,
+   "miss_pnl": -492.55,
    "last_ts": 1786966388
   },
   "BikesAreTheBikes": {
@@ -8637,6 +8637,22 @@
  ],
  "missed": [
   {
+   "ts": 1786968690,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "17423891319744596989056481556844489891811840330632446387187415390310175437647",
+   "cond": "0x142d2f1b31d2ebb28fb2e62d883ece12b672e05e6510ebf68e37876959f1d516",
+   "title": "LoL: T1 vs DN SOOPers - Game 3 Winner",
+   "outcome": "DN SOOPers",
+   "price": 0.7,
+   "stake": 48.39,
+   "reason": "maker bid unfilled (91s)",
+   "status": "sold",
+   "pnl": 18.88,
+   "settled": 1786971297,
+   "name": "AIcAIc",
+   "exit_price": 0.98
+  },
+  {
    "ts": 1786969191,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "53864929757641923279848610727880389145399611177187939181757886904167965697807",
@@ -8649,7 +8665,8 @@
    "status": "lost",
    "pnl": -35.25,
    "settled": 1786969267,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1786969191,
@@ -8664,22 +8681,8 @@
    "status": "lost",
    "pnl": -49.01,
    "settled": 1786969267,
-   "name": "gkmgkldfmg"
-  },
-  {
-   "ts": 1786968690,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "17423891319744596989056481556844489891811840330632446387187415390310175437647",
-   "cond": "0x142d2f1b31d2ebb28fb2e62d883ece12b672e05e6510ebf68e37876959f1d516",
-   "title": "LoL: T1 vs DN SOOPers - Game 3 Winner",
-   "outcome": "DN SOOPers",
-   "price": 0.7,
-   "stake": 48.39,
-   "reason": "maker bid unfilled (91s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
+   "name": "gkmgkldfmg",
+   "exit_checked": true
   },
   {
    "ts": 1786952536,
