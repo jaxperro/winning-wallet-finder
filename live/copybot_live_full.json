@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787000098,
+ "updated": 1787000629,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -79,7 +79,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 7,
-   "miss_pnl": 12.01,
+   "miss_pnl": 11.94,
    "last_ts": 1786896863
   },
   "0x41558102": {
@@ -8743,6 +8743,22 @@
  ],
  "missed": [
   {
+   "ts": 1786839933,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "41092582709358687435042023110834332703597887425683496641893347944639497294430",
+   "cond": "0xdb0b2580e3f7ad9b141b60ae8a757f98a8d959d91092f435fa4440c0f0a9ef5f",
+   "title": "LoL: GIANTX vs Karmine Corp (BO3) - LEC Regular Season",
+   "outcome": "Karmine Corp",
+   "price": 0.84,
+   "stake": 48.34,
+   "reason": "maker bid unfilled (100s)",
+   "status": "sold",
+   "pnl": -0.07,
+   "settled": 1787000628,
+   "name": "JuiceFarm",
+   "exit_price": 0.8467
+  },
+  {
    "ts": 1786839862,
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
    "token": "10509164293913090189801478181174559628006742062297375873350372841521551898308",
@@ -9056,21 +9072,6 @@
    "settled": 1786851761,
    "name": "gkmgkldfmg",
    "exit_price": 0.563
-  },
-  {
-   "ts": 1786839933,
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "token": "41092582709358687435042023110834332703597887425683496641893347944639497294430",
-   "cond": "0xdb0b2580e3f7ad9b141b60ae8a757f98a8d959d91092f435fa4440c0f0a9ef5f",
-   "title": "LoL: GIANTX vs Karmine Corp (BO3) - LEC Regular Season",
-   "outcome": "Karmine Corp",
-   "price": 0.84,
-   "stake": 48.34,
-   "reason": "maker bid unfilled (100s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "JuiceFarm"
   },
   {
    "ts": 1786113047,
