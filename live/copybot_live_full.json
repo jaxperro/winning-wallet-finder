@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786977775,
+ "updated": 1786979207,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -56,11 +56,11 @@
    "realized": -52.08,
    "n": 65,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.42,
+   "open_n": 1,
    "miss_n": 14,
    "miss_pnl": -492.55,
-   "last_ts": 1786966388
+   "last_ts": 1786979122
   },
   "BikesAreTheBikes": {
    "realized": 79.66,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "10811295927927222894574381093347915325910075948042896845603378528034740699211",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Natus Vincere",
+   "title": "LoL: Natus Vincere vs Team Heretics - Game 1 Winner",
+   "their_price": 0.64,
+   "my_price": 0.64,
+   "slippage_pct": 0.0,
+   "lag_s": 62.4,
+   "shares": 75.65,
+   "cost": 48.42,
+   "fee": 0.5229,
+   "opened": 1786979122,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1786924800
+  },
   {
    "token": "98528096414959732755127193270546193676246051874665814098499552238165658456996",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
