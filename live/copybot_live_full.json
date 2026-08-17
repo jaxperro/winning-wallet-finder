@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786979207,
+ "updated": 1786980861,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -53,14 +53,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -52.08,
-   "n": 65,
+   "realized": -30.82,
+   "n": 66,
    "wins": 0,
-   "open_cost": 48.42,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 14,
    "miss_pnl": -492.55,
-   "last_ts": 1786979122
+   "last_ts": 1786980861
   },
   "BikesAreTheBikes": {
    "realized": 79.66,
@@ -118,11 +118,13 @@
    "cost": 48.42,
    "fee": 0.5229,
    "opened": 1786979122,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786924800
+   "status": "closed",
+   "exit_price": 0.928,
+   "pnl": 21.26,
+   "settled": 1786980861,
+   "end_ts": 1786924800,
+   "sold_shares": 75.65,
+   "sold_proceeds": 70.20675555000001
   },
   {
    "token": "98528096414959732755127193270546193676246051874665814098499552238165658456996",

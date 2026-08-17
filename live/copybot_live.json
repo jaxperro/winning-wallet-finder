@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.41,
+ "stake": 48.84,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 918.95,
- "deployed": 1501.5,
+ "cash": 989.16,
+ "deployed": 1453.08,
  "reserve": 0.0,
- "realized": 1420.41,
+ "realized": 1442.21,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 32,
- "fees_paid": 494.34,
+ "open_count": 31,
+ "fees_paid": 494.49,
  "fee_rate": 0.03,
  "lag": {
   "n": 460,
@@ -64,11 +64,13 @@
    "cost": 48.42,
    "fee": 0.52,
    "opened": 1786979122,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786924800
+   "status": "closed",
+   "exit_price": 0.928,
+   "pnl": 21.26,
+   "settled": 1786980861,
+   "end_ts": 1786924800,
+   "sold_shares": 75.65,
+   "sold_proceeds": 70.21
   },
   {
    "token": "98528096414959732755127193270546193676246051874665814098499552238165658456996",
@@ -3079,9 +3081,9 @@
  ],
  "missed_pnl": -33.97,
  "last_fill": {
-  "ts": 1786979184,
-  "side": "BUY",
-  "price": 0.64,
+  "ts": 1786980861,
+  "side": "SELL",
+  "price": 0.93,
   "shares": 75.65,
   "title": "LoL: Natus Vincere vs Team Heretics - Game 1 Winner",
   "outcome": "Natus Vincere"
@@ -3138,14 +3140,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -52.08,
-   "n": 65,
+   "realized": -30.82,
+   "n": 66,
    "wins": 0,
-   "open_cost": 48.42,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 14,
    "miss_pnl": -492.55,
-   "last_ts": 1786979122
+   "last_ts": 1786980861
   },
   "BikesAreTheBikes": {
    "realized": 79.66,
@@ -3188,5 +3190,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786979207
+ "updated": 1786980861
 }
