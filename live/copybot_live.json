@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.64,
+ "stake": 48.39,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 855.96,
- "deployed": 1526.15,
+ "cash": 941.05,
+ "deployed": 1478.5,
  "reserve": 0.0,
- "realized": 1382.08,
+ "realized": 1419.52,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 33,
+ "open_count": 32,
  "fees_paid": 493.73,
  "fee_rate": 0.03,
  "lag": {
@@ -64,11 +64,13 @@
    "cost": 47.65,
    "fee": 0.63,
    "opened": 1786961548,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1786924800
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 36.81,
+   "settled": 1786966388,
+   "end_ts": 1786924800,
+   "sold_shares": 85.09,
+   "sold_proceeds": 85.09
   },
   {
    "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
@@ -3076,9 +3078,9 @@
  ],
  "missed_pnl": -0.03,
  "last_fill": {
-  "ts": 1786961550,
-  "side": "BUY",
-  "price": 0.56,
+  "ts": 1786966380,
+  "side": "SELL",
+  "price": 1.0,
   "shares": 85.09,
   "title": "LoL: T1 vs DN SOOPers - Game 2 Winner",
   "outcome": "DN SOOPers"
@@ -3135,14 +3137,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": -88.89,
-   "n": 64,
+   "realized": -52.08,
+   "n": 65,
    "wins": 0,
-   "open_cost": 47.65,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 13,
    "miss_pnl": -511.43,
-   "last_ts": 1786961548
+   "last_ts": 1786966388
   },
   "BikesAreTheBikes": {
    "realized": 79.66,
@@ -3185,5 +3187,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786961617
+ "updated": 1786966388
 }
