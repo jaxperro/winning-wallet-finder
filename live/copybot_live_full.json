@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786928964,
+ "updated": 1786932169,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 661.97,
@@ -69,7 +69,7 @@
    "open_cost": 1119.0,
    "open_n": 20,
    "miss_n": 60,
-   "miss_pnl": -936.9,
+   "miss_pnl": -986.13,
    "last_ts": 1786897637
   },
   "JuiceFarm": {
@@ -8585,6 +8585,21 @@
  ],
  "missed": [
   {
+   "ts": 1786732315,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "106335826079264931347181345558330414525733792371805698042055926343403911976742",
+   "cond": "0x0082737f1d0dc831a848e92b46fbf572f133dd535bfaf96cc123e5aa7577ce9c",
+   "title": "Will Japan Q2 GDP growth (annualized) be between 0.0% and 0.8%?",
+   "outcome": "Yes",
+   "price": 0.2,
+   "stake": 48.08,
+   "reason": "thin book ($3 within 5c < $50)",
+   "status": "lost",
+   "pnl": -49.23,
+   "settled": 1786932169,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1786919236,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "69798396964065261326323092700532888217157326502918720568819393070921313091865",
@@ -8816,21 +8831,6 @@
    "settled": 1786734788,
    "name": "Kruto2027",
    "exit_checked": true
-  },
-  {
-   "ts": 1786732315,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "106335826079264931347181345558330414525733792371805698042055926343403911976742",
-   "cond": "0x0082737f1d0dc831a848e92b46fbf572f133dd535bfaf96cc123e5aa7577ce9c",
-   "title": "Will Japan Q2 GDP growth (annualized) be between 0.0% and 0.8%?",
-   "outcome": "Yes",
-   "price": 0.2,
-   "stake": 48.08,
-   "reason": "thin book ($3 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1786709545,
