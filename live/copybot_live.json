@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 857.0,
- "deployed": 1600.62,
+ "cash": 841.45,
+ "deployed": 1615.96,
  "reserve": 0.0,
- "realized": 1457.59,
+ "realized": 1457.38,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 34,
- "fees_paid": 497.24,
+ "open_count": 35,
+ "fees_paid": 497.45,
  "fee_rate": 0.03,
  "lag": {
-  "n": 464,
-  "n24": 7,
+  "n": 465,
+  "n24": 8,
   "basis": "24h",
-  "avg_s": 1.1,
+  "avg_s": 1.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Under",
+   "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
+   "their_price": 0.55,
+   "my_price": 0.55,
+   "slippage_pct": 0.0,
+   "lag_s": 41.4,
+   "shares": 27.89,
+   "cost": 15.34,
+   "fee": 0.21,
+   "opened": 1787004901,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787356800
+  },
   {
    "token": "115351075585746600277716377744935410125916932950844626289798775482755919708780",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2102,28 +2122,6 @@
    "end_ts": 1788220800,
    "sold_shares": 24.91,
    "sold_proceeds": 24.65
-  },
-  {
-   "token": "25666257384729943287558818626325079689158559409645151459011325464093864355481",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "LYON",
-   "title": "LoL: LYON vs Shopify Rebellion - Game 1 Winner",
-   "their_price": 0.48,
-   "my_price": 0.48,
-   "slippage_pct": 0.0,
-   "lag_s": 7.4,
-   "shares": 114.62,
-   "cost": 55.02,
-   "fee": 0.86,
-   "opened": 1785702008,
-   "status": "closed",
-   "exit_price": 1.0,
-   "pnl": 58.74,
-   "settled": 1785704189,
-   "end_ts": 1785715200,
-   "sold_shares": 114.62,
-   "sold_proceeds": 114.62
   }
  ],
  "missed": [
@@ -3082,12 +3080,12 @@
  ],
  "missed_pnl": 38.11,
  "last_fill": {
-  "ts": 1787000098,
+  "ts": 1787004942,
   "side": "BUY",
-  "price": 0.25,
-  "shares": 196.69,
-  "title": "Will United Russia (ER) gain the most seats in the next Russ",
-  "outcome": "No"
+  "price": 0.55,
+  "shares": 27.89,
+  "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
+  "outcome": "Under"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3124,11 +3122,11 @@
    "realized": 193.28,
    "n": 18,
    "wins": 3,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 15.34,
+   "open_n": 1,
    "miss_n": 26,
    "miss_pnl": 486.61,
-   "last_ts": 1786815262
+   "last_ts": 1787004901
   },
   "LSB1": {
    "realized": -397.16,
@@ -3191,5 +3189,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787004855
+ "updated": 1787004986
 }
