@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.17,
+ "stake": 49.15,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 907.28,
- "deployed": 1551.45,
+ "cash": 857.0,
+ "deployed": 1600.62,
  "reserve": 0.0,
- "realized": 1458.7,
+ "realized": 1457.59,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 33,
- "fees_paid": 496.13,
+ "open_count": 34,
+ "fees_paid": 497.24,
  "fee_rate": 0.03,
  "lag": {
-  "n": 463,
-  "n24": 7,
+  "n": 464,
+  "n24": 8,
   "basis": "24h",
-  "avg_s": 1.1,
+  "avg_s": 1.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "115351075585746600277716377744935410125916932950844626289798775482755919708780",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will United Russia (ER) gain the most seats in the next Russian parliamentary election?",
+   "their_price": 0.25,
+   "my_price": 0.25,
+   "slippage_pct": 0.0,
+   "lag_s": 7.6,
+   "shares": 196.69,
+   "cost": 49.17,
+   "fee": 1.11,
+   "opened": 1787000091,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1790726400
+  },
   {
    "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2104,26 +2124,6 @@
    "end_ts": 1785715200,
    "sold_shares": 114.62,
    "sold_proceeds": 114.62
-  },
-  {
-   "token": "105228447769711522038232773133913525386743086795835584168368052566540977107792",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "No",
-   "title": "Exact Score: Udinese Calcio 0 - 1 Trabzonspor?",
-   "their_price": 0.76,
-   "my_price": 0.7397,
-   "slippage_pct": 0.0,
-   "lag_s": 1.6,
-   "shares": 153.22,
-   "cost": 113.33,
-   "fee": 0.88,
-   "opened": 1785685845,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -114.22,
-   "settled": 1785696160,
-   "end_ts": 1785628800
   }
  ],
  "missed": [
@@ -3082,11 +3082,11 @@
  ],
  "missed_pnl": 61.97,
  "last_fill": {
-  "ts": 1786994480,
+  "ts": 1787000098,
   "side": "BUY",
-  "price": 0.85,
-  "shares": 57.85,
-  "title": "Will Russia and Ukraine hold any diplomatic meeting by Augus",
+  "price": 0.25,
+  "shares": 196.69,
+  "title": "Will United Russia (ER) gain the most seats in the next Russ",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3154,11 +3154,11 @@
    "realized": 79.66,
    "n": 33,
    "wins": 7,
-   "open_cost": 1265.02,
-   "open_n": 23,
+   "open_cost": 1314.19,
+   "open_n": 24,
    "miss_n": 61,
    "miss_pnl": -992.92,
-   "last_ts": 1786994479
+   "last_ts": 1787000091
   },
   "JuiceFarm": {
    "realized": -255.63,
@@ -3191,5 +3191,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786998218
+ "updated": 1787000098
 }

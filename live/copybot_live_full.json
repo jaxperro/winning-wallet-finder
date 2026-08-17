@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786998218,
+ "updated": 1787000098,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -66,11 +66,11 @@
    "realized": 79.66,
    "n": 33,
    "wins": 7,
-   "open_cost": 1265.02,
-   "open_n": 23,
+   "open_cost": 1314.19,
+   "open_n": 24,
    "miss_n": 61,
    "miss_pnl": -992.92,
-   "last_ts": 1786994479
+   "last_ts": 1787000091
   },
   "JuiceFarm": {
    "realized": -255.63,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "115351075585746600277716377744935410125916932950844626289798775482755919708780",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will United Russia (ER) gain the most seats in the next Russian parliamentary election?",
+   "their_price": 0.25,
+   "my_price": 0.25,
+   "slippage_pct": 0.0,
+   "lag_s": 7.6,
+   "shares": 196.69,
+   "cost": 49.17,
+   "fee": 1.1064,
+   "opened": 1787000091,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1790726400
+  },
   {
    "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
