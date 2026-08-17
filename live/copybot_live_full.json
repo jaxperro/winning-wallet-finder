@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787004986,
+ "updated": 1787008372,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -38,7 +38,7 @@
    "wins": 3,
    "open_cost": 15.34,
    "open_n": 1,
-   "miss_n": 26,
+   "miss_n": 27,
    "miss_pnl": 486.61,
    "last_ts": 1787004901
   },
@@ -8762,6 +8762,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787008372,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "71668069206278604379019230918162053701492619618865557073448491141480275547125",
+   "cond": "0x26b81d216acfb90826c51ed6b711707f05b74e34fb3c73dc3d92b78890915c56",
+   "title": "Will Melbourne Victory FC win on 2026-08-19?",
+   "outcome": "No",
+   "price": 0.31,
+   "stake": 49.15,
+   "reason": "thin book ($46 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1787004849,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",

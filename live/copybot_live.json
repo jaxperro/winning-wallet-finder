@@ -2126,6 +2126,21 @@
  ],
  "missed": [
   {
+   "ts": 1787008372,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "71668069206278604379019230918162053701492619618865557073448491141480275547125",
+   "cond": "0x26b81d216acfb90826c51ed6b711707f05b74e34fb3c73dc3d92b78890915c56",
+   "title": "Will Melbourne Victory FC win on 2026-08-19?",
+   "outcome": "No",
+   "price": 0.31,
+   "stake": 49.15,
+   "reason": "thin book ($46 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1787004849,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
@@ -3060,25 +3075,9 @@
    "settled": 1786278666,
    "name": "AIcAIc",
    "exit_price": 0.0733
-  },
-  {
-   "ts": 1786277528,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "11840728643633323051076845974892673823676187986380364152051490212323317288352",
-   "cond": "0x690f95ba728de5aed3fb861db575fb0c756baa37db50b2872bd5b857d3e74793",
-   "title": "LoL: BNK FEARX vs Kiwoom DRX - Game 2 Winner",
-   "outcome": "BNK FEARX",
-   "price": 0.83,
-   "stake": 49.87,
-   "reason": "maker bid unfilled (99s)",
-   "status": "sold",
-   "pnl": -14.69,
-   "settled": 1786278666,
-   "name": "AIcAIc",
-   "exit_price": 0.5969
   }
  ],
- "missed_pnl": 38.11,
+ "missed_pnl": 16.86,
  "last_fill": {
   "ts": 1787004942,
   "side": "BUY",
@@ -3124,7 +3123,7 @@
    "wins": 3,
    "open_cost": 15.34,
    "open_n": 1,
-   "miss_n": 26,
+   "miss_n": 27,
    "miss_pnl": 486.61,
    "last_ts": 1787004901
   },
@@ -3189,5 +3188,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787004986
+ "updated": 1787008372
 }
