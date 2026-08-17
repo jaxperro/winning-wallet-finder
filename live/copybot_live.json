@@ -1,21 +1,21 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.67,
+ "stake": 47.65,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 952.5,
- "deployed": 1430.84,
+ "cash": 904.24,
+ "deployed": 1478.5,
  "reserve": 0.0,
- "realized": 1383.31,
+ "realized": 1382.71,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 31,
- "fees_paid": 492.51,
+ "open_count": 32,
+ "fees_paid": 493.11,
  "fee_rate": 0.03,
  "lag": {
-  "n": 457,
+  "n": 458,
   "n24": 5,
   "basis": "24h",
   "avg_s": 7.7,
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Hamas agree to disarm by December 31?",
+   "their_price": 0.58,
+   "my_price": 0.58,
+   "slippage_pct": 0.0,
+   "lag_s": 1.1,
+   "shares": 82.18,
+   "cost": 47.66,
+   "fee": 0.6,
+   "opened": 1786950992,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798675200
+  },
   {
    "token": "23235036346873495796270480110388225137357011671137462580436628081036186729432",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2102,26 +2122,6 @@
    "end_ts": 1798761600,
    "sold_shares": 59.88,
    "sold_proceeds": 54.34
-  },
-  {
-   "token": "8380715925577845977184977030716387784969501288623224112825735013253473276536",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "US x Iran diplomatic meeting by August 31, 2026?",
-   "their_price": 0.46,
-   "my_price": 0.4725,
-   "slippage_pct": 0.0,
-   "lag_s": 0.6,
-   "shares": 114.34,
-   "cost": 54.02,
-   "fee": 0.85,
-   "opened": 1785643532,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788134400
   }
  ],
  "missed": [
@@ -3077,11 +3077,11 @@
  ],
  "missed_pnl": 56.6,
  "last_fill": {
-  "ts": 1786916357,
+  "ts": 1786950993,
   "side": "BUY",
-  "price": 0.93,
-  "shares": 41.43,
-  "title": "Will any AI model reach 1540 Overall Arena Score by Septembe",
+  "price": 0.58,
+  "shares": 82.18,
+  "title": "Will Hamas agree to disarm by December 31?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3149,11 +3149,11 @@
    "realized": 79.66,
    "n": 33,
    "wins": 7,
-   "open_cost": 1119.0,
-   "open_n": 20,
+   "open_cost": 1166.66,
+   "open_n": 21,
    "miss_n": 61,
    "miss_pnl": -986.13,
-   "last_ts": 1786897637
+   "last_ts": 1786950992
   },
   "JuiceFarm": {
    "realized": -255.63,
@@ -3186,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786950565
+ "updated": 1786951000
 }

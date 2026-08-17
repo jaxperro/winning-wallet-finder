@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786950565,
+ "updated": 1786951000,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 661.97,
@@ -66,11 +66,11 @@
    "realized": 79.66,
    "n": 33,
    "wins": 7,
-   "open_cost": 1119.0,
-   "open_n": 20,
+   "open_cost": 1166.66,
+   "open_n": 21,
    "miss_n": 61,
    "miss_pnl": -986.13,
-   "last_ts": 1786897637
+   "last_ts": 1786950992
   },
   "JuiceFarm": {
    "realized": -255.63,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Hamas agree to disarm by December 31?",
+   "their_price": 0.58,
+   "my_price": 0.58,
+   "slippage_pct": 0.0,
+   "lag_s": 1.1,
+   "shares": 82.18,
+   "cost": 47.66,
+   "fee": 0.6006,
+   "opened": 1786950992,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798675200
+  },
   {
    "token": "23235036346873495796270480110388225137357011671137462580436628081036186729432",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
