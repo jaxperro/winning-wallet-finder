@@ -2126,6 +2126,21 @@
  ],
  "missed": [
   {
+   "ts": 1786968690,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "17423891319744596989056481556844489891811840330632446387187415390310175437647",
+   "cond": "0x142d2f1b31d2ebb28fb2e62d883ece12b672e05e6510ebf68e37876959f1d516",
+   "title": "LoL: T1 vs DN SOOPers - Game 3 Winner",
+   "outcome": "DN SOOPers",
+   "price": 0.7,
+   "stake": 48.39,
+   "reason": "maker bid unfilled (91s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1786952536,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "10648768902294223005281776472791443674603816737553002058221071348281139541856",
@@ -3058,25 +3073,9 @@
    "settled": 1786214076,
    "name": "0xbadaf319",
    "exit_price": 0.8648
-  },
-  {
-   "ts": 1785611745,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "97308898246544661993978659530768075063335593853601089388728293522650950988709",
-   "cond": "0x88a19761fa049ae36da8a403464db9f356a7ea7d0163415052ed748bf72a20bf",
-   "title": "Puffpaw FDV above $400M one day after launch?",
-   "outcome": "No",
-   "price": 0.781,
-   "stake": 41.06,
-   "reason": "thin book ($1 within 5c < $50)",
-   "status": "sold",
-   "pnl": 7.08,
-   "settled": 1786187071,
-   "name": "0xbadaf319",
-   "exit_price": 0.923
   }
  ],
- "missed_pnl": -0.03,
+ "missed_pnl": 35.22,
  "last_fill": {
   "ts": 1786966380,
   "side": "SELL",
@@ -3142,7 +3141,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 13,
+   "miss_n": 14,
    "miss_pnl": -511.43,
    "last_ts": 1786966388
   },
@@ -3187,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1786966388
+ "updated": 1786968697
 }
