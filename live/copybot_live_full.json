@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1786968697,
+ "updated": 1786969268,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 661.97,
@@ -8,8 +8,8 @@
    "wins": 39,
    "open_cost": 394.55,
    "open_n": 11,
-   "miss_n": 164,
-   "miss_pnl": 119109.33,
+   "miss_n": 165,
+   "miss_pnl": 119074.08,
    "last_ts": 1786916350
   },
   "gkmgkldfmg": {
@@ -18,8 +18,8 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 58,
-   "miss_pnl": 233.07,
+   "miss_n": 59,
+   "miss_pnl": 184.06,
    "last_ts": 1786865524
   },
   "1kto1m": {
@@ -8636,6 +8636,36 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1786969191,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "53864929757641923279848610727880389145399611177187939181757886904167965697807",
+   "cond": "0x0d3bdcf422b886240b03a86ca18854b09d7e5db1a51693f702d7378b53e5bc63",
+   "title": "Will Lionel Messi win the Silver Ball at the 2026 FIFA World Cup?",
+   "outcome": "No",
+   "price": 0.5799,
+   "stake": 34.81,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "lost",
+   "pnl": -35.25,
+   "settled": 1786969267,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1786969191,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "99769792009260570054217311703996683522727922229995804271060316488330979046706",
+   "cond": "0x9d407ed371fd904ef375724783d30eef0405e5d63d6bf1280d913b76492a035d",
+   "title": "LoL: Hanwha Life Esports vs T1 - Game 1 Winner",
+   "outcome": "Hanwha Life Esports",
+   "price": 0.5699,
+   "stake": 48.39,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "lost",
+   "pnl": -49.01,
+   "settled": 1786969267,
+   "name": "gkmgkldfmg"
+  },
   {
    "ts": 1786968690,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
