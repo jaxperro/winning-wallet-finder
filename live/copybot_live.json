@@ -2135,10 +2135,11 @@
    "price": 0.31,
    "stake": 49.15,
    "reason": "thin book ($46 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
+   "status": "sold",
+   "pnl": 27.22,
+   "settled": 1787010866,
+   "name": "Kruto2027",
+   "exit_price": 0.4956
   },
   {
    "ts": 1787004849,
@@ -3077,7 +3078,7 @@
    "exit_price": 0.0733
   }
  ],
- "missed_pnl": 16.86,
+ "missed_pnl": 44.08,
  "last_fill": {
   "ts": 1787004942,
   "side": "BUY",
@@ -3124,7 +3125,7 @@
    "open_cost": 15.34,
    "open_n": 1,
    "miss_n": 27,
-   "miss_pnl": 486.61,
+   "miss_pnl": 513.83,
    "last_ts": 1787004901
   },
   "LSB1": {
@@ -3188,5 +3189,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787008372
+ "updated": 1787010867
 }
