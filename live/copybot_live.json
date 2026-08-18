@@ -2131,10 +2131,12 @@
    "price": 0.958,
    "stake": 48.95,
    "reason": "price moved 0.74\u21920.96",
-   "status": "won",
-   "pnl": 2.08,
+   "status": "sold",
+   "pnl": -11.38,
    "settled": 1787072603,
-   "name": "BikesAreTheBikes"
+   "name": "BikesAreTheBikes",
+   "exit_checked": true,
+   "exit_price": 0.7423
   },
   {
    "ts": 1787062679,
@@ -3072,7 +3074,7 @@
    "exit_price": 0.9771
   }
  ],
- "missed_pnl": 45.76,
+ "missed_pnl": 32.3,
  "last_fill": {
   "ts": 1787060999,
   "side": "BUY",
@@ -3149,7 +3151,7 @@
    "open_cost": 1363.33,
    "open_n": 25,
    "miss_n": 61,
-   "miss_pnl": -990.84,
+   "miss_pnl": -1004.3,
    "last_ts": 1787049308
   },
   "JuiceFarm": {
@@ -3183,5 +3185,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787072610
+ "updated": 1787073327
 }
