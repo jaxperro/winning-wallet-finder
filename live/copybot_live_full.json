@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787049318,
+ "updated": 1787061000,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -76,11 +76,11 @@
    "realized": -255.63,
    "n": 14,
    "wins": 7,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 49.14,
+   "open_n": 1,
    "miss_n": 8,
    "miss_pnl": 11.94,
-   "last_ts": 1786896863
+   "last_ts": 1787060999
   },
   "0x41558102": {
    "realized": 0.0,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "85709159339406242929586181240357049263592801236869553990275650434161069184369",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "JD Gaming",
+   "title": "LoL: JD Gaming vs ThunderTalk Gaming (BO3) - LPL Group Ascend",
+   "their_price": 0.73,
+   "my_price": 0.73,
+   "slippage_pct": 0.0,
+   "lag_s": 0.9,
+   "shares": 67.31,
+   "cost": 49.14,
+   "fee": 0.398,
+   "opened": 1787060999,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787184000
+  },
   {
    "token": "66797176836865406644675050248194264952001579179703527537658211196864343226792",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
