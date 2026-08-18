@@ -2122,6 +2122,36 @@
  ],
  "missed": [
   {
+   "ts": 1787061685,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "109604855244768502587390785479933509529438089139763201261297175948276916556235",
+   "cond": "0xbb23ede2350caeac7cb7ff2bff052102cf13ec21f8bebfd45104655a24a60e36",
+   "title": "Saturn FDV above $100M one day after launch",
+   "outcome": "No",
+   "price": 0.35,
+   "stake": 49.14,
+   "reason": "thin book ($20 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1787061684,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "113068435859095325735850545092380875894458719089415219657573106691596304512910",
+   "cond": "0x8a2aea57bb551023658045e679bb75611083c45e11ffb9dec9e7af88a29e03a8",
+   "title": "Saturn FDV above $50M one day after launch",
+   "outcome": "Yes",
+   "price": 0.18,
+   "stake": 49.14,
+   "reason": "thin book ($36 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1787008372,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "71668069206278604379019230918162053701492619618865557073448491141480275547125",
@@ -3040,41 +3070,9 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.9771
-  },
-  {
-   "ts": 1786276621,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "78735213477140259179719985437634225008013438052010449207550476177307188383355",
-   "cond": "0xfed2dd1e83691ca08b8bc08d2bed09cb19003730f2be47da6a467ee37df96fbb",
-   "title": "Mojtaba Khamenei seen in public by December 31?",
-   "outcome": "No",
-   "price": 0.4469,
-   "stake": 49.87,
-   "reason": "maker bid unfilled (60s)",
-   "status": "sold",
-   "pnl": 4.26,
-   "settled": 1786278666,
-   "name": "BikesAreTheBikes",
-   "exit_price": 0.5
-  },
-  {
-   "ts": 1786277396,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "43180192744264932534137000240241088432530085209515029021308017322422968247012",
-   "cond": "0x690f95ba728de5aed3fb861db575fb0c756baa37db50b2872bd5b857d3e74793",
-   "title": "LoL: BNK FEARX vs Kiwoom DRX - Game 2 Winner",
-   "outcome": "Kiwoom DRX",
-   "price": 0.4744,
-   "stake": 49.87,
-   "reason": "maker bid unfilled (103s)",
-   "status": "sold",
-   "pnl": -43.16,
-   "settled": 1786278666,
-   "name": "AIcAIc",
-   "exit_price": 0.0733
   }
  ],
- "missed_pnl": 44.08,
+ "missed_pnl": 72.77,
  "last_fill": {
   "ts": 1787060999,
   "side": "BUY",
@@ -3090,7 +3088,7 @@
    "wins": 39,
    "open_cost": 369.13,
    "open_n": 10,
-   "miss_n": 166,
+   "miss_n": 168,
    "miss_pnl": 119081.19,
    "last_ts": 1786974303
   },
@@ -3185,5 +3183,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787061000
+ "updated": 1787061693
 }
