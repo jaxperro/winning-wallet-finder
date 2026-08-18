@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.15,
+ "stake": 49.14,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 841.45,
- "deployed": 1615.96,
+ "cash": 792.08,
+ "deployed": 1665.1,
  "reserve": 0.0,
- "realized": 1457.38,
+ "realized": 1457.15,
  "adjustments": 0.03,
  "ledger_drift": -0.06,
- "open_count": 35,
- "fees_paid": 497.45,
+ "open_count": 36,
+ "fees_paid": 497.68,
  "fee_rate": 0.03,
  "lag": {
-  "n": 465,
-  "n24": 6,
+  "n": 466,
+  "n24": 7,
   "basis": "24h",
-  "avg_s": 4.3,
+  "avg_s": 1.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "66797176836865406644675050248194264952001579179703527537658211196864343226792",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "NATO x Russia military clash by October 31, 2026?",
+   "their_price": 0.84,
+   "my_price": 0.84,
+   "slippage_pct": 0.0,
+   "lag_s": 1.2,
+   "shares": 58.5,
+   "cost": 49.14,
+   "fee": 0.24,
+   "opened": 1787049308,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1793404800
+  },
   {
    "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2100,28 +2120,6 @@
    "end_ts": 1785369600,
    "sold_shares": 61.39,
    "sold_proceeds": 59.7
-  },
-  {
-   "token": "31992191456114199144963723550413010500964262070722647318272730091545468567522",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Natural Gas (NG) hit (LOW) $1.80 in August?",
-   "their_price": 0.581,
-   "my_price": 0.581,
-   "slippage_pct": 0.0,
-   "lag_s": 1.2,
-   "shares": 24.91,
-   "cost": 14.47,
-   "fee": 0.18,
-   "opened": 1785708008,
-   "status": "closed",
-   "exit_price": 0.9897,
-   "pnl": 10.0,
-   "settled": 1785708162,
-   "end_ts": 1788220800,
-   "sold_shares": 24.91,
-   "sold_proceeds": 24.65
   }
  ],
  "missed": [
@@ -3080,12 +3078,12 @@
  ],
  "missed_pnl": 44.08,
  "last_fill": {
-  "ts": 1787004942,
+  "ts": 1787049309,
   "side": "BUY",
-  "price": 0.55,
-  "shares": 27.89,
-  "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
-  "outcome": "Under"
+  "price": 0.84,
+  "shares": 58.5,
+  "title": "NATO x Russia military clash by October 31, 2026?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3152,11 +3150,11 @@
    "realized": 79.66,
    "n": 33,
    "wins": 7,
-   "open_cost": 1314.19,
-   "open_n": 24,
+   "open_cost": 1363.33,
+   "open_n": 25,
    "miss_n": 61,
    "miss_pnl": -992.92,
-   "last_ts": 1787000091
+   "last_ts": 1787049308
   },
   "JuiceFarm": {
    "realized": -255.63,
@@ -3189,5 +3187,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787047970
+ "updated": 1787049318
 }
