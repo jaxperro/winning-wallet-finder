@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787073327,
+ "updated": 1787076757,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -8,7 +8,7 @@
    "wins": 39,
    "open_cost": 369.13,
    "open_n": 10,
-   "miss_n": 169,
+   "miss_n": 170,
    "miss_pnl": 119050.74,
    "last_ts": 1786974303
   },
@@ -8821,6 +8821,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787076749,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "85139584659413094713039776812783702898851309932453198691175417225600723873316",
+   "cond": "0xbd8a335eeabb756e676d09191d03298816fffda88554fcfccf0926dc51c06a06",
+   "title": "Printr FDV above $800M one day after launch?",
+   "outcome": "No",
+   "price": 0.933,
+   "stake": 39.35,
+   "reason": "maker bid unfilled (67s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1786902282,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
