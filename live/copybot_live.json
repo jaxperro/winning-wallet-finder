@@ -2122,6 +2122,21 @@
  ],
  "missed": [
   {
+   "ts": 1786902282,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "96457047728689967312718596808595855917972601528387916224199457194991670330391",
+   "cond": "0x1ec8d1cb89a36ce994eea996e5f80dccb432ddb77a3004fccf1cd4134ed39853",
+   "title": "Will Elon Musk post 140-159 tweets from August 11 to August 18, 2026?",
+   "outcome": "No",
+   "price": 0.958,
+   "stake": 48.95,
+   "reason": "price moved 0.74\u21920.96",
+   "status": "won",
+   "pnl": 2.08,
+   "settled": 1787072603,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1787062679,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "40721468567018229427830693104124829389096865246100141431731263782329757924925",
@@ -2481,21 +2496,6 @@
    "settled": 1786903224,
    "name": "Kruto2027",
    "exit_checked": true
-  },
-  {
-   "ts": 1786902282,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "96457047728689967312718596808595855917972601528387916224199457194991670330391",
-   "cond": "0x1ec8d1cb89a36ce994eea996e5f80dccb432ddb77a3004fccf1cd4134ed39853",
-   "title": "Will Elon Musk post 140-159 tweets from August 11 to August 18, 2026?",
-   "outcome": "No",
-   "price": 0.958,
-   "stake": 48.95,
-   "reason": "price moved 0.74\u21920.96",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   },
   {
    "ts": 1786878167,
@@ -3072,7 +3072,7 @@
    "exit_price": 0.9771
   }
  ],
- "missed_pnl": 43.68,
+ "missed_pnl": 45.76,
  "last_fill": {
   "ts": 1787060999,
   "side": "BUY",
@@ -3149,7 +3149,7 @@
    "open_cost": 1363.33,
    "open_n": 25,
    "miss_n": 61,
-   "miss_pnl": -992.92,
+   "miss_pnl": -990.84,
    "last_ts": 1787049308
   },
   "JuiceFarm": {
@@ -3183,5 +3183,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787068689
+ "updated": 1787072610
 }
