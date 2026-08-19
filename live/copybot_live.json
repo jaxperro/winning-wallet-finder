@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 45.38,
+ "stake": 45.37,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 563.93,
- "deployed": 1704.84,
+ "cash": 518.1,
+ "deployed": 1750.21,
  "reserve": 0.0,
- "realized": 1268.74,
+ "realized": 1268.28,
  "adjustments": 0.03,
- "ledger_drift": -0.05,
- "open_count": 37,
- "fees_paid": 499.15,
+ "ledger_drift": -0.06,
+ "open_count": 38,
+ "fees_paid": 499.6,
  "fee_rate": 0.03,
  "lag": {
-  "n": 471,
-  "n24": 5,
+  "n": 472,
+  "n24": 6,
   "basis": "24h",
-  "avg_s": 80.0,
+  "avg_s": 74.5,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "35763471824435491858789954079926792279368530734888494205123101496347994688110",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "HANJIN BRION",
+   "title": "LoL: HANJIN BRION vs DN SOOPers - Game 1 Winner",
+   "their_price": 0.6647,
+   "my_price": 0.6647,
+   "slippage_pct": 0.0,
+   "lag_s": 1.4,
+   "shares": 68.26,
+   "cost": 45.37,
+   "fee": 0.46,
+   "opened": 1787139017,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787097600
+  },
   {
    "token": "47458197341259015143098641932265680502344097076006678002917960090825629562672",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2096,26 +2116,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1798675200
-  },
-  {
-   "token": "36170784529909729175483932196304779852897425726715038923506785466386030402957",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Cuba nationwide internet/power outage by December 31?",
-   "their_price": 0.82,
-   "my_price": 0.82,
-   "slippage_pct": 0.0,
-   "lag_s": 2.1,
-   "shares": 16.13,
-   "cost": 13.23,
-   "fee": 0.07,
-   "opened": 1785747610,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 2.83,
-   "settled": 1785773960,
-   "end_ts": 1798675200
   }
  ],
  "missed": [
@@ -3070,12 +3070,12 @@
  ],
  "missed_pnl": 314.29,
  "last_fill": {
-  "ts": 1787098488,
+  "ts": 1787139018,
   "side": "BUY",
-  "price": 0.8,
-  "shares": 59.98,
-  "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
-  "outcome": "Over"
+  "price": 0.6647,
+  "shares": 68.26,
+  "title": "LoL: HANJIN BRION vs DN SOOPers - Game 1 Winner",
+  "outcome": "HANJIN BRION"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3132,11 +3132,11 @@
    "realized": -13.2,
    "n": 67,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 45.37,
+   "open_n": 1,
    "miss_n": 16,
    "miss_pnl": -461.27,
-   "last_ts": 1786983110
+   "last_ts": 1787139017
   },
   "BikesAreTheBikes": {
    "realized": 20.83,
@@ -3179,5 +3179,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787135744
+ "updated": 1787139018
 }
