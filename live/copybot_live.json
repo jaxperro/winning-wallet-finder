@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 573.8,
- "deployed": 1701.18,
+ "cash": 575.82,
+ "deployed": 1699.42,
  "reserve": 0.0,
- "realized": 1274.94,
+ "realized": 1275.21,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
  "open_count": 37,
@@ -1211,7 +1211,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1830297600
+   "end_ts": 1830297600,
+   "sold_shares": 2.06,
+   "sold_proceeds": 2.02
   },
   {
    "token": "13316447578737225357026702171465597443147415868165853161202310730878584654286",
@@ -3074,12 +3076,12 @@
  ],
  "missed_pnl": 324.06,
  "last_fill": {
-  "ts": 1787149806,
-  "side": "BUY",
-  "price": 0.65,
-  "shares": 70.01,
-  "title": "LoL: Team WE vs EDward Gaming - Game 2 Winner",
-  "outcome": "Team WE"
+  "ts": 1787155413,
+  "side": "SELL",
+  "price": 0.98,
+  "shares": 2.06,
+  "title": "Decibel FDV above $500M one day after launch?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3183,5 +3185,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787154654
+ "updated": 1787155413
 }
