@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787145096,
+ "updated": 1787146295,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -8898,7 +8898,8 @@
    "status": "won",
    "pnl": 9.25,
    "settled": 1787145095,
-   "name": "JuiceFarm"
+   "name": "JuiceFarm",
+   "exit_checked": true
   },
   {
    "ts": 1787127772,
