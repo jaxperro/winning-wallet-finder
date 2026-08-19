@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 601.66,
- "deployed": 1630.49,
+ "cash": 556.64,
+ "deployed": 1675.13,
  "reserve": 0.0,
- "realized": 1232.12,
+ "realized": 1231.75,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 35,
- "fees_paid": 500.93,
+ "open_count": 36,
+ "fees_paid": 501.3,
  "fee_rate": 0.03,
  "lag": {
-  "n": 474,
-  "n24": 7,
+  "n": 475,
+  "n24": 8,
   "basis": "24h",
-  "avg_s": 69.1,
+  "avg_s": 52.5,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "80762000047508265463182305511055050801772987383460262058496710184598577566532",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "T1",
+   "title": "LoL: KT Rolster vs T1 (BO3) - LCK Round 3-4 Legend Group",
+   "their_price": 0.72,
+   "my_price": 0.72,
+   "slippage_pct": 0.0,
+   "lag_s": 7.0,
+   "shares": 62.0,
+   "cost": 44.64,
+   "fee": 0.38,
+   "opened": 1787182371,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787270400
+  },
   {
    "token": "80808145657906667113795891925826034935213900714245802195985269085181895227480",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2102,26 +2122,6 @@
    "end_ts": 1786233600,
    "sold_shares": 121.64,
    "sold_proceeds": 121.64
-  },
-  {
-   "token": "86567202803696185629704724961398129231892610051254319801824623009047556217191",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Israel x Iran ceasefire continues through July 31?",
-   "their_price": 0.47,
-   "my_price": 0.47,
-   "slippage_pct": 0.0,
-   "lag_s": 11.6,
-   "shares": 263.35,
-   "cost": 123.77,
-   "fee": 1.97,
-   "opened": 1784887113,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -125.74,
-   "settled": 1785796734,
-   "end_ts": 1785456000
   }
  ],
  "missed": [
@@ -3077,12 +3077,12 @@
  ],
  "missed_pnl": 515.5,
  "last_fill": {
-  "ts": 1787168874,
-  "side": "SELL",
-  "price": 0.9,
-  "shares": 28.8,
-  "title": "Unit FDV above $2B one day after launch?",
-  "outcome": "No"
+  "ts": 1787182378,
+  "side": "BUY",
+  "price": 0.72,
+  "shares": 62.0,
+  "title": "LoL: KT Rolster vs T1 (BO3) - LCK Round 3-4 Legend Group",
+  "outcome": "T1"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3159,11 +3159,11 @@
    "realized": -255.63,
    "n": 14,
    "wins": 7,
-   "open_cost": 49.14,
-   "open_n": 1,
+   "open_cost": 93.78,
+   "open_n": 2,
    "miss_n": 8,
    "miss_pnl": 21.19,
-   "last_ts": 1787060999
+   "last_ts": 1787182371
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3186,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787180096
+ "updated": 1787182418
 }
