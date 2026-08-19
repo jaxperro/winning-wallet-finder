@@ -1,8 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0x8094d61449745ba192f5f9e6644ab53c37a532f3a8cf8473ef14c78795cca1e4",
-    "0xfa73ce7490ef58d79f55e0c4c6b70a0cdb469e4e1ef39671a2cd479ba8d0e108",
     "0xfb2d809d7d510c077936c28b58ae408d38305490d5bdb369bd6e04b7b472a69e",
     "0x7681d75cd97c4f6963a7aeb7d849f621b6a178f1f135018c5a5362f673d57649",
     "0x3eea6cbaae5627c036b83d622e422fc3ee9002f4877d92034e8fa4b6e2f839ad",
@@ -5000,7 +4998,9 @@
     "0xfaa691e094e86c0b7b56fd4f85dda9165299b16051330beda58ce328ab18db29",
     "0xf4fd5846a35545fec6f62291995dead94f098602a4cb24f47841631ee532d09b",
     "0x8d06fe78e513901e83886c5857c20220ee399393dcb8a1a6b15fd83f2a964a04",
-    "0xb693916b2da0aadbeec65824ab4b9a836dabcd27488646f2cd97122713167fbd"
+    "0xb693916b2da0aadbeec65824ab4b9a836dabcd27488646f2cd97122713167fbd",
+    "0xe71e2d771cc72633c6a2e4ed019c4b7b298ee98aa2e6cd5133de9f4c6d1c1b43",
+    "0x079f3f8664c8ebd7e3eb56ab89b866279166f43c7bcc5fc2cc0b87d1a156fd9d"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -5537,7 +5537,7 @@
       "31904462349299934884652086455965817214602321824093463845440542236920023837005": 0.0,
       "71668069206278604379019230918162053701492619618865557073448491141480275547125": 1.1379786002407855e-14,
       "3320200045635404401021306781918371419757943162190594506989942270850612821047": 0.0,
-      "47458197341259015143098641932265680502344097076006678002917960090825629562672": 2487.5
+      "47458197341259015143098641932265680502344097076006678002917960090825629562672": 2885.77
     },
     "0xbadaf319415c17f28824a43ae0cd912b9d84d874": {
       "84198727207550214763449143212138419486474549606219604664233243545687035283481": 26905.1835,
@@ -14969,11 +14969,20 @@
       "event": "lol-jdg-tt-2026-08-20",
       "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
       "cond": "0xb28af09b2390aa693ad7ff6bbfdecda5c14c3778bc61c2f8c61124386af854a7"
+    },
+    "47458197341259015143098641932265680502344097076006678002917960090825629562672": {
+      "shares": 59.98,
+      "cost": 47.984,
+      "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
+      "outcome": "Over",
+      "event": null,
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "cond": "0xa08b841005d89c4e8a0979a623e2f84157b5a580feab7dcfdb5cb05336205754"
     }
   },
   "spend": {
     "date": "2026-08-19",
-    "usd": 0.0
+    "usd": 177.55200000000002
   },
   "seeded": [
     "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -15239,46 +15248,17 @@
     "115351075585746600277716377744935410125916932950844626289798775482755919708780": "0x502a94e5c525766d5ee7f16c6568131ba1b2cbadb69c703af05a6ef00336ed64",
     "47212392080449334908212210963424006483456786284303151856662490390896132247145": "0xe07fd72c87239bc4c19c41cb6234dcc6338576443ff74f58db0415814f2d0971",
     "66797176836865406644675050248194264952001579179703527537658211196864343226792": "0x2a4fcda5c1598fc8621cf96cabc410f9f23a2d0336c3bff5070a37a663d39e94",
-    "85709159339406242929586181240357049263592801236869553990275650434161069184369": "0xb28af09b2390aa693ad7ff6bbfdecda5c14c3778bc61c2f8c61124386af854a7"
+    "85709159339406242929586181240357049263592801236869553990275650434161069184369": "0xb28af09b2390aa693ad7ff6bbfdecda5c14c3778bc61c2f8c61124386af854a7",
+    "47458197341259015143098641932265680502344097076006678002917960090825629562672": "0xa08b841005d89c4e8a0979a623e2f84157b5a580feab7dcfdb5cb05336205754"
   },
-  "cash": 742.5441077223169,
+  "cash": 563.926795722317,
   "lag": {
-    "n": 467,
-    "sum_s": 8502.356052398682,
+    "n": 471,
+    "sum_s": 8843.114706039429,
     "sum_slip_pct": -7.247834511462669
   },
-  "fees_paid": 498.082209795972,
+  "fees_paid": 499.14752179597207,
   "lag_recent": [
-    [
-      1786979184.4,
-      62.4,
-      0.0
-    ],
-    [
-      1786982287.7,
-      0.7,
-      0.0
-    ],
-    [
-      1786992265.0,
-      1.0,
-      0.0
-    ],
-    [
-      1786994480.0,
-      1.0,
-      0.0
-    ],
-    [
-      1787000098.6,
-      7.6,
-      0.0
-    ],
-    [
-      1787004942.4,
-      41.4,
-      0.0
-    ],
     [
       1787049309.2,
       1.2,
@@ -15287,6 +15267,26 @@
     [
       1787060999.9,
       0.9,
+      0.0
+    ],
+    [
+      1787098487.8,
+      98.8,
+      0.0
+    ],
+    [
+      1787098487.9,
+      92.9,
+      0.0
+    ],
+    [
+      1787098488.0,
+      80.0,
+      0.0
+    ],
+    [
+      1787098488.1,
+      69.1,
       0.0
     ]
   ],
@@ -20435,11 +20435,31 @@
       "pnl": null,
       "settled": null,
       "end_ts": 1787184000
+    },
+    "47458197341259015143098641932265680502344097076006678002917960090825629562672": {
+      "token": "47458197341259015143098641932265680502344097076006678002917960090825629562672",
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "name": "Kruto2027",
+      "outcome": "Over",
+      "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
+      "their_price": 0.8,
+      "my_price": 0.799981977110931,
+      "slippage_pct": 0.0,
+      "lag_s": 98.8,
+      "shares": 221.93999999999997,
+      "cost": 177.548,
+      "fee": 1.0653,
+      "opened": 1787098389,
+      "status": "open",
+      "exit_price": null,
+      "pnl": null,
+      "settled": null,
+      "end_ts": 1787270400
     }
   },
   "hwm": 3600.1933566560215,
-  "feed_sig": "937d2f83f99acfc8a83fec21868ac7a3",
-  "feed_pushed_at": 1787098311.037861,
+  "feed_sig": "9107a71fa52a41d674eed54b8077a841",
+  "feed_pushed_at": 1787098449.329605,
   "missed": [
     {
       "ts": 1784503159,
@@ -23602,7 +23622,8 @@
       "reason": "maker bid unfilled (81s)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "Kruto2027"
     },
     {
       "ts": 1787098443,
@@ -23616,7 +23637,8 @@
       "reason": "not copied in the detection window (reconciled)",
       "status": "open",
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "name": "Kruto2027"
     }
   ],
   "no_miss_toks": [
@@ -23925,12 +23947,12 @@
   "trade_cursor": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
-    "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1787098419,
+    "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1787098503,
     "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1787076673,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1786868179,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1787049774,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1786893589,
-    "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1787098320,
+    "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1787098453,
     "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1787070292
   },
   "boot": {
@@ -23938,97 +23960,16 @@
     "ts": 1785194148
   },
   "last_fill": {
-    "ts": 1787060999,
+    "ts": 1787098488,
     "side": "BUY",
-    "price": 0.73,
-    "shares": 67.31,
-    "title": "LoL: JD Gaming vs ThunderTalk Gaming (BO3) - LPL Group Ascen",
-    "outcome": "JD Gaming"
+    "price": 0.8,
+    "shares": 59.98,
+    "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
+    "outcome": "Over"
   },
-  "paper_maker": [
-    {
-      "paper_maker": true,
-      "sz": 59.98,
-      "mode": "maker",
-      "token": "47458197341259015143098641932265680502344097076006678002917960090825629562672",
-      "side": "BUY",
-      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-      "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
-      "outcome": "Over",
-      "event": null,
-      "cond": "0xa08b841005d89c4e8a0979a623e2f84157b5a580feab7dcfdb5cb05336205754",
-      "their_price": 0.8,
-      "their_ts": 1787098389,
-      "price": 0.8,
-      "is_add": false,
-      "stake": 47.98804344866615,
-      "ts": 1787098389.709267,
-      "ttl_s": 60.0,
-      "ba_at_signal": 0.96
-    },
-    {
-      "paper_maker": true,
-      "sz": 42.0,
-      "mode": "maker",
-      "token": "47458197341259015143098641932265680502344097076006678002917960090825629562672",
-      "side": "BUY",
-      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-      "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
-      "outcome": "Over",
-      "event": null,
-      "cond": "0xa08b841005d89c4e8a0979a623e2f84157b5a580feab7dcfdb5cb05336205754",
-      "their_price": 0.8,
-      "their_ts": 1787098395,
-      "price": 0.8,
-      "is_add": false,
-      "stake": 33.6,
-      "ts": 1787098402.0455694,
-      "ttl_s": 60.0,
-      "ba_at_signal": 0.8
-    },
-    {
-      "paper_maker": true,
-      "sz": 59.98,
-      "mode": "maker",
-      "token": "47458197341259015143098641932265680502344097076006678002917960090825629562672",
-      "side": "BUY",
-      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-      "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
-      "outcome": "Over",
-      "event": null,
-      "cond": "0xa08b841005d89c4e8a0979a623e2f84157b5a580feab7dcfdb5cb05336205754",
-      "their_price": 0.8,
-      "their_ts": 1787098408,
-      "price": 0.8,
-      "is_add": false,
-      "stake": 47.98804344866615,
-      "ts": 1787098409.2444081,
-      "ttl_s": 60.0,
-      "ba_at_signal": 0.96
-    },
-    {
-      "paper_maker": true,
-      "sz": 59.98,
-      "mode": "maker",
-      "token": "47458197341259015143098641932265680502344097076006678002917960090825629562672",
-      "side": "BUY",
-      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-      "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
-      "outcome": "Over",
-      "event": null,
-      "cond": "0xa08b841005d89c4e8a0979a623e2f84157b5a580feab7dcfdb5cb05336205754",
-      "their_price": 0.8,
-      "their_ts": 1787098419,
-      "price": 0.8,
-      "is_add": false,
-      "stake": 47.98804344866615,
-      "ts": 1787098426.3696635,
-      "ttl_s": 60.0,
-      "ba_at_signal": 0.8
-    }
-  ],
+  "paper_maker": [],
   "maker_stats": {
-    "fills": 234,
+    "fills": 238,
     "misses": 133
   },
   "ignored_exits": [

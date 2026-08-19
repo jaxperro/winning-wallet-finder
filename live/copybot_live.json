@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.99,
+ "stake": 45.38,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 742.54,
- "deployed": 1656.86,
+ "cash": 563.93,
+ "deployed": 1704.84,
  "reserve": 0.0,
- "realized": 1399.37,
+ "realized": 1268.74,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 36,
- "fees_paid": 498.08,
+ "open_count": 37,
+ "fees_paid": 499.15,
  "fee_rate": 0.03,
  "lag": {
-  "n": 467,
-  "n24": 2,
+  "n": 471,
+  "n24": 6,
   "basis": "24h",
-  "avg_s": 1.1,
+  "avg_s": 74.5,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "47458197341259015143098641932265680502344097076006678002917960090825629562672",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Over",
+   "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
+   "their_price": 0.8,
+   "my_price": 0.8,
+   "slippage_pct": 0.0,
+   "lag_s": 98.8,
+   "shares": 221.94,
+   "cost": 177.55,
+   "fee": 1.07,
+   "opened": 1787098389,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787270400
+  },
   {
    "token": "31798323952461961650983638405389053740930972138111089234409584277872747279143",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2096,28 +2116,6 @@
    "pnl": 2.83,
    "settled": 1785773960,
    "end_ts": 1798675200
-  },
-  {
-   "token": "84833713274530571479250444223158955887841795944345736012615608017701449951658",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will Apple (AAPL) hit (LOW) $328 in August?",
-   "their_price": 0.89,
-   "my_price": 0.8931,
-   "slippage_pct": 0.0,
-   "lag_s": 10.4,
-   "shares": 41.72,
-   "cost": 37.26,
-   "fee": 0.12,
-   "opened": 1785681356,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 4.34,
-   "settled": 1785765358,
-   "end_ts": 1788220800,
-   "sold_shares": 41.31,
-   "sold_proceeds": 41.31
   }
  ],
  "missed": [
@@ -3072,12 +3070,12 @@
  ],
  "missed_pnl": 170.11,
  "last_fill": {
-  "ts": 1787060999,
+  "ts": 1787098488,
   "side": "BUY",
-  "price": 0.73,
-  "shares": 67.31,
-  "title": "LoL: JD Gaming vs ThunderTalk Gaming (BO3) - LPL Group Ascen",
-  "outcome": "JD Gaming"
+  "price": 0.8,
+  "shares": 59.98,
+  "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
+  "outcome": "Over"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3114,11 +3112,11 @@
    "realized": 193.28,
    "n": 18,
    "wins": 3,
-   "open_cost": 15.34,
-   "open_n": 1,
+   "open_cost": 192.89,
+   "open_n": 2,
    "miss_n": 29,
    "miss_pnl": 513.83,
-   "last_ts": 1787004901
+   "last_ts": 1787098389
   },
   "LSB1": {
    "realized": -397.16,
@@ -3181,5 +3179,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787098449
+ "updated": 1787098512
 }
