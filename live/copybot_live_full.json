@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787156759,
+ "updated": 1787158899,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -8,7 +8,7 @@
    "wins": 39,
    "open_cost": 369.13,
    "open_n": 10,
-   "miss_n": 171,
+   "miss_n": 172,
    "miss_pnl": 119060.51,
    "last_ts": 1786974303
   },
@@ -8907,6 +8907,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787158893,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "21341191118489485215971595567500838489745713128031366103331704899034054634037",
+   "cond": "0x0ff76aa8f6cc2365ca8d38dd7ef9f93b04623048d85b832dc6f218351a1f5691",
+   "title": "Amazon 2026 capex above $170B?",
+   "outcome": "Yes",
+   "price": 0.9309,
+   "stake": 29.71,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1787154648,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
