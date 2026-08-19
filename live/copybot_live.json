@@ -2122,6 +2122,36 @@
  ],
  "missed": [
   {
+   "ts": 1787098443,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "47085524854597406321671293221364166989915921315530888683631330762838248740726",
+   "cond": "0xeb979afb42af73225e01493da16d7233f417139546784a5eca0bf0880940f313",
+   "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 1.5",
+   "outcome": "Over",
+   "price": 0.48,
+   "stake": 47.99,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
+   "ts": 1787098438,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "47458197341259015143098641932265680502344097076006678002917960090825629562672",
+   "cond": "0xa08b841005d89c4e8a0979a623e2f84157b5a580feab7dcfdb5cb05336205754",
+   "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
+   "outcome": "Over",
+   "price": 0.8,
+   "stake": 33.6,
+   "reason": "maker bid unfilled (81s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1787076749,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "85139584659413094713039776812783702898851309932453198691175417225600723873316",
@@ -3038,42 +3068,9 @@
    "settled": 1786373080,
    "name": "Kruto2027",
    "exit_price": 0.3965
-  },
-  {
-   "ts": 1786369960,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "10926921687109899708979814747729996660370634657736577860168940157994107458977",
-   "cond": "0xcdfd21665e8a427fb0a623ec0c3c41ad98391867be19d7036f8a6fa18e80b709",
-   "title": "Will Meta Platforms, Inc. (META) hit (LOW) $580 Week of August 10 2026?",
-   "outcome": "No",
-   "price": 0.44,
-   "stake": 48.32,
-   "reason": "maker bid unfilled (92s)",
-   "status": "sold",
-   "pnl": 2.81,
-   "settled": 1786370958,
-   "name": "0xbadaf319",
-   "exit_price": 0.4804
-  },
-  {
-   "ts": 1786177991,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "20174661506232867894667707134816571263646452665587867099504831699679426769222",
-   "cond": "0x32faa375788686e264fa93c02a0dfe0ace191c2463a1638d979acc028eef767d",
-   "title": "Will the price of Bitcoin be between $62,000 and $64,000 on August 9?",
-   "outcome": "No",
-   "price": 0.708,
-   "stake": 47.96,
-   "reason": "thin book ($37 within 5c < $50)",
-   "status": "sold",
-   "pnl": 17.76,
-   "settled": 1786292666,
-   "name": "0xbadaf319",
-   "exit_checked": true,
-   "exit_price": 0.9771
   }
  ],
- "missed_pnl": 51.14,
+ "missed_pnl": 170.11,
  "last_fill": {
   "ts": 1787060999,
   "side": "BUY",
@@ -3119,7 +3116,7 @@
    "wins": 3,
    "open_cost": 15.34,
    "open_n": 1,
-   "miss_n": 27,
+   "miss_n": 29,
    "miss_pnl": 513.83,
    "last_ts": 1787004901
   },
@@ -3184,5 +3181,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787091396
+ "updated": 1787098449
 }
