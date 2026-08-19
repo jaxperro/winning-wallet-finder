@@ -20461,8 +20461,8 @@
     }
   },
   "hwm": 3600.1933566560215,
-  "feed_sig": "bd56ef39f48f0c1f7e260b8f485a1e5f",
-  "feed_pushed_at": 1787114119.3476987,
+  "feed_sig": "ed2c83529189749f47b2cec196aea7ba",
+  "feed_pushed_at": 1787125285.1959162,
   "missed": [
     {
       "ts": 1784503159,
@@ -20523,22 +20523,6 @@
       "pnl": null,
       "settled": null,
       "name": "0xbadaf319"
-    },
-    {
-      "ts": 1784974802,
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "token": "114122610912091833368377556749935026832747126298476646591672628854053567552557",
-      "cond": "0x92c1784a70aa80d59450fd7fa163faecc38e5465c0555ec1bef545bc978446d0",
-      "title": "Will the lowest temperature in New York City be between 64-65\u00b0F on July 25?",
-      "outcome": "No",
-      "price": 0.9,
-      "stake": 39.59,
-      "reason": "thin book ($5 within 5c < $50)",
-      "status": "sold",
-      "pnl": 0.26,
-      "settled": 1784978225,
-      "name": "0xbadaf319",
-      "exit_price": 0.9111
     },
     {
       "ts": 1784983075,
@@ -23640,6 +23624,21 @@
       "reason": "maker bid unfilled (60s)",
       "status": "open",
       "pnl": null,
+      "settled": null,
+      "name": "BikesAreTheBikes"
+    },
+    {
+      "ts": 1787125426,
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "token": "47545978560723057800878739943239353653333152983956629846874223019486110897451",
+      "cond": "0x11f2fd0dc1de6f696adda1d69c0141f58e8353c58b3fd628e984e0c2b1af461e",
+      "title": "HNK Hajduk Split vs. RKS Rak\u00f3w Cz\u0119stochowa: RKS Rak\u00f3w Cz\u0119stochowa O/U 3.5 Corners",
+      "outcome": "Over",
+      "price": 0.4996,
+      "stake": 45.38,
+      "reason": "not copied in the detection window (reconciled)",
+      "status": "open",
+      "pnl": null,
       "settled": null
     }
   ],
@@ -23923,18 +23922,18 @@
     "44878213123264609020900502267992317958528606661890344163785451259153992473346": 1,
     "12655298432856023401377623311129453877580829892143866780900963131940895536375": 62,
     "87823307068114498763935325850531429658457985750942226626931639924771886967405": 1,
-    "104048927254391605559503338438251940033005756348725037395683942528584904565700": 2637,
+    "104048927254391605559503338438251940033005756348725037395683942528584904565700": 2670,
     "72536510430716664691218819418838618454702329583538314310462490939825249228099": 1,
     "43180192744264932534137000240241088432530085209515029021308017322422968247012": 2,
     "28246806272807385475359212337668662438574077035888650625591761821033218424548": 1,
-    "3995405418988860809616760430893135352799035734473152509556306061162112667429": 2368,
+    "3995405418988860809616760430893135352799035734473152509556306061162112667429": 2401,
     "81687261828485923370301293448268747277317716692301661215171974481135044780719": 1,
     "13316447578737225357026702171465597443147415868165853161202310730878584654286": 1,
     "105996216775030833597187112688301335665231707951948564552107280368142255537289": 2,
     "54168830547435529454436627291590270129722808725775536743528705116159111874519": 1,
-    "50602019240941809622861470779703535720835263427930127933401833028250618535493": 1648,
-    "91676177432668319691663213694187810112009835951397620031461215327421238319426": 1649,
-    "51802903848392919812130438199765816815948922249791921217869064726397951660158": 1649,
+    "50602019240941809622861470779703535720835263427930127933401833028250618535493": 1681,
+    "91676177432668319691663213694187810112009835951397620031461215327421238319426": 1682,
+    "51802903848392919812130438199765816815948922249791921217869064726397951660158": 1682,
     "96493470136581654430268359631814450290137534659017161119334974730318350734648": 1,
     "68738068644868341944434960825834721671808502341396366180204745788748636004884": 1,
     "41894897616090042581435185363845209019415877168112506294380833466254784815261": 1,
@@ -23943,20 +23942,20 @@
     "106249751199466979592673464582563414433222418883379395137309499869252252126673": 28,
     "106384382902272259275653733417531627173944931937610707897597239994735553962869": 2,
     "23235036346873495796270480110388225137357011671137462580436628081036186729432": 47,
-    "30676432546818066080538703205639237969080188796746196694446265523208566227883": 468,
-    "32498948505314576966704761143540900095142072751411430571598289128995809645377": 345,
-    "47212392080449334908212210963424006483456786284303151856662490390896132247145": 42
+    "30676432546818066080538703205639237969080188796746196694446265523208566227883": 501,
+    "32498948505314576966704761143540900095142072751411430571598289128995809645377": 378,
+    "47212392080449334908212210963424006483456786284303151856662490390896132247145": 75
   },
   "trade_cursor": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
-    "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1787101869,
+    "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1787123919,
     "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1787076673,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1786868179,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1787049774,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1786893589,
-    "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1787098453,
-    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1787070292
+    "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c": 1787122398,
+    "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90": 1787119480
   },
   "boot": {
     "id": "016d484f75b6",
@@ -23977,7 +23976,7 @@
   },
   "ignored_exits": [
     {
-      "ts": 1787105762.0,
+      "ts": 1787117144.5,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -23992,7 +23991,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787105762.4,
+      "ts": 1787117145.1,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -24007,607 +24006,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787105763.3,
-      "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.09,
-      "shares_held": 147.53,
-      "cost_held": 56.06,
-      "title": "US announces end of Iranian blockade by August 31, 2026?",
-      "outcome": "Yes",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787105763.9,
-      "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.59,
-      "shares_held": 16.1,
-      "cost_held": 10.39,
-      "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787105765.2,
-      "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.524,
-      "shares_held": 89.98,
-      "cost_held": 47.96,
-      "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
-      "outcome": "No",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787105766.7,
-      "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.74,
-      "shares_held": 82.18,
-      "cost_held": 47.66,
-      "title": "Will Hamas agree to disarm by December 31?",
-      "outcome": "No",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787105767.3,
-      "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.76,
-      "shares_held": 57.85,
-      "cost_held": 49.17,
-      "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
-      "outcome": "No",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787105767.6,
-      "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.65,
-      "shares_held": 27.89,
-      "cost_held": 15.34,
-      "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
-      "outcome": "Under",
-      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106105.4,
-      "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.88,
-      "shares_held": 28.3021,
-      "cost_held": 23.21,
-      "title": "Will Hyperliquid HIP-3 open interest hit $8B in 2026?",
-      "outcome": "No",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106106.1,
-      "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.864,
-      "shares_held": 134.4449,
-      "cost_held": 102.31,
-      "title": "Opensea FDV above $500M one day after launch?",
-      "outcome": "No",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106106.7,
-      "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.09,
-      "shares_held": 147.53,
-      "cost_held": 56.06,
-      "title": "US announces end of Iranian blockade by August 31, 2026?",
-      "outcome": "Yes",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106107.1,
-      "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.59,
-      "shares_held": 16.1,
-      "cost_held": 10.39,
-      "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106108.1,
-      "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.49,
-      "shares_held": 89.98,
-      "cost_held": 47.96,
-      "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
-      "outcome": "No",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106109.6,
-      "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.74,
-      "shares_held": 82.18,
-      "cost_held": 47.66,
-      "title": "Will Hamas agree to disarm by December 31?",
-      "outcome": "No",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106109.9,
-      "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.76,
-      "shares_held": 57.85,
-      "cost_held": 49.17,
-      "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
-      "outcome": "No",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106110.3,
-      "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.65,
-      "shares_held": 27.89,
-      "cost_held": 15.34,
-      "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
-      "outcome": "Under",
-      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106452.5,
-      "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.88,
-      "shares_held": 28.3021,
-      "cost_held": 23.21,
-      "title": "Will Hyperliquid HIP-3 open interest hit $8B in 2026?",
-      "outcome": "No",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106453.0,
-      "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.864,
-      "shares_held": 134.4449,
-      "cost_held": 102.31,
-      "title": "Opensea FDV above $500M one day after launch?",
-      "outcome": "No",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106453.8,
-      "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.09,
-      "shares_held": 147.53,
-      "cost_held": 56.06,
-      "title": "US announces end of Iranian blockade by August 31, 2026?",
-      "outcome": "Yes",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106454.3,
-      "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.59,
-      "shares_held": 16.1,
-      "cost_held": 10.39,
-      "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106455.6,
-      "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.499,
-      "shares_held": 89.98,
-      "cost_held": 47.96,
-      "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
-      "outcome": "No",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106457.2,
-      "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.74,
-      "shares_held": 82.18,
-      "cost_held": 47.66,
-      "title": "Will Hamas agree to disarm by December 31?",
-      "outcome": "No",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106457.9,
-      "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.76,
-      "shares_held": 57.85,
-      "cost_held": 49.17,
-      "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
-      "outcome": "No",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106458.3,
-      "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.65,
-      "shares_held": 27.89,
-      "cost_held": 15.34,
-      "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
-      "outcome": "Under",
-      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106796.9,
-      "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.88,
-      "shares_held": 28.3021,
-      "cost_held": 23.21,
-      "title": "Will Hyperliquid HIP-3 open interest hit $8B in 2026?",
-      "outcome": "No",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106797.6,
-      "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.864,
-      "shares_held": 134.4449,
-      "cost_held": 102.31,
-      "title": "Opensea FDV above $500M one day after launch?",
-      "outcome": "No",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106798.2,
-      "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.09,
-      "shares_held": 147.53,
-      "cost_held": 56.06,
-      "title": "US announces end of Iranian blockade by August 31, 2026?",
-      "outcome": "Yes",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106798.7,
-      "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.59,
-      "shares_held": 16.1,
-      "cost_held": 10.39,
-      "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106799.9,
-      "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.499,
-      "shares_held": 89.98,
-      "cost_held": 47.96,
-      "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
-      "outcome": "No",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106801.3,
-      "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.74,
-      "shares_held": 82.18,
-      "cost_held": 47.66,
-      "title": "Will Hamas agree to disarm by December 31?",
-      "outcome": "No",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106801.7,
-      "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.78,
-      "shares_held": 57.85,
-      "cost_held": 49.17,
-      "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
-      "outcome": "No",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787106802.2,
-      "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.65,
-      "shares_held": 27.89,
-      "cost_held": 15.34,
-      "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
-      "outcome": "Under",
-      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787107144.1,
-      "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.88,
-      "shares_held": 28.3021,
-      "cost_held": 23.21,
-      "title": "Will Hyperliquid HIP-3 open interest hit $8B in 2026?",
-      "outcome": "No",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787107144.5,
-      "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.864,
-      "shares_held": 134.4449,
-      "cost_held": 102.31,
-      "title": "Opensea FDV above $500M one day after launch?",
-      "outcome": "No",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787107145.3,
-      "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.09,
-      "shares_held": 147.53,
-      "cost_held": 56.06,
-      "title": "US announces end of Iranian blockade by August 31, 2026?",
-      "outcome": "Yes",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787107145.9,
-      "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.59,
-      "shares_held": 16.1,
-      "cost_held": 10.39,
-      "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
-      "outcome": "Yes",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787107147.0,
-      "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.509,
-      "shares_held": 89.98,
-      "cost_held": 47.96,
-      "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
-      "outcome": "No",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787107148.7,
-      "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.74,
-      "shares_held": 82.18,
-      "cost_held": 47.66,
-      "title": "Will Hamas agree to disarm by December 31?",
-      "outcome": "No",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787107149.1,
-      "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.79,
-      "shares_held": 57.85,
-      "cost_held": 49.17,
-      "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
-      "outcome": "No",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787107150.2,
-      "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.65,
-      "shares_held": 27.89,
-      "cost_held": 15.34,
-      "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
-      "outcome": "Under",
-      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787107507.6,
-      "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.88,
-      "shares_held": 28.3021,
-      "cost_held": 23.21,
-      "title": "Will Hyperliquid HIP-3 open interest hit $8B in 2026?",
-      "outcome": "No",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787107508.2,
-      "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.864,
-      "shares_held": 134.4449,
-      "cost_held": 102.31,
-      "title": "Opensea FDV above $500M one day after launch?",
-      "outcome": "No",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
-    {
-      "ts": 1787107508.8,
+      "ts": 1787117145.7,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
@@ -24622,13 +24021,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787107509.2,
+      "ts": 1787117146.1,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.58,
+      "sell_px": 0.59,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -24637,7 +24036,487 @@
       "mode": "paper"
     },
     {
-      "ts": 1787107510.2,
+      "ts": 1787117147.1,
+      "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.508,
+      "shares_held": 89.98,
+      "cost_held": 47.96,
+      "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
+      "outcome": "No",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117148.5,
+      "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.74,
+      "shares_held": 82.18,
+      "cost_held": 47.66,
+      "title": "Will Hamas agree to disarm by December 31?",
+      "outcome": "No",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117148.9,
+      "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.79,
+      "shares_held": 57.85,
+      "cost_held": 49.17,
+      "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
+      "outcome": "No",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117149.3,
+      "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.65,
+      "shares_held": 27.89,
+      "cost_held": 15.34,
+      "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
+      "outcome": "Under",
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117493.0,
+      "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 28.3021,
+      "cost_held": 23.21,
+      "title": "Will Hyperliquid HIP-3 open interest hit $8B in 2026?",
+      "outcome": "No",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117493.5,
+      "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.864,
+      "shares_held": 134.4449,
+      "cost_held": 102.31,
+      "title": "Opensea FDV above $500M one day after launch?",
+      "outcome": "No",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117494.4,
+      "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.08,
+      "shares_held": 147.53,
+      "cost_held": 56.06,
+      "title": "US announces end of Iranian blockade by August 31, 2026?",
+      "outcome": "Yes",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117494.9,
+      "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.59,
+      "shares_held": 16.1,
+      "cost_held": 10.39,
+      "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117496.3,
+      "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.508,
+      "shares_held": 89.98,
+      "cost_held": 47.96,
+      "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
+      "outcome": "No",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117497.8,
+      "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.74,
+      "shares_held": 82.18,
+      "cost_held": 47.66,
+      "title": "Will Hamas agree to disarm by December 31?",
+      "outcome": "No",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117498.3,
+      "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.79,
+      "shares_held": 57.85,
+      "cost_held": 49.17,
+      "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
+      "outcome": "No",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117498.6,
+      "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.65,
+      "shares_held": 27.89,
+      "cost_held": 15.34,
+      "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
+      "outcome": "Under",
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117840.6,
+      "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 28.3021,
+      "cost_held": 23.21,
+      "title": "Will Hyperliquid HIP-3 open interest hit $8B in 2026?",
+      "outcome": "No",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117841.3,
+      "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.864,
+      "shares_held": 134.4449,
+      "cost_held": 102.31,
+      "title": "Opensea FDV above $500M one day after launch?",
+      "outcome": "No",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117841.9,
+      "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.08,
+      "shares_held": 147.53,
+      "cost_held": 56.06,
+      "title": "US announces end of Iranian blockade by August 31, 2026?",
+      "outcome": "Yes",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117842.2,
+      "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.59,
+      "shares_held": 16.1,
+      "cost_held": 10.39,
+      "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117843.3,
+      "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.521,
+      "shares_held": 89.98,
+      "cost_held": 47.96,
+      "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
+      "outcome": "No",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117844.7,
+      "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.74,
+      "shares_held": 82.18,
+      "cost_held": 47.66,
+      "title": "Will Hamas agree to disarm by December 31?",
+      "outcome": "No",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117845.1,
+      "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.79,
+      "shares_held": 57.85,
+      "cost_held": 49.17,
+      "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
+      "outcome": "No",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787117845.5,
+      "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.65,
+      "shares_held": 27.89,
+      "cost_held": 15.34,
+      "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
+      "outcome": "Under",
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787118176.4,
+      "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 28.3021,
+      "cost_held": 23.21,
+      "title": "Will Hyperliquid HIP-3 open interest hit $8B in 2026?",
+      "outcome": "No",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787118176.9,
+      "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.864,
+      "shares_held": 134.4449,
+      "cost_held": 102.31,
+      "title": "Opensea FDV above $500M one day after launch?",
+      "outcome": "No",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787118177.7,
+      "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.08,
+      "shares_held": 147.53,
+      "cost_held": 56.06,
+      "title": "US announces end of Iranian blockade by August 31, 2026?",
+      "outcome": "Yes",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787118178.3,
+      "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.59,
+      "shares_held": 16.1,
+      "cost_held": 10.39,
+      "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787118179.5,
+      "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.518,
+      "shares_held": 89.98,
+      "cost_held": 47.96,
+      "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
+      "outcome": "No",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787118181.1,
+      "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.74,
+      "shares_held": 82.18,
+      "cost_held": 47.66,
+      "title": "Will Hamas agree to disarm by December 31?",
+      "outcome": "No",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787118181.7,
+      "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.79,
+      "shares_held": 57.85,
+      "cost_held": 49.17,
+      "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
+      "outcome": "No",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787118182.0,
+      "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.65,
+      "shares_held": 27.89,
+      "cost_held": 15.34,
+      "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
+      "outcome": "Under",
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787118531.6,
+      "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 28.3021,
+      "cost_held": 23.21,
+      "title": "Will Hyperliquid HIP-3 open interest hit $8B in 2026?",
+      "outcome": "No",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787118532.2,
+      "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.864,
+      "shares_held": 134.4449,
+      "cost_held": 102.31,
+      "title": "Opensea FDV above $500M one day after launch?",
+      "outcome": "No",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787118532.8,
+      "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.08,
+      "shares_held": 147.53,
+      "cost_held": 56.06,
+      "title": "US announces end of Iranian blockade by August 31, 2026?",
+      "outcome": "Yes",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787118533.1,
+      "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.59,
+      "shares_held": 16.1,
+      "cost_held": 10.39,
+      "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787118534.1,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
@@ -24652,7 +24531,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787107511.7,
+      "ts": 1787118535.5,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -24667,13 +24546,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787107512.0,
+      "ts": 1787118535.9,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.78,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -24682,7 +24561,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787107512.4,
+      "ts": 1787118536.5,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -24697,7 +24576,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787107849.5,
+      "ts": 1787118866.8,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -24712,7 +24591,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787107849.9,
+      "ts": 1787118867.2,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -24727,7 +24606,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787107850.7,
+      "ts": 1787118868.0,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
@@ -24742,13 +24621,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787107851.3,
+      "ts": 1787118868.6,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.58,
+      "sell_px": 0.89,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -24757,13 +24636,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787107852.6,
+      "ts": 1787118869.9,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.514,
+      "sell_px": 0.52,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -24772,7 +24651,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787107854.2,
+      "ts": 1787118871.5,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -24787,13 +24666,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787107854.8,
+      "ts": 1787118872.1,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.78,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -24802,7 +24681,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787107855.4,
+      "ts": 1787118872.4,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -24817,7 +24696,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108194.2,
+      "ts": 1787119208.8,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -24832,7 +24711,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108194.8,
+      "ts": 1787119209.9,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -24847,7 +24726,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108195.3,
+      "ts": 1787119210.9,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
@@ -24862,13 +24741,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108195.7,
+      "ts": 1787119211.4,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.58,
+      "sell_px": 0.86,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -24877,13 +24756,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108196.8,
+      "ts": 1787119212.6,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.514,
+      "sell_px": 0.504,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -24892,7 +24771,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108198.1,
+      "ts": 1787119214.2,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -24907,13 +24786,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108198.4,
+      "ts": 1787119214.6,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.78,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -24922,7 +24801,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108198.9,
+      "ts": 1787119215.0,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -24937,7 +24816,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108536.0,
+      "ts": 1787119555.3,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -24952,7 +24831,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108536.5,
+      "ts": 1787119555.8,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -24967,7 +24846,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108537.4,
+      "ts": 1787119556.6,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
@@ -24982,13 +24861,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108537.9,
+      "ts": 1787119557.2,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.58,
+      "sell_px": 0.75,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -24997,13 +24876,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108539.2,
+      "ts": 1787119558.6,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.509,
+      "sell_px": 0.499,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -25012,7 +24891,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108540.8,
+      "ts": 1787119560.1,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -25027,7 +24906,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108541.2,
+      "ts": 1787119560.6,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
@@ -25042,7 +24921,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108541.6,
+      "ts": 1787119561.1,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -25057,7 +24936,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108882.5,
+      "ts": 1787119901.1,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -25072,7 +24951,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108883.2,
+      "ts": 1787119901.7,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -25087,7 +24966,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108883.8,
+      "ts": 1787119902.3,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
@@ -25102,13 +24981,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108884.2,
+      "ts": 1787119902.6,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.58,
+      "sell_px": 0.63,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -25117,13 +24996,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108885.2,
+      "ts": 1787119903.7,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.509,
+      "sell_px": 0.49,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -25132,7 +25011,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108886.6,
+      "ts": 1787119905.1,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -25147,13 +25026,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108886.9,
+      "ts": 1787119905.5,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.78,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -25162,7 +25041,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787108887.3,
+      "ts": 1787119906.0,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -25177,7 +25056,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109234.8,
+      "ts": 1787120244.8,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -25192,7 +25071,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109235.3,
+      "ts": 1787120245.3,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -25207,7 +25086,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109236.1,
+      "ts": 1787120246.0,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
@@ -25222,13 +25101,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109236.5,
+      "ts": 1787120246.6,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.58,
+      "sell_px": 0.74,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -25237,13 +25116,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109237.8,
+      "ts": 1787120247.8,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.506,
+      "sell_px": 0.489,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -25252,7 +25131,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109239.3,
+      "ts": 1787120249.3,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -25267,13 +25146,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109239.9,
+      "ts": 1787120249.8,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.78,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -25282,7 +25161,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109240.2,
+      "ts": 1787120250.2,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -25297,7 +25176,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109578.9,
+      "ts": 1787120588.8,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -25312,7 +25191,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109579.4,
+      "ts": 1787120589.5,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -25327,7 +25206,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109580.0,
+      "ts": 1787120590.1,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
@@ -25342,13 +25221,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109580.4,
+      "ts": 1787120590.5,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.58,
+      "sell_px": 0.73,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -25357,13 +25236,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109581.5,
+      "ts": 1787120591.7,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.505,
+      "sell_px": 0.472,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -25372,7 +25251,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109582.9,
+      "ts": 1787120593.2,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -25387,13 +25266,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109583.3,
+      "ts": 1787120593.6,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.78,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -25402,7 +25281,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109583.7,
+      "ts": 1787120594.0,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -25417,7 +25296,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109920.3,
+      "ts": 1787120932.7,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -25432,7 +25311,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109920.8,
+      "ts": 1787120933.2,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -25447,7 +25326,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109921.6,
+      "ts": 1787120934.0,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
@@ -25462,13 +25341,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109922.1,
+      "ts": 1787120934.5,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.58,
+      "sell_px": 0.73,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -25477,13 +25356,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109923.4,
+      "ts": 1787120935.7,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.505,
+      "sell_px": 0.477,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -25492,7 +25371,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109925.1,
+      "ts": 1787120937.3,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -25507,13 +25386,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109925.7,
+      "ts": 1787120937.9,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.76,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -25522,7 +25401,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787109926.0,
+      "ts": 1787120938.3,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -25537,7 +25416,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110263.0,
+      "ts": 1787121277.0,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -25552,7 +25431,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110263.6,
+      "ts": 1787121277.6,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -25567,7 +25446,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110264.3,
+      "ts": 1787121278.3,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
@@ -25582,13 +25461,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110264.6,
+      "ts": 1787121278.7,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.58,
+      "sell_px": 0.72,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -25597,13 +25476,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110265.7,
+      "ts": 1787121279.7,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.502,
+      "sell_px": 0.485,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -25612,7 +25491,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110267.2,
+      "ts": 1787121281.2,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -25627,13 +25506,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110267.5,
+      "ts": 1787121281.5,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.76,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -25642,7 +25521,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110267.9,
+      "ts": 1787121282.0,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -25657,7 +25536,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110604.0,
+      "ts": 1787121625.5,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -25672,7 +25551,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110604.4,
+      "ts": 1787121626.0,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -25687,7 +25566,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110605.2,
+      "ts": 1787121626.8,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
@@ -25702,13 +25581,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110605.7,
+      "ts": 1787121627.4,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.58,
+      "sell_px": 0.62,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -25717,13 +25596,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110607.0,
+      "ts": 1787121628.8,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.542,
+      "sell_px": 0.481,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -25732,7 +25611,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110608.7,
+      "ts": 1787121630.4,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -25747,13 +25626,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110609.3,
+      "ts": 1787121631.1,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.76,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -25762,7 +25641,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110609.7,
+      "ts": 1787121631.4,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -25777,7 +25656,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110949.7,
+      "ts": 1787121971.7,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -25792,7 +25671,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110950.4,
+      "ts": 1787121972.3,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -25807,7 +25686,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110951.1,
+      "ts": 1787121973.0,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
@@ -25822,13 +25701,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110951.5,
+      "ts": 1787121973.3,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.58,
+      "sell_px": 0.72,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -25837,13 +25716,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110952.6,
+      "ts": 1787121974.4,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.542,
+      "sell_px": 0.484,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -25852,7 +25731,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110953.9,
+      "ts": 1787121975.8,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -25867,13 +25746,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110954.2,
+      "ts": 1787121976.1,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.75,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -25882,7 +25761,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787110954.6,
+      "ts": 1787121976.6,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -25897,7 +25776,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111297.7,
+      "ts": 1787122313.7,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -25912,7 +25791,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111298.2,
+      "ts": 1787122314.2,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -25927,13 +25806,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111299.0,
+      "ts": 1787122315.0,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.08,
+      "sell_px": 0.07,
       "shares_held": 147.53,
       "cost_held": 56.06,
       "title": "US announces end of Iranian blockade by August 31, 2026?",
@@ -25942,13 +25821,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111300.2,
+      "ts": 1787122315.6,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.58,
+      "sell_px": 0.72,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -25957,13 +25836,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111301.5,
+      "ts": 1787122316.9,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.53,
+      "sell_px": 0.481,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -25972,7 +25851,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111302.9,
+      "ts": 1787122318.6,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -25987,13 +25866,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111303.5,
+      "ts": 1787122319.2,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.75,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -26002,7 +25881,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111303.8,
+      "ts": 1787122319.5,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -26017,7 +25896,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111640.7,
+      "ts": 1787122650.1,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -26032,7 +25911,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111641.4,
+      "ts": 1787122650.7,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -26047,13 +25926,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111642.0,
+      "ts": 1787122651.4,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.08,
+      "sell_px": 0.07,
       "shares_held": 147.53,
       "cost_held": 56.06,
       "title": "US announces end of Iranian blockade by August 31, 2026?",
@@ -26062,13 +25941,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111642.4,
+      "ts": 1787122651.9,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.58,
+      "sell_px": 0.72,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -26077,13 +25956,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111643.5,
+      "ts": 1787122653.1,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.527,
+      "sell_px": 0.477,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -26092,7 +25971,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111644.9,
+      "ts": 1787122654.5,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -26107,13 +25986,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111645.3,
+      "ts": 1787122654.9,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.75,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -26122,7 +26001,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111645.8,
+      "ts": 1787122655.3,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -26137,7 +26016,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111987.5,
+      "ts": 1787122994.2,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -26152,7 +26031,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111987.9,
+      "ts": 1787122994.7,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -26167,13 +26046,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111988.7,
+      "ts": 1787122995.6,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.08,
+      "sell_px": 0.07,
       "shares_held": 147.53,
       "cost_held": 56.06,
       "title": "US announces end of Iranian blockade by August 31, 2026?",
@@ -26182,13 +26061,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111989.2,
+      "ts": 1787122996.1,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.59,
+      "sell_px": 0.72,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -26197,13 +26076,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111990.7,
+      "ts": 1787122997.8,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.524,
+      "sell_px": 0.48,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -26212,7 +26091,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111992.2,
+      "ts": 1787122999.5,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -26227,13 +26106,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111992.6,
+      "ts": 1787123000.0,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.75,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -26242,7 +26121,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787111992.9,
+      "ts": 1787123000.4,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -26257,7 +26136,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787112330.4,
+      "ts": 1787123346.7,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -26272,7 +26151,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787112331.0,
+      "ts": 1787123347.4,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -26287,13 +26166,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787112331.7,
+      "ts": 1787123348.0,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.08,
+      "sell_px": 0.07,
       "shares_held": 147.53,
       "cost_held": 56.06,
       "title": "US announces end of Iranian blockade by August 31, 2026?",
@@ -26302,13 +26181,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787112332.0,
+      "ts": 1787123348.4,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.59,
+      "sell_px": 0.72,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -26317,13 +26196,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787112333.1,
+      "ts": 1787123349.5,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.516,
+      "sell_px": 0.479,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -26332,7 +26211,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787112334.6,
+      "ts": 1787123351.1,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -26347,13 +26226,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787112335.0,
+      "ts": 1787123351.4,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.75,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -26362,7 +26241,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787112335.4,
+      "ts": 1787123351.8,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -26377,7 +26256,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787112675.5,
+      "ts": 1787123696.1,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -26392,7 +26271,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787112675.9,
+      "ts": 1787123696.6,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -26407,13 +26286,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787112676.9,
+      "ts": 1787123697.5,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.08,
+      "sell_px": 0.07,
       "shares_held": 147.53,
       "cost_held": 56.06,
       "title": "US announces end of Iranian blockade by August 31, 2026?",
@@ -26422,13 +26301,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787112677.4,
+      "ts": 1787123698.1,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.59,
+      "sell_px": 0.72,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -26437,13 +26316,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787112678.8,
+      "ts": 1787123699.5,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.516,
+      "sell_px": 0.478,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -26452,7 +26331,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787112680.4,
+      "ts": 1787123701.2,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -26467,13 +26346,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787112680.9,
+      "ts": 1787123701.8,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.76,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -26482,7 +26361,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787112681.2,
+      "ts": 1787123702.2,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -26497,7 +26376,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113016.4,
+      "ts": 1787124041.9,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -26512,7 +26391,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113017.0,
+      "ts": 1787124042.6,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -26527,13 +26406,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113017.6,
+      "ts": 1787124043.3,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.08,
+      "sell_px": 0.07,
       "shares_held": 147.53,
       "cost_held": 56.06,
       "title": "US announces end of Iranian blockade by August 31, 2026?",
@@ -26542,13 +26421,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113018.0,
+      "ts": 1787124043.6,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.59,
+      "sell_px": 0.72,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -26557,13 +26436,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113019.1,
+      "ts": 1787124044.8,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.516,
+      "sell_px": 0.476,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -26572,7 +26451,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113020.5,
+      "ts": 1787124046.4,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -26587,13 +26466,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113020.9,
+      "ts": 1787124046.7,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.78,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -26602,7 +26481,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113021.3,
+      "ts": 1787124047.2,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -26617,7 +26496,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113363.9,
+      "ts": 1787124386.7,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -26632,7 +26511,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113364.4,
+      "ts": 1787124387.2,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -26647,13 +26526,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113365.2,
+      "ts": 1787124388.1,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.08,
+      "sell_px": 0.07,
       "shares_held": 147.53,
       "cost_held": 56.06,
       "title": "US announces end of Iranian blockade by August 31, 2026?",
@@ -26662,13 +26541,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113365.7,
+      "ts": 1787124388.6,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.59,
+      "sell_px": 0.72,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -26677,13 +26556,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113366.8,
+      "ts": 1787124390.0,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.516,
+      "sell_px": 0.474,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -26692,7 +26571,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113368.4,
+      "ts": 1787124391.7,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -26707,13 +26586,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113368.9,
+      "ts": 1787124392.4,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.78,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -26722,7 +26601,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113369.2,
+      "ts": 1787124392.7,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -26737,7 +26616,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113705.2,
+      "ts": 1787124732.0,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -26752,7 +26631,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113705.7,
+      "ts": 1787124732.7,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -26767,13 +26646,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113706.3,
+      "ts": 1787124733.3,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.08,
+      "sell_px": 0.07,
       "shares_held": 147.53,
       "cost_held": 56.06,
       "title": "US announces end of Iranian blockade by August 31, 2026?",
@@ -26782,13 +26661,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113706.7,
+      "ts": 1787124733.6,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.59,
+      "sell_px": 0.7,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -26797,13 +26676,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113707.7,
+      "ts": 1787124734.7,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.516,
+      "sell_px": 0.474,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -26812,7 +26691,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113709.1,
+      "ts": 1787124736.1,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -26827,7 +26706,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113709.4,
+      "ts": 1787124736.5,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
@@ -26842,7 +26721,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787113709.9,
+      "ts": 1787124737.0,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,
@@ -26857,7 +26736,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787114045.7,
+      "ts": 1787125074.7,
       "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
       "their_size": 0,
       "their_prev": 0,
@@ -26872,7 +26751,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787114046.2,
+      "ts": 1787125075.2,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
       "their_size": 0,
       "their_prev": 0,
@@ -26887,13 +26766,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787114047.1,
+      "ts": 1787125076.1,
       "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.08,
+      "sell_px": 0.07,
       "shares_held": 147.53,
       "cost_held": 56.06,
       "title": "US announces end of Iranian blockade by August 31, 2026?",
@@ -26902,13 +26781,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787114047.7,
+      "ts": 1787125076.6,
       "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.59,
+      "sell_px": 0.7,
       "shares_held": 16.1,
       "cost_held": 10.39,
       "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
@@ -26917,13 +26796,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787114049.1,
+      "ts": 1787125077.9,
       "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.516,
+      "sell_px": 0.475,
       "shares_held": 89.98,
       "cost_held": 47.96,
       "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
@@ -26932,7 +26811,7 @@
       "mode": "paper"
     },
     {
-      "ts": 1787114051.0,
+      "ts": 1787125079.4,
       "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
       "their_size": 0,
       "their_prev": 0,
@@ -26947,13 +26826,13 @@
       "mode": "paper"
     },
     {
-      "ts": 1787114051.6,
+      "ts": 1787125079.8,
       "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
       "their_size": 0,
       "their_prev": 0,
       "frac": 1.0,
       "reason": "band",
-      "sell_px": 0.79,
+      "sell_px": 0.81,
       "shares_held": 57.85,
       "cost_held": 49.17,
       "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
@@ -26962,7 +26841,127 @@
       "mode": "paper"
     },
     {
-      "ts": 1787114051.9,
+      "ts": 1787125080.2,
+      "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.65,
+      "shares_held": 27.89,
+      "cost_held": 15.34,
+      "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
+      "outcome": "Under",
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787125420.6,
+      "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.88,
+      "shares_held": 28.3021,
+      "cost_held": 23.21,
+      "title": "Will Hyperliquid HIP-3 open interest hit $8B in 2026?",
+      "outcome": "No",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787125421.2,
+      "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.864,
+      "shares_held": 134.4449,
+      "cost_held": 102.31,
+      "title": "Opensea FDV above $500M one day after launch?",
+      "outcome": "No",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787125421.8,
+      "token": "3995405418988860809616760430893135352799035734473152509556306061162112667429",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.07,
+      "shares_held": 147.53,
+      "cost_held": 56.06,
+      "title": "US announces end of Iranian blockade by August 31, 2026?",
+      "outcome": "Yes",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787125422.2,
+      "token": "51802903848392919812130438199765816815948922249791921217869064726397951660158",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.7,
+      "shares_held": 16.1,
+      "cost_held": 10.39,
+      "title": "Will Glean's valuation hit (LOW) $6B by December 31?",
+      "outcome": "Yes",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787125423.3,
+      "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.474,
+      "shares_held": 89.98,
+      "cost_held": 47.96,
+      "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by ",
+      "outcome": "No",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787125424.8,
+      "token": "30676432546818066080538703205639237969080188796746196694446265523208566227883",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.74,
+      "shares_held": 82.18,
+      "cost_held": 47.66,
+      "title": "Will Hamas agree to disarm by December 31?",
+      "outcome": "No",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787125425.2,
+      "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
+      "their_size": 0,
+      "their_prev": 0,
+      "frac": 1.0,
+      "reason": "band",
+      "sell_px": 0.81,
+      "shares_held": 57.85,
+      "cost_held": 49.17,
+      "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
+      "outcome": "No",
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787125425.6,
       "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
       "their_size": 0,
       "their_prev": 0,

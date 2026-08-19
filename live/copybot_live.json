@@ -2120,6 +2120,21 @@
  ],
  "missed": [
   {
+   "ts": 1787125426,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "47545978560723057800878739943239353653333152983956629846874223019486110897451",
+   "cond": "0x11f2fd0dc1de6f696adda1d69c0141f58e8353c58b3fd628e984e0c2b1af461e",
+   "title": "HNK Hajduk Split vs. RKS Rak\u00f3w Cz\u0119stochowa: RKS Rak\u00f3w Cz\u0119stochowa O/U 3.5 Corners",
+   "outcome": "Over",
+   "price": 0.4996,
+   "stake": 45.38,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1787114252,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "37573228338665283688604106386288247955339098122616134537282110500293411203970",
@@ -3050,25 +3065,9 @@
    "settled": 1786438182,
    "name": "0xbadaf319",
    "exit_price": 0.7455
-  },
-  {
-   "ts": 1785828541,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "34202871818293327873019109384233612300844391276682641362875608341774765501606",
-   "cond": "0x3625923142ebee77a65aa51835b0af86f5231bd7e5371870903fb2f2c3217f03",
-   "title": "Multipli.fi FDV above $50M one day after launch?",
-   "outcome": "Yes",
-   "price": 0.5991,
-   "stake": 37.5,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "sold",
-   "pnl": 18.85,
-   "settled": 1786436091,
-   "name": "0xbadaf319",
-   "exit_price": 0.91
   }
  ],
- "missed_pnl": 169.88,
+ "missed_pnl": 169.62,
  "last_fill": {
   "ts": 1787098488,
   "side": "BUY",
@@ -3114,7 +3113,7 @@
    "wins": 3,
    "open_cost": 192.89,
    "open_n": 2,
-   "miss_n": 29,
+   "miss_n": 30,
    "miss_pnl": 515.25,
    "last_ts": 1787098389
   },
@@ -3179,5 +3178,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787114260
+ "updated": 1787125431
 }
