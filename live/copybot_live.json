@@ -2129,10 +2129,11 @@
    "price": 0.6,
    "stake": 45.38,
    "reason": "maker bid unfilled (94s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "AIcAIc"
+   "status": "sold",
+   "pnl": 9.66,
+   "settled": 1787129586,
+   "name": "AIcAIc",
+   "exit_price": 0.7406
   },
   {
    "ts": 1787098443,
@@ -3067,7 +3068,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 304.63,
+ "missed_pnl": 314.29,
  "last_fill": {
   "ts": 1787098488,
   "side": "BUY",
@@ -3134,7 +3135,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 16,
-   "miss_pnl": -470.93,
+   "miss_pnl": -461.27,
    "last_ts": 1786983110
   },
   "BikesAreTheBikes": {
@@ -3178,5 +3179,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787127779
+ "updated": 1787129586
 }
