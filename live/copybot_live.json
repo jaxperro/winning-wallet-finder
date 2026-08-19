@@ -2120,6 +2120,21 @@
  ],
  "missed": [
   {
+   "ts": 1787127772,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "55305038913192020872246854542109383732870838346861078435319294356385837846606",
+   "cond": "0x7e610ddf0918999baab9fbe344087a63029ffd59d2c80a366221cd1acb054e43",
+   "title": "LoL: LNG Esports vs Weibo Gaming - Game 2 Winner",
+   "outcome": "LNG Esports",
+   "price": 0.6,
+   "stake": 45.38,
+   "reason": "maker bid unfilled (94s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
+  {
    "ts": 1787098443,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "47085524854597406321671293221364166989915921315530888683631330762838248740726",
@@ -3050,25 +3065,9 @@
    "settled": 1786460556,
    "name": "Kruto2027",
    "exit_checked": true
-  },
-  {
-   "ts": 1785958766,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "89339842467755846916895340090811107531055862929812328249086116756300859728253",
-   "cond": "0x426727e12645a0057d1280d8d14911a23c5aac767277cea8a1e408b9edf4a9dc",
-   "title": "Will Revolut's valuation hit (HIGH) $135B by August 31?",
-   "outcome": "No",
-   "price": 0.719,
-   "stake": 45.32,
-   "reason": "maker bid unfilled (70s)",
-   "status": "sold",
-   "pnl": 0.93,
-   "settled": 1786438182,
-   "name": "0xbadaf319",
-   "exit_price": 0.7455
   }
  ],
- "missed_pnl": 181.12,
+ "missed_pnl": 304.63,
  "last_fill": {
   "ts": 1787098488,
   "side": "BUY",
@@ -3134,7 +3133,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 15,
+   "miss_n": 16,
    "miss_pnl": -470.93,
    "last_ts": 1786983110
   },
@@ -3179,5 +3178,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787127500
+ "updated": 1787127779
 }

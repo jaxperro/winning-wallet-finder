@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787127500,
+ "updated": 1787127779,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -58,7 +58,7 @@
    "wins": 0,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 15,
+   "miss_n": 16,
    "miss_pnl": -470.93,
    "last_ts": 1786983110
   },
@@ -8841,6 +8841,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787127772,
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "token": "55305038913192020872246854542109383732870838346861078435319294356385837846606",
+   "cond": "0x7e610ddf0918999baab9fbe344087a63029ffd59d2c80a366221cd1acb054e43",
+   "title": "LoL: LNG Esports vs Weibo Gaming - Game 2 Winner",
+   "outcome": "LNG Esports",
+   "price": 0.6,
+   "stake": 45.38,
+   "reason": "maker bid unfilled (94s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "AIcAIc"
+  },
   {
    "ts": 1787098443,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
