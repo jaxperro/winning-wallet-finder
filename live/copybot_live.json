@@ -2124,6 +2124,21 @@
  ],
  "missed": [
   {
+   "ts": 1787002320,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "32044532626251001454470973498564213866511665482798950142562486285090357572054",
+   "cond": "0xcfe1dc82b8014341ac9813c5a1a1cd918b77b660e0f7e9d83fe65d43202ddb34",
+   "title": "LoL: Gen.G vs KT Rolster (BO3) - LCK Round 3-4 Legend Group",
+   "outcome": "Gen.G",
+   "price": 0.8382,
+   "stake": 49.15,
+   "reason": "maker bid unfilled (111s)",
+   "status": "won",
+   "pnl": 9.25,
+   "settled": 1787145095,
+   "name": "JuiceFarm"
+  },
+  {
    "ts": 1787127772,
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "token": "55305038913192020872246854542109383732870838346861078435319294356385837846606",
@@ -2309,21 +2324,6 @@
    "settled": 1787010866,
    "name": "Kruto2027",
    "exit_price": 0.4956
-  },
-  {
-   "ts": 1787002320,
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "token": "32044532626251001454470973498564213866511665482798950142562486285090357572054",
-   "cond": "0xcfe1dc82b8014341ac9813c5a1a1cd918b77b660e0f7e9d83fe65d43202ddb34",
-   "title": "LoL: Gen.G vs KT Rolster (BO3) - LCK Round 3-4 Legend Group",
-   "outcome": "Gen.G",
-   "price": 0.8382,
-   "stake": 49.15,
-   "reason": "maker bid unfilled (111s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "JuiceFarm"
   },
   {
    "ts": 1786839933,
@@ -3072,7 +3072,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 314.29,
+ "missed_pnl": 323.54,
  "last_fill": {
   "ts": 1787143088,
   "side": "SELL",
@@ -3159,7 +3159,7 @@
    "open_cost": 49.14,
    "open_n": 1,
    "miss_n": 8,
-   "miss_pnl": 11.94,
+   "miss_pnl": 21.19,
    "last_ts": 1787060999
   },
   "0x41558102": {
@@ -3183,5 +3183,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787143088
+ "updated": 1787145096
 }
