@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787100522,
+ "updated": 1787114260,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -68,7 +68,7 @@
    "wins": 7,
    "open_cost": 1305.95,
    "open_n": 24,
-   "miss_n": 61,
+   "miss_n": 62,
    "miss_pnl": -1004.3,
    "last_ts": 1787077609
   },
@@ -8841,6 +8841,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787114252,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "37573228338665283688604106386288247955339098122616134537282110500293411203970",
+   "cond": "0x14d327328063504ab74b2ab11fe68ad305525fafc70effcd5ba5c5c688971988",
+   "title": "Will Avengers: Doomsday have the best domestic opening weekend in 2026?",
+   "outcome": "Yes",
+   "price": 0.32,
+   "stake": 45.38,
+   "reason": "maker bid unfilled (60s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1787004849,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
