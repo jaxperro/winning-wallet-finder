@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 45.81,
+ "stake": 46.22,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 539.91,
- "deployed": 1750.66,
+ "cash": 588.29,
+ "deployed": 1722.77,
  "reserve": 0.0,
- "realized": 1290.54,
+ "realized": 1311.03,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
  "open_count": 38,
- "fees_paid": 500.24,
+ "fees_paid": 500.33,
  "fee_rate": 0.03,
  "lag": {
   "n": 473,
@@ -68,7 +68,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1787097600
+   "end_ts": 1787097600,
+   "sold_shares": 51.65,
+   "sold_proceeds": 48.38
   },
   {
    "token": "35763471824435491858789954079926792279368530734888494205123101496347994688110",
@@ -3072,10 +3074,10 @@
  ],
  "missed_pnl": 314.29,
  "last_fill": {
-  "ts": 1787141850,
-  "side": "BUY",
-  "price": 0.54,
-  "shares": 84.85,
+  "ts": 1787143066,
+  "side": "SELL",
+  "price": 0.95,
+  "shares": 0.14,
   "title": "LoL: HANJIN BRION vs DN SOOPers - Game 2 Winner",
   "outcome": "HANJIN BRION"
  },
@@ -3181,5 +3183,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787141873
+ "updated": 1787143066
 }
