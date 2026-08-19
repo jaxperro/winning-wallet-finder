@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787147529,
+ "updated": 1787149806,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -56,11 +56,11 @@
    "realized": 42.65,
    "n": 69,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 45.51,
+   "open_n": 1,
    "miss_n": 16,
    "miss_pnl": -461.27,
-   "last_ts": 1787143088
+   "last_ts": 1787149796
   },
   "BikesAreTheBikes": {
    "realized": -28.56,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "76071364084056854586329303129475488911530245226853744156059693948282313001871",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Team WE",
+   "title": "LoL: Team WE vs EDward Gaming - Game 2 Winner",
+   "their_price": 0.65,
+   "my_price": 0.65,
+   "slippage_pct": 0.0,
+   "lag_s": 10.1,
+   "shares": 70.01,
+   "cost": 45.51,
+   "fee": 0.4778,
+   "opened": 1787149796,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787097600
+  },
   {
    "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
