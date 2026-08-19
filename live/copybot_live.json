@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 45.82,
+ "stake": 45.81,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 586.36,
- "deployed": 1704.84,
+ "cash": 539.91,
+ "deployed": 1750.66,
  "reserve": 0.0,
- "realized": 1291.17,
+ "realized": 1290.54,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 37,
- "fees_paid": 499.6,
+ "open_count": 38,
+ "fees_paid": 500.24,
  "fee_rate": 0.03,
  "lag": {
-  "n": 472,
-  "n24": 6,
+  "n": 473,
+  "n24": 7,
   "basis": "24h",
-  "avg_s": 74.5,
+  "avg_s": 69.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "53864502892394218354276510609051453993815140129270299328106126958639760010914",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "HANJIN BRION",
+   "title": "LoL: HANJIN BRION vs DN SOOPers - Game 2 Winner",
+   "their_price": 0.54,
+   "my_price": 0.54,
+   "slippage_pct": 0.0,
+   "lag_s": 36.0,
+   "shares": 84.85,
+   "cost": 45.82,
+   "fee": 0.63,
+   "opened": 1787141815,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787097600
+  },
   {
    "token": "35763471824435491858789954079926792279368530734888494205123101496347994688110",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2098,26 +2118,6 @@
    "pnl": -47.33,
    "settled": 1785780667,
    "end_ts": 1785715200
-  },
-  {
-   "token": "86011229287950365043519117852041614651767455889324682112682327985496937935368",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "US announces end of Iranian blockade by December 31, 2026?",
-   "their_price": 0.88,
-   "my_price": 0.88,
-   "slippage_pct": 0.0,
-   "lag_s": 0.8,
-   "shares": 63.01,
-   "cost": 55.45,
-   "fee": 0.2,
-   "opened": 1785775008,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1798675200
   }
  ],
  "missed": [
@@ -3072,11 +3072,11 @@
  ],
  "missed_pnl": 314.29,
  "last_fill": {
-  "ts": 1787140687,
-  "side": "SELL",
-  "price": 1.0,
-  "shares": 68.26,
-  "title": "LoL: HANJIN BRION vs DN SOOPers - Game 1 Winner",
+  "ts": 1787141850,
+  "side": "BUY",
+  "price": 0.54,
+  "shares": 84.85,
+  "title": "LoL: HANJIN BRION vs DN SOOPers - Game 2 Winner",
   "outcome": "HANJIN BRION"
  },
  "wallet_pnl": {
@@ -3134,11 +3134,11 @@
    "realized": 9.23,
    "n": 68,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 45.82,
+   "open_n": 1,
    "miss_n": 16,
    "miss_pnl": -461.27,
-   "last_ts": 1787140687
+   "last_ts": 1787141815
   },
   "BikesAreTheBikes": {
    "realized": 20.83,
@@ -3181,5 +3181,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787140687
+ "updated": 1787141873
 }

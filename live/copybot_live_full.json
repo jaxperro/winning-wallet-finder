@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787140687,
+ "updated": 1787141873,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -56,11 +56,11 @@
    "realized": 9.23,
    "n": 68,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 45.82,
+   "open_n": 1,
    "miss_n": 16,
    "miss_pnl": -461.27,
-   "last_ts": 1787140687
+   "last_ts": 1787141815
   },
   "BikesAreTheBikes": {
    "realized": 20.83,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "53864502892394218354276510609051453993815140129270299328106126958639760010914",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "HANJIN BRION",
+   "title": "LoL: HANJIN BRION vs DN SOOPers - Game 2 Winner",
+   "their_price": 0.54,
+   "my_price": 0.54,
+   "slippage_pct": 0.0,
+   "lag_s": 36.0,
+   "shares": 84.85,
+   "cost": 45.82,
+   "fee": 0.6323,
+   "opened": 1787141815,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787097600
+  },
   {
    "token": "35763471824435491858789954079926792279368530734888494205123101496347994688110",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
