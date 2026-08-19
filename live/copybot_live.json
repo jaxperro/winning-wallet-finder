@@ -2126,21 +2126,6 @@
  ],
  "missed": [
   {
-   "ts": 1787177113,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "46758111627104055255588265028130746991585350890524213287062135057763399968384",
-   "cond": "0xbd10e4d85a155a03be0d37ae564f8fcf90cd052a487e88285ee0d5f788052f03",
-   "title": "Will Iran target Saudi Arabia by August 31, 2026?",
-   "outcome": "No",
-   "price": 0.9363,
-   "stake": 44.64,
-   "reason": "maker bid unfilled (94s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1787169661,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "110942862909895634900207208050558023367650623301811517032910075170956752231929",
@@ -2150,10 +2135,27 @@
    "price": 0.5897,
    "stake": 44.64,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 30.5,
+   "settled": 1787180095,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.9999
+  },
+  {
+   "ts": 1787177113,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "46758111627104055255588265028130746991585350890524213287062135057763399968384",
+   "cond": "0xbd10e4d85a155a03be0d37ae564f8fcf90cd052a487e88285ee0d5f788052f03",
+   "title": "Will Iran target Saudi Arabia by August 31, 2026?",
+   "outcome": "No",
+   "price": 0.9363,
+   "stake": 44.64,
+   "reason": "maker bid unfilled (94s)",
+   "status": "sold",
+   "pnl": 0.79,
+   "settled": 1787180095,
+   "name": "0xbadaf319",
+   "exit_price": 0.9559
   },
   {
    "ts": 1787158893,
@@ -3073,7 +3075,7 @@
    "exit_price": 0.6898
   }
  ],
- "missed_pnl": 484.21,
+ "missed_pnl": 515.5,
  "last_fill": {
   "ts": 1787168874,
   "side": "SELL",
@@ -3090,7 +3092,7 @@
    "open_cost": 342.94,
    "open_n": 9,
    "miss_n": 173,
-   "miss_pnl": 119060.51,
+   "miss_pnl": 119061.3,
    "last_ts": 1787168874
   },
   "gkmgkldfmg": {
@@ -3100,7 +3102,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 60,
-   "miss_pnl": 184.06,
+   "miss_pnl": 214.56,
    "last_ts": 1786865524
   },
   "1kto1m": {
@@ -3184,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787177126
+ "updated": 1787180096
 }
