@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787155413,
+ "updated": 1787156535,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -9,7 +9,7 @@
    "open_cost": 369.13,
    "open_n": 10,
    "miss_n": 171,
-   "miss_pnl": 119050.74,
+   "miss_pnl": 119054.93,
    "last_ts": 1786974303
   },
   "gkmgkldfmg": {
@@ -8917,9 +8917,9 @@
    "price": 0.8829,
    "stake": 32.46,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "won",
+   "pnl": 4.19,
+   "settled": 1787156535,
    "name": "0xbadaf319"
   },
   {
