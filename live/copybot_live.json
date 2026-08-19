@@ -2126,6 +2126,21 @@
  ],
  "missed": [
   {
+   "ts": 1787177113,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "46758111627104055255588265028130746991585350890524213287062135057763399968384",
+   "cond": "0xbd10e4d85a155a03be0d37ae564f8fcf90cd052a487e88285ee0d5f788052f03",
+   "title": "Will Iran target Saudi Arabia by August 31, 2026?",
+   "outcome": "No",
+   "price": 0.9363,
+   "stake": 44.64,
+   "reason": "maker bid unfilled (94s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1787169661,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "110942862909895634900207208050558023367650623301811517032910075170956752231929",
@@ -3056,25 +3071,9 @@
    "settled": 1786550737,
    "name": "0xbadaf319",
    "exit_price": 0.6898
-  },
-  {
-   "ts": 1786540744,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "1118463852891260387925307362698332549317433261605384045096778267783254709750",
-   "cond": "0xc6e1aaf0d16559f11bc1013b5dd3901dddcd6a71809209ec6fa90748587c7a68",
-   "title": "Will Borussia Monchengladbach win on 2026-08-12?",
-   "outcome": "Yes",
-   "price": 0.8493,
-   "stake": 7.36,
-   "reason": "maker bid unfilled (84s)",
-   "status": "sold",
-   "pnl": 0.64,
-   "settled": 1786546399,
-   "name": "Kruto2027",
-   "exit_price": 0.9288
   }
  ],
- "missed_pnl": 381.43,
+ "missed_pnl": 484.21,
  "last_fill": {
   "ts": 1787168874,
   "side": "SELL",
@@ -3090,7 +3089,7 @@
    "wins": 39,
    "open_cost": 342.94,
    "open_n": 9,
-   "miss_n": 172,
+   "miss_n": 173,
    "miss_pnl": 119060.51,
    "last_ts": 1787168874
   },
@@ -3185,5 +3184,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787169667
+ "updated": 1787177126
 }
