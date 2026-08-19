@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787168874,
+ "updated": 1787169667,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 665.82,
@@ -18,7 +18,7 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 59,
+   "miss_n": 60,
    "miss_pnl": 184.06,
    "last_ts": 1786865524
   },
@@ -5254,6 +5254,7 @@
    "sold_proceeds": 4.828109056512369
   },
   {
+   "key": "6457952357077230044054791268159160058712529625831041550558183767114352456975",
    "token": "6457952357077230044054791268159160058712529625831041550558183767114352456975",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "name": "Kruto2027",
@@ -8907,6 +8908,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787169661,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "110942862909895634900207208050558023367650623301811517032910075170956752231929",
+   "cond": "0x3627a8e24c918085153c42b87913fa425d5f87820cb73acd7ee7b0cf54470244",
+   "title": "LoL: BIG vs Unicorns Of Love Sexy Edition (BO5) - Prime League 1st Division Playoffs",
+   "outcome": "BIG",
+   "price": 0.5897,
+   "stake": 44.64,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
   {
    "ts": 1787158893,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",

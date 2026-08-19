@@ -2126,6 +2126,21 @@
  ],
  "missed": [
   {
+   "ts": 1787169661,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "110942862909895634900207208050558023367650623301811517032910075170956752231929",
+   "cond": "0x3627a8e24c918085153c42b87913fa425d5f87820cb73acd7ee7b0cf54470244",
+   "title": "LoL: BIG vs Unicorns Of Love Sexy Edition (BO5) - Prime League 1st Division Playoffs",
+   "outcome": "BIG",
+   "price": 0.5897,
+   "stake": 44.64,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1787158893,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "21341191118489485215971595567500838489745713128031366103331704899034054634037",
@@ -3057,25 +3072,9 @@
    "settled": 1786546399,
    "name": "Kruto2027",
    "exit_price": 0.9288
-  },
-  {
-   "ts": 1786540739,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "12816737707556083048957476999993845601210133169615287068080825521015304431377",
-   "cond": "0xc6be6d4a544c1f31c0f88b000cafacbb06d64cc378d08d233ea4ab2a4dbef09a",
-   "title": "SSVg Velbert vs. Borussia Monchengladbach: O/U 5.5",
-   "outcome": "Over",
-   "price": 0.52,
-   "stake": 47.2,
-   "reason": "thin book ($8 within 5c < $50)",
-   "status": "sold",
-   "pnl": -4.32,
-   "settled": 1786542211,
-   "name": "Kruto2027",
-   "exit_price": 0.4874
   }
  ],
- "missed_pnl": 409.9,
+ "missed_pnl": 381.43,
  "last_fill": {
   "ts": 1787168874,
   "side": "SELL",
@@ -3101,7 +3100,7 @@
    "wins": 1,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 59,
+   "miss_n": 60,
    "miss_pnl": 184.06,
    "last_ts": 1786865524
   },
@@ -3186,5 +3185,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787168874
+ "updated": 1787169667
 }
