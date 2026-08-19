@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787149806,
+ "updated": 1787154654,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -8,7 +8,7 @@
    "wins": 39,
    "open_cost": 369.13,
    "open_n": 10,
-   "miss_n": 170,
+   "miss_n": 171,
    "miss_pnl": 119050.74,
    "last_ts": 1786974303
   },
@@ -8905,6 +8905,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787154648,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "77283776992667384013833445694171495378825164444390090423175506272164123678683",
+   "cond": "0x25608ccddca8198bbc32bb1db8849b320829dcf0e8f763ae4480a6e39773eb2e",
+   "title": "Will the price of Bitcoin be above $68,000 on August 19?",
+   "outcome": "Yes",
+   "price": 0.8829,
+   "stake": 32.46,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1787002320,
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
