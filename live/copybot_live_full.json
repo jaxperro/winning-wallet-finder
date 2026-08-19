@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787146295,
+ "updated": 1787147529,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 663.27,
@@ -63,14 +63,14 @@
    "last_ts": 1787143088
   },
   "BikesAreTheBikes": {
-   "realized": 20.83,
-   "n": 34,
+   "realized": -28.56,
+   "n": 35,
    "wins": 7,
-   "open_cost": 1305.95,
-   "open_n": 24,
+   "open_cost": 1256.78,
+   "open_n": 23,
    "miss_n": 62,
    "miss_pnl": -1004.3,
-   "last_ts": 1787077609
+   "last_ts": 1787147524
   },
   "JuiceFarm": {
    "realized": -255.63,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
+   "their_price": 0.85,
+   "my_price": 0.85,
+   "slippage_pct": 0.0,
+   "lag_s": 1.0,
+   "shares": 57.85,
+   "cost": 49.17,
+   "fee": 0.2213,
+   "opened": 1786994479,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -49.39,
+   "settled": 1787147524,
+   "end_ts": 1788134400
+  },
   {
    "token": "53864502892394218354276510609051453993815140129270299328106126958639760010914",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -267,26 +287,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1790726400
-  },
-  {
-   "token": "32498948505314576966704761143540900095142072751411430571598289128995809645377",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
-   "their_price": 0.85,
-   "my_price": 0.85,
-   "slippage_pct": 0.0,
-   "lag_s": 1.0,
-   "shares": 57.85,
-   "cost": 49.17,
-   "fee": 0.2213,
-   "opened": 1786994479,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788134400
   },
   {
    "token": "83783489454659420807679723574840032660002326710045123865554753994450797728825",
