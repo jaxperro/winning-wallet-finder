@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 52.06,
+ "stake": 52.27,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 810.56,
- "deployed": 1792.64,
+ "cash": 852.96,
+ "deployed": 1760.46,
  "reserve": 0.0,
- "realized": 1603.17,
+ "realized": 1613.39,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 39,
- "fees_paid": 509.19,
+ "fees_paid": 509.23,
  "fee_rate": 0.03,
  "lag": {
   "n": 488,
@@ -197,8 +197,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1798675200,
-   "sold_shares": 7.86,
-   "sold_proceeds": 7.7
+   "sold_shares": 51.35,
+   "sold_proceeds": 50.1
   },
   {
    "token": "38877227975220117604096569727522382360278624025874939132118216928980730599237",
@@ -3086,12 +3086,12 @@
  ],
  "missed_pnl": 492.36,
  "last_fill": {
-  "ts": 1787215931,
+  "ts": 1787216788,
   "side": "SELL",
-  "price": 1.0,
-  "shares": 438.3,
-  "title": "Dota 2: TEAM VISION vs BoomBoys - Game 2 Winner",
-  "outcome": "BoomBoys"
+  "price": 0.97,
+  "shares": 18.92,
+  "title": "Will the next Claude Opus model debut at a score of at least",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3195,5 +3195,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787215931
+ "updated": 1787216788
 }
