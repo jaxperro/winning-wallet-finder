@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 52.27,
+ "stake": 52.26,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 852.96,
- "deployed": 1760.46,
+ "cash": 800.13,
+ "deployed": 1812.72,
  "reserve": 0.0,
- "realized": 1613.39,
+ "realized": 1612.83,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 39,
- "fees_paid": 509.23,
+ "open_count": 40,
+ "fees_paid": 509.79,
  "fee_rate": 0.03,
  "lag": {
-  "n": 488,
-  "n24": 17,
+  "n": 489,
+  "n24": 18,
   "basis": "24h",
-  "avg_s": 7.7,
+  "avg_s": 7.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "92936933970877307369595908160682343270864697758713460527249180917815147569267",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Hanwha Life Esports",
+   "title": "LoL: Dplus KIA vs Hanwha Life Esports - Game 2 Winner",
+   "their_price": 0.64,
+   "my_price": 0.64,
+   "slippage_pct": 0.0,
+   "lag_s": 9.6,
+   "shares": 81.66,
+   "cost": 52.26,
+   "fee": 0.56,
+   "opened": 1787217222,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787184000
+  },
   {
    "token": "27354896597223409165559968504003473369093209044390088254665799880609984040033",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2112,26 +2132,6 @@
    "pnl": -57.55,
    "settled": 1785969566,
    "end_ts": 1785628800
-  },
-  {
-   "token": "12655298432856023401377623311129453877580829892143866780900963131940895536375",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will Amazon (AMZN) close above $275 on August 5?",
-   "their_price": 0.59,
-   "my_price": 0.59,
-   "slippage_pct": 0.0,
-   "lag_s": 17.1,
-   "shares": 45.24,
-   "cost": 26.69,
-   "fee": 0.33,
-   "opened": 1785938180,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -27.02,
-   "settled": 1785961805,
-   "end_ts": 1785888000
   }
  ],
  "missed": [
@@ -3086,12 +3086,12 @@
  ],
  "missed_pnl": 492.36,
  "last_fill": {
-  "ts": 1787216788,
-  "side": "SELL",
-  "price": 0.97,
-  "shares": 18.92,
-  "title": "Will the next Claude Opus model debut at a score of at least",
-  "outcome": "No"
+  "ts": 1787217231,
+  "side": "BUY",
+  "price": 0.64,
+  "shares": 81.66,
+  "title": "LoL: Dplus KIA vs Hanwha Life Esports - Game 2 Winner",
+  "outcome": "Hanwha Life Esports"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3148,11 +3148,11 @@
    "realized": 15.28,
    "n": 71,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 52.26,
+   "open_n": 1,
    "miss_n": 16,
    "miss_pnl": -461.27,
-   "last_ts": 1787214784
+   "last_ts": 1787217222
   },
   "BikesAreTheBikes": {
    "realized": -28.56,
@@ -3195,5 +3195,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787216788
+ "updated": 1787217231
 }
