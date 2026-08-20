@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787221732,
+ "updated": 1787222491,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 665.82,
@@ -56,11 +56,11 @@
    "realized": 44.12,
    "n": 72,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 46.82,
+   "open_n": 1,
    "miss_n": 16,
    "miss_pnl": -461.27,
-   "last_ts": 1787219266
+   "last_ts": 1787222359
   },
   "BikesAreTheBikes": {
    "realized": -28.56,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "54734159938522440875373555094880852577714961649118532033336632297242458039802",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Nongshim Red Force",
+   "title": "LoL: Nongshim Red Force vs Kiwoom DRX - Game 1 Winner",
+   "their_price": 0.6,
+   "my_price": 0.6,
+   "slippage_pct": 0.0,
+   "lag_s": 106.5,
+   "shares": 78.03,
+   "cost": 46.82,
+   "fee": 0.5618,
+   "opened": 1787222359,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787184000
+  },
   {
    "token": "101028650168194677069630427574598819381546668487248022828323675030946075448144",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",

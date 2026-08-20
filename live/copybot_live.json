@@ -1,22 +1,22 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 51.57,
+ "stake": 51.55,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 863.14,
- "deployed": 1715.15,
+ "cash": 815.76,
+ "deployed": 1761.96,
  "reserve": 0.0,
- "realized": 1578.26,
+ "realized": 1577.69,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 38,
- "fees_paid": 511.18,
+ "open_count": 39,
+ "fees_paid": 511.74,
  "fee_rate": 0.03,
  "lag": {
-  "n": 491,
-  "n24": 20,
+  "n": 492,
+  "n24": 21,
   "basis": "24h",
   "avg_s": 7.8,
   "avg_slip_pct": 0.0,
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "54734159938522440875373555094880852577714961649118532033336632297242458039802",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Nongshim Red Force",
+   "title": "LoL: Nongshim Red Force vs Kiwoom DRX - Game 1 Winner",
+   "their_price": 0.6,
+   "my_price": 0.6,
+   "slippage_pct": 0.0,
+   "lag_s": 106.5,
+   "shares": 78.03,
+   "cost": 46.82,
+   "fee": 0.56,
+   "opened": 1787222359,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787184000
+  },
   {
    "token": "101028650168194677069630427574598819381546668487248022828323675030946075448144",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2114,28 +2134,6 @@
    "end_ts": 1791072000,
    "sold_shares": 55.52,
    "sold_proceeds": 51.81
-  },
-  {
-   "token": "54454320447199793390647050027653271985412597042191832216838799636248932328400",
-   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
-   "name": "1kto1m",
-   "outcome": "Down",
-   "title": "Bitcoin Up or Down - August 5, 11PM ET",
-   "their_price": 0.67,
-   "my_price": 0.67,
-   "slippage_pct": 0.0,
-   "lag_s": 1.5,
-   "shares": 71.6,
-   "cost": 47.97,
-   "fee": 0.47,
-   "opened": 1785986936,
-   "status": "closed",
-   "exit_price": 0.9075,
-   "pnl": 16.54,
-   "settled": 1785987921,
-   "end_ts": 1785974400,
-   "sold_shares": 71.6,
-   "sold_proceeds": 64.98
   }
  ],
  "missed": [
@@ -3092,12 +3090,12 @@
  ],
  "missed_pnl": 532.08,
  "last_fill": {
-  "ts": 1787219458,
-  "side": "SELL",
-  "price": 1.0,
-  "shares": 48.51,
-  "title": "Dota 2: TEAM VISION vs BoomBoys (BO3) - The International Pl",
-  "outcome": "TEAM VISION"
+  "ts": 1787222465,
+  "side": "BUY",
+  "price": 0.6,
+  "shares": 78.03,
+  "title": "LoL: Nongshim Red Force vs Kiwoom DRX - Game 1 Winner",
+  "outcome": "Nongshim Red Force"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3154,11 +3152,11 @@
    "realized": 44.12,
    "n": 72,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 46.82,
+   "open_n": 1,
    "miss_n": 16,
    "miss_pnl": -461.27,
-   "last_ts": 1787219266
+   "last_ts": 1787222359
   },
   "BikesAreTheBikes": {
    "realized": -28.56,
@@ -3201,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787221732
+ "updated": 1787222491
 }
