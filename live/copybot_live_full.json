@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787245254,
+ "updated": 1787247141,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 612.84,
@@ -53,14 +53,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 55.46,
-   "n": 75,
+   "realized": 2.23,
+   "n": 76,
    "wins": 0,
-   "open_cost": 52.09,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 16,
    "miss_pnl": -461.27,
-   "last_ts": 1787245249
+   "last_ts": 1787247137
   },
   "BikesAreTheBikes": {
    "realized": -28.56,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "39364828328752907965250202505574255161297573376487255077881533546082623532491",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "LGD Gaming",
+   "title": "LoL: LGD Gaming vs Bilibili Gaming - Game 2 Winner",
+   "their_price": 0.27,
+   "my_price": 0.27,
+   "slippage_pct": 0.0,
+   "lag_s": 6.4,
+   "shares": 192.91,
+   "cost": 52.09,
+   "fee": 1.1407,
+   "opened": 1787230683,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -53.23,
+   "settled": 1787247137,
+   "end_ts": 1787184000
+  },
   {
    "token": "73506233318229927468878341698770994841204479549506835790103593069285668909317",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -205,26 +225,6 @@
    "end_ts": 1787184000,
    "sold_shares": 96.48,
    "sold_proceeds": 89.53797456000001
-  },
-  {
-   "token": "39364828328752907965250202505574255161297573376487255077881533546082623532491",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "LGD Gaming",
-   "title": "LoL: LGD Gaming vs Bilibili Gaming - Game 2 Winner",
-   "their_price": 0.27,
-   "my_price": 0.27,
-   "slippage_pct": 0.0,
-   "lag_s": 6.4,
-   "shares": 192.91,
-   "cost": 52.09,
-   "fee": 1.1407,
-   "opened": 1787230683,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787184000
   },
   {
    "token": "54734159938522440875373555094880852577714961649118532033336632297242458039802",
