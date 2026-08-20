@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 44.6,
+ "stake": 45.36,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 421.13,
- "deployed": 1809.01,
+ "cash": 503.78,
+ "deployed": 1764.38,
  "reserve": 0.0,
- "realized": 1230.11,
+ "realized": 1268.13,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 39,
+ "open_count": 38,
  "fees_paid": 502.94,
  "fee_rate": 0.03,
  "lag": {
@@ -51,26 +51,6 @@
  },
  "bets": [
   {
-   "token": "38877227975220117604096569727522382360278624025874939132118216928980730599237",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Iron Wing",
-   "title": "Dota 2: Iron Wing vs Team Spirit - Game 1 Winner",
-   "their_price": 0.3198,
-   "my_price": 0.3198,
-   "slippage_pct": 0.0,
-   "lag_s": 7.7,
-   "shares": 139.54,
-   "cost": 44.62,
-   "fee": 0.91,
-   "opened": 1787196429,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787184000
-  },
-  {
    "token": "27649378234597852153151841034130544274461307584872293466437239296309390473827",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -84,6 +64,28 @@
    "cost": 44.63,
    "fee": 0.62,
    "opened": 1787194297,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 37.4,
+   "settled": 1787198249,
+   "end_ts": 1787184000,
+   "sold_shares": 82.65,
+   "sold_proceeds": 82.65
+  },
+  {
+   "token": "38877227975220117604096569727522382360278624025874939132118216928980730599237",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Iron Wing",
+   "title": "Dota 2: Iron Wing vs Team Spirit - Game 1 Winner",
+   "their_price": 0.3198,
+   "my_price": 0.3198,
+   "slippage_pct": 0.0,
+   "lag_s": 7.7,
+   "shares": 139.54,
+   "cost": 44.62,
+   "fee": 0.91,
+   "opened": 1787196429,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -3072,12 +3074,12 @@
  ],
  "missed_pnl": 640.26,
  "last_fill": {
-  "ts": 1787196436,
-  "side": "BUY",
-  "price": 0.3198,
-  "shares": 139.54,
+  "ts": 1787198248,
+  "side": "SELL",
+  "price": 1.0,
+  "shares": 82.65,
   "title": "Dota 2: Iron Wing vs Team Spirit - Game 1 Winner",
-  "outcome": "Iron Wing"
+  "outcome": "Team Spirit"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3091,14 +3093,14 @@
    "last_ts": 1787188277
   },
   "gkmgkldfmg": {
-   "realized": 925.46,
-   "n": 101,
+   "realized": 962.86,
+   "n": 102,
    "wins": 1,
-   "open_cost": 89.25,
-   "open_n": 2,
+   "open_cost": 44.62,
+   "open_n": 1,
    "miss_n": 61,
    "miss_pnl": 214.56,
-   "last_ts": 1787196429
+   "last_ts": 1787198249
   },
   "1kto1m": {
    "realized": 272.77,
@@ -3181,5 +3183,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787196436
+ "updated": 1787198249
 }
