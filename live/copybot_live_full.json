@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787236825,
+ "updated": 1787237322,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 665.82,
@@ -68,7 +68,7 @@
    "wins": 7,
    "open_cost": 1256.78,
    "open_n": 23,
-   "miss_n": 62,
+   "miss_n": 63,
    "miss_pnl": -1004.3,
    "last_ts": 1787147524
   },
@@ -9292,6 +9292,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787237315,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "73822848958833581920509853766928409035356407100619064692171326316721805299603",
+   "cond": "0xcd6c66b11ed8fdbdc1183fb761cf22959c6b481e843a715a7a9f53e22b90d420",
+   "title": "NATO x Russia military clash by August 31, 2026?",
+   "outcome": "No",
+   "price": 0.612,
+   "stake": 52.81,
+   "reason": "maker bid unfilled (78s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1787236815,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
