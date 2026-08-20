@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787242849,
+ "updated": 1787243036,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 612.84,
@@ -8,7 +8,7 @@
    "wins": 39,
    "open_cost": 427.54,
    "open_n": 11,
-   "miss_n": 174,
+   "miss_n": 175,
    "miss_pnl": 119061.3,
    "last_ts": 1787242845
   },
@@ -39,7 +39,7 @@
    "open_cost": 192.89,
    "open_n": 2,
    "miss_n": 30,
-   "miss_pnl": 553.42,
+   "miss_pnl": 563.72,
    "last_ts": 1787098389
   },
   "LSB1": {
@@ -9313,6 +9313,37 @@
  ],
  "missed": [
   {
+   "ts": 1786919236,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "69798396964065261326323092700532888217157326502918720568819393070921313091865",
+   "cond": "0x1c63bd5747fc2bf69453e33263eb3e9525792c9ca78cacb06c8995d37562cb76",
+   "title": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
+   "outcome": "Team Falcons",
+   "price": 0.4151,
+   "stake": 37.41,
+   "reason": "maker bid unfilled (84s)",
+   "status": "sold",
+   "pnl": 10.3,
+   "settled": 1787243035,
+   "name": "Kruto2027",
+   "exit_price": 0.5441
+  },
+  {
+   "ts": 1787242954,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "34217648679810559168270469035729868124789508475521612461632647960809358757441",
+   "cond": "0x68ab1e85518368e3471d7834f3306fc425085bbab792294cf6bcf99c008482e7",
+   "title": "Will Prime Intellect launch a token by June 30, 2027?",
+   "outcome": "No",
+   "price": 0.67,
+   "stake": 8.08,
+   "reason": "maker bid unfilled (104s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1787239108,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "73822848958833581920509853766928409035356407100619064692171326316721805299603",
@@ -9929,21 +9960,6 @@
    "settled": 1786932169,
    "name": "BikesAreTheBikes",
    "exit_checked": true
-  },
-  {
-   "ts": 1786919236,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "69798396964065261326323092700532888217157326502918720568819393070921313091865",
-   "cond": "0x1c63bd5747fc2bf69453e33263eb3e9525792c9ca78cacb06c8995d37562cb76",
-   "title": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
-   "outcome": "Team Falcons",
-   "price": 0.4151,
-   "stake": 37.41,
-   "reason": "maker bid unfilled (84s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
   },
   {
    "ts": 1786839862,
