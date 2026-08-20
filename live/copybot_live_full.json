@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1787206039,
+ "updated": 1787206170,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 665.82,
    "n": 117,
    "wins": 39,
-   "open_cost": 387.57,
-   "open_n": 10,
+   "open_cost": 427.54,
+   "open_n": 11,
    "miss_n": 173,
    "miss_pnl": 119061.3,
-   "last_ts": 1787188277
+   "last_ts": 1787206151
   },
   "gkmgkldfmg": {
    "realized": 959.72,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "112723767965869185895942815626384183986407770380746453514732149559544814740995",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the next Claude Opus model debut at a score of at least 1515 by December 31, 2026?",
+   "their_price": 0.74,
+   "my_price": 0.74,
+   "slippage_pct": 0.0,
+   "lag_s": 8.4,
+   "shares": 54.01,
+   "cost": 39.97,
+   "fee": 0.3117,
+   "opened": 1787206151,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798675200
+  },
   {
    "token": "38877227975220117604096569727522382360278624025874939132118216928980730599237",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",

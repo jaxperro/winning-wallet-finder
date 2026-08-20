@@ -1,7 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0xda16536045f415be5c172c2cea53244f42183a7e6215d63e67ce4efb7defc47a",
     "0x546b417d531ff08608bd06a1ae82afec60e4d7cbb8a493882162a3596987ee3f",
     "0x054f55ca7fd7ce5719b4f5ffbf867334419993a70447ffb6b2f9fda6a5bf8904",
     "0x51534337aebfbf928ad638adab302f5c18820db0a30f21d35405ed50b96aef6b",
@@ -5000,7 +4999,8 @@
     "0x3fbcb1b2ed53da5879992ee16afaec19b3d9e706bbf3e17d98beed844e2dff76",
     "0xefea38ad861b3af5978efcf1dab3e059604668b3c91d0b28edba11924ed1d57f",
     "0x9b1a560a14679c6b8852c26837e2d9d5bc587d127dc9b0936e314a82b72c2911",
-    "0x6b79652ae00b48867ec92eaefbdabed4c8cc2a4c3e566fb70f2e0aa717929a1e"
+    "0x6b79652ae00b48867ec92eaefbdabed4c8cc2a4c3e566fb70f2e0aa717929a1e",
+    "0xe35d94140f230f122797c8e9d70c67f3cd8ca70945329e2b3c16f5efef745d63"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -8396,7 +8396,8 @@
       "106784439946779356073152091522894871847829629691465343986958853249638399442796": 0.0,
       "103419688148804128574083024537408659499975291400717681339231439741610763116577": 0.0,
       "11957683902788818449287976338378792644191905426505333298226537306704840198288": 0.0,
-      "85385108226540567600955219984803063480196828207729678075725002427704012060819": 0.0
+      "85385108226540567600955219984803063480196828207729678075725002427704012060819": 0.0,
+      "112723767965869185895942815626384183986407770380746453514732149559544814740995": 64.013511
     },
     "0xd7d36345c4aab150e59577e360696b01d01d698b": {
       "100468734153214358233990589631364606641061328246006529504204481849428608539045": 5322.2848,
@@ -15039,11 +15040,20 @@
       "event": "dota2-ironwi-ts8-2026-08-19",
       "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
       "cond": "0x2da4ce9342811e6e8bbf7cc047766e27e3988237cc671c6cfa7213efd2a4ef88"
+    },
+    "112723767965869185895942815626384183986407770380746453514732149559544814740995": {
+      "shares": 54.01,
+      "cost": 39.96739988187806,
+      "title": "Will the next Claude Opus model debut at a score of at least 1515 by December 31, 2026?",
+      "outcome": "No",
+      "event": "next-claude-opus-model-text-arena-debut-20261231",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "cond": "0x7beae3f4f7efa6f70994228e4f1b434fbeb3cfcb7f776b18149625235a79089d"
     }
   },
   "spend": {
     "date": "2026-08-20",
-    "usd": 224.58386014347815
+    "usd": 264.5512600253562
   },
   "seeded": [
     "0x41558102a796ba971c7567cad41c307e59f8fa41",
@@ -15318,13 +15328,13 @@
     "87020051564319575554042563286075427965650360044535268316339026643785600306175": "0x2da4ce9342811e6e8bbf7cc047766e27e3988237cc671c6cfa7213efd2a4ef88",
     "114608724211803790247601410442941743610721348507732935315986615193639570847839": "0x2da4ce9342811e6e8bbf7cc047766e27e3988237cc671c6cfa7213efd2a4ef88"
   },
-  "cash": 507.91938586317656,
+  "cash": 467.64024025959753,
   "lag": {
-    "n": 480,
-    "sum_s": 9001.065383911133,
+    "n": 481,
+    "sum_s": 9009.458483695984,
     "sum_slip_pct": -7.247834511462669
   },
-  "fees_paid": 504.5656160772515,
+  "fees_paid": 504.87736179895245,
   "lag_recent": [
     [
       1787139018.4,
@@ -15369,6 +15379,11 @@
     [
       1787201391.2,
       86.2,
+      0.0
+    ],
+    [
+      1787206159.4,
+      8.4,
       0.0
     ]
   ],
@@ -20708,11 +20723,30 @@
       "pnl": null,
       "settled": null,
       "end_ts": 1787184000
+    },
+    "112723767965869185895942815626384183986407770380746453514732149559544814740995": {
+      "token": "112723767965869185895942815626384183986407770380746453514732149559544814740995",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "name": "0xbadaf319",
+      "outcome": "No",
+      "title": "Will the next Claude Opus model debut at a score of at least 1515 by December 31, 2026?",
+      "their_price": 0.74,
+      "my_price": 0.74,
+      "slippage_pct": 0.0,
+      "lag_s": 8.4,
+      "shares": 54.01,
+      "cost": 39.97,
+      "fee": 0.3117,
+      "opened": 1787206151,
+      "status": "open",
+      "exit_price": null,
+      "pnl": null,
+      "settled": null
     }
   },
   "hwm": 3600.1933566560215,
-  "feed_sig": "8553ce92c611205a74ec92cd04dcf9eb",
-  "feed_pushed_at": 1787205896.6742413,
+  "feed_sig": "ebaa8f5743a5ada6b12e538c80ccb0d7",
+  "feed_pushed_at": 1787206039.4255662,
   "missed": [
     {
       "ts": 1784503159,
@@ -24206,7 +24240,7 @@
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1787205477,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1787205564,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1787205648,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1787202886,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1787149797,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1786893589,
@@ -24218,16 +24252,37 @@
     "ts": 1785194148
   },
   "last_fill": {
-    "ts": 1787202159,
-    "side": "SELL",
-    "price": 0.9,
-    "shares": 98.61,
-    "title": "Dota 2: Iron Wing vs Team Spirit - Game 2 Winner",
-    "outcome": "Team Spirit"
+    "ts": 1787206159,
+    "side": "BUY",
+    "price": 0.74,
+    "shares": 54.01,
+    "title": "Will the next Claude Opus model debut at a score of at least",
+    "outcome": "No"
   },
-  "paper_maker": [],
+  "paper_maker": [
+    {
+      "paper_maker": true,
+      "sz": 54.01,
+      "mode": "maker",
+      "token": "112723767965869185895942815626384183986407770380746453514732149559544814740995",
+      "side": "BUY",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "title": "Will the next Claude Opus model debut at a score of at least 1515 by December 31, 2026?",
+      "outcome": "No",
+      "event": "next-claude-opus-model-text-arena-debut-20261231",
+      "cond": "0x7beae3f4f7efa6f70994228e4f1b434fbeb3cfcb7f776b18149625235a79089d",
+      "their_price": 0.7399999978129617,
+      "their_ts": 1787206151,
+      "price": 0.7399999978129617,
+      "is_add": false,
+      "stake": 39.973000000000006,
+      "ts": 1787206151.6519868,
+      "ttl_s": 60.0,
+      "ba_at_signal": 0.74
+    }
+  ],
   "maker_stats": {
-    "fills": 247,
+    "fills": 248,
     "misses": 137
   },
   "ignored_exits": [

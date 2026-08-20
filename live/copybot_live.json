@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 45.33,
+ "stake": 45.32,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 507.92,
- "deployed": 1758.52,
+ "cash": 467.64,
+ "deployed": 1798.49,
  "reserve": 0.0,
- "realized": 1266.41,
+ "realized": 1266.1,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 38,
- "fees_paid": 504.57,
+ "open_count": 39,
+ "fees_paid": 504.88,
  "fee_rate": 0.03,
  "lag": {
-  "n": 480,
-  "n24": 9,
+  "n": 481,
+  "n24": 10,
   "basis": "24h",
-  "avg_s": 7.7,
+  "avg_s": 8.0,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "112723767965869185895942815626384183986407770380746453514732149559544814740995",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the next Claude Opus model debut at a score of at least 1515 by December 31, 2026?",
+   "their_price": 0.74,
+   "my_price": 0.74,
+   "slippage_pct": 0.0,
+   "lag_s": 8.4,
+   "shares": 54.01,
+   "cost": 39.97,
+   "fee": 0.31,
+   "opened": 1787206151,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798675200
+  },
   {
    "token": "38877227975220117604096569727522382360278624025874939132118216928980730599237",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2102,26 +2122,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1787270400
-  },
-  {
-   "token": "41800024459753239846641136399457022409586964534205265889258791197815836336250",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Kiwoom DRX",
-   "title": "LoL: HANJIN BRION vs Kiwoom DRX - Game 1 Winner",
-   "their_price": 0.5899,
-   "my_price": 0.5899,
-   "slippage_pct": 0.0,
-   "lag_s": 7.6,
-   "shares": 91.6,
-   "cost": 54.04,
-   "fee": 0.66,
-   "opened": 1785842576,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -54.7,
-   "settled": 1785864809,
-   "end_ts": 1785801600
   }
  ],
  "missed": [
@@ -3077,23 +3077,23 @@
  ],
  "missed_pnl": 649.92,
  "last_fill": {
-  "ts": 1787202159,
-  "side": "SELL",
-  "price": 0.9,
-  "shares": 98.61,
-  "title": "Dota 2: Iron Wing vs Team Spirit - Game 2 Winner",
-  "outcome": "Team Spirit"
+  "ts": 1787206159,
+  "side": "BUY",
+  "price": 0.74,
+  "shares": 54.01,
+  "title": "Will the next Claude Opus model debut at a score of at least",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 665.82,
    "n": 117,
    "wins": 39,
-   "open_cost": 387.57,
-   "open_n": 10,
+   "open_cost": 427.54,
+   "open_n": 11,
    "miss_n": 173,
    "miss_pnl": 119061.3,
-   "last_ts": 1787188277
+   "last_ts": 1787206151
   },
   "gkmgkldfmg": {
    "realized": 959.72,
@@ -3186,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787206039
+ "updated": 1787206170
 }
