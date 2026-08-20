@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 45.36,
+ "stake": 46.22,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 419.44,
- "deployed": 1848.5,
+ "cash": 507.92,
+ "deployed": 1803.14,
  "reserve": 0.0,
- "realized": 1267.91,
+ "realized": 1311.03,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 40,
- "fees_paid": 504.3,
+ "open_count": 39,
+ "fees_paid": 504.57,
  "fee_rate": 0.03,
  "lag": {
   "n": 480,
@@ -51,26 +51,6 @@
  },
  "bets": [
   {
-   "token": "114608724211803790247601410442941743610721348507732935315986615193639570847839",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Iron Wing",
-   "title": "Dota 2: Iron Wing vs Team Spirit - Game 2 Winner",
-   "their_price": 0.54,
-   "my_price": 0.54,
-   "slippage_pct": 0.0,
-   "lag_s": 86.2,
-   "shares": 83.97,
-   "cost": 45.34,
-   "fee": 0.63,
-   "opened": 1787201305,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787184000
-  },
-  {
    "token": "87020051564319575554042563286075427965650360044535268316339026643785600306175",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "name": "gkmgkldfmg",
@@ -84,6 +64,28 @@
    "cost": 45.36,
    "fee": 0.73,
    "opened": 1787200118,
+   "status": "closed",
+   "exit_price": 0.8973,
+   "pnl": 42.39,
+   "settled": 1787202159,
+   "end_ts": 1787184000,
+   "sold_shares": 98.61,
+   "sold_proceeds": 88.48
+  },
+  {
+   "token": "114608724211803790247601410442941743610721348507732935315986615193639570847839",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Iron Wing",
+   "title": "Dota 2: Iron Wing vs Team Spirit - Game 2 Winner",
+   "their_price": 0.54,
+   "my_price": 0.54,
+   "slippage_pct": 0.0,
+   "lag_s": 86.2,
+   "shares": 83.97,
+   "cost": 45.34,
+   "fee": 0.63,
+   "opened": 1787201305,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -3075,12 +3077,12 @@
  ],
  "missed_pnl": 649.92,
  "last_fill": {
-  "ts": 1787201567,
+  "ts": 1787202159,
   "side": "SELL",
-  "price": 0.997,
-  "shares": 3.36,
-  "title": "Will SpaceX (SPCX) hit (LOW) $85 in August?",
-  "outcome": "No"
+  "price": 0.9,
+  "shares": 98.61,
+  "title": "Dota 2: Iron Wing vs Team Spirit - Game 2 Winner",
+  "outcome": "Team Spirit"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3094,14 +3096,14 @@
    "last_ts": 1787188277
   },
   "gkmgkldfmg": {
-   "realized": 962.86,
-   "n": 102,
+   "realized": 1005.25,
+   "n": 103,
    "wins": 1,
-   "open_cost": 135.32,
-   "open_n": 3,
+   "open_cost": 89.96,
+   "open_n": 2,
    "miss_n": 61,
    "miss_pnl": 224.22,
-   "last_ts": 1787201305
+   "last_ts": 1787202159
   },
   "1kto1m": {
    "realized": 272.77,
@@ -3184,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787201568
+ "updated": 1787202159
 }
