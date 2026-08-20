@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787232354,
+ "updated": 1787235888,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 665.82,
@@ -53,14 +53,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 71.25,
-   "n": 73,
+   "realized": 107.97,
+   "n": 74,
    "wins": 0,
-   "open_cost": 156.29,
-   "open_n": 3,
+   "open_cost": 104.19,
+   "open_n": 2,
    "miss_n": 16,
    "miss_pnl": -461.27,
-   "last_ts": 1787230683
+   "last_ts": 1787235888
   },
   "BikesAreTheBikes": {
    "realized": -28.56,
@@ -105,26 +105,6 @@
  },
  "bets": [
   {
-   "token": "39364828328752907965250202505574255161297573376487255077881533546082623532491",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "LGD Gaming",
-   "title": "LoL: LGD Gaming vs Bilibili Gaming - Game 2 Winner",
-   "their_price": 0.27,
-   "my_price": 0.27,
-   "slippage_pct": 0.0,
-   "lag_s": 6.4,
-   "shares": 192.91,
-   "cost": 52.09,
-   "fee": 1.1407,
-   "opened": 1787230683,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787184000
-  },
-  {
    "token": "45479294265953275829251104803432665144633402725523922948102636902170484590681",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "name": "AIcAIc",
@@ -138,6 +118,28 @@
    "cost": 52.1,
    "fee": 0.719,
    "opened": 1787230485,
+   "status": "closed",
+   "exit_price": 0.928,
+   "pnl": 36.72,
+   "settled": 1787235888,
+   "end_ts": 1787184000,
+   "sold_shares": 96.48,
+   "sold_proceeds": 89.53797456000001
+  },
+  {
+   "token": "39364828328752907965250202505574255161297573376487255077881533546082623532491",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "LGD Gaming",
+   "title": "LoL: LGD Gaming vs Bilibili Gaming - Game 2 Winner",
+   "their_price": 0.27,
+   "my_price": 0.27,
+   "slippage_pct": 0.0,
+   "lag_s": 6.4,
+   "shares": 192.91,
+   "cost": 52.09,
+   "fee": 1.1407,
+   "opened": 1787230683,
    "status": "open",
    "exit_price": null,
    "pnl": null,
