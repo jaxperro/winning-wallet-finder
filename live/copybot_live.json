@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 45.32,
+ "stake": 45.31,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 467.64,
- "deployed": 1798.49,
+ "cash": 421.88,
+ "deployed": 1843.81,
  "reserve": 0.0,
- "realized": 1266.1,
+ "realized": 1265.67,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 39,
- "fees_paid": 504.88,
+ "open_count": 40,
+ "fees_paid": 505.31,
  "fee_rate": 0.03,
  "lag": {
-  "n": 481,
-  "n24": 10,
+  "n": 482,
+  "n24": 11,
   "basis": "24h",
-  "avg_s": 8.0,
+  "avg_s": 7.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "62194497247731958880831733175162777903188137364561473475028477003266544281896",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "TEAM VISION",
+   "title": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
+   "their_price": 0.68,
+   "my_price": 0.68,
+   "slippage_pct": 0.0,
+   "lag_s": 7.8,
+   "shares": 66.65,
+   "cost": 45.32,
+   "fee": 0.44,
+   "opened": 1787206443,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787184000
+  },
   {
    "token": "112723767965869185895942815626384183986407770380746453514732149559544814740995",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2102,26 +2122,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1798675200
-  },
-  {
-   "token": "87623015856302842960010309762440982581803742318399419544646008856275103748218",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "Will the next Google Gemini Pro model be released by August 21, 2026?",
-   "their_price": 0.77,
-   "my_price": 0.77,
-   "slippage_pct": 0.0,
-   "lag_s": 1.1,
-   "shares": 34.58,
-   "cost": 26.63,
-   "fee": 0.18,
-   "opened": 1785865057,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787270400
   }
  ],
  "missed": [
@@ -3077,12 +3077,12 @@
  ],
  "missed_pnl": 649.92,
  "last_fill": {
-  "ts": 1787206159,
+  "ts": 1787206450,
   "side": "BUY",
-  "price": 0.74,
-  "shares": 54.01,
-  "title": "Will the next Claude Opus model debut at a score of at least",
-  "outcome": "No"
+  "price": 0.68,
+  "shares": 66.65,
+  "title": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
+  "outcome": "TEAM VISION"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3099,11 +3099,11 @@
    "realized": 959.72,
    "n": 104,
    "wins": 1,
-   "open_cost": 45.34,
-   "open_n": 1,
+   "open_cost": 90.66,
+   "open_n": 2,
    "miss_n": 61,
    "miss_pnl": 224.22,
-   "last_ts": 1787206035
+   "last_ts": 1787206443
   },
   "1kto1m": {
    "realized": 272.77,
@@ -3186,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787206170
+ "updated": 1787206451
 }

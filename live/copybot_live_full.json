@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787206170,
+ "updated": 1787206451,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 665.82,
@@ -16,11 +16,11 @@
    "realized": 959.72,
    "n": 104,
    "wins": 1,
-   "open_cost": 45.34,
-   "open_n": 1,
+   "open_cost": 90.66,
+   "open_n": 2,
    "miss_n": 61,
    "miss_pnl": 224.22,
-   "last_ts": 1787206035
+   "last_ts": 1787206443
   },
   "1kto1m": {
    "realized": 272.77,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "62194497247731958880831733175162777903188137364561473475028477003266544281896",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "TEAM VISION",
+   "title": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
+   "their_price": 0.68,
+   "my_price": 0.68,
+   "slippage_pct": 0.0,
+   "lag_s": 7.8,
+   "shares": 66.65,
+   "cost": 45.32,
+   "fee": 0.4351,
+   "opened": 1787206443,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787184000
+  },
   {
    "token": "112723767965869185895942815626384183986407770380746453514732149559544814740995",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
