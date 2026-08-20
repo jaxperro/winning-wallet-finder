@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 46.22,
+ "stake": 45.33,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 507.92,
- "deployed": 1803.14,
+ "deployed": 1758.52,
  "reserve": 0.0,
- "realized": 1311.03,
+ "realized": 1266.41,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 39,
+ "open_count": 38,
  "fees_paid": 504.57,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "38877227975220117604096569727522382360278624025874939132118216928980730599237",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Iron Wing",
+   "title": "Dota 2: Iron Wing vs Team Spirit - Game 1 Winner",
+   "their_price": 0.3198,
+   "my_price": 0.3198,
+   "slippage_pct": 0.0,
+   "lag_s": 7.7,
+   "shares": 139.54,
+   "cost": 44.62,
+   "fee": 0.91,
+   "opened": 1787196429,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -45.53,
+   "settled": 1787206035,
+   "end_ts": 1787184000
+  },
   {
    "token": "87020051564319575554042563286075427965650360044535268316339026643785600306175",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -113,26 +133,6 @@
    "end_ts": 1787184000,
    "sold_shares": 82.65,
    "sold_proceeds": 82.65
-  },
-  {
-   "token": "38877227975220117604096569727522382360278624025874939132118216928980730599237",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "Iron Wing",
-   "title": "Dota 2: Iron Wing vs Team Spirit - Game 1 Winner",
-   "their_price": 0.3198,
-   "my_price": 0.3198,
-   "slippage_pct": 0.0,
-   "lag_s": 7.7,
-   "shares": 139.54,
-   "cost": 44.62,
-   "fee": 0.91,
-   "opened": 1787196429,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787184000
   },
   {
    "token": "90338418666944438764085127620421265812213662875701465016789311322381914761342",
@@ -3096,14 +3096,14 @@
    "last_ts": 1787188277
   },
   "gkmgkldfmg": {
-   "realized": 1005.25,
-   "n": 103,
+   "realized": 959.72,
+   "n": 104,
    "wins": 1,
-   "open_cost": 89.96,
-   "open_n": 2,
+   "open_cost": 45.34,
+   "open_n": 1,
    "miss_n": 61,
    "miss_pnl": 224.22,
-   "last_ts": 1787202159
+   "last_ts": 1787206035
   },
   "1kto1m": {
    "realized": 272.77,
@@ -3186,5 +3186,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787202159
+ "updated": 1787206039
 }
