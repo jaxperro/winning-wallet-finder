@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 51.55,
+ "stake": 52.11,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 815.76,
- "deployed": 1761.96,
+ "cash": 890.27,
+ "deployed": 1715.15,
  "reserve": 0.0,
- "realized": 1577.69,
+ "realized": 1605.39,
  "adjustments": 0.03,
- "ledger_drift": -0.04,
- "open_count": 39,
- "fees_paid": 511.74,
+ "ledger_drift": -0.03,
+ "open_count": 38,
+ "fees_paid": 511.84,
  "fee_rate": 0.03,
  "lag": {
   "n": 492,
@@ -64,11 +64,13 @@
    "cost": 46.82,
    "fee": 0.56,
    "opened": 1787222359,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787184000
+   "status": "closed",
+   "exit_price": 0.955,
+   "pnl": 27.13,
+   "settled": 1787223586,
+   "end_ts": 1787184000,
+   "sold_shares": 78.03,
+   "sold_proceeds": 74.52
   },
   {
    "token": "101028650168194677069630427574598819381546668487248022828323675030946075448144",
@@ -3090,10 +3092,10 @@
  ],
  "missed_pnl": 532.08,
  "last_fill": {
-  "ts": 1787222465,
-  "side": "BUY",
-  "price": 0.6,
-  "shares": 78.03,
+  "ts": 1787223586,
+  "side": "SELL",
+  "price": 0.97,
+  "shares": 24.24,
   "title": "LoL: Nongshim Red Force vs Kiwoom DRX - Game 1 Winner",
   "outcome": "Nongshim Red Force"
  },
@@ -3149,14 +3151,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 44.12,
-   "n": 72,
+   "realized": 71.25,
+   "n": 73,
    "wins": 0,
-   "open_cost": 46.82,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 16,
    "miss_pnl": -461.27,
-   "last_ts": 1787222359
+   "last_ts": 1787223586
   },
   "BikesAreTheBikes": {
    "realized": -28.56,
@@ -3199,5 +3201,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787222491
+ "updated": 1787223586
 }
