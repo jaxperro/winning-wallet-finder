@@ -2128,21 +2128,6 @@
  ],
  "missed": [
   {
-   "ts": 1787209081,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "62194497247731958880831733175162777903188137364561473475028477003266544281896",
-   "cond": "0x8522d2d520ffd521fa613e4850cd5502f02542abfb86b1f16abeb14027ac122e",
-   "title": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
-   "outcome": "TEAM VISION",
-   "price": 0.5,
-   "stake": 44.07,
-   "reason": "price moved 0.45\u21920.50",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
-  },
-  {
    "ts": 1787207558,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "71421291892325785940137605055835008652821619249260058600017533583905082983644",
@@ -2152,6 +2137,22 @@
    "price": 0.52,
    "stake": 45.31,
    "reason": "price moved 0.42\u21920.52",
+   "status": "sold",
+   "pnl": 14.82,
+   "settled": 1787209099,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.7038
+  },
+  {
+   "ts": 1787209081,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "62194497247731958880831733175162777903188137364561473475028477003266544281896",
+   "cond": "0x8522d2d520ffd521fa613e4850cd5502f02542abfb86b1f16abeb14027ac122e",
+   "title": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
+   "outcome": "TEAM VISION",
+   "price": 0.5,
+   "stake": 44.07,
+   "reason": "price moved 0.45\u21920.50",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -3075,7 +3076,7 @@
    "exit_price": 0.648
   }
  ],
- "missed_pnl": 483.5,
+ "missed_pnl": 498.32,
  "last_fill": {
   "ts": 1787207773,
   "side": "SELL",
@@ -3102,7 +3103,7 @@
    "open_cost": 198.14,
    "open_n": 3,
    "miss_n": 64,
-   "miss_pnl": 220.65,
+   "miss_pnl": 235.47,
    "last_ts": 1787207547
   },
   "1kto1m": {
@@ -3186,5 +3187,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787209081
+ "updated": 1787209100
 }
