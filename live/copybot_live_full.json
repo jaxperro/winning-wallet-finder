@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787268984,
+ "updated": 1787269194,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 633.53,
@@ -36,11 +36,11 @@
    "realized": 193.28,
    "n": 18,
    "wins": 3,
-   "open_cost": 286.06,
-   "open_n": 3,
+   "open_cost": 335.18,
+   "open_n": 4,
    "miss_n": 31,
    "miss_pnl": 557.36,
-   "last_ts": 1787267194
+   "last_ts": 1787269122
   },
   "LSB1": {
    "realized": -397.16,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "115469797339119930636023249362643357352862616037224588149381107806681346042818",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Over",
+   "title": "Club Olimpia vs. CR Vasco da Gama: O/U 5.5",
+   "their_price": 0.2777,
+   "my_price": 0.2777,
+   "slippage_pct": 0.0,
+   "lag_s": 16.1,
+   "shares": 176.85,
+   "cost": 49.12,
+   "fee": 1.0643,
+   "opened": 1787269122,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787184000
+  },
   {
    "token": "73822848958833581920509853766928409035356407100619064692171326316721805299603",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
