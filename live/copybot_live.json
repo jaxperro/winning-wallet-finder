@@ -2134,6 +2134,22 @@
  ],
  "missed": [
   {
+   "ts": 1787098438,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "47458197341259015143098641932265680502344097076006678002917960090825629562672",
+   "cond": "0xa08b841005d89c4e8a0979a623e2f84157b5a580feab7dcfdb5cb05336205754",
+   "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
+   "outcome": "Over",
+   "price": 0.8,
+   "stake": 33.6,
+   "reason": "maker bid unfilled (81s)",
+   "status": "sold",
+   "pnl": 2.74,
+   "settled": 1787232353,
+   "name": "Kruto2027",
+   "exit_price": 0.8733
+  },
+  {
    "ts": 1786919141,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "45721052865119097566848143800071888794238385545995154690225698684042741195762",
@@ -2418,21 +2434,6 @@
    "settled": 1787100521,
    "name": "Kruto2027",
    "exit_price": 0.6153
-  },
-  {
-   "ts": 1787098438,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "47458197341259015143098641932265680502344097076006678002917960090825629562672",
-   "cond": "0xa08b841005d89c4e8a0979a623e2f84157b5a580feab7dcfdb5cb05336205754",
-   "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
-   "outcome": "Over",
-   "price": 0.8,
-   "stake": 33.6,
-   "reason": "maker bid unfilled (81s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
   },
   {
    "ts": 1787076749,
@@ -3084,7 +3085,7 @@
    "exit_price": 0.2309
   }
  ],
- "missed_pnl": 532.08,
+ "missed_pnl": 534.82,
  "last_fill": {
   "ts": 1787230689,
   "side": "BUY",
@@ -3131,7 +3132,7 @@
    "open_cost": 192.89,
    "open_n": 2,
    "miss_n": 30,
-   "miss_pnl": 550.68,
+   "miss_pnl": 553.42,
    "last_ts": 1787098389
   },
   "LSB1": {
@@ -3195,5 +3196,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787230758
+ "updated": 1787232354
 }
