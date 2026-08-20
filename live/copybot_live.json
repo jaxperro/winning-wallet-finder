@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 52.11,
+ "stake": 51.06,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 782.95,
- "deployed": 1822.31,
+ "deployed": 1770.21,
  "reserve": 0.0,
- "realized": 1605.23,
+ "realized": 1553.12,
  "adjustments": 0.03,
- "ledger_drift": -0.04,
- "open_count": 40,
+ "ledger_drift": -0.03,
+ "open_count": 39,
  "fees_paid": 515.0,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "73506233318229927468878341698770994841204479549506835790103593069285668909317",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Bilibili Gaming",
+   "title": "LoL: LGD Gaming vs Bilibili Gaming - Game 1 Winner",
+   "their_price": 0.74,
+   "my_price": 0.74,
+   "slippage_pct": 0.0,
+   "lag_s": 1.2,
+   "shares": 70.41,
+   "cost": 52.1,
+   "fee": 0.41,
+   "opened": 1787228340,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -52.51,
+   "settled": 1787245249,
+   "end_ts": 1787184000
+  },
   {
    "token": "73822848958833581920509853766928409035356407100619064692171326316721805299603",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -146,26 +166,6 @@
    "cost": 52.09,
    "fee": 1.14,
    "opened": 1787230683,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787184000
-  },
-  {
-   "token": "73506233318229927468878341698770994841204479549506835790103593069285668909317",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Bilibili Gaming",
-   "title": "LoL: LGD Gaming vs Bilibili Gaming - Game 1 Winner",
-   "their_price": 0.74,
-   "my_price": 0.74,
-   "slippage_pct": 0.0,
-   "lag_s": 1.2,
-   "shares": 70.41,
-   "cost": 52.1,
-   "fee": 0.41,
-   "opened": 1787228340,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -3144,14 +3144,14 @@
    "last_ts": 1783867043
   },
   "AIcAIc": {
-   "realized": 107.97,
-   "n": 74,
+   "realized": 55.46,
+   "n": 75,
    "wins": 0,
-   "open_cost": 104.19,
-   "open_n": 2,
+   "open_cost": 52.09,
+   "open_n": 1,
    "miss_n": 16,
    "miss_pnl": -461.27,
-   "last_ts": 1787235888
+   "last_ts": 1787245249
   },
   "BikesAreTheBikes": {
    "realized": -28.56,
@@ -3194,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787243527
+ "updated": 1787245254
 }
