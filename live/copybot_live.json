@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 44.63,
+ "stake": 44.62,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 511.91,
- "deployed": 1719.76,
+ "cash": 466.66,
+ "deployed": 1764.39,
  "reserve": 0.0,
- "realized": 1231.64,
+ "realized": 1231.02,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 37,
- "fees_paid": 501.41,
+ "open_count": 38,
+ "fees_paid": 502.03,
  "fee_rate": 0.03,
  "lag": {
-  "n": 476,
-  "n24": 5,
+  "n": 477,
+  "n24": 6,
   "basis": "24h",
-  "avg_s": 7.0,
+  "avg_s": 4.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "27649378234597852153151841034130544274461307584872293466437239296309390473827",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "Team Spirit",
+   "title": "Dota 2: Iron Wing vs Team Spirit - Game 1 Winner",
+   "their_price": 0.54,
+   "my_price": 0.54,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 82.65,
+   "cost": 44.63,
+   "fee": 0.62,
+   "opened": 1787194297,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787184000
+  },
   {
    "token": "90338418666944438764085127620421265812213662875701465016789311322381914761342",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2098,28 +2118,6 @@
    "pnl": -53.44,
    "settled": 1785849459,
    "end_ts": 1786406400
-  },
-  {
-   "token": "69546314151438248260496384444874667390117560523671723212893326463407321740824",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will Ukraine target Moscow by August 14, 2026?",
-   "their_price": 0.66,
-   "my_price": 0.66,
-   "slippage_pct": 0.0,
-   "lag_s": 0.6,
-   "shares": 21.77,
-   "cost": 14.37,
-   "fee": 0.15,
-   "opened": 1785809205,
-   "status": "closed",
-   "exit_price": 0.93,
-   "pnl": 5.73,
-   "settled": 1785809599,
-   "end_ts": 1786665600,
-   "sold_shares": 21.77,
-   "sold_proceeds": 20.25
   }
  ],
  "missed": [
@@ -3075,12 +3073,12 @@
  ],
  "missed_pnl": 515.5,
  "last_fill": {
-  "ts": 1787188277,
+  "ts": 1787194297,
   "side": "BUY",
-  "price": 0.92,
-  "shares": 48.51,
-  "title": "Tabi FDV above $500M one day after launch?",
-  "outcome": "No"
+  "price": 0.54,
+  "shares": 82.65,
+  "title": "Dota 2: Iron Wing vs Team Spirit - Game 1 Winner",
+  "outcome": "Team Spirit"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3097,11 +3095,11 @@
    "realized": 925.46,
    "n": 101,
    "wins": 1,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 44.63,
+   "open_n": 1,
    "miss_n": 60,
    "miss_pnl": 214.56,
-   "last_ts": 1786865524
+   "last_ts": 1787194297
   },
   "1kto1m": {
    "realized": 272.77,
@@ -3184,5 +3182,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787188285
+ "updated": 1787194305
 }
