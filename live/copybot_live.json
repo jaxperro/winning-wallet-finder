@@ -2140,6 +2140,22 @@
  ],
  "missed": [
   {
+   "ts": 1786919141,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "45721052865119097566848143800071888794238385545995154690225698684042741195762",
+   "cond": "0x98f697522bc593ef81848fad75c0a2d2c4a983cef8806d0a6951963a779c149f",
+   "title": "Dota 2: Nigma Galaxy vs Team Falcons - Game 2 Winner",
+   "outcome": "Team Falcons",
+   "price": 0.4,
+   "stake": 48.65,
+   "reason": "price moved 0.34\u21920.40",
+   "status": "sold",
+   "pnl": 23.93,
+   "settled": 1787221730,
+   "name": "Kruto2027",
+   "exit_price": 0.6111
+  },
+  {
    "ts": 1787218418,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "31089692692586793539566581246875814001305191359109661005057006532624340735726",
@@ -2710,21 +2726,6 @@
    "name": "Kruto2027"
   },
   {
-   "ts": 1786919141,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "45721052865119097566848143800071888794238385545995154690225698684042741195762",
-   "cond": "0x98f697522bc593ef81848fad75c0a2d2c4a983cef8806d0a6951963a779c149f",
-   "title": "Dota 2: Nigma Galaxy vs Team Falcons - Game 2 Winner",
-   "outcome": "Team Falcons",
-   "price": 0.4,
-   "stake": 48.65,
-   "reason": "price moved 0.34\u21920.40",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
-  },
-  {
    "ts": 1786839862,
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
    "token": "30449715275070329841463755741003956765558025474675374209757522591111760096991",
@@ -3089,7 +3090,7 @@
    "exit_price": 0.2309
   }
  ],
- "missed_pnl": 508.15,
+ "missed_pnl": 532.08,
  "last_fill": {
   "ts": 1787219458,
   "side": "SELL",
@@ -3136,7 +3137,7 @@
    "open_cost": 192.89,
    "open_n": 2,
    "miss_n": 30,
-   "miss_pnl": 526.75,
+   "miss_pnl": 550.68,
    "last_ts": 1787098389
   },
   "LSB1": {
@@ -3200,5 +3201,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787219624
+ "updated": 1787221732
 }
