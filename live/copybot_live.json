@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 821.26,
- "deployed": 1819.34,
+ "cash": 768.27,
+ "deployed": 1872.14,
  "reserve": 0.0,
- "realized": 1640.56,
+ "realized": 1640.38,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 40,
- "fees_paid": 514.29,
+ "ledger_drift": -0.04,
+ "open_count": 41,
+ "fees_paid": 514.48,
  "fee_rate": 0.03,
  "lag": {
-  "n": 495,
-  "n24": 21,
+  "n": 496,
+  "n24": 22,
   "basis": "24h",
-  "avg_s": 7.7,
+  "avg_s": 7.5,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "73085022833974813207456231975877069513702872029369488972326289382731035966212",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Ethereum be above $2,300 on August 20?",
+   "their_price": 0.8843,
+   "my_price": 0.8843,
+   "slippage_pct": 0.0,
+   "lag_s": 0.8,
+   "shares": 59.71,
+   "cost": 52.8,
+   "fee": 0.18,
+   "opened": 1787237519,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787184000
+  },
   {
    "token": "45479294265953275829251104803432665144633402725523922948102636902170484590681",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2110,28 +2130,6 @@
    "pnl": 3.56,
    "settled": 1786134042,
    "end_ts": 1786060800
-  },
-  {
-   "token": "23419569171744003081075633749696226931585310684198313465939745712314121846204",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will SpaceX (SPCX) hit (LOW) $85 in August?",
-   "their_price": 0.85,
-   "my_price": 0.85,
-   "slippage_pct": 0.0,
-   "lag_s": 7.6,
-   "shares": 19.26,
-   "cost": 16.37,
-   "fee": 0.07,
-   "opened": 1786109668,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788220800,
-   "sold_shares": 7.74,
-   "sold_proceeds": 7.72
   }
  ],
  "missed": [
@@ -3087,23 +3085,23 @@
  ],
  "missed_pnl": 520.35,
  "last_fill": {
-  "ts": 1787235888,
-  "side": "SELL",
-  "price": 0.93,
-  "shares": 96.48,
-  "title": "LoL: LGD Gaming vs Bilibili Gaming (BO3) - LPL Group Ascend",
-  "outcome": "Bilibili Gaming"
+  "ts": 1787237519,
+  "side": "BUY",
+  "price": 0.8843,
+  "shares": 59.71,
+  "title": "Will the price of Ethereum be above $2,300 on August 20?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 665.82,
    "n": 117,
    "wins": 39,
-   "open_cost": 427.54,
-   "open_n": 11,
+   "open_cost": 480.34,
+   "open_n": 12,
    "miss_n": 174,
    "miss_pnl": 119061.3,
-   "last_ts": 1787206151
+   "last_ts": 1787237519
   },
   "gkmgkldfmg": {
    "realized": 1211.69,
@@ -3196,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787237322
+ "updated": 1787237529
 }
