@@ -2126,6 +2126,21 @@
  ],
  "missed": [
   {
+   "ts": 1787206862,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "71421291892325785940137605055835008652821619249260058600017533583905082983644",
+   "cond": "0x8522d2d520ffd521fa613e4850cd5502f02542abfb86b1f16abeb14027ac122e",
+   "title": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
+   "outcome": "BoomBoys",
+   "price": 0.28,
+   "stake": 45.31,
+   "reason": "price moved 0.23\u21920.28",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1787195735,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "27649378234597852153151841034130544274461307584872293466437239296309390473827",
@@ -3057,25 +3072,9 @@
    "settled": 1786550739,
    "name": "0xbadaf319",
    "exit_price": 0.1009
-  },
-  {
-   "ts": 1785416641,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "97404502201244152966308197548411815397482847053527035814522627546697214883681",
-   "cond": "0xe8da89e5a6daede04f1fc3ce3f3957370b50552e176dc27c2a37c4d60bf76134",
-   "title": "Tread FDV above $80M one day after launch",
-   "outcome": "Yes",
-   "price": 0.34,
-   "stake": 55.01,
-   "reason": "thin book ($6 within 5c < $50)",
-   "status": "sold",
-   "pnl": -5.94,
-   "settled": 1786550739,
-   "name": "0xbadaf319",
-   "exit_price": 0.3165
   }
  ],
- "missed_pnl": 649.92,
+ "missed_pnl": 528.86,
  "last_fill": {
   "ts": 1787206450,
   "side": "BUY",
@@ -3101,7 +3100,7 @@
    "wins": 1,
    "open_cost": 90.66,
    "open_n": 2,
-   "miss_n": 61,
+   "miss_n": 62,
    "miss_pnl": 224.22,
    "last_ts": 1787206443
   },
@@ -3186,5 +3185,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787206451
+ "updated": 1787206862
 }
