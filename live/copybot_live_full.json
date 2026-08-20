@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1787240980,
+ "updated": 1787242849,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 665.82,
-   "n": 117,
+   "realized": 612.84,
+   "n": 118,
    "wins": 39,
-   "open_cost": 480.34,
-   "open_n": 12,
+   "open_cost": 427.54,
+   "open_n": 11,
    "miss_n": 174,
    "miss_pnl": 119061.3,
-   "last_ts": 1787237519
+   "last_ts": 1787242845
   },
   "gkmgkldfmg": {
    "realized": 1211.69,
@@ -105,6 +105,26 @@
  },
  "bets": [
   {
+   "token": "73085022833974813207456231975877069513702872029369488972326289382731035966212",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Ethereum be above $2,300 on August 20?",
+   "their_price": 0.8843,
+   "my_price": 0.8843,
+   "slippage_pct": 0.0,
+   "lag_s": 0.8,
+   "shares": 59.71,
+   "cost": 52.8,
+   "fee": 0.1832,
+   "opened": 1787237519,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -52.98,
+   "settled": 1787242845,
+   "end_ts": 1787184000
+  },
+  {
    "token": "85709159339406242929586181240357049263592801236869553990275650434161069184369",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
    "name": "JuiceFarm",
@@ -122,26 +142,6 @@
    "exit_price": 1.0,
    "pnl": 17.77,
    "settled": 1787240975,
-   "end_ts": 1787184000
-  },
-  {
-   "token": "73085022833974813207456231975877069513702872029369488972326289382731035966212",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Ethereum be above $2,300 on August 20?",
-   "their_price": 0.8843,
-   "my_price": 0.8843,
-   "slippage_pct": 0.0,
-   "lag_s": 0.8,
-   "shares": 59.71,
-   "cost": 52.8,
-   "fee": 0.1832,
-   "opened": 1787237519,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
    "end_ts": 1787184000
   },
   {
