@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 52.12,
+ "stake": 52.11,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 835.58,
- "deployed": 1770.2,
+ "cash": 782.95,
+ "deployed": 1822.31,
  "reserve": 0.0,
- "realized": 1605.75,
+ "realized": 1605.23,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 39,
- "fees_paid": 514.48,
+ "open_count": 40,
+ "fees_paid": 515.0,
  "fee_rate": 0.03,
  "lag": {
-  "n": 496,
-  "n24": 22,
+  "n": 497,
+  "n24": 23,
   "basis": "24h",
-  "avg_s": 7.5,
+  "avg_s": 7.7,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "73822848958833581920509853766928409035356407100619064692171326316721805299603",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "NATO x Russia military clash by August 31, 2026?",
+   "their_price": 0.6661,
+   "my_price": 0.6661,
+   "slippage_pct": 0.0,
+   "lag_s": 60.6,
+   "shares": 78.23,
+   "cost": 52.11,
+   "fee": 0.52,
+   "opened": 1787243444,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "73085022833974813207456231975877069513702872029369488972326289382731035966212",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2110,26 +2130,6 @@
    "pnl": 2.56,
    "settled": 1786134084,
    "end_ts": 1786060800
-  },
-  {
-   "token": "35806246373913666691919011026597618487771516182291701095229500844593341879004",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will S&P 500 (SPY) hit (LOW) $735 Week of August 3 2026?",
-   "their_price": 0.9,
-   "my_price": 0.9,
-   "slippage_pct": 0.0,
-   "lag_s": 0.2,
-   "shares": 36.55,
-   "cost": 32.89,
-   "fee": 0.1,
-   "opened": 1785882857,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 3.56,
-   "settled": 1786134042,
-   "end_ts": 1786060800
   }
  ],
  "missed": [
@@ -3085,11 +3085,11 @@
  ],
  "missed_pnl": 483.16,
  "last_fill": {
-  "ts": 1787237519,
+  "ts": 1787243504,
   "side": "BUY",
-  "price": 0.8843,
-  "shares": 59.71,
-  "title": "Will the price of Ethereum be above $2,300 on August 20?",
+  "price": 0.6661,
+  "shares": 78.23,
+  "title": "NATO x Russia military clash by August 31, 2026?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3097,11 +3097,11 @@
    "realized": 612.84,
    "n": 118,
    "wins": 39,
-   "open_cost": 427.54,
-   "open_n": 11,
+   "open_cost": 479.65,
+   "open_n": 12,
    "miss_n": 175,
    "miss_pnl": 119061.3,
-   "last_ts": 1787242845
+   "last_ts": 1787243444
   },
   "gkmgkldfmg": {
    "realized": 1211.69,
@@ -3194,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787243036
+ "updated": 1787243527
 }

@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1787243036,
+ "updated": 1787243527,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 612.84,
    "n": 118,
    "wins": 39,
-   "open_cost": 427.54,
-   "open_n": 11,
+   "open_cost": 479.65,
+   "open_n": 12,
    "miss_n": 175,
    "miss_pnl": 119061.3,
-   "last_ts": 1787242845
+   "last_ts": 1787243444
   },
   "gkmgkldfmg": {
    "realized": 1211.69,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "73822848958833581920509853766928409035356407100619064692171326316721805299603",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "NATO x Russia military clash by August 31, 2026?",
+   "their_price": 0.6661,
+   "my_price": 0.6661,
+   "slippage_pct": 0.0,
+   "lag_s": 60.6,
+   "shares": 78.23,
+   "cost": 52.11,
+   "fee": 0.522,
+   "opened": 1787243444,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "73085022833974813207456231975877069513702872029369488972326289382731035966212",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
