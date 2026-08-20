@@ -1,22 +1,22 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 45.31,
+ "stake": 44.04,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 421.88,
- "deployed": 1843.81,
+ "cash": 312.67,
+ "deployed": 1889.13,
  "reserve": 0.0,
- "realized": 1265.67,
+ "realized": 1201.77,
  "adjustments": 0.03,
- "ledger_drift": -0.04,
- "open_count": 40,
- "fees_paid": 505.31,
+ "ledger_drift": -0.05,
+ "open_count": 41,
+ "fees_paid": 507.04,
  "fee_rate": 0.03,
  "lag": {
-  "n": 482,
-  "n24": 11,
+  "n": 485,
+  "n24": 14,
   "basis": "24h",
   "avg_s": 7.8,
   "avg_slip_pct": 0.0,
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "71421291892325785940137605055835008652821619249260058600017533583905082983644",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "BoomBoys",
+   "title": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
+   "their_price": 0.41,
+   "my_price": 0.4583,
+   "slippage_pct": 0.0,
+   "lag_s": 11.1,
+   "shares": 234.53,
+   "cost": 107.48,
+   "fee": 1.73,
+   "opened": 1787207547,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787184000
+  },
   {
    "token": "62194497247731958880831733175162777903188137364561473475028477003266544281896",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -2102,29 +2122,24 @@
    "pnl": -52.57,
    "settled": 1785878523,
    "end_ts": 1785456000
-  },
-  {
-   "token": "30084046110340630915815124176402512146373063505864644025251039436415886255442",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "Iran charges Hormuz fees by December 31?",
-   "their_price": 0.61,
-   "my_price": 0.61,
-   "slippage_pct": 0.0,
-   "lag_s": 8.5,
-   "shares": 50.96,
-   "cost": 31.09,
-   "fee": 0.36,
-   "opened": 1785872577,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1798675200
   }
  ],
  "missed": [
+  {
+   "ts": 1787207558,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "71421291892325785940137605055835008652821619249260058600017533583905082983644",
+   "cond": "0x8522d2d520ffd521fa613e4850cd5502f02542abfb86b1f16abeb14027ac122e",
+   "title": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
+   "outcome": "BoomBoys",
+   "price": 0.52,
+   "stake": 45.31,
+   "reason": "price moved 0.42\u21920.52",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
   {
    "ts": 1787206862,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -3057,32 +3072,16 @@
    "settled": 1786550739,
    "name": "0xbadaf319",
    "exit_price": 0.7052
-  },
-  {
-   "ts": 1785373146,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "35250490631162852068665560333425207330394186153713200652716697624945520016963",
-   "cond": "0xece0409ad250895990f9022209e9ae9b544283bbd4bdb76982c9a21e1587e76c",
-   "title": "Will Gold (XAUUSD) hit (LOW) $3,700 in August?",
-   "outcome": "Yes",
-   "price": 0.06,
-   "stake": 66.79,
-   "reason": "thin book ($15 within 5c < $50)",
-   "status": "sold",
-   "pnl": 40.61,
-   "settled": 1786550739,
-   "name": "0xbadaf319",
-   "exit_price": 0.1009
   }
  ],
- "missed_pnl": 525.29,
+ "missed_pnl": 516.5,
  "last_fill": {
-  "ts": 1787206450,
+  "ts": 1787207558,
   "side": "BUY",
-  "price": 0.68,
-  "shares": 66.65,
+  "price": 0.5162,
+  "shares": 87.78,
   "title": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
-  "outcome": "TEAM VISION"
+  "outcome": "BoomBoys"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3099,11 +3098,11 @@
    "realized": 959.72,
    "n": 104,
    "wins": 1,
-   "open_cost": 90.66,
-   "open_n": 2,
-   "miss_n": 62,
+   "open_cost": 198.14,
+   "open_n": 3,
+   "miss_n": 63,
    "miss_pnl": 220.65,
-   "last_ts": 1787206443
+   "last_ts": 1787207547
   },
   "1kto1m": {
    "realized": 272.77,
@@ -3186,5 +3185,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787207016
+ "updated": 1787207566
 }
