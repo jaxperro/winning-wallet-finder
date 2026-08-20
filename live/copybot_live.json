@@ -2134,6 +2134,21 @@
  ],
  "missed": [
   {
+   "ts": 1787239108,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "73822848958833581920509853766928409035356407100619064692171326316721805299603",
+   "cond": "0xcd6c66b11ed8fdbdc1183fb761cf22959c6b481e843a715a7a9f53e22b90d420",
+   "title": "NATO x Russia military clash by August 31, 2026?",
+   "outcome": "No",
+   "price": 0.554,
+   "stake": 52.81,
+   "reason": "thin book ($9 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1787237315,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "73822848958833581920509853766928409035356407100619064692171326316721805299603",
@@ -3066,25 +3081,9 @@
    "settled": 1786554793,
    "name": "Kruto2027",
    "exit_price": 0.3313
-  },
-  {
-   "ts": 1786540763,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "115534871393944226831319356978723418599549011716127351050996618780320247898492",
-   "cond": "0x562a66dd8c0ec620142e7de751bf0c30b9fb5120f65342f6cfa00eb7a8830985",
-   "title": "SSVg Velbert vs. Borussia Monchengladbach: O/U 3.5",
-   "outcome": "Over",
-   "price": 0.26,
-   "stake": 47.2,
-   "reason": "thin book ($13 within 5c < $50)",
-   "status": "sold",
-   "pnl": 85.38,
-   "settled": 1786550744,
-   "name": "Kruto2027",
-   "exit_price": 0.7418
   }
  ],
- "missed_pnl": 509.42,
+ "missed_pnl": 478.72,
  "last_fill": {
   "ts": 1787237519,
   "side": "BUY",
@@ -3160,7 +3159,7 @@
    "wins": 7,
    "open_cost": 1256.78,
    "open_n": 23,
-   "miss_n": 63,
+   "miss_n": 64,
    "miss_pnl": -1015.23,
    "last_ts": 1787147524
   },
@@ -3195,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787238771
+ "updated": 1787239109
 }
