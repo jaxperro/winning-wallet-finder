@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787228254,
+ "updated": 1787228350,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 665.82,
@@ -56,11 +56,11 @@
    "realized": 71.25,
    "n": 73,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 52.1,
+   "open_n": 1,
    "miss_n": 16,
    "miss_pnl": -461.27,
-   "last_ts": 1787223586
+   "last_ts": 1787228340
   },
   "BikesAreTheBikes": {
    "realized": -28.56,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "73506233318229927468878341698770994841204479549506835790103593069285668909317",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Bilibili Gaming",
+   "title": "LoL: LGD Gaming vs Bilibili Gaming - Game 1 Winner",
+   "their_price": 0.74,
+   "my_price": 0.74,
+   "slippage_pct": 0.0,
+   "lag_s": 1.2,
+   "shares": 70.41,
+   "cost": 52.1,
+   "fee": 0.4064,
+   "opened": 1787228340,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787184000
+  },
   {
    "token": "54734159938522440875373555094880852577714961649118532033336632297242458039802",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",

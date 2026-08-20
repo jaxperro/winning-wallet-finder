@@ -1,22 +1,22 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 52.11,
+ "stake": 52.1,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 890.27,
- "deployed": 1715.15,
+ "cash": 837.77,
+ "deployed": 1767.25,
  "reserve": 0.0,
- "realized": 1605.39,
+ "realized": 1604.98,
  "adjustments": 0.03,
- "ledger_drift": -0.03,
- "open_count": 38,
- "fees_paid": 511.84,
+ "ledger_drift": -0.04,
+ "open_count": 39,
+ "fees_paid": 512.24,
  "fee_rate": 0.03,
  "lag": {
-  "n": 492,
-  "n24": 19,
+  "n": 493,
+  "n24": 20,
   "basis": "24h",
   "avg_s": 7.8,
   "avg_slip_pct": 0.0,
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "73506233318229927468878341698770994841204479549506835790103593069285668909317",
+   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
+   "name": "AIcAIc",
+   "outcome": "Bilibili Gaming",
+   "title": "LoL: LGD Gaming vs Bilibili Gaming - Game 1 Winner",
+   "their_price": 0.74,
+   "my_price": 0.74,
+   "slippage_pct": 0.0,
+   "lag_s": 1.2,
+   "shares": 70.41,
+   "cost": 52.1,
+   "fee": 0.41,
+   "opened": 1787228340,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787184000
+  },
   {
    "token": "54734159938522440875373555094880852577714961649118532033336632297242458039802",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2114,28 +2134,6 @@
    "sold_shares": 135.4,
    "sold_proceeds": 117.65,
    "end_ts": 1788134400
-  },
-  {
-   "token": "24078451613163097416410370805562772205827071462344242816835897193771116630414",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will Cleitinho Azevedo win the 2026 Minas Gerais gubernatorial election?",
-   "their_price": 0.87,
-   "my_price": 0.87,
-   "slippage_pct": 0.0,
-   "lag_s": 63.3,
-   "shares": 55.52,
-   "cost": 48.3,
-   "fee": 0.19,
-   "opened": 1786014800,
-   "status": "closed",
-   "exit_price": 0.9332,
-   "pnl": 3.32,
-   "settled": 1786015215,
-   "end_ts": 1791072000,
-   "sold_shares": 55.52,
-   "sold_proceeds": 51.81
   }
  ],
  "missed": [
@@ -3092,12 +3090,12 @@
  ],
  "missed_pnl": 532.08,
  "last_fill": {
-  "ts": 1787223586,
-  "side": "SELL",
-  "price": 0.97,
-  "shares": 24.24,
-  "title": "LoL: Nongshim Red Force vs Kiwoom DRX - Game 1 Winner",
-  "outcome": "Nongshim Red Force"
+  "ts": 1787228341,
+  "side": "BUY",
+  "price": 0.74,
+  "shares": 70.41,
+  "title": "LoL: LGD Gaming vs Bilibili Gaming - Game 1 Winner",
+  "outcome": "Bilibili Gaming"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3154,11 +3152,11 @@
    "realized": 71.25,
    "n": 73,
    "wins": 0,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 52.1,
+   "open_n": 1,
    "miss_n": 16,
    "miss_pnl": -461.27,
-   "last_ts": 1787223586
+   "last_ts": 1787228340
   },
   "BikesAreTheBikes": {
    "realized": -28.56,
@@ -3201,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787228254
+ "updated": 1787228350
 }
