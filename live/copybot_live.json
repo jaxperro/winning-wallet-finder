@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 50.02,
+ "stake": 48.7,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 782.95,
- "deployed": 1718.12,
+ "cash": 688.57,
+ "deployed": 1746.28,
  "reserve": 0.0,
- "realized": 1501.04,
+ "realized": 1434.82,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 38,
- "fees_paid": 515.0,
+ "open_count": 39,
+ "fees_paid": 516.2,
  "fee_rate": 0.03,
  "lag": {
-  "n": 497,
-  "n24": 23,
+  "n": 502,
+  "n24": 28,
   "basis": "24h",
-  "avg_s": 7.7,
+  "avg_s": 8.1,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "54062736632224096048711045820692609726051068227413916519205920544933036174584",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Over",
+   "title": "SC St. T\u00f6nis 11/20 vs. Eintracht Frankfurt: O/U 4.5",
+   "their_price": 0.5691,
+   "my_price": 0.57,
+   "slippage_pct": 0.0,
+   "lag_s": 95.9,
+   "shares": 163.46,
+   "cost": 93.17,
+   "fee": 1.2,
+   "opened": 1787267194,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787270400
+  },
   {
    "token": "39364828328752907965250202505574255161297573376487255077881533546082623532491",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
@@ -2110,29 +2130,24 @@
    "end_ts": 1786665600,
    "sold_shares": 64.11,
    "sold_proceeds": 57.53
-  },
-  {
-   "token": "106115320143789078209815024545651655998344368776988969384790307418401251093243",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Palantir Technologies Inc. (PLTR) hit (LOW) $105 Week of August 3 2026?",
-   "their_price": 0.95,
-   "my_price": 0.95,
-   "slippage_pct": 0.0,
-   "lag_s": 0.1,
-   "shares": 52.63,
-   "cost": 50.0,
-   "fee": 0.07,
-   "opened": 1785838016,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 2.56,
-   "settled": 1786134084,
-   "end_ts": 1786060800
   }
  ],
  "missed": [
+  {
+   "ts": 1787267280,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "47816857872318085387950262352462603964292019956549789945667608301303941772576",
+   "cond": "0x340c7081f270c820a6f8d67ff5efe99f63eb00a652afd23009964b111483f71d",
+   "title": "SC St. T\u00f6nis 11/20 vs. Eintracht Frankfurt: O/U 5.5",
+   "outcome": "Over",
+   "price": 0.44,
+   "stake": 50.02,
+   "reason": "thin book ($34 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1787125426,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -3066,32 +3081,16 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1786317765,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "50581924507864317513377511571246156361777403028710345226389789090830213052286",
-   "cond": "0xa81a7633a52bb2f358ba6cb1fc584f02235dc8f97d376b4086ee529d5e826ff2",
-   "title": "Will Kai and Speed beat the Minecraft challenge by August 14?",
-   "outcome": "No",
-   "price": 0.787,
-   "stake": 48.34,
-   "reason": "maker bid unfilled (60s)",
-   "status": "lost",
-   "pnl": -48.65,
-   "settled": 1786580177,
-   "name": "BikesAreTheBikes",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 476.8,
+ "missed_pnl": 437.8,
  "last_fill": {
-  "ts": 1787243504,
+  "ts": 1787267309,
   "side": "BUY",
-  "price": 0.6661,
-  "shares": 78.23,
-  "title": "NATO x Russia military clash by August 31, 2026?",
-  "outcome": "No"
+  "price": 0.5691,
+  "shares": 8.83,
+  "title": "SC St. T\u00f6nis 11/20 vs. Eintracht Frankfurt: O/U 4.5",
+  "outcome": "Over"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3128,11 +3127,11 @@
    "realized": 193.28,
    "n": 18,
    "wins": 3,
-   "open_cost": 192.89,
-   "open_n": 2,
-   "miss_n": 30,
+   "open_cost": 286.06,
+   "open_n": 3,
+   "miss_n": 31,
    "miss_pnl": 557.36,
-   "last_ts": 1787098389
+   "last_ts": 1787267194
   },
   "LSB1": {
    "realized": -397.16,
@@ -3195,5 +3194,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787253963
+ "updated": 1787267309
 }
