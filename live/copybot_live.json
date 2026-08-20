@@ -2134,6 +2134,21 @@
  ],
  "missed": [
   {
+   "ts": 1787215802,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "27354896597223409165559968504003473369093209044390088254665799880609984040033",
+   "cond": "0xcba56f70fc12999f5e49d8603991d1de33480cf4d7ae101eb06a7ca2d5727ec3",
+   "title": "Dota 2: TEAM VISION vs BoomBoys - Game 2 Winner",
+   "outcome": "BoomBoys",
+   "price": 0.99,
+   "stake": 44.17,
+   "reason": "price moved 0.86\u21920.99",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1787213143,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "37186738933528774563460320081580330227044877863117462914185065397383203149322",
@@ -3065,25 +3080,9 @@
    "settled": 1786550742,
    "name": "0xbadaf319",
    "exit_price": 0.8239
-  },
-  {
-   "ts": 1785577039,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "1326211055864075133719974649484864249770259286643912456278981364786578715890",
-   "cond": "0x487a2c7f3e43fdb74fe584b3ec3596cef5f26f37fd8eed1370256dbcb45898b8",
-   "title": "Mohammed Ghalibaf out as Speaker of Iran Parliament by September 30, 2026?",
-   "outcome": "No",
-   "price": 0.4,
-   "stake": 17.86,
-   "reason": "maker bid unfilled (98s)",
-   "status": "sold",
-   "pnl": 17.51,
-   "settled": 1786550741,
-   "name": "0xbadaf319",
-   "exit_price": 0.8041
   }
  ],
- "missed_pnl": 549.45,
+ "missed_pnl": 492.36,
  "last_fill": {
   "ts": 1787214775,
   "side": "SELL",
@@ -3109,7 +3108,7 @@
    "wins": 1,
    "open_cost": 151.31,
    "open_n": 2,
-   "miss_n": 65,
+   "miss_n": 66,
    "miss_pnl": 294.22,
    "last_ts": 1787213742
   },
@@ -3194,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787215375
+ "updated": 1787215802
 }
