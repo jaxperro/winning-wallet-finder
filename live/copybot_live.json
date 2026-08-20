@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 51.19,
+ "stake": 50.28,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 694.31,
- "deployed": 1864.97,
+ "deployed": 1819.66,
  "reserve": 0.0,
- "realized": 1559.26,
+ "realized": 1513.94,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 41,
+ "open_count": 40,
  "fees_paid": 511.1,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "71421291892325785940137605055835008652821619249260058600017533583905082983644",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "BoomBoys",
+   "title": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
+   "their_price": 0.41,
+   "my_price": 0.4583,
+   "slippage_pct": 0.0,
+   "lag_s": 11.1,
+   "shares": 234.53,
+   "cost": 107.48,
+   "fee": 1.73,
+   "opened": 1787207547,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -109.21,
+   "settled": 1787218642,
+   "end_ts": 1787184000
+  },
   {
    "token": "101028650168194677069630427574598819381546668487248022828323675030946075448144",
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
@@ -197,26 +217,6 @@
    "end_ts": 1787184000,
    "sold_shares": 66.65,
    "sold_proceeds": 65.28
-  },
-  {
-   "token": "71421291892325785940137605055835008652821619249260058600017533583905082983644",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "BoomBoys",
-   "title": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
-   "their_price": 0.41,
-   "my_price": 0.4583,
-   "slippage_pct": 0.0,
-   "lag_s": 11.1,
-   "shares": 234.53,
-   "cost": 107.48,
-   "fee": 1.73,
-   "opened": 1787207547,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787184000
   },
   {
    "token": "112723767965869185895942815626384183986407770380746453514732149559544814740995",
@@ -3105,14 +3105,14 @@
    "last_ts": 1787206151
   },
   "gkmgkldfmg": {
-   "realized": 1339.56,
-   "n": 108,
+   "realized": 1230.35,
+   "n": 109,
    "wins": 1,
-   "open_cost": 211.99,
-   "open_n": 2,
+   "open_cost": 104.51,
+   "open_n": 1,
    "miss_n": 67,
    "miss_pnl": 291.03,
-   "last_ts": 1787217788
+   "last_ts": 1787218642
   },
   "1kto1m": {
    "realized": 272.77,
@@ -3195,5 +3195,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787218427
+ "updated": 1787218647
 }
