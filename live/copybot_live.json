@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 44.17,
+ "stake": 52.06,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 372.26,
- "deployed": 1836.47,
+ "cash": 810.56,
+ "deployed": 1792.64,
  "reserve": 0.0,
- "realized": 1208.7,
+ "realized": 1603.17,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 40,
+ "open_count": 39,
  "fees_paid": 509.19,
  "fee_rate": 0.03,
  "lag": {
@@ -51,6 +51,28 @@
  },
  "bets": [
   {
+   "token": "27354896597223409165559968504003473369093209044390088254665799880609984040033",
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "name": "gkmgkldfmg",
+   "outcome": "BoomBoys",
+   "title": "Dota 2: TEAM VISION vs BoomBoys - Game 2 Winner",
+   "their_price": 0.1,
+   "my_price": 0.1,
+   "slippage_pct": 0.0,
+   "lag_s": 21.2,
+   "shares": 438.3,
+   "cost": 43.83,
+   "fee": 1.18,
+   "opened": 1787213742,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 393.29,
+   "settled": 1787215931,
+   "end_ts": 1787184000,
+   "sold_shares": 438.3,
+   "sold_proceeds": 438.3
+  },
+  {
    "token": "13391623520383253791338345386778554933792651754216976350311772905161387592460",
    "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
    "name": "AIcAIc",
@@ -71,26 +93,6 @@
    "end_ts": 1787184000,
    "sold_shares": 63.48,
    "sold_proceeds": 62.83
-  },
-  {
-   "token": "27354896597223409165559968504003473369093209044390088254665799880609984040033",
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "name": "gkmgkldfmg",
-   "outcome": "BoomBoys",
-   "title": "Dota 2: TEAM VISION vs BoomBoys - Game 2 Winner",
-   "their_price": 0.1,
-   "my_price": 0.1,
-   "slippage_pct": 0.0,
-   "lag_s": 21.2,
-   "shares": 438.3,
-   "cost": 43.83,
-   "fee": 1.18,
-   "opened": 1787213742,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787184000
   },
   {
    "token": "37186738933528774563460320081580330227044877863117462914185065397383203149322",
@@ -3084,12 +3086,12 @@
  ],
  "missed_pnl": 492.36,
  "last_fill": {
-  "ts": 1787214775,
+  "ts": 1787215931,
   "side": "SELL",
-  "price": 0.99,
-  "shares": 63.48,
-  "title": "LoL: Dplus KIA vs Hanwha Life Esports - Game 1 Winner",
-  "outcome": "Dplus KIA"
+  "price": 1.0,
+  "shares": 438.3,
+  "title": "Dota 2: TEAM VISION vs BoomBoys - Game 2 Winner",
+  "outcome": "BoomBoys"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3103,14 +3105,14 @@
    "last_ts": 1787206151
   },
   "gkmgkldfmg": {
-   "realized": 946.27,
-   "n": 107,
+   "realized": 1339.56,
+   "n": 108,
    "wins": 1,
-   "open_cost": 151.31,
-   "open_n": 2,
+   "open_cost": 107.48,
+   "open_n": 1,
    "miss_n": 66,
    "miss_pnl": 294.22,
-   "last_ts": 1787213742
+   "last_ts": 1787215931
   },
   "1kto1m": {
    "realized": 272.77,
@@ -3193,5 +3195,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787215802
+ "updated": 1787215931
 }
