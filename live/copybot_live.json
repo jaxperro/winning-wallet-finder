@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 45.34,
+ "stake": 45.36,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 411.72,
- "deployed": 1855.09,
+ "cash": 419.44,
+ "deployed": 1848.5,
  "reserve": 0.0,
- "realized": 1266.77,
+ "realized": 1267.91,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 40,
@@ -1869,7 +1869,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1788220800
+   "end_ts": 1788220800,
+   "sold_shares": 7.74,
+   "sold_proceeds": 7.72
   },
   {
    "token": "87970647543236439083440944769400298504759134074324143770349947929248763079016",
@@ -3073,12 +3075,12 @@
  ],
  "missed_pnl": 649.92,
  "last_fill": {
-  "ts": 1787201391,
-  "side": "BUY",
-  "price": 0.54,
-  "shares": 83.97,
-  "title": "Dota 2: Iron Wing vs Team Spirit - Game 2 Winner",
-  "outcome": "Iron Wing"
+  "ts": 1787201567,
+  "side": "SELL",
+  "price": 0.997,
+  "shares": 3.36,
+  "title": "Will SpaceX (SPCX) hit (LOW) $85 in August?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3182,5 +3184,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787201410
+ "updated": 1787201568
 }
