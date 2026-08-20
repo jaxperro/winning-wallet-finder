@@ -2133,10 +2133,11 @@
    "price": 0.75,
    "stake": 44.62,
    "reason": "price moved 0.69\u21920.75",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "gkmgkldfmg"
+   "status": "sold",
+   "pnl": 9.66,
+   "settled": 1787198745,
+   "name": "gkmgkldfmg",
+   "exit_price": 0.9202
   },
   {
    "ts": 1787169661,
@@ -3072,7 +3073,7 @@
    "exit_price": 0.3165
   }
  ],
- "missed_pnl": 640.26,
+ "missed_pnl": 649.92,
  "last_fill": {
   "ts": 1787198248,
   "side": "SELL",
@@ -3099,7 +3100,7 @@
    "open_cost": 44.62,
    "open_n": 1,
    "miss_n": 61,
-   "miss_pnl": 214.56,
+   "miss_pnl": 224.22,
    "last_ts": 1787198249
   },
   "1kto1m": {
@@ -3183,5 +3184,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787198249
+ "updated": 1787198746
 }
