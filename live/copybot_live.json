@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 50.28,
+ "stake": 50.57,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 694.31,
- "deployed": 1819.66,
+ "cash": 732.97,
+ "deployed": 1795.61,
  "reserve": 0.0,
- "realized": 1513.94,
+ "realized": 1528.55,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 40,
- "fees_paid": 511.1,
+ "fees_paid": 511.18,
  "fee_rate": 0.03,
  "lag": {
   "n": 491,
@@ -88,7 +88,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1787184000
+   "end_ts": 1787184000,
+   "sold_shares": 41.38,
+   "sold_proceeds": 38.66
   },
   {
    "token": "92936933970877307369595908160682343270864697758713460527249180917815147569267",
@@ -3086,10 +3088,10 @@
  ],
  "missed_pnl": 499.09,
  "last_fill": {
-  "ts": 1787217795,
-  "side": "BUY",
-  "price": 0.5813,
-  "shares": 89.89,
+  "ts": 1787219049,
+  "side": "SELL",
+  "price": 0.936,
+  "shares": 1.0,
   "title": "Dota 2: TEAM VISION vs BoomBoys (BO3) - The International Pl",
   "outcome": "TEAM VISION"
  },
@@ -3195,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787218647
+ "updated": 1787219049
 }
