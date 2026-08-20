@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787236241,
+ "updated": 1787236825,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 665.82,
@@ -8,7 +8,7 @@
    "wins": 39,
    "open_cost": 427.54,
    "open_n": 11,
-   "miss_n": 173,
+   "miss_n": 174,
    "miss_pnl": 119061.3,
    "last_ts": 1787206151
   },
@@ -9292,6 +9292,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787236815,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "99794166202586175914106828738501837290172415351697634241911046782011628205892",
+   "cond": "0x0e55d3186ef1c17e5fa42eb570e7feef16a3a56a79358ce910b91933d2985934",
+   "title": "Metamask FDV above $500M one day after launch?",
+   "outcome": "No",
+   "price": 0.85,
+   "stake": 18.95,
+   "reason": "maker bid unfilled (126s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1787098438,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
