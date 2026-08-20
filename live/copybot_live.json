@@ -2136,6 +2136,21 @@
  ],
  "missed": [
   {
+   "ts": 1787218418,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "31089692692586793539566581246875814001305191359109661005057006532624340735726",
+   "cond": "0xbfa5522abf1fdf7f209f18fb5979cb1147a75035a905f043986093a1136177d4",
+   "title": "Dota 2: TEAM VISION vs BoomBoys (BO3) - The International Playoffs",
+   "outcome": "BoomBoys",
+   "price": 0.1748,
+   "stake": 27.51,
+   "reason": "maker bid unfilled (60s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1787215802,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "27354896597223409165559968504003473369093209044390088254665799880609984040033",
@@ -3067,25 +3082,9 @@
    "settled": 1786550742,
    "name": "0xbadaf319",
    "exit_price": 0.2309
-  },
-  {
-   "ts": 1785764923,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "21719030549920839782400045989779409306132128111576509534594737801642680036604",
-   "cond": "0xffe63153186b9f685328cbe65795408d369e4ffffb890ff667d050e9464b96d6",
-   "title": "Fuse FDV above $8B one day after launch?",
-   "outcome": "No",
-   "price": 0.83,
-   "stake": 55.41,
-   "reason": "no ask side on the book at copy time",
-   "status": "sold",
-   "pnl": -0.98,
-   "settled": 1786550742,
-   "name": "0xbadaf319",
-   "exit_price": 0.8239
   }
  ],
- "missed_pnl": 489.17,
+ "missed_pnl": 499.09,
  "last_fill": {
   "ts": 1787217795,
   "side": "BUY",
@@ -3111,7 +3110,7 @@
    "wins": 1,
    "open_cost": 211.99,
    "open_n": 2,
-   "miss_n": 66,
+   "miss_n": 67,
    "miss_pnl": 291.03,
    "last_ts": 1787217788
   },
@@ -3196,5 +3195,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787217798
+ "updated": 1787218427
 }
