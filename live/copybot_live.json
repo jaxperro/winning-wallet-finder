@@ -2122,6 +2122,21 @@
  ],
  "missed": [
   {
+   "ts": 1787195735,
+   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
+   "token": "27649378234597852153151841034130544274461307584872293466437239296309390473827",
+   "cond": "0xeee2a3747dacff0068b3dfa6ce13c9ee1e8918b800d03b33359eba48c9161f9e",
+   "title": "Dota 2: Iron Wing vs Team Spirit - Game 1 Winner",
+   "outcome": "Team Spirit",
+   "price": 0.75,
+   "stake": 44.62,
+   "reason": "price moved 0.69\u21920.75",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "gkmgkldfmg"
+  },
+  {
    "ts": 1787169661,
    "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
    "token": "110942862909895634900207208050558023367650623301811517032910075170956752231929",
@@ -3053,25 +3068,9 @@
    "settled": 1786550739,
    "name": "0xbadaf319",
    "exit_price": 0.3165
-  },
-  {
-   "ts": 1785114042,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "87696708406779453134902801895465089795764350419182531911213489596972812010552",
-   "cond": "0x726f8c733ea83c15eb7bf25eca3fb324440c78a49fd2e233138214c69cdb46f0",
-   "title": "Another NATO Article 4 invocation by October 31, 2026?",
-   "outcome": "No",
-   "price": 0.68,
-   "stake": 22.36,
-   "reason": "maker bid unfilled (66s)",
-   "status": "sold",
-   "pnl": -0.1,
-   "settled": 1786550737,
-   "name": "0xbadaf319",
-   "exit_price": 0.6898
   }
  ],
- "missed_pnl": 515.5,
+ "missed_pnl": 640.26,
  "last_fill": {
   "ts": 1787194297,
   "side": "BUY",
@@ -3097,7 +3096,7 @@
    "wins": 1,
    "open_cost": 44.63,
    "open_n": 1,
-   "miss_n": 60,
+   "miss_n": 61,
    "miss_pnl": 214.56,
    "last_ts": 1787194297
   },
@@ -3182,5 +3181,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787194305
+ "updated": 1787195735
 }
