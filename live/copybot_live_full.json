@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1787268837,
+ "updated": 1787268984,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 612.84,
-   "n": 118,
+   "realized": 633.53,
+   "n": 119,
    "wins": 39,
-   "open_cost": 479.65,
-   "open_n": 12,
+   "open_cost": 427.54,
+   "open_n": 11,
    "miss_n": 175,
    "miss_pnl": 119061.3,
-   "last_ts": 1787243444
+   "last_ts": 1787268984
   },
   "gkmgkldfmg": {
    "realized": 1211.69,
@@ -105,6 +105,28 @@
  },
  "bets": [
   {
+   "token": "73822848958833581920509853766928409035356407100619064692171326316721805299603",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "NATO x Russia military clash by August 31, 2026?",
+   "their_price": 0.6661,
+   "my_price": 0.6661,
+   "slippage_pct": 0.0,
+   "lag_s": 60.6,
+   "shares": 78.23,
+   "cost": 52.11,
+   "fee": 0.522,
+   "opened": 1787243444,
+   "status": "closed",
+   "exit_price": 0.9373,
+   "pnl": 20.69,
+   "settled": 1787268984,
+   "end_ts": 1788134400,
+   "sold_shares": 78.23,
+   "sold_proceeds": 73.3235419149
+  },
+  {
    "token": "54062736632224096048711045820692609726051068227413916519205920544933036174584",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "name": "Kruto2027",
@@ -163,26 +185,6 @@
    "pnl": -52.51,
    "settled": 1787245249,
    "end_ts": 1787184000
-  },
-  {
-   "token": "73822848958833581920509853766928409035356407100619064692171326316721805299603",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "NATO x Russia military clash by August 31, 2026?",
-   "their_price": 0.6661,
-   "my_price": 0.6661,
-   "slippage_pct": 0.0,
-   "lag_s": 60.6,
-   "shares": 78.23,
-   "cost": 52.11,
-   "fee": 0.522,
-   "opened": 1787243444,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788134400
   },
   {
    "token": "73085022833974813207456231975877069513702872029369488972326289382731035966212",
