@@ -2136,6 +2136,21 @@
  ],
  "missed": [
   {
+   "ts": 1787327470,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "57553398711303937381064934137969898753189527961867265009985824005251746391481",
+   "cond": "0x55272ba2b993eeecbde704bf00d0c3fe7667763c8944dd55a69c006c25029086",
+   "title": "GTA VI released by September 30?",
+   "outcome": "No",
+   "price": 0.77,
+   "stake": 10.1,
+   "reason": "maker bid unfilled (128s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1787236815,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "99794166202586175914106828738501837290172415351697634241911046782011628205892",
@@ -3070,25 +3085,9 @@
    "settled": 1786637933,
    "name": "0xbadaf319",
    "exit_price": 0.8935
-  },
-  {
-   "ts": 1785438136,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "62474359384438151756967307997575848219189410783384033652191452044688986782350",
-   "cond": "0x0cfaa8fabad4d452be63950f47b07339ce192820df5d64569496fb91eb55b502",
-   "title": "Will Sofia host Eurovision 2027?",
-   "outcome": "Yes",
-   "price": 0.6686,
-   "stake": 54.4,
-   "reason": "no ask side on the book at copy time",
-   "status": "lost",
-   "pnl": -54.94,
-   "settled": 1786620637,
-   "name": "BikesAreTheBikes",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 590.51,
+ "missed_pnl": 565.29,
  "last_fill": {
   "ts": 1787327008,
   "side": "BUY",
@@ -3104,7 +3103,7 @@
    "wins": 39,
    "open_cost": 475.89,
    "open_n": 12,
-   "miss_n": 175,
+   "miss_n": 176,
    "miss_pnl": 119062.12,
    "last_ts": 1787326999
   },
@@ -3199,5 +3198,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787327197
+ "updated": 1787327472
 }

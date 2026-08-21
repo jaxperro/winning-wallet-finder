@@ -1,9 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0xdcde2b835fccc37cf935fd736d921adb3395190f2ced2838dbf9b7b83877be40",
-    "0x98134750861b28d1763810c6b9af5d6219a30bed3e0e53c9831686f4581c62cd",
-    "0x4b31bf89faad599c3afff5ddf303a335b56e82d2b43bd81e47e0da255071532d",
     "0xc9d03c46ec52b2c415075b7983e98a18188d0d438fb7357ba29e1b0094393130",
     "0xe3b48c0440f64ec14a98ca25ec9470fda10513f660c1c5a1f603338b65ab9145",
     "0x53870a434ee26bba1abdfc8641a2447cd2fd40f96fc61199c85f7558e66dcb8b",
@@ -5000,7 +4997,10 @@
     "0x6ec26ee091a0ed988c53cfe6633063a28961eed1b5cce8496908b16ae140a9b3",
     "0x5fd2d488cb9df1496f25743e8f6285b641f71e32632ce03450b63f9e4b4080c6",
     "0x64eaaaf0e4205ee741971402619147f8b09fb64bc45dfbf6fb6c8f6539d9ac76",
-    "0x29dc64e337428664032c949eb366edcf6ad51d153236218452be142271cce72e"
+    "0x29dc64e337428664032c949eb366edcf6ad51d153236218452be142271cce72e",
+    "0x1d7c6779ffd7b79c8c0dff9367eee3d0622907a72b23deffadbf4dc4436cb978",
+    "0x8b927f764b54d48665580cd0fdae4aff0fafbf6fe34b80f65ac2816fea11c999",
+    "0x9c8d0b1950fad1da70933a73746d215724ebaf2249270305ab94da3413daee1c"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -8429,7 +8429,8 @@
       "65251350698027222100331254655111019998674312881376029173469312569122789765181": 0.0,
       "62303324368412311005082577370877740359783217432571752741221319080579292483316": 0.0,
       "100463364281600463917162923535716593254627752680239892527128357625123655869336": 0.0,
-      "46813240769552957690301465649722314458920606621001498189214241604754282131252": 61.6385
+      "46813240769552957690301465649722314458920606621001498189214241604754282131252": 1.5784999999999982,
+      "57553398711303937381064934137969898753189527961867265009985824005251746391481": 80.0
     },
     "0xd7d36345c4aab150e59577e360696b01d01d698b": {
       "100468734153214358233990589631364606641061328246006529504204481849428608539045": 5322.2848,
@@ -20977,8 +20978,8 @@
     }
   },
   "hwm": 3600.1933566560215,
-  "feed_sig": "564cb6966d64845ec96d94f8b20b9daa",
-  "feed_pushed_at": 1787327042.3129022,
+  "feed_sig": "ddb190ce77663ffe4d9b93b81b94ae92",
+  "feed_pushed_at": 1787327341.7404027,
   "missed": [
     {
       "ts": 1784503159,
@@ -21039,22 +21040,6 @@
       "pnl": null,
       "settled": null,
       "name": "0xbadaf319"
-    },
-    {
-      "ts": 1785162430,
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "token": "65075316665858123310904205342608300814898488753088658332913116406808619343398",
-      "cond": "0x6899f21b3a3d26c8ae9d0332c25d160fc08b9c3b834f0d8fe116d2ec87905dc9",
-      "title": "Will Airbnb, Inc. (ABNB) hit (LOW) $130 Week of July 27 2026?",
-      "outcome": "No",
-      "price": 0.5463,
-      "stake": 33.91,
-      "reason": "not copied in the detection window (reconciled)",
-      "status": "sold",
-      "pnl": 25.22,
-      "settled": 1785530132,
-      "name": "0xbadaf319",
-      "exit_price": 0.9612
     },
     {
       "ts": 1785182570,
@@ -24158,6 +24143,20 @@
       "pnl": null,
       "settled": null,
       "name": "BikesAreTheBikes"
+    },
+    {
+      "ts": 1787327470,
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "token": "57553398711303937381064934137969898753189527961867265009985824005251746391481",
+      "cond": "0x55272ba2b993eeecbde704bf00d0c3fe7667763c8944dd55a69c006c25029086",
+      "title": "GTA VI released by September 30?",
+      "outcome": "No",
+      "price": 0.77,
+      "stake": 10.1,
+      "reason": "maker bid unfilled (128s)",
+      "status": "open",
+      "pnl": null,
+      "settled": null
     }
   ],
   "no_miss_toks": [
@@ -24486,7 +24485,7 @@
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
     "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1787319949,
-    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1787326999,
+    "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1787327338,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1787219458,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1787320761,
     "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343": 1786893589,
@@ -24505,27 +24504,33 @@
     "title": "Will Tesla (TSLA) finish week of August 17 above $365?",
     "outcome": "No"
   },
-  "paper_maker": [],
+  "paper_maker": [
+    {
+      "paper_maker": true,
+      "sz": 13.11,
+      "mode": "maker",
+      "token": "57553398711303937381064934137969898753189527961867265009985824005251746391481",
+      "side": "BUY",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "title": "GTA VI released by September 30?",
+      "outcome": "No",
+      "event": null,
+      "cond": "0x55272ba2b993eeecbde704bf00d0c3fe7667763c8944dd55a69c006c25029086",
+      "their_price": 0.77,
+      "their_ts": 1787327416,
+      "price": 0.77,
+      "is_add": false,
+      "stake": 10.100000000000001,
+      "ts": 1787327417.6217923,
+      "ttl_s": 60.0,
+      "ba_at_signal": 0.99
+    }
+  ],
   "maker_stats": {
     "fills": 271,
-    "misses": 146
+    "misses": 147
   },
   "ignored_exits": [
-    {
-      "ts": 1787319092.0,
-      "token": "50602019240941809622861470779703535720835263427930127933401833028250618535493",
-      "their_size": 0,
-      "their_prev": 0,
-      "frac": 1.0,
-      "reason": "band",
-      "sell_px": 0.87,
-      "shares_held": 28.3021,
-      "cost_held": 23.21,
-      "title": "Will Hyperliquid HIP-3 open interest hit $8B in 2026?",
-      "outcome": "No",
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "mode": "paper"
-    },
     {
       "ts": 1787319092.6,
       "token": "91676177432668319691663213694187810112009835951397620031461215327421238319426",
@@ -27507,6 +27512,21 @@
       "shares_held": 2.6576,
       "cost_held": 1.97,
       "title": "Will the next Claude Opus model debut at a score of at least 1515 by December 31",
+      "outcome": "No",
+      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+      "mode": "paper"
+    },
+    {
+      "ts": 1787327326.8,
+      "token": "46813240769552957690301465649722314458920606621001498189214241604754282131252",
+      "their_size": 60.06,
+      "their_prev": 61.6385,
+      "frac": 0.9744,
+      "reason": "band",
+      "sell_px": 0.741,
+      "shares_held": 74.05,
+      "cost_held": 48.35,
+      "title": "Will Tesla (TSLA) finish week of August 17 above $365?",
       "outcome": "No",
       "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
       "mode": "paper"

@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787327197,
+ "updated": 1787327472,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 633.53,
@@ -8,7 +8,7 @@
    "wins": 39,
    "open_cost": 475.89,
    "open_n": 12,
-   "miss_n": 175,
+   "miss_n": 176,
    "miss_pnl": 119062.12,
    "last_ts": 1787326999
   },
@@ -9404,6 +9404,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787327470,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "57553398711303937381064934137969898753189527961867265009985824005251746391481",
+   "cond": "0x55272ba2b993eeecbde704bf00d0c3fe7667763c8944dd55a69c006c25029086",
+   "title": "GTA VI released by September 30?",
+   "outcome": "No",
+   "price": 0.77,
+   "stake": 10.1,
+   "reason": "maker bid unfilled (128s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1787236815,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
