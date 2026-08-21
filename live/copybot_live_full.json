@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787345120,
+ "updated": 1787346745,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 658.73,
@@ -78,7 +78,7 @@
    "wins": 9,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 8,
+   "miss_n": 9,
    "miss_pnl": 21.19,
    "last_ts": 1787329890
   },
@@ -9408,6 +9408,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787346734,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "66387789133038786692878547306169934627981644428517642294767610569729384575659",
+   "cond": "0x4535dd09f3a15cafc70921a64477f018b660f37085d5549f047c53e042ca38e2",
+   "title": "LoL: SK Gaming vs Movistar KOI (BO3) - LEC Regular Season",
+   "outcome": "Movistar KOI",
+   "price": 0.76,
+   "stake": 49.54,
+   "reason": "maker bid unfilled (111s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "JuiceFarm"
+  },
   {
    "ts": 1787327470,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
