@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1787323948,
+ "updated": 1787327008,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 633.53,
    "n": 119,
    "wins": 39,
-   "open_cost": 427.54,
-   "open_n": 11,
+   "open_cost": 475.89,
+   "open_n": 12,
    "miss_n": 175,
    "miss_pnl": 119061.3,
-   "last_ts": 1787268984
+   "last_ts": 1787326999
   },
   "gkmgkldfmg": {
    "realized": 1211.69,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "46813240769552957690301465649722314458920606621001498189214241604754282131252",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Tesla (TSLA) finish week of August 17 above $365?",
+   "their_price": 0.653,
+   "my_price": 0.653,
+   "slippage_pct": 0.0,
+   "lag_s": 9.1,
+   "shares": 74.05,
+   "cost": 48.35,
+   "fee": 0.5034,
+   "opened": 1787326999,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787270400
+  },
   {
    "token": "115469797339119930636023249362643357352862616037224588149381107806681346042818",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",

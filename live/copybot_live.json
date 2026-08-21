@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.36,
+ "stake": 48.35,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 771.69,
- "deployed": 1646.18,
+ "cash": 722.83,
+ "deployed": 1694.54,
  "reserve": 0.0,
- "realized": 1417.84,
+ "realized": 1417.34,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 37,
- "fees_paid": 517.4,
+ "open_count": 38,
+ "fees_paid": 517.9,
  "fee_rate": 0.03,
  "lag": {
-  "n": 503,
-  "n24": 7,
+  "n": 504,
+  "n24": 8,
   "basis": "24h",
-  "avg_s": 60.6,
+  "avg_s": 51.9,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "46813240769552957690301465649722314458920606621001498189214241604754282131252",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Tesla (TSLA) finish week of August 17 above $365?",
+   "their_price": 0.653,
+   "my_price": 0.653,
+   "slippage_pct": 0.0,
+   "lag_s": 9.1,
+   "shares": 74.05,
+   "cost": 48.35,
+   "fee": 0.5,
+   "opened": 1787326999,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787270400
+  },
   {
    "token": "115469797339119930636023249362643357352862616037224588149381107806681346042818",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2112,26 +2132,6 @@
    "pnl": -53.81,
    "settled": 1786169289,
    "end_ts": 1786060800
-  },
-  {
-   "token": "71877431772881692404314318981764548881152635985584226603729882292372121391484",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Fnatic",
-   "title": "LoL: Team Heretics vs Fnatic (BO3) - LEC Regular Season",
-   "their_price": 0.4672,
-   "my_price": 0.4672,
-   "slippage_pct": 0.0,
-   "lag_s": 1.0,
-   "shares": 104.13,
-   "cost": 48.65,
-   "fee": 0.78,
-   "opened": 1786129145,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -49.43,
-   "settled": 1786144284,
-   "end_ts": 1786060800
   }
  ],
  "missed": [
@@ -3089,23 +3089,23 @@
  ],
  "missed_pnl": 589.69,
  "last_fill": {
-  "ts": 1787272414,
-  "side": "SELL",
-  "price": 1.0,
-  "shares": 59.98,
-  "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
-  "outcome": "Over"
+  "ts": 1787327008,
+  "side": "BUY",
+  "price": 0.653,
+  "shares": 74.05,
+  "title": "Will Tesla (TSLA) finish week of August 17 above $365?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 633.53,
    "n": 119,
    "wins": 39,
-   "open_cost": 427.54,
-   "open_n": 11,
+   "open_cost": 475.89,
+   "open_n": 12,
    "miss_n": 175,
    "miss_pnl": 119061.3,
-   "last_ts": 1787268984
+   "last_ts": 1787326999
   },
   "gkmgkldfmg": {
    "realized": 1211.69,
@@ -3198,5 +3198,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787323948
+ "updated": 1787327008
 }
