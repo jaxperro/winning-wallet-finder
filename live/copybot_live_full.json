@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1787333428,
+ "updated": 1787345120,
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 633.53,
-   "n": 119,
-   "wins": 39,
-   "open_cost": 475.89,
-   "open_n": 12,
+   "realized": 658.73,
+   "n": 120,
+   "wins": 40,
+   "open_cost": 427.54,
+   "open_n": 11,
    "miss_n": 176,
    "miss_pnl": 119064.67,
-   "last_ts": 1787326999
+   "last_ts": 1787345115
   },
   "gkmgkldfmg": {
    "realized": 1211.69,
@@ -105,6 +105,26 @@
  },
  "bets": [
   {
+   "token": "46813240769552957690301465649722314458920606621001498189214241604754282131252",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Tesla (TSLA) finish week of August 17 above $365?",
+   "their_price": 0.653,
+   "my_price": 0.653,
+   "slippage_pct": 0.0,
+   "lag_s": 9.1,
+   "shares": 74.05,
+   "cost": 48.35,
+   "fee": 0.5034,
+   "opened": 1787326999,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 25.2,
+   "settled": 1787345115,
+   "end_ts": 1787270400
+  },
+  {
    "token": "80762000047508265463182305511055050801772987383460262058496710184598577566532",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
    "name": "JuiceFarm",
@@ -145,26 +165,6 @@
    "end_ts": 1787270400,
    "sold_shares": 49.47,
    "sold_proceeds": 44.389431
-  },
-  {
-   "token": "46813240769552957690301465649722314458920606621001498189214241604754282131252",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will Tesla (TSLA) finish week of August 17 above $365?",
-   "their_price": 0.653,
-   "my_price": 0.653,
-   "slippage_pct": 0.0,
-   "lag_s": 9.1,
-   "shares": 74.05,
-   "cost": 48.35,
-   "fee": 0.5034,
-   "opened": 1787326999,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787270400
   },
   {
    "token": "115469797339119930636023249362643357352862616037224588149381107806681346042818",
