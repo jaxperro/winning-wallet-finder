@@ -2136,6 +2136,22 @@
  ],
  "missed": [
   {
+   "ts": 1787267280,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "47816857872318085387950262352462603964292019956549789945667608301303941772576",
+   "cond": "0x340c7081f270c820a6f8d67ff5efe99f63eb00a652afd23009964b111483f71d",
+   "title": "SC St. T\u00f6nis 11/20 vs. Eintracht Frankfurt: O/U 5.5",
+   "outcome": "Over",
+   "price": 0.44,
+   "stake": 50.02,
+   "reason": "thin book ($34 within 5c < $50)",
+   "status": "sold",
+   "pnl": 17.91,
+   "settled": 1787320856,
+   "name": "Kruto2027",
+   "exit_price": 0.6121
+  },
+  {
    "ts": 1787283954,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "token": "9425494630420524762356091484606706289169789796333686976670441967109493832767",
@@ -2165,21 +2181,6 @@
    "settled": 1787274840,
    "name": "Kruto2027",
    "exit_price": 0.6299
-  },
-  {
-   "ts": 1787267280,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "47816857872318085387950262352462603964292019956549789945667608301303941772576",
-   "cond": "0x340c7081f270c820a6f8d67ff5efe99f63eb00a652afd23009964b111483f71d",
-   "title": "SC St. T\u00f6nis 11/20 vs. Eintracht Frankfurt: O/U 5.5",
-   "outcome": "Over",
-   "price": 0.44,
-   "stake": 50.02,
-   "reason": "thin book ($34 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
   },
   {
    "ts": 1787125426,
@@ -3086,7 +3087,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 571.78,
+ "missed_pnl": 589.69,
  "last_fill": {
   "ts": 1787272414,
   "side": "SELL",
@@ -3133,7 +3134,7 @@
    "open_cost": 108.51,
    "open_n": 2,
    "miss_n": 32,
-   "miss_pnl": 743.16,
+   "miss_pnl": 761.07,
    "last_ts": 1787277967
   },
   "LSB1": {
@@ -3197,5 +3198,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787317121
+ "updated": 1787320857
 }
