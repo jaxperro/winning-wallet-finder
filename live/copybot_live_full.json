@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787282845,
+ "updated": 1787283961,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 633.53,
@@ -68,7 +68,7 @@
    "wins": 7,
    "open_cost": 1256.78,
    "open_n": 23,
-   "miss_n": 64,
+   "miss_n": 65,
    "miss_pnl": -1015.23,
    "last_ts": 1787147524
   },
@@ -9384,6 +9384,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787283954,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "9425494630420524762356091484606706289169789796333686976670441967109493832767",
+   "cond": "0xfbd0a65112e26d9a2a68dc47f8a95c6c14d22650cb4837c5429b546726661b71",
+   "title": "Will the Democrats win the Wisconsin governor race in 2026?",
+   "outcome": "No",
+   "price": 0.19,
+   "stake": 48.36,
+   "reason": "maker bid unfilled (89s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1787272955,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
