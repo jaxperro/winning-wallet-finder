@@ -2136,6 +2136,22 @@
  ],
  "missed": [
   {
+   "ts": 1787236815,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "99794166202586175914106828738501837290172415351697634241911046782011628205892",
+   "cond": "0x0e55d3186ef1c17e5fa42eb570e7feef16a3a56a79358ce910b91933d2985934",
+   "title": "Metamask FDV above $500M one day after launch?",
+   "outcome": "No",
+   "price": 0.85,
+   "stake": 18.95,
+   "reason": "maker bid unfilled (126s)",
+   "status": "sold",
+   "pnl": 0.82,
+   "settled": 1787327195,
+   "name": "0xbadaf319",
+   "exit_price": 0.8937
+  },
+  {
    "ts": 1787267280,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "47816857872318085387950262352462603964292019956549789945667608301303941772576",
@@ -2259,21 +2275,6 @@
    "settled": 1787238770,
    "name": "BikesAreTheBikes",
    "exit_price": 0.5
-  },
-  {
-   "ts": 1787236815,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "99794166202586175914106828738501837290172415351697634241911046782011628205892",
-   "cond": "0x0e55d3186ef1c17e5fa42eb570e7feef16a3a56a79358ce910b91933d2985934",
-   "title": "Metamask FDV above $500M one day after launch?",
-   "outcome": "No",
-   "price": 0.85,
-   "stake": 18.95,
-   "reason": "maker bid unfilled (126s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1787098438,
@@ -3087,7 +3088,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 589.69,
+ "missed_pnl": 590.51,
  "last_fill": {
   "ts": 1787327008,
   "side": "BUY",
@@ -3104,7 +3105,7 @@
    "open_cost": 475.89,
    "open_n": 12,
    "miss_n": 175,
-   "miss_pnl": 119061.3,
+   "miss_pnl": 119062.12,
    "last_ts": 1787326999
   },
   "gkmgkldfmg": {
@@ -3198,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787327008
+ "updated": 1787327197
 }
