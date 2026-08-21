@@ -2136,6 +2136,21 @@
  ],
  "missed": [
   {
+   "ts": 1787272955,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "32931845776030410099132002625280489198638176176983928470112142744475347442469",
+   "cond": "0xc8bf8b13957554283f8bb35c2ee7e8218169e967e255223c0d6110612a7c75e3",
+   "title": "Kingston (Doubles): Falck/Suarez vs Kavcic/Purcell",
+   "outcome": "Kavcic/Purcell",
+   "price": 0.13,
+   "stake": 49.34,
+   "reason": "thin book ($4 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1787267280,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "47816857872318085387950262352462603964292019956549789945667608301303941772576",
@@ -3068,24 +3083,9 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1786613170,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "18670935020993642909381098165616875081874974673910239706875622888002650768601",
-   "cond": "0x2ce1a5a009430e7a4a5d2512c56ce39d921fa385861f7a19dddd824886018d1d",
-   "title": "Critical Discord Incident by August 31?",
-   "outcome": "No",
-   "price": 0.53,
-   "stake": 47.95,
-   "reason": "thin book ($38 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 437.8,
+ "missed_pnl": 403.74,
  "last_fill": {
   "ts": 1787272414,
   "side": "SELL",
@@ -3131,7 +3131,7 @@
    "wins": 3,
    "open_cost": 157.63,
    "open_n": 3,
-   "miss_n": 31,
+   "miss_n": 32,
    "miss_pnl": 557.36,
    "last_ts": 1787272415
   },
@@ -3196,5 +3196,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787272415
+ "updated": 1787272964
 }
