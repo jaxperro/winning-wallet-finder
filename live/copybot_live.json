@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.1,
+ "stake": 49.34,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 711.71,
- "deployed": 1743.28,
+ "cash": 771.69,
+ "deployed": 1695.3,
  "reserve": 0.0,
- "realized": 1454.97,
+ "realized": 1466.96,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 39,
+ "open_count": 38,
  "fees_paid": 517.4,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "47458197341259015143098641932265680502344097076006678002917960090825629562672",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Over",
+   "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
+   "their_price": 0.8,
+   "my_price": 0.8,
+   "slippage_pct": 0.0,
+   "lag_s": 98.8,
+   "shares": 221.94,
+   "cost": 177.55,
+   "fee": 1.07,
+   "opened": 1787098389,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": -118.63,
+   "settled": 1787272415,
+   "end_ts": 1787270400,
+   "sold_shares": 59.98,
+   "sold_proceeds": 59.98
+  },
   {
    "token": "115469797339119930636023249362643357352862616037224588149381107806681346042818",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -639,26 +661,6 @@
    "end_ts": 1787097600,
    "sold_shares": 68.26,
    "sold_proceeds": 68.26
-  },
-  {
-   "token": "47458197341259015143098641932265680502344097076006678002917960090825629562672",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Over",
-   "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
-   "their_price": 0.8,
-   "my_price": 0.8,
-   "slippage_pct": 0.0,
-   "lag_s": 98.8,
-   "shares": 221.94,
-   "cost": 177.55,
-   "fee": 1.07,
-   "opened": 1787098389,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787270400
   },
   {
    "token": "31798323952461961650983638405389053740930972138111089234409584277872747279143",
@@ -3085,11 +3087,11 @@
  ],
  "missed_pnl": 437.8,
  "last_fill": {
-  "ts": 1787269138,
-  "side": "BUY",
-  "price": 0.2777,
-  "shares": 176.85,
-  "title": "Club Olimpia vs. CR Vasco da Gama: O/U 5.5",
+  "ts": 1787272414,
+  "side": "SELL",
+  "price": 1.0,
+  "shares": 59.98,
+  "title": "Botafogo FR vs. CS Cienciano: 2nd Half O/U 0.5",
   "outcome": "Over"
  },
  "wallet_pnl": {
@@ -3124,14 +3126,14 @@
    "last_ts": 1785987921
   },
   "Kruto2027": {
-   "realized": 193.28,
-   "n": 18,
+   "realized": 74.65,
+   "n": 19,
    "wins": 3,
-   "open_cost": 335.18,
-   "open_n": 4,
+   "open_cost": 157.63,
+   "open_n": 3,
    "miss_n": 31,
    "miss_pnl": 557.36,
-   "last_ts": 1787269122
+   "last_ts": 1787272415
   },
   "LSB1": {
    "realized": -397.16,
@@ -3194,5 +3196,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787269194
+ "updated": 1787272415
 }
