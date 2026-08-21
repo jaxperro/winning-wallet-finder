@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787329900,
+ "updated": 1787329985,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 633.53,
@@ -630,7 +630,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1798761600
+   "end_ts": 1798761600,
+   "sold_shares": 28.79307684089317,
+   "sold_proceeds": 26.721328582960385
   },
   {
    "token": "80808145657906667113795891925826034935213900714245802195985269085181895227480",

@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 829.22,
- "deployed": 1621.74,
+ "cash": 855.94,
+ "deployed": 1595.25,
  "reserve": 0.0,
- "realized": 1450.93,
+ "realized": 1451.17,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
  "open_count": 36,
- "fees_paid": 518.03,
+ "fees_paid": 518.09,
  "fee_rate": 0.03,
  "lag": {
   "n": 504,
-  "n24": 8,
+  "n24": 7,
   "basis": "24h",
-  "avg_s": 51.9,
+  "avg_s": 43.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -576,7 +576,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1798761600
+   "end_ts": 1798761600,
+   "sold_shares": 28.79,
+   "sold_proceeds": 26.72
   },
   {
    "token": "80808145657906667113795891925826034935213900714245802195985269085181895227480",
@@ -3091,12 +3093,12 @@
  ],
  "missed_pnl": 565.29,
  "last_fill": {
-  "ts": 1787328491,
+  "ts": 1787329985,
   "side": "SELL",
-  "price": 0.9,
-  "shares": 49.47,
-  "title": "SC St. T\u00f6nis 11/20 vs. Eintracht Frankfurt: O/U 4.5",
-  "outcome": "Over"
+  "price": 0.93,
+  "shares": 28.79,
+  "title": "Tabi FDV above $500M one day after launch?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3200,5 +3202,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787329900
+ "updated": 1787329985
 }
