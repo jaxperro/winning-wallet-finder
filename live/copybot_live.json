@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.54,
+ "stake": 49.53,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 929.99,
- "deployed": 1546.9,
+ "cash": 879.91,
+ "deployed": 1596.43,
  "reserve": 0.0,
- "realized": 1476.86,
+ "realized": 1476.31,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 35,
- "fees_paid": 518.09,
+ "open_count": 36,
+ "fees_paid": 518.64,
  "fee_rate": 0.03,
  "lag": {
-  "n": 504,
-  "n24": 7,
+  "n": 505,
+  "n24": 8,
   "basis": "24h",
-  "avg_s": 43.2,
+  "avg_s": 31.9,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "105652524447125478110228276956220710633753847150864083318231400763702321401890",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "GAM Esports",
+   "title": "LoL: MVK Esports vs GAM Esports (BO5) - LCP Playoffs",
+   "their_price": 0.63,
+   "my_price": 0.63,
+   "slippage_pct": 0.0,
+   "lag_s": 10.3,
+   "shares": 78.63,
+   "cost": 49.54,
+   "fee": 0.55,
+   "opened": 1787347788,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787356800
+  },
   {
    "token": "46813240769552957690301465649722314458920606621001498189214241604754282131252",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2116,29 +2136,24 @@
    "pnl": 52.17,
    "settled": 1786169289,
    "end_ts": 1786060800
-  },
-  {
-   "token": "105018125001683421642188507083357166141411975719572822588636238221967305408092",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "US announces end of Iranian blockade by August 7, 2026?",
-   "their_price": 0.458,
-   "my_price": 0.458,
-   "slippage_pct": 0.0,
-   "lag_s": 1.2,
-   "shares": 115.61,
-   "cost": 52.95,
-   "fee": 0.86,
-   "opened": 1785855256,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -53.81,
-   "settled": 1786169289,
-   "end_ts": 1786060800
   }
  ],
  "missed": [
+  {
+   "ts": 1787347817,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "60171921599420836876224510364681932946082411623475935527554573877099969430573",
+   "cond": "0x66ab13c24802836b0ad61f00b87929d45464acd9c137b4d6ccb46bed070b691d",
+   "title": "Will \"Mutiny\" score at least 60 on the Rotten Tomatoes Tomatometer?",
+   "outcome": "Yes",
+   "price": 0.004,
+   "stake": 49.53,
+   "reason": "thin book ($2 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1787346734,
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -3073,32 +3088,16 @@
    "name": "0xbadaf319",
    "exit_checked": true,
    "exit_price": 0.9044
-  },
-  {
-   "ts": 1786478200,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "38117101935565340676082212110824196837805166167562510718204169833601135217606",
-   "cond": "0xee52eead928533108382b223aecac6b53602c80bd6e32a59303ed6dc5fb35f79",
-   "title": "Will Beezie launch a token by December 31, 2027?",
-   "outcome": "Yes",
-   "price": 0.58,
-   "stake": 35.59,
-   "reason": "maker bid unfilled (73s)",
-   "status": "sold",
-   "pnl": 1.12,
-   "settled": 1786656368,
-   "name": "0xbadaf319",
-   "exit_price": 0.6127
   }
  ],
- "missed_pnl": 566.9,
+ "missed_pnl": 549.59,
  "last_fill": {
-  "ts": 1787329985,
-  "side": "SELL",
-  "price": 0.93,
-  "shares": 28.79,
-  "title": "Tabi FDV above $500M one day after launch?",
-  "outcome": "No"
+  "ts": 1787347798,
+  "side": "BUY",
+  "price": 0.63,
+  "shares": 78.63,
+  "title": "LoL: MVK Esports vs GAM Esports (BO5) - LCP Playoffs",
+  "outcome": "GAM Esports"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3107,7 +3106,7 @@
    "wins": 40,
    "open_cost": 427.54,
    "open_n": 11,
-   "miss_n": 176,
+   "miss_n": 177,
    "miss_pnl": 119064.67,
    "last_ts": 1787345115
   },
@@ -3175,11 +3174,11 @@
    "realized": -220.88,
    "n": 16,
    "wins": 9,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 49.54,
+   "open_n": 1,
    "miss_n": 9,
    "miss_pnl": 21.19,
-   "last_ts": 1787329890
+   "last_ts": 1787347788
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3202,5 +3201,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787346745
+ "updated": 1787347817
 }
