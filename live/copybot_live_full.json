@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787274840,
+ "updated": 1787277978,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 633.53,
@@ -33,14 +33,14 @@
    "last_ts": 1785987921
   },
   "Kruto2027": {
-   "realized": 74.65,
-   "n": 19,
+   "realized": 24.47,
+   "n": 20,
    "wins": 3,
-   "open_cost": 157.63,
-   "open_n": 3,
+   "open_cost": 108.51,
+   "open_n": 2,
    "miss_n": 32,
    "miss_pnl": 743.16,
-   "last_ts": 1787272415
+   "last_ts": 1787277967
   },
   "LSB1": {
    "realized": -397.16,
@@ -105,6 +105,26 @@
  },
  "bets": [
   {
+   "token": "115469797339119930636023249362643357352862616037224588149381107806681346042818",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Over",
+   "title": "Club Olimpia vs. CR Vasco da Gama: O/U 5.5",
+   "their_price": 0.2777,
+   "my_price": 0.2777,
+   "slippage_pct": 0.0,
+   "lag_s": 16.1,
+   "shares": 176.85,
+   "cost": 49.12,
+   "fee": 1.0643,
+   "opened": 1787269122,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -50.18,
+   "settled": 1787277967,
+   "end_ts": 1787184000
+  },
+  {
    "token": "47458197341259015143098641932265680502344097076006678002917960090825629562672",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "name": "Kruto2027",
@@ -125,26 +145,6 @@
    "end_ts": 1787270400,
    "sold_shares": 59.98,
    "sold_proceeds": 59.98
-  },
-  {
-   "token": "115469797339119930636023249362643357352862616037224588149381107806681346042818",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Over",
-   "title": "Club Olimpia vs. CR Vasco da Gama: O/U 5.5",
-   "their_price": 0.2777,
-   "my_price": 0.2777,
-   "slippage_pct": 0.0,
-   "lag_s": 16.1,
-   "shares": 176.85,
-   "cost": 49.12,
-   "fee": 1.0643,
-   "opened": 1787269122,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787184000
   },
   {
    "token": "73822848958833581920509853766928409035356407100619064692171326316721805299603",
