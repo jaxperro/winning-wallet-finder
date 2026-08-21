@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787274690,
+ "updated": 1787274840,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 633.53,
@@ -39,7 +39,7 @@
    "open_cost": 157.63,
    "open_n": 3,
    "miss_n": 32,
-   "miss_pnl": 557.36,
+   "miss_pnl": 743.16,
    "last_ts": 1787272415
   },
   "LSB1": {
@@ -9394,10 +9394,11 @@
    "price": 0.13,
    "stake": 49.34,
    "reason": "thin book ($4 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
+   "status": "sold",
+   "pnl": 185.8,
+   "settled": 1787274840,
+   "name": "Kruto2027",
+   "exit_price": 0.6299
   },
   {
    "ts": 1787267280,
