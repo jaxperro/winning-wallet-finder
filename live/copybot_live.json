@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.99,
+ "stake": 48.0,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 830.61,
- "deployed": 1618.79,
+ "deployed": 1569.26,
  "reserve": 0.0,
- "realized": 1449.38,
+ "realized": 1399.84,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 36,
+ "open_count": 35,
  "fees_paid": 518.95,
  "fee_rate": 0.03,
  "lag": {
@@ -51,6 +51,26 @@
  },
  "bets": [
   {
+   "token": "105652524447125478110228276956220710633753847150864083318231400763702321401890",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "GAM Esports",
+   "title": "LoL: MVK Esports vs GAM Esports (BO5) - LCP Playoffs",
+   "their_price": 0.63,
+   "my_price": 0.63,
+   "slippage_pct": 0.0,
+   "lag_s": 10.3,
+   "shares": 78.63,
+   "cost": 49.54,
+   "fee": 0.55,
+   "opened": 1787347788,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -50.09,
+   "settled": 1787410957,
+   "end_ts": 1787356800
+  },
+  {
    "token": "65176072261324737856085688071627118509549293922582857186996392180609764586527",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
    "name": "BikesAreTheBikes",
@@ -89,26 +109,6 @@
    "pnl": -26.81,
    "settled": 1787378982,
    "end_ts": 1787270400
-  },
-  {
-   "token": "105652524447125478110228276956220710633753847150864083318231400763702321401890",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "GAM Esports",
-   "title": "LoL: MVK Esports vs GAM Esports (BO5) - LCP Playoffs",
-   "their_price": 0.63,
-   "my_price": 0.63,
-   "slippage_pct": 0.0,
-   "lag_s": 10.3,
-   "shares": 78.63,
-   "cost": 49.54,
-   "fee": 0.55,
-   "opened": 1787347788,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787356800
   },
   {
    "token": "46813240769552957690301465649722314458920606621001498189214241604754282131252",
@@ -3169,14 +3169,14 @@
    "last_ts": 1787406799
   },
   "JuiceFarm": {
-   "realized": -220.88,
-   "n": 16,
+   "realized": -270.97,
+   "n": 17,
    "wins": 9,
-   "open_cost": 49.54,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 9,
    "miss_pnl": 21.19,
-   "last_ts": 1787347788
+   "last_ts": 1787410957
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3199,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787406807
+ "updated": 1787410961
 }
