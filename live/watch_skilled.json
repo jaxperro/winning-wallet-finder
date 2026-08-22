@@ -2,7 +2,7 @@
   {
     "wallet": "0x1c316a3b5a0032192f8b53ee1b1c60b14983cde5",
     "name": "LeTimbe22",
-    "weight": 0.0165,
+    "weight": 0.0163,
     "tier": "validated",
     "z": 23.77,
     "z_oos": 16.43,
@@ -14,7 +14,7 @@
   {
     "wallet": "0x3280252a6cef4adac044003a5e8d0c4e07143add",
     "name": "Bravocad0",
-    "weight": 0.0161,
+    "weight": 0.016,
     "tier": "validated",
     "z": 23.2,
     "z_oos": 16.35,
@@ -26,7 +26,7 @@
   {
     "wallet": "0xe75b11fa4fa01db5f11743e5f40df6c23b8e97eb",
     "name": "sleepyzs",
-    "weight": 0.0155,
+    "weight": 0.0153,
     "tier": "validated",
     "z": 22.28,
     "z_oos": 14.23,
@@ -38,7 +38,7 @@
   {
     "wallet": "0x920e797d8d3e2e4029de1bb1483406c0f91a0155",
     "name": "0x920e797D8d3E2E4029DE1Bb1483406C0F91a0155-1768022533027",
-    "weight": 0.014,
+    "weight": 0.0139,
     "tier": "validated",
     "z": 20.18,
     "z_oos": 13.9,
@@ -50,7 +50,7 @@
   {
     "wallet": "0xa17dde9587e0eef15500a3aed3d243496015ef8a",
     "name": "yeppbruhh",
-    "weight": 0.0136,
+    "weight": 0.0135,
     "tier": "validated",
     "z": 19.6,
     "z_oos": 13.31,
@@ -62,7 +62,7 @@
   {
     "wallet": "0x87303279cc118f2c9d908b66f78959a0901d2306",
     "name": "JohnDillinger",
-    "weight": 0.0135,
+    "weight": 0.0134,
     "tier": "validated",
     "z": 19.46,
     "z_oos": 16.47,
@@ -74,7 +74,7 @@
   {
     "wallet": "0x27f953aa9de09d9515ebe292c715327bbfb2c713",
     "name": "Kolmogorov17",
-    "weight": 0.0134,
+    "weight": 0.0133,
     "tier": "validated",
     "z": 19.34,
     "z_oos": 12.8,
@@ -86,7 +86,7 @@
   {
     "wallet": "0x180a88cdc35e143c55a30703de9ba815e8f7e6f5",
     "name": "notsosmoothoperator",
-    "weight": 0.0134,
+    "weight": 0.0133,
     "tier": "validated",
     "z": 19.27,
     "z_oos": 10.78,
@@ -98,7 +98,7 @@
   {
     "wallet": "0xbb078beefa25c7379ee7a85080734dad29cdacaa",
     "name": "0xbB078BeeFa25C7379Ee7A85080734dad29CdAcaA-1764760442896",
-    "weight": 0.0131,
+    "weight": 0.013,
     "tier": "validated",
     "z": 18.86,
     "z_oos": 11.92,
@@ -110,7 +110,7 @@
   {
     "wallet": "0xe45c960f156203eee702174d070376598d7d8f3d",
     "name": "07rob",
-    "weight": 0.0129,
+    "weight": 0.0128,
     "tier": "validated",
     "z": 18.56,
     "z_oos": 13.56,
@@ -122,7 +122,7 @@
   {
     "wallet": "0x188a53bdcd258a7309c4cecc7b4fe4c5a519de60",
     "name": "Mahoraga15",
-    "weight": 0.0121,
+    "weight": 0.0119,
     "tier": "validated",
     "z": 17.36,
     "z_oos": 12.1,
@@ -134,7 +134,7 @@
   {
     "wallet": "0xbbc910116671030c377cfab7f353db6924a9d80b",
     "name": "0xbbc91011\u2026",
-    "weight": 0.0119,
+    "weight": 0.0118,
     "tier": "validated",
     "z": 17.1,
     "z_oos": 9.95,
@@ -146,7 +146,7 @@
   {
     "wallet": "0x1c9001f01592180d222161e2554425faee0ebbd5",
     "name": "0x1c9001f0\u2026",
-    "weight": 0.0117,
+    "weight": 0.0116,
     "tier": "validated",
     "z": 16.81,
     "z_oos": 8.57,
@@ -158,7 +158,7 @@
   {
     "wallet": "0xf419556a9758214628edff29dce8f39a8aa13ce7",
     "name": "2j289uUmAio7ap245975",
-    "weight": 0.0116,
+    "weight": 0.0114,
     "tier": "validated",
     "z": 16.64,
     "z_oos": 9.04,
@@ -170,7 +170,7 @@
   {
     "wallet": "0x1e94c38a31e61906be3b8072d8a2bf5d744665fe",
     "name": "ReimuFumo",
-    "weight": 0.0115,
+    "weight": 0.0114,
     "tier": "validated",
     "z": 16.57,
     "z_oos": 14.09,
@@ -182,7 +182,7 @@
   {
     "wallet": "0x2c36367d97b420fe37ee9ff1e1707a0afd5b41a1",
     "name": "0x2c36367d97b420fe37e",
-    "weight": 0.0115,
+    "weight": 0.0114,
     "tier": "validated",
     "z": 16.53,
     "z_oos": 11.06,
@@ -194,7 +194,7 @@
   {
     "wallet": "0x1e623fcd56223bc23ddc488671ff1b9da9439de1",
     "name": "HyruleLand",
-    "weight": 0.011,
+    "weight": 0.0109,
     "tier": "validated",
     "z": 15.8,
     "z_oos": 15.0,
@@ -206,7 +206,7 @@
   {
     "wallet": "0xd9d65d9b4d41c9bbd77b332009a6d849b886b245",
     "name": "aledoso",
-    "weight": 0.011,
+    "weight": 0.0109,
     "tier": "validated",
     "z": 15.78,
     "z_oos": 9.6,
@@ -218,7 +218,7 @@
   {
     "wallet": "0xb051aa604cbaa34a5dddb96dc9910d14c723b740",
     "name": "tt-king",
-    "weight": 0.0108,
+    "weight": 0.0107,
     "tier": "validated",
     "z": 15.6,
     "z_oos": 13.37,
@@ -230,7 +230,7 @@
   {
     "wallet": "0x5bf5d85a2955d524537fdfb628a632306e4edd75",
     "name": "P33N33R",
-    "weight": 0.0108,
+    "weight": 0.0107,
     "tier": "validated",
     "z": 15.59,
     "z_oos": 9.69,
@@ -242,7 +242,7 @@
   {
     "wallet": "0xe0b6a57694681783d7faa0eb976f52913d5bb5df",
     "name": "igo-igo",
-    "weight": 0.0106,
+    "weight": 0.0105,
     "tier": "validated",
     "z": 15.29,
     "z_oos": 9.88,
@@ -254,7 +254,7 @@
   {
     "wallet": "0x888b8fce359bffae73c6ab8c46cb9e4282b81bb8",
     "name": "ro07b07",
-    "weight": 0.0106,
+    "weight": 0.0105,
     "tier": "validated",
     "z": 15.22,
     "z_oos": 14.0,
@@ -266,7 +266,7 @@
   {
     "wallet": "0xba03f5943a6029ba91b5663e46608b928c2b53ee",
     "name": "JeanClaudeVan",
-    "weight": 0.0101,
+    "weight": 0.01,
     "tier": "validated",
     "z": 14.47,
     "z_oos": 7.96,
@@ -278,7 +278,7 @@
   {
     "wallet": "0x27c5f72bfe3845159d9fada3275f6816694b35fe",
     "name": "0x27c5F72bFE3845159D9FaDA3275f6816694B35fe-1768202632157",
-    "weight": 0.0097,
+    "weight": 0.0096,
     "tier": "validated",
     "z": 13.94,
     "z_oos": 13.05,
@@ -290,7 +290,7 @@
   {
     "wallet": "0x184467effdb7caf231aa03618fe7cf69d2abcc17",
     "name": "Who-Know",
-    "weight": 0.0096,
+    "weight": 0.0095,
     "tier": "validated",
     "z": 13.87,
     "z_oos": 13.73,
@@ -302,7 +302,7 @@
   {
     "wallet": "0xc44402b5b8d0ac02d339c54b4c4e27b1e2322851",
     "name": "dyominov",
-    "weight": 0.0096,
+    "weight": 0.0095,
     "tier": "validated",
     "z": 13.79,
     "z_oos": 5.92,
@@ -314,7 +314,7 @@
   {
     "wallet": "0xc50344b4a71ec795c6e1a234f7be37d93ab8d2d8",
     "name": "palmaxxing",
-    "weight": 0.0094,
+    "weight": 0.0093,
     "tier": "validated",
     "z": 13.58,
     "z_oos": 9.64,
@@ -326,7 +326,7 @@
   {
     "wallet": "0xd05f654adb778a1d2e97cd736bf0bd8d95868ced",
     "name": "nba-1",
-    "weight": 0.0093,
+    "weight": 0.0092,
     "tier": "validated",
     "z": 13.33,
     "z_oos": 9.81,
@@ -338,7 +338,7 @@
   {
     "wallet": "0x2aded8dd4df292b8938d4e7f4dc37a107fe9b7d4",
     "name": "0x2ADEd8DD4df292b8938d4e7F4Dc37a107fe9b7d4-1770569922074",
-    "weight": 0.0092,
+    "weight": 0.0091,
     "tier": "validated",
     "z": 13.26,
     "z_oos": 12.0,
@@ -350,7 +350,7 @@
   {
     "wallet": "0x62e75434f51c8724e0c171d13329fc82c43336dc",
     "name": "dryLg",
-    "weight": 0.0092,
+    "weight": 0.0091,
     "tier": "validated",
     "z": 13.21,
     "z_oos": 2.44,
@@ -362,7 +362,7 @@
   {
     "wallet": "0x7b12a1dce63315f357629735c6db9752410dc0df",
     "name": "prosekov1",
-    "weight": 0.0092,
+    "weight": 0.0091,
     "tier": "validated",
     "z": 13.2,
     "z_oos": 8.97,
@@ -372,9 +372,21 @@
     "band_0204": 0.0
   },
   {
+    "wallet": "0x4caee221267f30efdc751bbca7fdb7ffef10c482",
+    "name": "Hinton07",
+    "weight": 0.0089,
+    "tier": "validated",
+    "z": 12.98,
+    "z_oos": 2.77,
+    "n": 2000,
+    "win_rate": 84.0,
+    "avg_entry": 0.72,
+    "band_0204": 0.0
+  },
+  {
     "wallet": "0x07691ed210b17993774ab8a6d28e77179ca0d586",
     "name": "0x07691Ed210b17993774Ab8a6d28e77179cA0D586-1769747146415",
-    "weight": 0.009,
+    "weight": 0.0089,
     "tier": "validated",
     "z": 12.91,
     "z_oos": 6.18,
@@ -386,7 +398,7 @@
   {
     "wallet": "0xe80ac998c424d6bc2f0d997dae0db6c2bef385fc",
     "name": "Tukey17",
-    "weight": 0.0089,
+    "weight": 0.0088,
     "tier": "validated",
     "z": 12.81,
     "z_oos": 2.19,
@@ -398,7 +410,7 @@
   {
     "wallet": "0x25e691c2d5ce3cd5d57eda8fda35ee570b738454",
     "name": "bigback",
-    "weight": 0.0088,
+    "weight": 0.0087,
     "tier": "validated",
     "z": 12.65,
     "z_oos": 12.67,
@@ -410,7 +422,7 @@
   {
     "wallet": "0xa11578465279358112b92009436478b70dda2257",
     "name": "pm5-oci4",
-    "weight": 0.0087,
+    "weight": 0.0086,
     "tier": "validated",
     "z": 12.5,
     "z_oos": 6.64,
@@ -422,11 +434,11 @@
   {
     "wallet": "0x48270d81cfe598ae0379ca535a26dc41e3e9080d",
     "name": "DiogoBNF566",
-    "weight": 0.0086,
+    "weight": 0.0085,
     "tier": "validated",
     "z": 12.36,
     "z_oos": 7.18,
-    "n": 2012,
+    "n": 2013,
     "win_rate": 94.5,
     "avg_entry": 0.87,
     "band_0204": 0.01
@@ -434,7 +446,7 @@
   {
     "wallet": "0xaaacec4e245f8078ad38f569faf39de2d5d5a834",
     "name": "0xAAACeC4e245F8078Ad38F569faf39DE2d5d5a834-1776987014272",
-    "weight": 0.0086,
+    "weight": 0.0085,
     "tier": "validated",
     "z": 12.34,
     "z_oos": 8.13,
@@ -446,7 +458,7 @@
   {
     "wallet": "0x97f0634d52db9321458ee86f602b3e4acd5c7962",
     "name": "aresh11",
-    "weight": 0.0084,
+    "weight": 0.0083,
     "tier": "validated",
     "z": 12.13,
     "z_oos": 10.31,
@@ -458,7 +470,7 @@
   {
     "wallet": "0x0a46dd7a00c70c82a5a0f18ab7dde4c17fd8bb90",
     "name": "calwboy",
-    "weight": 0.0084,
+    "weight": 0.0083,
     "tier": "validated",
     "z": 12.02,
     "z_oos": 4.52,
@@ -470,7 +482,7 @@
   {
     "wallet": "0xced6599445a7d2686bae2d37b3a3b044c22479ab",
     "name": "jenuehe",
-    "weight": 0.0079,
+    "weight": 0.0078,
     "tier": "validated",
     "z": 11.36,
     "z_oos": 1.53,
@@ -482,7 +494,7 @@
   {
     "wallet": "0xc55bafe7963a92cac8dc5b9ad317789d3f5e604e",
     "name": "muchacho.eth",
-    "weight": 0.0079,
+    "weight": 0.0078,
     "tier": "validated",
     "z": 11.32,
     "z_oos": 8.05,
@@ -494,7 +506,7 @@
   {
     "wallet": "0x68151fbea24fd83a5b2c1549c7695204f8f7997a",
     "name": "MACD83",
-    "weight": 0.0078,
+    "weight": 0.0077,
     "tier": "validated",
     "z": 11.24,
     "z_oos": 10.63,
@@ -530,7 +542,7 @@
   {
     "wallet": "0xf3a42748f204f13e8bddc25eeda913647c0de3aa",
     "name": "vladche11",
-    "weight": 0.0073,
+    "weight": 0.0072,
     "tier": "validated",
     "z": 10.49,
     "z_oos": 7.37,
@@ -542,7 +554,7 @@
   {
     "wallet": "0x412f6ec211e357a12c6b19f048e672827fca21a8",
     "name": "haloa9",
-    "weight": 0.0073,
+    "weight": 0.0072,
     "tier": "validated",
     "z": 10.49,
     "z_oos": 10.45,
@@ -554,7 +566,7 @@
   {
     "wallet": "0x53f4f2d5fde9408dc9a9d706c1d64224273b00aa",
     "name": "MNT-MNTY",
-    "weight": 0.0073,
+    "weight": 0.0072,
     "tier": "validated",
     "z": 10.43,
     "z_oos": 5.98,
@@ -566,7 +578,7 @@
   {
     "wallet": "0xd6842ebe1279084248e682dd6bb03beb29c92292",
     "name": "nayrubimetamask",
-    "weight": 0.0072,
+    "weight": 0.0071,
     "tier": "validated",
     "z": 10.38,
     "z_oos": 10.27,
@@ -578,7 +590,7 @@
   {
     "wallet": "0xc550267b020f05052c1e863312d813c6388da229",
     "name": "0xc550267b020F05052C1e863312D813c6388DA229-1770354784578",
-    "weight": 0.0072,
+    "weight": 0.0071,
     "tier": "validated",
     "z": 10.31,
     "z_oos": 0.09,
@@ -602,7 +614,7 @@
   {
     "wallet": "0x443ca8ac9483b5bda7cf403ddd246fd887e44a03",
     "name": "Melza",
-    "weight": 0.007,
+    "weight": 0.0069,
     "tier": "validated",
     "z": 10.07,
     "z_oos": 8.09,
@@ -614,7 +626,7 @@
   {
     "wallet": "0x77a4ef996340240929277e4087ca51e4702e6221",
     "name": "Br0adsw0rd",
-    "weight": 0.007,
+    "weight": 0.0069,
     "tier": "validated",
     "z": 10.03,
     "z_oos": 8.54,
@@ -626,7 +638,7 @@
   {
     "wallet": "0x2c45f2be0c74bf01580a4b558bb26979d6e64790",
     "name": "0x2C45f2bE0c74bf01580A4b558bb26979D6e64790-1758033737214",
-    "weight": 0.0069,
+    "weight": 0.0068,
     "tier": "validated",
     "z": 9.93,
     "z_oos": 7.38,
@@ -638,7 +650,7 @@
   {
     "wallet": "0x5dd06fbccb9ece45b3e048ec338ab97882aa1f86",
     "name": "dementr",
-    "weight": 0.0067,
+    "weight": 0.0066,
     "tier": "validated",
     "z": 9.65,
     "z_oos": 11.47,
@@ -662,7 +674,7 @@
   {
     "wallet": "0xfe3c3ddb0002b7d931cb9f91cd80f803371c979c",
     "name": "wolfvolf",
-    "weight": 0.0065,
+    "weight": 0.0064,
     "tier": "validated",
     "z": 9.3,
     "z_oos": 5.74,
@@ -674,7 +686,7 @@
   {
     "wallet": "0x0f6f74a2dce3d9804c0eddee9d2706062275d78b",
     "name": "Happyadi",
-    "weight": 0.0065,
+    "weight": 0.0064,
     "tier": "validated",
     "z": 9.28,
     "z_oos": 5.23,
@@ -686,7 +698,7 @@
   {
     "wallet": "0xddd1bbc921558f1fe1b53d0db58f5c5ece792739",
     "name": "30-dollar-per-day",
-    "weight": 0.0065,
+    "weight": 0.0064,
     "tier": "validated",
     "z": 9.28,
     "z_oos": 2.0,
@@ -698,7 +710,7 @@
   {
     "wallet": "0x2e59c7f6172ba30a527bf01d0dd1e06fab03953b",
     "name": "doctormaxii",
-    "weight": 0.0063,
+    "weight": 0.0062,
     "tier": "validated",
     "z": 9.08,
     "z_oos": 0.14,
@@ -710,7 +722,7 @@
   {
     "wallet": "0xd729fb49847b29c2f0fedae8bb12ce2547b5aaf9",
     "name": "wxhzo6v5jgll",
-    "weight": 0.0062,
+    "weight": 0.0061,
     "tier": "validated",
     "z": 8.93,
     "z_oos": 5.89,
@@ -722,7 +734,7 @@
   {
     "wallet": "0x98293c447c79c5bb89d0d1ba9f26cb62bf5e8d57",
     "name": "samsonic575",
-    "weight": 0.006,
+    "weight": 0.0059,
     "tier": "validated",
     "z": 8.65,
     "z_oos": 5.17,
@@ -734,7 +746,7 @@
   {
     "wallet": "0xa8a7bf7cb4c8903cf2b3f24d048ce8cc3c00ad23",
     "name": "Buddha0689",
-    "weight": 0.006,
+    "weight": 0.0059,
     "tier": "validated",
     "z": 8.62,
     "z_oos": 6.86,
@@ -746,7 +758,7 @@
   {
     "wallet": "0x1608951f51f83eac87546396b69ea2fc9bb1eeb8",
     "name": "Voltwist",
-    "weight": 0.006,
+    "weight": 0.0059,
     "tier": "validated",
     "z": 8.59,
     "z_oos": 6.68,
@@ -758,7 +770,7 @@
   {
     "wallet": "0xe39215f4975606af5029c966528c309b83e07922",
     "name": "reallyOo",
-    "weight": 0.0059,
+    "weight": 0.0058,
     "tier": "validated",
     "z": 8.49,
     "z_oos": 9.71,
@@ -794,7 +806,7 @@
   {
     "wallet": "0x79c042bb8e94eecca67f3635bbb5380b00a0b92c",
     "name": "Dalu11",
-    "weight": 0.0057,
+    "weight": 0.0056,
     "tier": "validated",
     "z": 8.2,
     "z_oos": 6.66,
@@ -806,7 +818,7 @@
   {
     "wallet": "0x95e66b1afa5ce4ee351a084060069c29d07a161d",
     "name": "RooneyRF90",
-    "weight": 0.0057,
+    "weight": 0.0056,
     "tier": "validated",
     "z": 8.18,
     "z_oos": 8.1,
@@ -816,9 +828,21 @@
     "band_0204": 0.05
   },
   {
+    "wallet": "0x4fa954bc29d335e90d201cf3c09584e3ef94b1e6",
+    "name": "optimum1111",
+    "weight": 0.0055,
+    "tier": "validated",
+    "z": 8.06,
+    "z_oos": 0.63,
+    "n": 2028,
+    "win_rate": 85.5,
+    "avg_entry": 0.79,
+    "band_0204": 0.0
+  },
+  {
     "wallet": "0x3b16b8d48855d29056eb52d9534f7b92e19b7f0f",
     "name": "CamelliaQAQ",
-    "weight": 0.0056,
+    "weight": 0.0055,
     "tier": "validated",
     "z": 8.02,
     "z_oos": 13.94,
@@ -830,7 +854,7 @@
   {
     "wallet": "0xda24f0caf5766fc36df8ac2f6ae3a567b71a9f1f",
     "name": "Thewinwin",
-    "weight": 0.0055,
+    "weight": 0.0054,
     "tier": "validated",
     "z": 7.9,
     "z_oos": 5.89,
@@ -842,7 +866,7 @@
   {
     "wallet": "0x588bb3fd6f37642135c7f068de8f916240d06ed9",
     "name": "tradingwithsukh",
-    "weight": 0.0055,
+    "weight": 0.0054,
     "tier": "validated",
     "z": 7.87,
     "z_oos": 7.48,
@@ -854,7 +878,7 @@
   {
     "wallet": "0x7517ab6e62b29969761ea1f019251e3f512530c2",
     "name": "thepercolaror",
-    "weight": 0.0053,
+    "weight": 0.0052,
     "tier": "validated",
     "z": 7.6,
     "z_oos": 1.34,
@@ -938,7 +962,7 @@
   {
     "wallet": "0xf1a437dc0ac31303fbc288d1b1dbaf7e7f4c9779",
     "name": "0xd0C09b7e25f88eFfde2",
-    "weight": 0.0049,
+    "weight": 0.0048,
     "tier": "validated",
     "z": 7.02,
     "z_oos": 5.39,
@@ -962,7 +986,7 @@
   {
     "wallet": "0x6d63ac4c8de70f22dc2a338fad41811e813d0b78",
     "name": "dadona99",
-    "weight": 0.0047,
+    "weight": 0.0046,
     "tier": "validated",
     "z": 6.73,
     "z_oos": 4.35,
@@ -986,7 +1010,7 @@
   {
     "wallet": "0x903731581464802d9b94916b0271784142d40386",
     "name": "TheGuyFromBurma",
-    "weight": 0.0046,
+    "weight": 0.0045,
     "tier": "validated",
     "z": 6.57,
     "z_oos": 4.32,
@@ -1010,7 +1034,7 @@
   {
     "wallet": "0xe05fe737b2687f1e571e4f3ae561031cf099d228",
     "name": "OCI0",
-    "weight": 0.0045,
+    "weight": 0.0044,
     "tier": "validated",
     "z": 6.46,
     "z_oos": 8.71,
@@ -1022,7 +1046,7 @@
   {
     "wallet": "0x97cf2e09a0f29cd7ed353279abea49957c0cfed5",
     "name": "SAKKA",
-    "weight": 0.0044,
+    "weight": 0.0043,
     "tier": "validated",
     "z": 6.32,
     "z_oos": 1.01,
@@ -1046,7 +1070,7 @@
   {
     "wallet": "0x5f45951d39b39a29d84d7154bb38883a602c12c8",
     "name": "Kiong",
-    "weight": 0.0043,
+    "weight": 0.0042,
     "tier": "validated",
     "z": 6.17,
     "z_oos": 3.68,
@@ -1058,7 +1082,7 @@
   {
     "wallet": "0x9d9f2a3b378e1fc02cb9e4d9842a0144bf03564f",
     "name": "terra268",
-    "weight": 0.0043,
+    "weight": 0.0042,
     "tier": "validated",
     "z": 6.12,
     "z_oos": 6.35,
@@ -1082,7 +1106,7 @@
   {
     "wallet": "0x4d1828cfad88069d218df925ae7acd49cf425792",
     "name": "sshhhlok",
-    "weight": 0.0042,
+    "weight": 0.0041,
     "tier": "validated",
     "z": 5.97,
     "z_oos": 3.11,
@@ -1094,7 +1118,7 @@
   {
     "wallet": "0x4802d6778a90869cac1240e2ec43b0ad3699c8e1",
     "name": "OnlyCid",
-    "weight": 0.0041,
+    "weight": 0.004,
     "tier": "validated",
     "z": 5.86,
     "z_oos": 2.26,
@@ -1114,6 +1138,18 @@
     "win_rate": 30.8,
     "avg_entry": 0.24,
     "band_0204": 0.27
+  },
+  {
+    "wallet": "0x657b0517a6599f82ada5281817041165c4e843c1",
+    "name": "0x657b0517a6599F82aDA5281817041165c4E843c1-1782796906468",
+    "weight": 0.0039,
+    "tier": "validated",
+    "z": 5.67,
+    "z_oos": 1.94,
+    "n": 1585,
+    "win_rate": 36.1,
+    "avg_entry": 0.31,
+    "band_0204": 0.19
   },
   {
     "wallet": "0x153fd6dbce3bc766746d7e2ffb8e826014e7cb70",
@@ -1142,7 +1178,7 @@
   {
     "wallet": "0x0fa3c79b3667919d4687604b6d6e6e2732dde5b1",
     "name": "organthus",
-    "weight": 0.0039,
+    "weight": 0.0038,
     "tier": "validated",
     "z": 5.58,
     "z_oos": 5.07,
@@ -1154,7 +1190,7 @@
   {
     "wallet": "0xade9a034e7c0a6f88bbaff8bb3776bdb1e916c33",
     "name": "0xade9a034E7C0A6F88bBAFf8BB3776BDB1e916C33-1769825586814",
-    "weight": 0.0039,
+    "weight": 0.0038,
     "tier": "validated",
     "z": 5.55,
     "z_oos": 5.9,
@@ -1214,7 +1250,7 @@
   {
     "wallet": "0xc2c1a51e382ce8395147f3efe552747066398a04",
     "name": "ymdr",
-    "weight": 0.0038,
+    "weight": 0.0037,
     "tier": "validated",
     "z": 5.4,
     "z_oos": 5.24,
@@ -1308,18 +1344,6 @@
     "band_0204": 0.02
   },
   {
-    "wallet": "0x0832aac99de8e0a8c6ed640b360c9fb145d2e2a5",
-    "name": "reduz",
-    "weight": 0.0035,
-    "tier": "validated",
-    "z": 5.04,
-    "z_oos": 5.17,
-    "n": 1566,
-    "win_rate": 80.3,
-    "avg_entry": 0.75,
-    "band_0204": 0.04
-  },
-  {
     "wallet": "0x9e8af8843814cbf9f0433bf1d5ff8bd2119f9899",
     "name": "0x9e8af884\u2026",
     "weight": 0.0035,
@@ -1334,7 +1358,7 @@
   {
     "wallet": "0xde4d8610814eeea276e15f26918153156422b7bf",
     "name": "etherbot",
-    "weight": 0.0035,
+    "weight": 0.0034,
     "tier": "validated",
     "z": 4.97,
     "z_oos": 4.49,
@@ -1346,7 +1370,7 @@
   {
     "wallet": "0x25441604568516ea9260eadfa0b9e75fcbbed383",
     "name": "0x25441604568516EA9260eADfA0b9e75fcBBed383-1771149391468",
-    "weight": 0.0035,
+    "weight": 0.0034,
     "tier": "validated",
     "z": 4.97,
     "z_oos": 2.68,
@@ -1370,7 +1394,7 @@
   {
     "wallet": "0x552e1b8c0764335522fa135152ffc3f4ae17b01d",
     "name": "rabu",
-    "weight": 0.0034,
+    "weight": 0.0033,
     "tier": "validated",
     "z": 4.84,
     "z_oos": 2.84,
@@ -1382,7 +1406,7 @@
   {
     "wallet": "0xbf300a22e078e1fa9c8673b183be46adc21399db",
     "name": "asdasdwq",
-    "weight": 0.0033,
+    "weight": 0.0032,
     "tier": "validated",
     "z": 4.69,
     "z_oos": 1.28,
@@ -1454,7 +1478,7 @@
   {
     "wallet": "0xc79ca85654af1739c318a6746a212edc18455f9c",
     "name": "3ta",
-    "weight": 0.0031,
+    "weight": 0.003,
     "tier": "validated",
     "z": 4.43,
     "z_oos": 0.57,
@@ -1466,7 +1490,7 @@
   {
     "wallet": "0xa61bc050fbdc3ebf4c06600ce74ae9cfe30fe7ba",
     "name": "Ultima.predict",
-    "weight": 0.0031,
+    "weight": 0.003,
     "tier": "validated",
     "z": 4.42,
     "z_oos": 3.68,
@@ -1490,7 +1514,7 @@
   {
     "wallet": "0x80cc82ce1994080c3f07ed1aa3177480b6ad10a5",
     "name": "pitsanusand",
-    "weight": 0.003,
+    "weight": 0.0029,
     "tier": "validated",
     "z": 4.27,
     "z_oos": 3.9,
@@ -1502,7 +1526,7 @@
   {
     "wallet": "0xe6f95f25c2fbf5a48384b7a5a2e874437b4fcd99",
     "name": "0xe6F95f25C2FbF5a48384b7A5A2e874437b4fCd99-1774362333547",
-    "weight": 0.003,
+    "weight": 0.0029,
     "tier": "validated",
     "z": 4.26,
     "z_oos": 1.26,
@@ -1514,7 +1538,7 @@
   {
     "wallet": "0xb83a83d9194df5e6ba6fe3b7cda15aa1ae9260f2",
     "name": "0x110000011",
-    "weight": 0.003,
+    "weight": 0.0029,
     "tier": "validated",
     "z": 4.26,
     "z_oos": 3.29,
@@ -1550,7 +1574,7 @@
   {
     "wallet": "0xd44841b9cc8845da320ccb3656c05370f060fbbf",
     "name": "Jonathan95972",
-    "weight": 0.0029,
+    "weight": 0.0028,
     "tier": "validated",
     "z": 4.14,
     "z_oos": 0.05,
@@ -1562,7 +1586,7 @@
   {
     "wallet": "0x2257901897e83d39e778fa86d568dc1cd9a2dca2",
     "name": "iuii899889",
-    "weight": 0.0029,
+    "weight": 0.0028,
     "tier": "validated",
     "z": 4.14,
     "z_oos": 2.29,
@@ -1574,7 +1598,7 @@
   {
     "wallet": "0x0cb3d6bc82baea0c7506c0ac07867e4cbb2132e6",
     "name": "Morotheking",
-    "weight": 0.0029,
+    "weight": 0.0028,
     "tier": "validated",
     "z": 4.1,
     "z_oos": 3.86,
@@ -1598,7 +1622,7 @@
   {
     "wallet": "0x4ec200641db6811b83af6f066f02d84a14013fe2",
     "name": "huiyinde",
-    "weight": 0.0028,
+    "weight": 0.0027,
     "tier": "validated",
     "z": 3.99,
     "z_oos": 2.23,
@@ -1612,10 +1636,10 @@
     "name": "venera1234",
     "weight": 0.0027,
     "tier": "validated",
-    "z": 3.95,
-    "z_oos": 1.87,
-    "n": 2495,
-    "win_rate": 63.8,
+    "z": 3.96,
+    "z_oos": 1.88,
+    "n": 2498,
+    "win_rate": 63.9,
     "avg_entry": 0.61,
     "band_0204": 0.09
   },
@@ -1646,7 +1670,7 @@
   {
     "wallet": "0xb2d0277eb65841e61b0e5a189c2fe9f31dd7de90",
     "name": "0xB2d0277eB65841E61B0e5a189C2fE9F31Dd7De90-1774098758083",
-    "weight": 0.0027,
+    "weight": 0.0026,
     "tier": "validated",
     "z": 3.84,
     "z_oos": 3.0,
@@ -1658,7 +1682,7 @@
   {
     "wallet": "0x9a170693f7501b4cba8dee9f1e83d7bbdf8507de",
     "name": "Tubishka",
-    "weight": 0.0027,
+    "weight": 0.0026,
     "tier": "validated",
     "z": 3.83,
     "z_oos": 6.2,
@@ -1706,7 +1730,7 @@
   {
     "wallet": "0x28407224ec6911041e0f007d9591da0d9aa78f66",
     "name": "dpv5uk1m258p",
-    "weight": 0.0026,
+    "weight": 0.0025,
     "tier": "validated",
     "z": 3.68,
     "z_oos": 3.44,
@@ -1814,7 +1838,7 @@
   {
     "wallet": "0x91e8ec880471a69da3c74356a9ec2571d37b24f8",
     "name": "Bigbang4",
-    "weight": 0.0023,
+    "weight": 0.0022,
     "tier": "validated",
     "z": 3.26,
     "z_oos": 0.78,
@@ -1862,7 +1886,7 @@
   {
     "wallet": "0x4d6a054119f319f16e2acd921cf8c077788efc79",
     "name": "0x4d6a0541\u2026",
-    "weight": 0.0022,
+    "weight": 0.0021,
     "tier": "validated",
     "z": 3.12,
     "z_oos": 1.52,
@@ -1874,7 +1898,7 @@
   {
     "wallet": "0x12eb5c354e1e74a6335e5fde181f6fe58bd465f1",
     "name": "0x12eb5c35\u2026",
-    "weight": 0.0022,
+    "weight": 0.0021,
     "tier": "validated",
     "z": 3.12,
     "z_oos": 3.42,
@@ -1886,7 +1910,7 @@
   {
     "wallet": "0x536be02af900fe046fa708c8059c04f737a2cee3",
     "name": "fill-or-fok-me",
-    "weight": 0.0022,
+    "weight": 0.0021,
     "tier": "validated",
     "z": 3.11,
     "z_oos": 2.03,
@@ -1896,21 +1920,9 @@
     "band_0204": 0.34
   },
   {
-    "wallet": "0x43efc5f0c3c271d2433289324d41bbbbbddb7d5a",
-    "name": "Edgar696",
-    "weight": 0.0021,
-    "tier": "validated",
-    "z": 3.07,
-    "z_oos": 0.32,
-    "n": 1422,
-    "win_rate": 63.4,
-    "avg_entry": 0.6,
-    "band_0204": 0.1
-  },
-  {
     "wallet": "0x10b289276b2b69cac7b1bbc58601009b6ee74ceb",
     "name": "5273853",
-    "weight": 0.0021,
+    "weight": 0.002,
     "tier": "validated",
     "z": 2.97,
     "z_oos": 2.04,
@@ -1922,7 +1934,7 @@
   {
     "wallet": "0x022c64bae2314da6caea0407ddefa85b9fa438c4",
     "name": "777luck",
-    "weight": 0.0021,
+    "weight": 0.002,
     "tier": "validated",
     "z": 2.95,
     "z_oos": 1.85,
@@ -2006,7 +2018,7 @@
   {
     "wallet": "0x52e9ddafda7ae033b1dd4553c7acdb9b3effb5cd",
     "name": "muUren",
-    "weight": 0.002,
+    "weight": 0.0019,
     "tier": "validated",
     "z": 2.82,
     "z_oos": 1.27,
@@ -2040,18 +2052,6 @@
     "band_0204": 0.22
   },
   {
-    "wallet": "0x2675a7e0313a48e5d23d8d8498f1835bb20b5ab7",
-    "name": "0x2675a7e0\u2026",
-    "weight": 0.0019,
-    "tier": "validated",
-    "z": 2.73,
-    "z_oos": 1.52,
-    "n": 940,
-    "win_rate": 51.9,
-    "avg_entry": 0.48,
-    "band_0204": 0.26
-  },
-  {
     "wallet": "0xb615ca2e43ac4d650bbd352de56643989b546d93",
     "name": "Lihuiying",
     "weight": 0.0019,
@@ -2064,9 +2064,21 @@
     "band_0204": 0.15
   },
   {
+    "wallet": "0x4f7d834c2292157e8c1c34653a60dff3cd8ab3ff",
+    "name": "52463434",
+    "weight": 0.0019,
+    "tier": "validated",
+    "z": 2.69,
+    "z_oos": 0.62,
+    "n": 1102,
+    "win_rate": 40.1,
+    "avg_entry": 0.37,
+    "band_0204": 0.21
+  },
+  {
     "wallet": "0xdeca32428d5cf4b1c4d7266a950e20791676ddd5",
     "name": "durrrrrrrr",
-    "weight": 0.0019,
+    "weight": 0.0018,
     "tier": "validated",
     "z": 2.68,
     "z_oos": 1.77,
@@ -2078,7 +2090,7 @@
   {
     "wallet": "0x30cbe5bb3dffdbe8824e38e3396ffa421ee463bc",
     "name": "anon112233",
-    "weight": 0.0019,
+    "weight": 0.0018,
     "tier": "validated",
     "z": 2.68,
     "z_oos": 0.89,
@@ -2086,18 +2098,6 @@
     "win_rate": 58.7,
     "avg_entry": 0.56,
     "band_0204": 0.14
-  },
-  {
-    "wallet": "0x4f7d834c2292157e8c1c34653a60dff3cd8ab3ff",
-    "name": "52463434",
-    "weight": 0.0019,
-    "tier": "validated",
-    "z": 2.67,
-    "z_oos": 0.63,
-    "n": 1101,
-    "win_rate": 40.1,
-    "avg_entry": 0.37,
-    "band_0204": 0.21
   },
   {
     "wallet": "0x0a8469fa9307f27ffaf2c363e440678253ba3a87",
@@ -2148,6 +2148,18 @@
     "band_0204": 0.25
   },
   {
+    "wallet": "0x40e9808592e9458f7a26a3f272960290f3b8494f",
+    "name": "zusu",
+    "weight": 0.0018,
+    "tier": "validated",
+    "z": 2.58,
+    "z_oos": 2.25,
+    "n": 1357,
+    "win_rate": 50.9,
+    "avg_entry": 0.48,
+    "band_0204": 0.18
+  },
+  {
     "wallet": "0xe574b987b793b08eb34d7d238eccc30a3d9bf4f5",
     "name": "0xe574b987\u2026",
     "weight": 0.0018,
@@ -2160,21 +2172,9 @@
     "band_0204": 0.17
   },
   {
-    "wallet": "0x40e9808592e9458f7a26a3f272960290f3b8494f",
-    "name": "zusu",
-    "weight": 0.0018,
-    "tier": "validated",
-    "z": 2.56,
-    "z_oos": 2.2,
-    "n": 1349,
-    "win_rate": 50.9,
-    "avg_entry": 0.48,
-    "band_0204": 0.18
-  },
-  {
     "wallet": "0xa191f2791f6dc0adf74c4d9223ae7df3cdf6b426",
     "name": "0xa191F2791F6Dc0aDf74C4D9223AE7df3cdF6b426-1782305345333",
-    "weight": 0.0018,
+    "weight": 0.0017,
     "tier": "validated",
     "z": 2.53,
     "z_oos": 0.52,
@@ -2234,7 +2234,7 @@
   {
     "wallet": "0x027b5b9468451566b53b293a53c42669f3de019c",
     "name": "xiaoyang88",
-    "weight": 0.0017,
+    "weight": 0.0016,
     "tier": "validated",
     "z": 2.39,
     "z_oos": 3.29,
@@ -2242,18 +2242,6 @@
     "win_rate": 87.0,
     "avg_entry": 0.82,
     "band_0204": 0.0
-  },
-  {
-    "wallet": "0x3c0357a7698b0731a3d538f5119091b3c817474f",
-    "name": "0x3C0357A7698B0731A3D538f5119091B3c817474f-1772386611907",
-    "weight": 0.0017,
-    "tier": "validated",
-    "z": 2.38,
-    "z_oos": 1.38,
-    "n": 1915,
-    "win_rate": 49.1,
-    "avg_entry": 0.47,
-    "band_0204": 0.18
   },
   {
     "wallet": "0x737db8f4c10051e0e8a830ad83e141f766d01f6b",
@@ -2266,5 +2254,17 @@
     "win_rate": 83.1,
     "avg_entry": 0.81,
     "band_0204": 0.03
+  },
+  {
+    "wallet": "0x10b055ced6691ea97529ce7595f01d3e7ff28525",
+    "name": "BEBE1",
+    "weight": 0.0016,
+    "tier": "validated",
+    "z": 2.35,
+    "z_oos": 2.2,
+    "n": 2464,
+    "win_rate": 51.3,
+    "avg_entry": 0.49,
+    "band_0204": 0.23
   }
 ]
