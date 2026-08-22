@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787424663,
+ "updated": 1787425365,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 658.73,
@@ -66,11 +66,11 @@
    "realized": -55.37,
    "n": 36,
    "wins": 7,
-   "open_cost": 1279.14,
-   "open_n": 23,
+   "open_cost": 1327.39,
+   "open_n": 24,
    "miss_n": 65,
    "miss_pnl": -1015.23,
-   "last_ts": 1787406799
+   "last_ts": 1787425355
   },
   "JuiceFarm": {
    "realized": -270.97,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "78735213477140259179719985437634225008013438052010449207550476177307188383355",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Mojtaba Khamenei seen in public by December 31?",
+   "their_price": 0.73,
+   "my_price": 0.73,
+   "slippage_pct": 0.0,
+   "lag_s": 10.8,
+   "shares": 66.09,
+   "cost": 48.25,
+   "fee": 0.3908,
+   "opened": 1787425355,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798761600
+  },
   {
    "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",

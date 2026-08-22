@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.25,
+ "stake": 48.24,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 858.5,
- "deployed": 1553.92,
+ "cash": 809.87,
+ "deployed": 1602.16,
  "reserve": 0.0,
- "realized": 1412.39,
+ "realized": 1412.0,
  "adjustments": 0.03,
- "ledger_drift": -0.05,
- "open_count": 34,
- "fees_paid": 518.95,
+ "ledger_drift": -0.04,
+ "open_count": 35,
+ "fees_paid": 519.34,
  "fee_rate": 0.03,
  "lag": {
-  "n": 506,
-  "n24": 2,
+  "n": 507,
+  "n24": 3,
   "basis": "24h",
-  "avg_s": 9.6,
+  "avg_s": 10.3,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "78735213477140259179719985437634225008013438052010449207550476177307188383355",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Mojtaba Khamenei seen in public by December 31?",
+   "their_price": 0.73,
+   "my_price": 0.73,
+   "slippage_pct": 0.0,
+   "lag_s": 10.8,
+   "shares": 66.09,
+   "cost": 48.25,
+   "fee": 0.39,
+   "opened": 1787425355,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798761600
+  },
   {
    "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2118,26 +2138,6 @@
    "end_ts": 1786233600,
    "sold_shares": 60.17,
    "sold_proceeds": 57.9
-  },
-  {
-   "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by August 31?",
-   "their_price": 0.533,
-   "my_price": 0.533,
-   "slippage_pct": 0.0,
-   "lag_s": 0.8,
-   "shares": 89.98,
-   "cost": 47.96,
-   "fee": 0.67,
-   "opened": 1786201916,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788134400
   }
  ],
  "missed": [
@@ -3095,12 +3095,12 @@
  ],
  "missed_pnl": 577.14,
  "last_fill": {
-  "ts": 1787424661,
-  "side": "SELL",
-  "price": 1.0,
-  "shares": 27.89,
-  "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
-  "outcome": "Under"
+  "ts": 1787425365,
+  "side": "BUY",
+  "price": 0.73,
+  "shares": 66.09,
+  "title": "Mojtaba Khamenei seen in public by December 31?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3167,11 +3167,11 @@
    "realized": -55.37,
    "n": 36,
    "wins": 7,
-   "open_cost": 1279.14,
-   "open_n": 23,
+   "open_cost": 1327.39,
+   "open_n": 24,
    "miss_n": 65,
    "miss_pnl": -1015.23,
-   "last_ts": 1787406799
+   "last_ts": 1787425355
   },
   "JuiceFarm": {
    "realized": -270.97,
@@ -3204,5 +3204,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787424663
+ "updated": 1787425365
 }
