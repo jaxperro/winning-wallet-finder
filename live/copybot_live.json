@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.0,
+ "stake": 48.25,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 830.61,
- "deployed": 1569.26,
+ "cash": 858.5,
+ "deployed": 1553.92,
  "reserve": 0.0,
- "realized": 1399.84,
+ "realized": 1412.39,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 35,
+ "open_count": 34,
  "fees_paid": 518.95,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Under",
+   "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
+   "their_price": 0.55,
+   "my_price": 0.55,
+   "slippage_pct": 0.0,
+   "lag_s": 41.4,
+   "shares": 27.89,
+   "cost": 15.34,
+   "fee": 0.21,
+   "opened": 1787004901,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 12.34,
+   "settled": 1787424663,
+   "end_ts": 1787356800,
+   "sold_shares": 27.89,
+   "sold_proceeds": 27.89
+  },
   {
    "token": "105652524447125478110228276956220710633753847150864083318231400763702321401890",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -785,26 +807,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1793404800
-  },
-  {
-   "token": "47212392080449334908212210963424006483456786284303151856662490390896132247145",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Under",
-   "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
-   "their_price": 0.55,
-   "my_price": 0.55,
-   "slippage_pct": 0.0,
-   "lag_s": 41.4,
-   "shares": 27.89,
-   "cost": 15.34,
-   "fee": 0.21,
-   "opened": 1787004901,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787356800
   },
   {
    "token": "115351075585746600277716377744935410125916932950844626289798775482755919708780",
@@ -3093,12 +3095,12 @@
  ],
  "missed_pnl": 577.14,
  "last_fill": {
-  "ts": 1787406807,
-  "side": "BUY",
-  "price": 0.791,
-  "shares": 61.93,
-  "title": "Will Alexandria Ocasio-Cortez win the 2028 Democratic presid",
-  "outcome": "No"
+  "ts": 1787424661,
+  "side": "SELL",
+  "price": 1.0,
+  "shares": 27.89,
+  "title": "Genoa CFC vs. SSC Napoli: O/U 9.5 Total Corners",
+  "outcome": "Under"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3132,14 +3134,14 @@
    "last_ts": 1785987921
   },
   "Kruto2027": {
-   "realized": -25.51,
-   "n": 21,
+   "realized": -13.17,
+   "n": 22,
    "wins": 3,
-   "open_cost": 15.34,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 32,
    "miss_pnl": 761.07,
-   "last_ts": 1787328491
+   "last_ts": 1787424663
   },
   "LSB1": {
    "realized": -397.16,
@@ -3202,5 +3204,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787417349
+ "updated": 1787424663
 }
