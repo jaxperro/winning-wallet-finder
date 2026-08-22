@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787377397,
+ "updated": 1787378988,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 658.73,
@@ -63,14 +63,14 @@
    "last_ts": 1787247137
   },
   "BikesAreTheBikes": {
-   "realized": -28.56,
-   "n": 35,
+   "realized": -55.37,
+   "n": 36,
    "wins": 7,
-   "open_cost": 1256.78,
-   "open_n": 23,
+   "open_cost": 1230.15,
+   "open_n": 22,
    "miss_n": 65,
    "miss_pnl": -1015.23,
-   "last_ts": 1787147524
+   "last_ts": 1787378982
   },
   "JuiceFarm": {
    "realized": -220.88,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "87623015856302842960010309762440982581803742318399419544646008856275103748218",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will the next Google Gemini Pro model be released by August 21, 2026?",
+   "their_price": 0.77,
+   "my_price": 0.77,
+   "slippage_pct": 0.0,
+   "lag_s": 1.1,
+   "shares": 34.58,
+   "cost": 26.63,
+   "fee": 0.1837,
+   "opened": 1785865057,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -26.81,
+   "settled": 1787378982,
+   "end_ts": 1787270400
+  },
   {
    "token": "105652524447125478110228276956220710633753847150864083318231400763702321401890",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2522,26 +2542,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1798675200
-  },
-  {
-   "token": "87623015856302842960010309762440982581803742318399419544646008856275103748218",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "Will the next Google Gemini Pro model be released by August 21, 2026?",
-   "their_price": 0.77,
-   "my_price": 0.77,
-   "slippage_pct": 0.0,
-   "lag_s": 1.1,
-   "shares": 34.58,
-   "cost": 26.63,
-   "fee": 0.1837,
-   "opened": 1785865057,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787270400
   },
   {
    "token": "41800024459753239846641136399457022409586964534205265889258791197815836336250",

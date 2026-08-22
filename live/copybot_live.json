@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 49.53,
+ "stake": 48.99,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
  "cash": 879.91,
- "deployed": 1596.43,
+ "deployed": 1569.81,
  "reserve": 0.0,
- "realized": 1476.31,
+ "realized": 1449.68,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 36,
+ "open_count": 35,
  "fees_paid": 518.64,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "87623015856302842960010309762440982581803742318399419544646008856275103748218",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will the next Google Gemini Pro model be released by August 21, 2026?",
+   "their_price": 0.77,
+   "my_price": 0.77,
+   "slippage_pct": 0.0,
+   "lag_s": 1.1,
+   "shares": 34.58,
+   "cost": 26.63,
+   "fee": 0.18,
+   "opened": 1785865057,
+   "status": "lost",
+   "exit_price": 0.0,
+   "pnl": -26.81,
+   "settled": 1787378982,
+   "end_ts": 1787270400
+  },
   {
    "token": "105652524447125478110228276956220710633753847150864083318231400763702321401890",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2116,26 +2136,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400
-  },
-  {
-   "token": "87823307068114498763935325850531429658457985750942226626931639924771886967405",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "US announces end of Iranian blockade by August 7, 2026?",
-   "their_price": 0.5,
-   "my_price": 0.5,
-   "slippage_pct": 0.0,
-   "lag_s": 2.4,
-   "shares": 105.93,
-   "cost": 52.97,
-   "fee": 0.79,
-   "opened": 1785849943,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 52.17,
-   "settled": 1786169289,
-   "end_ts": 1786060800
   }
  ],
  "missed": [
@@ -3159,14 +3159,14 @@
    "last_ts": 1787247137
   },
   "BikesAreTheBikes": {
-   "realized": -28.56,
-   "n": 35,
+   "realized": -55.37,
+   "n": 36,
    "wins": 7,
-   "open_cost": 1256.78,
-   "open_n": 23,
+   "open_cost": 1230.15,
+   "open_n": 22,
    "miss_n": 65,
    "miss_pnl": -1015.23,
-   "last_ts": 1787147524
+   "last_ts": 1787378982
   },
   "JuiceFarm": {
    "realized": -220.88,
@@ -3199,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787377397
+ "updated": 1787378988
 }
