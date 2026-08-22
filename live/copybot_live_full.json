@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787413456,
+ "updated": 1787415681,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 658.73,
@@ -9,7 +9,7 @@
    "open_cost": 427.54,
    "open_n": 11,
    "miss_n": 180,
-   "miss_pnl": 119064.5,
+   "miss_pnl": 119083.4,
    "last_ts": 1787345115
   },
   "gkmgkldfmg": {
@@ -9458,6 +9458,36 @@
  ],
  "missed": [
   {
+   "ts": 1787377390,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "24900527865627550329216442013516860709508871655953809120326211285852347866467",
+   "cond": "0x7034b2044346aef1a1d21ab0e926eb58c8f4961eda44635c07631971498ebade",
+   "title": "Ethereum Up or Down on August 22?",
+   "outcome": "Up",
+   "price": 0.7265,
+   "stake": 35.54,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "won",
+   "pnl": 13.09,
+   "settled": 1787415681,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1787386035,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "67551965906013358403974154133813037181090338283232404024582042859801852493861",
+   "cond": "0xeea446864d0cfd6549339257f65efe0e3f4df32e39984bcc0de312c9fd7bbddd",
+   "title": "Will the price of XRP be above $1.40 on August 22?",
+   "outcome": "Yes",
+   "price": 0.8845,
+   "stake": 45.74,
+   "reason": "maker bid unfilled (70s)",
+   "status": "won",
+   "pnl": 5.81,
+   "settled": 1787415681,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1787076749,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "85139584659413094713039776812783702898851309932453198691175417225600723873316",
@@ -9472,36 +9502,6 @@
    "settled": 1787391964,
    "name": "0xbadaf319",
    "exit_price": 0.9328
-  },
-  {
-   "ts": 1787386035,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "67551965906013358403974154133813037181090338283232404024582042859801852493861",
-   "cond": "0xeea446864d0cfd6549339257f65efe0e3f4df32e39984bcc0de312c9fd7bbddd",
-   "title": "Will the price of XRP be above $1.40 on August 22?",
-   "outcome": "Yes",
-   "price": 0.8845,
-   "stake": 45.74,
-   "reason": "maker bid unfilled (70s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1787377390,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "24900527865627550329216442013516860709508871655953809120326211285852347866467",
-   "cond": "0x7034b2044346aef1a1d21ab0e926eb58c8f4961eda44635c07631971498ebade",
-   "title": "Ethereum Up or Down on August 22?",
-   "outcome": "Up",
-   "price": 0.7265,
-   "stake": 35.54,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1787362877,
