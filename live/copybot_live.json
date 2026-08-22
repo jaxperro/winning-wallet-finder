@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.24,
+ "stake": 48.25,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 773.95,
- "deployed": 1637.95,
+ "cash": 777.79,
+ "deployed": 1634.65,
  "reserve": 0.0,
- "realized": 1411.86,
+ "realized": 1412.4,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 36,
@@ -1826,8 +1826,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1830297600,
-   "sold_shares": 2.06,
-   "sold_proceeds": 2.02
+   "sold_shares": 5.95,
+   "sold_proceeds": 5.86
   },
   {
    "token": "13316447578737225357026702171465597443147415868165853161202310730878584654286",
@@ -3094,11 +3094,11 @@
  ],
  "missed_pnl": 527.24,
  "last_fill": {
-  "ts": 1787439158,
-  "side": "BUY",
-  "price": 0.87,
-  "shares": 41.13,
-  "title": "Kraken IPO closing market cap above $18B?",
+  "ts": 1787441046,
+  "side": "SELL",
+  "price": 0.99,
+  "shares": 3.88,
+  "title": "Decibel FDV above $500M one day after launch?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3203,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787439165
+ "updated": 1787441046
 }
