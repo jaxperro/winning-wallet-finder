@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 809.87,
- "deployed": 1602.16,
+ "cash": 773.95,
+ "deployed": 1637.95,
  "reserve": 0.0,
- "realized": 1412.0,
+ "realized": 1411.86,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 35,
- "fees_paid": 519.34,
+ "open_count": 36,
+ "fees_paid": 519.48,
  "fee_rate": 0.03,
  "lag": {
-  "n": 507,
-  "n24": 2,
+  "n": 508,
+  "n24": 3,
   "basis": "24h",
-  "avg_s": 9.8,
+  "avg_s": 8.8,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "78001011783046061800468570563350488088400397946820543402147928931383794683812",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Kraken IPO closing market cap above $18B?",
+   "their_price": 0.87,
+   "my_price": 0.87,
+   "slippage_pct": 0.0,
+   "lag_s": 1.4,
+   "shares": 41.13,
+   "cost": 35.78,
+   "fee": 0.14,
+   "opened": 1787439157,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798761600
+  },
   {
    "token": "78735213477140259179719985437634225008013438052010449207550476177307188383355",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2116,28 +2136,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1790726400
-  },
-  {
-   "token": "29886341249261328795182573383036530504170574765280862983740336186729016438291",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Bitcoin be between $66,000 and $68,000 on August 9?",
-   "their_price": 0.797,
-   "my_price": 0.797,
-   "slippage_pct": 0.0,
-   "lag_s": 2.3,
-   "shares": 60.18,
-   "cost": 47.96,
-   "fee": 0.29,
-   "opened": 1786177658,
-   "status": "closed",
-   "exit_price": 0.9622,
-   "pnl": 9.65,
-   "settled": 1786213197,
-   "end_ts": 1786233600,
-   "sold_shares": 60.17,
-   "sold_proceeds": 57.9
   }
  ],
  "missed": [
@@ -3096,11 +3094,11 @@
  ],
  "missed_pnl": 527.24,
  "last_fill": {
-  "ts": 1787425365,
+  "ts": 1787439158,
   "side": "BUY",
-  "price": 0.73,
-  "shares": 66.09,
-  "title": "Mojtaba Khamenei seen in public by December 31?",
+  "price": 0.87,
+  "shares": 41.13,
+  "title": "Kraken IPO closing market cap above $18B?",
   "outcome": "No"
  },
  "wallet_pnl": {
@@ -3108,11 +3106,11 @@
    "realized": 658.73,
    "n": 120,
    "wins": 40,
-   "open_cost": 427.54,
-   "open_n": 11,
+   "open_cost": 463.32,
+   "open_n": 12,
    "miss_n": 180,
    "miss_pnl": 119080.71,
-   "last_ts": 1787345115
+   "last_ts": 1787439157
   },
   "gkmgkldfmg": {
    "realized": 1211.69,
@@ -3205,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787438869
+ "updated": 1787439165
 }

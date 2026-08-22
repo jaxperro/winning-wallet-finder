@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1787438869,
+ "updated": 1787439165,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 658.73,
    "n": 120,
    "wins": 40,
-   "open_cost": 427.54,
-   "open_n": 11,
+   "open_cost": 463.32,
+   "open_n": 12,
    "miss_n": 180,
    "miss_pnl": 119080.71,
-   "last_ts": 1787345115
+   "last_ts": 1787439157
   },
   "gkmgkldfmg": {
    "realized": 1211.69,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "78001011783046061800468570563350488088400397946820543402147928931383794683812",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Kraken IPO closing market cap above $18B?",
+   "their_price": 0.87,
+   "my_price": 0.87,
+   "slippage_pct": 0.0,
+   "lag_s": 1.4,
+   "shares": 41.13,
+   "cost": 35.78,
+   "fee": 0.1396,
+   "opened": 1787439157,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798761600
+  },
   {
    "token": "78735213477140259179719985437634225008013438052010449207550476177307188383355",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
