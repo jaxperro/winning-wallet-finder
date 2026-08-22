@@ -2140,6 +2140,21 @@
  ],
  "missed": [
   {
+   "ts": 1787386035,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "67551965906013358403974154133813037181090338283232404024582042859801852493861",
+   "cond": "0xeea446864d0cfd6549339257f65efe0e3f4df32e39984bcc0de312c9fd7bbddd",
+   "title": "Will the price of XRP be above $1.40 on August 22?",
+   "outcome": "Yes",
+   "price": 0.8845,
+   "stake": 45.74,
+   "reason": "maker bid unfilled (70s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1787377390,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "24900527865627550329216442013516860709508871655953809120326211285852347866467",
@@ -3070,25 +3085,9 @@
    "settled": 1786734788,
    "name": "Kruto2027",
    "exit_checked": true
-  },
-  {
-   "ts": 1786709545,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "104143571606909199329708263924791152790335278869472883788501031610059362131174",
-   "cond": "0xe9c1dd0e33074e5b513ac1a08798a1060e43e14c654b6b42728dfa9c700e1915",
-   "title": "Navbahor vs. FC Bunyodkor: FC Bunyodkor 1st Half O/U 0.5",
-   "outcome": "Under",
-   "price": 0.6,
-   "stake": 14.47,
-   "reason": "maker bid unfilled (97s)",
-   "status": "sold",
-   "pnl": 1.22,
-   "settled": 1786713374,
-   "name": "Kruto2027",
-   "exit_price": 0.6646
   }
  ],
- "missed_pnl": 548.28,
+ "missed_pnl": 561.1,
  "last_fill": {
   "ts": 1787347798,
   "side": "BUY",
@@ -3104,7 +3103,7 @@
    "wins": 40,
    "open_cost": 427.54,
    "open_n": 11,
-   "miss_n": 179,
+   "miss_n": 180,
    "miss_pnl": 119064.67,
    "last_ts": 1787345115
   },
@@ -3199,5 +3198,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787378988
+ "updated": 1787386050
 }
