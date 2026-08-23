@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.25,
+ "stake": 48.28,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 736.18,
- "deployed": 1676.42,
+ "cash": 755.99,
+ "deployed": 1658.05,
  "reserve": 0.0,
- "realized": 1412.56,
+ "realized": 1414.01,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
  "open_count": 37,
- "fees_paid": 519.84,
+ "fees_paid": 519.87,
  "fee_rate": 0.03,
  "lag": {
   "n": 509,
@@ -89,8 +89,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1798761600,
-   "sold_shares": 7.44,
-   "sold_proceeds": 6.98
+   "sold_shares": 28.56,
+   "sold_proceeds": 26.79
   },
   {
    "token": "78735213477140259179719985437634225008013438052010449207550476177307188383355",
@@ -3096,10 +3096,10 @@
  ],
  "missed_pnl": 527.24,
  "last_fill": {
-  "ts": 1787443467,
+  "ts": 1787443603,
   "side": "SELL",
   "price": 0.94,
-  "shares": 7.44,
+  "shares": 21.12,
   "title": "Kraken IPO closing market cap above $18B?",
   "outcome": "No"
  },
@@ -3205,5 +3205,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787443467
+ "updated": 1787443610
 }
