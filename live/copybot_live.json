@@ -2144,6 +2144,22 @@
  ],
  "missed": [
   {
+   "ts": 1787061684,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "113068435859095325735850545092380875894458719089415219657573106691596304512910",
+   "cond": "0x8a2aea57bb551023658045e679bb75611083c45e11ffb9dec9e7af88a29e03a8",
+   "title": "Saturn FDV above $50M one day after launch",
+   "outcome": "Yes",
+   "price": 0.18,
+   "stake": 49.14,
+   "reason": "thin book ($36 within 5c < $50)",
+   "status": "sold",
+   "pnl": 167.23,
+   "settled": 1787520289,
+   "name": "0xbadaf319",
+   "exit_price": 0.8017
+  },
+  {
    "ts": 1787511868,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "77726077229479044787103348418741847017000039573722149778024527000077961505850",
@@ -2777,21 +2793,6 @@
    "name": "0xbadaf319"
   },
   {
-   "ts": 1787061684,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "113068435859095325735850545092380875894458719089415219657573106691596304512910",
-   "cond": "0x8a2aea57bb551023658045e679bb75611083c45e11ffb9dec9e7af88a29e03a8",
-   "title": "Saturn FDV above $50M one day after launch",
-   "outcome": "Yes",
-   "price": 0.18,
-   "stake": 49.14,
-   "reason": "thin book ($36 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
    "ts": 1787008372,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "71668069206278604379019230918162053701492619618865557073448491141480275547125",
@@ -3094,7 +3095,7 @@
    "exit_price": 0.563
   }
  ],
- "missed_pnl": 458.98,
+ "missed_pnl": 626.21,
  "last_fill": {
   "ts": 1787514531,
   "side": "SELL",
@@ -3111,7 +3112,7 @@
    "open_cost": 478.16,
    "open_n": 13,
    "miss_n": 181,
-   "miss_pnl": 119080.71,
+   "miss_pnl": 119247.94,
    "last_ts": 1787502057
   },
   "gkmgkldfmg": {
@@ -3205,5 +3206,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787515971
+ "updated": 1787520291
 }
