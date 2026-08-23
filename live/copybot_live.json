@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 46.82,
+ "stake": 47.12,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 632.79,
- "deployed": 1708.03,
+ "cash": 696.27,
+ "deployed": 1659.78,
  "reserve": 0.0,
- "realized": 1340.79,
+ "realized": 1356.02,
  "adjustments": 0.03,
- "ledger_drift": -0.05,
- "open_count": 39,
+ "ledger_drift": -0.04,
+ "open_count": 38,
  "fees_paid": 521.68,
  "fee_rate": 0.03,
  "lag": {
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "50126043796244171148630370660825339215195896706873456174579896498610092792556",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Spirit",
+   "title": "Counter-Strike: FUT Esports vs Spirit (BO5) - Esports World Cup Playoffs",
+   "their_price": 0.76,
+   "my_price": 0.76,
+   "slippage_pct": 0.0,
+   "lag_s": 7.6,
+   "shares": 63.48,
+   "cost": 48.24,
+   "fee": 0.35,
+   "opened": 1787443171,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 14.89,
+   "settled": 1787505216,
+   "end_ts": 1787443200
+  },
   {
    "token": "37622103926472599039987402898699238480609137016919193752560442856391526560744",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -131,26 +151,6 @@
    "end_ts": 1788134400,
    "sold_shares": 15.99,
    "sold_proceeds": 15.66
-  },
-  {
-   "token": "50126043796244171148630370660825339215195896706873456174579896498610092792556",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "Spirit",
-   "title": "Counter-Strike: FUT Esports vs Spirit (BO5) - Esports World Cup Playoffs",
-   "their_price": 0.76,
-   "my_price": 0.76,
-   "slippage_pct": 0.0,
-   "lag_s": 7.6,
-   "shares": 63.48,
-   "cost": 48.24,
-   "fee": 0.35,
-   "opened": 1787443171,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787443200
   },
   {
    "token": "78001011783046061800468570563350488088400397946820543402147928931383794683812",
@@ -3173,14 +3173,14 @@
    "last_ts": 1787465681
   },
   "JuiceFarm": {
-   "realized": -256.88,
-   "n": 18,
-   "wins": 10,
-   "open_cost": 48.24,
-   "open_n": 1,
+   "realized": -241.99,
+   "n": 19,
+   "wins": 11,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 9,
    "miss_pnl": -28.71,
-   "last_ts": 1787496798
+   "last_ts": 1787505216
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3203,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787502067
+ "updated": 1787505224
 }
