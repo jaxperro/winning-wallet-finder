@@ -2156,7 +2156,8 @@
    "status": "won",
    "pnl": 2.41,
    "settled": 1787515020,
-   "name": "Kruto2027"
+   "name": "Kruto2027",
+   "exit_checked": true
   },
   {
    "ts": 1787493390,
@@ -3204,5 +3205,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787515020
+ "updated": 1787515971
 }
