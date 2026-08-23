@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787514531,
+ "updated": 1787515020,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 570.05,
@@ -39,7 +39,7 @@
    "open_cost": 0.0,
    "open_n": 0,
    "miss_n": 33,
-   "miss_pnl": 761.07,
+   "miss_pnl": 763.48,
    "last_ts": 1787514531
   },
   "LSB1": {
@@ -9661,9 +9661,9 @@
    "price": 0.95,
    "stake": 47.11,
    "reason": "maker bid unfilled (111s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "won",
+   "pnl": 2.41,
+   "settled": 1787515020,
    "name": "Kruto2027"
   },
   {
