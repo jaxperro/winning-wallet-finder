@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787493257,
+ "updated": 1787493400,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 658.73,
@@ -68,7 +68,7 @@
    "wins": 7,
    "open_cost": 1375.66,
    "open_n": 25,
-   "miss_n": 65,
+   "miss_n": 66,
    "miss_pnl": -1015.23,
    "last_ts": 1787465681
   },
@@ -9589,6 +9589,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787493390,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "25659310674993675562345759665114759892400026242514633218387667107987341231962",
+   "cond": "0xa467b14d51f01b957109d9cbb1d6c124fab2a089d52ed8f471d23c2812e743b7",
+   "title": "Xi Jinping out before 2027?",
+   "outcome": "No",
+   "price": 0.65,
+   "stake": 48.3,
+   "reason": "maker bid unfilled (133s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1787468455,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
