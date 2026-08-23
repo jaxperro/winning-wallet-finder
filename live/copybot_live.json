@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.24,
+ "stake": 48.25,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 729.2,
- "deployed": 1682.89,
+ "cash": 736.18,
+ "deployed": 1676.42,
  "reserve": 0.0,
- "realized": 1412.06,
+ "realized": 1412.56,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
  "open_count": 37,
- "fees_paid": 519.83,
+ "fees_paid": 519.84,
  "fee_rate": 0.03,
  "lag": {
   "n": 509,
@@ -88,7 +88,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1798761600
+   "end_ts": 1798761600,
+   "sold_shares": 7.44,
+   "sold_proceeds": 6.98
   },
   {
    "token": "78735213477140259179719985437634225008013438052010449207550476177307188383355",
@@ -3094,12 +3096,12 @@
  ],
  "missed_pnl": 527.24,
  "last_fill": {
-  "ts": 1787443178,
-  "side": "BUY",
-  "price": 0.76,
-  "shares": 63.48,
-  "title": "Counter-Strike: FUT Esports vs Spirit (BO5) - Esports World ",
-  "outcome": "Spirit"
+  "ts": 1787443467,
+  "side": "SELL",
+  "price": 0.94,
+  "shares": 7.44,
+  "title": "Kraken IPO closing market cap above $18B?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3203,5 +3205,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787443178
+ "updated": 1787443467
 }
