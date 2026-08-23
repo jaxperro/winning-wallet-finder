@@ -1,16 +1,16 @@
 {
  "mode": "paper",
- "updated": 1787496803,
+ "updated": 1787500290,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 658.73,
    "n": 120,
    "wins": 40,
-   "open_cost": 478.16,
-   "open_n": 13,
+   "open_cost": 618.79,
+   "open_n": 14,
    "miss_n": 181,
    "miss_pnl": 119080.71,
-   "last_ts": 1787448002
+   "last_ts": 1787500278
   },
   "gkmgkldfmg": {
    "realized": 1211.69,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "37622103926472599039987402898699238480609137016919193752560442856391526560744",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Up",
+   "title": "Bitcoin Up or Down on August 23?",
+   "their_price": 0.93,
+   "my_price": 0.9300072746511475,
+   "slippage_pct": 0.0,
+   "lag_s": 11.3,
+   "shares": 151.21,
+   "cost": 140.62640000000002,
+   "fee": 0.2953,
+   "opened": 1787500278,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787443200
+  },
   {
    "token": "21980211237879363766080261172700833333226819753636868597415107253510327130454",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
