@@ -2144,6 +2144,21 @@
  ],
  "missed": [
   {
+   "ts": 1787522755,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "21420960371645492428654501469509567183226530924246830168213644678616765771303",
+   "cond": "0x052e4434f84f3e2f35b62391ef1f007659b5bbfdbc4cf2a5948105676eee9ccf",
+   "title": "Will Coinbase Global, Inc. (COIN) hit (HIGH) $190 Week of August 24 2026?",
+   "outcome": "Yes",
+   "price": 0.68,
+   "stake": 47.24,
+   "reason": "thin book ($17 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1787061684,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "113068435859095325735850545092380875894458719089415219657573106691596304512910",
@@ -3077,25 +3092,9 @@
    "settled": 1786857865,
    "name": "gkmgkldfmg",
    "exit_price": 0.6477
-  },
-  {
-   "ts": 1786850732,
-   "wallet": "0xd7d36345c4aab150e59577e360696b01d01d698b",
-   "token": "79251241637789188843350799450764116240964321566316181450956891613376502677676",
-   "cond": "0x24a86f59ea6f32be34804a0f015f9e823d65f364bf5b13f2968781b4319a900d",
-   "title": "Dota 2: Aurora vs BoomBoys - Game 1 Winner",
-   "outcome": "Aurora",
-   "price": 0.53,
-   "stake": 47.74,
-   "reason": "price moved 0.48\u21920.53",
-   "status": "sold",
-   "pnl": 1.64,
-   "settled": 1786851761,
-   "name": "gkmgkldfmg",
-   "exit_price": 0.563
   }
  ],
- "missed_pnl": 626.21,
+ "missed_pnl": 655.22,
  "last_fill": {
   "ts": 1787514531,
   "side": "SELL",
@@ -3111,7 +3110,7 @@
    "wins": 41,
    "open_cost": 478.16,
    "open_n": 13,
-   "miss_n": 181,
+   "miss_n": 182,
    "miss_pnl": 119247.94,
    "last_ts": 1787502057
   },
@@ -3206,5 +3205,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787520291
+ "updated": 1787522755
 }

@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787520291,
+ "updated": 1787522755,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 570.05,
@@ -8,7 +8,7 @@
    "wins": 41,
    "open_cost": 478.16,
    "open_n": 13,
-   "miss_n": 181,
+   "miss_n": 182,
    "miss_pnl": 119247.94,
    "last_ts": 1787502057
   },
@@ -9651,6 +9651,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787522755,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "21420960371645492428654501469509567183226530924246830168213644678616765771303",
+   "cond": "0x052e4434f84f3e2f35b62391ef1f007659b5bbfdbc4cf2a5948105676eee9ccf",
+   "title": "Will Coinbase Global, Inc. (COIN) hit (HIGH) $190 Week of August 24 2026?",
+   "outcome": "Yes",
+   "price": 0.68,
+   "stake": 47.24,
+   "reason": "thin book ($17 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
   {
    "ts": 1787061684,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
