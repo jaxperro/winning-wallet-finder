@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 607.28,
- "deployed": 1754.13,
+ "cash": 602.0,
+ "deployed": 1759.36,
  "reserve": 0.0,
- "realized": 1361.39,
+ "realized": 1361.34,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 40,
- "fees_paid": 522.74,
+ "open_count": 41,
+ "fees_paid": 522.79,
  "fee_rate": 0.03,
  "lag": {
-  "n": 518,
-  "n24": 10,
+  "n": 519,
+  "n24": 11,
   "basis": "24h",
-  "avg_s": 8.1,
+  "avg_s": 7.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "90023747553942468577301521103061192863932551227972666780135497431091307635242",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $190 Week of August 24 2026?",
+   "their_price": 0.69,
+   "my_price": 0.69,
+   "slippage_pct": 0.0,
+   "lag_s": 0.9,
+   "shares": 7.58,
+   "cost": 5.23,
+   "fee": 0.05,
+   "opened": 1787528996,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787875200
+  },
   {
    "token": "35519036727779372362379885698730125198535180516238825460733396795218371929718",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2120,26 +2140,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400
-  },
-  {
-   "token": "81687261828485923370301293448268747277317716692301661215171974481135044780719",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "Karmine Corp",
-   "title": "LoL: Fnatic vs Karmine Corp (BO3) - LEC Regular Season",
-   "their_price": 0.87,
-   "my_price": 0.87,
-   "slippage_pct": 0.0,
-   "lag_s": 16.4,
-   "shares": 58.49,
-   "cost": 50.89,
-   "fee": 0.2,
-   "opened": 1786224364,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 7.4,
-   "settled": 1786314909,
-   "end_ts": 1786233600
   }
  ],
  "missed": [
@@ -3096,23 +3096,23 @@
  ],
  "missed_pnl": 655.22,
  "last_fill": {
-  "ts": 1787524681,
+  "ts": 1787528996,
   "side": "BUY",
-  "price": 0.74,
-  "shares": 63.83,
-  "title": "LoL: Dignitas vs FlyQuest - Game 2 Winner",
-  "outcome": "FlyQuest"
+  "price": 0.69,
+  "shares": 7.58,
+  "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $190 Week of August 24 2",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 570.05,
    "n": 121,
    "wins": 41,
-   "open_cost": 478.16,
-   "open_n": 13,
+   "open_cost": 483.39,
+   "open_n": 14,
    "miss_n": 182,
    "miss_pnl": 119247.94,
-   "last_ts": 1787502057
+   "last_ts": 1787528996
   },
   "gkmgkldfmg": {
    "realized": 1211.69,
@@ -3205,5 +3205,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787525595
+ "updated": 1787528997
 }
