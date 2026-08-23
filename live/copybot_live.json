@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 648.62,
- "deployed": 1764.78,
+ "cash": 650.77,
+ "deployed": 1762.97,
  "reserve": 0.0,
- "realized": 1413.37,
+ "realized": 1413.7,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 40,
@@ -89,8 +89,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400,
-   "sold_shares": 5.66,
-   "sold_proceeds": 5.51
+   "sold_shares": 7.87,
+   "sold_proceeds": 7.66
   },
   {
    "token": "21980211237879363766080261172700833333226819753636868597415107253510327130454",
@@ -3095,10 +3095,10 @@
  ],
  "missed_pnl": 502.1,
  "last_fill": {
-  "ts": 1787486095,
+  "ts": 1787488376,
   "side": "SELL",
-  "price": 0.974,
-  "shares": 3.07,
+  "price": 0.973,
+  "shares": 2.21,
   "title": "Will Iran target Syria by August 31, 2026?",
   "outcome": "No"
  },
@@ -3204,5 +3204,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787486095
+ "updated": 1787488376
 }
