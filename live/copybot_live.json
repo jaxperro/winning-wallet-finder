@@ -1,14 +1,14 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.25,
+ "stake": 48.26,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 643.11,
- "deployed": 1769.43,
+ "cash": 645.63,
+ "deployed": 1767.3,
  "reserve": 0.0,
- "realized": 1412.51,
+ "realized": 1412.9,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 40,
@@ -88,7 +88,9 @@
    "exit_price": null,
    "pnl": null,
    "settled": null,
-   "end_ts": 1788134400
+   "end_ts": 1788134400,
+   "sold_shares": 2.6,
+   "sold_proceeds": 2.52
   },
   {
    "token": "21980211237879363766080261172700833333226819753636868597415107253510327130454",
@@ -3093,12 +3095,12 @@
  ],
  "missed_pnl": 502.1,
  "last_fill": {
-  "ts": 1787465689,
-  "side": "BUY",
-  "price": 0.252,
-  "shares": 191.55,
-  "title": "No one announced as next James Bond?",
-  "outcome": "Yes"
+  "ts": 1787485984,
+  "side": "SELL",
+  "price": 0.973,
+  "shares": 2.6,
+  "title": "Will Iran target Syria by August 31, 2026?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3202,5 +3204,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787468465
+ "updated": 1787485984
 }
