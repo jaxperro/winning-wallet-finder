@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787448010,
+ "updated": 1787465689,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 658.73,
@@ -66,11 +66,11 @@
    "realized": -55.37,
    "n": 36,
    "wins": 7,
-   "open_cost": 1327.39,
-   "open_n": 24,
+   "open_cost": 1375.66,
+   "open_n": 25,
    "miss_n": 65,
    "miss_pnl": -1015.23,
-   "last_ts": 1787425355
+   "last_ts": 1787465681
   },
   "JuiceFarm": {
    "realized": -270.97,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "28001841863735617420550382251583133275547664489410111787716262797262335318074",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "No one announced as next James Bond?",
+   "their_price": 0.252,
+   "my_price": 0.252,
+   "slippage_pct": 0.0,
+   "lag_s": 8.7,
+   "shares": 191.55,
+   "cost": 48.27,
+   "fee": 1.0832,
+   "opened": 1787465681,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798675200
+  },
   {
    "token": "61563837493031814268625046225409864185565870189377089210808486097239691433807",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",

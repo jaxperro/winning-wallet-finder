@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.27,
+ "stake": 48.25,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 692.46,
- "deployed": 1721.16,
+ "cash": 643.11,
+ "deployed": 1769.43,
  "reserve": 0.0,
- "realized": 1413.59,
+ "realized": 1412.51,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 39,
- "fees_paid": 520.29,
+ "open_count": 40,
+ "fees_paid": 521.37,
  "fee_rate": 0.03,
  "lag": {
-  "n": 511,
-  "n24": 6,
+  "n": 512,
+  "n24": 7,
   "basis": "24h",
-  "avg_s": 4.5,
+  "avg_s": 7.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "28001841863735617420550382251583133275547664489410111787716262797262335318074",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "No one announced as next James Bond?",
+   "their_price": 0.252,
+   "my_price": 0.252,
+   "slippage_pct": 0.0,
+   "lag_s": 8.7,
+   "shares": 191.55,
+   "cost": 48.27,
+   "fee": 1.08,
+   "opened": 1787465681,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1798675200
+  },
   {
    "token": "61563837493031814268625046225409864185565870189377089210808486097239691433807",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2116,26 +2136,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1798675200
-  },
-  {
-   "token": "46847307656882602122997465306414904346129309754935831590213955739893205462517",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will the next Google Gemini Pro model be released by August 31, 2026?",
-   "their_price": 0.5,
-   "my_price": 0.5,
-   "slippage_pct": 0.0,
-   "lag_s": 0.5,
-   "shares": 99.82,
-   "cost": 49.91,
-   "fee": 0.75,
-   "opened": 1786272200,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788134400
   }
  ],
  "missed": [
@@ -3094,12 +3094,12 @@
  ],
  "missed_pnl": 527.24,
  "last_fill": {
-  "ts": 1787448002,
+  "ts": 1787465689,
   "side": "BUY",
-  "price": 0.821,
-  "shares": 18.07,
-  "title": "Will Iran target Syria by August 31, 2026?",
-  "outcome": "No"
+  "price": 0.252,
+  "shares": 191.55,
+  "title": "No one announced as next James Bond?",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3166,11 +3166,11 @@
    "realized": -55.37,
    "n": 36,
    "wins": 7,
-   "open_cost": 1327.39,
-   "open_n": 24,
+   "open_cost": 1375.66,
+   "open_n": 25,
    "miss_n": 65,
    "miss_pnl": -1015.23,
-   "last_ts": 1787425355
+   "last_ts": 1787465681
   },
   "JuiceFarm": {
    "realized": -270.97,
@@ -3203,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787448010
+ "updated": 1787465689
 }
