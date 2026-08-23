@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 648.63,
- "deployed": 1706.9,
+ "cash": 601.36,
+ "deployed": 1754.01,
  "reserve": 0.0,
- "realized": 1355.5,
+ "realized": 1355.33,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 39,
- "fees_paid": 522.2,
+ "open_count": 40,
+ "fees_paid": 522.37,
  "fee_rate": 0.03,
  "lag": {
-  "n": 516,
-  "n24": 10,
+  "n": 517,
+  "n24": 11,
   "basis": "24h",
-  "avg_s": 6.5,
+  "avg_s": 7.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "43607466387848148862730065756652825306636991801621290782067481337775038548943",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Over",
+   "title": "Getafe CF vs. Real Racing Club: O/U 9.5 Total Corners",
+   "their_price": 0.88,
+   "my_price": 0.88,
+   "slippage_pct": 0.0,
+   "lag_s": 20.4,
+   "shares": 53.53,
+   "cost": 47.11,
+   "fee": 0.17,
+   "opened": 1787510791,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787443200
+  },
   {
    "token": "53436724862844247057827668411672140355766194940747468720197412431149544886943",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -2118,26 +2138,6 @@
    "pnl": -49.74,
    "settled": 1786289512,
    "end_ts": 1786233600
-  },
-  {
-   "token": "28246806272807385475359212337668662438574077035888650625591761821033218424548",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "Top Esports",
-   "title": "LoL: ThunderTalk Gaming vs Top Esports (BO3) - LPL Group Ascend",
-   "their_price": 0.77,
-   "my_price": 0.77,
-   "slippage_pct": 0.0,
-   "lag_s": 19.4,
-   "shares": 66.1,
-   "cost": 50.9,
-   "fee": 0.35,
-   "opened": 1786224151,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 14.85,
-   "settled": 1786285878,
-   "end_ts": 1786233600
   }
  ],
  "missed": [
@@ -3094,12 +3094,12 @@
  ],
  "missed_pnl": 492.75,
  "last_fill": {
-  "ts": 1787505679,
+  "ts": 1787510811,
   "side": "BUY",
-  "price": 0.63,
-  "shares": 74.79,
-  "title": "Will Bola Tinubu win the 2027 Nigerian Presidential Election",
-  "outcome": "Yes"
+  "price": 0.88,
+  "shares": 53.53,
+  "title": "Getafe CF vs. Real Racing Club: O/U 9.5 Total Corners",
+  "outcome": "Over"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3136,11 +3136,11 @@
    "realized": -13.17,
    "n": 22,
    "wins": 3,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 47.11,
+   "open_n": 1,
    "miss_n": 32,
    "miss_pnl": 761.07,
-   "last_ts": 1787424663
+   "last_ts": 1787510791
   },
   "LSB1": {
    "realized": -397.16,
@@ -3203,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787505679
+ "updated": 1787510845
 }
