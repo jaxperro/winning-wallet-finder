@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787511805,
+ "updated": 1787511879,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 570.05,
@@ -38,7 +38,7 @@
    "wins": 3,
    "open_cost": 47.11,
    "open_n": 1,
-   "miss_n": 32,
+   "miss_n": 33,
    "miss_pnl": 761.07,
    "last_ts": 1787510791
   },
@@ -9649,6 +9649,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787511868,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "77726077229479044787103348418741847017000039573722149778024527000077961505850",
+   "cond": "0xa26f3d6fddaba9c243add9a86aeb387bcb852476b9a253a8d78a79d0699e473f",
+   "title": "Getafe CF vs. Real Racing Club: O/U 10.5 Total Corners",
+   "outcome": "Over",
+   "price": 0.95,
+   "stake": 47.11,
+   "reason": "maker bid unfilled (111s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1787493390,
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
