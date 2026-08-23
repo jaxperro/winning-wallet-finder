@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.24,
+ "stake": 47.23,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 654.89,
- "deployed": 1706.9,
+ "cash": 607.28,
+ "deployed": 1754.13,
  "reserve": 0.0,
- "realized": 1361.75,
+ "realized": 1361.39,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 39,
- "fees_paid": 522.37,
+ "open_count": 40,
+ "fees_paid": 522.74,
  "fee_rate": 0.03,
  "lag": {
-  "n": 517,
-  "n24": 10,
+  "n": 518,
+  "n24": 11,
   "basis": "24h",
-  "avg_s": 6.5,
+  "avg_s": 7.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "35519036727779372362379885698730125198535180516238825460733396795218371929718",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "FlyQuest",
+   "title": "LoL: Dignitas vs FlyQuest - Game 2 Winner",
+   "their_price": 0.74,
+   "my_price": 0.74,
+   "slippage_pct": 0.0,
+   "lag_s": 22.3,
+   "shares": 63.83,
+   "cost": 47.23,
+   "fee": 0.37,
+   "opened": 1787524659,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787529600
+  },
   {
    "token": "43607466387848148862730065756652825306636991801621290782067481337775038548943",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2120,26 +2140,6 @@
    "pnl": 7.4,
    "settled": 1786314909,
    "end_ts": 1786233600
-  },
-  {
-   "token": "43180192744264932534137000240241088432530085209515029021308017322422968247012",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Kiwoom DRX",
-   "title": "LoL: BNK FEARX vs Kiwoom DRX - Game 2 Winner",
-   "their_price": 0.4092,
-   "my_price": 0.4092,
-   "slippage_pct": 0.0,
-   "lag_s": 0.0,
-   "shares": 119.43,
-   "cost": 48.87,
-   "fee": 0.87,
-   "opened": 1786277832,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -49.74,
-   "settled": 1786289512,
-   "end_ts": 1786233600
   }
  ],
  "missed": [
@@ -3096,12 +3096,12 @@
  ],
  "missed_pnl": 655.22,
  "last_fill": {
-  "ts": 1787514531,
-  "side": "SELL",
-  "price": 1.0,
-  "shares": 53.53,
-  "title": "Getafe CF vs. Real Racing Club: O/U 9.5 Total Corners",
-  "outcome": "Over"
+  "ts": 1787524681,
+  "side": "BUY",
+  "price": 0.74,
+  "shares": 63.83,
+  "title": "LoL: Dignitas vs FlyQuest - Game 2 Winner",
+  "outcome": "FlyQuest"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3178,11 +3178,11 @@
    "realized": -241.99,
    "n": 19,
    "wins": 11,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 47.23,
+   "open_n": 1,
    "miss_n": 9,
    "miss_pnl": -28.71,
-   "last_ts": 1787505216
+   "last_ts": 1787524659
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3205,5 +3205,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787522755
+ "updated": 1787524724
 }

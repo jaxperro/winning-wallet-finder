@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787522755,
+ "updated": 1787524724,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 570.05,
@@ -76,11 +76,11 @@
    "realized": -241.99,
    "n": 19,
    "wins": 11,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 47.23,
+   "open_n": 1,
    "miss_n": 9,
    "miss_pnl": -28.71,
-   "last_ts": 1787505216
+   "last_ts": 1787524659
   },
   "0x41558102": {
    "realized": 0.0,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "35519036727779372362379885698730125198535180516238825460733396795218371929718",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "FlyQuest",
+   "title": "LoL: Dignitas vs FlyQuest - Game 2 Winner",
+   "their_price": 0.74,
+   "my_price": 0.74,
+   "slippage_pct": 0.0,
+   "lag_s": 22.3,
+   "shares": 63.83,
+   "cost": 47.23,
+   "fee": 0.3684,
+   "opened": 1787524659,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787529600
+  },
   {
    "token": "43607466387848148862730065756652825306636991801621290782067481337775038548943",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
