@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 707.38,
- "deployed": 1706.33,
+ "cash": 692.46,
+ "deployed": 1721.16,
  "reserve": 0.0,
- "realized": 1413.67,
+ "realized": 1413.59,
  "adjustments": 0.03,
- "ledger_drift": -0.05,
- "open_count": 38,
- "fees_paid": 520.21,
+ "ledger_drift": -0.04,
+ "open_count": 39,
+ "fees_paid": 520.29,
  "fee_rate": 0.03,
  "lag": {
-  "n": 510,
-  "n24": 5,
+  "n": 511,
+  "n24": 6,
   "basis": "24h",
-  "avg_s": 7.6,
+  "avg_s": 4.5,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "61563837493031814268625046225409864185565870189377089210808486097239691433807",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will Iran target Syria by August 31, 2026?",
+   "their_price": 0.821,
+   "my_price": 0.821,
+   "slippage_pct": 0.0,
+   "lag_s": 0.6,
+   "shares": 18.07,
+   "cost": 14.84,
+   "fee": 0.08,
+   "opened": 1787448002,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "21980211237879363766080261172700833333226819753636868597415107253510327130454",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2116,26 +2136,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400
-  },
-  {
-   "token": "66611161618038095197921470357471217644766577616624479600534797050825065601256",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Iran successfully targets shipping by August 9, 2026?",
-   "their_price": 0.51,
-   "my_price": 0.51,
-   "slippage_pct": 0.0,
-   "lag_s": 8.3,
-   "shares": 94.1,
-   "cost": 47.99,
-   "fee": 0.71,
-   "opened": 1786194606,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -48.7,
-   "settled": 1786260298,
-   "end_ts": 1786233600
   }
  ],
  "missed": [
@@ -3094,23 +3094,23 @@
  ],
  "missed_pnl": 527.24,
  "last_fill": {
-  "ts": 1787447831,
+  "ts": 1787448002,
   "side": "BUY",
-  "price": 0.77,
-  "shares": 62.7,
-  "title": "LoL: EDward Gaming vs JD Gaming (BO3) - LPL Group Ascend",
-  "outcome": "JD Gaming"
+  "price": 0.821,
+  "shares": 18.07,
+  "title": "Will Iran target Syria by August 31, 2026?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 658.73,
    "n": 120,
    "wins": 40,
-   "open_cost": 463.32,
-   "open_n": 12,
+   "open_cost": 478.16,
+   "open_n": 13,
    "miss_n": 180,
    "miss_pnl": 119080.71,
-   "last_ts": 1787439157
+   "last_ts": 1787448002
   },
   "gkmgkldfmg": {
    "realized": 1211.69,
@@ -3203,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787447839
+ "updated": 1787448010
 }
