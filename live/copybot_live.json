@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.28,
+ "stake": 48.27,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 755.99,
- "deployed": 1658.05,
+ "cash": 707.38,
+ "deployed": 1706.33,
  "reserve": 0.0,
- "realized": 1414.01,
+ "realized": 1413.67,
  "adjustments": 0.03,
  "ledger_drift": -0.05,
- "open_count": 37,
- "fees_paid": 519.87,
+ "open_count": 38,
+ "fees_paid": 520.21,
  "fee_rate": 0.03,
  "lag": {
-  "n": 509,
-  "n24": 4,
+  "n": 510,
+  "n24": 5,
   "basis": "24h",
-  "avg_s": 8.2,
+  "avg_s": 7.6,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "21980211237879363766080261172700833333226819753636868597415107253510327130454",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "JD Gaming",
+   "title": "LoL: EDward Gaming vs JD Gaming (BO3) - LPL Group Ascend",
+   "their_price": 0.77,
+   "my_price": 0.77,
+   "slippage_pct": 0.0,
+   "lag_s": 0.8,
+   "shares": 62.7,
+   "cost": 48.28,
+   "fee": 0.33,
+   "opened": 1787447831,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787443200
+  },
   {
    "token": "50126043796244171148630370660825339215195896706873456174579896498610092792556",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2116,28 +2136,6 @@
    "pnl": -48.7,
    "settled": 1786260298,
    "end_ts": 1786233600
-  },
-  {
-   "token": "72536510430716664691218819418838618454702329583538314310462490939825249228099",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Iran successfully targets shipping by September 30, 2026?",
-   "their_price": 0.85,
-   "my_price": 0.85,
-   "slippage_pct": 0.0,
-   "lag_s": 1.8,
-   "shares": 24.62,
-   "cost": 20.93,
-   "fee": 0.09,
-   "opened": 1786199666,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 1.97,
-   "settled": 1786255241,
-   "end_ts": 1790726400,
-   "sold_shares": 24.1,
-   "sold_proceeds": 22.47
   }
  ],
  "missed": [
@@ -3096,12 +3094,12 @@
  ],
  "missed_pnl": 527.24,
  "last_fill": {
-  "ts": 1787443603,
-  "side": "SELL",
-  "price": 0.94,
-  "shares": 21.12,
-  "title": "Kraken IPO closing market cap above $18B?",
-  "outcome": "No"
+  "ts": 1787447831,
+  "side": "BUY",
+  "price": 0.77,
+  "shares": 62.7,
+  "title": "LoL: EDward Gaming vs JD Gaming (BO3) - LPL Group Ascend",
+  "outcome": "JD Gaming"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3178,11 +3176,11 @@
    "realized": -270.97,
    "n": 17,
    "wins": 9,
-   "open_cost": 48.24,
-   "open_n": 1,
+   "open_cost": 96.52,
+   "open_n": 2,
    "miss_n": 9,
    "miss_pnl": -28.71,
-   "last_ts": 1787443171
+   "last_ts": 1787447831
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3205,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787443610
+ "updated": 1787447839
 }
