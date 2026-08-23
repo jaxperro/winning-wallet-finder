@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787505224,
+ "updated": 1787505679,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 570.05,
@@ -66,11 +66,11 @@
    "realized": -55.37,
    "n": 36,
    "wins": 7,
-   "open_cost": 1375.66,
-   "open_n": 25,
+   "open_cost": 1422.78,
+   "open_n": 26,
    "miss_n": 66,
    "miss_pnl": -1015.23,
-   "last_ts": 1787465681
+   "last_ts": 1787505668
   },
   "JuiceFarm": {
    "realized": -241.99,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "53436724862844247057827668411672140355766194940747468720197412431149544886943",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will Bola Tinubu win the 2027 Nigerian Presidential Election?",
+   "their_price": 0.63,
+   "my_price": 0.63,
+   "slippage_pct": 0.0,
+   "lag_s": 11.6,
+   "shares": 74.79,
+   "cost": 47.12,
+   "fee": 0.523,
+   "opened": 1787505668,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1800057600
+  },
   {
    "token": "50126043796244171148630370660825339215195896706873456174579896498610092792556",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",

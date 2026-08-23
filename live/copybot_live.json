@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.12,
+ "stake": 47.11,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 696.27,
- "deployed": 1659.78,
+ "cash": 648.63,
+ "deployed": 1706.9,
  "reserve": 0.0,
- "realized": 1356.02,
+ "realized": 1355.5,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 38,
- "fees_paid": 521.68,
+ "open_count": 39,
+ "fees_paid": 522.2,
  "fee_rate": 0.03,
  "lag": {
-  "n": 515,
-  "n24": 9,
+  "n": 516,
+  "n24": 10,
   "basis": "24h",
-  "avg_s": 5.4,
+  "avg_s": 6.5,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "53436724862844247057827668411672140355766194940747468720197412431149544886943",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "Yes",
+   "title": "Will Bola Tinubu win the 2027 Nigerian Presidential Election?",
+   "their_price": 0.63,
+   "my_price": 0.63,
+   "slippage_pct": 0.0,
+   "lag_s": 11.6,
+   "shares": 74.79,
+   "cost": 47.12,
+   "fee": 0.52,
+   "opened": 1787505668,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1800057600
+  },
   {
    "token": "50126043796244171148630370660825339215195896706873456174579896498610092792556",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2118,26 +2138,6 @@
    "pnl": 14.85,
    "settled": 1786285878,
    "end_ts": 1786233600
-  },
-  {
-   "token": "55988445465443317989518698191518392638991784735715624944906249117088857406975",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "KT Rolster",
-   "title": "LoL: Dplus KIA vs KT Rolster - Game 2 Winner",
-   "their_price": 0.5762,
-   "my_price": 0.5762,
-   "slippage_pct": 0.0,
-   "lag_s": 8.4,
-   "shares": 86.63,
-   "cost": 49.92,
-   "fee": 0.63,
-   "opened": 1786266816,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -50.55,
-   "settled": 1786277532,
-   "end_ts": 1786233600
   }
  ],
  "missed": [
@@ -3094,12 +3094,12 @@
  ],
  "missed_pnl": 492.75,
  "last_fill": {
-  "ts": 1787500289,
+  "ts": 1787505679,
   "side": "BUY",
-  "price": 0.93,
-  "shares": 52.24,
-  "title": "Bitcoin Up or Down on August 23?",
-  "outcome": "Up"
+  "price": 0.63,
+  "shares": 74.79,
+  "title": "Will Bola Tinubu win the 2027 Nigerian Presidential Election",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3166,11 +3166,11 @@
    "realized": -55.37,
    "n": 36,
    "wins": 7,
-   "open_cost": 1375.66,
-   "open_n": 25,
+   "open_cost": 1422.78,
+   "open_n": 26,
    "miss_n": 66,
    "miss_pnl": -1015.23,
-   "last_ts": 1787465681
+   "last_ts": 1787505668
   },
   "JuiceFarm": {
    "realized": -241.99,
@@ -3203,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787505224
+ "updated": 1787505679
 }
