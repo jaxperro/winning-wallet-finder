@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787441046,
+ "updated": 1787443178,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 658.73,
@@ -76,11 +76,11 @@
    "realized": -270.97,
    "n": 17,
    "wins": 9,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.24,
+   "open_n": 1,
    "miss_n": 9,
    "miss_pnl": -28.71,
-   "last_ts": 1787410957
+   "last_ts": 1787443171
   },
   "0x41558102": {
    "realized": 0.0,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "50126043796244171148630370660825339215195896706873456174579896498610092792556",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Spirit",
+   "title": "Counter-Strike: FUT Esports vs Spirit (BO5) - Esports World Cup Playoffs",
+   "their_price": 0.76,
+   "my_price": 0.76,
+   "slippage_pct": 0.0,
+   "lag_s": 7.6,
+   "shares": 63.48,
+   "cost": 48.24,
+   "fee": 0.3474,
+   "opened": 1787443171,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787443200
+  },
   {
    "token": "78001011783046061800468570563350488088400397946820543402147928931383794683812",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",

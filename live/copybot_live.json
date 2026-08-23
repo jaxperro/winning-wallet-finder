@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 48.25,
+ "stake": 48.24,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 777.79,
- "deployed": 1634.65,
+ "cash": 729.2,
+ "deployed": 1682.89,
  "reserve": 0.0,
- "realized": 1412.4,
+ "realized": 1412.06,
  "adjustments": 0.03,
- "ledger_drift": -0.04,
- "open_count": 36,
- "fees_paid": 519.48,
+ "ledger_drift": -0.05,
+ "open_count": 37,
+ "fees_paid": 519.83,
  "fee_rate": 0.03,
  "lag": {
-  "n": 508,
-  "n24": 3,
+  "n": 509,
+  "n24": 4,
   "basis": "24h",
-  "avg_s": 8.8,
+  "avg_s": 8.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "50126043796244171148630370660825339215195896706873456174579896498610092792556",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "Spirit",
+   "title": "Counter-Strike: FUT Esports vs Spirit (BO5) - Esports World Cup Playoffs",
+   "their_price": 0.76,
+   "my_price": 0.76,
+   "slippage_pct": 0.0,
+   "lag_s": 7.6,
+   "shares": 63.48,
+   "cost": 48.24,
+   "fee": 0.35,
+   "opened": 1787443171,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787443200
+  },
   {
    "token": "78001011783046061800468570563350488088400397946820543402147928931383794683812",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -2116,26 +2136,6 @@
    "end_ts": 1790726400,
    "sold_shares": 24.1,
    "sold_proceeds": 22.47
-  },
-  {
-   "token": "88752597571738831347942513760817776151125290177540731190810686943474863159303",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "Yes",
-   "title": "US announces end of Iranian blockade by September 30, 2026?",
-   "their_price": 0.77,
-   "my_price": 0.77,
-   "slippage_pct": 0.0,
-   "lag_s": 8.9,
-   "shares": 66.09,
-   "cost": 50.89,
-   "fee": 0.35,
-   "opened": 1786236782,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1790726400
   }
  ],
  "missed": [
@@ -3094,12 +3094,12 @@
  ],
  "missed_pnl": 527.24,
  "last_fill": {
-  "ts": 1787441046,
-  "side": "SELL",
-  "price": 0.99,
-  "shares": 3.88,
-  "title": "Decibel FDV above $500M one day after launch?",
-  "outcome": "No"
+  "ts": 1787443178,
+  "side": "BUY",
+  "price": 0.76,
+  "shares": 63.48,
+  "title": "Counter-Strike: FUT Esports vs Spirit (BO5) - Esports World ",
+  "outcome": "Spirit"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3176,11 +3176,11 @@
    "realized": -270.97,
    "n": 17,
    "wins": 9,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 48.24,
+   "open_n": 1,
    "miss_n": 9,
    "miss_pnl": -28.71,
-   "last_ts": 1787410957
+   "last_ts": 1787443171
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3203,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787441046
+ "updated": 1787443178
 }
