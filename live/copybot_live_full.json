@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787607471,
+ "updated": 1787607617,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 572.35,
@@ -38,7 +38,7 @@
    "wins": 3,
    "open_cost": 161.5,
    "open_n": 3,
-   "miss_n": 37,
+   "miss_n": 39,
    "miss_pnl": 763.48,
    "last_ts": 1787607402
   },
@@ -9852,6 +9852,36 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787607617,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "101564700405449939175516490462503647619426169465249101475325673292001214700875",
+   "cond": "0x48571f7dfcf56562c4c5dc44fb10feeddec29c2f176f7c2395cfc7cf9917bc75",
+   "title": "Game Spread: Djere (-1.5) vs Muller (+1.5)",
+   "outcome": "Djere",
+   "price": 0.43,
+   "stake": 53.8,
+   "reason": "thin book ($5 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
+   "ts": 1787607600,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "3365329657300637421247444573783895619925095428097073040585476908926985560986",
+   "cond": "0x3acdd4d57dc5ed040094cd5eae275dd7039977d3b72ef8d31b04453cc6deef16",
+   "title": "Game Spread: Swan (-1.5) vs Scott (+1.5)",
+   "outcome": "Swan",
+   "price": 0.4,
+   "stake": 10.3,
+   "reason": "maker bid unfilled (95s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1787607471,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",

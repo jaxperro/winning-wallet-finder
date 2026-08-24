@@ -2140,6 +2140,36 @@
  ],
  "missed": [
   {
+   "ts": 1787607617,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "101564700405449939175516490462503647619426169465249101475325673292001214700875",
+   "cond": "0x48571f7dfcf56562c4c5dc44fb10feeddec29c2f176f7c2395cfc7cf9917bc75",
+   "title": "Game Spread: Djere (-1.5) vs Muller (+1.5)",
+   "outcome": "Djere",
+   "price": 0.43,
+   "stake": 53.8,
+   "reason": "thin book ($5 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
+   "ts": 1787607600,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "3365329657300637421247444573783895619925095428097073040585476908926985560986",
+   "cond": "0x3acdd4d57dc5ed040094cd5eae275dd7039977d3b72ef8d31b04453cc6deef16",
+   "title": "Game Spread: Swan (-1.5) vs Scott (+1.5)",
+   "outcome": "Swan",
+   "price": 0.4,
+   "stake": 10.3,
+   "reason": "maker bid unfilled (95s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1787607471,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "36828382167437541960242966095787299426063513809508597397512070903328251264563",
@@ -3053,41 +3083,9 @@
    "settled": 1786983947,
    "name": "AIcAIc",
    "exit_price": 0.96
-  },
-  {
-   "ts": 1786981865,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "109749585976448774183248124369614955614262791730544648618224681816510077140914",
-   "cond": "0x158b19e34dc10f1bd7ba37d8adc36b66a1def6d6b8c16ba499315d8d8053599f",
-   "title": "Bitcoin above 64,000 on August 17, 12PM ET?",
-   "outcome": "Yes",
-   "price": 0.8439,
-   "stake": 30.24,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "won",
-   "pnl": 5.45,
-   "settled": 1786983516,
-   "name": "0xbadaf319",
-   "exit_checked": true
-  },
-  {
-   "ts": 1786942377,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "32206500060366495804567453664689710572686411223095415457442886715766533954467",
-   "cond": "0xf9dc607f4bf84ce394845000dc2622c25f8b7ecbcafe1ac3e2301d894776f3b6",
-   "title": "Will Opendoor Technologies Inc. (OPEN) hit (LOW) $2.25 Week of August 17 2026?",
-   "outcome": "No",
-   "price": 0.909,
-   "stake": 36.96,
-   "reason": "maker bid unfilled (81s)",
-   "status": "sold",
-   "pnl": 1.66,
-   "settled": 1786977775,
-   "name": "0xbadaf319",
-   "exit_price": 0.9537
   }
  ],
- "missed_pnl": 751.46,
+ "missed_pnl": 743.9,
  "last_fill": {
   "ts": 1787607411,
   "side": "BUY",
@@ -3133,7 +3131,7 @@
    "wins": 3,
    "open_cost": 161.5,
    "open_n": 3,
-   "miss_n": 37,
+   "miss_n": 39,
    "miss_pnl": 763.48,
    "last_ts": 1787607402
   },
@@ -3198,5 +3196,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787607471
+ "updated": 1787607617
 }

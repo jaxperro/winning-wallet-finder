@@ -1,8 +1,6 @@
 {
   "started_at": 1783541947.246319,
   "seen_tx": [
-    "0x42e5942a0b4d5d3465c1a24ee5d0f86003ccd3a9e1248ba523f11f0c863ec397",
-    "0xb12b411bb32dd47e6e5129cb0dd884a70f5f6aec068ce4f07d30be20dc9c226b",
     "0x3d79ed67107b1067a20dcdae43ac2e5d925d95ea34c37e77aba4c18c4ffe1f63",
     "0xf2ed2165e241388e9df88421e89448d403587b17ef465d2a04c84cbc73aa4234",
     "0x3b96f0273b879b7226631d530aa13c93d06ac418e6a8e65aa0cd6226e2dc3e08",
@@ -5000,7 +4998,9 @@
     "0x7e1cdc4088b034c985c33b2cec2c4c5c2cd82f183ac6bb3afaf29bd062656fcc",
     "0xa3c14ffe6929c1ebb801dadeb87f97996c838de0d420d2b7f14bcf997fa1efb4",
     "0xacf2062a44420efae92e42e7bacbc3395e87384f562694a95434754e97a272a6",
-    "0xcdb83c782be0b2d2dce603e84edb9ead2259532705940f0f18a47decbc26e494"
+    "0xcdb83c782be0b2d2dce603e84edb9ead2259532705940f0f18a47decbc26e494",
+    "0x62494df5f2e6247590ca096d0224229ba8bc4dd9c4d01d66d75bea8e7f465601",
+    "0x0d376d3771090e006de7f24bce098bd9fefda85ed1826177b46e998d39545577"
   ],
   "their_pos": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": {
@@ -5563,7 +5563,9 @@
       "10558402462967201279256738071910522514610256151864879856073779419687023223699": 1000.0,
       "36828382167437541960242966095787299426063513809508597397512070903328251264563": 729.54,
       "60451651791354547596640213980378066201569454865024133009879926936313765981457": 212.97,
-      "28502899698765918644010369700714011454004586109826100390927663361775431948613": 975.0
+      "28502899698765918644010369700714011454004586109826100390927663361775431948613": 975.0,
+      "3365329657300637421247444573783895619925095428097073040585476908926985560986": 409.7,
+      "101564700405449939175516490462503647619426169465249101475325673292001214700875": 1300
     },
     "0xbadaf319415c17f28824a43ae0cd912b9d84d874": {
       "84198727207550214763449143212138419486474549606219604664233243545687035283481": 26905.1835,
@@ -20895,12 +20897,13 @@
       "status": "open",
       "exit_price": null,
       "pnl": null,
-      "settled": null
+      "settled": null,
+      "end_ts": 1788220800
     }
   },
   "hwm": 3600.1933566560215,
-  "feed_sig": "b1f5ade9426d9a258ac01098bfe24c7d",
-  "feed_pushed_at": 1787607343.2964633,
+  "feed_sig": "95de05769203f83edbcdfa9782abb1e7",
+  "feed_pushed_at": 1787607470.945471,
   "missed": [
     {
       "ts": 1784503159,
@@ -20961,70 +20964,6 @@
       "pnl": null,
       "settled": null,
       "name": "0xbadaf319"
-    },
-    {
-      "ts": 1785379176,
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "token": "92062876943642517334204166558488649767389043731898736327419367578333707352166",
-      "cond": "0x2c2d6a33bd848d03b55f9c9ae23518675aafe29a116868168168a1036211a431",
-      "title": "Will \"Spider-Man: Brand New Day\" score at least 90 on the Rotten Tomatoes Tomatometer?",
-      "outcome": "Yes",
-      "price": 0.87,
-      "stake": 53.73,
-      "reason": "maker bid unfilled (90s)",
-      "status": "sold",
-      "pnl": -0.96,
-      "settled": 1785773357,
-      "name": "0xbadaf319",
-      "exit_price": 0.8615
-    },
-    {
-      "ts": 1785381127,
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "token": "49096838469319785284977438732691316133406822442318517146017951204646833825601",
-      "cond": "0x22452b38b25ef76546f4b47f85540e57fb360b27ae27e7affa59feb6d2303b0e",
-      "title": "Will NVIDIA (NVDA) close above $190 on July 30?",
-      "outcome": "Yes",
-      "price": 0.6,
-      "stake": 50,
-      "reason": "maker bid unfilled (60s)",
-      "status": "sold",
-      "pnl": -0.36,
-      "settled": 1785391164,
-      "name": "0xbadaf319",
-      "exit_price": 0.61
-    },
-    {
-      "ts": 1785389644,
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "token": "48905394170305541744328748582998455459621629534326295447768125812721237965617",
-      "cond": "0xfc6584616ca3ec385e40881bd568fe291713cad93ab95be921f4ba2bf3b456e3",
-      "title": "WTI Crude Oil (WTI) closes above $86 on July 30?",
-      "outcome": "No",
-      "price": 0.68,
-      "stake": 27.26,
-      "reason": "maker bid unfilled (92s)",
-      "status": "sold",
-      "pnl": 5.76,
-      "settled": 1785417180,
-      "name": "0xbadaf319",
-      "exit_price": 0.8342
-    },
-    {
-      "ts": 1785397377,
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "token": "39269986509343926601716046818556340014937567237911903122563938140480316098298",
-      "cond": "0xc12ddf2480827eb5183af5ec33fc3a55d34a37ae9aa593929eb94bc7622be659",
-      "title": "Will Microsoft (MSFT) close above $390 on July 30?",
-      "outcome": "Yes",
-      "price": 0.9489,
-      "stake": 34.46,
-      "reason": "maker bid unfilled (66s)",
-      "status": "won",
-      "pnl": 1.8,
-      "settled": 1785443023,
-      "name": "0xbadaf319",
-      "exit_checked": true
     },
     {
       "ts": 1785398908,
@@ -24075,6 +24014,64 @@
       "pnl": null,
       "settled": null,
       "name": "Kruto2027"
+    },
+    {
+      "ts": 1787607471,
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "token": "36828382167437541960242966095787299426063513809508597397512070903328251264563",
+      "cond": "0x8b2d55c88a9482307b560af596c0e13da845881baac79924add311c2f12da202",
+      "title": "Game Spread: Yuan (-1.5) vs Guo (+1.5)",
+      "outcome": "Yuan",
+      "price": 0.44,
+      "stake": 53.82,
+      "reason": "maker bid unfilled (99s)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "Kruto2027"
+    },
+    {
+      "ts": 1787607471,
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "token": "60451651791354547596640213980378066201569454865024133009879926936313765981457",
+      "cond": "0x43a9573b890f18691dc3f6279d53138dadf4176357f11bb77b9d166417cd9fa1",
+      "title": "Game Spread: O'Connell (-1.5) vs Sakellaridis (+1.5)",
+      "outcome": "O'Connell",
+      "price": 0.4031,
+      "stake": 53.82,
+      "reason": "maker bid unfilled (87s)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "Kruto2027"
+    },
+    {
+      "ts": 1787607600,
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "token": "3365329657300637421247444573783895619925095428097073040585476908926985560986",
+      "cond": "0x3acdd4d57dc5ed040094cd5eae275dd7039977d3b72ef8d31b04453cc6deef16",
+      "title": "Game Spread: Swan (-1.5) vs Scott (+1.5)",
+      "outcome": "Swan",
+      "price": 0.4,
+      "stake": 10.3,
+      "reason": "maker bid unfilled (95s)",
+      "status": "open",
+      "pnl": null,
+      "settled": null
+    },
+    {
+      "ts": 1787607617,
+      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+      "token": "101564700405449939175516490462503647619426169465249101475325673292001214700875",
+      "cond": "0x48571f7dfcf56562c4c5dc44fb10feeddec29c2f176f7c2395cfc7cf9917bc75",
+      "title": "Game Spread: Djere (-1.5) vs Muller (+1.5)",
+      "outcome": "Djere",
+      "price": 0.43,
+      "stake": 53.8,
+      "reason": "thin book ($5 within 5c < $50)",
+      "status": "open",
+      "pnl": null,
+      "settled": null
     }
   ],
   "no_miss_toks": [
@@ -24420,7 +24417,7 @@
   "trade_cursor": {
     "0x41558102a796ba971c7567cad41c307e59f8fa41": 1783900970,
     "0xd96750bf8d941a8186e592b0ae6e096da66aa266": 1783871702,
-    "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1787607402,
+    "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb": 1787607535,
     "0xbadaf319415c17f28824a43ae0cd912b9d84d874": 1787596281,
     "0xd7d36345c4aab150e59577e360696b01d01d698b": 1787219458,
     "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf": 1787585191,
@@ -24440,51 +24437,10 @@
     "title": "Game Spread: Charaeva (-1.5) vs Bandecchi (+1.5)",
     "outcome": "Charaeva"
   },
-  "paper_maker": [
-    {
-      "paper_maker": true,
-      "sz": 122.31,
-      "mode": "maker",
-      "token": "36828382167437541960242966095787299426063513809508597397512070903328251264563",
-      "side": "BUY",
-      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-      "title": "Game Spread: Yuan (-1.5) vs Guo (+1.5)",
-      "outcome": "Yuan",
-      "event": "wta-yuan-guo-2026-08-25",
-      "cond": "0x8b2d55c88a9482307b560af596c0e13da845881baac79924add311c2f12da202",
-      "their_price": 0.44,
-      "their_ts": 1787607371,
-      "price": 0.44,
-      "is_add": false,
-      "stake": 53.819073426495535,
-      "ts": 1787607371.4757173,
-      "ttl_s": 60.0,
-      "ba_at_signal": 0.93
-    },
-    {
-      "paper_maker": true,
-      "sz": 133.51,
-      "mode": "maker",
-      "token": "60451651791354547596640213980378066201569454865024133009879926936313765981457",
-      "side": "BUY",
-      "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-      "title": "Game Spread: O'Connell (-1.5) vs Sakellaridis (+1.5)",
-      "outcome": "O'Connell",
-      "event": null,
-      "cond": "0x43a9573b890f18691dc3f6279d53138dadf4176357f11bb77b9d166417cd9fa1",
-      "their_price": 0.403099,
-      "their_ts": 1787607384,
-      "price": 0.403099,
-      "is_add": false,
-      "stake": 53.819073426495535,
-      "ts": 1787607383.8207164,
-      "ttl_s": 60.0,
-      "ba_at_signal": 0.62
-    }
-  ],
+  "paper_maker": [],
   "maker_stats": {
     "fills": 293,
-    "misses": 162
+    "misses": 165
   },
   "ignored_exits": [
     {
