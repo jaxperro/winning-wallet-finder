@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 666.83,
- "deployed": 2023.28,
+ "cash": 667.69,
+ "deployed": 2022.51,
  "reserve": 0.0,
- "realized": 1690.08,
+ "realized": 1690.16,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 45,
@@ -3087,12 +3087,12 @@
  ],
  "missed_pnl": 743.9,
  "last_fill": {
-  "ts": 1787607411,
-  "side": "BUY",
-  "price": 0.4798,
-  "shares": 112.17,
-  "title": "Game Spread: Charaeva (-1.5) vs Bandecchi (+1.5)",
-  "outcome": "Charaeva"
+  "ts": 1787607946,
+  "side": "SELL",
+  "price": 0.94,
+  "shares": 0.91,
+  "title": "Decibel FDV above $500M one day after launch?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3196,5 +3196,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787607617
+ "updated": 1787607957
 }
