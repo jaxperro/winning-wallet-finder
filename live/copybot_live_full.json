@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787575650,
+ "updated": 1787577801,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 570.05,
@@ -9783,7 +9783,8 @@
    "status": "lost",
    "pnl": -54.62,
    "settled": 1787575650,
-   "name": "1kto1m"
+   "name": "1kto1m",
+   "exit_checked": true
   },
   {
    "ts": 1787468455,
