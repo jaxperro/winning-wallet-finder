@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787569076,
+ "updated": 1787572115,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 570.05,
@@ -36,11 +36,11 @@
    "realized": 306.79,
    "n": 24,
    "wins": 3,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 53.84,
+   "open_n": 1,
    "miss_n": 33,
    "miss_pnl": 763.48,
-   "last_ts": 1787565472
+   "last_ts": 1787571979
   },
   "LSB1": {
    "realized": -397.16,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "22530368676351743865384783475100002305027451346911930287686591171599837128300",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Over",
+   "title": "Al Ettifaq Saudi Club vs. Al Nassr Saudi Club: Al Ettifaq Saudi Club O/U 3.5 Corners",
+   "their_price": 0.4614,
+   "my_price": 0.4614,
+   "slippage_pct": 0.0,
+   "lag_s": 115.7,
+   "shares": 116.69,
+   "cost": 53.84,
+   "fee": 0.8699,
+   "opened": 1787571979,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787616000
+  },
   {
    "token": "80107087570495988321191257475581529272771271474688201588898191530153281609142",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
