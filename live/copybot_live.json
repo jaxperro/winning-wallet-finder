@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.55,
+ "stake": 53.84,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 638.7,
- "deployed": 1738.73,
+ "cash": 981.15,
+ "deployed": 1710.76,
  "reserve": 0.0,
- "realized": 1377.4,
+ "realized": 1691.88,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 41,
- "fees_paid": 523.56,
+ "open_count": 40,
+ "fees_paid": 523.76,
  "fee_rate": 0.03,
  "lag": {
   "n": 520,
@@ -64,11 +64,13 @@
    "cost": 27.97,
    "fee": 0.77,
    "opened": 1787562843,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788134400
+   "status": "closed",
+   "exit_price": 0.9794,
+   "pnl": 313.71,
+   "settled": 1787565472,
+   "end_ts": 1788134400,
+   "sold_shares": 349.65,
+   "sold_proceeds": 342.45
   },
   {
    "token": "35519036727779372362379885698730125198535180516238825460733396795218371929718",
@@ -3096,9 +3098,9 @@
  ],
  "missed_pnl": 633.9,
  "last_fill": {
-  "ts": 1787562846,
-  "side": "BUY",
-  "price": 0.08,
+  "ts": 1787565472,
+  "side": "SELL",
+  "price": 0.98,
   "shares": 349.65,
   "title": "ITF W35 Verbier 2 Women: Anastasija Cvetkovic vs Iva Ivanovi",
   "outcome": "Anastasija Cvetkovic"
@@ -3135,14 +3137,14 @@
    "last_ts": 1785987921
   },
   "Kruto2027": {
-   "realized": -6.92,
-   "n": 23,
+   "realized": 306.79,
+   "n": 24,
    "wins": 3,
-   "open_cost": 27.97,
-   "open_n": 1,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 33,
    "miss_pnl": 763.48,
-   "last_ts": 1787562843
+   "last_ts": 1787565472
   },
   "LSB1": {
    "realized": -397.16,
@@ -3205,5 +3207,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787562871
+ "updated": 1787565472
 }
