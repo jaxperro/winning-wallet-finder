@@ -2144,6 +2144,21 @@
  ],
  "missed": [
   {
+   "ts": 1787347817,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "60171921599420836876224510364681932946082411623475935527554573877099969430573",
+   "cond": "0x66ab13c24802836b0ad61f00b87929d45464acd9c137b4d6ccb46bed070b691d",
+   "title": "Will \"Mutiny\" score at least 60 on the Rotten Tomatoes Tomatometer?",
+   "outcome": "Yes",
+   "price": 0.004,
+   "stake": 49.53,
+   "reason": "thin book ($2 within 5c < $50)",
+   "status": "lost",
+   "pnl": -51.01,
+   "settled": 1787587840,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1787583056,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "15039539718866710456186369508114595292346990445004558138591734757941373652283",
@@ -2373,21 +2388,6 @@
    "price": 0.5735,
    "stake": 38.22,
    "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
-  },
-  {
-   "ts": 1787347817,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "60171921599420836876224510364681932946082411623475935527554573877099969430573",
-   "cond": "0x66ab13c24802836b0ad61f00b87929d45464acd9c137b4d6ccb46bed070b691d",
-   "title": "Will \"Mutiny\" score at least 60 on the Rotten Tomatoes Tomatometer?",
-   "outcome": "Yes",
-   "price": 0.004,
-   "stake": 49.53,
-   "reason": "thin book ($2 within 5c < $50)",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -3094,7 +3094,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 719.92,
+ "missed_pnl": 668.91,
  "last_fill": {
   "ts": 1787579120,
   "side": "BUY",
@@ -3111,7 +3111,7 @@
    "open_cost": 526.76,
    "open_n": 14,
    "miss_n": 184,
-   "miss_pnl": 119267.64,
+   "miss_pnl": 119216.63,
    "last_ts": 1787579102
   },
   "gkmgkldfmg": {
@@ -3205,5 +3205,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787586717
+ "updated": 1787587850
 }
