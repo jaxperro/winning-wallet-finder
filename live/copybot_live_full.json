@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787604778,
+ "updated": 1787607471,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 572.35,
@@ -36,11 +36,11 @@
    "realized": 306.79,
    "n": 24,
    "wins": 3,
-   "open_cost": 53.84,
-   "open_n": 1,
-   "miss_n": 33,
+   "open_cost": 161.5,
+   "open_n": 3,
+   "miss_n": 37,
    "miss_pnl": 763.48,
-   "last_ts": 1787571979
+   "last_ts": 1787607402
   },
   "LSB1": {
    "realized": -397.16,
@@ -104,6 +104,46 @@
   }
  },
  "bets": [
+  {
+   "token": "28502899698765918644010369700714011454004586109826100390927663361775431948613",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Charaeva",
+   "title": "Game Spread: Charaeva (-1.5) vs Bandecchi (+1.5)",
+   "their_price": 0.4798,
+   "my_price": 0.4798,
+   "slippage_pct": 0.0,
+   "lag_s": 9.2,
+   "shares": 112.17,
+   "cost": 53.82,
+   "fee": 0.8399,
+   "opened": 1787607402,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800
+  },
+  {
+   "token": "10558402462967201279256738071910522514610256151864879856073779419687023223699",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Kecmanovic",
+   "title": "Game Spread: Kecmanovic (-1.5) vs Marozsan (+1.5)",
+   "their_price": 0.38,
+   "my_price": 0.38,
+   "slippage_pct": 0.0,
+   "lag_s": 9.5,
+   "shares": 141.68,
+   "cost": 53.84,
+   "fee": 1.0014,
+   "opened": 1787607334,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800
+  },
   {
    "token": "22348984132517805501065549717042801358050686397446075254391653026078868300575",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -9812,6 +9852,66 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787607471,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "36828382167437541960242966095787299426063513809508597397512070903328251264563",
+   "cond": "0x8b2d55c88a9482307b560af596c0e13da845881baac79924add311c2f12da202",
+   "title": "Game Spread: Yuan (-1.5) vs Guo (+1.5)",
+   "outcome": "Yuan",
+   "price": 0.44,
+   "stake": 53.82,
+   "reason": "maker bid unfilled (99s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
+   "ts": 1787607471,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "60451651791354547596640213980378066201569454865024133009879926936313765981457",
+   "cond": "0x43a9573b890f18691dc3f6279d53138dadf4176357f11bb77b9d166417cd9fa1",
+   "title": "Game Spread: O'Connell (-1.5) vs Sakellaridis (+1.5)",
+   "outcome": "O'Connell",
+   "price": 0.4031,
+   "stake": 53.82,
+   "reason": "maker bid unfilled (87s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
+   "ts": 1787607411,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "98388112905813088627463032038489787675158398024781747639540401025320973575390",
+   "cond": "0xaf869f8f36fad9042c7313f5c213796ff772716a0b3b7b476d6ad25592d7e68e",
+   "title": "Game Spread: Knutson (-1.5) vs Lepchenko (+1.5)",
+   "outcome": "Knutson",
+   "price": 0.41,
+   "stake": 53.84,
+   "reason": "maker bid unfilled (117s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
+  {
+   "ts": 1787607411,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "18726923141281826663284458508033656911281461359725168082006241752415725484092",
+   "cond": "0x663f6da425999d7c068375df4e7bd47edb87d3fbcf3a444f87df5e21110cad3e",
+   "title": "Game Spread: Vekic (-1.5) vs Parry (+1.5)",
+   "outcome": "Vekic",
+   "price": 0.4,
+   "stake": 53.84,
+   "reason": "maker bid unfilled (97s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1787583056,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
