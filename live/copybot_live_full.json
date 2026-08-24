@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787599956,
+ "updated": 1787600085,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 572.35,
@@ -68,7 +68,7 @@
    "wins": 7,
    "open_cost": 1422.78,
    "open_n": 26,
-   "miss_n": 67,
+   "miss_n": 68,
    "miss_pnl": -1015.23,
    "last_ts": 1787505668
   },
@@ -9812,6 +9812,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787600074,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "3113805835428209663026536826445198690497506378042381479460524760612035145599",
+   "cond": "0x430751274480232547064a75eb29ceead00b95cf3e21709911a147cfada04e16",
+   "title": "Will United Russia win fewer than 280 seats in the next Russian State Duma election?",
+   "outcome": "No",
+   "price": 0.93,
+   "stake": 53.84,
+   "reason": "maker bid unfilled (118s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1787588201,
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",

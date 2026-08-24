@@ -2142,6 +2142,21 @@
  ],
  "missed": [
   {
+   "ts": 1787600074,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "3113805835428209663026536826445198690497506378042381479460524760612035145599",
+   "cond": "0x430751274480232547064a75eb29ceead00b95cf3e21709911a147cfada04e16",
+   "title": "Will United Russia win fewer than 280 seats in the next Russian State Duma election?",
+   "outcome": "No",
+   "price": 0.93,
+   "stake": 53.84,
+   "reason": "maker bid unfilled (118s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1787588201,
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
    "token": "79012338915393744148217653315669181846261988488575792315487621951278056459147",
@@ -3074,25 +3089,9 @@
    "settled": 1786952541,
    "name": "BikesAreTheBikes",
    "exit_price": 0.4934
-  },
-  {
-   "ts": 1786732315,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "106335826079264931347181345558330414525733792371805698042055926343403911976742",
-   "cond": "0x0082737f1d0dc831a848e92b46fbf572f133dd535bfaf96cc123e5aa7577ce9c",
-   "title": "Will Japan Q2 GDP growth (annualized) be between 0.0% and 0.8%?",
-   "outcome": "Yes",
-   "price": 0.2,
-   "stake": 48.08,
-   "reason": "thin book ($3 within 5c < $50)",
-   "status": "lost",
-   "pnl": -49.23,
-   "settled": 1786932169,
-   "name": "BikesAreTheBikes",
-   "exit_checked": true
   }
  ],
- "missed_pnl": 731.66,
+ "missed_pnl": 845.37,
  "last_fill": {
   "ts": 1787588475,
   "side": "BUY",
@@ -3168,7 +3167,7 @@
    "wins": 7,
    "open_cost": 1422.78,
    "open_n": 26,
-   "miss_n": 67,
+   "miss_n": 68,
    "miss_pnl": -1015.23,
    "last_ts": 1787505668
   },
@@ -3203,5 +3202,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787599956
+ "updated": 1787600085
 }

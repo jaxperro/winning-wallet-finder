@@ -20834,8 +20834,8 @@
     }
   },
   "hwm": 3600.1933566560215,
-  "feed_sig": "c4bc2fd005e14f6039f14f7b242128ee",
-  "feed_pushed_at": 1787599850.184684,
+  "feed_sig": "80e8ac801f9fae0dce2751e5a5d4f63d",
+  "feed_pushed_at": 1787600009.7462273,
   "missed": [
     {
       "ts": 1784503159,
@@ -20896,22 +20896,6 @@
       "pnl": null,
       "settled": null,
       "name": "0xbadaf319"
-    },
-    {
-      "ts": 1785354988,
-      "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-      "token": "67974519092499583807658257784979623878299686243963613686170579160673288586130",
-      "cond": "0xbcb50b3b83265293496361749104507a50572ed690bf0f4c7e9cede7668a470b",
-      "title": "Will Apple (AAPL) close above $340 on July 29?",
-      "outcome": "Yes",
-      "price": 0.1753,
-      "stake": 110.96,
-      "reason": "not copied in the detection window (reconciled)",
-      "status": "lost",
-      "pnl": -113.71,
-      "settled": 1785364167,
-      "name": "0xbadaf319",
-      "exit_checked": true
     },
     {
       "ts": 1785356857,
@@ -24011,6 +23995,21 @@
       "pnl": 64.93,
       "settled": 1787599956,
       "name": "JuiceFarm"
+    },
+    {
+      "ts": 1787600074,
+      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+      "token": "3113805835428209663026536826445198690497506378042381479460524760612035145599",
+      "cond": "0x430751274480232547064a75eb29ceead00b95cf3e21709911a147cfada04e16",
+      "title": "Will United Russia win fewer than 280 seats in the next Russian State Duma election?",
+      "outcome": "No",
+      "price": 0.93,
+      "stake": 53.84,
+      "reason": "maker bid unfilled (118s)",
+      "status": "open",
+      "pnl": null,
+      "settled": null,
+      "name": "BikesAreTheBikes"
     }
   ],
   "no_miss_toks": [
@@ -24375,31 +24374,10 @@
     "title": "Will the price of Solana be above $100 on August 25?",
     "outcome": "No"
   },
-  "paper_maker": [
-    {
-      "paper_maker": true,
-      "sz": 57.89,
-      "mode": "maker",
-      "token": "3113805835428209663026536826445198690497506378042381479460524760612035145599",
-      "side": "BUY",
-      "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-      "title": "Will United Russia win fewer than 280 seats in the next Russian State Duma election?",
-      "outcome": "No",
-      "event": "how-many-seats-will-united-russia-win-in-the-next-russian-legislative-election",
-      "cond": "0x430751274480232547064a75eb29ceead00b95cf3e21709911a147cfada04e16",
-      "their_price": 0.93,
-      "their_ts": 1787599944,
-      "price": 0.93,
-      "is_add": false,
-      "stake": 53.839101311295536,
-      "ts": 1787599956.356926,
-      "ttl_s": 60.0,
-      "ba_at_signal": 0.958
-    }
-  ],
+  "paper_maker": [],
   "maker_stats": {
     "fills": 291,
-    "misses": 159
+    "misses": 160
   },
   "ignored_exits": [
     {
