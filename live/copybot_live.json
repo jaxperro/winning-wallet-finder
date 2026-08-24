@@ -2169,7 +2169,8 @@
    "status": "lost",
    "pnl": -51.01,
    "settled": 1787587840,
-   "name": "0xbadaf319"
+   "name": "0xbadaf319",
+   "exit_checked": true
   },
   {
    "ts": 1787583056,
@@ -3202,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787588476
+ "updated": 1787588970
 }
