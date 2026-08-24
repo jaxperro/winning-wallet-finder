@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.56,
+ "stake": 47.55,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 667.44,
- "deployed": 1710.76,
+ "cash": 638.7,
+ "deployed": 1738.73,
  "reserve": 0.0,
- "realized": 1378.17,
+ "realized": 1377.4,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 40,
- "fees_paid": 522.79,
+ "open_count": 41,
+ "fees_paid": 523.56,
  "fee_rate": 0.03,
  "lag": {
-  "n": 519,
-  "n24": 7,
+  "n": 520,
+  "n24": 8,
   "basis": "24h",
-  "avg_s": 11.3,
+  "avg_s": 8.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "80107087570495988321191257475581529272771271474688201588898191530153281609142",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Anastasija Cvetkovic",
+   "title": "ITF W35 Verbier 2 Women: Anastasija Cvetkovic vs Iva Ivanovic",
+   "their_price": 0.08,
+   "my_price": 0.08,
+   "slippage_pct": 0.0,
+   "lag_s": 3.5,
+   "shares": 349.65,
+   "cost": 27.97,
+   "fee": 0.77,
+   "opened": 1787562843,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788134400
+  },
   {
    "token": "35519036727779372362379885698730125198535180516238825460733396795218371929718",
    "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
@@ -2120,26 +2140,6 @@
    "end_ts": 1786320000,
    "sold_shares": 84.77,
    "sold_proceeds": 76.93
-  },
-  {
-   "token": "21515528084926948718188410049221867058078937518895951601155499933747657106361",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "US announces end of Iranian blockade by August 31, 2026?",
-   "their_price": 0.59,
-   "my_price": 0.59,
-   "slippage_pct": 0.0,
-   "lag_s": 0.8,
-   "shares": 81.92,
-   "cost": 48.33,
-   "fee": 0.59,
-   "opened": 1786364866,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788134400
   }
  ],
  "missed": [
@@ -3096,12 +3096,12 @@
  ],
  "missed_pnl": 633.9,
  "last_fill": {
-  "ts": 1787530739,
-  "side": "SELL",
-  "price": 0.964,
-  "shares": 1.67,
-  "title": "Will Iran target Syria by August 31, 2026?",
-  "outcome": "No"
+  "ts": 1787562846,
+  "side": "BUY",
+  "price": 0.08,
+  "shares": 349.65,
+  "title": "ITF W35 Verbier 2 Women: Anastasija Cvetkovic vs Iva Ivanovi",
+  "outcome": "Anastasija Cvetkovic"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3138,11 +3138,11 @@
    "realized": -6.92,
    "n": 23,
    "wins": 3,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 27.97,
+   "open_n": 1,
    "miss_n": 33,
    "miss_pnl": 763.48,
-   "last_ts": 1787514531
+   "last_ts": 1787562843
   },
   "LSB1": {
    "realized": -397.16,
@@ -3205,5 +3205,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787552116
+ "updated": 1787562871
 }
