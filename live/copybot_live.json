@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 53.77,
+ "stake": 53.76,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 581.04,
- "deployed": 2107.59,
+ "cash": 552.27,
+ "deployed": 2135.88,
  "reserve": 0.0,
- "realized": 1688.6,
+ "realized": 1688.12,
  "adjustments": 0.03,
- "ledger_drift": -0.04,
- "open_count": 48,
- "fees_paid": 529.47,
+ "ledger_drift": -0.03,
+ "open_count": 49,
+ "fees_paid": 529.95,
  "fee_rate": 0.03,
  "lag": {
-  "n": 529,
-  "n24": 12,
+  "n": 530,
+  "n24": 13,
   "basis": "24h",
-  "avg_s": 9.3,
+  "avg_s": 9.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "36828382167437541960242966095787299426063513809508597397512070903328251264563",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Yuan",
+   "title": "Game Spread: Yuan (-1.5) vs Guo (+1.5)",
+   "their_price": 0.44,
+   "my_price": 0.44,
+   "slippage_pct": 0.0,
+   "lag_s": 5.1,
+   "shares": 64.31,
+   "cost": 28.3,
+   "fee": 0.48,
+   "opened": 1787610495,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800
+  },
   {
    "token": "103087947538502153292982176384023365788439289338284628197678502155245425093258",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2114,26 +2134,6 @@
    "end_ts": 1790726400,
    "sold_shares": 34.97,
    "sold_proceeds": 33.17
-  },
-  {
-   "token": "54168830547435529454436627291590270129722808725775536743528705116159111874519",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "Dplus KIA",
-   "title": "LoL: KT Rolster vs Dplus KIA (BO3) - LCK Round 3-4 Legend Group",
-   "their_price": 0.63,
-   "my_price": 0.63,
-   "slippage_pct": 0.0,
-   "lag_s": 0.7,
-   "shares": 78.3,
-   "cost": 49.33,
-   "fee": 0.55,
-   "opened": 1786393577,
-   "status": "won",
-   "exit_price": 1.0,
-   "pnl": 28.42,
-   "settled": 1786547650,
-   "end_ts": 1786492800
   }
  ],
  "missed": [
@@ -3084,12 +3084,12 @@
  ],
  "missed_pnl": 729.83,
  "last_fill": {
-  "ts": 1787609990,
+  "ts": 1787610500,
   "side": "BUY",
-  "price": 0.39,
-  "shares": 21.76,
-  "title": "Game Spread: Mochizuki (-1.5) vs Milavsky (+1.5)",
-  "outcome": "Mochizuki"
+  "price": 0.44,
+  "shares": 64.31,
+  "title": "Game Spread: Yuan (-1.5) vs Guo (+1.5)",
+  "outcome": "Yuan"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3126,11 +3126,11 @@
    "realized": 306.79,
    "n": 24,
    "wins": 3,
-   "open_cost": 246.58,
-   "open_n": 6,
+   "open_cost": 274.88,
+   "open_n": 7,
    "miss_n": 40,
    "miss_pnl": 763.48,
-   "last_ts": 1787609980
+   "last_ts": 1787610495
   },
   "LSB1": {
    "realized": -397.16,
@@ -3193,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787609990
+ "updated": 1787610522
 }
