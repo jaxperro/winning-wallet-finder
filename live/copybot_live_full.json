@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787565472,
+ "updated": 1787569076,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 570.05,
@@ -78,7 +78,7 @@
    "wins": 12,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 9,
+   "miss_n": 10,
    "miss_pnl": -28.71,
    "last_ts": 1787538620
   },
@@ -9713,6 +9713,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787569076,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "78578272774151823979118663478518460679225498124181359618828785990291784648101",
+   "cond": "0xe85cffd95fde2536388df4d8b3308320d78a5af800a2711210498ea75509a694",
+   "title": "LoL: ThunderTalk Gaming vs Invictus Gaming (BO5) - LPL Knights Rivals",
+   "outcome": "Invictus Gaming",
+   "price": 0.7,
+   "stake": 53.84,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "JuiceFarm"
+  },
   {
    "ts": 1787522755,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",

@@ -2146,6 +2146,21 @@
  ],
  "missed": [
   {
+   "ts": 1787569076,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "78578272774151823979118663478518460679225498124181359618828785990291784648101",
+   "cond": "0xe85cffd95fde2536388df4d8b3308320d78a5af800a2711210498ea75509a694",
+   "title": "LoL: ThunderTalk Gaming vs Invictus Gaming (BO5) - LPL Knights Rivals",
+   "outcome": "Invictus Gaming",
+   "price": 0.7,
+   "stake": 53.84,
+   "reason": "no ask side on the book at copy time",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "JuiceFarm"
+  },
+  {
    "ts": 1787522755,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "21420960371645492428654501469509567183226530924246830168213644678616765771303",
@@ -3079,24 +3094,9 @@
    "settled": 1786903224,
    "name": "Kruto2027",
    "exit_checked": true
-  },
-  {
-   "ts": 1786878167,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "55404173257714454784216746048287617327978233453392682929035963447356177416569",
-   "cond": "0x0083a9fa85312e54e9958f167e4620a1ff1f8f0d3882f56dd8e093264af5294b",
-   "title": "Will Lambda's valuation hit (LOW) $6.5B by August 31?",
-   "outcome": "No",
-   "price": 0.9453,
-   "stake": 35.52,
-   "reason": "maker bid unfilled (118s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 633.9,
+ "missed_pnl": 635.35,
  "last_fill": {
   "ts": 1787565472,
   "side": "SELL",
@@ -3182,7 +3182,7 @@
    "wins": 12,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 9,
+   "miss_n": 10,
    "miss_pnl": -28.71,
    "last_ts": 1787538620
   },
@@ -3207,5 +3207,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787565472
+ "updated": 1787569076
 }
