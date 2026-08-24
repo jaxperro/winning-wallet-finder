@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 53.78,
+ "stake": 53.77,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 589.69,
- "deployed": 2099.1,
+ "cash": 581.04,
+ "deployed": 2107.59,
  "reserve": 0.0,
- "realized": 1688.76,
+ "realized": 1688.6,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 47,
- "fees_paid": 529.32,
+ "open_count": 48,
+ "fees_paid": 529.47,
  "fee_rate": 0.03,
  "lag": {
-  "n": 528,
-  "n24": 11,
+  "n": 529,
+  "n24": 12,
   "basis": "24h",
-  "avg_s": 9.2,
+  "avg_s": 9.3,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "103087947538502153292982176384023365788439289338284628197678502155245425093258",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Mochizuki",
+   "title": "Game Spread: Mochizuki (-1.5) vs Milavsky (+1.5)",
+   "their_price": 0.39,
+   "my_price": 0.39,
+   "slippage_pct": 0.0,
+   "lag_s": 10.8,
+   "shares": 21.76,
+   "cost": 8.49,
+   "fee": 0.16,
+   "opened": 1787609980,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800
+  },
   {
    "token": "47839198849637890790334157054607939655102672329558045596962908149532938094210",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2114,28 +2134,6 @@
    "pnl": 28.42,
    "settled": 1786547650,
    "end_ts": 1786492800
-  },
-  {
-   "token": "6237386819428750235511557154093150991879160039847931747938354455286350107208",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Le Pen endorses non-Bardella PM by December 31, 2026?",
-   "their_price": 0.9269,
-   "my_price": 0.86,
-   "slippage_pct": -0.0722,
-   "lag_s": 0.9,
-   "shares": 10.8,
-   "cost": 9.28,
-   "fee": 0.04,
-   "opened": 1784063558,
-   "status": "closed",
-   "exit_price": 0.9587,
-   "pnl": 1.03,
-   "settled": 1786547593,
-   "end_ts": 1798675200,
-   "sold_shares": 10.79,
-   "sold_proceeds": 10.35
   }
  ],
  "missed": [
@@ -3086,12 +3084,12 @@
  ],
  "missed_pnl": 729.83,
  "last_fill": {
-  "ts": 1787609037,
+  "ts": 1787609990,
   "side": "BUY",
   "price": 0.39,
-  "shares": 137.93,
-  "title": "Game Spread: Zhang (-1.5) vs Timofeeva (+1.5)",
-  "outcome": "Zhang"
+  "shares": 21.76,
+  "title": "Game Spread: Mochizuki (-1.5) vs Milavsky (+1.5)",
+  "outcome": "Mochizuki"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3128,11 +3126,11 @@
    "realized": 306.79,
    "n": 24,
    "wins": 3,
-   "open_cost": 238.09,
-   "open_n": 5,
+   "open_cost": 246.58,
+   "open_n": 6,
    "miss_n": 40,
    "miss_pnl": 763.48,
-   "last_ts": 1787609035
+   "last_ts": 1787609980
   },
   "LSB1": {
    "realized": -397.16,
@@ -3195,5 +3193,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787609093
+ "updated": 1787609990
 }

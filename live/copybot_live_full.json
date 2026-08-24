@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787609093,
+ "updated": 1787609990,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 572.35,
@@ -36,11 +36,11 @@
    "realized": 306.79,
    "n": 24,
    "wins": 3,
-   "open_cost": 238.09,
-   "open_n": 5,
+   "open_cost": 246.58,
+   "open_n": 6,
    "miss_n": 40,
    "miss_pnl": 763.48,
-   "last_ts": 1787609035
+   "last_ts": 1787609980
   },
   "LSB1": {
    "realized": -397.16,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "103087947538502153292982176384023365788439289338284628197678502155245425093258",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Mochizuki",
+   "title": "Game Spread: Mochizuki (-1.5) vs Milavsky (+1.5)",
+   "their_price": 0.39,
+   "my_price": 0.39,
+   "slippage_pct": 0.0,
+   "lag_s": 10.8,
+   "shares": 21.76,
+   "cost": 8.49,
+   "fee": 0.1553,
+   "opened": 1787609980,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800
+  },
   {
    "token": "47839198849637890790334157054607939655102672329558045596962908149532938094210",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
