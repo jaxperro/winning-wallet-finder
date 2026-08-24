@@ -5,10 +5,10 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 602.0,
- "deployed": 1759.36,
+ "cash": 603.61,
+ "deployed": 1757.99,
  "reserve": 0.0,
- "realized": 1361.34,
+ "realized": 1361.57,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
  "open_count": 41,
@@ -231,8 +231,8 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788134400,
-   "sold_shares": 15.99,
-   "sold_proceeds": 15.66
+   "sold_shares": 17.66,
+   "sold_proceeds": 17.28
   },
   {
    "token": "78001011783046061800468570563350488088400397946820543402147928931383794683812",
@@ -3096,12 +3096,12 @@
  ],
  "missed_pnl": 655.22,
  "last_fill": {
-  "ts": 1787528996,
-  "side": "BUY",
-  "price": 0.69,
-  "shares": 7.58,
-  "title": "Will Airbnb, Inc. (ABNB) hit (HIGH) $190 Week of August 24 2",
-  "outcome": "Yes"
+  "ts": 1787530739,
+  "side": "SELL",
+  "price": 0.964,
+  "shares": 1.67,
+  "title": "Will Iran target Syria by August 31, 2026?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3205,5 +3205,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787529606
+ "updated": 1787530747
 }
