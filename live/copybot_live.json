@@ -2144,6 +2144,21 @@
  ],
  "missed": [
   {
+   "ts": 1787581582,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "52487256270918227930942830546248720603566203568229607048093730748840489555808",
+   "cond": "0xdbe93b5a701f36076a560fa4b9ba59e365a6e8e2ea6a83764640010657277ca4",
+   "title": "Will Gadi Eizenkot be the next Prime Minister of Israel?",
+   "outcome": "Yes",
+   "price": 0.541,
+   "stake": 53.85,
+   "reason": "maker bid unfilled (91s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
+  {
    "ts": 1787575561,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "5506960250160396168975872633831816223181816814113506849144916695207660278211",
@@ -3078,24 +3093,9 @@
    "settled": 1786909419,
    "name": "Kruto2027",
    "exit_price": 0.9999
-  },
-  {
-   "ts": 1786905386,
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "token": "3104629708171062356498135654472461762731791851667035051301931240755518332250",
-   "cond": "0x650e3ebc043ddbcfa1d1ffda0c5830f19da7389827889fb5db3474bde5b007fb",
-   "title": "Will the Republicans win the Ohio governor race in 2026?",
-   "outcome": "Yes",
-   "price": 0.41,
-   "stake": 48.95,
-   "reason": "price moved 0.36\u21920.41",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "BikesAreTheBikes"
   }
  ],
- "missed_pnl": 655.92,
+ "missed_pnl": 622.16,
  "last_fill": {
   "ts": 1787579120,
   "side": "BUY",
@@ -3171,7 +3171,7 @@
    "wins": 7,
    "open_cost": 1422.78,
    "open_n": 26,
-   "miss_n": 66,
+   "miss_n": 67,
    "miss_pnl": -1015.23,
    "last_ts": 1787505668
   },
@@ -3206,5 +3206,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787579120
+ "updated": 1787581582
 }

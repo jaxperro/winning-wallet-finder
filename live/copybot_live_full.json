@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787579120,
+ "updated": 1787581582,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 572.35,
@@ -68,7 +68,7 @@
    "wins": 7,
    "open_cost": 1422.78,
    "open_n": 26,
-   "miss_n": 66,
+   "miss_n": 67,
    "miss_pnl": -1015.23,
    "last_ts": 1787505668
   },
@@ -9792,6 +9792,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787581582,
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "token": "52487256270918227930942830546248720603566203568229607048093730748840489555808",
+   "cond": "0xdbe93b5a701f36076a560fa4b9ba59e365a6e8e2ea6a83764640010657277ca4",
+   "title": "Will Gadi Eizenkot be the next Prime Minister of Israel?",
+   "outcome": "Yes",
+   "price": 0.541,
+   "stake": 53.85,
+   "reason": "maker bid unfilled (91s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "BikesAreTheBikes"
+  },
   {
    "ts": 1787575561,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
