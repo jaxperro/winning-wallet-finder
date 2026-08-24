@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787607957,
+ "updated": 1787608959,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 572.35,
@@ -36,11 +36,11 @@
    "realized": 306.79,
    "n": 24,
    "wins": 3,
-   "open_cost": 161.5,
-   "open_n": 3,
-   "miss_n": 39,
+   "open_cost": 184.3,
+   "open_n": 4,
+   "miss_n": 40,
    "miss_pnl": 763.48,
-   "last_ts": 1787607402
+   "last_ts": 1787608869
   },
   "LSB1": {
    "realized": -397.16,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "72567324684222141290922875444376117690320079574211518553868921922450770952838",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Vidmanova",
+   "title": "Game Spread: Vidmanova (-1.5) vs Birrell (+1.5)",
+   "their_price": 0.38,
+   "my_price": 0.38,
+   "slippage_pct": 0.0,
+   "lag_s": 0.3,
+   "shares": 60.0,
+   "cost": 22.8,
+   "fee": 0.4241,
+   "opened": 1787608869,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800
+  },
   {
    "token": "28502899698765918644010369700714011454004586109826100390927663361775431948613",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -9852,6 +9872,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787608959,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "45694753927176430036399380961928291167234237319318394974418165728052085403177",
+   "cond": "0xb5bb315f0e53c1dde98fc7f7d4c8b5765191c95840801dbe159381f689e2aefb",
+   "title": "Game Spread: Kwon (-1.5) vs Lajovic (+1.5)",
+   "outcome": "Kwon",
+   "price": 0.4,
+   "stake": 53.8,
+   "reason": "thin book ($31 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1787607617,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",

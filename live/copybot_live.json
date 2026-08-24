@@ -5,20 +5,20 @@
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 667.69,
- "deployed": 2022.51,
+ "cash": 644.46,
+ "deployed": 2045.31,
  "reserve": 0.0,
- "realized": 1690.16,
+ "realized": 1689.74,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 45,
- "fees_paid": 527.91,
+ "open_count": 46,
+ "fees_paid": 528.33,
  "fee_rate": 0.03,
  "lag": {
-  "n": 526,
-  "n24": 9,
+  "n": 527,
+  "n24": 10,
   "basis": "24h",
-  "avg_s": 9.5,
+  "avg_s": 9.3,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "72567324684222141290922875444376117690320079574211518553868921922450770952838",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Vidmanova",
+   "title": "Game Spread: Vidmanova (-1.5) vs Birrell (+1.5)",
+   "their_price": 0.38,
+   "my_price": 0.38,
+   "slippage_pct": 0.0,
+   "lag_s": 0.3,
+   "shares": 60.0,
+   "cost": 22.8,
+   "fee": 0.42,
+   "opened": 1787608869,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800
+  },
   {
    "token": "28502899698765918644010369700714011454004586109826100390927663361775431948613",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2116,29 +2136,24 @@
    "pnl": -49.57,
    "settled": 1786539077,
    "end_ts": 1786492800
-  },
-  {
-   "token": "105996216775030833597187112688301335665231707951948564552107280368142255537289",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "DN SOOPers",
-   "title": "LoL: DN SOOPers vs Nongshim Red Force - Game 1 Winner",
-   "their_price": 0.4309,
-   "my_price": 0.4309,
-   "slippage_pct": 0.0,
-   "lag_s": 0.7,
-   "shares": 114.16,
-   "cost": 49.19,
-   "fee": 0.84,
-   "opened": 1786521980,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -50.03,
-   "settled": 1786534216,
-   "end_ts": 1786492800
   }
  ],
  "missed": [
+  {
+   "ts": 1787608959,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "45694753927176430036399380961928291167234237319318394974418165728052085403177",
+   "cond": "0xb5bb315f0e53c1dde98fc7f7d4c8b5765191c95840801dbe159381f689e2aefb",
+   "title": "Game Spread: Kwon (-1.5) vs Lajovic (+1.5)",
+   "outcome": "Kwon",
+   "price": 0.4,
+   "stake": 53.8,
+   "reason": "thin book ($31 within 5c < $50)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "Kruto2027"
+  },
   {
    "ts": 1787607617,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -3067,32 +3082,16 @@
    "settled": 1786994034,
    "name": "JuiceFarm",
    "exit_checked": true
-  },
-  {
-   "ts": 1786981048,
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "token": "43910509935922189427382177701090800353832023672255480932139523276667182500142",
-   "cond": "0xcb9b6dea81e9016b8aaa6af65903fb7327e04340aaef506eb586273fd1b1bd08",
-   "title": "LoL: Natus Vincere vs Team Heretics - Game 2 Winner",
-   "outcome": "Natus Vincere",
-   "price": 0.66,
-   "stake": 48.84,
-   "reason": "maker bid unfilled (60s)",
-   "status": "sold",
-   "pnl": 21.62,
-   "settled": 1786983947,
-   "name": "AIcAIc",
-   "exit_price": 0.96
   }
  ],
- "missed_pnl": 743.9,
+ "missed_pnl": 729.83,
  "last_fill": {
-  "ts": 1787607946,
-  "side": "SELL",
-  "price": 0.94,
-  "shares": 0.91,
-  "title": "Decibel FDV above $500M one day after launch?",
-  "outcome": "No"
+  "ts": 1787608869,
+  "side": "BUY",
+  "price": 0.38,
+  "shares": 60.0,
+  "title": "Game Spread: Vidmanova (-1.5) vs Birrell (+1.5)",
+  "outcome": "Vidmanova"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3129,11 +3128,11 @@
    "realized": 306.79,
    "n": 24,
    "wins": 3,
-   "open_cost": 161.5,
-   "open_n": 3,
-   "miss_n": 39,
+   "open_cost": 184.3,
+   "open_n": 4,
+   "miss_n": 40,
    "miss_pnl": 763.48,
-   "last_ts": 1787607402
+   "last_ts": 1787608869
   },
   "LSB1": {
    "realized": -397.16,
@@ -3196,5 +3195,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787607957
+ "updated": 1787608959
 }
