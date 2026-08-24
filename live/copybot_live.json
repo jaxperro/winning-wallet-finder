@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 53.82,
+ "stake": 53.81,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 926.45,
- "deployed": 1764.59,
+ "cash": 872.27,
+ "deployed": 1818.41,
  "reserve": 0.0,
- "realized": 1691.01,
+ "realized": 1690.65,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 41,
- "fees_paid": 524.63,
+ "open_count": 42,
+ "fees_paid": 524.99,
  "fee_rate": 0.03,
  "lag": {
-  "n": 521,
-  "n24": 9,
+  "n": 522,
+  "n24": 10,
   "basis": "24h",
-  "avg_s": 11.3,
+  "avg_s": 8.4,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "38180209719688990386266128934798881282414824189029243540324418795366509057128",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "KT Rolster",
+   "title": "LoL: KT Rolster vs HANJIN BRION (BO5) - LCK Play-In",
+   "their_price": 0.78,
+   "my_price": 0.78,
+   "slippage_pct": 0.0,
+   "lag_s": 0.7,
+   "shares": 69.0,
+   "cost": 53.82,
+   "fee": 0.36,
+   "opened": 1787573174,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1787702400
+  },
   {
    "token": "22530368676351743865384783475100002305027451346911930287686591171599837128300",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2118,28 +2138,6 @@
    "pnl": -49.67,
    "settled": 1786459878,
    "end_ts": 1786406400
-  },
-  {
-   "token": "80816336957278030669860087258457821819123973887451237624766856723962249646287",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "G2 Esports",
-   "title": "LoL: Natus Vincere vs G2 Esports - Game 1 Winner",
-   "their_price": 0.65,
-   "my_price": 0.65,
-   "slippage_pct": 0.0,
-   "lag_s": 9.7,
-   "shares": 75.2,
-   "cost": 48.88,
-   "fee": 0.51,
-   "opened": 1786380833,
-   "status": "closed",
-   "exit_price": 0.9588,
-   "pnl": 22.71,
-   "settled": 1786383015,
-   "end_ts": 1786320000,
-   "sold_shares": 75.2,
-   "sold_proceeds": 72.11
   }
  ],
  "missed": [
@@ -3096,12 +3094,12 @@
  ],
  "missed_pnl": 635.35,
  "last_fill": {
-  "ts": 1787572094,
+  "ts": 1787573174,
   "side": "BUY",
-  "price": 0.4614,
-  "shares": 116.69,
-  "title": "Al Ettifaq Saudi Club vs. Al Nassr Saudi Club: Al Ettifaq Sa",
-  "outcome": "Over"
+  "price": 0.78,
+  "shares": 69.0,
+  "title": "LoL: KT Rolster vs HANJIN BRION (BO5) - LCK Play-In",
+  "outcome": "KT Rolster"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3178,11 +3176,11 @@
    "realized": -225.76,
    "n": 20,
    "wins": 12,
-   "open_cost": 0.0,
-   "open_n": 0,
+   "open_cost": 53.82,
+   "open_n": 1,
    "miss_n": 10,
    "miss_pnl": -28.71,
-   "last_ts": 1787538620
+   "last_ts": 1787573174
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3205,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787572115
+ "updated": 1787573190
 }
