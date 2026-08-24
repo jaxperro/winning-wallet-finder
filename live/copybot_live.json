@@ -1,17 +1,17 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 47.23,
+ "stake": 47.56,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 603.61,
- "deployed": 1757.99,
+ "cash": 667.44,
+ "deployed": 1710.76,
  "reserve": 0.0,
- "realized": 1361.57,
+ "realized": 1378.17,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 41,
+ "open_count": 40,
  "fees_paid": 522.79,
  "fee_rate": 0.03,
  "lag": {
@@ -51,6 +51,26 @@
  },
  "bets": [
   {
+   "token": "35519036727779372362379885698730125198535180516238825460733396795218371929718",
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "name": "JuiceFarm",
+   "outcome": "FlyQuest",
+   "title": "LoL: Dignitas vs FlyQuest - Game 2 Winner",
+   "their_price": 0.74,
+   "my_price": 0.74,
+   "slippage_pct": 0.0,
+   "lag_s": 22.3,
+   "shares": 63.83,
+   "cost": 47.23,
+   "fee": 0.37,
+   "opened": 1787524659,
+   "status": "won",
+   "exit_price": 1.0,
+   "pnl": 16.23,
+   "settled": 1787538620,
+   "end_ts": 1787529600
+  },
+  {
    "token": "90023747553942468577301521103061192863932551227972666780135497431091307635242",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "name": "0xbadaf319",
@@ -69,26 +89,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1787875200
-  },
-  {
-   "token": "35519036727779372362379885698730125198535180516238825460733396795218371929718",
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "name": "JuiceFarm",
-   "outcome": "FlyQuest",
-   "title": "LoL: Dignitas vs FlyQuest - Game 2 Winner",
-   "their_price": 0.74,
-   "my_price": 0.74,
-   "slippage_pct": 0.0,
-   "lag_s": 22.3,
-   "shares": 63.83,
-   "cost": 47.23,
-   "fee": 0.37,
-   "opened": 1787524659,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787529600
   },
   {
    "token": "43607466387848148862730065756652825306636991801621290782067481337775038548943",
@@ -3175,14 +3175,14 @@
    "last_ts": 1787505668
   },
   "JuiceFarm": {
-   "realized": -241.99,
-   "n": 19,
-   "wins": 11,
-   "open_cost": 47.23,
-   "open_n": 1,
+   "realized": -225.76,
+   "n": 20,
+   "wins": 12,
+   "open_cost": 0.0,
+   "open_n": 0,
    "miss_n": 9,
    "miss_pnl": -28.71,
-   "last_ts": 1787524659
+   "last_ts": 1787538620
   },
   "0x41558102": {
    "realized": 0.0,
@@ -3205,5 +3205,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787534453
+ "updated": 1787538630
 }
