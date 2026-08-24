@@ -2151,9 +2151,9 @@
    "price": 0.45,
    "stake": 53.85,
    "reason": "maker bid unfilled (65s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
+   "status": "won",
+   "pnl": 64.93,
+   "settled": 1787599956,
    "name": "JuiceFarm"
   },
   {
@@ -3092,7 +3092,7 @@
    "exit_checked": true
   }
  ],
- "missed_pnl": 666.73,
+ "missed_pnl": 731.66,
  "last_fill": {
   "ts": 1787588475,
   "side": "BUY",
@@ -3179,7 +3179,7 @@
    "open_cost": 53.82,
    "open_n": 1,
    "miss_n": 11,
-   "miss_pnl": -28.71,
+   "miss_pnl": 36.22,
    "last_ts": 1787573174
   },
   "0x41558102": {
@@ -3203,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787597279
+ "updated": 1787599956
 }
