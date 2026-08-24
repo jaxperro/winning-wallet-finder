@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787587850,
+ "updated": 1787588210,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 572.35,
@@ -78,7 +78,7 @@
    "wins": 12,
    "open_cost": 53.82,
    "open_n": 1,
-   "miss_n": 10,
+   "miss_n": 11,
    "miss_pnl": -28.71,
    "last_ts": 1787573174
   },
@@ -9792,6 +9792,21 @@
   }
  ],
  "missed": [
+  {
+   "ts": 1787588201,
+   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+   "token": "79012338915393744148217653315669181846261988488575792315487621951278056459147",
+   "cond": "0xca4c733cec7d79cf7a761c1bf3ec445804fa2d6f87f6c383f38fbac74ff29990",
+   "title": "LoL: Natus Vincere vs Fnatic - Game 2 Winner",
+   "outcome": "Natus Vincere",
+   "price": 0.45,
+   "stake": 53.85,
+   "reason": "maker bid unfilled (65s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "JuiceFarm"
+  },
   {
    "ts": 1787347817,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
