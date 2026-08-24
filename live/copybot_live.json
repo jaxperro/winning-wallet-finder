@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 53.8,
+ "stake": 53.78,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 644.46,
- "deployed": 2045.31,
+ "cash": 589.69,
+ "deployed": 2099.1,
  "reserve": 0.0,
- "realized": 1689.74,
+ "realized": 1688.76,
  "adjustments": 0.03,
  "ledger_drift": -0.04,
- "open_count": 46,
- "fees_paid": 528.33,
+ "open_count": 47,
+ "fees_paid": 529.32,
  "fee_rate": 0.03,
  "lag": {
-  "n": 527,
-  "n24": 10,
+  "n": 528,
+  "n24": 11,
   "basis": "24h",
-  "avg_s": 9.3,
+  "avg_s": 9.2,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "47839198849637890790334157054607939655102672329558045596962908149532938094210",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Zhang",
+   "title": "Game Spread: Zhang (-1.5) vs Timofeeva (+1.5)",
+   "their_price": 0.39,
+   "my_price": 0.39,
+   "slippage_pct": 0.0,
+   "lag_s": 2.7,
+   "shares": 137.93,
+   "cost": 53.79,
+   "fee": 0.98,
+   "opened": 1787609035,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800
+  },
   {
    "token": "72567324684222141290922875444376117690320079574211518553868921922450770952838",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2116,26 +2136,6 @@
    "end_ts": 1798675200,
    "sold_shares": 10.79,
    "sold_proceeds": 10.35
-  },
-  {
-   "token": "90124365027179498944135537873011406007424798856804275766237849764473331663944",
-   "wallet": "0x921433c93558b9a4ba807ec824d02aad7ea2ddbf",
-   "name": "AIcAIc",
-   "outcome": "Anyone's Legend",
-   "title": "LoL: EDward Gaming vs Anyone's Legend - Game 1 Winner",
-   "their_price": 0.73,
-   "my_price": 0.73,
-   "slippage_pct": 0.0,
-   "lag_s": 7.1,
-   "shares": 67.36,
-   "cost": 49.17,
-   "fee": 0.4,
-   "opened": 1786526913,
-   "status": "lost",
-   "exit_price": 0.0,
-   "pnl": -49.57,
-   "settled": 1786539077,
-   "end_ts": 1786492800
   }
  ],
  "missed": [
@@ -3086,12 +3086,12 @@
  ],
  "missed_pnl": 729.83,
  "last_fill": {
-  "ts": 1787608869,
+  "ts": 1787609037,
   "side": "BUY",
-  "price": 0.38,
-  "shares": 60.0,
-  "title": "Game Spread: Vidmanova (-1.5) vs Birrell (+1.5)",
-  "outcome": "Vidmanova"
+  "price": 0.39,
+  "shares": 137.93,
+  "title": "Game Spread: Zhang (-1.5) vs Timofeeva (+1.5)",
+  "outcome": "Zhang"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3128,11 +3128,11 @@
    "realized": 306.79,
    "n": 24,
    "wins": 3,
-   "open_cost": 184.3,
-   "open_n": 4,
+   "open_cost": 238.09,
+   "open_n": 5,
    "miss_n": 40,
    "miss_pnl": 763.48,
-   "last_ts": 1787608869
+   "last_ts": 1787609035
   },
   "LSB1": {
    "realized": -397.16,
@@ -3195,5 +3195,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787608959
+ "updated": 1787609093
 }
