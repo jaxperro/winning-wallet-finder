@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 55.1,
+ "stake": 55.09,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 689.92,
- "deployed": 2065.12,
+ "cash": 659.63,
+ "deployed": 2094.9,
  "reserve": 0.0,
- "realized": 1755.02,
+ "realized": 1754.5,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 47,
- "fees_paid": 530.28,
+ "open_count": 48,
+ "fees_paid": 530.8,
  "fee_rate": 0.03,
  "lag": {
-  "n": 530,
-  "n24": 11,
+  "n": 531,
+  "n24": 12,
   "basis": "24h",
-  "avg_s": 9.2,
+  "avg_s": 9.3,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,26 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "61360660232353959009763696724757802791696701136453040334510802684816940308319",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Lautaro Rocha",
+   "title": "ITF M15 Mar del Plata Men: Vito Antonio Darderi vs Lautaro Rocha",
+   "their_price": 0.4236,
+   "my_price": 0.4236,
+   "slippage_pct": 0.0,
+   "lag_s": 35.7,
+   "shares": 70.31,
+   "cost": 29.78,
+   "fee": 0.52,
+   "opened": 1787646876,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800
+  },
   {
    "token": "72567324684222141290922875444376117690320079574211518553868921922450770952838",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2115,27 +2135,6 @@
    "sold_shares": 114.39,
    "sold_proceeds": 110.62,
    "end_ts": 1809043200
-  },
-  {
-   "token": "18802393565291712436899729429089924858104497792982518694284454990866908025798",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the average monthly Ethereum gas price hit 25 Gwei before 2027?",
-   "their_price": 0.842,
-   "my_price": 0.315,
-   "slippage_pct": -0.6259,
-   "shares": 290.18,
-   "cost": 91.41,
-   "fee": 1.88,
-   "opened": 1783897001,
-   "status": "closed",
-   "exit_price": 0.9585,
-   "pnl": 184.85,
-   "settled": 1786547859,
-   "end_ts": 1798761600,
-   "sold_shares": 290.18,
-   "sold_proceeds": 278.14
   }
  ],
  "missed": [
@@ -3092,12 +3091,12 @@
  ],
  "missed_pnl": 703.89,
  "last_fill": {
-  "ts": 1787632780,
-  "side": "SELL",
-  "price": 0.92,
-  "shares": 60.0,
-  "title": "Game Spread: Vidmanova (-1.5) vs Birrell (+1.5)",
-  "outcome": "Vidmanova"
+  "ts": 1787646911,
+  "side": "BUY",
+  "price": 0.4236,
+  "shares": 70.31,
+  "title": "ITF M15 Mar del Plata Men: Vito Antonio Darderi vs Lautaro R",
+  "outcome": "Lautaro Rocha"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3134,11 +3133,11 @@
    "realized": 338.63,
    "n": 25,
    "wins": 3,
-   "open_cost": 252.08,
-   "open_n": 6,
+   "open_cost": 281.86,
+   "open_n": 7,
    "miss_n": 40,
    "miss_pnl": 731.93,
-   "last_ts": 1787632788
+   "last_ts": 1787646876
   },
   "LSB1": {
    "realized": -397.16,
@@ -3201,5 +3200,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787641386
+ "updated": 1787646946
 }

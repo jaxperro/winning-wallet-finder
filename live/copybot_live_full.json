@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787641386,
+ "updated": 1787646946,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 572.35,
@@ -36,11 +36,11 @@
    "realized": 338.63,
    "n": 25,
    "wins": 3,
-   "open_cost": 252.08,
-   "open_n": 6,
+   "open_cost": 281.86,
+   "open_n": 7,
    "miss_n": 40,
    "miss_pnl": 731.93,
-   "last_ts": 1787632788
+   "last_ts": 1787646876
   },
   "LSB1": {
    "realized": -397.16,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "61360660232353959009763696724757802791696701136453040334510802684816940308319",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Lautaro Rocha",
+   "title": "ITF M15 Mar del Plata Men: Vito Antonio Darderi vs Lautaro Rocha",
+   "their_price": 0.4236,
+   "my_price": 0.4236,
+   "slippage_pct": 0.0,
+   "lag_s": 35.7,
+   "shares": 70.31,
+   "cost": 29.78,
+   "fee": 0.515,
+   "opened": 1787646876,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1788220800
+  },
   {
    "token": "72567324684222141290922875444376117690320079574211518553868921922450770952838",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
