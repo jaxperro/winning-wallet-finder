@@ -2140,6 +2140,21 @@
  ],
  "missed": [
   {
+   "ts": 1787639235,
+   "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
+   "token": "110869556039123254261458336492051379784793695798413838645727516760560518948877",
+   "cond": "0xbd7c0a8f856d9ea10aaea7dd43475099957423b84579a23d52b1ca23e765c207",
+   "title": "Bitcoin Up or Down - July 30, 4:45AM-5:00AM ET",
+   "outcome": "Up",
+   "price": 0.4227,
+   "stake": 55.1,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "1kto1m"
+  },
+  {
    "ts": 1787637558,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "86300247966318401376201578808356449954484581148384957088236567619756584520147",
@@ -3071,24 +3086,9 @@
    "settled": 1787062757,
    "name": "0xbadaf319",
    "exit_checked": true
-  },
-  {
-   "ts": 1787061685,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "109604855244768502587390785479933509529438089139763201261297175948276916556235",
-   "cond": "0xbb23ede2350caeac7cb7ff2bff052102cf13ec21f8bebfd45104655a24a60e36",
-   "title": "Saturn FDV above $100M one day after launch",
-   "outcome": "No",
-   "price": 0.35,
-   "stake": 49.14,
-   "reason": "thin book ($20 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   }
  ],
- "missed_pnl": 830.04,
+ "missed_pnl": 814.75,
  "last_fill": {
   "ts": 1787632780,
   "side": "SELL",
@@ -3124,7 +3124,7 @@
    "wins": 3,
    "open_cost": 0.0,
    "open_n": 0,
-   "miss_n": 21,
+   "miss_n": 22,
    "miss_pnl": -206.91,
    "last_ts": 1785987921
   },
@@ -3199,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787637569
+ "updated": 1787639244
 }
