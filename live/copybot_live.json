@@ -1,24 +1,24 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 55.98,
+ "stake": 56.12,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 697.74,
- "deployed": 2101.39,
+ "cash": 758.59,
+ "deployed": 2047.55,
  "reserve": 0.0,
- "realized": 1799.1,
+ "realized": 1806.11,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 48,
- "fees_paid": 531.69,
+ "open_count": 47,
+ "fees_paid": 531.84,
  "fee_rate": 0.03,
  "lag": {
   "n": 532,
-  "n24": 11,
+  "n24": 10,
   "basis": "24h",
-  "avg_s": 9.2,
+  "avg_s": 9.3,
   "avg_slip_pct": 0.0,
   "window_h": 24
  },
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "22348984132517805501065549717042801358050686397446075254391653026078868300575",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "No",
+   "title": "Will the price of Solana be above $100 on August 25?",
+   "their_price": 0.8112,
+   "my_price": 0.8112,
+   "slippage_pct": 0.0,
+   "lag_s": 18.8,
+   "shares": 66.37,
+   "cost": 53.84,
+   "fee": 0.3,
+   "opened": 1787588457,
+   "status": "closed",
+   "exit_price": 0.9168,
+   "pnl": 6.7,
+   "settled": 1787659670,
+   "end_ts": 1787616000,
+   "sold_shares": 66.37,
+   "sold_proceeds": 60.85
+  },
   {
    "token": "54676731881537679131931281983815953013056471565860337870854700310576436698167",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -255,26 +277,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1788220800
-  },
-  {
-   "token": "22348984132517805501065549717042801358050686397446075254391653026078868300575",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Will the price of Solana be above $100 on August 25?",
-   "their_price": 0.8112,
-   "my_price": 0.8112,
-   "slippage_pct": 0.0,
-   "lag_s": 18.8,
-   "shares": 66.37,
-   "cost": 53.84,
-   "fee": 0.3,
-   "opened": 1787588457,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787616000
   },
   {
    "token": "90023747553942468577301521103061192863932551227972666780135497431091307635242",
@@ -3092,23 +3094,23 @@
  ],
  "missed_pnl": 703.89,
  "last_fill": {
-  "ts": 1787651920,
+  "ts": 1787659669,
   "side": "SELL",
-  "price": 0.91,
-  "shares": 103.41,
-  "title": "Will South Korea ETF (EWY) hit (HIGH) $181 Week of August 24",
-  "outcome": "Yes"
+  "price": 0.919,
+  "shares": 66.37,
+  "title": "Will the price of Solana be above $100 on August 25?",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 616.83,
-   "n": 123,
+   "realized": 623.53,
+   "n": 124,
    "wins": 41,
-   "open_cost": 532.0,
-   "open_n": 14,
+   "open_cost": 478.16,
+   "open_n": 13,
    "miss_n": 187,
    "miss_pnl": 119171.84,
-   "last_ts": 1787651922
+   "last_ts": 1787659670
   },
   "gkmgkldfmg": {
    "realized": 1211.69,
@@ -3201,5 +3203,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787658547
+ "updated": 1787659670
 }
