@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 53.76,
+ "stake": 54.46,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 552.27,
- "deployed": 2135.88,
+ "cash": 634.85,
+ "deployed": 2087.92,
  "reserve": 0.0,
- "realized": 1688.12,
+ "realized": 1722.75,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 49,
- "fees_paid": 529.95,
+ "open_count": 48,
+ "fees_paid": 530.15,
  "fee_rate": 0.03,
  "lag": {
   "n": 530,
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by August 31?",
+   "their_price": 0.533,
+   "my_price": 0.533,
+   "slippage_pct": 0.0,
+   "lag_s": 0.8,
+   "shares": 89.98,
+   "cost": 47.96,
+   "fee": 0.67,
+   "opened": 1786201916,
+   "status": "closed",
+   "exit_price": 0.9178,
+   "pnl": 33.95,
+   "settled": 1787621313,
+   "end_ts": 1788134400,
+   "sold_shares": 89.98,
+   "sold_proceeds": 82.58
+  },
   {
    "token": "36828382167437541960242966095787299426063513809508597397512070903328251264563",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2112,28 +2134,6 @@
    "end_ts": 1798761600,
    "sold_shares": 290.18,
    "sold_proceeds": 278.14
-  },
-  {
-   "token": "1326211055864075133719974649484864249770259286643912456278981364786578715890",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "No",
-   "title": "Mohammed Ghalibaf out as Speaker of Iran Parliament by September 30, 2026?",
-   "their_price": 0.78,
-   "my_price": 0.78,
-   "slippage_pct": 0.0,
-   "lag_s": 0.6,
-   "shares": 34.97,
-   "cost": 27.28,
-   "fee": 0.18,
-   "opened": 1785646892,
-   "status": "closed",
-   "exit_price": 0.9486,
-   "pnl": 5.71,
-   "settled": 1786547859,
-   "end_ts": 1790726400,
-   "sold_shares": 34.97,
-   "sold_proceeds": 33.17
   }
  ],
  "missed": [
@@ -3088,12 +3088,12 @@
  ],
  "missed_pnl": 748.82,
  "last_fill": {
-  "ts": 1787610500,
-  "side": "BUY",
-  "price": 0.44,
-  "shares": 64.31,
-  "title": "Game Spread: Yuan (-1.5) vs Guo (+1.5)",
-  "outcome": "Yuan"
+  "ts": 1787621308,
+  "side": "SELL",
+  "price": 0.92,
+  "shares": 89.98,
+  "title": "Will the total domestic gross for Spider-Man: Brand New Day ",
+  "outcome": "No"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3157,14 +3157,14 @@
    "last_ts": 1787247137
   },
   "BikesAreTheBikes": {
-   "realized": -55.37,
-   "n": 36,
+   "realized": -21.42,
+   "n": 37,
    "wins": 7,
-   "open_cost": 1422.78,
-   "open_n": 26,
+   "open_cost": 1374.82,
+   "open_n": 25,
    "miss_n": 68,
    "miss_pnl": -1015.23,
-   "last_ts": 1787505668
+   "last_ts": 1787621313
   },
   "JuiceFarm": {
    "realized": -225.76,
@@ -3197,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787619869
+ "updated": 1787621313
 }

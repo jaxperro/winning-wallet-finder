@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787619869,
+ "updated": 1787621313,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 572.35,
@@ -63,14 +63,14 @@
    "last_ts": 1787247137
   },
   "BikesAreTheBikes": {
-   "realized": -55.37,
-   "n": 36,
+   "realized": -21.42,
+   "n": 37,
    "wins": 7,
-   "open_cost": 1422.78,
-   "open_n": 26,
+   "open_cost": 1374.82,
+   "open_n": 25,
    "miss_n": 68,
    "miss_pnl": -1015.23,
-   "last_ts": 1787505668
+   "last_ts": 1787621313
   },
   "JuiceFarm": {
    "realized": -225.76,
@@ -104,6 +104,28 @@
   }
  },
  "bets": [
+  {
+   "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by August 31?",
+   "their_price": 0.533,
+   "my_price": 0.533,
+   "slippage_pct": 0.0,
+   "lag_s": 0.8,
+   "shares": 89.98,
+   "cost": 47.96,
+   "fee": 0.6719,
+   "opened": 1786201916,
+   "status": "closed",
+   "exit_price": 0.9178,
+   "pnl": 33.95,
+   "settled": 1787621313,
+   "end_ts": 1788134400,
+   "sold_shares": 89.98,
+   "sold_proceeds": 82.58292416000002
+  },
   {
    "token": "36828382167437541960242966095787299426063513809508597397512070903328251264563",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
@@ -2622,26 +2644,6 @@
    "end_ts": 1786233600,
    "sold_shares": 60.17357245006079,
    "sold_proceeds": 57.90121229632549
-  },
-  {
-   "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
-   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
-   "name": "BikesAreTheBikes",
-   "outcome": "No",
-   "title": "Will the total domestic gross for Spider-Man: Brand New Day be at least 900m by August 31?",
-   "their_price": 0.533,
-   "my_price": 0.533,
-   "slippage_pct": 0.0,
-   "lag_s": 0.8,
-   "shares": 89.98,
-   "cost": 47.96,
-   "fee": 0.6719,
-   "opened": 1786201916,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788134400
   },
   {
    "token": "91570590690641088544290660823634625453926632109992583886416794033671791601246",
