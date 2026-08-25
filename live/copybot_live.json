@@ -2138,6 +2138,22 @@
  ],
  "missed": [
   {
+   "ts": 1787362877,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "35959369118506856005571201070805440864608956298446436799263480729359948148988",
+   "cond": "0xd15bc502b75f6724f60f91838d2e2dcb12392f904edab6dc9751298cef70bba2",
+   "title": "Concrete FDV above $50M one day after launch?",
+   "outcome": "Yes",
+   "price": 0.5735,
+   "stake": 38.22,
+   "reason": "not copied in the detection window (reconciled)",
+   "status": "sold",
+   "pnl": 6.81,
+   "settled": 1787619867,
+   "name": "0xbadaf319",
+   "exit_price": 0.6894
+  },
+  {
    "ts": 1787607411,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "98388112905813088627463032038489787675158398024781747639540401025320973575390",
@@ -2147,10 +2163,12 @@
    "price": 0.41,
    "stake": 53.84,
    "reason": "maker bid unfilled (117s)",
-   "status": "won",
-   "pnl": 76.52,
+   "status": "sold",
+   "pnl": 66.67,
    "settled": 1787618616,
-   "name": "Kruto2027"
+   "name": "Kruto2027",
+   "exit_checked": true,
+   "exit_price": 0.927
   },
   {
    "ts": 1787607617,
@@ -2165,7 +2183,8 @@
    "status": "lost",
    "pnl": -54.72,
    "settled": 1787618189,
-   "name": "Kruto2027"
+   "name": "Kruto2027",
+   "exit_checked": true
   },
   {
    "ts": 1786659394,
@@ -2541,21 +2560,6 @@
    "settled": 1787391964,
    "name": "0xbadaf319",
    "exit_price": 0.9328
-  },
-  {
-   "ts": 1787362877,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "35959369118506856005571201070805440864608956298446436799263480729359948148988",
-   "cond": "0xd15bc502b75f6724f60f91838d2e2dcb12392f904edab6dc9751298cef70bba2",
-   "title": "Concrete FDV above $50M one day after launch?",
-   "outcome": "Yes",
-   "price": 0.5735,
-   "stake": 38.22,
-   "reason": "not copied in the detection window (reconciled)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1787327470,
@@ -3082,7 +3086,7 @@
    "exit_price": 0.8467
   }
  ],
- "missed_pnl": 751.86,
+ "missed_pnl": 748.82,
  "last_fill": {
   "ts": 1787610500,
   "side": "BUY",
@@ -3099,7 +3103,7 @@
    "open_cost": 580.6,
    "open_n": 15,
    "miss_n": 185,
-   "miss_pnl": 119165.03,
+   "miss_pnl": 119171.84,
    "last_ts": 1787588457
   },
   "gkmgkldfmg": {
@@ -3129,7 +3133,7 @@
    "open_cost": 274.88,
    "open_n": 7,
    "miss_n": 40,
-   "miss_pnl": 785.28,
+   "miss_pnl": 775.43,
    "last_ts": 1787610495
   },
   "LSB1": {
@@ -3193,5 +3197,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787618617
+ "updated": 1787619869
 }
