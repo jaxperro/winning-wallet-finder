@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787615436,
+ "updated": 1787617692,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 572.35,
@@ -9,7 +9,7 @@
    "open_cost": 580.6,
    "open_n": 15,
    "miss_n": 185,
-   "miss_pnl": 119164.8,
+   "miss_pnl": 119165.03,
    "last_ts": 1787588457
   },
   "gkmgkldfmg": {
@@ -9933,6 +9933,22 @@
  ],
  "missed": [
   {
+   "ts": 1786659394,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "37667520174762086668132420659241412463804022716883098604893555888104597805675",
+   "cond": "0x1ff60bd285eb7f33fa1a5acef5e5a6a876c8635b134518f28e61f3acef546e9c",
+   "title": "Probable FDV above $300M one day after launch?",
+   "outcome": "No",
+   "price": 0.874,
+   "stake": 11.06,
+   "reason": "maker bid unfilled (69s)",
+   "status": "sold",
+   "pnl": 0.23,
+   "settled": 1787617689,
+   "name": "0xbadaf319",
+   "exit_price": 0.8979
+  },
+  {
    "ts": 1787608959,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "45694753927176430036399380961928291167234237319318394974418165728052085403177",
@@ -11210,21 +11226,6 @@
    "name": "BikesAreTheBikes",
    "exit_checked": true,
    "exit_price": 0.0
-  },
-  {
-   "ts": 1786659394,
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "token": "37667520174762086668132420659241412463804022716883098604893555888104597805675",
-   "cond": "0x1ff60bd285eb7f33fa1a5acef5e5a6a876c8635b134518f28e61f3acef546e9c",
-   "title": "Probable FDV above $300M one day after launch?",
-   "outcome": "No",
-   "price": 0.874,
-   "stake": 11.06,
-   "reason": "maker bid unfilled (69s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "0xbadaf319"
   },
   {
    "ts": 1786549546,
