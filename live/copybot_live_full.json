@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787646946,
+ "updated": 1787649059,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 572.35,
@@ -66,11 +66,11 @@
    "realized": -21.42,
    "n": 37,
    "wins": 7,
-   "open_cost": 1374.82,
-   "open_n": 25,
+   "open_cost": 1429.91,
+   "open_n": 26,
    "miss_n": 68,
    "miss_pnl": -1015.23,
-   "last_ts": 1787621313
+   "last_ts": 1787649029
   },
   "JuiceFarm": {
    "realized": -225.76,
@@ -104,6 +104,26 @@
   }
  },
  "bets": [
+  {
+   "token": "56465933220082022835700817063946174635909725507734416248556389304448520396318",
+   "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
+   "name": "BikesAreTheBikes",
+   "outcome": "No",
+   "title": "US announces end of Iranian blockade by September 30, 2026?",
+   "their_price": 0.61,
+   "my_price": 0.61,
+   "slippage_pct": 0.0,
+   "lag_s": 7.1,
+   "shares": 90.31,
+   "cost": 55.09,
+   "fee": 0.6445,
+   "opened": 1787649029,
+   "status": "open",
+   "exit_price": null,
+   "pnl": null,
+   "settled": null,
+   "end_ts": 1790812800
+  },
   {
    "token": "61360660232353959009763696724757802791696701136453040334510802684816940308319",
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
