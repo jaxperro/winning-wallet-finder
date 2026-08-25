@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787632788,
+ "updated": 1787637066,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 572.35,
@@ -39,7 +39,7 @@
    "open_cost": 252.08,
    "open_n": 6,
    "miss_n": 40,
-   "miss_pnl": 785.06,
+   "miss_pnl": 786.74,
    "last_ts": 1787632788
   },
   "LSB1": {
@@ -9937,6 +9937,22 @@
  ],
  "missed": [
   {
+   "ts": 1787607600,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "3365329657300637421247444573783895619925095428097073040585476908926985560986",
+   "cond": "0x3acdd4d57dc5ed040094cd5eae275dd7039977d3b72ef8d31b04453cc6deef16",
+   "title": "Game Spread: Swan (-1.5) vs Scott (+1.5)",
+   "outcome": "Swan",
+   "price": 0.4,
+   "stake": 10.3,
+   "reason": "maker bid unfilled (95s)",
+   "status": "sold",
+   "pnl": 1.68,
+   "settled": 1787637065,
+   "name": "Kruto2027",
+   "exit_price": 0.4799
+  },
+  {
    "ts": 1787607471,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "60451651791354547596640213980378066201569454865024133009879926936313765981457",
@@ -10027,21 +10043,6 @@
    "price": 0.4,
    "stake": 53.8,
    "reason": "thin book ($31 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
-  },
-  {
-   "ts": 1787607600,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "3365329657300637421247444573783895619925095428097073040585476908926985560986",
-   "cond": "0x3acdd4d57dc5ed040094cd5eae275dd7039977d3b72ef8d31b04453cc6deef16",
-   "title": "Game Spread: Swan (-1.5) vs Scott (+1.5)",
-   "outcome": "Swan",
-   "price": 0.4,
-   "stake": 10.3,
-   "reason": "maker bid unfilled (95s)",
    "status": "open",
    "pnl": null,
    "settled": null,
