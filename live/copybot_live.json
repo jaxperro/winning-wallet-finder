@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 55.08,
+ "stake": 55.98,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 603.89,
- "deployed": 2149.99,
+ "cash": 697.74,
+ "deployed": 2101.39,
  "reserve": 0.0,
- "realized": 1753.86,
+ "realized": 1799.1,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 49,
- "fees_paid": 531.44,
+ "open_count": 48,
+ "fees_paid": 531.69,
  "fee_rate": 0.03,
  "lag": {
   "n": 532,
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "54676731881537679131931281983815953013056471565860337870854700310576436698167",
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "name": "0xbadaf319",
+   "outcome": "Yes",
+   "title": "Will South Korea ETF (EWY) hit (HIGH) $181 Week of August 24 2026?",
+   "their_price": 0.47,
+   "my_price": 0.47,
+   "slippage_pct": 0.0,
+   "lag_s": 18.1,
+   "shares": 103.41,
+   "cost": 48.6,
+   "fee": 0.77,
+   "opened": 1787579102,
+   "status": "closed",
+   "exit_price": 0.9075,
+   "pnl": 44.48,
+   "settled": 1787651922,
+   "end_ts": 1787875200,
+   "sold_shares": 103.41,
+   "sold_proceeds": 93.85
+  },
   {
    "token": "56465933220082022835700817063946174635909725507734416248556389304448520396318",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -253,26 +275,6 @@
    "pnl": null,
    "settled": null,
    "end_ts": 1787616000
-  },
-  {
-   "token": "54676731881537679131931281983815953013056471565860337870854700310576436698167",
-   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
-   "name": "0xbadaf319",
-   "outcome": "Yes",
-   "title": "Will South Korea ETF (EWY) hit (HIGH) $181 Week of August 24 2026?",
-   "their_price": 0.47,
-   "my_price": 0.47,
-   "slippage_pct": 0.0,
-   "lag_s": 18.1,
-   "shares": 103.41,
-   "cost": 48.6,
-   "fee": 0.77,
-   "opened": 1787579102,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1787875200
   },
   {
    "token": "90023747553942468577301521103061192863932551227972666780135497431091307635242",
@@ -3090,23 +3092,23 @@
  ],
  "missed_pnl": 703.89,
  "last_fill": {
-  "ts": 1787649036,
-  "side": "BUY",
-  "price": 0.61,
-  "shares": 90.31,
-  "title": "US announces end of Iranian blockade by September 30, 2026?",
-  "outcome": "No"
+  "ts": 1787651920,
+  "side": "SELL",
+  "price": 0.91,
+  "shares": 103.41,
+  "title": "Will South Korea ETF (EWY) hit (HIGH) $181 Week of August 24",
+  "outcome": "Yes"
  },
  "wallet_pnl": {
   "0xbadaf319": {
-   "realized": 572.35,
-   "n": 122,
+   "realized": 616.83,
+   "n": 123,
    "wins": 41,
-   "open_cost": 580.6,
-   "open_n": 15,
+   "open_cost": 532.0,
+   "open_n": 14,
    "miss_n": 187,
    "miss_pnl": 119171.84,
-   "last_ts": 1787588457
+   "last_ts": 1787651922
   },
   "gkmgkldfmg": {
    "realized": 1211.69,
@@ -3199,5 +3201,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787649276
+ "updated": 1787651922
 }
