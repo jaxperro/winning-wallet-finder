@@ -2140,6 +2140,36 @@
  ],
  "missed": [
   {
+   "ts": 1787637558,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "86300247966318401376201578808356449954484581148384957088236567619756584520147",
+   "cond": "0x9740242836304360ca01ee0c4947f6867affb6e85b2283856ffccd8002c3a961",
+   "title": "Will Apple (AAPL) hit (LOW) $288 Week of August 24 2026?",
+   "outcome": "No",
+   "price": 0.4,
+   "stake": 55.1,
+   "reason": "maker bid unfilled (109s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
+   "ts": 1787637558,
+   "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
+   "token": "9348619529781438401208760710132271709252556348833933325424665986589345762266",
+   "cond": "0xa9501b2c1735446312a0387609a2ce4a2290dda2097585289afd4a6b2dfa7686",
+   "title": "Will Apple (AAPL) hit (LOW) $304 Week of August 24 2026?",
+   "outcome": "Yes",
+   "price": 0.5,
+   "stake": 27.35,
+   "reason": "maker bid unfilled (109s)",
+   "status": "open",
+   "pnl": null,
+   "settled": null,
+   "name": "0xbadaf319"
+  },
+  {
    "ts": 1787607600,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "3365329657300637421247444573783895619925095428097073040585476908926985560986",
@@ -3056,41 +3086,9 @@
    "pnl": null,
    "settled": null,
    "name": "0xbadaf319"
-  },
-  {
-   "ts": 1787008372,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "71668069206278604379019230918162053701492619618865557073448491141480275547125",
-   "cond": "0x26b81d216acfb90826c51ed6b711707f05b74e34fb3c73dc3d92b78890915c56",
-   "title": "Will Melbourne Victory FC win on 2026-08-19?",
-   "outcome": "No",
-   "price": 0.31,
-   "stake": 49.15,
-   "reason": "thin book ($46 within 5c < $50)",
-   "status": "sold",
-   "pnl": 27.22,
-   "settled": 1787010866,
-   "name": "Kruto2027",
-   "exit_price": 0.4956
-  },
-  {
-   "ts": 1786839933,
-   "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
-   "token": "41092582709358687435042023110834332703597887425683496641893347944639497294430",
-   "cond": "0xdb0b2580e3f7ad9b141b60ae8a757f98a8d959d91092f435fa4440c0f0a9ef5f",
-   "title": "LoL: GIANTX vs Karmine Corp (BO3) - LEC Regular Season",
-   "outcome": "Karmine Corp",
-   "price": 0.84,
-   "stake": 48.34,
-   "reason": "maker bid unfilled (100s)",
-   "status": "sold",
-   "pnl": -0.07,
-   "settled": 1787000628,
-   "name": "JuiceFarm",
-   "exit_price": 0.8467
   }
  ],
- "missed_pnl": 760.13,
+ "missed_pnl": 830.04,
  "last_fill": {
   "ts": 1787632780,
   "side": "SELL",
@@ -3106,7 +3104,7 @@
    "wins": 41,
    "open_cost": 580.6,
    "open_n": 15,
-   "miss_n": 185,
+   "miss_n": 187,
    "miss_pnl": 119171.84,
    "last_ts": 1787588457
   },
@@ -3201,5 +3199,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787637066
+ "updated": 1787637569
 }
