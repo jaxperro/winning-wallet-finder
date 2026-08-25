@@ -2138,6 +2138,22 @@
  ],
  "missed": [
   {
+   "ts": 1787607471,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "60451651791354547596640213980378066201569454865024133009879926936313765981457",
+   "cond": "0x43a9573b890f18691dc3f6279d53138dadf4176357f11bb77b9d166417cd9fa1",
+   "title": "Game Spread: O'Connell (-1.5) vs Sakellaridis (+1.5)",
+   "outcome": "O'Connell",
+   "price": 0.4031,
+   "stake": 53.82,
+   "reason": "maker bid unfilled (87s)",
+   "status": "sold",
+   "pnl": 9.63,
+   "settled": 1787628510,
+   "name": "Kruto2027",
+   "exit_price": 0.49
+  },
+  {
    "ts": 1787362877,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "35959369118506856005571201070805440864608956298446436799263480729359948148988",
@@ -2242,21 +2258,6 @@
    "price": 0.44,
    "stake": 53.82,
    "reason": "maker bid unfilled (99s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
-  },
-  {
-   "ts": 1787607471,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "60451651791354547596640213980378066201569454865024133009879926936313765981457",
-   "cond": "0x43a9573b890f18691dc3f6279d53138dadf4176357f11bb77b9d166417cd9fa1",
-   "title": "Game Spread: O'Connell (-1.5) vs Sakellaridis (+1.5)",
-   "outcome": "O'Connell",
-   "price": 0.4031,
-   "stake": 53.82,
-   "reason": "maker bid unfilled (87s)",
    "status": "open",
    "pnl": null,
    "settled": null,
@@ -3086,7 +3087,7 @@
    "exit_price": 0.8467
   }
  ],
- "missed_pnl": 748.82,
+ "missed_pnl": 758.45,
  "last_fill": {
   "ts": 1787621308,
   "side": "SELL",
@@ -3133,7 +3134,7 @@
    "open_cost": 274.88,
    "open_n": 7,
    "miss_n": 40,
-   "miss_pnl": 775.43,
+   "miss_pnl": 785.06,
    "last_ts": 1787610495
   },
   "LSB1": {
@@ -3197,5 +3198,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787621313
+ "updated": 1787628511
 }
