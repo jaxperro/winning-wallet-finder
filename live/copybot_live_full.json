@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787618189,
+ "updated": 1787618617,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 572.35,
@@ -39,7 +39,7 @@
    "open_cost": 274.88,
    "open_n": 7,
    "miss_n": 40,
-   "miss_pnl": 708.76,
+   "miss_pnl": 785.28,
    "last_ts": 1787610495
   },
   "LSB1": {
@@ -9933,6 +9933,21 @@
  ],
  "missed": [
   {
+   "ts": 1787607411,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "98388112905813088627463032038489787675158398024781747639540401025320973575390",
+   "cond": "0xaf869f8f36fad9042c7313f5c213796ff772716a0b3b7b476d6ad25592d7e68e",
+   "title": "Game Spread: Knutson (-1.5) vs Lepchenko (+1.5)",
+   "outcome": "Knutson",
+   "price": 0.41,
+   "stake": 53.84,
+   "reason": "maker bid unfilled (117s)",
+   "status": "won",
+   "pnl": 76.52,
+   "settled": 1787618616,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1787607617,
    "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
    "token": "101564700405449939175516490462503647619426169465249101475325673292001214700875",
@@ -10018,21 +10033,6 @@
    "price": 0.4031,
    "stake": 53.82,
    "reason": "maker bid unfilled (87s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
-  },
-  {
-   "ts": 1787607411,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "98388112905813088627463032038489787675158398024781747639540401025320973575390",
-   "cond": "0xaf869f8f36fad9042c7313f5c213796ff772716a0b3b7b476d6ad25592d7e68e",
-   "title": "Game Spread: Knutson (-1.5) vs Lepchenko (+1.5)",
-   "outcome": "Knutson",
-   "price": 0.41,
-   "stake": 53.84,
-   "reason": "maker bid unfilled (117s)",
    "status": "open",
    "pnl": null,
    "settled": null,
