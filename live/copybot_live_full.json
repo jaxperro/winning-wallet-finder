@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787617692,
+ "updated": 1787618189,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 572.35,
@@ -39,7 +39,7 @@
    "open_cost": 274.88,
    "open_n": 7,
    "miss_n": 40,
-   "miss_pnl": 763.48,
+   "miss_pnl": 708.76,
    "last_ts": 1787610495
   },
   "LSB1": {
@@ -9933,6 +9933,21 @@
  ],
  "missed": [
   {
+   "ts": 1787607617,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "101564700405449939175516490462503647619426169465249101475325673292001214700875",
+   "cond": "0x48571f7dfcf56562c4c5dc44fb10feeddec29c2f176f7c2395cfc7cf9917bc75",
+   "title": "Game Spread: Djere (-1.5) vs Muller (+1.5)",
+   "outcome": "Djere",
+   "price": 0.43,
+   "stake": 53.8,
+   "reason": "thin book ($5 within 5c < $50)",
+   "status": "lost",
+   "pnl": -54.72,
+   "settled": 1787618189,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1786659394,
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
    "token": "37667520174762086668132420659241412463804022716883098604893555888104597805675",
@@ -9958,21 +9973,6 @@
    "price": 0.4,
    "stake": 53.8,
    "reason": "thin book ($31 within 5c < $50)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
-  },
-  {
-   "ts": 1787607617,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "101564700405449939175516490462503647619426169465249101475325673292001214700875",
-   "cond": "0x48571f7dfcf56562c4c5dc44fb10feeddec29c2f176f7c2395cfc7cf9917bc75",
-   "title": "Game Spread: Djere (-1.5) vs Muller (+1.5)",
-   "outcome": "Djere",
-   "price": 0.43,
-   "stake": 53.8,
-   "reason": "thin book ($5 within 5c < $50)",
    "status": "open",
    "pnl": null,
    "settled": null,
