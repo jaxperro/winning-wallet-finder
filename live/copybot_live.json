@@ -1,18 +1,18 @@
 {
  "mode": "paper",
  "bankroll": 1000.0,
- "stake": 54.46,
+ "stake": 55.1,
  "stake_pct": 0.04,
  "event_cap": 0,
  "hwm": 3600.19,
- "cash": 634.85,
- "deployed": 2087.92,
+ "cash": 689.92,
+ "deployed": 2065.12,
  "reserve": 0.0,
- "realized": 1722.75,
+ "realized": 1755.02,
  "adjustments": 0.03,
  "ledger_drift": -0.03,
- "open_count": 48,
- "fees_paid": 530.15,
+ "open_count": 47,
+ "fees_paid": 530.28,
  "fee_rate": 0.03,
  "lag": {
   "n": 530,
@@ -50,6 +50,28 @@
   "JuiceFarm": 735.0
  },
  "bets": [
+  {
+   "token": "72567324684222141290922875444376117690320079574211518553868921922450770952838",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Vidmanova",
+   "title": "Game Spread: Vidmanova (-1.5) vs Birrell (+1.5)",
+   "their_price": 0.38,
+   "my_price": 0.38,
+   "slippage_pct": 0.0,
+   "lag_s": 0.3,
+   "shares": 60.0,
+   "cost": 22.8,
+   "fee": 0.42,
+   "opened": 1787608869,
+   "status": "closed",
+   "exit_price": 0.9178,
+   "pnl": 31.84,
+   "settled": 1787632788,
+   "end_ts": 1788220800,
+   "sold_shares": 60.0,
+   "sold_proceeds": 55.07
+  },
   {
    "token": "104048927254391605559503338438251940033005756348725037395683942528584904565700",
    "wallet": "0x215adbb63b47d0ca92f849fe2c2dc1adb0f6254c",
@@ -126,26 +148,6 @@
    "cost": 53.79,
    "fee": 0.98,
    "opened": 1787609035,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788220800
-  },
-  {
-   "token": "72567324684222141290922875444376117690320079574211518553868921922450770952838",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Vidmanova",
-   "title": "Game Spread: Vidmanova (-1.5) vs Birrell (+1.5)",
-   "their_price": 0.38,
-   "my_price": 0.38,
-   "slippage_pct": 0.0,
-   "lag_s": 0.3,
-   "shares": 60.0,
-   "cost": 22.8,
-   "fee": 0.42,
-   "opened": 1787608869,
    "status": "open",
    "exit_price": null,
    "pnl": null,
@@ -3089,12 +3091,12 @@
  ],
  "missed_pnl": 758.45,
  "last_fill": {
-  "ts": 1787621308,
+  "ts": 1787632780,
   "side": "SELL",
   "price": 0.92,
-  "shares": 89.98,
-  "title": "Will the total domestic gross for Spider-Man: Brand New Day ",
-  "outcome": "No"
+  "shares": 60.0,
+  "title": "Game Spread: Vidmanova (-1.5) vs Birrell (+1.5)",
+  "outcome": "Vidmanova"
  },
  "wallet_pnl": {
   "0xbadaf319": {
@@ -3128,14 +3130,14 @@
    "last_ts": 1785987921
   },
   "Kruto2027": {
-   "realized": 306.79,
-   "n": 24,
+   "realized": 338.63,
+   "n": 25,
    "wins": 3,
-   "open_cost": 274.88,
-   "open_n": 7,
+   "open_cost": 252.08,
+   "open_n": 6,
    "miss_n": 40,
    "miss_pnl": 785.06,
-   "last_ts": 1787610495
+   "last_ts": 1787632788
   },
   "LSB1": {
    "realized": -397.16,
@@ -3198,5 +3200,5 @@
    "last_ts": 0
   }
  },
- "updated": 1787628511
+ "updated": 1787632788
 }
