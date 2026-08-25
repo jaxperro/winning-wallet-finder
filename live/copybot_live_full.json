@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787665526,
+ "updated": 1787671492,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 623.53,
@@ -33,14 +33,14 @@
    "last_ts": 1785987921
   },
   "Kruto2027": {
-   "realized": 338.63,
-   "n": 25,
+   "realized": 351.74,
+   "n": 26,
    "wins": 3,
-   "open_cost": 281.86,
-   "open_n": 7,
+   "open_cost": 273.37,
+   "open_n": 6,
    "miss_n": 40,
    "miss_pnl": 731.93,
-   "last_ts": 1787646876
+   "last_ts": 1787671492
   },
   "LSB1": {
    "realized": -397.16,
@@ -104,6 +104,28 @@
   }
  },
  "bets": [
+  {
+   "token": "103087947538502153292982176384023365788439289338284628197678502155245425093258",
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "name": "Kruto2027",
+   "outcome": "Mochizuki",
+   "title": "Game Spread: Mochizuki (-1.5) vs Milavsky (+1.5)",
+   "their_price": 0.39,
+   "my_price": 0.39,
+   "slippage_pct": 0.0,
+   "lag_s": 10.8,
+   "shares": 21.76,
+   "cost": 8.49,
+   "fee": 0.1553,
+   "opened": 1787609980,
+   "status": "closed",
+   "exit_price": 1.0,
+   "pnl": 13.11,
+   "settled": 1787671492,
+   "end_ts": 1788220800,
+   "sold_shares": 21.76,
+   "sold_proceeds": 21.76
+  },
   {
    "token": "22348984132517805501065549717042801358050686397446075254391653026078868300575",
    "wallet": "0xbadaf319415c17f28824a43ae0cd912b9d84d874",
@@ -246,26 +268,6 @@
    "cost": 28.3,
    "fee": 0.4754,
    "opened": 1787610495,
-   "status": "open",
-   "exit_price": null,
-   "pnl": null,
-   "settled": null,
-   "end_ts": 1788220800
-  },
-  {
-   "token": "103087947538502153292982176384023365788439289338284628197678502155245425093258",
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "name": "Kruto2027",
-   "outcome": "Mochizuki",
-   "title": "Game Spread: Mochizuki (-1.5) vs Milavsky (+1.5)",
-   "their_price": 0.39,
-   "my_price": 0.39,
-   "slippage_pct": 0.0,
-   "lag_s": 10.8,
-   "shares": 21.76,
-   "cost": 8.49,
-   "fee": 0.1553,
-   "opened": 1787609980,
    "status": "open",
    "exit_price": null,
    "pnl": null,
