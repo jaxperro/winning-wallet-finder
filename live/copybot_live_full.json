@@ -1,6 +1,6 @@
 {
  "mode": "paper",
- "updated": 1787639317,
+ "updated": 1787639752,
  "wallet_pnl": {
   "0xbadaf319": {
    "realized": 572.35,
@@ -39,7 +39,7 @@
    "open_cost": 252.08,
    "open_n": 6,
    "miss_n": 40,
-   "miss_pnl": 786.74,
+   "miss_pnl": 731.93,
    "last_ts": 1787632788
   },
   "LSB1": {
@@ -9937,6 +9937,21 @@
  ],
  "missed": [
   {
+   "ts": 1787607411,
+   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
+   "token": "18726923141281826663284458508033656911281461359725168082006241752415725484092",
+   "cond": "0x663f6da425999d7c068375df4e7bd47edb87d3fbcf3a444f87df5e21110cad3e",
+   "title": "Game Spread: Vekic (-1.5) vs Parry (+1.5)",
+   "outcome": "Vekic",
+   "price": 0.4,
+   "stake": 53.84,
+   "reason": "maker bid unfilled (97s)",
+   "status": "lost",
+   "pnl": -54.81,
+   "settled": 1787639751,
+   "name": "Kruto2027"
+  },
+  {
    "ts": 1787639235,
    "wallet": "0xa1d57d329227c75b12b09f927fb3d6d6ef8f1343",
    "token": "110869556039123254261458336492051379784793695798413838645727516760560518948877",
@@ -10103,21 +10118,6 @@
    "price": 0.44,
    "stake": 53.82,
    "reason": "maker bid unfilled (99s)",
-   "status": "open",
-   "pnl": null,
-   "settled": null,
-   "name": "Kruto2027"
-  },
-  {
-   "ts": 1787607411,
-   "wallet": "0xe8ca3f758c93f44f3ec210542ab78afb7c0bcccb",
-   "token": "18726923141281826663284458508033656911281461359725168082006241752415725484092",
-   "cond": "0x663f6da425999d7c068375df4e7bd47edb87d3fbcf3a444f87df5e21110cad3e",
-   "title": "Game Spread: Vekic (-1.5) vs Parry (+1.5)",
-   "outcome": "Vekic",
-   "price": 0.4,
-   "stake": 53.84,
-   "reason": "maker bid unfilled (97s)",
    "status": "open",
    "pnl": null,
    "settled": null,
